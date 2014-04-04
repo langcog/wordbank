@@ -6,9 +6,9 @@ class Child(models.Model):
   birth_weight = models.FloatField()
   state = models.CharField(max_length=2)
   gestational_age = models.IntegerField()
-  #mom_ed
-  #dad_ed
-  #birth_order
+  mom_ed = models.IntegerField()
+  dad_ed = models.IntegerField()
+  birth_order = models.IntegerField()
 
 class InstrumentsMap(models.Model):
   name = models.CharField(max_length=20)
