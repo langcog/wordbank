@@ -53,3 +53,13 @@ cd mod_wsgi-3.4
 make
 sudo make install
 cd ..
+
+#Install lighttpd
+wget http://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.35.tar.gz
+tar -xvzf lighttpd-1.4.35.tar.gz
+cd lighttpd-1.4.35
+./configure --without-bzip2
+make
+sudo make install
+cd ..
+
