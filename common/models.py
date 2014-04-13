@@ -20,8 +20,8 @@ class Source(models.Model):
   year = models.IntegerField()
 
 class Administration(models.Model):
-  child = models.ForeignKey(child)
-  instrument = models.ForeignKey(Instrument)
+  child = models.ForeignKey(Child)
+  instrument = models.ForeignKey(InstrumentsMap)
   source = models.ForeignKey(Source)
   date_of_test = models.DateField()
   data_id = models.IntegerField()
