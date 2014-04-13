@@ -1,4 +1,5 @@
 from django.conf.urls import patterns, include, url
+from common.views import *
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
@@ -6,7 +7,7 @@ from django.conf.urls import patterns, include, url
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'wordbank.views.home', name='home'),
+    url(r'^$', Home.as_view(), name='home'),
     # url(r'^wordbank/', include('wordbank.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
