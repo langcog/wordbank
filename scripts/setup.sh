@@ -13,6 +13,7 @@ sudo apt-get update
 sudo apt-get install libpcre3 libpcre3-dev
 sudo apt-get install apache2-dev
 sudo apt-get install python-dev
+sudo apt-get install python-pip
 
 wget http://www.djangoproject.com/download/1.4.2/tarball/ --max-redirect=2 --trust-server-names
 tar -xvzf Django-1.4.2.tar.gz
@@ -59,6 +60,15 @@ wget http://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.35.tar.gz
 tar -xvzf lighttpd-1.4.35.tar.gz
 cd lighttpd-1.4.35
 ./configure --without-bzip2
+make
+sudo make install
+cd ..
+
+# Install mod_python
+wget http://dist.modpython.org/dist/mod_python-3.4.1.tgz
+tar -xvzf mod_python-3.4.1.tgz
+cd mod_python-3.4.1
+./configure
 make
 sudo make install
 cd ..

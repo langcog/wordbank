@@ -2,7 +2,7 @@ from django.db import models
 
 class Child(models.Model):
   study_id = models.IntegerField()
-  gender = models.CharField(max_length=)
+  gender = models.CharField(max_length=1)
   date_of_birth = models.DateField()
   birth_weight = models.FloatField()
   state = models.CharField(max_length=2)
