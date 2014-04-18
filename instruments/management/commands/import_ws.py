@@ -1,4 +1,3 @@
-
 from django.core.management.base import NoArgsCommand
 import xlrd
 
@@ -10,4 +9,13 @@ class Command(NoArgsCommand):
     sh = book.sheet_by_index(0)
     nrows = sh.nrows
     ncols = sh.ncols
-    print sh.row_values(0)
+    
+    f = open('instruments/ws.py', 'w')
+    f.write('from django.db import models\n')
+    f.write('\nclass WS:\n')
+    start = False
+    for value in sh.row_values(0):
+      if value == 'baabaa':
+        start = True
+      if start:
+        f.write('  _' + value + ' = models.IntegerField()\n')
