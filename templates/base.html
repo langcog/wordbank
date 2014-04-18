@@ -5,6 +5,8 @@
 </head>
 <body>
 
+  {% load static %}
+
   {% block styles %}
   <link rel="stylesheet" href={% static "third_party/bootstrap3/css/bootstrap.css.map" %}>
   <link rel="stylesheet" href={% static "third_party/bootstrap3/css/bootstrap.min.css" %}>
@@ -22,18 +24,15 @@
         <div class="container">
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="/">Wordbank</a></li>
+                    <li class="nav_title"><a href="/">Wordbank</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="nav_elements"><a href="/">Home</a></li>
-                    <li class="nav_elements"><a href="/search">Search</a></li>
+                    <li class="nav_element"><a href="/">Home</a></li>
+                    <li class="nav_element"><a href="/search">Search</a></li>
                 </ul>
             </div>
         </div>
     </div>
-
-  {% block content %}
-  {% endblock %}
 
   {% block extra_header %}
   {% endblock %}
