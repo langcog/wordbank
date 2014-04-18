@@ -1,7 +1,12 @@
 # Django settings for wordbank project.
 import os
 
-DEBUG = True
+SITE_DIR = (os.path.join(os.path.dirname(__file__), '..')).replace('\\', '/')
+DEV = os.path.isfile(os.path.join(SITE_DIR, 'dev'))
+if DEV: 
+  DEBUG = True
+else:
+  DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
