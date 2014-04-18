@@ -1,4 +1,4 @@
-Django==1.6.2
+-e git+https://github.com/django/django.git@2dcde523abe6dca42d9b2d46a47c402979974c77#egg=Django-master
 wsgiref==0.1.2
 MySQL-python==1.2.5
 xlrd==0.9.3

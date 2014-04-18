@@ -1,3 +1,5 @@
 *.pyc
 *.swp
 env/
+.DS_Store
+dev

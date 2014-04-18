@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+
+  {% load static %}
+
+  {% block styles %}
+  <link rel="stylesheet" href={% static "third_party/bootstrap3/css/bootstrap.css.map" %}>
+  <link rel="stylesheet" href={% static "third_party/bootstrap3/css/bootstrap.min.css" %}>
+  <link rel="stylesheet" href={% static "css/base.css" %}>
+  {% endblock %}
+
+  {% block scripts %}
+  <script src={% static "third_party/jquery-1.11.0.min.js" %}></script>
+  <script src={% static "third_party/bootstrap3/js/bootstrap.min.js" %}></script>
+  {% endblock %}
+
+
+  <div class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="nav_title"><a href="/">Wordbank</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav_element"><a href="/">Home</a></li>
+                    <li class="nav_element"><a href="/search">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+  {% block extra_header %}
+  {% endblock %}
+
+  {% block morestyles %}
+  {% endblock %}
+
+  {% block morescripts %}
+  {% endblock %}
+  
+  <div class="container">
+  {% block content %}
+  {% endblock %}
+  </div>
+
+  {% block footer %}
+  {% endblock %}
+
+</body>
+</html>

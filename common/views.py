@@ -1,8 +1,9 @@
 from django.http import HttpResponse
+from django.shortcuts import render, render_to_response
 from django.views.generic import View
 from common.models import *
 
 class Home(View):
 
   def get(self, request):
-    return HttpResponse('<html>home page</html>')
+    return render(request, 'home.html', {})
