@@ -1,6 +1,12 @@
 # Django settings for wordbank project.
+import os
 
-DEBUG = False
+SITE_DIR = (os.path.join(os.path.dirname(__file__), '..')).replace('\\', '/')
+DEV = os.path.isfile(os.path.join(SITE_DIR, 'dev'))
+if DEV: 
+  DEBUG = True
+else:
+  DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -11,7 +17,7 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'wordbank',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
         'USER': '',
@@ -72,6 +78,9 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    'static/',
+    os.path.join(os.path.dirname(os.path.abspath(__file__)), 'static'),
+    os.path.join(os.path.dirname(__file__), '..', 'static').replace('\\','/'),
 )
 
 # List of finder classes that know how to find static files in
@@ -111,6 +120,9 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    'templates/',
+    os.path.join(os.path.dirname(os.path.abspath(__file__)), 'templates'),
+    os.path.join(os.path.dirname(__file__), '..', 'templates').replace('\\','/'),
 )
 
 INSTALLED_APPS = (
