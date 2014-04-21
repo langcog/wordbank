@@ -12,10 +12,10 @@ class Command(NoArgsCommand):
     
     f = open('instruments/ws.py', 'w')
     f.write('from django.db import models\n')
-    f.write('\nclass WS:\n')
+    f.write('\nclass WS(models.Model):\n')
     start = False
     for value in sh.row_values(0):
       if value == 'baabaa':
         start = True
       if start:
-        f.write('  col_' + value + ' = models.IntegerField()\n')
+        f.write('  col_' + value + ' = models.IntegerField(null=True, blank=True)\n')

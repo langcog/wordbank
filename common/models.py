@@ -1,15 +1,15 @@
 from django.db import models
 
 class Child(models.Model):
-  study_id = models.IntegerField()
+  study_id = models.CharField(max_length=20)
   gender = models.CharField(max_length=1)
-  date_of_birth = models.DateField()
-  birth_weight = models.FloatField()
-  state = models.CharField(max_length=2)
-  gestational_age = models.IntegerField()
-  mom_ed = models.IntegerField()
-  dad_ed = models.IntegerField()
-  birth_order = models.IntegerField()
+  date_of_birth = models.DateField(null=True, blank=True)
+  birth_weight = models.FloatField(null=True, blank=True)
+  state = models.CharField(max_length=2, null=True, blank=True)
+  gestational_age = models.IntegerField(null=True, blank=True)
+  mom_ed = models.IntegerField(null=True, blank=True)
+  dad_ed = models.IntegerField(null=True, blank=True)
+  birth_order = models.IntegerField(null=True, blank=True)
 
 class InstrumentsMap(models.Model):
   name = models.CharField(max_length=20)
@@ -23,8 +23,8 @@ class Source(models.Model):
 class Administration(models.Model):
   child = models.ForeignKey(Child)
   instrument = models.ForeignKey(InstrumentsMap)
-  source = models.ForeignKey(Source)
-  date_of_test = models.DateField()
+  source = models.ForeignKey(Source, null=True, blank=True)
+  date_of_test = models.DateField(null=True, blank=True)
   data_id = models.IntegerField()
   age = models.IntegerField()
 
