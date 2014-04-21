@@ -1,5 +1,7 @@
 from django.core.management.base import NoArgsCommand
 import xlrd
+from common.models import *
+from instruments.models import *
 
 class Command(NoArgsCommand):
 
@@ -10,9 +12,6 @@ class Command(NoArgsCommand):
     nrows = sh.nrows
     ncols = sh.ncols
     
-    f = open('instruments/ws.py', 'w')
-    f.write('from django.db import models\n')
-    f.write('\nclass WS:\n')
     start = False
     for value in sh.row_values(0):
       if value == 'baabaa':
