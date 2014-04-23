@@ -5,14 +5,35 @@ from instruments.models import *
 
 class Command(NoArgsCommand):
 
+  def extract_base(self, index, col_names):
+    if index == len(col_names)-1:
+      return (col_names[index], 1)
+    col1 = col_names[index]
+    col2 = col_names[index+1]
+    if col1[0:len(col1)-1] == col2[0:len(col2)-1] and \
+      (col1[len(col1)-1] == 'p' and col2[len(col2)-1] == 'u' or \
+      col2[len(col2)-1] == 'u' and col2[len(col2)-1] == 'p'):
+      base = col1[0:len(col1)-1]
+      offset = 2
+    elif col1[1:] == col2[1:] and \
+      (col1[0] == 'p' and col2[0] == 'u' or \
+      col2[0] == 'u' and col2[0] == 'p'):
+      base = col1[1:]
+      offset = 2
+    else:
+      base = col1
+      offset = 1
+    return (base, offset)
+
+
   def handle(self, *args, **options):
-    book = xlrd.open_workbook('raw_data/CDI-WS.xlsx')
+    book = xlrd.open_workbook('raw_data/CDI-WG.xlsx')
 
     sh = book.sheet_by_index(0)
     nrows = sh.nrows
     ncols = sh.ncols
     
-    special_cols = ['id', 'gender', 'cdiage', 'momed']
+    special_cols = ['id', 'gender', 'birth', 'cdiage', 'momed']
     special_col_map = {}
     col_names = list(sh.row_values(0))
 
@@ -28,19 +49,27 @@ class Command(NoArgsCommand):
       row_values = list(sh.row_values(row))
       child = Child.objects.create(gender=row_values[special_col_map['gender']],
                     study_id=row_values[special_col_map['id']],
+                    birth_order=row_values[special_col_map['birth']],
                     mom_ed=int(row_values[special_col_map['momed']]))
-      instrument = WS.objects.create()
+      instrument = WG.objects.create()
       administration = Administration.objects.create(child=child,
                                              instrument=instruments_map,
                                              data_id=instrument.pk,
                                              age=int(row_values[special_col_map['momed']]))
       start = False
       instrument_data = {}
-      col_name_index = 0
-      for value in row_values:
-        if col_names[col_name_index] == 'baabaa':
+      index = 0
+      while index < ncols:
+        if col_names[index] == 'baabaap':
           start = True
         if start:
-          instrument_data['col_'+col_names[col_name_index]] = int(value)
-        col_name_index = col_name_index + 1
-      WS.objects.filter(pk=instrument.pk).update(**instrument_data)
+          (name, offset) = self.extract_base(index, col_names)
+          if offset == 2:
+            value = int(row_values[index]) + int(row_values[index+1])
+          else:
+            value = int(row_values[index])
+          instrument_data['col_'+name] = value
+          index = index + offset
+        else:
+          index = index + 1
+      WG.objects.filter(pk=instrument.pk).update(**instrument_data)
