@@ -12,7 +12,7 @@ class Command(NoArgsCommand):
     nrows = sh.nrows
     ncols = sh.ncols
     
-    special_cols = ['id', 'gender', 'cdiage', 'momed']
+    special_cols = ['id', 'birth', 'gender', 'cdiage', 'momed']
     special_col_map = {}
     col_names = list(sh.row_values(0))
 
@@ -28,6 +28,7 @@ class Command(NoArgsCommand):
       row_values = list(sh.row_values(row))
       child = Child.objects.create(gender=row_values[special_col_map['gender']],
                     study_id=row_values[special_col_map['id']],
+                    birth_order=row_values[special_col_map['birth']],
                     mom_ed=int(row_values[special_col_map['momed']]))
       instrument = WS.objects.create()
       administration = Administration.objects.create(child=child,
