@@ -7,3 +7,6 @@ class Home(View):
 
   def get(self, request):
     return render(request, 'home.html', {})
+
+  def search(request):
+  	return render(request, 'search.html', {})
