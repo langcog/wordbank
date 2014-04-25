@@ -9,7 +9,7 @@ from instruments.views import *
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', Home.as_view(), name='home'),
-    url(r'search', Search.as_view(), name='search'),
+    url(r'search', views.search, name='search'),
     # url(r'^wordbank/', include('wordbank.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
