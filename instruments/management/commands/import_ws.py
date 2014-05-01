@@ -34,7 +34,7 @@ class Command(NoArgsCommand):
       administration = Administration.objects.create(child=child,
                                              instrument=instruments_map,
                                              data_id=instrument.pk,
-                                             age=int(row_values[special_col_map['momed']]))
+                                             age=int(row_values[special_col_map['cdiage']]))
       start = False
       instrument_data = {}
       col_name_index = 0
