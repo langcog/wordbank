@@ -37,7 +37,7 @@ class Command(NoArgsCommand):
     special_col_map = {}
     col_names = list(sh.row_values(0))
 
-    instruments_map = InstrumentsMap.objects.create(name='WS', language='english')
+    instruments_map = InstrumentsMap.objects.create(name='WG', language='english')
 
     for special_col in special_cols:
       for index, value in enumerate(col_names):
@@ -55,7 +55,7 @@ class Command(NoArgsCommand):
       administration = Administration.objects.create(child=child,
                                              instrument=instruments_map,
                                              data_id=instrument.pk,
-                                             age=int(row_values[special_col_map['momed']]))
+                                             age=int(row_values[special_col_map['cdiage']]))
       start = False
       instrument_data = {}
       index = 0
