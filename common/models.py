@@ -26,7 +26,7 @@ class Administration(models.Model):
   source = models.ForeignKey(Source, null=True, blank=True)
   date_of_test = models.DateField(null=True, blank=True)
   data_id = models.IntegerField()
-  age = models.IntegerField()
+  age = models.IntegerField(null=True, blank=True)
 
 #Lemma, instrument, short_column, long_column
 class WordMapping(models.Model):
