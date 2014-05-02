@@ -1,40 +1,61 @@
 from django.core.management.base import NoArgsCommand
-import xlrd
 from common.models import *
+from datetime import datetime
 from instruments.models import *
 
-class Command(NoArgsCommand):
+import xlrd
 
+class Command(NoArgsCommand):
+  
+  def format_date(self, date_str):
+    return datetime.strptime(date_str, '%m/%d/%Y')
+ 
   def handle(self, *args, **options):
-    book = xlrd.open_workbook('raw_data/CDI-WS.xlsx')
+    # Name of the CDI file is here.
+    book = xlrd.open_workbook('raw_data/CDI-WS-2.xlsx')
 
     sh = book.sheet_by_index(0)
     nrows = sh.nrows
     ncols = sh.ncols
     
-    special_cols = ['id', 'birth', 'gender', 'cdiage', 'momed']
+    special_cols = ['id', 'birth', 'gender', 'cdiage', 'momed', 'DateOfBirth', 'DateOfCDI']
     special_col_map = {}
     col_names = list(sh.row_values(0))
 
-    instruments_map = InstrumentsMap.objects.create(name='WS', language='english')
+    instruments_map = InstrumentsMap.objects.get(name='WS', language='english')
 
     for special_col in special_cols:
       for index, value in enumerate(col_names):
-        if value.lower() == special_col:
+        if value == special_col:
           special_col_map[special_col] = index
           break
     
     for row in range(1, nrows):
       row_values = list(sh.row_values(row))
-      child = Child.objects.create(gender=row_values[special_col_map['gender']],
-                    study_id=row_values[special_col_map['id']],
-                    birth_order=row_values[special_col_map['birth']],
-                    mom_ed=int(row_values[special_col_map['momed']]))
+      
+      # Initialize the Child here.
+      child = Child.objects.create(study_id=row_values[special_col_map['id']])
+      if 'DateOfBirth' in special_col_map and row_values[special_col_map['DateOfBirth']] != '':
+        child.date_of_birth = self.format_date(row_values[special_col_map['DateOfBirth']])
+      if 'gender' in special_col_map and row_values[special_col_map['gender']] != '':
+        child.gender = row_values[special_col_map['gender']]
+      if 'birth' in special_col_map and row_values[special_col_map['birth']] != '':
+        child.birth_order = int(row_values[special_col_map['birth']])
+      if 'momed' in special_col_map and row_values[special_col_map['momed']] != '':
+        child.mom_ed = int(row_values[special_col_map['momed']])
+      child.save()
+      
+      # Create the instrument and the administration here.
       instrument = WS.objects.create()
       administration = Administration.objects.create(child=child,
                                              instrument=instruments_map,
                                              data_id=instrument.pk,
-                                             age=int(row_values[special_col_map['cdiage']]))
+                                             date_of_test=self.format_date(row_values[special_col_map['DateOfCDI']]))
+      if 'cdiage' in special_col_map and row_values[special_col_map['cdiage']] != '':
+        administration.age = int(row_values[special_col_map['cdiage']]) 
+        administration.save()
+
+      # Parse all the fields for the given data entry here.
       start = False
       instrument_data = {}
       col_name_index = 0
