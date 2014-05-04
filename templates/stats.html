@@ -1,22 +1,7 @@
-<html>
-<head>
-    <title>Search</title>
-</head>
-<body>
-    <form action="" method="get">
-    	Source Name: <input type="text" name="source_name"><br>
-    	Source Year: <input type="text" name="source_year"><br>
-        <input type="checkbox" name="gender" value="m">Male
-        <input type="checkbox" name="gender" value="f">Female<br>
-        Gestational Age: <input type="text" name="gestational_age"><br>
-        Mother's Education: <input type="text" name="mom_ed"><br>
-        Birth Order: <input type="text" name="birth_order"><br>
-        Instrument: <input type="text" name="instrument"><br>
-        Language: <input type="text" name="instrument"><br>
-        Lemma: <input type="text" name="lemma"><br>
-        CDI Category: <input type="text" name="cdi_cat"><br>
-        Data Age: <input type="text" name="data_age"><br>
-        <input type="submit" value="Search">
-    </form>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}Statistics{% endblock %}
+
+{% block content %}
+{{ data }}
+{% endblock %}
