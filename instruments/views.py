@@ -1,3 +1,6 @@
+import datetime
+import json
+
 from django.http import HttpResponse
 from django.shortcuts import render, render_to_response
 from django.views.generic import View
@@ -11,11 +14,11 @@ class Stats(View):
     data = []
     administrations = Administration.objects.all()
     for administration in administrations: 
-      obj = {'date_of_test': administration.date_of_test,
-             'age': administration.age,
-             'gender': administration.child.gender,
-             'date_of_birth': administration.child.date_of_birth,
-             'mom_ed': administration.child.mom_ed}  
+      obj = {'age': administration.age if administration.age is not None else -1,
+             #'date_of_test': administration.date_of_test if administration.date_of_test != None else datetime.datetime.now(),
+             'gender': administration.child.gender if administration.child.gender != None else 'U',
+             #'date_of_birth': administration.child.date_of_birth if administration.child.date_of_birth != None else datetime.datetime.now(),
+             'mom_ed': administration.child.mom_ed if administration.child.mom_ed != None else -1}  
       instrument = administration.instrument.name
       for subclass in BaseTable.__subclasses__():
         if instrument == subclass.__name__:
@@ -29,7 +32,7 @@ class Stats(View):
           total = total + instrument_obj[field_name]
       obj['total'] = total
       data.append(obj)
-    return render(request, 'stats.html', {'data': data})
+    return render(request, 'stats.html', {'data': json.dumps(data)})
 
 
 class Search(View):

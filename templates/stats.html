@@ -1,7 +1,20 @@
 {% extends "base.html" %}
 
+{% load static %}
+
 {% block title %}Statistics{% endblock %}
 
 {% block content %}
-{{ data }}
+<input type='hidden' id='data' value='{{ data }}'/>
+<div id="genderChart"></div>
+<div id="ageChart"></div>
+<div id="ageChartRange"></div>
+<div id="momedChart"></div>
+<div id="momedChartRange"></div>
+
+<script type="text/javascript" src="{% static "third_party/d3.js" %}"></script> 
+<script type="text/javascript" src="{% static "third_party/crossfilter.js" %}"></script> 
+<script type="text/javascript" src="{% static "third_party/dc.js" %}"></script> 
+<script type="text/javascript" src="{% static "js/stats.js" %}"></script> 
+
 {% endblock %}
