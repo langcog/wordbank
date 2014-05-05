@@ -4,20 +4,21 @@
 
 .nav_title {
   font-size: 48px;
-  color: #E44424;
+  /*color: #E44424;*/
+  color: #fff;
 }
 
 .navbar-static-top {
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #fff;
+  background-color: #6baed6;
+  /*background-color: #67BCDB;*/
 }
 
 .content {
-  background-color: #67BCDB;
-  color: #fff;
+  color: #000;
 }
 .navbar-default .navbar-nav>li>a {
   /*color: #E44424;*/
-  color: #E44424;
+  color: #fff;
 }
