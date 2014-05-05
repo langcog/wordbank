@@ -4,9 +4,20 @@
 
 .nav_title {
   font-size: 48px;
+  color: #E44424;
 }
 
 .navbar-static-top {
   padding-top: 10px;
   padding-bottom: 10px;
+  background-color: #fff;
+}
+
+.content {
+  background-color: #67BCDB;
+  color: #fff;
+}
+.navbar-default .navbar-nav>li>a {
+  /*color: #E44424;*/
+  color: #E44424;
 }
