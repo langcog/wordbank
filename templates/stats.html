@@ -7,14 +7,24 @@
 {% block content %}
 <link rel="stylesheet" href={% static "third_party/dc.css" %}>
 <input type='hidden' id='data' value='{{ data }}'/>
-<p>Pie chart distribution between Males and Females.</p>
-<div id="genderChart"></div>
-<p>Line Graph of age of child to the number of words they know.</p>
-<div id="ageChart"></div>
-<div id="ageChartRange"></div>
-<p>Line Graph of mom's education to the number of words the child knows.</p>
-<div id="momedChart"></div>
-<div id="momedChartRange"></div>
+
+<div class="row">
+  <div class="col-md-4">
+    <div>Pie chart distribution between Males and Females.</div>
+    <div id="genderChart"></div>
+  </div>
+  <div class="col-md-8">
+    <div>Line Graph of age of child to the number of words they know.</div>
+    <div id="ageChart"></div>
+    <div id="ageChartRange"></div>
+  </div>
+</div>
+
+<div class="row">
+  <div>Line Graph of mom's education to the number of words the child knows.</div>
+  <div id="momedChart"></div>
+  <div id="momedChartRange"></div>
+</div>
 
 <script type="text/javascript" src="{% static "third_party/d3.js" %}"></script> 
 <script type="text/javascript" src="{% static "third_party/crossfilter.js" %}"></script> 
