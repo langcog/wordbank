@@ -5,6 +5,7 @@
 {% block title %}Statistics{% endblock %}
 
 {% block content %}
+<link rel="stylesheet" href={% static "third_party/dc.css" %}>
 <input type='hidden' id='data' value='{{ data }}'/>
 <div id="genderChart"></div>
 <div id="ageChart"></div>
