@@ -27,10 +27,10 @@ var momedsGroup = momeds.group().reduceSum(function(d) {
 });
 
 ageChart.renderArea(true)
-        .width(900)
+        .width(800)
         .height(300)
         .transitionDuration(1000)
-        .margins({top: 30, right: 50, bottom: 25, left: 100})
+        .margins({top: 30, right: 50, bottom: 25, left: 80})
         .dimension(ages)
         .mouseZoomable(false)
         .x(d3.scale.linear().domain([15,31]))
@@ -47,9 +47,9 @@ ageChart.renderArea(true)
             return d.value;
         });
 
-ageChartRange.width(900)
+ageChartRange.width(800)
         .height(40)
-        .margins({top: 0, right: 40, bottom: 20, left: 100})
+        .margins({top: 0, right: 40, bottom: 20, left: 80})
         .dimension(ages)
         .group(agesGroup)
         .x(d3.scale.linear().domain([15,31]))
@@ -59,9 +59,9 @@ ageChartRange.width(900)
         //.alwaysUseRounding(true)
         //.xUnits(d3.time.months);
 
-genderChart.width(350)
-        .height(350)
-        .radius(170)
+genderChart.width(320)
+        .height(320)
+        .radius(150)
         .dimension(genders)
         .group(gendersGroup)
         .label(function (d) {
