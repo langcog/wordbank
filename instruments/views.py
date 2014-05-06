@@ -13,8 +13,7 @@ from instruments import helper
 class Stats(View):
 
   def get(self, request):
-    data = helper.aggregate()
-    return render(request, 'stats.html', {'data': json.dumps(data)})
+    return render(request, 'stats.html', {'data': []})
 
 
 class Search(View):

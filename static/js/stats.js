@@ -1,4 +1,6 @@
-var data_json = $.parseJSON($('#data').val());
+d3.json('static/json/stats.json', function(data_json) {
+
+//var data_json = $.parseJSON($('#data').val());
 var data = crossfilter(data_json);
 var all = data.groupAll();
 var ageChart = dc.lineChart('#ageChart'); 
@@ -7,12 +9,24 @@ var genderChart = dc.pieChart('#genderChart');
 var momedChart = dc.lineChart('#momedChart'); 
 var momedChartRange = dc.barChart('#momedChartRange');
 
+var reduceAdd = function(p, v) {
+  ++p.count;
+  p.total += v['total'];
+  return p;
+};
+var reduceRemove = function(p, v) {
+  --p.count;
+  p.total -= v['total'];
+  return p;
+};
+var reduceInitial = function() {
+  return {count: 0, total: 0};
+};
+
 var ages = data.dimension(function(d) {
   return d['age'];
 });
-var agesGroup = ages.group().reduceSum(function(d) {
-  return d['total'];
-});
+var agesGroup = ages.group().reduce(reduceAdd, reduceRemove, reduceInitial);
 var genders = data.dimension(function(d) {
   return d['gender'];
 });
@@ -22,9 +36,7 @@ var gendersGroup = genders.group().reduceSum(function(d) {
 var momeds = data.dimension(function(d) {
   return d['mom_ed'];
 });
-var momedsGroup = momeds.group().reduceSum(function(d) {
-  return d['total'];
-});
+var momedsGroup = momeds.group().reduce(reduceAdd, reduceRemove, reduceInitial);
 
 ageChart.renderArea(true)
         .width(800)
@@ -44,7 +56,7 @@ ageChart.renderArea(true)
 
         .group(agesGroup)
         .valueAccessor(function (d) {
-            return d.value;
+            return d.value.count > 0 ? d.value.total / d.value.count : 0;
         });
 
 ageChartRange.width(800)
@@ -55,6 +67,9 @@ ageChartRange.width(800)
         .x(d3.scale.linear().domain([15,31]))
         .centerBar(true)
         .gap(1)
+        .valueAccessor(function (d) {
+            return d.value.count > 0 ? d.value.total / d.value.count : 0;
+        });
         //.round(d3.time.month.round)
         //.alwaysUseRounding(true)
         //.xUnits(d3.time.months);
@@ -85,7 +100,7 @@ momedChart.renderArea(true)
         .brushOn(false)                                                            
         .group(momedsGroup)
         .valueAccessor(function (d) {
-            return d.value;
+            return d.value.count > 0 ? d.value.total / d.value.count : 0;
         });
 
 momedChartRange.width(900)
@@ -96,5 +111,9 @@ momedChartRange.width(900)
         .centerBar(true)
         .gap(1)
         .x(d3.scale.linear().domain([0,18]))                                      
+        .valueAccessor(function (d) {
+            return d.value.count > 0 ? d.value.total / d.value.count : 0;
+        });
 
 dc.renderAll();
+});
