@@ -19,3 +19,4 @@ class Command(NoArgsCommand):
         start = True
       if start:
         f.write('  col_' + value + ' = models.IntegerField(null=True, blank=True)\n')
+    f.close()

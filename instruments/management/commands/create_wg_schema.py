@@ -45,3 +45,4 @@ class Command(NoArgsCommand):
         index = index + offset
       else:
         index = index + 1
+    f.close()
