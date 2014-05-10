@@ -3,11 +3,17 @@ d3.json('static/json/stats.json', function(data_json) {
 //var data_json = $.parseJSON($('#data').val());
 var data = crossfilter(data_json);
 var all = data.groupAll();
+var ageChildChart = dc.barChart('#ageChildChart');
+var instrumentsChart = dc.pieChart('#instrumentsChart');
 var ageChart = dc.lineChart('#ageChart'); 
 var ageChartRange = dc.barChart('#ageChartRange');
 var genderChart = dc.pieChart('#genderChart');
 var momedChart = dc.lineChart('#momedChart'); 
 var momedChartRange = dc.barChart('#momedChartRange');
+
+var lineChartWidth = 600;
+var pieChartWidth = 260;
+var pieChartRadius = 130;
 
 var reduceAdd = function(p, v) {
   ++p.count;
@@ -26,7 +32,19 @@ var reduceInitial = function() {
 var ages = data.dimension(function(d) {
   return d['age'];
 });
+var ageChild = data.dimension(function(d) {
+  return d['age'];
+});
 var agesGroup = ages.group().reduce(reduceAdd, reduceRemove, reduceInitial);
+var ageChildGroup = ageChild.group().reduceSum(function(d) {
+  return 1;
+});
+var instruments = data.dimension(function(d) {
+  return d['instrument'];
+});
+var instrumentsGroup = instruments.group().reduceSum(function(d) {
+  return 1;
+});
 var genders = data.dimension(function(d) {
   return d['gender'];
 });
@@ -39,7 +57,7 @@ var momeds = data.dimension(function(d) {
 var momedsGroup = momeds.group().reduce(reduceAdd, reduceRemove, reduceInitial);
 
 ageChart.renderArea(true)
-        .width(800)
+        .width(lineChartWidth)
         .height(300)
         .transitionDuration(1000)
         .margins({top: 30, right: 50, bottom: 25, left: 80})
@@ -59,10 +77,10 @@ ageChart.renderArea(true)
             return d.value.count > 0 ? d.value.total / d.value.count : 0;
         });
 
-ageChartRange.width(800)
+ageChartRange.width(lineChartWidth)
         .height(40)
         .margins({top: 0, right: 40, bottom: 20, left: 80})
-        .dimension(ages)
+        .dimension(ageChild)
         .group(agesGroup)
         .x(d3.scale.linear().domain([15,31]))
         .centerBar(true)
@@ -74,9 +92,9 @@ ageChartRange.width(800)
         //.alwaysUseRounding(true)
         //.xUnits(d3.time.months);
 
-genderChart.width(320)
+genderChart.width(pieChartWidth)
         .height(320)
-        .radius(150)
+        .radius(pieChartRadius)
         .dimension(genders)
         .group(gendersGroup)
         .label(function (d) {
@@ -86,7 +104,7 @@ genderChart.width(320)
         .transitionDuration(500)
 
 momedChart.renderArea(true)
-        .width(900)
+        .width(lineChartWidth)
         .height(300)
         .transitionDuration(1000)                                                  
         .margins({top: 30, right: 50, bottom: 25, left: 100})                       
@@ -103,7 +121,7 @@ momedChart.renderArea(true)
             return d.value.count > 0 ? d.value.total / d.value.count : 0;
         });
 
-momedChartRange.width(900)
+momedChartRange.width(lineChartWidth)
         .height(40)
         .margins({top: 0, right: 40, bottom: 20, left: 100})
         .dimension(momeds)
@@ -114,6 +132,31 @@ momedChartRange.width(900)
         .valueAccessor(function (d) {
             return d.value.count > 0 ? d.value.total / d.value.count : 0;
         });
+
+instrumentsChart.width(pieChartWidth)
+        .height(320)
+        .radius(pieChartRadius)
+        .dimension(instruments)
+        .group(instrumentsGroup)
+        .label(function (d) {
+            return d.key + ": " + d.value;
+        })
+        .renderLabel(true)
+        .transitionDuration(500)
+
+
+ageChildChart.width(lineChartWidth)
+             .height(300)
+             .margins({top: 0, right: 40, bottom: 20, left: 10})
+             .dimension(ages)
+             .group(ageChildGroup)
+             .centerBar(true)
+             .gap(1)
+             .x(d3.scale.linear().domain([16,31]))                                      
+             .valueAccessor(function (d) {
+               return d.value;
+             });
+
 
 dc.renderAll();
 });
