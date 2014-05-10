@@ -14,6 +14,7 @@ def aggregate():
     for subclass in BaseTable.__subclasses__():
       if instrument == subclass.__name__:
         instrument_class = subclass
+        obj['instrument'] = instrument
         break
     instrument_obj = instrument_class.objects.get(pk=administration.data_id).__dict__
     total = 0
