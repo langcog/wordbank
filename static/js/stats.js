@@ -17,16 +17,18 @@ var pieChartRadius = 130;
 
 var reduceAdd = function(p, v) {
   ++p.count;
-  p.total += v['total'];
+  p.production += v['production'];
+  p.comprehension += v['comprehension'];
   return p;
 };
 var reduceRemove = function(p, v) {
   --p.count;
-  p.total -= v['total'];
+  p.production -= v['production'];
+  p.comprehension -= v['comprehension'];
   return p;
 };
 var reduceInitial = function() {
-  return {count: 0, total: 0};
+  return {count: 0, production: 0, comprehension: 0};
 };
 
 var ages = data.dimension(function(d) {
@@ -69,12 +71,15 @@ ageChart.renderArea(true)
         //.xUnits(d3.time.months)
         .elasticY(true)
         .renderHorizontalGridLines(true)
-        //.legend(dc.legend().x(800).y(10).itemHeight(13).gap(5))
+        .legend(dc.legend().x(130).y(30).itemHeight(13).gap(5))
         .brushOn(false)
 
-        .group(agesGroup)
+        .group(agesGroup, 'Production')
         .valueAccessor(function (d) {
-            return d.value.count > 0 ? d.value.total / d.value.count : 0;
+          return d.value.count > 0 ? d.value.production / d.value.count : 0;
+        })
+        .stack(agesGroup, 'Comprehension', function(d) {
+          return d.value.count > 0 ? d.value.comprehension / d.value.count : 0;
         });
 
 ageChartRange.width(lineChartWidth)
@@ -86,7 +91,7 @@ ageChartRange.width(lineChartWidth)
         .centerBar(true)
         .gap(1)
         .valueAccessor(function (d) {
-            return d.value.count > 0 ? d.value.total / d.value.count : 0;
+            return d.value.count > 0 ? d.value.production / d.value.count : 0;
         })
         .yAxis().ticks(0);
         //.round(d3.time.month.round)
@@ -115,11 +120,14 @@ momedChart.renderArea(true)
         .rangeChart(momedChartRange)
         .elasticY(true)                                                            
         .renderHorizontalGridLines(true)
-        //.legend(dc.legend().x(800).y(10).itemHeight(13).gap(5))                  
+        .legend(dc.legend().x(130).y(30).itemHeight(13).gap(5))                  
         .brushOn(false)                                                            
-        .group(momedsGroup)
+        .group(momedsGroup, 'Production')
         .valueAccessor(function (d) {
-            return d.value.count > 0 ? d.value.total / d.value.count : 0;
+            return d.value.count > 0 ? d.value.production / d.value.count : 0;
+        })
+        .stack(momedsGroup, 'Comprehension', function (d) {
+            return d.value.count > 0 ? d.value.comprehension / d.value.count : 0;
         });
 
 momedChartRange.width(lineChartWidth)
@@ -131,7 +139,7 @@ momedChartRange.width(lineChartWidth)
         .gap(1)
         .x(d3.scale.linear().domain([0,18]))                                      
         .valueAccessor(function (d) {
-            return d.value.count > 0 ? d.value.total / d.value.count : 0;
+            return d.value.count > 0 ? d.value.production / d.value.count : 0;
         })
         .yAxis().ticks(0); 
 
