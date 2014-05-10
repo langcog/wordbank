@@ -26,7 +26,7 @@ class Command(NoArgsCommand):
 
     for special_col in special_cols:
       for index, value in enumerate(col_names):
-        if value == special_col:
+        if value.lower() == special_col.lower():
           special_col_map[special_col] = index
           break
     

@@ -63,7 +63,7 @@ ageChart.renderArea(true)
         .margins({top: 30, right: 50, bottom: 25, left: 80})
         .dimension(ages)
         .mouseZoomable(false)
-        .x(d3.scale.linear().domain([15,31]))
+        .x(d3.scale.linear().domain([7,31]))
         .rangeChart(ageChartRange)
         //.round(d3.time.month.round)
         //.xUnits(d3.time.months)
@@ -82,12 +82,13 @@ ageChartRange.width(lineChartWidth)
         .margins({top: 0, right: 40, bottom: 20, left: 80})
         .dimension(ageChild)
         .group(agesGroup)
-        .x(d3.scale.linear().domain([15,31]))
+        .x(d3.scale.linear().domain([7,31]))
         .centerBar(true)
         .gap(1)
         .valueAccessor(function (d) {
             return d.value.count > 0 ? d.value.total / d.value.count : 0;
-        });
+        })
+        .yAxis().ticks(0);
         //.round(d3.time.month.round)
         //.alwaysUseRounding(true)
         //.xUnits(d3.time.months);
@@ -131,7 +132,8 @@ momedChartRange.width(lineChartWidth)
         .x(d3.scale.linear().domain([0,18]))                                      
         .valueAccessor(function (d) {
             return d.value.count > 0 ? d.value.total / d.value.count : 0;
-        });
+        })
+        .yAxis().ticks(0); 
 
 instrumentsChart.width(pieChartWidth)
         .height(320)
@@ -152,7 +154,7 @@ ageChildChart.width(lineChartWidth)
              .group(ageChildGroup)
              .centerBar(true)
              .gap(1)
-             .x(d3.scale.linear().domain([16,31]))                                      
+             .x(d3.scale.linear().domain([7,31]))                                      
              .valueAccessor(function (d) {
                return d.value;
              });
