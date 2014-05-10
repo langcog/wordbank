@@ -6,6 +6,7 @@
   font-size: 48px;
   /*color: #E44424;*/
   color: #fff;
+  margin-top: -5px;
 }
 
 .navbar-static-top {
@@ -21,4 +22,12 @@
 .navbar-default .navbar-nav>li>a {
   /*color: #E44424;*/
   color: #fff;
+  margin-top: 5px;
+  margin-bottom: -5px;
+}
+
+.nav_image {
+  margin-top: 0px; 
+  width: 200px; 
+  margin-bottom: -20px;
 }
