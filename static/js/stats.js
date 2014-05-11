@@ -5,11 +5,17 @@ var data = crossfilter(data_json);
 var all = data.groupAll();
 var ageChildChart = dc.barChart('#ageChildChart');
 var instrumentsChart = dc.pieChart('#instrumentsChart');
+var genderChart = dc.pieChart('#genderChart');
+
 var ageChart = dc.lineChart('#ageChart'); 
 var ageChartRange = dc.barChart('#ageChartRange');
-var genderChart = dc.pieChart('#genderChart');
+var ageComprehensionChart = dc.lineChart('#ageComprehensionChart'); 
+var ageComprehensionChartRange = dc.barChart('#ageComprehensionChartRange');
+
 var momedChart = dc.lineChart('#momedChart'); 
 var momedChartRange = dc.barChart('#momedChartRange');
+var momedComprehensionChart = dc.lineChart('#momedComprehensionChart'); 
+var momedComprehensionChartRange = dc.barChart('#momedComprehensionChartRange');
 
 var lineChartWidth = 600;
 var pieChartWidth = 260;
@@ -74,13 +80,10 @@ ageChart.renderArea(true)
         .legend(dc.legend().x(130).y(30).itemHeight(13).gap(5))
         .brushOn(false)
 
-        .group(agesGroup, 'Production')
+        .group(agesGroup)
         .valueAccessor(function (d) {
           return d.value.count > 0 ? d.value.production / d.value.count : 0;
         })
-        .stack(agesGroup, 'Comprehension', function(d) {
-          return d.value.count > 0 ? d.value.comprehension / d.value.count : 0;
-        });
 
 ageChartRange.width(lineChartWidth)
         .height(40)
@@ -98,6 +101,37 @@ ageChartRange.width(lineChartWidth)
         //.alwaysUseRounding(true)
         //.xUnits(d3.time.months);
 
+ageComprehensionChart.renderArea(true)
+        .width(lineChartWidth)
+        .height(300)
+        .transitionDuration(1000)
+        .margins({top: 30, right: 50, bottom: 25, left: 80})
+        .dimension(ages)
+        .mouseZoomable(false)
+        .x(d3.scale.linear().domain([7,31]))
+        .rangeChart(ageChartRange)
+        .elasticY(true)
+        .renderHorizontalGridLines(true)
+        .brushOn(false)
+
+        .group(agesGroup)
+        .valueAccessor(function (d) {
+          return d.value.count > 0 ? d.value.comprehension / d.value.count : 0;
+        }); 
+
+ageComprehensionChartRange.width(lineChartWidth)
+        .height(40)
+        .margins({top: 0, right: 40, bottom: 20, left: 80})
+        .dimension(ageChild)
+        .group(agesGroup)
+        .x(d3.scale.linear().domain([7,31]))
+        .centerBar(true)
+        .gap(1)
+        .valueAccessor(function (d) {
+            return d.value.count > 0 ? d.value.comprehension / d.value.count : 0;
+        })  
+        .yAxis().ticks(0);
+
 genderChart.width(pieChartWidth)
         .height(320)
         .radius(pieChartRadius)
@@ -114,21 +148,17 @@ momedChart.renderArea(true)
         .height(300)
         .transitionDuration(1000)                                                  
         .margins({top: 30, right: 50, bottom: 25, left: 100})                       
-        .dimension(ages)                                                           
+        .dimension(momeds)                                                           
         .mouseZoomable(false)
         .x(d3.scale.linear().domain([0,18]))                                      
         .rangeChart(momedChartRange)
         .elasticY(true)                                                            
         .renderHorizontalGridLines(true)
-        .legend(dc.legend().x(130).y(30).itemHeight(13).gap(5))                  
         .brushOn(false)                                                            
-        .group(momedsGroup, 'Production')
+        .group(momedsGroup)
         .valueAccessor(function (d) {
             return d.value.count > 0 ? d.value.production / d.value.count : 0;
         })
-        .stack(momedsGroup, 'Comprehension', function (d) {
-            return d.value.count > 0 ? d.value.comprehension / d.value.count : 0;
-        });
 
 momedChartRange.width(lineChartWidth)
         .height(40)
@@ -142,6 +172,36 @@ momedChartRange.width(lineChartWidth)
             return d.value.count > 0 ? d.value.production / d.value.count : 0;
         })
         .yAxis().ticks(0); 
+
+momedComprehensionChart.renderArea(true)
+        .width(lineChartWidth)
+        .height(300)
+        .transitionDuration(1000)
+        .margins({top: 30, right: 50, bottom: 25, left: 100})
+        .dimension(momeds)
+        .mouseZoomable(false)
+        .x(d3.scale.linear().domain([0,18]))
+        .rangeChart(momedChartRange)
+        .elasticY(true)
+        .renderHorizontalGridLines(true)
+        .brushOn(false)
+        .group(momedsGroup)
+        .valueAccessor(function (d) {
+            return d.value.count > 0 ? d.value.comprehension / d.value.count : 0;
+        })
+
+momedComprehensionChartRange.width(lineChartWidth)
+        .height(40)
+        .margins({top: 0, right: 40, bottom: 20, left: 100})
+        .dimension(momeds)
+        .group(momedsGroup)
+        .centerBar(true)
+        .gap(1)
+        .x(d3.scale.linear().domain([0,18]))
+        .valueAccessor(function (d) {
+            return d.value.count > 0 ? d.value.comprehension / d.value.count : 0;
+        })
+        .yAxis().ticks(0);
 
 instrumentsChart.width(pieChartWidth)
         .height(320)
