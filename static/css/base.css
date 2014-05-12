@@ -4,9 +4,30 @@
 
 .nav_title {
   font-size: 48px;
+  /*color: #E44424;*/
+  color: #fff;
+  margin-top: -5px;
 }
 
 .navbar-static-top {
   padding-top: 10px;
   padding-bottom: 10px;
+  background-color: #6baed6;
+  /*background-color: #67BCDB;*/
+}
+
+.content {
+  color: #000;
+}
+.navbar-default .navbar-nav>li>a {
+  /*color: #E44424;*/
+  color: #fff;
+  margin-top: 5px;
+  margin-bottom: -5px;
+}
+
+.nav_image {
+  margin-top: -15px; 
+  width: 200px; 
+  margin-bottom: -20px;
 }
