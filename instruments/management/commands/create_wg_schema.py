@@ -33,7 +33,7 @@ class Command(NoArgsCommand):
     
     f = open('instruments/wg.py', 'w')
     f.write('from django.db import models\n')
-    f.write('\nclass WG(models.Model):\n')
+    f.write('\nclass WG(BaseTable):\n')
     start = False
     index = 0
     while index < ncols:
@@ -45,3 +45,4 @@ class Command(NoArgsCommand):
         index = index + offset
       else:
         index = index + 1
+    f.close()

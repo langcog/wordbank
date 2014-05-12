@@ -1,8 +1,5 @@
-<html>
-<head>
-    <title>Search</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block content %}
     <form action="" method="get">
     	Source Name: <input type="text" name="source_name"><br>
     	Source Year: <input type="text" name="source_year"><br>
@@ -18,5 +15,5 @@
         Data Age: <input type="text" name="data_age"><br>
         <input type="submit" value="Search">
     </form>
-</body>
-</html>
+
+{% endblock %}

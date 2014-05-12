@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}Statistics{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href={% static "third_party/dc.css" %}>
+<input type='hidden' id='data' value='{{ data }}'/>
+
+<div class="row">
+  <h3>Database Statistics</h3>
+  <br />
+  <div class="col-md-6">
+    <h5>Age to Number of Children</h5>
+    <div id="ageChildChart"></div>
+  </div>
+  <div class="col-md-3">
+    <h5>Types of Instruments</h5>
+    <div id="instrumentsChart"></div>
+  </div>
+  <div class="col-md-3">
+    <h5>Gender distribution</h5>
+    <div id="genderChart"></div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <h5>Age of child to the average number of words they can produce.</h5>
+    <div id="ageChart"></div>
+    <div id="ageChartRange"></div>
+  </div>
+  <div class="col-md-6">
+    <h5>Mom's education to the number of words the child can produce.</h5>
+    <div id="momedChart"></div>
+    <div id="momedChartRange"></div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <h5>Age of child to the average number of words they can comprehend.</h5>
+    <div id="ageComprehensionChart"></div>
+    <div id="ageComprehensionChartRange"></div>
+  </div>
+  <div class="col-md-6">
+    <h5>Mom's education to the number of words the child can comprehend.</h5>
+    <div id="momedComprehensionChart"></div>
+    <div id="momedComprehensionChartRange"></div>
+  </div>
+</div>
+
+
+<div class="row">
+</div>
+
+<script type="text/javascript" src="{% static "third_party/d3.js" %}"></script> 
+<script type="text/javascript" src="{% static "third_party/crossfilter.js" %}"></script> 
+<script type="text/javascript" src="{% static "third_party/dc.js" %}"></script> 
+<script type="text/javascript" src="{% static "js/stats.js" %}"></script> 
+
+{% endblock %}

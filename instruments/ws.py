@@ -1,6 +1,7 @@
 from django.db import models
+from instruments.base import *
 
-class WS(models.Model):
+class WS(BaseTable):
   col_baabaa = models.IntegerField(null=True, blank=True)
   col_choochoo = models.IntegerField(null=True, blank=True)
   col_cockddld = models.IntegerField(null=True, blank=True)
