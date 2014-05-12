@@ -2,11 +2,10 @@
 rm(list=ls())
 
 #get lab version of useful R functions
-source('../Other/Ranalysis/useful.R')
+source('~/Projects/Other/Ranalysis/useful.R')
 
 #load libraries for data manipulation and graphing
 library(directlabels)
-library(data.table)
 library(dplyr)
 
 # connect to local databse
@@ -20,20 +19,18 @@ source.table <- tbl(wordbank,"common_source")
 wordinfo.table <- tbl(wordbank,"common_wordinfo")
 mapping.table <- tbl(wordbank,"common_wordmapping")
 ws.table <- tbl(wordbank,"instruments_ws")
-#wg.table <- tbl(wordbank,"instruments_wg")
 
-vocab.words <- as.data.frame(select(ws.table,id:col_too))
-bykid.longform <- melt(vocab.words,id.vars="id",variable.name = "word",
+vocab.words <- as.data.frame(select(ws.table,id:col_connthen))
+bykid.longform <- melt(vocab.words,id.vars="id", variable.name = "word",
                        value.name="produces")
 
 production.scores <- bykid.longform %.%
   group_by(id) %.%
   summarise(productive = sum(produces == 1))
 
-admins <- as.data.frame(admin.table %.%
-                          select(data_id,child_id,age) %.%
-                          filter(age < 99))
-children <- as.data.frame(select(child.table,id,gender))
+admins <- as.data.frame(select(admin.table,data_id,child_id,age))
+                        
+children <- as.data.frame(select(child.table,id,gender,mom_ed,birth_order))
 names(children)[1] <- "child.id"
 names(admins)[1:2] <- c("id","child.id")
 
@@ -49,7 +46,6 @@ age.gender.data <- child.data %.%
             ci.h = ci.high(productive),
             ci.l = ci.low(productive),
             n = n())
-
 
 quartz(width=7,height=4)
 ggplot(age.gender.data, 
