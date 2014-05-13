@@ -31,3 +31,7 @@
   width: 200px; 
   margin-bottom: -20px;
 }
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: #fff;
+}
