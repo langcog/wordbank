@@ -1,0 +1,16 @@
+.about {
+  font-size: 24px;
+  font-family: "Lucida Grande";
+  margin-top: 40px;
+}
+
+p {
+  margin-bottom:40px;
+}
+
+.coming-soon {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 40px;
+  font-family: "Lucida Grande";
+}
