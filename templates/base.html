@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+{% load static %}
 <html>
 <head>
   <title>{% block title %}{% endblock %}</title>
   <meta name="author" content="Ranjay Krishna">
+  <link rel="icon" type="image/ico" href={% static 'images/favicon.ico' %} />
 </head>
 <body class="content">
 
-  {% load static %}
 
   {% block styles %}
   <link rel="stylesheet" href={% static "third_party/bootstrap3/css/bootstrap.css.map" %}>
