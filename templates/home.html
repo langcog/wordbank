@@ -3,30 +3,38 @@
 
 {% block content %}
 <link rel="stylesheet" href={% static "css/home.css" %}>
+
+<div class="row">
+  <div class="col-md-5">
+    <div class=""><img class="about-image" src="{% static 'images/logo_original.jpg' %}"></div>
+  </div>
 <div class="about"><b>Wordbank:</b> An open database of children's vocabulary growth.</div>    
+</div>
+
 <div class="row">
   <div class="col-md-4 sub-topic">
-    <button class="sub-topic-button"><span class="glyphicon glyphicon-user"></span> About</button>
+    <a href="/about" class="sub-topic-button"><span class="glyphicon glyphicon-user"></span> About</a>
     <div class="sub-topic-description">
       Who we are and what we do.
     </div>
   </div>
   <div class="col-md-4 sub-topic">
-    <button class="sub-topic-button sub-topic-search"><span class="glyphicon glyphicon-search"></span> Search</button>
+    <a href="/search" class="sub-topic-button sub-topic-search"><span class="glyphicon glyphicon-search"></span> Search</a>
     <div class="sub-topic-description">
       Explore Wordbank right now! Not sure where to start? <br /><br />Try some of our sample reports!
     </div>
   </div>
   <div class="col-md-4 sub-topic">
-    <button class="sub-topic-button"><span class="glyphicon glyphicon-cloud-upload"></span> Contribute</button>
+    <a href="contribute" class="sub-topic-button"><span class="glyphicon glyphicon-cloud-upload"></span> Contribute</a>
     <div class="sub-topic-description">
       We’re always on the lookout for more data! <br /><br />Not ready to contribute just yet? Pledge to contribute instead!
     </div>
   </div>
 </div>
+
 <div class="sub-topic">
   <img class="sub-topic-image" src="{% static 'images/home_stats.png' %}" />
-  <button class="sub-topic-button"><span class="glyphicon glyphicon-stats"></span> More Stats</button>
+  <a href="/stats" class="sub-topic-button"><span class="glyphicon glyphicon-stats"></span> More Stats</a>
   <div class="sub-topic-description">
       Get a feel for the breadth and depth of Wordbank.
   </div>

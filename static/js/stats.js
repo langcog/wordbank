@@ -77,7 +77,6 @@ ageChart.renderArea(true)
         //.xUnits(d3.time.months)
         .elasticY(true)
         .renderHorizontalGridLines(true)
-        .legend(dc.legend().x(130).y(30).itemHeight(13).gap(5))
         .brushOn(false)
 
         .group(agesGroup)
@@ -222,7 +221,7 @@ ageChildChart.width(lineChartWidth)
              .group(ageChildGroup)
              .centerBar(true)
              .gap(1)
-             .x(d3.scale.linear().domain([7,31]))                                      
+             .x(d3.scale.linear().domain([7,31])) 
              .valueAccessor(function (d) {
                return d.value;
              });
