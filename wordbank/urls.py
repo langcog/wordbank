@@ -9,8 +9,10 @@ from instruments.views import *
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', Home.as_view(), name='home'),
+    url(r'about', About.as_view(), name='about'),
     url(r'search', Search.as_view(), name='search'),
     url(r'stats', Stats.as_view(), name='stats'),
+    url(r'contribute', Contribute.as_view(), name='contribute'),
     # url(r'^wordbank/', include('wordbank.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:

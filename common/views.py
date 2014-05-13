@@ -11,6 +11,18 @@ class Home(View):
   def get(self, request):
     return render(request, 'home.html', {})
 
+
+class About(View):
+
+  def get(self, request):
+    return render(request, 'about.html', {})
+
+
+class Contribute(View):
+
+  def get(self, request):
+    return render(request, 'contibute.html', {})
+
 class Search(View):
 
   def search(request):
