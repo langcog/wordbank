@@ -1,21 +1,21 @@
 from django.core.management.base import NoArgsCommand
 from common.models import *
 
-class Command(NoArgsComman):
+class Command(NoArgsCommand):
 
   def handle(self, *args, **options):
-    sources = {0: {'name': 'Original Norming data', 'citation': 'Fenson'},
-               1: {'name': 'San Diego State University', 'citation': 'Thal'},
-               2: {'name': 'University of Wisconsin', 'citation': 'Marchman'},
-               3: {'name': 'UT Dallas', 'citation': 'Marchman'},
-               4: {'name': 'San Diego State University', 'citation': 'Cronan'},
-               5: {'name': 'San Diego State University', 'citation': 'Fenson/Newton'},
-               6: {'name': 'Louisiana State University', 'citation': 'Oetting'},
-               7: {'name': 'University of Connecticut', 'citation': 'Naigles'},
-               8: {'name': 'University of California, San Diego', 'citation': 'Trauner'}}
+    sources = {1: {'name': 'Original Norming data', 'citation': 'Fenson'},
+               2: {'name': 'San Diego State University', 'citation': 'Thal'},
+               3: {'name': 'University of Wisconsin', 'citation': 'Marchman'},
+               4: {'name': 'UT Dallas', 'citation': 'Marchman'},
+               5: {'name': 'San Diego State University', 'citation': 'Cronan'},
+               6: {'name': 'San Diego State University', 'citation': 'Fenson/Newton'},
+               7: {'name': 'Louisiana State University', 'citation': 'Oetting'},
+               8: {'name': 'University of Connecticut', 'citation': 'Naigles'},
+               9: {'name': 'University of California, San Diego', 'citation': 'Trauner'}}
 
     for k in sources:
       Source.objects.create(id=k, 
-                            name=ethnicities[k]['name'],
+                            name=sources[k]['name'],
                             citation=sources[k]['citation'])
 
