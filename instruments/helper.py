@@ -24,8 +24,8 @@ def aggregate():
       if field_name.startswith('col_'):
         if instrument_obj[field_name] == 2:
           production = production + 1
+          comprehension = comprehension + 1
         elif instrument_obj[field_name] == 1:
-          production = production + 1
           comprehension = comprehension + 1
     obj['production'] = production
     obj['comprehension'] = comprehension
