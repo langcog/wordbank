@@ -1,6 +1,48 @@
 .about {
-  font-size: 24px;
-  font-family: CURSIVE;
+  font-size: 30px;
+  font-family: "Lucida Grande";
   text-align: center;
-  margin-top: 100px;
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+.sub-topic {
+  margin-top: 50px;
+}
+
+.sub-topic-description {
+  margin-left: auto ;
+  margin-right: auto ;
+  text-align: center;
+  width: 300px;
+  font-size: 20px;
+}
+
+.sub-topic-button {
+  padding: 5px;
+  background-color: #6baed6;
+  border: 0px solid #666;
+  color: #fff;
+  width: 200px;
+  height: 50px;
+  font-size: 24px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  margin-left: auto ;
+  margin-right: auto ;
+  display: block;
+}
+
+.sub-topic-search {
+  width: 220px;
+  height: 70px;
+  margin-top: -10px;
+}
+
+.sub-topic-image {
+  margin-left: auto ;
+  margin-right: auto ;
+  display: block;
+  width: 350px;
+  height: auto; 
 }
