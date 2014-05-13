@@ -1,5 +1,5 @@
 .about {
-  font-size: 30px;
+  font-size: 28px;
   font-family: "Lucida Grande";
   text-align: left;
   margin-top: 50px;
@@ -21,7 +21,7 @@
   margin-right: auto ;
   text-align: center;
   width: 300px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .sub-topic-button {
@@ -33,7 +33,7 @@
   color: #fff;
   width: 200px;
   height: 50px;
-  font-size: 24px;
+  font-size: 22px;
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
   margin-left: auto ;
