@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Ethnicity:
+class Ethnicity(models.Model):
   ethnicity = models.CharField(max_length=30)
 
 
@@ -36,7 +36,7 @@ class Child(models.Model):
   mom_ed = models.IntegerField(null=True, blank=True)
   dad_ed = models.IntegerField(null=True, blank=True)
   birth_order = models.IntegerField(null=True, blank=True)
-  ethinicity = models.ForeignKey(null=True, blank=True)
+  ethnicity = models.ForeignKey(Ethnicity, null=True, blank=True)
 
 
 class Source(models.Model):

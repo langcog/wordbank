@@ -13,3 +13,4 @@ class Command(NoArgsCommand):
     Source.objects.all().delete()
     WordMapping.objects.all().delete()
     WordInfo.objects.all().delete()
+    Ethnicity.objects.all().delete()
