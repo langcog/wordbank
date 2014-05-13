@@ -216,10 +216,11 @@ instrumentsChart.width(pieChartWidth)
 
 ageChildChart.width(lineChartWidth)
              .height(300)
-             .margins({top: 0, right: 40, bottom: 20, left: 10})
+             .margins({top: 0, right: 40, bottom: 20, left: 30})
              .dimension(ages)
              .group(ageChildGroup)
              .centerBar(true)
+             .elasticY(true)
              .gap(1)
              .x(d3.scale.linear().domain([7,31])) 
              .valueAccessor(function (d) {
