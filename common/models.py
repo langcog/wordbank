@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Ethnicity:
-  ethnicity = CharField(max_length=30)
+  ethnicity = models.CharField(max_length=30)
 
 
 class CDICategory(models.Model):
