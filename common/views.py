@@ -21,7 +21,7 @@ class About(View):
 class Contribute(View):
 
   def get(self, request):
-    return render(request, 'contibute.html', {})
+    return render(request, 'contribute.html', {})
 
 class Search(View):
 
