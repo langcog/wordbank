@@ -22,9 +22,9 @@ def aggregate():
     for field in instrument_class._meta.fields:
       field_name = field.get_attname_column()[0]
       if field_name.startswith('col_'):
-        if instrument_obj[field_name] == 1:
+        if instrument_obj[field_name] == 2:
           production = production + 1
-        elif instrument_obj[field_name] == 2:
+        elif instrument_obj[field_name] == 1:
           production = production + 1
           comprehension = comprehension + 1
     obj['production'] = production
