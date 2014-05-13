@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>{% block title %}{% endblock %}</title>
+  <meta name="author" content="Ranjay Krishna">
 </head>
 <body class="content">
 
@@ -27,8 +28,10 @@
                     <li class="nav_title"><a href="/"><span style="">Wordbank</span></a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
+                    <li class="nav_element"><a href="/about">About</a></li>
                     <li class="nav_element"><a href="/search">Search</a></li>
                     <li class="nav_element"><a href="/stats">Statistics</a></li>
+                    <li class="nav_element"><a href="/contribute">Contribute</a></li>
                 </ul>
             </div>
         </div>
@@ -49,6 +52,9 @@
   </div>
 
   {% block footer %}
+  <div style="height:100px;" class="footer">
+    
+  </div>
   {% endblock %}
 
 </body>
