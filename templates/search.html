@@ -1,19 +1,103 @@
 {% extends "base.html" %}
 {% block content %}
-    <form action="" method="get">
-    	Source Name: <input type="text" name="source_name"><br>
-    	Source Year: <input type="text" name="source_year"><br>
-        <input type="checkbox" name="gender" value="m">Male
-        <input type="checkbox" name="gender" value="f">Female<br>
-        Gestational Age: <input type="text" name="gestational_age"><br>
-        Mother's Education: <input type="text" name="mom_ed"><br>
-        Birth Order: <input type="text" name="birth_order"><br>
-        Instrument: <input type="text" name="instrument"><br>
-        Language: <input type="text" name="instrument"><br>
-        Lemma: <input type="text" name="lemma"><br>
-        CDI Category: <input type="text" name="cdi_cat"><br>
-        Data Age: <input type="text" name="data_age"><br>
-        <input type="submit" value="Search">
+    <link rel="stylesheet" href={% static "css/home.css" %}>
+    <form class="form-horizontal" role="form">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-6" style="padding-right:20px; border-right: 1px solid #ccc;">
+                    <div class = "form-group">
+                        <label for="dob1" class="col-sm-4 control-label">Date of Birth Range</label>
+                        <div class = "col-sm-3">
+                            <input type="text" name="dob1" placeholder="MM/DD/YYYY">
+                        </div>
+                        <div class = "col-sm-3 col-sm-offset-1">
+                            <input type="text" name="dob2" placeholder="MM/DD/YYYY">
+                        </div>
+                    </div>
+                    <div class = "form-group">
+                        <label for="mom_ed1" class="col-sm-4 control-label">Mother's Ed. Range</label>
+                        <div class = "col-sm-3">
+                            <input type="text" name="mom_ed1" placeholder="From">
+                        </div>
+                        <div class = "col-sm-3 col-sm-offset-1">
+                            <input type="text" name="mom_ed2" placeholder="To">
+                        </div>
+                    </div>
+                    <div class = "form-group">
+                        <label for="gest_age1" class="col-sm-4 control-label">Gest. Age Range</label>
+                        <div class = "col-sm-3">
+                            <input type="text" name="gest_age1" placeholder = "From">
+                        </div>
+                        <div class = "col-sm-3 col-sm-offset-1">
+                            <input type="text" name="gest_age2" placeholder = "To">
+                        </div>
+                    </div>
+                    <div class = "form-group">
+                        <label for="birth_order" class="col-sm-4 control-label">Birth Order</label>
+                        <div class = "col-sm-3">
+                            <input type="text" name="birth_order" placeholder = "Number">
+                        </div>
+                        <div class = "col-sm-3">
+                        </div>
+                    </div>
+                    <div class = "form-group">
+                        <div class = "col-sm-offset-2 col-sm-4">
+                            <div class = "checkbox">
+                                <label>
+                                    <input type="checkbox" name="gender" value="m">Male
+                                </label>
+                            </div>
+                        </div>
+                        <div class = "col-sm-3">
+                            <div class = "checkbox">
+                                <label>
+                                    <input type="checkbox" name="gender" value="f">Female
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class = "form-group">
+                        <label for="source_name" class="col-sm-4 control-label">Source Name</label>
+                        <div class = "col-sm-3">
+                            <input type="text" name="source_name" placeholder = "Name">
+                        </div>
+                        <div class = "col-sm-3 col-sm-offset-1">
+                        </div>
+                    </div>
+                    <div class = "form-group">
+                        <label for="source_year1" class="col-sm-4 control-label">Source Year Range</label>
+                        <div class = "col-sm-3">
+                            <input type="text" name="source_year1" placeholder="From">
+                        </div>
+                        <div class = "col-sm-3 col-sm-offset-1">
+                             <input type="text" name="source_year2" placeholder="To">
+                        </div>
+                    </div>
+                    <div class = "form-group">
+                        <label for="data_age1" class="col-sm-4 control-label">Data Age Range</label>
+                        <div class = "col-sm-3">
+                            <input type="text" name="data_age1" placeholder="From">
+                        </div>
+                        <div class = "col-sm-3 col-sm-offset-1">
+                            <input type="text" name="data_age2" placeholder="To">
+                        </div>
+                    </div>
+                    <div class = "form-group">
+                        <label for="instrument" class="col-sm-4 control-label">Instrument</label>
+                        <div class = "col-sm-3">
+                            <input type="text" name="instrument" placeholder="Instrument Name">
+                        </div>
+                        <div class = "col-sm-6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p align = "center">
+            <input type="submit" value="Submit" class = "button">
+        </p>
     </form>
 
 {% endblock %}
