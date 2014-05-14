@@ -67,10 +67,6 @@ class Command(NoArgsCommand):
         ethnic_num = int(row_values[special_col_map['ethnic']])
         if Ethnicity.objects.filter(id=ethnic_num).exists():
           child.ethnicity = Ethnicity.objects.get(pk=ethnic_num)
-      if 'source' in special_col_map and row_values[special_col_map['source']] != '':
-        source_num = int(row_values[special_col_map['source']])
-        if Source.objects.filter(id=source_num+1).exists():
-          child.source = Source.objects.get(id=source_num+1)
       child.save()
 
       # Create the instrument and the administration here.
@@ -81,7 +77,11 @@ class Command(NoArgsCommand):
                                              date_of_test=self.format_date(row_values[special_col_map['DateOfCDI']]))
       if 'cdiage' in special_col_map and row_values[special_col_map['cdiage']] != '':
         administration.age = int(row_values[special_col_map['cdiage']]) 
-        administration.save()
+      if 'source' in special_col_map and row_values[special_col_map['source']] != '':
+        source_num = int(row_values[special_col_map['source']])
+        if Source.objects.filter(id=source_num+1).exists():
+          administration.source = Source.objects.get(id=source_num+1)
+      administration.save()
 
       # Parse all the fields for the given data entry here.
       start = False
