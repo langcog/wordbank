@@ -1,78 +1,103 @@
 {% extends "base.html" %}
 {% block content %}
-    <form action="" method="get">
+    <link rel="stylesheet" href={% static "css/home.css" %}>
+    <form class="form-horizontal" role="form">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-12 col-md-6">
-                    <div class = "row">
-                        <div class = "col-sm-6">
-                            Date of Birth Start: <input type="text" name="dob1">
+                <div class="col-sm-12 col-md-6" style="padding-right:20px; border-right: 1px solid #ccc;">
+                    <div class = "form-group">
+                        <label for="dob1" class="col-sm-4 control-label">Date of Birth Range</label>
+                        <div class = "col-sm-3">
+                            <input type="text" name="dob1" placeholder="MM/DD/YYYY">
                         </div>
-                        <div class = "col-sm-6">
-                            Date of Birth End: <input type="text" name="dob2">
-                        </div>
-                    </div>
-                    <div class = "row">
-                        <div class = "col-sm-6">
-                            Mother's Education Start: <input type="text" name="mom_ed1">
-                        </div>
-                        <div class = "col-sm-6">
-                            Mother's Education End: <input type="text" name="mom_ed2">
+                        <div class = "col-sm-3 col-sm-offset-1">
+                            <input type="text" name="dob2" placeholder="MM/DD/YYYY">
                         </div>
                     </div>
-                    <div class = "row">
-                        <div class = "col-sm-6">
-                            Gest. Age Start: <input type="text" name="gest_age1">
+                    <div class = "form-group">
+                        <label for="mom_ed1" class="col-sm-4 control-label">Mother's Ed. Range</label>
+                        <div class = "col-sm-3">
+                            <input type="text" name="mom_ed1" placeholder="From">
                         </div>
-                        <div class = "col-sm-6">
-                            Gest. Age End: <input type="text" name="gest_age2">
-                        </div>
-                    </div>
-                    <div class = "row">
-                        <div class = "col-sm-6">
-                            <input type="checkbox" name="gender" value="m">Male
-                        </div>
-                        <div class = "col-sm-6">
-                            <input type="checkbox" name="gender" value="f">Female
+                        <div class = "col-sm-3 col-sm-offset-1">
+                            <input type="text" name="mom_ed2" placeholder="To">
                         </div>
                     </div>
-                    <div class = "row">
-                        <div class = "col-sm-6">
-                            Birth Order: <input type="text" name="birth_order">
+                    <div class = "form-group">
+                        <label for="gest_age1" class="col-sm-4 control-label">Gest. Age Range</label>
+                        <div class = "col-sm-3">
+                            <input type="text" name="gest_age1" placeholder = "From">
+                        </div>
+                        <div class = "col-sm-3 col-sm-offset-1">
+                            <input type="text" name="gest_age2" placeholder = "To">
+                        </div>
+                    </div>
+                    <div class = "form-group">
+                        <label for="birth_order" class="col-sm-4 control-label">Birth Order</label>
+                        <div class = "col-sm-3">
+                            <input type="text" name="birth_order" placeholder = "Number">
+                        </div>
+                        <div class = "col-sm-3">
+                        </div>
+                    </div>
+                    <div class = "form-group">
+                        <div class = "col-sm-offset-2 col-sm-4">
+                            <div class = "checkbox">
+                                <label>
+                                    <input type="checkbox" name="gender" value="m">Male
+                                </label>
+                            </div>
+                        </div>
+                        <div class = "col-sm-3">
+                            <div class = "checkbox">
+                                <label>
+                                    <input type="checkbox" name="gender" value="f">Female
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                    <div class = "row">
-                        <div class = "col-sm-6">
-                            Source Name: <input type="text" name="source_name">
+                    <div class = "form-group">
+                        <label for="source_name" class="col-sm-4 control-label">Source Name</label>
+                        <div class = "col-sm-3">
+                            <input type="text" name="source_name" placeholder = "Name">
                         </div>
-                    </row>
-                    <div class = "row">
-                        <div class = "col-sm-6">
-                            Source Year Start: <input type="text" name="source_year1">
-                        </div>
-                        <div class = "col-sm-6">
-                            Source Year End: <input type="text" name="source_year2">
+                        <div class = "col-sm-3 col-sm-offset-1">
                         </div>
                     </div>
-                    <div class = "row">
-                        <div class = "col-sm-6">
-                            Data Age Start: <input type="text" name="data_age1">
+                    <div class = "form-group">
+                        <label for="source_year1" class="col-sm-4 control-label">Source Year Range</label>
+                        <div class = "col-sm-3">
+                            <input type="text" name="source_year1" placeholder="From">
                         </div>
-                        <div class = "col-sm-6">
-                            Data Age End: <input type="text" name="data_age2">
+                        <div class = "col-sm-3 col-sm-offset-1">
+                             <input type="text" name="source_year2" placeholder="To">
                         </div>
                     </div>
-                    <div class = "row">
+                    <div class = "form-group">
+                        <label for="data_age1" class="col-sm-4 control-label">Data Age Range</label>
+                        <div class = "col-sm-3">
+                            <input type="text" name="data_age1" placeholder="From">
+                        </div>
+                        <div class = "col-sm-3 col-sm-offset-1">
+                            <input type="text" name="data_age2" placeholder="To">
+                        </div>
+                    </div>
+                    <div class = "form-group">
+                        <label for="instrument" class="col-sm-4 control-label">Instrument</label>
+                        <div class = "col-sm-3">
+                            <input type="text" name="instrument" placeholder="Instrument Name">
+                        </div>
                         <div class = "col-sm-6">
-                            Instrument: <input type="text" name="instrument">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <input type="submit" value="Search">
+        <p align = "center">
+            <input type="submit" value="Submit" class = "button">
+        </p>
     </form>
 
 {% endblock %}
