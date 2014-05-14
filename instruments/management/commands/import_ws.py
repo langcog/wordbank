@@ -18,7 +18,7 @@ class Command(NoArgsCommand):
     nrows = sh.nrows
     ncols = sh.ncols
     
-    special_cols = ['id', 'birth', 'gender', 'cdiage', 'momed', 'DateOfBirth', 'DateOfCDI']
+    special_cols = ['id', 'birth', 'gender', 'cdiage', 'momed', 'DateOfBirth', 'DateOfCDI', 'source', 'ethnic']
     special_col_map = {}
     col_names = list(sh.row_values(0))
 
@@ -43,6 +43,14 @@ class Command(NoArgsCommand):
         child.birth_order = int(row_values[special_col_map['birth']])
       if 'momed' in special_col_map and row_values[special_col_map['momed']] != '':
         child.mom_ed = int(row_values[special_col_map['momed']])
+      if 'ethnic' in special_col_map and row_values[special_col_map['ethnic']] != '':
+        ethnic_num = int(row_values[special_col_map['ethnic']])
+        if Ethnicity.objects.filter(id=ethnic_num).exists():
+          child.ethnicity = Ethnicity.objects.get(pk=ethnic_num)
+      if 'source' in special_col_map and row_values[special_col_map['source']] != '':
+        source_num = int(row_values[special_col_map['source']])
+        if Source.objects.filter(id=source_num+1).exists():
+          child.source = Source.objects.get(id=source_num+1)
       child.save()
       
       # Create the instrument and the administration here.
