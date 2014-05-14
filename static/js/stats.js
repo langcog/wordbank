@@ -1,8 +1,11 @@
 d3.json('static/json/stats.json', function(data_json) {
 
-//var data_json = $.parseJSON($('#data').val());
 var data = crossfilter(data_json);
 var all = data.groupAll();
+
+var sourceChart = dc.barChart('#sourceChart')
+var ethnicityChart = dc.pieChart('#ethnicityChart')
+
 var ageChildChart = dc.barChart('#ageChildChart');
 var instrumentsChart = dc.pieChart('#instrumentsChart');
 var genderChart = dc.pieChart('#genderChart');
@@ -37,6 +40,18 @@ var reduceInitial = function() {
   return {count: 0, production: 0, comprehension: 0};
 };
 
+var ethnicities = data.dimension(function(d) {
+  return d['ethnicity']
+});
+var ethnicitiesGroup = ethnicities.group().reduceSum(function(d) {
+  return 1;
+});
+var sources = data.dimension(function(d) {
+  return d['source'];
+});
+var sourcesGroup = sources.group().reduceSum(function(d) {
+  return 1;
+});
 var ages = data.dimension(function(d) {
   return d['age'];
 });
@@ -223,6 +238,32 @@ ageChildChart.width(lineChartWidth)
              .elasticY(true)
              .gap(1)
              .x(d3.scale.linear().domain([7,31])) 
+             .valueAccessor(function (d) {
+               return d.value;
+             });
+
+ethnicityChart.width(pieChartWidth)
+        .height(320)
+        .radius(pieChartRadius)
+        .dimension(ethnicities)
+        .group(ethnicitiesGroup)
+        .label(function (d) {
+            return d.key + ": " + d.value;
+        })
+        .renderLabel(true)
+        .transitionDuration(500)
+
+
+sourceChart.width(2*lineChartWidth)
+             .height(300)
+             .margins({top: 0, right: 40, bottom: 20, left: 30})
+             .dimension(sources)
+             .group(sourcesGroup)
+             .centerBar(false)
+             .elasticY(true)
+             .gap(1)
+	     .x(d3.scale.ordinal().domain(['Original Norming data', 'San Diego State University', 'University of Wisconsin', 'UT Dallas', 'San Diego State University', 'Louisiana State University', 'University of Connecticut', 'University of California'])) 
+             .xUnits(dc.units.ordinal)
              .valueAccessor(function (d) {
                return d.value;
              });
