@@ -1,18 +1,77 @@
 {% extends "base.html" %}
 {% block content %}
     <form action="" method="get">
-    	Source Name: <input type="text" name="source_name"><br>
-    	Source Year: <input type="text" name="source_year"><br>
-        <input type="checkbox" name="gender" value="m">Male
-        <input type="checkbox" name="gender" value="f">Female<br>
-        Gestational Age: <input type="text" name="gestational_age"><br>
-        Mother's Education: <input type="text" name="mom_ed"><br>
-        Birth Order: <input type="text" name="birth_order"><br>
-        Instrument: <input type="text" name="instrument"><br>
-        Language: <input type="text" name="instrument"><br>
-        Lemma: <input type="text" name="lemma"><br>
-        CDI Category: <input type="text" name="cdi_cat"><br>
-        Data Age: <input type="text" name="data_age"><br>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-5" style="padding-right:20px; border-right: 1px solid #ccc;">
+                    <div class = "row">
+                        <div class = "col-sm-6">
+                            Date of Birth Start: <input type="text" name="dob1">
+                        </div>
+                        <div class = "col-sm-6">
+                            Date of Birth End: <input type="text" name="dob2">
+                        </div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col-sm-6">
+                            Mother's Education Start: <input type="text" name="mom_ed1">
+                        </div>
+                        <div class = "col-sm-6">
+                            Mother's Education End: <input type="text" name="mom_ed2">
+                        </div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col-sm-6">
+                            Gest. Age Start: <input type="text" name="gest_age1">
+                        </div>
+                        <div class = "col-sm-6">
+                            Gest. Age End: <input type="text" name="gest_age2">
+                        </div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col-sm-6">
+                            <input type="checkbox" name="gender" value="m">Male
+                        </div>
+                        <div class = "col-sm-6">
+                            <input type="checkbox" name="gender" value="f">Feale
+                        </div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col-sm-6">
+                            Birth Order: <input type="text" name="birth_order">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-5 col-md-offset-2">
+                    <div class = "row">
+                        <div class = "col-sm-6">
+                            Source Name: <input type="text" name="source_name">
+                        </div>
+                    </row>
+                    <div class = "row">
+                        <div class = "col-sm-6">
+                            Source Year Start: <input type="text" name="source_year1">
+                        </div>
+                        <div class = "col-sm-6">
+                            Source Year End: <input type="text" name="source_year2">
+                        </div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col-sm-6">
+                            Data Age Start: <input type="text" name="data_age1">
+                        </div>
+                        <div class = "col-sm-6">
+                            Data Age End: <input type="text" name="data_age2">
+                        </div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col-sm-6">
+                            Instrument: <input type="text" name="instrument">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <input type="submit" value="Search">
     </form>
 
