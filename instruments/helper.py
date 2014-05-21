@@ -29,6 +29,10 @@ def aggregate():
           comprehension = comprehension + 1
         elif instrument_obj[field_name] == 1:
           comprehension = comprehension + 1
+      if instrument == 'WS' and field_name == 'col_connthen':
+        break 
+      if instrument == 'WG' and field_name == 'col_some':
+        break 
     obj['production'] = production
     obj['comprehension'] = comprehension
     data.append(obj)
