@@ -12,6 +12,7 @@ urlpatterns = patterns('',
     url(r'about', About.as_view(), name='about'),
     url(r'search', Search.as_view(), name='search'),
     url(r'stats', Stats.as_view(), name='stats'),
+    url(r'reports', Reports.as_view(), name='reports'),
     url(r'contribute', Contribute.as_view(), name='contribute'),
     # url(r'^wordbank/', include('wordbank.foo.urls')),
 
