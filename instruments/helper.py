@@ -27,7 +27,7 @@ def aggregate(admin_query=None):
     for field in instrument_class._meta.fields:
       field_name = field.get_attname_column()[0]
       if field_name.startswith('col_'):
-        production_temp, comprehension_temp = get_production_comprehenion_vals(instrument, instrument_obj[field_name])
+        production_temp, comprehension_temp = get_production_comprehension_vals(instrument, instrument_obj[field_name])
         production = production + production_temp
         comprehension = comprehension + comprehension_temp
       if instrument == 'WS' and field_name == 'col_connthen':
@@ -40,7 +40,9 @@ def aggregate(admin_query=None):
   return data
 
 
-def get_production_comprehenion_vals(instrument_name, val):
+def get_production_comprehension_vals(instrument_name, val):
+  if val == None:
+    val = 0
   if instrument_name == 'WS':
     production = val
     comprehension = val
