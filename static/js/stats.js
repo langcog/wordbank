@@ -17,6 +17,11 @@ var momedChartRange = dc.barChart('#momedChartRange');
 var momedComprehensionChart = dc.lineChart('#momedComprehensionChart'); 
 var momedComprehensionChartRange = dc.barChart('#momedComprehensionChartRange');
 
+var ageMedianProductionChart = dc.lineChart('#ageMedianProductionChart');
+var ageMedianProductionChartRange = dc.barChart('#ageMedianProductionChartRange');
+var ageMedianComprehensionChart = dc.lineChart('#ageMedianComprehensionChart');
+var ageMedianComprehensionChartRange = dc.barChart('#ageMedianComprehensionChartRange');
+
 var lineChartWidth = 500;
 var pieChartWidth = 260;
 var pieChartRadius = 100;
@@ -37,6 +42,22 @@ var reduceInitial = function() {
   return {count: 0, production: 0, comprehension: 0};
 };
 
+var medianInitial = function() {
+  return {count: 0, productions: [], comprehensions: []};
+}
+var medianAdd = function(p, v) {
+  p.count++;
+  p.productions.push(v['production']);
+  p.comprehensions.push(v['comprehension']);
+  return p;
+}
+var medianRemove = function(p, v) {
+  p.count--;
+  p.productions.splice(p.productions.length - 1, 1);
+  p.comprehensions.splice(p.comprehensions.length - 1, 1);
+  return p;
+}
+
 var ages = data.dimension(function(d) {
   return d['age'];
 });
@@ -44,6 +65,7 @@ var ageChild = data.dimension(function(d) {
   return d['age'];
 });
 var agesGroup = ages.group().reduce(reduceAdd, reduceRemove, reduceInitial);
+var agesMedianGroup = ages.group().reduce(medianAdd, medianRemove, medianInitial);
 var ageChildGroup = ageChild.group().reduceSum(function(d) {
   return 1;
 });
@@ -108,7 +130,7 @@ ageComprehensionChart.renderArea(true)
         .dimension(ages)
         .mouseZoomable(false)
         .x(d3.scale.linear().domain([7,19]))
-        .rangeChart(ageChartRange)
+        .rangeChart(ageComprehensionChartRange)
         .elasticY(true)
         .renderHorizontalGridLines(true)
         .brushOn(false)
@@ -121,7 +143,7 @@ ageComprehensionChart.renderArea(true)
 ageComprehensionChartRange.width(lineChartWidth)
         .height(40)
         .margins({top: 0, right: 40, bottom: 20, left: 80})
-        .dimension(ageChild)
+        .dimension(ages)
         .group(agesGroup)
         .x(d3.scale.linear().domain([7,19]))
         .centerBar(true)
@@ -130,6 +152,71 @@ ageComprehensionChartRange.width(lineChartWidth)
             return d.value.count > 0 ? d.value.comprehension / d.value.count : 0;
         })  
         .yAxis().ticks(0);
+
+ageMedianProductionChart.renderArea(true)
+        .width(lineChartWidth)
+        .height(300)
+        .transitionDuration(1000)
+        .margins({top: 30, right: 50, bottom: 25, left: 80})
+        .dimension(ages)
+        .mouseZoomable(false)
+        .x(d3.scale.linear().domain([7,19]))
+        .rangeChart(ageMedianProductionChartRange)
+        .elasticY(true)
+        .renderHorizontalGridLines(true)
+        .brushOn(false)
+
+        .group(agesMedianGroup)
+        .valueAccessor(function (d) {
+          return d.value.productions.sort()[Math.floor(d.value.count/2)];
+        }); 
+
+ageMedianProductionChartRange.width(lineChartWidth)
+        .height(40)
+        .margins({top: 0, right: 40, bottom: 20, left: 80})
+        .dimension(ages)
+        .group(agesMedianGroup)
+        .x(d3.scale.linear().domain([7,19]))
+        .centerBar(true)
+        .gap(1)
+        .valueAccessor(function (d) {
+          return d.value.productions.sort()[Math.floor(d.value.count/2)];
+        })  
+        .yAxis().ticks(0);
+
+
+ageMedianComprehensionChart.renderArea(true)
+        .width(lineChartWidth)
+        .height(300)
+        .transitionDuration(1000)
+        .margins({top: 30, right: 50, bottom: 25, left: 80})
+        .dimension(ages)
+        .mouseZoomable(false)
+        .x(d3.scale.linear().domain([7,19]))
+        .rangeChart(ageMedianComprehensionChartRange)
+        .elasticY(true)
+        .renderHorizontalGridLines(true)
+        .brushOn(false)
+
+        .group(agesMedianGroup)
+        .valueAccessor(function (d) {
+          return d.value.comprehensions.sort()[Math.floor(d.value.count/2)];
+        }); 
+
+ageMedianComprehensionChartRange.width(lineChartWidth)
+        .height(40)
+        .margins({top: 0, right: 40, bottom: 20, left: 80})
+        .dimension(ages)
+        .group(agesMedianGroup)
+        .x(d3.scale.linear().domain([7,19]))
+        .centerBar(true)
+        .gap(1)
+        .valueAccessor(function (d) {
+          return 1;
+          return d.value.comprehensions.sort()[Math.floor(d.value.count/2)];
+        })  
+        .yAxis().ticks(0);
+
 
 genderChart.width(pieChartWidth)
         .height(320)
