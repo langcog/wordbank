@@ -27,12 +27,11 @@
 .sub-topic-button {
   padding: 5px;
   text-align: center;
-  width: 300px;
   background-color: #6baed6;
   border: 0px solid #666;
   color: #fff;
-  width: 200px;
-  height: 50px;
+  width: 175px;
+  height: 40px;
   font-size: 22px;
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
@@ -58,4 +57,13 @@
   display: block;
   width: 350px;
   height: auto;
+}
+
+.figure-label {
+  font-size: 10px;
+  width: 300px;
+  text-align: center;
+  margin-left: auto ;
+  margin-right: auto ;
+  margin-bottom: 10px;
 }
