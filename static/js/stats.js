@@ -4,7 +4,7 @@ var data = crossfilter(data_json);
 var all = data.groupAll();
 
 var sourceChart = dc.rowChart('#sourceChart')
-//var ethnicityChart = dc.pieChart('#ethnicityChart')
+var ethnicityChart = dc.rowChart('#ethnicityChart')
 
 var ageChildChart = dc.barChart('#ageChildChart');
 var instrumentsChart = dc.pieChart('#instrumentsChart');
@@ -330,9 +330,8 @@ ageChildChart.width(lineChartWidth)
                return d.value;
              });
 
-/*ethnicityChart.width(pieChartWidth)
-        .height(320)
-        .radius(pieChartRadius)
+ethnicityChart.width(lineChartWidth)
+        .height(300)
         .dimension(ethnicities)
         .group(ethnicitiesGroup)
         .label(function (d) {
@@ -340,7 +339,7 @@ ageChildChart.width(lineChartWidth)
         })
         .renderLabel(true)
         .transitionDuration(500)
-*/
+
 
 sourceChart.width(lineChartWidth)
              .height(300)
@@ -348,6 +347,9 @@ sourceChart.width(lineChartWidth)
              .dimension(sources)
              .group(sourcesGroup)
              .gap(1)
+             .label(function (d) {
+               return d.key + ": " + d.value;
+             })
 	     //.x(d3.scale.ordinal().domain(['Original Norming data', 'San Diego State University', 'University of Wisconsin', 'UT Dallas', 'San Diego State University', 'Louisiana State University', 'University of Connecticut', 'University of California'])) 
              .valueAccessor(function (d) {
                return d.value;
