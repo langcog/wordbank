@@ -7,14 +7,26 @@ import xlrd
 
 class Command(NoArgsCommand):
   
-  def format_date(self, date_str, filename):
+  def get_ethnicity(self, ethnic):
+    try:
+      return int(ethnic)
+    except:
+      if ethnic == 'A':
+        return 1
+      if ethnic == 'B':
+        return 2 
+      if ethnic == 'H':
+        return 3 
+      if ethnic == 'W':
+        return 4 
+      else:
+        return 5
+        
+  def format_date(self, date_str, filename, datemode=None):
     if filename == 'raw_data/CDI-WS-2.xlsx':
       return datetime.strptime(date_str, '%m/%d/%Y')
-    elif filename == 'raw_data/MarchmanWisconsin.xlsx':
-      print date_str
-      return datetime.strptime(date_str, '%m/%d/%y')
-    elif filename == 'raw_data/MarchmanDallas.xlsx':
-      return datetime.strptime(date_str, '%m/%d/%y')
+    else:
+      return datetime(*xlrd.xldate_as_tuple(date_str, datemode))
 
   def get_special_cols(self, filename):
     if filename == 'raw_data/CDI-WS-2.xlsx':
@@ -35,7 +47,7 @@ class Command(NoArgsCommand):
               'mom_ed': 'MotherEd', 
               'date_of_birth': 'DOB', 
               'DateOfCDI': 'CDIDate', 
-              #'ethnic': 'ethnic',
+              'ethnic': 'ethnic',
               'source': 'source'} 
     elif filename == 'raw_data/MarchmanDallas.xlsx':
       return {'id': 'ParticipantId', 
@@ -45,7 +57,7 @@ class Command(NoArgsCommand):
               'mom_ed': 'MotherEd', 
               'date_of_birth': 'DOB', 
               'DateOfCDI': 'CDIDate', 
-              #'ethnic': 'ethnic',
+              'ethnic': 'ethnic',
               'source': 'source'} 
 
  
@@ -75,15 +87,15 @@ class Command(NoArgsCommand):
       # Initialize the Child here.
       child = Child.objects.create(study_id=row_values[special_col_map['id']])
       if 'date_of_birth' in special_col_map and row_values[special_col_map['date_of_birth']] != '':
-        child.date_of_birth = self.format_date(row_values[special_col_map['date_of_birth']], args[0])
+        child.date_of_birth = self.format_date(row_values[special_col_map['date_of_birth']], args[0], datemode=book.datemode)
       if 'gender' in special_col_map and row_values[special_col_map['gender']] != '':
         child.gender = row_values[special_col_map['gender']]
-      if 'birth_order' in special_col_map and row_values[special_col_map['birth_order']] != '':
+      if 'birth_order' in special_col_map and row_values[special_col_map['birth_order']] != 'Null' and row_values[special_col_map['birth_order']] != '':
         child.birth_order = int(row_values[special_col_map['birth_order']])
-      if 'mom_ed' in special_col_map and row_values[special_col_map['mom_ed']] != '':
+      if 'mom_ed' in special_col_map and row_values[special_col_map['mom_ed']] != 'Null' and row_values[special_col_map['mom_ed']] != '':
         child.mom_ed = int(row_values[special_col_map['mom_ed']])
       if 'ethnic' in special_col_map and row_values[special_col_map['ethnic']] != '':
-        ethnic_num = int(row_values[special_col_map['ethnic']])
+        ethnic_num = self.get_ethnicity(row_values[special_col_map['ethnic']])
         if Ethnicity.objects.filter(id=ethnic_num).exists():
           child.ethnicity = Ethnicity.objects.get(pk=ethnic_num)
       child.save()
@@ -93,13 +105,17 @@ class Command(NoArgsCommand):
       administration = Administration.objects.create(child=child,
                                              instrument=instruments_map,
                                              data_id=instrument.pk,
-                                             date_of_test=self.format_date(row_values[special_col_map['DateOfCDI']], args[0]))
+                                             date_of_test=self.format_date(row_values[special_col_map['DateOfCDI']], args[0], datemode=book.datemode))
       if 'age' in special_col_map and row_values[special_col_map['age']] != '':
         administration.age = int(row_values[special_col_map['age']]) 
       if 'source' in special_col_map and row_values[special_col_map['source']] != '':
-        source_num = int(row_values[special_col_map['source']])
-        if Source.objects.filter(id=source_num+1).exists():
-          administration.source = Source.objects.get(id=source_num+1)
+        source_num = int(row_values[special_col_map['source']]) 
+      elif args[0] == 'raw_data/MarchmanDallas.xlsx':
+        source_num = 2
+      elif args[0] == 'raw_data/MarchmanWisconsin.xlsx':
+        source_num = 3
+      if Source.objects.filter(id=source_num+1).exists():
+        administration.source = Source.objects.get(id=source_num+1)
       administration.save()
 
       # Parse all the fields for the given data entry here.
