@@ -31,7 +31,7 @@ class Command(NoArgsCommand):
 
 
   def handle(self, *args, **options):
-    book = xlrd.open_workbook('raw_data/CDI-WG-2.xlsx')
+    book = xlrd.open_workbook(args[0])
 
     sh = book.sheet_by_index(0)
     nrows = sh.nrows
