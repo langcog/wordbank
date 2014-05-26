@@ -11,6 +11,7 @@ class Command(NoArgsCommand):
     if filename == 'raw_data/CDI-WS-2.xlsx':
       return datetime.strptime(date_str, '%m/%d/%Y')
     elif filename == 'raw_data/MarchmanWisconsin.xlsx':
+      print date_str
       return datetime.strptime(date_str, '%m/%d/%y')
     elif filename == 'raw_data/MarchmanDallas.xlsx':
       return datetime.strptime(date_str, '%m/%d/%y')
@@ -34,8 +35,8 @@ class Command(NoArgsCommand):
               'mom_ed': 'MotherEd', 
               'date_of_birth': 'DOB', 
               'DateOfCDI': 'CDIDate', 
-              'source': 'source', 
-              'ethnic': 'ethnic'}
+              #'ethnic': 'ethnic',
+              'source': 'source'} 
     elif filename == 'raw_data/MarchmanDallas.xlsx':
       return {'id': 'ParticipantId', 
               'birth_order': 'BOrder', 
@@ -44,8 +45,8 @@ class Command(NoArgsCommand):
               'mom_ed': 'MotherEd', 
               'date_of_birth': 'DOB', 
               'DateOfCDI': 'CDIDate', 
-              'source': 'source', 
-              'ethnic': 'ethnic'}
+              #'ethnic': 'ethnic',
+              'source': 'source'} 
 
  
   def handle(self, *args, **options):

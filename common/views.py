@@ -24,6 +24,10 @@ class Contribute(View):
   def get(self, request):
     return render(request, 'contribute.html', {})
 
+class Reports(View):
+  def get(self, request):
+    return render(request, 'reports.html', {'id': request.GET['id']})
+
 class Search(View):
 
   def search(request):
