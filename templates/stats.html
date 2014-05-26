@@ -6,11 +6,22 @@
 
 {% block content %}
 <link rel="stylesheet" href={% static "third_party/dc.css" %}>
+<link rel="stylesheet" href={% static "css/stats.css" %}>
 <input type='hidden' id='data' value='{{ data }}'/>
 
+<h3>Database Statistics</h3>
+<br />
 <div class="row">
-  <h3>Database Statistics</h3>
-  <br />
+  <div class="col-md-6">
+    <h5>Types of Sources</h5>
+    <div id="sourceChart"></div>
+  </div>
+  <div class="col-md-6">
+    <h5>Types of Ethnicity</h5>
+    <div id="ethnicityChart"></div>
+  </div>
+</div>
+<div class="row">
   <div class="col-md-6">
     <h5>Age to Number of Children</h5>
     <div id="ageChildChart"></div>
