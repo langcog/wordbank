@@ -40,8 +40,8 @@ class Search(View):
       #if 'gender' in request.GET:
         #all_admin.filter(gender = request.GET['gender'])
       if 'gestational_age' in request.GET:
-        all_admin = all_admin.filter(Child__gestational_age__gte=int(request.GET['gest_age'1]))
-        all_admin = all_admin.filter(Child__gestational_age__lte=int(request.GET['gest_age'2]))
+        all_admin = all_admin.filter(Child__gestational_age__gte=int(request.GET['gest_age1']))
+        all_admin = all_admin.filter(Child__gestational_age__lte=int(request.GET['gest_age2']))
       if 'mom_ed' in request.GET:
         all_admin = all_admin.filter(Child__mom_ed__gte=int(request.GET['mom_ed1']))
         all_admin = all_admin.filter(Child__mom_ed__lte=int(request.GET['mom_ed2']))
@@ -49,7 +49,7 @@ class Search(View):
         all_admin = all_admin.filter(Child__birth_order=int(request.GET['birth_order']))
       if 'instrument' in request.GET:
         all_admin = all_admin.filter(InstrumentsMap__name=request.GET['instrument'])
-      data = aggregate1(all_admin)
+      data = aggregate(all_admin)
       return render(request, 'search.html', {})
     return render(request, 'search.html', {})
 
