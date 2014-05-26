@@ -3,8 +3,8 @@ d3.json('static/json/stats.json', function(data_json) {
 var data = crossfilter(data_json);
 var all = data.groupAll();
 
-var sourceChart = dc.barChart('#sourceChart')
-var ethnicityChart = dc.pieChart('#ethnicityChart')
+var sourceChart = dc.rowChart('#sourceChart')
+//var ethnicityChart = dc.pieChart('#ethnicityChart')
 
 var ageChildChart = dc.barChart('#ageChildChart');
 var instrumentsChart = dc.pieChart('#instrumentsChart');
@@ -330,7 +330,7 @@ ageChildChart.width(lineChartWidth)
                return d.value;
              });
 
-ethnicityChart.width(pieChartWidth)
+/*ethnicityChart.width(pieChartWidth)
         .height(320)
         .radius(pieChartRadius)
         .dimension(ethnicities)
@@ -340,18 +340,15 @@ ethnicityChart.width(pieChartWidth)
         })
         .renderLabel(true)
         .transitionDuration(500)
+*/
 
-
-sourceChart.width(2*lineChartWidth)
+sourceChart.width(lineChartWidth)
              .height(300)
              .margins({top: 0, right: 40, bottom: 20, left: 30})
              .dimension(sources)
              .group(sourcesGroup)
-             .centerBar(false)
-             .elasticY(true)
              .gap(1)
-	     .x(d3.scale.ordinal().domain(['Original Norming data', 'San Diego State University', 'University of Wisconsin', 'UT Dallas', 'San Diego State University', 'Louisiana State University', 'University of Connecticut', 'University of California'])) 
-             .xUnits(dc.units.ordinal)
+	     //.x(d3.scale.ordinal().domain(['Original Norming data', 'San Diego State University', 'University of Wisconsin', 'UT Dallas', 'San Diego State University', 'Louisiana State University', 'University of Connecticut', 'University of California'])) 
              .valueAccessor(function (d) {
                return d.value;
              });
