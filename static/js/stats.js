@@ -17,9 +17,9 @@ var momedChartRange = dc.barChart('#momedChartRange');
 var momedComprehensionChart = dc.lineChart('#momedComprehensionChart'); 
 var momedComprehensionChartRange = dc.barChart('#momedComprehensionChartRange');
 
-var lineChartWidth = 600;
+var lineChartWidth = 500;
 var pieChartWidth = 260;
-var pieChartRadius = 130;
+var pieChartRadius = 100;
 
 var reduceAdd = function(p, v) {
   ++p.count;
@@ -107,7 +107,7 @@ ageComprehensionChart.renderArea(true)
         .margins({top: 30, right: 50, bottom: 25, left: 80})
         .dimension(ages)
         .mouseZoomable(false)
-        .x(d3.scale.linear().domain([7,31]))
+        .x(d3.scale.linear().domain([7,19]))
         .rangeChart(ageChartRange)
         .elasticY(true)
         .renderHorizontalGridLines(true)
@@ -123,7 +123,7 @@ ageComprehensionChartRange.width(lineChartWidth)
         .margins({top: 0, right: 40, bottom: 20, left: 80})
         .dimension(ageChild)
         .group(agesGroup)
-        .x(d3.scale.linear().domain([7,31]))
+        .x(d3.scale.linear().domain([7,19]))
         .centerBar(true)
         .gap(1)
         .valueAccessor(function (d) {
