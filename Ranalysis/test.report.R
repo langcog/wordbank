@@ -9,7 +9,7 @@ library(directlabels)
 library(dplyr)
 
 # connect to local databse
-wordbank <- src_mysql(dbname='wordbank')
+wordbank <- src_sqlite('wordbank.sqlite')
 
 # load all tables
 admin.table <- tbl(wordbank,"common_administration")
@@ -20,13 +20,16 @@ wordinfo.table <- tbl(wordbank,"common_wordinfo")
 mapping.table <- tbl(wordbank,"common_wordmapping")
 ws.table <- tbl(wordbank,"instruments_ws")
 
-vocab.words <- as.data.frame(select(ws.table,id:col_connthen))
-bykid.longform <- melt(vocab.words,id.vars="id", variable.name = "word",
+vocab.words <- as.data.frame(select(ws.table,
+                                    col_baabaa:col_connthen,basetable_ptr_id))
+bykid.longform <- melt(vocab.words,id.vars="basetable_ptr_id",
+                       variable.name = "word",
                        value.name="produces")
 
-production.scores <- bykid.longform %.%
-  group_by(id) %.%
+production.scores <- bykid.longform %>%
+  group_by(basetable_ptr_id) %>%
   summarise(productive = sum(produces == 1))
+names(production.scores)[1] <- "id"
 
 admins <- as.data.frame(select(admin.table,data_id,child_id,age))
                         
@@ -38,13 +41,13 @@ child.data <- merge(children,admins)
 
 child.data <- merge(child.data,production.scores)
 
-age.gender.data <- child.data %.%
-  select(child.id:productive) %.%
-  filter(age >= 9 & age < 99) %.%
-  group_by(age,gender) %.%
-  summarise(vocab = mean(productive),
-            ci.h = ci.high(productive),
+age.gender.data <- child.data %>%
+  select(child.id:productive) %>%
+  group_by(age,gender) %>%
+  filter(age <= 30) %>%
+  summarise(vocab = na.mean(productive),
             ci.l = ci.low(productive),
+            ci.h = ci.high(productive),
             n = n())
 
 quartz(width=7,height=4)
