@@ -9,7 +9,7 @@ library(directlabels)
 library(dplyr)
 
 # connect to local databse
-wordbank <- src_mysql(dbname='wordbank')
+wordbank <- src_sqlite('wordbank.db')
 
 # load all tables
 admin.table <- tbl(wordbank,"common_administration")
@@ -24,8 +24,8 @@ vocab.words <- as.data.frame(select(ws.table,id:col_connthen))
 bykid.longform <- melt(vocab.words,id.vars="id", variable.name = "word",
                        value.name="produces")
 
-production.scores <- bykid.longform %.%
-  group_by(id) %.%
+production.scores <- bykid.longform %>%
+  group_by(id) %>%
   summarise(productive = sum(produces == 1))
 
 admins <- as.data.frame(select(admin.table,data_id,child_id,age))
@@ -38,14 +38,10 @@ child.data <- merge(children,admins)
 
 child.data <- merge(child.data,production.scores)
 
-age.gender.data <- child.data %.%
-  select(child.id:productive) %.%
-  filter(age >= 9 & age < 99) %.%
-  group_by(age,gender) %.%
-  summarise(vocab = mean(productive),
-            ci.h = ci.high(productive),
-            ci.l = ci.low(productive),
-            n = n())
+age.gender.data <- child.data %>%
+  select(child.id:productive) %>%
+  group_by(age,gender) %>%
+  summarise_each(funs(mean,ci.high.ci.low,n),vocab)
 
 quartz(width=7,height=4)
 ggplot(age.gender.data, 
