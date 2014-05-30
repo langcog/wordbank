@@ -21,15 +21,17 @@ mapping.table <- tbl(wordbank,"common_wordmapping")
 ws.table <- tbl(wordbank,"instruments_ws")
 
 vocab.words <- as.data.frame(select(ws.table,
-                                    col_baabaa:col_connthen,basetable_ptr_id))
-bykid.longform <- melt(vocab.words,id.vars="basetable_ptr_id",
+                                    basetable_ptr_id,col_baabaa:col_connthen))
+names(vocab.words)[1] <- "id"
+
+bykid.longform <- melt(vocab.words,id.vars="id",
                        variable.name = "word",
                        value.name="produces")
 
 production.scores <- bykid.longform %>%
-  group_by(basetable_ptr_id) %>%
+  group_by(id) %>%
   summarise(productive = sum(produces == 1))
-names(production.scores)[1] <- "id"
+
 
 admins <- as.data.frame(select(admin.table,data_id,child_id,age))
                         
@@ -39,16 +41,28 @@ names(admins)[1:2] <- c("id","child.id")
 
 child.data <- merge(children,admins)
 
-child.data <- merge(child.data,production.scores)
+word.data <- merge(child.data,bykid.longform)
+child.productive <- merge(child.data,production.scores)
 
-age.gender.data <- child.data %>%
-  select(child.id:productive) %>%
+age.gender.data <- child.productive %>%
   group_by(age,gender) %>%
-  filter(age <= 30) %>%
+  filter(age >= 16, age <= 30) %>%
   summarise(vocab = na.mean(productive),
             ci.l = ci.low(productive),
             ci.h = ci.high(productive),
             n = n())
+
+# wordle.data <- word.data %>%
+#   group_by(word,age) %>%
+#   filter(age >= 16, age <= 30) %>%
+#   summarise(vocab = na.mean(produces))
+# 
+# quartz()
+# with(filter(wordle.data,age==16),wordcloud(word,
+#                                          floor(vocab*100),
+#                                          scale=c(2,.02),
+#                                          min.freq=10,
+#                                          colors=brewer.pal(8, "Dark2")))
 
 quartz(width=7,height=4)
 ggplot(age.gender.data, 
