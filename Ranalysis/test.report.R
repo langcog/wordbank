@@ -6,10 +6,15 @@ source('~/Projects/Other/Ranalysis/useful.R')
 
 #load libraries for data manipulation and graphing
 library(directlabels)
+library(data.table)
 library(dplyr)
+library(RSQLite)
+library(RSQLite.extfuns)
+library(RMySQL)
 
 # connect to local databse
 wordbank <- src_sqlite('wordbank.sqlite')
+wordbank <- src_mysql(dbname='wordbank')
 
 # load all tables
 admin.table <- tbl(wordbank,"common_administration")
@@ -51,18 +56,6 @@ age.gender.data <- child.productive %>%
             ci.l = ci.low(productive),
             ci.h = ci.high(productive),
             n = n())
-
-# wordle.data <- word.data %>%
-#   group_by(word,age) %>%
-#   filter(age >= 16, age <= 30) %>%
-#   summarise(vocab = na.mean(produces))
-# 
-# quartz()
-# with(filter(wordle.data,age==16),wordcloud(word,
-#                                          floor(vocab*100),
-#                                          scale=c(2,.02),
-#                                          min.freq=10,
-#                                          colors=brewer.pal(8, "Dark2")))
 
 quartz(width=7,height=4)
 ggplot(age.gender.data, 
