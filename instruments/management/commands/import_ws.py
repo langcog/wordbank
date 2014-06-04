@@ -8,19 +8,19 @@ import xlrd
 class Command(NoArgsCommand):
   
   def get_ethnicity(self, ethnic):
-    try:
-      return int(ethnic)
-    except:
-      if ethnic == 'A':
-        return 1
-      if ethnic == 'B':
-        return 2 
-      if ethnic == 'H':
-        return 3 
-      if ethnic == 'W':
-        return 4 
-      else:
-        return 5
+    if ethnic == 'A':
+      return 1
+    if ethnic == 'B':
+      return 2 
+    if ethnic == 'H':
+      return 3 
+    if ethnic == 'W':
+      return 4 
+    else:
+      val = int(ethnic)
+      if val > 0 and val < 6:
+        return val 
+      return 5
         
   def format_date(self, date_str, filename, datemode=None):
     if filename == 'raw_data/CDI-WS-2.xlsx':
