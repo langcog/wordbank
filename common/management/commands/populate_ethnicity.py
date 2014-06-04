@@ -7,7 +7,8 @@ class Command(NoArgsCommand):
     ethnicities = {1: "Asian",
                    2: "Black/African American",
                    3: "Hispanic",
-                   4: "Other/Mixed"}
+                   4: "Caucasian",
+                   5: "Other/Mixed"}
     for k in ethnicities:
       Ethnicity.objects.create(id=k, ethnicity=ethnicities[k])
 

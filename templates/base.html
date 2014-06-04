@@ -35,8 +35,7 @@
                     <li class="nav_element"><a href="/stats">Statistics</a></li>
                     <li class="nav_element dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reports <b class="caret"></b></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="/reports?id=sample">Sample Report</a></li>
+                      <ul class="dropdown-menu" id="reports">
                       </ul>
                     </li>
                     <li class="nav_element"><a href="/contribute">Contribute</a></li>
@@ -64,6 +63,18 @@
     
   </div>
   {% endblock %}
+
+  <script>
+    $.getJSON("static/json/reports.json", function(data) {
+      var reports_ul = $('#reports');
+      for (var i in data) {
+        var app = data[i];
+        console.log(reports_ul)
+        var li = $('<li>').appendTo(reports_ul);
+        var list = $('<a>').attr('href', '/reports?id=' + app['app_directory']).text(app['app_name']).appendTo(li);
+      }
+    }).error(function(error){console.log(error);}).fail(function () { console.log(arguments); }); 
+  </script>
 
 </body>
 </html>
