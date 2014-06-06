@@ -13,8 +13,8 @@ def aggregate(admin_query=None):
            'gender': administration.child.gender if administration.child.gender != None else 'U',
            #'date_of_birth': administration.child.date_of_birth if administration.child.date_of_birth != None else datetime.datetime.now(),
            'mom_ed': administration.child.mom_ed if administration.child.mom_ed != None else -1,  
-           'source': administration.source.name if administration.source != None else 'unknown',  
-           'ethnicity': administration.child.ethnicity.ethnicity if administration.child.ethnicity != None else 'unknown'}  
+           'source': administration.source.name if administration.source != None else 'Unknown',  
+           'ethnicity': administration.child.ethnicity.ethnicity if administration.child.ethnicity != None else 'Unknown'}  
     instrument = administration.instrument.name
     for subclass in BaseTable.__subclasses__():
       if instrument == subclass.__name__:
