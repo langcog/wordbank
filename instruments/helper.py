@@ -47,7 +47,7 @@ def get_production_comprehension_vals(instrument_name, val):
     production = val
     comprehension = val
   elif instrument_name == 'WG':
-    production = 1 if val > 0 else 0
-    comprehension = 1 if val == 2 else 0
+    comprehension = 1 if val > 0 else 0
+    production = 1 if val == 2 else 0
   return (production, comprehension)
 
