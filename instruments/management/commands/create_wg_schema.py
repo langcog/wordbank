@@ -33,6 +33,7 @@ class Command(NoArgsCommand):
     
     f = open('instruments/wg.py', 'w')
     f.write('from django.db import models\n')
+    f.write('from instruments.base import BaseTable\n')
     f.write('\nclass WG(BaseTable):\n')
     start = False
     index = 0
@@ -41,7 +42,7 @@ class Command(NoArgsCommand):
         start = True
       (name, offset) = self.extract_base(index, col_names)
       if start:
-        f.write('  col_' + name + ' = models.IntegerField(null=True, blank=True)\n')
+        f.write('  col_' + name + ' = models.IntegerField(default=0)\n')
         index = index + offset
       else:
         index = index + 1
