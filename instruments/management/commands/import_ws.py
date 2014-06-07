@@ -123,9 +123,10 @@ class Command(NoArgsCommand):
       instrument_data = {}
       col_name_index = 0
       for value in row_values:
-        if col_names[col_name_index] == 'baabaa':
+        column_name = 'col_'+col_names[col_name_index].lower()
+        if col_names[col_name_index].lower() == 'baabaa':
           start = True
-        if start:
-          instrument_data['col_'+col_names[col_name_index]] = int(value)
+        if start and column_name in WS._meta.fields:
+          instrument_data[column_name] = int(value)
         col_name_index = col_name_index + 1
       WS.objects.filter(pk=instrument.pk).update(**instrument_data)
