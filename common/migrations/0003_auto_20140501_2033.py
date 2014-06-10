@@ -14,7 +14,7 @@ class Migration(migrations.Migration):
             name = 'CDICategory',
         ),
         migrations.AddField(
-            field = models.ForeignKey(to='common.WordInfo', default=0, to_field=u'id'),
+            field = models.ForeignKey(to='common.WordInfo', to_field=u'id'),
             preserve_default = False,
             name = 'word_info',
             model_name = 'wordmapping',
