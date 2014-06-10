@@ -42,6 +42,7 @@
 
 .sub-topic-button:hover {
   color: #fff;
+  background-color: #6baeee;
 }
 
 .sub-topic-search {
@@ -67,3 +68,8 @@
   margin-right: auto ;
   margin-bottom: 10px;
 }
+
+a:link {
+    text-decoration: none;
+}
+
