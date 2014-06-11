@@ -9,9 +9,9 @@
 <link rel="stylesheet" href={% static "css/stats.css" %}>
 <input type='hidden' id='data' value='{{ data }}'/>
 
-<h3>Database Statistics</h3>
+<h3 align="center">Database Statistics</h3>
 <br />
-<div class="row">
+<!-- <div class="row">
   <div class="col-md-6">
     <h5>Data Source</h5>
     <div id="sourceChart"></div>
@@ -20,34 +20,39 @@
     <h5>Ethnicity</h5>
     <div id="ethnicityChart"></div>
   </div>
-</div>
+</div> -->
 <div class="row">
   <div class="col-md-6">
-    <h5>Number of Children by Age (months)</h5>
+    <h5 align="center">Children in the Database</h5>
     <div id="ageChildChart"></div>
   </div>
   <div class="col-md-3">
-    <h5>Instruments</h5>
+    <h5 align="center">Instruments</h5>
     <div id="instrumentsChart"></div>
   </div>
   <div class="col-md-3">
-    <h5>Gender</h5>
+    <h5 align="center">Gender</h5>
     <div id="genderChart"></div>
   </div>
 </div>
 <div class="row">
-  <div class="col-md-6">
-    <h5>Median number of words produced by age.</h5>
-    <div id="ageMedianProductionChart"></div>
-    <div id="ageMedianProductionChartRange"></div>
+<div class="col-md-6">
+    <h5 align="center">Mean comprehension vocabulary by age</h5>
+    <div id="wgMeanComprehensionChart"></div>
+    <!-- <div id="ageMedianComprehensionChartRange"></div> -->
   </div>
   <div class="col-md-6">
-    <h5>Median number of words comprehended by age.</h5>
-    <div id="ageMedianComprehensionChart"></div>
-    <div id="ageMedianComprehensionChartRange"></div>
+    <h5 align="center">Mean productive vocabulary by age</h5>
+    <div id="wgMeanProductionChart"></div>
+    <!-- <div id="ageMedianProductionChartRange"></div> -->
   </div>
 </div>
 <div class="row">
+    <h5 align="center">Mean productive vocabulary by age</h5>
+    <div id="wsMeanProductionChart"></div>
+    <!-- <div id="ageMedianComprehensionChartRange"></div> -->
+  </div>
+<!-- <div class="row">
   <div class="col-md-6">
     <h5>Mean number of words produced by age in months.</h5>
     <div id="ageChart"></div>
@@ -70,15 +75,15 @@
     <div id="momedComprehensionChart"></div>
     <div id="momedComprehensionChartRange"></div>
   </div>
-</div>
+</div> -->
 
 
 <div class="row">
 </div>
 
-<script type="text/javascript" src="{% static "third_party/d3.js" %}"></script> 
-<script type="text/javascript" src="{% static "third_party/crossfilter.js" %}"></script> 
-<script type="text/javascript" src="{% static "third_party/dc.js" %}"></script> 
-<script type="text/javascript" src="{% static "js/stats.js" %}"></script> 
+<script type="text/javascript" src="{% static "third_party/d3.js" %}"></script>
+<script type="text/javascript" src="{% static "third_party/crossfilter.js" %}"></script>
+<script type="text/javascript" src="{% static "third_party/dc.js" %}"></script>
+<script type="text/javascript" src="{% static "js/stats.js" %}"></script>
 
 {% endblock %}
