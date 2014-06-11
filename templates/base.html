@@ -52,7 +52,7 @@
 
   {% block morescripts %}
   {% endblock %}
-  
+
   <div class="container">
   {% block content %}
   {% endblock %}
@@ -60,7 +60,7 @@
 
   {% block footer %}
   <div style="height:100px;" class="footer">
-    
+
   </div>
   {% endblock %}
 
@@ -73,7 +73,7 @@
         var li = $('<li>').appendTo(reports_ul);
         var list = $('<a>').attr('href', '/reports?id=' + app['app_directory']).text(app['app_name']).appendTo(li);
       }
-    }).error(function(error){console.log(error);}).fail(function () { console.log(arguments); }); 
+    }).error(function(error){console.log(error);}).fail(function () { console.log(arguments); });
   </script>
 
 </body>
