@@ -3,7 +3,7 @@ import os
 
 SITE_DIR = (os.path.join(os.path.dirname(__file__), '..')).replace('\\', '/')
 DEV = os.path.isfile(os.path.join(SITE_DIR, 'dev'))
-if DEV: 
+if DEV:
   DEBUG = True
 else:
   DEBUG = False
