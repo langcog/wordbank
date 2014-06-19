@@ -30,31 +30,35 @@ class Reports(View):
 
 class Search(View):
 
-  def search(request):
-    if request.GET:
+  def get(self, request):
+    print 'Hello'
+    if request.method == 'GET':
+      print 'Hello1'
       all_admin = Administrator.objects.all()
       if 'dob1' in request.GET:
-        all_admin = all_admin.filter(Child__date_of_birth__gte=request.GET['dob1'])
-        all_admin = all_admin.filter(Child__date_of_birth__lte=request.GET['dob2'])
+        print "HEllo2"
+        all_admin = all_admin.filter(Child__date_of_birth__gte=request.GET.get['dob1'])
+        all_admin = all_admin.filter(Child__date_of_birth__lte=request.GET.get['dob2'])
+        print request.GET.get['dob1']
       if 'source_name' in request.GET:
-        all_admin = all_admin.filter(Source__name=request.GET['source_name'])
+        all_admin = all_admin.filter(Source__name=request.GET.get['source_name'])
       if 'source_year' in request.GET:
-        all_admin = all_admin.filter(Child__date_of_birth__gte=request.GET['source_year1'])
-        all_admin = all_admin.filter(Source__year__lte=request.GET['source_year2'])
+        all_admin = all_admin.filter(Child__date_of_birth__gte=request.GET.get['source_year1'])
+        all_admin = all_admin.filter(Source__year__lte=request.GET.get['source_year2'])
       #if 'gender' in request.GET:
         #all_admin.filter(gender = request.GET['gender'])
       if 'gestational_age' in request.GET:
-        all_admin = all_admin.filter(Child__gestational_age__gte=int(request.GET['gest_age1']))
-        all_admin = all_admin.filter(Child__gestational_age__lte=int(request.GET['gest_age2']))
+        all_admin = all_admin.filter(Child__gestational_age__gte=int(request.GET.get['gest_age1']))
+        all_admin = all_admin.filter(Child__gestational_age__lte=int(request.GET.get['gest_age2']))
       if 'mom_ed' in request.GET:
-        all_admin = all_admin.filter(Child__mom_ed__gte=int(request.GET['mom_ed1']))
-        all_admin = all_admin.filter(Child__mom_ed__lte=int(request.GET['mom_ed2']))
+        all_admin = all_admin.filter(Child__mom_ed__gte=int(request.GET.get['mom_ed1']))
+        all_admin = all_admin.filter(Child__mom_ed__lte=int(request.GET.get['mom_ed2']))
       if 'birth_order' in request.GET:
-        all_admin = all_admin.filter(Child__birth_order=int(request.GET['birth_order']))
+        all_admin = all_admin.filter(Child__birth_order=int(request.GET.get['birth_order']))
       if 'instrument' in request.GET:
-        all_admin = all_admin.filter(InstrumentsMap__name=request.GET['instrument'])
-      data = aggregate(all_admin)
-      return render(request, 'search.html', {})
+        all_admin = all_admin.filter(InstrumentsMap__name=request.GET.get['instrument'])      
+      data_dict = aggregate(all_admin)
+      return render(request, 'search.html', {'data_dict': data_dict})
     return render(request, 'search.html', {})
 
   def dump(qs, path):
