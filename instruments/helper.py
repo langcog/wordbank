@@ -14,7 +14,7 @@ def aggregate(admin_query=None):
            #'date_of_birth': administration.child.date_of_birth if administration.child.date_of_birth != None else datetime.datetime.now(),
            'mom_ed': administration.child.mom_ed if administration.child.mom_ed != None else -1,  
            'source': administration.source.name if administration.source != None else 'Unknown',  
-           'ethnicity': administration.child.ethnicity.ethnicity if administration.child.ethnicity != None else 'Unknown'}  
+           'ethnicity': administration.child.ethnicity.ethnicity if administration.child.ethnicity != None else 'Unknown'}
     instrument = administration.instrument.name
     for subclass in BaseTable.__subclasses__():
       if instrument == subclass.__name__:
@@ -31,9 +31,9 @@ def aggregate(admin_query=None):
         production = production + production_temp
         comprehension = comprehension + comprehension_temp
       if instrument == 'WS' and field_name == 'col_connthen':
-        break 
+        break
       if instrument == 'WG' and field_name == 'col_some':
-        break 
+        break
     obj['production'] = production
     obj['comprehension'] = comprehension
     data.append(obj)
