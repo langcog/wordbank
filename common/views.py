@@ -41,29 +41,45 @@ class Search(View):
         #all_admin = all_admin.filter(Child__date_of_birth__lte=(request.GET['dob2'])[2:-1])
         #print request.GET.get['dob1']
       if 'source_name' in request.GET:
-        all_admin = all_admin.filter(Source__name=(request.GET['source_name'])[2:-1])
+        q = (request.GET['source_name'])[2:-1]
+        if q is not None and q != '':
+          all_admin = all_admin.filter(Source__name=(request.GET['source_name'])[2:-1])
       if 'source_year' in request.GET:
-        all_admin = all_admin.filter(Child__date_of_birth__gte=(request.GET['source_year1'])[2:-1])
-        all_admin = all_admin.filter(Source__year__lte=(request.GET['source_year2'])[2:-1])
+        q = (request.GET['source_year1'])[2:-1]
+        if q is not None and q != '':
+          all_admin = all_admin.filter(Source__year__gte=(request.GET['source_year1'])[2:-1])
+          all_admin = all_admin.filter(Source__year__lte=(request.GET['source_year2'])[2:-1])
       #if 'gender' in request.GET:
         #all_admin.filter(gender = request.GET['gender'])
       if 'gestational_age' in request.GET:
-        all_admin = all_admin.filter(Child__gestational_age__gte=int((request.GET['gest_age1'])[2:-1]))
-        all_admin = all_admin.filter(Child__gestational_age__lte=int((request.GET['gest_age2'])[2:-1]))
+        q = (request.GET['gest_age1'])[2:-1]
+        if q is not None and q != '':
+          all_admin = all_admin.filter(Child__gestational_age__gte=int((request.GET['gest_age1'])[2:-1]))
+          all_admin = all_admin.filter(Child__gestational_age__lte=int((request.GET['gest_age2'])[2:-1]))
       if 'mom_ed' in request.GET:
-        all_admin = all_admin.filter(Child__mom_ed__gte=int((request.GET['mom_ed1'])[2:-1]))
-        all_admin = all_admin.filter(Child__mom_ed__lte=int((request.GET['mom_ed2'])[2:-1]))
+        q = (request.GET['mom_ed1'])[2:-1]
+        if q is not None and q != '':
+          all_admin = all_admin.filter(Child__mom_ed__gte=int((request.GET['mom_ed1'])[2:-1]))
+          all_admin = all_admin.filter(Child__mom_ed__lte=int((request.GET['mom_ed2'])[2:-1]))
       if 'birth_order' in request.GET:
-        all_admin = all_admin.filter(Child__birth_order=int((request.GET['birth_order'])[2:-1]))
+        q = (request.GET['birth_order'])[2:-1]
+        if q is not None and q != '':
+          all_admin = all_admin.filter(Child__birth_order=int((request.GET['birth_order'])[2:-1]))
       if 'instrument' in request.GET:
-        all_admin = all_admin.filter(InstrumentsMap__name=(request.GET['instrument'])[2:-1]) 
+        q = (request.GET['instrument'])[2:-1]
+        if q is not None and q != '':
+          all_admin = all_admin.filter(InstrumentsMap__name=(request.GET['instrument'])[2:-1]) 
       data_dict = aggregate(all_admin)
       instrument = (request.GET['instrument'])[2:-1]
       for subclass in BaseTable.__subclasses__():
-      if instrument == subclass.__name__:
-        instrument_class = subclass
-        obj['instrument'] = instrument
-        break
+        if instrument == subclass.__name__:
+          instrument_class = subclass
+          obj['instrument'] = instrument
+          break
+      # f = open("filename.csv", "w")
+      # f.truncate()
+      # f.close()
+      # f = open("filename.csv", "w")
       # all_items = []
       # for item in all_admin:
       #   instrument_obj = instrument_class.objects.get(pk=administration.data_id).__dict__
