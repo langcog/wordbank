@@ -90,14 +90,14 @@
                         <div class = "col-sm-offset-2 col-sm-4">
                             <div class = "checkbox">
                                 <label>
-                                    <input type="checkbox" name="gender" value="m" checked>Male
+                                    <input type="checkbox" name="gender-m" value="m" checked>Male
                                 </label>
                             </div>
                         </div>
                         <div class = "col-sm-3">
                             <div class = "checkbox">
                                 <label>
-                                    <input type="checkbox" name="gender" value="f" checked>Female
+                                    <input type="checkbox" name="gender-f" value="f" checked>Female
                                 </label>
                             </div>
                         </div>
@@ -170,9 +170,9 @@
         </p>
     </form>
     <table>
-    {% for key, value in data_dict.items %}
+    {% for elem in data_dict %}
         <tr>
-            {% for key1, value1 in value.items %}
+            {% for key1, value1 in elem.items %}
                 <td>{{value1}}</td>
             {% endfor %}
         </tr>
