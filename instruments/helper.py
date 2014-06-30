@@ -2,7 +2,8 @@ from common.models import *
 from instruments.models import *
 
 def aggregate(admin_query=None):
-  f = open('workfile', 'w')
+  f = open('testfile.txt', 'w')
+  f.write("HELLO")
   data = []
   if admin_query == None:
     administrations = Administration.objects.all()
@@ -39,6 +40,7 @@ def aggregate(admin_query=None):
     obj['production'] = production
     obj['comprehension'] = comprehension
     data.append(obj)
+    f.close()
   return data
 
 
