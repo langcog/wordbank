@@ -2,15 +2,12 @@ from common.models import *
 from instruments.models import *
 
 def aggregate(admin_query=None):
-  f = open('testfile.txt', 'w')
-  f.write("HELLO")
   data = []
   if admin_query == None:
     administrations = Administration.objects.all()
   else:
     administrations = admin_query
   for administration in administrations:
-    f.write(administration.data_id)
     obj = {'age': administration.age if administration.age is not None else -1,
            #'date_of_test': administration.date_of_test if administration.date_of_test != None else datetime.datetime.now(),
            #'gender': administration.child.gender if administration.child.gender != None else 'U',
