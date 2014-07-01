@@ -43,10 +43,12 @@ class Search(View):
       if 'source_name' in request.GET:
         q = (request.GET['source_name'])[2:-1]
         if q is not None and q != '':
+          int("HELLO")
           all_admin = all_admin.filter(Source__name=(request.GET['source_name'])[2:-1])
       if 'source_year' in request.GET:
         q = (request.GET['source_year1'])[2:-1]
         if q is not None and q != '':
+          int("HELLO")
           all_admin = all_admin.filter(Source__year__gte=(request.GET['source_year1'])[2:-1])
           all_admin = all_admin.filter(Source__year__lte=(request.GET['source_year2'])[2:-1])
       #if 'gender' in request.GET:
@@ -54,6 +56,7 @@ class Search(View):
       if 'gestational_age' in request.GET:
         q = (request.GET['gest_age1'])[2:-1]
         if q is not None and q != '':
+          int("HELLO")
           all_admin = all_admin.filter(Child__gestational_age__gte=int((request.GET['gest_age1'])[2:-1]))
           all_admin = all_admin.filter(Child__gestational_age__lte=int((request.GET['gest_age2'])[2:-1]))
       if 'mom_ed' in request.GET:
