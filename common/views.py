@@ -35,22 +35,20 @@ class Search(View):
     if request.method == 'GET':
       print 'Hello1'
       all_admin = Administrator.objects.all()
-      if 'dob1' in request.GET:
-        print "HEllo2"
-        #all_admin = all_admin.filter(Child__date_of_birth__gte=(request.GET['dob1'])[2:-1])
-        #all_admin = all_admin.filter(Child__date_of_birth__lte=(request.GET['dob2'])[2:-1])
-        #print request.GET.get['dob1']
-      if 'source_name' in request.GET:
-        q = (request.GET['source_name'])[2:-1]
-        if q is not None and q != '':
-          int("HELLO")
-          all_admin = all_admin.filter(Source__name=(request.GET['source_name'])[2:-1])
-      if 'source_year' in request.GET:
-        q = (request.GET['source_year1'])[2:-1]
-        if q is not None and q != '':
-          int("HELLO")
-          all_admin = all_admin.filter(Source__year__gte=(request.GET['source_year1'])[2:-1])
-          all_admin = all_admin.filter(Source__year__lte=(request.GET['source_year2'])[2:-1])
+      # if 'dob1' in request.GET:
+      #   print "HEllo2"
+        # all_admin = all_admin.filter(Child__date_of_birth__gte=(request.GET['dob1'])[2:-1])
+        # all_admin = all_admin.filter(Child__date_of_birth__lte=(request.GET['dob2'])[2:-1])
+        # print request.GET.get['dob1']
+      # if 'source_name' in request.GET:
+      #   q = (request.GET['source_name'])[2:-1]
+      #   if q is not None and q != '':
+      #     all_admin = all_admin.filter(Source__name=(request.GET['source_name'])[2:-1])
+      # if 'source_year' in request.GET:
+      #   q = (request.GET['source_year1'])[2:-1]
+      #   if q is not None and q != '':
+      #     all_admin = all_admin.filter(Source__year__gte=(request.GET['source_year1'])[2:-1])
+      #     all_admin = all_admin.filter(Source__year__lte=(request.GET['source_year2'])[2:-1])
       #if 'gender' in request.GET:
         #all_admin.filter(gender = request.GET['gender'])
       # if 'gestational_age' in request.GET:
