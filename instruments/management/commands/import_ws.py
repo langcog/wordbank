@@ -6,22 +6,22 @@ from instruments.models import *
 import xlrd
 
 class Command(NoArgsCommand):
-  
+
   def get_ethnicity(self, ethnic):
     if ethnic == 'A':
       return 1
     if ethnic == 'B':
-      return 2 
+      return 2
     if ethnic == 'H':
-      return 3 
+      return 3
     if ethnic == 'W':
-      return 4 
+      return 4
     else:
       val = int(ethnic)
       if val > 0 and val < 6:
-        return val 
+        return val
       return 5
-        
+
   def format_date(self, date_str, filename, datemode=None):
     if filename == 'raw_data/CDI-WS-2.xlsx':
       return datetime.strptime(date_str, '%m/%d/%Y')
@@ -30,37 +30,37 @@ class Command(NoArgsCommand):
 
   def get_special_cols(self, filename):
     if filename == 'raw_data/CDI-WS-2.xlsx':
-      return {'id': 'id', 
-              'birth_order': 'birth', 
-              'gender': 'gender', 
-              'age': 'cdiage', 
-              'mom_ed': 'momed', 
-              'date_of_birth': 'DateOfBirth', 
-              'DateOfCDI': 'DateOfCDI', 
-              'source': 'source', 
+      return {'id': 'id',
+              'birth_order': 'birth',
+              'gender': 'gender',
+              'age': 'cdiage',
+              'mom_ed': 'momed',
+              'date_of_birth': 'DateOfBirth',
+              'DateOfCDI': 'DateOfCDI',
+              'source': 'source',
               'ethnic': 'ethnic'}
     elif filename == 'raw_data/MarchmanWisconsin.xlsx':
-      return {'id': 'ParticipantId', 
-              'birth_order': 'BOrder', 
-              'gender': 'gender', 
-              'age': 'cdiage', 
-              'mom_ed': 'MotherEd', 
-              'date_of_birth': 'DOB', 
-              'DateOfCDI': 'CDIDate', 
+      return {'id': 'ParticipantId',
+              'birth_order': 'BOrder',
+              'gender': 'gender',
+              'age': 'cdiage',
+              'mom_ed': 'MotherEd',
+              'date_of_birth': 'DOB',
+              'DateOfCDI': 'CDIDate',
               'ethnic': 'ethnic',
-              'source': 'source'} 
+              'source': 'source'}
     elif filename == 'raw_data/MarchmanDallas.xlsx':
-      return {'id': 'ParticipantId', 
-              'birth_order': 'BOrder', 
-              'gender': 'gender', 
-              'age': 'cdiage', 
-              'mom_ed': 'MotherEd', 
-              'date_of_birth': 'DOB', 
-              'DateOfCDI': 'CDIDate', 
+      return {'id': 'ParticipantId',
+              'birth_order': 'BOrder',
+              'gender': 'gender',
+              'age': 'cdiage',
+              'mom_ed': 'MotherEd',
+              'date_of_birth': 'DOB',
+              'DateOfCDI': 'CDIDate',
               'ethnic': 'ethnic',
-              'source': 'source'} 
+              'source': 'source'}
 
- 
+
   def handle(self, *args, **options):
     # Name of the CDI file is here.
     book = xlrd.open_workbook(args[0])
@@ -68,7 +68,7 @@ class Command(NoArgsCommand):
     sh = book.sheet_by_index(0)
     nrows = sh.nrows
     ncols = sh.ncols
-    
+
     special_cols = self.get_special_cols(args[0])
     special_col_map = {}
     col_names = list(sh.row_values(0))
@@ -80,10 +80,10 @@ class Command(NoArgsCommand):
         if value.lower() == special_cols[special_col].lower():
           special_col_map[special_col] = index
           break
-    
+
     for row in range(1, nrows):
       row_values = list(sh.row_values(row))
-      
+
       # Initialize the Child here.
       child = Child.objects.create(study_id=row_values[special_col_map['id']])
       if 'date_of_birth' in special_col_map and row_values[special_col_map['date_of_birth']] != '':
@@ -99,7 +99,7 @@ class Command(NoArgsCommand):
         if Ethnicity.objects.filter(id=ethnic_num).exists():
           child.ethnicity = Ethnicity.objects.get(pk=ethnic_num)
       child.save()
-      
+
       # Create the instrument and the administration here.
       instrument = WS.objects.create()
       administration = Administration.objects.create(child=child,
@@ -107,9 +107,9 @@ class Command(NoArgsCommand):
                                              data_id=instrument.pk,
                                              date_of_test=self.format_date(row_values[special_col_map['DateOfCDI']], args[0], datemode=book.datemode))
       if 'age' in special_col_map and row_values[special_col_map['age']] != '':
-        administration.age = int(row_values[special_col_map['age']]) 
+        administration.age = int(row_values[special_col_map['age']])
       if 'source' in special_col_map and row_values[special_col_map['source']] != '':
-        source_num = int(row_values[special_col_map['source']]) 
+        source_num = int(row_values[special_col_map['source']])
       elif args[0] == 'raw_data/MarchmanDallas.xlsx':
         source_num = 2
       elif args[0] == 'raw_data/MarchmanWisconsin.xlsx':
