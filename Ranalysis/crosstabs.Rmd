@@ -71,7 +71,7 @@ age.gender.data <- child.scores %>%
   gather(measure,score,c(receptive,productive)) %>%
   group_by(age,gender,measure) %>%
   summarise(
-    mean = na.mean(score),
+    mean = mean(score),
     ci.l = ci.low(score),
     ci.h = ci.high(score),
     n = n())
