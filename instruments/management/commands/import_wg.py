@@ -15,8 +15,8 @@ class Command(NoArgsCommand):
     col1 = col_names[index]
     col2 = col_names[index+1]
     if col1[0:len(col1)-1] == col2[0:len(col2)-1] and \
-      ((col1[len(col1)-1] == 'p' and col2[len(col2)-1]) == 'u' or \
-      (col2[len(col2)-1] == 'u' and col2[len(col2)-1]) == 'p'):
+      ((col1[len(col1)-1] == 'p' and col2[len(col2)-1] == 'u') or \
+      (col2[len(col2)-1] == 'u' and col2[len(col2)-1] == 'p')):
       base = col1[0:len(col1)-1]
       offset = 2
     elif col1[1:] == col2[1:] and \
