@@ -3,9 +3,8 @@ import os
 
 SITE_DIR = (os.path.join(os.path.dirname(__file__), '..')).replace('\\', '/')
 DEV = os.path.isfile(os.path.join(SITE_DIR, 'dev'))
+DEBUG = False
 if DEV:
-  DEBUG = True
-else:
   DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
@@ -171,3 +170,5 @@ LOGGING = {
         },
     }
 }
+
+TEST_RUNNER = 'django.test.runner.DiscoverRunner'
