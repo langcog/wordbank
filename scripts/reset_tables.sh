@@ -6,6 +6,8 @@ echo "Populating Ethnicity..."
 ./manage.py populate_ethnicity
 echo "Populating Source..."
 ./manage.py populate_source
+echo "Populating CDI Category..."
+./manage.py populate_cdi_category "raw_data/ws_categories.xlsx"
 echo "Importing Norming WS..."
 ./manage.py import_ws "raw_data/CDI-WS-2.xlsx"
 echo "Importing Dallas..."
