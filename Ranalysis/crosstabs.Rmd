@@ -1,0 +1,99 @@
+---
+title: "Crosstabs"
+author: "Dan Yurovsky"
+date: "September 30, 2014"
+output: html_document
+---
+
+Load Required Libraries
+```{r, echo=FALSE}
+# clear all previous variables
+rm(list=ls())
+
+#get lab version of useful R functions
+source('~/Projects/Other/Ranalysis/useful.R')
+
+#load libraries for data manipulation and graphing
+library(directlabels)
+library(dplyr)
+library(RSQLite)
+library(RSQLite.extfuns)
+library(RMySQL)
+library(tidyr)
+```
+
+Load Database
+```{r, echo=FALSE}
+# connect to local databse
+wordbank <- src_sqlite('wordbank.sqlite')
+wordbank <- src_mysql(dbname='wordbank')
+
+# load all tables
+admin.table <- tbl(wordbank,"common_administration")
+child.table <- tbl(wordbank,"common_child")
+instruments.table <- tbl(wordbank,"common_instrumentsmap")
+source.table <- tbl(wordbank,"common_source")
+wordinfo.table <- tbl(wordbank,"common_wordinfo")
+mapping.table <- tbl(wordbank,"common_wordmapping")
+ws.table <- tbl(wordbank,"instruments_ws")
+wg.table <- tbl(wordbank,"instruments_wg")
+```
+
+Load productive/receptive data
+```{r}
+wg.vocab.words <- as.data.frame(select(
+  wg.table,basetable_ptr_id,col_baabaa:col_some))
+names(wg.vocab.words)[1] <- "id"
+
+wg.bykid.longform <- melt(wg.vocab.words,id.vars="id",
+                       variable.name = "word",
+                       value.name="produces") %>%
+  mutate(understands = produces >= 1,
+         produces = produces == 2)
+
+wg.scores <- wg.bykid.longform %>%
+  group_by(id) %>%
+  summarise(productive = sum(produces),
+            receptive = sum(understands))
+```
+
+Load child-specific data
+```{r}
+admins <- as.data.frame(select(admin.table,data_id,child_id,age,source_id))
+children <- as.data.frame(select(child.table,id,gender,mom_ed,birth_order))
+
+child.data <- merge(children,admins,by.y="child_id",by.x = "id")
+word.data <- merge(child.data,wg.bykid.longform)
+child.scores <- merge(child.data,wg.scores)
+
+
+age.gender.data <- child.scores %>%
+  gather(measure,score,c(receptive,productive)) %>%
+  group_by(age,gender,measure) %>%
+  summarise(
+    mean = mean(score),
+    ci.l = ci.low(score),
+    ci.h = ci.high(score),
+    n = n())
+
+#Show table
+age.gender.data
+```
+
+Plot
+```{r}
+quartz(width=7,height=4)
+ggplot(age.gender.data, 
+       aes(x=age, y=mean,colour=gender,linetype=measure,
+           group=interaction(gender,measure)))+
+  geom_pointrange(aes(ymin = mean-ci.l,
+                      ymax = mean+ci.h),
+                  size = .8,
+                  show_guide = FALSE) +
+  geom_line(size=1) +
+  scale_x_continuous(breaks=seq(8,18,1),
+                     name = "Age (months)")+
+  scale_y_continuous(name = "Vocabulary Size (words)") +
+  theme_bw(base_size=14) +
+  scale_color_manual(values = c("#e41a1c","#377eb8"))
+```

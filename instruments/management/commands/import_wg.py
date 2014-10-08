@@ -15,8 +15,8 @@ class Command(NoArgsCommand):
     col1 = col_names[index]
     col2 = col_names[index+1]
     if col1[0:len(col1)-1] == col2[0:len(col2)-1] and \
-      (col1[len(col1)-1] == 'p' and col2[len(col2)-1] == 'u' or \
-      col2[len(col2)-1] == 'u' and col2[len(col2)-1] == 'p'):
+      ((col1[len(col1)-1] == 'p' and col2[len(col2)-1] == 'u') or \
+      (col2[len(col2)-1] == 'u' and col2[len(col2)-1] == 'p')):
       base = col1[0:len(col1)-1]
       offset = 2
     elif col1[1:] == col2[1:] and \
@@ -36,7 +36,7 @@ class Command(NoArgsCommand):
     sh = book.sheet_by_index(0)
     nrows = sh.nrows
     ncols = sh.ncols
-    
+
     special_cols = ['id', 'gender', 'birth', 'cdiage', 'momed', 'DateOfBirth', 'DateOfCDI', 'source', 'ethnic']
     special_col_map = {}
     col_names = list(sh.row_values(0))
@@ -76,7 +76,7 @@ class Command(NoArgsCommand):
                                              data_id=instrument.pk,
                                              date_of_test=self.format_date(row_values[special_col_map['DateOfCDI']]))
       if 'cdiage' in special_col_map and row_values[special_col_map['cdiage']] != '':
-        administration.age = int(row_values[special_col_map['cdiage']]) 
+        administration.age = int(row_values[special_col_map['cdiage']])
       if 'source' in special_col_map and row_values[special_col_map['source']] != '':
         source_num = int(row_values[special_col_map['source']])
         if Source.objects.filter(id=source_num+1).exists():
