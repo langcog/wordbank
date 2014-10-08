@@ -39,7 +39,7 @@ ws.table <- tbl(wordbank,"instruments_ws")
 wg.table <- tbl(wordbank,"instruments_wg")
 ```
 
-Load productive/receptive data
+Load WG productive/receptive data
 ```{r}
 wg.vocab.words <- as.data.frame(select(
   wg.table,basetable_ptr_id,col_baabaa:col_some))
@@ -57,17 +57,37 @@ wg.scores <- wg.bykid.longform %>%
             receptive = sum(understands))
 ```
 
+Load WS productive data
+```{r}
+ws.vocab.words <- as.data.frame(select(
+  ws.table,basetable_ptr_id,col_baabaa:col_connthen))
+names(ws.vocab.words)[1] <- "id"
+
+ws.bykid.longform <- melt(ws.vocab.words,id.vars="id",
+                       variable.name = "word",
+                       value.name="produces")
+
+ws.scores <- ws.bykid.longform %>%
+  group_by(id) %>%
+  summarise(productive = sum(produces))
+```
+
 Load child-specific data
 ```{r}
 admins <- as.data.frame(select(admin.table,data_id,child_id,age,source_id))
 children <- as.data.frame(select(child.table,id,gender,mom_ed,birth_order))
 
 child.data <- merge(children,admins,by.y="child_id",by.x = "id")
-word.data <- merge(child.data,wg.bykid.longform)
-child.scores <- merge(child.data,wg.scores)
+wg.word.data <- merge(child.data,wg.bykid.longform)
+wg.child.scores <- merge(child.data,wg.scores)
 
+ws.word.data <- merge(child.data,ws.bykid.longform)
+ws.child.scores <- merge(child.data,ws.scores)
+```
 
-age.gender.data <- child.scores %>%
+Compute crosstabs
+```{r}
+wg.age.gender.data <- wg.child.scores %>%
   gather(measure,score,c(receptive,productive)) %>%
   group_by(age,gender,measure) %>%
   summarise(
@@ -76,14 +96,26 @@ age.gender.data <- child.scores %>%
     ci.h = ci.high(score),
     n = n())
 
-#Show table
-age.gender.data
+#Show WG table
+wg.age.gender.data
+
+ws.age.gender.data <- ws.child.scores %>%
+  group_by(age,gender) %>%
+  filter(age>= 16, age <= 30) %>%
+  summarise(
+    mean = mean(productive),
+    ci.l = ci.low(productive),
+    ci.h = ci.high(productive),
+    n = n())
+
+#Show WS table
+ws.age.gender.data
 ```
 
-Plot
+Plot WG
 ```{r}
 quartz(width=7,height=4)
-ggplot(age.gender.data, 
+ggplot(wg.age.gender.data, 
        aes(x=age, y=mean,colour=gender,linetype=measure,
            group=interaction(gender,measure)))+
   geom_pointrange(aes(ymin = mean-ci.l,
@@ -95,5 +127,24 @@ ggplot(age.gender.data,
                      name = "Age (months)")+
   scale_y_continuous(name = "Vocabulary Size (words)") +
   theme_bw(base_size=14) +
+  scale_color_manual(values = c("#e41a1c","#377eb8"))
+```
+
+Plot WS
+```{r}
+quartz(width=6,height=4)
+ggplot(ws.age.gender.data, 
+       aes(x=age, y=mean,colour=gender,label=gender))+
+  geom_pointrange(aes(ymin = mean-ci.l,
+                      ymax = mean+ci.h),
+                  size = .8,
+                  show_guide = FALSE) +
+  geom_line(size=1) +
+  scale_x_continuous(breaks=seq(16,30,1),limits=c(16,30.5),
+                     name = "Age (months)")+
+  scale_y_continuous(name = "Vocabulary Size (words)",limits=c(0,680)) +
+  theme_bw(base_size=14) +
+  theme(legend.position="none") +
+  geom_dl(method=list("last.qp",cex=1,hjust=-.5)) +
   scale_color_manual(values = c("#e41a1c","#377eb8"))
 ```
