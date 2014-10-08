@@ -26,7 +26,10 @@ class Contribute(View):
 
 class Reports(View):
   def get(self, request):
-    return render(request, 'reports.html', {'id': request.GET['id']})
+    id = 'wordle_app'
+    if 'id' in request.GET:
+      id = request.GET['id']
+    return render(request, 'reports.html', {'id': id]})
 
 class Search(View):
 

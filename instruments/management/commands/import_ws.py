@@ -21,7 +21,7 @@ class Command(NoArgsCommand):
       if val > 0 and val < 6:
         return val 
       return 5
-        
+
   def format_date(self, date_str, filename, datemode=None):
     if filename == 'raw_data/CDI-WS-2.xlsx':
       return datetime.strptime(date_str, '%m/%d/%Y')
@@ -68,7 +68,7 @@ class Command(NoArgsCommand):
     sh = book.sheet_by_index(0)
     nrows = sh.nrows
     ncols = sh.ncols
-    
+
     special_cols = self.get_special_cols(args[0])
     special_col_map = {}
     col_names = list(sh.row_values(0))
@@ -122,11 +122,12 @@ class Command(NoArgsCommand):
       start = False
       instrument_data = {}
       col_name_index = 0
+      existing_col_names = [d.name for d in WS._meta.fields]
       for value in row_values:
         column_name = 'col_'+col_names[col_name_index].lower()
         if col_names[col_name_index].lower() == 'baabaa':
           start = True
-        if start and column_name in WS._meta.fields:
+        if start and column_name in existing_col_names:
           instrument_data[column_name] = int(value)
         col_name_index = col_name_index + 1
       WS.objects.filter(pk=instrument.pk).update(**instrument_data)
