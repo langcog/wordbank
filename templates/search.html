@@ -170,6 +170,9 @@
         </p>
     </form>
     <table>
+    {% if data %}
+        <a href="/media/file.csv" download>Download CSV</a>
+    {% endif %}
     {% for elem in data_dict %}
         <tr>
             {% for key1, value1 in elem.items %}
@@ -178,5 +181,4 @@
         </tr>
     {% endfor %}
     </table>
-
 {% endblock %}
