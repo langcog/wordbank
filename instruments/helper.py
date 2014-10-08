@@ -7,10 +7,11 @@ def aggregate(admin_query=None):
     administrations = Administration.objects.all()
   else:
     administrations = admin_query
-  for administration in administrations:
+  for admin in administrations.iterator():
+    administration = Administration.objects.get(data_id=x)
     obj = {'age': administration.age if administration.age is not None else -1,
-           #'date_of_test': administration.date_of_test if administration.date_of_test != None else datetime.datetime.now(),
-           #'gender': administration.child.gender if administration.child.gender != None else 'U',
+           'date_of_test': administration.date_of_test if administration.date_of_test != None else datetime.datetime.now(),
+           'gender': administration.child.gender if administration.child.gender != None else 'U',
            'date_of_birth': administration.child.date_of_birth if administration.child.date_of_birth != None else datetime.datetime.now(),
            'mom_ed': administration.child.mom_ed if administration.child.mom_ed != None else -1,  
            'source': administration.source.name if administration.source != None else 'Unknown',  
@@ -21,7 +22,7 @@ def aggregate(admin_query=None):
         instrument_class = subclass
         obj['instrument'] = instrument
         break
-    instrument_obj = instrument_class.objects.get(pk=administration.data_id).__dict__
+    instrument_obj = instrument_class.objects.get(pk=x).__dict__
     production = 0
     comprehension = 0
     for field in instrument_class._meta.fields:
@@ -37,7 +38,6 @@ def aggregate(admin_query=None):
     obj['production'] = production
     obj['comprehension'] = comprehension
     data.append(obj)
-    f.close()
   return data
 
 
