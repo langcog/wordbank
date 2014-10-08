@@ -6,7 +6,6 @@ source('~/Projects/Other/Ranalysis/useful.R')
 
 #load libraries for data manipulation and graphing
 library(directlabels)
-library(data.table)
 library(dplyr)
 library(RSQLite)
 library(RSQLite.extfuns)
@@ -24,6 +23,7 @@ source.table <- tbl(wordbank,"common_source")
 wordinfo.table <- tbl(wordbank,"common_wordinfo")
 mapping.table <- tbl(wordbank,"common_wordmapping")
 ws.table <- tbl(wordbank,"instruments_ws")
+wg.table <- tbl(wordbank,"instruments_wg")
 
 vocab.words <- as.data.frame(select(ws.table,
                                     basetable_ptr_id,col_baabaa:col_connthen))
