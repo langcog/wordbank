@@ -34,7 +34,7 @@ class Reports(View):
     id = 'wordle_app'
     if 'id' in request.GET:
       id = request.GET['id']
-    return render(request, 'reports.html', {'id': id]})
+    return render(request, 'reports.html', {'id': id})
 
 class Survey(View):
   def get(self, request):
