@@ -60,6 +60,11 @@ class Command(NoArgsCommand):
               'DateOfCDI': 'CDIDate',
               'ethnic': 'ethnic',
               'source': 'source'}
+    elif filename == 'raw_data/LindaSmith.xlsx' or filename == 'raw_data/LindaSmithQualtrics.xlsx':
+        return {'id': 'KID ID',
+                'age': 'Age',
+                'date_of_birth': 'DOB',
+                'DateOfCDI': 'Date of MCDI'}
 
 
   def handle(self, *args, **options):
@@ -113,9 +118,11 @@ class Command(NoArgsCommand):
       if 'source' in special_col_map and row_values[special_col_map['source']] != '':
         source_num = int(row_values[special_col_map['source']])
       elif args[0] == 'raw_data/MarchmanDallas.xlsx':
-        source_num = 2
-      elif args[0] == 'raw_data/MarchmanWisconsin.xlsx':
         source_num = 3
+      elif args[0] == 'raw_data/MarchmanWisconsin.xlsx':
+        source_num = 2
+      elif args[0] == 'raw_data/LindaSmith.xlsx' or args[0] == 'raw_data/LindaSmithQualtrics.xlsx':
+        source_num = 9
       if Source.objects.filter(id=source_num+1).exists():
         administration.source = Source.objects.get(id=source_num+1)
 
