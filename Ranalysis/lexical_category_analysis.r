@@ -1,22 +1,29 @@
 # clear all previous variables
 rm(list=ls())
 
+# set path to script folder
+setwd('~/Documents/projects/wordbank/Ranalysis')
+
 #load libraries for data manipulation and graphing
+library(ggplot2)
 library(directlabels)
 library(dplyr)
+library(reshape2)
 library(RSQLite)
 library(RSQLite.extfuns)
 library(RMySQL)
 
 # set script parameters
-#instrument = 'wg'
-instrument = 'ws'
+instrument = 'wg'
+#instrument = 'ws'
 #metric.type = 'comprehension'
 metric.type = 'production'
 
 # connect to local databse
 wordbank <- src_sqlite('wordbank.sqlite')
 wordbank <- src_mysql(dbname='wordbank')
+#wordbank <- src_mysql(dbname='wordbank',host="54.200.250.120", 
+#                      user="wordbank",password="wordbank")
 
 # load all tables
 admin.table <- tbl(wordbank,"common_administration")
@@ -59,8 +66,8 @@ kid.words <- mutate(kid.words,
                     lemma = substr(word, 5, length(word)))
 
 # load cdi category information
-word.info <- as.data.frame(select(wordinfo.table))
-cdi.cat <- as.data.frame(select(cdicat.table))
+word.info <- as.data.frame(wordinfo.table)
+cdi.cat <- as.data.frame(cdicat.table)
 names(cdi.cat)[1] <- "CDI_cat_id"
 names(cdi.cat)[2] <- "category"
 
@@ -100,8 +107,9 @@ kid.word.data <- arrange(kid.word.data, id)
 form.cat.sizes <- word.cats %>%
   group_by(lex.cat) %>%
   summarise(num.cat = n())
+total <- sum(form.cat.sizes$num.cat)
 form.cat.sizes <- mutate(form.cat.sizes,
-                         prop.cat = num.cat / sum(form.cat.sizes$num.cat))
+                         prop.cat = num.cat / total)
 
 kids = group_by(kid.word.data, id)
 kids.categories = group_by(kid.word.data, id, lex.cat)
