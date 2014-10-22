@@ -1,6 +1,7 @@
 from django.core.management.base import NoArgsCommand
 import xlrd
 import datetime
+from dateutil.relativedelta import relativedelta
 from common.models import *
 from instruments.models import *
 
@@ -67,7 +68,6 @@ class Command(NoArgsCommand):
         ethnic_num = int(row_values[special_col_map['ethnic']])
         if Ethnicity.objects.filter(id=ethnic_num).exists():
           child.ethnicity = Ethnicity.objects.get(pk=ethnic_num)
-      child.save()
 
       # Create the instrument and the administration here.
       instrument = WG.objects.create()
@@ -77,10 +77,15 @@ class Command(NoArgsCommand):
                                              date_of_test=self.format_date(row_values[special_col_map['DateOfCDI']]))
       if 'cdiage' in special_col_map and row_values[special_col_map['cdiage']] != '':
         administration.age = int(row_values[special_col_map['cdiage']])
+      elif child.date_of_birth != None:
+        administration.age = int(relativedelta(administration.date_of_test, child.date_of_birth).years) 
       if 'source' in special_col_map and row_values[special_col_map['source']] != '':
         source_num = int(row_values[special_col_map['source']])
         if Source.objects.filter(id=source_num+1).exists():
           administration.source = Source.objects.get(id=source_num+1)
+
+      # Save both fields now.
+      child.save()
       administration.save()
 
       # Parse all the fields for the given data entry here.
