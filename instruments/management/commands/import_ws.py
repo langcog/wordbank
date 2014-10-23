@@ -137,7 +137,7 @@ class Command(NoArgsCommand):
       existing_col_names = [d.name for d in WS._meta.fields]
       for value in row_values:
         column_name = 'col_'+col_names[col_name_index].lower()
-        if col_names[col_name_index].lower() == 'baabaa':
+        if col_names[col_name_index].lower() == 'baabaa' or col_names[col_name_index].lower() == 'a':
           start = True
         if start and column_name in existing_col_names:
           instrument_data[column_name] = int(value)
