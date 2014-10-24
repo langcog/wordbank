@@ -10,10 +10,11 @@ def aggregate(admin_query=None):
   for administration in administrations:
     obj = {'age': administration.age if administration.age is not None else -1,
            #'date_of_test': administration.date_of_test if administration.date_of_test != None else datetime.datetime.now(),
-           'gender': administration.child.gender if administration.child.gender != None else 'U',
+           'gender': administration.child.gender if administration.child.gender else '?',
            #'date_of_birth': administration.child.date_of_birth if administration.child.date_of_birth != None else datetime.datetime.now(),
-           'mom_ed': administration.child.mom_ed if administration.child.mom_ed != None else -1,  
-           'source': administration.source.name if administration.source != None else 'Unknown',  
+           'mom_ed': administration.child.mom_ed if administration.child.mom_ed else -1,  
+           'source': administration.source.name if administration.source else 'Unknown',
+           'citation': administration.source.citation if administration.source else 'Unknown',  
            'ethnicity': administration.child.ethnicity.ethnicity if administration.child.ethnicity != None else 'Unknown'}
     instrument = administration.instrument.name
     for subclass in BaseTable.__subclasses__():
