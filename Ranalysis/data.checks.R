@@ -124,9 +124,9 @@ wg.source.summary <- wg.vocab.data %>% group_by(name) %>%
 
 ws.age.gender.summary <- ws.vocab.data %>% group_by(gender, age) %>%
   summarise(n = n(),
-            summarise(ci.l = ci.low(productive),
-                      ci.h = ci.high(productive),
-                      productive = mean(productive))
+            ci.l = ci.low(productive),
+            ci.h = ci.high(productive),
+            productive = mean(productive))
             
 ws.cat.summary <- ws.cat.data %>% group_by(category) %>%
   summarise(ci.l = ci.low(productive),
@@ -142,8 +142,7 @@ ws.source.summary <- ws.vocab.data %>% group_by(name) %>%
   summarise(n = n(),
             ci.l = ci.low(productive),
             ci.h = ci.high(productive),
-            productive = mean(productive),
-            )
+            productive = mean(productive))
 
 quartz(width=6,height=4)
 ggplot(ws.age.gender.summary, 
