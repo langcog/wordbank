@@ -21,5 +21,3 @@ class Command(NoArgsCommand):
         category = CDICategory.objects.create(name=category_name)
       if not WordInfo.objects.filter(lemma=word).exists():
           WordInfo.objects.create(lemma=word, CDI_cat=category)
-      #        print "Error: %s  already has a word category mapping" % (word,)
-#else:
