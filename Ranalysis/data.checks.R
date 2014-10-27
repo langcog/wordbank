@@ -3,6 +3,7 @@ rm(list=ls())
 
 # set path to script folder
 setwd('~/Documents/projects/wordbank/Ranalysis')
+source('~/Documents/projects/Ranalysis/useful.R')
 
 #load libraries for data manipulation and graphing
 library(ggplot2)
@@ -123,15 +124,38 @@ wg.source.summary <- wg.vocab.data %>% group_by(name) %>%
 
 ws.age.gender.summary <- ws.vocab.data %>% group_by(gender, age) %>%
   summarise(n = n(),
+            ci.l = ci.low(productive),
+            ci.h = ci.high(productive),
+            productive = mean(productive))
+            
+ws.cat.summary <- ws.cat.data %>% group_by(category) %>%
+  summarise(ci.l = ci.low(productive),
+            ci.h = ci.high(productive),
             productive = mean(productive))
 
-ws.cat.summary <- ws.cat.data %>% group_by(category) %>%
-  summarise(productive = mean(productive))
-
 ws.age.gender.cat.summary <- ws.cat.data %>% group_by(gender, age, category) %>%
-  summarise(productive = mean(productive))
+  summarise(ci.l = ci.low(productive),
+            ci.h = ci.high(productive),
+            productive = mean(productive))
 
 ws.source.summary <- ws.vocab.data %>% group_by(name) %>%
   summarise(n = n(),
+            ci.l = ci.low(productive),
+            ci.h = ci.high(productive),
             productive = mean(productive))
 
+quartz(width=6,height=4)
+ggplot(ws.age.gender.summary, 
+       aes(x=age, y=mean,colour=gender,label=gender))+
+  geom_pointrange(aes(ymin = mean-ci.l,
+                      ymax = mean+ci.h),
+                  size = .8,
+                  show_guide = FALSE) +
+  geom_line(size=1) +
+  scale_x_continuous(breaks=seq(16,30,1),limits=c(16,30.5),
+                     name = "Age (months)")+
+  scale_y_continuous(name = "Vocabulary Size (words)",limits=c(0,680)) +
+  theme_bw(base_size=14) +
+  theme(legend.position="none") +
+  geom_dl(method=list("last.qp",cex=1,hjust=-.5)) +
+  scale_color_manual(values = c("#e41a1c","#377eb8"))

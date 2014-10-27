@@ -10,50 +10,60 @@
 <input type='hidden' id='data' value='{{ data }}'/>
 
 <h3 align="center">Database Statistics</h3>
+<p align="center">This page reflects a nightly snapshot of the Wordbank database composition. Click on groups or data sources to explore features of the population interactively.</p>
 <br />
-<!-- <div class="row">
-  <div class="col-md-6">
-    <h5>Data Source</h5>
-    <div id="sourceChart"></div>
+
+<div class="row">
+  <div class="col-md-4">
+    <div id="wgMeanComprehensionChart">
+      <h5 align="center">Mean comprehension vocabulary by age<br>(Words & Gestures)</h5>
+    </div>
   </div>
-  <div class="col-md-6">
-    <h5>Ethnicity</h5>
-    <div id="ethnicityChart"></div>
+  <div class="col-md-4">
+    <div id="wgMeanProductionChart">
+      <h5 align="center">Mean production vocabulary by age<br>(Words & Gestures)</h5>
+    </div>
   </div>
-</div> -->
+  <div class="col-md-4">
+    <div id="wsMeanProductionChart">
+      <h5 align="center">Mean production vocabulary by age<br>(Words & Sentences)</h5>
+    </div>
+  </div>
+</div>
+
 <div class="row">
   <div class="col-md-6">
-    <h5 align="center">Children in the Database</h5>
-    <div id="ageChildChart"></div>
+    <div id="sourceChart">
+      <h5>Data Source</h5>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div id="ethnicityChart">
+      <h5>Ethnicity</h5>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div id="ageChildChart">
+      <h5 align="center">Children in the Database</h5>
+    </div>
   </div>
   <div class="col-md-3">
-    <h5 align="center">Instruments</h5>
-    <div id="instrumentsChart"></div>
+    <div id="instrumentsChart">
+      <h5 align="center">Instruments</h5>
+    </div>
   </div>
-  <div class="col-md-3">
-    <h5 align="center">Gender</h5>
-    <div id="genderChart"></div>
+  <div class="col-md-3">   
+    <div id="genderChart">
+      <h5 align="center">Gender</h5>
+    </div>
   </div>
 </div>
+
 <div class="row">
-<div class="col-md-6">
-    <h5 align="center">Mean production vocabulary by age (Words & Gestures)</h5>
-    <div id="wgMeanComprehensionChart"></div>
-    <!-- <div id="ageMedianComprehensionChartRange"></div> -->
-  </div>
-  <div class="col-md-6">
-    <h5 align="center">Mean comprehension vocabulary by age (Words & Gestures)</h5>
-    <div id="wgMeanProductionChart"></div>
-    <!-- <div id="ageMedianProductionChartRange"></div> -->
-  </div>
-</div>
-<div class="row">
-<div class="col-md-6">
-</div>
-  <div class="col-md-6">
-    <h5 align="center">Mean comprehension vocabulary by age (Words & Sentences)</h5>
-    <div id="wsMeanProductionChart"></div>
-</div>
+
     <!-- <div id="ageMedianComprehensionChartRange"></div> -->
   </div>
 <!-- <div class="row">
