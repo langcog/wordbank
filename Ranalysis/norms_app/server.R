@@ -3,12 +3,13 @@ library(shiny)
 library(ggplot2)
 library(dplyr)
 library(reshape2)
-library(RSQLite)
+# library(RSQLite)
 library(RMySQL)
 library(quantreg)
 theme_set(theme_bw())
 
 ## OPEN DATABASE CONNECTION ##
+# wordbank <- src_sqlite("~/Projects/Wordbank/wordbank/Ranalysis/wordbank.sqlite")
 wordbank <- src_mysql(dbname='wordbank',host="54.200.250.120", 
                      user="wordbank",password="wordbank")
 
@@ -86,9 +87,10 @@ shinyServer(function(input, output) {
     
     qplot(age, vocab, data=ddd, col=q, 
           position=position_jitter(width=.1)) + 
-      stat_quantile(aes(group=1, col=factor(..quantile..)), 
-                    quantiles=cuts[1:(length(cuts)-1)]+qs/2, 
-                    method="rqss", lambda=5) + 
+#       stat_quantile(aes(group=1, col=factor(..quantile..)), 
+#                     quantiles=cuts[1:(length(cuts)-1)]+qs/2, 
+#                     method="rqss", lambda=5) + 
+      geom_smooth(se=FALSE, span=1) + 
       xlab("Age (months)") + ylab("Vocabulary") + 
       scale_colour_discrete(name="Quantile Midpoint")
   })
