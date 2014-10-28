@@ -1,6 +1,7 @@
 from django.core.management.base import NoArgsCommand
 import xlrd
 import datetime
+from dateutil.relativedelta import relativedelta
 from common.models import *
 from instruments.models import *
 
@@ -67,7 +68,6 @@ class Command(NoArgsCommand):
         ethnic_num = int(row_values[special_col_map['ethnic']])
         if Ethnicity.objects.filter(id=ethnic_num).exists():
           child.ethnicity = Ethnicity.objects.get(pk=ethnic_num)
-      child.save()
 
       # Create the instrument and the administration here.
       instrument = WG.objects.create()
@@ -77,30 +77,32 @@ class Command(NoArgsCommand):
                                              date_of_test=self.format_date(row_values[special_col_map['DateOfCDI']]))
       if 'cdiage' in special_col_map and row_values[special_col_map['cdiage']] != '':
         administration.age = int(row_values[special_col_map['cdiage']])
+      elif child.date_of_birth != None:
+        administration.age = int(relativedelta(administration.date_of_test, child.date_of_birth).years) 
       if 'source' in special_col_map and row_values[special_col_map['source']] != '':
         source_num = int(row_values[special_col_map['source']])
         if Source.objects.filter(id=source_num+1).exists():
           administration.source = Source.objects.get(id=source_num+1)
+
+      # Save both fields now.
+      child.save()
       administration.save()
 
       # Parse all the fields for the given data entry here.
-      start = False
       instrument_data = {}
       index = 0
+      existing_col_names = [d.name for d in WG._meta.fields]
       while index < ncols:
-        if col_names[index] == 'baabaap':
-          start = True
-        if start:
-          (name, offset) = self.extract_base(index, col_names)
-          try:
-            if offset == 2:
-              value = int(row_values[index]) + int(row_values[index+1])
-            else:
-              value = int(row_values[index])
-          except:
-            value = 0
-          instrument_data['col_'+name] = value
-          index = index + offset
-        else:
-          index = index + 1
+        (name, offset) = self.extract_base(index, col_names)
+        col_name = 'col_' + name
+        try:
+          if offset == 2:
+            value = int(row_values[index]) + int(row_values[index+1])
+          else:
+            value = int(row_values[index])
+          if col_name in existing_col_names:
+            instrument_data[col_name] = value
+        except:
+          offset = 1
+        index = index + offset
       WG.objects.filter(pk=instrument.pk).update(**instrument_data)

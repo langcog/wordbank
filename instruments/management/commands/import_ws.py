@@ -1,6 +1,7 @@
 from django.core.management.base import NoArgsCommand
 from common.models import *
 from datetime import datetime
+from dateutil.relativedelta import relativedelta
 from instruments.models import *
 
 import xlrd
@@ -59,6 +60,11 @@ class Command(NoArgsCommand):
               'DateOfCDI': 'CDIDate',
               'ethnic': 'ethnic',
               'source': 'source'}
+    elif filename == 'raw_data/LindaSmith.xlsx' or filename == 'raw_data/LindaSmithQualtrics.xlsx':
+        return {'id': 'KID ID',
+                'age': 'Age',
+                'date_of_birth': 'DOB',
+                'DateOfCDI': 'Date of MCDI'}
 
 
   def handle(self, *args, **options):
@@ -98,7 +104,6 @@ class Command(NoArgsCommand):
         ethnic_num = self.get_ethnicity(row_values[special_col_map['ethnic']])
         if Ethnicity.objects.filter(id=ethnic_num).exists():
           child.ethnicity = Ethnicity.objects.get(pk=ethnic_num)
-      child.save()
 
       # Create the instrument and the administration here.
       instrument = WS.objects.create()
@@ -108,26 +113,30 @@ class Command(NoArgsCommand):
                                              date_of_test=self.format_date(row_values[special_col_map['DateOfCDI']], args[0], datemode=book.datemode))
       if 'age' in special_col_map and row_values[special_col_map['age']] != '':
         administration.age = int(row_values[special_col_map['age']])
+      elif child.date_of_birth != None:
+        administration.age = int(relativedelta(administration.date_of_test, child.date_of_birth).years) 
       if 'source' in special_col_map and row_values[special_col_map['source']] != '':
         source_num = int(row_values[special_col_map['source']])
       elif args[0] == 'raw_data/MarchmanDallas.xlsx':
-        source_num = 2
-      elif args[0] == 'raw_data/MarchmanWisconsin.xlsx':
         source_num = 3
+      elif args[0] == 'raw_data/MarchmanWisconsin.xlsx':
+        source_num = 2
+      elif args[0] == 'raw_data/LindaSmith.xlsx' or args[0] == 'raw_data/LindaSmithQualtrics.xlsx':
+        source_num = 9
       if Source.objects.filter(id=source_num+1).exists():
         administration.source = Source.objects.get(id=source_num+1)
+
+      # Save the Child and Administration objects
+      child.save()
       administration.save()
 
       # Parse all the fields for the given data entry here.
-      start = False
       instrument_data = {}
       col_name_index = 0
       existing_col_names = [d.name for d in WS._meta.fields]
       for value in row_values:
         column_name = 'col_'+col_names[col_name_index].lower()
-        if col_names[col_name_index].lower() == 'baabaa':
-          start = True
-        if start and column_name in existing_col_names:
+        if column_name in existing_col_names:
           instrument_data[column_name] = int(value)
         col_name_index = col_name_index + 1
       WS.objects.filter(pk=instrument.pk).update(**instrument_data)

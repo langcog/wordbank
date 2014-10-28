@@ -7,7 +7,6 @@ from django.conf import settings
 from common.models import *
 from instruments.models import *
 from instruments.helper import *
-from pandas import*
 from wordbank import settings
 import shutil
 import csv
