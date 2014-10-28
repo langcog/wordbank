@@ -69,6 +69,6 @@ shinyServer(function(input, output) {
       scale_colour_discrete(guide=FALSE) + 
       xlim(c(16,37)) + 
       ylim(c(0,1)) + 
-      geom_dl(aes(label=word), method="last.qp")
+      geom_dl(aes(label=word), method = list(dl.trans(x=x +.2),"last.qp",cex=1))
   })
 })
