@@ -159,7 +159,8 @@ wgMeanProductionChart.renderArea(true)
         //.rangeChart(ageChartRange)
         //.round(d3.time.month.round)
         //.xUnits(d3.time.months)
-        .elasticY(true)
+        // .elasticY(true)
+        .y(d3.scale.linear().domain([0, 396]))
         .renderHorizontalGridLines(true)
         .brushOn(false)
 
@@ -180,7 +181,8 @@ wgMeanComprehensionChart.renderArea(true)
         //.rangeChart(ageChartRange)
         //.round(d3.time.month.round)
         //.xUnits(d3.time.months)
-        .elasticY(true)
+        // .elasticY(true)
+        .y(d3.scale.linear().domain([0, 396]))
         .renderHorizontalGridLines(true)
         .brushOn(false)
 
@@ -201,7 +203,8 @@ wsMeanProductionChart.renderArea(true)
         //.rangeChart(ageChartRange)
         //.round(d3.time.month.round)
         //.xUnits(d3.time.months)
-        .elasticY(true)
+        // .elasticY(true)
+        .y(d3.scale.linear().domain([0, 680]))
         .renderHorizontalGridLines(true)
         .brushOn(false)
 
@@ -426,7 +429,6 @@ sourceChart.width(lineChartWidth)
              .label(function (d) {
                return d.key + ": " + d.value;
              })
-	     //.x(d3.scale.ordinal().domain(['Original Norming data', 'San Diego State University', 'University of Wisconsin', 'UT Dallas', 'San Diego State University', 'Louisiana State University', 'University of Connecticut', 'University of California']))
              .valueAccessor(function (d) {
                return d.value;
              });
