@@ -63,6 +63,10 @@ names(admins)[1:2] <- c("id","child.id")
 child.data <- left_join(children,admins)
 kid.words <- left_join(kid.words, child.data)
 
+lims <- data.frame(instrument = c("WG","WS"),
+                   lim = c(396,680))
+                   
+
 ############ STUFF THAT RUNS WHEN USER LOADS PAGE ##############
 # to run:
 # runApp("~/Projects/Wordbank/wordbank/Ranalysis/norms_app")
@@ -90,8 +94,9 @@ shinyServer(function(input, output) {
 #       stat_quantile(aes(group=1, col=factor(..quantile..)), 
 #                     quantiles=cuts[1:(length(cuts)-1)]+qs/2, 
 #                     method="rqss", lambda=5) + 
-      geom_smooth(se=FALSE, span=1) + 
+      geom_smooth(se=FALSE, span=1.5) + 
       xlab("Age (months)") + ylab("Vocabulary") + 
-      scale_colour_discrete(name="Quantile Midpoint")
+      scale_colour_discrete(name="Quantile Midpoint") + 
+      ylim(c(0,lims$lim[lims$instrument == input$instrument]))
   })
 })

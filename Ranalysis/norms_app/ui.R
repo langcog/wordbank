@@ -20,7 +20,7 @@ shinyUI(fluidPage(
       selectInput("qsize", label = h3("Quantile size"), 
                   choices = list("10%" = .1, 
                                  "20%" = .2, "25%" = .25, 
-                                 "33%" = .33),
+                                 "33%" = .34),
                   selected = 1)),
 
     # Show a plot of the generated distribution
