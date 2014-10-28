@@ -12,6 +12,8 @@ ADMINS = (
     # ('Your Name', 'your_email@example.com'),
 )
 
+SHINY_SERVER_IP = '54.69.36.42'
+
 MANAGERS = ADMINS
 
 DATABASES = {
