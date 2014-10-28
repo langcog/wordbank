@@ -10,7 +10,7 @@ theme_set(theme_bw())
 
 ## OPEN DATABASE CONNECTION ##
 # wordbank <- src_sqlite("~/Projects/Wordbank/wordbank/Ranalysis/wordbank.sqlite")
-wordbank <- src_mysql(dbname='wordbank',host="54.200.250.120", 
+wordbank <- src_mysql(dbname='wordbank',host="54.200.225.86", 
                      user="wordbank",password="wordbank")
 
 ## NOW LOAD TABLES ##
