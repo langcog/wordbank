@@ -7,6 +7,7 @@ from django.conf import settings
 from common.models import *
 from instruments.models import *
 from instruments.helper import *
+from wordbank import settings
 import shutil
 import csv
 import os
@@ -33,7 +34,9 @@ class Reports(View):
     id = 'wordle_app'
     if 'id' in request.GET:
       id = request.GET['id']
-    return render(request, 'reports.html', {'id': id})
+    return render(request, 'reports.html', {
+      'shinyServerIP': settings.SHINY_SERVER_IP, 
+      'id': id})
 
 class Survey(View):
   def get(self, request):
