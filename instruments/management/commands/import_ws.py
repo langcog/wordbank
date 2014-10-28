@@ -131,15 +131,12 @@ class Command(NoArgsCommand):
       administration.save()
 
       # Parse all the fields for the given data entry here.
-      start = False
       instrument_data = {}
       col_name_index = 0
       existing_col_names = [d.name for d in WS._meta.fields]
       for value in row_values:
         column_name = 'col_'+col_names[col_name_index].lower()
-        if col_names[col_name_index].lower() == 'baabaa' or col_names[col_name_index].lower() == 'a':
-          start = True
-        if start and column_name in existing_col_names:
+        if column_name in existing_col_names:
           instrument_data[column_name] = int(value)
         col_name_index = col_name_index + 1
       WS.objects.filter(pk=instrument.pk).update(**instrument_data)
