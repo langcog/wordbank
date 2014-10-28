@@ -3,8 +3,8 @@ d3.json('static/json/stats.json', function(data_json) {
 var data = crossfilter(data_json);
 var all = data.groupAll();
 
-// var sourceChart = dc.rowChart('#sourceChart')
-// var ethnicityChart = dc.rowChart('#ethnicityChart')
+var sourceChart = dc.rowChart('#sourceChart')
+var ethnicityChart = dc.rowChart('#ethnicityChart')
 
 var ageChildChart = dc.barChart('#ageChildChart');
 var instrumentsChart = dc.pieChart('#instrumentsChart');
@@ -31,7 +31,7 @@ var wsMeanProductionChart = dc.lineChart('#wsMeanProductionChart');
 // var ageMedianComprehensionChart = dc.lineChart('#ageMedianComprehensionChart');
 // var ageMedianComprehensionChartRange = dc.barChart('#ageMedianComprehensionChartRange');
 
-var lineChartWidth = 500;
+var lineChartWidth = 400;
 var pieChartWidth = 260;
 var pieChartRadius = 100;
 
@@ -66,18 +66,20 @@ var medianRemove = function(p, v) {
   return p;
 }
 
-// var ethnicities = data.dimension(function(d) {
-//   return d['ethnicity']
-// });
-// var ethnicitiesGroup = ethnicities.group().reduceSum(function(d) {
-//   return 1;
-// });
-// var sources = data.dimension(function(d) {
-//   return d['source'];
-// });
-// var sourcesGroup = sources.group().reduceSum(function(d) {
-//   return 1;
-// });
+var ethnicities = data.dimension(function(d) {
+  return d['ethnicity']
+});
+var ethnicitiesGroup = ethnicities.group().reduceSum(function(d) {
+  return 1;
+});
+
+var sources = data.dimension(function(d) {
+  return d['citation'];
+});
+var sourcesGroup = sources.group().reduceSum(function(d) {
+  return 1;
+});
+
 
 var ages = data.dimension(function(d) {
   return d['age'];
@@ -115,6 +117,7 @@ genderChart.width(pieChartWidth)
         .label(function (d) {
             return d.key + ": " + d.value;
         })
+	// .x(d3.scale.ordinal().domain(['M','F','missing']))
         .renderLabel(true)
         .transitionDuration(500)
 
@@ -156,13 +159,14 @@ wgMeanProductionChart.renderArea(true)
         //.rangeChart(ageChartRange)
         //.round(d3.time.month.round)
         //.xUnits(d3.time.months)
-        .elasticY(false)
+        .elasticY(true)
         .renderHorizontalGridLines(true)
         .brushOn(false)
 
         .group(agesGroup)
         .valueAccessor(function (d) {
-          return d.value.count > 0 ? d.value.production / d.value.count : 0;
+	    instruments.filter("WG")
+            return d.value.count > 0 ? d.value.production / d.value.count : 0;
         })
 
 wgMeanComprehensionChart.renderArea(true)
@@ -176,12 +180,13 @@ wgMeanComprehensionChart.renderArea(true)
         //.rangeChart(ageChartRange)
         //.round(d3.time.month.round)
         //.xUnits(d3.time.months)
-        .elasticY(false)
+        .elasticY(true)
         .renderHorizontalGridLines(true)
         .brushOn(false)
 
         .group(agesGroup)
         .valueAccessor(function (d) {
+	    instruments.filter("WG")
           return d.value.count > 0 ? d.value.comprehension / d.value.count : 0;
         })
 
@@ -196,13 +201,14 @@ wsMeanProductionChart.renderArea(true)
         //.rangeChart(ageChartRange)
         //.round(d3.time.month.round)
         //.xUnits(d3.time.months)
-        .elasticY(false)
+        .elasticY(true)
         .renderHorizontalGridLines(true)
         .brushOn(false)
 
         .group(agesGroup)
         .valueAccessor(function (d) {
-          return d.value.count > 0 ? d.value.production / d.value.count : 0;
+	    instruments.filter("WS")
+            return d.value.count > 0 ? d.value.production / d.value.count : 0;
         })
 
 
@@ -400,30 +406,30 @@ wsMeanProductionChart.renderArea(true)
 //         .yAxis().ticks(0);
 
 
-// ethnicityChart.width(lineChartWidth)
-//         .height(300)
-//         .dimension(ethnicities)
-//         .group(ethnicitiesGroup)
-//         .label(function (d) {
-//             return d.key + ": " + d.value;
-//         })
-//         .renderLabel(true)
-//         .transitionDuration(500)
+ethnicityChart.width(lineChartWidth)
+        .height(300)
+        .dimension(ethnicities)
+        .group(ethnicitiesGroup)
+        .label(function (d) {
+            return d.key + ": " + d.value;
+        })
+        .renderLabel(true)
+        .transitionDuration(500)
 
 
-// sourceChart.width(lineChartWidth)
-//              .height(300)
-//              .margins({top: 0, right: 40, bottom: 20, left: 30})
-//              .dimension(sources)
-//              .group(sourcesGroup)
-//              .gap(1)
-//              .label(function (d) {
-//                return d.key + ": " + d.value;
-//              })
-// 	     //.x(d3.scale.ordinal().domain(['Original Norming data', 'San Diego State University', 'University of Wisconsin', 'UT Dallas', 'San Diego State University', 'Louisiana State University', 'University of Connecticut', 'University of California']))
-//              .valueAccessor(function (d) {
-//                return d.value;
-//              });
+sourceChart.width(lineChartWidth)
+             .height(300)
+             .margins({top: 0, right: 40, bottom: 20, left: 30})
+             .dimension(sources)
+             .group(sourcesGroup)
+             .gap(1)
+             .label(function (d) {
+               return d.key + ": " + d.value;
+             })
+	     //.x(d3.scale.ordinal().domain(['Original Norming data', 'San Diego State University', 'University of Wisconsin', 'UT Dallas', 'San Diego State University', 'Louisiana State University', 'University of Connecticut', 'University of California']))
+             .valueAccessor(function (d) {
+               return d.value;
+             });
 
 
 dc.renderAll();

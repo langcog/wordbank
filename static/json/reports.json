@@ -1,5 +1,9 @@
 [
 {
+  "app_name": "Vocabulary Norms", 
+  "app_directory": "norms_app"
+},
+{
   "app_name": "Word Cloud", 
   "app_directory": "wordle_app"
 }
