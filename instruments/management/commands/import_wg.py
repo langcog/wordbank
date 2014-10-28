@@ -89,23 +89,20 @@ class Command(NoArgsCommand):
       administration.save()
 
       # Parse all the fields for the given data entry here.
-      start = False
       instrument_data = {}
       index = 0
+      existing_col_names = [d.name for d in WG._meta.fields]
       while index < ncols:
-        if col_names[index] == 'baabaap':
-          start = True
-        if start:
-          (name, offset) = self.extract_base(index, col_names)
-          try:
-            if offset == 2:
-              value = int(row_values[index]) + int(row_values[index+1])
-            else:
-              value = int(row_values[index])
-          except:
-            value = 0
-          instrument_data['col_'+name] = value
-          index = index + offset
-        else:
-          index = index + 1
+        (name, offset) = self.extract_base(index, col_names)
+        col_name = 'col_' + name
+        try:
+          if offset == 2:
+            value = int(row_values[index]) + int(row_values[index+1])
+          else:
+            value = int(row_values[index])
+          if col_name in existing_col_names:
+            instrument_data[col_name] = value
+        except:
+          offset = 1
+        index = index + offset
       WG.objects.filter(pk=instrument.pk).update(**instrument_data)
