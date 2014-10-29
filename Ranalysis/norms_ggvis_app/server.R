@@ -1,17 +1,16 @@
 ############## STUFF THAT RUNS ONCE WHEN APP LOADS ##############
 library(shiny)
-library(ggplot2)
+library(ggvis)
 library(dplyr)
 library(reshape2)
-# library(RSQLite)
 library(RMySQL)
 library(quantreg)
-source("../app_themes.R")
+library(RSQLite)
 
 ## OPEN DATABASE CONNECTION ##
-# wordbank <- src_sqlite("~/Projects/Wordbank/wordbank/Ranalysis/wordbank.sqlite")
-wordbank <- src_mysql(dbname='wordbank',host="54.200.225.86", 
-                     user="wordbank",password="wordbank")
+wordbank <- src_sqlite("~/Projects/Wordbank/wordbank/Ranalysis/wordbank.sqlite")
+# wordbank <- src_mysql(dbname='wordbank',host="54.200.250.120", 
+#                      user="wordbank",password="wordbank")
 
 ## NOW LOAD TABLES ##
 admin.table <- tbl(wordbank,"common_administration")
@@ -63,45 +62,58 @@ names(admins)[1:2] <- c("id","child.id")
 child.data <- left_join(children,admins)
 kid.words <- left_join(kid.words, child.data)
 
-lims <- data.frame(instrument = c("WG","WS"),
-                   x.min = c(8,16),
-                   x.max = c(16,30),
-                   y.max = c(396,680))
-                   
+qs <- .1 #as.numeric(input$qsize)
+cuts <- seq(0.0,1.0, by=qs)
+kid.words$vocab <- kid.words$produces
+# kid.words <- eval(substitute(mutate(kid.words, vocab = var),
+#                             list(var = as.name(input$measure))))
+
+ddd <- kid.words %>% 
+  filter(!is.na(vocab), instrument == "WG") %>% 
+  group_by(age, instrument) %>%
+  mutate(p = rank(vocab)/length(vocab),
+         q = cut(p, breaks=cuts, 
+                 labels=cuts[2:length(cuts)]-qs/2))
 
 ############ STUFF THAT RUNS WHEN USER LOADS PAGE ##############
 # to run:
 # runApp("~/Projects/Wordbank/wordbank/Ranalysis/norms_app")
 # input <- list(instrument = "WS", measure = "produces", qsize = ".1")
 
+
 shinyServer(function(input, output) {
   
   ############## STUFF THAT RUNS WHEN USER CHANGES SOMETHING ##############
-  output$plot <- renderPlot({
   
-    qs <- as.numeric(input$qsize)
-    cuts <- seq(0.0,1.0, by=qs)
-    kid.words <- eval(substitute(mutate(kid.words, vocab = var),
-                                 list(var = as.name(input$measure))))
-    ddd <- kid.words %>% 
-      filter(!is.na(vocab), 
-             instrument == input$instrument) %>% 
-      group_by(age) %>%
-      mutate(p = rank(vocab)/length(vocab),
-             q = cut(p, breaks=cuts, 
-                     labels=cuts[2:length(cuts)]-qs/2))
-    
-    qplot(age, vocab, data=ddd, col=q, 
-          position=position_jitter(width=.1)) + 
-#       stat_quantile(aes(group=1, col=factor(..quantile..)), 
-#                     quantiles=cuts[1:(length(cuts)-1)]+qs/2, 
-#                     method="rqss", lambda=5) + 
-      geom_smooth(se=FALSE, span=1) + 
-      xlab("Age (months)") + ylab("Vocabulary") + 
-      scale_colour_discrete(name="Quantile Midpoint") + 
-      ylim(c(0,lims$y.max[lims$instrument == input$instrument])) +
-      xlim(c(lims$x.min[lims$instrument == input$instrument],
-           lims$x.max[lims$instrument == input$instrument]))
-
-  })
+  values <- reactiveValues(selected = rep(TRUE, nrow(ddd)))
+  
+  ddd %>%
+    ggvis(~age, ~vocab, fill = ~q) %>%
+    layer_points() %>%
+    group_by(q) %>%
+    layer_model_predictions(model="loess", stroke = ~q) %>%
+    add_axis("x", title="Age (months)") %>%
+    add_axis("y", title="Vocabulary") %>%
+    add_legend("fill", title = "Quantile Midpoint") %>%
+    add_legend("stroke", title = "Quantile Midpoint") %>%
+    handle_hover(function(data, ...) {
+      values$selected <- ddd$vocab >= data$xmin_ &
+        ddd$vocab < data$xmax_
+    }) %>%
+    bind_shiny("plot")
 })
+
+# selectInput("instrument", label = h3("Instrument"), 
+#             choices = list("Words and Gestures" = "WG", "Words and Sentences" = "WS"), 
+#             selected = 1),
+# selectInput("measure", label = h3("Measure"), 
+#             choices = list("Understands" = "understands", "Produces" = "produces"), 
+#             selected = 1),
+# selectInput("lang", label = h3("Language"), 
+#             choices = list("English" = 1), 
+#             selected = 1),
+# selectInput("qsize", label = h3("Quantile size"), 
+#             choices = list("10%" = .1, 
+#                            "20%" = .2, "25%" = .25, 
+#                            "33%" = .33),
+#             selected = 1)),

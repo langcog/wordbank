@@ -7,7 +7,7 @@ library(reshape2)
 library(RMySQL)
 library(quantreg)
 library(directlabels)
-theme_set(theme_bw())
+source("../app_themes.R")
 
 ## OPEN DATABASE CONNECTION ##
 # wordbank <- src_sqlite("~/Projects/Wordbank/wordbank/Ranalysis/wordbank.sqlite")
@@ -58,7 +58,7 @@ shinyServer(function(input, output) {
       filter(word == input$word1 |
                word == input$word2 |
                word == input$word3) %>% 
-      filter(age > 16 & age < 36) %>%
+      filter(age >= 16 & age <= 30) %>%
       group_by(age,word) %>%
       summarise(p = mean(score))
     
@@ -67,7 +67,7 @@ shinyServer(function(input, output) {
       xlab("Age (months)") + 
       ylab("Proportion of Children Producing") + 
       scale_colour_discrete(guide=FALSE) + 
-      xlim(c(16,37)) + 
+      xlim(c(16,31)) + 
       ylim(c(0,1)) + 
       geom_dl(aes(label=word), method = list(dl.trans(x=x +.2),"last.qp",cex=1))
   })
