@@ -25,9 +25,11 @@ library(tidyr)
 Load Database
 ```{r, echo=FALSE}
 # connect to local databse
-wordbank <- src_sqlite('wordbank.sqlite')
+#wordbank <- src_sqlite('wordbank.sqlite')
 wordbank <- src_mysql(dbname='wordbank')
 
+#wordbank <- src_mysql(dbname='wordbank',host="54.200.250.120", 
+#                      user="wordbank",password="wordbank")
 # load all tables
 admin.table <- tbl(wordbank,"common_administration")
 child.table <- tbl(wordbank,"common_child")
@@ -37,6 +39,14 @@ wordinfo.table <- tbl(wordbank,"common_wordinfo")
 mapping.table <- tbl(wordbank,"common_wordmapping")
 ws.table <- tbl(wordbank,"instruments_ws")
 wg.table <- tbl(wordbank,"instruments_wg")
+cdi.cat.table <- tbl(wordbank,"common_cdicategory")
+```
+
+Load WS categories
+```{r}
+ws.categories <- merge(wordinfo.table,cdi.cat.table,
+                       by.x="CDI_cat_id",by.y="id")[,2:3] %>%
+  rename(category = name)
 ```
 
 Load WG productive/receptive data
@@ -62,13 +72,19 @@ Load WS productive data
 ws.vocab.words <- as.data.frame(select(
   ws.table,basetable_ptr_id,col_baabaa:col_connthen))
 names(ws.vocab.words)[1] <- "id"
+names(ws.vocab.words)[2:ncol(ws.vocab.words)] <- 
+  lapply(names(ws.vocab.words)[2:ncol(ws.vocab.words)],
+         function(x) substr(x,5,nchar(x)))
 
 ws.bykid.longform <- melt(ws.vocab.words,id.vars="id",
                        variable.name = "word",
                        value.name="produces")
+ws.bykid.longform <- merge(ws.bykid.longform,ws.categories,
+                           by.x="word",by.y="lemma") %>%
+  arrange(id)
 
 ws.scores <- ws.bykid.longform %>%
-  group_by(id) %>%
+  group_by(id,category) %>%
   summarise(productive = sum(produces))
 ```
 
@@ -100,7 +116,7 @@ wg.age.gender.data <- wg.child.scores %>%
 wg.age.gender.data
 
 ws.age.gender.data <- ws.child.scores %>%
-  group_by(age,gender) %>%
+  group_by(age,gender,category) %>%
   filter(age>= 16, age <= 30) %>%
   summarise(
     mean = mean(productive),
