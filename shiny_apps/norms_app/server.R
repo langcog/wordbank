@@ -64,7 +64,7 @@ child.data <- left_join(children,admins)
 kid.words <- left_join(kid.words, child.data)
 
 lims <- data.frame(instrument = c("WG","WS"),
-                   x.min = c(8,16),
+                   x.min = c(8,18),
                    x.max = c(16,30),
                    y.max = c(396,680))
                    
