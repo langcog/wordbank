@@ -12,7 +12,7 @@ ADMINS = (
     # ('Your Name', 'your_email@example.com'),
 )
 
-SHINY_SERVER_IP = '54.69.36.42'
+SHINY_SERVER_IP = '54.200.225.86'
 
 MANAGERS = ADMINS
 
