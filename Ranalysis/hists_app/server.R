@@ -6,7 +6,7 @@ library(reshape2)
 # library(RSQLite)
 library(RMySQL)
 library(quantreg)
-theme_set(theme_bw())
+source("../app_themes.R")
 
 ## OPEN DATABASE CONNECTION ##
 # wordbank <- src_sqlite("~/Projects/Wordbank/wordbank/Ranalysis/wordbank.sqlite")
