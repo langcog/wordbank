@@ -4,7 +4,7 @@ library(shiny)
 shinyUI(fluidPage(
   
   # Application title
-  titlePanel("Vocabulary Norms"),
+  titlePanel("Vocabulary Distribution"),
   
   sidebarLayout(
     sidebarPanel(
@@ -21,7 +21,10 @@ shinyUI(fluidPage(
                   choices = list("10%" = .1, 
                                  "20%" = .2, "25%" = .25, 
                                  "33%" = .34),
-                  selected = 1)),
+                  selected = 1),
+      sliderInput("age", label = h3("Age (Months)"), 
+                  min = 8, max = 36, value = 12)
+      ),
 
     # Show a plot of the generated distribution
       mainPanel(
