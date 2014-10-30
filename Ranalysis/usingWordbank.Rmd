@@ -89,20 +89,20 @@ ws.data <- left_join(ws.scores, child.data) %>%
 Compute productive vocabulary norms for original norming data
 ```{r, message=FALSE}
 ## Functions for bootstrapping 95% confidence intervals
-na.mean <- function(x) {mean(x,na.rm=T)}
-theta <- function(x,xdata,na.rm=T) {mean(xdata[x],na.rm=na.rm)}
+na.median <- function(x) {median(x,na.rm=T)}
+theta <- function(x,xdata,na.rm=T) {median(xdata[x],na.rm=na.rm)}
 ci.low <- function(x,na.rm=T) {
-  mean(x,na.rm=na.rm) - 
+  median(x,na.rm=na.rm) - 
     quantile(bootstrap(1:length(x),1000,theta,x,na.rm=na.rm)$thetastar,
              .025,na.rm=na.rm)}
 ci.high <- function(x,na.rm=T) {
   quantile(bootstrap(1:length(x),1000,theta,x,na.rm=na.rm)$thetastar,
-           .975,na.rm=na.rm) - mean(x,na.rm=na.rm)}
+           .975,na.rm=na.rm) - median(x,na.rm=na.rm)}
 
 productive.vocab <- ws.data %>%
   group_by(age,gender) %>%
   summarise(
-    mean = mean(productive),
+    median = median(productive),
     ci.l = ci.low(productive),
     ci.h = ci.high(productive),
     n = n())
@@ -115,15 +115,16 @@ Plot Mean Productive Vocabularies
 ```{r, message=FALSE}
 quartz(width=6,height=4)
 ggplot(productive.vocab,
-       aes(x=age, y=mean,colour=gender,label=gender))+
-  geom_pointrange(aes(ymin = mean-ci.l,
-                      ymax = mean+ci.h),
+       aes(x=age, y=median,colour=gender,label=gender))+
+  geom_pointrange(aes(ymin = median-ci.l,
+                      ymax = median+ci.h),
                   size = .8,
                   show_guide = FALSE) +
   geom_line(size=1) +
   scale_x_continuous(breaks=seq(16,30,1),limits=c(16,30.5),
                      name = "Age (months)")+
-  scale_y_continuous(name = "Mean Productive Vocabulary Size",limits=c(0,680)) +
+  scale_y_continuous(name = "Median Productive Vocabulary Size",
+                     limits=c(0,680)) +
   theme_bw(base_size=14) +
   theme(legend.position="none") +
   geom_dl(method=list(dl.trans(x=x +.2),"last.qp",cex=1)) +
