@@ -3,6 +3,7 @@ from common.models import *
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 from instruments.models import *
+#import csv
 
 import xlrd
 
@@ -24,13 +25,13 @@ class Command(NoArgsCommand):
       return 5
 
   def format_date(self, date_str, filename, datemode=None):
-    if filename == 'raw_data/CDI-WS-2.xlsx':
+    if filename == 'raw_data/CDI-WS.xlsx':
       return datetime.strptime(date_str, '%m/%d/%Y')
     else:
       return datetime(*xlrd.xldate_as_tuple(date_str, datemode))
 
   def get_special_cols(self, filename):
-    if filename == 'raw_data/CDI-WS-2.xlsx':
+    if filename == 'raw_data/CDI-WS.xlsx':
       return {'id': 'id',
               'birth_order': 'birth',
               'gender': 'gender',
@@ -62,7 +63,7 @@ class Command(NoArgsCommand):
               'source': 'source'}
     elif filename == 'raw_data/LindaSmith.xlsx' or filename == 'raw_data/LindaSmithQualtrics.xlsx':
         return {'id': 'KID ID',
-                'age': 'Age',
+                #'age': 'Age',
                 'date_of_birth': 'DOB',
                 'DateOfCDI': 'Date of MCDI'}
 
@@ -87,6 +88,7 @@ class Command(NoArgsCommand):
           special_col_map[special_col] = index
           break
 
+#    out = csv.writer(open('linda_ages.csv', 'w'))
     for row in range(1, nrows):
       row_values = list(sh.row_values(row))
 
@@ -114,7 +116,11 @@ class Command(NoArgsCommand):
       if 'age' in special_col_map and row_values[special_col_map['age']] != '':
         administration.age = int(row_values[special_col_map['age']])
       elif child.date_of_birth != None:
-        administration.age = int(relativedelta(administration.date_of_test, child.date_of_birth).years) 
+        age = relativedelta(administration.date_of_test, child.date_of_birth)
+        avgmonth = 365.2425/12.0
+        administration.age = age.years*12 + age.months + float(age.days) / avgmonth
+            #        if administration.age < 8 or administration.age > 42:
+            #        out.writerow([child.date_of_birth, administration.date_of_test, administration.age])
       if 'source' in special_col_map and row_values[special_col_map['source']] != '':
         source_num = int(row_values[special_col_map['source']])
       elif args[0] == 'raw_data/MarchmanDallas.xlsx':
