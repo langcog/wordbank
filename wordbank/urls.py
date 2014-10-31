@@ -15,7 +15,7 @@ urlpatterns = patterns('',
     url(r'reports', Reports.as_view(), name='reports'),
     url(r'contribute', Contribute.as_view(), name='contribute'),
     url(r'survey', Survey.as_view(), name='survey'),
-    # url(r'^wordbank/', include('wordbank.foo.urls')),
+    url(r'download', Download.as_view(), name='download'),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),

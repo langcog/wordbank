@@ -5,7 +5,7 @@
     <link rel="stylesheet" href={% static "css/search.css" %}>
     <link rel="stylesheet" href={% static "third_party/jquery-ui-1.10.4/css/ui-lightness/jquery-ui-1.10.4.css" %}>
     <script type="text/javascript" src={% static "third_party/jquery-ui-1.10.4/js/jquery-ui-1.10.4.js" %}></script>
-    <form class="form-horizontal" role="form" method = "GET">
+    <form action="/download" id='search_form' class="form-horizontal" role="form" method = "GET">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12 col-md-6" style="padding-right:20px; border-right: 1px solid #ccc;">
@@ -16,74 +16,6 @@
                         </div>
                         <div class = "col-sm-3 col-sm-offset-1">
                             <input type="text" name="dob2" placeholder="YYYY">
-                        </div>
-                    </div>
-                    <div class = "form-group">
-                        <label for="mom_ed1" class="col-sm-4 control-label">Mother's Ed. Range</label>
-                        <div class = "col-sm-3">
-                            <input type="text" name = "mom_ed1" class="slider1Value" data-index="0" value="0" />
-                        </div>
-                        <div class = "col-sm-3 col-sm-offset-1">
-                            <input type="text" name = "mom_ed2" class="slider1Value" data-index="1" value="12" />
-                        </div>
-                        <br>
-                        <br>
-                        <div class = "col-sm-8 col-sm-offset-2" id="slider1"></div>
-                        <script>
-                            $("#slider1").slider({
-                                min: 0,
-                                max: 16,
-                                step: 1,
-                                values: [0, 12],
-                                slide: function(event, ui) {
-                                    for (var i = 0; i < ui.values.length; ++i) {
-                                        $("input.slider1Value[data-index=" + i + "]").val(ui.values[i]);
-                                    }
-                                }
-                            });
-
-                            $("input.slider1Value").change(function() {
-                                var $this = $(this);
-                                $("#slider1").slider("values", $this.data("index"), $this.val());
-                            });
-                        </script>
-                    </div>
-                    <div class = "form-group">
-                        <label for="gest_age1" class="col-sm-4 control-label">Gest. Age Range</label>
-                        <div class = "col-sm-3">
-                            <input type="text" name = "gest_age1" class="sliderValue" data-index="0" value="0" />
-                        </div>
-                        <div class = "col-sm-3 col-sm-offset-1">
-                            <input type="text" name = "gest_age2" class="sliderValue" data-index="1" value="4" />
-                        </div>
-                        <br>
-                        <br>
-                        <div class = "col-sm-8 col-sm-offset-2" id="slider"></div>
-                        <script>
-                            $("#slider").slider({
-                                min: 0,
-                                max: 10,
-                                step: 1,
-                                values: [0, 4],
-                                slide: function(event, ui) {
-                                    for (var i = 0; i < ui.values.length; ++i) {
-                                        $("input.sliderValue[data-index=" + i + "]").val(ui.values[i]);
-                                    }
-                                }
-                            });
-
-                            $("input.sliderValue").change(function() {
-                                var $this = $(this);
-                                $("#slider").slider("values", $this.data("index"), $this.val());
-                            });
-                        </script>
-                    </div>
-                    <div class = "form-group">
-                        <label for="birth_order" class="col-sm-4 control-label">Birth Order</label>
-                        <div class = "col-sm-3">
-                            <input type="text" name="birth_order" placeholder = "Number">
-                        </div>
-                        <div class = "col-sm-3">
                         </div>
                     </div>
                     <div class = "form-group">
@@ -107,18 +39,24 @@
                     <div class = "form-group">
                         <label for="source_name" class="col-sm-4 control-label">Source Name</label>
                         <div class = "col-sm-3">
-                            <input type="text" name="source_name" placeholder = "Name">
+                            <select name="source_name">
+                                {% for source_name in source_names %}
+                                <option value ={{ source_name }}>{{ source_name }}</option>
+                                {% endfor %}
+                              </select>
                         </div>
                         <div class = "col-sm-3 col-sm-offset-1">
                         </div>
                     </div>
                     <div class = "form-group">
-                        <label for="source_year1" class="col-sm-4 control-label">Source Year Range</label>
+                        <label for="instrument" class="col-sm-4 control-label">Instrument</label>
                         <div class = "col-sm-3">
-                            <input type="text" name="source_year1" placeholder="From">
+                            <select name="instrument">
+                                <option value = "WS">Words and Sentences</option>
+                                <option value = "WG">Words and Gestures</option>
+                            </select>
                         </div>
-                        <div class = "col-sm-3 col-sm-offset-1">
-                             <input type="text" name="source_year2" placeholder="To">
+                        <div class = "col-sm-6">
                         </div>
                     </div>
                     <div class = "form-group">
@@ -151,34 +89,11 @@
                             });
                         </script>
                     </div>
-                    <div class = "form-group">
-                        <label for="instrument" class="col-sm-4 control-label">Instrument</label>
-                        <div class = "col-sm-3">
-                            <select name="instrument">
-                                <option value = "WS">Words and Sentences</option>
-                                <option value = "WG">Words and Gestures</option>
-                            </select
-                        </div>
-                        <div class = "col-sm-6">
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
         <p align = "center">
-            <input type="submit" value="Submit" class = "button">
+            <input id="download" type="submit" value="Download" class = "button">
         </p>
     </form>
-    <table>
-    {% if data %}
-        <a href="/media/file.csv" download>Download CSV</a>
-    {% endif %}
-    {% for elem in data_dict %}
-        <tr>
-            {% for key1, value1 in elem.items %}
-                <td>{{value1}}</td>
-            {% endfor %}
-        </tr>
-    {% endfor %}
-    </table>
 {% endblock %}
