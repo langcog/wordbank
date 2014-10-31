@@ -61,47 +61,39 @@ names(children)[1] <- "child.id"
 names(admins)[1:2] <- c("id","child.id")
 
 child.data <- left_join(children,admins)
-kid.words <- left_join(kid.words, child.data)
+kid.words <- left_join(kid.words, child.data)               
 
 lims <- data.frame(instrument = c("WG","WS"),
-                   x.min = c(8,16),
-                   x.max = c(16,30),
-                   y.max = c(396,680))
-                   
+                   lim = c(396,680))
 
 ############ STUFF THAT RUNS WHEN USER LOADS PAGE ##############
 # to run:
 # runApp("~/Projects/Wordbank/wordbank/Ranalysis/norms_app")
-# input <- list(instrument = "WS", measure = "produces", qsize = ".1")
+# input <- list(instrument = "WG", measure = "understands", qsize = ".1", age=18)
 
 shinyServer(function(input, output) {
   
   ############## STUFF THAT RUNS WHEN USER CHANGES SOMETHING ##############
   output$plot <- renderPlot({
-  
+    
     qs <- as.numeric(input$qsize)
     cuts <- seq(0.0,1.0, by=qs)
     kid.words <- eval(substitute(mutate(kid.words, vocab = var),
                                  list(var = as.name(input$measure))))
+        
     ddd <- kid.words %>% 
       filter(!is.na(vocab), 
              instrument == input$instrument) %>% 
+      filter(age == input$age) %>%
       group_by(age) %>%
       mutate(p = rank(vocab)/length(vocab),
              q = cut(p, breaks=cuts, 
                      labels=cuts[2:length(cuts)]-qs/2))
     
-    qplot(age, vocab, data=ddd, col=q, 
-          position=position_jitter(width=.1)) + 
-#       stat_quantile(aes(group=1, col=factor(..quantile..)), 
-#                     quantiles=cuts[1:(length(cuts)-1)]+qs/2, 
-#                     method="rqss", lambda=5) + 
-      geom_smooth(se=FALSE, span=1) + 
-      xlab("Age (months)") + ylab("Vocabulary") + 
-      scale_colour_discrete(name="Quantile Midpoint") + 
-      ylim(c(0,lims$y.max[lims$instrument == input$instrument])) +
-      xlim(c(lims$x.min[lims$instrument == input$instrument],
-           lims$x.max[lims$instrument == input$instrument]))
-
+    qplot(vocab, data=ddd, fill=q, binwidth=25) + 
+      xlab("Vocabulary") + ylab("Number of Children") + 
+      scale_fill_discrete(name="Quantile Midpoint") + 
+      xlim(c(0,lims$lim[lims$instrument == input$instrument])) + 
+      ylim(c(0,100))
   })
 })

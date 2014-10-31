@@ -1,0 +1,132 @@
+---
+title: "Accessing the Wordbank Database"
+author: "Dan Yurovsky"
+date: "Oct 29, 2014"
+output: html_document
+---
+
+Load Required Libraries
+```{r, message=FALSE}
+# clear all previous variables
+rm(list=ls())
+
+#load libraries for data manipulation and graphing
+library(dplyr)
+library(directlabels)
+library(RMySQL)
+library(tidyr)
+library(stringr)
+library(bootstrap)
+library(ggplot2)
+```
+
+Load in Database Tables
+```{r, message=FALSE}
+## Open database connection
+wordbank <- src_mysql(dbname='wordbank',host="54.200.225.86", 
+                      user="wordbank",password="wordbank")
+
+## Show the wordbank tables
+print(wordbank)
+
+## Load relevant tables
+admin.table <- tbl(wordbank,"common_administration")
+child.table <- tbl(wordbank,"common_child")
+ws.table <- tbl(wordbank,"instruments_ws")
+```
+
+Load MCDI data for each child
+```{r, message=FALSE}
+# Select just the MCDI words from the Words and Sentences Table
+ws.vocab.words <- as.data.frame(select(ws.table,
+                                       basetable_ptr_id,
+                                       col_baabaa:col_connthen)) %>%
+  rename(id = basetable_ptr_id) %>% # Rename the id
+  gather(word,produces,col_baabaa:col_connthen) %>% # Arrange in longform
+  mutate(word = str_replace(word, "col_", "")) # Strip off col_ from words
+ws.vocab.words <- as.tbl(ws.vocab.words)
+
+# The child by word representation
+print(ws.vocab.words)
+
+# Compute a productive vocabulary for each child
+ws.scores <- as.tbl(ws.vocab.words %>%
+  group_by(id) %>% # Group by child
+  summarise(productive = sum(produces))) # Compute productive vocabulary
+  
+# The child by productive vocabulary representation
+print(ws.scores)
+```
+
+Load Demographic data for each child
+```{r, message=FALSE}
+# Get the age of each child
+admins <- admin.table %>%
+  select(data_id,child_id,age,source_id) %>%
+  rename(id = data_id, child.id = child_id,source.id = source_id) 
+admins <- as.data.frame(admins)
+
+# Get demographic variables for each child
+demos <- select(child.table,id,gender,mom_ed,birth_order) %>%
+  rename(child.id = id) # Rename id fields
+demos <- as.data.frame(demos)
+
+# Join age and demographics together
+child.data <- as.tbl(left_join(admins,demos))
+
+# Show demographics
+print(child.data)
+```
+
+Combine MDI data and demographics
+```{r, message=FALSE}
+ws.data <- left_join(ws.scores, child.data) %>%
+  filter(age >= 16 & age <= 30, # filter down to just relevant range
+         source.id == 1) %>% # Just the original norming data
+  select(-child.id,-source.id) #drop redundant columns
+```
+
+Compute productive vocabulary norms for original norming data
+```{r, message=FALSE}
+## Functions for bootstrapping 95% confidence intervals
+na.median <- function(x) {median(x,na.rm=T)}
+theta <- function(x,xdata,na.rm=T) {median(xdata[x],na.rm=na.rm)}
+ci.low <- function(x,na.rm=T) {
+  median(x,na.rm=na.rm) - 
+    quantile(bootstrap(1:length(x),1000,theta,x,na.rm=na.rm)$thetastar,
+             .025,na.rm=na.rm)}
+ci.high <- function(x,na.rm=T) {
+  quantile(bootstrap(1:length(x),1000,theta,x,na.rm=na.rm)$thetastar,
+           .975,na.rm=na.rm) - median(x,na.rm=na.rm)}
+
+productive.vocab <- ws.data %>%
+  group_by(age,gender) %>%
+  summarise(
+    median = median(productive),
+    ci.l = ci.low(productive),
+    ci.h = ci.high(productive),
+    n = n())
+
+#Show productive vocabulary estimates
+head(productive.vocab)
+```
+
+Plot Mean Productive Vocabularies
+```{r, message=FALSE}
+quartz(width=6,height=4)
+ggplot(productive.vocab,
+       aes(x=age, y=median,colour=gender,label=gender))+
+  geom_pointrange(aes(ymin = median-ci.l,
+                      ymax = median+ci.h),
+                  size = .8,
+                  show_guide = FALSE) +
+  geom_line(size=1) +
+  scale_x_continuous(breaks=seq(16,30,1),limits=c(16,30.5),
+                     name = "Age (months)")+
+  scale_y_continuous(name = "Median Productive Vocabulary Size",
+                     limits=c(0,680)) +
+  theme_bw(base_size=14) +
+  theme(legend.position="none") +
+  geom_dl(method=list(dl.trans(x=x +.2),"last.qp",cex=1)) +
+  scale_color_manual(values = c("#e41a1c","#377eb8"))
+```

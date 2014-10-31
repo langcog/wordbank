@@ -8,15 +8,15 @@ shinyUI(fluidPage(
   
   sidebarLayout(
     sidebarPanel(
-      sliderInput("age", 
+      sliderInput("age",
                   h4("Age (months)"), 
-                  min = 16,  max = 30, value = 16),
+                  min = 16,  max = 30, value = 20),
       sliderInput("freq", 
                   h4("Minimum Frequency"), 
-                  min = 1,  max = 100, value = 50),
+                  min = 1,  max = 100, value = 10),
       sliderInput("max", 
                   h4("Maximum Number of Words"), 
-                  min = 1,  max = 100,  value = 20)),
+                  min = 1,  max = 200,  value = 150)),
     
       # Show a plot of the generated distribution
       mainPanel(
