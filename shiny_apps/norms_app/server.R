@@ -65,8 +65,9 @@ kid.words <- left_join(kid.words, child.data)
 
 lims <- data.frame(instrument = c("WG","WS"),
                    x.min = c(8,16),
-                   x.max = c(16,30),
+                   x.max = c(18,30),
                    y.max = c(396,680))
+
                    
 
 ############ STUFF THAT RUNS WHEN USER LOADS PAGE ##############
@@ -104,4 +105,15 @@ shinyServer(function(input, output) {
            lims$x.max[lims$instrument == input$instrument]))
 
   })
+
+  ### FIELD SELECTOR
+  output$field_selector_control <- renderUI({
+    if (input$instrument == "WG") {
+      fields <- list("Understands" = "understands", "Produces" = "produces")
+    } else if (input$instrument == "WS") {
+      fields <- list("Produces" = "produces")
+    }
+    selectInput("measure", h4("Measure"), fields, selectize = TRUE)
+  })
+
 })
