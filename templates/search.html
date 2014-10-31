@@ -10,15 +10,6 @@
             <div class="row">
                 <div class="col-sm-12 col-md-6" style="padding-right:20px; border-right: 1px solid #ccc;">
                     <div class = "form-group">
-                        <label for="dob1" class="col-sm-4 control-label">Date of Birth Range</label>
-                        <div class = "col-sm-3">
-                            <input type="text" name="dob1" placeholder="YYYY">
-                        </div>
-                        <div class = "col-sm-3 col-sm-offset-1">
-                            <input type="text" name="dob2" placeholder="YYYY">
-                        </div>
-                    </div>
-                    <div class = "form-group">
                         <div class = "col-sm-offset-2 col-sm-4">
                             <div class = "checkbox">
                                 <label>
@@ -34,8 +25,38 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-6">
+                    <div class = "form-group">
+                        <label for="data_age1" class="col-sm-4 control-label">Data Age Range</label>
+                        <div class = "col-sm-3">
+                            <label type="text" name="data_age1" class="slider2Value" data-index="0" value="0">
+                        </div>
+                        <div class = "col-sm-3 col-sm-offset-1">
+                            <label type="text" name="data_age2" class="slider2Value" data-index="1" value="3">
+                        </div>
+                        <br>
+                        <br>
+                        <div class = "col-sm-8 col-sm-offset-2" id = "slider2"></div>
+                        <script>
+                            $("#slider2").slider({
+                                min: 0,
+                                max: 10,
+                                step: 1,
+                                values: [0, 3],
+                                slide: function(event, ui) {
+                                    for (var i = 0; i < ui.values.length; ++i) {
+                                        $("input.slider2Value[data-index=" + i + "]").val(ui.values[i]);
+                                    }
+                                }
+                            });
+
+                            $("input.slider2Value").change(function() {
+                                var $this = $(this);
+                                $("#slider2").slider("values", $this.data("index"), $this.val());
+                            });
+                        </script>
+                     </div>
+                 </div>
+                 <div class="col-sm-12 col-md-6">
                     <div class = "form-group">
                         <label for="source_name" class="col-sm-4 control-label">Source Name</label>
                         <div class = "col-sm-3">
@@ -59,37 +80,7 @@
                         <div class = "col-sm-6">
                         </div>
                     </div>
-                    <div class = "form-group">
-                        <label for="data_age1" class="col-sm-4 control-label">Data Age Range</label>
-                        <div class = "col-sm-3">
-                            <input type="text" name="data_age1" class="slider2Value" data-index="0" value="0">
-                        </div>
-                        <div class = "col-sm-3 col-sm-offset-1">
-                            <input type="text" name="data_age2" class="slider2Value" data-index="1" value="3">
-                        </div>
-                        <br>
-                        <br>
-                        <div class = "col-sm-8 col-sm-offset-2" id = "slider2"></div>
-                        <script>
-                            $("#slider2").slider({
-                                min: 0,
-                                max: 10,
-                                step: 1,
-                                values: [0, 3],
-                                slide: function(event, ui) {
-                                    for (var i = 0; i < ui.values.length; ++i) {
-                                        $("input.slider2Value[data-index=" + i + "]").val(ui.values[i]);
-                                    }
-                                }
-                            });
-
-                            $("input.slider2Value").change(function() {
-                                var $this = $(this);
-                                $("#slider2").slider("values", $this.data("index"), $this.val());
-                            });
-                        </script>
-                    </div>
-                </div>
+                 </div>
             </div>
         </div>
         <p align = "center">
