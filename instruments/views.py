@@ -18,3 +18,15 @@ class Stats(View):
 
   def get(self, request):
     return render(request, 'stats.html', {'data': []})
+
+class Download(View):
+
+  def get(self, request):
+    all_admin, instrument_class = helper.search(request.GET)
+    response = HttpResponse(content_type='text/csv')
+    response['Content-Disposition'] = 'attachment; filename="wordbank_data.csv"'
+    writer = csv.writer(response)
+    print all_admin
+    for admin in list(all_admin):
+      writer.writerow([admin.pk])
+    return response

@@ -52,3 +52,28 @@ def get_production_comprehension_vals(instrument_name, val):
     production = 1 if val == 2 else 0
   return (production, comprehension)
 
+def search(request):
+  all_admin = Administration.objects.all()
+  instrument_class = WS
+  if 'instrument' in request:
+    all_admin = all_admin.filter(instrument__name=((request['instrument'])))
+    for subclass in BaseTable.__subclasses__():
+      if request['instrument'] == subclass.__name__:
+        instrument_class = subclass
+  if 'dob1' in request:
+    all_admin = all_admin.filter(child__date_of_birth__gte=(request['dob1']))
+  if 'dob2' in request:
+    all_admin = all_admin.filter(child__date_of_birth__lte=(request['dob2']))
+  if 'source_name' in request:
+    all_admin = all_admin.filter(Source__name=(request['source_name']))
+  if 'gender' in request:
+    all_admin.filter(gender = request['gender'])
+  if 'mom_ed1' in request:
+    q = (request['mom_ed1'])
+    if q is not None and q != '':
+      all_admin = all_admin.filter(child__mom_ed__gte=int((request['mom_ed1'])))
+  if 'mom_ed2' in request:
+    q = (request['mom_ed2'])
+    if q is not None and q != '':
+      all_admin = all_admin.filter(child__mom_ed__lte=int((request['mom_ed2'])))
+  return all_admin, instrument_class 
