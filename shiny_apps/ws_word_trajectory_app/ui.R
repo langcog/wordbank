@@ -1,7 +1,7 @@
 library(shiny)
 library(stringr)
 # wscodes <- read.csv("~/Projects/Wordbank/wordbank/Ranalysis/word_trajectory_app/WS_codes.csv")
-wscodes <- read.csv("WS_codes.csv")
+wscodes <- read.csv("../WS_codes.csv")
 wscodes <- wscodes[order(wscodes[,1]),]
 
 words <- list()
