@@ -5,180 +5,109 @@
     <link rel="stylesheet" href={% static "css/search.css" %}>
     <link rel="stylesheet" href={% static "third_party/jquery-ui-1.10.4/css/ui-lightness/jquery-ui-1.10.4.css" %}>
     <script type="text/javascript" src={% static "third_party/jquery-ui-1.10.4/js/jquery-ui-1.10.4.js" %}></script>
-    <form class="form-horizontal" role="form" method = "GET">
+    <form action="/download" id='search_form' class="form-horizontal" role="form" method = "GET">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12 col-md-6" style="padding-right:20px; border-right: 1px solid #ccc;">
                     <div class = "form-group">
-                        <label for="dob1" class="col-sm-4 control-label">Date of Birth Range</label>
-                        <div class = "col-sm-3">
-                            <input type="text" name="dob1" placeholder="YYYY">
-                        </div>
-                        <div class = "col-sm-3 col-sm-offset-1">
-                            <input type="text" name="dob2" placeholder="YYYY">
-                        </div>
-                    </div>
-                    <div class = "form-group">
-                        <label for="mom_ed1" class="col-sm-4 control-label">Mother's Ed. Range</label>
-                        <div class = "col-sm-3">
-                            <input type="text" name = "mom_ed1" class="slider1Value" data-index="0" value="0" />
-                        </div>
-                        <div class = "col-sm-3 col-sm-offset-1">
-                            <input type="text" name = "mom_ed2" class="slider1Value" data-index="1" value="12" />
-                        </div>
-                        <br>
-                        <br>
-                        <div class = "col-sm-8 col-sm-offset-2" id="slider1"></div>
-                        <script>
-                            $("#slider1").slider({
-                                min: 0,
-                                max: 16,
-                                step: 1,
-                                values: [0, 12],
-                                slide: function(event, ui) {
-                                    for (var i = 0; i < ui.values.length; ++i) {
-                                        $("input.slider1Value[data-index=" + i + "]").val(ui.values[i]);
-                                    }
-                                }
-                            });
-
-                            $("input.slider1Value").change(function() {
-                                var $this = $(this);
-                                $("#slider1").slider("values", $this.data("index"), $this.val());
-                            });
-                        </script>
-                    </div>
-                    <div class = "form-group">
-                        <label for="gest_age1" class="col-sm-4 control-label">Gest. Age Range</label>
-                        <div class = "col-sm-3">
-                            <input type="text" name = "gest_age1" class="sliderValue" data-index="0" value="0" />
-                        </div>
-                        <div class = "col-sm-3 col-sm-offset-1">
-                            <input type="text" name = "gest_age2" class="sliderValue" data-index="1" value="4" />
-                        </div>
-                        <br>
-                        <br>
-                        <div class = "col-sm-8 col-sm-offset-2" id="slider"></div>
-                        <script>
-                            $("#slider").slider({
-                                min: 0,
-                                max: 10,
-                                step: 1,
-                                values: [0, 4],
-                                slide: function(event, ui) {
-                                    for (var i = 0; i < ui.values.length; ++i) {
-                                        $("input.sliderValue[data-index=" + i + "]").val(ui.values[i]);
-                                    }
-                                }
-                            });
-
-                            $("input.sliderValue").change(function() {
-                                var $this = $(this);
-                                $("#slider").slider("values", $this.data("index"), $this.val());
-                            });
-                        </script>
-                    </div>
-                    <div class = "form-group">
-                        <label for="birth_order" class="col-sm-4 control-label">Birth Order</label>
-                        <div class = "col-sm-3">
-                            <input type="text" name="birth_order" placeholder = "Number">
-                        </div>
-                        <div class = "col-sm-3">
-                        </div>
-                    </div>
-                    <div class = "form-group">
                         <div class = "col-sm-offset-2 col-sm-4">
                             <div class = "checkbox">
                                 <label>
-                                    <input type="checkbox" name="gender-m" value="m" checked>Male
+                                    <input type="checkbox" name="gender" value="m" checked>Male
                                 </label>
                             </div>
                         </div>
                         <div class = "col-sm-3">
                             <div class = "checkbox">
                                 <label>
-                                    <input type="checkbox" name="gender-f" value="f" checked>Female
+                                    <input type="checkbox" name="gender" value="f" checked>Female
                                 </label>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                    <div class = "form-group">
-                        <label for="source_name" class="col-sm-4 control-label">Source Name</label>
-                        <div class = "col-sm-3">
-                            <input type="text" name="source_name" placeholder = "Name">
-                        </div>
-                        <div class = "col-sm-3 col-sm-offset-1">
-                        </div>
-                    </div>
-                    <div class = "form-group">
-                        <label for="source_year1" class="col-sm-4 control-label">Source Year Range</label>
-                        <div class = "col-sm-3">
-                            <input type="text" name="source_year1" placeholder="From">
-                        </div>
-                        <div class = "col-sm-3 col-sm-offset-1">
-                             <input type="text" name="source_year2" placeholder="To">
                         </div>
                     </div>
                     <div class = "form-group">
                         <label for="data_age1" class="col-sm-4 control-label">Data Age Range</label>
-                        <div class = "col-sm-3">
-                            <input type="text" name="data_age1" class="slider2Value" data-index="0" value="0">
-                        </div>
-                        <div class = "col-sm-3 col-sm-offset-1">
-                            <input type="text" name="data_age2" class="slider2Value" data-index="1" value="3">
-                        </div>
+                        <div style="margin-top: 8px;" class="col-sm-6" id="age_values"></div>
+                        <input style="display: none" type="text" id="data_age1" name="data_age1" class="slider2Value" data-index="0" size='2' value="16">
+                        <input style="display: none" type="text" id="data_age2" name="data_age2" class="slider2Value" data-index="1" size='2' value="20">
                         <br>
                         <br>
                         <div class = "col-sm-8 col-sm-offset-2" id = "slider2"></div>
-                        <script>
-                            $("#slider2").slider({
-                                min: 0,
-                                max: 10,
-                                step: 1,
-                                values: [0, 3],
-                                slide: function(event, ui) {
-                                    for (var i = 0; i < ui.values.length; ++i) {
-                                        $("input.slider2Value[data-index=" + i + "]").val(ui.values[i]);
-                                    }
-                                }
-                            });
-
-                            $("input.slider2Value").change(function() {
-                                var $this = $(this);
-                                $("#slider2").slider("values", $this.data("index"), $this.val());
-                            });
-                        </script>
+                     </div>
+                 </div>
+                 <div class="col-sm-12 col-md-6">
+                    <div class = "form-group">
+                        <label for="source_name" class="col-sm-4 control-label">Source Name</label>
+                        <div class = "col-sm-3">
+                            <select name="source_name">
+                                {% for source_name in source_names %}
+                                <option value ="{{ source_name }}">{{ source_name }}</option>
+                                {% endfor %}
+                              </select>
+                        </div>
+                        <div class = "col-sm-3 col-sm-offset-1">
+                        </div>
                     </div>
                     <div class = "form-group">
                         <label for="instrument" class="col-sm-4 control-label">Instrument</label>
                         <div class = "col-sm-3">
-                            <select name="instrument">
+                            <select id="instrument" name="instrument">
                                 <option value = "WS">Words and Sentences</option>
                                 <option value = "WG">Words and Gestures</option>
-                            </select
+                            </select>
                         </div>
                         <div class = "col-sm-6">
                         </div>
                     </div>
-                </div>
+                 </div>
             </div>
         </div>
         <p align = "center">
-            <input type="submit" value="Submit" class = "button">
+            <input id="download" type="submit" value="Download" class = "button">
         </p>
     </form>
-    <table>
-    {% if data %}
-        <a href="/media/file.csv" download>Download CSV</a>
-    {% endif %}
-    {% for elem in data_dict %}
-        <tr>
-            {% for key1, value1 in elem.items %}
-                <td>{{value1}}</td>
-            {% endfor %}
-        </tr>
-    {% endfor %}
-    </table>
+<script>
+  slider_vals = {'WG': {'min': 8, 'max': 18}, 'WS': {'min': 16, 'max': 30}};
+  function update_age(ui) {
+    if (ui == null) {
+      $('#age_values').text('From ' + $( "#slider2" ).slider( "values", 0 ) + " to " + $( "#slider2" ).slider( "values", 1 ) );
+      $('#data_age1').val($('#slider2').slider("values", 0));
+      $('#data_age2').val($('#slider2').slider("values", 1));
+    } else {
+      $('#age_values').text('From ' + ui.values[0] + " to " + ui.values[1] );
+      $('#data_age1').val(ui.values[0]);
+      $('#data_age2').val(ui.values[1]);
+    }
+  }
+  var value = $('#instrument').val();
+  $("#slider2").slider({
+    range: true,
+    min: 16,
+    max: 30,
+    step: 1,
+    values: [slider_vals[value]['min'], slider_vals[value]['max']],
+    slide: function(event, ui) {
+      update_age(ui);
+    }
+  });
+  update_age(null);
+
+
+  $("#instrument").change(function() {
+    var value = $('#instrument').val();
+    $("#slider2").slider({
+      range: true,
+      min: slider_vals[value]['min'],
+      max: slider_vals[value]['max'],
+      step: 1,
+      values: [slider_vals[value]['min'], slider_vals[value]['max']],
+      slide: function(event, ui) {
+        for (var i = 0; i < ui.values.length; ++i) {
+          update_age(ui);
+        }
+      }
+    });
+    update_age(null);
+  });
+</script>
 {% endblock %}
