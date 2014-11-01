@@ -76,6 +76,7 @@ shinyServer(function(input, output) {
   ############## STUFF THAT RUNS WHEN USER CHANGES SOMETHING ##############
   output$plot <- renderPlot({
     
+    
     qs <- as.numeric(input$qsize)
     cuts <- seq(0.0,1.0, by=qs)
     kid.words <- eval(substitute(mutate(kid.words, vocab = var),
