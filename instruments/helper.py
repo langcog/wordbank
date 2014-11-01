@@ -96,6 +96,7 @@ def createCSV(writer, admins, instrument_class):
     row.append(admin.child.mom_ed)
     row.append(admin.child.ethnicity.ethnicity)
     row.append(admin.source.name)
+    row.append(admin.date_of_test)
     if not instrument_class.objects.filter(pk=admin.data_id).exists():
       continue
     obj = instrument_class.objects.get(pk=admin.data_id).__dict__
