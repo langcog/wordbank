@@ -27,33 +27,12 @@
                     </div>
                     <div class = "form-group">
                         <label for="data_age1" class="col-sm-4 control-label">Data Age Range</label>
-                        <div class = "col-sm-3">
-                            <label type="text" name="data_age1" class="slider2Value" data-index="0" value="0">
-                        </div>
-                        <div class = "col-sm-3 col-sm-offset-1">
-                            <label type="text" name="data_age2" class="slider2Value" data-index="1" value="3">
-                        </div>
+                        <div style="margin-top: 8px;" class="col-sm-6" id="age_values"></div>
+                        <input style="display: none" type="text" id="data_age1" name="data_age1" class="slider2Value" data-index="0" size='2' value="16">
+                        <input style="display: none" type="text" id="data_age2" name="data_age2" class="slider2Value" data-index="1" size='2' value="20">
                         <br>
                         <br>
                         <div class = "col-sm-8 col-sm-offset-2" id = "slider2"></div>
-                        <script>
-                            $("#slider2").slider({
-                                min: 0,
-                                max: 10,
-                                step: 1,
-                                values: [0, 3],
-                                slide: function(event, ui) {
-                                    for (var i = 0; i < ui.values.length; ++i) {
-                                        $("input.slider2Value[data-index=" + i + "]").val(ui.values[i]);
-                                    }
-                                }
-                            });
-
-                            $("input.slider2Value").change(function() {
-                                var $this = $(this);
-                                $("#slider2").slider("values", $this.data("index"), $this.val());
-                            });
-                        </script>
                      </div>
                  </div>
                  <div class="col-sm-12 col-md-6">
@@ -72,7 +51,7 @@
                     <div class = "form-group">
                         <label for="instrument" class="col-sm-4 control-label">Instrument</label>
                         <div class = "col-sm-3">
-                            <select name="instrument">
+                            <select id="instrument" name="instrument">
                                 <option value = "WS">Words and Sentences</option>
                                 <option value = "WG">Words and Gestures</option>
                             </select>
@@ -87,4 +66,40 @@
             <input id="download" type="submit" value="Download" class = "button">
         </p>
     </form>
+<script>
+  function update_age() {
+    $('#age_values').text('From ' + $( "#slider2" ).slider( "values", 0 ) + " to " + $( "#slider2" ).slider( "values", 1 ) );
+    $('data_age1').val($('#slider2').slider("values", 0));
+    $('data_age2').val($('#slider2').slider("values", 1));
+  }
+  $("#slider2").slider({
+    range: true,
+    min: 16,
+    max: 30,
+    step: 1,
+    values: [16, 20],
+    slide: function(event, ui) {
+      update_age();
+    }
+  });
+  update_age();
+
+
+  $("#instrument").change(function() {
+    var value = $('#instrument').val();
+    slider_vals = {'WG': {'min': 8, 'max': 18}, 'WS': {'min': 16, 'max': 30}};
+    $("#slider2").slider({
+      min: slider_vals[value]['min'],
+      max: slider_vals[value]['max'],
+      step: 1,
+      values: [slider_vals[value]['min'], slider_vals[value]['max']],
+      slide: function(event, ui) {
+        for (var i = 0; i < ui.values.length; ++i) {
+          update_age();
+        }
+      }
+    });
+    update_age();
+  });
+</script>
 {% endblock %}
