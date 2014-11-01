@@ -61,9 +61,12 @@ def search(request):
       if request['instrument'] == subclass.__name__:
         instrument_class = subclass
   if 'source_name' in request:
-    admins = admins.filter(Source__name=request['source_name'])
-  if 'gender' in request and (request['gender'] == 'M' or request['gender'] == 'F'):
-    admins.filter(gender = request['gender'])
+    admins = admins.filter(source__name=request['source_name'])
+  if 'gender' in request:
+    if 'M' in request['gender'] and 'F' not in  request['gender']:
+      admins.filter(gender = 'M')
+    elif 'M' not in request['gender'] and 'F' in  request['gender']:
+      admins.filter(gender = 'F')
   if 'data_age1' in request:
     q = (request['data_age1'])
     if q is not None and q != '':
