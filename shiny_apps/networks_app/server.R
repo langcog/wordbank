@@ -5,8 +5,19 @@ library(ggplot2)
 library(tidyr)
 library(stringr)
 library(igraph)
-
+library(bootstrap)
+library(directlabels)
 source("../app_themes.R")
+
+## NA functions
+na.mean <- function(x) {mean(x,na.rm=T)}
+
+## for bootstrapping 95% confidence intervals
+theta <- function(x,xdata,na.rm=T) {mean(xdata[x],na.rm=na.rm)}
+ci.low <- function(x,na.rm=T) {
+  mean(x,na.rm=na.rm) - quantile(bootstrap(1:length(x),1000,theta,x,na.rm=na.rm)$thetastar,.025,na.rm=na.rm)}
+ci.high <- function(x,na.rm=T) {
+  quantile(bootstrap(1:length(x),1000,theta,x,na.rm=na.rm)$thetastar,.975,na.rm=na.rm) - mean(x,na.rm=na.rm)}
 
 ## Load McRae word list
 mcrae.words <- read.csv("mcrae.words.csv",stringsAsFactors=FALSE) %>%
@@ -65,17 +76,17 @@ child.data <- as.tbl(left_join(admins,demos))
 
 # Join demographics to production data
 ws.data <- left_join(ws.vocab.words, child.data) %>%
-  filter(age >= 16 & age <= 30) %>% # Just the original norming data
+  filter(age >= 16 & age <= 30, gender == "M"| gender == "F") %>%
   select(-child.id,-source.id) #drop redundant columns
 
 #Find all indices of ws.data that point to cdi words
 first.ind <- which(names(ws.data)=="alligator")
 last.ind <- which(names(ws.data)=="house")
 
-c.weighted.graphs <- system.time(sapply(1:nrow(ws.data),
+c.weighted.graphs <- sapply(1:nrow(ws.data),
                             function(c){make.weighted.graph(c,c.assoc.mat,
                                                             first.ind,
-                                                            last.ind)}))
+                                                            last.ind)})
 
 
 coeffs <- lapply(c.weighted.graphs,
@@ -86,30 +97,44 @@ diams <- lapply(c.weighted.graphs,
                   FUN=function(x){ifelse(is.na(x),NA,diameter(x))})
 ws.data$diam <- sapply(diams,function(x){unlist(x)[1]})
 
+network.stats <- ws.data %>%
+  select(id,age,gender,mom_ed,birth_order,coeff,diam)
+
+network.stats$birth_order <- ifelse(network.stats$birth_order == 1, "First Born",
+                                   "Later Born")
+network.stats$mom_ed = cut(network.stats$mom_ed, breaks = c(0,12,16,18,30),
+                           labels = c("Some Highschool","Highschool",
+                                      "College", "Advanced Degree"))
+
 shinyServer(function(input, output) {
-  
-  n.measure <- input$n.measure
-  demo.var <- input$demo.var
-  
-  network.stats <- ws.data %>%
-    regroup(c("age",as.symbol(demo.var))) %.%
-  
-  ddd <- kid.words %>% 
-    filter(!is.na(vocab), 
-           instrument == input$instrument) %>% 
-    filter(age == input$age) %>%
-    group_by(age) %>%
-    mutate(p = rank(vocab)/length(vocab),
-           q = cut(p, breaks=cuts, 
-                   labels=cuts[2:length(cuts)]-qs/2))
-  
+
   output$plot <- renderPlot({
-    with(subset(wordle.data, wordle.data$age==input$age),
-         wordcloud_rep(word,floor(vocab*100),
-                       scale=c(1.5,.02),
-                       min.freq = input$freq, 
-                       max.words=input$max,
-                       colors=brewer.pal(8, "Dark2")))
+    
+    measure <- input$n.measure
+    demo.var <- input$demo.var
+    
+    data <- eval(substitute(mutate(network.stats, demo.var = var),
+                                 list(var = as.name(demo.var))))
+    data <- eval(substitute(mutate(data, measure = var),
+                            list(var = as.name(measure))))
+    
+    data <- data %>%
+      group_by(age,demo.var) %>%
+      summarise_each(funs(na.mean,ci.high,ci.low),c(measure))
+    
+    ggplot(data, aes(x=age, y=na.mean,colour=demo.var,label=demo.var,
+                      fill=demo.var))+
+      geom_pointrange(aes(ymin =na.mean-ci.low,
+                          ymax =na.mean+ci.high),
+                      size = .8) +
+      geom_line(size=1) +
+      scale_x_continuous(breaks=seq(16,30,2),
+                         limits=c(16,30.5),
+                         name = "Age (months)")+
+      scale_y_continuous(name = "Mean Measure Value") +
+      theme_bw(base_size=14) + 
+      theme(legend.title=element_blank()) +
+      scale_colour_brewer(palette="Set1") 
   })
   
 })
