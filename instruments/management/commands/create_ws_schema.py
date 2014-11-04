@@ -4,7 +4,7 @@ import xlrd
 class Command(NoArgsCommand):
 
   def handle(self, *args, **options):
-    book = xlrd.open_workbook('raw_data/CDI-WS-2.xlsx')
+    book = xlrd.open_workbook('raw_data/CDI-WS.xlsx')
 
     sh = book.sheet_by_index(0)
     nrows = sh.nrows

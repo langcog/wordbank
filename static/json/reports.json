@@ -9,10 +9,14 @@
 },
 {
   "app_name": "Individual Word Production (WS)", 
-  "app_directory": "hists_app"
+  "app_directory": "ws_word_trajectory_app"
 },
 {
   "app_name": "Word Cloud", 
   "app_directory": "wordle_app"
+},
+{
+  "app_name": "Semantic Networks",
+  "app_directory": "networks_app"
 }
 ]
