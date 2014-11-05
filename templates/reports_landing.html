@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href={% static "third_party/dc.css" %}>
+<link rel="stylesheet" href={% static "css/reports.css" %}>
+
+<h3 align="center">Reports</h3>
+<br>
+
+<div id="apps">
+</div>
+
+<script>
+    $.getJSON("static/json/reports.json", function(data) {
+//              var reports_ul = $('#apps');
+              var apps = $('#apps');
+              var row = $('<div>').attr('class', "row").appendTo(apps);
+              for (var i in data) {
+                if (i+1 % 3 == true) {
+                  var row = $('<div>').attr('class', "row").appendTo(apps);
+                };
+                var col = $('<div>').attr('class', "col-md-4").attr('align', "center").appendTo(row);
+                var app = data[i];
+//                console.log(reports_ul)
+//                var li = $('<li>').appendTo(reports_ul);
+                var rep = $('<p>').attr('class', "reportName").appendTo(col);
+                var link = $('<a>').attr('href', '/reports?id=' + app['app_directory']).text(app['app_name']).appendTo(rep);
+                var brk = $('<br>').appendTo(col);
+                var img = $('<img>').attr('src', app['app_sample_plot']).appendTo(link);
+              };
+              }).error(function(error){console.log(error);}).fail(function () { console.log(arguments); });
+</script>
+
+{% endblock %}
+
