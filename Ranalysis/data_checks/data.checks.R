@@ -16,11 +16,11 @@ library(RSQLite.extfuns)
 library(RMySQL)
 
 # connect to local databse
-wordbank <- src_sqlite('wordbank.sqlite')
-wordbank <- src_mysql(dbname='wordbank')
+#wordbank <- src_sqlite('wordbank.sqlite')
+#wordbank <- src_mysql(dbname='wordbank')
 
-#wordbank <- src_mysql(dbname='wordbank',host="54.200.250.120", 
-#                      user="wordbank",password="wordbank")
+wordbank <- src_mysql(dbname='wordbank',host="54.200.225.86", 
+                      user="wordbank",password="wordbank")
 
 # load all tables
 admin.table <- tbl(wordbank,"common_administration")
@@ -138,24 +138,22 @@ ws.age.gender.cat.summary <- ws.cat.data %>% group_by(gender, age, category) %>%
             ci.h = ci.high(productive),
             productive = mean(productive))
 
+ws.source.age.cat.summary <- ws.cat.data %>% group_by(name, age, category) %>%
+  filter(name != 'Indiana University, Bloomington') %>%
+  summarise(ci.l = ci.low(productive),
+            ci.h = ci.high(productive),
+            productive = mean(productive))
+
 ws.source.summary <- ws.vocab.data %>% group_by(name) %>%
   summarise(n = n(),
             ci.l = ci.low(productive),
             ci.h = ci.high(productive),
             productive = mean(productive))
 
-quartz(width=6,height=4)
-ggplot(ws.age.gender.summary, 
-       aes(x=age, y=mean,colour=gender,label=gender))+
-  geom_pointrange(aes(ymin = mean-ci.l,
-                      ymax = mean+ci.h),
-                  size = .8,
-                  show_guide = FALSE) +
-  geom_line(size=1) +
-  scale_x_continuous(breaks=seq(16,30,1),limits=c(16,30.5),
-                     name = "Age (months)")+
-  scale_y_continuous(name = "Vocabulary Size (words)",limits=c(0,680)) +
-  theme_bw(base_size=14) +
-  theme(legend.position="none") +
-  geom_dl(method=list("last.qp",cex=1,hjust=-.5)) +
-  scale_color_manual(values = c("#e41a1c","#377eb8"))
+ws.indiana.age.summary <- ws.vocab.data %>%
+  filter(name=="Indiana University, Bloomington") %>%
+  group_by(age) %>%
+  summarise(n = n(),
+            ci.l = ci.low(productive),
+            ci.h = ci.high(productive),
+            productive = mean(productive))
