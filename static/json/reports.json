@@ -1,22 +1,27 @@
 [
 {
   "app_name": "Vocabulary Norms", 
-  "app_directory": "norms_app"
+  "app_directory": "norms_app",
+  "app_sample_plot": "static/images/sample_plots/norms.png"
 },
 {
   "app_name": "Vocabulary Distribution", 
-  "app_directory": "hists_app"
+  "app_directory": "hists_app",
+  "app_sample_plot": "static/images/sample_plots/hists.png"
 },
 {
   "app_name": "Individual Word Production (WS)", 
-  "app_directory": "ws_word_trajectory_app"
+  "app_directory": "ws_word_trajectory_app",
+  "app_sample_plot": "static/images/sample_plots/ws_word_trajectory.png"
 },
 {
   "app_name": "Word Cloud", 
-  "app_directory": "wordle_app"
+  "app_directory": "wordle_app",
+  "app_sample_plot": "static/images/sample_plots/wordle.png"
 },
 {
   "app_name": "Semantic Networks",
-  "app_directory": "networks_app"
+  "app_directory": "networks_app",
+  "app_sample_plot": "static/images/sample_plots/networks.png"
 }
 ]
