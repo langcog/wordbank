@@ -39,6 +39,10 @@ shinyUI(fluidPage(
 
     # Show a plot of the generated distribution
       mainPanel(
+        tags$style(type="text/css",
+                   ".shiny-output-error { visibility: hidden; }",
+                   ".shiny-output-error:before { visibility: hidden; }"
+        ),
         plotOutput("plot")
       )
     )
