@@ -100,27 +100,29 @@ ws.data$diam <- sapply(diams,function(x){unlist(x)[1]})
 network.stats <- ws.data %>%
   select(id,age,gender,mom_ed,birth_order,coeff,diam)
 
-network.stats$birth_order <- ifelse(network.stats$birth_order == 1, "First Born",
+network.stats$birth_order <- ifelse(network.stats$birth_order == 1, 
+                                    "First Born",
                                    "Later Born")
-network.stats$mom_ed = cut(network.stats$mom_ed, breaks = c(0,12,16,18,30),
-                           labels = c("Some Highschool","Highschool",
-                                      "College", "Advanced Degree"))
+network.stats$mom_ed = cut(network.stats$mom_ed, 
+                           breaks = c(0,11.5,15.5,16.5,20),
+                           labels = c("Primary School","Highschool",
+                                      "College", "Graduate School"))
 
 shinyServer(function(input, output) {
-
+  
   output$plot <- renderPlot({
     
-    measure <- input$n.measure
+    measure.var <- input$n.measure
     demo.var <- input$demo.var
     
-    data <- eval(substitute(mutate(network.stats, demo.var = var),
-                                 list(var = as.name(demo.var))))
-    data <- eval(substitute(mutate(data, measure = var),
-                            list(var = as.name(measure))))
-    
+    data <- eval(substitute(mutate(network.stats, 
+                                   demo.var = demo.var.name,
+                                   measure.var = measure.var.name),
+                                 list(demo.var.name = as.name(demo.var),
+                                      measure.var.name = as.name(measure.var))))
     data <- data %>%
       group_by(age,demo.var) %>%
-      summarise_each(funs(na.mean,ci.high,ci.low),c(measure))
+      summarise_each(funs(na.mean,ci.high,ci.low),c(measure.var))
     
     ggplot(data, aes(x=age, y=na.mean,colour=demo.var,label=demo.var,
                       fill=demo.var))+
