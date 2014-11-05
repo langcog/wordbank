@@ -27,7 +27,7 @@
                 var rep = $('<p>').attr('class', "reportName").appendTo(col);
                 var link = $('<a>').attr('href', '/reports?id=' + app['app_directory']).text(app['app_name']).appendTo(rep);
                 var brk = $('<br>').appendTo(col);
-                var img = $('<img>').attr('src', app['app_sample_plot']).appendTo(col);
+                var img = $('<img>').attr('src', app['app_sample_plot']).appendTo(link);
               };
               }).error(function(error){console.log(error);}).fail(function () { console.log(arguments); });
 </script>
