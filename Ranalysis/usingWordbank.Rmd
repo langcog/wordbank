@@ -4,14 +4,15 @@ author: "Dan Yurovsky"
 date: "Oct 29, 2014"
 output: html_document
 ---
-
-Load Required Libraries
+  
+  Load Required Libraries
 ```{r, message=FALSE}
 # clear all previous variables
 rm(list=ls())
 
 #load libraries for data manipulation and graphing
 library(dplyr)
+library(plyr)
 library(directlabels)
 library(RMySQL)
 library(tidyr)
@@ -41,7 +42,7 @@ Load MCDI data for each child
 ws.vocab.words <- as.data.frame(select(ws.table,
                                        basetable_ptr_id,
                                        col_baabaa:col_connthen)) %>%
-  rename(id = basetable_ptr_id) %>% # Rename the id
+  rename(c(basetable_ptr_id = 'id')) %>% # Rename the id
   gather(word,produces,col_baabaa:col_connthen) %>% # Arrange in longform
   mutate(word = str_replace(word, "col_", "")) # Strip off col_ from words
 ws.vocab.words <- as.tbl(ws.vocab.words)
@@ -50,10 +51,15 @@ ws.vocab.words <- as.tbl(ws.vocab.words)
 print(ws.vocab.words)
 
 # Compute a productive vocabulary for each child
-ws.scores <- as.tbl(ws.vocab.words %>%
-  group_by(id) %>% # Group by child
-  summarise(productive = sum(produces))) # Compute productive vocabulary
-  
+
+# Brock: doesn't run properly for me... collapses to one row
+
+#  ws.scores <- as.tbl(ws.vocab.words %>%
+#   group_by(id) %>% # Group by child
+#   summarise(productive = sum(produces))) # Compute productive vocabulary
+
+ws.scores <- ddply(ws.vocab.words, .(id), summarize, productive = sum(produces))
+
 # The child by productive vocabulary representation
 print(ws.scores)
 ```
@@ -62,14 +68,12 @@ Load Demographic data for each child
 ```{r, message=FALSE}
 # Get the age of each child
 admins <- admin.table %>%
-  select(data_id,child_id,age,source_id) %>%
-  rename(id = data_id, child.id = child_id,source.id = source_id) 
-admins <- as.data.frame(admins)
+  as.data.frame(select(data_id,child_id,age,source_id)) %>%
+  rename(c(child_id = 'child.id', source_id = 'source.id'))
 
 # Get demographic variables for each child
-demos <- select(child.table,id,gender,mom_ed,birth_order) %>%
-  rename(child.id = id) # Rename id fields
-demos <- as.data.frame(demos)
+demos <- as.data.frame(select(child.table,id,gender,mom_ed,birth_order)) %>%
+  rename(c(id = 'child.id')) # Rename id fields
 
 # Join age and demographics together
 child.data <- as.tbl(left_join(admins,demos))
@@ -80,7 +84,7 @@ print(child.data)
 
 Combine MDI data and demographics
 ```{r, message=FALSE}
-ws.data <- left_join(ws.scores, child.data) %>%
+ws.data <- left_join(child.data, ws.scores) %>%
   filter(age >= 16 & age <= 30, # filter down to just relevant range
          source.id == 1) %>% # Just the original norming data
   select(-child.id,-source.id) #drop redundant columns
@@ -99,13 +103,18 @@ ci.high <- function(x,na.rm=T) {
   quantile(bootstrap(1:length(x),1000,theta,x,na.rm=na.rm)$thetastar,
            .975,na.rm=na.rm) - median(x,na.rm=na.rm)}
 
-productive.vocab <- ws.data %>%
-  group_by(age,gender) %>%
-  summarise(
-    median = median(productive),
-    ci.l = ci.low(productive),
-    ci.h = ci.high(productive),
-    n = n())
+# Brock: doesn't run properly for me... collapses to one row
+#productive.vocab <- ws.data %>%
+#  group_by(age,gender) %>%
+#  summarise(
+#    median = median(productive),
+#    ci.l = ci.low(productive),
+#    ci.h = ci.high(productive),
+#    n = length(productive))
+
+#ws.data$gender <- factor(ws.data$gender)
+
+productive.vocab <- ddply(ws.data, .(age,gender), summarize, median = na.median(productive), ci.l = ci.low(productive), ci.h = ci.high(productive), n = length(productive))
 
 #Show productive vocabulary estimates
 head(productive.vocab)
