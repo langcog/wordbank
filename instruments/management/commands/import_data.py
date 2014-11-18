@@ -12,7 +12,7 @@ class Command(NoArgsCommand):
         path_to_data_file = args[0]
         data_file = os.path.splitext(os.path.basename(path_to_data_file))[0]
 
-        instrument = os.path.splitext(args[0])[0].split('/')[-2]
+        instrument = os.path.splitext(path_to_data_file)[0].split('/')[-2]
         instrument_model = getattr(instruments.models, instrument)
 
         import_helper = ImportHelper(path_to_data_file, data_file, instrument_model)
