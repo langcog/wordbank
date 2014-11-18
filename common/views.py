@@ -40,6 +40,10 @@ class Reports(View):
     else:
         return render(request, 'reports_landing.html', {})
 
+class Blog(View):
+
+  def get(self, request):
+    return render(request, 'blog.html', {})
 
 class Survey(View):
   def get(self, request):
