@@ -16,6 +16,7 @@ urlpatterns = patterns('',
     url(r'contribute', Contribute.as_view(), name='contribute'),
     url(r'survey', Survey.as_view(), name='survey'),
     url(r'download', Download.as_view(), name='download'),
+    url(r'blog', Blog.as_view(), name='blog'),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
