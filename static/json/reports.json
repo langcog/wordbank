@@ -10,9 +10,9 @@
   "app_sample_plot": "static/images/sample_plots/hists.png"
 },
 {
-  "app_name": "Individual Word Production (WS)", 
-  "app_directory": "ws_word_trajectory_app",
-  "app_sample_plot": "static/images/sample_plots/ws_word_trajectory.png"
+  "app_name": "Individual Word Trajectories", 
+  "app_directory": "word_trajectory_app",
+  "app_sample_plot": "static/images/sample_plots/word_trajectory.png"
 },
 {
   "app_name": "Word Cloud", 
