@@ -41,8 +41,8 @@ ws.kid.words <- ws.vocab.words %>%
 
 wg.kid.words <- wg.vocab.words %>%
   gather(word,produces,col_baabaa:col_some) %>%
-  mutate(understands = (produces == 1),
-    produces = (produces ==2))
+  mutate(understands = (produces >= 1),
+    produces = (produces == 2))
 
 ## MERGE IN KID DATA
 admins <- as.data.frame(select(admin.table,data_id,child_id,age)) %>%
