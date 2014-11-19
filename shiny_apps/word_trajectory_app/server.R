@@ -5,6 +5,7 @@ library(dplyr)
 library(RMySQL)
 library(directlabels)
 library(tidyr)
+library(stringr)
 source("../app_themes.R")
 
 # READ IN ENGLISH LABELS FOR WORDS
