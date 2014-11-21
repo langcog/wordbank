@@ -41,8 +41,8 @@ ws.kid.words <- ws.vocab.words %>%
 
 wg.kid.words <- wg.vocab.words %>%
   gather(word,produces,col_baabaa:col_some) %>%
-  mutate(understands = (produces == 1),
-    produces = (produces ==2))
+  mutate(understands = (produces >= 1),
+    produces = (produces == 2))
 
 ## MERGE IN KID DATA
 admins <- as.data.frame(select(admin.table,data_id,child_id,age)) %>%
@@ -113,6 +113,8 @@ shinyServer(function(input, output) {
       group_by(age,word) %>%
       summarise(p = mean(produces))
     
+    label = "Proportion of Children Producing"
+    
     xlims = c(16,32)
     xbreaks = 16:30
     
@@ -125,8 +127,10 @@ shinyServer(function(input, output) {
       
       if(input$measure=="understands"){
         data <- summarise(data,p=mean(understands))
+        label <- "Proportion of Children Understanding"
       } else {
         data <- summarise(data,p=mean(produces))
+        label <- "Proportion of Children Producing" 
       }
       
       xlims = c(8,20)
@@ -139,7 +143,7 @@ shinyServer(function(input, output) {
       scale_x_continuous(breaks=xbreaks,
                          limits=xlims,
                          name = "Age (months)")+
-      scale_y_continuous(name = "Proportion of Children Producing",
+      scale_y_continuous(name = label,
                          limits=c(-.01,1),
                          breaks=seq(0,1,.25)) +
       theme_bw(base_size=14) + 
