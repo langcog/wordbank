@@ -14,7 +14,6 @@
 
 <script>
     $.getJSON("static/json/reports.json", function(data) {
-//              var reports_ul = $('#apps');
               var apps = $('#apps');
               var row = $('<div>').attr('class', "row").appendTo(apps);
               for (var i in data) {
@@ -23,8 +22,6 @@
                 };
                 var col = $('<div>').attr('class', "col-md-4").attr('align', "center").appendTo(row);
                 var app = data[i];
-//                console.log(reports_ul)
-//                var li = $('<li>').appendTo(reports_ul);
                 var rep = $('<p>').attr('class', "reportName").appendTo(col);
                 var link = $('<a>').attr('href', '/reports?id=' + app['app_directory']).text(app['app_name']).appendTo(rep);
                 var brk = $('<br>').appendTo(col);
