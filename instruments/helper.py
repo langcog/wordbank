@@ -94,7 +94,10 @@ def createCSV(writer, admins, instrument_class):
     row.append(admin.child.date_of_birth)
     row.append(admin.age)
     row.append(admin.child.mom_ed)
-    row.append(admin.child.ethnicity.ethnicity)
+    if admin.child.ethnicity is not None:
+      row.append(admin.child.ethnicity.ethnicity)
+    else:
+      row.append('unknown')
     row.append(admin.source.name)
     row.append(admin.date_of_test)
     if not instrument_class.objects.filter(pk=admin.data_id).exists():
