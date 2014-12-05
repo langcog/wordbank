@@ -23,18 +23,22 @@ class Command(NoArgsCommand):
             for row in xrange(1, sheet.nrows):
 
                 row_values = list(sheet.row_values(row))
-                column = row_values[col_names.index('column')]
-                definition = row_values[col_names.index('definition')]
-                category = row_values[col_names.index('category')]
-                lang_lemma = row_values[col_names.index('lang_lemma')]
-                uni_lemma = row_values[col_names.index('uni_lemma')]
+                item_type = row_values[col_names.index('type')]
 
-                if not WordInfo.objects.filter(uni_lemma=uni_lemma, lang_lemma=lang_lemma).exists():
-                    WordInfo.objects.create(uni_lemma=uni_lemma, lang_lemma=lang_lemma)
-                word_info = WordInfo.objects.get(uni_lemma=uni_lemma, lang_lemma=lang_lemma)
+                if item_type == 'word':
 
-                WordMapping.objects.create(column=column,
-                                           definition=definition,
-                                           category=category,
-                                           instrument=instruments_map,
-                                           word_info=word_info)
+                    item = row_values[col_names.index('item')]
+                    category = row_values[col_names.index('category')]
+                    lang_lemma = row_values[col_names.index('lang_lemma')]
+                    uni_lemma = row_values[col_names.index('uni_lemma')]
+                    definition = row_values[col_names.index('definition')]
+
+                    if not WordInfo.objects.filter(uni_lemma=uni_lemma, lang_lemma=lang_lemma).exists():
+                        WordInfo.objects.create(uni_lemma=uni_lemma, lang_lemma=lang_lemma)
+                    word_info = WordInfo.objects.get(uni_lemma=uni_lemma, lang_lemma=lang_lemma)
+
+                    WordMapping.objects.create(item=item,
+                                               definition=definition,
+                                               category=category,
+                                               instrument=instruments_map,
+                                               word_info=word_info)

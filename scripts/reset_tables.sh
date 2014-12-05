@@ -1,5 +1,5 @@
-echo "Creating instrument schemas..."
-./manage.py create_instrument_schemas
+#echo "Creating instrument schemas..."
+#./manage.py create_instrument_schemas
 
 echo "Deleting old tables..."
 ./manage.py delete_all_tables
@@ -10,9 +10,6 @@ echo "Initializing new tables..."
 echo "Populating Word Mapping..."
 ./manage.py populate_word_mapping
 
-echo "Populating Ethnicity..."
-./manage.py populate_ethnicity
-
 echo "Populating Source..."
 ./manage.py populate_source
 
@@ -21,9 +18,9 @@ while read instrument; do
         s=${data_file}
         s=${s##*/}
         s=${s%.*}
-        if [[ $s != '['*']' ]]; then
+        if [[ $s != '['*']' ]] && [[ $s != '~'* ]]; then
             echo "Importing $s..."
-                ./manage.py import_data ${data_file}
+#                ./manage.py import_data ${data_file}
         fi
     done
 done < raw_data/instruments.txt
