@@ -1,5 +1,6 @@
 from django.core.management.base import NoArgsCommand
 import xlrd
+import string
 
 
 class Command(NoArgsCommand):
@@ -30,7 +31,9 @@ class Command(NoArgsCommand):
             for row in xrange(1, nrows):
 
                 row_values = list(sheet.row_values(row))
-                column = row_values[col_names.index('column')]
-                f.write('    col_%s = models.IntegerField(default=0)\n' % column)
+                item = string.replace(row_values[col_names.index('item')], '.', '_')
+                choices = row_values[col_names.index('choices')].split(', ')
+                f.write('    %s_choices = %s\n' % (item, [(c,c) for c in choices]))
+                f.write('    item_%s = models.CharField(max_length=20, choices=%s_choices, null=True)\n' % (item, item))
 
         f.close()

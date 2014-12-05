@@ -16,7 +16,7 @@ class InstrumentsMap(models.Model):
 
 
 class WordMapping(models.Model):
-    column = models.CharField(max_length=8)
+    item = models.CharField(max_length=20)
     instrument = models.ForeignKey(InstrumentsMap)
     category = models.CharField(max_length=20, null=True, blank=True)
     definition = models.CharField(max_length=100)
@@ -24,16 +24,18 @@ class WordMapping(models.Model):
 
 
 class Child(models.Model):
-    study_id = models.CharField(max_length=20)
-    gender = models.CharField(max_length=1, null=True, blank=True)
-    date_of_birth = models.DateField(null=True, blank=True)
-    birth_weight = models.FloatField(null=True, blank=True)
-    state = models.CharField(max_length=2, null=True, blank=True)
-    gestational_age = models.IntegerField(null=True, blank=True)
-    mom_ed = models.IntegerField(null=True, blank=True)
-    dad_ed = models.IntegerField(null=True, blank=True)
     birth_order = models.IntegerField(null=True, blank=True)
-    ethnicity = models.ForeignKey(Ethnicity, null=True, blank=True)
+    date_of_birth = models.DateField(null=True, blank=True)
+    ethnicities = (('A', 'Asian'), ('B', 'Black'), ('H', 'Hispanic'), ('W', 'White'))
+    ethnicity = models.CharField(max_length=1, choices=ethnicities, null=True, blank=True)
+    mom_ed = models.IntegerField(null=True, blank=True)
+    sexes = (('M', 'Male'), ('F', 'Female'))
+    sex = models.CharField(max_length=1, choices=sexes, null=True, blank=True)
+    study_id = models.CharField(max_length=20)
+#    birth_weight = models.FloatField(null=True, blank=True)
+#    state = models.CharField(max_length=2, null=True, blank=True)
+#    gestational_age = models.IntegerField(null=True, blank=True)
+#    dad_ed = models.IntegerField(null=True, blank=True)
 
 
 class Source(models.Model):
@@ -49,7 +51,7 @@ class Administration(models.Model):
     source = models.ForeignKey(Source, null=True, blank=True)
     date_of_test = models.DateField(null=True, blank=True)
     data_id = models.IntegerField()
-    age = models.IntegerField(null=True, blank=True)
+    age = models.IntegerField()
     data_age = models.IntegerField(null=True, blank=True)
 
 

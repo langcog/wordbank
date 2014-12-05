@@ -14,7 +14,7 @@ def aggregate(admin_query=None):
     for administration in administrations:
         obj = {'age': administration.age if administration.age is not None else -1,
                #'date_of_test': administration.date_of_test if administration.date_of_test != None else datetime.datetime.now(),
-               'gender': administration.child.gender if administration.child.gender else '?',
+               'sex': administration.child.sex if administration.child.sex else '?',
                #'date_of_birth': administration.child.date_of_birth if administration.child.date_of_birth != None else datetime.datetime.now(),
                'mom_ed': administration.child.mom_ed if administration.child.mom_ed else -1,
                'source': administration.source.name if administration.source else 'Unknown',
@@ -28,14 +28,14 @@ def aggregate(admin_query=None):
                 obj['instrument'] = instrument_type
                 break
         instrument_obj = instrument_class.objects.get(pk=administration.data_id).__dict__
-        production = 0
-        comprehension = 0
+        production = None
+        comprehension = None
         for field in instrument_class._meta.fields:
             field_name = field.get_attname_column()[0]
-            if field_name.startswith('col_'):
+            if field_name.startswith('item_'):
                 production_temp, comprehension_temp = get_production_comprehension_vals(instrument_type, instrument_obj[field_name])
-                production = production + production_temp
-                comprehension = comprehension + comprehension_temp
+                production = production_temp
+                comprehension = comprehension_temp
         obj['production'] = production
         obj['comprehension'] = comprehension
         data.append(obj)
