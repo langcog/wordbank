@@ -1597,3 +1597,990 @@ class English_WS(BaseTable):
     item_complx36 = models.CharField(max_length=20, choices=complx36_choices, null=True)
     complx37_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_complx37 = models.CharField(max_length=20, choices=complx37_choices, null=True)
+
+
+class English_WG(BaseTable):
+    respname_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_respname = models.CharField(max_length=20, choices=respname_choices, null=True)
+    respno_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_respno = models.CharField(max_length=20, choices=respno_choices, null=True)
+    reactmd_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_reactmd = models.CharField(max_length=20, choices=reactmd_choices, null=True)
+    arehngry_choices = [(u'understands', u'understands')]
+    item_arehngry = models.CharField(max_length=20, choices=arehngry_choices, null=True)
+    aretired_choices = [(u'understands', u'understands')]
+    item_aretired = models.CharField(max_length=20, choices=aretired_choices, null=True)
+    becarefl_choices = [(u'understands', u'understands')]
+    item_becarefl = models.CharField(max_length=20, choices=becarefl_choices, null=True)
+    bequiet_choices = [(u'understands', u'understands')]
+    item_bequiet = models.CharField(max_length=20, choices=bequiet_choices, null=True)
+    claphand_choices = [(u'understands', u'understands')]
+    item_claphand = models.CharField(max_length=20, choices=claphand_choices, null=True)
+    cgdiaper_choices = [(u'understands', u'understands')]
+    item_cgdiaper = models.CharField(max_length=20, choices=cgdiaper_choices, null=True)
+    comehere_choices = [(u'understands', u'understands')]
+    item_comehere = models.CharField(max_length=20, choices=comehere_choices, null=True)
+    mdhome_choices = [(u'understands', u'understands')]
+    item_mdhome = models.CharField(max_length=20, choices=mdhome_choices, null=True)
+    wantmore_choices = [(u'understands', u'understands')]
+    item_wantmore = models.CharField(max_length=20, choices=wantmore_choices, null=True)
+    dontdo_choices = [(u'understands', u'understands')]
+    item_dontdo = models.CharField(max_length=20, choices=dontdo_choices, null=True)
+    dontouch_choices = [(u'understands', u'understands')]
+    item_dontouch = models.CharField(max_length=20, choices=dontouch_choices, null=True)
+    getup_choices = [(u'understands', u'understands')]
+    item_getup = models.CharField(max_length=20, choices=getup_choices, null=True)
+    givemom_choices = [(u'understands', u'understands')]
+    item_givemom = models.CharField(max_length=20, choices=givemom_choices, null=True)
+    givehug_choices = [(u'understands', u'understands')]
+    item_givehug = models.CharField(max_length=20, choices=givehug_choices, null=True)
+    givekiss_choices = [(u'understands', u'understands')]
+    item_givekiss = models.CharField(max_length=20, choices=givekiss_choices, null=True)
+    goget_choices = [(u'understands', u'understands')]
+    item_goget = models.CharField(max_length=20, choices=goget_choices, null=True)
+    goodgb_choices = [(u'understands', u'understands')]
+    item_goodgb = models.CharField(max_length=20, choices=goodgb_choices, null=True)
+    holdstil_choices = [(u'understands', u'understands')]
+    item_holdstil = models.CharField(max_length=20, choices=holdstil_choices, null=True)
+    gobyebye_choices = [(u'understands', u'understands')]
+    item_gobyebye = models.CharField(max_length=20, choices=gobyebye_choices, null=True)
+    lookhere_choices = [(u'understands', u'understands')]
+    item_lookhere = models.CharField(max_length=20, choices=lookhere_choices, null=True)
+    openmth_choices = [(u'understands', u'understands')]
+    item_openmth = models.CharField(max_length=20, choices=openmth_choices, null=True)
+    sitdown_choices = [(u'understands', u'understands')]
+    item_sitdown = models.CharField(max_length=20, choices=sitdown_choices, null=True)
+    spitout_choices = [(u'understands', u'understands')]
+    item_spitout = models.CharField(max_length=20, choices=spitout_choices, null=True)
+    stopit_choices = [(u'understands', u'understands')]
+    item_stopit = models.CharField(max_length=20, choices=stopit_choices, null=True)
+    gonight_choices = [(u'understands', u'understands')]
+    item_gonight = models.CharField(max_length=20, choices=gonight_choices, null=True)
+    throwbll_choices = [(u'understands', u'understands')]
+    item_throwbll = models.CharField(max_length=20, choices=throwbll_choices, null=True)
+    litpiggy_choices = [(u'understands', u'understands')]
+    item_litpiggy = models.CharField(max_length=20, choices=litpiggy_choices, null=True)
+    wantride_choices = [(u'understands', u'understands')]
+    item_wantride = models.CharField(max_length=20, choices=wantride_choices, null=True)
+    imitate_choices = [(u'never', u'never'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_imitate = models.CharField(max_length=20, choices=imitate_choices, null=True)
+    label_choices = [(u'never', u'never'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_label = models.CharField(max_length=20, choices=label_choices, null=True)
+    baa_baa_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_baa_baa = models.CharField(max_length=20, choices=baa_baa_choices, null=True)
+    choo_choo_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_choo_choo = models.CharField(max_length=20, choices=choo_choo_choices, null=True)
+    cockadoodledoo_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_cockadoodledoo = models.CharField(max_length=20, choices=cockadoodledoo_choices, null=True)
+    grrr_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_grrr = models.CharField(max_length=20, choices=grrr_choices, null=True)
+    meow_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_meow = models.CharField(max_length=20, choices=meow_choices, null=True)
+    moo_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_moo = models.CharField(max_length=20, choices=moo_choices, null=True)
+    ouch_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_ouch = models.CharField(max_length=20, choices=ouch_choices, null=True)
+    quack_quack_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_quack_quack = models.CharField(max_length=20, choices=quack_quack_choices, null=True)
+    uh_oh_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_uh_oh = models.CharField(max_length=20, choices=uh_oh_choices, null=True)
+    vroom_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_vroom = models.CharField(max_length=20, choices=vroom_choices, null=True)
+    woof_woof_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_woof_woof = models.CharField(max_length=20, choices=woof_woof_choices, null=True)
+    yum_yum_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_yum_yum = models.CharField(max_length=20, choices=yum_yum_choices, null=True)
+    animal_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_animal = models.CharField(max_length=20, choices=animal_choices, null=True)
+    bear_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_bear = models.CharField(max_length=20, choices=bear_choices, null=True)
+    bee_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_bee = models.CharField(max_length=20, choices=bee_choices, null=True)
+    bird_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_bird = models.CharField(max_length=20, choices=bird_choices, null=True)
+    bug_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_bug = models.CharField(max_length=20, choices=bug_choices, null=True)
+    bunny_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_bunny = models.CharField(max_length=20, choices=bunny_choices, null=True)
+    butterfly_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_butterfly = models.CharField(max_length=20, choices=butterfly_choices, null=True)
+    cat_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_cat = models.CharField(max_length=20, choices=cat_choices, null=True)
+    chicken_animal_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_chicken_animal = models.CharField(max_length=20, choices=chicken_animal_choices, null=True)
+    cow_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_cow = models.CharField(max_length=20, choices=cow_choices, null=True)
+    deer_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_deer = models.CharField(max_length=20, choices=deer_choices, null=True)
+    dog_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_dog = models.CharField(max_length=20, choices=dog_choices, null=True)
+    donkey_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_donkey = models.CharField(max_length=20, choices=donkey_choices, null=True)
+    duck_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_duck = models.CharField(max_length=20, choices=duck_choices, null=True)
+    elephant_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_elephant = models.CharField(max_length=20, choices=elephant_choices, null=True)
+    fish_animal_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_fish_animal = models.CharField(max_length=20, choices=fish_animal_choices, null=True)
+    frog_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_frog = models.CharField(max_length=20, choices=frog_choices, null=True)
+    giraffe_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_giraffe = models.CharField(max_length=20, choices=giraffe_choices, null=True)
+    goose_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_goose = models.CharField(max_length=20, choices=goose_choices, null=True)
+    horse_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_horse = models.CharField(max_length=20, choices=horse_choices, null=True)
+    kitty_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_kitty = models.CharField(max_length=20, choices=kitty_choices, null=True)
+    lamb_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_lamb = models.CharField(max_length=20, choices=lamb_choices, null=True)
+    lion_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_lion = models.CharField(max_length=20, choices=lion_choices, null=True)
+    monkey_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_monkey = models.CharField(max_length=20, choices=monkey_choices, null=True)
+    mouse_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_mouse = models.CharField(max_length=20, choices=mouse_choices, null=True)
+    owl_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_owl = models.CharField(max_length=20, choices=owl_choices, null=True)
+    penguin_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_penguin = models.CharField(max_length=20, choices=penguin_choices, null=True)
+    pig_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_pig = models.CharField(max_length=20, choices=pig_choices, null=True)
+    pony_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_pony = models.CharField(max_length=20, choices=pony_choices, null=True)
+    puppy_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_puppy = models.CharField(max_length=20, choices=puppy_choices, null=True)
+    sheep_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_sheep = models.CharField(max_length=20, choices=sheep_choices, null=True)
+    squirrel_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_squirrel = models.CharField(max_length=20, choices=squirrel_choices, null=True)
+    teddybear_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_teddybear = models.CharField(max_length=20, choices=teddybear_choices, null=True)
+    tiger_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_tiger = models.CharField(max_length=20, choices=tiger_choices, null=True)
+    turkey_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_turkey = models.CharField(max_length=20, choices=turkey_choices, null=True)
+    turtle_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_turtle = models.CharField(max_length=20, choices=turtle_choices, null=True)
+    airplane_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_airplane = models.CharField(max_length=20, choices=airplane_choices, null=True)
+    bicycle_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_bicycle = models.CharField(max_length=20, choices=bicycle_choices, null=True)
+    bus_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_bus = models.CharField(max_length=20, choices=bus_choices, null=True)
+    car_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_car = models.CharField(max_length=20, choices=car_choices, null=True)
+    firetruck_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_firetruck = models.CharField(max_length=20, choices=firetruck_choices, null=True)
+    motorcycle_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_motorcycle = models.CharField(max_length=20, choices=motorcycle_choices, null=True)
+    stroller_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_stroller = models.CharField(max_length=20, choices=stroller_choices, null=True)
+    train_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_train = models.CharField(max_length=20, choices=train_choices, null=True)
+    truck_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_truck = models.CharField(max_length=20, choices=truck_choices, null=True)
+    ball_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_ball = models.CharField(max_length=20, choices=ball_choices, null=True)
+    balloon_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_balloon = models.CharField(max_length=20, choices=balloon_choices, null=True)
+    block_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_block = models.CharField(max_length=20, choices=block_choices, null=True)
+    book_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_book = models.CharField(max_length=20, choices=book_choices, null=True)
+    bubbles_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_bubbles = models.CharField(max_length=20, choices=bubbles_choices, null=True)
+    doll_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_doll = models.CharField(max_length=20, choices=doll_choices, null=True)
+    pen_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_pen = models.CharField(max_length=20, choices=pen_choices, null=True)
+    toy_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_toy = models.CharField(max_length=20, choices=toy_choices, null=True)
+    apple_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_apple = models.CharField(max_length=20, choices=apple_choices, null=True)
+    banana_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_banana = models.CharField(max_length=20, choices=banana_choices, null=True)
+    bread_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_bread = models.CharField(max_length=20, choices=bread_choices, null=True)
+    butter_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_butter = models.CharField(max_length=20, choices=butter_choices, null=True)
+    cake_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_cake = models.CharField(max_length=20, choices=cake_choices, null=True)
+    candy_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_candy = models.CharField(max_length=20, choices=candy_choices, null=True)
+    carrots_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_carrots = models.CharField(max_length=20, choices=carrots_choices, null=True)
+    cereal_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_cereal = models.CharField(max_length=20, choices=cereal_choices, null=True)
+    cheerios_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_cheerios = models.CharField(max_length=20, choices=cheerios_choices, null=True)
+    cheese_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_cheese = models.CharField(max_length=20, choices=cheese_choices, null=True)
+    chicken_food_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_chicken_food = models.CharField(max_length=20, choices=chicken_food_choices, null=True)
+    coffee_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_coffee = models.CharField(max_length=20, choices=coffee_choices, null=True)
+    cookie_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_cookie = models.CharField(max_length=20, choices=cookie_choices, null=True)
+    cracker_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_cracker = models.CharField(max_length=20, choices=cracker_choices, null=True)
+    drink_beverage_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_drink_beverage = models.CharField(max_length=20, choices=drink_beverage_choices, null=True)
+    egg_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_egg = models.CharField(max_length=20, choices=egg_choices, null=True)
+    fish_food_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_fish_food = models.CharField(max_length=20, choices=fish_food_choices, null=True)
+    food_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_food = models.CharField(max_length=20, choices=food_choices, null=True)
+    ice_cream_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_ice_cream = models.CharField(max_length=20, choices=ice_cream_choices, null=True)
+    juice_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_juice = models.CharField(max_length=20, choices=juice_choices, null=True)
+    meat_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_meat = models.CharField(max_length=20, choices=meat_choices, null=True)
+    milk_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_milk = models.CharField(max_length=20, choices=milk_choices, null=True)
+    noodles_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_noodles = models.CharField(max_length=20, choices=noodles_choices, null=True)
+    orange_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_orange = models.CharField(max_length=20, choices=orange_choices, null=True)
+    peas_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_peas = models.CharField(max_length=20, choices=peas_choices, null=True)
+    pizza_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_pizza = models.CharField(max_length=20, choices=pizza_choices, null=True)
+    raisin_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_raisin = models.CharField(max_length=20, choices=raisin_choices, null=True)
+    spaghetti_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_spaghetti = models.CharField(max_length=20, choices=spaghetti_choices, null=True)
+    toast_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_toast = models.CharField(max_length=20, choices=toast_choices, null=True)
+    water_beverage_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_water_beverage = models.CharField(max_length=20, choices=water_beverage_choices, null=True)
+    beads_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_beads = models.CharField(max_length=20, choices=beads_choices, null=True)
+    bib_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_bib = models.CharField(max_length=20, choices=bib_choices, null=True)
+    boots_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_boots = models.CharField(max_length=20, choices=boots_choices, null=True)
+    button_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_button = models.CharField(max_length=20, choices=button_choices, null=True)
+    coat_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_coat = models.CharField(max_length=20, choices=coat_choices, null=True)
+    diaper_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_diaper = models.CharField(max_length=20, choices=diaper_choices, null=True)
+    dress_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_dress = models.CharField(max_length=20, choices=dress_choices, null=True)
+    hat_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_hat = models.CharField(max_length=20, choices=hat_choices, null=True)
+    jacket_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_jacket = models.CharField(max_length=20, choices=jacket_choices, null=True)
+    jeans_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_jeans = models.CharField(max_length=20, choices=jeans_choices, null=True)
+    necklace_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_necklace = models.CharField(max_length=20, choices=necklace_choices, null=True)
+    pajamas_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_pajamas = models.CharField(max_length=20, choices=pajamas_choices, null=True)
+    pants_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_pants = models.CharField(max_length=20, choices=pants_choices, null=True)
+    shirt_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_shirt = models.CharField(max_length=20, choices=shirt_choices, null=True)
+    shoe_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_shoe = models.CharField(max_length=20, choices=shoe_choices, null=True)
+    shorts_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_shorts = models.CharField(max_length=20, choices=shorts_choices, null=True)
+    sock_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_sock = models.CharField(max_length=20, choices=sock_choices, null=True)
+    sweater_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_sweater = models.CharField(max_length=20, choices=sweater_choices, null=True)
+    zipper_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_zipper = models.CharField(max_length=20, choices=zipper_choices, null=True)
+    arm_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_arm = models.CharField(max_length=20, choices=arm_choices, null=True)
+    belly_button_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_belly_button = models.CharField(max_length=20, choices=belly_button_choices, null=True)
+    cheek_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_cheek = models.CharField(max_length=20, choices=cheek_choices, null=True)
+    ear_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_ear = models.CharField(max_length=20, choices=ear_choices, null=True)
+    eye_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_eye = models.CharField(max_length=20, choices=eye_choices, null=True)
+    face_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_face = models.CharField(max_length=20, choices=face_choices, null=True)
+    foot_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_foot = models.CharField(max_length=20, choices=foot_choices, null=True)
+    finger_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_finger = models.CharField(max_length=20, choices=finger_choices, null=True)
+    hair_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_hair = models.CharField(max_length=20, choices=hair_choices, null=True)
+    hand_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_hand = models.CharField(max_length=20, choices=hand_choices, null=True)
+    head_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_head = models.CharField(max_length=20, choices=head_choices, null=True)
+    knee_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_knee = models.CharField(max_length=20, choices=knee_choices, null=True)
+    leg_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_leg = models.CharField(max_length=20, choices=leg_choices, null=True)
+    mouth_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_mouth = models.CharField(max_length=20, choices=mouth_choices, null=True)
+    nose_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_nose = models.CharField(max_length=20, choices=nose_choices, null=True)
+    owie_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_owie = models.CharField(max_length=20, choices=owie_choices, null=True)
+    tooth_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_tooth = models.CharField(max_length=20, choices=tooth_choices, null=True)
+    toe_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_toe = models.CharField(max_length=20, choices=toe_choices, null=True)
+    tongue_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_tongue = models.CharField(max_length=20, choices=tongue_choices, null=True)
+    tummy_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_tummy = models.CharField(max_length=20, choices=tummy_choices, null=True)
+    bathroom_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_bathroom = models.CharField(max_length=20, choices=bathroom_choices, null=True)
+    bathtub_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_bathtub = models.CharField(max_length=20, choices=bathtub_choices, null=True)
+    bed_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_bed = models.CharField(max_length=20, choices=bed_choices, null=True)
+    bedroom_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_bedroom = models.CharField(max_length=20, choices=bedroom_choices, null=True)
+    chair_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_chair = models.CharField(max_length=20, choices=chair_choices, null=True)
+    couch_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_couch = models.CharField(max_length=20, choices=couch_choices, null=True)
+    crib_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_crib = models.CharField(max_length=20, choices=crib_choices, null=True)
+    door_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_door = models.CharField(max_length=20, choices=door_choices, null=True)
+    drawer_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_drawer = models.CharField(max_length=20, choices=drawer_choices, null=True)
+    garage_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_garage = models.CharField(max_length=20, choices=garage_choices, null=True)
+    high_chair_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_high_chair = models.CharField(max_length=20, choices=high_chair_choices, null=True)
+    kitchen_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_kitchen = models.CharField(max_length=20, choices=kitchen_choices, null=True)
+    living_room_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_living_room = models.CharField(max_length=20, choices=living_room_choices, null=True)
+    oven_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_oven = models.CharField(max_length=20, choices=oven_choices, null=True)
+    play_pen_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_play_pen = models.CharField(max_length=20, choices=play_pen_choices, null=True)
+    potty_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_potty = models.CharField(max_length=20, choices=potty_choices, null=True)
+    refrigerator_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_refrigerator = models.CharField(max_length=20, choices=refrigerator_choices, null=True)
+    rocking_chair_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_rocking_chair = models.CharField(max_length=20, choices=rocking_chair_choices, null=True)
+    sink_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_sink = models.CharField(max_length=20, choices=sink_choices, null=True)
+    stairs_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_stairs = models.CharField(max_length=20, choices=stairs_choices, null=True)
+    stove_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_stove = models.CharField(max_length=20, choices=stove_choices, null=True)
+    table_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_table = models.CharField(max_length=20, choices=table_choices, null=True)
+    tv_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_tv = models.CharField(max_length=20, choices=tv_choices, null=True)
+    window_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_window = models.CharField(max_length=20, choices=window_choices, null=True)
+    blanket_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_blanket = models.CharField(max_length=20, choices=blanket_choices, null=True)
+    bottle_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_bottle = models.CharField(max_length=20, choices=bottle_choices, null=True)
+    bowl_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_bowl = models.CharField(max_length=20, choices=bowl_choices, null=True)
+    box_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_box = models.CharField(max_length=20, choices=box_choices, null=True)
+    broom_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_broom = models.CharField(max_length=20, choices=broom_choices, null=True)
+    brush_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_brush = models.CharField(max_length=20, choices=brush_choices, null=True)
+    clock_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_clock = models.CharField(max_length=20, choices=clock_choices, null=True)
+    comb_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_comb = models.CharField(max_length=20, choices=comb_choices, null=True)
+    cup_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_cup = models.CharField(max_length=20, choices=cup_choices, null=True)
+    dish_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_dish = models.CharField(max_length=20, choices=dish_choices, null=True)
+    fork_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_fork = models.CharField(max_length=20, choices=fork_choices, null=True)
+    glass_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_glass = models.CharField(max_length=20, choices=glass_choices, null=True)
+    glasses_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_glasses = models.CharField(max_length=20, choices=glasses_choices, null=True)
+    hammer_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_hammer = models.CharField(max_length=20, choices=hammer_choices, null=True)
+    keys_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_keys = models.CharField(max_length=20, choices=keys_choices, null=True)
+    lamp_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_lamp = models.CharField(max_length=20, choices=lamp_choices, null=True)
+    light_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_light = models.CharField(max_length=20, choices=light_choices, null=True)
+    medicine_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_medicine = models.CharField(max_length=20, choices=medicine_choices, null=True)
+    money_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_money = models.CharField(max_length=20, choices=money_choices, null=True)
+    paper_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_paper = models.CharField(max_length=20, choices=paper_choices, null=True)
+    penny_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_penny = models.CharField(max_length=20, choices=penny_choices, null=True)
+    picture_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_picture = models.CharField(max_length=20, choices=picture_choices, null=True)
+    pillow_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_pillow = models.CharField(max_length=20, choices=pillow_choices, null=True)
+    plant_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_plant = models.CharField(max_length=20, choices=plant_choices, null=True)
+    plate_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_plate = models.CharField(max_length=20, choices=plate_choices, null=True)
+    purse_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_purse = models.CharField(max_length=20, choices=purse_choices, null=True)
+    radio_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_radio = models.CharField(max_length=20, choices=radio_choices, null=True)
+    scissors_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_scissors = models.CharField(max_length=20, choices=scissors_choices, null=True)
+    soap_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_soap = models.CharField(max_length=20, choices=soap_choices, null=True)
+    spoon_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_spoon = models.CharField(max_length=20, choices=spoon_choices, null=True)
+    telephone_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_telephone = models.CharField(max_length=20, choices=telephone_choices, null=True)
+    toothbrush_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_toothbrush = models.CharField(max_length=20, choices=toothbrush_choices, null=True)
+    towel_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_towel = models.CharField(max_length=20, choices=towel_choices, null=True)
+    trash_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_trash = models.CharField(max_length=20, choices=trash_choices, null=True)
+    vacuum_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_vacuum = models.CharField(max_length=20, choices=vacuum_choices, null=True)
+    watch_object_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_watch_object = models.CharField(max_length=20, choices=watch_object_choices, null=True)
+    backyard_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_backyard = models.CharField(max_length=20, choices=backyard_choices, null=True)
+    beach_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_beach = models.CharField(max_length=20, choices=beach_choices, null=True)
+    church_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_church = models.CharField(max_length=20, choices=church_choices, null=True)
+    flower_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_flower = models.CharField(max_length=20, choices=flower_choices, null=True)
+    garden_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_garden = models.CharField(max_length=20, choices=garden_choices, null=True)
+    home_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_home = models.CharField(max_length=20, choices=home_choices, null=True)
+    house_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_house = models.CharField(max_length=20, choices=house_choices, null=True)
+    moon_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_moon = models.CharField(max_length=20, choices=moon_choices, null=True)
+    outside_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_outside = models.CharField(max_length=20, choices=outside_choices, null=True)
+    park_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_park = models.CharField(max_length=20, choices=park_choices, null=True)
+    party_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_party = models.CharField(max_length=20, choices=party_choices, null=True)
+    pool_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_pool = models.CharField(max_length=20, choices=pool_choices, null=True)
+    rain_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_rain = models.CharField(max_length=20, choices=rain_choices, null=True)
+    rock_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_rock = models.CharField(max_length=20, choices=rock_choices, null=True)
+    school_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_school = models.CharField(max_length=20, choices=school_choices, null=True)
+    shovel_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_shovel = models.CharField(max_length=20, choices=shovel_choices, null=True)
+    sky_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_sky = models.CharField(max_length=20, choices=sky_choices, null=True)
+    slide_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_slide = models.CharField(max_length=20, choices=slide_choices, null=True)
+    snow_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_snow = models.CharField(max_length=20, choices=snow_choices, null=True)
+    star_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_star = models.CharField(max_length=20, choices=star_choices, null=True)
+    store_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_store = models.CharField(max_length=20, choices=store_choices, null=True)
+    sun_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_sun = models.CharField(max_length=20, choices=sun_choices, null=True)
+    swing_object_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_swing_object = models.CharField(max_length=20, choices=swing_object_choices, null=True)
+    tree_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_tree = models.CharField(max_length=20, choices=tree_choices, null=True)
+    water_not_beverage_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_water_not_beverage = models.CharField(max_length=20, choices=water_not_beverage_choices, null=True)
+    work_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_work = models.CharField(max_length=20, choices=work_choices, null=True)
+    zoo_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_zoo = models.CharField(max_length=20, choices=zoo_choices, null=True)
+    aunt_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_aunt = models.CharField(max_length=20, choices=aunt_choices, null=True)
+    baby_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_baby = models.CharField(max_length=20, choices=baby_choices, null=True)
+    babysitter_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_babysitter = models.CharField(max_length=20, choices=babysitter_choices, null=True)
+    babysitter_name_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_babysitter_name = models.CharField(max_length=20, choices=babysitter_name_choices, null=True)
+    boy_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_boy = models.CharField(max_length=20, choices=boy_choices, null=True)
+    brother_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_brother = models.CharField(max_length=20, choices=brother_choices, null=True)
+    child_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_child = models.CharField(max_length=20, choices=child_choices, null=True)
+    daddy_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_daddy = models.CharField(max_length=20, choices=daddy_choices, null=True)
+    girl_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_girl = models.CharField(max_length=20, choices=girl_choices, null=True)
+    grandma_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_grandma = models.CharField(max_length=20, choices=grandma_choices, null=True)
+    grandpa_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_grandpa = models.CharField(max_length=20, choices=grandpa_choices, null=True)
+    lady_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_lady = models.CharField(max_length=20, choices=lady_choices, null=True)
+    man_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_man = models.CharField(max_length=20, choices=man_choices, null=True)
+    mommy_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_mommy = models.CharField(max_length=20, choices=mommy_choices, null=True)
+    child_own_name_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_child_own_name = models.CharField(max_length=20, choices=child_own_name_choices, null=True)
+    people_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_people = models.CharField(max_length=20, choices=people_choices, null=True)
+    person_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_person = models.CharField(max_length=20, choices=person_choices, null=True)
+    sister_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_sister = models.CharField(max_length=20, choices=sister_choices, null=True)
+    teacher_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_teacher = models.CharField(max_length=20, choices=teacher_choices, null=True)
+    uncle_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_uncle = models.CharField(max_length=20, choices=uncle_choices, null=True)
+    bath_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_bath = models.CharField(max_length=20, choices=bath_choices, null=True)
+    breakfast_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_breakfast = models.CharField(max_length=20, choices=breakfast_choices, null=True)
+    bye_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_bye = models.CharField(max_length=20, choices=bye_choices, null=True)
+    dinner_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_dinner = models.CharField(max_length=20, choices=dinner_choices, null=True)
+    dont_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_dont = models.CharField(max_length=20, choices=dont_choices, null=True)
+    hello_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_hello = models.CharField(max_length=20, choices=hello_choices, null=True)
+    hi_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_hi = models.CharField(max_length=20, choices=hi_choices, null=True)
+    lunch_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_lunch = models.CharField(max_length=20, choices=lunch_choices, null=True)
+    nap_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_nap = models.CharField(max_length=20, choices=nap_choices, null=True)
+    nightnight_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_nightnight = models.CharField(max_length=20, choices=nightnight_choices, null=True)
+    no_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_no = models.CharField(max_length=20, choices=no_choices, null=True)
+    pattycake_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_pattycake = models.CharField(max_length=20, choices=pattycake_choices, null=True)
+    peekaboo_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_peekaboo = models.CharField(max_length=20, choices=peekaboo_choices, null=True)
+    please_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_please = models.CharField(max_length=20, choices=please_choices, null=True)
+    shh_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_shh = models.CharField(max_length=20, choices=shh_choices, null=True)
+    thank_you_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_thank_you = models.CharField(max_length=20, choices=thank_you_choices, null=True)
+    wait_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_wait = models.CharField(max_length=20, choices=wait_choices, null=True)
+    wanna_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_wanna = models.CharField(max_length=20, choices=wanna_choices, null=True)
+    yes_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_yes = models.CharField(max_length=20, choices=yes_choices, null=True)
+    bite_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_bite = models.CharField(max_length=20, choices=bite_choices, null=True)
+    blow_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_blow = models.CharField(max_length=20, choices=blow_choices, null=True)
+    break_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_break = models.CharField(max_length=20, choices=break_choices, null=True)
+    bring_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_bring = models.CharField(max_length=20, choices=bring_choices, null=True)
+    bump_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_bump = models.CharField(max_length=20, choices=bump_choices, null=True)
+    clean_action_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_clean_action = models.CharField(max_length=20, choices=clean_action_choices, null=True)
+    close_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_close = models.CharField(max_length=20, choices=close_choices, null=True)
+    cry_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_cry = models.CharField(max_length=20, choices=cry_choices, null=True)
+    dance_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_dance = models.CharField(max_length=20, choices=dance_choices, null=True)
+    draw_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_draw = models.CharField(max_length=20, choices=draw_choices, null=True)
+    drink_action_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_drink_action = models.CharField(max_length=20, choices=drink_action_choices, null=True)
+    drive_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_drive = models.CharField(max_length=20, choices=drive_choices, null=True)
+    eat_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_eat = models.CharField(max_length=20, choices=eat_choices, null=True)
+    fall_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_fall = models.CharField(max_length=20, choices=fall_choices, null=True)
+    feed_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_feed = models.CharField(max_length=20, choices=feed_choices, null=True)
+    finish_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_finish = models.CharField(max_length=20, choices=finish_choices, null=True)
+    get_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_get = models.CharField(max_length=20, choices=get_choices, null=True)
+    give_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_give = models.CharField(max_length=20, choices=give_choices, null=True)
+    go_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_go = models.CharField(max_length=20, choices=go_choices, null=True)
+    help_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_help = models.CharField(max_length=20, choices=help_choices, null=True)
+    hit_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_hit = models.CharField(max_length=20, choices=hit_choices, null=True)
+    hug_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_hug = models.CharField(max_length=20, choices=hug_choices, null=True)
+    hurry_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_hurry = models.CharField(max_length=20, choices=hurry_choices, null=True)
+    jump_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_jump = models.CharField(max_length=20, choices=jump_choices, null=True)
+    kick_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_kick = models.CharField(max_length=20, choices=kick_choices, null=True)
+    kiss_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_kiss = models.CharField(max_length=20, choices=kiss_choices, null=True)
+    look_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_look = models.CharField(max_length=20, choices=look_choices, null=True)
+    love_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_love = models.CharField(max_length=20, choices=love_choices, null=True)
+    open_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_open = models.CharField(max_length=20, choices=open_choices, null=True)
+    play_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_play = models.CharField(max_length=20, choices=play_choices, null=True)
+    pull_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_pull = models.CharField(max_length=20, choices=pull_choices, null=True)
+    push_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_push = models.CharField(max_length=20, choices=push_choices, null=True)
+    put_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_put = models.CharField(max_length=20, choices=put_choices, null=True)
+    read_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_read = models.CharField(max_length=20, choices=read_choices, null=True)
+    ride_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_ride = models.CharField(max_length=20, choices=ride_choices, null=True)
+    run_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_run = models.CharField(max_length=20, choices=run_choices, null=True)
+    say_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_say = models.CharField(max_length=20, choices=say_choices, null=True)
+    see_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_see = models.CharField(max_length=20, choices=see_choices, null=True)
+    show_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_show = models.CharField(max_length=20, choices=show_choices, null=True)
+    sing_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_sing = models.CharField(max_length=20, choices=sing_choices, null=True)
+    sleep_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_sleep = models.CharField(max_length=20, choices=sleep_choices, null=True)
+    smile_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_smile = models.CharField(max_length=20, choices=smile_choices, null=True)
+    splash_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_splash = models.CharField(max_length=20, choices=splash_choices, null=True)
+    stop_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_stop = models.CharField(max_length=20, choices=stop_choices, null=True)
+    swim_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_swim = models.CharField(max_length=20, choices=swim_choices, null=True)
+    swing_action_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_swing_action = models.CharField(max_length=20, choices=swing_action_choices, null=True)
+    take_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_take = models.CharField(max_length=20, choices=take_choices, null=True)
+    throw_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_throw = models.CharField(max_length=20, choices=throw_choices, null=True)
+    tickle_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_tickle = models.CharField(max_length=20, choices=tickle_choices, null=True)
+    touch_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_touch = models.CharField(max_length=20, choices=touch_choices, null=True)
+    watch_action_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_watch_action = models.CharField(max_length=20, choices=watch_action_choices, null=True)
+    walk_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_walk = models.CharField(max_length=20, choices=walk_choices, null=True)
+    wash_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_wash = models.CharField(max_length=20, choices=wash_choices, null=True)
+    wipe_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_wipe = models.CharField(max_length=20, choices=wipe_choices, null=True)
+    write_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_write = models.CharField(max_length=20, choices=write_choices, null=True)
+    day_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_day = models.CharField(max_length=20, choices=day_choices, null=True)
+    later_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_later = models.CharField(max_length=20, choices=later_choices, null=True)
+    morning_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_morning = models.CharField(max_length=20, choices=morning_choices, null=True)
+    night_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_night = models.CharField(max_length=20, choices=night_choices, null=True)
+    now_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_now = models.CharField(max_length=20, choices=now_choices, null=True)
+    today_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_today = models.CharField(max_length=20, choices=today_choices, null=True)
+    tomorrow_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_tomorrow = models.CharField(max_length=20, choices=tomorrow_choices, null=True)
+    tonight_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_tonight = models.CharField(max_length=20, choices=tonight_choices, null=True)
+    allgone_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_allgone = models.CharField(max_length=20, choices=allgone_choices, null=True)
+    asleep_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_asleep = models.CharField(max_length=20, choices=asleep_choices, null=True)
+    bad_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_bad = models.CharField(max_length=20, choices=bad_choices, null=True)
+    big_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_big = models.CharField(max_length=20, choices=big_choices, null=True)
+    blue_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_blue = models.CharField(max_length=20, choices=blue_choices, null=True)
+    broken_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_broken = models.CharField(max_length=20, choices=broken_choices, null=True)
+    careful_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_careful = models.CharField(max_length=20, choices=careful_choices, null=True)
+    clean_description_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_clean_description = models.CharField(max_length=20, choices=clean_description_choices, null=True)
+    cold_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_cold = models.CharField(max_length=20, choices=cold_choices, null=True)
+    cute_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_cute = models.CharField(max_length=20, choices=cute_choices, null=True)
+    dark_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_dark = models.CharField(max_length=20, choices=dark_choices, null=True)
+    dirty_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_dirty = models.CharField(max_length=20, choices=dirty_choices, null=True)
+    dry_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_dry = models.CharField(max_length=20, choices=dry_choices, null=True)
+    empty_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_empty = models.CharField(max_length=20, choices=empty_choices, null=True)
+    fast_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_fast = models.CharField(max_length=20, choices=fast_choices, null=True)
+    fine_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_fine = models.CharField(max_length=20, choices=fine_choices, null=True)
+    gentle_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_gentle = models.CharField(max_length=20, choices=gentle_choices, null=True)
+    good_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_good = models.CharField(max_length=20, choices=good_choices, null=True)
+    happy_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_happy = models.CharField(max_length=20, choices=happy_choices, null=True)
+    hard_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_hard = models.CharField(max_length=20, choices=hard_choices, null=True)
+    hot_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_hot = models.CharField(max_length=20, choices=hot_choices, null=True)
+    hungry_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_hungry = models.CharField(max_length=20, choices=hungry_choices, null=True)
+    hurt_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_hurt = models.CharField(max_length=20, choices=hurt_choices, null=True)
+    little_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_little = models.CharField(max_length=20, choices=little_choices, null=True)
+    naughty_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_naughty = models.CharField(max_length=20, choices=naughty_choices, null=True)
+    nice_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_nice = models.CharField(max_length=20, choices=nice_choices, null=True)
+    old_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_old = models.CharField(max_length=20, choices=old_choices, null=True)
+    pretty_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_pretty = models.CharField(max_length=20, choices=pretty_choices, null=True)
+    red_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_red = models.CharField(max_length=20, choices=red_choices, null=True)
+    scared_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_scared = models.CharField(max_length=20, choices=scared_choices, null=True)
+    sick_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_sick = models.CharField(max_length=20, choices=sick_choices, null=True)
+    sleepy_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_sleepy = models.CharField(max_length=20, choices=sleepy_choices, null=True)
+    soft_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_soft = models.CharField(max_length=20, choices=soft_choices, null=True)
+    thirsty_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_thirsty = models.CharField(max_length=20, choices=thirsty_choices, null=True)
+    tired_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_tired = models.CharField(max_length=20, choices=tired_choices, null=True)
+    wet_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_wet = models.CharField(max_length=20, choices=wet_choices, null=True)
+    yucky_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_yucky = models.CharField(max_length=20, choices=yucky_choices, null=True)
+    his_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_his = models.CharField(max_length=20, choices=his_choices, null=True)
+    her_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_her = models.CharField(max_length=20, choices=her_choices, null=True)
+    i_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i = models.CharField(max_length=20, choices=i_choices, null=True)
+    it_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_it = models.CharField(max_length=20, choices=it_choices, null=True)
+    me_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_me = models.CharField(max_length=20, choices=me_choices, null=True)
+    mine_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_mine = models.CharField(max_length=20, choices=mine_choices, null=True)
+    my_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_my = models.CharField(max_length=20, choices=my_choices, null=True)
+    that_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_that = models.CharField(max_length=20, choices=that_choices, null=True)
+    this_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_this = models.CharField(max_length=20, choices=this_choices, null=True)
+    you_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_you = models.CharField(max_length=20, choices=you_choices, null=True)
+    your_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_your = models.CharField(max_length=20, choices=your_choices, null=True)
+    how_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_how = models.CharField(max_length=20, choices=how_choices, null=True)
+    what_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_what = models.CharField(max_length=20, choices=what_choices, null=True)
+    when_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_when = models.CharField(max_length=20, choices=when_choices, null=True)
+    where_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_where = models.CharField(max_length=20, choices=where_choices, null=True)
+    who_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_who = models.CharField(max_length=20, choices=who_choices, null=True)
+    why_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_why = models.CharField(max_length=20, choices=why_choices, null=True)
+    away_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_away = models.CharField(max_length=20, choices=away_choices, null=True)
+    back_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_back = models.CharField(max_length=20, choices=back_choices, null=True)
+    down_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_down = models.CharField(max_length=20, choices=down_choices, null=True)
+    in_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_in = models.CharField(max_length=20, choices=in_choices, null=True)
+    inside_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_inside = models.CharField(max_length=20, choices=inside_choices, null=True)
+    off_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_off = models.CharField(max_length=20, choices=off_choices, null=True)
+    on_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_on = models.CharField(max_length=20, choices=on_choices, null=True)
+    out_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_out = models.CharField(max_length=20, choices=out_choices, null=True)
+    there_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_there = models.CharField(max_length=20, choices=there_choices, null=True)
+    under_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_under = models.CharField(max_length=20, choices=under_choices, null=True)
+    up_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_up = models.CharField(max_length=20, choices=up_choices, null=True)
+    all_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_all = models.CharField(max_length=20, choices=all_choices, null=True)
+    another_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_another = models.CharField(max_length=20, choices=another_choices, null=True)
+    more_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_more = models.CharField(max_length=20, choices=more_choices, null=True)
+    none_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_none = models.CharField(max_length=20, choices=none_choices, null=True)
+    not_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_not = models.CharField(max_length=20, choices=not_choices, null=True)
+    other_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_other = models.CharField(max_length=20, choices=other_choices, null=True)
+    same_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_same = models.CharField(max_length=20, choices=same_choices, null=True)
+    some_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_some = models.CharField(max_length=20, choices=some_choices, null=True)
+    armshow_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_armshow = models.CharField(max_length=20, choices=armshow_choices, null=True)
+    reachout_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_reachout = models.CharField(max_length=20, choices=reachout_choices, null=True)
+    points_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_points = models.CharField(max_length=20, choices=points_choices, null=True)
+    waves_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_waves = models.CharField(max_length=20, choices=waves_choices, null=True)
+    pickup_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_pickup = models.CharField(max_length=20, choices=pickup_choices, null=True)
+    shakhead_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_shakhead = models.CharField(max_length=20, choices=shakhead_choices, null=True)
+    nodhead_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_nodhead = models.CharField(max_length=20, choices=nodhead_choices, null=True)
+    showhush_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_showhush = models.CharField(max_length=20, choices=showhush_choices, null=True)
+    request_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_request = models.CharField(max_length=20, choices=request_choices, null=True)
+    blowkiss_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_blowkiss = models.CharField(max_length=20, choices=blowkiss_choices, null=True)
+    smacklip_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_smacklip = models.CharField(max_length=20, choices=smacklip_choices, null=True)
+    shrugs_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_shrugs = models.CharField(max_length=20, choices=shrugs_choices, null=True)
+    playpeek_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_playpeek = models.CharField(max_length=20, choices=playpeek_choices, null=True)
+    patycak2_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_patycak2 = models.CharField(max_length=20, choices=patycak2_choices, null=True)
+    sobig_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_sobig = models.CharField(max_length=20, choices=sobig_choices, null=True)
+    chase_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_chase = models.CharField(max_length=20, choices=chase_choices, null=True)
+    dosing_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_dosing = models.CharField(max_length=20, choices=dosing_choices, null=True)
+    dodance_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_dodance = models.CharField(max_length=20, choices=dodance_choices, null=True)
+    eatspoon_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_eatspoon = models.CharField(max_length=20, choices=eatspoon_choices, null=True)
+    drinkcup_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_drinkcup = models.CharField(max_length=20, choices=drinkcup_choices, null=True)
+    combhair_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_combhair = models.CharField(max_length=20, choices=combhair_choices, null=True)
+    bshteeth_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_bshteeth = models.CharField(max_length=20, choices=bshteeth_choices, null=True)
+    wipeface_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_wipeface = models.CharField(max_length=20, choices=wipeface_choices, null=True)
+    puthat_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_puthat = models.CharField(max_length=20, choices=puthat_choices, null=True)
+    putshoe_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_putshoe = models.CharField(max_length=20, choices=putshoe_choices, null=True)
+    putwatch_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_putwatch = models.CharField(max_length=20, choices=putwatch_choices, null=True)
+    ptdsleep_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_ptdsleep = models.CharField(max_length=20, choices=ptdsleep_choices, null=True)
+    blowhot_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_blowhot = models.CharField(max_length=20, choices=blowhot_choices, null=True)
+    flyplane_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_flyplane = models.CharField(max_length=20, choices=flyplane_choices, null=True)
+    ptndtele_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_ptndtele = models.CharField(max_length=20, choices=ptndtele_choices, null=True)
+    snifflow_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_snifflow = models.CharField(max_length=20, choices=snifflow_choices, null=True)
+    pushcar_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_pushcar = models.CharField(max_length=20, choices=pushcar_choices, null=True)
+    throwges_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_throwges = models.CharField(max_length=20, choices=throwges_choices, null=True)
+    ptndpour_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_ptndpour = models.CharField(max_length=20, choices=ptndpour_choices, null=True)
+    ptndstir_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_ptndstir = models.CharField(max_length=20, choices=ptndstir_choices, null=True)
+    putobed_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_putobed = models.CharField(max_length=20, choices=putobed_choices, null=True)
+    cover_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_cover = models.CharField(max_length=20, choices=cover_choices, null=True)
+    feedbotl_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_feedbotl = models.CharField(max_length=20, choices=feedbotl_choices, null=True)
+    feedspon_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_feedspon = models.CharField(max_length=20, choices=feedspon_choices, null=True)
+    brushit_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_brushit = models.CharField(max_length=20, choices=brushit_choices, null=True)
+    burbit_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_burbit = models.CharField(max_length=20, choices=burbit_choices, null=True)
+    pushit_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_pushit = models.CharField(max_length=20, choices=pushit_choices, null=True)
+    rockit_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_rockit = models.CharField(max_length=20, choices=rockit_choices, null=True)
+    kissit_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_kissit = models.CharField(max_length=20, choices=kissit_choices, null=True)
+    dressit_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_dressit = models.CharField(max_length=20, choices=dressit_choices, null=True)
+    wipeit_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_wipeit = models.CharField(max_length=20, choices=wipeit_choices, null=True)
+    talkit_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_talkit = models.CharField(max_length=20, choices=talkit_choices, null=True)
+    diaperit_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_diaperit = models.CharField(max_length=20, choices=diaperit_choices, null=True)
+    sweep_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_sweep = models.CharField(max_length=20, choices=sweep_choices, null=True)
+    putkey_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_putkey = models.CharField(max_length=20, choices=putkey_choices, null=True)
+    pound_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_pound = models.CharField(max_length=20, choices=pound_choices, null=True)
+    usesaw_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_usesaw = models.CharField(max_length=20, choices=usesaw_choices, null=True)
+    type_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_type = models.CharField(max_length=20, choices=type_choices, null=True)
+    ptndread_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_ptndread = models.CharField(max_length=20, choices=ptndread_choices, null=True)
+    dovacuum_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_dovacuum = models.CharField(max_length=20, choices=dovacuum_choices, null=True)
+    waterplt_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_waterplt = models.CharField(max_length=20, choices=waterplt_choices, null=True)
+    playmus_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_playmus = models.CharField(max_length=20, choices=playmus_choices, null=True)
+    ptnddriv_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_ptnddriv = models.CharField(max_length=20, choices=ptnddriv_choices, null=True)
+    washdish_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_washdish = models.CharField(max_length=20, choices=washdish_choices, null=True)
+    usecloth_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_usecloth = models.CharField(max_length=20, choices=usecloth_choices, null=True)
+    usepen_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_usepen = models.CharField(max_length=20, choices=usepen_choices, null=True)
+    dig_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_dig = models.CharField(max_length=20, choices=dig_choices, null=True)
+    wearglas_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_wearglas = models.CharField(max_length=20, choices=wearglas_choices, null=True)

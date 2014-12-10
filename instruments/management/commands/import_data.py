@@ -1,21 +1,29 @@
 import os
-from django.core.management.base import NoArgsCommand
+from django.core.management.base import BaseCommand
+from optparse import make_option
 from common.models import *
 import instruments.models
 from import_data_helper import ImportHelper
 
 
-class Command(NoArgsCommand):
+class Command(BaseCommand):
+
+    option_list = BaseCommand.option_list + (
+        make_option('--splitcol',
+            action='store_true',
+            dest='splitcol',
+            default=False),
+    )
 
     def handle(self, *args, **options):
 
         path_to_data_file = args[0]
         data_file = os.path.splitext(os.path.basename(path_to_data_file))[0]
-
         instrument = os.path.splitext(path_to_data_file)[0].split('/')[-2]
         instrument_model = getattr(instruments.models, instrument)
 
-        import_helper = ImportHelper(path_to_data_file, data_file, instrument_model)
+        splitcol = options['splitcol']
+        import_helper = ImportHelper(path_to_data_file, data_file, instrument_model, splitcol)
         import_helper.import_data()
 
         instrument_language, instrument_name = instrument.split('_')
@@ -56,6 +64,6 @@ class Command(NoArgsCommand):
                                                            dataset=administration_data['source_dataset'],
                                                            instrument=instrument)
 
-            instrument_model.objects.filter(pk=instrument.pk).update(**administration_data['instrument_data'])
+            instrument_model.objects.filter(pk=instrument.pk).update(**administration_data['item_data'])
 
             administration.save()
