@@ -33,13 +33,8 @@ class ImportHelper:
         return int(age.years*12 + age.months + float(age.days) / avg_month)
 
     def get_field_value(self, column, field_type, group, row_values):
-#        if self.splitcol and field_type == 'word':
-#            columns = [column + 'p', column + 'u']
-#        else:
-#            columns = [column]
-#        for column in columns:
         value = row_values[self.col_map[column]]
-        if value != 'Null' and value != '':
+        if value != 'Null' and value != '' and value != '#NULL!':
             if field_type in ('study_id',):
                 return value
             elif field_type in ('birth_order', 'data_age', 'mom_ed'):
@@ -130,9 +125,11 @@ class ImportHelper:
             administration = self.get_data_fields(cols, 'admin', row_values)
             administration['source_name'] = self.source_name
             administration['source_dataset'] = self.source_dataset
-            if child['date_of_birth'] and administration['date_of_test']:
+            if child['date_of_birth'] is not None and administration['date_of_test'] is not None:
                 computed_age = self.compute_age(child['date_of_birth'], administration['date_of_test'])
                 administration['age'] = computed_age
+            else:
+                administration['age'] = administration['data_age']
 
             # get item data
             item_data = self.get_data_fields(cols, 'item', row_values)

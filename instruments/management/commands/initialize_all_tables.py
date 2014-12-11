@@ -5,7 +5,7 @@ class Command(NoArgsCommand):
 
     def handle(self, *args, **options):
 
-        instruments = open('raw_data/instruments_future.txt', 'r').read().split('\n')
+        instruments = open('raw_data/instruments.txt', 'r').read().split('\n')
         instruments = filter(lambda i: i != '', instruments)
 
         for instrument in instruments:
