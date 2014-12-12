@@ -42,9 +42,10 @@ class ImportHelper:
             elif field_type in ('date_of_birth, date_of_test'):
                 return self.format_date(value, self.datemode)
             elif field_type in ('ethnicity', 'sex') or group == 'item':
-                if isinstance(value, str):
-                    value = value.lower()
-                if value in self.field_value_mapping[field_type]:
+                value = str(value).lower()
+                if self.splitcol and field_type == 'word':
+                    value += column[-1]
+                if value in self.field_value_mapping[field_type].keys():
                     return self.field_value_mapping[field_type][value]
 
     def get_data_fields(self, cols, group, row_values):
