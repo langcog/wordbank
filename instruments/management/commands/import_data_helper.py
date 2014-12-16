@@ -42,11 +42,14 @@ class ImportHelper:
             elif field_type in ('date_of_birth, date_of_test'):
                 return self.format_date(value, self.datemode)
             elif field_type in ('ethnicity', 'sex') or group == 'item':
+                if isinstance(value, float):
+                    value = int(value)
                 value = str(value).lower()
                 if self.splitcol and field_type == 'word':
                     value += column[-1]
-                if value in self.field_value_mapping[field_type].keys():
-                    return self.field_value_mapping[field_type][value]
+#                if value in self.field_value_mapping[field_type].keys():
+#                print column, field_type, self.field_value_mapping[field_type], value
+                return self.field_value_mapping[field_type][value]
 
     def get_data_fields(self, cols, group, row_values):
         group_cols = cols[group]
@@ -68,7 +71,7 @@ class ImportHelper:
         if len(dataset) == 3:
             self.source_name, self.source_dataset = dataset[1:]
         elif len(dataset) == 2:
-            self.source_name, self.source_dataset = dataset[1:], ''
+            self.source_name, self.source_dataset = dataset[1], ''
         else:
             raise RuntimeError("Invalid dataset filename.")
 
@@ -80,10 +83,12 @@ class ImportHelper:
         for row in xrange(1, value_mapping_sheet.nrows):
             row_values = list(value_mapping_sheet.row_values(row))
             field_type, value, data_value = row_values[:3]
-            if isinstance(value, str):
-                data_value = data_value.lower()
+            if isinstance(data_value, float):
+                data_value = int(data_value)
+            data_value = str(data_value).lower()
             if data_value is not None and data_value != '':
                 self.field_value_mapping[field_type][data_value] = value
+#        print self.field_value_mapping
 
         # make a mapping between datasheet column names and model field names/types
         field_mapping_sheet = book.sheet_by_name('field_mapping')

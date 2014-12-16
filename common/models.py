@@ -26,7 +26,7 @@ class WordMapping(models.Model):
 class Child(models.Model):
     birth_order = models.IntegerField(null=True, blank=True)
     date_of_birth = models.DateField(null=True, blank=True)
-    ethnicities = (('A', 'Asian'), ('B', 'Black'), ('H', 'Hispanic'), ('W', 'White'))
+    ethnicities = (('A', 'Asian'), ('B', 'Black'), ('H', 'Hispanic'), ('W', 'White'), ('O', 'Other/Mixed'))
     ethnicity = models.CharField(max_length=1, choices=ethnicities, null=True, blank=True)
     mom_ed = models.IntegerField(null=True, blank=True)
     sexes = (('M', 'Male'), ('F', 'Female'))

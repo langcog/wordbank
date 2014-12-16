@@ -37,7 +37,7 @@ class Command(BaseCommand):
             # Initialize the Child here.
             child = Child.objects.create(study_id=child_data['study_id'])
             child.date_of_birth = child_data['date_of_birth']
-            child.gender = child_data['gender']
+            child.sex = child_data['sex']
             child.birth_order = child_data['birth_order']
             child.mom_ed = child_data['mom_ed']
             if Ethnicity.objects.filter(id=child_data['ethnic_num']).exists():
@@ -49,21 +49,22 @@ class Command(BaseCommand):
         for i, administration_data in import_helper.administrations.iteritems():
 
             # Create the instrument and the administration here.
-            instrument = instrument_model.objects.create()
+            instrument_obj = instrument_model.objects.create()
             administration = Administration.objects.create(child=children[i],
                                                            date_of_test=administration_data['date_of_test'],
                                                            instrument=instruments_map,
-                                                           data_id=instrument.pk,
+                                                           data_id=instrument_obj.pk,
                                                            age=administration_data['age'],
                                                            data_age=administration_data['data_age'])
 
-            if Source.objects.filter(name=administration_data['source_name'],
-                                     dataset=administration_data['source_dataset'],
-                                     instrument=instrument).exists():
-                administration.source = Source.objects.get(name=administration_data['source_name'],
-                                                           dataset=administration_data['source_dataset'],
-                                                           instrument=instrument)
+#            if Source.objects.filter(name=administration_data['source_name'],
+#                                     dataset=administration_data['source_dataset'],
+#                                     instrument=instrument).exists():
+#            print administration_data['source_name'], administration_data['source_dataset'], instrument
+            administration.source = Source.objects.get(name=administration_data['source_name'],
+                                                       dataset=administration_data['source_dataset'],
+                                                       instrument=instrument)
 
-            instrument_model.objects.filter(pk=instrument.pk).update(**administration_data['item_data'])
+            instrument_model.objects.filter(pk=instrument_obj.pk).update(**administration_data['item_data'])
 
             administration.save()
