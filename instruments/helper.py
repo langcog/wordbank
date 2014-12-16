@@ -61,9 +61,12 @@ def search(request):
       if request['instrument'] == subclass.__name__:
         instrument_class = subclass
   if 'source_name' in request:
-    admins = admins.filter(Source__name=request['source_name'])
-  if 'gender' in request and (request['gender'] == 'M' or request['gender'] == 'F'):
-    admins.filter(gender = request['gender'])
+    admins = admins.filter(source__name=request['source_name'])
+  if 'gender' in request:
+    if 'M' in request['gender'] and 'F' not in  request['gender']:
+      admins.filter(gender = 'M')
+    elif 'M' not in request['gender'] and 'F' in  request['gender']:
+      admins.filter(gender = 'F')
   if 'data_age1' in request:
     q = (request['data_age1'])
     if q is not None and q != '':
@@ -91,8 +94,12 @@ def createCSV(writer, admins, instrument_class):
     row.append(admin.child.date_of_birth)
     row.append(admin.age)
     row.append(admin.child.mom_ed)
-    row.append(admin.child.ethnicity)
+    if admin.child.ethnicity is not None:
+      row.append(admin.child.ethnicity.ethnicity)
+    else:
+      row.append('unknown')
     row.append(admin.source.name)
+    row.append(admin.date_of_test)
     if not instrument_class.objects.filter(pk=admin.data_id).exists():
       continue
     obj = instrument_class.objects.get(pk=admin.data_id).__dict__
