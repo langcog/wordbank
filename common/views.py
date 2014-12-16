@@ -29,13 +29,21 @@ class Contribute(View):
     return render(request, 'contribute.html', {})
 
 class Reports(View):
+
   def get(self, request):
-    id = 'wordle_app'
+    id = None
     if 'id' in request.GET:
       id = request.GET['id']
-    return render(request, 'reports.html', {
-      'shinyServerIP': settings.SHINY_SERVER_IP, 
-      'id': id})
+      return render(request, 'reports.html', {
+             'shinyServerIP': settings.SHINY_SERVER_IP,
+             'id': id})
+    else:
+        return render(request, 'reports_landing.html', {})
+
+class Blog(View):
+
+  def get(self, request):
+    return render(request, 'blog.html', {})
 
 class Survey(View):
   def get(self, request):
