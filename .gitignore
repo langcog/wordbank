@@ -5,7 +5,7 @@ env/
 .DS_Store
 dev
 sitestatic
-$*.xlsx
+~\$*.xlsx
 src/*
 .Rhistory
 *.pem
