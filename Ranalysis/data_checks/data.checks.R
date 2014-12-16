@@ -17,10 +17,10 @@ library(RMySQL)
 
 # connect to local databse
 #wordbank <- src_sqlite('wordbank.sqlite')
-#wordbank <- src_mysql(dbname='wordbank')
+wordbank <- src_mysql(dbname='wordbank')
 
-wordbank <- src_mysql(dbname='wordbank',host="54.200.225.86", 
-                      user="wordbank",password="wordbank")
+#wordbank <- src_mysql(dbname='wordbank',host="54.200.225.86", 
+#                      user="wordbank",password="wordbank")
 
 # load all tables
 admin.table <- tbl(wordbank,"common_administration")
@@ -28,132 +28,53 @@ child.table <- tbl(wordbank,"common_child")
 instruments.table <- tbl(wordbank,"common_instrumentsmap")
 source.table <- tbl(wordbank,"common_source")
 wordinfo.table <- tbl(wordbank,"common_wordinfo")
-mapping.table <- tbl(wordbank,"common_wordmapping")
-cdicat.table <- tbl(wordbank,"common_cdicategory")
-ws.table <- tbl(wordbank,"instruments_ws")
-wg.table <- tbl(wordbank,"instruments_wg")
+wordmapping.table <- tbl(wordbank,"common_wordmapping")
+ws.table <- tbl(wordbank,"instruments_english_ws")
+wg.table <- tbl(wordbank,"instruments_english_wg")
 
-wg.vocab.words <- as.data.frame(select(wg.table,
-                                       basetable_ptr_id,col_baabaa:col_some))
 ws.vocab.words <- as.data.frame(select(ws.table,
-                                      basetable_ptr_id,col_baabaa:col_connthen))
-names(wg.vocab.words)[1] <- "id"
-names(ws.vocab.words)[1] <- "id"
+                                       basetable_ptr_id,
+                                       item_baa_baa:item_then)) %>%
+  rename(id = basetable_ptr_id) %>% # Rename the id
+  gather(word,score,item_baa_baa:item_then) %>% # Arrange in longform
+  mutate(word = str_replace(word, "item_", "")) # Strip off item_ from words
+ws.vocab.words <- mutate(ws.vocab.words, produces = score == 'produces')
+ws.vocab.words <- as.tbl(ws.vocab.words)
 
-# arrange vocab data by kid and word
-wg.kid.words <- melt(wg.vocab.words,
-                     id.vars="id",
-                     variable.name = "word",
-                     value.name = "score")
-wg.kid.words = mutate(wg.kid.words, 
-                      understands = score >= 1,
-                      produces = score == 2)
+ws.scores <- as.tbl(ws.vocab.words %>%
+                      group_by(id) %>% # Group by child
+                      summarise(productive = na.sum(produces))) # Compute productive vocabulary
+admins <- admin.table %>%
+  select(data_id,child_id,age,data_age,source_id) %>%
+  rename(id = data_id, child.id = child_id,source.id = source_id) 
+admins <- as.data.frame(admins)
 
-ws.kid.words <- melt(ws.vocab.words,
-                     id.vars="id",
-                     variable.name = "word",
-                     value.name = "score")
-ws.kid.words = mutate(ws.kid.words, 
-                     understands = score == 1,
-                     produces = score == 1)
+demos <- select(child.table,study_id,id,sex,mom_ed,birth_order) %>%
+  rename(child.id = id) # Rename id fields
+demos <- as.data.frame(demos)
 
-wg.kid.words <- mutate(wg.kid.words,
-                       lemma = substr(word, 5, length(word)))
-ws.kid.words <- mutate(ws.kid.words,
-                       lemma = substr(word, 5, length(word)))
+# Join age and demographics together
+child.data <- as.tbl(left_join(admins,demos))
+sources <- select(source.table,id,name,dataset,instrument) %>%
+  rename(source.id = id,
+         source.name = name,
+         source.dataset = dataset,
+         source.instrument = instrument)
+sources <- as.data.frame(sources)
+child.data <- as.tbl(left_join(child.data, sources))
 
-sources <- as.data.frame(source.table)
-names(sources)[1] <- 'source_id'
+ws.data <- left_join(ws.scores, child.data) %>%
+  filter(source.name == 'Marchman',
+         source.dataset == 'Norming',
+         source.instrument == 'English_WS') %>%
+  select(-child.id,-source.id) #drop redundant columns
+ws.data <- mutate(ws.data, age.check = age==data_age)
 
-admins <- as.data.frame(select(admin.table,data_id,child_id,age,source_id))
-children <- as.data.frame(select(child.table,id,gender))
-child.data <- merge(children,admins,by.y="child_id",by.x = "id")
-
-child.source.data <- merge(child.data, sources)
-
-word.info <- as.data.frame(wordinfo.table)
-cdi.cat <- as.data.frame(cdicat.table)
-names(cdi.cat)[1] <- "CDI_cat_id"
-names(cdi.cat)[2] <- "category"
-
-word.cats <- merge(word.info, cdi.cat)
-wg.kid.word.data <- merge(wg.kid.words, word.cats)
-ws.kid.word.data <- merge(ws.kid.words, word.cats)
-
-wg.vocab.sizes <- wg.kid.word.data %>%
-  group_by(id) %>%
-  summarise(productive = sum(produces),
-            receptive = sum(understands))
-wg.cat.sizes <- wg.kid.word.data %>%
-  group_by(id, category) %>%
-  summarise(productive = sum(produces),
-            receptive = sum(understands))
-
-ws.vocab.sizes <- ws.kid.word.data %>%
-  group_by(id) %>%
-  summarise(productive = sum(produces),
-            receptive = sum(understands))
-ws.cat.sizes <- ws.kid.word.data %>%
-  group_by(id, category) %>%
-  summarise(productive = sum(produces),
-            receptive = sum(understands))
-
-wg.vocab.data <- merge(child.source.data, wg.vocab.sizes)
-wg.cat.data <- merge(child.source.data, wg.cat.sizes)
-
-ws.vocab.data <- merge(child.source.data, ws.vocab.sizes)
-ws.cat.data <- merge(child.source.data, ws.cat.sizes)
-
-wg.age.gender.summary <- wg.vocab.data %>% group_by(gender, age) %>%
-  summarise(n = n(),
-            productive = mean(productive),
-            receptive = mean(receptive))
-
-wg.cat.summary <- wg.cat.data %>% group_by(category) %>%
-  summarise(productive = mean(productive),
-            receptive = mean(receptive))
-
-wg.age.gender.cat.summary <- wg.cat.data %>% group_by(gender, age, category) %>%
-  summarise(productive = mean(productive),
-            receptive = mean(receptive))
-
-wg.source.summary <- wg.vocab.data %>% group_by(name) %>%
-  summarise(n = n(),
-            productive = mean(productive),
-            receptive = mean(receptive))
-
-ws.age.gender.summary <- ws.vocab.data %>% group_by(gender, age) %>%
-  summarise(n = n(),
-            ci.l = ci.low(productive),
-            ci.h = ci.high(productive),
-            productive = mean(productive))
-            
-ws.cat.summary <- ws.cat.data %>% group_by(category) %>%
-  summarise(ci.l = ci.low(productive),
-            ci.h = ci.high(productive),
-            productive = mean(productive))
-
-ws.age.gender.cat.summary <- ws.cat.data %>% group_by(gender, age, category) %>%
-  summarise(ci.l = ci.low(productive),
-            ci.h = ci.high(productive),
-            productive = mean(productive))
-
-ws.source.age.cat.summary <- ws.cat.data %>% group_by(name, age, category) %>%
-  filter(name != 'Indiana University, Bloomington') %>%
-  summarise(ci.l = ci.low(productive),
-            ci.h = ci.high(productive),
-            productive = mean(productive))
-
-ws.source.summary <- ws.vocab.data %>% group_by(name) %>%
-  summarise(n = n(),
-            ci.l = ci.low(productive),
-            ci.h = ci.high(productive),
-            productive = mean(productive))
-
-ws.indiana.age.summary <- ws.vocab.data %>%
-  filter(name=="Indiana University, Bloomington") %>%
-  group_by(age) %>%
-  summarise(n = n(),
-            ci.l = ci.low(productive),
-            ci.h = ci.high(productive),
-            productive = mean(productive))
+productive.vocab <- ws.data %>%
+  group_by(age,sex) %>%
+  summarise(
+    mean = mean(productive),    
+    median = median(productive),
+    ci.l = ci.low(productive),
+    ci.h = ci.high(productive),
+    n = n())
