@@ -34,7 +34,7 @@ class ImportHelper:
 
     def get_field_value(self, column, field_type, group, row_values):
         value = row_values[self.col_map[column]]
-        if value != 'Null' and value != '' and value != '#NULL!':
+        if value != 'Null' and value != '' and value != '#NULL!' and value != ' ':
             if field_type in ('study_id',):
                 return value
             elif field_type in ('birth_order', 'data_age', 'mom_ed'):

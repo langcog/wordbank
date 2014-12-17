@@ -4806,3 +4806,4442 @@ class Spanish_WG(BaseTable):
     item_en = models.CharField(max_length=20, choices=en_choices, null=True)
     para_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
     item_para = models.CharField(max_length=20, choices=para_choices, null=True)
+
+
+class Norwegian_WS(BaseTable):
+    i_1_1_choices = [(u'produces', u'produces')]
+    item_i_1_1 = models.CharField(max_length=20, choices=i_1_1_choices, null=True)
+    i_1_2_choices = [(u'produces', u'produces')]
+    item_i_1_2 = models.CharField(max_length=20, choices=i_1_2_choices, null=True)
+    i_1_3_choices = [(u'produces', u'produces')]
+    item_i_1_3 = models.CharField(max_length=20, choices=i_1_3_choices, null=True)
+    i_1_4_choices = [(u'produces', u'produces')]
+    item_i_1_4 = models.CharField(max_length=20, choices=i_1_4_choices, null=True)
+    i_1_5_choices = [(u'produces', u'produces')]
+    item_i_1_5 = models.CharField(max_length=20, choices=i_1_5_choices, null=True)
+    i_1_6_choices = [(u'produces', u'produces')]
+    item_i_1_6 = models.CharField(max_length=20, choices=i_1_6_choices, null=True)
+    i_1_7_choices = [(u'produces', u'produces')]
+    item_i_1_7 = models.CharField(max_length=20, choices=i_1_7_choices, null=True)
+    i_1_8_choices = [(u'produces', u'produces')]
+    item_i_1_8 = models.CharField(max_length=20, choices=i_1_8_choices, null=True)
+    i_1_9_choices = [(u'produces', u'produces')]
+    item_i_1_9 = models.CharField(max_length=20, choices=i_1_9_choices, null=True)
+    i_1_10_choices = [(u'produces', u'produces')]
+    item_i_1_10 = models.CharField(max_length=20, choices=i_1_10_choices, null=True)
+    i_1_11_choices = [(u'produces', u'produces')]
+    item_i_1_11 = models.CharField(max_length=20, choices=i_1_11_choices, null=True)
+    i_1_12_choices = [(u'produces', u'produces')]
+    item_i_1_12 = models.CharField(max_length=20, choices=i_1_12_choices, null=True)
+    i_2_1_choices = [(u'produces', u'produces')]
+    item_i_2_1 = models.CharField(max_length=20, choices=i_2_1_choices, null=True)
+    i_2_2_choices = [(u'produces', u'produces')]
+    item_i_2_2 = models.CharField(max_length=20, choices=i_2_2_choices, null=True)
+    i_2_3_choices = [(u'produces', u'produces')]
+    item_i_2_3 = models.CharField(max_length=20, choices=i_2_3_choices, null=True)
+    i_2_4_choices = [(u'produces', u'produces')]
+    item_i_2_4 = models.CharField(max_length=20, choices=i_2_4_choices, null=True)
+    i_2_5_choices = [(u'produces', u'produces')]
+    item_i_2_5 = models.CharField(max_length=20, choices=i_2_5_choices, null=True)
+    i_2_6_choices = [(u'produces', u'produces')]
+    item_i_2_6 = models.CharField(max_length=20, choices=i_2_6_choices, null=True)
+    i_2_7_choices = [(u'produces', u'produces')]
+    item_i_2_7 = models.CharField(max_length=20, choices=i_2_7_choices, null=True)
+    i_2_8_choices = [(u'produces', u'produces')]
+    item_i_2_8 = models.CharField(max_length=20, choices=i_2_8_choices, null=True)
+    i_2_9_choices = [(u'produces', u'produces')]
+    item_i_2_9 = models.CharField(max_length=20, choices=i_2_9_choices, null=True)
+    i_2_10_choices = [(u'produces', u'produces')]
+    item_i_2_10 = models.CharField(max_length=20, choices=i_2_10_choices, null=True)
+    i_2_11_choices = [(u'produces', u'produces')]
+    item_i_2_11 = models.CharField(max_length=20, choices=i_2_11_choices, null=True)
+    i_2_12_choices = [(u'produces', u'produces')]
+    item_i_2_12 = models.CharField(max_length=20, choices=i_2_12_choices, null=True)
+    i_2_13_choices = [(u'produces', u'produces')]
+    item_i_2_13 = models.CharField(max_length=20, choices=i_2_13_choices, null=True)
+    i_2_14_choices = [(u'produces', u'produces')]
+    item_i_2_14 = models.CharField(max_length=20, choices=i_2_14_choices, null=True)
+    i_2_15_choices = [(u'produces', u'produces')]
+    item_i_2_15 = models.CharField(max_length=20, choices=i_2_15_choices, null=True)
+    i_2_16_choices = [(u'produces', u'produces')]
+    item_i_2_16 = models.CharField(max_length=20, choices=i_2_16_choices, null=True)
+    i_2_17_choices = [(u'produces', u'produces')]
+    item_i_2_17 = models.CharField(max_length=20, choices=i_2_17_choices, null=True)
+    i_2_18_choices = [(u'produces', u'produces')]
+    item_i_2_18 = models.CharField(max_length=20, choices=i_2_18_choices, null=True)
+    i_2_19_choices = [(u'produces', u'produces')]
+    item_i_2_19 = models.CharField(max_length=20, choices=i_2_19_choices, null=True)
+    i_2_20_choices = [(u'produces', u'produces')]
+    item_i_2_20 = models.CharField(max_length=20, choices=i_2_20_choices, null=True)
+    i_2_21_choices = [(u'produces', u'produces')]
+    item_i_2_21 = models.CharField(max_length=20, choices=i_2_21_choices, null=True)
+    i_2_22_choices = [(u'produces', u'produces')]
+    item_i_2_22 = models.CharField(max_length=20, choices=i_2_22_choices, null=True)
+    i_2_23_choices = [(u'produces', u'produces')]
+    item_i_2_23 = models.CharField(max_length=20, choices=i_2_23_choices, null=True)
+    i_2_24_choices = [(u'produces', u'produces')]
+    item_i_2_24 = models.CharField(max_length=20, choices=i_2_24_choices, null=True)
+    i_2_25_choices = [(u'produces', u'produces')]
+    item_i_2_25 = models.CharField(max_length=20, choices=i_2_25_choices, null=True)
+    i_2_26_choices = [(u'produces', u'produces')]
+    item_i_2_26 = models.CharField(max_length=20, choices=i_2_26_choices, null=True)
+    i_2_27_choices = [(u'produces', u'produces')]
+    item_i_2_27 = models.CharField(max_length=20, choices=i_2_27_choices, null=True)
+    i_2_28_choices = [(u'produces', u'produces')]
+    item_i_2_28 = models.CharField(max_length=20, choices=i_2_28_choices, null=True)
+    i_2_29_choices = [(u'produces', u'produces')]
+    item_i_2_29 = models.CharField(max_length=20, choices=i_2_29_choices, null=True)
+    i_2_30_choices = [(u'produces', u'produces')]
+    item_i_2_30 = models.CharField(max_length=20, choices=i_2_30_choices, null=True)
+    i_2_31_choices = [(u'produces', u'produces')]
+    item_i_2_31 = models.CharField(max_length=20, choices=i_2_31_choices, null=True)
+    i_2_32_choices = [(u'produces', u'produces')]
+    item_i_2_32 = models.CharField(max_length=20, choices=i_2_32_choices, null=True)
+    i_2_33_choices = [(u'produces', u'produces')]
+    item_i_2_33 = models.CharField(max_length=20, choices=i_2_33_choices, null=True)
+    i_2_34_choices = [(u'produces', u'produces')]
+    item_i_2_34 = models.CharField(max_length=20, choices=i_2_34_choices, null=True)
+    i_2_35_choices = [(u'produces', u'produces')]
+    item_i_2_35 = models.CharField(max_length=20, choices=i_2_35_choices, null=True)
+    i_2_36_choices = [(u'produces', u'produces')]
+    item_i_2_36 = models.CharField(max_length=20, choices=i_2_36_choices, null=True)
+    i_2_37_choices = [(u'produces', u'produces')]
+    item_i_2_37 = models.CharField(max_length=20, choices=i_2_37_choices, null=True)
+    i_2_38_choices = [(u'produces', u'produces')]
+    item_i_2_38 = models.CharField(max_length=20, choices=i_2_38_choices, null=True)
+    i_2_39_choices = [(u'produces', u'produces')]
+    item_i_2_39 = models.CharField(max_length=20, choices=i_2_39_choices, null=True)
+    i_2_40_choices = [(u'produces', u'produces')]
+    item_i_2_40 = models.CharField(max_length=20, choices=i_2_40_choices, null=True)
+    i_2_41_choices = [(u'produces', u'produces')]
+    item_i_2_41 = models.CharField(max_length=20, choices=i_2_41_choices, null=True)
+    i_2_42_choices = [(u'produces', u'produces')]
+    item_i_2_42 = models.CharField(max_length=20, choices=i_2_42_choices, null=True)
+    i_2_43_choices = [(u'produces', u'produces')]
+    item_i_2_43 = models.CharField(max_length=20, choices=i_2_43_choices, null=True)
+    i_2_44_choices = [(u'produces', u'produces')]
+    item_i_2_44 = models.CharField(max_length=20, choices=i_2_44_choices, null=True)
+    i_3_1_choices = [(u'produces', u'produces')]
+    item_i_3_1 = models.CharField(max_length=20, choices=i_3_1_choices, null=True)
+    i_3_2_choices = [(u'produces', u'produces')]
+    item_i_3_2 = models.CharField(max_length=20, choices=i_3_2_choices, null=True)
+    i_3_3_choices = [(u'produces', u'produces')]
+    item_i_3_3 = models.CharField(max_length=20, choices=i_3_3_choices, null=True)
+    i_3_4_choices = [(u'produces', u'produces')]
+    item_i_3_4 = models.CharField(max_length=20, choices=i_3_4_choices, null=True)
+    i_3_5_choices = [(u'produces', u'produces')]
+    item_i_3_5 = models.CharField(max_length=20, choices=i_3_5_choices, null=True)
+    i_3_6_choices = [(u'produces', u'produces')]
+    item_i_3_6 = models.CharField(max_length=20, choices=i_3_6_choices, null=True)
+    i_3_7_choices = [(u'produces', u'produces')]
+    item_i_3_7 = models.CharField(max_length=20, choices=i_3_7_choices, null=True)
+    i_3_8_choices = [(u'produces', u'produces')]
+    item_i_3_8 = models.CharField(max_length=20, choices=i_3_8_choices, null=True)
+    i_3_9_choices = [(u'produces', u'produces')]
+    item_i_3_9 = models.CharField(max_length=20, choices=i_3_9_choices, null=True)
+    i_3_10_choices = [(u'produces', u'produces')]
+    item_i_3_10 = models.CharField(max_length=20, choices=i_3_10_choices, null=True)
+    i_3_11_choices = [(u'produces', u'produces')]
+    item_i_3_11 = models.CharField(max_length=20, choices=i_3_11_choices, null=True)
+    i_3_12_choices = [(u'produces', u'produces')]
+    item_i_3_12 = models.CharField(max_length=20, choices=i_3_12_choices, null=True)
+    i_3_13_choices = [(u'produces', u'produces')]
+    item_i_3_13 = models.CharField(max_length=20, choices=i_3_13_choices, null=True)
+    i_3_14_choices = [(u'produces', u'produces')]
+    item_i_3_14 = models.CharField(max_length=20, choices=i_3_14_choices, null=True)
+    i_4_1_choices = [(u'produces', u'produces')]
+    item_i_4_1 = models.CharField(max_length=20, choices=i_4_1_choices, null=True)
+    i_4_2_choices = [(u'produces', u'produces')]
+    item_i_4_2 = models.CharField(max_length=20, choices=i_4_2_choices, null=True)
+    i_4_3_choices = [(u'produces', u'produces')]
+    item_i_4_3 = models.CharField(max_length=20, choices=i_4_3_choices, null=True)
+    i_4_4_choices = [(u'produces', u'produces')]
+    item_i_4_4 = models.CharField(max_length=20, choices=i_4_4_choices, null=True)
+    i_4_5_choices = [(u'produces', u'produces')]
+    item_i_4_5 = models.CharField(max_length=20, choices=i_4_5_choices, null=True)
+    i_4_6_choices = [(u'produces', u'produces')]
+    item_i_4_6 = models.CharField(max_length=20, choices=i_4_6_choices, null=True)
+    i_4_7_choices = [(u'produces', u'produces')]
+    item_i_4_7 = models.CharField(max_length=20, choices=i_4_7_choices, null=True)
+    i_4_8_choices = [(u'produces', u'produces')]
+    item_i_4_8 = models.CharField(max_length=20, choices=i_4_8_choices, null=True)
+    i_4_9_choices = [(u'produces', u'produces')]
+    item_i_4_9 = models.CharField(max_length=20, choices=i_4_9_choices, null=True)
+    i_4_10_choices = [(u'produces', u'produces')]
+    item_i_4_10 = models.CharField(max_length=20, choices=i_4_10_choices, null=True)
+    i_4_11_choices = [(u'produces', u'produces')]
+    item_i_4_11 = models.CharField(max_length=20, choices=i_4_11_choices, null=True)
+    i_4_12_choices = [(u'produces', u'produces')]
+    item_i_4_12 = models.CharField(max_length=20, choices=i_4_12_choices, null=True)
+    i_4_13_choices = [(u'produces', u'produces')]
+    item_i_4_13 = models.CharField(max_length=20, choices=i_4_13_choices, null=True)
+    i_4_14_choices = [(u'produces', u'produces')]
+    item_i_4_14 = models.CharField(max_length=20, choices=i_4_14_choices, null=True)
+    i_4_15_choices = [(u'produces', u'produces')]
+    item_i_4_15 = models.CharField(max_length=20, choices=i_4_15_choices, null=True)
+    i_4_16_choices = [(u'produces', u'produces')]
+    item_i_4_16 = models.CharField(max_length=20, choices=i_4_16_choices, null=True)
+    i_4_17_choices = [(u'produces', u'produces')]
+    item_i_4_17 = models.CharField(max_length=20, choices=i_4_17_choices, null=True)
+    i_4_18_choices = [(u'produces', u'produces')]
+    item_i_4_18 = models.CharField(max_length=20, choices=i_4_18_choices, null=True)
+    i_5_1_choices = [(u'produces', u'produces')]
+    item_i_5_1 = models.CharField(max_length=20, choices=i_5_1_choices, null=True)
+    i_5_2_choices = [(u'produces', u'produces')]
+    item_i_5_2 = models.CharField(max_length=20, choices=i_5_2_choices, null=True)
+    i_5_3_choices = [(u'produces', u'produces')]
+    item_i_5_3 = models.CharField(max_length=20, choices=i_5_3_choices, null=True)
+    i_5_4_choices = [(u'produces', u'produces')]
+    item_i_5_4 = models.CharField(max_length=20, choices=i_5_4_choices, null=True)
+    i_5_5_choices = [(u'produces', u'produces')]
+    item_i_5_5 = models.CharField(max_length=20, choices=i_5_5_choices, null=True)
+    i_5_6_choices = [(u'produces', u'produces')]
+    item_i_5_6 = models.CharField(max_length=20, choices=i_5_6_choices, null=True)
+    i_5_7_choices = [(u'produces', u'produces')]
+    item_i_5_7 = models.CharField(max_length=20, choices=i_5_7_choices, null=True)
+    i_5_8_choices = [(u'produces', u'produces')]
+    item_i_5_8 = models.CharField(max_length=20, choices=i_5_8_choices, null=True)
+    i_5_9_choices = [(u'produces', u'produces')]
+    item_i_5_9 = models.CharField(max_length=20, choices=i_5_9_choices, null=True)
+    i_5_10_choices = [(u'produces', u'produces')]
+    item_i_5_10 = models.CharField(max_length=20, choices=i_5_10_choices, null=True)
+    i_5_11_choices = [(u'produces', u'produces')]
+    item_i_5_11 = models.CharField(max_length=20, choices=i_5_11_choices, null=True)
+    i_5_12_choices = [(u'produces', u'produces')]
+    item_i_5_12 = models.CharField(max_length=20, choices=i_5_12_choices, null=True)
+    i_5_13_choices = [(u'produces', u'produces')]
+    item_i_5_13 = models.CharField(max_length=20, choices=i_5_13_choices, null=True)
+    i_5_14_choices = [(u'produces', u'produces')]
+    item_i_5_14 = models.CharField(max_length=20, choices=i_5_14_choices, null=True)
+    i_5_15_choices = [(u'produces', u'produces')]
+    item_i_5_15 = models.CharField(max_length=20, choices=i_5_15_choices, null=True)
+    i_5_16_choices = [(u'produces', u'produces')]
+    item_i_5_16 = models.CharField(max_length=20, choices=i_5_16_choices, null=True)
+    i_5_17_choices = [(u'produces', u'produces')]
+    item_i_5_17 = models.CharField(max_length=20, choices=i_5_17_choices, null=True)
+    i_5_18_choices = [(u'produces', u'produces')]
+    item_i_5_18 = models.CharField(max_length=20, choices=i_5_18_choices, null=True)
+    i_5_19_choices = [(u'produces', u'produces')]
+    item_i_5_19 = models.CharField(max_length=20, choices=i_5_19_choices, null=True)
+    i_5_20_choices = [(u'produces', u'produces')]
+    item_i_5_20 = models.CharField(max_length=20, choices=i_5_20_choices, null=True)
+    i_5_21_choices = [(u'produces', u'produces')]
+    item_i_5_21 = models.CharField(max_length=20, choices=i_5_21_choices, null=True)
+    i_5_22_choices = [(u'produces', u'produces')]
+    item_i_5_22 = models.CharField(max_length=20, choices=i_5_22_choices, null=True)
+    i_5_23_choices = [(u'produces', u'produces')]
+    item_i_5_23 = models.CharField(max_length=20, choices=i_5_23_choices, null=True)
+    i_5_24_choices = [(u'produces', u'produces')]
+    item_i_5_24 = models.CharField(max_length=20, choices=i_5_24_choices, null=True)
+    i_5_25_choices = [(u'produces', u'produces')]
+    item_i_5_25 = models.CharField(max_length=20, choices=i_5_25_choices, null=True)
+    i_5_26_choices = [(u'produces', u'produces')]
+    item_i_5_26 = models.CharField(max_length=20, choices=i_5_26_choices, null=True)
+    i_5_27_choices = [(u'produces', u'produces')]
+    item_i_5_27 = models.CharField(max_length=20, choices=i_5_27_choices, null=True)
+    i_5_28_choices = [(u'produces', u'produces')]
+    item_i_5_28 = models.CharField(max_length=20, choices=i_5_28_choices, null=True)
+    i_5_29_choices = [(u'produces', u'produces')]
+    item_i_5_29 = models.CharField(max_length=20, choices=i_5_29_choices, null=True)
+    i_5_30_choices = [(u'produces', u'produces')]
+    item_i_5_30 = models.CharField(max_length=20, choices=i_5_30_choices, null=True)
+    i_5_31_choices = [(u'produces', u'produces')]
+    item_i_5_31 = models.CharField(max_length=20, choices=i_5_31_choices, null=True)
+    i_5_32_choices = [(u'produces', u'produces')]
+    item_i_5_32 = models.CharField(max_length=20, choices=i_5_32_choices, null=True)
+    i_5_33_choices = [(u'produces', u'produces')]
+    item_i_5_33 = models.CharField(max_length=20, choices=i_5_33_choices, null=True)
+    i_5_34_choices = [(u'produces', u'produces')]
+    item_i_5_34 = models.CharField(max_length=20, choices=i_5_34_choices, null=True)
+    i_5_35_choices = [(u'produces', u'produces')]
+    item_i_5_35 = models.CharField(max_length=20, choices=i_5_35_choices, null=True)
+    i_5_36_choices = [(u'produces', u'produces')]
+    item_i_5_36 = models.CharField(max_length=20, choices=i_5_36_choices, null=True)
+    i_5_37_choices = [(u'produces', u'produces')]
+    item_i_5_37 = models.CharField(max_length=20, choices=i_5_37_choices, null=True)
+    i_5_38_choices = [(u'produces', u'produces')]
+    item_i_5_38 = models.CharField(max_length=20, choices=i_5_38_choices, null=True)
+    i_5_39_choices = [(u'produces', u'produces')]
+    item_i_5_39 = models.CharField(max_length=20, choices=i_5_39_choices, null=True)
+    i_5_40_choices = [(u'produces', u'produces')]
+    item_i_5_40 = models.CharField(max_length=20, choices=i_5_40_choices, null=True)
+    i_5_41_choices = [(u'produces', u'produces')]
+    item_i_5_41 = models.CharField(max_length=20, choices=i_5_41_choices, null=True)
+    i_5_42_choices = [(u'produces', u'produces')]
+    item_i_5_42 = models.CharField(max_length=20, choices=i_5_42_choices, null=True)
+    i_5_43_choices = [(u'produces', u'produces')]
+    item_i_5_43 = models.CharField(max_length=20, choices=i_5_43_choices, null=True)
+    i_5_44_choices = [(u'produces', u'produces')]
+    item_i_5_44 = models.CharField(max_length=20, choices=i_5_44_choices, null=True)
+    i_5_45_choices = [(u'produces', u'produces')]
+    item_i_5_45 = models.CharField(max_length=20, choices=i_5_45_choices, null=True)
+    i_5_46_choices = [(u'produces', u'produces')]
+    item_i_5_46 = models.CharField(max_length=20, choices=i_5_46_choices, null=True)
+    i_5_47_choices = [(u'produces', u'produces')]
+    item_i_5_47 = models.CharField(max_length=20, choices=i_5_47_choices, null=True)
+    i_5_48_choices = [(u'produces', u'produces')]
+    item_i_5_48 = models.CharField(max_length=20, choices=i_5_48_choices, null=True)
+    i_5_49_choices = [(u'produces', u'produces')]
+    item_i_5_49 = models.CharField(max_length=20, choices=i_5_49_choices, null=True)
+    i_5_50_choices = [(u'produces', u'produces')]
+    item_i_5_50 = models.CharField(max_length=20, choices=i_5_50_choices, null=True)
+    i_5_51_choices = [(u'produces', u'produces')]
+    item_i_5_51 = models.CharField(max_length=20, choices=i_5_51_choices, null=True)
+    i_5_52_choices = [(u'produces', u'produces')]
+    item_i_5_52 = models.CharField(max_length=20, choices=i_5_52_choices, null=True)
+    i_5_53_choices = [(u'produces', u'produces')]
+    item_i_5_53 = models.CharField(max_length=20, choices=i_5_53_choices, null=True)
+    i_5_54_choices = [(u'produces', u'produces')]
+    item_i_5_54 = models.CharField(max_length=20, choices=i_5_54_choices, null=True)
+    i_5_55_choices = [(u'produces', u'produces')]
+    item_i_5_55 = models.CharField(max_length=20, choices=i_5_55_choices, null=True)
+    i_5_56_choices = [(u'produces', u'produces')]
+    item_i_5_56 = models.CharField(max_length=20, choices=i_5_56_choices, null=True)
+    i_5_57_choices = [(u'produces', u'produces')]
+    item_i_5_57 = models.CharField(max_length=20, choices=i_5_57_choices, null=True)
+    i_5_58_choices = [(u'produces', u'produces')]
+    item_i_5_58 = models.CharField(max_length=20, choices=i_5_58_choices, null=True)
+    i_5_59_choices = [(u'produces', u'produces')]
+    item_i_5_59 = models.CharField(max_length=20, choices=i_5_59_choices, null=True)
+    i_5_60_choices = [(u'produces', u'produces')]
+    item_i_5_60 = models.CharField(max_length=20, choices=i_5_60_choices, null=True)
+    i_5_61_choices = [(u'produces', u'produces')]
+    item_i_5_61 = models.CharField(max_length=20, choices=i_5_61_choices, null=True)
+    i_5_62_choices = [(u'produces', u'produces')]
+    item_i_5_62 = models.CharField(max_length=20, choices=i_5_62_choices, null=True)
+    i_5_63_choices = [(u'produces', u'produces')]
+    item_i_5_63 = models.CharField(max_length=20, choices=i_5_63_choices, null=True)
+    i_5_64_choices = [(u'produces', u'produces')]
+    item_i_5_64 = models.CharField(max_length=20, choices=i_5_64_choices, null=True)
+    i_5_65_choices = [(u'produces', u'produces')]
+    item_i_5_65 = models.CharField(max_length=20, choices=i_5_65_choices, null=True)
+    i_5_66_choices = [(u'produces', u'produces')]
+    item_i_5_66 = models.CharField(max_length=20, choices=i_5_66_choices, null=True)
+    i_5_67_choices = [(u'produces', u'produces')]
+    item_i_5_67 = models.CharField(max_length=20, choices=i_5_67_choices, null=True)
+    i_5_68_choices = [(u'produces', u'produces')]
+    item_i_5_68 = models.CharField(max_length=20, choices=i_5_68_choices, null=True)
+    i_6_1_choices = [(u'produces', u'produces')]
+    item_i_6_1 = models.CharField(max_length=20, choices=i_6_1_choices, null=True)
+    i_6_2_choices = [(u'produces', u'produces')]
+    item_i_6_2 = models.CharField(max_length=20, choices=i_6_2_choices, null=True)
+    i_6_3_choices = [(u'produces', u'produces')]
+    item_i_6_3 = models.CharField(max_length=20, choices=i_6_3_choices, null=True)
+    i_6_4_choices = [(u'produces', u'produces')]
+    item_i_6_4 = models.CharField(max_length=20, choices=i_6_4_choices, null=True)
+    i_6_5_choices = [(u'produces', u'produces')]
+    item_i_6_5 = models.CharField(max_length=20, choices=i_6_5_choices, null=True)
+    i_6_6_choices = [(u'produces', u'produces')]
+    item_i_6_6 = models.CharField(max_length=20, choices=i_6_6_choices, null=True)
+    i_6_7_choices = [(u'produces', u'produces')]
+    item_i_6_7 = models.CharField(max_length=20, choices=i_6_7_choices, null=True)
+    i_6_8_choices = [(u'produces', u'produces')]
+    item_i_6_8 = models.CharField(max_length=20, choices=i_6_8_choices, null=True)
+    i_6_9_choices = [(u'produces', u'produces')]
+    item_i_6_9 = models.CharField(max_length=20, choices=i_6_9_choices, null=True)
+    i_6_10_choices = [(u'produces', u'produces')]
+    item_i_6_10 = models.CharField(max_length=20, choices=i_6_10_choices, null=True)
+    i_6_11_choices = [(u'produces', u'produces')]
+    item_i_6_11 = models.CharField(max_length=20, choices=i_6_11_choices, null=True)
+    i_6_12_choices = [(u'produces', u'produces')]
+    item_i_6_12 = models.CharField(max_length=20, choices=i_6_12_choices, null=True)
+    i_6_13_choices = [(u'produces', u'produces')]
+    item_i_6_13 = models.CharField(max_length=20, choices=i_6_13_choices, null=True)
+    i_6_14_choices = [(u'produces', u'produces')]
+    item_i_6_14 = models.CharField(max_length=20, choices=i_6_14_choices, null=True)
+    i_6_15_choices = [(u'produces', u'produces')]
+    item_i_6_15 = models.CharField(max_length=20, choices=i_6_15_choices, null=True)
+    i_6_16_choices = [(u'produces', u'produces')]
+    item_i_6_16 = models.CharField(max_length=20, choices=i_6_16_choices, null=True)
+    i_6_17_choices = [(u'produces', u'produces')]
+    item_i_6_17 = models.CharField(max_length=20, choices=i_6_17_choices, null=True)
+    i_6_18_choices = [(u'produces', u'produces')]
+    item_i_6_18 = models.CharField(max_length=20, choices=i_6_18_choices, null=True)
+    i_6_19_choices = [(u'produces', u'produces')]
+    item_i_6_19 = models.CharField(max_length=20, choices=i_6_19_choices, null=True)
+    i_6_20_choices = [(u'produces', u'produces')]
+    item_i_6_20 = models.CharField(max_length=20, choices=i_6_20_choices, null=True)
+    i_6_21_choices = [(u'produces', u'produces')]
+    item_i_6_21 = models.CharField(max_length=20, choices=i_6_21_choices, null=True)
+    i_6_22_choices = [(u'produces', u'produces')]
+    item_i_6_22 = models.CharField(max_length=20, choices=i_6_22_choices, null=True)
+    i_6_23_choices = [(u'produces', u'produces')]
+    item_i_6_23 = models.CharField(max_length=20, choices=i_6_23_choices, null=True)
+    i_6_24_choices = [(u'produces', u'produces')]
+    item_i_6_24 = models.CharField(max_length=20, choices=i_6_24_choices, null=True)
+    i_6_25_choices = [(u'produces', u'produces')]
+    item_i_6_25 = models.CharField(max_length=20, choices=i_6_25_choices, null=True)
+    i_6_26_choices = [(u'produces', u'produces')]
+    item_i_6_26 = models.CharField(max_length=20, choices=i_6_26_choices, null=True)
+    i_6_27_choices = [(u'produces', u'produces')]
+    item_i_6_27 = models.CharField(max_length=20, choices=i_6_27_choices, null=True)
+    i_6_28_choices = [(u'produces', u'produces')]
+    item_i_6_28 = models.CharField(max_length=20, choices=i_6_28_choices, null=True)
+    i_6_29_choices = [(u'produces', u'produces')]
+    item_i_6_29 = models.CharField(max_length=20, choices=i_6_29_choices, null=True)
+    i_6_30_choices = [(u'produces', u'produces')]
+    item_i_6_30 = models.CharField(max_length=20, choices=i_6_30_choices, null=True)
+    i_7_1_choices = [(u'produces', u'produces')]
+    item_i_7_1 = models.CharField(max_length=20, choices=i_7_1_choices, null=True)
+    i_7_2_choices = [(u'produces', u'produces')]
+    item_i_7_2 = models.CharField(max_length=20, choices=i_7_2_choices, null=True)
+    i_7_3_choices = [(u'produces', u'produces')]
+    item_i_7_3 = models.CharField(max_length=20, choices=i_7_3_choices, null=True)
+    i_7_4_choices = [(u'produces', u'produces')]
+    item_i_7_4 = models.CharField(max_length=20, choices=i_7_4_choices, null=True)
+    i_7_5_choices = [(u'produces', u'produces')]
+    item_i_7_5 = models.CharField(max_length=20, choices=i_7_5_choices, null=True)
+    i_7_6_choices = [(u'produces', u'produces')]
+    item_i_7_6 = models.CharField(max_length=20, choices=i_7_6_choices, null=True)
+    i_7_7_choices = [(u'produces', u'produces')]
+    item_i_7_7 = models.CharField(max_length=20, choices=i_7_7_choices, null=True)
+    i_7_8_choices = [(u'produces', u'produces')]
+    item_i_7_8 = models.CharField(max_length=20, choices=i_7_8_choices, null=True)
+    i_7_9_choices = [(u'produces', u'produces')]
+    item_i_7_9 = models.CharField(max_length=20, choices=i_7_9_choices, null=True)
+    i_7_10_choices = [(u'produces', u'produces')]
+    item_i_7_10 = models.CharField(max_length=20, choices=i_7_10_choices, null=True)
+    i_7_11_choices = [(u'produces', u'produces')]
+    item_i_7_11 = models.CharField(max_length=20, choices=i_7_11_choices, null=True)
+    i_7_12_choices = [(u'produces', u'produces')]
+    item_i_7_12 = models.CharField(max_length=20, choices=i_7_12_choices, null=True)
+    i_7_13_choices = [(u'produces', u'produces')]
+    item_i_7_13 = models.CharField(max_length=20, choices=i_7_13_choices, null=True)
+    i_7_14_choices = [(u'produces', u'produces')]
+    item_i_7_14 = models.CharField(max_length=20, choices=i_7_14_choices, null=True)
+    i_7_15_choices = [(u'produces', u'produces')]
+    item_i_7_15 = models.CharField(max_length=20, choices=i_7_15_choices, null=True)
+    i_7_16_choices = [(u'produces', u'produces')]
+    item_i_7_16 = models.CharField(max_length=20, choices=i_7_16_choices, null=True)
+    i_7_17_choices = [(u'produces', u'produces')]
+    item_i_7_17 = models.CharField(max_length=20, choices=i_7_17_choices, null=True)
+    i_7_18_choices = [(u'produces', u'produces')]
+    item_i_7_18 = models.CharField(max_length=20, choices=i_7_18_choices, null=True)
+    i_7_19_choices = [(u'produces', u'produces')]
+    item_i_7_19 = models.CharField(max_length=20, choices=i_7_19_choices, null=True)
+    i_7_20_choices = [(u'produces', u'produces')]
+    item_i_7_20 = models.CharField(max_length=20, choices=i_7_20_choices, null=True)
+    i_7_21_choices = [(u'produces', u'produces')]
+    item_i_7_21 = models.CharField(max_length=20, choices=i_7_21_choices, null=True)
+    i_7_22_choices = [(u'produces', u'produces')]
+    item_i_7_22 = models.CharField(max_length=20, choices=i_7_22_choices, null=True)
+    i_7_23_choices = [(u'produces', u'produces')]
+    item_i_7_23 = models.CharField(max_length=20, choices=i_7_23_choices, null=True)
+    i_7_24_choices = [(u'produces', u'produces')]
+    item_i_7_24 = models.CharField(max_length=20, choices=i_7_24_choices, null=True)
+    i_7_25_choices = [(u'produces', u'produces')]
+    item_i_7_25 = models.CharField(max_length=20, choices=i_7_25_choices, null=True)
+    i_7_26_choices = [(u'produces', u'produces')]
+    item_i_7_26 = models.CharField(max_length=20, choices=i_7_26_choices, null=True)
+    i_7_27_choices = [(u'produces', u'produces')]
+    item_i_7_27 = models.CharField(max_length=20, choices=i_7_27_choices, null=True)
+    i_8_1_choices = [(u'produces', u'produces')]
+    item_i_8_1 = models.CharField(max_length=20, choices=i_8_1_choices, null=True)
+    i_8_2_choices = [(u'produces', u'produces')]
+    item_i_8_2 = models.CharField(max_length=20, choices=i_8_2_choices, null=True)
+    i_8_3_choices = [(u'produces', u'produces')]
+    item_i_8_3 = models.CharField(max_length=20, choices=i_8_3_choices, null=True)
+    i_8_4_choices = [(u'produces', u'produces')]
+    item_i_8_4 = models.CharField(max_length=20, choices=i_8_4_choices, null=True)
+    i_8_5_choices = [(u'produces', u'produces')]
+    item_i_8_5 = models.CharField(max_length=20, choices=i_8_5_choices, null=True)
+    i_8_6_choices = [(u'produces', u'produces')]
+    item_i_8_6 = models.CharField(max_length=20, choices=i_8_6_choices, null=True)
+    i_8_7_choices = [(u'produces', u'produces')]
+    item_i_8_7 = models.CharField(max_length=20, choices=i_8_7_choices, null=True)
+    i_8_8_choices = [(u'produces', u'produces')]
+    item_i_8_8 = models.CharField(max_length=20, choices=i_8_8_choices, null=True)
+    i_8_9_choices = [(u'produces', u'produces')]
+    item_i_8_9 = models.CharField(max_length=20, choices=i_8_9_choices, null=True)
+    i_8_10_choices = [(u'produces', u'produces')]
+    item_i_8_10 = models.CharField(max_length=20, choices=i_8_10_choices, null=True)
+    i_8_11_choices = [(u'produces', u'produces')]
+    item_i_8_11 = models.CharField(max_length=20, choices=i_8_11_choices, null=True)
+    i_8_12_choices = [(u'produces', u'produces')]
+    item_i_8_12 = models.CharField(max_length=20, choices=i_8_12_choices, null=True)
+    i_8_13_choices = [(u'produces', u'produces')]
+    item_i_8_13 = models.CharField(max_length=20, choices=i_8_13_choices, null=True)
+    i_8_14_choices = [(u'produces', u'produces')]
+    item_i_8_14 = models.CharField(max_length=20, choices=i_8_14_choices, null=True)
+    i_8_15_choices = [(u'produces', u'produces')]
+    item_i_8_15 = models.CharField(max_length=20, choices=i_8_15_choices, null=True)
+    i_8_16_choices = [(u'produces', u'produces')]
+    item_i_8_16 = models.CharField(max_length=20, choices=i_8_16_choices, null=True)
+    i_8_17_choices = [(u'produces', u'produces')]
+    item_i_8_17 = models.CharField(max_length=20, choices=i_8_17_choices, null=True)
+    i_8_18_choices = [(u'produces', u'produces')]
+    item_i_8_18 = models.CharField(max_length=20, choices=i_8_18_choices, null=True)
+    i_8_19_choices = [(u'produces', u'produces')]
+    item_i_8_19 = models.CharField(max_length=20, choices=i_8_19_choices, null=True)
+    i_8_20_choices = [(u'produces', u'produces')]
+    item_i_8_20 = models.CharField(max_length=20, choices=i_8_20_choices, null=True)
+    i_8_21_choices = [(u'produces', u'produces')]
+    item_i_8_21 = models.CharField(max_length=20, choices=i_8_21_choices, null=True)
+    i_8_22_choices = [(u'produces', u'produces')]
+    item_i_8_22 = models.CharField(max_length=20, choices=i_8_22_choices, null=True)
+    i_8_23_choices = [(u'produces', u'produces')]
+    item_i_8_23 = models.CharField(max_length=20, choices=i_8_23_choices, null=True)
+    i_8_24_choices = [(u'produces', u'produces')]
+    item_i_8_24 = models.CharField(max_length=20, choices=i_8_24_choices, null=True)
+    i_8_25_choices = [(u'produces', u'produces')]
+    item_i_8_25 = models.CharField(max_length=20, choices=i_8_25_choices, null=True)
+    i_8_26_choices = [(u'produces', u'produces')]
+    item_i_8_26 = models.CharField(max_length=20, choices=i_8_26_choices, null=True)
+    i_8_27_choices = [(u'produces', u'produces')]
+    item_i_8_27 = models.CharField(max_length=20, choices=i_8_27_choices, null=True)
+    i_8_28_choices = [(u'produces', u'produces')]
+    item_i_8_28 = models.CharField(max_length=20, choices=i_8_28_choices, null=True)
+    i_8_29_choices = [(u'produces', u'produces')]
+    item_i_8_29 = models.CharField(max_length=20, choices=i_8_29_choices, null=True)
+    i_8_30_choices = [(u'produces', u'produces')]
+    item_i_8_30 = models.CharField(max_length=20, choices=i_8_30_choices, null=True)
+    i_8_31_choices = [(u'produces', u'produces')]
+    item_i_8_31 = models.CharField(max_length=20, choices=i_8_31_choices, null=True)
+    i_8_32_choices = [(u'produces', u'produces')]
+    item_i_8_32 = models.CharField(max_length=20, choices=i_8_32_choices, null=True)
+    i_8_33_choices = [(u'produces', u'produces')]
+    item_i_8_33 = models.CharField(max_length=20, choices=i_8_33_choices, null=True)
+    i_8_34_choices = [(u'produces', u'produces')]
+    item_i_8_34 = models.CharField(max_length=20, choices=i_8_34_choices, null=True)
+    i_8_35_choices = [(u'produces', u'produces')]
+    item_i_8_35 = models.CharField(max_length=20, choices=i_8_35_choices, null=True)
+    i_8_36_choices = [(u'produces', u'produces')]
+    item_i_8_36 = models.CharField(max_length=20, choices=i_8_36_choices, null=True)
+    i_8_37_choices = [(u'produces', u'produces')]
+    item_i_8_37 = models.CharField(max_length=20, choices=i_8_37_choices, null=True)
+    i_8_38_choices = [(u'produces', u'produces')]
+    item_i_8_38 = models.CharField(max_length=20, choices=i_8_38_choices, null=True)
+    i_8_39_choices = [(u'produces', u'produces')]
+    item_i_8_39 = models.CharField(max_length=20, choices=i_8_39_choices, null=True)
+    i_8_40_choices = [(u'produces', u'produces')]
+    item_i_8_40 = models.CharField(max_length=20, choices=i_8_40_choices, null=True)
+    i_8_41_choices = [(u'produces', u'produces')]
+    item_i_8_41 = models.CharField(max_length=20, choices=i_8_41_choices, null=True)
+    i_8_42_choices = [(u'produces', u'produces')]
+    item_i_8_42 = models.CharField(max_length=20, choices=i_8_42_choices, null=True)
+    i_8_43_choices = [(u'produces', u'produces')]
+    item_i_8_43 = models.CharField(max_length=20, choices=i_8_43_choices, null=True)
+    i_8_44_choices = [(u'produces', u'produces')]
+    item_i_8_44 = models.CharField(max_length=20, choices=i_8_44_choices, null=True)
+    i_8_45_choices = [(u'produces', u'produces')]
+    item_i_8_45 = models.CharField(max_length=20, choices=i_8_45_choices, null=True)
+    i_8_46_choices = [(u'produces', u'produces')]
+    item_i_8_46 = models.CharField(max_length=20, choices=i_8_46_choices, null=True)
+    i_8_47_choices = [(u'produces', u'produces')]
+    item_i_8_47 = models.CharField(max_length=20, choices=i_8_47_choices, null=True)
+    i_8_48_choices = [(u'produces', u'produces')]
+    item_i_8_48 = models.CharField(max_length=20, choices=i_8_48_choices, null=True)
+    i_8_49_choices = [(u'produces', u'produces')]
+    item_i_8_49 = models.CharField(max_length=20, choices=i_8_49_choices, null=True)
+    i_8_50_choices = [(u'produces', u'produces')]
+    item_i_8_50 = models.CharField(max_length=20, choices=i_8_50_choices, null=True)
+    i_9_1_choices = [(u'produces', u'produces')]
+    item_i_9_1 = models.CharField(max_length=20, choices=i_9_1_choices, null=True)
+    i_9_2_choices = [(u'produces', u'produces')]
+    item_i_9_2 = models.CharField(max_length=20, choices=i_9_2_choices, null=True)
+    i_9_3_choices = [(u'produces', u'produces')]
+    item_i_9_3 = models.CharField(max_length=20, choices=i_9_3_choices, null=True)
+    i_9_4_choices = [(u'produces', u'produces')]
+    item_i_9_4 = models.CharField(max_length=20, choices=i_9_4_choices, null=True)
+    i_9_5_choices = [(u'produces', u'produces')]
+    item_i_9_5 = models.CharField(max_length=20, choices=i_9_5_choices, null=True)
+    i_9_6_choices = [(u'produces', u'produces')]
+    item_i_9_6 = models.CharField(max_length=20, choices=i_9_6_choices, null=True)
+    i_9_7_choices = [(u'produces', u'produces')]
+    item_i_9_7 = models.CharField(max_length=20, choices=i_9_7_choices, null=True)
+    i_9_8_choices = [(u'produces', u'produces')]
+    item_i_9_8 = models.CharField(max_length=20, choices=i_9_8_choices, null=True)
+    i_9_9_choices = [(u'produces', u'produces')]
+    item_i_9_9 = models.CharField(max_length=20, choices=i_9_9_choices, null=True)
+    i_9_10_choices = [(u'produces', u'produces')]
+    item_i_9_10 = models.CharField(max_length=20, choices=i_9_10_choices, null=True)
+    i_9_11_choices = [(u'produces', u'produces')]
+    item_i_9_11 = models.CharField(max_length=20, choices=i_9_11_choices, null=True)
+    i_9_12_choices = [(u'produces', u'produces')]
+    item_i_9_12 = models.CharField(max_length=20, choices=i_9_12_choices, null=True)
+    i_9_13_choices = [(u'produces', u'produces')]
+    item_i_9_13 = models.CharField(max_length=20, choices=i_9_13_choices, null=True)
+    i_9_14_choices = [(u'produces', u'produces')]
+    item_i_9_14 = models.CharField(max_length=20, choices=i_9_14_choices, null=True)
+    i_9_15_choices = [(u'produces', u'produces')]
+    item_i_9_15 = models.CharField(max_length=20, choices=i_9_15_choices, null=True)
+    i_9_16_choices = [(u'produces', u'produces')]
+    item_i_9_16 = models.CharField(max_length=20, choices=i_9_16_choices, null=True)
+    i_9_17_choices = [(u'produces', u'produces')]
+    item_i_9_17 = models.CharField(max_length=20, choices=i_9_17_choices, null=True)
+    i_9_18_choices = [(u'produces', u'produces')]
+    item_i_9_18 = models.CharField(max_length=20, choices=i_9_18_choices, null=True)
+    i_9_19_choices = [(u'produces', u'produces')]
+    item_i_9_19 = models.CharField(max_length=20, choices=i_9_19_choices, null=True)
+    i_9_20_choices = [(u'produces', u'produces')]
+    item_i_9_20 = models.CharField(max_length=20, choices=i_9_20_choices, null=True)
+    i_9_21_choices = [(u'produces', u'produces')]
+    item_i_9_21 = models.CharField(max_length=20, choices=i_9_21_choices, null=True)
+    i_9_22_choices = [(u'produces', u'produces')]
+    item_i_9_22 = models.CharField(max_length=20, choices=i_9_22_choices, null=True)
+    i_9_23_choices = [(u'produces', u'produces')]
+    item_i_9_23 = models.CharField(max_length=20, choices=i_9_23_choices, null=True)
+    i_9_24_choices = [(u'produces', u'produces')]
+    item_i_9_24 = models.CharField(max_length=20, choices=i_9_24_choices, null=True)
+    i_9_25_choices = [(u'produces', u'produces')]
+    item_i_9_25 = models.CharField(max_length=20, choices=i_9_25_choices, null=True)
+    i_9_26_choices = [(u'produces', u'produces')]
+    item_i_9_26 = models.CharField(max_length=20, choices=i_9_26_choices, null=True)
+    i_9_27_choices = [(u'produces', u'produces')]
+    item_i_9_27 = models.CharField(max_length=20, choices=i_9_27_choices, null=True)
+    i_9_28_choices = [(u'produces', u'produces')]
+    item_i_9_28 = models.CharField(max_length=20, choices=i_9_28_choices, null=True)
+    i_9_29_choices = [(u'produces', u'produces')]
+    item_i_9_29 = models.CharField(max_length=20, choices=i_9_29_choices, null=True)
+    i_9_30_choices = [(u'produces', u'produces')]
+    item_i_9_30 = models.CharField(max_length=20, choices=i_9_30_choices, null=True)
+    i_9_31_choices = [(u'produces', u'produces')]
+    item_i_9_31 = models.CharField(max_length=20, choices=i_9_31_choices, null=True)
+    i_9_32_choices = [(u'produces', u'produces')]
+    item_i_9_32 = models.CharField(max_length=20, choices=i_9_32_choices, null=True)
+    i_9_33_choices = [(u'produces', u'produces')]
+    item_i_9_33 = models.CharField(max_length=20, choices=i_9_33_choices, null=True)
+    i_9_34_choices = [(u'produces', u'produces')]
+    item_i_9_34 = models.CharField(max_length=20, choices=i_9_34_choices, null=True)
+    i_10_1_choices = [(u'produces', u'produces')]
+    item_i_10_1 = models.CharField(max_length=20, choices=i_10_1_choices, null=True)
+    i_10_2_choices = [(u'produces', u'produces')]
+    item_i_10_2 = models.CharField(max_length=20, choices=i_10_2_choices, null=True)
+    i_10_3_choices = [(u'produces', u'produces')]
+    item_i_10_3 = models.CharField(max_length=20, choices=i_10_3_choices, null=True)
+    i_10_4_choices = [(u'produces', u'produces')]
+    item_i_10_4 = models.CharField(max_length=20, choices=i_10_4_choices, null=True)
+    i_10_5_choices = [(u'produces', u'produces')]
+    item_i_10_5 = models.CharField(max_length=20, choices=i_10_5_choices, null=True)
+    i_10_6_choices = [(u'produces', u'produces')]
+    item_i_10_6 = models.CharField(max_length=20, choices=i_10_6_choices, null=True)
+    i_10_7_choices = [(u'produces', u'produces')]
+    item_i_10_7 = models.CharField(max_length=20, choices=i_10_7_choices, null=True)
+    i_10_8_choices = [(u'produces', u'produces')]
+    item_i_10_8 = models.CharField(max_length=20, choices=i_10_8_choices, null=True)
+    i_10_9_choices = [(u'produces', u'produces')]
+    item_i_10_9 = models.CharField(max_length=20, choices=i_10_9_choices, null=True)
+    i_10_10_choices = [(u'produces', u'produces')]
+    item_i_10_10 = models.CharField(max_length=20, choices=i_10_10_choices, null=True)
+    i_10_11_choices = [(u'produces', u'produces')]
+    item_i_10_11 = models.CharField(max_length=20, choices=i_10_11_choices, null=True)
+    i_10_12_choices = [(u'produces', u'produces')]
+    item_i_10_12 = models.CharField(max_length=20, choices=i_10_12_choices, null=True)
+    i_10_13_choices = [(u'produces', u'produces')]
+    item_i_10_13 = models.CharField(max_length=20, choices=i_10_13_choices, null=True)
+    i_10_14_choices = [(u'produces', u'produces')]
+    item_i_10_14 = models.CharField(max_length=20, choices=i_10_14_choices, null=True)
+    i_10_15_choices = [(u'produces', u'produces')]
+    item_i_10_15 = models.CharField(max_length=20, choices=i_10_15_choices, null=True)
+    i_10_16_choices = [(u'produces', u'produces')]
+    item_i_10_16 = models.CharField(max_length=20, choices=i_10_16_choices, null=True)
+    i_10_17_choices = [(u'produces', u'produces')]
+    item_i_10_17 = models.CharField(max_length=20, choices=i_10_17_choices, null=True)
+    i_10_18_choices = [(u'produces', u'produces')]
+    item_i_10_18 = models.CharField(max_length=20, choices=i_10_18_choices, null=True)
+    i_10_19_choices = [(u'produces', u'produces')]
+    item_i_10_19 = models.CharField(max_length=20, choices=i_10_19_choices, null=True)
+    i_10_20_choices = [(u'produces', u'produces')]
+    item_i_10_20 = models.CharField(max_length=20, choices=i_10_20_choices, null=True)
+    i_10_21_choices = [(u'produces', u'produces')]
+    item_i_10_21 = models.CharField(max_length=20, choices=i_10_21_choices, null=True)
+    i_10_22_choices = [(u'produces', u'produces')]
+    item_i_10_22 = models.CharField(max_length=20, choices=i_10_22_choices, null=True)
+    i_10_23_choices = [(u'produces', u'produces')]
+    item_i_10_23 = models.CharField(max_length=20, choices=i_10_23_choices, null=True)
+    i_10_24_choices = [(u'produces', u'produces')]
+    item_i_10_24 = models.CharField(max_length=20, choices=i_10_24_choices, null=True)
+    i_10_25_choices = [(u'produces', u'produces')]
+    item_i_10_25 = models.CharField(max_length=20, choices=i_10_25_choices, null=True)
+    i_10_26_choices = [(u'produces', u'produces')]
+    item_i_10_26 = models.CharField(max_length=20, choices=i_10_26_choices, null=True)
+    i_10_27_choices = [(u'produces', u'produces')]
+    item_i_10_27 = models.CharField(max_length=20, choices=i_10_27_choices, null=True)
+    i_10_28_choices = [(u'produces', u'produces')]
+    item_i_10_28 = models.CharField(max_length=20, choices=i_10_28_choices, null=True)
+    i_10_29_choices = [(u'produces', u'produces')]
+    item_i_10_29 = models.CharField(max_length=20, choices=i_10_29_choices, null=True)
+    i_10_30_choices = [(u'produces', u'produces')]
+    item_i_10_30 = models.CharField(max_length=20, choices=i_10_30_choices, null=True)
+    i_10_31_choices = [(u'produces', u'produces')]
+    item_i_10_31 = models.CharField(max_length=20, choices=i_10_31_choices, null=True)
+    i_11_1_choices = [(u'produces', u'produces')]
+    item_i_11_1 = models.CharField(max_length=20, choices=i_11_1_choices, null=True)
+    i_11_2_choices = [(u'produces', u'produces')]
+    item_i_11_2 = models.CharField(max_length=20, choices=i_11_2_choices, null=True)
+    i_11_3_choices = [(u'produces', u'produces')]
+    item_i_11_3 = models.CharField(max_length=20, choices=i_11_3_choices, null=True)
+    i_11_4_choices = [(u'produces', u'produces')]
+    item_i_11_4 = models.CharField(max_length=20, choices=i_11_4_choices, null=True)
+    i_11_5_choices = [(u'produces', u'produces')]
+    item_i_11_5 = models.CharField(max_length=20, choices=i_11_5_choices, null=True)
+    i_11_6_choices = [(u'produces', u'produces')]
+    item_i_11_6 = models.CharField(max_length=20, choices=i_11_6_choices, null=True)
+    i_11_7_choices = [(u'produces', u'produces')]
+    item_i_11_7 = models.CharField(max_length=20, choices=i_11_7_choices, null=True)
+    i_11_8_choices = [(u'produces', u'produces')]
+    item_i_11_8 = models.CharField(max_length=20, choices=i_11_8_choices, null=True)
+    i_11_9_choices = [(u'produces', u'produces')]
+    item_i_11_9 = models.CharField(max_length=20, choices=i_11_9_choices, null=True)
+    i_11_10_choices = [(u'produces', u'produces')]
+    item_i_11_10 = models.CharField(max_length=20, choices=i_11_10_choices, null=True)
+    i_11_11_choices = [(u'produces', u'produces')]
+    item_i_11_11 = models.CharField(max_length=20, choices=i_11_11_choices, null=True)
+    i_11_12_choices = [(u'produces', u'produces')]
+    item_i_11_12 = models.CharField(max_length=20, choices=i_11_12_choices, null=True)
+    i_11_13_choices = [(u'produces', u'produces')]
+    item_i_11_13 = models.CharField(max_length=20, choices=i_11_13_choices, null=True)
+    i_11_14_choices = [(u'produces', u'produces')]
+    item_i_11_14 = models.CharField(max_length=20, choices=i_11_14_choices, null=True)
+    i_11_15_choices = [(u'produces', u'produces')]
+    item_i_11_15 = models.CharField(max_length=20, choices=i_11_15_choices, null=True)
+    i_11_16_choices = [(u'produces', u'produces')]
+    item_i_11_16 = models.CharField(max_length=20, choices=i_11_16_choices, null=True)
+    i_11_17_choices = [(u'produces', u'produces')]
+    item_i_11_17 = models.CharField(max_length=20, choices=i_11_17_choices, null=True)
+    i_11_18_choices = [(u'produces', u'produces')]
+    item_i_11_18 = models.CharField(max_length=20, choices=i_11_18_choices, null=True)
+    i_11_19_choices = [(u'produces', u'produces')]
+    item_i_11_19 = models.CharField(max_length=20, choices=i_11_19_choices, null=True)
+    i_11_20_choices = [(u'produces', u'produces')]
+    item_i_11_20 = models.CharField(max_length=20, choices=i_11_20_choices, null=True)
+    i_11_21_choices = [(u'produces', u'produces')]
+    item_i_11_21 = models.CharField(max_length=20, choices=i_11_21_choices, null=True)
+    i_11_22_choices = [(u'produces', u'produces')]
+    item_i_11_22 = models.CharField(max_length=20, choices=i_11_22_choices, null=True)
+    i_12_1_choices = [(u'produces', u'produces')]
+    item_i_12_1 = models.CharField(max_length=20, choices=i_12_1_choices, null=True)
+    i_12_2_choices = [(u'produces', u'produces')]
+    item_i_12_2 = models.CharField(max_length=20, choices=i_12_2_choices, null=True)
+    i_12_3_choices = [(u'produces', u'produces')]
+    item_i_12_3 = models.CharField(max_length=20, choices=i_12_3_choices, null=True)
+    i_12_4_choices = [(u'produces', u'produces')]
+    item_i_12_4 = models.CharField(max_length=20, choices=i_12_4_choices, null=True)
+    i_12_5_choices = [(u'produces', u'produces')]
+    item_i_12_5 = models.CharField(max_length=20, choices=i_12_5_choices, null=True)
+    i_12_6_choices = [(u'produces', u'produces')]
+    item_i_12_6 = models.CharField(max_length=20, choices=i_12_6_choices, null=True)
+    i_12_7_choices = [(u'produces', u'produces')]
+    item_i_12_7 = models.CharField(max_length=20, choices=i_12_7_choices, null=True)
+    i_12_8_choices = [(u'produces', u'produces')]
+    item_i_12_8 = models.CharField(max_length=20, choices=i_12_8_choices, null=True)
+    i_12_9_choices = [(u'produces', u'produces')]
+    item_i_12_9 = models.CharField(max_length=20, choices=i_12_9_choices, null=True)
+    i_12_10_choices = [(u'produces', u'produces')]
+    item_i_12_10 = models.CharField(max_length=20, choices=i_12_10_choices, null=True)
+    i_12_11_choices = [(u'produces', u'produces')]
+    item_i_12_11 = models.CharField(max_length=20, choices=i_12_11_choices, null=True)
+    i_12_12_choices = [(u'produces', u'produces')]
+    item_i_12_12 = models.CharField(max_length=20, choices=i_12_12_choices, null=True)
+    i_12_13_choices = [(u'produces', u'produces')]
+    item_i_12_13 = models.CharField(max_length=20, choices=i_12_13_choices, null=True)
+    i_12_14_choices = [(u'produces', u'produces')]
+    item_i_12_14 = models.CharField(max_length=20, choices=i_12_14_choices, null=True)
+    i_12_15_choices = [(u'produces', u'produces')]
+    item_i_12_15 = models.CharField(max_length=20, choices=i_12_15_choices, null=True)
+    i_12_16_choices = [(u'produces', u'produces')]
+    item_i_12_16 = models.CharField(max_length=20, choices=i_12_16_choices, null=True)
+    i_12_17_choices = [(u'produces', u'produces')]
+    item_i_12_17 = models.CharField(max_length=20, choices=i_12_17_choices, null=True)
+    i_12_18_choices = [(u'produces', u'produces')]
+    item_i_12_18 = models.CharField(max_length=20, choices=i_12_18_choices, null=True)
+    i_12_19_choices = [(u'produces', u'produces')]
+    item_i_12_19 = models.CharField(max_length=20, choices=i_12_19_choices, null=True)
+    i_12_20_choices = [(u'produces', u'produces')]
+    item_i_12_20 = models.CharField(max_length=20, choices=i_12_20_choices, null=True)
+    i_12_21_choices = [(u'produces', u'produces')]
+    item_i_12_21 = models.CharField(max_length=20, choices=i_12_21_choices, null=True)
+    i_12_22_choices = [(u'produces', u'produces')]
+    item_i_12_22 = models.CharField(max_length=20, choices=i_12_22_choices, null=True)
+    i_12_23_choices = [(u'produces', u'produces')]
+    item_i_12_23 = models.CharField(max_length=20, choices=i_12_23_choices, null=True)
+    i_12_24_choices = [(u'produces', u'produces')]
+    item_i_12_24 = models.CharField(max_length=20, choices=i_12_24_choices, null=True)
+    i_12_25_choices = [(u'produces', u'produces')]
+    item_i_12_25 = models.CharField(max_length=20, choices=i_12_25_choices, null=True)
+    i_12_26_choices = [(u'produces', u'produces')]
+    item_i_12_26 = models.CharField(max_length=20, choices=i_12_26_choices, null=True)
+    i_12_27_choices = [(u'produces', u'produces')]
+    item_i_12_27 = models.CharField(max_length=20, choices=i_12_27_choices, null=True)
+    i_12_28_choices = [(u'produces', u'produces')]
+    item_i_12_28 = models.CharField(max_length=20, choices=i_12_28_choices, null=True)
+    i_12_29_choices = [(u'produces', u'produces')]
+    item_i_12_29 = models.CharField(max_length=20, choices=i_12_29_choices, null=True)
+    i_12_30_choices = [(u'produces', u'produces')]
+    item_i_12_30 = models.CharField(max_length=20, choices=i_12_30_choices, null=True)
+    i_12_31_choices = [(u'produces', u'produces')]
+    item_i_12_31 = models.CharField(max_length=20, choices=i_12_31_choices, null=True)
+    i_12_32_choices = [(u'produces', u'produces')]
+    item_i_12_32 = models.CharField(max_length=20, choices=i_12_32_choices, null=True)
+    i_12_33_choices = [(u'produces', u'produces')]
+    item_i_12_33 = models.CharField(max_length=20, choices=i_12_33_choices, null=True)
+    i_12_34_choices = [(u'produces', u'produces')]
+    item_i_12_34 = models.CharField(max_length=20, choices=i_12_34_choices, null=True)
+    i_12_35_choices = [(u'produces', u'produces')]
+    item_i_12_35 = models.CharField(max_length=20, choices=i_12_35_choices, null=True)
+    i_12_36_choices = [(u'produces', u'produces')]
+    item_i_12_36 = models.CharField(max_length=20, choices=i_12_36_choices, null=True)
+    i_13_1_choices = [(u'produces', u'produces')]
+    item_i_13_1 = models.CharField(max_length=20, choices=i_13_1_choices, null=True)
+    i_13_2_choices = [(u'produces', u'produces')]
+    item_i_13_2 = models.CharField(max_length=20, choices=i_13_2_choices, null=True)
+    i_13_3_choices = [(u'produces', u'produces')]
+    item_i_13_3 = models.CharField(max_length=20, choices=i_13_3_choices, null=True)
+    i_13_4_choices = [(u'produces', u'produces')]
+    item_i_13_4 = models.CharField(max_length=20, choices=i_13_4_choices, null=True)
+    i_13_5_choices = [(u'produces', u'produces')]
+    item_i_13_5 = models.CharField(max_length=20, choices=i_13_5_choices, null=True)
+    i_13_6_choices = [(u'produces', u'produces')]
+    item_i_13_6 = models.CharField(max_length=20, choices=i_13_6_choices, null=True)
+    i_13_7_choices = [(u'produces', u'produces')]
+    item_i_13_7 = models.CharField(max_length=20, choices=i_13_7_choices, null=True)
+    i_13_8_choices = [(u'produces', u'produces')]
+    item_i_13_8 = models.CharField(max_length=20, choices=i_13_8_choices, null=True)
+    i_13_9_choices = [(u'produces', u'produces')]
+    item_i_13_9 = models.CharField(max_length=20, choices=i_13_9_choices, null=True)
+    i_13_10_choices = [(u'produces', u'produces')]
+    item_i_13_10 = models.CharField(max_length=20, choices=i_13_10_choices, null=True)
+    i_13_11_choices = [(u'produces', u'produces')]
+    item_i_13_11 = models.CharField(max_length=20, choices=i_13_11_choices, null=True)
+    i_13_12_choices = [(u'produces', u'produces')]
+    item_i_13_12 = models.CharField(max_length=20, choices=i_13_12_choices, null=True)
+    i_13_13_choices = [(u'produces', u'produces')]
+    item_i_13_13 = models.CharField(max_length=20, choices=i_13_13_choices, null=True)
+    i_13_14_choices = [(u'produces', u'produces')]
+    item_i_13_14 = models.CharField(max_length=20, choices=i_13_14_choices, null=True)
+    i_13_15_choices = [(u'produces', u'produces')]
+    item_i_13_15 = models.CharField(max_length=20, choices=i_13_15_choices, null=True)
+    i_13_16_choices = [(u'produces', u'produces')]
+    item_i_13_16 = models.CharField(max_length=20, choices=i_13_16_choices, null=True)
+    i_13_17_choices = [(u'produces', u'produces')]
+    item_i_13_17 = models.CharField(max_length=20, choices=i_13_17_choices, null=True)
+    i_13_18_choices = [(u'produces', u'produces')]
+    item_i_13_18 = models.CharField(max_length=20, choices=i_13_18_choices, null=True)
+    i_13_19_choices = [(u'produces', u'produces')]
+    item_i_13_19 = models.CharField(max_length=20, choices=i_13_19_choices, null=True)
+    i_13_20_choices = [(u'produces', u'produces')]
+    item_i_13_20 = models.CharField(max_length=20, choices=i_13_20_choices, null=True)
+    i_13_21_choices = [(u'produces', u'produces')]
+    item_i_13_21 = models.CharField(max_length=20, choices=i_13_21_choices, null=True)
+    i_13_22_choices = [(u'produces', u'produces')]
+    item_i_13_22 = models.CharField(max_length=20, choices=i_13_22_choices, null=True)
+    i_13_23_choices = [(u'produces', u'produces')]
+    item_i_13_23 = models.CharField(max_length=20, choices=i_13_23_choices, null=True)
+    i_13_24_choices = [(u'produces', u'produces')]
+    item_i_13_24 = models.CharField(max_length=20, choices=i_13_24_choices, null=True)
+    i_13_25_choices = [(u'produces', u'produces')]
+    item_i_13_25 = models.CharField(max_length=20, choices=i_13_25_choices, null=True)
+    i_13_26_choices = [(u'produces', u'produces')]
+    item_i_13_26 = models.CharField(max_length=20, choices=i_13_26_choices, null=True)
+    i_13_27_choices = [(u'produces', u'produces')]
+    item_i_13_27 = models.CharField(max_length=20, choices=i_13_27_choices, null=True)
+    i_14_1_choices = [(u'produces', u'produces')]
+    item_i_14_1 = models.CharField(max_length=20, choices=i_14_1_choices, null=True)
+    i_14_2_choices = [(u'produces', u'produces')]
+    item_i_14_2 = models.CharField(max_length=20, choices=i_14_2_choices, null=True)
+    i_14_3_choices = [(u'produces', u'produces')]
+    item_i_14_3 = models.CharField(max_length=20, choices=i_14_3_choices, null=True)
+    i_14_4_choices = [(u'produces', u'produces')]
+    item_i_14_4 = models.CharField(max_length=20, choices=i_14_4_choices, null=True)
+    i_14_5_choices = [(u'produces', u'produces')]
+    item_i_14_5 = models.CharField(max_length=20, choices=i_14_5_choices, null=True)
+    i_14_6_choices = [(u'produces', u'produces')]
+    item_i_14_6 = models.CharField(max_length=20, choices=i_14_6_choices, null=True)
+    i_14_7_choices = [(u'produces', u'produces')]
+    item_i_14_7 = models.CharField(max_length=20, choices=i_14_7_choices, null=True)
+    i_14_8_choices = [(u'produces', u'produces')]
+    item_i_14_8 = models.CharField(max_length=20, choices=i_14_8_choices, null=True)
+    i_14_9_choices = [(u'produces', u'produces')]
+    item_i_14_9 = models.CharField(max_length=20, choices=i_14_9_choices, null=True)
+    i_14_10_choices = [(u'produces', u'produces')]
+    item_i_14_10 = models.CharField(max_length=20, choices=i_14_10_choices, null=True)
+    i_14_11_choices = [(u'produces', u'produces')]
+    item_i_14_11 = models.CharField(max_length=20, choices=i_14_11_choices, null=True)
+    i_14_12_choices = [(u'produces', u'produces')]
+    item_i_14_12 = models.CharField(max_length=20, choices=i_14_12_choices, null=True)
+    i_14_13_choices = [(u'produces', u'produces')]
+    item_i_14_13 = models.CharField(max_length=20, choices=i_14_13_choices, null=True)
+    i_14_14_choices = [(u'produces', u'produces')]
+    item_i_14_14 = models.CharField(max_length=20, choices=i_14_14_choices, null=True)
+    i_14_15_choices = [(u'produces', u'produces')]
+    item_i_14_15 = models.CharField(max_length=20, choices=i_14_15_choices, null=True)
+    i_14_16_choices = [(u'produces', u'produces')]
+    item_i_14_16 = models.CharField(max_length=20, choices=i_14_16_choices, null=True)
+    i_14_17_choices = [(u'produces', u'produces')]
+    item_i_14_17 = models.CharField(max_length=20, choices=i_14_17_choices, null=True)
+    i_14_18_choices = [(u'produces', u'produces')]
+    item_i_14_18 = models.CharField(max_length=20, choices=i_14_18_choices, null=True)
+    i_14_19_choices = [(u'produces', u'produces')]
+    item_i_14_19 = models.CharField(max_length=20, choices=i_14_19_choices, null=True)
+    i_14_20_choices = [(u'produces', u'produces')]
+    item_i_14_20 = models.CharField(max_length=20, choices=i_14_20_choices, null=True)
+    i_14_21_choices = [(u'produces', u'produces')]
+    item_i_14_21 = models.CharField(max_length=20, choices=i_14_21_choices, null=True)
+    i_14_22_choices = [(u'produces', u'produces')]
+    item_i_14_22 = models.CharField(max_length=20, choices=i_14_22_choices, null=True)
+    i_14_23_choices = [(u'produces', u'produces')]
+    item_i_14_23 = models.CharField(max_length=20, choices=i_14_23_choices, null=True)
+    i_14_24_choices = [(u'produces', u'produces')]
+    item_i_14_24 = models.CharField(max_length=20, choices=i_14_24_choices, null=True)
+    i_14_25_choices = [(u'produces', u'produces')]
+    item_i_14_25 = models.CharField(max_length=20, choices=i_14_25_choices, null=True)
+    i_14_26_choices = [(u'produces', u'produces')]
+    item_i_14_26 = models.CharField(max_length=20, choices=i_14_26_choices, null=True)
+    i_14_27_choices = [(u'produces', u'produces')]
+    item_i_14_27 = models.CharField(max_length=20, choices=i_14_27_choices, null=True)
+    i_14_28_choices = [(u'produces', u'produces')]
+    item_i_14_28 = models.CharField(max_length=20, choices=i_14_28_choices, null=True)
+    i_14_29_choices = [(u'produces', u'produces')]
+    item_i_14_29 = models.CharField(max_length=20, choices=i_14_29_choices, null=True)
+    i_14_30_choices = [(u'produces', u'produces')]
+    item_i_14_30 = models.CharField(max_length=20, choices=i_14_30_choices, null=True)
+    i_14_31_choices = [(u'produces', u'produces')]
+    item_i_14_31 = models.CharField(max_length=20, choices=i_14_31_choices, null=True)
+    i_14_32_choices = [(u'produces', u'produces')]
+    item_i_14_32 = models.CharField(max_length=20, choices=i_14_32_choices, null=True)
+    i_14_33_choices = [(u'produces', u'produces')]
+    item_i_14_33 = models.CharField(max_length=20, choices=i_14_33_choices, null=True)
+    i_14_34_choices = [(u'produces', u'produces')]
+    item_i_14_34 = models.CharField(max_length=20, choices=i_14_34_choices, null=True)
+    i_14_35_choices = [(u'produces', u'produces')]
+    item_i_14_35 = models.CharField(max_length=20, choices=i_14_35_choices, null=True)
+    i_14_36_choices = [(u'produces', u'produces')]
+    item_i_14_36 = models.CharField(max_length=20, choices=i_14_36_choices, null=True)
+    i_14_37_choices = [(u'produces', u'produces')]
+    item_i_14_37 = models.CharField(max_length=20, choices=i_14_37_choices, null=True)
+    i_14_38_choices = [(u'produces', u'produces')]
+    item_i_14_38 = models.CharField(max_length=20, choices=i_14_38_choices, null=True)
+    i_14_39_choices = [(u'produces', u'produces')]
+    item_i_14_39 = models.CharField(max_length=20, choices=i_14_39_choices, null=True)
+    i_14_40_choices = [(u'produces', u'produces')]
+    item_i_14_40 = models.CharField(max_length=20, choices=i_14_40_choices, null=True)
+    i_14_41_choices = [(u'produces', u'produces')]
+    item_i_14_41 = models.CharField(max_length=20, choices=i_14_41_choices, null=True)
+    i_14_42_choices = [(u'produces', u'produces')]
+    item_i_14_42 = models.CharField(max_length=20, choices=i_14_42_choices, null=True)
+    i_14_43_choices = [(u'produces', u'produces')]
+    item_i_14_43 = models.CharField(max_length=20, choices=i_14_43_choices, null=True)
+    i_14_44_choices = [(u'produces', u'produces')]
+    item_i_14_44 = models.CharField(max_length=20, choices=i_14_44_choices, null=True)
+    i_14_45_choices = [(u'produces', u'produces')]
+    item_i_14_45 = models.CharField(max_length=20, choices=i_14_45_choices, null=True)
+    i_14_46_choices = [(u'produces', u'produces')]
+    item_i_14_46 = models.CharField(max_length=20, choices=i_14_46_choices, null=True)
+    i_14_47_choices = [(u'produces', u'produces')]
+    item_i_14_47 = models.CharField(max_length=20, choices=i_14_47_choices, null=True)
+    i_14_48_choices = [(u'produces', u'produces')]
+    item_i_14_48 = models.CharField(max_length=20, choices=i_14_48_choices, null=True)
+    i_14_49_choices = [(u'produces', u'produces')]
+    item_i_14_49 = models.CharField(max_length=20, choices=i_14_49_choices, null=True)
+    i_14_50_choices = [(u'produces', u'produces')]
+    item_i_14_50 = models.CharField(max_length=20, choices=i_14_50_choices, null=True)
+    i_14_51_choices = [(u'produces', u'produces')]
+    item_i_14_51 = models.CharField(max_length=20, choices=i_14_51_choices, null=True)
+    i_14_52_choices = [(u'produces', u'produces')]
+    item_i_14_52 = models.CharField(max_length=20, choices=i_14_52_choices, null=True)
+    i_14_53_choices = [(u'produces', u'produces')]
+    item_i_14_53 = models.CharField(max_length=20, choices=i_14_53_choices, null=True)
+    i_14_54_choices = [(u'produces', u'produces')]
+    item_i_14_54 = models.CharField(max_length=20, choices=i_14_54_choices, null=True)
+    i_14_55_choices = [(u'produces', u'produces')]
+    item_i_14_55 = models.CharField(max_length=20, choices=i_14_55_choices, null=True)
+    i_14_56_choices = [(u'produces', u'produces')]
+    item_i_14_56 = models.CharField(max_length=20, choices=i_14_56_choices, null=True)
+    i_14_57_choices = [(u'produces', u'produces')]
+    item_i_14_57 = models.CharField(max_length=20, choices=i_14_57_choices, null=True)
+    i_14_58_choices = [(u'produces', u'produces')]
+    item_i_14_58 = models.CharField(max_length=20, choices=i_14_58_choices, null=True)
+    i_14_59_choices = [(u'produces', u'produces')]
+    item_i_14_59 = models.CharField(max_length=20, choices=i_14_59_choices, null=True)
+    i_14_60_choices = [(u'produces', u'produces')]
+    item_i_14_60 = models.CharField(max_length=20, choices=i_14_60_choices, null=True)
+    i_14_61_choices = [(u'produces', u'produces')]
+    item_i_14_61 = models.CharField(max_length=20, choices=i_14_61_choices, null=True)
+    i_14_62_choices = [(u'produces', u'produces')]
+    item_i_14_62 = models.CharField(max_length=20, choices=i_14_62_choices, null=True)
+    i_14_63_choices = [(u'produces', u'produces')]
+    item_i_14_63 = models.CharField(max_length=20, choices=i_14_63_choices, null=True)
+    i_14_64_choices = [(u'produces', u'produces')]
+    item_i_14_64 = models.CharField(max_length=20, choices=i_14_64_choices, null=True)
+    i_14_65_choices = [(u'produces', u'produces')]
+    item_i_14_65 = models.CharField(max_length=20, choices=i_14_65_choices, null=True)
+    i_14_66_choices = [(u'produces', u'produces')]
+    item_i_14_66 = models.CharField(max_length=20, choices=i_14_66_choices, null=True)
+    i_14_67_choices = [(u'produces', u'produces')]
+    item_i_14_67 = models.CharField(max_length=20, choices=i_14_67_choices, null=True)
+    i_14_68_choices = [(u'produces', u'produces')]
+    item_i_14_68 = models.CharField(max_length=20, choices=i_14_68_choices, null=True)
+    i_14_69_choices = [(u'produces', u'produces')]
+    item_i_14_69 = models.CharField(max_length=20, choices=i_14_69_choices, null=True)
+    i_14_70_choices = [(u'produces', u'produces')]
+    item_i_14_70 = models.CharField(max_length=20, choices=i_14_70_choices, null=True)
+    i_14_71_choices = [(u'produces', u'produces')]
+    item_i_14_71 = models.CharField(max_length=20, choices=i_14_71_choices, null=True)
+    i_14_72_choices = [(u'produces', u'produces')]
+    item_i_14_72 = models.CharField(max_length=20, choices=i_14_72_choices, null=True)
+    i_14_73_choices = [(u'produces', u'produces')]
+    item_i_14_73 = models.CharField(max_length=20, choices=i_14_73_choices, null=True)
+    i_14_74_choices = [(u'produces', u'produces')]
+    item_i_14_74 = models.CharField(max_length=20, choices=i_14_74_choices, null=True)
+    i_14_75_choices = [(u'produces', u'produces')]
+    item_i_14_75 = models.CharField(max_length=20, choices=i_14_75_choices, null=True)
+    i_14_76_choices = [(u'produces', u'produces')]
+    item_i_14_76 = models.CharField(max_length=20, choices=i_14_76_choices, null=True)
+    i_14_77_choices = [(u'produces', u'produces')]
+    item_i_14_77 = models.CharField(max_length=20, choices=i_14_77_choices, null=True)
+    i_14_78_choices = [(u'produces', u'produces')]
+    item_i_14_78 = models.CharField(max_length=20, choices=i_14_78_choices, null=True)
+    i_14_79_choices = [(u'produces', u'produces')]
+    item_i_14_79 = models.CharField(max_length=20, choices=i_14_79_choices, null=True)
+    i_14_80_choices = [(u'produces', u'produces')]
+    item_i_14_80 = models.CharField(max_length=20, choices=i_14_80_choices, null=True)
+    i_14_81_choices = [(u'produces', u'produces')]
+    item_i_14_81 = models.CharField(max_length=20, choices=i_14_81_choices, null=True)
+    i_14_82_choices = [(u'produces', u'produces')]
+    item_i_14_82 = models.CharField(max_length=20, choices=i_14_82_choices, null=True)
+    i_14_83_choices = [(u'produces', u'produces')]
+    item_i_14_83 = models.CharField(max_length=20, choices=i_14_83_choices, null=True)
+    i_14_84_choices = [(u'produces', u'produces')]
+    item_i_14_84 = models.CharField(max_length=20, choices=i_14_84_choices, null=True)
+    i_14_85_choices = [(u'produces', u'produces')]
+    item_i_14_85 = models.CharField(max_length=20, choices=i_14_85_choices, null=True)
+    i_14_86_choices = [(u'produces', u'produces')]
+    item_i_14_86 = models.CharField(max_length=20, choices=i_14_86_choices, null=True)
+    i_14_87_choices = [(u'produces', u'produces')]
+    item_i_14_87 = models.CharField(max_length=20, choices=i_14_87_choices, null=True)
+    i_14_88_choices = [(u'produces', u'produces')]
+    item_i_14_88 = models.CharField(max_length=20, choices=i_14_88_choices, null=True)
+    i_14_89_choices = [(u'produces', u'produces')]
+    item_i_14_89 = models.CharField(max_length=20, choices=i_14_89_choices, null=True)
+    i_14_90_choices = [(u'produces', u'produces')]
+    item_i_14_90 = models.CharField(max_length=20, choices=i_14_90_choices, null=True)
+    i_14_91_choices = [(u'produces', u'produces')]
+    item_i_14_91 = models.CharField(max_length=20, choices=i_14_91_choices, null=True)
+    i_14_92_choices = [(u'produces', u'produces')]
+    item_i_14_92 = models.CharField(max_length=20, choices=i_14_92_choices, null=True)
+    i_14_93_choices = [(u'produces', u'produces')]
+    item_i_14_93 = models.CharField(max_length=20, choices=i_14_93_choices, null=True)
+    i_14_94_choices = [(u'produces', u'produces')]
+    item_i_14_94 = models.CharField(max_length=20, choices=i_14_94_choices, null=True)
+    i_14_95_choices = [(u'produces', u'produces')]
+    item_i_14_95 = models.CharField(max_length=20, choices=i_14_95_choices, null=True)
+    i_14_96_choices = [(u'produces', u'produces')]
+    item_i_14_96 = models.CharField(max_length=20, choices=i_14_96_choices, null=True)
+    i_14_97_choices = [(u'produces', u'produces')]
+    item_i_14_97 = models.CharField(max_length=20, choices=i_14_97_choices, null=True)
+    i_14_98_choices = [(u'produces', u'produces')]
+    item_i_14_98 = models.CharField(max_length=20, choices=i_14_98_choices, null=True)
+    i_14_99_choices = [(u'produces', u'produces')]
+    item_i_14_99 = models.CharField(max_length=20, choices=i_14_99_choices, null=True)
+    i_14_100_choices = [(u'produces', u'produces')]
+    item_i_14_100 = models.CharField(max_length=20, choices=i_14_100_choices, null=True)
+    i_14_101_choices = [(u'produces', u'produces')]
+    item_i_14_101 = models.CharField(max_length=20, choices=i_14_101_choices, null=True)
+    i_14_102_choices = [(u'produces', u'produces')]
+    item_i_14_102 = models.CharField(max_length=20, choices=i_14_102_choices, null=True)
+    i_14_103_choices = [(u'produces', u'produces')]
+    item_i_14_103 = models.CharField(max_length=20, choices=i_14_103_choices, null=True)
+    i_14_104_choices = [(u'produces', u'produces')]
+    item_i_14_104 = models.CharField(max_length=20, choices=i_14_104_choices, null=True)
+    i_14_105_choices = [(u'produces', u'produces')]
+    item_i_14_105 = models.CharField(max_length=20, choices=i_14_105_choices, null=True)
+    i_14_106_choices = [(u'produces', u'produces')]
+    item_i_14_106 = models.CharField(max_length=20, choices=i_14_106_choices, null=True)
+    i_14_107_choices = [(u'produces', u'produces')]
+    item_i_14_107 = models.CharField(max_length=20, choices=i_14_107_choices, null=True)
+    i_15_1_choices = [(u'produces', u'produces')]
+    item_i_15_1 = models.CharField(max_length=20, choices=i_15_1_choices, null=True)
+    i_15_2_choices = [(u'produces', u'produces')]
+    item_i_15_2 = models.CharField(max_length=20, choices=i_15_2_choices, null=True)
+    i_15_3_choices = [(u'produces', u'produces')]
+    item_i_15_3 = models.CharField(max_length=20, choices=i_15_3_choices, null=True)
+    i_15_4_choices = [(u'produces', u'produces')]
+    item_i_15_4 = models.CharField(max_length=20, choices=i_15_4_choices, null=True)
+    i_15_5_choices = [(u'produces', u'produces')]
+    item_i_15_5 = models.CharField(max_length=20, choices=i_15_5_choices, null=True)
+    i_15_6_choices = [(u'produces', u'produces')]
+    item_i_15_6 = models.CharField(max_length=20, choices=i_15_6_choices, null=True)
+    i_15_7_choices = [(u'produces', u'produces')]
+    item_i_15_7 = models.CharField(max_length=20, choices=i_15_7_choices, null=True)
+    i_15_8_choices = [(u'produces', u'produces')]
+    item_i_15_8 = models.CharField(max_length=20, choices=i_15_8_choices, null=True)
+    i_15_9_choices = [(u'produces', u'produces')]
+    item_i_15_9 = models.CharField(max_length=20, choices=i_15_9_choices, null=True)
+    i_15_10_choices = [(u'produces', u'produces')]
+    item_i_15_10 = models.CharField(max_length=20, choices=i_15_10_choices, null=True)
+    i_15_11_choices = [(u'produces', u'produces')]
+    item_i_15_11 = models.CharField(max_length=20, choices=i_15_11_choices, null=True)
+    i_15_12_choices = [(u'produces', u'produces')]
+    item_i_15_12 = models.CharField(max_length=20, choices=i_15_12_choices, null=True)
+    i_15_13_choices = [(u'produces', u'produces')]
+    item_i_15_13 = models.CharField(max_length=20, choices=i_15_13_choices, null=True)
+    i_15_14_choices = [(u'produces', u'produces')]
+    item_i_15_14 = models.CharField(max_length=20, choices=i_15_14_choices, null=True)
+    i_15_15_choices = [(u'produces', u'produces')]
+    item_i_15_15 = models.CharField(max_length=20, choices=i_15_15_choices, null=True)
+    i_15_16_choices = [(u'produces', u'produces')]
+    item_i_15_16 = models.CharField(max_length=20, choices=i_15_16_choices, null=True)
+    i_15_17_choices = [(u'produces', u'produces')]
+    item_i_15_17 = models.CharField(max_length=20, choices=i_15_17_choices, null=True)
+    i_15_18_choices = [(u'produces', u'produces')]
+    item_i_15_18 = models.CharField(max_length=20, choices=i_15_18_choices, null=True)
+    i_15_19_choices = [(u'produces', u'produces')]
+    item_i_15_19 = models.CharField(max_length=20, choices=i_15_19_choices, null=True)
+    i_15_20_choices = [(u'produces', u'produces')]
+    item_i_15_20 = models.CharField(max_length=20, choices=i_15_20_choices, null=True)
+    i_15_21_choices = [(u'produces', u'produces')]
+    item_i_15_21 = models.CharField(max_length=20, choices=i_15_21_choices, null=True)
+    i_15_22_choices = [(u'produces', u'produces')]
+    item_i_15_22 = models.CharField(max_length=20, choices=i_15_22_choices, null=True)
+    i_15_23_choices = [(u'produces', u'produces')]
+    item_i_15_23 = models.CharField(max_length=20, choices=i_15_23_choices, null=True)
+    i_15_24_choices = [(u'produces', u'produces')]
+    item_i_15_24 = models.CharField(max_length=20, choices=i_15_24_choices, null=True)
+    i_15_25_choices = [(u'produces', u'produces')]
+    item_i_15_25 = models.CharField(max_length=20, choices=i_15_25_choices, null=True)
+    i_15_26_choices = [(u'produces', u'produces')]
+    item_i_15_26 = models.CharField(max_length=20, choices=i_15_26_choices, null=True)
+    i_15_27_choices = [(u'produces', u'produces')]
+    item_i_15_27 = models.CharField(max_length=20, choices=i_15_27_choices, null=True)
+    i_15_28_choices = [(u'produces', u'produces')]
+    item_i_15_28 = models.CharField(max_length=20, choices=i_15_28_choices, null=True)
+    i_15_29_choices = [(u'produces', u'produces')]
+    item_i_15_29 = models.CharField(max_length=20, choices=i_15_29_choices, null=True)
+    i_15_30_choices = [(u'produces', u'produces')]
+    item_i_15_30 = models.CharField(max_length=20, choices=i_15_30_choices, null=True)
+    i_15_31_choices = [(u'produces', u'produces')]
+    item_i_15_31 = models.CharField(max_length=20, choices=i_15_31_choices, null=True)
+    i_15_32_choices = [(u'produces', u'produces')]
+    item_i_15_32 = models.CharField(max_length=20, choices=i_15_32_choices, null=True)
+    i_15_33_choices = [(u'produces', u'produces')]
+    item_i_15_33 = models.CharField(max_length=20, choices=i_15_33_choices, null=True)
+    i_15_34_choices = [(u'produces', u'produces')]
+    item_i_15_34 = models.CharField(max_length=20, choices=i_15_34_choices, null=True)
+    i_15_35_choices = [(u'produces', u'produces')]
+    item_i_15_35 = models.CharField(max_length=20, choices=i_15_35_choices, null=True)
+    i_15_36_choices = [(u'produces', u'produces')]
+    item_i_15_36 = models.CharField(max_length=20, choices=i_15_36_choices, null=True)
+    i_15_37_choices = [(u'produces', u'produces')]
+    item_i_15_37 = models.CharField(max_length=20, choices=i_15_37_choices, null=True)
+    i_15_38_choices = [(u'produces', u'produces')]
+    item_i_15_38 = models.CharField(max_length=20, choices=i_15_38_choices, null=True)
+    i_15_39_choices = [(u'produces', u'produces')]
+    item_i_15_39 = models.CharField(max_length=20, choices=i_15_39_choices, null=True)
+    i_15_40_choices = [(u'produces', u'produces')]
+    item_i_15_40 = models.CharField(max_length=20, choices=i_15_40_choices, null=True)
+    i_15_41_choices = [(u'produces', u'produces')]
+    item_i_15_41 = models.CharField(max_length=20, choices=i_15_41_choices, null=True)
+    i_15_42_choices = [(u'produces', u'produces')]
+    item_i_15_42 = models.CharField(max_length=20, choices=i_15_42_choices, null=True)
+    i_15_43_choices = [(u'produces', u'produces')]
+    item_i_15_43 = models.CharField(max_length=20, choices=i_15_43_choices, null=True)
+    i_15_44_choices = [(u'produces', u'produces')]
+    item_i_15_44 = models.CharField(max_length=20, choices=i_15_44_choices, null=True)
+    i_15_45_choices = [(u'produces', u'produces')]
+    item_i_15_45 = models.CharField(max_length=20, choices=i_15_45_choices, null=True)
+    i_15_46_choices = [(u'produces', u'produces')]
+    item_i_15_46 = models.CharField(max_length=20, choices=i_15_46_choices, null=True)
+    i_15_47_choices = [(u'produces', u'produces')]
+    item_i_15_47 = models.CharField(max_length=20, choices=i_15_47_choices, null=True)
+    i_15_48_choices = [(u'produces', u'produces')]
+    item_i_15_48 = models.CharField(max_length=20, choices=i_15_48_choices, null=True)
+    i_15_49_choices = [(u'produces', u'produces')]
+    item_i_15_49 = models.CharField(max_length=20, choices=i_15_49_choices, null=True)
+    i_15_50_choices = [(u'produces', u'produces')]
+    item_i_15_50 = models.CharField(max_length=20, choices=i_15_50_choices, null=True)
+    i_15_51_choices = [(u'produces', u'produces')]
+    item_i_15_51 = models.CharField(max_length=20, choices=i_15_51_choices, null=True)
+    i_15_52_choices = [(u'produces', u'produces')]
+    item_i_15_52 = models.CharField(max_length=20, choices=i_15_52_choices, null=True)
+    i_15_53_choices = [(u'produces', u'produces')]
+    item_i_15_53 = models.CharField(max_length=20, choices=i_15_53_choices, null=True)
+    i_15_54_choices = [(u'produces', u'produces')]
+    item_i_15_54 = models.CharField(max_length=20, choices=i_15_54_choices, null=True)
+    i_15_55_choices = [(u'produces', u'produces')]
+    item_i_15_55 = models.CharField(max_length=20, choices=i_15_55_choices, null=True)
+    i_15_56_choices = [(u'produces', u'produces')]
+    item_i_15_56 = models.CharField(max_length=20, choices=i_15_56_choices, null=True)
+    i_15_57_choices = [(u'produces', u'produces')]
+    item_i_15_57 = models.CharField(max_length=20, choices=i_15_57_choices, null=True)
+    i_15_58_choices = [(u'produces', u'produces')]
+    item_i_15_58 = models.CharField(max_length=20, choices=i_15_58_choices, null=True)
+    i_15_59_choices = [(u'produces', u'produces')]
+    item_i_15_59 = models.CharField(max_length=20, choices=i_15_59_choices, null=True)
+    i_15_60_choices = [(u'produces', u'produces')]
+    item_i_15_60 = models.CharField(max_length=20, choices=i_15_60_choices, null=True)
+    i_15_61_choices = [(u'produces', u'produces')]
+    item_i_15_61 = models.CharField(max_length=20, choices=i_15_61_choices, null=True)
+    i_15_62_choices = [(u'produces', u'produces')]
+    item_i_15_62 = models.CharField(max_length=20, choices=i_15_62_choices, null=True)
+    i_15_63_choices = [(u'produces', u'produces')]
+    item_i_15_63 = models.CharField(max_length=20, choices=i_15_63_choices, null=True)
+    i_16_1_choices = [(u'produces', u'produces')]
+    item_i_16_1 = models.CharField(max_length=20, choices=i_16_1_choices, null=True)
+    i_16_2_choices = [(u'produces', u'produces')]
+    item_i_16_2 = models.CharField(max_length=20, choices=i_16_2_choices, null=True)
+    i_16_3_choices = [(u'produces', u'produces')]
+    item_i_16_3 = models.CharField(max_length=20, choices=i_16_3_choices, null=True)
+    i_16_4_choices = [(u'produces', u'produces')]
+    item_i_16_4 = models.CharField(max_length=20, choices=i_16_4_choices, null=True)
+    i_16_5_choices = [(u'produces', u'produces')]
+    item_i_16_5 = models.CharField(max_length=20, choices=i_16_5_choices, null=True)
+    i_16_6_choices = [(u'produces', u'produces')]
+    item_i_16_6 = models.CharField(max_length=20, choices=i_16_6_choices, null=True)
+    i_16_7_choices = [(u'produces', u'produces')]
+    item_i_16_7 = models.CharField(max_length=20, choices=i_16_7_choices, null=True)
+    i_16_8_choices = [(u'produces', u'produces')]
+    item_i_16_8 = models.CharField(max_length=20, choices=i_16_8_choices, null=True)
+    i_16_9_choices = [(u'produces', u'produces')]
+    item_i_16_9 = models.CharField(max_length=20, choices=i_16_9_choices, null=True)
+    i_16_10_choices = [(u'produces', u'produces')]
+    item_i_16_10 = models.CharField(max_length=20, choices=i_16_10_choices, null=True)
+    i_16_11_choices = [(u'produces', u'produces')]
+    item_i_16_11 = models.CharField(max_length=20, choices=i_16_11_choices, null=True)
+    i_16_12_choices = [(u'produces', u'produces')]
+    item_i_16_12 = models.CharField(max_length=20, choices=i_16_12_choices, null=True)
+    i_16_13_choices = [(u'produces', u'produces')]
+    item_i_16_13 = models.CharField(max_length=20, choices=i_16_13_choices, null=True)
+    i_16_14_choices = [(u'produces', u'produces')]
+    item_i_16_14 = models.CharField(max_length=20, choices=i_16_14_choices, null=True)
+    i_16_15_choices = [(u'produces', u'produces')]
+    item_i_16_15 = models.CharField(max_length=20, choices=i_16_15_choices, null=True)
+    i_16_16_choices = [(u'produces', u'produces')]
+    item_i_16_16 = models.CharField(max_length=20, choices=i_16_16_choices, null=True)
+    i_17_1_choices = [(u'produces', u'produces')]
+    item_i_17_1 = models.CharField(max_length=20, choices=i_17_1_choices, null=True)
+    i_17_2_choices = [(u'produces', u'produces')]
+    item_i_17_2 = models.CharField(max_length=20, choices=i_17_2_choices, null=True)
+    i_17_3_choices = [(u'produces', u'produces')]
+    item_i_17_3 = models.CharField(max_length=20, choices=i_17_3_choices, null=True)
+    i_17_4_choices = [(u'produces', u'produces')]
+    item_i_17_4 = models.CharField(max_length=20, choices=i_17_4_choices, null=True)
+    i_17_5_choices = [(u'produces', u'produces')]
+    item_i_17_5 = models.CharField(max_length=20, choices=i_17_5_choices, null=True)
+    i_17_6_choices = [(u'produces', u'produces')]
+    item_i_17_6 = models.CharField(max_length=20, choices=i_17_6_choices, null=True)
+    i_17_7_choices = [(u'produces', u'produces')]
+    item_i_17_7 = models.CharField(max_length=20, choices=i_17_7_choices, null=True)
+    i_17_8_choices = [(u'produces', u'produces')]
+    item_i_17_8 = models.CharField(max_length=20, choices=i_17_8_choices, null=True)
+    i_17_9_choices = [(u'produces', u'produces')]
+    item_i_17_9 = models.CharField(max_length=20, choices=i_17_9_choices, null=True)
+    i_17_10_choices = [(u'produces', u'produces')]
+    item_i_17_10 = models.CharField(max_length=20, choices=i_17_10_choices, null=True)
+    i_17_11_choices = [(u'produces', u'produces')]
+    item_i_17_11 = models.CharField(max_length=20, choices=i_17_11_choices, null=True)
+    i_17_12_choices = [(u'produces', u'produces')]
+    item_i_17_12 = models.CharField(max_length=20, choices=i_17_12_choices, null=True)
+    i_17_13_choices = [(u'produces', u'produces')]
+    item_i_17_13 = models.CharField(max_length=20, choices=i_17_13_choices, null=True)
+    i_17_14_choices = [(u'produces', u'produces')]
+    item_i_17_14 = models.CharField(max_length=20, choices=i_17_14_choices, null=True)
+    i_17_15_choices = [(u'produces', u'produces')]
+    item_i_17_15 = models.CharField(max_length=20, choices=i_17_15_choices, null=True)
+    i_17_16_choices = [(u'produces', u'produces')]
+    item_i_17_16 = models.CharField(max_length=20, choices=i_17_16_choices, null=True)
+    i_17_17_choices = [(u'produces', u'produces')]
+    item_i_17_17 = models.CharField(max_length=20, choices=i_17_17_choices, null=True)
+    i_17_18_choices = [(u'produces', u'produces')]
+    item_i_17_18 = models.CharField(max_length=20, choices=i_17_18_choices, null=True)
+    i_17_19_choices = [(u'produces', u'produces')]
+    item_i_17_19 = models.CharField(max_length=20, choices=i_17_19_choices, null=True)
+    i_17_20_choices = [(u'produces', u'produces')]
+    item_i_17_20 = models.CharField(max_length=20, choices=i_17_20_choices, null=True)
+    i_17_21_choices = [(u'produces', u'produces')]
+    item_i_17_21 = models.CharField(max_length=20, choices=i_17_21_choices, null=True)
+    i_17_22_choices = [(u'produces', u'produces')]
+    item_i_17_22 = models.CharField(max_length=20, choices=i_17_22_choices, null=True)
+    i_17_23_choices = [(u'produces', u'produces')]
+    item_i_17_23 = models.CharField(max_length=20, choices=i_17_23_choices, null=True)
+    i_17_24_choices = [(u'produces', u'produces')]
+    item_i_17_24 = models.CharField(max_length=20, choices=i_17_24_choices, null=True)
+    i_17_25_choices = [(u'produces', u'produces')]
+    item_i_17_25 = models.CharField(max_length=20, choices=i_17_25_choices, null=True)
+    i_17_26_choices = [(u'produces', u'produces')]
+    item_i_17_26 = models.CharField(max_length=20, choices=i_17_26_choices, null=True)
+    i_17_27_choices = [(u'produces', u'produces')]
+    item_i_17_27 = models.CharField(max_length=20, choices=i_17_27_choices, null=True)
+    i_17_28_choices = [(u'produces', u'produces')]
+    item_i_17_28 = models.CharField(max_length=20, choices=i_17_28_choices, null=True)
+    i_17_29_choices = [(u'produces', u'produces')]
+    item_i_17_29 = models.CharField(max_length=20, choices=i_17_29_choices, null=True)
+    i_17_30_choices = [(u'produces', u'produces')]
+    item_i_17_30 = models.CharField(max_length=20, choices=i_17_30_choices, null=True)
+    i_17_31_choices = [(u'produces', u'produces')]
+    item_i_17_31 = models.CharField(max_length=20, choices=i_17_31_choices, null=True)
+    i_18_1_choices = [(u'produces', u'produces')]
+    item_i_18_1 = models.CharField(max_length=20, choices=i_18_1_choices, null=True)
+    i_18_2_choices = [(u'produces', u'produces')]
+    item_i_18_2 = models.CharField(max_length=20, choices=i_18_2_choices, null=True)
+    i_18_3_choices = [(u'produces', u'produces')]
+    item_i_18_3 = models.CharField(max_length=20, choices=i_18_3_choices, null=True)
+    i_18_4_choices = [(u'produces', u'produces')]
+    item_i_18_4 = models.CharField(max_length=20, choices=i_18_4_choices, null=True)
+    i_18_5_choices = [(u'produces', u'produces')]
+    item_i_18_5 = models.CharField(max_length=20, choices=i_18_5_choices, null=True)
+    i_18_6_choices = [(u'produces', u'produces')]
+    item_i_18_6 = models.CharField(max_length=20, choices=i_18_6_choices, null=True)
+    i_18_7_choices = [(u'produces', u'produces')]
+    item_i_18_7 = models.CharField(max_length=20, choices=i_18_7_choices, null=True)
+    i_19_1_choices = [(u'produces', u'produces')]
+    item_i_19_1 = models.CharField(max_length=20, choices=i_19_1_choices, null=True)
+    i_19_2_choices = [(u'produces', u'produces')]
+    item_i_19_2 = models.CharField(max_length=20, choices=i_19_2_choices, null=True)
+    i_19_3_choices = [(u'produces', u'produces')]
+    item_i_19_3 = models.CharField(max_length=20, choices=i_19_3_choices, null=True)
+    i_19_4_choices = [(u'produces', u'produces')]
+    item_i_19_4 = models.CharField(max_length=20, choices=i_19_4_choices, null=True)
+    i_19_5_choices = [(u'produces', u'produces')]
+    item_i_19_5 = models.CharField(max_length=20, choices=i_19_5_choices, null=True)
+    i_19_6_choices = [(u'produces', u'produces')]
+    item_i_19_6 = models.CharField(max_length=20, choices=i_19_6_choices, null=True)
+    i_19_7_choices = [(u'produces', u'produces')]
+    item_i_19_7 = models.CharField(max_length=20, choices=i_19_7_choices, null=True)
+    i_19_8_choices = [(u'produces', u'produces')]
+    item_i_19_8 = models.CharField(max_length=20, choices=i_19_8_choices, null=True)
+    i_19_9_choices = [(u'produces', u'produces')]
+    item_i_19_9 = models.CharField(max_length=20, choices=i_19_9_choices, null=True)
+    i_19_10_choices = [(u'produces', u'produces')]
+    item_i_19_10 = models.CharField(max_length=20, choices=i_19_10_choices, null=True)
+    i_19_11_choices = [(u'produces', u'produces')]
+    item_i_19_11 = models.CharField(max_length=20, choices=i_19_11_choices, null=True)
+    i_19_12_choices = [(u'produces', u'produces')]
+    item_i_19_12 = models.CharField(max_length=20, choices=i_19_12_choices, null=True)
+    i_19_13_choices = [(u'produces', u'produces')]
+    item_i_19_13 = models.CharField(max_length=20, choices=i_19_13_choices, null=True)
+    i_19_14_choices = [(u'produces', u'produces')]
+    item_i_19_14 = models.CharField(max_length=20, choices=i_19_14_choices, null=True)
+    i_19_15_choices = [(u'produces', u'produces')]
+    item_i_19_15 = models.CharField(max_length=20, choices=i_19_15_choices, null=True)
+    i_19_16_choices = [(u'produces', u'produces')]
+    item_i_19_16 = models.CharField(max_length=20, choices=i_19_16_choices, null=True)
+    i_19_17_choices = [(u'produces', u'produces')]
+    item_i_19_17 = models.CharField(max_length=20, choices=i_19_17_choices, null=True)
+    i_19_18_choices = [(u'produces', u'produces')]
+    item_i_19_18 = models.CharField(max_length=20, choices=i_19_18_choices, null=True)
+    i_19_19_choices = [(u'produces', u'produces')]
+    item_i_19_19 = models.CharField(max_length=20, choices=i_19_19_choices, null=True)
+    i_19_20_choices = [(u'produces', u'produces')]
+    item_i_19_20 = models.CharField(max_length=20, choices=i_19_20_choices, null=True)
+    i_19_21_choices = [(u'produces', u'produces')]
+    item_i_19_21 = models.CharField(max_length=20, choices=i_19_21_choices, null=True)
+    i_19_22_choices = [(u'produces', u'produces')]
+    item_i_19_22 = models.CharField(max_length=20, choices=i_19_22_choices, null=True)
+    i_19_23_choices = [(u'produces', u'produces')]
+    item_i_19_23 = models.CharField(max_length=20, choices=i_19_23_choices, null=True)
+    i_19_24_choices = [(u'produces', u'produces')]
+    item_i_19_24 = models.CharField(max_length=20, choices=i_19_24_choices, null=True)
+    i_19_25_choices = [(u'produces', u'produces')]
+    item_i_19_25 = models.CharField(max_length=20, choices=i_19_25_choices, null=True)
+    i_19_26_choices = [(u'produces', u'produces')]
+    item_i_19_26 = models.CharField(max_length=20, choices=i_19_26_choices, null=True)
+    i_19_27_choices = [(u'produces', u'produces')]
+    item_i_19_27 = models.CharField(max_length=20, choices=i_19_27_choices, null=True)
+    i_19_28_choices = [(u'produces', u'produces')]
+    item_i_19_28 = models.CharField(max_length=20, choices=i_19_28_choices, null=True)
+    i_19_29_choices = [(u'produces', u'produces')]
+    item_i_19_29 = models.CharField(max_length=20, choices=i_19_29_choices, null=True)
+    i_19_30_choices = [(u'produces', u'produces')]
+    item_i_19_30 = models.CharField(max_length=20, choices=i_19_30_choices, null=True)
+    i_19_31_choices = [(u'produces', u'produces')]
+    item_i_19_31 = models.CharField(max_length=20, choices=i_19_31_choices, null=True)
+    i_19_32_choices = [(u'produces', u'produces')]
+    item_i_19_32 = models.CharField(max_length=20, choices=i_19_32_choices, null=True)
+    i_19_33_choices = [(u'produces', u'produces')]
+    item_i_19_33 = models.CharField(max_length=20, choices=i_19_33_choices, null=True)
+    i_19_34_choices = [(u'produces', u'produces')]
+    item_i_19_34 = models.CharField(max_length=20, choices=i_19_34_choices, null=True)
+    i_19_35_choices = [(u'produces', u'produces')]
+    item_i_19_35 = models.CharField(max_length=20, choices=i_19_35_choices, null=True)
+    i_19_36_choices = [(u'produces', u'produces')]
+    item_i_19_36 = models.CharField(max_length=20, choices=i_19_36_choices, null=True)
+    i_19_37_choices = [(u'produces', u'produces')]
+    item_i_19_37 = models.CharField(max_length=20, choices=i_19_37_choices, null=True)
+    i_19_38_choices = [(u'produces', u'produces')]
+    item_i_19_38 = models.CharField(max_length=20, choices=i_19_38_choices, null=True)
+    i_19_39_choices = [(u'produces', u'produces')]
+    item_i_19_39 = models.CharField(max_length=20, choices=i_19_39_choices, null=True)
+    i_19_40_choices = [(u'produces', u'produces')]
+    item_i_19_40 = models.CharField(max_length=20, choices=i_19_40_choices, null=True)
+    i_19_41_choices = [(u'produces', u'produces')]
+    item_i_19_41 = models.CharField(max_length=20, choices=i_19_41_choices, null=True)
+    i_20_1_choices = [(u'produces', u'produces')]
+    item_i_20_1 = models.CharField(max_length=20, choices=i_20_1_choices, null=True)
+    i_20_2_choices = [(u'produces', u'produces')]
+    item_i_20_2 = models.CharField(max_length=20, choices=i_20_2_choices, null=True)
+    i_20_3_choices = [(u'produces', u'produces')]
+    item_i_20_3 = models.CharField(max_length=20, choices=i_20_3_choices, null=True)
+    i_20_4_choices = [(u'produces', u'produces')]
+    item_i_20_4 = models.CharField(max_length=20, choices=i_20_4_choices, null=True)
+    i_20_5_choices = [(u'produces', u'produces')]
+    item_i_20_5 = models.CharField(max_length=20, choices=i_20_5_choices, null=True)
+    i_20_6_choices = [(u'produces', u'produces')]
+    item_i_20_6 = models.CharField(max_length=20, choices=i_20_6_choices, null=True)
+    i_20_7_choices = [(u'produces', u'produces')]
+    item_i_20_7 = models.CharField(max_length=20, choices=i_20_7_choices, null=True)
+    i_20_8_choices = [(u'produces', u'produces')]
+    item_i_20_8 = models.CharField(max_length=20, choices=i_20_8_choices, null=True)
+    i_20_9_choices = [(u'produces', u'produces')]
+    item_i_20_9 = models.CharField(max_length=20, choices=i_20_9_choices, null=True)
+    i_20_10_choices = [(u'produces', u'produces')]
+    item_i_20_10 = models.CharField(max_length=20, choices=i_20_10_choices, null=True)
+    i_20_11_choices = [(u'produces', u'produces')]
+    item_i_20_11 = models.CharField(max_length=20, choices=i_20_11_choices, null=True)
+    i_20_12_choices = [(u'produces', u'produces')]
+    item_i_20_12 = models.CharField(max_length=20, choices=i_20_12_choices, null=True)
+    i_20_13_choices = [(u'produces', u'produces')]
+    item_i_20_13 = models.CharField(max_length=20, choices=i_20_13_choices, null=True)
+    i_20_14_choices = [(u'produces', u'produces')]
+    item_i_20_14 = models.CharField(max_length=20, choices=i_20_14_choices, null=True)
+    i_20_15_choices = [(u'produces', u'produces')]
+    item_i_20_15 = models.CharField(max_length=20, choices=i_20_15_choices, null=True)
+    i_20_16_choices = [(u'produces', u'produces')]
+    item_i_20_16 = models.CharField(max_length=20, choices=i_20_16_choices, null=True)
+    i_20_17_choices = [(u'produces', u'produces')]
+    item_i_20_17 = models.CharField(max_length=20, choices=i_20_17_choices, null=True)
+    i_20_18_choices = [(u'produces', u'produces')]
+    item_i_20_18 = models.CharField(max_length=20, choices=i_20_18_choices, null=True)
+    i_20_19_choices = [(u'produces', u'produces')]
+    item_i_20_19 = models.CharField(max_length=20, choices=i_20_19_choices, null=True)
+    i_20_20_choices = [(u'produces', u'produces')]
+    item_i_20_20 = models.CharField(max_length=20, choices=i_20_20_choices, null=True)
+    i_20_21_choices = [(u'produces', u'produces')]
+    item_i_20_21 = models.CharField(max_length=20, choices=i_20_21_choices, null=True)
+    i_20_22_choices = [(u'produces', u'produces')]
+    item_i_20_22 = models.CharField(max_length=20, choices=i_20_22_choices, null=True)
+    i_21_1_choices = [(u'produces', u'produces')]
+    item_i_21_1 = models.CharField(max_length=20, choices=i_21_1_choices, null=True)
+    i_21_2_choices = [(u'produces', u'produces')]
+    item_i_21_2 = models.CharField(max_length=20, choices=i_21_2_choices, null=True)
+    i_21_3_choices = [(u'produces', u'produces')]
+    item_i_21_3 = models.CharField(max_length=20, choices=i_21_3_choices, null=True)
+    i_21_4_choices = [(u'produces', u'produces')]
+    item_i_21_4 = models.CharField(max_length=20, choices=i_21_4_choices, null=True)
+    i_21_5_choices = [(u'produces', u'produces')]
+    item_i_21_5 = models.CharField(max_length=20, choices=i_21_5_choices, null=True)
+    i_21_6_choices = [(u'produces', u'produces')]
+    item_i_21_6 = models.CharField(max_length=20, choices=i_21_6_choices, null=True)
+    i_21_7_choices = [(u'produces', u'produces')]
+    item_i_21_7 = models.CharField(max_length=20, choices=i_21_7_choices, null=True)
+    i_21_8_choices = [(u'produces', u'produces')]
+    item_i_21_8 = models.CharField(max_length=20, choices=i_21_8_choices, null=True)
+    i_21_9_choices = [(u'produces', u'produces')]
+    item_i_21_9 = models.CharField(max_length=20, choices=i_21_9_choices, null=True)
+    i_21_10_choices = [(u'produces', u'produces')]
+    item_i_21_10 = models.CharField(max_length=20, choices=i_21_10_choices, null=True)
+    i_21_11_choices = [(u'produces', u'produces')]
+    item_i_21_11 = models.CharField(max_length=20, choices=i_21_11_choices, null=True)
+    i_21_12_choices = [(u'produces', u'produces')]
+    item_i_21_12 = models.CharField(max_length=20, choices=i_21_12_choices, null=True)
+    i_21_13_choices = [(u'produces', u'produces')]
+    item_i_21_13 = models.CharField(max_length=20, choices=i_21_13_choices, null=True)
+    i_21_14_choices = [(u'produces', u'produces')]
+    item_i_21_14 = models.CharField(max_length=20, choices=i_21_14_choices, null=True)
+    i_21_15_choices = [(u'produces', u'produces')]
+    item_i_21_15 = models.CharField(max_length=20, choices=i_21_15_choices, null=True)
+    i_21_16_choices = [(u'produces', u'produces')]
+    item_i_21_16 = models.CharField(max_length=20, choices=i_21_16_choices, null=True)
+    i_21_17_choices = [(u'produces', u'produces')]
+    item_i_21_17 = models.CharField(max_length=20, choices=i_21_17_choices, null=True)
+    i_21_18_choices = [(u'produces', u'produces')]
+    item_i_21_18 = models.CharField(max_length=20, choices=i_21_18_choices, null=True)
+    i_21_19_choices = [(u'produces', u'produces')]
+    item_i_21_19 = models.CharField(max_length=20, choices=i_21_19_choices, null=True)
+    i_21_20_choices = [(u'produces', u'produces')]
+    item_i_21_20 = models.CharField(max_length=20, choices=i_21_20_choices, null=True)
+    i_21_21_choices = [(u'produces', u'produces')]
+    item_i_21_21 = models.CharField(max_length=20, choices=i_21_21_choices, null=True)
+    i_21_22_choices = [(u'produces', u'produces')]
+    item_i_21_22 = models.CharField(max_length=20, choices=i_21_22_choices, null=True)
+    i_22_1_choices = [(u'produces', u'produces')]
+    item_i_22_1 = models.CharField(max_length=20, choices=i_22_1_choices, null=True)
+    i_22_2_choices = [(u'produces', u'produces')]
+    item_i_22_2 = models.CharField(max_length=20, choices=i_22_2_choices, null=True)
+    i_22_3_choices = [(u'produces', u'produces')]
+    item_i_22_3 = models.CharField(max_length=20, choices=i_22_3_choices, null=True)
+    i_22_4_choices = [(u'produces', u'produces')]
+    item_i_22_4 = models.CharField(max_length=20, choices=i_22_4_choices, null=True)
+    i_22_5_choices = [(u'produces', u'produces')]
+    item_i_22_5 = models.CharField(max_length=20, choices=i_22_5_choices, null=True)
+    i_22_6_choices = [(u'produces', u'produces')]
+    item_i_22_6 = models.CharField(max_length=20, choices=i_22_6_choices, null=True)
+    i_22_7_choices = [(u'produces', u'produces')]
+    item_i_22_7 = models.CharField(max_length=20, choices=i_22_7_choices, null=True)
+    i_22_8_choices = [(u'produces', u'produces')]
+    item_i_22_8 = models.CharField(max_length=20, choices=i_22_8_choices, null=True)
+    i_22_9_choices = [(u'produces', u'produces')]
+    item_i_22_9 = models.CharField(max_length=20, choices=i_22_9_choices, null=True)
+    i_23_1_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_i_23_1 = models.CharField(max_length=20, choices=i_23_1_choices, null=True)
+    i_23_2_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_i_23_2 = models.CharField(max_length=20, choices=i_23_2_choices, null=True)
+    i_23_3_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_i_23_3 = models.CharField(max_length=20, choices=i_23_3_choices, null=True)
+    i_23_4_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_i_23_4 = models.CharField(max_length=20, choices=i_23_4_choices, null=True)
+    i_23_5_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_i_23_5 = models.CharField(max_length=20, choices=i_23_5_choices, null=True)
+    i_24_1_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_i_24_1 = models.CharField(max_length=20, choices=i_24_1_choices, null=True)
+    i_24_2_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_i_24_2 = models.CharField(max_length=20, choices=i_24_2_choices, null=True)
+    i_24_3_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_i_24_3 = models.CharField(max_length=20, choices=i_24_3_choices, null=True)
+    i_24_4_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_i_24_4 = models.CharField(max_length=20, choices=i_24_4_choices, null=True)
+    i_24_5_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_i_24_5 = models.CharField(max_length=20, choices=i_24_5_choices, null=True)
+    i_24_6_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_i_24_6 = models.CharField(max_length=20, choices=i_24_6_choices, null=True)
+    i_25_1_choices = [(u'produces', u'produces')]
+    item_i_25_1 = models.CharField(max_length=20, choices=i_25_1_choices, null=True)
+    i_25_2_choices = [(u'produces', u'produces')]
+    item_i_25_2 = models.CharField(max_length=20, choices=i_25_2_choices, null=True)
+    i_25_3_choices = [(u'produces', u'produces')]
+    item_i_25_3 = models.CharField(max_length=20, choices=i_25_3_choices, null=True)
+    i_25_4_choices = [(u'produces', u'produces')]
+    item_i_25_4 = models.CharField(max_length=20, choices=i_25_4_choices, null=True)
+    i_25_5_choices = [(u'produces', u'produces')]
+    item_i_25_5 = models.CharField(max_length=20, choices=i_25_5_choices, null=True)
+    i_25_6_choices = [(u'produces', u'produces')]
+    item_i_25_6 = models.CharField(max_length=20, choices=i_25_6_choices, null=True)
+    i_25_7_choices = [(u'produces', u'produces')]
+    item_i_25_7 = models.CharField(max_length=20, choices=i_25_7_choices, null=True)
+    i_25_8_choices = [(u'produces', u'produces')]
+    item_i_25_8 = models.CharField(max_length=20, choices=i_25_8_choices, null=True)
+    i_26_1_choices = [(u'produces', u'produces')]
+    item_i_26_1 = models.CharField(max_length=20, choices=i_26_1_choices, null=True)
+    i_26_2_choices = [(u'produces', u'produces')]
+    item_i_26_2 = models.CharField(max_length=20, choices=i_26_2_choices, null=True)
+    i_26_3_choices = [(u'produces', u'produces')]
+    item_i_26_3 = models.CharField(max_length=20, choices=i_26_3_choices, null=True)
+    i_26_4_choices = [(u'produces', u'produces')]
+    item_i_26_4 = models.CharField(max_length=20, choices=i_26_4_choices, null=True)
+    i_26_5_choices = [(u'produces', u'produces')]
+    item_i_26_5 = models.CharField(max_length=20, choices=i_26_5_choices, null=True)
+    i_26_6_choices = [(u'produces', u'produces')]
+    item_i_26_6 = models.CharField(max_length=20, choices=i_26_6_choices, null=True)
+    i_26_7_choices = [(u'produces', u'produces')]
+    item_i_26_7 = models.CharField(max_length=20, choices=i_26_7_choices, null=True)
+    i_26_8_choices = [(u'produces', u'produces')]
+    item_i_26_8 = models.CharField(max_length=20, choices=i_26_8_choices, null=True)
+    i_26_9_choices = [(u'produces', u'produces')]
+    item_i_26_9 = models.CharField(max_length=20, choices=i_26_9_choices, null=True)
+    i_26_10_choices = [(u'produces', u'produces')]
+    item_i_26_10 = models.CharField(max_length=20, choices=i_26_10_choices, null=True)
+    i_26_11_choices = [(u'produces', u'produces')]
+    item_i_26_11 = models.CharField(max_length=20, choices=i_26_11_choices, null=True)
+    i_26_12_choices = [(u'produces', u'produces')]
+    item_i_26_12 = models.CharField(max_length=20, choices=i_26_12_choices, null=True)
+    i_26_13_choices = [(u'produces', u'produces')]
+    item_i_26_13 = models.CharField(max_length=20, choices=i_26_13_choices, null=True)
+    i_26_14_choices = [(u'produces', u'produces')]
+    item_i_26_14 = models.CharField(max_length=20, choices=i_26_14_choices, null=True)
+    i_26_15_choices = [(u'produces', u'produces')]
+    item_i_26_15 = models.CharField(max_length=20, choices=i_26_15_choices, null=True)
+    i_26_16_choices = [(u'produces', u'produces')]
+    item_i_26_16 = models.CharField(max_length=20, choices=i_26_16_choices, null=True)
+    i_26_17_choices = [(u'produces', u'produces')]
+    item_i_26_17 = models.CharField(max_length=20, choices=i_26_17_choices, null=True)
+    i_26_18_choices = [(u'produces', u'produces')]
+    item_i_26_18 = models.CharField(max_length=20, choices=i_26_18_choices, null=True)
+    i_26_19_choices = [(u'produces', u'produces')]
+    item_i_26_19 = models.CharField(max_length=20, choices=i_26_19_choices, null=True)
+    i_26_20_choices = [(u'produces', u'produces')]
+    item_i_26_20 = models.CharField(max_length=20, choices=i_26_20_choices, null=True)
+    i_26_21_choices = [(u'produces', u'produces')]
+    item_i_26_21 = models.CharField(max_length=20, choices=i_26_21_choices, null=True)
+    i_26_22_choices = [(u'produces', u'produces')]
+    item_i_26_22 = models.CharField(max_length=20, choices=i_26_22_choices, null=True)
+    i_26_23_choices = [(u'produces', u'produces')]
+    item_i_26_23 = models.CharField(max_length=20, choices=i_26_23_choices, null=True)
+    i_26_24_choices = [(u'produces', u'produces')]
+    item_i_26_24 = models.CharField(max_length=20, choices=i_26_24_choices, null=True)
+    i_26_25_choices = [(u'produces', u'produces')]
+    item_i_26_25 = models.CharField(max_length=20, choices=i_26_25_choices, null=True)
+    i_27_1_choices = [(u'produces', u'produces')]
+    item_i_27_1 = models.CharField(max_length=20, choices=i_27_1_choices, null=True)
+    i_27_2_choices = [(u'produces', u'produces')]
+    item_i_27_2 = models.CharField(max_length=20, choices=i_27_2_choices, null=True)
+    i_27_3_choices = [(u'produces', u'produces')]
+    item_i_27_3 = models.CharField(max_length=20, choices=i_27_3_choices, null=True)
+    i_27_4_choices = [(u'produces', u'produces')]
+    item_i_27_4 = models.CharField(max_length=20, choices=i_27_4_choices, null=True)
+    i_27_5_choices = [(u'produces', u'produces')]
+    item_i_27_5 = models.CharField(max_length=20, choices=i_27_5_choices, null=True)
+    i_27_6_choices = [(u'produces', u'produces')]
+    item_i_27_6 = models.CharField(max_length=20, choices=i_27_6_choices, null=True)
+    i_27_7_choices = [(u'produces', u'produces')]
+    item_i_27_7 = models.CharField(max_length=20, choices=i_27_7_choices, null=True)
+    i_27_8_choices = [(u'produces', u'produces')]
+    item_i_27_8 = models.CharField(max_length=20, choices=i_27_8_choices, null=True)
+    i_27_9_choices = [(u'produces', u'produces')]
+    item_i_27_9 = models.CharField(max_length=20, choices=i_27_9_choices, null=True)
+    i_27_10_choices = [(u'produces', u'produces')]
+    item_i_27_10 = models.CharField(max_length=20, choices=i_27_10_choices, null=True)
+    i_27_11_choices = [(u'produces', u'produces')]
+    item_i_27_11 = models.CharField(max_length=20, choices=i_27_11_choices, null=True)
+    i_27_12_choices = [(u'produces', u'produces')]
+    item_i_27_12 = models.CharField(max_length=20, choices=i_27_12_choices, null=True)
+    i_27_13_choices = [(u'produces', u'produces')]
+    item_i_27_13 = models.CharField(max_length=20, choices=i_27_13_choices, null=True)
+    i_28_1_choices = [(u'produces', u'produces')]
+    item_i_28_1 = models.CharField(max_length=20, choices=i_28_1_choices, null=True)
+    i_28_2_choices = [(u'produces', u'produces')]
+    item_i_28_2 = models.CharField(max_length=20, choices=i_28_2_choices, null=True)
+    i_28_3_choices = [(u'produces', u'produces')]
+    item_i_28_3 = models.CharField(max_length=20, choices=i_28_3_choices, null=True)
+    i_28_4_choices = [(u'produces', u'produces')]
+    item_i_28_4 = models.CharField(max_length=20, choices=i_28_4_choices, null=True)
+    i_28_5_choices = [(u'produces', u'produces')]
+    item_i_28_5 = models.CharField(max_length=20, choices=i_28_5_choices, null=True)
+    i_28_6_choices = [(u'produces', u'produces')]
+    item_i_28_6 = models.CharField(max_length=20, choices=i_28_6_choices, null=True)
+    i_28_7_choices = [(u'produces', u'produces')]
+    item_i_28_7 = models.CharField(max_length=20, choices=i_28_7_choices, null=True)
+    i_28_8_choices = [(u'produces', u'produces')]
+    item_i_28_8 = models.CharField(max_length=20, choices=i_28_8_choices, null=True)
+    i_28_9_choices = [(u'produces', u'produces')]
+    item_i_28_9 = models.CharField(max_length=20, choices=i_28_9_choices, null=True)
+    i_28_10_choices = [(u'produces', u'produces')]
+    item_i_28_10 = models.CharField(max_length=20, choices=i_28_10_choices, null=True)
+    i_28_11_choices = [(u'produces', u'produces')]
+    item_i_28_11 = models.CharField(max_length=20, choices=i_28_11_choices, null=True)
+    i_28_12_choices = [(u'produces', u'produces')]
+    item_i_28_12 = models.CharField(max_length=20, choices=i_28_12_choices, null=True)
+    i_28_13_choices = [(u'produces', u'produces')]
+    item_i_28_13 = models.CharField(max_length=20, choices=i_28_13_choices, null=True)
+    i_28_14_choices = [(u'produces', u'produces')]
+    item_i_28_14 = models.CharField(max_length=20, choices=i_28_14_choices, null=True)
+    i_28_15_choices = [(u'produces', u'produces')]
+    item_i_28_15 = models.CharField(max_length=20, choices=i_28_15_choices, null=True)
+    i_28_16_choices = [(u'produces', u'produces')]
+    item_i_28_16 = models.CharField(max_length=20, choices=i_28_16_choices, null=True)
+    i_28_17_choices = [(u'produces', u'produces')]
+    item_i_28_17 = models.CharField(max_length=20, choices=i_28_17_choices, null=True)
+    i_28_18_choices = [(u'produces', u'produces')]
+    item_i_28_18 = models.CharField(max_length=20, choices=i_28_18_choices, null=True)
+    i_28_19_choices = [(u'produces', u'produces')]
+    item_i_28_19 = models.CharField(max_length=20, choices=i_28_19_choices, null=True)
+    i_28_20_choices = [(u'produces', u'produces')]
+    item_i_28_20 = models.CharField(max_length=20, choices=i_28_20_choices, null=True)
+    i_28_21_choices = [(u'produces', u'produces')]
+    item_i_28_21 = models.CharField(max_length=20, choices=i_28_21_choices, null=True)
+    i_28_22_choices = [(u'produces', u'produces')]
+    item_i_28_22 = models.CharField(max_length=20, choices=i_28_22_choices, null=True)
+    i_28_23_choices = [(u'produces', u'produces')]
+    item_i_28_23 = models.CharField(max_length=20, choices=i_28_23_choices, null=True)
+    i_28_24_choices = [(u'produces', u'produces')]
+    item_i_28_24 = models.CharField(max_length=20, choices=i_28_24_choices, null=True)
+    i_28_25_choices = [(u'produces', u'produces')]
+    item_i_28_25 = models.CharField(max_length=20, choices=i_28_25_choices, null=True)
+    i_28_26_choices = [(u'produces', u'produces')]
+    item_i_28_26 = models.CharField(max_length=20, choices=i_28_26_choices, null=True)
+    i_28_27_choices = [(u'produces', u'produces')]
+    item_i_28_27 = models.CharField(max_length=20, choices=i_28_27_choices, null=True)
+    i_28_28_choices = [(u'produces', u'produces')]
+    item_i_28_28 = models.CharField(max_length=20, choices=i_28_28_choices, null=True)
+    i_28_29_choices = [(u'produces', u'produces')]
+    item_i_28_29 = models.CharField(max_length=20, choices=i_28_29_choices, null=True)
+    i_28_30_choices = [(u'produces', u'produces')]
+    item_i_28_30 = models.CharField(max_length=20, choices=i_28_30_choices, null=True)
+    i_28_31_choices = [(u'produces', u'produces')]
+    item_i_28_31 = models.CharField(max_length=20, choices=i_28_31_choices, null=True)
+    i_28_32_choices = [(u'produces', u'produces')]
+    item_i_28_32 = models.CharField(max_length=20, choices=i_28_32_choices, null=True)
+    i_28_33_choices = [(u'produces', u'produces')]
+    item_i_28_33 = models.CharField(max_length=20, choices=i_28_33_choices, null=True)
+    i_28_34_choices = [(u'produces', u'produces')]
+    item_i_28_34 = models.CharField(max_length=20, choices=i_28_34_choices, null=True)
+    i_28_35_choices = [(u'produces', u'produces')]
+    item_i_28_35 = models.CharField(max_length=20, choices=i_28_35_choices, null=True)
+    i_28_36_choices = [(u'produces', u'produces')]
+    item_i_28_36 = models.CharField(max_length=20, choices=i_28_36_choices, null=True)
+    i_28_37_choices = [(u'produces', u'produces')]
+    item_i_28_37 = models.CharField(max_length=20, choices=i_28_37_choices, null=True)
+    i_29_1_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_i_29_1 = models.CharField(max_length=20, choices=i_29_1_choices, null=True)
+    i_31_1_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_1 = models.CharField(max_length=20, choices=i_31_1_choices, null=True)
+    i_31_2_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_2 = models.CharField(max_length=20, choices=i_31_2_choices, null=True)
+    i_31_3_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_3 = models.CharField(max_length=20, choices=i_31_3_choices, null=True)
+    i_31_4_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_4 = models.CharField(max_length=20, choices=i_31_4_choices, null=True)
+    i_31_5_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_5 = models.CharField(max_length=20, choices=i_31_5_choices, null=True)
+    i_31_6_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_6 = models.CharField(max_length=20, choices=i_31_6_choices, null=True)
+    i_31_7_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_7 = models.CharField(max_length=20, choices=i_31_7_choices, null=True)
+    i_31_8_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_8 = models.CharField(max_length=20, choices=i_31_8_choices, null=True)
+    i_31_9_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_9 = models.CharField(max_length=20, choices=i_31_9_choices, null=True)
+    i_31_10_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_10 = models.CharField(max_length=20, choices=i_31_10_choices, null=True)
+    i_31_11_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_11 = models.CharField(max_length=20, choices=i_31_11_choices, null=True)
+    i_31_12_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_12 = models.CharField(max_length=20, choices=i_31_12_choices, null=True)
+    i_31_13_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_13 = models.CharField(max_length=20, choices=i_31_13_choices, null=True)
+    i_31_14_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_14 = models.CharField(max_length=20, choices=i_31_14_choices, null=True)
+    i_31_15_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_15 = models.CharField(max_length=20, choices=i_31_15_choices, null=True)
+    i_31_16_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_16 = models.CharField(max_length=20, choices=i_31_16_choices, null=True)
+    i_31_17_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_17 = models.CharField(max_length=20, choices=i_31_17_choices, null=True)
+    i_31_18_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_18 = models.CharField(max_length=20, choices=i_31_18_choices, null=True)
+    i_31_19_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_19 = models.CharField(max_length=20, choices=i_31_19_choices, null=True)
+    i_31_20_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_20 = models.CharField(max_length=20, choices=i_31_20_choices, null=True)
+    i_31_21_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_21 = models.CharField(max_length=20, choices=i_31_21_choices, null=True)
+    i_31_22_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_22 = models.CharField(max_length=20, choices=i_31_22_choices, null=True)
+    i_31_23_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_23 = models.CharField(max_length=20, choices=i_31_23_choices, null=True)
+    i_31_24_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_24 = models.CharField(max_length=20, choices=i_31_24_choices, null=True)
+    i_31_25_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_25 = models.CharField(max_length=20, choices=i_31_25_choices, null=True)
+    i_31_26_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_26 = models.CharField(max_length=20, choices=i_31_26_choices, null=True)
+    i_31_27_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_27 = models.CharField(max_length=20, choices=i_31_27_choices, null=True)
+    i_31_28_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_28 = models.CharField(max_length=20, choices=i_31_28_choices, null=True)
+    i_31_29_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_29 = models.CharField(max_length=20, choices=i_31_29_choices, null=True)
+    i_31_30_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_30 = models.CharField(max_length=20, choices=i_31_30_choices, null=True)
+    i_31_31_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_31 = models.CharField(max_length=20, choices=i_31_31_choices, null=True)
+    i_31_32_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_32 = models.CharField(max_length=20, choices=i_31_32_choices, null=True)
+    i_31_33_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_33 = models.CharField(max_length=20, choices=i_31_33_choices, null=True)
+    i_31_34_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_34 = models.CharField(max_length=20, choices=i_31_34_choices, null=True)
+    i_31_35_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_35 = models.CharField(max_length=20, choices=i_31_35_choices, null=True)
+    i_31_36_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_36 = models.CharField(max_length=20, choices=i_31_36_choices, null=True)
+    i_31_37_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_37 = models.CharField(max_length=20, choices=i_31_37_choices, null=True)
+    i_31_38_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_38 = models.CharField(max_length=20, choices=i_31_38_choices, null=True)
+    i_31_39_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_39 = models.CharField(max_length=20, choices=i_31_39_choices, null=True)
+    i_31_40_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_40 = models.CharField(max_length=20, choices=i_31_40_choices, null=True)
+    i_31_41_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_41 = models.CharField(max_length=20, choices=i_31_41_choices, null=True)
+    i_31_42_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_31_42 = models.CharField(max_length=20, choices=i_31_42_choices, null=True)
+
+
+class Norwegian_WG(BaseTable):
+    i_1_1_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_i_1_1 = models.CharField(max_length=20, choices=i_1_1_choices, null=True)
+    i_1_2_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_i_1_2 = models.CharField(max_length=20, choices=i_1_2_choices, null=True)
+    i_1_3_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_i_1_3 = models.CharField(max_length=20, choices=i_1_3_choices, null=True)
+    i_2_1_choices = [(u'understands', u'understands')]
+    item_i_2_1 = models.CharField(max_length=20, choices=i_2_1_choices, null=True)
+    i_2_2_choices = [(u'understands', u'understands')]
+    item_i_2_2 = models.CharField(max_length=20, choices=i_2_2_choices, null=True)
+    i_2_3_choices = [(u'understands', u'understands')]
+    item_i_2_3 = models.CharField(max_length=20, choices=i_2_3_choices, null=True)
+    i_2_4_choices = [(u'understands', u'understands')]
+    item_i_2_4 = models.CharField(max_length=20, choices=i_2_4_choices, null=True)
+    i_2_5_choices = [(u'understands', u'understands')]
+    item_i_2_5 = models.CharField(max_length=20, choices=i_2_5_choices, null=True)
+    i_2_6_choices = [(u'understands', u'understands')]
+    item_i_2_6 = models.CharField(max_length=20, choices=i_2_6_choices, null=True)
+    i_2_7_choices = [(u'understands', u'understands')]
+    item_i_2_7 = models.CharField(max_length=20, choices=i_2_7_choices, null=True)
+    i_2_8_choices = [(u'understands', u'understands')]
+    item_i_2_8 = models.CharField(max_length=20, choices=i_2_8_choices, null=True)
+    i_2_9_choices = [(u'understands', u'understands')]
+    item_i_2_9 = models.CharField(max_length=20, choices=i_2_9_choices, null=True)
+    i_2_10_choices = [(u'understands', u'understands')]
+    item_i_2_10 = models.CharField(max_length=20, choices=i_2_10_choices, null=True)
+    i_2_11_choices = [(u'understands', u'understands')]
+    item_i_2_11 = models.CharField(max_length=20, choices=i_2_11_choices, null=True)
+    i_2_12_choices = [(u'understands', u'understands')]
+    item_i_2_12 = models.CharField(max_length=20, choices=i_2_12_choices, null=True)
+    i_2_13_choices = [(u'understands', u'understands')]
+    item_i_2_13 = models.CharField(max_length=20, choices=i_2_13_choices, null=True)
+    i_2_14_choices = [(u'understands', u'understands')]
+    item_i_2_14 = models.CharField(max_length=20, choices=i_2_14_choices, null=True)
+    i_2_15_choices = [(u'understands', u'understands')]
+    item_i_2_15 = models.CharField(max_length=20, choices=i_2_15_choices, null=True)
+    i_2_16_choices = [(u'understands', u'understands')]
+    item_i_2_16 = models.CharField(max_length=20, choices=i_2_16_choices, null=True)
+    i_2_17_choices = [(u'understands', u'understands')]
+    item_i_2_17 = models.CharField(max_length=20, choices=i_2_17_choices, null=True)
+    i_2_18_choices = [(u'understands', u'understands')]
+    item_i_2_18 = models.CharField(max_length=20, choices=i_2_18_choices, null=True)
+    i_2_19_choices = [(u'understands', u'understands')]
+    item_i_2_19 = models.CharField(max_length=20, choices=i_2_19_choices, null=True)
+    i_2_20_choices = [(u'understands', u'understands')]
+    item_i_2_20 = models.CharField(max_length=20, choices=i_2_20_choices, null=True)
+    i_2_21_choices = [(u'understands', u'understands')]
+    item_i_2_21 = models.CharField(max_length=20, choices=i_2_21_choices, null=True)
+    i_2_22_choices = [(u'understands', u'understands')]
+    item_i_2_22 = models.CharField(max_length=20, choices=i_2_22_choices, null=True)
+    i_2_23_choices = [(u'understands', u'understands')]
+    item_i_2_23 = models.CharField(max_length=20, choices=i_2_23_choices, null=True)
+    i_2_24_choices = [(u'understands', u'understands')]
+    item_i_2_24 = models.CharField(max_length=20, choices=i_2_24_choices, null=True)
+    i_2_25_choices = [(u'understands', u'understands')]
+    item_i_2_25 = models.CharField(max_length=20, choices=i_2_25_choices, null=True)
+    i_2_26_choices = [(u'understands', u'understands')]
+    item_i_2_26 = models.CharField(max_length=20, choices=i_2_26_choices, null=True)
+    i_3_1_choices = [(u'never', u'never'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_i_3_1 = models.CharField(max_length=20, choices=i_3_1_choices, null=True)
+    i_3_2_choices = [(u'never', u'never'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_i_3_2 = models.CharField(max_length=20, choices=i_3_2_choices, null=True)
+    i_4_1_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_4_1 = models.CharField(max_length=20, choices=i_4_1_choices, null=True)
+    i_4_2_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_4_2 = models.CharField(max_length=20, choices=i_4_2_choices, null=True)
+    i_4_3_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_4_3 = models.CharField(max_length=20, choices=i_4_3_choices, null=True)
+    i_4_4_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_4_4 = models.CharField(max_length=20, choices=i_4_4_choices, null=True)
+    i_4_5_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_4_5 = models.CharField(max_length=20, choices=i_4_5_choices, null=True)
+    i_4_6_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_4_6 = models.CharField(max_length=20, choices=i_4_6_choices, null=True)
+    i_4_7_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_4_7 = models.CharField(max_length=20, choices=i_4_7_choices, null=True)
+    i_4_8_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_4_8 = models.CharField(max_length=20, choices=i_4_8_choices, null=True)
+    i_4_9_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_4_9 = models.CharField(max_length=20, choices=i_4_9_choices, null=True)
+    i_4_10_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_4_10 = models.CharField(max_length=20, choices=i_4_10_choices, null=True)
+    i_4_11_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_4_11 = models.CharField(max_length=20, choices=i_4_11_choices, null=True)
+    i_5_1_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_5_1 = models.CharField(max_length=20, choices=i_5_1_choices, null=True)
+    i_5_2_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_5_2 = models.CharField(max_length=20, choices=i_5_2_choices, null=True)
+    i_5_3_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_5_3 = models.CharField(max_length=20, choices=i_5_3_choices, null=True)
+    i_5_4_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_5_4 = models.CharField(max_length=20, choices=i_5_4_choices, null=True)
+    i_5_5_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_5_5 = models.CharField(max_length=20, choices=i_5_5_choices, null=True)
+    i_5_6_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_5_6 = models.CharField(max_length=20, choices=i_5_6_choices, null=True)
+    i_5_7_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_5_7 = models.CharField(max_length=20, choices=i_5_7_choices, null=True)
+    i_5_8_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_5_8 = models.CharField(max_length=20, choices=i_5_8_choices, null=True)
+    i_5_9_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_5_9 = models.CharField(max_length=20, choices=i_5_9_choices, null=True)
+    i_5_10_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_5_10 = models.CharField(max_length=20, choices=i_5_10_choices, null=True)
+    i_5_11_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_5_11 = models.CharField(max_length=20, choices=i_5_11_choices, null=True)
+    i_5_12_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_5_12 = models.CharField(max_length=20, choices=i_5_12_choices, null=True)
+    i_5_13_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_5_13 = models.CharField(max_length=20, choices=i_5_13_choices, null=True)
+    i_5_14_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_5_14 = models.CharField(max_length=20, choices=i_5_14_choices, null=True)
+    i_5_15_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_5_15 = models.CharField(max_length=20, choices=i_5_15_choices, null=True)
+    i_5_16_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_5_16 = models.CharField(max_length=20, choices=i_5_16_choices, null=True)
+    i_5_17_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_5_17 = models.CharField(max_length=20, choices=i_5_17_choices, null=True)
+    i_5_18_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_5_18 = models.CharField(max_length=20, choices=i_5_18_choices, null=True)
+    i_5_19_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_5_19 = models.CharField(max_length=20, choices=i_5_19_choices, null=True)
+    i_5_20_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_5_20 = models.CharField(max_length=20, choices=i_5_20_choices, null=True)
+    i_5_21_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_5_21 = models.CharField(max_length=20, choices=i_5_21_choices, null=True)
+    i_5_22_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_5_22 = models.CharField(max_length=20, choices=i_5_22_choices, null=True)
+    i_5_23_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_5_23 = models.CharField(max_length=20, choices=i_5_23_choices, null=True)
+    i_5_24_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_5_24 = models.CharField(max_length=20, choices=i_5_24_choices, null=True)
+    i_5_25_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_5_25 = models.CharField(max_length=20, choices=i_5_25_choices, null=True)
+    i_5_26_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_5_26 = models.CharField(max_length=20, choices=i_5_26_choices, null=True)
+    i_5_27_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_5_27 = models.CharField(max_length=20, choices=i_5_27_choices, null=True)
+    i_5_28_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_5_28 = models.CharField(max_length=20, choices=i_5_28_choices, null=True)
+    i_5_29_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_5_29 = models.CharField(max_length=20, choices=i_5_29_choices, null=True)
+    i_5_30_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_5_30 = models.CharField(max_length=20, choices=i_5_30_choices, null=True)
+    i_5_31_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_5_31 = models.CharField(max_length=20, choices=i_5_31_choices, null=True)
+    i_5_32_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_5_32 = models.CharField(max_length=20, choices=i_5_32_choices, null=True)
+    i_5_33_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_5_33 = models.CharField(max_length=20, choices=i_5_33_choices, null=True)
+    i_5_34_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_5_34 = models.CharField(max_length=20, choices=i_5_34_choices, null=True)
+    i_5_35_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_5_35 = models.CharField(max_length=20, choices=i_5_35_choices, null=True)
+    i_5_36_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_5_36 = models.CharField(max_length=20, choices=i_5_36_choices, null=True)
+    i_6_1_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_6_1 = models.CharField(max_length=20, choices=i_6_1_choices, null=True)
+    i_6_2_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_6_2 = models.CharField(max_length=20, choices=i_6_2_choices, null=True)
+    i_6_3_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_6_3 = models.CharField(max_length=20, choices=i_6_3_choices, null=True)
+    i_6_4_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_6_4 = models.CharField(max_length=20, choices=i_6_4_choices, null=True)
+    i_6_5_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_6_5 = models.CharField(max_length=20, choices=i_6_5_choices, null=True)
+    i_6_6_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_6_6 = models.CharField(max_length=20, choices=i_6_6_choices, null=True)
+    i_6_7_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_6_7 = models.CharField(max_length=20, choices=i_6_7_choices, null=True)
+    i_6_8_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_6_8 = models.CharField(max_length=20, choices=i_6_8_choices, null=True)
+    i_6_9_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_6_9 = models.CharField(max_length=20, choices=i_6_9_choices, null=True)
+    i_7_1_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_7_1 = models.CharField(max_length=20, choices=i_7_1_choices, null=True)
+    i_7_2_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_7_2 = models.CharField(max_length=20, choices=i_7_2_choices, null=True)
+    i_7_3_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_7_3 = models.CharField(max_length=20, choices=i_7_3_choices, null=True)
+    i_7_4_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_7_4 = models.CharField(max_length=20, choices=i_7_4_choices, null=True)
+    i_7_5_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_7_5 = models.CharField(max_length=20, choices=i_7_5_choices, null=True)
+    i_7_6_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_7_6 = models.CharField(max_length=20, choices=i_7_6_choices, null=True)
+    i_7_7_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_7_7 = models.CharField(max_length=20, choices=i_7_7_choices, null=True)
+    i_7_8_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_7_8 = models.CharField(max_length=20, choices=i_7_8_choices, null=True)
+    i_8_1_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_8_1 = models.CharField(max_length=20, choices=i_8_1_choices, null=True)
+    i_8_2_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_8_2 = models.CharField(max_length=20, choices=i_8_2_choices, null=True)
+    i_8_3_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_8_3 = models.CharField(max_length=20, choices=i_8_3_choices, null=True)
+    i_8_4_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_8_4 = models.CharField(max_length=20, choices=i_8_4_choices, null=True)
+    i_8_5_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_8_5 = models.CharField(max_length=20, choices=i_8_5_choices, null=True)
+    i_8_6_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_8_6 = models.CharField(max_length=20, choices=i_8_6_choices, null=True)
+    i_8_7_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_8_7 = models.CharField(max_length=20, choices=i_8_7_choices, null=True)
+    i_8_8_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_8_8 = models.CharField(max_length=20, choices=i_8_8_choices, null=True)
+    i_8_9_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_8_9 = models.CharField(max_length=20, choices=i_8_9_choices, null=True)
+    i_8_10_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_8_10 = models.CharField(max_length=20, choices=i_8_10_choices, null=True)
+    i_8_11_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_8_11 = models.CharField(max_length=20, choices=i_8_11_choices, null=True)
+    i_8_12_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_8_12 = models.CharField(max_length=20, choices=i_8_12_choices, null=True)
+    i_8_13_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_8_13 = models.CharField(max_length=20, choices=i_8_13_choices, null=True)
+    i_8_14_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_8_14 = models.CharField(max_length=20, choices=i_8_14_choices, null=True)
+    i_8_15_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_8_15 = models.CharField(max_length=20, choices=i_8_15_choices, null=True)
+    i_8_16_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_8_16 = models.CharField(max_length=20, choices=i_8_16_choices, null=True)
+    i_8_17_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_8_17 = models.CharField(max_length=20, choices=i_8_17_choices, null=True)
+    i_8_18_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_8_18 = models.CharField(max_length=20, choices=i_8_18_choices, null=True)
+    i_8_19_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_8_19 = models.CharField(max_length=20, choices=i_8_19_choices, null=True)
+    i_8_20_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_8_20 = models.CharField(max_length=20, choices=i_8_20_choices, null=True)
+    i_8_21_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_8_21 = models.CharField(max_length=20, choices=i_8_21_choices, null=True)
+    i_8_22_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_8_22 = models.CharField(max_length=20, choices=i_8_22_choices, null=True)
+    i_8_23_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_8_23 = models.CharField(max_length=20, choices=i_8_23_choices, null=True)
+    i_8_24_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_8_24 = models.CharField(max_length=20, choices=i_8_24_choices, null=True)
+    i_8_25_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_8_25 = models.CharField(max_length=20, choices=i_8_25_choices, null=True)
+    i_8_26_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_8_26 = models.CharField(max_length=20, choices=i_8_26_choices, null=True)
+    i_8_27_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_8_27 = models.CharField(max_length=20, choices=i_8_27_choices, null=True)
+    i_8_28_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_8_28 = models.CharField(max_length=20, choices=i_8_28_choices, null=True)
+    i_9_1_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_9_1 = models.CharField(max_length=20, choices=i_9_1_choices, null=True)
+    i_9_2_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_9_2 = models.CharField(max_length=20, choices=i_9_2_choices, null=True)
+    i_9_3_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_9_3 = models.CharField(max_length=20, choices=i_9_3_choices, null=True)
+    i_9_4_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_9_4 = models.CharField(max_length=20, choices=i_9_4_choices, null=True)
+    i_9_5_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_9_5 = models.CharField(max_length=20, choices=i_9_5_choices, null=True)
+    i_9_6_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_9_6 = models.CharField(max_length=20, choices=i_9_6_choices, null=True)
+    i_9_7_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_9_7 = models.CharField(max_length=20, choices=i_9_7_choices, null=True)
+    i_9_8_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_9_8 = models.CharField(max_length=20, choices=i_9_8_choices, null=True)
+    i_9_9_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_9_9 = models.CharField(max_length=20, choices=i_9_9_choices, null=True)
+    i_9_10_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_9_10 = models.CharField(max_length=20, choices=i_9_10_choices, null=True)
+    i_9_11_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_9_11 = models.CharField(max_length=20, choices=i_9_11_choices, null=True)
+    i_9_12_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_9_12 = models.CharField(max_length=20, choices=i_9_12_choices, null=True)
+    i_9_13_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_9_13 = models.CharField(max_length=20, choices=i_9_13_choices, null=True)
+    i_9_14_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_9_14 = models.CharField(max_length=20, choices=i_9_14_choices, null=True)
+    i_9_15_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_9_15 = models.CharField(max_length=20, choices=i_9_15_choices, null=True)
+    i_9_16_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_9_16 = models.CharField(max_length=20, choices=i_9_16_choices, null=True)
+    i_9_17_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_9_17 = models.CharField(max_length=20, choices=i_9_17_choices, null=True)
+    i_9_18_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_9_18 = models.CharField(max_length=20, choices=i_9_18_choices, null=True)
+    i_9_19_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_9_19 = models.CharField(max_length=20, choices=i_9_19_choices, null=True)
+    i_9_20_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_9_20 = models.CharField(max_length=20, choices=i_9_20_choices, null=True)
+    i_10_1_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_10_1 = models.CharField(max_length=20, choices=i_10_1_choices, null=True)
+    i_10_2_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_10_2 = models.CharField(max_length=20, choices=i_10_2_choices, null=True)
+    i_10_3_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_10_3 = models.CharField(max_length=20, choices=i_10_3_choices, null=True)
+    i_10_4_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_10_4 = models.CharField(max_length=20, choices=i_10_4_choices, null=True)
+    i_10_5_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_10_5 = models.CharField(max_length=20, choices=i_10_5_choices, null=True)
+    i_10_6_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_10_6 = models.CharField(max_length=20, choices=i_10_6_choices, null=True)
+    i_10_7_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_10_7 = models.CharField(max_length=20, choices=i_10_7_choices, null=True)
+    i_10_8_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_10_8 = models.CharField(max_length=20, choices=i_10_8_choices, null=True)
+    i_10_9_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_10_9 = models.CharField(max_length=20, choices=i_10_9_choices, null=True)
+    i_10_10_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_10_10 = models.CharField(max_length=20, choices=i_10_10_choices, null=True)
+    i_10_11_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_10_11 = models.CharField(max_length=20, choices=i_10_11_choices, null=True)
+    i_10_12_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_10_12 = models.CharField(max_length=20, choices=i_10_12_choices, null=True)
+    i_10_13_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_10_13 = models.CharField(max_length=20, choices=i_10_13_choices, null=True)
+    i_10_14_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_10_14 = models.CharField(max_length=20, choices=i_10_14_choices, null=True)
+    i_10_15_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_10_15 = models.CharField(max_length=20, choices=i_10_15_choices, null=True)
+    i_10_16_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_10_16 = models.CharField(max_length=20, choices=i_10_16_choices, null=True)
+    i_10_17_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_10_17 = models.CharField(max_length=20, choices=i_10_17_choices, null=True)
+    i_10_18_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_10_18 = models.CharField(max_length=20, choices=i_10_18_choices, null=True)
+    i_10_19_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_10_19 = models.CharField(max_length=20, choices=i_10_19_choices, null=True)
+    i_10_20_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_10_20 = models.CharField(max_length=20, choices=i_10_20_choices, null=True)
+    i_11_1_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_11_1 = models.CharField(max_length=20, choices=i_11_1_choices, null=True)
+    i_11_2_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_11_2 = models.CharField(max_length=20, choices=i_11_2_choices, null=True)
+    i_11_3_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_11_3 = models.CharField(max_length=20, choices=i_11_3_choices, null=True)
+    i_11_4_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_11_4 = models.CharField(max_length=20, choices=i_11_4_choices, null=True)
+    i_11_5_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_11_5 = models.CharField(max_length=20, choices=i_11_5_choices, null=True)
+    i_11_6_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_11_6 = models.CharField(max_length=20, choices=i_11_6_choices, null=True)
+    i_11_7_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_11_7 = models.CharField(max_length=20, choices=i_11_7_choices, null=True)
+    i_11_8_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_11_8 = models.CharField(max_length=20, choices=i_11_8_choices, null=True)
+    i_11_9_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_11_9 = models.CharField(max_length=20, choices=i_11_9_choices, null=True)
+    i_11_10_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_11_10 = models.CharField(max_length=20, choices=i_11_10_choices, null=True)
+    i_11_11_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_11_11 = models.CharField(max_length=20, choices=i_11_11_choices, null=True)
+    i_11_12_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_11_12 = models.CharField(max_length=20, choices=i_11_12_choices, null=True)
+    i_11_13_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_11_13 = models.CharField(max_length=20, choices=i_11_13_choices, null=True)
+    i_11_14_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_11_14 = models.CharField(max_length=20, choices=i_11_14_choices, null=True)
+    i_11_15_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_11_15 = models.CharField(max_length=20, choices=i_11_15_choices, null=True)
+    i_11_16_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_11_16 = models.CharField(max_length=20, choices=i_11_16_choices, null=True)
+    i_11_17_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_11_17 = models.CharField(max_length=20, choices=i_11_17_choices, null=True)
+    i_11_18_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_11_18 = models.CharField(max_length=20, choices=i_11_18_choices, null=True)
+    i_11_19_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_11_19 = models.CharField(max_length=20, choices=i_11_19_choices, null=True)
+    i_11_20_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_11_20 = models.CharField(max_length=20, choices=i_11_20_choices, null=True)
+    i_11_21_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_11_21 = models.CharField(max_length=20, choices=i_11_21_choices, null=True)
+    i_11_22_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_11_22 = models.CharField(max_length=20, choices=i_11_22_choices, null=True)
+    i_11_23_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_11_23 = models.CharField(max_length=20, choices=i_11_23_choices, null=True)
+    i_11_24_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_11_24 = models.CharField(max_length=20, choices=i_11_24_choices, null=True)
+    i_11_25_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_11_25 = models.CharField(max_length=20, choices=i_11_25_choices, null=True)
+    i_11_26_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_11_26 = models.CharField(max_length=20, choices=i_11_26_choices, null=True)
+    i_11_27_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_11_27 = models.CharField(max_length=20, choices=i_11_27_choices, null=True)
+    i_11_28_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_11_28 = models.CharField(max_length=20, choices=i_11_28_choices, null=True)
+    i_11_29_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_11_29 = models.CharField(max_length=20, choices=i_11_29_choices, null=True)
+    i_11_30_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_11_30 = models.CharField(max_length=20, choices=i_11_30_choices, null=True)
+    i_11_31_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_11_31 = models.CharField(max_length=20, choices=i_11_31_choices, null=True)
+    i_11_32_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_11_32 = models.CharField(max_length=20, choices=i_11_32_choices, null=True)
+    i_11_33_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_11_33 = models.CharField(max_length=20, choices=i_11_33_choices, null=True)
+    i_11_34_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_11_34 = models.CharField(max_length=20, choices=i_11_34_choices, null=True)
+    i_11_35_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_11_35 = models.CharField(max_length=20, choices=i_11_35_choices, null=True)
+    i_12_1_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_12_1 = models.CharField(max_length=20, choices=i_12_1_choices, null=True)
+    i_12_2_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_12_2 = models.CharField(max_length=20, choices=i_12_2_choices, null=True)
+    i_12_3_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_12_3 = models.CharField(max_length=20, choices=i_12_3_choices, null=True)
+    i_12_4_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_12_4 = models.CharField(max_length=20, choices=i_12_4_choices, null=True)
+    i_12_5_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_12_5 = models.CharField(max_length=20, choices=i_12_5_choices, null=True)
+    i_12_6_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_12_6 = models.CharField(max_length=20, choices=i_12_6_choices, null=True)
+    i_12_7_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_12_7 = models.CharField(max_length=20, choices=i_12_7_choices, null=True)
+    i_12_8_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_12_8 = models.CharField(max_length=20, choices=i_12_8_choices, null=True)
+    i_12_9_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_12_9 = models.CharField(max_length=20, choices=i_12_9_choices, null=True)
+    i_12_10_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_12_10 = models.CharField(max_length=20, choices=i_12_10_choices, null=True)
+    i_12_11_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_12_11 = models.CharField(max_length=20, choices=i_12_11_choices, null=True)
+    i_12_12_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_12_12 = models.CharField(max_length=20, choices=i_12_12_choices, null=True)
+    i_12_13_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_12_13 = models.CharField(max_length=20, choices=i_12_13_choices, null=True)
+    i_12_14_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_12_14 = models.CharField(max_length=20, choices=i_12_14_choices, null=True)
+    i_12_15_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_12_15 = models.CharField(max_length=20, choices=i_12_15_choices, null=True)
+    i_12_16_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_12_16 = models.CharField(max_length=20, choices=i_12_16_choices, null=True)
+    i_12_17_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_12_17 = models.CharField(max_length=20, choices=i_12_17_choices, null=True)
+    i_12_18_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_12_18 = models.CharField(max_length=20, choices=i_12_18_choices, null=True)
+    i_12_19_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_12_19 = models.CharField(max_length=20, choices=i_12_19_choices, null=True)
+    i_12_20_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_12_20 = models.CharField(max_length=20, choices=i_12_20_choices, null=True)
+    i_12_21_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_12_21 = models.CharField(max_length=20, choices=i_12_21_choices, null=True)
+    i_12_22_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_12_22 = models.CharField(max_length=20, choices=i_12_22_choices, null=True)
+    i_12_23_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_12_23 = models.CharField(max_length=20, choices=i_12_23_choices, null=True)
+    i_13_1_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_13_1 = models.CharField(max_length=20, choices=i_13_1_choices, null=True)
+    i_13_2_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_13_2 = models.CharField(max_length=20, choices=i_13_2_choices, null=True)
+    i_13_3_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_13_3 = models.CharField(max_length=20, choices=i_13_3_choices, null=True)
+    i_13_4_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_13_4 = models.CharField(max_length=20, choices=i_13_4_choices, null=True)
+    i_13_5_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_13_5 = models.CharField(max_length=20, choices=i_13_5_choices, null=True)
+    i_13_6_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_13_6 = models.CharField(max_length=20, choices=i_13_6_choices, null=True)
+    i_13_7_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_13_7 = models.CharField(max_length=20, choices=i_13_7_choices, null=True)
+    i_13_8_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_13_8 = models.CharField(max_length=20, choices=i_13_8_choices, null=True)
+    i_13_9_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_13_9 = models.CharField(max_length=20, choices=i_13_9_choices, null=True)
+    i_13_10_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_13_10 = models.CharField(max_length=20, choices=i_13_10_choices, null=True)
+    i_13_11_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_13_11 = models.CharField(max_length=20, choices=i_13_11_choices, null=True)
+    i_13_12_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_13_12 = models.CharField(max_length=20, choices=i_13_12_choices, null=True)
+    i_13_13_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_13_13 = models.CharField(max_length=20, choices=i_13_13_choices, null=True)
+    i_13_14_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_13_14 = models.CharField(max_length=20, choices=i_13_14_choices, null=True)
+    i_14_1_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_14_1 = models.CharField(max_length=20, choices=i_14_1_choices, null=True)
+    i_14_2_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_14_2 = models.CharField(max_length=20, choices=i_14_2_choices, null=True)
+    i_14_3_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_14_3 = models.CharField(max_length=20, choices=i_14_3_choices, null=True)
+    i_14_4_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_14_4 = models.CharField(max_length=20, choices=i_14_4_choices, null=True)
+    i_14_5_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_14_5 = models.CharField(max_length=20, choices=i_14_5_choices, null=True)
+    i_14_6_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_14_6 = models.CharField(max_length=20, choices=i_14_6_choices, null=True)
+    i_14_7_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_14_7 = models.CharField(max_length=20, choices=i_14_7_choices, null=True)
+    i_14_8_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_14_8 = models.CharField(max_length=20, choices=i_14_8_choices, null=True)
+    i_14_9_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_14_9 = models.CharField(max_length=20, choices=i_14_9_choices, null=True)
+    i_14_10_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_14_10 = models.CharField(max_length=20, choices=i_14_10_choices, null=True)
+    i_14_11_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_14_11 = models.CharField(max_length=20, choices=i_14_11_choices, null=True)
+    i_14_12_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_14_12 = models.CharField(max_length=20, choices=i_14_12_choices, null=True)
+    i_15_1_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_15_1 = models.CharField(max_length=20, choices=i_15_1_choices, null=True)
+    i_15_2_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_15_2 = models.CharField(max_length=20, choices=i_15_2_choices, null=True)
+    i_15_3_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_15_3 = models.CharField(max_length=20, choices=i_15_3_choices, null=True)
+    i_15_4_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_15_4 = models.CharField(max_length=20, choices=i_15_4_choices, null=True)
+    i_15_5_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_15_5 = models.CharField(max_length=20, choices=i_15_5_choices, null=True)
+    i_15_6_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_15_6 = models.CharField(max_length=20, choices=i_15_6_choices, null=True)
+    i_15_7_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_15_7 = models.CharField(max_length=20, choices=i_15_7_choices, null=True)
+    i_15_8_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_15_8 = models.CharField(max_length=20, choices=i_15_8_choices, null=True)
+    i_15_9_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_15_9 = models.CharField(max_length=20, choices=i_15_9_choices, null=True)
+    i_15_10_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_15_10 = models.CharField(max_length=20, choices=i_15_10_choices, null=True)
+    i_15_11_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_15_11 = models.CharField(max_length=20, choices=i_15_11_choices, null=True)
+    i_15_12_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_15_12 = models.CharField(max_length=20, choices=i_15_12_choices, null=True)
+    i_15_13_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_15_13 = models.CharField(max_length=20, choices=i_15_13_choices, null=True)
+    i_15_14_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_15_14 = models.CharField(max_length=20, choices=i_15_14_choices, null=True)
+    i_15_15_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_15_15 = models.CharField(max_length=20, choices=i_15_15_choices, null=True)
+    i_15_16_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_15_16 = models.CharField(max_length=20, choices=i_15_16_choices, null=True)
+    i_15_17_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_15_17 = models.CharField(max_length=20, choices=i_15_17_choices, null=True)
+    i_15_18_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_15_18 = models.CharField(max_length=20, choices=i_15_18_choices, null=True)
+    i_15_19_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_15_19 = models.CharField(max_length=20, choices=i_15_19_choices, null=True)
+    i_15_20_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_15_20 = models.CharField(max_length=20, choices=i_15_20_choices, null=True)
+    i_15_21_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_15_21 = models.CharField(max_length=20, choices=i_15_21_choices, null=True)
+    i_15_22_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_15_22 = models.CharField(max_length=20, choices=i_15_22_choices, null=True)
+    i_16_1_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_16_1 = models.CharField(max_length=20, choices=i_16_1_choices, null=True)
+    i_16_2_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_16_2 = models.CharField(max_length=20, choices=i_16_2_choices, null=True)
+    i_16_3_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_16_3 = models.CharField(max_length=20, choices=i_16_3_choices, null=True)
+    i_16_4_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_16_4 = models.CharField(max_length=20, choices=i_16_4_choices, null=True)
+    i_16_5_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_16_5 = models.CharField(max_length=20, choices=i_16_5_choices, null=True)
+    i_16_6_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_16_6 = models.CharField(max_length=20, choices=i_16_6_choices, null=True)
+    i_16_7_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_16_7 = models.CharField(max_length=20, choices=i_16_7_choices, null=True)
+    i_16_8_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_16_8 = models.CharField(max_length=20, choices=i_16_8_choices, null=True)
+    i_16_9_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_16_9 = models.CharField(max_length=20, choices=i_16_9_choices, null=True)
+    i_16_10_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_16_10 = models.CharField(max_length=20, choices=i_16_10_choices, null=True)
+    i_16_11_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_16_11 = models.CharField(max_length=20, choices=i_16_11_choices, null=True)
+    i_16_12_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_16_12 = models.CharField(max_length=20, choices=i_16_12_choices, null=True)
+    i_16_13_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_16_13 = models.CharField(max_length=20, choices=i_16_13_choices, null=True)
+    i_16_14_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_16_14 = models.CharField(max_length=20, choices=i_16_14_choices, null=True)
+    i_16_15_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_16_15 = models.CharField(max_length=20, choices=i_16_15_choices, null=True)
+    i_16_16_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_16_16 = models.CharField(max_length=20, choices=i_16_16_choices, null=True)
+    i_16_17_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_16_17 = models.CharField(max_length=20, choices=i_16_17_choices, null=True)
+    i_16_18_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_16_18 = models.CharField(max_length=20, choices=i_16_18_choices, null=True)
+    i_17_1_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_1 = models.CharField(max_length=20, choices=i_17_1_choices, null=True)
+    i_17_2_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_2 = models.CharField(max_length=20, choices=i_17_2_choices, null=True)
+    i_17_3_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_3 = models.CharField(max_length=20, choices=i_17_3_choices, null=True)
+    i_17_4_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_4 = models.CharField(max_length=20, choices=i_17_4_choices, null=True)
+    i_17_5_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_5 = models.CharField(max_length=20, choices=i_17_5_choices, null=True)
+    i_17_6_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_6 = models.CharField(max_length=20, choices=i_17_6_choices, null=True)
+    i_17_7_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_7 = models.CharField(max_length=20, choices=i_17_7_choices, null=True)
+    i_17_8_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_8 = models.CharField(max_length=20, choices=i_17_8_choices, null=True)
+    i_17_9_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_9 = models.CharField(max_length=20, choices=i_17_9_choices, null=True)
+    i_17_10_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_10 = models.CharField(max_length=20, choices=i_17_10_choices, null=True)
+    i_17_11_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_11 = models.CharField(max_length=20, choices=i_17_11_choices, null=True)
+    i_17_12_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_12 = models.CharField(max_length=20, choices=i_17_12_choices, null=True)
+    i_17_13_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_13 = models.CharField(max_length=20, choices=i_17_13_choices, null=True)
+    i_17_14_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_14 = models.CharField(max_length=20, choices=i_17_14_choices, null=True)
+    i_17_15_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_15 = models.CharField(max_length=20, choices=i_17_15_choices, null=True)
+    i_17_16_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_16 = models.CharField(max_length=20, choices=i_17_16_choices, null=True)
+    i_17_17_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_17 = models.CharField(max_length=20, choices=i_17_17_choices, null=True)
+    i_17_18_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_18 = models.CharField(max_length=20, choices=i_17_18_choices, null=True)
+    i_17_19_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_19 = models.CharField(max_length=20, choices=i_17_19_choices, null=True)
+    i_17_20_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_20 = models.CharField(max_length=20, choices=i_17_20_choices, null=True)
+    i_17_21_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_21 = models.CharField(max_length=20, choices=i_17_21_choices, null=True)
+    i_17_22_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_22 = models.CharField(max_length=20, choices=i_17_22_choices, null=True)
+    i_17_23_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_23 = models.CharField(max_length=20, choices=i_17_23_choices, null=True)
+    i_17_24_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_24 = models.CharField(max_length=20, choices=i_17_24_choices, null=True)
+    i_17_25_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_25 = models.CharField(max_length=20, choices=i_17_25_choices, null=True)
+    i_17_26_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_26 = models.CharField(max_length=20, choices=i_17_26_choices, null=True)
+    i_17_27_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_27 = models.CharField(max_length=20, choices=i_17_27_choices, null=True)
+    i_17_28_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_28 = models.CharField(max_length=20, choices=i_17_28_choices, null=True)
+    i_17_29_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_29 = models.CharField(max_length=20, choices=i_17_29_choices, null=True)
+    i_17_30_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_30 = models.CharField(max_length=20, choices=i_17_30_choices, null=True)
+    i_17_31_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_31 = models.CharField(max_length=20, choices=i_17_31_choices, null=True)
+    i_17_32_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_32 = models.CharField(max_length=20, choices=i_17_32_choices, null=True)
+    i_17_33_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_33 = models.CharField(max_length=20, choices=i_17_33_choices, null=True)
+    i_17_34_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_34 = models.CharField(max_length=20, choices=i_17_34_choices, null=True)
+    i_17_35_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_35 = models.CharField(max_length=20, choices=i_17_35_choices, null=True)
+    i_17_36_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_36 = models.CharField(max_length=20, choices=i_17_36_choices, null=True)
+    i_17_37_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_37 = models.CharField(max_length=20, choices=i_17_37_choices, null=True)
+    i_17_38_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_38 = models.CharField(max_length=20, choices=i_17_38_choices, null=True)
+    i_17_39_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_39 = models.CharField(max_length=20, choices=i_17_39_choices, null=True)
+    i_17_40_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_40 = models.CharField(max_length=20, choices=i_17_40_choices, null=True)
+    i_17_41_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_41 = models.CharField(max_length=20, choices=i_17_41_choices, null=True)
+    i_17_42_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_42 = models.CharField(max_length=20, choices=i_17_42_choices, null=True)
+    i_17_43_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_43 = models.CharField(max_length=20, choices=i_17_43_choices, null=True)
+    i_17_44_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_44 = models.CharField(max_length=20, choices=i_17_44_choices, null=True)
+    i_17_45_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_45 = models.CharField(max_length=20, choices=i_17_45_choices, null=True)
+    i_17_46_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_46 = models.CharField(max_length=20, choices=i_17_46_choices, null=True)
+    i_17_47_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_47 = models.CharField(max_length=20, choices=i_17_47_choices, null=True)
+    i_17_48_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_48 = models.CharField(max_length=20, choices=i_17_48_choices, null=True)
+    i_17_49_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_49 = models.CharField(max_length=20, choices=i_17_49_choices, null=True)
+    i_17_50_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_50 = models.CharField(max_length=20, choices=i_17_50_choices, null=True)
+    i_17_51_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_51 = models.CharField(max_length=20, choices=i_17_51_choices, null=True)
+    i_17_52_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_52 = models.CharField(max_length=20, choices=i_17_52_choices, null=True)
+    i_17_53_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_17_53 = models.CharField(max_length=20, choices=i_17_53_choices, null=True)
+    i_18_1_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_18_1 = models.CharField(max_length=20, choices=i_18_1_choices, null=True)
+    i_18_2_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_18_2 = models.CharField(max_length=20, choices=i_18_2_choices, null=True)
+    i_18_3_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_18_3 = models.CharField(max_length=20, choices=i_18_3_choices, null=True)
+    i_18_4_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_18_4 = models.CharField(max_length=20, choices=i_18_4_choices, null=True)
+    i_18_5_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_18_5 = models.CharField(max_length=20, choices=i_18_5_choices, null=True)
+    i_18_6_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_18_6 = models.CharField(max_length=20, choices=i_18_6_choices, null=True)
+    i_18_7_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_18_7 = models.CharField(max_length=20, choices=i_18_7_choices, null=True)
+    i_18_8_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_18_8 = models.CharField(max_length=20, choices=i_18_8_choices, null=True)
+    i_18_9_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_18_9 = models.CharField(max_length=20, choices=i_18_9_choices, null=True)
+    i_18_10_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_18_10 = models.CharField(max_length=20, choices=i_18_10_choices, null=True)
+    i_18_11_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_18_11 = models.CharField(max_length=20, choices=i_18_11_choices, null=True)
+    i_18_12_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_18_12 = models.CharField(max_length=20, choices=i_18_12_choices, null=True)
+    i_18_13_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_18_13 = models.CharField(max_length=20, choices=i_18_13_choices, null=True)
+    i_18_14_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_18_14 = models.CharField(max_length=20, choices=i_18_14_choices, null=True)
+    i_18_15_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_18_15 = models.CharField(max_length=20, choices=i_18_15_choices, null=True)
+    i_18_16_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_18_16 = models.CharField(max_length=20, choices=i_18_16_choices, null=True)
+    i_18_17_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_18_17 = models.CharField(max_length=20, choices=i_18_17_choices, null=True)
+    i_18_18_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_18_18 = models.CharField(max_length=20, choices=i_18_18_choices, null=True)
+    i_18_19_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_18_19 = models.CharField(max_length=20, choices=i_18_19_choices, null=True)
+    i_18_20_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_18_20 = models.CharField(max_length=20, choices=i_18_20_choices, null=True)
+    i_18_21_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_18_21 = models.CharField(max_length=20, choices=i_18_21_choices, null=True)
+    i_18_22_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_18_22 = models.CharField(max_length=20, choices=i_18_22_choices, null=True)
+    i_18_23_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_18_23 = models.CharField(max_length=20, choices=i_18_23_choices, null=True)
+    i_18_24_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_18_24 = models.CharField(max_length=20, choices=i_18_24_choices, null=True)
+    i_18_25_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_18_25 = models.CharField(max_length=20, choices=i_18_25_choices, null=True)
+    i_18_26_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_18_26 = models.CharField(max_length=20, choices=i_18_26_choices, null=True)
+    i_18_27_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_18_27 = models.CharField(max_length=20, choices=i_18_27_choices, null=True)
+    i_18_28_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_18_28 = models.CharField(max_length=20, choices=i_18_28_choices, null=True)
+    i_18_29_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_18_29 = models.CharField(max_length=20, choices=i_18_29_choices, null=True)
+    i_18_30_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_18_30 = models.CharField(max_length=20, choices=i_18_30_choices, null=True)
+    i_18_31_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_18_31 = models.CharField(max_length=20, choices=i_18_31_choices, null=True)
+    i_18_32_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_18_32 = models.CharField(max_length=20, choices=i_18_32_choices, null=True)
+    i_18_33_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_18_33 = models.CharField(max_length=20, choices=i_18_33_choices, null=True)
+    i_18_34_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_18_34 = models.CharField(max_length=20, choices=i_18_34_choices, null=True)
+    i_18_35_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_18_35 = models.CharField(max_length=20, choices=i_18_35_choices, null=True)
+    i_18_36_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_18_36 = models.CharField(max_length=20, choices=i_18_36_choices, null=True)
+    i_19_1_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_19_1 = models.CharField(max_length=20, choices=i_19_1_choices, null=True)
+    i_19_2_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_19_2 = models.CharField(max_length=20, choices=i_19_2_choices, null=True)
+    i_19_3_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_19_3 = models.CharField(max_length=20, choices=i_19_3_choices, null=True)
+    i_19_4_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_19_4 = models.CharField(max_length=20, choices=i_19_4_choices, null=True)
+    i_19_5_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_19_5 = models.CharField(max_length=20, choices=i_19_5_choices, null=True)
+    i_19_6_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_19_6 = models.CharField(max_length=20, choices=i_19_6_choices, null=True)
+    i_19_7_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_19_7 = models.CharField(max_length=20, choices=i_19_7_choices, null=True)
+    i_19_8_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_19_8 = models.CharField(max_length=20, choices=i_19_8_choices, null=True)
+    i_20_1_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_20_1 = models.CharField(max_length=20, choices=i_20_1_choices, null=True)
+    i_20_2_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_20_2 = models.CharField(max_length=20, choices=i_20_2_choices, null=True)
+    i_20_3_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_20_3 = models.CharField(max_length=20, choices=i_20_3_choices, null=True)
+    i_20_4_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_20_4 = models.CharField(max_length=20, choices=i_20_4_choices, null=True)
+    i_20_5_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_20_5 = models.CharField(max_length=20, choices=i_20_5_choices, null=True)
+    i_20_6_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_20_6 = models.CharField(max_length=20, choices=i_20_6_choices, null=True)
+    i_20_7_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_20_7 = models.CharField(max_length=20, choices=i_20_7_choices, null=True)
+    i_20_8_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_20_8 = models.CharField(max_length=20, choices=i_20_8_choices, null=True)
+    i_20_9_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_20_9 = models.CharField(max_length=20, choices=i_20_9_choices, null=True)
+    i_20_10_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_20_10 = models.CharField(max_length=20, choices=i_20_10_choices, null=True)
+    i_20_11_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_20_11 = models.CharField(max_length=20, choices=i_20_11_choices, null=True)
+    i_21_1_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_21_1 = models.CharField(max_length=20, choices=i_21_1_choices, null=True)
+    i_21_2_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_21_2 = models.CharField(max_length=20, choices=i_21_2_choices, null=True)
+    i_21_3_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_21_3 = models.CharField(max_length=20, choices=i_21_3_choices, null=True)
+    i_21_4_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_21_4 = models.CharField(max_length=20, choices=i_21_4_choices, null=True)
+    i_21_5_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_21_5 = models.CharField(max_length=20, choices=i_21_5_choices, null=True)
+    i_21_6_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_21_6 = models.CharField(max_length=20, choices=i_21_6_choices, null=True)
+    i_22_1_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_22_1 = models.CharField(max_length=20, choices=i_22_1_choices, null=True)
+    i_22_2_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_22_2 = models.CharField(max_length=20, choices=i_22_2_choices, null=True)
+    i_22_3_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_22_3 = models.CharField(max_length=20, choices=i_22_3_choices, null=True)
+    i_22_4_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_22_4 = models.CharField(max_length=20, choices=i_22_4_choices, null=True)
+    i_22_5_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_22_5 = models.CharField(max_length=20, choices=i_22_5_choices, null=True)
+    i_22_6_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_22_6 = models.CharField(max_length=20, choices=i_22_6_choices, null=True)
+    i_22_7_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_22_7 = models.CharField(max_length=20, choices=i_22_7_choices, null=True)
+    i_22_8_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_22_8 = models.CharField(max_length=20, choices=i_22_8_choices, null=True)
+    i_22_9_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_22_9 = models.CharField(max_length=20, choices=i_22_9_choices, null=True)
+    i_22_10_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_22_10 = models.CharField(max_length=20, choices=i_22_10_choices, null=True)
+    i_22_11_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_22_11 = models.CharField(max_length=20, choices=i_22_11_choices, null=True)
+    i_22_12_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_22_12 = models.CharField(max_length=20, choices=i_22_12_choices, null=True)
+    i_22_13_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_22_13 = models.CharField(max_length=20, choices=i_22_13_choices, null=True)
+    i_22_14_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_22_14 = models.CharField(max_length=20, choices=i_22_14_choices, null=True)
+    i_22_15_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_22_15 = models.CharField(max_length=20, choices=i_22_15_choices, null=True)
+    i_22_16_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_22_16 = models.CharField(max_length=20, choices=i_22_16_choices, null=True)
+    i_23_1_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_23_1 = models.CharField(max_length=20, choices=i_23_1_choices, null=True)
+    i_23_2_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_23_2 = models.CharField(max_length=20, choices=i_23_2_choices, null=True)
+    i_23_3_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_23_3 = models.CharField(max_length=20, choices=i_23_3_choices, null=True)
+    i_23_4_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_23_4 = models.CharField(max_length=20, choices=i_23_4_choices, null=True)
+    i_23_5_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_23_5 = models.CharField(max_length=20, choices=i_23_5_choices, null=True)
+    i_23_6_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_23_6 = models.CharField(max_length=20, choices=i_23_6_choices, null=True)
+    i_23_7_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_23_7 = models.CharField(max_length=20, choices=i_23_7_choices, null=True)
+    i_23_8_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_23_8 = models.CharField(max_length=20, choices=i_23_8_choices, null=True)
+    i_23_9_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_i_23_9 = models.CharField(max_length=20, choices=i_23_9_choices, null=True)
+    i_24_1_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_i_24_1 = models.CharField(max_length=20, choices=i_24_1_choices, null=True)
+    i_24_2_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_i_24_2 = models.CharField(max_length=20, choices=i_24_2_choices, null=True)
+    i_24_3_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_i_24_3 = models.CharField(max_length=20, choices=i_24_3_choices, null=True)
+    i_24_4_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_i_24_4 = models.CharField(max_length=20, choices=i_24_4_choices, null=True)
+    i_24_5_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_i_24_5 = models.CharField(max_length=20, choices=i_24_5_choices, null=True)
+    i_24_6_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_i_24_6 = models.CharField(max_length=20, choices=i_24_6_choices, null=True)
+    i_24_7_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_i_24_7 = models.CharField(max_length=20, choices=i_24_7_choices, null=True)
+    i_24_8_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_i_24_8 = models.CharField(max_length=20, choices=i_24_8_choices, null=True)
+    i_24_9_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_i_24_9 = models.CharField(max_length=20, choices=i_24_9_choices, null=True)
+    i_24_10_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_i_24_10 = models.CharField(max_length=20, choices=i_24_10_choices, null=True)
+    i_24_11_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_i_24_11 = models.CharField(max_length=20, choices=i_24_11_choices, null=True)
+    i_24_12_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_i_24_12 = models.CharField(max_length=20, choices=i_24_12_choices, null=True)
+    i_25_1_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_25_1 = models.CharField(max_length=20, choices=i_25_1_choices, null=True)
+    i_25_2_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_25_2 = models.CharField(max_length=20, choices=i_25_2_choices, null=True)
+    i_25_3_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_25_3 = models.CharField(max_length=20, choices=i_25_3_choices, null=True)
+    i_25_4_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_25_4 = models.CharField(max_length=20, choices=i_25_4_choices, null=True)
+    i_25_5_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_25_5 = models.CharField(max_length=20, choices=i_25_5_choices, null=True)
+    i_25_6_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_25_6 = models.CharField(max_length=20, choices=i_25_6_choices, null=True)
+    i_26_1_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_26_1 = models.CharField(max_length=20, choices=i_26_1_choices, null=True)
+    i_26_2_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_26_2 = models.CharField(max_length=20, choices=i_26_2_choices, null=True)
+    i_26_3_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_26_3 = models.CharField(max_length=20, choices=i_26_3_choices, null=True)
+    i_26_4_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_26_4 = models.CharField(max_length=20, choices=i_26_4_choices, null=True)
+    i_26_5_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_26_5 = models.CharField(max_length=20, choices=i_26_5_choices, null=True)
+    i_26_6_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_26_6 = models.CharField(max_length=20, choices=i_26_6_choices, null=True)
+    i_26_7_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_26_7 = models.CharField(max_length=20, choices=i_26_7_choices, null=True)
+    i_26_8_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_26_8 = models.CharField(max_length=20, choices=i_26_8_choices, null=True)
+    i_26_9_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_26_9 = models.CharField(max_length=20, choices=i_26_9_choices, null=True)
+    i_26_10_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_26_10 = models.CharField(max_length=20, choices=i_26_10_choices, null=True)
+    i_26_11_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_26_11 = models.CharField(max_length=20, choices=i_26_11_choices, null=True)
+    i_26_12_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_26_12 = models.CharField(max_length=20, choices=i_26_12_choices, null=True)
+    i_26_13_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_26_13 = models.CharField(max_length=20, choices=i_26_13_choices, null=True)
+    i_26_14_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_26_14 = models.CharField(max_length=20, choices=i_26_14_choices, null=True)
+    i_26_15_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_26_15 = models.CharField(max_length=20, choices=i_26_15_choices, null=True)
+    i_26_16_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_26_16 = models.CharField(max_length=20, choices=i_26_16_choices, null=True)
+    i_26_17_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_26_17 = models.CharField(max_length=20, choices=i_26_17_choices, null=True)
+    i_27_1_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_27_1 = models.CharField(max_length=20, choices=i_27_1_choices, null=True)
+    i_27_2_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_27_2 = models.CharField(max_length=20, choices=i_27_2_choices, null=True)
+    i_27_3_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_27_3 = models.CharField(max_length=20, choices=i_27_3_choices, null=True)
+    i_27_4_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_27_4 = models.CharField(max_length=20, choices=i_27_4_choices, null=True)
+    i_27_5_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_27_5 = models.CharField(max_length=20, choices=i_27_5_choices, null=True)
+    i_27_6_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_27_6 = models.CharField(max_length=20, choices=i_27_6_choices, null=True)
+    i_27_7_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_27_7 = models.CharField(max_length=20, choices=i_27_7_choices, null=True)
+    i_27_8_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_27_8 = models.CharField(max_length=20, choices=i_27_8_choices, null=True)
+    i_27_9_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_27_9 = models.CharField(max_length=20, choices=i_27_9_choices, null=True)
+    i_27_10_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_27_10 = models.CharField(max_length=20, choices=i_27_10_choices, null=True)
+    i_27_11_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_27_11 = models.CharField(max_length=20, choices=i_27_11_choices, null=True)
+    i_27_12_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_27_12 = models.CharField(max_length=20, choices=i_27_12_choices, null=True)
+    i_27_13_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_27_13 = models.CharField(max_length=20, choices=i_27_13_choices, null=True)
+    i_28_1_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_28_1 = models.CharField(max_length=20, choices=i_28_1_choices, null=True)
+    i_28_2_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_28_2 = models.CharField(max_length=20, choices=i_28_2_choices, null=True)
+    i_28_3_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_28_3 = models.CharField(max_length=20, choices=i_28_3_choices, null=True)
+    i_28_4_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_28_4 = models.CharField(max_length=20, choices=i_28_4_choices, null=True)
+    i_28_5_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_28_5 = models.CharField(max_length=20, choices=i_28_5_choices, null=True)
+    i_28_6_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_28_6 = models.CharField(max_length=20, choices=i_28_6_choices, null=True)
+    i_28_7_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_28_7 = models.CharField(max_length=20, choices=i_28_7_choices, null=True)
+    i_28_8_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_28_8 = models.CharField(max_length=20, choices=i_28_8_choices, null=True)
+    i_28_9_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_28_9 = models.CharField(max_length=20, choices=i_28_9_choices, null=True)
+    i_28_10_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_28_10 = models.CharField(max_length=20, choices=i_28_10_choices, null=True)
+    i_28_11_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_28_11 = models.CharField(max_length=20, choices=i_28_11_choices, null=True)
+    i_28_12_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_28_12 = models.CharField(max_length=20, choices=i_28_12_choices, null=True)
+    i_28_13_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_28_13 = models.CharField(max_length=20, choices=i_28_13_choices, null=True)
+    i_28_14_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_28_14 = models.CharField(max_length=20, choices=i_28_14_choices, null=True)
+    i_28_15_choices = [(u'no', u'no'), (u'yes', u'yes')]
+    item_i_28_15 = models.CharField(max_length=20, choices=i_28_15_choices, null=True)
+
+
+class Danish_WS(BaseTable):
+    i_01_1_choices = [(u'produces', u'produces')]
+    item_i_01_1 = models.CharField(max_length=20, choices=i_01_1_choices, null=True)
+    i_01_2_choices = [(u'produces', u'produces')]
+    item_i_01_2 = models.CharField(max_length=20, choices=i_01_2_choices, null=True)
+    i_01_3_choices = [(u'produces', u'produces')]
+    item_i_01_3 = models.CharField(max_length=20, choices=i_01_3_choices, null=True)
+    i_01_4_choices = [(u'produces', u'produces')]
+    item_i_01_4 = models.CharField(max_length=20, choices=i_01_4_choices, null=True)
+    i_01_5_choices = [(u'produces', u'produces')]
+    item_i_01_5 = models.CharField(max_length=20, choices=i_01_5_choices, null=True)
+    i_01_6_choices = [(u'produces', u'produces')]
+    item_i_01_6 = models.CharField(max_length=20, choices=i_01_6_choices, null=True)
+    i_01_7_choices = [(u'produces', u'produces')]
+    item_i_01_7 = models.CharField(max_length=20, choices=i_01_7_choices, null=True)
+    i_01_8_choices = [(u'produces', u'produces')]
+    item_i_01_8 = models.CharField(max_length=20, choices=i_01_8_choices, null=True)
+    i_01_9_choices = [(u'produces', u'produces')]
+    item_i_01_9 = models.CharField(max_length=20, choices=i_01_9_choices, null=True)
+    i_01_10_choices = [(u'produces', u'produces')]
+    item_i_01_10 = models.CharField(max_length=20, choices=i_01_10_choices, null=True)
+    i_01_11_choices = [(u'produces', u'produces')]
+    item_i_01_11 = models.CharField(max_length=20, choices=i_01_11_choices, null=True)
+    i_01_12_choices = [(u'produces', u'produces')]
+    item_i_01_12 = models.CharField(max_length=20, choices=i_01_12_choices, null=True)
+    i_02_1_choices = [(u'produces', u'produces')]
+    item_i_02_1 = models.CharField(max_length=20, choices=i_02_1_choices, null=True)
+    i_02_2_choices = [(u'produces', u'produces')]
+    item_i_02_2 = models.CharField(max_length=20, choices=i_02_2_choices, null=True)
+    i_02_3_choices = [(u'produces', u'produces')]
+    item_i_02_3 = models.CharField(max_length=20, choices=i_02_3_choices, null=True)
+    i_02_4_choices = [(u'produces', u'produces')]
+    item_i_02_4 = models.CharField(max_length=20, choices=i_02_4_choices, null=True)
+    i_02_5_choices = [(u'produces', u'produces')]
+    item_i_02_5 = models.CharField(max_length=20, choices=i_02_5_choices, null=True)
+    i_02_6_choices = [(u'produces', u'produces')]
+    item_i_02_6 = models.CharField(max_length=20, choices=i_02_6_choices, null=True)
+    i_02_7_choices = [(u'produces', u'produces')]
+    item_i_02_7 = models.CharField(max_length=20, choices=i_02_7_choices, null=True)
+    i_02_8_choices = [(u'produces', u'produces')]
+    item_i_02_8 = models.CharField(max_length=20, choices=i_02_8_choices, null=True)
+    i_02_9_choices = [(u'produces', u'produces')]
+    item_i_02_9 = models.CharField(max_length=20, choices=i_02_9_choices, null=True)
+    i_02_10_choices = [(u'produces', u'produces')]
+    item_i_02_10 = models.CharField(max_length=20, choices=i_02_10_choices, null=True)
+    i_02_11_choices = [(u'produces', u'produces')]
+    item_i_02_11 = models.CharField(max_length=20, choices=i_02_11_choices, null=True)
+    i_02_12_choices = [(u'produces', u'produces')]
+    item_i_02_12 = models.CharField(max_length=20, choices=i_02_12_choices, null=True)
+    i_02_13_choices = [(u'produces', u'produces')]
+    item_i_02_13 = models.CharField(max_length=20, choices=i_02_13_choices, null=True)
+    i_02_14_choices = [(u'produces', u'produces')]
+    item_i_02_14 = models.CharField(max_length=20, choices=i_02_14_choices, null=True)
+    i_02_15_choices = [(u'produces', u'produces')]
+    item_i_02_15 = models.CharField(max_length=20, choices=i_02_15_choices, null=True)
+    i_02_16_choices = [(u'produces', u'produces')]
+    item_i_02_16 = models.CharField(max_length=20, choices=i_02_16_choices, null=True)
+    i_02_17_choices = [(u'produces', u'produces')]
+    item_i_02_17 = models.CharField(max_length=20, choices=i_02_17_choices, null=True)
+    i_02_18_choices = [(u'produces', u'produces')]
+    item_i_02_18 = models.CharField(max_length=20, choices=i_02_18_choices, null=True)
+    i_02_19_choices = [(u'produces', u'produces')]
+    item_i_02_19 = models.CharField(max_length=20, choices=i_02_19_choices, null=True)
+    i_02_20_choices = [(u'produces', u'produces')]
+    item_i_02_20 = models.CharField(max_length=20, choices=i_02_20_choices, null=True)
+    i_02_21_choices = [(u'produces', u'produces')]
+    item_i_02_21 = models.CharField(max_length=20, choices=i_02_21_choices, null=True)
+    i_02_22_choices = [(u'produces', u'produces')]
+    item_i_02_22 = models.CharField(max_length=20, choices=i_02_22_choices, null=True)
+    i_02_23_choices = [(u'produces', u'produces')]
+    item_i_02_23 = models.CharField(max_length=20, choices=i_02_23_choices, null=True)
+    i_02_24_choices = [(u'produces', u'produces')]
+    item_i_02_24 = models.CharField(max_length=20, choices=i_02_24_choices, null=True)
+    i_02_25_choices = [(u'produces', u'produces')]
+    item_i_02_25 = models.CharField(max_length=20, choices=i_02_25_choices, null=True)
+    i_02_26_choices = [(u'produces', u'produces')]
+    item_i_02_26 = models.CharField(max_length=20, choices=i_02_26_choices, null=True)
+    i_02_27_choices = [(u'produces', u'produces')]
+    item_i_02_27 = models.CharField(max_length=20, choices=i_02_27_choices, null=True)
+    i_02_28_choices = [(u'produces', u'produces')]
+    item_i_02_28 = models.CharField(max_length=20, choices=i_02_28_choices, null=True)
+    i_02_29_choices = [(u'produces', u'produces')]
+    item_i_02_29 = models.CharField(max_length=20, choices=i_02_29_choices, null=True)
+    i_02_30_choices = [(u'produces', u'produces')]
+    item_i_02_30 = models.CharField(max_length=20, choices=i_02_30_choices, null=True)
+    i_02_31_choices = [(u'produces', u'produces')]
+    item_i_02_31 = models.CharField(max_length=20, choices=i_02_31_choices, null=True)
+    i_02_32_choices = [(u'produces', u'produces')]
+    item_i_02_32 = models.CharField(max_length=20, choices=i_02_32_choices, null=True)
+    i_02_33_choices = [(u'produces', u'produces')]
+    item_i_02_33 = models.CharField(max_length=20, choices=i_02_33_choices, null=True)
+    i_02_34_choices = [(u'produces', u'produces')]
+    item_i_02_34 = models.CharField(max_length=20, choices=i_02_34_choices, null=True)
+    i_02_35_choices = [(u'produces', u'produces')]
+    item_i_02_35 = models.CharField(max_length=20, choices=i_02_35_choices, null=True)
+    i_02_36_choices = [(u'produces', u'produces')]
+    item_i_02_36 = models.CharField(max_length=20, choices=i_02_36_choices, null=True)
+    i_02_37_choices = [(u'produces', u'produces')]
+    item_i_02_37 = models.CharField(max_length=20, choices=i_02_37_choices, null=True)
+    i_02_38_choices = [(u'produces', u'produces')]
+    item_i_02_38 = models.CharField(max_length=20, choices=i_02_38_choices, null=True)
+    i_02_39_choices = [(u'produces', u'produces')]
+    item_i_02_39 = models.CharField(max_length=20, choices=i_02_39_choices, null=True)
+    i_02_40_choices = [(u'produces', u'produces')]
+    item_i_02_40 = models.CharField(max_length=20, choices=i_02_40_choices, null=True)
+    i_02_41_choices = [(u'produces', u'produces')]
+    item_i_02_41 = models.CharField(max_length=20, choices=i_02_41_choices, null=True)
+    i_02_42_choices = [(u'produces', u'produces')]
+    item_i_02_42 = models.CharField(max_length=20, choices=i_02_42_choices, null=True)
+    i_02_43_choices = [(u'produces', u'produces')]
+    item_i_02_43 = models.CharField(max_length=20, choices=i_02_43_choices, null=True)
+    i_03_1_choices = [(u'produces', u'produces')]
+    item_i_03_1 = models.CharField(max_length=20, choices=i_03_1_choices, null=True)
+    i_03_2_choices = [(u'produces', u'produces')]
+    item_i_03_2 = models.CharField(max_length=20, choices=i_03_2_choices, null=True)
+    i_03_3_choices = [(u'produces', u'produces')]
+    item_i_03_3 = models.CharField(max_length=20, choices=i_03_3_choices, null=True)
+    i_03_4_choices = [(u'produces', u'produces')]
+    item_i_03_4 = models.CharField(max_length=20, choices=i_03_4_choices, null=True)
+    i_03_5_choices = [(u'produces', u'produces')]
+    item_i_03_5 = models.CharField(max_length=20, choices=i_03_5_choices, null=True)
+    i_03_6_choices = [(u'produces', u'produces')]
+    item_i_03_6 = models.CharField(max_length=20, choices=i_03_6_choices, null=True)
+    i_03_7_choices = [(u'produces', u'produces')]
+    item_i_03_7 = models.CharField(max_length=20, choices=i_03_7_choices, null=True)
+    i_03_8_choices = [(u'produces', u'produces')]
+    item_i_03_8 = models.CharField(max_length=20, choices=i_03_8_choices, null=True)
+    i_03_9_choices = [(u'produces', u'produces')]
+    item_i_03_9 = models.CharField(max_length=20, choices=i_03_9_choices, null=True)
+    i_03_10_choices = [(u'produces', u'produces')]
+    item_i_03_10 = models.CharField(max_length=20, choices=i_03_10_choices, null=True)
+    i_03_11_choices = [(u'produces', u'produces')]
+    item_i_03_11 = models.CharField(max_length=20, choices=i_03_11_choices, null=True)
+    i_03_12_choices = [(u'produces', u'produces')]
+    item_i_03_12 = models.CharField(max_length=20, choices=i_03_12_choices, null=True)
+    i_03_13_choices = [(u'produces', u'produces')]
+    item_i_03_13 = models.CharField(max_length=20, choices=i_03_13_choices, null=True)
+    i_03_14_choices = [(u'produces', u'produces')]
+    item_i_03_14 = models.CharField(max_length=20, choices=i_03_14_choices, null=True)
+    i_04_1_choices = [(u'produces', u'produces')]
+    item_i_04_1 = models.CharField(max_length=20, choices=i_04_1_choices, null=True)
+    i_04_2_choices = [(u'produces', u'produces')]
+    item_i_04_2 = models.CharField(max_length=20, choices=i_04_2_choices, null=True)
+    i_04_3_choices = [(u'produces', u'produces')]
+    item_i_04_3 = models.CharField(max_length=20, choices=i_04_3_choices, null=True)
+    i_04_4_choices = [(u'produces', u'produces')]
+    item_i_04_4 = models.CharField(max_length=20, choices=i_04_4_choices, null=True)
+    i_04_5_choices = [(u'produces', u'produces')]
+    item_i_04_5 = models.CharField(max_length=20, choices=i_04_5_choices, null=True)
+    i_04_6_choices = [(u'produces', u'produces')]
+    item_i_04_6 = models.CharField(max_length=20, choices=i_04_6_choices, null=True)
+    i_04_7_choices = [(u'produces', u'produces')]
+    item_i_04_7 = models.CharField(max_length=20, choices=i_04_7_choices, null=True)
+    i_04_8_choices = [(u'produces', u'produces')]
+    item_i_04_8 = models.CharField(max_length=20, choices=i_04_8_choices, null=True)
+    i_04_9_choices = [(u'produces', u'produces')]
+    item_i_04_9 = models.CharField(max_length=20, choices=i_04_9_choices, null=True)
+    i_04_10_choices = [(u'produces', u'produces')]
+    item_i_04_10 = models.CharField(max_length=20, choices=i_04_10_choices, null=True)
+    i_04_11_choices = [(u'produces', u'produces')]
+    item_i_04_11 = models.CharField(max_length=20, choices=i_04_11_choices, null=True)
+    i_04_12_choices = [(u'produces', u'produces')]
+    item_i_04_12 = models.CharField(max_length=20, choices=i_04_12_choices, null=True)
+    i_04_13_choices = [(u'produces', u'produces')]
+    item_i_04_13 = models.CharField(max_length=20, choices=i_04_13_choices, null=True)
+    i_04_14_choices = [(u'produces', u'produces')]
+    item_i_04_14 = models.CharField(max_length=20, choices=i_04_14_choices, null=True)
+    i_04_15_choices = [(u'produces', u'produces')]
+    item_i_04_15 = models.CharField(max_length=20, choices=i_04_15_choices, null=True)
+    i_04_16_choices = [(u'produces', u'produces')]
+    item_i_04_16 = models.CharField(max_length=20, choices=i_04_16_choices, null=True)
+    i_04_17_choices = [(u'produces', u'produces')]
+    item_i_04_17 = models.CharField(max_length=20, choices=i_04_17_choices, null=True)
+    i_04_18_choices = [(u'produces', u'produces')]
+    item_i_04_18 = models.CharField(max_length=20, choices=i_04_18_choices, null=True)
+    i_05_1_choices = [(u'produces', u'produces')]
+    item_i_05_1 = models.CharField(max_length=20, choices=i_05_1_choices, null=True)
+    i_05_2_choices = [(u'produces', u'produces')]
+    item_i_05_2 = models.CharField(max_length=20, choices=i_05_2_choices, null=True)
+    i_05_3_choices = [(u'produces', u'produces')]
+    item_i_05_3 = models.CharField(max_length=20, choices=i_05_3_choices, null=True)
+    i_05_4_choices = [(u'produces', u'produces')]
+    item_i_05_4 = models.CharField(max_length=20, choices=i_05_4_choices, null=True)
+    i_05_5_choices = [(u'produces', u'produces')]
+    item_i_05_5 = models.CharField(max_length=20, choices=i_05_5_choices, null=True)
+    i_05_6_choices = [(u'produces', u'produces')]
+    item_i_05_6 = models.CharField(max_length=20, choices=i_05_6_choices, null=True)
+    i_05_7_choices = [(u'produces', u'produces')]
+    item_i_05_7 = models.CharField(max_length=20, choices=i_05_7_choices, null=True)
+    i_05_8_choices = [(u'produces', u'produces')]
+    item_i_05_8 = models.CharField(max_length=20, choices=i_05_8_choices, null=True)
+    i_05_9_choices = [(u'produces', u'produces')]
+    item_i_05_9 = models.CharField(max_length=20, choices=i_05_9_choices, null=True)
+    i_05_10_choices = [(u'produces', u'produces')]
+    item_i_05_10 = models.CharField(max_length=20, choices=i_05_10_choices, null=True)
+    i_05_11_choices = [(u'produces', u'produces')]
+    item_i_05_11 = models.CharField(max_length=20, choices=i_05_11_choices, null=True)
+    i_05_12_choices = [(u'produces', u'produces')]
+    item_i_05_12 = models.CharField(max_length=20, choices=i_05_12_choices, null=True)
+    i_05_13_choices = [(u'produces', u'produces')]
+    item_i_05_13 = models.CharField(max_length=20, choices=i_05_13_choices, null=True)
+    i_05_14_choices = [(u'produces', u'produces')]
+    item_i_05_14 = models.CharField(max_length=20, choices=i_05_14_choices, null=True)
+    i_05_15_choices = [(u'produces', u'produces')]
+    item_i_05_15 = models.CharField(max_length=20, choices=i_05_15_choices, null=True)
+    i_05_16_choices = [(u'produces', u'produces')]
+    item_i_05_16 = models.CharField(max_length=20, choices=i_05_16_choices, null=True)
+    i_05_17_choices = [(u'produces', u'produces')]
+    item_i_05_17 = models.CharField(max_length=20, choices=i_05_17_choices, null=True)
+    i_05_18_choices = [(u'produces', u'produces')]
+    item_i_05_18 = models.CharField(max_length=20, choices=i_05_18_choices, null=True)
+    i_05_19_choices = [(u'produces', u'produces')]
+    item_i_05_19 = models.CharField(max_length=20, choices=i_05_19_choices, null=True)
+    i_05_20_choices = [(u'produces', u'produces')]
+    item_i_05_20 = models.CharField(max_length=20, choices=i_05_20_choices, null=True)
+    i_05_21_choices = [(u'produces', u'produces')]
+    item_i_05_21 = models.CharField(max_length=20, choices=i_05_21_choices, null=True)
+    i_05_22_choices = [(u'produces', u'produces')]
+    item_i_05_22 = models.CharField(max_length=20, choices=i_05_22_choices, null=True)
+    i_05_23_choices = [(u'produces', u'produces')]
+    item_i_05_23 = models.CharField(max_length=20, choices=i_05_23_choices, null=True)
+    i_05_24_choices = [(u'produces', u'produces')]
+    item_i_05_24 = models.CharField(max_length=20, choices=i_05_24_choices, null=True)
+    i_05_25_choices = [(u'produces', u'produces')]
+    item_i_05_25 = models.CharField(max_length=20, choices=i_05_25_choices, null=True)
+    i_05_26_choices = [(u'produces', u'produces')]
+    item_i_05_26 = models.CharField(max_length=20, choices=i_05_26_choices, null=True)
+    i_05_27_choices = [(u'produces', u'produces')]
+    item_i_05_27 = models.CharField(max_length=20, choices=i_05_27_choices, null=True)
+    i_05_28_choices = [(u'produces', u'produces')]
+    item_i_05_28 = models.CharField(max_length=20, choices=i_05_28_choices, null=True)
+    i_05_29_choices = [(u'produces', u'produces')]
+    item_i_05_29 = models.CharField(max_length=20, choices=i_05_29_choices, null=True)
+    i_05_30_choices = [(u'produces', u'produces')]
+    item_i_05_30 = models.CharField(max_length=20, choices=i_05_30_choices, null=True)
+    i_05_31_choices = [(u'produces', u'produces')]
+    item_i_05_31 = models.CharField(max_length=20, choices=i_05_31_choices, null=True)
+    i_05_32_choices = [(u'produces', u'produces')]
+    item_i_05_32 = models.CharField(max_length=20, choices=i_05_32_choices, null=True)
+    i_05_33_choices = [(u'produces', u'produces')]
+    item_i_05_33 = models.CharField(max_length=20, choices=i_05_33_choices, null=True)
+    i_05_34_choices = [(u'produces', u'produces')]
+    item_i_05_34 = models.CharField(max_length=20, choices=i_05_34_choices, null=True)
+    i_05_35_choices = [(u'produces', u'produces')]
+    item_i_05_35 = models.CharField(max_length=20, choices=i_05_35_choices, null=True)
+    i_05_36_choices = [(u'produces', u'produces')]
+    item_i_05_36 = models.CharField(max_length=20, choices=i_05_36_choices, null=True)
+    i_05_37_choices = [(u'produces', u'produces')]
+    item_i_05_37 = models.CharField(max_length=20, choices=i_05_37_choices, null=True)
+    i_05_38_choices = [(u'produces', u'produces')]
+    item_i_05_38 = models.CharField(max_length=20, choices=i_05_38_choices, null=True)
+    i_05_39_choices = [(u'produces', u'produces')]
+    item_i_05_39 = models.CharField(max_length=20, choices=i_05_39_choices, null=True)
+    i_05_40_choices = [(u'produces', u'produces')]
+    item_i_05_40 = models.CharField(max_length=20, choices=i_05_40_choices, null=True)
+    i_05_41_choices = [(u'produces', u'produces')]
+    item_i_05_41 = models.CharField(max_length=20, choices=i_05_41_choices, null=True)
+    i_05_42_choices = [(u'produces', u'produces')]
+    item_i_05_42 = models.CharField(max_length=20, choices=i_05_42_choices, null=True)
+    i_05_43_choices = [(u'produces', u'produces')]
+    item_i_05_43 = models.CharField(max_length=20, choices=i_05_43_choices, null=True)
+    i_05_44_choices = [(u'produces', u'produces')]
+    item_i_05_44 = models.CharField(max_length=20, choices=i_05_44_choices, null=True)
+    i_05_45_choices = [(u'produces', u'produces')]
+    item_i_05_45 = models.CharField(max_length=20, choices=i_05_45_choices, null=True)
+    i_05_46_choices = [(u'produces', u'produces')]
+    item_i_05_46 = models.CharField(max_length=20, choices=i_05_46_choices, null=True)
+    i_05_47_choices = [(u'produces', u'produces')]
+    item_i_05_47 = models.CharField(max_length=20, choices=i_05_47_choices, null=True)
+    i_05_48_choices = [(u'produces', u'produces')]
+    item_i_05_48 = models.CharField(max_length=20, choices=i_05_48_choices, null=True)
+    i_05_49_choices = [(u'produces', u'produces')]
+    item_i_05_49 = models.CharField(max_length=20, choices=i_05_49_choices, null=True)
+    i_05_50_choices = [(u'produces', u'produces')]
+    item_i_05_50 = models.CharField(max_length=20, choices=i_05_50_choices, null=True)
+    i_05_51_choices = [(u'produces', u'produces')]
+    item_i_05_51 = models.CharField(max_length=20, choices=i_05_51_choices, null=True)
+    i_05_52_choices = [(u'produces', u'produces')]
+    item_i_05_52 = models.CharField(max_length=20, choices=i_05_52_choices, null=True)
+    i_05_53_choices = [(u'produces', u'produces')]
+    item_i_05_53 = models.CharField(max_length=20, choices=i_05_53_choices, null=True)
+    i_05_54_choices = [(u'produces', u'produces')]
+    item_i_05_54 = models.CharField(max_length=20, choices=i_05_54_choices, null=True)
+    i_05_55_choices = [(u'produces', u'produces')]
+    item_i_05_55 = models.CharField(max_length=20, choices=i_05_55_choices, null=True)
+    i_05_56_choices = [(u'produces', u'produces')]
+    item_i_05_56 = models.CharField(max_length=20, choices=i_05_56_choices, null=True)
+    i_05_57_choices = [(u'produces', u'produces')]
+    item_i_05_57 = models.CharField(max_length=20, choices=i_05_57_choices, null=True)
+    i_05_58_choices = [(u'produces', u'produces')]
+    item_i_05_58 = models.CharField(max_length=20, choices=i_05_58_choices, null=True)
+    i_05_59_choices = [(u'produces', u'produces')]
+    item_i_05_59 = models.CharField(max_length=20, choices=i_05_59_choices, null=True)
+    i_05_60_choices = [(u'produces', u'produces')]
+    item_i_05_60 = models.CharField(max_length=20, choices=i_05_60_choices, null=True)
+    i_05_61_choices = [(u'produces', u'produces')]
+    item_i_05_61 = models.CharField(max_length=20, choices=i_05_61_choices, null=True)
+    i_05_62_choices = [(u'produces', u'produces')]
+    item_i_05_62 = models.CharField(max_length=20, choices=i_05_62_choices, null=True)
+    i_05_63_choices = [(u'produces', u'produces')]
+    item_i_05_63 = models.CharField(max_length=20, choices=i_05_63_choices, null=True)
+    i_05_64_choices = [(u'produces', u'produces')]
+    item_i_05_64 = models.CharField(max_length=20, choices=i_05_64_choices, null=True)
+    i_05_65_choices = [(u'produces', u'produces')]
+    item_i_05_65 = models.CharField(max_length=20, choices=i_05_65_choices, null=True)
+    i_05_66_choices = [(u'produces', u'produces')]
+    item_i_05_66 = models.CharField(max_length=20, choices=i_05_66_choices, null=True)
+    i_05_67_choices = [(u'produces', u'produces')]
+    item_i_05_67 = models.CharField(max_length=20, choices=i_05_67_choices, null=True)
+    i_05_68_choices = [(u'produces', u'produces')]
+    item_i_05_68 = models.CharField(max_length=20, choices=i_05_68_choices, null=True)
+    i_06_1_choices = [(u'produces', u'produces')]
+    item_i_06_1 = models.CharField(max_length=20, choices=i_06_1_choices, null=True)
+    i_06_2_choices = [(u'produces', u'produces')]
+    item_i_06_2 = models.CharField(max_length=20, choices=i_06_2_choices, null=True)
+    i_06_3_choices = [(u'produces', u'produces')]
+    item_i_06_3 = models.CharField(max_length=20, choices=i_06_3_choices, null=True)
+    i_06_4_choices = [(u'produces', u'produces')]
+    item_i_06_4 = models.CharField(max_length=20, choices=i_06_4_choices, null=True)
+    i_06_5_choices = [(u'produces', u'produces')]
+    item_i_06_5 = models.CharField(max_length=20, choices=i_06_5_choices, null=True)
+    i_06_6_choices = [(u'produces', u'produces')]
+    item_i_06_6 = models.CharField(max_length=20, choices=i_06_6_choices, null=True)
+    i_06_7_choices = [(u'produces', u'produces')]
+    item_i_06_7 = models.CharField(max_length=20, choices=i_06_7_choices, null=True)
+    i_06_8_choices = [(u'produces', u'produces')]
+    item_i_06_8 = models.CharField(max_length=20, choices=i_06_8_choices, null=True)
+    i_06_9_choices = [(u'produces', u'produces')]
+    item_i_06_9 = models.CharField(max_length=20, choices=i_06_9_choices, null=True)
+    i_06_10_choices = [(u'produces', u'produces')]
+    item_i_06_10 = models.CharField(max_length=20, choices=i_06_10_choices, null=True)
+    i_06_11_choices = [(u'produces', u'produces')]
+    item_i_06_11 = models.CharField(max_length=20, choices=i_06_11_choices, null=True)
+    i_06_12_choices = [(u'produces', u'produces')]
+    item_i_06_12 = models.CharField(max_length=20, choices=i_06_12_choices, null=True)
+    i_06_13_choices = [(u'produces', u'produces')]
+    item_i_06_13 = models.CharField(max_length=20, choices=i_06_13_choices, null=True)
+    i_06_14_choices = [(u'produces', u'produces')]
+    item_i_06_14 = models.CharField(max_length=20, choices=i_06_14_choices, null=True)
+    i_06_15_choices = [(u'produces', u'produces')]
+    item_i_06_15 = models.CharField(max_length=20, choices=i_06_15_choices, null=True)
+    i_06_16_choices = [(u'produces', u'produces')]
+    item_i_06_16 = models.CharField(max_length=20, choices=i_06_16_choices, null=True)
+    i_06_17_choices = [(u'produces', u'produces')]
+    item_i_06_17 = models.CharField(max_length=20, choices=i_06_17_choices, null=True)
+    i_06_18_choices = [(u'produces', u'produces')]
+    item_i_06_18 = models.CharField(max_length=20, choices=i_06_18_choices, null=True)
+    i_06_19_choices = [(u'produces', u'produces')]
+    item_i_06_19 = models.CharField(max_length=20, choices=i_06_19_choices, null=True)
+    i_06_20_choices = [(u'produces', u'produces')]
+    item_i_06_20 = models.CharField(max_length=20, choices=i_06_20_choices, null=True)
+    i_06_21_choices = [(u'produces', u'produces')]
+    item_i_06_21 = models.CharField(max_length=20, choices=i_06_21_choices, null=True)
+    i_06_22_choices = [(u'produces', u'produces')]
+    item_i_06_22 = models.CharField(max_length=20, choices=i_06_22_choices, null=True)
+    i_06_23_choices = [(u'produces', u'produces')]
+    item_i_06_23 = models.CharField(max_length=20, choices=i_06_23_choices, null=True)
+    i_06_24_choices = [(u'produces', u'produces')]
+    item_i_06_24 = models.CharField(max_length=20, choices=i_06_24_choices, null=True)
+    i_06_25_choices = [(u'produces', u'produces')]
+    item_i_06_25 = models.CharField(max_length=20, choices=i_06_25_choices, null=True)
+    i_06_26_choices = [(u'produces', u'produces')]
+    item_i_06_26 = models.CharField(max_length=20, choices=i_06_26_choices, null=True)
+    i_06_27_choices = [(u'produces', u'produces')]
+    item_i_06_27 = models.CharField(max_length=20, choices=i_06_27_choices, null=True)
+    i_06_28_choices = [(u'produces', u'produces')]
+    item_i_06_28 = models.CharField(max_length=20, choices=i_06_28_choices, null=True)
+    i_06_29_choices = [(u'produces', u'produces')]
+    item_i_06_29 = models.CharField(max_length=20, choices=i_06_29_choices, null=True)
+    i_06_30_choices = [(u'produces', u'produces')]
+    item_i_06_30 = models.CharField(max_length=20, choices=i_06_30_choices, null=True)
+    i_07_1_choices = [(u'produces', u'produces')]
+    item_i_07_1 = models.CharField(max_length=20, choices=i_07_1_choices, null=True)
+    i_07_2_choices = [(u'produces', u'produces')]
+    item_i_07_2 = models.CharField(max_length=20, choices=i_07_2_choices, null=True)
+    i_07_3_choices = [(u'produces', u'produces')]
+    item_i_07_3 = models.CharField(max_length=20, choices=i_07_3_choices, null=True)
+    i_07_4_choices = [(u'produces', u'produces')]
+    item_i_07_4 = models.CharField(max_length=20, choices=i_07_4_choices, null=True)
+    i_07_5_choices = [(u'produces', u'produces')]
+    item_i_07_5 = models.CharField(max_length=20, choices=i_07_5_choices, null=True)
+    i_07_6_choices = [(u'produces', u'produces')]
+    item_i_07_6 = models.CharField(max_length=20, choices=i_07_6_choices, null=True)
+    i_07_7_choices = [(u'produces', u'produces')]
+    item_i_07_7 = models.CharField(max_length=20, choices=i_07_7_choices, null=True)
+    i_07_8_choices = [(u'produces', u'produces')]
+    item_i_07_8 = models.CharField(max_length=20, choices=i_07_8_choices, null=True)
+    i_07_9_choices = [(u'produces', u'produces')]
+    item_i_07_9 = models.CharField(max_length=20, choices=i_07_9_choices, null=True)
+    i_07_10_choices = [(u'produces', u'produces')]
+    item_i_07_10 = models.CharField(max_length=20, choices=i_07_10_choices, null=True)
+    i_07_11_choices = [(u'produces', u'produces')]
+    item_i_07_11 = models.CharField(max_length=20, choices=i_07_11_choices, null=True)
+    i_07_12_choices = [(u'produces', u'produces')]
+    item_i_07_12 = models.CharField(max_length=20, choices=i_07_12_choices, null=True)
+    i_07_13_choices = [(u'produces', u'produces')]
+    item_i_07_13 = models.CharField(max_length=20, choices=i_07_13_choices, null=True)
+    i_07_14_choices = [(u'produces', u'produces')]
+    item_i_07_14 = models.CharField(max_length=20, choices=i_07_14_choices, null=True)
+    i_07_15_choices = [(u'produces', u'produces')]
+    item_i_07_15 = models.CharField(max_length=20, choices=i_07_15_choices, null=True)
+    i_07_16_choices = [(u'produces', u'produces')]
+    item_i_07_16 = models.CharField(max_length=20, choices=i_07_16_choices, null=True)
+    i_07_17_choices = [(u'produces', u'produces')]
+    item_i_07_17 = models.CharField(max_length=20, choices=i_07_17_choices, null=True)
+    i_07_18_choices = [(u'produces', u'produces')]
+    item_i_07_18 = models.CharField(max_length=20, choices=i_07_18_choices, null=True)
+    i_07_19_choices = [(u'produces', u'produces')]
+    item_i_07_19 = models.CharField(max_length=20, choices=i_07_19_choices, null=True)
+    i_07_20_choices = [(u'produces', u'produces')]
+    item_i_07_20 = models.CharField(max_length=20, choices=i_07_20_choices, null=True)
+    i_07_21_choices = [(u'produces', u'produces')]
+    item_i_07_21 = models.CharField(max_length=20, choices=i_07_21_choices, null=True)
+    i_07_22_choices = [(u'produces', u'produces')]
+    item_i_07_22 = models.CharField(max_length=20, choices=i_07_22_choices, null=True)
+    i_07_23_choices = [(u'produces', u'produces')]
+    item_i_07_23 = models.CharField(max_length=20, choices=i_07_23_choices, null=True)
+    i_07_24_choices = [(u'produces', u'produces')]
+    item_i_07_24 = models.CharField(max_length=20, choices=i_07_24_choices, null=True)
+    i_07_25_choices = [(u'produces', u'produces')]
+    item_i_07_25 = models.CharField(max_length=20, choices=i_07_25_choices, null=True)
+    i_07_26_choices = [(u'produces', u'produces')]
+    item_i_07_26 = models.CharField(max_length=20, choices=i_07_26_choices, null=True)
+    i_07_27_choices = [(u'produces', u'produces')]
+    item_i_07_27 = models.CharField(max_length=20, choices=i_07_27_choices, null=True)
+    i_07_28_choices = [(u'produces', u'produces')]
+    item_i_07_28 = models.CharField(max_length=20, choices=i_07_28_choices, null=True)
+    i_08_1_choices = [(u'produces', u'produces')]
+    item_i_08_1 = models.CharField(max_length=20, choices=i_08_1_choices, null=True)
+    i_08_2_choices = [(u'produces', u'produces')]
+    item_i_08_2 = models.CharField(max_length=20, choices=i_08_2_choices, null=True)
+    i_08_3_choices = [(u'produces', u'produces')]
+    item_i_08_3 = models.CharField(max_length=20, choices=i_08_3_choices, null=True)
+    i_08_4_choices = [(u'produces', u'produces')]
+    item_i_08_4 = models.CharField(max_length=20, choices=i_08_4_choices, null=True)
+    i_08_5_choices = [(u'produces', u'produces')]
+    item_i_08_5 = models.CharField(max_length=20, choices=i_08_5_choices, null=True)
+    i_08_6_choices = [(u'produces', u'produces')]
+    item_i_08_6 = models.CharField(max_length=20, choices=i_08_6_choices, null=True)
+    i_08_7_choices = [(u'produces', u'produces')]
+    item_i_08_7 = models.CharField(max_length=20, choices=i_08_7_choices, null=True)
+    i_08_8_choices = [(u'produces', u'produces')]
+    item_i_08_8 = models.CharField(max_length=20, choices=i_08_8_choices, null=True)
+    i_08_9_choices = [(u'produces', u'produces')]
+    item_i_08_9 = models.CharField(max_length=20, choices=i_08_9_choices, null=True)
+    i_08_10_choices = [(u'produces', u'produces')]
+    item_i_08_10 = models.CharField(max_length=20, choices=i_08_10_choices, null=True)
+    i_08_11_choices = [(u'produces', u'produces')]
+    item_i_08_11 = models.CharField(max_length=20, choices=i_08_11_choices, null=True)
+    i_08_12_choices = [(u'produces', u'produces')]
+    item_i_08_12 = models.CharField(max_length=20, choices=i_08_12_choices, null=True)
+    i_08_13_choices = [(u'produces', u'produces')]
+    item_i_08_13 = models.CharField(max_length=20, choices=i_08_13_choices, null=True)
+    i_08_14_choices = [(u'produces', u'produces')]
+    item_i_08_14 = models.CharField(max_length=20, choices=i_08_14_choices, null=True)
+    i_08_15_choices = [(u'produces', u'produces')]
+    item_i_08_15 = models.CharField(max_length=20, choices=i_08_15_choices, null=True)
+    i_08_16_choices = [(u'produces', u'produces')]
+    item_i_08_16 = models.CharField(max_length=20, choices=i_08_16_choices, null=True)
+    i_08_17_choices = [(u'produces', u'produces')]
+    item_i_08_17 = models.CharField(max_length=20, choices=i_08_17_choices, null=True)
+    i_08_18_choices = [(u'produces', u'produces')]
+    item_i_08_18 = models.CharField(max_length=20, choices=i_08_18_choices, null=True)
+    i_08_19_choices = [(u'produces', u'produces')]
+    item_i_08_19 = models.CharField(max_length=20, choices=i_08_19_choices, null=True)
+    i_08_20_choices = [(u'produces', u'produces')]
+    item_i_08_20 = models.CharField(max_length=20, choices=i_08_20_choices, null=True)
+    i_08_21_choices = [(u'produces', u'produces')]
+    item_i_08_21 = models.CharField(max_length=20, choices=i_08_21_choices, null=True)
+    i_08_22_choices = [(u'produces', u'produces')]
+    item_i_08_22 = models.CharField(max_length=20, choices=i_08_22_choices, null=True)
+    i_08_23_choices = [(u'produces', u'produces')]
+    item_i_08_23 = models.CharField(max_length=20, choices=i_08_23_choices, null=True)
+    i_08_24_choices = [(u'produces', u'produces')]
+    item_i_08_24 = models.CharField(max_length=20, choices=i_08_24_choices, null=True)
+    i_08_25_choices = [(u'produces', u'produces')]
+    item_i_08_25 = models.CharField(max_length=20, choices=i_08_25_choices, null=True)
+    i_08_26_choices = [(u'produces', u'produces')]
+    item_i_08_26 = models.CharField(max_length=20, choices=i_08_26_choices, null=True)
+    i_08_27_choices = [(u'produces', u'produces')]
+    item_i_08_27 = models.CharField(max_length=20, choices=i_08_27_choices, null=True)
+    i_08_28_choices = [(u'produces', u'produces')]
+    item_i_08_28 = models.CharField(max_length=20, choices=i_08_28_choices, null=True)
+    i_08_29_choices = [(u'produces', u'produces')]
+    item_i_08_29 = models.CharField(max_length=20, choices=i_08_29_choices, null=True)
+    i_08_30_choices = [(u'produces', u'produces')]
+    item_i_08_30 = models.CharField(max_length=20, choices=i_08_30_choices, null=True)
+    i_08_31_choices = [(u'produces', u'produces')]
+    item_i_08_31 = models.CharField(max_length=20, choices=i_08_31_choices, null=True)
+    i_08_32_choices = [(u'produces', u'produces')]
+    item_i_08_32 = models.CharField(max_length=20, choices=i_08_32_choices, null=True)
+    i_08_33_choices = [(u'produces', u'produces')]
+    item_i_08_33 = models.CharField(max_length=20, choices=i_08_33_choices, null=True)
+    i_08_34_choices = [(u'produces', u'produces')]
+    item_i_08_34 = models.CharField(max_length=20, choices=i_08_34_choices, null=True)
+    i_08_35_choices = [(u'produces', u'produces')]
+    item_i_08_35 = models.CharField(max_length=20, choices=i_08_35_choices, null=True)
+    i_08_36_choices = [(u'produces', u'produces')]
+    item_i_08_36 = models.CharField(max_length=20, choices=i_08_36_choices, null=True)
+    i_08_37_choices = [(u'produces', u'produces')]
+    item_i_08_37 = models.CharField(max_length=20, choices=i_08_37_choices, null=True)
+    i_08_38_choices = [(u'produces', u'produces')]
+    item_i_08_38 = models.CharField(max_length=20, choices=i_08_38_choices, null=True)
+    i_08_39_choices = [(u'produces', u'produces')]
+    item_i_08_39 = models.CharField(max_length=20, choices=i_08_39_choices, null=True)
+    i_08_40_choices = [(u'produces', u'produces')]
+    item_i_08_40 = models.CharField(max_length=20, choices=i_08_40_choices, null=True)
+    i_08_41_choices = [(u'produces', u'produces')]
+    item_i_08_41 = models.CharField(max_length=20, choices=i_08_41_choices, null=True)
+    i_08_42_choices = [(u'produces', u'produces')]
+    item_i_08_42 = models.CharField(max_length=20, choices=i_08_42_choices, null=True)
+    i_08_43_choices = [(u'produces', u'produces')]
+    item_i_08_43 = models.CharField(max_length=20, choices=i_08_43_choices, null=True)
+    i_08_44_choices = [(u'produces', u'produces')]
+    item_i_08_44 = models.CharField(max_length=20, choices=i_08_44_choices, null=True)
+    i_08_45_choices = [(u'produces', u'produces')]
+    item_i_08_45 = models.CharField(max_length=20, choices=i_08_45_choices, null=True)
+    i_08_46_choices = [(u'produces', u'produces')]
+    item_i_08_46 = models.CharField(max_length=20, choices=i_08_46_choices, null=True)
+    i_08_47_choices = [(u'produces', u'produces')]
+    item_i_08_47 = models.CharField(max_length=20, choices=i_08_47_choices, null=True)
+    i_08_48_choices = [(u'produces', u'produces')]
+    item_i_08_48 = models.CharField(max_length=20, choices=i_08_48_choices, null=True)
+    i_08_49_choices = [(u'produces', u'produces')]
+    item_i_08_49 = models.CharField(max_length=20, choices=i_08_49_choices, null=True)
+    i_08_50_choices = [(u'produces', u'produces')]
+    item_i_08_50 = models.CharField(max_length=20, choices=i_08_50_choices, null=True)
+    i_09_1_choices = [(u'produces', u'produces')]
+    item_i_09_1 = models.CharField(max_length=20, choices=i_09_1_choices, null=True)
+    i_09_2_choices = [(u'produces', u'produces')]
+    item_i_09_2 = models.CharField(max_length=20, choices=i_09_2_choices, null=True)
+    i_09_3_choices = [(u'produces', u'produces')]
+    item_i_09_3 = models.CharField(max_length=20, choices=i_09_3_choices, null=True)
+    i_09_4_choices = [(u'produces', u'produces')]
+    item_i_09_4 = models.CharField(max_length=20, choices=i_09_4_choices, null=True)
+    i_09_5_choices = [(u'produces', u'produces')]
+    item_i_09_5 = models.CharField(max_length=20, choices=i_09_5_choices, null=True)
+    i_09_6_choices = [(u'produces', u'produces')]
+    item_i_09_6 = models.CharField(max_length=20, choices=i_09_6_choices, null=True)
+    i_09_7_choices = [(u'produces', u'produces')]
+    item_i_09_7 = models.CharField(max_length=20, choices=i_09_7_choices, null=True)
+    i_09_8_choices = [(u'produces', u'produces')]
+    item_i_09_8 = models.CharField(max_length=20, choices=i_09_8_choices, null=True)
+    i_09_9_choices = [(u'produces', u'produces')]
+    item_i_09_9 = models.CharField(max_length=20, choices=i_09_9_choices, null=True)
+    i_09_10_choices = [(u'produces', u'produces')]
+    item_i_09_10 = models.CharField(max_length=20, choices=i_09_10_choices, null=True)
+    i_09_11_choices = [(u'produces', u'produces')]
+    item_i_09_11 = models.CharField(max_length=20, choices=i_09_11_choices, null=True)
+    i_09_12_choices = [(u'produces', u'produces')]
+    item_i_09_12 = models.CharField(max_length=20, choices=i_09_12_choices, null=True)
+    i_09_13_choices = [(u'produces', u'produces')]
+    item_i_09_13 = models.CharField(max_length=20, choices=i_09_13_choices, null=True)
+    i_09_14_choices = [(u'produces', u'produces')]
+    item_i_09_14 = models.CharField(max_length=20, choices=i_09_14_choices, null=True)
+    i_09_15_choices = [(u'produces', u'produces')]
+    item_i_09_15 = models.CharField(max_length=20, choices=i_09_15_choices, null=True)
+    i_09_16_choices = [(u'produces', u'produces')]
+    item_i_09_16 = models.CharField(max_length=20, choices=i_09_16_choices, null=True)
+    i_09_17_choices = [(u'produces', u'produces')]
+    item_i_09_17 = models.CharField(max_length=20, choices=i_09_17_choices, null=True)
+    i_09_18_choices = [(u'produces', u'produces')]
+    item_i_09_18 = models.CharField(max_length=20, choices=i_09_18_choices, null=True)
+    i_09_19_choices = [(u'produces', u'produces')]
+    item_i_09_19 = models.CharField(max_length=20, choices=i_09_19_choices, null=True)
+    i_09_20_choices = [(u'produces', u'produces')]
+    item_i_09_20 = models.CharField(max_length=20, choices=i_09_20_choices, null=True)
+    i_09_21_choices = [(u'produces', u'produces')]
+    item_i_09_21 = models.CharField(max_length=20, choices=i_09_21_choices, null=True)
+    i_09_22_choices = [(u'produces', u'produces')]
+    item_i_09_22 = models.CharField(max_length=20, choices=i_09_22_choices, null=True)
+    i_09_23_choices = [(u'produces', u'produces')]
+    item_i_09_23 = models.CharField(max_length=20, choices=i_09_23_choices, null=True)
+    i_09_24_choices = [(u'produces', u'produces')]
+    item_i_09_24 = models.CharField(max_length=20, choices=i_09_24_choices, null=True)
+    i_09_25_choices = [(u'produces', u'produces')]
+    item_i_09_25 = models.CharField(max_length=20, choices=i_09_25_choices, null=True)
+    i_09_26_choices = [(u'produces', u'produces')]
+    item_i_09_26 = models.CharField(max_length=20, choices=i_09_26_choices, null=True)
+    i_09_27_choices = [(u'produces', u'produces')]
+    item_i_09_27 = models.CharField(max_length=20, choices=i_09_27_choices, null=True)
+    i_09_28_choices = [(u'produces', u'produces')]
+    item_i_09_28 = models.CharField(max_length=20, choices=i_09_28_choices, null=True)
+    i_09_29_choices = [(u'produces', u'produces')]
+    item_i_09_29 = models.CharField(max_length=20, choices=i_09_29_choices, null=True)
+    i_09_30_choices = [(u'produces', u'produces')]
+    item_i_09_30 = models.CharField(max_length=20, choices=i_09_30_choices, null=True)
+    i_09_31_choices = [(u'produces', u'produces')]
+    item_i_09_31 = models.CharField(max_length=20, choices=i_09_31_choices, null=True)
+    i_09_32_choices = [(u'produces', u'produces')]
+    item_i_09_32 = models.CharField(max_length=20, choices=i_09_32_choices, null=True)
+    i_09_33_choices = [(u'produces', u'produces')]
+    item_i_09_33 = models.CharField(max_length=20, choices=i_09_33_choices, null=True)
+    i_10_1_choices = [(u'produces', u'produces')]
+    item_i_10_1 = models.CharField(max_length=20, choices=i_10_1_choices, null=True)
+    i_10_2_choices = [(u'produces', u'produces')]
+    item_i_10_2 = models.CharField(max_length=20, choices=i_10_2_choices, null=True)
+    i_10_3_choices = [(u'produces', u'produces')]
+    item_i_10_3 = models.CharField(max_length=20, choices=i_10_3_choices, null=True)
+    i_10_4_choices = [(u'produces', u'produces')]
+    item_i_10_4 = models.CharField(max_length=20, choices=i_10_4_choices, null=True)
+    i_10_5_choices = [(u'produces', u'produces')]
+    item_i_10_5 = models.CharField(max_length=20, choices=i_10_5_choices, null=True)
+    i_10_6_choices = [(u'produces', u'produces')]
+    item_i_10_6 = models.CharField(max_length=20, choices=i_10_6_choices, null=True)
+    i_10_7_choices = [(u'produces', u'produces')]
+    item_i_10_7 = models.CharField(max_length=20, choices=i_10_7_choices, null=True)
+    i_10_8_choices = [(u'produces', u'produces')]
+    item_i_10_8 = models.CharField(max_length=20, choices=i_10_8_choices, null=True)
+    i_10_9_choices = [(u'produces', u'produces')]
+    item_i_10_9 = models.CharField(max_length=20, choices=i_10_9_choices, null=True)
+    i_10_10_choices = [(u'produces', u'produces')]
+    item_i_10_10 = models.CharField(max_length=20, choices=i_10_10_choices, null=True)
+    i_10_11_choices = [(u'produces', u'produces')]
+    item_i_10_11 = models.CharField(max_length=20, choices=i_10_11_choices, null=True)
+    i_10_12_choices = [(u'produces', u'produces')]
+    item_i_10_12 = models.CharField(max_length=20, choices=i_10_12_choices, null=True)
+    i_10_13_choices = [(u'produces', u'produces')]
+    item_i_10_13 = models.CharField(max_length=20, choices=i_10_13_choices, null=True)
+    i_10_14_choices = [(u'produces', u'produces')]
+    item_i_10_14 = models.CharField(max_length=20, choices=i_10_14_choices, null=True)
+    i_10_15_choices = [(u'produces', u'produces')]
+    item_i_10_15 = models.CharField(max_length=20, choices=i_10_15_choices, null=True)
+    i_10_16_choices = [(u'produces', u'produces')]
+    item_i_10_16 = models.CharField(max_length=20, choices=i_10_16_choices, null=True)
+    i_10_17_choices = [(u'produces', u'produces')]
+    item_i_10_17 = models.CharField(max_length=20, choices=i_10_17_choices, null=True)
+    i_10_18_choices = [(u'produces', u'produces')]
+    item_i_10_18 = models.CharField(max_length=20, choices=i_10_18_choices, null=True)
+    i_10_19_choices = [(u'produces', u'produces')]
+    item_i_10_19 = models.CharField(max_length=20, choices=i_10_19_choices, null=True)
+    i_10_20_choices = [(u'produces', u'produces')]
+    item_i_10_20 = models.CharField(max_length=20, choices=i_10_20_choices, null=True)
+    i_10_21_choices = [(u'produces', u'produces')]
+    item_i_10_21 = models.CharField(max_length=20, choices=i_10_21_choices, null=True)
+    i_10_22_choices = [(u'produces', u'produces')]
+    item_i_10_22 = models.CharField(max_length=20, choices=i_10_22_choices, null=True)
+    i_10_23_choices = [(u'produces', u'produces')]
+    item_i_10_23 = models.CharField(max_length=20, choices=i_10_23_choices, null=True)
+    i_10_24_choices = [(u'produces', u'produces')]
+    item_i_10_24 = models.CharField(max_length=20, choices=i_10_24_choices, null=True)
+    i_10_25_choices = [(u'produces', u'produces')]
+    item_i_10_25 = models.CharField(max_length=20, choices=i_10_25_choices, null=True)
+    i_10_26_choices = [(u'produces', u'produces')]
+    item_i_10_26 = models.CharField(max_length=20, choices=i_10_26_choices, null=True)
+    i_10_27_choices = [(u'produces', u'produces')]
+    item_i_10_27 = models.CharField(max_length=20, choices=i_10_27_choices, null=True)
+    i_10_28_choices = [(u'produces', u'produces')]
+    item_i_10_28 = models.CharField(max_length=20, choices=i_10_28_choices, null=True)
+    i_10_29_choices = [(u'produces', u'produces')]
+    item_i_10_29 = models.CharField(max_length=20, choices=i_10_29_choices, null=True)
+    i_10_30_choices = [(u'produces', u'produces')]
+    item_i_10_30 = models.CharField(max_length=20, choices=i_10_30_choices, null=True)
+    i_10_31_choices = [(u'produces', u'produces')]
+    item_i_10_31 = models.CharField(max_length=20, choices=i_10_31_choices, null=True)
+    i_11_1_choices = [(u'produces', u'produces')]
+    item_i_11_1 = models.CharField(max_length=20, choices=i_11_1_choices, null=True)
+    i_11_2_choices = [(u'produces', u'produces')]
+    item_i_11_2 = models.CharField(max_length=20, choices=i_11_2_choices, null=True)
+    i_11_3_choices = [(u'produces', u'produces')]
+    item_i_11_3 = models.CharField(max_length=20, choices=i_11_3_choices, null=True)
+    i_11_4_choices = [(u'produces', u'produces')]
+    item_i_11_4 = models.CharField(max_length=20, choices=i_11_4_choices, null=True)
+    i_11_5_choices = [(u'produces', u'produces')]
+    item_i_11_5 = models.CharField(max_length=20, choices=i_11_5_choices, null=True)
+    i_11_6_choices = [(u'produces', u'produces')]
+    item_i_11_6 = models.CharField(max_length=20, choices=i_11_6_choices, null=True)
+    i_11_7_choices = [(u'produces', u'produces')]
+    item_i_11_7 = models.CharField(max_length=20, choices=i_11_7_choices, null=True)
+    i_11_8_choices = [(u'produces', u'produces')]
+    item_i_11_8 = models.CharField(max_length=20, choices=i_11_8_choices, null=True)
+    i_11_9_choices = [(u'produces', u'produces')]
+    item_i_11_9 = models.CharField(max_length=20, choices=i_11_9_choices, null=True)
+    i_11_10_choices = [(u'produces', u'produces')]
+    item_i_11_10 = models.CharField(max_length=20, choices=i_11_10_choices, null=True)
+    i_11_11_choices = [(u'produces', u'produces')]
+    item_i_11_11 = models.CharField(max_length=20, choices=i_11_11_choices, null=True)
+    i_11_12_choices = [(u'produces', u'produces')]
+    item_i_11_12 = models.CharField(max_length=20, choices=i_11_12_choices, null=True)
+    i_11_13_choices = [(u'produces', u'produces')]
+    item_i_11_13 = models.CharField(max_length=20, choices=i_11_13_choices, null=True)
+    i_11_14_choices = [(u'produces', u'produces')]
+    item_i_11_14 = models.CharField(max_length=20, choices=i_11_14_choices, null=True)
+    i_11_15_choices = [(u'produces', u'produces')]
+    item_i_11_15 = models.CharField(max_length=20, choices=i_11_15_choices, null=True)
+    i_11_16_choices = [(u'produces', u'produces')]
+    item_i_11_16 = models.CharField(max_length=20, choices=i_11_16_choices, null=True)
+    i_11_17_choices = [(u'produces', u'produces')]
+    item_i_11_17 = models.CharField(max_length=20, choices=i_11_17_choices, null=True)
+    i_11_18_choices = [(u'produces', u'produces')]
+    item_i_11_18 = models.CharField(max_length=20, choices=i_11_18_choices, null=True)
+    i_11_19_choices = [(u'produces', u'produces')]
+    item_i_11_19 = models.CharField(max_length=20, choices=i_11_19_choices, null=True)
+    i_11_20_choices = [(u'produces', u'produces')]
+    item_i_11_20 = models.CharField(max_length=20, choices=i_11_20_choices, null=True)
+    i_11_21_choices = [(u'produces', u'produces')]
+    item_i_11_21 = models.CharField(max_length=20, choices=i_11_21_choices, null=True)
+    i_11_22_choices = [(u'produces', u'produces')]
+    item_i_11_22 = models.CharField(max_length=20, choices=i_11_22_choices, null=True)
+    i_12_1_choices = [(u'produces', u'produces')]
+    item_i_12_1 = models.CharField(max_length=20, choices=i_12_1_choices, null=True)
+    i_12_2_choices = [(u'produces', u'produces')]
+    item_i_12_2 = models.CharField(max_length=20, choices=i_12_2_choices, null=True)
+    i_12_3_choices = [(u'produces', u'produces')]
+    item_i_12_3 = models.CharField(max_length=20, choices=i_12_3_choices, null=True)
+    i_12_4_choices = [(u'produces', u'produces')]
+    item_i_12_4 = models.CharField(max_length=20, choices=i_12_4_choices, null=True)
+    i_12_5_choices = [(u'produces', u'produces')]
+    item_i_12_5 = models.CharField(max_length=20, choices=i_12_5_choices, null=True)
+    i_12_6_choices = [(u'produces', u'produces')]
+    item_i_12_6 = models.CharField(max_length=20, choices=i_12_6_choices, null=True)
+    i_12_7_choices = [(u'produces', u'produces')]
+    item_i_12_7 = models.CharField(max_length=20, choices=i_12_7_choices, null=True)
+    i_12_8_choices = [(u'produces', u'produces')]
+    item_i_12_8 = models.CharField(max_length=20, choices=i_12_8_choices, null=True)
+    i_12_9_choices = [(u'produces', u'produces')]
+    item_i_12_9 = models.CharField(max_length=20, choices=i_12_9_choices, null=True)
+    i_12_10_choices = [(u'produces', u'produces')]
+    item_i_12_10 = models.CharField(max_length=20, choices=i_12_10_choices, null=True)
+    i_12_11_choices = [(u'produces', u'produces')]
+    item_i_12_11 = models.CharField(max_length=20, choices=i_12_11_choices, null=True)
+    i_12_12_choices = [(u'produces', u'produces')]
+    item_i_12_12 = models.CharField(max_length=20, choices=i_12_12_choices, null=True)
+    i_12_13_choices = [(u'produces', u'produces')]
+    item_i_12_13 = models.CharField(max_length=20, choices=i_12_13_choices, null=True)
+    i_12_14_choices = [(u'produces', u'produces')]
+    item_i_12_14 = models.CharField(max_length=20, choices=i_12_14_choices, null=True)
+    i_12_15_choices = [(u'produces', u'produces')]
+    item_i_12_15 = models.CharField(max_length=20, choices=i_12_15_choices, null=True)
+    i_12_16_choices = [(u'produces', u'produces')]
+    item_i_12_16 = models.CharField(max_length=20, choices=i_12_16_choices, null=True)
+    i_12_17_choices = [(u'produces', u'produces')]
+    item_i_12_17 = models.CharField(max_length=20, choices=i_12_17_choices, null=True)
+    i_12_18_choices = [(u'produces', u'produces')]
+    item_i_12_18 = models.CharField(max_length=20, choices=i_12_18_choices, null=True)
+    i_12_19_choices = [(u'produces', u'produces')]
+    item_i_12_19 = models.CharField(max_length=20, choices=i_12_19_choices, null=True)
+    i_12_20_choices = [(u'produces', u'produces')]
+    item_i_12_20 = models.CharField(max_length=20, choices=i_12_20_choices, null=True)
+    i_12_21_choices = [(u'produces', u'produces')]
+    item_i_12_21 = models.CharField(max_length=20, choices=i_12_21_choices, null=True)
+    i_12_22_choices = [(u'produces', u'produces')]
+    item_i_12_22 = models.CharField(max_length=20, choices=i_12_22_choices, null=True)
+    i_12_23_choices = [(u'produces', u'produces')]
+    item_i_12_23 = models.CharField(max_length=20, choices=i_12_23_choices, null=True)
+    i_12_24_choices = [(u'produces', u'produces')]
+    item_i_12_24 = models.CharField(max_length=20, choices=i_12_24_choices, null=True)
+    i_12_25_choices = [(u'produces', u'produces')]
+    item_i_12_25 = models.CharField(max_length=20, choices=i_12_25_choices, null=True)
+    i_12_26_choices = [(u'produces', u'produces')]
+    item_i_12_26 = models.CharField(max_length=20, choices=i_12_26_choices, null=True)
+    i_12_27_choices = [(u'produces', u'produces')]
+    item_i_12_27 = models.CharField(max_length=20, choices=i_12_27_choices, null=True)
+    i_12_28_choices = [(u'produces', u'produces')]
+    item_i_12_28 = models.CharField(max_length=20, choices=i_12_28_choices, null=True)
+    i_12_29_choices = [(u'produces', u'produces')]
+    item_i_12_29 = models.CharField(max_length=20, choices=i_12_29_choices, null=True)
+    i_12_30_choices = [(u'produces', u'produces')]
+    item_i_12_30 = models.CharField(max_length=20, choices=i_12_30_choices, null=True)
+    i_12_31_choices = [(u'produces', u'produces')]
+    item_i_12_31 = models.CharField(max_length=20, choices=i_12_31_choices, null=True)
+    i_12_32_choices = [(u'produces', u'produces')]
+    item_i_12_32 = models.CharField(max_length=20, choices=i_12_32_choices, null=True)
+    i_12_33_choices = [(u'produces', u'produces')]
+    item_i_12_33 = models.CharField(max_length=20, choices=i_12_33_choices, null=True)
+    i_12_34_choices = [(u'produces', u'produces')]
+    item_i_12_34 = models.CharField(max_length=20, choices=i_12_34_choices, null=True)
+    i_12_35_choices = [(u'produces', u'produces')]
+    item_i_12_35 = models.CharField(max_length=20, choices=i_12_35_choices, null=True)
+    i_12_36_choices = [(u'produces', u'produces')]
+    item_i_12_36 = models.CharField(max_length=20, choices=i_12_36_choices, null=True)
+    i_12_37_choices = [(u'produces', u'produces')]
+    item_i_12_37 = models.CharField(max_length=20, choices=i_12_37_choices, null=True)
+    i_12_38_choices = [(u'produces', u'produces')]
+    item_i_12_38 = models.CharField(max_length=20, choices=i_12_38_choices, null=True)
+    i_12_39_choices = [(u'produces', u'produces')]
+    item_i_12_39 = models.CharField(max_length=20, choices=i_12_39_choices, null=True)
+    i_12_40_choices = [(u'produces', u'produces')]
+    item_i_12_40 = models.CharField(max_length=20, choices=i_12_40_choices, null=True)
+    i_13_1_choices = [(u'produces', u'produces')]
+    item_i_13_1 = models.CharField(max_length=20, choices=i_13_1_choices, null=True)
+    i_13_2_choices = [(u'produces', u'produces')]
+    item_i_13_2 = models.CharField(max_length=20, choices=i_13_2_choices, null=True)
+    i_13_3_choices = [(u'produces', u'produces')]
+    item_i_13_3 = models.CharField(max_length=20, choices=i_13_3_choices, null=True)
+    i_13_4_choices = [(u'produces', u'produces')]
+    item_i_13_4 = models.CharField(max_length=20, choices=i_13_4_choices, null=True)
+    i_13_5_choices = [(u'produces', u'produces')]
+    item_i_13_5 = models.CharField(max_length=20, choices=i_13_5_choices, null=True)
+    i_13_6_choices = [(u'produces', u'produces')]
+    item_i_13_6 = models.CharField(max_length=20, choices=i_13_6_choices, null=True)
+    i_13_7_choices = [(u'produces', u'produces')]
+    item_i_13_7 = models.CharField(max_length=20, choices=i_13_7_choices, null=True)
+    i_13_8_choices = [(u'produces', u'produces')]
+    item_i_13_8 = models.CharField(max_length=20, choices=i_13_8_choices, null=True)
+    i_13_9_choices = [(u'produces', u'produces')]
+    item_i_13_9 = models.CharField(max_length=20, choices=i_13_9_choices, null=True)
+    i_13_10_choices = [(u'produces', u'produces')]
+    item_i_13_10 = models.CharField(max_length=20, choices=i_13_10_choices, null=True)
+    i_13_11_choices = [(u'produces', u'produces')]
+    item_i_13_11 = models.CharField(max_length=20, choices=i_13_11_choices, null=True)
+    i_13_12_choices = [(u'produces', u'produces')]
+    item_i_13_12 = models.CharField(max_length=20, choices=i_13_12_choices, null=True)
+    i_13_13_choices = [(u'produces', u'produces')]
+    item_i_13_13 = models.CharField(max_length=20, choices=i_13_13_choices, null=True)
+    i_13_14_choices = [(u'produces', u'produces')]
+    item_i_13_14 = models.CharField(max_length=20, choices=i_13_14_choices, null=True)
+    i_13_15_choices = [(u'produces', u'produces')]
+    item_i_13_15 = models.CharField(max_length=20, choices=i_13_15_choices, null=True)
+    i_13_16_choices = [(u'produces', u'produces')]
+    item_i_13_16 = models.CharField(max_length=20, choices=i_13_16_choices, null=True)
+    i_13_17_choices = [(u'produces', u'produces')]
+    item_i_13_17 = models.CharField(max_length=20, choices=i_13_17_choices, null=True)
+    i_13_18_choices = [(u'produces', u'produces')]
+    item_i_13_18 = models.CharField(max_length=20, choices=i_13_18_choices, null=True)
+    i_13_19_choices = [(u'produces', u'produces')]
+    item_i_13_19 = models.CharField(max_length=20, choices=i_13_19_choices, null=True)
+    i_13_20_choices = [(u'produces', u'produces')]
+    item_i_13_20 = models.CharField(max_length=20, choices=i_13_20_choices, null=True)
+    i_13_21_choices = [(u'produces', u'produces')]
+    item_i_13_21 = models.CharField(max_length=20, choices=i_13_21_choices, null=True)
+    i_13_22_choices = [(u'produces', u'produces')]
+    item_i_13_22 = models.CharField(max_length=20, choices=i_13_22_choices, null=True)
+    i_13_23_choices = [(u'produces', u'produces')]
+    item_i_13_23 = models.CharField(max_length=20, choices=i_13_23_choices, null=True)
+    i_13_24_choices = [(u'produces', u'produces')]
+    item_i_13_24 = models.CharField(max_length=20, choices=i_13_24_choices, null=True)
+    i_13_25_choices = [(u'produces', u'produces')]
+    item_i_13_25 = models.CharField(max_length=20, choices=i_13_25_choices, null=True)
+    i_13_26_choices = [(u'produces', u'produces')]
+    item_i_13_26 = models.CharField(max_length=20, choices=i_13_26_choices, null=True)
+    i_13_27_choices = [(u'produces', u'produces')]
+    item_i_13_27 = models.CharField(max_length=20, choices=i_13_27_choices, null=True)
+    i_14_1_choices = [(u'produces', u'produces')]
+    item_i_14_1 = models.CharField(max_length=20, choices=i_14_1_choices, null=True)
+    i_14_2_choices = [(u'produces', u'produces')]
+    item_i_14_2 = models.CharField(max_length=20, choices=i_14_2_choices, null=True)
+    i_14_3_choices = [(u'produces', u'produces')]
+    item_i_14_3 = models.CharField(max_length=20, choices=i_14_3_choices, null=True)
+    i_14_4_choices = [(u'produces', u'produces')]
+    item_i_14_4 = models.CharField(max_length=20, choices=i_14_4_choices, null=True)
+    i_14_5_choices = [(u'produces', u'produces')]
+    item_i_14_5 = models.CharField(max_length=20, choices=i_14_5_choices, null=True)
+    i_14_6_choices = [(u'produces', u'produces')]
+    item_i_14_6 = models.CharField(max_length=20, choices=i_14_6_choices, null=True)
+    i_14_7_choices = [(u'produces', u'produces')]
+    item_i_14_7 = models.CharField(max_length=20, choices=i_14_7_choices, null=True)
+    i_14_8_choices = [(u'produces', u'produces')]
+    item_i_14_8 = models.CharField(max_length=20, choices=i_14_8_choices, null=True)
+    i_14_9_choices = [(u'produces', u'produces')]
+    item_i_14_9 = models.CharField(max_length=20, choices=i_14_9_choices, null=True)
+    i_14_10_choices = [(u'produces', u'produces')]
+    item_i_14_10 = models.CharField(max_length=20, choices=i_14_10_choices, null=True)
+    i_14_11_choices = [(u'produces', u'produces')]
+    item_i_14_11 = models.CharField(max_length=20, choices=i_14_11_choices, null=True)
+    i_14_12_choices = [(u'produces', u'produces')]
+    item_i_14_12 = models.CharField(max_length=20, choices=i_14_12_choices, null=True)
+    i_14_13_choices = [(u'produces', u'produces')]
+    item_i_14_13 = models.CharField(max_length=20, choices=i_14_13_choices, null=True)
+    i_14_14_choices = [(u'produces', u'produces')]
+    item_i_14_14 = models.CharField(max_length=20, choices=i_14_14_choices, null=True)
+    i_14_15_choices = [(u'produces', u'produces')]
+    item_i_14_15 = models.CharField(max_length=20, choices=i_14_15_choices, null=True)
+    i_14_16_choices = [(u'produces', u'produces')]
+    item_i_14_16 = models.CharField(max_length=20, choices=i_14_16_choices, null=True)
+    i_14_17_choices = [(u'produces', u'produces')]
+    item_i_14_17 = models.CharField(max_length=20, choices=i_14_17_choices, null=True)
+    i_14_18_choices = [(u'produces', u'produces')]
+    item_i_14_18 = models.CharField(max_length=20, choices=i_14_18_choices, null=True)
+    i_14_19_choices = [(u'produces', u'produces')]
+    item_i_14_19 = models.CharField(max_length=20, choices=i_14_19_choices, null=True)
+    i_14_20_choices = [(u'produces', u'produces')]
+    item_i_14_20 = models.CharField(max_length=20, choices=i_14_20_choices, null=True)
+    i_14_21_choices = [(u'produces', u'produces')]
+    item_i_14_21 = models.CharField(max_length=20, choices=i_14_21_choices, null=True)
+    i_14_22_choices = [(u'produces', u'produces')]
+    item_i_14_22 = models.CharField(max_length=20, choices=i_14_22_choices, null=True)
+    i_14_23_choices = [(u'produces', u'produces')]
+    item_i_14_23 = models.CharField(max_length=20, choices=i_14_23_choices, null=True)
+    i_14_24_choices = [(u'produces', u'produces')]
+    item_i_14_24 = models.CharField(max_length=20, choices=i_14_24_choices, null=True)
+    i_14_25_choices = [(u'produces', u'produces')]
+    item_i_14_25 = models.CharField(max_length=20, choices=i_14_25_choices, null=True)
+    i_14_26_choices = [(u'produces', u'produces')]
+    item_i_14_26 = models.CharField(max_length=20, choices=i_14_26_choices, null=True)
+    i_14_27_choices = [(u'produces', u'produces')]
+    item_i_14_27 = models.CharField(max_length=20, choices=i_14_27_choices, null=True)
+    i_14_28_choices = [(u'produces', u'produces')]
+    item_i_14_28 = models.CharField(max_length=20, choices=i_14_28_choices, null=True)
+    i_14_29_choices = [(u'produces', u'produces')]
+    item_i_14_29 = models.CharField(max_length=20, choices=i_14_29_choices, null=True)
+    i_14_30_choices = [(u'produces', u'produces')]
+    item_i_14_30 = models.CharField(max_length=20, choices=i_14_30_choices, null=True)
+    i_14_31_choices = [(u'produces', u'produces')]
+    item_i_14_31 = models.CharField(max_length=20, choices=i_14_31_choices, null=True)
+    i_14_32_choices = [(u'produces', u'produces')]
+    item_i_14_32 = models.CharField(max_length=20, choices=i_14_32_choices, null=True)
+    i_14_33_choices = [(u'produces', u'produces')]
+    item_i_14_33 = models.CharField(max_length=20, choices=i_14_33_choices, null=True)
+    i_14_34_choices = [(u'produces', u'produces')]
+    item_i_14_34 = models.CharField(max_length=20, choices=i_14_34_choices, null=True)
+    i_14_35_choices = [(u'produces', u'produces')]
+    item_i_14_35 = models.CharField(max_length=20, choices=i_14_35_choices, null=True)
+    i_14_36_choices = [(u'produces', u'produces')]
+    item_i_14_36 = models.CharField(max_length=20, choices=i_14_36_choices, null=True)
+    i_14_37_choices = [(u'produces', u'produces')]
+    item_i_14_37 = models.CharField(max_length=20, choices=i_14_37_choices, null=True)
+    i_14_38_choices = [(u'produces', u'produces')]
+    item_i_14_38 = models.CharField(max_length=20, choices=i_14_38_choices, null=True)
+    i_14_39_choices = [(u'produces', u'produces')]
+    item_i_14_39 = models.CharField(max_length=20, choices=i_14_39_choices, null=True)
+    i_14_40_choices = [(u'produces', u'produces')]
+    item_i_14_40 = models.CharField(max_length=20, choices=i_14_40_choices, null=True)
+    i_14_41_choices = [(u'produces', u'produces')]
+    item_i_14_41 = models.CharField(max_length=20, choices=i_14_41_choices, null=True)
+    i_14_42_choices = [(u'produces', u'produces')]
+    item_i_14_42 = models.CharField(max_length=20, choices=i_14_42_choices, null=True)
+    i_14_43_choices = [(u'produces', u'produces')]
+    item_i_14_43 = models.CharField(max_length=20, choices=i_14_43_choices, null=True)
+    i_14_44_choices = [(u'produces', u'produces')]
+    item_i_14_44 = models.CharField(max_length=20, choices=i_14_44_choices, null=True)
+    i_14_45_choices = [(u'produces', u'produces')]
+    item_i_14_45 = models.CharField(max_length=20, choices=i_14_45_choices, null=True)
+    i_14_46_choices = [(u'produces', u'produces')]
+    item_i_14_46 = models.CharField(max_length=20, choices=i_14_46_choices, null=True)
+    i_14_47_choices = [(u'produces', u'produces')]
+    item_i_14_47 = models.CharField(max_length=20, choices=i_14_47_choices, null=True)
+    i_14_48_choices = [(u'produces', u'produces')]
+    item_i_14_48 = models.CharField(max_length=20, choices=i_14_48_choices, null=True)
+    i_14_49_choices = [(u'produces', u'produces')]
+    item_i_14_49 = models.CharField(max_length=20, choices=i_14_49_choices, null=True)
+    i_14_50_choices = [(u'produces', u'produces')]
+    item_i_14_50 = models.CharField(max_length=20, choices=i_14_50_choices, null=True)
+    i_14_51_choices = [(u'produces', u'produces')]
+    item_i_14_51 = models.CharField(max_length=20, choices=i_14_51_choices, null=True)
+    i_14_52_choices = [(u'produces', u'produces')]
+    item_i_14_52 = models.CharField(max_length=20, choices=i_14_52_choices, null=True)
+    i_14_53_choices = [(u'produces', u'produces')]
+    item_i_14_53 = models.CharField(max_length=20, choices=i_14_53_choices, null=True)
+    i_14_54_choices = [(u'produces', u'produces')]
+    item_i_14_54 = models.CharField(max_length=20, choices=i_14_54_choices, null=True)
+    i_14_55_choices = [(u'produces', u'produces')]
+    item_i_14_55 = models.CharField(max_length=20, choices=i_14_55_choices, null=True)
+    i_14_56_choices = [(u'produces', u'produces')]
+    item_i_14_56 = models.CharField(max_length=20, choices=i_14_56_choices, null=True)
+    i_14_57_choices = [(u'produces', u'produces')]
+    item_i_14_57 = models.CharField(max_length=20, choices=i_14_57_choices, null=True)
+    i_14_58_choices = [(u'produces', u'produces')]
+    item_i_14_58 = models.CharField(max_length=20, choices=i_14_58_choices, null=True)
+    i_14_59_choices = [(u'produces', u'produces')]
+    item_i_14_59 = models.CharField(max_length=20, choices=i_14_59_choices, null=True)
+    i_14_60_choices = [(u'produces', u'produces')]
+    item_i_14_60 = models.CharField(max_length=20, choices=i_14_60_choices, null=True)
+    i_14_61_choices = [(u'produces', u'produces')]
+    item_i_14_61 = models.CharField(max_length=20, choices=i_14_61_choices, null=True)
+    i_14_62_choices = [(u'produces', u'produces')]
+    item_i_14_62 = models.CharField(max_length=20, choices=i_14_62_choices, null=True)
+    i_14_63_choices = [(u'produces', u'produces')]
+    item_i_14_63 = models.CharField(max_length=20, choices=i_14_63_choices, null=True)
+    i_14_64_choices = [(u'produces', u'produces')]
+    item_i_14_64 = models.CharField(max_length=20, choices=i_14_64_choices, null=True)
+    i_14_65_choices = [(u'produces', u'produces')]
+    item_i_14_65 = models.CharField(max_length=20, choices=i_14_65_choices, null=True)
+    i_14_66_choices = [(u'produces', u'produces')]
+    item_i_14_66 = models.CharField(max_length=20, choices=i_14_66_choices, null=True)
+    i_14_67_choices = [(u'produces', u'produces')]
+    item_i_14_67 = models.CharField(max_length=20, choices=i_14_67_choices, null=True)
+    i_14_68_choices = [(u'produces', u'produces')]
+    item_i_14_68 = models.CharField(max_length=20, choices=i_14_68_choices, null=True)
+    i_14_69_choices = [(u'produces', u'produces')]
+    item_i_14_69 = models.CharField(max_length=20, choices=i_14_69_choices, null=True)
+    i_14_70_choices = [(u'produces', u'produces')]
+    item_i_14_70 = models.CharField(max_length=20, choices=i_14_70_choices, null=True)
+    i_14_71_choices = [(u'produces', u'produces')]
+    item_i_14_71 = models.CharField(max_length=20, choices=i_14_71_choices, null=True)
+    i_14_72_choices = [(u'produces', u'produces')]
+    item_i_14_72 = models.CharField(max_length=20, choices=i_14_72_choices, null=True)
+    i_14_73_choices = [(u'produces', u'produces')]
+    item_i_14_73 = models.CharField(max_length=20, choices=i_14_73_choices, null=True)
+    i_14_74_choices = [(u'produces', u'produces')]
+    item_i_14_74 = models.CharField(max_length=20, choices=i_14_74_choices, null=True)
+    i_14_75_choices = [(u'produces', u'produces')]
+    item_i_14_75 = models.CharField(max_length=20, choices=i_14_75_choices, null=True)
+    i_14_76_choices = [(u'produces', u'produces')]
+    item_i_14_76 = models.CharField(max_length=20, choices=i_14_76_choices, null=True)
+    i_14_77_choices = [(u'produces', u'produces')]
+    item_i_14_77 = models.CharField(max_length=20, choices=i_14_77_choices, null=True)
+    i_14_78_choices = [(u'produces', u'produces')]
+    item_i_14_78 = models.CharField(max_length=20, choices=i_14_78_choices, null=True)
+    i_14_79_choices = [(u'produces', u'produces')]
+    item_i_14_79 = models.CharField(max_length=20, choices=i_14_79_choices, null=True)
+    i_14_80_choices = [(u'produces', u'produces')]
+    item_i_14_80 = models.CharField(max_length=20, choices=i_14_80_choices, null=True)
+    i_14_81_choices = [(u'produces', u'produces')]
+    item_i_14_81 = models.CharField(max_length=20, choices=i_14_81_choices, null=True)
+    i_14_82_choices = [(u'produces', u'produces')]
+    item_i_14_82 = models.CharField(max_length=20, choices=i_14_82_choices, null=True)
+    i_14_83_choices = [(u'produces', u'produces')]
+    item_i_14_83 = models.CharField(max_length=20, choices=i_14_83_choices, null=True)
+    i_14_84_choices = [(u'produces', u'produces')]
+    item_i_14_84 = models.CharField(max_length=20, choices=i_14_84_choices, null=True)
+    i_14_85_choices = [(u'produces', u'produces')]
+    item_i_14_85 = models.CharField(max_length=20, choices=i_14_85_choices, null=True)
+    i_14_86_choices = [(u'produces', u'produces')]
+    item_i_14_86 = models.CharField(max_length=20, choices=i_14_86_choices, null=True)
+    i_14_87_choices = [(u'produces', u'produces')]
+    item_i_14_87 = models.CharField(max_length=20, choices=i_14_87_choices, null=True)
+    i_14_88_choices = [(u'produces', u'produces')]
+    item_i_14_88 = models.CharField(max_length=20, choices=i_14_88_choices, null=True)
+    i_14_89_choices = [(u'produces', u'produces')]
+    item_i_14_89 = models.CharField(max_length=20, choices=i_14_89_choices, null=True)
+    i_14_90_choices = [(u'produces', u'produces')]
+    item_i_14_90 = models.CharField(max_length=20, choices=i_14_90_choices, null=True)
+    i_14_91_choices = [(u'produces', u'produces')]
+    item_i_14_91 = models.CharField(max_length=20, choices=i_14_91_choices, null=True)
+    i_14_92_choices = [(u'produces', u'produces')]
+    item_i_14_92 = models.CharField(max_length=20, choices=i_14_92_choices, null=True)
+    i_14_93_choices = [(u'produces', u'produces')]
+    item_i_14_93 = models.CharField(max_length=20, choices=i_14_93_choices, null=True)
+    i_14_94_choices = [(u'produces', u'produces')]
+    item_i_14_94 = models.CharField(max_length=20, choices=i_14_94_choices, null=True)
+    i_14_95_choices = [(u'produces', u'produces')]
+    item_i_14_95 = models.CharField(max_length=20, choices=i_14_95_choices, null=True)
+    i_14_96_choices = [(u'produces', u'produces')]
+    item_i_14_96 = models.CharField(max_length=20, choices=i_14_96_choices, null=True)
+    i_14_97_choices = [(u'produces', u'produces')]
+    item_i_14_97 = models.CharField(max_length=20, choices=i_14_97_choices, null=True)
+    i_14_98_choices = [(u'produces', u'produces')]
+    item_i_14_98 = models.CharField(max_length=20, choices=i_14_98_choices, null=True)
+    i_14_99_choices = [(u'produces', u'produces')]
+    item_i_14_99 = models.CharField(max_length=20, choices=i_14_99_choices, null=True)
+    i_14_100_choices = [(u'produces', u'produces')]
+    item_i_14_100 = models.CharField(max_length=20, choices=i_14_100_choices, null=True)
+    i_14_101_choices = [(u'produces', u'produces')]
+    item_i_14_101 = models.CharField(max_length=20, choices=i_14_101_choices, null=True)
+    i_14_102_choices = [(u'produces', u'produces')]
+    item_i_14_102 = models.CharField(max_length=20, choices=i_14_102_choices, null=True)
+    i_14_103_choices = [(u'produces', u'produces')]
+    item_i_14_103 = models.CharField(max_length=20, choices=i_14_103_choices, null=True)
+    i_15_1_choices = [(u'produces', u'produces')]
+    item_i_15_1 = models.CharField(max_length=20, choices=i_15_1_choices, null=True)
+    i_15_2_choices = [(u'produces', u'produces')]
+    item_i_15_2 = models.CharField(max_length=20, choices=i_15_2_choices, null=True)
+    i_15_3_choices = [(u'produces', u'produces')]
+    item_i_15_3 = models.CharField(max_length=20, choices=i_15_3_choices, null=True)
+    i_15_4_choices = [(u'produces', u'produces')]
+    item_i_15_4 = models.CharField(max_length=20, choices=i_15_4_choices, null=True)
+    i_15_5_choices = [(u'produces', u'produces')]
+    item_i_15_5 = models.CharField(max_length=20, choices=i_15_5_choices, null=True)
+    i_15_6_choices = [(u'produces', u'produces')]
+    item_i_15_6 = models.CharField(max_length=20, choices=i_15_6_choices, null=True)
+    i_15_7_choices = [(u'produces', u'produces')]
+    item_i_15_7 = models.CharField(max_length=20, choices=i_15_7_choices, null=True)
+    i_15_8_choices = [(u'produces', u'produces')]
+    item_i_15_8 = models.CharField(max_length=20, choices=i_15_8_choices, null=True)
+    i_15_9_choices = [(u'produces', u'produces')]
+    item_i_15_9 = models.CharField(max_length=20, choices=i_15_9_choices, null=True)
+    i_15_10_choices = [(u'produces', u'produces')]
+    item_i_15_10 = models.CharField(max_length=20, choices=i_15_10_choices, null=True)
+    i_15_11_choices = [(u'produces', u'produces')]
+    item_i_15_11 = models.CharField(max_length=20, choices=i_15_11_choices, null=True)
+    i_15_12_choices = [(u'produces', u'produces')]
+    item_i_15_12 = models.CharField(max_length=20, choices=i_15_12_choices, null=True)
+    i_15_13_choices = [(u'produces', u'produces')]
+    item_i_15_13 = models.CharField(max_length=20, choices=i_15_13_choices, null=True)
+    i_15_14_choices = [(u'produces', u'produces')]
+    item_i_15_14 = models.CharField(max_length=20, choices=i_15_14_choices, null=True)
+    i_15_15_choices = [(u'produces', u'produces')]
+    item_i_15_15 = models.CharField(max_length=20, choices=i_15_15_choices, null=True)
+    i_15_16_choices = [(u'produces', u'produces')]
+    item_i_15_16 = models.CharField(max_length=20, choices=i_15_16_choices, null=True)
+    i_15_17_choices = [(u'produces', u'produces')]
+    item_i_15_17 = models.CharField(max_length=20, choices=i_15_17_choices, null=True)
+    i_15_18_choices = [(u'produces', u'produces')]
+    item_i_15_18 = models.CharField(max_length=20, choices=i_15_18_choices, null=True)
+    i_15_19_choices = [(u'produces', u'produces')]
+    item_i_15_19 = models.CharField(max_length=20, choices=i_15_19_choices, null=True)
+    i_15_20_choices = [(u'produces', u'produces')]
+    item_i_15_20 = models.CharField(max_length=20, choices=i_15_20_choices, null=True)
+    i_15_21_choices = [(u'produces', u'produces')]
+    item_i_15_21 = models.CharField(max_length=20, choices=i_15_21_choices, null=True)
+    i_15_22_choices = [(u'produces', u'produces')]
+    item_i_15_22 = models.CharField(max_length=20, choices=i_15_22_choices, null=True)
+    i_15_23_choices = [(u'produces', u'produces')]
+    item_i_15_23 = models.CharField(max_length=20, choices=i_15_23_choices, null=True)
+    i_15_24_choices = [(u'produces', u'produces')]
+    item_i_15_24 = models.CharField(max_length=20, choices=i_15_24_choices, null=True)
+    i_15_25_choices = [(u'produces', u'produces')]
+    item_i_15_25 = models.CharField(max_length=20, choices=i_15_25_choices, null=True)
+    i_15_26_choices = [(u'produces', u'produces')]
+    item_i_15_26 = models.CharField(max_length=20, choices=i_15_26_choices, null=True)
+    i_15_27_choices = [(u'produces', u'produces')]
+    item_i_15_27 = models.CharField(max_length=20, choices=i_15_27_choices, null=True)
+    i_15_28_choices = [(u'produces', u'produces')]
+    item_i_15_28 = models.CharField(max_length=20, choices=i_15_28_choices, null=True)
+    i_15_29_choices = [(u'produces', u'produces')]
+    item_i_15_29 = models.CharField(max_length=20, choices=i_15_29_choices, null=True)
+    i_15_30_choices = [(u'produces', u'produces')]
+    item_i_15_30 = models.CharField(max_length=20, choices=i_15_30_choices, null=True)
+    i_15_31_choices = [(u'produces', u'produces')]
+    item_i_15_31 = models.CharField(max_length=20, choices=i_15_31_choices, null=True)
+    i_15_32_choices = [(u'produces', u'produces')]
+    item_i_15_32 = models.CharField(max_length=20, choices=i_15_32_choices, null=True)
+    i_15_33_choices = [(u'produces', u'produces')]
+    item_i_15_33 = models.CharField(max_length=20, choices=i_15_33_choices, null=True)
+    i_15_34_choices = [(u'produces', u'produces')]
+    item_i_15_34 = models.CharField(max_length=20, choices=i_15_34_choices, null=True)
+    i_15_35_choices = [(u'produces', u'produces')]
+    item_i_15_35 = models.CharField(max_length=20, choices=i_15_35_choices, null=True)
+    i_15_36_choices = [(u'produces', u'produces')]
+    item_i_15_36 = models.CharField(max_length=20, choices=i_15_36_choices, null=True)
+    i_15_37_choices = [(u'produces', u'produces')]
+    item_i_15_37 = models.CharField(max_length=20, choices=i_15_37_choices, null=True)
+    i_15_38_choices = [(u'produces', u'produces')]
+    item_i_15_38 = models.CharField(max_length=20, choices=i_15_38_choices, null=True)
+    i_15_39_choices = [(u'produces', u'produces')]
+    item_i_15_39 = models.CharField(max_length=20, choices=i_15_39_choices, null=True)
+    i_15_40_choices = [(u'produces', u'produces')]
+    item_i_15_40 = models.CharField(max_length=20, choices=i_15_40_choices, null=True)
+    i_15_41_choices = [(u'produces', u'produces')]
+    item_i_15_41 = models.CharField(max_length=20, choices=i_15_41_choices, null=True)
+    i_15_42_choices = [(u'produces', u'produces')]
+    item_i_15_42 = models.CharField(max_length=20, choices=i_15_42_choices, null=True)
+    i_15_43_choices = [(u'produces', u'produces')]
+    item_i_15_43 = models.CharField(max_length=20, choices=i_15_43_choices, null=True)
+    i_15_44_choices = [(u'produces', u'produces')]
+    item_i_15_44 = models.CharField(max_length=20, choices=i_15_44_choices, null=True)
+    i_15_45_choices = [(u'produces', u'produces')]
+    item_i_15_45 = models.CharField(max_length=20, choices=i_15_45_choices, null=True)
+    i_15_46_choices = [(u'produces', u'produces')]
+    item_i_15_46 = models.CharField(max_length=20, choices=i_15_46_choices, null=True)
+    i_15_47_choices = [(u'produces', u'produces')]
+    item_i_15_47 = models.CharField(max_length=20, choices=i_15_47_choices, null=True)
+    i_15_48_choices = [(u'produces', u'produces')]
+    item_i_15_48 = models.CharField(max_length=20, choices=i_15_48_choices, null=True)
+    i_15_49_choices = [(u'produces', u'produces')]
+    item_i_15_49 = models.CharField(max_length=20, choices=i_15_49_choices, null=True)
+    i_15_50_choices = [(u'produces', u'produces')]
+    item_i_15_50 = models.CharField(max_length=20, choices=i_15_50_choices, null=True)
+    i_15_51_choices = [(u'produces', u'produces')]
+    item_i_15_51 = models.CharField(max_length=20, choices=i_15_51_choices, null=True)
+    i_15_52_choices = [(u'produces', u'produces')]
+    item_i_15_52 = models.CharField(max_length=20, choices=i_15_52_choices, null=True)
+    i_15_53_choices = [(u'produces', u'produces')]
+    item_i_15_53 = models.CharField(max_length=20, choices=i_15_53_choices, null=True)
+    i_15_54_choices = [(u'produces', u'produces')]
+    item_i_15_54 = models.CharField(max_length=20, choices=i_15_54_choices, null=True)
+    i_15_55_choices = [(u'produces', u'produces')]
+    item_i_15_55 = models.CharField(max_length=20, choices=i_15_55_choices, null=True)
+    i_15_56_choices = [(u'produces', u'produces')]
+    item_i_15_56 = models.CharField(max_length=20, choices=i_15_56_choices, null=True)
+    i_15_57_choices = [(u'produces', u'produces')]
+    item_i_15_57 = models.CharField(max_length=20, choices=i_15_57_choices, null=True)
+    i_15_58_choices = [(u'produces', u'produces')]
+    item_i_15_58 = models.CharField(max_length=20, choices=i_15_58_choices, null=True)
+    i_15_59_choices = [(u'produces', u'produces')]
+    item_i_15_59 = models.CharField(max_length=20, choices=i_15_59_choices, null=True)
+    i_15_60_choices = [(u'produces', u'produces')]
+    item_i_15_60 = models.CharField(max_length=20, choices=i_15_60_choices, null=True)
+    i_15_61_choices = [(u'produces', u'produces')]
+    item_i_15_61 = models.CharField(max_length=20, choices=i_15_61_choices, null=True)
+    i_15_62_choices = [(u'produces', u'produces')]
+    item_i_15_62 = models.CharField(max_length=20, choices=i_15_62_choices, null=True)
+    i_15_63_choices = [(u'produces', u'produces')]
+    item_i_15_63 = models.CharField(max_length=20, choices=i_15_63_choices, null=True)
+    i_16_1_choices = [(u'produces', u'produces')]
+    item_i_16_1 = models.CharField(max_length=20, choices=i_16_1_choices, null=True)
+    i_16_2_choices = [(u'produces', u'produces')]
+    item_i_16_2 = models.CharField(max_length=20, choices=i_16_2_choices, null=True)
+    i_16_3_choices = [(u'produces', u'produces')]
+    item_i_16_3 = models.CharField(max_length=20, choices=i_16_3_choices, null=True)
+    i_16_4_choices = [(u'produces', u'produces')]
+    item_i_16_4 = models.CharField(max_length=20, choices=i_16_4_choices, null=True)
+    i_16_5_choices = [(u'produces', u'produces')]
+    item_i_16_5 = models.CharField(max_length=20, choices=i_16_5_choices, null=True)
+    i_16_6_choices = [(u'produces', u'produces')]
+    item_i_16_6 = models.CharField(max_length=20, choices=i_16_6_choices, null=True)
+    i_16_7_choices = [(u'produces', u'produces')]
+    item_i_16_7 = models.CharField(max_length=20, choices=i_16_7_choices, null=True)
+    i_16_8_choices = [(u'produces', u'produces')]
+    item_i_16_8 = models.CharField(max_length=20, choices=i_16_8_choices, null=True)
+    i_16_9_choices = [(u'produces', u'produces')]
+    item_i_16_9 = models.CharField(max_length=20, choices=i_16_9_choices, null=True)
+    i_16_10_choices = [(u'produces', u'produces')]
+    item_i_16_10 = models.CharField(max_length=20, choices=i_16_10_choices, null=True)
+    i_16_11_choices = [(u'produces', u'produces')]
+    item_i_16_11 = models.CharField(max_length=20, choices=i_16_11_choices, null=True)
+    i_16_12_choices = [(u'produces', u'produces')]
+    item_i_16_12 = models.CharField(max_length=20, choices=i_16_12_choices, null=True)
+    i_16_13_choices = [(u'produces', u'produces')]
+    item_i_16_13 = models.CharField(max_length=20, choices=i_16_13_choices, null=True)
+    i_16_14_choices = [(u'produces', u'produces')]
+    item_i_16_14 = models.CharField(max_length=20, choices=i_16_14_choices, null=True)
+    i_16_15_choices = [(u'produces', u'produces')]
+    item_i_16_15 = models.CharField(max_length=20, choices=i_16_15_choices, null=True)
+    i_17_1_choices = [(u'produces', u'produces')]
+    item_i_17_1 = models.CharField(max_length=20, choices=i_17_1_choices, null=True)
+    i_17_2_choices = [(u'produces', u'produces')]
+    item_i_17_2 = models.CharField(max_length=20, choices=i_17_2_choices, null=True)
+    i_17_3_choices = [(u'produces', u'produces')]
+    item_i_17_3 = models.CharField(max_length=20, choices=i_17_3_choices, null=True)
+    i_17_4_choices = [(u'produces', u'produces')]
+    item_i_17_4 = models.CharField(max_length=20, choices=i_17_4_choices, null=True)
+    i_17_5_choices = [(u'produces', u'produces')]
+    item_i_17_5 = models.CharField(max_length=20, choices=i_17_5_choices, null=True)
+    i_17_6_choices = [(u'produces', u'produces')]
+    item_i_17_6 = models.CharField(max_length=20, choices=i_17_6_choices, null=True)
+    i_17_7_choices = [(u'produces', u'produces')]
+    item_i_17_7 = models.CharField(max_length=20, choices=i_17_7_choices, null=True)
+    i_17_8_choices = [(u'produces', u'produces')]
+    item_i_17_8 = models.CharField(max_length=20, choices=i_17_8_choices, null=True)
+    i_17_9_choices = [(u'produces', u'produces')]
+    item_i_17_9 = models.CharField(max_length=20, choices=i_17_9_choices, null=True)
+    i_17_10_choices = [(u'produces', u'produces')]
+    item_i_17_10 = models.CharField(max_length=20, choices=i_17_10_choices, null=True)
+    i_17_11_choices = [(u'produces', u'produces')]
+    item_i_17_11 = models.CharField(max_length=20, choices=i_17_11_choices, null=True)
+    i_17_12_choices = [(u'produces', u'produces')]
+    item_i_17_12 = models.CharField(max_length=20, choices=i_17_12_choices, null=True)
+    i_17_13_choices = [(u'produces', u'produces')]
+    item_i_17_13 = models.CharField(max_length=20, choices=i_17_13_choices, null=True)
+    i_17_14_choices = [(u'produces', u'produces')]
+    item_i_17_14 = models.CharField(max_length=20, choices=i_17_14_choices, null=True)
+    i_17_15_choices = [(u'produces', u'produces')]
+    item_i_17_15 = models.CharField(max_length=20, choices=i_17_15_choices, null=True)
+    i_17_16_choices = [(u'produces', u'produces')]
+    item_i_17_16 = models.CharField(max_length=20, choices=i_17_16_choices, null=True)
+    i_17_17_choices = [(u'produces', u'produces')]
+    item_i_17_17 = models.CharField(max_length=20, choices=i_17_17_choices, null=True)
+    i_17_18_choices = [(u'produces', u'produces')]
+    item_i_17_18 = models.CharField(max_length=20, choices=i_17_18_choices, null=True)
+    i_17_19_choices = [(u'produces', u'produces')]
+    item_i_17_19 = models.CharField(max_length=20, choices=i_17_19_choices, null=True)
+    i_17_20_choices = [(u'produces', u'produces')]
+    item_i_17_20 = models.CharField(max_length=20, choices=i_17_20_choices, null=True)
+    i_17_21_choices = [(u'produces', u'produces')]
+    item_i_17_21 = models.CharField(max_length=20, choices=i_17_21_choices, null=True)
+    i_17_22_choices = [(u'produces', u'produces')]
+    item_i_17_22 = models.CharField(max_length=20, choices=i_17_22_choices, null=True)
+    i_17_23_choices = [(u'produces', u'produces')]
+    item_i_17_23 = models.CharField(max_length=20, choices=i_17_23_choices, null=True)
+    i_17_24_choices = [(u'produces', u'produces')]
+    item_i_17_24 = models.CharField(max_length=20, choices=i_17_24_choices, null=True)
+    i_17_25_choices = [(u'produces', u'produces')]
+    item_i_17_25 = models.CharField(max_length=20, choices=i_17_25_choices, null=True)
+    i_17_26_choices = [(u'produces', u'produces')]
+    item_i_17_26 = models.CharField(max_length=20, choices=i_17_26_choices, null=True)
+    i_17_27_choices = [(u'produces', u'produces')]
+    item_i_17_27 = models.CharField(max_length=20, choices=i_17_27_choices, null=True)
+    i_17_28_choices = [(u'produces', u'produces')]
+    item_i_17_28 = models.CharField(max_length=20, choices=i_17_28_choices, null=True)
+    i_17_29_choices = [(u'produces', u'produces')]
+    item_i_17_29 = models.CharField(max_length=20, choices=i_17_29_choices, null=True)
+    i_17_30_choices = [(u'produces', u'produces')]
+    item_i_17_30 = models.CharField(max_length=20, choices=i_17_30_choices, null=True)
+    i_17_31_choices = [(u'produces', u'produces')]
+    item_i_17_31 = models.CharField(max_length=20, choices=i_17_31_choices, null=True)
+    i_18_1_choices = [(u'produces', u'produces')]
+    item_i_18_1 = models.CharField(max_length=20, choices=i_18_1_choices, null=True)
+    i_18_2_choices = [(u'produces', u'produces')]
+    item_i_18_2 = models.CharField(max_length=20, choices=i_18_2_choices, null=True)
+    i_18_3_choices = [(u'produces', u'produces')]
+    item_i_18_3 = models.CharField(max_length=20, choices=i_18_3_choices, null=True)
+    i_18_4_choices = [(u'produces', u'produces')]
+    item_i_18_4 = models.CharField(max_length=20, choices=i_18_4_choices, null=True)
+    i_18_5_choices = [(u'produces', u'produces')]
+    item_i_18_5 = models.CharField(max_length=20, choices=i_18_5_choices, null=True)
+    i_18_6_choices = [(u'produces', u'produces')]
+    item_i_18_6 = models.CharField(max_length=20, choices=i_18_6_choices, null=True)
+    i_18_7_choices = [(u'produces', u'produces')]
+    item_i_18_7 = models.CharField(max_length=20, choices=i_18_7_choices, null=True)
+    i_19_1_choices = [(u'produces', u'produces')]
+    item_i_19_1 = models.CharField(max_length=20, choices=i_19_1_choices, null=True)
+    i_19_2_choices = [(u'produces', u'produces')]
+    item_i_19_2 = models.CharField(max_length=20, choices=i_19_2_choices, null=True)
+    i_19_3_choices = [(u'produces', u'produces')]
+    item_i_19_3 = models.CharField(max_length=20, choices=i_19_3_choices, null=True)
+    i_19_4_choices = [(u'produces', u'produces')]
+    item_i_19_4 = models.CharField(max_length=20, choices=i_19_4_choices, null=True)
+    i_19_5_choices = [(u'produces', u'produces')]
+    item_i_19_5 = models.CharField(max_length=20, choices=i_19_5_choices, null=True)
+    i_19_6_choices = [(u'produces', u'produces')]
+    item_i_19_6 = models.CharField(max_length=20, choices=i_19_6_choices, null=True)
+    i_19_7_choices = [(u'produces', u'produces')]
+    item_i_19_7 = models.CharField(max_length=20, choices=i_19_7_choices, null=True)
+    i_19_8_choices = [(u'produces', u'produces')]
+    item_i_19_8 = models.CharField(max_length=20, choices=i_19_8_choices, null=True)
+    i_19_9_choices = [(u'produces', u'produces')]
+    item_i_19_9 = models.CharField(max_length=20, choices=i_19_9_choices, null=True)
+    i_19_10_choices = [(u'produces', u'produces')]
+    item_i_19_10 = models.CharField(max_length=20, choices=i_19_10_choices, null=True)
+    i_19_11_choices = [(u'produces', u'produces')]
+    item_i_19_11 = models.CharField(max_length=20, choices=i_19_11_choices, null=True)
+    i_19_12_choices = [(u'produces', u'produces')]
+    item_i_19_12 = models.CharField(max_length=20, choices=i_19_12_choices, null=True)
+    i_19_13_choices = [(u'produces', u'produces')]
+    item_i_19_13 = models.CharField(max_length=20, choices=i_19_13_choices, null=True)
+    i_19_14_choices = [(u'produces', u'produces')]
+    item_i_19_14 = models.CharField(max_length=20, choices=i_19_14_choices, null=True)
+    i_19_15_choices = [(u'produces', u'produces')]
+    item_i_19_15 = models.CharField(max_length=20, choices=i_19_15_choices, null=True)
+    i_19_16_choices = [(u'produces', u'produces')]
+    item_i_19_16 = models.CharField(max_length=20, choices=i_19_16_choices, null=True)
+    i_19_17_choices = [(u'produces', u'produces')]
+    item_i_19_17 = models.CharField(max_length=20, choices=i_19_17_choices, null=True)
+    i_19_18_choices = [(u'produces', u'produces')]
+    item_i_19_18 = models.CharField(max_length=20, choices=i_19_18_choices, null=True)
+    i_19_19_choices = [(u'produces', u'produces')]
+    item_i_19_19 = models.CharField(max_length=20, choices=i_19_19_choices, null=True)
+    i_19_20_choices = [(u'produces', u'produces')]
+    item_i_19_20 = models.CharField(max_length=20, choices=i_19_20_choices, null=True)
+    i_19_21_choices = [(u'produces', u'produces')]
+    item_i_19_21 = models.CharField(max_length=20, choices=i_19_21_choices, null=True)
+    i_19_22_choices = [(u'produces', u'produces')]
+    item_i_19_22 = models.CharField(max_length=20, choices=i_19_22_choices, null=True)
+    i_19_23_choices = [(u'produces', u'produces')]
+    item_i_19_23 = models.CharField(max_length=20, choices=i_19_23_choices, null=True)
+    i_19_24_choices = [(u'produces', u'produces')]
+    item_i_19_24 = models.CharField(max_length=20, choices=i_19_24_choices, null=True)
+    i_19_25_choices = [(u'produces', u'produces')]
+    item_i_19_25 = models.CharField(max_length=20, choices=i_19_25_choices, null=True)
+    i_19_26_choices = [(u'produces', u'produces')]
+    item_i_19_26 = models.CharField(max_length=20, choices=i_19_26_choices, null=True)
+    i_19_27_choices = [(u'produces', u'produces')]
+    item_i_19_27 = models.CharField(max_length=20, choices=i_19_27_choices, null=True)
+    i_19_28_choices = [(u'produces', u'produces')]
+    item_i_19_28 = models.CharField(max_length=20, choices=i_19_28_choices, null=True)
+    i_19_29_choices = [(u'produces', u'produces')]
+    item_i_19_29 = models.CharField(max_length=20, choices=i_19_29_choices, null=True)
+    i_19_30_choices = [(u'produces', u'produces')]
+    item_i_19_30 = models.CharField(max_length=20, choices=i_19_30_choices, null=True)
+    i_19_31_choices = [(u'produces', u'produces')]
+    item_i_19_31 = models.CharField(max_length=20, choices=i_19_31_choices, null=True)
+    i_19_32_choices = [(u'produces', u'produces')]
+    item_i_19_32 = models.CharField(max_length=20, choices=i_19_32_choices, null=True)
+    i_19_33_choices = [(u'produces', u'produces')]
+    item_i_19_33 = models.CharField(max_length=20, choices=i_19_33_choices, null=True)
+    i_19_34_choices = [(u'produces', u'produces')]
+    item_i_19_34 = models.CharField(max_length=20, choices=i_19_34_choices, null=True)
+    i_19_35_choices = [(u'produces', u'produces')]
+    item_i_19_35 = models.CharField(max_length=20, choices=i_19_35_choices, null=True)
+    i_19_36_choices = [(u'produces', u'produces')]
+    item_i_19_36 = models.CharField(max_length=20, choices=i_19_36_choices, null=True)
+    i_19_37_choices = [(u'produces', u'produces')]
+    item_i_19_37 = models.CharField(max_length=20, choices=i_19_37_choices, null=True)
+    i_19_38_choices = [(u'produces', u'produces')]
+    item_i_19_38 = models.CharField(max_length=20, choices=i_19_38_choices, null=True)
+    i_19_39_choices = [(u'produces', u'produces')]
+    item_i_19_39 = models.CharField(max_length=20, choices=i_19_39_choices, null=True)
+    i_19_40_choices = [(u'produces', u'produces')]
+    item_i_19_40 = models.CharField(max_length=20, choices=i_19_40_choices, null=True)
+    i_19_41_choices = [(u'produces', u'produces')]
+    item_i_19_41 = models.CharField(max_length=20, choices=i_19_41_choices, null=True)
+    i_20_1_choices = [(u'produces', u'produces')]
+    item_i_20_1 = models.CharField(max_length=20, choices=i_20_1_choices, null=True)
+    i_20_2_choices = [(u'produces', u'produces')]
+    item_i_20_2 = models.CharField(max_length=20, choices=i_20_2_choices, null=True)
+    i_20_3_choices = [(u'produces', u'produces')]
+    item_i_20_3 = models.CharField(max_length=20, choices=i_20_3_choices, null=True)
+    i_20_4_choices = [(u'produces', u'produces')]
+    item_i_20_4 = models.CharField(max_length=20, choices=i_20_4_choices, null=True)
+    i_20_5_choices = [(u'produces', u'produces')]
+    item_i_20_5 = models.CharField(max_length=20, choices=i_20_5_choices, null=True)
+    i_20_6_choices = [(u'produces', u'produces')]
+    item_i_20_6 = models.CharField(max_length=20, choices=i_20_6_choices, null=True)
+    i_20_7_choices = [(u'produces', u'produces')]
+    item_i_20_7 = models.CharField(max_length=20, choices=i_20_7_choices, null=True)
+    i_20_8_choices = [(u'produces', u'produces')]
+    item_i_20_8 = models.CharField(max_length=20, choices=i_20_8_choices, null=True)
+    i_20_9_choices = [(u'produces', u'produces')]
+    item_i_20_9 = models.CharField(max_length=20, choices=i_20_9_choices, null=True)
+    i_20_10_choices = [(u'produces', u'produces')]
+    item_i_20_10 = models.CharField(max_length=20, choices=i_20_10_choices, null=True)
+    i_20_11_choices = [(u'produces', u'produces')]
+    item_i_20_11 = models.CharField(max_length=20, choices=i_20_11_choices, null=True)
+    i_20_12_choices = [(u'produces', u'produces')]
+    item_i_20_12 = models.CharField(max_length=20, choices=i_20_12_choices, null=True)
+    i_20_13_choices = [(u'produces', u'produces')]
+    item_i_20_13 = models.CharField(max_length=20, choices=i_20_13_choices, null=True)
+    i_20_14_choices = [(u'produces', u'produces')]
+    item_i_20_14 = models.CharField(max_length=20, choices=i_20_14_choices, null=True)
+    i_20_15_choices = [(u'produces', u'produces')]
+    item_i_20_15 = models.CharField(max_length=20, choices=i_20_15_choices, null=True)
+    i_20_16_choices = [(u'produces', u'produces')]
+    item_i_20_16 = models.CharField(max_length=20, choices=i_20_16_choices, null=True)
+    i_20_17_choices = [(u'produces', u'produces')]
+    item_i_20_17 = models.CharField(max_length=20, choices=i_20_17_choices, null=True)
+    i_20_18_choices = [(u'produces', u'produces')]
+    item_i_20_18 = models.CharField(max_length=20, choices=i_20_18_choices, null=True)
+    i_20_19_choices = [(u'produces', u'produces')]
+    item_i_20_19 = models.CharField(max_length=20, choices=i_20_19_choices, null=True)
+    i_20_20_choices = [(u'produces', u'produces')]
+    item_i_20_20 = models.CharField(max_length=20, choices=i_20_20_choices, null=True)
+    i_20_21_choices = [(u'produces', u'produces')]
+    item_i_20_21 = models.CharField(max_length=20, choices=i_20_21_choices, null=True)
+    i_21_1_choices = [(u'produces', u'produces')]
+    item_i_21_1 = models.CharField(max_length=20, choices=i_21_1_choices, null=True)
+    i_21_2_choices = [(u'produces', u'produces')]
+    item_i_21_2 = models.CharField(max_length=20, choices=i_21_2_choices, null=True)
+    i_21_3_choices = [(u'produces', u'produces')]
+    item_i_21_3 = models.CharField(max_length=20, choices=i_21_3_choices, null=True)
+    i_21_4_choices = [(u'produces', u'produces')]
+    item_i_21_4 = models.CharField(max_length=20, choices=i_21_4_choices, null=True)
+    i_21_5_choices = [(u'produces', u'produces')]
+    item_i_21_5 = models.CharField(max_length=20, choices=i_21_5_choices, null=True)
+    i_21_6_choices = [(u'produces', u'produces')]
+    item_i_21_6 = models.CharField(max_length=20, choices=i_21_6_choices, null=True)
+    i_21_7_choices = [(u'produces', u'produces')]
+    item_i_21_7 = models.CharField(max_length=20, choices=i_21_7_choices, null=True)
+    i_21_8_choices = [(u'produces', u'produces')]
+    item_i_21_8 = models.CharField(max_length=20, choices=i_21_8_choices, null=True)
+    i_21_9_choices = [(u'produces', u'produces')]
+    item_i_21_9 = models.CharField(max_length=20, choices=i_21_9_choices, null=True)
+    i_21_10_choices = [(u'produces', u'produces')]
+    item_i_21_10 = models.CharField(max_length=20, choices=i_21_10_choices, null=True)
+    i_21_11_choices = [(u'produces', u'produces')]
+    item_i_21_11 = models.CharField(max_length=20, choices=i_21_11_choices, null=True)
+    i_21_12_choices = [(u'produces', u'produces')]
+    item_i_21_12 = models.CharField(max_length=20, choices=i_21_12_choices, null=True)
+    i_21_13_choices = [(u'produces', u'produces')]
+    item_i_21_13 = models.CharField(max_length=20, choices=i_21_13_choices, null=True)
+    i_21_14_choices = [(u'produces', u'produces')]
+    item_i_21_14 = models.CharField(max_length=20, choices=i_21_14_choices, null=True)
+    i_21_15_choices = [(u'produces', u'produces')]
+    item_i_21_15 = models.CharField(max_length=20, choices=i_21_15_choices, null=True)
+    i_21_16_choices = [(u'produces', u'produces')]
+    item_i_21_16 = models.CharField(max_length=20, choices=i_21_16_choices, null=True)
+    i_21_17_choices = [(u'produces', u'produces')]
+    item_i_21_17 = models.CharField(max_length=20, choices=i_21_17_choices, null=True)
+    i_21_18_choices = [(u'produces', u'produces')]
+    item_i_21_18 = models.CharField(max_length=20, choices=i_21_18_choices, null=True)
+    i_21_19_choices = [(u'produces', u'produces')]
+    item_i_21_19 = models.CharField(max_length=20, choices=i_21_19_choices, null=True)
+    i_21_20_choices = [(u'produces', u'produces')]
+    item_i_21_20 = models.CharField(max_length=20, choices=i_21_20_choices, null=True)
+    i_21_21_choices = [(u'produces', u'produces')]
+    item_i_21_21 = models.CharField(max_length=20, choices=i_21_21_choices, null=True)
+    i_22_1_choices = [(u'produces', u'produces')]
+    item_i_22_1 = models.CharField(max_length=20, choices=i_22_1_choices, null=True)
+    i_22_2_choices = [(u'produces', u'produces')]
+    item_i_22_2 = models.CharField(max_length=20, choices=i_22_2_choices, null=True)
+    i_22_3_choices = [(u'produces', u'produces')]
+    item_i_22_3 = models.CharField(max_length=20, choices=i_22_3_choices, null=True)
+    i_22_4_choices = [(u'produces', u'produces')]
+    item_i_22_4 = models.CharField(max_length=20, choices=i_22_4_choices, null=True)
+    i_22_5_choices = [(u'produces', u'produces')]
+    item_i_22_5 = models.CharField(max_length=20, choices=i_22_5_choices, null=True)
+    i_22_6_choices = [(u'produces', u'produces')]
+    item_i_22_6 = models.CharField(max_length=20, choices=i_22_6_choices, null=True)
+    i_22_7_choices = [(u'produces', u'produces')]
+    item_i_22_7 = models.CharField(max_length=20, choices=i_22_7_choices, null=True)
+    i_23_1_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_i_23_1 = models.CharField(max_length=20, choices=i_23_1_choices, null=True)
+    i_23_2_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_i_23_2 = models.CharField(max_length=20, choices=i_23_2_choices, null=True)
+    i_23_3_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_i_23_3 = models.CharField(max_length=20, choices=i_23_3_choices, null=True)
+    i_23_4_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_i_23_4 = models.CharField(max_length=20, choices=i_23_4_choices, null=True)
+    i_23_5_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_i_23_5 = models.CharField(max_length=20, choices=i_23_5_choices, null=True)
+    i_24_1_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_i_24_1 = models.CharField(max_length=20, choices=i_24_1_choices, null=True)
+    i_24_2_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_i_24_2 = models.CharField(max_length=20, choices=i_24_2_choices, null=True)
+    i_24_3_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_i_24_3 = models.CharField(max_length=20, choices=i_24_3_choices, null=True)
+    i_25_1_choices = [(u'produces', u'produces')]
+    item_i_25_1 = models.CharField(max_length=20, choices=i_25_1_choices, null=True)
+    i_25_2_choices = [(u'produces', u'produces')]
+    item_i_25_2 = models.CharField(max_length=20, choices=i_25_2_choices, null=True)
+    i_25_3_choices = [(u'produces', u'produces')]
+    item_i_25_3 = models.CharField(max_length=20, choices=i_25_3_choices, null=True)
+    i_25_4_choices = [(u'produces', u'produces')]
+    item_i_25_4 = models.CharField(max_length=20, choices=i_25_4_choices, null=True)
+    i_25_5_choices = [(u'produces', u'produces')]
+    item_i_25_5 = models.CharField(max_length=20, choices=i_25_5_choices, null=True)
+    i_25_6_choices = [(u'produces', u'produces')]
+    item_i_25_6 = models.CharField(max_length=20, choices=i_25_6_choices, null=True)
+    i_25_7_choices = [(u'produces', u'produces')]
+    item_i_25_7 = models.CharField(max_length=20, choices=i_25_7_choices, null=True)
+    i_25_8_choices = [(u'produces', u'produces')]
+    item_i_25_8 = models.CharField(max_length=20, choices=i_25_8_choices, null=True)
+    i_25_9_choices = [(u'produces', u'produces')]
+    item_i_25_9 = models.CharField(max_length=20, choices=i_25_9_choices, null=True)
+    i_25_10_choices = [(u'produces', u'produces')]
+    item_i_25_10 = models.CharField(max_length=20, choices=i_25_10_choices, null=True)
+    i_25_11_choices = [(u'produces', u'produces')]
+    item_i_25_11 = models.CharField(max_length=20, choices=i_25_11_choices, null=True)
+    i_25_12_choices = [(u'produces', u'produces')]
+    item_i_25_12 = models.CharField(max_length=20, choices=i_25_12_choices, null=True)
+    i_25_13_choices = [(u'produces', u'produces')]
+    item_i_25_13 = models.CharField(max_length=20, choices=i_25_13_choices, null=True)
+    i_25_14_choices = [(u'produces', u'produces')]
+    item_i_25_14 = models.CharField(max_length=20, choices=i_25_14_choices, null=True)
+    i_25_15_choices = [(u'produces', u'produces')]
+    item_i_25_15 = models.CharField(max_length=20, choices=i_25_15_choices, null=True)
+    i_25_16_choices = [(u'produces', u'produces')]
+    item_i_25_16 = models.CharField(max_length=20, choices=i_25_16_choices, null=True)
+    i_25_17_choices = [(u'produces', u'produces')]
+    item_i_25_17 = models.CharField(max_length=20, choices=i_25_17_choices, null=True)
+    i_25_18_choices = [(u'produces', u'produces')]
+    item_i_25_18 = models.CharField(max_length=20, choices=i_25_18_choices, null=True)
+    i_25_19_choices = [(u'produces', u'produces')]
+    item_i_25_19 = models.CharField(max_length=20, choices=i_25_19_choices, null=True)
+    i_25_20_choices = [(u'produces', u'produces')]
+    item_i_25_20 = models.CharField(max_length=20, choices=i_25_20_choices, null=True)
+    i_25_21_choices = [(u'produces', u'produces')]
+    item_i_25_21 = models.CharField(max_length=20, choices=i_25_21_choices, null=True)
+    i_25_22_choices = [(u'produces', u'produces')]
+    item_i_25_22 = models.CharField(max_length=20, choices=i_25_22_choices, null=True)
+    i_25_23_choices = [(u'produces', u'produces')]
+    item_i_25_23 = models.CharField(max_length=20, choices=i_25_23_choices, null=True)
+    i_25_24_choices = [(u'produces', u'produces')]
+    item_i_25_24 = models.CharField(max_length=20, choices=i_25_24_choices, null=True)
+    i_25_25_choices = [(u'produces', u'produces')]
+    item_i_25_25 = models.CharField(max_length=20, choices=i_25_25_choices, null=True)
+    i_25_26_choices = [(u'produces', u'produces')]
+    item_i_25_26 = models.CharField(max_length=20, choices=i_25_26_choices, null=True)
+    i_25_27_choices = [(u'produces', u'produces')]
+    item_i_25_27 = models.CharField(max_length=20, choices=i_25_27_choices, null=True)
+    i_25_28_choices = [(u'produces', u'produces')]
+    item_i_25_28 = models.CharField(max_length=20, choices=i_25_28_choices, null=True)
+    i_25_29_choices = [(u'produces', u'produces')]
+    item_i_25_29 = models.CharField(max_length=20, choices=i_25_29_choices, null=True)
+    i_26_1_choices = [(u'produces', u'produces')]
+    item_i_26_1 = models.CharField(max_length=20, choices=i_26_1_choices, null=True)
+    i_26_2_choices = [(u'produces', u'produces')]
+    item_i_26_2 = models.CharField(max_length=20, choices=i_26_2_choices, null=True)
+    i_26_3_choices = [(u'produces', u'produces')]
+    item_i_26_3 = models.CharField(max_length=20, choices=i_26_3_choices, null=True)
+    i_26_4_choices = [(u'produces', u'produces')]
+    item_i_26_4 = models.CharField(max_length=20, choices=i_26_4_choices, null=True)
+    i_26_5_choices = [(u'produces', u'produces')]
+    item_i_26_5 = models.CharField(max_length=20, choices=i_26_5_choices, null=True)
+    i_26_6_choices = [(u'produces', u'produces')]
+    item_i_26_6 = models.CharField(max_length=20, choices=i_26_6_choices, null=True)
+    i_26_7_choices = [(u'produces', u'produces')]
+    item_i_26_7 = models.CharField(max_length=20, choices=i_26_7_choices, null=True)
+    i_26_8_choices = [(u'produces', u'produces')]
+    item_i_26_8 = models.CharField(max_length=20, choices=i_26_8_choices, null=True)
+    i_26_9_choices = [(u'produces', u'produces')]
+    item_i_26_9 = models.CharField(max_length=20, choices=i_26_9_choices, null=True)
+    i_26_10_choices = [(u'produces', u'produces')]
+    item_i_26_10 = models.CharField(max_length=20, choices=i_26_10_choices, null=True)
+    i_26_11_choices = [(u'produces', u'produces')]
+    item_i_26_11 = models.CharField(max_length=20, choices=i_26_11_choices, null=True)
+    i_26_12_choices = [(u'produces', u'produces')]
+    item_i_26_12 = models.CharField(max_length=20, choices=i_26_12_choices, null=True)
+    i_26_13_choices = [(u'produces', u'produces')]
+    item_i_26_13 = models.CharField(max_length=20, choices=i_26_13_choices, null=True)
+    i_26_14_choices = [(u'produces', u'produces')]
+    item_i_26_14 = models.CharField(max_length=20, choices=i_26_14_choices, null=True)
+    i_26_15_choices = [(u'produces', u'produces')]
+    item_i_26_15 = models.CharField(max_length=20, choices=i_26_15_choices, null=True)
+    i_26_16_choices = [(u'produces', u'produces')]
+    item_i_26_16 = models.CharField(max_length=20, choices=i_26_16_choices, null=True)
+    i_26_17_choices = [(u'produces', u'produces')]
+    item_i_26_17 = models.CharField(max_length=20, choices=i_26_17_choices, null=True)
+    i_26_18_choices = [(u'produces', u'produces')]
+    item_i_26_18 = models.CharField(max_length=20, choices=i_26_18_choices, null=True)
+    i_26_19_choices = [(u'produces', u'produces')]
+    item_i_26_19 = models.CharField(max_length=20, choices=i_26_19_choices, null=True)
+    i_26_20_choices = [(u'produces', u'produces')]
+    item_i_26_20 = models.CharField(max_length=20, choices=i_26_20_choices, null=True)
+    i_26_21_choices = [(u'produces', u'produces')]
+    item_i_26_21 = models.CharField(max_length=20, choices=i_26_21_choices, null=True)
+    i_26_22_choices = [(u'produces', u'produces')]
+    item_i_26_22 = models.CharField(max_length=20, choices=i_26_22_choices, null=True)
+    i_26_23_choices = [(u'produces', u'produces')]
+    item_i_26_23 = models.CharField(max_length=20, choices=i_26_23_choices, null=True)
+    i_26_24_choices = [(u'produces', u'produces')]
+    item_i_26_24 = models.CharField(max_length=20, choices=i_26_24_choices, null=True)
+    i_26_25_choices = [(u'produces', u'produces')]
+    item_i_26_25 = models.CharField(max_length=20, choices=i_26_25_choices, null=True)
+    i_26_26_choices = [(u'produces', u'produces')]
+    item_i_26_26 = models.CharField(max_length=20, choices=i_26_26_choices, null=True)
+    i_26_27_choices = [(u'produces', u'produces')]
+    item_i_26_27 = models.CharField(max_length=20, choices=i_26_27_choices, null=True)
+    i_26_28_choices = [(u'produces', u'produces')]
+    item_i_26_28 = models.CharField(max_length=20, choices=i_26_28_choices, null=True)
+    i_26_29_choices = [(u'produces', u'produces')]
+    item_i_26_29 = models.CharField(max_length=20, choices=i_26_29_choices, null=True)
+    i_26_30_choices = [(u'produces', u'produces')]
+    item_i_26_30 = models.CharField(max_length=20, choices=i_26_30_choices, null=True)
+    i_26_31_choices = [(u'produces', u'produces')]
+    item_i_26_31 = models.CharField(max_length=20, choices=i_26_31_choices, null=True)
+    i_26_32_choices = [(u'produces', u'produces')]
+    item_i_26_32 = models.CharField(max_length=20, choices=i_26_32_choices, null=True)
+    i_26_33_choices = [(u'produces', u'produces')]
+    item_i_26_33 = models.CharField(max_length=20, choices=i_26_33_choices, null=True)
+    i_26_34_choices = [(u'produces', u'produces')]
+    item_i_26_34 = models.CharField(max_length=20, choices=i_26_34_choices, null=True)
+    i_26_35_choices = [(u'produces', u'produces')]
+    item_i_26_35 = models.CharField(max_length=20, choices=i_26_35_choices, null=True)
+    i_26_36_choices = [(u'produces', u'produces')]
+    item_i_26_36 = models.CharField(max_length=20, choices=i_26_36_choices, null=True)
+    i_26_37_choices = [(u'produces', u'produces')]
+    item_i_26_37 = models.CharField(max_length=20, choices=i_26_37_choices, null=True)
+    i_26_38_choices = [(u'produces', u'produces')]
+    item_i_26_38 = models.CharField(max_length=20, choices=i_26_38_choices, null=True)
+    i_26_39_choices = [(u'produces', u'produces')]
+    item_i_26_39 = models.CharField(max_length=20, choices=i_26_39_choices, null=True)
+    i_26_40_choices = [(u'produces', u'produces')]
+    item_i_26_40 = models.CharField(max_length=20, choices=i_26_40_choices, null=True)
+    i_26_41_choices = [(u'produces', u'produces')]
+    item_i_26_41 = models.CharField(max_length=20, choices=i_26_41_choices, null=True)
+    i_26_42_choices = [(u'produces', u'produces')]
+    item_i_26_42 = models.CharField(max_length=20, choices=i_26_42_choices, null=True)
+    i_26_43_choices = [(u'produces', u'produces')]
+    item_i_26_43 = models.CharField(max_length=20, choices=i_26_43_choices, null=True)
+    i_26_44_choices = [(u'produces', u'produces')]
+    item_i_26_44 = models.CharField(max_length=20, choices=i_26_44_choices, null=True)
+    i_26_45_choices = [(u'produces', u'produces')]
+    item_i_26_45 = models.CharField(max_length=20, choices=i_26_45_choices, null=True)
+    i_26_46_choices = [(u'produces', u'produces')]
+    item_i_26_46 = models.CharField(max_length=20, choices=i_26_46_choices, null=True)
+    i_26_47_choices = [(u'produces', u'produces')]
+    item_i_26_47 = models.CharField(max_length=20, choices=i_26_47_choices, null=True)
+    i_26_48_choices = [(u'produces', u'produces')]
+    item_i_26_48 = models.CharField(max_length=20, choices=i_26_48_choices, null=True)
+    i_26_49_choices = [(u'produces', u'produces')]
+    item_i_26_49 = models.CharField(max_length=20, choices=i_26_49_choices, null=True)
+    i_26_50_choices = [(u'produces', u'produces')]
+    item_i_26_50 = models.CharField(max_length=20, choices=i_26_50_choices, null=True)
+    i_26_51_choices = [(u'produces', u'produces')]
+    item_i_26_51 = models.CharField(max_length=20, choices=i_26_51_choices, null=True)
+    i_26_52_choices = [(u'produces', u'produces')]
+    item_i_26_52 = models.CharField(max_length=20, choices=i_26_52_choices, null=True)
+    i_26_53_choices = [(u'produces', u'produces')]
+    item_i_26_53 = models.CharField(max_length=20, choices=i_26_53_choices, null=True)
+    i_26_54_choices = [(u'produces', u'produces')]
+    item_i_26_54 = models.CharField(max_length=20, choices=i_26_54_choices, null=True)
+    i_26_55_choices = [(u'produces', u'produces')]
+    item_i_26_55 = models.CharField(max_length=20, choices=i_26_55_choices, null=True)
+    i_26_56_choices = [(u'produces', u'produces')]
+    item_i_26_56 = models.CharField(max_length=20, choices=i_26_56_choices, null=True)
+    i_26_57_choices = [(u'produces', u'produces')]
+    item_i_26_57 = models.CharField(max_length=20, choices=i_26_57_choices, null=True)
+    i_26_58_choices = [(u'produces', u'produces')]
+    item_i_26_58 = models.CharField(max_length=20, choices=i_26_58_choices, null=True)
+    i_26_59_choices = [(u'produces', u'produces')]
+    item_i_26_59 = models.CharField(max_length=20, choices=i_26_59_choices, null=True)
+    i_26_60_choices = [(u'produces', u'produces')]
+    item_i_26_60 = models.CharField(max_length=20, choices=i_26_60_choices, null=True)
+    i_26_61_choices = [(u'produces', u'produces')]
+    item_i_26_61 = models.CharField(max_length=20, choices=i_26_61_choices, null=True)
+    i_26_62_choices = [(u'produces', u'produces')]
+    item_i_26_62 = models.CharField(max_length=20, choices=i_26_62_choices, null=True)
+    i_27_1_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_i_27_1 = models.CharField(max_length=20, choices=i_27_1_choices, null=True)
+    i_28_1_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_28_1 = models.CharField(max_length=20, choices=i_28_1_choices, null=True)
+    i_28_2_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_28_2 = models.CharField(max_length=20, choices=i_28_2_choices, null=True)
+    i_28_3_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_28_3 = models.CharField(max_length=20, choices=i_28_3_choices, null=True)
+    i_28_4_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_28_4 = models.CharField(max_length=20, choices=i_28_4_choices, null=True)
+    i_28_5_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_28_5 = models.CharField(max_length=20, choices=i_28_5_choices, null=True)
+    i_28_6_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_28_6 = models.CharField(max_length=20, choices=i_28_6_choices, null=True)
+    i_28_7_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_28_7 = models.CharField(max_length=20, choices=i_28_7_choices, null=True)
+    i_28_8_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_28_8 = models.CharField(max_length=20, choices=i_28_8_choices, null=True)
+    i_28_9_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_28_9 = models.CharField(max_length=20, choices=i_28_9_choices, null=True)
+    i_28_10_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_28_10 = models.CharField(max_length=20, choices=i_28_10_choices, null=True)
+    i_28_11_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_28_11 = models.CharField(max_length=20, choices=i_28_11_choices, null=True)
+    i_28_12_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_28_12 = models.CharField(max_length=20, choices=i_28_12_choices, null=True)
+    i_28_13_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_28_13 = models.CharField(max_length=20, choices=i_28_13_choices, null=True)
+    i_28_14_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_28_14 = models.CharField(max_length=20, choices=i_28_14_choices, null=True)
+    i_28_15_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_28_15 = models.CharField(max_length=20, choices=i_28_15_choices, null=True)
+    i_28_16_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_28_16 = models.CharField(max_length=20, choices=i_28_16_choices, null=True)
+    i_28_17_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_28_17 = models.CharField(max_length=20, choices=i_28_17_choices, null=True)
+    i_28_18_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_28_18 = models.CharField(max_length=20, choices=i_28_18_choices, null=True)
+    i_28_19_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_28_19 = models.CharField(max_length=20, choices=i_28_19_choices, null=True)
+    i_28_20_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_28_20 = models.CharField(max_length=20, choices=i_28_20_choices, null=True)
+    i_28_21_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_28_21 = models.CharField(max_length=20, choices=i_28_21_choices, null=True)
+    i_28_22_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_28_22 = models.CharField(max_length=20, choices=i_28_22_choices, null=True)
+    i_28_23_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_28_23 = models.CharField(max_length=20, choices=i_28_23_choices, null=True)
+    i_28_24_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_28_24 = models.CharField(max_length=20, choices=i_28_24_choices, null=True)
+    i_28_25_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_28_25 = models.CharField(max_length=20, choices=i_28_25_choices, null=True)
+    i_28_26_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_28_26 = models.CharField(max_length=20, choices=i_28_26_choices, null=True)
+    i_28_27_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_28_27 = models.CharField(max_length=20, choices=i_28_27_choices, null=True)
+    i_28_28_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_28_28 = models.CharField(max_length=20, choices=i_28_28_choices, null=True)
+    i_28_29_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_28_29 = models.CharField(max_length=20, choices=i_28_29_choices, null=True)
+    i_28_30_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_28_30 = models.CharField(max_length=20, choices=i_28_30_choices, null=True)
+    i_28_31_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_28_31 = models.CharField(max_length=20, choices=i_28_31_choices, null=True)
+    i_28_32_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_28_32 = models.CharField(max_length=20, choices=i_28_32_choices, null=True)
+    i_28_33_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_i_28_33 = models.CharField(max_length=20, choices=i_28_33_choices, null=True)
