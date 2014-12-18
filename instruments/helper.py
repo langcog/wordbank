@@ -18,9 +18,9 @@ def aggregate(admin_query=None):
                #'date_of_birth': administration.child.date_of_birth if administration.child.date_of_birth != None else datetime.datetime.now(),
                'mom_ed': administration.child.mom_ed if administration.child.mom_ed else -1,
                'source': administration.source.name if administration.source else 'Unknown',
-               'citation': administration.source.citation if administration.source else 'Unknown',
+#               'citation': administration.source.citation if administration.source else 'Unknown',
                'ethnicity': administration.child.ethnicity.ethnicity if administration.child.ethnicity else 'Unknown'}
-        instrument_type = administration.instrument.name
+        instrument_type = administration.instrument.form
         instrument_language = administration.instrument.language
         for subclass in BaseTable.__subclasses__():
             if '_'.join([instrument_language, instrument_type]) == subclass.__name__:

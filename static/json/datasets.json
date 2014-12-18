@@ -1,0 +1,154 @@
+[
+    {
+        "name": "Marchman",
+        "dataset": "Norming",
+        "instrument_language": "English",
+        "instrument_form": "WS",
+        "file": "raw_data/English_WS/EnglishWS_Marchman_Norming.xlsx",
+        "splitcol": false
+    },
+    {
+        "name": "Marchman",
+        "dataset": "Wisconsin",
+        "instrument_language": "English",
+        "instrument_form": "WS",
+        "file": "raw_data/English_WS/EnglishWS_Marchman_Wisconsin.xlsx",
+        "splitcol": false
+    },
+    {
+        "name": "Marchman",
+        "dataset": "Dallas",
+        "instrument_language": "English",
+        "instrument_form": "WS",
+        "file": "raw_data/English_WS/EnglishWS_Marchman_Dallas.xlsx",
+        "splitcol": false
+    },
+    {
+        "name": "Smith",
+        "dataset": "electronic",
+        "instrument_language": "English",
+        "instrument_form": "WS",
+        "file": "raw_data/English_WS/EnglishWS_Smith_electronic.xlsx",
+        "splitcol": false
+    },
+    {
+        "name": "Smith",
+        "dataset": "paper",
+        "instrument_language": "English",
+        "instrument_form": "WS",
+        "file": "raw_data/English_WS/EnglishWS_Smith_paper.xlsx",
+        "splitcol": false
+    },
+    {
+        "name": "Byers",
+        "dataset": "",
+        "instrument_language": "English",
+        "instrument_form": "WS",
+        "file": "raw_data/English_WS/EnglishWS_Byers.xlsx",
+        "splitcol": false
+    },
+    {
+        "name": "Thal",
+        "dataset": "16",
+        "instrument_language": "English",
+        "instrument_form": "WS",
+        "file": "raw_data/English_WS/EnglishWS_Thal_16.xlsx",
+        "splitcol": false
+    },
+    {
+        "name": "Thal",
+        "dataset": "28",
+        "instrument_language": "English",
+        "instrument_form": "WS",
+        "file": "raw_data/English_WS/EnglishWS_Thal_28.xlsx",
+        "splitcol": false
+    },
+    {
+        "name": "Marchman",
+        "dataset": "Norming",
+        "instrument_language": "English",
+        "instrument_form": "WG",
+        "file": "raw_data/English_WG/EnglishWG_Marchman_Norming.xlsx",
+        "splitcol": true
+    },
+    {
+        "name": "Byers",
+        "dataset": "",
+        "instrument_language": "English",
+        "instrument_form": "WG",
+        "file": "raw_data/English_WG/EnglishWG_Byers.xlsx",
+        "splitcol": false
+    },
+    {
+        "name": "Thal",
+        "dataset": "13",
+        "instrument_language": "English",
+        "instrument_form": "WG",
+        "file": "raw_data/English_WG/EnglishWG_Thal_13.xlsx",
+        "splitcol": true
+    },
+    {
+        "name": "Thal",
+        "dataset": "16",
+        "instrument_language": "English",
+        "instrument_form": "WG",
+        "file": "raw_data/English_WG/EnglishWG_Thal_16.xlsx",
+        "splitcol": true
+    },
+    {
+        "name": "Marchman",
+        "dataset": "Norming",
+        "instrument_language": "Spanish",
+        "instrument_form": "WS",
+        "file": "raw_data/Spanish_WS/SpanishWS_Marchman_Norming.xlsx",
+        "splitcol": false
+    },
+    {
+        "name": "Marchman",
+        "dataset": "Norming",
+        "instrument_language": "Spanish",
+        "instrument_form": "WG",
+        "file": "raw_data/Spanish_WG/SpanishWG_Marchman_Norming.xlsx",
+        "splitcol": true
+    },
+    {
+        "name": "Bleses",
+        "dataset": "",
+        "instrument_language": "Danish",
+        "instrument_form": "WS",
+        "file": "raw_data/Danish_WS/DanishWS_Bleses.xlsx",
+        "splitcol": false
+    },
+    {
+        "name": "Kristoffersen",
+        "dataset": "",
+        "instrument_language": "Norwegian",
+        "instrument_form": "WS",
+        "file": "raw_data/Norwegian_WS/NorwegianWS_Kristoffersen.xlsx",
+        "splitcol": false
+    },
+    {
+        "name": "Kristoffersen",
+        "dataset": "longitudinal",
+        "instrument_language": "Norwegian",
+        "instrument_form": "WS",
+        "file": "raw_data/Norwegian_WS/NorwegianWS_Kristoffersen_longitudinal.xlsx",
+        "splitcol": false
+    },
+    {
+        "name": "Kristoffersen",
+        "dataset": "",
+        "instrument_language": "Norwegian",
+        "instrument_form": "WG",
+        "file": "raw_data/Norwegian_WG/NorwegianWG_Kristoffersen.xlsx",
+        "splitcol": false
+    },
+    {
+        "name": "Kristoffersen",
+        "dataset": "longitudinal",
+        "instrument_language": "Norwegian",
+        "instrument_form": "WG",
+        "file": "raw_data/Norwegian_WG/NorwegianWG_Kristoffersen_longitudinal.xlsx",
+        "splitcol": false
+    }
+]
