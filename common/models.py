@@ -11,8 +11,8 @@ class WordInfo(models.Model):
 
 
 class InstrumentsMap(models.Model):
-    name = models.CharField(max_length=20)
     language = models.CharField(max_length=20)
+    form = models.CharField(max_length=20)
 
 
 class WordMapping(models.Model):
@@ -41,8 +41,8 @@ class Child(models.Model):
 class Source(models.Model):
     name = models.CharField(max_length=20)
     dataset = models.CharField(max_length=20, null=True, blank=True)
-    instrument = models.CharField(max_length=20, null=True, blank=True)
-    citation = models.CharField(max_length=50)
+    instrument_language = models.CharField(max_length=20)
+    instrument_form = models.CharField(max_length=20)
 
 
 class Administration(models.Model):

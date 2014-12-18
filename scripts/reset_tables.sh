@@ -10,13 +10,8 @@ echo "Populating Word Mapping..."
 echo "Populating Source..."
 ./manage.py populate_source
 
-while read dataset; do
-    s=${dataset}
-    s=${s##*/}
-    s=${s%.*}
-    echo "Importing $s...";
-    ./manage.py import_data $dataset
-done < raw_data/datasets.txt
+echo "Importing data..."
+./manage.py import_data
 
 echo "Aggregating Stats..."
 ./manage.py aggregate_stats

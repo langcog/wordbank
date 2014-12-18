@@ -1,0 +1,37 @@
+[
+    {
+        "language": "English",
+        "form": "WS",
+        "file": "raw_data/English_WS/[English_WS].xlsx"
+    },
+    {
+        "language": "English",
+        "form": "WG",
+        "file": "raw_data/English_WG/[English_WG].xlsx"
+    },
+    {
+        "language": "Spanish",
+        "form": "WS",
+        "file": "raw_data/Spanish_WS/[Spanish_WS].xlsx"
+    },
+    {
+        "language": "Spanish",
+        "form": "WG",
+        "file": "raw_data/Spanish_WG/[Spanish_WG].xlsx"
+    },
+    {
+        "language": "Norwegian",
+        "form": "WS",
+        "file": "raw_data/Norwegian_WS/[Norwegian_WS].xlsx"
+    },
+    {
+        "language": "Norwegian",
+        "form": "WG",
+        "file": "raw_data/Norwegian_WG/[Norwegian_WG].xlsx"
+    },
+    {
+        "language": "Danish",
+        "form": "WS",
+        "file": "raw_data/Danish_WS/[Danish_WS].xlsx"
+    }
+]

@@ -1,21 +1,21 @@
+import xlrd
+import json
 from django.core.management.base import NoArgsCommand
 from common.models import *
-import xlrd
 
 
 class Command(NoArgsCommand):
 
     def handle(self, *args, **options):
 
-        instruments = open('raw_data/instruments.txt', 'r').read().split('\n')
-        instruments = filter(lambda i: i != '', instruments)
+        instruments = json.load(open('static/json/instruments.json'))
 
         for instrument in instruments:
 
-            instrument_language, instrument_name = instrument.split('_')
-            instruments_map = InstrumentsMap.objects.get(name=instrument_name, language=instrument_language)
+            instrument_language, instrument_form = instrument['language'], instrument['form']
+            instruments_map = InstrumentsMap.objects.get(form=instrument_form, language=instrument_language)
 
-            book = xlrd.open_workbook('raw_data/%s/[%s].xlsx' % (instrument, instrument))
+            book = xlrd.open_workbook(instrument['file'])
 
             sheet = book.sheet_by_index(0)
             col_names = list(sheet.row_values(0))

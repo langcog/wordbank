@@ -1,3 +1,4 @@
+import json
 from django.core.management.base import NoArgsCommand
 from common.models import *
 
@@ -5,12 +6,11 @@ class Command(NoArgsCommand):
 
     def handle(self, *args, **options):
 
-        instruments = open('raw_data/instruments.txt', 'r').read().split('\n')
-        instruments = filter(lambda i: i != '', instruments)
+        instruments = json.load(open('static/json/instruments.json'))
 
         for instrument in instruments:
 
-            instrument_language, instrument_name = instrument.split('_')
+            instrument_language, instrument_form = instrument['language'], instrument['form']
 
-            if len(InstrumentsMap.objects.filter(name=instrument_name, language=instrument_language)) <= 0:
-                InstrumentsMap.objects.create(name=instrument_name, language=instrument_language)
+            if len(InstrumentsMap.objects.filter(language=instrument_language, form=instrument_form)) <= 0:
+                InstrumentsMap.objects.create(language=instrument_language, form=instrument_form)
