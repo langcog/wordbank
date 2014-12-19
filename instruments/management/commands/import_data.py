@@ -18,5 +18,5 @@ class Command(NoArgsCommand):
             instrument_language = dataset['instrument_language']
             instrument_form = dataset['instrument_form']
 
-            print "Importing dataset", instrument_language, instrument_form, dataset_name, dataset_dataset
+            print "    Importing dataset", instrument_language, instrument_form, dataset_name, dataset_dataset
             import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_language, instrument_form, splitcol)

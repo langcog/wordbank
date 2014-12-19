@@ -16,11 +16,13 @@ class InstrumentsMap(models.Model):
 
 
 class WordMapping(models.Model):
-    item = models.CharField(max_length=20)
     instrument = models.ForeignKey(InstrumentsMap)
-    category = models.CharField(max_length=20, null=True, blank=True)
-    definition = models.CharField(max_length=100)
-    word_info = models.ForeignKey(WordInfo)
+    item = models.CharField(max_length=20)
+    type = models.CharField(max_length=30)
+    category = models.CharField(max_length=30)
+    word_info = models.ForeignKey(WordInfo, null=True, blank=True)
+    definition = models.CharField(max_length=100, null=True, blank=True)
+    lexical_category = models.CharField(max_length=30, null=True, blank=True)
 
 
 class Child(models.Model):
