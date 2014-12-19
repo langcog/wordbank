@@ -1,7 +1,6 @@
-import os
 from common.models import *
 import instruments.models
-from import_data_helper import ImportHelper
+from import_dataset_helper import ImportHelper
 
 
 def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_language, instrument_form, splitcol):
