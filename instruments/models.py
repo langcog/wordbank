@@ -3947,6 +3947,130 @@ class Spanish_WS(BaseTable):
     item_que2 = models.CharField(max_length=20, choices=que2_choices, null=True)
     y_choices = [(u'produces', u'produces')]
     item_y = models.CharField(max_length=20, choices=y_choices, null=True)
+    cmplx01_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_cmplx01 = models.CharField(max_length=20, choices=cmplx01_choices, null=True)
+    cmplx02_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_cmplx02 = models.CharField(max_length=20, choices=cmplx02_choices, null=True)
+    cmplx03_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_cmplx03 = models.CharField(max_length=20, choices=cmplx03_choices, null=True)
+    cmplx04_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_cmplx04 = models.CharField(max_length=20, choices=cmplx04_choices, null=True)
+    cmplx05_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_cmplx05 = models.CharField(max_length=20, choices=cmplx05_choices, null=True)
+    cmplx06_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_cmplx06 = models.CharField(max_length=20, choices=cmplx06_choices, null=True)
+    cmplx07_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_cmplx07 = models.CharField(max_length=20, choices=cmplx07_choices, null=True)
+    cmplx08_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_cmplx08 = models.CharField(max_length=20, choices=cmplx08_choices, null=True)
+    cmplx09_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_cmplx09 = models.CharField(max_length=20, choices=cmplx09_choices, null=True)
+    cmplx10_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_cmplx10 = models.CharField(max_length=20, choices=cmplx10_choices, null=True)
+    cmplx11_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_cmplx11 = models.CharField(max_length=20, choices=cmplx11_choices, null=True)
+    cmplx12_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_cmplx12 = models.CharField(max_length=20, choices=cmplx12_choices, null=True)
+    cmplx13_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_cmplx13 = models.CharField(max_length=20, choices=cmplx13_choices, null=True)
+    cmplx14_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_cmplx14 = models.CharField(max_length=20, choices=cmplx14_choices, null=True)
+    cmplx15_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_cmplx15 = models.CharField(max_length=20, choices=cmplx15_choices, null=True)
+    cmplx16_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_cmplx16 = models.CharField(max_length=20, choices=cmplx16_choices, null=True)
+    cmplx17_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_cmplx17 = models.CharField(max_length=20, choices=cmplx17_choices, null=True)
+    cmplx18_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_cmplx18 = models.CharField(max_length=20, choices=cmplx18_choices, null=True)
+    cmplx19_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_cmplx19 = models.CharField(max_length=20, choices=cmplx19_choices, null=True)
+    cmplx20_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_cmplx20 = models.CharField(max_length=20, choices=cmplx20_choices, null=True)
+    cmplx21_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_cmplx21 = models.CharField(max_length=20, choices=cmplx21_choices, null=True)
+    cmplx22_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_cmplx22 = models.CharField(max_length=20, choices=cmplx22_choices, null=True)
+    cmplx23_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_cmplx23 = models.CharField(max_length=20, choices=cmplx23_choices, null=True)
+    cmplx24_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_cmplx24 = models.CharField(max_length=20, choices=cmplx24_choices, null=True)
+    cmplx25_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_cmplx25 = models.CharField(max_length=20, choices=cmplx25_choices, null=True)
+    cmplx26_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_cmplx26 = models.CharField(max_length=20, choices=cmplx26_choices, null=True)
+    cmplx27_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_cmplx27 = models.CharField(max_length=20, choices=cmplx27_choices, null=True)
+    cmplx28_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_cmplx28 = models.CharField(max_length=20, choices=cmplx28_choices, null=True)
+    cmplx29_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_cmplx29 = models.CharField(max_length=20, choices=cmplx29_choices, null=True)
+    cmplx30_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_cmplx30 = models.CharField(max_length=20, choices=cmplx30_choices, null=True)
+    cmplx31_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_cmplx31 = models.CharField(max_length=20, choices=cmplx31_choices, null=True)
+    cmplx32_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_cmplx32 = models.CharField(max_length=20, choices=cmplx32_choices, null=True)
+    cmplx33_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_cmplx33 = models.CharField(max_length=20, choices=cmplx33_choices, null=True)
+    cmplx34_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_cmplx34 = models.CharField(max_length=20, choices=cmplx34_choices, null=True)
+    cmplx35_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_cmplx35 = models.CharField(max_length=20, choices=cmplx35_choices, null=True)
+    cmplx36_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_cmplx36 = models.CharField(max_length=20, choices=cmplx36_choices, null=True)
+    cmplx37_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
+    item_cmplx37 = models.CharField(max_length=20, choices=cmplx37_choices, null=True)
+    pracaba_choices = [(u'produces', u'produces')]
+    item_pracaba = models.CharField(max_length=20, choices=pracaba_choices, null=True)
+    pracabas_choices = [(u'produces', u'produces')]
+    item_pracabas = models.CharField(max_length=20, choices=pracabas_choices, null=True)
+    pracabms_choices = [(u'produces', u'produces')]
+    item_pracabms = models.CharField(max_length=20, choices=pracabms_choices, null=True)
+    pracabo_choices = [(u'produces', u'produces')]
+    item_pracabo = models.CharField(max_length=20, choices=pracabo_choices, null=True)
+    prcome_choices = [(u'produces', u'produces')]
+    item_prcome = models.CharField(max_length=20, choices=prcome_choices, null=True)
+    prcomems_choices = [(u'produces', u'produces')]
+    item_prcomems = models.CharField(max_length=20, choices=prcomems_choices, null=True)
+    prcomes_choices = [(u'produces', u'produces')]
+    item_prcomes = models.CharField(max_length=20, choices=prcomes_choices, null=True)
+    prcomo_choices = [(u'produces', u'produces')]
+    item_prcomo = models.CharField(max_length=20, choices=prcomo_choices, null=True)
+    prsube_choices = [(u'produces', u'produces')]
+    item_prsube = models.CharField(max_length=20, choices=prsube_choices, null=True)
+    prsubes_choices = [(u'produces', u'produces')]
+    item_prsubes = models.CharField(max_length=20, choices=prsubes_choices, null=True)
+    prsubims_choices = [(u'produces', u'produces')]
+    item_prsubims = models.CharField(max_length=20, choices=prsubims_choices, null=True)
+    prsubo_choices = [(u'produces', u'produces')]
+    item_prsubo = models.CharField(max_length=20, choices=prsubo_choices, null=True)
+    paacabe_choices = [(u'produces', u'produces')]
+    item_paacabe = models.CharField(max_length=20, choices=paacabe_choices, null=True)
+    paacabo_choices = [(u'produces', u'produces')]
+    item_paacabo = models.CharField(max_length=20, choices=paacabo_choices, null=True)
+    pacomi_choices = [(u'produces', u'produces')]
+    item_pacomi = models.CharField(max_length=20, choices=pacomi_choices, null=True)
+    pacomio_choices = [(u'produces', u'produces')]
+    item_pacomio = models.CharField(max_length=20, choices=pacomio_choices, null=True)
+    pasubi_choices = [(u'produces', u'produces')]
+    item_pasubi = models.CharField(max_length=20, choices=pasubi_choices, null=True)
+    pasubio_choices = [(u'produces', u'produces')]
+    item_pasubio = models.CharField(max_length=20, choices=pasubio_choices, null=True)
+    iacaba_choices = [(u'produces', u'produces')]
+    item_iacaba = models.CharField(max_length=20, choices=iacaba_choices, null=True)
+    iacabate_choices = [(u'produces', u'produces')]
+    item_iacabate = models.CharField(max_length=20, choices=iacabate_choices, null=True)
+    icome_choices = [(u'produces', u'produces')]
+    item_icome = models.CharField(max_length=20, choices=icome_choices, null=True)
+    icomete_choices = [(u'produces', u'produces')]
+    item_icomete = models.CharField(max_length=20, choices=icomete_choices, null=True)
+    isube_choices = [(u'produces', u'produces')]
+    item_isube = models.CharField(max_length=20, choices=isube_choices, null=True)
+    isubete_choices = [(u'produces', u'produces')]
+    item_isubete = models.CharField(max_length=20, choices=isubete_choices, null=True)
+    scombine_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_scombine = models.CharField(max_length=20, choices=scombine_choices, null=True)
 
 
 class Spanish_WG(BaseTable):

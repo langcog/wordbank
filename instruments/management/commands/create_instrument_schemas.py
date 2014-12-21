@@ -22,8 +22,8 @@ class Command(NoArgsCommand):
             nrows = sheet.nrows
             col_names = list(sheet.row_values(0))
 
-            f.write('\n\nclass %s(BaseTable):\n' % '_'.join([instrument['instrument_language'],
-                                                             instrument['instrument_form']]))
+            f.write('\n\nclass %s(BaseTable):\n' % '_'.join([instrument['language'],
+                                                             instrument['form']]))
 
             if nrows <= 1:
                 f.write('    pass\n')
