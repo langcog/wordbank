@@ -21,7 +21,7 @@ class WordMapping(models.Model):
     type = models.CharField(max_length=30)
     category = models.CharField(max_length=30)
     word_info = models.ForeignKey(WordInfo, null=True, blank=True)
-    definition = models.CharField(max_length=100, null=True, blank=True)
+    definition = models.CharField(max_length=200, null=True, blank=True)
     lexical_category = models.CharField(max_length=30, null=True, blank=True)
 
 
