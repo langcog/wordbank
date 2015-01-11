@@ -34,11 +34,11 @@ class ImportHelper:
         if value != 'Null' and value != '' and value != '#NULL!' and value != ' ':
             if field_type in ('study_id',):
                 return value
-            elif field_type in ('birth_order', 'data_age', 'mom_ed'):
+            elif field_type in ('birth_order', 'data_age'):
                 return int(value)
             elif field_type in ('date_of_birth, date_of_test'):
                 return self.format_date(value, self.datemode)
-            elif field_type in ('ethnicity', 'sex') or group == 'item':
+            elif field_type in ('ethnicity', 'sex', 'mom_ed') or group == 'item':
                 if isinstance(value, float):
                     value = int(value)
                 value = str(value).lower()
