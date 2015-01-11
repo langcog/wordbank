@@ -19,7 +19,7 @@ def aggregate(admin_query=None):
                'mom_ed': administration.child.mom_ed if administration.child.mom_ed else -1,
                'source': administration.source.name if administration.source else 'Unknown',
 #               'citation': administration.source.citation if administration.source else 'Unknown',
-               'ethnicity': administration.child.ethnicity.ethnicity if administration.child.ethnicity else 'Unknown'}
+               'ethnicity': administration.child.ethnicity if administration.child.ethnicity else 'Unknown'}
         instrument_type = administration.instrument.form
         instrument_language = administration.instrument.language
         for subclass in BaseTable.__subclasses__():
