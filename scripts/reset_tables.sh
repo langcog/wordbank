@@ -11,7 +11,7 @@ echo "Populating Source..."
 ./manage.py populate_source
 
 echo "Importing data..."
-./manage.py import_data
+./manage.py import_all_datasets
 
 echo "Aggregating Stats..."
 ./manage.py aggregate_stats

@@ -23,8 +23,9 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
             child.sex = child_data['sex']
             child.birth_order = child_data['birth_order']
             child.mom_ed = child_data['mom_ed']
-            if Ethnicity.objects.filter(id=child_data['ethnic_num']).exists():
-                child.ethnicity = Ethnicity.objects.get(pk=child_data['ethnic_num'])
+#            if Ethnicity.objects.filter(id=child_data['ethnic_num']).exists():
+#                child.ethnicity = Ethnicity.objects.get(pk=child_data['ethnic_num'])
+            child.ethnicity = child_data['ethnicity']
 
             children[i] = child
             child.save()
