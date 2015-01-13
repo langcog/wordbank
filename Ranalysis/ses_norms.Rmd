@@ -1,12 +1,11 @@
----
-title: "By-SES Norms for Wordbank"
-author: "Dan Yurovsky"
-date: "January 11, 2014"
-output: html_document
----
-`r library(knitr)`
-`r opts_chunk$set(message=FALSE, warning=FALSE)`
+% By-SES Norms for Wordbank
+% Dan Yurovsky
+% `r as.character(format(Sys.Date(), format="%B %d, %Y"))`
 
+```{r setup, include=FALSE}
+library(knitr)
+opts_chunk$set(message=FALSE, warning=FALSE, cache=TRUE)
+```
 Load required libraries
 ```{r}
 rm(list=ls())
@@ -38,7 +37,7 @@ child.table <- tbl(wordbank,"common_child")
 wordmapping.table <- tbl(wordbank,"common_wordmapping")
 instruments.table <- tbl(wordbank,"common_instrumentsmap")
 english.ws.table <- tbl(wordbank,"instruments_english_ws")
-spanish.ws.table <- tbl(wordbank,"instruments_spanish_ws")
+#spanish.ws.table <- tbl(wordbank,"instruments_spanish_ws")
 danish.ws.table <- tbl(wordbank,"instruments_danish_ws")
 
 # Get administration info
@@ -52,17 +51,21 @@ demos <- select(child.table,id,sex,mom_ed,birth_order) %>%
   rename(child.id = id) %>%# Rename id fields 
   as.data.frame %>%
   group_by(child.id) %>%
-  rename(mom.ed = mom_ed) %>%
+  rename(mom.ed = mom_ed,birth.order=birth_order) %>%
   filter(!is.na(mom.ed),mom.ed != "") %>%
   mutate(mom.ed = factor(mom.ed,
                          levels = c("nothing","primary","some secondary",
                                     "secondary","some college",
                                     "college","some graduate","graduate"),
-                         labels = c("None", "Primary School", 
-                                    "Some Secondary School", 
-                                    "Secondary School",
+                         labels = c("None", "Primary", 
+                                    "Some Secondary", 
+                                    "Secondary",
                                     "Some College", "College", 
-                                    "Some Graduate School","Graduate School")))
+                                    "Some Graduate",
+                                    "Graduate")),
+         birth.order = if(is.na(birth.order)) "NA"
+                          else if(birth.order == 1) "First Born"
+                          else "Later Born")
 
 
 # Join age and demographics together
@@ -101,10 +104,10 @@ d.english <- get.language.data(lang.table=english.ws.table,
                                lang="English",
                                child.data)
 
-d.spanish <- get.language.data(lang.table=spanish.ws.table, 
-                               lang.items=items, 
-                               lang="Spanish",
-                               child.data)
+# d.spanish <- get.language.data(lang.table=spanish.ws.table, 
+#                                lang.items=items, 
+#                                lang="Spanish",
+#                                child.data)
 
 d.danish <- get.language.data(lang.table=danish.ws.table, 
                               lang.items=items, 
@@ -116,7 +119,7 @@ d.danish[d.danish$type %in% c("word_form","word")
          & is.na(d.danish$value),]$value = ""
 
 #Function for getting vocab size data.
-language.vocab.sizes <- function(lang.data,lang) {
+language.vocab.sizes.mom.ed <- function(lang.data,lang) {
   d.vocab <- lang.data %>%
     filter(type == "word") %>%
     group_by(age,mom.ed,id) %>%
@@ -127,20 +130,41 @@ language.vocab.sizes <- function(lang.data,lang) {
   return(d.vocab)
 }
 
-eng.production.data <- language.vocab.sizes(d.english,"English")
-span.production.data <- language.vocab.sizes(d.spanish,"Spanish")
-dan.production.data <- language.vocab.sizes(d.danish,"Danish")
+# language.vocab.sizes.bo <- function(lang.data,lang) {
+#   d.vocab <- lang.data %>%
+#     filter(type == "word") %>%
+#     group_by(age,birth.order,id) %>%
+#     summarise(vocab.sum = sum(value == "produces", na.rm=TRUE),
+#               vocab.mean = vocab.sum/length(value)) %>%
+#     mutate(language = lang)
+#   
+#   return(d.vocab)
+# }
+
+eng.mom.ed.data <- language.vocab.sizes.mom.ed(d.english,"English")
+#span.mom.ed.data <- language.vocab.sizes.mom.ed(d.spanish,"Spanish")
+dan.mom.ed.data <- language.vocab.sizes.mom.ed(d.danish,"Danish")
+
+#eng.bo.data <- language.vocab.sizes.bo(d.english,"English")
+#span.bo.data <- language.vocab.sizes.bo(d.spanish,"Spanish")
+#dan.bo.data <- language.vocab.sizes.bo(d.danish,"Danish")
 ```
 
 Put together all data, plot
-```{r,fig.height = 6,fig.width=10}
-all.production.data <- bind_rows(eng.production.data,span.production.data)
-all.production.data <- bind_rows(all.production.data,dan.production.data) %>%
-  filter(!is.na(mom.ed),mom.ed != "None",mom.ed !="Primary School")
+```{r,fig.height = 4,fig.width=8}
+#all.mom.ed.data <- bind_rows(eng.mom.ed.data,span.mom.ed.data)
+all.mom.ed.data <- bind_rows(eng.mom.ed.data,dan.mom.ed.data) %>%
+  filter(!is.na(mom.ed),mom.ed != "None",mom.ed !="Primary")
+
+#all.bo.data <- bind_rows(eng.bo.data,span.bo.data)
+#all.bo.data <- bind_rows(all.bo.data,dan.bo.data) %>%
+#  filter(!is.na(birth.order))
+
 
 cut.by <- .25
 cuts <- seq(0.0,1.0, by=cut.by)
-ddd <- all.production.data %>% 
+
+mom.ed.ddd <- all.mom.ed.data %>% 
   filter(age > 15, age < 31, mom.ed != "NA") %>%
   group_by(language,age,mom.ed) %>%
   mutate(p = rank(vocab.mean)/length(vocab.mean),
@@ -149,9 +173,9 @@ ddd <- all.production.data %>%
                            "Third Quartile", "Fourth Quartile")))
                    #cuts[2:length(cuts)]-cut.by/2))
 
-#quartz(height=6,width=10)
-ggplot(ddd, aes(x=age, y=vocab.mean,colour=mom.ed))+
-  geom_jitter(size = .8,position = position_jitter(.1)) +
+#quartz(height=4,width=8)
+ggplot(mom.ed.ddd, aes(x=age, y=vocab.mean,colour=mom.ed))+
+  geom_jitter(size = 1,position = position_jitter(.1), pch = "o") +
   geom_smooth(se=FALSE,span = 1,method="loess")+
   facet_grid(language ~ Quantile)+
   scale_x_continuous(breaks=seq(16,30,2),
@@ -159,7 +183,33 @@ ggplot(ddd, aes(x=age, y=vocab.mean,colour=mom.ed))+
                      name = "Age (months)")+
   scale_y_continuous(name = "Prop. Words Known") +
   scale_color_manual(values=man.cols,
-                     guide = guide_legend(reverse = TRUE,
-                                          title = "Mother's Education"))+
-  theme_bw(base_size=13)
+                     guide = guide_legend(title = "Mother's Education",
+                                          direction = "horizontal"))+
+  theme_bw(base_size=12)+
+  theme(legend.text=element_text(size=8),
+        legend.title=element_text(size=8),
+        legend.position=c(.49,.94))
+# 
+# bo.ddd <- all.bo.data %>% 
+#   filter(age > 15, age < 31, birth.order != "NA") %>%
+#   group_by(language,age,birth.order) %>%
+#   mutate(p = rank(vocab.mean)/length(vocab.mean),
+#          Quantile = cut(p, breaks=cuts, 
+#                  labels= c("First Quartile", "Second Quartile",
+#                            "Third Quartile", "Fourth Quartile")))
+#                    #cuts[2:length(cuts)]-cut.by/2))
+# 
+# #quartz(height=6,width=10)
+# ggplot(bo.ddd, aes(x=age, y=vocab.mean,colour=birth.order))+
+#   geom_jitter(size = .8,position = position_jitter(.1)) +
+#   geom_smooth(se=FALSE,span = 1,method="loess")+
+#   facet_grid(language ~ Quantile)+
+#   scale_x_continuous(breaks=seq(16,30,2),
+#                      limits=c(16,30.5),
+#                      name = "Age (months)")+
+#   scale_y_continuous(name = "Prop. Words Known") +
+#   scale_color_manual(values=man.cols,
+#                      guide = guide_legend(reverse = TRUE,
+#                                           title = "Birth Order"))+
+#   theme_bw(base_size=13)
 ```
