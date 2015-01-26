@@ -1,6 +1,8 @@
-Django==1.7
+Django==1.7.3
 wsgiref==0.1.2
 MySQL-python==1.2.5
 xlrd==0.9.3
 python-dateutil==2.2
 six==1.8.0
+django-extensions==1.4
+faulthandler==2.4
