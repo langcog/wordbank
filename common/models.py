@@ -12,7 +12,8 @@ class WordInfo(models.Model):
 
 class InstrumentsMap(models.Model):
     language = models.CharField(max_length=20)
-    form = models.CharField(max_length=20)
+    forms = (('WS', 'Words & Sentences'), ('WG', 'Words & Gestures'))
+    form = models.CharField(max_length=2, choices=forms)
 
 
 class WordMapping(models.Model):

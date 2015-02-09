@@ -8,5 +8,5 @@ class Command(NoArgsCommand):
     def handle(self, *args, **options):
         data = helper.aggregate()
         f = open('static/json/stats.json', 'w')
-        f.write(json.dumps(data))
+        f.write(json.dumps(data, sort_keys=True, indent=4, separators=(',', ': ')))
         f.close()

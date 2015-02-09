@@ -13,6 +13,7 @@
 <p align="center">This page reflects a nightly snapshot of the Wordbank database composition. Click on groups or data sources to explore features of the population interactively.</p>
 <br />
 
+<!--
 <div class="row">
   <div class="col-md-4">
     <div id="wgMeanComprehensionChart">
@@ -30,42 +31,44 @@
     </div>
   </div>
 </div>
+-->
 
 <div class="row">
-  <div class="col-md-6">
-    <div id="sourceChart">
-      <h5>Data Source</h5>
-    </div>
-  </div>
-  <div class="col-md-6">
-    <div id="ethnicityChart">
-      <h5>Ethnicity</h5>
-    </div>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-md-6">
+  <div class="col-md-4">
     <div id="ageChildChart">
       <h5 align="center">Children in the Database</h5>
     </div>
   </div>
   <div class="col-md-3">
-    <div id="instrumentsChart">
-      <h5 align="center">Instruments</h5>
+    <div id="languagesChart">
+      <h5 align="center">Language</h5>
     </div>
   </div>
-  <div class="col-md-3">   
-    <div id="genderChart">
-      <h5 align="center">Gender</h5>
+  <div class="col-md-3">
+    <div id="instrumentsChart">
+      <h5 align="center">Instrument</h5>
     </div>
   </div>
 </div>
 
 <div class="row">
-
-    <!-- <div id="ageMedianComprehensionChartRange"></div> -->
+  <div class="col-md-4">
+    <div id="sourceChart">
+      <h5>Data Source</h5>
+    </div>
   </div>
+  <div class="col-md-4">
+    <div id="ethnicityChart">
+      <h5>Ethnicity</h5>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div id="genderChart">
+      <h5 align="center">Sex</h5>
+    </div>
+  </div>
+</div>
+
 <!-- <div class="row">
   <div class="col-md-6">
     <h5>Mean number of words produced by age in months.</h5>
@@ -91,9 +94,6 @@
   </div>
 </div> -->
 
-
-<div class="row">
-</div>
 
 <script type="text/javascript" src="{% static "third_party/d3.js" %}"></script>
 <script type="text/javascript" src="{% static "third_party/crossfilter.js" %}"></script>
