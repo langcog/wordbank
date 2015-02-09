@@ -4,6 +4,7 @@ from models import *
 
 def aggregate(admin_query=None):
 
+    safe_field = lambda field: field if field is not None else 'Unknown'
     data = []
 
     if not admin_query:
@@ -12,20 +13,28 @@ def aggregate(admin_query=None):
         administrations = admin_query
 
     for administration in administrations:
-        obj = {'age': administration.age if administration.age is not None else -1,
+#        obj = {'age': administration.age if administration.age is not None else 'Unknown',
                #'date_of_test': administration.date_of_test if administration.date_of_test != None else datetime.datetime.now(),
-               'sex': administration.child.sex if administration.child.sex else '?',
+#               'sex': administration.child.sex if administration.child.sex else 'Unknown',
                #'date_of_birth': administration.child.date_of_birth if administration.child.date_of_birth != None else datetime.datetime.now(),
-               'mom_ed': administration.child.mom_ed if administration.child.mom_ed else -1,
-               'source': administration.source.name if administration.source else 'Unknown',
-#               'citation': administration.source.citation if administration.source else 'Unknown',
-               'ethnicity': administration.child.ethnicity if administration.child.ethnicity else 'Unknown'}
-        instrument_type = administration.instrument.form
+#               'mom_ed': administration.child.mom_ed if administration.child.mom_ed else 'Unknown',
+#               'source': administration.source.name if administration.source else 'Unknown',
+               #'citation': administration.source.citation if administration.source else 'Unknown',
+#               'ethnicity': administration.child.ethnicity if administration.child.ethnicity else 'Unknown'}
+        obj = {'age': safe_field(administration.age),
+               'sex': safe_field(administration.child.get_sex_display()),
+               'mom_ed': safe_field(administration.child.get_mom_ed_display()),
+               'source': safe_field(administration.source.name),
+               'ethnicity': safe_field(administration.child.get_ethnicity_display())}
         instrument_language = administration.instrument.language
+        instrument_form = administration.instrument.form
+        form = administration.instrument.get_form_display()
+        obj['language'] = safe_field(instrument_language)
+        obj['form'] = safe_field(form)
+#        print instrument_language, instrument_form
         for subclass in BaseTable.__subclasses__():
-            if '_'.join([instrument_language, instrument_type]) == subclass.__name__:
+            if '_'.join([instrument_language, instrument_form]) == subclass.__name__:
                 instrument_class = subclass
-                obj['instrument'] = instrument_type
                 break
         instrument_obj = instrument_class.objects.get(pk=administration.data_id).__dict__
         production = None
@@ -33,11 +42,12 @@ def aggregate(admin_query=None):
         for field in instrument_class._meta.fields:
             field_name = field.get_attname_column()[0]
             if field_name.startswith('item_'):
-                production_temp, comprehension_temp = get_production_comprehension_vals(instrument_type, instrument_obj[field_name])
+                production_temp, comprehension_temp = get_production_comprehension_vals(instrument_form,
+                                                                                        instrument_obj[field_name])
                 production = production_temp
                 comprehension = comprehension_temp
-        obj['production'] = production
-        obj['comprehension'] = comprehension
+        obj['production'] = safe_field(production)
+        obj['comprehension'] = safe_field(comprehension)
         data.append(obj)
     return data
 
@@ -46,11 +56,11 @@ def get_production_comprehension_vals(instrument_type, val):
     if not val:
         val = 0
     if instrument_type == 'WS':
-        production = val
-        comprehension = val
+        production = 1 * (val == 'produces')
+        comprehension = 1 * (val == 'produces')
     elif instrument_type == 'WG':
-        comprehension = 1 if val > 0 else 0
-        production = 1 if val == 2 else 0
+        production = 1 * (val == 'produces')
+        comprehension = 1 * (val == 'understands' or val == 'produces')
     else:
         raise RuntimeError("invalid instrument type")
     return production, comprehension
