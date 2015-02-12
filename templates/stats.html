@@ -10,90 +10,47 @@
 <input type='hidden' id='data' value='{{ data }}'/>
 
 <h3 align="center">Database Statistics</h3>
-<p align="center">This page reflects a nightly snapshot of the Wordbank database composition. Click on groups or data sources to explore features of the population interactively.</p>
+<p align="center">This page reflects a nightly snapshot of the Wordbank database composition. Click on groups to explore features of the population interactively.</p>
 <br />
 
-<!--
-<div class="row">
-  <div class="col-md-4">
-    <div id="wgMeanComprehensionChart">
-      <h5 align="center">Mean comprehension vocabulary by age<br>(Words &amp; Gestures)</h5>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div id="wgMeanProductionChart">
-      <h5 align="center">Mean production vocabulary by age<br>(Words &amp; Gestures)</h5>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div id="wsMeanProductionChart">
-      <h5 align="center">Mean production vocabulary by age<br>(Words &amp; Sentences)</h5>
-    </div>
-  </div>
-</div>
--->
-
-<div class="row">
-  <div class="col-md-4">
+<div class="row row-centered">
+  <div class="col-md-6 col-centered">
     <div id="ageChildChart">
       <h5 align="center">Children in the Database</h5>
     </div>
   </div>
-  <div class="col-md-3">
+</div>
+
+<div class="row row-centered">
+  <div class="col-md-3 col-md-offset-1 col-centered">
     <div id="languagesChart">
       <h5 align="center">Language</h5>
     </div>
   </div>
-  <div class="col-md-3">
+  <div class="col-md-3 col-centered">
     <div id="instrumentsChart">
       <h5 align="center">Instrument</h5>
     </div>
   </div>
-</div>
-
-<div class="row">
-  <div class="col-md-4">
-    <div id="sourceChart">
-      <h5>Data Source</h5>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div id="ethnicityChart">
-      <h5>Ethnicity</h5>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div id="genderChart">
+  <div class="col-md-3 col-centered">
+    <div id="sexChart">
       <h5 align="center">Sex</h5>
     </div>
   </div>
 </div>
 
-<!-- <div class="row">
-  <div class="col-md-6">
-    <h5>Mean number of words produced by age in months.</h5>
-    <div id="ageChart"></div>
-    <div id="ageChartRange"></div>
+<div class="row row-centered">
+  <div class="col-md-4 col-centered">
+    <div id="ethnicityChart">
+      <h5>Ethnicity</h5>
+    </div>
   </div>
-  <div class="col-md-6">
-    <h5>Mom's education to the number of words the child can produce.</h5>
-    <div id="momedChart"></div>
-    <div id="momedChartRange"></div>
+  <div class="col-md-4 col-centered">
+    <div id="momedChart">
+      <h5>Maternal Education</h5>
+    </div>
   </div>
 </div>
-<div class="row">
-  <div class="col-md-6">
-    <h5>Age of child to the average number of words they can comprehend.</h5>
-    <div id="ageComprehensionChart"></div>
-    <div id="ageComprehensionChartRange"></div>
-  </div>
-  <div class="col-md-6">
-    <h5>Mom's education to the number of words the child can comprehend.</h5>
-    <div id="momedComprehensionChart"></div>
-    <div id="momedComprehensionChartRange"></div>
-  </div>
-</div> -->
-
 
 <script type="text/javascript" src="{% static "third_party/d3.js" %}"></script>
 <script type="text/javascript" src="{% static "third_party/crossfilter.js" %}"></script>
