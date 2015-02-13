@@ -44,7 +44,7 @@ class ImportHelper:
                 if isinstance(value, float):
                     value = int(value)
                 if isinstance(value, str):
-                    value = unicode(value, "utf-8")
+                    value = unicode(value, "utf-8").lower()
                 else:
                     value = unicode(value)
                 if self.splitcol and field_type == 'word':
