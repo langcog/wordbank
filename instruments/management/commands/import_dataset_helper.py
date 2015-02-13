@@ -19,6 +19,8 @@ class ImportHelper:
         self.administrations = {}
         self.datemode = None
 
+        self.missing_values = {'Null', '#NULL!', '', ' ', 'Missing', 'Unknown/other'}
+
     @staticmethod
     def format_date(date_str, datemode=None):
         return datetime(*xlrd.xldate_as_tuple(date_str, datemode))
@@ -31,7 +33,7 @@ class ImportHelper:
 
     def get_field_value(self, column, field_type, group, row_values):
         value = row_values[self.col_map[column]]
-        if value != 'Null' and value != '' and value != '#NULL!' and value != ' ':
+        if not value in self.missing_values:
             if field_type in ('study_id',):
                 return value
             elif field_type in ('birth_order', 'data_age'):
@@ -41,7 +43,10 @@ class ImportHelper:
             elif field_type in ('ethnicity', 'sex', 'mom_ed') or group == 'item':
                 if isinstance(value, float):
                     value = int(value)
-                value = str(value).lower()
+                if isinstance(value, str):
+                    value = unicode(value, "utf-8")
+                else:
+                    value = unicode(value)
                 if self.splitcol and field_type == 'word':
                     value += column[-1]
                 return self.field_value_mapping[field_type][value]
@@ -71,7 +76,10 @@ class ImportHelper:
             field_type, value, data_value = row_values[:3]
             if isinstance(data_value, float):
                 data_value = int(data_value)
-            data_value = str(data_value).lower()
+            if isinstance(data_value, str):
+                data_value = unicode(data_value, "utf-8").lower()
+            else:
+                data_value = unicode(data_value)
             if data_value is not None and data_value != '':
                 self.field_value_mapping[field_type][data_value] = value
 

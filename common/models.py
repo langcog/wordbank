@@ -35,26 +35,20 @@ class Child(models.Model):
     ethnicities = (('A', 'Asian'), ('B', 'Black'), ('H', 'Hispanic'), ('W', 'White'), ('O', 'Other/Mixed'))
     ethnicity = models.CharField(max_length=1, choices=ethnicities, null=True, blank=True)
 
-    ed_levels = (('nothing', 'nothing'),
-                 ('primary', 'primary'),
-                 ('some secondary', 'some secondary'),
-                 ('secondary', 'secondary'),
-                 ('some college', 'some college'),
-                 ('college', 'college'),
-                 ('some graduate', 'some graduate'),
-                 ('graduate', 'graduate'))
+    ed_levels = (('nothing', 'Nothing'),
+                 ('primary', 'Primary'),
+                 ('some secondary', 'Some Secondary'),
+                 ('secondary', 'Secondary'),
+                 ('some college', 'Some College'),
+                 ('college', 'College'),
+                 ('some graduate', 'Some Graduate'),
+                 ('graduate', 'Graduate'))
     mom_ed = models.CharField(max_length=20, choices=ed_levels, null=True, blank=True)
 
     sexes = (('M', 'Male'), ('F', 'Female'))
     sex = models.CharField(max_length=1, choices=sexes, null=True, blank=True)
 
     study_id = models.CharField(max_length=20)
-#    birth_weight = models.FloatField(null=True, blank=True)
-#    state = models.CharField(max_length=2, null=True, blank=True)
-#    gestational_age = models.IntegerField(null=True, blank=True)
-#    dad_ed = models.IntegerField(null=True, blank=True)
-
-
 
 
 class Source(models.Model):
