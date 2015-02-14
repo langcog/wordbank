@@ -36,9 +36,9 @@ class ImportHelper:
         if type(value) == float:
             value = int(value)
         if type(value) == str:
-            value = unicode(value, "utf-8").lower()
+            value = unicode(value, "utf-8")
         elif type(value) == unicode:
-            value = value.lower()
+            value = value
         else:
             value = unicode(value)
         return value
@@ -46,14 +46,14 @@ class ImportHelper:
     def get_field_value(self, column, field_type, group, row_values):
         value = row_values[self.col_map[column]]
         if not value in self.missing_values:
-            if field_type in ('study_id',):
+            if field_type in ('study_id', 'study_momed'):
                 return value
             elif field_type in ('birth_order', 'data_age'):
                 return int(value)
             elif field_type in ('date_of_birth, date_of_test'):
                 return self.format_date(value, self.datemode)
             elif field_type in ('ethnicity', 'sex', 'mom_ed') or group == 'item':
-                value = self.value_typing(value)
+                value = self.value_typing(value).lower()
                 if self.splitcol and field_type == 'word':
                     value += column[-1]
                 return self.field_value_mapping[field_type][value]
@@ -64,11 +64,17 @@ class ImportHelper:
         for column in group_cols.keys():
             field = group_cols[column]['field']
             field_type = group_cols[column]['field_type']
-            field_value = self.get_field_value(column, field_type, group, row_values)
-            if self.splitcol and (results[field] == 'produces' or field_value == 'produces'):
-                results[field] = 'produces'
+            if field_type == 'mom_ed':
+                momed_value = self.get_field_value(column, 'mom_ed', group, row_values)
+                results['momed'] = momed_value
+                study_momed_value = self.get_field_value(column, 'study_momed', group, row_values)
+                results['study_momed'] = study_momed_value
             else:
-                results[field] = field_value
+                field_value = self.get_field_value(column, field_type, group, row_values)
+                if self.splitcol and (results[field] == 'produces' or field_value == 'produces'):
+                    results[field] = 'produces'
+                else:
+                    results[field] = field_value
         return results
 
     def import_data(self):
@@ -82,7 +88,7 @@ class ImportHelper:
             row_values = list(value_mapping_sheet.row_values(row))
             field_type, value, data_value = row_values[:3]
             value = self.value_typing(value)
-            data_value = self.value_typing(data_value)
+            data_value = self.value_typing(data_value).lower()
             if data_value is not None and data_value != '':
                 self.field_value_mapping[field_type][data_value] = value
 

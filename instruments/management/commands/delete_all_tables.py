@@ -16,6 +16,7 @@ class Command(NoArgsCommand):
 
         Child.objects.all().delete()
         Administration.objects.all().delete()
+        MomEd.objects.all().delete()
         InstrumentsMap.objects.all().delete()
         Source.objects.all().delete()
         WordMapping.objects.all().delete()

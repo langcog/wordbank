@@ -10,6 +10,9 @@ echo "Populating Word Mapping..."
 echo "Populating Source..."
 ./manage.py populate_source
 
+echo "Populating MomEd..."
+./manage.py populate_momed
+
 echo "Importing data..."
 ./manage.py import_all_datasets
 
