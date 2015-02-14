@@ -21,9 +21,14 @@ def aggregate(admin_query=None):
 #               'source': administration.source.name if administration.source else 'Unknown',
                #'citation': administration.source.citation if administration.source else 'Unknown',
 #               'ethnicity': administration.child.ethnicity if administration.child.ethnicity else 'Unknown'}
+        if administration.child.momed_id is None:
+            momed = None
+        else:
+            momed_obj = MomEd.objects.get(pk=administration.child.momed_id)
+            momed = str(momed_obj.order) + '. ' + momed_obj.level
         obj = {'age': safe_field(administration.age),
                'sex': safe_field(administration.child.get_sex_display()),
-               'mom_ed': safe_field(administration.child.get_mom_ed_display()),
+               'mom_ed': safe_field(momed),
                'source': safe_field(administration.source.name),
                'ethnicity': safe_field(administration.child.get_ethnicity_display())}
         instrument_language = administration.instrument.language

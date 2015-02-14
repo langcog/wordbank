@@ -17,14 +17,14 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
 
         for i, child_data in import_helper.children.iteritems():
 
-            # Initialize the Child here.
+            # initialize the Child here
             child = Child.objects.create(study_id=child_data['study_id'])
             child.date_of_birth = child_data['date_of_birth']
             child.sex = child_data['sex']
             child.birth_order = child_data['birth_order']
-            child.mom_ed = child_data['mom_ed']
-#            if Ethnicity.objects.filter(id=child_data['ethnic_num']).exists():
-#                child.ethnicity = Ethnicity.objects.get(pk=child_data['ethnic_num'])
+            if child_data['momed'] is not None:
+                child.momed = MomEd.objects.get(level__iexact = child_data['momed'])
+            child.study_momed = child_data['study_momed']
             child.ethnicity = child_data['ethnicity']
 
             children[i] = child

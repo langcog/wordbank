@@ -1,10 +1,6 @@
 from django.db import models
 
 
-class Ethnicity(models.Model):
-    ethnicity = models.CharField(max_length=30)
-
-
 class WordInfo(models.Model):
     uni_lemma = models.CharField(primary_key=True, max_length=20)
     lang_lemma = models.CharField(max_length=20)
@@ -27,7 +23,17 @@ class WordMapping(models.Model):
     complexity_category = models.CharField(max_length=30, null=True, blank=True)
 
 
+class MomEd(models.Model):
+    level = models.CharField(max_length=20, null=True, blank=True)
+    order = models.IntegerField(unique=True)
+
+    class Meta:
+        ordering = ["order"]
+
+
 class Child(models.Model):
+
+    study_id = models.CharField(max_length=20)
 
     birth_order = models.IntegerField(null=True, blank=True)
     date_of_birth = models.DateField(null=True, blank=True)
@@ -35,20 +41,11 @@ class Child(models.Model):
     ethnicities = (('A', 'Asian'), ('B', 'Black'), ('H', 'Hispanic'), ('W', 'White'), ('O', 'Other/Mixed'))
     ethnicity = models.CharField(max_length=1, choices=ethnicities, null=True, blank=True)
 
-    ed_levels = (('nothing', 'Nothing'),
-                 ('primary', 'Primary'),
-                 ('some secondary', 'Some Secondary'),
-                 ('secondary', 'Secondary'),
-                 ('some college', 'Some College'),
-                 ('college', 'College'),
-                 ('some graduate', 'Some Graduate'),
-                 ('graduate', 'Graduate'))
-    mom_ed = models.CharField(max_length=20, choices=ed_levels, null=True, blank=True)
+    momed = models.ForeignKey(MomEd, null=True, blank=True)
+    study_momed = models.CharField(max_length=100, null=True, blank=True)
 
-    sexes = (('M', 'Male'), ('F', 'Female'))
+    sexes = (('M', 'Male'), ('F', 'Female'), ('O', 'Other'))
     sex = models.CharField(max_length=1, choices=sexes, null=True, blank=True)
-
-    study_id = models.CharField(max_length=20)
 
 
 class Source(models.Model):
