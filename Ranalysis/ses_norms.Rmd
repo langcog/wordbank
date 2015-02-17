@@ -4,10 +4,10 @@
 
 ```{r setup, include=FALSE}
 library(knitr)
-opts_chunk$set(message=FALSE, warning=FALSE, cache=FALSE)
+opts_chunk$set(message=FALSE, warning=FALSE, cache=TRUE)
 ```
 Load required libraries
-```{r}
+```{r, cache=FALSE}
 rm(list=ls())
 
 library(ggplot2)
@@ -25,7 +25,7 @@ man.cols <- c("#e41a1c","#377eb8","#4daf4a",
 ```
 
 Pull in wordbank dat
-```{r}
+```{r, cache=FALSE}
 ## OPEN DATABASE CONNECTION ##
 wordbank <- src_mysql(dbname='wordbank',host="54.149.39.46",
                       user="wordbank",password="wordbank")
@@ -56,7 +56,12 @@ demos <- select(child.table,id,sex,momed_id,birth_order) %>%
   filter(!is.na(momed_id)) %>%
   as.data.frame
 
-demos <- left_join(demos,as.data.frame(momed.table),
+momed.data <- momed.table %>%
+  as.data.frame %>%
+  arrange(order) %>%
+  mutate(level = factor(level,levels=level))
+
+demos <- left_join(demos,momed.data,
                    by=c("momed_id" = "id")) %>%
   rename(mom.ed = level) %>%
   select(-order) %>%
@@ -193,7 +198,27 @@ ggplot(mom.ed.ddd, aes(x=age, y=vocab.mean,colour=mom.ed))+
   theme(legend.text=element_text(size=8),
         legend.title=element_text(size=8),
         legend.position=c(.4,.96))
+```
+```{r,fig.height = 6,fig.width=9}
+ggplot(mom.ed.ddd, aes(x=age, y=vocab.mean,colour=language))+
+  geom_jitter(size = 1,position = position_jitter(.1), pch = "o") +
+  geom_smooth(se=FALSE,span = 1,method="loess")+
+  facet_grid(mom.ed ~ Quantile)+
+  scale_x_continuous(breaks=seq(16,30,2),
+                     limits=c(16,30.5),
+                     name = "Age (months)")+
+  scale_y_continuous(name = "Prop. Words Known") +
+  scale_color_manual(values=man.cols,
+                     guide = guide_legend(title = "Language",
+                                          direction = "horizontal"))+
+  theme_bw(base_size=12)+
+  theme(legend.text=element_text(size=8),
+        legend.title=element_text(size=8),
+        legend.position=c(.4,.96))
+
 # 
+# bo.ddd <- all.bo.data %>% 
+
 # bo.ddd <- all.bo.data %>% 
 #   filter(age > 15, age < 31, birth.order != "NA") %>%
 #   group_by(language,age,birth.order) %>%
