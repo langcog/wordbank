@@ -6,12 +6,12 @@ library(RMySQL)
 library(directlabels)
 library(tidyr)
 library(stringr)
-source("../app_themes.R")
+source("app_themes.R")
 
 # READ IN ENGLISH LABELS FOR WORDS
-wscodes <- read.csv("../WS_codes.csv")  %>%
+wscodes <- read.csv("WS_codes.csv")  %>%
   arrange(code)
-wgcodes <- read.csv("../WG_codes.csv") %>%
+wgcodes <- read.csv("WG_codes.csv") %>%
   arrange(code)
 
 ## OPEN DATABASE CONNECTION ##

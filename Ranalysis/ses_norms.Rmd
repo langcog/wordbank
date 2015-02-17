@@ -4,7 +4,7 @@
 
 ```{r setup, include=FALSE}
 library(knitr)
-opts_chunk$set(message=FALSE, warning=FALSE, cache=TRUE)
+opts_chunk$set(message=FALSE, warning=FALSE, cache=FALSE)
 ```
 Load required libraries
 ```{r}
@@ -34,40 +34,37 @@ wordbank <- src_mysql(dbname='wordbank',host="54.149.39.46",
 source.table <- tbl(wordbank,"common_source")
 admin.table <- tbl(wordbank,"common_administration")
 child.table <- tbl(wordbank,"common_child")
+momed.table <-  tbl(wordbank,"common_momed")
 wordmapping.table <- tbl(wordbank,"common_wordmapping")
 instruments.table <- tbl(wordbank,"common_instrumentsmap")
 english.ws.table <- tbl(wordbank,"instruments_english_ws")
-#spanish.ws.table <- tbl(wordbank,"instruments_spanish_ws")
+norwegian.ws.table <- tbl(wordbank,"instruments_norwegian_ws")
 danish.ws.table <- tbl(wordbank,"instruments_danish_ws")
 
 # Get administration info
 admins <- admin.table %>%
   select(data_id,child_id,age,source_id) %>%
-  rename(id = data_id, child.id = child_id, source.id = source_id) 
-admins <- as.data.frame(admins)
+  rename(id = data_id, child.id = child_id, source.id = source_id) %>%
+  as.data.frame
 
 # Get demographic variables for each child
-demos <- select(child.table,id,sex,mom_ed,birth_order) %>%
+demos <- select(child.table,id,sex,momed_id,birth_order) %>%
   rename(child.id = id) %>%# Rename id fields 
   as.data.frame %>%
   group_by(child.id) %>%
-  rename(mom.ed = mom_ed,birth.order=birth_order) %>%
-  filter(!is.na(mom.ed),mom.ed != "") %>%
-  mutate(mom.ed = factor(mom.ed,
-                         levels = c("nothing","primary","some secondary",
-                                    "secondary","some college",
-                                    "college","some graduate","graduate"),
-                         labels = c("None", "Primary", 
-                                    "Some Secondary", 
-                                    "Secondary",
-                                    "Some College", "College", 
-                                    "Some Graduate",
-                                    "Graduate")),
-         birth.order = if(is.na(birth.order)) "NA"
+  rename(birth.order=birth_order) %>%
+  filter(!is.na(momed_id)) %>%
+  as.data.frame
+
+demos <- left_join(demos,as.data.frame(momed.table),
+                   by=c("momed_id" = "id")) %>%
+  rename(mom.ed = level) %>%
+  select(-order) %>%
+  rowwise() %>%
+  mutate(birth.order = if(is.na(birth.order)) "NA"
                           else if(birth.order == 1) "First Born"
                           else "Later Born")
-
-
+        
 # Join age and demographics together
 child.data <- as.tbl(left_join(admins,demos))
 
@@ -104,11 +101,17 @@ d.english <- get.language.data(lang.table=english.ws.table,
                                lang="English",
                                child.data)
 
-# d.spanish <- get.language.data(lang.table=spanish.ws.table, 
-#                                lang.items=items, 
-#                                lang="Spanish",
-#                                child.data)
+d.norwegian <- get.language.data(lang.table=norwegian.ws.table, 
+                              lang.items=items, 
+                              lang="Norwegian",
+                              child.data)
 
+# Norwegian data is loaded in funny -- NAs in wordform are actually 0s
+d.norwegian[d.norwegian$type %in% c("word_form","word")
+         & is.na(d.norwegian$value),]$value = ""
+
+
+# Danish data is loaded in funny -- NAs in wordform are actually 0s
 d.danish <- get.language.data(lang.table=danish.ws.table, 
                               lang.items=items, 
                               lang="Danish",
@@ -142,7 +145,7 @@ language.vocab.sizes.mom.ed <- function(lang.data,lang) {
 # }
 
 eng.mom.ed.data <- language.vocab.sizes.mom.ed(d.english,"English")
-#span.mom.ed.data <- language.vocab.sizes.mom.ed(d.spanish,"Spanish")
+norw.mom.ed.data <- language.vocab.sizes.mom.ed(d.norwegian,"Norwegian")
 dan.mom.ed.data <- language.vocab.sizes.mom.ed(d.danish,"Danish")
 
 #eng.bo.data <- language.vocab.sizes.bo(d.english,"English")
@@ -151,9 +154,10 @@ dan.mom.ed.data <- language.vocab.sizes.mom.ed(d.danish,"Danish")
 ```
 
 Put together all data, plot
-```{r,fig.height = 4,fig.width=8}
+```{r,fig.height = 6,fig.width=9}
 #all.mom.ed.data <- bind_rows(eng.mom.ed.data,span.mom.ed.data)
-all.mom.ed.data <- bind_rows(eng.mom.ed.data,dan.mom.ed.data) %>%
+all.mom.ed.data <- bind_rows(norw.mom.ed.data,eng.mom.ed.data,
+                             dan.mom.ed.data) %>%
   filter(!is.na(mom.ed),mom.ed != "None",mom.ed !="Primary")
 
 #all.bo.data <- bind_rows(eng.bo.data,span.bo.data)
@@ -173,7 +177,7 @@ mom.ed.ddd <- all.mom.ed.data %>%
                            "Third Quartile", "Fourth Quartile")))
                    #cuts[2:length(cuts)]-cut.by/2))
 
-#quartz(height=4,width=8)
+# quartz(height=6,width=8)
 ggplot(mom.ed.ddd, aes(x=age, y=vocab.mean,colour=mom.ed))+
   geom_jitter(size = 1,position = position_jitter(.1), pch = "o") +
   geom_smooth(se=FALSE,span = 1,method="loess")+
@@ -188,7 +192,7 @@ ggplot(mom.ed.ddd, aes(x=age, y=vocab.mean,colour=mom.ed))+
   theme_bw(base_size=12)+
   theme(legend.text=element_text(size=8),
         legend.title=element_text(size=8),
-        legend.position=c(.49,.94))
+        legend.position=c(.4,.96))
 # 
 # bo.ddd <- all.bo.data %>% 
 #   filter(age > 15, age < 31, birth.order != "NA") %>%

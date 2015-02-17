@@ -1,0 +1,236 @@
+---
+title: "Grammatical Category Analysis"
+author: "Dan Yurovsky"
+date: "December 16, 2014"
+output: html_document
+---
+  
+Load required Libraries
+```{r, message=FALSE}
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(RMySQL)
+library(stringr)
+library(magrittr)
+library(pcaPP)
+library(directlabels)
+```
+
+Load in Wordbank tata
+```{r}
+## OPEN DATABASE CONNECTION ##
+wordbank <- src_mysql(dbname='wordbank',host="54.200.225.86", 
+                      user="wordbank",password="wordbank")
+
+## NOW LOAD TABLES ##
+admin.table <- tbl(wordbank,"common_administration")
+child.table <- tbl(wordbank,"common_child")
+ws.table <- tbl(wordbank,"instruments_ws")
+```
+
+Pull data out of the wordbank tables
+```{r,message=FALSE}
+ws.words <- as.data.frame(select(ws.table,
+                                       basetable_ptr_id,
+                                       col_baabaa:col_connthen)) %>%
+  rename(id = basetable_ptr_id) %>% # Rename the id
+  gather(word,produces,col_baabaa:col_connthen) %>% # Arrange in longform
+  mutate(word = str_replace(word, "col_", "")) %>% # Strip off col_ from words
+  group_by(id) %>%
+  summarise(vocab = sum(produces))
+
+ws.syntax <- as.data.frame(select(ws.table,
+                                       basetable_ptr_id,
+                                       col_complx01:col_complx37)) %>%
+  rename(id = basetable_ptr_id) %>% # Rename the id
+  gather(word,produces,col_complx01:col_complx37) %>% # Arrange in longform
+  mutate(word = str_replace(word, "col_", "")) %>% # Strip off col_ from words
+  group_by(id) 
+
+bykid.syntax <- summarise(ws.syntax, syntax = mean(produces>= 1))
+
+ws.morpho <- as.data.frame(select(ws.table,
+                                        basetable_ptr_id,
+                                        col_splural:col_ed, 
+                                        col_children:col_went)) %>%
+  rename(id = basetable_ptr_id) %>% # Rename the id
+  gather(word,produces,col_splural:col_went) %>% # Arrange in longform
+  mutate(word = str_replace(word, "col_", "")) %>% # Strip off col_ from words
+  group_by(id) %>%
+  summarise(morpho = mean(produces>=1))
+
+### MERGE OTHER ------------
+admins <- admin.table %>%
+  select(data_id,child_id,age,source_id) %>%
+  rename(id = data_id, child.id = child_id,source.id = source_id) 
+admins <- as.data.frame(admins)
+
+# Get demographic variables for each child
+demos <- select(child.table,id,gender,mom_ed,birth_order) %>%
+  rename(child.id = id) # Rename id fields
+demos <- as.data.frame(demos)
+
+# Join age and demographics together
+child.data <- as.tbl(left_join(admins,demos))
+
+# join variables
+ws.sums <- left_join(ws.words, bykid.syntax)
+ws.sums <- left_join(ws.sums, ws.morpho)
+
+# filter down
+d <- left_join(ws.sums, child.data) %>%
+  filter(syntax > 0, vocab > 0, morpho > 0, 
+         age > 15 & age < 31) %>%
+  select(-child.id,-source.id) %>% #drop redundant columns 
+  mutate(age.binned = cut(age, breaks = c(15, 20, 25, 30)))
+
+# gather for plotting
+ms <- d %>% gather(measure, score, syntax:morpho) %>%
+  mutate(measure = factor(measure, levels = c("morpho","syntax"),
+                          labels = c("Morphology", "Syntax")),
+         s.vocab = scale(vocab),
+         s.age = scale(age))
+
+# by-item morphology data for further analysis
+bykid.syntax.vocab <- left_join(ws.words,ws.syntax)
+bykid.syntax.vocab <- left_join(bykid.syntax.vocab,child.data) %>%
+  filter(vocab > 0, age >15, age < 31) %>%
+  select(-child.id,-source.id) %>% #drop redundant columns 
+  mutate(age.binned = cut(age, breaks = c(15, 20, 25, 30))) %>%
+  spread(word,produces)
+```
+
+Age and Vocab predict Morphology and Syntax Scores
+```{r,fig.width=11,fig.height=5}
+ggplot(ms,aes(x = vocab, y = score, colour = age.binned, fill = age.binned,
+              label = age.binned)) + 
+  geom_jitter()+
+  geom_smooth(method="lm", formula = y ~ I(x^2)) + 
+  facet_wrap(~measure) + 
+  scale_x_continuous(limits = c(0,681), breaks = seq(0,680,100),name = "Vocabulary (WS)") + 
+  scale_y_continuous(limits = c(0, 1.05), breaks = seq(0,1,.2),"Score (Mean Items)") + 
+  theme_bw(base_size = 14) +
+  scale_color_brewer(palette="Set1") +
+  scale_fill_brewer(palette="Set1") 
+```
+
+Using Morphology to Predict Syntax
+```{r,fig.width=7,fig.height=5}
+ggplot(d,aes(x = morpho, y = syntax, fill=age.binned,colour=age.binned,
+             label=age.binned))+ 
+  geom_jitter()+
+  geom_smooth(method="lm", formula = y ~ x) + 
+  scale_x_continuous(limits = c(0,1.05), breaks=seq(0,1,.2),name = "Morphology Score") + 
+  scale_y_continuous(limits = c(0,1.05), breaks=seq(0,1,.2),"Syntax Score") + 
+  scale_color_brewer(palette="Set1") +
+  scale_fill_brewer(palette="Set1") +
+  theme_bw(base_size = 14)
+```
+
+Fit regressions to data
+```{r,fig.width=12,fig.height=7.5}
+t.lm1 <- lm(score ~ age + measure, data=ms)
+t.lm2 <- lm(score ~ I(vocab^2)*measure + age*measure, data=ms)
+t.lm3 <- lm(score  ~ I(vocab^2)*measure*age.binned, data=ms)
+t.lm4 <- lm(score  ~ I(vocab^2)*measure*age, data=ms)
+
+ms$predicted <- predict.lm(t.lm3,ms)
+
+# Plot by age
+ggplot(ms,aes(x = vocab, y = score, colour = measure,label=measure))+
+  facet_wrap(~ age)+
+  geom_jitter(size=1)+
+  geom_line(aes(y=predicted),size=.5)+
+  scale_color_brewer(palette="Set1") +
+ scale_x_continuous(limits = c(0,681), breaks = seq(0,680,100),name = "Vocabulary (WS)") + 
+  scale_y_continuous(limits = c(0, 1.05), breaks = seq(0,1,.2),"Score (Mean Items)") + 
+  theme_bw(base_size = 14) 
+```
+
+# replot original correlation with fitted model
+```{r,fig.width=12,fig.height=7.5}
+ggplot(ms,aes(x = vocab, y = score, colour = age.binned, fill = age.binned,
+              label = age.binned)) + 
+  geom_jitter(size=1.5)+
+  geom_line(aes(y=predicted),size=1) + 
+  facet_wrap(~measure) + 
+  scale_x_continuous(limits = c(0,681), breaks = seq(0,680,100),name = "Vocabulary (WS)") + 
+  scale_y_continuous(limits = c(0, 1.05), breaks = seq(0,1,.2),"Score (Mean Items)") + 
+  theme_bw(base_size = 14) +
+  scale_color_brewer(palette="Set1") +
+  scale_fill_brewer(palette="Set1") 
+```
+
+Compute some descriptives on syntactic items
+```{r,fig.width=7,fig.height=4}
+# compute Kendall's tau -- cor.fk is a faster implementation than in stats::cor
+complex.cors <- cor.fk(as.matrix(bykid.syntax.vocab[,8:ncol(bykid.syntax.vocab)])) %>%
+  as.data.frame
+names(complex.cors) <- str_replace(names(complex.cors),"complx","")
+row.names(complex.cors) <- str_replace(row.names(complex.cors),"complx","")
+
+
+# make a dendrogram of the complex item similarities
+complex.dendro <- as.dendrogram(hclust(dist(complex.cors)))
+
+plot(complex.dendro)
+```
+
+Make a confusion matrix
+```{r,fig.width=8,fig.height=5}
+# gather the columns for plotting as a confusion matrix
+complex.cors %<>%
+  mutate(prompt = factor(row.names(complex.cors))) %>%
+  gather(response,correlation,"01":"37")
+
+ggplot(complex.cors, aes(response, prompt)) + 
+  geom_tile(aes(fill = correlation)) +
+  ylim(rev(levels(complex.cors$prompt))) +
+  scale_fill_gradient(low = "white", high = "black",guide=FALSE) +
+  labs(x="Response", y = "Prompt") +
+  theme(legend.position = "none", axis.ticks = element_blank()) +
+  theme_bw(base_size = 16)
+```
+
+Compute vocab x age interaction terms for each styntactic item
+```{r,fig.height=5,fig.width=8}
+# write regression formulas for separately for each item
+formulas <- sapply(names(bykid.syntax.vocab)[8:ncol(bykid.syntax.vocab)],
+       function(x) paste(x ,"~ I(vocab^2)*age + 0",collapse=""))
+
+# compute interaction terms each item
+interaction.terms <- sapply(formulas, function(x)  
+  summary(glm(as.formula(x),data=bykid.syntax.vocab,
+      family="binomial"))$coefficients[3,3])
+names(interaction.terms) <- 1:37
+
+#rename results to be human-readable
+interaction.terms <- as.data.frame(interaction.terms) %>%
+  mutate(item = 1:37) %>%
+  rename(zscore = interaction.terms) %>%
+  arrange(zscore) %>%
+  mutate(item = factor(item,levels=item))
+
+# plot interaction terms by item
+ggplot(interaction.terms,
+       aes(x=item,y=zscore,fill=1))+
+  geom_bar(stat="identity")+
+  geom_hline(yintercept=mean(interaction.terms$zscore),
+             lty=2)+
+  theme_bw(base_size = 14) + 
+  scale_y_continuous(name="vocabulary size x age z-score",limits=c(0,15),
+                     breaks=seq(0,15,2.5))+
+  scale_x_discrete(name="complexity CDI item")+
+  scale_color_brewer(palette="Set1") + 
+  theme(legend.position="none")
+```  
+  
+Leftover analyses
+```{r}
+#summary(lm(syntax ~ I(vocab^2) * age - 1, data=d))
+#summary(lm(morpho ~ I(vocab^2) * age - 1, data=d))
+
+#summary(lm(syntax ~ I(d$s.vocab^2) * d$age_bin - 1, data=d))
+#summary(lm(morpho ~ I(d$s.vocab^2) * d$age_bin - 1, data=d))
+```
