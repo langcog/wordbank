@@ -9,36 +9,14 @@ var languagesChart = dc.pieChart('#languagesChart');
 var instrumentsChart = dc.pieChart('#instrumentsChart');
 
 var sexChart = dc.pieChart('#sexChart');
-var ethnicityChart = dc.rowChart('#ethnicityChart')
 var momedChart = dc.rowChart('#momedChart')
 
-var lineChartWidth = 400;
-var pieChartWidth = 200;
-var pieChartRadius = 100;
+var pieChartWidth = 250;
+var pieChartRadius = 125;
 
-var reduceAdd = function(p, v) {
-  ++p.count;
-  p.production += v['production'];
-  p.comprehension += v['comprehension'];
-  return p;
-};
-var reduceRemove = function(p, v) {
-  --p.count;
-  p.production -= v['production'];
-  p.comprehension -= v['comprehension'];
-  return p;
-};
-var reduceInitial = function() {
-  return {count: 0, production: 0, comprehension: 0};
-};
-
-var ages = data.dimension(function(d) {
-  return d['age'];
-});
 var ageChild = data.dimension(function(d) {
   return d['age'];
 });
-var agesGroup = ages.group().reduce(reduceAdd, reduceRemove, reduceInitial);
 var ageChildGroup = ageChild.group().reduceSum(function(d) {
   return 1;
 });
@@ -64,25 +42,17 @@ var sexesGroup = sexes.group().reduceSum(function(d) {
   return 1;
 });
 
-var ethnicities = data.dimension(function(d) {
-  return d['ethnicity']
-});
-var ethnicitiesGroup = ethnicities.group().reduceSum(function(d) {
-  return 1;
-});
-
 var momeds = data.dimension(function(d) {
   return d['mom_ed'];
 });
-//var momedsGroup = momeds.group().reduce(reduceAdd, reduceRemove, reduceInitial);
 var momedsGroup = momeds.group().reduceSum(function(d) {
   return 1;
 });
 
-ageChildChart.width(600)
+ageChildChart.width(700)
              .height(300)
              .margins({top: 20, right: 40, bottom: 32, left: 40})
-             .dimension(ages)
+             .dimension(ageChild)
              .group(ageChildGroup)
              .centerBar(true)
              .elasticY(true)
@@ -94,14 +64,28 @@ ageChildChart.width(600)
                return d.value;
              });
 
+momedChart.width(400)
+        .height(300)
+        .dimension(momeds)
+        .margins({top: 20, right: 40, bottom: 45, left: 40})
+        .group(momedsGroup)
+        .label(function (d) {
+            return d.key + ": " + d.value;
+        })
+        .renderLabel(true)
+        .transitionDuration(500)
+//        .xAxis().tickFormat(function(v) { return ""; })
+        .xAxis().ticks(5)
+//        .xAxisLabel('')
+
 languagesChart.width(pieChartWidth)
         .height(pieChartWidth)
         .radius(pieChartRadius)
         .dimension(languages)
         .group(languagesGroup)
         .label(function (d) {
-              return d.key;
-//            return d.key + ":\n" + d.value;
+//              return d.key;
+            return d.key + ": " + d.value;
         })
         .renderLabel(true)
         .transitionDuration(500)
@@ -112,8 +96,8 @@ instrumentsChart.width(pieChartWidth)
         .dimension(instruments)
         .group(instrumentsGroup)
         .label(function (d) {
-              return d.key;
-//            return d.key + ": " + d.value;
+//              return d.key;
+            return d.key + ": " + d.value;
         })
         .renderLabel(true)
         .transitionDuration(500)
@@ -124,33 +108,11 @@ sexChart.width(pieChartWidth)
         .dimension(sexes)
         .group(sexesGroup)
         .label(function (d) {
-              return d.key;
-//            return d.key + ": " + d.value;
-        })
-        .renderLabel(true)
-        .transitionDuration(500)
-
-ethnicityChart.width(lineChartWidth)
-        .height(300)
-        .dimension(ethnicities)
-        .group(ethnicitiesGroup)
-        .label(function (d) {
+//              return d.key;
             return d.key + ": " + d.value;
         })
         .renderLabel(true)
         .transitionDuration(500)
-        .xAxis().tickFormat(function(v) { return ""; })
-
-momedChart.width(lineChartWidth)
-        .height(300)
-        .dimension(momeds)
-        .group(momedsGroup)
-        .label(function (d) {
-            return d.key + ": " + d.value;
-        })
-        .renderLabel(true)
-        .transitionDuration(500)
-        .xAxis().tickFormat(function(v) { return ""; })
 
 dc.renderAll();
 });
