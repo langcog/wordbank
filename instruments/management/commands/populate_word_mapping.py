@@ -23,6 +23,7 @@ class Command(NoArgsCommand):
             for row in xrange(1, sheet.nrows):
 
                 row_values = list(sheet.row_values(row))
+                itemID = row_values[col_names.index('itemID')]
                 item = row_values[col_names.index('item')]
                 item_type = row_values[col_names.index('type')]
                 item_category = row_values[col_names.index('category')]
@@ -38,6 +39,7 @@ class Command(NoArgsCommand):
                 word_info = WordInfo.objects.get(uni_lemma=uni_lemma, lang_lemma=lang_lemma)
 
                 WordMapping.objects.create(item=item,
+                                           item_id=itemID,
                                            instrument=instruments_map,
                                            type=item_type,
                                            category=item_category,
