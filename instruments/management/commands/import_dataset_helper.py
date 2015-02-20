@@ -101,7 +101,7 @@ class ImportHelper:
             if column is not None and column != '':
                 columns = [column]
                 if group == 'item':
-                    field = 'item_' + string.replace(field, '.', '_')
+#                    field = 'item_' + string.replace(field, '.', '_')
                     if self.splitcol and field_type == 'word':
                         columns = [column + 'u', column + 'p']
                 for column in columns:

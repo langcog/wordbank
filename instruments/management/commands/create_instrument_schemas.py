@@ -1,5 +1,4 @@
 import xlrd
-import string
 import json
 from django.core.management.base import NoArgsCommand
 
@@ -30,9 +29,9 @@ class Command(NoArgsCommand):
 
             for row in xrange(1, nrows):
                 row_values = list(sheet.row_values(row))
-                item = string.replace(row_values[col_names.index('item')], '.', '_')
+                itemID = row_values[col_names.index('itemID')]
                 choices = row_values[col_names.index('choices')].split(', ')
-                f.write('    %s_choices = %s\n' % (item, [(c,c) for c in choices]))
-                f.write('    item_%s = models.CharField(max_length=20, choices=%s_choices, null=True)\n' % (item, item))
+                f.write('    %s_choices = %s\n' % (itemID, [(c,c) for c in choices]))
+                f.write('    %s = models.CharField(max_length=20, choices=%s_choices, null=True)\n' % (itemID, itemID))
 
         f.close()
