@@ -129,10 +129,31 @@ local <- microbenchmark(EnglishWS = get.instrument.data(english.ws.table.local, 
 times_n <- left_join(local, ns) %>%
   mutate(time = time*1e-09)
 
-write.csv(times_n, "benchmarking.csv")
+write.csv(times_n, "local.csv")
 
 ggplot(times_n, aes(x=n, y=time), color=type) +
   geom_point() + 
   geom_smooth() +
   theme_bw()
-ggsave("local_benchmark.png")
+ggsave("local.png")
+
+
+local.remote <- read.csv("~/Documents/projects/wordbank/scripts/benchmarking/local_remote.csv") %>%
+  as.data.frame() %>%
+  select(-X) %>%
+  distinct()
+
+dev <- read.csv("~/Documents/projects/wordbank/scripts/benchmarking/dev.csv") %>%
+  as.data.frame() %>%
+  select(-X) %>%
+  arrange(expr) %>%
+  mutate(type = "dev")
+
+data <- bind_rows(local.remote, dev)
+
+ggplot(data, aes(x=n, y=time, colour=type)) +
+  geom_point() + 
+  geom_smooth() +
+  theme_bw()
+ggsave("~/Documents/projects/wordbank/scripts/benchmarking/benchmarking.pdf",
+       width=6, height=4)
