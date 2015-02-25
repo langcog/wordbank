@@ -64,5 +64,5 @@ class Administration(models.Model):
     data_id = models.IntegerField()
     age = models.IntegerField()
     data_age = models.IntegerField(null=True, blank=True)
-
-
+    production = models.IntegerField()
+    comprehension = models.IntegerField()
