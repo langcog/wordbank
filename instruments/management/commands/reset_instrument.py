@@ -1,6 +1,5 @@
 from django.core.management.base import NoArgsCommand
 from common.models import *
-import instruments.models
 
 
 # deletes all administration and child objects for a given instrument (language and form)
