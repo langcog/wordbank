@@ -34,7 +34,7 @@ list.words.by.id <- function(word.data) {
   return(words)
 }
 
-tables <- get.instrument.tables(instruments.table)
+tables <- get.instrument.tables(wordbank, instruments.table)
 instrument.tables <- tables %>%
   group_by(instrument_id) %>%
   do(words.by.definition = list.words.by.definition(filter(items, instrument_id==.$instrument_id,

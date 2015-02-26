@@ -2,7 +2,7 @@ library(dplyr)
 library(tidyr)
 library(RMySQL)
 
-get.instrument.tables <- function(instruments.table) {
+get.instrument.tables <- function(db, instruments.table) {
   
   instrument.tables <- as.data.frame(instruments.table) %>%
     mutate(table.name = paste("instruments", tolower(language), tolower(form), sep="_")) %>%
