@@ -8,7 +8,7 @@ get.instrument.tables <- function(db, instruments.table) {
     mutate(table.name = paste("instruments", tolower(language), tolower(form), sep="_")) %>%
     rename(instrument_id = id) %>%
     group_by(instrument_id, language, form) %>%
-    do(table = tbl(wordbank, .$table.name))
+    do(table = tbl(db, .$table.name))
   
   return(instrument.tables)
   
