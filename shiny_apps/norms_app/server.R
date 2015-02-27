@@ -16,55 +16,63 @@ child.table <- tbl(wordbank, "common_child")
 instruments.table <- tbl(wordbank, "common_instrumentsmap")
 momed.table <- tbl(wordbank, "common_momed")
 
+instrument.tables <- get.instrument.tables(wordbank, instruments.table)
+
 admins <- get.administration.data(momed.table, child.table,
                                   instruments.table, admin.table) %>%
   gather(measure, vocab, comprehension, production)
 
+plot.attr.fun <- function(form, measure) {
+  plot.attr = list()
+  if(form == "WG") {
+    if(measure == "comprehension") {
+      plot.attr$ylabel <- "Size of Receptive Vocabulary"
+    } else {
+      plot.attr$ylabel <- "Size of Productive Vocabulary" 
+    }
+    plot.attr$xlims = c(8,18)
+    plot.attr$xbreaks = 8:18
+  } else {
+    plot.attr$ylabel = "Size of Productive Vocabulary"
+    plot.attr$xlims = c(16,30)
+    plot.attr$xbreaks = 16:30
+  }
+  return(plot.attr)
+}
 
 ## DEBUGGING
-input <- list(language = "Danish", form = "WS", measure = "production",
-              qsize = ".1")
-
+#input <- list(language = "Danish", form = "WS", measure = "production",
+#              qsize = ".1")
+#plot.attr <- function(input){plot.attr.fun(input$form, input$measure)}
+  
 ############## STUFF THAT RUNS WHEN USER CHANGES SOMETHING ##############
 shinyServer(function(input, output) {
+  
+  data <- reactive({filter(admins,
+                           language == input$language,
+                           form == input$form,
+                           measure == input$measure)})
+    
+  plot.attr <- reactive({plot.attr.fun(input$form, input$measure)})
   
   output$plot <- renderPlot({
     
     qs <- as.numeric(input$qsize)
     cuts <- seq(0.0, 1.0, by=qs)
     
-    data <- admins %>%
-      filter(language == input$language,
-             form == input$form,
-             measure == input$measure) %>%
+    p.data <- data() %>%
       group_by(age) %>%
-      mutate(p = rank(vocab)/length(vocab),
-             q = cut(p, breaks=cuts, 
-                     labels=cuts[2:length(cuts)]-qs/2))
-    
-    if(input$form == "WG") {
-      if(input$measure == "comprehension") {
-        label <- "Size of Receptive Vocabulary"
-      } else {
-        label <- "Size of Productive Vocabulary" 
-      }
-      data %<>% filter(age >= 8 & age <= 18)
-      xlims = c(8,18)
-      xbreaks = 8:18
-    } else {
-      data %<>% filter(age >= 16 & age <= 30)
-      xlims = c(16,30)
-      xbreaks = 16:30
-      label = "Size of Productive Vocabulary"
-    }
-    
-    ggplot(data, aes(x=age, y=vocab, colour=q)) + 
+      mutate(percentile = rank(vocab)/length(vocab),
+             quantile = cut(percentile, breaks=cuts, 
+                            labels=cuts[2:length(cuts)]-qs/2))
+        
+    ggplot(p.data, aes(x=age, y=vocab, colour=quantile)) + 
       geom_jitter(width=.1) +
       geom_smooth(se=FALSE, span=1) +
       scale_x_continuous(name = "Age (months)",
-                         breaks = xbreaks,
-                         limits = xlims) +
-      ylab(label) +
+                         breaks = plot.attr()$xbreaks,
+                         limits = plot.attr()$xlims) +
+      ylab(plot.attr()$ylabel) +
       scale_colour_discrete(name="Quantile Midpoint")
     
   })
@@ -81,7 +89,7 @@ shinyServer(function(input, output) {
                                            language == input$language)$form), selected = 1)
   })
   
-  output$measure_selector <- renderUI({    
+  output$measure_selector <- renderUI({
     if (input$form == "WG") {
       measures <- list("Produces" = "production", "Understands" = "comprehension")
     } else if (input$form == "WS") {
