@@ -60,13 +60,13 @@ shinyServer(function(input, output) {
     qs <- as.numeric(input$qsize)
     cuts <- seq(0.0, 1.0, by=qs)
     
-    p.data <- data() %>%
+    quantile.data <- data() %>%
       group_by(age) %>%
       mutate(percentile = rank(vocab)/length(vocab),
              quantile = cut(percentile, breaks=cuts, 
                             labels=cuts[2:length(cuts)]-qs/2))
         
-    ggplot(p.data, aes(x=age, y=vocab, colour=quantile)) + 
+    ggplot(quantile.data, aes(x=age, y=vocab, colour=quantile)) + 
       geom_jitter(width=.1) +
       geom_smooth(se=FALSE, span=1) +
       scale_x_continuous(name = "Age (months)",
