@@ -44,10 +44,12 @@ instrument.tables <- tables %>%
                                            type=='word'))) %>%
   left_join(tables)
 
-
-## SETUP
-input <- list(language = "Norwegian", form = "WS", measure = "produces",
-              word1 = "item_1", word2 = "item_1", word3 = "item_1")
+## DEBUGGING
+#input <- list(language = "Danish", form = "WS", measure = "produces",
+#              word1 = "item_1", word2 = "item_1", word3 = "item_1")
+# instrument <- function() {return(filter(instrument.tables,
+#                                       language == input$language,
+#                                       form == input$form))}
 
 ############## STUFF THAT RUNS WHEN USER CHANGES SOMETHING ##############
 shinyServer(function(input, output) {  
@@ -55,21 +57,15 @@ shinyServer(function(input, output) {
   instrument <- reactive({filter(instrument.tables,
                                  language == input$language,
                                  form == input$form)})
-
-#   instrument <- function() {return(filter(instrument.tables,
-#                                         language == input$language,
-#                                         form == input$form))}
   
   ### PLOT RENDERER
   output$plot <- renderPlot({
-
+    
     instrument.table <- instrument()$table[[1]]
     instrument.words.by.definition <- instrument()$words.by.definition[[1]]
     instrument.words.by.id <- instrument()$words.by.id[[1]]
-    words <- c(input$word1, input$word2, input$word3)
-#    columns <- instrument.words.by.definition[c(input$word1, input$word2, input$word3)]
-
-    data <- get.instrument.data(instrument.table, words) %>%
+    
+    data <- get.instrument.data(instrument.table, input$words) %>%
       filter(measure == input$measure) %>%
       left_join(admins) %>%
       group_by(item.id, age) %>%
@@ -106,37 +102,21 @@ shinyServer(function(input, output) {
       geom_dl(method = list(dl.trans(x=x +.2),"last.qp",cex=1)) +
       scale_colour_brewer(palette="Set1")
     
-  })
-  
-  ### WORD SELECTORS
-  output$word1_selector <- renderUI({
-    selectizeInput("word1", label = h4("Word1"), 
-                   choices = instrument()$words.by.definition[[1]], selected = 1)
-  })
-  
-  output$word2_selector <- renderUI({ 
-    selectizeInput("word2", label = h4("Word2"), 
-                   choices = instrument()$words.by.definition[[1]], selected = 1)
-  })
-  
-  output$word3_selector <- renderUI({
-    selectizeInput("word3", label = h4("Word3"), 
-                   choices = instrument()$words.by.definition[[1]], selected = 1)
-  })
+  })  
   
   ### FIELD SELECTORS
-  output$language_selector_control <- renderUI({    
+  output$language_selector <- renderUI({    
     selectizeInput("language", label = h4("Language"), 
                    choices = unique(instrument.tables$language), selected = 1)
   })
   
-  output$form_selector_control <- renderUI({    
+  output$form_selector <- renderUI({    
     selectizeInput("form", label = h4("Form"), 
                    choices = unique(filter(instrument.tables,
                                            language == input$language)$form), selected = 1)
   })
-    
-  output$measure_selector_control <- renderUI({    
+  
+  output$measure_selector <- renderUI({    
     if (input$form == "WG") {
       measures <- list("Produces" = "produces", "Understands" = "understands")
     } else if (input$form == "WS") {
@@ -144,6 +124,12 @@ shinyServer(function(input, output) {
     }
     selectizeInput("measure", label = h4("Measure"), 
                    choices = measures, selected = 1)
-    })
+  })
+  
+  output$words_selector <- renderUI({
+    selectizeInput("words", label = h4("Words"), 
+                   choices = instrument()$words.by.definition[[1]],
+                   selected = 1, multiple = TRUE)
+  })
   
 })
