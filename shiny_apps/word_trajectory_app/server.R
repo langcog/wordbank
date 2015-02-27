@@ -1,5 +1,4 @@
 ############## STUFF THAT RUNS ONCE WHEN APP LOADS ##############
-rm(list=ls())
 library(shiny)
 library(tidyr)
 library(ggplot2)
@@ -9,7 +8,6 @@ library(RMySQL)
 library(magrittr)
 source("../app_themes.R")
 source("../data_loading.R")
-#options(shiny.error=NULL)
 Sys.setlocale(locale="C")
 
 wordbank <- src_mysql(dbname="wordbank")
