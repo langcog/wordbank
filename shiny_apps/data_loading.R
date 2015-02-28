@@ -2,6 +2,20 @@ library(dplyr)
 library(tidyr)
 library(RMySQL)
 
+get.common.tables <- function(db) {
+  
+  tables <- list()
+  tables$admin.table <- tbl(db, "common_administration")
+  tables$child.table <- tbl(db, "common_child")
+  tables$instruments.table <- tbl(db, "common_instrumentsmap")
+  tables$momed.table <- tbl(db, "common_momed")
+  tables$source.table <- tbl(db, "common_source")  
+  tables$wordinfo.table <- tbl(db, "common_wordinfo")
+  tables$wordmapping.table <- tbl(db, "common_wordmapping")
+  return(tables)
+
+}
+
 get.instrument.tables <- function(db, instruments.table) {
   
   instrument.tables <- as.data.frame(instruments.table) %>%
