@@ -79,11 +79,7 @@ get.instrument.data <- function(instrument.table, columns) {
     gather_("item_id", "value", columns, convert=TRUE) %>%
     mutate(item.id = as.numeric(substr(item_id, 6, nchar(item_id)))) %>%
     select(-item_id) %>%
-    mutate(value = ifelse(is.na(value), "", value)) %>%
-    mutate(produces = value == 'produces',
-           understands = value == 'understands' | value == 'produces') %>%
-    select(-value) %>%
-    gather(measure, value, produces, understands)
+    mutate(value = ifelse(is.na(value), "", value))
   
   return(instrument.data)
   

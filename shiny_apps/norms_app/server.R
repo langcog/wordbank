@@ -1,26 +1,26 @@
 ############## STUFF THAT RUNS ONCE WHEN APP LOADS ##############
 library(shiny)
+library(magrittr)
 library(tidyr)
+library(dplyr)
 library(ggplot2)
 library(directlabels)
-library(dplyr)
 library(RMySQL)
-library(magrittr)
 source("../app_themes.R")
 source("../data_loading.R")
 
 wordbank <- src_mysql(dbname="wordbank")
 
-admin.table <- tbl(wordbank, "common_administration")
-child.table <- tbl(wordbank, "common_child")
-instruments.table <- tbl(wordbank, "common_instrumentsmap")
-momed.table <- tbl(wordbank, "common_momed")
+common.tables <- get.common.tables(wordbank)
 
-instrument.tables <- get.instrument.tables(wordbank, instruments.table)
-
-admins <- get.administration.data(momed.table, child.table,
-                                  instruments.table, admin.table) %>%
+admins <- get.administration.data(common.tables$momed.table,
+                                  common.tables$child.table,
+                                  common.tables$instruments.table,
+                                  common.tables$admin.table) %>%
   gather(measure, vocab, comprehension, production)
+
+instrument.tables <- get.instrument.tables(wordbank, common.tables$instruments.table)
+languages <- unique(instrument.tables$language)
 
 plot.attr.fun <- function(form, measure) {
   plot.attr = list()
@@ -40,6 +40,27 @@ plot.attr.fun <- function(form, measure) {
   return(plot.attr)
 }
 
+measure.fun <- function(input.form) {
+  if (input.form == "WG") {
+    measures <- list("Produces" = "production", "Understands" = "comprehension")
+  } else if (input.form == "WS") {
+    measures <- list("Produces" = "production")
+  }
+  return(measures)
+}
+
+start.language <- function(language) {
+  ifelse(is.null(language), "English", language)
+}
+
+start.form <- function(form) {
+  ifelse(is.null(form), "WS", form)
+}
+
+start.measure <- function(measure) {
+  ifelse(is.null(measure), "production", measure)
+}
+
 ## DEBUGGING
 #input <- list(language = "Danish", form = "WS", measure = "production",
 #              qsize = ".1")
@@ -49,11 +70,15 @@ plot.attr.fun <- function(form, measure) {
 shinyServer(function(input, output) {
   
   data <- reactive({filter(admins,
-                           language == input$language,
-                           form == input$form,
-                           measure == input$measure)})
+                           language == start.language(input$language),
+                           form == start.form(input$form),
+                           measure == start.measure(input$measure))})
     
-  plot.attr <- reactive({plot.attr.fun(input$form, input$measure)})
+  plot.attr <- reactive({plot.attr.fun(start.form(input$form),
+                                       start.measure(input$measure))})
+  forms <- reactive({unique(filter(instrument.tables,
+                                   language == start.language(input$language))$form)})
+  measures <- reactive({measure.fun(start.form(input$form))})
   
   output$plot <- renderPlot({
     
@@ -80,23 +105,17 @@ shinyServer(function(input, output) {
   ### FIELD SELECTORS
   output$language_selector <- renderUI({    
     selectizeInput("language", label = h4("Language"), 
-                   choices = unique(instrument.tables$language), selected = 1)
+                   choices = languages, selected = start.language(NULL))
   })
   
   output$form_selector <- renderUI({    
     selectizeInput("form", label = h4("Form"), 
-                   choices = unique(filter(instrument.tables,
-                                           language == input$language)$form), selected = 1)
+                   choices = forms(), selected = start.form(NULL))
   })
   
   output$measure_selector <- renderUI({
-    if (input$form == "WG") {
-      measures <- list("Produces" = "production", "Understands" = "comprehension")
-    } else if (input$form == "WS") {
-      measures <- list("Produces" = "production")
-    }
     selectizeInput("measure", label = h4("Measure"), 
-                   choices = measures, selected = 1)
+                   choices = measures(), selected = start.measure(NULL))
   })
   
 })
