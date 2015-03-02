@@ -70,6 +70,10 @@ data.fun <- function(input.language, input.form, input.measure, input.words) {
   instrument.words.by.id <- instrument$words.by.id[[1]]
 
   data <- get.instrument.data(instrument.table, input.words) %>%
+    mutate(produces = value == 'produces',
+           understands = value == 'understands' | value == 'produces') %>%
+    select(-value) %>%
+    gather(measure, value, produces, understands) %>%
     filter(measure == input.measure) %>%
     left_join(admins) %>%
     group_by(item.id, age) %>%
@@ -104,7 +108,7 @@ plot.attr.fun <- function(input.form, input.measure) {
   return(plot.attr)
 }
 
-measure.fun <- function(input.form="WS") {
+measure.fun <- function(input.form) {
   if (input.form == "WG") {
     measures <- list("Produces" = "produces", "Understands" = "understands")
   } else if (input.form == "WS") {
@@ -157,17 +161,17 @@ shinyServer(function(input, output) {
   ### FIELD SELECTORS
   output$language_selector <- renderUI({    
     selectizeInput("language", label = h4("Language"), 
-                   choices = languages, selected = 1)
+                   choices = languages, selected = start.language(NULL))
   })
   
   output$form_selector <- renderUI({    
     selectizeInput("form", label = h4("Form"),
-                   choices = forms(), selected = 1)
+                   choices = forms(), selected = start.form(NULL))
   })
   
   output$measure_selector <- renderUI({
     selectizeInput("measure", label = h4("Measure"), 
-                   choices = measures(), selected = 1)
+                   choices = measures(), selected = start.measure(NULL))
   })
   
   output$words_selector <- renderUI({

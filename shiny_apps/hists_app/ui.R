@@ -10,12 +10,10 @@ shinyUI(fluidPage(
       uiOutput("language_selector"),
       uiOutput("form_selector"),      
       uiOutput("measure_selector"),
-      
       selectInput("qsize", label = h4("Quantile size"), 
                   choices = list("10%" = .1, "20%" = .2, "25%" = .25),
-                  selected = 1),
-      sliderInput("age", label = h4("Age (Months)"), 
-                  min = 8, max = 36, value = 24)
+                  selected = .2),
+      uiOutput("age_selector")
       ),
 
     # Show a plot of the generated distribution
