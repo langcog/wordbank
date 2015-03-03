@@ -14,7 +14,7 @@ opts_chunk$set(message=FALSE, warning=FALSE, cache=TRUE)
 ```
 
 Load Required Libraries
-```{r, message=FALSE,cache=FALSE}
+```{r, cache=FALSE}
 #load libraries for data manipulation and graphing
 library(dplyr)
 library(directlabels)
@@ -29,7 +29,7 @@ source('../shiny_apps/data_loading.R')
 ```
 
 Load in Database Tables
-```{r, message=FALSE}
+```{r}
 ## Open database connection
 #"54.200.225.86"
 wordbank <- src_mysql(dbname='wordbank',host="54.149.39.46", 
@@ -46,20 +46,35 @@ admins <- get.administration.data(common.tables$momed,
 
 items <- get.item.data(common.tables$wordmapping,
                        common.tables$instrumentsmap)
+
+instrument.tables <- get.instrument.tables(wordbank,common.tables$instrumentsmap)
 ```
 
-```{r, message=FALSE}
+```{r}
 ## Functions for bootstrapping 95% confidence intervals
 na.median <- function(x) {median(x,na.rm=T)}
-theta <- function(x,xdata,na.rm=T) {median(xdata[x],na.rm=na.rm)}
-ci.low <- function(x,na.rm=T) {
+median.theta <- function(x,xdata,na.rm=T) {median(xdata[x],na.rm=na.rm)}
+ci.median.low <- function(x,na.rm=T) {
   median(x,na.rm=na.rm) - 
-    quantile(bootstrap(1:length(x),1000,theta,x,na.rm=na.rm)$thetastar,
+    quantile(bootstrap(1:length(x),1000,median.theta,x,na.rm=na.rm)$thetastar,
              .025,na.rm=na.rm)}
-ci.high <- function(x,na.rm=T) {
-  quantile(bootstrap(1:length(x),1000,theta,x,na.rm=na.rm)$thetastar,
+ci.median.high <- function(x,na.rm=T) {
+  quantile(bootstrap(1:length(x),1000,median.theta,x,na.rm=na.rm)$thetastar,
            .975,na.rm=na.rm) - median(x,na.rm=na.rm)}
 
+na.mean <- function(x) {mean(x,na.rm=T)}
+mean.theta <- function(x,xdata,na.rm=T) {mean(xdata[x],na.rm=na.rm)}
+ci.mean.low <- function(x,na.rm=T) {
+  mean(x,na.rm=na.rm) - 
+    quantile(bootstrap(1:length(x),1000,mean.theta,x,na.rm=na.rm)$thetastar,
+             .025,na.rm=na.rm)}
+ci.mean.high <- function(x,na.rm=T) {
+  quantile(bootstrap(1:length(x),1000,mean.theta,x,na.rm=na.rm)$thetastar,
+           .975,na.rm=na.rm) - mean(x,na.rm=na.rm)}
+```
+
+Load by-child productive vocabulary data
+```{r}
 num.words <- items %>%
   filter(type == "word") %>%
   group_by(language) %>%
@@ -69,7 +84,7 @@ vocab.data <- admins %>%
   group_by(language, sex, age) %>%
   left_join(num.words) %>%
   mutate(production = as.numeric(production)/n) %>%
-  summarise_each(funs(na.median,ci.low,ci.high),production) %>%
+  summarise_each(funs(na.median,ci.median.low,ci.median.high),production) %>%
   ungroup()%>%
   arrange(age,language,sex)
 
@@ -82,8 +97,8 @@ Plot Median Productive Vocabularies
 ggplot(vocab.data,
        aes(x=age, y=na.median,colour=sex,label=sex))+
   facet_wrap(~ language) +
-  geom_pointrange(aes(ymin = na.median-ci.low,
-                      ymax = na.median+ci.high),
+  geom_pointrange(aes(ymin = na.median-ci.median.low,
+                      ymax = na.median+ci.median.high),
                   size = .8,
                   show_guide = FALSE) +
   geom_line(size=1) +
@@ -95,6 +110,56 @@ ggplot(vocab.data,
   theme(legend.position="none", panel.grid=element_blank()) +
   geom_dl(method = list(dl.trans(x=x +.2),"last.qp",cex=1)) +
   scale_color_manual(values = c("#e41a1c","#377eb8"))
+```
+
+Load color data for each language
+```{r}
+c.danish <- c("r\xf8d", "gul", "gr\xf8n", "bl\xe5", "sort", "hvid") #lille "orange"  "brun"
+c.english <- c("red",  "yellow", "green", "blue", "black", "white") #"orange" "brown"
+c.norwegian <- c ("r\xf8d", "gul", "gr\xf8nn" ,"bl\xe5", "svart", "hvit")  #"brun"  "oransje"
+c.spanish <- c("rojo", "amarillo", "verde", "azul", "negro", "blanco") #rosa-pink "morado"-purple missing brown orange
+
+all.colors <- expand.grid(color = c.english, language = c("Danish", "English", "Norwegian","Spanish"))%>%
+  mutate(definition = c(c.danish,c.english,c.norwegian,c.spanish)) %>%
+  left_join(select(filter(items,form=="WS"),definition,item.id,language))
+
+get.language.data <- function(lang) {
+  language.data <- get.instrument.data(filter(instrument.tables, language==lang, form=="WS")$table[[1]],
+                    filter(all.colors, language==lang)$item.id) %>%
+    mutate(language = lang)
+  return(language.data)
+}
+
+languages <- unique(instrument.tables$language)
+color.data <- bind_rows(sapply(languages, get.language.data, simplify=FALSE)) %>%
+  mutate(item.id = paste("item_",item.id,sep="")) %>%
+  left_join(all.colors)
+
+color.byage.data <- color.data %>%
+  left_join(admins) %>%
+  group_by(language,color,age) %>%
+  mutate(produces = value == "produces") %>%
+  summarise_each(funs(na.mean,ci.mean.high,ci.mean.low),produces)
+```
+
+Plot color data
+```{r,message=FALSE,fig.height=8,fig.width=9}
+#quartz(width=10, height=6)
+ggplot(color.byage.data, aes(x=age, y=na.mean, color=color, label=color)) +
+  facet_wrap(~ language) +
+  geom_pointrange(aes(ymin = na.mean-ci.mean.low,
+                      ymax = na.mean+ci.mean.high),
+                  size = .8,
+                  show_guide = FALSE) +
+  geom_line(size=1) +
+  theme_bw(base_size=14) +
+  theme(legend.position="none", panel.grid=element_blank()) +
+  geom_dl(method = list(dl.trans(x=x +.2),"last.qp",cex=.8)) +
+  scale_color_manual(values=c("#d7191c",  "gold1", "#1a9641", "#2c7bb6", "black", "gray87")) +
+  scale_x_continuous(breaks=seq(16,30,2),limits=c(16,31.5),
+                     name = "Age (months)")+
+  scale_y_continuous(name = "Prop. Children Producing",
+                     limits=c(0,1))
 ```
 
 
