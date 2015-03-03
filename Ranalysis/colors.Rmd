@@ -1,0 +1,161 @@
+---
+title: "Grammatical Category Analysis"
+author: "Dan Yurovsky, Mika Braginsky, & Mike Frank (in no particular order)"
+date: "DeceJanuarymber 30, 2014"
+output: html_document
+---
+`r library(knitr)`
+`r opts_chunk$set(message=FALSE, warning=FALSE)`
+
+***
+
+## Data Loading
+
+Load required Libraries
+```{r}
+rm(list=ls())
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(RMySQL)
+library(stringr)
+library(magrittr)
+library(pcaPP)
+library(directlabels)
+library(proto)
+```
+
+Load in Wordbank tata
+```{r}
+## OPEN DATABASE CONNECTION ##
+wordbank <- src_mysql(dbname='wordbank',host="54.149.39.46",
+                      user="wordbank",password="wordbank")
+
+## NOW LOAD TABLES ##
+source.table <- tbl(wordbank,"common_source")
+admin.table <- tbl(wordbank,"common_administration")
+child.table <- tbl(wordbank,"common_child")
+wordmapping.table <- tbl(wordbank,"common_wordmapping")
+instruments.table <- tbl(wordbank,"common_instrumentsmap")
+english.ws.table <- tbl(wordbank,"instruments_english_ws")
+spanish.ws.table <- tbl(wordbank,"instruments_spanish_ws")
+norwegian.ws.table <- tbl(wordbank,"instruments_norwegian_ws")
+danish.ws.table <- tbl(wordbank,"instruments_danish_ws")
+```
+
+Get kid data and put together. 
+```{r}
+# Get administration info
+admins <- admin.table %>%
+  select(data_id,child_id,age,source_id) %>%
+  rename(id = data_id, child.id = child_id, source.id = source_id) 
+admins <- as.data.frame(admins)
+
+# Get demographic variables for each child
+demos <- select(child.table,id,sex,mom_ed,birth_order) %>%
+  rename(child.id = id) # Rename id fields
+demos <- as.data.frame(demos)
+
+# Join age and demographics together
+child.data <- as.tbl(left_join(admins,demos))
+```
+
+Set up mappings and instruments.
+```{r}
+mapping <- as.data.frame(wordmapping.table)
+instruments <- as.data.frame(instruments.table) %>%
+  rename(instrument_id = id)
+items <- left_join(mapping, instruments)
+```
+
+Fucntion for getting all of the data in wordbank for a given language (kid x item).
+```{r}
+get.language.data <- function(lang.table, lang.items, lang, child.data) {
+  
+  instrument.items <- lang.items %>% 
+    filter(language == lang, form == 'WS') %>%
+    select(item, type, category, lexical_category, definition) %>%
+    mutate(item = str_replace(item, "\\.", "_")) # Fix _/. inconsistencies
+  
+  instrument.data <- as.data.frame(lang.table) %>%
+    rename(id = basetable_ptr_id) %>% # Rename the id
+    gather(item, value, -id) %>% # Arrange in longform
+    mutate(item = str_replace(item, "item_", "")) # Strip off item_ 
+  
+  d <- left_join(instrument.data, instrument.items)
+  d <- left_join(d, child.data)
+  }
+```
+
+Get (kid x item) data for all languages.
+```{r}
+d.english <- get.language.data(lang.table=english.ws.table, 
+                               lang.items=items, 
+                               lang="English",
+                               child.data)
+
+d.spanish <- get.language.data(lang.table=spanish.ws.table, 
+                               lang.items=items, 
+                               lang="Spanish",
+                               child.data)
+
+d.norwegian <- get.language.data(lang.table=norwegian.ws.table, 
+                                 lang.items=items, 
+                                 lang="Norwegian",
+                                 child.data)
+
+# Norwegian data is loaded in funny -- NAs in wordform are actually 0s
+d.norwegian[d.norwegian$type %in% c("word_form","word")
+            & is.na(d.norwegian$value),]$value = ""
+
+d.danish <- get.language.data(lang.table=danish.ws.table, 
+                              lang.items=items, 
+                              lang="Danish",
+                              child.data)
+
+# Danish data is loaded in funny -- NAs in wordform are actually 0s
+d.danish[d.danish$type %in% c("word_form","word")
+         & is.na(d.danish$value),]$value = ""
+```
+
+```{r}
+lang.color <- function(lang.data, colors, lang) {
+  
+  color.data <- lang.data %>%
+  filter(source.id != 25,
+         age>15 & age <33,
+         item %in% colors)
+  
+  color.summary <- color.data %>%
+    group_by(age, item) %>%
+    summarise(knowers = sum(value=="produces") / length(value))
+  
+  color.summary$lang = lang
+  return(color.summary)
+  
+  }
+c.english <- c("red", "orange", "yellow", "green", "blue",
+               "purple", "gray", "black", "white", "brown", "pink")
+data.english <- lang.color(d.english, c.english, "English")
+data.english$item = factor(data.english$item)
+
+c.spanish <- c("rojo", "rosa", "amarillo", "verde",
+               "azul", "morado", "negro", "blanco")
+data.spanish <- lang.color(d.spanish, c.spanish, "Spanish")
+data.spanish$item = factor(data.spanish$item,
+                           labels=c("yellow", "blue", "white", "purple",
+                                    "black", "red", "pink", "green"))
+
+data <- rbind(data.english, data.spanish)
+```
+
+```{r}
+quartz(width=10, height=6)
+ggplot(data, aes(x=age, y=knowers, color=item, fill=item, label=item)) +
+  facet_grid(.~lang) +
+  geom_point() +
+  geom_smooth(aes(group=item), method='lm', se=FALSE) +
+  scale_fill_manual(values=c("black", "blue", "brown", "green", "red", "white", "yellow", "purple", "pink")) +
+  scale_color_manual(values=c("black", "blue", "brown", "green", "red", "white", "yellow", "purple", "pink")) +
+  scale_y_continuous(name = "proportion of children producing")
+```
