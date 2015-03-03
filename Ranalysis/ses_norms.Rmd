@@ -182,7 +182,7 @@ mom.ed.ddd <- all.mom.ed.data %>%
                            "Third Quartile", "Fourth Quartile")))
                    #cuts[2:length(cuts)]-cut.by/2))
 
-# quartz(height=6,width=8)
+quartz(height=6,width=8)
 ggplot(mom.ed.ddd, aes(x=age, y=vocab.mean,colour=mom.ed))+
   geom_jitter(size = 1,position = position_jitter(.1), pch = "o") +
   geom_smooth(se=FALSE,span = 1,method="loess")+
