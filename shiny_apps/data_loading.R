@@ -29,7 +29,7 @@ get.common.tables <- function(db) {
 # whose $table column is the corresponding tbl
 get.instrument.tables <- function(db, instrumentsmap) {
   
-  instrument.tables <- as.data.frame(instruments.table) %>%
+  instrument.tables <- as.data.frame(instrumentsmap) %>%
     mutate(table.name = paste("instruments", tolower(language), tolower(form), sep="_")) %>%
     rename(instrument_id = id) %>%
     group_by(instrument_id, language, form) %>%
