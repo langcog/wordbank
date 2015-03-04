@@ -14,13 +14,13 @@ wordbank <- src_mysql(dbname="wordbank")
 
 common.tables <- get.common.tables(wordbank)
 
-admins <- get.administration.data(common.tables$momed.table,
-                                  common.tables$child.table,
-                                  common.tables$instruments.table,
-                                  common.tables$admin.table)
+admins <- get.administration.data(common.tables$momed,
+                                  common.tables$child,
+                                  common.tables$instrumentsmap,
+                                  common.tables$administration)
 
-items <- get.item.data(common.tables$wordmapping.table,
-                       common.tables$instruments.table)
+items <- get.item.data(common.tables$wordmapping,
+                       common.tables$instrumentsmap)
 
 list.words.by.definition <- function(word.data) {
   words <- word.data$item.id
@@ -34,7 +34,7 @@ list.words.by.id <- function(word.data) {
   return(words)
 }
 
-tables <- get.instrument.tables(wordbank, common.tables$instruments.table)
+tables <- get.instrument.tables(wordbank, common.tables$instrumentsmap)
 instrument.tables <- tables %>%
   group_by(instrument_id) %>%
   do(words.by.definition = list.words.by.definition(filter(items, instrument_id==.$instrument_id,
@@ -59,7 +59,7 @@ start.measure <- function(measure) {
 
 start.words <- function(words) {
   if(is.null(words)) {c("item_1")} else {words}
-  }
+}
 
 
 data.fun <- function(input.language, input.form, input.measure, input.words) {
@@ -68,7 +68,7 @@ data.fun <- function(input.language, input.form, input.measure, input.words) {
   instrument.table <- instrument$table[[1]]
   instrument.words.by.definition <- instrument$words.by.definition[[1]]
   instrument.words.by.id <- instrument$words.by.id[[1]]
-
+  
   data <- get.instrument.data(instrument.table, input.words) %>%
     mutate(produces = value == 'produces',
            understands = value == 'understands' | value == 'produces') %>%
@@ -80,7 +80,7 @@ data.fun <- function(input.language, input.form, input.measure, input.words) {
     summarise(score = mean(value, na.rm=TRUE)) %>%
     rowwise %>%
     mutate(word = instrument.words.by.id[[paste("item_", item.id, sep="")]])
-    
+  
   if (input.form == "WS") {
     data %<>% filter(age >= 16 & age <= 30)
   } else if (input.form == "WG") {
