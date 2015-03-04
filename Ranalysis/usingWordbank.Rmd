@@ -1,132 +1,236 @@
 ---
 title: "Accessing the Wordbank Database"
-author: "Dan Yurovsky"
-date: "Oct 29, 2014"
-output: html_document
+author: "Dan Yurovsky and Mika Braginsky"
+date: "March 03, 2015"
+output:
+  html_document:
+    highlight: tango
+    theme: spacelab
 ---
 
-Load Required Libraries
-```{r, message=FALSE}
-# clear all previous variables
-rm(list=ls())
+This script shows the basics of how to connect to the Wordbank database, load data from it, and work with that data. We illustrate this with two sample analyses: the first works with aggregate vocabulary size data and breaks down vocabulary development by the child's sex, and the second works with individual item data and looks at the trajectories of color words over age.
 
-#load libraries for data manipulation and graphing
+```{r setup, include=FALSE}
+library(knitr)
+opts_chunk$set(message=FALSE, warning=FALSE, cache=TRUE)
+```
+
+Load required libraries.
+```{r, cache=FALSE}
 library(dplyr)
 library(directlabels)
 library(RMySQL)
 library(tidyr)
-library(stringr)
 library(bootstrap)
 library(ggplot2)
+library(RCurl)
 ```
 
-Load in Database Tables
-```{r, message=FALSE}
-## Open database connection
-wordbank <- src_mysql(dbname='wordbank',host="54.200.225.86", 
-                      user="wordbank",password="wordbank")
-
-## Show the wordbank tables
-print(wordbank)
-
-## Load relevant tables
-admin.table <- tbl(wordbank,"common_administration")
-child.table <- tbl(wordbank,"common_child")
-ws.table <- tbl(wordbank,"instruments_ws")
+Get a script that provides interface functions for pulling data out of Wordbank.
+```{r}
+url <- 'https://raw.githubusercontent.com/langcog/wordbank/crossling/shiny_apps/data_loading.R'
+script <- getURL(url, ssl.verifypeer = FALSE)
+eval(parse(text = script))
 ```
 
-Load MCDI data for each child
-```{r, message=FALSE}
-# Select just the MCDI words from the Words and Sentences Table
-ws.vocab.words <- as.data.frame(select(ws.table,
-                                       basetable_ptr_id,
-                                       col_baabaa:col_connthen)) %>%
-  rename(id = basetable_ptr_id) %>% # Rename the id
-  gather(word,produces,col_baabaa:col_connthen) %>% # Arrange in longform
-  mutate(word = str_replace(word, "col_", "")) # Strip off col_ from words
-ws.vocab.words <- as.tbl(ws.vocab.words)
-
-# The child by word representation
-print(ws.vocab.words)
-
-# Compute a productive vocabulary for each child
-ws.scores <- as.tbl(ws.vocab.words %>%
-  group_by(id) %>% # Group by child
-  summarise(productive = sum(produces))) # Compute productive vocabulary
-  
-# The child by productive vocabulary representation
-print(ws.scores)
+Connect to the Wordbank database.
+```{r, cache=FALSE}
+wordbank <- src_mysql(dbname='wordbank', host="54.149.39.46", #"54.200.225.86"
+                      user="wordbank", password="wordbank")
 ```
 
-Load Demographic data for each child
-```{r, message=FALSE}
-# Get the age of each child
-admins <- admin.table %>%
-  select(data_id,child_id,age,source_id) %>%
-  rename(id = data_id, child.id = child_id,source.id = source_id) 
-admins <- as.data.frame(admins)
-
-# Get demographic variables for each child
-demos <- select(child.table,id,gender,mom_ed,birth_order) %>%
-  rename(child.id = id) # Rename id fields
-demos <- as.data.frame(demos)
-
-# Join age and demographics together
-child.data <- as.tbl(left_join(admins,demos))
-
-# Show demographics
-print(child.data)
+Get all the common tables.
+```{r}
+common.tables <- get.common.tables(wordbank)
 ```
 
-Combine MDI data and demographics
-```{r, message=FALSE}
-ws.data <- left_join(ws.scores, child.data) %>%
-  filter(age >= 16 & age <= 30, # filter down to just relevant range
-         source.id == 1) %>% # Just the original norming data
-  select(-child.id,-source.id) #drop redundant columns
+Get all the instrument tables.
+```{r}
+instrument.tables <- get.instrument.tables(wordbank, common.tables$instrumentsmap)
 ```
 
-Compute productive vocabulary norms for original norming data
-```{r, message=FALSE}
-## Functions for bootstrapping 95% confidence intervals
+Load in administration data.
+```{r}
+admins <- get.administration.data(common.tables$momed, common.tables$child,
+                                  common.tables$instrumentsmap, common.tables$administration) %>%
+  filter(!is.na(sex))
+```
+
+Number of administrations by sex for each instrument:
+```{r, echo=FALSE}
+admins.summary <- admins %>%
+  group_by(language, form, sex) %>%
+  summarise(n = n()) %>%
+  spread(sex, n)
+
+kable(admins.summary,
+      col.names = c("language", "form", "female", "male"),
+      align = c("l", "c", "r", "r"))
+```
+
+Load in item data.
+```{r}
+items <- get.item.data(common.tables$wordmapping,
+                       common.tables$instrumentsmap)
+```
+
+Number of items by category for each instrument:
+```{r, echo=FALSE}
+items.summary <- items %>%
+  group_by(language, form, type) %>%
+  summarise(n = n()) %>%
+  spread(type, n) %>%
+  select(language, form, word, word_form, complexity) %>%
+  mutate(word_form = ifelse(is.na(word_form), 0, word_form),
+         complexity = ifelse(is.na(complexity), 0, complexity))
+
+kable(items.summary,
+      align = c("l", "c", "c", "c", "c"))
+```
+
+```{r, echo=FALSE}
+#Functions for bootstrapping 95% confidence intervals.
 na.median <- function(x) {median(x,na.rm=T)}
-theta <- function(x,xdata,na.rm=T) {median(xdata[x],na.rm=na.rm)}
-ci.low <- function(x,na.rm=T) {
+median.theta <- function(x,xdata,na.rm=T) {median(xdata[x],na.rm=na.rm)}
+ci.median.low <- function(x,na.rm=T) {
   median(x,na.rm=na.rm) - 
-    quantile(bootstrap(1:length(x),1000,theta,x,na.rm=na.rm)$thetastar,
+    quantile(bootstrap(1:length(x),1000,median.theta,x,na.rm=na.rm)$thetastar,
              .025,na.rm=na.rm)}
-ci.high <- function(x,na.rm=T) {
-  quantile(bootstrap(1:length(x),1000,theta,x,na.rm=na.rm)$thetastar,
+ci.median.high <- function(x,na.rm=T) {
+  quantile(bootstrap(1:length(x),1000,median.theta,x,na.rm=na.rm)$thetastar,
            .975,na.rm=na.rm) - median(x,na.rm=na.rm)}
 
-productive.vocab <- ws.data %>%
-  group_by(age,gender) %>%
-  summarise(
-    median = median(productive),
-    ci.l = ci.low(productive),
-    ci.h = ci.high(productive),
-    n = n())
-
-#Show productive vocabulary estimates
-head(productive.vocab)
+na.mean <- function(x) {mean(x,na.rm=T)}
+mean.theta <- function(x,xdata,na.rm=T) {mean(xdata[x],na.rm=na.rm)}
+ci.mean.low <- function(x,na.rm=T) {
+  mean(x,na.rm=na.rm) - 
+    quantile(bootstrap(1:length(x),1000,mean.theta,x,na.rm=na.rm)$thetastar,
+             .025,na.rm=na.rm)}
+ci.mean.high <- function(x,na.rm=T) {
+  quantile(bootstrap(1:length(x),1000,mean.theta,x,na.rm=na.rm)$thetastar,
+           .975,na.rm=na.rm) - mean(x,na.rm=na.rm)}
 ```
 
-Plot Mean Productive Vocabularies
-```{r, message=FALSE}
-quartz(width=6,height=4)
-ggplot(productive.vocab,
-       aes(x=age, y=median,colour=gender,label=gender))+
-  geom_pointrange(aes(ymin = median-ci.l,
-                      ymax = median+ci.h),
+### Sample aggregate analysis: sex differences in vocabulary development
+
+Get by-child productive vocabulary data.
+```{r}
+num.words <- items %>%
+  filter(form == "WS", type == "word") %>%
+  group_by(language) %>%
+  summarise(n = n())
+
+vocab.data <- admins %>%
+  select(admin.id, language, form, age, sex, production) %>%
+  filter(form == "WS", age >= 16, age <= 30) %>%
+  group_by(language, sex, age) %>%
+  left_join(num.words) %>%
+  mutate(production = as.numeric(production)/n) %>%
+  summarise_each(funs(na.median, ci.median.low, ci.median.high), production)
+```
+
+What these data look like for a given age:
+```{r, echo=FALSE}
+kable(filter(vocab.data, age==24),
+      col.names = c("language", "sex", "age", "median", "confidence interval (lower)",
+                    "confidence interval (upper)"),
+      align = c("l", "c", "c", "c", "c", "c"),
+      digits = 3)
+```
+
+Plot median productive vocabulary as a function of age.
+```{r, fig.height=8, fig.width=9}
+ggplot(vocab.data,
+       aes(x=age, y=na.median,colour=sex,label=sex))+
+  facet_wrap(~ language) +
+  geom_pointrange(aes(ymin = na.median-ci.median.low,
+                      ymax = na.median+ci.median.high),
                   size = .8,
                   show_guide = FALSE) +
   geom_line(size=1) +
-  scale_x_continuous(breaks=seq(16,30,1),limits=c(16,30.5),
+  scale_x_continuous(breaks=seq(16,30,2),limits=c(16,31),
                      name = "Age (months)")+
-  scale_y_continuous(name = "Median Productive Vocabulary Size",
-                     limits=c(0,680)) +
+  scale_y_continuous(name = "Median Productive Vocabulary (proportion of total words)",
+                     limits=c(0,1)) +
   theme_bw(base_size=14) +
-  theme(legend.position="none") +
-  geom_dl(method=list(dl.trans(x=x +.2),"last.qp",cex=1)) +
-  scale_color_manual(values = c("#e41a1c","#377eb8"))
+  theme(legend.position="none", panel.grid=element_blank()) +
+  geom_dl(method = list(dl.trans(x=x +.2),"last.qp",cex=1)) +
+  scale_color_manual(values = c("#2c7bb6", "#d7191c"))
+```
+
+### Sample by-item analysis: trajectories of color words
+
+Set up color terms of each language.
+```{r}
+colors.danish <- c("r\xf8d", "gul", "gr\xf8n", "bl\xe5", "sort", "hvid") # "lille" "brun"
+colors.english <- c("red",  "yellow", "green", "blue", "black", "white") # "orange" "brown"
+colors.norwegian <- c ("r\xf8d", "gul", "gr\xf8nn" ,"bl\xe5", "svart", "hvit") # "brun" "oransje"
+colors.spanish <- c("rojo", "amarillo", "verde", "azul", "negro", "blanco") # "rosa" "morado"
+
+colors <- list("Danish" = colors.danish,
+               "English" = colors.english,
+               "Norwegian" = colors.norwegian,
+               "Spanish" = colors.spanish)
+```
+
+Function for getting color data for a given language.
+```{r}
+get.language.data <- function(lang) {
+  
+  lang.table <- filter(instrument.tables, language==lang, form=="WS")$table[[1]]
+
+  lang.colors <- colors[[lang]]
+  lang.items <- select(filter(items, language==lang, form=="WS"),
+                       definition, item.id)
+  lang.color.items <- data.frame(color = colors.english, definition = lang.colors) %>%
+    left_join(lang.items)
+  
+  lang.data <- get.instrument.data(lang.table, lang.color.items$item.id) %>%
+    mutate(language = lang,
+           item.id = paste("item_", item.id, sep="")) %>%
+  left_join(lang.color.items)
+  
+  return(lang.data)
+  
+}
+```
+
+Load color data for each language and put it all together.
+```{r}
+languages <- unique(instrument.tables$language)
+color.data <- bind_rows(sapply(languages, get.language.data, simplify=FALSE))
+
+color.byage.data <- color.data %>%
+  left_join(filter(admins, form == "WS", age >= 16, age <= 30)) %>%
+  group_by(language, color, age) %>%
+  mutate(produces = value == "produces") %>%
+  summarise_each(funs(na.mean, ci.mean.high, ci.mean.low), produces)
+```
+
+What these data look like for a given age and language:
+```{r, echo=FALSE}
+kable(filter(color.byage.data, language=="English", age==24),
+      col.names = c("language", "color", "age", "median", "confidence interval (lower)",
+                    "confidence interval (upper)"),
+      align = c("l", "l", "c", "c", "c", "c"),
+      digits = 3)
+```
+
+Plot the proportion of kids that produce each color as a function of their age.
+```{r, fig.height=8, fig.width=9}
+ggplot(color.byage.data, aes(x=age, y=na.mean, color=color, label=color)) +
+  facet_wrap(~ language) +
+  geom_pointrange(aes(ymin = na.mean-ci.mean.low,
+                      ymax = na.mean+ci.mean.high),
+                  size = .8,
+                  show_guide = FALSE) +
+  geom_line(size=1) +
+  theme_bw(base_size=14) +
+  theme(legend.position="none", panel.grid=element_blank()) +
+  geom_dl(method = list(dl.trans(x=x +.2), "last.qp", cex=.8)) +
+  scale_color_manual(values=c("black", "#2c7bb6", "#1a9641", "#d7191c", "gray87", "gold1")) +
+  scale_x_continuous(breaks=seq(16,30,2), limits=c(16,31.5),
+                     name = "Age (months)")+
+  scale_y_continuous(name = "Proportion of Children Producing",
+                     limits=c(0,1))
 ```
