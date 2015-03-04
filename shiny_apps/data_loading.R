@@ -2,23 +2,35 @@ library(dplyr)
 library(tidyr)
 library(RMySQL)
 
-get.common.tables <- function(db) {
-  
-  tables <- list()
-  tables$admin.table <- tbl(db, "common_administration")
-  tables$child.table <- tbl(db, "common_child")
-  tables$instruments.table <- tbl(db, "common_instrumentsmap")
-  tables$momed.table <- tbl(db, "common_momed")
-  tables$source.table <- tbl(db, "common_source")  
-  tables$wordinfo.table <- tbl(db, "common_wordinfo")
-  tables$wordmapping.table <- tbl(db, "common_wordmapping")
-  return(tables)
 
+# Takes a connection to a MySQL database created with src_mysql
+# Pulls all of the common tables
+# Returns a list whose names are the names of the tables and whose values
+# are tbls
+#
+# Example:
+# wordbank <- src_mysql(dbname="wordbank",host="54.149.39.46",
+#                               user="wordbank",password="wordbank")
+# common.tables <- get.common.tables(wordbank)
+get.common.tables <- function(db) {
+
+  names <- Filter(function(tbl) substr(tbl,1,7) == "common_",src_tbls(db))
+  
+  tables <- sapply(names,function(name) tbl(db,name),simplify=FALSE)
+  names(tables) <- sapply(names(tables),function(name) substr(name,8,nchar(name)),simplify=FALSE)
+
+  return(tables)
 }
 
-get.instrument.tables <- function(db, instruments.table) {
+
+# Takes a connection to a MySQL database created with src_mysql and the instrumentsmap
+# Loads all of the instruments in the instrumentsmap
+#
+# Returns a dataframe whose rows are individual instruments and 
+# whose $table column is the corresponding tbl
+get.instrument.tables <- function(db, instrumentsmap) {
   
-  instrument.tables <- as.data.frame(instruments.table) %>%
+  instrument.tables <- as.data.frame(instrumentsmap) %>%
     mutate(table.name = paste("instruments", tolower(language), tolower(form), sep="_")) %>%
     rename(instrument_id = id) %>%
     group_by(instrument_id, language, form) %>%
@@ -28,6 +40,10 @@ get.instrument.tables <- function(db, instruments.table) {
   
 }
 
+# Takes in all of the tables that correspond to demographics about administrations
+#
+# Returns a dataframe in which each row is one administration and 
+# each column is a demographic variable
 get.administration.data <- function(momed.table, child.table, instruments.table, admin.table) {
   
   mom_ed <- as.data.frame(momed.table) %>%
@@ -54,14 +70,14 @@ get.administration.data <- function(momed.table, child.table, instruments.table,
   
 }
 
+
+# Gets by-item data from an instrument with information from the wordmapping table
 get.item.data <- function(wordmapping.table, instruments.table) {
   
   instruments <- as.data.frame(instruments.table) %>%
     rename(instrument_id = id)
   
   items <- as.data.frame(wordmapping.table) %>%
-    #    mutate(item.id = as.numeric(substr(item_id, 6, nchar(item_id)))) %>%
-    #    select(-item_id) %>%
     rename(item.id = item_id) %>%
     left_join(instruments)
   
@@ -69,6 +85,10 @@ get.item.data <- function(wordmapping.table, instruments.table) {
   
 }
 
+
+# Takes an instrument table and a list of columns
+# Selects those columns from the instrument table and gathers them into 
+# administration x item form
 get.instrument.data <- function(instrument.table, columns) {
   
   instrument.data <- instrument.table %>%
@@ -82,5 +102,4 @@ get.instrument.data <- function(instrument.table, columns) {
     mutate(value = ifelse(is.na(value), "", value))
   
   return(instrument.data)
-  
 }

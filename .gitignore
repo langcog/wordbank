@@ -10,3 +10,5 @@ src/*
 .Rhistory
 *.pem
 .idea
+*_cache/
+*_files/
