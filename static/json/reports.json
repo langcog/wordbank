@@ -13,15 +13,5 @@
   "app_name": "Individual Word Trajectories",
   "app_directory": "word_trajectory_app",
   "app_sample_plot": "static/images/sample_plots/word_trajectory.png"
-},
-{
-  "app_name": "Word Cloud",
-  "app_directory": "wordle_app",
-  "app_sample_plot": "static/images/sample_plots/wordle.png"
-},
-{
-  "app_name": "Semantic Networks",
-  "app_directory": "networks_app",
-  "app_sample_plot": "static/images/sample_plots/networks.png"
 }
 ]

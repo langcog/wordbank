@@ -44,23 +44,3 @@ class Blog(View):
 
   def get(self, request):
     return render(request, 'blog.html', {})
-
-class Survey(View):
-  def get(self, request):
-    word = request.GET['word']
-    df = read_csv(os.path.join(settings.MEDIA_ROOT,'semdata.csv'))
-    featuredicts = []
-    for row in df.iterrows():
-      if row[1]['word'] == word:
-        newdict = {}
-        newdict[row[1]['feature']] = row[1]['frequency']
-        featuredicts.append(newdict)
-    return render(request, 'survey.html', {'word': word, 'semdata': featuredicts})
-
-
-class Search(View):
-
-  def get(self, request):
-    source_names = [d.name for d in Source.objects.all()]
-    return render(request, 'search.html', {'source_names': source_names})
-
