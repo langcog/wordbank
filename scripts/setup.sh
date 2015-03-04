@@ -16,6 +16,8 @@ sudo apt-get install python-dev
 sudo apt-get install python-pip
 sudo apt-get install mysql-client-core-5.5
 sudo pip install https://www.djangoproject.com/download/1.7.b4/tarball/
+sudo pip install faulthandler
+sudo pip install django-extensions
 
 cd
 #Install Apache Runtime Library
