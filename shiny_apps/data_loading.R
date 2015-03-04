@@ -9,23 +9,23 @@ library(RMySQL)
 # are tbls
 #
 # Example:
-# wordbank <- src_mysql(dbname="wordbank",host="54.149.39.46",
-#                               user="wordbank",password="wordbank")
+# wordbank <- src_mysql(dbname="wordbank", host="54.149.39.46",
+#                               user="wordbank", password="wordbank")
 # common.tables <- get.common.tables(wordbank)
 get.common.tables <- function(db) {
-
-  names <- Filter(function(tbl) substr(tbl,1,7) == "common_",src_tbls(db))
+  
+  names <- Filter(function(tbl) substr(tbl,1,7) == "common_", src_tbls(db))
   
   tables <- sapply(names,function(name) tbl(db,name),simplify=FALSE)
-  names(tables) <- sapply(names(tables),function(name) substr(name,8,nchar(name)),simplify=FALSE)
-
+  names(tables) <- sapply(names(tables),function(name) substr(name,8,nchar(name)),
+                          simplify=FALSE)
+  
   return(tables)
 }
 
 
 # Takes a connection to a MySQL database created with src_mysql and the instrumentsmap
 # Loads all of the instruments in the instrumentsmap
-#
 # Returns a dataframe whose rows are individual instruments and 
 # whose $table column is the corresponding tbl
 get.instrument.tables <- function(db, instrumentsmap) {
@@ -41,7 +41,6 @@ get.instrument.tables <- function(db, instrumentsmap) {
 }
 
 # Takes in all of the tables that correspond to demographics about administrations
-#
 # Returns a dataframe in which each row is one administration and 
 # each column is a demographic variable
 get.administration.data <- function(momed.table, child.table, instruments.table, admin.table) {

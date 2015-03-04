@@ -13,13 +13,13 @@ wordbank <- src_mysql(dbname="wordbank")
 
 common.tables <- get.common.tables(wordbank)
 
-admins <- get.administration.data(common.tables$momed.table,
-                                  common.tables$child.table,
-                                  common.tables$instruments.table,
-                                  common.tables$admin.table) %>%
+admins <- get.administration.data(common.tables$momed,
+                                  common.tables$child,
+                                  common.tables$instrumentsmap,
+                                  common.tables$administration) %>%
   gather(measure, vocab, comprehension, production)
 
-instrument.tables <- get.instrument.tables(wordbank, common.tables$instruments.table)
+instrument.tables <- get.instrument.tables(wordbank, common.tables$instrumentsmap)
 languages <- unique(instrument.tables$language)
 
 plot.attr.fun <- function(form, measure) {
