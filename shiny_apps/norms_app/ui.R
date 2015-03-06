@@ -12,7 +12,8 @@ shinyUI(fluidPage(
       uiOutput("measure_selector"),
       selectInput("qsize", label = h4("Quantile size"), 
                   choices = list("10%" = .1, "20%" = .2, "25%" = .25),
-                  selected = .2)),
+                  selected = .2),
+      width=3),
     
     # Show a plot of the generated distribution
     mainPanel(
@@ -20,7 +21,8 @@ shinyUI(fluidPage(
                  ".shiny-output-error { visibility: hidden; }",
                  ".shiny-output-error:before { visibility: hidden; }"
       ),
-      plotOutput("plot", width = "100%", height = "auto")
+      plotOutput("plot", width = "100%", height = "auto"),
+      width=9
     )
   )
 ))

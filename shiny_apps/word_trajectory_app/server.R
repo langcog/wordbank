@@ -93,7 +93,7 @@ data.fun <- function(input.language, input.form, input.measure, input.words) {
 plot.attr.fun <- function(input.form, input.measure) {
   plot.attr = list()
   if (input.form == "WG") {
-    plot.attr$xlims = c(8,20)
+    plot.attr$xlims = c(8,21)
     plot.attr$xbreaks = 8:18
     if (input.measure == "understands") {
       plot.attr$ylabel <- "Size of Receptive Vocabulary"
@@ -101,7 +101,7 @@ plot.attr.fun <- function(input.form, input.measure) {
       plot.attr$ylabel <- "Size of Productive Vocabulary" 
     }
   } else if (input.form == "WS") {
-    plot.attr$xlims = c(16,32)
+    plot.attr$xlims = c(16,33)
     plot.attr$xbreaks = 16:30
     plot.attr$ylabel = "Size of Productive Vocabulary"
   }

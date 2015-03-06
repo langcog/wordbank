@@ -106,7 +106,7 @@ shinyServer(function(input, output, session) {
       geom_histogram(binwidth=binwidth()) +
       xlab("\nVocabulary Size") +
       ylab("Number of Children\n") + 
-      scale_fill_brewer(name="Quantile Midpoint",
+      scale_fill_brewer(name="Quantile\nMidpoint",
                         palette=seq.palette)
     
   }, height = function() {
