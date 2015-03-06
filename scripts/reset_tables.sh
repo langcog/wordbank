@@ -7,9 +7,6 @@ echo "Populating Instruments..."
 echo "Populating Word Mapping..."
 ./manage.py populate_word_mapping
 
-echo "Populating Vocabulary Size..."
-./manage.py populate_vocabulary_size
-
 echo "Populating Source..."
 ./manage.py populate_source
 
@@ -18,6 +15,9 @@ echo "Populating MomEd..."
 
 echo "Importing data..."
 ./manage.py import_all_datasets
+
+echo "Populating Vocabulary Size..."
+./manage.py populate_vocabulary_size
 
 echo "Aggregating Stats..."
 ./manage.py aggregate_stats
