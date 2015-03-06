@@ -59,7 +59,6 @@ get.administration.data <- function(momed.table, child.table, instruments.table,
   
   admins <- as.data.frame(admin.table) %>%
     select(data_id, child_id, age, instrument_id, comprehension, production) %>%
-    rename(admin.id = data_id) %>%
     left_join(instruments) %>%
     select(-instrument_id) %>%
     left_join(children) %>%
@@ -93,7 +92,7 @@ get.instrument.data <- function(instrument.table, columns) {
   instrument.data <- instrument.table %>%
     select(basetable_ptr_id, one_of(columns)) %>%
     as.data.frame %>%
-    mutate(admin.id = as.numeric(basetable_ptr_id)) %>%
+    mutate(data_id = as.numeric(basetable_ptr_id)) %>%
     select(-basetable_ptr_id) %>%
     gather_("item_id", "value", columns, convert=TRUE) %>%
     mutate(item.id = as.numeric(substr(item_id, 6, nchar(item_id)))) %>%
