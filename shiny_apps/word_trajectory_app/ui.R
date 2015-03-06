@@ -6,6 +6,8 @@ shinyUI(fluidPage(theme = shinytheme("spacelab"),
   # Application title
   titlePanel("Individual Word Trajectories"),
   
+  br(),
+  
   sidebarLayout(
     sidebarPanel(
       uiOutput("language_selector"),
