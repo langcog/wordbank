@@ -1,6 +1,7 @@
 library(shiny)
+library(shinythemes)
 
-shinyUI(fluidPage(
+shinyUI(fluidPage(theme = shinytheme("spacelab"),
   
   # Application title
   titlePanel("Individual Word Trajectories"),

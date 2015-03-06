@@ -135,18 +135,20 @@ shinyServer(function(input, output, session) {
   plot.attr <- reactive({plot.attr.fun(start.form(input$form),
                                        start.measure(input$measure))})
   
-  plot <- function() {ggplot(data(), aes(x=age, y=score, colour=word, label=word)) +
-    geom_smooth(se=FALSE, method="loess") +
-    geom_point() +
-    scale_x_continuous(name = "\nAge (months)",
-                       breaks = plot.attr()$xbreaks,
-                       limits = plot.attr()$xlims) +
-    scale_y_continuous(name = paste(plot.attr()$ylabel, "\n", sep=""),
-                       limits = c(-.01,1),
-                       breaks = seq(0,1,.25)) +
-    theme(legend.position="none") +
-    geom_dl(method = list(dl.trans(x=x +.3), "last.qp", cex=1)) +
-    scale_colour_brewer(palette=qual.palette)
+  plot <- function() {
+    ggplot(data(), aes(x=age, y=score, colour=word, label=word)) +
+      geom_smooth(se=FALSE, method="loess") +
+      geom_point() +
+      scale_x_continuous(name = "\nAge (months)",
+                         breaks = plot.attr()$xbreaks,
+                         limits = plot.attr()$xlims) +
+      scale_y_continuous(name = paste(plot.attr()$ylabel, "\n", sep=""),
+                         limits = c(-.01,1),
+                         breaks = seq(0,1,.25)) +
+      scale_colour_brewer(palette=qual.palette) +
+      geom_dl(method = list(dl.trans(x=x +.3), "last.qp", cex=1, fontfamily=font)) +
+      theme(legend.position="none",
+            text=element_text(family=font))
   }
   
   words <- reactive({filter(instrument.tables,

@@ -80,7 +80,7 @@ shinyServer(function(input, output, session) {
              quantile = cut(percentile,
                             breaks=cuts, 
                             labels=cuts[2:length(cuts)]-qs/2))
-    })
+  })
   
   plot.attr <- reactive({plot.attr.fun(start.form(input$form),
                                        start.measure(input$measure))})
@@ -94,12 +94,13 @@ shinyServer(function(input, output, session) {
                          limits=plot.attr()$xlims) +
       ylab(paste(plot.attr()$ylabel, "\n", sep="")) +
       scale_colour_brewer(name="Quantile\nMidpoint",
-                          palette=seq.palette)
+                          palette=seq.palette) +
+      theme(text=element_text(family=font))
   }
   
   forms <- reactive({unique(filter(instrument.tables,
                                    language == start.language(input$language))$form)})
-
+  
   measures <- reactive({measure.fun(start.form(input$form))})
   
   output$plot <- renderPlot({
@@ -128,7 +129,7 @@ shinyServer(function(input, output, session) {
     filename = function() { 'vocabulary_norms.csv' },
     content = function(file) {
       write.csv(data(), file)
-  })
+    })
   
   output$downloadPlot <- downloadHandler(
     filename = function() { 'vocabulary_norms.pdf' },
@@ -138,13 +139,13 @@ shinyServer(function(input, output, session) {
       dev.off()
     })
   
-# output$downloadReport <- downloadHandler(
-#   filename = function() { 'vocabulary_norms_report.pdf' },
-#   
-#   content = function(file) {
-#     library(rmarkdown)
-#     out <- render('report.Rmd', pdf_document())
-#     file.rename(out, file)
-#   })
-
+  # output$downloadReport <- downloadHandler(
+  #   filename = function() { 'vocabulary_norms_report.pdf' },
+  #   
+  #   content = function(file) {
+  #     library(rmarkdown)
+  #     out <- render('report.Rmd', pdf_document())
+  #     file.rename(out, file)
+  #   })
+  
 })
