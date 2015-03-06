@@ -134,7 +134,7 @@ shinyServer(function(input, output, session) {
   output$downloadPlot <- downloadHandler(
     filename = function() { 'vocabulary_norms.pdf' },
     content = function(file) {
-      pdf(file, width=10, height=7)
+      cairo_pdf(file, width=10, height=7, family=font)
       print(plot())
       dev.off()
     })
