@@ -119,10 +119,7 @@ measure.fun <- function(input.form) {
 
 ## DEBUGGING
 #input <- list(language = "Danish", form = "WS", measure = "produces",
-#              word1 = "item_1", word2 = "item_1", word3 = "item_1")
-# instrument <- function() {return(filter(instrument.tables,
-#                                       language == input$language,
-#                                       form == input$form))}
+#              words = c("item_1"))
 
 ############## STUFF THAT RUNS WHEN USER CHANGES SOMETHING ##############
 shinyServer(function(input, output, session) {
@@ -197,7 +194,7 @@ shinyServer(function(input, output, session) {
   output$downloadPlot <- downloadHandler(
     filename = function() { 'word_trajectory.pdf' },
     content = function(file) {
-      pdf(file, width=10, height=7)
+      cairo_pdf(file, width=10, height=7, family=font)
       print(plot())
       dev.off()
     })
