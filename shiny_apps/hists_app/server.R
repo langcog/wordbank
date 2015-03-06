@@ -91,10 +91,10 @@ shinyServer(function(input, output, session) {
                       form == start.form(input$form),
                       measure == start.measure(input$measure),
                       age == start.age(input$age)) %>%
-    group_by(age) %>%
-    mutate(percentile = rank(vocab)/length(vocab),
-           quantile = cut(percentile, breaks=cuts, 
-                          labels=cuts[2:length(cuts)]-qs/2))
+      group_by(age) %>%
+      mutate(percentile = rank(vocab)/length(vocab),
+             quantile = cut(percentile, breaks=cuts, 
+                            labels=cuts[2:length(cuts)]-qs/2))
   })
   
   binwidth <- reactive({binwidth.fun(start.form(input$form))})
@@ -105,7 +105,8 @@ shinyServer(function(input, output, session) {
       xlab("\nVocabulary Size") +
       ylab("Number of Children\n") + 
       scale_fill_brewer(name="Quantile\nMidpoint",
-                        palette=seq.palette)
+                        palette=seq.palette) +
+      theme(text=element_text(family=font))
   }
   
   output$plot <- renderPlot({
