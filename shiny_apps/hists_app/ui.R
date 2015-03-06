@@ -22,7 +22,7 @@ shinyUI(fluidPage(
                    ".shiny-output-error { visibility: hidden; }",
                    ".shiny-output-error:before { visibility: hidden; }"
         ),
-        plotOutput("plot")
+        plotOutput("plot", width = "100%", height = "auto")
       )
     )
   ))
