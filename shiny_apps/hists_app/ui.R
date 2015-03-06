@@ -14,6 +14,10 @@ shinyUI(fluidPage(
                   choices = list("10%" = .1, "20%" = .2, "25%" = .25),
                   selected = .2),
       uiOutput("age_selector"),
+      br(),
+      downloadButton('downloadPlot', 'Download Plot'),
+      br(),br(),
+      downloadButton('downloadData', 'Download Data'),
       width=3
       ),
 

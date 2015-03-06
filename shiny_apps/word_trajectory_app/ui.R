@@ -11,6 +11,10 @@ shinyUI(fluidPage(
       uiOutput("form_selector"),      
       uiOutput("measure_selector"),
       uiOutput("words_selector"),
+      br(),
+      downloadButton('downloadPlot', 'Download Plot'),
+      br(),br(),
+      downloadButton('downloadData', 'Download Data'),
       width=3),
     
     # Show a plot of the generated distribution

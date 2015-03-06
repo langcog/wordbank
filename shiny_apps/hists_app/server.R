@@ -84,33 +84,34 @@ shinyServer(function(input, output, session) {
   min.age <- reactive({min.age.fun(start.form(input$form))})
   max.age <- reactive({max.age.fun(start.form(input$form))})
   
-  data <- reactive({filter(admins,
-                           language == start.language(input$language),
-                           form == start.form(input$form),
-                           measure == start.measure(input$measure),
-                           age == start.age(input$age))})
-  binwidth <- reactive({binwidth.fun(start.form(input$form))})
-  
-  output$plot <- renderPlot({
-    
+  data <- reactive({
     qs <- as.numeric(input$qsize)
     cuts <- seq(0.0, 1.0, by=qs)
-    
-    quantile.data <- data() %>%
-      group_by(age) %>%
-      mutate(percentile = rank(vocab)/length(vocab),
-             quantile = cut(percentile, breaks=cuts, 
-                            labels=cuts[2:length(cuts)]-qs/2))
-    
-    ggplot(quantile.data, aes(x=vocab, fill=quantile)) + 
+    admins %>% filter(language == start.language(input$language),
+                      form == start.form(input$form),
+                      measure == start.measure(input$measure),
+                      age == start.age(input$age)) %>%
+    group_by(age) %>%
+    mutate(percentile = rank(vocab)/length(vocab),
+           quantile = cut(percentile, breaks=cuts, 
+                          labels=cuts[2:length(cuts)]-qs/2))
+  })
+  
+  binwidth <- reactive({binwidth.fun(start.form(input$form))})
+  
+  plot <- function() {
+    ggplot(data(), aes(x=vocab, fill=quantile)) + 
       geom_histogram(binwidth=binwidth()) +
       xlab("\nVocabulary Size") +
       ylab("Number of Children\n") + 
       scale_fill_brewer(name="Quantile\nMidpoint",
                         palette=seq.palette)
-    
+  }
+  
+  output$plot <- renderPlot({
+    plot()    
   }, height = function() {
-    session$clientData$output_plot_width * 0.65
+    session$clientData$output_plot_width * 0.7
   })
   
   ### FIELD SELECTORS
@@ -133,5 +134,19 @@ shinyServer(function(input, output, session) {
     sliderInput("age", label = h4("Age (Months)"), 
                 min = min.age(), max = max.age(), value = (min.age()+max.age())/2)
   })
+  
+  output$downloadData <- downloadHandler(
+    filename = function() { 'vocabulary_distribution.csv' },
+    content = function(file) {
+      write.csv(data(), file)
+    })
+  
+  output$downloadPlot <- downloadHandler(
+    filename = function() { 'vocabulary_distribution.pdf' },
+    content = function(file) {
+      pdf(file, width=10, height=7)
+      print(plot())
+      dev.off()
+    })
   
 })

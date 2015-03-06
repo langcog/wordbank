@@ -131,8 +131,24 @@ shinyServer(function(input, output, session) {
                              start.form(input$form),
                              start.measure(input$measure),
                              start.words(input$words))})
+  
   plot.attr <- reactive({plot.attr.fun(start.form(input$form),
                                        start.measure(input$measure))})
+  
+  plot <- function() {ggplot(data(), aes(x=age, y=score, colour=word, label=word)) +
+    geom_smooth(se=FALSE, method="loess") +
+    geom_point() +
+    scale_x_continuous(name = "\nAge (months)",
+                       breaks = plot.attr()$xbreaks,
+                       limits = plot.attr()$xlims) +
+    scale_y_continuous(name = paste(plot.attr()$ylabel, "\n", sep=""),
+                       limits = c(-.01,1),
+                       breaks = seq(0,1,.25)) +
+    theme(legend.position="none") +
+    geom_dl(method = list(dl.trans(x=x +.3), "last.qp", cex=1)) +
+    scale_colour_brewer(palette=qual.palette)
+  }
+  
   words <- reactive({filter(instrument.tables,
                             language == start.language(input$language),
                             form == start.form(input$form))$words.by.definition[[1]]})
@@ -142,20 +158,7 @@ shinyServer(function(input, output, session) {
   
   ### PLOT RENDERER
   output$plot <- renderPlot({
-    
-    ggplot(data(), aes(x=age, y=score, colour=word, label=word)) +
-      geom_smooth(se=FALSE, method="loess") +
-      geom_point() +
-      scale_x_continuous(name = "\nAge (months)",
-                         breaks = plot.attr()$xbreaks,
-                         limits = plot.attr()$xlims) +
-      scale_y_continuous(name = paste(plot.attr()$ylabel, "\n", sep=""),
-                         limits = c(-.01,1),
-                         breaks = seq(0,1,.25)) +
-      theme(legend.position="none") +
-      geom_dl(method = list(dl.trans(x=x +.3), "last.qp", cex=1)) +
-      scale_colour_brewer(palette=qual.palette)
-    
+    plot()    
   }, height = function() {
     session$clientData$output_plot_width * 0.7
   })  
@@ -182,5 +185,19 @@ shinyServer(function(input, output, session) {
                    selected = start.words(NULL),
                    multiple = TRUE)
   })
+  
+  output$downloadData <- downloadHandler(
+    filename = function() { 'word_trajectory.csv' },
+    content = function(file) {
+      write.csv(data(), file)
+    })
+  
+  output$downloadPlot <- downloadHandler(
+    filename = function() { 'word_trajectory.pdf' },
+    content = function(file) {
+      pdf(file, width=10, height=7)
+      print(plot())
+      dev.off()
+    })
   
 })

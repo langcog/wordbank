@@ -64,44 +64,46 @@ start.measure <- function(measure) {
 ## DEBUGGING
 #input <- list(language = "Danish", form = "WS", measure = "production",
 #              qsize = ".1")
-#plot.attr <- function(input){plot.attr.fun(input$form, input$measure)}
+#plot.attr <- function(){plot.attr.fun(input$form, input$measure)}
 
 ############## STUFF THAT RUNS WHEN USER CHANGES SOMETHING ##############
 shinyServer(function(input, output, session) {
   
-  data <- reactive({filter(admins,
-                           language == start.language(input$language),
-                           form == start.form(input$form),
-                           measure == start.measure(input$measure))})
+  data <- reactive({
+    qs = as.numeric(input$qsize)
+    cuts = seq(0.0, 1.0, by=qs)
+    admins %>% filter(language == start.language(input$language),
+                      form == start.form(input$form),
+                      measure == start.measure(input$measure)) %>%
+      group_by(age) %>%
+      mutate(percentile = rank(vocab) / length(vocab),
+             quantile = cut(percentile,
+                            breaks=cuts, 
+                            labels=cuts[2:length(cuts)]-qs/2))
+    })
   
   plot.attr <- reactive({plot.attr.fun(start.form(input$form),
                                        start.measure(input$measure))})
-  forms <- reactive({unique(filter(instrument.tables,
-                                   language == start.language(input$language))$form)})
-  measures <- reactive({measure.fun(start.form(input$form))})
   
-  output$plot <- renderPlot({
-    
-    qs <- as.numeric(input$qsize)
-    cuts <- seq(0.0, 1.0, by=qs)
-    
-    quantile.data <- data() %>%
-      group_by(age) %>%
-      mutate(percentile = rank(vocab)/length(vocab),
-             quantile = cut(percentile, breaks=cuts, 
-                            labels=cuts[2:length(cuts)]-qs/2))
-    
-    ggplot(quantile.data, aes(x=age, y=vocab, colour=quantile)) + 
+  plot <- function() {
+    ggplot(data(), aes(x=age, y=vocab, colour=quantile)) + 
       geom_jitter(width=.1) +
       geom_smooth(method="loess", se=FALSE, size=1.5) +
       scale_x_continuous(name="\nAge (months)",
                          breaks=plot.attr()$xbreaks,
                          limits=plot.attr()$xlims) +
       ylab(paste(plot.attr()$ylabel, "\n", sep="")) +
-      #      scale_colour_discrete(name="Quantile Midpoint")
       scale_colour_brewer(name="Quantile\nMidpoint",
                           palette=seq.palette)
-    
+  }
+  
+  forms <- reactive({unique(filter(instrument.tables,
+                                   language == start.language(input$language))$form)})
+
+  measures <- reactive({measure.fun(start.form(input$form))})
+  
+  output$plot <- renderPlot({
+    plot()
   }, height = function() {
     session$clientData$output_plot_width * 0.7
   })
@@ -122,4 +124,27 @@ shinyServer(function(input, output, session) {
                    choices = measures(), selected = start.measure(NULL))
   })
   
+  output$downloadData <- downloadHandler(
+    filename = function() { 'vocabulary_norms.csv' },
+    content = function(file) {
+      write.csv(data(), file)
+  })
+  
+  output$downloadPlot <- downloadHandler(
+    filename = function() { 'vocabulary_norms.pdf' },
+    content = function(file) {
+      pdf(file, width=10, height=7)
+      print(plot())
+      dev.off()
+    })
+  
+# output$downloadReport <- downloadHandler(
+#   filename = function() { 'vocabulary_norms_report.pdf' },
+#   
+#   content = function(file) {
+#     library(rmarkdown)
+#     out <- render('report.Rmd', pdf_document())
+#     file.rename(out, file)
+#   })
+
 })
