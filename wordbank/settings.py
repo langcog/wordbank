@@ -11,6 +11,7 @@ TEMPLATE_DEBUG = DEBUG
 ADMINS = (
     ('Mika Braginsky', 'mikabr@stanford.edu'),
 )
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 SHINY_SERVER_IP = '54.200.225.86'
 
