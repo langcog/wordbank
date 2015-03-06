@@ -65,15 +65,15 @@ start.measure <- function(measure) {
 #input <- list(language = "Danish", form = "WS", measure = "production",
 #              qsize = ".1")
 #plot.attr <- function(input){plot.attr.fun(input$form, input$measure)}
-  
+
 ############## STUFF THAT RUNS WHEN USER CHANGES SOMETHING ##############
-shinyServer(function(input, output) {
+shinyServer(function(input, output, session) {
   
   data <- reactive({filter(admins,
                            language == start.language(input$language),
                            form == start.form(input$form),
                            measure == start.measure(input$measure))})
-    
+  
   plot.attr <- reactive({plot.attr.fun(start.form(input$form),
                                        start.measure(input$measure))})
   forms <- reactive({unique(filter(instrument.tables,
@@ -90,16 +90,20 @@ shinyServer(function(input, output) {
       mutate(percentile = rank(vocab)/length(vocab),
              quantile = cut(percentile, breaks=cuts, 
                             labels=cuts[2:length(cuts)]-qs/2))
-        
+    
     ggplot(quantile.data, aes(x=age, y=vocab, colour=quantile)) + 
       geom_jitter(width=.1) +
-      geom_smooth(se=FALSE, span=1) +
-      scale_x_continuous(name = "Age (months)",
-                         breaks = plot.attr()$xbreaks,
-                         limits = plot.attr()$xlims) +
-      ylab(plot.attr()$ylabel) +
-      scale_colour_discrete(name="Quantile Midpoint")
+      geom_smooth(method="loess", se=FALSE, size=1.5) +
+      scale_x_continuous(name="\nAge (months)",
+                         breaks=plot.attr()$xbreaks,
+                         limits=plot.attr()$xlims) +
+      ylab(paste(plot.attr()$ylabel, "\n", sep="")) +
+      #      scale_colour_discrete(name="Quantile Midpoint")
+      scale_colour_brewer(name="Quantile\nMidpoint",
+                          palette=seq.palette)
     
+  }, height = function() {
+    session$clientData$output_plot_width * 0.7
   })
   
   ### FIELD SELECTORS
