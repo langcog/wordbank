@@ -31,7 +31,7 @@ class Command(NoArgsCommand):
 
             sizes = instrument_model.objects.raw(query)
             def update_admin(s):
-                admin = Administration.objects.get(pk=s.basetable_ptr_id)
+                admin = Administration.objects.get(data_id=s.basetable_ptr_id)
                 admin.production = s.production
                 admin.comprehension = s.comprehension
                 admin.save()
