@@ -99,11 +99,11 @@ shinyServer(function(input, output, session) {
                          limits=plot.attr()$xlims) +
       ylab(paste(plot.attr()$ylabel, "\n", sep="")) +
       #      scale_colour_discrete(name="Quantile Midpoint")
-      scale_colour_brewer(name="Quantile Midpoint",
+      scale_colour_brewer(name="Quantile\nMidpoint",
                           palette=seq.palette)
     
   }, height = function() {
-    session$clientData$output_plot_width * 0.65
+    session$clientData$output_plot_width * 0.7
   })
   
   ### FIELD SELECTORS
