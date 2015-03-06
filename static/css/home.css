@@ -8,7 +8,7 @@
 
 .about-image {
   width: 300px;
-  margin-top: 25px;
+/*  margin-top: 25px; */
   float: right;
 }
 
@@ -25,24 +25,24 @@
 }
 
 .sub-topic-button {
-  padding: 5px;
+/*  padding: 5px; */
   text-align: center;
-  background-color: #6baed6;
-  border: 0px solid #666;
-  color: #fff;
+/*  background-color: #6baed6; */
+/*  border: 0px solid #666; */
+/*  color: #fff; */
   width: 175px;
-  height: 40px;
-  font-size: 22px;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
+/*  height: 40px; */
+  font-size: 20px;
+/*  -moz-border-radius: 15px; */
+/*  -webkit-border-radius: 15px; */
   margin-left: auto ;
   margin-right: auto ;
   display: block;
 }
 
 .sub-topic-button:hover {
-  color: #fff;
-  background-color: #6baeee;
+/*  color: #fff; */
+/*  background-color: #6baeee; */
 }
 
 .sub-topic-search {

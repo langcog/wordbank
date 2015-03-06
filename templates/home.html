@@ -4,6 +4,7 @@
 {% block content %}
 <link rel="stylesheet" href={% static "css/home.css" %}>
 
+<!--
 <div class="row">
     <div class="col-md-5">
       <div class=""><img class="about-image" src="{% static 'images/logo_original.jpg' %}"></div>
@@ -11,24 +12,36 @@
 	
     <div class="about"><b>Wordbank:</b> An open database of children's vocabulary growth</div>    
 </div>
+-->
+
+<div class="jumbotron">
+<div class="row">
+    <div class="col-md-3 col-md-offset-1">
+      <div class=""><img class="about-image" src="{% static 'images/logo_bg.png' %}"></div>
+    </div>
+  <h1>Wordbank</h1>
+  <p>An open database of children's vocabulary development</p>
+<!--  <p><a class="btn btn-primary btn-lg">Learn more</a></p> -->
+</div>
+</div>
 
 <div class="row">
     <div class="col-xs-6 col-md-4 sub-topic">
-        <a href="/about" class="sub-topic-button"><span class="glyphicon glyphicon-user"></span> About</a>
+        <a href="/about" class="btn btn-primary btn-lg sub-topic-button"><span class="glyphicon glyphicon-user"></span> About</a>
         <div class="sub-topic-description">
             Who we are and what we do.
         </div>
     </div>
   
     <div class="col-xs-6 col-md-4 sub-topic">
-    	<a href="/reports" class="sub-topic-button"><span class="glyphicon glyphicon-folder-close"></span> Reports</a>
+    	<a href="/reports" class="btn btn-primary btn-lg sub-topic-button"><span class="glyphicon glyphicon-folder-close"></span> Reports</a>
 	<div class="sub-topic-description">
       	    Explore analyses of vocabulary growth (and more!).
 	</div>
     </div>
   
     <div class="col-xs-6 col-md-4 sub-topic">
-        <a href="/stats" class="sub-topic-button"><span class="glyphicon glyphicon-stats"></span> Statistics</a>
+        <a href="/stats" class="btn btn-primary btn-lg sub-topic-button"><span class="glyphicon glyphicon-stats"></span> Statistics</a>
         <div class="sub-topic-description">
             See statistics on the database.
         </div>
@@ -38,15 +51,15 @@
 
 <div class="row">
     <div class="col-xs-6 sub-topic" style="margin-top:100px">
-        <a href="/blog" class="sub-topic-button"><span class="glyphicon glyphicon-align-left"></span> Blog</a>
+        <a href="/blog" class="btn btn-primary btn-lg sub-topic-button"><span class="glyphicon glyphicon-align-left"></span> Blog</a>
         <div class="sub-topic-description">
             Read about the latest developments.
         </div>
     </div>
     <div class="col-xs-6 sub-topic"  style="margin-top:100px">
-        <a href="contribute" class="sub-topic-button"><span class="glyphicon glyphicon-cloud-upload"></span> Contribute</a>
+        <a href="contribute" class="btn btn-primary btn-lg sub-topic-button"><span class="glyphicon glyphicon-cloud-upload"></span> Contribute</a>
         <div class="sub-topic-description">
-            Find out how to contribute your data.
+            Find out how to contribute data.
     </div>
 </div>
 
