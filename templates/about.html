@@ -3,7 +3,9 @@
 
 {% block content %}
 <link rel="stylesheet" href={% static "css/about.css" %}>
-<div class="about">
+
+<div class="row">
+<div class="col-md-9 lead">
 <p><b>Wordbank</b> is an open database for storing information about children's vocabulary growth.</p>
 
 <p>Wordbank is approved by the <a href="http://mb-cdi.stanford.edu/advisoryboard.htm">MB-CDI advisory board</a>, and is a project of the <a href="http://langcog.stanford.edu">Stanford Language and Cognition Lab</a>, PI <a href="http://web.stanford.edu/~mcfrank">Michael C. Frank</a>. Contributors include <a href="http://mikabraginsky.com">Mika Braginsky</a>, <a href="http://www.thoughtfill.com">Dan Yurovsky</a>, <a href="http://ranjaykrishna.com">Ranjay Krishna</a>, and Virginia Marchman.</p>
@@ -12,6 +14,23 @@
 <p>Wordbank also includes a number of reports based on recent research on children’s vocabulary: see how children’s vocabulary grows and changes across early childhood.</p>
 <p>Wordbank is open access! The graphical search interface is currently under construction, but see <a href="http://rpubs.com/dyurovsky/using-wordbank">this tutorial</a> to start using <a href="http://www.r-project.org/">R</a> to analyze the data today.
 <p>Feel free to report a bug or request a feature by <a href="https://github.com/langcog/wordbank/issues">logging an issue on GitHub.</a></p>
-<p>We began development on Wordbank in Spring 2014. Stay tuned for further updates.</p>
+</div>
+
+<div class="col-md-3 list-group">
+  <a href="#" class="list-group-item active">Useful links</a>
+  <a href="http://rpubs.com/dyurovsky/using-wordbank" target="_blank" class="list-group-item">
+    Tutorial on accessing Wordbank
+  </a>
+  <a href="https://github.com/langcog/wordbank" target="_blank" class="list-group-item">
+    Codebase on Github
+  </a>
+  <a href="https://github.com/langcog/wordbank/issues" target="_blank" class="list-group-item">
+    Issue tracker
+  </a>
+  <a href="mailto:wordbank@googlegroups.com" target="_blank" class="list-group-item">
+    Contact email
+  </a>
+</div>
+
 </div>
 {% endblock %}

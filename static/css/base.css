@@ -1,12 +1,13 @@
 .nav_element {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .nav_title {
-  font-size: 48px;
+  font-size: 30px;
+  font-weight: bold;
   /*color: #E44424;*/
-  color: #fff;
-  margin-top: -5px;
+  /*color: #fff;*/
+  /*margin-top: -5px;*/
 }
 
 .navbar-static-top {
