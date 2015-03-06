@@ -125,7 +125,7 @@ measure.fun <- function(input.form) {
 #                                       form == input$form))}
 
 ############## STUFF THAT RUNS WHEN USER CHANGES SOMETHING ##############
-shinyServer(function(input, output) {
+shinyServer(function(input, output, session) {
   
   data <- reactive({data.fun(start.language(input$language),
                              start.form(input$form),
@@ -146,16 +146,18 @@ shinyServer(function(input, output) {
     ggplot(data(), aes(x=age, y=score, colour=word, label=word)) +
       geom_smooth(se=FALSE, method="loess") +
       geom_point() +
-      scale_x_continuous(name = "Age (months)",
+      scale_x_continuous(name = "\nAge (months)",
                          breaks = plot.attr()$xbreaks,
                          limits = plot.attr()$xlims) +
-      scale_y_continuous(name = plot.attr()$ylabel,
+      scale_y_continuous(name = paste(plot.attr()$ylabel, "\n", sep=""),
                          limits = c(-.01,1),
                          breaks = seq(0,1,.25)) +
       theme(legend.position="none") +
-      geom_dl(method = list(dl.trans(x=x +.2),"last.qp",cex=1)) +
-      scale_colour_brewer(palette="Set1")
+      geom_dl(method = list(dl.trans(x=x +.3), "last.qp", cex=1)) +
+      scale_colour_brewer(palette=qual.palette)
     
+  }, height = function() {
+    session$clientData$output_plot_width * 0.7
   })  
   
   ### FIELD SELECTORS

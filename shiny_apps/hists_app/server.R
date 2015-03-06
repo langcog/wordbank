@@ -47,6 +47,14 @@ max.age.fun <- function(form) {
   }
 }
 
+binwidth.fun <- function(form) {
+  if (form == "WS") {
+    return(25)
+  } else if (form == "WG") {
+    return(10)
+  }  
+}
+
 start.language <- function(language) {
   ifelse(is.null(language), "English", language)
 }
@@ -68,8 +76,8 @@ start.age <- function(age) {
 #input <- list(language = "English", form = "WS", measure = "production",
 #              qsize = ".2", age = 25)
 
-shinyServer(function(input, output) {
-
+shinyServer(function(input, output, session) {
+  
   forms <- reactive({unique(filter(instrument.tables,
                                    language == start.language(input$language))$form)})
   measures <- reactive({measure.fun(start.form(input$form))})
@@ -81,12 +89,13 @@ shinyServer(function(input, output) {
                            form == start.form(input$form),
                            measure == start.measure(input$measure),
                            age == start.age(input$age))})
-    
+  binwidth <- reactive({binwidth.fun(start.form(input$form))})
+  
   output$plot <- renderPlot({
     
     qs <- as.numeric(input$qsize)
     cuts <- seq(0.0, 1.0, by=qs)
-
+    
     quantile.data <- data() %>%
       group_by(age) %>%
       mutate(percentile = rank(vocab)/length(vocab),
@@ -94,12 +103,15 @@ shinyServer(function(input, output) {
                             labels=cuts[2:length(cuts)]-qs/2))
     
     ggplot(quantile.data, aes(x=vocab, fill=quantile)) + 
-      geom_histogram(binwidth=25) +
-      xlab("Vocabulary") +
-      ylab("Number of Children") + 
-      scale_fill_discrete(name="Quantile Midpoint")
+      geom_histogram(binwidth=binwidth()) +
+      xlab("\nVocabulary Size") +
+      ylab("Number of Children\n") + 
+      scale_fill_brewer(name="Quantile\nMidpoint",
+                        palette=seq.palette)
     
-    })
+  }, height = function() {
+    session$clientData$output_plot_width * 0.65
+  })
   
   ### FIELD SELECTORS
   output$language_selector <- renderUI({    

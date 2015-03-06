@@ -3,14 +3,15 @@ library(shiny)
 shinyUI(fluidPage(
   
   # Application title
-  titlePanel("Word Production/Comprehension Trajectory"),
+  titlePanel("Individual Word Trajectories"),
   
   sidebarLayout(
     sidebarPanel(
       uiOutput("language_selector"),
       uiOutput("form_selector"),      
       uiOutput("measure_selector"),
-      uiOutput("words_selector")),
+      uiOutput("words_selector"),
+      width=3),
     
     # Show a plot of the generated distribution
     mainPanel(
@@ -18,7 +19,8 @@ shinyUI(fluidPage(
                  ".shiny-output-error { visibility: hidden; }",
                  ".shiny-output-error:before { visibility: hidden; }"
       ),
-      plotOutput("plot")
+      plotOutput("plot", width = "100%", height = "auto"),
+      width=9
     )
   )
 ))
