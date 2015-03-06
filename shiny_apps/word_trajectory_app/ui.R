@@ -3,7 +3,7 @@ library(shiny)
 shinyUI(fluidPage(
   
   # Application title
-  titlePanel("Word Production/Comprehension Trajectory"),
+  titlePanel("Individual Word Trajectories"),
   
   sidebarLayout(
     sidebarPanel(
@@ -18,7 +18,7 @@ shinyUI(fluidPage(
                  ".shiny-output-error { visibility: hidden; }",
                  ".shiny-output-error:before { visibility: hidden; }"
       ),
-      plotOutput("plot")
+      plotOutput("plot", width = "100%", height = "auto")
     )
   )
 ))
