@@ -22,25 +22,20 @@
   {% endblock %}
 
 
-  <div class="navbar navbar-inverse">
+    <nav class="navbar navbar-inverse">
         <div class="container">
             <div class="navbar-collapse collapse">
-<a class="navbar-brand" href="/">Wordbank</a>
-<!--                
-	<ul class="nav navbar-nav">
-                    <li class="nav_title"><a href="/"><span style="">Wordbank</span></a></li>
-                </ul>
--->
+                <a class="navbar-brand" href="/">Wordbank</a>
                 <ul class="nav navbar-nav navbar-right">
-                    <li> <!--class="nav_element"--><a href="/about">About</a></li>
-                    <li> <!--class="nav_element"--><a href="/stats">Statistics</a></li>
-                    <li> <!--class="nav_element"--><a href="/reports">Reports</a></li>
-                    <li> <!--class="nav_element"--><a href="/contribute">Contribute</a></li>
-                    <li> <!--class="nav_element"--><a href="/blog">Blog</a></li>
+                    <li {% if request.path == '/about' %} class="active"{% endif %}><a href="/about">About</a></li>
+                    <li {% if request.path == '/stats' %} class="active"{% endif %}><a href="/stats">Statistics</a></li>
+                    <li {% if request.path == '/reports' %} class="active"{% endif %}><a href="/reports">Reports</a></li>
+                    <li {% if request.path == '/contribute' %} class="active"{% endif %}><a href="/contribute">Contribute</a></li>
+                    <li {% if request.path == '/blog' %} class="active"{% endif %}><a href="/blog">Blog</a></li>
                 </ul>
             </div>
         </div>
-    </div>
+    </nav>
 
   {% block extra_header %}
   {% endblock %}
