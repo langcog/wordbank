@@ -11,11 +11,11 @@ shinyUI(fluidPage(theme = shinytheme("spacelab"),
   sidebarLayout(
     sidebarPanel(
       uiOutput("language_selector"),
-      uiOutput("form_selector"),      
+      uiOutput("form_selector"),
       uiOutput("measure_selector"),
       uiOutput("words_selector"),
       uiOutput("wordform_selector"),
-      uiOutput("complexity_selector"),      
+      uiOutput("complexity_selector"),
       br(),
       downloadButton('downloadPlot', 'Download Plot'),
       br(),br(),
