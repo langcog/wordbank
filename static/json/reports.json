@@ -1,5 +1,10 @@
 [
 {
+  "app_name": "Administration Data",
+  "app_directory": "admin_data_app",
+  "app_sample_plot": "static/images/sample_plots/admin_data.png"
+},
+{
   "app_name": "Vocabulary Norms",
   "app_directory": "norms_app",
   "app_sample_plot": "static/images/sample_plots/norms.png"
@@ -12,6 +17,6 @@
 {
   "app_name": "Item Trajectories",
   "app_directory": "item_trajectory_app",
-  "app_sample_plot": "static/images/sample_plots/word_trajectory.png"
+  "app_sample_plot": "static/images/sample_plots/item_trajectory.png"
 }
 ]
