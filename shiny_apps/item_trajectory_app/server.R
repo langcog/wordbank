@@ -9,6 +9,7 @@ library(RMySQL)
 source("../app_themes.R")
 source("../data_loading.R")
 Sys.setlocale(locale="C")
+options(shiny.error=traceback) 
 
 wordbank <- src_mysql(dbname="wordbank")
 
@@ -45,21 +46,14 @@ instrument.tables <- tables %>%
 
 languages <- unique(instrument.tables$language)
 
-start.language <- function(language) {
-  ifelse(is.null(language), "English", language)
-}
+start.language <- function() {"English"}
+start.form <- function() {"WS"}
+start.measure <- function() {"produces"}
+start.words <- function(words) {sample(words, 3)}
 
-start.form <- function(form) {
-  ifelse(is.null(form), "WS", form)
-}
-
-start.measure <- function(measure) {
-  ifelse(is.null(measure), "produces", measure)
-}
-
-start.words <- function(words) {
-  if(is.null(words)) {c("item_1")} else {words}
-}
+# start.words <- function(words, instrument.words) {
+#   if(is.null(words)) {c("item_100")} else {words}
+# }
 
 
 data.fun <- function(input.language, input.form, input.measure, input.words) {
@@ -87,7 +81,6 @@ data.fun <- function(input.language, input.form, input.measure, input.words) {
     data %<>% filter(age >= 8 & age <= 18)      
   }
   return(data)
-  
 }
 
 plot.attr.fun <- function(input.form, input.measure) {
@@ -96,42 +89,55 @@ plot.attr.fun <- function(input.form, input.measure) {
     plot.attr$xlims = c(8,21)
     plot.attr$xbreaks = 8:18
     if (input.measure == "understands") {
-      plot.attr$ylabel <- "Size of Receptive Vocabulary"
+      plot.attr$ylabel <- "Proportion of Children Understanding"
     } else if (input.measure == "produces") {
-      plot.attr$ylabel <- "Size of Productive Vocabulary" 
+      plot.attr$ylabel <- "Proportion of Children Producing" 
     }
   } else if (input.form == "WS") {
     plot.attr$xlims = c(16,33)
     plot.attr$xbreaks = 16:30
-    plot.attr$ylabel = "Size of Productive Vocabulary"
+    plot.attr$ylabel = "Proportion of Children Producing"
   }
   return(plot.attr)
-}
-
-measure.fun <- function(input.form) {
-  if (input.form == "WG") {
-    measures <- list("Produces" = "produces", "Understands" = "understands")
-  } else if (input.form == "WS") {
-    measures <- list("Produces" = "produces")
-  }
-  return(measures)
 }
 
 ## DEBUGGING
 #input <- list(language = "Danish", form = "WS", measure = "produces",
 #              words = c("item_1"))
+#instrument <- function(){filter(instrument.tables,
+#                               language == start.language(input$language),
+#                               form == start.form(input$form))}
+#plot.words <- function(){if(is.null(input$words)) {c("item_100")} else {input$words}}
+#data <- function(){data.fun(start.language(input$language),
+#                           start.form(input$form),
+#                           start.measure(input$measure),
+#                           plot.words())}
+#plot.attr <- function(){plot.attr.fun(start.form(input$form),
+#                                     start.measure(input$measure))}
 
 ############## STUFF THAT RUNS WHEN USER CHANGES SOMETHING ##############
 shinyServer(function(input, output, session) {
   
-  data <- reactive({data.fun(start.language(input$language),
-                             start.form(input$form),
-                             start.measure(input$measure),
-                             start.words(input$words))})
-  
-  plot.attr <- reactive({plot.attr.fun(start.form(input$form),
-                                       start.measure(input$measure))})
-  
+  input.language <- reactive({ifelse(is.null(input$language),
+                               start.language(), input$language)})
+  input.form <- reactive({ifelse(is.null(input$form),
+                           start.form(), input$form)})
+  input.measure <- reactive({ifelse(is.null(input$measure),
+                           start.measure(), input$measure)})
+  input.words <- reactive({
+    if(is.null(input$words)) {start.words(names(instrument()$words.by.id[[1]]))}
+    else {input$words}
+    })
+    
+  instrument <- reactive({filter(instrument.tables,
+                                 language == input.language(),
+                                 form == input.form())})
+
+  data <- reactive({data.fun(input.language(), input.form(),
+                             input.measure(), input.words())})
+
+  plot.attr <- reactive({plot.attr.fun(input.form(), input.measure())})
+
   plot <- function() {
     ggplot(data(), aes(x=age, y=score, colour=word, label=word)) +
       geom_smooth(se=FALSE, method="loess") +
@@ -149,11 +155,17 @@ shinyServer(function(input, output, session) {
   }
   
   words <- reactive({filter(instrument.tables,
-                            language == start.language(input$language),
-                            form == start.form(input$form))$words.by.definition[[1]]})
+                            language == input.language(),
+                            form == input.form())$words.by.definition[[1]]})
   forms <- reactive({unique(filter(instrument.tables,
-                                   language == start.language(input$language))$form)})
-  measures <- reactive({measure.fun(start.form(input$form))})
+                                   language == input.language())$form)})
+  measures <- reactive({
+    if (input.form() == "WG") {
+      list("Produces" = "produces", "Understands" = "understands")
+    } else if (input.form() == "WS") {
+      list("Produces" = "produces")
+    }
+  })
   
   ### PLOT RENDERER
   output$plot <- renderPlot({
@@ -165,34 +177,34 @@ shinyServer(function(input, output, session) {
   ### FIELD SELECTORS
   output$language_selector <- renderUI({    
     selectizeInput("language", label = h4("Language"), 
-                   choices = languages, selected = start.language(NULL))
+                   choices = languages, selected = start.language())
   })
   
   output$form_selector <- renderUI({    
     selectizeInput("form", label = h4("Form"),
-                   choices = forms(), selected = start.form(NULL))
+                   choices = forms(), selected = start.form())
   })
   
   output$measure_selector <- renderUI({
     selectizeInput("measure", label = h4("Measure"), 
-                   choices = measures(), selected = start.measure(NULL))
+                   choices = measures(), selected = start.measure())
   })
   
   output$words_selector <- renderUI({
     selectizeInput("words", label = h4("Words"), 
                    choices = words(),
-                   selected = start.words(NULL),
+                   selected = start.words(names(instrument()$words.by.id[[1]])),
                    multiple = TRUE)
   })
   
   output$downloadData <- downloadHandler(
-    filename = function() { 'word_trajectory.csv' },
+    filename = function() { 'item_trajectory.csv' },
     content = function(file) {
       write.csv(data(), file)
     })
   
   output$downloadPlot <- downloadHandler(
-    filename = function() { 'word_trajectory.pdf' },
+    filename = function() { 'item_trajectory.pdf' },
     content = function(file) {
       cairo_pdf(file, width=10, height=7, family=font)
       print(plot())
