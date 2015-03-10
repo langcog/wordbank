@@ -1,7 +1,7 @@
 ---
 title: "Accessing the Wordbank Database"
 author: "Dan Yurovsky and Mika Braginsky"
-date: "March 03, 2015"
+date: "March 10, 2015"
 output:
   html_document:
     highlight: tango
@@ -35,7 +35,7 @@ eval(parse(text = script))
 
 Connect to the Wordbank database.
 ```{r, cache=FALSE}
-wordbank <- src_mysql(dbname='wordbank', host="54.149.39.46", #"54.200.225.86"
+wordbank <- src_mysql(dbname='wordbank', host="54.200.225.86",
                       user="wordbank", password="wordbank")
 ```
 
