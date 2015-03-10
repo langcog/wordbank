@@ -12,15 +12,12 @@
 <script>
     $.getJSON("static/json/reports.json", function(data) {
 	var currentApp = window.location.search.split('=')[1];
-	console.log(currentApp);
         var tabs = $('#tabs');
         var ul = $('<ul>').attr('class', "nav nav-tabs").appendTo(tabs);
         for (var i in data) {
             var app = data[i];
-	    console.log(app);
 	    var li = $('<li>').attr('role', "presentation").appendTo(ul)
 	    if (app['app_directory'] == currentApp) {
-		console.log('check');
 		li.attr('class', "active");
 	    }
             var link = $('<a>').attr('href', '/reports?id=' + app['app_directory'])
