@@ -1,5 +1,8 @@
-img {
+.img-thumbnail {
   width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 0px;
+  padding: 4px;
 }
 
 .reportName {

@@ -10,8 +10,8 @@
   "app_sample_plot": "static/images/sample_plots/hists.png"
 },
 {
-  "app_name": "Individual Word Trajectories",
-  "app_directory": "word_trajectory_app",
+  "app_name": "Item Trajectories",
+  "app_directory": "item_trajectory_app",
   "app_sample_plot": "static/images/sample_plots/word_trajectory.png"
 }
 ]

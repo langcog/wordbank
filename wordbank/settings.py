@@ -3,7 +3,7 @@ import os
 
 SITE_DIR = (os.path.join(os.path.dirname(__file__), '..')).replace('\\', '/')
 DEV = os.path.isfile(os.path.join(SITE_DIR, 'dev'))
-DEBUG = False
+DEBUG = True
 if DEV:
   DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -177,3 +177,8 @@ LOGGING = {
 }
 
 TEST_RUNNER = 'django.test.runner.DiscoverRunner'
+
+from django.conf.global_settings import TEMPLATE_CONTEXT_PROCESSORS
+TEMPLATE_CONTEXT_PROCESSORS += (
+    'django.core.context_processors.request',
+)
