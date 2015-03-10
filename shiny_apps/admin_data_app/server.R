@@ -95,7 +95,7 @@ shinyServer(function(input, output, session) {
   })
   
    output$downloadData <- downloadHandler(
-     filename = function() { 'vocabulary_norms.csv' },
+     filename = function() { 'administration_data.csv' },
      content = function(file) {
        write.csv(data(), file)
      })
