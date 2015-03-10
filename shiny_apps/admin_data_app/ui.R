@@ -9,16 +9,16 @@ shinyUI(fluidPage(theme = shinytheme("spacelab"),
   br(),
   
   fluidRow(
-    column(4, uiOutput("language_selector")),
-    column(4, uiOutput("form_selector")),
+    column(3, uiOutput("language_selector")),
+    column(3, uiOutput("form_selector")),
     column(4, uiOutput("age_selector"))
     ),
   fluidRow(
-    column(4, uiOutput("sex_selector")),
-    column(4, uiOutput("momed_selector"))
+    column(3, uiOutput("sex_selector")),
+    column(3, uiOutput("momed_selector"))
     ),
   
   fluidRow(
-    dataTableOutput(outputId="table")
+    column(11, dataTableOutput(outputId="table"))
   )
 ))

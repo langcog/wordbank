@@ -3,7 +3,6 @@ library(shiny)
 library(RMySQL)
 library(dplyr)
 library(magrittr)
-source("../app_themes.R")
 source("../data_loading.R")
 
 wordbank <- src_mysql(dbname="wordbank")
@@ -79,7 +78,7 @@ shinyServer(function(input, output, session) {
 
   output$age_selector <- renderUI({
     sliderInput("age", label = h4("Age (Months)"), 
-                min = min(admins$age), max = max(admins$age),
+                min = min(admins$age), max = max(admins$age), step = 1,
                 value = c(min(admins$age), max(admins$age)))
   })
 
