@@ -16,7 +16,8 @@ shinyUI(fluidPage(theme = shinytheme("spacelab"),
   fluidRow(align="top",
     column(3, uiOutput("sex_selector")),
     column(3, uiOutput("momed_selector")),
-    column(5, downloadButton('downloadData', 'Download Data'), align="center")
+    br(),
+    column(5, downloadButton('downloadData', 'Download Data'), align="right")
     ),
   
   fluidRow(
