@@ -147,16 +147,6 @@ plot.attr.fun <- function(input.form, input.measure) {
 ## DEBUGGING
 #input <- list(language = "Danish", form = "WS", measure = "produces",
 #              words = c("item_1"))
-#instrument <- function(){filter(instrument.tables,
-#                               language == start.language(input$language),
-#                               form == start.form(input$form))}
-#plot.words <- function(){if(is.null(input$words)) {c("item_100")} else {input$words}}
-#data <- function(){data.fun(start.language(input$language),
-#                           start.form(input$form),
-#                           start.measure(input$measure),
-#                           plot.words())}
-#plot.attr <- function(){plot.attr.fun(start.form(input$form),
-#                                     start.measure(input$measure))}
 
 ############## STUFF THAT RUNS WHEN USER CHANGES SOMETHING ##############
 shinyServer(function(input, output, session) {
@@ -167,20 +157,8 @@ shinyServer(function(input, output, session) {
                            start.form(), input$form)})
   input.measure <- reactive({ifelse(is.null(input$measure),
                            start.measure(), input$measure)})
-#  input.words <- reactive({
-#    if(is.null(input$words)) {start.words(names(instrument()$words.by.id[[1]]))}
-#    else {input$words}
-#    })
   input.words <- reactive(input$words)
-#  input.wordform <- reactive({
-#    if(is.null(input$wordform)) {start.wordform(names(instrument()$wordform.by.id[[1]]))}
-#    else {input$wordform}
-#  })
   input.wordform <- reactive(input$wordform)
-#  input.complexity <- reactive({
-#    if(is.null(input$complexity)) {start.complexity(names(instrument()$complexity.by.id[[1]]))}
-#    else {input$complexity}
-#  })
   input.complexity <- reactive(input$complexity)
 
   instrument <- reactive({filter(instrument.tables,
@@ -259,7 +237,7 @@ shinyServer(function(input, output, session) {
   })
 
   output$wordform_selector <- renderUI({
-    selectizeInput("wordform", label = h4("Wordform Items"), 
+    selectizeInput("wordform", label = h4("Word Forms"), 
                    choices = wordform(),
 #                   selected = start.wordform(names(instrument()$wordform.by.id[[1]])),
                    multiple = TRUE)
