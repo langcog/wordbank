@@ -44,3 +44,8 @@ class Blog(View):
 
   def get(self, request):
     return render(request, 'blog.html', {})
+
+class Tutorial(View):
+
+  def get(self, request):
+    return render(request, 'tutorial.html', {})
