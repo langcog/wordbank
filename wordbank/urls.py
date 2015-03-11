@@ -14,6 +14,7 @@ urlpatterns = patterns('',
     url(r'reports', Reports.as_view(), name='reports'),
     url(r'contribute', Contribute.as_view(), name='contribute'),
     url(r'blog', Blog.as_view(), name='blog'),
+    url(r'tutorial', Tutorial.as_view(), name='tutorial'),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),

@@ -1,7 +1,7 @@
 ---
 title: "Accessing the Wordbank Database"
 author: "Dan Yurovsky and Mika Braginsky"
-date: "March 10, 2015"
+date: "2015-03-10"
 output:
   html_document:
     highlight: tango
@@ -13,6 +13,7 @@ This script shows the basics of how to connect to the Wordbank database, load da
 ```{r setup, include=FALSE}
 library(knitr)
 opts_chunk$set(message=FALSE, warning=FALSE, cache=TRUE)
+font="Open Sans"
 ```
 
 Load required libraries.
@@ -27,8 +28,8 @@ library(RCurl)
 ```
 
 Get a script that provides interface functions for pulling data out of Wordbank.
-```{r}
-url <- 'https://raw.githubusercontent.com/langcog/wordbank/crossling/shiny_apps/data_loading.R'
+```{r, cache=FALSE}
+url <- 'https://raw.githubusercontent.com/langcog/wordbank/master/shiny_apps/data_loading.R'
 script <- getURL(url, ssl.verifypeer = FALSE)
 eval(parse(text = script))
 ```
@@ -121,7 +122,7 @@ num.words <- items %>%
   summarise(n = n())
 
 vocab.data <- admins %>%
-  select(admin.id, language, form, age, sex, production) %>%
+  select(data_id, language, form, age, sex, production) %>%
   filter(form == "WS", age >= 16, age <= 30) %>%
   group_by(language, sex, age) %>%
   left_join(num.words) %>%
@@ -149,12 +150,13 @@ ggplot(vocab.data,
                   show_guide = FALSE) +
   geom_line(size=1) +
   scale_x_continuous(breaks=seq(16,30,2),limits=c(16,31),
-                     name = "Age (months)")+
-  scale_y_continuous(name = "Median Productive Vocabulary (proportion of total words)",
+                     name = "\nAge (months)")+
+  scale_y_continuous(name = "Median Productive Vocabulary (proportion of total words)\n",
                      limits=c(0,1)) +
   theme_bw(base_size=14) +
-  theme(legend.position="none", panel.grid=element_blank()) +
-  geom_dl(method = list(dl.trans(x=x +.2),"last.qp",cex=1)) +
+  theme(legend.position="none",
+        text=element_text(family=font)) +
+  geom_dl(method = list(dl.trans(x=x +.2),"last.qp",cex=1, fontfamily=font)) +
   scale_color_manual(values = c("#2c7bb6", "#d7191c"))
 ```
 
@@ -226,11 +228,12 @@ ggplot(color.byage.data, aes(x=age, y=na.mean, color=color, label=color)) +
                   show_guide = FALSE) +
   geom_line(size=1) +
   theme_bw(base_size=14) +
-  theme(legend.position="none", panel.grid=element_blank()) +
-  geom_dl(method = list(dl.trans(x=x +.2), "last.qp", cex=.8)) +
+  theme(legend.position="none",
+        text=element_text(family=font)) +
+  geom_dl(method = list(dl.trans(x=x +.2), "last.qp", cex=.8, fontfamily=font)) +
   scale_color_manual(values=c("black", "#2c7bb6", "#1a9641", "#d7191c", "gray87", "gold1")) +
   scale_x_continuous(breaks=seq(16,30,2), limits=c(16,31.5),
-                     name = "Age (months)")+
-  scale_y_continuous(name = "Proportion of Children Producing",
+                     name = "\nAge (months)")+
+  scale_y_continuous(name = "Proportion of Children Producing\n",
                      limits=c(0,1))
 ```
