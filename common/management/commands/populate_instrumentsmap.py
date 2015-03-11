@@ -11,6 +11,8 @@ class Command(NoArgsCommand):
         for instrument in instruments:
 
             instrument_language, instrument_form = instrument['language'], instrument['form']
+            instrument_age_min, instrument_age_max = instrument['age_min'], instrument['age_max']
 
             if len(InstrumentsMap.objects.filter(language=instrument_language, form=instrument_form)) <= 0:
-                InstrumentsMap.objects.create(language=instrument_language, form=instrument_form)
+                InstrumentsMap.objects.create(language=instrument_language, form=instrument_form,
+                                              age_min=instrument_age_min, age_max=instrument_age_max)
