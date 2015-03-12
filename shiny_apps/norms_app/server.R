@@ -58,7 +58,8 @@ shinyServer(function(input, output, session) {
     cuts = seq(0.0, 1.0, by=qs)
     admins %>% filter(language == input.language(),
                       form == input.form(),
-                      measure == input.measure()) %>%
+                      measure == input.measure(),
+                      age >= age.min() & age <= age.max()) %>%
       group_by(age) %>%
       mutate(percentile = rank(vocab) / length(vocab),
              quantile = cut(percentile,
