@@ -23,6 +23,7 @@ items <- get.item.data(common.tables$wordmapping,
 
 instrument.tables <- get.instrument.tables(wordbank, common.tables$instrumentsmap)
 languages <- unique(instrument.tables$language)
+forms <- unique(instrument.tables$form)
 
 start.language <- function() {"English"}
 start.form <- function() {"WS"}
@@ -35,34 +36,47 @@ start.form <- function() {"WS"}
 shinyServer(function(input, output, session) {
   
   input.language <- reactive({
-    ifelse(is.null(input$language), start.language(), input$language)
+    input$language
+    #    ifelse(is.null(input$language), start.language(), input$language)
   })
   
   input.form <- reactive({
-    ifelse(is.null(input$form), start.form(), input$form)
+    input$form
+    #    ifelse(is.null(input$form), start.form(), input$form)
   })
   
-  instrument <- reactive({filter(instrument.tables,
-                                 language == input.language(),
-                                 form == input.form())})
+  instrument <- reactive({
+    if(!is.null(input.language()) & !is.null(input.form())) {
+      filter(instrument.tables,
+             language == input.language(),
+             form == input.form())
+    }
+  })
+  
   
   data <- reactive({
     
-    instrument.items <- filter(items, language == input.language(), form == input.form()) %>%
-      select(-language, -form)
-    
-    instrument.table <- instrument()$table[[1]]
-    fields <- as.character(instrument.table$select[2:length(instrument.table$select)])
-    
-    get.instrument.data(instrument.table, fields) %>%
-      left_join(instrument.items) %>%
-      left_join(select(admins, -language, -form, -comprehension, -production)) %>%
-      arrange(data_id)
-    
+    if(!is.null(input.language()) & !is.null(input.form())) {
+      
+      instrument.items <- filter(items, language == input.language(), form == input.form()) %>%
+        select(-language, -form)
+      
+      instrument.table <- instrument()$table[[1]]
+      fields <- as.character(instrument.table$select[2:length(instrument.table$select)])
+      
+      get.instrument.data(instrument.table, fields) %>%
+        left_join(instrument.items) %>%
+        left_join(select(admins, -language, -form, -comprehension, -production)) %>%
+        arrange(data_id)
+    }
   })
   
-  forms <- reactive({unique(filter(instrument.tables,
-                                   language == input.language())$form)})
+  #  forms <- reactive({
+  #    print(input.language())
+  #    if(!is.null(input.language())) {
+  #      unique(filter(instrument.tables, language == input.language())$form)
+  #    } else {c()}
+  #  })
   
   output$table <- renderDataTable({
     data()
@@ -70,14 +84,14 @@ shinyServer(function(input, output, session) {
   
   output$language_selector <- renderUI({    
     selectizeInput("language", label = h4("Language"),
-                   choices = languages,
-                   selected = start.language())
+                   choices = languages)
+    #                   selected = start.language())
   })
   
   output$form_selector <- renderUI({    
     selectizeInput("form", label = h4("Form"),
-                   choices = forms(),
-                   selected = start.form())
+                   choices = forms)
+    #                   selected = start.form())
   })
   
   output$downloadData <- downloadHandler(
@@ -85,5 +99,13 @@ shinyServer(function(input, output, session) {
     content = function(file) {
       write.csv(data(), file)
     })
+  
+  output$loading <- renderImage({
+    return(list(
+      src = "../images/loading.gif",
+      contentType = "image/gif",
+      alt = "Loading"
+    ))
+  }, deleteFile = FALSE)
   
 })
