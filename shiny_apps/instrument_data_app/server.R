@@ -56,7 +56,7 @@ shinyServer(function(input, output, session) {
     
     get.instrument.data(instrument.table, fields) %>%
       left_join(instrument.items) %>%
-      left_join(select(admins, -language, -form)) %>%
+      left_join(select(admins, -language, -form, -comprehension, -production)) %>%
       arrange(data_id)
     
   })
