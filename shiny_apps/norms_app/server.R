@@ -20,61 +20,45 @@ admins <- get.administration.data(common.tables$momed,
   gather(measure, vocab, comprehension, production)
 
 instrument.tables <- get.instrument.tables(wordbank, common.tables$instrumentsmap)
+
 languages <- unique(instrument.tables$language)
 
-plot.attr.fun <- function(form, measure) {
-  plot.attr = list()
-  if(form == "WG") {
-    if(measure == "comprehension") {
-      plot.attr$ylabel <- "Size of Receptive Vocabulary"
-    } else {
-      plot.attr$ylabel <- "Size of Productive Vocabulary" 
-    }
-    plot.attr$xlims = c(8,18)
-    plot.attr$xbreaks = 8:18
-  } else {
-    plot.attr$ylabel = "Size of Productive Vocabulary"
-    plot.attr$xlims = c(16,30)
-    plot.attr$xbreaks = 16:30
-  }
-  return(plot.attr)
-}
+start.language <- function() {"English"}
+start.form <- function() {"WS"}
+start.measure <- function() {"production"}
 
-measure.fun <- function(input.form) {
-  if (input.form == "WG") {
-    measures <- list("Produces" = "production", "Understands" = "comprehension")
-  } else if (input.form == "WS") {
-    measures <- list("Produces" = "production")
-  }
-  return(measures)
-}
-
-start.language <- function(language) {
-  ifelse(is.null(language), "English", language)
-}
-
-start.form <- function(form) {
-  ifelse(is.null(form), "WS", form)
-}
-
-start.measure <- function(measure) {
-  ifelse(is.null(measure), "production", measure)
-}
 
 ## DEBUGGING
-#input <- list(language = "Danish", form = "WS", measure = "production",
-#              qsize = ".1")
-#plot.attr <- function(){plot.attr.fun(input$form, input$measure)}
+#input <- list(language = "English", form = "WS", measure = "production", qsize = ".2")
 
 ############## STUFF THAT RUNS WHEN USER CHANGES SOMETHING ##############
 shinyServer(function(input, output, session) {
   
+  input.language <- reactive({ifelse(is.null(input$language),
+                                     start.language(), input$language)})
+  input.form <- reactive({ifelse(is.null(input$form),
+                                 start.form(), input$form)})
+  input.measure <- reactive({ifelse(is.null(input$measure),
+                                    start.measure(), input$measure)})
+  
+  instrument <- reactive({filter(instrument.tables,
+                                 language == input.language(),
+                                 form == input.form())})
+  
+  ylabel <- reactive({
+    if (input.measure() == "comprehension") {"Size of Receptive Vocabulary"}
+    else if (input.measure() == "production") {"Size of Productive Vocabulary"}
+  })
+  
+  age.min <- reactive({instrument()$age_min})
+  age.max <- reactive({instrument()$age_max})
+  
   data <- reactive({
     qs = as.numeric(input$qsize)
     cuts = seq(0.0, 1.0, by=qs)
-    admins %>% filter(language == start.language(input$language),
-                      form == start.form(input$form),
-                      measure == start.measure(input$measure)) %>%
+    admins %>% filter(language == input.language(),
+                      form == input.form(),
+                      measure == input.measure()) %>%
       group_by(age) %>%
       mutate(percentile = rank(vocab) / length(vocab),
              quantile = cut(percentile,
@@ -82,26 +66,29 @@ shinyServer(function(input, output, session) {
                             labels=cuts[2:length(cuts)]-qs/2))
   })
   
-  plot.attr <- reactive({plot.attr.fun(start.form(input$form),
-                                       start.measure(input$measure))})
-  
   plot <- function() {
     ggplot(data(), aes(x=age, y=vocab, colour=quantile)) + 
       geom_jitter(width=.1) +
       geom_smooth(method="loess", se=FALSE, size=1.5) +
       scale_x_continuous(name="\nAge (months)",
-                         breaks=plot.attr()$xbreaks,
-                         limits=plot.attr()$xlims) +
-      ylab(paste(plot.attr()$ylabel, "\n", sep="")) +
+                         breaks=age.min():age.max(),
+                         limits=c(age.min(), age.max())) +
+      ylab(paste(ylabel(), "\n", sep="")) +
       scale_colour_brewer(name="Quantile\nMidpoint",
                           palette=seq.palette) +
       theme(text=element_text(family=font))
   }
-  
+      
   forms <- reactive({unique(filter(instrument.tables,
-                                   language == start.language(input$language))$form)})
+                                   language == input.language())$form)})
   
-  measures <- reactive({measure.fun(start.form(input$form))})
+  measures <- reactive({
+    if (input.form() == "WG") {
+      list("Produces" = "production", "Understands" = "comprehension")
+    } else if (input.form() == "WS") {
+      list("Produces" = "production")
+    }
+  })
   
   output$plot <- renderPlot({
     plot()
@@ -112,17 +99,17 @@ shinyServer(function(input, output, session) {
   ### FIELD SELECTORS
   output$language_selector <- renderUI({    
     selectizeInput("language", label = h4("Language"), 
-                   choices = languages, selected = start.language(NULL))
+                   choices = languages, selected = start.language())
   })
   
   output$form_selector <- renderUI({    
     selectizeInput("form", label = h4("Form"), 
-                   choices = forms(), selected = start.form(NULL))
+                   choices = forms(), selected = start.form())
   })
   
   output$measure_selector <- renderUI({
     selectizeInput("measure", label = h4("Measure"), 
-                   choices = measures(), selected = start.measure(NULL))
+                   choices = measures(), selected = start.measure())
   })
   
   output$downloadData <- downloadHandler(
@@ -138,14 +125,5 @@ shinyServer(function(input, output, session) {
       print(plot())
       dev.off()
     })
-  
-  # output$downloadReport <- downloadHandler(
-  #   filename = function() { 'vocabulary_norms_report.pdf' },
-  #   
-  #   content = function(file) {
-  #     library(rmarkdown)
-  #     out <- render('report.Rmd', pdf_document())
-  #     file.rename(out, file)
-  #   })
   
 })
