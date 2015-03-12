@@ -13,6 +13,8 @@ shinyUI(fluidPage(theme = shinytheme("spacelab"),
     sidebarPanel(
       uiOutput("language_selector"),
       uiOutput("form_selector"),
+      br(),
+      downloadButton('downloadData', 'Download Data'),
       width=3
       ),
     
