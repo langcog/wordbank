@@ -8,7 +8,7 @@ library(directlabels)
 library(RMySQL)
 source("../app_themes.R")
 source("../data_loading.R")
-Sys.setlocale(locale="C")
+#Sys.setlocale(locale="C")
 
 wordbank <- src_mysql(dbname="wordbank")
 
@@ -66,15 +66,9 @@ start.words <- function(words) {words[[1]]}
 start.wordform <- function(wordform) {}
 start.complexity <- function(complexity) {}
 
-# start.words <- function(words, instrument.words) {
-#   if(is.null(words)) {c("item_100")} else {words}
-# }
-
-
-data.fun <- function(input.language, input.form, input.measure,
+data.fun <- function(instrument, input.form, input.measure,
                      input.words, input.wordform, input.complexity) {
   
-  instrument <- filter(instrument.tables, language == input.language, form == input.form)
   instrument.table <- instrument$table[[1]]
   
   if(!is.null(input.words)) {
@@ -116,37 +110,15 @@ data.fun <- function(input.language, input.form, input.measure,
              type = 'complexity')
   } else {complexity.data <- data.frame()}
   
-  data <- bind_rows(word.data, wordform.data, complexity.data)
+  data <- bind_rows(word.data, wordform.data, complexity.data) %>%
+    filter(age >= instrument$age_min & age <= instrument$age_max)
   
-  if (input.form == "WS") {
-    data %<>% filter(age >= 16 & age <= 30)
-  } else if (input.form == "WG") {
-    data %<>% filter(age >= 8 & age <= 18)      
-  }
   return(data)
 }
 
-plot.attr.fun <- function(input.form, input.measure) {
-  plot.attr = list()
-  if (input.form == "WG") {
-    plot.attr$xlims = c(8,20)
-    plot.attr$xbreaks = 8:18
-    if (input.measure == "understands") {
-      plot.attr$ylabel <- "Proportion of Children Understanding"
-    } else if (input.measure == "produces") {
-      plot.attr$ylabel <- "Proportion of Children Producing" 
-    }
-  } else if (input.form == "WS") {
-    plot.attr$xlims = c(16,35)
-    plot.attr$xbreaks = 16:30
-    plot.attr$ylabel = "Proportion of Children Producing"
-  }
-  return(plot.attr)
-}
-
 ## DEBUGGING
-#input <- list(language = "Danish", form = "WS", measure = "produces",
-#              words = c("item_1"))
+#input <- list(language = "English", form = "WS", measure = "produces",
+#              words = c("item_1"), wordform = NULL, complexity = NULL)
 
 ############## STUFF THAT RUNS WHEN USER CHANGES SOMETHING ##############
 shinyServer(function(input, output, session) {
@@ -165,19 +137,25 @@ shinyServer(function(input, output, session) {
                                  language == input.language(),
                                  form == input.form())})
 
-  data <- reactive({data.fun(input.language(), input.form(), input.measure(),
+  data <- reactive({data.fun(instrument(), input.form(), input.measure(),
                              input.words(), input.wordform(), input.complexity())})
 
-  plot.attr <- reactive({plot.attr.fun(input.form(), input.measure())})
+  ylabel <- reactive({
+    if (input.measure() == "understands") {"Proportion of Children Understanding"}
+    else if (input.measure() == "produces") {"Proportion of Children Producing"}
+  })
+
+  age.min <- reactive({instrument()$age_min})
+  age.max <- reactive({instrument()$age_max})
 
   plot <- function() {
     ggplot(data(), aes(x=age, y=score, colour=item, label=item)) +
       geom_smooth(aes(linetype=type), se=FALSE, method="loess") +
       geom_point(aes(shape=type)) +
       scale_x_continuous(name = "\nAge (months)",
-                         breaks = plot.attr()$xbreaks,
-                         limits = plot.attr()$xlims) +
-      scale_y_continuous(name = paste(plot.attr()$ylabel, "\n", sep=""),
+                         breaks = age.min():age.max(),
+                         limits = c(age.min(), age.max()+3)) +
+      scale_y_continuous(name = paste(ylabel(), "\n", sep=""),
                          limits = c(-.01,1),
                          breaks = seq(0,1,.25)) +
       scale_colour_brewer(palette=qual.palette) +
