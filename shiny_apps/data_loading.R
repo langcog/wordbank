@@ -47,7 +47,9 @@ get.administration.data <- function(momed.table, child.table, instruments.table,
   
   mom_ed <- as.data.frame(momed.table) %>%
     rename(momed_id = id, momed.level = level, momed.order = order) %>%
-    mutate(momed_id = as.numeric(momed_id))
+    arrange(momed.order) %>%
+    mutate(momed_id = as.numeric(momed_id),
+           momed.level = factor(momed.level, levels=momed.level))
   
   children <- as.data.frame(child.table) %>%
     select(id, birth_order, ethnicity, sex, momed_id) %>%
