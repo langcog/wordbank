@@ -3,11 +3,34 @@
 
 {% block content %}
 
+<div id="wait" class="loader" align="center">
+<p class="lead">Please wait...</p>
+<img src="{% static 'images/loading.gif' %}">
+</div>
+
+<div id="content">
+
 <div id="tabs">
 </div>
 
 <iframe style="border:none; width:1100px; height:1000px" id="report"  src="http://{{ shinyServerIP }}/{{ id }}"></iframe>
 
+</div>
+
+<script>
+    $('#content').hide();
+
+    var displayReport = function() {
+        console.log('loaded!');
+        $('#wait').hide();
+	$('#content').show();
+    }
+
+    $('#report').load(function() {
+        displayReport();
+    });
+
+</script>
 
 <script>
     $.getJSON("static/json/reports.json", function(data) {

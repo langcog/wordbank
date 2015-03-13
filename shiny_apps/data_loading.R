@@ -16,8 +16,8 @@ get.common.tables <- function(db) {
   
   names <- Filter(function(tbl) substr(tbl,1,7) == "common_", src_tbls(db))
   
-  tables <- sapply(names,function(name) tbl(db,name),simplify=FALSE)
-  names(tables) <- sapply(names(tables),function(name) substr(name,8,nchar(name)),
+  tables <- sapply(names, function(name) tbl(db,name), simplify=FALSE)
+  names(tables) <- sapply(names(tables), function(name) substr(name, 8, nchar(name)),
                           simplify=FALSE)
   
   return(tables)
@@ -33,7 +33,7 @@ get.instrument.tables <- function(db, instrumentsmap) {
   instrument.tables <- as.data.frame(instrumentsmap) %>%
     mutate(table.name = paste("instruments", tolower(language), tolower(form), sep="_")) %>%
     rename(instrument_id = id) %>%
-    group_by(instrument_id, language, form) %>%
+    group_by(instrument_id, language, form, age_min, age_max) %>%
     do(table = tbl(db, .$table.name))
   
   return(instrument.tables)
@@ -46,19 +46,25 @@ get.instrument.tables <- function(db, instrumentsmap) {
 get.administration.data <- function(momed.table, child.table, instruments.table, admin.table) {
   
   mom_ed <- as.data.frame(momed.table) %>%
-    rename(momed_id = id, momed.level = level, momed.order = order)
+    rename(momed_id = id, momed.level = level, momed.order = order) %>%
+    mutate(momed_id = as.numeric(momed_id))
   
   children <- as.data.frame(child.table) %>%
     select(id, birth_order, ethnicity, sex, momed_id) %>%
     rename(child_id = id, birth.order = birth_order) %>%
+    mutate(child_id = as.numeric(child_id),
+           momed_id = as.numeric(momed_id)) %>%
     left_join(mom_ed) %>%
     select(-momed_id)
   
   instruments <- as.data.frame(instruments.table) %>%
-    rename(instrument_id = id)
+    rename(instrument_id = id) %>%
+    mutate(instrument_id = as.numeric(instrument_id))
   
   admins <- as.data.frame(admin.table) %>%
     select(data_id, child_id, age, instrument_id, comprehension, production) %>%
+    mutate(data_id = as.numeric(data_id),
+           child_id = as.numeric(child_id)) %>%
     left_join(instruments) %>%
     select(-instrument_id) %>%
     left_join(children) %>%
@@ -97,7 +103,8 @@ get.instrument.data <- function(instrument.table, columns) {
     gather_("item_id", "value", columns, convert=TRUE) %>%
     mutate(item.id = as.numeric(substr(item_id, 6, nchar(item_id)))) %>%
     select(-item_id) %>%
-    mutate(value = ifelse(is.na(value), "", value))
+    mutate(value = ifelse(is.na(value), "", value)) %>%
+    arrange(data_id)
   
   return(instrument.data)
 }

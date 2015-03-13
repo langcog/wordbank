@@ -13,10 +13,11 @@ shinyUI(fluidPage(theme = shinytheme("spacelab"),
     column(3, uiOutput("form_selector")),
     column(4, uiOutput("age_selector"))
     ),
-  fluidRow(align="top",
+  fluidRow(
     column(3, uiOutput("sex_selector")),
     column(3, uiOutput("momed_selector")),
-    column(5, downloadButton('downloadData', 'Download Data'), align="center")
+    br(),
+    column(5, downloadButton('downloadData', 'Download Data'), align="right")
     ),
   
   fluidRow(
