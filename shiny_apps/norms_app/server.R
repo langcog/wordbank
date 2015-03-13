@@ -38,11 +38,11 @@ min_obs <- 100
 start.language <- function() {"English"}
 start.form <- function() {"WS"}
 start.measure <- function() {"production"}
-start.demo <- function(demo) {"identity"}
+start.demo <- function() {"identity"}
 
 ## DEBUGGING
-#input <- list(language = "English", form = "WS", measure = "production",
-#              qsize = ".2", demo = "birth.order")
+input <- list(language = "English", form = "WS", measure = "production",
+              qsize = ".2", demo = "birth.order")
 
 
 ############## STUFF THAT RUNS WHEN USER CHANGES SOMETHING ##############
@@ -62,6 +62,22 @@ shinyServer(function(input, output, session) {
   
   input.demo <- reactive({
     ifelse(is.null(input$demo), start.demo(), input$demo)
+  })
+  
+  aspect.ratio <- reactive({
+    base <- 0.7
+    scaling <- 1
+#     panels <- nrow(select_(groups_with_data(), input.demo()))
+#     if (panels == 2) {
+#       scaling <- 1/2
+#     } else if (panels == 3) {
+#       scaling <- 1/3
+#     } else if (panels == 4) {
+#       scaling <- 1/1
+#     } else if (panels == 6) {
+#       scaling <- 2/3
+#     }
+    base * scaling
   })
   
   instrument <- reactive({filter(instrument.tables,
@@ -138,7 +154,7 @@ shinyServer(function(input, output, session) {
                     group = factor(quantile), colour = factor(quantile)),
                 size = 1) + 
       scale_x_continuous(name="\nAge (months)",
-                         breaks=age.min():age.max(),
+                         breaks=seq(age.min(), age.max(), by=2),
                          limits=c(age.min(), age.max())) +
       ylab(paste(ylabel(), "\n", sep="")) +
       scale_colour_brewer(name="Quantile\nMidpoint",
@@ -170,7 +186,7 @@ shinyServer(function(input, output, session) {
   output$plot <- renderPlot({
     plot()
   }, height = function() {
-    session$clientData$output_plot_width * 0.7
+    session$clientData$output_plot_width * aspect.ratio()
   })
   
   ### FIELD SELECTORS
@@ -203,7 +219,7 @@ shinyServer(function(input, output, session) {
   output$downloadPlot <- downloadHandler(
     filename = function() { 'vocabulary_norms.pdf' },
     content = function(file) {
-      cairo_pdf(file, width=10, height=7, family=font)
+      cairo_pdf(file, width=10, height=10*aspect.ratio(), family=font)
       print(plot())
       dev.off()
     })
