@@ -6,6 +6,7 @@ library(dplyr)
 library(ggplot2)
 library(directlabels)
 library(RMySQL)
+library(lazyeval)
 source("../app_themes.R")
 source("../data_loading.R")
 
