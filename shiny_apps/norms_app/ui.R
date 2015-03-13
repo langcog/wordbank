@@ -21,7 +21,6 @@ shinyUI(fluidPage(theme = shinytheme("spacelab"),
       downloadButton('downloadPlot', 'Download Plot'),
       br(),br(),
       downloadButton('downloadData', 'Download Data'),
-#      downloadButton('downloadReport', 'Download Report'),
       width=3),
         
     # Show a plot of the generated distribution
