@@ -15,6 +15,11 @@
   "app_sample_plot": "static/images/sample_plots/hists.png"
 },
 {
+  "app_name": "Instrument Data",
+  "app_directory": "instrument_data_app",
+  "app_sample_plot": "static/images/sample_plots/instrument_data.png"
+},
+{
   "app_name": "Item Trajectories",
   "app_directory": "item_trajectory_app",
   "app_sample_plot": "static/images/sample_plots/item_trajectory.png"

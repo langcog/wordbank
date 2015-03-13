@@ -20,32 +20,8 @@ admins <- get.administration.data(common.tables$momed,
   gather(measure, vocab, comprehension, production)
 
 instrument.tables <- get.instrument.tables(wordbank, common.tables$instrumentsmap)
+
 languages <- unique(instrument.tables$language)
-
-measure.fun <- function(input.form) {
-  if (input.form == "WG") {
-    measures <- list("Produces" = "production", "Understands" = "comprehension")
-  } else if (input.form == "WS") {
-    measures <- list("Produces" = "production")
-  }
-  return(measures)
-}
-
-min.age.fun <- function(form) {
-  if (form == "WS") {
-    return(18)
-  } else if (form == "WG") {
-    return(8)
-  }
-}
-
-max.age.fun <- function(form) {
-  if (form == "WS") {
-    return(30)
-  } else if (form == "WG") {
-    return(16)
-  }
-}
 
 binwidth.fun <- function(form) {
   if (form == "WS") {
@@ -55,21 +31,13 @@ binwidth.fun <- function(form) {
   }  
 }
 
-start.language <- function(language) {
-  ifelse(is.null(language), "English", language)
-}
+start.language <- function() {"English"}
+start.form <- function() {"WS"}
+start.measure <- function() {"production"}
 
-start.form <- function(form) {
-  ifelse(is.null(form), "WS", form)
-}
-
-start.measure <- function(measure) {
-  ifelse(is.null(measure), "production", measure)
-}
-
-start.age <- function(age) {
-  ifelse(is.null(age), 24, age)  
-}
+#start.age <- function(age) {
+#  ifelse(is.null(age), 24, age)  
+#}
 
 ############## STUFF THAT RUNS WHEN USER CHANGES SOMETHING ##############
 ## DEBUGGING
@@ -78,26 +46,32 @@ start.age <- function(age) {
 
 shinyServer(function(input, output, session) {
   
-  forms <- reactive({unique(filter(instrument.tables,
-                                   language == start.language(input$language))$form)})
-  measures <- reactive({measure.fun(start.form(input$form))})
-  min.age <- reactive({min.age.fun(start.form(input$form))})
-  max.age <- reactive({max.age.fun(start.form(input$form))})
+  input.language <- reactive({ifelse(is.null(input$language),
+                                     start.language(), input$language)})
+  input.form <- reactive({ifelse(is.null(input$form),
+                                 start.form(), input$form)})
+  input.measure <- reactive({ifelse(is.null(input$measure),
+                                    start.measure(), input$measure)})
+  input.age <- reactive({input$age})
+  
+  instrument <- reactive({filter(instrument.tables,
+                                 language == input.language(),
+                                 form == input.form())})
   
   data <- reactive({
     qs <- as.numeric(input$qsize)
     cuts <- seq(0.0, 1.0, by=qs)
-    admins %>% filter(language == start.language(input$language),
-                      form == start.form(input$form),
-                      measure == start.measure(input$measure),
-                      age == start.age(input$age)) %>%
+    admins %>% filter(language == input.language(),
+                      form == input.form(),
+                      measure == input.measure(),
+                      age == input.age()) %>%
       group_by(age) %>%
       mutate(percentile = rank(vocab)/length(vocab),
              quantile = cut(percentile, breaks=cuts, 
                             labels=cuts[2:length(cuts)]-qs/2))
   })
   
-  binwidth <- reactive({binwidth.fun(start.form(input$form))})
+  binwidth <- reactive({binwidth.fun(input.form())})
   
   plot <- function() {
     ggplot(data(), aes(x=vocab, fill=quantile)) + 
@@ -109,31 +83,46 @@ shinyServer(function(input, output, session) {
       theme(text=element_text(family=font))
   }
   
+  forms <- reactive({unique(filter(instrument.tables,
+                                   language == input.language())$form)})
+  
+  measures <- reactive({
+    if (input.form() == "WG") {
+      list("Produces" = "production", "Understands" = "comprehension")
+    } else if (input.form() == "WS") {
+      list("Produces" = "production")
+    }
+  })
+  
   output$plot <- renderPlot({
     plot()    
   }, height = function() {
     session$clientData$output_plot_width * 0.7
   })
   
-  ### FIELD SELECTORS
+
   output$language_selector <- renderUI({    
     selectizeInput("language", label = h4("Language"), 
-                   choices = languages, selected = start.language(NULL))
+                   choices = languages, selected = start.language())
   })
   
   output$form_selector <- renderUI({    
     selectizeInput("form", label = h4("Form"), 
-                   choices = forms(), selected = start.form(NULL))
+                   choices = forms(), selected = start.form())
   })
   
   output$measure_selector <- renderUI({
     selectizeInput("measure", label = h4("Measure"), 
-                   choices = measures(), selected = start.measure(NULL))
+                   choices = measures(), selected = start.measure())
   })
+  
+  age.min <- reactive({instrument()$age_min})
+  age.max <- reactive({instrument()$age_max})
   
   output$age_selector <- renderUI({
     sliderInput("age", label = h4("Age (Months)"), 
-                min = min.age(), max = max.age(), value = (min.age()+max.age())/2)
+                min = age.min(), max = age.max(), step = 1,
+                value = floor((age.min()+age.max())/2))
   })
   
   output$downloadData <- downloadHandler(
