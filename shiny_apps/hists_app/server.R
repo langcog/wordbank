@@ -17,11 +17,18 @@ admins <- get.administration.data(common.tables$momed,
                                   common.tables$child,
                                   common.tables$instrumentsmap,
                                   common.tables$administration) %>%
-  gather(measure, vocab, comprehension, production)
+  gather(measure, vocab, comprehension, production) %>%
+  mutate(identity = "All Data")
 
 instrument.tables <- get.instrument.tables(wordbank, common.tables$instrumentsmap)
 
 languages <- unique(instrument.tables$language)
+
+possible_demo_fields <- list("None" = "identity", 
+                             "Birth Order" = "birth.order", 
+                             "Ethnicity" = "ethnicity",
+                             "Sex" = "sex",
+                             "Mother's Education" = "momed.level")
 
 binwidth.fun <- function(form) {
   if (form == "WS") {
@@ -34,47 +41,89 @@ binwidth.fun <- function(form) {
 start.language <- function() {"English"}
 start.form <- function() {"WS"}
 start.measure <- function() {"production"}
-
-#start.age <- function(age) {
-#  ifelse(is.null(age), 24, age)  
-#}
+start.demo <- function() {"identity"}
 
 ############## STUFF THAT RUNS WHEN USER CHANGES SOMETHING ##############
 ## DEBUGGING
-#input <- list(language = "English", form = "WS", measure = "production",
-#              qsize = ".2", age = 25)
+input <- list(language = "English", form = "WS", measure = "production",
+              qsize = ".2", age = 25, demo = 'birth.order')
 
 shinyServer(function(input, output, session) {
   
-  input.language <- reactive({ifelse(is.null(input$language),
-                                     start.language(), input$language)})
-  input.form <- reactive({ifelse(is.null(input$form),
-                                 start.form(), input$form)})
-  input.measure <- reactive({ifelse(is.null(input$measure),
-                                    start.measure(), input$measure)})
+  input.language <- reactive({
+      ifelse(is.null(input$language), start.language(), input$language)
+    })
+  
+  input.form <- reactive({
+      ifelse(is.null(input$form), start.form(), input$form)
+    })
+  
+  input.measure <- reactive({
+      ifelse(is.null(input$measure), start.measure(), input$measure)
+    })
+  
   input.age <- reactive({input$age})
+  
+  input.demo <- reactive({
+    ifelse(is.null(input$demo), start.demo(), input$demo)
+  })
   
   instrument <- reactive({filter(instrument.tables,
                                  language == input.language(),
                                  form == input.form())})
   
-  data <- reactive({
-    qs <- as.numeric(input$qsize)
-    cuts <- seq(0.0, 1.0, by=qs)
-    admins %>% filter(language == input.language(),
-                      form == input.form(),
-                      measure == input.measure(),
-                      age == input.age()) %>%
-      group_by(age) %>%
-      mutate(percentile = rank(vocab)/length(vocab),
-             quantile = cut(percentile, breaks=cuts, 
-                            labels=cuts[2:length(cuts)]-qs/2))
+  cuts <- reactive({
+    seq(0.0, 1.0, by=as.numeric(input$qsize))
   })
+  
+  middles <- reactive({
+    cuts()[2:length(cuts())] - as.numeric(input$qsize)/2
+  })
+  
+  filtered_admins <- reactive({
+    admins %>%
+      filter(language == input.language(),
+             form == input.form(),
+             measure == input.measure(),
+             age == input.age())
+  })
+  
+  groups_with_data <- reactive({
+    filtered_admins() %>%
+      group_by_(input.demo()) %>%
+      summarise(n = n()) %>%
+      filter_(interp("!is.na(x)", x = as.name(input.demo())))
+  })
+  
+  data <- reactive({
+    filtered_admins() %>%
+      right_join(groups_with_data()) %>%
+      group_by_("age", input.demo()) %>%
+      filter_(interp("!is.na(x)", x = as.name(input.demo()))) %>%
+      mutate(percentile = rank(vocab) / length(vocab),
+             quantile = cut(percentile,
+                            breaks=cuts(), 
+                            labels=middles()))
+  })
+  
+  #   data <- reactive({
+  #     qs <- as.numeric(input$qsize)
+  #     cuts <- seq(0.0, 1.0, by=qs)
+  #     admins %>% filter(language == input.language(),
+  #                       form == input.form(),
+  #                       measure == input.measure(),
+  #                       age == input.age()) %>%
+  #       group_by(age) %>%
+  #       mutate(percentile = rank(vocab)/length(vocab),
+  #              quantile = cut(percentile, breaks=cuts, 
+  #                             labels=cuts[2:length(cuts)]-qs/2))
+  #   })
   
   binwidth <- reactive({binwidth.fun(input.form())})
   
   plot <- function() {
     ggplot(data(), aes(x=vocab, fill=quantile)) + 
+      facet_wrap(input.demo()) + 
       geom_histogram(binwidth=binwidth()) +
       xlab("\nVocabulary Size") +
       ylab("Number of Children\n") + 
@@ -94,13 +143,23 @@ shinyServer(function(input, output, session) {
     }
   })
   
+  demos <- reactive({
+    demo_fields <- possible_demo_fields
+    for (i in seq(length(possible_demo_fields),1,-1)) {
+      if (all(is.na(filtered_admins()[possible_demo_fields[[i]]]))) {
+        demo_fields <- demo_fields[-i]
+      }
+    }
+    return(demo_fields)
+  })                            
+  
   output$plot <- renderPlot({
     plot()    
   }, height = function() {
     session$clientData$output_plot_width * 0.7
   })
   
-
+  
   output$language_selector <- renderUI({    
     selectizeInput("language", label = h4("Language"), 
                    choices = languages, selected = start.language())
@@ -125,6 +184,11 @@ shinyServer(function(input, output, session) {
                 value = floor((age.min()+age.max())/2))
   })
   
+  output$demo_selector <- renderUI({
+    selectizeInput("demo", label = h4("Split Variable"), 
+                   choices = demos(), selected = start.demo())
+  })
+
   output$downloadData <- downloadHandler(
     filename = function() { 'vocabulary_distribution.csv' },
     content = function(file) {
