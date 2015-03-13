@@ -21,6 +21,9 @@ admins <- get.administration.data(common.tables$momed,
   gather(measure, vocab, comprehension, production) %>%
   mutate(identity = "All Data")
 
+items <- get.item.data(common.tables$wordmapping,
+                       common.tables$instrumentsmap)
+
 instrument.tables <- get.instrument.tables(wordbank, common.tables$instrumentsmap)
 
 languages <- unique(instrument.tables$language)
@@ -38,22 +41,22 @@ start.demo <- function() {"identity"}
 
 ############## STUFF THAT RUNS WHEN USER CHANGES SOMETHING ##############
 ## DEBUGGING
-input <- list(language = "English", form = "WS", measure = "production",
-              qsize = ".2", age = 25, demo = 'birth.order')
+#input <- list(language = "English", form = "WS", measure = "production",
+#              qsize = ".2", age = 25, demo = 'identity')
 
 shinyServer(function(input, output, session) {
   
   input.language <- reactive({
-      ifelse(is.null(input$language), start.language(), input$language)
-    })
+    ifelse(is.null(input$language), start.language(), input$language)
+  })
   
   input.form <- reactive({
-      ifelse(is.null(input$form), start.form(), input$form)
-    })
+    ifelse(is.null(input$form), start.form(), input$form)
+  })
   
   input.measure <- reactive({
-      ifelse(is.null(input$measure), start.measure(), input$measure)
-    })
+    ifelse(is.null(input$measure), start.measure(), input$measure)
+  })
   
   input.age <- reactive({input$age})
   
@@ -172,7 +175,7 @@ shinyServer(function(input, output, session) {
     selectizeInput("demo", label = h4("Split Variable"), 
                    choices = demos(), selected = start.demo())
   })
-
+  
   output$downloadData <- downloadHandler(
     filename = function() { 'vocabulary_distribution.csv' },
     content = function(file) {
