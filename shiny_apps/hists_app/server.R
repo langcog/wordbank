@@ -31,14 +31,6 @@ possible_demo_fields <- list("None" = "identity",
                              "Sex" = "sex",
                              "Mother's Education" = "momed.level")
 
-binwidth.fun <- function(form) {
-  if (form == "WS") {
-    return(25)
-  } else if (form == "WG") {
-    return(10)
-  }  
-}
-
 start.language <- function() {"English"}
 start.form <- function() {"WS"}
 start.measure <- function() {"production"}
@@ -69,9 +61,13 @@ shinyServer(function(input, output, session) {
     ifelse(is.null(input$demo), start.demo(), input$demo)
   })
   
-  instrument <- reactive({filter(instrument.tables,
-                                 language == input.language(),
-                                 form == input.form())})
+  instrument <- reactive({
+    filter(instrument.tables, language == input.language(), form == input.form())
+  })
+  
+  num.words <- reactive({
+    nrow(filter(items, language == input.language(), form == input.form(), type == "word"))
+  })
   
   cuts <- reactive({
     seq(0.0, 1.0, by=as.numeric(input$qsize))
@@ -101,32 +97,19 @@ shinyServer(function(input, output, session) {
       right_join(groups_with_data()) %>%
       group_by_("age", input.demo()) %>%
       filter_(interp("!is.na(x)", x = as.name(input.demo()))) %>%
-      mutate(percentile = rank(vocab) / length(vocab),
+      mutate(prop.vocab = vocab / num.words(),
+             percentile = rank(prop.vocab) / length(prop.vocab),
              quantile = cut(percentile,
                             breaks=cuts(), 
                             labels=middles()))
   })
   
-  #   data <- reactive({
-  #     qs <- as.numeric(input$qsize)
-  #     cuts <- seq(0.0, 1.0, by=qs)
-  #     admins %>% filter(language == input.language(),
-  #                       form == input.form(),
-  #                       measure == input.measure(),
-  #                       age == input.age()) %>%
-  #       group_by(age) %>%
-  #       mutate(percentile = rank(vocab)/length(vocab),
-  #              quantile = cut(percentile, breaks=cuts, 
-  #                             labels=cuts[2:length(cuts)]-qs/2))
-  #   })
-  
-  binwidth <- reactive({binwidth.fun(input.form())})
-  
   plot <- function() {
-    ggplot(data(), aes(x=vocab, fill=quantile)) + 
+    ggplot(data(), aes(x=prop.vocab, fill=quantile)) + 
       facet_wrap(input.demo()) + 
-      geom_histogram(binwidth=binwidth()) +
-      xlab("\nVocabulary Size") +
+      geom_histogram() +
+      scale_x_continuous(name="\nVocabulary Size (proportion of total words)",
+                         limits=c(0,1)) +
       ylab("Number of Children\n") + 
       scale_fill_brewer(name="Quantile\nMidpoint",
                         palette=seq.palette) +
