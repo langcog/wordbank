@@ -84,7 +84,7 @@ shinyServer(function(input, output, session) {
     cuts()[2:length(cuts())] - as.numeric(input$qsize)/2
   })
   
-  filtered_data <- reactive({
+  filtered_admins <- reactive({
     admins %>%
       filter(language == input.language(),
              form == input.form(),
@@ -92,7 +92,7 @@ shinyServer(function(input, output, session) {
   })
   
   groups_with_data <- reactive({
-    filtered_data() %>%
+    filtered_admins() %>%
       group_by_(input.demo()) %>%
       summarise(n = n()) %>%
       filter_(interp("!is.na(x)", x = as.name(input.demo()))) %>%
@@ -100,7 +100,7 @@ shinyServer(function(input, output, session) {
   })
   
   data <- reactive({
-    filtered_data() %>%
+    filtered_admins() %>%
       right_join(groups_with_data()) %>%
       group_by_("age", input.demo()) %>%
       filter_(interp("!is.na(x)", x = as.name(input.demo()))) %>%
@@ -111,7 +111,7 @@ shinyServer(function(input, output, session) {
   })
   
   curves <- reactive({
-    crs <- filtered_data() %>%
+    crs <- filtered_admins() %>%
       right_join(groups_with_data()) %>%
       group_by_(input.demo()) %>%
       filter_(interp("!is.na(x)", x = as.name(input.demo()))) %>% # no NAs
@@ -159,11 +159,11 @@ shinyServer(function(input, output, session) {
   
   demos <- reactive({
     demo_fields <- possible_demo_fields
-    #     for (i in seq(length(possible_demo_fields),1,-1)) {
-    #       if (all(is.na(data()[possible_demo_fields[[i]]]))) {
-    #         demo_fields <- demo_fields[-i]
-    #       }
-    #     }
+    for (i in seq(length(possible_demo_fields),1,-1)) {
+      if (all(is.na(filtered_admins()[possible_demo_fields[[i]]]))) {
+        demo_fields <- demo_fields[-i]
+      }
+    }
     return(demo_fields)
   })                            
   
