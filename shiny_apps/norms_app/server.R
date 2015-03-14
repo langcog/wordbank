@@ -42,7 +42,7 @@ start.demo <- function() {"identity"}
 
 ## DEBUGGING
 input <- list(language = "English", form = "WS", measure = "production",
-              qsize = ".2", demo = "sex")
+              qsize = ".2", demo = "identity")
 
 
 ############## STUFF THAT RUNS WHEN USER CHANGES SOMETHING ##############
@@ -147,17 +147,13 @@ shinyServer(function(input, output, session) {
     predicted.data <- data.frame()
     values <- unique(unlist(select_(clean.data, as.name(input.demo()))))
     for (value in values) {
-      value.data <- filter_(clean.data, interp("d==v", d = as.name(input.demo()), v = value))
-      predicted <- predictQR(get.model(value), newdata = value.data) %>%
-        as.data.frame()
-      value.predicted.data <- value.data %>%
-        select(age) %>%
-        cbind(predicted) %>%
-        gather(quantile, predicted, -age)
-#       data() %>%
-#         filter_(interp("d==v", d = as.name(input.demo()), v = value)) %>%
-#         ungroup() %>%
-#         select(age, percentile)
+      dots <- list(~value)
+      ages <- data.frame(age = age.min():age.max())
+      value.predicted.data <- predictQR(get.model(value), newdata = ages) %>%
+        as.data.frame() %>%
+        mutate(age = age.min():age.max()) %>%
+        gather(quantile, predicted, -age) %>%
+        mutate_(.dots=setNames(dots, c(as.name(input.demo()))))
       predicted.data <- bind_rows(predicted.data, value.predicted.data)
     }
     predicted.data
@@ -165,8 +161,8 @@ shinyServer(function(input, output, session) {
   
   plot <- function() {
     ggplot(data(), aes(x=age, y=vocab, colour=quantile)) + 
-      geom_jitter(width=.1) +
       facet_wrap(input.demo()) + 
+      geom_jitter(width=.1) +
       geom_line(data = curves(),
                 aes(x = age, y = predicted,
                     group = factor(quantile), colour = factor(quantile)),
