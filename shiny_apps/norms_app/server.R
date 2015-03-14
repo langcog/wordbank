@@ -41,8 +41,8 @@ start.measure <- function() {"production"}
 start.demo <- function() {"identity"}
 
 ## DEBUGGING
-# input <- list(language = "English", form = "WS", measure = "production",
-#               qsize = ".2", demo = "identity")
+input <- list(language = "English", form = "WS", measure = "production",
+              qsize = ".2", demo = "sex")
 
 
 ############## STUFF THAT RUNS WHEN USER CHANGES SOMETHING ##############
@@ -132,8 +132,10 @@ shinyServer(function(input, output, session) {
   
   curves <- reactive({
     
-    clean.data <- filtered_admins()
-    
+    clean.data <- filtered_admins() %>%
+      filter_(interp("!is.na(x)", x = as.name(input.demo()))) %>%
+      right_join(groups_with_data())
+
     models <- clean.data %>%
       group_by_(input.demo()) %>%
       do(model = gcrq(vocab ~ ps(age, monotone=1, lambda=60), data=., tau=middles()))
@@ -152,6 +154,10 @@ shinyServer(function(input, output, session) {
         select(age) %>%
         cbind(predicted) %>%
         gather(quantile, predicted, -age)
+#       data() %>%
+#         filter_(interp("d==v", d = as.name(input.demo()), v = value)) %>%
+#         ungroup() %>%
+#         select(age, percentile)
       predicted.data <- bind_rows(predicted.data, value.predicted.data)
     }
     predicted.data
