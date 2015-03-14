@@ -41,8 +41,8 @@ start.measure <- function() {"production"}
 start.demo <- function() {"identity"}
 
 ## DEBUGGING
-input <- list(language = "English", form = "WS", measure = "production",
-              qsize = ".2", demo = "birth.order")
+# input <- list(language = "English", form = "WS", measure = "production",
+#               qsize = ".2", demo = "identity")
 
 
 ############## STUFF THAT RUNS WHEN USER CHANGES SOMETHING ##############
@@ -67,16 +67,16 @@ shinyServer(function(input, output, session) {
   aspect.ratio <- reactive({
     base <- 0.7
     scaling <- 1
-#     panels <- nrow(select_(groups_with_data(), input.demo()))
-#     if (panels == 2) {
-#       scaling <- 1/2
-#     } else if (panels == 3) {
-#       scaling <- 1/3
-#     } else if (panels == 4) {
-#       scaling <- 1/1
-#     } else if (panels == 6) {
-#       scaling <- 2/3
-#     }
+    #     panels <- nrow(select_(groups_with_data(), input.demo()))
+    #     if (panels == 2) {
+    #       scaling <- 1/2
+    #     } else if (panels == 3) {
+    #       scaling <- 1/3
+    #     } else if (panels == 4) {
+    #       scaling <- 1/1
+    #     } else if (panels == 6) {
+    #       scaling <- 2/3
+    #     }
     base * scaling
   })
   
@@ -85,8 +85,11 @@ shinyServer(function(input, output, session) {
                                  form == input.form())})
   
   ylabel <- reactive({
-    if (input.measure() == "comprehension") {"Size of Receptive Vocabulary"}
-    else if (input.measure() == "production") {"Size of Productive Vocabulary"}
+    if (input.measure() == "comprehension") {
+      "Size of Receptive Vocabulary"
+    } else if (input.measure() == "production") {
+      "Size of Productive Vocabulary"
+    }
   })
   
   age.min <- reactive({instrument()$age_min})
@@ -104,7 +107,8 @@ shinyServer(function(input, output, session) {
     admins %>%
       filter(language == input.language(),
              form == input.form(),
-             measure == input.measure())
+             measure == input.measure(),
+             age >= age.min() & age <= age.max())
   })
   
   groups_with_data <- reactive({
@@ -127,30 +131,42 @@ shinyServer(function(input, output, session) {
   })
   
   curves <- reactive({
-    crs <- filtered_admins() %>%
-      right_join(groups_with_data()) %>%
+    
+    clean.data <- filtered_admins() #%>%
+      #right_join(data())
+    
+    models <- clean.data %>%
       group_by_(input.demo()) %>%
-      filter_(interp("!is.na(x)", x = as.name(input.demo()))) %>% # no NAs
-      do(mod = gather(data.frame(predictQR(gcrq(vocab ~ ps(age, 
-                                                           monotone=1, 
-                                                           lambda=60), 
-                                                data = ., 
-                                                tau = middles()), 
-                                           newdata = data.frame(age = age.min():age.max()))), 
-                      quantile, prediction)$prediction) %>% 
-      unnest(mod) %>%
-      group_by_(input.demo()) %>%
-      do(bind_cols(.,
-                   expand.grid(age = age.min():age.max(), 
-                               quantile = middles())))
+      do(model = gcrq(vocab ~ ps(age, monotone=1, lambda=60), data=., tau=middles()))
+    
+    print(models)
+    get.model <- function(demo.value) {
+      return(filter_(models, interp("d==v", d = as.name(input.demo()), v=demo.value))$model[[1]])
+    }
+    
+    predicted.data <- data.frame()
+    values <- unique(unlist(select_(clean.data, as.name(input.demo()))))
+    print(values)
+    for (value in values) {
+      value.data <- filter_(clean.data, interp("d==v", d = as.name(input.demo()), v = value))
+      predicted <- predictQR(get.model(value), newdata = value.data) %>%
+        as.data.frame()
+        #gather(quantile, predicted)
+      value.predicted.data <- value.data %>%
+        select(age) %>%
+        cbind(predicted) %>%
+        gather(quantile, predicted, -age)
+      predicted.data <- bind_rows(predicted.data, value.predicted.data)
+    }
+    predicted.data
   })
   
   plot <- function() {
     ggplot(data(), aes(x=age, y=vocab, colour=quantile)) + 
       geom_jitter(width=.1) +
       facet_wrap(input.demo()) + 
-      geom_line(data = curves(), 
-                aes(x = age, y = mod, 
+      geom_line(data = curves(),
+                aes(x = age, y = predicted,
                     group = factor(quantile), colour = factor(quantile)),
                 size = 1) + 
       scale_x_continuous(name="\nAge (months)",
