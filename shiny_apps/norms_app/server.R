@@ -132,26 +132,22 @@ shinyServer(function(input, output, session) {
   
   curves <- reactive({
     
-    clean.data <- filtered_admins() #%>%
-      #right_join(data())
+    clean.data <- filtered_admins()
     
     models <- clean.data %>%
       group_by_(input.demo()) %>%
       do(model = gcrq(vocab ~ ps(age, monotone=1, lambda=60), data=., tau=middles()))
     
-    print(models)
     get.model <- function(demo.value) {
       return(filter_(models, interp("d==v", d = as.name(input.demo()), v=demo.value))$model[[1]])
     }
     
     predicted.data <- data.frame()
     values <- unique(unlist(select_(clean.data, as.name(input.demo()))))
-    print(values)
     for (value in values) {
       value.data <- filter_(clean.data, interp("d==v", d = as.name(input.demo()), v = value))
       predicted <- predictQR(get.model(value), newdata = value.data) %>%
         as.data.frame()
-        #gather(quantile, predicted)
       value.predicted.data <- value.data %>%
         select(age) %>%
         cbind(predicted) %>%
