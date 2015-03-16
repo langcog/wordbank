@@ -1,35 +1,37 @@
-############## STUFF THAT RUNS ONCE WHEN APP LOADS ##############
 library(shiny)
 library(RMySQL)
 library(dplyr)
 library(magrittr)
 source("../data_loading.R")
 
-wordbank <- src_mysql(dbname="wordbank")
-
-common.tables <- get.common.tables(wordbank)
-
-admins <- get.administration.data(common.tables$momed,
-                                  common.tables$child,
-                                  common.tables$instrumentsmap,
-                                  common.tables$administration) %>%
-  select(data_id, language, form, age, sex, momed.level, comprehension, production) %>%
-  rename(momed = momed.level)
-  
 ## DEBUGGING
 #input <- list(language = "English", form = "WS", age = c(18,30))
 
-############## STUFF THAT RUNS WHEN USER CHANGES SOMETHING ##############
 shinyServer(function(input, output, session) {
-
+  
+  output$loaded <- reactive({0})
+  outputOptions(output, 'loaded', suspendWhenHidden=FALSE)
+  
+  wordbank <- src_mysql(dbname="wordbank")
+  
+  common.tables <- get.common.tables(wordbank)
+  
+  admins <- get.administration.data(common.tables$momed,
+                                    common.tables$child,
+                                    common.tables$instrumentsmap,
+                                    common.tables$administration) %>%
+    select(data_id, language, form, age, sex, momed.level, comprehension, production) %>%
+    rename(momed = momed.level)
+  
+  
   input.language <- reactive({
     ifelse(is.null(input$language), "All", input$language)
   })
-
+  
   input.form <- reactive({
     ifelse(is.null(input$form), "All", input$form)
   })
-
+  
   input.sex <- reactive({
     ifelse(is.null(input$sex), "All", input$sex)
   })
@@ -37,11 +39,11 @@ shinyServer(function(input, output, session) {
   input.momed <- reactive({
     ifelse(is.null(input$momed), "All", input$momed)
   })
-    
+  
   input.age <- reactive({
     if(is.null(input$age)){c(min(admins$age), max(admins$age))} else {input$age}
   })
-
+  
   data <- reactive({
     filter.data <- admins
     if (input.language() != "All"){
@@ -75,13 +77,13 @@ shinyServer(function(input, output, session) {
                    choices = c("All", unique(admins$form)),
                    selected = "All")
   })
-
+  
   output$age_selector <- renderUI({
     sliderInput("age", label = "Age (Months):",
                 min = min(admins$age), max = max(admins$age), step = 1,
                 value = c(min(admins$age), max(admins$age)))
   })
-
+  
   output$sex_selector <- renderUI({    
     selectizeInput("sex", label = "Sex:",
                    choices = c("All", unique(admins$sex)),
@@ -94,10 +96,12 @@ shinyServer(function(input, output, session) {
                    selected = "All")
   })
   
-   output$downloadData <- downloadHandler(
-     filename = function() { 'administration_data.csv' },
-     content = function(file) {
-       write.csv(data(), file)
-     })
-    
+  output$downloadData <- downloadHandler(
+    filename = function() { 'administration_data.csv' },
+    content = function(file) {
+      write.csv(data(), file)
+    })
+  
+  output$loaded <- reactive({1})
+  
 })
