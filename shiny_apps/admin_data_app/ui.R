@@ -1,26 +1,35 @@
 library(shiny)
 library(shinythemes)
 
-shinyUI(fluidPage(theme = shinytheme("spacelab"),
+shinyUI(fluidPage(
   
-  # Application title
+  theme = shinytheme("spacelab"),
+  
   titlePanel("Administration Data"),
-  
   br(),
   
-  fluidRow(
-    column(3, uiOutput("language_selector")),
-    column(3, uiOutput("form_selector")),
-    column(4, uiOutput("age_selector"))
-    ),
-  fluidRow(
-    column(3, uiOutput("sex_selector")),
-    column(3, uiOutput("momed_selector")),
-    br(),
-    column(5, downloadButton('downloadData', 'Download Data'), align="right")
-    ),
+  conditionalPanel(
+    condition="output.loaded != 1",
+    h4("Loading...")
+  ),
   
-  fluidRow(
-    column(11, dataTableOutput(outputId="table"))
+  conditionalPanel(
+    condition="output.loaded == 1",
+    
+    fluidRow(
+      column(3, uiOutput("language_selector")),
+      column(3, uiOutput("form_selector")),
+      column(4, uiOutput("age_selector"))
+    ),
+    fluidRow(
+      column(3, uiOutput("sex_selector")),
+      column(3, uiOutput("momed_selector")),
+      br(),
+      column(5, downloadButton('downloadData', 'Download Data'), align="right")
+    ),
+    
+    fluidRow(
+      column(11, dataTableOutput(outputId="table"))
+    )
   )
 ))
