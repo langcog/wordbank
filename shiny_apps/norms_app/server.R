@@ -1,4 +1,3 @@
-############## STUFF THAT RUNS ONCE WHEN APP LOADS ##############
 library(shiny)
 library(magrittr)
 library(tidyr)
@@ -11,42 +10,44 @@ library(quantregGrowth)
 source("../app_themes.R")
 source("../data_loading.R")
 
-wordbank <- src_mysql(dbname="wordbank")
-#wordbank <- src_mysql(dbname="wordbank", host="54.200.225.86",
-#                      user="wordbank", password="wordbank")
-
-common.tables <- get.common.tables(wordbank)
-
-admins <- get.administration.data(common.tables$momed,
-                                  common.tables$child,
-                                  common.tables$instrumentsmap,
-                                  common.tables$administration) %>%
-  gather(measure, vocab, comprehension, production) %>%
-  mutate(identity = "All Data")
-
-instrument.tables <- get.instrument.tables(wordbank, common.tables$instrumentsmap)
-
-languages <- unique(instrument.tables$language)
-
-possible_demo_fields <- list("None" = "identity", 
-                             "Birth Order" = "birth.order", 
-                             "Ethnicity" = "ethnicity",
-                             "Sex" = "sex",
-                             "Mother's Education" = "momed.level")
-min_obs <- 100
-
-start.language <- function() {"English"}
-start.form <- function() {"WS"}
-start.measure <- function() {"production"}
-start.demo <- function() {"identity"}
-
 ## DEBUGGING
-input <- list(language = "English", form = "WS", measure = "production",
-              qsize = ".2", demo = "identity")
+#input <- list(language = "English", form = "WS", measure = "production",
+#              qsize = ".2", demo = "identity")
 
-
-############## STUFF THAT RUNS WHEN USER CHANGES SOMETHING ##############
 shinyServer(function(input, output, session) {
+  
+  output$loaded <- reactive({0})
+  outputOptions(output, 'loaded', suspendWhenHidden=FALSE)
+  
+  wordbank <- src_mysql(dbname="wordbank")
+  #wordbank <- src_mysql(dbname="wordbank", host="54.200.225.86",
+  #                      user="wordbank", password="wordbank")
+  
+  common.tables <- get.common.tables(wordbank)
+  
+  admins <- get.administration.data(common.tables$momed,
+                                    common.tables$child,
+                                    common.tables$instrumentsmap,
+                                    common.tables$administration) %>%
+    gather(measure, vocab, comprehension, production) %>%
+    mutate(identity = "All Data")
+  
+  instrument.tables <- get.instrument.tables(wordbank, common.tables$instrumentsmap)
+  
+  languages <- unique(instrument.tables$language)
+  
+  possible_demo_fields <- list("None" = "identity", 
+                               "Birth Order" = "birth.order", 
+                               "Ethnicity" = "ethnicity",
+                               "Sex" = "sex",
+                               "Mother's Education" = "momed.level")
+  min_obs <- 100
+  
+  start.language <- function() {"English"}
+  start.form <- function() {"WS"}
+  start.measure <- function() {"production"}
+  start.demo <- function() {"identity"}
+  
   
   input.language <- reactive({
     ifelse(is.null(input$language), start.language(), input$language)
@@ -135,7 +136,7 @@ shinyServer(function(input, output, session) {
     clean.data <- filtered_admins() %>%
       filter_(interp("!is.na(x)", x = as.name(input.demo()))) %>%
       right_join(groups_with_data())
-
+    
     models <- clean.data %>%
       group_by_(input.demo()) %>%
       do(model = gcrq(vocab ~ ps(age, monotone=1, lambda=60), data=., tau=middles()))
@@ -203,7 +204,6 @@ shinyServer(function(input, output, session) {
     session$clientData$output_plot_width * aspect.ratio()
   })
   
-  ### FIELD SELECTORS
   output$language_selector <- renderUI({    
     selectizeInput("language", label = h4("Language"), 
                    choices = languages, selected = start.language())
@@ -237,5 +237,7 @@ shinyServer(function(input, output, session) {
       print(plot())
       dev.off()
     })
+  
+  output$loaded <- reactive({1})
   
 })

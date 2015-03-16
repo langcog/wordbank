@@ -1,26 +1,36 @@
 library(shiny)
 library(shinythemes)
 
-shinyUI(fluidPage(theme = shinytheme("spacelab"),
+shinyUI(fluidPage(
   
-  # Application title
-  titlePanel("Item Trajectories"),
+  theme = shinytheme("spacelab"),
   
+  titlePanel("Item Trajectories"),  
   br(),
   
   sidebarLayout(
     sidebarPanel(
-      uiOutput("language_selector"),
-      uiOutput("form_selector"),
-      uiOutput("measure_selector"),
-      uiOutput("words_selector"),
-      uiOutput("wordform_selector"),
-      uiOutput("complexity_selector"),
-      br(),
-      downloadButton('downloadPlot', 'Download Plot'),
-      br(),br(),
-      downloadButton('downloadData', 'Download Data'),
-      width=3),
+      width=3,
+      
+      conditionalPanel(
+        condition="output.loaded != 1",
+        h4("Loading...")
+      ),
+      
+      conditionalPanel(
+        condition="output.loaded == 1",
+        
+        uiOutput("language_selector"),
+        uiOutput("form_selector"),
+        uiOutput("measure_selector"),
+        uiOutput("words_selector"),
+        uiOutput("wordform_selector"),
+        uiOutput("complexity_selector"),
+        br(),
+        downloadButton('downloadPlot', 'Download Plot'),
+        br(),br(),
+        downloadButton('downloadData', 'Download Data'),
+        width=3)),
     
     # Show a plot of the generated distribution
     mainPanel(
