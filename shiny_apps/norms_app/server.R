@@ -30,7 +30,13 @@ shinyServer(function(input, output, session) {
                                     common.tables$instrumentsmap,
                                     common.tables$administration) %>%
     gather(measure, vocab, comprehension, production) %>%
-    mutate(identity = "All Data")
+    mutate(identity = "All Data") %>%
+    mutate(sex = factor(sex, levels=c("F", "M", "O"), labels=c("Female", "Male", "Other")),
+           ethnicity = factor(ethnicity, levels=c("A", "B", "H", "O", "W"),
+                              labels=c("Asian", "Black", "Hispanic", "Other/Mixed", "White")),
+           birth.order = factor(birth.order, level = c(1, 2, 3, 4, 5, 6, 7, 8),
+                                labels = c("First", "Second", "Third", "Fourth", "Fifth",
+                                           "Sixth", "Seventh", "Eighth")))
   
   instrument.tables <- get.instrument.tables(wordbank, common.tables$instrumentsmap)
   
@@ -177,8 +183,11 @@ shinyServer(function(input, output, session) {
       theme(text=element_text(family=font))
   }
   
-  forms <- reactive({unique(filter(instrument.tables,
-                                   language == input.language())$form)})
+  forms <- reactive({
+    Filter(function(form) {form %in% unique(filter(instrument.tables,
+                                                   language == input.language())$form)},
+           list("Words & Sentences" = "WS", "Words & Gestures" = "WG"))
+  })
   
   measures <- reactive({
     if (input.form() == "WG") {

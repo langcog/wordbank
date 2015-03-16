@@ -20,9 +20,8 @@ shinyUI(fluidPage(
       conditionalPanel(
         condition="output.loaded == 1",
         
-        span(align = "center",
-             submitButton("Get Data"),
-             p("Caution: takes a while")),
+        actionButton("get_data", "Get Data"),
+        p("Caution: takes a while"),
         uiOutput("language_selector"),
         uiOutput("form_selector"),
         br(), br(),
