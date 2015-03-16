@@ -176,8 +176,12 @@ shinyServer(function(input, output, session) {
                                  language == input.language(),
                                  form == input.form())$complexity.by.definition[[1]]})
   
-  forms <- reactive({unique(filter(instrument.tables,
-                                   language == input.language())$form)})
+  forms <- reactive({
+    Filter(function(form) {form %in% unique(filter(instrument.tables,
+                                                   language == input.language())$form)},
+           list("Words & Sentences" = "WS", "Words & Gestures" = "WG"))
+  })
+  
   measures <- reactive({
     if (input.form() == "WG") {
       list("Produces" = "produces", "Understands" = "understands")

@@ -21,7 +21,9 @@ shinyServer(function(input, output, session) {
                                     common.tables$instrumentsmap,
                                     common.tables$administration) %>%
     select(data_id, language, form, age, sex, momed.level, comprehension, production) %>%
-    rename(momed = momed.level)
+    rename(momed = momed.level) %>%
+    mutate(sex = factor(sex, levels=c("F", "M", "O"), labels=c("Female", "Male", "Other")),
+           form = factor(form, levels=c("WG", "WS"), labels=c("Words & Gestures", "Words & Sentences")))
   
   
   input.language <- reactive({
@@ -74,7 +76,7 @@ shinyServer(function(input, output, session) {
   
   output$form_selector <- renderUI({    
     selectizeInput("form", label = "Form:",
-                   choices = c("All", unique(admins$form)),
+                   choices = c("All", levels(unique(admins$form))),
                    selected = "All")
   })
   
@@ -86,13 +88,13 @@ shinyServer(function(input, output, session) {
   
   output$sex_selector <- renderUI({    
     selectizeInput("sex", label = "Sex:",
-                   choices = c("All", unique(admins$sex)),
+                   choices = c("All", levels(unique(admins$sex))),
                    selected = "All")
   })
   
   output$momed_selector <- renderUI({    
     selectizeInput("momed", label = "Maternal Education:",
-                   choices = c("All", unique(admins$momed)),
+                   choices = c("All", levels(unique(admins$momed))),
                    selected = "All")
   })
   
