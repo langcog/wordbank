@@ -1,0 +1,141 @@
+---
+title: "Exploratory Vocabulary Data Clustering Analyses"
+author: "Mika Braginsky"
+date: "2015-03-16"
+output:
+  html_document:
+    highlight: tango
+    theme: spacelab
+---
+  
+```{r setup, include=FALSE}
+library(knitr)
+opts_chunk$set(cache=TRUE, message=FALSE, warning=FALSE)
+```
+
+Load required libraries.
+```{r libraries, cache=FALSE}
+library(magrittr)
+library(dplyr)
+library(tidyr)
+library(RMySQL)
+library(ggplot2)
+source("../shiny_apps/data_loading.R")
+wordbank <- src_mysql(dbname="wordbank")
+```
+
+Load Wordbank data for administrations and items for English WS.
+```{r loading}
+common.tables <- get.common.tables(wordbank)
+
+qs <- 0.2
+cuts <- seq(0.0, 1.0, by=qs)
+admins <- get.administration.data(common.tables$momed,
+                                  common.tables$child,
+                                  common.tables$instrumentsmap,
+                                  common.tables$administration) %>%
+  filter(language == "English", form == "WS") %>%
+  mutate(percentile = rank(production) / length(production),
+         quantile = cut(percentile,
+                        breaks=cuts, 
+                        labels=cuts[2:length(cuts)] - qs/2))
+
+items <- get.item.data(common.tables$wordmapping,
+                       common.tables$instrumentsmap)
+
+words <- filter(items, language == "English", form == "WS", type == "word")
+```
+
+Load English WS instrument data and clean it up to be clusterable.
+```{r common}
+instrument.tables <- get.instrument.tables(wordbank, common.tables$instrumentsmap)
+table <- filter(instrument.tables, language == "English", form == "WS")$table[[1]]
+
+prelim.data <- table %>%
+  select(basetable_ptr_id, one_of(words$item.id)) %>%
+  rename(data_id = basetable_ptr_id)
+
+data <- as.data.frame(prelim.data)
+data[is.na(data)] <- 0
+data[data == ""] <- 0
+data[data == "produces"] <- 1
+data <- as.data.frame(sapply(data, as.numeric))
+
+word.data <- words %>%
+  group_by(item.id) %>%
+  mutate(num.prod = sum(select_(data, item.id)) / nrow(select_(data, item.id))) %>%
+  ungroup() %>%
+  mutate(percentile = rank(num.prod) / length(num.prod),
+         quantile = cut(percentile,
+                        breaks=cuts, 
+                        labels=cuts[2:length(cuts)] - qs/2))
+```
+
+Run Principal Components Analysis and get the resulting scores and loadings.
+```{r pca}
+pca.data <- data
+row.names(pca.data) <- pca.data$data_id
+pca.data %<>% select(-data_id)
+pc <- prcomp(pca.data)
+
+scores <- as.data.frame(pc$x)
+score_data <- data.frame(data_id = as.numeric(row.names(scores)),
+                         pc1 = scores$PC1, pc2 = scores$PC2) %>%
+  left_join(admins)
+
+loadings <- as.data.frame(pc$rotation)
+loading_data <- data.frame(item.id = row.names(loadings),
+                           pc1 = loadings$PC1, pc2 = loadings$PC2) %>%
+  left_join(word.data)
+```
+
+Plot the scores of each observation (administration) for the first two principle components, with color indicating quantile of vocabulary size.
+```{r score_plot, fig.width=10, fig.height=8}
+ggplot(score_data, aes(x = pc1, y = pc2, colour = quantile)) +
+  geom_point() +
+  geom_hline(yintercept = 0, colour = "gray65") +
+  geom_vline(xintercept = 0, colour = "gray65") +
+  labs(x = "PC1", y = "PC2") +
+  theme_bw(base_size=14) + 
+  theme(text = element_text(family = "Open Sans"),
+        legend.position = "none")
+```
+
+Plot the loadings of each variable (item) for the first two principle components, with color indicating quantile of rate of production.
+```{r loading_plot, fig.width=10, fig.height=8}
+ggplot(loading_data, aes(x = pc1, y = pc2, colour = quantile)) +
+  geom_text(data = loading_data, aes(x = pc1, y = pc2, label = definition),
+            cex = 3) +
+  geom_hline(yintercept = 0, colour = "gray65") +
+  geom_vline(xintercept = 0, colour = "gray65") +
+  labs(x = "PC1", y = "PC2") +
+  theme_bw(base_size=14) + 
+  theme(text = element_text(family = "Open Sans"),
+        legend.position = "none")
+```
+
+A different look at things: train a linear model to predict vocabulary size for each item separately.
+```{r models}
+train.data <- left_join(data, select(admins, data_id, production))
+predictors <- select(words, item.id, definition) %>%
+  group_by(item.id) %>%
+  do(model = lm(reformulate(termlabels = c(.$item.id),
+                                        response = 'production'),
+                            data = train.data))
+predictors %<>%
+  rowwise() %>%
+  mutate(rsq = summary(model)$adj.r.squared)
+
+predict.data <- left_join(predictors, word.data)
+```
+
+Plot each item's model's R-squared against the proportion of children producing it.
+```{r models_plot, fig.width=11, fig.height=8}
+ggplot(predict.data, aes(x = num.prod, y = rsq, colour = quantile)) +
+  geom_text(aes(label = definition), cex = 2.5) +
+  xlab("\nProportion of children that produce item") +
+  ylab("Adjusted R squared of predicting\ntotal productive vocabulary from item\n") +
+  theme_bw(base_size=14) + 
+  theme(text = element_text(family = "Open Sans"),
+        legend.position = "none")
+```
