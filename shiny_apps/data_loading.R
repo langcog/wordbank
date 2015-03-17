@@ -10,13 +10,13 @@ library(RMySQL)
 #
 # Example:
 # wordbank <- src_mysql(dbname="wordbank", host="54.149.39.46",
-#                               user="wordbank", password="wordbank")
+#                       user="wordbank", password="wordbank")
 # common.tables <- get.common.tables(wordbank)
 get.common.tables <- function(db) {
   
-  names <- Filter(function(tbl) substr(tbl,1,7) == "common_", src_tbls(db))
+  names <- Filter(function(tbl) substr(tbl, 1, 7) == "common_", src_tbls(db))
   
-  tables <- sapply(names, function(name) tbl(db,name), simplify=FALSE)
+  tables <- sapply(names, function(name) tbl(db, name), simplify=FALSE)
   names(tables) <- sapply(names(tables), function(name) substr(name, 8, nchar(name)),
                           simplify=FALSE)
   
@@ -31,7 +31,7 @@ get.common.tables <- function(db) {
 get.instrument.tables <- function(db, instrumentsmap) {
   
   instrument.tables <- as.data.frame(instrumentsmap) %>%
-    mutate(table.name = paste("instruments", tolower(language), tolower(form), sep="_")) %>%
+    mutate(table.name = paste("instruments", tolower(language), tolower(form), sep = "_")) %>%
     rename(instrument_id = id) %>%
     group_by(instrument_id, language, form, age_min, age_max) %>%
     do(table = tbl(db, .$table.name))
@@ -49,7 +49,7 @@ get.administration.data <- function(momed.table, child.table, instruments.table,
     rename(momed_id = id, momed.level = level, momed.order = order) %>%
     arrange(momed.order) %>%
     mutate(momed_id = as.numeric(momed_id),
-           momed.level = factor(momed.level, levels=momed.level))
+           momed.level = factor(momed.level, levels = momed.level))
   
   children <- as.data.frame(child.table) %>%
     select(id, birth_order, ethnicity, sex, momed_id) %>%
@@ -102,7 +102,7 @@ get.instrument.data <- function(instrument.table, columns) {
     as.data.frame %>%
     mutate(data_id = as.numeric(basetable_ptr_id)) %>%
     select(-basetable_ptr_id) %>%
-    gather_("item_id", "value", columns, convert=TRUE) %>%
+    gather_("item_id", "value", columns, convert = TRUE) %>%
     mutate(item.id = as.numeric(substr(item_id, 6, nchar(item_id)))) %>%
     select(-item_id) %>%
     mutate(value = ifelse(is.na(value), "", value)) %>%
