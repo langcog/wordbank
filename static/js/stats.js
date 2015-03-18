@@ -57,7 +57,7 @@ ageChildChart.width(700)
              .centerBar(true)
              .elasticY(true)
              .gap(1)
-             .x(d3.scale.linear().domain([7,30.5]))
+             .x(d3.scale.linear().domain([7,37]))
              .xAxisLabel('Age (months)')
              .yAxisLabel('Number of Children')
              .valueAccessor(function (d) {
