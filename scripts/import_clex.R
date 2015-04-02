@@ -1,0 +1,171 @@
+library(dplyr)
+library(RMySQL)
+library(xlsx)
+
+cdiclex <- src_mysql('cdiclex')
+# mysql <- dbDriver("MySQL")
+# cdiclex <- dbConnect(mysql, dbname="cdiclex")
+# dbSendQuery(cdiclex, "SET NAMES utf8")
+
+corpora <- as.data.frame(tbl(cdiclex, 'cdiclex_corporas'))
+
+vocab_items <- tbl(cdiclex, 'cdi_vocabulary_words') %>%
+  select(itemid, corpora, ingroup, native, translation) %>%
+  rename(clex_id = itemid,
+         group_id = ingroup,
+         definition = native,
+         gloss = translation) #%>%
+#  as.data.frame() %>%
+#  mutate(definition = iconv(definition, "latin1", "utf8"))
+
+vocab_groups <- tbl(cdiclex, 'cdi_vocabulary_groups') %>%
+  select(id, corpora, translation) %>%
+  rename(group_id = id, category = translation) #%>%
+#  as.data.frame()
+
+sentences_items <- tbl(cdiclex, 'cdi_sentences_items') %>%
+  select(id, corpora, ingroup, native, translation) %>%
+  rename(clex_id = id,
+         group_id = ingroup,
+         definition = native,
+         gloss = translation) #%>%
+#  as.data.frame() %>%
+#  mutate(definition = iconv(definition, "latin1", "utf8"))
+
+sentences_groups <- tbl(cdiclex, 'cdi_sentences_groups') %>%
+  select(id, corpora, translation) %>%
+  rename(group_id = id, category = translation) #%>%
+#  as.data.frame()
+
+sentences_subjects <- tbl(cdiclex, 'cdi_sentences_subjects') %>%
+  rename(subjectid = id,
+         study_id = originalid)
+
+clean_str <- function(str) {
+  no_space <- gsub(" ", "_", str)
+  gsub("'", "", iconv(no_space, to='ASCII//TRANSLIT'))
+}
+
+export_corpus <- function(cid) {
+  
+  corpus <- filter(corpora, id == cid)
+  language <- capitalize(corpus$language)
+  form <- corpus$text
+  if(form == 'Words and Sentences') {form <- 'WS'}
+  if(form == 'Words and Gestures') {form <- 'WG'}
+  has_vocab <- corpus$vocabularyhasdataset
+  has_sentences <- corpus$sentenceshasdataset
+  
+  vocab_data <- NULL
+  vocab_item_data <- data.frame()
+  sentences_data <- NULL
+  sentences_item_data <- data.frame()
+  
+  general_field_map <- data.frame(
+    field = c("data_age", "sex", "study_id"),
+    column = c("month", "sex", "study_id"),
+    group = c("admin", "child", "child"),
+    type = c("data_age", "sex", "study_id")
+  )
+  
+  if (has_vocab == "true") {
+    
+    vocab_item_data <- filter(vocab_items, corpora == cid) %>%
+      left_join(vocab_groups) %>%
+      select(-corpora, -group_id) %>%
+      as.data.frame() %>%
+      mutate(item = clean_str(definition),
+             type = 'word',
+             category = category,
+             choices = "",
+             lang_lemma = item,
+             uni_lemma = item,
+             definition = definition,
+             gloss = gloss,
+             lexical_category = "",
+             complexity_category = "")
+    
+    vocab_data <- tbl(cdiclex, paste0('cdi_vocabulary_dataset_', cid)) %>%
+      rename(study_id = ID) %>%
+      as.data.frame()
+    
+  }
+  
+  if (has_sentences == "true") {
+    
+    sentences_item_data <- filter(sentences_items, corpora == cid) %>%
+      left_join(sentences_groups) %>%
+      select(-corpora, -group_id) %>%
+      as.data.frame() %>%
+      mutate(item = clean_str(definition),
+             type = category,
+             category = category,
+             choices = "",
+             lang_lemma = item,
+             uni_lemma = item,
+             definition = definition,
+             gloss = gloss,
+             lexical_category = "",
+             complexity_category = "") %>%
+      mutate(clex_id = as.character(clex_id))
+    
+    subj_data <- sentences_subjects %>%
+      filter(corpora == cid) %>%
+      as.data.frame()
+    
+    sentences_data <- tbl(cdiclex, paste0('cdi_sentences_dataset_', cid)) %>%
+      as.data.frame(n = -1) %>%
+      spread(itemid, answer) %>%
+      left_join(subj_data) %>%
+      select(-subjectid, -corpora, -sex, -age)
+    
+  }
+  
+  instrument <- paste(language, form, sep="_")
+  dir.create(paste('clex_data', instrument, sep="/"))
+  
+  item_data <- bind_rows(vocab_item_data, sentences_item_data) %>%
+    mutate(itemID = paste0('item_', row_number()))
+  
+  item_field_map <- item_data %>%
+    rename(field = itemID,
+           column = clex_id) %>%
+    mutate(group = 'item') %>%
+    select(field, column, group, type)
+  
+  item_data %<>% select(-clex_id)
+  
+  con_item_data <- file(paste0('clex_data/', instrument, '/', '[', instrument, ']', '.csv'),
+                        encoding="utf8")
+  write.csv(item_data, file = con_item_data, row.names = FALSE)
+  
+  if (!is.null(vocab_data) & !is.null(sentences_data)) {
+    data <- inner_join(vocab_data, sentences_data)    
+  } else if (is.null(sentences_data)) {
+    data <- vocab_data  
+  } else if (is.null(sentences_data)) {
+    data <- sentences_data
+  } else {
+    data <- data.frame()
+  }
+  
+  con_data <- file(paste0('clex_data/', instrument, '/', language, form, '_CLEX_data', '.csv'))
+  #encoding="utf8")
+  write.csv(data, file = con_data, row.names = FALSE)
+  
+  field_map <- bind_rows(general_field_map, item_field_map)
+  
+  write.csv(field_map,
+            paste0('clex_data/', instrument, '/', language, form, '_CLEX_fields', '.csv'),
+            row.names = FALSE)
+  
+  #   write.csv(value_map,
+  #             paste0('clex_data/', instrument, '/', language, form, '_CLEX_values', '.csv'),
+  #             row.names = FALSE)
+  
+}
+
+export_corpus(17)
+# for (i in 1:nrow(corpora)) {
+#   export_corpus(i) 
+# }
