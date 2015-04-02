@@ -18,7 +18,7 @@ class ImportHelper:
         self.administrations = {}
         self.datemode = None
 
-        self.missing_values = {'Null', '#NULL!', '', ' ', 'Missing', 'Unknown/other'}
+        self.missing_values = {u'Null', u'#NULL!', u'', u' ', u'Missing', u'Unknown/other', u'?'}
 
     @staticmethod
     def format_date(date_str, datemode=None):
@@ -44,6 +44,8 @@ class ImportHelper:
 
     def get_field_value(self, column, field_type, group, row_values):
         value = row_values[self.col_map[column]]
+        if type(value) == str or type(value) == unicode:
+            value = value.strip()
         if not value in self.missing_values:
             if field_type in ('study_id', 'study_momed'):
                 return value
