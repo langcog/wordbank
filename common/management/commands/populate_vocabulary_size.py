@@ -6,7 +6,13 @@ class Command(NoArgsCommand):
 
     def handle(self, *args, **options):
 
-        for instrument in InstrumentsMap.objects.all():
+        if len(args) > 1:
+            input_language, input_form = args[0], args[1]
+            input_instruments = InstrumentsMap.objects.filter(language = input_language, form = input_form)
+        else:
+            input_instruments = InstrumentsMap.objects.all()
+
+        for instrument in input_instruments:
 
             instrument_model = getattr(instruments.models, '_'.join([instrument.language, instrument.form]))
             instrument_table = instrument_model._meta.db_table

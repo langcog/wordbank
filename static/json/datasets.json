@@ -109,7 +109,7 @@
         "instrument_language": "Spanish",
         "instrument_form": "WG",
         "file": "raw_data/Spanish_WG/SpanishWG_Marchman_Norming.xlsx",
-        "splitcol": true
+        "splitcol": false
     },
     {
         "name": "Bleses",
@@ -149,6 +149,14 @@
         "instrument_language": "Norwegian",
         "instrument_form": "WG",
         "file": "raw_data/Norwegian_WG/NorwegianWG_Kristoffersen_longitudinal.xlsx",
+        "splitcol": false
+    },
+    {
+        "name": "CLEX",
+        "dataset": "",
+        "instrument_language": "Russian",
+        "instrument_form": "WS",
+        "file": "raw_data/Russian_WS/RussianWS_CLEX.xlsx",
         "splitcol": false
     }
 ]

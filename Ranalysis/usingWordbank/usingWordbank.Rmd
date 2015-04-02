@@ -1,7 +1,7 @@
 ---
 title: "Accessing the Wordbank Database"
 author: "Dan Yurovsky and Mika Braginsky"
-date: "2015-03-10"
+date: "2015-04-02"
 output:
   html_document:
     highlight: tango
@@ -36,6 +36,7 @@ eval(parse(text = script))
 
 Connect to the Wordbank database.
 ```{r, cache=FALSE}
+#wordbank <- src_mysql(dbname='wordbank')
 wordbank <- src_mysql(dbname='wordbank', host="54.200.225.86",
                       user="wordbank", password="wordbank")
 ```
@@ -52,8 +53,10 @@ instrument.tables <- get.instrument.tables(wordbank, common.tables$instrumentsma
 
 Load in administration data.
 ```{r}
-admins <- get.administration.data(common.tables$momed, common.tables$child,
-                                  common.tables$instrumentsmap, common.tables$administration) %>%
+admins <- get.administration.data(common.tables$momed,
+                                  common.tables$child,
+                                  common.tables$instrumentsmap,
+                                  common.tables$administration) %>%
   filter(!is.na(sex))
 ```
 
@@ -164,15 +167,18 @@ ggplot(vocab.data,
 
 Set up color terms of each language.
 ```{r}
-colors.danish <- c("r\xf8d", "gul", "gr\xf8n", "bl\xe5", "sort", "hvid") # "lille" "brun"
+colors.danish <- c("rød", "gul", "grøn", "blå", "sort", "hvid") # "lille" "brun"
 colors.english <- c("red",  "yellow", "green", "blue", "black", "white") # "orange" "brown"
-colors.norwegian <- c ("r\xf8d", "gul", "gr\xf8nn" ,"bl\xe5", "svart", "hvit") # "brun" "oransje"
+colors.norwegian <- c ("rød", "gul", "grønn" ,"blå", "svart", "hvit") # "brun" "oransje"
 colors.spanish <- c("rojo", "amarillo", "verde", "azul", "negro", "blanco") # "rosa" "morado"
+colors.russian <- c("ÐºÑ€Ð°Ñ\u0081Ð½Ñ‹Ð¹", "Ð¶ÐµÐ»Ñ‚Ñ‹Ð¹", "Ð·ÐµÐ»ÐµÐ½Ñ‹Ð¹",
+                    "Ñ\u0081Ð¸Ð½Ð¸Ð¹", "Ñ‡ÐµÑ€Ð½Ñ‹Ð¹", "Ð±ÐµÐ»Ñ‹Ð¹")
 
 colors <- list("Danish" = colors.danish,
                "English" = colors.english,
                "Norwegian" = colors.norwegian,
-               "Spanish" = colors.spanish)
+               "Spanish" = colors.spanish,
+               "Russian" = colors.russian)
 ```
 
 Function for getting color data for a given language.
@@ -233,7 +239,7 @@ ggplot(color.byage.data, aes(x=age, y=na.mean, color=color, label=color)) +
   geom_dl(method = list(dl.trans(x=x +.2), "last.qp", cex=.8, fontfamily=font)) +
   scale_color_manual(values=c("black", "#2c7bb6", "#1a9641", "#d7191c", "gray87", "gold1")) +
   scale_x_continuous(breaks=seq(16,30,2), limits=c(16,31.5),
-                     name = "\nAge (months)")+
+                     name = "\nAge (months)") +
   scale_y_continuous(name = "Proportion of Children Producing\n",
                      limits=c(0,1))
 ```

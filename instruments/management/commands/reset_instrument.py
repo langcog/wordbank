@@ -1,13 +1,18 @@
 from django.core.management.base import NoArgsCommand
 from common.models import *
+import instruments.models
 
 
-# deletes all administration and child objects for a given instrument (language and form)
+# deletes all data and administration and child objects for a given instrument (language and form)
 class Command(NoArgsCommand):
 
     def handle(self, *args, **options):
 
         instrument_language, instrument_form = args[0], args[1]
+
+        instrument_string = '_'.join([instrument_language, instrument_form])
+        instrument_model = getattr(instruments.models, instrument_string)
+        instrument_model.objects.all().delete()
 
         if InstrumentsMap.objects.filter(language=instrument_language, form=instrument_form).exists():
             instrument_obj = InstrumentsMap.objects.get(language=instrument_language, form=instrument_form)
