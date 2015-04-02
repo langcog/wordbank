@@ -1,11 +1,9 @@
+library(Hmisc)
 library(dplyr)
 library(RMySQL)
-library(xlsx)
+library(magrittr)
 
 cdiclex <- src_mysql('cdiclex')
-# mysql <- dbDriver("MySQL")
-# cdiclex <- dbConnect(mysql, dbname="cdiclex")
-# dbSendQuery(cdiclex, "SET NAMES utf8")
 
 corpora <- as.data.frame(tbl(cdiclex, 'cdiclex_corporas'))
 
@@ -14,28 +12,22 @@ vocab_items <- tbl(cdiclex, 'cdi_vocabulary_words') %>%
   rename(clex_id = itemid,
          group_id = ingroup,
          definition = native,
-         gloss = translation) #%>%
-#  as.data.frame() %>%
-#  mutate(definition = iconv(definition, "latin1", "utf8"))
+         gloss = translation)
 
 vocab_groups <- tbl(cdiclex, 'cdi_vocabulary_groups') %>%
   select(id, corpora, translation) %>%
-  rename(group_id = id, category = translation) #%>%
-#  as.data.frame()
+  rename(group_id = id, category = translation)
 
 sentences_items <- tbl(cdiclex, 'cdi_sentences_items') %>%
   select(id, corpora, ingroup, native, translation) %>%
   rename(clex_id = id,
          group_id = ingroup,
          definition = native,
-         gloss = translation) #%>%
-#  as.data.frame() %>%
-#  mutate(definition = iconv(definition, "latin1", "utf8"))
+         gloss = translation)
 
 sentences_groups <- tbl(cdiclex, 'cdi_sentences_groups') %>%
   select(id, corpora, translation) %>%
-  rename(group_id = id, category = translation) #%>%
-#  as.data.frame()
+  rename(group_id = id, category = translation)
 
 sentences_subjects <- tbl(cdiclex, 'cdi_sentences_subjects') %>%
   rename(subjectid = id,
@@ -44,6 +36,14 @@ sentences_subjects <- tbl(cdiclex, 'cdi_sentences_subjects') %>%
 clean_str <- function(str) {
   no_space <- gsub(" ", "_", str)
   gsub("'", "", iconv(no_space, to='ASCII//TRANSLIT'))
+}
+
+clean_def <- function(def) {
+  gsub("/ ", "/",
+       gsub(", ", "/",
+            gsub("^ *|(?<= ) | *$", "", def, perl=T)
+       )
+  )
 }
 
 export_corpus <- function(cid) {
@@ -70,6 +70,14 @@ export_corpus <- function(cid) {
   
   if (has_vocab == "true") {
     
+    word_choices <- function(form) {
+      if (form == "WG") {
+        "understands, produces"
+      } else {
+        "produces"
+      }
+    }
+    
     vocab_item_data <- filter(vocab_items, corpora == cid) %>%
       left_join(vocab_groups) %>%
       select(-corpora, -group_id) %>%
@@ -77,11 +85,11 @@ export_corpus <- function(cid) {
       mutate(item = clean_str(definition),
              type = 'word',
              category = category,
-             choices = "",
+             choices = word_choices(form),
              lang_lemma = item,
              uni_lemma = item,
-             definition = definition,
-             gloss = gloss,
+             definition = clean_def(definition),
+             gloss = clean_def(gloss),
              lexical_category = "",
              complexity_category = "")
     
@@ -92,7 +100,7 @@ export_corpus <- function(cid) {
   }
   
   if (has_sentences == "true") {
-    
+        
     sentences_item_data <- filter(sentences_items, corpora == cid) %>%
       left_join(sentences_groups) %>%
       select(-corpora, -group_id) %>%
@@ -103,8 +111,8 @@ export_corpus <- function(cid) {
              choices = "",
              lang_lemma = item,
              uni_lemma = item,
-             definition = definition,
-             gloss = gloss,
+             definition = clean_def(definition),
+             gloss = clean_def(gloss),
              lexical_category = "",
              complexity_category = "") %>%
       mutate(clex_id = as.character(clex_id))
@@ -137,7 +145,7 @@ export_corpus <- function(cid) {
   
   con_item_data <- file(paste0('clex_data/', instrument, '/', '[', instrument, ']', '.csv'),
                         encoding="utf8")
-  write.csv(item_data, file = con_item_data, row.names = FALSE)
+  write.csv(item_data, file = con_item_data, row.names = FALSE, quote = FALSE)
   
   if (!is.null(vocab_data) & !is.null(sentences_data)) {
     data <- inner_join(vocab_data, sentences_data)    
@@ -150,7 +158,7 @@ export_corpus <- function(cid) {
   }
   
   con_data <- file(paste0('clex_data/', instrument, '/', language, form, '_CLEX_data', '.csv'))
-  #encoding="utf8")
+                   #encoding="utf8")
   write.csv(data, file = con_data, row.names = FALSE)
   
   field_map <- bind_rows(general_field_map, item_field_map)
@@ -165,7 +173,7 @@ export_corpus <- function(cid) {
   
 }
 
-export_corpus(17)
+#export_corpus(17)
 # for (i in 1:nrow(corpora)) {
 #   export_corpus(i) 
 # }
