@@ -13,7 +13,7 @@ This script shows the basics of how to connect to the Wordbank database, load da
 ```{r setup, include=FALSE}
 library(knitr)
 opts_chunk$set(message=FALSE, warning=FALSE, cache=TRUE)
-font="Open Sans"
+font="sans"
 ```
 
 Load required libraries.
