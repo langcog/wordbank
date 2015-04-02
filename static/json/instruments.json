@@ -48,10 +48,10 @@
         "age_min": 16,
         "age_max": 36
     },
-       {
+    {
         "language": "Russian",
         "form": "WS",
-        "file": "raw_data/Russian_WS/[Russian_WS].xlsx",
+        "file": "raw_data/Russian_WS/[Russian_WS].csv",
         "age_min": 16,
         "age_max": 30
     }
