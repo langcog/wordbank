@@ -156,7 +156,7 @@
         "dataset": "",
         "instrument_language": "Croatian",
         "instrument_form": "WG",
-        "file": "raw_data/Croatian_WG/CroatianWS_CLEX.csv",
+        "file": "raw_data/Croatian_WG/CroatianWG_CLEX.csv",
         "splitcol": false
     },
     {
@@ -188,7 +188,7 @@
         "dataset": "",
         "instrument_language": "Russian",
         "instrument_form": "WG",
-        "file": "raw_data/Russian_WG/RussianWS_CLEX.csv",
+        "file": "raw_data/Russian_WG/RussianWG_CLEX.csv",
         "splitcol": false
     },
     {
@@ -204,7 +204,7 @@
         "dataset": "",
         "instrument_language": "Swedish",
         "instrument_form": "WG",
-        "file": "raw_data/Swedish_WG/SwedishWS_CLEX.csv",
+        "file": "raw_data/Swedish_WG/SwedishWG_CLEX.csv",
         "splitcol": false
     },
     {
@@ -220,7 +220,7 @@
         "dataset": "",
         "instrument_language": "Turkish",
         "instrument_form": "WG",
-        "file": "raw_data/Turkish_WG/TurkishWS_CLEX.csv",
+        "file": "raw_data/Turkish_WG/TurkishWG_CLEX.csv",
         "splitcol": false
     },
     {

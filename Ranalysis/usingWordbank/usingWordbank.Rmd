@@ -1,7 +1,7 @@
 ---
 title: "Accessing the Wordbank Database"
 author: "Dan Yurovsky and Mika Braginsky"
-date: "2015-04-02"
+date: "2015-04-03"
 output:
   html_document:
     highlight: tango
@@ -13,7 +13,7 @@ This script shows the basics of how to connect to the Wordbank database, load da
 ```{r setup, include=FALSE}
 library(knitr)
 opts_chunk$set(message=FALSE, warning=FALSE, cache=TRUE)
-font="sans"
+font = "Open Sans"
 ```
 
 Load required libraries.
@@ -57,7 +57,7 @@ admins <- get.administration.data(common.tables$momed,
                                   common.tables$child,
                                   common.tables$instrumentsmap,
                                   common.tables$administration) %>%
-  filter(!is.na(sex))
+  filter(!is.na(sex), sex != "")
 ```
 
 Number of administrations by sex for each instrument:
@@ -143,10 +143,10 @@ kable(filter(vocab.data, age==24),
 ```
 
 Plot median productive vocabulary as a function of age.
-```{r, fig.height=10, fig.width=8}
+```{r, fig.height=8, fig.width=10}
 ggplot(vocab.data,
        aes(x=age, y=na.median,colour=sex,label=sex))+
-  facet_wrap(~ language, ncol = 2) +
+  facet_wrap(~ language, ncol = 3) +
   geom_pointrange(aes(ymin = na.median-ci.median.low,
                       ymax = na.median+ci.median.high),
                   size = .8,
@@ -169,15 +169,21 @@ Set up color terms of each language.
 ```{r}
 colors.danish <- c("rød", "gul", "grøn", "blå", "sort", "hvid") # "lille" "brun"
 colors.english <- c("red",  "yellow", "green", "blue", "black", "white") # "orange" "brown"
+colors.german <- c("rot", "gelb", "grün", "blau", "schwarz", "weiß") # braun orange
+colors.italian <- c("rosso", "giallo", "verde", "blu", "nero", "bianco") # arancione marrone
 colors.norwegian <- c ("rød", "gul", "grønn" ,"blå", "svart", "hvit") # "brun" "oransje"
-colors.spanish <- c("rojo", "amarillo", "verde", "azul", "negro", "blanco") # "rosa" "morado"
 colors.russian <- c("красный", "желтый", "зеленый", "синий", "черный", "белый") # "коричневый" "оранжевый"
+colors.spanish <- c("rojo", "amarillo", "verde", "azul", "negro", "blanco") # "rosa" "morado"
+colors.swedish <- c("röd", "gul", "grön", "blå", "svart", "vit") # orange brun
 
 colors <- list("Danish" = colors.danish,
                "English" = colors.english,
+               "German" = colors.german,
+               "Italian" = colors.italian,
                "Norwegian" = colors.norwegian,
+               "Russian" = colors.russian,
                "Spanish" = colors.spanish,
-               "Russian" = colors.russian)
+               "Swedish" = colors.swedish)
 ```
 
 Function for getting color data for a given language.
@@ -204,7 +210,9 @@ get.language.data <- function(lang) {
 
 Load color data for each language and put it all together.
 ```{r}
-languages <- unique(instrument.tables$language)
+#languages <- unique(instrument.tables$language)
+languages <- c("English", "Spanish", "Norwegian", "Danish",
+               "Russian", "German", "Italian", "Swedish")
 color.data <- bind_rows(sapply(languages, get.language.data, simplify=FALSE))
 
 color.byage.data <- color.data %>%
@@ -224,9 +232,9 @@ kable(filter(color.byage.data, language=="English", age==24),
 ```
 
 Plot the proportion of kids that produce each color as a function of their age.
-```{r, fig.height=10, fig.width=8}
+```{r, fig.height=8, fig.width=10}
 ggplot(color.byage.data, aes(x=age, y=na.mean, color=color, label=color)) +
-  facet_wrap(~ language, ncol = 2) +
+  facet_wrap(~ language, ncol = 3) +
   geom_pointrange(aes(ymin = na.mean-ci.mean.low,
                       ymax = na.mean+ci.mean.high),
                   size = .8,
