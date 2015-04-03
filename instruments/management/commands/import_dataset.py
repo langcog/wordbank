@@ -8,7 +8,7 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
         instrument_string = '_'.join([instrument_language, instrument_form])
         instrument_model = getattr(instruments.models, instrument_string)
 
-        import_helper = import_dataset_helper.ImportHelper(dataset_file, instrument_model, splitcol)
+        import_helper = import_dataset_helper.ImportHelper(dataset_file, splitcol)
         import_helper.import_data()
 
         instruments_map = InstrumentsMap.objects.get(language=instrument_language, form=instrument_form)
