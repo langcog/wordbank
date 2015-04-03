@@ -170,13 +170,13 @@ export_corpus <- function(cid) {
   
   write.csv(vocab_data,
             paste0('clex_data/', instrument, '/', language, form, '_CLEX_data', '.csv'),
-            row.names = FALSE)
+            row.names = FALSE, quote = FALSE)
   
   field_map <- bind_rows(general_field_map, item_field_map)
   
   write.csv(field_map,
             paste0('clex_data/', instrument, '/', language, form, '_CLEX_fields', '.csv'),
-            row.names = FALSE)
+            row.names = FALSE, quote = FALSE)
   
   config_data <- vocab_config %>%
     filter(corpora == cid) %>%
@@ -215,7 +215,7 @@ export_corpus <- function(cid) {
   
   write.csv(value_map,
             paste0('clex_data/', instrument, '/', language, form, '_CLEX_values', '.csv'),
-            row.names = FALSE)
+            row.names = FALSE, quote = FALSE)
   
 }
 
