@@ -18,6 +18,9 @@ vocab_groups <- tbl(cdiclex, 'cdi_vocabulary_groups') %>%
   select(id, corpora, translation) %>%
   rename(group_id = id, category = translation)
 
+vocab_config <- tbl(cdiclex, 'cdi_vocabulary_config') %>%
+  select(-id)
+
 sentences_items <- tbl(cdiclex, 'cdi_sentences_items') %>%
   select(id, corpora, ingroup, native, translation) %>%
   rename(clex_id = id,
@@ -100,7 +103,7 @@ export_corpus <- function(cid) {
   }
   
   if (has_sentences == "true") {
-        
+    
     sentences_item_data <- filter(sentences_items, corpora == cid) %>%
       left_join(sentences_groups) %>%
       select(-corpora, -group_id) %>%
@@ -157,9 +160,9 @@ export_corpus <- function(cid) {
     data <- data.frame()
   }
   
-  con_data <- file(paste0('clex_data/', instrument, '/', language, form, '_CLEX_data', '.csv'))
-                   #encoding="utf8")
-  write.csv(data, file = con_data, row.names = FALSE)
+  write.csv(data,
+            paste0('clex_data/', instrument, '/', language, form, '_CLEX_data', '.csv'),
+            row.names = FALSE)
   
   field_map <- bind_rows(general_field_map, item_field_map)
   
@@ -167,13 +170,61 @@ export_corpus <- function(cid) {
             paste0('clex_data/', instrument, '/', language, form, '_CLEX_fields', '.csv'),
             row.names = FALSE)
   
-  #   write.csv(value_map,
-  #             paste0('clex_data/', instrument, '/', language, form, '_CLEX_values', '.csv'),
-  #             row.names = FALSE)
+  config_data <- vocab_config %>%
+    filter(corpora == cid) %>%
+    as.data.frame()
+  
+  get_content <- function(value) {
+    config_data[config_data$type == value,]$content
+  }
+  
+  sex_value_map <- data.frame(
+    type = c('sex', 'sex'),
+    value = c('M', 'F'),
+    data_value = c(get_content('male'), get_content('female'))
+  )
+  
+  word_value_map <- {
+    if (form == 'WS') {
+      data.frame(
+        type = c('word', 'word'),
+        value = c('produces', ''),
+        data_value = c(get_content('answer_said'),
+                       get_content('answer_non'))
+      )
+    } else if (form == 'WG') {
+      data.frame(
+        type = c('word', 'word', 'word'),
+        value = c('produces', 'understands', ''),
+        data_value = c(get_content('answer_said'),
+                       get_content('answer_understood'),
+                       get_content('answer_non'))
+      )      
+    }
+  }
+  
+  value_map <- bind_rows(sex_value_map, word_value_map)
+  
+  write.csv(value_map,
+            paste0('clex_data/', instrument, '/', language, form, '_CLEX_values', '.csv'),
+            row.names = FALSE)
   
 }
 
+to_export <- c(
+  5, #Croatian - Words and Gestures
+  6, #Swedish - Words and Gestures
+  7, #Swedish - Words and Sentences
+  11, #Croatian - Words and Sentences
+  12, #German - Words and Sentences
+  13, #Italian - Words and Sentences
+  15, #Turkish - Words and Gestures
+  16, #Russian - Words and Gestures
+  17, #Russian - Words and Sentences
+  18  #Turkish - Words and Sentences
+)
+
 #export_corpus(17)
-# for (i in 1:nrow(corpora)) {
-#   export_corpus(i) 
-# }
+for (cid in to_export) {
+  export_corpus(cid)
+}
