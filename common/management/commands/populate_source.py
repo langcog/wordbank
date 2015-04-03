@@ -10,7 +10,11 @@ class Command(NoArgsCommand):
         sources = json.load(open('static/json/datasets.json'))
 
         for source in sources:
-            Source.objects.create(name=source['name'],
-                                  dataset=source['dataset'],
-                                  instrument_language=source['instrument_language'],
-                                  instrument_form=source['instrument_form'])
+            if not Source.objects.filter(name=source['name'],
+                                         dataset=source['dataset'],
+                                         instrument_language=source['instrument_language'],
+                                         instrument_form=source['instrument_form']).exists():
+                Source.objects.create(name=source['name'],
+                                      dataset=source['dataset'],
+                                      instrument_language=source['instrument_language'],
+                                      instrument_form=source['instrument_form'])
