@@ -1,0 +1,419 @@
+definition,gloss,category,item,type,choices,lang_lemma,uni_lemma,lexical_category,complexity_category,itemID
+Koltuk,armchair,furniture_rooms,Koltuk,word,understands; produces,Koltuk,Koltuk,,,item_1
+Kapı,door,furniture_rooms,Kapi,word,understands; produces,Kapi,Kapi,,,item_2
+Fırın,oven,furniture_rooms,Firin,word,understands; produces,Firin,Firin,,,item_3
+Dolap,cupboard,furniture_rooms,Dolap,word,understands; produces,Dolap,Dolap,,,item_4
+Çekmece,drawer,furniture_rooms,Cekmece,word,understands; produces,Cekmece,Cekmece,,,item_5
+Buzdolabı,refrigerator,furniture_rooms,Buzdolabi,word,understands; produces,Buzdolabi,Buzdolabi,,,item_6
+Bilgisayar,computer,furniture_rooms,Bilgisayar,word,understands; produces,Bilgisayar,Bilgisayar,,,item_7
+Beşik,crib,furniture_rooms,Besik,word,understands; produces,Besik,Besik,,,item_8
+Banyo,bathroom,furniture_rooms,Banyo,word,understands; produces,Banyo,Banyo,,,item_9
+Balkon,balcony/porch,furniture_rooms,Balkon,word,understands; produces,Balkon,Balkon,,,item_10
+Telefon,telephone,household,Telefon,word,understands; produces,Telefon,Telefon,,,item_11
+Tarak,comb,household,Tarak,word,understands; produces,Tarak,Tarak,,,item_12
+Tabak,plate,household,Tabak,word,understands; produces,Tabak,Tabak,,,item_13
+Şişe,bottle,household,Sise,word,understands; produces,Sise,Sise,,,item_14
+Süpürge,broom/vacuum cleaner,household,S"up"urge,word,understands; produces,S"up"urge,S"up"urge,,,item_15
+Sabun,soap,household,Sabun,word,understands; produces,Sabun,Sabun,,,item_16
+Saat,clock,household,Saat,word,understands; produces,Saat,Saat,,,item_17
+Resim,picture,household,Resim,word,understands; produces,Resim,Resim,,,item_18
+Radyo,radio,household,Radyo,word,understands; produces,Radyo,Radyo,,,item_19
+Pipet/Kamış,pipet,household,Pipet/Kamis,word,understands; produces,Pipet/Kamis,Pipet/Kamis,,,item_20
+Pil,battery,household,Pil,word,understands; produces,Pil,Pil,,,item_21
+Lamba/Işık,lamp/light,household,Lamba/Isik,word,understands; produces,Lamba/Isik,Lamba/Isik,,,item_22
+Kürek,shovel,household,K"urek,word,understands; produces,K"urek,K"urek,,,item_23
+Kutu,box/can,household,Kutu,word,understands; produces,Kutu,Kutu,,,item_24
+Kumanda,remote control,household,Kumanda_,word,understands; produces,Kumanda_,Kumanda_,,,item_25
+Kaşık,spoon,household,Kasik,word,understands; produces,Kasik,Kasik,,,item_26
+Kağıt,paper,household,Kagit,word,understands; produces,Kagit,Kagit,,,item_27
+İp,rope,household,Ip,word,understands; produces,Ip,Ip,,,item_28
+İlaç,medicine,household,Ilac,word,understands; produces,Ilac,Ilac,,,item_29
+Emzik,pacifier,household,Emzik,word,understands; produces,Emzik,Emzik,,,item_30
+Çatal,fork,household,Catal,word,understands; produces,Catal,Catal,,,item_31
+Çanta,purse/bag,household,Canta,word,understands; produces,Canta,Canta,,,item_32
+Biberon,baby bottle,household,Biberon,word,understands; produces,Biberon,Biberon,,,item_33
+Battaniye,blanket,household,Battaniye,word,understands; produces,Battaniye,Battaniye,,,item_34
+Bardak,glass,household,Bardak,word,understands; produces,Bardak,Bardak,,,item_35
+Ayna,mirror,household,Ayna,word,understands; produces,Ayna,Ayna,,,item_36
+Anahtar,keys,household,Anahtar,word,understands; produces,Anahtar,Anahtar,,,item_37
+Yanak,cheek,body_parts,Yanak,word,understands; produces,Yanak,Yanak,,,item_38
+Saç,hair,body_parts,Sac,word,understands; produces,Sac,Sac,,,item_39
+Popo,buttocks,body_parts,Popo,word,understands; produces,Popo,Popo,,,item_40
+Parmak,finger,body_parts,Parmak,word,understands; produces,Parmak,Parmak,,,item_41
+Meme,breast,body_parts,Meme_,word,understands; produces,Meme_,Meme_,,,item_42
+Kulak,ear,body_parts,Kulak,word,understands; produces,Kulak,Kulak,,,item_43
+Göz,eye,body_parts,G"oz,word,understands; produces,G"oz,G"oz,,,item_44
+Göbek,belly,body_parts,G"obek,word,understands; produces,G"obek,G"obek,,,item_45
+El,hand,body_parts,El,word,understands; produces,El,El,,,item_46
+Diz,knee,body_parts,Diz,word,understands; produces,Diz,Diz,,,item_47
+Diş,tooth,body_parts,Dis,word,understands; produces,Dis,Dis,,,item_48
+Dil,tongue,body_parts,Dil,word,understands; produces,Dil,Dil,,,item_49
+Burun,nose,body_parts,Burun,word,understands; produces,Burun,Burun,,,item_50
+Baş/Kafa,head,body_parts,Bas/Kafa,word,understands; produces,Bas/Kafa,Bas/Kafa,,,item_51
+Bacak,leg,body_parts,Bacak,word,understands; produces,Bacak,Bacak,,,item_52
+Ayak,foot,body_parts,Ayak,word,understands; produces,Ayak,Ayak,,,item_53
+Ağız,mouth,body_parts,Agiz,word,understands; produces,Agiz,Agiz,,,item_54
+Yelek,vest,clothing,Yelek,word,understands; produces,Yelek,Yelek,,,item_55
+Tişört,t-shirt,clothing,Tis"ort,word,understands; produces,Tis"ort,Tis"ort,,,item_56
+Terlik,slipper,clothing,Terlik,word,understands; produces,Terlik,Terlik,,,item_57
+Şapka,hat,clothing,Sapka,word,understands; produces,Sapka,Sapka,,,item_58
+Pijama,pyjamas,clothing,Pijama,word,understands; produces,Pijama,Pijama,,,item_59
+Pantolon,pants,clothing,Pantolon,word,understands; produces,Pantolon,Pantolon,,,item_60
+Palto,coat,clothing,Palto,word,understands; produces,Palto,Palto,,,item_61
+Önlük,bib,clothing,"Onl"uk_,word,understands; produces,"Onl"uk_,"Onl"uk_,,,item_62
+Kolye,necklace,clothing,Kolye,word,understands; produces,Kolye,Kolye,,,item_63
+Kazak,sweater,clothing,Kazak,word,understands; produces,Kazak,Kazak,,,item_64
+Gözlük,eyeglasses/spectacles,clothing,G"ozl"uk,word,understands; produces,G"ozl"uk,G"ozl"uk,,,item_65
+Gömlek,shirt,clothing,G"omlek,word,understands; produces,G"omlek,G"omlek,,,item_66
+Elbise,dress,clothing,Elbise,word,understands; produces,Elbise,Elbise,,,item_67
+Çorap,sock,clothing,Corap,word,understands; produces,Corap,Corap,,,item_68
+Ceket,jacket,clothing,Ceket,word,understands; produces,Ceket,Ceket,,,item_69
+Boncuk,bead,clothing,Boncuk,word,understands; produces,Boncuk,Boncuk,,,item_70
+Bez (çocuk bezi),diaper,clothing,Bez_(cocuk_bezi),word,understands; produces,Bez_(cocuk_bezi),Bez_(cocuk_bezi),,,item_71
+Ayakkabı/Pabuç,shoe,clothing,Ayakkabi/Pabuc,word,understands; produces,Ayakkabi/Pabuc,Ayakkabi/Pabuc,,,item_72
+Zeytin,olive,food_drink,Zeytin,word,understands; produces,Zeytin,Zeytin,,,item_73
+Yumurta,egg,food_drink,Yumurta,word,understands; produces,Yumurta,Yumurta,,,item_74
+Yoğurt,yogurt,food_drink,Yogurt,word,understands; produces,Yogurt,Yogurt,,,item_75
+Yemek,food,food_drink,Yemek,word,understands; produces,Yemek,Yemek,,,item_76
+Tost,toast,food_drink,Tost,word,understands; produces,Tost,Tost,,,item_77
+Tarhana,kind of soup,food_drink,Tarhana,word,understands; produces,Tarhana,Tarhana,,,item_78
+Şeker,sugar/candy,food_drink,Seker,word,understands; produces,Seker,Seker,,,item_79
+Şeftali,peach,food_drink,Seftali,word,understands; produces,Seftali,Seftali,,,item_80
+Süt,milk,food_drink,S"ut,word,understands; produces,S"ut,S"ut,,,item_81
+Su,water,food_drink,Su,word,understands; produces,Su,Su,,,item_82
+Simit,pretzel/common turkish snack,food_drink,Simit,word,understands; produces,Simit,Simit,,,item_83
+Reçel,jam,food_drink,Recel,word,understands; produces,Recel,Recel,,,item_84
+Portakal,orange,food_drink,Portakal,word,understands; produces,Portakal,Portakal,,,item_85
+Pilav,rice,food_drink,Pilav,word,understands; produces,Pilav,Pilav,,,item_86
+Patates,potato,food_drink,Patates,word,understands; produces,Patates,Patates,,,item_87
+Peynir,cheese,food_drink,Peynir,word,understands; produces,Peynir,Peynir,,,item_88
+Pasta,cake,food_drink,Pasta,word,understands; produces,Pasta,Pasta,,,item_89
+Muz,banana,food_drink,Muz,word,understands; produces,Muz,Muz,,,item_90
+Muhallebi,pudding,food_drink,Muhallebi,word,understands; produces,Muhallebi,Muhallebi,,,item_91
+Meyve,fruit,food_drink,Meyve,word,understands; produces,Meyve,Meyve,,,item_92
+Makarna,pasta/spaghetti,food_drink,Makarna,word,understands; produces,Makarna,Makarna,,,item_93
+Limon,lemon,food_drink,Limon,word,understands; produces,Limon,Limon,,,item_94
+Kurabiye,cookie,food_drink,Kurabiye,word,understands; produces,Kurabiye,Kurabiye,,,item_95
+Köfte,meatball,food_drink,K"ofte,word,understands; produces,K"ofte,K"ofte,,,item_96
+Kola,coke,food_drink,Kola,word,understands; produces,Kola,Kola,,,item_97
+Kek,cake,food_drink,Kek,word,understands; produces,Kek,Kek,,,item_98
+Karpuz,watermelon,food_drink,Karpuz,word,understands; produces,Karpuz,Karpuz,,,item_99
+Havuç,carrots,food_drink,Havuc,word,understands; produces,Havuc,Havuc,,,item_100
+Fıstık,peanut,food_drink,Fistik,word,understands; produces,Fistik,Fistik,,,item_101
+Et,meat,food_drink,Et,word,understands; produces,Et,Et,,,item_102
+Elma,apple,food_drink,Elma,word,understands; produces,Elma,Elma,,,item_103
+Ekmek,bread,food_drink,Ekmek,word,understands; produces,Ekmek,Ekmek,,,item_104
+Dondurma,ice cream,food_drink,Dondurma,word,understands; produces,Dondurma,Dondurma,,,item_105
+Domates,tomato,food_drink,Domates,word,understands; produces,Domates,Domates,,,item_106
+Çorba,soup,food_drink,Corba,word,understands; produces,Corba,Corba,,,item_107
+Çikolata,chocolate,food_drink,Cikolata,word,understands; produces,Cikolata,Cikolata,,,item_108
+Çay,tea,food_drink,Cay,word,understands; produces,Cay,Cay,,,item_109
+Börek,pastry,food_drink,B"orek,word,understands; produces,B"orek,B"orek,,,item_110
+Bisküvi,biscuit,food_drink,Bisk"uvi,word,understands; produces,Bisk"uvi,Bisk"uvi,,,item_111
+Balık,fish,food_drink,Balik,word,understands; produces,Balik,Balik,,,item_112
+Bal,honey,food_drink,Bal,word,understands; produces,Bal,Bal,,,item_113
+Ayran,yoghurt drink,food_drink,Ayran,word,understands; produces,Ayran,Ayran,,,item_114
+Armut,pear,food_drink,Armut,word,understands; produces,Armut,Armut,,,item_115
+Top,ball,toys,Top,word,understands; produces,Top,Top,,,item_116
+Oyuncak,toy,toys,Oyuncak,word,understands; produces,Oyuncak,Oyuncak,,,item_117
+Kova,bucket/pail,toys,Kova,word,understands; produces,Kova,Kova,,,item_118
+Kitap,book,toys,Kitap,word,understands; produces,Kitap,Kitap,,,item_119
+Kalem,pencil,toys,Kalem,word,understands; produces,Kalem,Kalem,,,item_120
+Boya,crayon,toys,Boya,word,understands; produces,Boya,Boya,,,item_121
+Bebek,doll,toys,Bebek,word,understands; produces,Bebek,Bebek,,,item_122
+Balon,balloon,toys,Balon,word,understands; produces,Balon,Balon,,,item_123
+Uçak,airplane,vehicles,Ucak,word,understands; produces,Ucak,Ucak,,,item_124
+Tren,train,vehicles,Tren,word,understands; produces,Tren,Tren,,,item_125
+Otobüs,bus,vehicles,Otob"us,word,understands; produces,Otob"us,Otob"us,,,item_126
+Kamyon,truck,vehicles,Kamyon,word,understands; produces,Kamyon,Kamyon,,,item_127
+Gemi/Vapur,boat/ship,vehicles,Gemi/Vapur,word,understands; produces,Gemi/Vapur,Gemi/Vapur,,,item_128
+Bisiklet,bicycle,vehicles,Bisiklet,word,understands; produces,Bisiklet,Bisiklet,,,item_129
+Araba,car,vehicles,Araba,word,understands; produces,Araba,Araba,,,item_130
+Tavuk,chicken,animals,Tavuk,word,understands; produces,Tavuk,Tavuk,,,item_131
+Tavşan,rabbit/bunny,animals,Tavsan,word,understands; produces,Tavsan,Tavsan,,,item_132
+Ördek,duck,animals,"Ordek,word,understands; produces,"Ordek,"Ordek,,,item_133
+Maymun,monkey,animals,Maymun,word,understands; produces,Maymun,Maymun,,,item_134
+Kuzu,lamb,animals,Kuzu,word,understands; produces,Kuzu,Kuzu,,,item_135
+Kuş,bird,animals,Kus,word,understands; produces,Kus,Kus,,,item_136
+Kurbağa,frog,animals,Kurbaga,word,understands; produces,Kurbaga,Kurbaga,,,item_137
+Köpek,dog,animals,K"opek,word,understands; produces,K"opek,K"opek,,,item_138
+Kelebek,butterfly,animals,Kelebek,word,understands; produces,Kelebek,Kelebek,,,item_139
+Kedi,cat,animals,Kedi,word,understands; produces,Kedi,Kedi,,,item_140
+İnek,cow,animals,Inek,word,understands; produces,Inek,Inek,,,item_141
+Eşek,donkey,animals,Esek,word,understands; produces,Esek,Esek,,,item_142
+Böcek,bug,animals,B"ocek,word,understands; produces,B"ocek,B"ocek,,,item_143
+Balık,fish,animals,Balik,word,understands; produces,Balik,Balik,,,item_144
+Ayı,bear,animals,Ayi,word,understands; produces,Ayi,Ayi,,,item_145
+At,horse,animals,At,word,understands; produces,At,At,,,item_146
+Arı,bee,animals,Ari,word,understands; produces,Ari,Ari,,,item_147
+Uf,ouch,sounds,Uf,word,understands; produces,Uf,Uf,,,item_148
+Pisi-pisi,meow,sounds,Pisi-pisi,word,understands; produces,Pisi-pisi,Pisi-pisi,,,item_149
+Möö,moo,sounds,M"o"o,word,understands; produces,M"o"o,M"o"o,,,item_150
+Mee,baa,sounds,Mee,word,understands; produces,Mee,Mee,,,item_151
+Hop/Hoppa,up up up,sounds,Hop/Hoppa,word,understands; produces,Hop/Hoppa,Hop/Hoppa,,,item_152
+Havhav,woof woof,sounds,Havhav,word,understands; produces,Havhav,Havhav,,,item_153
+Ham,yum yum,sounds,Ham,word,understands; produces,Ham,Ham,,,item_154
+Düt,beep,sounds,D"ut_,word,understands; produces,D"ut_,D"ut_,,,item_155
+Cıss,don´t-touch-it,sounds,Ciss,word,understands; produces,Ciss,Ciss,,,item_156
+Cee,peekaboo,sounds,Cee,word,understands; produces,Cee,Cee,,,item_157
+Lazımlık/Oturak,potty,furniture_rooms,Lazimlik/Oturak,word,understands; produces,Lazimlik/Oturak,Lazimlik/Oturak,,,item_158
+Masa,table,furniture_rooms,Masa,word,understands; produces,Masa,Masa,,,item_159
+Merdiven,stairs,furniture_rooms,Merdiven,word,understands; produces,Merdiven,Merdiven,,,item_160
+Mutfak,kitchen,furniture_rooms,Mutfak,word,understands; produces,Mutfak,Mutfak,,,item_161
+Oda,room,furniture_rooms,Oda,word,understands; produces,Oda,Oda,,,item_162
+Pencere,window,furniture_rooms,Pencere,word,understands; produces,Pencere,Pencere,,,item_163
+Sandalye/İskemle,chair,furniture_rooms,Sandalye/Iskemle,word,understands; produces,Sandalye/Iskemle,Sandalye/Iskemle,,,item_164
+Televizyon,TV,furniture_rooms,Televizyon,word,understands; produces,Televizyon,Televizyon,,,item_165
+Tuvalet,toilet,furniture_rooms,Tuvalet,word,understands; produces,Tuvalet,Tuvalet,,,item_166
+Yatak,bed,furniture_rooms,Yatak,word,understands; produces,Yatak,Yatak,,,item_167
+Yastık,pillow,furniture_rooms,Yastik,word,understands; produces,Yastik,Yastik,,,item_168
+Zil,bell,furniture_rooms,Zil,word,understands; produces,Zil,Zil,,,item_169
+Ay/Aydede,moon,outside,Ay/Aydede,word,understands; produces,Ay/Aydede,Ay/Aydede,,,item_170
+Ağaç,tree,outside,Agac,word,understands; produces,Agac,Agac,,,item_171
+Ateş,fire,outside,Ates,word,understands; produces,Ates,Ates,,,item_172
+Bahçe,garden,outside,Bahce,word,understands; produces,Bahce,Bahce,,,item_173
+Çamur,mud,outside,Camur,word,understands; produces,Camur,Camur,,,item_174
+Çiçek,flower,outside,Cicek_,word,understands; produces,Cicek_,Cicek_,,,item_175
+Duvar,wall,outside,Duvar,word,understands; produces,Duvar,Duvar,,,item_176
+Güneş,sun,outside,G"unes,word,understands; produces,G"unes,G"unes,,,item_177
+Havuz,pool,outside,Havuz,word,understands; produces,Havuz,Havuz,,,item_178
+Kaydırak,slide,outside,Kaydirak,word,understands; produces,Kaydirak,Kaydirak,,,item_179
+Köprü,bridge,outside,K"opr"u,word,understands; produces,K"opr"u,K"opr"u,,,item_180
+Kum,sand,outside,Kum,word,understands; produces,Kum,Kum,,,item_181
+Salıncak,swing,outside,Salincak,word,understands; produces,Salincak,Salincak,,,item_182
+Sokak,street,outside,Sokak,word,understands; produces,Sokak,Sokak,,,item_183
+Taş,stone/rock,outside,Tas,word,understands; produces,Tas,Tas,,,item_184
+Toprak,ground/earth,outside,Toprak,word,understands; produces,Toprak,Toprak,,,item_185
+Toz,dust,outside,Toz,word,understands; produces,Toz,Toz,,,item_186
+Yağmur,rain,outside,Yagmur,word,understands; produces,Yagmur,Yagmur,,,item_187
+Yaprak,leaf,outside,Yaprak,word,understands; produces,Yaprak,Yaprak,,,item_188
+Yıldız,star,outside,Yildiz,word,understands; produces,Yildiz,Yildiz,,,item_189
+Yol,road/path,outside,Yol,word,understands; produces,Yol,Yol,,,item_190
+Atta,outing,places,Atta,word,understands; produces,Atta,Atta,,,item_191
+Bakkal,grocer,places,Bakkal,word,understands; produces,Bakkal,Bakkal,,,item_192
+Çarşı,bazaar/market,places,Carsi,word,understands; produces,Carsi,Carsi,,,item_193
+Dışarı,outside,places,Disari_,word,understands; produces,Disari_,Disari_,,,item_194
+Deniz,sea,places,Deniz,word,understands; produces,Deniz,Deniz,,,item_195
+Dükkan,shop/store,places,D"ukkan,word,understands; produces,D"ukkan,D"ukkan,,,item_196
+Ev,home/house,places,Ev,word,understands; produces,Ev,Ev,,,item_197
+İş,work,places,Is,word,understands; produces,Is,Is,,,item_198
+Köy,village,places,K"oy,word,understands; produces,K"oy,K"oy,,,item_199
+Market,market,places,Market,word,understands; produces,Market,Market,,,item_200
+Okul,school,places,Okul,word,understands; produces,Okul,Okul,,,item_201
+Park,park,places,Park,word,understands; produces,Park,Park,,,item_202
+Pazar,bazaar/marketplace,places,Pazar,word,understands; produces,Pazar,Pazar,,,item_203
+Abi,brother,people,Abi,word,understands; produces,Abi,Abi,,,item_204
+Abla,sister,people,Abla,word,understands; produces,Abla,Abla,,,item_205
+Adam,man,people,Adam,word,understands; produces,Adam,Adam,,,item_206
+Amca,uncle (paternal),people,Amca,word,understands; produces,Amca,Amca,,,item_207
+Anne,mommy/mother,people,Anne,word,understands; produces,Anne,Anne,,,item_208
+Anneanne/Babaanne/Büyükanne,grandma/grandmother,people,Anneanne/Babaanne/_B"uy"ukanne,word,understands; produces,Anneanne/Babaanne/_B"uy"ukanne,Anneanne/Babaanne/_B"uy"ukanne,,,item_209
+Arkadaş,friend,people,Arkadas,word,understands; produces,Arkadas,Arkadas,,,item_210
+Baba,daddy/father,people,Baba,word,understands; produces,Baba,Baba,,,item_211
+Çocuk,child,people,Cocuk,word,understands; produces,Cocuk,Cocuk,,,item_212
+Bebek,baby,people,Bebek,word,understands; produces,Bebek,Bebek,,,item_213
+Dayı,uncle (maternal),people,Dayi,word,understands; produces,Dayi,Dayi,,,item_214
+Dede,grandpa/grandfather,people,Dede,word,understands; produces,Dede,Dede,,,item_215
+Doktor,doctor,people,Doktor,word,understands; produces,Doktor,Doktor,,,item_216
+Hala,aunt (paternal),people,Hala,word,understands; produces,Hala,Hala,,,item_217
+Kardeş,sibling,people,Kardes,word,understands; produces,Kardes,Kardes,,,item_218
+Kendi ismi,child´s own name,people,Kendi_ismi,word,understands; produces,Kendi_ismi,Kendi_ismi,,,item_219
+Kız,girl,people,Kiz,word,understands; produces,Kiz,Kiz,,,item_220
+Nine,grandma/grandmother,people,Nine,word,understands; produces,Nine,Nine,,,item_221
+Palyaço,clown,people,Palyaco_,word,understands; produces,Palyaco_,Palyaco_,,,item_222
+Polis,policeman,people,Polis,word,understands; produces,Polis,Polis,,,item_223
+Teyze,aunt (maternal),people,Teyze,word,understands; produces,Teyze,Teyze,,,item_224
+Aferin,well done/bravo,games_routines,Aferin,word,understands; produces,Aferin,Aferin,,,item_225
+Alkış,handclap,games_routines,Alkis,word,understands; produces,Alkis,Alkis,,,item_226
+Alo,hello (on the phone),games_routines,Alo,word,understands; produces,Alo,Alo,,,item_227
+Ayıp,shameful,games_routines,Ayip,word,understands; produces,Ayip,Ayip,,,item_228
+Banyo,bathroom,games_routines,Banyo,word,understands; produces,Banyo,Banyo,,,item_229
+Bay-bay,bye,games_routines,Bay-bay,word,understands; produces,Bay-bay,Bay-bay,,,item_230
+Çiş,pee/go potty,games_routines,Cis,word,understands; produces,Cis,Cis,,,item_231
+Dikkat,watch out/attention,games_routines,Dikkat,word,understands; produces,Dikkat,Dikkat,,,item_232
+Evet,yes,games_routines,Evet_,word,understands; produces,Evet_,Evet_,,,item_233
+Gol,goal,games_routines,Gol,word,understands; produces,Gol,Gol,,,item_234
+Güle-güle,goodbye,games_routines,G"ule-g"ule,word,understands; produces,G"ule-g"ule,G"ule-g"ule,,,item_235
+Günaydın,good morning,games_routines,G"unaydin,word,understands; produces,G"unaydin,G"unaydin,,,item_236
+Hoşçakal,goodbye,games_routines,Hoscakal,word,understands; produces,Hoscakal,Hoscakal,,,item_237
+Hadi,come on,games_routines,Hadi,word,understands; produces,Hadi,Hadi,,,item_238
+Hayır,no/don´t,games_routines,Hayir,word,understands; produces,Hayir,Hayir,,,item_239
+İyi geceler,good night,games_routines,Iyi_geceler,word,understands; produces,Iyi_geceler,Iyi_geceler,,,item_240
+Kaka,poo-poo/go potty,games_routines,Kaka,word,understands; produces,Kaka,Kaka,,,item_241
+Kucak,(take in) arms/lap,games_routines,Kucak,word,understands; produces,Kucak,Kucak,,,item_242
+Mama,food (baby word),games_routines,Mama,word,understands; produces,Mama,Mama,,,item_243
+Müzik,music,games_routines,M"uzik,word,understands; produces,M"uzik,M"uzik,,,item_244
+Ninni,lullaby,games_routines,Ninni,word,understands; produces,Ninni,Ninni,,,item_245
+Öcü,boogeyman,games_routines,"Oc"u,word,understands; produces,"Oc"u,"Oc"u,,,item_246
+Saklambaç,hide-and-seek,games_routines,Saklambac,word,understands; produces,Saklambac,Saklambac,,,item_247
+Sürpriz,surprise,games_routines,S"urpriz,word,understands; produces,S"urpriz,S"urpriz,,,item_248
+Şarkı,song,games_routines,Sarki,word,understands; produces,Sarki,Sarki,,,item_249
+Takla,somersault,games_routines,Takla,word,understands; produces,Takla,Takla,,,item_250
+Tamam,ok/allright,games_routines,Tamam,word,understands; produces,Tamam,Tamam,,,item_251
+Teşekkür/Sağol,thank you,games_routines,Tesekk"ur/Sagol,word,understands; produces,Tesekk"ur/Sagol,Tesekk"ur/Sagol,,,item_252
+Uyku,nap/sleep,games_routines,Uyku,word,understands; produces,Uyku,Uyku,,,item_253
+Var,present/there is,games_routines,Var,word,understands; produces,Var,Var,,,item_254
+Yok,absent/all gone,games_routines,Yok,word,understands; produces,Yok,Yok,,,item_255
+Acı (canı),hurt,action_words,Aci_(cani),word,understands; produces,Aci_(cani),Aci_(cani),,,item_256
+Acık,get hungry,action_words,Acik,word,understands; produces,Acik,Acik,,,item_257
+Aç,open,action_words,Ac,word,understands; produces,Ac,Ac,,,item_258
+Açıl,be opened,action_words,Acil,word,understands; produces,Acil,Acil,,,item_259
+Ağla,cry,action_words,Agla,word,understands; produces,Agla,Agla,,,item_260
+Al,take,action_words,Al,word,understands; produces,Al,Al,,,item_261
+Anla,understand,action_words,Anla,word,understands; produces,Anla,Anla,,,item_262
+Ara,look for,action_words,Ara,word,understands; produces,Ara,Ara,,,item_263
+Atla,jump,action_words,Atla,word,understands; produces,Atla,Atla,,,item_264
+At,throw,action_words,At,word,understands; produces,At,At,,,item_265
+Bağır,yell/shout,action_words,Bagir,word,understands; produces,Bagir,Bagir,,,item_266
+Bak,look,action_words,Bak,word,understands; produces,Bak,Bak,,,item_267
+Bas,press/step,action_words,Bas,word,understands; produces,Bas,Bas,,,item_268
+Başla,begin/start,action_words,Basla,word,understands; produces,Basla,Basla,,,item_269
+Bırak,drop/let go,action_words,Birak,word,understands; produces,Birak,Birak,,,item_270
+Bin,get on (a vehicle),action_words,Bin,word,understands; produces,Bin,Bin,,,item_271
+Bit,finish/all gone,action_words,Bit,word,understands; produces,Bit,Bit,,,item_272
+Boya,paint,action_words,Boya,word,understands; produces,Boya,Boya,,,item_273
+Bul,find,action_words,Bul,word,understands; produces,Bul,Bul,,,item_274
+Çarp,strike/crash,action_words,Carp,word,understands; produces,Carp,Carp,,,item_275
+Çek,pull,action_words,Cek,word,understands; produces,Cek,Cek,,,item_276
+Çık,exit/get out/climb,action_words,Cik,word,understands; produces,Cik,Cik,,,item_277
+Çıkar,take off,action_words,Cikar,word,understands; produces,Cikar,Cikar,,,item_278
+Çiz,draw,action_words,Ciz,word,understands; produces,Ciz,Ciz,,,item_279
+Dön,turn,action_words,D"on,word,understands; produces,D"on,D"on,,,item_280
+Döv,beat/kick,action_words,D"ov,word,understands; produces,D"ov,D"ov,,,item_281
+Dur,stop,action_words,Dur,word,understands; produces,Dur,Dur,,,item_282
+Dök,spill/pour/dump,action_words,D"ok,word,understands; produces,D"ok,D"ok,,,item_283
+Düş,fall,action_words,D"us,word,understands; produces,D"us,D"us,,,item_284
+Elle,touch,action_words,Elle,word,understands; produces,Elle,Elle,,,item_285
+El salla,wave-hand,action_words,El_salla,word,understands; produces,El_salla,El_salla,,,item_286
+Geç,pass,action_words,Gec,word,understands; produces,Gec,Gec,,,item_287
+Gel,come,action_words,Gel,word,understands; produces,Gel,Gel,,,item_288
+Getir,bring,action_words,Getir,word,understands; produces,Getir,Getir,,,item_289
+Gez,travel/wonder around,action_words,Gez,word,understands; produces,Gez,Gez,,,item_290
+Gıdıkla,tickle,action_words,Gidikla,word,understands; produces,Gidikla,Gidikla,,,item_291
+Gir,enter/go into,action_words,Gir,word,understands; produces,Gir,Gir,,,item_292
+Git,go,action_words,Git,word,understands; produces,Git,Git,,,item_293
+Giy,wear,action_words,Giy,word,understands; produces,Giy,Giy,,,item_294
+Giydir,dress up/put on someone,action_words,Giydir,word,understands; produces,Giydir,Giydir,,,item_295
+Gör,see,action_words,G"or,word,understands; produces,G"or,G"or,,,item_296
+Göster,show,action_words,G"oster,word,understands; produces,G"oster,G"oster,,,item_297
+Götür,take away,action_words,G"ot"ur,word,understands; produces,G"ot"ur,G"ot"ur,,,item_298
+Gül,laugh,action_words,G"ul,word,understands; produces,G"ul,G"ul,,,item_299
+Isır,bite,action_words,Isir,word,understands; produces,Isir,Isir,,,item_300
+Islan,get wet,action_words,Islan,word,understands; produces,Islan,Islan,,,item_301
+İç,drink,action_words,Ic,word,understands; produces,Ic,Ic,,,item_302
+İn,get off/get down,action_words,In,word,understands; produces,In,In,,,item_303
+İste,want,action_words,Iste,word,understands; produces,Iste,Iste,,,item_304
+İt,push,action_words,It,word,understands; produces,It,It,,,item_305
+Kaldır,lift/pick up,action_words,Kaldir,word,understands; produces,Kaldir,Kaldir,,,item_306
+Kalk,stand,action_words,Kalk,word,understands; produces,Kalk,Kalk,,,item_307
+Kapat,close,action_words,Kapat,word,understands; produces,Kapat,Kapat,,,item_308
+Kır,break,action_words,Kir,word,understands; produces,Kir,Kir,,,item_309
+Kokla,smell,action_words,Kokla,word,understands; produces,Kokla,Kokla,,,item_310
+Kork,be afraid of/fear,action_words,Kork,word,understands; produces,Kork,Kork,,,item_311
+Koş,run,action_words,Kos,word,understands; produces,Kos,Kos,,,item_312
+Koy,put,action_words,Koy,word,understands; produces,Koy,Koy,,,item_313
+Ol,be,action_words,Ol,word,understands; produces,Ol,Ol,,,item_314
+Otur,sit,action_words,Otur,word,understands; produces,Otur,Otur,,,item_315
+Oyna,play,action_words,Oyna,word,understands; produces,Oyna,Oyna,,,item_316
+Öksür,cough,action_words,"Oks"ur,word,understands; produces,"Oks"ur,"Oks"ur,,,item_317
+Öl,die,action_words,"Ol,word,understands; produces,"Ol,"Ol,,,item_318
+Öp,kiss,action_words,"Op,word,understands; produces,"Op,"Op,,,item_319
+Ört,cover,action_words,"Ort_,word,understands; produces,"Ort_,"Ort_,,,item_320
+Sakla,hide,action_words,Sakla_,word,understands; produces,Sakla_,Sakla_,,,item_321
+Salla,shake,action_words,Salla,word,understands; produces,Salla,Salla,,,item_322
+Sallan,swing,action_words,Sallan,word,understands; produces,Sallan,Sallan,,,item_323
+Sarıl,hug/cuddle,action_words,Saril,word,understands; produces,Saril,Saril,,,item_324
+Say,count,action_words,Say,word,understands; produces,Say,Say,,,item_325
+Sev,love/like,action_words,Sev,word,understands; produces,Sev,Sev,,,item_326
+Seyret,watch,action_words,Seyret,word,understands; produces,Seyret,Seyret,,,item_327
+Sil,wipe/erase,action_words,Sil,word,understands; produces,Sil,Sil,,,item_328
+Sok,put in/insert,action_words,Sok,word,understands; produces,Sok,Sok,,,item_329
+Söyle,say/tell,action_words,S"oyle,word,understands; produces,S"oyle,S"oyle,,,item_330
+Sus,be quiet/shut up,action_words,Sus,word,understands; produces,Sus,Sus,,,item_331
+Tak,put sth. on/hang sth. on/attach,action_words,Tak,word,understands; produces,Tak,Tak,,,item_332
+Tara,comb,action_words,Tara,word,understands; produces,Tara,Tara,,,item_333
+Taşı,carry,action_words,Tasi,word,understands; produces,Tasi,Tasi,,,item_334
+Tut,hold,action_words,Tut_,word,understands; produces,Tut_,Tut_,,,item_335
+Uç,fly,action_words,Uc,word,understands; produces,Uc,Uc,,,item_336
+Uyan,wake up,action_words,Uyan_,word,understands; produces,Uyan_,Uyan_,,,item_337
+Ver,give,action_words,Ver,word,understands; produces,Ver,Ver,,,item_338
+Vur,hit/knock,action_words,Vur,word,understands; produces,Vur,Vur,,,item_339
+Yakala,catch,action_words,Yakala,word,understands; produces,Yakala,Yakala,,,item_340
+Yap,do/make,action_words,Yap,word,understands; produces,Yap,Yap,,,item_341
+Yat,lie/go to bed,action_words,Yat,word,understands; produces,Yat,Yat,,,item_342
+Yaz,write,action_words,Yaz,word,understands; produces,Yaz,Yaz,,,item_343
+Ye,eat,action_words,Ye_,word,understands; produces,Ye_,Ye_,,,item_344
+Yedir,feed,action_words,Yedir,word,understands; produces,Yedir,Yedir,,,item_345
+Yıka,wash,action_words,Yika,word,understands; produces,Yika,Yika,,,item_346
+Yıkan,take a bath/wash yourself,action_words,Yikan,word,understands; produces,Yikan,Yikan,,,item_347
+Yırt,rip/tear,action_words,Yirt_,word,understands; produces,Yirt_,Yirt_,,,item_348
+Yut,swallow,action_words,Yut,word,understands; produces,Yut,Yut,,,item_349
+Yürü,walk,action_words,Y"ur"u,word,understands; produces,Y"ur"u,Y"ur"u,,,item_350
+Acı (lezzet),bitter,descriptive_words,Aci_(lezzet),word,understands; produces,Aci_(lezzet),Aci_(lezzet),,,item_351
+Açık,open,descriptive_words,Acik,word,understands; produces,Acik,Acik,,,item_352
+Boş,empty,descriptive_words,Bos,word,understands; produces,Bos,Bos,,,item_353
+Büyük,big,descriptive_words,B"uy"uk,word,understands; produces,B"uy"uk,B"uy"uk,,,item_354
+Çok,many/much/a lot,descriptive_words,Cok,word,understands; produces,Cok,Cok,,,item_355
+Cici,cute,descriptive_words,Cici,word,understands; produces,Cici,Cici,,,item_356
+Çirkin,ugly,descriptive_words,Cirkin,word,understands; produces,Cirkin,Cirkin,,,item_357
+Güzel,beautiful,descriptive_words,G"uzel,word,understands; produces,G"uzel,G"uzel,,,item_358
+Hasta,sick,descriptive_words,Hasta,word,understands; produces,Hasta,Hasta,,,item_359
+Islak,wet,descriptive_words,Islak,word,understands; produces,Islak,Islak,,,item_360
+İyi,good,descriptive_words,Iyi,word,understands; produces,Iyi,Iyi,,,item_361
+Kapalı,closed,descriptive_words,Kapali,word,understands; produces,Kapali,Kapali,,,item_362
+Karanlık,dark,descriptive_words,Karanlik_,word,understands; produces,Karanlik_,Karanlik_,,,item_363
+Kırmızı,red,descriptive_words,Kirmizi,word,understands; produces,Kirmizi,Kirmizi,,,item_364
+Kirli,dirty,descriptive_words,Kirli,word,understands; produces,Kirli,Kirli,,,item_365
+Kocaman,huge/giant,descriptive_words,Kocaman,word,understands; produces,Kocaman,Kocaman,,,item_366
+Komik,funny,descriptive_words,Komik,word,understands; produces,Komik,Komik,,,item_367
+Küçük,little/small,descriptive_words,K"uc"uk,word,understands; produces,K"uc"uk,K"uc"uk,,,item_368
+Sıcak,hot,descriptive_words,Sicak,word,understands; produces,Sicak,Sicak,,,item_369
+Soğuk,cold,descriptive_words,Soguk,word,understands; produces,Soguk,Soguk,,,item_370
+Pis,dirty,descriptive_words,Pis,word,understands; produces,Pis,Pis,,,item_371
+Tatlı,sweet,descriptive_words,Tatli,word,understands; produces,Tatli,Tatli,,,item_372
+Temiz,clean,descriptive_words,Temiz_,word,understands; produces,Temiz_,Temiz_,,,item_373
+Yaramaz,naughty,descriptive_words,Yaramaz,word,understands; produces,Yaramaz,Yaramaz,,,item_374
+Yeni,new,descriptive_words,Yeni,word,understands; produces,Yeni,Yeni,,,item_375
+Akşam,evening,time_words,Aksam,word,understands; produces,Aksam,Aksam,,,item_376
+Bugün,today,time_words,Bug"un,word,understands; produces,Bug"un,Bug"un,,,item_377
+Gece,night,time_words,Gece,word,understands; produces,Gece,Gece,,,item_378
+Hemen,immediately/right now,time_words,Hemen,word,understands; produces,Hemen,Hemen,,,item_379
+Sabah,morning,time_words,Sabah,word,understands; produces,Sabah,Sabah,,,item_380
+Şimdi,now,time_words,Simdi,word,understands; produces,Simdi,Simdi,,,item_381
+Bana,me,pronouns,Bana,word,understands; produces,Bana,Bana,,,item_382
+Ben,I,pronouns,Ben,word,understands; produces,Ben,Ben,,,item_383
+Benim,my,pronouns,Benim,word,understands; produces,Benim,Benim,,,item_384
+Bu,this,pronouns,Bu,word,understands; produces,Bu,Bu,,,item_385
+Sen,you,pronouns,Sen,word,understands; produces,Sen,Sen,,,item_386
+Senin,your,pronouns,Senin,word,understands; produces,Senin,Senin,,,item_387
+Şu,that,pronouns,Su,word,understands; produces,Su,Su,,,item_388
+O,that/s/he/it,pronouns,O,word,understands; produces,O,O,,,item_389
+Ona,him/her/it,pronouns,Ona,word,understands; produces,Ona,Ona,,,item_390
+Onun,his/hers/its,pronouns,Onun,word,understands; produces,Onun,Onun,,,item_391
+Sana,(to) you,pronouns,Sana,word,understands; produces,Sana,Sana,,,item_392
+Biri,someone,pronouns,Biri,word,understands; produces,Biri,Biri,,,item_393
+Kim,who,question_words,Kim,word,understands; produces,Kim,Kim,,,item_394
+Nasıl,how,question_words,Nasil,word,understands; produces,Nasil,Nasil,,,item_395
+Ne,what,question_words,Ne,word,understands; produces,Ne,Ne,,,item_396
+Neden,why,question_words,Neden,word,understands; produces,Neden,Neden,,,item_397
+Nereye,where to,question_words,Nereye,word,understands; produces,Nereye,Nereye,,,item_398
+Nerede,where at,question_words,Nerede,word,understands; produces,Nerede,Nerede,,,item_399
+Niye,why,question_words,Niye,word,understands; produces,Niye,Niye,,,item_400
+Altında,under,locations,Altinda,word,understands; produces,Altinda,Altinda,,,item_401
+Arkasında,behind,locations,Arkasinda,word,understands; produces,Arkasinda,Arkasinda,,,item_402
+Burada,here,locations,Burada_,word,understands; produces,Burada_,Burada_,,,item_403
+Dışarıda,out/outside,locations,Disarida,word,understands; produces,Disarida,Disarida,,,item_404
+İçeride,inside,locations,Iceride,word,understands; produces,Iceride,Iceride,,,item_405
+İçinde,in,locations,Icinde,word,understands; produces,Icinde,Icinde,,,item_406
+Orada,there,locations,Orada,word,understands; produces,Orada,Orada,,,item_407
+Önünde,in front of,locations,"On"unde,word,understands; produces,"On"unde,"On"unde,,,item_408
+Şurada,over there,locations,Surada,word,understands; produces,Surada,Surada,,,item_409
+Üstünde/Üzerinde,on/above,locations,"Ust"unde/"Uzerinde,word,understands; produces,"Ust"unde/"Uzerinde,"Ust"unde/"Uzerinde,,,item_410
+Biraz,some/a little,quantifiers,Biraz,word,understands; produces,Biraz,Biraz,,,item_411
+Çok,much/many,quantifiers,Cok,word,understands; produces,Cok,Cok,,,item_412
+Daha/Bir daha,more /once again,quantifiers,Daha/Bir_daha,word,understands; produces,Daha/Bir_daha,Daha/Bir_daha,,,item_413
+Hepsi,all,quantifiers,Hepsi_,word,understands; produces,Hepsi_,Hepsi_,,,item_414
+Hiç,none/any,quantifiers,Hic,word,understands; produces,Hic,Hic,,,item_415
+İşte,here/there/behold,quantifiers,Iste,word,understands; produces,Iste,Iste,,,item_416
+Öbürü,other,quantifiers,"Ob"ur"u,word,understands; produces,"Ob"ur"u,"Ob"ur"u,,,item_417
+Yine/Gene,again,quantifiers,Yine/Gene,word,understands; produces,Yine/Gene,Yine/Gene,,,item_418
