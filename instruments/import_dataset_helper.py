@@ -1,4 +1,5 @@
 import xlrd
+import csv
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 from collections import defaultdict
@@ -6,10 +7,9 @@ from collections import defaultdict
 
 class ImportHelper:
 
-    def __init__(self, data_file, instrument_model, splitcol=False):
+    def __init__(self, data_file, splitcol=False):
 
         self.data_file = data_file
-        self.instrument_model = instrument_model
         self.splitcol = splitcol
 
         self.col_map = {}
@@ -80,59 +80,94 @@ class ImportHelper:
 
     def import_data(self):
 
-        book = xlrd.open_workbook(self.data_file)
-        self.datemode = book.datemode
+        ftype = self.data_file.split('.')[-1]
+
+        if ftype == 'xlsx' or ftype == 'xls':
+
+            book = xlrd.open_workbook(self.data_file)
+            self.datemode = book.datemode
+
+            value_mapping_sheet = book.sheet_by_name('value_mapping')
+            value_mapping_nrows = value_mapping_sheet.nrows
+            get_value_mapping_row = lambda row: list(value_mapping_sheet.row_values(row))
+
+            field_mapping_sheet = book.sheet_by_name('field_mapping')
+            field_mapping_nrows = field_mapping_sheet.nrows
+            get_field_mapping_row = lambda row: list(field_mapping_sheet.row_values(row))
+
+            data_sheet = book.sheet_by_name('data')
+            data_nrows = data_sheet.nrows
+            get_data_row = lambda row: list(data_sheet.row_values(row))
+            col_names = list(data_sheet.row_values(0))
+
+        elif ftype == 'csv':
+
+            value_mapping_file = open('.'.join(self.data_file.split('.')[:-1]) + '_values.csv', 'rU')
+            value_mapping_reader = list(csv.reader(value_mapping_file))
+            value_mapping_nrows = len(value_mapping_reader)
+            get_value_mapping_row = lambda row: value_mapping_reader[row]
+
+            field_mapping_file = open('.'.join(self.data_file.split('.')[:-1]) + '_fields.csv', 'rU')
+            field_mapping_reader = list(csv.reader(field_mapping_file))
+            field_mapping_nrows = len(field_mapping_reader)
+            get_field_mapping_row = lambda row: field_mapping_reader[row]
+
+            data_file = open('.'.join(self.data_file.split('.')[:-1]) + '_data.csv', 'rU')
+            data_reader = list(csv.reader(data_file))
+            data_nrows = len(data_reader)
+            get_data_row = lambda row: data_reader[row]
+            col_names = data_reader[0]
+
+        else:
+            raise IOError("Instrument file must be xlsx, xls, or csv.")
 
         # make a mapping between model value sets and datasheet value sets
-        value_mapping_sheet = book.sheet_by_name('value_mapping')
-        for row in xrange(1, value_mapping_sheet.nrows):
-            row_values = list(value_mapping_sheet.row_values(row))
-            field_type, value, data_value = row_values[:3]
-            value = self.value_typing(value)
-            data_value = self.value_typing(data_value).lower()
-            if data_value is not None and data_value != '':
-                self.field_value_mapping[field_type][data_value] = value
+        for row in xrange(1, value_mapping_nrows):
+            row_values = get_value_mapping_row(row)
+            if len(row_values) > 1:
+                field_type, value, data_value = row_values[:3]
+                value = self.value_typing(value)
+                data_value = self.value_typing(data_value).lower()
+                if data_value is not None and data_value != '':
+                    self.field_value_mapping[field_type][data_value] = value
 
         # make a mapping between datasheet column names and model field names/types
-        field_mapping_sheet = book.sheet_by_name('field_mapping')
         cols = defaultdict(lambda: dict())
-        for row in xrange(1, field_mapping_sheet.nrows):
-            row_values = list(field_mapping_sheet.row_values(row))
-            field, column, group, field_type = row_values[:4]
-            if column is not None and column != '':
-                columns = [column]
-                if group == 'item':
-#                    field = 'item_' + string.replace(field, '.', '_')
-                    if self.splitcol and field_type == 'word':
-                        columns = [column + 'u', column + 'p']
-                for column in columns:
-                    cols[group][column.lower()] = {'field': field, 'field_type': field_type}
-
-        data_sheet = book.sheet_by_name('data')
-        col_names = list(data_sheet.row_values(0))
+        for row in xrange(1, field_mapping_nrows):
+            row_values = get_field_mapping_row(row)
+            if len(row_values) > 1:
+                field, column, group, field_type = row_values[:4]
+                if column is not None and column != '':
+                    columns = [column]
+                    if group == 'item':
+                        if self.splitcol and field_type == 'word':
+                            columns = [column + 'u', column + 'p']
+                    for column in columns:
+                        cols[group][column.lower()] = {'field': field, 'field_type': field_type}
 
         # make a mapping between dataset column names and dataset column indexes
         for index, value in enumerate(col_names):
             self.col_map[value.lower()] = index
 
         # go through the datasheet entries and populate all the data
-        for row in xrange(1, data_sheet.nrows):
-            row_values = list(data_sheet.row_values(row))
+        for row in xrange(1, data_nrows):
+            row_values = get_data_row(row)
+            if len(row_values) > 1:
 
-            # get child data
-            child = self.get_data_fields(cols, 'child', row_values)
-            self.children[row] = child
+                # get child data
+                child = self.get_data_fields(cols, 'child', row_values)
+                self.children[row] = child
 
-            # get administration data
-            administration = self.get_data_fields(cols, 'admin', row_values)
-            if child['date_of_birth'] is not None and administration['date_of_test'] is not None:
-                computed_age = self.compute_age(child['date_of_birth'], administration['date_of_test'])
-                administration['age'] = computed_age
-            else:
-                administration['age'] = administration['data_age']
+                # get administration data
+                administration = self.get_data_fields(cols, 'admin', row_values)
+                if child['date_of_birth'] is not None and administration['date_of_test'] is not None:
+                    computed_age = self.compute_age(child['date_of_birth'], administration['date_of_test'])
+                    administration['age'] = computed_age
+                else:
+                    administration['age'] = administration['data_age']
 
-            # get item data
-            item_data = self.get_data_fields(cols, 'item', row_values)
-            administration['item_data'] = item_data
+                # get item data
+                item_data = self.get_data_fields(cols, 'item', row_values)
+                administration['item_data'] = item_data
 
-            self.administrations[row] = administration
+                self.administrations[row] = administration
