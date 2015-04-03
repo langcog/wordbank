@@ -37,27 +37,28 @@ class Command(NoArgsCommand):
             for row in xrange(1, nrows):
 
                 row_values = get_row(row)
-                itemID = row_values[col_names.index('itemID')]
-                item = row_values[col_names.index('item')]
-                item_type = row_values[col_names.index('type')]
-                item_category = row_values[col_names.index('category')]
+                if len(row_values) > 1:
+                    itemID = row_values[col_names.index('itemID')]
+                    item = row_values[col_names.index('item')]
+                    item_type = row_values[col_names.index('type')]
+                    item_category = row_values[col_names.index('category')]
 
-                #lang_lemma = row_values[col_names.index('lang_lemma')]
-                #uni_lemma = row_values[col_names.index('uni_lemma')]
-                definition = row_values[col_names.index('definition')]
-                lexical_category = row_values[col_names.index('lexical_category')]
-                complexity_category = row_values[col_names.index('complexity_category')]
+                    #lang_lemma = row_values[col_names.index('lang_lemma')]
+                    #uni_lemma = row_values[col_names.index('uni_lemma')]
+                    definition = row_values[col_names.index('definition')]
+                    lexical_category = row_values[col_names.index('lexical_category')]
+                    complexity_category = row_values[col_names.index('complexity_category')]
 
-                #if not WordInfo.objects.filter(uni_lemma=uni_lemma, lang_lemma=lang_lemma).exists():
-                #    WordInfo.objects.create(uni_lemma=uni_lemma, lang_lemma=lang_lemma)
-                #word_info = WordInfo.objects.get(uni_lemma=uni_lemma, lang_lemma=lang_lemma)
+                    #if not WordInfo.objects.filter(uni_lemma=uni_lemma, lang_lemma=lang_lemma).exists():
+                    #    WordInfo.objects.create(uni_lemma=uni_lemma, lang_lemma=lang_lemma)
+                    #word_info = WordInfo.objects.get(uni_lemma=uni_lemma, lang_lemma=lang_lemma)
 
-                WordMapping.objects.create(item=item,
-                                           item_id=itemID,
-                                           instrument=instruments_map,
-                                           type=item_type,
-                                           category=item_category,
-                                           #word_info=word_info,
-                                           definition=definition,
-                                           lexical_category=lexical_category,
-                                           complexity_category=complexity_category)
+                    WordMapping.objects.create(item=item,
+                                               item_id=itemID,
+                                               instrument=instruments_map,
+                                               type=item_type,
+                                               category=item_category,
+                                               #word_info=word_info,
+                                               definition=definition,
+                                               lexical_category=lexical_category,
+                                               complexity_category=complexity_category)
