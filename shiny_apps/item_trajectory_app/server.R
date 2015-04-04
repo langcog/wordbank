@@ -7,11 +7,11 @@ library(directlabels)
 library(RMySQL)
 source("../app_themes.R")
 source("../data_loading.R")
-Sys.setlocale(locale="C")
+Sys.setlocale(locale="en_US.UTF-8")
 
 ## DEBUGGING
-#input <- list(language = "English", form = "WS", measure = "produces",
-#              words = c("item_1"), wordform = NULL, complexity = NULL)
+input <- list(language = "Russian", form = "WS", measure = "produces",
+             words = c("item_1"), wordform = NULL, complexity = NULL)
 
 
 shinyServer(function(input, output, session) {
@@ -29,7 +29,8 @@ shinyServer(function(input, output, session) {
                                     common.tables$administration)
   
   items <- get.item.data(common.tables$wordmapping,
-                         common.tables$instrumentsmap)
+                         common.tables$instrumentsmap) %>%
+    mutate(definition = iconv(definition, from = "utf8", to = "utf8"))
   
   list.items.by.definition <- function(item.data) {
     items <- item.data$item.id
@@ -125,12 +126,15 @@ shinyServer(function(input, output, session) {
     return(data)
   }
   
-  input.language <- reactive({ifelse(is.null(input$language),
-                                     start.language(), input$language)})
-  input.form <- reactive({ifelse(is.null(input$form),
-                                 start.form(), input$form)})
-  input.measure <- reactive({ifelse(is.null(input$measure),
-                                    start.measure(), input$measure)})
+  input.language <- reactive({
+    ifelse(is.null(input$language), start.language(), input$language)
+  })
+  input.form <- reactive({
+    ifelse(is.null(input$form), start.form(), input$form)
+  })
+  input.measure <- reactive({
+    ifelse(is.null(input$measure), start.measure(), input$measure)
+  })
   input.words <- reactive(input$words)
   input.wordform <- reactive(input$wordform)
   input.complexity <- reactive(input$complexity)
@@ -166,16 +170,27 @@ shinyServer(function(input, output, session) {
             text=element_text(family=font))
   }
   
-  words <- reactive({filter(instrument.tables,
-                            language == input.language(),
-                            form == input.form())$words.by.definition[[1]]})
-  wordform <- reactive({filter(instrument.tables,
-                               language == input.language(),
-                               form == input.form())$wordform.by.definition[[1]]})
-  complexity <- reactive({filter(instrument.tables,
-                                 language == input.language(),
-                                 form == input.form())$complexity.by.definition[[1]]})
+  observe({
+    words <- filter(instrument.tables,
+                    language == input.language(),
+                    form == input.form())$words.by.definition[[1]]
+    updateSelectizeInput(session, 'words', choices = words, selected = "")
+  })
   
+  observe({
+    wordforms <- filter(instrument.tables,
+                        language == input.language(),
+                        form == input.form())$wordform.by.definition[[1]]
+    updateSelectizeInput(session, 'wordform', choices = wordforms, selected = "")
+  })
+  
+  observe({
+    complexity <- filter(instrument.tables,
+                         language == input.language(),
+                         form == input.form())$complexity.by.definition[[1]]
+    updateSelectizeInput(session, 'complexity', choices = complexity, selected = "")
+  })
+    
   forms <- reactive({
     Filter(function(form) {form %in% unique(filter(instrument.tables,
                                                    language == input.language())$form)},
@@ -211,24 +226,25 @@ shinyServer(function(input, output, session) {
                    choices = measures(), selected = start.measure())
   })
   
-  output$words_selector <- renderUI({
-    selectizeInput("words", label = h4("Words"), 
-                   choices = words(),
-                   selected = start.words(names(instrument()$words.by.id[[1]])),
-                   multiple = TRUE)
-  })
-  
-  output$wordform_selector <- renderUI({
-    selectizeInput("wordform", label = h4("Word Forms"), 
-                   choices = wordform(),
-                   multiple = TRUE)
-  })
-  
-  output$complexity_selector <- renderUI({
-    selectizeInput("complexity", label = h4("Complexity Items"), 
-                   choices = complexity(),
-                   multiple = TRUE)
-  })
+#   output$words_selector <- renderUI({
+#     print(words())
+#     selectizeInput("words", label = h4("Words"), 
+#                    selected = start.words(names(instrument()$words.by.id[[1]])),
+#                    multiple = TRUE,
+#                    choices = words())  
+#   })
+
+#   output$wordform_selector <- renderUI({
+#     selectizeInput("wordform", label = h4("Word Forms"), 
+#                    choices = wordform(),
+#                    multiple = TRUE)
+#   })
+   
+#   output$complexity_selector <- renderUI({
+#     selectizeInput("complexity", label = h4("Complexity Items"), 
+#                    choices = complexity(),
+#                    multiple = TRUE)
+#   })
   
   output$downloadData <- downloadHandler(
     filename = function() { 'item_trajectory.csv' },
