@@ -55,8 +55,13 @@ class Command(NoArgsCommand):
                 if len(row_values) > 1:
                     itemID = row_values[col_names.index('itemID')]
                     choices = row_values[col_names.index('choices')].split('; ')
+                    max_length = max(len(c) for c in choices)
                     instrument_file.write('    %s_choices = %s\n' % (itemID, [(c,c) for c in choices]))
-                    instrument_file.write('    %s = models.CharField(max_length=20, choices=%s_choices, null=True)\n' % (itemID, itemID))
+                    instrument_file.write(
+                        '    %s = models.CharField(max_length=%s, choices=%s_choices, null=True)\n' % (itemID,
+                                                                                                       max_length,
+                                                                                                       itemID)
+                    )
 
             instrument_file.close()
 
