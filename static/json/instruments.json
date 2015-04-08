@@ -7,13 +7,6 @@
         "age_max": 16
     },
     {
-        "language": "Croatian",
-        "form": "WS",
-        "file": "raw_data/Croatian_WS/[Croatian_WS].csv",
-        "age_min": 16,
-        "age_max": 30
-    },
-    {
         "language": "Danish",
         "form": "WS",
         "file": "raw_data/Danish_WS/[Danish_WS].xlsx",
@@ -103,19 +96,5 @@
         "file": "raw_data/Swedish_WS/[Swedish_WS].csv",
         "age_min": 16,
         "age_max": 28
-    },
-    {
-        "language": "Turkish",
-        "form": "WG",
-        "file": "raw_data/Turkish_WG/[Turkish_WG].csv",
-        "age_min": 8,
-        "age_max": 16
-    },
-    {
-        "language": "Turkish",
-        "form": "WS",
-        "file": "raw_data/Turkish_WS/[Turkish_WS].csv",
-        "age_min": 16,
-        "age_max": 36
-    }    
+    }
 ]
