@@ -1363,23 +1363,23 @@ class English_WS(BaseTable):
     item_679 = models.CharField(max_length=20, choices=item_679_choices, null=True)
     item_680_choices = [(u'produces', u'produces')]
     item_680 = models.CharField(max_length=20, choices=item_680_choices, null=True)
-    item_681_choices = [(u'not yet, sometimes, often', u'not yet, sometimes, often')]
+    item_681_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
     item_681 = models.CharField(max_length=20, choices=item_681_choices, null=True)
-    item_682_choices = [(u'not yet, sometimes, often', u'not yet, sometimes, often')]
+    item_682_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
     item_682 = models.CharField(max_length=20, choices=item_682_choices, null=True)
-    item_683_choices = [(u'not yet, sometimes, often', u'not yet, sometimes, often')]
+    item_683_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
     item_683 = models.CharField(max_length=20, choices=item_683_choices, null=True)
-    item_684_choices = [(u'not yet, sometimes, often', u'not yet, sometimes, often')]
+    item_684_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
     item_684 = models.CharField(max_length=20, choices=item_684_choices, null=True)
-    item_685_choices = [(u'not yet, sometimes, often', u'not yet, sometimes, often')]
+    item_685_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
     item_685 = models.CharField(max_length=20, choices=item_685_choices, null=True)
-    item_686_choices = [(u'not yet, sometimes, often', u'not yet, sometimes, often')]
+    item_686_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
     item_686 = models.CharField(max_length=20, choices=item_686_choices, null=True)
-    item_687_choices = [(u'not yet, sometimes, often', u'not yet, sometimes, often')]
+    item_687_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
     item_687 = models.CharField(max_length=20, choices=item_687_choices, null=True)
-    item_688_choices = [(u'not yet, sometimes, often', u'not yet, sometimes, often')]
+    item_688_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
     item_688 = models.CharField(max_length=20, choices=item_688_choices, null=True)
-    item_689_choices = [(u'not yet, sometimes, often', u'not yet, sometimes, often')]
+    item_689_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
     item_689 = models.CharField(max_length=20, choices=item_689_choices, null=True)
     item_690_choices = [(u'produces', u'produces')]
     item_690 = models.CharField(max_length=20, choices=item_690_choices, null=True)
@@ -1521,79 +1521,79 @@ class English_WS(BaseTable):
     item_758 = models.CharField(max_length=20, choices=item_758_choices, null=True)
     item_759_choices = [(u'produces', u'produces')]
     item_759 = models.CharField(max_length=20, choices=item_759_choices, null=True)
-    item_760_choices = [(u'not yet, sometimes, often', u'not yet, sometimes, often')]
+    item_760_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
     item_760 = models.CharField(max_length=20, choices=item_760_choices, null=True)
-    item_761_choices = [(u'simple, complex', u'simple, complex')]
+    item_761_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_761 = models.CharField(max_length=20, choices=item_761_choices, null=True)
-    item_762_choices = [(u'simple, complex', u'simple, complex')]
+    item_762_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_762 = models.CharField(max_length=20, choices=item_762_choices, null=True)
-    item_763_choices = [(u'simple, complex', u'simple, complex')]
+    item_763_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_763 = models.CharField(max_length=20, choices=item_763_choices, null=True)
-    item_764_choices = [(u'simple, complex', u'simple, complex')]
+    item_764_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_764 = models.CharField(max_length=20, choices=item_764_choices, null=True)
-    item_765_choices = [(u'simple, complex', u'simple, complex')]
+    item_765_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_765 = models.CharField(max_length=20, choices=item_765_choices, null=True)
-    item_766_choices = [(u'simple, complex', u'simple, complex')]
+    item_766_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_766 = models.CharField(max_length=20, choices=item_766_choices, null=True)
-    item_767_choices = [(u'simple, complex', u'simple, complex')]
+    item_767_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_767 = models.CharField(max_length=20, choices=item_767_choices, null=True)
-    item_768_choices = [(u'simple, complex', u'simple, complex')]
+    item_768_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_768 = models.CharField(max_length=20, choices=item_768_choices, null=True)
-    item_769_choices = [(u'simple, complex', u'simple, complex')]
+    item_769_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_769 = models.CharField(max_length=20, choices=item_769_choices, null=True)
-    item_770_choices = [(u'simple, complex', u'simple, complex')]
+    item_770_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_770 = models.CharField(max_length=20, choices=item_770_choices, null=True)
-    item_771_choices = [(u'simple, complex', u'simple, complex')]
+    item_771_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_771 = models.CharField(max_length=20, choices=item_771_choices, null=True)
-    item_772_choices = [(u'simple, complex', u'simple, complex')]
+    item_772_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_772 = models.CharField(max_length=20, choices=item_772_choices, null=True)
-    item_773_choices = [(u'simple, complex', u'simple, complex')]
+    item_773_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_773 = models.CharField(max_length=20, choices=item_773_choices, null=True)
-    item_774_choices = [(u'simple, complex', u'simple, complex')]
+    item_774_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_774 = models.CharField(max_length=20, choices=item_774_choices, null=True)
-    item_775_choices = [(u'simple, complex', u'simple, complex')]
+    item_775_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_775 = models.CharField(max_length=20, choices=item_775_choices, null=True)
-    item_776_choices = [(u'simple, complex', u'simple, complex')]
+    item_776_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_776 = models.CharField(max_length=20, choices=item_776_choices, null=True)
-    item_777_choices = [(u'simple, complex', u'simple, complex')]
+    item_777_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_777 = models.CharField(max_length=20, choices=item_777_choices, null=True)
-    item_778_choices = [(u'simple, complex', u'simple, complex')]
+    item_778_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_778 = models.CharField(max_length=20, choices=item_778_choices, null=True)
-    item_779_choices = [(u'simple, complex', u'simple, complex')]
+    item_779_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_779 = models.CharField(max_length=20, choices=item_779_choices, null=True)
-    item_780_choices = [(u'simple, complex', u'simple, complex')]
+    item_780_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_780 = models.CharField(max_length=20, choices=item_780_choices, null=True)
-    item_781_choices = [(u'simple, complex', u'simple, complex')]
+    item_781_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_781 = models.CharField(max_length=20, choices=item_781_choices, null=True)
-    item_782_choices = [(u'simple, complex', u'simple, complex')]
+    item_782_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_782 = models.CharField(max_length=20, choices=item_782_choices, null=True)
-    item_783_choices = [(u'simple, complex', u'simple, complex')]
+    item_783_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_783 = models.CharField(max_length=20, choices=item_783_choices, null=True)
-    item_784_choices = [(u'simple, complex', u'simple, complex')]
+    item_784_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_784 = models.CharField(max_length=20, choices=item_784_choices, null=True)
-    item_785_choices = [(u'simple, complex', u'simple, complex')]
+    item_785_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_785 = models.CharField(max_length=20, choices=item_785_choices, null=True)
-    item_786_choices = [(u'simple, complex', u'simple, complex')]
+    item_786_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_786 = models.CharField(max_length=20, choices=item_786_choices, null=True)
-    item_787_choices = [(u'simple, complex', u'simple, complex')]
+    item_787_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_787 = models.CharField(max_length=20, choices=item_787_choices, null=True)
-    item_788_choices = [(u'simple, complex', u'simple, complex')]
+    item_788_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_788 = models.CharField(max_length=20, choices=item_788_choices, null=True)
-    item_789_choices = [(u'simple, complex', u'simple, complex')]
+    item_789_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_789 = models.CharField(max_length=20, choices=item_789_choices, null=True)
-    item_790_choices = [(u'simple, complex', u'simple, complex')]
+    item_790_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_790 = models.CharField(max_length=20, choices=item_790_choices, null=True)
-    item_791_choices = [(u'simple, complex', u'simple, complex')]
+    item_791_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_791 = models.CharField(max_length=20, choices=item_791_choices, null=True)
-    item_792_choices = [(u'simple, complex', u'simple, complex')]
+    item_792_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_792 = models.CharField(max_length=20, choices=item_792_choices, null=True)
-    item_793_choices = [(u'simple, complex', u'simple, complex')]
+    item_793_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_793 = models.CharField(max_length=20, choices=item_793_choices, null=True)
-    item_794_choices = [(u'simple, complex', u'simple, complex')]
+    item_794_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_794 = models.CharField(max_length=20, choices=item_794_choices, null=True)
-    item_795_choices = [(u'simple, complex', u'simple, complex')]
+    item_795_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_795 = models.CharField(max_length=20, choices=item_795_choices, null=True)
-    item_796_choices = [(u'simple, complex', u'simple, complex')]
+    item_796_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_796 = models.CharField(max_length=20, choices=item_796_choices, null=True)
-    item_797_choices = [(u'simple, complex', u'simple, complex')]
+    item_797_choices = [(u'simple', u'simple'), (u'complex', u'complex')]
     item_797 = models.CharField(max_length=20, choices=item_797_choices, null=True)
