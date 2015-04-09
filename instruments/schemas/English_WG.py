@@ -1,5 +1,5 @@
 from django.db import models
-from base import BaseTable
+from instruments.base import BaseTable
 
 
 class English_WG(BaseTable):
