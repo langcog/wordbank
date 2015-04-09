@@ -11,7 +11,7 @@ Sys.setlocale(locale="en_US.UTF-8")
 
 ## DEBUGGING
 input <- list(language = "Russian", form = "WS", measure = "produces",
-             words = c("item_1"), wordform = NULL, complexity = NULL)
+             words = NULL, wordform = NULL, complexity = NULL)
 
 
 shinyServer(function(input, output, session) {
@@ -140,23 +140,36 @@ shinyServer(function(input, output, session) {
   input.wordform <- reactive(input$wordform)
   input.complexity <- reactive(input$complexity)
   
-  instrument <- reactive({filter(instrument.tables,
-                                 language == input.language(),
-                                 form == input.form())})
+  instrument <- reactive({
+    filter(instrument.tables, language == input.language(), form == input.form())
+  })
   
-  data <- reactive({data.fun(instrument(), input.form(), input.measure(),
-                             input.words(), input.wordform(), input.complexity())})
+  data <- reactive({
+    data.fun(instrument(), input.form(), input.measure(),
+             input.words(), input.wordform(), input.complexity())
+  })
   
   ylabel <- reactive({
     if (input.measure() == "understands") {"Proportion of Children Understanding"}
     else if (input.measure() == "produces") {"Proportion of Children Producing"}
   })
   
-  age.min <- reactive({instrument()$age_min})
-  age.max <- reactive({instrument()$age_max})
+  age.min <- reactive(instrument()$age_min)
+  age.max <- reactive(instrument()$age_max)
   
   plot <- function() {
-    ggplot(data(), aes(x=age, y=score, colour=item, label=item)) +
+    data <- data()
+    if (nrow(data) == 0) {
+      ggplot(data + geom_point() + 
+        scale_x_continuous(name = "\nAge (months)",
+                           breaks = age.min():age.max(),
+                           limits = c(age.min(), age.max()+3)) +
+        scale_y_continuous(name = paste(ylabel(), "\n", sep=""),
+                           limits = c(-.01,1),
+                           breaks = seq(0,1,.25)) +
+        theme(text=element_text(family=font))    
+    } else {
+      ggplot(data, aes(x=age, y=score, colour=item, label=item)) +
       geom_smooth(aes(linetype=type), se=FALSE, method="loess") +
       geom_point(aes(shape=type)) +
       scale_x_continuous(name = "\nAge (months)",
@@ -169,6 +182,7 @@ shinyServer(function(input, output, session) {
       geom_dl(method = list(dl.trans(x=x +.3), "last.qp", cex=1, fontfamily=font)) +
       theme(legend.position="none",
             text=element_text(family=font))
+    }
   }
   
   observe({
