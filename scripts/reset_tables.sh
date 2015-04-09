@@ -1,3 +1,5 @@
+#!/bin/sh
+
 echo "Deleting old tables..."
 ./manage.py delete_all_tables
 
