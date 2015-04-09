@@ -18,7 +18,7 @@ class Command(NoArgsCommand):
             instrument_file = open('instruments/schemas/%s.py' % (instr), 'w')
 
             instrument_file.write('from django.db import models\n')
-            instrument_file.write('from base import BaseTable\n')
+            instrument_file.write('from instruments.base import BaseTable\n')
 
             ftype = instrument['file'].split('.')[-1]
 

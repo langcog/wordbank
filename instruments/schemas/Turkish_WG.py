@@ -2,7 +2,7 @@ from django.db import models
 from instruments.base import BaseTable
 
 
-class Russian_WG(BaseTable):
+class Turkish_WG(BaseTable):
     item_1_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
     item_1 = models.CharField(max_length=11, choices=item_1_choices, null=True)
     item_2_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
@@ -839,79 +839,3 @@ class Russian_WG(BaseTable):
     item_417 = models.CharField(max_length=11, choices=item_417_choices, null=True)
     item_418_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
     item_418 = models.CharField(max_length=11, choices=item_418_choices, null=True)
-    item_419_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_419 = models.CharField(max_length=11, choices=item_419_choices, null=True)
-    item_420_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_420 = models.CharField(max_length=11, choices=item_420_choices, null=True)
-    item_421_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_421 = models.CharField(max_length=11, choices=item_421_choices, null=True)
-    item_422_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_422 = models.CharField(max_length=11, choices=item_422_choices, null=True)
-    item_423_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_423 = models.CharField(max_length=11, choices=item_423_choices, null=True)
-    item_424_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_424 = models.CharField(max_length=11, choices=item_424_choices, null=True)
-    item_425_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_425 = models.CharField(max_length=11, choices=item_425_choices, null=True)
-    item_426_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_426 = models.CharField(max_length=11, choices=item_426_choices, null=True)
-    item_427_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_427 = models.CharField(max_length=11, choices=item_427_choices, null=True)
-    item_428_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_428 = models.CharField(max_length=11, choices=item_428_choices, null=True)
-    item_429_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_429 = models.CharField(max_length=11, choices=item_429_choices, null=True)
-    item_430_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_430 = models.CharField(max_length=11, choices=item_430_choices, null=True)
-    item_431_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_431 = models.CharField(max_length=11, choices=item_431_choices, null=True)
-    item_432_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_432 = models.CharField(max_length=11, choices=item_432_choices, null=True)
-    item_433_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_433 = models.CharField(max_length=11, choices=item_433_choices, null=True)
-    item_434_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_434 = models.CharField(max_length=11, choices=item_434_choices, null=True)
-    item_435_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_435 = models.CharField(max_length=11, choices=item_435_choices, null=True)
-    item_436_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_436 = models.CharField(max_length=11, choices=item_436_choices, null=True)
-    item_437_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_437 = models.CharField(max_length=11, choices=item_437_choices, null=True)
-    item_438_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_438 = models.CharField(max_length=11, choices=item_438_choices, null=True)
-    item_439_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_439 = models.CharField(max_length=11, choices=item_439_choices, null=True)
-    item_440_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_440 = models.CharField(max_length=11, choices=item_440_choices, null=True)
-    item_441_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_441 = models.CharField(max_length=11, choices=item_441_choices, null=True)
-    item_442_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_442 = models.CharField(max_length=11, choices=item_442_choices, null=True)
-    item_443_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_443 = models.CharField(max_length=11, choices=item_443_choices, null=True)
-    item_444_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_444 = models.CharField(max_length=11, choices=item_444_choices, null=True)
-    item_445_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_445 = models.CharField(max_length=11, choices=item_445_choices, null=True)
-    item_446_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_446 = models.CharField(max_length=11, choices=item_446_choices, null=True)
-    item_447_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_447 = models.CharField(max_length=11, choices=item_447_choices, null=True)
-    item_448_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_448 = models.CharField(max_length=11, choices=item_448_choices, null=True)
-    item_449_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_449 = models.CharField(max_length=11, choices=item_449_choices, null=True)
-    item_450_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_450 = models.CharField(max_length=11, choices=item_450_choices, null=True)
-    item_451_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_451 = models.CharField(max_length=11, choices=item_451_choices, null=True)
-    item_452_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_452 = models.CharField(max_length=11, choices=item_452_choices, null=True)
-    item_453_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_453 = models.CharField(max_length=11, choices=item_453_choices, null=True)
-    item_454_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_454 = models.CharField(max_length=11, choices=item_454_choices, null=True)
-    item_455_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_455 = models.CharField(max_length=11, choices=item_455_choices, null=True)
-    item_456_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_456 = models.CharField(max_length=11, choices=item_456_choices, null=True)

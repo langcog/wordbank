@@ -1,4 +1,5 @@
 from schemas.Croatian_WG import *
+from schemas.Croatian_WS import *
 from schemas.Danish_WS import *
 from schemas.English_WG import *
 from schemas.English_WS import *
@@ -12,3 +13,5 @@ from schemas.Spanish_WG import *
 from schemas.Spanish_WS import *
 from schemas.Swedish_WG import *
 from schemas.Swedish_WS import *
+from schemas.Turkish_WG import *
+from schemas.Turkish_WS import *
