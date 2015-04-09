@@ -23,7 +23,7 @@ shinyServer(function(input, output, session) {
                                     common.tables$administration) %>%
     select(data_id, language, form, age, sex, momed.level, comprehension, production) %>%
     rename(momed = momed.level) %>%
-    mutate(sex = factor(sex, levels=c("F", "M", "O"), labels=c("Female", "Male", "Other")),
+    mutate(sex = factor(sex, levels=c("F", "M"), labels=c("Female", "Male")),
            form = factor(form, levels=c("WG", "WS"), labels=c("Words & Gestures", "Words & Sentences")))
   
   
