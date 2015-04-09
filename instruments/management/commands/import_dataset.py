@@ -6,7 +6,10 @@ from instruments import import_dataset_helper
 def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_language, instrument_form, splitcol):
 
         instrument_string = '_'.join([instrument_language, instrument_form])
-        instrument_model = getattr(instruments.models, instrument_string)
+        try:
+            instrument_model = getattr(instruments.models, instrument_string)
+        except AttributeError:
+            raise IOError("instrument %s has no model defined" % instrument_string)
 
         import_helper = import_dataset_helper.ImportHelper(dataset_file, splitcol)
         import_helper.import_data()
