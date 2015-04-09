@@ -5,7 +5,7 @@ var all = data.groupAll();
 
 var ageChildChart = dc.barChart('#ageChildChart');
 
-var languagesChart = dc.pieChart('#languagesChart');
+var languagesChart = dc.rowChart('#languagesChart');
 var instrumentsChart = dc.pieChart('#instrumentsChart');
 
 var sexChart = dc.pieChart('#sexChart');
@@ -65,9 +65,9 @@ ageChildChart.width(700)
              });
 
 momedChart.width(400)
-        .height(300)
+        .height(250)
         .dimension(momeds)
-        .margins({top: 20, right: 40, bottom: 45, left: 40})
+//        .margins({top: 20, right: 40, bottom: 45, left: 40})
         .group(momedsGroup)
         .label(function (d) {
             return d.key + ": " + d.value;
@@ -78,17 +78,31 @@ momedChart.width(400)
         .xAxis().ticks(5)
 //        .xAxisLabel('')
 
-languagesChart.width(pieChartWidth)
-        .height(pieChartWidth)
-        .radius(pieChartRadius)
+languagesChart.width(400)
+        .height(300)
         .dimension(languages)
+        .margins({top: 20, right: 40, bottom: 45, left: 40})
         .group(languagesGroup)
         .label(function (d) {
-//              return d.key;
             return d.key + ": " + d.value;
         })
         .renderLabel(true)
         .transitionDuration(500)
+//        .xAxis().tickFormat(function(v) { return ""; })
+        .xAxis().ticks(5)
+//        .xAxisLabel('')
+
+//languagesChart.width(pieChartWidth)
+//        .height(pieChartWidth)
+//        .radius(pieChartRadius)
+//        .dimension(languages)
+//        .group(languagesGroup)
+//        .label(function (d) {
+//              return d.key;
+//            return d.key + ": " + d.value;
+//        })
+//        .renderLabel(true)
+//        .transitionDuration(500)
 
 instrumentsChart.width(pieChartWidth)
         .height(pieChartWidth)
