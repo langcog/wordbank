@@ -1,7 +1,7 @@
 ---
 title: "Accessing the Wordbank Database"
-author: "Dan Yurovsky and Mika Braginsky"
-date: "2015-04-03"
+author: "Mika Braginsky and Dan Yurovsky"
+date: "2015-04-09"
 output:
   html_document:
     highlight: tango
@@ -25,6 +25,7 @@ library(tidyr)
 library(bootstrap)
 library(ggplot2)
 library(RCurl)
+library(magrittr)
 ```
 
 Get a script that provides interface functions for pulling data out of Wordbank.
@@ -36,9 +37,9 @@ eval(parse(text = script))
 
 Connect to the Wordbank database.
 ```{r, cache=FALSE}
-wordbank <- src_mysql(dbname='wordbank')
-#wordbank <- src_mysql(dbname='wordbank', host="54.200.225.86",
-#                      user="wordbank", password="wordbank")
+#wordbank <- src_mysql(dbname='wordbank')
+wordbank <- src_mysql(dbname='wordbank', host="54.149.39.46", #54.200.225.86
+                      user="wordbank", password="wordbank")
 ```
 
 Get all the common tables.
@@ -56,8 +57,7 @@ Load in administration data.
 admins <- get.administration.data(common.tables$momed,
                                   common.tables$child,
                                   common.tables$instrumentsmap,
-                                  common.tables$administration) %>%
-  filter(!is.na(sex), sex != "")
+                                  common.tables$administration)
 ```
 
 Number of administrations by sex for each instrument:
@@ -65,11 +65,22 @@ Number of administrations by sex for each instrument:
 admins.summary <- admins %>%
   group_by(language, form, sex) %>%
   summarise(n = n()) %>%
-  spread(sex, n)
+  filter(!is.na(sex), sex != "") %>%
+  spread(sex, n) %>%
+  rename(female = F,
+         male = M) %>%
+  mutate(total = female + male)
 
-kable(admins.summary,
-      col.names = c("language", "form", "female", "male"),
-      align = c("l", "c", "r", "r"))
+admins.total <- data.frame(language = "Total",
+                           form = "",
+                           female = sum(admins.summary$female),
+                           male = sum(admins.summary$male),
+                           total = sum(admins.summary$total))
+admins.summary.total <- bind_rows(admins.summary, admins.total)
+
+kable(admins.summary.total,
+      #      col.names = c("language", "form", "female", "male", "total"),
+      align = c("l", "c", "r", "r", "r"))
 ```
 
 Load in item data.
@@ -124,18 +135,26 @@ num.words <- items %>%
   group_by(language) %>%
   summarise(n = n())
 
-vocab.data <- admins %>%
+vocab.admins <- admins %>%
   select(data_id, language, form, age, sex, production) %>%
-  filter(form == "WS", age >= 16, age <= 30) %>%
+  filter(form == "WS", age >= 16, age <= 30, !is.na(sex), sex != "")
+
+vocab.data <- vocab.admins %>%
   group_by(language, sex, age) %>%
   left_join(num.words) %>%
   mutate(production = as.numeric(production)/n) %>%
   summarise_each(funs(na.median, ci.median.low, ci.median.high), production)
+
+vocab.sample.sizes <- vocab.admins %>%
+  group_by(language) %>%
+  summarise(n = length(unique(data_id)))
+vocab.data %<>% left_join(vocab.sample.sizes)
+vocab.data %<>% mutate(label = sprintf("%s (n = %s)", language, n))
 ```
 
 What these data look like for a given age:
 ```{r, echo=FALSE}
-kable(filter(vocab.data, age==24),
+kable(filter(select(vocab.data, -label, -n), age==24),
       col.names = c("language", "sex", "age", "median", "confidence interval (lower)",
                     "confidence interval (upper)"),
       align = c("l", "c", "c", "c", "c", "c"),
@@ -143,23 +162,23 @@ kable(filter(vocab.data, age==24),
 ```
 
 Plot median productive vocabulary as a function of age.
-```{r, fig.height=8, fig.width=10}
+```{r, fig.height=12, fig.width=10}
 ggplot(vocab.data,
-       aes(x=age, y=na.median,colour=sex,label=sex))+
-  facet_wrap(~ language, ncol = 3) +
+       aes(x=age, y=na.median, colour=sex, label=sex)) +
+  facet_wrap(~ label, ncol = 3) +
   geom_pointrange(aes(ymin = na.median-ci.median.low,
                       ymax = na.median+ci.median.high),
                   size = .8,
                   show_guide = FALSE) +
   geom_line(size=1) +
-  scale_x_continuous(breaks=seq(16,30,2),limits=c(16,31),
-                     name = "\nAge (months)")+
+  scale_x_continuous(breaks = seq(16,30,2), limits = c(16,31),
+                     name = "\nAge (months)") +
   scale_y_continuous(name = "Median Productive Vocabulary (proportion of total words)\n",
                      limits=c(0,1)) +
   theme_bw(base_size=14) +
   theme(legend.position="none",
         text=element_text(family=font)) +
-  geom_dl(method = list(dl.trans(x=x +.2),"last.qp",cex=1, fontfamily=font)) +
+  geom_dl(method = list(dl.trans(x=x +.2), "last.qp", cex=1, fontfamily=font)) +
   scale_color_manual(values = c("#2c7bb6", "#d7191c"))
 ```
 
@@ -167,23 +186,24 @@ ggplot(vocab.data,
 
 Set up color terms of each language.
 ```{r}
-colors.danish <- c("rød", "gul", "grøn", "blå", "sort", "hvid") # "lille" "brun"
-colors.english <- c("red",  "yellow", "green", "blue", "black", "white") # "orange" "brown"
-colors.german <- c("rot", "gelb", "grün", "blau", "schwarz", "weiß") # braun orange
-colors.italian <- c("rosso", "giallo", "verde", "blu", "nero", "bianco") # arancione marrone
-colors.norwegian <- c ("rød", "gul", "grønn" ,"blå", "svart", "hvit") # "brun" "oransje"
-colors.russian <- c("красный", "желтый", "зеленый", "синий", "черный", "белый") # "коричневый" "оранжевый"
-colors.spanish <- c("rojo", "amarillo", "verde", "azul", "negro", "blanco") # "rosa" "morado"
-colors.swedish <- c("röd", "gul", "grön", "blå", "svart", "vit") # orange brun
+colors.key <- c("red", "orange", "yellow", "green", "blue", "black", "white", "brown")
 
-colors <- list("Danish" = colors.danish,
-               "English" = colors.english,
-               "German" = colors.german,
-               "Italian" = colors.italian,
-               "Norwegian" = colors.norwegian,
-               "Russian" = colors.russian,
-               "Spanish" = colors.spanish,
-               "Swedish" = colors.swedish)
+colors.croatian <- c("crvena", "narančasta", "žuta", "zelena", "plava", "crn", "bijela", "smeđe")
+colors.danish <- c("rød", "orange", "gul", "grøn", "blå", "sort", "hvid", "brun")
+colors.english <- c("red", "orange (description)", "yellow", "green", "blue", "black", "white", "brown")
+colors.german <- c("rot", "orange", "gelb", "grün", "blau", "schwarz", "weiß", "braun")
+colors.italian <- c("rosso", "arancione", "giallo", "verde", "blu", "nero", "bianco", "marrone")
+colors.norwegian <- c ("rød", "oransje", "gul", "grønn" ,"blå", "svart", "hvit", "brun")
+colors.russian <- c("красный", "оранжевый", "желтый", "зеленый", "синий", "черный", "белый", "коричневый")
+colors.spanish <- c("rojo", "", "amarillo", "verde", "azul", "negro", "blanco", "") # rosa morado
+colors.swedish <- c("röd", "orange", "gul", "grön", "blå", "svart", "vit", "brun")
+colors.turkish <- c("Kırmızı", "Turuncu", "Sarı", "Yeşil", "", "Siyah", "Beyaz", "Kahverengi") # Mor
+
+colors <- list("Croatian" = colors.croatian, "Danish" = colors.danish,
+               "English" = colors.english, "German" = colors.german,
+               "Italian" = colors.italian, "Norwegian" = colors.norwegian,
+               "Russian" = colors.russian, "Spanish" = colors.spanish,
+               "Swedish" = colors.swedish, "Turkish" = colors.turkish)
 ```
 
 Function for getting color data for a given language.
@@ -191,28 +211,28 @@ Function for getting color data for a given language.
 get.language.data <- function(lang) {
   
   lang.table <- filter(instrument.tables, language==lang, form=="WS")$table[[1]]
-
+  
   lang.colors <- colors[[lang]]
   lang.items <- select(filter(items, language==lang, form=="WS"),
                        definition, item.id)
-  lang.color.items <- data.frame(color = colors.english, definition = lang.colors) %>%
+  lang.color.items <- data.frame(color = colors.key, definition = lang.colors,
+                                 stringsAsFactors = FALSE) %>%
+    filter(definition != "") %>%
     left_join(lang.items)
   
   lang.data <- get.instrument.data(lang.table, lang.color.items$item.id) %>%
     mutate(language = lang,
            item.id = paste("item_", item.id, sep="")) %>%
-  left_join(lang.color.items)
+    left_join(lang.color.items)
   
   return(lang.data)
   
-}
+  }
 ```
 
 Load color data for each language and put it all together.
 ```{r}
-#languages <- unique(instrument.tables$language)
-languages <- c("English", "Spanish", "Norwegian", "Danish",
-               "Russian", "German", "Italian", "Swedish")
+languages <- unique(instrument.tables$language)
 color.data <- bind_rows(sapply(languages, get.language.data, simplify=FALSE))
 
 color.byage.data <- color.data %>%
@@ -220,11 +240,17 @@ color.byage.data <- color.data %>%
   group_by(language, color, age) %>%
   mutate(produces = value == "produces") %>%
   summarise_each(funs(na.mean, ci.mean.high, ci.mean.low), produces)
+
+sample_sizes <- color.data %>%
+  group_by(language) %>%
+  summarise(n = length(unique(data_id)))
+color.byage.data %<>% left_join(sample_sizes)
+color.byage.data %<>% mutate(label = sprintf("%s (n = %s)", language, n))
 ```
 
 What these data look like for a given age and language:
 ```{r, echo=FALSE}
-kable(filter(color.byage.data, language=="English", age==24),
+kable(filter(select(color.byage.data, -label, -n), language=="English", age==24),
       col.names = c("language", "color", "age", "median", "confidence interval (lower)",
                     "confidence interval (upper)"),
       align = c("l", "l", "c", "c", "c", "c"),
@@ -232,21 +258,23 @@ kable(filter(color.byage.data, language=="English", age==24),
 ```
 
 Plot the proportion of kids that produce each color as a function of their age.
-```{r, fig.height=8, fig.width=10}
+```{r, fig.height=12, fig.width=10}
 ggplot(color.byage.data, aes(x=age, y=na.mean, color=color, label=color)) +
-  facet_wrap(~ language, ncol = 3) +
+  facet_wrap(~ label, ncol = 3) +
   geom_pointrange(aes(ymin = na.mean-ci.mean.low,
                       ymax = na.mean+ci.mean.high),
-                  size = .8,
+                  size = .5,
                   show_guide = FALSE) +
-  geom_line(size=1) +
+  geom_line(size=.8) +
   theme_bw(base_size=14) +
   theme(legend.position="none",
         text=element_text(family=font)) +
-#  geom_dl(method = list(dl.trans(x=x +.2), "last.qp", cex=.8, fontfamily=font)) +
-  scale_color_manual(values=c("black", "#2c7bb6", "#1a9641", "#d7191c", "gray87", "gold1")) +
-  scale_x_continuous(breaks=seq(16,30,2), limits=c(16,30),
+  geom_dl(method = list(dl.trans(x=x +.2), "last.qp", cex=.7, fontfamily=font)) +
+                                # black blue brown green orange red white yellow
+  scale_color_manual(values = c("black", "#2c7bb6", "brown", "#1a9641", "orange",
+                                "#d7191c", "gray87", "gold1")) +
+  scale_x_continuous(breaks = seq(16,30,2), limits = c(16,33),
                      name = "\nAge (months)") +
   scale_y_continuous(name = "Proportion of Children Producing\n",
-                     limits=c(0,1))
+                     limits = c(0,1))
 ```
