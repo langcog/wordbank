@@ -6,7 +6,7 @@ class Command(NoArgsCommand):
 
     def handle(self, *args, **options):
 
-        ed_levels = {(1, 'Nothing'),
+        ed_levels = {(1, 'None'),
                      (2, 'Primary'),
                      (3, 'Some Secondary'),
                      (4, 'Secondary'),
