@@ -22,7 +22,8 @@ class WordMapping(models.Model):
     category = models.CharField(max_length=200)
     word_info = models.ForeignKey(WordInfo, null=True, blank=True)
     definition = models.CharField(max_length=200, null=True, blank=True)
-    lexical_category = models.CharField(max_length=30, null=True, blank=True)
+    gloss = models.CharField(max_length=50, null=True, blank=True)
+    #lexical_category = models.CharField(max_length=30, null=True, blank=True)
     complexity_category = models.CharField(max_length=30, null=True, blank=True)
 
 
