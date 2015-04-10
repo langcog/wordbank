@@ -12,17 +12,22 @@ class InstrumentsMap(models.Model):
     form = models.CharField(max_length=2, choices=forms)
     age_min = models.IntegerField()
     age_max = models.IntegerField()
+    has_grammar = models.BooleanField(default=False)
 
+
+class Category(models.Model):
+    name = models.CharField(max_length=50)
+    lexical_category = models.CharField(max_length=20)
 
 class WordMapping(models.Model):
     instrument = models.ForeignKey(InstrumentsMap)
     item = models.CharField(max_length=50)
     item_id = models.CharField(max_length=20)
     type = models.CharField(max_length=30)
-    category = models.CharField(max_length=200)
+    category = models.ForeignKey(Category, null=True)
     word_info = models.ForeignKey(WordInfo, null=True, blank=True)
     definition = models.CharField(max_length=200, null=True, blank=True)
-    gloss = models.CharField(max_length=50, null=True, blank=True)
+    gloss = models.CharField(max_length=80, null=True, blank=True)
     #lexical_category = models.CharField(max_length=30, null=True, blank=True)
     complexity_category = models.CharField(max_length=30, null=True, blank=True)
 

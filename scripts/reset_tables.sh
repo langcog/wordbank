@@ -6,6 +6,9 @@ echo "Deleting old tables..."
 echo "Populating Instruments..."
 ./manage.py populate_instrumentsmap
 
+echo "Populating Category..."
+./manage.py populate_category
+
 echo "Populating Word Mapping..."
 ./manage.py populate_word_mapping
 

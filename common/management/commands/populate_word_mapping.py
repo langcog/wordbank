@@ -14,7 +14,7 @@ class Command(NoArgsCommand):
         for instrument in instruments:
 
             instrument_language, instrument_form = instrument['language'], instrument['form']
-            instruments_map = InstrumentsMap.objects.get(form=instrument_form, language=instrument_language)
+            instrument_key = InstrumentsMap.objects.get(form=instrument_form, language=instrument_language)
             print "    Populating items for", instrument_language, instrument_form
 
             ftype = instrument['file'].split('.')[-1]
@@ -42,6 +42,9 @@ class Command(NoArgsCommand):
                     item = row_values[col_names.index('item')]
                     item_type = row_values[col_names.index('type')]
                     item_category = row_values[col_names.index('category')]
+                    category_key = None
+                    if item_type == 'word':
+                        category_key = Category.objects.get(name = item_category)
 
                     #lang_lemma = row_values[col_names.index('lang_lemma')]
                     #uni_lemma = row_values[col_names.index('uni_lemma')]
@@ -54,13 +57,14 @@ class Command(NoArgsCommand):
                     #    WordInfo.objects.create(uni_lemma=uni_lemma, lang_lemma=lang_lemma)
                     #word_info = WordInfo.objects.get(uni_lemma=uni_lemma, lang_lemma=lang_lemma)
 
-                    WordMapping.objects.create(item=item,
-                                               item_id=itemID,
-                                               instrument=instruments_map,
-                                               type=item_type,
-                                               category=item_category,
-                                               #word_info=word_info,
-                                               definition=definition,
-                                               gloss=gloss,
-#                                               lexical_category=lexical_category,
-                                               complexity_category=complexity_category)
+                    if not WordMapping.objects.filter(item_id=itemID, instrument=instrument_key).exists():
+                        WordMapping.objects.create(item=item,
+                                                   item_id=itemID,
+                                                   instrument=instrument_key,
+                                                   type=item_type,
+                                                   category=category_key,
+                                                   #word_info=word_info,
+                                                   definition=definition,
+                                                   gloss=gloss,
+    #                                               lexical_category=lexical_category,
+                                                   complexity_category=complexity_category)
