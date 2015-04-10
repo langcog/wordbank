@@ -1,33 +1,33 @@
 definition,gloss,category,item,type,choices,lang_lemma,uni_lemma,lexical_category,complexity_category,itemID
-Брось мячик. Кидай (маме/мне) мячик.,NULL,NA,NA,word,understands; produces,NA,NA,,,item_1
-Возьми. На.,NULL,NA,NA,word,understands; produces,NA,NA,,,item_2
-Дай (шарик/куклу и т.д.) маме.,NULL,NA,NA,word,understands; produces,NA,NA,,,item_3
-Вставай.,NULL,NA,NA,word,understands; produces,NA,NA,,,item_4
-Выплюнь.,NULL,NA,NA,word,understands; produces,NA,NA,,,item_5
-Еще? (Хочешь еще? Дать тебе еще?),NULL,NA,NA,word,understands; produces,NA,NA,,,item_6
-Иди ко мне (к маме/сюда и т.д.).,NULL,NA,NA,word,understands; produces,NA,NA,,,item_7
-Ай-яй-яй (упрек).,NULL,NA,NA,word,understands; produces,NA,NA,,,item_8
-Нельзя.,NULL,NA,NA,word,understands; produces,NA,NA,,,item_9
-Позови (маму/папу и т.д.).,NULL,NA,NA,word,understands; produces,NA,NA,,,item_10
-Обними (маму/папу/куклу и т.д.).,NULL,NA,NA,word,understands; produces,NA,NA,,,item_11
-Открой ротик.,NULL,NA,NA,word,understands; produces,NA,NA,,,item_12
-Пожалей (маму/папу/куклу и т.д.).,NULL,NA,NA,word,understands; produces,NA,NA,,,item_13
-Помаши (маме/папе/дяде и т.д.) ручкой.,NULL,NA,NA,word,understands; produces,NA,NA,,,item_14
-Пока-пока. До свидания.,NULL,NA,NA,word,understands; produces,NA,NA,,,item_15
-Посмотри. Смотри.,NULL,NA,NA,word,understands; produces,NA,NA,,,item_16
-Поцелуй (маму/папу/куклу и т.д.).,NULL,NA,NA,word,understands; produces,NA,NA,,,item_17
-Садись. Сядь.,NULL,NA,NA,word,understands; produces,NA,NA,,,item_18
-Спать пора. Пора баиньки. В кроватку.,NULL,NA,NA,word,understands; produces,NA,NA,,,item_19
-Тише. (Тс-с-с. Тихо-тихо.),NULL,NA,NA,word,understands; produces,NA,NA,,,item_20
-Ты устал?,NULL,NA,NA,word,understands; produces,NA,NA,,,item_21
-Хлопай в ладошки. (Ладушки. Хлоп-хлоп).,NULL,NA,NA,word,understands; produces,NA,NA,,,item_22
-Хорошая девочка/мальчик. Пай мальчик/девочка.,NULL,NA,NA,word,understands; produces,NA,NA,,,item_23
-Хочешь гулять? Гулять пойдем?,NULL,NA,NA,word,understands; produces,NA,NA,,,item_24
-Хочешь кушать (есть/ам-ам)?,NULL,NA,NA,word,understands; produces,NA,NA,,,item_25
-Ах ты/поросенок (свинка/хрюша)!,NULL,NA,NA,word,understands; produces,NA,NA,,,item_26
-NULL,NULL,NA,NULL,word,understands; produces,NULL,NULL,,,item_27
-NULL,NULL,NA,NULL,word,understands; produces,NULL,NULL,,,item_28
-а-а-а,,NA,NA,word,understands; produces,NA,NA,,,item_29
+Брось мячик. Кидай (маме/мне) мячик.,,,,phrase,understands; produces,NA,NA,,,item_1
+Возьми. На.,,,,phrase,understands; produces,NA,NA,,,item_2
+Дай (шарик/куклу и т.д.) маме.,,,,phrase,understands; produces,NA,NA,,,item_3
+Вставай.,,,,phrase,understands; produces,NA,NA,,,item_4
+Выплюнь.,,,,phrase,understands; produces,NA,NA,,,item_5
+Еще? (Хочешь еще? Дать тебе еще?),,,,phrase,understands; produces,NA,NA,,,item_6
+Иди ко мне (к маме/сюда и т.д.).,,,,phrase,understands; produces,NA,NA,,,item_7
+Ай-яй-яй (упрек).,,,,phrase,understands; produces,NA,NA,,,item_8
+Нельзя.,,,,phrase,understands; produces,NA,NA,,,item_9
+Позови (маму/папу и т.д.).,,,,phrase,understands; produces,NA,NA,,,item_10
+Обними (маму/папу/куклу и т.д.).,,,,phrase,understands; produces,NA,NA,,,item_11
+Открой ротик.,,,,phrase,understands; produces,NA,NA,,,item_12
+Пожалей (маму/папу/куклу и т.д.).,,,,phrase,understands; produces,NA,NA,,,item_13
+Помаши (маме/папе/дяде и т.д.) ручкой.,,,,phrase,understands; produces,NA,NA,,,item_14
+Пока-пока. До свидания.,,,,phrase,understands; produces,NA,NA,,,item_15
+Посмотри. Смотри.,,,,phrase,understands; produces,NA,NA,,,item_16
+Поцелуй (маму/папу/куклу и т.д.).,,,,phrase,understands; produces,NA,NA,,,item_17
+Садись. Сядь.,,,,phrase,understands; produces,NA,NA,,,item_18
+Спать пора. Пора баиньки. В кроватку.,,,,phrase,understands; produces,NA,NA,,,item_19
+Тише. (Тс-с-с. Тихо-тихо.),,,,phrase,understands; produces,NA,NA,,,item_20
+Ты устал?,,,,phrase,understands; produces,NA,NA,,,item_21
+Хлопай в ладошки. (Ладушки. Хлоп-хлоп).,,,,phrase,understands; produces,NA,NA,,,item_22
+Хорошая девочка/мальчик. Пай мальчик/девочка.,,,,phrase,understands; produces,NA,NA,,,item_23
+Хочешь гулять? Гулять пойдем?,,,,phrase,understands; produces,NA,NA,,,item_24
+Хочешь кушать (есть/ам-ам)?,,,,phrase,understands; produces,NA,NA,,,item_25
+Ах ты/поросенок (свинка/хрюша)!,,,,phrase,understands; produces,NA,NA,,,item_26
+"Ваш ребенок любит “попугайничать”, т.е. повторять за взрослым слова или часть фразы, которые только что",,,,starting_to_talk,not yet; sometimes; often,NA,NA,,,item_27
+Вашему ребенку нравится показывать и называть окружающие предметы. Он как будто гордится знанием названий и хочет демонстрировать его.,,,,starting_to_talk,not yet; sometimes; often,NA,NA,,,item_28
+услышал.,Weeeee,sounds,NA,word,understands; produces,NA,NA,,,item_29
 ав,Woof-woof,sounds,NA,word,understands; produces,NA,NA,,,item_30
 алё,Ring-ring,sounds,NA,word,understands; produces,NA,NA,,,item_31
 ам-ам/ням-ням,Yum-yum,sounds,NA,word,understands; produces,NA,NA,,,item_32
@@ -60,7 +60,7 @@ NULL,NULL,NA,NULL,word,understands; produces,NULL,NULL,,,item_28
 тук-тук,Rat-a-tat,sounds,NA,word,understands; produces,NA,NA,,,item_59
 ту-ту/чух-чух,Choo-choo,sounds,NA,word,understands; produces,NA,NA,,,item_60
 уу,Awooooo,sounds,NA,word,understands; produces,NA,NA,,,item_61
-фу,NULL,sounds,NA,word,understands; produces,NA,NA,,,item_62
+фу,Eww,sounds,NA,word,understands; produces,NA,NA,,,item_62
 хрр/хрю,Oink-oink,sounds,NA,word,understands; produces,NA,NA,,,item_63
 чик,Click-click,sounds,NA,word,understands; produces,NA,NA,,,item_64
 шш,Sss,sounds,NA,word,understands; produces,NA,NA,,,item_65
@@ -75,7 +75,7 @@ NULL,NULL,NA,NULL,word,understands; produces,NULL,NULL,,,item_28
 жук,bug,animals,NA,word,understands; produces,NA,NA,,,item_74
 заяц,hare,animals,NA,word,understands; produces,NA,NA,,,item_75
 змея,snake,animals,NA,word,understands; produces,NA,NA,,,item_76
-кенгуру,NULL,animals,NA,word,understands; produces,NA,NA,,,item_77
+кенгуру,kangaroo,animals,NA,word,understands; produces,NA,NA,,,item_77
 коза,goat,animals,NA,word,understands; produces,NA,NA,,,item_78
 корова,cow,animals,NA,word,understands; produces,NA,NA,,,item_79
 кошка,cat,animals,NA,word,understands; produces,NA,NA,,,item_80
@@ -453,5 +453,5 @@ NULL,NULL,household,NULL,word,understands; produces,NULL,NULL,,,item_246
 всё (в знач. Нет кончилось),gone,quantifiers,NA,word,understands; produces,NA,NA,,,item_452
 еще,more,quantifiers,NA,word,understands; produces,NA,NA,,,item_453
 другой,other/another,quantifiers,NA,word,understands; produces,NA,NA,,,item_454
-нет,no/gone,quantifiers,NA,word,understands; produces,NA,NA,,,item_455
-хватит,enough,quantifiers,NA,word,understands; produces,NA,NA,,,item_456
+нет,no/gone,quantifiers,NA,word,understands; produces,NA,NA,,,Item_455
+хватит,enough,quantifiers,NA,word,understands; produces,NA,NA,,,Item_456

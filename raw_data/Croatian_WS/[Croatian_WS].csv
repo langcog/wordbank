@@ -292,37 +292,37 @@ tuta,potty,furniture_rooms,tuta,word,produces,tuta,tuta,,,item_290
 umivaonik,sink,furniture_rooms,umivaonik,word,produces,umivaonik,umivaonik,,,item_291
 vrata,door,furniture_rooms,vrata,word,produces,vrata,vrata,,,item_292
 zahod,toilet,furniture_rooms,zahod,word,produces,zahod,zahod,,,item_293
-bazen,pool,NA,bazen,word,produces,bazen,bazen,,,item_294
-cvijeće,flowers,NA,cvijece,word,produces,cvijece,cvijece,,,item_295
-drvo,tree,NA,drvo,word,produces,drvo,drvo,,,item_296
-dvorište,backyard,NA,dvoriste,word,produces,dvoriste,dvoriste,,,item_297
-kamen,rock,NA,kamen,word,produces,kamen,kamen,,,item_298
-kiša,rain,NA,kisa,word,produces,kisa,kisa,,,item_299
-krov,roof,NA,krov,word,produces,krov,krov,,,item_300
-lopata,shovel,NA,lopata,word,produces,lopata,lopata,,,item_301
-ljestve,ladder,NA,ljestve,word,produces,ljestve,ljestve,,,item_302
-ljuljačka,swing,NA,ljuljacka,word,produces,ljuljacka,ljuljacka,,,item_303
-mjesec,moon,NA,mjesec,word,produces,mjesec,mjesec,,,item_304
-more,sea(side),NA,more,word,produces,more,more,,,item_305
-nebo,sky,NA,nebo,word,produces,nebo,nebo,,,item_306
-oblak,cloud,NA,oblak,word,produces,oblak,oblak,,,item_307
-ograda,fence,NA,ograda,word,produces,ograda,ograda,,,item_308
-park,park,NA,park,word,produces,park,park,,,item_309
-pješčanik,sandbox,NA,pjescanik,word,produces,pjescanik,pjescanik,,,item_310
-pločnik,sidewalk,NA,plocnik,word,produces,plocnik,plocnik,,,item_311
-snijeg,snow,NA,snijeg,word,produces,snijeg,snijeg,,,item_312
-snjegović,snowman,NA,snjegovic,word,produces,snjegovic,snjegovic,,,item_313
-stijena,stone,NA,stijena,word,produces,stijena,stijena,,,item_314
-sunce,sun,NA,sunce,word,produces,sunce,sunce,,,item_315
-štap,stick,NA,stap,word,produces,stap,stap,,,item_316
-tobogan,toboggan,NA,tobogan,word,produces,tobogan,tobogan,,,item_317
-trava,grass,NA,trava,word,produces,trava,trava,,,item_318
-ulica,street,NA,ulica,word,produces,ulica,ulica,,,item_319
-vjetar,wind,NA,vjetar,word,produces,vjetar,vjetar,,,item_320
-voda,water,NA,voda,word,produces,voda,voda,,,item_321
-vrt,garden,NA,vrt,word,produces,vrt,vrt,,,item_322
-zastava,flag,NA,zastava,word,produces,zastava,zastava,,,item_323
-zvijezda,star,NA,zvijezda,word,produces,zvijezda,zvijezda,,,item_324
+bazen,pool,outside,bazen,word,produces,bazen,bazen,,,item_294
+cvijeće,flowers,outside,cvijece,word,produces,cvijece,cvijece,,,item_295
+drvo,tree,outside,drvo,word,produces,drvo,drvo,,,item_296
+dvorište,backyard,outside,dvoriste,word,produces,dvoriste,dvoriste,,,item_297
+kamen,rock,outside,kamen,word,produces,kamen,kamen,,,item_298
+kiša,rain,outside,kisa,word,produces,kisa,kisa,,,item_299
+krov,roof,outside,krov,word,produces,krov,krov,,,item_300
+lopata,shovel,outside,lopata,word,produces,lopata,lopata,,,item_301
+ljestve,ladder,outside,ljestve,word,produces,ljestve,ljestve,,,item_302
+ljuljačka,swing,outside,ljuljacka,word,produces,ljuljacka,ljuljacka,,,item_303
+mjesec,moon,outside,mjesec,word,produces,mjesec,mjesec,,,item_304
+more,sea(side),outside,more,word,produces,more,more,,,item_305
+nebo,sky,outside,nebo,word,produces,nebo,nebo,,,item_306
+oblak,cloud,outside,oblak,word,produces,oblak,oblak,,,item_307
+ograda,fence,outside,ograda,word,produces,ograda,ograda,,,item_308
+park,park,outside,park,word,produces,park,park,,,item_309
+pješčanik,sandbox,outside,pjescanik,word,produces,pjescanik,pjescanik,,,item_310
+pločnik,sidewalk,outside,plocnik,word,produces,plocnik,plocnik,,,item_311
+snijeg,snow,outside,snijeg,word,produces,snijeg,snijeg,,,item_312
+snjegović,snowman,outside,snjegovic,word,produces,snjegovic,snjegovic,,,item_313
+stijena,stone,outside,stijena,word,produces,stijena,stijena,,,item_314
+sunce,sun,outside,sunce,word,produces,sunce,sunce,,,item_315
+štap,stick,outside,stap,word,produces,stap,stap,,,item_316
+tobogan,toboggan,outside,tobogan,word,produces,tobogan,tobogan,,,item_317
+trava,grass,outside,trava,word,produces,trava,trava,,,item_318
+ulica,street,outside,ulica,word,produces,ulica,ulica,,,item_319
+vjetar,wind,outside,vjetar,word,produces,vjetar,vjetar,,,item_320
+voda,water,outside,voda,word,produces,voda,voda,,,item_321
+vrt,garden,outside,vrt,word,produces,vrt,vrt,,,item_322
+zastava,flag,outside,zastava,word,produces,zastava,zastava,,,item_323
+zvijezda,star,outside,zvijezda,word,produces,zvijezda,zvijezda,,,item_324
 bolnica,hospital,places,bolnica,word,produces,bolnica,bolnica,,,item_325
 cirkus,circus,places,cirkus,word,produces,cirkus,cirkus,,,item_326
 crkva,church,places,crkva,word,produces,crkva,crkva,,,item_327
@@ -660,59 +660,59 @@ puno,a lot,quantifiers,puno,word,produces,puno,puno,,,item_658
 svaki/svaka,each/every,quantifiers,svaki/svaka,word,produces,svaki/svaka,svaki/svaka,,,item_659
 sve/svi,all,quantifiers,sve/svi,word,produces,sve/svi,sve/svi,,,item_660
 više,more,quantifiers,vise,word,produces,vise,vise,,,item_661
-bi(h),would,NA,bi(h),word,produces,bi(h),bi(h),,,item_662
-bila,was,NA,bila,word,produces,bila,bila,,,item_663
-bile,were (female),NA,bile,word,produces,bile,bile,,,item_664
-bili,were,NA,bili,word,produces,bili,bili,,,item_665
-bilo,(it) was,NA,bilo,word,produces,bilo,bilo,,,item_666
-bio,(he) was,NA,bio,word,produces,bio,bio,,,item_667
-biti,to be,NA,biti,word,produces,biti,biti,,,item_668
-bude,(he) is gonna/going to,NA,bude,word,produces,bude,bude,,,item_669
-budem,(I) am gonna/going to,NA,budem,word,produces,budem,budem,,,item_670
-budemo,(we) are gonna/going to,NA,budemo,word,produces,budemo,budemo,,,item_671
-budeš,(you) are gonna/going to,NA,budes,word,produces,budes,budes,,,item_672
-budi,be!,NA,budi,word,produces,budi,budi,,,item_673
-budu,(they) are gonna/going to,NA,budu,word,produces,budu,budu,,,item_674
-će,(he) will be,NA,ce,word,produces,ce,ce,,,item_675
-ćemo,(we) will be,NA,cemo,word,produces,cemo,cemo,,,item_676
-ćeš,(you) will be,NA,ces,word,produces,ces,ces,,,item_677
-ću,(I) will,NA,cu,word,produces,cu,cu,,,item_678
-hoće,(he/she) wanna/wants to,NA,hoce,word,produces,hoce,hoce,,,item_679
-hoćemo,(we) wanna/want to,NA,hocemo,word,produces,hocemo,hocemo,,,item_680
-hoćeš,(you) wanna/want to,NA,hoces,word,produces,hoces,hoces,,,item_681
-hoću,(I) wanna/want to,NA,hocu,word,produces,hocu,hocu,,,item_682
-je,is,NA,je,word,produces,je,je,,,item_683
-jesam,am,NA,jesam,word,produces,jesam,jesam,,,item_684
-jesi,(you) are,NA,jesi,word,produces,jesi,jesi,,,item_685
-jesmo,(we) are,NA,jesmo,word,produces,jesmo,jesmo,,,item_686
-jesu,(they) are,NA,jesu,word,produces,jesu,jesu,,,item_687
-mogao,(he) could,NA,mogao,word,produces,mogao,mogao,,,item_688
-mogla,(she) could,NA,mogla,word,produces,mogla,mogla,,,item_689
-mogle,(they/females) could,NA,mogle,word,produces,mogle,mogle,,,item_690
-mogli,(they) could,NA,mogli,word,produces,mogli,mogli,,,item_691
-mogu (oni),(they) can,NA,mogu_(oni),word,produces,mogu_(oni),mogu_(oni),,,item_692
-mora,(he/she) must,NA,mora,word,produces,mora,mora,,,item_693
-može,(he/she) can,NA,moze,word,produces,moze,moze,,,item_694
-možemo,(we) can,NA,mozemo,word,produces,mozemo,mozemo,,,item_695
-možeš,(you) can,NA,mozes,word,produces,mozes,mozes,,,item_696
-neće,(he/she) doesn`t want,NA,nece,word,produces,nece,nece,,,item_697
-nećemo,(we) don`t want,NA,necemo,word,produces,necemo,necemo,,,item_698
-nećeš,(you) don`t want,NA,neces,word,produces,neces,neces,,,item_699
-neću,(I) don`t want,NA,necu,word,produces,necu,necu,,,item_700
-nije,(he/she) is not,NA,nije,word,produces,nije,nije,,,item_701
-nisam,(I) am not,NA,nisam,word,produces,nisam,nisam,,,item_702
-nisi,(you) are not,NA,nisi,word,produces,nisi,nisi,,,item_703
-nismo,(we) are not,NA,nismo,word,produces,nismo,nismo,,,item_704
-nisu,(they) are not,NA,nisu,word,produces,nisu,nisu,,,item_705
-sam,am,NA,sam,word,produces,sam,sam,,,item_706
-si,(you) are,NA,si,word,produces,si,si,,,item_707
-may,(I) may,NA,may,word,produces,may,may,,,item_708
-smo,(we) are,NA,smo,word,produces,smo,smo,,,item_709
-su,(they) are,NA,su,word,produces,su,su,,,item_710
-treba,should,NA,treba,word,produces,treba,treba,,,item_711
-ako,if,NA,ako,word,produces,ako,ako,,,item_712
-ali,but,NA,ali,word,produces,ali,ali,,,item_713
-i,and,NA,i,word,produces,i,i,,,item_714
-jer,because,NA,jer,word,produces,jer,jer,,,item_715
-onda,then,NA,onda,word,produces,onda,onda,,,item_716
-tako,so,NA,tako,word,produces,tako,tako,,,item_717
+bi(h),would,helping_verbs,bi(h),word,produces,bi(h),bi(h),,,item_662
+bila,was,helping_verbs,bila,word,produces,bila,bila,,,item_663
+bile,were (female),helping_verbs,bile,word,produces,bile,bile,,,item_664
+bili,were,helping_verbs,bili,word,produces,bili,bili,,,item_665
+bilo,(it) was,helping_verbs,bilo,word,produces,bilo,bilo,,,item_666
+bio,(he) was,helping_verbs,bio,word,produces,bio,bio,,,item_667
+biti,to be,helping_verbs,biti,word,produces,biti,biti,,,item_668
+bude,(he) is gonna/going to,helping_verbs,bude,word,produces,bude,bude,,,item_669
+budem,(I) am gonna/going to,helping_verbs,budem,word,produces,budem,budem,,,item_670
+budemo,(we) are gonna/going to,helping_verbs,budemo,word,produces,budemo,budemo,,,item_671
+budeš,(you) are gonna/going to,helping_verbs,budes,word,produces,budes,budes,,,item_672
+budi,be!,helping_verbs,budi,word,produces,budi,budi,,,item_673
+budu,(they) are gonna/going to,helping_verbs,budu,word,produces,budu,budu,,,item_674
+će,(he) will be,helping_verbs,ce,word,produces,ce,ce,,,item_675
+ćemo,(we) will be,helping_verbs,cemo,word,produces,cemo,cemo,,,item_676
+ćeš,(you) will be,helping_verbs,ces,word,produces,ces,ces,,,item_677
+ću,(I) will,helping_verbs,cu,word,produces,cu,cu,,,item_678
+hoće,(he/she) wanna/wants to,helping_verbs,hoce,word,produces,hoce,hoce,,,item_679
+hoćemo,(we) wanna/want to,helping_verbs,hocemo,word,produces,hocemo,hocemo,,,item_680
+hoćeš,(you) wanna/want to,helping_verbs,hoces,word,produces,hoces,hoces,,,item_681
+hoću,(I) wanna/want to,helping_verbs,hocu,word,produces,hocu,hocu,,,item_682
+je,is,helping_verbs,je,word,produces,je,je,,,item_683
+jesam,am,helping_verbs,jesam,word,produces,jesam,jesam,,,item_684
+jesi,(you) are,helping_verbs,jesi,word,produces,jesi,jesi,,,item_685
+jesmo,(we) are,helping_verbs,jesmo,word,produces,jesmo,jesmo,,,item_686
+jesu,(they) are,helping_verbs,jesu,word,produces,jesu,jesu,,,item_687
+mogao,(he) could,helping_verbs,mogao,word,produces,mogao,mogao,,,item_688
+mogla,(she) could,helping_verbs,mogla,word,produces,mogla,mogla,,,item_689
+mogle,(they/females) could,helping_verbs,mogle,word,produces,mogle,mogle,,,item_690
+mogli,(they) could,helping_verbs,mogli,word,produces,mogli,mogli,,,item_691
+mogu (oni),(they) can,helping_verbs,mogu_(oni),word,produces,mogu_(oni),mogu_(oni),,,item_692
+mora,(he/she) must,helping_verbs,mora,word,produces,mora,mora,,,item_693
+može,(he/she) can,helping_verbs,moze,word,produces,moze,moze,,,item_694
+možemo,(we) can,helping_verbs,mozemo,word,produces,mozemo,mozemo,,,item_695
+možeš,(you) can,helping_verbs,mozes,word,produces,mozes,mozes,,,item_696
+neće,(he/she) doesn`t want,helping_verbs,nece,word,produces,nece,nece,,,item_697
+nećemo,(we) don`t want,helping_verbs,necemo,word,produces,necemo,necemo,,,item_698
+nećeš,(you) don`t want,helping_verbs,neces,word,produces,neces,neces,,,item_699
+neću,(I) don`t want,helping_verbs,necu,word,produces,necu,necu,,,item_700
+nije,(he/she) is not,helping_verbs,nije,word,produces,nije,nije,,,item_701
+nisam,(I) am not,helping_verbs,nisam,word,produces,nisam,nisam,,,item_702
+nisi,(you) are not,helping_verbs,nisi,word,produces,nisi,nisi,,,item_703
+nismo,(we) are not,helping_verbs,nismo,word,produces,nismo,nismo,,,item_704
+nisu,(they) are not,helping_verbs,nisu,word,produces,nisu,nisu,,,item_705
+sam,am,helping_verbs,sam,word,produces,sam,sam,,,item_706
+si,(you) are,helping_verbs,si,word,produces,si,si,,,item_707
+may,(I) may,helping_verbs,may,word,produces,may,may,,,item_708
+smo,(we) are,helping_verbs,smo,word,produces,smo,smo,,,item_709
+su,(they) are,helping_verbs,su,word,produces,su,su,,,item_710
+treba,should,helping_verbs,treba,word,produces,treba,treba,,,item_711
+ako,if,connecting_words,ako,word,produces,ako,ako,,,item_712
+ali,but,connecting_words,ali,word,produces,ali,ali,,,item_713
+i,and,connecting_words,i,word,produces,i,i,,,item_714
+jer,because,connecting_words,jer,word,produces,jer,jer,,,item_715
+onda,then,connecting_words,onda,word,produces,onda,onda,,,item_716
+tako,so,connecting_words,tako,word,produces,tako,tako,,,item_717
