@@ -46,7 +46,8 @@ class Command(NoArgsCommand):
                     #lang_lemma = row_values[col_names.index('lang_lemma')]
                     #uni_lemma = row_values[col_names.index('uni_lemma')]
                     definition = row_values[col_names.index('definition')]
-                    lexical_category = row_values[col_names.index('lexical_category')]
+                    gloss = row_values[col_names.index('gloss')]
+                    #lexical_category = row_values[col_names.index('lexical_category')]
                     complexity_category = row_values[col_names.index('complexity_category')]
 
                     #if not WordInfo.objects.filter(uni_lemma=uni_lemma, lang_lemma=lang_lemma).exists():
@@ -60,5 +61,6 @@ class Command(NoArgsCommand):
                                                category=item_category,
                                                #word_info=word_info,
                                                definition=definition,
-                                               lexical_category=lexical_category,
+                                               gloss=gloss,
+#                                               lexical_category=lexical_category,
                                                complexity_category=complexity_category)
