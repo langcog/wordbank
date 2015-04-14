@@ -13,6 +13,7 @@ shinyServer(function(input, output, session) {
   outputOptions(output, 'loaded', suspendWhenHidden=FALSE)
   
   wordbank <- src_mysql(dbname = "wordbank", user = "wordbank",
+                        #host = "54.149.39.46",                        
                         password = "wordbank")
   
   common.tables <- get.common.tables(wordbank)
@@ -26,7 +27,8 @@ shinyServer(function(input, output, session) {
     mutate(sex = factor(sex, levels=c("F", "M", "O"), labels=c("Female", "Male", "Other")))
   
   items <- get.item.data(common.tables$wordmapping,
-                         common.tables$instrumentsmap) %>%
+                         common.tables$instrumentsmap,
+                         common.tables$category) %>%
     select(item.id, type, category, definition, language, form) %>%
     mutate(item.id = as.numeric(substr(item.id, 6, nchar(item.id))))
   
