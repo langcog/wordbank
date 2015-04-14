@@ -19,7 +19,8 @@ shinyServer(function(input, output, session) {
   output$loaded <- reactive({0})
   outputOptions(output, 'loaded', suspendWhenHidden=FALSE)
   
-  wordbank <- src_mysql(dbname = "wordbank", user = "wordbank"#, host = "54.149.39.46",
+  wordbank <- src_mysql(dbname = "wordbank", user = "wordbank",
+                        #host = "54.149.39.46",
                         password = "wordbank")
   
   common.tables <- get.common.tables(wordbank)
@@ -30,7 +31,8 @@ shinyServer(function(input, output, session) {
                                     common.tables$administration)
   
   items <- get.item.data(common.tables$wordmapping,
-                         common.tables$instrumentsmap) %>%
+                         common.tables$instrumentsmap,
+                         common.tables$category) %>%
     mutate(definition = iconv(definition, from = "utf8", to = "utf8"))
   
   list.items.by.definition <- function(item.data) {

@@ -78,14 +78,19 @@ get.administration.data <- function(momed.table, child.table, instruments.table,
 
 
 # Gets by-item data from an instrument with information from the wordmapping table
-get.item.data <- function(wordmapping.table, instruments.table) {
+get.item.data <- function(wordmapping.table, instruments.table, categories.table) {
   
   instruments <- as.data.frame(instruments.table) %>%
     rename(instrument_id = id)
   
+  categories <- as.data.frame(categories.table) %>%
+    rename(category_id = id,
+           category = name)
+  
   items <- as.data.frame(wordmapping.table) %>%
     rename(item.id = item_id) %>%
-    left_join(instruments)
+    left_join(instruments) %>%
+    left_join(categories)
   
   return(items)
   
