@@ -10,8 +10,8 @@ source("../data_loading.R")
 Sys.setlocale(locale="en_US.UTF-8")
 
 ## DEBUGGING
-input <- list(language = "Russian", form = "WS", measure = "produces",
-             words = NULL, wordform = NULL, complexity = NULL)
+#input <- list(language = "English", form = "WS", measure = "produces",
+#            words = c("item_1"), wordform = NULL, complexity = NULL)
 
 
 shinyServer(function(input, output, session) {
@@ -19,9 +19,9 @@ shinyServer(function(input, output, session) {
   output$loaded <- reactive({0})
   outputOptions(output, 'loaded', suspendWhenHidden=FALSE)
   
-  wordbank <- src_mysql(dbname = "wordbank", user = "wordbank",
+  wordbank <- src_mysql(dbname = "wordbank", user = "wordbank"#, host = "54.149.39.46",
                         password = "wordbank")
-    
+  
   common.tables <- get.common.tables(wordbank)
   
   admins <- get.administration.data(common.tables$momed,
@@ -160,28 +160,29 @@ shinyServer(function(input, output, session) {
   plot <- function() {
     data <- data()
     if (nrow(data) == 0) {
-      ggplot(data + geom_point() + 
+      ggplot(data) +
+        geom_point() + 
         scale_x_continuous(name = "\nAge (months)",
                            breaks = age.min():age.max(),
                            limits = c(age.min(), age.max()+3)) +
         scale_y_continuous(name = paste(ylabel(), "\n", sep=""),
                            limits = c(-.01,1),
                            breaks = seq(0,1,.25)) +
-        theme(text=element_text(family=font))    
+        theme(text=element_text(family=font))
     } else {
       ggplot(data, aes(x=age, y=score, colour=item, label=item)) +
-      geom_smooth(aes(linetype=type), se=FALSE, method="loess") +
-      geom_point(aes(shape=type)) +
-      scale_x_continuous(name = "\nAge (months)",
-                         breaks = age.min():age.max(),
-                         limits = c(age.min(), age.max()+3)) +
-      scale_y_continuous(name = paste(ylabel(), "\n", sep=""),
-                         limits = c(-.01,1),
-                         breaks = seq(0,1,.25)) +
-      scale_colour_brewer(palette=qual.palette) +
-      geom_dl(method = list(dl.trans(x=x +.3), "last.qp", cex=1, fontfamily=font)) +
-      theme(legend.position="none",
-            text=element_text(family=font))
+        geom_smooth(aes(linetype=type), se=FALSE, method="loess") +
+        geom_point(aes(shape=type)) +
+        scale_x_continuous(name = "\nAge (months)",
+                           breaks = age.min():age.max(),
+                           limits = c(age.min(), age.max()+3)) +
+        scale_y_continuous(name = paste(ylabel(), "\n", sep=""),
+                           limits = c(-.01,1),
+                           breaks = seq(0,1,.25)) +
+        scale_colour_brewer(palette=qual.palette) +
+        geom_dl(method = list(dl.trans(x=x +.3), "last.qp", cex=1, fontfamily=font)) +
+        theme(legend.position="none",
+              text=element_text(family=font))
     }
   }
   
@@ -189,23 +190,23 @@ shinyServer(function(input, output, session) {
     words <- filter(instrument.tables,
                     language == input.language(),
                     form == input.form())$words.by.definition[[1]]
-    updateSelectizeInput(session, 'words', choices = words, selected = "")
+    updateSelectInput(session, 'words', choices = words, selected = "")
   })
   
   observe({
     wordforms <- filter(instrument.tables,
                         language == input.language(),
                         form == input.form())$wordform.by.definition[[1]]
-    updateSelectizeInput(session, 'wordform', choices = wordforms, selected = "")
+    updateSelectInput(session, 'wordform', choices = wordforms, selected = "")
   })
   
   observe({
     complexity <- filter(instrument.tables,
                          language == input.language(),
                          form == input.form())$complexity.by.definition[[1]]
-    updateSelectizeInput(session, 'complexity', choices = complexity, selected = "")
+    updateSelectInput(session, 'complexity', choices = complexity, selected = "")
   })
-    
+  
   forms <- reactive({
     Filter(function(form) {form %in% unique(filter(instrument.tables,
                                                    language == input.language())$form)},
@@ -241,25 +242,25 @@ shinyServer(function(input, output, session) {
                    choices = measures(), selected = start.measure())
   })
   
-#   output$words_selector <- renderUI({
-#     print(words())
-#     selectizeInput("words", label = h4("Words"), 
-#                    selected = start.words(names(instrument()$words.by.id[[1]])),
-#                    multiple = TRUE,
-#                    choices = words())  
-#   })
-
-#   output$wordform_selector <- renderUI({
-#     selectizeInput("wordform", label = h4("Word Forms"), 
-#                    choices = wordform(),
-#                    multiple = TRUE)
-#   })
-   
-#   output$complexity_selector <- renderUI({
-#     selectizeInput("complexity", label = h4("Complexity Items"), 
-#                    choices = complexity(),
-#                    multiple = TRUE)
-#   })
+  #   output$words_selector <- renderUI({
+  #     print(words())
+  #     selectizeInput("words", label = h4("Words"), 
+  #                    selected = start.words(names(instrument()$words.by.id[[1]])),
+  #                    multiple = TRUE,
+  #                    choices = words())  
+  #   })
+  
+  #   output$wordform_selector <- renderUI({
+  #     selectizeInput("wordform", label = h4("Word Forms"), 
+  #                    choices = wordform(),
+  #                    multiple = TRUE)
+  #   })
+  
+  #   output$complexity_selector <- renderUI({
+  #     selectizeInput("complexity", label = h4("Complexity Items"), 
+  #                    choices = complexity(),
+  #                    multiple = TRUE)
+  #   })
   
   output$downloadData <- downloadHandler(
     filename = function() { 'item_trajectory.csv' },
