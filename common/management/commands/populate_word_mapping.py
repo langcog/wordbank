@@ -65,6 +65,6 @@ class Command(NoArgsCommand):
                                                    category=category_key,
                                                    #word_info=word_info,
                                                    definition=definition,
-                                                   gloss=gloss,
+#                                                   gloss=gloss,
     #                                               lexical_category=lexical_category,
                                                    complexity_category=complexity_category)
