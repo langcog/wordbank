@@ -37,7 +37,8 @@ shinyServer(function(input, output, session) {
                                            "Sixth", "Seventh", "Eighth")))
   
   items <- get.item.data(common.tables$wordmapping,
-                         common.tables$instrumentsmap)
+                         common.tables$instrumentsmap,
+                         common.tables$category)
   
   instrument.tables <- get.instrument.tables(wordbank, common.tables$instrumentsmap)
   
