@@ -4,7 +4,7 @@ from models import *
 
 def aggregate(admin_query=None):
 
-    safe_field = lambda field: field if field is not None else 'Unknown'
+    safe_field = lambda field: 'Unknown' if field is None or field == 'NULL' else field
     data = []
 
     if not admin_query:
