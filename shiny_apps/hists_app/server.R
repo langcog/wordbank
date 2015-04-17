@@ -18,7 +18,7 @@ shinyServer(function(input, output, session) {
   output$loaded <- reactive({0})
   outputOptions(output, 'loaded', suspendWhenHidden=FALSE)
   
-  wordbank <- src_mysql(dbname = "wordbank", user = "wordbank",
+  wordbank <- src_mysql(dbname = "wordbank", user = "wordbank", host = "54.200.225.86",
                         password = "wordbank")
   
   common.tables <- get.common.tables(wordbank)
@@ -82,6 +82,10 @@ shinyServer(function(input, output, session) {
     nrow(filter(items, language == input.language(), form == input.form(), type == "word"))
   })
   
+  bin_size <- reactive({
+    as.numeric(input$bin_size) / num.words()
+  })
+  
   cuts <- reactive({
     seq(0.0, 1.0, by=as.numeric(input$qsize))
   })
@@ -108,6 +112,7 @@ shinyServer(function(input, output, session) {
   data <- reactive({
     filtered_admins() %>%
       right_join(groups_with_data()) %>%
+      filter(n > 100) %>%
       group_by_("age", input.demo()) %>%
       filter_(interp("!is.na(x)", x = as.name(input.demo()))) %>%
       mutate(prop.vocab = vocab / num.words(),
@@ -120,7 +125,7 @@ shinyServer(function(input, output, session) {
   plot <- function() {
     ggplot(data(), aes(x=prop.vocab, fill=quantile)) + 
       facet_wrap(input.demo()) + 
-      geom_histogram() +
+      geom_histogram(binwidth = bin_size()) +
       scale_x_continuous(name="\nVocabulary Size (proportion of total words)",
                          limits=c(0,1)) +
       ylab("Number of Children\n") + 

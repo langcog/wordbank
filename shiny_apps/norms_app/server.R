@@ -128,6 +128,7 @@ shinyServer(function(input, output, session) {
   data <- reactive({
     filtered_admins() %>%
       right_join(groups_with_data()) %>%
+      filter(n > 100) %>%      
       group_by_("age", input.demo()) %>%
       filter_(interp("!is.na(x)", x = as.name(input.demo()))) %>%
       mutate(percentile = rank(vocab) / length(vocab),
