@@ -41,7 +41,7 @@ shinyServer(function(input, output, session) {
                          common.tables$category)
   
   instrument.tables <- get.instrument.tables(wordbank, common.tables$instrumentsmap)
-  
+
   languages <- unique(instrument.tables$language)
   
   possible_demo_fields <- list("None" = "identity", 
@@ -112,7 +112,6 @@ shinyServer(function(input, output, session) {
   data <- reactive({
     filtered_admins() %>%
       right_join(groups_with_data()) %>%
-      filter(n > 100) %>%
       group_by_("age", input.demo()) %>%
       filter_(interp("!is.na(x)", x = as.name(input.demo()))) %>%
       mutate(prop.vocab = vocab / num.words(),
