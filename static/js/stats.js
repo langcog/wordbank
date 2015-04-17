@@ -10,9 +10,10 @@ var instrumentsChart = dc.pieChart('#instrumentsChart');
 
 var sexChart = dc.pieChart('#sexChart');
 var momedChart = dc.rowChart('#momedChart')
+var birthorderChart = dc.rowChart('#birthorderChart')
 
-var pieChartWidth = 250;
-var pieChartRadius = 125;
+var pieChartWidth = 220;
+var pieChartRadius = 110;
 
 var ageChild = data.dimension(function(d) {
   return d['age'];
@@ -49,6 +50,13 @@ var momedsGroup = momeds.group().reduceSum(function(d) {
   return 1;
 });
 
+var birthorders = data.dimension(function(d) {
+  return d['birth_order'];
+});
+var birthordersGroup = birthorders.group().reduceSum(function(d) {
+  return 1;
+});
+
 ageChildChart.width(700)
              .height(300)
              .margins({top: 20, right: 40, bottom: 32, left: 40})
@@ -64,11 +72,25 @@ ageChildChart.width(700)
                return d.value;
              });
 
-momedChart.width(400)
-        .height(250)
+momedChart.width(330)
+        .height(220)
         .dimension(momeds)
 //        .margins({top: 20, right: 40, bottom: 45, left: 40})
         .group(momedsGroup)
+        .label(function (d) {
+            return d.key + ": " + d.value;
+        })
+        .renderLabel(true)
+        .transitionDuration(500)
+//        .xAxis().tickFormat(function(v) { return ""; })
+        .xAxis().ticks(5)
+//        .xAxisLabel('')
+
+birthorderChart.width(330)
+        .height(220)
+        .dimension(birthorders)
+//        .margins({top: 20, right: 40, bottom: 45, left: 40})
+        .group(birthordersGroup)
         .label(function (d) {
             return d.key + ": " + d.value;
         })
