@@ -18,7 +18,7 @@ class ImportHelper:
         self.administrations = {}
         self.datemode = None
 
-        self.missing_values = {u'Null', u'#NULL!', u'', u' ', u'Missing', u'Unknown/other', u'?'}
+        self.missing_values = {u'Null', u'#NULL!', u'', u' ', u'Missing', u'Unknown/other', u'?', u'NA'}
 
     @staticmethod
     def format_date(date_str, datemode=None):

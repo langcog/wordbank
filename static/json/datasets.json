@@ -230,5 +230,21 @@
         "instrument_form": "WS",
         "file": "raw_data/Turkish_WS/TurkishWS_CLEX.csv",
         "splitcol": false
+    },
+    {
+        "name": "Shalev",
+        "dataset": "",
+        "instrument_language": "Hebrew",
+        "instrument_form": "WG",
+        "file": "raw_data/Hebrew_WG/HebrewWG_Shalev.xlsx",
+        "splitcol": false
+    },
+    {
+        "name": "Maital",
+        "dataset": "",
+        "instrument_language": "Hebrew",
+        "instrument_form": "WS",
+        "file": "raw_data/Hebrew_WS/HebrewWS_Maital.xlsx",
+        "splitcol": false
     }
 ]
