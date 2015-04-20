@@ -15,3 +15,5 @@ from schemas.Swedish_WG import *
 from schemas.Swedish_WS import *
 from schemas.Turkish_WG import *
 from schemas.Turkish_WS import *
+from schemas.Hebrew_WS import *
+from schemas.Hebrew_WG import *

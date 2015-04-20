@@ -8,13 +8,22 @@ class Command(NoArgsCommand):
 
     def handle(self, *args, **options):
 
-        f = open('instruments/models.py', 'w')
         instruments = json.load(open('static/json/instruments.json'))
 
-        for instrument in instruments:
+        if len(args) > 1:
+            input_language, input_form = args[0], args[1]
+            input_instruments = filter(lambda instrument: instrument['language'] == input_language and
+                                                          instrument['form'] == input_form,
+                                       instruments)
+            models_file = open('instruments/models.py', 'a')
+        else:
+            input_instruments = instruments
+            models_file = open('instruments/models.py', 'w')
+
+        for instrument in input_instruments:
 
             instr = '_'.join([instrument['language'], instrument['form']])
-            f.write('from schemas.%s import *\n' % (instr))
+            models_file.write('from schemas.%s import *\n' % (instr))
             instrument_file = open('instruments/schemas/%s.py' % (instr), 'w')
 
             instrument_file.write('from django.db import models\n')
@@ -38,19 +47,12 @@ class Command(NoArgsCommand):
                 raise IOError("Instrument file must be xlsx, xls, or csv.")
 
 
-#            book = xlrd.open_workbook(instrument['file'])
-
-#            sheet = book.sheet_by_index(0)
-#            nrows = sheet.nrows
-#            col_names = list(sheet.row_values(0))
-
             instrument_file.write('\n\nclass %s(BaseTable):\n' % instr)
 
             if nrows <= 1:
                 instrument_file.write('    pass\n')
 
             for row in xrange(1, nrows):
-#                row_values = list(sheet.row_values(row))
                 row_values = get_row(row)
                 if len(row_values) > 1:
                     itemID = row_values[col_names.index('itemID')]
@@ -65,4 +67,4 @@ class Command(NoArgsCommand):
 
             instrument_file.close()
 
-        f.close()
+        models_file.close()
