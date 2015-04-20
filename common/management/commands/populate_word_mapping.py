@@ -11,7 +11,15 @@ class Command(NoArgsCommand):
 
         instruments = json.load(open('static/json/instruments.json'))
 
-        for instrument in instruments:
+        if len(args) > 1:
+            input_language, input_form = args[0], args[1]
+            input_instruments = filter(lambda instrument: instrument['language'] == input_language and
+                                                          instrument['form'] == input_form,
+                                       instruments)
+        else:
+            input_instruments = instruments
+
+        for instrument in input_instruments:
 
             instrument_language, instrument_form = instrument['language'], instrument['form']
             instrument_key = InstrumentsMap.objects.get(form=instrument_form, language=instrument_language)
@@ -44,7 +52,10 @@ class Command(NoArgsCommand):
                     item_category = row_values[col_names.index('category')]
                     category_key = None
                     if item_type == 'word':
-                        category_key = Category.objects.get(name = item_category)
+                        try:
+                            category_key = Category.objects.get(name = item_category)
+                        except:
+                            raise IOError("Can't find category %s in model" % (item_category,))
 
                     #lang_lemma = row_values[col_names.index('lang_lemma')]
                     #uni_lemma = row_values[col_names.index('uni_lemma')]
