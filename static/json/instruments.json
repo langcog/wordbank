@@ -48,6 +48,22 @@
         "has_grammar": false
     },
     {
+        "language": "Hebrew",
+        "form": "WG",
+        "file": "raw_data/Hebrew_WG/[Hebrew_WG].xlsx",
+        "age_min": 11,
+        "age_max": 25,
+        "has_grammar": false
+    },
+    {
+        "language": "Hebrew",
+        "form": "WS",
+        "file": "raw_data/Hebrew_WS/[Hebrew_WS].xlsx",
+        "age_min": 18,
+        "age_max": 24,
+        "has_grammar": false
+    },
+    {
         "language": "Italian",
         "form": "WS",
         "file": "raw_data/Italian_WS/[Italian_WS].csv",
