@@ -1,1 +1,2 @@
 ALTER TABLE common_wordmapping MODIFY definition varchar(200) CHARACTER SET 'utf8' COLLATE 'utf8_unicode_ci';
+ALTER TABLE common_wordmapping MODIFY item varchar(50) CHARACTER SET 'utf8' COLLATE 'utf8_unicode_ci';
