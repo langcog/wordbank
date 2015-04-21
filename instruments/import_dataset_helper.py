@@ -87,11 +87,11 @@ class ImportHelper:
             book = xlrd.open_workbook(self.data_file)
             self.datemode = book.datemode
 
-            value_mapping_sheet = book.sheet_by_name('value_mapping')
+            value_mapping_sheet = book.sheet_by_name('values')
             value_mapping_nrows = value_mapping_sheet.nrows
             get_value_mapping_row = lambda row: list(value_mapping_sheet.row_values(row))
 
-            field_mapping_sheet = book.sheet_by_name('field_mapping')
+            field_mapping_sheet = book.sheet_by_name('fields')
             field_mapping_nrows = field_mapping_sheet.nrows
             get_field_mapping_row = lambda row: list(field_mapping_sheet.row_values(row))
 
