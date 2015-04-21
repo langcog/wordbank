@@ -1,0 +1,81 @@
+*** How to import a new instrument + dataset ***
+
+Let's say you want to add an instrument in the language Wugese and the form WS (Words & Sentences),
+and a dataset using that instrument that's from Dr. Dax.
+
+** Instrument **
+- Make a directory in raw_data/ for the instrument (by convention called Wugese_WS, but doesn't have to be).
+- Put an instrument definition file in that directory (by convention called [Wugese_WS].csv or [Wugese_WS].xlsx, but doesn't have to be).
+  The instrument definition file should be either a csv file or a an excel file that has the following columns:
+  	- itemID: how the item is identified in Wordbank
+  		spec: string no more than 50 characters long, which must be unique across the items of a given instrument, and can contain only characters that are letters or underscores
+  		examples: item_1, item_25, item_100
+  	- item: a shorter and simpler value for the item
+  		spec: ascii string no more than 20 characters long
+  		examples: i_02_13, dog, hund
+  	- type: item group that's used for determining how to treat the item
+  		spec: ascii string no more than 30 characters long
+  		examples: word, word_form, complexity, gestures
+  	- category: the section of the form in which the item appears
+  		spec: one of the strings in the first column of raw_data/categories.csv or blank
+  		examples: animals, action_words, pronouns
+  	- choices: which values are possible for the item in Wordbank
+  		spec: list of ascii strings separated by a semicolon and space "; ", in any order
+  		examples: <understands; produces>, <often; sometimes; never>, <simple; complex>
+  	- definition: a longer value for the item that's more or less exactly what it looks like on the form
+  		spec: utf-8 string no more than 200 characters long or blank
+  		examples: dog, chicken (food), bjørn, Hunden kysser mig / Hunden kyssede mig
+  	- gloss: a translation of the item's meaning into English
+  		spec: utf-8 string no more than 80 characters long or blank
+  		examples: bear, dog, The dog kisses me / dog kissed me
+  	- complexity_category: blank for items other complexity items, coding for complexity items
+  		spec: ascii string no more than 30 characters long or blank
+  		examples: morphology, syntax
+  	- lang_lemma (<not currently implemented, so whatever>)
+  	- uni_lemma (<not currently implemented, so whatever>)
+- Add the instrument to static/json/instruments.json with an entry such as
+	{
+        "language": "Wugese",
+        "form": "WS",
+        "file": "raw_data/Wugese_WS/[Wugese_WS].xlsx",
+        "age_min": 18,
+        "age_max": 30,
+        "has_grammar": true
+    }
+    Substitute in the relevant values of age_min, age_max, and has_grammar.
+    The file should be the path to the instrument definition file above.
+- Create a schema for this instrument by running
+	./manage.py create_instrument_schemas Wugese WS
+- Re-do database migrations by running
+	./manage.py makemigrations
+	./manage.py migrate
+- Re-populate database tables that change based on adding a new instrument by running
+	./manage.py populate_instrumentsmap
+	./manage.py populate_word_mapping
+	./manage.py populate_source
+- If this instrument has any new categories, add rows to raw_data/categories.csv with them and the correponding lexical categories and run
+	./manage.py populate_category
+
+** Dataset **
+- Put each dataset's data, field mapping, and value mapping in the raw_data/Wugese_WS directory.
+	- Either a single excel file called WugeseWS_Dax with the sheets data, field_mapping, and value_mapping;
+	- Or a three csv files, one called WugeseWS_Dax_data, one called WugeseWS_Dax_fields, and one called WugeseWS_Dax_values.
+	# TODO: specs and explanations for data and mappings
+- Add the datasets to static/json/datasets.json with an entry such as
+    {
+        "name": "Dax",
+        "dataset": "",
+        "instrument_language": "Wugese",
+        "instrument_form": "WS",
+        "file": "raw_data/Wugese_WS/WugeseWS_Dax.xlsx",
+        "splitcol": false
+    }
+    For csv files, the "file" field should be "raw_data/Wugese_WS/WugeseWS_Dax.csv" (data import code will find the three files from there).
+    The "dataset" field allows adding multiple datasets from the same source, e.g. if Dr. Dax provided a norming dataset and another dataset.
+    The "splitcol" field is normally false, but should be true for datasets that record WG production and comprehension in separate columns.
+- Import the dataset by running
+	./manage.py import_instrument_datasets Wugese WS
+	or
+	./manage.py import_single_dataset raw_data/Wugese_WS/WugeseWS_Dax.xlsx
+- Cache vocabulary sizes for the instrument's datasets by running
+	./manage.py populate_vocabulary_size Wugese WS
