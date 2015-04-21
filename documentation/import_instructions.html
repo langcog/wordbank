@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<title></title>
+
+<xmp theme="cosmo" style="display:none;">
+
+How to import a new instrument and dataset
+==========================================
+
+Let's say you want to add an instrument in the language Wugese and the form WS (Words & Sentences),
+and a dataset using that instrument that's from Dr. Dax.
+
+
+Instrument
+----------
+
+- Make a directory in `raw_data/` for the instrument (by convention called `Wugese_WS`, but doesn't have to be).
+
+- Put an instrument definition file in that directory (by convention called `[Wugese_WS].csv` or `[Wugese_WS].xlsx`, but doesn't have to be). The instrument definition file should be either a csv file or a an excel file in which each row defined an item, and which has the following columns:
+    - `itemID`: how the item is identified in Wordbank
+        - spec: string no more than 50 characters long that contains only characters that are letters or underscores; must be unique across the items of a given instrument
+        - examples: `item_1`, `item_25`, `item_100`
+    - `item`: a shorter and simpler value for the item
+        - spec: ASCII string no more than 20 characters long
+        - examples: `i_02_13`, `dog`, `hund`
+    - `type`: item group that's used for determining how to treat the item
+        - spec: ASCII string no more than 30 characters long
+        - examples: `word`, `word_form`, `complexity`, `gestures`
+    - `category`: the section of the form in which the item appears
+        - spec: one of the strings in the first column of `raw_data/categories.csv` or blank
+        - examples: `animals`, `action_words`, `pronouns`
+    - `choices`: which values are possible for the item in Wordbank
+        - spec: list of ASCII strings separated by a semicolon and space, `; `, in any order
+        - examples: `understands; produces`, `often; sometimes; never`, `simple; complex`
+    - `definition`: a longer value for the item that's more or less exactly what it looks like on the form
+        - spec: UTF-8 string no more than 200 characters long or blank
+        - examples: `dog`, `chicken (food)`, `Hunden kysser mig / Hunden kyssede mig`
+    - `gloss`: a translation of the item's meaning into English
+        - spec: UTF-8 string no more than 80 characters long or blank
+        - examples: `bear`, `dog`, `The dog kisses me / dog kissed me`
+    - `complexity_category`: blank for items other complexity items, coding for complexity items
+        - spec: ASCII string no more than 30 characters long or blank
+        - examples: `morphology`, `syntax`
+    - `lang_lemma` (not currently implemented, so whatever)
+    - `uni_lemma` (not currently implemented, so whatever)
+
+
+- Add the instrument to `static/json/instruments.json` with an entry such as
+        {
+            "language": "Wugese",
+            "form": "WS",
+            "file": "raw_data/Wugese_WS/[Wugese_WS].xlsx",
+            "age_min": 18,
+            "age_max": 30,
+            "has_grammar": true
+        }
+    Substitute in the relevant values of `age_min`, `age_max`, and `has_grammar`. The file should be the path to the instrument definition file above.
+
+- Create a schema for this instrument by running
+        ./manage.py create_instrument_schemas Wugese WS
+
+- Re-do database migrations by running
+        ./manage.py makemigrations
+        ./manage.py migrate
+
+- Add the instrument to the instrument map table by running
+        ./manage.py populate_instrumentsmap
+
+- Add the instrument's items to the word mapping table by running
+        ./manage.py populate_word_mapping
+
+- If this instrument has any new categories, add rows to `raw_data/categories.csv` with them and the correponding lexical categories and run
+        ./manage.py populate_category
+
+Dataset
+-------
+
+- Put the dataset's data, field mapping, and value mapping in the instruments directory, e.g. `raw_data/Wugese_WS/`.
+    - Either a single excel file (by convention called `WugeseWS_Dax`, but doesn't have to be), with sheets named `data`, `fields`, and `values`;
+    - Or three csv files, with the names `foo_data`, `foo_fields`, and `foo_values` (where `foo` is `WugeseWS_Dax` by convention, but doesn't have to be).
+    - For the data sheet/file:
+        - The first row should be column labels (whatever they might be in this dataset).
+        - Each other row should be a single CDI administration.
+    - The fields sheet/file is a mapping from the dataset's column labels to Wordbank's fields, and should have the following columns:
+        - `column`: column labels from the data sheet/file (modulo case sensitivity) that will be extracted
+        - `field`: what Wordbank field to map the column label to
+            - MUST include `study_id` and at least one of `data_age` and (`date_of_birth` and `date_of_test`)
+            - can also optionally have any of `birth_order`, `ethnicity`, `mom_ed`, `sex`
+            - the rest (everything in `group`=`item`) MUST be in this dataset's instrument definition file's `itemID` column
+            - __this is how the dataset's fields get mapped &mdash; it's tricky and important to get right __
+        - `group`: whether this field should be associated with the administration, the child, or the data table for the instrument
+            - one of `admin`, `child`, or `item`
+        - `type`: how to treat the value(s) of this field
+            - `study_id`, `study_momed`: value as is
+            - `birth_order`, `data_age`: value is made into an integer
+            - `date_of_birth`, `date_of_test`: value is made into date
+            - `ethnicity`, `sex`, `mom_ed`, any type in `group=item`: value is mapped using value mapping
+    - The values sheet/file is a mapping from the dataset's value to Wordbank's values, split by type, and should have the following columns:
+        - `type`: one of the types in the field mapping sheet/file
+        - `data_value`: the value option in the dataset
+        - `value`: the short form (e.g. `M`) of the corresponding value option in Wordbank. The sets of value options in Wordbank are:
+            - For `ethnicity`, defined in `common/models.py`
+                    (('A', 'Asian'), ('B', 'Black'), ('H', 'Hispanic'), ('W', 'White'), ('O', 'Other/Mixed'))
+            - For `sex`, defined in `common/models.py`
+                    (('M', 'Male'), ('F', 'Female'), ('O', 'Other'))
+            - For `mom_ed`, defined in `common/management/commands/populate_momed.py`
+                    {(1, 'None'), (2, 'Primary'), (3, 'Some Secondary'), (4, 'Secondary'), (5, 'Some College'), (6, 'College'), (7, 'Some Graduate'), (8, 'Graduate')}
+            - For all types in `group`=`item`, defined in e.g. `instruments/schemas/Wugese_WS.py` and equal to the choices for that type of item as given in the instrument definition file, e.g.
+                    [(u'understands', u'understands'), (u'produces', u'produces')]
+
+- Add the dataset to `static/json/datasets.json` with an entry such as
+        {
+            "name": "Dax",
+            "dataset": "",
+            "instrument_language": "Wugese",
+            "instrument_form": "WS",
+            "file": "raw_data/Wugese_WS/WugeseWS_Dax.xlsx",
+            "splitcol": false
+        }
+    For csv files, the `file` field should be the path to `foo` above (e.g. `raw_data/Wugese_WS/WugeseWS_Dax.csv`). The `dataset` field allows adding multiple datasets from the same source, e.g. if Dr. Dax provided a norming dataset and another dataset. The `splitcol` field is normally `false`, but should be `true` for datasets that record WG production and comprehension in separate columns.
+
+- Add this dataset to the source table by running
+        ./manage.py populate_source
+
+- Import the dataset by running
+        ./manage.py import_instrument_datasets Wugese WS
+    or
+        ./manage.py import_single_dataset raw_data/Wugese_WS/WugeseWS_Dax.xlsx
+
+- Cache vocabulary sizes for the dataset's instrument by running
+        ./manage.py populate_vocabulary_size Wugese WS
+
+</xmp>
+
+<script src="strapdown/strapdown.js"></script>
+</html>
