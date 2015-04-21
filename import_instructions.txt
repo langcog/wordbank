@@ -6,9 +6,9 @@ and a dataset using that instrument that's from Dr. Dax.
 ** Instrument **
 - Make a directory in raw_data/ for the instrument (by convention called Wugese_WS, but doesn't have to be).
 - Put an instrument definition file in that directory (by convention called [Wugese_WS].csv or [Wugese_WS].xlsx, but doesn't have to be).
-  The instrument definition file should be either a csv file or a an excel file that has the following columns:
+  The instrument definition file should be either a csv file or a an excel file in which each row defined an item, and which has the following columns:
   	- itemID: how the item is identified in Wordbank
-  		spec: string no more than 50 characters long, which must be unique across the items of a given instrument, and can contain only characters that are letters or underscores
+  		spec: string no more than 50 characters long that contains only characters that are letters or underscores; must be unique across the items of a given instrument
   		examples: item_1, item_25, item_100
   	- item: a shorter and simpler value for the item
   		spec: ascii string no more than 20 characters long
@@ -49,19 +49,50 @@ and a dataset using that instrument that's from Dr. Dax.
 - Re-do database migrations by running
 	./manage.py makemigrations
 	./manage.py migrate
-- Re-populate database tables that change based on adding a new instrument by running
+- Add the instrument to the instrument map table by running
 	./manage.py populate_instrumentsmap
+- Add the instrument's items to the word mapping table by running
 	./manage.py populate_word_mapping
-	./manage.py populate_source
 - If this instrument has any new categories, add rows to raw_data/categories.csv with them and the correponding lexical categories and run
 	./manage.py populate_category
 
 ** Dataset **
 - Put each dataset's data, field mapping, and value mapping in the raw_data/Wugese_WS directory.
-	- Either a single excel file called WugeseWS_Dax with the sheets data, field_mapping, and value_mapping;
-	- Or a three csv files, one called WugeseWS_Dax_data, one called WugeseWS_Dax_fields, and one called WugeseWS_Dax_values.
-	# TODO: specs and explanations for data and mappings
-- Add the datasets to static/json/datasets.json with an entry such as
+	- Either a single excel file (by convention called WugeseWS_Dax, but doesn't have to be), with sheets named data, fields, and values;
+	- Or three csv files, with the names *_data, *_fields, and *_values (* is WugeseWS_Dax by convention, but doesn't have to be).
+	- For the data sheet/file:
+		- The first row should be column labels (whatever they might be in this dataset).
+		- Each other row should be a single CDI administration.
+	- The fields sheet/file is a mapping from the dataset's column labels to Wordbank's fields, and should have the following columns:
+		- column: column labels from the data sheet/file (up to case sensitivity) that will be extracted
+		- field: what Wordbank field to map the column label to
+			- MUST have study_id and at least one of data_age and (date_of_birth and date_of_test)
+			- can also optionally have any of birth_order, ethnicity, mom_ed, sex
+			- the rest (everything in group=item) MUST be in this dataset's instrument definition file's itemID column
+			  * this is how the dataset's fields get mapped, tricky and important to get right *
+		- group: whether this field should be associated with the administration, the child, or the data table for the instrument
+			- one of admin, child, or item
+		- type: how to treat the value(s) of this field
+			- study_id, study_momed -> value as is
+			- birth_order, data_age -> value is made into int
+			- date_of_birth, date_of_test -> value is made into date
+			- ethnicity, sex, mom_ed, <any type in group=item> -> value is mapped using value mapping
+	- The values sheet/file is a mapping from the dataset's value to Wordbank's values, split by type, and should have the following columns:
+		- type: one of the types in the field mapping sheet/file
+		- data_value: the value option in the dataset
+		- value: the short form (e.g. M) of the corresponding value option in Wordbank
+		  The sets of value options in Wordbank are
+		  - For ethnicity, defined in common/models.py
+		  	(('A', 'Asian'), ('B', 'Black'), ('H', 'Hispanic'), ('W', 'White'), ('O', 'Other/Mixed'))
+		  - For sex, defined in common/models.py
+		  	(('M', 'Male'), ('F', 'Female'), ('O', 'Other'))
+		  - For mom_ed, defined in common/management/commands/populate_momed.py
+		  	{(1, 'None'), (2, 'Primary'), (3, 'Some Secondary'), (4, 'Secondary'), (5, 'Some College'), (6, 'College'),
+		  	(7, 'Some Graduate'), (8, 'Graduate')}
+		  - For all types in group=item, defined in e.g. instruments/schemas/Wugese_WS.py and equal to the choices for that type of item as given in the instrument definition file
+		  	e.g. if the choices are "understands; produces", the options are [(u'understands', u'understands'), (u'produces', u'produces')]
+
+- Add the dataset to static/json/datasets.json with an entry such as
     {
         "name": "Dax",
         "dataset": "",
@@ -70,12 +101,14 @@ and a dataset using that instrument that's from Dr. Dax.
         "file": "raw_data/Wugese_WS/WugeseWS_Dax.xlsx",
         "splitcol": false
     }
-    For csv files, the "file" field should be "raw_data/Wugese_WS/WugeseWS_Dax.csv" (data import code will find the three files from there).
+    For csv files, the "file" field should be the path to * above (e.g. "raw_data/Wugese_WS/WugeseWS_Dax.csv").
     The "dataset" field allows adding multiple datasets from the same source, e.g. if Dr. Dax provided a norming dataset and another dataset.
     The "splitcol" field is normally false, but should be true for datasets that record WG production and comprehension in separate columns.
+- Add this dataset to the source table by running
+	./manage.py populate_source
 - Import the dataset by running
 	./manage.py import_instrument_datasets Wugese WS
 	or
 	./manage.py import_single_dataset raw_data/Wugese_WS/WugeseWS_Dax.xlsx
-- Cache vocabulary sizes for the instrument's datasets by running
+- Cache vocabulary sizes for the dataset's instrument by running
 	./manage.py populate_vocabulary_size Wugese WS
