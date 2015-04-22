@@ -70,7 +70,8 @@ get.administration.data <- function(momed.table, child.table, instruments.table,
     left_join(instruments) %>%
     select(-instrument_id) %>%
     left_join(children) %>%
-    select(-child_id)
+    select(-child_id) %>%
+    filter(age >= age_min, age <= age_max)
   
   return(admins)
   
