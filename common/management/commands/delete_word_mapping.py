@@ -7,4 +7,4 @@ class Command(NoArgsCommand):
     def handle(self, *args, **options):
 
         WordMapping.objects.all().delete()
-        WordInfo.objects.all().delete()
+#        WordInfo.objects.all().delete()
