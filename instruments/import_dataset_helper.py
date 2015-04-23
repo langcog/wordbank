@@ -58,6 +58,13 @@ class ImportHelper:
                     value += column[-1]
                 return self.value_mapping[field_type][value]
 
+    def resolve_values(self, value0, value1):
+        if value0 == 'produces' or value1 == 'produces':
+            return 'produces'
+        if value0 == 'understands' or value1 == 'understands':
+            return 'understands'
+        return ''
+
     def get_data_fields(self, cols, group, row_values):
         group_cols = cols[group]
         results = defaultdict(lambda: None)
@@ -71,8 +78,8 @@ class ImportHelper:
                 results['study_momed'] = study_momed_value
             else:
                 field_value = self.get_field_value(column, field_type, group, row_values)
-                if self.splitcol and (results[field] == 'produces' or field_value == 'produces'):
-                    results[field] = 'produces'
+                if self.splitcol and field in results:
+                    results[field] = self.resolve_values(results[field], field_value)
                 else:
                     results[field] = field_value
         return results
