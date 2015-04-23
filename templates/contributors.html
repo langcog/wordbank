@@ -19,8 +19,9 @@
       </li>
       {% for source in language_sources.1 %}
       <li class="list-group-item">
-        <span class="badge">{{ source.instrument_form }} {{ source.n }}</span>
-        {{ source.contributor }}
+        {{ source.contributor }} &nbsp;
+        <span class="label label-info">{{ source.instrument_form }}</span>
+        <span class="label label-warning">{{ source.n }}</span>
       </li>
       {% endfor %}
     </ul>
