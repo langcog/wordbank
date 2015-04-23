@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="lead">
+  <p>Thank you to all of the generous researchers that have contributed data to Wordbank!</p>
+</div>
+
+<div class="row">
+  {% for language_sources in language_sources_list %}
+  <div class="col-md-4">
+    <ul class="list-group">
+      <li class="list-group-item active">
+        {{ language_sources.0 }}
+      </li>
+      {% for source in language_sources.1 %}
+      <li class="list-group-item">
+        <span class="badge">{{ source.n }}</span>
+        {{ source.name }}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+</div>
+
+<p>To contribute your data, please contact <a href="mailto:wordbank@stanford.edu">wordbank@stanford.edu</a>.</p>
+
+{% endblock %}
