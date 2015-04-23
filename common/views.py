@@ -29,16 +29,33 @@ class Contributors(View):
 
   def get(self, request):
     sources = Source.objects.annotate(n = Count('administration'))
-    language_sources = defaultdict(list)
+    language_sources_dict = defaultdict(list)
     for source in sources:
-      language_sources[source.instrument_language].append(source)
-    languages = sorted(language_sources.keys(), key = lambda lang: len(language_sources[lang]), reverse = True)
+      language_sources_dict[source.instrument_language].append(source)
+#    languages = sorted(language_sources_dict.keys(), key = lambda lang: len(language_sources_dict[lang]), reverse = True)
+    languages = sorted(language_sources_dict.keys())
     language_sources_list = []
     for language in languages:
-      language_sources_list.append([language, language_sources[language]])
-    print language_sources_list
+      language_sources_list.append([language, language_sources_dict[language]])
+    num_cols = 2
+    col_size = (sum([len(language_sources) for language, language_sources in language_sources_list]) + len(language_sources_list)*2) / num_cols
+    print col_size
+    columns = {}
+    col_index = 1
+    item_buffer = []
+    buffer_size = 0
+    for language, language_sources in language_sources_list:
+      item_buffer.append([language, language_sources])
+      buffer_size += len(language_sources) + 2
+      if buffer_size >= col_size:
+        columns[col_index] = item_buffer
+        col_index += 1
+        item_buffer = []
+        buffer_size = 0
+      columns[col_index] = item_buffer
+    print columns
 
-    return render(request, 'contributors.html', {'language_sources_list': language_sources_list})
+    return render(request, 'contributors.html', {'columns': columns})
 
 class Reports(View):
 
