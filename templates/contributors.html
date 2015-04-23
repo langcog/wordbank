@@ -11,8 +11,9 @@
 <br>
 
 <div class="row">
-  {% for language_sources in language_sources_list %}
+  {% for column, language_sources_list in columns.items %}
   <div class="col-md-6">
+    {% for language_sources in language_sources_list %}
     <ul class="list-group">
       <li class="list-group-item active">
         {{ language_sources.0 }}
@@ -22,13 +23,13 @@
         <h5 class="list-group-item-heading">{{ source.contributor }} &nbsp;
         <span class="label label-info">{{ source.instrument_form }}</span>
         <span class="label label-warning">{{ source.n }}</span></h5>
-        <p class="list-group-item-text"><small>{{ source.citation }}</small></p>
+          <p class="list-group-item-text"><small>{{ source.citation }}</small></p>
       </li>
       {% endfor %}
     </ul>
+    {% endfor %}
   </div>
   {% endfor %}
-  <div class="clearfix visible-xs-block"></div>
 </div>
 
 {% endblock %}
