@@ -1,7 +1,7 @@
 ---
 title: "Accessing the Wordbank Database"
 author: "Mika Braginsky and Dan Yurovsky"
-date: "2015-04-09"
+date: "2015-04-22"
 output:
   html_document:
     highlight: tango
@@ -86,7 +86,8 @@ kable(admins.summary.total,
 Load in item data.
 ```{r}
 items <- get.item.data(common.tables$wordmapping,
-                       common.tables$instrumentsmap)
+                       common.tables$instrumentsmap,
+                       common.tables$category)
 ```
 
 Number of items by category for each instrument:
@@ -137,7 +138,7 @@ num.words <- items %>%
 
 vocab.admins <- admins %>%
   select(data_id, language, form, age, sex, production) %>%
-  filter(form == "WS", age >= 16, age <= 30, !is.na(sex), sex != "")
+  filter(form == "WS", !is.na(sex), sex != "")
 
 vocab.data <- vocab.admins %>%
   group_by(language, sex, age) %>%
@@ -171,15 +172,16 @@ ggplot(vocab.data,
                   size = .8,
                   show_guide = FALSE) +
   geom_line(size=1) +
-  scale_x_continuous(breaks = seq(16,30,2), limits = c(16,31),
+  scale_x_continuous(breaks = seq(min(vocab.data$age), max(vocab.data$age), 2),
+                     limits = c(min(vocab.data$age), max(vocab.data$age) + 1),
                      name = "\nAge (months)") +
   scale_y_continuous(name = "Median Productive Vocabulary (proportion of total words)\n",
                      limits=c(0,1)) +
+  scale_color_manual(values = c("#2c7bb6", "#d7191c")) +
   theme_bw(base_size=14) +
   theme(legend.position="none",
         text=element_text(family=font)) +
-  geom_dl(method = list(dl.trans(x=x +.2), "last.qp", cex=1, fontfamily=font)) +
-  scale_color_manual(values = c("#2c7bb6", "#d7191c"))
+  geom_dl(method = list(dl.trans(x=x +.2), "last.qp", cex=1, fontfamily=font))
 ```
 
 ### Sample by-item analysis: trajectories of color words
@@ -188,22 +190,16 @@ Set up color terms of each language.
 ```{r}
 colors.key <- c("red", "orange", "yellow", "green", "blue", "black", "white", "brown")
 
-colors.croatian <- c("crvena", "narančasta", "žuta", "zelena", "plava", "crn", "bijela", "smeđe")
-colors.danish <- c("rød", "orange", "gul", "grøn", "blå", "sort", "hvid", "brun")
-colors.english <- c("red", "orange (description)", "yellow", "green", "blue", "black", "white", "brown")
-colors.german <- c("rot", "orange", "gelb", "grün", "blau", "schwarz", "weiß", "braun")
-colors.italian <- c("rosso", "arancione", "giallo", "verde", "blu", "nero", "bianco", "marrone")
-colors.norwegian <- c ("rød", "oransje", "gul", "grønn" ,"blå", "svart", "hvit", "brun")
-colors.russian <- c("красный", "оранжевый", "желтый", "зеленый", "синий", "черный", "белый", "коричневый")
-colors.spanish <- c("rojo", "", "amarillo", "verde", "azul", "negro", "blanco", "") # rosa morado
-colors.swedish <- c("röd", "orange", "gul", "grön", "blå", "svart", "vit", "brun")
-colors.turkish <- c("Kırmızı", "Turuncu", "Sarı", "Yeşil", "", "Siyah", "Beyaz", "Kahverengi") # Mor
-
-colors <- list("Croatian" = colors.croatian, "Danish" = colors.danish,
-               "English" = colors.english, "German" = colors.german,
-               "Italian" = colors.italian, "Norwegian" = colors.norwegian,
-               "Russian" = colors.russian, "Spanish" = colors.spanish,
-               "Swedish" = colors.swedish, "Turkish" = colors.turkish)
+colors <- list("Croatian" = c("crvena", "narančasta", "žuta", "zelena", "plava", "crn", "bijela", "smeđe"),
+               "Danish" = c("rød", "orange", "gul", "grøn", "blå", "sort", "hvid", "brun"),
+               "English" = c("red", "orange (description)", "yellow", "green", "blue", "black", "white", "brown"),
+               "German" = c("rot", "orange", "gelb", "grün", "blau", "schwarz", "weiß", "braun"),
+               "Italian" = c("rosso", "arancione", "giallo", "verde", "blu", "nero", "bianco", "marrone"),
+               "Norwegian" = c("rød", "oransje", "gul", "grønn" ,"blå", "svart", "hvit", "brun"),
+               "Russian" = c("красный", "оранжевый", "желтый", "зеленый", "синий", "черный", "белый", "коричневый"),
+               "Spanish" = c("rojo", "", "amarillo", "verde", "azul", "negro", "blanco", ""), # rosa morado
+               "Swedish" = c("röd", "orange", "gul", "grön", "blå", "svart", "vit", "brun"),
+               "Turkish" = c("Kırmızı", "Turuncu", "Sarı", "Yeşil", "", "Siyah", "Beyaz", "Kahverengi")) # Mor
 ```
 
 Function for getting color data for a given language.
@@ -232,11 +228,11 @@ get.language.data <- function(lang) {
 
 Load color data for each language and put it all together.
 ```{r}
-languages <- unique(instrument.tables$language)
+languages <- names(colors)
 color.data <- bind_rows(sapply(languages, get.language.data, simplify=FALSE))
 
 color.byage.data <- color.data %>%
-  left_join(filter(admins, form == "WS", age >= 16, age <= 30)) %>%
+  inner_join(filter(admins, form == "WS")) %>%
   group_by(language, color, age) %>%
   mutate(produces = value == "produces") %>%
   summarise_each(funs(na.mean, ci.mean.high, ci.mean.low), produces)
@@ -271,9 +267,9 @@ ggplot(color.byage.data, aes(x=age, y=na.mean, color=color, label=color)) +
         text=element_text(family=font)) +
   geom_dl(method = list(dl.trans(x=x +.2), "last.qp", cex=.7, fontfamily=font)) +
                                 # black blue brown green orange red white yellow
-  scale_color_manual(values = c("black", "#2c7bb6", "brown", "#1a9641", "orange",
-                                "#d7191c", "gray87", "gold1")) +
-  scale_x_continuous(breaks = seq(16,30,2), limits = c(16,33),
+  scale_color_manual(values = c("black", "#2c7bb6", "brown", "#1a9641", "orange", "#d7191c", "gray87", "gold1")) +
+  scale_x_continuous(breaks = seq(min(color.byage.data$age), max(color.byage.data$age), 2),
+                     limits = c(min(color.byage.data$age), max(color.byage.data$age) + 3),
                      name = "\nAge (months)") +
   scale_y_continuous(name = "Proportion of Children Producing\n",
                      limits = c(0,1))
