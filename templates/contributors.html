@@ -7,24 +7,26 @@
   <p>Thank you to all of the generous researchers that have contributed data to Wordbank!</p>
 </div>
 
+<p>To contribute your data, please contact <a href="mailto:wordbank-contact@stanford.edu">wordbank-contact@stanford.edu</a>.</p>
+<br>
+
 <div class="row">
   {% for language_sources in language_sources_list %}
-  <div class="col-md-4">
+  <div class="col-md-6">
     <ul class="list-group">
       <li class="list-group-item active">
         {{ language_sources.0 }}
       </li>
       {% for source in language_sources.1 %}
       <li class="list-group-item">
-        <span class="badge">{{ source.n }}</span>
-        {{ source.name }}
+        <span class="badge">{{ source.instrument_form }} {{ source.n }}</span>
+        {{ source.contributor }}
       </li>
       {% endfor %}
     </ul>
   </div>
   {% endfor %}
+  <div class="clearfix visible-xs-block"></div>
 </div>
-
-<p>To contribute your data, please contact <a href="mailto:wordbank@stanford.edu">wordbank@stanford.edu</a>.</p>
 
 {% endblock %}

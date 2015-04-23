@@ -5,7 +5,9 @@
         "instrument_language": "English",
         "instrument_form": "WS",
         "file": "raw_data/English_WS/EnglishWS_Marchman_Norming.xlsx",
-        "splitcol": false
+        "splitcol": false,
+        "contributor": "Dale and Fenson?",
+        "citation": "Dale, P. S., and Fenson, L. (1996). Lexical development norms for young children. Behavioral Research Methods, Instruments, & Computers, 28, 125-127."
     },
     {
         "name": "Marchman",
@@ -13,7 +15,9 @@
         "instrument_language": "English",
         "instrument_form": "WS",
         "file": "raw_data/English_WS/EnglishWS_Marchman_Wisconsin.xlsx",
-        "splitcol": false
+        "splitcol": false,
+        "contributor": "Virgnia Marchman, Wisconsin?",
+        "citation": ""
     },
     {
         "name": "Marchman",
@@ -21,7 +25,9 @@
         "instrument_language": "English",
         "instrument_form": "WS",
         "file": "raw_data/English_WS/EnglishWS_Marchman_Dallas.xlsx",
-        "splitcol": false
+        "splitcol": false,
+        "contributor": "Virgnia Marchman, Dallas?",
+        "citation": ""
     },
     {
         "name": "Smith",
@@ -29,7 +35,9 @@
         "instrument_language": "English",
         "instrument_form": "WS",
         "file": "raw_data/English_WS/EnglishWS_Smith_electronic.xlsx",
-        "splitcol": false
+        "splitcol": false,
+        "contributor": "Linda Smith, Indiania University",
+        "citation": ""
     },
     {
         "name": "Smith",
@@ -37,7 +45,9 @@
         "instrument_language": "English",
         "instrument_form": "WS",
         "file": "raw_data/English_WS/EnglishWS_Smith_paper.xlsx",
-        "splitcol": false
+        "splitcol": false,
+        "contributor": "Linda Smith, Indiania University",
+        "citation": ""
     },
     {
         "name": "Byers",
@@ -45,7 +55,9 @@
         "instrument_language": "English",
         "instrument_form": "WS",
         "file": "raw_data/English_WS/EnglishWS_Byers.xlsx",
-        "splitcol": false
+        "splitcol": false,
+        "contributor": "Krista Byers-Heinlein, Concordia University",
+        "citation": ""
     },
     {
         "name": "Thal",
@@ -53,7 +65,9 @@
         "instrument_language": "English",
         "instrument_form": "WS",
         "file": "raw_data/English_WS/EnglishWS_Thal_16.xlsx",
-        "splitcol": false
+        "splitcol": false,
+        "contributor": "Donna Thal, San Diego State University",
+        "citation": ""
     },
     {
         "name": "Thal",
@@ -61,7 +75,9 @@
         "instrument_language": "English",
         "instrument_form": "WS",
         "file": "raw_data/English_WS/EnglishWS_Thal_28.xlsx",
-        "splitcol": false
+        "splitcol": false,
+        "contributor": "Donna Thal, San Diego State University",
+        "citation": ""
     },
     {
         "name": "Marchman",
@@ -69,7 +85,9 @@
         "instrument_language": "English",
         "instrument_form": "WG",
         "file": "raw_data/English_WG/EnglishWG_Marchman_Norming.xlsx",
-        "splitcol": true
+        "splitcol": true,
+        "contributor": "Dale and Fenson?",
+        "citation": "Dale, P. S., and Fenson, L. (1996). Lexical development norms for young children. Behavioral Research Methods, Instruments, & Computers, 28, 125-127."
     },
     {
         "name": "Byers",
@@ -77,7 +95,9 @@
         "instrument_language": "English",
         "instrument_form": "WG",
         "file": "raw_data/English_WG/EnglishWG_Byers.xlsx",
-        "splitcol": false
+        "splitcol": false,
+        "contributor": "Krista Byers-Heinlein, Concordia University",
+        "citation": ""
     },
     {
         "name": "Thal",
@@ -85,7 +105,9 @@
         "instrument_language": "English",
         "instrument_form": "WG",
         "file": "raw_data/English_WG/EnglishWG_Thal_13.xlsx",
-        "splitcol": true
+        "splitcol": true,
+        "contributor": "Donna Thal, San Diego State University",
+        "citation": ""
     },
     {
         "name": "Thal",
@@ -93,7 +115,9 @@
         "instrument_language": "English",
         "instrument_form": "WG",
         "file": "raw_data/English_WG/EnglishWG_Thal_16.xlsx",
-        "splitcol": true
+        "splitcol": true,
+        "contributor": "Donna Thal, San Diego State University",
+        "citation": ""
     },
     {
         "name": "Marchman",
@@ -101,7 +125,9 @@
         "instrument_language": "Spanish",
         "instrument_form": "WS",
         "file": "raw_data/Spanish_WS/SpanishWS_Marchman_Norming.xlsx",
-        "splitcol": false
+        "splitcol": false,
+        "contributor": "Donna Jackson-Maldonado, Universidad Autónoma de Querétaro",
+        "citation": "Jackson-Maldonado, D., Thal, D., Marchman, V., Newton, T., Fenson, L, & Conboy, B. (2003). MacArthur Inventarios del Desarrollo de Habilidades Comunicativas. User´s Guide and Technical Manual. Brookes, Baltimore."
     },
     {
         "name": "Marchman",
@@ -109,7 +135,9 @@
         "instrument_language": "Spanish",
         "instrument_form": "WG",
         "file": "raw_data/Spanish_WG/SpanishWG_Marchman_Norming.xlsx",
-        "splitcol": false
+        "splitcol": false,
+        "contributor": "Donna Jackson-Maldonado, Universidad Autónoma de Querétaro",
+        "citation": "Jackson-Maldonado, D., Thal, D., Marchman, V., Newton, T., Fenson, L, & Conboy, B. (2003). MacArthur Inventarios del Desarrollo de Habilidades Comunicativas. User´s Guide and Technical Manual. Brookes, Baltimore."
     },
     {
         "name": "Bleses",
@@ -117,7 +145,9 @@
         "instrument_language": "Danish",
         "instrument_form": "WS",
         "file": "raw_data/Danish_WS/DanishWS_Bleses.xlsx",
-        "splitcol": false
+        "splitcol": false,
+        "contributor": "Dorthe Bleses, University of Southern Denmark",
+        "citation": "Bleses, D., Vach, W., Slott, M., Wehberg, S., Thomsen, P., Madsen, T. & Basbøll, H. (2008). The Danish Communicative Development Inventories: validity and main developmental trends. Journal of Child Language, 35, 619-650."
     },
     {
         "name": "Kristoffersen",
@@ -125,7 +155,9 @@
         "instrument_language": "Norwegian",
         "instrument_form": "WS",
         "file": "raw_data/Norwegian_WS/NorwegianWS_Kristoffersen.xlsx",
-        "splitcol": false
+        "splitcol": false,
+        "contributor": "Kristian Kristoffersen, University of Oslo",
+        "citation": "Kristoffersen, K. E., Simonsen, H. G., Bleses, D., Wehberg, S., Jørgensen, R. N., Eiesland, E. A. & Henriksen, L. Y. (in progress). Development and variation in early communicative skills in infants and toddlers acquiring Norwegian – a CDI-based study."
     },
     {
         "name": "Kristoffersen",
@@ -133,7 +165,9 @@
         "instrument_language": "Norwegian",
         "instrument_form": "WS",
         "file": "raw_data/Norwegian_WS/NorwegianWS_Kristoffersen_longitudinal.xlsx",
-        "splitcol": false
+        "splitcol": false,
+        "contributor": "Kristian Kristoffersen, University of Oslo",
+        "citation": "Kristoffersen, K. E., Simonsen, H. G., Bleses, D., Wehberg, S., Jørgensen, R. N., Eiesland, E. A. & Henriksen, L. Y. (in progress). Development and variation in early communicative skills in infants and toddlers acquiring Norwegian – a CDI-based study."
     },
     {
         "name": "Kristoffersen",
@@ -141,7 +175,9 @@
         "instrument_language": "Norwegian",
         "instrument_form": "WG",
         "file": "raw_data/Norwegian_WG/NorwegianWG_Kristoffersen.xlsx",
-        "splitcol": false
+        "splitcol": false,
+        "contributor": "Kristian Kristoffersen, University of Oslo",
+        "citation": "Kristoffersen, K. E., Simonsen, H. G., Bleses, D., Wehberg, S., Jørgensen, R. N., Eiesland, E. A. & Henriksen, L. Y. (in progress). Development and variation in early communicative skills in infants and toddlers acquiring Norwegian – a CDI-based study."
     },
     {
         "name": "Kristoffersen",
@@ -149,7 +185,9 @@
         "instrument_language": "Norwegian",
         "instrument_form": "WG",
         "file": "raw_data/Norwegian_WG/NorwegianWG_Kristoffersen_longitudinal.xlsx",
-        "splitcol": false
+        "splitcol": false,
+        "contributor": "Kristian Kristoffersen, University of Oslo",
+        "citation": "Kristoffersen, K. E., Simonsen, H. G., Bleses, D., Wehberg, S., Jørgensen, R. N., Eiesland, E. A. & Henriksen, L. Y. (in progress). Development and variation in early communicative skills in infants and toddlers acquiring Norwegian – a CDI-based study."
     },
     {
         "name": "CLEX",
@@ -157,7 +195,9 @@
         "instrument_language": "Croatian",
         "instrument_form": "WG",
         "file": "raw_data/Croatian_WG/CroatianWG_CLEX.csv",
-        "splitcol": false
+        "splitcol": false,
+        "contributor": "Melita Kovacevic, University of Zagreb",
+        "citation": "Kovacevic, M., Babic, Z., & Brozovic, B. (1996). A Croatian language parent report study: Lexical and grammatical development. Paper presented at the VIIth International Congress for the Study of Child Language, July 1996, Istanbul, Turkey."
     },
     {
         "name": "CLEX",
@@ -165,7 +205,9 @@
         "instrument_language": "Croatian",
         "instrument_form": "WS",
         "file": "raw_data/Croatian_WS/CroatianWS_CLEX.csv",
-        "splitcol": false
+        "splitcol": false,
+        "contributor": "Melita Kovacevic, University of Zagreb",
+        "citation": "Kovacevic, M., Babic, Z., & Brozovic, B. (1996). A Croatian language parent report study: Lexical and grammatical development. Paper presented at the VIIth International Congress for the Study of Child Language, July 1996, Istanbul, Turkey."
     },
     {
         "name": "CLEX",
@@ -173,7 +215,9 @@
         "instrument_language": "German",
         "instrument_form": "WS",
         "file": "raw_data/German_WS/GermanWS_CLEX.csv",
-        "splitcol": false
+        "splitcol": false,
+        "contributor": "Gisela Szagun, University College London",
+        "citation": "Szagun, G., Stumper, B. & Schramm, A.S. (2009). Fragebogen zur frühkindlichen Sprachentwicklung (FRAKIS) und FRAKIS-K (Kurzform). Frankfurt: Pearson Assessment."
     },
     {
         "name": "CLEX",
@@ -181,7 +225,9 @@
         "instrument_language": "Italian",
         "instrument_form": "WS",
         "file": "raw_data/Italian_WS/ItalianWS_CLEX.csv",
-        "splitcol": false
+        "splitcol": false,
+        "contributor": "Christina Caselli, Institute of Cognitive Sciences and Technologies - CNR",
+        "citation": ""
     },
     {
         "name": "CLEX",
@@ -189,7 +235,9 @@
         "instrument_language": "Russian",
         "instrument_form": "WG",
         "file": "raw_data/Russian_WG/RussianWG_CLEX.csv",
-        "splitcol": false
+        "splitcol": false,
+        "contributor": "Stella Ceytlin, SPb Russian Pedagogical University",
+        "citation": "Е.А.Вершинина, М.Б. Елисеева, Т.С. Лаврова, В.Л. Рыскина, С.Н. Цейтлин. Некоторые нормативы речевого развития детей от 8 до 18 месяцев// Специальное образование: традиции и инновации: Сборник научно-методических трудов с международным участием. — СПб.: Изд-во РГПУ им. А. И. Герцена, 2011."
     },
     {
         "name": "CLEX",
@@ -197,7 +245,9 @@
         "instrument_language": "Russian",
         "instrument_form": "WS",
         "file": "raw_data/Russian_WS/RussianWS_CLEX.csv",
-        "splitcol": false
+        "splitcol": false,
+        "contributor": "Stella Ceytlin, SPb Russian Pedagogical University",
+        "citation": "М.Б. Елисеева, Е.А. Вершинина. Некоторые нормативы речевого развития детей от 18 до 36 месяцев (по материалам МакАртуровского опросника) // Проблемы онтолингвистики – 2009. Материалы международной конференции 17-19 июбня 2009 г. Санкт-Петербург, С.72-78"
     },
     {
         "name": "CLEX",
@@ -205,7 +255,9 @@
         "instrument_language": "Swedish",
         "instrument_form": "WG",
         "file": "raw_data/Swedish_WG/SwedishWG_CLEX.csv",
-        "splitcol": false
+        "splitcol": false,
+        "contributor": "Mårten Eriksson, University of Gävle",
+        "citation": "Eriksson, M., & Berglund, E. (2002). Instruments, scoring manual and percentile levels of the Swedish Early Communicative Development Inventory, SECDI. (FoU-Rapport 17). Gävle, Sweden: Institutionen för pedagogik, didaktik och psykologi."
     },
     {
         "name": "CLEX",
@@ -213,7 +265,9 @@
         "instrument_language": "Swedish",
         "instrument_form": "WS",
         "file": "raw_data/Swedish_WS/SwedishWS_CLEX.csv",
-        "splitcol": false
+        "splitcol": false,
+        "contributor": "Mårten Eriksson, University of Gävle",
+        "citation": "Eriksson, M., & Berglund, E. (2002). Instruments, scoring manual and percentile levels of the Swedish Early Communicative Development Inventory, SECDI. (FoU-Rapport 17). Gävle, Sweden: Institutionen för pedagogik, didaktik och psykologi."
     },
     {
         "name": "CLEX",
@@ -221,7 +275,9 @@
         "instrument_language": "Turkish",
         "instrument_form": "WG",
         "file": "raw_data/Turkish_WG/TurkishWG_CLEX.csv",
-        "splitcol": false
+        "splitcol": false,
+        "contributor": "Aylin Küntay, Koç University",
+        "citation": "Acarlar, F., Aksu-Koç, A., Küntay, A.C., Maviş, İ., Sofu, H., Topbaş, S., Turan, F. (2009). Adapting MB-CDI to Turkish: The first phase. In S. Ay, Ö. Aydın., İ. Ergenç, S. Gökmen, S. İşsever, and D. Peçenel (Eds.) Essays on Turkish linguistics: Proceedings of the 14th International Conference on Turkish Linguistics, August 6-8, 2008. Harrassowitz Verlag: Wiesbaden, Germany."
     },
     {
         "name": "CLEX",
@@ -229,7 +285,9 @@
         "instrument_language": "Turkish",
         "instrument_form": "WS",
         "file": "raw_data/Turkish_WS/TurkishWS_CLEX.csv",
-        "splitcol": false
+        "splitcol": false,
+        "contributor": "Aylin Küntay, Koç University",
+        "citation": "Acarlar, F., Aksu-Koç, A., Küntay, A.C., Maviş, İ., Sofu, H., Topbaş, S., Turan, F. (2009). Adapting MB-CDI to Turkish: The first phase. In S. Ay, Ö. Aydın., İ. Ergenç, S. Gökmen, S. İşsever, and D. Peçenel (Eds.) Essays on Turkish linguistics: Proceedings of the 14th International Conference on Turkish Linguistics, August 6-8, 2008. Harrassowitz Verlag: Wiesbaden, Germany."
     },
     {
         "name": "Shalev",
@@ -237,7 +295,9 @@
         "instrument_language": "Hebrew",
         "instrument_form": "WG",
         "file": "raw_data/Hebrew_WG/HebrewWG_Shalev.xlsx",
-        "splitcol": false
+        "splitcol": false,
+        "contributor": "Hila Gendler Shalev, Tel-Aviv University",
+        "citation": "Gendler-Shalev, H. (2005). תירבעל HCDI-WG םירוה ןולאש תמאתה."
     },
     {
         "name": "Maital",
@@ -245,6 +305,8 @@
         "instrument_language": "Hebrew",
         "instrument_form": "WS",
         "file": "raw_data/Hebrew_WS/HebrewWS_Maital.xlsx",
-        "splitcol": false
+        "splitcol": false,
+        "contributor": "Sharone Maital, University of Haifa",
+        "citation": "Maital, S., Dromi, E. Sagi, A. & Bornstein, M. H. (2000). The Hebrew Communicative Development Inventory: Language specific properties and cross-linguistic generalizations, Journal of Child Language, 27, 1-25."
     }
 ]
