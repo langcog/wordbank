@@ -14,7 +14,13 @@ class Command(NoArgsCommand):
             instrument_age_min, instrument_age_max = instrument['age_min'], instrument['age_max']
             instrument_has_grammar = instrument['has_grammar']
 
-            if not InstrumentsMap.objects.filter(language=instrument_language, form=instrument_form).exists():
+            if InstrumentsMap.objects.filter(language=instrument_language, form=instrument_form).exists():
+                instrument_obj = InstrumentsMap.objects.get(language=instrument_language, form=instrument_form)
+                instrument_obj.age_min = instrument_age_min
+                instrument_obj.age_max = instrument_age_max
+                instrument_obj.has_grammar = instrument_has_grammar
+                instrument_obj.save()
+            else:
                 InstrumentsMap.objects.create(language=instrument_language, form=instrument_form,
                                               age_min=instrument_age_min, age_max=instrument_age_max,
                                               has_grammar=instrument_has_grammar)
