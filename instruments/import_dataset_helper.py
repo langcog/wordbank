@@ -10,14 +10,13 @@ class ImportHelper:
     def __init__(self, data_file, splitcol=False):
 
         self.data_file = data_file
+        self.ftype = self.data_file.split('.')[-1]
         self.splitcol = splitcol
 
-        self.col_map = {}
-        self.field_value_mapping = defaultdict(lambda: dict())
         self.children = {}
         self.administrations = {}
-        self.datemode = None
 
+        self.datemode = None
         self.missing_values = {u'Null', u'#NULL!', u'', u' ', u'Missing', u'Unknown/other', u'?', u'NA'}
 
     @staticmethod
@@ -57,7 +56,7 @@ class ImportHelper:
                 value = self.value_typing(value).lower()
                 if self.splitcol and field_type == 'word':
                     value += column[-1]
-                return self.field_value_mapping[field_type][value]
+                return self.value_mapping[field_type][value]
 
     def get_data_fields(self, cols, group, row_values):
         group_cols = cols[group]
@@ -78,63 +77,24 @@ class ImportHelper:
                     results[field] = field_value
         return results
 
-    def import_data(self):
-
-        ftype = self.data_file.split('.')[-1]
-
-        if ftype == 'xlsx' or ftype == 'xls':
-
-            book = xlrd.open_workbook(self.data_file)
-            self.datemode = book.datemode
-
-            value_mapping_sheet = book.sheet_by_name('values')
-            value_mapping_nrows = value_mapping_sheet.nrows
-            get_value_mapping_row = lambda row: list(value_mapping_sheet.row_values(row))
-
-            field_mapping_sheet = book.sheet_by_name('fields')
-            field_mapping_nrows = field_mapping_sheet.nrows
-            get_field_mapping_row = lambda row: list(field_mapping_sheet.row_values(row))
-
-            data_sheet = book.sheet_by_name('data')
-            data_nrows = data_sheet.nrows
-            get_data_row = lambda row: list(data_sheet.row_values(row))
-            col_names = list(data_sheet.row_values(0))
-
-        elif ftype == 'csv':
-
-            value_mapping_file = open('.'.join(self.data_file.split('.')[:-1]) + '_values.csv', 'rU')
-            value_mapping_reader = list(csv.reader(value_mapping_file))
-            value_mapping_nrows = len(value_mapping_reader)
-            get_value_mapping_row = lambda row: value_mapping_reader[row]
-
-            field_mapping_file = open('.'.join(self.data_file.split('.')[:-1]) + '_fields.csv', 'rU')
-            field_mapping_reader = list(csv.reader(field_mapping_file))
-            field_mapping_nrows = len(field_mapping_reader)
-            get_field_mapping_row = lambda row: field_mapping_reader[row]
-
-            data_file = open('.'.join(self.data_file.split('.')[:-1]) + '_data.csv', 'rU')
-            data_reader = list(csv.reader(data_file))
-            data_nrows = len(data_reader)
-            get_data_row = lambda row: data_reader[row]
-            col_names = data_reader[0]
-
-        else:
-            raise IOError("Instrument file must be xlsx, xls, or csv.")
-
-        # make a mapping between model value sets and datasheet value sets
-        for row in xrange(1, value_mapping_nrows):
-            row_values = get_value_mapping_row(row)
+    # make a mapping between model value sets and datasheet value sets
+    def map_values(self):
+        value_mapping = defaultdict(dict)
+        for row in xrange(1, self.value_mapping_nrows):
+            row_values = self.get_value_mapping_row(row)
             if len(row_values) > 1:
                 field_type, value, data_value = row_values[:3]
                 value = self.value_typing(value)
                 data_value = self.value_typing(data_value).lower()
                 if data_value is not None and data_value != '':
-                    self.field_value_mapping[field_type][data_value] = value
+                    value_mapping[field_type][data_value] = value
+        return value_mapping
 
-        # make a mapping between datasheet column names and model field names/types
-        cols = defaultdict(lambda: dict())
-        for row in xrange(1, field_mapping_nrows):
-            row_values = get_field_mapping_row(row)
+    # make a mapping between datasheet column names and model field names/types
+    def map_fields(self):
+        field_mapping = defaultdict(dict)
+        for row in xrange(1, self.field_mapping_nrows):
+            row_values = self.get_field_mapping_row(row)
             if len(row_values) > 1:
                 field, column, group, field_type = row_values[:4]
                 if column is not None and column != '':
@@ -143,31 +103,88 @@ class ImportHelper:
                         if self.splitcol and field_type == 'word':
                             columns = [column + 'u', column + 'p']
                     for column in columns:
-                        cols[group][column.lower()] = {'field': field, 'field_type': field_type}
+                        field_mapping[group][column.lower()] = {'field': field, 'field_type': field_type}
+        return field_mapping
 
-        # make a mapping between dataset column names and dataset column indexes
-        for index, value in enumerate(col_names):
-            self.col_map[value.lower()] = index
+    # make a mapping between dataset column names and dataset column indexes
+    def map_cols(self):
+        col_map = {}
+        for index, value in enumerate(self.col_names):
+            col_map[value.lower()] = index
+        return col_map
+
+    def get_meta_data(self):
+
+        if self.ftype == 'xlsx' or self.ftype == 'xls':
+
+            book = xlrd.open_workbook(self.data_file)
+            self.datemode = book.datemode
+
+            value_mapping_sheet = book.sheet_by_name('values')
+            self.value_mapping_nrows = value_mapping_sheet.nrows
+            self.get_value_mapping_row = lambda row: list(value_mapping_sheet.row_values(row))
+
+            field_mapping_sheet = book.sheet_by_name('fields')
+            self.field_mapping_nrows = field_mapping_sheet.nrows
+            self.get_field_mapping_row = lambda row: list(field_mapping_sheet.row_values(row))
+
+            data_sheet = book.sheet_by_name('data')
+            self.data_nrows = data_sheet.nrows
+            self.get_data_row = lambda row: list(data_sheet.row_values(row))
+            self.col_names = list(data_sheet.row_values(0))
+
+        elif self.ftype == 'csv':
+
+            value_mapping_file = open('.'.join(self.data_file.split('.')[:-1]) + '_values.csv', 'rU')
+            value_mapping_reader = list(csv.reader(value_mapping_file))
+            self.value_mapping_nrows = len(value_mapping_reader)
+            self.get_value_mapping_row = lambda row: value_mapping_reader[row]
+
+            field_mapping_file = open('.'.join(self.data_file.split('.')[:-1]) + '_fields.csv', 'rU')
+            field_mapping_reader = list(csv.reader(field_mapping_file))
+            self.field_mapping_nrows = len(field_mapping_reader)
+            self.get_field_mapping_row = lambda row: field_mapping_reader[row]
+
+            data_file = open('.'.join(self.data_file.split('.')[:-1]) + '_data.csv', 'rU')
+            data_reader = list(csv.reader(data_file))
+            self.data_nrows = len(data_reader)
+            self.get_data_row = lambda row: data_reader[row]
+            self.col_names = data_reader[0]
+
+        else:
+            raise IOError("Instrument file must be xlsx, xls, or csv.")
+
+    def get_row_data(self, row):
+
+        row_values = self.get_data_row(row)
+        if len(row_values) > 1:
+
+            # get child data
+            child = self.get_data_fields(self.field_mapping, 'child', row_values)
+
+            # get administration data
+            administration = self.get_data_fields(self.field_mapping, 'admin', row_values)
+            if child['date_of_birth'] is not None and administration['date_of_test'] is not None:
+                computed_age = self.compute_age(child['date_of_birth'], administration['date_of_test'])
+                administration['age'] = computed_age
+            else:
+                administration['age'] = administration['data_age']
+
+            # get item data
+            item_data = self.get_data_fields(self.field_mapping, 'item', row_values)
+            administration['item_data'] = item_data
+
+            return child, administration
+
+    def import_data(self):
+
+        self.get_meta_data()
+        self.value_mapping = self.map_values()
+        self.field_mapping = self.map_fields()
+        self.col_map = self.map_cols()
 
         # go through the datasheet entries and populate all the data
-        for row in xrange(1, data_nrows):
-            row_values = get_data_row(row)
-            if len(row_values) > 1:
-
-                # get child data
-                child = self.get_data_fields(cols, 'child', row_values)
-                self.children[row] = child
-
-                # get administration data
-                administration = self.get_data_fields(cols, 'admin', row_values)
-                if child['date_of_birth'] is not None and administration['date_of_test'] is not None:
-                    computed_age = self.compute_age(child['date_of_birth'], administration['date_of_test'])
-                    administration['age'] = computed_age
-                else:
-                    administration['age'] = administration['data_age']
-
-                # get item data
-                item_data = self.get_data_fields(cols, 'item', row_values)
-                administration['item_data'] = item_data
-
-                self.administrations[row] = administration
+        for row in xrange(1, self.data_nrows):
+            child, administration = self.get_row_data(row)
+            self.children[row] = child
+            self.administrations[row] = administration
