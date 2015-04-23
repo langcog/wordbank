@@ -9,18 +9,23 @@ library(lazyeval)
 library(quantregGrowth)
 source("../app_themes.R")
 source("../data_loading.R")
+source("predictQR_fixed.R")
+# options(shiny.error=browser)
 
 ## DEBUGGING
-#input <- list(language = "English", form = "WS", measure = "production",
-#              qsize = ".2", demo = "identity")
+# input <- list(language = "English", form = "WS", measure = "production",
+#              qsize = ".2", demo = "birth.order")
 
 shinyServer(function(input, output, session) {
   
   output$loaded <- reactive({0})
   outputOptions(output, 'loaded', suspendWhenHidden=FALSE)
   
-  wordbank <- src_mysql(dbname = "wordbank", user = "wordbank",
-                        password = "wordbank")
+#   wordbank <- src_mysql(dbname = "wordbank", user = "wordbank",
+#                         password = "wordbank")
+  wordbank <- src_mysql(dbname='wordbank', host="54.149.39.46", #54.200.225.86
+                        user="wordbank", password="wordbank")
+  
   
   common.tables <- get.common.tables(wordbank)
   
@@ -113,71 +118,103 @@ shinyServer(function(input, output, session) {
     admins %>%
       filter(language == input.language(),
              form == input.form(),
-             measure == input.measure(),
-             age >= age.min() & age <= age.max())
+             measure == input.measure()) 
   })
   
-  groups_with_data <- reactive({
+  renamed_filtered_admins <- reactive({
     filtered_admins() %>%
-      group_by_(input.demo()) %>%
+      rename_(demo = input.demo()) %>%    
+      filter(!is.na(demo))
+  })
+
+  groups_with_data <- reactive({
+    renamed_filtered_admins() %>%
+      group_by(demo) %>%
       summarise(n = n()) %>%
-      filter_(interp("!is.na(x)", x = as.name(input.demo()))) %>%
       filter(n > min_obs)
   })
   
   data <- reactive({
-    filtered_admins() %>%
+    renamed_filtered_admins() %>%
       right_join(groups_with_data()) %>%
-      group_by_("age", input.demo()) %>%
-      filter_(interp("!is.na(x)", x = as.name(input.demo()))) %>%
+      group_by(age, demo) %>%
       mutate(percentile = rank(vocab) / length(vocab),
              quantile = cut(percentile,
                             breaks=cuts(), 
                             labels=middles()))
   })
-  
+
+# TODO: when grcq fixes its bug, get rid of the if "." thing in curves
+
   curves <- reactive({
     
-    clean.data <- filtered_admins() %>%
-      filter_(interp("!is.na(x)", x = as.name(input.demo()))) %>%
+    clean.data <- renamed_filtered_admins() %>%
       right_join(groups_with_data())
     
     models <- clean.data %>%
-      group_by_(input.demo()) %>%
+      group_by(demo) %>%
       do(model = gcrq(vocab ~ ps(age, monotone=1, lambda=60), data=., tau=middles()))
     
     get.model <- function(demo.value) {
-      return(filter_(models, interp("d==v", d = as.name(input.demo()), v=demo.value))$model[[1]])
+      return(filter(models, demo==value)$model[[1]])
     }
     
     predicted.data <- data.frame()
-    values <- unique(unlist(select_(clean.data, as.name(input.demo()))))
+    values <- as.character(unique(clean.data$demo))
+    
     for (value in values) {
-      dots <- list(~value)
       ages <- data.frame(age = age.min():age.max())
-      value.predicted.data <- predictQR(get.model(value), newdata = ages) %>%
+      value.predicted.data <- predictQR_fixed(get.model(value), newdata = ages) %>%
         as.data.frame() %>%
         mutate(age = age.min():age.max()) %>%
         gather(quantile, predicted, -age) %>%
-        mutate_(.dots=setNames(dots, c(as.name(input.demo()))))
+        mutate(demo = value)
       predicted.data <- bind_rows(predicted.data, value.predicted.data)
     }
-    predicted.data
+  
+    if (predicted.data$quantile[1] == ".") {
+       predicted.data$quantile <- factor(.5) 
+    }
+    
+    predicted.data %>%
+      mutate(demo = as.factor(demo))
   })
   
   plot <- function() {
-    ggplot(data(), aes(x=age, y=vocab, colour=quantile)) + 
-      facet_wrap(input.demo()) + 
-      geom_jitter(width=.1) +
-      geom_line(data = curves(),
-                aes(x = age, y = predicted,
-                    group = factor(quantile), colour = factor(quantile)),
-                size = 1) + 
-      scale_x_continuous(name="\nAge (months)",
+    
+    if (input$qsize == 1 & input.demo() == "identity") {
+      p <- ggplot(data(), aes(x=age, y=vocab)) +
+        geom_jitter(width=.1, col = "steelblue") +    
+        geom_line(data = curves(),
+                  aes(x = age, y = predicted),
+                  size = 1, 
+                  col = "steelblue") 
+    } else if (input$qsize != 1 & input.demo() == "identity") {
+      p <- ggplot(data(), aes(x=age, y=vocab, col = quantile)) +
+        geom_jitter(width=.1) +    
+        geom_line(data = curves(),
+                  aes(x = age, y = predicted, col = quantile),
+                  size = 1) 
+    } else if (input$qsize == 1 & input.demo() != "identity") {
+      p <- ggplot(data(), aes(x=age, y=vocab, col = demo)) +
+        geom_jitter(width=.1) +    
+        geom_line(data = curves(),
+                  aes(x = age, y = predicted, col = demo),
+                  size = 1) 
+    } else {
+      p <- ggplot(data(), aes(x=age, y=vocab, col = demo)) +
+        geom_jitter(width=.1) +    
+        geom_line(data = curves(),
+                  aes(x = age, y = predicted, col = demo),
+                  size = 1) +
+        facet_wrap(~quantile)
+    }
+    
+    p + scale_x_continuous(name="\nAge (months)",
                          breaks=seq(age.min(), age.max(), by=2),
                          limits=c(age.min(), age.max())) +
       ylab(paste(ylabel(), "\n", sep="")) +
-      scale_colour_brewer(name="Quantile\nMidpoint",
+      scale_colour_brewer(name = input.demo(),
                           palette=seq.palette) +
       theme(text=element_text(family=font))
   }
