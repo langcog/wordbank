@@ -11,8 +11,8 @@ source("../app_themes.R")
 source("../data_loading.R")
 
 ## DEBUGGING
-input <- list(language = "Hebrew", form = "WG", measure = "production",
-            qsize = ".2", demo = "birth.order")
+# input <- list(language = "Hebrew", form = "WG", measure = "production",
+#             qsize = ".2", demo = "birth.order")
 
 shinyServer(function(input, output, session) {
   
@@ -20,7 +20,7 @@ shinyServer(function(input, output, session) {
   outputOptions(output, 'loaded', suspendWhenHidden=FALSE)
   
   wordbank <- src_mysql(dbname = "wordbank", user = "wordbank",
-                        host = "54.200.225.86",                        
+                        #host = "54.200.225.86",                        
                         password = "wordbank")
   
   common.tables <- get.common.tables(wordbank)
