@@ -12,7 +12,7 @@ urlpatterns = patterns('',
     url(r'about', About.as_view(), name='about'),
     url(r'stats', Stats.as_view(), name='stats'),
     url(r'reports', Reports.as_view(), name='reports'),
-    url(r'contribute', Contribute.as_view(), name='contribute'),
+    url(r'contributors', Contributors.as_view(), name='contributors'),
     url(r'blog', Blog.as_view(), name='blog'),
     url(r'tutorial', Tutorial.as_view(), name='tutorial'),
 
