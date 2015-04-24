@@ -52,7 +52,7 @@ shinyServer(function(input, output, session) {
                                "Sex" = "sex",
                                "Mother's Education" = "momed.level")
   min_obs <- 100
-  min_obs_backoff <- 25
+  min_obs_backoff <- 50
   
   start.language <- function() {"English"}
   start.form <- function() {"WS"}
