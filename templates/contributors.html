@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="lead">
+  <p>Thank you to all of the generous researchers who have contributed data to Wordbank!</p>
+</div>
+
+<p>To contribute your data, please contact <a href="mailto:wordbank-contact@stanford.edu">wordbank-contact@stanford.edu</a>.</p>
+<br>
+
+<div class="row">
+  {% for column, language_sources_list in columns.items %}
+  <div class="col-md-6">
+    {% for language_sources in language_sources_list %}
+    <ul class="list-group">
+      <li class="list-group-item active">
+        {{ language_sources.0 }}
+      </li>
+      {% for entry, sources in language_sources.1.items %}
+      <li class="list-group-item">
+        <h5 class="list-group-item-heading">{{ entry.0 }} &nbsp;
+        <span class="label label-info">{{ entry.1 }}</span>
+        {% for source in sources %}
+        <span class="label label-warning">{{ source }}</span>
+        {% endfor %}
+        </h5>
+          <p class="list-group-item-text"><small>{{ entry.2 }}</small></p> 
+      </li>
+      {% endfor %}
+    </ul>
+    {% endfor %}
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}

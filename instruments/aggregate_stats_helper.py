@@ -29,8 +29,8 @@ def aggregate(admin_query=None):
                      'sex': safe_field(administration.child.get_sex_display()),
                      'mom_ed': safe_field(momed),
                      'birth_order': safe_field(birth_order),
-                     'source': safe_field(administration.source.name),
-                     'ethnicity': safe_field(administration.child.get_ethnicity_display()),
+#                     'source': safe_field(administration.source.name),
+#                     'ethnicity': safe_field(administration.child.get_ethnicity_display()),
                      'language': safe_field(administration.instrument.language),
                      'form': safe_field(administration.instrument.get_form_display())}
         data.append(admin_obj)
