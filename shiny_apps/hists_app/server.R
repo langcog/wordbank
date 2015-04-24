@@ -19,6 +19,7 @@ shinyServer(function(input, output, session) {
   outputOptions(output, 'loaded', suspendWhenHidden=FALSE)
   
   wordbank <- src_mysql(dbname = "wordbank", user = "wordbank",
+                        #host = "54.200.225.86",
                         password = "wordbank")
   
   common.tables <- get.common.tables(wordbank)
@@ -40,9 +41,9 @@ shinyServer(function(input, output, session) {
                          common.tables$instrumentsmap,
                          common.tables$category)
   
-  instrument.tables <- get.instrument.tables(wordbank, common.tables$instrumentsmap)
-
-  languages <- sort(unique(instrument.tables$language))
+  instruments <- as.data.frame(common.tables$instrumentsmap)  
+  
+  languages <- sort(unique(instruments$language))
   
   possible_demo_fields <- list("None" = "identity", 
                                "Birth Order" = "birth.order", 
@@ -75,7 +76,7 @@ shinyServer(function(input, output, session) {
   })
   
   instrument <- reactive({
-    filter(instrument.tables, language == input.language(), form == input.form())
+    filter(instruments, language == input.language(), form == input.form())
   })
   
   num.words <- reactive({
@@ -134,7 +135,7 @@ shinyServer(function(input, output, session) {
   }
   
   forms <- reactive({
-    Filter(function(form) {form %in% unique(filter(instrument.tables,
+    Filter(function(form) {form %in% unique(filter(instruments,
                                                    language == input.language())$form)},
            list("Words & Sentences" = "WS", "Words & Gestures" = "WG"))
   })
