@@ -29,17 +29,20 @@ class Contributors(View):
 
   def get(self, request):
     sources = Source.objects.annotate(n = Count('administration'))
-    language_sources_dict = defaultdict(list)
+    language_sources_dict = defaultdict(lambda: defaultdict(list))
     for source in sources:
-      language_sources_dict[source.instrument_language].append(source)
+#      language_sources_dict[source.instrument_language].append(source)
+      language_sources_dict[source.instrument_language][(source.contributor, source.instrument_form, source.citation)].append(source.n)
 #    languages = sorted(language_sources_dict.keys(), key = lambda lang: len(language_sources_dict[lang]), reverse = True)
+
     languages = sorted(language_sources_dict.keys())
-    language_sources_list = []
-    for language in languages:
-      language_sources_list.append([language, language_sources_dict[language]])
+    language_sources_list = [[language, dict(language_sources_dict[language])] for language in languages]
+    print language_sources_list
+
     num_cols = 2
-    col_size = (sum([len(language_sources) for language, language_sources in language_sources_list]) + len(language_sources_list)*2) / num_cols
+    col_size = (sum([sum([len(sources) for contributor, sources in language_sources.iteritems()]) for language, language_sources in language_sources_list]) + len(language_sources_list)*2) / num_cols
     print col_size
+
     columns = {}
     col_index = 1
     item_buffer = []
