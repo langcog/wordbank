@@ -52,7 +52,7 @@ shinyServer(function(input, output, session) {
                                "Sex" = "sex",
                                "Mother's Education" = "momed.level")
   min_obs <- 100
-  min_obs_backoff <- 20
+  min_obs_backoff <- 25
   
   start.language <- function() {"English"}
   start.form <- function() {"WS"}
@@ -159,7 +159,8 @@ shinyServer(function(input, output, session) {
     
     models <- clean.data %>%
       group_by(demo) %>%
-      do(model = gcrq(vocab ~ ps(age, monotone=1, lambda=60), data=., tau=middles()))
+      do(model = gcrq(vocab ~ ps(age, monotone=1, lambda=1000), 
+                      data=., tau=middles()))
     
     get.model <- function(demo.value) {
       return(filter(models, demo==value)$model[[1]])
@@ -190,26 +191,26 @@ shinyServer(function(input, output, session) {
     
     if (input$qsize == 1 & input.demo() == "identity") {
       p <- ggplot(data(), aes(x=age, y=vocab)) +
-        geom_jitter(width=.1, col = "steelblue") +    
+        geom_jitter(width=.1, col = "steelblue", size = 1) +    
         geom_line(data = curves(),
                   aes(x = age, y = predicted),
                   size = 1, 
                   col = "steelblue") 
     } else if (input$qsize != 1 & input.demo() == "identity") {
       p <- ggplot(data(), aes(x=age, y=vocab, col = quantile)) +
-        geom_jitter(width=.1) +    
+        geom_jitter(width=.1, col = "steelblue", size = 1) +    
         geom_line(data = curves(),
                   aes(x = age, y = predicted, col = quantile),
                   size = 1) 
     } else if (input$qsize == 1 & input.demo() != "identity") {
       p <- ggplot(data(), aes(x=age, y=vocab, col = demo)) +
-        geom_jitter(width=.1) +    
+        geom_jitter(width=.1, size = 1) +    
         geom_line(data = curves(),
                   aes(x = age, y = predicted, col = demo),
                   size = 1) 
     } else {
       p <- ggplot(data(), aes(x=age, y=vocab, col = demo)) +
-        geom_jitter(width=.1) +    
+        geom_jitter(width=.1, size = 1) +    
         geom_line(data = curves(),
                   aes(x = age, y = predicted, col = demo),
                   size = 1) +
