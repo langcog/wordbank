@@ -71,7 +71,7 @@ shinyServer(function(input, output, session) {
   
   output$language_selector <- renderUI({    
     selectizeInput("language", label = "Language:",
-                   choices = c("All", unique(admins$language)),
+                   choices = c("All", sort(unique(admins$language))),
                    selected = "All")
   })
   
