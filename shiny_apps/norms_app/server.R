@@ -13,6 +13,7 @@ source("predictQR_fixed.R")
 # options(shiny.error=browser)
 
 ## DEBUGGING
+
 # input <- list(language = "English", form = "WS", measure = "production",
 #              qsize = ".2", demo = "birth.order")
 
@@ -25,8 +26,7 @@ shinyServer(function(input, output, session) {
 #                         password = "wordbank")
   wordbank <- src_mysql(dbname='wordbank', host="54.149.39.46", #54.200.225.86
                         user="wordbank", password="wordbank")
-  
-  
+   
   common.tables <- get.common.tables(wordbank)
   
   admins <- get.administration.data(common.tables$momed,
@@ -42,9 +42,9 @@ shinyServer(function(input, output, session) {
                                 labels = c("First", "Second", "Third", "Fourth", "Fifth",
                                            "Sixth", "Seventh", "Eighth")))
   
-  instrument.tables <- get.instrument.tables(wordbank, common.tables$instrumentsmap)
-  
-  languages <- unique(instrument.tables$language)
+  instruments <- as.data.frame(common.tables$instrumentsmap)  
+
+  languages <- sort(unique(instruments$language))
   
   possible_demo_fields <- list("None" = "identity", 
                                "Birth Order" = "birth.order", 
@@ -52,6 +52,7 @@ shinyServer(function(input, output, session) {
                                "Sex" = "sex",
                                "Mother's Education" = "momed.level")
   min_obs <- 100
+  min_obs_backoff <- 20
   
   start.language <- function() {"English"}
   start.form <- function() {"WS"}
@@ -91,7 +92,7 @@ shinyServer(function(input, output, session) {
     base * scaling
   })
   
-  instrument <- reactive({filter(instrument.tables,
+  instrument <- reactive({filter(instruments,
                                  language == input.language(),
                                  form == input.form())})
   
@@ -128,10 +129,15 @@ shinyServer(function(input, output, session) {
   })
 
   groups_with_data <- reactive({
-    renamed_filtered_admins() %>%
+    groups <- renamed_filtered_admins() %>%
       group_by(demo) %>%
-      summarise(n = n()) %>%
-      filter(n > min_obs)
+      summarise(n = n()) 
+    
+    smallest_n <- min(groups$n)
+    
+    groups %>%
+      filter(n >= min(min_obs, smallest_n),
+             n >= min_obs_backoff)
   })
   
   data <- reactive({
@@ -220,7 +226,7 @@ shinyServer(function(input, output, session) {
   }
   
   forms <- reactive({
-    Filter(function(form) {form %in% unique(filter(instrument.tables,
+    Filter(function(form) {form %in% unique(filter(instruments,
                                                    language == input.language())$form)},
            list("Words & Sentences" = "WS", "Words & Gestures" = "WG"))
   })

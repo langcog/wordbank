@@ -33,7 +33,7 @@ shinyServer(function(input, output, session) {
     mutate(item.id = as.numeric(substr(item.id, 6, nchar(item.id))))
   
   instrument.tables <- get.instrument.tables(wordbank, common.tables$instrumentsmap)
-  languages <- unique(instrument.tables$language)
+  languages <- sort(unique(instrument.tables$language))
   #forms <- unique(instrument.tables$form)
   
   start.language <- function() {"English"}

@@ -17,8 +17,8 @@ rm instruments/migrations/*
 echo "Migrating..."
 ./manage.py migrate
 
-echo "Alterting wordmapping definition field..."
-mysql wordbank < scripts/alter_wordmapping.txt
+echo "Alterting some fields to UTF-8..."
+mysql wordbank < scripts/alter_fields.txt
 
 echo "Reseting tables..."
 ./scripts/reset_tables.sh
