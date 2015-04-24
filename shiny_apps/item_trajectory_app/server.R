@@ -20,7 +20,7 @@ shinyServer(function(input, output, session) {
   outputOptions(output, 'loaded', suspendWhenHidden=FALSE)
   
   wordbank <- src_mysql(dbname = "wordbank", user = "wordbank",
-                        #host = "54.149.39.46",
+                        host = "54.200.225.86",
                         password = "wordbank")
   
   common.tables <- get.common.tables(wordbank)
@@ -70,7 +70,7 @@ shinyServer(function(input, output, session) {
                                                   type=='complexity'))) %>%
     left_join(tables)
   
-  languages <- unique(instrument.tables$language)
+  languages <- sort(unique(instrument.tables$language))
   
   start.language <- function() {"English"}
   start.form <- function() {"WS"}
