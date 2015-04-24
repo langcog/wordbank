@@ -61,6 +61,8 @@ class Source(models.Model):
     dataset = models.CharField(max_length=20, null=True, blank=True)
     instrument_language = models.CharField(max_length=20)
     instrument_form = models.CharField(max_length=20)
+    contributor = models.TextField(blank=True)
+    citation = models.TextField(blank=True)
 
 
 class Administration(models.Model):
