@@ -40,7 +40,7 @@ shinyServer(function(input, output, session) {
   
   instruments <- as.data.frame(common.tables$instrumentsmap)  
 
-  languages <- unique(instruments$language)
+  languages <- sort(unique(instruments$language))
   
   possible_demo_fields <- list("None" = "identity", 
                                "Birth Order" = "birth.order", 
