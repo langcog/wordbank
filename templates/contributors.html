@@ -18,12 +18,15 @@
       <li class="list-group-item active">
         {{ language_sources.0 }}
       </li>
-      {% for source in language_sources.1 %}
+      {% for entry, sources in language_sources.1.items %}
       <li class="list-group-item">
-        <h5 class="list-group-item-heading">{{ source.contributor }} &nbsp;
-        <span class="label label-info">{{ source.instrument_form }}</span>
-        <span class="label label-warning">{{ source.n }}</span></h5>
-          <p class="list-group-item-text"><small>{{ source.citation }}</small></p>
+        <h5 class="list-group-item-heading">{{ entry.0 }} &nbsp;
+        <span class="label label-info">{{ entry.1 }}</span>
+        {% for source in sources %}
+        <span class="label label-warning">{{ source }}</span>
+        {% endfor %}
+        </h5>
+          <p class="list-group-item-text"><small>{{ entry.2 }}</small></p> 
       </li>
       {% endfor %}
     </ul>
