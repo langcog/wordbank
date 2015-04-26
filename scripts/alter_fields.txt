@@ -1,4 +1,4 @@
-ALTER TABLE common_wordmapping MODIFY definition varchar(200) CHARACTER SET 'utf8' COLLATE 'utf8_unicode_ci';
+ALTER TABLE common_wordmapping MODIFY definition blob;
 ALTER TABLE common_wordmapping MODIFY gloss varchar(80) CHARACTER SET 'utf8' COLLATE 'utf8_unicode_ci';
 
 ALTER TABLE common_source MODIFY citation blob;
