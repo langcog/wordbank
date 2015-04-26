@@ -1,6 +1,7 @@
 import xlrd
 import codecs
 import json
+import re
 from django.core.management.base import NoArgsCommand
 from common.models import *
 
@@ -34,8 +35,8 @@ class Command(NoArgsCommand):
                 get_row = lambda row: list(sheet.row_values(row))
             elif ftype == 'csv':
                 contents = [field for field in [line.split(',')
-                                                for line in codecs.open(instrument['file'],
-                                                                        encoding='utf-8').read().split('\n')]]
+                                                for line in re.split("\n|\r", codecs.open(instrument['file'],
+                                                                                          encoding='utf-8').read())]]
                 col_names = contents[0]
                 nrows = len(contents)
                 get_row = lambda row: contents[row]
