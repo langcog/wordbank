@@ -308,5 +308,25 @@
         "splitcol": false,
         "contributor": "Sharone Maital, University of Haifa",
         "citation": "Maital, S., Dromi, E. Sagi, A. & Bornstein, M. H. (2000). The Hebrew Communicative Development Inventory: Language specific properties and cross-linguistic generalizations, Journal of Child Language, 27, 1-25."
+    },
+    {
+        "name": "Tardif",
+        "dataset": "",
+        "instrument_language": "Cantonese",
+        "instrument_form": "WS",
+        "file": "raw_data/Cantonese_WS/CantoneseWS_Tardif.csv",
+        "splitcol": false,
+        "contributor": "Twila Tardif, University of Michigan",
+        "citation": "Tardif, T., Fletcher, P., Liang, W., & Kaciroti, N. (2009). Early vocabulary development in Mandarin (Putonghua) and Cantonese. Journal of child language, 36(05), 1115-1144."
+    },
+    {
+        "name": "Tardif",
+        "dataset": "",
+        "instrument_language": "Mandarin",
+        "instrument_form": "WS",
+        "file": "raw_data/Mandarin_WS/MandarinWS_Tardif.csv",
+        "splitcol": false,
+        "contributor": "Twila Tardif, University of Michigan",
+        "citation": "Tardif, T., Fletcher, P., Liang, W., & Kaciroti, N. (2009). Early vocabulary development in Mandarin (Putonghua) and Cantonese. Journal of child language, 36(05), 1115-1144."
     }
 ]
