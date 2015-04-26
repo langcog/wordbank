@@ -17,3 +17,5 @@ from schemas.Turkish_WG import *
 from schemas.Turkish_WS import *
 from schemas.Hebrew_WS import *
 from schemas.Hebrew_WG import *
+from schemas.Cantonese_WS import *
+from schemas.Mandarin_WS import *
