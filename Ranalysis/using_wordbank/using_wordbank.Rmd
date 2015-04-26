@@ -1,7 +1,7 @@
 ---
 title: "Accessing the Wordbank Database"
 author: "Mika Braginsky and Dan Yurovsky"
-date: "2015-04-24"
+date: "2015-04-25"
 output:
   html_document:
     highlight: tango
@@ -37,7 +37,7 @@ eval(parse(text = script))
 
 Connect to the Wordbank database.
 ```{r, cache=FALSE}
-wordbank <- src_mysql(dbname='wordbank', host="54.200.225.86",
+wordbank <- src_mysql(dbname='wordbank', host="54.149.39.46", #"54.200.225.86",
                       user="wordbank", password="wordbank")
 ```
 
@@ -189,11 +189,13 @@ Set up color terms of each language.
 ```{r}
 colors.key <- c("red", "orange", "yellow", "green", "blue", "black", "white", "brown")
 
-colors <- list("Croatian" = c("crvena", "narančasta", "žuta", "zelena", "plava", "crn", "bijela", "smeđe"),
+colors <- list("Cantonese" = c("紅", "橙(色)", "黃", "綠", "藍", "黑", "白", "啡"), # 灰(grey)
+               "Croatian" = c("crvena", "narančasta", "žuta", "zelena", "plava", "crn", "bijela", "smeđe"),
                "Danish" = c("rød", "orange", "gul", "grøn", "blå", "sort", "hvid", "brun"),
                "English" = c("red", "orange (description)", "yellow", "green", "blue", "black", "white", "brown"),
                "German" = c("rot", "orange", "gelb", "grün", "blau", "schwarz", "weiß", "braun"),
                "Italian" = c("rosso", "arancione", "giallo", "verde", "blu", "nero", "bianco", "marrone"),
+               "Mandarin" = c("red", "", "yellow", "green", "blue", "black", "white", ""),
                "Norwegian" = c("rød", "oransje", "gul", "grønn" ,"blå", "svart", "hvit", "brun"),
                "Russian" = c("красный", "оранжевый", "желтый", "зеленый", "синий", "черный", "белый", "коричневый"),
                "Spanish" = c("rojo", "", "amarillo", "verde", "azul", "negro", "blanco", ""), # rosa morado
