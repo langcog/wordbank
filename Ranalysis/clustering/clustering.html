@@ -86,8 +86,8 @@ img {
 <span class="kw">library</span>(tidyr)
 <span class="kw">library</span>(RMySQL)
 <span class="kw">library</span>(ggplot2)
-<span class="kw">source</span>(<span class="st">&quot;../shiny_apps/data_loading.R&quot;</span>)
-wordbank &lt;-<span class="st"> </span><span class="kw">src_mysql</span>(<span class="dt">dbname=</span><span class="st">&quot;wordbank&quot;</span>)</code></pre>
+<span class="kw">source</span>(<span class="st">&quot;../../shiny_apps/data_loading.R&quot;</span>)
+wordbank &lt;-<span class="st"> </span><span class="kw">connect.to.wordbank</span>(<span class="st">&quot;prod&quot;</span>)</code></pre>
 <p>Load Wordbank data for administrations and items for English WS.</p>
 <pre class="sourceCode r"><code class="sourceCode r">common.tables &lt;-<span class="st"> </span><span class="kw">get.common.tables</span>(wordbank)
 
@@ -104,7 +104,8 @@ admins &lt;-<span class="st"> </span><span class="kw">get.administration.data</s
                         <span class="dt">labels=</span>cuts[<span class="dv">2</span>:<span class="kw">length</span>(cuts)] -<span class="st"> </span>qs/<span class="dv">2</span>))
 
 items &lt;-<span class="st"> </span><span class="kw">get.item.data</span>(common.tables$wordmapping,
-                       common.tables$instrumentsmap)
+                       common.tables$instrumentsmap,
+                       common.tables$category)
 
 words &lt;-<span class="st"> </span><span class="kw">filter</span>(items, language ==<span class="st"> &quot;English&quot;</span>, form ==<span class="st"> &quot;WS&quot;</span>, type ==<span class="st"> &quot;word&quot;</span>)</code></pre>
 <p>Load English WS instrument data and clean it up to be clusterable.</p>

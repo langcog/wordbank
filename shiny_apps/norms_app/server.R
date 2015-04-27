@@ -22,11 +22,9 @@ shinyServer(function(input, output, session) {
   output$loaded <- reactive({0})
   outputOptions(output, 'loaded', suspendWhenHidden=FALSE)
   
-#   wordbank <- src_mysql(dbname = "wordbank", user = "wordbank",
-#                         password = "wordbank")
-  wordbank <- src_mysql(dbname='wordbank', host="54.149.39.46", #54.200.225.86
-                        user="wordbank", password="wordbank")
-   
+
+  wordbank <- connect.to.wordbank("local")
+  
   common.tables <- get.common.tables(wordbank)
   
   admins <- get.administration.data(common.tables$momed,
