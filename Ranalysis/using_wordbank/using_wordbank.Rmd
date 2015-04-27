@@ -37,8 +37,7 @@ eval(parse(text = script))
 
 Connect to the Wordbank database.
 ```{r, cache=FALSE}
-wordbank <- src_mysql(dbname='wordbank', host="54.149.39.46", #"54.200.225.86",
-                      user="wordbank", password="wordbank")
+wordbank <- connect.to.wordbank("prod")
 ```
 
 Get all the common tables.
