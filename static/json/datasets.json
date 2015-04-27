@@ -7,7 +7,7 @@
         "file": "raw_data/English_WS/EnglishWS_Marchman_Norming.xlsx",
         "splitcol": false,
         "contributor": "Larry Fenson, San Diego State University",
-        "citation": "Fenson, L., Bates, E., Dale, P. S., Marchman, V. A., Reznick, J. S., & Thal, D. J. (2007). MacArthur-Bates communicative development inventories."
+        "citation": "Fenson, L., Marchman, V. A., Thal, D., Dale, P., Reznick, J. S. & Bates, E. (2007). MacArthur-Bates Communicative Development Inventories: User's Guide and Technical Manual. 2nd Edition. Baltimore, MD: Brookes Publishing Co."
     },
     {
         "name": "Marchman",
@@ -67,7 +67,7 @@
         "file": "raw_data/English_WS/EnglishWS_Thal_16.xlsx",
         "splitcol": false,
         "contributor": "Donna Thal, San Diego State University",
-        "citation": ""
+        "citation": "Thal, D. J., Marchman, V. A. & Tomblin, J. B. (2013). Late talking toddlers: Characterization and prediction of continued delay. In L. Rescorla & P. Dale (Eds.). Late Talkers: Language Development, Interventions, and Outcomes.  Baltimore, MD.: Brookes Publishing."
     },
     {
         "name": "Thal",
@@ -77,7 +77,7 @@
         "file": "raw_data/English_WS/EnglishWS_Thal_28.xlsx",
         "splitcol": false,
         "contributor": "Donna Thal, San Diego State University",
-        "citation": ""
+        "citation": "Thal, D. J., Marchman, V. A. & Tomblin, J. B. (2013). Late talking toddlers: Characterization and prediction of continued delay. In L. Rescorla & P. Dale (Eds.). Late Talkers: Language Development, Interventions, and Outcomes.  Baltimore, MD.: Brookes Publishing."
     },
     {
         "name": "Marchman",
@@ -87,7 +87,7 @@
         "file": "raw_data/English_WG/EnglishWG_Marchman_Norming.xlsx",
         "splitcol": true,
         "contributor": "Larry Fenson, San Diego State University",
-        "citation": "Fenson, L., Bates, E., Dale, P. S., Marchman, V. A., Reznick, J. S., & Thal, D. J. (2007). MacArthur-Bates communicative development inventories."
+        "citation": "Fenson, L., Marchman, V. A., Thal, D., Dale, P., Reznick, J. S. & Bates, E. (2007). MacArthur-Bates Communicative Development Inventories: User's Guide and Technical Manual. 2nd Edition. Baltimore, MD: Brookes Publishing Co."
     },
     {
         "name": "Byers",
@@ -107,7 +107,7 @@
         "file": "raw_data/English_WG/EnglishWG_Thal_13.xlsx",
         "splitcol": true,
         "contributor": "Donna Thal, San Diego State University",
-        "citation": ""
+        "citation": "Thal, D. J., Marchman, V. A. & Tomblin, J. B. (2013). Late talking toddlers: Characterization and prediction of continued delay. In L. Rescorla & P. Dale (Eds.). Late Talkers: Language Development, Interventions, and Outcomes.  Baltimore, MD.: Brookes Publishing."
     },
     {
         "name": "Thal",
@@ -117,7 +117,7 @@
         "file": "raw_data/English_WG/EnglishWG_Thal_16.xlsx",
         "splitcol": true,
         "contributor": "Donna Thal, San Diego State University",
-        "citation": ""
+        "citation": "Thal, D. J., Marchman, V. A. & Tomblin, J. B. (2013). Late talking toddlers: Characterization and prediction of continued delay. In L. Rescorla & P. Dale (Eds.). Late Talkers: Language Development, Interventions, and Outcomes.  Baltimore, MD.: Brookes Publishing."
     },
     {
         "name": "Marchman",
@@ -227,7 +227,7 @@
         "file": "raw_data/Italian_WS/ItalianWS_CLEX.csv",
         "splitcol": false,
         "contributor": "Christina Caselli, Institute of Cognitive Sciences and Technologies",
-        "citation": ""
+        "citation": "Caselli, M. C., Bates, E., Casadio, P., Fenson, J., Fenson, L., Sanderl, L., & Weir, J. (1995). A cross-linguistic study of early lexical development. Cognitive Development, 10(2), 159-199."
     },
     {
         "name": "CLEX",
@@ -308,5 +308,25 @@
         "splitcol": false,
         "contributor": "Sharone Maital, University of Haifa",
         "citation": "Maital, S., Dromi, E. Sagi, A. & Bornstein, M. H. (2000). The Hebrew Communicative Development Inventory: Language specific properties and cross-linguistic generalizations, Journal of Child Language, 27, 1-25."
+    },
+    {
+        "name": "Tardif",
+        "dataset": "",
+        "instrument_language": "Cantonese",
+        "instrument_form": "WS",
+        "file": "raw_data/Cantonese_WS/CantoneseWS_Tardif.csv",
+        "splitcol": false,
+        "contributor": "Twila Tardif, University of Michigan",
+        "citation": "Tardif, T., Fletcher, P., Liang, W., & Kaciroti, N. (2009). Early vocabulary development in Mandarin (Putonghua) and Cantonese. Journal of child language, 36(05), 1115-1144."
+    },
+    {
+        "name": "Tardif",
+        "dataset": "",
+        "instrument_language": "Mandarin",
+        "instrument_form": "WS",
+        "file": "raw_data/Mandarin_WS/MandarinWS_Tardif.csv",
+        "splitcol": false,
+        "contributor": "Twila Tardif, University of Michigan",
+        "citation": "Tardif, T., Fletcher, P., Liang, W., & Kaciroti, N. (2009). Early vocabulary development in Mandarin (Putonghua) and Cantonese. Journal of child language, 36(05), 1115-1144."
     }
 ]

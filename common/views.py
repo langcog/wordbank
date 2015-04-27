@@ -37,11 +37,11 @@ class Contributors(View):
 
     languages = sorted(language_sources_dict.keys())
     language_sources_list = [[language, dict(language_sources_dict[language])] for language in languages]
-    print language_sources_list
+#    print language_sources_list
 
     num_cols = 2
     col_size = (sum([sum([len(sources) for contributor, sources in language_sources.iteritems()]) for language, language_sources in language_sources_list]) + len(language_sources_list)*2) / num_cols
-    print col_size
+#    print col_size
 
     columns = {}
     col_index = 1
@@ -56,7 +56,7 @@ class Contributors(View):
         item_buffer = []
         buffer_size = 0
       columns[col_index] = item_buffer
-    print columns
+#    print columns
 
     return render(request, 'contributors.html', {'columns': columns})
 

@@ -1,7 +1,22 @@
 library(dplyr)
 library(tidyr)
 library(RMySQL)
+library(assertthat)
 
+
+# Takes a connection mode: one of local, prod, or dev
+# Returns a connection to the Wordbank MySQL database created with src_mysql
+connect.to.wordbank <- function(mode) {
+  
+  assert_that(is.element(mode, c("local", "prod", "dev")))
+  address <- switch(mode,
+                    local = "",
+                    prod = "54.200.225.86",
+                    dev = "54.149.39.46")
+  
+  con <- src_mysql(host=address, dbname="wordbank", user="wordbank", password="wordbank")
+  return(con)
+}
 
 # Takes a connection to a MySQL database created with src_mysql
 # Pulls all of the common tables
