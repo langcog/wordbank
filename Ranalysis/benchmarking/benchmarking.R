@@ -5,9 +5,8 @@ library(ggplot2)
 library(microbenchmark)
 setwd("~/Documents/projects/wordbank/scripts/benchmarking")
 
-wordbank.local <- src_mysql(dbname='wordbank')
-#wordbank.remote <- src_mysql(dbname="wordbank", host="54.149.39.46",
-#                             user="wordbank", password="wordbank")
+wordbank.local <- connect.to.wordbank("local")
+wordbank.remote <- connect.to.wordbank("prod")
 
 # load tables
 #source.table <- tbl(wordbank, "common_source")
