@@ -1,7 +1,7 @@
 ---
 title: "Sex/Gender Differences in Vocabulary Development"
 author: "Mika Braginsky and Dan Yurovsky"
-date: "2015-04-22"
+date: "2015-04-27"
 output:
   html_document:
     highlight: tango
@@ -25,8 +25,7 @@ source('../../shiny_apps/data_loading.R')
 
 Load in Wordbank common data.
 ```{r}
-wordbank <- src_mysql(dbname='wordbank', host="54.149.39.46",
-                      user="wordbank", password="wordbank")
+wordbank <- connect.to.wordbank("dev")
 
 common.tables <- get.common.tables(wordbank)
 
@@ -82,7 +81,7 @@ areas <- predictions %>%
 ```
 
 Plot mean difference by language.
-```{r, fig.height=6, fig.width=9}
+```{r, fig.height=6, fig.width=10}
 ggplot(areas, aes(x = language, y = area)) +
   geom_bar(stat = "identity", position = "dodge", fill = "steelblue") +
   theme_bw() +
