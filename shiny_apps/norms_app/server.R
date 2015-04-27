@@ -14,8 +14,8 @@ source("predictQR_fixed.R")
 
 ## DEBUGGING
 
-# input <- list(language = "English", form = "WS", measure = "production",
-#              qsize = ".2", demo = "birth.order")
+# input <- list(language = "German", form = "WS", measure = "production",
+#              qsize = ".2", demo = "sex")
 
 shinyServer(function(input, output, session) {
   
@@ -23,7 +23,7 @@ shinyServer(function(input, output, session) {
   outputOptions(output, 'loaded', suspendWhenHidden=FALSE)
   
 
-  wordbank <- connect.to.wordbank("prod")
+  wordbank <- connect.to.wordbank("local")
   
   common.tables <- get.common.tables(wordbank)
   
@@ -90,9 +90,9 @@ shinyServer(function(input, output, session) {
     base * scaling
   })
   
-  instrument <- reactive({filter(instruments,
-                                 language == input.language(),
-                                 form == input.form())})
+  instrument <- reactive({
+    filter(instruments, language == input.language(), form == input.form())
+  })
   
   ylabel <- reactive({
     if (input.measure() == "comprehension") {
@@ -131,10 +131,10 @@ shinyServer(function(input, output, session) {
       group_by(demo) %>%
       summarise(n = n()) 
     
-    smallest_n <- min(groups$n)
+    largest_n <- max(groups$n)
     
     groups %>%
-      filter(n >= min(min_obs, smallest_n),
+      filter(n >= min(min_obs, largest_n),
              n >= min_obs_backoff)
   })
   
