@@ -23,7 +23,7 @@ shinyServer(function(input, output, session) {
   outputOptions(output, 'loaded', suspendWhenHidden=FALSE)
   
 
-  wordbank <- connect.to.wordbank("local")
+  wordbank <- connect.to.wordbank("prod")
   
   common.tables <- get.common.tables(wordbank)
   
@@ -185,26 +185,35 @@ shinyServer(function(input, output, session) {
       mutate(demo = as.factor(demo))
   })
   
+  color.legend.name <- reactive({
+    if (input.demo() == "identity") {
+      "Quantile"
+    } else {
+      names(which(possible_demo_fields == input.demo()))
+    }
+  })
+
   plot <- function() {
     
+    pt.color <- "steelblue"
     if (input$qsize == 1 & input.demo() == "identity") {
       p <- ggplot(data(), aes(x=age, y=vocab)) +
-        geom_jitter(width=.1, col = "steelblue", size = 1) +    
+        geom_jitter(width=.1, color = pt.color, size = 1) +    
         geom_line(data = curves(),
                   aes(x = age, y = predicted),
                   size = 1, 
-                  col = "steelblue") 
+                  col = pt.color) 
     } else if (input$qsize != 1 & input.demo() == "identity") {
-      p <- ggplot(data(), aes(x=age, y=vocab, col = quantile)) +
-        geom_jitter(width=.1, col = "steelblue", size = 1) +    
+      p <- ggplot(data(), aes(x=age, y=vocab, color = quantile)) +
+        geom_jitter(width=.1, color = pt.color, size = 1) +    
         geom_line(data = curves(),
-                  aes(x = age, y = predicted, col = quantile),
+                  aes(x = age, y = predicted, color = quantile),
                   size = 1) 
     } else if (input$qsize == 1 & input.demo() != "identity") {
-      p <- ggplot(data(), aes(x=age, y=vocab, col = demo)) +
+      p <- ggplot(data(), aes(x=age, y=vocab, color = demo)) +
         geom_jitter(width=.1, size = 1) +    
         geom_line(data = curves(),
-                  aes(x = age, y = predicted, col = demo),
+                  aes(x = age, y = predicted, color = demo),
                   size = 1) 
     } else {
       p <- ggplot(data(), aes(x=age, y=vocab, col = demo)) +
@@ -219,7 +228,7 @@ shinyServer(function(input, output, session) {
                          breaks=seq(age.min(), age.max(), by=2),
                          limits=c(age.min(), age.max())) +
       ylab(paste(ylabel(), "\n", sep="")) +
-      scale_colour_brewer(name = input.demo(),
+      scale_colour_brewer(name = color.legend.name(),
                           palette=seq.palette) +
       theme(text=element_text(family=font))
   }
