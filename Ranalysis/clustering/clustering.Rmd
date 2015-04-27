@@ -20,8 +20,8 @@ library(dplyr)
 library(tidyr)
 library(RMySQL)
 library(ggplot2)
-source("../shiny_apps/data_loading.R")
-wordbank <- src_mysql(dbname="wordbank")
+source("../../shiny_apps/data_loading.R")
+wordbank <- connect.to.wordbank("prod")
 ```
 
 Load Wordbank data for administrations and items for English WS.
@@ -41,7 +41,8 @@ admins <- get.administration.data(common.tables$momed,
                         labels=cuts[2:length(cuts)] - qs/2))
 
 items <- get.item.data(common.tables$wordmapping,
-                       common.tables$instrumentsmap)
+                       common.tables$instrumentsmap,
+                       common.tables$category)
 
 words <- filter(items, language == "English", form == "WS", type == "word")
 ```

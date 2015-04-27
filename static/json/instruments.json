@@ -1,5 +1,13 @@
 [
     {
+        "language": "Cantonese",
+        "form": "WS",
+        "file": "raw_data/Cantonese_WS/[Cantonese_WS].csv",
+        "age_min": 16,
+        "age_max": 30,
+        "has_grammar": false
+    },
+    {
         "language": "Croatian",
         "form": "WG",
         "file": "raw_data/Croatian_WG/[Croatian_WG].csv",
@@ -69,6 +77,14 @@
         "file": "raw_data/Italian_WS/[Italian_WS].csv",
         "age_min": 18,
         "age_max": 36,
+        "has_grammar": false
+    },
+    {
+        "language": "Mandarin",
+        "form": "WS",
+        "file": "raw_data/Mandarin_WS/[Mandarin_WS].csv",
+        "age_min": 16,
+        "age_max": 30,
         "has_grammar": false
     },
     {
