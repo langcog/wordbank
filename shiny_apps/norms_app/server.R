@@ -13,8 +13,8 @@ source("predictQR_fixed.R")
 # options(shiny.error=browser)
 
 ## DEBUGGING
-# input <- list(language = "English", form = "WS", measure = "production",
-#              num_quantiles = 3, demo = "ethnicity")
+input <- list(language = "Hebrew", form = "WG", measure = "production",
+             num_quantiles = 3, demo = "identity")
 
 shinyServer(function(input, output, session) {
   
@@ -22,7 +22,7 @@ shinyServer(function(input, output, session) {
   outputOptions(output, 'loaded', suspendWhenHidden=FALSE)
   
 
-  wordbank <- connect.to.wordbank("prod")
+  wordbank <- connect.to.wordbank("local")
   
   common.tables <- get.common.tables(wordbank)
   
@@ -48,8 +48,7 @@ shinyServer(function(input, output, session) {
                                "Ethnicity" = "ethnicity",
                                "Sex" = "sex",
                                "Mother's Education" = "momed.level")
-  min_obs <- 100
-  min_obs_backoff <- 20
+  min_obs <- 60
   
   start.language <- function() {"English"}
   start.form <- function() {"WS"}
@@ -128,13 +127,8 @@ shinyServer(function(input, output, session) {
   groups_with_data <- reactive({
     groups <- renamed_filtered_admins() %>%
       group_by(demo) %>%
-      summarise(n = n()) 
-    
-    largest_n <- max(groups$n)
-    
-    groups %>%
-      filter(n >= min(min_obs, largest_n),
-             n >= min_obs_backoff)
+      summarise(n = n()) %>%
+      filter(n >= min_obs)
   })
   
   data <- reactive({
@@ -253,17 +247,7 @@ shinyServer(function(input, output, session) {
       list("Produces" = "production")
     }
   })
-  
-  demos <- reactive({
-    demo_fields <- possible_demo_fields
-    for (i in seq(length(possible_demo_fields),1,-1)) {
-      if (all(is.na(filtered_admins()[possible_demo_fields[[i]]]))) {
-        demo_fields <- demo_fields[-i]
-      }
-    }
-    return(demo_fields)
-  })                            
-  
+    
   output$plot <- renderPlot({
     plot()
   }, height = function() {
@@ -272,22 +256,40 @@ shinyServer(function(input, output, session) {
   
   output$language_selector <- renderUI({    
     selectizeInput("language", label = h4("Language"), 
-                   choices = languages, selected = start.language())
+                   choices = languages, selected = input.language())
   })
   
   output$form_selector <- renderUI({    
     selectizeInput("form", label = h4("Form"), 
-                   choices = forms(), selected = start.form())
+                   choices = forms(), selected = input.form())
   })
   
   output$measure_selector <- renderUI({
     selectizeInput("measure", label = h4("Measure"), 
-                   choices = measures(), selected = start.measure())
+                   choices = measures(), selected = input.measure())
   })
   
   output$demo_selector <- renderUI({
-    selectizeInput("demo", label = h4("Split Variable"), 
-                   choices = demos(), selected = start.demo())
+    
+    num_demo_values <- function(demo) {
+      groups <- filtered_admins() %>%
+        filter_(interp("!is.na(x)", x = as.name(demo))) %>%
+        group_by_(demo) %>%
+        summarise(n = n()) %>%
+        filter(n >= min_obs)
+      return(length(groups[[demo]]))
+    }
+    
+    demo_fields <- Filter(function(demo) demo == "identity" | num_demo_values(demo) >= 2,
+                          possible_demo_fields)
+#demo_fields <- possible_demo_fields
+#     for (i in seq(length(possible_demo_fields),1,-1)) {
+#       if (all(is.na(filtered_admins()[possible_demo_fields[[i]]]))) {
+#         demo_fields <- demo_fields[-i]
+#       }
+#    }
+    selectInput("demo", label = h4("Split Variable"),
+                choices = demo_fields, selected = input.demo())
   })
   
   output$downloadData <- downloadHandler(
