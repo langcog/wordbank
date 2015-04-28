@@ -42,6 +42,8 @@ shinyUI(fluidPage(
                  ".shiny-output-error { visibility: hidden; }",
                  ".shiny-output-error:before { visibility: hidden; }"),
       plotOutput("plot", width = "100%", height = "auto"),
+      h5("Sample sizes:"),
+      tableOutput("sample_sizes"),      
       width=9)
   )
 ))
