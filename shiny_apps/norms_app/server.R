@@ -10,11 +10,10 @@ library(quantregGrowth)
 source("../app_themes.R")
 source("../data_loading.R")
 source("predictQR_fixed.R")
-# options(shiny.error=browser)
 
 ## DEBUGGING
-input <- list(language = "Hebrew", form = "WG", measure = "production",
-             num_quantiles = 3, demo = "identity")
+#input <- list(language = "Hebrew", form = "WG", measure = "production",
+#             num_quantiles = 3, demo = "identity")
 
 shinyServer(function(input, output, session) {
   
@@ -125,7 +124,7 @@ shinyServer(function(input, output, session) {
   })
 
   groups_with_data <- reactive({
-    groups <- renamed_filtered_admins() %>%
+    renamed_filtered_admins() %>%
       group_by(demo) %>%
       summarise(n = n()) %>%
       filter(n >= min_obs)
@@ -147,6 +146,8 @@ shinyServer(function(input, output, session) {
     
     clean.data <- renamed_filtered_admins() %>%
       right_join(groups_with_data())
+    
+#    browser()
     
     models <- clean.data %>%
       group_by(demo) %>%
@@ -176,6 +177,7 @@ shinyServer(function(input, output, session) {
     
     predicted.data %>%
       mutate(demo = as.factor(demo))
+    
   })
   
   color.legend.name <- reactive({
@@ -254,6 +256,10 @@ shinyServer(function(input, output, session) {
     session$clientData$output_plot_width * aspect.ratio()
   })
   
+  output$sample_sizes <- renderTable({
+    groups_with_data()
+  }, include.rownames = FALSE, include.colnames = FALSE)
+
   output$language_selector <- renderUI({    
     selectizeInput("language", label = h4("Language"), 
                    choices = languages, selected = input.language())
