@@ -13,9 +13,8 @@ source("predictQR_fixed.R")
 # options(shiny.error=browser)
 
 ## DEBUGGING
-
-# input <- list(language = "German", form = "WS", measure = "production",
-#              qsize = ".2", demo = "sex")
+# input <- list(language = "English", form = "WS", measure = "production",
+#              num_quantiles = 3, demo = "ethnicity")
 
 shinyServer(function(input, output, session) {
   
@@ -23,7 +22,7 @@ shinyServer(function(input, output, session) {
   outputOptions(output, 'loaded', suspendWhenHidden=FALSE)
   
 
-  wordbank <- connect.to.wordbank("local")
+  wordbank <- connect.to.wordbank("prod")
   
   common.tables <- get.common.tables(wordbank)
   
@@ -50,7 +49,7 @@ shinyServer(function(input, output, session) {
                                "Sex" = "sex",
                                "Mother's Education" = "momed.level")
   min_obs <- 100
-  min_obs_backoff <- 50
+  min_obs_backoff <- 20
   
   start.language <- function() {"English"}
   start.form <- function() {"WS"}
@@ -106,11 +105,11 @@ shinyServer(function(input, output, session) {
   age.max <- reactive({instrument()$age_max})
   
   cuts <- reactive({
-    seq(0.0, 1.0, by=as.numeric(input$qsize))
+    seq(0.0, 1.0, by=1/as.numeric(input$num_quantiles))
   })
   
   middles <- reactive({
-    cuts()[2:length(cuts())] - as.numeric(input$qsize)/2
+    round(cuts()[2:length(cuts())] - 1/as.numeric(input$num_quantiles)/2, 2)
   })
   
   filtered_admins <- reactive({
@@ -144,7 +143,7 @@ shinyServer(function(input, output, session) {
       group_by(age, demo) %>%
       mutate(percentile = rank(vocab) / length(vocab),
              quantile = cut(percentile,
-                            breaks=cuts(), 
+                            breaks=cuts(),
                             labels=middles()))
   })
 
@@ -196,25 +195,33 @@ shinyServer(function(input, output, session) {
   plot <- function() {
     
     pt.color <- "steelblue"
-    if (input$qsize == 1 & input.demo() == "identity") {
+    
+    # no faceting, no coloring
+    if (input$num_quantiles == 1 & input.demo() == "identity") {
       p <- ggplot(data(), aes(x=age, y=vocab)) +
         geom_jitter(width=.1, color = pt.color, size = 1) +    
         geom_line(data = curves(),
                   aes(x = age, y = predicted),
                   size = 1, 
-                  col = pt.color) 
-    } else if (input$qsize != 1 & input.demo() == "identity") {
+                  col = pt.color)
+      
+    # no faceting, color by quantile
+    } else if (input$num_quantiles != 1 & input.demo() == "identity") {
       p <- ggplot(data(), aes(x=age, y=vocab, color = quantile)) +
         geom_jitter(width=.1, color = pt.color, size = 1) +    
         geom_line(data = curves(),
                   aes(x = age, y = predicted, color = quantile),
                   size = 1) 
-    } else if (input$qsize == 1 & input.demo() != "identity") {
+      
+    # no faceting, color by demo
+    } else if (input$num_quantiles == 1 & input.demo() != "identity") {
       p <- ggplot(data(), aes(x=age, y=vocab, color = demo)) +
         geom_jitter(width=.1, size = 1) +    
         geom_line(data = curves(),
                   aes(x = age, y = predicted, color = demo),
                   size = 1) 
+    
+    # facet by quantile, color by demo
     } else {
       p <- ggplot(data(), aes(x=age, y=vocab, col = demo)) +
         geom_jitter(width=.1, size = 1) +    
