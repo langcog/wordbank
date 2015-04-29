@@ -67,7 +67,9 @@ shinyServer(function(input, output, session) {
     ifelse(is.null(input$measure), start.measure(), input$measure)
   })
   
-  input.age <- reactive({input$age})
+  input.age <- reactive({
+    ifelse(is.null(input$measure), floor((age.min()+age.max())/2), input$age)
+  })
   
   input.demo <- reactive({
     ifelse(is.null(input$demo), start.demo(), input$demo)
@@ -144,17 +146,7 @@ shinyServer(function(input, output, session) {
     } else if (input.form() == "WS") {
       list("Produces" = "production")
     }
-  })
-  
-  demos <- reactive({
-    demo_fields <- possible_demo_fields
-    for (i in seq(length(possible_demo_fields),1,-1)) {
-      if (all(is.na(filtered_admins()[possible_demo_fields[[i]]]))) {
-        demo_fields <- demo_fields[-i]
-      }
-    }
-    return(demo_fields)
-  })                            
+  })                  
   
   output$plot <- renderPlot({
     plot()    
@@ -162,20 +154,24 @@ shinyServer(function(input, output, session) {
     session$clientData$output_plot_width * 0.7
   })
   
+  output$sample_size_header <- renderText({"Sample sizes:"})
+  output$sample_size <- renderTable({
+    groups_with_data()
+  }, include.rownames = FALSE, include.colnames = FALSE)
   
   output$language_selector <- renderUI({    
     selectizeInput("language", label = h4("Language"), 
-                   choices = languages, selected = start.language())
+                   choices = languages, selected = input.language())
   })
   
   output$form_selector <- renderUI({    
     selectizeInput("form", label = h4("Form"), 
-                   choices = forms(), selected = start.form())
+                   choices = forms(), selected = input.form())
   })
   
   output$measure_selector <- renderUI({
     selectizeInput("measure", label = h4("Measure"), 
-                   choices = measures(), selected = start.measure())
+                   choices = measures(), selected = input.measure())
   })
   
   age.min <- reactive({instrument()$age_min})
@@ -184,14 +180,25 @@ shinyServer(function(input, output, session) {
   output$age_selector <- renderUI({
     sliderInput("age", label = h4("Age (Months)"), 
                 min = age.min(), max = age.max(), step = 1,
-                value = floor((age.min()+age.max())/2))
+                value = input.age())
   })
   
   output$demo_selector <- renderUI({
-    selectizeInput("demo", label = h4("Split Variable"), 
-                   choices = demos(), selected = start.demo())
+    
+    num_demo_values <- function(demo) {
+      groups <- filtered_admins() %>%
+        filter_(interp("!is.na(x)", x = as.name(demo))) %>%
+        group_by_(demo) %>%
+        summarise(n = n())
+      return(length(groups[[demo]]))
+    }
+    
+    demo_fields <- Filter(function(demo) demo == "identity" | num_demo_values(demo) >= 2,
+                          possible_demo_fields)
+    selectInput("demo", label = h4("Split Variable"),
+                choices = demo_fields, selected = input.demo())
   })
-  
+    
   output$downloadData <- downloadHandler(
     filename = function() { 'vocabulary_distribution.csv' },
     content = function(file) {
