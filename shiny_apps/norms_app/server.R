@@ -288,12 +288,6 @@ shinyServer(function(input, output, session) {
     
     demo_fields <- Filter(function(demo) demo == "identity" | num_demo_values(demo) >= 2,
                           possible_demo_fields)
-#demo_fields <- possible_demo_fields
-#     for (i in seq(length(possible_demo_fields),1,-1)) {
-#       if (all(is.na(filtered_admins()[possible_demo_fields[[i]]]))) {
-#         demo_fields <- demo_fields[-i]
-#       }
-#    }
     selectInput("demo", label = h4("Split Variable"),
                 choices = demo_fields, selected = input.demo())
   })
