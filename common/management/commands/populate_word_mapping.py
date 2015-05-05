@@ -62,7 +62,10 @@ class Command(NoArgsCommand):
                     #uni_lemma = row_values[col_names.index('uni_lemma')]
                     definition = row_values[col_names.index('definition')]
                     gloss = row_values[col_names.index('gloss')]
-                    complexity_category = row_values[col_names.index('complexity_category')]
+                    if 'complexity_category' in col_names:
+                        complexity_category = row_values[col_names.index('complexity_category')]
+                    else:
+                        complexity_category = None
 
                     #if not WordInfo.objects.filter(uni_lemma=uni_lemma, lang_lemma=lang_lemma).exists():
                     #    WordInfo.objects.create(uni_lemma=uni_lemma, lang_lemma=lang_lemma)
