@@ -8,7 +8,7 @@ def check_field_mapping(instrument_file, data_file, threshold=0.7):
     data_book = xlrd.open_workbook(data_file)
 
     # make a mapping between datasheet column names and model field names/types
-    field_mapping_sheet = data_book.sheet_by_name('field_mapping')
+    field_mapping_sheet = data_book.sheet_by_name('fields')
     cols = defaultdict(lambda: dict())
     for row in xrange(1, field_mapping_sheet.nrows):
         row_values = list(field_mapping_sheet.row_values(row))

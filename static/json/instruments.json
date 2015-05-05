@@ -1,5 +1,13 @@
 [
     {
+        "language": "BSL",
+        "form": "WG",
+        "file": "raw_data/BSL_WG/[BSL_WG].xlsx",
+        "age_min": 8,
+        "age_max": 36,
+        "has_grammar": false
+    },
+    {
         "language": "Cantonese",
         "form": "WS",
         "file": "raw_data/Cantonese_WS/[Cantonese_WS].csv",
