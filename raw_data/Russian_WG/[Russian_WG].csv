@@ -453,5 +453,5 @@ NULL,NULL,household,NULL,word,understands; produces,NULL,NULL,,,item_246
 всё (в знач. Нет кончилось),gone,quantifiers,NA,word,understands; produces,NA,NA,,,item_452
 еще,more,quantifiers,NA,word,understands; produces,NA,NA,,,item_453
 другой,other/another,quantifiers,NA,word,understands; produces,NA,NA,,,item_454
-нет,no/gone,quantifiers,NA,word,understands; produces,NA,NA,,,Item_455
-хватит,enough,quantifiers,NA,word,understands; produces,NA,NA,,,Item_456
+нет,no/gone,quantifiers,NA,word,understands; produces,NA,NA,,,item_455
+хватит,enough,quantifiers,NA,word,understands; produces,NA,NA,,,item_456
