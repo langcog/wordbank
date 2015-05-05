@@ -33,10 +33,10 @@ definition,gloss,category,item,type,choices,lang_lemma,uni_lemma,lexical_categor
 ам-ам/ням-ням,yum yum,sounds,NA,word,understands; produces,NA,NA,,,item_32
 бе,baa baa,sounds,NA,word,understands; produces,NA,NA,,,item_33
 биби,beep beep,sounds,NA,word,understands; produces,NA,NA,,,item_34
-бл-бл,goble goble,sounds,NA,word,understands; produces,NA,NA,,,item_35
+бл-бл,gobble gobble,sounds,NA,word,understands; produces,NA,NA,,,item_35
 брр/ввв и т.п.,vroom,sounds,NA,word,understands; produces,NA,NA,,,item_36
 бух/бах/бам,Thump,sounds,NA,word,understands; produces,NA,NA,,,item_37
-га-га,Honk-honk,sounds,NA,word,understands; produces,NA,NA,,,item_38
+га-га,honk honk,sounds,NA,word,understands; produces,NA,NA,,,item_38
 динь-динь,Ding-a-ling,sounds,NA,word,understands; produces,NA,NA,,,item_39
 жж,Bzzz,sounds,NA,word,understands; produces,NA,NA,,,item_40
 иа,E-haw,sounds,NA,word,understands; produces,NA,NA,,,item_41
@@ -45,8 +45,8 @@ definition,gloss,category,item,type,choices,lang_lemma,uni_lemma,lexical_categor
 кар,Caw,sounds,NA,word,understands; produces,NA,NA,,,item_44
 ква,Croak-croak,sounds,NA,word,understands; produces,NA,NA,,,item_45
 ко-ко,Cluck-cluck,sounds,NA,word,understands; produces,NA,NA,,,item_46
-кря,quack -quack,sounds,NA,word,understands; produces,NA,NA,,,item_47
-кукареку,Cock-a-doodle-do,sounds,NA,word,understands; produces,NA,NA,,,item_48
+кря,quack quack,sounds,NA,word,understands; produces,NA,NA,,,item_47
+кукареку,cockadoodledoo,sounds,NA,word,understands; produces,NA,NA,,,item_48
 ля-ля-ля,Lah-lah,sounds,NA,word,understands; produces,NA,NA,,,item_49
 ме,baa baa,sounds,NA,word,understands; produces,NA,NA,,,item_50
 му,moo,sounds,NA,word,understands; produces,NA,NA,,,item_51
@@ -290,22 +290,22 @@ NULL,NULL,household,NULL,word,understands; produces,NULL,NULL,,,item_246
 имя папы,father´s name,people,NA,word,understands; produces,NA,NA,,,item_289
 имя мамы,mother´s name,people,NA,word,understands; produces,NA,NA,,,item_290
 имена знакомых детей,names of friends,people,NA,word,understands; produces,NA,NA,,,item_291
-клички домаш-них животных,pets´ names,people,NA,word,understands; produces,NA,NA,,,item_292
+клички домаш-них животных,pets' names,people,NA,word,understands; produces,NA,NA,,,item_292
 люди,people,people,NA,word,understands; produces,NA,NA,,,item_293
 человек,man,people,NA,word,understands; produces,NA,NA,,,item_294
-ай-я-яй,NULL,games_routines,NA,word,understands; produces,NA,NA,,,item_295
-брысь/кыш,NULL,games_routines,NA,word,understands; produces,NA,NA,,,item_296
+ай-я-яй,uh oh,games_routines,NA,word,understands; produces,NA,NA,,,item_295
+брысь/кыш,shoo,games_routines,NA,word,understands; produces,NA,NA,,,item_296
 пока,bye,games_routines,NA,word,understands; produces,NA,NA,,,item_297
-привет,hi/hallo,games_routines,NA,word,understands; produces,NA,NA,,,item_298
-на (возьми),NULL,games_routines,NA,word,understands; produces,NA,NA,,,item_299
-надо/нужно,NULL,games_routines,NA,word,understands; produces,NA,NA,,,item_300
-не буду,don´t,games_routines,NA,word,understands; produces,NA,NA,,,item_301
-не хочу,don´t,games_routines,NA,word,understands; produces,NA,NA,,,item_302
+привет,hi,games_routines,NA,word,understands; produces,NA,NA,,,item_298
+на (возьми),here (take),games_routines,NA,word,understands; produces,NA,NA,,,item_299
+надо/нужно,need,games_routines,NA,word,understands; produces,NA,NA,,,item_300
+не буду,I won't,games_routines,NA,word,understands; produces,NA,NA,,,item_301
+не хочу,I don't want to,games_routines,NA,word,understands; produces,NA,NA,,,item_302
 да,yes,games_routines,NA,word,understands; produces,NA,NA,,,item_303
 нет,no,games_routines,NA,word,understands; produces,NA,NA,,,item_304
 нельзя,no/don´t,games_routines,NA,word,understands; produces,NA,NA,,,item_305
 можно,can/let me,games_routines,NA,word,understands; produces,NA,NA,,,item_306
-спасибо,NULL,games_routines,NA,word,understands; produces,NA,NA,,,item_307
+спасибо,thank you,games_routines,NA,word,understands; produces,NA,NA,,,item_307
 ку-ку,NULL,games_routines,NA,word,understands; produces,NA,NA,,,item_308
 тю-тю,NULL,games_routines,NA,word,understands; produces,NA,NA,,,item_309
 вот так!,NULL,games_routines,NA,word,understands; produces,NA,NA,,,item_310
