@@ -16,7 +16,7 @@ class Command(NoArgsCommand):
 
             print "    Caching vocabulary sizes for", instrument.language, instrument.form
 
-            instrument_model = getattr(instruments.models, '_'.join([instrument.language, instrument.form]))
+            instrument_model = getattr(instruments.models, '_'.join(instrument.language.split() + [instrument.form]))
             instrument_table = instrument_model._meta.db_table
             words = [item.item_id for item in WordMapping.objects.filter(instrument = instrument.pk, type = 'word')]
 
