@@ -7,13 +7,12 @@ class WordInfo(models.Model):
 
 
 class InstrumentsMap(models.Model):
-    language = models.CharField(max_length=20)
+    language = models.CharField(max_length=30)
     forms = (('WS', 'Words & Sentences'), ('WG', 'Words & Gestures'))
     form = models.CharField(max_length=2, choices=forms)
     age_min = models.IntegerField()
     age_max = models.IntegerField()
     has_grammar = models.BooleanField(default=False)
-
 
 class Category(models.Model):
     name = models.CharField(max_length=50)
@@ -59,7 +58,7 @@ class Child(models.Model):
 class Source(models.Model):
     name = models.CharField(max_length=20)
     dataset = models.CharField(max_length=20, null=True, blank=True)
-    instrument_language = models.CharField(max_length=20)
+    instrument_language = models.CharField(max_length=30)
     instrument_form = models.CharField(max_length=20)
     contributor = models.TextField(blank=True)
     citation = models.TextField(blank=True)
