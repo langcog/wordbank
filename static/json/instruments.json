@@ -1,6 +1,6 @@
 [
     {
-        "language": "BSL",
+        "language": "British Sign Language",
         "form": "WG",
         "file": "raw_data/BSL_WG/[BSL_WG].xlsx",
         "age_min": 8,
@@ -85,6 +85,14 @@
         "file": "raw_data/Italian_WS/[Italian_WS].csv",
         "age_min": 18,
         "age_max": 36,
+        "has_grammar": false
+    },
+    {
+        "language": "Mandarin",
+        "form": "TC",
+        "file": "raw_data/Mandarin_TC/[Mandarin_TC].xlsx",
+        "age_min": 17,
+        "age_max": 30,
         "has_grammar": false
     },
     {
