@@ -8,7 +8,8 @@ class WordInfo(models.Model):
 
 class InstrumentsMap(models.Model):
     language = models.CharField(max_length=30)
-    forms = (('WS', 'Words & Sentences'), ('WG', 'Words & Gestures'))
+    forms = (('WS', 'Words & Sentences'), ('WG', 'Words & Gestures'),
+             ('TC', 'Toddler Checklist'), ('IC', 'Infant Checklist'))
     form = models.CharField(max_length=2, choices=forms)
     age_min = models.IntegerField()
     age_max = models.IntegerField()
