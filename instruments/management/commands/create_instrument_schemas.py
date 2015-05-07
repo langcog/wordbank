@@ -22,7 +22,7 @@ class Command(NoArgsCommand):
 
         for instrument in input_instruments:
 
-            instr = '_'.join([instrument['language'], instrument['form']])
+            instr = '_'.join(instrument['language'].split() + [instrument['form']])
             models_file.write('from schemas.%s import *\n' % (instr))
             instrument_file = open('instruments/schemas/%s.py' % (instr), 'w')
 
