@@ -11,7 +11,8 @@ class Command(NoArgsCommand):
         insts = json.load(open('static/json/instruments.json'))
 
         for instrument in insts:
-            instrument_model = getattr(instruments.models, '_'.join([instrument['language'], instrument['form']]))
+            instrument_model = getattr(instruments.models,
+                                       '_'.join(instrument['language'].split() + [instrument['form']]))
             instrument_model.objects.all().delete()
 
         Child.objects.all().delete()

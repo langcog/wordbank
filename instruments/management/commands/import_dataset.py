@@ -5,7 +5,7 @@ from instruments import import_dataset_helper
 
 def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_language, instrument_form, splitcol):
 
-        instrument_string = '_'.join([instrument_language, instrument_form])
+        instrument_string = '_'.join(instrument_language.split() + [instrument_form])
         try:
             instrument_model = getattr(instruments.models, instrument_string)
         except AttributeError:
