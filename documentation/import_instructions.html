@@ -16,7 +16,7 @@ Instrument
 
 - Make a directory in `raw_data/` for the instrument (by convention called `Wugese_WS`, but doesn't have to be).
 
-- Put an instrument definition file in that directory (by convention called `[Wugese_WS].csv` or `[Wugese_WS].xlsx`, but doesn't have to be). The instrument definition file should be either a csv file or a an excel file in which each row defined an item, and which has the following columns:
+- Put an instrument definition file in that directory (by convention called `[Wugese_WS].csv` or `[Wugese_WS].xlsx`, but doesn't have to be). The instrument definition file should be either a csv file or a an excel file in which each row defined an item, and which has the following columns (in any order):
     - `itemID`: how the item is identified in Wordbank
         - spec: string no more than 50 characters long that contains only characters that are letters or underscores; must be unique across the items of a given instrument
         - examples: `item_1`, `item_25`, `item_100`
@@ -26,12 +26,12 @@ Instrument
     - `type`: item group that's used for determining how to treat the item
         - spec: ASCII string no more than 30 characters long
         - examples: `word`, `word_form`, `complexity`, `gestures`
-    - `category`: the section of the form in which the item appears
-        - spec: one of the strings in the first column of `raw_data/categories.csv` or blank
-        - examples: `animals`, `action_words`, `pronouns`
     - `choices`: which values are possible for the item in Wordbank
         - spec: list of ASCII strings separated by a semicolon and space, `; `, in any order
         - examples: `understands; produces`, `often; sometimes; never`, `simple; complex`
+    - `category`: the section of the form in which the item appears
+        - spec: one of the strings in the first column of `raw_data/categories.csv` or blank
+        - examples: `animals`, `action_words`, `pronouns`
     - `definition`: a longer value for the item that's more or less exactly what it looks like on the form
         - spec: UTF-8 string no more than 200 characters long or blank
         - examples: `dog`, `chicken (food)`, `Hunden kysser mig / Hunden kyssede mig`
@@ -41,8 +41,9 @@ Instrument
     - `complexity_category`: blank for items other complexity items, coding for complexity items
         - spec: ASCII string no more than 30 characters long or blank
         - examples: `morphology`, `syntax`
-    - `lang_lemma` (not currently implemented, so whatever)
-    - `uni_lemma` (not currently implemented, so whatever)
+    - `uni_lemma`: representation of meaning that is used to map between languages
+        - spec: ASCII string no more than 50 characters long or blank
+        - examples: `dog`, `chicken (food)`
 
 
 - Add the instrument to `static/json/instruments.json` with an entry such as
