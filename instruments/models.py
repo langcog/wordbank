@@ -19,3 +19,5 @@ from schemas.Hebrew_WS import *
 from schemas.Hebrew_WG import *
 from schemas.Cantonese_WS import *
 from schemas.Mandarin_WS import *
+from schemas.British_Sign_Language_WG import *
+from schemas.Mandarin_TC import *

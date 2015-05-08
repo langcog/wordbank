@@ -10,7 +10,7 @@ class Command(NoArgsCommand):
 
         instrument_language, instrument_form = args[0], args[1]
 
-        instrument_string = '_'.join([instrument_language, instrument_form])
+        instrument_string = '_'.join(instrument_language.split() + [instrument_form])
         instrument_model = getattr(instruments.models, instrument_string)
         instrument_model.objects.all().delete()
 
