@@ -2,18 +2,22 @@ import xlrd
 import codecs
 import json
 import re
-from django.core.management.base import NoArgsCommand
+from django.core.management.base import BaseCommand
 from common.models import *
 
 
-class Command(NoArgsCommand):
+class Command(BaseCommand):
+
+    def add_arguments(self, parser):
+        parser.add_argument('-l', '--language', type=str)
+        parser.add_argument('-f', '--form', type=str)
 
     def handle(self, *args, **options):
 
         instruments = json.load(open('static/json/instruments.json'))
 
-        if len(args) > 1:
-            input_language, input_form = args[0], args[1]
+        if options['language'] and options['form']:
+            input_language, input_form = options['language'], options['form']
             input_instruments = filter(lambda instrument: instrument['language'] == input_language and
                                                           instrument['form'] == input_form,
                                        instruments)
@@ -23,7 +27,7 @@ class Command(NoArgsCommand):
         for instrument in input_instruments:
 
             instrument_language, instrument_form = instrument['language'], instrument['form']
-            instrument_key = InstrumentsMap.objects.get(form=instrument_form, language=instrument_language)
+            instrument_obj = Instrument.objects.get(form=instrument_form, language=instrument_language)
             print "    Populating items for", instrument_language, instrument_form
 
             ftype = instrument['file'].split('.')[-1]
@@ -34,7 +38,7 @@ class Command(NoArgsCommand):
                 nrows = sheet.nrows
                 get_row = lambda row: list(sheet.row_values(row))
             elif ftype == 'csv':
-                contents = [field for field in [line.split(',')
+                contents = [[field.replace('"', '') for field in row] for row in [line.split(',')
                                                 for line in re.split("\n|\r", codecs.open(instrument['file'],
                                                                                           encoding='utf-8').read())]]
                 col_names = contents[0]
@@ -58,8 +62,6 @@ class Command(NoArgsCommand):
                         except:
                             raise IOError("Can't find category %s in model" % (item_category,))
 
-                    #lang_lemma = row_values[col_names.index('lang_lemma')]
-                    #uni_lemma = row_values[col_names.index('uni_lemma')]
                     definition = row_values[col_names.index('definition')]
                     gloss = row_values[col_names.index('gloss')]
                     if 'complexity_category' in col_names:
@@ -67,17 +69,26 @@ class Command(NoArgsCommand):
                     else:
                         complexity_category = None
 
-                    #if not WordInfo.objects.filter(uni_lemma=uni_lemma, lang_lemma=lang_lemma).exists():
-                    #    WordInfo.objects.create(uni_lemma=uni_lemma, lang_lemma=lang_lemma)
-                    #word_info = WordInfo.objects.get(uni_lemma=uni_lemma, lang_lemma=lang_lemma)
+                    if 'uni_lemma' in col_names:
+                        uni_lemma = row_values[col_names.index('uni_lemma')]
+                        if uni_lemma == "":
+                            item_map = None
+                        else:
+                            if not ItemMap.objects.filter(uni_lemma=uni_lemma).exists():
+                                ItemMap.objects.create(uni_lemma=uni_lemma)
+                            item_map = ItemMap.objects.get(uni_lemma=uni_lemma)
 
-                    if not WordMapping.objects.filter(item_id=itemID, instrument=instrument_key).exists():
-                        WordMapping.objects.create(item=item,
-                                                   item_id=itemID,
-                                                   instrument=instrument_key,
-                                                   type=item_type,
-                                                   category=category_key,
-                                                   #word_info=word_info,
-                                                   definition=definition,
-                                                   gloss=gloss,
-                                                   complexity_category=complexity_category)
+                    else:
+                        item_map = None
+
+                    data_dict = {'item': item,
+                                 'type': item_type,
+                                 'category': category_key,
+                                 'map': item_map,
+                                 'definition': definition,
+                                 'gloss': gloss,
+                                 'complexity_category': complexity_category}
+
+                    if not ItemInfo.objects.filter(item_id=itemID, instrument=instrument_obj).exists():
+                        ItemInfo.objects.create(item_id=itemID, instrument=instrument_obj)
+                    ItemInfo.objects.filter(item_id=itemID, instrument=instrument_obj).update(**data_dict)
