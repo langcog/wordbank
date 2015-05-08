@@ -46,7 +46,11 @@ get.common.tables <- function(db) {
 get.instrument.tables <- function(db, instrumentsmap) {
   
   instrument.tables <- as.data.frame(instrumentsmap) %>%
-    mutate(table.name = paste("instruments", tolower(language), tolower(form), sep = "_")) %>%
+    rowwise() %>%
+    mutate(table.name = paste(unlist(c("instruments",
+                                       strsplit(tolower(language), " "),
+                                       tolower(form))),
+                              collapse = "_")) %>%
     rename(instrument_id = id) %>%
     group_by(instrument_id, language, form, age_min, age_max, has_grammar) %>%
     do(table = tbl(db, .$table.name))
