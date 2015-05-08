@@ -1,10 +1,10 @@
 import json
-from django.core.management.base import NoArgsCommand
+from django.core.management.base import BaseCommand
 from common.models import *
 import instruments.models
 
 
-class Command(NoArgsCommand):
+class Command(BaseCommand):
 
     def handle(self, *args, **options):
 
