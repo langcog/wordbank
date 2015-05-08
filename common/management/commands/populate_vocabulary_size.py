@@ -1,13 +1,17 @@
-from django.core.management.base import NoArgsCommand
+from django.core.management.base import BaseCommand
 from common.models import *
 import instruments.models
 
-class Command(NoArgsCommand):
+class Command(BaseCommand):
+
+    def add_arguments(self, parser):
+        parser.add_argument('-l', '--language', type=str)
+        parser.add_argument('-f', '--form', type=str)
 
     def handle(self, *args, **options):
 
-        if len(args) > 1:
-            input_language, input_form = args[0], args[1]
+        if options['language'] and options['form']:
+            input_language, input_form = options['language'], options['form']
             input_instruments = Instrument.objects.filter(language = input_language, form = input_form)
         else:
             input_instruments = Instrument.objects.all()
