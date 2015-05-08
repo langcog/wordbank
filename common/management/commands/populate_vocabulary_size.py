@@ -8,9 +8,9 @@ class Command(NoArgsCommand):
 
         if len(args) > 1:
             input_language, input_form = args[0], args[1]
-            input_instruments = InstrumentsMap.objects.filter(language = input_language, form = input_form)
+            input_instruments = Instrument.objects.filter(language = input_language, form = input_form)
         else:
-            input_instruments = InstrumentsMap.objects.all()
+            input_instruments = Instrument.objects.all()
 
         for instrument in input_instruments:
 
@@ -18,7 +18,7 @@ class Command(NoArgsCommand):
 
             instrument_model = getattr(instruments.models, '_'.join(instrument.language.split() + [instrument.form]))
             instrument_table = instrument_model._meta.db_table
-            words = [item.item_id for item in WordMapping.objects.filter(instrument = instrument.pk, type = 'word')]
+            words = [item.item_id for item in ItemInfo.objects.filter(instrument = instrument.pk, type = 'word')]
 
             query = "select basetable_ptr_id, "
 

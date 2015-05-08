@@ -14,7 +14,7 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
         import_helper = import_dataset_helper.ImportHelper(dataset_file, splitcol)
         import_helper.import_data()
 
-        instruments_map = InstrumentsMap.objects.get(language=instrument_language, form=instrument_form)
+        instruments_map = Instrument.objects.get(language=instrument_language, form=instrument_form)
 
         children = {}
 
