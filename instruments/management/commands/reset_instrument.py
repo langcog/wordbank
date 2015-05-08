@@ -14,8 +14,8 @@ class Command(NoArgsCommand):
         instrument_model = getattr(instruments.models, instrument_string)
         instrument_model.objects.all().delete()
 
-        if InstrumentsMap.objects.filter(language=instrument_language, form=instrument_form).exists():
-            instrument_obj = InstrumentsMap.objects.get(language=instrument_language, form=instrument_form)
+        if Instrument.objects.filter(language=instrument_language, form=instrument_form).exists():
+            instrument_obj = Instrument.objects.get(language=instrument_language, form=instrument_form)
             for administration in Administration.objects.filter(instrument=instrument_obj.pk):
                 if Child.objects.filter(pk=administration.child.pk).exists():
                     Child.objects.filter(pk=administration.child.pk).delete()
