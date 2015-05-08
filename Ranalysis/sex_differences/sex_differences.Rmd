@@ -29,14 +29,9 @@ wordbank <- connect.to.wordbank("prod")
 
 common.tables <- get.common.tables(wordbank)
 
-admins <- get.administration.data(common.tables$momed,
-                                  common.tables$child,
-                                  common.tables$instrumentsmap,
-                                  common.tables$administration)
+admins <- get.administration.data(common.tables)
 
-items <- get.item.data(common.tables$wordmapping,
-                       common.tables$instrumentsmap,
-                       common.tables$category)
+items <- get.item.data(common.tables)
 ```
 
 Get by-child productive vocabulary data.
@@ -176,6 +171,7 @@ ggplot(diffs.summary, aes(x = mean, y = language)) +
                    y = language, yend = language),
                color = "steelblue") +
   geom_vline(xintercept = 0, linetype = "dashed", color = "gray") + 
+  scale_y_discrete(limits = rev(levels(area.summary$language))) +
   theme_bw() +
   theme(text = element_text(family = font)) +
   xlab("\nMean gender difference in vocabulary size across age") +
