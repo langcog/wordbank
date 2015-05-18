@@ -328,5 +328,25 @@
         "splitcol": false,
         "contributor": "Twila Tardif, University of Michigan",
         "citation": "Tardif, T., Fletcher, P., Liang, W., & Kaciroti, N. (2009). Early vocabulary development in Mandarin (Putonghua) and Cantonese. Journal of child language, 36(05), 1115-1144."
+    },
+    {
+        "name": "Woll",
+        "dataset": "",
+        "instrument_language": "British Sign Language",
+        "instrument_form": "WG",
+        "file": "raw_data/BSL_WG/BSLWG_Woll.xlsx",
+        "splitcol": true,
+        "contributor": "Bencie Woll, University College London",
+        "citation": "Woolfe, T., Herman, R., Roy, P., & Woll, B. (2010). Early vocabulary development in deaf native signers: a British Sign Language adaptation of the communicative development inventories. Journal of Child Psychology and Psychiatry, 51(3), 322-331."
+    },
+    {
+        "name": "Li",
+        "dataset": "",
+        "instrument_language": "Mandarin",
+        "instrument_form": "TC",
+        "file": "raw_data/Mandarin_TC/MandarinTC_Li.csv",
+        "splitcol": false,
+        "contributor": "Ping Li, Pennsylvania State University",
+        "citation": "Hao, M., Shu, H., Xing, A., & Li, P. (2008).  Early vocabulary inventory for Mandarin Chinese.  Behavior Research Methods, 40, 728-733."
     }
 ]

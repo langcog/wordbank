@@ -16,21 +16,16 @@ shinyServer(function(input, output, session) {
   
   common.tables <- get.common.tables(wordbank)
   
-  admins <- get.administration.data(common.tables$momed,
-                                    common.tables$child,
-                                    common.tables$instrumentsmap,
-                                    common.tables$administration) %>%
+  admins <- get.administration.data(common.tables) %>%
     select(data_id, language, form, age, sex, momed.level, comprehension, production) %>%
     rename(momed = momed.level) %>%
     mutate(sex = factor(sex, levels=c("F", "M", "O"), labels=c("Female", "Male", "Other")))
   
-  items <- get.item.data(common.tables$wordmapping,
-                         common.tables$instrumentsmap,
-                         common.tables$category) %>%
+  items <- get.item.data(common.tables) %>%
     select(item.id, type, category, definition, language, form) %>%
     mutate(item.id = as.numeric(substr(item.id, 6, nchar(item.id))))
   
-  instrument.tables <- get.instrument.tables(wordbank, common.tables$instrumentsmap)
+  instrument.tables <- get.instrument.tables(wordbank, common.tables)
   languages <- sort(unique(instrument.tables$language))
   #forms <- unique(instrument.tables$form)
   
