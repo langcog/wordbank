@@ -22,10 +22,7 @@ shinyServer(function(input, output, session) {
   
   common.tables <- get.common.tables(wordbank)
   
-  admins <- get.administration.data(common.tables$momed,
-                                    common.tables$child,
-                                    common.tables$instrumentsmap,
-                                    common.tables$administration) %>%
+  admins <- get.administration.data(common.tables) %>%
     gather(measure, vocab, comprehension, production) %>%
     mutate(identity = "All Data") %>%
     mutate(sex = factor(sex, levels=c("F", "M", "O"), labels=c("Female", "Male", "Other")),
@@ -35,11 +32,9 @@ shinyServer(function(input, output, session) {
                                 labels = c("First", "Second", "Third", "Fourth", "Fifth",
                                            "Sixth", "Seventh", "Eighth")))
   
-  items <- get.item.data(common.tables$wordmapping,
-                         common.tables$instrumentsmap,
-                         common.tables$category)
+  items <- get.item.data(common.tables)
   
-  instruments <- as.data.frame(common.tables$instrumentsmap)  
+  instruments <- as.data.frame(common.tables$instrument)  
   
   languages <- sort(unique(instruments$language))
   

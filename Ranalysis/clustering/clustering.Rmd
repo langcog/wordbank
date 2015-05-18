@@ -30,26 +30,20 @@ common.tables <- get.common.tables(wordbank)
 
 qs <- 0.2
 cuts <- seq(0.0, 1.0, by=qs)
-admins <- get.administration.data(common.tables$momed,
-                                  common.tables$child,
-                                  common.tables$instrumentsmap,
-                                  common.tables$administration) %>%
+admins <- get.administration.data(common.tables) %>%
   filter(language == "English", form == "WS") %>%
   mutate(percentile = rank(production) / length(production),
          quantile = cut(percentile,
                         breaks=cuts, 
                         labels=cuts[2:length(cuts)] - qs/2))
 
-items <- get.item.data(common.tables$wordmapping,
-                       common.tables$instrumentsmap,
-                       common.tables$category)
-
+items <- get.item.data(common.tables)
 words <- filter(items, language == "English", form == "WS", type == "word")
 ```
 
 Load English WS instrument data and clean it up to be clusterable.
 ```{r common}
-instrument.tables <- get.instrument.tables(wordbank, common.tables$instrumentsmap)
+instrument.tables <- get.instrument.tables(wordbank, common.tables)
 table <- filter(instrument.tables, language == "English", form == "WS")$table[[1]]
 
 prelim.data <- table %>%
