@@ -25,18 +25,3 @@ color_palette <- function(n) {
   names(palette) <- NULL
   return(palette)
 }
-
-
-ggplot(data(), aes(x = age, y = vocab)) +
-  geom_jitter(width = 0.1, size = 1, color = pt.color) +
-  scale_x_continuous(name = "\nAge (months)",
-                     breaks = seq(age.min(), age.max(), by = 2),
-                     limits=c(age.min(), age.max())) +
-  #ylab(paste(ylabel(), "\n", sep = "")) +
-#  scale_colour_brewer(#name = color.legend.name(),
-#                      palette = seq.palette) +
-  scale_color_manual(values = rev(color_palette(length(unique(curves()$quantile))))) +
-  theme(text=element_text(family=font)) +
-  geom_line(data = curves(), size = 1, 
-            aes(x = age, y = predicted, color = quantile)) +
-  facet_wrap(~ demo)
