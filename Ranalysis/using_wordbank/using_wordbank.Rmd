@@ -1,7 +1,7 @@
 ---
 title: "Accessing the Wordbank Database"
 author: "Mika Braginsky and Dan Yurovsky"
-date: "2015-04-25"
+date: "2015-05-18"
 output:
   html_document:
     highlight: tango
@@ -47,15 +47,12 @@ common.tables <- get.common.tables(wordbank)
 
 Get all the instrument tables.
 ```{r}
-instrument.tables <- get.instrument.tables(wordbank, common.tables$instrumentsmap)
+instrument.tables <- get.instrument.tables(wordbank, common.tables)
 ```
 
 Load in administration data.
 ```{r}
-admins <- get.administration.data(common.tables$momed,
-                                  common.tables$child,
-                                  common.tables$instrumentsmap,
-                                  common.tables$administration)
+admins <- get.administration.data(common.tables)
 ```
 
 Number of administrations by sex for each instrument:
@@ -83,9 +80,7 @@ kable(admins.summary.total,
 
 Load in item data.
 ```{r}
-items <- get.item.data(common.tables$wordmapping,
-                       common.tables$instrumentsmap,
-                       common.tables$category)
+items <- get.item.data(common.tables)
 ```
 
 Number of items by category for each instrument:
