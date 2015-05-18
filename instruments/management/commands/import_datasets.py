@@ -17,8 +17,8 @@ class Command(BaseCommand):
 
         if options['language'] and options['form']:
             input_language, input_form = options['language'], options['form']
-            input_datasets = filter(lambda dataset: dataset['language'] == input_language and
-                                                    dataset['form'] == input_form,
+            input_datasets = filter(lambda dataset: dataset['instrument_language'] == input_language and
+                                                    dataset['instrument_form'] == input_form,
                                     datasets)
         elif options['file']:
             input_file = options['file']
