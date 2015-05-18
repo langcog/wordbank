@@ -2,6 +2,8 @@ from django.core.management.base import BaseCommand
 from common.models import *
 
 
+# Given no arguments, deletes all ItemInfo objects and ItemMap objects.
+# Given a language with -l and a form with -f, deletes the ItemInfo objects that correspond to their Instrument object.
 class Command(BaseCommand):
 
     def add_arguments(self, parser):

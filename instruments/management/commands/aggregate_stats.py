@@ -3,6 +3,8 @@ from instruments import aggregate_stats_helper
 import json
 
 
+# Uses aggregate_stats_helper to retrieve each Administration object's data for printing.
+# Dumps it to JSON and writes the result to 'static/json/stats.json'.
 class Command(BaseCommand):
 
     def handle(self, *args, **options):

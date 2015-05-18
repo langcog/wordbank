@@ -3,6 +3,7 @@ from django.core.management.base import BaseCommand
 from common.models import *
 
 
+# Populates the Category model with data from 'raw_data/categories.csv'.
 class Command(BaseCommand):
 
     def handle(self, *args, **options):
