@@ -39,14 +39,18 @@ get.common.tables <- function(db) {
 }
 
 
-# Takes a connection to a MySQL database created with src_mysql and the instrumentsmap
-# Loads all of the instruments in the instrumentsmap
+# Takes a connection to a MySQL database created with src_mysql and a list of its common tables
+# Loads all of the instruments in the instrument table
 # Returns a dataframe whose rows are individual instruments and 
 # whose $table column is the corresponding tbl
-get.instrument.tables <- function(db, instrumentsmap) {
+get.instrument.tables <- function(db, common.tables) {
   
-  instrument.tables <- as.data.frame(instrumentsmap) %>%
-    mutate(table.name = paste("instruments", tolower(language), tolower(form), sep = "_")) %>%
+  instrument.tables <- as.data.frame(common.tables$instrument) %>%
+    rowwise() %>%
+    mutate(table.name = paste(unlist(c("instruments",
+                                       strsplit(tolower(language), " "),
+                                       tolower(form))),
+                              collapse = "_")) %>%
     rename(instrument_id = id) %>%
     group_by(instrument_id, language, form, age_min, age_max, has_grammar) %>%
     do(table = tbl(db, .$table.name))
@@ -55,18 +59,18 @@ get.instrument.tables <- function(db, instrumentsmap) {
   
 }
 
-# Takes in all of the tables that correspond to demographics about administrations
+# Takes in a list of common tables
 # Returns a dataframe in which each row is one administration and 
 # each column is a demographic variable
-get.administration.data <- function(momed.table, child.table, instruments.table, admin.table) {
+get.administration.data <- function(common.tables) {
   
-  mom_ed <- as.data.frame(momed.table) %>%
+  mom_ed <- as.data.frame(common.tables$momed) %>%
     rename(momed_id = id, momed.level = level, momed.order = order) %>%
     arrange(momed.order) %>%
     mutate(momed_id = as.numeric(momed_id),
            momed.level = factor(momed.level, levels = momed.level))
   
-  children <- as.data.frame(child.table) %>%
+  children <- as.data.frame(common.tables$child) %>%
     select(id, birth_order, ethnicity, sex, momed_id) %>%
     rename(child_id = id, birth.order = birth_order) %>%
     mutate(child_id = as.numeric(child_id),
@@ -74,11 +78,11 @@ get.administration.data <- function(momed.table, child.table, instruments.table,
     left_join(mom_ed) %>%
     select(-momed_id)
   
-  instruments <- as.data.frame(instruments.table) %>%
+  instruments <- as.data.frame(common.tables$instrument) %>%
     rename(instrument_id = id) %>%
     mutate(instrument_id = as.numeric(instrument_id))
   
-  admins <- as.data.frame(admin.table) %>%
+  admins <- as.data.frame(common.tables$administration) %>%
     select(data_id, child_id, age, instrument_id, comprehension, production) %>%
     mutate(data_id = as.numeric(data_id),
            child_id = as.numeric(child_id)) %>%
@@ -93,20 +97,24 @@ get.administration.data <- function(momed.table, child.table, instruments.table,
 }
 
 
-# Gets by-item data from an instrument with information from the wordmapping table
-get.item.data <- function(wordmapping.table, instruments.table, categories.table) {
+# Gets by-item data from an instrument with information from the iteminfo table
+get.item.data <- function(common.tables) {
   
-  instruments <- as.data.frame(instruments.table) %>%
+  instruments <- as.data.frame(common.tables$instrument) %>%
     rename(instrument_id = id)
   
-  categories <- as.data.frame(categories.table) %>%
+  categories <- as.data.frame(common.tables$category) %>%
     rename(category_id = id,
            category = name)
   
-  items <- as.data.frame(wordmapping.table) %>%
-    rename(item.id = item_id) %>%
+  maps <- as.data.frame(common.tables$itemmap)
+  
+  items <- as.data.frame(common.tables$iteminfo) %>%
+    rename(item.id = item_id,
+           uni_lemma = map_id) %>%
     left_join(instruments) %>%
-    left_join(categories)
+    left_join(categories) %>%
+    left_join(maps)
   
   return(items)
   
