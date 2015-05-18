@@ -8,27 +8,24 @@ library(RMySQL)
 library(lazyeval)
 library(quantregGrowth)
 source("../app_themes.R")
+source("../palette.R")
 source("../data_loading.R")
 source("predictQR_fixed.R")
 
 ## DEBUGGING
-#input <- list(language = "Hebrew", form = "WG", measure = "production",
-#             num_quantiles = 3, demo = "identity")
+input <- list(language = "English", form = "WS", measure = "production",
+              quantiles = "Standard", demo = "identity")
 
 shinyServer(function(input, output, session) {
   
   output$loaded <- reactive({0})
   outputOptions(output, 'loaded', suspendWhenHidden=FALSE)
   
-
   wordbank <- connect.to.wordbank("local")
   
   common.tables <- get.common.tables(wordbank)
   
-  admins <- get.administration.data(common.tables$momed,
-                                    common.tables$child,
-                                    common.tables$instrumentsmap,
-                                    common.tables$administration) %>%
+  admins <- get.administration.data(common.tables) %>%
     gather(measure, vocab, comprehension, production) %>%
     mutate(identity = "All Data") %>%
     mutate(sex = factor(sex, levels=c("F", "M", "O"), labels=c("Female", "Male", "Other")),
@@ -38,8 +35,8 @@ shinyServer(function(input, output, session) {
                                 labels = c("First", "Second", "Third", "Fourth", "Fifth",
                                            "Sixth", "Seventh", "Eighth")))
   
-  instruments <- as.data.frame(common.tables$instrumentsmap)  
-
+  instruments <- as.data.frame(common.tables$instrument)  
+  
   languages <- sort(unique(instruments$language))
   
   possible_demo_fields <- list("None" = "identity", 
@@ -71,19 +68,18 @@ shinyServer(function(input, output, session) {
     ifelse(is.null(input$demo), start.demo(), input$demo)
   })
   
+  input.quantiles <- reactive({
+    switch(input$quantiles,
+           Standard = c(0.10, 0.25, 0.50, 0.75, 0.90),
+           Deciles = c(0.10, 0.20, 0.30, 0.40, 0.50, 0.60, 0.70, 0.80, 0.90),
+           Quintiles = c(0.20, 0.40, 0.60, 0.80),
+           Quartiles = c(0.25, 0.50, 0.75),
+           Median = c(0.5))
+  })
+  
   aspect.ratio <- reactive({
     base <- 0.7
     scaling <- 1
-    #     panels <- nrow(select_(groups_with_data(), input.demo()))
-    #     if (panels == 2) {
-    #       scaling <- 1/2
-    #     } else if (panels == 3) {
-    #       scaling <- 1/3
-    #     } else if (panels == 4) {
-    #       scaling <- 1/1
-    #     } else if (panels == 6) {
-    #       scaling <- 2/3
-    #     }
     base * scaling
   })
   
@@ -101,15 +97,7 @@ shinyServer(function(input, output, session) {
   
   age.min <- reactive({instrument()$age_min})
   age.max <- reactive({instrument()$age_max})
-  
-  cuts <- reactive({
-    seq(0.0, 1.0, by=1/as.numeric(input$num_quantiles))
-  })
-  
-  middles <- reactive({
-    round(cuts()[2:length(cuts())] - 1/as.numeric(input$num_quantiles)/2, 2)
-  })
-  
+    
   filtered_admins <- reactive({
     admins %>%
       filter(language == input.language(),
@@ -122,8 +110,8 @@ shinyServer(function(input, output, session) {
       rename_(demo = input.demo()) %>%    
       filter(!is.na(demo))
   })
-
-  groups_with_data <- reactive({
+  
+  demo_groups <- reactive({
     renamed_filtered_admins() %>%
       group_by(demo) %>%
       summarise(n = n()) %>%
@@ -132,34 +120,24 @@ shinyServer(function(input, output, session) {
   
   data <- reactive({
     renamed_filtered_admins() %>%
-      right_join(groups_with_data()) %>%
-      group_by(age, demo) %>%
-      mutate(percentile = rank(vocab) / length(vocab),
-             quantile = cut(percentile,
-                            breaks=cuts(),
-                            labels=middles()))
+      right_join(demo_groups())
   })
-
-# TODO: when grcq fixes its bug, get rid of the if "." thing in curves
-
+  
+  # TODO: when grcq fixes its bug, get rid of the if "." thing in curves
+  
   curves <- reactive({
     
-    clean.data <- renamed_filtered_admins() %>%
-      right_join(groups_with_data())
-    
-#    browser()
-    
-    models <- clean.data %>%
+    models <- data() %>%
       group_by(demo) %>%
-      do(model = gcrq(vocab ~ ps(age, monotone=1, lambda=1000), 
-                      data=., tau=middles()))
+      do(model = gcrq(vocab ~ ps(age, monotone = 1, lambda = 1000), 
+                      data = ., tau = input.quantiles()))
     
     get.model <- function(demo.value) {
-      return(filter(models, demo==value)$model[[1]])
+      return(filter(models, demo == value)$model[[1]])
     }
     
     predicted.data <- data.frame()
-    values <- as.character(unique(clean.data$demo))
+    values <- as.character(unique(data()$demo))
     
     for (value in values) {
       ages <- data.frame(age = age.min():age.max())
@@ -170,76 +148,48 @@ shinyServer(function(input, output, session) {
         mutate(demo = value)
       predicted.data <- bind_rows(predicted.data, value.predicted.data)
     }
-  
+    
     if (predicted.data$quantile[1] == ".") {
-       predicted.data$quantile <- factor(.5) 
+      predicted.data$quantile <- factor(.5) 
     }
     
     predicted.data %>%
-      mutate(demo = as.factor(demo))
+      mutate(demo = as.factor(demo),
+             quantile = sprintf("%.2f", as.numeric(levels(predicted.data$quantile))[predicted.data$quantile]))
     
   })
   
-  color.legend.name <- reactive({
-    if (input.demo() == "identity") {
-      "Quantile"
-    } else {
-      names(which(possible_demo_fields == input.demo()))
-    }
-  })
-
   plot <- function() {
     
-    pt.color <- "steelblue"
+    pt.color <- "#657b83"
     
-    # no faceting, no coloring
-    if (input$num_quantiles == 1 & input.demo() == "identity") {
-      p <- ggplot(data(), aes(x=age, y=vocab)) +
-        geom_jitter(width=.1, color = pt.color, size = 1) +    
-        geom_line(data = curves(),
-                  aes(x = age, y = predicted),
-                  size = 1, 
-                  col = pt.color)
-      
-    # no faceting, color by quantile
-    } else if (input$num_quantiles != 1 & input.demo() == "identity") {
-      p <- ggplot(data(), aes(x=age, y=vocab, color = quantile)) +
-        geom_jitter(width=.1, color = pt.color, size = 1) +    
-        geom_line(data = curves(),
-                  aes(x = age, y = predicted, color = quantile),
-                  size = 1) 
-      
-    # no faceting, color by demo
-    } else if (input$num_quantiles == 1 & input.demo() != "identity") {
-      p <- ggplot(data(), aes(x=age, y=vocab, color = demo)) +
-        geom_jitter(width=.1, size = 1) +    
-        geom_line(data = curves(),
-                  aes(x = age, y = predicted, color = demo),
-                  size = 1) 
-    
-    # facet by quantile, color by demo
-    } else {
-      p <- ggplot(data(), aes(x=age, y=vocab, col = demo)) +
-        geom_jitter(width=.1, size = 1) +    
-        geom_line(data = curves(),
-                  aes(x = age, y = predicted, col = demo),
-                  size = 1) +
-        facet_wrap(~quantile)
-    }
-    
-    p + scale_x_continuous(name="\nAge (months)",
-                         breaks=seq(age.min(), age.max(), by=2),
+    p <- ggplot(data(), aes(x = age, y = vocab)) +
+      geom_jitter(width = 0.1, size = 1, color = pt.color) +
+      scale_x_continuous(name = "\nAge (months)",
+                         breaks = seq(age.min(), age.max(), by = 2),
                          limits=c(age.min(), age.max())) +
-      ylab(paste(ylabel(), "\n", sep="")) +
-      scale_colour_brewer(name = color.legend.name(),
-                          palette=seq.palette) +
+      ylab(paste(ylabel(), "\n", sep = "")) +
       theme(text=element_text(family=font))
+    
+    if (input$quantiles == "Median") {
+      p +
+        geom_line(data = curves(), size = 1,aes(x = age, y = predicted, color = demo)) +
+        scale_color_manual(name = names(which(possible_demo_fields == input.demo())),
+                           values = rev(color_palette(length(unique(curves()$demo)))))
+    } else {
+      p +
+        geom_line(data = curves(), size = 1, aes(x = age, y = predicted, color = quantile)) +
+        scale_color_manual(name = "Quantile",
+                           values = rev(color_palette(length(unique(curves()$quantile))))) +
+        guides(color = guide_legend(reverse = TRUE)) +
+        facet_wrap(~ demo)
+    }
   }
   
   forms <- reactive({
-    Filter(function(form) {form %in% unique(filter(instruments,
-                                                   language == input.language())$form)},
-           list("Words & Sentences" = "WS", "Words & Gestures" = "WG"))
+    Filter(function(form) {
+      form %in% unique(filter(instruments, language == input.language())$form)
+    }, list("Words & Sentences" = "WS", "Words & Gestures" = "WG"))
   })
   
   measures <- reactive({
@@ -249,7 +199,7 @@ shinyServer(function(input, output, session) {
       list("Produces" = "production")
     }
   })
-    
+  
   output$plot <- renderPlot({
     plot()
   }, height = function() {
@@ -259,7 +209,7 @@ shinyServer(function(input, output, session) {
   output$sample_sizes <- renderTable({
     groups_with_data()
   }, include.rownames = FALSE, include.colnames = FALSE)
-
+  
   output$language_selector <- renderUI({    
     selectizeInput("language", label = h4("Language"), 
                    choices = languages, selected = input.language())
