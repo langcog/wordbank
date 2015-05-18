@@ -3,6 +3,8 @@ from django.core.management.base import BaseCommand
 from common.models import *
 
 
+# Populates the Source model with all sources in 'static/json/datasets.json'.
+# If any sources already exist (identified by name, dataset, language, and form), updates their other fields.
 class Command(BaseCommand):
 
     def handle(self, *args, **options):

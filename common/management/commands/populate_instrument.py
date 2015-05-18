@@ -2,6 +2,9 @@ import json
 from django.core.management.base import BaseCommand
 from common.models import *
 
+
+# Populates the Instrument model with all instruments in 'static/json/instruments.json'.
+# If any instruments already exist (identified by language and form), updates their other fields.
 class Command(BaseCommand):
 
     def handle(self, *args, **options):
