@@ -58,20 +58,20 @@ Instrument
     Substitute in the relevant values of `age_min`, `age_max`, and `has_grammar`. The file should be the path to the instrument definition file above.
 
 - Create a schema for this instrument by running
-        ./manage.py create_instrument_schemas Wugese WS
+        ./manage.py create_instrument_schemas -l Wugese -f WS
 
 - Re-do database migrations by running
         ./manage.py makemigrations
         ./manage.py migrate
 
 - Add the instrument to the instrument map table by running
-        ./manage.py populate_instrumentsmap
+        ./manage.py populate_instrument
 
 - If this instrument has any new categories, add rows to `raw_data/categories.csv` with them and the correponding lexical categories and run
         ./manage.py populate_category
 
 - Add the instrument's items to the word mapping table by running
-        ./manage.py populate_word_mapping Wugese WS
+        ./manage.py populate_items -l Wugese -f WS
 
 
 Dataset
@@ -119,18 +119,16 @@ Dataset
             "file": "raw_data/Wugese_WS/WugeseWS_Dax.xlsx",
             "splitcol": false
         }
-    For csv files, the `file` field should be the path to `foo` above (e.g. `raw_data/Wugese_WS/WugeseWS_Dax.csv`). The `dataset` field allows adding multiple datasets from the same source, e.g. if Dr. Dax provided a norming dataset and another dataset. The `splitcol` field is normally `false`, but should be `true` for datasets that record WG production and comprehension in separate columns.
+    For csv files, the `file` field should be the path to `foo` above (e.g. `raw_data/Wugese_WS/WugeseWS_Dax.csv`). The `dataset` field allows adding multiple datasets from the same source, e.g. if Dr. Dax provided a norming dataset and another dataset. The `splitcol` field is normally `false`, but should be `true` for datasets that record WG production and comprehension in separate columns (these datasets must mark the production column of item `blicket` as `blicketp` and the comprehension column as `blicketu`).
 
 - Add this dataset to the source table by running
         ./manage.py populate_source
 
 - Import the dataset by running
-        ./manage.py import_instrument_datasets Wugese WS
-    or
-        ./manage.py import_single_dataset raw_data/Wugese_WS/WugeseWS_Dax.xlsx
+        ./manage.py import_datasets -l Wugese -f WS
 
 - Cache vocabulary sizes for the dataset's instrument by running
-        ./manage.py populate_vocabulary_size Wugese WS
+        ./manage.py populate_vocabulary_size -l Wugese -f WS
 
 </xmp>
 
