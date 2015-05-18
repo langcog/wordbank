@@ -3,6 +3,9 @@ import instruments.models
 from instruments import import_dataset_helper
 
 
+# Given a datasets's name (ex Marchman), dataset (ex Norming), language (ex English), instrument (ex WS), splitcol bool.
+# Uses import_dataset_helper to retrieve the data from that dataset's data file, using its field and value mappings.
+# Creates Child and Administration objects for the entries in the resulting data.
 def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_language, instrument_form, splitcol):
 
         instrument_string = '_'.join(instrument_language.split() + [instrument_form])
@@ -35,7 +38,6 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
 
         for i, administration_data in import_helper.administrations.iteritems():
 
-            # Create the instrument and the administration here.
             instrument_obj = instrument_model.objects.create()
             administration = Administration.objects.create(child=children[i],
                                                            date_of_test=administration_data['date_of_test'],
