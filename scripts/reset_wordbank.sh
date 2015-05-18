@@ -3,16 +3,18 @@
 echo "Reseting database..."
 mysql < scripts/reset_wordbank.txt
 
-echo "Re-generating instrument schemas..."
-rm instruments/models.py*
-rm instruments/schemas/*
-touch instruments/schemas/__init__.py
-./manage.py create_instrument_schemas
+#echo "Re-generating instrument schemas..."
+#rm instruments/models.py*
+#rm instruments/schemas/*
+#touch instruments/schemas/__init__.py
+#./manage.py create_instrument_schemas
 
-echo "Re-making migrations..."
-rm instruments/migrations/*
-./manage.py makemigrations instruments
-./manage.py makemigrations
+#echo "Re-making migrations..."
+#rm instruments/migrations/*
+#./manage.py makemigrations instruments
+#./manage.py makemigrations
+
+rm common/migrations/*.pyc
 
 echo "Migrating..."
 ./manage.py migrate

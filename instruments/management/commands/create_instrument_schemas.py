@@ -1,17 +1,21 @@
 import xlrd
 import codecs
 import json
-from django.core.management.base import NoArgsCommand
+from django.core.management.base import BaseCommand
 
 
-class Command(NoArgsCommand):
+class Command(BaseCommand):
+
+    def add_arguments(self, parser):
+        parser.add_argument('-l', '--language', type=str)
+        parser.add_argument('-f', '--form', type=str)
 
     def handle(self, *args, **options):
 
         instruments = json.load(open('static/json/instruments.json'))
 
-        if len(args) > 1:
-            input_language, input_form = args[0], args[1]
+        if options['language'] and options['form']:
+            input_language, input_form = options['language'], options['form']
             input_instruments = filter(lambda instrument: instrument['language'] == input_language and
                                                           instrument['form'] == input_form,
                                        instruments)
@@ -22,7 +26,7 @@ class Command(NoArgsCommand):
 
         for instrument in input_instruments:
 
-            instr = '_'.join([instrument['language'], instrument['form']])
+            instr = '_'.join(instrument['language'].split() + [instrument['form']])
             models_file.write('from schemas.%s import *\n' % (instr))
             instrument_file = open('instruments/schemas/%s.py' % (instr), 'w')
 

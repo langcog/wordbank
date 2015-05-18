@@ -1,7 +1,7 @@
 ---
 title: "Sex/Gender Differences in Vocabulary Development"
 author: "Mika Braginsky and Dan Yurovsky"
-date: "2015-04-27"
+date: "2015-05-08"
 output:
   html_document:
     highlight: tango
@@ -14,7 +14,7 @@ opts_chunk$set(cache=TRUE, message=FALSE, warning=FALSE)
 font = "Open Sans"
 ```
 
-```{r}
+```{r libraries, cache=FALSE}
 library(dplyr)
 library(RMySQL)
 library(tidyr)
@@ -24,68 +24,153 @@ source('../../shiny_apps/data_loading.R')
 ```
 
 Load in Wordbank common data.
-```{r}
-wordbank <- connect.to.wordbank("dev")
-
+```{r database, cache=FALSE}
+wordbank <- connect.to.wordbank("prod")
 common.tables <- get.common.tables(wordbank)
-
-admins <- get.administration.data(common.tables$momed,
-                                  common.tables$child,
-                                  common.tables$instrumentsmap,
-                                  common.tables$administration)
-
-items <- get.item.data(common.tables$wordmapping,
-                       common.tables$instrumentsmap,
-                       common.tables$category)
+admins <- get.administration.data(common.tables)
+items <- get.item.data(common.tables)
 ```
 
 Get by-child productive vocabulary data.
-```{r}
+```{r vocab.data}
 num.words <- items %>%
-  filter(form == "WS", type == "word") %>%
-  group_by(language) %>%
-  summarise(n = n())
+  filter(type == "word") %>%
+  group_by(language, form) %>%
+  summarise(n.words = n())
 
 vocab.admins <- admins %>%
-  select(data_id, language, form, age, sex, production) %>%
-  filter(form == "WS", !is.na(sex), sex != "")
+  select(data_id, language, form, age, sex, comprehension, production) %>%
+  filter(!is.na(sex), sex != "")
 
 vocab.data <- vocab.admins %>%
-  group_by(language, sex, age) %>%
+  group_by(language, form, sex, age) %>%
   left_join(num.words) %>%
-  mutate(production = as.numeric(production)/n)
-
+  mutate(comprehension = as.numeric(comprehension) / n.words,
+         production = as.numeric(production) / n.words) %>%
+  gather(measure, value, comprehension, production) %>%
+  filter(form %in% c("WG", "IC") | (form %in% c("WS", "TC") & measure == "production"))
+  
 vocab.sample.sizes <- vocab.admins %>%
-  group_by(language) %>%
-  summarise(n = length(unique(data_id)))
-vocab.data %<>% left_join(vocab.sample.sizes)
-vocab.data %<>% mutate(label = sprintf("%s (n = %s)", language, n))
+  group_by(language, form) %>%
+  summarise(n.admins = length(unique(data_id)))
+
+vocab.data %<>% left_join(vocab.sample.sizes) %>%
+  filter(n.admins >= 100) %>%
+  mutate(label = sprintf("%s %s (n = %s)", language, form, n.admins))
 ```
 
-Fit models to vocabulary by age data and estimate the mean difference between female and male children for each language.
-```{r}
-dists <- vocab.data %>%
-  group_by(language, sex) %>%
-  do(pts = seq(min(.$age), max(.$age), 1),
-     model = loess(production ~ age, data = .)) 
-predictions <- do(dists, predictions = predict(.$model, data.frame(age=.$pts)))
-predictions$language <- dists$language
-predictions$sex <- dists$sex
-
-areas <- predictions %>%
-  spread(sex, predictions) %>%
-  rename(Female = `F`,
-         Male = M) %>%
-  rowwise() %>%
-  mutate(area = mean(Female - Male))
+Plot WS/TC vocabulary size across age.
+```{r plot_points_ws, fig.width=10, fig.height=10}
+ggplot(filter(vocab.data, form %in% c("WS", "TC")), aes(x = age, y = value, color = sex)) +
+  facet_wrap(~ language) +
+  geom_jitter(size = 0.7) +
+  scale_color_brewer(palette = "Set1", name = "Sex") +
+  scale_y_continuous(limits = c(0, 1), breaks = seq(0, 1, 0.2),
+                     name = "Vocabulary Size\n") +
+  xlab("\nAge (months)") +
+  theme_bw(base_size = 12) +
+  theme(text = element_text(family = font))
 ```
 
-Plot mean difference by language.
-```{r, fig.height=6, fig.width=10}
-ggplot(areas, aes(x = language, y = area)) +
-  geom_bar(stat = "identity", position = "dodge", fill = "steelblue") +
+Plot WG/IC vocabulary size across age.
+```{r plot_points_wg, fig.width=7, fig.height=10}
+ggplot(filter(vocab.data, form %in% c("WG", "IC")), aes(x = age, y = value, color = sex)) +
+  facet_grid(language ~ measure) +
+  geom_jitter(size = 0.7) +
+  scale_color_brewer(palette = "Set1", name = "Sex") +
+  scale_y_continuous(limits = c(0, 1), breaks = seq(0, 1, 0.2),
+                     name = "Vocabulary Size\n") +
+  xlab("\nAge (months)") +
+  theme_bw(base_size = 12) +
+  theme(text = element_text(family = font))
+```
+
+Plot WS/TC vocabulary size across age with model fit curves.
+```{r plot_models_ws, fig.width=10, fig.height=10}
+ggplot(filter(vocab.data, form %in% c("WS", "TC")), aes(x = age, y = value, color = sex)) +
+  facet_wrap(~ language) +
+  geom_smooth(method = "lm", formula = y ~ I(x^3) + I(x^2) + x) +
+  scale_color_brewer(palette = "Set1", name = "Sex") +
+  scale_y_continuous(limits = c(0, 1), breaks = seq(0, 1, 0.2),
+                     name = "Vocabulary Size\n") +
+  xlab("\nAge (months)") +
+  theme_bw(base_size = 12) +
+  theme(text = element_text(family = font))
+```
+
+Plot WG/IC vocabulary size across age with model fit curves.
+```{r plot_models_wg, fig.width=7, fig.height=10}
+ggplot(filter(vocab.data, form %in% c("WG", "IC")), aes(x = age, y = value, color = sex)) +
+  facet_grid(language ~ measure) +
+  geom_smooth(method = "lm", formula = y ~ I(x^3) + I(x^2) + x) +
+  scale_color_brewer(palette = "Set1", name = "Sex") +
+  scale_y_continuous(limits = c(0, 1), breaks = seq(0, 1, 0.2),
+                     name = "Vocabulary Size\n") +
+  xlab("\nAge (months)") +
+  theme_bw(base_size = 12) +
+  theme(text = element_text(family = font))
+```
+
+Function for resampling data.
+```{r resample}
+sample.diffs <- function(d, num.times) {
+  
+  get.diff <- function(group_data) {
+    pts <- seq(min(group_data$age), max(group_data$age), 1)
+    male <- predict(lm(value ~ I(age^3) + I(age^2) + I(age),
+                       data = filter(group_data, sex == "M")),
+                    newdata = data.frame(age = pts))
+    female <- predict(lm(value ~ I(age^3) + I(age^2) + I(age),
+                         data = filter(group_data, sex == "F")),
+                    newdata = data.frame(age = pts))
+    mean(female - male)
+  }
+    
+  counter = 1
+  sample.diff <- function(d) {
+    d.frame <- d %>%
+      group_by(language, form, measure) %>%
+      sample_frac(replace = TRUE) %>% # resample kids
+      do(diff = get.diff(.)) %>%
+      mutate(diff = diff[1]) %>%
+      rename_(.dots = setNames("diff", counter))
+
+    counter <<- counter + 1 # increment counter outside scope
+    return(d.frame)
+  }
+
+  diffs <- replicate(num.times, sample.diff(d), simplify=FALSE)
+  
+  Reduce(left_join, diffs) %>%
+    gather(sample, diff, -language, -form, -measure)
+}
+```
+
+Resample data, compute difference in vocabulary size between sexes for each sample, find the mean and CI of the difference estimate.
+```{r diffs}
+diffs <- sample.diffs(vocab.data, 100)
+
+diffs.summary <- diffs %>%
+  group_by(language, form, measure) %>%
+  summarise(mean =  mean(diff, na.rm = TRUE),
+            ci.high = quantile(diff, 0.975, na.rm = TRUE),
+            ci.low = quantile(diff, 0.025, na.rm = TRUE)) %>%
+  ungroup() %>%
+  mutate(language = factor(language))
+```
+
+Plot mean difference by language, form, and measure.
+```{r plot_diffs, fig.height=6, fig.width=10}
+ggplot(diffs.summary, aes(x = mean, y = language)) +
+  facet_grid(~ form + measure) +
+  geom_point(color = "steelblue") +
+  geom_segment(aes(x = ci.low, xend = ci.high,
+                   y = language, yend = language),
+               color = "steelblue") +
+  geom_vline(xintercept = 0, linetype = "dashed", color = "gray") + 
+  scale_y_discrete(limits = rev(levels(diffs.summary$language))) +
   theme_bw() +
   theme(text = element_text(family = font)) +
-  xlab("Language") +
-  ylab("Mean gender difference in vocabulary size across age")
+  xlab("\nMean gender difference in vocabulary size across age") +
+  ylab("")
 ```

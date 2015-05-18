@@ -23,14 +23,9 @@ shinyServer(function(input, output, session) {
   
   common.tables <- get.common.tables(wordbank)
   
-  admins <- get.administration.data(common.tables$momed,
-                                    common.tables$child,
-                                    common.tables$instrumentsmap,
-                                    common.tables$administration)
+  admins <- get.administration.data(common.tables)
   
-  items <- get.item.data(common.tables$wordmapping,
-                         common.tables$instrumentsmap,
-                         common.tables$category) %>%
+  items <- get.item.data(common.tables) %>%
     mutate(definition = iconv(definition, from = "utf8", to = "utf8"))
   
   list.items.by.definition <- function(item.data) {
@@ -45,7 +40,7 @@ shinyServer(function(input, output, session) {
     return(items)
   }
   
-  tables <- get.instrument.tables(wordbank, common.tables$instrumentsmap)
+  tables <- get.instrument.tables(wordbank, common.tables)
   instrument.tables <- tables %>%
     group_by(instrument_id) %>%
     do(words.by.definition = list.items.by.definition(filter(items,
