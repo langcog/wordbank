@@ -6,6 +6,9 @@ from django.core.management.base import BaseCommand
 from common.models import *
 
 
+# Populates the ItemInfo and ItemMap models with data from instrument definition files.
+# Given no arguments, does so for all instruments in 'static/json/instruments.json'.
+# Given a language with -l and a form with -f, does so for only their Instrument object.
 class Command(BaseCommand):
 
     def add_arguments(self, parser):

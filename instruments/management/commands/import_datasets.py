@@ -3,7 +3,10 @@ from django.core.management.base import BaseCommand
 from instruments.import_dataset import import_dataset
 
 
-# imports all datasets for a given instrument (language and form)
+# Given no arguments, imports all datasets in 'static/json/datasets.json'.
+# Given a language with -l and a form with -f imports datasets in 'static/json/datasets.json' that have the matching
+# `instrument_language` and `instrument_form`.
+# Given a file with --file, imports the dataset in 'static/json/datasets.json' that has the matching `file`.
 class Command(BaseCommand):
 
     def add_arguments(self, parser):
