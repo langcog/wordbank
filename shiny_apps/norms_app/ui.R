@@ -31,7 +31,7 @@ shinyUI(fluidPage(
 #                     choices = list("1 (median)" = 1, "3 (33%)" = 3, "4 (25%)" = 4,
 #                                    "5 (20%)" = 5, "10 (10%)" = 10),
 #                     selected = 5),
-        selectInput("quantiles", label = h5("Quantiles"),
+        selectInput("quantiles", label = h4("Quantiles"),
                     choices = list("Standard", "Deciles", "Quintiles", "Quartiles", "Median"),
                     selected = "Standard"),
         br(),
