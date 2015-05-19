@@ -10,18 +10,18 @@ colors <- c('magenta' = '#d33682',
 
 color_order <- c('blue', 'orange', 'green', 'purple', 'magenta', 'yellow', 'cyan', 'violet', 'red')
 
-
 color_palette <- function(n) {
   
-  color_set <- function(k, set) {
-    if (k == 0) {
-      return(set)
-    } else {
-      return(c(color_set(k - 1, set), color_order[k]))
-    }
-  }
+#   color_set <- function(k, set) {
+#     if (k == 0) {
+#       return(set)
+#     } else {
+#       return(c(color_set(k - 1, set), color_order[k]))
+#     }
+#   }
   
-  palette <- colors[Filter(function(color) color %in% color_set(n, c()), names(colors))]
+#  palette <- colors[Filter(function(color) color %in% color_set(n, c()), names(colors))]
+  palette <- colors[Filter(function(color) color %in% color_order[1:n], names(colors))]  
   names(palette) <- NULL
   return(palette)
 }
