@@ -1,16 +1,25 @@
-from django.core.management.base import NoArgsCommand
+from django.core.management.base import BaseCommand
 from common.models import *
 import instruments.models
 
-class Command(NoArgsCommand):
+
+# Populates the production and comprehension fields of Administration objects with the number of items
+# produced/comprehended by that object's data_id entry in the corresponding instruments model.
+# Given no arguments, does so for all instruments in 'static/json/instruments.json'.
+# Given a language with -l and a form with -f, does so for only their Instrument object.
+class Command(BaseCommand):
+
+    def add_arguments(self, parser):
+        parser.add_argument('-l', '--language', type=str)
+        parser.add_argument('-f', '--form', type=str)
 
     def handle(self, *args, **options):
 
-        if len(args) > 1:
-            input_language, input_form = args[0], args[1]
-            input_instruments = InstrumentsMap.objects.filter(language = input_language, form = input_form)
+        if options['language'] and options['form']:
+            input_language, input_form = options['language'], options['form']
+            input_instruments = Instrument.objects.filter(language = input_language, form = input_form)
         else:
-            input_instruments = InstrumentsMap.objects.all()
+            input_instruments = Instrument.objects.all()
 
         for instrument in input_instruments:
 
@@ -18,7 +27,7 @@ class Command(NoArgsCommand):
 
             instrument_model = getattr(instruments.models, '_'.join(instrument.language.split() + [instrument.form]))
             instrument_table = instrument_model._meta.db_table
-            words = [item.item_id for item in WordMapping.objects.filter(instrument = instrument.pk, type = 'word')]
+            words = [item.item_id for item in ItemInfo.objects.filter(instrument = instrument.pk, type = 'word')]
 
             query = "select basetable_ptr_id, "
 

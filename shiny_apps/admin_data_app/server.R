@@ -16,10 +16,7 @@ shinyServer(function(input, output, session) {
   
   common.tables <- get.common.tables(wordbank)
   
-  admins <- get.administration.data(common.tables$momed,
-                                    common.tables$child,
-                                    common.tables$instrumentsmap,
-                                    common.tables$administration) %>%
+  admins <- get.administration.data(common.tables) %>%
     select(data_id, language, form, age, sex, momed.level, comprehension, production) %>%
     rename(momed = momed.level) %>%
     mutate(sex = factor(sex, levels=c("F", "M"), labels=c("Female", "Male")),
