@@ -1,12 +1,16 @@
 from django.db import models
 
 
-class WordInfo(models.Model):
-    uni_lemma = models.CharField(primary_key=True, max_length=20)
-    lang_lemma = models.CharField(max_length=20)
+class Source(models.Model):
+    name = models.CharField(max_length=20)
+    dataset = models.CharField(max_length=20, null=True, blank=True)
+    instrument_language = models.CharField(max_length=30)
+    instrument_form = models.CharField(max_length=20)
+    contributor = models.TextField(blank=True)
+    citation = models.TextField(blank=True)
 
 
-class InstrumentsMap(models.Model):
+class Instrument(models.Model):
     language = models.CharField(max_length=30)
     forms = (('WS', 'Words & Sentences'), ('WG', 'Words & Gestures'),
              ('TC', 'Toddler Checklist'), ('IC', 'Infant Checklist'))
@@ -15,17 +19,23 @@ class InstrumentsMap(models.Model):
     age_max = models.IntegerField()
     has_grammar = models.BooleanField(default=False)
 
+
 class Category(models.Model):
     name = models.CharField(max_length=50)
     lexical_category = models.CharField(max_length=20)
 
-class WordMapping(models.Model):
-    instrument = models.ForeignKey(InstrumentsMap)
+
+class ItemMap(models.Model):
+    uni_lemma = models.CharField(primary_key=True, max_length=50)
+
+
+class ItemInfo(models.Model):
+    instrument = models.ForeignKey(Instrument)
     item = models.CharField(max_length=50)
     item_id = models.CharField(max_length=20)
     type = models.CharField(max_length=30)
     category = models.ForeignKey(Category, null=True)
-    word_info = models.ForeignKey(WordInfo, null=True, blank=True)
+    map = models.ForeignKey(ItemMap, null=True, blank=True)
     definition = models.CharField(max_length=200, null=True, blank=True)
     gloss = models.CharField(max_length=80, null=True, blank=True)
     complexity_category = models.CharField(max_length=30, null=True, blank=True)
@@ -56,18 +66,9 @@ class Child(models.Model):
     sex = models.CharField(max_length=1, choices=sexes, null=True, blank=True)
 
 
-class Source(models.Model):
-    name = models.CharField(max_length=20)
-    dataset = models.CharField(max_length=20, null=True, blank=True)
-    instrument_language = models.CharField(max_length=30)
-    instrument_form = models.CharField(max_length=20)
-    contributor = models.TextField(blank=True)
-    citation = models.TextField(blank=True)
-
-
 class Administration(models.Model):
     child = models.ForeignKey(Child)
-    instrument = models.ForeignKey(InstrumentsMap)
+    instrument = models.ForeignKey(Instrument)
     source = models.ForeignKey(Source, null=True, blank=True)
     date_of_test = models.DateField(null=True, blank=True)
     data_id = models.IntegerField()
