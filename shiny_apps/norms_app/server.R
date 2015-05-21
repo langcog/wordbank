@@ -14,8 +14,8 @@ source("predictQR_fixed.R")
 #load("~/Documents/projects/wordbank/shiny_apps/norms_app/debug.RData")
 
 ## DEBUGGING
-input <- list(language = "English", form = "WS", measure = "production",
-              quantiles = "Standard", demo = "birth.order")
+# input <- list(language = "German", form = "WS", measure = "production",
+#               quantiles = "Standard", demo = "sex")
 
 shinyServer(function(input, output, session) {
   
@@ -245,7 +245,7 @@ shinyServer(function(input, output, session) {
       p +
         geom_line(data = curves(), size = 1, aes(x = age, y = predicted, color = demo)) +
         scale_color_manual(name = names(which(possible_demo_fields == input.demo())),
-                           values = rev(color_palette(length(unique(curves()$demo)))))
+                           values = color_palette(length(unique(curves()$demo))))
     } else {
       p +
         geom_line(data = curves(), size = 1, aes(x = age, y = predicted, color = quantile)) +
