@@ -41,11 +41,11 @@
         for (var i in data) {
             var app = data[i];
 	    var li = $('<li>').attr('role', "presentation").appendTo(ul)
-	    if (app['app_directory'] == currentApp) {
+	    if (app['id'] == currentApp) {
 		li.attr('class', "active");
 	    }
-            var link = $('<a>').attr('href', '/reports?id=' + app['app_directory'])
-			       .text(app['app_name']).appendTo(li);
+            var link = $('<a>').attr('href', '/reports?id=' + app['id'])
+			       .text(app['name']).appendTo(li);
             };
         }).error(function(error){console.log(error);}).fail(function(){console.log(arguments);})
 </script>
