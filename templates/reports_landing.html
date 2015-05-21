@@ -6,30 +6,54 @@
 <link rel="stylesheet" href={% static "third_party/dc.css" %}>
 <link rel="stylesheet" href={% static "css/reports.css" %}>
 
+<!--
 <h3 align="center">Reports</h3>
 <br>
+-->
 
 <div class="alert alert-dismissible alert-warning" align="center">
   <p>Wordbank is under early development, and we make no guarantees about the accuracy of its data. Use at your own risk.</p>
 </div>
 
-<div id="apps">
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Interactive Visualizations</h3>
+  </div>
+  <div class="panel-body" id="visualizations">
+  </div>
+</div>
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Static Reports</h3>
+  </div>
+  <div class="panel-body" id="reports">
+  </div>
+</div>
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Data Export Tools</h3>
+  </div>
+  <div class="panel-body" id="data">
+  </div>
 </div>
 
 <script>
     $.getJSON("static/json/reports.json", function(data) {
-              var apps = $('#apps');
-              var row = $('<div>').attr('class', "row").appendTo(apps);
+              //var apps = $('#apps');
               for (var i in data) {
-                if (i+1 % 3 == true) {
-                  var row = $('<div>').attr('class', "row").appendTo(apps);
-                };
-                var col = $('<div>').attr('class', "col-md-4").attr('align', "center").appendTo(row);
                 var app = data[i];
+                var panel = $('#' + app['type']);
+                //var row = $('<div>').attr('class', "row").appendTo(panel);
+                //if (i+1 % 3 == true) {
+                //  var row = $('<div>').attr('class', "row").appendTo(panel);
+                //};
+                var col = $('<div>').attr('class', "col-md-3").attr('align', "center").appendTo(panel);
                 var rep = $('<p>').attr('class', "reportName").appendTo(col);
-                var link = $('<a>').attr('href', '/reports?id=' + app['app_directory']).text(app['app_name']).appendTo(rep);
+                var link = $('<a>').attr('href', '/reports?id=' + app['id']).text(app['name']).appendTo(rep);
                 var brk = $('<br>').appendTo(col);
-                var img = $('<img>').attr('class', 'img-thumbnail').attr('src', app['app_sample_plot']).appendTo(link);
+                var img = $('<img>').attr('class', 'img-thumbnail').attr('src', app['thumbnail']).appendTo(link);
               };
               }).error(function(error){console.log(error);}).fail(function () { console.log(arguments); });
 </script>
