@@ -14,7 +14,8 @@ connect.to.wordbank <- function(mode) {
                     prod = "54.200.225.86",
                     dev = "54.149.39.46")
   
-  con <- src_mysql(host=address, dbname="wordbank", user="wordbank", password="wordbank")
+  con <- src_mysql(host = address, dbname = "wordbank",
+                   user = "wordbank", password = "wordbank")
   return(con)
 }
 
@@ -31,9 +32,9 @@ get.common.tables <- function(db) {
   
   names <- Filter(function(tbl) substr(tbl, 1, 7) == "common_", src_tbls(db))
   
-  tables <- sapply(names, function(name) tbl(db, name), simplify=FALSE)
+  tables <- sapply(names, function(name) tbl(db, name), simplify = FALSE)
   names(tables) <- sapply(names(tables), function(name) substr(name, 8, nchar(name)),
-                          simplify=FALSE)
+                          simplify = FALSE)
   
   return(tables)
 }
