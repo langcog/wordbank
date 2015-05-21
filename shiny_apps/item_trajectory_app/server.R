@@ -10,16 +10,18 @@ source("../data_loading.R")
 Sys.setlocale(locale="en_US.UTF-8")
 
 ## DEBUGGING
-#input <- list(language = "English", form = "WS", measure = "produces",
-#            words = c("item_1"), wordform = NULL, complexity = NULL)
+input <- list(language = "English", form = c("WS","WG"), measure = "produces",
+           words = c("item_40"), wordform = NULL, complexity = NULL)
 
-
+##### SERVER STARTS HERE
 shinyServer(function(input, output, session) {
   
   output$loaded <- reactive({0})
   outputOptions(output, 'loaded', suspendWhenHidden=FALSE)
   
-  wordbank <- connect.to.wordbank("local")
+#   wordbank <- connect.to.wordbank("local")
+  wordbank <- src_mysql(dbname='wordbank', host="54.200.225.86",
+                        user="wordbank", password="wordbank")
   
   common.tables <- get.common.tables(wordbank)
   
@@ -83,18 +85,34 @@ shinyServer(function(input, output, session) {
     instrument.table <- instrument$table[[1]]
     
     if(!is.null(input.words)) {
-      word.data <- get.instrument.data(instrument.table, input.words) %>%
+      # couldn't figure out how to do this functionally
+      word.data <- data.frame()
+      for (i in 1:length(instrument$table)) {
+        wd <- get.instrument.data(instrument$table[[i]], input.words())
+        wd$instrument_id <- instrument$instrument_id[i]
+        word.data <- bind_rows(word.data, wd)
+      }
+        
+      word.data %>% 
         mutate(produces = value == 'produces',
                understands = value == 'understands' | value == 'produces') %>%
         select(-value) %>%
         gather(measure, value, produces, understands) %>%
-        filter(measure == input.measure) %>%
+        filter(measure == input.measure()) %>%
         left_join(admins) %>%
-        group_by(item.id, age) %>%
+        group_by(instrument_id, item.id, age) %>%
         summarise(score = mean(value, na.rm=TRUE)) %>%
-        rowwise %>%
-        mutate(item = instrument$words.by.id[[1]][[paste("item_", item.id, sep="")]],
-               type = 'word')
+        group_by(instrument_id) %>%
+        mutate(item.id = paste("item_", item.id, sep="")) %>% 
+        mutate(item = filter(instrument, 
+                             instrument$instrument_id == instrument_id)$words.by.id[[1]][item.id],
+               type = "word")
+        
+      
+               
+               [[)]]
+               paste("item_", item.id, sep=""mutate(item = ,
+               )
     } else {word.data <- data.frame()}
     
     if(!is.null(input.wordform)) {
@@ -114,7 +132,7 @@ shinyServer(function(input, output, session) {
         mutate(complex = value == 'complex') %>%
         select(-value) %>%
         left_join(admins) %>%
-        group_by(item.id, age) %>%
+        group_by(item.id, age, form) %>%
         summarise(score = mean(complex, na.rm=TRUE)) %>%
         rowwise %>%
         mutate(item = instrument$complexity.by.id[[1]][[paste("item_", item.id, sep="")]],
@@ -122,7 +140,7 @@ shinyServer(function(input, output, session) {
     } else {complexity.data <- data.frame()}
     
     data <- bind_rows(word.data, wordform.data, complexity.data) %>%
-      filter(age >= instrument$age_min & age <= instrument$age_max)
+      filter(age >= min(instrument$age_min) & age <= max(instrument$age_max))
     
     return(data)
   }
@@ -131,7 +149,8 @@ shinyServer(function(input, output, session) {
     ifelse(is.null(input$language), start.language(), input$language)
   })
   input.form <- reactive({
-    ifelse(is.null(input$form), start.form(), input$form)
+    # to deal with the multiple form option
+    ifelse(rep(is.null(input$form), length(input$form)), start.form(), input$form)
   })
   input.measure <- reactive({
     ifelse(is.null(input$measure), start.measure(), input$measure)
@@ -141,7 +160,7 @@ shinyServer(function(input, output, session) {
   input.complexity <- reactive(input$complexity)
   
   instrument <- reactive({
-    filter(instrument.tables, language == input.language(), form == input.form())
+    filter(instrument.tables, language == input.language(), form %in% input.form())
   })
   
   data <- reactive({
@@ -158,9 +177,9 @@ shinyServer(function(input, output, session) {
   age.max <- reactive(instrument()$age_max)
   
   plot <- function() {
-    data <- data()
-    if (nrow(data) == 0) {
-      ggplot(data) +
+    d <- data()
+    if (nrow(d) == 0) {
+      ggplot(d) +
         geom_point() + 
         scale_x_continuous(name = "\nAge (months)",
                            breaks = age.min():age.max(),
@@ -170,7 +189,7 @@ shinyServer(function(input, output, session) {
                            breaks = seq(0,1,.25)) +
         theme(text=element_text(family=font))
     } else {
-      ggplot(data, aes(x=age, y=score, colour=item, label=item)) +
+      ggplot(d, aes(x=age, y=score, colour=item, label=item)) +
         geom_smooth(aes(linetype=type), se=FALSE, method="loess") +
         geom_point(aes(shape=type)) +
         scale_x_continuous(name = "\nAge (months)",
@@ -208,17 +227,21 @@ shinyServer(function(input, output, session) {
   })
   
   forms <- reactive({
-    Filter(function(form) {form %in% unique(filter(instrument.tables,
+    forms <- Filter(function(form) {form %in% unique(filter(instrument.tables,
                                                    language == input.language())$form)},
            list("Words & Sentences" = "WS", "Words & Gestures" = "WG"))
+    
+    if (all(c("WS","WG") %in% forms)) {
+      forms$"Both WS & WG" <- c("WS","WG") 
+    }
   })
   
   measures <- reactive({
     if (input.form() == "WG") {
       list("Produces" = "produces", "Understands" = "understands")
     } else if (input.form() == "WS") {
-      list("Produces" = "produces")
-    }
+      list("Produces" = "produces") # should catch WS&WG case
+    } 
   })
   
   output$plot <- renderPlot({
