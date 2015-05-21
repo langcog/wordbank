@@ -1,10 +1,10 @@
 import json
-from django.core.management.base import NoArgsCommand
+from django.core.management.base import BaseCommand
 from common.models import *
 import instruments.models
 
 
-class Command(NoArgsCommand):
+class Command(BaseCommand):
 
     def handle(self, *args, **options):
 
@@ -15,10 +15,11 @@ class Command(NoArgsCommand):
                                        '_'.join(instrument['language'].split() + [instrument['form']]))
             instrument_model.objects.all().delete()
 
+        Instrument.objects.all().delete()
+        Category.objects.all().delete()
+        ItemInfo.objects.all().delete()
+        ItemMap.objects.all().delete()
+        MomEd.objects.all().delete()
+        Source.objects.all().delete()
         Child.objects.all().delete()
         Administration.objects.all().delete()
-        MomEd.objects.all().delete()
-        InstrumentsMap.objects.all().delete()
-        Source.objects.all().delete()
-        WordMapping.objects.all().delete()
-        WordInfo.objects.all().delete()
