@@ -11,17 +11,18 @@ source("../app_themes.R")
 source("../palette.R")
 source("../data_loading.R")
 source("predictQR_fixed.R")
+#load("~/Documents/projects/wordbank/shiny_apps/norms_app/debug.RData")
 
 ## DEBUGGING
 input <- list(language = "English", form = "WS", measure = "production",
-              quantiles = "Standard", demo = "identity")
+              quantiles = "Standard", demo = "birth.order")
 
 shinyServer(function(input, output, session) {
   
   output$loaded <- reactive({0})
   outputOptions(output, 'loaded', suspendWhenHidden=FALSE)
   
-  wordbank <- connect.to.wordbank("prod")
+  wordbank <- connect.to.wordbank("local")
   
   common.tables <- get.common.tables(wordbank)
   
@@ -30,12 +31,12 @@ shinyServer(function(input, output, session) {
     mutate(identity = "All Data") %>%
     mutate(sex = factor(sex, levels=c("F", "M", "O"), labels=c("Female", "Male", "Other")),
            ethnicity = factor(ethnicity, levels=c("A", "B", "H", "O", "W"),
-                              labels=c("Asian", "Black", "Hispanic", "Other/Mixed", "White")),
+                              labels=c("Asian", "Black", "Hispanic", "White", "Other/Mixed")),
            birth.order = factor(birth.order, level = c(1, 2, 3, 4, 5, 6, 7, 8),
                                 labels = c("First", "Second", "Third", "Fourth", "Fifth",
                                            "Sixth", "Seventh", "Eighth")))
   
-  instruments <- as.data.frame(common.tables$instrument)  
+  instruments <- as.data.frame(common.tables$instrument)
   
   languages <- sort(unique(instruments$language))
   
@@ -44,7 +45,7 @@ shinyServer(function(input, output, session) {
                                "Ethnicity" = "ethnicity",
                                "Sex" = "sex",
                                "Mother's Education" = "momed.level")
-  min_obs <- 60
+  min_obs <- 100
   
   start.language <- function() {"English"}
   start.form <- function() {"WS"}
@@ -87,6 +88,9 @@ shinyServer(function(input, output, session) {
     filter(instruments, language == input.language(), form == input.form())
   })
   
+  age.min <- reactive({instrument()$age_min})
+  age.max <- reactive({instrument()$age_max})
+  
   ylabel <- reactive({
     if (input.measure() == "comprehension") {
       "Size of Receptive Vocabulary"
@@ -94,9 +98,6 @@ shinyServer(function(input, output, session) {
       "Size of Productive Vocabulary"
     }
   })
-  
-  age.min <- reactive({instrument()$age_min})
-  age.max <- reactive({instrument()$age_max})
     
   filtered_admins <- reactive({
     admins %>%
@@ -105,26 +106,89 @@ shinyServer(function(input, output, session) {
              measure == input.measure()) 
   })
   
-  renamed_filtered_admins <- reactive({
-    filtered_admins() %>%
-      rename_(demo = input.demo()) %>%    
-      filter(!is.na(demo))
-  })
+  clump_step <- function(groups, map, fun_demo) {
+    if (fun_demo == "birth.order") {
+      fine_groups <- groups[0:(nrow(groups)-2),]
+      small_groups <- slice(groups, (nrow(groups)-1):nrow(groups))
+      clump_demo <- small_groups$demo[1]
+      clump <- data.frame(demo = clump_demo, n = sum(small_groups$n))
+      clumped <- bind_rows(fine_groups, clump)
+    } else if (fun_demo == "ethnicity") {
+      fine_groups <- filter(groups, n >= min_obs & demo != "Other/Mixed")
+      small_groups <- filter(groups, n < min_obs | demo == "Other/Mixed")
+      clump_demo <- paste(small_groups$demo, collapse = ", ")
+      clump <- data.frame(demo = clump_demo, n = sum(small_groups$n))
+      clumped <- bind_rows(fine_groups, clump)
+    } else if (fun_demo %in% c("sex", "momed.level")) {
+      smallest <- as.numeric(row.names(groups)[groups$n == min(groups$n)])
+      neighbor <- as.numeric(row.names(groups)[groups$n == min(groups[smallest - 1,]$n,
+                                                               groups[smallest + 1,]$n,
+                                                               na.rm = TRUE)])
+      small_groups <- slice(groups, c(smallest, neighbor))
+      pre_fine_groups <- groups[0:(min(smallest, neighbor)-1),]
+      if (max(smallest, neighbor) == nrow(groups)) {
+        post_fine_groups <- NULL
+      } else {
+        post_fine_groups <- groups[(max(smallest, neighbor) + 1):nrow(groups),]
+      }
+      clump_demo <- paste(small_groups$demo, collapse = ", ")
+      clump <- data.frame(demo = clump_demo, n = sum(small_groups$n))
+      clumped <- bind_rows(pre_fine_groups, clump, post_fine_groups)
+    }
+    for (small_demo in small_groups$demo) {
+      map[[small_demo]] <- as.character(clump_demo)
+      map[which(map == small_demo)] <- as.character(clump_demo)
+    }
+    return(list("clumped" = clumped, "map" = map))
+  }
   
-  demo_groups <- reactive({
-    renamed_filtered_admins() %>%
+  clump_demo_groups <- function(groups, map, fun_demo) {
+    if (all(groups$n >= min_obs) | nrow(groups) == 1) {
+      if (fun_demo == "birth.order" & nrow(groups) > 1) {
+        demos <- unique(groups$demo)
+        groups %<>% mutate(demo = c(as.character(demos[1:(length(demos)-1)]),
+                                    paste0(demos[length(demos)], "+")))
+        plus <- max(which(names(map) == map))
+        map[plus:length(map)] <- paste0(map[plus], "+")
+      }
+      groups %<>%
+        filter(fun_demo == "identity" | n >= min_obs) %>%
+        rename(clump = demo)
+      return(list("groups" = groups, "map" = map))
+    } else {
+      step <- clump_step(groups, map, fun_demo)
+      clumped_groups <- step$clumped
+      clump_map <- step$map
+      return(clump_demo_groups(clumped_groups, clump_map, fun_demo))
+    }
+  }
+
+  clumped_demo_groups <- function(fun_demo) {
+    demo_groups <- filtered_admins() %>%
+      rename_(demo = fun_demo) %>%
+      filter(!is.na(demo)) %>%
       group_by(demo) %>%
-      summarise(n = n()) %>%
-      filter(n >= min_obs)
-  })
+      summarise(n = n())
+    map <- as.list(as.character(demo_groups$demo))
+    names(map) <- map
+    clump_demo_groups(demo_groups, map, fun_demo)
+  }
   
   data <- reactive({
-    renamed_filtered_admins() %>%
-      right_join(demo_groups())
+    groups_map <- clumped_demo_groups(input.demo())
+    groups <- groups_map$groups
+    groups$clump <- factor(groups$clump, levels = groups$clump)
+    map <- groups_map$map
+    demo_map <- data.frame(demo = names(map), clump = unlist(map), row.names = NULL)
+    demo_map$clump <- factor(demo_map$clump, levels = groups$clump)
+    filtered_admins() %>%
+      rename_(demo = input.demo()) %>%
+      left_join(demo_map) %>%
+      right_join(groups) %>%
+      select(-demo) %>%
+      rename(demo = clump)
   })
-  
-  # TODO: when grcq fixes its bug, get rid of the if "." thing in curves
-  
+    
   curves <- reactive({
     
     models <- data() %>%
@@ -149,12 +213,18 @@ shinyServer(function(input, output, session) {
       predicted.data <- bind_rows(predicted.data, value.predicted.data)
     }
     
+    # TODO: when grcq fixes its bug, get rid of the if "." thing in curves
     if (predicted.data$quantile[1] == ".") {
       predicted.data$quantile <- factor(.5) 
     }
     
+    groups_map <- clumped_demo_groups(input.demo())
+    groups <- groups_map$groups
+    groups$clump <- factor(groups$clump, levels = groups$clump)
+    
+    clump_levels <- clumped_demo_groups(input.demo())$groups$clump
     predicted.data %>%
-      mutate(demo = as.factor(demo),
+      mutate(demo = factor(demo, levels = clump_levels),
              quantile = sprintf("%.2f", as.numeric(levels(predicted.data$quantile))[predicted.data$quantile]))
     
   })
@@ -167,13 +237,13 @@ shinyServer(function(input, output, session) {
       geom_jitter(width = 0.1, size = 1, color = pt.color) +
       scale_x_continuous(name = "\nAge (months)",
                          breaks = seq(age.min(), age.max(), by = 2),
-                         limits=c(age.min(), age.max())) +
-      ylab(paste(ylabel(), "\n", sep = "")) +
-      theme(text=element_text(family=font))
+                         limits = c(age.min(), age.max())) +
+      ylab(paste0(ylabel(), "\n")) +
+      theme(text = element_text(family = font))
     
     if (input$quantiles == "Median") {
       p +
-        geom_line(data = curves(), size = 1,aes(x = age, y = predicted, color = demo)) +
+        geom_line(data = curves(), size = 1, aes(x = age, y = predicted, color = demo)) +
         scale_color_manual(name = names(which(possible_demo_fields == input.demo())),
                            values = rev(color_palette(length(unique(curves()$demo)))))
     } else {
@@ -181,6 +251,8 @@ shinyServer(function(input, output, session) {
         geom_line(data = curves(), size = 1, aes(x = age, y = predicted, color = quantile)) +
         scale_color_manual(name = "Quantile",
                            values = rev(color_palette(length(unique(curves()$quantile))))) +
+#        geom_dl(data = curves(), aes(x = age, y = predicted, color = quantile, label = quantile),
+#                method = list(dl.trans(x = x + 0.8), "last.qp", cex = 1, fontfamily = font)) +
         guides(color = guide_legend(reverse = TRUE)) +
         facet_wrap(~ demo)
     }
@@ -207,7 +279,7 @@ shinyServer(function(input, output, session) {
   })
   
   output$sample_sizes <- renderTable({
-    groups_with_data()
+    clumped_demo_groups(input.demo())$groups
   }, include.rownames = FALSE, include.colnames = FALSE)
   
   output$language_selector <- renderUI({    
@@ -226,18 +298,10 @@ shinyServer(function(input, output, session) {
   })
   
   output$demo_selector <- renderUI({
-    
-    num_demo_values <- function(demo) {
-      groups <- filtered_admins() %>%
-        filter_(interp("!is.na(x)", x = as.name(demo))) %>%
-        group_by_(demo) %>%
-        summarise(n = n()) %>%
-        filter(n >= min_obs)
-      return(length(groups[[demo]]))
-    }
-    
-    demo_fields <- Filter(function(demo) demo == "identity" | num_demo_values(demo) >= 2,
-                          possible_demo_fields)
+    available_demos <- Filter(function(demo) !all(is.na(filtered_admins()[[demo]])),
+                              possible_demo_fields)
+    demo_fields <- Filter(function(demo) demo == "identity" | nrow(clumped_demo_groups(demo)$groups) >= 2,
+                          available_demos)
     selectInput("demo", label = h4("Split Variable"),
                 choices = demo_fields, selected = input.demo())
   })
@@ -251,7 +315,7 @@ shinyServer(function(input, output, session) {
   output$downloadPlot <- downloadHandler(
     filename = function() { 'vocabulary_norms.pdf' },
     content = function(file) {
-      cairo_pdf(file, width=10, height=10*aspect.ratio(), family=font)
+      cairo_pdf(file, width = 10, height = 10*aspect.ratio(), family = font)
       print(plot())
       dev.off()
     })
