@@ -51,12 +51,10 @@ class Contributors(View):
 class Reports(View):
 
   def get(self, request):
-    id = None
-    if 'id' in request.GET:
-      id = request.GET['id']
-      return render(request, 'reports.html', {
-             'shinyServerIP': settings.SHINY_SERVER_IP,
-             'id': id})
+    if 'name' in request.GET:
+      name = request.GET['name']
+      link = 'http://%s/%s' % (settings.SHINY_SERVER_IP, name)
+      return render(request, 'reports.html', { 'source': link })
     else:
         return render(request, 'reports_landing.html', {})
 
