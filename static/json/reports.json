@@ -15,14 +15,14 @@
 },
 {
   "title": "Item Trajectories",
-  "name": "item_trajectory",
+  "name": "item_trajectories",
   "thumbnail": "static/images/sample_plots/item_trajectory.png",
   "type": "visualizations",
   "source": "shiny"
 },
 {
   "title": "Vocabulary Norms",
-  "name": "norms",
+  "name": "vocab_norms",
   "thumbnail": "static/images/sample_plots/norms.png",
   "type": "visualizations",
   "source": "shiny"
