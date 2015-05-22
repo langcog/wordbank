@@ -28,7 +28,7 @@ library(dplyr)
 library(tidyr)
 library(RMySQL)
 library(RCurl)
-source('data_loading.R')
+source('../../shiny_apps/data_loading.R')
 ```
 
 Load in Wordbank common data.
