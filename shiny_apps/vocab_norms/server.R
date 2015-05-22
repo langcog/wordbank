@@ -46,6 +46,7 @@ shinyServer(function(input, output, session) {
                                "Sex" = "sex",
                                "Mother's Education" = "momed.level")
   min_obs <- 100
+  max_obs_diff <- 1000
   
   start.language <- function() {"English"}
   start.form <- function() {"WS"}
@@ -189,7 +190,7 @@ shinyServer(function(input, output, session) {
       rename(demo = clump)
   })
     
-  curves <- reactive({
+  fit_curves <- function() {
     
     models <- data() %>%
       group_by(demo) %>%
@@ -227,6 +228,10 @@ shinyServer(function(input, output, session) {
       mutate(demo = factor(demo, levels = clump_levels),
              quantile = sprintf("%.2f", as.numeric(levels(predicted.data$quantile))[predicted.data$quantile]))
     
+  }
+  
+  curves <- reactive({
+    tryCatch({fit_curves()}, error = function(e) NULL)
   })
   
   plot <- function() {
@@ -238,24 +243,29 @@ shinyServer(function(input, output, session) {
       scale_x_continuous(name = "\nAge (months)",
                          breaks = seq(age.min(), age.max(), by = 2),
                          limits = c(age.min(), age.max())) +
-      ylab(paste0(ylabel(), "\n")) +
+      scale_y_continuous(name = paste0(ylabel(), "\n"),
+                         limits = c(0, max(data()$vocab))) +
       theme(text = element_text(family = font))
     
     if (input$quantiles == "Median") {
-      p +
-        geom_line(data = curves(), size = 1, aes(x = age, y = predicted, color = demo)) +
-        scale_color_manual(name = names(which(possible_demo_fields == input.demo())),
-                           values = color_palette(length(unique(curves()$demo))))
+      if (!is.null(curves())) {
+        p <- p +
+          geom_line(data = curves(), size = 1, aes(x = age, y = predicted, color = demo)) +
+          scale_color_manual(name = names(which(possible_demo_fields == input.demo())),
+                             values = color_palette(length(unique(curves()$demo))))
+      }        
     } else {
-      p +
-        geom_line(data = curves(), size = 1, aes(x = age, y = predicted, color = quantile)) +
-        scale_color_manual(name = "Quantile",
-                           values = rev(color_palette(length(unique(curves()$quantile))))) +
-#        geom_dl(data = curves(), aes(x = age, y = predicted, color = quantile, label = quantile),
-#                method = list(dl.trans(x = x + 0.8), "last.qp", cex = 1, fontfamily = font)) +
-        guides(color = guide_legend(reverse = TRUE)) +
+      p <- p +
         facet_wrap(~ demo)
+      if (!is.null(curves())) {
+        p <- p +
+          geom_line(data = curves(), size = 1, aes(x = age, y = predicted, color = quantile)) +
+          scale_color_manual(name = "Quantile",
+                           values = rev(color_palette(length(unique(curves()$quantile))))) +
+          guides(color = guide_legend(reverse = TRUE))
+      }
     }
+    p
   }
   
   forms <- reactive({
