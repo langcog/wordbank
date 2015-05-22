@@ -1,56 +1,65 @@
 [
 {
-  "name": "Vocabulary Norms",
-  "id": "norms_app",
-  "thumbnail": "static/images/sample_plots/norms.png",
-  "type": "visualizations"
-},
-{
-  "name": "Item Trajectories",
-  "id": "item_trajectory_app",
-  "thumbnail": "static/images/sample_plots/item_trajectory.png",
-  "type": "visualizations"
-},
-{
-  "name": "Administration Data",
-  "id": "admin_data_app",
-  "thumbnail": "static/images/sample_plots/admin_data.png",
-  "type": "data"
-},
-{
-  "name": "Instrument Data",
-  "id": "instrument_data_app",
+  "title": "Instrument Data",
+  "name": "instrument_data_app",
   "thumbnail": "static/images/sample_plots/instrument_data.png",
-  "type": "data"
+  "type": "data",
+  "source": "shiny"
 },
 {
-  "name": "Sex/Gender Differences",
-  "id": "sex_differences",
-  "thumbnail": "static/images/sample_plots/sex_differences.png",
-  "type": "reports"
+  "title": "Administration Data",
+  "name": "admin_data_app",
+  "thumbnail": "static/images/sample_plots/admin_data.png",
+  "type": "data",
+  "source": "shiny"
 },
 {
-  "name": "SES Effects",
-  "id": "ses_effects",
-  "thumbnail": "static/images/sample_plots/ses_effects.png",
-  "type": "reports"
+  "title": "Item Trajectories",
+  "name": "item_trajectory_app",
+  "thumbnail": "static/images/sample_plots/item_trajectory.png",
+  "type": "visualizations",
+  "source": "shiny"
 },
 {
-  "name": "Color Terms",
-  "id": "colors",
-  "thumbnail": "static/images/sample_plots/colors.png",
-  "type": "reports"
+  "title": "Vocabulary Norms",
+  "name": "norms_app",
+  "thumbnail": "static/images/sample_plots/norms.png",
+  "type": "visualizations",
+  "source": "shiny"
 },
 {
-  "name": "Grammar-Lexicon Link",
-  "id": "grammar_lex",
-  "thumbnail": "static/images/sample_plots/grammar_lex.png",
-  "type": "reports"
-},
-{
-  "name": "Vocabulary Composition",
-  "id": "vocab_comp",
+  "title": "Vocabulary Composition",
+  "name": "vocab_comp",
   "thumbnail": "static/images/sample_plots/vocab_comp.png",
-  "type": "reports"
+  "type": "reports",
+  "source": "html"
+},
+{
+  "title": "Grammar-Lexicon Link",
+  "name": "grammar_lex",
+  "thumbnail": "static/images/sample_plots/grammar_lex.png",
+  "type": "reports",
+  "source": "html"
+},
+{
+  "title": "Color Terms",
+  "name": "colors",
+  "thumbnail": "static/images/sample_plots/colors.png",
+  "type": "reports",
+  "source": "html"
+},
+{
+  "title": "SES Effects",
+  "name": "ses_effects",
+  "thumbnail": "static/images/sample_plots/ses_effects.png",
+  "type": "reports",
+  "source": "html"
+},
+{
+  "title": "Sex/Gender Differences",
+  "name": "sex_differences",
+  "thumbnail": "static/images/sample_plots/sex_differences.png",
+  "type": "reports",
+  "source": "html"
 }
 ]
