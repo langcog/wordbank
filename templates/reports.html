@@ -7,7 +7,16 @@
   <p>Wordbank is under early development, and we make no guarantees about the accuracy of its data. Use at your own risk.</p>
 </div>
 
-<div id="tabs">
+<div>
+<ul class="nav nav-tabs" id="main-tabs">
+  <li role="presentation" class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+      Reports <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu" role="menu" id="drop-tabs">
+    </ul>
+  </li>
+</ul>
 </div>
 
 <div id="wait" class="loader" align="center">
@@ -16,7 +25,8 @@
 </div>
 
 <div id="content">
-    <iframe style="border:none; width:1100px; height:1000px" id="report"  src="http://{{ shinyServerIP }}/{{ id }}"></iframe>
+<!--    <iframe style="border:none; width:1100px; height:1000px" id="report"  src="http://{{ shinyServerIP }}/{{ id }}"></iframe> -->
+    <iframe style="border:none; width:1100px; height:1000px" id="report"  src="{{ source }}"></iframe>
 </div>
 
 <script>
@@ -36,18 +46,21 @@
 <script>
     $.getJSON("static/json/reports.json", function(data) {
 	var currentApp = window.location.search.split('=')[1];
-        var tabs = $('#tabs');
-        var ul = $('<ul>').attr('class', "nav nav-tabs").appendTo(tabs);
+        var main = $('#main-tabs');
+        var menu = $('#drop-tabs');
         for (var i in data) {
             var app = data[i];
-	    var li = $('<li>').attr('role', "presentation").appendTo(ul)
-	    if (app['app_directory'] == currentApp) {
-		li.attr('class', "active");
-	    }
-            var link = $('<a>').attr('href', '/reports?id=' + app['app_directory'])
-			       .text(app['app_name']).appendTo(li);
-            };
-        }).error(function(error){console.log(error);}).fail(function(){console.log(arguments);})
+            if (app['type'] == 'reports') {
+                var li = $('<li>').attr('role', "presentation").prependTo(menu)
+            } else {
+                var li = $('<li>').attr('role', "presentation").prependTo(main)
+            }
+            if (app['name'] == currentApp) {
+                li.attr('class', "active");
+            }
+            var link = $('<a>').attr('href', '/reports?name=' + app['name']).text(app['title']).appendTo(li);
+        };
+    }).error(function(error){console.log(error);}).fail(function(){console.log(arguments);})
 </script>
 
 {% endblock %}
