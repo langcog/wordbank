@@ -1,7 +1,7 @@
 ---
 title: "Cross-Linguistic Comparison of Developmental Trajectories in Vocabulary Composition"
 author: "Mika Braginsky, Daniel Yurovsky, Virginia Marchman, and Michael Frank"
-date: "2015-05-08"
+date: "2015-05-06"
 output:
   html_document:
     highlight: tango
@@ -22,10 +22,7 @@ library(magrittr)
 library(dplyr)
 library(tidyr)
 library(quadprog)
-library(RCurl)
-url <- 'https://raw.githubusercontent.com/langcog/wordbank/master/shiny_apps/data_loading.R'
-script <- getURL(url, ssl.verifypeer = FALSE)
-eval(parse(text = script))
+source('data_loading.R')
 ```
 
 Load in Wordbank common data.
@@ -34,22 +31,12 @@ wordbank <- connect.to.wordbank("prod")
 
 common.tables <- get.common.tables(wordbank)
 
-get_split_lexcat <- function(cat, lexcat) {
-  if (lexcat != "predicates") {
-    return(lexcat)
-  } else if (cat == "descriptive_words") {
-    return("adjectives")
-  } else if (cat == "action_words") {
-    return("verbs")
-  }
-}
+items <- get.item.data(common.tables$wordmapping,
+                       common.tables$instrumentsmap,
+                       common.tables$category) %>%
+  filter(type == "word")
 
-items <- get.item.data(common.tables) %>%
-  filter(type == "word") #%>%
-#  rowwise() %>%
-#  mutate(lexical_category = get_split_lexcat(category, lexical_category))
-
-instrument.tables <- get.instrument.tables(wordbank, common.tables)
+instrument.tables <- get.instrument.tables(wordbank, common.tables$instruments)
 ```
 
 Get vocabulary composition data for all languages.
@@ -57,7 +44,6 @@ Get vocabulary composition data for all languages.
 get.vocab.comp <- function(input_language, input_form) {
   
   lang.vocab.items <- filter(items, language == input_language, form == input_form) %>%
-    #filter(lexical_category %in% c("nouns", "verbs", "adjectives", "function_words")) %>%
     filter(lexical_category %in% c("nouns", "predicates", "function_words")) %>%
     rename(column = item.id) %>%
     mutate(item.id = as.numeric(substr(column, 6, nchar(column))))
@@ -103,8 +89,6 @@ form.vocab.comp <- function(input_form) {
     mutate(lexical_category = factor(lexical_category,
                                      levels=c("nouns", "predicates", "function_words"),
                                      labels=c("Nouns", "Predicates", "Function Words"))) %>%
-#                                     levels=c("nouns", "adjectives", "verbs", "function_words"),
-#                                     labels=c("Nouns", "Adjectives", "Verbs", "Function Words"))) %>%
     gather(measure.var, value,
            production.prop, production.vocab,
            comprehension.prop, comprehension.vocab) %>%
@@ -112,29 +96,11 @@ form.vocab.comp <- function(input_form) {
     spread(var, value)
   }
 
-#wg.vocab.comp <- form.vocab.comp("WG")
+wg.vocab.comp <- form.vocab.comp("WG")
 ws.vocab.comp <- form.vocab.comp("WS") %>%
   filter(measure == "production")
-#tc.vocab.comp <- form.vocab.comp("TC") %>%
-#  filter(measure == "production")
 
-#vocab.comp <- bind_rows(ws.vocab.comp, wg.vocab.comp, tc.vocab.comp)
-vocab.comp <- ws.vocab.comp
-```
-
-```{r}
-admins <- get.administration.data(common.tables)
-wg_sample_sizes <- admins %>%
-  filter(language %in% c("Croatian", "English", "Hebrew", "Norwegian",
-                         "Russian", "Spanish", "Swedish", "Turkish"), form == "WG") %>%
-  group_by(language) %>%
-  summarise(n = n())
-
-sum(wg_sample_sizes$n)
-min(wg_sample_sizes$n)
-max(wg_sample_sizes$n)
-mean(wg_sample_sizes$n)
-median(wg_sample_sizes$n)
+vocab.comp <- bind_rows(ws.vocab.comp, wg.vocab.comp)
 ```
 
 Show sample size of each instrument.
@@ -145,16 +111,8 @@ sample_sizes <- vocab.comp %>%
   ungroup() %>%
   select(language, form, n) %>%
   distinct()
-kable(sample_sizes)
-```
 
-```{r}
-sum(sample_sizes$n)
-min(sample_sizes$n)
-max(sample_sizes$n)
-mean(sample_sizes$n)
-median(sample_sizes$n)
-length(unique(filter(vocab.comp, form == "WS")$language))
+kable(sample_sizes)
 ```
 
 Base plot for looking at vocabulary composition.
@@ -163,6 +121,7 @@ base_plot <- function(input_form, input_measure) {
   ggplot(filter(vocab.comp, form == input_form, measure == input_measure),
          aes(x = vocab, y = prop, colour = lexical_category)) +
   facet_wrap(~ language) +
+  geom_jitter(size = 0.7) +
   geom_abline(slope = 1, intercept = 0, color = "gray", linetype = "dashed") + 
   scale_y_continuous(limits = c(0, 1), breaks = seq(0, 1, 0.2),
                      name = "Proportion of Category\n") +
@@ -179,75 +138,6 @@ base_plot <- function(input_form, input_measure) {
         legend.background = element_rect(fill = "transparent"),
         text = element_text(family = font))
 }
-```
-
-
-Demo plots.
-
-```{r}
-demo_langs <- c("English", "Mandarin")
-demo_data <- filter(vocab.comp, form == "WS", language %in% demo_langs) %>%
-  mutate(panel = paste(language, "(data)"))
-pts <- seq(0, 1, 0.01)
-
-models <- demo_data %>%
-  group_by(language, lexical_category) %>%
-  do(model = clm(prop ~ I(vocab^3) + I(vocab^2) + vocab - 1, data = .))
-
-# get_model <- function(lang, lex_cat) {
-#   filter(models, language == lang, lexical_category == lex_cat)$model[[1]]
-# }
-
-get_lang_lexcat_predictions <- function(lang, lexcat) {
-  model <- filter(models, language == lang, lexical_category == lexcat)$model[[1]]
-  data.frame(vocab = pts,
-             prop = predict(model, newdata = data.frame(vocab = pts)),
-             lexical_category = lexcat,
-             language = lang)
-}
-
-get_lang_predictions <- function(lang) {
-  bind_rows(sapply(unique(demo_data$lexical_category),
-                   function(lexcat) get_lang_lexcat_predictions(lang, lexcat),
-                   simplify = FALSE))
-}
-
-predictions <- bind_rows(sapply(demo_langs, get_lang_predictions, simplify = FALSE))
-
-diagonal <- expand.grid(vocab = rep(rev(pts)),
-                        language = demo_langs,
-                        lexical_category = unique(demo_data$lexical_category))
-diagonal$prop <- diagonal$vocab
-
-area_poly <- bind_rows(predictions, diagonal) %>%
-  mutate(panel = paste(language, "(models)"))
-```
-
-```{r}
-ggplot(demo_data,
-       aes(x = vocab, y = prop, colour = lexical_category, fill = lexical_category)) +
-  facet_grid(~ panel) +
-  geom_point(size = 0.7) +
-#  geom_smooth(data = subset(demo_data, panel == "curves"), size = 1.5,
-#              method = "clm", formula = y ~ I(x^3) + I(x^2) + x - 1) +
-  geom_polygon(data = area_poly, alpha = 0.2) +
-  geom_abline(slope = 1, intercept = 0, color = "gray", linetype = "dashed") + 
-  scale_y_continuous(limits = c(0, 1), breaks = seq(0, 1, 0.2),
-                     name = "Proportion of Category") +
-  scale_x_continuous(limits = c(0, 1), breaks = seq(0, 1, 0.2),
-                     name = "Vocabulary Size") +
-  scale_color_brewer(palette = "Set1", guide = FALSE) +
-  scale_fill_brewer(palette = "Set1", name = "") +
-  theme_bw(base_size = 13) + 
-  theme(legend.position = c(0.061, 0.91),
-        legend.text = element_text(size = 8),
-        #legend.title = element_text(size = 8),#, lineheight = unit(0.8, "char")),
-        legend.key.height = unit(0.9, "char"),
-        legend.key.width = unit(0.88, "char"),
-        #legend.key = element_blank(),
-        legend.background = element_rect(fill = "transparent"),
-        text = element_text(family = font))
-ggsave("demo.png", width = 10, height = 3)
 ```
 
 Plot WS productive vocabulary composition as a function of vocabulary size for each language.
@@ -345,7 +235,6 @@ sample.areas <- function(d, num.times=1000) {
 Resample data, compute area for each sample, find the mean and CI of the area estimate.
 ```{r areas}
 areas <- sample.areas(vocab.comp, 100)
-#areas.eq <- sample.areas(vocab.comp.eq, 100)
 
 area.summary <- areas %>%
   group_by(language, form, measure, lexical_category) %>%
@@ -353,21 +242,10 @@ area.summary <- areas %>%
             ci.high = quantile(area, 0.975),
             ci.low = quantile(area, 0.025)) %>%
   ungroup() %>%
-  mutate(language = factor(language),
-         instrument = paste(language, form))
+  mutate(language = factor(language))
 
-# area.summary.eq <- areas.eq %>%
-#   group_by(language, form, measure, lexical_category) %>%
-#   summarise(mean =  mean(area),
-#             ci.high = quantile(area, 0.975),
-#             ci.low = quantile(area, 0.025)) %>%
-#   ungroup() %>%
-#   mutate(language = factor(language),
-#          instrument = paste(language, form))
-
-nouns <- filter(area.summary, form %in% c("WS", "TC"), lexical_category == "Nouns")
-language.levels <- nouns$language[order(nouns$mean, nouns$language, decreasing = FALSE)]
-instrument.levels <- nouns$instrument[order(nouns$mean, nouns$instrument, decreasing = FALSE)]
+#nouns <- filter(area.summary, lexical_category == "Nouns")
+#noun.levels <- nouns$language[order(nouns$mean, nouns$language, decreasing = FALSE)]
 #area.summary %<>% ungroup() %>% mutate(language = factor(language, levels = noun.levels))
 ```
 
@@ -384,212 +262,5 @@ ggplot(area.summary, aes(y = language, x = mean, col = lexical_category)) +
   theme_bw() +
   theme(text = element_text(family = font)) + 
   ylab("") +
-  xlab("\nRelative representation in early vocabulary")
-```
-
-Plot each lexical category's area estimate by language for WS only.
-```{r plot_areas_ws, fig.width=6, fig.height=6}
-#quartz(width = 6, height = 6)
-ggplot(filter(area.summary, form == "WS"),
-       aes(x = language, y = mean, color = lexical_category)) +
-  facet_grid(. ~ lexical_category) +
-  geom_point() +
-  geom_segment(aes(y = ci.low, yend = ci.high,
-                   x = language, xend = language)) +
-  geom_hline(yintercept = 0, linetype = "dashed", color = "gray") + 
-  scale_colour_brewer(palette = "Set1", name = "", guide=FALSE) +
-  scale_x_discrete(limits = rev(language.levels)) +
-  theme_bw(base_size = 13) +
-  theme(text = element_text(family = font),
-        axis.text.x = element_text(angle = 60, hjust = 1)) +
-  xlab("") +
-  ylab("Relative representation in early vocabulary")
-ggsave("bias.png", width = 10, height = 5)
-```
-
-
-```{r}
-num.words <- items %>%
-  group_by(language, form, lexical_category) %>%
-  summarise(n = n()) %>%
-  mutate(lexical_category = factor(lexical_category,
-                                 levels=c("nouns", "predicates", "function_words"),
-                                 labels=c("Nouns", "Predicates", "Function Words")))
-
-area.n <- area.summary %>%
-#  mutate(lexical_category = factor(lexical_category,
-#                                   labels=c("nouns", "adjectives", "verbs", "function_words"),
-#                                   levels=c("Nouns", "Adjectives", "Verbs", "Function Words"))) %>%
-  left_join(num.words) %>%
-  rowwise() %>%
-  mutate(label = paste(if (form %in% c("WS", "TC")) "toddler" else "infant", measure))
-
-cor.n <- area.n %>%
-  group_by(label, lexical_category) %>%
-  summarise(cor.n = cor(mean, n))
-
-ggplot(cor.n, aes(x = lexical_category, y = cor.n, fill = lexical_category)) +
-  facet_wrap(~ label) +
-  geom_bar(stat = "identity") +
-  scale_fill_brewer(palette = "Set1", guide = FALSE) +
-  scale_y_continuous(limits = c(-1, 1)) +
-  labs(x = "", y = "correlation with number of items")
-
-cat.spread <- area.n %>%
-  select(-ci.low, -ci.high, -n) %>%
-  spread(lexical_category, mean) #%>%
-#  group_by(label) %>%
-#  do(cor.cats = cor(.$nouns, .$adjectives, .$verbs, .$function_words))
-
-correlate <- function(lab) {
-  cat.spread %>%
-    filter(label == lab) %>%
-    select(nouns, adjectives, verbs, function_words) %>%
-    cor() %>%
-    melt() %>%
-    mutate(label = lab)
-}
-
-cor.cats <- bind_rows(sapply(unique(cat.spread$label), correlate,
-                             simplify = FALSE)) %>%
-  rename(lexcat1 = Var1, lexcat2 = Var2, correlation = value) %>%
-  filter(lexcat1 != lexcat2)
-
-ggplot(cor.cats, aes(x = lexcat1, y = lexcat2)) +
-  facet_wrap(~ label) +
-  geom_tile(aes(fill = correlation)) +
-  scale_fill_gradient(limits = c(-1, 1), high = "steelblue", low = "tomato") +
-  labs(x = "", y = "")
-  
-ggplot(cor.cats, aes(x = lexcat1, y = correlation, fill = lexcat2)) +
-  facet_wrap(~ label) +
-  geom_bar(stat = "identity", position = "dodge") +
-  scale_fill_brewer(palette = "Set1", name = "") +
-  scale_y_continuous(limits = c(-1, 1)) +
-  labs(x = "")
-
-cat.spread %>%
-  filter(form == "WG", measure == "comprehension") %>%
-  select(adjectives, nouns, verbs, function_words) %>%
-  chart.Correlation()
-
-#  group_by(label) %>%
-#  summarise(cor.noun.verb = cor(Nouns, Verbs),
-#            cor.noun.adj = cor(Nouns, Adjectives),
-#            cor.verb.adj = cor(Verbs, Adjectives))
-```
-
-```{r}
-twila <- vocab.comp %>%
-    mutate(lexical_category = factor(lexical_category,
-                                   labels=c("nouns", "adjectives", "verbs",
-                                            "function_words"),
-                                   levels=c("Nouns", "Adjectives", "Verbs",
-                                            "Function Words"))) %>%
-  filter(measure == "production") %>%
-  left_join(num.words) %>%
-  mutate(cat.num = prop*n) %>%
-  filter(lexical_category %in% c("nouns", "verbs")) %>%
-  select(data_id, language, form, lexical_category, cat.num) %>%
-  spread(lexical_category, cat.num) %>%
-  mutate(noun_bias = nouns / (nouns + verbs))
-
-twila.summary <- twila %>%
-  group_by(language, form) %>%
-  summarise(mean = mean(noun_bias, na.rm = TRUE),
-            ci.low = quantile(noun_bias, 0.125, na.rm = TRUE),
-            ci.high = quantile(noun_bias, 0.975, na.rm = TRUE))
-
-ggplot(twila.summary, aes(x = mean, y = language)) +
-  facet_grid(. ~ form) +
-  geom_point() +
-  geom_segment(aes(x = ci.low, xend = ci.high,
-                   y = language, yend = language))
-```
-
-Get vocabulary composition data for all languages.
-```{r vocab_comp_fun}
-get.vocab.comp.eq <- function(input_language, input_form) {
-  
-  lang.vocab.items <- filter(items, language == input_language, form == input_form) %>%
-    rename(column = item.id) %>%
-    mutate(item.id = as.numeric(substr(column, 6, nchar(column)))) %>%
-    filter(lexical_category %in% c("nouns", "verbs")) %>%
-    group_by(lexical_category) %>%
-    sample_n(49)
-  
-  lang.instrument.table <- filter(instrument.tables,
-                                  language == input_language,
-                                  form == input_form)$table[[1]]
-  
-  lang.vocab.data <- get.instrument.data(lang.instrument.table,
-                                         lang.vocab.items$column) %>%
-    left_join(select(lang.vocab.items, item.id, lexical_category, item, definition)) %>%
-    mutate(value = ifelse(is.na(value), "", value),
-           produces = value == "produces",
-           understands = value == "produces" | value == "understands")
-  
-  num.words <- nrow(lang.vocab.items)
-  
-  lang.vocab.summary <- lang.vocab.data %>%
-    group_by(data_id, lexical_category) %>%
-    summarise(production.num = sum(produces),
-              production.prop = sum(produces) / length(produces),
-              comprehension.num = sum(understands),
-              comprehension.prop = sum(understands) / length(understands))
-  
-  lang.vocab.sizes <- lang.vocab.summary %>%
-    summarise(production.vocab = sum(production.num) / num.words,
-              comprehension.vocab = sum(comprehension.num) / num.words)
-  
-  lang.vocab.summary %>%
-    left_join(lang.vocab.sizes) %>%
-    select(-production.num, -comprehension.num) %>%
-    mutate(language = input_language,
-           form = input_form)
-  
-  }
-```
-
-```{r}
-form.vocab.comp.eq <- function(input_form) {
-  bind_rows(sapply(unique(filter(instrument.tables, form == input_form)$language),
-                   function(lang) get.vocab.comp.eq(lang, input_form),
-                   simplify = FALSE)) %>%
-    gather(measure.var, value,
-           production.prop, production.vocab,
-           comprehension.prop, comprehension.vocab) %>%
-    extract(measure.var, c("measure", "var"), "([[:alnum:]]+)\\.([[:alnum:]]+)") %>%
-    spread(var, value)
-  }
-
-wg.vocab.comp.eq <- form.vocab.comp.eq("WG")
-ws.vocab.comp.eq <- form.vocab.comp.eq("WS") %>%
-  filter(measure == "production")
-tc.vocab.comp.eq <- form.vocab.comp.eq("TC") %>%
-  filter(measure == "production")
-
-vocab.comp.eq <- bind_rows(ws.vocab.comp.eq, wg.vocab.comp.eq, tc.vocab.comp.eq)
-```
-
-```{r}
-ggplot(vocab.comp.eq, aes(x = vocab, y = prop, colour = lexical_category)) +
-  #geom_point() +
-  geom_smooth(method = "clm", formula = y ~ I(x^3) + I(x^2) + x - 1) +
-  facet_wrap(~ language) +
-  geom_abline(slope = 1, intercept = 0, color = "gray", linetype = "dashed") + 
-  scale_y_continuous(limits = c(0, 1), breaks = seq(0, 1, 0.2),
-                     name = "Proportion of Category\n") +
-  scale_x_continuous(limits = c(0, 1), breaks = seq(0, 1, 0.2),
-                     name = "\nVocabulary Size") +
-  scale_color_brewer(palette = "Set1", name = "Lexical Category") +
-  theme_bw(base_size = 12) + 
-  theme(legend.position = c(0.068, 0.95),
-        legend.text = element_text(size = 9),
-        legend.title = element_text(size = 9, lineheight = unit(0.8, "char")),
-        legend.key.height = unit(0.8, "char"),
-        legend.key.width = unit(0.3, "cm"),
-        legend.key = element_blank(),
-        legend.background = element_rect(fill = "transparent"),
-        text = element_text(family = font))
+  xlab("\nRelative representation in early vocabulary") 
 ```
