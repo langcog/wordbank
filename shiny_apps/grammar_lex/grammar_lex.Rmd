@@ -37,21 +37,16 @@ wordbank <- connect.to.wordbank("prod")
 
 common.tables <- get.common.tables(wordbank)
 
-instrument.tables <- get.instrument.tables(wordbank, common.tables$instruments)
+instrument.tables <- get.instrument.tables(wordbank, common.tables)
 languages <- c("Norwegian", "English", "Danish", "Spanish")
 
-admins <- get.administration.data(common.tables$momed,
-                                  common.tables$child,
-                                  common.tables$instrumentsmap,
-                                  common.tables$administration) %>%
+admins <- get.administration.data(common.tables) %>%
   filter(form == "WS", age > 15, age < 32,
          language %in% languages) %>%
   mutate(age.group = cut(age, breaks = c(15, 19, 23, 27, 31)),
          language = factor(language, levels = languages))
 
-items <- get.item.data(common.tables$wordmapping,
-                       common.tables$instrumentsmap,
-                       common.tables$category) %>%
+items <- get.item.data(common.tables) %>%
   filter(language %in% languages) %>%
   mutate(language = factor(language, levels = languages))
 ```
