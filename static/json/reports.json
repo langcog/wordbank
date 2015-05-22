@@ -1,27 +1,65 @@
 [
 {
-  "app_name": "Vocabulary Norms",
-  "app_directory": "norms_app",
-  "app_sample_plot": "static/images/sample_plots/norms.png"
+  "title": "Instrument Data",
+  "name": "instrument_data",
+  "thumbnail": "static/images/sample_plots/instrument_data.png",
+  "type": "data",
+  "source": "shiny"
 },
 {
-  "app_name": "Vocabulary Distribution",
-  "app_directory": "hists_app",
-  "app_sample_plot": "static/images/sample_plots/hists.png"
+  "title": "Administration Data",
+  "name": "admin_data",
+  "thumbnail": "static/images/sample_plots/admin_data.png",
+  "type": "data",
+  "source": "shiny"
 },
 {
-  "app_name": "Item Trajectories",
-  "app_directory": "item_trajectory_app",
-  "app_sample_plot": "static/images/sample_plots/item_trajectory.png"
+  "title": "Item Trajectories",
+  "name": "item_trajectories",
+  "thumbnail": "static/images/sample_plots/item_trajectory.png",
+  "type": "visualizations",
+  "source": "shiny"
 },
 {
-  "app_name": "Administration Data",
-  "app_directory": "admin_data_app",
-  "app_sample_plot": "static/images/sample_plots/admin_data.png"
+  "title": "Vocabulary Norms",
+  "name": "vocab_norms",
+  "thumbnail": "static/images/sample_plots/norms.png",
+  "type": "visualizations",
+  "source": "shiny"
 },
 {
-  "app_name": "Instrument Data",
-  "app_directory": "instrument_data_app",
-  "app_sample_plot": "static/images/sample_plots/instrument_data.png"
+  "title": "Vocabulary Composition",
+  "name": "vocab_comp",
+  "thumbnail": "static/images/sample_plots/vocab_comp.png",
+  "type": "reports",
+  "source": "html"
+},
+{
+  "title": "Grammar-Lexicon Link",
+  "name": "grammar_lex",
+  "thumbnail": "static/images/sample_plots/grammar_lex.png",
+  "type": "reports",
+  "source": "html"
+},
+{
+  "title": "Color Terms",
+  "name": "colors",
+  "thumbnail": "static/images/sample_plots/colors.png",
+  "type": "reports",
+  "source": "html"
+},
+{
+  "title": "SES Effects",
+  "name": "ses_effects",
+  "thumbnail": "static/images/sample_plots/ses_effects.png",
+  "type": "reports",
+  "source": "html"
+},
+{
+  "title": "Sex/Gender Differences",
+  "name": "sex_differences",
+  "thumbnail": "static/images/sample_plots/sex_differences.png",
+  "type": "reports",
+  "source": "html"
 }
 ]
