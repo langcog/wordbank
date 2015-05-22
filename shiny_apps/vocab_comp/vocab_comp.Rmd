@@ -28,15 +28,11 @@ source('../../shiny_apps/data_loading.R')
 Load in Wordbank common data.
 ```{r database, cache=FALSE}
 wordbank <- connect.to.wordbank("prod")
-
 common.tables <- get.common.tables(wordbank)
+instrument.tables <- get.instrument.tables(wordbank, common.tables)
 
-items <- get.item.data(common.tables$wordmapping,
-                       common.tables$instrumentsmap,
-                       common.tables$category) %>%
+items <- get.item.data(common.tables) %>%
   filter(type == "word")
-
-instrument.tables <- get.instrument.tables(wordbank, common.tables$instruments)
 ```
 
 Get vocabulary composition data for all languages.
