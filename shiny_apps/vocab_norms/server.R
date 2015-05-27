@@ -14,8 +14,8 @@ source("predictQR_fixed.R")
 #load("~/Documents/projects/wordbank/shiny_apps/norms_app/debug.RData")
 
 ## DEBUGGING
-# input <- list(language = "German", form = "WS", measure = "production",
-#               quantiles = "Standard", demo = "sex")
+input <- list(language = "English", form = "WS", measure = "production",
+              quantiles = "Standard", demo = "identity")
 
 shinyServer(function(input, output, session) {
   
@@ -46,7 +46,6 @@ shinyServer(function(input, output, session) {
                                "Sex" = "sex",
                                "Mother's Education" = "momed.level")
   min_obs <- 100
-  max_obs_diff <- 1000
   
   start.language <- function() {"English"}
   start.form <- function() {"WS"}
@@ -154,7 +153,8 @@ shinyServer(function(input, output, session) {
       }
       groups %<>%
         filter(fun_demo == "identity" | n >= min_obs) %>%
-        rename(clump = demo)
+        rename(clump = demo) %>%
+        mutate(demo_label = sprintf("%s (n = %s)", clump, n))
       return(list("groups" = groups, "map" = map))
     } else {
       step <- clump_step(groups, map, fun_demo)
@@ -219,13 +219,13 @@ shinyServer(function(input, output, session) {
       predicted.data$quantile <- factor(.5) 
     }
     
-    groups_map <- clumped_demo_groups(input.demo())
-    groups <- groups_map$groups
-    groups$clump <- factor(groups$clump, levels = groups$clump)
-    
-    clump_levels <- clumped_demo_groups(input.demo())$groups$clump
+    clump_groups <- clumped_demo_groups(input.demo())$groups %>%
+      rename(demo = clump)
+
     predicted.data %>%
-      mutate(demo = factor(demo, levels = clump_levels),
+      left_join(clump_groups) %>%      
+      mutate(demo = factor(demo, levels = clump_groups$demo),
+             demo_label = factor(demo_label, levels = clump_groups$demo_label),
              quantile = sprintf("%.2f", as.numeric(levels(predicted.data$quantile))[predicted.data$quantile]))
     
   }
@@ -250,13 +250,13 @@ shinyServer(function(input, output, session) {
     if (input$quantiles == "Median") {
       if (!is.null(curves())) {
         p <- p +
-          geom_line(data = curves(), size = 1, aes(x = age, y = predicted, color = demo)) +
+          geom_line(data = curves(), size = 1, aes(x = age, y = predicted, color = demo_label)) +
           scale_color_manual(name = names(which(possible_demo_fields == input.demo())),
                              values = color_palette(length(unique(curves()$demo))))
       }        
     } else {
       p <- p +
-        facet_wrap(~ demo)
+        facet_wrap(~ demo_label)
       if (!is.null(curves())) {
         p <- p +
           geom_line(data = curves(), size = 1, aes(x = age, y = predicted, color = quantile)) +
@@ -288,9 +288,9 @@ shinyServer(function(input, output, session) {
     session$clientData$output_plot_width * aspect.ratio()
   })
   
-  output$sample_sizes <- renderTable({
-    clumped_demo_groups(input.demo())$groups
-  }, include.rownames = FALSE, include.colnames = FALSE)
+#   output$sample_sizes <- renderTable({
+#     clumped_demo_groups(input.demo())$groups
+#   }, include.rownames = FALSE, include.colnames = FALSE)
   
   output$language_selector <- renderUI({    
     selectizeInput("language", label = h4("Language"), 
@@ -317,9 +317,15 @@ shinyServer(function(input, output, session) {
   })
   
   output$downloadData <- downloadHandler(
-    filename = function() { 'vocabulary_norms.csv' },
+    filename = function() { 'vocabulary_norms_data.csv' },
     content = function(file) {
-      write.csv(data(), file)
+      write.csv(data(), file, row.names = FALSE)
+    })
+
+  output$downloadCurves <- downloadHandler(
+    filename = function() { 'vocabulary_norms_curves.csv' },
+    content = function(file) {
+      write.csv(curves(), file, row.names = FALSE)
     })
   
   output$downloadPlot <- downloadHandler(
