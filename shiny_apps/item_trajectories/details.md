@@ -1,0 +1,1 @@
+The plot shows the mean proportion producing or understanding the selected items, smoothed by a local polynomial regression line (loess).
