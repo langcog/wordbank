@@ -19,6 +19,7 @@ connect.to.wordbank <- function(mode) {
   return(con)
 }
 
+
 # Takes a connection to a MySQL database created with src_mysql
 # Pulls all of the common tables
 # Returns a list whose names are the names of the tables and whose values
@@ -42,7 +43,49 @@ get.common.tables <- function(db) {
 
 # Takes a connection to a MySQL database created with src_mysql and a list of its common tables
 # Loads all of the instruments in the instrument table
-# Returns a dataframe whose rows are individual instruments and 
+# Returns a data frame whose rows are individual instruments and which has a $table column
+init.instrument.tables <- function(db, common.tables) {
+  
+  instrument.tables <- as.data.frame(common.tables$instrument) %>%
+    rename(instrument_id = id) %>%
+    rowwise() %>%
+    mutate(table_name = paste(unlist(c("instruments",
+                                       strsplit(tolower(language), " "),
+                                       tolower(form))),
+                              collapse = "_")) %>%
+    group_by(instrument_id, language, form, age_min, age_max, has_grammar, table_name) %>%
+    do(table = list())
+
+  return(instrument.tables)
+  
+}
+
+
+# Takes a connection to a MySQL database created with src_mysql, a data frame of instruments
+# created with init.instrument.tables, and an instrument_id
+# Connects to that instrument's table
+# Returns instrument.tables with that instrument's table inserted
+add.instrument.table <- function(db, instrument.tables, inst_id) {
+  
+  instrument <- filter(instrument.tables, instrument_id == inst_id) %>%
+    select(-table)
+  
+  instrument.with.table <- instrument %>%
+    group_by(instrument_id) %>%
+    do(table = tbl(db, .$table_name)) %>%
+    left_join(instrument)
+
+  instrument.tables <- bind_rows(instrument.with.table,
+                                 filter(instrument.tables, instrument_id != inst_id))
+
+  return(instrument.tables)
+
+}
+
+
+# Takes a connection to a MySQL database created with src_mysql and a list of its common tables
+# Loads all of the instruments in the instrument table
+# Returns a data frame whose rows are individual instruments and 
 # whose $table column is the corresponding tbl
 get.instrument.tables <- function(db, common.tables) {
   
@@ -60,8 +103,9 @@ get.instrument.tables <- function(db, common.tables) {
   
 }
 
+
 # Takes in a list of common tables
-# Returns a dataframe in which each row is one administration and 
+# Returns a data frame in which each row is one administration and 
 # each column is a demographic variable
 get.administration.data <- function(common.tables) {
   
