@@ -1,13 +1,20 @@
 library(shiny)
 library(shinythemes)
+library(shinyBS)
+
 
 shinyUI(fluidPage(
   
   theme = shinytheme("spacelab"),
   
-  titlePanel("Vocabulary Norms"),
-  br(),
-  
+#  titlePanel("Vocabulary Norms"),
+#  br(),
+  bsCollapse(id = "doc", open = "title",
+             bsCollapsePanel(title = titlePanel("Vocabulary Norms"),
+                             "This report shows growth curves for vocabulary size for different languages and measures (whether a child produces or understands a particular number of words). For some datasets, it is possible to compare growth curves across different demographic groups (e.g., sex, mother's education).",
+                             value = "title",
+                             style = "default")),
+
   sidebarLayout(
     sidebarPanel(
       width=3,
@@ -20,20 +27,15 @@ shinyUI(fluidPage(
       conditionalPanel(
         condition = "output.loaded == 1",
         uiOutput("language_selector"),
-        uiOutput("form_selector"),      
+        uiOutput("form_selector"),
+        bsPopover("form_selector", title = NULL, content = "Words & Gestures is for infants and toddlers, Words & Sentences is for toddlers and young preschoolers", placement = "right"),
         uiOutput("measure_selector"),
         uiOutput("demo_selector"),
-#         selectInput("qsize", label = h4("Quantile size"), 
-#                     choices = list("10%" = .1, "20%" = .2, "25%" = .25, 
-#                                    "33%" = 1/3, "Median" = 1),
-#                     selected = .2),
-#         selectInput("num_quantiles", label = h5("Number of Quantiles"),
-#                     choices = list("1 (median)" = 1, "3 (33%)" = 3, "4 (25%)" = 4,
-#                                    "5 (20%)" = 5, "10 (10%)" = 10),
-#                     selected = 5),
+        bsPopover("demo_selector", title = NULL, content = "Demographic variables split or group the dataset", placement = "right"),
         selectInput("quantiles", label = h4("Quantiles"),
                     choices = list("Standard", "Deciles", "Quintiles", "Quartiles", "Median"),
                     selected = "Standard"),
+        bsPopover("quantiles", title = NULL, content = "Cut points for percentile curves", placement = "right"),
         br(),
         downloadButton('downloadPlot', 'Download Plot'),
         br(),br(),
@@ -49,7 +51,11 @@ shinyUI(fluidPage(
         condition = "output.loaded == 1",
         plotOutput("plot", width = "100%", height = "auto"),
         h5("Sample sizes:"),
-        tableOutput("sample_sizes")     
+        tableOutput("sample_sizes"),
+        bsCollapse(id = "details", open = NULL,
+                   bsCollapsePanel("More details",
+                                   htmlOutput("details"),
+                                   style = "info"))
       )
     )
   )
