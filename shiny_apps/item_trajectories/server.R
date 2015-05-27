@@ -12,8 +12,8 @@ Sys.setlocale(locale="en_US.UTF-8")
 options(error = NULL)
 
 ## DEBUGGING
-input <- list(language = "English", form = c("WS"), measure = "produces",
-           words = c(), wordform = NULL, complexity = NULL)
+# input <- list(language = "English", form = "WS WG", measure = "produces",
+#            words = c(), wordform = NULL, complexity = NULL)
 
 list.items.by.definition <- function(item.data) {
   items <- item.data$item.id
@@ -27,30 +27,30 @@ list.items.by.id <- function(item.data) {
   return(items)
 }
 
-data.fun <- function(instruments, form, measure, words) {#, wordform, complexity) {
+data.fun <- function(fun.instrument, fun.measure, fun.words) {#, wordform, complexity) {
 
   instrument.word.data <- function(inst_id) {
-    inst <- filter(instruments, instrument_id == inst_id)
-    word_ids <- inst$words.by.definition[[1]][words]
+    inst <- filter(fun.instrument, instrument_id == inst_id)
+    word_ids <- inst$words.by.definition[[1]][fun.words]
     get.instrument.data(inst$table[[1]], word_ids[!is.na(word_ids)]) %>%
       mutate(instrument_id = inst$instrument_id)
   }
 
-  if(!is.null(words)) {
-    word.data <- bind_rows(sapply(instruments$instrument_id, instrument.word.data, simplify = FALSE)) %>% 
+  if(!is.null(fun.words)) {
+    word.data <- bind_rows(sapply(fun.instrument$instrument_id, instrument.word.data, simplify = FALSE)) %>% 
       mutate(produces = value == 'produces',
              understands = value == 'understands' | value == 'produces') %>%
       select(-value) %>%
       gather(measure, value, produces, understands) %>%
-      filter(measure == measure) %>%
+      filter(measure == fun.measure) %>%
       left_join(admins) %>%
       group_by(instrument_id, item.id, age) %>%
       summarise(score = mean(value, na.rm = TRUE)) %>%
       group_by(instrument_id) %>%
       mutate(item.id = paste("item_", item.id, sep = "")) %>%
       rowwise() %>%
-      mutate(item = filter(instruments, 
-                           instruments$instrument_id == instrument_id)$words.by.id[[1]][item.id],
+      mutate(item = filter(fun.instrument,
+                           fun.instrument$instrument_id == instrument_id)$words.by.id[[1]][item.id],
              type = "word")
   } else {word.data <- data.frame()}
   
@@ -90,7 +90,7 @@ shinyServer(function(input, output, session) {
   output$loaded <- reactive({0})
   outputOptions(output, 'loaded', suspendWhenHidden=FALSE)
   
-  wordbank <- connect.to.wordbank("prod")
+  wordbank <- connect.to.wordbank("local")
   
   common.tables <- get.common.tables(wordbank)
   
@@ -99,10 +99,9 @@ shinyServer(function(input, output, session) {
   items <- get.item.data(common.tables) %>%
     mutate(definition = iconv(definition, from = "utf8", to = "utf8"))
   
-  instrument.tables <- init.instrument.tables(wordbank, common.tables)
-  tables <- get.instrument.tables(wordbank, common.tables)
+  start.instrument.tables <- init.instrument.tables(wordbank, common.tables)
   
-  instrument.tables <- tables %>%
+  instrument.tables <- start.instrument.tables %>%
     group_by(instrument_id) %>%
     do(words.by.definition = list.items.by.definition(filter(items,
                                                              instrument_id==.$instrument_id,
@@ -122,7 +121,7 @@ shinyServer(function(input, output, session) {
        complexity.by.id = list.items.by.id(filter(items,
                                                   instrument_id==.$instrument_id,
                                                   type=='complexity'))) %>%
-    left_join(tables)
+    left_join(start.instrument.tables)
   
   languages <- sort(unique(instrument.tables$language))
   
@@ -138,7 +137,12 @@ shinyServer(function(input, output, session) {
   })
   
   input.form <- reactive({
-    if (is.null(input$form)) start.form() else strsplit(input$form, ' ')[[1]]
+    #if (is.null(input$form)) start.form() else strsplit(input$form, ' ')[[1]]
+    ifelse(is.null(input$form), start.form(), input$form)  
+  })
+
+  input.forms <- reactive({
+    strsplit(input.form(), ' ')[[1]]
   })
   
   input.measure <- reactive({
@@ -150,12 +154,17 @@ shinyServer(function(input, output, session) {
   input.complexity <- reactive(input$complexity)
   
   instrument <- reactive({
-    filter(instrument.tables, language == input.language(), form %in% input.form())
+    inst <- filter(instrument.tables, language == input.language(), form %in% input.forms())$instrument_id
+    for (inst_id in inst) {
+      if (length(instrument.tables[instrument.tables$instrument_id == inst_id, ]$table[[1]]) == 0) {
+        instrument.tables <- add.instrument.table(wordbank, instrument.tables, inst_id)
+      }
+    }
+    filter(instrument.tables, language == input.language(), form %in% input.forms())
   })
   
   data <- reactive({
-    data.fun(instrument(), input.form(), input.measure(),
-             input.words())# input.wordform(), input.complexity())
+    data.fun(instrument(), input.measure(), input.words())
   })
   
   ylabel <- reactive({
@@ -163,8 +172,8 @@ shinyServer(function(input, output, session) {
     else if (input.measure() == "produces") {"Proportion of Children Producing"}
   })
   
-  age.min <- reactive(min(instrument()$age_min))
-  age.max <- reactive(max(instrument()$age_max))
+  age.min <- reactive({min(instrument()$age_min)})
+  age.max <- reactive({max(instrument()$age_max)})
   
   plot <- function() {
     d <- data()
@@ -189,7 +198,6 @@ shinyServer(function(input, output, session) {
                            limits = c(-0.01, 1),
                            breaks = seq(0, 1, 0.25)) +
         scale_color_manual(values = color_palette(length(unique(d$item)))) +
-#        scale_colour_brewer(palette = qual.palette) +
         geom_dl(method = list(dl.trans(x = x + 0.3), "last.qp", cex = 1, fontfamily = font)) +
         theme(legend.position = "none",
               text = element_text(family = font))
@@ -197,35 +205,35 @@ shinyServer(function(input, output, session) {
   }
   
   observe({
-    if (length(input.form()) == 1) {
+    if (length(input.forms()) == 1) {
       words <- names(filter(instrument.tables,
                             language == input.language(),
-                            form == input.form())$words.by.definition[[1]])
+                            form == input.forms())$words.by.definition[[1]])
     } else {
       words1 <- names(filter(instrument.tables,
                              language == input.language(),
-                             form == input.form()[1])$words.by.definition[[1]])
+                             form == input.forms()[1])$words.by.definition[[1]])
       words2 <- names(filter(instrument.tables,
                              language == input.language(),
-                             form == input.form()[2])$words.by.definition[[1]])
+                             form == input.forms()[2])$words.by.definition[[1]])
       words <- intersect(words1, words2)
     }
     updateSelectInput(session, 'words', choices = words, selected = "")
   })
   
-  observe({
+#  observe({
 #     wordforms <- filter(instrument.tables,
 #                         language == input.language(),
 #                         form == input.form())$wordform.by.definition[[1]]
 #     updateSelectInput(session, 'wordform', choices = wordforms, selected = "")
-  })
+#  })
   
-  observe({
+#  observe({
 #     complexity <- filter(instrument.tables,
 #                          language == input.language(),
 #                          form == input.form())$complexity.by.definition[[1]]
 #     updateSelectInput(session, 'complexity', choices = complexity, selected = "")
-  })
+#  })
   
   forms <- reactive({
     form_opts <- Filter(function(form) {form %in% unique(filter(instrument.tables,
@@ -240,7 +248,7 @@ shinyServer(function(input, output, session) {
   })
   
   measures <- reactive({
-    if ("WG" %in% input.form()) {
+    if ("WG" %in% input.forms()) {
       list("Produces" = "produces", "Understands" = "understands")
     } else {
       list("Produces" = "produces")
@@ -255,17 +263,17 @@ shinyServer(function(input, output, session) {
   
   output$language_selector <- renderUI({    
     selectInput("language", label = h4("Language"), 
-                choices = languages, selected = start.language())
+                choices = languages, selected = input.language())
   })
   
   output$form_selector <- renderUI({    
     selectInput("form", label = h4("Form"),
-                choices = forms(), selected = start.form())
+                choices = forms(), selected = input.form())
   })
   
   output$measure_selector <- renderUI({
     selectInput("measure", label = h4("Measure"), 
-                choices = measures(), selected = start.measure())
+                choices = measures(), selected = input.measure())
   })
   
   output$downloadData <- downloadHandler(
