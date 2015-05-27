@@ -11,11 +11,10 @@ source("../app_themes.R")
 source("../palette.R")
 source("../data_loading.R")
 source("predictQR_fixed.R")
-#load("~/Documents/projects/wordbank/shiny_apps/norms_app/debug.RData")
 
 ## DEBUGGING
-input <- list(language = "English", form = "WS", measure = "production",
-              quantiles = "Standard", demo = "identity")
+# input <- list(language = "English", form = "WS", measure = "production",
+#               quantiles = "Standard", demo = "identity")
 
 shinyServer(function(input, output, session) {
   
@@ -335,10 +334,6 @@ shinyServer(function(input, output, session) {
       print(plot())
       dev.off()
     })
-  
-  output$details <- renderUI({
-    HTML(paste(scan("details.txt", character(0), sep = "\n"), collapse = "<br/><br/>"))
-  })
   
   output$loaded <- reactive({1})
   

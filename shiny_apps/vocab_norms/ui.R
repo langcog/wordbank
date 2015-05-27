@@ -7,10 +7,8 @@ shinyUI(fluidPage(
   
   theme = shinytheme("spacelab"),
   
-#  titlePanel("Vocabulary Norms"),
-#  br(),
   bsCollapse(id = "doc", open = "title",
-             bsCollapsePanel(title = titlePanel("Vocabulary Norms"),
+             bsCollapsePanel(title = h3("Vocabulary Norms"),
                              "This analysis shows growth curves for vocabulary size, the number of words that a child produces or understands, for different languages, forms, and measures.",
                              "For some datasets, it is possible to compare growth curves across different demographic groups (birth order, ethnicity, sex, mother's education).",
                              "Use a median quantile type to compare demographic groups on a single plot, or other quantile sizes to see separate curves and plots for each groups.",
@@ -54,12 +52,10 @@ shinyUI(fluidPage(
       conditionalPanel(
         condition = "output.loaded == 1",
         plotOutput("plot", width = "100%", height = "auto"),
-        #h5("Sample sizes:"),
-        #tableOutput("sample_sizes"),
         br(),
         bsCollapse(id = "details", open = NULL,
                    bsCollapsePanel("More details",
-                                   htmlOutput("details"),
+                                   includeMarkdown("details.md"),
                                    style = "info"))
       )
     )
