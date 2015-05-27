@@ -330,6 +330,10 @@ shinyServer(function(input, output, session) {
       dev.off()
     })
   
+  output$details <- renderUI({
+    HTML(paste(scan("details.txt", character(0), sep = "\n"), collapse = "<br/><br/>"))
+  })
+  
   output$loaded <- reactive({1})
   
 })
