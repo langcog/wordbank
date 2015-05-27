@@ -5,9 +5,12 @@ shinyUI(fluidPage(
   
   theme = shinytheme("spacelab"),
   
-  titlePanel("Item Trajectories"),  
-  br(),
-  
+  bsCollapse(id = "doc", open = "title",
+             bsCollapsePanel(title = h3("Item Trajectories"),
+                             "This analysis allows exploration of growth curves for individual words (as well as word categories and other questions on particular forms).",
+                             value = "title",
+                             style = "default")),
+    
   sidebarLayout(
     sidebarPanel(
       width=3,
@@ -22,6 +25,7 @@ shinyUI(fluidPage(
         
         uiOutput("language_selector"),
         uiOutput("form_selector"),
+        bsPopover("form_selector", title = NULL, content = "Words & Gestures is for infants and toddlers, Words & Sentences is for toddlers and young preschoolers", placement = "right"),
         uiOutput("measure_selector"),
         selectInput("words", label = h4("Words"),
                     choices = NULL, multiple = TRUE),
@@ -30,19 +34,27 @@ shinyUI(fluidPage(
 #         selectInput("complexity", label = h4("Complexity"),
 #                     choices = NULL, multiple = TRUE),
         br(),
-        downloadButton('downloadPlot', 'Download Plot'),
+        downloadButton('downloadPlot', 'Download Plot', class = "btn-primary btn-sm"),
         br(),br(),
-        downloadButton('downloadData', 'Download Data'),
+        downloadButton('downloadData', 'Download Data', class = "btn-primary btn-sm"),
         width=3)),
     
     # Show a plot of the generated distribution
     mainPanel(
+      width=9,      
       tags$style(type="text/css",
                  ".shiny-output-error { visibility: hidden; }",
                  ".shiny-output-error:before { visibility: hidden; }"
       ),
-      plotOutput("plot", width = "100%", height = "auto"),
-      width=9
+      conditionalPanel(
+        condition = "output.loaded == 1",
+        plotOutput("plot", width = "100%", height = "auto"),
+        br(),
+        bsCollapse(id = "details", open = NULL,
+                   bsCollapsePanel("More details",
+                                   includeMarkdown("details.md"),
+                                   style = "info"))
+      )
     )
   )
 ))
