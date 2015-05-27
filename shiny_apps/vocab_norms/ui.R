@@ -11,7 +11,9 @@ shinyUI(fluidPage(
 #  br(),
   bsCollapse(id = "doc", open = "title",
              bsCollapsePanel(title = titlePanel("Vocabulary Norms"),
-                             "This report shows growth curves for vocabulary size for different languages and measures (whether a child produces or understands a particular number of words). For some datasets, it is possible to compare growth curves across different demographic groups (e.g., sex, mother's education).",
+                             "This analysis shows growth curves for vocabulary size, the number of words that a child produces or understands, for different languages, forms, and measures.",
+                             "For some datasets, it is possible to compare growth curves across different demographic groups (birth order, ethnicity, sex, mother's education).",
+                             "Use a median quantile type to compare demographic groups on a single plot, or other quantile sizes to see separate curves and plots for each groups.",
                              value = "title",
                              style = "default")),
 
@@ -31,15 +33,17 @@ shinyUI(fluidPage(
         bsPopover("form_selector", title = NULL, content = "Words & Gestures is for infants and toddlers, Words & Sentences is for toddlers and young preschoolers", placement = "right"),
         uiOutput("measure_selector"),
         uiOutput("demo_selector"),
-        bsPopover("demo_selector", title = NULL, content = "Demographic variables split or group the dataset", placement = "right"),
+        bsPopover("demo_selector", title = NULL, content = "Demographic variable to split or group the dataset", placement = "right"),
         selectInput("quantiles", label = h4("Quantiles"),
                     choices = list("Standard", "Deciles", "Quintiles", "Quartiles", "Median"),
                     selected = "Standard"),
         bsPopover("quantiles", title = NULL, content = "Cut points for percentile curves", placement = "right"),
         br(),
-        downloadButton('downloadPlot', 'Download Plot'),
+        downloadButton('downloadPlot', 'Download Plot', class = "btn-primary btn-sm"),
         br(),br(),
-        downloadButton('downloadData', 'Download Data')
+        downloadButton('downloadData', 'Download Data', class = "btn-primary btn-sm"),
+        br(),br(),
+        downloadButton('downloadCurves', 'Download Curves', class = "btn-primary btn-sm")
       )),
     
     mainPanel(
@@ -50,8 +54,9 @@ shinyUI(fluidPage(
       conditionalPanel(
         condition = "output.loaded == 1",
         plotOutput("plot", width = "100%", height = "auto"),
-        h5("Sample sizes:"),
-        tableOutput("sample_sizes"),
+        #h5("Sample sizes:"),
+        #tableOutput("sample_sizes"),
+        br(),
         bsCollapse(id = "details", open = NULL,
                    bsCollapsePanel("More details",
                                    htmlOutput("details"),
