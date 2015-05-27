@@ -7,12 +7,13 @@ library(directlabels)
 library(RMySQL)
 source("../app_themes.R")
 source("../data_loading.R")
+source("../palette.R")
 Sys.setlocale(locale="en_US.UTF-8")
 options(error = NULL)
 
 ## DEBUGGING
-input <- list(language = "English", form = c("WS","WG"), measure = "produces",
-           words = c("item_40"), wordform = NULL, complexity = NULL)
+input <- list(language = "English", form = c("WS"), measure = "produces",
+           words = c(), wordform = NULL, complexity = NULL)
 
 list.items.by.definition <- function(item.data) {
   items <- item.data$item.id
@@ -26,67 +27,59 @@ list.items.by.id <- function(item.data) {
   return(items)
 }
 
+data.fun <- function(instruments, form, measure, words) {#, wordform, complexity) {
 
+  instrument.word.data <- function(inst_id) {
+    inst <- filter(instruments, instrument_id == inst_id)
+    word_ids <- inst$words.by.definition[[1]][words]
+    get.instrument.data(inst$table[[1]], word_ids[!is.na(word_ids)]) %>%
+      mutate(instrument_id = inst$instrument_id)
+  }
 
-data.fun <- function(instrument, input.form, input.measure,
-                     input.words, input.wordform, input.complexity) {
-    
-  instrument.table <- instrument$table[[1]]
-  
-  if(!is.null(input.words)) {
-    # couldn't figure out how to do this functionally
-    word.data <- data.frame()
-    for (i in 1:length(instrument$table)) {
-      wd <- get.instrument.data(instrument$table[[i]], input.words)
-      wd$instrument_id <- instrument$instrument_id[i]
-      word.data <- bind_rows(word.data, wd)
-    }
-    
-    word.data %<>% 
+  if(!is.null(words)) {
+    word.data <- bind_rows(sapply(instruments$instrument_id, instrument.word.data, simplify = FALSE)) %>% 
       mutate(produces = value == 'produces',
              understands = value == 'understands' | value == 'produces') %>%
       select(-value) %>%
       gather(measure, value, produces, understands) %>%
-      filter(measure == input.measure) %>%
+      filter(measure == measure) %>%
       left_join(admins) %>%
       group_by(instrument_id, item.id, age) %>%
-      summarise(score = mean(value, na.rm=TRUE)) %>%
+      summarise(score = mean(value, na.rm = TRUE)) %>%
       group_by(instrument_id) %>%
-      mutate(item.id = paste("item_", item.id, sep="")) %>%       
+      mutate(item.id = paste("item_", item.id, sep = "")) %>%
       rowwise() %>%
-      mutate(item = filter(instrument, 
-                           instrument$instrument_id == instrument_id)$words.by.id[[1]][item.id],
+      mutate(item = filter(instruments, 
+                           instruments$instrument_id == instrument_id)$words.by.id[[1]][item.id],
              type = "word")
   } else {word.data <- data.frame()}
   
-  if(!is.null(input.wordform)) {
-    wordform.data <- get.instrument.data(instrument.table, input.wordform) %>%
-      mutate(produces = value == 'produces') %>%
-      select(-value) %>%
-      left_join(admins) %>%
-      group_by(item.id, age) %>%
-      summarise(score = mean(produces, na.rm=TRUE)) %>%
-      rowwise %>%
-      mutate(item = instrument$wordform.by.id[[1]][[paste("item_", item.id, sep="")]],
-             type = 'wordform')
-  } else {wordform.data <- data.frame()}
-  
-  if(!is.null(input.complexity)) {
-    complexity.data <- get.instrument.data(instrument.table, input.complexity) %>%
-      mutate(complex = value == 'complex') %>%
-      select(-value) %>%
-      left_join(admins) %>%
-      group_by(item.id, age, form) %>%
-      summarise(score = mean(complex, na.rm=TRUE)) %>%
-      rowwise %>%
-      mutate(item = instrument$complexity.by.id[[1]][[paste("item_", item.id, sep="")]],
-             type = 'complexity')
-  } else {complexity.data <- data.frame()}
-  
-  data <- bind_rows(word.data, wordform.data, complexity.data) %>%
-    filter(age >= min(instrument$age_min) & age <= max(instrument$age_max))
-  
-  return(data)
+#   if(!is.null(input.wordform)) {
+#     wordform.data <- get.instrument.data(instrument.table, input.wordform) %>%
+#       mutate(produces = value == 'produces') %>%
+#       select(-value) %>%
+#       left_join(admins) %>%
+#       group_by(item.id, age) %>%
+#       summarise(score = mean(produces, na.rm=TRUE)) %>%
+#       rowwise %>%
+#       mutate(item = instrument$wordform.by.id[[1]][[paste("item_", item.id, sep="")]],
+#              type = 'wordform')
+#   } else {wordform.data <- data.frame()}
+#   
+#   if(!is.null(input.complexity)) {
+#     complexity.data <- get.instrument.data(instrument.table, input.complexity) %>%
+#       mutate(complex = value == 'complex') %>%
+#       select(-value) %>%
+#       left_join(admins) %>%
+#       group_by(item.id, age, form) %>%
+#       summarise(score = mean(complex, na.rm=TRUE)) %>%
+#       rowwise %>%
+#       mutate(item = instrument$complexity.by.id[[1]][[paste("item_", item.id, sep="")]],
+#              type = 'complexity')
+#   } else {complexity.data <- data.frame()}
+ 
+  word.data
+#  bind_rows(word.data, wordform.data, complexity.data)
 }
 
 
@@ -106,6 +99,7 @@ shinyServer(function(input, output, session) {
   items <- get.item.data(common.tables) %>%
     mutate(definition = iconv(definition, from = "utf8", to = "utf8"))
   
+  instrument.tables <- init.instrument.tables(wordbank, common.tables)
   tables <- get.instrument.tables(wordbank, common.tables)
   
   instrument.tables <- tables %>%
@@ -144,12 +138,7 @@ shinyServer(function(input, output, session) {
   })
   
   input.form <- reactive({
-    # to deal with the multiple form option
-    if (is.null(input$form)) {
-      start.form()
-    } else {
-      input$form
-    }    
+    if (is.null(input$form)) start.form() else strsplit(input$form, ' ')[[1]]
   })
   
   input.measure <- reactive({
@@ -166,7 +155,7 @@ shinyServer(function(input, output, session) {
   
   data <- reactive({
     data.fun(instrument(), input.form(), input.measure(),
-             input.words(), input.wordform(), input.complexity())
+             input.words())# input.wordform(), input.complexity())
   })
   
   ylabel <- reactive({
@@ -174,8 +163,8 @@ shinyServer(function(input, output, session) {
     else if (input.measure() == "produces") {"Proportion of Children Producing"}
   })
   
-  age.min <- reactive(instrument()$age_min)
-  age.max <- reactive(instrument()$age_max)
+  age.min <- reactive(min(instrument()$age_min))
+  age.max <- reactive(max(instrument()$age_max))
   
   plot <- function() {
     d <- data()
@@ -184,79 +173,77 @@ shinyServer(function(input, output, session) {
         geom_point() + 
         scale_x_continuous(name = "\nAge (months)",
                            breaks = age.min():age.max(),
-                           limits = c(age.min(), age.max()+3)) +
-        scale_y_continuous(name = paste(ylabel(), "\n", sep=""),
-                           limits = c(-.01,1),
-                           breaks = seq(0,1,.25)) +
-        theme(text=element_text(family=font))
+                           limits = c(age.min(), age.max() + 3)) +
+        scale_y_continuous(name = paste(ylabel(), "\n", sep = ""),
+                           limits = c(-0.01, 1),
+                           breaks = seq(0, 1, 0.25)) +
+        theme(text = element_text(family = font))
     } else {
-      ggplot(d, aes(x=age, y=score, colour=item, label=item)) +
-        geom_smooth(aes(linetype=type), se=FALSE, method="loess") +
-        geom_point(aes(shape=type)) +
+      ggplot(d, aes(x = age, y = score, colour = item, label = item)) +
+        geom_smooth(aes(linetype = type), se = FALSE, method = "loess") +
+        geom_point(aes(shape = factor(instrument_id))) +
         scale_x_continuous(name = "\nAge (months)",
                            breaks = age.min():age.max(),
-                           limits = c(age.min(), age.max()+3)) +
-        scale_y_continuous(name = paste(ylabel(), "\n", sep=""),
-                           limits = c(-.01,1),
-                           breaks = seq(0,1,.25)) +
-        scale_colour_brewer(palette=qual.palette) +
-        geom_dl(method = list(dl.trans(x=x +.3), "last.qp", cex=1, fontfamily=font)) +
-        theme(legend.position="none",
-              text=element_text(family=font))
+                           limits = c(age.min(), age.max() + 3)) +
+        scale_y_continuous(name = paste(ylabel(), "\n", sep = ""),
+                           limits = c(-0.01, 1),
+                           breaks = seq(0, 1, 0.25)) +
+        scale_color_manual(values = color_palette(length(unique(d$item)))) +
+#        scale_colour_brewer(palette = qual.palette) +
+        geom_dl(method = list(dl.trans(x = x + 0.3), "last.qp", cex = 1, fontfamily = font)) +
+        theme(legend.position = "none",
+              text = element_text(family = font))
     }
   }
   
   observe({
     if (length(input.form()) == 1) {
-      words <- filter(instrument.tables,
-                      language == input.language(),
-                      form == input.form())$words.by.definition[[1]]
+      words <- names(filter(instrument.tables,
+                            language == input.language(),
+                            form == input.form())$words.by.definition[[1]])
     } else {
-      words1 <- filter(instrument.tables,
-                      language == input.language(),
-                      form == input.form()[1])$words.by.id[[1]]
-      words2 <- filter(instrument.tables,
-                       language == input.language(),
-                       form == input.form()[2])$words.by.id[[1]]
-      
-      ## START HERE now needs to get a list that has the keys for both instruments 
-      # and also to propagate this info through to the data lookup function 
+      words1 <- names(filter(instrument.tables,
+                             language == input.language(),
+                             form == input.form()[1])$words.by.definition[[1]])
+      words2 <- names(filter(instrument.tables,
+                             language == input.language(),
+                             form == input.form()[2])$words.by.definition[[1]])
+      words <- intersect(words1, words2)
     }
-    
     updateSelectInput(session, 'words', choices = words, selected = "")
   })
   
   observe({
-    wordforms <- filter(instrument.tables,
-                        language == input.language(),
-                        form == input.form())$wordform.by.definition[[1]]
-    updateSelectInput(session, 'wordform', choices = wordforms, selected = "")
+#     wordforms <- filter(instrument.tables,
+#                         language == input.language(),
+#                         form == input.form())$wordform.by.definition[[1]]
+#     updateSelectInput(session, 'wordform', choices = wordforms, selected = "")
   })
   
   observe({
-    complexity <- filter(instrument.tables,
-                         language == input.language(),
-                         form == input.form())$complexity.by.definition[[1]]
-    updateSelectInput(session, 'complexity', choices = complexity, selected = "")
+#     complexity <- filter(instrument.tables,
+#                          language == input.language(),
+#                          form == input.form())$complexity.by.definition[[1]]
+#     updateSelectInput(session, 'complexity', choices = complexity, selected = "")
   })
   
   forms <- reactive({
-    forms <- Filter(function(form) {form %in% unique(filter(instrument.tables,
+    form_opts <- Filter(function(form) {form %in% unique(filter(instrument.tables,
                                                    language == input.language())$form)},
            list("Words & Sentences" = "WS", "Words & Gestures" = "WG"))
     
-    if (all(c("WS","WG") %in% forms)) {
-      forms$"Both WS & WG" <- c("WS","WG") 
+    if (all(c("WS", "WG") %in% form_opts)) {
+      form_opts$"Both" <- "WS WG"
     }
     
-    forms
+    form_opts
   })
   
   measures <- reactive({
-    if (input.form() == "WG") {
+    if ("WG" %in% input.form()) {
       list("Produces" = "produces", "Understands" = "understands")
-    } else if (input.form() == "WS") {
-      list("Produces" = "produces") # should catch WS&WG case
+    } else {
+      list("Produces" = "produces")
     } 
   })
   
@@ -267,39 +254,19 @@ shinyServer(function(input, output, session) {
   })  
   
   output$language_selector <- renderUI({    
-    selectizeInput("language", label = h4("Language"), 
-                   choices = languages, selected = start.language())
+    selectInput("language", label = h4("Language"), 
+                choices = languages, selected = start.language())
   })
   
   output$form_selector <- renderUI({    
-    selectizeInput("form", label = h4("Form"),
-                   choices = forms(), selected = start.form())
+    selectInput("form", label = h4("Form"),
+                choices = forms(), selected = start.form())
   })
   
   output$measure_selector <- renderUI({
-    selectizeInput("measure", label = h4("Measure"), 
-                   choices = measures(), selected = start.measure())
+    selectInput("measure", label = h4("Measure"), 
+                choices = measures(), selected = start.measure())
   })
-  
-  #   output$words_selector <- renderUI({
-  #     print(words())
-  #     selectizeInput("words", label = h4("Words"), 
-  #                    selected = start.words(names(instrument()$words.by.id[[1]])),
-  #                    multiple = TRUE,
-  #                    choices = words())  
-  #   })
-  
-  #   output$wordform_selector <- renderUI({
-  #     selectizeInput("wordform", label = h4("Word Forms"), 
-  #                    choices = wordform(),
-  #                    multiple = TRUE)
-  #   })
-  
-  #   output$complexity_selector <- renderUI({
-  #     selectizeInput("complexity", label = h4("Complexity Items"), 
-  #                    choices = complexity(),
-  #                    multiple = TRUE)
-  #   })
   
   output$downloadData <- downloadHandler(
     filename = function() { 'item_trajectory.csv' },
