@@ -7,6 +7,7 @@ shinyUI(fluidPage(
   
   theme = shinytheme("spacelab"),
   
+  br(),
   bsCollapse(id = "doc", open = "title",
              bsCollapsePanel(title = h3("Vocabulary Norms"),
                              "This analysis shows growth curves for vocabulary size, the number of words that a child produces or understands, for different languages, forms, and measures.",

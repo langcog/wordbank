@@ -1,10 +1,12 @@
 library(shiny)
 library(shinythemes)
+library(shinyBS)
 
 shinyUI(fluidPage(
   
   theme = shinytheme("spacelab"),
   
+  br(),
   bsCollapse(id = "doc", open = "title",
              bsCollapsePanel(title = h3("Item Trajectories"),
                              "This analysis allows exploration of growth curves for individual words.",
