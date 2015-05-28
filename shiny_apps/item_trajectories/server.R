@@ -27,7 +27,7 @@ list.items.by.id <- function(item.data) {
   return(items)
 }
 
-data.fun <- function(fun.instrument, fun.measure, fun.words) {#, wordform, complexity) {
+data.fun <- function(admins, fun.instrument, fun.measure, fun.words) {#, wordform, complexity) {
 
   instrument.word.data <- function(inst_id) {
     inst <- filter(fun.instrument, instrument_id == inst_id)
@@ -164,7 +164,7 @@ shinyServer(function(input, output, session) {
   })
   
   data <- reactive({
-    data.fun(instrument(), input.measure(), input.words())
+    data.fun(admins, instrument(), input.measure(), input.words())
   })
   
   ylabel <- reactive({
