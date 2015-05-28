@@ -193,15 +193,18 @@ shinyServer(function(input, output, session) {
       ggplot(d, aes(x = age, y = mean, colour = item, label = item)) +
         geom_smooth(aes(linetype = type), se = FALSE, method = "loess") +
         geom_point(aes(shape = form)) +
+        scale_shape_manual(values = c(1, 20)) +
+        scale_linetype_discrete(guide = FALSE) +
         scale_x_continuous(name = "\nAge (months)",
                            breaks = age.min():age.max(),
                            limits = c(age.min(), age.max() + 3)) +
         scale_y_continuous(name = paste(ylabel(), "\n", sep = ""),
                            limits = c(-0.01, 1),
                            breaks = seq(0, 1, 0.25)) +
-        scale_color_manual(values = color_palette(length(unique(d$item)))) +
+        scale_color_manual(values = color_palette(length(unique(d$item))),
+                           guide = FALSE) +
         geom_dl(method = list(dl.trans(x = x + 0.3), "last.qp", cex = 1, fontfamily = font)) +
-        theme(legend.position = "none",
+        theme(legend.position = "right",
               text = element_text(family = font))
     }
   }
