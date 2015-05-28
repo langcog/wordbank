@@ -92,7 +92,7 @@ shinyServer(function(input, output, session) {
   output$loaded <- reactive({0})
   outputOptions(output, 'loaded', suspendWhenHidden=FALSE)
   
-  wordbank <- connect.to.wordbank("local")
+  wordbank <- connect.to.wordbank("dev")
   
   common.tables <- get.common.tables(wordbank)
   
