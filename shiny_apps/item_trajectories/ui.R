@@ -7,7 +7,7 @@ shinyUI(fluidPage(
   
   bsCollapse(id = "doc", open = "title",
              bsCollapsePanel(title = h3("Item Trajectories"),
-                             "This analysis allows exploration of growth curves for individual words (as well as word categories and other questions on particular forms).",
+                             "This analysis allows exploration of growth curves for individual words.",
                              value = "title",
                              style = "default")),
     
