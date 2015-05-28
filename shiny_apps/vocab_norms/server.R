@@ -13,8 +13,8 @@ source("../data_loading.R")
 source("predictQR_fixed.R")
 
 ## DEBUGGING
-# input <- list(language = "English", form = "WS", measure = "production",
-#               quantiles = "Standard", demo = "identity")
+input <- list(language = "English", form = "WS", measure = "production",
+              quantiles = "Standard", demo = "sex")
 
 shinyServer(function(input, output, session) {
   
@@ -287,9 +287,12 @@ shinyServer(function(input, output, session) {
     session$clientData$output_plot_width * aspect.ratio()
   })
   
-#   output$sample_sizes <- renderTable({
-#     clumped_demo_groups(input.demo())$groups
-#   }, include.rownames = FALSE, include.colnames = FALSE)
+  output$table <- renderTable({
+    curves() %>%
+      select(age, quantile, predicted, demo) %>%
+      spread(quantile, predicted) %>%
+      arrange(demo)
+  }, include.rownames = FALSE)
   
   output$language_selector <- renderUI({    
     selectizeInput("language", label = h4("Language"), 

@@ -50,14 +50,21 @@ shinyUI(fluidPage(
       tags$style(type="text/css",
                  ".shiny-output-error { visibility: hidden; }",
                  ".shiny-output-error:before { visibility: hidden; }"),
-      conditionalPanel(
-        condition = "output.loaded == 1",
-        plotOutput("plot", width = "100%", height = "auto"),
-        br(),
-        bsCollapse(id = "details", open = NULL,
-                   bsCollapsePanel("More details",
-                                   includeMarkdown("details.md"),
-                                   style = "info"))
+      tabsetPanel(
+        tabPanel("Plot",
+                 br(),
+                 conditionalPanel(
+                   condition = "output.loaded == 1",
+                   plotOutput("plot", width = "100%", height = "auto"),
+                   br(),
+                   bsCollapse(id = "details", open = NULL,
+                              bsCollapsePanel("More details",
+                                              includeMarkdown("details.md"),
+                                              style = "info"))
+                 )),
+        tabPanel("Table",
+                 br(),
+                 tableOutput("table"))
       )
     )
   )
