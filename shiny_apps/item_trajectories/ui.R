@@ -15,29 +15,33 @@ shinyUI(fluidPage(
     
   sidebarLayout(
     sidebarPanel(
-      width=3,
+      width = 3,
       
       conditionalPanel(
         condition="output.loaded != 1",
         h4("Loading...")
       ),
-      
+            
       conditionalPanel(
         condition="output.loaded == 1",
+        tags$style(type = "text/css", ".popover { width: 150px; }"),
         uiOutput("language_selector"),
         bsPopover("language_selector", title = NULL, 
-                  content = HTML("See contributors page for citation info."), 
+                  content = HTML("<small>see contributors page for citation info</small>"),
                   placement = "right"),
         uiOutput("form_selector"),
         bsPopover("form_selector", title = NULL, 
-                  content = HTML("Words & Gestures for infants and toddlers, Words & Sentences for toddlers and young preschoolers, Both to integrate across the two."), 
+                  content = HTML("<small>Words & Gestures for infants and toddlers, Words & Sentences for toddlers and young preschoolers, Both to integrate across the two</small>"), 
                   placement = "right"),
         uiOutput("measure_selector"),
         bsPopover("measure_selector", title = NULL, 
-                  content = HTML("Question that parents were asked to answer."), 
+                  content = HTML("<small>question that parents were asked to answer</small>"),
                   placement = "right"),
-        selectInput("words", label = h4("Words"),
-                    choices = NULL, multiple = TRUE),
+        popify(selectInput("words", label = h4("Words"),
+                           choices = NULL, multiple = TRUE),
+               title = NULL, 
+               content = HTML("<small>choose words to be plotted by typing or selecting from the list</small>"),
+               placement = "right"),
 #         selectInput("wordform", label = h4("Wordforms"),
 #                     choices = NULL, multiple = TRUE),
 #         selectInput("complexity", label = h4("Complexity"),
@@ -51,12 +55,12 @@ shinyUI(fluidPage(
         downloadButton('downloadTable', 'Download Table', class = "btn-primary btn-sm"),
 #         br(),br(),
 #         downloadButton('downloadData', 'Download Raw Data', class = "btn-primary btn-sm"),
-        width=3)),
+        width = 3)),
     
     # Show a plot of the generated distribution
     mainPanel(
-      width=9,      
-      tags$style(type="text/css",
+      width = 9,
+      tags$style(type = "text/css",
                  ".shiny-output-error { visibility: hidden; }",
                  ".shiny-output-error:before { visibility: hidden; }"),
       tabsetPanel(
