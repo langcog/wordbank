@@ -12,8 +12,8 @@ Sys.setlocale(locale="en_US.UTF-8")
 options(error = NULL)
 
 ## DEBUGGING
-# input <- list(language = "English", form = "WS WG", measure = "produces",
-#            words = c(), wordform = NULL, complexity = NULL)
+# input <- list(language = "English", form = "WG WS", measure = "produces",
+#             words = c(), wordform = NULL, complexity = NULL)
 
 list.items.by.definition <- function(item.data) {
   items <- item.data$item.id
@@ -44,14 +44,17 @@ data.fun <- function(admins, fun.instrument, fun.measure, fun.words) {#, wordfor
       gather(measure, value, produces, understands) %>%
       filter(measure == fun.measure) %>%
       left_join(admins) %>%
+      filter(!is.na(age)) %>%
       group_by(instrument_id, item.id, age) %>%
-      summarise(score = mean(value, na.rm = TRUE)) %>%
+      summarise(mean = mean(value, na.rm = TRUE)) %>%
       group_by(instrument_id) %>%
       mutate(item.id = paste("item_", item.id, sep = "")) %>%
       rowwise() %>%
       mutate(item = filter(fun.instrument,
                            fun.instrument$instrument_id == instrument_id)$words.by.id[[1]][item.id],
-             type = "word")
+             type = "word") %>%
+      left_join(select(fun.instrument, instrument_id, form)) %>%
+      select(-instrument_id, -item.id)
   } else {word.data <- data.frame()}
   
 #   if(!is.null(input.wordform)) {
@@ -81,7 +84,6 @@ data.fun <- function(admins, fun.instrument, fun.measure, fun.words) {#, wordfor
   word.data
 #  bind_rows(word.data, wordform.data, complexity.data)
 }
-
 
 
 ##### SERVER STARTS HERE
@@ -188,9 +190,9 @@ shinyServer(function(input, output, session) {
                            breaks = seq(0, 1, 0.25)) +
         theme(text = element_text(family = font))
     } else {
-      ggplot(d, aes(x = age, y = score, colour = item, label = item)) +
+      ggplot(d, aes(x = age, y = mean, colour = item, label = item)) +
         geom_smooth(aes(linetype = type), se = FALSE, method = "loess") +
-        geom_point(aes(shape = factor(instrument_id))) +
+        geom_point(aes(shape = form)) +
         scale_x_continuous(name = "\nAge (months)",
                            breaks = age.min():age.max(),
                            limits = c(age.min(), age.max() + 3)) +
@@ -241,7 +243,7 @@ shinyServer(function(input, output, session) {
            list("Words & Sentences" = "WS", "Words & Gestures" = "WG"))
     
     if (all(c("WS", "WG") %in% form_opts)) {
-      form_opts$"Both" <- "WS WG"
+      form_opts$"Both" <- "WG WS"
     }
     
     form_opts
@@ -276,11 +278,36 @@ shinyServer(function(input, output, session) {
                 choices = measures(), selected = input.measure())
   })
   
-  output$downloadData <- downloadHandler(
-    filename = function() { 'item_trajectory.csv' },
+  table.data <- reactive({
+    d <- data()
+    if (nrow(d) == 0) {
+      expand.grid(age = age.min():age.max(), form = input.forms()) %>%
+        select(form, age)
+    } else {
+      d %>%
+        select(form, age, item, mean) %>%
+        spread(item, mean)
+    }
+  })
+  
+  output$table <- renderTable({
+    table.data()
+  }, include.rownames = FALSE, digits = 2)
+
+  output$downloadTable <- downloadHandler(
+    filename = function() { 'item_trajectory_table.csv' },
     content = function(file) {
-      write.csv(data(), file)
-    })
+      td <- table.data()
+      extra.cols <- data.frame(language = rep(input.language(), nrow(td)),
+                               measure = rep(input.measure(), nrow(td)))
+      write.csv(bind_cols(extra.cols, td), file, row.names = FALSE)
+      })
+
+#   output$downloadData <- downloadHandler(
+#     filename = function() { 'item_trajectory_data.csv' },
+#     content = function(file) {
+#       write.csv(data(), file, row.names = FALSE)
+#     })
   
   output$downloadPlot <- downloadHandler(
     filename = function() { 'item_trajectory.pdf' },
