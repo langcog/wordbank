@@ -286,13 +286,18 @@ shinyServer(function(input, output, session) {
   }, height = function() {
     session$clientData$output_plot_width * aspect.ratio()
   })
-  
-  output$table <- renderTable({
+
+  table.data <- reactive({
     curves() %>%
       select(age, quantile, predicted, demo) %>%
       spread(quantile, predicted) %>%
-      arrange(demo)
-  }, include.rownames = FALSE)
+      arrange(demo) %>%
+      rename_(.dots = setNames("demo", input.demo()))    
+  })
+  
+  output$table <- renderTable({
+    table.data()
+  }, include.rownames = FALSE, digits = 1)
   
   output$language_selector <- renderUI({    
     selectizeInput("language", label = h4("Language"), 
@@ -324,10 +329,14 @@ shinyServer(function(input, output, session) {
       write.csv(data(), file, row.names = FALSE)
     })
 
-  output$downloadCurves <- downloadHandler(
-    filename = function() { 'vocabulary_norms_curves.csv' },
+  output$downloadTable <- downloadHandler(
+    filename = function() { 'vocabulary_norms_table.csv' },
     content = function(file) {
-      write.csv(curves(), file, row.names = FALSE)
+      td <- table.data()
+      extra.cols <- data.frame(language = rep(input.language(), nrow(td)),
+                               form = rep(input.form(), nrow(td)),
+                               measure = rep(input.measure(), nrow(td)))
+      write.csv(bind_cols(extra.cols, td), file, row.names = FALSE)
     })
   
   output$downloadPlot <- downloadHandler(

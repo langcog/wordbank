@@ -40,9 +40,9 @@ shinyUI(fluidPage(
         br(),
         downloadButton('downloadPlot', 'Download Plot', class = "btn-primary btn-sm"),
         br(),br(),
-        downloadButton('downloadData', 'Download Data', class = "btn-primary btn-sm"),
+        downloadButton('downloadTable', 'Download Table', class = "btn-primary btn-sm"),
         br(),br(),
-        downloadButton('downloadCurves', 'Download Curves', class = "btn-primary btn-sm")
+        downloadButton('downloadData', 'Download Raw Data', class = "btn-primary btn-sm")
       )),
     
     mainPanel(
@@ -58,9 +58,9 @@ shinyUI(fluidPage(
                    plotOutput("plot", width = "100%", height = "auto"),
                    br(),
                    bsCollapse(id = "details", open = NULL,
-                              bsCollapsePanel("More details",
+                              bsCollapsePanel("More details...",
                                               includeMarkdown("details.md"),
-                                              style = "info"))
+                                              style = "default"))
                  )),
         tabPanel("Table",
                  br(),
