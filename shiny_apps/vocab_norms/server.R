@@ -322,12 +322,6 @@ shinyServer(function(input, output, session) {
     selectInput("demo", label = h4("Split Variable"),
                 choices = demo_fields, selected = input.demo())
   })
-  
-  output$downloadData <- downloadHandler(
-    filename = function() { 'vocabulary_norms_data.csv' },
-    content = function(file) {
-      write.csv(data(), file, row.names = FALSE)
-    })
 
   output$downloadTable <- downloadHandler(
     filename = function() { 'vocabulary_norms_table.csv' },
@@ -337,6 +331,12 @@ shinyServer(function(input, output, session) {
                                form = rep(input.form(), nrow(td)),
                                measure = rep(input.measure(), nrow(td)))
       write.csv(bind_cols(extra.cols, td), file, row.names = FALSE)
+    })
+  
+  output$downloadData <- downloadHandler(
+    filename = function() { 'vocabulary_norms_data.csv' },
+    content = function(file) {
+      write.csv(data(), file, row.names = FALSE)
     })
   
   output$downloadPlot <- downloadHandler(

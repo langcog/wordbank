@@ -38,7 +38,9 @@ shinyUI(fluidPage(
         br(),
         downloadButton('downloadPlot', 'Download Plot', class = "btn-primary btn-sm"),
         br(),br(),
-        downloadButton('downloadData', 'Download Data', class = "btn-primary btn-sm"),
+        downloadButton('downloadTable', 'Download Table', class = "btn-primary btn-sm"),
+#         br(),br(),
+#         downloadButton('downloadData', 'Download Raw Data', class = "btn-primary btn-sm"),
         width=3)),
     
     # Show a plot of the generated distribution
@@ -46,16 +48,23 @@ shinyUI(fluidPage(
       width=9,      
       tags$style(type="text/css",
                  ".shiny-output-error { visibility: hidden; }",
-                 ".shiny-output-error:before { visibility: hidden; }"
-      ),
-      conditionalPanel(
-        condition = "output.loaded == 1",
-        plotOutput("plot", width = "100%", height = "auto"),
-        br(),
-        bsCollapse(id = "details", open = NULL,
-                   bsCollapsePanel("More details",
-                                   includeMarkdown("details.md"),
-                                   style = "info"))
+                 ".shiny-output-error:before { visibility: hidden; }"),
+      tabsetPanel(
+        tabPanel("Plot",
+                 br(),
+                  conditionalPanel(
+                    condition = "output.loaded == 1",
+                    plotOutput("plot", width = "100%", height = "auto"),
+                    br(),
+                    bsCollapse(id = "details", open = NULL,
+                               bsCollapsePanel("More details...",
+                                               includeMarkdown("details.md"),
+                                               style = "default"))
+                  )
+        ),
+        tabPanel("Table",
+                 br(),
+                 tableOutput("table"))
       )
     )
   )
