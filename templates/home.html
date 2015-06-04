@@ -3,21 +3,14 @@
 
 {% block content %}
 <link rel="stylesheet" href={% static "css/home.css" %}>
+<script type="text/javascript" src="{% static "third_party/d3.js" %}"></script>
+<script type="text/javascript" src="{% static "third_party/d3.tip/d3.tip.js" %}"></script>
 
-<!--
-<div class="row">
-    <div class="col-md-5">
-      <div class=""><img class="about-image" src="{% static 'images/logo_original.jpg' %}"></div>
-    </div>
-	
-    <div class="about"><b>Wordbank:</b> An open database of children's vocabulary growth</div>    
-</div>
--->
 
 <div class="jumbotron">
 <div class="row">
-    <div class="col-md-3 col-md-offset-1">
-      <div class=""><img class="about-image" src="{% static 'images/logo_bg.png' %}"></div>
+    <div class="col-md-2">
+      <div class=""><img class="about-image" src="{% static 'images/walrus.png' %}"></div>
     </div>
   <h1>Wordbank</h1>
   <p>An open database of children's vocabulary development</p>
@@ -25,44 +18,82 @@
 </div>
 </div>
 
-<div class="row">
-    <div class="col-xs-6 col-md-4 sub-topic">
-        <a href="/about" class="btn btn-primary btn-lg sub-topic-button"><span class="glyphicon glyphicon-user"></span> About</a>
-        <div class="sub-topic-description">
-            Who we are and what we do.
-        </div>
+
+<div class="col-md-6">
+
+  <div class="row">
+
+  <div class="col-md-6">
+    <a href="/reports?name=vocab_norms">
+    <div class="thumbnail">
+      <img src="{% static 'images/sample_plots/norms.png' %}">
+      <div class="caption">
+        <h3>Vocabulary Norms</h3>
+        <p>Explore vocabulary size growth curves for various languages and demographic groups.</p>
+      </div>
     </div>
-  
-    <div class="col-xs-6 col-md-4 sub-topic">
-    	<a href="/reports" class="btn btn-primary btn-lg sub-topic-button"><span class="glyphicon glyphicon-folder-close"></span> Analysis</a>
-	<div class="sub-topic-description">
-      	    Interact with analyses of vocabulary growth (and more!).
-	</div>
+    </a>
+ </div>
+ 
+  <div class="col-md-6">
+    <a href="/reports?name=item_trajectories">
+    <div class="thumbnail">
+      <img src="{% static 'images/sample_plots/items.png' %}" alt="...">
+      <div class="caption">
+        <h3>Item Trajectories</h3>
+        <p>Explore trajectories of individual words, word categories, and grammar items.</p>
+      </div>
     </div>
-  
-    <div class="col-xs-6 col-md-4 sub-topic">
-        <a href="/stats" class="btn btn-primary btn-lg sub-topic-button"><span class="glyphicon glyphicon-stats"></span> Statistics</a>
-        <div class="sub-topic-description">
-            Explore statistics of the database.
-        </div>
+    </a>
+  </div>
+
+  </div>
+
+  <div class="row">
+
+  <div class="col-md-4">
+    <a href="/reports?name=admin_data">
+    <div class="thumbnail">
+      <div class="caption">
+        <h4>Admin Data</h4>
+        <p>Download per-child vocabulary data.</p>
+      </div>
     </div>
+    </a>
+ </div>
+ 
+  <div class="col-md-4">
+    <a href="/reports?name=item_data">
+    <div class="thumbnail">
+      <div class="caption">
+        <h4>Item Data</h4>
+        <p>Download per-item acquisition data.</p>
+      </div>
+    </div>
+    </a>
+  </div>
+
+  <div class="col-md-4">
+    <a href="/reports">
+    <div class="thumbnail">
+      <div class="caption">
+        <h4>More Analyses</h4>
+        <p>Ongoing research using Wordbank.</p>
+      </div>
+    </div>
+    </a>
+  </div>
+
+  </div>
+
+</div>
+
+<div class="col-md-6 center">
+    <div class="lead langLead">Wordbank has over 40,000 CDI administrations,<br> across 14 languages and 23 instruments:</div>
+    <div id="langStatsChart" align="center"></div>
 </div>
 
 
-<div class="row">
-    <div class="col-xs-6 sub-topic" style="margin-top:100px">
-        <a href="/blog" class="btn btn-primary btn-lg sub-topic-button"><span class="glyphicon glyphicon-align-left"></span> Blog</a>
-        <div class="sub-topic-description">
-            Read about the latest developments.
-        </div>
-    </div>
-    <div class="col-xs-6 sub-topic"  style="margin-top:100px">
-        <a href="contributors" class="btn btn-primary btn-lg sub-topic-button"><span class="glyphicon glyphicon-cloud-upload"></span> Contributors</a>
-        <div class="sub-topic-description">
-            See the list of data contributors.
-    </div>
-</div>
-
-
+<script type="text/javascript" src="{% static "js/home.js" %}"></script>
 
 {% endblock %}
