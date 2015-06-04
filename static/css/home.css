@@ -8,66 +8,7 @@
 
 .about-image {
   height: 150px;
-/*  width: 300px; */
-/*  margin-top: 25px; */
   float: right;
-}
-
-.sub-topic {
-  margin-top: 50px;
-}
-
-.sub-topic-description {
-  margin-left: auto ;
-  margin-right: auto ;
-  text-align: center;
-  width: 300px;
-  font-size: 18px;
-}
-
-.sub-topic-button {
-/*  padding: 5px; */
-  text-align: center;
-/*  background-color: #6baed6; */
-/*  border: 0px solid #666; */
-/*  color: #fff; */
-  width: 175px;
-/*  height: 40px; */
-  font-size: 20px;
-/*  -moz-border-radius: 15px; */
-/*  -webkit-border-radius: 15px; */
-  margin-left: auto ;
-  margin-right: auto ;
-  display: block;
-}
-
-.sub-topic-button:hover {
-/*  color: #fff; */
-/*  background-color: #6baeee; */
-}
-
-.sub-topic-search {
-  width: 220px;
-  height: 70px;
-  margin-top: -10px;
-  padding-top: 15px;
-}
-
-.sub-topic-image {
-  margin-left: auto ;
-  margin-right: auto ;
-  display: block;
-  width: 350px;
-  height: auto;
-}
-
-.figure-label {
-  font-size: 10px;
-  width: 300px;
-  text-align: center;
-  margin-left: auto ;
-  margin-right: auto ;
-  margin-bottom: 10px;
 }
 
 a:link {
