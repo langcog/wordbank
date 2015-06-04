@@ -1,7 +1,7 @@
 var diameter = 500,
     format = d3.format(",d"),
-    color = d3.scale.ordinal().range(['#d33682', '#dc322f', '#cb4b16', '#b58900', '#859900', '#2aa198', '#268bd2', '#6c71c4', '#993399']);
-
+    color = d3.scale.ordinal().range(['#268bd2', '#cb4b16', '#859900', '#993399', '#d33682', '#b58900', '#2aa198', '#6c71c4', '#dc322f']);
+    //['#d33682', '#dc322f', '#cb4b16', '#b58900', '#859900', '#2aa198', '#268bd2', '#6c71c4', '#993399']
 
 var bubble = d3.layout.pack()
     .sort(null)
