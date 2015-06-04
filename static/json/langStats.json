@@ -1,96 +1,61 @@
-{"name": "langStats",
-"children": 
-[  {
-    "name": "British Sign Language WG",
+{"name": "",
+"children":
+[
+  {
+    "name": "British Sign Language",
     "count": 161
   },
   {
-    "name": "Cantonese WS",
+    "name": "Cantonese",
     "count": 987
   },
   {
-    "name": "Croatian WG",
-    "count": 250
+    "name": "Croatian",
+    "count": 627
   },
   {
-    "name": "Croatian WS",
-    "count": 377
-  },
-  {
-    "name": "Danish WS",
+    "name": "Danish",
     "count": 3714
   },
   {
-    "name": "English WG",
-    "count": 2416
+    "name": "English",
+    "count": 7914
   },
   {
-    "name": "English WS",
-    "count": 5498
-  },
-  {
-    "name": "German WS",
+    "name": "German",
     "count": 1183
   },
   {
-    "name": "Hebrew WG",
-    "count": 61
+    "name": "Hebrew",
+    "count": 314
   },
   {
-    "name": "Hebrew WS",
-    "count": 253
-  },
-  {
-    "name": "Italian WS",
+    "name": "Italian",
     "count": 752
   },
   {
-    "name": "Mandarin TC",
-    "count": 652
+    "name": "Mandarin",
+    "count": 1708
   },
   {
-    "name": "Mandarin WS",
-    "count": 1056
+    "name": "Norwegian",
+    "count": 15988
   },
   {
-    "name": "Norwegian WG",
-    "count": 3021
+    "name": "Russian",
+    "count": 1805
   },
   {
-    "name": "Norwegian WS",
-    "count": 12967
+    "name": "Spanish",
+    "count": 1872
   },
   {
-    "name": "Russian WG",
-    "count": 768
+    "name": "Swedish",
+    "count": 1367
   },
   {
-    "name": "Russian WS",
-    "count": 1037
-  },
-  {
-    "name": "Spanish WG",
-    "count": 778
-  },
-  {
-    "name": "Spanish WS",
-    "count": 1094
-  },
-  {
-    "name": "Swedish WG",
-    "count": 467
-  },
-  {
-    "name": "Swedish WS",
-    "count": 900
-  },
-  {
-    "name": "Turkish WG",
-    "count": 1115
-  },
-  {
-    "name": "Turkish WS",
-    "count": 2422
+    "name": "Turkish",
+    "count": 3537
   }
 ]
 }
