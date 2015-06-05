@@ -1,7 +1,7 @@
 var height = 450,
     width = 500,
-    format = d3.format(",d"),
-    color = d3.scale.category20c();//ordinal().range(['#268bd2', '#cb4b16', '#859900', '#993399', '#d33682', '#b58900', '#2aa198', '#6c71c4', '#dc322f']);
+    format = d3.format(",d");
+    //ordinal().range(['#268bd2', '#cb4b16', '#859900', '#993399', '#d33682', '#b58900', '#2aa198', '#6c71c4', '#dc322f']);
     //['#d33682', '#dc322f', '#cb4b16', '#b58900', '#859900', '#2aa198', '#268bd2', '#6c71c4', '#993399']
 
 sortItems = function(a, b) {
@@ -29,7 +29,9 @@ svg.call(tip);
 
 d3.json("static/json/langStats.json", function(error, root) {
 
-  console.log(classes(root));
+  var valueSort = classes(root)['children'].sort(function(a, b) {return (b.value > a.value) ? 1 : ((a.value > b.value) ? -1 : 0);});
+  var color = d3.scale.category20c().domain(valueSort.map(function(n) {return n.name}));
+
   var node = svg.selectAll(".node")
       .data(bubble.nodes(classes(root))
       .filter(function(d) { return !d.children; }))
