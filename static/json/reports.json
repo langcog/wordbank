@@ -7,6 +7,13 @@
   "source": "shiny"
 },
 {
+  "title": "Item Data",
+  "name": "item_data",
+  "thumbnail": "static/images/sample_plots/item_data.png",
+  "type": "data",
+  "source": "shiny"
+},
+{
   "title": "Administration Data",
   "name": "admin_data",
   "thumbnail": "static/images/sample_plots/admin_data.png",
