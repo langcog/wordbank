@@ -40,8 +40,8 @@ d3.json("static/json/langStats.json", function(error, root) {
       .attr("class", "node")
       .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
 
-  node.append("title")
-      .text(function(d) { return d.name + ": " + format(d.value); });
+//  node.append("title")
+//      .text(function(d) { return d.name + ": " + format(d.value); });
 
   node.append("circle")
       .attr("r", function(d) { return d.r ; })
