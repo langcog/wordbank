@@ -35,12 +35,15 @@ shinyUI(fluidPage(
     
     mainPanel(
       width=9,
+      tags$style(type = "text/css",
+                 ".shiny-output-error { visibility: hidden; }",
+                 ".shiny-output-error:before { visibility: hidden; }"),      
       conditionalPanel(
         condition="output.loaded == 1",
-#      conditionalPanel(condition="$('html').attr('class') == 'shiny-busy'",
-#                       fluidRow(column(12, tags$h4("Please wait..."), align="center")),
-#                       fluidRow(column(12, imageOutput("loading"), align="center"))
-#      ),
+#     conditionalPanel(condition="$('html').attr('class') == 'shiny-busy'",
+#                      fluidRow(column(12, tags$h4("Please wait..."), align="center")),
+#                      fluidRow(column(12, imageOutput("loading"), align="center"))
+#     ),
 #     conditionalPanel(condition="$('html').attr('class') != 'shiny-busy'",
                        DT::dataTableOutput('table')
 #      )
