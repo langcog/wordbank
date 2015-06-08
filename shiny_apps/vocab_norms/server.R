@@ -11,6 +11,7 @@ source("../app_themes.R")
 source("../palette.R")
 source("../data_loading.R")
 source("predictQR_fixed.R")
+font = "Open Sans"
 
 ## DEBUGGING
 input <- list(language = "English", form = "WS", measure = "production",
