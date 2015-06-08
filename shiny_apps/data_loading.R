@@ -20,7 +20,7 @@ connect.to.wordbank <- function(mode) {
 }
 
 
-# Takes a connection to a MySQL database created with src_mysql
+# Takes a connection to the Wordbank MySQL database created with src_mysql
 # Pulls all of the common tables
 # Returns a list whose names are the names of the tables and whose values
 # are tbls
@@ -41,7 +41,8 @@ get.common.tables <- function(db) {
 }
 
 
-# Takes a connection to a MySQL database created with src_mysql and a list of its common tables
+# Takes a connection to the Wordbank MySQL database created with src_mysql,
+# and a list of its common tables
 # Loads all of the instruments in the instrument table
 # Returns a data frame whose rows are individual instruments and which has a $table column
 init.instrument.tables <- function(db, common.tables) {
@@ -61,8 +62,8 @@ init.instrument.tables <- function(db, common.tables) {
 }
 
 
-# Takes a connection to a MySQL database created with src_mysql, a data frame of instruments
-# created with init.instrument.tables, and an instrument_id
+# Takes a connection to the Wordbank MySQL database created with src_mysql,
+# a data frame of instruments created with init.instrument.tables, and an instrument_id
 # Connects to that instrument's table
 # Returns instrument.tables with that instrument's table inserted
 add.instrument.table <- function(db, instrument.tables, inst_id) {
@@ -83,7 +84,8 @@ add.instrument.table <- function(db, instrument.tables, inst_id) {
 }
 
 
-# Takes a connection to a MySQL database created with src_mysql and a list of its common tables
+# Takes a connection to the Wordbank MySQL database created with src_mysql,
+# and a list of its common tables
 # Loads all of the instruments in the instrument table
 # Returns a data frame whose rows are individual instruments and 
 # whose $table column is the corresponding tbl
@@ -104,9 +106,24 @@ get.instrument.tables <- function(db, common.tables) {
 }
 
 
+# Takes a connection to the Wordbank MySQL database created with src_mysql,
+# a language (e.g. "English"), and a form (e.g. "WS")
+# Returns a tbl connection to the table for the instrument with that language and form
+get.instrument.table <- function(db, language, form) {
+  
+  table.name = paste(unlist(c("instruments",
+                              strsplit(tolower(language), " "),
+                              tolower(form))),
+                     collapse = "_")
+  
+  return(tbl(db, table.name))
+  
+}
+
+
 # Takes in a list of common tables
 # Returns a data frame in which each row is one administration and 
-# each column is a demographic variable
+# each column is a demographic or administration variable
 get.administration.data <- function(common.tables) {
   
   mom_ed <- as.data.frame(common.tables$momed) %>%
@@ -141,8 +158,9 @@ get.administration.data <- function(common.tables) {
   
 }
 
-
-# Gets by-item data from an instrument with information from the iteminfo table
+# Takes in a list of common tables
+# Returns a data frame in which each row is one item and 
+# each column is a item information variable
 get.item.data <- function(common.tables) {
   
   instruments <- as.data.frame(common.tables$instrument) %>%
@@ -168,7 +186,9 @@ get.item.data <- function(common.tables) {
 
 # Takes an instrument table and a list of columns
 # Selects those columns from the instrument table and gathers them into 
-# administration x item form
+# administration-by-item form
+# Returns a data frame with the columns data_id, item.id, value
+# where value is the observation for administration data_id on item item.id
 get.instrument.data <- function(instrument.table, columns) {
   
   instrument.data <- instrument.table %>%
