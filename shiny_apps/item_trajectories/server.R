@@ -159,7 +159,7 @@ shinyServer(function(input, output, session) {
     inst <- filter(instrument.tables, language == input.language(), form %in% input.forms())$instrument_id
     for (inst_id in inst) {
       if (length(instrument.tables[instrument.tables$instrument_id == inst_id, ]$table[[1]]) == 0) {
-        instrument.tables <- add.instrument.table(wordbank, instrument.tables, inst_id)
+        instrument.tables <<- add.instrument.table(wordbank, instrument.tables, inst_id)
       }
     }
     filter(instrument.tables, language == input.language(), form %in% input.forms())
