@@ -6,14 +6,21 @@
 <script type="text/javascript" src="{% static "third_party/d3.js" %}"></script>
 <script type="text/javascript" src="{% static "third_party/d3.tip/d3.tip.js" %}"></script>
 
-<div class="jumbotron" style="padding-bottom: 25px; padding-top: 25px;">
+<div class="jumbotron less-pad">
 <div class="row">
     <div class="col-md-2">
-      <img class="about-image" src="{% static 'images/walrus.png' %}">
+      <img class="left-image" src="{% static 'images/walrus.png' %}">
     </div>
-  <h1>Wordbank</h1>
-  <p>An open database of children's vocabulary development</p>
-<!--  <p><a class="btn btn-primary btn-lg">Learn more</a></p> -->
+    <div class="col-md-8 center">
+      <h1>Wordbank</h1>
+      <p>An open database of children's vocabulary development</p>
+    </div>
+    <div class="col-md-2 right">
+      <img style="max-height: 60px;" src="{% static 'images/mcdi.png' %}">
+      <a href="http://langcog.stanford.edu/" target="_blank">
+        <img style="max-height: 100px;" src="{% static 'images/lab_logo.png' %}">
+      </a>
+    </div>
 </div>
 </div>
 
