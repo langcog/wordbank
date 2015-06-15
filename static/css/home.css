@@ -1,3 +1,8 @@
+.less-pad {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
 .about {
   font-size: 28px;
   font-family: "Lucida Grande";
@@ -6,13 +11,14 @@
   margin-bottom: 50px;
 }
 
-.about-image {
-  height: 150px;
-  float: right;
+.left-image {
+  max-height: 160px;
+/*  max-width: 100%; */
+  padding: 0px;
 }
 
 a:link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .d3-tip {
@@ -26,6 +32,10 @@ a:link {
 
 .center {
   text-align: center;
+}
+
+.right {
+  text-align: right;
 }
 
 .langLead {
