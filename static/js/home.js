@@ -1,4 +1,4 @@
-var height = 450,
+var height = 475,
     width = 500,
     format = d3.format(",d");
     //ordinal().range(['#268bd2', '#cb4b16', '#859900', '#993399', '#d33682', '#b58900', '#2aa198', '#6c71c4', '#dc322f']);
@@ -16,6 +16,7 @@ var bubble = d3.layout.pack()
 var svg = d3.select("#langStatsChart").append("svg")
     .attr("width", width)
     .attr("height", height)
+    .style("margin-top", "-25px")
     .attr("class", "bubble");
 
 var tip = d3.tip()
