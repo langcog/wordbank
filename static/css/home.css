@@ -3,18 +3,8 @@
   padding-top: 20px;
 }
 
-.about {
-  font-size: 28px;
-  font-family: "Lucida Grande";
-  text-align: left;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
 .left-image {
   max-height: 160px;
-/*  max-width: 100%; */
-  padding: 0px;
 }
 
 a:link {
@@ -30,14 +20,6 @@ a:link {
   border-radius: 2px;
 }
 
-.center {
-  text-align: center;
-}
-
-.right {
-  text-align: right;
-}
-
-.langLead {
+.lang-lead {
   margin-bottom: 0px;
 }
