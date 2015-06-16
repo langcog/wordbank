@@ -2,7 +2,67 @@
 {% load static %}
 
 {% block content %}
-<iframe style="border:none; width:1000px; height:1000px" id="report"  src="http://wordbank-blog.blogspot.com"></iframe>
+<link rel="stylesheet" href={% static "css/blog.css" %}>
 
+<div class="row">
+
+	<div class="col-md-6 col-md-offset-1">
+		{% for entry in entries %}
+		<div class="row" style="margin-top: 20px; margin-bottom: 10px;">
+			<span class="label label-default">{{ entry.time }}</span>
+				<a href={{ entry.author_link }} target="_blank">
+					<span class="label label-info">{{ entry.author }}</span>
+				</a>
+		</div>
+		<div class="row">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">{{ entry.title }}</h3>
+				</div>
+				<div class="panel-body">{{ entry.contents }}</div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+
+	<div class="col-md-3 col-md-offset-1 center">
+		<img src="{% static 'images/walrus.png' %}" width="90%">
+	</div>
+
+	<div class="col-md-3 col-md-offset-1">
+
+		<div class="panel panel-info" style="margin-top: 20px;">
+		  <div class="panel-heading">Upcoming Wordbank events</div>
+		  <ul class="list-group">
+		    <li class="list-group-item">
+		    	Poster at CogSci 2015<br>
+		    	July 25, 2015 <br>
+		    	<a href="http://langcog.stanford.edu/papers/BYMF_cogsci2015.pdf" target="_blank">
+		    	Developmental changes in the relationship between grammar and the lexicon
+		    	</a>
+		    </li>
+		  </ul>
+		</div>
+
+		<div class="panel panel-info">
+		<div class="panel-heading">Related resources</div>
+		  <div class="list-group">
+
+		  <a href="http://metalab.stanford.edu/" target="_blank" class="list-group-item">
+		    <h4 class="list-group-item-heading">MetaLab</h4>
+		    <p class="list-group-item-text list-group-item-subtext">tools for power analysis and experimental planning in language acquisition research</p>
+		  </a>
+		  <a href="http://childes.psy.cmu.edu/" target="_blank" class="list-group-item">
+		    <h4 class="list-group-item-heading">CHILDES</h4>
+		    <p class="list-group-item-text list-group-item-subtext">corpus of child and child-directed language</p>
+		  </a>
+		  </div>
+		</div>
+
+	</div>
+
+
+</div>
+  
 {% endblock %}
 

@@ -36,3 +36,15 @@
 .navbar-default .navbar-nav>li>a:hover {
   color: #fff;
 }
+
+iframe {
+  border: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
