@@ -56,7 +56,10 @@ class ImportHelper:
                 value = self.value_typing(value).lower()
                 if self.splitcol and field_type == 'word':
                     value += column[-1]
-                return self.value_mapping[field_type][value]
+                try:
+                    return self.value_mapping[field_type][value]
+                except:
+                    raise KeyError("Value mapping doesn't have entry for field type %s and value %s" % (field_type, value))
 
     def resolve_values(self, value0, value1):
         if value0 == 'produces' or value1 == 'produces':
