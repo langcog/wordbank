@@ -348,5 +348,15 @@
         "splitcol": false,
         "contributor": "Ping Li, Pennsylvania State University",
         "citation": "Hao, M., Shu, H., Xing, A., & Li, P. (2008).  Early vocabulary inventory for Mandarin Chinese.  Behavior Research Methods, 40, 728-733."
+    },
+    {
+        "name": "Frank",
+        "dataset": "xsface",
+        "instrument_language": "English",
+        "instrument_form": "WG",
+        "file": "raw_data/English_WG/EnglishWG_Frank_xsface.xlsx",
+        "splitcol": false,
+        "contributor": "Michael C. Frank, Stanford University",
+        "citation": ""
     }
 ]
