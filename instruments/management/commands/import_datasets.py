@@ -23,10 +23,14 @@ class Command(BaseCommand):
             input_datasets = filter(lambda dataset: dataset['instrument_language'] == input_language and
                                                     dataset['instrument_form'] == input_form,
                                     datasets)
+            if not input_datasets:
+                raise IOError("the specified language and form don't correspond to any datasets")
         elif options['file']:
             input_file = options['file']
             input_datasets = filter(lambda dataset: dataset['file'] == input_file,
                                     datasets)
+            if not input_datasets:
+                raise IOError("the specified file doesn't correspond to any datasets")
         else:
             input_datasets = datasets
 

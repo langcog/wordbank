@@ -124,8 +124,9 @@ Dataset
 - Add this dataset to the source table by running
         ./manage.py populate_source
 
-- Import the dataset by running
+- Import the dataset by running one of
         ./manage.py import_datasets -l Wugese -f WS
+        ./manage.py import_datasets --file raw_data/Wugese_WS/WugeseWS_Dax.xlsx
 
 - Cache vocabulary sizes for the dataset's instrument by running
         ./manage.py populate_vocabulary_size -l Wugese -f WS
