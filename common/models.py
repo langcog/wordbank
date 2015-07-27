@@ -76,3 +76,10 @@ class Administration(models.Model):
     data_age = models.IntegerField(null=True, blank=True)
     production = models.IntegerField(null=True)
     comprehension = models.IntegerField(null=True)
+
+
+class CategorySize(models.Model):
+    data_id = models.IntegerField()
+    category = models.ForeignKey(Category)
+    production = models.IntegerField(null=True)
+    comprehension = models.IntegerField(null=True)
