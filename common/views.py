@@ -80,8 +80,4 @@ class Blog(View):
                     'author_link': entry.author[0].uri.text
                    } for entry in feed.entry]
         return render(request, 'blog.html', {'entries': entries})
-
-class Tutorial(View):
-
-    def get(self, request):
-        return render(request, 'tutorial.html', {})
+        
