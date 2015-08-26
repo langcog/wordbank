@@ -19,7 +19,9 @@ shinyUI(fluidPage(
                    c(None='',
                      'Double Quote'='"',
                      'Single Quote'="'"),
-                   '"')
+                   '"'), 
+      tags$hr(),
+      downloadButton('downloadData', 'Download')
     ),
     mainPanel(
       tableOutput('contents')
