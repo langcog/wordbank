@@ -10,6 +10,8 @@ class Command(BaseCommand):
 
         categories = list(csv.reader(open('raw_data/categories.csv', 'rU')))
 
-        for name, lexical_category in categories:
-            if not Category.objects.filter(name = name, lexical_category = lexical_category).exists():
-                Category.objects.create(name = name, lexical_category = lexical_category)
+        for name, lexical_category, lexical_class in categories:
+            if not Category.objects.filter(name = name,
+                                           lexical_category = lexical_category,
+                                           lexical_class = lexical_class).exists():
+                Category.objects.create(name = name, lexical_category = lexical_category, lexical_class = lexical_class)
