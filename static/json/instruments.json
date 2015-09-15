@@ -66,7 +66,7 @@
     {
         "language": "Hebrew",
         "form": "WG",
-        "file": "raw_data/Hebrew_WG/[Hebrew_WG].xlsx",
+        "file": "raw_data/Hebrew_WG/[Hebrew_WG].csv",
         "age_min": 11,
         "age_max": 25,
         "has_grammar": false
@@ -106,7 +106,7 @@
     {
         "language": "Norwegian",
         "form": "WG",
-        "file": "raw_data/Norwegian_WG/[Norwegian_WG].xlsx",
+        "file": "raw_data/Norwegian_WG/[Norwegian_WG].csv",
         "age_min": 8,
         "age_max": 20,
         "has_grammar": false
@@ -182,5 +182,5 @@
         "age_min": 16,
         "age_max": 36,
         "has_grammar": false
-    }    
+    }
 ]
