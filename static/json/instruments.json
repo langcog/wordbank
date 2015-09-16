@@ -81,6 +81,14 @@
     },
     {
         "language": "Italian",
+        "form": "WG",
+        "file": "raw_data/Italian_WG/[Italian_WG].csv",
+        "age_min": 7,
+        "age_max": 24,
+        "has_grammar": false
+    },
+    {
+        "language": "Italian",
         "form": "WS",
         "file": "raw_data/Italian_WS/[Italian_WS].csv",
         "age_min": 18,
