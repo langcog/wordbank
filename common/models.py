@@ -52,7 +52,7 @@ class MomEd(models.Model):
 
 class Child(models.Model):
 
-    study_id = models.CharField(max_length=20)
+    study_id = models.CharField(max_length=20, null=True)
 
     birth_order = models.IntegerField(null=True, blank=True)
     date_of_birth = models.DateField(null=True, blank=True)
