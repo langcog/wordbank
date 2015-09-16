@@ -21,3 +21,4 @@ from schemas.Cantonese_WS import *
 from schemas.Mandarin_WS import *
 from schemas.British_Sign_Language_WG import *
 from schemas.Mandarin_TC import *
+from schemas.Italian_WG import *

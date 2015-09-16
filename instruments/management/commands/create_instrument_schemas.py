@@ -27,7 +27,6 @@ class Command(BaseCommand):
         for instrument in input_instruments:
 
             instr = '_'.join(instrument['language'].split() + [instrument['form']])
-            models_file.write('from schemas.%s import *\n' % (instr))
             instrument_file = open('instruments/schemas/%s.py' % (instr), 'w')
 
             instrument_file.write('from django.db import models\n')
@@ -41,9 +40,9 @@ class Command(BaseCommand):
                 nrows = sheet.nrows
                 get_row = lambda row: list(sheet.row_values(row))
             elif ftype == 'csv':
-                contents = [field for field in [line.split(',')
-                                                for line in codecs.open(instrument['file'],
-                                                                        encoding='utf-8').read().split('\n')]]
+                unquoted = lambda string: string[1:-1] if string and ((string[0] == '"' and string[-1] == '"') or (string[0] == "'" and string[-1] == "'")) else string
+                lines = [line.split(',') for line in codecs.open(instrument['file'], encoding='utf-8').read().split('\n')]
+                contents = [[unquoted(field) for field in line] for line in lines if line]
                 col_names = contents[0]
                 nrows = len(contents)
                 get_row = lambda row: contents[row]
@@ -70,5 +69,6 @@ class Command(BaseCommand):
                     )
 
             instrument_file.close()
+            models_file.write('from schemas.%s import *\n' % (instr))
 
         models_file.close()

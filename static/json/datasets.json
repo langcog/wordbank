@@ -358,5 +358,15 @@
         "splitcol": false,
         "contributor": "Michael C. Frank, Stanford University",
         "citation": ""
+    },
+    {
+        "name": "Caselli",
+        "dataset": "",
+        "instrument_language": "Italian",
+        "instrument_form": "WG",
+        "file": "raw_data/Italian_WG/ItalianWG_Caselli.csv",
+        "splitcol": true,
+        "contributor": "Christina Caselli, Institute of Cognitive Sciences and Technologies",
+        "citation": "Caselli, M. C., Rinaldi, P., Stefanini, S., & Volterra, V. (2012). Early action and gesture 'vocabulary' and its relation with word comprehension and production. Child Development, 83(2), 526-542."
     }
 ]
