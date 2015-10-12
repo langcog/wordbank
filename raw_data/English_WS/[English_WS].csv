@@ -657,18 +657,18 @@
 "item_656","be","word","helping_verbs","produces","be","be",,"be"
 "item_657","can.auxiliary","word","helping_verbs","produces","can (auxiliary)","can (auxiliary)",,"can (auxiliary)"
 "item_658","could","word","helping_verbs","produces","could","could",,"could"
-"item_659","did","word","helping_verbs","produces","did/did ya","did/did ya",,"did/did ya"
+"item_659","did","word","helping_verbs","produces","did/did ya","did/did ya",,"did"
 "item_660","do","word","helping_verbs","produces","do","do",,"do"
 "item_661","does","word","helping_verbs","produces","does","does",,"does"
 "item_662","dont","word","helping_verbs","produces","don't","don't",,"don't"
-"item_663","gonna","word","helping_verbs","produces","gonna/going to","gonna/going to",,"gonna/going to"
-"item_664","gotta","word","helping_verbs","produces","gotta/got to","gotta/got to",,"gotta/got to"
-"item_665","hafta","word","helping_verbs","produces","hafta/have to","hafta/have to",,"hafta/have to"
+"item_663","gonna","word","helping_verbs","produces","gonna/going to","gonna/going to",,"gonna"
+"item_664","gotta","word","helping_verbs","produces","gotta/got to","gotta/got to",,"gotta"
+"item_665","hafta","word","helping_verbs","produces","hafta/have to","hafta/have to",,"hafta"
 "item_666","is","word","helping_verbs","produces","is","is",,"is"
-"item_667","lemme","word","helping_verbs","produces","lemme/let me","lemme/let me",,"lemme/let me"
-"item_668","need","word","helping_verbs","produces","need/need to","need/need to",,"need/need to"
-"item_669","try","word","helping_verbs","produces","try/try to","try/try to",,"try/try to"
-"item_670","wanna","word","helping_verbs","produces","wanna/want to","wanna/want to",,"wanna/want to"
+"item_667","lemme","word","helping_verbs","produces","lemme/let me","lemme/let me",,"lemme"
+"item_668","need","word","helping_verbs","produces","need/need to","need/need to",,"need"
+"item_669","try","word","helping_verbs","produces","try/try to","try/try to",,"try"
+"item_670","wanna","word","helping_verbs","produces","wanna/want to","wanna/want to",,"wanna"
 "item_671","was","word","helping_verbs","produces","was","was",,"was"
 "item_672","were","word","helping_verbs","produces","were","were",,"were"
 "item_673","will","word","helping_verbs","produces","will","will",,"will"
@@ -775,7 +775,7 @@
 "item_774","complx14","complexity","complexity","simple; complex","that my truck / that's my truck","that my truck / that's my truck","syntax",
 "item_775","complx15","complexity","complexity","simple; complex","baby crying / baby is crying","baby crying / baby is crying","syntax",
 "item_776","complx16","complexity","complexity","simple; complex","you fix it / can you fix it","you fix it / can you fix it","syntax",
-"item_777","complx17","complexity","complexity","simple; complex","read me story, Mommy / read me a story, Mommy","read me story, Mommy / read me a story, Mommy","syntax",
+"item_777","complx17","complexity","complexity","simple; complex","read me story Mommy / read me a story Mommy","read me story Mommy / read me a story Mommy","syntax",
 "item_778","complx18","complexity","complexity","simple; complex","no wash dolly / don't wash dolly","no wash dolly / don't wash dolly","syntax",
 "item_779","complx19","complexity","complexity","simple; complex","want more juice / want juice in there","want more juice / want juice in there","syntax",
 "item_780","complx20","complexity","complexity","simple; complex","there a kitty / there's a kitty","there a kitty / there's a kitty","syntax",
