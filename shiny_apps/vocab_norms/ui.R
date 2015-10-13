@@ -13,7 +13,6 @@ shinyUI(fluidPage(
   bsCollapse(id = "doc", open = "title",
              bsCollapsePanel(title = h3("Vocabulary Norms"),
                              includeMarkdown("docs/description.md"),
-                             #a("See below more details.", href = "#details"),
                              value = "title",
                              style = "default")),
 
