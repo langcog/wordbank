@@ -12,3 +12,5 @@ src/*
 .idea
 *_cache/
 *_files/
+.Rproj.user
+*.Rproj
