@@ -27,8 +27,7 @@
             <div class="navbar-collapse collapse">
                 <a class="navbar-brand" href="/">Wordbank</a>
                 <ul class="nav navbar-nav navbar-right">
-<!--                    <li {% if request.path == '/about' %} class="active"{% endif %}><a href="/about">About</a></li> -->
-                    <li {% if request.path == '/reports' %} class="active"{% endif %}><a href="/reports">Analysis</a></li>
+                    <li {% if request.path == '/analyses' %} class="active"{% endif %}><a href="/analyses">Analyses</a></li>
                     <li {% if request.path == '/stats' %} class="active"{% endif %}><a href="/stats">Statistics</a></li>
                     <li {% if request.path == '/contributors' %} class="active"{% endif %}><a href="/contributors">Contributors</a></li>
                     <li {% if request.path == '/blog' %} class="active"{% endif %}><a href="/blog">Blog</a></li>
@@ -57,17 +56,6 @@
   </div>
   {% endblock %}
 
-  <script>
-    // $.getJSON("static/json/reports.json", function(data) {
-    //   var reports_ul = $('#reports');
-    //   for (var i in data) {
-    //     var app = data[i];
-    //     console.log(reports_ul)
-    //     var li = $('<li>').appendTo(reports_ul);
-    //     var list = $('<a>').attr('href', '/reports?id=' + app['app_directory']).text(app['app_name']).appendTo(li);
-    //   }
-    // }).error(function(error){console.log(error);}).fail(function () { console.log(arguments); });
-  </script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

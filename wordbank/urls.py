@@ -11,7 +11,7 @@ urlpatterns = patterns('',
     url(r'^$', Home.as_view(), name='home'),
     url(r'about', About.as_view(), name='about'),
     url(r'stats', Stats.as_view(), name='stats'),
-    url(r'reports', Reports.as_view(), name='reports'),
+    url(r'analyses', Analyses.as_view(), name='analyses'),
     url(r'contributors', Contributors.as_view(), name='contributors'),
     url(r'blog', Blog.as_view(), name='blog'),
 
