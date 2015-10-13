@@ -52,15 +52,15 @@ class Contributors(View):
 
         return render(request, 'contributors.html', {'columns': columns})
 
-class Reports(View):
+class Analyses(View):
 
     def get(self, request):
         if 'name' in request.GET:
             name = request.GET['name']
             link = 'http://%s/%s' % (settings.SHINY_SERVER_IP, name)
-            return render(request, 'reports.html', { 'source': link })
+            return render(request, 'analyses.html', { 'source': link })
         else:
-            return render(request, 'reports_landing.html', {})
+            return render(request, 'analyses_landing.html', {})
 
 class Blog(View):
 
@@ -80,4 +80,3 @@ class Blog(View):
                     'author_link': entry.author[0].uri.text
                    } for entry in feed.entry]
         return render(request, 'blog.html', {'entries': entries})
-        
