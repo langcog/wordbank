@@ -4,12 +4,8 @@
 {% block content %}
 
 <link rel="stylesheet" href={% static "third_party/dc.css" %}>
-<link rel="stylesheet" href={% static "css/reports.css" %}>
+<link rel="stylesheet" href={% static "css/analyses.css" %}>
 
-<!--
-<h3 align="center">Reports</h3>
-<br>
--->
 
 <div class="alert alert-dismissible alert-warning" align="center">
   <p>Wordbank is under early development, and we make no guarantees about the accuracy of its data. Use at your own risk.</p>
@@ -41,20 +37,20 @@
 
 
 <script>
-    $.getJSON("static/json/reports.json", function(data) {
+    $.getJSON("static/json/analyses.json", function(data) {
               //var apps = $('#apps');
               for (var i in data) {
                 var app = data[i];
                 var panel = $('#' + app['type']);
                 var col = $('<div>').attr('class', "col-md-3").attr('align', "center").prependTo(panel);
                 if (app['source'] == 'shiny') {
-                  var rep = $('<p>').attr('class', "reportName").appendTo(col);
-                  var link = $('<a>').attr('href', '/reports?name=' + app['name']).text(app['title']).appendTo(rep);
+                  var rep = $('<p>').attr('class', "analysisName").appendTo(col);
+                  var link = $('<a>').attr('href', '/analyses?name=' + app['name']).text(app['title']).appendTo(rep);
                   var brk = $('<br>').appendTo(col);
                   var img = $('<img>').attr('class', 'img-thumbnail').attr('src', app['thumbnail']).appendTo(link);
                 } else if (app['source'] == 'html') {
                   var well = $('<div>').attr('class', 'well well-sm').appendTo(col)
-                  var rep = $('<p>').attr('class', "reportName").appendTo(well);
+                  var rep = $('<p>').attr('class', "analysisName").appendTo(well);
                   var link = $('<a>').attr('href', app['link']).attr('target', '_blank').text(app['title']).appendTo(rep);
                 }
               };
