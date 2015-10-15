@@ -72,7 +72,7 @@
   "thumbnail": "static/images/sample_plots/ses_effects.png",
   "type": "reports",
   "source": "html",
-  "link": ""
+  "link": "http://mikabr.github.io/demo-vocab/momed.html"
 },
 {
   "title": "Gender Differences in Vocabulary",
@@ -80,6 +80,6 @@
   "thumbnail": "static/images/sample_plots/sex_differences.png",
   "type": "reports",
   "source": "html",
-  "link": "http://langcog.github.io/wordbank-paper/gender.html"
+  "link": "http://mikabr.github.io/demo-vocab/gender.html"
 }
 ]
