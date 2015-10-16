@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="lead">
+  <p>List of publications that use Wordbank data</p>
+</div>
+
+<p>If you have a publication to add to this list, please let us know at <a href="mailto:wordbank-contact@stanford.edu">wordbank-contact@stanford.edu</a>.</p>
+<br>
+
+<div class="col-md-6">
+  {% for pub in publications %}
+  <div class="panel panel-primary">
+    <div class="panel-body">
+      {{ pub.authors }} ({{ pub.date }}). <b>{{ pub.title }}</b>. {{ pub.journal }}. <a href="{{ pub.link }}" target="_blank">[pdf]</a>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}

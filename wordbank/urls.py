@@ -13,6 +13,7 @@ urlpatterns = patterns('',
     url(r'stats', Stats.as_view(), name='stats'),
     url(r'analyses', Analyses.as_view(), name='analyses'),
     url(r'contributors', Contributors.as_view(), name='contributors'),
+    url(r'publications', Publications.as_view(), name='publications'),
     url(r'blog', Blog.as_view(), name='blog'),
 
     # Uncomment the admin/doc line below to enable admin documentation:
