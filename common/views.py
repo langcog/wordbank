@@ -2,15 +2,15 @@ from django.shortcuts import render, render_to_response
 from django.views.generic import View
 from django.db.models import Count
 from django.utils.safestring import mark_safe
+from django.conf import settings
 from django.contrib.staticfiles.templatetags.staticfiles import static
-import json
 
 from common.models import *
-from wordbank import settings
 from collections import defaultdict
-
+import json
 import gdata.blogger.client
 import rfc3339
+import urllib2
 
 class Home(View):
 
@@ -36,7 +36,7 @@ class About(View):
 class Publications(View):
 
     def get(self, request):
-        publications = json.loads(open(static('json/publications.json')).read())
+        publications = json.loads(urllib2.urlopen(static('json/publications.json')).read())
         return render(request, 'publications.html', {'publications': publications})
 
 
