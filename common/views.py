@@ -32,6 +32,13 @@ class About(View):
         return render(request, 'about.html', {})
 
 
+class Publications(View):
+
+    def get(self, request):
+        publications = json.loads(open('static/json/publications.json').read())
+        return render(request, 'publications.html', {'publications': publications})
+
+
 class Contributors(View):
 
     def get(self, request):
