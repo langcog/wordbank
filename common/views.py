@@ -2,6 +2,7 @@ from django.shortcuts import render, render_to_response
 from django.views.generic import View
 from django.db.models import Count
 from django.utils.safestring import mark_safe
+from django.contrib.staticfiles.templatetags.staticfiles import static
 import json
 
 from common.models import *
@@ -35,7 +36,7 @@ class About(View):
 class Publications(View):
 
     def get(self, request):
-        publications = json.loads(open('static/json/publications.json').read())
+        publications = json.loads(open(static('json/publications.json')).read())
         return render(request, 'publications.html', {'publications': publications})
 
 
