@@ -2,6 +2,7 @@ from django.shortcuts import render, render_to_response
 from django.views.generic import View
 from django.db.models import Count
 from django.utils.safestring import mark_safe
+import json
 
 from common.models import *
 from wordbank import settings
@@ -13,7 +14,16 @@ import rfc3339
 class Home(View):
 
     def get(self, request):
-        return render(request, 'home.html', {})
+        instruments = Instrument.objects.annotate(n = Count('administration'))
+        num_instruments = len(instruments)
+        lang_stats = defaultdict(int)
+        for inst in instruments:
+            lang_stats[inst.language] += inst.n
+        num_languages = len(lang_stats)
+        num_admins = sum(lang_stats.values())
+        data = {'num_admins': num_admins, 'num_languages': num_languages, 'num_instruments': num_instruments, 'lang_stats': lang_stats}
+        js_lang_stats = {"name": "", "children": [{"name": language, "count": n} for language, n in lang_stats.iteritems()]}
+        return render(request, 'home.html', {'data': data, 'lang_stats': json.dumps(js_lang_stats)})
 
 
 class About(View):
