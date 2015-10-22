@@ -33,7 +33,7 @@ class ItemMap(models.Model):
 class ItemInfo(models.Model):
     instrument = models.ForeignKey(Instrument)
     item = models.CharField(max_length=50)
-    item_id = models.CharField(max_length=20)
+    item_id = models.CharField(max_length=20, db_index=True)
     type = models.CharField(max_length=30)
     category = models.ForeignKey(Category, null=True)
     map = models.ForeignKey(ItemMap, null=True, blank=True)
@@ -72,7 +72,7 @@ class Administration(models.Model):
     instrument = models.ForeignKey(Instrument)
     source = models.ForeignKey(Source, null=True, blank=True)
     date_of_test = models.DateField(null=True, blank=True)
-    data_id = models.IntegerField()
+    data_id = models.IntegerField(db_index=True)
     age = models.IntegerField()
     data_age = models.IntegerField(null=True, blank=True)
     production = models.IntegerField(null=True)
