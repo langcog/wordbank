@@ -2,20 +2,20 @@ library(shiny)
 library(shinythemes)
 
 shinyUI(fluidPage(
-  
+
   theme = shinytheme("spacelab"),
-  
+
   titlePanel("Administration Data"),
   br(),
-  
+
   conditionalPanel(
-    condition="output.loaded != 1",
+    condition = "output.loaded != 1",
     h4("Loading...")
   ),
-  
+
   conditionalPanel(
-    condition="output.loaded == 1",
-    
+    condition = "output.loaded == 1",
+
     fluidRow(
       column(3, uiOutput("language_selector")),
       column(3, uiOutput("form_selector")),
@@ -25,11 +25,12 @@ shinyUI(fluidPage(
       column(3, uiOutput("sex_selector")),
       column(3, uiOutput("momed_selector")),
       br(),
-      column(5, downloadButton('downloadData', 'Download Data'), align="right")
+      column(5, downloadButton("download_data", "Download Data"),
+             align = "right")
     ),
-    
+
     fluidRow(
-      column(11, dataTableOutput(outputId="table"))
+      column(11, dataTableOutput(outputId = "table"))
     )
   )
 ))

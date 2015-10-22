@@ -12,8 +12,8 @@ font <- theme_mikabr()$text$family
 Sys.setlocale(locale = "en_US.UTF-8")
 mode <- "local"
 
-input <- list(language = "English", form = "WG WS", measure = "produces",
-              words = c("dog", "cat"))
+# input <- list(language = "Norwegian", form = "WS", measure = "produces",
+#               words = c("hund"))
 
 list_items_by_definition <- function(item_data) {
   items <- item_data$item_id
@@ -51,9 +51,9 @@ trajectory_data_fun <- function(admins, fun_instrument, fun_measure,
       filter(measure == fun_measure) %>%
       filter(!is.na(age)) %>%
       group_by(instrument_id, num_item_id, age) %>%
-      summarise(prop = mean(value, na.rm = TRUE)) %>%
+      summarise(prop = sum(value, na.rm = TRUE) / length(value)) %>%
       group_by(instrument_id) %>%
-      mutate(item_id = paste("item_", num_item_id, sep = "")) %>%
+      mutate(item_id = sprintf("item_%s", num_item_id)) %>%
       rowwise() %>%
       mutate(item = filter(
         fun_instrument,
@@ -80,63 +80,59 @@ shinyServer(function(input, output, session) {
   items <- get_item_data(mode = mode) %>%
     mutate(definition = iconv(definition, from = "utf8", to = "utf8"))
 
-  instruments <- get_common_table(src = connect_to_wordbank(mode = mode),
-                                  "instrument") %>%
-    rename(instrument_id = id) %>%
-    as.data.frame()
+  instruments <- get_instruments(mode = mode)
+  languages <- sort(unique(instruments$language))
 
   instrument_tables <- instruments %>%
     group_by(instrument_id) %>%
     do(words_by_definition = list_items_by_definition(
-      filter(items, instrument_id == .$instrument_id, type == "word")
+      filter(items, language == .$language, form == .$form, type == "word")
     ),
     words_by_id = list_items_by_id(
-      filter(items, instrument_id == .$instrument_id, type == "word")
+      filter(items, language == .$language, form == .$form, type == "word")
     )) %>%
-    left_join(instruments) %>%
-    mutate(table = NA)
+    left_join(instruments) #%>%
+  #mutate(table = NA)
 
-  languages <- sort(unique(instrument_tables$language))
-
-  start_language <- function() "English"
-  start_form <- function() "WS"
-  start_measure <- function() "produces"
+  start_language <- "English"
+  start_form <- "WS"
+  start_measure <- "produces"
 
   input_language <- reactive({
-    ifelse(is.null(input$language), start_language(), input$language)
+    ifelse(is.null(input$language), start_language, input$language)
   })
 
   input_form <- reactive({
-    ifelse(is.null(input$form), start_form(), input$form)
+    ifelse(is.null(input$form), start_form, input$form)
   })
 
   input_forms <- reactive(strsplit(input_form(), " ")[[1]])
 
   input_measure <- reactive({
-    ifelse(is.null(input$measure), start_measure(), input$measure)
+    ifelse(is.null(input$measure), start_measure, input$measure)
   })
 
   input_words <- reactive(input$words)
 
   instrument <- reactive({
-    instrument_ids <- filter(instrument_tables, language == input_language(),
-                             form %in% input_forms())$instrument_id
-    for (inst_id in instrument_ids) {
-      inst <- instrument_tables %>% filter(instrument_id == inst_id)
-      if (is.na(inst$table)) {
-        inst_table <- get_instrument_table(src = connect_to_wordbank(mode),
-                                           language = inst$language,
-                                           form = inst$form)
-        inst %<>% select(-table)
-        inst %<>%
-          group_by(instrument_id) %>%
-          do(table = inst_table) %>%
-          left_join(inst)
-        instrument_tables <- instrument_tables %>%
-          filter(instrument_id != inst_id) %>%
-          bind_rows(inst)
-      }
-    }
+    #     instrument_ids <- filter(instrument_tables, language == input_language(),
+    #                              form %in% input_forms())$instrument_id
+    #     for (inst_id in instrument_ids) {
+    #       inst <- instrument_tables %>% filter(instrument_id == inst_id)
+    #       if (is.na(inst$table)) {
+    #         inst_table <- get_instrument_table(src = connect_to_wordbank(mode),
+    #                                            language = inst$language,
+    #                                            form = inst$form)
+    #         inst %<>% select(-table)
+    #         inst %<>%
+    #           group_by(instrument_id) %>%
+    #           do(table = inst_table) %>%
+    #           left_join(inst)
+    #         instrument_tables <- instrument_tables %>%
+    #           filter(instrument_id != inst_id) %>%
+    #           bind_rows(inst)
+    #       }
+    #    }
     filter(instrument_tables, language == input_language(),
            form %in% input_forms())
   })
@@ -212,7 +208,6 @@ shinyServer(function(input, output, session) {
     if (all(c("WS", "WG") %in% form_opts)) {
       form_opts$"Both" <- "WG WS"
     }
-
     form_opts
   })
 
