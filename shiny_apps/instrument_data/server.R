@@ -1,6 +1,6 @@
 library(shiny)
 library(dplyr)
-library(magrittr)
+library(DT)
 library(wordbankr)
 mode <- "local"
 
@@ -40,12 +40,7 @@ shinyServer(function(input, output, session) {
     }
   })
 
-  #   output$data_loaded <- reactive({
-  #     print(nrow(data()))
-  #     ifelse(nrow(data()) > 0, 1, 0)
-  #   })
-
-  output$table <- DT::renderDataTable(
+  output$table <- renderDataTable(
     data(), filter = "top", style = "bootstrap", rownames = FALSE,
     options = list(orderClasses = TRUE, processing = TRUE, pageLength = 25)
   )
