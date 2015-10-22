@@ -15,7 +15,6 @@ mode <- "local"
 # input <- list(language = "English", form = "WS", measure = "production",
 #               quantiles = "Standard", demo = "birth_order")
 
-
 shinyServer(function(input, output, session) {
 
   output$loaded <- reactive(0)
@@ -23,51 +22,38 @@ shinyServer(function(input, output, session) {
 
   admins <- get_administration_data(mode = mode) %>%
     gather(measure, vocab, comprehension, production) %>%
-    mutate(identity = "All Data") %>%
-    mutate(sex = factor(sex, levels = c("F", "M", "O"),
-                        labels = c("Female", "Male", "Other")),
-           ethnicity = factor(
-             ethnicity, levels = c("A", "B", "H", "O", "W"),
-             labels = c("Asian", "Black", "Hispanic", "White", "Other/Mixed")
-           ),
-           birth_order = factor(
-             birth_order, levels = c(1, 2, 3, 4, 5, 6, 7, 8),
-             labels = c("First", "Second", "Third", "Fourth", "Fifth", "Sixth",
-                        "Seventh", "Eighth")))
+    mutate(identity = "All Data")
 
-  instruments <- get_common_table(src = connect_to_wordbank(mode = mode),
-                                  name = "instrument") %>%
-    as.data.frame()
-
+  instruments <- get_instruments(mode)
   languages <- sort(unique(instruments$language))
 
   possible_demo_fields <- list("None" = "identity",
                                "Birth Order" = "birth_order",
                                "Ethnicity" = "ethnicity",
                                "Sex" = "sex",
-                               "Mother's Education" = "momed")
+                               "Mother's Education" = "mom_ed")
   min_obs <- 100
 
-  start_language <- function() "English"
-  start_form <- function() "WS"
-  start_measure <- function() "production"
-  start_demo <- function() "identity"
+  start_language <- "English"
+  start_form <- "WS"
+  start_measure <- "production"
+  start_demo <- "identity"
 
 
   input_language <- reactive({
-    ifelse(is.null(input$language), start_language(), input$language)
+    ifelse(is.null(input$language), start_language, input$language)
   })
 
   input_form <- reactive({
-    ifelse(is.null(input$form), start_form(), input$form)
+    ifelse(is.null(input$form), start_form, input$form)
   })
 
   input_measure <- reactive({
-    ifelse(is.null(input$measure), start_measure(), input$measure)
+    ifelse(is.null(input$measure), start_measure, input$measure)
   })
 
   input_demo <- reactive({
-    ifelse(is.null(input$demo), start_demo(), input$demo)
+    ifelse(is.null(input$demo), start_demo, input$demo)
   })
 
   input_quantiles <- reactive({
@@ -109,12 +95,12 @@ shinyServer(function(input, output, session) {
       clump <- data.frame(demo = clump_demo, n = sum(small_groups$n))
       clumped <- bind_rows(fine_groups, clump)
     } else if (fun_demo == "ethnicity") {
-      fine_groups <- filter(groups, n >= min_obs & demo != "Other/Mixed")
-      small_groups <- filter(groups, n < min_obs | demo == "Other/Mixed")
+      fine_groups <- filter(groups, n >= min_obs & demo != "Other")
+      small_groups <- filter(groups, n < min_obs | demo == "Other")
       clump_demo <- paste(small_groups$demo, collapse = ", ")
       clump <- data.frame(demo = clump_demo, n = sum(small_groups$n))
       clumped <- bind_rows(fine_groups, clump)
-    } else if (fun_demo %in% c("sex", "momed")) {
+    } else if (fun_demo %in% c("sex", "mom_ed")) {
       smallest <- row.names(groups)[groups$n == min(groups$n)] %>% as.numeric()
       neighbor <- row.names(groups)[groups$n == min(groups[smallest - 1,]$n,
                                                     groups[smallest + 1,]$n,

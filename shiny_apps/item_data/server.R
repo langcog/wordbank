@@ -1,190 +1,140 @@
 library(shiny)
-library(RMySQL)
 library(dplyr)
-library(magrittr)
+library(tidyr)
 library(DT)
-source("../data_loading.R")
+library(wordbankr)
+mode <- "local"
 
-## DEBUGGING
-#input <- list(language = "English", form = "WS", measure = "produces", age = c(16, 30))
+input <- list(language = "English", form = "WS", measure = "produces",
+              age = c(16, 30))
 
 shinyServer(function(input, output, session) {
-  
-  output$loaded <- reactive({0})
-  outputOptions(output, 'loaded', suspendWhenHidden = FALSE)
-  
-  wordbank <- connect.to.wordbank("local")
-  
-  common.tables <- get.common.tables(wordbank)
-  
-  admins <- get.administration.data(common.tables) %>%
-    select(data_id, language, form, age, sex, momed.level, comprehension, production) %>%
-    rename(momed = momed.level) %>%
-    mutate(sex = factor(sex, levels = c("F", "M", "O"), labels = c("Female", "Male", "Other")))
-  
-  items <- get.item.data(common.tables) %>%
-    select(item.id, type, category, lexical_category, definition, language, form) %>%
-    mutate(num.id = as.numeric(substr(item.id, 6, nchar(item.id))))
-  
-  instrument.tables <- init.instrument.tables(wordbank, common.tables)
-  languages <- sort(unique(instrument.tables$language))
-  
-  start.language <- function() {"English"}
-  start.form <- function() {"WS"}
-  start.measure <- function() {"produces"}
 
-  input.language <- reactive({
-    ifelse(is.null(input$language), start.language(), input$language)
-  })
-  
-  input.form <- reactive({
-    ifelse(is.null(input$form), start.form(), input$form)
+  output$loaded <- reactive(0)
+  outputOptions(output, "loaded", suspendWhenHidden = FALSE)
+
+  instruments <- get_instruments(mode = mode)
+  languages <- sort(unique(instruments$language))
+
+  start_language <- "English"
+  start_form <- "WS"
+  start_measure <- "produces"
+
+  input_language <- reactive({
+    ifelse(is.null(input$language), start_language, input$language)
   })
 
-  input.measure <- reactive({
-    ifelse(is.null(input$measure), start.measure(), input$measure)
+  input_form <- reactive({
+    ifelse(is.null(input$form), start_form, input$form)
   })
 
-  input.age_min <- reactive({
+  input_measure <- reactive({
+    ifelse(is.null(input$measure), start_measure, input$measure)
+  })
+
+  input_age_min <- reactive({
     if (is.null(input$age)) {
-      age.min()
+      age_min()
     } else {
       input$age[1]
     }
   })
 
-  input.age_max <- reactive({
+  input_age_max <- reactive({
     if (is.null(input$age)) {
-      age.max()
+      age_max()
     } else {
       input$age[2]
     }
   })
-  
+
   instrument <- reactive({
-    inst <- filter(instrument.tables, language == input.language(),
-                   form == input.form())$instrument_id
-    for (inst_id in inst) {
-      if (length(instrument.tables[instrument.tables$instrument_id == inst_id, ]$table[[1]]) == 0) {
-        instrument.tables <<- add.instrument.table(wordbank, instrument.tables, inst_id)
-      }
-    }
-    filter(instrument.tables, language == input.language(), form == input.form())
+    filter(instruments, language == input_language(), form == input_form())
   })
 
-  instrument_data <- reactive({
-    
-      instrument.items <- filter(items, language == input.language(), form == input.form(),
-                                 type == "word") %>%
-        select(-language, -form, -type)
-      
-      instrument.table <- instrument()$table[[1]]
-
-      get.instrument.data(instrument.table, instrument.items$item.id) %>%
-        rename(num.id = item.id) %>%
-        mutate(produces = value == 'produces',
-               understands = value == 'understands' | value == 'produces') %>%
-        select(-value) %>%
-        gather(measure, value, produces, understands) %>%
-        left_join(select(admins, data_id, age)) %>%
-        filter(!is.na(age)) %>%
-        group_by(num.id, age, measure) %>%
-        summarise(prop = round(mean(value, na.rm = TRUE), 2)) %>%
-        left_join(instrument.items)
-        
-  })
-      
-  measure_data <- reactive({
-    instrument_data() %>%
-      filter(measure == input.measure()) %>%
-      select(-measure)
-  })
-  
   data <- reactive({
-    measure_data() %>%
-      filter(age >= input.age_min(), age <= input.age_max()) %>%
-      spread(age, prop) %>%
-      ungroup() %>%
-      select(-num.id, -item.id, -lexical_category)
+    get_instrument_data(input_language(), input_form(),
+                        administrations = TRUE,
+                        iteminfo = TRUE,
+                        mode = mode) %>%
+      mutate(produces = value == "produces",
+             understands = value == "understands" | value == "produces") %>%
+      select(-value) %>%
+      gather(measure, value, produces, understands) %>%
+      filter(measure == input_measure(),
+             age >= input_age_min(), age <= input_age_max()) %>%
+      group_by(num_item_id, definition, type, category, age) %>%
+      summarise(prop = round(sum(value, na.rm = TRUE) / length(value), 2)) %>%
+      spread(age, prop)
   })
-  
-  output$table <- DT::renderDataTable({
-    data()
-  }, server = TRUE, filter = "top", style = "bootstrap", selection = "multiple",
-  options = list(orderClasses = TRUE, processing = TRUE, pageLength = 25))
-  
-  output$language_selector <- renderUI({    
+
+  output$table <- DT::renderDataTable(
+    data(), server = TRUE, filter = "top", style = "bootstrap",
+    rownames = FALSE, selection = "multiple",
+    options = list(orderClasses = TRUE, processing = TRUE, pageLength = 25)
+  )
+
+  output$language_selector <- renderUI({
     selectizeInput("language", label = h4("Language"),
-                   choices = languages, selected = input.language())
+                   choices = languages, selected = input_language())
   })
-  
+
   forms <- reactive({
-    Filter(function(form) {form %in% unique(filter(instrument.tables,
-                                                   language == input.language())$form)},
-           list("Words & Sentences" = "WS", "Words & Gestures" = "WG"))
+    valid_form <- function(form) {
+      form %in% unique(filter(instruments,
+                              language == input_language())$form)
+    }
+    Filter(valid_form, list("Words & Sentences" = "WS",
+                            "Words & Gestures" = "WG"))
   })
-  
-  output$form_selector <- renderUI({    
+
+  output$form_selector <- renderUI({
     selectizeInput("form", label = h4("Form"),
-                   choices = forms(), selected = input.form())
+                   choices = forms(), selected = input_form())
   })
-  
+
   measures <- reactive({
-    if ("WG" == input.form()) {
+    if ("WG" == input_form()) {
       list("Produces" = "produces", "Understands" = "understands")
     } else {
       list("Produces" = "produces")
-    } 
+    }
   })
 
   output$measure_selector <- renderUI({
-    selectInput("measure", label = h4("Measure"), 
-                choices = measures(), selected = input.measure())
+    selectInput("measure", label = h4("Measure"),
+                choices = measures(), selected = input_measure())
   })
 
-  age.min <- reactive({instrument()$age_min})
-  age.max <- reactive({instrument()$age_max})
+  age_min <- reactive(instrument()$age_min)
+  age_max <- reactive(instrument()$age_max)
 
   output$age_selector <- renderUI({
-    sliderInput("age", label = h4("Age (Months)"), 
-                min = age.min(), max = age.max(), step = 1,
-                value = c(age.min(), age.max()))
+    sliderInput("age", label = h4("Age (Months)"),
+                min = age_min(), max = age_max(), step = 1,
+                value = c(age_min(), age_max()))
   })
 
-  output$downloadAll = downloadHandler(
-    'item_data.csv',
-    content = function(file) {
-      write.csv(data(), file)
-  })
+  output$download_all <- downloadHandler(
+    "item_data.csv",
+    content <- function(file) {
+      write.csv(data(), file, row.names = FALSE)
+    })
 
-  output$downloadCurrent = downloadHandler(
-    'item_data.csv',
-    content = function(file) {
-      s = as.numeric(input$table_rows_all)
-      write.csv(data()[s, , drop = FALSE], file)
+  output$download_current <- downloadHandler(
+    "item_data.csv",
+    content <- function(file) {
+      s <- as.numeric(input$table_rows_all)
+      write.csv(data()[s, , drop = FALSE], file, row.names = FALSE)
     })
-  
-  output$downloadSelected = downloadHandler(
-    'item_data.csv',
-    content = function(file) {
-      s = as.numeric(input$table_rows_selected)
-      write.csv(data()[s, , drop = FALSE], file)
+
+  output$download_selected <- downloadHandler(
+    "item_data.csv",
+    content <- function(file) {
+      s <- as.numeric(input$table_rows_selected)
+      write.csv(data()[s, , drop = FALSE], file, row.names = FALSE)
     })
-    
-#   output$downloadData <- downloadHandler(
-#     filename = function() { 'item_data.csv' },
-#     content = function(file) {
-#       write.csv(data(), file, row.names = FALSE)
-#     })
-  
-  output$loading <- renderImage({
-    return(list(
-      src = "../images/loading.gif",
-      contentType = "image/gif",
-      alt = "Loading"
-    ))
-  }, deleteFile = FALSE)
-  
-  output$loaded <- reactive({1})
-  
+
+  output$loaded <- reactive(1)
+
 })
