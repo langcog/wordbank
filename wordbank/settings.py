@@ -13,7 +13,7 @@ ADMINS = (
 )
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-SHINY_SERVER_IP = '54.200.225.86'
+SHINY_SERVER_IP = '52.26.82.213'
 
 MANAGERS = ADMINS
 
@@ -31,7 +31,7 @@ DATABASES = {
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = ['54.69.111.9', '172.31.0.195', '127.0.0.1', '54.149.39.46',
+ALLOWED_HOSTS = ['54.148.218.13', '172.31.0.195', '127.0.0.1', '54.149.152.155',
 		 'localhost', 'wordbank.stanford.edu']
 
 # Local time zone for this installation. Choices can be found here:
