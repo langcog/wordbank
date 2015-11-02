@@ -94,7 +94,7 @@ class Blog(View):
         entries = [{'title': entry.title.text,
                     'contents': mark_safe(entry.content.text),
                     'time': self.format_datetime(entry.published.text),
-                    'author': entry.author[0].name.text,
-                    'author_link': entry.author[0].uri.text
+                    'author': entry.author[0].name.text
+                    #'author_link': entry.author[0].uri.text
                    } for entry in feed.entry]
         return render(request, 'blog.html', {'entries': entries})
