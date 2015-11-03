@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block title %}
+Wordbank | Blog
+{% endblock %}
+
 {% block content %}
 <link rel="stylesheet" href={% static "css/blog.css" %}>
 
@@ -34,13 +38,19 @@
 		<div class="panel panel-info" style="margin-top: 20px;">
 		  <div class="panel-heading">Upcoming Wordbank events</div>
 		  <ul class="list-group">
+				{% for event in events %}
 		    <li class="list-group-item">
-		    	Poster at CogSci 2015<br>
-		    	July 25, 2015 <br>
-		    	<a href="http://langcog.stanford.edu/papers/BYMF_cogsci2015.pdf" target="_blank">
-		    	Developmental changes in the relationship between grammar and the lexicon
-		    	</a>
+		    	{{ event.where }}<br>
+		    	<i>{{ event.when}}</i> <br>
+					<b>
+					{% if link %}
+		    		<a href={{ event.link }} target="_blank">{{ event.what }}</a>
+					{% else %}
+						{{ event.what }}
+					{% endif %}
+					</b>
 		    </li>
+				{% endfor %}
 		  </ul>
 		</div>
 
@@ -48,14 +58,12 @@
 		<div class="panel-heading">Related resources</div>
 		  <div class="list-group">
 
-		  <a href="http://metalab.stanford.edu/" target="_blank" class="list-group-item">
-		    <h4 class="list-group-item-heading">MetaLab</h4>
-		    <p class="list-group-item-text list-group-item-subtext">tools for power analysis and experimental planning in language acquisition research</p>
+			{% for resource in resources %}
+		  <a href={{ resource.link }} target="_blank" class="list-group-item">
+		    <h4 class="list-group-item-heading">{{ resource.name }}</h4>
+		    <p class="list-group-item-text list-group-item-subtext">{{ resource.description }}</p>
 		  </a>
-		  <a href="http://childes.psy.cmu.edu/" target="_blank" class="list-group-item">
-		    <h4 class="list-group-item-heading">CHILDES</h4>
-		    <p class="list-group-item-text list-group-item-subtext">corpus of child and child-directed language</p>
-		  </a>
+			{% endfor %}
 		  </div>
 		</div>
 
