@@ -12,8 +12,8 @@ font <- theme_mikabr()$text$family
 Sys.setlocale(locale = "en_US.UTF-8")
 mode <- "local"
 
-input <- list(language = "English", form = "WG WS", measure = "produces",
-              words = c("baa baa"))
+# input <- list(language = "English", form = "WG WS", measure = "produces",
+#               words = c("baa baa"))
 
 list_items_by_definition <- function(item_data) {
   items <- item_data$item_id
@@ -88,6 +88,8 @@ start_language <- "English"
 start_form <- "WS"
 start_measure <- "produces"
 
+alerted <- FALSE
+
 shinyServer(function(input, output, session) {
 
   output$loaded <- reactive(0)
@@ -108,6 +110,22 @@ shinyServer(function(input, output, session) {
   })
 
   input_words <- reactive(input$words)
+
+  many_words <- observe({
+    word_limit <- 10
+    if (length(input_words()) >= word_limit & !alerted) {
+      createAlert(session, "many_words", "alert",
+                  content = HTML(sprintf("For a large number of words, consider using the %s app instead.",
+                              a(href = "http://wordbank.stanford.edu/analyses?name=item_data",
+                                "Item Data"))),
+                  style = "warning", dismiss = FALSE)
+      alerted <<- TRUE
+    }
+    if (length(input_words()) < word_limit & alerted) {
+      closeAlert(session, "alert")
+      alerted <<- FALSE
+    }
+  })
 
   instrument <- reactive({
     filter(instrument_tables, language == input_language(),
