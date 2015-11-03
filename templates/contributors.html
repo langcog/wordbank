@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block title %}
+Wordbank | Contributors
+{% endblock %}
+
 {% block content %}
 
 <div class="lead">
@@ -25,7 +29,7 @@
           <span class="label label-warning">{{ source }}</span>
           {% endfor %}
           </h5>
-            <p class="list-group-item-text"><small>{{ entry.2 }}</small></p> 
+            <p class="list-group-item-text"><small>{{ entry.2 }}</small></p>
         </li>
         {% endfor %}
       </ul>
