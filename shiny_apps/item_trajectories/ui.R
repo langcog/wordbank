@@ -67,6 +67,7 @@ shinyUI(fluidPage(
                    plotOutput("trajectory_plot", width = "100%",
                               height = "auto"),
                    br(),
+                   bsAlert("many_words"),
                    bsCollapse(
                      id = "details", open = NULL,
                      bsCollapsePanel("More details...",
