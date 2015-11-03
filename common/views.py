@@ -44,15 +44,15 @@ class Contributors(View):
 
     def get(self, request):
         sources = Source.objects.annotate(n = Count('administration'))
-        language_sources_dict = defaultdict(lambda: defaultdict(list))
+        language_sources_dict = defaultdict(lambda: defaultdict(int))
         for source in sources:
-            language_sources_dict[source.instrument_language][(source.contributor, source.instrument_form, source.citation)].append(source.n)
+            language_sources_dict[source.instrument_language][(source.contributor, source.instrument_form, source.citation)] += source.n
 
         languages = sorted(language_sources_dict.keys())
         language_sources_list = [[language, dict(language_sources_dict[language])] for language in languages]
 
         num_cols = 2
-        col_size = (sum([sum([len(sources) for contributor, sources in language_sources.iteritems()]) for language, language_sources in language_sources_list]) + len(language_sources_list)*2) / num_cols
+        col_size = (sum([len(language_sources) for language, language_sources in language_sources_list]) + len(language_sources_list)*2) / num_cols
 
         columns = {}
         col_index = 1
@@ -88,6 +88,7 @@ class Blog(View):
         return dt.strftime("%A, %B %d, %Y")
 
     def get(self, request):
+
         blog_id = "4368769871770527749"
         blogger_service = gdata.blogger.client.BloggerClient()
         feed = blogger_service.GetFeed('http://www.blogger.com/feeds/' + blog_id + '/posts/default')
@@ -97,4 +98,9 @@ class Blog(View):
                     'author': entry.author[0].name.text
                     #'author_link': entry.author[0].uri.text
                    } for entry in feed.entry]
-        return render(request, 'blog.html', {'entries': entries})
+
+        events = json.loads(urllib2.urlopen(static('json/events.json')).read())
+
+        resources = json.loads(urllib2.urlopen(static('json/resources.json')).read())
+
+        return render(request, 'blog.html', {'entries': entries, 'events': events, 'resources': resources})
