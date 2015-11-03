@@ -13,7 +13,7 @@ Sys.setlocale(locale = "en_US.UTF-8")
 mode <- "local"
 
 # input <- list(language = "English", form = "WG WS", measure = "produces",
-#               words = c("baa baa"))
+#               words = c("baa baa", "woof"))
 
 list_items_by_definition <- function(item_data) {
   items <- item_data$item_id
@@ -96,20 +96,22 @@ shinyServer(function(input, output, session) {
   outputOptions(output, "loaded", suspendWhenHidden = FALSE)
 
   input_language <- reactive({
-    ifelse(is.null(input$language), start_language, input$language)
+    if (is.null(input$language)) start_language else input$language
   })
 
   input_form <- reactive({
-    ifelse(is.null(input$form), start_form, input$form)
+    if (is.null(input$form)) start_form else input$form
   })
 
   input_forms <- reactive(strsplit(input_form(), " ")[[1]])
 
   input_measure <- reactive({
-    ifelse(is.null(input$measure), start_measure, input$measure)
+    if (is.null(input$measure)) start_measure else input$measure
   })
 
-  input_words <- reactive(input$words)
+  input_words <- reactive({
+    if (is.null(input$words)) word_options()[1] else input$words
+  })
 
   many_words <- observe({
     word_limit <- 10
@@ -133,7 +135,11 @@ shinyServer(function(input, output, session) {
   })
 
   trajectory_data <- reactive({
-    trajectory_data_fun(admins, instrument(), input_measure(), input_words())
+    if (all(input_words() %in% word_options())) {
+      trajectory_data_fun(admins, instrument(), input_measure(), input_words())
+    } else {
+      data.frame()
+    }
   })
 
   ylabel <- reactive({
@@ -175,7 +181,7 @@ shinyServer(function(input, output, session) {
     }
   }
 
-  observe({
+  word_options <- reactive({
     if (length(input_forms()) == 1) {
       words <- names(filter(instrument_tables,
                             language == input_language(),
@@ -189,7 +195,17 @@ shinyServer(function(input, output, session) {
                              form == input_forms()[2])$words_by_definition[[1]])
       words <- intersect(words1, words2)
     }
-    updateSelectInput(session, "words", choices = words, selected = "")
+  })
+
+  observe({
+    words <- word_options()
+   updateSelectInput(session, "words", choices = words,
+                     selected = if (length(words)) words[1] else "")
+#    isolate({
+#         select_words <- input_words()
+#         select_words <- select_words[select_words %in% words]
+#         updateSelectInput(session, "words", choices = words, selected = input_words())
+#    })
   })
 
   forms <- reactive({
