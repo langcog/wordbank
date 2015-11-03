@@ -21,13 +21,11 @@ Wordbank | Contributors
     <div class="panel panel-primary">
       <div class="panel-heading">{{ language_sources.0 }}</div>
       <ul class="list-group">
-        {% for entry, sources in language_sources.1.items %}
+        {% for entry, n in language_sources.1.items %}
         <li class="list-group-item">
           <h5 class="list-group-item-heading">{{ entry.0 }} &nbsp;
           <span class="label label-info">{{ entry.1 }}</span>
-          {% for source in sources %}
-          <span class="label label-warning">{{ source }}</span>
-          {% endfor %}
+          <span class="label label-warning">{{ n }}</span>
           </h5>
             <p class="list-group-item-text"><small>{{ entry.2 }}</small></p>
         </li>
