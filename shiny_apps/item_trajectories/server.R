@@ -114,7 +114,7 @@ shinyServer(function(input, output, session) {
   })
 
   many_words <- observe({
-    word_limit <- 10
+    word_limit <- 9
     if (length(input_words()) >= word_limit & !alerted) {
       createAlert(session, "many_words", "alert",
                   content = HTML(sprintf("For a large number of words, consider using the %s app instead.",
@@ -136,7 +136,8 @@ shinyServer(function(input, output, session) {
 
   trajectory_data <- reactive({
     if (all(input_words() %in% word_options())) {
-      trajectory_data_fun(admins, instrument(), input_measure(), input_words())
+      trajectory_data_fun(admins, instrument(), input_measure(), input_words()) %>%
+        mutate(item = factor(item, levels = input_words()))
     } else {
       data.frame()
     }
@@ -149,6 +150,13 @@ shinyServer(function(input, output, session) {
 
   age_min <- reactive(min(instrument()$age_min))
   age_max <- reactive(max(instrument()$age_max))
+
+  solarized_colors <- c("#268bd2", "#cb4b16", "#859900", "#993399", "#d33682",
+                        "#b58900", "#2aa198", "#6c71c4", "#dc322f")
+  stable_order_palete <- function(num_values) {
+    c(rep(solarized_colors, num_values %/% length(solarized_colors)),
+      solarized_colors[1:(num_values %% length(solarized_colors))])
+  }
 
   trajectory_plot <- function() {
     traj <- trajectory_data()
@@ -175,7 +183,8 @@ shinyServer(function(input, output, session) {
         scale_y_continuous(name = sprintf("%s\n", ylabel()),
                            limits = c(-0.01, 1),
                            breaks = seq(0, 1, 0.25)) +
-        scale_colour_solarized(guide = FALSE) +
+        scale_colour_manual(guide = FALSE,
+                            values = stable_order_palete(length(unique(traj$item)))) +
         geom_dl(method = list(dl.trans(x = x + 0.3), "last.qp", cex = 1,
                               fontfamily = font))
     }
