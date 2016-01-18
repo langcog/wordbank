@@ -12,7 +12,8 @@ shinyServer(function(input, output, session) {
   outputOptions(output, "loaded", suspendWhenHidden = FALSE)
 
   admins <- get_administration_data(mode = mode) %>%
-    select(data_id, language, form, age, sex, mom_ed, comprehension, production)
+    select(data_id, language, form, age, sex, mom_ed, comprehension, production) %>%
+    rename(gender = sex)
 
 
   input_language <- reactive({
@@ -23,8 +24,8 @@ shinyServer(function(input, output, session) {
     ifelse(is.null(input$form), "All", input$form)
   })
 
-  input_sex <- reactive({
-    ifelse(is.null(input$sex), "All", input$sex)
+  input_gender <- reactive({
+    ifelse(is.null(input$gender), "All", input$gender)
   })
 
   input_mom_ed <- reactive({
@@ -43,8 +44,8 @@ shinyServer(function(input, output, session) {
     if (input_form() != "All") {
       filter.data %<>% filter(form == input_form())
     }
-    if (input_sex() != "All") {
-      filter.data %<>% filter(sex == input_sex())
+    if (input_gender() != "All") {
+      filter.data %<>% filter(gender == input_gender())
     }
     if (input_mom_ed() != "All") {
       filter.data %<>% filter(mom_ed == input_mom_ed())
@@ -74,9 +75,9 @@ shinyServer(function(input, output, session) {
                 value = c(min(admins$age), max(admins$age)))
   })
 
-  output$sex_selector <- renderUI({
-    selectizeInput("sex", label = "Sex:",
-                   choices = c("All", levels(unique(admins$sex))),
+  output$gender_selector <- renderUI({
+    selectizeInput("gender", label = "Gender:",
+                   choices = c("All", levels(unique(admins$gender))),
                    selected = "All")
   })
 
