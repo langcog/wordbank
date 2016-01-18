@@ -36,6 +36,7 @@ class About(View):
 class Publications(View):
 
     def get(self, request):
+        #publications = json.loads(open('static/json/publications.json').read())
         publications = json.loads(urllib2.urlopen(static('json/publications.json')).read())
         return render(request, 'publications.html', {'publications': publications})
 
