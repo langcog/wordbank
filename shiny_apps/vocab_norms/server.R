@@ -30,7 +30,7 @@ shinyServer(function(input, output, session) {
   possible_demo_fields <- list("None" = "identity",
                                "Birth Order" = "birth_order",
                                "Ethnicity" = "ethnicity",
-                               "Sex" = "sex",
+                               "Gender" = "sex",
                                "Mother's Education" = "mom_ed")
   min_obs <- 100
 
