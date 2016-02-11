@@ -368,5 +368,15 @@
         "splitcol": true,
         "contributor": "Christina Caselli, Institute of Cognitive Sciences and Technologies",
         "citation": "Caselli, M. C., Rinaldi, P., Stefanini, S., & Volterra, V. (2012). Early action and gesture 'vocabulary' and its relation with word comprehension and production. Child Development, 83(2), 526-542."
+    },
+    {
+        "name": "CLEX",
+        "dataset": "",
+        "instrument_language": "Danish",
+        "instrument_form": "WG",
+        "file": "raw_data/Danish_WG/DanishWG_CLEX.csv",
+        "splitcol": false,
+        "contributor": "Dorthe Bleses, University of Southern Denmark",
+        "citation": "Bleses, D., Vach, W., Slott, M., Wehberg, S., Thomsen, P., Madsen, T. & Basbøll, H. (2008). The Danish Communicative Development Inventories: validity and main developmental trends. Journal of Child Language, 35, 619-650."
     }
 ]
