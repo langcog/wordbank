@@ -1,3 +1,4 @@
+import string
 from common.models import *
 import instruments.models
 from instruments import import_dataset_helper
@@ -8,7 +9,8 @@ from instruments import import_dataset_helper
 # Creates Child and Administration objects for the entries in the resulting data.
 def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_language, instrument_form, splitcol):
 
-        instrument_string = '_'.join(instrument_language.split() + [instrument_form])
+        var_safe = lambda s: ''.join([c for c in '_'.join(s.split()) if c in string.letters + '_'])
+        instrument_string = var_safe(instrument_language) + '_' + var_safe(instrument_form)
         try:
             instrument_model = getattr(instruments.models, instrument_string)
         except AttributeError:
