@@ -1,6 +1,7 @@
 import xlrd
 import codecs
 import json
+import string
 from django.core.management.base import BaseCommand
 
 
@@ -26,7 +27,8 @@ class Command(BaseCommand):
 
         for instrument in input_instruments:
 
-            instr = '_'.join(instrument['language'].split() + [instrument['form']])
+            var_safe = lambda s: ''.join([c for c in '_'.join(s.split()) if c in string.letters + '_'])
+            instr = var_safe(instrument['language']) + '_' + var_safe(instrument['form'])
             instrument_file = open('instruments/schemas/%s.py' % (instr), 'w')
 
             instrument_file.write('from django.db import models\n')
