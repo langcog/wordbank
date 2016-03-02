@@ -23,3 +23,4 @@ from schemas.British_Sign_Language_WG import *
 from schemas.Mandarin_TC import *
 from schemas.Italian_WG import *
 from schemas.Danish_WG import *
+from schemas.French_Quebec_WG import *
