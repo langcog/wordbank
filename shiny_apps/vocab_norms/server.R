@@ -12,8 +12,8 @@ source("predictQR_fixed.R")
 theme_set(theme_mikabr(base_size = 18))
 mode <- "local"
 
-# input <- list(language = "English", form = "WS", measure = "production",
-#               quantiles = "Standard", demo = "birth_order")
+input <- list(language = "English", form = "WS", measure = "production",
+              quantiles = "Standard", demo = "sex")
 
 shinyServer(function(input, output, session) {
 
@@ -41,7 +41,8 @@ shinyServer(function(input, output, session) {
 
 
   input_language <- reactive({
-    ifelse(is.null(input$language), start_language, input$language)
+    input$language
+    #ifelse(is.null(input$language), start_language, input$language)
   })
 
   input_form <- reactive({
@@ -195,7 +196,8 @@ shinyServer(function(input, output, session) {
         as.data.frame() %>%
         mutate(age = age_min():age_max()) %>%
         gather(quantile, predicted, -age) %>%
-        mutate(demo = value)
+        mutate(demo = value,
+               quantile = factor(quantile))
       predicted_data <- bind_rows(predicted_data, value_predicted_data)
     }
 
@@ -224,7 +226,8 @@ shinyServer(function(input, output, session) {
 
   curves <- reactive(tryCatch(fit_curves(), error = function(e) NULL))
 
-  plot <- function() {
+  plot <- reactive({
+    req(data())
 
     pt_color <- "#657b83"
 
@@ -261,7 +264,7 @@ shinyServer(function(input, output, session) {
       }
     }
     p
-  }
+  })
 
   forms <- reactive({
     form_opts <- unique(filter(instruments, language == input_language())$form)
@@ -278,7 +281,9 @@ shinyServer(function(input, output, session) {
   })
 
   height_fun <- function() session$clientData$output_plot_width * 0.7
-  output$plot <- renderPlot(plot(), height = height_fun)
+  output$plot <- renderPlot(
+    plot(), height = height_fun
+    )
 
   table_data <- reactive({
     curves() %>%
@@ -293,7 +298,7 @@ shinyServer(function(input, output, session) {
 
   output$language_selector <- renderUI({
     selectizeInput("language", label = h4("Language"),
-                   choices = languages, selected = input_language())
+                   choices = languages, selected = start_language)
   })
 
   output$form_selector <- renderUI({
