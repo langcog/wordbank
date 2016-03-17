@@ -23,6 +23,7 @@ class Command(BaseCommand):
                 source_obj.contributor = source['contributor']
                 source_obj.citation = source['citation']
                 source_obj.norming = source['norming']
+                source_obj.longitudinal = source['longitudinal']
                 source_obj.save()
             else:
                 Source.objects.create(name=source['name'],
@@ -31,4 +32,5 @@ class Command(BaseCommand):
                                       instrument_form=source['instrument_form'],
                                       contributor = source['contributor'],
                                       citation = source['citation'],
-                                      norming = source['norming'])
+                                      norming = source['norming'],
+                                      longitudinal = source['longitudinal'])
