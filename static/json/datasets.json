@@ -7,6 +7,7 @@
         "file": "raw_data/English_WS/EnglishWS_Marchman_Norming.xlsx",
         "splitcol": false,
         "norming": true,
+        "longitudinal": false,
         "contributor": "Larry Fenson, San Diego State University",
         "citation": "Fenson, L., Marchman, V. A., Thal, D., Dale, P., Reznick, J. S. & Bates, E. (2007). MacArthur-Bates Communicative Development Inventories: User's Guide and Technical Manual. 2nd Edition. Baltimore, MD: Brookes Publishing Co."
     },
@@ -18,6 +19,7 @@
         "file": "raw_data/English_WS/EnglishWS_Marchman_Wisconsin.xlsx",
         "splitcol": false,
         "norming": false,
+        "longitudinal": false,
         "contributor": "Virginia Marchman, Stanford University",
         "citation": ""
     },
@@ -29,6 +31,7 @@
         "file": "raw_data/English_WS/EnglishWS_Marchman_Dallas.xlsx",
         "splitcol": false,
         "norming": false,
+        "longitudinal": false,
         "contributor": "Virginia Marchman, Stanford University",
         "citation": ""
     },
@@ -40,6 +43,7 @@
         "file": "raw_data/English_WS/EnglishWS_Smith_electronic.xlsx",
         "splitcol": false,
         "norming": false,
+        "longitudinal": false,
         "contributor": "Linda Smith, Indiana University",
         "citation": ""
     },
@@ -51,6 +55,7 @@
         "file": "raw_data/English_WS/EnglishWS_Smith_paper.xlsx",
         "splitcol": false,
         "norming": false,
+        "longitudinal": false,
         "contributor": "Linda Smith, Indiana University",
         "citation": ""
     },
@@ -62,6 +67,7 @@
         "file": "raw_data/English_WS/EnglishWS_Byers.xlsx",
         "splitcol": false,
         "norming": false,
+        "longitudinal": false,
         "contributor": "Krista Byers-Heinlein, Concordia University",
         "citation": ""
     },
@@ -73,6 +79,7 @@
         "file": "raw_data/English_WS/EnglishWS_Thal_16.xlsx",
         "splitcol": false,
         "norming": false,
+        "longitudinal": true,
         "contributor": "Donna Thal, San Diego State University",
         "citation": "Thal, D. J., Marchman, V. A. & Tomblin, J. B. (2013). Late talking toddlers: Characterization and prediction of continued delay. In L. Rescorla & P. Dale (Eds.). Late Talkers: Language Development, Interventions, and Outcomes.  Baltimore, MD.: Brookes Publishing."
     },
@@ -84,6 +91,7 @@
         "file": "raw_data/English_WS/EnglishWS_Thal_28.xlsx",
         "splitcol": false,
         "norming": false,
+        "longitudinal": true,
         "contributor": "Donna Thal, San Diego State University",
         "citation": "Thal, D. J., Marchman, V. A. & Tomblin, J. B. (2013). Late talking toddlers: Characterization and prediction of continued delay. In L. Rescorla & P. Dale (Eds.). Late Talkers: Language Development, Interventions, and Outcomes.  Baltimore, MD.: Brookes Publishing."
     },
@@ -95,6 +103,7 @@
         "file": "raw_data/English_WG/EnglishWG_Marchman_Norming.xlsx",
         "splitcol": true,
         "norming": true,
+        "longitudinal": false,
         "contributor": "Larry Fenson, San Diego State University",
         "citation": "Fenson, L., Marchman, V. A., Thal, D., Dale, P., Reznick, J. S. & Bates, E. (2007). MacArthur-Bates Communicative Development Inventories: User's Guide and Technical Manual. 2nd Edition. Baltimore, MD: Brookes Publishing Co."
     },
@@ -106,6 +115,7 @@
         "file": "raw_data/English_WG/EnglishWG_Byers.xlsx",
         "splitcol": false,
         "norming": false,
+        "longitudinal": false,
         "contributor": "Krista Byers-Heinlein, Concordia University",
         "citation": ""
     },
@@ -117,6 +127,7 @@
         "file": "raw_data/English_WG/EnglishWG_Thal_13.xlsx",
         "splitcol": true,
         "norming": false,
+        "longitudinal": true,
         "contributor": "Donna Thal, San Diego State University",
         "citation": "Thal, D. J., Marchman, V. A. & Tomblin, J. B. (2013). Late talking toddlers: Characterization and prediction of continued delay. In L. Rescorla & P. Dale (Eds.). Late Talkers: Language Development, Interventions, and Outcomes.  Baltimore, MD.: Brookes Publishing."
     },
@@ -128,6 +139,7 @@
         "file": "raw_data/English_WG/EnglishWG_Thal_16.xlsx",
         "splitcol": true,
         "norming": false,
+        "longitudinal": true,
         "contributor": "Donna Thal, San Diego State University",
         "citation": "Thal, D. J., Marchman, V. A. & Tomblin, J. B. (2013). Late talking toddlers: Characterization and prediction of continued delay. In L. Rescorla & P. Dale (Eds.). Late Talkers: Language Development, Interventions, and Outcomes.  Baltimore, MD.: Brookes Publishing."
     },
@@ -139,6 +151,7 @@
         "file": "raw_data/Spanish_WS/SpanishWS_Marchman_Norming.xlsx",
         "splitcol": false,
         "norming": true,
+        "longitudinal": false,
         "contributor": "Donna Jackson-Maldonado, Universidad Autónoma de Querétaro",
         "citation": "Jackson-Maldonado, D., Thal, D., Marchman, V., Newton, T., Fenson, L, & Conboy, B. (2003). MacArthur Inventarios del Desarrollo de Habilidades Comunicativas. User´s Guide and Technical Manual. Brookes, Baltimore."
     },
@@ -150,6 +163,7 @@
         "file": "raw_data/Spanish_WG/SpanishWG_Marchman_Norming.xlsx",
         "splitcol": false,
         "norming": true,
+        "longitudinal": false,
         "contributor": "Donna Jackson-Maldonado, Universidad Autónoma de Querétaro",
         "citation": "Jackson-Maldonado, D., Thal, D., Marchman, V., Newton, T., Fenson, L, & Conboy, B. (2003). MacArthur Inventarios del Desarrollo de Habilidades Comunicativas. User´s Guide and Technical Manual. Brookes, Baltimore."
     },
@@ -161,6 +175,7 @@
         "file": "raw_data/Danish_WS/DanishWS_Bleses.xlsx",
         "splitcol": false,
         "norming": true,
+        "longitudinal": false,
         "contributor": "Dorthe Bleses, University of Southern Denmark",
         "citation": "Bleses, D., Vach, W., Slott, M., Wehberg, S., Thomsen, P., Madsen, T. & Basbøll, H. (2008). The Danish Communicative Development Inventories: validity and main developmental trends. Journal of Child Language, 35, 619-650."
     },
@@ -172,6 +187,7 @@
         "file": "raw_data/Norwegian_WS/NorwegianWS_Kristoffersen.xlsx",
         "splitcol": false,
         "norming": true,
+        "longitudinal": false,
         "contributor": "Kristian Kristoffersen, University of Oslo",
         "citation": "Kristoffersen, K. E., Simonsen, H. G., Bleses, D., Wehberg, S., Jørgensen, R. N., Eiesland, E. A. & Henriksen, L. Y. (in progress). Development and variation in early communicative skills in infants and toddlers acquiring Norwegian – a CDI-based study."
     },
@@ -183,6 +199,7 @@
         "file": "raw_data/Norwegian_WS/NorwegianWS_Kristoffersen_longitudinal.xlsx",
         "splitcol": false,
         "norming": false,
+        "longitudinal": true,
         "contributor": "Kristian Kristoffersen, University of Oslo",
         "citation": "Kristoffersen, K. E., Simonsen, H. G., Bleses, D., Wehberg, S., Jørgensen, R. N., Eiesland, E. A. & Henriksen, L. Y. (in progress). Development and variation in early communicative skills in infants and toddlers acquiring Norwegian – a CDI-based study."
     },
@@ -194,6 +211,7 @@
         "file": "raw_data/Norwegian_WG/NorwegianWG_Kristoffersen.xlsx",
         "splitcol": false,
         "norming": true,
+        "longitudinal": false,
         "contributor": "Kristian Kristoffersen, University of Oslo",
         "citation": "Kristoffersen, K. E., Simonsen, H. G., Bleses, D., Wehberg, S., Jørgensen, R. N., Eiesland, E. A. & Henriksen, L. Y. (in progress). Development and variation in early communicative skills in infants and toddlers acquiring Norwegian – a CDI-based study."
     },
@@ -205,6 +223,7 @@
         "file": "raw_data/Norwegian_WG/NorwegianWG_Kristoffersen_longitudinal.xlsx",
         "splitcol": false,
         "norming": false,
+        "longitudinal": true,
         "contributor": "Kristian Kristoffersen, University of Oslo",
         "citation": "Kristoffersen, K. E., Simonsen, H. G., Bleses, D., Wehberg, S., Jørgensen, R. N., Eiesland, E. A. & Henriksen, L. Y. (in progress). Development and variation in early communicative skills in infants and toddlers acquiring Norwegian – a CDI-based study."
     },
@@ -216,6 +235,7 @@
         "file": "raw_data/Croatian_WG/CroatianWG_CLEX.csv",
         "splitcol": false,
         "norming": true,
+        "longitudinal": false,
         "contributor": "Melita Kovacevic, University of Zagreb",
         "citation": "Kovacevic, M., Babic, Z., & Brozovic, B. (1996). A Croatian language parent report study: Lexical and grammatical development. Paper presented at the VIIth International Congress for the Study of Child Language, July 1996, Istanbul, Turkey."
     },
@@ -227,6 +247,7 @@
         "file": "raw_data/Croatian_WS/CroatianWS_CLEX.csv",
         "splitcol": false,
         "norming": true,
+        "longitudinal": false,
         "contributor": "Melita Kovacevic, University of Zagreb",
         "citation": "Kovacevic, M., Babic, Z., & Brozovic, B. (1996). A Croatian language parent report study: Lexical and grammatical development. Paper presented at the VIIth International Congress for the Study of Child Language, July 1996, Istanbul, Turkey."
     },
@@ -238,6 +259,7 @@
         "file": "raw_data/German_WS/GermanWS_CLEX.csv",
         "splitcol": false,
         "norming": true,
+        "longitudinal": false,
         "contributor": "Gisela Szagun, University College London",
         "citation": "Szagun, G., Stumper, B. & Schramm, A.S. (2009). Fragebogen zur frühkindlichen Sprachentwicklung (FRAKIS) und FRAKIS-K (Kurzform). Frankfurt: Pearson Assessment."
     },
@@ -249,6 +271,7 @@
         "file": "raw_data/Italian_WS/ItalianWS_CLEX.csv",
         "splitcol": false,
         "norming": true,
+        "longitudinal": false,
         "contributor": "Christina Caselli, Institute of Cognitive Sciences and Technologies",
         "citation": "Caselli, M. C., Bates, E., Casadio, P., Fenson, J., Fenson, L., Sanderl, L., & Weir, J. (1995). A cross-linguistic study of early lexical development. Cognitive Development, 10(2), 159-199."
     },
@@ -260,6 +283,7 @@
         "file": "raw_data/Russian_WG/RussianWG_CLEX.csv",
         "splitcol": false,
         "norming": true,
+        "longitudinal": false,
         "contributor": "Stella Ceytlin, SPb Russian Pedagogical University",
         "citation": "Е.А.Вершинина, М.Б. Елисеева, Т.С. Лаврова, В.Л. Рыскина, С.Н. Цейтлин. Некоторые нормативы речевого развития детей от 8 до 18 месяцев// Специальное образование: традиции и инновации: Сборник научно-методических трудов с международным участием. — СПб.: Изд-во РГПУ им. А. И. Герцена, 2011."
     },
@@ -271,6 +295,7 @@
         "file": "raw_data/Russian_WS/RussianWS_CLEX.csv",
         "splitcol": false,
         "norming": true,
+        "longitudinal": false,
         "contributor": "Stella Ceytlin, SPb Russian Pedagogical University",
         "citation": "М.Б. Елисеева, Е.А. Вершинина. Некоторые нормативы речевого развития детей от 18 до 36 месяцев (по материалам МакАртуровского опросника) // Проблемы онтолингвистики – 2009. Материалы международной конференции 17-19 июбня 2009 г. Санкт-Петербург, С.72-78"
     },
@@ -282,6 +307,7 @@
         "file": "raw_data/Swedish_WG/SwedishWG_CLEX.csv",
         "splitcol": false,
         "norming": true,
+        "longitudinal": false,
         "contributor": "Mårten Eriksson, University of Gävle",
         "citation": "Eriksson, M., & Berglund, E. (2002). Instruments, scoring manual and percentile levels of the Swedish Early Communicative Development Inventory, SECDI. (FoU-Rapport 17). Gävle, Sweden: Institutionen för pedagogik, didaktik och psykologi."
     },
@@ -293,6 +319,7 @@
         "file": "raw_data/Swedish_WS/SwedishWS_CLEX.csv",
         "splitcol": false,
         "norming": true,
+        "longitudinal": false,
         "contributor": "Mårten Eriksson, University of Gävle",
         "citation": "Eriksson, M., & Berglund, E. (2002). Instruments, scoring manual and percentile levels of the Swedish Early Communicative Development Inventory, SECDI. (FoU-Rapport 17). Gävle, Sweden: Institutionen för pedagogik, didaktik och psykologi."
     },
@@ -304,6 +331,7 @@
         "file": "raw_data/Turkish_WG/TurkishWG_CLEX.csv",
         "splitcol": false,
         "norming": true,
+        "longitudinal": false,
         "contributor": "Aylin Küntay, Koç University",
         "citation": "Acarlar, F., Aksu-Koç, A., Küntay, A.C., Maviş, İ., Sofu, H., Topbaş, S., Turan, F. (2009). Adapting MB-CDI to Turkish: The first phase. In S. Ay, Ö. Aydın., İ. Ergenç, S. Gökmen, S. İşsever, and D. Peçenel (Eds.) Essays on Turkish linguistics: Proceedings of the 14th International Conference on Turkish Linguistics, August 6-8, 2008. Harrassowitz Verlag: Wiesbaden, Germany."
     },
@@ -315,6 +343,7 @@
         "file": "raw_data/Turkish_WS/TurkishWS_CLEX.csv",
         "splitcol": false,
         "norming": true,
+        "longitudinal": false,
         "contributor": "Aylin Küntay, Koç University",
         "citation": "Acarlar, F., Aksu-Koç, A., Küntay, A.C., Maviş, İ., Sofu, H., Topbaş, S., Turan, F. (2009). Adapting MB-CDI to Turkish: The first phase. In S. Ay, Ö. Aydın., İ. Ergenç, S. Gökmen, S. İşsever, and D. Peçenel (Eds.) Essays on Turkish linguistics: Proceedings of the 14th International Conference on Turkish Linguistics, August 6-8, 2008. Harrassowitz Verlag: Wiesbaden, Germany."
     },
@@ -326,6 +355,7 @@
         "file": "raw_data/Hebrew_WG/HebrewWG_Shalev.xlsx",
         "splitcol": false,
         "norming": false,
+        "longitudinal": false,
         "contributor": "Hila Gendler Shalev, Tel-Aviv University",
         "citation": "Gendler-Shalev, H. (2005). תירבעל HCDI-WG םירוה ןולאש תמאתה."
     },
@@ -337,6 +367,7 @@
         "file": "raw_data/Hebrew_WS/HebrewWS_Maital.xlsx",
         "splitcol": false,
         "norming": false,
+        "longitudinal": false,
         "contributor": "Sharone Maital, University of Haifa",
         "citation": "Maital, S., Dromi, E. Sagi, A. & Bornstein, M. H. (2000). The Hebrew Communicative Development Inventory: Language specific properties and cross-linguistic generalizations, Journal of Child Language, 27, 1-25."
     },
@@ -348,6 +379,7 @@
         "file": "raw_data/Cantonese_WS/CantoneseWS_Tardif.csv",
         "splitcol": false,
         "norming": true,
+        "longitudinal": false,
         "contributor": "Twila Tardif, University of Michigan",
         "citation": "Tardif, T., Fletcher, P., Liang, W., & Kaciroti, N. (2009). Early vocabulary development in Mandarin (Putonghua) and Cantonese. Journal of child language, 36(05), 1115-1144."
     },
@@ -359,6 +391,7 @@
         "file": "raw_data/Mandarin_WS/MandarinWS_Tardif.csv",
         "splitcol": false,
         "norming": true,
+        "longitudinal": false,
         "contributor": "Twila Tardif, University of Michigan",
         "citation": "Tardif, T., Fletcher, P., Liang, W., & Kaciroti, N. (2009). Early vocabulary development in Mandarin (Putonghua) and Cantonese. Journal of child language, 36(05), 1115-1144."
     },
@@ -370,6 +403,7 @@
         "file": "raw_data/BSL_WG/BSLWG_Woll.xlsx",
         "splitcol": true,
         "norming": true,
+        "longitudinal": false,
         "contributor": "Bencie Woll, University College London",
         "citation": "Woolfe, T., Herman, R., Roy, P., & Woll, B. (2010). Early vocabulary development in deaf native signers: a British Sign Language adaptation of the communicative development inventories. Journal of Child Psychology and Psychiatry, 51(3), 322-331."
     },
@@ -381,6 +415,7 @@
         "file": "raw_data/Mandarin_TC/MandarinTC_Li.csv",
         "splitcol": false,
         "norming": false,
+        "longitudinal": false,
         "contributor": "Ping Li, Pennsylvania State University",
         "citation": "Hao, M., Shu, H., Xing, A., & Li, P. (2008).  Early vocabulary inventory for Mandarin Chinese.  Behavior Research Methods, 40, 728-733."
     },
@@ -392,6 +427,7 @@
         "file": "raw_data/English_WG/EnglishWG_Frank_xsface.xlsx",
         "splitcol": false,
         "norming": false,
+        "longitudinal": false,
         "contributor": "Michael C. Frank, Stanford University",
         "citation": ""
     },
@@ -403,6 +439,7 @@
         "file": "raw_data/Italian_WG/ItalianWG_Caselli.csv",
         "splitcol": true,
         "norming": true,
+        "longitudinal": false,
         "contributor": "Christina Caselli, Institute of Cognitive Sciences and Technologies",
         "citation": "Caselli, M. C., Rinaldi, P., Stefanini, S., & Volterra, V. (2012). Early action and gesture 'vocabulary' and its relation with word comprehension and production. Child Development, 83(2), 526-542."
     },
@@ -414,6 +451,7 @@
         "file": "raw_data/Danish_WG/DanishWG_CLEX.csv",
         "splitcol": false,
         "norming": true,
+        "longitudinal": false,
         "contributor": "Dorthe Bleses, University of Southern Denmark",
         "citation": "Bleses, D., Vach, W., Slott, M., Wehberg, S., Thomsen, P., Madsen, T. & Basbøll, H. (2008). The Danish Communicative Development Inventories: validity and main developmental trends. Journal of Child Language, 35, 619-650."
     },
@@ -425,6 +463,7 @@
         "file": "raw_data/French_Quebec_WG/FrenchQuebecWG_CLEX.csv",
         "splitcol": false,
         "norming": true,
+        "longitudinal": false,
         "contributor": "Natacha Trudeau, Université de Montréal",
         "citation": "Boudreault, M. C., Cabirol, E. A., Poulin-Dubois, D., Sutton, A., & Trudeau, N. (2007). MacArthur Communicative Development Inventories: Validity and preliminary normative data. La Revue d’orthophonie et d’audiologie, 31(1), 27-37."
     }
