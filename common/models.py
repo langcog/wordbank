@@ -8,6 +8,8 @@ class Source(models.Model):
     instrument_form = models.CharField(max_length=20)
     contributor = models.TextField(blank=True)
     citation = models.TextField(blank=True)
+    norming = models.BooleanField(default=False)
+    longitudinal = models.BooleanField(default=False)
 
 
 class Instrument(models.Model):
