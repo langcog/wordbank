@@ -51,7 +51,10 @@ trajectory_data_fun <- function(admins, fun_instrument, fun_measure,
       filter(measure == fun_measure) %>%
       filter(!is.na(age)) %>%
       group_by(instrument_id, num_item_id, age) %>%
-      summarise(prop = sum(value, na.rm = TRUE) / length(value)) %>%
+      summarise(total = n(),
+                prop = sum(value, na.rm = TRUE) / total) %>%
+                #num_true = sum(value, na.rm = TRUE),
+                #num_false = n() - num_true) %>%
       group_by(instrument_id) %>%
       mutate(item_id = sprintf("item_%s", num_item_id)) %>%
       rowwise() %>%
@@ -172,8 +175,9 @@ shinyServer(function(input, output, session) {
     } else {
       amin <- age_min()
       amax <- age_max()
-      ggplot(traj, aes(x = age, y = prop, colour = item, label = item)) +
-        geom_smooth(aes(linetype = type), se = FALSE, method = "loess") +
+      ggplot(traj, aes(x = age, y = prop, colour = item, fill = item, label = item)) +
+        geom_smooth(aes(linetype = type, weight = total), method = "glm",
+                    method.args = list(family = "binomial")) +
         geom_point(aes(shape = form)) +
         scale_shape_manual(name = "", values = c(20, 1), guide = FALSE) +
         scale_linetype_discrete(guide = FALSE) +
@@ -185,6 +189,8 @@ shinyServer(function(input, output, session) {
                            breaks = seq(0, 1, 0.25)) +
         scale_colour_manual(guide = FALSE,
                             values = stable_order_palete(length(unique(traj$item)))) +
+        scale_fill_manual(guide = FALSE,
+                          values = stable_order_palete(length(unique(traj$item)))) +
         geom_dl(method = list(dl.trans(x = x + 0.3), "last.qp", cex = 1,
                               fontfamily = font))
     }
