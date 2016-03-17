@@ -9,6 +9,7 @@ class Source(models.Model):
     contributor = models.TextField(blank=True)
     citation = models.TextField(blank=True)
     norming = models.BooleanField(default=False)
+    longitudinal = models.BooleanField(default=False)
 
 
 class Instrument(models.Model):
