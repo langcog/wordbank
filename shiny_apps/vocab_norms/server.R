@@ -229,10 +229,10 @@ shinyServer(function(input, output, session) {
   plot <- reactive({
     req(data())
 
-    pt_color <- "#657b83"
+    pt_color <- "#839496"
 
     p <- ggplot(data(), aes(x = age, y = vocab)) +
-      geom_jitter(width = 0.1, size = 1, color = pt_color) +
+      geom_jitter(size = .6, color = pt_color, alpha = .7) +
       scale_x_continuous(name = "\nAge (months)",
                          breaks = seq(age_min(), age_max(), by = 2),
                          limits = c(age_min(), age_max())) +
@@ -244,8 +244,8 @@ shinyServer(function(input, output, session) {
         colour_name <- names(which(possible_demo_fields == input_demo()))
         colour_values <- length(unique(curves()$demo)) %>% solarized_palette()
         p <- p +
-          geom_line(data = curves(),
-                    aes(x = age, y = predicted, color = demo_label)) +
+          geom_line(aes(x = age, y = predicted, color = demo_label),
+                    data = curves(), size = 1.5) +
           scale_color_manual(name = colour_name,
                              values = colour_values)
       }
@@ -257,8 +257,8 @@ shinyServer(function(input, output, session) {
           solarized_palette() %>%
           rev()
         p <- p +
-          geom_line(data = curves(), size = 1,
-                    aes(x = age, y = predicted, color = quantile)) +
+          geom_line(aes(x = age, y = predicted, color = quantile),
+                    data = curves(), size = 1.5) +
           scale_color_manual(name = "Quantile", values = colour_values) +
           guides(color = guide_legend(reverse = TRUE))
       }
