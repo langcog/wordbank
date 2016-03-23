@@ -35,8 +35,9 @@ shinyServer(function(input, output, session) {
       distinct()
     ggplot(uni_lemma_data(), aes(x = age)) +
       facet_grid(measure ~ language) +
-      #geom_line(aes(y = prop, colour = language)) +
       geom_point(aes(y = prop, colour = language)) +
+      # geom_smooth(aes(y = prop, colour = language, weight = ), method = "loess", se = FALSE,
+      #             size = 1.5) +
       geom_line(aes(y = fit_prop, colour = language), size = 1.5) +
       geom_label(aes(x = 8, y = 1, label = words), data = words_data,
                  family = font, label.padding = unit(0.15, "lines"),
