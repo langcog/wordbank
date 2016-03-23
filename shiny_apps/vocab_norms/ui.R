@@ -76,7 +76,7 @@ shinyUI(fluidPage(
                    br(),
                    bsCollapse(id = "details", open = NULL,
                               bsCollapsePanel(
-                                "More details...",
+                                "More details and important disclaimer...",
                                 includeMarkdown("docs/details.md"),
                                 style = "primary")
                    )
