@@ -9,7 +9,7 @@ shinyUI(fluidPage(
 
   br(),
   bsCollapse(id = "doc", open = "title",
-             bsCollapsePanel(title = h3("Cross-Linguistic Meaning Trajectories"),
+             bsCollapsePanel(title = h3("Cross-Linguistic Trajectories"),
                              includeMarkdown("docs/description.md"),
                              value = "title",
                              style = "default")),
