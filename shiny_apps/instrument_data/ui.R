@@ -1,5 +1,7 @@
 library(shiny)
 library(shinythemes)
+library(DT)
+
 
 shinyUI(fluidPage(
   theme = shinytheme("spacelab"),
@@ -39,7 +41,7 @@ shinyUI(fluidPage(
         condition = "$('html').attr('class') != 'shiny-busy'",
         uiOutput("download_button"),
         br(),
-        dataTableOutput(outputId = "table")
+        DT::dataTableOutput(outputId = "table")
       )
     )
 

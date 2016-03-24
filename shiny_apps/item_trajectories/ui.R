@@ -2,6 +2,7 @@ library(shiny)
 library(shinythemes)
 library(shinyBS)
 library(jsonlite)
+library(markdown)
 
 
 pops <- fromJSON("docs/popovers.json")
