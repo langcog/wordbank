@@ -1,0 +1,25 @@
+type,value,data_value
+sex,M,M
+sex,F,F
+ethnicity,A,
+ethnicity,B,
+ethnicity,H,
+ethnicity,W,
+ethnicity,O,
+word,produces,1
+word,,0
+usage,not yet,0
+usage,sometimes,1
+usage,often,2
+ending,not yet,0
+ending,sometimes,1
+ending,often,2
+word_form,produces,1
+word_form,,0
+word_ending,produces,1
+word_ending,,0
+combine,not yet,0
+combine,sometimes,1
+combine,often,2
+complexity,simple,0
+complexity,complex,1
