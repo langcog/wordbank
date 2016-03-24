@@ -10,7 +10,7 @@ library(wordbankr)
 library(langcog)
 source("predictQR_fixed.R")
 theme_set(theme_mikabr(base_size = 18))
-mode <- "local"
+mode <- "remote"
 
 input <- list(language = "English", form = "WS", measure = "production",
               quantiles = "Standard", demo = "sex")
@@ -39,7 +39,6 @@ shinyServer(function(input, output, session) {
   start_measure <- "production"
   start_demo <- "identity"
 
-
   input_language <- reactive({
     input$language
     #ifelse(is.null(input$language), start_language, input$language)
@@ -56,7 +55,15 @@ shinyServer(function(input, output, session) {
   input_demo <- reactive({
     ifelse(is.null(input$demo), start_demo, input$demo)
   })
-
+  
+  input_cross_sectional <- reactive({
+    'cross_sectional' %in% input$data_filter
+  })
+  
+  input_norming <- reactive({
+    'norming' %in% input$data_filter
+  })
+  
   input_quantiles <- reactive({
     switch(input$quantiles,
            Standard = c(0.10, 0.25, 0.50, 0.75, 0.90),
@@ -81,11 +88,25 @@ shinyServer(function(input, output, session) {
     }
   })
 
-  filtered_admins <- reactive({
+  form_admins <- reactive({
     admins %>%
       filter(language == input_language(),
              form == input_form(),
-             measure == input_measure())
+             measure == input_measure()) %>%
+      mutate(cross_sectional = !longitudinal)
+  })
+  
+  filtered_admins <- reactive({
+    
+    filtered_admins <- form_admins()
+    
+    if(input_cross_sectional())
+      filtered_admins <- filter(filtered_admins, longitudinal == FALSE)
+    
+    if(input_norming()) 
+      filtered_admins <- filter(filtered_admins, norming == TRUE)
+
+    filtered_admins
   })
 
   clump_step <- function(groups, map, fun_demo) {
@@ -148,11 +169,13 @@ shinyServer(function(input, output, session) {
   }
 
   clumped_demo_groups <- function(fun_demo) {
+    
     demo_groups <- filtered_admins() %>%
       rename_(demo = fun_demo) %>%
       filter(!is.na(demo)) %>%
       group_by(demo) %>%
       summarise(n = n())
+    
     map <- as.list(as.character(demo_groups$demo))
     names(map) <- map
     clump_demo_groups(demo_groups, map, fun_demo)
@@ -265,7 +288,7 @@ shinyServer(function(input, output, session) {
     }
     p
   })
-
+  
   forms <- reactive({
     form_opts <- unique(filter(instruments, language == input_language())$form)
     Filter(function(form) form %in% form_opts,
@@ -309,6 +332,25 @@ shinyServer(function(input, output, session) {
   output$measure_selector <- renderUI({
     selectizeInput("measure", label = h4("Measure"),
                    choices = measures(), selected = input_measure())
+  })
+  
+  output$data_filter <- renderUI({
+    
+    possible_filters =  c("cross-sectional data" = "cross_sectional",
+                 "normative data" = "norming")
+    
+    available_filters <- Filter(
+      function(data_filter) !all(is.na(form_admins()[[data_filter]]) | 
+                              form_admins()[[data_filter]] == FALSE),
+     possible_filters
+    ) 
+    
+    
+    
+    checkboxGroupInput("data_filter", "Choose Data",
+                       choices = available_filters,
+                       selected = "cross_sectional")
+    
   })
 
   output$demo_selector <- renderUI({
