@@ -46,12 +46,6 @@ shinyUI(fluidPage(
                title = NULL,
                content = HTML(sprintf("<small>%s</small>", pops$words)),
                placement = "right"),
-        br(),
-        downloadButton("download_plot", "Download Plot",
-                       class = "btn-primary btn-sm"),
-        br(),br(),
-        downloadButton("download_table", "Download Table",
-                       class = "btn-primary btn-sm"),
         width = 3)),
 
     mainPanel(
@@ -65,17 +59,25 @@ shinyUI(fluidPage(
                  conditionalPanel(
                    condition = "output.loaded == 1",
                    bsAlert("many_words"),
+                   #br(),
                    plotOutput("trajectory_plot", width = "100%",
                               height = "auto"),
+                   br(),
+                   downloadButton("download_plot", "Download Plot",
+                                  class = "btn-default btn-xs"),
+                   br(),br(),
                    bsCollapse(
                      id = "details", open = NULL,
                      bsCollapsePanel("More details...",
                                      includeMarkdown("docs/details.md"),
-                                     style = "primary"))
+                                     style = "default"))
                  )
         ),
         tabPanel("Table",
                  br(),
+                 downloadButton("download_table", "Download Table",
+                                class = "btn-default btn-xs"),
+                 br(), br(),
                  tableOutput("table"))
       )
     )
