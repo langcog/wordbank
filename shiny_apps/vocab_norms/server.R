@@ -320,17 +320,17 @@ shinyServer(function(input, output, session) {
                               digits = 1)
 
   output$language_selector <- renderUI({
-    selectizeInput("language", label = h4("Language"),
+    selectizeInput("language", label = strong("Language"),
                    choices = languages, selected = start_language)
   })
 
   output$form_selector <- renderUI({
-    selectizeInput("form", label = h4("Form"),
+    selectizeInput("form", label = strong("Form"),
                    choices = forms(), selected = input_form())
   })
 
   output$measure_selector <- renderUI({
-    selectizeInput("measure", label = h4("Measure"),
+    selectizeInput("measure", label = strong("Measure"),
                    choices = measures(), selected = input_measure())
   })
   
