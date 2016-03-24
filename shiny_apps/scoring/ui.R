@@ -1,6 +1,7 @@
 library(shiny)
 library(shinythemes)
 library(shinyBS)
+library(DT)
 
 
 shinyUI(fluidPage(
@@ -52,7 +53,7 @@ shinyUI(fluidPage(
       uiOutput('tableTitle'),
       uiOutput('download'),
       br(),
-      dataTableOutput('contents')
+      DT::dataTableOutput('contents')
     )
   )
 ))
