@@ -54,16 +54,7 @@ shinyUI(fluidPage(
                     selected = "Standard"),
         bsPopover("quantiles", title = NULL,
                   content = HTML(sprintf("<small>%s</small>", pops$quantile)),
-                  placement = "right"),
-        br(),
-        downloadButton("download_plot", "Download Plot",
-                       class = "btn-primary btn-sm"),
-        br(),br(),
-        downloadButton("download_table", "Download Table",
-                       class = "btn-primary btn-sm"),
-        br(),br(),
-        downloadButton("download_data", "Download Raw Data",
-                       class = "btn-primary btn-sm")
+                  placement = "right")
       )),
 
     mainPanel(
@@ -77,16 +68,23 @@ shinyUI(fluidPage(
                  conditionalPanel(
                    condition = "output.loaded == 1",
                    plotOutput("plot", width = "100%", height = "auto"),
-                   br(),
+                   downloadButton("download_plot", "Download Plot",
+                                  class = "btn-default btn-xs"),
+                   downloadButton("download_data", "Download Raw Data",
+                                  class = "btn-default btn-xs"),
+                   br(), br(),
                    bsCollapse(id = "details", open = NULL,
                               bsCollapsePanel(
-                                "More details...",
+                                "More details and important disclaimer...",
                                 includeMarkdown("docs/details.md"),
-                                style = "primary")
+                                style = "default")
                    )
                  )),
         tabPanel("Table",
                  br(),
+                 downloadButton("download_table", "Download Table",
+                                class = "btn-default btn-xs"),
+                 br(), br(),
                  tableOutput("table"))
       )
     )
