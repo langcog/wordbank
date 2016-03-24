@@ -2,6 +2,7 @@ library(shiny)
 library(dplyr)
 library(readr)
 library(tidyr)
+library(DT)
 
 shinyServer(function(input, output) {
   ## uploaded datafile
