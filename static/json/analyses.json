@@ -21,6 +21,13 @@
   "source": "shiny"
 },
 {
+  "title": "Cross-Linguistic Trajectories",
+  "name": "uni_lemmas",
+  "thumbnail": "static/images/sample_plots/uni_lemmas.png",
+  "type": "visualizations",
+  "source": "shiny"
+},
+{
   "title": "Item Trajectories",
   "name": "item_trajectories",
   "thumbnail": "static/images/sample_plots/items.png",
