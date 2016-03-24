@@ -1,6 +1,7 @@
 library(shiny)
 library(shinythemes)
 library(shinyBS)
+library(markdown)
 
 
 shinyUI(fluidPage(
