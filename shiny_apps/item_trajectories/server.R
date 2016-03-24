@@ -111,11 +111,11 @@ shinyServer(function(input, output, session) {
   input_measure <- reactive({
     if (is.null(input$measure)) start_measure else input$measure
   })
-  
+
   input_cross_sectional <- reactive({
     'cross_sectional' %in% input$data_filter
   })
-  
+
   input_norming <- reactive({
     'norming' %in% input$data_filter
   })
@@ -144,24 +144,24 @@ shinyServer(function(input, output, session) {
     filter(instrument_tables, language == input_language(),
            form %in% input_forms())
   })
-  
+
   form_admins <- reactive({
     admins %>%
       filter(language == input_language(),
              form == input_form()) %>%
       mutate(cross_sectional = !longitudinal)
   })
-  
+
   filtered_admins <- reactive({
-    
+
     filtered_admins <- form_admins()
-    
+
     if(input_cross_sectional())
       filtered_admins <- filter(filtered_admins, longitudinal == FALSE)
-    
+
     if(input_norming())
       filtered_admins <- filter(filtered_admins, norming == TRUE)
-    
+
     filtered_admins
   })
 
@@ -293,24 +293,24 @@ shinyServer(function(input, output, session) {
   })
 
   output$data_filter <- renderUI({
-    
+
     possible_filters =  c("cross-sectional data" = "cross_sectional",
                           "normative data" = "norming")
-    
+
     available_filters <- Filter(
       function(data_filter) !all(is.na(form_admins()[[data_filter]]) |
                                    form_admins()[[data_filter]] == FALSE),
       possible_filters
     )
-    
-    
-    
+
+
+
     checkboxGroupInput("data_filter", "Choose Data",
                        choices = available_filters,
                        selected = "cross_sectional")
-    
+
   })
-  
+
   table_data <- reactive({
     traj <- trajectory_data()
     if (nrow(traj) == 0) {
