@@ -39,7 +39,11 @@ shinyUI(fluidPage(
         uiOutput("measure_selector"),
         bsPopover("measure_selector", title = NULL,
                   content = HTML(sprintf("<small>%s</small>", pops$measure)),
-                  placement = "right"),
+                  placement = "right")),
+
+      conditionalPanel(
+        condition = "output.loaded == 1",
+        uiOutput("data_filter"),
         uiOutput("demo_selector"),
         bsPopover("demo_selector", title = NULL,
                   content = HTML(sprintf("<small>%s</small>", pops$demo)),
