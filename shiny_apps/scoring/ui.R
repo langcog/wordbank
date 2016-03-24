@@ -11,7 +11,9 @@ shinyUI(fluidPage(
              bsCollapsePanel(
                title = h3("CDI Administration Scoring"),
                "This app is a scoring tool for MB-CDI administrations, using the Fenson et al. (2007) revised norming data.",
-               # "To use it, upload a tab- or comma-separated file with a column indicating the number of words the child knows.",
+               "To use it, upload a tab- or comma-delimited file.",
+               "The file must contain columns for vocabulary size (number of words checked on the form), age (months), and gender, and can optionally contain other columns.",
+               "These fields are then used to look up gender-specific percentiles.",
                value = "title",
                style = "default")),
 

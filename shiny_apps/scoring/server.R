@@ -37,7 +37,6 @@ shinyServer(function(input, output) {
         need(input$age_col != "", "Please select an age column!"),
         need(input$vocab_col != "", "Please select a vocabulary column!"),
         need(input$gender_col != "", "Please select a gender column!")
-        
       )
       
       data() %>%
@@ -45,7 +44,8 @@ shinyServer(function(input, output) {
         rename_("age_months" = input$age_col,
                 "vocab_nwords" = input$vocab_col, 
                 "gender" = input$gender_col) %>%
-        mutate(gender = ifelse(gender == input$male_val, "male", "female")) %>%
+        mutate(age_months = floor(age_months),
+               gender = ifelse(gender == input$male_val, "male", "female")) %>%
         left_join(vocab_data())
     }
   })
@@ -125,7 +125,5 @@ shinyServer(function(input, output) {
   )
   
   ## render table of output
-  output$contents <- renderDataTable({
-    merged_data()
-  }, options = list(autoWidth="true"))
+  output$contents <- renderDataTable(merged_data())
 })
