@@ -1,0 +1,695 @@
+columns,field,group,type 
+id,study_id,child,study_id
+pohlavie,sex,child,sex
+AGE 1.meranie mesiac od 8;00 -8;30,data_age,admin,data_age
+A1.1 ach,item_1,item,word
+A1.2 au,item_2,item,word
+A1.3 bim-bam,item_3,item,word
+A1.4 brm,item_4,item,word
+A1.5 bum,item_5,item,word
+A1.6 __up,item_6,item,word
+A1.7 fuj,item_7,item,word
+A1.8 hop,item_8,item,word
+A1.9 chacha,item_9,item,word
+A1.10 jáj,item_10,item,word
+A1.11 ka_,item_11,item,word
+A1.12 kikirikí,item_12,item,word
+A1.13 kuk,item_13,item,word
+A1.14 pip,item_14,item,word
+A1.15 šiši,item_15,item,word
+A1.16 tik-tak,item_16,item,word
+A2.1 bobrík,item_17,item,word
+A2.2 bocian,item_18,item,word
+A2.3 delfín,item_19,item,word
+A2.4 had,item_20,item,word
+A2.5 holub,item_21,item,word
+A2.6 hroch,item_22,item,word
+A2.7 hus,item_23,item,word
+A2.8 húsenic,item_24,item,word
+A2.9 chrobák,item_41,item,word
+A2.10 chvostík,item_42,item,word
+A2.11 jašterica,item_43,item,word
+A2.12 jele_,item_44,item,word
+A2.13 ježko,item_45,item,word
+A2.14 ka_ka,item_46,item,word
+A2.15 kohút,item_47,item,word
+A2.16 koník,item_48,item,word
+A2.17 korytna_ka,item_49,item,word
+A2.18 koza,item_50,item,word
+A2.19 krava,item_51,item,word
+A2.20 krídla,item_52,item,word
+A2.21 krokodíl,item_53,item,word
+A2. 22 krtko,item_54,item,word
+A2.23 kuku_ka,item_25,item,word
+A2.24 kuriatko,item_26,item,word
+A2.25 labka,item_27,item,word
+A2.26 labu_,item_28,item,word
+A2.27 lastovi_ka,item_29,item,word
+A2.28 lev,item_30,item,word
+A2.29 lienka,item_31,item,word
+A2.30 líška,item_32,item,word
+A2.31 domáce zviera,item_55,item,word
+A2.32 medve_,item_56,item,word
+A2.33 ma_ka,item_57,item,word
+A2.34 motý_,item_58,item,word
+A2.35 mravec,item_59,item,word
+A2.36 mucha,item_60,item,word
+A2.37 myška,item_61,item,word
+A2.38 opica,item_62,item,word
+A2.39 ovca,item_63,item,word
+A2.40 papagáj,item_64,item,word
+A2.41 parôžky,item_65,item,word
+A2.42 pavúk,item_66,item,word
+A2.43pes,item_67,item,word
+A2.44 prasa,item_68,item,word
+A2.45 ryba,item_33,item,word
+A2.46 slimák,item_34,item,word
+A2.47 slon,item_35,item,word
+A2.48 somárik/oslík,item_36,item,word
+A2.49 sova,item_37,item,word
+A2.50 _ava,item_38,item,word
+A2.51 tiger,item_39,item,word
+A2.52 tule_,item_40,item,word
+A2.53 v_ela,item_69,item,word
+A2.54 veveri_ka,item_70,item,word
+A2.55 vlk,item_71,item,word
+A2.56 vrabec,item_72,item,word
+A2.57 vrana,item_73,item,word
+A2.58 vtá_ik,item_74,item,word
+A2.59 zajac,item_75,item,word
+A2.60 zebra,item_76,item,word
+A2.61 zobák,item_77,item,word
+A2.62 zviera,item_78,item,word
+A2.63 žaba,item_79,item,word
+A2.64 žirafa,item_80,item,word
+A3.1auto,item_81,item,word
+A3.2 autobus,item_82,item,word
+A3.3 bager,item_83,item,word
+A3.4 bicykel,item_84,item,word
+A3.5 džíp,item_85,item,word
+A3.6 typy áut,item_86,item,word
+A3.7 formula,item_87,item,word
+A3.8 kamión,item_88,item,word
+A3.9 ko_iar,item_89,item,word
+A3.10 lietadlo,item_90,item,word
+A3.11 lo_,item_91,item,word
+A3.12 lokomotíva,item_92,item,word
+A3.13 mieša_ka,item_93,item,word
+A3.14 mercedes,item_94,item,word
+A3.15 motorka,item_95,item,word
+A3.16 raketa,item_96,item,word
+A3.17 sanitka,item_97,item,word
+A3.18 traktor,item_98,item,word
+A3.19 trojkolka,item_99,item,word
+A3.20 vagón,item_100,item,word
+A3.21 vlak,item_101,item,word
+A3.22 vle_ka,item_102,item,word
+A3.23 volant,item_103,item,word
+A3.24 vozík,item_104,item,word
+A3.25 vrtu_ník,item_105,item,word
+A3.26 žeriav,item_106,item,word
+A4.1 bábika,item_107,item,word
+A4.2 balón,item_108,item,word
+A4.3 bublina/bublifuk,item_109,item,word
+A4.4 bubon,item_110,item,word
+A4.5 drá_ik,item_111,item,word
+A4.6 farbi_ka/pastelka,item_127,item,word
+A4.7 farby,item_128,item,word
+A4.8 fixa,item_126,item,word
+A4.9 formi_ka,item_117,item,word
+A4.10 gu_ka,item_112,item,word
+A4.11 hra_ka,item_125,item,word
+A4.12 karta,item_122,item,word
+A4.13 kniha,item_121,item,word
+A4.14 kocka,item_113,item,word
+A4.15 lopta/gól,item_114,item,word
+A4.16 obrázok,item_119,item,word
+A4.17 panák/figúrka,item_115,item,word
+A4.18 pexeso,item_123,item,word
+A4.19 písmenká/abeceda,item_120,item,word
+A4.20 puzzle/sklada_ka,item_118,item,word
+A4.21 rozprávka,item_124,item,word
+A4.22 vedierko/kýblik,item_116,item,word
+A4.23 veža,item_129,item,word
+A4.24 vlajka/zástavka,item_130,item,word
+A5.1ananás,item_131,item,word
+A5.2 banán,item_132,item,word
+A5.3 cestoviny/rezance,item_133,item,word
+A5.4 cibu_a,item_134,item,word
+A5.5 cukor,item_135,item,word
+A5.6 cukríky,item_136,item,word
+A5.7 _aj,item_137,item,word
+A5.8_okoláda,item_138,item,word
+A5.9 džús,item_139,item,word
+A5.10 fazu_ka,item_140,item,word
+A5.11 guláš,item_141,item,word
+A5.12 halušky,item_142,item,word
+A5.13 hrach,item_143,item,word
+A5.14 hruška,item_144,item,word
+A5.15 huba/hríbik,item_145,item,word
+A5.16 chlieb,item_146,item,word
+A5.17 chrumky,item_147,item,word
+A5.18 jablko,item_148,item,word
+A5.19 jahoda,item_149,item,word
+A5.20 jedlo/ham,item_150,item,word
+A5.21 jogurt ,item_151,item,word
+A5.22 kakao/granko,item_152,item,word
+A5.23 kaša,item_153,item,word
+A5.24 káva,item_154,item,word
+A5.25 keksík,item_155,item,word
+A5.26 klobása,item_156,item,word
+A5.27 kolá_ik,item_157,item,word
+A5.28 kompót,item_158,item,word
+A5.29 kôrka,item_159,item,word
+A5.30 krupica,item_160,item,word
+A5.31 kukurica,item_161,item,word
+A5.32 lízatko/lízanka,item_162,item,word
+A5.33 maslo,item_163,item,word
+A5.34 mäso,item_164,item,word
+A5.35 med,item_165,item,word
+A5.36 mlieko,item_166,item,word
+A5.37 mrkva,item_167,item,word
+A5.38 obed/ve_era,item_168,item,word
+A5.39 orech,item_169,item,word
+A5.40 palacinka,item_170,item,word
+A5.41 paradjka ,item_171,item,word
+A5.42 piškóta,item_172,item,word
+A5.43 polievka,item_173,item,word
+A5.44 pivo,item_174,item,word
+A5.45 pomaran_,item_175,item,word
+A5.46 rožok,item_176,item,word
+A5.47 ryža,item_177,item,word
+A5.48 slivka,item_178,item,word
+A5.49 so_,item_179,item,word
+A5.50 syr,item_180,item,word
+A5.51 šalát,item_181,item,word
+A5.52 ty_inky,item_182,item,word
+A5.53 vají_ko,item_183,item,word
+A5.54 voda,item_184,item,word
+A5.55 zemiak,item_185,item,word
+A5.56 zmrzlina,item_186,item,word
+A5.57 džem/lekvár,item_187,item,word
+A6.1 body,item_188,item,word
+A6.2 bunda,item_189,item,word
+A6.3 _iapka,item_190,item,word
+A6.4 _ižmy,item_191,item,word
+A6.5 klobúk,item_192,item,word
+A6.6 koše_a,item_193,item,word
+A6.7 maš_a/gumi_ka,item_194,item,word
+A6.8 nohavice,item_195,item,word
+A6.9 oble_enie,item_196,item,word
+A6.10 pan_uchy,item_197,item,word
+A6.11 papu_ky,item_198,item,word
+A6.12 plienka,item_199,item,word
+A6.13 podbradník,item_200,item,word
+A6.14 ponožky,item_201,item,word
+A6.15 pršipláš_,item_202,item,word
+A6.16 pyžamo,item_203,item,word
+A6.17 rukavice,item_204,item,word
+A6.18 sandálky,item_205,item,word
+A6.19 suk_a,item_206,item,word
+A6.20 svetrík/pulóver,item_207,item,word
+A6.21 šál,item_208,item,word
+A6.22 šaty,item_209,item,word
+A6.23 tepláky,item_210,item,word
+A6.24 topánky,item_211,item,word
+A6.25 tri_ko,item_212,item,word
+A7.1 bo_avé miesto,item_213,item,word
+A7.2 brada,item_214,item,word
+A7.3 bruško,item_215,item,word
+A7.4 cop/vrko_,item_216,item,word
+A7.5 _elo,item_217,item,word
+A7.6 hlava,item_218,item,word
+A7.7 hr_a,item_219,item,word
+A7.8 chrbátik,item_220,item,word
+A7.9 jazyk,item_221,item,word
+A7.10 kaka/hovienko,item_222,item,word
+A7.11 kolienko,item_223,item,word
+A7.12 lí_ko,item_224,item,word
+A7.13 nechty,item_225,item,word
+A7.14 noha,item_226,item,word
+A7.15 nos,item_227,item,word
+A7.16 oko,item_228,item,word
+A7.17 palec,item_229,item,word
+A7.18 prsník,item_230,item,word
+A7.19 pohlavné orgány ženské/mužské,item_231,item,word
+A7.20 prsty,item_232,item,word
+A7.21 pupok,item_233,item,word
+A7.22 ruka,item_234,item,word
+A7.23 soplík,item_235,item,word
+A7.24 ucho,item_236,item,word
+A7.25 ústa/pusa,item_237,item,word
+A7.26 vlasy,item_238,item,word
+A7.27 zadok,item_239,item,word
+A7.28 zuby,item_240,item,word
+A8.1 dvere,item_242,item,word
+A8.2 koberec,item_243,item,word
+A8.3 kôš,item_244,item,word
+A8.4 kuchy_a,item_245,item,word
+A8.5 lampa,item_241,item,word
+A8.6 okno,item_246,item,word
+A8.7 paplónik,item_247,item,word
+A8.8 po_íta_,item_248,item,word
+A8.9 poste_,item_249,item,word
+A8.10 prá_ka,item_250,item,word
+A8.11 rádio,item_251,item,word
+A8.12 rúra/sporák,item_252,item,word
+A8.13 seda_ka,item_253,item,word
+A8.14 schody,item_254,item,word
+A8.15 skri_a,item_255,item,word
+A8.16 stena,item_256,item,word
+A8.17 stoli_ka/kreslo,item_257,item,word
+A8.18 stôl,item_258,item,word
+A8.19 televízor,item_259,item,word
+A8.20 va_a,item_260,item,word
+A8.21 video,item_261,item,word
+A8.22 záchod,item_262,item,word
+A8.23 zrkadlo,item_263,item,word
+A9.1 bodka,item_264,item,word
+A9.2 cume_/dudel,item_265,item,word
+A9.3 dáždnik,item_266,item,word
+A9.4 diera,item_267,item,word
+A9.5 dvd,item_268,item,word
+A9.6 fajka,item_269,item,word
+A9.7 f_aša,item_270,item,word
+A9.8 gombík,item_271,item,word
+A9.9 hodiny,item_272,item,word
+A9.10 kamera,item_273,item,word
+A9.11 kefa,item_274,item,word
+A9.12 kladivo,item_275,item,word
+A9.13 k_ú_e,item_276,item,word
+A9.14 koliesko,item_277,item,word
+A9.15 kos_,item_278,item,word
+A9.16 košík,item_279,item,word
+A9.17 krhli_ka,item_280,item,word
+A9.18 kvety,item_281,item,word
+A9.19 lepidlo,item_282,item,word
+A9.20 liek/kvapky/sirup,item_283,item,word
+A9.21 lopata/lopatka,item_284,item,word
+A9.22 lyži_ka,item_285,item,word
+A9.23 metla,item_286,item,word
+A9.24 miska/mišti_ka,item_287,item,word
+A9.25 mydlo,item_288,item,word
+A9.26 nabera_ka,item_289,item,word
+A9.27 nálepky,item_290,item,word
+A9.28 no_ník,item_291,item,word
+A9.29 nôž,item_292,item,word
+A9.30 okuliare,item_293,item,word
+A9.31 palica,item_294,item,word
+A9.32 papier,item_295,item,word
+A9.33 pena,item_296,item,word
+A9.34 peniažky,item_297,item,word
+A9.35 pero/ceruzka,item_298,item,word
+A9.36 pokrievka,item_299,item,word
+A9.37 prádlo,item_300,item,word
+A9.38 pumpa,item_301,item,word
+A9.39 smeti,item_302,item,word
+A9.40 svetlo,item_323,item,word
+A9.41 svie_ka/kahan_ek,item_304,item,word
+A9.42 šálka/pohár,item_305,item,word
+A9.43 šampón,item_306,item,word
+A9.44 škatu_ka/krabi_ka,item_307,item,word
+A9.45 šnúrka,item_308,item,word
+A9.46 špongia,item_309,item,word
+A9.47 tanier,item_310,item,word
+A9.48 taška,item_311,item,word
+A9.49 telefón,item_312,item,word
+A9.50 váha,item_313,item,word
+A9.51 vankúš,item_314,item,word
+A9.52 vareška,item_315,item,word
+A9.53 váza,item_316,item,word
+A9.54 ventilátor,item_317,item,word
+A9.55 vrchnák,item_318,item,word
+A9.56 vysáva_,item_319,item,word
+A9.57 zástr_ka/elektrika,item_320,item,word
+A9.58 zubná pasta,item_321,item,word
+A9.59 zvon_ek,item_322,item,word
+A9.60 udica,item_303,item,word
+A10.1 balkón,item_347,item,word
+A10.2 bazén/kúpalisko,item_343,item,word
+A10.3 búda,item_324,item,word
+A10.4 cesta,item_348,item,word
+A10.5 dáž_,item_325,item,word
+A10.6 dom,item_326,item,word
+A10.7 domov,item_327,item,word
+A10.8 dym,item_351,item,word
+A10.9 garáž,item_328,item,word
+A10.10 hojda_ka,item_329,item,word
+A10.11 hviezda,item_352,item,word
+A10.12 jama/diera,item_344,item,word
+A10.13 jasle/škola,item_330,item,word
+A10.14 kame_,item_350,item,word
+A10.15 ko_ajnice,item_353,item,word
+A10.16 komín,item_359,item,word
+A10.17 kostol,item_331,item,word
+A10.18 mesiac,item_354,item,word
+A10.19 more,item_349,item,word
+A10.20 mrak/oblak,item_355,item,word
+A10.21 názvy kvetov(napr. ruža...),item_362,item,word
+A10.22 obchod,item_332,item,word
+A10.23 park,item_333,item,word
+A10.24 pieskovisko/piesok,item_334,item,word
+A10.25 plaváre_,item_335,item,word
+A10.26 reštaurácia,item_346,item,word
+A10.27 slnie_ko,item_336,item,word
+A10.28 sneh,item_337,item,word
+A10.29 snehuliak,item_363,item,word
+A10.30 strecha,item_364,item,word
+A10.31 strom,item_338,item,word
+A10.32 škôlka,item_345,item,word
+A10.33 šmýka_ka,item_357,item,word
+A10.34 tma,item_339,item,word
+A10.35 tráva,item_358,item,word
+A10.36 tunel,item_356,item,word
+A10.37 vietor,item_360,item,word
+A10.38 vonku,item_340,item,word
+A10.39 záhrada/pole,item_341,item,word
+A10.40 zna_ka,item_342,item,word
+A10.41 zoo,item_361,item,word
+A11.1 anjelik,item_365,item,word
+A11.2 bábo/bábätko,item_366,item,word
+A11.3 bra_ek/sestri_ka,item_367,item,word
+A11.4 bubák,item_368,item,word
+A11.5 deti,item_369,item,word
+A11.6 diev_a,item_370,item,word
+A11.7 chlapec,item_371,item,word
+A11.8 ježibaba,item_372,item,word
+A11.9 kamarát/kamarátka,item_373,item,word
+A11.10 krá_,item_374,item,word
+A11.11 krstná mama,item_375,item,word
+A11.12 krstný otec,item_376,item,word
+A11.13 lekár/lekárka,item_377,item,word
+A11.14 mama,item_378,item,word
+A11.15 Mikuláš,item_379,item,word
+A11.16 vlastné mená blízkych osôb,item_380,item,word
+A11.17 otec,item_381,item,word
+A11.18 stará mama,item_382,item,word
+A11.19 starý otec,item_383,item,word
+A11.20 sused,item_384,item,word
+A11.21 šašo,item_385,item,word
+A11.22 teta,item_386,item,word
+A11.23 ujo,item_387,item,word
+A11.24 vlastné meno die_a_a,item_388,item,word
+A12.1 bá_ sa,item_389,item,word
+A12.2 beža_,item_390,item,word
+A12.3 bolie_,item_391,item,word
+A12.4 búcha_,item_392,item,word
+A12.5 cika_,item_393,item,word
+A12.6 cúva_,item_394,item,word
+A12.7 cvi_i_,item_395,item,word
+A12.8 _esa_,item_396,item,word
+A12.9 _isti_,item_397,item,word
+A12.10 _íta_,item_398,item,word
+A12.11 da_,item_399,item,word
+A12.12 fúka_/pofúka_,item_400,item,word
+A12.13 hrýz_/žuvka_,item_401,item,word
+A12.14 chcie_,item_402,item,word
+A12.15 ís_/chodi_/prís_,item_403,item,word
+A12.16 potrebova_,item_404,item,word
+A12.17 jes_/zjes_,item_405,item,word
+A12.18 kaka_,item_406,item,word
+A12.19 kopa_,item_407,item,word
+A12.20 kúpa_/okúpa_ sa,item_408,item,word
+A12.21 kvapka_,item_409,item,word
+A12.22 leža_/_ahnú_,item_410,item,word
+A12.23 zabali_,item_411,item,word
+A12.24 vysuši_,item_412,item,word
+A12.25 ma_,item_413,item,word
+A12.26 natá_a_/filmova_/kamerova_,item_414,item,word
+A12.27 strati_ (sa),item_415,item,word
+A12.28 obu_/vyzu_,item_416,item,word
+A12.29 otvori_/zatvori_,item_417,item,word
+A12.30 páli_,item_418,item,word
+A12.31 piec_,item_419,item,word
+A12.32 pi_,item_420,item,word
+A12.33 sedie_,item_421,item,word
+A12.34 skáka_,item_422,item,word
+A12.35 spadnú_,item_423,item,word
+A12.36 spa_,item_424,item,word
+A12.37 _aha_,item_425,item,word
+A12.38 tancova_,item_426,item,word
+A12.39 ukáza_,item_427,item,word
+A12.40 vari_/uvari_,item_428,item,word
+A12.41 vola_,item_429,item,word
+A12.42zabudnut,item_430,item,word
+A12.43 môc_,item_431,item,word
+A12.44 musie_,item_432,item,word
+A12.45 vedie_,item_433,item,word
+A12.46 býva_,item_434,item,word
+A12.47 _aka_/po_ka_,item_435,item,word
+A12.48 dovoli_,item_436,item,word
+A12.49 dupa_,item_437,item,word
+A12.50 dvíha_,item_438,item,word
+A12.51 hádza_,item_439,item,word
+A12.52 h_ada_/poh_ada_,item_442,item,word
+A12.53 hojda_ (sa),item_441,item,word
+A12.54 hovori_/vravie_,item_442,item,word
+A12.55 hra_ (sa),item_443,item,word
+A12.56 chuti_,item_444,item,word
+A12.57 chýba_,item_445,item,word
+A12.58 chyti_,item_446,item,word
+A12.59 kúpi_,item_447,item,word
+A12.60 _úbi_,item_448,item,word
+A12.61 nájs_,item_449,item,word
+A12.62 oblieka_/zoblieka_/vyzlieka_,item_450,item,word
+odnies_,item_451,item,word
+A12.64 opravi_,item_452,item,word
+A12.65 osta_/zosta_,item_453,item,word
+A12.66 pá_i_ sa,item_454,item,word
+A12.67 pamäta_ si,item_455,item,word
+A12.68 patri_/pasova_,item_456,item,word
+A12.69 picha_,item_457,item,word
+A12.70 píska_,item_458,item,word
+plaka_,item_459,item,word
+A12.72 pláva_,item_460,item,word
+A12.73 pokazi_/zlomi_,item_461,item,word
+A12.74 pomáha_/pomôc_,item_462,item,word
+A12.75 poreza_ (sa),item_463,item,word
+A12.76 postavi_ (sa),item_464,item,word
+A12.77 poveda_,item_465,item,word
+A12.78 pozrie_/pozera_,item_466,item,word
+A12.79 poži_a_,item_467,item,word
+A12.80 pusti_,item_468,item,word
+A12.81 pýta_ sa,item_469,item,word
+A12.82 reza_/krája_,item_470,item,word
+A12.83 robi_/urobi_,item_471,item,word
+A12.84 roztopi_ sa,item_472,item,word
+A12.85 sadnú_,item_473,item,word
+A12.86 schova_,item_474,item,word
+A12.87 sklada_/posklada_,item_475,item,word
+A12.88 smia_ sa,item_476,item,word
+A12.89 spieva_,item_477,item,word
+A12.90 spláchnu_,item_478,item,word
+A12.91 stá_/zastavi_,item_479,item,word
+A12.92 svieti_,item_480,item,word
+A12.93 šmýka_ (sa),item_481,item,word
+A12.94 telefonova_,item_482,item,word
+tiec_,item_483,item,word
+umýva_ (sa),item_484,item,word
+A12.97 u_i_ (sa),item_485,item,word
+A12.98 to_i_ (sa)/krúti_ (sa),item_486,item,word
+A12.99 vidie_,item_487,item,word
+A12.100 vo_a_,item_488,item,word
+A12.101 vstáva_,item_489,item,word
+A12.102 vybra_,item_490,item,word
+A12.103 zamknú_,item_491,item,word
+A12.104 zašpini_,item_492,item,word
+A12.105 zíva_,item_493,item,word
+zmesti_ sa,item_494,item,word
+"A12.107 nefunguje, nedarí sa, nejde, nedá sa",item_495,item,word
+A13.1 celý,item_496,item,word
+A13.2 _ervený,item_497,item,word
+A13.3 _istý,item_498,item,word
+A13.4 _alší,item_499,item,word
+A13.5 detský,item_500,item,word
+A13.6 dobrý,item_501,item,word
+A13.7 horúci,item_502,item,word
+A13.8 chorý,item_503,item,word
+A13.9 iný/druhý,item_504,item,word
+A13.10 krásny,item_505,item,word
+A13.11 malý,item_506,item,word
+A13.12 modrý,item_507,item,word
+A13.13 nakreslený,item_508,item,word
+A13.14 otvorený,item_509,item,word
+A13.15 názvy farieb,item_510,item,word
+A13.16 pekný,item_511,item,word
+A13.17 prázdny,item_512,item,word
+A13.18 slaný/horlý/štip_avý,item_513,item,word
+A13.19 studený,item_514,item,word
+A13.20 škaredý,item_515,item,word
+A13.21 špinavý,item_516,item,word
+A13.22 taký,item_517,item,word
+A13.23 taký istý,item_518,item,word
+A13.24 teplý/horúci,item_519,item,word
+A13.25 ve_ký,item_520,item,word
+A13.26 zelený,item_521,item,word
+A13.27 zlý,item_522,item,word
+A14.1 ja,item_523,item,word
+A14.2 mi/ma,item_524,item,word
+A14.3 moje,item_525,item,word
+A14.4 ty,item_526,item,word
+A14.5 ti/_a/s tebou,item_527,item,word
+A14.6 tvoje,item_528,item,word
+A14.7 si (=sebe),item_529,item,word
+A14.8 on/ona,item_530,item,word
+A14.9 mu/ho/jej/ju,item_531,item,word
+A14.10 my,item_532,item,word
+A14.11 nám,item_533,item,word
+A14.12 vy,item_534,item,word
+A14.13 vám,item_535,item,word
+A14.14 oni,item_536,item,word
+A14.15 ich,item_537,item,word
+A14.16 to,item_538,item,word
+A14.17 ten/tento/tá,item_539,item,word
+A14.18 tú,item_540,item,word
+A14.19 tieto,item_541,item,word
+A14.20 niekto/nie_o,item_542,item,word
+A15.1 _aleko,item_543,item,word
+A15.2 dnu/vnútri,item_544,item,word
+A15.3 dole/dolu,item_545,item,word
+A15.4  doma,item_546,item,word
+A15.5 hore,item_547,item,word
+A15.6 inam,item_548,item,word
+A15.7 nabok,item_549,item,word
+A15.8 niekde,item_550,item,word
+A15.9 okolo,item_551,item,word
+A15.10 pre_,item_552,item,word
+A15.11 sem,item_553,item,word
+A15.12 tam,item_554,item,word
+A15.13 tu/tuto,item_555,item,word
+A15.14 von,item_556,item,word
+A15.15 vysoko,item_557,item,word
+A15.16 vzadu/dozadu,item_558,item,word
+A16.1 ako/aký/aká/aké?,item_559,item,word
+A16.2 _o je to?,item_560,item,word
+A16.3 kam ide?,item_561,item,word
+A16.4 kde je?,item_562,item,word
+A16.5 ko_ko?,item_563,item,word
+A16.6 kto to je?,item_564,item,word
+A16.7 ktorý/ltorá/ktoré?,item_565,item,word
+A16.8 pre_o?,item_566,item,word
+A16.9 s _ím/s kým,item_567,item,word
+"A17.1 jeden, dva...",item_568,item,word
+A17.2 málo,item_569,item,word
+A17.3 ni_,item_570,item,word
+A17.4 trošku,item_571,item,word
+A17.5 ve_a,item_572,item,word
+A17.6 všetci/všetko,item_573,item,word
+A18.1 dnes,item_574,item,word
+A18.2 dobre,item_575,item,word
+A18.3 ešte/ešte raz,item_576,item,word
+A18.4 hotovo,item_577,item,word
+A18.5 krivo,item_578,item,word
+A18.6 najprv,item_579,item,word
+A18.7 naopak,item_580,item,word
+A18.8 pomaly,item_581,item,word
+A18.9 potom,item_582,item,word
+A18.10 silno,item_583,item,word
+A18.11 spolu,item_584,item,word
+A18.12 strašne,item_585,item,word
+A18.13 teraz,item_586,item,word
+A18.14 treba,item_587,item,word
+A18.15 už,item_588,item,word
+A18.16 ve_mi,item_589,item,word
+A18.17 zle,item_590,item,word
+A19.1 aha,item_591,item,word
+A19.2 akože,item_592,item,word
+A19.3 áno/hej,item_593,item,word
+A19.4 asi/možno,item_594,item,word
+A19.5 iba,item_595,item,word
+A19.6 len,item_596,item,word
+A19.7 nie,item_597,item,word
+A19.8 nono,item_598,item,word
+A19.9 radšej,item_599,item,word
+A19.10 tak/no,item_600,item,word
+A19.11 tiež,item_601,item,word
+A20.1 a,item_602,item,word
+A20.2 aby,item_603,item,word
+A20.3 aj,item_604,item,word
+A20.4 ako,item_605,item,word
+A20.5 ale,item_606,item,word
+A20.6 _i,item_607,item,word
+A20.7 _o,item_608,item,word
+A20.8 lebo,item_609,item,word
+A20.9 že,item_610,item,word
+B1 ,item_611,item,usage
+B2,item_612,item,usage
+B3,item_613,item,usage
+B4,item_614,item,usage
+B5,item_615,item,usage
+B6,item_616,item,usage
+B7,item_617,item,usage
+" c1 -u, Akuzatív sg",item_618,item,word_form
+"c2 na, preposition on + Asg",item_619,item,word_form
+"c3 -y, Akuzativ plur.",item_620,item,word_form
+"c4 na, preposition on + lokal sg.",item_621,item,word_form
+"c5 o, preposition about + lokal sg.",item_622,item,word_form
+"c6 -y, plural nominative",item_623,item,word_form
+"c7 pre, preposition + Akuzativ sg.",item_624,item,word_form
+"c8 v,vo, preposition + lokal sg.",item_625,item,word_form
+"c9 -ou, -om; instrumental sg.",item_626,item,word_form
+"c10 s, preposition s,so + Instrumental sg.",item_627,item,word_form
+"c11 pod, preposition + Instrumental sg.",item_628,item,word_form
+"c12 do, preposition + genitive sg.",item_629,item,word_form
+"c13 -i,-e, dativ sg.",item_630,item,word_form
+"c14 k/ku, preposition + dativ sg. ",item_631,item,word_form
+"c15 pred, za prepositions",item_632,item,word_form
+c16-m 1.person verb sg,item_633,item,word_form
+c17-š 2.person verb sg,item_634,item,word_form
+"c18 -a,e 3.person verb sg",item_635,item,word_form
+c19-me pl,item_636,item,word_form
+c20-ia pl,item_637,item,word_form
+"c21 -l,la,lo, past tense",item_638,item,word_form
+c22-dok.vid,item_639,item,word_form
+"c23-bude, future tense",item_640,item,word_form
+c24-imperative ,item_641,item,word_form
+c25-je ý,item_642,item,word_form
+c26-mamine,item_643,item,word_form
+c27-te,item_644,item,word_form
+c28 by som,item_645,item,word_form
+c29-negation,item_646,item,word_form
+c30 other than present tense,item_647,item,word_form
+c31 new created words by child fúka_ka,item_648,item,combine
+c33 _esaj,item_649,item,word_ending
+c35 písaj,item_650,item,word_ending
+c37 boja_,item_651,item,word_ending
+c39 jel,item_652,item,word_ending
+c41 bojila,item_657,item,word_ending
+c43 bežam,item_658,item,word_ending
+c45 robám,item_659,item,word_ending
+c47 zjednem,item_660,item,word_ending
+c49 hádza,item_661,item,word_ending
+c51 kúpa,item_662,item,word_ending
+c53 chcejú,item_663,item,word_ending
+c55 tancovame,item_664,item,word_ending
+c57 stojám,item_653,item,word_ending
+c59 povedaj,item_654,item,word_ending
+c61 budem stoja_,item_655,item,word_ending
+c63 budem po_ka_,item_656,item,word_ending
+c65 pe_ila,item_665,item,word_ending
+c67 vesím,item_666,item,word_ending
+c69 odomykujem,item_667,item,word_ending
+c71 sypám,item_668,item,word_ending
+c73 pomý_am sa,item_669,item,word_ending
+c75 plaká,item_670,item,word_ending
+c77 povjú,item_671,item,word_ending
+c79 _udi,item_672,item,word_ending
+c81 o solovi,item_673,item,word_ending
+c83 zemia_ikovi,item_674,item,word_ending
+c85 zlejšie,item_675,item,word_ending
+c87 kuchárovia,item_676,item,word_ending
+c89 o pesovi,item_677,item,word_ending
+c 91 k jazerovi,item_678,item,word_ending
+c93 bábätkovi,item_679,item,word_ending
+e1,item_680,item,complexity
+e2,item_681,item,complexity
+e3,item_682,item,complexity
+e4,item_683,item,complexity
+e5,item_684,item,complexity
+e6,item_685,item,complexity
+e7,item_686,item,complexity
+e8,item_687,item,complexity
+f1,item_688,item,gestures_adult
+f2,item_689,item,gestures_adult
+f3,item_690,item,gestures_adult
+f4,item_691,item,gestures_adult
