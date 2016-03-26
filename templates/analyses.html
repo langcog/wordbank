@@ -7,18 +7,27 @@ Wordbank | Analyses
 
 {% block content %}
 
+<!--
 <div class="alert alert-dismissible alert-warning" align="center">
   <p>Wordbank is under early development, and we make no guarantees about the accuracy of its data. Use at your own risk.</p>
   <p>Have feedback? Email us at <a href="mailto:wordbank-contact@stanford.edu" target="_blank">wordbank-contact@stanford.edu</a>!</p>
 </div>
+-->
 
 <div>
 <ul class="nav nav-tabs" id="main-tabs">
   <li role="presentation" class="dropdown">
     <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+      Data <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu" role="menu" id="drop-tabs-data">
+    </ul>
+  </li>
+  <li role="presentation" class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
       Reports <span class="caret"></span>
     </a>
-    <ul class="dropdown-menu" role="menu" id="drop-tabs">
+    <ul class="dropdown-menu" role="menu" id="drop-tabs-reports">
     </ul>
   </li>
 </ul>
@@ -51,11 +60,14 @@ Wordbank | Analyses
 $.getJSON("static/json/analyses.json", function(data) {
   var currentApp = window.location.search.split('=')[1];
   var main = $('#main-tabs');
-  var menu = $('#drop-tabs');
+  var menuData = $('#drop-tabs-data');
+  var menuReports = $('#drop-tabs-reports');
   for (var i in data) {
     var app = data[i];
-    if (app['type'] == 'reports') {
-      var li = $('<li>').attr('role', "presentation").prependTo(menu)
+    if (app['type'] == 'data') {
+      var li = $('<li>').attr('role', "presentation").prependTo(menuData)
+    } else if (app['type'] == 'reports') {
+      var li = $('<li>').attr('role', "presentation").prependTo(menuReports)
     } else {
       var li = $('<li>').attr('role', "presentation").prependTo(main)
     }
