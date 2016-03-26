@@ -10,15 +10,16 @@ Wordbank | Analyses
 <link rel="stylesheet" href={% static "third_party/dc.css" %}>
 <link rel="stylesheet" href={% static "css/analyses.css" %}>
 
-
+<!--
 <div class="alert alert-dismissible alert-warning" align="center">
   <p>Wordbank is under early development, and we make no guarantees about the accuracy of its data. Use at your own risk.</p>
   <p>Have feedback? Email us at <a href="mailto:wordbank-contact@stanford.edu" target="_blank">wordbank-contact@stanford.edu</a>!</p>
 </div>
+-->
 
 <div class="panel panel-primary">
   <div class="panel-heading">
-    <h3 class="panel-title">Interactive Visualizations</h3>
+    <h3 class="panel-title">Interactive Visualizations and Tools</h3>
   </div>
   <div class="panel-body" id="visualizations">
   </div>
@@ -46,6 +47,7 @@ Wordbank | Analyses
               //var apps = $('#apps');
               for (var i in data) {
                 var app = data[i];
+                console.log(app);
                 var panel = $('#' + app['type']);
                 var col = $('<div>').attr('class', "col-md-3").attr('align', "center").prependTo(panel);
                 if (app['source'] == 'shiny') {
