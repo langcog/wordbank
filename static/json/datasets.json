@@ -8,7 +8,7 @@
         "splitcol": false,
         "norming": true,
         "longitudinal": false,
-        "date_format": "%m/%d/%y"
+        "date_format": "%m/%d/%y",
         "contributor": "Larry Fenson, San Diego State University",
         "citation": "Fenson, L., Marchman, V. A., Thal, D., Dale, P., Reznick, J. S. & Bates, E. (2007). MacArthur-Bates Communicative Development Inventories: User's Guide and Technical Manual. 2nd Edition. Baltimore, MD: Brookes Publishing Co."
     },
@@ -21,7 +21,7 @@
         "splitcol": false,
         "norming": false,
         "longitudinal": false,
-        "date_format": "%m/%d/%y"
+        "date_format": "%m/%d/%y",
         "contributor": "Virginia Marchman, Stanford University",
         "citation": ""
     },
@@ -34,7 +34,7 @@
         "splitcol": false,
         "norming": false,
         "longitudinal": false,
-        "date_format": "%m/%d/%y"
+        "date_format": "%m/%d/%y",
         "contributor": "Virginia Marchman, Stanford University",
         "citation": ""
     },
@@ -83,7 +83,7 @@
         "splitcol": false,
         "norming": false,
         "longitudinal": true,
-        "date_format": "%m/%d/%y"
+        "date_format": "%m/%d/%y",
         "contributor": "Donna Thal, San Diego State University",
         "citation": "Thal, D. J., Marchman, V. A. & Tomblin, J. B. (2013). Late talking toddlers: Characterization and prediction of continued delay. In L. Rescorla & P. Dale (Eds.). Late Talkers: Language Development, Interventions, and Outcomes.  Baltimore, MD.: Brookes Publishing."
     },
@@ -96,7 +96,7 @@
         "splitcol": false,
         "norming": false,
         "longitudinal": true,
-        "date_format": "%m/%d/%y"
+        "date_format": "%m/%d/%y",
         "contributor": "Donna Thal, San Diego State University",
         "citation": "Thal, D. J., Marchman, V. A. & Tomblin, J. B. (2013). Late talking toddlers: Characterization and prediction of continued delay. In L. Rescorla & P. Dale (Eds.). Late Talkers: Language Development, Interventions, and Outcomes.  Baltimore, MD.: Brookes Publishing."
     },
@@ -109,7 +109,7 @@
         "splitcol": true,
         "norming": true,
         "longitudinal": false,
-        "date_format": "%m/%d/%y"
+        "date_format": "%m/%d/%y",
         "contributor": "Larry Fenson, San Diego State University",
         "citation": "Fenson, L., Marchman, V. A., Thal, D., Dale, P., Reznick, J. S. & Bates, E. (2007). MacArthur-Bates Communicative Development Inventories: User's Guide and Technical Manual. 2nd Edition. Baltimore, MD: Brookes Publishing Co."
     },
@@ -134,7 +134,7 @@
         "splitcol": true,
         "norming": false,
         "longitudinal": true,
-        "date_format": "%m/%d/%y"
+        "date_format": "%m/%d/%Y",
         "contributor": "Donna Thal, San Diego State University",
         "citation": "Thal, D. J., Marchman, V. A. & Tomblin, J. B. (2013). Late talking toddlers: Characterization and prediction of continued delay. In L. Rescorla & P. Dale (Eds.). Late Talkers: Language Development, Interventions, and Outcomes.  Baltimore, MD.: Brookes Publishing."
     },
@@ -147,7 +147,7 @@
         "splitcol": true,
         "norming": false,
         "longitudinal": true,
-        "date_format": "%m/%d/%y"
+        "date_format": "%m/%d/%Y",
         "contributor": "Donna Thal, San Diego State University",
         "citation": "Thal, D. J., Marchman, V. A. & Tomblin, J. B. (2013). Late talking toddlers: Characterization and prediction of continued delay. In L. Rescorla & P. Dale (Eds.). Late Talkers: Language Development, Interventions, and Outcomes.  Baltimore, MD.: Brookes Publishing."
     },
@@ -196,7 +196,7 @@
         "splitcol": false,
         "norming": true,
         "longitudinal": false,
-        "date_format": "%d-%b-%y"
+        "date_format": "%d-%b-%y",
         "contributor": "Kristian Kristoffersen, University of Oslo",
         "citation": "Kristoffersen, K. E., Simonsen, H. G., Bleses, D., Wehberg, S., Jørgensen, R. N., Eiesland, E. A. & Henriksen, L. Y. (in progress). Development and variation in early communicative skills in infants and toddlers acquiring Norwegian – a CDI-based study."
     },
@@ -209,7 +209,7 @@
         "splitcol": false,
         "norming": false,
         "longitudinal": true,
-        "date_format": "%d-%b-%y"
+        "date_format": "%d.%m.%Y",
         "contributor": "Kristian Kristoffersen, University of Oslo",
         "citation": "Kristoffersen, K. E., Simonsen, H. G., Bleses, D., Wehberg, S., Jørgensen, R. N., Eiesland, E. A. & Henriksen, L. Y. (in progress). Development and variation in early communicative skills in infants and toddlers acquiring Norwegian – a CDI-based study."
     },
@@ -222,7 +222,7 @@
         "splitcol": false,
         "norming": true,
         "longitudinal": false,
-        "date_format": "%d-%b-%y"
+        "date_format": "%d-%b-%y",
         "contributor": "Kristian Kristoffersen, University of Oslo",
         "citation": "Kristoffersen, K. E., Simonsen, H. G., Bleses, D., Wehberg, S., Jørgensen, R. N., Eiesland, E. A. & Henriksen, L. Y. (in progress). Development and variation in early communicative skills in infants and toddlers acquiring Norwegian – a CDI-based study."
     },
@@ -235,7 +235,7 @@
         "splitcol": false,
         "norming": false,
         "longitudinal": true,
-        "date_format": "%d-%b-%y"
+        "date_format": "%d.%m.%Y",
         "contributor": "Kristian Kristoffersen, University of Oslo",
         "citation": "Kristoffersen, K. E., Simonsen, H. G., Bleses, D., Wehberg, S., Jørgensen, R. N., Eiesland, E. A. & Henriksen, L. Y. (in progress). Development and variation in early communicative skills in infants and toddlers acquiring Norwegian – a CDI-based study."
     },
