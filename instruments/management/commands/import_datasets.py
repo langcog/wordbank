@@ -41,9 +41,13 @@ class Command(BaseCommand):
             dataset_dataset = dataset['dataset']
             dataset_file = dataset['file']
             splitcol = dataset['splitcol']
+            norming = dataset['norming']
+            if 'date_format' in dataset:
+                date_format = dataset['date_format']
+            else:
+                date_format = None
             instrument_language = dataset['instrument_language']
             instrument_form = dataset['instrument_form']
 
             print "    Importing dataset", instrument_language, instrument_form, dataset_name, dataset_dataset
-            import_dataset(dataset_name, dataset_dataset, dataset_file,
-                           instrument_language, instrument_form, splitcol)
+            import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_language, instrument_form, splitcol, norming, date_format)
