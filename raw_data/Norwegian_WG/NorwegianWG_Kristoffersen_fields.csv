@@ -1,0 +1,26 @@
+type,value,data_value
+sex,M,0
+sex,F,1
+mom_ed,graduate,Universitets- og h¿gskoleutdanning (h¿yere grad. inkl. forskerutdanning)
+mom_ed,college,Universitets- og h¿gskoleutdanning (lavere grad)
+mom_ed,secondary,VideregŒende skole
+mom_ed,primary,Grunnskole
+first_signs,yes,1
+first_signs,no,0
+phrases,understands,1
+starting_to_talk,never,1
+starting_to_talk,sometimes,2
+starting_to_talk,often,3
+word,produces,2
+word,understands,1
+gestures_first,no,0
+gestures_first,yes,1
+gestures,no,0
+gestures,yes,1
+,,
+,,
+,,
+,,
+,,
+,,
+,,
