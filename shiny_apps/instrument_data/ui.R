@@ -1,5 +1,7 @@
 library(shiny)
 library(shinythemes)
+library(DT)
+
 
 shinyUI(fluidPage(
   theme = shinytheme("spacelab"),
@@ -19,25 +21,27 @@ shinyUI(fluidPage(
 
       conditionalPanel(
         condition = "output.loaded == 1",
-
-        actionButton("get_data", "Get Data"),
-        p("Caution: can take a while"),
         uiOutput("language_selector"),
         uiOutput("form_selector"),
-        br(), br(),
-        downloadButton("download_data", "Download Data")
+        br(),
+        actionButton("get_data", "Get Data"),
+        p("Caution: can take a while")
       )),
 
     mainPanel(
       width = 9,
-      conditionalPanel(condition = "$('html').attr('class') == 'shiny-busy'",
-                       fluidRow(column(12, tags$h4("Please wait..."),
-                                       align = "center")),
-                       fluidRow(column(12, imageOutput("loading"),
-                                       align = "center"))
+      conditionalPanel(
+        condition = "$('html').attr('class') == 'shiny-busy'",
+        fluidRow(column(12, tags$h4("Please wait..."),
+                        align = "center")),
+        fluidRow(column(12, imageOutput("loading"),
+                        align = "center"))
       ),
-      conditionalPanel(condition = "$('html').attr('class') != 'shiny-busy'",
-                       dataTableOutput(outputId = "table")
+      conditionalPanel(
+        condition = "$('html').attr('class') != 'shiny-busy'",
+        uiOutput("download_button"),
+        br(),
+        DT::dataTableOutput(outputId = "table")
       )
     )
 

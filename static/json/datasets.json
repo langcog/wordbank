@@ -4,10 +4,11 @@
         "dataset": "Norming",
         "instrument_language": "English",
         "instrument_form": "WS",
-        "file": "raw_data/English_WS/EnglishWS_Marchman_Norming.xlsx",
+        "file": "raw_data/English_WS/EnglishWS_Marchman_Norming.csv",
         "splitcol": false,
         "norming": true,
         "longitudinal": false,
+        "date_format": "%m/%d/%y"
         "contributor": "Larry Fenson, San Diego State University",
         "citation": "Fenson, L., Marchman, V. A., Thal, D., Dale, P., Reznick, J. S. & Bates, E. (2007). MacArthur-Bates Communicative Development Inventories: User's Guide and Technical Manual. 2nd Edition. Baltimore, MD: Brookes Publishing Co."
     },
@@ -16,10 +17,11 @@
         "dataset": "Wisconsin",
         "instrument_language": "English",
         "instrument_form": "WS",
-        "file": "raw_data/English_WS/EnglishWS_Marchman_Wisconsin.xlsx",
+        "file": "raw_data/English_WS/EnglishWS_Marchman_Wisconsin.csv",
         "splitcol": false,
         "norming": false,
         "longitudinal": false,
+        "date_format": "%m/%d/%y"
         "contributor": "Virginia Marchman, Stanford University",
         "citation": ""
     },
@@ -28,10 +30,11 @@
         "dataset": "Dallas",
         "instrument_language": "English",
         "instrument_form": "WS",
-        "file": "raw_data/English_WS/EnglishWS_Marchman_Dallas.xlsx",
+        "file": "raw_data/English_WS/EnglishWS_Marchman_Dallas.csv",
         "splitcol": false,
         "norming": false,
         "longitudinal": false,
+        "date_format": "%m/%d/%y"
         "contributor": "Virginia Marchman, Stanford University",
         "citation": ""
     },
@@ -76,10 +79,11 @@
         "dataset": "16",
         "instrument_language": "English",
         "instrument_form": "WS",
-        "file": "raw_data/English_WS/EnglishWS_Thal_16.xlsx",
+        "file": "raw_data/English_WS/EnglishWS_Thal_16.csv",
         "splitcol": false,
         "norming": false,
         "longitudinal": true,
+        "date_format": "%m/%d/%y"
         "contributor": "Donna Thal, San Diego State University",
         "citation": "Thal, D. J., Marchman, V. A. & Tomblin, J. B. (2013). Late talking toddlers: Characterization and prediction of continued delay. In L. Rescorla & P. Dale (Eds.). Late Talkers: Language Development, Interventions, and Outcomes.  Baltimore, MD.: Brookes Publishing."
     },
@@ -88,10 +92,11 @@
         "dataset": "28",
         "instrument_language": "English",
         "instrument_form": "WS",
-        "file": "raw_data/English_WS/EnglishWS_Thal_28.xlsx",
+        "file": "raw_data/English_WS/EnglishWS_Thal_28.csv",
         "splitcol": false,
         "norming": false,
         "longitudinal": true,
+        "date_format": "%m/%d/%y"
         "contributor": "Donna Thal, San Diego State University",
         "citation": "Thal, D. J., Marchman, V. A. & Tomblin, J. B. (2013). Late talking toddlers: Characterization and prediction of continued delay. In L. Rescorla & P. Dale (Eds.). Late Talkers: Language Development, Interventions, and Outcomes.  Baltimore, MD.: Brookes Publishing."
     },
@@ -100,10 +105,11 @@
         "dataset": "Norming",
         "instrument_language": "English",
         "instrument_form": "WG",
-        "file": "raw_data/English_WG/EnglishWG_Marchman_Norming.xlsx",
+        "file": "raw_data/English_WG/EnglishWG_Marchman_Norming.csv",
         "splitcol": true,
         "norming": true,
         "longitudinal": false,
+        "date_format": "%m/%d/%y"
         "contributor": "Larry Fenson, San Diego State University",
         "citation": "Fenson, L., Marchman, V. A., Thal, D., Dale, P., Reznick, J. S. & Bates, E. (2007). MacArthur-Bates Communicative Development Inventories: User's Guide and Technical Manual. 2nd Edition. Baltimore, MD: Brookes Publishing Co."
     },
@@ -124,10 +130,11 @@
         "dataset": "13",
         "instrument_language": "English",
         "instrument_form": "WG",
-        "file": "raw_data/English_WG/EnglishWG_Thal_13.xlsx",
+        "file": "raw_data/English_WG/EnglishWG_Thal_13.csv",
         "splitcol": true,
         "norming": false,
         "longitudinal": true,
+        "date_format": "%m/%d/%y"
         "contributor": "Donna Thal, San Diego State University",
         "citation": "Thal, D. J., Marchman, V. A. & Tomblin, J. B. (2013). Late talking toddlers: Characterization and prediction of continued delay. In L. Rescorla & P. Dale (Eds.). Late Talkers: Language Development, Interventions, and Outcomes.  Baltimore, MD.: Brookes Publishing."
     },
@@ -136,10 +143,11 @@
         "dataset": "16",
         "instrument_language": "English",
         "instrument_form": "WG",
-        "file": "raw_data/English_WG/EnglishWG_Thal_16.xlsx",
+        "file": "raw_data/English_WG/EnglishWG_Thal_16.csv",
         "splitcol": true,
         "norming": false,
         "longitudinal": true,
+        "date_format": "%m/%d/%y"
         "contributor": "Donna Thal, San Diego State University",
         "citation": "Thal, D. J., Marchman, V. A. & Tomblin, J. B. (2013). Late talking toddlers: Characterization and prediction of continued delay. In L. Rescorla & P. Dale (Eds.). Late Talkers: Language Development, Interventions, and Outcomes.  Baltimore, MD.: Brookes Publishing."
     },
@@ -148,7 +156,7 @@
         "dataset": "Norming",
         "instrument_language": "Spanish",
         "instrument_form": "WS",
-        "file": "raw_data/Spanish_WS/SpanishWS_Marchman_Norming.xlsx",
+        "file": "raw_data/Spanish_WS/SpanishWS_Marchman_Norming.csv",
         "splitcol": false,
         "norming": true,
         "longitudinal": false,
@@ -160,7 +168,7 @@
         "dataset": "Norming",
         "instrument_language": "Spanish",
         "instrument_form": "WG",
-        "file": "raw_data/Spanish_WG/SpanishWG_Marchman_Norming.xlsx",
+        "file": "raw_data/Spanish_WG/SpanishWG_Marchman_Norming.csv",
         "splitcol": false,
         "norming": true,
         "longitudinal": false,
@@ -184,10 +192,11 @@
         "dataset": "",
         "instrument_language": "Norwegian",
         "instrument_form": "WS",
-        "file": "raw_data/Norwegian_WS/NorwegianWS_Kristoffersen.xlsx",
+        "file": "raw_data/Norwegian_WS/NorwegianWS_Kristoffersen.csv",
         "splitcol": false,
         "norming": true,
         "longitudinal": false,
+        "date_format": "%d-%b-%y"
         "contributor": "Kristian Kristoffersen, University of Oslo",
         "citation": "Kristoffersen, K. E., Simonsen, H. G., Bleses, D., Wehberg, S., Jørgensen, R. N., Eiesland, E. A. & Henriksen, L. Y. (in progress). Development and variation in early communicative skills in infants and toddlers acquiring Norwegian – a CDI-based study."
     },
@@ -196,10 +205,11 @@
         "dataset": "longitudinal",
         "instrument_language": "Norwegian",
         "instrument_form": "WS",
-        "file": "raw_data/Norwegian_WS/NorwegianWS_Kristoffersen_longitudinal.xlsx",
+        "file": "raw_data/Norwegian_WS/NorwegianWS_Kristoffersen_longitudinal.csv",
         "splitcol": false,
         "norming": false,
         "longitudinal": true,
+        "date_format": "%d-%b-%y"
         "contributor": "Kristian Kristoffersen, University of Oslo",
         "citation": "Kristoffersen, K. E., Simonsen, H. G., Bleses, D., Wehberg, S., Jørgensen, R. N., Eiesland, E. A. & Henriksen, L. Y. (in progress). Development and variation in early communicative skills in infants and toddlers acquiring Norwegian – a CDI-based study."
     },
@@ -208,10 +218,11 @@
         "dataset": "",
         "instrument_language": "Norwegian",
         "instrument_form": "WG",
-        "file": "raw_data/Norwegian_WG/NorwegianWG_Kristoffersen.xlsx",
+        "file": "raw_data/Norwegian_WG/NorwegianWG_Kristoffersen.csv",
         "splitcol": false,
         "norming": true,
         "longitudinal": false,
+        "date_format": "%d-%b-%y"
         "contributor": "Kristian Kristoffersen, University of Oslo",
         "citation": "Kristoffersen, K. E., Simonsen, H. G., Bleses, D., Wehberg, S., Jørgensen, R. N., Eiesland, E. A. & Henriksen, L. Y. (in progress). Development and variation in early communicative skills in infants and toddlers acquiring Norwegian – a CDI-based study."
     },
@@ -220,10 +231,11 @@
         "dataset": "longitudinal",
         "instrument_language": "Norwegian",
         "instrument_form": "WG",
-        "file": "raw_data/Norwegian_WG/NorwegianWG_Kristoffersen_longitudinal.xlsx",
+        "file": "raw_data/Norwegian_WG/NorwegianWG_Kristoffersen_longitudinal.csv",
         "splitcol": false,
         "norming": false,
         "longitudinal": true,
+        "date_format": "%d-%b-%y"
         "contributor": "Kristian Kristoffersen, University of Oslo",
         "citation": "Kristoffersen, K. E., Simonsen, H. G., Bleses, D., Wehberg, S., Jørgensen, R. N., Eiesland, E. A. & Henriksen, L. Y. (in progress). Development and variation in early communicative skills in infants and toddlers acquiring Norwegian – a CDI-based study."
     },
