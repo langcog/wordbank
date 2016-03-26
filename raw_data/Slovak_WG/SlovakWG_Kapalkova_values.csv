@@ -3,16 +3,22 @@ sex,M,M
 sex,F,F
 first_signs,yes,2
 first_signs,no,1
-phrases,understands,
-phrases,produces,
-word,understands,
-word,produces,
-gestures,never,
-gestures,sometimes,
-gestures,often,
-gestures,yes,
-gestures,no,
-starting_to_talk,never ,
-starting_to_talk,sometimes,
-starting_to_talk,often,
-,,
+first_signs,,0
+phrases,understands,2
+phrases,produces,3
+phrases,,1
+phrases,,0
+word,understands,2
+word,produces,3
+word,,1
+word,,0
+gestures,never,1
+gestures,sometimes,2
+gestures,often,3
+gestures,yes,2
+gestures,no,1
+gestures,,0
+starting_to_talk,never ,1
+starting_to_talk,sometimes,2
+starting_to_talk,often,3
+starting_to_talk,,0
