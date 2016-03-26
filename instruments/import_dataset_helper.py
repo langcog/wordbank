@@ -7,21 +7,19 @@ from collections import defaultdict
 
 class ImportHelper:
 
-    def __init__(self, data_file, splitcol=False):
+    def __init__(self, data_file, date_format, norming, splitcol=False):
 
         self.data_file = data_file
         self.ftype = self.data_file.split('.')[-1]
         self.splitcol = splitcol
+        self.norming = norming
+        self.date_format = date_format
 
         self.children = {}
         self.administrations = {}
 
         self.datemode = None
         self.missing_values = {u'Null', u'#NULL!', u'', u' ', u'Missing', u'Unknown/other', u'?', u'NA'}
-
-    @staticmethod
-    def format_date(date_str, datemode=None):
-        return datetime(*xlrd.xldate_as_tuple(date_str, datemode))
 
     @staticmethod
     def compute_age(date_of_birth, date_of_test):
@@ -41,6 +39,12 @@ class ImportHelper:
             value = unicode(value)
         return value
 
+    def format_date(self, date_str):
+        if self.ftype == "csv":
+            return datetime.strptime(date_str, self.date_format)
+        elif self.ftype == 'xlsx' or self.ftype == 'xls':
+            return datetime(*xlrd.xldate_as_tuple(date_str, self.datemode))
+
     def get_field_value(self, column, field_type, group, row_values):
         value = row_values[self.col_map[column]]
         if type(value) == str or type(value) == unicode:
@@ -50,8 +54,10 @@ class ImportHelper:
                 return value
             elif field_type in ('birth_order', 'data_age'):
                 return int(value)
+            elif field_type in ('norming'):
+                return value == 'TRUE'
             elif field_type in ('date_of_birth, date_of_test'):
-                return self.format_date(value, self.datemode)
+                return self.format_date(value)
             elif field_type in ('ethnicity', 'sex', 'mom_ed') or group == 'item':
                 value = self.value_typing(value).lower()
                 if self.splitcol and field_type == 'word':
@@ -179,6 +185,8 @@ class ImportHelper:
                 administration['age'] = computed_age
             else:
                 administration['age'] = administration['data_age']
+            if not 'norming' in administration:
+                administration['norming'] = self.norming
 
             # get item data
             item_data = self.get_data_fields(self.field_mapping, 'item', row_values)
