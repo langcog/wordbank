@@ -25,7 +25,7 @@ shinyUI(fluidPage(
       column(3, uiOutput("gender_selector")),
       column(3, uiOutput("momed_selector")),
       br(),
-      column(5, downloadButton("download_data", "Download Data"),
+      column(5, downloadButton("download_data", "Download Data", class = "btn-xs"),
              align = "right")
     ),
 
