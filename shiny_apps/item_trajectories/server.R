@@ -51,7 +51,10 @@ trajectory_data_fun <- function(admins, fun_instrument, fun_measure,
       filter(measure == fun_measure) %>%
       filter(!is.na(age)) %>%
       group_by(instrument_id, num_item_id, age) %>%
-      summarise(prop = sum(value, na.rm = TRUE) / length(value)) %>%
+      summarise(total = n(),
+                prop = sum(value, na.rm = TRUE) / total) %>%
+                #num_true = sum(value, na.rm = TRUE),
+                #num_false = n() - num_true) %>%
       group_by(instrument_id) %>%
       mutate(item_id = sprintf("item_%s", num_item_id)) %>%
       rowwise() %>%
@@ -109,6 +112,14 @@ shinyServer(function(input, output, session) {
     if (is.null(input$measure)) start_measure else input$measure
   })
 
+  input_cross_sectional <- reactive({
+    'cross_sectional' %in% input$data_filter
+  })
+
+  input_norming <- reactive({
+    'norming' %in% input$data_filter
+  })
+
   input_words <- reactive({
     if (is.null(input$words)) word_options()[1] else input$words
   })
@@ -134,9 +145,29 @@ shinyServer(function(input, output, session) {
            form %in% input_forms())
   })
 
+  form_admins <- reactive({
+    admins %>%
+      filter(language == input_language(),
+             form == input_form()) %>%
+      mutate(cross_sectional = !longitudinal)
+  })
+
+  filtered_admins <- reactive({
+
+    filtered_admins <- form_admins()
+
+    if(input_cross_sectional())
+      filtered_admins <- filter(filtered_admins, longitudinal == FALSE)
+
+    if(input_norming())
+      filtered_admins <- filter(filtered_admins, norming == TRUE)
+
+    filtered_admins
+  })
+
   trajectory_data <- reactive({
     if (all(input_words() %in% word_options())) {
-      trajectory_data_fun(admins, instrument(), input_measure(), input_words()) %>%
+      trajectory_data_fun(filtered_admins(), instrument(), input_measure(), input_words()) %>%
         mutate(item = factor(item, levels = input_words()))
     } else {
       data.frame()
@@ -172,8 +203,9 @@ shinyServer(function(input, output, session) {
     } else {
       amin <- age_min()
       amax <- age_max()
-      ggplot(traj, aes(x = age, y = prop, colour = item, label = item)) +
-        geom_smooth(aes(linetype = type), se = FALSE, method = "loess") +
+      ggplot(traj, aes(x = age, y = prop, colour = item, fill = item, label = item)) +
+        geom_smooth(aes(linetype = type, weight = total), method = "glm",
+                    method.args = list(family = "binomial")) +
         geom_point(aes(shape = form)) +
         scale_shape_manual(name = "", values = c(20, 1), guide = FALSE) +
         scale_linetype_discrete(guide = FALSE) +
@@ -185,6 +217,8 @@ shinyServer(function(input, output, session) {
                            breaks = seq(0, 1, 0.25)) +
         scale_colour_manual(guide = FALSE,
                             values = stable_order_palete(length(unique(traj$item)))) +
+        scale_fill_manual(guide = FALSE,
+                          values = stable_order_palete(length(unique(traj$item)))) +
         geom_dl(method = list(dl.trans(x = x + 0.3), "last.qp", cex = 1,
                               fontfamily = font))
     }
@@ -244,18 +278,37 @@ shinyServer(function(input, output, session) {
   })
 
   output$language_selector <- renderUI({
-    selectInput("language", label = h4("Language"),
+    selectInput("language", label = strong("Language"),
                 choices = languages, selected = input_language())
   })
 
   output$form_selector <- renderUI({
-    selectInput("form", label = h4("Form"),
+    selectInput("form", label = strong("Form"),
                 choices = forms(), selected = input_form())
   })
 
   output$measure_selector <- renderUI({
-    selectInput("measure", label = h4("Measure"),
+    selectInput("measure", label = strong("Measure"),
                 choices = measures(), selected = input_measure())
+  })
+
+  output$data_filter <- renderUI({
+
+    possible_filters =  c("cross-sectional data" = "cross_sectional",
+                          "normative data" = "norming")
+
+    available_filters <- Filter(
+      function(data_filter) !all(is.na(form_admins()[[data_filter]]) |
+                                   form_admins()[[data_filter]] == FALSE),
+      possible_filters
+    )
+
+
+
+    checkboxGroupInput("data_filter", "Choose Data",
+                       choices = available_filters,
+                       selected = "cross_sectional")
+
   })
 
   table_data <- reactive({
