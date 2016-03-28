@@ -1,9 +1,9 @@
 type,value,data_value
 sex,M,m
 sex,F,f
-mom_ed,graduate,Universitets- og h¿gskoleutdanning (h¿yere grad. inkl. forskerutdanning)
-mom_ed,college,Universitets- og h¿gskoleutdanning (lavere grad)
-mom_ed,secondary,VideregŒende skole
+mom_ed,graduate,Universitets- og hÃ¸gskoleutdanning (hÃ¸yere grad. inkl. forskerutdanning)
+mom_ed,college,Universitets- og hÃ¸gskoleutdanning (lavere grad)
+mom_ed,secondary,VideregÃ¥ende skole
 mom_ed,primary,Grunnskole
 first_signs,yes,1
 first_signs,no,0
@@ -18,10 +18,3 @@ gestures_first,sometimes,2
 gestures_first,often,3
 gestures,no,0
 gestures,yes,1
-,,
-,,
-,,
-,,
-,,
-,,
-,,
