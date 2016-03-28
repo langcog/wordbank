@@ -160,21 +160,29 @@
         "has_grammar": false
     },
     {
+        "language": "Slovak",
+        "form": "WG",
+        "file": "raw_data/Slovak_WG/[Slovak_WG].csv",
+        "age_min": 8,
+        "age_max": 16,
+        "has_grammar": false
+    },
+    {
+        "language": "Slovak",
+        "form": "WS",
+        "file": "raw_data/Slovak_WS/[Slovak_WS].csv",
+        "age_min": 17,
+        "age_max": 36,
+        "has_grammar": true 
+    }, 
+    {
         "language": "Spanish",
         "form": "WG",
         "file": "raw_data/Spanish_WG/[Spanish_WG].csv",
         "age_min": 8,
         "age_max": 18,
         "has_grammar": false
-    },
-    {
-        "language": "Spanish",
-        "form": "WS",
-        "file": "raw_data/Spanish_WS/[Spanish_WS].xlsx",
-        "age_min": 16,
-        "age_max": 30,
-        "has_grammar": true
-    },
+    },  
     {
         "language": "Swedish",
         "form": "WG",
