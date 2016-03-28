@@ -478,5 +478,21 @@
         "longitudinal": false,
         "contributor": "Natacha Trudeau, Université de Montréal",
         "citation": "Boudreault, M. C., Cabirol, E. A., Poulin-Dubois, D., Sutton, A., & Trudeau, N. (2007). MacArthur Communicative Development Inventories: Validity and preliminary normative data. La Revue d’orthophonie et d’audiologie, 31(1), 27-37."
+    },
+    {
+        "name": "Kapalkova"
+        "dataset": "",
+        "instrument_language": "Slovak",
+        "instrument_form": "WG",
+        "file": "raw_data/Slovak_WG/SlovakWG_Kapalkova.csv",
+        "splitcol": false
+    },
+    {
+        "name": "Kapalkova"
+        "dataset": "",
+        "instrument_language": "Slovak",
+        "instrument_form": "WS",
+        "file": "raw_data/Slovak_WS/SlovakWS_Kapalkova.csv",
+        "splitcol": false
     }
 ]
