@@ -5,7 +5,7 @@ library(tidyr)
 library(readr)
 
 LANGUAGE <- "Norwegian"
-FORM <- "WG"
+FORM <- "WS"
 
 norming_file <- "Kristoffersen"
 other_files <- c("Kristoffersen_longitudinal")
