@@ -5,7 +5,7 @@ library(tidyr)
 library(readr)
 
 LANGUAGE <- "Norwegian"
-FORM <- "WS"
+FORM <- "WG"
 
 norming_file <- "Kristoffersen"
 other_files <- c("Kristoffersen_longitudinal")
@@ -13,7 +13,7 @@ other_files <- c("Kristoffersen_longitudinal")
 
 read_data <- function(file) {
   data <- fread(paste0(LANGUAGE, "_", FORM, "/", LANGUAGE, FORM, "_", file, 
-               "_data_original.csv")) %>%
+               "_data_original.csv"), colClasses = "character", na.strings = "NA") %>%
   #  filter(!is.na(ParticipantId), ParticipantId != "") %>% #English
     filter(!is.na(ID_CDI), ID_CDI != "")# %>%
    # unite(id_age, ParticipantId, CDIAge, remove = FALSE)
