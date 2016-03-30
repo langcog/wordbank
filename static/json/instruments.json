@@ -173,8 +173,8 @@
         "file": "raw_data/Slovak_WS/[Slovak_WS].csv",
         "age_min": 17,
         "age_max": 36,
-        "has_grammar": true 
-    }, 
+        "has_grammar": true
+    },
     {
         "language": "Spanish",
         "form": "WG",
@@ -182,7 +182,15 @@
         "age_min": 8,
         "age_max": 18,
         "has_grammar": false
-    },  
+    },
+    {
+        "language": "Spanish",
+        "form": "WS",
+        "file": "raw_data/Spanish_WS/[Spanish_WS].csv",
+        "age_min": 8,
+        "age_max": 18,
+        "has_grammar": false
+    },
     {
         "language": "Swedish",
         "form": "WG",

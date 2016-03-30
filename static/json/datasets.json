@@ -444,6 +444,7 @@
         "splitcol": false,
         "norming": false,
         "longitudinal": false,
+        "date_format": "%m/%d/%Y",
         "contributor": "Michael C. Frank, Stanford University",
         "citation": ""
     },
