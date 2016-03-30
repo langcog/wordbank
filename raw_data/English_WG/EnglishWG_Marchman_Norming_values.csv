@@ -1,40 +1,44 @@
-type,value,data_value
-sex,M,M
-sex,F,F
-ethnicity,A,1
-ethnicity,B,2
-ethnicity,H,3
-ethnicity,W,4
-ethnicity,O,5
-mom_ed,primary,6
-mom_ed,primary,7
-mom_ed,primary,8
-mom_ed,some secondary,9
-mom_ed,some secondary,10
-mom_ed,some secondary,11
-mom_ed,secondary,12
-mom_ed,some college,13
-mom_ed,some college,14
-mom_ed,some college,15
-mom_ed,college,16
-mom_ed,some graduate,17
-mom_ed,graduate,18
-first_signs,yes,1
-first_signs,no,0
-phrases,understands,1
-phrases,,0
-starting_to_talk,never,0
-starting_to_talk,sometimes,1
-starting_to_talk,often,2
-word,produces,1p
-word,,0p
-word,understands,1u
-word,,0u
-gestures_first,not yet,0
-gestures_first,sometimes,1
-gestures_first,often,2
-gestures,yes,1
-gestures,no,0
-gestures,,99
-gestures,,#NULL!
-gestures_first,yes,*
+"type","value","data_value"
+"sex","M","M"
+"sex","F","F"
+"ethnicity","A",1
+"ethnicity","B",2
+"ethnicity","H",3
+"ethnicity","W",4
+"ethnicity","O",5
+"mom_ed","primary",6
+"mom_ed","primary",7
+"mom_ed","primary",8
+"mom_ed","some secondary",9
+"mom_ed","some secondary",10
+"mom_ed","some secondary",11
+"mom_ed","secondary",12
+"mom_ed","some college",13
+"mom_ed","some college",14
+"mom_ed","some college",15
+"mom_ed","college",16
+"mom_ed","some graduate",17
+"mom_ed","graduate",18
+"first_signs","yes",1
+"first_signs","no",0
+"phrases","understands",1
+"phrases",,0
+"starting_to_talk","never",0
+"starting_to_talk","sometimes",1
+"starting_to_talk","often",2
+"word","produces","1p"
+"word",,"0p"
+"word","understands","1u"
+"word",,"0u"
+"gestures_first","not yet",0
+"gestures_first","sometimes",1
+"gestures_first","often",2
+"gestures_first","not yet","*"
+"gestures_games","yes",1
+"gestures_games","no",0
+"gestures_objects","yes",1
+"gestures_objects","no",0
+"gestures_parent","yes",1
+"gestures_parent","no",0
+"gestures_adult","yes",1
+"gestures_adult","no",0
