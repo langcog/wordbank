@@ -19,7 +19,7 @@ class ImportHelper:
         self.administrations = {}
 
         self.datemode = None
-        self.missing_values = {u'Null', u'#NULL!', u'', u' ', u'Missing', u'Unknown/other', u'?', u'NA'}
+        self.missing_values = {u'Null', u'#NULL!', u'', u' ', u'Missing', u'Unknown/other', u'?', u'NA', u'99'}
 
     @staticmethod
     def compute_age(date_of_birth, date_of_test):
@@ -53,7 +53,7 @@ class ImportHelper:
             if field_type in ('study_id', 'study_momed'):
                 return value
             elif field_type in ('birth_order', 'data_age'):
-                return int(value)
+                return int(float(value))
             elif field_type in ('norming'):
                 return value == 'TRUE'
             elif field_type in ('date_of_birth, date_of_test'):
