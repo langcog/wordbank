@@ -2,7 +2,7 @@
     {
         "language": "British Sign Language",
         "form": "WG",
-        "file": "raw_data/BSL_WG/[BSL_WG].xlsx",
+        "file": "raw_data/BSL_WG/[BSL_WG].csv",
         "age_min": 8,
         "age_max": 36,
         "has_grammar": false
@@ -90,7 +90,7 @@
     {
         "language": "Hebrew",
         "form": "WS",
-        "file": "raw_data/Hebrew_WS/[Hebrew_WS].xlsx",
+        "file": "raw_data/Hebrew_WS/[Hebrew_WS].csv",
         "age_min": 18,
         "age_max": 24,
         "has_grammar": false
@@ -114,7 +114,7 @@
     {
         "language": "Mandarin",
         "form": "TC",
-        "file": "raw_data/Mandarin_TC/[Mandarin_TC].xlsx",
+        "file": "raw_data/Mandarin_TC/[Mandarin_TC].csv",
         "age_min": 17,
         "age_max": 30,
         "has_grammar": false
