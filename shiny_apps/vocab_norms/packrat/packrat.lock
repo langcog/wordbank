@@ -244,13 +244,13 @@ Requires: Rcpp, dplyr, lazyeval, magrittr, stringi
 
 Package: wordbankr
 Source: github
-Version: 0.1.9003
-Hash: 7d8c739dac8d11b7221bfa172d82366a
+Version: 0.1.9005
+Hash: 30b2605ed5be5b7f4f6d46ad450f0f95
 Requires: RMySQL, assertthat, dplyr, magrittr, stringr, tidyr
 GithubRepo: wordbankr
 GithubUsername: langcog
 GithubRef: master
-GithubSha1: 9bd9e7b85d8f83c4f276b366c9f1416e17830294
+GithubSha1: c8bddf6c3c4c17dd6ff2f945ee003e6d2a0fbf4d
 
 Package: xtable
 Source: CRAN
