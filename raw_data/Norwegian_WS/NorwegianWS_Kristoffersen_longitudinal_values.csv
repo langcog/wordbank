@@ -1,21 +1,27 @@
-type,value,data_value
-sex,M,m
-sex,F,f
-mom_ed,graduate,Universitets- og høgskoleutdanning (høyere grad. inkl. forskerutdanning)
-mom_ed,college,Universitets- og høgskoleutdanning (lavere grad)
-mom_ed,secondary,Videregående skole
-mom_ed,primary,Grunnskole
-word,produces,1
-usage,not yet,1
-usage,sometimes,2
-usage,often,3
-ending,not yet,1
-ending,sometimes,2
-ending,often,3
-word_form,produces,1
-word_ending,produces,1
-combine,not yet,1
-combine,sometimes,2
-combine,often,3
-complexity,simple,1
-complexity,complex,2
+"type","value","data_value"
+"sex","M","m"
+"sex","F","f"
+"mom_ed","graduate","Universitets- og høgskoleutdanning (høyere grad. inkl. forskerutdanning)"
+"mom_ed","college","Universitets- og høgskoleutdanning (lavere grad)"
+"mom_ed","secondary","Videregående skole"
+"mom_ed","primary","Grunnskole"
+"word","produces",1
+"how_use_words","not yet",1
+"how_use_words","sometimes",2
+"how_use_words","often",3
+"word_endings","not yet",1
+"word_endings","sometimes",2
+"word_endings","often",3
+"word_forms_nouns","produces",1
+"word_forms_verbs","produces",1
+"word_endings_nouns","not yet",1
+"word_endings_nouns","sometimes",2
+"word_endings_nouns","often",3
+"word_endings_verbs","not yet",1
+"word_endings_verbs","sometimes",2
+"word_endings_verbs","often",3
+"combine","not yet",1
+"combine","sometimes",2
+"combine","often",3
+"complexity","simple",1
+"complexity","complex",2

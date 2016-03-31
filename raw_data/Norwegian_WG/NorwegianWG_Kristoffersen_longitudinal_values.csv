@@ -1,20 +1,26 @@
-type,value,data_value
-sex,M,m
-sex,F,f
-mom_ed,graduate,Universitets- og høgskoleutdanning (høyere grad. inkl. forskerutdanning)
-mom_ed,college,Universitets- og høgskoleutdanning (lavere grad)
-mom_ed,secondary,Videregående skole
-mom_ed,primary,Grunnskole
-first_signs,yes,1
-first_signs,no,0
-phrases,understands,1
-starting_to_talk,never,1
-starting_to_talk,sometimes,2
-starting_to_talk,often,3
-word,produces,2
-word,understands,1
-gestures_first,not yet,1
-gestures_first,sometimes,2
-gestures_first,often,3
-gestures,no,0
-gestures,yes,1
+"type","value","data_value"
+"sex","M","m"
+"sex","F","f"
+"mom_ed","graduate","Universitets- og høgskoleutdanning (høyere grad. inkl. forskerutdanning)"
+"mom_ed","college","Universitets- og høgskoleutdanning (lavere grad)"
+"mom_ed","secondary","Videregående skole"
+"mom_ed","primary","Grunnskole"
+"first_signs","yes",1
+"first_signs","no",0
+"phrases","understands",1
+"starting_to_talk","never",1
+"starting_to_talk","sometimes",2
+"starting_to_talk","often",3
+"word","produces",2
+"word","understands",1
+"gestures_first","not yet",1
+"gestures_first","sometimes",2
+"gestures_first","often",3
+"gestures_games","no",0
+"gestures_games","yes",1
+"gestures_objects","no",0
+"gestures_objects","yes",1
+"gestures_parent","no",0
+"gestures_parent","yes",1
+"gestures_adult","no",0
+"gestures_adult","yes",1
