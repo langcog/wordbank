@@ -12,8 +12,15 @@
 "word",,"0p"
 "word","understands","1u"
 "word",,"0u"
-"gestures_first","not yet",0
-"gestures_first","sometimes",1
-"gestures_first","often",2
-"gestures","yes",1
-"gestures","no",0
+"gestures_first","yes",1
+"gestures_first","no",0
+"gestures_games","yes",1
+"gestures_games","no",0
+"gestures_objects","yes",1
+"gestures_objects","no",0
+"gestures_parent","yes",1
+"gestures_parent","no",0
+"gestures_adult","yes",1
+"gestures_adult","no",0
+"gestures_play","yes",1
+"gestures_play","no",0
