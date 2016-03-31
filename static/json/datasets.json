@@ -164,6 +164,7 @@
         "splitcol": false,
         "norming": true,
         "longitudinal": false,
+        "date_format": "%m/%d/%Y",
         "contributor": "Donna Jackson-Maldonado, Universidad Autónoma de Querétaro",
         "citation": "Jackson-Maldonado, D., Thal, D., Marchman, V., Newton, T., Fenson, L, & Conboy, B. (2003). MacArthur Inventarios del Desarrollo de Habilidades Comunicativas. User´s Guide and Technical Manual. Brookes, Baltimore."
     },
@@ -382,7 +383,7 @@
         "dataset": "",
         "instrument_language": "Hebrew",
         "instrument_form": "WS",
-        "file": "raw_data/Hebrew_WS/HebrewWS_Maital.xlsx",
+        "file": "raw_data/Hebrew_WS/HebrewWS_Maital.csv",
         "splitcol": false,
         "norming": false,
         "longitudinal": false,
