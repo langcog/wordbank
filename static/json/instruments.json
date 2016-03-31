@@ -42,7 +42,7 @@
     {
         "language": "Danish",
         "form": "WS",
-        "file": "raw_data/Danish_WS/[Danish_WS].xlsx",
+        "file": "raw_data/Danish_WS/[Danish_WS].csv",
         "age_min": 16,
         "age_max": 36,
         "has_grammar": true
@@ -138,7 +138,7 @@
     {
         "language": "Norwegian",
         "form": "WS",
-        "file": "raw_data/Norwegian_WS/[Norwegian_WS].xlsx",
+        "file": "raw_data/Norwegian_WS/[Norwegian_WS].csv",
         "age_min": 16,
         "age_max": 36,
         "has_grammar": true
