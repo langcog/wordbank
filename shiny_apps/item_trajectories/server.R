@@ -69,7 +69,7 @@ trajectory_data_fun <- function(admins, fun_instrument, fun_measure,
   word_data
 }
 
-admins <- get_administration_data(mode = mode)
+admins <- get_administration_data(mode = mode, original_ids = TRUE)
 
 items <- get_item_data(mode = mode) %>%
   mutate(definition = iconv(definition, from = "utf8", to = "utf8"))
@@ -146,10 +146,20 @@ shinyServer(function(input, output, session) {
   })
 
   form_admins <- reactive({
-    admins %>%
+    form_specific_admins <- admins %>%
       filter(language == input_language(),
-             form == input_form()) %>%
-      mutate(cross_sectional = !longitudinal)
+             form == input_form())
+
+    #Compute cross-sectional as first entry for a child in a source
+    first_longitudinals <- form_specific_admins %>%
+      filter(longitudinal) %>%
+      group_by(source_name, original_id) %>%
+      arrange(age) %>%
+      slice(1)
+
+    form_specific_admins %>%
+      mutate(cross_sectional = !longitudinal |
+               (longitudinal & (data_id %in% first_longitudinals$data_id)))
   })
 
   filtered_admins <- reactive({
@@ -157,7 +167,7 @@ shinyServer(function(input, output, session) {
     filtered_admins <- form_admins()
 
     if(input_cross_sectional())
-      filtered_admins <- filter(filtered_admins, longitudinal == FALSE)
+      filtered_admins <- filter(filtered_admins, cross_sectional == TRUE)
 
     if(input_norming())
       filtered_admins <- filter(filtered_admins, norming == TRUE)
@@ -294,8 +304,8 @@ shinyServer(function(input, output, session) {
 
   output$data_filter <- renderUI({
 
-    possible_filters =  c("cross-sectional data" = "cross_sectional",
-                          "normative data" = "norming")
+    possible_filters =  c("cross-sectional only" = "cross_sectional",
+                          "normative sample" = "norming")
 
     available_filters <- Filter(
       function(data_filter) !all(is.na(form_admins()[[data_filter]]) |
