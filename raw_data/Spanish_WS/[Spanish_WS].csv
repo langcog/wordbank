@@ -679,70 +679,70 @@
 "item_678","pues","word","connecting_words","produces","pues","for",
 "item_679","que2","word","connecting_words","produces","que (connection word)","that",
 "item_680","y","word","connecting_words","produces","y","and",
-"item_681","usepast","usage","how_use_words","not yet; sometimes; often","does your child ever talk about past events or people who are not present?",,
-"item_682","usefuture","usage","how_use_words","not yet; sometimes; often","does your child ever talk about something that's going to happen in the future?",,
-"item_683","miss_produce","usage","how_use_words","not yet; sometimes; often","does your child talk about objects that are not present?",,
-"item_684","miss_comp","usage","how_use_words","not yet; sometimes; often","does your child understand if you ask for something that is not in the room?",,
-"item_685","usepossessive","usage","how_use_words","not yet; sometimes; often","does your child ever pick up or point to an object and name an absent person to whom the object belongs?",,
-"item_686","pracaba","word_form","word_form","produces","acaba (present)","(he) ends (present)",
-"item_687","pracabas","word_form","word_form","produces","acabas (present)","(you) end (present)",
-"item_688","pracabms","word_form","word_form","produces","acabamos (present)","(we) end (present)",
-"item_689","pracabo","word_form","word_form","produces","acabo (present)","(I) end (present)",
-"item_690","prcome","word_form","word_form","produces","come (present)","(he) eats (present)",
-"item_691","prcomems","word_form","word_form","produces","comemos (present)","(we) eat (present)",
-"item_692","prcomes","word_form","word_form","produces","comes (present)","(you) eat (present)",
-"item_693","prcomo","word_form","word_form","produces","como (present)","(I) eat (present)",
-"item_694","prsube","word_form","word_form","produces","sube (present)","(he) rises (present)",
-"item_695","prsubes","word_form","word_form","produces","subes (present)","(you) rise (present)",
-"item_696","prsubims","word_form","word_form","produces","subimos (present)","(we) rise (present)",
-"item_697","prsubo","word_form","word_form","produces","subo (present)","(I) rise (present)",
-"item_698","paacabe","word_form","word_form","produces","acabé (past)","(I) ended (past)",
-"item_699","paacabo","word_form","word_form","produces","acabó (past)","(he) ended (past)",
-"item_700","pacomi","word_form","word_form","produces","comí (past)","(I) ate (past)",
-"item_701","pacomio","word_form","word_form","produces","comió (past)","(he) ate (past)",
-"item_702","pasubi","word_form","word_form","produces","subí (past)","(I) rose (past)",
-"item_703","pasubio","word_form","word_form","produces","subió (past)","(he) rose (past)",
-"item_704","iacaba","word_form","word_form","produces","acaba (imperative)","finish (imperative)",
-"item_705","iacabate","word_form","word_form","produces","acábate (imperative)","finish your (imperative)",
-"item_706","icome","word_form","word_form","produces","come (imperative)","eat (imperative)",
-"item_707","icomete","word_form","word_form","produces","cómete (imperative)","eat your (imperative)",
-"item_708","isube","word_form","word_form","produces","sube (imperative)","rise (imperative)",
-"item_709","isubete","word_form","word_form","produces","súbete (imperative)","rise (imperative)",
-"item_710","scombine","combine","combine","yes; no","combine",,
-"item_711","cmplx01","complexity","complexity","simple; complex","nene quiere / quiero paleta","baby wants / I want lollipop","syntax"
-"item_712","cmplx02","complexity","complexity","simple; complex","tuyo esto / este es tuyo","yours this / this is yours","syntax"
-"item_713","cmplx03","complexity","complexity","simple; complex","Tito malo / soy malo","Tito bad / I'm bad","syntax"
-"item_714","cmplx04","complexity","complexity","simple; complex","Pepe uvas / quiero uvas","Pepe grapes / I want grapes","syntax"
-"item_715","cmplx05","complexity","complexity","simple; complex","agua vamos / vamos al agua","water let / let the water","syntax"
-"item_716","cmplx06","complexity","complexity","simple; complex","a silla / en la silla","to chair / in the chair","syntax"
-"item_717","cmplx07","complexity","complexity","simple; complex","pollo no / no quiero pollo","chicken not / I do not want chicken","syntax"
-"item_718","cmplx08","complexity","complexity","simple; complex","Paloma llorando / Paloma está llorando","Paloma crying / Paloma is crying","syntax"
-"item_719","cmplx09","complexity","complexity","simple; complex","mío lápiz / éste es mi lápiz","my pen / this is my pen","syntax"
-"item_720","cmplx10","complexity","complexity","simple; complex","más leche / dame más leche","more milk / gimme more milk ","syntax"
-"item_721","cmplx11","complexity","complexity","simple; complex","papo mami / el zapato es de mami","shoe Mommy / the shoe is Mommy's","syntax"
-"item_722","cmplx12","complexity","complexity","simple; complex","no aquí / ése no está aquí","not here / that is not here","syntax"
-"item_723","cmplx13","complexity","complexity","simple; complex","rompió globo / se rompió el globo","broke balloon / the balloon broke","syntax"
-"item_724","cmplx14","complexity","complexity","simple; complex","leche caliente / la leche está caliente","hot milk / milk is hot","syntax"
-"item_725","cmplx15","complexity","complexity","simple; complex","duele panza / me duele la panza","hurt tummy / my tummy hurts","syntax"
-"item_726","cmplx16","complexity","complexity","simple; complex","guaguá grande / tengo un perro grande","Woof woof big / I have a big dog","syntax"
-"item_727","cmplx17","complexity","complexity","simple; complex","calle allá está / allá está la calle","Street there is / there is the street","syntax"
-"item_728","cmplx18","complexity","complexity","simple; complex","puse a mano / lo puse en mi mano","I put hand / I put it in my hand","syntax"
-"item_729","cmplx19","complexity","complexity","simple; complex","acabó agua / se me acabó el agua","finished water / I ran out of water","syntax"
-"item_730","cmplx20","complexity","complexity","simple; complex","fue casa / se fue a su casa","went home / he went home","syntax"
-"item_731","cmplx21","complexity","complexity","simple; complex","silla subir / me quiero subir a la silla","chair up / I want to climb the chair","syntax"
-"item_732","cmplx22","complexity","complexity","simple; complex","Marta papá / quiero ir con papá","Dad go / want to go with dad","syntax"
-"item_733","cmplx23","complexity","complexity","simple; complex","bravo Tello circo / dije bravo en el circo","bravo said circus / I said bravo at the circus","syntax"
-"item_734","cmplx24","complexity","complexity","simple; complex","papá calle / papá se fue a trabajar","Street Dad / Dad went to work","syntax"
-"item_735","cmplx25","complexity","complexity","simple; complex","ya puse / ya se lo puse","I already put / and I put it","syntax"
-"item_736","cmplx26","complexity","complexity","simple; complex","Chalo osito coche / Chalo dejó el osito en el coche","Chalo teddy bear car / Chalo left the teddy bear in the car","syntax"
-"item_737","cmplx27","complexity","complexity","simple; complex","lápiz dibujar / dibujo con el lápiz","pencil drawing / drawing with pencil","syntax"
-"item_738","cmplx28","complexity","complexity","simple; complex","ya pinté / ya acabé de pintar","and I painted / and I finished painting","syntax"
-"item_739","cmplx29","complexity","complexity","simple; complex","nene rompió bici Danny / el niño rompió la bici de Danny","baby broke Danny bike / the boy broke Danny's bike","syntax"
-"item_740","cmplx30","complexity","complexity","simple; complex","pone no / no lo pongas","puts no / do not put","syntax"
-"item_741","cmplx31","complexity","complexity","simple; complex","vamos comer papas carne / vamos a comer papas y carne","we eat potatoes meat / we eat potatoes and meat","syntax"
-"item_742","cmplx32","complexity","complexity","simple; complex","niño llora cayó / el niño llora porque se cayó","child cries fell / child cries because he fell","syntax"
-"item_743","cmplx33","complexity","complexity","simple; complex","mamá nene compra / mamá y nene fueron a comprar","mom baby buy / mom and baby went to buy","syntax"
-"item_744","cmplx34","complexity","complexity","simple; complex","abre dame galleta / abre la caja y dame una galleta","gimme cookie open / open the box and give me a cookie","syntax"
-"item_745","cmplx35","complexity","complexity","simple; complex","no toca; quemas / no lo toques porque te quemas","not touch; burning / do not touch it because you burn","syntax"
-"item_746","cmplx36","complexity","complexity","simple; complex","quiero libro papá / quiero el libra que compró papá","l want Dad book / I want the book Dad bought","syntax"
-"item_747","cmplx37","complexity","complexity","simple; complex","pongo agua flores / pongo agua para que crezcan las flores","put water flowers / put water to grow flowers","syntax"
+"item_681","usepast","how_use_words",,"not yet; sometimes; often","does your child ever talk about past events or people who are not present?",,
+"item_682","usefuture","how_use_words",,"not yet; sometimes; often","does your child ever talk about something that's going to happen in the future?",,
+"item_683","miss_produce","how_use_words",,"not yet; sometimes; often","does your child talk about objects that are not present?",,
+"item_684","miss_comp","how_use_words",,"not yet; sometimes; often","does your child understand if you ask for something that is not in the room?",,
+"item_685","usepossessive","how_use_words",,"not yet; sometimes; often","does your child ever pick up or point to an object and name an absent person to whom the object belongs?",,
+"item_686","pracaba","word_forms",,"produces","acaba (present)","(he) ends (present)",
+"item_687","pracabas","word_forms",,"produces","acabas (present)","(you) end (present)",
+"item_688","pracabms","word_forms",,"produces","acabamos (present)","(we) end (present)",
+"item_689","pracabo","word_forms",,"produces","acabo (present)","(I) end (present)",
+"item_690","prcome","word_forms",,"produces","come (present)","(he) eats (present)",
+"item_691","prcomems","word_forms",,"produces","comemos (present)","(we) eat (present)",
+"item_692","prcomes","word_forms",,"produces","comes (present)","(you) eat (present)",
+"item_693","prcomo","word_forms",,"produces","como (present)","(I) eat (present)",
+"item_694","prsube","word_forms",,"produces","sube (present)","(he) rises (present)",
+"item_695","prsubes","word_forms",,"produces","subes (present)","(you) rise (present)",
+"item_696","prsubims","word_forms",,"produces","subimos (present)","(we) rise (present)",
+"item_697","prsubo","word_forms",,"produces","subo (present)","(I) rise (present)",
+"item_698","paacabe","word_forms",,"produces","acabé (past)","(I) ended (past)",
+"item_699","paacabo","word_forms",,"produces","acabó (past)","(he) ended (past)",
+"item_700","pacomi","word_forms",,"produces","comí (past)","(I) ate (past)",
+"item_701","pacomio","word_forms",,"produces","comió (past)","(he) ate (past)",
+"item_702","pasubi","word_forms",,"produces","subí (past)","(I) rose (past)",
+"item_703","pasubio","word_forms",,"produces","subió (past)","(he) rose (past)",
+"item_704","iacaba","word_forms",,"produces","acaba (imperative)","finish (imperative)",
+"item_705","iacabate","word_forms",,"produces","acábate (imperative)","finish your (imperative)",
+"item_706","icome","word_forms",,"produces","come (imperative)","eat (imperative)",
+"item_707","icomete","word_forms",,"produces","cómete (imperative)","eat your (imperative)",
+"item_708","isube","word_forms",,"produces","sube (imperative)","rise (imperative)",
+"item_709","isubete","word_forms",,"produces","súbete (imperative)","rise (imperative)",
+"item_710","scombine","combine",,"yes; no","combine",,
+"item_711","cmplx01","complexity",,"simple; complex","nene quiere / quiero paleta","baby wants / I want lollipop","syntax"
+"item_712","cmplx02","complexity",,"simple; complex","tuyo esto / este es tuyo","yours this / this is yours","syntax"
+"item_713","cmplx03","complexity",,"simple; complex","Tito malo / soy malo","Tito bad / I'm bad","syntax"
+"item_714","cmplx04","complexity",,"simple; complex","Pepe uvas / quiero uvas","Pepe grapes / I want grapes","syntax"
+"item_715","cmplx05","complexity",,"simple; complex","agua vamos / vamos al agua","water let / let the water","syntax"
+"item_716","cmplx06","complexity",,"simple; complex","a silla / en la silla","to chair / in the chair","syntax"
+"item_717","cmplx07","complexity",,"simple; complex","pollo no / no quiero pollo","chicken not / I do not want chicken","syntax"
+"item_718","cmplx08","complexity",,"simple; complex","Paloma llorando / Paloma está llorando","Paloma crying / Paloma is crying","syntax"
+"item_719","cmplx09","complexity",,"simple; complex","mío lápiz / éste es mi lápiz","my pen / this is my pen","syntax"
+"item_720","cmplx10","complexity",,"simple; complex","más leche / dame más leche","more milk / gimme more milk ","syntax"
+"item_721","cmplx11","complexity",,"simple; complex","papo mami / el zapato es de mami","shoe Mommy / the shoe is Mommy's","syntax"
+"item_722","cmplx12","complexity",,"simple; complex","no aquí / ése no está aquí","not here / that is not here","syntax"
+"item_723","cmplx13","complexity",,"simple; complex","rompió globo / se rompió el globo","broke balloon / the balloon broke","syntax"
+"item_724","cmplx14","complexity",,"simple; complex","leche caliente / la leche está caliente","hot milk / milk is hot","syntax"
+"item_725","cmplx15","complexity",,"simple; complex","duele panza / me duele la panza","hurt tummy / my tummy hurts","syntax"
+"item_726","cmplx16","complexity",,"simple; complex","guaguá grande / tengo un perro grande","Woof woof big / I have a big dog","syntax"
+"item_727","cmplx17","complexity",,"simple; complex","calle allá está / allá está la calle","Street there is / there is the street","syntax"
+"item_728","cmplx18","complexity",,"simple; complex","puse a mano / lo puse en mi mano","I put hand / I put it in my hand","syntax"
+"item_729","cmplx19","complexity",,"simple; complex","acabó agua / se me acabó el agua","finished water / I ran out of water","syntax"
+"item_730","cmplx20","complexity",,"simple; complex","fue casa / se fue a su casa","went home / he went home","syntax"
+"item_731","cmplx21","complexity",,"simple; complex","silla subir / me quiero subir a la silla","chair up / I want to climb the chair","syntax"
+"item_732","cmplx22","complexity",,"simple; complex","Marta papá / quiero ir con papá","Dad go / want to go with dad","syntax"
+"item_733","cmplx23","complexity",,"simple; complex","bravo Tello circo / dije bravo en el circo","bravo said circus / I said bravo at the circus","syntax"
+"item_734","cmplx24","complexity",,"simple; complex","papá calle / papá se fue a trabajar","Street Dad / Dad went to work","syntax"
+"item_735","cmplx25","complexity",,"simple; complex","ya puse / ya se lo puse","I already put / and I put it","syntax"
+"item_736","cmplx26","complexity",,"simple; complex","Chalo osito coche / Chalo dejó el osito en el coche","Chalo teddy bear car / Chalo left the teddy bear in the car","syntax"
+"item_737","cmplx27","complexity",,"simple; complex","lápiz dibujar / dibujo con el lápiz","pencil drawing / drawing with pencil","syntax"
+"item_738","cmplx28","complexity",,"simple; complex","ya pinté / ya acabé de pintar","and I painted / and I finished painting","syntax"
+"item_739","cmplx29","complexity",,"simple; complex","nene rompió bici Danny / el niño rompió la bici de Danny","baby broke Danny bike / the boy broke Danny's bike","syntax"
+"item_740","cmplx30","complexity",,"simple; complex","pone no / no lo pongas","puts no / do not put","syntax"
+"item_741","cmplx31","complexity",,"simple; complex","vamos comer papas carne / vamos a comer papas y carne","we eat potatoes meat / we eat potatoes and meat","syntax"
+"item_742","cmplx32","complexity",,"simple; complex","niño llora cayó / el niño llora porque se cayó","child cries fell / child cries because he fell","syntax"
+"item_743","cmplx33","complexity",,"simple; complex","mamá nene compra / mamá y nene fueron a comprar","mom baby buy / mom and baby went to buy","syntax"
+"item_744","cmplx34","complexity",,"simple; complex","abre dame galleta / abre la caja y dame una galleta","gimme cookie open / open the box and give me a cookie","syntax"
+"item_745","cmplx35","complexity",,"simple; complex","no toca; quemas / no lo toques porque te quemas","not touch; burning / do not touch it because you burn","syntax"
+"item_746","cmplx36","complexity",,"simple; complex","quiero libro papá / quiero el libra que compró papá","l want Dad book / I want the book Dad bought","syntax"
+"item_747","cmplx37","complexity",,"simple; complex","pongo agua flores / pongo agua para que crezcan las flores","put water flowers / put water to grow flowers","syntax"
