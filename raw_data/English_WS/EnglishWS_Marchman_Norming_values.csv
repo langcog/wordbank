@@ -1,38 +1,42 @@
-type,value,data_value
-sex,M,M
-sex,F,F
-ethnicity,A,1
-ethnicity,B,2
-ethnicity,H,3
-ethnicity,W,4
-ethnicity,O,5
-mom_ed,primary,6
-mom_ed,primary,7
-mom_ed,primary,8
-mom_ed,some secondary,9
-mom_ed,some secondary,10
-mom_ed,some secondary,11
-mom_ed,secondary,12
-mom_ed,some college,13
-mom_ed,some college,14
-mom_ed,some college,15
-mom_ed,college,16
-mom_ed,some graduate,17
-mom_ed,graduate,18
-word,produces,1
-word,,0
-usage,not yet,0
-usage,sometimes,1
-usage,often,2
-ending,not yet,0
-ending,sometimes,1
-ending,often,2
-word_form,produces,1
-word_form,,0
-word_ending,,0
-word_ending,produces,1
-combine,not yet,0
-combine,sometimes,1
-combine,often,2
-complexity,simple,0
-complexity,complex,1
+"type","value","data_value"
+"sex","M","M"
+"sex","F","F"
+"ethnicity","A",1
+"ethnicity","B",2
+"ethnicity","H",3
+"ethnicity","W",4
+"ethnicity","O",5
+"mom_ed","primary",6
+"mom_ed","primary",7
+"mom_ed","primary",8
+"mom_ed","some secondary",9
+"mom_ed","some secondary",10
+"mom_ed","some secondary",11
+"mom_ed","secondary",12
+"mom_ed","some college",13
+"mom_ed","some college",14
+"mom_ed","some college",15
+"mom_ed","college",16
+"mom_ed","some graduate",17
+"mom_ed","graduate",18
+"word","produces",1
+"word",,0
+"how_use_words","not yet",0
+"how_use_words","sometimes",1
+"how_use_words","often",2
+"word_endings","not yet",0
+"word_endings","sometimes",1
+"word_endings","often",2
+"word_forms_nouns","produces",1
+"word_forms_nouns",,0
+"word_forms_verbs","produces",1
+"word_forms_verbs",,0
+"word_endings_nouns",,0
+"word_endings_nouns","produces",1
+"word_endings_verbs",,0
+"word_endings_verbs","produces",1
+"combine","not yet",0
+"combine","sometimes",1
+"combine","often",2
+"complexity","simple",0
+"complexity","complex",1
