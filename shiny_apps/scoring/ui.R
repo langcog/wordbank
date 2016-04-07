@@ -1,11 +1,12 @@
 library(shiny)
 library(shinythemes)
 library(shinyBS)
+library(DT)
 
 
 shinyUI(fluidPage(
   theme = shinytheme("spacelab"),
-  
+
   br(),
   bsCollapse(id = "doc", open = "title",
              bsCollapsePanel(
@@ -20,19 +21,19 @@ shinyUI(fluidPage(
   sidebarLayout(
     sidebarPanel(
       h4("1. Download a sample template"),
-      downloadButton('downloadSample', 'Download'),
+      downloadButton('downloadSample', 'Download', class = "btn-xs"),
       tags$hr(),
-      h4("2. Upload your own data"), 
+      h4("2. Upload your own data"),
       fileInput('file1', 'Choose file',
-                accept=c('text/csv', 
-                         'text/comma-separated-values,text/plain', 
+                accept=c('text/csv',
+                         'text/comma-separated-values,text/plain',
                          '.csv')),
       tags$hr(),
-      h4("3. Select the instrument to use"), 
-      selectInput('instrument', label=NULL, 
+      h4("3. Select the instrument to use"),
+      selectInput('instrument', label=NULL,
                   choices = c("Words & Sentences (English)" = "Words & Sentences (English)")),
       tags$hr(),
-      h4("4. Verify file formatting"), 
+      h4("4. Verify file formatting"),
       # checkboxInput('header', 'Header', TRUE),
       radioButtons('sep', label=NULL, inline=TRUE,
                    c("Comma delimited" = ',',
@@ -42,7 +43,7 @@ shinyUI(fluidPage(
                    c("No quotes"='',
                      'Double quotes'='"',
                      'Single quotes'="'"),
-                   ''), 
+                   ''),
       uiOutput('ageColumn'),
       uiOutput('nwordsColumn'),
       uiOutput('genderColumn'),
@@ -50,9 +51,9 @@ shinyUI(fluidPage(
     ),
     mainPanel(
       uiOutput('tableTitle'),
-      uiOutput('download'), 
+      uiOutput('download'),
       br(),
-      dataTableOutput('contents')
+      DT::dataTableOutput('contents')
     )
   )
 ))

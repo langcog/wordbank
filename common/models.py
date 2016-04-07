@@ -8,7 +8,6 @@ class Source(models.Model):
     instrument_form = models.CharField(max_length=20)
     contributor = models.TextField(blank=True)
     citation = models.TextField(blank=True)
-    norming = models.BooleanField(default=False)
     longitudinal = models.BooleanField(default=False)
 
 
@@ -73,6 +72,7 @@ class Administration(models.Model):
     child = models.ForeignKey(Child)
     instrument = models.ForeignKey(Instrument)
     source = models.ForeignKey(Source, null=True, blank=True)
+    norming = models.BooleanField(default=False)
     date_of_test = models.DateField(null=True, blank=True)
     data_id = models.IntegerField(db_index=True)
     age = models.IntegerField()
