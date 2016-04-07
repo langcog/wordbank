@@ -1,0 +1,122 @@
+---
+title: Estimating words' age of acquisition in WS
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    highlight: tango
+    theme: spacelab
+---
+
+```{r setup, echo = FALSE}
+library(knitr)
+opts_chunk$set(message = FALSE, warning = FALSE, cache = TRUE)
+```
+
+```{r, cache = FALSE}
+library(dplyr)
+library(tidyr)
+library(purrr)
+library(readr)
+library(ggplot2)
+library(langcog)
+library(wordbankr)
+library(boot)
+library(lazyeval)
+library(robustbase)
+library(stringr)
+library(feather)
+theme_set(theme_mikabr())
+```
+
+Connect to the Wordbank database and pull out the raw data.
+```{r, raw_data}
+data_mode <- "remote"
+
+admins <- get_administration_data(mode = data_mode, 
+                                  language = "English", 
+                                  form = "WG") %>%
+  select(data_id, age) %>%
+  filter(!is.na(age))
+
+items <- get_item_data(mode = data_mode, 
+                       language = "English", 
+                                  form = "WG") %>%
+  mutate(num_item_id = as.numeric(substr(item_id, 6, nchar(item_id))),
+         definition = tolower(definition))
+
+words <- items %>%
+  filter(type == "word") %>%
+  mutate(num_item_id = as.numeric(str_replace(item_id, "item_", ""))) 
+
+
+  
+instrument_data <- get_instrument_data(instrument_language = "English",
+                      instrument_form = "WG",
+                      items = items$item_id,
+                      administrations = admins, 
+                      mode = data_mode) 
+
+raw_data <- instrument_data %>%
+    mutate(understands = !is.na(value) & value == "understands") %>%
+    select(-value) %>%
+    gather(measure, value, understands) 
+
+summary_data <- raw_data %>%
+  group_by(num_item_id, age) %>%
+  summarise(num_true = sum(value, na.rm = TRUE),
+            num_false = n() - num_true,
+            prop = mean(value, na.rm = TRUE)) %>%
+  left_join(words) 
+```
+
+Fit models to predict each item's age of acquisition.
+
+```{r, aoa_data}
+fit_inst_measure_uni <- function(d) {
+  tryCatch({
+    model <- glmrob(cbind(num_true, num_false) ~ age, family = "binomial",
+                    data = d, y = TRUE)
+    fit <- predict(model, newdata = data.frame(age = d$age), se.fit = TRUE)
+    aoa <- -model$coefficients[["(Intercept)"]] / model$coefficients[["age"]]
+    fit_prop <- inv.logit(fit$fit)
+    fit_se <- fit$se.fit
+  }, error = function(e) {
+    aoa <- fit <- fit_prop <- fit_se <- NA
+  })
+  
+  print(d$definition[1])
+  data.frame(age = d$age, 
+             fit_prop = fit_prop, 
+             fit_se = fit_se,
+             aoa = aoa, 
+             definition = d$definition, 
+             category = d$category, 
+             lexical_category = d$lexical_category, 
+             lexical_class = d$lexical_class,
+             uni_lemma = d$uni_lemma)
+}
+
+aoa_data <- summary_data %>% 
+  ungroup() %>%
+  select(age, num_true, num_false, definition, category, lexical_category, lexical_class, uni_lemma) %>%
+  split(paste(.$definition, .$lexical_category, .$lexical_class, .$category, .$uni_lemma)) %>%
+  map_df(fit_inst_measure_uni)
+```
+
+Now extrat AOAs.
+
+```{r}
+aoas <- aoa_data %>%
+  group_by(definition) %>%
+  slice(1) %>%
+  ungroup() %>%
+  select(definition, aoa, category, lexical_category, lexical_class, uni_lemma)
+```
+
+And save via feather. 
+
+```{r}
+write_feather(x = aoas, path = "eng_wg_comprehension_aoas.feather")
+```
+
+
