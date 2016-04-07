@@ -10,7 +10,7 @@ library(wordbankr)
 library(langcog)
 source("predictQR_fixed.R")
 theme_set(theme_mikabr(base_size = 18))
-mode <- "remote"
+mode <- "local"
 
 input <- list(language = "English", form = "WS", measure = "production",
               quantiles = "Standard", demo = "sex")
@@ -20,7 +20,7 @@ shinyServer(function(input, output, session) {
   output$loaded <- reactive(0)
   outputOptions(output, "loaded", suspendWhenHidden = FALSE)
 
-  admins <- get_administration_data(mode = mode) %>%
+  admins <- get_administration_data(mode = mode, original_ids = TRUE) %>%
     gather(measure, vocab, comprehension, production) %>%
     mutate(identity = "All Data")
 
@@ -55,15 +55,15 @@ shinyServer(function(input, output, session) {
   input_demo <- reactive({
     ifelse(is.null(input$demo), start_demo, input$demo)
   })
-  
+
   input_cross_sectional <- reactive({
     'cross_sectional' %in% input$data_filter
   })
-  
+
   input_norming <- reactive({
     'norming' %in% input$data_filter
   })
-  
+
   input_quantiles <- reactive({
     switch(input$quantiles,
            Standard = c(0.10, 0.25, 0.50, 0.75, 0.90),
@@ -89,21 +89,31 @@ shinyServer(function(input, output, session) {
   })
 
   form_admins <- reactive({
-    admins %>%
+    form_specific_admins <- admins %>%
       filter(language == input_language(),
              form == input_form(),
-             measure == input_measure()) %>%
-      mutate(cross_sectional = !longitudinal)
+             measure == input_measure())
+
+    #Compute cross-sectional as first entry for a child in a source
+    first_longitudinals <- form_specific_admins %>%
+      filter(longitudinal) %>%
+      group_by(source_name, original_id) %>%
+      arrange(age) %>%
+      slice(1)
+
+    form_specific_admins %>%
+      mutate(cross_sectional = !longitudinal |
+               (longitudinal & (data_id %in% first_longitudinals$data_id)))
   })
-  
+
   filtered_admins <- reactive({
-    
+
     filtered_admins <- form_admins()
-    
+
     if(input_cross_sectional())
-      filtered_admins <- filter(filtered_admins, longitudinal == FALSE)
-    
-    if(input_norming()) 
+      filtered_admins <- filter(filtered_admins, cross_sectional == TRUE)
+
+    if(input_norming())
       filtered_admins <- filter(filtered_admins, norming == TRUE)
 
     filtered_admins
@@ -169,13 +179,13 @@ shinyServer(function(input, output, session) {
   }
 
   clumped_demo_groups <- function(fun_demo) {
-    
+
     demo_groups <- filtered_admins() %>%
       rename_(demo = fun_demo) %>%
       filter(!is.na(demo)) %>%
       group_by(demo) %>%
       summarise(n = n())
-    
+
     map <- as.list(as.character(demo_groups$demo))
     names(map) <- map
     clump_demo_groups(demo_groups, map, fun_demo)
@@ -288,7 +298,7 @@ shinyServer(function(input, output, session) {
     }
     p
   })
-  
+
   forms <- reactive({
     form_opts <- unique(filter(instruments, language == input_language())$form)
     Filter(function(form) form %in% form_opts,
@@ -320,37 +330,37 @@ shinyServer(function(input, output, session) {
                               digits = 1)
 
   output$language_selector <- renderUI({
-    selectizeInput("language", label = h4("Language"),
+    selectizeInput("language", label = strong("Language"),
                    choices = languages, selected = start_language)
   })
 
   output$form_selector <- renderUI({
-    selectizeInput("form", label = h4("Form"),
+    selectizeInput("form", label = strong("Form"),
                    choices = forms(), selected = input_form())
   })
 
   output$measure_selector <- renderUI({
-    selectizeInput("measure", label = h4("Measure"),
+    selectizeInput("measure", label = strong("Measure"),
                    choices = measures(), selected = input_measure())
   })
-  
+
   output$data_filter <- renderUI({
-    
-    possible_filters =  c("cross-sectional data" = "cross_sectional",
-                 "normative data" = "norming")
-    
+
+    possible_filters =  c("cross-sectional only" = "cross_sectional",
+                 "normative sample" = "norming")
+
     available_filters <- Filter(
-      function(data_filter) !all(is.na(form_admins()[[data_filter]]) | 
+      function(data_filter) !all(is.na(form_admins()[[data_filter]]) |
                               form_admins()[[data_filter]] == FALSE),
      possible_filters
-    ) 
-    
-    
-    
+    )
+
+
+
     checkboxGroupInput("data_filter", "Choose Data",
                        choices = available_filters,
                        selected = "cross_sectional")
-    
+
   })
 
   output$demo_selector <- renderUI({
@@ -363,7 +373,7 @@ shinyServer(function(input, output, session) {
         nrow(clumped_demo_groups(demo)$groups) >= 2,
       available_demos
     )
-    selectInput("demo", label = h4("Split Variable"),
+    selectInput("demo", label = strong("Split Variable"),
                 choices = demo_fields, selected = input_demo())
   })
 
