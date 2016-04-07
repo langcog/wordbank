@@ -7,7 +7,7 @@ from instruments import import_dataset_helper
 # Given a datasets's name (ex Marchman), dataset (ex Norming), language (ex English), instrument (ex WS), splitcol bool.
 # Uses import_dataset_helper to retrieve the data from that dataset's data file, using its field and value mappings.
 # Creates Child and Administration objects for the entries in the resulting data.
-def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_language, instrument_form, splitcol):
+def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_language, instrument_form, splitcol, norming, date_format):
 
         var_safe = lambda s: ''.join([c for c in '_'.join(s.split()) if c in string.letters + '_'])
         instrument_string = var_safe(instrument_language) + '_' + var_safe(instrument_form)
@@ -16,7 +16,7 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
         except AttributeError:
             raise IOError("instrument %s has no model defined" % instrument_string)
 
-        import_helper = import_dataset_helper.ImportHelper(dataset_file, splitcol)
+        import_helper = import_dataset_helper.ImportHelper(dataset_file, date_format, norming, splitcol)
         import_helper.import_data()
 
         instruments_map = Instrument.objects.get(language=instrument_language, form=instrument_form)
@@ -42,6 +42,7 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
 
             instrument_obj = instrument_model.objects.create()
             administration = Administration.objects.create(child=children[i],
+                                                           norming=administration_data['norming'],
                                                            date_of_test=administration_data['date_of_test'],
                                                            instrument=instruments_map,
                                                            data_id=instrument_obj.pk,
@@ -49,9 +50,9 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
                                                            data_age=administration_data['data_age'])
 
             administration.source = Source.objects.get(name=dataset_name,
-                                                       dataset=dataset_dataset,
-                                                       instrument_language=instrument_language,
-                                                       instrument_form=instrument_form)
+                                                      dataset=dataset_dataset,
+                                                      instrument_language=instrument_language,
+                                                      instrument_form=instrument_form)
 
             instrument_model.objects.filter(pk=instrument_obj.pk).update(**administration_data['item_data'])
 
