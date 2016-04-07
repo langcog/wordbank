@@ -19,7 +19,7 @@ Wordbank | Analyses
 
 <div class="panel panel-primary">
   <div class="panel-heading">
-    <h3 class="panel-title">Interactive Visualizations</h3>
+    <h3 class="panel-title">Interactive Visualizations and Tools</h3>
   </div>
   <div class="panel-body" id="visualizations">
   </div>
@@ -47,6 +47,7 @@ Wordbank | Analyses
               //var apps = $('#apps');
               for (var i in data) {
                 var app = data[i];
+                console.log(app);
                 var panel = $('#' + app['type']);
                 var col = $('<div>').attr('class', "col-md-3").attr('align', "center").prependTo(panel);
                 if (app['source'] == 'shiny') {

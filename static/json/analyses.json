@@ -21,6 +21,13 @@
   "source": "shiny"
 },
 {
+  "title": "Scoring Tool",
+  "name": "scoring",
+  "thumbnail": "static/images/sample_plots/scoring.png",
+  "type": "visualizations",
+  "source": "shiny"
+},
+{
   "title": "Cross-Linguistic Trajectories",
   "name": "uni_lemmas",
   "thumbnail": "static/images/sample_plots/uni_lemmas.png",
