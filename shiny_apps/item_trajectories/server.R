@@ -69,7 +69,7 @@ trajectory_data_fun <- function(admins, fun_instrument, fun_measure,
   word_data
 }
 
-admins <- get_administration_data(mode = mode)
+admins <- get_administration_data(mode = mode, original_ids = TRUE)
 
 items <- get_item_data(mode = mode) %>%
   mutate(definition = iconv(definition, from = "utf8", to = "utf8"))
@@ -112,6 +112,14 @@ shinyServer(function(input, output, session) {
     if (is.null(input$measure)) start_measure else input$measure
   })
 
+  input_cross_sectional <- reactive({
+    'cross_sectional' %in% input$data_filter
+  })
+
+  input_norming <- reactive({
+    'norming' %in% input$data_filter
+  })
+
   input_words <- reactive({
     if (is.null(input$words)) word_options()[1] else input$words
   })
@@ -137,9 +145,39 @@ shinyServer(function(input, output, session) {
            form %in% input_forms())
   })
 
+  form_admins <- reactive({
+    form_specific_admins <- admins %>%
+      filter(language == input_language(),
+             form == input_form())
+
+    #Compute cross-sectional as first entry for a child in a source
+    first_longitudinals <- form_specific_admins %>%
+      filter(longitudinal) %>%
+      group_by(source_name, original_id) %>%
+      arrange(age) %>%
+      slice(1)
+
+    form_specific_admins %>%
+      mutate(cross_sectional = !longitudinal |
+               (longitudinal & (data_id %in% first_longitudinals$data_id)))
+  })
+
+  filtered_admins <- reactive({
+
+    filtered_admins <- form_admins()
+
+    if(input_cross_sectional())
+      filtered_admins <- filter(filtered_admins, cross_sectional == TRUE)
+
+    if(input_norming())
+      filtered_admins <- filter(filtered_admins, norming == TRUE)
+
+    filtered_admins
+  })
+
   trajectory_data <- reactive({
     if (all(input_words() %in% word_options())) {
-      trajectory_data_fun(admins, instrument(), input_measure(), input_words()) %>%
+      trajectory_data_fun(filtered_admins(), instrument(), input_measure(), input_words()) %>%
         mutate(item = factor(item, levels = input_words()))
     } else {
       data.frame()
@@ -250,18 +288,37 @@ shinyServer(function(input, output, session) {
   })
 
   output$language_selector <- renderUI({
-    selectInput("language", label = h4("Language"),
+    selectInput("language", label = strong("Language"),
                 choices = languages, selected = input_language())
   })
 
   output$form_selector <- renderUI({
-    selectInput("form", label = h4("Form"),
+    selectInput("form", label = strong("Form"),
                 choices = forms(), selected = input_form())
   })
 
   output$measure_selector <- renderUI({
-    selectInput("measure", label = h4("Measure"),
+    selectInput("measure", label = strong("Measure"),
                 choices = measures(), selected = input_measure())
+  })
+
+  output$data_filter <- renderUI({
+
+    possible_filters =  c("cross-sectional only" = "cross_sectional",
+                          "normative sample" = "norming")
+
+    available_filters <- Filter(
+      function(data_filter) !all(is.na(form_admins()[[data_filter]]) |
+                                   form_admins()[[data_filter]] == FALSE),
+      possible_filters
+    )
+
+
+
+    checkboxGroupInput("data_filter", "Choose Data",
+                       choices = available_filters,
+                       selected = "cross_sectional")
+
   })
 
   table_data <- reactive({

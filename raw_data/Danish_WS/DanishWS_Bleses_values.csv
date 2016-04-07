@@ -1,0 +1,27 @@
+type,value,data_value
+sex,M,male
+sex,F,female
+mom_ed,primary,Grundskole
+mom_ed,primary,Grundskole - Gymnasial U
+mom_ed,primary,Grundskole - Kortere VU
+mom_ed,secondary,Gymnasial U
+mom_ed,secondary,Gymnasial U - Kortere VU
+mom_ed,some college,Kortere VU
+mom_ed,some college,Kort - mellemlang VU
+mom_ed,some college,Kort - Lang VU
+mom_ed,college,Mellemlang VU
+mom_ed,college,Mellemlang - Lang VU
+mom_ed,graduate,Lang VU
+word,produces,said
+how_use_words,yes,yes
+how_use_words,no,no
+word_endings,not yet,not yet
+word_endings,sometimes,sometimes
+word_endings,often,often
+word_forms,produces,said
+word_endings,produces,said
+combine,not yet,not yet
+combine,sometimes,sometimes
+combine,often,often
+complexity,simple,1
+complexity,complex,2
