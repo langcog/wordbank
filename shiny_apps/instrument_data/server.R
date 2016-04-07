@@ -4,7 +4,7 @@ library(DT)
 library(wordbankr)
 mode <- "local"
 
-#input <- list(language = "English", form = "WS", age = c(18, 30))
+# input <- list(language = "English", form = "WS", age = c(18, 30))
 
 shinyServer(function(input, output, session) {
 

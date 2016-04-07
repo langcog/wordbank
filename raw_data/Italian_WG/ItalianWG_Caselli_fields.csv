@@ -1,508 +1,508 @@
-field,column,group,type
-data_age,età,admin,data_age
-sex,sesso,child,sex
-item_1,Risponde quando è chiamato per nome,item,first_signs
-item_2,Risponde ad un No,item,first_signs
-item_3,Reagisce ad un C'è la mamma/il papà,item,first_signs
-item_4,Vuoi la pappa,item,phrases
-item_5,Hai sonno? Sei stanco,item,phrases
-item_6,Vuoi bere?,item,phrases
-item_7,Stai attento,item,phrases
-item_8,Stai buono,item,phrases
-item_9,Batti le manine,item,phrases
-item_10,Cambiamo il pannolino,item,phrases
-item_11,Vieni qui,item,phrases
-item_12,Che schifo,item,phrases
-item_13,Ne vuoi ancora?,item,phrases
-item_14,Non fare questo,item,phrases
-item_15,Non toccare,item,phrases
-item_16,Alzati,item,phrases
-item_17,Dai quello alla mamma,item,phrases
-item_18,Dammi un bacino,item,phrases
-item_19,Andiamo a…,item,phrases
-item_20,Bravo bambino,item,phrases
-item_21,Stai fermo,item,phrases
-item_22,Dì Ciao,item,phrases
-item_23,Guarda/Guarda qui,item,phrases
-item_24,Apri la bocca,item,phrases
-item_25,Stai seduto,item,phrases
-item_26,Sputa,item,phrases
-item_27,Basta,item,phrases
-item_28,E' ora di fare la nanna,item,phrases
-item_29,Butta la palla,item,phrases
-item_30,Sei tutto sporco,item,phrases
-item_31,Usciamo?,item,phrases
-item_32,Quanto spesso imita le parole?,item,first_words
-item_33,Quanto spesso nomina?,item,first_words
-item_34,bau bau,item,word
-item_35,beh beh,item,word
-item_36,brum brum,item,word
-item_37,cip cip,item,word
-item_38,clop clop,item,word
-item_39,coccodè,item,word
-item_40,ih oh,item,word
-item_41,grr,item,word
-item_42,miao,item,word
-item_43,muh,item,word
-item_44,qua qua,item,word
-item_45,tuttù,item,word
-item_46,agnello,item,word
-item_47,animale,item,word
-item_48,asino,item,word
-item_49,cane,item,word
-item_50,capra,item,word
-item_51,cavallo,item,word
-item_52,cerbiatto,item,word
-item_53,coccodrillo,item,word
-item_54,coniglio,item,word
-item_55,elefante,item,word
-item_56,farfalla,item,word
-item_57,formica,item,word
-item_58,gallina,item,word
-item_59,gallo,item,word
-item_60,gatto,item,word
-item_61,giraffa,item,word
-item_62,ippopotamo,item,word
-item_63,leone,item,word
-item_64,lupo,item,word
-item_65,maiale,item,word
-item_66,mosca,item,word
-item_67,mucca,item,word
-item_68,oca,item,word
-item_69,orso,item,word
-item_70,papera,item,word
-item_71,pecora,item,word
-item_72,pesciolino,item,word
-item_73,pinguino,item,word
-item_74,pulcino,item,word
-item_75,rana,item,word
-item_76,scimmia,item,word
-item_77,tartaruga,item,word
-item_78,tigre,item,word
-item_79,topo,item,word
-item_80,uccellino,item,word
-item_81,zanzara,item,word
-item_82,aereo,item,word
-item_83,autobus,item,word
-item_84,automobile,item,word
-item_85,barca,item,word
-item_86,bicicletta,item,word
-item_87,camion,item,word
-item_88,motocicletta,item,word
-item_89,passeggino,item,word
-item_90,treno,item,word
-item_91,bambola,item,word
-item_92,cubi,item,word
-item_93,favola/storia,item,word
-item_94,giocattolo,item,word
-item_95,palla,item,word
-item_96,paletta,item,word
-item_97,secchiello,item,word
-item_98,trottola,item,word
-item_99,acqua,item,word
-item_100,arancia,item,word
-item_101,banana,item,word
-item_102,biscotti,item,word
-item_103,caramella,item,word
-item_104,carne,item,word
-item_105,carote,item,word
-item_106,cioccolata,item,word
-item_107,cracker,item,word
-item_108,formaggio,item,word
-item_109,gelato,item,word
-item_110,latte,item,word
-item_111,mela,item,word
-item_112,miele,item,word
-item_113,pane,item,word
-item_114,pappa,item,word
-item_115,pasta,item,word
-item_116,patate,item,word
-item_117,pera,item,word
-item_118,pesca,item,word
-item_119,piselli,item,word
-item_120,pollo,item,word
-item_121,polpette,item,word
-item_122,riso,item,word
-item_123,sugo,item,word
-item_124,torta,item,word
-item_125,uovo,item,word
-item_126,uva,item,word
-item_127,yogurt,item,word
-item_128,zucchero,item,word
-item_129,bavaglino,item,word
-item_130,bottone,item,word
-item_131,calze,item,word
-item_132,cappello,item,word
-item_133,cappotto,item,word
-item_134,collana,item,word
-item_135,giacca,item,word
-item_136,gonna,item,word
-item_137,guanti,item,word
-item_138,maglione,item,word
-item_139,mutande,item,word
-item_140,occhiali,item,word
-item_141,pannolino,item,word
-item_142,pantaloni,item,word
-item_143,pigiama,item,word
-item_144,scarpe,item,word
-item_145,sciarpa,item,word
-item_146,tuta,item,word
-item_147,vestito,item,word
-item_148,bocca,item,word
-item_149,braccio,item,word
-item_150,capelli,item,word
-item_151,denti,item,word
-item_152,dito,item,word
-item_153,faccia,item,word
-item_154,gambe,item,word
-item_155,lingua,item,word
-item_156,mano,item,word
-item_157,naso,item,word
-item_158,occhio,item,word
-item_159,ombelico,item,word
-item_160,orecchio,item,word
-item_161,organo genitale femm,item,word
-item_162,organo genitale masch,item,word
-item_163,pancia,item,word
-item_164,piede,item,word
-item_165,sederino,item,word
-item_166,seno,item,word
-item_167,testa,item,word
-item_168,armadio,item,word
-item_169,bagno,item,word
-item_170,bidè,item,word
-item_171,camera,item,word
-item_172,cassetto,item,word
-item_173,cucina,item,word
-item_174,culla,item,word
-item_175,divano,item,word
-item_176,doccia,item,word
-item_177,finestra,item,word
-item_178,frigorifero,item,word
-item_179,lavandino,item,word
-item_180,lavatrice,item,word
-item_181,letto,item,word
-item_182,porta,item,word
-item_183,salotto,item,word
-item_184,scala,item,word
-item_185,sedia,item,word
-item_186,seggiolone,item,word
-item_187,tappeto,item,word
-item_188,tavolo,item,word
-item_189,televisione/TV,item,word
-item_190,terrazza,item,word
-item_191,vasca da bagno,item,word
-item_192,biberon,item,word
-item_193,bicchiere,item,word
-item_194,bottiglia,item,word
-item_195,chiave,item,word
-item_196,ciuccio,item,word
-item_197,coltello,item,word
-item_198,coperchio,item,word
-item_199,coperta,item,word
-item_200,cucchiaio,item,word
-item_201,cuscino,item,word
-item_202,fazzoletto,item,word
-item_203,fon,item,word
-item_204,forbici,item,word
-item_205,forchetta,item,word
-item_206,giornale,item,word
-item_207,luce,item,word
-item_208,libro,item,word
-item_209,martello,item,word
-item_210,matita/penna,item,word
-item_211,musica,item,word
-item_212,ombrello,item,word
-item_213,orologio,item,word
-item_214,pentola,item,word
-item_215,pettine,item,word
-item_216,pianta,item,word
-item_217,piatto,item,word
-item_218,sapone,item,word
-item_219,scatola,item,word
-item_220,scopa,item,word
-item_221,soldi,item,word
-item_222,spazzolino da denti,item,word
-item_223,specchio,item,word
-item_224,tappo,item,word
-item_225,tazza,item,word
-item_226,telefono,item,word
-item_227,vasino,item,word
-item_228,albero,item,word
-item_229,altalena,item,word
-item_230,ascensore,item,word
-item_231,asilo,item,word
-item_232,campagna,item,word
-item_233,casa,item,word
-item_234,cielo,item,word
-item_235,fiore,item,word
-item_236,garage,item,word
-item_237,giardino,item,word
-item_238,luna,item,word
-item_239,mare,item,word
-item_240,montagna,item,word
-item_241,negozio,item,word
-item_242,neve,item,word
-item_243,nuvole,item,word
-item_244,parco giochi,item,word
-item_245,pioggia,item,word
-item_246,prato,item,word
-item_247,sasso,item,word
-item_248,scivolo,item,word
-item_249,sole,item,word
-item_250,stella,item,word
-item_251,strada,item,word
-item_252,terra,item,word
-item_253,vento,item,word
-item_254,zoo,item,word
-item_255,babysitter/tata,item,word
-item_256,barbiere,item,word
-item_257,bimbo/a,item,word
-item_258,cugino/a,item,word
-item_259,dottore,item,word
-item_260,fratello,item,word
-item_261,il suo nome,item,word
-item_262,maestro/a,item,word
-item_263,mamma,item,word
-item_264,nonna,item,word
-item_265,nonno,item,word
-item_266,papà,item,word
-item_267,parrucchiere,item,word
-item_268,persone,item,word
-item_269,ragazzo/a,item,word
-item_270,signore/a,item,word
-item_271,sorella,item,word
-item_272,vigile,item,word
-item_273,zia,item,word
-item_274,zio,item,word
-item_275,basta,item,word
-item_276,bravo,item,word
-item_277,bua,item,word
-item_278,bum (cade),item,word
-item_279,buonanotte/buongiorno,item,word
-item_280,ciao,item,word
-item_281,cuccù-settete,item,word
-item_282,dare le tottò,item,word
-item_283,fare il bagno,item,word
-item_284,fare la popò/pipì,item,word
-item_285,grazie/prego,item,word
-item_286,nanna,item,word
-item_287,no,item,word
-item_288,non c'èpiù/più,item,word
-item_289,"pronto, chi è? (al tel)",item,word
-item_290,sì,item,word
-item_291,un due tre,item,word
-item_292,via,item,word
-item_293,zitto/sch,item,word
-item_294,abbracciare,item,word
-item_295,accendere,item,word
-item_296,alzarsi,item,word
-item_297,andare,item,word
-item_298,aprire,item,word
-item_299,aspettare,item,word
-item_300,baciare,item,word
-item_301,ballare,item,word
-item_302,bere,item,word
-item_303,buttare,item,word
-item_304,cadere,item,word
-item_305,camminare,item,word
-item_306,cantare,item,word
-item_307,cercare,item,word
-item_308,chiudere,item,word
-item_309,correre,item,word
-item_310,cullare,item,word
-item_311,dare,item,word
-item_312,dire,item,word
-item_313,dondolare,item,word
-item_314,dormire,item,word
-item_315,fare,item,word
-item_316,fermarsi,item,word
-item_317,finire,item,word
-item_318,giocare,item,word
-item_319,girare,item,word
-item_320,lavare,item,word
-item_321,leccare,item,word
-item_322,leggere,item,word
-item_323,levare/togliere,item,word
-item_324,mangiare,item,word
-item_325,mettere,item,word
-item_326,mordere,item,word
-item_327,parlare,item,word
-item_328,pettinare,item,word
-item_329,piangere,item,word
-item_330,prendere,item,word
-item_331,pulire,item,word
-item_332,ridere,item,word
-item_333,rompere,item,word
-item_334,saltare,item,word
-item_335,salutare,item,word
-item_336,scrivere,item,word
-item_337,sedersi,item,word
-item_338,sentire,item,word
-item_339,soffiare,item,word
-item_340,spegnere,item,word
-item_341,spingere,item,word
-item_342,sputare,item,word
-item_343,tirare,item,word
-item_344,toccare,item,word
-item_345,uscire,item,word
-item_346,vedere,item,word
-item_347,venire,item,word
-item_348,volare,item,word
-item_349,alto,item,word
-item_350,arrabbiato,item,word
-item_351,asciutto,item,word
-item_352,attento,item,word
-item_353,bagnato,item,word
-item_354,bello,item,word
-item_355,brutto,item,word
-item_356,buio,item,word
-item_357,buono,item,word
-item_358,caldo,item,word
-item_359,carino,item,word
-item_360,cattivo,item,word
-item_361,contento,item,word
-item_362,disubbidiente,item,word
-item_363,dolce,item,word
-item_364,duro,item,word
-item_365,felice,item,word
-item_366,finito,item,word
-item_367,forte,item,word
-item_368,freddo,item,word
-item_369,giallo,item,word
-item_370,grande/grosso,item,word
-item_371,malato,item,word
-item_372,morbido,item,word
-item_373,nero,item,word
-item_374,pesante,item,word
-item_375,nuovo,item,word
-item_376,piano,item,word
-item_377,piccolo,item,word
-item_378,pieno,item,word
-item_379,pulito,item,word
-item_380,rosso,item,word
-item_381,rotto,item,word
-item_382,sporco,item,word
-item_383,stanco,item,word
-item_384,triste,item,word
-item_385,vuoto,item,word
-item_386,adesso/ora,item,word
-item_387,ancora,item,word
-item_388,di più,item,word
-item_389,domani,item,word
-item_390,dopo/poi,item,word
-item_391,ieri,item,word
-item_392,mattina,item,word
-item_393,molto,item,word
-item_394,nessuno,item,word
-item_395,niente,item,word
-item_396,notte,item,word
-item_397,oggi,item,word
-item_398,poco,item,word
-item_399,tanto,item,word
-item_400,tardi,item,word
-item_401,tutto,item,word
-item_402,un po',item,word
-item_403,io,item,word
-item_404,tu,item,word
-item_405,lui,item,word
-item_406,lei,item,word
-item_407,noi,item,word
-item_408,voi,item,word
-item_409,loro,item,word
-item_410,mio/a,item,word
-item_411,tuo/a,item,word
-item_412,suo/a,item,word
-item_413,me/mi,item,word
-item_414,quello/a,item,word
-item_415,questo/a,item,word
-item_416,che/che cosa?,item,word
-item_417,chi?,item,word
-item_418,come?,item,word
-item_419,dove?,item,word
-item_420,perché?,item,word
-item_421,quando?,item,word
-item_422,di,item,word
-item_423,a,item,word
-item_424,da,item,word
-item_425,in,item,word
-item_426,con,item,word
-item_427,su,item,word
-item_428,giù,item,word
-item_429,per,item,word
-item_430,sopra,item,word
-item_431,sotto,item,word
-item_432,dentro,item,word
-item_433,lontano,item,word
-item_434,il,item,word
-item_435,lo,item,word
-item_436,la,item,word
-item_437,i,item,word
-item_438,gli,item,word
-item_439,le,item,word
-item_440,un/uno/una,item,word
-item_441,altro/un altro,item,word
-item_442,Mostra all'adulto ciò che ha in mano,item,gestures
-item_443,Dà all'adulto ciò che ha in mano,item,gestures
-item_444,Richiede un oggetto stendendo il braccio,item,gestures
-item_445,Indica un oggetto o un evento,item,gestures
-item_446,Fa ciao con la mano,item,gestures
-item_447,Alza le braccia per farsi prendere su,item,gestures
-item_448,"Fa ""no"" con la testa o con il dito",item,gestures
-item_449,"Fa ""si"" con la testa",item,gestures
-item_450,"Fa ""sch"" (""silenzio"") con l'indice sulle labbra",item,gestures
-item_451,Soffia per far capire che qualcosa scotta,item,gestures
-item_452,"Gira il dito sulla guancia per dire ""è buono""",item,gestures
-item_453,Alza le spalle perché qualcosa non c'è più,item,gestures
-item_454,Gioca a nascondino (cuccù-settete),item,gestures
-item_455,Batte le manine,item,gestures
-item_456,Dà le tottò,item,gestures
-item_457,Fa le carezze,item,gestures
-item_458,Balla,item,gestures
-item_459,Manda un bacio,item,gestures
-item_460,Mangia con un cucchiaio o con una forchetta,item,gestures
-item_461,Beve da un recipiente con dei liquidi,item,gestures
-item_462,Si pettina o si spazzola i capelli,item,gestures
-item_463,Si lava i denti,item,gestures
-item_464,Si pulisce il viso con le mani o una salvietta,item,gestures
-item_465,Si mette il cappello,item,gestures
-item_466,Si mette le scarpe e le calze,item,gestures
-item_467,Scava con una paletta,item,gestures
-item_468,Posa la testa sulla mano o su un cuscino,item,gestures
-item_469,Chiude e apre le porte o gli sportelli,item,gestures
-item_470,Prende un aeroplanino e lo fa volare,item,gestures
-item_471,Porta il telefono all'orecchio,item,gestures
-item_472,Annusa i fiori,item,gestures
-item_473,Spinge le automobiline,item,gestures
-item_474,Lancia la palla,item,gestures
-item_475,Versa liquidi da un contenitore all'altro,item,gestures
-item_476,Mescola con un cucchiaio,item,gestures
-item_477,Mette a letto (bambole e pupazzi),item,gestures
-item_478,Copre con le coperte (bambole e pupazzi),item,gestures
-item_479,Imbocca con un cucchiaio (bambole e pupazzi),item,gestures
-item_480,Dà da bere (a bambole e pupazzi),item,gestures
-item_481,Pettina (bambole e pupazzi),item,gestures
-item_482,Accarezza (bambole e pupazzi),item,gestures
-item_483,Spinge sulla carrozzina (bambole e pupazzi),item,gestures
-item_484,Culla (bambole e pupazzi),item,gestures
-item_485,Bacia o abbraccia (bambole e pupazzi),item,gestures
-item_486,Prova a infilare calze e scarpe (a bambole e pupazzi),item,gestures
-item_487,Pulisce faccia o mani (a bambole e pupazzi),item,gestures
-item_488,Parla (con bambole e pupazzi),item,gestures
-item_489,Picchia (bambole e pupazzi),item,gestures
-item_490,Spazza con una scopa,item,gestures
-item_491,Infila la chiave nella serratura e la gira,item,gestures
-item_492,Batte con un martello,item,gestures
-item_493,Usa il telecomando,item,gestures
-item_494,Scrive a macchina o su computer,item,gestures
-item_495,"Legge (apre libri, sfoglia le pagine)",item,gestures
-item_496,Passa l'aspirapolvere,item,gestures
-item_497,Innaffia le piante,item,gestures
-item_498,Suona degli strumenti musicali,item,gestures
-item_499,Guida la macchina girando il volante,item,gestures
-item_500,Lava i piatti,item,gestures
-item_501,Pulisce con un panno o con un piumino,item,gestures
-item_502,"Scrive con una penna, con una matita",item,gestures
-item_503,"Si mette collane, braccialetti, orologi",item,gestures
-item_504,Si mette gli occhiali,item,gestures
-item_505,Giocare a far finta con degli oggetti,item,gestures
+"field","column","group","type"
+"data_age","età","admin","data_age"
+"sex","sesso","child","sex"
+"item_1","Risponde quando è chiamato per nome","item","first_signs"
+"item_2","Risponde ad un No","item","first_signs"
+"item_3","Reagisce ad un C'è la mamma/il papà","item","first_signs"
+"item_4","Vuoi la pappa","item","phrases"
+"item_5","Hai sonno? Sei stanco","item","phrases"
+"item_6","Vuoi bere?","item","phrases"
+"item_7","Stai attento","item","phrases"
+"item_8","Stai buono","item","phrases"
+"item_9","Batti le manine","item","phrases"
+"item_10","Cambiamo il pannolino","item","phrases"
+"item_11","Vieni qui","item","phrases"
+"item_12","Che schifo","item","phrases"
+"item_13","Ne vuoi ancora?","item","phrases"
+"item_14","Non fare questo","item","phrases"
+"item_15","Non toccare","item","phrases"
+"item_16","Alzati","item","phrases"
+"item_17","Dai quello alla mamma","item","phrases"
+"item_18","Dammi un bacino","item","phrases"
+"item_19","Andiamo a…","item","phrases"
+"item_20","Bravo bambino","item","phrases"
+"item_21","Stai fermo","item","phrases"
+"item_22","Dì Ciao","item","phrases"
+"item_23","Guarda/Guarda qui","item","phrases"
+"item_24","Apri la bocca","item","phrases"
+"item_25","Stai seduto","item","phrases"
+"item_26","Sputa","item","phrases"
+"item_27","Basta","item","phrases"
+"item_28","E' ora di fare la nanna","item","phrases"
+"item_29","Butta la palla","item","phrases"
+"item_30","Sei tutto sporco","item","phrases"
+"item_31","Usciamo?","item","phrases"
+"item_32","Quanto spesso imita le parole?","item","first_words"
+"item_33","Quanto spesso nomina?","item","first_words"
+"item_34","bau bau","item","word"
+"item_35","beh beh","item","word"
+"item_36","brum brum","item","word"
+"item_37","cip cip","item","word"
+"item_38","clop clop","item","word"
+"item_39","coccodè","item","word"
+"item_40","ih oh","item","word"
+"item_41","grr","item","word"
+"item_42","miao","item","word"
+"item_43","muh","item","word"
+"item_44","qua qua","item","word"
+"item_45","tuttù","item","word"
+"item_46","agnello","item","word"
+"item_47","animale","item","word"
+"item_48","asino","item","word"
+"item_49","cane","item","word"
+"item_50","capra","item","word"
+"item_51","cavallo","item","word"
+"item_52","cerbiatto","item","word"
+"item_53","coccodrillo","item","word"
+"item_54","coniglio","item","word"
+"item_55","elefante","item","word"
+"item_56","farfalla","item","word"
+"item_57","formica","item","word"
+"item_58","gallina","item","word"
+"item_59","gallo","item","word"
+"item_60","gatto","item","word"
+"item_61","giraffa","item","word"
+"item_62","ippopotamo","item","word"
+"item_63","leone","item","word"
+"item_64","lupo","item","word"
+"item_65","maiale","item","word"
+"item_66","mosca","item","word"
+"item_67","mucca","item","word"
+"item_68","oca","item","word"
+"item_69","orso","item","word"
+"item_70","papera","item","word"
+"item_71","pecora","item","word"
+"item_72","pesciolino","item","word"
+"item_73","pinguino","item","word"
+"item_74","pulcino","item","word"
+"item_75","rana","item","word"
+"item_76","scimmia","item","word"
+"item_77","tartaruga","item","word"
+"item_78","tigre","item","word"
+"item_79","topo","item","word"
+"item_80","uccellino","item","word"
+"item_81","zanzara","item","word"
+"item_82","aereo","item","word"
+"item_83","autobus","item","word"
+"item_84","automobile","item","word"
+"item_85","barca","item","word"
+"item_86","bicicletta","item","word"
+"item_87","camion","item","word"
+"item_88","motocicletta","item","word"
+"item_89","passeggino","item","word"
+"item_90","treno","item","word"
+"item_91","bambola","item","word"
+"item_92","cubi","item","word"
+"item_93","favola/storia","item","word"
+"item_94","giocattolo","item","word"
+"item_95","palla","item","word"
+"item_96","paletta","item","word"
+"item_97","secchiello","item","word"
+"item_98","trottola","item","word"
+"item_99","acqua","item","word"
+"item_100","arancia","item","word"
+"item_101","banana","item","word"
+"item_102","biscotti","item","word"
+"item_103","caramella","item","word"
+"item_104","carne","item","word"
+"item_105","carote","item","word"
+"item_106","cioccolata","item","word"
+"item_107","cracker","item","word"
+"item_108","formaggio","item","word"
+"item_109","gelato","item","word"
+"item_110","latte","item","word"
+"item_111","mela","item","word"
+"item_112","miele","item","word"
+"item_113","pane","item","word"
+"item_114","pappa","item","word"
+"item_115","pasta","item","word"
+"item_116","patate","item","word"
+"item_117","pera","item","word"
+"item_118","pesca","item","word"
+"item_119","piselli","item","word"
+"item_120","pollo","item","word"
+"item_121","polpette","item","word"
+"item_122","riso","item","word"
+"item_123","sugo","item","word"
+"item_124","torta","item","word"
+"item_125","uovo","item","word"
+"item_126","uva","item","word"
+"item_127","yogurt","item","word"
+"item_128","zucchero","item","word"
+"item_129","bavaglino","item","word"
+"item_130","bottone","item","word"
+"item_131","calze","item","word"
+"item_132","cappello","item","word"
+"item_133","cappotto","item","word"
+"item_134","collana","item","word"
+"item_135","giacca","item","word"
+"item_136","gonna","item","word"
+"item_137","guanti","item","word"
+"item_138","maglione","item","word"
+"item_139","mutande","item","word"
+"item_140","occhiali","item","word"
+"item_141","pannolino","item","word"
+"item_142","pantaloni","item","word"
+"item_143","pigiama","item","word"
+"item_144","scarpe","item","word"
+"item_145","sciarpa","item","word"
+"item_146","tuta","item","word"
+"item_147","vestito","item","word"
+"item_148","bocca","item","word"
+"item_149","braccio","item","word"
+"item_150","capelli","item","word"
+"item_151","denti","item","word"
+"item_152","dito","item","word"
+"item_153","faccia","item","word"
+"item_154","gambe","item","word"
+"item_155","lingua","item","word"
+"item_156","mano","item","word"
+"item_157","naso","item","word"
+"item_158","occhio","item","word"
+"item_159","ombelico","item","word"
+"item_160","orecchio","item","word"
+"item_161","organo genitale femm","item","word"
+"item_162","organo genitale masch","item","word"
+"item_163","pancia","item","word"
+"item_164","piede","item","word"
+"item_165","sederino","item","word"
+"item_166","seno","item","word"
+"item_167","testa","item","word"
+"item_168","armadio","item","word"
+"item_169","bagno","item","word"
+"item_170","bidè","item","word"
+"item_171","camera","item","word"
+"item_172","cassetto","item","word"
+"item_173","cucina","item","word"
+"item_174","culla","item","word"
+"item_175","divano","item","word"
+"item_176","doccia","item","word"
+"item_177","finestra","item","word"
+"item_178","frigorifero","item","word"
+"item_179","lavandino","item","word"
+"item_180","lavatrice","item","word"
+"item_181","letto","item","word"
+"item_182","porta","item","word"
+"item_183","salotto","item","word"
+"item_184","scala","item","word"
+"item_185","sedia","item","word"
+"item_186","seggiolone","item","word"
+"item_187","tappeto","item","word"
+"item_188","tavolo","item","word"
+"item_189","televisione/TV","item","word"
+"item_190","terrazza","item","word"
+"item_191","vasca da bagno","item","word"
+"item_192","biberon","item","word"
+"item_193","bicchiere","item","word"
+"item_194","bottiglia","item","word"
+"item_195","chiave","item","word"
+"item_196","ciuccio","item","word"
+"item_197","coltello","item","word"
+"item_198","coperchio","item","word"
+"item_199","coperta","item","word"
+"item_200","cucchiaio","item","word"
+"item_201","cuscino","item","word"
+"item_202","fazzoletto","item","word"
+"item_203","fon","item","word"
+"item_204","forbici","item","word"
+"item_205","forchetta","item","word"
+"item_206","giornale","item","word"
+"item_207","luce","item","word"
+"item_208","libro","item","word"
+"item_209","martello","item","word"
+"item_210","matita/penna","item","word"
+"item_211","musica","item","word"
+"item_212","ombrello","item","word"
+"item_213","orologio","item","word"
+"item_214","pentola","item","word"
+"item_215","pettine","item","word"
+"item_216","pianta","item","word"
+"item_217","piatto","item","word"
+"item_218","sapone","item","word"
+"item_219","scatola","item","word"
+"item_220","scopa","item","word"
+"item_221","soldi","item","word"
+"item_222","spazzolino da denti","item","word"
+"item_223","specchio","item","word"
+"item_224","tappo","item","word"
+"item_225","tazza","item","word"
+"item_226","telefono","item","word"
+"item_227","vasino","item","word"
+"item_228","albero","item","word"
+"item_229","altalena","item","word"
+"item_230","ascensore","item","word"
+"item_231","asilo","item","word"
+"item_232","campagna","item","word"
+"item_233","casa","item","word"
+"item_234","cielo","item","word"
+"item_235","fiore","item","word"
+"item_236","garage","item","word"
+"item_237","giardino","item","word"
+"item_238","luna","item","word"
+"item_239","mare","item","word"
+"item_240","montagna","item","word"
+"item_241","negozio","item","word"
+"item_242","neve","item","word"
+"item_243","nuvole","item","word"
+"item_244","parco giochi","item","word"
+"item_245","pioggia","item","word"
+"item_246","prato","item","word"
+"item_247","sasso","item","word"
+"item_248","scivolo","item","word"
+"item_249","sole","item","word"
+"item_250","stella","item","word"
+"item_251","strada","item","word"
+"item_252","terra","item","word"
+"item_253","vento","item","word"
+"item_254","zoo","item","word"
+"item_255","babysitter/tata","item","word"
+"item_256","barbiere","item","word"
+"item_257","bimbo/a","item","word"
+"item_258","cugino/a","item","word"
+"item_259","dottore","item","word"
+"item_260","fratello","item","word"
+"item_261","il suo nome","item","word"
+"item_262","maestro/a","item","word"
+"item_263","mamma","item","word"
+"item_264","nonna","item","word"
+"item_265","nonno","item","word"
+"item_266","papà","item","word"
+"item_267","parrucchiere","item","word"
+"item_268","persone","item","word"
+"item_269","ragazzo/a","item","word"
+"item_270","signore/a","item","word"
+"item_271","sorella","item","word"
+"item_272","vigile","item","word"
+"item_273","zia","item","word"
+"item_274","zio","item","word"
+"item_275","basta","item","word"
+"item_276","bravo","item","word"
+"item_277","bua","item","word"
+"item_278","bum (cade)","item","word"
+"item_279","buonanotte/buongiorno","item","word"
+"item_280","ciao","item","word"
+"item_281","cuccù-settete","item","word"
+"item_282","dare le tottò","item","word"
+"item_283","fare il bagno","item","word"
+"item_284","fare la popò/pipì","item","word"
+"item_285","grazie/prego","item","word"
+"item_286","nanna","item","word"
+"item_287","no","item","word"
+"item_288","non c'èpiù/più","item","word"
+"item_289","pronto, chi è? (al tel)","item","word"
+"item_290","sì","item","word"
+"item_291","un due tre","item","word"
+"item_292","via","item","word"
+"item_293","zitto/sch","item","word"
+"item_294","abbracciare","item","word"
+"item_295","accendere","item","word"
+"item_296","alzarsi","item","word"
+"item_297","andare","item","word"
+"item_298","aprire","item","word"
+"item_299","aspettare","item","word"
+"item_300","baciare","item","word"
+"item_301","ballare","item","word"
+"item_302","bere","item","word"
+"item_303","buttare","item","word"
+"item_304","cadere","item","word"
+"item_305","camminare","item","word"
+"item_306","cantare","item","word"
+"item_307","cercare","item","word"
+"item_308","chiudere","item","word"
+"item_309","correre","item","word"
+"item_310","cullare","item","word"
+"item_311","dare","item","word"
+"item_312","dire","item","word"
+"item_313","dondolare","item","word"
+"item_314","dormire","item","word"
+"item_315","fare","item","word"
+"item_316","fermarsi","item","word"
+"item_317","finire","item","word"
+"item_318","giocare","item","word"
+"item_319","girare","item","word"
+"item_320","lavare","item","word"
+"item_321","leccare","item","word"
+"item_322","leggere","item","word"
+"item_323","levare/togliere","item","word"
+"item_324","mangiare","item","word"
+"item_325","mettere","item","word"
+"item_326","mordere","item","word"
+"item_327","parlare","item","word"
+"item_328","pettinare","item","word"
+"item_329","piangere","item","word"
+"item_330","prendere","item","word"
+"item_331","pulire","item","word"
+"item_332","ridere","item","word"
+"item_333","rompere","item","word"
+"item_334","saltare","item","word"
+"item_335","salutare","item","word"
+"item_336","scrivere","item","word"
+"item_337","sedersi","item","word"
+"item_338","sentire","item","word"
+"item_339","soffiare","item","word"
+"item_340","spegnere","item","word"
+"item_341","spingere","item","word"
+"item_342","sputare","item","word"
+"item_343","tirare","item","word"
+"item_344","toccare","item","word"
+"item_345","uscire","item","word"
+"item_346","vedere","item","word"
+"item_347","venire","item","word"
+"item_348","volare","item","word"
+"item_349","alto","item","word"
+"item_350","arrabbiato","item","word"
+"item_351","asciutto","item","word"
+"item_352","attento","item","word"
+"item_353","bagnato","item","word"
+"item_354","bello","item","word"
+"item_355","brutto","item","word"
+"item_356","buio","item","word"
+"item_357","buono","item","word"
+"item_358","caldo","item","word"
+"item_359","carino","item","word"
+"item_360","cattivo","item","word"
+"item_361","contento","item","word"
+"item_362","disubbidiente","item","word"
+"item_363","dolce","item","word"
+"item_364","duro","item","word"
+"item_365","felice","item","word"
+"item_366","finito","item","word"
+"item_367","forte","item","word"
+"item_368","freddo","item","word"
+"item_369","giallo","item","word"
+"item_370","grande/grosso","item","word"
+"item_371","malato","item","word"
+"item_372","morbido","item","word"
+"item_373","nero","item","word"
+"item_374","pesante","item","word"
+"item_375","nuovo","item","word"
+"item_376","piano","item","word"
+"item_377","piccolo","item","word"
+"item_378","pieno","item","word"
+"item_379","pulito","item","word"
+"item_380","rosso","item","word"
+"item_381","rotto","item","word"
+"item_382","sporco","item","word"
+"item_383","stanco","item","word"
+"item_384","triste","item","word"
+"item_385","vuoto","item","word"
+"item_386","adesso/ora","item","word"
+"item_387","ancora","item","word"
+"item_388","di più","item","word"
+"item_389","domani","item","word"
+"item_390","dopo/poi","item","word"
+"item_391","ieri","item","word"
+"item_392","mattina","item","word"
+"item_393","molto","item","word"
+"item_394","nessuno","item","word"
+"item_395","niente","item","word"
+"item_396","notte","item","word"
+"item_397","oggi","item","word"
+"item_398","poco","item","word"
+"item_399","tanto","item","word"
+"item_400","tardi","item","word"
+"item_401","tutto","item","word"
+"item_402","un po'","item","word"
+"item_403","io","item","word"
+"item_404","tu","item","word"
+"item_405","lui","item","word"
+"item_406","lei","item","word"
+"item_407","noi","item","word"
+"item_408","voi","item","word"
+"item_409","loro","item","word"
+"item_410","mio/a","item","word"
+"item_411","tuo/a","item","word"
+"item_412","suo/a","item","word"
+"item_413","me/mi","item","word"
+"item_414","quello/a","item","word"
+"item_415","questo/a","item","word"
+"item_416","che/che cosa?","item","word"
+"item_417","chi?","item","word"
+"item_418","come?","item","word"
+"item_419","dove?","item","word"
+"item_420","perché?","item","word"
+"item_421","quando?","item","word"
+"item_422","di","item","word"
+"item_423","a","item","word"
+"item_424","da","item","word"
+"item_425","in","item","word"
+"item_426","con","item","word"
+"item_427","su","item","word"
+"item_428","giù","item","word"
+"item_429","per","item","word"
+"item_430","sopra","item","word"
+"item_431","sotto","item","word"
+"item_432","dentro","item","word"
+"item_433","lontano","item","word"
+"item_434","il","item","word"
+"item_435","lo","item","word"
+"item_436","la","item","word"
+"item_437","i","item","word"
+"item_438","gli","item","word"
+"item_439","le","item","word"
+"item_440","un/uno/una","item","word"
+"item_441","altro/un altro","item","word"
+"item_442","Mostra all'adulto ciò che ha in mano","item","gestures_first"
+"item_443","Dà all'adulto ciò che ha in mano","item","gestures_first"
+"item_444","Richiede un oggetto stendendo il braccio","item","gestures_first"
+"item_445","Indica un oggetto o un evento","item","gestures_first"
+"item_446","Fa ciao con la mano","item","gestures_first"
+"item_447","Alza le braccia per farsi prendere su","item","gestures_first"
+"item_448","Fa ""no"" con la testa o con il dito","item","gestures_first"
+"item_449","Fa ""si"" con la testa","item","gestures_first"
+"item_450","Fa ""sch"" (""silenzio"") con l'indice sulle labbra","item","gestures_first"
+"item_451","Soffia per far capire che qualcosa scotta","item","gestures_first"
+"item_452","Gira il dito sulla guancia per dire ""è buono""","item","gestures_first"
+"item_453","Alza le spalle perché qualcosa non c'è più","item","gestures_first"
+"item_454","Gioca a nascondino (cuccù-settete)","item","gestures_games"
+"item_455","Batte le manine","item","gestures_games"
+"item_456","Dà le tottò","item","gestures_games"
+"item_457","Fa le carezze","item","gestures_games"
+"item_458","Balla","item","gestures_games"
+"item_459","Manda un bacio","item","gestures_games"
+"item_460","Mangia con un cucchiaio o con una forchetta","item","gestures_objects"
+"item_461","Beve da un recipiente con dei liquidi","item","gestures_objects"
+"item_462","Si pettina o si spazzola i capelli","item","gestures_objects"
+"item_463","Si lava i denti","item","gestures_objects"
+"item_464","Si pulisce il viso con le mani o una salvietta","item","gestures_objects"
+"item_465","Si mette il cappello","item","gestures_objects"
+"item_466","Si mette le scarpe e le calze","item","gestures_objects"
+"item_467","Scava con una paletta","item","gestures_objects"
+"item_468","Posa la testa sulla mano o su un cuscino","item","gestures_objects"
+"item_469","Chiude e apre le porte o gli sportelli","item","gestures_objects"
+"item_470","Prende un aeroplanino e lo fa volare","item","gestures_objects"
+"item_471","Porta il telefono all'orecchio","item","gestures_objects"
+"item_472","Annusa i fiori","item","gestures_objects"
+"item_473","Spinge le automobiline","item","gestures_objects"
+"item_474","Lancia la palla","item","gestures_objects"
+"item_475","Versa liquidi da un contenitore all'altro","item","gestures_objects"
+"item_476","Mescola con un cucchiaio","item","gestures_objects"
+"item_477","Mette a letto (bambole e pupazzi)","item","gestures_parent"
+"item_478","Copre con le coperte (bambole e pupazzi)","item","gestures_parent"
+"item_479","Imbocca con un cucchiaio (bambole e pupazzi)","item","gestures_parent"
+"item_480","Dà da bere (a bambole e pupazzi)","item","gestures_parent"
+"item_481","Pettina (bambole e pupazzi)","item","gestures_parent"
+"item_482","Accarezza (bambole e pupazzi)","item","gestures_parent"
+"item_483","Spinge sulla carrozzina (bambole e pupazzi)","item","gestures_parent"
+"item_484","Culla (bambole e pupazzi)","item","gestures_parent"
+"item_485","Bacia o abbraccia (bambole e pupazzi)","item","gestures_parent"
+"item_486","Prova a infilare calze e scarpe (a bambole e pupazzi)","item","gestures_parent"
+"item_487","Pulisce faccia o mani (a bambole e pupazzi)","item","gestures_parent"
+"item_488","Parla (con bambole e pupazzi)","item","gestures_parent"
+"item_489","Picchia (bambole e pupazzi)","item","gestures_parent"
+"item_490","Spazza con una scopa","item","gestures_adult"
+"item_491","Infila la chiave nella serratura e la gira","item","gestures_adult"
+"item_492","Batte con un martello","item","gestures_adult"
+"item_493","Usa il telecomando","item","gestures_adult"
+"item_494","Scrive a macchina o su computer","item","gestures_adult"
+"item_495","Legge (apre libri, sfoglia le pagine)","item","gestures_adult"
+"item_496","Passa l'aspirapolvere","item","gestures_adult"
+"item_497","Innaffia le piante","item","gestures_adult"
+"item_498","Suona degli strumenti musicali","item","gestures_adult"
+"item_499","Guida la macchina girando il volante","item","gestures_adult"
+"item_500","Lava i piatti","item","gestures_adult"
+"item_501","Pulisce con un panno o con un piumino","item","gestures_adult"
+"item_502","Scrive con una penna, con una matita","item","gestures_adult"
+"item_503","Si mette collane, braccialetti, orologi","item","gestures_adult"
+"item_504","Si mette gli occhiali","item","gestures_adult"
+"item_505","Giocare a far finta con degli oggetti","item","gestures_play"
