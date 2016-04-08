@@ -40,7 +40,7 @@ shinyUI(fluidPage(
                     max = 36, 
                     value = 20, step = 1),
         sliderInput("cutoff", "Minimum semantic associations",
-                    min = 1, max = max(assoc_edges$width), 
+                    min = 1, max = 4, 
                     value = 2, step = 1),
         selectizeInput("weighted", "Should graph edges be weighted?",
                     choices = c("Yes" = TRUE, 
