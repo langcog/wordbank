@@ -28,6 +28,13 @@
   "source": "shiny"
 },
 {
+  "title": "Semantic Networks",
+  "name": "networks",
+  "thumbnail": "static/images/sample_plots/networks.png",
+  "type": "visualizations",
+  "source": "shiny"
+},
+{
   "title": "Cross-Linguistic Trajectories",
   "name": "uni_lemmas",
   "thumbnail": "static/images/sample_plots/uni_lemmas.png",
