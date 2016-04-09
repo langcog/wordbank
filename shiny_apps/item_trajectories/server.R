@@ -166,10 +166,10 @@ shinyServer(function(input, output, session) {
 
     filtered_admins <- form_admins()
 
-    if(input_cross_sectional())
+    if (input_cross_sectional())
       filtered_admins <- filter(filtered_admins, cross_sectional == TRUE)
 
-    if(input_norming())
+    if (input_norming())
       filtered_admins <- filter(filtered_admins, norming == TRUE)
 
     filtered_admins
@@ -192,13 +192,6 @@ shinyServer(function(input, output, session) {
   age_min <- reactive(min(instrument()$age_min))
   age_max <- reactive(max(instrument()$age_max))
 
-  solarized_colors <- c("#268bd2", "#cb4b16", "#859900", "#993399", "#d33682",
-                        "#b58900", "#2aa198", "#6c71c4", "#dc322f")
-  stable_order_palete <- function(num_values) {
-    c(rep(solarized_colors, num_values %/% length(solarized_colors)),
-      solarized_colors[1:(num_values %% length(solarized_colors))])
-  }
-
   trajectory_plot <- function() {
     traj <- trajectory_data()
     if (nrow(traj) == 0) {
@@ -214,8 +207,10 @@ shinyServer(function(input, output, session) {
       amin <- age_min()
       amax <- age_max()
       ggplot(traj, aes(x = age, y = prop, colour = item, fill = item, label = item)) +
-        geom_smooth(aes(linetype = type, weight = total), method = "glm",
-                    method.args = list(family = "binomial")) +
+        # geom_smooth(aes(linetype = type, weight = total), method = "glm",
+        #             method.args = list(family = "binomial")) +
+        geom_smooth(aes(linetype = type, weight = total), method = "loess",
+                    se = FALSE) +
         geom_point(aes(shape = form)) +
         scale_shape_manual(name = "", values = c(20, 1), guide = FALSE) +
         scale_linetype_discrete(guide = FALSE) +
@@ -225,10 +220,8 @@ shinyServer(function(input, output, session) {
         scale_y_continuous(name = sprintf("%s\n", ylabel()),
                            limits = c(-0.01, 1),
                            breaks = seq(0, 1, 0.25)) +
-        scale_colour_manual(guide = FALSE,
-                            values = stable_order_palete(length(unique(traj$item)))) +
-        scale_fill_manual(guide = FALSE,
-                          values = stable_order_palete(length(unique(traj$item)))) +
+        scale_colour_solarized(guide = FALSE) +
+        scale_fill_solarized(guide = FALSE) +
         geom_dl(method = list(dl.trans(x = x + 0.3), "last.qp", cex = 1,
                               fontfamily = font))
     }
