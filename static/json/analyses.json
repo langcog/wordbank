@@ -56,13 +56,6 @@
   "source": "shiny"
 },
 {
-  "title": "Scoring Tool",
-  "name": "scoring",
-  "thumbnail": "static/images/sample_plots/scoring.png",
-  "type": "visualizations",
-  "source": "shiny"
-},
-{
   "title": "Predicting Words' Age of Acquisition",
   "name": "aoa_prediction",
   "thumbnail": "static/images/sample_plots/vocab_comp.png",
