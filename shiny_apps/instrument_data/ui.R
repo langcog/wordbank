@@ -6,7 +6,7 @@ library(DT)
 shinyUI(fluidPage(
   theme = shinytheme("spacelab"),
 
-  titlePanel("Instrument Data"),
+  titlePanel("Full Child-by-Word Data"),
   br(),
 
   sidebarLayout(
