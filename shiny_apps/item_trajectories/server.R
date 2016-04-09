@@ -184,6 +184,14 @@ shinyServer(function(input, output, session) {
     }
   })
 
+  mean_data <- reactive({
+    trajectory_data() %>%
+      group_by(form, type, age) %>%
+      summarise(prop = mean(prop),
+                total = sum(total)) %>%
+      mutate(item = "mean")
+  })
+
   ylabel <- reactive({
     if (input_measure() == "understands") "Proportion of Children Understanding"
     else if (input_measure() == "produces") "Proportion of Children Producing"
@@ -206,7 +214,7 @@ shinyServer(function(input, output, session) {
     } else {
       amin <- age_min()
       amax <- age_max()
-      ggplot(traj, aes(x = age, y = prop, colour = item, fill = item, label = item)) +
+      g <- ggplot(traj, aes(x = age, y = prop, colour = item, fill = item, label = item)) +
         # geom_smooth(aes(linetype = type, weight = total), method = "glm",
         #             method.args = list(family = "binomial")) +
         geom_smooth(aes(linetype = type, weight = total), method = "loess",
@@ -224,6 +232,14 @@ shinyServer(function(input, output, session) {
         scale_fill_solarized(guide = FALSE) +
         geom_dl(method = list(dl.trans(x = x + 0.3), "last.qp", cex = 1,
                               fontfamily = font))
+      if (input$mean) {
+        g +
+          geom_smooth(aes(linetype = type, weight = total), method = "loess",
+                      se = FALSE, colour = "black", data = mean_data()) +
+          geom_point(aes(shape = form), colour = "black", data = mean_data())
+      } else {
+        g
+      }
     }
   }
 
