@@ -147,8 +147,10 @@ shinyServer(function(input, output, session) {
 
   form_admins <- reactive({
     form_specific_admins <- admins %>%
-      filter(language == input_language(),
-             form == input_form())
+      filter(language == input_language())
+
+    if(length(input_forms()) == 1)
+      form_specific_admins %<>% filter(form == input_forms())
 
     #Compute cross-sectional as first entry for a child in a source
     first_longitudinals <- form_specific_admins %>%
@@ -218,7 +220,7 @@ shinyServer(function(input, output, session) {
         # geom_smooth(aes(linetype = type, weight = total), method = "glm",
         #             method.args = list(family = "binomial")) +
         geom_smooth(aes(linetype = type, weight = total), method = "loess",
-                    se = FALSE) +
+                    se = TRUE) +
         geom_point(aes(shape = form)) +
         scale_shape_manual(name = "", values = c(20, 1), guide = FALSE) +
         scale_linetype_discrete(guide = FALSE) +
