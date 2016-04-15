@@ -29,24 +29,52 @@ shinyServer(function(input, output, session) {
       filter(uni_lemma == input$uni_lemma)
   })
 
-  output$by_language <- renderPlot({
+  crosslinguistic_plot <- function() {
     words_data <- uni_lemma_data() %>%
       select(language, measure, words) %>%
       distinct()
     ggplot(uni_lemma_data(), aes(x = age)) +
       facet_grid(measure ~ language) +
       geom_point(aes(y = prop, colour = language)) +
-      # geom_smooth(aes(y = prop, colour = language, weight = ), method = "loess", se = FALSE,
-      #             size = 1.5) +
-      geom_line(aes(y = fit_prop, colour = language), size = 1.5) +
+      geom_smooth(aes(y = prop, colour = language), method = "loess", se = FALSE,
+                  size = 1.5) +
+      # geom_line(aes(y = fit_prop, colour = language), size = 1.5) +
       geom_label(aes(x = 8, y = 1, label = words), data = words_data,
                  family = font, label.padding = unit(0.15, "lines"),
                  vjust = "inward", hjust = "inward") +
       scale_colour_solarized(guide = FALSE) +
+      scale_fill_solarized(guide = FALSE) +
       scale_y_continuous(name = "Proportion of children\n", limits = c(0, 1)) +
       scale_x_continuous(name = "\nAge (months)", limits = c(8, 18),
                          breaks = seq(8, 18, 2))
+  }
+
+  output$crosslinguistic <- renderPlot({
+    crosslinguistic_plot()
   }, width = function() length(unique(uni_lemma_data()$language)) * 100 + 100)
+
+  table_data <- reactive({
+    uni_lemma_data() %>%
+      select(language, age, measure, uni_lemma, words, prop)
+  })
+
+  output$table <- renderTable({
+    table_data()
+  }, include.rownames = FALSE, digits = 2)
+
+  output$download_table <- downloadHandler(
+    filename = function() "crosslinguistic_table.csv",
+    content = function(file) {
+      write_csv(table_data(), file)
+    })
+
+  output$download_plot <- downloadHandler(
+    filename = function() "crosslinguistic.pdf",
+    content = function(file) {
+      cairo_pdf(file, width = 10, height = 6)
+      print(crosslinguistic_plot())
+      dev.off()
+    })
 
   output$loaded <- reactive(1)
 

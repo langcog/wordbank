@@ -5,7 +5,7 @@ shinyUI(fluidPage(
 
   theme = shinytheme("spacelab"),
 
-  titlePanel("Administration Data"),
+  titlePanel("By-Child Summary Data"),
   br(),
 
   conditionalPanel(
