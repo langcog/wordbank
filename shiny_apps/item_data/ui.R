@@ -4,7 +4,7 @@ library(shinythemes)
 shinyUI(fluidPage(
   theme = shinytheme("spacelab"),
 
-  titlePanel("Item Data"),
+  titlePanel("By-Word Summary Data"),
   br(),
 
   sidebarLayout(
