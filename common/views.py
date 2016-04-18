@@ -27,12 +27,6 @@ class Home(View):
         return render(request, 'home.html', {'data': data, 'lang_stats': json.dumps(js_lang_stats)})
 
 
-class About(View):
-
-    def get(self, request):
-        return render(request, 'about.html', {})
-
-
 class Publications(View):
 
     def get(self, request):
@@ -105,3 +99,8 @@ class Blog(View):
         resources = json.loads(urllib2.urlopen(static('json/resources.json')).read())
 
         return render(request, 'blog.html', {'entries': entries, 'events': events, 'resources': resources})
+
+class Faq(View):
+
+    def get(self, request):
+        return render(request, 'faq.html', {})
