@@ -34,10 +34,24 @@ shinyUI(fluidPage(
       tags$style(type = "text/css",
                  ".shiny-output-error { visibility: hidden; }",
                  ".shiny-output-error:before { visibility: hidden; }"),
+      tabsetPanel(
+        tabPanel("Plot",
+                 br(),
                  conditionalPanel(
                    condition = "output.loaded == 1",
-                   plotOutput("by_language")
+                   plotOutput("crosslinguistic"),
+                   br(),
+                   downloadButton("download_plot", "Download Plot",
+                                  class = "btn-default btn-xs")
                  )
+        ),
+        tabPanel("Table",
+                 br(),
+                 downloadButton("download_table", "Download Table",
+                                class = "btn-default btn-xs"),
+                 br(), br(),
+                 tableOutput("table"))
+      )
     )
   )
 ))
