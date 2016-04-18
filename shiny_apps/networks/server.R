@@ -115,7 +115,7 @@ shinyServer(function(input, output) {
   assoc_edges <- reactive({
     req(input$weighted)
     
-    print(assoc_nodes())
+    #print(assoc_nodes())
     
     edges <- assoc_edge_data() %>%
       filter(width >= input$cutoff) 
