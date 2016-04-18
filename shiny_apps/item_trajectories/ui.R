@@ -8,26 +8,26 @@ library(markdown)
 pops <- fromJSON("docs/popovers.json")
 
 shinyUI(fluidPage(
-  
+
   theme = shinytheme("spacelab"),
-  
+
   br(),
   bsCollapse(id = "doc", open = "title",
              bsCollapsePanel(title = h3("Item Trajectories"),
                              includeMarkdown("docs/description.md"),
                              value = "title",
                              style = "default")),
-  
+
   fluidRow(
     column(3,
            conditionalPanel(
              condition = "output.loaded != 1",
              h4("Loading...")
            ),
-           
+
            conditionalPanel(
              condition = "output.loaded == 1",
-             
+
              wellPanel(
                tags$style(type = "text/css", ".popover { width: 150px; }"),
                uiOutput("language_selector"),
@@ -43,15 +43,16 @@ shinyUI(fluidPage(
                          content = HTML(sprintf("<small>%s</small>", pops$measure)),
                          placement = "right"),
                uiOutput("data_filter")),
-             
+
              wellPanel(
                popify(selectInput("words", label = strong("Words"),
                                   choices = NULL, multiple = TRUE),
                       title = NULL,
                       content = HTML(sprintf("<small>%s</small>", pops$words)),
-                      placement = "right"))
+                      placement = "right"),
+               checkboxInput("mean", "Mean of words"))
            )),
-    
+
     column(9,
            tags$style(type = "text/css",
                       ".shiny-output-error { visibility: hidden; }",
