@@ -1,20 +1,20 @@
 [
 {
-  "title": "Instrument Data",
+  "title": "Full Child-by-Word Data",
   "name": "instrument_data",
   "thumbnail": "static/images/sample_plots/instrument_data.png",
   "type": "data",
   "source": "shiny"
 },
 {
-  "title": "Item Data",
+  "title": "By-Word Summary Data",
   "name": "item_data",
   "thumbnail": "static/images/sample_plots/item_data.png",
   "type": "data",
   "source": "shiny"
 },
 {
-  "title": "Administration Data",
+  "title": "By-Child Summary Data",
   "name": "admin_data",
   "thumbnail": "static/images/sample_plots/admin_data.png",
   "type": "data",
@@ -24,6 +24,13 @@
   "title": "Scoring Tool",
   "name": "scoring",
   "thumbnail": "static/images/sample_plots/scoring.png",
+  "type": "visualizations",
+  "source": "shiny"
+},
+{
+  "title": "Semantic Networks",
+  "name": "networks",
+  "thumbnail": "static/images/sample_plots/networks.png",
   "type": "visualizations",
   "source": "shiny"
 },
@@ -45,13 +52,6 @@
   "title": "Vocabulary Norms",
   "name": "vocab_norms",
   "thumbnail": "static/images/sample_plots/norms.png",
-  "type": "visualizations",
-  "source": "shiny"
-},
-{
-  "title": "Scoring Tool",
-  "name": "scoring",
-  "thumbnail": "static/images/sample_plots/scoring.png",
   "type": "visualizations",
   "source": "shiny"
 },
