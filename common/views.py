@@ -6,7 +6,7 @@ from django.conf import settings
 from django.contrib.staticfiles.templatetags.staticfiles import static
 
 from common.models import *
-from collections import defaultdict
+from collections import defaultdict, Counter
 import json
 import gdata.blogger.client
 import rfc3339
@@ -14,15 +14,20 @@ import urllib2
 
 class Home(View):
 
+    @staticmethod
+    def format(value):
+        return "{:,}".format(value)
+
     def get(self, request):
+        children = Administration.objects.values('instrument__language', 'source', 'child__study_id').distinct()
+        num_children = len(children)
+        child_counts = Counter([child['instrument__language'] for child in children])
+        lang_stats = dict(child_counts)
+        num_languages = len(child_counts)
         instruments = Instrument.objects.annotate(n = Count('administration'))
         num_instruments = len(instruments)
-        lang_stats = defaultdict(int)
-        for inst in instruments:
-            lang_stats[inst.language] += inst.n
-        num_languages = len(lang_stats)
-        num_admins = sum(lang_stats.values())
-        data = {'num_admins': num_admins, 'num_languages': num_languages, 'num_instruments': num_instruments, 'lang_stats': lang_stats}
+        num_admins = sum([inst.n for inst in instruments])
+        data = {'num_children': self.format(num_children), 'num_admins': self.format(num_admins), 'num_languages': num_languages, 'num_instruments': num_instruments, 'lang_stats': lang_stats}
         js_lang_stats = {"name": "", "children": [{"name": language, "count": n} for language, n in lang_stats.iteritems()]}
         return render(request, 'home.html', {'data': data, 'lang_stats': json.dumps(js_lang_stats)})
 
