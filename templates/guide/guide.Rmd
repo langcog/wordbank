@@ -1,5 +1,5 @@
 ---
-title: Wordbank - Frequently Asked Questions
+title: Frequently Asked Questions
 date: Updated on `r Sys.Date()`
 output:
   html_document:
@@ -67,14 +67,15 @@ To learn more about the CDI instruments themselves, including information about 
 No! All of the code for running analyses with Wordbank data are
 available using the `wordbankr` package, but we have set up many Wordbank
 analyses and visualizations that you can do interactively directly
-through the website. No knowledge of `R` is necessary.
+through the website. No knowledge of R is necessary.
 
 ### Can I work with the data on my own, rather than through the website?
 
 No problem. You can download child summary data, item-level data or the
 entire child-by-word data within the Analyses page. Simply select the
 Language and Form that you would like and then download. Some datasets
-are rather large, so this could take a while!
+are rather large, so this could take a while! You can also access the data
+directly in R by using the [`wordbankr` package](https://github.com/langcog/wordbankr).
 
 ### Can I use Wordbank in my undergraduate or graduate classes?
 
