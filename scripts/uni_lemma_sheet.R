@@ -1,18 +1,19 @@
 library(wordbankr)
 library(dplyr)
 library(googlesheets)
+library(purrr)
 
 languages <- c(
-  "British Sign Language" = FALSE,  # not mapped, no stemmer
+  "British Sign Language" = FALSE,  # not mapped, no stemmer, not in CHILDES
   "Croatian" = FALSE,  # no stemmer
   "Danish" = FALSE,  # not mapped
   "English" = TRUE,
   "French (Quebec)" = FALSE,  # not mapped
-  "Hebrew" = FALSE,  # no stemmer, transcription problems
+  "Hebrew" = FALSE,  # no stemmer, CHILDES transcription problems
   "Italian" = TRUE,
   "Norwegian" = TRUE,
   "Russian" = TRUE,
-  "Slovak" = FALSE,  # not mapped, no stemmer
+  "Slovak" = FALSE,  # not mapped, no stemmer, not in CHILDES
   "Spanish" = TRUE,
   "Swedish" = TRUE,
   "Turkish" = TRUE
@@ -31,8 +32,8 @@ create_lang_sheet <- function(lang) {
     select(-language) %>%
     rename(translation = uni_lemma) %>%
     arrange(category, definition)
-  lang_input[["Is translation good?"]] <- ""
-  lang_input[["Alternative translation"]] <- ""
+  blank_cols <- c("Is translation good?", "Alternative translation", "Notes")
+  walk(blank_cols, ~lang_input[[.x]] <- "")
   gs_ws_new(uni_sheet, ws_title = lang, input = lang_input)
 }
 
