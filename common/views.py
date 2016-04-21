@@ -15,8 +15,15 @@ import urllib2
 class Home(View):
 
     @staticmethod
-    def format(value):
+    def num_format(value):
         return "{:,}".format(value)
+
+    @staticmethod
+    def lang_format(value):
+        parts = value.split(" ")
+        if len(parts) > 2:
+            return "".join([part[0] for part in parts])
+        return value
 
     def get(self, request):
         children = Administration.objects.values('instrument__language', 'source', 'child__study_id').distinct()
@@ -27,8 +34,8 @@ class Home(View):
         instruments = Instrument.objects.annotate(n = Count('administration'))
         num_instruments = len(instruments)
         num_admins = sum([inst.n for inst in instruments])
-        data = {'num_children': self.format(num_children), 'num_admins': self.format(num_admins), 'num_languages': num_languages, 'num_instruments': num_instruments, 'lang_stats': lang_stats}
-        js_lang_stats = {"name": "", "children": [{"name": language, "count": n} for language, n in lang_stats.iteritems()]}
+        data = {'num_children': self.num_format(num_children), 'num_admins': self.num_format(num_admins), 'num_languages': num_languages, 'num_instruments': num_instruments, 'lang_stats': lang_stats}
+        js_lang_stats = {"name": "", "children": [{"name": self.lang_format(language), "count": n} for language, n in lang_stats.iteritems()]}
         return render(request, 'home.html', {'data': data, 'lang_stats': json.dumps(js_lang_stats)})
 
 
