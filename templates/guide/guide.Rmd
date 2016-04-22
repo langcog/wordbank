@@ -1,0 +1,183 @@
+---
+title: Frequently Asked Questions
+date: Updated on `r Sys.Date()`
+output:
+  html_document:
+    toc: true
+    highlight: tango
+    theme: spacelab
+---
+
+## General Questions
+
+### What is Wordbank?
+
+Wordbank is a site for archiving, sharing, and exploring anonymized
+MacArthur-Bates Communicative Development Inventory (CDIs) data from the
+original English form and from CDI adaptations in many languages (such
+as Croatian, Danish, English, German, Italian, Norwegian, Russian,
+Spanish, Swedish, and Turkish). Wordbank compiles responses from norming
+studies but also includes data that individual researchers have
+contributed from various research projects, large and small. As a
+successor to CLEX, Wordbank allows users to generate norms for
+populations and for individual items interactively, and can be used as
+both a teaching and a research tool. For background and some working
+examples, see [Frank et al. (in press)](http://langcog.stanford.edu/papers_new/frank-2016-jcl.pdf).
+
+### What can I do with the site?
+
+Wordbank is designed to be flexible and interactive, allowing users to
+generate analyses for groups of children (e.g., how many words do
+English-speaking girls produce between 16 and 24 months?) or for
+individual items (e.g., how many children are reported to produce the
+word “dog” at 15 months?). Since Wordbank contains data from many
+different languages, it allows you to explore both child-level and
+item-level data within and across languages. On the Analyses page,
+select the *Vocabulary Norms* tab to track normative growth in
+vocabulary in a given language across all children in the database, or
+split by gender, maternal education or birth order. Select the *Item
+Trajectories* tab to plot the trajectory of acquisition for one or more
+individual items/words, or the *Cross-Linguistic Trajectories* tab to
+compare item frequencies across languages. In the *Data Export Tools*
+section, you can download the raw data in csv format in three different
+layouts (by-child, by-word, and by-child-by-item) for use with your own
+analytic tools. In the *Static Reports* section, we provide the code and
+output for several analyses (e.g., gender differences, vocabulary
+composition) that you browse or modify on your own. We are continually
+adding features to Wordbank, so let us know if you have any requests!
+
+### How many CDIs are in the database?
+
+The number of CDIs stored in Wordbank is continually growing, and we are
+always interested in adding more datasets to our site! To see which
+researchers have already contributed, click here:
+<http://wordbank.stanford.edu/contributors>. If you are interested in
+contributing your own data, please contact us via email at
+<wordbank-contact@stanford.edu>.
+
+### I am interested in using the CDIs for my own projects, how do I get the forms themselves?
+
+To learn more about the CDI instruments themselves, including information about the many different languages for which CDI instruments are available, go to the [CDI website](http://mb-cdi.stanford.edu). The MacArthur-Bates CDIs for English and Mexican Spanish are available for purchase from Brookes Publishing Company: <http://www.brookespublishing.com>. If you are interested in a CDI adaptation in other languages, consult the [Adaptations page on the CDI website](http://mb-cdi.stanford.edu/adaptations) and contact the developer of that instrument directly.
+
+
+## Using Wordbank
+
+### Do I have to know R to use Wordbank?
+
+No! All of the code for running analyses with Wordbank data are
+available using the `wordbankr` package, but we have set up many Wordbank
+analyses and visualizations that you can do interactively directly
+through the website. No knowledge of R is necessary.
+
+### Can I work with the data on my own, rather than through the website?
+
+No problem. You can download child summary data, item-level data or the
+entire child-by-word data within the Analyses page. Simply select the
+Language and Form that you would like and then download. Some datasets
+are rather large, so this could take a while! You can also access the data
+directly in R by using the [`wordbankr` package](https://github.com/langcog/wordbankr).
+
+### Can I use Wordbank in my undergraduate or graduate classes?
+
+Absolutely! Wordbank is designed to be user-friendly and to enable
+students from all backgrounds to explore data on early language
+development. For example, students can use the interactive tools to
+identify those words that are earliest or latest learned in English or
+other languages, compare the trajectory of acquisition for particular
+words across languages, or compare general trends in vocabulary growth
+as a function of gender or maternal education. We would love to hear
+about how you are using Wordbank in your classes, including feedback for
+how we could make Wordbank a better tool for this use!
+
+### I have a bunch of CDIs scored and I want to look up percentiles. What do I do?
+
+If you have raw CDI data for the Vocabulary Checklist from the
+English Words & Sentences form, simply put your data in a spreadsheet
+following the guidelines on the *Scoring Tool* page. The tool will
+produce a table of your raw scores and the corresponding percentile
+scores by age and gender, based on the [Fenson et al. (2007)](http://mb-cdi.stanford.edu/forms.html) norms. More
+variables and languages coming soon!
+
+### I need to find words to use as stimuli for a study that I’m running. Can Wordbank help?
+
+Yes! To visually explore trajectories of acquisition using our
+interactive tools, try out the plots in the *Item Trajectories* section
+or compare acquisition for a single word across many different languages
+in our *Cross-Linguistic Trajectories* section. However, a more
+comprehensive way to obtain item frequencies is via the *By-Word Summary
+Data* in the *Data Export Tools* section. Click on the Language, Form,
+and Measure that you are interested in (e.g., English, Produces, Words &
+Sentences), and then use the selector to identify the Age (Months)
+(e.g., 24-30 months). In this example, the resulting table shows the
+proportion of children who are reported to produce each item at each
+age. You can browse the entire table or sort the output by a selected
+column (e.g., sort words alphabetically, from highest-to-lowest
+frequency, or by CDI category). You can download the complete table, if
+you wish, or use the Search box in the upper right hand corner to select
+particular items. Search for a category name (e.g., animals) if you want
+to see all of the words in a particular category.
+
+## Contributing to Wordbank
+
+### Who can contribute to the database?
+
+Any researcher can contribute to Wordbank. Many of the datasets
+contributed so far represent norming data, but Wordbank is designed to
+incorporate CDI administrations that were collected for many different
+purposes and in research projects of many different sizes. We welcome
+your data regardless of whether you have hundreds (or even thousands) of
+forms, or if you only have a few dozen!
+
+### Why should I contribute to Wordbank?
+
+By contributing to Wordbank, you will become part of a consortium of
+researchers who believe that, by combining our data together, we
+increase our power to understand children’s early language development.
+Following in the spirit of [CHILDES](http://childes.psy.cmu.edu/), [Databrary](https://nyu.databrary.org/), [CLEX](http://www.cdi-clex.org/), and others, we hope
+that being a part of Wordbank will raise the visibility of your work,
+while facilitating crosslinguistic analyses of CDI data by researchers
+around the world!
+
+### Do my data need to be published before I can contribute?
+
+Not necessarily. You are welcome to submit your data at any time in the publication process (or if you don't plan on publishing at all). You could even include a note about contributing to Wordbank in your manuscript submission. If you have published your data at time of submission, we will cite the corresponding publication along with your name on the contributors’ page (and we can always update this if you publish a manuscript later). 
+
+### I want to contribute, now what do I do?
+
+If you have electronic, item-level data in any format, you are welcome
+to forward on what you have and we will work to convert it to Wordbank format. It is important that each child record has a unique identifier and that children with multiple administrations
+are provided with the same ID for each administration. Additional demographic information is also very helpful, especially child’s gender, mother’s year of education, birth weight, gestational age, and birth order. (Please provide a key to your variable values!). If your data
+include children from special populations, such as children with ASD or
+children born preterm, please indicate that as well. If you are contributing data for a language that is not currently in Wordbank, please provide a copy of the CDI form itself, a translation of the items, and any related publications or working papers. Once the data are imported, we will acknowledge your work on the contributors’ page and post any citations related to the data (see
+<http://wordbank.stanford.edu/contributors>). To assure that your data were imported correctly, will send you a link to your particular dataset so that you can verify our work.
+
+If you have only hard copy data, please contact us. It may be possible for us to help in digitizing the data. 
+
+### Does sharing my data with Wordbank violate Human Subjects protections?
+
+No! All of the data in Wordbank are completely anonymized and therefore,
+do not constitute human subjects research. Potentially identifying
+information such as date of birth is used to compute child’s age of
+test, but is never stored in the database. We assume that your data were
+collected following your own institution’s IRB standards and should be
+completely anonymized before contributing to Wordbank.
+
+## About Wordbank
+
+### I’ve used the database for an analysis that I’m writing up. How do I cite it? 
+
+As well as citing the particular sources for specific datasets you analyze, work using the Wordbank database should cite: Frank, M. C., Braginsky, M., Yurovsky, D., & Marchman, V. A. (in press). Wordbank: An open repository for developmental vocabulary data. *Journal of Child
+Language*.
+
+### What is the license for derivative works from Wordbank (e.g., graphs generated by the cite)?
+
+Wordbank is licensed under a Creative Commons Attribution 4.0 International License, [CC-BY 4.0](http://creativecommons.org/licenses/by/4.0/). If you use Wordbank in a derivative work, you must give credit, but otherwise you are free to do anything else you want with products from the site. 
+
+### How did you build Wordbank? 
+
+Wordbank is a [MySQL](https://www.mysql.com/) database and [Django](https://www.djangoproject.com/) frontend, with interactive reports created using [Shiny](http://shiny.rstudio.com/), an R platform for the web. All of the source code is open and available at [github](https://github.com/langcog/wordbank). If you see something you want to fix or contribute to, send us a pull request or let us know!
+
+### Who funds Wordbank?
+
+Wordbank is currently funded by a grant from the National Science
+Foundation (\# 1451577) as well as generous support from the MB-CDI Advisory Board. 
