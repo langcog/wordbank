@@ -11,7 +11,6 @@ library(langcog)
 library(wordbankr)
 library(visNetwork)
 library(stringr)
-library(feather)
 
 theme_set(theme_mikabr(base_size = 14))
 font <- theme_mikabr()$text$family
@@ -21,9 +20,9 @@ c_assocs <- read_csv(file = "assocs/c_assoc_mat.csv")
 p_assocs <- read_csv(file = "assocs/p_assoc_mat.csv")
 all_assocs <- read_csv(file = "assocs/assoc_mat.csv")
 
-ws_aoas <- read_feather("aoas/eng_ws_production_aoas.feather") 
-wg_comp_aoas <- read_feather("aoas/eng_wg_production_aoas.feather") 
-wg_prod_aoas <- read_feather("aoas/eng_wg_comprehension_aoas.feather") 
+ws_aoas <- read_csv("aoas/eng_ws_production_aoas.csv") 
+wg_comp_aoas <- read_csv("aoas/eng_wg_production_aoas.csv") 
+wg_prod_aoas <- read_csv("aoas/eng_wg_comprehension_aoas.csv") 
 
 ###### SHINY SERVER ###### 
 
