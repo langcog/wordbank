@@ -220,7 +220,7 @@ shinyServer(function(input, output, session) {
         # geom_smooth(aes(linetype = type, weight = total), method = "glm",
         #             method.args = list(family = "binomial")) +
         geom_smooth(aes(linetype = type, weight = total), method = "loess",
-                    se = TRUE) +
+                    se = FALSE) +
         geom_point(aes(shape = form)) +
         scale_shape_manual(name = "", values = c(20, 1), guide = FALSE) +
         scale_linetype_discrete(guide = FALSE) +
