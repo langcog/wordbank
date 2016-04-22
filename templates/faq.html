@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+Wordbank | FAQ
+{% endblock %}
+
+{% block content %}
+
+<link rel="stylesheet" href={% static "css/faq.css" %}>
+
+<div class="basic">
+{% include "guide/guide.html" %}
+</div>
+
+{% endblock %}
