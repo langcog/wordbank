@@ -26,3 +26,5 @@ from schemas.Danish_WG import *
 from schemas.French_Quebec_WG import *
 from schemas.Slovak_WG import *
 from schemas.Slovak_WS import *
+from schemas.French_Quebec_WS import *
+from schemas.French_Quebec_WS import *
