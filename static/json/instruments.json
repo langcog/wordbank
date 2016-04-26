@@ -77,7 +77,7 @@
         "file": "raw_data/French_Quebec_WS/[French_Quebec_WS].csv",
         "age_min": 16,
         "age_max": 30,
-        "has_grammar": false
+        "has_grammar": true
     },
     {
         "language": "German",
