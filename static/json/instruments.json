@@ -72,6 +72,14 @@
         "has_grammar": false
     },
     {
+        "language": "French (Quebec)",
+        "form": "WS",
+        "file": "raw_data/French_Quebec_WS/[French_Quebec_WS].csv",
+        "age_min": 16,
+        "age_max": 30,
+        "has_grammar": true
+    },
+    {
         "language": "German",
         "form": "WS",
         "file": "raw_data/German_WS/[German_WS].csv",
