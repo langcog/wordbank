@@ -1,409 +1,409 @@
-itemID,definition,uni_lemma,category,item,type,choices
-item_1,bras,arm,body_parts,bras,word,understands; produces
-item_2,bouche,mouth,body_parts,bouche,word,understands; produces
-item_3,bobo,owie,body_parts,bobo,word,understands; produces
-item_4,bedaine/ventre,tummy,body_parts,bedaine/ventre,word,understands; produces
-item_5,zip/fermeture-éclair,zipper,clothing,zip/fermeture-eclair,word,understands; produces
-item_6,soulier,shoe,clothing,soulier,word,understands; produces
-item_7,robe,dress,clothing,robe,word,understands; produces
-item_8,pyjama,pajamas,clothing,pyjama,word,understands; produces
-item_9,pantalon,pants,clothing,pantalon,word,understands; produces
-item_10,manteau,coat,clothing,manteau,word,understands; produces
-item_11,jeans,jeans,clothing,jeans,word,understands; produces
-item_12,couche,diaper,clothing,couche,word,understands; produces
-item_13,collier,necklace,clothing,collier,word,understands; produces
-item_14,chemise,shirt,clothing,chemise,word,understands; produces
-item_15,chapeau,hat,clothing,chapeau,word,understands; produces
-item_16,chandail,sweater,clothing,chandail,word,understands; produces
-item_17,bouton,button,clothing,bouton,word,understands; produces
-item_18,bottes,boots,clothing,bottes,word,understands; produces
-item_19,bavette,bib,clothing,bavette,word,understands; produces
-item_20,bas,sock,clothing,bas,word,understands; produces
-item_21,viande,meat,food_drink,viande,word,understands; produces
-item_22,toast/rôtie,toast,food_drink,toast/r^otie,word,understands; produces
-item_23,spaghetti,spaghetti,food_drink,spaghetti,word,understands; produces
-item_24,raisin sec,raisin,food_drink,raisin_sec,word,understands; produces
-item_25,raisin,grapes,food_drink,raisin,word,understands; produces
-item_26,poulet,chicken (food),food_drink,poulet,word,understands; produces
-item_27,pomme,apple,food_drink,pomme,word,understands; produces
-item_28,poisson,fish (food),food_drink,poisson,word,understands; produces
-item_29,pois,peas,food_drink,pois,word,understands; produces
-item_30,pizza,pizza,food_drink,pizza,word,understands; produces
-item_31,pain,bread,food_drink,pain,word,understands; produces
-item_32,orange,orange (food),food_drink,orange,word,understands; produces
-item_33,oeuf,egg,food_drink,oeuf,word,understands; produces
-item_34,nourriture,food,food_drink,nourriture,word,understands; produces
-item_35,nouilles/pâtes,noodles,food_drink,nouilles/p^ates,word,understands; produces
-item_36,lait,milk,food_drink,lait,word,understands; produces
-item_37,jus,juice,food_drink,jus,word,understands; produces
-item_38,gâteau,cake,food_drink,g^ateau,word,understands; produces
-item_39,fromage,cheese,food_drink,fromage,word,understands; produces
-item_40,eau,water (beverage),food_drink,eau,word,understands; produces
-item_41,crème glacée,ice cream,food_drink,cr`eme_glacee,word,understands; produces
-item_42,cheerios,cheerios,food_drink,cheerios,word,understands; produces
-item_43,céréales,cereal,food_drink,cereales,word,understands; produces
-item_44,carotte,carrots,food_drink,carotte,word,understands; produces
-item_45,café,coffee,food_drink,cafe,word,understands; produces
-item_46,bonbon,candy,food_drink,bonbon,word,understands; produces
-item_47,biscuit soda,cracker,food_drink,biscuit_soda,word,understands; produces
-item_48,biscuit,cookie,food_drink,biscuit,word,understands; produces
-item_49,beurre,butter,food_drink,beurre,word,understands; produces
-item_50,banane,banana,food_drink,banane,word,understands; produces
-item_51,toutou,teddybear,toys,toutou,word,understands; produces
-item_52,poupée,doll,toys,poupee,word,understands; produces
-item_53,livre,book,toys,livre,word,understands; produces
-item_54,jouet,toy (object),toys,jouet,word,understands; produces
-item_55,crayon/stylo,pen,toys,crayon/stylo,word,understands; produces
-item_56,bulles,bubbles,toys,bulles,word,understands; produces
-item_57,bloc,block,toys,bloc,word,understands; produces
-item_58,ballon,ball,toys,ballon,word,understands; produces
-item_59,balle,ball,toys,balle,word,understands; produces
-item_60,train,train,vehicles,train,word,understands; produces
-item_61,poussettte,stroller,vehicles,poussettte,word,understands; produces
-item_62,moto,motorcycle,vehicles,moto,word,understands; produces
-item_63,camion de pompier,firetruck,vehicles,camion_de_pompier,word,understands; produces
-item_64,camion,truck,vehicles,camion,word,understands; produces
-item_65,bicyclette,bicycle,vehicles,bicyclette,word,understands; produces
-item_66,avion,airplane,vehicles,avion,word,understands; produces
-item_67,autobus,bus,vehicles,autobus,word,understands; produces
-item_68,auto,car,vehicles,auto,word,understands; produces
-item_69,vache,cow,animals,vache,word,understands; produces
-item_70,tortue,turtle,animals,tortue,word,understands; produces
-item_71,tigre,tiger,animals,tigre,word,understands; produces
-item_72,souris,mouse,animals,souris,word,understands; produces
-item_73,singe,monkey,animals,singe,word,understands; produces
-item_74,poule,chicken (animal),animals,poule,word,understands; produces
-item_75,poisson,fish (animal),animals,poisson,word,understands; produces
-item_76,papillon,butterfly,animals,papillon,word,understands; produces
-item_77,ourson/nounours,teddybear,animals,ourson/nounours,word,understands; produces
-item_78,ours,bear,animals,ours,word,understands; produces
-item_79,oiseau,bird,animals,oiseau,word,understands; produces
-item_80,mouton,sheep,animals,mouton,word,understands; produces
-item_81,lion,lion,animals,lion,word,understands; produces
-item_82,lapin,bunny,animals,lapin,word,understands; produces
-item_83,hibou,owl,animals,hibou,word,understands; produces
-item_84,grenouille,frog,animals,grenouille,word,understands; produces
-item_85,girafe,giraffe,animals,girafe,word,understands; produces
-item_86,éléphant,elephant,animals,elephant,word,understands; produces
-item_87,écureuil,squirrel,animals,ecureuil,word,understands; produces
-item_88,cochon,pig,animals,cochon,word,understands; produces
-item_89,petit chien,puppy,animals,petit_chien,word,understands; produces
-item_90,chien,dog,animals,chien,word,understands; produces
-item_91,cheval,horse,animals,cheval,word,understands; produces
-item_92,petit minou,kitty,animals,petit_minou,word,understands; produces
-item_93,chat,cat,animals,chat,word,understands; produces
-item_94,canard,duck,animals,canard,word,understands; produces
-item_95,bibitte,bug,animals,bibitte,word,understands; produces
-item_96,animal,animal,animals,animal,word,understands; produces
-item_97,âne,donkey,animals,^ane,word,understands; produces
-item_98,abeille,bee,animals,abeille,word,understands; produces
-item_99,wouf wouf,woof woof,sounds,wouf_wouf,word,understands; produces
-item_100,vroum,vroom,sounds,vroum,word,understands; produces
-item_101,tchou tchou,choo choo,sounds,tchou_tchou,word,understands; produces
-item_102,aïe,ouch,sounds,"a""ie",word,understands; produces
-item_103,oh oh,uh oh,sounds,oh_oh,word,understands; produces
-item_104,miam miam,moo,sounds,miam_miam,word,understands; produces
-item_105,miaou,meow,sounds,miaou,word,understands; produces
-item_106,meuh,yum yum,sounds,meuh,word,understands; produces
-item_107,grrrr,grrr,sounds,grrrr,word,understands; produces
-item_108,coin coin,quack quack,sounds,coin_coin,word,understands; produces
-item_109,cocorico,cockadoodledoo,sounds,cocorico,word,understands; produces
-item_110,bêêêê bêêêê,baa baa,sounds,b^e^e^e^e_b^e^e^e^e,word,understands; produces
-item_111,cheveux,hair,body_parts,cheveux,word,understands; produces
-item_112,dent,tooth,body_parts,dent,word,understands; produces
-item_113,doigt,finger,body_parts,doigt,word,understands; produces
-item_114,genou,knee,body_parts,genou,word,understands; produces
-item_115,jambe,leg,body_parts,jambe,word,understands; produces
-item_116,joue,cheek,body_parts,joue,word,understands; produces
-item_117,langue,tongue,body_parts,langue,word,understands; produces
-item_118,main,hand,body_parts,main,word,understands; produces
-item_119,moustache,mustache,body_parts,moustache,word,understands; produces
-item_120,nez,nose,body_parts,nez,word,understands; produces
-item_121,nombril,belly button,body_parts,nombril,word,understands; produces
-item_122,yeux,eye,body_parts,yeux,word,understands; produces
-item_123,oreille,ear,body_parts,oreille,word,understands; produces
-item_124,orteil,toe,body_parts,orteil,word,understands; produces
-item_125,pied,foot,body_parts,pied,word,understands; produces
-item_126,tête,head,body_parts,t^ete,word,understands; produces
-item_127,visage,face,body_parts,visage,word,understands; produces
-item_128,bain,bathtub,furniture_rooms,bain,word,understands; produces
-item_129,bassinette/berceau,crib,furniture_rooms,bassinette/berceau,word,understands; produces
-item_130,chaise,chair,furniture_rooms,chaise,word,understands; produces
-item_131,chaise berçante,rocking chair,furniture_rooms,chaise_bercante,word,understands; produces
-item_132,chaise haute,high chair,furniture_rooms,chaise_haute,word,understands; produces
-item_133,chambre,bedroom,furniture_rooms,chambre,word,understands; produces
-item_134,cuisine,kitchen,furniture_rooms,cuisine,word,understands; produces
-item_135,divan,couch,furniture_rooms,divan,word,understands; produces
-item_136,escalier,stairs,furniture_rooms,escalier,word,understands; produces
-item_137,évier/lavabo,sink,furniture_rooms,evier/lavabo,word,understands; produces
-item_138,fenêtre,window,furniture_rooms,fen^etre,word,understands; produces
-item_139,four,oven,furniture_rooms,four,word,understands; produces
-item_140,frigidaire/frigo,refrigerator,furniture_rooms,frigidaire/frigo,word,understands; produces
-item_141,garage,garage,furniture_rooms,garage,word,understands; produces
-item_142,lit,bed,furniture_rooms,lit,word,understands; produces
-item_143,parc (d´enfant),play pen,furniture_rooms,parc_(denfant),word,understands; produces
-item_144,poêle,stove,furniture_rooms,po^ele,word,understands; produces
-item_145,porte,door,furniture_rooms,porte,word,understands; produces
-item_146,pot,potty,furniture_rooms,pot,word,understands; produces
-item_147,salle de bain/toilette,bathroom,furniture_rooms,salle_de_bain/_toilette,word,understands; produces
-item_148,salon,living room,furniture_rooms,salon,word,understands; produces
-item_149,table,table,furniture_rooms,table,word,understands; produces
-item_150,télévision,tv,furniture_rooms,television,word,understands; produces
-item_151,tiroir,drawer,furniture_rooms,tiroir,word,understands; produces
-item_152,aspirateur,vacuum,household,aspirateur,word,understands; produces
-item_153,assiette,plate,household,assiette,word,understands; produces
-item_154,balai,broom,household,balai,word,understands; produces
-item_155,boîte,box,household,bo^ite,word,understands; produces
-item_156,bol,bowl,household,bol,word,understands; produces
-item_157,bouteille,bottle,household,bouteille,word,understands; produces
-item_158,brosse,brush,household,brosse,word,understands; produces
-item_159,brosse à dent,toothbrush,household,brosse_`a_dent,word,understands; produces
-item_160,ciseaux,scissors,household,ciseaux,word,understands; produces
-item_161,clés,keys,household,cles,word,understands; produces
-item_162,couverte/couverture,blanket,household,couverte/couverture,word,understands; produces
-item_163,cuillère,spoon,household,cuill`ere,word,understands; produces
-item_164,fourchette,fork,household,fourchette,word,understands; produces
-item_165,horloge,clock,household,horloge,word,understands; produces
-item_166,image,picture,household,image,word,understands; produces
-item_167,lampe,lamp,household,lampe,word,understands; produces
-item_168,lumière,light,household,lumi`ere,word,understands; produces
-item_169,lunettes,glasses,household,lunettes,word,understands; produces
-item_170,marteau,hammer,household,marteau,word,understands; produces
-item_171,médicament,medicine,household,medicament,word,understands; produces
-item_172,montre,watch (object),household,montre,word,understands; produces
-item_173,oreiller,pillow,household,oreiller,word,understands; produces
-item_174,papier,paper,household,papier,word,understands; produces
-item_175,peigne,comb (object),household,peigne,word,understands; produces
-item_176,photo,photos,household,photo,word,understands; produces
-item_177,plante,plant,household,plante,word,understands; produces
-item_178,plat,dish,household,plat,word,understands; produces
-item_179,radio,radio,household,radio,word,understands; produces
-item_180,sacoche/sac à main,purse,household,sacoche/sac_`a_main,word,understands; produces
-item_181,savon,soap,household,savon,word,understands; produces
-item_182,serviette,towel,household,serviette,word,understands; produces
-item_183,tasse,cup,household,tasse,word,understands; produces
-item_184,téléphone,telephone,household,telephone,word,understands; produces
-item_185,verre,glass,household,verre,word,understands; produces
-item_186,vidanges,trash,household,vidanges,word,understands; produces
-item_187,arbre,tree,outside,arbre,word,understands; produces
-item_188,balançoire,swing (object),outside,balancoire,word,understands; produces
-item_189,chez nous,home,outside,chez_nous,word,understands; produces
-item_190,ciel,sky,outside,ciel,word,understands; produces
-item_191,cour,yard,outside,cour,word,understands; produces
-item_192,dehors,outside,outside,dehors,word,understands; produces
-item_193,eau,water (not beverage),outside,eau,word,understands; produces
-item_194,école,school,outside,ecole,word,understands; produces
-item_195,étoile,star,outside,etoile,word,understands; produces
-item_196,fête,party,outside,f^ete,word,understands; produces
-item_197,fleur,flower,outside,fleur,word,understands; produces
-item_198,glissoire,slide (object),outside,glissoire,word,understands; produces
-item_199,lune,moon,outside,lune,word,understands; produces
-item_200,magasin,store,outside,magasin,word,understands; produces
-item_201,maison,house,outside,maison,word,understands; produces
-item_202,neige,snow,outside,neige,word,understands; produces
-item_203,parc,park,outside,parc,word,understands; produces
-item_204,pelle,shovel,outside,pelle,word,understands; produces
-item_205,piscine,pool,outside,piscine,word,understands; produces
-item_206,pluie,rain,outside,pluie,word,understands; produces
-item_207,roche,rock,outside,roche,word,understands; produces
-item_208,soleil,sun,outside,soleil,word,understands; produces
-item_209,travail/bureau,work (place),outside,travail/bureau,word,understands; produces
-item_210,bébé,baby,people,bebe,word,understands; produces
-item_211,bonhomme,snowman,people,bonhomme,word,understands; produces
-item_212,dame/madame,lady,people,dame/madame,word,understands; produces
-item_213,enfant,child,people,enfant,word,understands; produces
-item_214,fille,girl,people,fille,word,understands; produces
-item_215,frère,brother,people,fr`ere,word,understands; produces
-item_216,garçon,boy,people,garcon,word,understands; produces
-item_217,gardienne,babysitter,people,gardienne,word,understands; produces
-item_218,gens/monde,people,people,gens/monde,word,understands; produces
-item_219,grand-maman,grandma,people,grand-maman,word,understands; produces
-item_220,grand-papa,grandpa,people,grand-papa,word,understands; produces
-item_221,maman,mommy,people,maman,word,understands; produces
-item_222,monsieur,man,people,monsieur,word,understands; produces
-item_223,nom du (de la) gardien(ne),babysitter's name,people,nom_du_(de_la)_gardien(ne),word,understands; produces
-item_224,oncle/mononcle,uncle,people,oncle/mononcle,word,understands; produces
-item_225,papa,daddy,people,papa,word,understands; produces
-item_226,soeur,sister,people,soeur,word,understands; produces
-item_227,son propre nom,child’s own name,people,son_propre_nom,word,understands; produces
-item_228,tante/matante,aunt,people,tante/matante,word,understands; produces
-item_229,allo,hello,games_routines,allo,word,understands; produces
-item_230,attends,wait,games_routines,attends,word,understands; produces
-item_231,bain,bath,games_routines,bain,word,understands; produces
-item_232,bonjour,hi,games_routines,bonjour,word,understands; produces
-item_233,bonne nuit,good night,games_routines,bonne_nuit,word,understands; produces
-item_234,bravo,clap,games_routines,bravo,word,understands; produces
-item_235,bye/au revoir,bye,games_routines,bye/au_revoir,word,understands; produces
-item_236,caca,poop,games_routines,caca,word,understands; produces
-item_237,chut,shh,games_routines,chut,word,understands; produces
-item_238,coucou,peekaboo,games_routines,coucou,word,understands; produces
-item_239,déjeuner,breakfast,games_routines,dejeuner,word,understands; produces
-item_240,dîner,lunch,games_routines,d^iner,word,understands; produces
-item_241,dodo,nap,games_routines,dodo,word,understands; produces
-item_242,faire le tour de la maison,go around the house,games_routines,faire_le_tour_de_la_maison,word,understands; produces
-item_243,menouche menouche,TODO,games_routines,menouche_menouche,word,understands; produces
-item_244,merci,thank you,games_routines,merci,word,understands; produces
-item_245,non,no,games_routines,non,word,understands; produces
-item_246,ok,ok,games_routines,ok,word,understands; produces
-item_247,oui,yes,games_routines,oui,word,understands; produces
-item_248,pipi,pee,games_routines,pipi,word,understands; produces
-item_249,s´il-vous-plaît,please,games_routines,sil-vous-pla^it,word,understands; produces
-item_250,souper,dinner,games_routines,souper,word,understands; produces
-item_251,tape tape,pattycake,games_routines,tape_tape,word,understands; produces
-item_252,(je) veux,wanna,games_routines,(je)_veux,word,understands; produces
-item_253,aider,help,action_words,aider,word,understands; produces
-item_254,aimer,love,action_words,aimer,word,understands; produces
-item_255,aller,go,action_words,aller,word,understands; produces
-item_256,allumer,turn on,action_words,allumer,word,understands; produces
-item_257,amener,bring,action_words,amener,word,understands; produces
-item_258,apporter,bring,action_words,apporter,word,understands; produces
-item_259,arrêter,stop,action_words,arr^eter,word,understands; produces
-item_260,arroser,splash,action_words,arroser,word,understands; produces
-item_261,asseoir,sit,action_words,asseoir,word,understands; produces
-item_262,attacher,attach,action_words,attacher,word,understands; produces
-item_263,attendre,wait,action_words,attendre,word,understands; produces
-item_264,attraper,catch,action_words,attraper,word,understands; produces
-item_265,avoir,have,action_words,avoir,word,understands; produces
-item_266,balancer,swing (action),action_words,balancer,word,understands; produces
-item_267,balayer,sweep,action_words,balayer,word,understands; produces
-item_268,bercer,rock (action),action_words,bercer,word,understands; produces
-item_269,boire,drink (action),action_words,boire,word,understands; produces
-item_270,brasser,stir,action_words,brasser,word,understands; produces
-item_271,briser/casser,break,action_words,briser/casser,word,understands; produces
-item_272,brosser,brush (action),action_words,brosser,word,understands; produces
-item_273,cacher,hide,action_words,cacher,word,understands; produces
-item_274,chanter,sing,action_words,chanter,word,understands; produces
-item_275,chatouiller,tickle,action_words,chatouiller,word,understands; produces
-item_276,chercher,look for,action_words,chercher,word,understands; produces
-item_277,choisir,choose,action_words,choisir,word,understands; produces
-item_278,cogner (à),bang,action_words,cogner_(`a),word,understands; produces
-item_279,couper,cut,action_words,couper,word,understands; produces
-item_280,courir,run,action_words,courir,word,understands; produces
-item_281,courir après,run after,action_words,courir_apr`es,word,understands; produces
-item_282,cracher,spit,action_words,cracher,word,understands; produces
-item_283,danser,dance,action_words,danser,word,understands; produces
-item_284,débarquer,get off,action_words,debarquer,word,understands; produces
-item_285,déchirer,tear,action_words,dechirer,word,understands; produces
-item_286,descendre,descend,action_words,descendre,word,understands; produces
-item_287,dessiner,draw,action_words,dessiner,word,understands; produces
-item_288,dire,say,action_words,dire,word,understands; produces
-item_289,donner,give,action_words,donner,word,understands; produces
-item_290,dormir,sleep,action_words,dormir,word,understands; produces
-item_291,écouter,listen,action_words,ecouter,word,understands; produces
-item_292,écrire,write,action_words,ecrire,word,understands; produces
-item_293,embarquer,get on,action_words,embarquer,word,understands; produces
-item_294,enlever,take off,action_words,enlever,word,understands; produces
-item_295,entendre,hear,action_words,entendre,word,understands; produces
-item_296,essuyer,wipe,action_words,essuyer,word,understands; produces
-item_297,faire,do,action_words,faire,word,understands; produces
-item_298,fermer,close,action_words,fermer,word,understands; produces
-item_299,finir,finish,action_words,finir,word,understands; produces
-item_300,glisser,slide (action),action_words,glisser,word,understands; produces
-item_301,goûter,taste,action_words,go^uter,word,understands; produces
-item_302,grimper,climb,action_words,grimper,word,understands; produces
-item_303,jeter,dump,action_words,jeter,word,understands; produces
-item_304,jouer,play,action_words,jouer,word,understands; produces
-item_305,lancer,throw,action_words,lancer,word,understands; produces
-item_306,laver,wash,action_words,laver,word,understands; produces
-item_307,lécher,lick,action_words,lecher,word,understands; produces
-item_308,lire,read,action_words,lire,word,understands; produces
-item_309,manger,eat,action_words,manger,word,understands; produces
-item_310,marcher,walk,action_words,marcher,word,understands; produces
-item_311,mettre,put,action_words,mettre,word,understands; produces
-item_312,monter,ride,action_words,monter,word,understands; produces
-item_313,montrer,show,action_words,montrer,word,understands; produces
-item_314,mordre,bite,action_words,mordre,word,understands; produces
-item_315,nager,swim,action_words,nager,word,understands; produces
-item_316,nettoyer,clean (action),action_words,nettoyer,word,understands; produces
-item_317,ouvrir,open,action_words,ouvrir,word,understands; produces
-item_318,parler,talk,action_words,parler,word,understands; produces
-item_319,partager,share,action_words,partager,word,understands; produces
-item_320,peinturer,paint,action_words,peinturer,word,understands; produces
-item_321,pleurer,cry,action_words,pleurer,word,understands; produces
-item_322,pousser,push,action_words,pousser,word,understands; produces
-item_323,prendre,take,action_words,prendre,word,understands; produces
-item_324,ramasser,pick up,action_words,ramasser,word,understands; produces
-item_325,regarder,look,action_words,regarder,word,understands; produces
-item_326,renverser,spill,action_words,renverser,word,understands; produces
-item_327,rester,stay,action_words,rester,word,understands; produces
-item_328,réveiller,wake,action_words,reveiller,word,understands; produces
-item_329,sauter,jump,action_words,sauter,word,understands; produces
-item_330,sécher,dry,action_words,secher,word,understands; produces
-item_331,souffler,blow,action_words,souffler,word,understands; produces
-item_332,sourire,smile,action_words,sourire,word,understands; produces
-item_333,taper,hit,action_words,taper,word,understands; produces
-item_334,tenir,hold,action_words,tenir,word,understands; produces
-item_335,tirer,pull,action_words,tirer,word,understands; produces
-item_336,tomber,fall,action_words,tomber,word,understands; produces
-item_337,toucher,touch,action_words,toucher,word,understands; produces
-item_338,tourner,turn,action_words,tourner,word,understands; produces
-item_339,travailler,work (action),action_words,travailler,word,understands; produces
-item_340,trouver,find,action_words,trouver,word,understands; produces
-item_341,venir,come,action_words,venir,word,understands; produces
-item_342,verser,pour,action_words,verser,word,understands; produces
-item_343,voir,see,action_words,voir,word,understands; produces
-item_344,aujourd´hui,today,time_words,aujourdhui,word,understands; produces
-item_345,ce soir,tonight,time_words,ce_soir,word,understands; produces
-item_346,demain,tomorrow,time_words,demain,word,understands; produces
-item_347,maintenant/tout de suite,now,time_words,maintenant/tout_de_suite,word,understands; produces
-item_348,matin,morning,time_words,matin,word,understands; produces
-item_349,nuit,night,time_words,nuit,word,understands; produces
-item_350,plus tard,later,time_words,plus_tard,word,understands; produces
-item_351,tantôt/tout à l´heure,sometimes,time_words,tant^ot/tout_`a_lheure,word,understands; produces
-item_352,avoir faim,hungry,descriptive_words,avoir_faim,word,understands; produces
-item_353,avoir mal,hurt,descriptive_words,avoir_mal,word,understands; produces
-item_354,avoir peur,scared,descriptive_words,avoir_peur,word,understands; produces
-item_355,avoir soif,thirsty,descriptive_words,avoir_soif,word,understands; produces
-item_356,beau/belle,beautiful,descriptive_words,beau/belle,word,understands; produces
-item_357,bien,well,descriptive_words,bien,word,understands; produces
-item_358,bleu,blue,descriptive_words,bleu,word,understands; produces
-item_359,bon,good,descriptive_words,bon,word,understands; produces
-item_360,brisé/cassé,broken,descriptive_words,brise/casse,word,understands; produces
-item_361,capable,able,descriptive_words,capable,word,understands; produces
-item_362,chaud,hot,descriptive_words,chaud,word,understands; produces
-item_363,content,happy,descriptive_words,content,word,understands; produces
-item_364,debout,standing,descriptive_words,debout,word,understands; produces
-item_365,dégueulasse,yucky,descriptive_words,degueulasse,word,understands; produces
-item_366,doux,soft,descriptive_words,doux,word,understands; produces
-item_367,endormi,sleepy,descriptive_words,endormi,word,understands; produces
-item_368,fatigué,tired,descriptive_words,fatigue,word,understands; produces
-item_369,fini,finished,descriptive_words,fini,word,understands; produces
-item_370,froid,cold,descriptive_words,froid,word,understands; produces
-item_371,gentil,nice,descriptive_words,gentil,word,understands; produces
-item_372,gros/grand,big,descriptive_words,gros/grand,word,understands; produces
-item_373,malade,sick,descriptive_words,malade,word,understands; produces
-item_374,mal,bad,descriptive_words,mal,word,understands; produces
-item_375,parti,all gone,descriptive_words,parti,word,understands; produces
-item_376,petit,little (description),descriptive_words,petit,word,understands; produces
-item_377,propre,clean (description),descriptive_words,propre,word,understands; produces
-item_378,prudent,careful,descriptive_words,prudent,word,understands; produces
-item_379,rouge,red,descriptive_words,rouge,word,understands; produces
-item_380,sale,dirty,descriptive_words,sale,word,understands; produces
-item_381,tannant/méchant,bad,descriptive_words,tannant/mechant,word,understands; produces
-item_382,vide,empty,descriptive_words,vide,word,understands; produces
-item_383,vite,fast,descriptive_words,vite,word,understands; produces
-item_384,à moi,mine,pronouns,`a_moi,word,understands; produces
-item_385,ça,that,pronouns,ca,word,understands; produces
-item_386,je,i,pronouns,je,word,understands; produces
-item_387,(à) lui/(à) elle,him,pronouns,(`a)_lui/(`a)_elle,word,understands; produces
-item_388,moi,me,pronouns,moi,word,understands; produces
-item_389,mon,my,pronouns,mon,word,understands; produces
-item_390,son,his,pronouns,son,word,understands; produces
-item_391,toi,you,pronouns,toi,word,understands; produces
-item_392,ton,your,pronouns,ton,word,understands; produces
-item_393,tu,you,pronouns,tu,word,understands; produces
-item_394,où,where (question),question_words,o`u,word,understands; produces
-item_395,qui,who ,question_words,qui,word,understands; produces
-item_396,quoi,what,question_words,quoi,word,understands; produces
-item_397,à terre/par terre,down,locations,`a_terre/par_terre,word,understands; produces
-item_398,dans,in,locations,dans,word,understands; produces
-item_399,en bas,below,locations,en_bas,word,understands; produces
-item_400,en haut,up,locations,en_haut,word,understands; produces
-item_401,là/là-bas,there,locations,l`a/l`a-bas,word,understands; produces
-item_402,sous/en-dessous,under,locations,sous/en-dessous,word,understands; produces
-item_403,sur/dessus,on,locations,sur/dessus,word,understands; produces
-item_404,encore,again,quantifiers,encore,word,understands; produces
-item_405,plus,more,quantifiers,plus,word,understands; produces
-item_406,pas,not,quantifiers,pas,word,understands; produces
-item_407,un autre,another,quantifiers,un_autre,word,understands; produces
-item_408,un peu,little (amount),quantifiers,un_peu,word,understands; produces
+"itemID","definition","uni_lemma","category","item","type","choices","gloss"
+"item_1","bras","arm","body_parts","bras","word","understands; produces",
+"item_2","bouche","mouth","body_parts","bouche","word","understands; produces",
+"item_3","bobo","owie","body_parts","bobo","word","understands; produces",
+"item_4","bedaine/ventre","tummy","body_parts","bedaine/ventre","word","understands; produces",
+"item_5","zip/fermeture-éclair","zipper","clothing","zip/fermeture-eclair","word","understands; produces",
+"item_6","soulier","shoe","clothing","soulier","word","understands; produces",
+"item_7","robe","dress (object)","clothing","robe","word","understands; produces",
+"item_8","pyjama","pajamas","clothing","pyjama","word","understands; produces",
+"item_9","pantalon","pants","clothing","pantalon","word","understands; produces",
+"item_10","manteau","coat","clothing","manteau","word","understands; produces",
+"item_11","jeans","jeans","clothing","jeans","word","understands; produces",
+"item_12","couche","diaper","clothing","couche","word","understands; produces",
+"item_13","collier","necklace","clothing","collier","word","understands; produces",
+"item_14","chemise","shirt","clothing","chemise","word","understands; produces",
+"item_15","chapeau","hat","clothing","chapeau","word","understands; produces",
+"item_16","chandail","sweater","clothing","chandail","word","understands; produces",
+"item_17","bouton","button","clothing","bouton","word","understands; produces",
+"item_18","bottes","boots","clothing","bottes","word","understands; produces",
+"item_19","bavette","bib","clothing","bavette","word","understands; produces",
+"item_20","bas","sock","clothing","bas","word","understands; produces",
+"item_21","viande","meat","food_drink","viande","word","understands; produces",
+"item_22","toast/rôtie","toast","food_drink","toast/r^otie","word","understands; produces",
+"item_23","spaghetti","spaghetti","food_drink","spaghetti","word","understands; produces",
+"item_24","raisin sec","raisin","food_drink","raisin_sec","word","understands; produces",
+"item_25","raisin","grapes","food_drink","raisin","word","understands; produces",
+"item_26","poulet","chicken (food)","food_drink","poulet","word","understands; produces",
+"item_27","pomme","apple","food_drink","pomme","word","understands; produces",
+"item_28","poisson (food)","fish (food)","food_drink","poisson","word","understands; produces",
+"item_29","pois","peas","food_drink","pois","word","understands; produces",
+"item_30","pizza","pizza","food_drink","pizza","word","understands; produces",
+"item_31","pain","bread","food_drink","pain","word","understands; produces",
+"item_32","orange","orange (food)","food_drink","orange","word","understands; produces",
+"item_33","oeuf","egg","food_drink","oeuf","word","understands; produces",
+"item_34","nourriture","food","food_drink","nourriture","word","understands; produces",
+"item_35","nouilles/pâtes","noodles","food_drink","nouilles/p^ates","word","understands; produces",
+"item_36","lait","milk","food_drink","lait","word","understands; produces",
+"item_37","jus","juice","food_drink","jus","word","understands; produces",
+"item_38","gâteau","cake","food_drink","g^ateau","word","understands; produces",
+"item_39","fromage","cheese","food_drink","fromage","word","understands; produces",
+"item_40","eau (beverage)","water (beverage)","food_drink","eau","word","understands; produces",
+"item_41","crème glacée","ice cream","food_drink","cr`eme_glacee","word","understands; produces",
+"item_42","cheerios","cheerios","food_drink","cheerios","word","understands; produces",
+"item_43","céréales","cereal","food_drink","cereales","word","understands; produces",
+"item_44","carotte","carrots","food_drink","carotte","word","understands; produces",
+"item_45","café","coffee","food_drink","cafe","word","understands; produces",
+"item_46","bonbon","candy","food_drink","bonbon","word","understands; produces",
+"item_47","biscuit soda","cracker","food_drink","biscuit_soda","word","understands; produces",
+"item_48","biscuit","cookie","food_drink","biscuit","word","understands; produces",
+"item_49","beurre","butter","food_drink","beurre","word","understands; produces",
+"item_50","banane","banana","food_drink","banane","word","understands; produces",
+"item_51","toutou","teddybear","toys","toutou","word","understands; produces",
+"item_52","poupée","doll","toys","poupee","word","understands; produces",
+"item_53","livre","book","toys","livre","word","understands; produces",
+"item_54","jouet","toy (object)","toys","jouet","word","understands; produces",
+"item_55","crayon/stylo","pen","toys","crayon/stylo","word","understands; produces",
+"item_56","bulles","bubbles","toys","bulles","word","understands; produces",
+"item_57","bloc","block","toys","bloc","word","understands; produces",
+"item_58","ballon","ball","toys","ballon","word","understands; produces",
+"item_59","balle","ball","toys","balle","word","understands; produces",
+"item_60","train","train","vehicles","train","word","understands; produces",
+"item_61","poussettte","stroller","vehicles","poussettte","word","understands; produces",
+"item_62","moto","motorcycle","vehicles","moto","word","understands; produces",
+"item_63","camion de pompier","firetruck","vehicles","camion_de_pompier","word","understands; produces",
+"item_64","camion","truck","vehicles","camion","word","understands; produces",
+"item_65","bicyclette","bicycle","vehicles","bicyclette","word","understands; produces",
+"item_66","avion","airplane","vehicles","avion","word","understands; produces",
+"item_67","autobus","bus","vehicles","autobus","word","understands; produces",
+"item_68","auto","car","vehicles","auto","word","understands; produces",
+"item_69","vache","cow","animals","vache","word","understands; produces",
+"item_70","tortue","turtle","animals","tortue","word","understands; produces",
+"item_71","tigre","tiger","animals","tigre","word","understands; produces",
+"item_72","souris","mouse","animals","souris","word","understands; produces",
+"item_73","singe","monkey","animals","singe","word","understands; produces",
+"item_74","poule","chicken (animal)","animals","poule","word","understands; produces",
+"item_75","poisson (animal)","fish (animal)","animals","poisson","word","understands; produces",
+"item_76","papillon","butterfly","animals","papillon","word","understands; produces",
+"item_77","ourson/nounours","teddybear","animals","ourson/nounours","word","understands; produces",
+"item_78","ours","bear","animals","ours","word","understands; produces",
+"item_79","oiseau","bird","animals","oiseau","word","understands; produces",
+"item_80","mouton","sheep","animals","mouton","word","understands; produces",
+"item_81","lion","lion","animals","lion","word","understands; produces",
+"item_82","lapin","bunny","animals","lapin","word","understands; produces",
+"item_83","hibou","owl","animals","hibou","word","understands; produces",
+"item_84","grenouille","frog","animals","grenouille","word","understands; produces",
+"item_85","girafe","giraffe","animals","girafe","word","understands; produces",
+"item_86","éléphant","elephant","animals","elephant","word","understands; produces",
+"item_87","écureuil","squirrel","animals","ecureuil","word","understands; produces",
+"item_88","cochon","pig","animals","cochon","word","understands; produces",
+"item_89","petit chien","puppy","animals","petit_chien","word","understands; produces",
+"item_90","chien","dog","animals","chien","word","understands; produces",
+"item_91","cheval","horse","animals","cheval","word","understands; produces",
+"item_92","petit minou","kitty","animals","petit_minou","word","understands; produces",
+"item_93","chat","cat","animals","chat","word","understands; produces",
+"item_94","canard","duck","animals","canard","word","understands; produces",
+"item_95","bibitte","bug","animals","bibitte","word","understands; produces",
+"item_96","animal","animal","animals","animal","word","understands; produces",
+"item_97","âne","donkey","animals","^ane","word","understands; produces",
+"item_98","abeille","bee","animals","abeille","word","understands; produces",
+"item_99","wouf wouf","woof woof","sounds","wouf_wouf","word","understands; produces",
+"item_100","vroum","vroom","sounds","vroum","word","understands; produces",
+"item_101","tchou tchou","choo choo","sounds","tchou_tchou","word","understands; produces",
+"item_102","aïe","ouch","sounds","a""ie","word","understands; produces",
+"item_103","oh oh","uh oh","sounds","oh_oh","word","understands; produces",
+"item_104","miam miam","moo","sounds","miam_miam","word","understands; produces",
+"item_105","miaou","meow","sounds","miaou","word","understands; produces",
+"item_106","meuh","yum yum","sounds","meuh","word","understands; produces",
+"item_107","grrrr","grrr","sounds","grrrr","word","understands; produces",
+"item_108","coin coin","quack quack","sounds","coin_coin","word","understands; produces",
+"item_109","cocorico","cockadoodledoo","sounds","cocorico","word","understands; produces",
+"item_110","bêêêê bêêêê","baa baa","sounds","b^e^e^e^e_b^e^e^e^e","word","understands; produces",
+"item_111","cheveux","hair","body_parts","cheveux","word","understands; produces",
+"item_112","dent","tooth","body_parts","dent","word","understands; produces",
+"item_113","doigt","finger","body_parts","doigt","word","understands; produces",
+"item_114","genou","knee","body_parts","genou","word","understands; produces",
+"item_115","jambe","leg","body_parts","jambe","word","understands; produces",
+"item_116","joue","cheek","body_parts","joue","word","understands; produces",
+"item_117","langue","tongue","body_parts","langue","word","understands; produces",
+"item_118","main","hand","body_parts","main","word","understands; produces",
+"item_119","moustache","mustache","body_parts","moustache","word","understands; produces",
+"item_120","nez","nose","body_parts","nez","word","understands; produces",
+"item_121","nombril","belly button","body_parts","nombril","word","understands; produces",
+"item_122","yeux","eye","body_parts","yeux","word","understands; produces",
+"item_123","oreille","ear","body_parts","oreille","word","understands; produces",
+"item_124","orteil","toe","body_parts","orteil","word","understands; produces",
+"item_125","pied","foot","body_parts","pied","word","understands; produces",
+"item_126","tête","head","body_parts","t^ete","word","understands; produces",
+"item_127","visage","face","body_parts","visage","word","understands; produces",
+"item_128","bain (object)","bathtub","furniture_rooms","bain","word","understands; produces",
+"item_129","bassinette/berceau","crib","furniture_rooms","bassinette/berceau","word","understands; produces",
+"item_130","chaise","chair","furniture_rooms","chaise","word","understands; produces",
+"item_131","chaise berçante","rocking chair","furniture_rooms","chaise_bercante","word","understands; produces",
+"item_132","chaise haute","high chair","furniture_rooms","chaise_haute","word","understands; produces",
+"item_133","chambre","bedroom","furniture_rooms","chambre","word","understands; produces",
+"item_134","cuisine","kitchen","furniture_rooms","cuisine","word","understands; produces",
+"item_135","divan","couch","furniture_rooms","divan","word","understands; produces",
+"item_136","escalier","stairs","furniture_rooms","escalier","word","understands; produces",
+"item_137","évier/lavabo","sink","furniture_rooms","evier/lavabo","word","understands; produces",
+"item_138","fenêtre","window","furniture_rooms","fen^etre","word","understands; produces",
+"item_139","four","oven","furniture_rooms","four","word","understands; produces",
+"item_140","frigidaire/frigo","refrigerator","furniture_rooms","frigidaire/frigo","word","understands; produces",
+"item_141","garage","garage","furniture_rooms","garage","word","understands; produces",
+"item_142","lit","bed","furniture_rooms","lit","word","understands; produces",
+"item_143","parc (d´enfant)","play pen","furniture_rooms","parc_(denfant)","word","understands; produces",
+"item_144","poêle","stove","furniture_rooms","po^ele","word","understands; produces",
+"item_145","porte","door","furniture_rooms","porte","word","understands; produces",
+"item_146","pot","potty","furniture_rooms","pot","word","understands; produces",
+"item_147","salle de bain/toilette","bathroom","furniture_rooms","salle_de_bain/_toilette","word","understands; produces",
+"item_148","salon","living room","furniture_rooms","salon","word","understands; produces",
+"item_149","table","table","furniture_rooms","table","word","understands; produces",
+"item_150","télévision","tv","furniture_rooms","television","word","understands; produces",
+"item_151","tiroir","drawer","furniture_rooms","tiroir","word","understands; produces",
+"item_152","aspirateur","vacuum","household","aspirateur","word","understands; produces",
+"item_153","assiette","plate","household","assiette","word","understands; produces",
+"item_154","balai","broom","household","balai","word","understands; produces",
+"item_155","boîte","box","household","bo^ite","word","understands; produces",
+"item_156","bol","bowl","household","bol","word","understands; produces",
+"item_157","bouteille","bottle","household","bouteille","word","understands; produces",
+"item_158","brosse","brush (object)","household","brosse","word","understands; produces",
+"item_159","brosse à dent","toothbrush","household","brosse_`a_dent","word","understands; produces",
+"item_160","ciseaux","scissors","household","ciseaux","word","understands; produces",
+"item_161","clés","keys","household","cles","word","understands; produces",
+"item_162","couverte/couverture","blanket","household","couverte/couverture","word","understands; produces",
+"item_163","cuillère","spoon","household","cuill`ere","word","understands; produces",
+"item_164","fourchette","fork","household","fourchette","word","understands; produces",
+"item_165","horloge","clock","household","horloge","word","understands; produces",
+"item_166","image","picture","household","image","word","understands; produces",
+"item_167","lampe","lamp","household","lampe","word","understands; produces",
+"item_168","lumière","light","household","lumi`ere","word","understands; produces",
+"item_169","lunettes","glasses","household","lunettes","word","understands; produces",
+"item_170","marteau","hammer","household","marteau","word","understands; produces",
+"item_171","médicament","medicine","household","medicament","word","understands; produces",
+"item_172","montre","watch (object)","household","montre","word","understands; produces",
+"item_173","oreiller","pillow","household","oreiller","word","understands; produces",
+"item_174","papier","paper","household","papier","word","understands; produces",
+"item_175","peigne","comb (object)","household","peigne","word","understands; produces",
+"item_176","photo","photos","household","photo","word","understands; produces",
+"item_177","plante","plant","household","plante","word","understands; produces",
+"item_178","plat","dish","household","plat","word","understands; produces",
+"item_179","radio","radio","household","radio","word","understands; produces",
+"item_180","sacoche/sac à main","purse","household","sacoche/sac_`a_main","word","understands; produces",
+"item_181","savon","soap","household","savon","word","understands; produces",
+"item_182","serviette","towel","household","serviette","word","understands; produces",
+"item_183","tasse","cup","household","tasse","word","understands; produces",
+"item_184","téléphone","telephone","household","telephone","word","understands; produces",
+"item_185","verre","glass","household","verre","word","understands; produces",
+"item_186","vidanges","trash","household","vidanges","word","understands; produces",
+"item_187","arbre","tree","outside","arbre","word","understands; produces",
+"item_188","balançoire","swing (object)","outside","balancoire","word","understands; produces",
+"item_189","chez nous","home","outside","chez_nous","word","understands; produces",
+"item_190","ciel","sky","outside","ciel","word","understands; produces",
+"item_191","cour","yard","outside","cour","word","understands; produces",
+"item_192","dehors","outside","outside","dehors","word","understands; produces",
+"item_193","eau (not beverage)","water (not beverage)","outside","eau","word","understands; produces",
+"item_194","école","school","outside","ecole","word","understands; produces",
+"item_195","étoile","star","outside","etoile","word","understands; produces",
+"item_196","fête","party","outside","f^ete","word","understands; produces",
+"item_197","fleur","flower","outside","fleur","word","understands; produces",
+"item_198","glissoire","slide (object)","outside","glissoire","word","understands; produces",
+"item_199","lune","moon","outside","lune","word","understands; produces",
+"item_200","magasin","store","outside","magasin","word","understands; produces",
+"item_201","maison","house","outside","maison","word","understands; produces",
+"item_202","neige","snow","outside","neige","word","understands; produces",
+"item_203","parc","park","outside","parc","word","understands; produces",
+"item_204","pelle","shovel","outside","pelle","word","understands; produces",
+"item_205","piscine","pool","outside","piscine","word","understands; produces",
+"item_206","pluie","rain","outside","pluie","word","understands; produces",
+"item_207","roche","rock (object)","outside","roche","word","understands; produces",
+"item_208","soleil","sun","outside","soleil","word","understands; produces",
+"item_209","travail/bureau","work (place)","outside","travail/bureau","word","understands; produces",
+"item_210","bébé","baby","people","bebe","word","understands; produces",
+"item_211","bonhomme","snowman","people","bonhomme","word","understands; produces",
+"item_212","dame/madame","lady","people","dame/madame","word","understands; produces",
+"item_213","enfant","child","people","enfant","word","understands; produces",
+"item_214","fille","girl","people","fille","word","understands; produces",
+"item_215","frère","brother","people","fr`ere","word","understands; produces",
+"item_216","garçon","boy","people","garcon","word","understands; produces",
+"item_217","gardienne","babysitter","people","gardienne","word","understands; produces",
+"item_218","gens/monde","people","people","gens/monde","word","understands; produces",
+"item_219","grand-maman","grandma","people","grand-maman","word","understands; produces",
+"item_220","grand-papa","grandpa","people","grand-papa","word","understands; produces",
+"item_221","maman","mommy","people","maman","word","understands; produces",
+"item_222","monsieur","man","people","monsieur","word","understands; produces",
+"item_223","nom du (de la) gardien(ne)","babysitter's name","people","nom_du_(de_la)_gardien(ne)","word","understands; produces",
+"item_224","oncle/mononcle","uncle","people","oncle/mononcle","word","understands; produces",
+"item_225","papa","daddy","people","papa","word","understands; produces",
+"item_226","soeur","sister","people","soeur","word","understands; produces",
+"item_227","son propre nom","child’s own name","people","son_propre_nom","word","understands; produces",
+"item_228","tante/matante","aunt","people","tante/matante","word","understands; produces",
+"item_229","allo","hello","games_routines","allo","word","understands; produces",
+"item_230","attends","wait","games_routines","attends","word","understands; produces",
+"item_231","bain (routine)","bath","games_routines","bain","word","understands; produces",
+"item_232","bonjour","hi","games_routines","bonjour","word","understands; produces",
+"item_233","bonne nuit","good night","games_routines","bonne_nuit","word","understands; produces",
+"item_234","bravo","clap","games_routines","bravo","word","understands; produces",
+"item_235","bye/au revoir","bye","games_routines","bye/au_revoir","word","understands; produces",
+"item_236","caca","poop","games_routines","caca","word","understands; produces",
+"item_237","chut","shh","games_routines","chut","word","understands; produces",
+"item_238","coucou","peekaboo","games_routines","coucou","word","understands; produces",
+"item_239","déjeuner","breakfast","games_routines","dejeuner","word","understands; produces",
+"item_240","dîner","lunch","games_routines","d^iner","word","understands; produces",
+"item_241","dodo","nap","games_routines","dodo","word","understands; produces",
+"item_242","faire le tour de la maison","go around the house","games_routines","faire_le_tour_de_la_maison","word","understands; produces",
+"item_243","menouche menouche","TODO","games_routines","menouche_menouche","word","understands; produces",
+"item_244","merci","thank you","games_routines","merci","word","understands; produces",
+"item_245","non","no","games_routines","non","word","understands; produces",
+"item_246","ok","ok","games_routines","ok","word","understands; produces",
+"item_247","oui","yes","games_routines","oui","word","understands; produces",
+"item_248","pipi","pee","games_routines","pipi","word","understands; produces",
+"item_249","s´il-vous-plaît","please","games_routines","sil-vous-pla^it","word","understands; produces",
+"item_250","souper","dinner","games_routines","souper","word","understands; produces",
+"item_251","tape tape","pattycake","games_routines","tape_tape","word","understands; produces",
+"item_252","(je) veux","wanna","games_routines","(je)_veux","word","understands; produces",
+"item_253","aider","help","action_words","aider","word","understands; produces",
+"item_254","aimer","love","action_words","aimer","word","understands; produces",
+"item_255","aller","go","action_words","aller","word","understands; produces",
+"item_256","allumer","turn on","action_words","allumer","word","understands; produces",
+"item_257","amener","bring","action_words","amener","word","understands; produces",
+"item_258","apporter","bring","action_words","apporter","word","understands; produces",
+"item_259","arrêter","stop","action_words","arr^eter","word","understands; produces",
+"item_260","arroser","splash","action_words","arroser","word","understands; produces",
+"item_261","asseoir","sit","action_words","asseoir","word","understands; produces",
+"item_262","attacher","attach","action_words","attacher","word","understands; produces",
+"item_263","attendre","wait","action_words","attendre","word","understands; produces",
+"item_264","attraper","catch","action_words","attraper","word","understands; produces",
+"item_265","avoir","have","action_words","avoir","word","understands; produces",
+"item_266","balancer","swing (action)","action_words","balancer","word","understands; produces",
+"item_267","balayer","sweep","action_words","balayer","word","understands; produces",
+"item_268","bercer","rock (action)","action_words","bercer","word","understands; produces",
+"item_269","boire","drink (action)","action_words","boire","word","understands; produces",
+"item_270","brasser","stir","action_words","brasser","word","understands; produces",
+"item_271","briser/casser","break","action_words","briser/casser","word","understands; produces",
+"item_272","brosser","brush (action)","action_words","brosser","word","understands; produces",
+"item_273","cacher","hide","action_words","cacher","word","understands; produces",
+"item_274","chanter","sing","action_words","chanter","word","understands; produces",
+"item_275","chatouiller","tickle","action_words","chatouiller","word","understands; produces",
+"item_276","chercher","look for","action_words","chercher","word","understands; produces",
+"item_277","choisir","choose","action_words","choisir","word","understands; produces",
+"item_278","cogner (à)","bang","action_words","cogner_(`a)","word","understands; produces",
+"item_279","couper","cut","action_words","couper","word","understands; produces",
+"item_280","courir","run","action_words","courir","word","understands; produces",
+"item_281","courir après","run after","action_words","courir_apr`es","word","understands; produces",
+"item_282","cracher","spit","action_words","cracher","word","understands; produces",
+"item_283","danser","dance","action_words","danser","word","understands; produces",
+"item_284","débarquer","get off","action_words","debarquer","word","understands; produces",
+"item_285","déchirer","tear","action_words","dechirer","word","understands; produces",
+"item_286","descendre","descend","action_words","descendre","word","understands; produces",
+"item_287","dessiner","draw","action_words","dessiner","word","understands; produces",
+"item_288","dire","say","action_words","dire","word","understands; produces",
+"item_289","donner","give","action_words","donner","word","understands; produces",
+"item_290","dormir","sleep","action_words","dormir","word","understands; produces",
+"item_291","écouter","listen","action_words","ecouter","word","understands; produces",
+"item_292","écrire","write","action_words","ecrire","word","understands; produces",
+"item_293","embarquer","get on","action_words","embarquer","word","understands; produces",
+"item_294","enlever","take off","action_words","enlever","word","understands; produces",
+"item_295","entendre","hear","action_words","entendre","word","understands; produces",
+"item_296","essuyer","wipe","action_words","essuyer","word","understands; produces",
+"item_297","faire","do","action_words","faire","word","understands; produces",
+"item_298","fermer","close","action_words","fermer","word","understands; produces",
+"item_299","finir","finish","action_words","finir","word","understands; produces",
+"item_300","glisser","slide (action)","action_words","glisser","word","understands; produces",
+"item_301","goûter","taste","action_words","go^uter","word","understands; produces",
+"item_302","grimper","climb","action_words","grimper","word","understands; produces",
+"item_303","jeter","dump","action_words","jeter","word","understands; produces",
+"item_304","jouer","play","action_words","jouer","word","understands; produces",
+"item_305","lancer","throw","action_words","lancer","word","understands; produces",
+"item_306","laver","wash","action_words","laver","word","understands; produces",
+"item_307","lécher","lick","action_words","lecher","word","understands; produces",
+"item_308","lire","read","action_words","lire","word","understands; produces",
+"item_309","manger","eat","action_words","manger","word","understands; produces",
+"item_310","marcher","walk","action_words","marcher","word","understands; produces",
+"item_311","mettre","put","action_words","mettre","word","understands; produces",
+"item_312","monter","ride","action_words","monter","word","understands; produces",
+"item_313","montrer","show","action_words","montrer","word","understands; produces",
+"item_314","mordre","bite","action_words","mordre","word","understands; produces",
+"item_315","nager","swim","action_words","nager","word","understands; produces",
+"item_316","nettoyer","clean (action)","action_words","nettoyer","word","understands; produces",
+"item_317","ouvrir","open (action)","action_words","ouvrir","word","understands; produces",
+"item_318","parler","talk","action_words","parler","word","understands; produces",
+"item_319","partager","share","action_words","partager","word","understands; produces",
+"item_320","peinturer","paint (action)","action_words","peinturer","word","understands; produces",
+"item_321","pleurer","cry","action_words","pleurer","word","understands; produces",
+"item_322","pousser","push","action_words","pousser","word","understands; produces",
+"item_323","prendre","take","action_words","prendre","word","understands; produces",
+"item_324","ramasser","pick up","action_words","ramasser","word","understands; produces",
+"item_325","regarder","look","action_words","regarder","word","understands; produces",
+"item_326","renverser","spill","action_words","renverser","word","understands; produces",
+"item_327","rester","stay","action_words","rester","word","understands; produces",
+"item_328","réveiller","wake","action_words","reveiller","word","understands; produces",
+"item_329","sauter","jump","action_words","sauter","word","understands; produces",
+"item_330","sécher","dry (action)","action_words","secher","word","understands; produces",
+"item_331","souffler","blow","action_words","souffler","word","understands; produces",
+"item_332","sourire","smile","action_words","sourire","word","understands; produces",
+"item_333","taper","hit","action_words","taper","word","understands; produces",
+"item_334","tenir","hold","action_words","tenir","word","understands; produces",
+"item_335","tirer","pull","action_words","tirer","word","understands; produces",
+"item_336","tomber","fall","action_words","tomber","word","understands; produces",
+"item_337","toucher","touch","action_words","toucher","word","understands; produces",
+"item_338","tourner","turn","action_words","tourner","word","understands; produces",
+"item_339","travailler","work (action)","action_words","travailler","word","understands; produces",
+"item_340","trouver","find","action_words","trouver","word","understands; produces",
+"item_341","venir","come","action_words","venir","word","understands; produces",
+"item_342","verser","pour","action_words","verser","word","understands; produces",
+"item_343","voir","see","action_words","voir","word","understands; produces",
+"item_344","aujourd´hui","today","time_words","aujourdhui","word","understands; produces",
+"item_345","ce soir","tonight","time_words","ce_soir","word","understands; produces",
+"item_346","demain","tomorrow","time_words","demain","word","understands; produces",
+"item_347","maintenant/tout de suite","now","time_words","maintenant/tout_de_suite","word","understands; produces",
+"item_348","matin","morning","time_words","matin","word","understands; produces",
+"item_349","nuit","night","time_words","nuit","word","understands; produces",
+"item_350","plus tard","later","time_words","plus_tard","word","understands; produces",
+"item_351","tantôt/tout à l´heure","sometimes","time_words","tant^ot/tout_`a_lheure","word","understands; produces",
+"item_352","avoir faim","hungry","descriptive_words","avoir_faim","word","understands; produces",
+"item_353","avoir mal","hurt (description)","descriptive_words","avoir_mal","word","understands; produces",
+"item_354","avoir peur","scared","descriptive_words","avoir_peur","word","understands; produces",
+"item_355","avoir soif","thirsty","descriptive_words","avoir_soif","word","understands; produces",
+"item_356","beau/belle","beautiful","descriptive_words","beau/belle","word","understands; produces",
+"item_357","bien","good","descriptive_words","bien","word","understands; produces",
+"item_358","bleu","blue","descriptive_words","bleu","word","understands; produces",
+"item_359","bon","good","descriptive_words","bon","word","understands; produces",
+"item_360","brisé/cassé","broken","descriptive_words","brise/casse","word","understands; produces",
+"item_361","capable","able","descriptive_words","capable","word","understands; produces",
+"item_362","chaud","hot","descriptive_words","chaud","word","understands; produces",
+"item_363","content","happy","descriptive_words","content","word","understands; produces",
+"item_364","debout","standing","descriptive_words","debout","word","understands; produces",
+"item_365","dégueulasse","yucky","descriptive_words","degueulasse","word","understands; produces",
+"item_366","doux","soft","descriptive_words","doux","word","understands; produces",
+"item_367","endormi","sleepy","descriptive_words","endormi","word","understands; produces",
+"item_368","fatigué","tired","descriptive_words","fatigue","word","understands; produces",
+"item_369","fini","finished","descriptive_words","fini","word","understands; produces",
+"item_370","froid","cold","descriptive_words","froid","word","understands; produces",
+"item_371","gentil","nice","descriptive_words","gentil","word","understands; produces",
+"item_372","gros/grand","big","descriptive_words","gros/grand","word","understands; produces",
+"item_373","malade","sick","descriptive_words","malade","word","understands; produces",
+"item_374","mal","bad","descriptive_words","mal","word","understands; produces",
+"item_375","parti","all gone","descriptive_words","parti","word","understands; produces",
+"item_376","petit","little (description)","descriptive_words","petit","word","understands; produces",
+"item_377","propre","clean (description)","descriptive_words","propre","word","understands; produces",
+"item_378","prudent","careful","descriptive_words","prudent","word","understands; produces",
+"item_379","rouge","red","descriptive_words","rouge","word","understands; produces",
+"item_380","sale","dirty","descriptive_words","sale","word","understands; produces",
+"item_381","tannant/méchant","bad","descriptive_words","tannant/mechant","word","understands; produces",
+"item_382","vide","empty","descriptive_words","vide","word","understands; produces",
+"item_383","vite","fast","descriptive_words","vite","word","understands; produces",
+"item_384","à moi","mine","pronouns","`a_moi","word","understands; produces",
+"item_385","ça","that","pronouns","ca","word","understands; produces",
+"item_386","je","i","pronouns","je","word","understands; produces",
+"item_387","(à) lui/(à) elle","him","pronouns","(`a)_lui/(`a)_elle","word","understands; produces",
+"item_388","moi","me","pronouns","moi","word","understands; produces",
+"item_389","mon","my","pronouns","mon","word","understands; produces",
+"item_390","son","his","pronouns","son","word","understands; produces",
+"item_391","toi","you","pronouns","toi","word","understands; produces",
+"item_392","ton","your","pronouns","ton","word","understands; produces",
+"item_393","tu","you","pronouns","tu","word","understands; produces",
+"item_394","où","where (question)","question_words","o`u","word","understands; produces",
+"item_395","qui","who ","question_words","qui","word","understands; produces",
+"item_396","quoi","what","question_words","quoi","word","understands; produces",
+"item_397","à terre/par terre","down","locations","`a_terre/par_terre","word","understands; produces",
+"item_398","dans","in","locations","dans","word","understands; produces",
+"item_399","en bas","below","locations","en_bas","word","understands; produces",
+"item_400","en haut","up","locations","en_haut","word","understands; produces",
+"item_401","là/là-bas","there","locations","l`a/l`a-bas","word","understands; produces",
+"item_402","sous/en-dessous","under","locations","sous/en-dessous","word","understands; produces",
+"item_403","sur/dessus","on","locations","sur/dessus","word","understands; produces",
+"item_404","encore","again","quantifiers","encore","word","understands; produces",
+"item_405","plus","more","quantifiers","plus","word","understands; produces",
+"item_406","pas","not","quantifiers","pas","word","understands; produces",
+"item_407","un autre","another","quantifiers","un_autre","word","understands; produces",
+"item_408","un peu","little (amount)","quantifiers","un_peu","word","understands; produces",
