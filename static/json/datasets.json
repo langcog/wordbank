@@ -510,5 +510,17 @@
         "longitudinal": false,
         "contributor": "Svetlana Kapalková, Comenius University",
         "citation": ""
+    },
+    {
+        "name": "Trudeau",
+        "dataset": "",
+        "instrument_language": "French (Quebec)",
+        "instrument_form": "WS",
+        "file": "raw_data/French_Quebec_WS/FrenchQuebecWS.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": false,
+        "contributor": "Natacha Trudeau, Université de Montréal",
+        "citation": "Trudeau, N., & Sutton, A. (2011). Expressive vocabulary and early grammar of 16-to 30-month-old children acquiring Quebec French. First Language, 0142723711410828."
     }
 ]
