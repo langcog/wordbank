@@ -1,411 +1,411 @@
-"definition","uni_lemma","category","item","type","choices","gloss","complexity_category","itemID"
-"av","ouch","sounds","av","word","understands; produces",,,"item_1"
-"mjav","meow","sounds","mjav","word","understands; produces",,,"item_2"
-"rap","quack quack","sounds","rap","word","understands; produces",,,"item_3"
-"fut","choo choo","sounds","fut","word","understands; produces",,,"item_4"
-"muh","moo","sounds","muh","word","understands; produces",,,"item_5"
-"vov","woof woof","sounds","vov","word","understands; produces",,,"item_6"
-"grrrr","grrr","sounds","grrrr","word","understands; produces",,,"item_7"
-"mæh","baa baa","sounds","maeh","word","understands; produces",,,"item_8"
-"årnnn (bil-lyd)","vroom","sounds","arnnn_(bil-lyd)","word","understands; produces",,,"item_9"
-"kykliky","cockadoodledoo","sounds","kykliky","word","understands; produces",,,"item_10"
-"mm mm (lækkert)","yum yum","sounds","mm_mm_(laekkert)","word","understands; produces",,,"item_11"
-"abe","monkey","animals","abe","word","understands; produces",,,"item_12"
-"får","sheep","animals","far","word","understands; produces",,,"item_13"
-"ko","cow","animals","ko","word","understands; produces",,,"item_14"
-"and","duck","animals","and","word","understands; produces",,,"item_15"
-"giraf","giraffe","animals","giraf","word","understands; produces",,,"item_16"
-"kylling (animal)","chicken (animal)","animals","kylling","word","understands; produces",,,"item_17"
-"bamse","teddybear","animals","bamse","word","understands; produces",,,"item_18"
-"gris","pig","animals","gris","word","understands; produces",,,"item_19"
-"lam","lamb","animals","lam","word","understands; produces",,,"item_20"
-"bi","bee","animals","bi","word","understands; produces",,,"item_21"
-"gås","goose","animals","gas","word","understands; produces",,,"item_22"
-"løve","lion","animals","love","word","understands; produces",,,"item_23"
-"bjørn","bear","animals","bjorn","word","understands; produces",,,"item_24"
-"hest","horse","animals","hest","word","understands; produces",,,"item_25"
-"mus","mouse","animals","mus","word","understands; produces",,,"item_26"
-"dyr","animal","animals","dyr","word","understands; produces",,,"item_27"
-"hjort","deer","animals","hjort","word","understands; produces",,,"item_28"
-"pingvin","penguin","animals","pingvin","word","understands; produces",,,"item_29"
-"egern","squirrel","animals","egern","word","understands; produces",,,"item_30"
-"hvalp","puppy","animals","hvalp","word","understands; produces",,,"item_31"
-"pony","pony","animals","pony","word","understands; produces",,,"item_32"
-"elefant","elephant","animals","elefant","word","understands; produces",,,"item_33"
-"hund","dog","animals","hund","word","understands; produces",,,"item_34"
-"skildpadde","turtle","animals","skildpadde","word","understands; produces",,,"item_35"
-"fisk (animal)","fish (animal)","animals","fisk","word","understands; produces",,,"item_36"
-"kalkun","turkey","animals","kalkun","word","understands; produces",,,"item_37"
-"sommerfugl","butterfly","animals","sommerfugl","word","understands; produces",,,"item_38"
-"flue","bug","animals","flue","word","understands; produces",,,"item_39"
-"kanin","bunny","animals","kanin","word","understands; produces",,,"item_40"
-"tiger","tiger","animals","tiger","word","understands; produces",,,"item_41"
-"frø","frog","animals","fro","word","understands; produces",,,"item_42"
-"kat","cat","animals","kat","word","understands; produces",,,"item_43"
-"ugle","owl","animals","ugle","word","understands; produces",,,"item_44"
-"fugl","bird","animals","fugl","word","understands; produces",,,"item_45"
-"killing","kitty","animals","killing","word","understands; produces",,,"item_46"
-"æsel","donkey","animals","aesel","word","understands; produces",,,"item_47"
-"barnevogn","stroller","vehicles","barnevogn","word","understands; produces",,,"item_48"
-"cykel","bicycle","vehicles","cykel","word","understands; produces",,,"item_49"
-"motorcykel","motorcycle","vehicles","motorcykel","word","understands; produces",,,"item_50"
-"bil","car","vehicles","bil","word","understands; produces",,,"item_51"
-"flyvemaskine","airplane","vehicles","flyvemaskine","word","understands; produces",,,"item_52"
-"tog","train","vehicles","tog","word","understands; produces",,,"item_53"
-"brandbil","firetruck","vehicles","brandbil","word","understands; produces",,,"item_54"
-"klapvogn","stroller","vehicles","klapvogn","word","understands; produces",,,"item_55"
-"bus","bus","vehicles","bus","word","understands; produces",,,"item_56"
-"lastbil","truck","vehicles","lastbil","word","understands; produces",,,"item_57"
-"ballon","balloon","toys","ballon","word","understands; produces",,,"item_58"
-"bold","ball","toys","bold","word","understands; produces",,,"item_59"
-"legetøj","toy (object)","toys","legetoj","word","understands; produces",,,"item_60"
-"blyant","pen","toys","blyant","word","understands; produces",,,"item_61"
-"dukke","doll","toys","dukke","word","understands; produces",,,"item_62"
-"sæbebobler","bubbles","toys","saebebobler","word","understands; produces",,,"item_63"
-"bog","book","toys","bog","word","understands; produces",,,"item_64"
-"klods","block","toys","klods","word","understands; produces",,,"item_65"
-"appelsin","orange (food)","food_drink","appelsin","word","understands; produces",,,"item_66"
-"kaffe","coffee","food_drink","kaffe","word","understands; produces",,,"item_67"
-"rosiner","raisin","food_drink","rosiner","word","understands; produces",,,"item_68"
-"banan","banana","food_drink","banan","word","understands; produces",,,"item_69"
-"kage(r)","cake","food_drink","kage(r)","word","understands; produces",,,"item_70"
-"slik","candy","food_drink","slik","word","understands; produces",,,"item_71"
-"boller","toast","food_drink","boller","word","understands; produces",,,"item_72"
-"kiks","cracker","food_drink","kiks","word","understands; produces",,,"item_73"
-"smør","butter","food_drink","smor","word","understands; produces",,,"item_74"
-"brød","bread","food_drink","brod","word","understands; produces",,,"item_75"
-"kylling (food)","chicken (food)","food_drink","kylling","word","understands; produces",,,"item_76"
-"spaghetti","spaghetti","food_drink","spaghetti","word","understands; produces",,,"item_77"
-"cornflakes","cheerios","food_drink","cornflakes","word","understands; produces",,,"item_78"
-"kød","meat","food_drink","kod","word","understands; produces",,,"item_79"
-"vand (beverage)","water (beverage)","food_drink","vand","word","understands; produces",,,"item_80"
-"fisk (food)","fish (food)","food_drink","fisk","word","understands; produces",,,"item_81"
-"mad","food","food_drink","mad","word","understands; produces",,,"item_82"
-"æble","apple","food_drink","aeble","word","understands; produces",,,"item_83"
-"gulerødder","carrots","food_drink","gulerodder","word","understands; produces",,,"item_84"
-"mælk","milk","food_drink","maelk","word","understands; produces",,,"item_85"
-"æg","egg","food_drink","aeg","word","understands; produces",,,"item_86"
-"havregryn","porridge","food_drink","havregryn","word","understands; produces",,,"item_87"
-"ost","cheese","food_drink","ost","word","understands; produces",,,"item_88"
-"ærter","peas","food_drink","aerter","word","understands; produces",,,"item_89"
-"is","ice cream","food_drink","is","word","understands; produces",,,"item_90"
-"pasta","noodles","food_drink","pasta","word","understands; produces",,,"item_91"
-"juice","juice","food_drink","juice","word","understands; produces",,,"item_92"
-"pizza","pizza","food_drink","pizza","word","understands; produces",,,"item_93"
-"ble","diaper","clothing","ble","word","understands; produces",,,"item_94"
-"jakke","jacket","clothing","jakke","word","understands; produces",,,"item_95"
-"sko","shoe","clothing","sko","word","understands; produces",,,"item_96"
-"bluse","shirt","clothing","bluse","word","understands; produces",,,"item_97"
-"kjole","dress (object)","clothing","kjole","word","understands; produces",,,"item_98"
-"sokker","sock","clothing","sokker","word","understands; produces",,,"item_99"
-"t-shirt","shirt","clothing","t-shirt","word","understands; produces",,,"item_100"
-"knap","button","clothing","knap","word","understands; produces",,,"item_101"
-"strømper","sock","clothing","stromper","word","understands; produces",,,"item_102"
-"bukser","pants","clothing","bukser","word","understands; produces",,,"item_103"
-"lynlås","zipper","clothing","lynlas","word","understands; produces",,,"item_104"
-"støvler","boots","clothing","stovler","word","understands; produces",,,"item_105"
-"frakke","coat","clothing","frakke","word","understands; produces",,,"item_106"
-"nattøj","pajamas","clothing","nattoj","word","understands; produces",,,"item_107"
-"sut","pacifier","clothing","sut","word","understands; produces",,,"item_108"
-"hagesmæk","bib","clothing","hagesmaek","word","understands; produces",,,"item_109"
-"halskæde","necklace","clothing","halskaede","word","understands; produces",,,"item_110"
-"sweater","sweater","clothing","sweater","word","understands; produces",,,"item_111"
-"hue","hat","clothing","hue","word","understands; produces",,,"item_112"
-"shorts","shorts","clothing","shorts","word","understands; produces",,,"item_113"
-"trøje","sweater","clothing","troje","word","understands; produces",,,"item_114"
-"ansigt","face","body_parts","ansigt","word","understands; produces",,,"item_115"
-"kind","cheek","body_parts","kind","word","understands; produces",,,"item_116"
-"tissemand","penis","body_parts","tissemand","word","understands; produces",,,"item_117"
-"arm","arm","body_parts","arm","word","understands; produces",,,"item_118"
-"knæ","knee","body_parts","knae","word","understands; produces",,,"item_119"
-"tunge","tongue","body_parts","tunge","word","understands; produces",,,"item_120"
-"ben","leg","body_parts","ben","word","understands; produces",,,"item_121"
-"mund","mouth","body_parts","mund","word","understands; produces",,,"item_122"
-"tænder","tooth","body_parts","taender","word","understands; produces",,,"item_123"
-"finger","finger","body_parts","finger","word","understands; produces",,,"item_124"
-"navle","belly button","body_parts","navle","word","understands; produces",,,"item_125"
-"tå","toe","body_parts","ta","word","understands; produces",,,"item_126"
-"hoved","head","body_parts","hoved","word","understands; produces",,,"item_127"
-"næse","nose","body_parts","naese","word","understands; produces",,,"item_128"
-"øje","eye","body_parts","oje","word","understands; produces",,,"item_129"
-"hånd","hand","body_parts","hand","word","understands; produces",,,"item_130"
-"sår","owie","body_parts","sar","word","understands; produces",,,"item_131"
-"øre","ear","body_parts","ore","word","understands; produces",,,"item_132"
-"hår","hair","body_parts","har","word","understands; produces",,,"item_133"
-"tissekone","vagina","body_parts","tissekone","word","understands; produces",,,"item_134"
-"affald","trash","household","affald","word","understands; produces",,,"item_135"
-"kop","cup","household","kop","word","understands; produces",,,"item_136"
-"saks","scissors","household","saks","word","understands; produces",,,"item_137"
-"billede","picture","household","billede","word","understands; produces",,,"item_138"
-"kost","broom","household","kost","word","understands; produces",,,"item_139"
-"ske","spoon","household","ske","word","understands; produces",,,"item_140"
-"briller","glasses","household","briller","word","understands; produces",,,"item_141"
-"krus","cup","household","krus","word","understands; produces",,,"item_142"
-"skrald","trash","household","skrald","word","understands; produces",,,"item_143"
-"børste","brush (object)","household","borste","word","understands; produces",,,"item_144"
-"lampe","lamp","household","lampe","word","understands; produces",,,"item_145"
-"skål","bowl","household","skal","word","understands; produces",,,"item_146"
-"dyne","blanket","household","dyne","word","understands; produces",,,"item_147"
-"lys","light","household","lys","word","understands; produces",,,"item_148"
-"småpenge","penny","household","smapenge","word","understands; produces",,,"item_149"
-"flaske","bottle","household","flaske","word","understands; produces",,,"item_150"
-"medicin","medicine","household","medicin","word","understands; produces",,,"item_151"
-"støvsuger","vacuum","household","stovsuger","word","understands; produces",,,"item_152"
-"gaffel","fork","household","gaffel","word","understands; produces",,,"item_153"
-"nøgler","keys","household","nogler","word","understands; produces",,,"item_154"
-"sæbe","soap","household","saebe","word","understands; produces",,,"item_155"
-"glas","glass","household","glas","word","understands; produces",,,"item_156"
-"papir","paper","household","papir","word","understands; produces",,,"item_157"
-"tallerken","plate","household","tallerken","word","understands; produces",,,"item_158"
-"hammer","hammer","household","hammer","word","understands; produces",,,"item_159"
-"penge","money","household","penge","word","understands; produces",,,"item_160"
-"tandbørste","toothbrush","household","tandborste","word","understands; produces",,,"item_161"
-"håndklæde","towel","household","handklaede","word","understands; produces",,,"item_162"
-"plante","plant","household","plante","word","understands; produces",,,"item_163"
-"telefon","telephone","household","telefon","word","understands; produces",,,"item_164"
-"kam","comb (object)","household","kam","word","understands; produces",,,"item_165"
-"pude","pillow","household","pude","word","understands; produces",,,"item_166"
-"tæppe","carpet","household","taeppe","word","understands; produces",,,"item_167"
-"kasse","box","household","kasse","word","understands; produces",,,"item_168"
-"pung","purse","household","pung","word","understands; produces",,,"item_169"
-"ur","watch (object)","household","ur","word","understands; produces",,,"item_170"
-"klokke","clock","household","klokke","word","understands; produces",,,"item_171"
-"radio","radio","household","radio","word","understands; produces",,,"item_172"
-"badekar","bathtub","furniture_rooms","badekar","word","understands; produces",,,"item_173"
-"kravlegård","play pen","furniture_rooms","kravlegard","word","understands; produces",,,"item_174"
-"soveværelse","bedroom","furniture_rooms","sovevaerelse","word","understands; produces",,,"item_175"
-"badeværelse","bathroom","furniture_rooms","badevaerelse","word","understands; produces",,,"item_176"
-"køkken","kitchen","furniture_rooms","kokken","word","understands; produces",,,"item_177"
-"stol","chair","furniture_rooms","stol","word","understands; produces",,,"item_178"
-"bord","table","furniture_rooms","bord","word","understands; produces",,,"item_179"
-"køleskab","refrigerator","furniture_rooms","koleskab","word","understands; produces",,,"item_180"
-"stue","living room","furniture_rooms","stue","word","understands; produces",,,"item_181"
-"dør","door","furniture_rooms","dor","word","understands; produces",,,"item_182"
-"ovn","oven","furniture_rooms","ovn","word","understands; produces",,,"item_183"
-"trapper","stairs","furniture_rooms","trapper","word","understands; produces",,,"item_184"
-"garage","garage","furniture_rooms","garage","word","understands; produces",,,"item_185"
-"potte","potty","furniture_rooms","potte","word","understands; produces",,,"item_186"
-"tv/fjernsyn","tv","furniture_rooms","tv/fjernsyn","word","understands; produces",,,"item_187"
-"gyngestol","rocking chair","furniture_rooms","gyngestol","word","understands; produces",,,"item_188"
-"seng","bed","furniture_rooms","seng","word","understands; produces",,,"item_189"
-"vask","sink","furniture_rooms","vask","word","understands; produces",,,"item_190"
-"høj stol","high chair","furniture_rooms","hoj_stol","word","understands; produces",,,"item_191"
-"skuffe","drawer","furniture_rooms","skuffe","word","understands; produces",,,"item_192"
-"vindue","window","furniture_rooms","vindue","word","understands; produces",,,"item_193"
-"komfur","stove","furniture_rooms","komfur","word","understands; produces",,,"item_194"
-"sofa","couch","furniture_rooms","sofa","word","understands; produces",,,"item_195"
-"vugge","crib","furniture_rooms","vugge","word","understands; produces",,,"item_196"
-"blomst","flower","outside","blomst","word","understands; produces",,,"item_197"
-"regn","rain","outside","regn","word","understands; produces",,,"item_198"
-"sten","rock (object)","outside","sten","word","understands; produces",,,"item_199"
-"gynge (object)","swing (object)","outside","gynge","word","understands; produces",,,"item_200"
-"skovl","shovel","outside","skovl","word","understands; produces",,,"item_201"
-"stjerne","star","outside","stjerne","word","understands; produces",,,"item_202"
-"himmel","sky","outside","himmel","word","understands; produces",,,"item_203"
-"slæde","sled","outside","slaede","word","understands; produces",,,"item_204"
-"træ","tree","outside","trae","word","understands; produces",,,"item_205"
-"kælk","sled","outside","kaelk","word","understands; produces",,,"item_206"
-"sne","snow","outside","sne","word","understands; produces",,,"item_207"
-"vand (not beverage)","water (not beverage)","outside","vand","word","understands; produces",,,"item_208"
-"måne","moon","outside","mane","word","understands; produces",,,"item_209"
-"sol","sun","outside","sol","word","understands; produces",,,"item_210"
-"arbejde","work (place)","places","arbejde","word","understands; produces",,,"item_211"
-"hjem","home","places","hjem","word","understands; produces",,,"item_212"
-"stranden","beach","places","stranden","word","understands; produces",,,"item_213"
-"butik","store","places","butik","word","understands; produces",,,"item_214"
-"hus","house","places","hus","word","understands; produces",,,"item_215"
-"svømmehal","pool","places","svommehal","word","understands; produces",,,"item_216"
-"fest","party","places","fest","word","understands; produces",,,"item_217"
-"kirke","church","places","kirke","word","understands; produces",,,"item_218"
-"udenfor","outside","places","udenfor","word","understands; produces",,,"item_219"
-"forretning","business","places","forretning","word","understands; produces",,,"item_220"
-"park","park","places","park","word","understands; produces",,,"item_221"
-"zoologisk have","zoo","places","zoologisk_have","word","understands; produces",,,"item_222"
-"have","garden","places","have","word","understands; produces",,,"item_223"
-"skole","school","places","skole","word","understands; produces",,,"item_224"
-"baby","baby","people","baby","word","understands; produces",,,"item_225"
-"far","daddy","people","far","word","understands; produces",,,"item_226"
-"morfar","grandpa","people","morfar","word","understands; produces",,,"item_227"
-"babysitters navn","babysitter’s name","people","babysitters_navn","word","understands; produces",,,"item_228"
-"farbror","uncle","people","farbror","word","understands; produces",,,"item_229"
-"mormor","grandma","people","mormor","word","understands; produces",,,"item_230"
-"barn","child","people","barn","word","understands; produces",,,"item_231"
-"farfar","grandpa","people","farfar","word","understands; produces",,,"item_232"
-"moster","aunt","people","moster","word","understands; produces",,,"item_233"
-"barnets eget navn","child’s own name","people","barnets_eget_navn","word","understands; produces",,,"item_234"
-"farmor","grandma","people","farmor","word","understands; produces",,,"item_235"
-"oldefar","great grandpa","people","oldefar","word","understands; produces",,,"item_236"
-"bedstefar","grandpa","people","bedstefar","word","understands; produces",,,"item_237"
-"faster","aunt","people","faster","word","understands; produces",,,"item_238"
-"olde(mor)","great grandpa","people","olde(mor)","word","understands; produces",,,"item_239"
-"bedste(mor)","grandma","people","bedste(mor)","word","understands; produces",,,"item_240"
-"lærer","teacher","people","laerer","word","understands; produces",,,"item_241"
-"onkel","uncle","people","onkel","word","understands; produces",,,"item_242"
-"bror","brother","people","bror","word","understands; produces",,,"item_243"
-"mand","man","people","mand","word","understands; produces",,,"item_244"
-"person","person","people","person","word","understands; produces",,,"item_245"
-"dagplejemors navn","babysitter’s name","people","dagplejemors_navn","word","understands; produces",,,"item_246"
-"menneske","people","people","menneske","word","understands; produces",,,"item_247"
-"pige","girl","people","pige","word","understands; produces",,,"item_248"
-"dame","lady","people","dame","word","understands; produces",,,"item_249"
-"mor","mommy","people","mor","word","understands; produces",,,"item_250"
-"søster","sister","people","soster","word","understands; produces",,,"item_251"
-"dreng","boy","people","dreng","word","understands; produces",,,"item_252"
-"morbror","uncle","people","morbror","word","understands; produces",,,"item_253"
-"tante","aunt","people","tante","word","understands; produces",,,"item_254"
-"aftensmad","dinner","games_routines","aftensmad","word","understands; produces",,,"item_255"
-"hej hej (farvel)","bye","games_routines","hej_hej_(farvel)","word","understands; produces",,,"item_256"
-"shh","shh","games_routines","shh","word","understands; produces",,,"item_257"
-"bade","bath","games_routines","bade","word","understands; produces",,,"item_258"
-"ja","yes","games_routines","ja","word","understands; produces",,,"item_259"
-"sove til middag","good night","games_routines","sove_til_middag","word","understands; produces",,,"item_260"
-"borte tit/titte bøh","peekaboo","games_routines","borte_tit/titte_boh","word","understands; produces",,,"item_261"
-"klappe kage","pattycake","games_routines","klappe_kage","word","understands; produces",,,"item_262"
-"tak","thank you","games_routines","tak","word","understands; produces",,,"item_263"
-"frokost","lunch","games_routines","frokost","word","understands; produces",,,"item_264"
-"morgenmad","breakfast","games_routines","morgenmad","word","understands; produces",,,"item_265"
-"vent","wait","games_routines","vent","word","understands; produces",,,"item_266"
-"hej","hi","games_routines","hej","word","understands; produces",,,"item_267"
-"nej","no","games_routines","nej","word","understands; produces",,,"item_268"
-"vil","wanna","games_routines","vil","word","understands; produces",,,"item_269"
-"bide","bite","action_words","bide","word","understands; produces",,,"item_270"
-"køre","drive","action_words","kore","word","understands; produces",,,"item_271"
-"slå","hit","action_words","sla","word","understands; produces",,,"item_272"
-"danse","dance","action_words","danse","word","understands; produces",,,"item_273"
-"lukke","close","action_words","lukke","word","understands; produces",,,"item_274"
-"smide","throw","action_words","smide","word","understands; produces",,,"item_275"
-"drikke","drink (action)","action_words","drikke","word","understands; produces",,,"item_276"
-"læse","read","action_words","laese","word","understands; produces",,,"item_277"
-"sove","sleep","action_words","sove","word","understands; produces",,,"item_278"
-"elske","love","action_words","elske","word","understands; produces",,,"item_279"
-"løbe","run","action_words","lobe","word","understands; produces",,,"item_280"
-"sparke","kick","action_words","sparke","word","understands; produces",,,"item_281"
-"falde","fall","action_words","falde","word","understands; produces",,,"item_282"
-"made","feed","action_words","made","word","understands; produces",,,"item_283"
-"spise","eat","action_words","spise","word","understands; produces",,,"item_284"
-"få","get","action_words","fa","word","understands; produces",,,"item_285"
-"plaske","splash","action_words","plaske","word","understands; produces",,,"item_286"
-"standse","stop","action_words","standse","word","understands; produces",,,"item_287"
-"give","give","action_words","give","word","understands; produces",,,"item_288"
-"puste","blow","action_words","puste","word","understands; produces",,,"item_289"
-"svømme","swim","action_words","svomme","word","understands; produces",,,"item_290"
-"græde","cry","action_words","graede","word","understands; produces",,,"item_291"
-"putte","put","action_words","putte","word","understands; produces",,,"item_292"
-"synge","sing","action_words","synge","word","understands; produces",,,"item_293"
-"gynge (action)","swing (action)","action_words","gynge","word","understands; produces",,,"item_294"
-"ride","ride","action_words","ride","word","understands; produces",,,"item_295"
-"sætte","put","action_words","saette","word","understands; produces",,,"item_296"
-"gå","walk","action_words","ga","word","understands; produces",,,"item_297"
-"rydde op","clean (action)","action_words","rydde_op","word","understands; produces",,,"item_298"
-"tage","take","action_words","tage","word","understands; produces",,,"item_299"
-"hjælpe","help","action_words","hjaelpe","word","understands; produces",,,"item_300"
-"røre","touch","action_words","rore","word","understands; produces",,,"item_301"
-"tegne","draw","action_words","tegne","word","understands; produces",,,"item_302"
-"holde øje med","watch (action)","action_words","holde_oje_med","word","understands; produces",,,"item_303"
-"se","see","action_words","se","word","understands; produces",,,"item_304"
-"trække","pull","action_words","traekke","word","understands; produces",,,"item_305"
-"hoppe","jump","action_words","hoppe","word","understands; produces",,,"item_306"
-"sige","say","action_words","sige","word","understands; produces",,,"item_307"
-"tørre af","wipe","action_words","torre_af","word","understands; produces",,,"item_308"
-"kigge","look","action_words","kigge","word","understands; produces",,,"item_309"
-"skrive","write","action_words","skrive","word","understands; produces",,,"item_310"
-"vaske","wash","action_words","vaske","word","understands; produces",,,"item_311"
-"kilde","tickle","action_words","kilde","word","understands; produces",,,"item_312"
-"skubbe","push","action_words","skubbe","word","understands; produces",,,"item_313"
-"vise","show","action_words","vise","word","understands; produces",,,"item_314"
-"kramme","hug","action_words","kramme","word","understands; produces",,,"item_315"
-"skynde sig","hurry","action_words","skynde_sig","word","understands; produces",,,"item_316"
-"ødelægge","break","action_words","odelaegge","word","understands; produces",,,"item_317"
-"kysse","kiss","action_words","kysse","word","understands; produces",,,"item_318"
-"slutte","finish","action_words","slutte","word","understands; produces",,,"item_319"
-"åbne","open (action)","action_words","abne","word","understands; produces",,,"item_320"
-"lege","play","action_words","lege","word","understands; produces",,,"item_321"
-"bange","scared","descriptive_words","bange","word","understands; produces",,,"item_322"
-"i stykker","broken","descriptive_words","i_stykker","word","understands; produces",,,"item_323"
-"sulten","hungry","descriptive_words","sulten","word","understands; produces",,,"item_324"
-"beskidt","dirty","descriptive_words","beskidt","word","understands; produces",,,"item_325"
-"kold","cold","descriptive_words","kold","word","understands; produces",,,"item_326"
-"syg","sick","descriptive_words","syg","word","understands; produces",,,"item_327"
-"blød","soft","descriptive_words","blod","word","understands; produces",,,"item_328"
-"køn","pretty","descriptive_words","kon","word","understands; produces",,,"item_329"
-"sød","cute","descriptive_words","sod","word","understands; produces",,,"item_330"
-"blå","blue","descriptive_words","bla","word","understands; produces",,,"item_331"
-"lille","little (description)","descriptive_words","lille","word","understands; produces",,,"item_332"
-"søvnig","sleepy","descriptive_words","sovnig","word","understands; produces",,,"item_333"
-"fin","fine","descriptive_words","fin","word","understands; produces",,,"item_334"
-"mørk","dark","descriptive_words","mork","word","understands; produces",,,"item_335"
-"tom","empty","descriptive_words","tom","word","understands; produces",,,"item_336"
-"forsigtig","careful","descriptive_words","forsigtig","word","understands; produces",,,"item_337"
-"(gør) ondt","hurt (description)","descriptive_words","(gor)_ondt","word","understands; produces",,,"item_338"
-"træt","tired","descriptive_words","traet","word","understands; produces",,,"item_339"
-"fræk","bad","descriptive_words","fraek","word","understands; produces",,,"item_340"
-"pæn","nice","descriptive_words","paen","word","understands; produces",,,"item_341"
-"tør","dry (description)","descriptive_words","tor","word","understands; produces",,,"item_342"
-"gammel","old","descriptive_words","gammel","word","understands; produces",,,"item_343"
-"rar","gentle","descriptive_words","rar","word","understands; produces",,,"item_344"
-"tørstig","thirsty","descriptive_words","torstig","word","understands; produces",,,"item_345"
-"glad","happy","descriptive_words","glad","word","understands; produces",,,"item_346"
-"ren","clean (description)","descriptive_words","ren","word","understands; produces",,,"item_347"
-"ulækker","yucky","descriptive_words","ulaekker","word","understands; produces",,,"item_348"
-"god","good","descriptive_words","god","word","understands; produces",,,"item_349"
-"rød","red","descriptive_words","rod","word","understands; produces",,,"item_350"
-"varm","hot","descriptive_words","varm","word","understands; produces",,,"item_351"
-"hurtig","fast","descriptive_words","hurtig","word","understands; produces",,,"item_352"
-"slem","naughty","descriptive_words","slem","word","understands; produces",,,"item_353"
-"væk (description)","all gone","descriptive_words","vaek","word","understands; produces",,,"item_354"
-"hård","hard","descriptive_words","hard","word","understands; produces",,,"item_355"
-"stor","big","descriptive_words","stor","word","understands; produces",,,"item_356"
-"våd","wet (description)","descriptive_words","vad","word","understands; produces",,,"item_357"
-"dag","day","time_words","dag","word","understands; produces",,,"item_358"
-"i morgen","tomorrow","time_words","i_morgen","word","understands; produces",,,"item_359"
-"nu","now","time_words","nu","word","understands; produces",,,"item_360"
-"i aften","tonight","time_words","i_aften","word","understands; produces",,,"item_361"
-"morgen","morning","time_words","morgen","word","understands; produces",,,"item_362"
-"senere","later","time_words","senere","word","understands; produces",,,"item_363"
-"i dag","today","time_words","i_dag","word","understands; produces",,,"item_364"
-"nat","night","time_words","nat","word","understands; produces",,,"item_365"
-"den","it","pronouns","den","word","understands; produces",,,"item_366"
-"din/dit/dine","your","pronouns","din/dit/dine","word","understands; produces",,,"item_367"
-"jeg","i","pronouns","jeg","word","understands; produces",,,"item_368"
-"denne/den her","this","pronouns","denne/den_her","word","understands; produces",,,"item_369"
-"du","you","pronouns","du","word","understands; produces",,,"item_370"
-"mig","me","pronouns","mig","word","understands; produces",,,"item_371"
-"det (determiner)","that","pronouns","det","word","understands; produces",,,"item_372"
-"hans","his","pronouns","hans","word","understands; produces",,,"item_373"
-"min/mit/mine","mine","pronouns","min/mit/mine","word","understands; produces",,,"item_374"
-"dette/det her","this","pronouns","dette/det_her","word","understands; produces",,,"item_375"
-"hendes","her","pronouns","hendes","word","understands; produces",,,"item_376"
-"hvad","what","question_words","hvad","word","understands; produces",,,"item_377"
-"hvor","where (question)","question_words","hvor","word","understands; produces",,,"item_378"
-"hvorfor","why","question_words","hvorfor","word","understands; produces",,,"item_379"
-"hvem","who","question_words","hvem","word","understands; produces",,,"item_380"
-"hvordan","how","question_words","hvordan","word","understands; produces",,,"item_381"
-"hvornår","when (question)","question_words","hvornar","word","understands; produces",,,"item_382"
-"af","off","locations","af","word","understands; produces",,,"item_383"
-"inden i","inside","locations","inden_i","word","understands; produces",,,"item_384"
-"ud","out","locations","ud","word","understands; produces",,,"item_385"
-"bagved","back (location)","locations","bagved","word","understands; produces",,,"item_386"
-"ned","down","locations","ned","word","understands; produces",,,"item_387"
-"ude","out of","locations","ude","word","understands; produces",,,"item_388"
-"der","there","locations","der","word","understands; produces",,,"item_389"
-"nede","down","locations","nede","word","understands; produces",,,"item_390"
-"under","under","locations","under","word","understands; produces",,,"item_391"
-"i","in","locations","i","word","understands; produces",,,"item_392"
-"op","up","locations","op","word","understands; produces",,,"item_393"
-"væk (location)","away","locations","vaek","word","understands; produces",,,"item_394"
-"ind","in","locations","ind","word","understands; produces",,,"item_395"
-"oppe","up","locations","oppe","word","understands; produces",,,"item_396"
-"inde","in","locations","inde","word","understands; produces",,,"item_397"
-"på","on","locations","pa","word","understands; produces",,,"item_398"
-"alle","all","quantifiers","alle","word","understands; produces",,,"item_399"
-"ingen","none","quantifiers","ingen","word","understands; produces",,,"item_400"
-"noget","some","quantifiers","noget","word","understands; produces",,,"item_401"
-"(en) anden","another","quantifiers","(en)_anden","word","understands; produces",,,"item_402"
-"intet","nothing","quantifiers","intet","word","understands; produces",,,"item_403"
-"samme","same","quantifiers","samme","word","understands; produces",,,"item_404"
-"(et) andet","another","quantifiers","(et)_andet","word","understands; produces",,,"item_405"
-"mere","more","quantifiers","mere","word","understands; produces",,,"item_406"
-"ikke","not","quantifiers","ikke","word","understands; produces",,,"item_407"
-"nogen/nogle","some","quantifiers","nogen/nogle","word","understands; produces",,,"item_408"
-"æske","box","household","aeske","word","understands; produces",,,"item_409"
-"smile","smile","action_words","smile","word","understands; produces",,,"item_410"
+definition,uni_lemma,category,item,type,choices,gloss,complexity_category,itemID
+av,ouch,sounds,av,word,understands; produces,,,item_1
+mjav,meow,sounds,mjav,word,understands; produces,,,item_2
+rap,quack quack,sounds,rap,word,understands; produces,,,item_3
+fut,choo choo,sounds,fut,word,understands; produces,,,item_4
+muh,moo,sounds,muh,word,understands; produces,,,item_5
+vov,woof woof,sounds,vov,word,understands; produces,,,item_6
+grrrr,grrr,sounds,grrrr,word,understands; produces,,,item_7
+mæh,baa baa,sounds,maeh,word,understands; produces,,,item_8
+årnnn (bil-lyd),vroom,sounds,arnnn_(bil-lyd),word,understands; produces,,,item_9
+kykliky,cockadoodledoo,sounds,kykliky,word,understands; produces,,,item_10
+mm mm (lækkert),yum yum,sounds,mm_mm_(laekkert),word,understands; produces,,,item_11
+abe,monkey,animals,abe,word,understands; produces,,,item_12
+får,sheep,animals,far,word,understands; produces,,,item_13
+ko,cow,animals,ko,word,understands; produces,,,item_14
+and,duck,animals,and,word,understands; produces,,,item_15
+giraf,giraffe,animals,giraf,word,understands; produces,,,item_16
+kylling (animal),chicken (animal),animals,kylling,word,understands; produces,,,item_17
+bamse,teddybear,animals,bamse,word,understands; produces,,,item_18
+gris,pig,animals,gris,word,understands; produces,,,item_19
+lam,lamb,animals,lam,word,understands; produces,,,item_20
+bi,bee,animals,bi,word,understands; produces,,,item_21
+gås,goose,animals,gas,word,understands; produces,,,item_22
+løve,lion,animals,love,word,understands; produces,,,item_23
+bjørn,bear,animals,bjorn,word,understands; produces,,,item_24
+hest,horse,animals,hest,word,understands; produces,,,item_25
+mus,mouse,animals,mus,word,understands; produces,,,item_26
+dyr,animal,animals,dyr,word,understands; produces,,,item_27
+hjort,deer,animals,hjort,word,understands; produces,,,item_28
+pingvin,penguin,animals,pingvin,word,understands; produces,,,item_29
+egern,squirrel,animals,egern,word,understands; produces,,,item_30
+hvalp,puppy,animals,hvalp,word,understands; produces,,,item_31
+pony,pony,animals,pony,word,understands; produces,,,item_32
+elefant,elephant,animals,elefant,word,understands; produces,,,item_33
+hund,dog,animals,hund,word,understands; produces,,,item_34
+skildpadde,turtle,animals,skildpadde,word,understands; produces,,,item_35
+fisk (animal),fish (animal),animals,fisk,word,understands; produces,,,item_36
+kalkun,turkey,animals,kalkun,word,understands; produces,,,item_37
+sommerfugl,butterfly,animals,sommerfugl,word,understands; produces,,,item_38
+flue,fly,animals,flue,word,understands; produces,,,item_39
+kanin,bunny,animals,kanin,word,understands; produces,,,item_40
+tiger,tiger,animals,tiger,word,understands; produces,,,item_41
+frø,frog,animals,fro,word,understands; produces,,,item_42
+kat,cat,animals,kat,word,understands; produces,,,item_43
+ugle,owl,animals,ugle,word,understands; produces,,,item_44
+fugl,bird,animals,fugl,word,understands; produces,,,item_45
+killing,kitty,animals,killing,word,understands; produces,,,item_46
+æsel,donkey,animals,aesel,word,understands; produces,,,item_47
+barnevogn,stroller,vehicles,barnevogn,word,understands; produces,,,item_48
+cykel,bicycle,vehicles,cykel,word,understands; produces,,,item_49
+motorcykel,motorcycle,vehicles,motorcykel,word,understands; produces,,,item_50
+bil,car,vehicles,bil,word,understands; produces,,,item_51
+flyvemaskine,airplane,vehicles,flyvemaskine,word,understands; produces,,,item_52
+tog,train,vehicles,tog,word,understands; produces,,,item_53
+brandbil,firetruck,vehicles,brandbil,word,understands; produces,,,item_54
+klapvogn,stroller,vehicles,klapvogn,word,understands; produces,,,item_55
+bus,bus,vehicles,bus,word,understands; produces,,,item_56
+lastbil,truck,vehicles,lastbil,word,understands; produces,,,item_57
+ballon,balloon,toys,ballon,word,understands; produces,,,item_58
+bold,ball,toys,bold,word,understands; produces,,,item_59
+legetøj,toy (object),toys,legetoj,word,understands; produces,,,item_60
+blyant,pen/pencil,toys,blyant,word,understands; produces,,,item_61
+dukke,doll,toys,dukke,word,understands; produces,,,item_62
+sæbebobler,bubbles,toys,saebebobler,word,understands; produces,,,item_63
+bog,book,toys,bog,word,understands; produces,,,item_64
+klods,block,toys,klods,word,understands; produces,,,item_65
+appelsin,orange (food),food_drink,appelsin,word,understands; produces,,,item_66
+kaffe,coffee,food_drink,kaffe,word,understands; produces,,,item_67
+rosiner,raisin,food_drink,rosiner,word,understands; produces,,,item_68
+banan,banana,food_drink,banan,word,understands; produces,,,item_69
+kage(r),cake,food_drink,kage(r),word,understands; produces,,,item_70
+slik,candy,food_drink,slik,word,understands; produces,,,item_71
+boller,bun,food_drink,boller,word,understands; produces,,,item_72
+kiks,cracker,food_drink,kiks,word,understands; produces,,,item_73
+smør,butter,food_drink,smor,word,understands; produces,,,item_74
+brød,bread,food_drink,brod,word,understands; produces,,,item_75
+kylling (food),chicken (food),food_drink,kylling,word,understands; produces,,,item_76
+spaghetti,pasta,food_drink,spaghetti,word,understands; produces,,,item_77
+cornflakes,cheerios,food_drink,cornflakes,word,understands; produces,,,item_78
+kød,meat,food_drink,kod,word,understands; produces,,,item_79
+vand (beverage),water (beverage),food_drink,vand,word,understands; produces,,,item_80
+fisk (food),fish (food),food_drink,fisk,word,understands; produces,,,item_81
+mad,food,food_drink,mad,word,understands; produces,,,item_82
+æble,apple,food_drink,aeble,word,understands; produces,,,item_83
+gulerødder,carrots,food_drink,gulerodder,word,understands; produces,,,item_84
+mælk,milk,food_drink,maelk,word,understands; produces,,,item_85
+æg,egg,food_drink,aeg,word,understands; produces,,,item_86
+havregryn,cereal,food_drink,havregryn,word,understands; produces,,,item_87
+ost,cheese,food_drink,ost,word,understands; produces,,,item_88
+ærter,peas,food_drink,aerter,word,understands; produces,,,item_89
+is,ice cream,food_drink,is,word,understands; produces,,,item_90
+pasta,pasta,food_drink,pasta,word,understands; produces,,,item_91
+juice,juice,food_drink,juice,word,understands; produces,,,item_92
+pizza,pizza,food_drink,pizza,word,understands; produces,,,item_93
+ble,diaper,clothing,ble,word,understands; produces,,,item_94
+jakke,jacket,clothing,jakke,word,understands; produces,,,item_95
+sko,shoe,clothing,sko,word,understands; produces,,,item_96
+bluse,shirt,clothing,bluse,word,understands; produces,,,item_97
+kjole,dress (object),clothing,kjole,word,understands; produces,,,item_98
+sokker,sock,clothing,sokker,word,understands; produces,,,item_99
+t-shirt,t-shirt,clothing,t-shirt,word,understands; produces,,,item_100
+knap,button,clothing,knap,word,understands; produces,,,item_101
+strømper,sock,clothing,stromper,word,understands; produces,,,item_102
+bukser,pants,clothing,bukser,word,understands; produces,,,item_103
+lynlås,zipper,clothing,lynlas,word,understands; produces,,,item_104
+støvler,boots,clothing,stovler,word,understands; produces,,,item_105
+frakke,coat,clothing,frakke,word,understands; produces,,,item_106
+nattøj,pajamas,clothing,nattoj,word,understands; produces,,,item_107
+sut,pacifier,clothing,sut,word,understands; produces,,,item_108
+hagesmæk,bib,clothing,hagesmaek,word,understands; produces,,,item_109
+halskæde,necklace,clothing,halskaede,word,understands; produces,,,item_110
+sweater,sweater,clothing,sweater,word,understands; produces,,,item_111
+hue,hat,clothing,hue,word,understands; produces,,,item_112
+shorts,shorts,clothing,shorts,word,understands; produces,,,item_113
+trøje,sweater,clothing,troje,word,understands; produces,,,item_114
+ansigt,face,body_parts,ansigt,word,understands; produces,,,item_115
+kind,cheek,body_parts,kind,word,understands; produces,,,item_116
+tissemand,penis,body_parts,tissemand,word,understands; produces,,,item_117
+arm,arm,body_parts,arm,word,understands; produces,,,item_118
+knæ,knee,body_parts,knae,word,understands; produces,,,item_119
+tunge,tongue,body_parts,tunge,word,understands; produces,,,item_120
+ben,leg,body_parts,ben,word,understands; produces,,,item_121
+mund,mouth,body_parts,mund,word,understands; produces,,,item_122
+tænder,tooth,body_parts,taender,word,understands; produces,,,item_123
+finger,finger,body_parts,finger,word,understands; produces,,,item_124
+navle,belly button,body_parts,navle,word,understands; produces,,,item_125
+tå,toe,body_parts,ta,word,understands; produces,,,item_126
+hoved,head,body_parts,hoved,word,understands; produces,,,item_127
+næse,nose,body_parts,naese,word,understands; produces,,,item_128
+øje,eye,body_parts,oje,word,understands; produces,,,item_129
+hånd,hand,body_parts,hand,word,understands; produces,,,item_130
+sår,owie,body_parts,sar,word,understands; produces,,,item_131
+øre,ear,body_parts,ore,word,understands; produces,,,item_132
+hår,hair,body_parts,har,word,understands; produces,,,item_133
+tissekone,vagina,body_parts,tissekone,word,understands; produces,,,item_134
+affald,trash,household,affald,word,understands; produces,,,item_135
+kop,cup,household,kop,word,understands; produces,,,item_136
+saks,scissors,household,saks,word,understands; produces,,,item_137
+billede,picture,household,billede,word,understands; produces,,,item_138
+kost,broom,household,kost,word,understands; produces,,,item_139
+ske,spoon,household,ske,word,understands; produces,,,item_140
+briller,glasses,household,briller,word,understands; produces,,,item_141
+krus,cup,household,krus,word,understands; produces,,,item_142
+skrald,trash,household,skrald,word,understands; produces,,,item_143
+børste,brush (object),household,borste,word,understands; produces,,,item_144
+lampe,lamp,household,lampe,word,understands; produces,,,item_145
+skål,bowl,household,skal,word,understands; produces,,,item_146
+dyne,blanket,household,dyne,word,understands; produces,,,item_147
+lys,light,household,lys,word,understands; produces,,,item_148
+småpenge,penny,household,smapenge,word,understands; produces,,,item_149
+flaske,bottle,household,flaske,word,understands; produces,,,item_150
+medicin,medicine,household,medicin,word,understands; produces,,,item_151
+støvsuger,vacuum,household,stovsuger,word,understands; produces,,,item_152
+gaffel,fork,household,gaffel,word,understands; produces,,,item_153
+nøgler,keys,household,nogler,word,understands; produces,,,item_154
+sæbe,soap,household,saebe,word,understands; produces,,,item_155
+glas,glass,household,glas,word,understands; produces,,,item_156
+papir,paper,household,papir,word,understands; produces,,,item_157
+tallerken,plate,household,tallerken,word,understands; produces,,,item_158
+hammer,hammer,household,hammer,word,understands; produces,,,item_159
+penge,money,household,penge,word,understands; produces,,,item_160
+tandbørste,toothbrush,household,tandborste,word,understands; produces,,,item_161
+håndklæde,towel,household,handklaede,word,understands; produces,,,item_162
+plante,plant,household,plante,word,understands; produces,,,item_163
+telefon,telephone,household,telefon,word,understands; produces,,,item_164
+kam,comb (object),household,kam,word,understands; produces,,,item_165
+pude,pillow,household,pude,word,understands; produces,,,item_166
+tæppe,carpet,household,taeppe,word,understands; produces,,,item_167
+kasse,box,household,kasse,word,understands; produces,,,item_168
+pung,purse,household,pung,word,understands; produces,,,item_169
+ur,watch (object),household,ur,word,understands; produces,,,item_170
+klokke,clock,household,klokke,word,understands; produces,,,item_171
+radio,radio,household,radio,word,understands; produces,,,item_172
+badekar,bathtub,furniture_rooms,badekar,word,understands; produces,,,item_173
+kravlegård,play pen,furniture_rooms,kravlegard,word,understands; produces,,,item_174
+soveværelse,bedroom,furniture_rooms,sovevaerelse,word,understands; produces,,,item_175
+badeværelse,bathroom,furniture_rooms,badevaerelse,word,understands; produces,,,item_176
+køkken,kitchen,furniture_rooms,kokken,word,understands; produces,,,item_177
+stol,chair,furniture_rooms,stol,word,understands; produces,,,item_178
+bord,table,furniture_rooms,bord,word,understands; produces,,,item_179
+køleskab,refrigerator,furniture_rooms,koleskab,word,understands; produces,,,item_180
+stue,living room,furniture_rooms,stue,word,understands; produces,,,item_181
+dør,door,furniture_rooms,dor,word,understands; produces,,,item_182
+ovn,oven,furniture_rooms,ovn,word,understands; produces,,,item_183
+trapper,stairs,furniture_rooms,trapper,word,understands; produces,,,item_184
+garage,garage,furniture_rooms,garage,word,understands; produces,,,item_185
+potte,potty,furniture_rooms,potte,word,understands; produces,,,item_186
+tv/fjernsyn,tv,furniture_rooms,tv/fjernsyn,word,understands; produces,,,item_187
+gyngestol,rocking chair,furniture_rooms,gyngestol,word,understands; produces,,,item_188
+seng,bed,furniture_rooms,seng,word,understands; produces,,,item_189
+vask,sink,furniture_rooms,vask,word,understands; produces,,,item_190
+høj stol,high chair,furniture_rooms,hoj_stol,word,understands; produces,,,item_191
+skuffe,drawer,furniture_rooms,skuffe,word,understands; produces,,,item_192
+vindue,window,furniture_rooms,vindue,word,understands; produces,,,item_193
+komfur,stove,furniture_rooms,komfur,word,understands; produces,,,item_194
+sofa,couch,furniture_rooms,sofa,word,understands; produces,,,item_195
+vugge,crib,furniture_rooms,vugge,word,understands; produces,,,item_196
+blomst,flower,outside,blomst,word,understands; produces,,,item_197
+regn,rain,outside,regn,word,understands; produces,,,item_198
+sten,rock (object),outside,sten,word,understands; produces,,,item_199
+gynge (object),swing (object),outside,gynge,word,understands; produces,,,item_200
+skovl,shovel,outside,skovl,word,understands; produces,,,item_201
+stjerne,star,outside,stjerne,word,understands; produces,,,item_202
+himmel,sky,outside,himmel,word,understands; produces,,,item_203
+slæde,sled,outside,slaede,word,understands; produces,,,item_204
+træ,tree,outside,trae,word,understands; produces,,,item_205
+kælk,sled,outside,kaelk,word,understands; produces,,,item_206
+sne,snow,outside,sne,word,understands; produces,,,item_207
+vand (not beverage),water (not beverage),outside,vand,word,understands; produces,,,item_208
+måne,moon,outside,mane,word,understands; produces,,,item_209
+sol,sun,outside,sol,word,understands; produces,,,item_210
+arbejde,work (place),places,arbejde,word,understands; produces,,,item_211
+hjem,home,places,hjem,word,understands; produces,,,item_212
+stranden,beach,places,stranden,word,understands; produces,,,item_213
+butik,store,places,butik,word,understands; produces,,,item_214
+hus,house,places,hus,word,understands; produces,,,item_215
+svømmehal,pool,places,svommehal,word,understands; produces,,,item_216
+fest,party,places,fest,word,understands; produces,,,item_217
+kirke,church,places,kirke,word,understands; produces,,,item_218
+udenfor,outside,places,udenfor,word,understands; produces,,,item_219
+forretning,business,places,forretning,word,understands; produces,,,item_220
+park,park,places,park,word,understands; produces,,,item_221
+zoologisk have,zoo,places,zoologisk_have,word,understands; produces,,,item_222
+have,garden,places,have,word,understands; produces,,,item_223
+skole,school,places,skole,word,understands; produces,,,item_224
+baby,baby,people,baby,word,understands; produces,,,item_225
+far,daddy,people,far,word,understands; produces,,,item_226
+morfar,grandpa,people,morfar,word,understands; produces,,,item_227
+babysitters navn,babysitter’s name,people,babysitters_navn,word,understands; produces,,,item_228
+farbror,uncle,people,farbror,word,understands; produces,,,item_229
+mormor,grandma,people,mormor,word,understands; produces,,,item_230
+barn,child,people,barn,word,understands; produces,,,item_231
+farfar,grandpa,people,farfar,word,understands; produces,,,item_232
+moster,aunt,people,moster,word,understands; produces,,,item_233
+barnets eget navn,child’s own name,people,barnets_eget_navn,word,understands; produces,,,item_234
+farmor,grandma,people,farmor,word,understands; produces,,,item_235
+oldefar,great grandpa,people,oldefar,word,understands; produces,,,item_236
+bedstefar,grandpa,people,bedstefar,word,understands; produces,,,item_237
+faster,aunt,people,faster,word,understands; produces,,,item_238
+olde(mor),great grandma,people,olde(mor),word,understands; produces,,,item_239
+bedste(mor),grandma,people,bedste(mor),word,understands; produces,,,item_240
+lærer,teacher,people,laerer,word,understands; produces,,,item_241
+onkel,uncle,people,onkel,word,understands; produces,,,item_242
+bror,brother,people,bror,word,understands; produces,,,item_243
+mand,man,people,mand,word,understands; produces,,,item_244
+person,person,people,person,word,understands; produces,,,item_245
+dagplejemors navn,babysitter’s name,people,dagplejemors_navn,word,understands; produces,,,item_246
+menneske,people,people,menneske,word,understands; produces,,,item_247
+pige,girl,people,pige,word,understands; produces,,,item_248
+dame,lady,people,dame,word,understands; produces,,,item_249
+mor,mommy,people,mor,word,understands; produces,,,item_250
+søster,sister,people,soster,word,understands; produces,,,item_251
+dreng,boy,people,dreng,word,understands; produces,,,item_252
+morbror,uncle,people,morbror,word,understands; produces,,,item_253
+tante,aunt,people,tante,word,understands; produces,,,item_254
+aftensmad,dinner,games_routines,aftensmad,word,understands; produces,,,item_255
+hej hej (farvel),bye,games_routines,hej_hej_(farvel),word,understands; produces,,,item_256
+shh,shh,games_routines,shh,word,understands; produces,,,item_257
+bade,bath,games_routines,bade,word,understands; produces,,,item_258
+ja,yes,games_routines,ja,word,understands; produces,,,item_259
+sove til middag,nap,games_routines,sove_til_middag,word,understands; produces,,,item_260
+borte tit/titte bøh,peekaboo,games_routines,borte_tit/titte_boh,word,understands; produces,,,item_261
+klappe kage,pattycake,games_routines,klappe_kage,word,understands; produces,,,item_262
+tak,thank you,games_routines,tak,word,understands; produces,,,item_263
+frokost,lunch,games_routines,frokost,word,understands; produces,,,item_264
+morgenmad,breakfast,games_routines,morgenmad,word,understands; produces,,,item_265
+vent,wait,games_routines,vent,word,understands; produces,,,item_266
+hej,hi,games_routines,hej,word,understands; produces,,,item_267
+nej,no,games_routines,nej,word,understands; produces,,,item_268
+vil,wanna,games_routines,vil,word,understands; produces,,,item_269
+bide,bite,action_words,bide,word,understands; produces,,,item_270
+køre,drive,action_words,kore,word,understands; produces,,,item_271
+slå,hit,action_words,sla,word,understands; produces,,,item_272
+danse,dance,action_words,danse,word,understands; produces,,,item_273
+lukke,close,action_words,lukke,word,understands; produces,,,item_274
+smide,throw,action_words,smide,word,understands; produces,,,item_275
+drikke,drink (action),action_words,drikke,word,understands; produces,,,item_276
+læse,read,action_words,laese,word,understands; produces,,,item_277
+sove,sleep,action_words,sove,word,understands; produces,,,item_278
+elske,love,action_words,elske,word,understands; produces,,,item_279
+løbe,run,action_words,lobe,word,understands; produces,,,item_280
+sparke,kick,action_words,sparke,word,understands; produces,,,item_281
+falde,fall,action_words,falde,word,understands; produces,,,item_282
+made,feed,action_words,made,word,understands; produces,,,item_283
+spise,eat,action_words,spise,word,understands; produces,,,item_284
+få,get,action_words,fa,word,understands; produces,,,item_285
+plaske,splash,action_words,plaske,word,understands; produces,,,item_286
+standse,stop,action_words,standse,word,understands; produces,,,item_287
+give,give,action_words,give,word,understands; produces,,,item_288
+puste,blow,action_words,puste,word,understands; produces,,,item_289
+svømme,swim,action_words,svomme,word,understands; produces,,,item_290
+græde,cry,action_words,graede,word,understands; produces,,,item_291
+putte,put,action_words,putte,word,understands; produces,,,item_292
+synge,sing,action_words,synge,word,understands; produces,,,item_293
+gynge (action),swing (action),action_words,gynge,word,understands; produces,,,item_294
+ride,ride,action_words,ride,word,understands; produces,,,item_295
+sætte,put,action_words,saette,word,understands; produces,,,item_296
+gå,walk,action_words,ga,word,understands; produces,,,item_297
+rydde op,clean (action),action_words,rydde_op,word,understands; produces,,,item_298
+tage,take,action_words,tage,word,understands; produces,,,item_299
+hjælpe,help,action_words,hjaelpe,word,understands; produces,,,item_300
+røre,touch,action_words,rore,word,understands; produces,,,item_301
+tegne,draw,action_words,tegne,word,understands; produces,,,item_302
+holde øje med,watch (action),action_words,holde_oje_med,word,understands; produces,,,item_303
+se,see,action_words,se,word,understands; produces,,,item_304
+trække,pull,action_words,traekke,word,understands; produces,,,item_305
+hoppe,jump,action_words,hoppe,word,understands; produces,,,item_306
+sige,say,action_words,sige,word,understands; produces,,,item_307
+tørre af,wipe,action_words,torre_af,word,understands; produces,,,item_308
+kigge,look,action_words,kigge,word,understands; produces,,,item_309
+skrive,write,action_words,skrive,word,understands; produces,,,item_310
+vaske,wash,action_words,vaske,word,understands; produces,,,item_311
+kilde,tickle,action_words,kilde,word,understands; produces,,,item_312
+skubbe,push,action_words,skubbe,word,understands; produces,,,item_313
+vise,show,action_words,vise,word,understands; produces,,,item_314
+kramme,hug,action_words,kramme,word,understands; produces,,,item_315
+skynde sig,hurry,action_words,skynde_sig,word,understands; produces,,,item_316
+ødelægge,break,action_words,odelaegge,word,understands; produces,,,item_317
+kysse,kiss,action_words,kysse,word,understands; produces,,,item_318
+slutte,finish,action_words,slutte,word,understands; produces,,,item_319
+åbne,open (action),action_words,abne,word,understands; produces,,,item_320
+lege,play,action_words,lege,word,understands; produces,,,item_321
+bange,scared,descriptive_words,bange,word,understands; produces,,,item_322
+i stykker,broken,descriptive_words,i_stykker,word,understands; produces,,,item_323
+sulten,hungry,descriptive_words,sulten,word,understands; produces,,,item_324
+beskidt,dirty,descriptive_words,beskidt,word,understands; produces,,,item_325
+kold,cold,descriptive_words,kold,word,understands; produces,,,item_326
+syg,sick,descriptive_words,syg,word,understands; produces,,,item_327
+blød,soft,descriptive_words,blod,word,understands; produces,,,item_328
+køn,pretty,descriptive_words,kon,word,understands; produces,,,item_329
+sød,cute,descriptive_words,sod,word,understands; produces,,,item_330
+blå,blue,descriptive_words,bla,word,understands; produces,,,item_331
+lille,little (description),descriptive_words,lille,word,understands; produces,,,item_332
+søvnig,sleepy,descriptive_words,sovnig,word,understands; produces,,,item_333
+fin,fine,descriptive_words,fin,word,understands; produces,,,item_334
+mørk,dark,descriptive_words,mork,word,understands; produces,,,item_335
+tom,empty,descriptive_words,tom,word,understands; produces,,,item_336
+forsigtig,careful,descriptive_words,forsigtig,word,understands; produces,,,item_337
+(gør) ondt,hurt (description),descriptive_words,(gor)_ondt,word,understands; produces,,,item_338
+træt,tired,descriptive_words,traet,word,understands; produces,,,item_339
+fræk,bad,descriptive_words,fraek,word,understands; produces,,,item_340
+pæn,nice,descriptive_words,paen,word,understands; produces,,,item_341
+tør,dry (description),descriptive_words,tor,word,understands; produces,,,item_342
+gammel,old,descriptive_words,gammel,word,understands; produces,,,item_343
+rar,gentle,descriptive_words,rar,word,understands; produces,,,item_344
+tørstig,thirsty,descriptive_words,torstig,word,understands; produces,,,item_345
+glad,happy,descriptive_words,glad,word,understands; produces,,,item_346
+ren,clean (description),descriptive_words,ren,word,understands; produces,,,item_347
+ulækker,yucky,descriptive_words,ulaekker,word,understands; produces,,,item_348
+god,good,descriptive_words,god,word,understands; produces,,,item_349
+rød,red,descriptive_words,rod,word,understands; produces,,,item_350
+varm,hot,descriptive_words,varm,word,understands; produces,,,item_351
+hurtig,fast,descriptive_words,hurtig,word,understands; produces,,,item_352
+slem,naughty,descriptive_words,slem,word,understands; produces,,,item_353
+væk (description),all gone,descriptive_words,vaek,word,understands; produces,,,item_354
+hård,hard,descriptive_words,hard,word,understands; produces,,,item_355
+stor,big,descriptive_words,stor,word,understands; produces,,,item_356
+våd,wet (description),descriptive_words,vad,word,understands; produces,,,item_357
+dag,day,time_words,dag,word,understands; produces,,,item_358
+i morgen,tomorrow,time_words,i_morgen,word,understands; produces,,,item_359
+nu,now,time_words,nu,word,understands; produces,,,item_360
+i aften,tonight,time_words,i_aften,word,understands; produces,,,item_361
+morgen,morning,time_words,morgen,word,understands; produces,,,item_362
+senere,later,time_words,senere,word,understands; produces,,,item_363
+i dag,today,time_words,i_dag,word,understands; produces,,,item_364
+nat,night,time_words,nat,word,understands; produces,,,item_365
+den,it,pronouns,den,word,understands; produces,,,item_366
+din/dit/dine,your,pronouns,din/dit/dine,word,understands; produces,,,item_367
+jeg,i,pronouns,jeg,word,understands; produces,,,item_368
+denne/den her,this,pronouns,denne/den_her,word,understands; produces,,,item_369
+du,you,pronouns,du,word,understands; produces,,,item_370
+mig,me,pronouns,mig,word,understands; produces,,,item_371
+det (determiner),that,pronouns,det,word,understands; produces,,,item_372
+hans,his,pronouns,hans,word,understands; produces,,,item_373
+min/mit/mine,mine,pronouns,min/mit/mine,word,understands; produces,,,item_374
+dette/det her,this,pronouns,dette/det_her,word,understands; produces,,,item_375
+hendes,her,pronouns,hendes,word,understands; produces,,,item_376
+hvad,what,question_words,hvad,word,understands; produces,,,item_377
+hvor,where (question),question_words,hvor,word,understands; produces,,,item_378
+hvorfor,why,question_words,hvorfor,word,understands; produces,,,item_379
+hvem,who,question_words,hvem,word,understands; produces,,,item_380
+hvordan,how,question_words,hvordan,word,understands; produces,,,item_381
+hvornår,when (question),question_words,hvornar,word,understands; produces,,,item_382
+af,off,locations,af,word,understands; produces,,,item_383
+inden i,inside,locations,inden_i,word,understands; produces,,,item_384
+ud,out,locations,ud,word,understands; produces,,,item_385
+bagved,back (location),locations,bagved,word,understands; produces,,,item_386
+ned,down,locations,ned,word,understands; produces,,,item_387
+ude,out of,locations,ude,word,understands; produces,,,item_388
+der,there,locations,der,word,understands; produces,,,item_389
+nede,down,locations,nede,word,understands; produces,,,item_390
+under,under,locations,under,word,understands; produces,,,item_391
+i,in,locations,i,word,understands; produces,,,item_392
+op,up,locations,op,word,understands; produces,,,item_393
+væk (location),away,locations,vaek,word,understands; produces,,,item_394
+ind,in,locations,ind,word,understands; produces,,,item_395
+oppe,up,locations,oppe,word,understands; produces,,,item_396
+inde,in,locations,inde,word,understands; produces,,,item_397
+på,on,locations,pa,word,understands; produces,,,item_398
+alle,all,quantifiers,alle,word,understands; produces,,,item_399
+ingen,none,quantifiers,ingen,word,understands; produces,,,item_400
+noget,some,quantifiers,noget,word,understands; produces,,,item_401
+(en) anden,another,quantifiers,(en)_anden,word,understands; produces,,,item_402
+intet,nothing,quantifiers,intet,word,understands; produces,,,item_403
+samme,same,quantifiers,samme,word,understands; produces,,,item_404
+(et) andet,another,quantifiers,(et)_andet,word,understands; produces,,,item_405
+mere,more,quantifiers,mere,word,understands; produces,,,item_406
+ikke,not,quantifiers,ikke,word,understands; produces,,,item_407
+nogen/nogle,some,quantifiers,nogen/nogle,word,understands; produces,,,item_408
+æske,box,household,aeske,word,understands; produces,,,item_409
+smile,smile,action_words,smile,word,understands; produces,,,item_410
