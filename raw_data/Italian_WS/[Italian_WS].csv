@@ -1,671 +1,671 @@
-"definition","uni_lemma","gloss","category","item","type","choices","complexity_category","itemID"
-"organo genitale femminile",,"vagina","body_parts","organo_genitale_femminile","word","produces",,"item_1"
-"orecchio",,"ear","body_parts","orecchio","word","produces",,"item_2"
-"ombelico",,"bellybutton","body_parts","ombelico","word","produces",,"item_3"
-"occhio",,"eye","body_parts","occhio","word","produces",,"item_4"
-"naso",,"nose","body_parts","naso","word","produces",,"item_5"
-"mano",,"hand","body_parts","mano","word","produces",,"item_6"
-"lingua",,"tongue","body_parts","lingua","word","produces",,"item_7"
-"labbra",,"lips","body_parts","labbra","word","produces",,"item_8"
-"guance",,"cheek","body_parts","guance","word","produces",,"item_9"
-"gola",,"throat","body_parts","gola","word","produces",,"item_10"
-"ginocchi",,"knee","body_parts","ginocchi","word","produces",,"item_11"
-"gambe",,"leg","body_parts","gambe","word","produces",,"item_12"
-"faccia",,"face","body_parts","faccia","word","produces",,"item_13"
-"dito",,"finger","body_parts","dito","word","produces",,"item_14"
-"denti",,"tooth","body_parts","denti","word","produces",,"item_15"
-"caviglia",,"ankle","body_parts","caviglia","word","produces",,"item_16"
-"capelli",,"hair","body_parts","capelli","word","produces",,"item_17"
-"braccio",,"arm","body_parts","braccio","word","produces",,"item_18"
-"bocca",,"mouth","body_parts","bocca","word","produces",,"item_19"
-"vestito",,"dress","clothing","vestito","word","produces",,"item_20"
-"tuta",,"tracksuit","clothing","tuta","word","produces",,"item_21"
-"stivali",,"boots","clothing","stivali","word","produces",,"item_22"
-"sciarpa",,"scarf","clothing","sciarpa","word","produces",,"item_23"
-"scarpe",,"shoe","clothing","scarpe","word","produces",,"item_24"
-"pigiama",,"pajamas","clothing","pigiama","word","produces",,"item_25"
-"pantofole",,"slipper","clothing","pantofole","word","produces",,"item_26"
-"pantaloni",,"pants","clothing","pantaloni","word","produces",,"item_27"
-"pannolino",,"diaper","clothing","pannolino","word","produces",,"item_28"
-"occhiali",,"glasses","clothing","occhiali","word","produces",,"item_29"
-"mutande",,"underpants","clothing","mutande","word","produces",,"item_30"
-"maglione",,"sweater","clothing","maglione","word","produces",,"item_31"
-"jeans",,"jeans","clothing","jeans","word","produces",,"item_32"
-"guanti",,"gloves","clothing","guanti","word","produces",,"item_33"
-"grembiule",,"pinafore","clothing","grembiule","word","produces",,"item_34"
-"gonna",,"skirt","clothing","gonna","word","produces",,"item_35"
-"giacca",,"jacket","clothing","giacca","word","produces",,"item_36"
-"collana",,"necklace","clothing","collana","word","produces",,"item_37"
-"cinta",,"belt","clothing","cinta","word","produces",,"item_38"
-"cappotto",,"coat","clothing","cappotto","word","produces",,"item_39"
-"cappello",,"hat","clothing","cappello","word","produces",,"item_40"
-"camicia",,"shirt","clothing","camicia","word","produces",,"item_41"
-"calzettoni",,"sock","clothing","calzettoni","word","produces",,"item_42"
-"calze",,"tights","clothing","calze","word","produces",,"item_43"
-"bretelle",,"suspenders","clothing","bretelle","word","produces",,"item_44"
-"bottone",,"button","clothing","bottone","word","produces",,"item_45"
-"borsa",,"purse","clothing","borsa","word","produces",,"item_46"
-"bavaglino",,"bib","clothing","bavaglino","word","produces",,"item_47"
-"zucchine",,"courgette","food_drink","zucchine","word","produces",,"item_48"
-"zucchero",,"sugar","food_drink","zucchero","word","produces",,"item_49"
-"yogurt",,"yogurt","food_drink","yogurt","word","produces",,"item_50"
-"vino",,"wine","food_drink","vino","word","produces",,"item_51"
-"verdura",,"vegetable","food_drink","verdura","word","produces",,"item_52"
-"uva",,"grapes","food_drink","uva","word","produces",,"item_53"
-"uovo",,"egg","food_drink","uovo","word","produces",,"item_54"
-"tortellini",,"tortellini","food_drink","tortellini","word","produces",,"item_55"
-"torta",,"cake","food_drink","torta","word","produces",,"item_56"
-"tonno",,"tuna","food_drink","tonno","word","produces",,"item_57"
-"the",,"tea","food_drink","the","word","produces",,"item_58"
-"sugo",,"sauce","food_drink","sugo","word","produces",,"item_59"
-"succo di frutta",,"juice","food_drink","succo_di_frutta","word","produces",,"item_60"
-"spinaci",,"spinach","food_drink","spinaci","word","produces",,"item_61"
-"spaghetti",,"spaghetti","food_drink","spaghetti","word","produces",,"item_62"
-"sale",,"salt","food_drink","sale","word","produces",,"item_63"
-"riso",,"rice","food_drink","riso","word","produces",,"item_64"
-"pomodori",,"tomato","food_drink","pomodori","word","produces",,"item_65"
-"polpette",,"meat balls","food_drink","polpette","word","produces",,"item_66"
-"pollo",,"chicken","food_drink","pollo","word","produces",,"item_67"
-"pizza",,"pizza","food_drink","pizza","word","produces",,"item_68"
-"piselli",,"peas","food_drink","piselli","word","produces",,"item_69"
-"pesca",,"peach","food_drink","pesca","word","produces",,"item_70"
-"pera",,"pear","food_drink","pera","word","produces",,"item_71"
-"patatine",,"potato chip","food_drink","patatine","word","produces",,"item_72"
-"patate",,"potato","food_drink","patate","word","produces",,"item_73"
-"pasta",,"pasta","food_drink","pasta","word","produces",,"item_74"
-"pappa",,"pap","food_drink","pappa","word","produces",,"item_75"
-"panna",,"cream","food_drink","panna","word","produces",,"item_76"
-"panino",,"sandwich","food_drink","panino","word","produces",,"item_77"
-"pane",,"bread","food_drink","pane","word","produces",,"item_78"
-"olio",,"olive oil","food_drink","olio","word","produces",,"item_79"
-"noccioline",,"nuts","food_drink","noccioline","word","produces",,"item_80"
-"minestrone/brodo",,"soup","food_drink","minestrone/brodo","word","produces",,"item_81"
-"miele",,"honey","food_drink","miele","word","produces",,"item_82"
-"melone",,"melon","food_drink","melone","word","produces",,"item_83"
-"mela",,"apple","food_drink","mela","word","produces",,"item_84"
-"marmellata",,"jelly","food_drink","marmellata","word","produces",,"item_85"
-"mandarino",,"tangerine","food_drink","mandarino","word","produces",,"item_86"
-"leccalecca",,"lollipop","food_drink","leccalecca","word","produces",,"item_87"
-"latte",,"milk","food_drink","latte","word","produces",,"item_88"
-"kiwi",,"kiwi fruit","food_drink","kiwi","word","produces",,"item_89"
-"gomma da masticare",,"gum","food_drink","gomma_da_masticare","word","produces",,"item_90"
-"ghiaccio",,"ice","food_drink","ghiaccio","word","produces",,"item_91"
-"gelato",,"icecream","food_drink","gelato","word","produces",,"item_92"
-"fragola",,"strawberry","food_drink","fragola","word","produces",,"item_93"
-"formaggio",,"cheese","food_drink","formaggio","word","produces",,"item_94"
-"fagiolini",,"green beans","food_drink","fagiolini","word","produces",,"item_95"
-"fagioli",,"beans","food_drink","fagioli","word","produces",,"item_96"
-"crema",,"cream","food_drink","crema","word","produces",,"item_97"
-"cracker",,"cracker","food_drink","cracker","word","produces",,"item_98"
-"cocomero/anguria",,"watermelon","food_drink","cocomero/anguria","word","produces",,"item_99"
-"coca cola",,"coke","food_drink","coca_cola","word","produces",,"item_100"
-"cioccolata",,"chocolate","food_drink","cioccolata","word","produces",,"item_101"
-"ciliegie",,"cherry","food_drink","ciliegie","word","produces",,"item_102"
-"carote",,"carrots","food_drink","carote","word","produces",,"item_103"
-"carne",,"meat","food_drink","carne","word","produces",,"item_104"
-"caramella",,"candy","food_drink","caramella","word","produces",,"item_105"
-"camomilla",,"chamomile tea","food_drink","camomilla","word","produces",,"item_106"
-"caffe",,"coffee","food_drink","caffe","word","produces",,"item_107"
-"cacao",,"cocoa","food_drink","cacao","word","produces",,"item_108"
-"burro",,"butter","food_drink","burro","word","produces",,"item_109"
-"budino",,"pudding","food_drink","budino","word","produces",,"item_110"
-"biscotti",,"cookie","food_drink","biscotti","word","produces",,"item_111"
-"banana",,"banana","food_drink","banana","word","produces",,"item_112"
-"aranciata",,"orange juice","food_drink","aranciata","word","produces",,"item_113"
-"arancia",,"orange","food_drink","arancia","word","produces",,"item_114"
-"acqua",,"water","food_drink","acqua","word","produces",,"item_115"
-"trottola",,"spinning top","toys","trottola","word","produces",,"item_116"
-"pongo/Didò",,"play dogh","toys","pongo/Dido","word","produces",,"item_117"
-"tromba",,"trumpet","toys","tromba","word","produces",,"item_118"
-"tamburo",,"drum","toys","tamburo","word","produces",,"item_119"
-"soldatini",,"toy soldier","toys","soldatini","word","produces",,"item_120"
-"secchiello",,"bucket","toys","secchiello","word","produces",,"item_121"
-"pupazzi",,"puppet","toys","pupazzi","word","produces",,"item_122"
-"pistola",,"gun","toys","pistola","word","produces",,"item_123"
-"palloncino",,"balloon","toys","palloncino","word","produces",,"item_124"
-"palla",,"ball","toys","palla","word","produces",,"item_125"
-"paletta",,"spade","toys","paletta","word","produces",,"item_126"
-"giocattolo",,"toy","toys","giocattolo","word","produces",,"item_127"
-"favola/storia",,"book/story","toys","favola/storia","word","produces",,"item_128"
-"cubi",,"block","toys","cubi","word","produces",,"item_129"
-"costruzioni",,"building blocks","toys","costruzioni","word","produces",,"item_130"
-"casetta",,"playhouse","toys","casetta","word","produces",,"item_131"
-"birilli",,"pin","toys","birilli","word","produces",,"item_132"
-"bambola",,"doll","toys","bambola","word","produces",,"item_133"
-"treno",,"train","vehicles","treno","word","produces",,"item_134"
-"trattore",,"tractor","vehicles","trattore","word","produces",,"item_135"
-"slitta",,"sled","vehicles","slitta","word","produces",,"item_136"
-"passeggino",,"stroller","vehicles","passeggino","word","produces",,"item_137"
-"motocicletta",,"motorcycle","vehicles","motocicletta","word","produces",,"item_138"
-"jeep",,"jeep","vehicles","jeep","word","produces",,"item_139"
-"gru",,"crane","vehicles","gru","word","produces",,"item_140"
-"elicottero",,"helicopter","vehicles","elicottero","word","produces",,"item_141"
-"camion",,"truck","vehicles","camion","word","produces",,"item_142"
-"bicicletta",,"bicycle","vehicles","bicicletta","word","produces",,"item_143"
-"barca",,"boat","vehicles","barca","word","produces",,"item_144"
-"automobile",,"car","vehicles","automobile","word","produces",,"item_145"
-"autobus",,"bus","vehicles","autobus","word","produces",,"item_146"
-"aereo",,"airplane","vehicles","aereo","word","produces",,"item_147"
-"zebra",,"zebra","animals","zebra","word","produces",,"item_148"
-"zanzara",,"mosquito","animals","zanzara","word","produces",,"item_149"
-"uccellino",,"bird","animals","uccellino","word","produces",,"item_150"
-"topo",,"mouse","animals","topo","word","produces",,"item_151"
-"tigre",,"tiger","animals","tigre","word","produces",,"item_152"
-"tartaruga",,"turtle","animals","tartaruga","word","produces",,"item_153"
-"tacchino",,"turkey","animals","tacchino","word","produces",,"item_154"
-"scoiattolo",,"squirrel","animals","scoiattolo","word","produces",,"item_155"
-"scimmia",,"monkey","animals","scimmia","word","produces",,"item_156"
-"rana",,"frog","animals","rana","word","produces",,"item_157"
-"pulcino",,"chick","animals","pulcino","word","produces",,"item_158"
-"pinguino",,"penguin","animals","pinguino","word","produces",,"item_159"
-"pesciolino",,"fish","animals","pesciolino","word","produces",,"item_160"
-"pecora",,"sheep","animals","pecora","word","produces",,"item_161"
-"papera",,"duck","animals","papera","word","produces",,"item_162"
-"orso",,"bear","animals","orso","word","produces",,"item_163"
-"oca",,"goose","animals","oca","word","produces",,"item_164"
-"mucca",,"cow","animals","mucca","word","produces",,"item_165"
-"mosca",,"fly","animals","mosca","word","produces",,"item_166"
-"maiale",,"pig","animals","maiale","word","produces",,"item_167"
-"lupo",,"wolf","animals","lupo","word","produces",,"item_168"
-"leone",,"lion","animals","leone","word","produces",,"item_169"
-"ippopotamo",,"hippopotamus","animals","ippopotamo","word","produces",,"item_170"
-"gufo",,"owl","animals","gufo","word","produces",,"item_171"
-"giraffa",,"giraffe","animals","giraffa","word","produces",,"item_172"
-"gatto",,"cat","animals","gatto","word","produces",,"item_173"
-"gallo",,"rooster","animals","gallo","word","produces",,"item_174"
-"gallina",,"hen","animals","gallina","word","produces",,"item_175"
-"formica",,"ant","animals","formica","word","produces",,"item_176"
-"foca",,"seal","animals","foca","word","produces",,"item_177"
-"farfalla",,"butterfly","animals","farfalla","word","produces",,"item_178"
-"elefante",,"elephant","animals","elefante","word","produces",,"item_179"
-"cucciolo",,"puppy/kitty","animals","cucciolo","word","produces",,"item_180"
-"coniglio",,"bunny","animals","coniglio","word","produces",,"item_181"
-"coccodrillo",,"crocodile","animals","coccodrillo","word","produces",,"item_182"
-"cerbiatto",,"fawn","animals","cerbiatto","word","produces",,"item_183"
-"cavallo",,"horse","animals","cavallo","word","produces",,"item_184"
-"capra",,"goat","animals","capra","word","produces",,"item_185"
-"cane",,"dog","animals","cane","word","produces",,"item_186"
-"asino",,"donkey","animals","asino","word","produces",,"item_187"
-"ape",,"bee","animals","ape","word","produces",,"item_188"
-"animale",,"animal","animals","animale","word","produces",,"item_189"
-"agnello",,"lamb","animals","agnello","word","produces",,"item_190"
-"tuttù",,"choo choo","sounds","tuttu","word","produces",,"item_191"
-"muh",,"moo","sounds","muh","word","produces",,"item_192"
-"grr",,"grr","sounds","grr","word","produces",,"item_193"
-"coccodè",,"cockadoodledoo","sounds","coccode","word","produces",,"item_194"
-"qua qua",,"quack quack","sounds","qua_qua","word","produces",,"item_195"
-"miao",,"meow","sounds","miao","word","produces",,"item_196"
-"ih oh",,"uh oh","sounds","ih_oh","word","produces",,"item_197"
-"clop clop",,,"sounds","clop_clop","word","produces",,"item_198"
-"cip cip",,"tweet tweet","sounds","cip_cip","word","produces",,"item_199"
-"brum brum",,"vroom","sounds","brum_brum","word","produces",,"item_200"
-"beh beh",,"baa baa","sounds","beh_beh","word","produces",,"item_201"
-"bau bau",,"woof woof","sounds","bau_bau","word","produces",,"item_202"
-"organo genitale maschile",,"penis","body_parts","organo_genitale_maschile","word","produces",,"item_203"
-"pancia",,"tummy","body_parts","pancia","word","produces",,"item_204"
-"piede",,"feet","body_parts","piede","word","produces",,"item_205"
-"sederino",,"buttocks","body_parts","sederino","word","produces",,"item_206"
-"seno",,"breast","body_parts","seno","word","produces",,"item_207"
-"spalla",,"shoulder","body_parts","spalla","word","produces",,"item_208"
-"testa",,"head","body_parts","testa","word","produces",,"item_209"
-"unghie",,"nail","body_parts","unghie","word","produces",,"item_210"
-"asciugamano",,"towel","household","asciugamano","word","produces",,"item_211"
-"aspirapolvere",,"vacuum","household","aspirapolvere","word","produces",,"item_212"
-"biberon",,"baby","household","biberon","word","produces",,"item_213"
-"bicchiere",,"glass","household","bicchiere","word","produces",,"item_214"
-"bottiglia",,"bottle","household","bottiglia","word","produces",,"item_215"
-"candeline",,"birthday candle","household","candeline","word","produces",,"item_216"
-"cestino",,"basket","household","cestino","word","produces",,"item_217"
-"chiave",,"keys","household","chiave","word","produces",,"item_218"
-"ciuccio",,"pacifier","household","ciuccio","word","produces",,"item_219"
-"colori",,"crayons","household","colori","word","produces",,"item_220"
-"coltello",,"knife","household","coltello","word","produces",,"item_221"
-"coperchio",,"cover","household","coperchio","word","produces",,"item_222"
-"coperta",,"blanket","household","coperta","word","produces",,"item_223"
-"cucchiaio",,"spoon","household","cucchiaio","word","produces",,"item_224"
-"cuscino",,"pillow","household","cuscino","word","produces",,"item_225"
-"dentifricio",,"toothpaste","household","dentifricio","word","produces",,"item_226"
-"disegno",,"drawing","household","disegno","word","produces",,"item_227"
-"fazzoletto",,"tissue/kleenex","household","fazzoletto","word","produces",,"item_228"
-"forbici",,"scissors","household","forbici","word","produces",,"item_229"
-"forchetta",,"fork","household","forchetta","word","produces",,"item_230"
-"fotografia",,"picture","household","fotografia","word","produces",,"item_231"
-"giornale",,"paper","household","giornale","word","produces",,"item_232"
-"luce",,"light","household","luce","word","produces",,"item_233"
-"libro",,"book","household","libro","word","produces",,"item_234"
-"martello",,"hammer","household","martello","word","produces",,"item_235"
-"matita/penna",,"pencil/pen","household","matita/penna","word","produces",,"item_236"
-"medicina",,"medicine","household","medicina","word","produces",,"item_237"
-"musica",,"music","household","musica","word","produces",,"item_238"
-"ombrello",,"umbrella","household","ombrello","word","produces",,"item_239"
-"orologio",,"clock","household","orologio","word","produces",,"item_240"
-"pentola",,"pot","household","pentola","word","produces",,"item_241"
-"pettine",,"comb","household","pettine","word","produces",,"item_242"
-"pianta",,"plant","household","pianta","word","produces",,"item_243"
-"piatto",,"dish","household","piatto","word","produces",,"item_244"
-"sacchetto",,"bag","household","sacchetto","word","produces",,"item_245"
-"sapone",,"soap","household","sapone","word","produces",,"item_246"
-"scatola",,"box","household","scatola","word","produces",,"item_247"
-"scopa",,"broom","household","scopa","word","produces",,"item_248"
-"secchio",,"bucket","household","secchio","word","produces",,"item_249"
-"shampoo",,"shampoo","household","shampoo","word","produces",,"item_250"
-"soldi",,"money","household","soldi","word","produces",,"item_251"
-"spazzolino da denti",,"toothbrush","household","spazzolino_da_denti","word","produces",,"item_252"
-"specchio",,"mirror","household","specchio","word","produces",,"item_253"
-"straccio",,"mop","household","straccio","word","produces",,"item_254"
-"tappo",,"cap","household","tappo","word","produces",,"item_255"
-"tazza",,"cup","household","tazza","word","produces",,"item_256"
-"telefono",,"telephone","household","telefono","word","produces",,"item_257"
-"termometro",,"thermometer","household","termometro","word","produces",,"item_258"
-"termosifone",,"radiator","household","termosifone","word","produces",,"item_259"
-"vasino",,"potty","household","vasino","word","produces",,"item_260"
-"armadio",,"closet","furniture_rooms","armadio","word","produces",,"item_261"
-"bagno",,"bathroom","furniture_rooms","bagno","word","produces",,"item_262"
-"bidè",,"bidet","furniture_rooms","bid","word","produces",,"item_263"
-"camera",,"room","furniture_rooms","camera","word","produces",,"item_264"
-"cantina",,"basement","furniture_rooms","cantina","word","produces",,"item_265"
-"cassetto",,"drawer","furniture_rooms","cassetto","word","produces",,"item_266"
-"cucina",,"kitchen","furniture_rooms","cucina","word","produces",,"item_267"
-"culla",,"crib","furniture_rooms","culla","word","produces",,"item_268"
-"divano",,"couch","furniture_rooms","divano","word","produces",,"item_269"
-"doccia",,"shower","furniture_rooms","doccia","word","produces",,"item_270"
-"ferro da stiro",,"iron","furniture_rooms","ferro_da_stiro","word","produces",,"item_271"
-"finestra",,"window","furniture_rooms","finestra","word","produces",,"item_272"
-"fon",,"dryer","furniture_rooms","fon","word","produces",,"item_273"
-"forno",,"oven","furniture_rooms","forno","word","produces",,"item_274"
-"frigorifero",,"refrigerator","furniture_rooms","frigorifero","word","produces",,"item_275"
-"lavandino",,"sink","furniture_rooms","lavandino","word","produces",,"item_276"
-"lavatrice",,"washingmachine","furniture_rooms","lavatrice","word","produces",,"item_277"
-"letto",,"bed","furniture_rooms","letto","word","produces",,"item_278"
-"muro",,"wall","furniture_rooms","muro","word","produces",,"item_279"
-"poltrona",,"armchair","furniture_rooms","poltrona","word","produces",,"item_280"
-"porta",,"door","furniture_rooms","porta","word","produces",,"item_281"
-"quadro",,"picture","furniture_rooms","quadro","word","produces",,"item_282"
-"radio",,"radio","furniture_rooms","radio","word","produces",,"item_283"
-"registratore",,"tape recorder","furniture_rooms","registratore","word","produces",,"item_284"
-"salotto",,"livingroom","furniture_rooms","salotto","word","produces",,"item_285"
-"scala",,"stairs","furniture_rooms","scala","word","produces",,"item_286"
-"sedia",,"chair","furniture_rooms","sedia","word","produces",,"item_287"
-"seggiolone",,"highchair","furniture_rooms","seggiolone","word","produces",,"item_288"
-"tappeto",,"carpet","furniture_rooms","tappeto","word","produces",,"item_289"
-"tavolo",,"table","furniture_rooms","tavolo","word","produces",,"item_290"
-"televisione/TV",,"TV","furniture_rooms","televisione/TV","word","produces",,"item_291"
-"terrazza",,"porch","furniture_rooms","terrazza","word","produces",,"item_292"
-"vasca da bagno",,"bathtub","furniture_rooms","vasca_da_bagno","word","produces",,"item_293"
-"albero",,"tree","outside","albero","word","produces",,"item_294"
-"altalena",,"swing","outside","altalena","word","produces",,"item_295"
-"ascensore",,"elevator","outside","ascensore","word","produces",,"item_296"
-"bandiera",,"flag","outside","bandiera","word","produces",,"item_297"
-"benzina",,"gasoline","outside","benzina","word","produces",,"item_298"
-"campana",,"bell","outside","campana","word","produces",,"item_299"
-"cielo",,"sky","outside","cielo","word","produces",,"item_300"
-"erba",,"grass","outside","erba","word","produces",,"item_301"
-"fiore",,"flower","outside","fiore","word","produces",,"item_302"
-"foglia",,"leaf","outside","foglia","word","produces",,"item_303"
-"fontana",,"fountain","outside","fontana","word","produces",,"item_304"
-"fumo",,"smog","outside","fumo","word","produces",,"item_305"
-"garage",,"garage","outside","garage","word","produces",,"item_306"
-"luna",,"moon","outside","luna","word","produces",,"item_307"
-"nebbia",,"fog","outside","nebbia","word","produces",,"item_308"
-"neve",,"snow","outside","neve","word","produces",,"item_309"
-"nuvola","cloud","cloud","outside","nuvola","word","produces",,"item_310"
-"pioggia",,"rain","outside","pioggia","word","produces",,"item_311"
-"piscina",,"pool","outside","piscina","word","produces",,"item_312"
-"pompa",,"pump","outside","pompa","word","produces",,"item_313"
-"prato",,"lawn","outside","prato","word","produces",,"item_314"
-"sasso",,"stone","outside","sasso","word","produces",,"item_315"
-"scivolo",,"slide","outside","scivolo","word","produces",,"item_316"
-"sole",,"sun","outside","sole","word","produces",,"item_317"
-"stella",,"star","outside","stella","word","produces",,"item_318"
-"strada",,"street","outside","strada","word","produces",,"item_319"
-"terra",,"earth","outside","terra","word","produces",,"item_320"
-"tetto",,"roof","outside","tetto","word","produces",,"item_321"
-"torre",,"tower","outside","torre","word","produces",,"item_322"
-"tubo",,"hose","outside","tubo","word","produces",,"item_323"
-"vento",,"wind","outside","vento","word","produces",,"item_324"
-"asilo",,"kindergarten","places","asilo","word","produces",,"item_325"
-"bar",,"bar","places","bar","word","produces",,"item_326"
-"bosco",,"woods","places","bosco","word","produces",,"item_327"
-"campagna",,"country","places","campagna","word","produces",,"item_328"
-"casa",,"house/home","places","casa","word","produces",,"item_329"
-"chiesa",,"church","places","chiesa","word","produces",,"item_330"
-"circo",,"circus","places","circo","word","produces",,"item_331"
-"città",,"downtown","places","citta","word","produces",,"item_332"
-"festa",,"party","places","festa","word","produces",,"item_333"
-"giardino",,"garden","places","giardino","word","produces",,"item_334"
-"giostra",,"merry-go-round","places","giostra","word","produces",,"item_335"
-"lavoro",,"work","places","lavoro","word","produces",,"item_336"
-"mare",,"sea","places","mare","word","produces",,"item_337"
-"mercato",,"market","places","mercato","word","produces",,"item_338"
-"montagna",,"rock","places","montagna","word","produces",,"item_339"
-"negozio",,"store","places","negozio","word","produces",,"item_340"
-"ospedale",,"hospital","places","ospedale","word","produces",,"item_341"
-"parco giochi",,"playground","places","parco_giochi","word","produces",,"item_342"
-"scuola",,"school","places","scuola","word","produces",,"item_343"
-"spiaggia",,"beach","places","spiaggia","word","produces",,"item_344"
-"supermercato",,"supermarket","places","supermercato","word","produces",,"item_345"
-"zoo",,"zoo","places","zoo","word","produces",,"item_346"
-"amico/a",,"friend","people","amico/a","word","produces",,"item_347"
-"babysitter/tata",,"babysitter","people","babysitter/tata","word","produces",,"item_348"
-"bambino/a",,"baby","people","bambino/a","word","produces",,"item_349"
-"barbiere",,"barber","people","barbiere","word","produces",,"item_350"
-"bimbi","child","children","people","bimbi","word","produces",,"item_351"
-"cugino/a",,"cousin","people","cugino/a","word","produces",,"item_352"
-"donna",,"woman","people","donna","word","produces",,"item_353"
-"dottore",,"doctor","people","dottore","word","produces",,"item_354"
-"fratello",,"brother","people","fratello","word","produces",,"item_355"
-"il suo nome",,"child","people","il_suo_nome","word","produces",,"item_356"
-"maestro/a",,"teacher","people","maestro/a","word","produces",,"item_357"
-"mamma",,"mommy","people","mamma","word","produces",,"item_358"
-"nonna",,"grandma","people","nonna","word","produces",,"item_359"
-"nonno",,"grandpa","people","nonno","word","produces",,"item_360"
-"panettiere",,"baker","people","panettiere","word","produces",,"item_361"
-"papà",,"daddy","people","papa","word","produces",,"item_362"
-"parrucchiere",,"hairdresser","people","parrucchiere","word","produces",,"item_363"
-"pediatra",,"pediatrician","people","pediatra","word","produces",,"item_364"
-"persone",,"people","people","persone","word","produces",,"item_365"
-"poliziotto",,"police","people","poliziotto","word","produces",,"item_366"
-"portiere",,"door keeper","people","portiere","word","produces",,"item_367"
-"ragazzo/a",,"boy/girl","people","ragazzo/a","word","produces",,"item_368"
-"signore/a",,"sir/lady","people","signore/a","word","produces",,"item_369"
-"soldato",,"soldier","people","soldato","word","produces",,"item_370"
-"sorella",,"sister","people","sorella","word","produces",,"item_371"
-"uomo",,"man","people","uomo","word","produces",,"item_372"
-"vigile",,"traffic officer","people","vigile","word","produces",,"item_373"
-"zia",,"aunt","people","zia","word","produces",,"item_374"
-"zio",,"uncle","people","zio","word","produces",,"item_375"
-"auguri",,"wishes","games_routines","auguri","word","produces",,"item_376"
-"basta",,"cut it out","games_routines","basta","word","produces",,"item_377"
-"bravo",,"good boy/girl","games_routines","bravo","word","produces",,"item_378"
-"bua",,,"games_routines","bua","word","produces",,"item_379"
-"bum (cade)",,,"games_routines","bum_(cade)","word","produces",,"item_380"
-"buonanotte/buongiorno",,"nightnight/good morning","games_routines","buonanotte/buongiorno","word","produces",,"item_381"
-"ciao",,"hi","games_routines","ciao","word","produces",,"item_382"
-"che rumore/chiasso",,"noise","games_routines","che_rumore/chiasso","word","produces",,"item_383"
-"cuccù settete","peekaboo","peekaboo","games_routines","cuccu_settete","word","produces",,"item_384"
-"dare le tottò",,"to slap","games_routines","dare_le_totto","word","produces",,"item_385"
-"fare il bagno",,"bath","games_routines","fare_il_bagno","word","produces",,"item_386"
-"fare la pipì","go potty","go potty","games_routines","fare_la_pipi","word","produces",,"item_387"
-"fare la popò","go potty","to poop","games_routines","fare_la_popo","word","produces",,"item_388"
-"giro-girotondo",,"turnaround","games_routines","giro-girotondo","word","produces",,"item_389"
-"grazie/prego",,"thankyou","games_routines","grazie/prego","word","produces",,"item_390"
-"nanna",,"nap","games_routines","nanna","word","produces",,"item_391"
-"no",,"no","games_routines","no","word","produces",,"item_392"
-"non c'è più","no more","no more","games_routines","non_ce_piu","word","produces",,"item_393"
-"per favore/per piacere",,"please","games_routines","per_favore/per_piacere","word","produces",,"item_394"
-"pronto/chi è?","hello","hello","games_routines","pronto_chi_e?","word","produces",,"item_395"
-"sì",,"yes","games_routines","si","word","produces",,"item_396"
-"un/due/tre","one two three","one two three","games_routines","un_due_tre","word","produces",,"item_397"
-"via",,"go","games_routines","via","word","produces",,"item_398"
-"voler bene",,"to love","games_routines","voler_bene","word","produces",,"item_399"
-"zitto/sch",,"shh/shush/hush","games_routines","zitto/sch","word","produces",,"item_400"
-"abbracciare",,"hug","action_words","abbracciare","word","produces",,"item_401"
-"accendere",,"light/switch on","action_words","accendere","word","produces",,"item_402"
-"acchiappare",,"catch","action_words","acchiappare","word","produces",,"item_403"
-"aggiustare",,"fix","action_words","aggiustare","word","produces",,"item_404"
-"aiutare",,"help","action_words","aiutare","word","produces",,"item_405"
-"alzarsi",,"stand","action_words","alzarsi","word","produces",,"item_406"
-"andare",,"go","action_words","andare","word","produces",,"item_407"
-"aprire",,"open","action_words","aprire","word","produces",,"item_408"
-"arrampicarsi",,"climb","action_words","arrampicarsi","word","produces",,"item_409"
-"asciugare",,"dry","action_words","asciugare","word","produces",,"item_410"
-"aspettare",,"wait","action_words","aspettare","word","produces",,"item_411"
-"aver fame",,"hungry","action_words","aver_fame","word","produces",,"item_412"
-"aver sete",,"thirsty","action_words","aver_sete","word","produces",,"item_413"
-"aver sonno",,"sleepy","action_words","aver_sonno","word","produces",,"item_414"
-"baciare",,"kiss","action_words","baciare","word","produces",,"item_415"
-"ballare",,"dance","action_words","ballare","word","produces",,"item_416"
-"bere",,"drink","action_words","bere","word","produces",,"item_417"
-"bussare",,"knock","action_words","bussare","word","produces",,"item_418"
-"buttare",,"dump","action_words","buttare","word","produces",,"item_419"
-"cadere",,"fall","action_words","cadere","word","produces",,"item_420"
-"camminare",,"walk","action_words","camminare","word","produces",,"item_421"
-"cantare",,"sing","action_words","cantare","word","produces",,"item_422"
-"cercare",,"seek","action_words","cercare","word","produces",,"item_423"
-"chiudere",,"close","action_words","chiudere","word","produces",,"item_424"
-"colorare",,"paint","action_words","colorare","word","produces",,"item_425"
-"comprare",,"buy","action_words","comprare","word","produces",,"item_426"
-"conoscere",,"know","action_words","conoscere","word","produces",,"item_427"
-"coprire",,"cover","action_words","coprire","word","produces",,"item_428"
-"correre",,"run","action_words","correre","word","produces",,"item_429"
-"costruire",,"build","action_words","costruire","word","produces",,"item_430"
-"cucinare",,"cook","action_words","cucinare","word","produces",,"item_431"
-"cullare",,"rock","action_words","cullare","word","produces",,"item_432"
-"dare",,"give","action_words","dare","word","produces",,"item_433"
-"dare un calcio",,"kick","action_words","dare_un_calcio","word","produces",,"item_434"
-"dire",,"say","action_words","dire","word","produces",,"item_435"
-"disegnare",,"draw","action_words","disegnare","word","produces",,"item_436"
-"dondolare",,"swing","action_words","dondolare","word","produces",,"item_437"
-"dormire",,"sleep","action_words","dormire","word","produces",,"item_438"
-"entrare",,"enter","action_words","entrare","word","produces",,"item_439"
-"fare",,"make","action_words","fare","word","produces",,"item_440"
-"fermarsi",,"stop","action_words","fermarsi","word","produces",,"item_441"
-"finire",,"finish","action_words","finire","word","produces",,"item_442"
-"giocare",,"play","action_words","giocare","word","produces",,"item_443"
-"girare",,"turn","action_words","girare","word","produces",,"item_444"
-"gridare/urlare",,"shout","action_words","gridare/urlare","word","produces",,"item_445"
-"guardare",,"look","action_words","guardare","word","produces",,"item_446"
-"guidare",,"drive","action_words","guidare","word","produces",,"item_447"
-"lanciare",,"throw","action_words","lanciare","word","produces",,"item_448"
-"lavare",,"wash","action_words","lavare","word","produces",,"item_449"
-"lavorare",,"work","action_words","lavorare","word","produces",,"item_450"
-"leccare",,"lick","action_words","leccare","word","produces",,"item_451"
-"leggere",,"read","action_words","leggere","word","produces",,"item_452"
-"levare/togliere",,"take off/remove","action_words","levare/togliere","word","produces",,"item_453"
-"litigare",,"fight","action_words","litigare","word","produces",,"item_454"
-"mangiare",,"eat","action_words","mangiare","word","produces",,"item_455"
-"mettere",,"put","action_words","mettere","word","produces",,"item_456"
-"mordere",,"bite","action_words","mordere","word","produces",,"item_457"
-"nascondere/si",,"hide","action_words","nascondere/si","word","produces",,"item_458"
-"nuotare",,"swim","action_words","nuotare","word","produces",,"item_459"
-"parlare",,"talk","action_words","parlare","word","produces",,"item_460"
-"passeggiare",,"walk","action_words","passeggiare","word","produces",,"item_461"
-"pettinare",,"comb/brush","action_words","pettinare","word","produces",,"item_462"
-"piacere",,"like","action_words","piacere","word","produces",,"item_463"
-"piangere",,"cry","action_words","piangere","word","produces",,"item_464"
-"portare",,"bring/carry","action_words","portare","word","produces",,"item_465"
-"prendere",,"take","action_words","prendere","word","produces",,"item_466"
-"provare",,"taste","action_words","provare","word","produces",,"item_467"
-"pulire",,"clean","action_words","pulire","word","produces",,"item_468"
-"raccontare",,"tell","action_words","raccontare","word","produces",,"item_469"
-"regalare",,"give present","action_words","regalare","word","produces",,"item_470"
-"restare",,"remain","action_words","restare","word","produces",,"item_471"
-"ridere",,"smile","action_words","ridere","word","produces",,"item_472"
-"rispondere",,"answer","action_words","rispondere","word","produces",,"item_473"
-"rompere",,"break","action_words","rompere","word","produces",,"item_474"
-"rovesciare",,"spill","action_words","rovesciare","word","produces",,"item_475"
-"saltare",,"jump","action_words","saltare","word","produces",,"item_476"
-"salutare",,"greet","action_words","salutare","word","produces",,"item_477"
-"sbrigarsi",,"hurry","action_words","sbrigarsi","word","produces",,"item_478"
-"scappare",,"bolt","action_words","scappare","word","produces",,"item_479"
-"scendere",,"go down","action_words","scendere","word","produces",,"item_480"
-"scrivere",,"write","action_words","scrivere","word","produces",,"item_481"
-"sedersi",,"sit","action_words","sedersi","word","produces",,"item_482"
-"sentire",,"hear/listen","action_words","sentire","word","produces",,"item_483"
-"soffiare",,"blow","action_words","soffiare","word","produces",,"item_484"
-"spazzare",,"sweep","action_words","spazzare","word","produces",,"item_485"
-"spegnere",,"put out","action_words","spegnere","word","produces",,"item_486"
-"spingere",,"push","action_words","spingere","word","produces",,"item_487"
-"sporcarsi",,"get dirty","action_words","sporcarsi","word","produces",,"item_488"
-"sputare",,"spit","action_words","sputare","word","produces",,"item_489"
-"stare",,"stay","action_words","stare","word","produces",,"item_490"
-"strappare",,"rip","action_words","strappare","word","produces",,"item_491"
-"svegliarsi",,"wake","action_words","svegliarsi","word","produces",,"item_492"
-"tagliare",,"cut","action_words","tagliare","word","produces",,"item_493"
-"telefonare",,"phone","action_words","telefonare","word","produces",,"item_494"
-"tenere",,"hold","action_words","tenere","word","produces",,"item_495"
-"tirare",,"pull","action_words","tirare","word","produces",,"item_496"
-"toccare",,"touch","action_words","toccare","word","produces",,"item_497"
-"trovare",,"find","action_words","trovare","word","produces",,"item_498"
-"uscire",,"go out","action_words","uscire","word","produces",,"item_499"
-"vedere",,"see/watch","action_words","vedere","word","produces",,"item_500"
-"venire",,"come","action_words","venire","word","produces",,"item_501"
-"versare",,"pour","action_words","versare","word","produces",,"item_502"
-"volare",,"fly","action_words","volare","word","produces",,"item_503"
-"addormentato",,"asleep","descriptive_words","addormentato","word","produces",,"item_504"
-"alto",,"high","descriptive_words","alto","word","produces",,"item_505"
-"amaro",,"bitter","descriptive_words","amaro","word","produces",,"item_506"
-"arancione",,"orange","descriptive_words","arancione","word","produces",,"item_507"
-"arrabbiato",,"angry","descriptive_words","arrabbiato","word","produces",,"item_508"
-"asciutto",,"dry","descriptive_words","asciutto","word","produces",,"item_509"
-"attento",,"carefull","descriptive_words","attento","word","produces",,"item_510"
-"bagnato",,"wet","descriptive_words","bagnato","word","produces",,"item_511"
-"bello",,"nice","descriptive_words","bello","word","produces",,"item_512"
-"bianco",,"white","descriptive_words","bianco","word","produces",,"item_513"
-"blu",,"blue","descriptive_words","blu","word","produces",,"item_514"
-"brutto",,"ugly/bad","descriptive_words","brutto","word","produces",,"item_515"
-"buio",,"dark","descriptive_words","buio","word","produces",,"item_516"
-"buono",,"good","descriptive_words","buono","word","produces",,"item_517"
-"caldo",,"hot","descriptive_words","caldo","word","produces",,"item_518"
-"calmo/tranquillo",,"quiet","descriptive_words","calmo/tranquillo","word","produces",,"item_519"
-"carino",,"cute/pretty","descriptive_words","carino","word","produces",,"item_520"
-"cattivo",,"bad","descriptive_words","cattivo","word","produces",,"item_521"
-"contento",,"happy","descriptive_words","contento","word","produces",,"item_522"
-"corto",,"short","descriptive_words","corto","word","produces",,"item_523"
-"disubbidiente",,"naughty","descriptive_words","disubbidiente","word","produces",,"item_524"
-"dolce",,"sweet","descriptive_words","dolce","word","produces",,"item_525"
-"duro",,"hard","descriptive_words","duro","word","produces",,"item_526"
-"felice",,"happy","descriptive_words","felice","word","produces",,"item_527"
-"ferito",,"hurt","descriptive_words","ferito","word","produces",,"item_528"
-"finito",,"finished","descriptive_words","finito","word","produces",,"item_529"
-"forte",,"loud","descriptive_words","forte","word","produces",,"item_530"
-"freddo",,"cold","descriptive_words","freddo","word","produces",,"item_531"
-"gentile",,"gentle","descriptive_words","gentile","word","produces",,"item_532"
-"giallo",,"yellow","descriptive_words","giallo","word","produces",,"item_533"
-"grande/grosso",,"big","descriptive_words","grande/grosso","word","produces",,"item_534"
-"leggero",,"light","descriptive_words","leggero","word","produces",,"item_535"
-"lento",,"slow","descriptive_words","lento","word","produces",,"item_536"
-"lungo",,"long","descriptive_words","lungo","word","produces",,"item_537"
-"malato",,"sick","descriptive_words","malato","word","produces",,"item_538"
-"marrone",,"brown","descriptive_words","marrone","word","produces",,"item_539"
-"morbido",,"soft","descriptive_words","morbido","word","produces",,"item_540"
-"nero",,"black","descriptive_words","nero","word","produces",,"item_541"
-"nuovo",,"new","descriptive_words","nuovo","word","produces",,"item_542"
-"pazzo/matto",,"mad","descriptive_words","pazzo/matto","word","produces",,"item_543"
-"pesante",,"heavy","descriptive_words","pesante","word","produces",,"item_544"
-"piano",,"slow","descriptive_words","piano","word","produces",,"item_545"
-"piccolo",,"little","descriptive_words","piccolo","word","produces",,"item_546"
-"pieno",,"full","descriptive_words","pieno","word","produces",,"item_547"
-"povero",,"poor","descriptive_words","povero","word","produces",,"item_548"
-"pulito",,"clean","descriptive_words","pulito","word","produces",,"item_549"
-"rosso",,"red","descriptive_words","rosso","word","produces",,"item_550"
-"rotto",,"broken","descriptive_words","rotto","word","produces",,"item_551"
-"salato",,"salted/salty","descriptive_words","salato","word","produces",,"item_552"
-"sbagliato",,"wrong","descriptive_words","sbagliato","word","produces",,"item_553"
-"schifoso",,"sticky","descriptive_words","schifoso","word","produces",,"item_554"
-"sciocco/stupido",,"silly","descriptive_words","sciocco/stupido","word","produces",,"item_555"
-"spaventato",,"scared","descriptive_words","spaventato","word","produces",,"item_556"
-"sporco",,"dirty","descriptive_words","sporco","word","produces",,"item_557"
-"stanco",,"tired","descriptive_words","stanco","word","produces",,"item_558"
-"stretto",,"tight","descriptive_words","stretto","word","produces",,"item_559"
-"sveglio",,"awake","descriptive_words","sveglio","word","produces",,"item_560"
-"triste",,"sad","descriptive_words","triste","word","produces",,"item_561"
-"ultimo",,"last","descriptive_words","ultimo","word","produces",,"item_562"
-"vecchio",,"old","descriptive_words","vecchio","word","produces",,"item_563"
-"veloce/svelto",,"fast","descriptive_words","veloce/svelto","word","produces",,"item_564"
-"verde",,"green","descriptive_words","verde","word","produces",,"item_565"
-"vuoto",,"empty","descriptive_words","vuoto","word","produces",,"item_566"
-"adesso/ora",,"now","time_words","adesso/ora","word","produces",,"item_567"
-"domani",,"tomorrow","time_words","domani","word","produces",,"item_568"
-"dopo/poi",,"after","time_words","dopo/poi","word","produces",,"item_569"
-"giorno",,"day","time_words","giorno","word","produces",,"item_570"
-"ieri",,"yesterday","time_words","ieri","word","produces",,"item_571"
-"mattina",,"morning","time_words","mattina","word","produces",,"item_572"
-"notte",,"night","time_words","notte","word","produces",,"item_573"
-"oggi",,"today","time_words","oggi","word","produces",,"item_574"
-"pomeriggio",,"afternoon","time_words","pomeriggio","word","produces",,"item_575"
-"presto",,"early","time_words","presto","word","produces",,"item_576"
-"sera",,"tonight","time_words","sera","word","produces",,"item_577"
-"tardi",,"late","time_words","tardi","word","produces",,"item_578"
-"io",,"I","pronouns","io","word","produces",,"item_579"
-"tu",,"you","pronouns","tu","word","produces",,"item_580"
-"lui",,"he","pronouns","lui","word","produces",,"item_581"
-"lei",,"she","pronouns","lei","word","produces",,"item_582"
-"noi",,"we/us","pronouns","noi","word","produces",,"item_583"
-"voi",,"you","pronouns","voi","word","produces",,"item_584"
-"loro",,"they/their/them","pronouns","loro","word","produces",,"item_585"
-"mio/a",,"mine/my","pronouns","mio/a","word","produces",,"item_586"
-"tuo/a",,"your","pronouns","tuo/a","word","produces",,"item_587"
-"suo/a",,"his/hers","pronouns","suo/a","word","produces",,"item_588"
-"nostro/a",,"our","pronouns","nostro/a","word","produces",,"item_589"
-"vostro/a",,"your","pronouns","vostro/a","word","produces",,"item_590"
-"me/mi",,"me/myself","pronouns","me/mi","word","produces",,"item_591"
-"te/ti",,"yourself","pronouns","te/ti","word","produces",,"item_592"
-"ci",,"us","pronouns","ci","word","produces",,"item_593"
-"vi",,"you","pronouns","vi","word","produces",,"item_594"
-"si",,"himself/herself/itself/oneself","pronouns","si","word","produces",,"item_595"
-"che",,"who/that","pronouns","che","word","produces",,"item_596"
-"quello/a",,"that","pronouns","quello/a","word","produces",,"item_597"
-"questo/a",,"this","pronouns","questo/a","word","produces",,"item_598"
-"gli",,"him","pronouns","gli","word","produces",,"item_599"
-"lo/a",,"it","pronouns","lo/a","word","produces",,"item_600"
-"li/e",,"it","pronouns","li/e","word","produces",,"item_601"
-"che/che cosa","what","what","question_words","che/che_cosa","word","produces",,"item_602"
-"chi","who","who","question_words","chi","word","produces",,"item_603"
-"come","how","how","question_words","come","word","produces",,"item_604"
-"dove","where (question)","where","question_words","dove","word","produces",,"item_605"
-"perchè","why","why","question_words","perche","word","produces",,"item_606"
-"quale",,"which","question_words","quale","word","produces",,"item_607"
-"quando","when (question)","when","question_words","quando","word","produces",,"item_608"
-"di",,"of","prepositions","di","word","produces",,"item_609"
-"a",,"at","prepositions","a","word","produces",,"item_610"
-"da",,"by","prepositions","da","word","produces",,"item_611"
-"in",,"in","prepositions","in","word","produces",,"item_612"
-"con",,"with","prepositions","con","word","produces",,"item_613"
-"su",,"up","prepositions","su","word","produces",,"item_614"
-"giù",,"down","prepositions","gi","word","produces",,"item_615"
-"per",,"for","prepositions","per","word","produces",,"item_616"
-"fra/tra",,"between/among","prepositions","fra/tra","word","produces",,"item_617"
-"sopra",,"above","prepositions","sopra","word","produces",,"item_618"
-"sotto",,"under","prepositions","sotto","word","produces",,"item_619"
-"dentro",,"inside/into","prepositions","dentro","word","produces",,"item_620"
-"fuori",,"out","prepositions","fuori","word","produces",,"item_621"
-"lontano",,"away","prepositions","lontano","word","produces",,"item_622"
-"vicino",,"beside","prepositions","vicino","word","produces",,"item_623"
-"davanti",,"ahead","prepositions","davanti","word","produces",,"item_624"
-"dietro",,"back/behind","prepositions","dietro","word","produces",,"item_625"
-"il",,"the","quantifiers","il","word","produces",,"item_626"
-"lo",,"the","quantifiers","lo","word","produces",,"item_627"
-"la",,"the","quantifiers","la","word","produces",,"item_628"
-"i",,"the","quantifiers","i","word","produces",,"item_629"
-"gli",,"the","quantifiers","gli","word","produces",,"item_630"
-"le",,"the","quantifiers","le","word","produces",,"item_631"
-"un/uno/una",,"a/an","quantifiers","un/uno/una","word","produces",,"item_632"
-"del/della",,"some","quantifiers","del/della","word","produces",,"item_633"
-"dei/delle",,"some","quantifiers","dei/delle","word","produces",,"item_634"
-"altro/un altro",,"another","quantifiers","altro/un_altro","word","produces",,"item_635"
-"sono",,"am","helping_verbs","sono","word","produces",,"item_636"
-"sei",,"are","helping_verbs","sei","word","produces",,"item_637"
-"e",,"is","helping_verbs","e","word","produces",,"item_638"
-"ho",,"have","helping_verbs","ho","word","produces",,"item_639"
-"hai",,"have","helping_verbs","hai","word","produces",,"item_640"
-"ha",,"has","helping_verbs","ha","word","produces",,"item_641"
-"posso",,"can","helping_verbs","posso","word","produces",,"item_642"
-"puoi",,"can","helping_verbs","puoi","word","produces",,"item_643"
-"può",,"can","helping_verbs","puo","word","produces",,"item_644"
-"voglio",,"want","helping_verbs","voglio","word","produces",,"item_645"
-"vuoi",,"want","helping_verbs","vuoi","word","produces",,"item_646"
-"vuole",,"wants","helping_verbs","vuole","word","produces",,"item_647"
-"devo",,"have to","helping_verbs","devo","word","produces",,"item_648"
-"devi",,"have to","helping_verbs","devi","word","produces",,"item_649"
-"deve",,"has to","helping_verbs","deve","word","produces",,"item_650"
-"così",,"so","connecting_words","cosi","word","produces",,"item_651"
-"e",,"and","connecting_words","e","word","produces",,"item_652"
-"ma",,"but","connecting_words","ma","word","produces",,"item_653"
-"perchè",,"because","connecting_words","perche","word","produces",,"item_654"
-"quindi/allora",,"then","connecting_words","quindi/allora","word","produces",,"item_655"
-"se",,"if","connecting_words","se","word","produces",,"item_656"
-"anche/pure",,"too","locations","anche/pure","word","produces",,"item_657"
-"ancora",,"more","locations","ancora","word","produces",,"item_658"
-"di più",,"much","locations","di_piu","word","produces",,"item_659"
-"ecco",,"that is","locations","ecco","word","produces",,"item_660"
-"li/l",,"there","locations","li/l","word","produces",,"item_661"
-"molto",,"much","locations","molto","word","produces",,"item_662"
-"nessuno",,"none","locations","nessuno","word","produces",,"item_663"
-"niente",,"any","locations","niente","word","produces",,"item_664"
-"poco",,"little/few","locations","poco","word","produces",,"item_665"
-"qui/qua",,"here","locations","qui/qua","word","produces",,"item_666"
-"tanto",,"a lot","locations","tanto","word","produces",,"item_667"
-"troppo",,"too","locations","troppo","word","produces",,"item_668"
-"tutto",,"all","locations","tutto","word","produces",,"item_669"
-"un pò",,"any","locations","un_po","word","produces",,"item_670"
+definition,uni_lemma,gloss,category,item,type,choices,complexity_category,itemID
+organo genitale femminile,,vagina,body_parts,organo_genitale_femminile,word,produces,,item_1
+orecchio,,ear,body_parts,orecchio,word,produces,,item_2
+ombelico,,bellybutton,body_parts,ombelico,word,produces,,item_3
+occhio,,eye,body_parts,occhio,word,produces,,item_4
+naso,,nose,body_parts,naso,word,produces,,item_5
+mano,,hand,body_parts,mano,word,produces,,item_6
+lingua,,tongue,body_parts,lingua,word,produces,,item_7
+labbra,,lips,body_parts,labbra,word,produces,,item_8
+guance,,cheek,body_parts,guance,word,produces,,item_9
+gola,,throat,body_parts,gola,word,produces,,item_10
+ginocchi,,knee,body_parts,ginocchi,word,produces,,item_11
+gambe,,leg,body_parts,gambe,word,produces,,item_12
+faccia,,face,body_parts,faccia,word,produces,,item_13
+dito,,finger,body_parts,dito,word,produces,,item_14
+denti,,tooth,body_parts,denti,word,produces,,item_15
+caviglia,,ankle,body_parts,caviglia,word,produces,,item_16
+capelli,,hair,body_parts,capelli,word,produces,,item_17
+braccio,,arm,body_parts,braccio,word,produces,,item_18
+bocca,,mouth,body_parts,bocca,word,produces,,item_19
+vestito,,dress,clothing,vestito,word,produces,,item_20
+tuta,,tracksuit,clothing,tuta,word,produces,,item_21
+stivali,,boots,clothing,stivali,word,produces,,item_22
+sciarpa,,scarf,clothing,sciarpa,word,produces,,item_23
+scarpe,,shoe,clothing,scarpe,word,produces,,item_24
+pigiama,,pajamas,clothing,pigiama,word,produces,,item_25
+pantofole,,slipper,clothing,pantofole,word,produces,,item_26
+pantaloni,,pants,clothing,pantaloni,word,produces,,item_27
+pannolino,,diaper,clothing,pannolino,word,produces,,item_28
+occhiali,,glasses,clothing,occhiali,word,produces,,item_29
+mutande,,underpants,clothing,mutande,word,produces,,item_30
+maglione,,sweater,clothing,maglione,word,produces,,item_31
+jeans,,jeans,clothing,jeans,word,produces,,item_32
+guanti,,gloves,clothing,guanti,word,produces,,item_33
+grembiule,,pinafore,clothing,grembiule,word,produces,,item_34
+gonna,,skirt,clothing,gonna,word,produces,,item_35
+giacca,,jacket,clothing,giacca,word,produces,,item_36
+collana,,necklace,clothing,collana,word,produces,,item_37
+cinta,,belt,clothing,cinta,word,produces,,item_38
+cappotto,,coat,clothing,cappotto,word,produces,,item_39
+cappello,,hat,clothing,cappello,word,produces,,item_40
+camicia,,shirt,clothing,camicia,word,produces,,item_41
+calzettoni,,sock,clothing,calzettoni,word,produces,,item_42
+calze,,tights,clothing,calze,word,produces,,item_43
+bretelle,,suspenders,clothing,bretelle,word,produces,,item_44
+bottone,,button,clothing,bottone,word,produces,,item_45
+borsa,,purse,clothing,borsa,word,produces,,item_46
+bavaglino,,bib,clothing,bavaglino,word,produces,,item_47
+zucchine,,courgette,food_drink,zucchine,word,produces,,item_48
+zucchero,,sugar,food_drink,zucchero,word,produces,,item_49
+yogurt,,yogurt,food_drink,yogurt,word,produces,,item_50
+vino,,wine,food_drink,vino,word,produces,,item_51
+verdura,,vegetable,food_drink,verdura,word,produces,,item_52
+uva,,grapes,food_drink,uva,word,produces,,item_53
+uovo,,egg,food_drink,uovo,word,produces,,item_54
+tortellini,,tortellini,food_drink,tortellini,word,produces,,item_55
+torta,,cake,food_drink,torta,word,produces,,item_56
+tonno,,tuna,food_drink,tonno,word,produces,,item_57
+the,,tea,food_drink,the,word,produces,,item_58
+sugo,,sauce,food_drink,sugo,word,produces,,item_59
+succo di frutta,,juice,food_drink,succo_di_frutta,word,produces,,item_60
+spinaci,,spinach,food_drink,spinaci,word,produces,,item_61
+spaghetti,,spaghetti,food_drink,spaghetti,word,produces,,item_62
+sale,,salt,food_drink,sale,word,produces,,item_63
+riso,,rice,food_drink,riso,word,produces,,item_64
+pomodori,,tomato,food_drink,pomodori,word,produces,,item_65
+polpette,,meat balls,food_drink,polpette,word,produces,,item_66
+pollo,,chicken,food_drink,pollo,word,produces,,item_67
+pizza,,pizza,food_drink,pizza,word,produces,,item_68
+piselli,,peas,food_drink,piselli,word,produces,,item_69
+pesca,,peach,food_drink,pesca,word,produces,,item_70
+pera,,pear,food_drink,pera,word,produces,,item_71
+patatine,,potato chip,food_drink,patatine,word,produces,,item_72
+patate,,potato,food_drink,patate,word,produces,,item_73
+pasta,,pasta,food_drink,pasta,word,produces,,item_74
+pappa,,pap,food_drink,pappa,word,produces,,item_75
+panna,,cream,food_drink,panna,word,produces,,item_76
+panino,,sandwich,food_drink,panino,word,produces,,item_77
+pane,,bread,food_drink,pane,word,produces,,item_78
+olio,,olive oil,food_drink,olio,word,produces,,item_79
+noccioline,,nuts,food_drink,noccioline,word,produces,,item_80
+minestrone/brodo,,soup,food_drink,minestrone/brodo,word,produces,,item_81
+miele,,honey,food_drink,miele,word,produces,,item_82
+melone,,melon,food_drink,melone,word,produces,,item_83
+mela,,apple,food_drink,mela,word,produces,,item_84
+marmellata,,jelly,food_drink,marmellata,word,produces,,item_85
+mandarino,,tangerine,food_drink,mandarino,word,produces,,item_86
+leccalecca,,lollipop,food_drink,leccalecca,word,produces,,item_87
+latte,,milk,food_drink,latte,word,produces,,item_88
+kiwi,,kiwi fruit,food_drink,kiwi,word,produces,,item_89
+gomma da masticare,,gum,food_drink,gomma_da_masticare,word,produces,,item_90
+ghiaccio,,ice,food_drink,ghiaccio,word,produces,,item_91
+gelato,,icecream,food_drink,gelato,word,produces,,item_92
+fragola,,strawberry,food_drink,fragola,word,produces,,item_93
+formaggio,,cheese,food_drink,formaggio,word,produces,,item_94
+fagiolini,,green beans,food_drink,fagiolini,word,produces,,item_95
+fagioli,,beans,food_drink,fagioli,word,produces,,item_96
+crema,,cream,food_drink,crema,word,produces,,item_97
+cracker,,cracker,food_drink,cracker,word,produces,,item_98
+cocomero/anguria,,watermelon,food_drink,cocomero/anguria,word,produces,,item_99
+coca cola,,coke,food_drink,coca_cola,word,produces,,item_100
+cioccolata,,chocolate,food_drink,cioccolata,word,produces,,item_101
+ciliegie,,cherry,food_drink,ciliegie,word,produces,,item_102
+carote,,carrots,food_drink,carote,word,produces,,item_103
+carne,,meat,food_drink,carne,word,produces,,item_104
+caramella,,candy,food_drink,caramella,word,produces,,item_105
+camomilla,,chamomile tea,food_drink,camomilla,word,produces,,item_106
+caffe,,coffee,food_drink,caffe,word,produces,,item_107
+cacao,,cocoa,food_drink,cacao,word,produces,,item_108
+burro,,butter,food_drink,burro,word,produces,,item_109
+budino,,pudding,food_drink,budino,word,produces,,item_110
+biscotti,,cookie,food_drink,biscotti,word,produces,,item_111
+banana,,banana,food_drink,banana,word,produces,,item_112
+aranciata,,orange juice,food_drink,aranciata,word,produces,,item_113
+arancia,,orange,food_drink,arancia,word,produces,,item_114
+acqua,,water,food_drink,acqua,word,produces,,item_115
+trottola,,spinning top,toys,trottola,word,produces,,item_116
+pongo/Didò,,play dogh,toys,pongo/Dido,word,produces,,item_117
+tromba,,trumpet,toys,tromba,word,produces,,item_118
+tamburo,,drum,toys,tamburo,word,produces,,item_119
+soldatini,,toy soldier,toys,soldatini,word,produces,,item_120
+secchiello,,bucket,toys,secchiello,word,produces,,item_121
+pupazzi,,puppet,toys,pupazzi,word,produces,,item_122
+pistola,,gun,toys,pistola,word,produces,,item_123
+palloncino,,balloon,toys,palloncino,word,produces,,item_124
+palla,,ball,toys,palla,word,produces,,item_125
+paletta,,spade,toys,paletta,word,produces,,item_126
+giocattolo,,toy,toys,giocattolo,word,produces,,item_127
+favola/storia,,book/story,toys,favola/storia,word,produces,,item_128
+cubi,,block,toys,cubi,word,produces,,item_129
+costruzioni,,building blocks,toys,costruzioni,word,produces,,item_130
+casetta,,playhouse,toys,casetta,word,produces,,item_131
+birilli,,pin,toys,birilli,word,produces,,item_132
+bambola,,doll,toys,bambola,word,produces,,item_133
+treno,,train,vehicles,treno,word,produces,,item_134
+trattore,,tractor,vehicles,trattore,word,produces,,item_135
+slitta,,sled,vehicles,slitta,word,produces,,item_136
+passeggino,,stroller,vehicles,passeggino,word,produces,,item_137
+motocicletta,,motorcycle,vehicles,motocicletta,word,produces,,item_138
+jeep,,jeep,vehicles,jeep,word,produces,,item_139
+gru,,crane,vehicles,gru,word,produces,,item_140
+elicottero,,helicopter,vehicles,elicottero,word,produces,,item_141
+camion,,truck,vehicles,camion,word,produces,,item_142
+bicicletta,,bicycle,vehicles,bicicletta,word,produces,,item_143
+barca,,boat,vehicles,barca,word,produces,,item_144
+automobile,,car,vehicles,automobile,word,produces,,item_145
+autobus,,bus,vehicles,autobus,word,produces,,item_146
+aereo,,airplane,vehicles,aereo,word,produces,,item_147
+zebra,,zebra,animals,zebra,word,produces,,item_148
+zanzara,,mosquito,animals,zanzara,word,produces,,item_149
+uccellino,,bird,animals,uccellino,word,produces,,item_150
+topo,,mouse,animals,topo,word,produces,,item_151
+tigre,,tiger,animals,tigre,word,produces,,item_152
+tartaruga,,turtle,animals,tartaruga,word,produces,,item_153
+tacchino,,turkey,animals,tacchino,word,produces,,item_154
+scoiattolo,,squirrel,animals,scoiattolo,word,produces,,item_155
+scimmia,,monkey,animals,scimmia,word,produces,,item_156
+rana,,frog,animals,rana,word,produces,,item_157
+pulcino,,chick,animals,pulcino,word,produces,,item_158
+pinguino,,penguin,animals,pinguino,word,produces,,item_159
+pesciolino,,fish,animals,pesciolino,word,produces,,item_160
+pecora,,sheep,animals,pecora,word,produces,,item_161
+papera,,duck,animals,papera,word,produces,,item_162
+orso,,bear,animals,orso,word,produces,,item_163
+oca,,goose,animals,oca,word,produces,,item_164
+mucca,,cow,animals,mucca,word,produces,,item_165
+mosca,,fly,animals,mosca,word,produces,,item_166
+maiale,,pig,animals,maiale,word,produces,,item_167
+lupo,,wolf,animals,lupo,word,produces,,item_168
+leone,,lion,animals,leone,word,produces,,item_169
+ippopotamo,,hippopotamus,animals,ippopotamo,word,produces,,item_170
+gufo,,owl,animals,gufo,word,produces,,item_171
+giraffa,,giraffe,animals,giraffa,word,produces,,item_172
+gatto,,cat,animals,gatto,word,produces,,item_173
+gallo,,rooster,animals,gallo,word,produces,,item_174
+gallina,,hen,animals,gallina,word,produces,,item_175
+formica,,ant,animals,formica,word,produces,,item_176
+foca,,seal,animals,foca,word,produces,,item_177
+farfalla,,butterfly,animals,farfalla,word,produces,,item_178
+elefante,,elephant,animals,elefante,word,produces,,item_179
+cucciolo,,puppy/kitty,animals,cucciolo,word,produces,,item_180
+coniglio,,bunny,animals,coniglio,word,produces,,item_181
+coccodrillo,,crocodile,animals,coccodrillo,word,produces,,item_182
+cerbiatto,,fawn,animals,cerbiatto,word,produces,,item_183
+cavallo,,horse,animals,cavallo,word,produces,,item_184
+capra,,goat,animals,capra,word,produces,,item_185
+cane,,dog,animals,cane,word,produces,,item_186
+asino,,donkey,animals,asino,word,produces,,item_187
+ape,,bee,animals,ape,word,produces,,item_188
+animale,,animal,animals,animale,word,produces,,item_189
+agnello,,lamb,animals,agnello,word,produces,,item_190
+tuttù,,choo choo,sounds,tuttu,word,produces,,item_191
+muh,,moo,sounds,muh,word,produces,,item_192
+grr,,grr,sounds,grr,word,produces,,item_193
+coccodè,,cockadoodledoo,sounds,coccode,word,produces,,item_194
+qua qua,,quack quack,sounds,qua_qua,word,produces,,item_195
+miao,,meow,sounds,miao,word,produces,,item_196
+oh oh,,uh oh,sounds,ih_oh,word,produces,,item_197
+clop clop,,,sounds,clop_clop,word,produces,,item_198
+cip cip,,tweet tweet,sounds,cip_cip,word,produces,,item_199
+brum brum,,vroom,sounds,brum_brum,word,produces,,item_200
+beh beh,,baa baa,sounds,beh_beh,word,produces,,item_201
+bau bau,,woof woof,sounds,bau_bau,word,produces,,item_202
+organo genitale maschile,,penis,body_parts,organo_genitale_maschile,word,produces,,item_203
+pancia,,tummy,body_parts,pancia,word,produces,,item_204
+piede,,feet,body_parts,piede,word,produces,,item_205
+sederino,,buttocks,body_parts,sederino,word,produces,,item_206
+seno,,breast,body_parts,seno,word,produces,,item_207
+spalla,,shoulder,body_parts,spalla,word,produces,,item_208
+testa,,head,body_parts,testa,word,produces,,item_209
+unghie,,nail,body_parts,unghie,word,produces,,item_210
+asciugamano,,towel,household,asciugamano,word,produces,,item_211
+aspirapolvere,,vacuum,household,aspirapolvere,word,produces,,item_212
+biberon,,baby,household,biberon,word,produces,,item_213
+bicchiere,,glass,household,bicchiere,word,produces,,item_214
+bottiglia,,bottle,household,bottiglia,word,produces,,item_215
+candeline,,birthday candle,household,candeline,word,produces,,item_216
+cestino,,basket,household,cestino,word,produces,,item_217
+chiave,,keys,household,chiave,word,produces,,item_218
+ciuccio,,pacifier,household,ciuccio,word,produces,,item_219
+colori,,crayons,household,colori,word,produces,,item_220
+coltello,,knife,household,coltello,word,produces,,item_221
+coperchio,,cover,household,coperchio,word,produces,,item_222
+coperta,,blanket,household,coperta,word,produces,,item_223
+cucchiaio,,spoon,household,cucchiaio,word,produces,,item_224
+cuscino,,pillow,household,cuscino,word,produces,,item_225
+dentifricio,,toothpaste,household,dentifricio,word,produces,,item_226
+disegno,,drawing,household,disegno,word,produces,,item_227
+fazzoletto,,tissue/kleenex,household,fazzoletto,word,produces,,item_228
+forbici,,scissors,household,forbici,word,produces,,item_229
+forchetta,,fork,household,forchetta,word,produces,,item_230
+fotografia,,picture,household,fotografia,word,produces,,item_231
+giornale,,paper,household,giornale,word,produces,,item_232
+luce,,light,household,luce,word,produces,,item_233
+libro,,book,household,libro,word,produces,,item_234
+martello,,hammer,household,martello,word,produces,,item_235
+matita/penna,,pencil/pen,household,matita/penna,word,produces,,item_236
+medicina,,medicine,household,medicina,word,produces,,item_237
+musica,,music,household,musica,word,produces,,item_238
+ombrello,,umbrella,household,ombrello,word,produces,,item_239
+orologio,,clock,household,orologio,word,produces,,item_240
+pentola,,pot,household,pentola,word,produces,,item_241
+pettine,,comb,household,pettine,word,produces,,item_242
+pianta,,plant,household,pianta,word,produces,,item_243
+piatto,,dish,household,piatto,word,produces,,item_244
+sacchetto,,bag,household,sacchetto,word,produces,,item_245
+sapone,,soap,household,sapone,word,produces,,item_246
+scatola,,box,household,scatola,word,produces,,item_247
+scopa,,broom,household,scopa,word,produces,,item_248
+secchio,,bucket,household,secchio,word,produces,,item_249
+shampoo,,shampoo,household,shampoo,word,produces,,item_250
+soldi,,money,household,soldi,word,produces,,item_251
+spazzolino da denti,,toothbrush,household,spazzolino_da_denti,word,produces,,item_252
+specchio,,mirror,household,specchio,word,produces,,item_253
+straccio,,mop,household,straccio,word,produces,,item_254
+tappo,,cap,household,tappo,word,produces,,item_255
+tazza,,cup,household,tazza,word,produces,,item_256
+telefono,,telephone,household,telefono,word,produces,,item_257
+termometro,,thermometer,household,termometro,word,produces,,item_258
+termosifone,,radiator,household,termosifone,word,produces,,item_259
+vasino,,potty,household,vasino,word,produces,,item_260
+armadio,,closet,furniture_rooms,armadio,word,produces,,item_261
+bagno,,bathroom,furniture_rooms,bagno,word,produces,,item_262
+bidè,,bidet,furniture_rooms,bid,word,produces,,item_263
+camera,,room,furniture_rooms,camera,word,produces,,item_264
+cantina,,basement,furniture_rooms,cantina,word,produces,,item_265
+cassetto,,drawer,furniture_rooms,cassetto,word,produces,,item_266
+cucina,,kitchen,furniture_rooms,cucina,word,produces,,item_267
+culla,,crib,furniture_rooms,culla,word,produces,,item_268
+divano,,couch,furniture_rooms,divano,word,produces,,item_269
+doccia,,shower,furniture_rooms,doccia,word,produces,,item_270
+ferro da stiro,,iron,furniture_rooms,ferro_da_stiro,word,produces,,item_271
+finestra,,window,furniture_rooms,finestra,word,produces,,item_272
+fon,,dryer,furniture_rooms,fon,word,produces,,item_273
+forno,,oven,furniture_rooms,forno,word,produces,,item_274
+frigorifero,,refrigerator,furniture_rooms,frigorifero,word,produces,,item_275
+lavandino,,sink,furniture_rooms,lavandino,word,produces,,item_276
+lavatrice,,washingmachine,furniture_rooms,lavatrice,word,produces,,item_277
+letto,,bed,furniture_rooms,letto,word,produces,,item_278
+muro,,wall,furniture_rooms,muro,word,produces,,item_279
+poltrona,,armchair,furniture_rooms,poltrona,word,produces,,item_280
+porta,,door,furniture_rooms,porta,word,produces,,item_281
+quadro,,picture,furniture_rooms,quadro,word,produces,,item_282
+radio,,radio,furniture_rooms,radio,word,produces,,item_283
+registratore,,tape recorder,furniture_rooms,registratore,word,produces,,item_284
+salotto,,livingroom,furniture_rooms,salotto,word,produces,,item_285
+scala,,stairs,furniture_rooms,scala,word,produces,,item_286
+sedia,,chair,furniture_rooms,sedia,word,produces,,item_287
+seggiolone,,highchair,furniture_rooms,seggiolone,word,produces,,item_288
+tappeto,,carpet,furniture_rooms,tappeto,word,produces,,item_289
+tavolo,,table,furniture_rooms,tavolo,word,produces,,item_290
+televisione/TV,,TV,furniture_rooms,televisione/TV,word,produces,,item_291
+terrazza,,porch,furniture_rooms,terrazza,word,produces,,item_292
+vasca da bagno,,bathtub,furniture_rooms,vasca_da_bagno,word,produces,,item_293
+albero,,tree,outside,albero,word,produces,,item_294
+altalena,,swing,outside,altalena,word,produces,,item_295
+ascensore,,elevator,outside,ascensore,word,produces,,item_296
+bandiera,,flag,outside,bandiera,word,produces,,item_297
+benzina,,gasoline,outside,benzina,word,produces,,item_298
+campana,,bell,outside,campana,word,produces,,item_299
+cielo,,sky,outside,cielo,word,produces,,item_300
+erba,,grass,outside,erba,word,produces,,item_301
+fiore,,flower,outside,fiore,word,produces,,item_302
+foglia,,leaf,outside,foglia,word,produces,,item_303
+fontana,,fountain,outside,fontana,word,produces,,item_304
+fumo,,smog,outside,fumo,word,produces,,item_305
+garage,,garage,outside,garage,word,produces,,item_306
+luna,,moon,outside,luna,word,produces,,item_307
+nebbia,,fog,outside,nebbia,word,produces,,item_308
+neve,,snow,outside,neve,word,produces,,item_309
+nuvola,cloud,cloud,outside,nuvola,word,produces,,item_310
+pioggia,,rain,outside,pioggia,word,produces,,item_311
+piscina,,pool,outside,piscina,word,produces,,item_312
+pompa,,pump,outside,pompa,word,produces,,item_313
+prato,,lawn,outside,prato,word,produces,,item_314
+sasso,,stone,outside,sasso,word,produces,,item_315
+scivolo,,slide,outside,scivolo,word,produces,,item_316
+sole,,sun,outside,sole,word,produces,,item_317
+stella,,star,outside,stella,word,produces,,item_318
+strada,,street,outside,strada,word,produces,,item_319
+terra,,earth,outside,terra,word,produces,,item_320
+tetto,,roof,outside,tetto,word,produces,,item_321
+torre,,tower,outside,torre,word,produces,,item_322
+tubo,,hose,outside,tubo,word,produces,,item_323
+vento,,wind,outside,vento,word,produces,,item_324
+asilo,,kindergarten,places,asilo,word,produces,,item_325
+bar,,bar,places,bar,word,produces,,item_326
+bosco,,woods,places,bosco,word,produces,,item_327
+campagna,,country,places,campagna,word,produces,,item_328
+casa,,house/home,places,casa,word,produces,,item_329
+chiesa,,church,places,chiesa,word,produces,,item_330
+circo,,circus,places,circo,word,produces,,item_331
+città,,downtown,places,citta,word,produces,,item_332
+festa,,party,places,festa,word,produces,,item_333
+giardino,,garden,places,giardino,word,produces,,item_334
+giostra,,merry-go-round,places,giostra,word,produces,,item_335
+lavoro,,work,places,lavoro,word,produces,,item_336
+mare,,sea,places,mare,word,produces,,item_337
+mercato,,market,places,mercato,word,produces,,item_338
+montagna,,rock,places,montagna,word,produces,,item_339
+negozio,,store,places,negozio,word,produces,,item_340
+ospedale,,hospital,places,ospedale,word,produces,,item_341
+parco giochi,,playground,places,parco_giochi,word,produces,,item_342
+scuola,,school,places,scuola,word,produces,,item_343
+spiaggia,,beach,places,spiaggia,word,produces,,item_344
+supermercato,,supermarket,places,supermercato,word,produces,,item_345
+zoo,,zoo,places,zoo,word,produces,,item_346
+amico/a,,friend,people,amico/a,word,produces,,item_347
+babysitter/tata,,babysitter,people,babysitter/tata,word,produces,,item_348
+bambino/a,,baby,people,bambino/a,word,produces,,item_349
+barbiere,,barber,people,barbiere,word,produces,,item_350
+bimbi,child,children,people,bimbi,word,produces,,item_351
+cugino/a,,cousin,people,cugino/a,word,produces,,item_352
+donna,,woman,people,donna,word,produces,,item_353
+dottore,,doctor,people,dottore,word,produces,,item_354
+fratello,,brother,people,fratello,word,produces,,item_355
+il suo nome,,child,people,il_suo_nome,word,produces,,item_356
+maestro/a,,teacher,people,maestro/a,word,produces,,item_357
+mamma,,mommy,people,mamma,word,produces,,item_358
+nonna,,grandma,people,nonna,word,produces,,item_359
+nonno,,grandpa,people,nonno,word,produces,,item_360
+panettiere,,baker,people,panettiere,word,produces,,item_361
+papà,,daddy,people,papa,word,produces,,item_362
+parrucchiere,,hairdresser,people,parrucchiere,word,produces,,item_363
+pediatra,,pediatrician,people,pediatra,word,produces,,item_364
+persone,,people,people,persone,word,produces,,item_365
+poliziotto,,police,people,poliziotto,word,produces,,item_366
+portiere,,door keeper,people,portiere,word,produces,,item_367
+ragazzo/a,,boy/girl,people,ragazzo/a,word,produces,,item_368
+signore/a,,sir/lady,people,signore/a,word,produces,,item_369
+soldato,,soldier,people,soldato,word,produces,,item_370
+sorella,,sister,people,sorella,word,produces,,item_371
+uomo,,man,people,uomo,word,produces,,item_372
+vigile,,traffic officer,people,vigile,word,produces,,item_373
+zia,,aunt,people,zia,word,produces,,item_374
+zio,,uncle,people,zio,word,produces,,item_375
+auguri,,wishes,games_routines,auguri,word,produces,,item_376
+basta,,cut it out,games_routines,basta,word,produces,,item_377
+bravo,,good boy/girl,games_routines,bravo,word,produces,,item_378
+bua,,,games_routines,bua,word,produces,,item_379
+bum (cade),,,games_routines,bum_(cade),word,produces,,item_380
+buonanotte/buongiorno,,nightnight/good morning,games_routines,buonanotte/buongiorno,word,produces,,item_381
+ciao,,hi,games_routines,ciao,word,produces,,item_382
+che rumore/chiasso,,noise,games_routines,che_rumore/chiasso,word,produces,,item_383
+cuccù settete,peekaboo,peekaboo,games_routines,cuccu_settete,word,produces,,item_384
+dare le tottò,,to slap,games_routines,dare_le_totto,word,produces,,item_385
+fare il bagno,,bath,games_routines,fare_il_bagno,word,produces,,item_386
+fare la pipì,go potty,go potty,games_routines,fare_la_pipi,word,produces,,item_387
+fare la popò,go potty,to poop,games_routines,fare_la_popo,word,produces,,item_388
+giro-girotondo,,turnaround,games_routines,giro-girotondo,word,produces,,item_389
+grazie/prego,,thankyou,games_routines,grazie/prego,word,produces,,item_390
+nanna,,nap,games_routines,nanna,word,produces,,item_391
+no,,no,games_routines,no,word,produces,,item_392
+non c'è più,no more,no more,games_routines,non_ce_piu,word,produces,,item_393
+per favore/per piacere,,please,games_routines,per_favore/per_piacere,word,produces,,item_394
+pronto/chi è?,hello,hello,games_routines,pronto_chi_e?,word,produces,,item_395
+sì,,yes,games_routines,si,word,produces,,item_396
+un/due/tre,one two three,one two three,games_routines,un_due_tre,word,produces,,item_397
+via,,go,games_routines,via,word,produces,,item_398
+voler bene,,to love,games_routines,voler_bene,word,produces,,item_399
+zitto/sch,,shh/shush/hush,games_routines,zitto/sch,word,produces,,item_400
+abbracciare,,hug,action_words,abbracciare,word,produces,,item_401
+accendere,,light/switch on,action_words,accendere,word,produces,,item_402
+acchiappare,,catch,action_words,acchiappare,word,produces,,item_403
+aggiustare,,fix,action_words,aggiustare,word,produces,,item_404
+aiutare,,help,action_words,aiutare,word,produces,,item_405
+alzarsi,,stand,action_words,alzarsi,word,produces,,item_406
+andare,,go,action_words,andare,word,produces,,item_407
+aprire,,open,action_words,aprire,word,produces,,item_408
+arrampicarsi,,climb,action_words,arrampicarsi,word,produces,,item_409
+asciugare,,dry,action_words,asciugare,word,produces,,item_410
+aspettare,,wait,action_words,aspettare,word,produces,,item_411
+aver fame,,hungry,action_words,aver_fame,word,produces,,item_412
+aver sete,,thirsty,action_words,aver_sete,word,produces,,item_413
+aver sonno,,sleepy,action_words,aver_sonno,word,produces,,item_414
+baciare,,kiss,action_words,baciare,word,produces,,item_415
+ballare,,dance,action_words,ballare,word,produces,,item_416
+bere,,drink,action_words,bere,word,produces,,item_417
+bussare,,knock,action_words,bussare,word,produces,,item_418
+buttare,,dump,action_words,buttare,word,produces,,item_419
+cadere,,fall,action_words,cadere,word,produces,,item_420
+camminare,,walk,action_words,camminare,word,produces,,item_421
+cantare,,sing,action_words,cantare,word,produces,,item_422
+cercare,,seek,action_words,cercare,word,produces,,item_423
+chiudere,,close,action_words,chiudere,word,produces,,item_424
+colorare,,paint,action_words,colorare,word,produces,,item_425
+comprare,,buy,action_words,comprare,word,produces,,item_426
+conoscere,,know,action_words,conoscere,word,produces,,item_427
+coprire,,cover,action_words,coprire,word,produces,,item_428
+correre,,run,action_words,correre,word,produces,,item_429
+costruire,,build,action_words,costruire,word,produces,,item_430
+cucinare,,cook,action_words,cucinare,word,produces,,item_431
+cullare,,rock,action_words,cullare,word,produces,,item_432
+dare,,give,action_words,dare,word,produces,,item_433
+dare un calcio,,kick,action_words,dare_un_calcio,word,produces,,item_434
+dire,,say,action_words,dire,word,produces,,item_435
+disegnare,,draw,action_words,disegnare,word,produces,,item_436
+dondolare,,swing,action_words,dondolare,word,produces,,item_437
+dormire,,sleep,action_words,dormire,word,produces,,item_438
+entrare,,enter,action_words,entrare,word,produces,,item_439
+fare,,make,action_words,fare,word,produces,,item_440
+fermarsi,,stop,action_words,fermarsi,word,produces,,item_441
+finire,,finish,action_words,finire,word,produces,,item_442
+giocare,,play,action_words,giocare,word,produces,,item_443
+girare,,turn,action_words,girare,word,produces,,item_444
+gridare/urlare,,shout,action_words,gridare/urlare,word,produces,,item_445
+guardare,,look,action_words,guardare,word,produces,,item_446
+guidare,,drive,action_words,guidare,word,produces,,item_447
+lanciare,,throw,action_words,lanciare,word,produces,,item_448
+lavare,,wash,action_words,lavare,word,produces,,item_449
+lavorare,,work,action_words,lavorare,word,produces,,item_450
+leccare,,lick,action_words,leccare,word,produces,,item_451
+leggere,,read,action_words,leggere,word,produces,,item_452
+levare/togliere,,take off/remove,action_words,levare/togliere,word,produces,,item_453
+litigare,,fight,action_words,litigare,word,produces,,item_454
+mangiare,,eat,action_words,mangiare,word,produces,,item_455
+mettere,,put,action_words,mettere,word,produces,,item_456
+mordere,,bite,action_words,mordere,word,produces,,item_457
+nascondere/si,,hide,action_words,nascondere/si,word,produces,,item_458
+nuotare,,swim,action_words,nuotare,word,produces,,item_459
+parlare,,talk,action_words,parlare,word,produces,,item_460
+passeggiare,,walk,action_words,passeggiare,word,produces,,item_461
+pettinare,,comb/brush,action_words,pettinare,word,produces,,item_462
+piacere,,like,action_words,piacere,word,produces,,item_463
+piangere,,cry,action_words,piangere,word,produces,,item_464
+portare,,bring/carry,action_words,portare,word,produces,,item_465
+prendere,,take,action_words,prendere,word,produces,,item_466
+provare,,taste,action_words,provare,word,produces,,item_467
+pulire,,clean,action_words,pulire,word,produces,,item_468
+raccontare,,tell,action_words,raccontare,word,produces,,item_469
+regalare,,give present,action_words,regalare,word,produces,,item_470
+restare,,remain,action_words,restare,word,produces,,item_471
+ridere,,smile,action_words,ridere,word,produces,,item_472
+rispondere,,answer,action_words,rispondere,word,produces,,item_473
+rompere,,break,action_words,rompere,word,produces,,item_474
+rovesciare,,spill,action_words,rovesciare,word,produces,,item_475
+saltare,,jump,action_words,saltare,word,produces,,item_476
+salutare,,greet,action_words,salutare,word,produces,,item_477
+sbrigarsi,,hurry,action_words,sbrigarsi,word,produces,,item_478
+scappare,,bolt,action_words,scappare,word,produces,,item_479
+scendere,,go down,action_words,scendere,word,produces,,item_480
+scrivere,,write,action_words,scrivere,word,produces,,item_481
+sedersi,,sit,action_words,sedersi,word,produces,,item_482
+sentire,,hear/listen,action_words,sentire,word,produces,,item_483
+soffiare,,blow,action_words,soffiare,word,produces,,item_484
+spazzare,,sweep,action_words,spazzare,word,produces,,item_485
+spegnere,,put out,action_words,spegnere,word,produces,,item_486
+spingere,,push,action_words,spingere,word,produces,,item_487
+sporcarsi,,get dirty,action_words,sporcarsi,word,produces,,item_488
+sputare,,spit,action_words,sputare,word,produces,,item_489
+stare,,stay,action_words,stare,word,produces,,item_490
+strappare,,rip,action_words,strappare,word,produces,,item_491
+svegliarsi,,wake,action_words,svegliarsi,word,produces,,item_492
+tagliare,,cut,action_words,tagliare,word,produces,,item_493
+telefonare,,phone,action_words,telefonare,word,produces,,item_494
+tenere,,hold,action_words,tenere,word,produces,,item_495
+tirare,,pull,action_words,tirare,word,produces,,item_496
+toccare,,touch,action_words,toccare,word,produces,,item_497
+trovare,,find,action_words,trovare,word,produces,,item_498
+uscire,,go out,action_words,uscire,word,produces,,item_499
+vedere,,see/watch,action_words,vedere,word,produces,,item_500
+venire,,come,action_words,venire,word,produces,,item_501
+versare,,pour,action_words,versare,word,produces,,item_502
+volare,,fly,action_words,volare,word,produces,,item_503
+addormentato,,asleep,descriptive_words,addormentato,word,produces,,item_504
+alto,,high,descriptive_words,alto,word,produces,,item_505
+amaro,,bitter,descriptive_words,amaro,word,produces,,item_506
+arancione,,orange,descriptive_words,arancione,word,produces,,item_507
+arrabbiato,,angry,descriptive_words,arrabbiato,word,produces,,item_508
+asciutto,,dry,descriptive_words,asciutto,word,produces,,item_509
+attento,,carefull,descriptive_words,attento,word,produces,,item_510
+bagnato,,wet,descriptive_words,bagnato,word,produces,,item_511
+bello,,nice,descriptive_words,bello,word,produces,,item_512
+bianco,,white,descriptive_words,bianco,word,produces,,item_513
+blu,,blue,descriptive_words,blu,word,produces,,item_514
+brutto,,ugly/bad,descriptive_words,brutto,word,produces,,item_515
+buio,,dark,descriptive_words,buio,word,produces,,item_516
+buono,,good,descriptive_words,buono,word,produces,,item_517
+caldo,,hot,descriptive_words,caldo,word,produces,,item_518
+calmo/tranquillo,,quiet,descriptive_words,calmo/tranquillo,word,produces,,item_519
+carino,,cute/pretty,descriptive_words,carino,word,produces,,item_520
+cattivo,,bad,descriptive_words,cattivo,word,produces,,item_521
+contento,,happy,descriptive_words,contento,word,produces,,item_522
+corto,,short,descriptive_words,corto,word,produces,,item_523
+disubbidiente,,naughty,descriptive_words,disubbidiente,word,produces,,item_524
+dolce,,sweet,descriptive_words,dolce,word,produces,,item_525
+duro,,hard,descriptive_words,duro,word,produces,,item_526
+felice,,happy,descriptive_words,felice,word,produces,,item_527
+ferito,,hurt,descriptive_words,ferito,word,produces,,item_528
+finito,,finished,descriptive_words,finito,word,produces,,item_529
+forte,,loud,descriptive_words,forte,word,produces,,item_530
+freddo,,cold,descriptive_words,freddo,word,produces,,item_531
+gentile,,gentle,descriptive_words,gentile,word,produces,,item_532
+giallo,,yellow,descriptive_words,giallo,word,produces,,item_533
+grande/grosso,,big,descriptive_words,grande/grosso,word,produces,,item_534
+leggero,,light,descriptive_words,leggero,word,produces,,item_535
+lento,,slow,descriptive_words,lento,word,produces,,item_536
+lungo,,long,descriptive_words,lungo,word,produces,,item_537
+malato,,sick,descriptive_words,malato,word,produces,,item_538
+marrone,,brown,descriptive_words,marrone,word,produces,,item_539
+morbido,,soft,descriptive_words,morbido,word,produces,,item_540
+nero,,black,descriptive_words,nero,word,produces,,item_541
+nuovo,,new,descriptive_words,nuovo,word,produces,,item_542
+pazzo/matto,,mad,descriptive_words,pazzo/matto,word,produces,,item_543
+pesante,,heavy,descriptive_words,pesante,word,produces,,item_544
+piano,,slow,descriptive_words,piano,word,produces,,item_545
+piccolo,,little,descriptive_words,piccolo,word,produces,,item_546
+pieno,,full,descriptive_words,pieno,word,produces,,item_547
+povero,,poor,descriptive_words,povero,word,produces,,item_548
+pulito,,clean,descriptive_words,pulito,word,produces,,item_549
+rosso,,red,descriptive_words,rosso,word,produces,,item_550
+rotto,,broken,descriptive_words,rotto,word,produces,,item_551
+salato,,salted/salty,descriptive_words,salato,word,produces,,item_552
+sbagliato,,wrong,descriptive_words,sbagliato,word,produces,,item_553
+schifoso,,sticky,descriptive_words,schifoso,word,produces,,item_554
+sciocco/stupido,,silly,descriptive_words,sciocco/stupido,word,produces,,item_555
+spaventato,,scared,descriptive_words,spaventato,word,produces,,item_556
+sporco,,dirty,descriptive_words,sporco,word,produces,,item_557
+stanco,,tired,descriptive_words,stanco,word,produces,,item_558
+stretto,,tight,descriptive_words,stretto,word,produces,,item_559
+sveglio,,awake,descriptive_words,sveglio,word,produces,,item_560
+triste,,sad,descriptive_words,triste,word,produces,,item_561
+ultimo,,last,descriptive_words,ultimo,word,produces,,item_562
+vecchio,,old,descriptive_words,vecchio,word,produces,,item_563
+veloce/svelto,,fast,descriptive_words,veloce/svelto,word,produces,,item_564
+verde,,green,descriptive_words,verde,word,produces,,item_565
+vuoto,,empty,descriptive_words,vuoto,word,produces,,item_566
+adesso/ora,,now,time_words,adesso/ora,word,produces,,item_567
+domani,,tomorrow,time_words,domani,word,produces,,item_568
+dopo/poi,,after,time_words,dopo/poi,word,produces,,item_569
+giorno,,day,time_words,giorno,word,produces,,item_570
+ieri,,yesterday,time_words,ieri,word,produces,,item_571
+mattina,,morning,time_words,mattina,word,produces,,item_572
+notte,,night,time_words,notte,word,produces,,item_573
+oggi,,today,time_words,oggi,word,produces,,item_574
+pomeriggio,,afternoon,time_words,pomeriggio,word,produces,,item_575
+presto,,early,time_words,presto,word,produces,,item_576
+sera,,tonight,time_words,sera,word,produces,,item_577
+tardi,,late,time_words,tardi,word,produces,,item_578
+io,,I,pronouns,io,word,produces,,item_579
+tu,,you,pronouns,tu,word,produces,,item_580
+lui,,he,pronouns,lui,word,produces,,item_581
+lei,,she,pronouns,lei,word,produces,,item_582
+noi,,we/us,pronouns,noi,word,produces,,item_583
+voi,,you,pronouns,voi,word,produces,,item_584
+loro,,they/their/them,pronouns,loro,word,produces,,item_585
+mio/a,,mine/my,pronouns,mio/a,word,produces,,item_586
+tuo/a,,your,pronouns,tuo/a,word,produces,,item_587
+suo/a,,his/hers,pronouns,suo/a,word,produces,,item_588
+nostro/a,,our,pronouns,nostro/a,word,produces,,item_589
+vostro/a,,your,pronouns,vostro/a,word,produces,,item_590
+me/mi,,me/myself,pronouns,me/mi,word,produces,,item_591
+te/ti,,yourself,pronouns,te/ti,word,produces,,item_592
+ci,,us,pronouns,ci,word,produces,,item_593
+vi,,you,pronouns,vi,word,produces,,item_594
+si,,himself/herself/itself/oneself,pronouns,si,word,produces,,item_595
+che,,who/that,pronouns,che,word,produces,,item_596
+quello/a,,that,pronouns,quello/a,word,produces,,item_597
+questo/a,,this,pronouns,questo/a,word,produces,,item_598
+gli,,him,pronouns,gli,word,produces,,item_599
+lo/a,,it,pronouns,lo/a,word,produces,,item_600
+li/e,,it,pronouns,li/e,word,produces,,item_601
+che/che cosa,what,what,question_words,che/che_cosa,word,produces,,item_602
+chi,who,who,question_words,chi,word,produces,,item_603
+come,how,how,question_words,come,word,produces,,item_604
+dove,where (question),where,question_words,dove,word,produces,,item_605
+perchè,why,why,question_words,perche,word,produces,,item_606
+quale,,which,question_words,quale,word,produces,,item_607
+quando,when (question),when,question_words,quando,word,produces,,item_608
+di,,of,prepositions,di,word,produces,,item_609
+a,,at,prepositions,a,word,produces,,item_610
+da,,by,prepositions,da,word,produces,,item_611
+in,,in,prepositions,in,word,produces,,item_612
+con,,with,prepositions,con,word,produces,,item_613
+su,,up,prepositions,su,word,produces,,item_614
+giù,,down,prepositions,gi,word,produces,,item_615
+per,,for,prepositions,per,word,produces,,item_616
+fra/tra,,between/among,prepositions,fra/tra,word,produces,,item_617
+sopra,,above,prepositions,sopra,word,produces,,item_618
+sotto,,under,prepositions,sotto,word,produces,,item_619
+dentro,,inside/into,prepositions,dentro,word,produces,,item_620
+fuori,,out,prepositions,fuori,word,produces,,item_621
+lontano,,away,prepositions,lontano,word,produces,,item_622
+vicino,,beside,prepositions,vicino,word,produces,,item_623
+davanti,,ahead,prepositions,davanti,word,produces,,item_624
+dietro,,back/behind,prepositions,dietro,word,produces,,item_625
+il,,the,quantifiers,il,word,produces,,item_626
+lo,,the,quantifiers,lo,word,produces,,item_627
+la,,the,quantifiers,la,word,produces,,item_628
+i,,the,quantifiers,i,word,produces,,item_629
+gli,,the,quantifiers,gli,word,produces,,item_630
+le,,the,quantifiers,le,word,produces,,item_631
+un/uno/una,,a/an,quantifiers,un/uno/una,word,produces,,item_632
+del/della,,some,quantifiers,del/della,word,produces,,item_633
+dei/delle,,some,quantifiers,dei/delle,word,produces,,item_634
+altro/un altro,,another,quantifiers,altro/un_altro,word,produces,,item_635
+sono,,am,helping_verbs,sono,word,produces,,item_636
+sei,,are,helping_verbs,sei,word,produces,,item_637
+e,,is,helping_verbs,e,word,produces,,item_638
+ho,,have,helping_verbs,ho,word,produces,,item_639
+hai,,have,helping_verbs,hai,word,produces,,item_640
+ha,,has,helping_verbs,ha,word,produces,,item_641
+posso,,can,helping_verbs,posso,word,produces,,item_642
+puoi,,can,helping_verbs,puoi,word,produces,,item_643
+può,,can,helping_verbs,puo,word,produces,,item_644
+voglio,,want,helping_verbs,voglio,word,produces,,item_645
+vuoi,,want,helping_verbs,vuoi,word,produces,,item_646
+vuole,,wants,helping_verbs,vuole,word,produces,,item_647
+devo,,have to,helping_verbs,devo,word,produces,,item_648
+devi,,have to,helping_verbs,devi,word,produces,,item_649
+deve,,has to,helping_verbs,deve,word,produces,,item_650
+così,,so,connecting_words,cosi,word,produces,,item_651
+e,,and,connecting_words,e,word,produces,,item_652
+ma,,but,connecting_words,ma,word,produces,,item_653
+perchè,,because,connecting_words,perche,word,produces,,item_654
+quindi/allora,,then,connecting_words,quindi/allora,word,produces,,item_655
+se,,if,connecting_words,se,word,produces,,item_656
+anche/pure,,too,locations,anche/pure,word,produces,,item_657
+ancora,,more,locations,ancora,word,produces,,item_658
+di più,,much,locations,di_piu,word,produces,,item_659
+ecco,,that is,locations,ecco,word,produces,,item_660
+li/l,,there,locations,li/l,word,produces,,item_661
+molto,,much,locations,molto,word,produces,,item_662
+nessuno,,none,locations,nessuno,word,produces,,item_663
+niente,,any,locations,niente,word,produces,,item_664
+poco,,little/few,locations,poco,word,produces,,item_665
+qui/qua,,here,locations,qui/qua,word,produces,,item_666
+tanto,,a lot,locations,tanto,word,produces,,item_667
+troppo,,too,locations,troppo,word,produces,,item_668
+tutto,,all,locations,tutto,word,produces,,item_669
+un pò,,any,locations,un_po,word,produces,,item_670

@@ -1,798 +1,798 @@
-"itemID","item","type","category","choices","definition","gloss","complexity_category","uni_lemma"
-"item_1","baa_baa","word","sounds","produces","baa baa","baa baa",,"baa baa"
-"item_2","choo_choo","word","sounds","produces","choo choo","choo choo",,"choo choo"
-"item_3","cockadoodledoo","word","sounds","produces","cockadoodledoo","cockadoodledoo",,"cockadoodledoo"
-"item_4","grrr","word","sounds","produces","grrr","grrr",,"grrr"
-"item_5","meow","word","sounds","produces","meow","meow",,"meow"
-"item_6","moo","word","sounds","produces","moo","moo",,"moo"
-"item_7","ouch","word","sounds","produces","ouch","ouch",,"ouch"
-"item_8","quack_quack","word","sounds","produces","quack quack","quack quack",,"quack quack"
-"item_9","uh_oh","word","sounds","produces","uh oh","uh oh",,"uh oh"
-"item_10","vroom","word","sounds","produces","vroom","vroom",,"vroom"
-"item_11","woof_woof","word","sounds","produces","woof woof","woof woof",,"woof woof"
-"item_12","yum_yum","word","sounds","produces","yum yum","yum yum",,"yum yum"
-"item_13","alligator","word","animals","produces","alligator","alligator",,"alligator"
-"item_14","animal","word","animals","produces","animal","animal",,"animal"
-"item_15","ant","word","animals","produces","ant","ant",,"ant"
-"item_16","bear","word","animals","produces","bear","bear",,"bear"
-"item_17","bee","word","animals","produces","bee","bee",,"bee"
-"item_18","bird","word","animals","produces","bird","bird",,"bird"
-"item_19","bug","word","animals","produces","bug","bug",,"bug"
-"item_20","bunny","word","animals","produces","bunny","bunny",,"bunny"
-"item_21","butterfly","word","animals","produces","butterfly","butterfly",,"butterfly"
-"item_22","cat","word","animals","produces","cat","cat",,"cat"
-"item_23","chicken.animal","word","animals","produces","chicken (animal)","chicken (animal)",,"chicken (animal)"
-"item_24","cow","word","animals","produces","cow","cow",,"cow"
-"item_25","deer","word","animals","produces","deer","deer",,"deer"
-"item_26","dog","word","animals","produces","dog","dog",,"dog"
-"item_27","donkey","word","animals","produces","donkey","donkey",,"donkey"
-"item_28","duck","word","animals","produces","duck","duck",,"duck"
-"item_29","elephant","word","animals","produces","elephant","elephant",,"elephant"
-"item_30","fish.animal","word","animals","produces","fish (animal)","fish (animal)",,"fish (animal)"
-"item_31","frog","word","animals","produces","frog","frog",,"frog"
-"item_32","giraffe","word","animals","produces","giraffe","giraffe",,"giraffe"
-"item_33","goose","word","animals","produces","goose","goose",,"goose"
-"item_34","hen","word","animals","produces","hen","hen",,"hen"
-"item_35","horse","word","animals","produces","horse","horse",,"horse"
-"item_36","kitty","word","animals","produces","kitty","kitty",,"kitty"
-"item_37","lamb","word","animals","produces","lamb","lamb",,"lamb"
-"item_38","lion","word","animals","produces","lion","lion",,"lion"
-"item_39","monkey","word","animals","produces","monkey","monkey",,"monkey"
-"item_40","moose","word","animals","produces","moose","moose",,"moose"
-"item_41","mouse","word","animals","produces","mouse","mouse",,"mouse"
-"item_42","owl","word","animals","produces","owl","owl",,"owl"
-"item_43","penguin","word","animals","produces","penguin","penguin",,"penguin"
-"item_44","pig","word","animals","produces","pig","pig",,"pig"
-"item_45","pony","word","animals","produces","pony","pony",,"pony"
-"item_46","puppy","word","animals","produces","puppy","puppy",,"puppy"
-"item_47","rooster","word","animals","produces","rooster","rooster",,"rooster"
-"item_48","sheep","word","animals","produces","sheep","sheep",,"sheep"
-"item_49","squirrel","word","animals","produces","squirrel","squirrel",,"squirrel"
-"item_50","teddybear","word","animals","produces","teddybear","teddybear",,"teddybear"
-"item_51","tiger","word","animals","produces","tiger","tiger",,"tiger"
-"item_52","turkey","word","animals","produces","turkey","turkey",,"turkey"
-"item_53","turtle","word","animals","produces","turtle","turtle",,"turtle"
-"item_54","wolf","word","animals","produces","wolf","wolf",,"wolf"
-"item_55","zebra","word","animals","produces","zebra","zebra",,"zebra"
-"item_56","airplane","word","vehicles","produces","airplane","airplane",,"airplane"
-"item_57","bicycle","word","vehicles","produces","bicycle","bicycle",,"bicycle"
-"item_58","boat","word","vehicles","produces","boat","boat",,"boat"
-"item_59","bus","word","vehicles","produces","bus","bus",,"bus"
-"item_60","car","word","vehicles","produces","car","car",,"car"
-"item_61","firetruck","word","vehicles","produces","firetruck","firetruck",,"firetruck"
-"item_62","helicopter","word","vehicles","produces","helicopter","helicopter",,"helicopter"
-"item_63","motorcycle","word","vehicles","produces","motorcycle","motorcycle",,"motorcycle"
-"item_64","sled","word","vehicles","produces","sled","sled",,"sled"
-"item_65","stroller","word","vehicles","produces","stroller","stroller",,"stroller"
-"item_66","tractor","word","vehicles","produces","tractor","tractor",,"tractor"
-"item_67","train","word","vehicles","produces","train","train",,"train"
-"item_68","tricycle","word","vehicles","produces","tricycle","tricycle",,"tricycle"
-"item_69","truck","word","vehicles","produces","truck","truck",,"truck"
-"item_70","ball","word","toys","produces","ball","ball",,"ball"
-"item_71","balloon","word","toys","produces","balloon","balloon",,"balloon"
-"item_72","bat","word","toys","produces","bat","bat",,"bat"
-"item_73","block","word","toys","produces","block","block",,"block"
-"item_74","book","word","toys","produces","book","book",,"book"
-"item_75","bubbles","word","toys","produces","bubbles","bubbles",,"bubbles"
-"item_76","chalk","word","toys","produces","chalk","chalk",,"chalk"
-"item_77","crayon","word","toys","produces","crayon","crayon",,"crayon"
-"item_78","doll","word","toys","produces","doll","doll",,"doll"
-"item_79","game","word","toys","produces","game","game",,"game"
-"item_80","glue","word","toys","produces","glue","glue",,"glue"
-"item_81","pen","word","toys","produces","pen","pen",,"pen"
-"item_82","pencil","word","toys","produces","pencil","pencil",,"pencil"
-"item_83","play_dough","word","toys","produces","play dough","play dough",,"play dough"
-"item_84","present","word","toys","produces","present","present",,"present"
-"item_85","puzzle","word","toys","produces","puzzle","puzzle",,"puzzle"
-"item_86","story","word","toys","produces","story","story",,"story"
-"item_87","toy","word","toys","produces","toy (object)","toy (object)",,"toy (object)"
-"item_88","apple","word","food_drink","produces","apple","apple",,"apple"
-"item_89","applesauce","word","food_drink","produces","applesauce","applesauce",,"applesauce"
-"item_90","banana","word","food_drink","produces","banana","banana",,"banana"
-"item_91","beans","word","food_drink","produces","beans","beans",,"beans"
-"item_92","bread","word","food_drink","produces","bread","bread",,"bread"
-"item_93","butter","word","food_drink","produces","butter","butter",,"butter"
-"item_94","cake","word","food_drink","produces","cake","cake",,"cake"
-"item_95","candy","word","food_drink","produces","candy","candy",,"candy"
-"item_96","carrots","word","food_drink","produces","carrots","carrots",,"carrots"
-"item_97","cereal","word","food_drink","produces","cereal","cereal",,"cereal"
-"item_98","cheerios","word","food_drink","produces","cheerios","cheerios",,"cheerios"
-"item_99","cheese","word","food_drink","produces","cheese","cheese",,"cheese"
-"item_100","chicken.food","word","food_drink","produces","chicken (food)","chicken (food)",,"chicken (food)"
-"item_101","chocolate","word","food_drink","produces","chocolate","chocolate",,"chocolate"
-"item_102","coffee","word","food_drink","produces","coffee","coffee",,"coffee"
-"item_103","coke","word","food_drink","produces","coke","coke",,"coke"
-"item_104","cookie","word","food_drink","produces","cookie","cookie",,"cookie"
-"item_105","corn","word","food_drink","produces","corn","corn",,"corn"
-"item_106","cracker","word","food_drink","produces","cracker","cracker",,"cracker"
-"item_107","donut","word","food_drink","produces","donut","donut",,"donut"
-"item_108","drink.beverage","word","food_drink","produces","drink (beverage)","drink (beverage)",,"drink (beverage)"
-"item_109","egg","word","food_drink","produces","egg","egg",,"egg"
-"item_110","fish.food","word","food_drink","produces","fish (food)","fish (food)",,"fish (food)"
-"item_111","food","word","food_drink","produces","food","food",,"food"
-"item_112","french_fries","word","food_drink","produces","french fries","french fries",,"french fries"
-"item_113","grapes","word","food_drink","produces","grapes","grapes",,"grapes"
-"item_114","green_beans","word","food_drink","produces","green beans","green beans",,"green beans"
-"item_115","gum","word","food_drink","produces","gum","gum",,"gum"
-"item_116","hamburger","word","food_drink","produces","hamburger","hamburger",,"hamburger"
-"item_117","ice","word","food_drink","produces","ice","ice",,"ice"
-"item_118","ice_cream","word","food_drink","produces","ice cream","ice cream",,"ice cream"
-"item_119","jello","word","food_drink","produces","jello","jello",,"jello"
-"item_120","jelly","word","food_drink","produces","jelly","jelly",,"jelly"
-"item_121","juice","word","food_drink","produces","juice","juice",,"juice"
-"item_122","lollipop","word","food_drink","produces","lollipop","lollipop",,"lollipop"
-"item_123","meat","word","food_drink","produces","meat","meat",,"meat"
-"item_124","melon","word","food_drink","produces","melon","melon",,"melon"
-"item_125","milk","word","food_drink","produces","milk","milk",,"milk"
-"item_126","muffin","word","food_drink","produces","muffin","muffin",,"muffin"
-"item_127","noodles","word","food_drink","produces","noodles","noodles",,"noodles"
-"item_128","nuts","word","food_drink","produces","nuts","nuts",,"nuts"
-"item_129","orange.food","word","food_drink","produces","orange (food)","orange (food)",,"orange (food)"
-"item_130","pancake","word","food_drink","produces","pancake","pancake",,"pancake"
-"item_131","peas","word","food_drink","produces","peas","peas",,"peas"
-"item_132","peanut_butter","word","food_drink","produces","peanut butter","peanut butter",,"peanut butter"
-"item_133","pickle","word","food_drink","produces","pickle","pickle",,"pickle"
-"item_134","pizza","word","food_drink","produces","pizza","pizza",,"pizza"
-"item_135","popcorn","word","food_drink","produces","popcorn","popcorn",,"popcorn"
-"item_136","popsicle","word","food_drink","produces","popsicle","popsicle",,"popsicle"
-"item_137","potato_chip","word","food_drink","produces","potato chip","potato chip",,"potato chip"
-"item_138","potato","word","food_drink","produces","potato","potato",,"potato"
-"item_139","pretzel","word","food_drink","produces","pretzel","pretzel",,"pretzel"
-"item_140","pudding","word","food_drink","produces","pudding","pudding",,"pudding"
-"item_141","pumpkin","word","food_drink","produces","pumpkin","pumpkin",,"pumpkin"
-"item_142","raisin","word","food_drink","produces","raisin","raisin",,"raisin"
-"item_143","salt","word","food_drink","produces","salt","salt",,"salt"
-"item_144","sandwich","word","food_drink","produces","sandwich","sandwich",,"sandwich"
-"item_145","sauce","word","food_drink","produces","sauce","sauce",,"sauce"
-"item_146","soda","word","food_drink","produces","soda/pop","soda/pop",,"soda"
-"item_147","soup","word","food_drink","produces","soup","soup",,"soup"
-"item_148","spaghetti","word","food_drink","produces","spaghetti","spaghetti",,"spaghetti"
-"item_149","strawberry","word","food_drink","produces","strawberry","strawberry",,"strawberry"
-"item_150","toast","word","food_drink","produces","toast","toast",,"toast"
-"item_151","tuna","word","food_drink","produces","tuna","tuna",,"tuna"
-"item_152","vanilla","word","food_drink","produces","vanilla","vanilla",,"vanilla"
-"item_153","vitamins","word","food_drink","produces","vitamins","vitamins",,"vitamins"
-"item_154","water.beverage","word","food_drink","produces","water (beverage)","water (beverage)",,"water (beverage)"
-"item_155","yogurt","word","food_drink","produces","yogurt","yogurt",,"yogurt"
-"item_156","beads","word","clothing","produces","beads","beads",,"beads"
-"item_157","belt","word","clothing","produces","belt","belt",,"belt"
-"item_158","bib","word","clothing","produces","bib","bib",,"bib"
-"item_159","boots","word","clothing","produces","boots","boots",,"boots"
-"item_160","button","word","clothing","produces","button","button",,"button"
-"item_161","coat","word","clothing","produces","coat","coat",,"coat"
-"item_162","diaper","word","clothing","produces","diaper","diaper",,"diaper"
-"item_163","dress","word","clothing","produces","dress (object)","dress (object)",,"dress (object)"
-"item_164","gloves","word","clothing","produces","gloves","gloves",,"gloves"
-"item_165","hat","word","clothing","produces","hat","hat",,"hat"
-"item_166","jacket","word","clothing","produces","jacket","jacket",,"jacket"
-"item_167","jeans","word","clothing","produces","jeans","jeans",,"jeans"
-"item_168","mittens","word","clothing","produces","mittens","mittens",,"mittens"
-"item_169","necklace","word","clothing","produces","necklace","necklace",,"necklace"
-"item_170","pajamas","word","clothing","produces","pajamas","pajamas",,"pajamas"
-"item_171","pants","word","clothing","produces","pants","pants",,"pants"
-"item_172","scarf","word","clothing","produces","scarf","scarf",,"scarf"
-"item_173","shirt","word","clothing","produces","shirt","shirt",,"shirt"
-"item_174","shoe","word","clothing","produces","shoe","shoe",,"shoe"
-"item_175","shorts","word","clothing","produces","shorts","shorts",,"shorts"
-"item_176","slipper","word","clothing","produces","slipper","slipper",,"slipper"
-"item_177","sneaker","word","clothing","produces","sneaker","sneaker",,"sneaker"
-"item_178","snowsuit","word","clothing","produces","snowsuit","snowsuit",,"snowsuit"
-"item_179","sock","word","clothing","produces","sock","sock",,"sock"
-"item_180","sweater","word","clothing","produces","sweater","sweater",,"sweater"
-"item_181","tights","word","clothing","produces","tights","tights",,"tights"
-"item_182","underpants","word","clothing","produces","underpants","underpants",,"underpants"
-"item_183","zipper","word","clothing","produces","zipper","zipper",,"zipper"
-"item_184","ankle","word","body_parts","produces","ankle","ankle",,"ankle"
-"item_185","arm","word","body_parts","produces","arm","arm",,"arm"
-"item_186","belly_button","word","body_parts","produces","belly button","belly button",,"belly button"
-"item_187","buttocks","word","body_parts","produces","buttocks/bottom*","buttocks/bottom*",,"butt"
-"item_188","cheek","word","body_parts","produces","cheek","cheek",,"cheek"
-"item_189","chin","word","body_parts","produces","chin","chin",,"chin"
-"item_190","ear","word","body_parts","produces","ear","ear",,"ear"
-"item_191","eye","word","body_parts","produces","eye","eye",,"eye"
-"item_192","face","word","body_parts","produces","face","face",,"face"
-"item_193","finger","word","body_parts","produces","finger","finger",,"finger"
-"item_194","foot","word","body_parts","produces","foot","foot",,"foot"
-"item_195","hair","word","body_parts","produces","hair","hair",,"hair"
-"item_196","hand","word","body_parts","produces","hand","hand",,"hand"
-"item_197","head","word","body_parts","produces","head","head",,"head"
-"item_198","knee","word","body_parts","produces","knee","knee",,"knee"
-"item_199","leg","word","body_parts","produces","leg","leg",,"leg"
-"item_200","lips","word","body_parts","produces","lips","lips",,"lips"
-"item_201","mouth","word","body_parts","produces","mouth","mouth",,"mouth"
-"item_202","nose","word","body_parts","produces","nose","nose",,"nose"
-"item_203","owie","word","body_parts","produces","owie/boo boo","owie/boo boo",,"owie"
-"item_204","penis","word","body_parts","produces","penis*","penis*",,"penis"
-"item_205","shoulder","word","body_parts","produces","shoulder","shoulder",,"shoulder"
-"item_206","toe","word","body_parts","produces","toe","toe",,"toe"
-"item_207","tongue","word","body_parts","produces","tongue","tongue",,"tongue"
-"item_208","tooth","word","body_parts","produces","tooth","tooth",,"tooth"
-"item_209","tummy","word","body_parts","produces","tummy","tummy",,"tummy"
-"item_210","vagina","word","body_parts","produces","vagina*","vagina*",,"vagina"
-"item_211","basket","word","household","produces","basket","basket",,"basket"
-"item_212","blanket","word","household","produces","blanket","blanket",,"blanket"
-"item_213","bottle","word","household","produces","bottle","bottle",,"bottle"
-"item_214","bowl","word","household","produces","bowl","bowl",,"bowl"
-"item_215","box","word","household","produces","box","box",,"box"
-"item_216","broom","word","household","produces","broom","broom",,"broom"
-"item_217","brush","word","household","produces","brush","brush",,"brush (object)"
-"item_218","bucket","word","household","produces","bucket","bucket",,"bucket"
-"item_219","camera","word","household","produces","camera","camera",,"camera"
-"item_220","can.object","word","household","produces","can (object)","can (object)",,"can (object)"
-"item_221","clock","word","household","produces","clock","clock",,"clock"
-"item_222","comb","word","household","produces","comb","comb",,"comb (object)"
-"item_223","cup","word","household","produces","cup","cup",,"cup"
-"item_224","dish","word","household","produces","dish","dish",,"dish"
-"item_225","fork","word","household","produces","fork","fork",,"fork"
-"item_226","garbage","word","household","produces","garbage","garbage",,"garbage"
-"item_227","glass","word","household","produces","glass","glass",,"glass"
-"item_228","glasses","word","household","produces","glasses","glasses",,"glasses"
-"item_229","hammer","word","household","produces","hammer","hammer",,"hammer"
-"item_230","jar","word","household","produces","jar","jar",,"jar"
-"item_231","keys","word","household","produces","keys","keys",,"keys"
-"item_232","knife","word","household","produces","knife","knife",,"knife"
-"item_233","lamp","word","household","produces","lamp","lamp",,"lamp"
-"item_234","light","word","household","produces","light","light",,"light"
-"item_235","medicine","word","household","produces","medicine","medicine",,"medicine"
-"item_236","money","word","household","produces","money","money",,"money"
-"item_237","mop","word","household","produces","mop","mop",,"mop"
-"item_238","nail","word","household","produces","nail","nail",,"nails"
-"item_239","napkin","word","household","produces","napkin","napkin",,"napkin"
-"item_240","paper","word","household","produces","paper","paper",,"paper"
-"item_241","penny","word","household","produces","penny","penny",,"penny"
-"item_242","picture","word","household","produces","picture","picture",,"picture"
-"item_243","pillow","word","household","produces","pillow","pillow",,"pillow"
-"item_244","plant","word","household","produces","plant","plant",,"plant"
-"item_245","plate","word","household","produces","plate","plate",,"plate"
-"item_246","purse","word","household","produces","purse","purse",,"purse"
-"item_247","radio","word","household","produces","radio","radio",,"radio"
-"item_248","scissors","word","household","produces","scissors","scissors",,"scissors"
-"item_249","soap","word","household","produces","soap","soap",,"soap"
-"item_250","spoon","word","household","produces","spoon","spoon",,"spoon"
-"item_251","tape","word","household","produces","tape","tape",,"tape"
-"item_252","telephone","word","household","produces","telephone","telephone",,"telephone"
-"item_253","tissue","word","household","produces","tissue/kleenex","tissue/kleenex",,"tissue"
-"item_254","toothbrush","word","household","produces","toothbrush","toothbrush",,"toothbrush"
-"item_255","towel","word","household","produces","towel","towel",,"towel"
-"item_256","trash","word","household","produces","trash","trash",,"trash"
-"item_257","tray","word","household","produces","tray","tray",,"tray"
-"item_258","vacuum","word","household","produces","vacuum","vacuum",,"vacuum"
-"item_259","walker","word","household","produces","walker","walker",,"walker"
-"item_260","watch.object","word","household","produces","watch (object)","watch (object)",,"watch (object)"
-"item_261","basement","word","furniture_rooms","produces","basement","basement",,"basement"
-"item_262","bathroom","word","furniture_rooms","produces","bathroom","bathroom",,"bathroom"
-"item_263","bathtub","word","furniture_rooms","produces","bathtub","bathtub",,"bathtub"
-"item_264","bed","word","furniture_rooms","produces","bed","bed",,"bed"
-"item_265","bedroom","word","furniture_rooms","produces","bedroom","bedroom",,"bedroom"
-"item_266","bench","word","furniture_rooms","produces","bench","bench",,"bench"
-"item_267","chair","word","furniture_rooms","produces","chair","chair",,"chair"
-"item_268","closet","word","furniture_rooms","produces","closet","closet",,"closet"
-"item_269","couch","word","furniture_rooms","produces","couch","couch",,"couch"
-"item_270","crib","word","furniture_rooms","produces","crib","crib",,"crib"
-"item_271","door","word","furniture_rooms","produces","door","door",,"door"
-"item_272","drawer","word","furniture_rooms","produces","drawer","drawer",,"drawer"
-"item_273","dryer","word","furniture_rooms","produces","dryer","dryer",,"dryer"
-"item_274","garage","word","furniture_rooms","produces","garage","garage",,"garage"
-"item_275","high_chair","word","furniture_rooms","produces","high chair","high chair",,"high chair"
-"item_276","kitchen","word","furniture_rooms","produces","kitchen","kitchen",,"kitchen"
-"item_277","living_room","word","furniture_rooms","produces","living room","living room",,"living room"
-"item_278","oven","word","furniture_rooms","produces","oven","oven",,"oven"
-"item_279","play_pen","word","furniture_rooms","produces","play pen","play pen",,"play pen"
-"item_280","porch","word","furniture_rooms","produces","porch","porch",,"porch"
-"item_281","potty","word","furniture_rooms","produces","potty","potty",,"potty"
-"item_282","rocking_chair","word","furniture_rooms","produces","rocking chair","rocking chair",,"rocking chair"
-"item_283","refrigerator","word","furniture_rooms","produces","refrigerator","refrigerator",,"refrigerator"
-"item_284","room","word","furniture_rooms","produces","room","room",,"room"
-"item_285","shower","word","furniture_rooms","produces","shower","shower",,"shower"
-"item_286","sink","word","furniture_rooms","produces","sink","sink",,"sink"
-"item_287","sofa","word","furniture_rooms","produces","sofa","sofa",,"sofa"
-"item_288","stairs","word","furniture_rooms","produces","stairs","stairs",,"stairs"
-"item_289","stove","word","furniture_rooms","produces","stove","stove",,"stove"
-"item_290","table","word","furniture_rooms","produces","table","table",,"table"
-"item_291","tv","word","furniture_rooms","produces","TV","TV",,"TV"
-"item_292","window","word","furniture_rooms","produces","window","window",,"window"
-"item_293","washing_machine","word","furniture_rooms","produces","washing machine","washing machine",,"washing machine"
-"item_294","backyard","word","outside","produces","backyard","backyard",,"yard"
-"item_295","cloud","word","outside","produces","cloud","cloud",,"cloud"
-"item_296","flag","word","outside","produces","flag","flag",,"flag"
-"item_297","flower","word","outside","produces","flower","flower",,"flower"
-"item_298","garden","word","outside","produces","garden","garden",,"garden"
-"item_299","grass","word","outside","produces","grass","grass",,"grass"
-"item_300","hose","word","outside","produces","hose","hose",,"hose"
-"item_301","ladder","word","outside","produces","ladder","ladder",,"ladder"
-"item_302","lawn_mower","word","outside","produces","lawn mower","lawn mower",,"lawn mower"
-"item_303","moon","word","outside","produces","moon","moon",,"moon"
-"item_304","pool","word","outside","produces","pool","pool",,"pool"
-"item_305","rain","word","outside","produces","rain","rain",,"rain"
-"item_306","rock","word","outside","produces","rock","rock",,"rock (object)"
-"item_307","roof","word","outside","produces","roof","roof",,"roof"
-"item_308","sandbox","word","outside","produces","sandbox","sandbox",,"sandbox"
-"item_309","shovel","word","outside","produces","shovel","shovel",,"shovel"
-"item_310","sidewalk","word","outside","produces","sidewalk","sidewalk",,"sidewalk"
-"item_311","sky","word","outside","produces","sky","sky",,"sky"
-"item_312","slide.object","word","outside","produces","slide (object)","slide (object)",,"slide (object)"
-"item_313","snow","word","outside","produces","snow","snow",,"snow"
-"item_314","snowman","word","outside","produces","snowman","snowman",,"snowman"
-"item_315","sprinkler","word","outside","produces","sprinkler","sprinkler",,"sprinkler"
-"item_316","star","word","outside","produces","star","star",,"star"
-"item_317","stick","word","outside","produces","stick","stick",,"stick"
-"item_318","stone","word","outside","produces","stone","stone",,"stone"
-"item_319","street","word","outside","produces","street","street",,"street"
-"item_320","sun","word","outside","produces","sun","sun",,"sun"
-"item_321","swing.object","word","outside","produces","swing (object)","swing (object)",,"swing (object)"
-"item_322","tree","word","outside","produces","tree","tree",,"tree"
-"item_323","water.not_beverage","word","outside","produces","water (not beverage)","water (not beverage)",,"water (not beverage)"
-"item_324","wind","word","outside","produces","wind","wind",,"wind"
-"item_325","beach","word","places","produces","beach","beach",,"beach"
-"item_326","camping","word","places","produces","camping","camping",,"camping"
-"item_327","church","word","places","produces","church*","church*",,"church"
-"item_328","circus","word","places","produces","circus","circus",,"circus"
-"item_329","country","word","places","produces","country","country",,"country"
-"item_330","downtown","word","places","produces","downtown","downtown",,"downtown"
-"item_331","farm","word","places","produces","farm","farm",,"farm"
-"item_332","gas_station","word","places","produces","gas station","gas station",,"gas station"
-"item_333","home","word","places","produces","home","home",,"home"
-"item_334","house","word","places","produces","house","house",,"house"
-"item_335","movie","word","places","produces","movie","movie",,"movie"
-"item_336","outside","word","places","produces","outside","outside",,"outside"
-"item_337","park","word","places","produces","park","park",,"park"
-"item_338","party","word","places","produces","party","party",,"party"
-"item_339","picnic","word","places","produces","picnic","picnic",,"picnic"
-"item_340","playground","word","places","produces","playground","playground",,"playground"
-"item_341","school","word","places","produces","school","school",,"school"
-"item_342","store","word","places","produces","store","store",,"store"
-"item_343","woods","word","places","produces","woods","woods",,"woods"
-"item_344","work.place","word","places","produces","work (place)","work (place)",,"work (place)"
-"item_345","yard","word","places","produces","yard","yard",,"yard"
-"item_346","zoo","word","places","produces","zoo","zoo",,"zoo"
-"item_347","aunt","word","people","produces","aunt","aunt",,"aunt"
-"item_348","baby","word","people","produces","baby","baby",,"baby"
-"item_349","babysitter","word","people","produces","babysitter","babysitter",,"babysitter"
-"item_350","babysitter_name","word","people","produces","babysitter's name","babysitter's name",,"babysitter's name"
-"item_351","boy","word","people","produces","boy","boy",,"boy"
-"item_352","brother","word","people","produces","brother","brother",,"brother"
-"item_353","child","word","people","produces","child","child",,"child"
-"item_354","clown","word","people","produces","clown","clown",,"clown"
-"item_355","cowboy","word","people","produces","cowboy","cowboy",,"cowboy"
-"item_356","daddy","word","people","produces","daddy*","daddy*",,"daddy"
-"item_357","doctor","word","people","produces","doctor","doctor",,"doctor"
-"item_358","fireman","word","people","produces","fireman","fireman",,"fireman"
-"item_359","friend","word","people","produces","friend","friend",,"friend"
-"item_360","girl","word","people","produces","girl","girl",,"girl"
-"item_361","grandma","word","people","produces","grandma*","grandma*",,"grandma"
-"item_362","grandpa","word","people","produces","grandpa*","grandpa*",,"grandpa"
-"item_363","lady","word","people","produces","lady","lady",,"lady"
-"item_364","mailman","word","people","produces","mailman","mailman",,"mailman"
-"item_365","man","word","people","produces","man","man",,"man"
-"item_366","mommy","word","people","produces","mommy*","mommy*",,"mommy"
-"item_367","nurse","word","people","produces","nurse","nurse",,"nurse"
-"item_368","child_own_name","word","people","produces","child's own name","child's own name",,"child's own name"
-"item_369","people","word","people","produces","people","people",,"people"
-"item_370","person","word","people","produces","person","person",,"person"
-"item_371","pet_name","word","people","produces","pet's name","pet's name",,"pet's name"
-"item_372","police","word","people","produces","police","police",,"police"
-"item_373","sister","word","people","produces","sister","sister",,"sister"
-"item_374","teacher","word","people","produces","teacher","teacher",,"teacher"
-"item_375","uncle","word","people","produces","uncle","uncle",,"uncle"
-"item_376","bath","word","games_routines","produces","bath","bath",,"bath"
-"item_377","breakfast","word","games_routines","produces","breakfast","breakfast",,"breakfast"
-"item_378","bye","word","games_routines","produces","bye","bye",,"bye"
-"item_379","call","word","games_routines","produces","call (on phone)","call (on phone)",,"call on phone"
-"item_380","dinner","word","games_routines","produces","dinner","dinner",,"dinner"
-"item_381","give_me_five","word","games_routines","produces","give me five!","give me five!",,"give me five"
-"item_382","gonna_get_you","word","games_routines","produces","gonna get you!","gonna get you!",,"gonna get you"
-"item_383","go_potty","word","games_routines","produces","go potty","go potty",,"go potty"
-"item_384","hello","word","games_routines","produces","hello","hello",,"hello"
-"item_385","hi","word","games_routines","produces","hi","hi",,"hi"
-"item_386","lunch","word","games_routines","produces","lunch","lunch",,"lunch"
-"item_387","nap","word","games_routines","produces","nap","nap",,"nap"
-"item_388","nightnight","word","games_routines","produces","night night","good night",,"good night"
-"item_389","no","word","games_routines","produces","no","no",,"no"
-"item_390","pattycake","word","games_routines","produces","pattycake","pattycake",,"pattycake"
-"item_391","peekaboo","word","games_routines","produces","peekaboo","peekaboo",,"peekaboo"
-"item_392","please","word","games_routines","produces","please","please",,"please"
-"item_393","shh","word","games_routines","produces","shh/shush/hush","shh/shush/hush",,"shh"
-"item_394","shopping","word","games_routines","produces","shopping","shopping",,"shopping"
-"item_395","snack","word","games_routines","produces","snack","snack",,"snack"
-"item_396","so_big","word","games_routines","produces","so big!","so big!",,"so big"
-"item_397","thank_you","word","games_routines","produces","thank you","thank you",,"thank you"
-"item_398","this_little_piggy","word","games_routines","produces","this little piggy","this little piggy",,"this little piggy"
-"item_399","turn_around","word","games_routines","produces","turn around","turn around",,"turn around"
-"item_400","yes","word","games_routines","produces","yes","yes",,"yes"
-"item_401","bite","word","action_words","produces","bite","bite",,"bite"
-"item_402","blow","word","action_words","produces","blow","blow",,"blow"
-"item_403","break","word","action_words","produces","break","break",,"break"
-"item_404","bring","word","action_words","produces","bring","bring",,"bring"
-"item_405","build","word","action_words","produces","build","build",,"build"
-"item_406","bump","word","action_words","produces","bump","bump",,"bump"
-"item_407","buy","word","action_words","produces","buy","buy",,"buy"
-"item_408","carry","word","action_words","produces","carry","carry",,"carry"
-"item_409","catch","word","action_words","produces","catch","catch",,"catch"
-"item_410","chase","word","action_words","produces","chase","chase",,"chase"
-"item_411","clap","word","action_words","produces","clap","clap",,"clap"
-"item_412","clean.action","word","action_words","produces","clean (action)","clean (action)",,"clean (action)"
-"item_413","climb","word","action_words","produces","climb","climb",,"climb"
-"item_414","close","word","action_words","produces","close","close",,"close"
-"item_415","cook","word","action_words","produces","cook","cook",,"cook"
-"item_416","cover","word","action_words","produces","cover","cover",,"cover (action)"
-"item_417","cry","word","action_words","produces","cry","cry",,"cry"
-"item_418","cut","word","action_words","produces","cut","cut",,"cut"
-"item_419","dance","word","action_words","produces","dance","dance",,"dance"
-"item_420","draw","word","action_words","produces","draw","draw",,"draw"
-"item_421","drink.action","word","action_words","produces","drink (action)","drink (action)",,"drink (action)"
-"item_422","drive","word","action_words","produces","drive","drive",,"drive"
-"item_423","drop","word","action_words","produces","drop","drop",,"drop"
-"item_424","dry.action","word","action_words","produces","dry (action)","dry (action)",,"dry (action)"
-"item_425","dump","word","action_words","produces","dump","dump",,"dump"
-"item_426","eat","word","action_words","produces","eat","eat",,"eat"
-"item_427","fall","word","action_words","produces","fall","fall",,"fall"
-"item_428","feed","word","action_words","produces","feed","feed",,"feed"
-"item_429","find","word","action_words","produces","find","find",,"find"
-"item_430","finish","word","action_words","produces","finish","finish",,"finish"
-"item_431","fit","word","action_words","produces","fit","fit",,"fit"
-"item_432","fix","word","action_words","produces","fix","fix",,"fix"
-"item_433","get","word","action_words","produces","get","get",,"get"
-"item_434","give","word","action_words","produces","give","give",,"give"
-"item_435","go","word","action_words","produces","go","go",,"go"
-"item_436","hate","word","action_words","produces","hate","hate",,"hate"
-"item_437","have","word","action_words","produces","have","have",,"have"
-"item_438","hear","word","action_words","produces","hear","hear",,"hear"
-"item_439","help","word","action_words","produces","help","help",,"help"
-"item_440","hide","word","action_words","produces","hide","hide",,"hide"
-"item_441","hit","word","action_words","produces","hit","hit",,"hit"
-"item_442","hold","word","action_words","produces","hold","hold",,"hold"
-"item_443","hug","word","action_words","produces","hug","hug",,"hug"
-"item_444","hurry","word","action_words","produces","hurry","hurry",,"hurry"
-"item_445","jump","word","action_words","produces","jump","jump",,"jump"
-"item_446","kick","word","action_words","produces","kick","kick",,"kick"
-"item_447","kiss","word","action_words","produces","kiss","kiss",,"kiss"
-"item_448","knock","word","action_words","produces","knock","knock",,"knock"
-"item_449","lick","word","action_words","produces","lick","lick",,"lick"
-"item_450","like","word","action_words","produces","like","like",,"like"
-"item_451","listen","word","action_words","produces","listen","listen",,"listen"
-"item_452","look","word","action_words","produces","look","look",,"look"
-"item_453","love","word","action_words","produces","love","love",,"love"
-"item_454","make","word","action_words","produces","make","make",,"make"
-"item_455","open","word","action_words","produces","open","open",,"open (action)"
-"item_456","paint","word","action_words","produces","paint","paint",,"paint (action)"
-"item_457","pick","word","action_words","produces","pick","pick",,"pick"
-"item_458","play","word","action_words","produces","play","play",,"play"
-"item_459","pour","word","action_words","produces","pour","pour",,"pour"
-"item_460","pretend","word","action_words","produces","pretend","pretend",,"pretend"
-"item_461","pull","word","action_words","produces","pull","pull",,"pull"
-"item_462","push","word","action_words","produces","push","push",,"push"
-"item_463","put","word","action_words","produces","put","put",,"put"
-"item_464","read","word","action_words","produces","read","read",,"read"
-"item_465","ride","word","action_words","produces","ride","ride",,"ride"
-"item_466","rip","word","action_words","produces","rip","rip",,"rip"
-"item_467","run","word","action_words","produces","run","run",,"run"
-"item_468","say","word","action_words","produces","say","say",,"say"
-"item_469","see","word","action_words","produces","see","see",,"see"
-"item_470","shake","word","action_words","produces","shake","shake",,"shake"
-"item_471","share","word","action_words","produces","share","share",,"share"
-"item_472","show","word","action_words","produces","show","show",,"show"
-"item_473","sing","word","action_words","produces","sing","sing",,"sing"
-"item_474","sit","word","action_words","produces","sit","sit",,"sit"
-"item_475","skate","word","action_words","produces","skate","skate",,"skate"
-"item_476","sleep","word","action_words","produces","sleep","sleep",,"sleep"
-"item_477","slide.action","word","action_words","produces","slide (action)","slide (action)",,"slide (action)"
-"item_478","smile","word","action_words","produces","smile","smile",,"smile"
-"item_479","spill","word","action_words","produces","spill","spill",,"spill"
-"item_480","splash","word","action_words","produces","splash","splash",,"splash"
-"item_481","stand","word","action_words","produces","stand","stand",,"stand"
-"item_482","stay","word","action_words","produces","stay","stay",,"stay"
-"item_483","stop","word","action_words","produces","stop","stop",,"stop"
-"item_484","sweep","word","action_words","produces","sweep","sweep",,"sweep"
-"item_485","swim","word","action_words","produces","swim","swim",,"swim"
-"item_486","swing.action","word","action_words","produces","swing (action)","swing (action)",,"swing (action)"
-"item_487","take","word","action_words","produces","take","take",,"take"
-"item_488","talk","word","action_words","produces","talk","talk",,"talk"
-"item_489","taste","word","action_words","produces","taste","taste",,"taste"
-"item_490","tear","word","action_words","produces","tear","tear",,"tear"
-"item_491","think","word","action_words","produces","think","think",,"think"
-"item_492","throw","word","action_words","produces","throw","throw",,"throw"
-"item_493","tickle","word","action_words","produces","tickle","tickle",,"tickle"
-"item_494","touch","word","action_words","produces","touch","touch",,"touch"
-"item_495","wait","word","action_words","produces","wait","wait",,"wait"
-"item_496","wake","word","action_words","produces","wake","wake",,"wake"
-"item_497","walk","word","action_words","produces","walk","walk",,"walk"
-"item_498","wash","word","action_words","produces","wash","wash",,"wash"
-"item_499","watch.action","word","action_words","produces","watch (action)","watch (action)",,"watch (action)"
-"item_500","wipe","word","action_words","produces","wipe","wipe",,"wipe"
-"item_501","wish","word","action_words","produces","wish","wish",,"wish"
-"item_502","work.action","word","action_words","produces","work (action)","work (action)",,"work (action)"
-"item_503","write","word","action_words","produces","write","write",,"write"
-"item_504","allgone","word","descriptive_words","produces","all gone","all gone",,"all gone"
-"item_505","asleep","word","descriptive_words","produces","asleep","asleep",,"asleep"
-"item_506","awake","word","descriptive_words","produces","awake","awake",,"awake"
-"item_507","bad","word","descriptive_words","produces","bad","bad",,"bad"
-"item_508","better","word","descriptive_words","produces","better","better",,"better"
-"item_509","big","word","descriptive_words","produces","big","big",,"big"
-"item_510","black","word","descriptive_words","produces","black","black",,"black"
-"item_511","blue","word","descriptive_words","produces","blue","blue",,"blue"
-"item_512","broken","word","descriptive_words","produces","broken","broken",,"broken"
-"item_513","brown","word","descriptive_words","produces","brown","brown",,"brown"
-"item_514","careful","word","descriptive_words","produces","careful","careful",,"careful"
-"item_515","clean.description","word","descriptive_words","produces","clean (description)","clean (description)",,"clean (description)"
-"item_516","cold","word","descriptive_words","produces","cold","cold",,"cold"
-"item_517","cute","word","descriptive_words","produces","cute","cute",,"cute"
-"item_518","dark","word","descriptive_words","produces","dark","dark",,"dark"
-"item_519","dirty","word","descriptive_words","produces","dirty","dirty",,"dirty"
-"item_520","dry.description","word","descriptive_words","produces","dry (description)","dry (description)",,"dry (description)"
-"item_521","empty","word","descriptive_words","produces","empty","empty",,"empty"
-"item_522","fast","word","descriptive_words","produces","fast","fast",,"fast"
-"item_523","fine","word","descriptive_words","produces","fine","fine",,"fine"
-"item_524","first","word","descriptive_words","produces","first","first",,"first"
-"item_525","full","word","descriptive_words","produces","full","full",,"full"
-"item_526","gentle","word","descriptive_words","produces","gentle","gentle",,"gentle"
-"item_527","good","word","descriptive_words","produces","good","good",,"good"
-"item_528","green","word","descriptive_words","produces","green","green",,"green"
-"item_529","happy","word","descriptive_words","produces","happy","happy",,"happy"
-"item_530","hard","word","descriptive_words","produces","hard","hard",,"hard"
-"item_531","heavy","word","descriptive_words","produces","heavy","heavy",,"heavy"
-"item_532","high","word","descriptive_words","produces","high","high",,"high"
-"item_533","hot","word","descriptive_words","produces","hot","hot",,"hot"
-"item_534","hungry","word","descriptive_words","produces","hungry","hungry",,"hungry"
-"item_535","hurt","word","descriptive_words","produces","hurt","hurt",,"hurt (description)"
-"item_536","last","word","descriptive_words","produces","last","last",,"last"
-"item_537","little","word","descriptive_words","produces","little (description)","little (description)",,"little (description)"
-"item_538","long","word","descriptive_words","produces","long","long",,"long"
-"item_539","loud","word","descriptive_words","produces","loud","loud",,"loud"
-"item_540","mad","word","descriptive_words","produces","mad","mad",,"mad"
-"item_541","naughty","word","descriptive_words","produces","naughty","naughty",,"naughty"
-"item_542","new","word","descriptive_words","produces","new","new",,"new"
-"item_543","nice","word","descriptive_words","produces","nice","nice",,"nice"
-"item_544","noisy","word","descriptive_words","produces","noisy","noisy",,"noisy"
-"item_545","old","word","descriptive_words","produces","old","old",,"old"
-"item_546","orange.description","word","descriptive_words","produces","orange (description)","orange (description)",,"orange (description)"
-"item_547","poor","word","descriptive_words","produces","poor","poor",,"poor"
-"item_548","pretty","word","descriptive_words","produces","pretty","pretty",,"pretty"
-"item_549","quiet","word","descriptive_words","produces","quiet","quiet",,"quiet"
-"item_550","red","word","descriptive_words","produces","red","red",,"red"
-"item_551","sad","word","descriptive_words","produces","sad","sad",,"sad"
-"item_552","scared","word","descriptive_words","produces","scared","scared",,"scared"
-"item_553","sick","word","descriptive_words","produces","sick","sick",,"sick"
-"item_554","sleepy","word","descriptive_words","produces","sleepy","sleepy",,"sleepy"
-"item_555","slow","word","descriptive_words","produces","slow","slow",,"slow"
-"item_556","soft","word","descriptive_words","produces","soft","soft",,"soft"
-"item_557","sticky","word","descriptive_words","produces","sticky","sticky",,"sticky"
-"item_558","stuck","word","descriptive_words","produces","stuck","stuck",,"stuck"
-"item_559","thirsty","word","descriptive_words","produces","thirsty","thirsty",,"thirsty"
-"item_560","tiny","word","descriptive_words","produces","tiny","tiny",,"tiny"
-"item_561","tired","word","descriptive_words","produces","tired","tired",,"tired"
-"item_562","wet","word","descriptive_words","produces","wet","wet",,"wet (description)"
-"item_563","white","word","descriptive_words","produces","white","white",,"white"
-"item_564","windy","word","descriptive_words","produces","windy","windy",,"windy"
-"item_565","yellow","word","descriptive_words","produces","yellow","yellow",,"yellow"
-"item_566","yucky","word","descriptive_words","produces","yucky","yucky",,"yucky"
-"item_567","after","word","time_words","produces","after","after",,"after"
-"item_568","before","word","time_words","produces","before","before",,"before"
-"item_569","day","word","time_words","produces","day","day",,"day"
-"item_570","later","word","time_words","produces","later","later",,"later"
-"item_571","morning","word","time_words","produces","morning","morning",,"morning"
-"item_572","night","word","time_words","produces","night","night",,"night"
-"item_573","now","word","time_words","produces","now","now",,"now"
-"item_574","time","word","time_words","produces","time","time",,"time"
-"item_575","today","word","time_words","produces","today","today",,"today"
-"item_576","tomorrow","word","time_words","produces","tomorrow","tomorrow",,"tomorrow"
-"item_577","tonight","word","time_words","produces","tonight","tonight",,"tonight"
-"item_578","yesterday","word","time_words","produces","yesterday","yesterday",,"yesterday"
-"item_579","he","word","pronouns","produces","he","he",,"he"
-"item_580","her","word","pronouns","produces","her","her",,"her"
-"item_581","hers","word","pronouns","produces","hers","hers",,"hers"
-"item_582","him","word","pronouns","produces","him","him",,"him"
-"item_583","his","word","pronouns","produces","his","his",,"his"
-"item_584","i","word","pronouns","produces","I","I",,"I"
-"item_585","it","word","pronouns","produces","it","it",,"it"
-"item_586","me","word","pronouns","produces","me","me",,"me"
-"item_587","mine","word","pronouns","produces","mine","mine",,"mine"
-"item_588","my","word","pronouns","produces","my","my",,"my"
-"item_589","myself","word","pronouns","produces","myself","myself",,"myself"
-"item_590","our","word","pronouns","produces","our","our",,"our"
-"item_591","she","word","pronouns","produces","she","she",,"she"
-"item_592","that","word","pronouns","produces","that","that",,"that"
-"item_593","their","word","pronouns","produces","their","their",,"their"
-"item_594","them","word","pronouns","produces","them","them",,"them"
-"item_595","these","word","pronouns","produces","these","these",,"these"
-"item_596","they","word","pronouns","produces","they","they",,"they"
-"item_597","this","word","pronouns","produces","this","this",,"this"
-"item_598","those","word","pronouns","produces","those","those",,"those"
-"item_599","us","word","pronouns","produces","us","us",,"us"
-"item_600","we","word","pronouns","produces","we","we",,"we"
-"item_601","you","word","pronouns","produces","you","you",,"you"
-"item_602","your","word","pronouns","produces","your","your",,"your"
-"item_603","yourself","word","pronouns","produces","yourself","yourself",,"yourself"
-"item_604","how","word","question_words","produces","how","how",,"how"
-"item_605","what","word","question_words","produces","what","what",,"what"
-"item_606","when","word","question_words","produces","when","when",,"when (question)"
-"item_607","where","word","question_words","produces","where","where",,"where (question)"
-"item_608","which","word","question_words","produces","which","which",,"which (question)"
-"item_609","who","word","question_words","produces","who","who",,"who"
-"item_610","why","word","question_words","produces","why","why",,"why"
-"item_611","about","word","locations","produces","about","about",,"about"
-"item_612","above","word","locations","produces","above","above",,"above"
-"item_613","around","word","locations","produces","around","around",,"around"
-"item_614","at","word","locations","produces","at","at",,"at"
-"item_615","away","word","locations","produces","away","away",,"away"
-"item_616","back","word","locations","produces","back","back",,"back (location)"
-"item_617","behind","word","locations","produces","behind","behind",,"behind"
-"item_618","beside","word","locations","produces","beside","beside",,"beside"
-"item_619","by","word","locations","produces","by","by",,"by"
-"item_620","down","word","locations","produces","down","down",,"down"
-"item_621","for","word","locations","produces","for","for",,"for"
-"item_622","here","word","locations","produces","here","here",,"here"
-"item_623","inside","word","locations","produces","inside/in","inside/in",,"in"
-"item_624","into","word","locations","produces","into","into",,"into"
-"item_625","next_to","word","locations","produces","next to","next to",,"next to"
-"item_626","of","word","locations","produces","of","of",,"of"
-"item_627","off","word","locations","produces","off","off",,"off"
-"item_628","on","word","locations","produces","on","on",,"on"
-"item_629","on_top_of","word","locations","produces","on top of","on top of",,"on top of"
-"item_630","out","word","locations","produces","out","out",,"out"
-"item_631","over","word","locations","produces","over","over",,"over"
-"item_632","there","word","locations","produces","there","there",,"there"
-"item_633","to","word","locations","produces","to","to",,"to"
-"item_634","under","word","locations","produces","under","under",,"under"
-"item_635","up","word","locations","produces","up","up",,"up"
-"item_636","with","word","locations","produces","with","with",,"with"
-"item_637","a","word","quantifiers","produces","a","a",,"a"
-"item_638","all","word","quantifiers","produces","all","all",,"all"
-"item_639","a_lot","word","quantifiers","produces","a lot","a lot",,"a lot"
-"item_640","an","word","quantifiers","produces","an","an",,"a"
-"item_641","another","word","quantifiers","produces","another","another",,"another"
-"item_642","any","word","quantifiers","produces","any","any",,"any"
-"item_643","each","word","quantifiers","produces","each","each",,"each"
-"item_644","every","word","quantifiers","produces","every","every",,"every"
-"item_645","more","word","quantifiers","produces","more","more",,"more"
-"item_646","much","word","quantifiers","produces","much","much",,"much"
-"item_647","none","word","quantifiers","produces","none","none",,"none"
-"item_648","not","word","quantifiers","produces","not","not",,"not"
-"item_649","other","word","quantifiers","produces","other","other",,"other"
-"item_650","same","word","quantifiers","produces","same","same",,"same"
-"item_651","some","word","quantifiers","produces","some","some",,"some"
-"item_652","the","word","quantifiers","produces","the","the",,"the"
-"item_653","too","word","quantifiers","produces","too","too",,"too"
-"item_654","am","word","helping_verbs","produces","am","am",,"am"
-"item_655","are","word","helping_verbs","produces","are","are",,"are"
-"item_656","be","word","helping_verbs","produces","be","be",,"be"
-"item_657","can.auxiliary","word","helping_verbs","produces","can (auxiliary)","can (auxiliary)",,"can (auxiliary)"
-"item_658","could","word","helping_verbs","produces","could","could",,"could"
-"item_659","did","word","helping_verbs","produces","did/did ya","did/did ya",,"did"
-"item_660","do","word","helping_verbs","produces","do","do",,"do"
-"item_661","does","word","helping_verbs","produces","does","does",,"does"
-"item_662","dont","word","helping_verbs","produces","don't","don't",,"don't"
-"item_663","gonna","word","helping_verbs","produces","gonna/going to","gonna/going to",,"gonna"
-"item_664","gotta","word","helping_verbs","produces","gotta/got to","gotta/got to",,"gotta"
-"item_665","hafta","word","helping_verbs","produces","hafta/have to","hafta/have to",,"hafta"
-"item_666","is","word","helping_verbs","produces","is","is",,"is"
-"item_667","lemme","word","helping_verbs","produces","lemme/let me","lemme/let me",,"lemme"
-"item_668","need","word","helping_verbs","produces","need/need to","need/need to",,"need"
-"item_669","try","word","helping_verbs","produces","try/try to","try/try to",,"try"
-"item_670","wanna","word","helping_verbs","produces","wanna/want to","wanna/want to",,"wanna"
-"item_671","was","word","helping_verbs","produces","was","was",,"was"
-"item_672","were","word","helping_verbs","produces","were","were",,"were"
-"item_673","will","word","helping_verbs","produces","will","will",,"will"
-"item_674","would","word","helping_verbs","produces","would","would",,"would"
-"item_675","and","word","connecting_words","produces","and","and",,"and"
-"item_676","because","word","connecting_words","produces","because","because",,"because"
-"item_677","but","word","connecting_words","produces","but","but",,"but"
-"item_678","if","word","connecting_words","produces","if","if",,"if"
-"item_679","so","word","connecting_words","produces","so","so",,"so"
-"item_680","then","word","connecting_words","produces","then","then",,"then"
-"item_681","usepast","how_use_words",,"not yet; sometimes; often","does your child ever talk about past events or people who are not present?",,,
-"item_682","usefuture","how_use_words",,"not yet; sometimes; often","does your child ever talk about something that's going to happen in the future?",,,
-"item_683","miss_produce","how_use_words",,"not yet; sometimes; often","does your child talk a bout objects that are not present?",,,
-"item_684","miss_comp","how_use_words",,"not yet; sometimes; often","does your child understand if you ask for something that is not in the room?",,,
-"item_685","usepossessive","how_use_words",,"not yet; sometimes; often","does your child ever pick up or point to an object and name an absent person to whom the object belongs?",,,
-"item_686","splural","word_endings",,"not yet; sometimes; often","splural",,,
-"item_687","spossess","word_endings",,"not yet; sometimes; often","spossess",,,
-"item_688","ing","word_endings",,"not yet; sometimes; often","ing",,,
-"item_689","ed","word_endings",,"not yet; sometimes; often","ed",,,
-"item_690","children","word_forms_nouns",,"produces","children","children",,
-"item_691","feet","word_forms_nouns",,"produces","feet","feet",,
-"item_692","men","word_forms_nouns",,"produces","men","men",,
-"item_693","mice","word_forms_nouns",,"produces","mice","mice",,
-"item_694","teeth","word_forms_nouns",,"produces","teeth","teeth",,
-"item_695","ate","word_forms_verbs",,"produces","ate","ate",,
-"item_696","blew","word_forms_verbs",,"produces","blew","blew",,
-"item_697","bought","word_forms_verbs",,"produces","bought","bought",,
-"item_698","broke","word_forms_verbs",,"produces","broke","broke",,
-"item_699","came","word_forms_verbs",,"produces","came","came",,
-"item_700","drank","word_forms_verbs",,"produces","drank","drank",,
-"item_701","drove","word_forms_verbs",,"produces","drove","drove",,
-"item_702","fell","word_forms_verbs",,"produces","fell","fell",,
-"item_703","flew","word_forms_verbs",,"produces","flew","flew",,
-"item_704","got","word_forms_verbs",,"produces","got","got",,
-"item_705","had","word_forms_verbs",,"produces","had","had",,
-"item_706","heard","word_forms_verbs",,"produces","heard","heard",,
-"item_707","held","word_forms_verbs",,"produces","held","held",,
-"item_708","lost","word_forms_verbs",,"produces","lost","lost",,
-"item_709","made","word_forms_verbs",,"produces","made","made",,
-"item_710","ran","word_forms_verbs",,"produces","ran","ran",,
-"item_711","sat","word_forms_verbs",,"produces","sat","sat",,
-"item_712","saw","word_forms_verbs",,"produces","saw","saw",,
-"item_713","took","word_forms_verbs",,"produces","took","took",,
-"item_714","went","word_forms_verbs",,"produces","went","went",,
-"item_715","blockses","word_endings_nouns",,"produces","blockses","blockses",,
-"item_716","childrns","word_endings_nouns",,"produces","childrens","childrens",,
-"item_717","childs","word_endings_nouns",,"produces","childs","childs",,
-"item_718","feets","word_endings_nouns",,"produces","feets","feets",,
-"item_719","foots","word_endings_nouns",,"produces","foots","foots",,
-"item_720","mans","word_endings_nouns",,"produces","mans","mans",,
-"item_721","mens","word_endings_nouns",,"produces","mens","mens",,
-"item_722","mices","word_endings_nouns",,"produces","mices","mices",,
-"item_723","mouses","word_endings_nouns",,"produces","mouses","mouses",,
-"item_724","shoeses","word_endings_nouns",,"produces","shoeses","shoeses",,
-"item_725","sockses","word_endings_nouns",,"produces","sockses","sockses",,
-"item_726","teeths","word_endings_nouns",,"produces","teeths","teeths",,
-"item_727","toeses","word_endings_nouns",,"produces","toeses","toeses",,
-"item_728","tooths","word_endings_nouns",,"produces","tooths","tooths",,
-"item_729","ated","word_endings_verbs",,"produces","ated","ated",,
-"item_730","blewed","word_endings_verbs",,"produces","blewed","blewed",,
-"item_731","blowed","word_endings_verbs",,"produces","blowed","blowed",,
-"item_732","bringed","word_endings_verbs",,"produces","bringed","bringed",,
-"item_733","buyed","word_endings_verbs",,"produces","buyed","buyed",,
-"item_734","breaked","word_endings_verbs",,"produces","breaked","breaked",,
-"item_735","broked","word_endings_verbs",,"produces","broked","broked",,
-"item_736","camed","word_endings_verbs",,"produces","camed","camed",,
-"item_737","comed","word_endings_verbs",,"produces","comed","comed",,
-"item_738","doed","word_endings_verbs",,"produces","doed","doed",,
-"item_739","dranked","word_endings_verbs",,"produces","dranked","dranked",,
-"item_740","drinked","word_endings_verbs",,"produces","drinked","drinked",,
-"item_741","eated","word_endings_verbs",,"produces","eated","eated",,
-"item_742","falled","word_endings_verbs",,"produces","falled","falled",,
-"item_743","flied","word_endings_verbs",,"produces","flied","flied",,
-"item_744","getted","word_endings_verbs",,"produces","getted","getted",,
-"item_745","goed","word_endings_verbs",,"produces","goed","goed",,
-"item_746","gotted","word_endings_verbs",,"produces","gotted","gotted",,
-"item_747","haved","word_endings_verbs",,"produces","haved","haved",,
-"item_748","heared","word_endings_verbs",,"produces","heared","heared",,
-"item_749","holded","word_endings_verbs",,"produces","holded","holded",,
-"item_750","losed","word_endings_verbs",,"produces","losed","losed",,
-"item_751","losted","word_endings_verbs",,"produces","losted","losted",,
-"item_752","maked","word_endings_verbs",,"produces","maked","maked",,
-"item_753","ranned","word_endings_verbs",,"produces","ranned","ranned",,
-"item_754","runned","word_endings_verbs",,"produces","runned","runned",,
-"item_755","seed","word_endings_verbs",,"produces","seed","seed",,
-"item_756","satted","word_endings_verbs",,"produces","satted","satted",,
-"item_757","sitted","word_endings_verbs",,"produces","sitted","sitted",,
-"item_758","taked","word_endings_verbs",,"produces","taked","taked",,
-"item_759","wented","word_endings_verbs",,"produces","wented","wented",,
-"item_760","combine","combine",,"not yet; sometimes; often","has your child begun to combine word yet?",,,
-"item_761","complx01","complexity",,"simple; complex","two shoe / two shoes","two shoe / two shoes","morphology",
-"item_762","complx02","complexity",,"simple; complex","two foot / two feet","two foot / two feet","morphology",
-"item_763","complx03","complexity",,"simple; complex","daddy car / daddy's car","daddy car / daddy's car","morphology",
-"item_764","complx04","complexity",,"simple; complex","kitty sleep / kitty sleeping","kitty sleep / kitty sleeping","morphology",
-"item_765","complx05","complexity",,"simple; complex","I make tower / I making tower","I make tower / I making tower","morphology",
-"item_766","complx06","complexity",,"simple; complex","I fall down / I fell down","I fall down / I fell down","morphology",
-"item_767","complx07","complexity",,"simple; complex","more cookie / more cookies","more cookie / more cookies","morphology",
-"item_768","complx08","complexity",,"simple; complex","these my tooth / these my teeth","these my tooth / these my teeth","morphology",
-"item_769","complx09","complexity",,"simple; complex","baby blanket / baby's blanket","baby blanket / baby's blanket","morphology",
-"item_770","complx10","complexity",,"simple; complex","doggie kiss me / doggie kissed me","doggie kiss me / doggie kissed me","morphology",
-"item_771","complx11","complexity",,"simple; complex","daddy pick me up / daddy picked me up","daddy pick me up / daddy picked me up","morphology",
-"item_772","complx12","complexity",,"simple; complex","kitty go away / kitty went away","kitty go away / kitty went away","morphology",
-"item_773","complx13","complexity",,"simple; complex","doggie table / doggie on table","doggie table / doggie on table","syntax",
-"item_774","complx14","complexity",,"simple; complex","that my truck / that's my truck","that my truck / that's my truck","syntax",
-"item_775","complx15","complexity",,"simple; complex","baby crying / baby is crying","baby crying / baby is crying","syntax",
-"item_776","complx16","complexity",,"simple; complex","you fix it / can you fix it","you fix it / can you fix it","syntax",
-"item_777","complx17","complexity",,"simple; complex","read me story Mommy / read me a story Mommy","read me story Mommy / read me a story Mommy","syntax",
-"item_778","complx18","complexity",,"simple; complex","no wash dolly / don't wash dolly","no wash dolly / don't wash dolly","syntax",
-"item_779","complx19","complexity",,"simple; complex","want more juice / want juice in there","want more juice / want juice in there","syntax",
-"item_780","complx20","complexity",,"simple; complex","there a kitty / there's a kitty","there a kitty / there's a kitty","syntax",
-"item_781","complx21","complexity",,"simple; complex","go bye-bye / wanna go bye-bye","go bye-bye / wanna go bye-bye","syntax",
-"item_782","complx22","complexity",,"simple; complex","where mommy go / where did mommy go","where mommy go / where did mommy go","syntax",
-"item_783","complx23","complexity",,"simple; complex","coffee hot / that coffee hot","coffee hot / that coffee hot","syntax",
-"item_784","complx24","complexity",,"simple; complex","I no do it / I can't do it","I no do it / I can't do it","syntax",
-"item_785","complx25","complexity",,"simple; complex","I like read stories / I like to read stories","I like read stories / I like to read stories","syntax",
-"item_786","complx26","complexity",,"simple; complex","don't read book / don't want you read that book","don't read book / don't want you read that book","syntax",
-"item_787","complx27","complexity",,"simple; complex","turn on light / turn on light so I can see","turn on light / turn on light so I can see","syntax",
-"item_788","complx28","complexity",,"simple; complex","I want that / I want that one you got","I want that / I want that one you got","syntax",
-"item_789","complx29","complexity",,"simple; complex","want cookies / want cookies and milk","want cookies / want cookies and milk","syntax",
-"item_790","complx30","complexity",,"simple; complex","cookie mommy / cookie for mommy","cookie mommy / cookie for mommy","syntax",
-"item_791","complx31","complexity",,"simple; complex","baby want eat / baby want to eat","baby want eat / baby want to eat","syntax",
-"item_792","complx32","complexity",,"simple; complex","lookit me / lookit me dancing","lookit me / lookit me dancing","syntax",
-"item_793","complx33","complexity",,"simple; complex","lookit / lookit what I got","lookit / lookit what I got","syntax",
-"item_794","complx34","complexity",,"simple; complex","where's my dolly / where's my dolly name Sam","where's my dolly / where's my dolly name Sam","syntax",
-"item_795","complx35","complexity",,"simple; complex","we made this / me and Paul made this","we made this / me and Paul made this","syntax",
-"item_796","complx36","complexity",,"simple; complex","I sing song / I sing song for you","I sing song / I sing song for you","syntax",
-"item_797","complx37","complexity",,"simple; complex","baby crying / baby crying cuz she's sad","baby crying / baby crying cuz she's sad","syntax",
+itemID,item,type,category,choices,definition,gloss,complexity_category,uni_lemma
+item_1,baa_baa,word,sounds,produces,baa baa,baa baa,,baa baa
+item_2,choo_choo,word,sounds,produces,choo choo,choo choo,,choo choo
+item_3,cockadoodledoo,word,sounds,produces,cockadoodledoo,cockadoodledoo,,cockadoodledoo
+item_4,grrr,word,sounds,produces,grrr,grrr,,grrr
+item_5,meow,word,sounds,produces,meow,meow,,meow
+item_6,moo,word,sounds,produces,moo,moo,,moo
+item_7,ouch,word,sounds,produces,ouch,ouch,,ouch
+item_8,quack_quack,word,sounds,produces,quack quack,quack quack,,quack quack
+item_9,uh_oh,word,sounds,produces,uh oh,uh oh,,uh oh
+item_10,vroom,word,sounds,produces,vroom,vroom,,vroom
+item_11,woof_woof,word,sounds,produces,woof woof,woof woof,,woof woof
+item_12,yum_yum,word,sounds,produces,yum yum,yum yum,,yum yum
+item_13,alligator,word,animals,produces,alligator,alligator,,alligator
+item_14,animal,word,animals,produces,animal,animal,,animal
+item_15,ant,word,animals,produces,ant,ant,,ant
+item_16,bear,word,animals,produces,bear,bear,,bear
+item_17,bee,word,animals,produces,bee,bee,,bee
+item_18,bird,word,animals,produces,bird,bird,,bird
+item_19,bug,word,animals,produces,bug,bug,,bug
+item_20,bunny,word,animals,produces,bunny,bunny,,bunny
+item_21,butterfly,word,animals,produces,butterfly,butterfly,,butterfly
+item_22,cat,word,animals,produces,cat,cat,,cat
+item_23,chicken.animal,word,animals,produces,chicken (animal),chicken (animal),,chicken (animal)
+item_24,cow,word,animals,produces,cow,cow,,cow
+item_25,deer,word,animals,produces,deer,deer,,deer
+item_26,dog,word,animals,produces,dog,dog,,dog
+item_27,donkey,word,animals,produces,donkey,donkey,,donkey
+item_28,duck,word,animals,produces,duck,duck,,duck
+item_29,elephant,word,animals,produces,elephant,elephant,,elephant
+item_30,fish.animal,word,animals,produces,fish (animal),fish (animal),,fish (animal)
+item_31,frog,word,animals,produces,frog,frog,,frog
+item_32,giraffe,word,animals,produces,giraffe,giraffe,,giraffe
+item_33,goose,word,animals,produces,goose,goose,,goose
+item_34,hen,word,animals,produces,hen,hen,,hen
+item_35,horse,word,animals,produces,horse,horse,,horse
+item_36,kitty,word,animals,produces,kitty,kitty,,kitty
+item_37,lamb,word,animals,produces,lamb,lamb,,lamb
+item_38,lion,word,animals,produces,lion,lion,,lion
+item_39,monkey,word,animals,produces,monkey,monkey,,monkey
+item_40,moose,word,animals,produces,moose,moose,,moose
+item_41,mouse,word,animals,produces,mouse,mouse,,mouse
+item_42,owl,word,animals,produces,owl,owl,,owl
+item_43,penguin,word,animals,produces,penguin,penguin,,penguin
+item_44,pig,word,animals,produces,pig,pig,,pig
+item_45,pony,word,animals,produces,pony,pony,,pony
+item_46,puppy,word,animals,produces,puppy,puppy,,puppy
+item_47,rooster,word,animals,produces,rooster,rooster,,rooster
+item_48,sheep,word,animals,produces,sheep,sheep,,sheep
+item_49,squirrel,word,animals,produces,squirrel,squirrel,,squirrel
+item_50,teddybear,word,animals,produces,teddybear,teddybear,,teddybear
+item_51,tiger,word,animals,produces,tiger,tiger,,tiger
+item_52,turkey,word,animals,produces,turkey,turkey,,turkey
+item_53,turtle,word,animals,produces,turtle,turtle,,turtle
+item_54,wolf,word,animals,produces,wolf,wolf,,wolf
+item_55,zebra,word,animals,produces,zebra,zebra,,zebra
+item_56,airplane,word,vehicles,produces,airplane,airplane,,airplane
+item_57,bicycle,word,vehicles,produces,bicycle,bicycle,,bicycle
+item_58,boat,word,vehicles,produces,boat,boat,,boat
+item_59,bus,word,vehicles,produces,bus,bus,,bus
+item_60,car,word,vehicles,produces,car,car,,car
+item_61,firetruck,word,vehicles,produces,firetruck,firetruck,,firetruck
+item_62,helicopter,word,vehicles,produces,helicopter,helicopter,,helicopter
+item_63,motorcycle,word,vehicles,produces,motorcycle,motorcycle,,motorcycle
+item_64,sled,word,vehicles,produces,sled,sled,,sled
+item_65,stroller,word,vehicles,produces,stroller,stroller,,stroller
+item_66,tractor,word,vehicles,produces,tractor,tractor,,tractor
+item_67,train,word,vehicles,produces,train,train,,train
+item_68,tricycle,word,vehicles,produces,tricycle,tricycle,,tricycle
+item_69,truck,word,vehicles,produces,truck,truck,,truck
+item_70,ball,word,toys,produces,ball,ball,,ball
+item_71,balloon,word,toys,produces,balloon,balloon,,balloon
+item_72,bat,word,toys,produces,bat,bat,,bat
+item_73,block,word,toys,produces,block,block,,block
+item_74,book,word,toys,produces,book,book,,book
+item_75,bubbles,word,toys,produces,bubbles,bubbles,,bubbles
+item_76,chalk,word,toys,produces,chalk,chalk,,chalk
+item_77,crayon,word,toys,produces,crayon,crayon,,crayon
+item_78,doll,word,toys,produces,doll,doll,,doll
+item_79,game,word,toys,produces,game,game,,game
+item_80,glue,word,toys,produces,glue,glue,,glue
+item_81,pen,word,toys,produces,pen,pen,,pen
+item_82,pencil,word,toys,produces,pencil,pencil,,pencil
+item_83,play_dough,word,toys,produces,play dough,play dough,,play dough
+item_84,present,word,toys,produces,present,present,,present
+item_85,puzzle,word,toys,produces,puzzle,puzzle,,puzzle
+item_86,story,word,toys,produces,story,story,,story
+item_87,toy,word,toys,produces,toy (object),toy (object),,toy (object)
+item_88,apple,word,food_drink,produces,apple,apple,,apple
+item_89,applesauce,word,food_drink,produces,applesauce,applesauce,,applesauce
+item_90,banana,word,food_drink,produces,banana,banana,,banana
+item_91,beans,word,food_drink,produces,beans,beans,,beans
+item_92,bread,word,food_drink,produces,bread,bread,,bread
+item_93,butter,word,food_drink,produces,butter,butter,,butter
+item_94,cake,word,food_drink,produces,cake,cake,,cake
+item_95,candy,word,food_drink,produces,candy,candy,,candy
+item_96,carrots,word,food_drink,produces,carrots,carrots,,carrots
+item_97,cereal,word,food_drink,produces,cereal,cereal,,cereal
+item_98,cheerios,word,food_drink,produces,cheerios,cheerios,,cheerios
+item_99,cheese,word,food_drink,produces,cheese,cheese,,cheese
+item_100,chicken.food,word,food_drink,produces,chicken (food),chicken (food),,chicken (food)
+item_101,chocolate,word,food_drink,produces,chocolate,chocolate,,chocolate
+item_102,coffee,word,food_drink,produces,coffee,coffee,,coffee
+item_103,coke,word,food_drink,produces,coke,coke,,coke
+item_104,cookie,word,food_drink,produces,cookie,cookie,,cookie
+item_105,corn,word,food_drink,produces,corn,corn,,corn
+item_106,cracker,word,food_drink,produces,cracker,cracker,,cracker
+item_107,donut,word,food_drink,produces,donut,donut,,donut
+item_108,drink.beverage,word,food_drink,produces,drink (beverage),drink (beverage),,drink (beverage)
+item_109,egg,word,food_drink,produces,egg,egg,,egg
+item_110,fish.food,word,food_drink,produces,fish (food),fish (food),,fish (food)
+item_111,food,word,food_drink,produces,food,food,,food
+item_112,french_fries,word,food_drink,produces,french fries,french fries,,french fries
+item_113,grapes,word,food_drink,produces,grapes,grapes,,grapes
+item_114,green_beans,word,food_drink,produces,green beans,green beans,,green beans
+item_115,gum,word,food_drink,produces,gum,gum,,gum
+item_116,hamburger,word,food_drink,produces,hamburger,hamburger,,hamburger
+item_117,ice,word,food_drink,produces,ice,ice,,ice
+item_118,ice_cream,word,food_drink,produces,ice cream,ice cream,,ice cream
+item_119,jello,word,food_drink,produces,jello,jello,,jello
+item_120,jelly,word,food_drink,produces,jelly,jelly,,jelly
+item_121,juice,word,food_drink,produces,juice,juice,,juice
+item_122,lollipop,word,food_drink,produces,lollipop,lollipop,,lollipop
+item_123,meat,word,food_drink,produces,meat,meat,,meat
+item_124,melon,word,food_drink,produces,melon,melon,,melon
+item_125,milk,word,food_drink,produces,milk,milk,,milk
+item_126,muffin,word,food_drink,produces,muffin,muffin,,muffin
+item_127,noodles,word,food_drink,produces,noodles,noodles,,pasta
+item_128,nuts,word,food_drink,produces,nuts,nuts,,nuts
+item_129,orange.food,word,food_drink,produces,orange (food),orange (food),,orange (food)
+item_130,pancake,word,food_drink,produces,pancake,pancake,,pancake
+item_131,peas,word,food_drink,produces,peas,peas,,peas
+item_132,peanut_butter,word,food_drink,produces,peanut butter,peanut butter,,peanut butter
+item_133,pickle,word,food_drink,produces,pickle,pickle,,pickle
+item_134,pizza,word,food_drink,produces,pizza,pizza,,pizza
+item_135,popcorn,word,food_drink,produces,popcorn,popcorn,,popcorn
+item_136,popsicle,word,food_drink,produces,popsicle,popsicle,,popsicle
+item_137,potato_chip,word,food_drink,produces,potato chip,potato chip,,potato chip
+item_138,potato,word,food_drink,produces,potato,potato,,potato
+item_139,pretzel,word,food_drink,produces,pretzel,pretzel,,pretzel
+item_140,pudding,word,food_drink,produces,pudding,pudding,,pudding
+item_141,pumpkin,word,food_drink,produces,pumpkin,pumpkin,,pumpkin
+item_142,raisin,word,food_drink,produces,raisin,raisin,,raisin
+item_143,salt,word,food_drink,produces,salt,salt,,salt
+item_144,sandwich,word,food_drink,produces,sandwich,sandwich,,sandwich
+item_145,sauce,word,food_drink,produces,sauce,sauce,,sauce
+item_146,soda,word,food_drink,produces,soda/pop,soda/pop,,soda
+item_147,soup,word,food_drink,produces,soup,soup,,soup
+item_148,spaghetti,word,food_drink,produces,spaghetti,spaghetti,,pasta
+item_149,strawberry,word,food_drink,produces,strawberry,strawberry,,strawberry
+item_150,toast,word,food_drink,produces,toast,toast,,toast
+item_151,tuna,word,food_drink,produces,tuna,tuna,,tuna
+item_152,vanilla,word,food_drink,produces,vanilla,vanilla,,vanilla
+item_153,vitamins,word,food_drink,produces,vitamins,vitamins,,vitamins
+item_154,water.beverage,word,food_drink,produces,water (beverage),water (beverage),,water (beverage)
+item_155,yogurt,word,food_drink,produces,yogurt,yogurt,,yogurt
+item_156,beads,word,clothing,produces,beads,beads,,beads
+item_157,belt,word,clothing,produces,belt,belt,,belt
+item_158,bib,word,clothing,produces,bib,bib,,bib
+item_159,boots,word,clothing,produces,boots,boots,,boots
+item_160,button,word,clothing,produces,button,button,,button
+item_161,coat,word,clothing,produces,coat,coat,,coat
+item_162,diaper,word,clothing,produces,diaper,diaper,,diaper
+item_163,dress,word,clothing,produces,dress (object),dress (object),,dress (object)
+item_164,gloves,word,clothing,produces,gloves,gloves,,gloves
+item_165,hat,word,clothing,produces,hat,hat,,hat
+item_166,jacket,word,clothing,produces,jacket,jacket,,jacket
+item_167,jeans,word,clothing,produces,jeans,jeans,,jeans
+item_168,mittens,word,clothing,produces,mittens,mittens,,mittens
+item_169,necklace,word,clothing,produces,necklace,necklace,,necklace
+item_170,pajamas,word,clothing,produces,pajamas,pajamas,,pajamas
+item_171,pants,word,clothing,produces,pants,pants,,pants
+item_172,scarf,word,clothing,produces,scarf,scarf,,scarf
+item_173,shirt,word,clothing,produces,shirt,shirt,,shirt
+item_174,shoe,word,clothing,produces,shoe,shoe,,shoe
+item_175,shorts,word,clothing,produces,shorts,shorts,,shorts
+item_176,slipper,word,clothing,produces,slipper,slipper,,slipper
+item_177,sneaker,word,clothing,produces,sneaker,sneaker,,sneaker
+item_178,snowsuit,word,clothing,produces,snowsuit,snowsuit,,snowsuit
+item_179,sock,word,clothing,produces,sock,sock,,sock
+item_180,sweater,word,clothing,produces,sweater,sweater,,sweater
+item_181,tights,word,clothing,produces,tights,tights,,tights
+item_182,underpants,word,clothing,produces,underpants,underpants,,underpants
+item_183,zipper,word,clothing,produces,zipper,zipper,,zipper
+item_184,ankle,word,body_parts,produces,ankle,ankle,,ankle
+item_185,arm,word,body_parts,produces,arm,arm,,arm
+item_186,belly_button,word,body_parts,produces,belly button,belly button,,belly button
+item_187,buttocks,word,body_parts,produces,buttocks/bottom*,buttocks/bottom*,,butt
+item_188,cheek,word,body_parts,produces,cheek,cheek,,cheek
+item_189,chin,word,body_parts,produces,chin,chin,,chin
+item_190,ear,word,body_parts,produces,ear,ear,,ear
+item_191,eye,word,body_parts,produces,eye,eye,,eye
+item_192,face,word,body_parts,produces,face,face,,face
+item_193,finger,word,body_parts,produces,finger,finger,,finger
+item_194,foot,word,body_parts,produces,foot,foot,,foot
+item_195,hair,word,body_parts,produces,hair,hair,,hair
+item_196,hand,word,body_parts,produces,hand,hand,,hand
+item_197,head,word,body_parts,produces,head,head,,head
+item_198,knee,word,body_parts,produces,knee,knee,,knee
+item_199,leg,word,body_parts,produces,leg,leg,,leg
+item_200,lips,word,body_parts,produces,lips,lips,,lips
+item_201,mouth,word,body_parts,produces,mouth,mouth,,mouth
+item_202,nose,word,body_parts,produces,nose,nose,,nose
+item_203,owie,word,body_parts,produces,owie/boo boo,owie/boo boo,,owie
+item_204,penis,word,body_parts,produces,penis*,penis*,,penis
+item_205,shoulder,word,body_parts,produces,shoulder,shoulder,,shoulder
+item_206,toe,word,body_parts,produces,toe,toe,,toe
+item_207,tongue,word,body_parts,produces,tongue,tongue,,tongue
+item_208,tooth,word,body_parts,produces,tooth,tooth,,tooth
+item_209,tummy,word,body_parts,produces,tummy,tummy,,tummy
+item_210,vagina,word,body_parts,produces,vagina*,vagina*,,vagina
+item_211,basket,word,household,produces,basket,basket,,basket
+item_212,blanket,word,household,produces,blanket,blanket,,blanket
+item_213,bottle,word,household,produces,bottle,bottle,,bottle
+item_214,bowl,word,household,produces,bowl,bowl,,bowl
+item_215,box,word,household,produces,box,box,,box
+item_216,broom,word,household,produces,broom,broom,,broom
+item_217,brush,word,household,produces,brush,brush,,brush (object)
+item_218,bucket,word,household,produces,bucket,bucket,,bucket
+item_219,camera,word,household,produces,camera,camera,,camera
+item_220,can.object,word,household,produces,can (object),can (object),,can (object)
+item_221,clock,word,household,produces,clock,clock,,clock
+item_222,comb,word,household,produces,comb,comb,,comb (object)
+item_223,cup,word,household,produces,cup,cup,,cup
+item_224,dish,word,household,produces,dish,dish,,dish
+item_225,fork,word,household,produces,fork,fork,,fork
+item_226,garbage,word,household,produces,garbage,garbage,,garbage
+item_227,glass,word,household,produces,glass,glass,,glass
+item_228,glasses,word,household,produces,glasses,glasses,,glasses
+item_229,hammer,word,household,produces,hammer,hammer,,hammer
+item_230,jar,word,household,produces,jar,jar,,jar
+item_231,keys,word,household,produces,keys,keys,,keys
+item_232,knife,word,household,produces,knife,knife,,knife
+item_233,lamp,word,household,produces,lamp,lamp,,lamp
+item_234,light,word,household,produces,light,light,,light
+item_235,medicine,word,household,produces,medicine,medicine,,medicine
+item_236,money,word,household,produces,money,money,,money
+item_237,mop,word,household,produces,mop,mop,,mop
+item_238,nail,word,household,produces,nail,nail,,nails
+item_239,napkin,word,household,produces,napkin,napkin,,napkin
+item_240,paper,word,household,produces,paper,paper,,paper
+item_241,penny,word,household,produces,penny,penny,,penny
+item_242,picture,word,household,produces,picture,picture,,picture
+item_243,pillow,word,household,produces,pillow,pillow,,pillow
+item_244,plant,word,household,produces,plant,plant,,plant
+item_245,plate,word,household,produces,plate,plate,,plate
+item_246,purse,word,household,produces,purse,purse,,purse
+item_247,radio,word,household,produces,radio,radio,,radio
+item_248,scissors,word,household,produces,scissors,scissors,,scissors
+item_249,soap,word,household,produces,soap,soap,,soap
+item_250,spoon,word,household,produces,spoon,spoon,,spoon
+item_251,tape,word,household,produces,tape,tape,,tape
+item_252,telephone,word,household,produces,telephone,telephone,,telephone
+item_253,tissue,word,household,produces,tissue/kleenex,tissue/kleenex,,tissue
+item_254,toothbrush,word,household,produces,toothbrush,toothbrush,,toothbrush
+item_255,towel,word,household,produces,towel,towel,,towel
+item_256,trash,word,household,produces,trash,trash,,trash
+item_257,tray,word,household,produces,tray,tray,,tray
+item_258,vacuum,word,household,produces,vacuum,vacuum,,vacuum
+item_259,walker,word,household,produces,walker,walker,,walker
+item_260,watch.object,word,household,produces,watch (object),watch (object),,watch (object)
+item_261,basement,word,furniture_rooms,produces,basement,basement,,basement
+item_262,bathroom,word,furniture_rooms,produces,bathroom,bathroom,,bathroom
+item_263,bathtub,word,furniture_rooms,produces,bathtub,bathtub,,bathtub
+item_264,bed,word,furniture_rooms,produces,bed,bed,,bed
+item_265,bedroom,word,furniture_rooms,produces,bedroom,bedroom,,bedroom
+item_266,bench,word,furniture_rooms,produces,bench,bench,,bench
+item_267,chair,word,furniture_rooms,produces,chair,chair,,chair
+item_268,closet,word,furniture_rooms,produces,closet,closet,,closet
+item_269,couch,word,furniture_rooms,produces,couch,couch,,couch
+item_270,crib,word,furniture_rooms,produces,crib,crib,,crib
+item_271,door,word,furniture_rooms,produces,door,door,,door
+item_272,drawer,word,furniture_rooms,produces,drawer,drawer,,drawer
+item_273,dryer,word,furniture_rooms,produces,dryer,dryer,,dryer
+item_274,garage,word,furniture_rooms,produces,garage,garage,,garage
+item_275,high_chair,word,furniture_rooms,produces,high chair,high chair,,high chair
+item_276,kitchen,word,furniture_rooms,produces,kitchen,kitchen,,kitchen
+item_277,living_room,word,furniture_rooms,produces,living room,living room,,living room
+item_278,oven,word,furniture_rooms,produces,oven,oven,,oven
+item_279,play_pen,word,furniture_rooms,produces,play pen,play pen,,play pen
+item_280,porch,word,furniture_rooms,produces,porch,porch,,porch
+item_281,potty,word,furniture_rooms,produces,potty,potty,,potty
+item_282,rocking_chair,word,furniture_rooms,produces,rocking chair,rocking chair,,rocking chair
+item_283,refrigerator,word,furniture_rooms,produces,refrigerator,refrigerator,,refrigerator
+item_284,room,word,furniture_rooms,produces,room,room,,room
+item_285,shower,word,furniture_rooms,produces,shower,shower,,shower
+item_286,sink,word,furniture_rooms,produces,sink,sink,,sink
+item_287,sofa,word,furniture_rooms,produces,sofa,sofa,,sofa
+item_288,stairs,word,furniture_rooms,produces,stairs,stairs,,stairs
+item_289,stove,word,furniture_rooms,produces,stove,stove,,stove
+item_290,table,word,furniture_rooms,produces,table,table,,table
+item_291,tv,word,furniture_rooms,produces,TV,TV,,TV
+item_292,window,word,furniture_rooms,produces,window,window,,window
+item_293,washing_machine,word,furniture_rooms,produces,washing machine,washing machine,,washing machine
+item_294,backyard,word,outside,produces,backyard,backyard,,yard
+item_295,cloud,word,outside,produces,cloud,cloud,,cloud
+item_296,flag,word,outside,produces,flag,flag,,flag
+item_297,flower,word,outside,produces,flower,flower,,flower
+item_298,garden,word,outside,produces,garden,garden,,garden
+item_299,grass,word,outside,produces,grass,grass,,grass
+item_300,hose,word,outside,produces,hose,hose,,hose
+item_301,ladder,word,outside,produces,ladder,ladder,,ladder
+item_302,lawn_mower,word,outside,produces,lawn mower,lawn mower,,lawn mower
+item_303,moon,word,outside,produces,moon,moon,,moon
+item_304,pool,word,outside,produces,pool,pool,,pool
+item_305,rain,word,outside,produces,rain,rain,,rain
+item_306,rock,word,outside,produces,rock,rock,,rock (object)
+item_307,roof,word,outside,produces,roof,roof,,roof
+item_308,sandbox,word,outside,produces,sandbox,sandbox,,sandbox
+item_309,shovel,word,outside,produces,shovel,shovel,,shovel
+item_310,sidewalk,word,outside,produces,sidewalk,sidewalk,,sidewalk
+item_311,sky,word,outside,produces,sky,sky,,sky
+item_312,slide.object,word,outside,produces,slide (object),slide (object),,slide (object)
+item_313,snow,word,outside,produces,snow,snow,,snow
+item_314,snowman,word,outside,produces,snowman,snowman,,snowman
+item_315,sprinkler,word,outside,produces,sprinkler,sprinkler,,sprinkler
+item_316,star,word,outside,produces,star,star,,star
+item_317,stick,word,outside,produces,stick,stick,,stick
+item_318,stone,word,outside,produces,stone,stone,,stone
+item_319,street,word,outside,produces,street,street,,street
+item_320,sun,word,outside,produces,sun,sun,,sun
+item_321,swing.object,word,outside,produces,swing (object),swing (object),,swing (object)
+item_322,tree,word,outside,produces,tree,tree,,tree
+item_323,water.not_beverage,word,outside,produces,water (not beverage),water (not beverage),,water (not beverage)
+item_324,wind,word,outside,produces,wind,wind,,wind
+item_325,beach,word,places,produces,beach,beach,,beach
+item_326,camping,word,places,produces,camping,camping,,camping
+item_327,church,word,places,produces,church*,church*,,church
+item_328,circus,word,places,produces,circus,circus,,circus
+item_329,country,word,places,produces,country,country,,country
+item_330,downtown,word,places,produces,downtown,downtown,,downtown
+item_331,farm,word,places,produces,farm,farm,,farm
+item_332,gas_station,word,places,produces,gas station,gas station,,gas station
+item_333,home,word,places,produces,home,home,,home
+item_334,house,word,places,produces,house,house,,house
+item_335,movie,word,places,produces,movie,movie,,movie
+item_336,outside,word,places,produces,outside,outside,,outside
+item_337,park,word,places,produces,park,park,,park
+item_338,party,word,places,produces,party,party,,party
+item_339,picnic,word,places,produces,picnic,picnic,,picnic
+item_340,playground,word,places,produces,playground,playground,,playground
+item_341,school,word,places,produces,school,school,,school
+item_342,store,word,places,produces,store,store,,store
+item_343,woods,word,places,produces,woods,woods,,woods
+item_344,work.place,word,places,produces,work (place),work (place),,work (place)
+item_345,yard,word,places,produces,yard,yard,,yard
+item_346,zoo,word,places,produces,zoo,zoo,,zoo
+item_347,aunt,word,people,produces,aunt,aunt,,aunt
+item_348,baby,word,people,produces,baby,baby,,baby
+item_349,babysitter,word,people,produces,babysitter,babysitter,,babysitter
+item_350,babysitter_name,word,people,produces,babysitter's name,babysitter's name,,babysitter's name
+item_351,boy,word,people,produces,boy,boy,,boy
+item_352,brother,word,people,produces,brother,brother,,brother
+item_353,child,word,people,produces,child,child,,child
+item_354,clown,word,people,produces,clown,clown,,clown
+item_355,cowboy,word,people,produces,cowboy,cowboy,,cowboy
+item_356,daddy,word,people,produces,daddy*,daddy*,,daddy
+item_357,doctor,word,people,produces,doctor,doctor,,doctor
+item_358,fireman,word,people,produces,fireman,fireman,,fireman
+item_359,friend,word,people,produces,friend,friend,,friend
+item_360,girl,word,people,produces,girl,girl,,girl
+item_361,grandma,word,people,produces,grandma*,grandma*,,grandma
+item_362,grandpa,word,people,produces,grandpa*,grandpa*,,grandpa
+item_363,lady,word,people,produces,lady,lady,,lady
+item_364,mailman,word,people,produces,mailman,mailman,,mailman
+item_365,man,word,people,produces,man,man,,man
+item_366,mommy,word,people,produces,mommy*,mommy*,,mommy
+item_367,nurse,word,people,produces,nurse,nurse,,nurse
+item_368,child_own_name,word,people,produces,child's own name,child's own name,,child's own name
+item_369,people,word,people,produces,people,people,,people
+item_370,person,word,people,produces,person,person,,person
+item_371,pet_name,word,people,produces,pet's name,pet's name,,pet's name
+item_372,police,word,people,produces,police,police,,police
+item_373,sister,word,people,produces,sister,sister,,sister
+item_374,teacher,word,people,produces,teacher,teacher,,teacher
+item_375,uncle,word,people,produces,uncle,uncle,,uncle
+item_376,bath,word,games_routines,produces,bath,bath,,bath
+item_377,breakfast,word,games_routines,produces,breakfast,breakfast,,breakfast
+item_378,bye,word,games_routines,produces,bye,bye,,bye
+item_379,call,word,games_routines,produces,call (on phone),call (on phone),,call on phone
+item_380,dinner,word,games_routines,produces,dinner,dinner,,dinner
+item_381,give_me_five,word,games_routines,produces,give me five!,give me five!,,give me five
+item_382,gonna_get_you,word,games_routines,produces,gonna get you!,gonna get you!,,gonna get you
+item_383,go_potty,word,games_routines,produces,go potty,go potty,,go potty
+item_384,hello,word,games_routines,produces,hello,hello,,hello
+item_385,hi,word,games_routines,produces,hi,hi,,hi
+item_386,lunch,word,games_routines,produces,lunch,lunch,,lunch
+item_387,nap,word,games_routines,produces,nap,nap,,nap
+item_388,nightnight,word,games_routines,produces,night night,good night,,good night
+item_389,no,word,games_routines,produces,no,no,,no
+item_390,pattycake,word,games_routines,produces,pattycake,pattycake,,pattycake
+item_391,peekaboo,word,games_routines,produces,peekaboo,peekaboo,,peekaboo
+item_392,please,word,games_routines,produces,please,please,,please
+item_393,shh,word,games_routines,produces,shh/shush/hush,shh/shush/hush,,shh
+item_394,shopping,word,games_routines,produces,shopping,shopping,,shopping
+item_395,snack,word,games_routines,produces,snack,snack,,snack
+item_396,so_big,word,games_routines,produces,so big!,so big!,,so big
+item_397,thank_you,word,games_routines,produces,thank you,thank you,,thank you
+item_398,this_little_piggy,word,games_routines,produces,this little piggy,this little piggy,,this little piggy
+item_399,turn_around,word,games_routines,produces,turn around,turn around,,turn around
+item_400,yes,word,games_routines,produces,yes,yes,,yes
+item_401,bite,word,action_words,produces,bite,bite,,bite
+item_402,blow,word,action_words,produces,blow,blow,,blow
+item_403,break,word,action_words,produces,break,break,,break
+item_404,bring,word,action_words,produces,bring,bring,,bring
+item_405,build,word,action_words,produces,build,build,,build
+item_406,bump,word,action_words,produces,bump,bump,,bump
+item_407,buy,word,action_words,produces,buy,buy,,buy
+item_408,carry,word,action_words,produces,carry,carry,,carry
+item_409,catch,word,action_words,produces,catch,catch,,catch
+item_410,chase,word,action_words,produces,chase,chase,,chase
+item_411,clap,word,action_words,produces,clap,clap,,clap
+item_412,clean.action,word,action_words,produces,clean (action),clean (action),,clean (action)
+item_413,climb,word,action_words,produces,climb,climb,,climb
+item_414,close,word,action_words,produces,close,close,,close
+item_415,cook,word,action_words,produces,cook,cook,,cook
+item_416,cover,word,action_words,produces,cover,cover,,cover (action)
+item_417,cry,word,action_words,produces,cry,cry,,cry
+item_418,cut,word,action_words,produces,cut,cut,,cut
+item_419,dance,word,action_words,produces,dance,dance,,dance
+item_420,draw,word,action_words,produces,draw,draw,,draw
+item_421,drink.action,word,action_words,produces,drink (action),drink (action),,drink (action)
+item_422,drive,word,action_words,produces,drive,drive,,drive
+item_423,drop,word,action_words,produces,drop,drop,,drop
+item_424,dry.action,word,action_words,produces,dry (action),dry (action),,dry (action)
+item_425,dump,word,action_words,produces,dump,dump,,dump
+item_426,eat,word,action_words,produces,eat,eat,,eat
+item_427,fall,word,action_words,produces,fall,fall,,fall
+item_428,feed,word,action_words,produces,feed,feed,,feed
+item_429,find,word,action_words,produces,find,find,,find
+item_430,finish,word,action_words,produces,finish,finish,,finish
+item_431,fit,word,action_words,produces,fit,fit,,fit
+item_432,fix,word,action_words,produces,fix,fix,,fix
+item_433,get,word,action_words,produces,get,get,,get
+item_434,give,word,action_words,produces,give,give,,give
+item_435,go,word,action_words,produces,go,go,,go
+item_436,hate,word,action_words,produces,hate,hate,,hate
+item_437,have,word,action_words,produces,have,have,,have
+item_438,hear,word,action_words,produces,hear,hear,,hear
+item_439,help,word,action_words,produces,help,help,,help
+item_440,hide,word,action_words,produces,hide,hide,,hide
+item_441,hit,word,action_words,produces,hit,hit,,hit
+item_442,hold,word,action_words,produces,hold,hold,,hold
+item_443,hug,word,action_words,produces,hug,hug,,hug
+item_444,hurry,word,action_words,produces,hurry,hurry,,hurry
+item_445,jump,word,action_words,produces,jump,jump,,jump
+item_446,kick,word,action_words,produces,kick,kick,,kick
+item_447,kiss,word,action_words,produces,kiss,kiss,,kiss
+item_448,knock,word,action_words,produces,knock,knock,,knock
+item_449,lick,word,action_words,produces,lick,lick,,lick
+item_450,like,word,action_words,produces,like,like,,like
+item_451,listen,word,action_words,produces,listen,listen,,listen
+item_452,look,word,action_words,produces,look,look,,look
+item_453,love,word,action_words,produces,love,love,,love
+item_454,make,word,action_words,produces,make,make,,make
+item_455,open,word,action_words,produces,open,open,,open (action)
+item_456,paint,word,action_words,produces,paint,paint,,paint (action)
+item_457,pick,word,action_words,produces,pick,pick,,pick
+item_458,play,word,action_words,produces,play,play,,play
+item_459,pour,word,action_words,produces,pour,pour,,pour
+item_460,pretend,word,action_words,produces,pretend,pretend,,pretend
+item_461,pull,word,action_words,produces,pull,pull,,pull
+item_462,push,word,action_words,produces,push,push,,push
+item_463,put,word,action_words,produces,put,put,,put
+item_464,read,word,action_words,produces,read,read,,read
+item_465,ride,word,action_words,produces,ride,ride,,ride
+item_466,rip,word,action_words,produces,rip,rip,,rip
+item_467,run,word,action_words,produces,run,run,,run
+item_468,say,word,action_words,produces,say,say,,say
+item_469,see,word,action_words,produces,see,see,,see
+item_470,shake,word,action_words,produces,shake,shake,,shake
+item_471,share,word,action_words,produces,share,share,,share
+item_472,show,word,action_words,produces,show,show,,show
+item_473,sing,word,action_words,produces,sing,sing,,sing
+item_474,sit,word,action_words,produces,sit,sit,,sit
+item_475,skate,word,action_words,produces,skate,skate,,skate
+item_476,sleep,word,action_words,produces,sleep,sleep,,sleep
+item_477,slide.action,word,action_words,produces,slide (action),slide (action),,slide (action)
+item_478,smile,word,action_words,produces,smile,smile,,smile
+item_479,spill,word,action_words,produces,spill,spill,,spill
+item_480,splash,word,action_words,produces,splash,splash,,splash
+item_481,stand,word,action_words,produces,stand,stand,,stand
+item_482,stay,word,action_words,produces,stay,stay,,stay
+item_483,stop,word,action_words,produces,stop,stop,,stop
+item_484,sweep,word,action_words,produces,sweep,sweep,,sweep
+item_485,swim,word,action_words,produces,swim,swim,,swim
+item_486,swing.action,word,action_words,produces,swing (action),swing (action),,swing (action)
+item_487,take,word,action_words,produces,take,take,,take
+item_488,talk,word,action_words,produces,talk,talk,,talk
+item_489,taste,word,action_words,produces,taste,taste,,taste
+item_490,tear,word,action_words,produces,tear,tear,,tear
+item_491,think,word,action_words,produces,think,think,,think
+item_492,throw,word,action_words,produces,throw,throw,,throw
+item_493,tickle,word,action_words,produces,tickle,tickle,,tickle
+item_494,touch,word,action_words,produces,touch,touch,,touch
+item_495,wait,word,action_words,produces,wait,wait,,wait
+item_496,wake,word,action_words,produces,wake,wake,,wake
+item_497,walk,word,action_words,produces,walk,walk,,walk
+item_498,wash,word,action_words,produces,wash,wash,,wash
+item_499,watch.action,word,action_words,produces,watch (action),watch (action),,watch (action)
+item_500,wipe,word,action_words,produces,wipe,wipe,,wipe
+item_501,wish,word,action_words,produces,wish,wish,,wish
+item_502,work.action,word,action_words,produces,work (action),work (action),,work (action)
+item_503,write,word,action_words,produces,write,write,,write
+item_504,allgone,word,descriptive_words,produces,all gone,all gone,,all gone
+item_505,asleep,word,descriptive_words,produces,asleep,asleep,,asleep
+item_506,awake,word,descriptive_words,produces,awake,awake,,awake
+item_507,bad,word,descriptive_words,produces,bad,bad,,bad
+item_508,better,word,descriptive_words,produces,better,better,,better
+item_509,big,word,descriptive_words,produces,big,big,,big
+item_510,black,word,descriptive_words,produces,black,black,,black
+item_511,blue,word,descriptive_words,produces,blue,blue,,blue
+item_512,broken,word,descriptive_words,produces,broken,broken,,broken
+item_513,brown,word,descriptive_words,produces,brown,brown,,brown
+item_514,careful,word,descriptive_words,produces,careful,careful,,careful
+item_515,clean.description,word,descriptive_words,produces,clean (description),clean (description),,clean (description)
+item_516,cold,word,descriptive_words,produces,cold,cold,,cold
+item_517,cute,word,descriptive_words,produces,cute,cute,,cute
+item_518,dark,word,descriptive_words,produces,dark,dark,,dark
+item_519,dirty,word,descriptive_words,produces,dirty,dirty,,dirty
+item_520,dry.description,word,descriptive_words,produces,dry (description),dry (description),,dry (description)
+item_521,empty,word,descriptive_words,produces,empty,empty,,empty
+item_522,fast,word,descriptive_words,produces,fast,fast,,fast
+item_523,fine,word,descriptive_words,produces,fine,fine,,fine
+item_524,first,word,descriptive_words,produces,first,first,,first
+item_525,full,word,descriptive_words,produces,full,full,,full
+item_526,gentle,word,descriptive_words,produces,gentle,gentle,,gentle
+item_527,good,word,descriptive_words,produces,good,good,,good
+item_528,green,word,descriptive_words,produces,green,green,,green
+item_529,happy,word,descriptive_words,produces,happy,happy,,happy
+item_530,hard,word,descriptive_words,produces,hard,hard,,hard
+item_531,heavy,word,descriptive_words,produces,heavy,heavy,,heavy
+item_532,high,word,descriptive_words,produces,high,high,,high
+item_533,hot,word,descriptive_words,produces,hot,hot,,hot
+item_534,hungry,word,descriptive_words,produces,hungry,hungry,,hungry
+item_535,hurt,word,descriptive_words,produces,hurt,hurt,,hurt (description)
+item_536,last,word,descriptive_words,produces,last,last,,last
+item_537,little,word,descriptive_words,produces,little (description),little (description),,little (description)
+item_538,long,word,descriptive_words,produces,long,long,,long
+item_539,loud,word,descriptive_words,produces,loud,loud,,loud
+item_540,mad,word,descriptive_words,produces,mad,mad,,mad
+item_541,naughty,word,descriptive_words,produces,naughty,naughty,,naughty
+item_542,new,word,descriptive_words,produces,new,new,,new
+item_543,nice,word,descriptive_words,produces,nice,nice,,nice
+item_544,noisy,word,descriptive_words,produces,noisy,noisy,,noisy
+item_545,old,word,descriptive_words,produces,old,old,,old
+item_546,orange.description,word,descriptive_words,produces,orange (description),orange (description),,orange (description)
+item_547,poor,word,descriptive_words,produces,poor,poor,,poor
+item_548,pretty,word,descriptive_words,produces,pretty,pretty,,pretty
+item_549,quiet,word,descriptive_words,produces,quiet,quiet,,quiet
+item_550,red,word,descriptive_words,produces,red,red,,red
+item_551,sad,word,descriptive_words,produces,sad,sad,,sad
+item_552,scared,word,descriptive_words,produces,scared,scared,,scared
+item_553,sick,word,descriptive_words,produces,sick,sick,,sick
+item_554,sleepy,word,descriptive_words,produces,sleepy,sleepy,,sleepy
+item_555,slow,word,descriptive_words,produces,slow,slow,,slow
+item_556,soft,word,descriptive_words,produces,soft,soft,,soft
+item_557,sticky,word,descriptive_words,produces,sticky,sticky,,sticky
+item_558,stuck,word,descriptive_words,produces,stuck,stuck,,stuck
+item_559,thirsty,word,descriptive_words,produces,thirsty,thirsty,,thirsty
+item_560,tiny,word,descriptive_words,produces,tiny,tiny,,tiny
+item_561,tired,word,descriptive_words,produces,tired,tired,,tired
+item_562,wet,word,descriptive_words,produces,wet,wet,,wet (description)
+item_563,white,word,descriptive_words,produces,white,white,,white
+item_564,windy,word,descriptive_words,produces,windy,windy,,windy
+item_565,yellow,word,descriptive_words,produces,yellow,yellow,,yellow
+item_566,yucky,word,descriptive_words,produces,yucky,yucky,,yucky
+item_567,after,word,time_words,produces,after,after,,after
+item_568,before,word,time_words,produces,before,before,,before
+item_569,day,word,time_words,produces,day,day,,day
+item_570,later,word,time_words,produces,later,later,,later
+item_571,morning,word,time_words,produces,morning,morning,,morning
+item_572,night,word,time_words,produces,night,night,,night
+item_573,now,word,time_words,produces,now,now,,now
+item_574,time,word,time_words,produces,time,time,,time
+item_575,today,word,time_words,produces,today,today,,today
+item_576,tomorrow,word,time_words,produces,tomorrow,tomorrow,,tomorrow
+item_577,tonight,word,time_words,produces,tonight,tonight,,tonight
+item_578,yesterday,word,time_words,produces,yesterday,yesterday,,yesterday
+item_579,he,word,pronouns,produces,he,he,,he
+item_580,her,word,pronouns,produces,her,her,,her
+item_581,hers,word,pronouns,produces,hers,hers,,hers
+item_582,him,word,pronouns,produces,him,him,,him
+item_583,his,word,pronouns,produces,his,his,,his
+item_584,i,word,pronouns,produces,I,I,,I
+item_585,it,word,pronouns,produces,it,it,,it
+item_586,me,word,pronouns,produces,me,me,,me
+item_587,mine,word,pronouns,produces,mine,mine,,mine
+item_588,my,word,pronouns,produces,my,my,,my
+item_589,myself,word,pronouns,produces,myself,myself,,myself
+item_590,our,word,pronouns,produces,our,our,,our
+item_591,she,word,pronouns,produces,she,she,,she
+item_592,that,word,pronouns,produces,that,that,,that
+item_593,their,word,pronouns,produces,their,their,,their
+item_594,them,word,pronouns,produces,them,them,,them
+item_595,these,word,pronouns,produces,these,these,,these
+item_596,they,word,pronouns,produces,they,they,,they
+item_597,this,word,pronouns,produces,this,this,,this
+item_598,those,word,pronouns,produces,those,those,,those
+item_599,us,word,pronouns,produces,us,us,,us
+item_600,we,word,pronouns,produces,we,we,,we
+item_601,you,word,pronouns,produces,you,you,,you
+item_602,your,word,pronouns,produces,your,your,,your
+item_603,yourself,word,pronouns,produces,yourself,yourself,,yourself
+item_604,how,word,question_words,produces,how,how,,how
+item_605,what,word,question_words,produces,what,what,,what
+item_606,when,word,question_words,produces,when,when,,when (question)
+item_607,where,word,question_words,produces,where,where,,where (question)
+item_608,which,word,question_words,produces,which,which,,which (question)
+item_609,who,word,question_words,produces,who,who,,who
+item_610,why,word,question_words,produces,why,why,,why
+item_611,about,word,locations,produces,about,about,,about
+item_612,above,word,locations,produces,above,above,,above
+item_613,around,word,locations,produces,around,around,,around
+item_614,at,word,locations,produces,at,at,,at
+item_615,away,word,locations,produces,away,away,,away
+item_616,back,word,locations,produces,back,back,,back (location)
+item_617,behind,word,locations,produces,behind,behind,,behind
+item_618,beside,word,locations,produces,beside,beside,,beside
+item_619,by,word,locations,produces,by,by,,by
+item_620,down,word,locations,produces,down,down,,down
+item_621,for,word,locations,produces,for,for,,for
+item_622,here,word,locations,produces,here,here,,here
+item_623,inside,word,locations,produces,inside/in,inside/in,,in
+item_624,into,word,locations,produces,into,into,,into
+item_625,next_to,word,locations,produces,next to,next to,,next to
+item_626,of,word,locations,produces,of,of,,of
+item_627,off,word,locations,produces,off,off,,off
+item_628,on,word,locations,produces,on,on,,on
+item_629,on_top_of,word,locations,produces,on top of,on top of,,on top of
+item_630,out,word,locations,produces,out,out,,out
+item_631,over,word,locations,produces,over,over,,over
+item_632,there,word,locations,produces,there,there,,there
+item_633,to,word,locations,produces,to,to,,to
+item_634,under,word,locations,produces,under,under,,under
+item_635,up,word,locations,produces,up,up,,up
+item_636,with,word,locations,produces,with,with,,with
+item_637,a,word,quantifiers,produces,a,a,,a
+item_638,all,word,quantifiers,produces,all,all,,all
+item_639,a_lot,word,quantifiers,produces,a lot,a lot,,a lot
+item_640,an,word,quantifiers,produces,an,an,,a
+item_641,another,word,quantifiers,produces,another,another,,another
+item_642,any,word,quantifiers,produces,any,any,,any
+item_643,each,word,quantifiers,produces,each,each,,each
+item_644,every,word,quantifiers,produces,every,every,,every
+item_645,more,word,quantifiers,produces,more,more,,more
+item_646,much,word,quantifiers,produces,much,much,,much
+item_647,none,word,quantifiers,produces,none,none,,none
+item_648,not,word,quantifiers,produces,not,not,,not
+item_649,other,word,quantifiers,produces,other,other,,other
+item_650,same,word,quantifiers,produces,same,same,,same
+item_651,some,word,quantifiers,produces,some,some,,some
+item_652,the,word,quantifiers,produces,the,the,,the
+item_653,too,word,quantifiers,produces,too,too,,too
+item_654,am,word,helping_verbs,produces,am,am,,am
+item_655,are,word,helping_verbs,produces,are,are,,are
+item_656,be,word,helping_verbs,produces,be,be,,be
+item_657,can.auxiliary,word,helping_verbs,produces,can (auxiliary),can (auxiliary),,can (auxiliary)
+item_658,could,word,helping_verbs,produces,could,could,,could
+item_659,did,word,helping_verbs,produces,did/did ya,did/did ya,,did
+item_660,do,word,helping_verbs,produces,do,do,,do
+item_661,does,word,helping_verbs,produces,does,does,,does
+item_662,dont,word,helping_verbs,produces,don't,don't,,don't
+item_663,gonna,word,helping_verbs,produces,gonna/going to,gonna/going to,,gonna
+item_664,gotta,word,helping_verbs,produces,gotta/got to,gotta/got to,,gotta
+item_665,hafta,word,helping_verbs,produces,hafta/have to,hafta/have to,,hafta
+item_666,is,word,helping_verbs,produces,is,is,,is
+item_667,lemme,word,helping_verbs,produces,lemme/let me,lemme/let me,,lemme
+item_668,need,word,helping_verbs,produces,need/need to,need/need to,,need
+item_669,try,word,helping_verbs,produces,try/try to,try/try to,,try
+item_670,wanna,word,helping_verbs,produces,wanna/want to,wanna/want to,,wanna
+item_671,was,word,helping_verbs,produces,was,was,,was
+item_672,were,word,helping_verbs,produces,were,were,,were
+item_673,will,word,helping_verbs,produces,will,will,,will
+item_674,would,word,helping_verbs,produces,would,would,,would
+item_675,and,word,connecting_words,produces,and,and,,and
+item_676,because,word,connecting_words,produces,because,because,,because
+item_677,but,word,connecting_words,produces,but,but,,but
+item_678,if,word,connecting_words,produces,if,if,,if
+item_679,so,word,connecting_words,produces,so,so,,so
+item_680,then,word,connecting_words,produces,then,then,,then
+item_681,usepast,how_use_words,,not yet; sometimes; often,does your child ever talk about past events or people who are not present?,,,
+item_682,usefuture,how_use_words,,not yet; sometimes; often,does your child ever talk about something that's going to happen in the future?,,,
+item_683,miss_produce,how_use_words,,not yet; sometimes; often,does your child talk a bout objects that are not present?,,,
+item_684,miss_comp,how_use_words,,not yet; sometimes; often,does your child understand if you ask for something that is not in the room?,,,
+item_685,usepossessive,how_use_words,,not yet; sometimes; often,does your child ever pick up or point to an object and name an absent person to whom the object belongs?,,,
+item_686,splural,word_endings,,not yet; sometimes; often,splural,,,
+item_687,spossess,word_endings,,not yet; sometimes; often,spossess,,,
+item_688,ing,word_endings,,not yet; sometimes; often,ing,,,
+item_689,ed,word_endings,,not yet; sometimes; often,ed,,,
+item_690,children,word_forms_nouns,,produces,children,children,,
+item_691,feet,word_forms_nouns,,produces,feet,feet,,
+item_692,men,word_forms_nouns,,produces,men,men,,
+item_693,mice,word_forms_nouns,,produces,mice,mice,,
+item_694,teeth,word_forms_nouns,,produces,teeth,teeth,,
+item_695,ate,word_forms_verbs,,produces,ate,ate,,
+item_696,blew,word_forms_verbs,,produces,blew,blew,,
+item_697,bought,word_forms_verbs,,produces,bought,bought,,
+item_698,broke,word_forms_verbs,,produces,broke,broke,,
+item_699,came,word_forms_verbs,,produces,came,came,,
+item_700,drank,word_forms_verbs,,produces,drank,drank,,
+item_701,drove,word_forms_verbs,,produces,drove,drove,,
+item_702,fell,word_forms_verbs,,produces,fell,fell,,
+item_703,flew,word_forms_verbs,,produces,flew,flew,,
+item_704,got,word_forms_verbs,,produces,got,got,,
+item_705,had,word_forms_verbs,,produces,had,had,,
+item_706,heard,word_forms_verbs,,produces,heard,heard,,
+item_707,held,word_forms_verbs,,produces,held,held,,
+item_708,lost,word_forms_verbs,,produces,lost,lost,,
+item_709,made,word_forms_verbs,,produces,made,made,,
+item_710,ran,word_forms_verbs,,produces,ran,ran,,
+item_711,sat,word_forms_verbs,,produces,sat,sat,,
+item_712,saw,word_forms_verbs,,produces,saw,saw,,
+item_713,took,word_forms_verbs,,produces,took,took,,
+item_714,went,word_forms_verbs,,produces,went,went,,
+item_715,blockses,word_endings_nouns,,produces,blockses,blockses,,
+item_716,childrns,word_endings_nouns,,produces,childrens,childrens,,
+item_717,childs,word_endings_nouns,,produces,childs,childs,,
+item_718,feets,word_endings_nouns,,produces,feets,feets,,
+item_719,foots,word_endings_nouns,,produces,foots,foots,,
+item_720,mans,word_endings_nouns,,produces,mans,mans,,
+item_721,mens,word_endings_nouns,,produces,mens,mens,,
+item_722,mices,word_endings_nouns,,produces,mices,mices,,
+item_723,mouses,word_endings_nouns,,produces,mouses,mouses,,
+item_724,shoeses,word_endings_nouns,,produces,shoeses,shoeses,,
+item_725,sockses,word_endings_nouns,,produces,sockses,sockses,,
+item_726,teeths,word_endings_nouns,,produces,teeths,teeths,,
+item_727,toeses,word_endings_nouns,,produces,toeses,toeses,,
+item_728,tooths,word_endings_nouns,,produces,tooths,tooths,,
+item_729,ated,word_endings_verbs,,produces,ated,ated,,
+item_730,blewed,word_endings_verbs,,produces,blewed,blewed,,
+item_731,blowed,word_endings_verbs,,produces,blowed,blowed,,
+item_732,bringed,word_endings_verbs,,produces,bringed,bringed,,
+item_733,buyed,word_endings_verbs,,produces,buyed,buyed,,
+item_734,breaked,word_endings_verbs,,produces,breaked,breaked,,
+item_735,broked,word_endings_verbs,,produces,broked,broked,,
+item_736,camed,word_endings_verbs,,produces,camed,camed,,
+item_737,comed,word_endings_verbs,,produces,comed,comed,,
+item_738,doed,word_endings_verbs,,produces,doed,doed,,
+item_739,dranked,word_endings_verbs,,produces,dranked,dranked,,
+item_740,drinked,word_endings_verbs,,produces,drinked,drinked,,
+item_741,eated,word_endings_verbs,,produces,eated,eated,,
+item_742,falled,word_endings_verbs,,produces,falled,falled,,
+item_743,flied,word_endings_verbs,,produces,flied,flied,,
+item_744,getted,word_endings_verbs,,produces,getted,getted,,
+item_745,goed,word_endings_verbs,,produces,goed,goed,,
+item_746,gotted,word_endings_verbs,,produces,gotted,gotted,,
+item_747,haved,word_endings_verbs,,produces,haved,haved,,
+item_748,heared,word_endings_verbs,,produces,heared,heared,,
+item_749,holded,word_endings_verbs,,produces,holded,holded,,
+item_750,losed,word_endings_verbs,,produces,losed,losed,,
+item_751,losted,word_endings_verbs,,produces,losted,losted,,
+item_752,maked,word_endings_verbs,,produces,maked,maked,,
+item_753,ranned,word_endings_verbs,,produces,ranned,ranned,,
+item_754,runned,word_endings_verbs,,produces,runned,runned,,
+item_755,seed,word_endings_verbs,,produces,seed,seed,,
+item_756,satted,word_endings_verbs,,produces,satted,satted,,
+item_757,sitted,word_endings_verbs,,produces,sitted,sitted,,
+item_758,taked,word_endings_verbs,,produces,taked,taked,,
+item_759,wented,word_endings_verbs,,produces,wented,wented,,
+item_760,combine,combine,,not yet; sometimes; often,has your child begun to combine word yet?,,,
+item_761,complx01,complexity,,simple; complex,two shoe / two shoes,two shoe / two shoes,morphology,
+item_762,complx02,complexity,,simple; complex,two foot / two feet,two foot / two feet,morphology,
+item_763,complx03,complexity,,simple; complex,daddy car / daddy's car,daddy car / daddy's car,morphology,
+item_764,complx04,complexity,,simple; complex,kitty sleep / kitty sleeping,kitty sleep / kitty sleeping,morphology,
+item_765,complx05,complexity,,simple; complex,I make tower / I making tower,I make tower / I making tower,morphology,
+item_766,complx06,complexity,,simple; complex,I fall down / I fell down,I fall down / I fell down,morphology,
+item_767,complx07,complexity,,simple; complex,more cookie / more cookies,more cookie / more cookies,morphology,
+item_768,complx08,complexity,,simple; complex,these my tooth / these my teeth,these my tooth / these my teeth,morphology,
+item_769,complx09,complexity,,simple; complex,baby blanket / baby's blanket,baby blanket / baby's blanket,morphology,
+item_770,complx10,complexity,,simple; complex,doggie kiss me / doggie kissed me,doggie kiss me / doggie kissed me,morphology,
+item_771,complx11,complexity,,simple; complex,daddy pick me up / daddy picked me up,daddy pick me up / daddy picked me up,morphology,
+item_772,complx12,complexity,,simple; complex,kitty go away / kitty went away,kitty go away / kitty went away,morphology,
+item_773,complx13,complexity,,simple; complex,doggie table / doggie on table,doggie table / doggie on table,syntax,
+item_774,complx14,complexity,,simple; complex,that my truck / that's my truck,that my truck / that's my truck,syntax,
+item_775,complx15,complexity,,simple; complex,baby crying / baby is crying,baby crying / baby is crying,syntax,
+item_776,complx16,complexity,,simple; complex,you fix it / can you fix it,you fix it / can you fix it,syntax,
+item_777,complx17,complexity,,simple; complex,read me story Mommy / read me a story Mommy,read me story Mommy / read me a story Mommy,syntax,
+item_778,complx18,complexity,,simple; complex,no wash dolly / don't wash dolly,no wash dolly / don't wash dolly,syntax,
+item_779,complx19,complexity,,simple; complex,want more juice / want juice in there,want more juice / want juice in there,syntax,
+item_780,complx20,complexity,,simple; complex,there a kitty / there's a kitty,there a kitty / there's a kitty,syntax,
+item_781,complx21,complexity,,simple; complex,go bye-bye / wanna go bye-bye,go bye-bye / wanna go bye-bye,syntax,
+item_782,complx22,complexity,,simple; complex,where mommy go / where did mommy go,where mommy go / where did mommy go,syntax,
+item_783,complx23,complexity,,simple; complex,coffee hot / that coffee hot,coffee hot / that coffee hot,syntax,
+item_784,complx24,complexity,,simple; complex,I no do it / I can't do it,I no do it / I can't do it,syntax,
+item_785,complx25,complexity,,simple; complex,I like read stories / I like to read stories,I like read stories / I like to read stories,syntax,
+item_786,complx26,complexity,,simple; complex,don't read book / don't want you read that book,don't read book / don't want you read that book,syntax,
+item_787,complx27,complexity,,simple; complex,turn on light / turn on light so I can see,turn on light / turn on light so I can see,syntax,
+item_788,complx28,complexity,,simple; complex,I want that / I want that one you got,I want that / I want that one you got,syntax,
+item_789,complx29,complexity,,simple; complex,want cookies / want cookies and milk,want cookies / want cookies and milk,syntax,
+item_790,complx30,complexity,,simple; complex,cookie mommy / cookie for mommy,cookie mommy / cookie for mommy,syntax,
+item_791,complx31,complexity,,simple; complex,baby want eat / baby want to eat,baby want eat / baby want to eat,syntax,
+item_792,complx32,complexity,,simple; complex,lookit me / lookit me dancing,lookit me / lookit me dancing,syntax,
+item_793,complx33,complexity,,simple; complex,lookit / lookit what I got,lookit / lookit what I got,syntax,
+item_794,complx34,complexity,,simple; complex,where's my dolly / where's my dolly name Sam,where's my dolly / where's my dolly name Sam,syntax,
+item_795,complx35,complexity,,simple; complex,we made this / me and Paul made this,we made this / me and Paul made this,syntax,
+item_796,complx36,complexity,,simple; complex,I sing song / I sing song for you,I sing song / I sing song for you,syntax,
+item_797,complx37,complexity,,simple; complex,baby crying / baby crying cuz she's sad,baby crying / baby crying cuz she's sad,syntax,
