@@ -1,460 +1,313 @@
-"field","column","group","type "
-"study_id","id","child","study_id"
-"sex","pohlavie","child","sex"
-"data_age","1.meranie mesiac od 8;00 -8;30","admin","data_age"
-"item_1","A1 (2-1)","item","first_signs"
-"item_2","A2 (2-1)","item","first_signs"
-"item_3","A3 (2-1)","item","first_signs"
-"item_4","Aká veľká narastieš?","item","phrases"
-"item_5","Ako sa máš?","item","phrases"
-"item_6","Aha, pozri!","item","phrases"
-"item_7","Daj (maca, loptu,...)","item","phrases"
-"item_8","Daj pápá (zakývaj).","item","phrases"
-"item_9","Daj pusu.","item","phrases"
-"item_10","Ešte chceš?","item","phrases"
-"item_11","Hoď (kocku, loptu,...)","item","phrases"
-"item_12","Choď k (tatovi, mame,...)","item","phrases"
-"item_13","Ideme čítať.","item","phrases"
-"item_14","Ideme pá.","item","phrases"
-"item_15","Ideme papať.","item","phrases"
-"item_16","Ideš na koníka (na plecia)?","item","phrases"
-"item_17","Kde máš (očko, uško,...)?","item","phrases"
-"item_18","Nechytaj!","item","phrases"
-"item_19","Nepapaj (neber do pusy).","item","phrases"
-"item_20","Nono (nesmieš)!","item","phrases"
-"item_21","Otvor veľkú pusu (ham).","item","phrases"
-"item_22","Poď k (mame, tatovi,...).","item","phrases"
-"item_23","Pohľadaj (maca, loptu,...).","item","phrases"
-"item_24","Pošli pusu.","item","phrases"
-"item_25","Pozor!","item","phrases"
-"item_26","Ukáž, kde je (mama, maco,...).","item","phrases"
-"item_27","Urob guli, guli (zagúľaj loptu).","item","phrases"
-"item_28","Urob hačí (sadni si).","item","phrases"
-"item_29","Urob moja.","item","phrases"
-"item_30","Urob ťapi-ťapi.","item","phrases"
-"item_31","Vezmi (maca, loptu,...).","item","phrases"
-"item_32","Vypľuj!","item","phrases"
-"item_33","Vyzuj si (...).","item","phrases"
-"item_34","Zapni (TV, rádio, vypínač,...).","item","phrases"
-"item_35","Zatancuj.","item","phrases"
-"item_36","C1 (0-1-2-3)","item","starting_to_talk"
-"item_37","C2 (0-1-2-3)","item","starting_to_talk"
-"item_38","au","item","word"
-"item_39","bé","item","word"
-"item_40","brm_tú, tí","item","word"
-"item_41","brum","item","word"
-"item_42","člup","item","word"
-"item_43","dzdz(včela)","item","word"
-"item_44","gá (hus)","item","word"
-"item_45","hav (pes)","item","word"
-"item_46","hú (sova)","item","word"
-"item_47","kikirikí (kohút)","item","word"
-"item_48","D1.11klopkanie jazykom (koník)","item","word"
-"item_49","D1.12mé(koza)","item","word"
-"item_50","D1.13mňam","item","word"
-"item_51","D1.14mňau (mačka)","item","word"
-"item_52","mú (krava)","item","word"
-"item_53","pip_pipi (sliepka)","item","word"
-"item_54","sss (had)","item","word"
-"item_55","šiši (vlak)","item","word"
-"item_56","tik-tak (hodiny)","item","word"
-"item_57","vú (vysávač)","item","word"
-"item_58","žž_zz (lietadlo)","item","word"
-"item_59","Zvieratá bobrík)","item","word"
-"item_60","had","item","word"
-"item_61","holub","item","word"
-"item_62","hus","item","word"
-"item_63","chrobáčik/mravček","item","word"
-"item_64","jeleň","item","word"
-"item_65","kačka","item","word"
-"item_66","kohút","item","word"
-"item_67","koník","item","word"
-"item_68","korytnačka","item","word"
-"item_69","koza","item","word"
-"item_70","krava","item","word"
-"item_71","krokodíl","item","word"
-"item_72","krtko","item","word"
-"item_73","kukučka","item","word"
-"item_74","kuriatko/sliepka","item","word"
-"item_75","labuť","item","word"
-"item_76","lev","item","word"
-"item_77","lienka","item","word"
-"item_78","mačka","item","word"
-"item_79","medveď/maco","item","word"
-"item_80","meno domáceho zvieratka","item","word"
-"item_81","motýľ","item","word"
-"item_82","mucha","item","word"
-"item_83","myška","item","word"
-"item_84","opica","item","word"
-"item_85","ovečka","item","word"
-"item_86","papagáj","item","word"
-"item_87","pes/havo","item","word"
-"item_88","prasa","item","word"
-"item_89","ryba","item","word"
-"item_90","slon","item","word"
-"item_91","sova","item","word"
-"item_92","tiger","item","word"
-"item_93","tuleň","item","word"
-"item_94","včela","item","word"
-"item_95","vlk","item","word"
-"item_96","vrana","item","word"
-"item_97","vtáčik","item","word"
-"item_98","zajac","item","word"
-"item_99","žaba","item","word"
-"item_100","žirafa","item","word"
-"item_101","auto","item","word"
-"item_102","autobus","item","word"
-"item_103","bicykel","item","word"
-"item_104","lietadlo","item","word"
-"item_105","motorka","item","word"
-"item_106","traktor","item","word"
-"item_107","trojkolka","item","word"
-"item_108","vlak","item","word"
-"item_109","bábika","item","word"
-"item_110","balón","item","word"
-"item_111","bublina/bublifuk","item","word"
-"item_112","bubon","item","word"
-"item_113","dráčik","item","word"
-"item_114","guľka","item","word"
-"item_115","kocka","item","word"
-"item_116","lopta / gól","item","word"
-"item_117","panák / figúrka","item","word"
-"item_118","vedierko / kýblik","item","word"
-"item_119","formička","item","word"
-"item_120","banán","item","word"
-"item_121","čaj","item","word"
-"item_122","čokoláda","item","word"
-"item_123","džús","item","word"
-"item_124","guláš","item","word"
-"item_125","halušky","item","word"
-"item_126","hrach","item","word"
-"item_127","chlieb","item","word"
-"item_128","jablko","item","word"
-"item_129","jedlo / ham","item","word"
-"item_130","jogurt","item","word"
-"item_131","kakao","item","word"
-"item_132","kaša","item","word"
-"item_133","keksík","item","word"
-"item_134","koláčik","item","word"
-"item_135","kompót","item","word"
-"item_136","kôrka","item","word"
-"item_137","krupica","item","word"
-"item_138","maslo","item","word"
-"item_139","mäso","item","word"
-"item_140","mlieko","item","word"
-"item_141","mrkva","item","word"
-"item_142","piškóta","item","word"
-"item_143","polievka","item","word"
-"item_144","rezance","item","word"
-"item_145","rožok","item","word"
-"item_146","ryža","item","word"
-"item_147","vajíčko","item","word"
-"item_148","voda","item","word"
-"item_149","zemiak","item","word"
-"item_150","body","item","word"
-"item_151","bunda","item","word"
-"item_152","čiapka","item","word"
-"item_153","klobúk","item","word"
-"item_154","košeľa","item","word"
-"item_155","nohavice / gate","item","word"
-"item_156","pančuchy","item","word"
-"item_157","papučky","item","word"
-"item_158","plienka","item","word"
-"item_159","ponožky","item","word"
-"item_160","pršiplášť","item","word"
-"item_161","pyžamo","item","word"
-"item_162","sandálky","item","word"
-"item_163","svetrík / pulóver","item","word"
-"item_164","šál","item","word"
-"item_165","tepláky","item","word"
-"item_166","topánky","item","word"
-"item_167","tričko","item","word"
-"item_168","bruško","item","word"
-"item_169","jazyk","item","word"
-"item_170","kolienko","item","word"
-"item_171","noha","item","word"
-"item_172","nos","item","word"
-"item_173","oko","item","word"
-"item_174","pohlavné orgány mužské / ženské","item","word"
-"item_175","prsník","item","word"
-"item_176","prsty","item","word"
-"item_177","pupok","item","word"
-"item_178","rana / boľavé miesto","item","word"
-"item_179","ruka","item","word"
-"item_180","ucho","item","word"
-"item_181","ústa / pusa","item","word"
-"item_182","vlasy","item","word"
-"item_183","zadok","item","word"
-"item_184","zuby","item","word"
-"item_185","lampa","item","word"
-"item_186","posteľ","item","word"
-"item_187","práčka","item","word"
-"item_188","rádio","item","word"
-"item_189","rúra na pečenie","item","word"
-"item_190","televízor","item","word"
-"item_191","cumeľ / dudel","item","word"
-"item_192","dáždnik","item","word"
-"item_193","diera","item","word"
-"item_194","fľaša","item","word"
-"item_195","gombík","item","word"
-"item_196","hodiny","item","word"
-"item_197","kamera","item","word"
-"item_198","kefa","item","word"
-"item_199","kľúče","item","word"
-"item_200","koliesko","item","word"
-"item_201","krhlička","item","word"
-"item_202","kvety","item","word"
-"item_203","liek / kvapky, sirup","item","word"
-"item_204","lopata / lopatka","item","word"
-"item_205","metla","item","word"
-"item_206","miska / mištička","item","word"
-"item_207","naberačka","item","word"
-"item_208","nočník","item","word"
-"item_209","okuliare","item","word"
-"item_210","palica","item","word"
-"item_211","pena","item","word"
-"item_212","prádlo","item","word"
-"item_213","pumpa","item","word"
-"item_214","smeti","item","word"
-"item_215","svetlo","item","word"
-"item_216","sviečka / kahanček","item","word"
-"item_217","taška","item","word"
-"item_218","telefón","item","word"
-"item_219","váha","item","word"
-"item_220","vankúš","item","word"
-"item_221","vareška","item","word"
-"item_222","váza","item","word"
-"item_223","vrchnák","item","word"
-"item_224","vysávač","item","word"
-"item_225","zástrčka / elektrika","item","word"
-"item_226","zvonček","item","word"
-"item_227","búda","item","word"
-"item_228","dážď","item","word"
-"item_229","dom","item","word"
-"item_230","domov","item","word"
-"item_231","garáž","item","word"
-"item_232","hojdačka","item","word"
-"item_233","jasle / škola","item","word"
-"item_234","kostol","item","word"
-"item_235","obchod","item","word"
-"item_236","park","item","word"
-"item_237","pieskovisko / piesok","item","word"
-"item_238","plaváreň","item","word"
-"item_239","slniečko","item","word"
-"item_240","sneh","item","word"
-"item_241","strom","item","word"
-"item_242","tma","item","word"
-"item_243","vonku","item","word"
-"item_244","záhrada / pole","item","word"
-"item_245","značka","item","word"
-"item_246","bazén / kúpalisko","item","word"
-"item_247","dievča","item","word"
-"item_248","chlapec","item","word"
-"item_249","krstná mama","item","word"
-"item_250","krstný otec","item","word"
-"item_251","lekár / lekárka","item","word"
-"item_252","mama","item","word"
-"item_253","otec","item","word"
-"item_254","stará mama","item","word"
-"item_255","starý otec","item","word"
-"item_256","teta","item","word"
-"item_257","ujo","item","word"
-"item_258","vlastné meno dieťaťa","item","word"
-"item_259","vlastné mená príbuzných osobA","item","word"
-"item_260","vlastné mená príbuzných osobB","item","word"
-"item_261","vlastné mená príbuzných osobC","item","word"
-"item_262","aha","item","word"
-"item_263","áno","item","word"
-"item_264","bác / bum","item","word"
-"item_265","dobre","item","word"
-"item_266","ešte","item","word"
-"item_267","fuj","item","word"
-"item_268","halo","item","word"
-"item_269","kuk","item","word"
-"item_270","moja","item","word"
-"item_271","nič","item","word"
-"item_272","nie","item","word"
-"item_273","nono","item","word"
-"item_274","pápá","item","word"
-"item_275","tak / no ","item","word"
-"item_276","báť sa","item","word"
-"item_277","bežať","item","word"
-"item_278","bolieť","item","word"
-"item_279","búchať","item","word"
-"item_280","cikať","item","word"
-"item_281","cúvať","item","word"
-"item_282","cvičiť","item","word"
-"item_283","česať","item","word"
-"item_284","čistiť","item","word"
-"item_285","čítať","item","word"
-"item_286","dať","item","word"
-"item_287","fúkať / pofúkať","item","word"
-"item_288","hrýzť / žuvkať","item","word"
-"item_289","chcieť","item","word"
-"item_290","ísť","item","word"
-"item_291","je / bude","item","word"
-"item_292","jesť","item","word"
-"item_293","kakať","item","word"
-"item_294","kopať","item","word"
-"item_295","kúpať","item","word"
-"item_296","kvapkať","item","word"
-"item_297","ležať","item","word"
-"item_298","liať / poliať","item","word"
-"item_299","lietať","item","word"
-"item_300","mať","item","word"
-"item_301","miešať","item","word"
-"item_302","natáčať","item","word"
-"item_303","nie je","item","word"
-"item_304","obuť","item","word"
-"item_305","otvoriť","item","word"
-"item_306","páliť","item","word"
-"item_307","piecť","item","word"
-"item_308","piť","item","word"
-"item_309","sedieť","item","word"
-"item_310","skákať","item","word"
-"item_311","spadnúť","item","word"
-"item_312","spať","item","word"
-"item_313","ťahať","item","word"
-"item_314","tancovať","item","word"
-"item_315","ukázať","item","word"
-"item_316","variť","item","word"
-"item_317","volať","item","word"
-"item_318","zatvoriť","item","word"
-"item_319","nefunguje, nedarí sa, nejde","item","word"
-"item_320","červený","item","word"
-"item_321","horúci","item","word"
-"item_322","krásny","item","word"
-"item_323","malý","item","word"
-"item_324","modrý","item","word"
-"item_325","pekný","item","word"
-"item_326","prázdny","item","word"
-"item_327","špinavý","item","word"
-"item_328","taký","item","word"
-"item_329","veľký","item","word"
-"item_330","zelený","item","word"
-"item_331","ja","item","word"
-"item_332","my","item","word"
-"item_333","ten","item","word"
-"item_334","to","item","word"
-"item_335","toto","item","word"
-"item_336","tu","item","word"
-"item_337","ty","item","word"
-"item_338","dnu","item","word"
-"item_339","dole / dolu","item","word"
-"item_340","hore","item","word"
-"item_341","kde je?","item","word"
-"item_342","preč","item","word"
-"item_343","tam","item","word"
-"item_344","tu","item","word"
-"item_345","tuto","item","word"
-"item_346","von","item","word"
-"item_347","Babo a teta","item","phrases"
-"item_348","Čo je to?","item","phrases"
-"item_349","Daj dudu.","item","phrases"
-"item_350","Daj papať.","item","phrases"
-"item_351","Daj tam.","item","phrases"
-"item_352","Ešte tu.","item","phrases"
-"item_353","Hajať bude.","item","phrases"
-"item_354","Je tu.","item","phrases"
-"item_355","Kam ide?","item","phrases"
-"item_356","Kde dedo?","item","phrases"
-"item_357","Kde je?","item","phrases"
-"item_358","Mama dá.","item","phrases"
-"item_359","Ne ide.","item","phrases"
-"item_360","Není lopta (...).","item","phrases"
-"item_361","Rádio (...) tam.","item","phrases"
-"item_362","Tam čistí.","item","phrases"
-"item_363","Tato dá.","item","phrases"
-"item_364","Tato je tam.","item","phrases"
-"item_365","Tato volá.","item","phrases"
-"item_366","To daj.","item","phrases"
-"item_367","To tu.","item","phrases"
-"item_368","Toto mama.","item","phrases"
-"item_369","Tu je?","item","phrases"
-"item_370","Tu polej.","item","phrases"
-"item_371","aa1","item","gestures_first"
-"item_372","aa2","item","gestures_first"
-"item_373","aa3","item","gestures_first"
-"item_374","aa4","item","gestures_first"
-"item_375","aa5","item","gestures_first"
-"item_376","aa6","item","gestures_first"
-"item_377","aa7","item","gestures_first"
-"item_378","aa8","item","gestures_first"
-"item_379","aa9","item","gestures_first"
-"item_380","aa10","item","gestures_first"
-"item_381","aa11","item","gestures_first"
-"item_382","aa12","item","gestures_first"
-"item_383","aa13","item","gestures_first"
-"item_384","aa14","item","gestures_first"
-"item_385","aa15","item","gestures_first"
-"item_386","bb1","item","gestures_first"
-"item_387","bb2","item","gestures_first"
-"item_388","bb3","item","gestures_first"
-"item_389","bb4","item","gestures_first"
-"item_390","bb5","item","gestures_first"
-"item_391","bb6","item","gestures_first"
-"item_392","bb7","item","gestures_first"
-"item_393","bb8","item","gestures_first"
-"item_394","bb9","item","gestures_first"
-"item_395","bb10","item","gestures_first"
-"item_396","cc1 ","item","games_routines"
-"item_397","cc2","item","games_routines"
-"item_398","cc3","item","games_routines"
-"item_399","cc4","item","games_routines"
-"item_400","cc5","item","games_routines"
-"item_401","cc6","item","games_routines"
-"item_402","cc7","item","games_routines"
-"item_403","cc8","item","games_routines"
-"item_404","dd 1 (2-1-0)","item","gestures_objects"
-"item_405","dd 2","item","gestures_objects"
-"item_406","dd 3","item","gestures_objects"
-"item_407","dd 4","item","gestures_objects"
-"item_408","dd 5","item","gestures_objects"
-"item_409","dd 6","item","gestures_objects"
-"item_410","dd 7","item","gestures_objects"
-"item_411","dd 8","item","gestures_objects"
-"item_412","dd 9","item","gestures_objects"
-"item_413","dd 10","item","gestures_objects"
-"item_414","dd 11","item","gestures_objects"
-"item_415","dd12","item","gestures_objects"
-"item_416","dd 13","item","gestures_objects"
-"item_417","dd 14","item","gestures_objects"
-"item_418","dd15","item","gestures_objects"
-"item_419","dd 16","item","gestures_objects"
-"item_420","dd 17","item","gestures_objects"
-"item_421","dd 18","item","gestures_objects"
-"item_422","dd 19","item","gestures_objects"
-"item_423","dd 20","item","gestures_objects"
-"item_424","dd 21","item","gestures_objects"
-"item_425","dd 22","item","gestures_objects"
-"item_426","dd 23","item","gestures_objects"
-"item_427","dd 24 ","item","gestures_objects"
-"item_428","dd 25","item","gestures_objects"
-"item_429","ee 1","item","gestures_parent"
-"item_430","ee 2","item","gestures_parent"
-"item_431","ee 3","item","gestures_parent"
-"item_432","ee 4","item","gestures_parent"
-"item_433","ee 5","item","gestures_parent"
-"item_434","ee 6","item","gestures_parent"
-"item_435","ee 7","item","gestures_parent"
-"item_436","ee 8","item","gestures_parent"
-"item_437","ee 9","item","gestures_parent"
-"item_438","ee 10","item","gestures_parent"
-"item_439","ee 11","item","gestures_parent"
-"item_440","ee 12","item","gestures_parent"
-"item_441","ff 1","item","gestures_adult"
-"item_442","ff 2","item","gestures_adult"
-"item_443","ff 3","item","gestures_adult"
-"item_444","ff 4","item","gestures_adult"
-"item_445","ff 5","item","gestures_adult"
-"item_446","ff 6","item","gestures_adult"
-"item_447","ff 7","item","gestures_adult"
-"item_448","ff 8","item","gestures_adult"
-"item_449","ff 9","item","gestures_adult"
-"item_450","ff 10","item","gestures_adult"
-"item_451","ff 11","item","gestures_adult"
-"item_452","ff 12","item","gestures_adult"
-"item_453","ff 13","item","gestures_adult"
-"item_454","ff 14","item","gestures_adult"
-"item_455","ff 15","item","gestures_adult"
-"item_456","gg ","item","gestures_adult"
+field,column,group,type 
+study_id,id,child,study_id
+sex,pohlavie,child,sex
+data_age,1.meranie mesiac od 8;00 -8;30,admin,data_age
+item_1,au,item,word
+item_2,bé,item,word
+item_3,"brm_tú, tí",item,word
+item_4,brum,item,word
+item_5,člup,item,word
+item_6,dzdz(včela),item,word
+item_7,gá (hus),item,word
+item_8,hav (pes),item,word
+item_9,hú (sova),item,word
+item_10,kikirikí (kohút),item,word
+item_11,D1.11klopkanie jazykom (koník),item,word
+item_12,D1.12mé(koza),item,word
+item_13,D1.13mňam,item,word
+item_14,D1.14mňau (mačka),item,word
+item_15,mú (krava),item,word
+item_16,pip_pipi (sliepka),item,word
+item_17,sss (had),item,word
+item_18,šiši (vlak),item,word
+item_19,tik-tak (hodiny),item,word
+item_20,vú (vysávač),item,word
+item_21,žž_zz (lietadlo),item,word
+item_22,Zvieratá bobrík),item,word
+item_23,had,item,word
+item_24,holub,item,word
+item_25,hus,item,word
+item_26,chrobáčik/mravček,item,word
+item_27,jeleň,item,word
+item_28,kačka,item,word
+item_29,kohút,item,word
+item_30,koník,item,word
+item_31,korytnačka,item,word
+item_32,koza,item,word
+item_33,krava,item,word
+item_34,krokodíl,item,word
+item_35,krtko,item,word
+item_36,kukučka,item,word
+item_37,kuriatko/sliepka,item,word
+item_38,labuť,item,word
+item_39,lev,item,word
+item_40,lienka,item,word
+item_41,mačka,item,word
+item_42,medveď/maco,item,word
+item_43,meno domáceho zvieratka,item,word
+item_44,motýľ,item,word
+item_45,mucha,item,word
+item_46,myška,item,word
+item_47,opica,item,word
+item_48,ovečka,item,word
+item_49,papagáj,item,word
+item_50,pes/havo,item,word
+item_51,prasa,item,word
+item_52,ryba,item,word
+item_53,slon,item,word
+item_54,sova,item,word
+item_55,tiger,item,word
+item_56,tuleň,item,word
+item_57,včela,item,word
+item_58,vlk,item,word
+item_59,vrana,item,word
+item_60,vtáčik,item,word
+item_61,zajac,item,word
+item_62,žaba,item,word
+item_63,žirafa,item,word
+item_64,auto,item,word
+item_65,autobus,item,word
+item_66,bicykel,item,word
+item_67,lietadlo,item,word
+item_68,motorka,item,word
+item_69,traktor,item,word
+item_70,trojkolka,item,word
+item_71,vlak,item,word
+item_72,bábika,item,word
+item_73,balón,item,word
+item_74,bublina/bublifuk,item,word
+item_75,bubon,item,word
+item_76,dráčik,item,word
+item_77,guľka,item,word
+item_78,kocka,item,word
+item_79,lopta / gól,item,word
+item_80,panák / figúrka,item,word
+item_81,vedierko / kýblik,item,word
+item_82,formička,item,word
+item_83,banán,item,word
+item_84,čaj,item,word
+item_85,čokoláda,item,word
+item_86,džús,item,word
+item_87,guláš,item,word
+item_88,halušky,item,word
+item_89,hrach,item,word
+item_90,chlieb,item,word
+item_91,jablko,item,word
+item_92,jedlo / ham,item,word
+item_93,jogurt,item,word
+item_94,kakao,item,word
+item_95,kaša,item,word
+item_96,keksík,item,word
+item_97,koláčik,item,word
+item_98,kompót,item,word
+item_99,kôrka,item,word
+item_100,krupica,item,word
+item_101,maslo,item,word
+item_102,mäso,item,word
+item_103,mlieko,item,word
+item_104,mrkva,item,word
+item_105,piškóta,item,word
+item_106,polievka,item,word
+item_107,rezance,item,word
+item_108,rožok,item,word
+item_109,ryža,item,word
+item_110,vajíčko,item,word
+item_111,voda,item,word
+item_112,zemiak,item,word
+item_113,body,item,word
+item_114,bunda,item,word
+item_115,čiapka,item,word
+item_116,klobúk,item,word
+item_117,košeľa,item,word
+item_118,nohavice / gate,item,word
+item_119,pančuchy,item,word
+item_120,papučky,item,word
+item_121,plienka,item,word
+item_122,ponožky,item,word
+item_123,pršiplášť,item,word
+item_124,pyžamo,item,word
+item_125,sandálky,item,word
+item_126,svetrík / pulóver,item,word
+item_127,šál,item,word
+item_128,tepláky,item,word
+item_129,topánky,item,word
+item_130,tričko,item,word
+item_131,bruško,item,word
+item_132,jazyk,item,word
+item_133,kolienko,item,word
+item_134,noha,item,word
+item_135,nos,item,word
+item_136,oko,item,word
+item_137,pohlavné orgány mužské / ženské,item,word
+item_138,prsník,item,word
+item_139,prsty,item,word
+item_140,pupok,item,word
+item_141,rana / boľavé miesto,item,word
+item_142,ruka,item,word
+item_143,ucho,item,word
+item_144,ústa / pusa,item,word
+item_145,vlasy,item,word
+item_146,zadok,item,word
+item_147,zuby,item,word
+item_148,lampa,item,word
+item_149,posteľ,item,word
+item_150,práčka,item,word
+item_151,rádio,item,word
+item_152,rúra na pečenie,item,word
+item_153,televízor,item,word
+item_154,cumeľ / dudel,item,word
+item_155,dáždnik,item,word
+item_156,diera,item,word
+item_157,fľaša,item,word
+item_158,gombík,item,word
+item_159,hodiny,item,word
+item_160,kamera,item,word
+item_161,kefa,item,word
+item_162,kľúče,item,word
+item_163,koliesko,item,word
+item_164,krhlička,item,word
+item_165,kvety,item,word
+item_166,"liek / kvapky, sirup",item,word
+item_167,lopata / lopatka,item,word
+item_168,metla,item,word
+item_169,miska / mištička,item,word
+item_170,naberačka,item,word
+item_171,nočník,item,word
+item_172,okuliare,item,word
+item_173,palica,item,word
+item_174,pena,item,word
+item_175,prádlo,item,word
+item_176,pumpa,item,word
+item_177,smeti,item,word
+item_178,svetlo,item,word
+item_179,sviečka / kahanček,item,word
+item_180,taška,item,word
+item_181,telefón,item,word
+item_182,váha,item,word
+item_183,vankúš,item,word
+item_184,vareška,item,word
+item_185,váza,item,word
+item_186,vrchnák,item,word
+item_187,vysávač,item,word
+item_188,zástrčka / elektrika,item,word
+item_189,zvonček,item,word
+item_190,búda,item,word
+item_191,dážď,item,word
+item_192,dom,item,word
+item_193,domov,item,word
+item_194,garáž,item,word
+item_195,hojdačka,item,word
+item_196,jasle / škola,item,word
+item_197,kostol,item,word
+item_198,obchod,item,word
+item_199,park,item,word
+item_200,pieskovisko / piesok,item,word
+item_201,plaváreň,item,word
+item_202,slniečko,item,word
+item_203,sneh,item,word
+item_204,strom,item,word
+item_205,tma,item,word
+item_206,vonku,item,word
+item_207,záhrada / pole,item,word
+item_208,značka,item,word
+item_209,bazén / kúpalisko,item,word
+item_210,dievča,item,word
+item_211,chlapec,item,word
+item_212,krstná mama,item,word
+item_213,krstný otec,item,word
+item_214,lekár / lekárka,item,word
+item_215,mama,item,word
+item_216,otec,item,word
+item_217,stará mama,item,word
+item_218,starý otec,item,word
+item_219,teta,item,word
+item_220,ujo,item,word
+item_221,vlastné meno dieťaťa,item,word
+item_222,vlastné mená príbuzných osobA,item,word
+item_223,vlastné mená príbuzných osobB,item,word
+item_224,vlastné mená príbuzných osobC,item,word
+item_225,aha,item,word
+item_226,áno,item,word
+item_227,bác / bum,item,word
+item_228,dobre,item,word
+item_229,ešte,item,word
+item_230,fuj,item,word
+item_231,halo,item,word
+item_232,kuk,item,word
+item_233,moja,item,word
+item_234,nič,item,word
+item_235,nie,item,word
+item_236,nono,item,word
+item_237,pápá,item,word
+item_238,tak / no ,item,word
+item_239,báť sa,item,word
+item_240,bežať,item,word
+item_241,bolieť,item,word
+item_242,búchať,item,word
+item_243,cikať,item,word
+item_244,cúvať,item,word
+item_245,cvičiť,item,word
+item_246,česať,item,word
+item_247,čistiť,item,word
+item_248,čítať,item,word
+item_249,dať,item,word
+item_250,fúkať / pofúkať,item,word
+item_251,hrýzť / žuvkať,item,word
+item_252,chcieť,item,word
+item_253,ísť,item,word
+item_254,je / bude,item,word
+item_255,jesť,item,word
+item_256,kakať,item,word
+item_257,kopať,item,word
+item_258,kúpať,item,word
+item_259,kvapkať,item,word
+item_260,ležať,item,word
+item_261,liať / poliať,item,word
+item_262,lietať,item,word
+item_263,mať,item,word
+item_264,miešať,item,word
+item_265,natáčať,item,word
+item_266,nie je,item,word
+item_267,obuť,item,word
+item_268,otvoriť,item,word
+item_269,páliť,item,word
+item_270,piecť,item,word
+item_271,piť,item,word
+item_272,sedieť,item,word
+item_273,skákať,item,word
+item_274,spadnúť,item,word
+item_275,spať,item,word
+item_276,ťahať,item,word
+item_277,tancovať,item,word
+item_278,ukázať,item,word
+item_279,variť,item,word
+item_280,volať,item,word
+item_281,zatvoriť,item,word
+item_282,"nefunguje, nedarí sa, nejde",item,word
+item_283,červený,item,word
+item_284,horúci,item,word
+item_285,krásny,item,word
+item_286,malý,item,word
+item_287,modrý,item,word
+item_288,pekný,item,word
+item_289,prázdny,item,word
+item_290,špinavý,item,word
+item_291,taký,item,word
+item_292,veľký,item,word
+item_293,zelený,item,word
+item_294,ja,item,word
+item_295,my,item,word
+item_296,ten,item,word
+item_297,to,item,word
+item_298,toto,item,word
+item_299,tu,item,word
+item_300,ty,item,word
+item_301,dnu,item,word
+item_302,dole / dolu,item,word
+item_303,hore,item,word
+item_304,kde je?,item,word
+item_305,preč,item,word
+item_306,tam,item,word
+item_307,tu,item,word
+item_308,tuto,item,word
+item_309,von,item,word
