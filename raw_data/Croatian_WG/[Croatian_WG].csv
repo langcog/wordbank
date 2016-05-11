@@ -39,7 +39,7 @@ reći,say,action_words,reci,word,understands; produces,item_270,,say
 vidjeti,see,action_words,vidjeti,word,understands; produces,item_365,,see
 pjevati,sing,action_words,pjevati,word,understands; produces,item_242,,sing
 spavati,sleep,action_words,spavati,word,understands; produces,item_300,,sleep
-smijati se,smile,action_words,smijati_se,word,understands; produces,item_294,,smile
+smijati se,smile,action_words,smijati_se,word,understands; produces,item_294,,laugh
 prskati,splash,action_words,prskati,word,understands; produces,item_260,,splash
 stati,stop,action_words,stati,word,understands; produces,item_304,,stop
 plivati,swim,action_words,plivati,word,understands; produces,item_247,,swim
@@ -97,7 +97,7 @@ obrazi,cheek,body_parts,obrazi,word,understands; produces,item_215,,cheek
 uho,ear,body_parts,uho,word,understands; produces,item_350,,ear
 oko,eye,body_parts,oko,word,understands; produces,item_217,,eye
 lice,face,body_parts,lice,word,understands; produces,item_161,,face
-palac,finger,body_parts,palac,word,understands; produces,item_224,,finger
+palac,finger,body_parts,palac,word,understands; produces,item_224,,thumb
 čelo,forehead,body_parts,celo,word,understands; produces,item_30,,forehead
 kosa,hair,body_parts,kosa,word,understands; produces,item_137,,hair
 glava,head,body_parts,glava,word,understands; produces,item_76,,head
@@ -106,7 +106,7 @@ noga,leg,body_parts,noga,word,understands; produces,item_209,,leg
 usta,mouth,body_parts,usta,word,understands; produces,item_356,,mouth
 nokti,nails,body_parts,nokti,word,understands; produces,item_210,,nails
 nos,nose,body_parts,nos,word,understands; produces,item_211,,nose
-prst,toe,body_parts,prst,word,understands; produces,item_261,,toe
+prst,toe,body_parts,prst,word,understands; produces,item_261,,finger
 jezik,tongue,body_parts,jezik,word,understands; produces,item_112,,tongue
 zub,tooth,body_parts,zub,word,understands; produces,item_393,,tooth
 trbuh,tummy,body_parts,trbuh,word,understands; produces,item_339,,tummy
@@ -117,7 +117,7 @@ pelena,diaper,clothing,pelena,word,understands; produces,item_235,,diaper
 haljina,dress,clothing,haljina,word,understands; produces,item_88,,dress (object)
 kapa,hat,clothing,kapa,word,understands; produces,item_123,,hat
 jakna,jacket,clothing,jakna,word,understands; produces,item_107,,jacket
-rukavice,gloves,clothing,rukavice,word,understands; produces,item_277,,mittens
+rukavice,gloves,clothing,rukavice,word,understands; produces,item_277,,gloves
 pidžama,pajamas,clothing,pidzama,word,understands; produces,item_236,,pajamas
 hlače,pants,clothing,hlace,word,understands; produces,item_89,,pants
 šal,scarf,clothing,sal,word,understands; produces,item_280,,scarf
@@ -129,34 +129,34 @@ papuče,slipper,clothing,papuce,word,understands; produces,item_227,,slipper
 vesta/džemper,sweater,clothing,vesta/dzemper,word,understands; produces,item_364,,sweater
 gaćice,underpants,clothing,gacice,word,understands; produces,item_71,,underwear
 zatvarač,zipper,clothing,zatvarac,word,understands; produces,item_383,,zipper
-gotovo,all gone,descriptive_words,gotovo,word,understands; produces,item_79,,all gone
+gotovo,all gone,descriptive_words,gotovo,word,understands; produces,item_79,,finished
 spava,asleep,descriptive_words,spava,word,understands; produces,item_298,,asleep
 zločest(o),naughty,descriptive_words,zlocest(o),word,understands; produces,item_391,,naughty
 velik(o),big,descriptive_words,velik(o),word,understands; produces,item_363,,big
 plava,blue,descriptive_words,plava,word,understands; produces,item_244,,blue
 čist(o),clean,descriptive_words,cist(o),word,understands; produces,item_35,,clean (description)
 hladno,cold,descriptive_words,hladno,word,understands; produces,item_91,,cold
-zima,chilly,descriptive_words,zima,word,understands; produces,item_388,,cold
+zima,chilly,descriptive_words,zima,word,understands; produces,item_388,,winter
 mrak,dark,descriptive_words,mrak,word,understands; produces,item_193,,dark
 prljav(o),dirty,descriptive_words,prljav(o),word,understands; produces,item_257,,dirty
 suh(o),dry,descriptive_words,suh(o),word,understands; produces,item_314,,dry (description)
 prazno,empty,descriptive_words,prazno,word,understands; produces,item_256,,empty
 brz(o),fast,descriptive_words,brz(o),word,understands; produces,item_23,,fast
-divno,fine,descriptive_words,divno,word,understands; produces,item_52,,fine
+divno,fine,descriptive_words,divno,word,understands; produces,item_52,,delightful
 fin(o),tasty,descriptive_words,fin(o),word,understands; produces,item_69,,fine
 nježno,gently,descriptive_words,njezno,word,understands; produces,item_207,,gentle
 dobro,good,descriptive_words,dobro,word,understands; produces,item_60,,good
 sretan,happy,descriptive_words,sretan,word,understands; produces,item_302,,happy
-teško,hard,descriptive_words,tesko,word,understands; produces,item_330,,hard
+teško,hard,descriptive_words,tesko,word,understands; produces,item_330,,heavy
 vruće,hot,descriptive_words,vruce,word,understands; produces,item_377,,hot
 gladan,hungry,descriptive_words,gladan,word,understands; produces,item_75,,hungry
 boli,hurt,descriptive_words,boli,word,understands; produces,item_17,,hurt (description)
 mal(o),little,descriptive_words,mal(o),word,understands; produces,item_177,,little (description)
-krasno,nice,descriptive_words,krasno,word,understands; produces,item_139,,nice
+krasno,nice,descriptive_words,krasno,word,understands; produces,item_139,,beautiful
 star(o),old,descriptive_words,star(o),word,understands; produces,item_303,,old
 lijep(o),pretty,descriptive_words,lijep(o),word,understands; produces,item_163,,pretty
 crvena,red,descriptive_words,crvena,word,understands; produces,item_43,,red
-strašno,horribly,descriptive_words,strasno,word,understands; produces,item_311,,scared
+strašno,horribly,descriptive_words,strasno,word,understands; produces,item_311,,scary
 bolestan,sick,descriptive_words,bolestan,word,understands; produces,item_16,,sick
 pospan(o),sleepy,descriptive_words,pospan(o),word,understands; produces,item_253,,sleepy
 polako,slow,descriptive_words,polako,word,understands; produces,item_248,,slow
@@ -192,7 +192,7 @@ kašica,pap,food_drink,kasica,word,understands; produces,item_125,,cereal
 krumpir,potato,food_drink,krumpir,word,understands; produces,item_144,,potato
 griz,semolina,food_drink,griz,word,understands; produces,item_82,,semolina
 juha,soup,food_drink,juha,word,understands; produces,item_115,,soup
-tijesto,spaghetti,food_drink,tijesto,word,understands; produces,item_334,,dough
+tijesto,spaghetti,food_drink,tijesto,word,understands; produces,item_334,,pasta
 špinat,spinach,food_drink,spinat,word,understands; produces,item_301,,spinach
 voda (beverage),water,food_drink,voda,word,understands; produces,item_370,,water (beverage)
 jogurt,yogurt,food_drink,jogurt,word,understands; produces,item_113,,yogurt
@@ -233,7 +233,7 @@ laku noć,good night,games_routines,laku_noc,word,understands; produces,item_157
 ne,no,games_routines,ne,word,understands; produces,item_199,,no
 ku-ku (routine),peekaboo,games_routines,ku-ku,word,understands; produces,item_148,,peekaboo
 molim,please,games_routines,molim,word,understands; produces,item_191,,please
-ringe-raja,ring around the rosy,games_routines,ringe-raja,word,understands; produces,item_273,,pattycake
+ringe-raja,ring around the rosy,games_routines,ringe-raja,word,understands; produces,item_273,,ring around the rosie
 psst-tiho,shh/shush/hush,games_routines,psst-tiho,word,understands; produces,item_262,,shh
 hvala,thank you,games_routines,hvala,word,understands; produces,item_95,,thank you
 čekaj!,wait,games_routines,cekaj!,word,understands; produces,item_28,,wait
@@ -274,7 +274,7 @@ telefon,telephone,household,telefon,word,understands; produces,item_328,,telepho
 ručnik,towel,household,rucnik,word,understands; produces,item_275,,towel
 smeće,trash,household,smece,word,understands; produces,item_293,,trash
 usisivač,vacuum,household,usisivac,word,understands; produces,item_355,,vacuum
-sat,watch,household,sat,word,understands; produces,item_283,,watch (object)
+sat,watch,household,sat,word,understands; produces,item_283,,clock
 iza,back,locations,iza,word,understands; produces,item_102,,back (location)
 dolje,down,locations,dolje,word,understands; produces,item_62,,down
 tu,here,locations,tu,word,understands; produces,item_343,,here
@@ -351,16 +351,16 @@ puno,many,quantifiers,puno,word,understands; produces,item_265,,many
 još,more,quantifiers,jos,word,understands; produces,item_114,,more
 više,more,quantifiers,vise,word,understands; produces,item_367,,more
 ništa,none,quantifiers,nista,word,understands; produces,item_203,,none
-nema,not,quantifiers,nema,word,understands; produces,item_201,,not
+nema,not,quantifiers,nema,word,understands; produces,item_201,,all gone
 kako,how,question_words,kako,word,understands; produces,item_120,,how
 što,what,question_words,sto,word,understands; produces,item_308,,what
 kad(a),when (question),question_words,kad(a),word,understands; produces,item_117,,when (question)
 gdje,where (question),question_words,gdje,word,understands; produces,item_74,,where (question)
 tko,who,question_words,tko,word,understands; produces,item_335,,who
 zašto,why,question_words,zasto,word,understands; produces,item_382,,why
-ga-ga,baa baa,sounds,ga-ga,word,understands; produces,item_72,,baa baa
-ku-ku (sound),choo choo,sounds,ku-ku,word,understands; produces,item_147,,knock knock
-tu-tu,choo-choo,sounds,tu-tu,word,understands; produces,item_346,,choo choo
+ga-ga,baa baa,sounds,ga-ga,word,understands; produces,item_72,,ga ga
+ku-ku (sound),choo choo,sounds,ku-ku,word,understands; produces,item_147,,peekaboo
+tu-tu,choo-choo,sounds,tu-tu,word,understands; produces,item_346,,beep beep
 kukuriku,cockadoodledoo,sounds,kukuriku,word,understands; produces,item_149,,cockadoodledoo
 grr,grr,sounds,grr,word,understands; produces,item_83,,grrr
 mijau,meow,sounds,mijau,word,understands; produces,item_185,,meow
@@ -391,7 +391,7 @@ bicikl,bicycle,vehicles,bicikl,word,understands; produces,item_10,,bicycle
 autobus,bus,vehicles,autobus,word,understands; produces,item_2,,bus
 auto,car,vehicles,auto,word,understands; produces,item_1,,car
 motor,motorcycle,vehicles,motor,word,understands; produces,item_192,,motorcycle
-brod,ship,vehicles,brod,word,understands; produces,item_21,,ship
+brod,ship,vehicles,brod,word,understands; produces,item_21,,boat
 vlak,train,vehicles,vlak,word,understands; produces,item_369,,train
 tramvaj,tram,vehicles,tramvaj,word,understands; produces,item_338,,tram
 kamion,truck,vehicles,kamion,word,understands; produces,item_122,,truck
