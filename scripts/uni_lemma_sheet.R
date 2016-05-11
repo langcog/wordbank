@@ -4,22 +4,23 @@ library(googlesheets)
 library(purrr)
 
 languages <- c(
-  "British Sign Language" = FALSE,  # not mapped, no stemmer, not in CHILDES
+  # "British Sign Language" = FALSE,  # not mapped, no stemmer, not in CHILDES
   "Croatian" = FALSE,  # no stemmer
   "Danish" = FALSE,  # not mapped
   "English" = TRUE,
   "French (Quebec)" = FALSE,  # not mapped
-  "Hebrew" = FALSE,  # no stemmer, CHILDES transcription problems
+  # "Hebrew" = FALSE,  # no stemmer, CHILDES transcription problems
   "Italian" = TRUE,
   "Norwegian" = TRUE,
   "Russian" = TRUE,
-  "Slovak" = FALSE,  # not mapped, no stemmer, not in CHILDES
+  # "Slovak" = FALSE,  # not mapped, no stemmer, not in CHILDES
   "Spanish" = TRUE,
   "Swedish" = TRUE,
   "Turkish" = TRUE
 )
 
-uni_sheet <- gs_new("Wordbank translation equivalents")
+#uni_sheet <- gs_new("Wordbank translation equivalents")
+uni_sheet <- gs_title("Wordbank translation equivalents")
 
 wg_items <- get_item_data(form = "WG", mode = "local")
 wg_words <- wg_items %>%
