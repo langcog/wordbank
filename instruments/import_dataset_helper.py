@@ -50,7 +50,7 @@ class ImportHelper:
         if type(value) == str or type(value) == unicode:
             value = value.strip()
         if not value in self.missing_values:
-            if field_type in ('study_id', 'study_momed'):
+            if field_type in ('study_id', 'study_momed', 'study_family_id'):
                 return value
             elif field_type in ('birth_order', 'data_age'):
                 return int(float(value))
@@ -58,7 +58,7 @@ class ImportHelper:
                 return value == 'TRUE'
             elif field_type in ('date_of_birth, date_of_test'):
                 return self.format_date(value)
-            elif field_type in ('ethnicity', 'sex', 'mom_ed') or group == 'item':
+            elif field_type in ('ethnicity', 'sex', 'mom_ed', 'zygosity') or group == 'item':
                 value = self.value_typing(value).lower()
                 if self.splitcol and field_type == 'word':
                     value += column[-1]
