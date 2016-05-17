@@ -233,16 +233,16 @@
     },
     {
         "language": "English (British)",
-        "form": "TEDS 2s",
-        "file": "raw_data/English_British_TEDS_2s/[English_British_TEDS_2s].csv",
+        "form": "TEDS Twos",
+        "file": "raw_data/English_British_TEDS_Twos/[English_British_TEDS_Twos].csv",
         "age_min": 20,
         "age_max": 35,
         "has_grammar": true
     },
     {
         "language": "English (British)",
-        "form": "TEDS 3s",
-        "file": "raw_data/English_British_TEDS_3s/[English_British_TEDS_3s].csv",
+        "form": "TEDS Threes",
+        "file": "raw_data/English_British_TEDS_Threes/[English_British_TEDS_Threes].csv",
         "age_min": 34,
         "age_max": 47,
         "has_grammar": true
