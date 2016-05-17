@@ -522,5 +522,21 @@
         "longitudinal": false,
         "contributor": "Natacha Trudeau, Université de Montréal",
         "citation": "Trudeau, N., & Sutton, A. (2011). Expressive vocabulary and early grammar of 16-to 30-month-old children acquiring Quebec French. First Language, 0142723711410828."
+    },
+    {
+      "name": "TEDS Twos",
+      "dataset": "",
+      "instrument_language": "English (British)",
+      "instrument_form": "TEDS Twos",
+      "file": "raw_data/English_British_TEDS_Twos/EnglishBritishTEDSTwos.csv",
+      "splitcol": false
+    },
+    {
+      "name": "TEDS Threes",
+      "dataset": "",
+      "instrument_language": "English (British)",
+      "instrument_form": "TEDS Threes",
+      "file": "raw_data/English_British_TEDS_Threes/EnglishBritishTEDSThrees.csv",
+      "splitcol": false
     }
 ]
