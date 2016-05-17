@@ -1,0 +1,24 @@
+"type","value","data_value"
+"sex","M","male"
+"sex","F","female"
+"ethnicity","W","white"
+"ethnicity","O","other"
+"zygosity","M","MZ"
+"zygosity","D","DZ"
+"mom_ed","none",1
+"mom_ed","primary",2
+"mom_ed","some secondary",3
+"mom_ed","secondary",4
+"mom_ed","some college",5
+"mom_ed","some college",6
+"mom_ed","college",7
+"mom_ed","graduate",8
+"word",,"NA"
+"word",,0
+"word","produces",1
+"complexity","simple","NA"
+"complexity","simple",0
+"complexity","complex",1
+"combine","often",1
+"combine","sometimes",2
+"combine","not yet",3
