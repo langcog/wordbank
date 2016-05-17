@@ -59,7 +59,7 @@ class Command(BaseCommand):
                     item_type = row_values[col_names.index('type')]
                     item_category = row_values[col_names.index('category')]
                     category_key = None
-                    if item_type == 'word':
+                    if item_type == 'word' and item_category != "":
                         try:
                             category_key = Category.objects.get(name = item_category)
                         except:
