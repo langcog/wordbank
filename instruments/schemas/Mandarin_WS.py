@@ -1621,3 +1621,57 @@ class Mandarin_WS(BaseTable):
     item_808 = models.CharField(max_length=9, choices=item_808_choices, null=True)
     item_809_choices = [(u'never', u'never'), (u'sometimes', u'sometimes'), (u'often', u'often')]
     item_809 = models.CharField(max_length=9, choices=item_809_choices, null=True)
+    item_810_choices = [(u'3', u'3'), (u'2', u'2'), (u'1', u'1'), (u'0', u'0')]
+    item_810 = models.CharField(max_length=1, choices=item_810_choices, null=True)
+    item_811_choices = [(u'3', u'3'), (u'2', u'2'), (u'1', u'1'), (u'0', u'0')]
+    item_811 = models.CharField(max_length=1, choices=item_811_choices, null=True)
+    item_812_choices = [(u'4', u'4'), (u'3', u'3'), (u'2', u'2'), (u'1', u'1'), (u'0', u'0')]
+    item_812 = models.CharField(max_length=1, choices=item_812_choices, null=True)
+    item_813_choices = [(u'3', u'3'), (u'2', u'2'), (u'1', u'1'), (u'0', u'0')]
+    item_813 = models.CharField(max_length=1, choices=item_813_choices, null=True)
+    item_814_choices = [(u'4', u'4'), (u'3', u'3'), (u'2', u'2'), (u'1', u'1'), (u'0', u'0')]
+    item_814 = models.CharField(max_length=1, choices=item_814_choices, null=True)
+    item_815_choices = [(u'2', u'2'), (u'1', u'1'), (u'0', u'0')]
+    item_815 = models.CharField(max_length=1, choices=item_815_choices, null=True)
+    item_816_choices = [(u'2', u'2'), (u'1', u'1'), (u'0', u'0')]
+    item_816 = models.CharField(max_length=1, choices=item_816_choices, null=True)
+    item_817_choices = [(u'4', u'4'), (u'3', u'3'), (u'2', u'2'), (u'1', u'1'), (u'0', u'0')]
+    item_817 = models.CharField(max_length=1, choices=item_817_choices, null=True)
+    item_818_choices = [(u'5', u'5'), (u'4', u'4'), (u'3', u'3'), (u'2', u'2'), (u'1', u'1'), (u'0', u'0')]
+    item_818 = models.CharField(max_length=1, choices=item_818_choices, null=True)
+    item_819_choices = [(u'3', u'3'), (u'2', u'2'), (u'1', u'1'), (u'0', u'0')]
+    item_819 = models.CharField(max_length=1, choices=item_819_choices, null=True)
+    item_820_choices = [(u'3', u'3'), (u'2', u'2'), (u'1', u'1'), (u'0', u'0')]
+    item_820 = models.CharField(max_length=1, choices=item_820_choices, null=True)
+    item_821_choices = [(u'2', u'2'), (u'1', u'1'), (u'0', u'0')]
+    item_821 = models.CharField(max_length=1, choices=item_821_choices, null=True)
+    item_822_choices = [(u'4', u'4'), (u'3', u'3'), (u'2', u'2'), (u'1', u'1'), (u'0', u'0')]
+    item_822 = models.CharField(max_length=1, choices=item_822_choices, null=True)
+    item_823_choices = [(u'2', u'2'), (u'1', u'1'), (u'0', u'0')]
+    item_823 = models.CharField(max_length=1, choices=item_823_choices, null=True)
+    item_824_choices = [(u'3', u'3'), (u'2', u'2'), (u'1', u'1'), (u'0', u'0')]
+    item_824 = models.CharField(max_length=1, choices=item_824_choices, null=True)
+    item_825_choices = [(u'3', u'3'), (u'2', u'2'), (u'1', u'1'), (u'0', u'0')]
+    item_825 = models.CharField(max_length=1, choices=item_825_choices, null=True)
+    item_826_choices = [(u'2', u'2'), (u'1', u'1'), (u'0', u'0')]
+    item_826 = models.CharField(max_length=1, choices=item_826_choices, null=True)
+    item_827_choices = [(u'3', u'3'), (u'2', u'2'), (u'1', u'1'), (u'0', u'0')]
+    item_827 = models.CharField(max_length=1, choices=item_827_choices, null=True)
+    item_828_choices = [(u'2', u'2'), (u'1', u'1'), (u'0', u'0')]
+    item_828 = models.CharField(max_length=1, choices=item_828_choices, null=True)
+    item_829_choices = [(u'3', u'3'), (u'2', u'2'), (u'1', u'1'), (u'0', u'0')]
+    item_829 = models.CharField(max_length=1, choices=item_829_choices, null=True)
+    item_830_choices = [(u'3', u'3'), (u'2', u'2'), (u'1', u'1'), (u'0', u'0')]
+    item_830 = models.CharField(max_length=1, choices=item_830_choices, null=True)
+    item_831_choices = [(u'4', u'4'), (u'3', u'3'), (u'2', u'2'), (u'1', u'1'), (u'0', u'0')]
+    item_831 = models.CharField(max_length=1, choices=item_831_choices, null=True)
+    item_832_choices = [(u'2', u'2'), (u'1', u'1'), (u'0', u'0')]
+    item_832 = models.CharField(max_length=1, choices=item_832_choices, null=True)
+    item_833_choices = [(u'2', u'2'), (u'1', u'1'), (u'0', u'0')]
+    item_833 = models.CharField(max_length=1, choices=item_833_choices, null=True)
+    item_834_choices = [(u'2', u'2'), (u'1', u'1'), (u'0', u'0')]
+    item_834 = models.CharField(max_length=1, choices=item_834_choices, null=True)
+    item_835_choices = [(u'5', u'5'), (u'4', u'4'), (u'3', u'3'), (u'2', u'2'), (u'1', u'1'), (u'0', u'0')]
+    item_835 = models.CharField(max_length=1, choices=item_835_choices, null=True)
+    item_836_choices = [(u'3', u'3'), (u'2', u'2'), (u'1', u'1'), (u'0', u'0')]
+    item_836 = models.CharField(max_length=1, choices=item_836_choices, null=True)
