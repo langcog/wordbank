@@ -14,8 +14,9 @@ class Source(models.Model):
 class Instrument(models.Model):
     language = models.CharField(max_length=30)
     forms = (('WS', 'Words & Sentences'), ('WG', 'Words & Gestures'),
-             ('TC', 'Toddler Checklist'), ('IC', 'Infant Checklist'))
-    form = models.CharField(max_length=2, choices=forms)
+             ('TC', 'Toddler Checklist'), ('IC', 'Infant Checklist'),
+             ('TEDS Twos', 'TEDS Twos'), ('TEDS Threes', 'TEDS Threes'))
+    form = models.CharField(max_length=12, choices=forms)
     age_min = models.IntegerField()
     age_max = models.IntegerField()
     has_grammar = models.BooleanField(default=False)
@@ -66,6 +67,11 @@ class Child(models.Model):
 
     sexes = (('M', 'Male'), ('F', 'Female'), ('O', 'Other'))
     sex = models.CharField(max_length=1, choices=sexes, null=True, blank=True)
+
+    zygosities = (('M', 'Monozygotic'), ('D', 'Dizygotic'))
+    zygosity = models.CharField(max_length=2, choices=zygosities, null=True, blank=True)
+
+    study_family_id = models.CharField(max_length=20, null=True)
 
 
 class Administration(models.Model):
