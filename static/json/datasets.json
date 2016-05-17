@@ -524,19 +524,27 @@
         "citation": "Trudeau, N., & Sutton, A. (2011). Expressive vocabulary and early grammar of 16-to 30-month-old children acquiring Quebec French. First Language, 0142723711410828."
     },
     {
-      "name": "TEDS Twos",
-      "dataset": "",
-      "instrument_language": "English (British)",
-      "instrument_form": "TEDS Twos",
-      "file": "raw_data/English_British_TEDS_Twos/EnglishBritishTEDSTwos.csv",
-      "splitcol": false
+        "name": "TEDS",
+        "dataset": "Twos",
+        "instrument_language": "English (British)",
+        "instrument_form": "TEDS Twos",
+        "file": "raw_data/English_British_TEDS_Twos/EnglishBritishTEDSTwos.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": false,
+        "contributor": "Philip Dale, University of New Mexico",
+        "citation": "Dale, P. S., Price, T. S., Bishop, D. V. M., & Plomin, R. (2003). Outcomes of early language delay: I. Predicting persistent and transient difficulties at 3 and 4 years. Journal of Speech-Language-Hearing Research, 46, 544-560."
     },
     {
-      "name": "TEDS Threes",
-      "dataset": "",
-      "instrument_language": "English (British)",
-      "instrument_form": "TEDS Threes",
-      "file": "raw_data/English_British_TEDS_Threes/EnglishBritishTEDSThrees.csv",
-      "splitcol": false
+        "name": "TEDS",
+        "dataset": "Threes",
+        "instrument_language": "English (British)",
+        "instrument_form": "TEDS Threes",
+        "file": "raw_data/English_British_TEDS_Threes/EnglishBritishTEDSThrees.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": false,
+        "contributor": "Philip Dale, University of New Mexico",
+        "citation": "Dale, P. S., Price, T. S., Bishop, D. V. M., & Plomin, R. (2003). Outcomes of early language delay: I. Predicting persistent and transient difficulties at 3 and 4 years. Journal of Speech-Language-Hearing Research, 46, 544-560."
     }
 ]
