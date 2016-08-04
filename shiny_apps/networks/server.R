@@ -71,11 +71,11 @@ shinyServer(function(input, output) {
       assocs <- all_assocs
     }
     
-    assoc_mat <- as.matrix(select(assocs, -from))
+    assoc_mat <- as.matrix(select(assocs, -in_node))
     assoc_mat[lower.tri(assoc_mat)] <- NA
     
     data.frame(assoc_mat, 
-               from = assocs$from, 
+               in_node = assocs$in_node, 
                stringsAsFactors = FALSE)
   })
   
@@ -83,7 +83,7 @@ shinyServer(function(input, output) {
   assoc_nodes <- reactive({
     # aoa_labels <- filter(aoa_data, aoa <= input$age)$label
     
-    assoc_nodes <- data.frame(label = assoc_mat()$from, 
+    assoc_nodes <- data.frame(label = assoc_mat()$in_node, 
                               stringsAsFactors = FALSE) %>%
       mutate(id = 1:n(), 
              identity = 1) %>%
@@ -97,17 +97,17 @@ shinyServer(function(input, output) {
   assoc_edge_data <- reactive({
     # get the matrix in an id-based form
     assoc_mat() %>%
-      gather(to, width, alligator:house) %>%
+      gather(out_node, width, -in_node) %>%
       filter(!is.na(width)) %>%
-      rename(label = from) %>%
+      rename(label = in_node) %>%
       left_join(assoc_nodes()) %>%
       select(-label) %>%
-      rename(from = id, 
-             label = to) %>%
+      rename(in_node = id, 
+             label = out_node) %>%
       left_join(assoc_nodes()) %>%
       select(-label) %>%
-      rename(to = id) %>%
-      select(from, to, width) 
+      rename(out_node = id) %>%
+      select(in_node, out_node, width)
   })
   
   ########## FILTER EDGES 
@@ -129,8 +129,10 @@ shinyServer(function(input, output) {
   ########## RENDER GRAPH
   output$network <- renderVisNetwork({
     
+    
+    
     visNetwork(assoc_nodes(), 
-               assoc_edges(), 
+               rename(assoc_edges(), from = in_node, to = out_node), 
                width = "100%", height="100%") %>%
       visPhysics(stabilization = TRUE) %>%
       visEdges(smooth = FALSE)
