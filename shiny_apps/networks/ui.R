@@ -30,16 +30,12 @@ shinyUI(fluidPage(
                                 "Word2Vec Model" = "W2V"), 
                                 # "Picture Book Model" = "PB"),
                     selected = "W2V"),
-        selectInput("instrument", "CDI Instrument for measuring age of acquisition",
+        selectInput("instrument", "CDI Instrument",
                        choices = c("Words & Sentences" = "WS", 
                                    "Words & Gestures" = "WG"),
                        selected = "production"),
         uiOutput("measure"),
-        selectInput("assocs", "Association type",
-                       choices = c("Conceptual" = "conceptual", 
-                                   "Perceptual" = "perceptual", 
-                                   "All" = "all"),
-                       selected = "all"),
+        uiOutput("assoc_control"),
         sliderInput("age", "Age of Acquisition",
                     min = 6, 
                     max = 36, 
@@ -63,7 +59,7 @@ shinyUI(fluidPage(
                  ".shiny-output-error:before { visibility: hidden; }"),
       conditionalPanel(
         condition = "output.loaded == 1",
-        visNetworkOutput("network", height = "500px")
+        visNetworkOutput("network", height = "800px")
       )
     )
   )
