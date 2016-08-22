@@ -9,8 +9,8 @@ library(tidyr)
 library(ggplot2)
 library(langcog)
 library(wordbankr)
-library(visNetwork)
 library(stringr)
+library(networkD3)
 
 theme_set(theme_mikabr(base_size = 14))
 font <- theme_mikabr()$text$family
@@ -144,10 +144,10 @@ shinyServer(function(input, output) {
     
     assoc_nodes <- data.frame(label = assoc_mat()$in_node, 
                               stringsAsFactors = FALSE) %>%
-      mutate(id = 1:n(), 
-             identity = 1) %>%
       left_join(aoa_data()) %>% #left_join in wide ? format version of english item csv with category
       filter(!is.na(aoa), aoa <= input$age) %>%
+      mutate(id = 0:(n()-1), 
+             identity = 1) %>%
       select_("label", "id", input$group) %>%
       rename_("group" = input$group)
   })
@@ -178,7 +178,7 @@ shinyServer(function(input, output) {
   assoc_edges <- reactive({
     req(input$weighted)
     
-    scaling = ifelse(input$source == "W2V", 15, 1)
+    scaling = ifelse(input$source == "W2V", 10, 1)
     
     edges <- assoc_edge_data() %>%
       mutate(width = scaling*width) %>%
@@ -193,14 +193,26 @@ shinyServer(function(input, output) {
   })
   
   ########## RENDER GRAPH
-  output$network <- renderVisNetwork({
-    visNetwork(assoc_nodes(), 
-               rename(assoc_edges(), from = in_node, to = out_node), 
-               width = "100%", height="100%") %>%
-      visPhysics(stabilization = TRUE) %>%
-     visEdges(smooth = FALSE, selfReferenceSize= FALSE)
-    
+  output$network <- renderForceNetwork({
+    forceNetwork(Links = assoc_edges(), Nodes = assoc_nodes(), Source = "in_node",
+                 Target = "out_node", Value = "width", NodeID = "label",
+                 linkWidth = JS("function(d) { return d.value; }"),
+                 Group = "group", opacity = .8, zoom = TRUE, opacityNoHover = .8,
+                 legend = input$group != "identity",
+                 linkColour = "#cccccc", fontSize = 10,
+                 colourScale = ifelse(length(unique(assoc_nodes()$group)) > 10, 
+                                      JS("d3.scale.category20()"),
+                                      JS("d3.scale.category10()")))
   })
+  
+  # output$network <- renderVisNetwork({
+  #   visNetwork(assoc_nodes(), 
+  #              rename(assoc_edges(), from = in_node, to = out_node), 
+  #              width = "100%", height="100%") %>%
+  #     visPhysics(stabilization = TRUE) %>%
+  #    visEdges(smooth = FALSE, selfReferenceSize= FALSE)
+  #   
+  # })
   
   output$loaded <- reactive(1)
 })
