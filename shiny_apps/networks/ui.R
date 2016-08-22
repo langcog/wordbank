@@ -2,8 +2,7 @@ library(shiny)
 library(shinythemes)
 library(shinyBS)
 library(markdown)
-library(visNetwork)
-
+library(networkD3)
 shinyUI(fluidPage(
   
   theme = shinytheme("spacelab"),
@@ -48,7 +47,7 @@ shinyUI(fluidPage(
         selectizeInput("group", "Grouping variable",
                        choices = c("None" = "identity", 
                                    "CDI category" = "category",
-                                   "Lexical category" = "lexical_category"),
+                                   "Lexical class" = "lexical_class"),
                        selected = "identity"),
         width = 3)),
     
@@ -59,7 +58,9 @@ shinyUI(fluidPage(
                  ".shiny-output-error:before { visibility: hidden; }"),
       conditionalPanel(
         condition = "output.loaded == 1",
-        visNetworkOutput("network", height = "800px")
+        forceNetworkOutput("network")
+        # visNetworkOutput("network", height = "800px")
+        
       )
     )
   )
