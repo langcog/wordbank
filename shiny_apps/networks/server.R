@@ -65,11 +65,11 @@ shinyServer(function(input, output) {
     req(input$source)
     
     if (input$source == "W2V"){
-      title <- "Normalized Cosine Similarity"
-      high_point <- .3
+      title <- "Minimum Cosine Similarity"
+      high_point <- .2
       start_point <- .1
       low_point <- 0
-      step_size <- .05
+      step_size <- .02
     # } else if (input$source == "PB"){
     #   title <- "Cosine Similarity"
     #   high_point <- 1
@@ -199,7 +199,7 @@ shinyServer(function(input, output) {
                  linkWidth = JS("function(d) { return d.value; }"),
                  Group = "group", opacity = .8, zoom = TRUE, opacityNoHover = .8,
                  legend = input$group != "identity",
-                 linkColour = "#cccccc", fontSize = 10,
+                 linkColour = "#cccccc", fontSize = 12,
                  colourScale = ifelse(length(unique(assoc_nodes()$group)) > 10, 
                                       JS("d3.scale.category20()"),
                                       JS("d3.scale.category10()")))
