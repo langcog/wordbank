@@ -48,7 +48,7 @@ shinyUI(fluidPage(
                        choices = c("None" = "identity", 
                                    "CDI category" = "category",
                                    "Lexical class" = "lexical_class"),
-                       selected = "identity"),
+                       selected = "lexical_class"),
         width = 3)),
     
     mainPanel(
