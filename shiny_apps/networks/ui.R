@@ -2,8 +2,7 @@ library(shiny)
 library(shinythemes)
 library(shinyBS)
 library(markdown)
-library(visNetwork)
-
+library(networkD3)
 shinyUI(fluidPage(
   
   theme = shinytheme("spacelab"),
@@ -25,31 +24,31 @@ shinyUI(fluidPage(
       
       conditionalPanel(
         condition = "output.loaded == 1",
-        selectInput("instrument", "CDI Instrument for measuring age of acquisition",
+        selectInput("source", "Network Source",
+                    choices = c("McRae Feature Norms" = "MFN", 
+                                "Word2Vec Model" = "W2V"), 
+                                # "Picture Book Model" = "PB"),
+                    selected = "W2V"),
+        selectInput("instrument", "CDI Instrument",
                        choices = c("Words & Sentences" = "WS", 
                                    "Words & Gestures" = "WG"),
                        selected = "production"),
         uiOutput("measure"),
-        selectInput("assocs", "Association type",
-                       choices = c("Conceptual" = "conceptual", 
-                                   "Perceptual" = "perceptual", 
-                                   "All" = "all"),
-                       selected = "all"),
+        uiOutput("assoc_control"),
         sliderInput("age", "Age of Acquisition",
                     min = 6, 
                     max = 36, 
                     value = 20, step = 1),
-        sliderInput("cutoff", "Minimum semantic associations",
-                    min = 1, max = 4, 
-                    value = 2, step = 1),
+        uiOutput('cutoff'),
         selectizeInput("weighted", "Should graph edges be weighted?",
                     choices = c("Yes" = TRUE, 
                                 "No" = FALSE),
                     selected = TRUE),
         selectizeInput("group", "Grouping variable",
                        choices = c("None" = "identity", 
-                                   "CDI category" = "category"),
-                       selected = "identity"),
+                                   "CDI category" = "category",
+                                   "Lexical class" = "lexical_class"),
+                       selected = "lexical_class"),
         width = 3)),
     
     mainPanel(
@@ -59,7 +58,9 @@ shinyUI(fluidPage(
                  ".shiny-output-error:before { visibility: hidden; }"),
       conditionalPanel(
         condition = "output.loaded == 1",
-        visNetworkOutput("network", height = "500px")
+        forceNetworkOutput("network")
+        # visNetworkOutput("network", height = "800px")
+        
       )
     )
   )
