@@ -246,5 +246,13 @@
         "age_min": 34,
         "age_max": 47,
         "has_grammar": true
+    },
+    {
+        "language": "American Sign Language",
+        "form": "WS",
+        "file": "raw_data/ASL_WS/ASL_WS.csv",
+        "age_min": 8,
+        "age_max": 36,
+        "has_grammar": false
     }
 ]
