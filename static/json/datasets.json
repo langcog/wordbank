@@ -546,5 +546,17 @@
         "longitudinal": false,
         "contributor": "Philip Dale, University of New Mexico",
         "citation": "Dale, P. S., Price, T. S., Bishop, D. V. M., & Plomin, R. (2003). Outcomes of early language delay: I. Predicting persistent and transient difficulties at 3 and 4 years. Journal of Speech-Language-Hearing Research, 46, 544-560."
+    },
+    {
+        "name": "Marchman",
+        "dataset": "",
+        "instrument_language": "American Sign Language",
+        "instrument_form": "WS",
+        "file": "raw_data/ASL_WS/ASL_WS.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": false,
+        "contributor": "Virginia Marchman, Stanford University",
+        "citation": ""
     }
 ]
