@@ -3,7 +3,7 @@ library(haven)
 library(readr)
 library(foreign)
 
-mandarin <- read_spss("~/Documents/projects/wordbank_extras/incoming_data/Mandarin_Tardif/CCDI.BJ.LF.Toddler.TotalScores.sav")
+mandarin <- read_spss("CCDI.BJ.LF.Toddler.TotalScores.sav")
 cantonese <- read_spss("~/Documents/projects/wordbank_extras/incoming_data/Mandarin_Tardif/CCDI.HK.LF.Toddler.TotalScores.sav")
 #cantonese2 <- read_spss("~/Documents/projects/wordbank_extras/incoming_data/Mandarin_Tardif/CCDI.HK.LF.Toddler.SayChiData.sav")
 #cantonese3 <- read_spss("~/Documents/projects/wordbank_extras/incoming_data/Mandarin_Tardif/CCDI.HK.LF.Toddler.SayEngOrChiData.sav")
