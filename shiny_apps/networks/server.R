@@ -66,10 +66,10 @@ shinyServer(function(input, output) {
     
     if (input$source == "W2V"){
       title <- "Minimum Cosine Similarity"
-      high_point <- .2
-      start_point <- .1
-      low_point <- 0
-      step_size <- .02
+      high_point <- .7
+      start_point <- .4
+      low_point <- .1
+      step_size <- .1
     # } else if (input$source == "PB"){
     #   title <- "Cosine Similarity"
     #   high_point <- 1
@@ -178,7 +178,7 @@ shinyServer(function(input, output) {
   assoc_edges <- reactive({
     req(input$weighted)
     
-    scaling = ifelse(input$source == "W2V", 10, 1)
+    scaling = ifelse(input$source == "W2V", 4, 1)
     
     edges <- assoc_edge_data() %>%
       mutate(width = scaling*width) %>%
