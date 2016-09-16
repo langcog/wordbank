@@ -254,5 +254,13 @@
         "age_min": 8,
         "age_max": 36,
         "has_grammar": false
+    },
+    {
+        "language": "Cypriot Greek",
+        "form": "WS",
+        "file": "raw_data/Greek_WS/[Greek_WS].csv",
+        "age_min": 18,
+        "age_max": 30,
+        "has_grammar": false
     }
 ]
