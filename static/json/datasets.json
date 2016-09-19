@@ -560,4 +560,17 @@
         "contributor": "Virginia Marchman, Stanford University",
         "citation": "Anderson, D., & Reilly, J. (2002). The MacArthur Communicative Development Inventory: Normative data for American Sign Language. Journal of Deaf Studies and Deaf Education, 7(2), 83–106."
     }
+        {
+        "name": "Grohmann",
+        "dataset": "",
+        "instrument_language": "Cypriot Greek",
+        "instrument_form": "WS",
+        "file": "raw_data/Greek_WS/Greek_WS_Grohmann.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": false,
+        "date_format": "%m/%d/%Y",
+        "contributor": "Kleanthes K. Grohmann, University of Cyprus",
+        "citation": "Taxitari, Loukia, Maria Kambanaros & Kleanthes K. Grohmann. 2015. ‘A Cypriot Greek Adaptation of the CDI: Early Production of Translation Equivalents in a Bi(dia)lectal Context’. Journal of Greek Linguistics 15, 1–24."
+    }
 ]
