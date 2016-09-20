@@ -15,7 +15,9 @@ class Instrument(models.Model):
     language = models.CharField(max_length=30)
     forms = (('WS', 'Words & Sentences'), ('WG', 'Words & Gestures'),
              ('TC', 'Toddler Checklist'), ('IC', 'Infant Checklist'),
-             ('TEDS Twos', 'TEDS Twos'), ('TEDS Threes', 'TEDS Threes'))
+             ('TEDS Twos', 'TEDS Twos'), ('TEDS Threes', 'TEDS Threes'),
+             ('FormA', 'FormA'), ('FormBOne', 'FormBOne'),
+             ('FormBTwo', 'FormBTwo'), ('FormC', 'FormC'))
     form = models.CharField(max_length=12, choices=forms)
     age_min = models.IntegerField()
     age_max = models.IntegerField()

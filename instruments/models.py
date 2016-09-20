@@ -30,4 +30,7 @@ from schemas.French_Quebec_WS import *
 from schemas.French_Quebec_WS import *
 from schemas.English_British_TEDS_Twos import *
 from schemas.English_British_TEDS_Threes import *
-from schemas.American_Sign_Language_WS import *
+from schemas.American_Sign_Language_FormA import *
+from schemas.American_Sign_Language_FormC import *
+from schemas.American_Sign_Language_FormBOne import *
+from schemas.American_Sign_Language_FormBTwo import *
