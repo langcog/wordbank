@@ -1,13 +1,13 @@
-type,value,data_value
-sex,M,M
-sex,F,F
-first_signs,no,N
-first_signs,yes,Y
-phrases,no answer,NA
-phrases,,N
-phrases,understands,Y
-word,no answer,NA
-word,,N
-word,produces,Y
-combine,no,N
-combine,yes,Y
+"type","value","data_value"
+"sex","M","M"
+"sex","F","F"
+"first_signs","no","N"
+"first_signs","yes","Y"
+"phrases",,"NA"
+"phrases",,"N"
+"phrases","understands","Y"
+"word",,"NA"
+"word",,"N"
+"word","produces","Y"
+"combine","no","N"
+"combine","yes","Y"
