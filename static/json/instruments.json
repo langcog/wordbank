@@ -249,8 +249,32 @@
     },
     {
         "language": "American Sign Language",
-        "form": "WS",
-        "file": "raw_data/ASL_WS/ASL_WS.csv",
+        "form": "FormA",
+        "file": "raw_data/ASL_FormA/[ASL_FormA].csv",
+        "age_min": 8,
+        "age_max": 36,
+        "has_grammar": false
+    },
+    {
+        "language": "American Sign Language",
+        "form": "FormBOne",
+        "file": "raw_data/ASL_FormB1/[ASL_FormB1].csv",
+        "age_min": 8,
+        "age_max": 36,
+        "has_grammar": false
+    },
+    {
+        "language": "American Sign Language",
+        "form": "FormBTwo",
+        "file": "raw_data/ASL_FormB2/[ASL_FormB2].csv",
+        "age_min": 8,
+        "age_max": 36,
+        "has_grammar": false
+    },
+    {
+        "language": "American Sign Language",
+        "form": "FormC",
+        "file": "raw_data/ASL_FormC/[ASL_FormC].csv",
         "age_min": 8,
         "age_max": 36,
         "has_grammar": false
