@@ -2,7 +2,7 @@ from django.db import models
 from instruments.base import BaseTable
 
 
-class American_Sign_Language_WS(BaseTable):
+class American_Sign_Language_FormA(BaseTable):
     item_1_choices = [(u'yes', u'yes'), (u'no', u'no')]
     item_1 = models.CharField(max_length=3, choices=item_1_choices, null=True)
     item_2_choices = [(u'yes', u'yes'), (u'no', u'no')]
