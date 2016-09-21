@@ -34,3 +34,4 @@ from schemas.American_Sign_Language_FormA import *
 from schemas.American_Sign_Language_FormBOne import *
 from schemas.American_Sign_Language_FormBTwo import *
 from schemas.American_Sign_Language_FormC import *
+from schemas.Cypriot_Greek_WS import *

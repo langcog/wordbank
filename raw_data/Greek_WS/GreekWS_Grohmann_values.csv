@@ -1,5 +1,8 @@
-type,value,data_value
-sex,M,male
-sex,F,female
-word,,0
-word,produces,1
+"type","value","data_value"
+"sex","M","male"
+"sex","F","female"
+"word",,0
+"word","produces",1
+"word","produces",2
+"word",,"ο"
+"word","produces",11
