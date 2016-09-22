@@ -1,0 +1,15 @@
+type,value,data_value
+sex,M,M
+sex,F,F
+word,,0
+word,produces,1
+small_parts_of_words,not yet,0
+small_parts_of_words,sometimes,1
+small_parts_of_words,often,2
+word_complexity,simple,0
+word_complexity,complex,1
+combine,not yet,0
+combine,sometimes,1
+combine,often,2
+complexity,simple,0
+complexity,complex,1
