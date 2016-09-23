@@ -286,5 +286,37 @@
         "age_min": 18,
         "age_max": 30,
         "has_grammar": false
+    },
+    {
+        "language": "Kigiriama",
+        "form": "WG",
+        "file": "raw_data/Kigiriama_WG/[Kigiriama_WG].csv",
+        "age_min": 8,
+        "age_max": 15,
+        "has_grammar": false
+    },
+    {
+        "language": "Kigiriama",
+        "form": "WS",
+        "file": "raw_data/Kigiriama_WS/[Kigiriama_WS].csv",
+        "age_min": 16,
+        "age_max": 30,
+        "has_grammar": true
+    },
+    {
+        "language": "Kiswahili",
+        "form": "WG",
+        "file": "raw_data/Kiswahili_WG/[Kiswahili_WG].csv",
+        "age_min": 8,
+        "age_max": 15,
+        "has_grammar": false
+    },
+    {
+        "language": "Kiswahili",
+        "form": "WS",
+        "file": "raw_data/Kiswahili_WG/[Kiswahili_WG].csv",
+        "age_min": 16,
+        "age_max": 30,
+        "has_grammar": true
     }
 ]
