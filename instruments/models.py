@@ -38,3 +38,4 @@ from schemas.Cypriot_Greek_WS import *
 from schemas.Kigiriama_WG import *
 from schemas.Kigiriama_WS import *
 from schemas.Kiswahili_WG import *
+from schemas.Kiswahili_WS import *
