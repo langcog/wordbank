@@ -8,6 +8,7 @@ library(lazyeval)
 library(quantregGrowth)
 library(wordbankr)
 library(langcog)
+library(purrr)
 source("predictQR_fixed.R")
 theme_set(theme_mikabr(base_size = 18))
 mode <- "local"
@@ -301,14 +302,30 @@ shinyServer(function(input, output, session) {
 
   forms <- reactive({
     form_opts <- unique(filter(instruments, language == input_language())$form)
-    Filter(function(form) form %in% form_opts,
-           list("Words & Sentences" = "WS", "Words & Gestures" = "WG"))
+
+    # can we do this functionally? this is simple though
+    # still has hard-coded cases to deal with naming the opaque WS and WG designators
+    forms <- list()
+    for (opt in form_opts) {
+      if (opt == "WS") {
+        forms[["Words & Sentences"]] = "WS"
+      } else if (opt == "WG") {
+        forms[["Words & Gestures"]] = "WG"
+      } else {
+        forms[[opt]] <- opt
+      }
+    }
+
+    return(forms)
   })
 
+  # stopgap: hard code those forms that have a comprehension variable.
+  # all others will be production-only for now.
+  # in the end, this will need a specification in the instruments table.
   measures <- reactive({
-    if (input_form() == "WG") {
+    if (input_form() %in% c("WG", "FormA")) {
       list("Produces" = "production", "Understands" = "comprehension")
-    } else if (input_form() == "WS") {
+    } else {
       list("Produces" = "production")
     }
   })
