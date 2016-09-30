@@ -1,6 +1,6 @@
 PackratFormat: 1.4
 PackratVersion: 0.4.7.1
-RVersion: 3.2.3
+RVersion: 3.2.2
 Repos: CRAN=https://cran.rstudio.com/
 
 Package: BH
@@ -177,6 +177,16 @@ Source: CRAN
 Version: 1.8.3
 Hash: 2df5437483a9a53a2deb2afb73258847
 Requires: Rcpp
+
+Package: purrr
+Source: github
+Version: 0.1.0.9000
+Hash: 79cc740408cc126e002b52b142a91897
+Requires: BH, Rcpp, magrittr, dplyr
+GithubRepo: purrr
+GithubUsername: hadley
+GithubRef: master
+GithubSha1: 6d57a81302eaa18579f82b414b6bbbc9e6ca282e
 
 Package: quadprog
 Source: CRAN
