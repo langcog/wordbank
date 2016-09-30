@@ -23,3 +23,8 @@ a:link {
 .lang-lead {
   margin-bottom: 0px;
 }
+
+/*http://stackoverflow.com/questions/31944691/bootstrap-5-column-layout*/
+.col-half-offset{
+    margin-left:4.166666667%
+}

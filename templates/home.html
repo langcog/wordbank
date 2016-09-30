@@ -1,279 +1,319 @@
-{% extends "base.html" %}
-{% load static %}
-
-{% block title %}
-Wordbank: An open database of children's vocabulary development
-{% endblock %}
-
-{% block content %}
+{% extends "base.html" %} {% load static %} {% block title %} Wordbank: An open database of children's vocabulary development {% endblock %} {% block content %}
 <link rel="stylesheet" href={% static "css/home.css" %}>
-<script type="text/javascript" src="{% static "third_party/d3.js" %}"></script>
-<script type="text/javascript" src="{% static "third_party/d3.tip/d3.tip.js" %}"></script>
+<script type="text/javascript" src="{% static " third_party/d3.js " %}"></script>
+<script type="text/javascript" src="{% static " third_party/d3.tip/d3.tip.js " %}"></script>
 
 <div class="jumbotron less-pad">
-<div class="row">
-    <div class="col-md-2">
-      <img class="left-image" src="{% static 'images/walrus.png' %}">
-    </div>
-    <div class="col-md-8 center">
-      <h1>Wordbank</h1>
-      <p>An open database of children's vocabulary development</p>
-    </div>
-    <div class="col-md-2 right">
-      <img style="max-height: 60px;" src="{% static 'images/mcdi.png' %}">
-      <a href="http://langcog.stanford.edu/" target="_blank">
-        <img style="max-height: 100px;" src="{% static 'images/lab_logo.png' %}">
-      </a>
+    <div class="row">
+        <div class="col-md-2">
+            <img class="left-image" src="{% static 'images/walrus.png' %}">
+        </div>
+        <div class="col-md-8 center">
+            <h1>Wordbank</h1>
+            <p>An open database of children's vocabulary development</p>
+        </div>
+        <div class="col-md-2 right">
+            <img style="max-height: 60px;" src="{% static 'images/mcdi.png' %}">
+            <a href="http://langcog.stanford.edu/" target="_blank">
+                <img style="max-height: 100px;" src="{% static 'images/lab_logo.png' %}">
+            </a>
+        </div>
     </div>
 </div>
-</div>
-
-<div class="row">
-<div class="col-md-6">
-
-  <div class="row">
-
-  <div class="col-md-6">
-    <a href="/analyses?name=vocab_norms">
-    <div class="thumbnail">
-      <img src="{% static 'images/sample_plots/norms.png' %}">
-      <div class="caption">
-        <h3>Vocabulary Norms</h3>
-        <p>Explore vocabulary size growth curves for various languages and demographic groups.</p>
-      </div>
-    </div>
-    </a>
- </div>
-
-  <div class="col-md-6">
-    <a href="/analyses?name=item_trajectories">
-    <div class="thumbnail">
-      <img src="{% static 'images/sample_plots/items.png' %}" alt="...">
-      <div class="caption">
-        <h3>Item Trajectories</h3>
-        <p>Explore trajectories of individual words, word categories, and grammar items.</p>
-      </div>
-    </div>
-    </a>
-  </div>
-
-  </div>
-
-  <div class="row">
-
-  <div class="col-md-4">
-    <a href="/analyses?name=admin_data">
-    <div class="thumbnail">
-      <div class="caption">
-        <h4>Admin Data</h4>
-        <p>Download per-child vocabulary data.</p>
-      </div>
-    </div>
-    </a>
- </div>
-
-  <div class="col-md-4">
-    <a href="/analyses?name=item_data">
-    <div class="thumbnail">
-      <div class="caption">
-        <h4>Item Data</h4>
-        <p>Download per-item acquisition data.</p>
-      </div>
-    </div>
-    </a>
-  </div>
-
-  <div class="col-md-4">
-    <a href="/analyses">
-    <div class="thumbnail">
-      <div class="caption">
-        <h4>More Analyses</h4>
-        <p>Ongoing research using Wordbank.</p>
-      </div>
-    </div>
-    </a>
-  </div>
-
-  </div>
-
-</div>
-
-<div class="col-md-6 center">
-    <div class="lead lang-lead">Wordbank contains data from {{ data.num_children }} children<br> and {{ data.num_admins }} CDI administrations, across<br> {{ data.num_languages }} languages and {{ data.num_instruments }} instruments:</div>
-    <div id="langStatsChart" align="center"></div>
-</div>
-
-</div>
-
-<div class="row"><hr></div>
 
 <div class="row">
-<div class="col-md-9 lead">
-<p><b>Wordbank</b> is an open database of information about children's vocabulary growth.</p>
+    <div class="col-md-6">
 
-<p>Wordbank archives data from the <a href="http://mb-cdi.stanford.edu" target="_blank">MacArthur-Bates Communicative Development Inventory</a> (MB-CDI), a family of parent-report questionnaires. Wordbank enables researchers to analyze MB-CDI data in terms of aggregate vocabulary, individual items, demographic variables, and more. It provides interactive visualizations, exploratory reports, and data export tools.</p>
-<p>Wordbank is open access! You can use the <a href="https://github.com/langcog/wordbankr" target="_blank">wordbankr</a> package to access Wordbank data from <a href="http://www.r-project.org/" target="_blank">R</a>.
-<p>Feel free to report a bug or request a feature by <a href="https://github.com/langcog/wordbank/issues" target="_blank">logging an issue on GitHub</a>, and to <a href="mailto:wordbank-contact@stanford.edu" target="_blank">contact us</a> with any questions or comments.</p>
+        <div class="row">
+
+            <div class="col-md-6">
+                <a href="/analyses?name=vocab_norms">
+                    <div class="thumbnail">
+                        <img src="{% static 'images/sample_plots/norms.png' %}">
+                        <div class="caption">
+                            <h3>Vocabulary Norms</h3>
+                            <p>Explore vocabulary size growth curves for various languages and demographic groups.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-6">
+                <a href="/analyses?name=item_trajectories">
+                    <div class="thumbnail">
+                        <img src="{% static 'images/sample_plots/items.png' %}" alt="...">
+                        <div class="caption">
+                            <h3>Item Trajectories</h3>
+                            <p>Explore trajectories of individual words, word categories, and grammar items.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-4">
+                <a href="/analyses?name=admin_data">
+                    <div class="thumbnail">
+                        <div class="caption">
+                            <h4>Admin Data</h4>
+                            <p>Download per-child vocabulary data.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <a href="/analyses?name=item_data">
+                    <div class="thumbnail">
+                        <div class="caption">
+                            <h4>Item Data</h4>
+                            <p>Download per-item acquisition data.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <a href="/analyses">
+                    <div class="thumbnail">
+                        <div class="caption">
+                            <h4>More Analyses</h4>
+                            <p>Ongoing research using Wordbank.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-6 center">
+        <div class="lead lang-lead">Wordbank contains data from {{ data.num_children }} children
+            <br> and {{ data.num_admins }} CDI administrations, across
+            <br> {{ data.num_languages }} languages and {{ data.num_instruments }} instruments:</div>
+        <div id="langStatsChart" align="center"></div>
+    </div>
+
 </div>
 
-<div class="col-md-3">
-<div class="panel panel-primary">
+<div class="row">
+    <hr>
+</div>
 
-<!--<div class="panel-heading">Wordbank links</div>-->
-  <div class="list-group">
-  <a href="http://langcog.github.io/wordbankr" target="_blank" class="list-group-item">
+<div class="row">
+    <div class="col-md-9 lead">
+        <p><b>Wordbank</b> is an open database of information about children's vocabulary growth.</p>
+
+        <p>Wordbank archives data from the <a href="http://mb-cdi.stanford.edu" target="_blank">MacArthur-Bates Communicative Development Inventory</a> (MB-CDI), a family of parent-report questionnaires. Wordbank enables researchers to analyze MB-CDI data
+            in terms of aggregate vocabulary, individual items, demographic variables, and more. It provides interactive visualizations, exploratory reports, and data export tools.</p>
+        <p>Wordbank is open access! You can use the <a href="https://github.com/langcog/wordbankr" target="_blank">wordbankr</a> package to access Wordbank data from <a href="http://www.r-project.org/" target="_blank">R</a>.
+            <p>Feel free to report a bug or request a feature by <a href="https://github.com/langcog/wordbank/issues" target="_blank">logging an issue on GitHub</a>, and to <a href="mailto:wordbank-contact@stanford.edu" target="_blank">contact us</a> with
+                any questions or comments.</p>
+    </div>
+
+    <div class="col-md-3">
+        <div class="panel panel-primary">
+
+            <!--<div class="panel-heading">Wordbank links</div>-->
+            <div class="list-group">
+                <a href="http://langcog.github.io/wordbankr" target="_blank" class="list-group-item">
     Tutorial on using wordbankr
   </a>
-  <a href="https://github.com/langcog/wordbank" target="_blank" class="list-group-item">
+                <a href="https://github.com/langcog/wordbankr" target="_blank" class="list-group-item">
     Codebase for wordbankr
   </a>
-  <a href="https://github.com/langcog/wordbank/issues" target="_blank" class="list-group-item">
+                <a href="https://github.com/langcog/wordbankr/issues" target="_blank" class="list-group-item">
     Issue tracker for wordbankr
   </a>
-  <a href="https://github.com/langcog/wordbankr" target="_blank" class="list-group-item">
+                <a href="https://github.com/langcog/wordbank" target="_blank" class="list-group-item">
     Codebase for Wordbank
   </a>
-  <a href="https://github.com/langcog/wordbank/rissues" target="_blank" class="list-group-item">
+                <a href="https://github.com/langcog/wordbank/issues" target="_blank" class="list-group-item">
     Issue tracker for Wordbank
   </a>
-  <a href="mailto:wordbank-contact@stanford.edu" target="_blank" class="list-group-item">
-    Contact email
+                <a href="mailto:wordbank-contact@stanford.edu" target="_blank" class="list-group-item">
+    Contact us by email
   </a>
-  </div>
+            </div>
+
+        </div>
+    </div>
 
 </div>
+
+<div class="row">
+    <hr>
 </div>
 
-</div>
-
-<div class="row"><hr></div>
-
-<div class="row"><h3>Meet the Wordbank team!</h3></div>
+<div class="row">
+    <h3>Meet the Wordbank team!</h3></div>
 
 <div class="row">
 
-  <div class="col-md-3">
-    <div class="thumbnail">
-      <a href="http://web.stanford.edu/~mcfrank" target="_blank">
-        <img src="{% static 'images/headshots/mike.jpg' %}">
-      </a>
-      <div class="caption">
-        <h3>Michael C. Frank</h3>
-        <p>Principal Investigator, Language and Cognition Lab</p>
-      </div>
+    <div class="col-md-2 col-half-offset">
+        <div class="thumbnail">
+            <a href="http://web.stanford.edu/~mcfrank" target="_blank">
+                <img src="{% static 'images/headshots/mike.jpg' %}">
+            </a>
+            <div class="caption">
+                <h3>Michael C. Frank</h3>
+                <p>Stanford University</p>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <div class="col-md-3">
-    <div class="thumbnail">
-      <a href="http://mikabr.github.io" target="_blank">
-        <img src="{% static 'images/headshots/mika.jpg' %}">
-      </a>
-      <div class="caption">
-        <h3>Mika Braginsky</h3>
-        <p>Research Assistant, Language and Cognition Lab</p>
-      </div>
+    <div class="col-md-2 col-half-offset">
+        <div class="thumbnail">
+            <a href="http://mikabr.github.io" target="_blank">
+                <img src="{% static 'images/headshots/mika.jpg' %}">
+            </a>
+            <div class="caption">
+                <h3>Mika Braginsky</h3>
+                <p>MIT</p>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <div class="col-md-3">
-    <div class="thumbnail">
-      <a href="http://www.thoughtfill.com" target="_blank">
-        <img src="{% static 'images/headshots/dan.jpg' %}">
-      </a>
-      <div class="caption">
-        <h3>Daniel Yurovsky</h3>
-        <p>Postdoc, Language and Cognition Lab</p>
-      </div>
+    <div class="col-md-2 col-half-offset">
+        <div class="thumbnail">
+            <a href="http://www.thoughtfill.com" target="_blank">
+                <img src="{% static 'images/headshots/dan.jpg' %}">
+            </a>
+            <div class="caption">
+                <h3>Daniel Yurovsky</h3>
+                <p>University of Chicago</p>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <div class="col-md-3">
-    <div class="thumbnail">
-      <a href="https://web.stanford.edu/group/langlearninglab/cgi-bin/research-associates/Virginia_Marchman,_Ph.D.php" target="_blank">
-        <img src="{% static 'images/headshots/virginia.jpg' %}">
-      </a>
-      <div class="caption">
-        <h3>Virginia Marchman</h3>
-        <p>Research Associate, Language Learning Lab</p>
-      </div>
+    <div class="col-md-2 col-half-offset">
+        <div class="thumbnail">
+            <a href="https://web.stanford.edu/group/langlearninglab/cgi-bin/research-associates/Virginia_Marchman,_Ph.D.php" target="_blank">
+                <img src="{% static 'images/headshots/virginia.jpg' %}">
+            </a>
+            <div class="caption">
+                <h3>Virginia Marchman</h3>
+                <p>Stanford University</p>
+            </div>
+        </div>
     </div>
-  </div>
+
+    <div class="col-md-2 col-half-offset">
+        <div class="thumbnail">
+
+            <img src="{% static 'images/headshots/danielle.jpg' %}">
+
+            <div class="caption">
+                <h3>Danielle Kellier</h3>
+                <p>Stanford University</p>
+            </div>
+        </div>
+    </div>
 
 </div>
 
-<center>Thanks to <a href="http://www.brockferguson.com/">Brock Ferguson</a> for help with database design and optimization,
-and to Rose Schneider for logo design.</center>
+<center>Thanks to <a href="http://www.brockferguson.com/">Brock Ferguson</a> for help with database design and optimization, and to Rose Schneider for logo design.</center>
 
 
 <script>
-var height = 475,
-    width = 500,
-    format = d3.format(",d");
+    var height = 475,
+        width = 500,
+        format = d3.format(",d");
     sortItems = function(a, b) {
-  return b.value - a.value;
-};
+        return b.value - a.value;
+    };
 
-var bubble = d3.layout.pack()
-    .sort(sortItems)
-    .size([width, height])
-    .padding(5);
+    var bubble = d3.layout.pack()
+        .sort(sortItems)
+        .size([width, height])
+        .padding(5);
 
-var svg = d3.select("#langStatsChart").append("svg")
-    .attr("width", width)
-    .attr("height", height)
-    .style("margin-top", "-25px")
-    .style("margin-bottom", "-40px")
-    .attr("class", "bubble");
+    var svg = d3.select("#langStatsChart").append("svg")
+        .attr("width", width)
+        .attr("height", height)
+        .style("margin-top", "-25px")
+        .style("margin-bottom", "-40px")
+        .attr("class", "bubble");
 
-var tip = d3.tip()
-  .attr('class', 'd3-tip')
-  .html(function(d) {
-    return format(d.label);
-  })
+    var tip = d3.tip()
+        .attr('class', 'd3-tip')
+        .html(function(d) {
+            return format(d.label);
+        })
 
-svg.call(tip);
-root = {{ lang_stats|safe }};
+    svg.call(tip);
+    root = {
+        {
+            lang_stats | safe
+        }
+    };
 
-var valueSort = classes(root)['children'].sort(function(a, b) {return (b.value > a.value) ? 1 : ((a.value > b.value) ? -1 : 0);});
-var color = d3.scale.category20c().domain(valueSort.map(function(n) {return n.name}));
+    var valueSort = classes(root)['children'].sort(function(a, b) {
+        return (b.value > a.value) ? 1 : ((a.value > b.value) ? -1 : 0);
+    });
+    var color = d3.scale.category20c().domain(valueSort.map(function(n) {
+        return n.name
+    }));
 
-var node = svg.selectAll(".node")
-    .data(bubble.nodes(classes(root))
-    .filter(function(d) { return !d.children; }))
-    .enter()
-    .append("g")
-    .attr("class", "node")
-    .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+    var node = svg.selectAll(".node")
+        .data(bubble.nodes(classes(root))
+            .filter(function(d) {
+                return !d.children;
+            }))
+        .enter()
+        .append("g")
+        .attr("class", "node")
+        .attr("transform", function(d) {
+            return "translate(" + d.x + "," + d.y + ")";
+        });
 
-node.append("circle")
-    .attr("r", function(d) { return d.r ; })
-    .style("fill", function(d) { return color(d.name); });
+    node.append("circle")
+        .attr("r", function(d) {
+            return d.r;
+        })
+        .style("fill", function(d) {
+            return color(d.name);
+        });
 
-node.append("text")
-    .attr("dy", ".35em")
-    .style("text-anchor", "middle")
-    .text(function(d) { return d.name; })
-    .style("font-size", function(d) { return Math.min(2 * d.r, (2 * d.r - 4) / this.getComputedTextLength() * 12) + "px"; })
-    .on('mouseover', tip.show)
-    .on('mouseout', tip.hide);
+    node.append("text")
+        .attr("dy", ".35em")
+        .style("text-anchor", "middle")
+        .text(function(d) {
+            return d.name;
+        })
+        .style("font-size", function(d) {
+            return Math.min(2 * d.r, (2 * d.r - 4) / this.getComputedTextLength() * 12) + "px";
+        })
+        .on('mouseover', tip.show)
+        .on('mouseout', tip.hide);
 
-svg.call(tip);
+    svg.call(tip);
 
 
-// Returns a flattened hierarchy containing all leaf nodes under the root.
-function classes(root) {
-  var classes = [];
+    // Returns a flattened hierarchy containing all leaf nodes under the root.
+    function classes(root) {
+        var classes = [];
 
-  function recurse(name, node) {
-    if (node.children) node.children.forEach(function(child) { recurse(node.name, child); });
-    else classes.push({name: node.name, value: Math.pow(node.count, 0.65), label: node.count});
-  }
+        function recurse(name, node) {
+            if (node.children) node.children.forEach(function(child) {
+                recurse(node.name, child);
+            });
+            else classes.push({
+                name: node.name,
+                value: Math.pow(node.count, 0.65),
+                label: node.count
+            });
+        }
 
-  recurse(null, root);
-  return {children: classes};
-}
-
+        recurse(null, root);
+        return {
+            children: classes
+        };
+    }
 </script>
 
 {% endblock %}
