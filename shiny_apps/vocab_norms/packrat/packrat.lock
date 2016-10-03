@@ -1,6 +1,6 @@
 PackratFormat: 1.4
 PackratVersion: 0.4.7.1
-RVersion: 3.2.2
+RVersion: 3.3.1
 Repos: CRAN=https://cran.rstudio.com/
 
 Package: BH
@@ -92,7 +92,7 @@ Package: ggplot2
 Source: CRAN
 Version: 2.1.0
 Hash: 50e297b0191179c39c7dcae0eff72b51
-Requires: MASS, digest, gtable, plyr, reshape2, scales
+Requires: MASS, digest, gtable, plyr, scales, reshape2
 
 Package: gtable
 Source: CRAN
@@ -125,7 +125,7 @@ Package: langcog
 Source: github
 Version: 0.1.9000
 Hash: f318f8f311b14b10ca52bd9852da9d6d
-Requires: assertthat, dplyr, ggplot2, lazyeval, quadprog
+Requires: assertthat, lazyeval, quadprog, dplyr, ggplot2
 GithubRepo: langcog
 GithubUsername: langcog
 GithubRef: master
@@ -182,7 +182,7 @@ Package: purrr
 Source: github
 Version: 0.1.0.9000
 Hash: 79cc740408cc126e002b52b142a91897
-Requires: BH, Rcpp, magrittr, dplyr
+Requires: BH, Rcpp, lazyeval, magrittr, dplyr
 GithubRepo: purrr
 GithubUsername: hadley
 GithubRef: master
@@ -197,7 +197,7 @@ Package: quantreg
 Source: CRAN
 Version: 5.21
 Hash: 38c5ff66011d761c2367b18aa456cba6
-Requires: Matrix, MatrixModels, SparseM
+Requires: SparseM, Matrix, MatrixModels
 
 Package: quantregGrowth
 Source: CRAN
@@ -215,13 +215,14 @@ Package: scales
 Source: CRAN
 Version: 0.4.0
 Hash: 53844c573fd30a70f592fa45ec1e33a1
-Requires: RColorBrewer, Rcpp, dichromat, labeling, munsell, plyr
+Requires: RColorBrewer, Rcpp, dichromat, labeling, plyr, munsell
 
 Package: shiny
 Source: CRAN
 Version: 0.13.2
 Hash: 28d6903a44dc53bd4823fa43ccdc08e5
-Requires: R6, digest, htmltools, httpuv, jsonlite, mime, xtable
+Requires: R6, digest, jsonlite, mime, xtable, httpuv, htmltools,
+    sourcetools
 
 Package: shinyBS
 Source: CRAN
@@ -235,6 +236,11 @@ Version: 1.0.1
 Hash: 9a394ba0f9825789949d2253fbe853fa
 Requires: shiny
 
+Package: sourcetools
+Source: CRAN
+Version: 0.1.5
+Hash: 04ddeb1c288302222562326a471e2945
+
 Package: stringi
 Source: CRAN
 Version: 1.0-1
@@ -246,17 +252,23 @@ Version: 1.0.0
 Hash: 2676dd5f88890910962b733b0f9540e1
 Requires: magrittr, stringi
 
+Package: tibble
+Source: CRAN
+Version: 1.2
+Hash: b7bc409c234d7694572d911e8f5e422b
+Requires: Rcpp, assertthat, lazyeval
+
 Package: tidyr
 Source: CRAN
 Version: 0.4.1
 Hash: f04fea3f45f0fd8246e22d3c38f0e98f
-Requires: Rcpp, dplyr, lazyeval, magrittr, stringi
+Requires: Rcpp, lazyeval, magrittr, stringi, dplyr, tibble
 
 Package: wordbankr
 Source: github
 Version: 0.1.9005
 Hash: 30b2605ed5be5b7f4f6d46ad450f0f95
-Requires: RMySQL, assertthat, dplyr, magrittr, stringr, tidyr
+Requires: assertthat, magrittr, RMySQL, dplyr, stringr, tidyr
 GithubRepo: wordbankr
 GithubUsername: langcog
 GithubRef: master
