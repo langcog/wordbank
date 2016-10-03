@@ -1,4 +1,11 @@
-{% extends "base.html" %} {% load static %} {% block title %} Wordbank: An open database of children's vocabulary development {% endblock %} {% block content %}
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} 
+Wordbank: An open database of children's vocabulary development
+{% endblock %}
+
+{% block content %}
 <link rel="stylesheet" href={% static "css/home.css" %}>
 <script type="text/javascript" src={% static "third_party/d3.js" %}></script>
 <script type="text/javascript" src={% static "third_party/d3.tip/d3.tip.js" %}></script>
@@ -220,100 +227,59 @@
 
 
 <script>
-    var height = 475,
-        width = 500,
-        format = d3.format(",d");
+var height = 475,
+    width = 500,
+    format = d3.format(",d");
     sortItems = function(a, b) {
-        return b.value - a.value;
-    };
-
-    var bubble = d3.layout.pack()
-        .sort(sortItems)
-        .size([width, height])
-        .padding(5);
-
-    var svg = d3.select("#langStatsChart").append("svg")
-        .attr("width", width)
-        .attr("height", height)
-        .style("margin-top", "-25px")
-        .style("margin-bottom", "-40px")
-        .attr("class", "bubble");
-
-    var tip = d3.tip()
-        .attr('class', 'd3-tip')
-        .html(function(d) {
-            return format(d.label);
-        })
-
-    svg.call(tip);
-    root = {
-        {
-            lang_stats | safe
-        }
-    };
-
-    var valueSort = classes(root)['children'].sort(function(a, b) {
-        return (b.value > a.value) ? 1 : ((a.value > b.value) ? -1 : 0);
-    });
-    var color = d3.scale.category20c().domain(valueSort.map(function(n) {
-        return n.name
-    }));
-
-    var node = svg.selectAll(".node")
-        .data(bubble.nodes(classes(root))
-            .filter(function(d) {
-                return !d.children;
-            }))
-        .enter()
-        .append("g")
-        .attr("class", "node")
-        .attr("transform", function(d) {
-            return "translate(" + d.x + "," + d.y + ")";
-        });
-
-    node.append("circle")
-        .attr("r", function(d) {
-            return d.r;
-        })
-        .style("fill", function(d) {
-            return color(d.name);
-        });
-
-    node.append("text")
-        .attr("dy", ".35em")
-        .style("text-anchor", "middle")
-        .text(function(d) {
-            return d.name;
-        })
-        .style("font-size", function(d) {
-            return Math.min(2 * d.r, (2 * d.r - 4) / this.getComputedTextLength() * 12) + "px";
-        })
-        .on('mouseover', tip.show)
-        .on('mouseout', tip.hide);
-
-    svg.call(tip);
-
-
-    // Returns a flattened hierarchy containing all leaf nodes under the root.
-    function classes(root) {
-        var classes = [];
-
-        function recurse(name, node) {
-            if (node.children) node.children.forEach(function(child) {
-                recurse(node.name, child);
-            });
-            else classes.push({
-                name: node.name,
-                value: Math.pow(node.count, 0.65),
-                label: node.count
-            });
-        }
-
-        recurse(null, root);
-        return {
-            children: classes
-        };
-    }
+  return b.value - a.value;
+};
+var bubble = d3.layout.pack()
+    .sort(sortItems)
+    .size([width, height])
+    .padding(5);
+var svg = d3.select("#langStatsChart").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+    .style("margin-top", "-25px")
+    .style("margin-bottom", "-40px")
+    .attr("class", "bubble");
+var tip = d3.tip()
+  .attr('class', 'd3-tip')
+  .html(function(d) {
+    return format(d.label);
+  })
+svg.call(tip);
+root = {{ lang_stats|safe }};
+var valueSort = classes(root)['children'].sort(function(a, b) {return (b.value > a.value) ? 1 : ((a.value > b.value) ? -1 : 0);});
+var color = d3.scale.category20c().domain(valueSort.map(function(n) {return n.name}));
+var node = svg.selectAll(".node")
+    .data(bubble.nodes(classes(root))
+    .filter(function(d) { return !d.children; }))
+    .enter()
+    .append("g")
+    .attr("class", "node")
+    .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+node.append("circle")
+    .attr("r", function(d) { return d.r ; })
+    .style("fill", function(d) { return color(d.name); });
+node.append("text")
+    .attr("dy", ".35em")
+    .style("text-anchor", "middle")
+    .text(function(d) { return d.name; })
+    .style("font-size", function(d) { return Math.min(2 * d.r, (2 * d.r - 4) / this.getComputedTextLength() * 12) + "px"; })
+    .on('mouseover', tip.show)
+    .on('mouseout', tip.hide);
+svg.call(tip);
+// Returns a flattened hierarchy containing all leaf nodes under the root.
+function classes(root) {
+  var classes = [];
+  function recurse(name, node) {
+    if (node.children) node.children.forEach(function(child) { recurse(node.name, child); });
+    else classes.push({name: node.name, value: Math.pow(node.count, 0.65), label: node.count});
+  }
+  recurse(null, root);
+  return {children: classes};
+}
 </script>
 
 {% endblock %}
