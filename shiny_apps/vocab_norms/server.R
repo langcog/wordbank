@@ -11,7 +11,7 @@ library(langcog)
 library(purrr)
 source("predictQR_fixed.R")
 theme_set(theme_mikabr(base_size = 18))
-mode <- "local"
+mode <- "remote"
 
 input <- list(language = "English", form = "WS", measure = "production",
               quantiles = "Standard", demo = "sex")
