@@ -110,7 +110,13 @@ shinyServer(function(input, output, session) {
       a else forms()[[1]]
   })
 
-  input_forms <- reactive(strsplit(input_form(), " ")[[1]])
+  input_forms <- reactive(
+
+    if (input_language() != "English (British)") {
+      strsplit(input_form(), " ")[[1]]}
+    else {
+      input_form()}
+  )
 
   input_measure <- reactive({
     if (is.null(input$measure)) start_measure else input$measure
@@ -287,7 +293,9 @@ shinyServer(function(input, output, session) {
                              "FormA" = "FormA",
                              "FormBOne" = "FormBOne",
                              "FormBTwo" = "FormBTwo",
-                             "FormC" = "FormC"))
+                             "FormC" = "FormC",
+                             "TEDS Twos" = "TEDS Twos",
+                             "TEDS Threes" = "TEDS Threes"))
     if (all(c("WS", "WG") %in% form_opts)) {
       form_opts$"Both" <- "WG WS"
     }
