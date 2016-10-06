@@ -10,7 +10,7 @@ library(langcog)
 theme_set(theme_mikabr(base_size = 18))
 font <- theme_mikabr()$text$family
 Sys.setlocale(locale = "en_US.UTF-8")
-mode <- "remote"
+mode <- "local"
 
 # input <- list(language = "English", form = "WG WS", measure = "produces",
 #               words = c("baa baa", "woof"))
