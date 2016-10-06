@@ -303,7 +303,7 @@ shinyServer(function(input, output, session) {
   })
 
   measures <- reactive({
-    if ("WG" %in% input_forms()) {
+    if (input_forms() %in% c("WG","FormA")) {
       list("Produces" = "produces", "Understands" = "understands")
     } else {
       list("Produces" = "produces")
