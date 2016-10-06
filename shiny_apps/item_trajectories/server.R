@@ -10,7 +10,7 @@ library(langcog)
 theme_set(theme_mikabr(base_size = 18))
 font <- theme_mikabr()$text$family
 Sys.setlocale(locale = "en_US.UTF-8")
-mode <- "local"
+mode <- "remote"
 
 # input <- list(language = "English", form = "WG WS", measure = "produces",
 #               words = c("baa baa", "woof"))
@@ -102,8 +102,12 @@ shinyServer(function(input, output, session) {
     if (is.null(input$language)) start_language else input$language
   })
 
-  input_form <- reactive({
-    if (is.null(input$form)) start_form else input$form
+  input_form <- reactive ({
+    a <- if (is.null(input$form)) start_form else input$form
+    possible_forms <- unique(filter(instrument_tables,
+                                    language == input_language())$form)
+    if (a %in% possible_forms)
+      a else forms()[[1]]
   })
 
   input_forms <- reactive(strsplit(input_form(), " ")[[1]])
@@ -279,7 +283,11 @@ shinyServer(function(input, output, session) {
     }
     form_opts <- Filter(valid_form,
                         list("Words & Sentences" = "WS",
-                             "Words & Gestures" = "WG"))
+                             "Words & Gestures" = "WG",
+                             "FormA" = "FormA",
+                             "FormBOne" = "FormBOne",
+                             "FormBTwo" = "FormBTwo",
+                             "FormC" = "FormC"))
     if (all(c("WS", "WG") %in% form_opts)) {
       form_opts$"Both" <- "WG WS"
     }
