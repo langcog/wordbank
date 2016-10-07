@@ -7,26 +7,26 @@ library(markdown)
 pops <- fromJSON("docs/popovers.json")
 
 shinyUI(fluidPage(
-  
+
   theme = shinytheme("spacelab"),
-  
+
   br(),
   bsCollapse(id = "doc", open = "title",
              bsCollapsePanel(title = h3("Vocabulary Norms"),
                              includeMarkdown("docs/description.md"),
                              value = "title",
                              style = "default")),
-  
+
   fluidRow(
     column(3,
            conditionalPanel(
              condition = "output.loaded != 1",
              h4("Loading...")
            ),
-           
+
            conditionalPanel(
              condition = "output.loaded == 1",
-             
+
              wellPanel(
                tags$style(type = "text/css", ".popover { width: 150px;} .span"),
                uiOutput("language_selector"),
@@ -42,7 +42,7 @@ shinyUI(fluidPage(
                          content = HTML(sprintf("<small>%s</small>", pops$measure)),
                          placement = "right"),
                uiOutput("data_filter")),
-             
+
              wellPanel(
                uiOutput("demo_selector"),
                bsPopover("demo_selector", title = NULL,
@@ -56,7 +56,7 @@ shinyUI(fluidPage(
                          content = HTML(sprintf("<small>%s</small>", pops$quantile)),
                          placement = "right"))
            )),
-    
+
     column(9,
            tags$style(type = "text/css",
                       ".shiny-output-error { visibility: hidden; }",
@@ -66,6 +66,7 @@ shinyUI(fluidPage(
                       br(),
                       conditionalPanel(
                         condition = "output.loaded == 1",
+                        bsAlert("curves_bug"),
                         plotOutput("plot", width = "100%", height = "auto"),
                         downloadButton("download_plot", "Download Plot",
                                        class = "btn-default btn-xs"),
