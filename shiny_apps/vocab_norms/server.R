@@ -11,10 +11,12 @@ library(langcog)
 library(purrr)
 source("predictQR_fixed.R")
 theme_set(theme_mikabr(base_size = 18))
-mode <- "remote"
+mode <- "local"
 
 input <- list(language = "English", form = "WS", measure = "production",
               quantiles = "Standard", demo = "sex")
+
+alerted <- FALSE
 
 shinyServer(function(input, output, session) {
 
@@ -259,6 +261,19 @@ shinyServer(function(input, output, session) {
   }
 
   curves <- reactive(tryCatch(fit_curves(), error = function(e) NULL))
+
+  curves_bug <- observe({
+    if (is.null(curves()) & !alerted) {
+      createAlert(session, "curves_bug", "alert",
+                  content = "The current model does not fit well to this dataset.",
+                  style = "warning", dismiss = FALSE)
+      alerted <<- TRUE
+    }
+    if (!is.null(curves()) & alerted) {
+      closeAlert(session, "alert")
+      alerted <<- FALSE
+    }
+  })
 
   plot <- reactive({
     req(data())
