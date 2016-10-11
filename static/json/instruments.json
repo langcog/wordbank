@@ -121,6 +121,14 @@
     },
     {
         "language": "Mandarin",
+        "form": "IC",
+        "file": "raw_data/Mandarin_IC/[Mandarin_IC].csv",
+        "age_min": 12,
+        "age_max": 16,
+        "has_grammar": false
+    },
+    {
+        "language": "Mandarin",
         "form": "TC",
         "file": "raw_data/Mandarin_TC/[Mandarin_TC].csv",
         "age_min": 17,
