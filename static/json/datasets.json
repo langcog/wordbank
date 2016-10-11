@@ -676,5 +676,17 @@
         "date_format": "%Y-%m-%d",
         "contributor": "Katie Alcock, Lancaster University",
         "citation": "Alcock, K., Rimba, K., Holding, P., Kitsao-Wekulo, P., Abubakar, A., Newton, C.R.J.C. (2015) Developmental inventories using illiterate parents as informants: Communicative Development Inventory (CDI) adaptation for two Kenyan languages. Journal of Child Language, 42, 763-785."
+    },
+    {
+        "name": "Li",
+        "dataset": "",
+        "instrument_language": "Mandarin",
+        "instrument_form": "IC",
+        "file": "raw_data/Mandarin_IC/MandarinIC_Li.csv",
+        "splitcol": true,
+        "norming": false,
+        "longitudinal": false,
+        "contributor": "Ping Li, Pennsylvania State University",
+        "citation": "Hao, M., Shu, H., Xing, A., & Li, P. (2008).  Early vocabulary inventory for Mandarin Chinese.  Behavior Research Methods, 40, 728-733."
     }
 ]
