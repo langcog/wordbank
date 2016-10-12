@@ -326,6 +326,10 @@ shinyServer(function(input, output, session) {
         forms[["Words & Sentences"]] = "WS"
       } else if (opt == "WG") {
         forms[["Words & Gestures"]] = "WG"
+      } else if (opt == "IC") {
+        forms[["Infant Checklist"]] = "IC"
+      } else if (opt == "TC") {
+        forms[["Toddler Checklist"]] = "TC"
       } else {
         forms[[opt]] <- opt
       }
