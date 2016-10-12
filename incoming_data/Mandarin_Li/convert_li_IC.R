@@ -20,6 +20,8 @@ read_ping <- function(age, file) {
 }
 
 item_names <- paste(1:nrow(instrument),instrument$item,sep="_")
+item_names <- strtrim(item_names, 15)
+
 ping_all_comp <- bind_rows(mapply(read_ping, seq(12,16,1), ping_comp))
 ping_all_comp$V233 <- NULL
 colnames(ping_all_comp)[3:ncol(ping_all_comp)] <- paste0(item_names,"u")
