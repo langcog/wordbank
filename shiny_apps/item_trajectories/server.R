@@ -10,7 +10,7 @@ library(langcog)
 theme_set(theme_mikabr(base_size = 18))
 font <- theme_mikabr()$text$family
 Sys.setlocale(locale = "en_US.UTF-8")
-mode <- "local"
+mode <- "remote"
 
 # input <- list(language = "English", form = "WG WS", measure = "produces",
 #               words = c("baa baa", "woof"))
@@ -295,7 +295,9 @@ shinyServer(function(input, output, session) {
                              "FormBTwo" = "FormBTwo",
                              "FormC" = "FormC",
                              "TEDS Twos" = "TEDS Twos",
-                             "TEDS Threes" = "TEDS Threes"))
+                             "TEDS Threes" = "TEDS Threes",
+                             "Toddler Checklist" = "TC",
+                             "Infant Checklist" = "IC"))
     if (all(c("WS", "WG") %in% form_opts)) {
       form_opts$"Both" <- "WG WS"
     }
@@ -303,7 +305,7 @@ shinyServer(function(input, output, session) {
   })
 
   measures <- reactive({
-    if (input_forms() %in% c("WG","FormA")) {
+    if (input_forms() %in% c("WG","FormA","IC")) {
       list("Produces" = "produces", "Understands" = "understands")
     } else {
       list("Produces" = "produces")
