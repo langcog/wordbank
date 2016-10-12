@@ -39,3 +39,4 @@ from schemas.Kigiriama_WG import *
 from schemas.Kigiriama_WS import *
 from schemas.Kiswahili_WG import *
 from schemas.Kiswahili_WS import *
+from schemas.Mandarin_IC import *
