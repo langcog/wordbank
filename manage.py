@@ -1,6 +1,4 @@
 #!/usr/bin/env python
-import sys
-print sys.path
 import os
 import sys
 import faulthandler
