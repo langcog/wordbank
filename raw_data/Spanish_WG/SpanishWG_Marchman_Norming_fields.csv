@@ -1,10 +1,10 @@
 field,column,group,type
-birth_order,,child,birth_order
+birth_order,birthord,child,birth_order
 data_age,cdiage,admin,data_age
 date_of_birth,,child,date_of_birth
 date_of_test,,admin,date_of_test
 ethnicity,,child,ethnicity
-mom_ed,,child,mom_ed
+mom_ed,momed,child,mom_ed
 sex,gender,child,sex
 study_id,subj#,child,study_id
 item_1,am,item,word

@@ -5,6 +5,13 @@ ethnicity,A,
 ethnicity,B,
 ethnicity,H,
 ethnicity,W,
-word,produces,2.00
-word,understands,1.00
-word,,0.00
+mom_ed,,
+mom_ed,,0
+mom_ed,None,1
+mom_ed,Primary,2
+mom_ed,Some Secondary,3
+mom_ed,Secondary,4
+mom_ed,College,5
+word,produces,2
+word,understands,1
+word,,0
