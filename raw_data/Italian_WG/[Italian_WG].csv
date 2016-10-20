@@ -1,506 +1,506 @@
-itemID,item,type,category,choices,definition,gloss,uni_lemma
-item_1,,first_signs,,yes; no,Risponde quando è chiamato per nome,Respond to his/her name,
-item_2,,first_signs,,yes; no,Risponde ad un No,Respond to No,
-item_3,,first_signs,,yes; no,Reagisce ad un C'è la mamma/il papà,Look for mummty/daddy if you say where is mummy/daddy,
-item_4,,phrases,,understands,Vuoi la pappa,Are you hungry?,
-item_5,,phrases,,understands,Hai sonno? Sei stanco,Are you sleepy/tired?,
-item_6,,phrases,,understands,Vuoi bere?,Do you want to drink?,
-item_7,,phrases,,understands,Stai attento,Be careful,
-item_8,,phrases,,understands,Stai buono,,
-item_9,,phrases,,understands,Batti le manine,Clap your ands,
-item_10,,phrases,,understands,Cambiamo il pannolino,Change diaper,
-item_11,,phrases,,understands,Vieni qui,Come here,
-item_12,,phrases,,understands,Che schifo,,
-item_13,,phrases,,understands,Ne vuoi ancora?,Do you want more?,
-item_14,,phrases,,understands,Non fare questo,Don't do this,
-item_15,,phrases,,understands,Non toccare,Don't touch,
-item_16,,phrases,,understands,Alzati,Get up,
-item_17,,phrases,,understands,Dai quello alla mamma,Give to mummy,
-item_18,,phrases,,understands,Dammi un bacino,Give me a kiss,
-item_19,,phrases,,understands,Andiamo a…,Let's go to…,
-item_20,,phrases,,understands,Bravo bambino,Good boy/girl,
-item_21,,phrases,,understands,Stai fermo,Stop,
-item_22,,phrases,,understands,Dì Ciao,Say bye bye,
-item_23,,phrases,,understands,Guarda/Guarda qui,Look/look here,
-item_24,,phrases,,understands,Apri la bocca,Open your mouth,
-item_25,,phrases,,understands,Stai seduto,Sit down,
-item_26,,phrases,,understands,Sputa,Psit it out,
-item_27,,phrases,,understands,Basta,Cut it now,
-item_28,,phrases,,understands,E' ora di fare la nanna,I'ts time to go to bed,
-item_29,,phrases,,understands,Butta la palla,Throw the ball,
-item_30,,phrases,,understands,Sei tutto sporco,You are dirty,
-item_31,,phrases,,understands,Usciamo?,Let's go out,
-item_32,,first_words,,not yet; sometimes; often,Quanto spesso imita le parole?,How frequently repeats the words,
-item_33,,first_words,,not yet; sometimes; often,Quanto spesso nomina?,How frequently names objects/events…?,
-item_34,bau bau,word,sounds,understands; produces,bau bau,woof woof,woof woof
-item_35,beh beh,word,sounds,understands; produces,beh beh,baa baa,baa baa
-item_36,brum brum,word,sounds,understands; produces,brum brum,vroom,vroom
-item_37,cip cip,word,sounds,understands; produces,cip cip,tweet tweet,tweet tweet
-item_38,clop clop,word,sounds,understands; produces,clop clop,,clop clop
-item_39,coccode,word,sounds,understands; produces,coccodè,cockadoodledoo,cockadoodledoo
-item_40,ih oh,word,sounds,understands; produces,oh oh,uh oh,uh oh
-item_41,grr,word,sounds,understands; produces,grr,grr,grrr
-item_42,miao,word,sounds,understands; produces,miao,meow,meow
-item_43,muh,word,sounds,understands; produces,muh,moo,moo
-item_44,qua qua,word,sounds,understands; produces,qua qua,quack quack,quack quack
-item_45,tuttu,word,sounds,understands; produces,tuttù,choo choo,choo choo
-item_46,agnello,word,animals,understands; produces,agnello,lamb,lamb
-item_47,animale,word,animals,understands; produces,animale,animal,animal
-item_48,asino,word,animals,understands; produces,asino,donkey,donkey
-item_49,cane,word,animals,understands; produces,cane,dog,dog
-item_50,capra,word,animals,understands; produces,capra,goat,goat
-item_51,cavallo,word,animals,understands; produces,cavallo,horse,horse
-item_52,cerbiatto,word,animals,understands; produces,cerbiatto,fawn,fawn
-item_53,coccodrillo,word,animals,understands; produces,coccodrillo,crocodile,crocodile
-item_54,coniglio,word,animals,understands; produces,coniglio,bunny,bunny
-item_55,elefante,word,animals,understands; produces,elefante,elephant,elephant
-item_56,farfalla,word,animals,understands; produces,farfalla,butterfly,butterfly
-item_57,formica,word,animals,understands; produces,formica,ant,ant
-item_58,gallina,word,animals,understands; produces,gallina,hen,hen
-item_59,gallo,word,animals,understands; produces,gallo,rooster,rooster
-item_60,gatto,word,animals,understands; produces,gatto,cat,cat
-item_61,giraffa,word,animals,understands; produces,giraffa,giraffe,giraffe
-item_62,ippopotamo,word,animals,understands; produces,ippopotamo,hippopotamus,hippopotamus
-item_63,leone,word,animals,understands; produces,leone,lion,lion
-item_64,lupo,word,animals,understands; produces,lupo,wolf,wolf
-item_65,maiale,word,animals,understands; produces,maiale,pig,pig
-item_66,mosca,word,animals,understands; produces,mosca,fly,fly (animal)
-item_67,mucca,word,animals,understands; produces,mucca,cow,cow
-item_68,oca,word,animals,understands; produces,oca,goose,goose
-item_69,orso,word,animals,understands; produces,orso,bear,bear
-item_70,papera,word,animals,understands; produces,papera,duck,duck
-item_71,pecora,word,animals,understands; produces,pecora,sheep,sheep
-item_72,pesciolino,word,animals,understands; produces,pesciolino,fish,fish (animal)
-item_73,pinguino,word,animals,understands; produces,pinguino,penguin,penguin
-item_74,pulcino,word,animals,understands; produces,pulcino,chick,chick
-item_75,rana,word,animals,understands; produces,rana,frog,frog
-item_76,scimmia,word,animals,understands; produces,scimmia,monkey,monkey
-item_77,tartaruga,word,animals,understands; produces,tartaruga,turtle,turtle
-item_78,tigre,word,animals,understands; produces,tigre,tiger,tiger
-item_79,topo,word,animals,understands; produces,topo,mouse,mouse
-item_80,uccellino,word,animals,understands; produces,uccellino,bird,bird
-item_81,zanzara,word,animals,understands; produces,zanzara,mosquito,mosquito
-item_82,aereo,word,vehicles,understands; produces,aereo,airplane,airplane
-item_83,autobus,word,vehicles,understands; produces,autobus,bus,bus
-item_84,automobile,word,vehicles,understands; produces,automobile,car,car
-item_85,barca,word,vehicles,understands; produces,barca,boat,boat
-item_86,bicicletta,word,vehicles,understands; produces,bicicletta,bicycle,bicycle
-item_87,camion,word,vehicles,understands; produces,camion,truck,truck
-item_88,motocicletta,word,vehicles,understands; produces,motocicletta,motorcycle,motorcycle
-item_89,passeggino,word,vehicles,understands; produces,passeggino,stroller,stroller
-item_90,treno,word,vehicles,understands; produces,treno,train,train
-item_91,bambola,word,toys,understands; produces,bambola,doll,doll
-item_92,cubi,word,toys,understands; produces,cubi,block,block
-item_93,favola/storia,word,toys,understands; produces,favola/storia,book/story,book
-item_94,giocattolo,word,toys,understands; produces,giocattolo,toy,toy (object)
-item_95,palla,word,toys,understands; produces,palla,ball,ball
-item_96,paletta,word,toys,understands; produces,paletta,spade,spade
-item_97,secchiello,word,toys,understands; produces,secchiello,bucket,bucket
-item_98,trottola,word,toys,understands; produces,trottola,spinning top,top
-item_99,acqua,word,food_drink,understands; produces,acqua,water,water (beverage)
-item_100,arancia,word,food_drink,understands; produces,arancia,orange,orange (food)
-item_101,banana,word,food_drink,understands; produces,banana,banana,banana
-item_102,biscotti,word,food_drink,understands; produces,biscotti,cookie,cookie
-item_103,caramella,word,food_drink,understands; produces,caramella,candy,candy
-item_104,carne,word,food_drink,understands; produces,carne,meat,meat
-item_105,carote,word,food_drink,understands; produces,carote,carrots,carrots
-item_106,cioccolata,word,food_drink,understands; produces,cioccolata,chocolate,chocolate
-item_107,cracker,word,food_drink,understands; produces,cracker,cracker,cracker
-item_108,formaggio,word,food_drink,understands; produces,formaggio,cheese,cheese
-item_109,gelato,word,food_drink,understands; produces,gelato,icecream,ice cream
-item_110,latte,word,food_drink,understands; produces,latte,milk,milk
-item_111,mela,word,food_drink,understands; produces,mela,apple,apple
-item_112,miele,word,food_drink,understands; produces,miele,honey,honey
-item_113,pane,word,food_drink,understands; produces,pane,bread,bread
-item_114,pappa,word,food_drink,understands; produces,pappa,pap,pap
-item_115,pasta,word,food_drink,understands; produces,pasta,pasta,pasta
-item_116,patate,word,food_drink,understands; produces,patate,potato,potato
-item_117,pera,word,food_drink,understands; produces,pera,pear,pear
-item_118,pesca,word,food_drink,understands; produces,pesca,peach,peach
-item_119,piselli,word,food_drink,understands; produces,piselli,peas,peas
-item_120,pollo,word,food_drink,understands; produces,pollo,chicken,chicken (food)
-item_121,polpette,word,food_drink,understands; produces,polpette,meat balls,meatball
-item_122,riso,word,food_drink,understands; produces,riso,rice,rice
-item_123,sugo,word,food_drink,understands; produces,sugo,sauce,sauce
-item_124,torta,word,food_drink,understands; produces,torta,cake,cake
-item_125,uovo,word,food_drink,understands; produces,uovo,egg,egg
-item_126,uva,word,food_drink,understands; produces,uva,grapes,grapes
-item_127,yogurt,word,food_drink,understands; produces,yogurt,yogurt,yogurt
-item_128,zucchero,word,food_drink,understands; produces,zucchero,sugar,sugar
-item_129,bavaglino,word,food_drink,understands; produces,bavaglino,bib,bib
-item_130,bottone,word,clothing,understands; produces,bottone,button,button
-item_131,calze,word,clothing,understands; produces,calze,tights,sock
-item_132,cappello,word,clothing,understands; produces,cappello,hat,hat
-item_133,cappotto,word,clothing,understands; produces,cappotto,coat,coat
-item_134,collana,word,clothing,understands; produces,collana,necklace,necklace
-item_135,giacca,word,clothing,understands; produces,giacca,jacket,jacket
-item_136,gonna,word,clothing,understands; produces,gonna,skirt,skirt
-item_137,guanti,word,clothing,understands; produces,guanti,gloves,gloves
-item_138,maglione,word,clothing,understands; produces,maglione,sweater,sweater
-item_139,mutande,word,clothing,understands; produces,mutande,underpants,underpants
-item_140,occhiali,word,clothing,understands; produces,occhiali,glasses,glasses
-item_141,pannolino,word,clothing,understands; produces,pannolino,diaper,diaper
-item_142,pantaloni,word,clothing,understands; produces,pantaloni,pants,pants
-item_143,pigiama,word,clothing,understands; produces,pigiama,pajamas,pajamas
-item_144,scarpe,word,clothing,understands; produces,scarpe,shoe,shoe
-item_145,sciarpa,word,clothing,understands; produces,sciarpa,scarf,scarf
-item_146,tuta,word,clothing,understands; produces,tuta,tracksuit,tracksuit
-item_147,vestito,word,clothing,understands; produces,vestito,dress,dress (object)
-item_148,bocca,word,body_parts,understands; produces,bocca,mouth,mouth
-item_149,braccio,word,body_parts,understands; produces,braccio,arm,arm
-item_150,capelli,word,body_parts,understands; produces,capelli,hair,hair
-item_151,denti,word,body_parts,understands; produces,denti,tooth,tooth
-item_152,dito,word,body_parts,understands; produces,dito,finger,finger
-item_153,faccia,word,body_parts,understands; produces,faccia,face,face
-item_154,gambe,word,body_parts,understands; produces,gambe,leg,leg
-item_155,lingua,word,body_parts,understands; produces,lingua,tongue,tongue
-item_156,mano,word,body_parts,understands; produces,mano,hand,hand
-item_157,naso,word,body_parts,understands; produces,naso,nose,nose
-item_158,occhio,word,body_parts,understands; produces,occhio,eye,eye
-item_159,ombelico,word,body_parts,understands; produces,ombelico,bellybutton,belly button
-item_160,orecchio,word,body_parts,understands; produces,orecchio,ear,ear
-item_161,organo genitale femminile,word,body_parts,understands; produces,organo genitale femminile,vagina,vagina
-item_162,organo genitale maschile,word,body_parts,understands; produces,organo genitale maschile,penis,penis
-item_163,pancia,word,body_parts,understands; produces,pancia,tummy,tummy
-item_164,piede,word,body_parts,understands; produces,piede,feet,feet
-item_165,sederino,word,body_parts,understands; produces,sederino,buttocks,butt
-item_166,seno,word,body_parts,understands; produces,seno,breast,breast
-item_167,testa,word,body_parts,understands; produces,testa,head,head
-item_168,armadio,word,furniture_rooms,understands; produces,armadio,closet,closet
-item_169,bagno,word,furniture_rooms,understands; produces,bagno,bathroom,bathroom
-item_170,bide,word,furniture_rooms,understands; produces,bidè,bidet,bidet
-item_171,camera,word,furniture_rooms,understands; produces,camera,room,room
-item_172,cassetto,word,furniture_rooms,understands; produces,cassetto,drawer,drawer
-item_173,cucina,word,furniture_rooms,understands; produces,cucina,kitchen,kitchen
-item_174,culla,word,furniture_rooms,understands; produces,culla,crib,crib
-item_175,divano,word,furniture_rooms,understands; produces,divano,couch,couch
-item_176,doccia,word,furniture_rooms,understands; produces,doccia,shower,shower
-item_177,finestra,word,furniture_rooms,understands; produces,finestra,window,window
-item_178,frigorifero,word,furniture_rooms,understands; produces,frigorifero,refrigerator,refrigerator
-item_179,lavandino,word,furniture_rooms,understands; produces,lavandino,sink,sink
-item_180,lavatrice,word,furniture_rooms,understands; produces,lavatrice,washingmachine,washing machine
-item_181,letto,word,furniture_rooms,understands; produces,letto,bed,bed
-item_182,porta,word,furniture_rooms,understands; produces,porta,door,door
-item_183,salotto,word,furniture_rooms,understands; produces,salotto,livingroom,living room
-item_184,scala,word,furniture_rooms,understands; produces,scala,stairs,stairs
-item_185,sedia,word,furniture_rooms,understands; produces,sedia,chair,chair
-item_186,seggiolone,word,furniture_rooms,understands; produces,seggiolone,highchair,high chair
-item_187,tappeto,word,furniture_rooms,understands; produces,tappeto,carpet,carpet
-item_188,tavolo,word,furniture_rooms,understands; produces,tavolo,table,table
-item_189,televisione/TV,word,furniture_rooms,understands; produces,televisione/TV,TV,TV
-item_190,terrazza,word,furniture_rooms,understands; produces,terrazza,porch,porch
-item_191,vasca da bagno,word,furniture_rooms,understands; produces,vasca da bagno,bathtub,bathtub
-item_192,biberon,word,household,understands; produces,biberon,baby's bottle,bottle
-item_193,bicchiere,word,household,understands; produces,bicchiere,glass,glass
-item_194,bottiglia,word,household,understands; produces,bottiglia,bottle,bottle
-item_195,chiave,word,household,understands; produces,chiave,keys,keys
-item_196,ciuccio,word,household,understands; produces,ciuccio,pacifier,pacifier
-item_197,coltello,word,household,understands; produces,coltello,knife,knife
-item_198,coperchio,word,household,understands; produces,coperchio,cover,cover (object)
-item_199,coperta,word,household,understands; produces,coperta,blanket,blanket
-item_200,cucchiaio,word,household,understands; produces,cucchiaio,spoon,spoon
-item_201,cuscino,word,household,understands; produces,cuscino,pillow,pillow
-item_202,fazzoletto,word,household,understands; produces,fazzoletto,tissue/kleenex,tissue
-item_203,fon,word,household,understands; produces,fon,phon,phone
-item_204,forbici,word,household,understands; produces,forbici,scissors,scissors
-item_205,forchetta,word,household,understands; produces,forchetta,fork,fork
-item_206,giornale,word,household,understands; produces,giornale,paper,paper
-item_207,luce,word,household,understands; produces,luce,light,light
-item_208,libro,word,household,understands; produces,libro,book,book
-item_209,martello,word,household,understands; produces,martello,hammer,hammer
-item_210,matita/penna,word,household,understands; produces,matita/penna,pencil/pen,pen/pencil
-item_211,musica,word,household,understands; produces,musica,music,music
-item_212,ombrello,word,household,understands; produces,ombrello,umbrella,umbrella
-item_213,orologio,word,household,understands; produces,orologio,clock,clock
-item_214,pentola,word,household,understands; produces,pentola,pot,pot
-item_215,pettine,word,household,understands; produces,pettine,comb,comb (object)
-item_216,pianta,word,household,understands; produces,pianta,plant,plant
-item_217,piatto,word,household,understands; produces,piatto,dish,dish
-item_218,sapone,word,household,understands; produces,sapone,soap,soap
-item_219,scatola,word,household,understands; produces,scatola,box,box
-item_220,scopa,word,household,understands; produces,scopa,broom,broom
-item_221,soldi,word,household,understands; produces,soldi,money,money
-item_222,spazzolino da denti,word,household,understands; produces,spazzolino da denti,toothbrush,toothbrush
-item_223,specchio,word,household,understands; produces,specchio,mirror,mirror
-item_224,tappo,word,household,understands; produces,tappo,cap,cap
-item_225,tazza,word,household,understands; produces,tazza,cup,cup
-item_226,telefono,word,household,understands; produces,telefono,telephone,telephone
-item_227,vasino,word,household,understands; produces,vasino,potty,potty
-item_228,albero,word,outside,understands; produces,albero,tree,tree
-item_229,altalena,word,outside,understands; produces,altalena,swing,swing (object)
-item_230,ascensore,word,outside,understands; produces,ascensore,elevator,elevator
-item_231,asilo,word,outside,understands; produces,asilo,kindergarten,kindergarten
-item_232,campagna,word,outside,understands; produces,campagna,country,country
-item_233,casa,word,outside,understands; produces,casa,house/home,home
-item_234,cielo,word,outside,understands; produces,cielo,sky,sky
-item_235,fiore,word,outside,understands; produces,fiore,flower,flower
-item_236,garage,word,outside,understands; produces,garage,garage,garage
-item_237,giardino,word,outside,understands; produces,giardino,garden,garden
-item_238,luna,word,outside,understands; produces,luna,moon,moon
-item_239,mare,word,outside,understands; produces,mare,sea,sea
-item_240,montagna,word,outside,understands; produces,montagna,rock,mountain
-item_241,negozio,word,outside,understands; produces,negozio,store,store
-item_242,neve,word,outside,understands; produces,neve,snow,snow
-item_243,nuvole,word,outside,understands; produces,nuvole,clouds,cloud
-item_244,parco giochi,word,outside,understands; produces,parco giochi,playground,playground
-item_245,pioggia,word,outside,understands; produces,pioggia,rain,rain
-item_246,prato,word,outside,understands; produces,prato,lawn,lawn
-item_247,sasso,word,outside,understands; produces,sasso,stone,stone
-item_248,scivolo,word,outside,understands; produces,scivolo,slide,slide (object)
-item_249,sole,word,outside,understands; produces,sole,sun,sun
-item_250,stella,word,outside,understands; produces,stella,star,star
-item_251,strada,word,outside,understands; produces,strada,street,street
-item_252,terra,word,outside,understands; produces,terra,earth,earth
-item_253,vento,word,outside,understands; produces,vento,wind,wind
-item_254,zoo,word,outside,understands; produces,zoo,zoo,zoo
-item_255,babysitter/tata,word,people,understands; produces,babysitter/tata,babysitter,babysitter
-item_256,barbiere,word,people,understands; produces,barbiere,barber,barber
-item_257,bimbo/a,word,people,understands; produces,bimbo/a,child,child
-item_258,cugino/a,word,people,understands; produces,cugino/a,cousin,cousin
-item_259,dottore,word,people,understands; produces,dottore,doctor,doctor
-item_260,fratello,word,people,understands; produces,fratello,brother,brother
-item_261,il suo nome,word,people,understands; produces,il suo nome,child's own name,child's own name
-item_262,maestro/a,word,people,understands; produces,maestro/a,teacher,teacher
-item_263,mamma,word,people,understands; produces,mamma,mommy,mommy
-item_264,nonna,word,people,understands; produces,nonna,grandma,grandma
-item_265,nonno,word,people,understands; produces,nonno,grandpa,grandpa
-item_266,papa,word,people,understands; produces,papà,daddy,daddy
-item_267,parrucchiere,word,people,understands; produces,parrucchiere,hairdresser,hairdresser
-item_268,persone,word,people,understands; produces,persone,people,people
-item_269,ragazzo/a,word,people,understands; produces,ragazzo/a,boy/girl,boy
-item_270,signore/a,word,people,understands; produces,signore/a,sir/lady,sir
-item_271,sorella,word,people,understands; produces,sorella,sister,sister
-item_272,vigile,word,people,understands; produces,vigile,traffic officer,policeman
-item_273,zia,word,people,understands; produces,zia,aunt,aunt
-item_274,zio,word,people,understands; produces,zio,uncle,uncle
-item_275,basta,word,games_routines,understands; produces,basta,cut it out,cut it out
-item_276,bravo,word,games_routines,understands; produces,bravo,good boy/girl,good boy/girl
-item_277,bua,word,games_routines,understands; produces,bua,,owie
-item_278,bum (cade),word,games_routines,understands; produces,bum (cade),,boom
-item_279,buonanotte/buongiorno,word,games_routines,understands; produces,buonanotte/buongiorno,nightnight/good morning,good night
-item_280,ciao,word,games_routines,understands; produces,ciao,hi,hi
-item_281,cuccu-settete,word,games_routines,understands; produces,cuccù-settete,peekaboo,peekaboo
-item_282,dare le totto,word,games_routines,understands; produces,dare le tottò,to slap,to slap
-item_283,fare il bagno,word,games_routines,understands; produces,fare il bagno,bath,bath
-item_284,fare la popo/pipi,word,games_routines,understands; produces,fare la popò/pipì,to poop/go potty,go potty
-item_285,grazie/prego,word,games_routines,understands; produces,grazie/prego,thankyou,thank you
-item_286,nanna,word,games_routines,understands; produces,nanna,nap,nap
-item_287,no,word,games_routines,understands; produces,no,no,no
-item_288,non c'epiu/piu,word,games_routines,understands; produces,non c'èpiù/più,no more,no more
-item_289,pronto chi e? (al tel),word,games_routines,understands; produces,pronto chi è? (al tel),hello,hello
-item_290,si,word,games_routines,understands; produces,sì,yes,yes
-item_291,un due tre,word,games_routines,understands; produces,un due tre,one two three,one two three
-item_292,via,word,games_routines,understands; produces,via,go,go-ahead
-item_293,zitto/sch,word,games_routines,understands; produces,zitto/sch,shh/shush/hush,shh
-item_294,abbracciare,word,action_words,understands; produces,abbracciare,hug,hug
-item_295,accendere,word,action_words,understands; produces,accendere,light/switch on,turn on
-item_296,alzarsi,word,action_words,understands; produces,alzarsi,stand,stand
-item_297,andare,word,action_words,understands; produces,andare,go,go
-item_298,aprire,word,action_words,understands; produces,aprire,open,open (action)
-item_299,aspettare,word,action_words,understands; produces,aspettare,wait,wait
-item_300,baciare,word,action_words,understands; produces,baciare,kiss,kiss
-item_301,ballare,word,action_words,understands; produces,ballare,dance,dance
-item_302,bere,word,action_words,understands; produces,bere,drink,drink (action)
-item_303,buttare,word,action_words,understands; produces,buttare,dump,dump
-item_304,cadere,word,action_words,understands; produces,cadere,fall,fall
-item_305,camminare,word,action_words,understands; produces,camminare,walk,walk
-item_306,cantare,word,action_words,understands; produces,cantare,sing,sing
-item_307,cercare,word,action_words,understands; produces,cercare,seek,seek
-item_308,chiudere,word,action_words,understands; produces,chiudere,close,close
-item_309,correre,word,action_words,understands; produces,correre,run,run
-item_310,cullare,word,action_words,understands; produces,cullare,rock,rock (action)
-item_311,dare,word,action_words,understands; produces,dare,give,give
-item_312,dire,word,action_words,understands; produces,dire,say,say
-item_313,dondolare,word,action_words,understands; produces,dondolare,swing,swing (action)
-item_314,dormire,word,action_words,understands; produces,dormire,sleep,sleep
-item_315,fare,word,action_words,understands; produces,fare,make,make
-item_316,fermarsi,word,action_words,understands; produces,fermarsi,stop,stop
-item_317,finire,word,action_words,understands; produces,finire,finish,finish
-item_318,giocare,word,action_words,understands; produces,giocare,play,play
-item_319,girare,word,action_words,understands; produces,girare,turn,turn
-item_320,lavare,word,action_words,understands; produces,lavare,wash,wash
-item_321,leccare,word,action_words,understands; produces,leccare,lick,lick
-item_322,leggere,word,action_words,understands; produces,leggere,read,read
-item_323,levare/togliere,word,action_words,understands; produces,levare/togliere,take off/remove,take off
-item_324,mangiare,word,action_words,understands; produces,mangiare,eat,eat
-item_325,mettere,word,action_words,understands; produces,mettere,put,put
-item_326,mordere,word,action_words,understands; produces,mordere,bite,bite
-item_327,parlare,word,action_words,understands; produces,parlare,talk,talk
-item_328,pettinare,word,action_words,understands; produces,pettinare,comb/brush,comb (action)
-item_329,piangere,word,action_words,understands; produces,piangere,cry,cry
-item_330,prendere,word,action_words,understands; produces,prendere,take,take
-item_331,pulire,word,action_words,understands; produces,pulire,clean,clean (action)
-item_332,ridere,word,action_words,understands; produces,ridere,smile,laugh
-item_333,rompere,word,action_words,understands; produces,rompere,break,break
-item_334,saltare,word,action_words,understands; produces,saltare,jump,jump
-item_335,salutare,word,action_words,understands; produces,salutare,greet,greet
-item_336,scrivere,word,action_words,understands; produces,scrivere,write,write
-item_337,sedersi,word,action_words,understands; produces,sedersi,sit,sit
-item_338,sentire,word,action_words,understands; produces,sentire,hear/listen,hear
-item_339,soffiare,word,action_words,understands; produces,soffiare,blow,blow
-item_340,spegnere,word,action_words,understands; produces,spegnere,put out,put out
-item_341,spingere,word,action_words,understands; produces,spingere,push,push
-item_342,sputare,word,action_words,understands; produces,sputare,spit,spit
-item_343,tirare,word,action_words,understands; produces,tirare,pull,pull
-item_344,toccare,word,action_words,understands; produces,toccare,touch,touch
-item_345,uscire,word,action_words,understands; produces,uscire,go out,go out
-item_346,vedere,word,action_words,understands; produces,vedere,see/watch,see
-item_347,venire,word,action_words,understands; produces,venire,come,come
-item_348,volare,word,action_words,understands; produces,volare,fly,fly (action)
-item_349,alto,word,descriptive_words,understands; produces,alto,high,high
-item_350,arrabbiato,word,descriptive_words,understands; produces,arrabbiato,angry,angry
-item_351,asciutto,word,descriptive_words,understands; produces,asciutto,dry,dry (description)
-item_352,attento,word,descriptive_words,understands; produces,attento,carefull,careful
-item_353,bagnato,word,descriptive_words,understands; produces,bagnato,wet,wet (description)
-item_354,bello,word,descriptive_words,understands; produces,bello,nice,nice
-item_355,brutto,word,descriptive_words,understands; produces,brutto,ugly/bad,ugly
-item_356,buio,word,descriptive_words,understands; produces,buio,dark,dark
-item_357,buono,word,descriptive_words,understands; produces,buono,good,good
-item_358,caldo,word,descriptive_words,understands; produces,caldo,hot,hot
-item_359,carino,word,descriptive_words,understands; produces,carino,cute/pretty,cute
-item_360,cattivo,word,descriptive_words,understands; produces,cattivo,bad,bad
-item_361,contento,word,descriptive_words,understands; produces,contento,happy,happy
-item_362,disubbidiente,word,descriptive_words,understands; produces,disubbidiente,naughty,naughty
-item_363,dolce,word,descriptive_words,understands; produces,dolce,sweet,sweet
-item_364,duro,word,descriptive_words,understands; produces,duro,hard,hard
-item_365,felice,word,descriptive_words,understands; produces,felice,happy,happy
-item_366,finito,word,descriptive_words,understands; produces,finito,finished,finished
-item_367,forte,word,descriptive_words,understands; produces,forte,loud,loud
-item_368,freddo,word,descriptive_words,understands; produces,freddo,cold,cold
-item_369,giallo,word,descriptive_words,understands; produces,giallo,yellow,yellow
-item_370,grande/grosso,word,descriptive_words,understands; produces,grande/grosso,big,big
-item_371,malato,word,descriptive_words,understands; produces,malato,sick,sick
-item_372,morbido,word,descriptive_words,understands; produces,morbido,soft,soft
-item_373,nero,word,descriptive_words,understands; produces,nero,black,black
-item_374,pesante,word,descriptive_words,understands; produces,pesante,heavy,heavy
-item_375,nuovo,word,descriptive_words,understands; produces,nuovo,new,new
-item_376,piano,word,descriptive_words,understands; produces,piano,slow,slow
-item_377,piccolo,word,descriptive_words,understands; produces,piccolo,little,little (description)
-item_378,pieno,word,descriptive_words,understands; produces,pieno,full,full
-item_379,pulito,word,descriptive_words,understands; produces,pulito,clean,clean (description)
-item_380,rosso,word,descriptive_words,understands; produces,rosso,red,red
-item_381,rotto,word,descriptive_words,understands; produces,rotto,broken,broken
-item_382,sporco,word,descriptive_words,understands; produces,sporco,dirty,dirty
-item_383,stanco,word,descriptive_words,understands; produces,stanco,tired,tired
-item_384,triste,word,descriptive_words,understands; produces,triste,sad,sad
-item_385,vuoto,word,descriptive_words,understands; produces,vuoto,empty,empty
-item_386,adesso/ora,word,time_words,understands; produces,adesso/ora,now,now
-item_387,ancora,word,time_words,understands; produces,ancora,more,again
-item_388,di piu,word,time_words,understands; produces,di più,much,much
-item_389,domani,word,time_words,understands; produces,domani,tomorrow,tomorrow
-item_390,dopo/poi,word,time_words,understands; produces,dopo/poi,after,after
-item_391,ieri,word,time_words,understands; produces,ieri,yesterday,yesterday
-item_392,mattina,word,time_words,understands; produces,mattina,morning,morning
-item_393,molto,word,time_words,understands; produces,molto,much,much
-item_394,nessuno,word,time_words,understands; produces,nessuno,none,none
-item_395,niente,word,time_words,understands; produces,niente,any,any
-item_396,notte,word,time_words,understands; produces,notte,night,night
-item_397,oggi,word,time_words,understands; produces,oggi,today,today
-item_398,poco,word,time_words,understands; produces,poco,little/few,little (amount)
-item_399,tanto,word,time_words,understands; produces,tanto,a lot,a lot
-item_400,tardi,word,time_words,understands; produces,tardi,late,late
-item_401,tutto,word,time_words,understands; produces,tutto,all,all
-item_402,un po',word,time_words,understands; produces,un po',any ,any 
-item_403,io,word,pronouns,understands; produces,io,I,i
-item_404,tu,word,pronouns,understands; produces,tu,you,you
-item_405,lui,word,pronouns,understands; produces,lui,he,he
-item_406,lei,word,pronouns,understands; produces,lei,she,she
-item_407,noi,word,pronouns,understands; produces,noi,we/us,we
-item_408,voi,word,pronouns,understands; produces,voi,you,you
-item_409,loro,word,pronouns,understands; produces,loro,they/their/them,they
-item_410,mio/a,word,pronouns,understands; produces,mio/a,mine/my,my
-item_411,tuo/a,word,pronouns,understands; produces,tuo/a,your,your
-item_412,suo/a,word,pronouns,understands; produces,suo/a,his/hers,his
-item_413,me/mi,word,pronouns,understands; produces,me/mi,me/myself,me
-item_414,quello/a,word,pronouns,understands; produces,quello/a,that,that
-item_415,questo/a,word,pronouns,understands; produces,questo/a,this,this
-item_416,che/che cosa?,word,question_words,understands; produces,che/che cosa?,what,what
-item_417,chi?,word,question_words,understands; produces,chi?,who,who
-item_418,come?,word,question_words,understands; produces,come?,how,how
-item_419,dove?,word,question_words,understands; produces,dove?,where,where (question)
-item_420,perche?,word,question_words,understands; produces,perché?,why,why
-item_421,quando?,word,question_words,understands; produces,quando?,when,when (question)
-item_422,di,word,locations,understands; produces,di,of,of
-item_423,a,word,locations,understands; produces,a,at,at
-item_424,da,word,locations,understands; produces,da,by,by
-item_425,in,word,locations,understands; produces,in,in,in
-item_426,con,word,locations,understands; produces,con,with,with
-item_427,su,word,locations,understands; produces,su,up,up
-item_428,giu,word,locations,understands; produces,giù,down,down
-item_429,per,word,locations,understands; produces,per,for,for
-item_430,sopra,word,locations,understands; produces,sopra,above,above
-item_431,sotto,word,locations,understands; produces,sotto,under,under
-item_432,dentro,word,locations,understands; produces,dentro,inside/into,inside
-item_433,lontano,word,locations,understands; produces,lontano,away,away
-item_434,il,word,quantifiers,understands; produces,il,the ,the 
-item_435,lo,word,quantifiers,understands; produces,lo,the ,the 
-item_436,la,word,quantifiers,understands; produces,la,the ,the 
-item_437,i,word,quantifiers,understands; produces,i,the ,the 
-item_438,gli,word,quantifiers,understands; produces,gli,the ,the 
-item_439,le,word,quantifiers,understands; produces,le,the ,the 
-item_440,un/uno/una,word,quantifiers,understands; produces,un/uno/una,a/an,a
-item_441,altro/un altro,word,quantifiers,understands; produces,altro/un altro,another,another
-item_442,,gestures_first,,yes; no,Mostra all'adulto ciò che ha in mano,Shows to adult what has in his/her hand,
-item_443,,gestures_first,,yes; no,Dà all'adulto ciò che ha in mano,Gives to adult what has in his/her hand,
-item_444,,gestures_first,,yes; no,Richiede un oggetto stendendo il braccio,Request object extending his/her hand,
-item_445,,gestures_first,,yes; no,Indica un oggetto o un evento,Points to an object or event,
-item_446,,gestures_first,,yes; no,Fa ciao con la mano,Waves the hand for “bye bye”,
-item_447,,gestures_first,,yes; no,Alza le braccia per farsi prendere su,Extends his/her arm upward to signal a wish to be picked up,
-item_448,,gestures_first,,yes; no,"Fa ""no"" con la testa o con il dito",Shakes head or finger for “no”,
-item_449,,gestures_first,,yes; no,"Fa ""si"" con la testa",Nods head “yes”,
-item_450,,gestures_first,,yes; no,"Fa ""sch"" (""silenzio"") con l'indice sulle labbra","Index to lips for ""sch"" (""be silent"")",
-item_451,,gestures_first,,yes; no,Soffia per far capire che qualcosa scotta,Blow to indicate something is hot,
-item_452,,gestures_first,,yes; no,"Gira il dito sulla guancia per dire ""è buono""",Index to cheek for something tasting good,
-item_453,,gestures_first,,yes; no,Alza le spalle perché qualcosa non c'è più,Shrugs to indicate “all gone” or “where’d it go”,
-item_454,,gestures_games,,yes; no,Gioca a nascondino (cuccù-settete),Play peekaboo,
-item_455,,gestures_games,,yes; no,Batte le manine,Clap hands,
-item_456,,gestures_games,,yes; no,Dà le tottò,Give slap,
-item_457,,gestures_games,,yes; no,Fa le carezze,Caress,
-item_458,,gestures_games,,yes; no,Balla,Dance,
-item_459,,gestures_games,,yes; no,Manda un bacio,Blow kisses,
-item_460,,gestures_objects,,yes; no,Mangia con un cucchiaio o con una forchetta,Eat with a spoon or fork,
-item_461,,gestures_objects,,yes; no,Beve da un recipiente con dei liquidi,Drink from a cup or bottle containing liquid,
-item_462,,gestures_objects,,yes; no,Si pettina o si spazzola i capelli,Comb or brush own hair,
-item_463,,gestures_objects,,yes; no,Si lava i denti,Brush teeth,
-item_464,,gestures_objects,,yes; no,Si pulisce il viso con le mani o una salvietta,Wipe face or hands with a towel or cloth,
-item_465,,gestures_objects,,yes; no,Si mette il cappello,Put on hat,
-item_466,,gestures_objects,,yes; no,Si mette le scarpe e le calze,Put on a shoe or sock,
-item_467,,gestures_objects,,yes; no,Scava con una paletta,Dig with shovel,
-item_468,,gestures_objects,,yes; no,Posa la testa sulla mano o su un cuscino,“Sleep” (leaning head on hand or pillow and closing eyes),
-item_469,,gestures_objects,,yes; no,Chiude e apre le porte o gli sportelli,Open and close door and closet,
-item_470,,gestures_objects,,yes; no,Prende un aeroplanino e lo fa volare,Hold plane and make it “fly”,
-item_471,,gestures_objects,,yes; no,Porta il telefono all'orecchio,bring the telephone to the ear,
-item_472,,gestures_objects,,yes; no,Annusa i fiori,Sniff flowers,
-item_473,,gestures_objects,,yes; no,Spinge le automobiline,Push toy car or truck,
-item_474,,gestures_objects,,yes; no,Lancia la palla,Throw a ball,
-item_475,,gestures_objects,,yes; no,Versa liquidi da un contenitore all'altro,Pour pretend liquid from one container to another,
-item_476,,gestures_objects,,yes; no,Mescola con un cucchiaio,Stir with spoon,
-item_477,,gestures_parent,,yes; no,Mette a letto (bambole e pupazzi),Put to bed (dolls or stuffed animals),
-item_478,,gestures_parent,,yes; no,Copre con le coperte (bambole e pupazzi),Cover with blanket (dolls or stuffed animals),
-item_479,,gestures_parent,,yes; no,Imbocca con un cucchiaio (bambole e pupazzi),Feed with spoon (dolls or stuffed animals),
-item_480,,gestures_parent,,yes; no,Dà da bere (a bambole e pupazzi),Feed with bottle (dolls or stuffed animals),
-item_481,,gestures_parent,,yes; no,Pettina (bambole e pupazzi),Brush/comb hair (dolls or stuffed animals),
-item_482,,gestures_parent,,yes; no,Accarezza (bambole e pupazzi),Caress (dolls or stuffed animals),
-item_483,,gestures_parent,,yes; no,Spinge sulla carrozzina (bambole e pupazzi),Push in stroller/buggy (dolls or stuffed animals),
-item_484,,gestures_parent,,yes; no,Culla (bambole e pupazzi),Rock (dolls or stuffed animals),
-item_485,,gestures_parent,,yes; no,Bacia o abbraccia (bambole e pupazzi),Kiss or hug (dolls or stuffed animals),
-item_486,,gestures_parent,,yes; no,Prova a infilare calze e scarpe (a bambole e pupazzi),Try to put shoe or sock (on dolls or stuffed animals),
-item_487,,gestures_parent,,yes; no,Pulisce faccia o mani (a bambole e pupazzi),Wipe face or hands (dolls or stuffed animals),
-item_488,,gestures_parent,,yes; no,Parla (con bambole e pupazzi),Talk to (dolls or stuffed animals),
-item_489,,gestures_parent,,yes; no,Picchia (bambole e pupazzi),Pat or burp (dolls or stuffed animals),
-item_490,,gestures_adult,,yes; no,Spazza con una scopa,Sweep with broom or mop,
-item_491,,gestures_adult,,yes; no,Infila la chiave nella serratura e la gira,Put key in door or lock,
-item_492,,gestures_adult,,yes; no,Batte con un martello,Pound with hammer or mallet,
-item_493,,gestures_adult,,yes; no,Usa il telecomando,Use remote control,
-item_494,,gestures_adult,,yes; no,Scrive a macchina o su computer,“Type” at a typewriter or computer keyboard,
-item_495,,gestures_adult,,yes; no,Legge (apre libri sfoglia le pagine),“Read” (opens book turns page),
-item_496,,gestures_adult,,yes; no,Passa l'aspirapolvere,Vacuum,
-item_497,,gestures_adult,,yes; no,Innaffia le piante,Water plants,
-item_498,,gestures_adult,,yes; no,Suona degli strumenti musicali,Play musical instrument,
-item_499,,gestures_adult,,yes; no,Guida la macchina girando il volante,Drive car by turning steering wheel,
-item_500,,gestures_adult,,yes; no,Lava i piatti,Wash dishes,
-item_501,,gestures_adult,,yes; no,Pulisce con un panno o con un piumino,Clean with cloth or duster,
-item_502,,gestures_adult,,yes; no,Scrive con una penna con una matita,Write with a pen pencil or marker,
-item_503,,gestures_adult,,yes; no,Si mette collane braccialetti orologi,Put on a necklace bracelet or watch,
-item_504,,gestures_adult,,yes; no,Si mette gli occhiali,Put on glasses,
-item_505,,gestures_play,,yes; no,Giocare a far finta con degli oggetti,Pretending play with objects,
+"itemID","item","type","category","choices","definition","gloss","uni_lemma"
+"item_1",,"first_signs",,"yes; no","Risponde quando è chiamato per nome","Respond to his/her name",
+"item_2",,"first_signs",,"yes; no","Risponde ad un No","Respond to No",
+"item_3",,"first_signs",,"yes; no","Reagisce ad un C'è la mamma/il papà","Look for mummty/daddy if you say where is mummy/daddy",
+"item_4",,"phrases",,"understands","Vuoi la pappa","Are you hungry?",
+"item_5",,"phrases",,"understands","Hai sonno? Sei stanco","Are you sleepy/tired?",
+"item_6",,"phrases",,"understands","Vuoi bere?","Do you want to drink?",
+"item_7",,"phrases",,"understands","Stai attento","Be careful",
+"item_8",,"phrases",,"understands","Stai buono",,
+"item_9",,"phrases",,"understands","Batti le manine","Clap your ands",
+"item_10",,"phrases",,"understands","Cambiamo il pannolino","Change diaper",
+"item_11",,"phrases",,"understands","Vieni qui","Come here",
+"item_12",,"phrases",,"understands","Che schifo",,
+"item_13",,"phrases",,"understands","Ne vuoi ancora?","Do you want more?",
+"item_14",,"phrases",,"understands","Non fare questo","Don't do this",
+"item_15",,"phrases",,"understands","Non toccare","Don't touch",
+"item_16",,"phrases",,"understands","Alzati","Get up",
+"item_17",,"phrases",,"understands","Dai quello alla mamma","Give to mummy",
+"item_18",,"phrases",,"understands","Dammi un bacino","Give me a kiss",
+"item_19",,"phrases",,"understands","Andiamo a…","Let's go to…",
+"item_20",,"phrases",,"understands","Bravo bambino","Good boy/girl",
+"item_21",,"phrases",,"understands","Stai fermo","Stop",
+"item_22",,"phrases",,"understands","Dì Ciao","Say bye bye",
+"item_23",,"phrases",,"understands","Guarda/Guarda qui","Look/look here",
+"item_24",,"phrases",,"understands","Apri la bocca","Open your mouth",
+"item_25",,"phrases",,"understands","Stai seduto","Sit down",
+"item_26",,"phrases",,"understands","Sputa","Psit it out",
+"item_27",,"phrases",,"understands","Basta","Cut it now",
+"item_28",,"phrases",,"understands","E' ora di fare la nanna","I'ts time to go to bed",
+"item_29",,"phrases",,"understands","Butta la palla","Throw the ball",
+"item_30",,"phrases",,"understands","Sei tutto sporco","You are dirty",
+"item_31",,"phrases",,"understands","Usciamo?","Let's go out",
+"item_32",,"first_words",,"not yet; sometimes; often","Quanto spesso imita le parole?","How frequently repeats the words",
+"item_33",,"first_words",,"not yet; sometimes; often","Quanto spesso nomina?","How frequently names objects/events…?",
+"item_34","bau bau","word","sounds","understands; produces","bau bau","woof woof","woof woof"
+"item_35","beh beh","word","sounds","understands; produces","beh beh","baa baa","baa baa"
+"item_36","brum brum","word","sounds","understands; produces","brum brum","vroom","vroom"
+"item_37","cip cip","word","sounds","understands; produces","cip cip","tweet tweet","tweet tweet"
+"item_38","clop clop","word","sounds","understands; produces","clop clop",,"clop clop"
+"item_39","coccode","word","sounds","understands; produces","coccodè","cockadoodledoo","cockadoodledoo"
+"item_40","ih oh","word","sounds","understands; produces","oh oh","uh oh","uh oh"
+"item_41","grr","word","sounds","understands; produces","grr","grr","grrr"
+"item_42","miao","word","sounds","understands; produces","miao","meow","meow"
+"item_43","muh","word","sounds","understands; produces","muh","moo","moo"
+"item_44","qua qua","word","sounds","understands; produces","qua qua","quack quack","quack quack"
+"item_45","tuttu","word","sounds","understands; produces","tuttù","choo choo","choo choo"
+"item_46","agnello","word","animals","understands; produces","agnello","lamb","lamb"
+"item_47","animale","word","animals","understands; produces","animale","animal","animal"
+"item_48","asino","word","animals","understands; produces","asino","donkey","donkey"
+"item_49","cane","word","animals","understands; produces","cane","dog","dog"
+"item_50","capra","word","animals","understands; produces","capra","goat","goat"
+"item_51","cavallo","word","animals","understands; produces","cavallo","horse","horse"
+"item_52","cerbiatto","word","animals","understands; produces","cerbiatto","fawn","fawn"
+"item_53","coccodrillo","word","animals","understands; produces","coccodrillo","crocodile","crocodile"
+"item_54","coniglio","word","animals","understands; produces","coniglio","bunny","bunny"
+"item_55","elefante","word","animals","understands; produces","elefante","elephant","elephant"
+"item_56","farfalla","word","animals","understands; produces","farfalla","butterfly","butterfly"
+"item_57","formica","word","animals","understands; produces","formica","ant","ant"
+"item_58","gallina","word","animals","understands; produces","gallina","hen","hen"
+"item_59","gallo","word","animals","understands; produces","gallo","rooster","rooster"
+"item_60","gatto","word","animals","understands; produces","gatto","cat","cat"
+"item_61","giraffa","word","animals","understands; produces","giraffa","giraffe","giraffe"
+"item_62","ippopotamo","word","animals","understands; produces","ippopotamo","hippopotamus","hippopotamus"
+"item_63","leone","word","animals","understands; produces","leone","lion","lion"
+"item_64","lupo","word","animals","understands; produces","lupo","wolf","wolf"
+"item_65","maiale","word","animals","understands; produces","maiale","pig","pig"
+"item_66","mosca","word","animals","understands; produces","mosca","fly","fly (animal)"
+"item_67","mucca","word","animals","understands; produces","mucca","cow","cow"
+"item_68","oca","word","animals","understands; produces","oca","goose","goose"
+"item_69","orso","word","animals","understands; produces","orso","bear","bear"
+"item_70","papera","word","animals","understands; produces","papera","duck","duck"
+"item_71","pecora","word","animals","understands; produces","pecora","sheep","sheep"
+"item_72","pesciolino","word","animals","understands; produces","pesciolino","fish","fish (animal)"
+"item_73","pinguino","word","animals","understands; produces","pinguino","penguin","penguin"
+"item_74","pulcino","word","animals","understands; produces","pulcino","chick","chick"
+"item_75","rana","word","animals","understands; produces","rana","frog","frog"
+"item_76","scimmia","word","animals","understands; produces","scimmia","monkey","monkey"
+"item_77","tartaruga","word","animals","understands; produces","tartaruga","turtle","turtle"
+"item_78","tigre","word","animals","understands; produces","tigre","tiger","tiger"
+"item_79","topo","word","animals","understands; produces","topo","mouse","mouse"
+"item_80","uccellino","word","animals","understands; produces","uccellino","bird","bird"
+"item_81","zanzara","word","animals","understands; produces","zanzara","mosquito","mosquito"
+"item_82","aereo","word","vehicles","understands; produces","aereo","airplane","airplane"
+"item_83","autobus","word","vehicles","understands; produces","autobus","bus","bus"
+"item_84","automobile","word","vehicles","understands; produces","automobile","car","car"
+"item_85","barca","word","vehicles","understands; produces","barca","boat","boat"
+"item_86","bicicletta","word","vehicles","understands; produces","bicicletta","bicycle","bicycle"
+"item_87","camion","word","vehicles","understands; produces","camion","truck","truck"
+"item_88","motocicletta","word","vehicles","understands; produces","motocicletta","motorcycle","motorcycle"
+"item_89","passeggino","word","vehicles","understands; produces","passeggino","stroller","stroller"
+"item_90","treno","word","vehicles","understands; produces","treno","train","train"
+"item_91","bambola","word","toys","understands; produces","bambola","doll","doll"
+"item_92","cubi","word","toys","understands; produces","cubi","block","block"
+"item_93","favola/storia","word","toys","understands; produces","favola/storia","book/story","book"
+"item_94","giocattolo","word","toys","understands; produces","giocattolo","toy","toy (object)"
+"item_95","palla","word","toys","understands; produces","palla","ball","ball"
+"item_96","paletta","word","toys","understands; produces","paletta","spade","spade"
+"item_97","secchiello","word","toys","understands; produces","secchiello","bucket","bucket"
+"item_98","trottola","word","toys","understands; produces","trottola","spinning top","top"
+"item_99","acqua","word","food_drink","understands; produces","acqua","water","water (beverage)"
+"item_100","arancia","word","food_drink","understands; produces","arancia","orange","orange (food)"
+"item_101","banana","word","food_drink","understands; produces","banana","banana","banana"
+"item_102","biscotti","word","food_drink","understands; produces","biscotti","cookie","cookie"
+"item_103","caramella","word","food_drink","understands; produces","caramella","candy","candy"
+"item_104","carne","word","food_drink","understands; produces","carne","meat","meat"
+"item_105","carote","word","food_drink","understands; produces","carote","carrots","carrots"
+"item_106","cioccolata","word","food_drink","understands; produces","cioccolata","chocolate","chocolate"
+"item_107","cracker","word","food_drink","understands; produces","cracker","cracker","cracker"
+"item_108","formaggio","word","food_drink","understands; produces","formaggio","cheese","cheese"
+"item_109","gelato","word","food_drink","understands; produces","gelato","icecream","ice cream"
+"item_110","latte","word","food_drink","understands; produces","latte","milk","milk"
+"item_111","mela","word","food_drink","understands; produces","mela","apple","apple"
+"item_112","miele","word","food_drink","understands; produces","miele","honey","honey"
+"item_113","pane","word","food_drink","understands; produces","pane","bread","bread"
+"item_114","pappa","word","food_drink","understands; produces","pappa","pap","baby food"
+"item_115","pasta","word","food_drink","understands; produces","pasta","pasta","pasta"
+"item_116","patate","word","food_drink","understands; produces","patate","potato","potato"
+"item_117","pera","word","food_drink","understands; produces","pera","pear","pear"
+"item_118","pesca","word","food_drink","understands; produces","pesca","peach","peach"
+"item_119","piselli","word","food_drink","understands; produces","piselli","peas","peas"
+"item_120","pollo","word","food_drink","understands; produces","pollo","chicken","chicken (food)"
+"item_121","polpette","word","food_drink","understands; produces","polpette","meat balls","meatball"
+"item_122","riso","word","food_drink","understands; produces","riso","rice","rice"
+"item_123","sugo","word","food_drink","understands; produces","sugo","sauce","sauce"
+"item_124","torta","word","food_drink","understands; produces","torta","cake","cake"
+"item_125","uovo","word","food_drink","understands; produces","uovo","egg","egg"
+"item_126","uva","word","food_drink","understands; produces","uva","grapes","grapes"
+"item_127","yogurt","word","food_drink","understands; produces","yogurt","yogurt","yogurt"
+"item_128","zucchero","word","food_drink","understands; produces","zucchero","sugar","sugar"
+"item_129","bavaglino","word","food_drink","understands; produces","bavaglino","bib","bib"
+"item_130","bottone","word","clothing","understands; produces","bottone","button","button"
+"item_131","calze","word","clothing","understands; produces","calze","tights","sock"
+"item_132","cappello","word","clothing","understands; produces","cappello","hat","hat"
+"item_133","cappotto","word","clothing","understands; produces","cappotto","coat","coat"
+"item_134","collana","word","clothing","understands; produces","collana","necklace","necklace"
+"item_135","giacca","word","clothing","understands; produces","giacca","jacket","jacket"
+"item_136","gonna","word","clothing","understands; produces","gonna","skirt","skirt"
+"item_137","guanti","word","clothing","understands; produces","guanti","gloves","gloves"
+"item_138","maglione","word","clothing","understands; produces","maglione","sweater","sweater"
+"item_139","mutande","word","clothing","understands; produces","mutande","underpants","underpants"
+"item_140","occhiali","word","clothing","understands; produces","occhiali","glasses","glasses"
+"item_141","pannolino","word","clothing","understands; produces","pannolino","diaper","diaper"
+"item_142","pantaloni","word","clothing","understands; produces","pantaloni","pants","pants"
+"item_143","pigiama","word","clothing","understands; produces","pigiama","pajamas","pajamas"
+"item_144","scarpe","word","clothing","understands; produces","scarpe","shoe","shoe"
+"item_145","sciarpa","word","clothing","understands; produces","sciarpa","scarf","scarf"
+"item_146","tuta","word","clothing","understands; produces","tuta","tracksuit","tracksuit"
+"item_147","vestito","word","clothing","understands; produces","vestito","dress","dress (object)"
+"item_148","bocca","word","body_parts","understands; produces","bocca","mouth","mouth"
+"item_149","braccio","word","body_parts","understands; produces","braccio","arm","arm"
+"item_150","capelli","word","body_parts","understands; produces","capelli","hair","hair"
+"item_151","denti","word","body_parts","understands; produces","denti","tooth","tooth"
+"item_152","dito","word","body_parts","understands; produces","dito","finger","finger"
+"item_153","faccia","word","body_parts","understands; produces","faccia","face","face"
+"item_154","gambe","word","body_parts","understands; produces","gambe","leg","leg"
+"item_155","lingua","word","body_parts","understands; produces","lingua","tongue","tongue"
+"item_156","mano","word","body_parts","understands; produces","mano","hand","hand"
+"item_157","naso","word","body_parts","understands; produces","naso","nose","nose"
+"item_158","occhio","word","body_parts","understands; produces","occhio","eye","eye"
+"item_159","ombelico","word","body_parts","understands; produces","ombelico","bellybutton","belly button"
+"item_160","orecchio","word","body_parts","understands; produces","orecchio","ear","ear"
+"item_161","organo genitale femminile","word","body_parts","understands; produces","organo genitale femminile","vagina","vagina"
+"item_162","organo genitale maschile","word","body_parts","understands; produces","organo genitale maschile","penis","penis"
+"item_163","pancia","word","body_parts","understands; produces","pancia","tummy","tummy"
+"item_164","piede","word","body_parts","understands; produces","piede","feet","feet"
+"item_165","sederino","word","body_parts","understands; produces","sederino","buttocks","butt"
+"item_166","seno","word","body_parts","understands; produces","seno","breast","breast"
+"item_167","testa","word","body_parts","understands; produces","testa","head","head"
+"item_168","armadio","word","furniture_rooms","understands; produces","armadio","closet","closet"
+"item_169","bagno","word","furniture_rooms","understands; produces","bagno","bathroom","bathroom"
+"item_170","bide","word","furniture_rooms","understands; produces","bidè","bidet","bidet"
+"item_171","camera","word","furniture_rooms","understands; produces","camera","room","room"
+"item_172","cassetto","word","furniture_rooms","understands; produces","cassetto","drawer","drawer"
+"item_173","cucina","word","furniture_rooms","understands; produces","cucina","kitchen","kitchen"
+"item_174","culla","word","furniture_rooms","understands; produces","culla","crib","crib"
+"item_175","divano","word","furniture_rooms","understands; produces","divano","couch","couch"
+"item_176","doccia","word","furniture_rooms","understands; produces","doccia","shower","shower"
+"item_177","finestra","word","furniture_rooms","understands; produces","finestra","window","window"
+"item_178","frigorifero","word","furniture_rooms","understands; produces","frigorifero","refrigerator","refrigerator"
+"item_179","lavandino","word","furniture_rooms","understands; produces","lavandino","sink","sink"
+"item_180","lavatrice","word","furniture_rooms","understands; produces","lavatrice","washingmachine","washing machine"
+"item_181","letto","word","furniture_rooms","understands; produces","letto","bed","bed"
+"item_182","porta","word","furniture_rooms","understands; produces","porta","door","door"
+"item_183","salotto","word","furniture_rooms","understands; produces","salotto","livingroom","living room"
+"item_184","scala","word","furniture_rooms","understands; produces","scala","stairs","stairs"
+"item_185","sedia","word","furniture_rooms","understands; produces","sedia","chair","chair"
+"item_186","seggiolone","word","furniture_rooms","understands; produces","seggiolone","highchair","high chair"
+"item_187","tappeto","word","furniture_rooms","understands; produces","tappeto","carpet","carpet"
+"item_188","tavolo","word","furniture_rooms","understands; produces","tavolo","table","table"
+"item_189","televisione/TV","word","furniture_rooms","understands; produces","televisione/TV","TV","TV"
+"item_190","terrazza","word","furniture_rooms","understands; produces","terrazza","porch","porch"
+"item_191","vasca da bagno","word","furniture_rooms","understands; produces","vasca da bagno","bathtub","bathtub"
+"item_192","biberon","word","household","understands; produces","biberon","baby's bottle","bottle"
+"item_193","bicchiere","word","household","understands; produces","bicchiere","glass","glass"
+"item_194","bottiglia","word","household","understands; produces","bottiglia","bottle","bottle"
+"item_195","chiave","word","household","understands; produces","chiave","keys","keys"
+"item_196","ciuccio","word","household","understands; produces","ciuccio","pacifier","pacifier"
+"item_197","coltello","word","household","understands; produces","coltello","knife","knife"
+"item_198","coperchio","word","household","understands; produces","coperchio","cover","cover (object)"
+"item_199","coperta","word","household","understands; produces","coperta","blanket","blanket"
+"item_200","cucchiaio","word","household","understands; produces","cucchiaio","spoon","spoon"
+"item_201","cuscino","word","household","understands; produces","cuscino","pillow","pillow"
+"item_202","fazzoletto","word","household","understands; produces","fazzoletto","tissue/kleenex","tissue"
+"item_203","fon","word","household","understands; produces","fon","phon","phone"
+"item_204","forbici","word","household","understands; produces","forbici","scissors","scissors"
+"item_205","forchetta","word","household","understands; produces","forchetta","fork","fork"
+"item_206","giornale","word","household","understands; produces","giornale","paper","paper"
+"item_207","luce","word","household","understands; produces","luce","light","light"
+"item_208","libro","word","household","understands; produces","libro","book","book"
+"item_209","martello","word","household","understands; produces","martello","hammer","hammer"
+"item_210","matita/penna","word","household","understands; produces","matita/penna","pencil/pen","pen/pencil"
+"item_211","musica","word","household","understands; produces","musica","music","music"
+"item_212","ombrello","word","household","understands; produces","ombrello","umbrella","umbrella"
+"item_213","orologio","word","household","understands; produces","orologio","clock","clock"
+"item_214","pentola","word","household","understands; produces","pentola","pot","pot"
+"item_215","pettine","word","household","understands; produces","pettine","comb","comb (object)"
+"item_216","pianta","word","household","understands; produces","pianta","plant","plant"
+"item_217","piatto","word","household","understands; produces","piatto","dish","dish"
+"item_218","sapone","word","household","understands; produces","sapone","soap","soap"
+"item_219","scatola","word","household","understands; produces","scatola","box","box"
+"item_220","scopa","word","household","understands; produces","scopa","broom","broom"
+"item_221","soldi","word","household","understands; produces","soldi","money","money"
+"item_222","spazzolino da denti","word","household","understands; produces","spazzolino da denti","toothbrush","toothbrush"
+"item_223","specchio","word","household","understands; produces","specchio","mirror","mirror"
+"item_224","tappo","word","household","understands; produces","tappo","cap","cap"
+"item_225","tazza","word","household","understands; produces","tazza","cup","cup"
+"item_226","telefono","word","household","understands; produces","telefono","telephone","telephone"
+"item_227","vasino","word","household","understands; produces","vasino","potty","potty"
+"item_228","albero","word","outside","understands; produces","albero","tree","tree"
+"item_229","altalena","word","outside","understands; produces","altalena","swing","swing (object)"
+"item_230","ascensore","word","outside","understands; produces","ascensore","elevator","elevator"
+"item_231","asilo","word","outside","understands; produces","asilo","kindergarten","kindergarten"
+"item_232","campagna","word","outside","understands; produces","campagna","country","country"
+"item_233","casa","word","outside","understands; produces","casa","house/home","home"
+"item_234","cielo","word","outside","understands; produces","cielo","sky","sky"
+"item_235","fiore","word","outside","understands; produces","fiore","flower","flower"
+"item_236","garage","word","outside","understands; produces","garage","garage","garage"
+"item_237","giardino","word","outside","understands; produces","giardino","garden","garden"
+"item_238","luna","word","outside","understands; produces","luna","moon","moon"
+"item_239","mare","word","outside","understands; produces","mare","sea","sea"
+"item_240","montagna","word","outside","understands; produces","montagna","rock","mountain"
+"item_241","negozio","word","outside","understands; produces","negozio","store","store"
+"item_242","neve","word","outside","understands; produces","neve","snow","snow"
+"item_243","nuvole","word","outside","understands; produces","nuvole","clouds","cloud"
+"item_244","parco giochi","word","outside","understands; produces","parco giochi","playground","playground"
+"item_245","pioggia","word","outside","understands; produces","pioggia","rain","rain"
+"item_246","prato","word","outside","understands; produces","prato","lawn","lawn"
+"item_247","sasso","word","outside","understands; produces","sasso","stone","stone"
+"item_248","scivolo","word","outside","understands; produces","scivolo","slide","slide (object)"
+"item_249","sole","word","outside","understands; produces","sole","sun","sun"
+"item_250","stella","word","outside","understands; produces","stella","star","star"
+"item_251","strada","word","outside","understands; produces","strada","street","street"
+"item_252","terra","word","outside","understands; produces","terra","earth","earth"
+"item_253","vento","word","outside","understands; produces","vento","wind","wind"
+"item_254","zoo","word","outside","understands; produces","zoo","zoo","zoo"
+"item_255","babysitter/tata","word","people","understands; produces","babysitter/tata","babysitter","babysitter"
+"item_256","barbiere","word","people","understands; produces","barbiere","barber","barber"
+"item_257","bimbo/a","word","people","understands; produces","bimbo/a","child","child"
+"item_258","cugino/a","word","people","understands; produces","cugino/a","cousin","cousin"
+"item_259","dottore","word","people","understands; produces","dottore","doctor","doctor"
+"item_260","fratello","word","people","understands; produces","fratello","brother","brother"
+"item_261","il suo nome","word","people","understands; produces","il suo nome","child's own name","child's own name"
+"item_262","maestro/a","word","people","understands; produces","maestro/a","teacher","teacher"
+"item_263","mamma","word","people","understands; produces","mamma","mommy","mommy"
+"item_264","nonna","word","people","understands; produces","nonna","grandma","grandma"
+"item_265","nonno","word","people","understands; produces","nonno","grandpa","grandpa"
+"item_266","papa","word","people","understands; produces","papà","daddy","daddy"
+"item_267","parrucchiere","word","people","understands; produces","parrucchiere","hairdresser","hairdresser"
+"item_268","persone","word","people","understands; produces","persone","people","people"
+"item_269","ragazzo/a","word","people","understands; produces","ragazzo/a","boy/girl","boy"
+"item_270","signore/a","word","people","understands; produces","signore/a","sir/lady","sir"
+"item_271","sorella","word","people","understands; produces","sorella","sister","sister"
+"item_272","vigile","word","people","understands; produces","vigile","traffic officer","policeman"
+"item_273","zia","word","people","understands; produces","zia","aunt","aunt"
+"item_274","zio","word","people","understands; produces","zio","uncle","uncle"
+"item_275","basta","word","games_routines","understands; produces","basta","cut it out","cut it out"
+"item_276","bravo","word","games_routines","understands; produces","bravo","good boy/girl","good boy/girl"
+"item_277","bua","word","games_routines","understands; produces","bua",,"owie"
+"item_278","bum (cade)","word","games_routines","understands; produces","bum (cade)",,"boom"
+"item_279","buonanotte/buongiorno","word","games_routines","understands; produces","buonanotte/buongiorno","nightnight/good morning","good night"
+"item_280","ciao","word","games_routines","understands; produces","ciao","hi","hi"
+"item_281","cuccu-settete","word","games_routines","understands; produces","cuccù-settete","peekaboo","peekaboo"
+"item_282","dare le totto","word","games_routines","understands; produces","dare le tottò","to slap","to slap"
+"item_283","fare il bagno","word","games_routines","understands; produces","fare il bagno","bath","bath"
+"item_284","fare la popo/pipi","word","games_routines","understands; produces","fare la popò/pipì","to poop/go potty","go potty"
+"item_285","grazie/prego","word","games_routines","understands; produces","grazie/prego","thankyou","thank you"
+"item_286","nanna","word","games_routines","understands; produces","nanna","nap","nap"
+"item_287","no","word","games_routines","understands; produces","no","no","no"
+"item_288","non c'epiu/piu","word","games_routines","understands; produces","non c'èpiù/più","no more","no more"
+"item_289","pronto chi e? (al tel)","word","games_routines","understands; produces","pronto chi è? (al tel)","hello","hello"
+"item_290","si","word","games_routines","understands; produces","sì","yes","yes"
+"item_291","un due tre","word","games_routines","understands; produces","un due tre","one two three","one two three"
+"item_292","via","word","games_routines","understands; produces","via","go","go-ahead"
+"item_293","zitto/sch","word","games_routines","understands; produces","zitto/sch","shh/shush/hush","shh"
+"item_294","abbracciare","word","action_words","understands; produces","abbracciare","hug","hug"
+"item_295","accendere","word","action_words","understands; produces","accendere","light/switch on","turn on"
+"item_296","alzarsi","word","action_words","understands; produces","alzarsi","stand","stand"
+"item_297","andare","word","action_words","understands; produces","andare","go","go"
+"item_298","aprire","word","action_words","understands; produces","aprire","open","open (action)"
+"item_299","aspettare","word","action_words","understands; produces","aspettare","wait","wait"
+"item_300","baciare","word","action_words","understands; produces","baciare","kiss","kiss"
+"item_301","ballare","word","action_words","understands; produces","ballare","dance","dance"
+"item_302","bere","word","action_words","understands; produces","bere","drink","drink (action)"
+"item_303","buttare","word","action_words","understands; produces","buttare","dump","dump"
+"item_304","cadere","word","action_words","understands; produces","cadere","fall","fall"
+"item_305","camminare","word","action_words","understands; produces","camminare","walk","walk"
+"item_306","cantare","word","action_words","understands; produces","cantare","sing","sing"
+"item_307","cercare","word","action_words","understands; produces","cercare","seek","seek"
+"item_308","chiudere","word","action_words","understands; produces","chiudere","close","close"
+"item_309","correre","word","action_words","understands; produces","correre","run","run"
+"item_310","cullare","word","action_words","understands; produces","cullare","rock","rock (action)"
+"item_311","dare","word","action_words","understands; produces","dare","give","give"
+"item_312","dire","word","action_words","understands; produces","dire","say","say"
+"item_313","dondolare","word","action_words","understands; produces","dondolare","swing","swing (action)"
+"item_314","dormire","word","action_words","understands; produces","dormire","sleep","sleep"
+"item_315","fare","word","action_words","understands; produces","fare","make","make"
+"item_316","fermarsi","word","action_words","understands; produces","fermarsi","stop","stop"
+"item_317","finire","word","action_words","understands; produces","finire","finish","finish"
+"item_318","giocare","word","action_words","understands; produces","giocare","play","play"
+"item_319","girare","word","action_words","understands; produces","girare","turn","turn"
+"item_320","lavare","word","action_words","understands; produces","lavare","wash","wash"
+"item_321","leccare","word","action_words","understands; produces","leccare","lick","lick"
+"item_322","leggere","word","action_words","understands; produces","leggere","read","read"
+"item_323","levare/togliere","word","action_words","understands; produces","levare/togliere","take off/remove","take off"
+"item_324","mangiare","word","action_words","understands; produces","mangiare","eat","eat"
+"item_325","mettere","word","action_words","understands; produces","mettere","put","put"
+"item_326","mordere","word","action_words","understands; produces","mordere","bite","bite"
+"item_327","parlare","word","action_words","understands; produces","parlare","talk","talk"
+"item_328","pettinare","word","action_words","understands; produces","pettinare","comb/brush","comb (action)"
+"item_329","piangere","word","action_words","understands; produces","piangere","cry","cry"
+"item_330","prendere","word","action_words","understands; produces","prendere","take","take"
+"item_331","pulire","word","action_words","understands; produces","pulire","clean","clean (action)"
+"item_332","ridere","word","action_words","understands; produces","ridere","smile","laugh"
+"item_333","rompere","word","action_words","understands; produces","rompere","break","break"
+"item_334","saltare","word","action_words","understands; produces","saltare","jump","jump"
+"item_335","salutare","word","action_words","understands; produces","salutare","greet","greet"
+"item_336","scrivere","word","action_words","understands; produces","scrivere","write","write"
+"item_337","sedersi","word","action_words","understands; produces","sedersi","sit","sit"
+"item_338","sentire","word","action_words","understands; produces","sentire","hear/listen","hear"
+"item_339","soffiare","word","action_words","understands; produces","soffiare","blow","blow"
+"item_340","spegnere","word","action_words","understands; produces","spegnere","put out","put out"
+"item_341","spingere","word","action_words","understands; produces","spingere","push","push"
+"item_342","sputare","word","action_words","understands; produces","sputare","spit","spit"
+"item_343","tirare","word","action_words","understands; produces","tirare","pull","pull"
+"item_344","toccare","word","action_words","understands; produces","toccare","touch","touch"
+"item_345","uscire","word","action_words","understands; produces","uscire","go out","go out"
+"item_346","vedere","word","action_words","understands; produces","vedere","see/watch","see"
+"item_347","venire","word","action_words","understands; produces","venire","come","come"
+"item_348","volare","word","action_words","understands; produces","volare","fly","fly (action)"
+"item_349","alto","word","descriptive_words","understands; produces","alto","high","high"
+"item_350","arrabbiato","word","descriptive_words","understands; produces","arrabbiato","angry","angry"
+"item_351","asciutto","word","descriptive_words","understands; produces","asciutto","dry","dry (description)"
+"item_352","attento","word","descriptive_words","understands; produces","attento","carefull","careful"
+"item_353","bagnato","word","descriptive_words","understands; produces","bagnato","wet","wet (description)"
+"item_354","bello","word","descriptive_words","understands; produces","bello","nice","nice"
+"item_355","brutto","word","descriptive_words","understands; produces","brutto","ugly/bad","ugly"
+"item_356","buio","word","descriptive_words","understands; produces","buio","dark","dark"
+"item_357","buono","word","descriptive_words","understands; produces","buono","good","good"
+"item_358","caldo","word","descriptive_words","understands; produces","caldo","hot","hot"
+"item_359","carino","word","descriptive_words","understands; produces","carino","cute/pretty","cute"
+"item_360","cattivo","word","descriptive_words","understands; produces","cattivo","bad","bad"
+"item_361","contento","word","descriptive_words","understands; produces","contento","happy","happy"
+"item_362","disubbidiente","word","descriptive_words","understands; produces","disubbidiente","naughty","naughty"
+"item_363","dolce","word","descriptive_words","understands; produces","dolce","sweet","sweet"
+"item_364","duro","word","descriptive_words","understands; produces","duro","hard","hard"
+"item_365","felice","word","descriptive_words","understands; produces","felice","happy","happy"
+"item_366","finito","word","descriptive_words","understands; produces","finito","finished","finished"
+"item_367","forte","word","descriptive_words","understands; produces","forte","loud","loud"
+"item_368","freddo","word","descriptive_words","understands; produces","freddo","cold","cold"
+"item_369","giallo","word","descriptive_words","understands; produces","giallo","yellow","yellow"
+"item_370","grande/grosso","word","descriptive_words","understands; produces","grande/grosso","big","big"
+"item_371","malato","word","descriptive_words","understands; produces","malato","sick","sick"
+"item_372","morbido","word","descriptive_words","understands; produces","morbido","soft","soft"
+"item_373","nero","word","descriptive_words","understands; produces","nero","black","black"
+"item_374","pesante","word","descriptive_words","understands; produces","pesante","heavy","heavy"
+"item_375","nuovo","word","descriptive_words","understands; produces","nuovo","new","new"
+"item_376","piano","word","descriptive_words","understands; produces","piano","slow","slow"
+"item_377","piccolo","word","descriptive_words","understands; produces","piccolo","little","little (description)"
+"item_378","pieno","word","descriptive_words","understands; produces","pieno","full","full"
+"item_379","pulito","word","descriptive_words","understands; produces","pulito","clean","clean (description)"
+"item_380","rosso","word","descriptive_words","understands; produces","rosso","red","red"
+"item_381","rotto","word","descriptive_words","understands; produces","rotto","broken","broken"
+"item_382","sporco","word","descriptive_words","understands; produces","sporco","dirty","dirty"
+"item_383","stanco","word","descriptive_words","understands; produces","stanco","tired","tired"
+"item_384","triste","word","descriptive_words","understands; produces","triste","sad","sad"
+"item_385","vuoto","word","descriptive_words","understands; produces","vuoto","empty","empty"
+"item_386","adesso/ora","word","time_words","understands; produces","adesso/ora","now","now"
+"item_387","ancora","word","time_words","understands; produces","ancora","more","again"
+"item_388","di piu","word","time_words","understands; produces","di più","much","much"
+"item_389","domani","word","time_words","understands; produces","domani","tomorrow","tomorrow"
+"item_390","dopo/poi","word","time_words","understands; produces","dopo/poi","after","after"
+"item_391","ieri","word","time_words","understands; produces","ieri","yesterday","yesterday"
+"item_392","mattina","word","time_words","understands; produces","mattina","morning","morning"
+"item_393","molto","word","time_words","understands; produces","molto","much","much"
+"item_394","nessuno","word","time_words","understands; produces","nessuno","none","none"
+"item_395","niente","word","time_words","understands; produces","niente","any","any"
+"item_396","notte","word","time_words","understands; produces","notte","night","night"
+"item_397","oggi","word","time_words","understands; produces","oggi","today","today"
+"item_398","poco","word","time_words","understands; produces","poco","little/few","little (amount)"
+"item_399","tanto","word","time_words","understands; produces","tanto","a lot","a lot"
+"item_400","tardi","word","time_words","understands; produces","tardi","late","late"
+"item_401","tutto","word","time_words","understands; produces","tutto","all","all"
+"item_402","un po'","word","time_words","understands; produces","un po'","any ","any "
+"item_403","io","word","pronouns","understands; produces","io","I","i"
+"item_404","tu","word","pronouns","understands; produces","tu","you","you"
+"item_405","lui","word","pronouns","understands; produces","lui","he","he"
+"item_406","lei","word","pronouns","understands; produces","lei","she","she"
+"item_407","noi","word","pronouns","understands; produces","noi","we/us","we"
+"item_408","voi","word","pronouns","understands; produces","voi","you","you"
+"item_409","loro","word","pronouns","understands; produces","loro","they/their/them","they"
+"item_410","mio/a","word","pronouns","understands; produces","mio/a","mine/my","my"
+"item_411","tuo/a","word","pronouns","understands; produces","tuo/a","your","your"
+"item_412","suo/a","word","pronouns","understands; produces","suo/a","his/hers","his"
+"item_413","me/mi","word","pronouns","understands; produces","me/mi","me/myself","me"
+"item_414","quello/a","word","pronouns","understands; produces","quello/a","that","that"
+"item_415","questo/a","word","pronouns","understands; produces","questo/a","this","this"
+"item_416","che/che cosa?","word","question_words","understands; produces","che/che cosa?","what","what"
+"item_417","chi?","word","question_words","understands; produces","chi?","who","who"
+"item_418","come?","word","question_words","understands; produces","come?","how","how"
+"item_419","dove?","word","question_words","understands; produces","dove?","where","where (question)"
+"item_420","perche?","word","question_words","understands; produces","perché?","why","why"
+"item_421","quando?","word","question_words","understands; produces","quando?","when","when (question)"
+"item_422","di","word","locations","understands; produces","di","of","of"
+"item_423","a","word","locations","understands; produces","a","at","at"
+"item_424","da","word","locations","understands; produces","da","by","by"
+"item_425","in","word","locations","understands; produces","in","in","in"
+"item_426","con","word","locations","understands; produces","con","with","with"
+"item_427","su","word","locations","understands; produces","su","up","up"
+"item_428","giu","word","locations","understands; produces","giù","down","down"
+"item_429","per","word","locations","understands; produces","per","for","for"
+"item_430","sopra","word","locations","understands; produces","sopra","above","above"
+"item_431","sotto","word","locations","understands; produces","sotto","under","under"
+"item_432","dentro","word","locations","understands; produces","dentro","inside/into","inside"
+"item_433","lontano","word","locations","understands; produces","lontano","away","away"
+"item_434","il","word","quantifiers","understands; produces","il","the ","the "
+"item_435","lo","word","quantifiers","understands; produces","lo","the ","the "
+"item_436","la","word","quantifiers","understands; produces","la","the ","the "
+"item_437","i","word","quantifiers","understands; produces","i","the ","the "
+"item_438","gli","word","quantifiers","understands; produces","gli","the ","the "
+"item_439","le","word","quantifiers","understands; produces","le","the ","the "
+"item_440","un/uno/una","word","quantifiers","understands; produces","un/uno/una","a/an","a"
+"item_441","altro/un altro","word","quantifiers","understands; produces","altro/un altro","another","another"
+"item_442",,"gestures_first",,"yes; no","Mostra all'adulto ciò che ha in mano","Shows to adult what has in his/her hand",
+"item_443",,"gestures_first",,"yes; no","Dà all'adulto ciò che ha in mano","Gives to adult what has in his/her hand",
+"item_444",,"gestures_first",,"yes; no","Richiede un oggetto stendendo il braccio","Request object extending his/her hand",
+"item_445",,"gestures_first",,"yes; no","Indica un oggetto o un evento","Points to an object or event",
+"item_446",,"gestures_first",,"yes; no","Fa ciao con la mano","Waves the hand for “bye bye”",
+"item_447",,"gestures_first",,"yes; no","Alza le braccia per farsi prendere su","Extends his/her arm upward to signal a wish to be picked up",
+"item_448",,"gestures_first",,"yes; no","Fa ""no"" con la testa o con il dito","Shakes head or finger for “no”",
+"item_449",,"gestures_first",,"yes; no","Fa ""si"" con la testa","Nods head “yes”",
+"item_450",,"gestures_first",,"yes; no","Fa ""sch"" (""silenzio"") con l'indice sulle labbra","Index to lips for ""sch"" (""be silent"")",
+"item_451",,"gestures_first",,"yes; no","Soffia per far capire che qualcosa scotta","Blow to indicate something is hot",
+"item_452",,"gestures_first",,"yes; no","Gira il dito sulla guancia per dire ""è buono""","Index to cheek for something tasting good",
+"item_453",,"gestures_first",,"yes; no","Alza le spalle perché qualcosa non c'è più","Shrugs to indicate “all gone” or “where’d it go”",
+"item_454",,"gestures_games",,"yes; no","Gioca a nascondino (cuccù-settete)","Play peekaboo",
+"item_455",,"gestures_games",,"yes; no","Batte le manine","Clap hands",
+"item_456",,"gestures_games",,"yes; no","Dà le tottò","Give slap",
+"item_457",,"gestures_games",,"yes; no","Fa le carezze","Caress",
+"item_458",,"gestures_games",,"yes; no","Balla","Dance",
+"item_459",,"gestures_games",,"yes; no","Manda un bacio","Blow kisses",
+"item_460",,"gestures_objects",,"yes; no","Mangia con un cucchiaio o con una forchetta","Eat with a spoon or fork",
+"item_461",,"gestures_objects",,"yes; no","Beve da un recipiente con dei liquidi","Drink from a cup or bottle containing liquid",
+"item_462",,"gestures_objects",,"yes; no","Si pettina o si spazzola i capelli","Comb or brush own hair",
+"item_463",,"gestures_objects",,"yes; no","Si lava i denti","Brush teeth",
+"item_464",,"gestures_objects",,"yes; no","Si pulisce il viso con le mani o una salvietta","Wipe face or hands with a towel or cloth",
+"item_465",,"gestures_objects",,"yes; no","Si mette il cappello","Put on hat",
+"item_466",,"gestures_objects",,"yes; no","Si mette le scarpe e le calze","Put on a shoe or sock",
+"item_467",,"gestures_objects",,"yes; no","Scava con una paletta","Dig with shovel",
+"item_468",,"gestures_objects",,"yes; no","Posa la testa sulla mano o su un cuscino","“Sleep” (leaning head on hand or pillow and closing eyes)",
+"item_469",,"gestures_objects",,"yes; no","Chiude e apre le porte o gli sportelli","Open and close door and closet",
+"item_470",,"gestures_objects",,"yes; no","Prende un aeroplanino e lo fa volare","Hold plane and make it “fly”",
+"item_471",,"gestures_objects",,"yes; no","Porta il telefono all'orecchio","bring the telephone to the ear",
+"item_472",,"gestures_objects",,"yes; no","Annusa i fiori","Sniff flowers",
+"item_473",,"gestures_objects",,"yes; no","Spinge le automobiline","Push toy car or truck",
+"item_474",,"gestures_objects",,"yes; no","Lancia la palla","Throw a ball",
+"item_475",,"gestures_objects",,"yes; no","Versa liquidi da un contenitore all'altro","Pour pretend liquid from one container to another",
+"item_476",,"gestures_objects",,"yes; no","Mescola con un cucchiaio","Stir with spoon",
+"item_477",,"gestures_parent",,"yes; no","Mette a letto (bambole e pupazzi)","Put to bed (dolls or stuffed animals)",
+"item_478",,"gestures_parent",,"yes; no","Copre con le coperte (bambole e pupazzi)","Cover with blanket (dolls or stuffed animals)",
+"item_479",,"gestures_parent",,"yes; no","Imbocca con un cucchiaio (bambole e pupazzi)","Feed with spoon (dolls or stuffed animals)",
+"item_480",,"gestures_parent",,"yes; no","Dà da bere (a bambole e pupazzi)","Feed with bottle (dolls or stuffed animals)",
+"item_481",,"gestures_parent",,"yes; no","Pettina (bambole e pupazzi)","Brush/comb hair (dolls or stuffed animals)",
+"item_482",,"gestures_parent",,"yes; no","Accarezza (bambole e pupazzi)","Caress (dolls or stuffed animals)",
+"item_483",,"gestures_parent",,"yes; no","Spinge sulla carrozzina (bambole e pupazzi)","Push in stroller/buggy (dolls or stuffed animals)",
+"item_484",,"gestures_parent",,"yes; no","Culla (bambole e pupazzi)","Rock (dolls or stuffed animals)",
+"item_485",,"gestures_parent",,"yes; no","Bacia o abbraccia (bambole e pupazzi)","Kiss or hug (dolls or stuffed animals)",
+"item_486",,"gestures_parent",,"yes; no","Prova a infilare calze e scarpe (a bambole e pupazzi)","Try to put shoe or sock (on dolls or stuffed animals)",
+"item_487",,"gestures_parent",,"yes; no","Pulisce faccia o mani (a bambole e pupazzi)","Wipe face or hands (dolls or stuffed animals)",
+"item_488",,"gestures_parent",,"yes; no","Parla (con bambole e pupazzi)","Talk to (dolls or stuffed animals)",
+"item_489",,"gestures_parent",,"yes; no","Picchia (bambole e pupazzi)","Pat or burp (dolls or stuffed animals)",
+"item_490",,"gestures_adult",,"yes; no","Spazza con una scopa","Sweep with broom or mop",
+"item_491",,"gestures_adult",,"yes; no","Infila la chiave nella serratura e la gira","Put key in door or lock",
+"item_492",,"gestures_adult",,"yes; no","Batte con un martello","Pound with hammer or mallet",
+"item_493",,"gestures_adult",,"yes; no","Usa il telecomando","Use remote control",
+"item_494",,"gestures_adult",,"yes; no","Scrive a macchina o su computer","“Type” at a typewriter or computer keyboard",
+"item_495",,"gestures_adult",,"yes; no","Legge (apre libri sfoglia le pagine)","“Read” (opens book turns page)",
+"item_496",,"gestures_adult",,"yes; no","Passa l'aspirapolvere","Vacuum",
+"item_497",,"gestures_adult",,"yes; no","Innaffia le piante","Water plants",
+"item_498",,"gestures_adult",,"yes; no","Suona degli strumenti musicali","Play musical instrument",
+"item_499",,"gestures_adult",,"yes; no","Guida la macchina girando il volante","Drive car by turning steering wheel",
+"item_500",,"gestures_adult",,"yes; no","Lava i piatti","Wash dishes",
+"item_501",,"gestures_adult",,"yes; no","Pulisce con un panno o con un piumino","Clean with cloth or duster",
+"item_502",,"gestures_adult",,"yes; no","Scrive con una penna con una matita","Write with a pen pencil or marker",
+"item_503",,"gestures_adult",,"yes; no","Si mette collane braccialetti orologi","Put on a necklace bracelet or watch",
+"item_504",,"gestures_adult",,"yes; no","Si mette gli occhiali","Put on glasses",
+"item_505",,"gestures_play",,"yes; no","Giocare a far finta con degli oggetti","Pretending play with objects",
