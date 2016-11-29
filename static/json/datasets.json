@@ -688,5 +688,17 @@
         "longitudinal": false,
         "contributor": "Ping Li, Pennsylvania State University",
         "citation": "Hao, M., Shu, H., Xing, A., & Li, P. (2008).  Early vocabulary inventory for Mandarin Chinese.  Behavior Research Methods, 40, 728-733."
+    },
+        {
+        "name": "Smolik",
+        "dataset": "",
+        "instrument_language": "Czech",
+        "instrument_form": "WS",
+        "file": "raw_data/Czech_WS/CzechWS_Smolik.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": false,
+        "contributor": "Filip Smolik, Academy of Sciences of the Czech Republic",
+        "citation": ""
     }
 ]
