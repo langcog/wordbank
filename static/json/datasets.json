@@ -270,11 +270,11 @@
         "citation": "Kovacevic, M., Babic, Z., & Brozovic, B. (1996). A Croatian language parent report study: Lexical and grammatical development. Paper presented at the VIIth International Congress for the Study of Child Language, July 1996, Istanbul, Turkey."
     },
     {
-        "name": "CLEX",
+        "name": "Szagun",
         "dataset": "",
         "instrument_language": "German",
         "instrument_form": "WS",
-        "file": "raw_data/German_WS/GermanWS_CLEX.csv",
+        "file": "raw_data/German_WS/GermanWS_Szagun.csv",
         "splitcol": false,
         "norming": true,
         "longitudinal": false,
