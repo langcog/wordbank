@@ -334,5 +334,13 @@
         "age_min": 16,
         "age_max": 30,
         "has_grammar": false
-    }    
+    },
+    {
+        "language": "Australian English",
+        "form": "WS",
+        "file": "raw_data/Australian_WS/[Australian_WS].csv",
+        "age_min": 12,
+        "age_max": 30,
+        "has_grammar": true
+    }     
 ]
