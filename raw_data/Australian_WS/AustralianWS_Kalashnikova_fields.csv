@@ -1,0 +1,659 @@
+field,column,group,type
+study_id,ID,child,study_id
+sex,Gender m1/f2,child,sex
+data_age,Months,admin,data_age
+date_of_test,Test date,admin,date_of_test
+,AgeWeeks,,
+,AgeDays,,
+,TotalScore,,
+,Total%,,
+,Section 1,,
+,Section 2,,
+,Section 3,,
+,Section 4,,
+,Section 5,,
+,Section 6,,
+,Section 7,,
+,Section 8,,
+,Section 9,,
+,Section 10,,
+,Section 11,,
+,Section 12,,
+,Section 13,,
+,Section 14,,
+,Section 15,,
+,Word Forms,,
+,Word Endings,,
+,WordFormsTotal,,
+,M3L,,
+,Other Languages (1=yes),,
+,Hearing problems (1=yes),,
+,Prematurity (1=premmie),,
+item_1,baa baa,item,word
+item_2,choo choo,item,word
+item_3,cockadoodledoo,item,word
+item_4,grr,item,word
+item_5,meow,item,word
+item_6,moo,item,word
+item_7,ouch,item,word
+item_8,quack quack,item,word
+item_9,uh oh ,item,word
+item_10,vroom/broom,item,word
+item_11,woof woof,item,word
+item_12,yum yum,item,word
+item_13,animal,item,word
+item_14,ant,item,word
+item_15,bear ,item,word
+item_16,bee ,item,word
+item_17,bird,item,word
+item_18,bug,item,word
+item_19,bunny/rabbit,item,word
+item_20,butterfly,item,word
+item_21,(pussy)cat,item,word
+item_22,donkey ,item,word
+item_23,duck,item,word
+item_24,elephant,item,word
+item_25,fish,item,word
+item_26,frog,item,word
+item_27,giraffe,item,word
+item_28,goose,item,word
+item_29,horse,item,word
+item_30,kangaroo/roo,item,word
+item_31,owl,item,word
+item_32,penguin,item,word
+item_33,pig,item,word
+item_34,pony,item,word
+item_35,possum,item,word
+item_36,puppy,item,word
+item_37,sheep,item,word
+item_38,snake,item,word
+item_39,spider,item,word
+item_40,cockroach,item,word
+item_41,cow,item,word
+item_42,crocodile,item,word
+item_43,deer,item,word
+item_44,dog,item,word
+item_45,koala,item,word
+item_46,lamb,item,word
+item_47,lion,item,word
+item_48,monkey,item,word
+item_49,mouse,item,word
+item_50,tiger,item,word
+item_51,turkey,item,word
+item_52,turtle,item,word
+item_53,wombat,item,word
+item_54,zebra,item,word
+item_55,(air)plane,item,word
+item_56,bicycle/bike,item,word
+item_57,boat,item,word
+item_58,bus,item,word
+item_59,car,item,word
+item_60,fire truck/engine,item,word
+item_61,helicopter,item,word
+item_62,motorbike,item,word
+item_63,pram,item,word
+item_64,stroller,item,word
+item_65,tractor,item,word
+item_66,train,item,word
+item_67,three wheeler/tricycle,item,word
+item_68,truck,item,word
+item_69,ball ,item,word
+item_70,balloon,item,word
+item_71,bat,item,word
+item_72,block/brick,item,word
+item_73,book,item,word
+item_74,bubbles,item,word
+item_75,crayon,item,word
+item_76,doll,item,word
+item_77,game,item,word
+item_78,glue,item,word
+item_79,pen,item,word
+item_80,play dough,item,word
+item_81,present/pressie,item,word
+item_82,puzzle,item,word
+item_83,story,item,word
+item_84,teddy bear,item,word
+item_85,toy,item,word
+item_86,apple,item,word
+item_87,banana,item,word
+item_88,beans,item,word
+item_89,biscuit/bickie,item,word
+item_90,bread,item,word
+item_91,butter,item,word
+item_92,cake ,item,word
+item_93,carrot,item,word
+item_94,cereal,item,word
+item_95,cheese,item,word
+item_96,chicken,item,word
+item_97,chocolate,item,word
+item_98,chewing gum/chewie,item,word
+item_99,coffee ,item,word
+item_100,coke,item,word
+item_101,cordial,item,word
+item_102,corn,item,word
+item_103,fish,item,word
+item_104,food,item,word
+item_105,grapes,item,word
+item_106,hamburger,item,word
+item_107,ice,item,word
+item_108,ice cream,item,word
+item_109,jam,item,word
+item_110,jelly,item,word
+item_111,juice,item,word
+item_112,lolly,item,word
+item_113,mango,item,word
+item_114,meat,item,word
+item_115,milk,item,word
+item_116,muffin,item,word
+item_117,noodles,item,word
+item_118,nuts,item,word
+item_119,orange,item,word
+item_120,pineapple,item,word
+item_121,pizza,item,word
+item_122,popcorn,item,word
+item_123,potato,item,word
+item_124,potato chip/crisps,item,word
+item_125,pudding,item,word
+item_126,pumpkin,item,word
+item_127,raisin,item,word
+item_128,salt,item,word
+item_129,sandwich,item,word
+item_130,soup,item,word
+item_131,spaghetti,item,word
+item_132,strawberry,item,word
+item_133,toast,item,word
+item_134,(tomato) sauce,item,word
+item_135,tuna,item,word
+item_136,vanilla,item,word
+item_137,custard,item,word
+item_138,doughnut,item,word
+item_139,drink,item,word
+item_140,egg,item,word
+item_141,pancake,item,word
+item_142,pasta,item,word
+item_143, peanut butter,item,word
+item_144,peas,item,word
+item_145,vegemite,item,word
+item_146,vitamins,item,word
+item_147,water,item,word
+item_148,yoghurt,item,word
+item_149,beanie,item,word
+item_150,belt,item,word
+item_151,bib ,item,word
+item_152,boot(s),item,word
+item_153,button,item,word
+item_154,coat,item,word
+item_155,dress,item,word
+item_156,hat,item,word
+item_157,jacket,item,word
+item_158,jeans,item,word
+item_159,jumper,item,word
+item_160,nappy,item,word
+item_161,necklace,item,word
+item_162,pyjamas/jamies,item,word
+item_163,pants,item,word
+item_164,shirt,item,word
+item_165,shoe(s),item,word
+item_166,shorts,item,word
+item_167,slipper(s),item,word
+item_168,sock(s),item,word
+item_169,sunglasses/sunnies,item,word
+item_170,thongs,item,word
+item_171,underpants/undies,item,word
+item_172,zipper,item,word
+item_173,ankle,item,word
+item_174,arm,item,word
+item_175,bellybutton/navel,item,word
+item_176,breasts,item,word
+item_177,bottom,item,word
+item_178,cheek,item,word
+item_179,chin,item,word
+item_180,ear,item,word
+item_181,eye,item,word
+item_182,face ,item,word
+item_183,finger(s),item,word
+item_184,foot/feet,item,word
+item_185,hair,item,word
+item_186,hand,item,word
+item_187,head,item,word
+item_188,knee,item,word
+item_189,leg,item,word
+item_190,lips,item,word
+item_191,mouth,item,word
+item_192,nail(s),item,word
+item_193,neck,item,word
+item_194,nose,item,word
+item_195,shoulder,item,word
+item_196,stomach/tummy,item,word
+item_197,tooth/teeth,item,word
+item_198,toe(s),item,word
+item_199,tongue,item,word
+item_200,basket,item,word
+item_201,bin,item,word
+item_202,blanket,item,word
+item_203,bottle,item,word
+item_204,box,item,word
+item_205,bowl,item,word
+item_206,broom,item,word
+item_207,brush,item,word
+item_208,bucket,item,word
+item_209,camera,item,word
+item_210,can,item,word
+item_211,garbage/rubbish,item,word
+item_212,glass,item,word
+item_213,hammer,item,word
+item_214,jar,item,word
+item_215,keys,item,word
+item_216,knife,item,word
+item_217,lamp,item,word
+item_218,light,item,word
+item_219,medicine,item,word
+item_220,money,item,word
+item_221,mop,item,word
+item_222,plate,item,word
+item_223,purse/wallet,item,word
+item_224,radio,item,word
+item_225,serviette/napkin,item,word
+item_226,scissors,item,word
+item_227,soap,item,word
+item_228,spoon,item,word
+item_229,tape,item,word
+item_230,telephone/phone,item,word
+item_231,tissue,item,word
+item_232,toothbrush,item,word
+item_233,clock,item,word
+item_234,comb,item,word
+item_235,cot,item,word
+item_236,cup,item,word
+item_237,dish,item,word
+item_238,fork,item,word
+item_239,mug,item,word
+item_240,newspaper/paper,item,word
+item_241,photo,item,word
+item_242,picture,item,word
+item_243,pillow,item,word
+item_244,plant,item,word
+item_245,towel,item,word
+item_246,tray,item,word
+item_247,vacuum cleaner,item,word
+item_248,watch,item,word
+item_249,Bathroom,item,word
+item_250,Bath (tub),item,word
+item_251,bed,item,word
+item_252,bedroom,item,word
+item_253,bench,item,word
+item_254,chair,item,word
+item_255,computer,item,word
+item_256,couch/lounge/sofa,item,word
+item_257,crib,item,word
+item_258,door,item,word
+item_259,drawer,item,word
+item_260,fridge,item,word
+item_261,garage,item,word
+item_262,high chair,item,word
+item_263,kitchen,item,word
+item_264,living/lounge room,item,word
+item_265,oven/stove,item,word
+item_266,play pen,item,word
+item_267,potty,item,word
+item_268,rocking chair,item,word
+item_269,room,item,word
+item_270,shower,item,word
+item_271,sink,item,word
+item_272,stairs,item,word
+item_273,table,item,word
+item_274,TV,item,word
+item_275,veranda/porch,item,word
+item_276,wardrobe,item,word
+item_277,washing machine,item,word
+item_278,window,item,word
+item_279,backyard,item,word
+item_280,cloud,item,word
+item_281,flag,item,word
+item_282,flower,item,word
+item_283,footpath,item,word
+item_284,garden,item,word
+item_285,grass,item,word
+item_286,hose,item,word
+item_287,ladder,item,word
+item_288,lawn mower,item,word
+item_289,moon,item,word
+item_290,pool,item,word
+item_291,rain,item,word
+item_292,rock,item,word
+item_293,roof,item,word
+item_294,sandpit,item,word
+item_295,shed,item,word
+item_296,shovel,item,word
+item_297,sky,item,word
+item_298,slide,item,word
+item_299,sprinkler,item,word
+item_300,star,item,word
+item_301,stick,item,word
+item_302,stone,item,word
+item_303,street,item,word
+item_304,sun,item,word
+item_305,swing,item,word
+item_306,tree,item,word
+item_307,wall,item,word
+item_308,water,item,word
+item_309,waves,item,word
+item_310,wind,item,word
+item_311,barbecue,item,word
+item_312,beach,item,word
+item_313,bush,item,word
+item_314,church/mosque,item,word
+item_315,city,item,word
+item_316,country,item,word
+item_317,home/house,item,word
+item_318,movies,item,word
+item_319,outside,item,word
+item_320,park,item,word
+item_321,party,item,word
+item_322,petrol station,item,word
+item_323,playground,item,word
+item_324,school/kindie/preschool,item,word
+item_325,shop,item,word
+item_326,show,item,word
+item_327,yard,item,word
+item_328,work,item,word
+item_329,farm,item,word
+item_330,picnic,item,word
+item_331,zoo,item,word
+item_332,aunt,item,word
+item_333,baby,item,word
+item_334,babysitter,item,word
+item_335,boy,item,word
+item_336,brother,item,word
+item_337,child/kid,item,word
+item_338,child's own name,item,word
+item_339,clown,item,word
+item_340,cowboy,item,word
+item_341,daddy,item,word
+item_342,doctor,item,word
+item_343,fireman,item,word
+item_344,friend,item,word
+item_345,friend's name,item,word
+item_346,girl,item,word
+item_347,grandma/nanna,item,word
+item_348,grandpa/pop,item,word
+item_349,lady,item,word
+item_350,man,item,word
+item_351,mummy,item,word
+item_352,nurse,item,word
+item_353,people,item,word
+item_354,person,item,word
+item_355,pet's name,item,word
+item_356,police(man),item,word
+item_357,postman,item,word
+item_358,sister,item,word
+item_359,teacher,item,word
+item_360,uncle,item,word
+item_361,bath,item,word
+item_362,breakfast,item,word
+item_363,call(phone),item,word
+item_364,dinner,item,word
+item_365,give me five!,item,word
+item_366,goodbye/bye bye,item,word
+item_367,go potty,item,word
+item_368,hello,item,word
+item_369,hi,item,word
+item_370,hide and seek/hidie,item,word
+item_371,lunch,item,word
+item_372,nap,item,word
+item_373,night night,item,word
+item_374,no/don't,item,word
+item_375,patty cake/pat-a-cake,item,word
+item_376,peekaboo,item,word
+item_377,please,item,word
+item_378,shh/shush/hush,item,word
+item_379,shopping,item,word
+item_380,snack,item,word
+item_381,thank you,item,word
+item_382,wait,item,word
+item_383,want to,item,word
+item_384,yes,item,word
+item_385,bite,item,word
+item_386,blow,item,word
+item_387,break ,item,word
+item_388,bring,item,word
+item_389,build,item,word
+item_390,bump,item,word
+item_391,buy,item,word
+item_392,call,item,word
+item_393,carry,item,word
+item_394,catch,item,word
+item_395,chase,item,word
+item_396,clap,item,word
+item_397,clean,item,word
+item_398,drive,item,word
+item_399,drink,item,word
+item_400,drop,item,word
+item_401,dry,item,word
+item_402,dump,item,word
+item_403,eat,item,word
+item_404,fall,item,word
+item_405,feed,item,word
+item_406,find,item,word
+item_407,finish,item,word
+item_408,fit,item,word
+item_409,fix,item,word
+item_410,get,item,word
+item_411,hug,item,word
+item_412,hurry,item,word
+item_413,jump,item,word
+item_414,kick,item,word
+item_415,kiss,item,word
+item_416,knock,item,word
+item_417,know,item,word
+item_418,lick,item,word
+item_419,like,item,word
+item_420,listen,item,word
+item_421,look,item,word
+item_422,love,item,word
+item_423,make,item,word
+item_424,read,item,word
+item_425,ride,item,word
+item_426,rip,item,word
+item_427,run,item,word
+item_428,say,item,word
+item_429,scratch,item,word
+item_430,see,item,word
+item_431,shake,item,word
+item_432,share,item,word
+item_433,show,item,word
+item_434,shut,item,word
+item_435,sing,item,word
+item_436,sit,item,word
+item_437,sweep,item,word
+item_438,swim,item,word
+item_439,swing,item,word
+item_440,take,item,word
+item_441,talk,item,word
+item_442,taste,item,word
+item_443,tear,item,word
+item_444,tell,item,word
+item_445,think,item,word
+item_446,throw,item,word
+item_447,tickle,item,word
+item_448,touch,item,word
+item_449,wake,item,word
+item_450,climb,item,word
+item_451,close,item,word
+item_452,cook,item,word
+item_453,cover,item,word
+item_454,cry,item,word
+item_455,cuddle,item,word
+item_456,cut,item,word
+item_457,dance,item,word
+item_458,draw,item,word
+item_459,give,item,word
+item_460,go,item,word
+item_461,hate,item,word
+item_462,have,item,word
+item_463,hear,item,word
+item_464,help,item,word
+item_465,hide,item,word
+item_466,hit,item,word
+item_467,hold,item,word
+item_468,open,item,word
+item_469,paint,item,word
+item_470,pick,item,word
+item_471,play,item,word
+item_472,pour,item,word
+item_473,pretend,item,word
+item_474,pull,item,word
+item_475,push,item,word
+item_476,put,item,word
+item_477,sleep,item,word
+item_478,slide,item,word
+item_479,smell,item,word
+item_480,smile,item,word
+item_481,spill,item,word
+item_482,splash,item,word
+item_483,stand,item,word
+item_484,stay,item,word
+item_485,stop,item,word
+item_486,walk,item,word
+item_487,wash,item,word
+item_488,watch,item,word
+item_489,wipe,item,word
+item_490,wish,item,word
+item_491,work,item,word
+item_492,write,item,word
+item_493,all gone,item,word
+item_494,asleep,item,word
+item_495,awake,item,word
+item_496,bad,item,word
+item_497,better,item,word
+item_498,big,item,word
+item_499,black,item,word
+item_500,blue,item,word
+item_501,broken,item,word
+item_502,brown,item,word
+item_503,careful,item,word
+item_504,clean,item,word
+item_505,cold ,item,word
+item_506,cute,item,word
+item_507,dark,item,word
+item_508,dirty,item,word
+item_509,dry,item,word
+item_510,easy,item,word
+item_511,empty,item,word
+item_512,fast,item,word
+item_513,fine,item,word
+item_514,first,item,word
+item_515,full,item,word
+item_516,gentle,item,word
+item_517,good,item,word
+item_518,green,item,word
+item_519,happy,item,word
+item_520,hard,item,word
+item_521,heavy,item,word
+item_522,high,item,word
+item_523,hot,item,word
+item_524,hungry,item,word
+item_525,hurt,item,word
+item_526,last,item,word
+item_527,little,item,word
+item_528,long,item,word
+item_529,loud,item,word
+item_530,mad,item,word
+item_531,nasty,item,word
+item_532,naughty,item,word
+item_533,new,item,word
+item_534,nice,item,word
+item_535,noisy,item,word
+item_536,old,item,word
+item_537,orange,item,word
+item_538,poor,item,word
+item_539,pretty,item,word
+item_540,quiet,item,word
+item_541,red,item,word
+item_542,sad,item,word
+item_543,scared,item,word
+item_544,sick,item,word
+item_545,sleepy,item,word
+item_546,slow,item,word
+item_547,soft,item,word
+item_548,sticky,item,word
+item_549,stuck,item,word
+item_550,thirsty,item,word
+item_551,tiny,item,word
+item_552,tired,item,word
+item_553,wet,item,word
+item_554,white,item,word
+item_555,windy,item,word
+item_556,yellow,item,word
+item_557,yucky,item,word
+item_558,yummy,item,word
+item_559,children,item,word
+item_560,feet,item,word
+item_561,men,item,word
+item_562,mice,item,word
+item_563,teeth,item,word
+item_564,ate,item,word
+item_565,blew,item,word
+item_566,fell,item,word
+item_567,flew,item,word
+item_568,made,item,word
+item_569,ran,item,word
+item_570,bought,item,word
+item_571,broke,item,word
+item_572,came,item,word
+item_573,drank,item,word
+item_574,drove,item,word
+item_575,got,item,word
+item_576,had,item,word
+item_577,heard,item,word
+item_578,held,item,word
+item_579,lost,item,word
+item_580,sat,item,word
+item_581,saw,item,word
+item_582,took,item,word
+item_583,went,item,word
+item_584,blockses,item,word_endings_nouns
+item_585,chrildren s,item,word_endings_nouns
+item_586,childs,item,word_endings_nouns
+item_587,feets,item,word_endings_nouns
+item_588,foots,item,word_endings_nouns
+item_589,mans,item,word_endings_nouns
+item_590,mens,item,word_endings_nouns
+item_591,mices,item,word_endings_nouns
+item_592,mouses,item,word_endings_nouns
+item_593,shoeses,item,word_endings_nouns
+item_594,sockses,item,word_endings_nouns
+item_595,teeths,item,word_endings_nouns
+item_596,toeses,item,word_endings_nouns
+item_597,tooths,item,word_endings_nouns
+item_598,ated,item,word_endings_verbs
+item_599,blewed,item,word_endings_verbs
+item_600,blowed,item,word_endings_verbs
+item_601,bringed,item,word_endings_verbs
+item_602,buyed,item,word_endings_verbs
+item_603,breaked,item,word_endings_verbs
+item_604,broked,item,word_endings_verbs
+item_605,camed,item,word_endings_verbs
+item_606,comed,item,word_endings_verbs
+item_607,doed,item,word_endings_verbs
+item_608,dranked,item,word_endings_verbs
+item_609,drinked,item,word_endings_verbs
+item_610,eated,item,word_endings_verbs
+item_611,falled,item,word_endings_verbs
+item_612,flied,item,word_endings_verbs
+item_613,getted,item,word_endings_verbs
+item_614,goed,item,word_endings_verbs
+item_615,gotted,item,word_endings_verbs
+item_616,haved,item,word_endings_verbs
+item_617,hearded,item,word_endings_verbs
+item_618,holded,item,word_endings_verbs
+item_619,losed,item,word_endings_verbs
+item_620,losted,item,word_endings_verbs
+item_621,maked,item,word_endings_verbs
+item_622,ranned,item,word_endings_verbs
+item_623,runned,item,word_endings_verbs
+item_624,seed,item,word_endings_verbs
+item_625,satted,item,word_endings_verbs
+item_626,sitted,item,word_endings_verbs
+item_627,taked,item,word_endings_verbs
+item_628,wented,item,word_endings_verbs
