@@ -700,5 +700,18 @@
         "longitudinal": false,
         "contributor": "Filip Smolik, Academy of Sciences of the Czech Republic",
         "citation": "Markova, G., Smolík, F. (2014). What Do You Think? The Relationship between Person Reference and Communication About the Mind in Toddlers. Social Development, 23, 61-79. DOI: 10.1111/sode.12044"
+    },
+    {
+        "name": "Kalashnikova",
+        "dataset": "",
+        "instrument_language": "Australian English",
+        "instrument_form": "WS",
+        "file": "raw_data/Australian_WS/AustralianWS_Kalashnikova.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": false,
+        "date_format": "%m/%d/%Y",
+        "contributor": "Marina Kalashnikova, MARCS Institute for Brain, Behaviour and Development",
+        "citation": "Kalashnikova, M., Schwarz, I., & Burnham, D. (2016). OZI: Australian English Communicative Development. First Language, 36, 407-427."
     }
 ]
