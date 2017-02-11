@@ -42,3 +42,4 @@ from schemas.Kiswahili_WS import *
 from schemas.Mandarin_IC import *
 from schemas.Czech_WS import *
 from schemas.Australian_English_WS import *
+from schemas.English_British_Oxford_CDI import *
