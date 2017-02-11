@@ -342,5 +342,13 @@
         "age_min": 12,
         "age_max": 30,
         "has_grammar": true
+    },
+    {
+        "language": "English (British)",
+        "form": "Oxford CDI",
+        "file": "raw_data/English_British_Oxford/[EnglishBritishOxford].csv",
+        "age_min": 12,
+        "age_max": 25,
+        "has_grammar": false
     }     
 ]
