@@ -65,7 +65,8 @@ shinyServer(function(input, output, session) {
   output$form_selector <- renderUI({
     selectizeInput("form", label = "Form:",
                    choices = c("All", list("Words & Sentences" = "WS",
-                                           "Words & Gestures" = "WG")),
+                                           "Words & Gestures" = "WG",
+                                           "Oxford CDI" = "Oxford CDI")),
                    selected = "All")
   })
 

@@ -713,5 +713,29 @@
         "date_format": "%m/%d/%Y",
         "contributor": "Marina Kalashnikova, MARCS Institute for Brain, Behaviour and Development",
         "citation": "Kalashnikova, M., Schwarz, I.-C., & Burnham, D. (2016). OZI: Australian English Communicative Development. First Language, 36, 407-427."
+    },
+    {
+        "name": "Floccia",
+        "dataset": "Cross-sectional",
+        "instrument_language": "English (British)",
+        "instrument_form": "Oxford CDI",
+        "file": "raw_data/English_British_Oxford/EnglishBritishOxford_Floccia_crosssectional.csv",
+        "splitcol": true,
+        "norming": false,
+        "longitudinal": false,
+        "contributor": "Caroline Floccia, Plymouth University",
+        "citation": "Hamilton, A., Plunkett, K., & Schafer, G., (2000). Infant vocabulary development assessed with a British Communicative Development Inventory: Lower scores in the UK than the USA. Journal of Child Language, 27, 689-705."
+    },
+    {
+        "name": "Floccia",
+        "dataset": "Longitudinal",
+        "instrument_language": "English (British)",
+        "instrument_form": "Oxford CDI",
+        "file": "raw_data/English_British_Oxford/EnglishBritishOxford_Floccia_longitudinal.csv",
+        "splitcol": true,
+        "norming": false,
+        "longitudinal": true,
+        "contributor": "Caroline Floccia, Plymouth University",
+        "citation": "Hamilton, A., Plunkett, K., & Schafer, G., (2000). Infant vocabulary development assessed with a British Communicative Development Inventory: Lower scores in the UK than the USA. Journal of Child Language, 27, 689-705."
     }
 ]
