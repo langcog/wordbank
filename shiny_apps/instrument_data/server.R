@@ -48,7 +48,8 @@ shinyServer(function(input, output, session) {
                               language == input$language)$form)
     }
     Filter(valid_form, list("Words & Sentences" = "WS",
-                            "Words & Gestures" = "WG"))
+                            "Words & Gestures" = "WG",
+                            "Oxford CDI" = "Oxford CDI"))
   })
 
   output$form_selector <- renderUI({

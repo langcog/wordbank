@@ -297,7 +297,8 @@ shinyServer(function(input, output, session) {
                              "TEDS Twos" = "TEDS Twos",
                              "TEDS Threes" = "TEDS Threes",
                              "Toddler Checklist" = "TC",
-                             "Infant Checklist" = "IC"))
+                             "Infant Checklist" = "IC",
+                             "Oxford CDI" = "Oxford CDI"))
     if (all(c("WS", "WG") %in% form_opts)) {
       form_opts$"Both" <- "WG WS"
     }
@@ -305,7 +306,7 @@ shinyServer(function(input, output, session) {
   })
 
   measures <- reactive({
-    if (input_forms() %in% c("WG","FormA","IC")) {
+    if (input_forms() %in% c("WG","FormA","IC","Oxford CDI")) {
       list("Produces" = "produces", "Understands" = "understands")
     } else {
       list("Produces" = "produces")
