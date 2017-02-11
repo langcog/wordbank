@@ -342,7 +342,7 @@ shinyServer(function(input, output, session) {
   # all others will be production-only for now.
   # in the end, this will need a specification in the instruments table.
   measures <- reactive({
-    if (input_form() %in% c("WG", "FormA","IC")) {
+    if (input_form() %in% c("WG", "FormA","IC","Oxford CDI")) {
       list("Produces" = "production", "Understands" = "comprehension")
     } else {
       list("Produces" = "production")
