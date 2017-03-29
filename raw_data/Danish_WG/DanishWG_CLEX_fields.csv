@@ -2,6 +2,7 @@ field,column,group,type
 data_age,month,admin,data_age
 sex,sex,child,sex
 study_id,study_id,child,study_id
+mom_ed,edu_class_mother,child,mom_ed
 item_1,i_03_1,item,word
 item_2,i_03_2,item,word
 item_3,i_03_3,item,word
