@@ -1,17 +1,22 @@
 type,value,data_value
 sex,M,male
 sex,F,female
-mom_ed,primary,Grundskole
-mom_ed,primary,Grundskole - Gymnasial U
-mom_ed,primary,Grundskole - Kortere VU
-mom_ed,secondary,Gymnasial U
-mom_ed,secondary,Gymnasial U - Kortere VU
-mom_ed,some college,Kortere VU
-mom_ed,some college,Kort - mellemlang VU
-mom_ed,some college,Kort - Lang VU
-mom_ed,college,Mellemlang VU
-mom_ed,college,Mellemlang - Lang VU
-mom_ed,graduate,Lang VU
+mom_ed,primary,1
+mom_ed,some secondary,2
+mom_ed,some secondary,3
+mom_ed,secondary,4
+mom_ed,secondary,5
+mom_ed,secondary,6
+mom_ed,some college,7
+mom_ed,some college,8
+mom_ed,some college,9
+mom_ed,college,10
+mom_ed,some graduate,11
+mom_ed,graduate,12
+mom_ed,none,998
+mom_ed,none,999
+mom_ed,none,nan
+mom_ed,none,
 word,produces,said
 how_use_words,yes,yes
 how_use_words,no,no
