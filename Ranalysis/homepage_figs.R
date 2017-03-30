@@ -1,3 +1,10 @@
+# to get this to work
+# 1. run this:
+#    download.file("http://simonsoftware.se/other/xkcd.ttf", dest="~/Desktop/xkcd.ttf", mode="wb")
+# 2. double click on font file and hit install
+# 3. run:
+#    font_import(pattern = "xkcd", prompt=FALSE)
+
 source("../shiny_apps/vocab_norms/predictQR_fixed.R")
 library(tidyverse)
 library(quantregGrowth)
@@ -20,13 +27,13 @@ preds <- predictQR_fixed(mod, newdata = newdata) %>%
   gather(percentile, pred, starts_with("X")) %>%
   mutate(percentile = as.character(as.numeric(str_replace(percentile, "X", "")) * 100))
 
-ggplot(d, 
-       aes(x = age, y = comprehension)) + 
-  # geom_point() + 
-  geom_line(data = preds, aes(x = age, y = pred, col = percentile, group = percentile)) + 
-  ylim(0,400) + 
-  xlim(7,19) + 
-  ylab("Vocab") + 
-  xlab("Age") + 
-  scale_color_discrete(guide=FALSE) + 
-  theme_xkcd()
+ggplot(preds, aes(x = age, y = pred)) + 
+  geom_line(aes(col = percentile)) + 
+  ylab("VOCAB") + 
+  xkcdaxis(xrange = c(7,19), yrange = c(0,400)) + 
+  theme_xkcd() + 
+  theme(axis.line.x = element_line(colour="white"), 
+        panel.border = element_rect(size= 0, colour = "white"))
+
+
+
