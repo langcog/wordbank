@@ -29,7 +29,7 @@ Wordbank: An open database of children's vocabulary development
 </div>
 
 <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-6" style="padding-top: 60px;">
 
         <div class="row">
 
@@ -59,43 +59,6 @@ Wordbank: An open database of children's vocabulary development
 
         </div>
 
-        <div class="row">
-
-            <div class="col-md-4">
-                <a href="/analyses?name=admin_data">
-                    <div class="thumbnail">
-                        <div class="caption">
-                            <h4>Admin Data</h4>
-                            <p>Download per-child vocabulary data.</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-4">
-                <a href="/analyses?name=item_data">
-                    <div class="thumbnail">
-                        <div class="caption">
-                            <h4>Item Data</h4>
-                            <p>Download per-item acquisition data.</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-4">
-                <a href="/analyses">
-                    <div class="thumbnail">
-                        <div class="caption">
-                            <h4>More Analyses</h4>
-                            <p>Ongoing research using Wordbank.</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-        </div>
-
     </div>
 
     <div class="col-md-6 center">
@@ -112,7 +75,7 @@ Wordbank: An open database of children's vocabulary development
 </div>
 
 <div class="row">
-    <div class="col-md-9 lead">
+    <div class="col-md-12 lead">
         <p><b>Wordbank</b> is an open database of information about children's vocabulary growth.</p>
 
         <p>Wordbank archives data from the <a href="http://mb-cdi.stanford.edu" target="_blank">MacArthur-Bates Communicative Development Inventory</a> (MB-CDI), a family of parent-report questionnaires. Wordbank enables researchers to analyze MB-CDI data
@@ -122,113 +85,15 @@ Wordbank: An open database of children's vocabulary development
                 any questions or comments.</p>
     </div>
 
-    <div class="col-md-3">
-        <div class="panel panel-primary">
-
-            <!--<div class="panel-heading">Wordbank links</div>-->
-            <div class="list-group">
-                <a href="http://langcog.github.io/wordbankr" target="_blank" class="list-group-item">
-    Tutorial on using wordbankr
-  </a>
-                <a href="https://github.com/langcog/wordbankr" target="_blank" class="list-group-item">
-    Codebase for wordbankr
-  </a>
-                <a href="https://github.com/langcog/wordbankr/issues" target="_blank" class="list-group-item">
-    Issue tracker for wordbankr
-  </a>
-                <a href="https://github.com/langcog/wordbank" target="_blank" class="list-group-item">
-    Codebase for Wordbank
-  </a>
-                <a href="https://github.com/langcog/wordbank/issues" target="_blank" class="list-group-item">
-    Issue tracker for Wordbank
-  </a>
-                <a href="mailto:wordbank-contact@stanford.edu" target="_blank" class="list-group-item">
-    Contact us by email
-  </a>
-            </div>
-
-        </div>
-    </div>
-
 </div>
 
-<div class="row">
-    <hr>
-</div>
-
-<div class="row">
-    <h3>Meet the Wordbank team!</h3></div>
-
-<div class="row">
-
-    <div class="col-md-2">
-        <div class="thumbnail">
-            <a href="http://web.stanford.edu/~mcfrank" target="_blank">
-                <img src="{% static 'images/headshots/mike.jpg' %}">
-            </a>
-            <div class="caption">
-                <h3>Michael C. Frank</h3>
-                <p>Stanford University</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-2">
-        <div class="thumbnail">
-            <a href="http://mikabr.github.io" target="_blank">
-                <img src="{% static 'images/headshots/mika.jpg' %}">
-            </a>
-            <div class="caption">
-                <h3>Mika Braginsky</h3>
-                <p>MIT</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-2">
-        <div class="thumbnail">
-            <a href="http://www.thoughtfill.com" target="_blank">
-                <img src="{% static 'images/headshots/dan.jpg' %}">
-            </a>
-            <div class="caption">
-                <h3>Daniel Yurovsky</h3>
-                <p>University of Chicago</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-2">
-        <div class="thumbnail">
-            <a href="https://web.stanford.edu/group/langlearninglab/cgi-bin/research-associates/Virginia_Marchman,_Ph.D.php" target="_blank">
-                <img src="{% static 'images/headshots/virginia.jpg' %}">
-            </a>
-            <div class="caption">
-                <h3>Virginia Marchman</h3>
-                <p>Stanford University</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-2">
-        <div class="thumbnail">
-
-            <img src="{% static 'images/headshots/danielle.jpg' %}">
-
-            <div class="caption">
-                <h3>Danielle Kellier</h3>
-                <p>Stanford University</p>
-            </div>
-        </div>
-    </div>
-
-</div>
 
 <center>Thanks to <a href="http://www.brockferguson.com/">Brock Ferguson</a> for help with database design and optimization, and to Rose Schneider for logo design.</center>
 
 
 <script>
-var height = 475,
-    width = 500,
+var height = 425,
+    width = 450,
     format = d3.format(",d");
     sortItems = function(a, b) {
   return b.value - a.value;
