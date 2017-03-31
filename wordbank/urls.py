@@ -9,6 +9,7 @@ from instruments.views import *
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', Home.as_view(), name='home'),
+    url(r'about', About.as_view(), name='about'),
     url(r'analyses', Analyses.as_view(), name='analyses'),
     url(r'contributors', Contributors.as_view(), name='contributors'),
     url(r'publications', Publications.as_view(), name='publications'),
