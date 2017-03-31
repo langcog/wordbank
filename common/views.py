@@ -116,3 +116,8 @@ class Faq(View):
 
     def get(self, request):
         return render(request, 'faq.html', {})
+
+class About(View):
+
+    def get(self, request):
+        return render(request, 'about.html', {})
