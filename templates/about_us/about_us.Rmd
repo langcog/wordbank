@@ -5,7 +5,69 @@ output:
     highlight: tango
     theme: null
 ---
-  
+
+### What is Wordbank?
+
 Wordbank is an open database of children’s vocabulary growth, featuring data from [contributors around the world](http://wordbank.stanford.edu/contributors). 
 
 Wordbank archives data from the [MacArthur-Bates Communicative Development Inventory (MB-CDI)](http://mb-cdi.stanford.edu), a family of parent-report questionnaires and enables researchers to browse these data in [interactive analyses](http://wordbank.stanford.edu/analyses) and access them via the [wordbankr](http://github.com/langcog/wordbankr) R package. 
+
+### Who funds Wordbank?
+
+The team would like to thank our supporters!  Wordbank is currently funded by a grant from the National Science Foundation (# 1451577), as well as generous support from the MB-CDI Advisory Board.
+
+### Meet the Wordbank Team!
+
+
+```{r, echo=FALSE}
+library(htmltools)
+
+thumbnail <- function(first_name, last_name, institution, img, href) {
+  a <- div(class = "col-md-3",
+      div(class = "thumbnail",
+        if (href != "") {
+          a(name = paste0(first_name,"_",last_name), href = href, target="_blank",
+            img(src = img)
+          )
+        } else {
+          img(src = img)
+        },
+        div(class = "caption",
+          h3(first_name, br(),last_name),
+          p(institution)
+        )
+      )
+  )
+  HTML(gsub("&#39;","'", as.character(a)))
+}
+
+```
+
+```{r, echo=FALSE}
+HTML("{% load staticfiles %}")
+div(class="row",
+  div(class="col-md-1"),
+  
+  thumbnail("Michael C.","Frank", "Stanford University", "{% static 'images/headshots/mike.jpg' %}", "http://web.stanford.edu/~mcfrank"),
+  
+  thumbnail("Mika", "Braginsky", "MIT", "{% static 'images/headshots/mika.jpg' %}", "http://mikabr.github.io"),
+  
+  thumbnail("Daniel", "Yurovsky", "University of Chicago", "{% static 'images/headshots/dan.jpg' %}", "http://www.thoughtfill.com"),
+  
+  div(class="col-md-1")
+)
+br()
+
+div(class="row",
+  div(class="col-md-2"),
+  
+  thumbnail("Virginia","Marchman", "Stanford University", "{% static 'images/headshots/virginia.jpg' %}", "https://web.stanford.edu/group/langlearninglab/cgi-bin/research-associates/Virginia_Marchman,_Ph.D.php"),
+  
+  thumbnail("Danielle","Kellier", "Stanford University", "{% static 'images/headshots/danielle.jpg' %}", ""),
+  
+  div(class="col-md-3")
+)
+
+
+
+```
