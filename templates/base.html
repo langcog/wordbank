@@ -27,6 +27,7 @@
             <div class="navbar-collapse collapse">
                 <a class="navbar-brand" href="/">Wordbank</a>
                 <ul class="nav navbar-nav navbar-right">
+                    <li {% if request.path == '/about' %} class="active"{% endif %}><a href="/about">About</a></li>
                     <li {% if request.path == '/analyses' %} class="active"{% endif %}><a href="/analyses">Analyses</a></li>
                     <li {% if request.path == '/contributors' %} class="active"{% endif %}><a href="/contributors">Contributors</a></li>
                     <li {% if request.path == '/publications' %} class="active"{% endif %}><a href="/publications">Publications</a></li>
