@@ -5,6 +5,8 @@
 # 3. run:
 #    font_import(pattern = "xkcd", prompt=FALSE)
 
+```{r}
+
 source("../shiny_apps/vocab_norms/predictQR_fixed.R")
 library(tidyverse)
 library(quantregGrowth)
@@ -13,16 +15,27 @@ library(xkcd)
 library(stringr)
 library(directlabels)
 
-d <- get_administration_data(language = "English", form = "WG")
+```
 
-taus <-  c(0.1, 0.25, 0.5, 0.75, 0.9)
+
+```{r}
+
 text.size <- 28
 cex.size <- 1.6
+
+taus <-  c(0.1, 0.25, 0.5, 0.75, 0.9)
+ages <- 8:18
+
+```
+
+
+```{r}
+
+d <- get_administration_data(language = "English", form = "WG")
 
 mod <- gcrq(formula = comprehension ~ ps(age, monotone = 1, lambda = 1000), 
             tau = taus, data = d)
 
-ages <- 8:18
 newdata <- data.frame(age = ages)
 
 preds <- predictQR_fixed(mod, newdata = newdata) %>%
@@ -31,6 +44,10 @@ preds <- predictQR_fixed(mod, newdata = newdata) %>%
   gather(percentile, pred, starts_with("X")) %>%
   mutate(percentile = as.character(as.numeric(str_replace(percentile, "X", "")) * 100))
 
+```
+
+
+```{r}
 
 baby_words <- c("dog", "zebra", "rooster")
 
@@ -44,14 +61,21 @@ group_data <- item_data %>%
   group_by(definition, age) %>%
   summarise(prop = mean(numvalue, na.rm=T))
 
+```
+
+
+```{r}
 
 vocab_xkcd <- ggplot(preds, aes(x = age, y = pred)) + 
   geom_line(aes(col = percentile)) + 
   ylab("VOCAB") + 
-  xkcdaxis(xrange = c(7,19), yrange = c(0,400)) + 
+  xkcdaxis(xrange = c(7,19), yrange = c(0,400)) +
+  geom_dl(method = list(dl.trans(x = x + 0.3), "last.qp", cex = cex.size,
+                        fontfamily = "xkcd"), aes(label = percentile, colour = percentile)) + 
   theme_xkcd() + 
   theme(axis.line.x = element_blank(), 
         panel.border = element_blank(),
+        legend.position = "none",
         text = element_text(size = text.size))
 
 vocab_standard <- ggplot(preds, aes(x = age, y = pred)) + 
@@ -60,7 +84,9 @@ vocab_standard <- ggplot(preds, aes(x = age, y = pred)) +
   xlab("Age") +
   xlim(c(7,19)) +
   ylim(c(0,400)) +
-  labs(colour = "Percentile") +
+  labs(colour = "Percentile")  +
+  geom_dl(method = list(dl.trans(x = x + 0.3), "last.qp", cex = cex.size,
+                        fontfamily = "OpenSans"), aes(label = percentile, colour = percentile)) +
   theme(panel.grid.major = element_blank(), 
         axis.ticks = element_line(colour = "black"), 
         panel.background = element_blank(), 
@@ -68,7 +94,8 @@ vocab_standard <- ggplot(preds, aes(x = age, y = pred)) +
         legend.key = element_blank(), 
         strip.background = element_blank(), 
         text = element_text(size = text.size), 
-        axis.line = element_line(color = "black"))
+        axis.line = element_line(color = "black"),
+        legend.position = "none")
 
 items_standard <- ggplot(group_data, aes(x = age, y = prop, colour = definition, fill = definition, label = definition)) +
   geom_smooth(method = "loess",
@@ -104,11 +131,19 @@ items_xkcd <- ggplot(group_data, aes(x = age, y = prop)) +
         text = element_text(size = text.size),
         legend.position = "none")
 
+```
+
+
+```{r}
+
 object_list <- ls()
 
 for (i in object_list) {
   temp_obj <- get(i)
   if (is.ggplot(temp_obj)) {
-    ggsave(temp_obj, filename = paste0(i,".png"), width = 7, height = 5, units = "in")
+    ggsave(temp_obj, filename = paste0("../static/images/sample_plots/",i,".png"), width = 7, height = 5, units = "in")
   }
 }
+
+```
+
