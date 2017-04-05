@@ -42,7 +42,8 @@ preds <- predictQR_fixed(mod, newdata = newdata) %>%
   data.frame %>%
   mutate(age = ages) %>%
   gather(percentile, pred, starts_with("X")) %>%
-  mutate(percentile = as.character(as.numeric(str_replace(percentile, "X", "")) * 100))
+  mutate(percentile = as.character(as.numeric(str_replace(percentile, "X", "")) * 100)) %>%
+  mutate(pred_label = ifelse(percentile == 90, "90th percentile", paste0(percentile,"th")))
 
 ```
 
@@ -66,12 +67,13 @@ group_data <- item_data %>%
 
 ```{r}
 
+vocab_range <- c(min(preds$age)-1, max(preds$age) + 5)
 vocab_xkcd <- ggplot(preds, aes(x = age, y = pred)) + 
   geom_line(aes(col = percentile)) + 
   ylab("VOCAB") + 
-  xkcdaxis(xrange = c(7,19), yrange = c(0,400)) +
+  xkcdaxis(xrange = vocab_range, yrange = c(0,400)) +
   geom_dl(method = list(dl.trans(x = x + 0.3), "last.qp", cex = cex.size,
-                        fontfamily = "xkcd"), aes(label = percentile, colour = percentile)) + 
+                        fontfamily = "xkcd"), aes(label = pred_label, colour = percentile)) + 
   theme_xkcd() + 
   theme(axis.line.x = element_blank(), 
         panel.border = element_blank(),
@@ -82,11 +84,11 @@ vocab_standard <- ggplot(preds, aes(x = age, y = pred)) +
   geom_line(aes(col = percentile)) + 
   ylab("Vocab") +
   xlab("Age") +
-  xlim(c(7,19)) +
+  xlim(vocab_range) +
   ylim(c(0,400)) +
   labs(colour = "Percentile")  +
   geom_dl(method = list(dl.trans(x = x + 0.3), "last.qp", cex = cex.size,
-                        fontfamily = "OpenSans"), aes(label = percentile, colour = percentile)) +
+                        fontfamily = "OpenSans"), aes(label = pred_label, colour = percentile)) +
   theme(panel.grid.major = element_blank(), 
         axis.ticks = element_line(colour = "black"), 
         panel.background = element_blank(), 
