@@ -76,14 +76,19 @@ Wordbank: An open database of children's vocabulary development
 
 <div class="row">
     <div class="col-md-12 lead">
-        <p><b>Wordbank</b> is an open database of information about children's vocabulary growth.</p>
+<!--         <p><b>Wordbank</b> is an open database of information about children's vocabulary growth.</p>
 
         <p>Wordbank archives data from the <a href="http://mb-cdi.stanford.edu" target="_blank">MacArthur-Bates Communicative Development Inventory</a> (MB-CDI), a family of parent-report questionnaires. Wordbank enables researchers to analyze MB-CDI data
             in terms of aggregate vocabulary, individual items, demographic variables, and more. It provides interactive visualizations, exploratory reports, and data export tools.</p>
         <p>Wordbank is open access! You can use the <a href="https://github.com/langcog/wordbankr" target="_blank">wordbankr</a> package to access Wordbank data from <a href="http://www.r-project.org/" target="_blank">R</a>.
             <p>Feel free to report a bug or request a feature by <a href="https://github.com/langcog/wordbank/issues" target="_blank">logging an issue on GitHub</a>, and to <a href="mailto:wordbank-contact@stanford.edu" target="_blank">contact us</a> with
-                any questions or comments.</p>
+                any questions or comments.</p> -->
+
+        {% include "homepage/homepage.html" %}
+
     </div>
+
+
 
 </div>
 
@@ -109,6 +114,7 @@ var tip = d3.tip()
   .attr('class', 'd3-tip')
   .html(function(d) {
     return format(d.label);
+    // return "<center>" + d.name + ": <br>" + d.label + "</center>"
   })
 svg.call(tip);
 root = {{ lang_stats|safe }};

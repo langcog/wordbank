@@ -6,16 +6,6 @@ output:
     theme: null
 ---
 
-### What is Wordbank?
-
-Wordbank is an open database of children’s vocabulary growth, featuring data from [contributors around the world](http://wordbank.stanford.edu/contributors). 
-
-Wordbank archives data from the [MacArthur-Bates Communicative Development Inventory (MB-CDI)](http://mb-cdi.stanford.edu), a family of parent-report questionnaires and enables researchers to browse these data in [interactive analyses](http://wordbank.stanford.edu/analyses) and access them via the [wordbankr](http://github.com/langcog/wordbankr) R package. 
-
-### Who funds Wordbank?
-
-The team would like to thank our supporters!  Wordbank is currently funded by a grant from the National Science Foundation (#1451577), as well as generous support from the MB-CDI Advisory Board.
-
 ### Meet the Wordbank Team!
 
 
@@ -71,5 +61,16 @@ div(class="row",
 
 
 ```
+
+### Who funds Wordbank?
+
+The team would like to thank our supporters!  Wordbank is currently funded by a grant from the National Science Foundation (#1451577), as well as generous support from the MB-CDI Advisory Board.
+
+```{r, echo = FALSE}
+
+hr()
+
+```
+
 
 Thanks to [Brock Ferguson](http://www.brockferguson.com/) for help with database design and optimization, and to Rose Schneider for logo design.
