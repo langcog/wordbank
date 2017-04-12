@@ -113,8 +113,8 @@ var svg = d3.select("#langStatsChart").append("svg")
 var tip = d3.tip()
   .attr('class', 'd3-tip')
   .html(function(d) {
-    return format(d.label);
-    // return "<center>" + d.name + ": <br>" + d.label + "</center>"
+    // return format(d.label);
+    return "<center>" + d.name + ": <br>" + d.label + "</center>"
   })
 svg.call(tip);
 root = {{ lang_stats|safe }};
