@@ -1,0 +1,100 @@
+```{r}
+setwd("~/Documents/repo/wordbank/incoming_data/Latvian_Urek/")
+
+library(tidyverse)
+library(magrittr)
+```
+
+
+```{r}
+raw_latvian_ws <- read_tsv("LV_words_and_sentences.tsv")
+raw_latvian_wg <- read_tsv("LV_words_and_gestures.tsv")
+
+latvian_wg_dict <- unique(raw_latvian_wg[c("stimulus", "subsection")])
+latvian_ws_dict <- unique(raw_latvian_ws[c("stimulus", "subsection")])
+
+latvian_wg_dict$item_ID <- paste0("item_",row.names(latvian_wg_dict))
+latvian_ws_dict$item_ID <- paste0("item_",row.names(latvian_ws_dict))
+```
+
+```{r}
+latvian_wg <- left_join(raw_latvian_wg, latvian_wg_dict, by = c("stimulus", "subsection")) %>%
+  select(-positive_response, -part, -section, -subsection, -stimulus) %>%
+  group_by(id, age,education_father,education_mother,gender,number_of_children, other_language, hours_per_week_other_lang, respondent,birth_order,education_father_num, education_mother_num) %>%
+  spread(item_ID, score)
+
+latvian_wg <- latvian_wg[,c(names(latvian_wg)[1:12],latvian_wg_dict$item_ID)]
+
+latvian_ws <- left_join(raw_latvian_ws, latvian_ws_dict, by = c("stimulus", "subsection")) %>%
+  select(-positive_response, -part, -section, -subsection, -stimulus) %>%
+  group_by(id, age,education_father,education_mother,gender,number_of_children, other_language, hours_per_week_other_lang, respondent,birth_order,education_father_num, education_mother_num) %>%
+  spread(item_ID, score)
+
+latvian_ws <- latvian_ws[,c(names(latvian_ws)[1:12],latvian_ws_dict$item_ID)]
+```
+
+```{r}
+latvian_wg_instrument <- latvian_wg_dict %>%
+  rename(category = subsection, itemID = item_ID) %>%
+  mutate(type = ifelse(!is.na(category) & category != '', 'word',NA),
+         choices = ifelse(!is.na(category) & category != '', 'understands; produces',NA),
+         definition = '',
+         gloss = '',
+         complexity_category = '',
+         uni_lemma = '')
+
+latvian_wg_instrument$category[latvian_wg_instrument$category == "sound_effects"] <- "sounds"
+latvian_wg_instrument$category[latvian_wg_instrument$category == "food_and_drink"] <- "food_drink"
+latvian_wg_instrument$category[latvian_wg_instrument$category == "bodyparts"] <- "body_parts"
+latvian_wg_instrument$category[latvian_wg_instrument$category == "furniture_and_rooms"] <- "furniture_and_rooms"
+latvian_wg_instrument$category[latvian_wg_instrument$category == "small_household_items"] <- "household"
+latvian_wg_instrument$category[latvian_wg_instrument$category == "outside_things"] <- "outside"
+latvian_wg_instrument$category[latvian_wg_instrument$category == "words_about_time"] <- "time_words"
+latvian_wg_instrument$category[latvian_wg_instrument$category == "prepositions_and_locations"] <- "locations"
+
+
+latvian_wg_instrument$item <- gsub("__","_", stringi::stri_trans_general(
+  paste0(row.names(latvian_wg_dict),"_",substr(
+    latvian_wg_dict$stimulus,1,10)), "latin-ascii"))
+
+latvian_wg_instrument <- latvian_wg_instrument[,c("itemID", "item", "type","choices", "category","definition", "gloss","complexity_category","uni_lemma")]
+
+latvian_ws_instrument <- latvian_ws_dict %>%
+  rename(category = subsection, itemID = item_ID) %>%
+  mutate(type = ifelse(!is.na(category) & category != '', 'word',NA),
+         choices = ifelse(!is.na(category) & category != '', 'produces',NA),
+         definition = '',
+         gloss = '',
+         complexity_category = '',
+         uni_lemma = '')
+
+latvian_ws_instrument$category[latvian_ws_instrument$category == "sound_effects"] <- "sounds"
+latvian_ws_instrument$category[latvian_ws_instrument$category == "food_and_drink"] <- "food_drink"
+latvian_ws_instrument$category[latvian_ws_instrument$category == "bodyparts"] <- "body_parts"
+latvian_ws_instrument$category[latvian_ws_instrument$category == "furniture_and_rooms"] <- "furniture_and_rooms"
+latvian_ws_instrument$category[latvian_ws_instrument$category == "small_household_items"] <- "household"
+latvian_ws_instrument$category[latvian_ws_instrument$category == "outside_things"] <- "outside"
+latvian_ws_instrument$category[latvian_ws_instrument$category == "words_about_time"] <- "time_words"
+latvian_ws_instrument$category[latvian_ws_instrument$category == "prepositions_and_locations"] <- "locations"
+latvian_ws_instrument$category[latvian_ws_instrument$category == "places_to_go"] <- "places"
+latvian_ws_instrument$category[latvian_ws_instrument$category == "auxiliary_verbs"] <- "helping_verbs"
+
+
+latvian_ws_instrument$item <- gsub("__","_", stringi::stri_trans_general(
+  paste0(row.names(latvian_ws_dict),"_",substr(
+    latvian_ws_dict$stimulus,1,10)), "latin-ascii"))
+
+latvian_ws_instrument <- latvian_ws_instrument[,c("itemID", "item", "type","choices", "category","definition", "gloss","complexity_category","uni_lemma")]
+
+write_csv(latvian_wg_instrument, "[Latvian_WG].csv", na="")
+write_csv(latvian_ws_instrument, "[Latvian_WS].csv", na="")
+```
+
+```{r}
+
+```
+
+```{r}
+write_csv(latvian_wg, "LatvianWG_Urek_data.csv", na="")
+write_csv(latvian_ws, "LatvianWS_Urek_data.csv", na="")
+```
