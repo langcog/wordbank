@@ -1,0 +1,15 @@
+type,value,data_value
+sex,M,boy
+sex,F,girl
+mom_ed,primary,pamatizglītība
+mom_ed,secondary,vidējā izglītība
+mom_ed,some college,1. līmeņa augstākā izglītība (koledža)
+mom_ed,some college,vidējā profesionālā izglītība
+mom_ed,some college,students
+mom_ed,college,augstākā izglītība
+mom_ed,graduate,maģistra grāds
+mom_ed,graduate,doktora grāds
+word,produces,understand_use
+word,understands,understand
+word,,do_not_understand
+word,,

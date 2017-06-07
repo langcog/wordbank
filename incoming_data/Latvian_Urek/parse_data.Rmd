@@ -91,10 +91,31 @@ write_csv(latvian_ws_instrument, "[Latvian_WS].csv", na="")
 ```
 
 ```{r}
+latvian_wg_fields <- data_frame(field = '',column = names(latvian_wg), group = '', type = '')
 
+latvian_ws_fields <- data_frame(field = '',column = names(latvian_ws), group = '', type = '')
+
+write_csv(latvian_wg_fields, "LatvianWG_Urek_fields.csv", na="")
+write_csv(latvian_ws_fields, "LatvianWS_Urek_fields.csv", na="")
 ```
 
 ```{r}
+
+#remove tests with all blank responses
+
+empty_wg <- raw_latvian_wg %>%
+            group_by(id) %>%
+            summarise(num_understood = sum(is.na(positive_response)), 
+                      n = n()) %>%
+            filter(num_understood == n)
+
+
+empty_ws <- raw_latvian_ws %>%
+            group_by(id) %>%
+            summarise(num_understood = sum(is.na(positive_response)), 
+                      n = n()) %>%
+            filter(num_understood == n)
+
 write_csv(latvian_wg, "LatvianWG_Urek_data.csv", na="")
 write_csv(latvian_ws, "LatvianWS_Urek_data.csv", na="")
 ```
