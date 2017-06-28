@@ -350,5 +350,21 @@
         "age_min": 12,
         "age_max": 25,
         "has_grammar": false
-    }     
+    },
+    {
+        "language": "Latvian",
+        "form": "WG",
+        "file": "raw_data/Latvian_WG/[Latvian_WG].csv",
+        "age_min": 8,
+        "age_max": 16,
+        "has_grammar": false
+    },
+    {
+        "language": "Latvian",
+        "form": "WS",
+        "file": "raw_data/Latvian_WS/[Latvian_WS].csv",
+        "age_min": 17,
+        "age_max": 36,
+        "has_grammar": false
+    }
 ]
