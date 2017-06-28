@@ -737,5 +737,29 @@
         "longitudinal": true,
         "contributor": "Caroline Floccia, Plymouth University",
         "citation": "Floccia, C. (2017). Data collected with the Oxford CDI over a course of 5 years in Plymouth Babylab, UK. With the permission of Plunkett, K. and the Oxford CDI from Hamilton, A., Plunkett, K., & Schafer, G., (2000). Infant vocabulary development assessed with a British Communicative Development Inventory: Lower scores in the UK than the USA. Journal of Child Language, 27, 689-705."
+    },
+    {
+        "name": "Urek",
+        "dataset": "",
+        "instrument_language": "Latvian",
+        "instrument_form": "WG",
+        "file": "raw_data/Latvian_WG/LatvianWG_Urek.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": false,
+        "contributor": "Olga Urek, The Arctic University of Norway",
+        "citation": "Urek, Olga, Anna Vulāne, Roberts Darģis, Agrita Tauriņa, Tija Zīriņa, Hanne Gram Simonsen (to appear) Latvian CDI: methodology, developmental trends and cross-linguistic comparison."
+    },
+    {
+        "name": "Urek",
+        "dataset": "",
+        "instrument_language": "Latvian",
+        "instrument_form": "WS",
+        "file": "raw_data/Latvian_WS/LatvianWS_Urek.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": false,
+        "contributor": "Olga Urek, The Arctic University of Norway",
+        "citation": "Urek, Olga, Anna Vulāne, Roberts Darģis, Agrita Tauriņa, Tija Zīriņa, Hanne Gram Simonsen (to appear) Latvian CDI: methodology, developmental trends and cross-linguistic comparison."
     }
 ]
