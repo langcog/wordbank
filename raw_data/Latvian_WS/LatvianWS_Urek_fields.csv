@@ -1,7 +1,7 @@
 field,column,group,type
 data_age,age,admin,data_age
 ,education_father,,
-mom_ed,education_mother,child,mom_ed
+,education_mother,,
 sex,gender,child,sex
 study_id,id,child,study_id
 ,number_of_children,,
@@ -10,7 +10,7 @@ study_id,id,child,study_id
 ,respondent,,
 birth_order,birth_order,child,birth_order
 ,education_father_num,,
-,education_mother_num,,
+mom_ed,education_mother_num,child,mom_ed
 item_1,item_1,item,word
 item_2,item_2,item,word
 item_3,item_3,item,word
