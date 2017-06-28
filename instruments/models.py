@@ -43,3 +43,5 @@ from schemas.Mandarin_IC import *
 from schemas.Czech_WS import *
 from schemas.Australian_English_WS import *
 from schemas.English_British_Oxford_CDI import *
+from schemas.Latvian_WG import *
+from schemas.Latvian_WS import *
