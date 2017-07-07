@@ -1,0 +1,18 @@
+type,value,data_value
+sex,M,M
+sex,F,F
+word,produces,P
+word,understands,U
+word,,N
+word,,
+combine,often,O
+combine,sometimes,S
+combine,not yet,N
+combine,not yet,
+sentence_structure,often,O
+sentence_structure,sometimes,S
+sentence_structure,not yet,N
+sentence_structure,not yet,
+complexity,complex,2
+complexity,simple,1
+complexity,simple,

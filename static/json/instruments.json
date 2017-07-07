@@ -366,5 +366,21 @@
         "age_min": 17,
         "age_max": 36,
         "has_grammar": false
+    },
+    {
+        "language": "Korean",
+        "form": "WG",
+        "file": "raw_data/Korean_WG/[Korean_WG].csv",
+        "age_min": 8,
+        "age_max": 17,
+        "has_grammar": false
+    },
+    {
+        "language": "Korean",
+        "form": "WS",
+        "file": "raw_data/Korean_WS/[Korean_WS].csv",
+        "age_min": 17,
+        "age_max": 36,
+        "has_grammar": true
     }
 ]

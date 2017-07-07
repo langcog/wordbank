@@ -1,0 +1,680 @@
+itemID,item,type,category,choices,definition,gloss,complexity_category,uni_lemma
+item_1,item_001,word,sounds,understands; produces,꽥꽥,quack quack,,quack quack
+item_2,item_002,word,sounds,understands; produces,꿀꿀,oink oink,,oink
+item_3,item_003,word,sounds,understands; produces,똑똑,knock knock,,knock knock
+item_4,item_004,word,sounds,understands; produces,멍멍,woof woof,,woof woof
+item_5,item_005,word,sounds,understands; produces,빵빵,honk honk,,beep beep
+item_6,item_006,word,sounds,understands; produces,야옹,meow,,meow
+item_7,item_007,word,sounds,understands; produces,얌얌,yum yum,,yum yum
+item_8,item_008,word,sounds,understands; produces,어흥,roar,,
+item_9,item_009,word,sounds,understands; produces,음매,moo,,moo
+item_10,item_010,word,sounds,understands; produces,짹짹,tweet tweet,,tweet tweet
+item_11,item_011,word,sounds,understands; produces,칙칙폭폭,choo choo,,choo choo
+item_12,item_012,word,vehicles,understands; produces,기차,train,,train
+item_13,item_013,word,vehicles,understands; produces,배,boat,,boat
+item_14,item_014,word,vehicles,understands; produces,버스,bus,,bus
+item_15,item_015,word,vehicles,understands; produces,비행기,airplane,,airplane
+item_16,item_016,word,vehicles,understands; produces,불자동차/소방차,firetruck,,firetruck
+item_17,item_017,word,vehicles,understands; produces,썰매,sled,,
+item_18,item_018,word,vehicles,understands; produces,오토바이,motorcycle,,motorcycle
+item_19,item_019,word,vehicles,understands; produces,유모차,stroller,,stroller
+item_20,item_020,word,vehicles,understands; produces,자전거,bicycle,,bicycle
+item_21,item_021,word,vehicles,understands; produces,차/자동차,car,,car
+item_22,item_022,word,vehicles,understands; produces,택시,taxi,,
+item_23,item_023,word,vehicles,understands; produces,트럭,truck,,truck
+item_24,item_024,word,vehicles,understands; produces,헬리콥터,helicopter,,
+item_25,item_025,word,toys,understands; produces,공,ball,,ball
+item_26,item_026,word,toys,understands; produces,로봇,robot,,
+item_27,item_027,word,toys,understands; produces,블록,block,,block
+item_28,item_028,word,toys,understands; produces,비누방울,bubbles,,bubbles
+item_29,item_029,word,toys,understands; produces,선물,present,,present
+item_30,item_030,word,toys,understands; produces,연필,pencil,,
+item_31,item_031,word,toys,understands; produces,인형,doll,,doll
+item_32,item_032,word,toys,understands; produces,장난감,toy,,toy (object)
+item_33,item_033,word,toys,understands; produces,종이,paper,,paper
+item_34,item_034,word,toys,understands; produces,책,book,,book
+item_35,item_035,word,toys,understands; produces,총,gun,,
+item_36,item_036,word,toys,understands; produces,크레용/크레파스,crayon,,crayon
+item_37,item_037,word,toys,understands; produces,풀,glue,,
+item_38,item_038,word,toys,understands; produces,풍선,balloon,,balloon
+item_39,item_039,word,animals,understands; produces,개,dog,,dog
+item_40,item_040,word,animals,understands; produces,개구리,frog,,frog
+item_41,item_041,word,animals,understands; produces,개미,ant,,ant
+item_42,item_042,word,animals,understands; produces,거북이,turtle,,turtle
+item_43,item_043,word,animals,understands; produces,거위,goose,,goose
+item_44,item_044,word,animals,understands; produces,고양이,cat,,cat
+item_45,item_045,word,animals,understands; produces,곰,bear,,bear
+item_46,item_046,word,animals,understands; produces,공룡,dinosaur,,
+item_47,item_047,word,animals,understands; produces,기린,giraffe,,giraffe
+item_48,item_048,word,animals,understands; produces,나비,butterfly,,butterfly
+item_49,item_049,word,animals,understands; produces,다람쥐,squirrel,,squirrel
+item_50,item_050,word,animals,understands; produces,닭,chicken (animal),,chicken (animal)
+item_51,item_051,word,animals,understands; produces,당나귀,donkey,,donkey
+item_52,item_052,word,animals,understands; produces,동물,animal,,animal
+item_53,item_053,word,animals,understands; produces,돼지,pig,,pig
+item_54,item_054,word,animals,understands; produces,말,horse,,horse
+item_55,item_055,word,animals,understands; produces,물고기,fish,,fish (animal)
+item_56,item_056,word,animals,understands; produces,뱀,snake,,snake
+item_57,item_057,word,animals,understands; produces,벌,bee,,bee
+item_58,item_058,word,animals,understands; produces,벌레,bug,,bug
+item_59,item_059,word,animals,understands; produces,병아리,chick,,chick
+item_60,item_060,word,animals,understands; produces,부엉이,owl,,owl
+item_61,item_061,word,animals,understands; produces,비둘기,pigeon,,
+item_62,item_062,word,animals,understands; produces,사슴,deer,,deer
+item_63,item_063,word,animals,understands; produces,사자,lion,,lion
+item_64,item_064,word,animals,understands; produces,새,bird,,bird
+item_65,item_065,word,animals,understands; produces,소,cow,,cow
+item_66,item_066,word,animals,understands; produces,송아지,calf,,calf
+item_67,item_067,word,animals,understands; produces,악어,alligator,,crocodile
+item_68,item_068,word,animals,understands; produces,양,sheep,,sheep
+item_69,item_069,word,animals,understands; produces,여우,fox,,fox
+item_70,item_070,word,animals,understands; produces,염소,goat,,goat
+item_71,item_071,word,animals,understands; produces,오리,duck,,duck
+item_72,item_072,word,animals,understands; produces,원숭이,monkey,,monkey
+item_73,item_073,word,animals,understands; produces,쥐,mouse,,mouse
+item_74,item_074,word,animals,understands; produces,참새,sparrow,,sparrow
+item_75,item_075,word,animals,understands; produces,코끼리,elephant,,elephant
+item_76,item_076,word,animals,understands; produces,토끼,rabbit,,
+item_77,item_077,word,animals,understands; produces,펭귄,penguin,,penguin
+item_78,item_078,word,animals,understands; produces,하마,hippo,,hippopotamus
+item_79,item_079,word,animals,understands; produces,호랑이,tiger,,tiger
+item_80,item_080,word,clothing,understands; produces,가방,bag,,bag
+item_81,item_081,word,clothing,understands; produces,구두,dress shoes,,
+item_82,item_082,word,clothing,understands; produces,기저귀,diaper,,diaper
+item_83,item_083,word,clothing,understands; produces,단추,button,,button
+item_84,item_084,word,clothing,understands; produces,모자,hat,,hat
+item_85,item_085,word,clothing,understands; produces,목걸이,necklace,,necklace
+item_86,item_086,word,clothing,understands; produces,바지,pants,,pants
+item_87,item_087,word,clothing,understands; produces,목도리,scarf,,scarf
+item_88,item_088,word,clothing,understands; produces,신/신발,shoe,,shoe
+item_89,item_089,word,clothing,understands; produces,양말,sock,,sock
+item_90,item_090,word,clothing,understands; produces,옷/꼬까,dress,,dress
+item_91,item_091,word,clothing,understands; produces,운동화,sneakers,,
+item_92,item_092,word,clothing,understands; produces,잠바,jacket,,jacket
+item_93,item_093,word,clothing,understands; produces,잠옷,pajamas,,pajamas
+item_94,item_094,word,clothing,understands; produces,장갑,gloves,,gloves
+item_95,item_095,word,clothing,understands; produces,주머니,pocket,,
+item_96,item_096,word,clothing,understands; produces,치마,skirt,,skirt
+item_97,item_097,word,clothing,understands; produces,코트/외투,coat,,coat
+item_98,item_098,word,clothing,understands; produces,팬티,underpants,,underpants
+item_99,item_099,word,clothing,understands; produces,허리띠,belt,,
+item_100,item_100,word,furniture_rooms,understands; produces,계단,stairs,,stairs
+item_101,item_101,word,furniture_rooms,understands; produces,냉장고,refrigerator,,refrigerator
+item_102,item_102,word,furniture_rooms,understands; produces,목욕탕,bathtub,,bathtub
+item_103,item_103,word,furniture_rooms,understands; produces,문,door,,door
+item_104,item_104,word,furniture_rooms,understands; produces,방,room,,room
+item_105,item_105,word,furniture_rooms,understands; produces,베개,pillow,,pillow
+item_106,item_106,word,furniture_rooms,understands; produces,부엌,kitchen,,kitchen
+item_107,item_107,word,furniture_rooms,understands; produces,서랍,drawer,,drawer
+item_108,item_108,word,furniture_rooms,understands; produces,세탁기,washing machine,,washing machine
+item_109,item_109,word,furniture_rooms,understands; produces,소파,sofa,,couch
+item_110,item_110,word,furniture_rooms,understands; produces,옷장,closet,,closet
+item_111,item_111,word,furniture_rooms,understands; produces,유리,glass,,glass
+item_112,item_112,word,furniture_rooms,understands; produces,의자,chair,,chair
+item_113,item_113,word,furniture_rooms,understands; produces,이불,blanket,,blanket
+item_114,item_114,word,furniture_rooms,understands; produces,전자레인지,microwave,,
+item_115,item_115,word,furniture_rooms,understands; produces,지하실,basement,,
+item_116,item_116,word,furniture_rooms,understands; produces,창문,window,,window
+item_117,item_117,word,furniture_rooms,understands; produces,침대,bed,,bed
+item_118,item_118,word,furniture_rooms,understands; produces,텔레비전,TV,,
+item_119,item_119,word,furniture_rooms,understands; produces,피아노,piano,,
+item_120,item_120,word,furniture_rooms,understands; produces,화장실,bathroom,,bathroom
+item_121,item_121,word,food_drink,understands; produces,감,persimmon,,
+item_122,item_122,word,food_drink,understands; produces,감자,potato,,potato
+item_123,item_123,word,food_drink,understands; produces,계란/달걀,egg,,egg
+item_124,item_124,word,food_drink,understands; produces,고구마,sweet potato,,
+item_125,item_125,word,food_drink,understands; produces,고기,meat,,meat
+item_126,item_126,word,food_drink,understands; produces,과일,fruit,,fruit
+item_127,item_127,word,food_drink,understands; produces,과자/까까,cracker,,cracker
+item_128,item_128,word,food_drink,understands; produces,국,soup,,soup
+item_129,item_129,word,food_drink,understands; produces,국수,noodles,,noodles
+item_130,item_130,word,food_drink,understands; produces,귤,mandarin,,
+item_131,item_131,word,food_drink,understands; produces,김,dried seaweed,,
+item_132,item_132,word,food_drink,understands; produces,김치,kimchi,,
+item_133,item_133,word,food_drink,understands; produces,껌,gum,,
+item_134,item_134,word,food_drink,understands; produces,닭고기,chicken (food),,chicken (food)
+item_135,item_135,word,food_drink,understands; produces,당근,carrot,,
+item_136,item_136,word,food_drink,understands; produces,도너츠,donut,,
+item_137,item_137,word,food_drink,understands; produces,딸기,strawberry,,
+item_138,item_138,word,food_drink,understands; produces,땅콩,peanuts,,peanut
+item_139,item_139,word,food_drink,understands; produces,떡,rice cake,,
+item_140,item_140,word,food_drink,understands; produces,라면,ramen,,
+item_141,item_141,word,food_drink,understands; produces,메론,melon,,
+item_142,item_142,word,food_drink,understands; produces,무/무우,radish,,
+item_143,item_143,word,food_drink,understands; produces,물,water,,water (beverage)
+item_144,item_144,word,food_drink,understands; produces,바나나,banana,,banana
+item_145,item_145,word,food_drink,understands; produces,밤,chestnut,,
+item_146,item_146,word,food_drink,understands; produces,배추,cabbage,,cabbage
+item_147,item_147,word,food_drink,understands; produces,복숭아,peach,,peach
+item_148,item_148,word,food_drink,understands; produces,빵,bread,,bread
+item_149,item_149,word,food_drink,understands; produces,사과,apple,,apple
+item_150,item_150,word,food_drink,understands; produces,사이다,Lemon-lime soda,,
+item_151,item_151,word,food_drink,understands; produces,사탕,candy,,candy
+item_152,item_152,word,food_drink,understands; produces,생선,fish,,fish (food)
+item_153,item_153,word,food_drink,understands; produces,설탕,sugar,,sugar
+item_154,item_154,word,food_drink,understands; produces,소금,salt,,
+item_155,item_155,word,food_drink,understands; produces,수박,watermelon,,watermelon
+item_156,item_156,word,food_drink,understands; produces,스파게티,spaghetti,,spaghetti
+item_157,item_157,word,food_drink,understands; produces,쌀,rice,,rice
+item_158,item_158,word,food_drink,understands; produces,아이스크림,ice cream,,ice cream
+item_159,item_159,word,food_drink,understands; produces,얼음,ice,,
+item_160,item_160,word,food_drink,understands; produces,오렌지,orange (food),,orange (food)
+item_161,item_161,word,food_drink,understands; produces,옥수수,corn,,
+item_162,item_162,word,food_drink,understands; produces,요구르트,yogurt,,yogurt
+item_163,item_163,word,food_drink,understands; produces,우유,milk,,milk
+item_164,item_164,word,food_drink,understands; produces,음식,food,,food
+item_165,item_165,word,food_drink,understands; produces,주스,juice,,juice
+item_166,item_166,word,food_drink,understands; produces,초콜렛,chocolate,,chocolate
+item_167,item_167,word,food_drink,understands; produces,치즈,cheese,,cheese
+item_168,item_168,word,food_drink,understands; produces,커피,coffee,,coffee
+item_169,item_169,word,food_drink,understands; produces,케이크,cake,,cake
+item_170,item_170,word,food_drink,understands; produces,콜라,Coca Cola,,
+item_171,item_171,word,food_drink,understands; produces,콩,beans,,beans
+item_172,item_172,word,food_drink,understands; produces,토마토,tomato,,tomato
+item_173,item_173,word,food_drink,understands; produces,포도,grapes,,grapes
+item_174,item_174,word,food_drink,understands; produces,피자,pizza,,pizza
+item_175,item_175,word,food_drink,understands; produces,핫도그,hot dog,,hot dog
+item_176,item_176,word,food_drink,understands; produces,햄버거,hamburger,,
+item_177,item_177,word,food_drink,understands; produces,호떡,rice pancake,,
+item_178,item_178,word,food_drink,understands; produces,호박,pumpkin,,
+item_179,item_179,word,body_parts,understands; produces,고추,penis,,penis
+item_180,item_180,word,body_parts,understands; produces,귀,ear,,ear
+item_181,item_181,word,body_parts,understands; produces,눈,eye,,eye
+item_182,item_182,word,body_parts,understands; produces,다리,leg,,leg
+item_183,item_183,word,body_parts,understands; produces,등,back (body part),,back
+item_184,item_184,word,body_parts,understands; produces,똥꼬,anus,,
+item_185,item_185,word,body_parts,understands; produces,머리,head,,head
+item_186,item_186,word,body_parts,understands; produces,머리카락,hair,,hair
+item_187,item_187,word,body_parts,understands; produces,목,neck,,neck
+item_188,item_188,word,body_parts,understands; produces,몸,body,,
+item_189,item_189,word,body_parts,understands; produces,무릎,knee,,knee
+item_190,item_190,word,body_parts,understands; produces,발,foot,,foot
+item_191,item_191,word,body_parts,understands; produces,발목,ankle,,
+item_192,item_192,word,body_parts,understands; produces,발톱,toenail,,
+item_193,item_193,word,body_parts,understands; produces,배,tummy,,tummy
+item_194,item_194,word,body_parts,understands; produces,배꼽,belly button,,belly button
+item_195,item_195,word,body_parts,understands; produces,뺨,cheek,,cheek
+item_196,item_196,word,body_parts,understands; produces,손,hand,,hand
+item_197,item_197,word,body_parts,understands; produces,손가락,finger,,finger
+item_198,item_198,word,body_parts,understands; produces,어깨,shoulder,,
+item_199,item_199,word,body_parts,understands; produces,얼굴,face,,face
+item_200,item_200,word,body_parts,understands; produces,엉덩이,hip,,
+item_201,item_201,word,body_parts,understands; produces,이/이빨,teeth,,tooth
+item_202,item_202,word,body_parts,understands; produces,입,mouth,,mouth
+item_203,item_203,word,body_parts,understands; produces,입술,lips,,
+item_204,item_204,word,body_parts,understands; produces,코,nose,,nose
+item_205,item_205,word,body_parts,understands; produces,턱,chin,,chin
+item_206,item_206,word,body_parts,understands; produces,팔,arm,,arm
+item_207,item_207,word,body_parts,understands; produces,피,blood,,
+item_208,item_208,word,body_parts,understands; produces,허리,waist,,
+item_209,item_209,word,body_parts,understands; produces,혀,tongue,,tongue
+item_210,item_210,word,household,understands; produces,가위,scissors,,scissors
+item_211,item_211,word,household,understands; produces,걸레,rag,,rag
+item_212,item_212,word,household,understands; produces,그릇,bowl,,bowl
+item_213,item_213,word,household,understands; produces,그림,picture,,picture
+item_214,item_214,word,household,understands; produces,돈,money,,money
+item_215,item_215,word,household,understands; produces,라디오,radio,,radio
+item_216,item_216,word,household,understands; produces,망치,hammer,,hammer
+item_217,item_217,word,household,understands; produces,못,nail (household),,
+item_218,item_218,word,household,understands; produces,병,bottle,,bottle
+item_219,item_219,word,household,understands; produces,비누,soap,,soap
+item_220,item_220,word,household,understands; produces,빗,comb,,comb (object)
+item_221,item_221,word,household,understands; produces,빗자루,broom,,broom
+item_222,item_222,word,household,understands; produces,상자,box,,box
+item_223,item_223,word,household,understands; produces,수건,towel,,towel
+item_224,item_224,word,household,understands; produces,숟가락,spoon,,spoon
+item_225,item_225,word,household,understands; produces,시계,clock,,clock
+item_226,item_226,word,household,understands; produces,쓰레기,trash,,trash
+item_227,item_227,word,household,understands; produces,쓰레기통/휴지통,trash bin,,
+item_228,item_228,word,household,understands; produces,안경,glasses,,glasses
+item_229,item_229,word,household,understands; produces,약,medicine,,medicine
+item_230,item_230,word,household,understands; produces,열쇠,key,,keys
+item_231,item_231,word,household,understands; produces,옷걸이,hanger,,
+item_232,item_232,word,household,understands; produces,우산,umbrella,,umbrella
+item_233,item_233,word,household,understands; produces,쟁반,tray,,
+item_234,item_234,word,household,understands; produces,전화,telephone,,telephone
+item_235,item_235,word,household,understands; produces,접시,dish,,plate
+item_236,item_236,word,household,understands; produces,젓가락,chopsticks,,
+item_237,item_237,word,household,understands; produces,지갑,purse,,purse
+item_238,item_238,word,household,understands; produces,청소기,vacuum,,vacuum
+item_239,item_239,word,household,understands; produces,치약,toothpaste,,
+item_240,item_240,word,household,understands; produces,칫솔,toothbrush,,toothbrush
+item_241,item_241,word,household,understands; produces,카메라,camera,,camera
+item_242,item_242,word,household,understands; produces,칼,knife,,knife
+item_243,item_243,word,household,understands; produces,컵,cup,,cup
+item_244,item_244,word,household,understands; produces,포크,fork,,fork
+item_245,item_245,word,household,understands; produces,휴지,toilet paper/paper towel,,tissue
+item_246,item_246,word,outside,understands; produces,구름,cloud,,cloud
+item_247,item_247,word,outside,understands; produces,그네,swing,,swing (object)
+item_248,item_248,word,outside,understands; produces,길,street,,street
+item_249,item_249,word,outside,understands; produces,깃발,flag,,
+item_250,item_250,word,outside,understands; produces,꽃,flower,,flower
+item_251,item_251,word,outside,understands; produces,나무,tree,,tree
+item_252,item_252,word,outside,understands; produces,눈,snow,,snow
+item_253,item_253,word,outside,understands; produces,눈사람,snowman,,
+item_254,item_254,word,outside,understands; produces,달,moon,,moon
+item_255,item_255,word,outside,understands; produces,돌,stone,,stone
+item_256,item_256,word,outside,understands; produces,땅,ground,,ground
+item_257,item_257,word,outside,understands; produces,모래,sand,,sand
+item_258,item_258,word,outside,understands; produces,미끄럼틀,slide,,slide (object)
+item_259,item_259,word,outside,understands; produces,바람,wind,,wind
+item_260,item_260,word,outside,understands; produces,바위,boulder,,
+item_261,item_261,word,outside,understands; produces,별,star,,star
+item_262,item_262,word,outside,understands; produces,불,fire,,fire
+item_263,item_263,word,outside,understands; produces,비,rain,,rain
+item_264,item_264,word,outside,understands; produces,사다리,ladder,,ladder
+item_265,item_265,word,outside,understands; produces,시소,seesaw,,
+item_266,item_266,word,outside,understands; produces,잔디,lawn,,lawn
+item_267,item_267,word,outside,understands; produces,지붕,roof,,roof
+item_268,item_268,word,outside,understands; produces,풀,grass,,grass
+item_269,item_269,word,outside,understands; produces,하늘,sky,,sky
+item_270,item_270,word,outside,understands; produces,해/햇빛,sun,,sun
+item_271,item_271,word,outside,understands; produces,흙,soil,,
+item_272,item_272,word,games_routines,understands; produces,고마워,thank you,,thank you
+item_273,item_273,word,games_routines,understands; produces,네/응,yes,,yes
+item_274,item_274,word,games_routines,understands; produces,돼,yes (can do),,
+item_275,item_275,word,games_routines,understands; produces,만세,yay,,
+item_276,item_276,word,games_routines,understands; produces,목욕,bath,,bath
+item_277,item_277,word,games_routines,understands; produces,빠이빠이,bye bye,,bye
+item_278,item_278,word,games_routines,understands; produces,쉬,pee,,pee
+item_279,item_279,word,games_routines,understands; produces,아니(야),no,,no
+item_280,item_280,word,games_routines,understands; produces,안녕,hello,,hello
+item_281,item_281,word,games_routines,understands; produces,안돼,no,,
+item_282,item_282,word,games_routines,understands; produces,양치,brush teeth,,
+item_283,item_283,word,games_routines,understands; produces,응가/똥,poo-poo,,
+item_284,item_284,word,games_routines,understands; produces,파이팅,give me five,,
+item_285,item_285,word,games_routines,understands; produces,하지마,don't,,don't
+item_286,item_286,word,places,understands; produces,가게,store,,store
+item_287,item_287,word,places,understands; produces,강,river,,
+item_288,item_288,word,places,understands; produces,공원,park,,park
+item_289,item_289,word,places,understands; produces,교회,church,,church
+item_290,item_290,word,places,understands; produces,놀이터,playground,,playground
+item_291,item_291,word,places,understands; produces,동물원,zoo,,zoo
+item_292,item_292,word,places,understands; produces,마당,yard,,yard
+item_293,item_293,word,places,understands; produces,바깥,outside,,outside
+item_294,item_294,word,places,understands; produces,바다,sea,,sea
+item_295,item_295,word,places,understands; produces,병원,hospital,,
+item_296,item_296,word,places,understands; produces,산,mountain,,
+item_297,item_297,word,places,understands; produces,수영장,pool,,pool
+item_298,item_298,word,places,understands; produces,숲,forest,,
+item_299,item_299,word,places,understands; produces,슈퍼마켓,supermarket,,
+item_300,item_300,word,places,understands; produces,시골,country,,country
+item_301,item_301,word,places,understands; produces,시장,market place,,market
+item_302,item_302,word,places,understands; produces,아파트,apartment,,
+item_303,item_303,word,places,understands; produces,유치원,kindergarten,,kindergarten
+item_304,item_304,word,places,understands; produces,은행,bank,,
+item_305,item_305,word,places,understands; produces,일,work,,
+item_306,item_306,word,places,understands; produces,절,temple,,
+item_307,item_307,word,places,understands; produces,주유소,gas station,,
+item_308,item_308,word,places,understands; produces,집,house,,house
+item_309,item_309,word,places,understands; produces,학교,school,,school
+item_310,item_310,word,places,understands; produces,회사,company,,
+item_311,item_311,word,quantifiers,understands; produces,너무,too,,
+item_312,item_312,word,quantifiers,understands; produces,다,all,,all
+item_313,item_313,word,quantifiers,understands; produces,다시,again,,again
+item_314,item_314,word,quantifiers,understands; produces,더,more,,more
+item_315,item_315,word,quantifiers,understands; produces,또,another,,another
+item_316,item_316,word,quantifiers,understands; produces,많이,many,,many
+item_317,item_317,word,quantifiers,understands; produces,빨리,fast,,fast
+item_318,item_318,word,quantifiers,understands; produces,아주,gas station,,
+item_319,item_319,word,quantifiers,understands; produces,자꾸,often,,
+item_320,item_320,word,quantifiers,understands; produces,잘,well,,well
+item_321,item_321,word,quantifiers,understands; produces,전부,entire,,
+item_322,item_322,word,quantifiers,understands; produces,조금,a little,,a little
+item_323,item_323,word,quantifiers,understands; produces,진짜,real,,
+item_324,item_324,word,quantifiers,understands; produces,하나,one,,
+item_325,item_325,word,people,understands; produces,간호사,nurse,,
+item_326,item_326,word,people,understands; produces,경찰(관),police man,,policeman
+item_327,item_327,word,people,understands; produces,고모,aunt (paternal),,aunt
+item_328,item_328,word,people,understands; produces,공주,princess,,
+item_329,item_329,word,people,understands; produces,군인,soldier,,
+item_330,item_330,word,people,understands; produces,귀신,ghost,,
+item_331,item_331,word,people,understands; produces,남자,man,,man
+item_332,item_332,word,people,understands; produces,도둑,thief,,
+item_333,item_333,word,people,understands; produces,동생,younger sibling,,
+item_334,item_334,word,people,understands; produces,딸,daughter,,
+item_335,item_335,word,people,understands; produces,사람,human,,
+item_336,item_336,word,people,understands; produces,삼촌,uncle (maternal),,uncle
+item_337,item_337,word,people,understands; produces,선생님,teacher,,teacher
+item_338,item_338,word,people,understands; produces,소방수,fireman,,
+item_339,item_339,word,people,understands; produces,아기/아가,baby,,baby
+item_340,item_340,word,people,understands; produces,아들,son,,
+item_341,item_341,word,people,understands; produces,아빠,daddy,,daddy
+item_342,item_342,word,people,understands; produces,아저씨,man,,
+item_343,item_343,word,people,understands; produces,아줌마,woman,,
+item_344,item_344,word,people,understands; produces,어른,adult,,
+item_345,item_345,word,people,understands; produces,언니,older sister (from younger sister),,sister
+item_346,item_346,word,people,understands; produces,엄마,mommy,,mommy
+item_347,item_347,word,people,understands; produces,여자,woman,,woman
+item_348,item_348,word,people,understands; produces,오빠,older brother (from younger sister),,brother
+item_349,item_349,word,people,understands; produces,왕자,prince,,
+item_350,item_350,word,people,understands; produces,우체부,mailman,,
+item_351,item_351,word,people,understands; produces,의사,doctor,,doctor
+item_352,item_352,word,people,understands; produces,이모,aunt (maternal),,aunt
+item_353,item_353,word,people,understands; produces,자기 이름,child's own name,,child's own name
+item_354,item_354,word,people,understands; produces,친구,friend,,friend
+item_355,item_355,word,people,understands; produces,할머니,grandma,,grandma
+item_356,item_356,word,people,understands; produces,할아버지,grandpa,,grandpa
+item_357,item_357,word,people,understands; produces,형,older brother (from younger brother),,
+item_358,item_358,word,question_words,understands; produces,누구,who,,who
+item_359,item_359,word,question_words,understands; produces,몇,how many,,
+item_360,item_360,word,question_words,understands; produces,무슨,what kind,,
+item_361,item_361,word,question_words,understands; produces,무엇/뭐,what,,what
+item_362,item_362,word,question_words,understands; produces,어느,which,,which (question)
+item_363,item_363,word,question_words,understands; produces,어디,where,,where (question)
+item_364,item_364,word,question_words,understands; produces,어디서,where from,,
+item_365,item_365,word,question_words,understands; produces,어떤,which,,
+item_366,item_366,word,question_words,understands; produces,어떻게,how,,how
+item_367,item_367,word,question_words,understands; produces,언제,when,,
+item_368,item_368,word,question_words,understands; produces,왜,why,,why
+item_369,item_369,word,action_words,understands; produces,가,go,,go
+item_370,item_370,word,action_words,understands; produces,가리켜,point,,
+item_371,item_371,word,action_words,understands; produces,가져,have/get/take,,have
+item_372,item_372,word,action_words,understands; produces,간지럽혀,tickle,,tickle
+item_373,item_373,word,action_words,understands; produces,건너,cross,,
+item_374,item_374,word,action_words,understands; produces,걸어,walk,,walk
+item_375,item_375,word,action_words,understands; produces,고쳐,fix,,
+item_376,item_376,word,action_words,understands; produces,공부해,study,,
+item_377,item_377,word,action_words,understands; produces,그려,draw,,draw
+item_378,item_378,word,action_words,understands; produces,기다려,wait,,wait
+item_379,item_379,word,action_words,understands; produces,깎아,peel,,
+item_380,item_380,word,action_words,understands; produces,(컵을)깨,break,,break
+item_381,item_381,word,action_words,understands; produces,(불)꺼,turn off,,turn off
+item_382,item_382,word,action_words,understands; produces,꺼내,take out,,take out
+item_383,item_383,word,action_words,understands; produces,꽂아,put in/stick,,
+item_384,item_384,word,action_words,understands; produces,끊어져,get cut,,
+item_385,item_385,word,action_words,understands; produces,끌어,pull,,pull
+item_386,item_386,word,action_words,understands; produces,끝내,finish,,finish
+item_387,item_387,word,action_words,understands; produces,끼워,put in,,put in
+item_388,item_388,word,action_words,understands; produces,나가,go out,,
+item_389,item_389,word,action_words,understands; produces,나눠가져,share,,
+item_390,item_390,word,action_words,understands; produces,나와,come out,,
+item_391,item_391,word,action_words,understands; produces,(물건을)날라,carry,,carry
+item_392,item_392,word,action_words,understands; produces,날라가,fly,,fly (action)
+item_393,item_393,word,action_words,understands; produces,(차에서)내려,get out of car,,
+item_394,item_394,word,action_words,understands; produces,내려가,go down,,
+item_395,item_395,word,action_words,understands; produces,넘어져,fall,,fall
+item_396,item_396,word,action_words,understands; produces,(통에)넣어,put in (the case),,
+item_397,item_397,word,action_words,understands; produces,노래 불러,sing,,sing
+item_398,item_398,word,action_words,understands; produces,놀아,play,,play
+item_399,item_399,word,action_words,understands; produces,(물건을)놓아,put down,,
+item_400,item_400,word,action_words,understands; produces,누워,lie,,lie
+item_401,item_401,word,action_words,understands; produces,(무엇을)눌러,push,,push
+item_402,item_402,word,action_words,understands; produces,(무엇에)눌려,be pushed,,
+item_403,item_403,word,action_words,understands; produces,다녀,go around,,
+item_404,item_404,word,action_words,understands; produces,다쳐,get hurt,,hurt
+item_405,item_405,word,action_words,understands; produces,닦아,wipe,,wipe
+item_406,item_406,word,action_words,understands; produces,닫아,close,,close
+item_407,item_407,word,action_words,understands; produces,달려,run,,run
+item_408,item_408,word,action_words,understands; produces,당겨,pull,,pull
+item_409,item_409,word,action_words,understands; produces,던져,throw,,throw
+item_410,item_410,word,action_words,understands; produces,덮어,cover,,cover
+item_411,item_411,word,action_words,understands; produces,도와,help,,help
+item_412,item_412,word,action_words,understands; produces,돌려,spin,,
+item_413,item_413,word,action_words,understands; produces,돌아,turn,,turn
+item_414,item_414,word,action_words,understands; produces,두드려,knock,,bang
+item_415,item_415,word,action_words,understands; produces,(여기에)둬,put in here,,
+item_416,item_416,word,action_words,understands; produces,(물건을)들어,lift,,lift
+item_417,item_417,word,action_words,understands; produces,(소리를)들어,listen,,
+item_418,item_418,word,action_words,understands; produces,들어가,go in,,enter
+item_419,item_419,word,action_words,understands; produces,떄려,hit,,hit
+item_420,item_420,word,action_words,understands; produces,(물에)떠,float,,
+item_421,item_421,word,action_words,understands; produces,떨어뜨려,drop,,drop
+item_422,item_422,word,action_words,understands; produces,떨어져,drip,,
+item_423,item_423,word,action_words,understands; produces,떼(어),get off,,get off
+item_424,item_424,word,action_words,understands; produces,뛰어,run,,run
+item_425,item_425,word,action_words,understands; produces,마셔,drink,,drink (action)
+item_426,item_426,word,action_words,understands; produces,만들어,make,,make
+item_427,item_427,word,action_words,understands; produces,(빨래/싸움)말려,dry,,dry (action)
+item_428,item_428,word,action_words,understands; produces,말해,speak/talk,,say
+item_429,item_429,word,action_words,understands; produces,맛봐,taste,,
+item_430,item_430,word,action_words,understands; produces,(주사를)맞아,have an injection,,
+item_431,item_431,word,action_words,understands; produces,(음식을)먹어,eat,,eat
+item_432,item_432,word,action_words,understands; produces,(음식을)먹여,feed,,feed
+item_433,item_433,word,action_words,understands; produces,멈춰,stop,,stop
+item_434,item_434,word,action_words,understands; produces,몰라,I don't know,,
+item_435,item_435,word,action_words,understands; produces,물어,ask,,
+item_436,item_436,word,action_words,understands; produces,미워해,hate,,
+item_437,item_437,word,action_words,understands; produces,밀어,push,,push
+item_438,item_438,word,action_words,understands; produces,(약)발라,put on (medicine),,
+item_439,item_439,word,action_words,understands; produces,박수쳐,clap,,clap
+item_440,item_440,word,action_words,understands; produces,버려,throw away,,dump
+item_441,item_441,word,action_words,understands; produces,벗어,take off,,take off
+item_442,item_442,word,action_words,understands; produces,보여,see,,see
+item_443,item_443,word,action_words,understands; produces,봐,look,,look
+item_444,item_444,word,action_words,understands; produces,부딪쳐,bump,,bump
+item_445,item_445,word,action_words,understands; produces,부숴,smash,,
+item_446,item_446,word,action_words,understands; produces,(물을)부어,pour,,
+item_447,item_447,word,action_words,understands; produces,불러,call,,
+item_448,item_448,word,action_words,understands; produces,(풍선을)불어,blow,,blow
+item_449,item_449,word,action_words,understands; produces,붙여,paste,,
+item_450,item_450,word,action_words,understands; produces,비켜,step aside,,
+item_451,item_451,word,action_words,understands; produces,빗어,brush,,comb (action)
+item_452,item_452,word,action_words,understands; produces,빠져,fall,,fall
+item_453,item_453,word,action_words,understands; produces,빨아,wash,,wash
+item_454,item_454,word,action_words,understands; produces,빼,take out,,take out
+item_455,item_455,word,action_words,understands; produces,뺴앗아,take away,,take away
+item_456,item_456,word,action_words,understands; produces,뽀뽀해,kiss,,kiss
+item_457,item_457,word,action_words,understands; produces,뽑아,pull out (tight fit),,
+item_458,item_458,word,action_words,understands; produces,(물건을)사,buy,,buy
+item_459,item_459,word,action_words,understands; produces,사랑해,love,,love
+item_460,item_460,word,action_words,understands; produces,살아,live,,
+item_461,item_461,word,action_words,understands; produces,생각해,think,,
+item_462,item_462,word,action_words,understands; produces,(그 자리에)서,stay,,
+item_463,item_463,word,action_words,understands; produces,서둘러,hurry,,hurry
+item_464,item_464,word,action_words,understands; produces,손대,touch,,touch
+item_465,item_465,word,action_words,understands; produces,수영해,swim,,swim
+item_466,item_466,word,action_words,understands; produces,숨어,hide,,hide
+item_467,item_467,word,action_words,understands; produces,시작해,start,,begin
+item_468,item_468,word,action_words,understands; produces,신어,put on shoes,,
+item_469,item_469,word,action_words,understands; produces,(물건을)실어,load,,
+item_470,item_470,word,action_words,understands; produces,싸워,fight,,fight
+item_471,item_471,word,action_words,understands; produces,(글)써,write,,write
+item_472,item_472,word,action_words,understands; produces,(모자)써,wear a hat,,
+item_473,item_473,word,action_words,understands; produces,쏟아,spill,,spill
+item_474,item_474,word,action_words,understands; produces,(총을)쏴,shoot,,
+item_475,item_475,word,action_words,understands; produces,쓰러져,fall down,,
+item_476,item_476,word,action_words,understands; produces,씻어,wash,,wash
+item_477,item_477,word,action_words,understands; produces,안아,hug,,hug
+item_478,item_478,word,action_words,understands; produces,안해,I won't do it,,
+item_479,item_479,word,action_words,understands; produces,앉아,sit,,sit
+item_480,item_480,word,action_words,understands; produces,알아,know,,
+item_481,item_481,word,action_words,understands; produces,열어,open,,open
+item_482,item_482,word,action_words,understands; produces,올라가,go up,,climb
+item_483,item_483,word,action_words,understands; produces,올려,raise,,
+item_484,item_484,word,action_words,understands; produces,와,come,,come
+item_485,item_485,word,action_words,understands; produces,요리해,cook,,
+item_486,item_486,word,action_words,understands; produces,운전해,drive,,drive
+item_487,item_487,word,action_words,understands; produces,울어,cry,,cry
+item_488,item_488,word,action_words,understands; produces,웃어,smile,,smile
+item_489,item_489,word,action_words,understands; produces,원해,want,,
+item_490,item_490,word,action_words,understands; produces,(승부에)이겨,win,,
+item_491,item_491,word,action_words,understands; produces,이야기해,talk,,talk
+item_492,item_492,word,action_words,understands; produces,일어나/일어서,wake up,,get up
+item_493,item_493,word,action_words,understands; produces,일해,work,,work (action)
+item_494,item_494,word,action_words,understands; produces,읽어,read,,read
+item_495,item_495,word,action_words,understands; produces,입어,wear,,wear
+item_496,item_496,word,action_words,understands; produces,(잠)자,sleep,,sleep
+item_497,item_497,word,action_words,understands; produces,잘라,cut out,,
+item_498,item_498,word,action_words,understands; produces,잡아,catch,,catch
+item_499,item_499,word,action_words,understands; produces,좋아해,like,,
+item_500,item_500,word,action_words,understands; produces,죽어,die,,die
+item_501,item_501,word,action_words,understands; produces,줘,give me,,
+item_502,item_502,word,action_words,understands; produces,쫓아,chase,,
+item_503,item_503,word,action_words,understands; produces,찍어,stamp/take picture,,
+item_504,item_504,word,action_words,understands; produces,(공을)차,kick,,kick
+item_505,item_505,word,action_words,understands; produces,찾아,find,,find
+item_506,item_506,word,action_words,understands; produces,춤춰,dance,,dance
+item_507,item_507,word,action_words,understands; produces,(차에)치여,be hit,,
+item_508,item_508,word,action_words,understands; produces,치워,clean up,,clean (action)
+item_509,item_509,word,action_words,understands; produces,칠해,color,,
+item_510,item_510,word,action_words,understands; produces,(차에)타,get in the car,,
+item_511,item_511,word,action_words,understands; produces,(차에)태워,put in the car,,
+item_512,item_512,word,action_words,understands; produces,터져,burst,,
+item_513,item_513,word,action_words,understands; produces,튀겨,fry/bounce,,
+item_514,item_514,word,action_words,understands; produces,틀어,turn on,,turn on
+item_515,item_515,word,action_words,understands; produces,(코를)풀어,blow your nose,,
+item_516,item_516,word,action_words,understands; produces,(꽃이)피어,bloom,,
+item_517,item_517,word,action_words,understands; produces,해,do,,do
+item_518,item_518,word,action_words,understands; produces,혼나,scold,,
+item_519,item_519,word,descriptive_words,understands; produces,가벼워,light,,light
+item_520,item_520,word,descriptive_words,understands; produces,간지러워,ticklish,,
+item_521,item_521,word,descriptive_words,understands; produces,같아/똑같아,same,,same
+item_522,item_522,word,descriptive_words,understands; produces,괜찮아,fine,,fine
+item_523,item_523,word,descriptive_words,understands; produces,귀여워,cute,,cute
+item_524,item_524,word,descriptive_words,understands; produces,길어,long,,
+item_525,item_525,word,descriptive_words,understands; produces,(색이)까매,dark (color),,black
+item_526,item_526,word,descriptive_words,understands; produces,깜깜해,dark,,dark
+item_527,item_527,word,descriptive_words,understands; produces,나빠,bad,,bad
+item_528,item_528,word,descriptive_words,understands; produces,(색이)노래,yellow,,yellow
+item_529,item_529,word,descriptive_words,understands; produces,높아,high,,high
+item_530,item_530,word,descriptive_words,understands; produces,달라,different,,different
+item_531,item_531,word,descriptive_words,understands; produces,더러워,dirty,,dirty
+item_532,item_532,word,descriptive_words,understands; produces,더워,hot (weather),,
+item_533,item_533,word,descriptive_words,understands; produces,동그래,round,,
+item_534,item_534,word,descriptive_words,understands; produces,뜨거워,hot (temperature),,hot
+item_535,item_535,word,descriptive_words,understands; produces,많아,many,,many
+item_536,item_536,word,descriptive_words,understands; produces,맛없어,taste bad,,
+item_537,item_537,word,descriptive_words,understands; produces,맛있어,tasty,,tasty
+item_538,item_538,word,descriptive_words,understands; produces,매워,spicy,,
+item_539,item_539,word,descriptive_words,understands; produces,멀어,far,,far
+item_540,item_540,word,descriptive_words,understands; produces,멋있어,stylish/fashionable,,
+item_541,item_541,word,descriptive_words,understands; produces,목말라,thirsty,,thirsty
+item_542,item_542,word,descriptive_words,understands; produces,무거워,heavy,,heavy
+item_543,item_543,word,descriptive_words,understands; produces,무서워,scary,,scary
+item_544,item_544,word,descriptive_words,understands; produces,미워,dislike,,
+item_545,item_545,word,descriptive_words,understands; produces,배고파,hungry,,hungry
+item_546,item_546,word,descriptive_words,understands; produces,(색이)빨개,red,,red
+item_547,item_547,word,descriptive_words,understands; produces,빨라,fast,,fast
+item_548,item_548,word,descriptive_words,understands; produces,시끄러워,noisy,,
+item_549,item_549,word,descriptive_words,understands; produces,싫어,hate,,no
+item_550,item_550,word,descriptive_words,understands; produces,심심해,bored,,
+item_551,item_551,word,descriptive_words,understands; produces,아파,sick,,sick
+item_552,item_552,word,descriptive_words,understands; produces,어두워,dim,,
+item_553,item_553,word,descriptive_words,understands; produces,없어,nothing,,nothing
+item_554,item_554,word,descriptive_words,understands; produces,예뻐,pretty,,pretty
+item_555,item_555,word,descriptive_words,understands; produces,이상해,weird,,
+item_556,item_556,word,descriptive_words,understands; produces,있어,be,,be
+item_557,item_557,word,descriptive_words,understands; produces,작아,small,,
+item_558,item_558,word,descriptive_words,understands; produces,재미있어,fun,,funny
+item_559,item_559,word,descriptive_words,understands; produces,조그맣다,small,,
+item_560,item_560,word,descriptive_words,understands; produces,조용해,quiet,,
+item_561,item_561,word,descriptive_words,understands; produces,졸려,sleepy,,sleepy
+item_562,item_562,word,descriptive_words,understands; produces,좋아,good,,good
+item_563,item_563,word,descriptive_words,understands; produces,(맛이)짜,salty,,salty
+item_564,item_564,word,descriptive_words,understands; produces,(촉감이)차,cool,,
+item_565,item_565,word,descriptive_words,understands; produces,착해,nice,,nice
+item_566,item_566,word,descriptive_words,understands; produces,추워,cold,,cold
+item_567,item_567,word,descriptive_words,understands; produces,커,big,,big
+item_568,item_568,word,descriptive_words,understands; produces,(색이)파래,blue,,blue
+item_569,item_569,word,descriptive_words,understands; produces,(색이)하얘,white,,white
+item_570,item_570,word,descriptive_words,understands; produces,힘들어,tired,,tired
+item_571,item_571,word,other,understands; produces,-구나,,,
+item_572,item_572,word,other,understands; produces,-께,,,
+item_573,item_573,word,other,understands; produces,-네,,,
+item_574,item_574,word,other,understands; produces,-는다,,,
+item_575,item_575,word,other,understands; produces,-니?,,,
+item_576,item_576,word,other,understands; produces,-다,,,
+item_577,item_577,word,other,understands; produces,-대,,,
+item_578,item_578,word,other,understands; produces,-ㄹ거야/테야,,,
+item_579,item_579,word,other,understands; produces,-ㄹ까?,,,
+item_580,item_580,word,other,understands; produces,-ㄹ래,,,
+item_581,item_581,word,other,understands; produces,-어(아),,,
+item_582,item_582,word,other,understands; produces,-어야 돼,,,
+item_583,item_583,word,other,understands; produces,-요,,,
+item_584,item_584,word,other,understands; produces,-자,,,
+item_585,item_585,word,other,understands; produces,-지,,,
+item_586,item_586,word,other,understands; produces,-가(이),subject case marker,,
+item_587,item_587,word,other,understands; produces,-는(은),topic case marker,,
+item_588,item_588,word,other,understands; produces,-도,comitative,,
+item_589,item_589,word,other,understands; produces,-랑,comitative,,
+item_590,item_590,word,other,understands; produces,-로,instrumental,,
+item_591,item_591,word,other,understands; produces,-를(을),accusative,,
+item_592,item_592,word,other,understands; produces,-만,-,,
+item_593,item_593,word,other,understands; produces,-야,verb ending,,
+item_594,item_594,word,other,understands; produces,-에,dative,,
+item_595,item_595,word,other,understands; produces,-에서,dative,,at
+item_596,item_596,word,other,understands; produces,-하고,verb ending,,
+item_597,item_597,word,other,understands; produces,-한테/에게,locative,,
+item_598,item_598,word,connecting_words,understands; produces,그리고,and,,
+item_599,item_599,word,connecting_words,understands; produces,그런데,but,,
+item_600,item_600,word,connecting_words,understands; produces,그래서,so,,
+item_601,item_601,word,connecting_words,understands; produces,-고,verb ending,and,
+item_602,item_602,word,connecting_words,understands; produces,-는데,verb ending,by the way,
+item_603,item_603,word,connecting_words,understands; produces,-서,verb ending,,
+item_604,item_604,word,locations,understands; produces,뒤,behind,,back
+item_605,item_605,word,locations,understands; produces,밑,underneath,,
+item_606,item_606,word,locations,understands; produces,밖,out,,out
+item_607,item_607,word,locations,understands; produces,아래,under,,down
+item_608,item_608,word,locations,understands; produces,안,inside,,in
+item_609,item_609,word,locations,understands; produces,앞,in front,,front
+item_610,item_610,word,locations,understands; produces,옆,beside,,by
+item_611,item_611,word,locations,understands; produces,위,above,,up
+item_612,item_612,word,time_words,understands; produces,금방,soon,,
+item_613,item_613,word,time_words,understands; produces,나중에,later,,later
+item_614,item_614,word,time_words,understands; produces,날,day,,day
+item_615,item_615,word,time_words,understands; produces,낮,daytime,,
+item_616,item_616,word,time_words,understands; produces,내일,tomorrow,,tomorrow
+item_617,item_617,word,time_words,understands; produces,매일/맨날,everyday,,
+item_618,item_618,word,time_words,understands; produces,밤,night,,night
+item_619,item_619,word,time_words,understands; produces,시간,time,,time
+item_620,item_620,word,time_words,understands; produces,아침,morning,,morning
+item_621,item_621,word,time_words,understands; produces,어저께/어제,yesterday,,yesterday
+item_622,item_622,word,time_words,understands; produces,오늘,today,,today
+item_623,item_623,word,time_words,understands; produces,이따가,later/some other time,,
+item_624,item_624,word,time_words,understands; produces,저녁,evening,,evening
+item_625,item_625,word,time_words,understands; produces,전,before,,
+item_626,item_626,word,time_words,understands; produces,점심,noon,,lunchtime
+item_627,item_627,word,time_words,understands; produces,지금,now,,now
+item_628,item_628,word,time_words,understands; produces,후,after,,after
+item_629,item_629,word,pronouns,understands; produces,그거,that,,that
+item_630,item_630,word,pronouns,understands; produces,나,I,,i
+item_631,item_631,word,pronouns,understands; produces,너,you,,you
+item_632,item_632,word,pronouns,understands; produces,여기,here,,here
+item_633,item_633,word,pronouns,understands; produces,우리,we,,we
+item_634,item_634,word,pronouns,understands; produces,이거,this,,this
+item_635,item_635,word,pronouns,understands; produces,저기,over there,,
+item_636,item_636,word,helping_verbs,understands; produces,-고 있다,-ing,,
+item_637,item_637,word,helping_verbs,understands; produces,-놓다,put,,put
+item_638,item_638,word,helping_verbs,understands; produces,-말다,roll,,
+item_639,item_639,word,helping_verbs,understands; produces,-보다,see,,see
+item_640,item_640,word,helping_verbs,understands; produces,-싶다,hope to,,
+item_641,item_641,word,helping_verbs,understands; produces,-주다,give,,give
+item_642,item_642,combine,combine,not yet; sometimes; often,낱말 조합 여부,combine,,
+item_643,item_643,sentence_structure,,not yet; sometimes; often,조사 사용,case marker,,
+item_644,item_644,sentence_structure,,not yet; sometimes; often,어미 변화,verb inflection,,
+item_645,item_645,sentence_structure,,not yet; sometimes; often,연결어미,connective ending,,
+item_646,item_646,sentence_structure,,not yet; sometimes; often,관형어미,determinal ending,,
+item_647,item_647,sentence_structure,,not yet; sometimes; often,피동/사동 접사,passive,,
+item_648,item_648,complexity,,simple; complex,큰 꽃,big flower,,
+item_649,item_649,complexity,,simple; complex,언니 까까,sister's snack,,
+item_650,item_650,complexity,,simple; complex,아빠 시계,father's watch,,
+item_651,item_651,complexity,,simple; complex,안 먹어,won't eat,,
+item_652,item_652,complexity,,simple; complex,해도 돼,be allowed to do so,,
+item_653,item_653,complexity,,simple; complex,다 안 먹었다,have not eaten yet,,
+item_654,item_654,complexity,,simple; complex,책 안 봐,won't read a book,,
+item_655,item_655,complexity,,simple; complex,컵에 부어,pour in a cup,,
+item_656,item_656,complexity,,simple; complex,집에서 만들어,make something at home,,
+item_657,item_657,complexity,,simple; complex,엄마가 아빠를 좋아해,Mother likes father,,
+item_658,item_658,complexity,,simple; complex,아파서 병원 가,Go to the hospital because I am sick,,
+item_659,item_659,complexity,,simple; complex,먹으면 안돼,don't eat,,
+item_660,item_660,complexity,,simple; complex,여기 넣자,let's put it in here,,
+item_661,item_661,complexity,,simple; complex,붓는 건데,you should pour it in (here),,
+item_662,item_662,complexity,,simple; complex,많이 먹는다,eat a lot,,
+item_663,item_663,complexity,,simple; complex,아가 운다,baby cries,,
+item_664,item_664,complexity,,simple; complex,아빠가 타는 차야,It is a car that Daddy drives,,
+item_665,item_665,complexity,,simple; complex,이렇게 하는 문 있어,there is a door that does this,,
+item_666,item_666,complexity,,simple; complex,방에 있는 거잖아,It is something that is in your room,,
+item_667,item_667,complexity,,simple; complex,바람이 빠져서 씽 날아갔는데,it flew away because it deflated,,
+item_668,item_668,complexity,,simple; complex,엄마가 꽃을 만지는데 창문이 깨져서,the window is broken while my mom touches the flower,,
+item_669,item_669,complexity,,simple; complex,그런 비디오 본 적 있는데,I have seen a video like this before,,
+item_670,item_670,complexity,,simple; complex,내가 헬리콥터소리가 하늘에서 나는 거 들었어,I heard a helicopter sound from the sky,,
+item_671,item_671,complexity,,simple; complex,아프지만 아기니까 사랑해,It hurts but I love you because you are a baby,,
+item_672,item_672,complexity,,simple; complex,미안하다고 했어,I said I am sorry,,
+item_673,item_673,complexity,,simple; complex,피나서 울고 있네,Crying because of bleeding,,
+item_674,item_674,complexity,,simple; complex,신겨줘요,Please put my shoes on,,
+item_675,item_675,complexity,,simple; complex,태워줘,give me a ride,,
+item_676,item_676,complexity,,simple; complex,다치게 했어,Someone hurt somebody else,,
+item_677,item_677,complexity,,simple; complex,안 열리는데 어떡하지,it doesn’t open. what should we do?,,
+item_678,item_678,complexity,,simple; complex,아팠던 거야,were you sick?,,
+item_679,item_679,complexity,,simple; complex,이건 여는 거야,This thing can open,,
