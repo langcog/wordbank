@@ -1,0 +1,56 @@
+
+```{r}
+setwd("~/Documents/repo/wordbank/incoming_data/Spanish_Marchman/")
+
+library(tidyverse)
+library(lubridate)
+library(magrittr)
+```
+
+
+```{r}
+spanish_wg <- readxl::read_excel("SLENA_WGCDIS_toWordbank.xlsx")
+spanish_ws <- readxl::read_excel("SLENA_CDIS_toWordbank.xlsx")
+
+instrument_wg <- read_csv("../../raw_data/Spanish_WG/[Spanish_WG].csv")
+instrument_ws <- read_csv("../../raw_data/Spanish_WS/[Spanish_WS].csv")
+
+```
+
+```{r}
+
+wg_ages <- as.duration(interval(parse_date(spanish_wg$DOB,format = "%Y-%m-%d"), parse_date(spanish_wg$CDIDate,format = "%Y-%m-%d")))
+ws_ages <- as.duration(interval(parse_date(spanish_ws$DOB,format = "%Y-%m-%d"), parse_date(spanish_ws$CDIDate,format = "%Y-%m-%d")))
+
+spanish_wg$age_months <- round(time_length(wg_ages, "days")/(365.2425/12.0))
+spanish_ws$age_months <- round(time_length(ws_ages, "days")/(365.2425/12.0))
+
+spanish_ws <- spanish_ws[,c(1:9,ncol(spanish_ws),10:(ncol(spanish_ws)-1))]
+spanish_wg <- spanish_wg[,c(1:9,ncol(spanish_wg),10:(ncol(spanish_wg)-1))]
+
+spanish_wg$DOB <- spanish_ws$DOB <- NULL
+
+spanish_ws %<>%
+  mutate(BOrder = as.numeric(BOrder),
+         MotherEd = as.numeric(MotherEd),
+         CDIDate = format(CDIDate,"%Y-%m-%d"))
+
+spanish_wg %<>%
+  mutate(BOrder = as.numeric(BOrder),
+         MotherEd = as.numeric(MotherEd),
+         CDIDate = format(CDIDate,"%Y-%m-%d"))
+
+
+```
+```{r}
+names(spanish_wg) <- gsub(pattern = "/",replacement = "",x = tolower(names(spanish_wg)))
+names(spanish_ws) <- tolower(names(spanish_ws))
+
+
+```
+
+```{r}
+write_csv(spanish_wg, "SpanishWG_Fernald_data.csv", na="")
+write_csv(spanish_ws, "SpanishWS_Fernald_data.csv", na="")
+```
+

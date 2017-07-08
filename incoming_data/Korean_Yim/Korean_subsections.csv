@@ -1,0 +1,926 @@
+form,section,word,item_id
+infant,1. 소리 (14),꼬끼오,item_001
+infant,1. 소리 (14),꽝꽝,item_002
+infant,1. 소리 (14),꽥꽥,item_003
+infant,1. 소리 (14),꿀꿀,item_004
+infant,1. 소리 (14),똑똑,item_005
+infant,1. 소리 (14),멍멍,item_006
+infant,1. 소리 (14),붕(부릉부릉),item_007
+infant,1. 소리 (14),빵빵,item_008
+infant,1. 소리 (14),야옹,item_009
+infant,1. 소리 (14),얌얌,item_010
+infant,1. 소리 (14),어흥,item_011
+infant,1. 소리 (14),윙,item_012
+infant,1. 소리 (14),음매,item_013
+infant,1. 소리 (14),칙칙폭폭,item_014
+infant,2. 탈 것 (7),기차,item_015
+infant,2. 탈 것 (7),배,item_016
+infant,2. 탈 것 (7),버스,item_017
+infant,2. 탈 것 (7),불자동차/소방차,item_018
+infant,2. 탈 것 (7),비행기,item_019
+infant,2. 탈 것 (7),차/자동차,item_020
+infant,2. 탈 것 (7),택시,item_021
+infant,3. 동물 (21),개/멍멍이,item_022
+infant,3. 동물 (21),개구리,item_023
+infant,3. 동물 (21),고양이,item_024
+infant,3. 동물 (21),곰,item_025
+infant,3. 동물 (21),기린,item_026
+infant,3. 동물 (21),나비,item_027
+infant,3. 동물 (21),닭,item_028
+infant,3. 동물 (21),돼지,item_029
+infant,3. 동물 (21),말,item_030
+infant,3. 동물 (21),물고기,item_031
+infant,3. 동물 (21),벌,item_032
+infant,3. 동물 (21),사자,item_033
+infant,3. 동물 (21),새,item_034
+infant,3. 동물 (21),소/송아지,item_035
+infant,3. 동물 (21),악어,item_036
+infant,3. 동물 (21),오리,item_037
+infant,3. 동물 (21),쥐,item_038
+infant,3. 동물 (21),코끼리,item_039
+infant,3. 동물 (21),토끼,item_040
+infant,3. 동물 (21),하마,item_041
+infant,3. 동물 (21),호랑이,item_042
+infant,4. 신체부위 (20),고추,item_043
+infant,4. 신체부위 (20),귀,item_044
+infant,4. 신체부위 (20),눈,item_045
+infant,4. 신체부위 (20),다리,item_046
+infant,4. 신체부위 (20),등,item_047
+infant,4. 신체부위 (20),똥꼬,item_048
+infant,4. 신체부위 (20),머리,item_049
+infant,4. 신체부위 (20),목,item_050
+infant,4. 신체부위 (20),발,item_051
+infant,4. 신체부위 (20),배,item_052
+infant,4. 신체부위 (20),배꼽,item_053
+infant,4. 신체부위 (20),손,item_054
+infant,4. 신체부위 (20),얼굴,item_055
+infant,4. 신체부위 (20),엉덩이,item_056
+infant,4. 신체부위 (20),이/이빨,item_057
+infant,4. 신체부위 (20),입,item_058
+infant,4. 신체부위 (20),젖,item_059
+infant,4. 신체부위 (20),코,item_060
+infant,4. 신체부위 (20),팔,item_061
+infant,4. 신체부위 (20),피,item_062
+infant,5. 옷 (10),가방,item_063
+infant,5. 옷 (10),기저귀,item_064
+infant,5. 옷 (10),단추,item_065
+infant,5. 옷 (10),모자,item_066
+infant,5. 옷 (10),바지,item_067
+infant,5. 옷 (10),신/신발,item_068
+infant,5. 옷 (10),양말,item_069
+infant,5. 옷 (10),옷/꼬까,item_070
+infant,5. 옷 (10),장갑,item_071
+infant,5. 옷 (10),팬티,item_072
+infant,6. 장난감류 (10),공,item_073
+infant,6. 장난감류 (10),반지,item_074
+infant,6. 장난감류 (10),블록,item_075
+infant,6. 장난감류 (10),사진,item_076
+infant,6. 장난감류 (10),종이,item_077
+infant,6. 장난감류 (10),연필,item_078
+infant,6. 장난감류 (10),인형,item_079
+infant,6. 장난감류 (10),책,item_080
+infant,6. 장난감류 (10),종,item_081
+infant,6. 장난감류 (10),풍선,item_082
+infant,7. 음식 (35),감,item_083
+infant,7. 음식 (35),계란/달걀,item_084
+infant,7. 음식 (35),고구마,item_085
+infant,7. 음식 (35),고기,item_086
+infant,7. 음식 (35),과자/까까,item_087
+infant,7. 음식 (35),국,item_088
+infant,7. 음식 (35),귤,item_089
+infant,7. 음식 (35),김,item_090
+infant,7. 음식 (35),김치,item_091
+infant,7. 음식 (35),껌,item_092
+infant,7. 음식 (35),꿀,item_093
+infant,7. 음식 (35),딸기,item_094
+infant,7. 음식 (35),떡,item_095
+infant,7. 음식 (35),라면,item_096
+infant,7. 음식 (35),맘마,item_097
+infant,7. 음식 (35),무/무우,item_098
+infant,7. 음식 (35),물,item_099
+infant,7. 음식 (35),바나나,item_100
+infant,7. 음식 (35),밤,item_101
+infant,7. 음식 (35),밥,item_102
+infant,7. 음식 (35),배,item_103
+infant,7. 음식 (35),빵,item_104
+infant,7. 음식 (35),사과,item_105
+infant,7. 음식 (35),사탕,item_106
+infant,7. 음식 (35),수박,item_107
+infant,7. 음식 (35),쌀,item_108
+infant,7. 음식 (35),아이스크림,item_109
+infant,7. 음식 (35),오렌지,item_110
+infant,7. 음식 (35),요구르트,item_111
+infant,7. 음식 (35),우유,item_112
+infant,7. 음식 (35),주스,item_113
+infant,7. 음식 (35),초콜렛,item_114
+infant,7. 음식 (35),치즈,item_115
+infant,7. 음식 (35),콩,item_116
+infant,7. 음식 (35),포도,item_117
+infant,8. 가정용품 (16),가위,item_118
+infant,8. 가정용품 (16),돈,item_119
+infant,8. 가정용품 (16),비누,item_120
+infant,8. 가정용품 (16),빗,item_121
+infant,8. 가정용품 (16),수건,item_122
+infant,8. 가정용품 (16),숟가락,item_123
+infant,8. 가정용품 (16),시계,item_124
+infant,8. 가정용품 (16),안경,item_125
+infant,8. 가정용품 (16),약,item_126
+infant,8. 가정용품 (16),열쇠,item_127
+infant,8. 가정용품 (16),우산,item_128
+infant,8. 가정용품 (16),전화,item_129
+infant,8. 가정용품 (16),치약,item_130
+infant,8. 가정용품 (16),칫솔,item_131
+infant,8. 가정용품 (16),칼,item_132
+infant,8. 가정용품 (16),컵,item_133
+infant,9. 가구 및 방안 (9),냉장고,item_134
+infant,9. 가구 및 방안 (9),문,item_135
+infant,9. 가구 및 방안 (9),방,item_136
+infant,9. 가구 및 방안 (9),베개,item_137
+infant,9. 가구 및 방안 (9),의자,item_138
+infant,9. 가구 및 방안 (9),이불,item_139
+infant,9. 가구 및 방안 (9),침대,item_140
+infant,9. 가구 및 방안 (9),텔레비전,item_141
+infant,9. 가구 및 방안 (9),피아노,item_142
+infant,10. 장소 및 공간 (6),놀이터,item_143
+infant,10. 장소 및 공간 (6),밖/바깥,item_144
+infant,10. 장소 및 공간 (6),병원,item_145
+infant,10. 장소 및 공간 (6),집,item_146
+infant,10. 장소 및 공간 (6),학교,item_147
+infant,10. 장소 및 공간 (6),안,item_148
+infant,11. 외부사물 (12),꽃,item_149
+infant,11. 외부사물 (12),나무,item_150
+infant,11. 외부사물 (12),눈,item_151
+infant,11. 외부사물 (12),달,item_152
+infant,11. 외부사물 (12),돌,item_153
+infant,11. 외부사물 (12),땅,item_154
+infant,11. 외부사물 (12),별,item_155
+infant,11. 외부사물 (12),불,item_156
+infant,11. 외부사물 (12),비,item_157
+infant,11. 외부사물 (12),시소,item_158
+infant,11. 외부사물 (12),하늘,item_159
+infant,11. 외부사물 (12),해,item_160
+infant,12. 사람 (17),고모,item_161
+infant,12. 사람 (17),누나,item_162
+infant,12. 사람 (17),삼촌,item_163
+infant,12. 사람 (17),선생님,item_164
+infant,12. 사람 (17),아가,item_165
+infant,12. 사람 (17),아빠,item_166
+infant,12. 사람 (17),아저씨,item_167
+infant,12. 사람 (17),아줌마,item_168
+infant,12. 사람 (17),언니,item_169
+infant,12. 사람 (17),엄마,item_170
+infant,12. 사람 (17),오빠,item_171
+infant,12. 사람 (17),이모,item_172
+infant,12. 사람 (17),아동 이름,item_173
+infant,12. 사람 (17),친구,item_174
+infant,12. 사람 (17),할머니,item_175
+infant,12. 사람 (17),할아버지,item_176
+infant,12. 사람 (17),형,item_177
+infant,13. 일상생활과 관련된 말 (표현 14/이해19),곤지곤지,item_178
+infant,13. 일상생활과 관련된 말 (표현 14/이해19),까꿍,item_179
+infant,13. 일상생활과 관련된 말 (표현 14/이해19),도리도리,item_180
+infant,13. 일상생활과 관련된 말 (표현 14/이해19),잼잼,item_181
+infant,13. 일상생활과 관련된 말 (표현 14/이해19),짝짜꿍,item_182
+infant,13. 일상생활과 관련된 말 (표현 14/이해19),네/응,item_183
+infant,13. 일상생활과 관련된 말 (표현 14/이해19),만세,item_184
+infant,13. 일상생활과 관련된 말 (표현 14/이해19),목욕,item_185
+infant,13. 일상생활과 관련된 말 (표현 14/이해19),빠이빠이,item_186
+infant,13. 일상생활과 관련된 말 (표현 14/이해19),뽀뽀,item_187
+infant,13. 일상생활과 관련된 말 (표현 14/이해19),세수,item_188
+infant,13. 일상생활과 관련된 말 (표현 14/이해19),쉬,item_189
+infant,13. 일상생활과 관련된 말 (표현 14/이해19),아니,item_190
+infant,13. 일상생활과 관련된 말 (표현 14/이해19),안녕,item_191
+infant,13. 일상생활과 관련된 말 (표현 14/이해19),안돼,item_192
+infant,13. 일상생활과 관련된 말 (표현 14/이해19),치카/양치,item_193
+infant,13. 일상생활과 관련된 말 (표현 14/이해19),응가/똥,item_194
+infant,13. 일상생활과 관련된 말 (표현 14/이해19),지지,item_195
+infant,13. 일상생활과 관련된 말 (표현 14/이해19),하지마,item_196
+infant,14. 대신하는 말 (7),거기,item_197
+infant,14. 대신하는 말 (7),나/내,item_198
+infant,14. 대신하는 말 (7),누구,item_199
+infant,14. 대신하는 말 (7),뭐/무엇,item_200
+infant,14. 대신하는 말 (7),여기,item_201
+infant,14. 대신하는 말 (7),이거/요거,item_202
+infant,14. 대신하는 말 (7),저거,item_203
+infant,"15. 양, 수, 정도 (6)",다,item_204
+infant,"15. 양, 수, 정도 (6)",다시,item_205
+infant,"15. 양, 수, 정도 (6)",더,item_206
+infant,"15. 양, 수, 정도 (6)",또,item_207
+infant,"15. 양, 수, 정도 (6)",많이,item_208
+infant,"15. 양, 수, 정도 (6)",빨리,item_209
+infant,16. 동사 (43),가,item_210
+infant,16. 동사 (43),공부해,item_211
+infant,16. 동사 (43),그려,item_212
+infant,16. 동사 (43),깎아,item_213
+infant,16. 동사 (43),(불)꺼,item_214
+infant,16. 동사 (43),나가,item_215
+infant,16. 동사 (43),(계단)내려가,item_216
+infant,16. 동사 (43),(차에서)내려,item_217
+infant,16. 동사 (43),넣어,item_218
+infant,16. 동사 (43),노래해,item_219
+infant,16. 동사 (43),놀아,item_220
+infant,16. 동사 (43),누워,item_221
+infant,16. 동사 (43),닦아,item_222
+infant,16. 동사 (43),닫아,item_223
+infant,16. 동사 (43),(가방)들어,item_224
+infant,16. 동사 (43),때려,item_225
+infant,16. 동사 (43),(주사)맞아,item_226
+infant,16. 동사 (43),먹어,item_227
+infant,16. 동사 (43),박수쳐,item_228
+infant,16. 동사 (43),벗어,item_229
+infant,16. 동사 (43),봐,item_230
+infant,16. 동사 (43),빗어,item_231
+infant,16. 동사 (43),빼,item_232
+infant,16. 동사 (43),사랑해,item_233
+infant,16. 동사 (43),신어,item_234
+infant,16. 동사 (43),(모자)써,item_235
+infant,16. 동사 (43),씻어,item_236
+infant,16. 동사 (43),안아,item_237
+infant,16. 동사 (43),안해,item_238
+infant,16. 동사 (43),앉아,item_239
+infant,16. 동사 (43),열어,item_240
+infant,16. 동사 (43),와,item_241
+infant,16. 동사 (43),올라가,item_242
+infant,16. 동사 (43),울어,item_243
+infant,16. 동사 (43),웃어,item_244
+infant,16. 동사 (43),일어나,item_245
+infant,16. 동사 (43),읽어,item_246
+infant,16. 동사 (43),입어,item_247
+infant,16. 동사 (43),(잠)자,item_248
+infant,16. 동사 (43),줘/주세요,item_249
+infant,16. 동사 (43),(공)차,item_250
+infant,16. 동사 (43),(차)타,item_251
+infant,16. 동사 (43),해,item_252
+infant,17. 형용사 (20),간지러워,item_253
+infant,17. 형용사 (20),같아/똑같아,item_254
+infant,17. 형용사 (20),고마워,item_255
+infant,17. 형용사 (20),깜깜해,item_256
+infant,17. 형용사 (20),더워,item_257
+infant,17. 형용사 (20),뜨거워,item_258
+infant,17. 형용사 (20),많아,item_259
+infant,17. 형용사 (20),맛있어,item_260
+infant,17. 형용사 (20),매워,item_261
+infant,17. 형용사 (20),무서워,item_262
+infant,17. 형용사 (20),미워,item_263
+infant,17. 형용사 (20),싫어,item_264
+infant,17. 형용사 (20),아니야,item_265
+infant,17. 형용사 (20),아파,item_266
+infant,17. 형용사 (20),없어/없다,item_267
+infant,17. 형용사 (20),예뻐,item_268
+infant,17. 형용사 (20),있어,item_269
+infant,17. 형용사 (20),좋아,item_270
+infant,17. 형용사 (20),차가워/차,item_271
+infant,17. 형용사 (20),추워,item_272
+infant,18. 기능어 (12),-가(엄마가),item_273
+infant,18. 기능어 (12),-랑(엄마랑),item_274
+infant,18. 기능어 (12),-야(아기야),item_275
+infant,18. 기능어 (12),-말구(이거말구),item_276
+infant,18. 기능어 (12),-줘(빼줘),item_277
+infant,18. 기능어 (12),-고(먹고),item_278
+infant,18. 기능어 (12),-네(가네),item_279
+infant,18. 기능어 (12),-다(있다),item_280
+infant,18. 기능어 (12),-ㄹ게(할게),item_281
+infant,18. 기능어 (12),-요(가요),item_282
+infant,18. 기능어 (12),-자(가자),item_283
+infant,18. 기능어 (12),-지(먹지),item_284
+toddler,1. 소리 (11),꽥꽥,item_001
+toddler,1. 소리 (11),꿀꿀,item_002
+toddler,1. 소리 (11),똑똑,item_003
+toddler,1. 소리 (11),멍멍,item_004
+toddler,1. 소리 (11),빵빵,item_005
+toddler,1. 소리 (11),야옹,item_006
+toddler,1. 소리 (11),얌얌,item_007
+toddler,1. 소리 (11),어흥,item_008
+toddler,1. 소리 (11),음매,item_009
+toddler,1. 소리 (11),짹짹,item_010
+toddler,1. 소리 (11),칙칙폭폭,item_011
+toddler,2. 탈 것 (13),기차,item_012
+toddler,2. 탈 것 (13),배,item_013
+toddler,2. 탈 것 (13),버스,item_014
+toddler,2. 탈 것 (13),비행기,item_015
+toddler,2. 탈 것 (13),불자동차/소방차,item_016
+toddler,2. 탈 것 (13),썰매,item_017
+toddler,2. 탈 것 (13),오토바이,item_018
+toddler,2. 탈 것 (13),유모차,item_019
+toddler,2. 탈 것 (13),자전거,item_020
+toddler,2. 탈 것 (13),차/자동차,item_021
+toddler,2. 탈 것 (13),택시,item_022
+toddler,2. 탈 것 (13),트럭,item_023
+toddler,2. 탈 것 (13),헬리콥터,item_024
+toddler,3. 장난감 및 문구류 (14),공,item_025
+toddler,3. 장난감 및 문구류 (14),로봇,item_026
+toddler,3. 장난감 및 문구류 (14),블록,item_027
+toddler,3. 장난감 및 문구류 (14),비누방울,item_028
+toddler,3. 장난감 및 문구류 (14),선물,item_029
+toddler,3. 장난감 및 문구류 (14),연필,item_030
+toddler,3. 장난감 및 문구류 (14),인형,item_031
+toddler,3. 장난감 및 문구류 (14),장난감,item_032
+toddler,3. 장난감 및 문구류 (14),종이,item_033
+toddler,3. 장난감 및 문구류 (14),책,item_034
+toddler,3. 장난감 및 문구류 (14),총,item_035
+toddler,3. 장난감 및 문구류 (14),크레용/크레파스,item_036
+toddler,3. 장난감 및 문구류 (14),풀,item_037
+toddler,3. 장난감 및 문구류 (14),풍선,item_038
+toddler,4. 동물 (41),개,item_039
+toddler,4. 동물 (41),개구리,item_040
+toddler,4. 동물 (41),개미,item_041
+toddler,4. 동물 (41),거북이,item_042
+toddler,4. 동물 (41),거위,item_043
+toddler,4. 동물 (41),고양이,item_044
+toddler,4. 동물 (41),곰,item_045
+toddler,4. 동물 (41),공룡,item_046
+toddler,4. 동물 (41),기린,item_047
+toddler,4. 동물 (41),나비,item_048
+toddler,4. 동물 (41),다람쥐,item_049
+toddler,4. 동물 (41),닭,item_050
+toddler,4. 동물 (41),당나귀,item_051
+toddler,4. 동물 (41),동물,item_052
+toddler,4. 동물 (41),돼지,item_053
+toddler,4. 동물 (41),말,item_054
+toddler,4. 동물 (41),물고기,item_055
+toddler,4. 동물 (41),뱀,item_056
+toddler,4. 동물 (41),벌,item_057
+toddler,4. 동물 (41),벌레,item_058
+toddler,4. 동물 (41),병아리,item_059
+toddler,4. 동물 (41),부엉이,item_060
+toddler,4. 동물 (41),비둘기,item_061
+toddler,4. 동물 (41),사슴,item_062
+toddler,4. 동물 (41),사자,item_063
+toddler,4. 동물 (41),새,item_064
+toddler,4. 동물 (41),소,item_065
+toddler,4. 동물 (41),송아지,item_066
+toddler,4. 동물 (41),악어,item_067
+toddler,4. 동물 (41),양,item_068
+toddler,4. 동물 (41),여우,item_069
+toddler,4. 동물 (41),염소,item_070
+toddler,4. 동물 (41),오리,item_071
+toddler,4. 동물 (41),원숭이,item_072
+toddler,4. 동물 (41),쥐,item_073
+toddler,4. 동물 (41),참새,item_074
+toddler,4. 동물 (41),코끼리,item_075
+toddler,4. 동물 (41),토끼,item_076
+toddler,4. 동물 (41),펭귄,item_077
+toddler,4. 동물 (41),하마,item_078
+toddler,4. 동물 (41),호랑이,item_079
+toddler,5. 옷 (20),가방,item_080
+toddler,5. 옷 (20),구두,item_081
+toddler,5. 옷 (20),기저귀,item_082
+toddler,5. 옷 (20),단추,item_083
+toddler,5. 옷 (20),모자,item_084
+toddler,5. 옷 (20),목걸이,item_085
+toddler,5. 옷 (20),바지,item_086
+toddler,5. 옷 (20),목도리,item_087
+toddler,5. 옷 (20),신/신발,item_088
+toddler,5. 옷 (20),양말,item_089
+toddler,5. 옷 (20),옷/꼬까,item_090
+toddler,5. 옷 (20),운동화,item_091
+toddler,5. 옷 (20),잠바,item_092
+toddler,5. 옷 (20),잠옷,item_093
+toddler,5. 옷 (20),장갑,item_094
+toddler,5. 옷 (20),주머니,item_095
+toddler,5. 옷 (20),치마,item_096
+toddler,5. 옷 (20),코트/외투,item_097
+toddler,5. 옷 (20),팬티,item_098
+toddler,5. 옷 (20),허리띠,item_099
+toddler,6. 가구 및 방안 (21),계단,item_100
+toddler,6. 가구 및 방안 (21),냉장고,item_101
+toddler,6. 가구 및 방안 (21),목욕탕,item_102
+toddler,6. 가구 및 방안 (21),문,item_103
+toddler,6. 가구 및 방안 (21),방,item_104
+toddler,6. 가구 및 방안 (21),베개,item_105
+toddler,6. 가구 및 방안 (21),부엌,item_106
+toddler,6. 가구 및 방안 (21),서랍,item_107
+toddler,6. 가구 및 방안 (21),세탁기,item_108
+toddler,6. 가구 및 방안 (21),소파,item_109
+toddler,6. 가구 및 방안 (21),옷장,item_110
+toddler,6. 가구 및 방안 (21),유리,item_111
+toddler,6. 가구 및 방안 (21),의자,item_112
+toddler,6. 가구 및 방안 (21),이불,item_113
+toddler,6. 가구 및 방안 (21),전자레인지,item_114
+toddler,6. 가구 및 방안 (21),지하실,item_115
+toddler,6. 가구 및 방안 (21),창문,item_116
+toddler,6. 가구 및 방안 (21),침대,item_117
+toddler,6. 가구 및 방안 (21),텔레비전,item_118
+toddler,6. 가구 및 방안 (21),피아노,item_119
+toddler,6. 가구 및 방안 (21),화장실,item_120
+toddler,7. 음식 (58),감,item_121
+toddler,7. 음식 (58),감자,item_122
+toddler,7. 음식 (58),계란/달걀,item_123
+toddler,7. 음식 (58),고구마,item_124
+toddler,7. 음식 (58),고기,item_125
+toddler,7. 음식 (58),과일,item_126
+toddler,7. 음식 (58),과자/까까,item_127
+toddler,7. 음식 (58),국,item_128
+toddler,7. 음식 (58),국수,item_129
+toddler,7. 음식 (58),귤,item_130
+toddler,7. 음식 (58),김,item_131
+toddler,7. 음식 (58),김치,item_132
+toddler,7. 음식 (58),껌,item_133
+toddler,7. 음식 (58),닭고기,item_134
+toddler,7. 음식 (58),당근,item_135
+toddler,7. 음식 (58),도너츠,item_136
+toddler,7. 음식 (58),딸기,item_137
+toddler,7. 음식 (58),땅콩,item_138
+toddler,7. 음식 (58),떡,item_139
+toddler,7. 음식 (58),라면,item_140
+toddler,7. 음식 (58),메론,item_141
+toddler,7. 음식 (58),무/무우,item_142
+toddler,7. 음식 (58),물,item_143
+toddler,7. 음식 (58),바나나,item_144
+toddler,7. 음식 (58),밤,item_145
+toddler,7. 음식 (58),배추,item_146
+toddler,7. 음식 (58),복숭아,item_147
+toddler,7. 음식 (58),빵,item_148
+toddler,7. 음식 (58),사과,item_149
+toddler,7. 음식 (58),사이다,item_150
+toddler,7. 음식 (58),사탕,item_151
+toddler,7. 음식 (58),생선,item_152
+toddler,7. 음식 (58),설탕,item_153
+toddler,7. 음식 (58),소금,item_154
+toddler,7. 음식 (58),수박,item_155
+toddler,7. 음식 (58),스파게티,item_156
+toddler,7. 음식 (58),쌀,item_157
+toddler,7. 음식 (58),아이스크림,item_158
+toddler,7. 음식 (58),얼음,item_159
+toddler,7. 음식 (58),오렌지,item_160
+toddler,7. 음식 (58),옥수수,item_161
+toddler,7. 음식 (58),요구르트,item_162
+toddler,7. 음식 (58),우유,item_163
+toddler,7. 음식 (58),음식,item_164
+toddler,7. 음식 (58),주스,item_165
+toddler,7. 음식 (58),초콜렛,item_166
+toddler,7. 음식 (58),치즈,item_167
+toddler,7. 음식 (58),커피,item_168
+toddler,7. 음식 (58),케이크,item_169
+toddler,7. 음식 (58),콜라,item_170
+toddler,7. 음식 (58),콩,item_171
+toddler,7. 음식 (58),토마토,item_172
+toddler,7. 음식 (58),포도,item_173
+toddler,7. 음식 (58),피자,item_174
+toddler,7. 음식 (58),핫도그,item_175
+toddler,7. 음식 (58),햄버거,item_176
+toddler,7. 음식 (58),호떡,item_177
+toddler,7. 음식 (58),호박,item_178
+toddler,8. 신체부위 (31),고추,item_179
+toddler,8. 신체부위 (31),귀,item_180
+toddler,8. 신체부위 (31),눈,item_181
+toddler,8. 신체부위 (31),다리,item_182
+toddler,8. 신체부위 (31),등,item_183
+toddler,8. 신체부위 (31),똥꼬,item_184
+toddler,8. 신체부위 (31),머리,item_185
+toddler,8. 신체부위 (31),머리카락,item_186
+toddler,8. 신체부위 (31),목,item_187
+toddler,8. 신체부위 (31),몸,item_188
+toddler,8. 신체부위 (31),무릎,item_189
+toddler,8. 신체부위 (31),발,item_190
+toddler,8. 신체부위 (31),발목,item_191
+toddler,8. 신체부위 (31),발톱,item_192
+toddler,8. 신체부위 (31),배,item_193
+toddler,8. 신체부위 (31),배꼽,item_194
+toddler,8. 신체부위 (31),뺨,item_195
+toddler,8. 신체부위 (31),손,item_196
+toddler,8. 신체부위 (31),손가락,item_197
+toddler,8. 신체부위 (31),어깨,item_198
+toddler,8. 신체부위 (31),얼굴,item_199
+toddler,8. 신체부위 (31),엉덩이,item_200
+toddler,8. 신체부위 (31),이/이빨,item_201
+toddler,8. 신체부위 (31),입,item_202
+toddler,8. 신체부위 (31),입술,item_203
+toddler,8. 신체부위 (31),코,item_204
+toddler,8. 신체부위 (31),턱,item_205
+toddler,8. 신체부위 (31),팔,item_206
+toddler,8. 신체부위 (31),피,item_207
+toddler,8. 신체부위 (31),허리,item_208
+toddler,8. 신체부위 (31),혀,item_209
+toddler,9. 가정용품 (36),가위,item_210
+toddler,9. 가정용품 (36),걸레,item_211
+toddler,9. 가정용품 (36),그릇,item_212
+toddler,9. 가정용품 (36),그림,item_213
+toddler,9. 가정용품 (36),돈,item_214
+toddler,9. 가정용품 (36),라디오,item_215
+toddler,9. 가정용품 (36),망치,item_216
+toddler,9. 가정용품 (36),못,item_217
+toddler,9. 가정용품 (36),병,item_218
+toddler,9. 가정용품 (36),비누,item_219
+toddler,9. 가정용품 (36),빗,item_220
+toddler,9. 가정용품 (36),빗자루,item_221
+toddler,9. 가정용품 (36),상자,item_222
+toddler,9. 가정용품 (36),수건,item_223
+toddler,9. 가정용품 (36),숟가락,item_224
+toddler,9. 가정용품 (36),시계,item_225
+toddler,9. 가정용품 (36),쓰레기,item_226
+toddler,9. 가정용품 (36),쓰레기통/휴지통,item_227
+toddler,9. 가정용품 (36),안경,item_228
+toddler,9. 가정용품 (36),약,item_229
+toddler,9. 가정용품 (36),열쇠,item_230
+toddler,9. 가정용품 (36),옷걸이,item_231
+toddler,9. 가정용품 (36),우산,item_232
+toddler,9. 가정용품 (36),쟁반,item_233
+toddler,9. 가정용품 (36),전화,item_234
+toddler,9. 가정용품 (36),접시,item_235
+toddler,9. 가정용품 (36),젓가락,item_236
+toddler,9. 가정용품 (36),지갑,item_237
+toddler,9. 가정용품 (36),청소기,item_238
+toddler,9. 가정용품 (36),치약,item_239
+toddler,9. 가정용품 (36),칫솔,item_240
+toddler,9. 가정용품 (36),카메라,item_241
+toddler,9. 가정용품 (36),칼,item_242
+toddler,9. 가정용품 (36),컵,item_243
+toddler,9. 가정용품 (36),포크,item_244
+toddler,9. 가정용품 (36),휴지,item_245
+toddler,10. 외부사물 (26),구름,item_246
+toddler,10. 외부사물 (26),그네,item_247
+toddler,10. 외부사물 (26),길,item_248
+toddler,10. 외부사물 (26),깃발,item_249
+toddler,10. 외부사물 (26),꽃,item_250
+toddler,10. 외부사물 (26),나무,item_251
+toddler,10. 외부사물 (26),눈,item_252
+toddler,10. 외부사물 (26),눈사람,item_253
+toddler,10. 외부사물 (26),달,item_254
+toddler,10. 외부사물 (26),돌,item_255
+toddler,10. 외부사물 (26),땅,item_256
+toddler,10. 외부사물 (26),모래,item_257
+toddler,10. 외부사물 (26),미끄럼틀,item_258
+toddler,10. 외부사물 (26),바람,item_259
+toddler,10. 외부사물 (26),바위,item_260
+toddler,10. 외부사물 (26),별,item_261
+toddler,10. 외부사물 (26),불,item_262
+toddler,10. 외부사물 (26),비,item_263
+toddler,10. 외부사물 (26),사다리,item_264
+toddler,10. 외부사물 (26),시소,item_265
+toddler,10. 외부사물 (26),잔디,item_266
+toddler,10. 외부사물 (26),지붕,item_267
+toddler,10. 외부사물 (26),풀,item_268
+toddler,10. 외부사물 (26),하늘,item_269
+toddler,10. 외부사물 (26),해/햇빛,item_270
+toddler,10. 외부사물 (26),흙,item_271
+toddler,11. 일상생활 (14),고마워,item_272
+toddler,11. 일상생활 (14),네/응,item_273
+toddler,11. 일상생활 (14),돼,item_274
+toddler,11. 일상생활 (14),만세,item_275
+toddler,11. 일상생활 (14),목욕,item_276
+toddler,11. 일상생활 (14),빠이빠이,item_277
+toddler,11. 일상생활 (14),쉬,item_278
+toddler,11. 일상생활 (14),아니(야),item_279
+toddler,11. 일상생활 (14),안녕,item_280
+toddler,11. 일상생활 (14),안돼,item_281
+toddler,11. 일상생활 (14),양치,item_282
+toddler,11. 일상생활 (14),응가/똥,item_283
+toddler,11. 일상생활 (14),파이팅,item_284
+toddler,11. 일상생활 (14),하지마,item_285
+toddler,12. 장소 (25),가게,item_286
+toddler,12. 장소 (25),강,item_287
+toddler,12. 장소 (25),공원,item_288
+toddler,12. 장소 (25),교회,item_289
+toddler,12. 장소 (25),놀이터,item_290
+toddler,12. 장소 (25),동물원,item_291
+toddler,12. 장소 (25),마당,item_292
+toddler,12. 장소 (25),바깥,item_293
+toddler,12. 장소 (25),바다,item_294
+toddler,12. 장소 (25),병원,item_295
+toddler,12. 장소 (25),산,item_296
+toddler,12. 장소 (25),수영장,item_297
+toddler,12. 장소 (25),숲,item_298
+toddler,12. 장소 (25),슈퍼마켓,item_299
+toddler,12. 장소 (25),시골,item_300
+toddler,12. 장소 (25),시장,item_301
+toddler,12. 장소 (25),아파트,item_302
+toddler,12. 장소 (25),유치원,item_303
+toddler,12. 장소 (25),은행,item_304
+toddler,12. 장소 (25),일,item_305
+toddler,12. 장소 (25),절,item_306
+toddler,12. 장소 (25),주유소,item_307
+toddler,12. 장소 (25),집,item_308
+toddler,12. 장소 (25),학교,item_309
+toddler,12. 장소 (25),회사,item_310
+toddler,"13. 양, 정도 (14)",너무,item_311
+toddler,"13. 양, 정도 (14)",다,item_312
+toddler,"13. 양, 정도 (14)",다시,item_313
+toddler,"13. 양, 정도 (14)",더,item_314
+toddler,"13. 양, 정도 (14)",또,item_315
+toddler,"13. 양, 정도 (14)",많이,item_316
+toddler,"13. 양, 정도 (14)",빨리,item_317
+toddler,"13. 양, 정도 (14)",아주,item_318
+toddler,"13. 양, 정도 (14)",자꾸,item_319
+toddler,"13. 양, 정도 (14)",잘,item_320
+toddler,"13. 양, 정도 (14)",전부,item_321
+toddler,"13. 양, 정도 (14)",조금,item_322
+toddler,"13. 양, 정도 (14)",진짜,item_323
+toddler,"13. 양, 정도 (14)",하나,item_324
+toddler,14. 사람 (33),간호사,item_325
+toddler,14. 사람 (33),경찰(관),item_326
+toddler,14. 사람 (33),고모,item_327
+toddler,14. 사람 (33),공주,item_328
+toddler,14. 사람 (33),군인,item_329
+toddler,14. 사람 (33),귀신,item_330
+toddler,14. 사람 (33),남자,item_331
+toddler,14. 사람 (33),도둑,item_332
+toddler,14. 사람 (33),동생,item_333
+toddler,14. 사람 (33),딸,item_334
+toddler,14. 사람 (33),사람,item_335
+toddler,14. 사람 (33),삼촌,item_336
+toddler,14. 사람 (33),선생님,item_337
+toddler,14. 사람 (33),소방수,item_338
+toddler,14. 사람 (33),아기/아가,item_339
+toddler,14. 사람 (33),아들,item_340
+toddler,14. 사람 (33),아빠,item_341
+toddler,14. 사람 (33),아저씨,item_342
+toddler,14. 사람 (33),아줌마,item_343
+toddler,14. 사람 (33),어른,item_344
+toddler,14. 사람 (33),언니,item_345
+toddler,14. 사람 (33),엄마,item_346
+toddler,14. 사람 (33),여자,item_347
+toddler,14. 사람 (33),오빠,item_348
+toddler,14. 사람 (33),왕자,item_349
+toddler,14. 사람 (33),우체부,item_350
+toddler,14. 사람 (33),의사,item_351
+toddler,14. 사람 (33),이모,item_352
+toddler,14. 사람 (33),자기 이름,item_353
+toddler,14. 사람 (33),친구,item_354
+toddler,14. 사람 (33),할머니,item_355
+toddler,14. 사람 (33),할아버지,item_356
+toddler,14. 사람 (33),형,item_357
+toddler,15. 의문사 (11),누구,item_358
+toddler,15. 의문사 (11),몇,item_359
+toddler,15. 의문사 (11),무슨,item_360
+toddler,15. 의문사 (11),무엇/뭐,item_361
+toddler,15. 의문사 (11),어느,item_362
+toddler,15. 의문사 (11),어디,item_363
+toddler,15. 의문사 (11),어디서,item_364
+toddler,15. 의문사 (11),어떤,item_365
+toddler,15. 의문사 (11),어떻게,item_366
+toddler,15. 의문사 (11),언제,item_367
+toddler,15. 의문사 (11),왜,item_368
+toddler,16. 동사 (150),가,item_369
+toddler,16. 동사 (150),가리켜,item_370
+toddler,16. 동사 (150),가져,item_371
+toddler,16. 동사 (150),간지럽혀,item_372
+toddler,16. 동사 (150),건너,item_373
+toddler,16. 동사 (150),걸어,item_374
+toddler,16. 동사 (150),고쳐,item_375
+toddler,16. 동사 (150),공부해,item_376
+toddler,16. 동사 (150),그려,item_377
+toddler,16. 동사 (150),기다려,item_378
+toddler,16. 동사 (150),깎아,item_379
+toddler,16. 동사 (150),(컵을)깨,item_380
+toddler,16. 동사 (150),(불)꺼,item_381
+toddler,16. 동사 (150),꺼내,item_382
+toddler,16. 동사 (150),꽂아,item_383
+toddler,16. 동사 (150),끊어져,item_384
+toddler,16. 동사 (150),끌어,item_385
+toddler,16. 동사 (150),끝내,item_386
+toddler,16. 동사 (150),끼워,item_387
+toddler,16. 동사 (150),나가,item_388
+toddler,16. 동사 (150),나눠가져,item_389
+toddler,16. 동사 (150),나와,item_390
+toddler,16. 동사 (150),(물건을)날라,item_391
+toddler,16. 동사 (150),날라가,item_392
+toddler,16. 동사 (150),(차에서)내려,item_393
+toddler,16. 동사 (150),내려가,item_394
+toddler,16. 동사 (150),넘어져,item_395
+toddler,16. 동사 (150),(통에)넣어,item_396
+toddler,16. 동사 (150),노래 불러,item_397
+toddler,16. 동사 (150),놀아,item_398
+toddler,16. 동사 (150),(물건을)놓아,item_399
+toddler,16. 동사 (150),누워,item_400
+toddler,16. 동사 (150),(무엇을)눌러,item_401
+toddler,16. 동사 (150),(무엇에)눌려,item_402
+toddler,16. 동사 (150),다녀,item_403
+toddler,16. 동사 (150),다쳐,item_404
+toddler,16. 동사 (150),닦아,item_405
+toddler,16. 동사 (150),닫아,item_406
+toddler,16. 동사 (150),달려,item_407
+toddler,16. 동사 (150),당겨,item_408
+toddler,16. 동사 (150),던져,item_409
+toddler,16. 동사 (150),덮어,item_410
+toddler,16. 동사 (150),도와,item_411
+toddler,16. 동사 (150),돌려,item_412
+toddler,16. 동사 (150),돌아,item_413
+toddler,16. 동사 (150),두드려,item_414
+toddler,16. 동사 (150),(여기에)둬,item_415
+toddler,16. 동사 (150),(물건을)들어,item_416
+toddler,16. 동사 (150),(소리를)들어,item_417
+toddler,16. 동사 (150),들어가,item_418
+toddler,16. 동사 (150),떄려,item_419
+toddler,16. 동사 (150),(물에)떠,item_420
+toddler,16. 동사 (150),떨어뜨려,item_421
+toddler,16. 동사 (150),떨어져,item_422
+toddler,16. 동사 (150),떼(어),item_423
+toddler,16. 동사 (150),뛰어,item_424
+toddler,16. 동사 (150),마셔,item_425
+toddler,16. 동사 (150),만들어,item_426
+toddler,16. 동사 (150),(빨래/싸움)말려,item_427
+toddler,16. 동사 (150),말해,item_428
+toddler,16. 동사 (150),맛봐,item_429
+toddler,16. 동사 (150),(주사를)맞아,item_430
+toddler,16. 동사 (150),(음식을)먹어,item_431
+toddler,16. 동사 (150),(음식을)먹여,item_432
+toddler,16. 동사 (150),멈춰,item_433
+toddler,16. 동사 (150),몰라,item_434
+toddler,16. 동사 (150),물어,item_435
+toddler,16. 동사 (150),미워해,item_436
+toddler,16. 동사 (150),밀어,item_437
+toddler,16. 동사 (150),(약)발라,item_438
+toddler,16. 동사 (150),박수쳐,item_439
+toddler,16. 동사 (150),버려,item_440
+toddler,16. 동사 (150),벗어,item_441
+toddler,16. 동사 (150),보여,item_442
+toddler,16. 동사 (150),봐,item_443
+toddler,16. 동사 (150),부딪쳐,item_444
+toddler,16. 동사 (150),부숴,item_445
+toddler,16. 동사 (150),(물을)부어,item_446
+toddler,16. 동사 (150),불러,item_447
+toddler,16. 동사 (150),(풍선을)불어,item_448
+toddler,16. 동사 (150),붙여,item_449
+toddler,16. 동사 (150),비켜,item_450
+toddler,16. 동사 (150),빗어,item_451
+toddler,16. 동사 (150),빠져,item_452
+toddler,16. 동사 (150),빨아,item_453
+toddler,16. 동사 (150),빼,item_454
+toddler,16. 동사 (150),뺴앗아,item_455
+toddler,16. 동사 (150),뽀뽀해,item_456
+toddler,16. 동사 (150),뽑아,item_457
+toddler,16. 동사 (150),(물건을)사,item_458
+toddler,16. 동사 (150),사랑해,item_459
+toddler,16. 동사 (150),살아,item_460
+toddler,16. 동사 (150),생각해,item_461
+toddler,16. 동사 (150),(그 자리에)서,item_462
+toddler,16. 동사 (150),서둘러,item_463
+toddler,16. 동사 (150),손대,item_464
+toddler,16. 동사 (150),수영해,item_465
+toddler,16. 동사 (150),숨어,item_466
+toddler,16. 동사 (150),시작해,item_467
+toddler,16. 동사 (150),신어,item_468
+toddler,16. 동사 (150),(물건을)실어,item_469
+toddler,16. 동사 (150),싸워,item_470
+toddler,16. 동사 (150),(글)써,item_471
+toddler,16. 동사 (150),(모자)써,item_472
+toddler,16. 동사 (150),쏟아,item_473
+toddler,16. 동사 (150),(총을)쏴,item_474
+toddler,16. 동사 (150),쓰러져,item_475
+toddler,16. 동사 (150),씻어,item_476
+toddler,16. 동사 (150),안아,item_477
+toddler,16. 동사 (150),안해,item_478
+toddler,16. 동사 (150),앉아,item_479
+toddler,16. 동사 (150),알아,item_480
+toddler,16. 동사 (150),열어,item_481
+toddler,16. 동사 (150),올라가,item_482
+toddler,16. 동사 (150),올려,item_483
+toddler,16. 동사 (150),와,item_484
+toddler,16. 동사 (150),요리해,item_485
+toddler,16. 동사 (150),운전해,item_486
+toddler,16. 동사 (150),울어,item_487
+toddler,16. 동사 (150),웃어,item_488
+toddler,16. 동사 (150),원해,item_489
+toddler,16. 동사 (150),(승부에)이겨,item_490
+toddler,16. 동사 (150),이야기해,item_491
+toddler,16. 동사 (150),일어나/일어서,item_492
+toddler,16. 동사 (150),일해,item_493
+toddler,16. 동사 (150),읽어,item_494
+toddler,16. 동사 (150),입어,item_495
+toddler,16. 동사 (150),(잠)자,item_496
+toddler,16. 동사 (150),잘라,item_497
+toddler,16. 동사 (150),잡아,item_498
+toddler,16. 동사 (150),좋아해,item_499
+toddler,16. 동사 (150),죽어,item_500
+toddler,16. 동사 (150),줘,item_501
+toddler,16. 동사 (150),쫓아,item_502
+toddler,16. 동사 (150),찍어,item_503
+toddler,16. 동사 (150),(공을)차,item_504
+toddler,16. 동사 (150),찾아,item_505
+toddler,16. 동사 (150),춤춰,item_506
+toddler,16. 동사 (150),(차에)치여,item_507
+toddler,16. 동사 (150),치워,item_508
+toddler,16. 동사 (150),칠해,item_509
+toddler,16. 동사 (150),(차에)타,item_510
+toddler,16. 동사 (150),(차에)태워,item_511
+toddler,16. 동사 (150),터져,item_512
+toddler,16. 동사 (150),튀겨,item_513
+toddler,16. 동사 (150),틀어,item_514
+toddler,16. 동사 (150),(코를)풀어,item_515
+toddler,16. 동사 (150),(꽃이)피어,item_516
+toddler,16. 동사 (150),해,item_517
+toddler,16. 동사 (150),혼나,item_518
+toddler,17. 형용사 (52),가벼워,item_519
+toddler,17. 형용사 (52),간지러워,item_520
+toddler,17. 형용사 (52),같아/똑같아,item_521
+toddler,17. 형용사 (52),괜찮아,item_522
+toddler,17. 형용사 (52),귀여워,item_523
+toddler,17. 형용사 (52),길어,item_524
+toddler,17. 형용사 (52),(색이)까매,item_525
+toddler,17. 형용사 (52),깜깜해,item_526
+toddler,17. 형용사 (52),나빠,item_527
+toddler,17. 형용사 (52),(색이)노래,item_528
+toddler,17. 형용사 (52),높아,item_529
+toddler,17. 형용사 (52),달라,item_530
+toddler,17. 형용사 (52),더러워,item_531
+toddler,17. 형용사 (52),더워,item_532
+toddler,17. 형용사 (52),동그래,item_533
+toddler,17. 형용사 (52),뜨거워,item_534
+toddler,17. 형용사 (52),많아,item_535
+toddler,17. 형용사 (52),맛없어,item_536
+toddler,17. 형용사 (52),맛있어,item_537
+toddler,17. 형용사 (52),매워,item_538
+toddler,17. 형용사 (52),멀어,item_539
+toddler,17. 형용사 (52),멋있어,item_540
+toddler,17. 형용사 (52),목말라,item_541
+toddler,17. 형용사 (52),무거워,item_542
+toddler,17. 형용사 (52),무서워,item_543
+toddler,17. 형용사 (52),미워,item_544
+toddler,17. 형용사 (52),배고파,item_545
+toddler,17. 형용사 (52),(색이)빨개,item_546
+toddler,17. 형용사 (52),빨라,item_547
+toddler,17. 형용사 (52),시끄러워,item_548
+toddler,17. 형용사 (52),싫어,item_549
+toddler,17. 형용사 (52),심심해,item_550
+toddler,17. 형용사 (52),아파,item_551
+toddler,17. 형용사 (52),어두워,item_552
+toddler,17. 형용사 (52),없어,item_553
+toddler,17. 형용사 (52),예뻐,item_554
+toddler,17. 형용사 (52),이상해,item_555
+toddler,17. 형용사 (52),있어,item_556
+toddler,17. 형용사 (52),작아,item_557
+toddler,17. 형용사 (52),재미있어,item_558
+toddler,17. 형용사 (52),조그맣다,item_559
+toddler,17. 형용사 (52),조용해,item_560
+toddler,17. 형용사 (52),졸려,item_561
+toddler,17. 형용사 (52),좋아,item_562
+toddler,17. 형용사 (52),(맛이)짜,item_563
+toddler,17. 형용사 (52),(촉감이)차,item_564
+toddler,17. 형용사 (52),착해,item_565
+toddler,17. 형용사 (52),추워,item_566
+toddler,17. 형용사 (52),커,item_567
+toddler,17. 형용사 (52),(색이)파래,item_568
+toddler,17. 형용사 (52),(색이)하얘,item_569
+toddler,17. 형용사 (52),힘들어,item_570
+toddler,18. 끝맺는 말 (15),-구나,item_571
+toddler,18. 끝맺는 말 (15),-께,item_572
+toddler,18. 끝맺는 말 (15),-네,item_573
+toddler,18. 끝맺는 말 (15),-는다,item_574
+toddler,18. 끝맺는 말 (15),-니?,item_575
+toddler,18. 끝맺는 말 (15),-다,item_576
+toddler,18. 끝맺는 말 (15),-대,item_577
+toddler,18. 끝맺는 말 (15),-ㄹ거야/테야,item_578
+toddler,18. 끝맺는 말 (15),-ㄹ까?,item_579
+toddler,18. 끝맺는 말 (15),-ㄹ래,item_580
+toddler,18. 끝맺는 말 (15),-어(아),item_581
+toddler,18. 끝맺는 말 (15),-어야 돼,item_582
+toddler,18. 끝맺는 말 (15),-요,item_583
+toddler,18. 끝맺는 말 (15),-자,item_584
+toddler,18. 끝맺는 말 (15),-지,item_585
+toddler,19. 조사 (12),-가(이),item_586
+toddler,19. 조사 (12),-는(은),item_587
+toddler,19. 조사 (12),-도,item_588
+toddler,19. 조사 (12),-랑,item_589
+toddler,19. 조사 (12),-로,item_590
+toddler,19. 조사 (12),-를(을),item_591
+toddler,19. 조사 (12),-만,item_592
+toddler,19. 조사 (12),-야,item_593
+toddler,19. 조사 (12),-에,item_594
+toddler,19. 조사 (12),-에서,item_595
+toddler,19. 조사 (12),-하고,item_596
+toddler,19. 조사 (12),-한테/에게,item_597
+toddler,20. 연결하는 말 (6),그리고,item_598
+toddler,20. 연결하는 말 (6),그런데,item_599
+toddler,20. 연결하는 말 (6),그래서,item_600
+toddler,20. 연결하는 말 (6),-고,item_601
+toddler,20. 연결하는 말 (6),-는데,item_602
+toddler,20. 연결하는 말 (6),-서,item_603
+toddler,21. 위치 (8),뒤,item_604
+toddler,21. 위치 (8),밑,item_605
+toddler,21. 위치 (8),밖,item_606
+toddler,21. 위치 (8),아래,item_607
+toddler,21. 위치 (8),안,item_608
+toddler,21. 위치 (8),앞,item_609
+toddler,21. 위치 (8),옆,item_610
+toddler,21. 위치 (8),위,item_611
+toddler,22. 시간 (17),금방,item_612
+toddler,22. 시간 (17),나중에,item_613
+toddler,22. 시간 (17),날,item_614
+toddler,22. 시간 (17),낮,item_615
+toddler,22. 시간 (17),내일,item_616
+toddler,22. 시간 (17),매일/맨날,item_617
+toddler,22. 시간 (17),밤,item_618
+toddler,22. 시간 (17),시간,item_619
+toddler,22. 시간 (17),아침,item_620
+toddler,22. 시간 (17),어저께/어제,item_621
+toddler,22. 시간 (17),오늘,item_622
+toddler,22. 시간 (17),이따가,item_623
+toddler,22. 시간 (17),저녁,item_624
+toddler,22. 시간 (17),전,item_625
+toddler,22. 시간 (17),점심,item_626
+toddler,22. 시간 (17),지금,item_627
+toddler,22. 시간 (17),후,item_628
+toddler,23. 대명사 (7),그거,item_629
+toddler,23. 대명사 (7),나,item_630
+toddler,23. 대명사 (7),너,item_631
+toddler,23. 대명사 (7),여기,item_632
+toddler,23. 대명사 (7),우리,item_633
+toddler,23. 대명사 (7),이거,item_634
+toddler,23. 대명사 (7),저기,item_635
+toddler,24. 돕는말 (6),-고 있다,item_636
+toddler,24. 돕는말 (6),-놓다,item_637
+toddler,24. 돕는말 (6),-말다,item_638
+toddler,24. 돕는말 (6),-보다,item_639
+toddler,24. 돕는말 (6),-싶다,item_640
+toddler,24. 돕는말 (6),-주다,item_641
