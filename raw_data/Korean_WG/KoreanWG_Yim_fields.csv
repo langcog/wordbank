@@ -2,9 +2,9 @@ field,column,group,type
 ,s_no,,
 study_id,subj_num,child,study_id
 date_of_test,dot,admin,date_of_test
-date_of_birth,dob,child,date_of_birth
 sex,gender,child,sex
 ,age,,
+data_age,age_months,admin,data_age
 item_1,item_001,item,word
 item_2,item_002,item,word
 item_3,item_003,item,word
