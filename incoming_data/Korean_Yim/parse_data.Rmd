@@ -104,6 +104,20 @@ View(inner_join(instrument_wg,instrument_ws, by=c("definition","category")) %>%
 ```
 
 ```{r}
+korean_wg$gender[korean_wg$subj_num == "IN1017"] <- "F"
+korean_wg$gender[korean_wg$subj_num == "IN1018"] <- "M"
+korean_wg$gender[korean_wg$subj_num == "IN1019"] <- "M"
+korean_wg$gender[korean_wg$subj_num == "IN1024"] <- "M"
+korean_wg$gender[korean_wg$subj_num == "IN2004"] <- "M"
+
+korean_ws$dot[korean_ws$subj_num == "TO3078"] <- "12/03/2016"
+korean_ws$dot[korean_ws$subj_num == "TO4003"] <- "12/13/2016"
+
+
+```
+
+
+```{r}
 write_csv(korean_wg, "../../raw_data/Korean_WG/KoreanWG_Yim_data.csv", na = "")
 write_csv(korean_ws, "../../raw_data/Korean_WS/KoreanWS_Yim_data.csv", na = "")
 
