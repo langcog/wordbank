@@ -4,11 +4,18 @@ import json
 import re
 from django.core.management.base import BaseCommand
 from common.models import *
+import csv
 
 
 # Populates the ItemInfo and ItemMap models with data from instrument definition files.
 # Given no arguments, does so for all instruments in 'static/json/instruments.json'.
 # Given a language with -l and a form with -f, does so for only their Instrument object.
+
+def unicode_csv_reader(utf8_data, dialect=csv.excel, **kwargs):
+    csv_reader = csv.reader(utf8_data, dialect=dialect, **kwargs)
+    for row in csv_reader:
+        yield [unicode(cell, 'utf-8') for cell in row]
+        
 class Command(BaseCommand):
 
     def add_arguments(self, parser):
@@ -41,9 +48,11 @@ class Command(BaseCommand):
                 nrows = sheet.nrows
                 get_row = lambda row: list(sheet.row_values(row))
             elif ftype == 'csv':
-                contents = [[field.replace('"', '') for field in row] for row in [line.split(',')
-                                                for line in re.split("\n|\r", codecs.open(instrument['file'],
-                                                                                          encoding='utf-8').read())]]
+                # contents = [[field.replace('"', '') for field in row] for row in [line.split(',')
+                #                                 for line in re.split("\n|\r", codecs.open(instrument['file'],
+                #                                                                           encoding='utf-8').read())]]
+
+                contents = list(unicode_csv_reader(open(instrument['file'])))
                 col_names = contents[0]
                 nrows = len(contents)
                 get_row = lambda row: contents[row]
@@ -51,7 +60,6 @@ class Command(BaseCommand):
                 raise IOError("Instrument file must be xlsx, xls, or csv.")
 
             for row in xrange(1, nrows):
-
                 row_values = get_row(row)
                 if len(row_values) > 1:
                     itemID = row_values[col_names.index('itemID')]
