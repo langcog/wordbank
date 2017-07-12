@@ -45,3 +45,5 @@ from schemas.Australian_English_WS import *
 from schemas.English_British_Oxford_CDI import *
 from schemas.Latvian_WG import *
 from schemas.Latvian_WS import *
+from schemas.Korean_WG import *
+from schemas.Korean_WS import *
