@@ -4,13 +4,17 @@ library(dplyr)
 library(ggplot2)
 library(langcog)
 theme_set(theme_mikabr(base_size = 14))
-font <- theme_mikabr()$text$family
+# font <- theme_mikabr()$text$family
 
 all_prop_data <- read_csv("all_prop_data.csv")
 uni_lemmas <- sort(unique(all_prop_data$uni_lemma))
 start_lemma <- "dog"
+kid_min <- 3
+points_min <- 3
+
 
 input <- list(uni_lemma = "crocodile")
+
 
 shinyServer(function(input, output, session) {
 
@@ -23,11 +27,14 @@ shinyServer(function(input, output, session) {
                 selected = start_lemma)
   })
 
-  uni_lemma_data <- reactive({
+  uni_lemma_data <- function() {
     req(input$uni_lemma)
     all_prop_data %>%
-      filter(uni_lemma == input$uni_lemma)
-  })
+      group_by(language) %>%
+      filter(uni_lemma == input$uni_lemma &
+               n_kids >= kid_min &
+               n() >= points_min)
+  }
 
   crosslinguistic_plot <- function() {
     words_data <- uni_lemma_data() %>%
@@ -37,10 +44,10 @@ shinyServer(function(input, output, session) {
       facet_grid(measure ~ language) +
       geom_point(aes(y = prop, colour = language)) +
       geom_smooth(aes(y = prop, colour = language), method = "loess", se = FALSE,
-                  size = 1.5) +
+                  size = 1.5, span = 1) +
       # geom_line(aes(y = fit_prop, colour = language), size = 1.5) +
       geom_label(aes(x = 8, y = 1, label = words), data = words_data,
-                 family = font, label.padding = unit(0.15, "lines"),
+                 label.padding = unit(0.15, "lines"),
                  vjust = "inward", hjust = "inward") +
       scale_colour_solarized(guide = FALSE) +
       scale_fill_solarized(guide = FALSE) +
