@@ -1,6 +1,6 @@
 PackratFormat: 1.4
 PackratVersion: 0.4.7.1
-RVersion: 3.2.3
+RVersion: 3.4.0
 Repos: CRAN=https://cran.rstudio.com/
 
 Package: BH
@@ -38,6 +38,17 @@ Source: CRAN
 Version: 0.1
 Hash: 0afb92b59b02593c70ff8046700ba9d3
 
+Package: bindr
+Source: CRAN
+Version: 0.1
+Hash: e3a02070cf705d3ad1c5af1635a515a3
+
+Package: bindrcpp
+Source: CRAN
+Version: 0.2
+Hash: 6fde5249e006feb6336e130c8db61a0c
+Requires: Rcpp, bindr, plogr
+
 Package: colorspace
 Source: CRAN
 Version: 1.2-6
@@ -70,6 +81,11 @@ Version: 2.1.0
 Hash: 50e297b0191179c39c7dcae0eff72b51
 Requires: MASS, digest, gtable, plyr, reshape2, scales
 
+Package: glue
+Source: CRAN
+Version: 1.1.1
+Hash: dfd5a27768175ae51d08dc6beba1ef11
+
 Package: gtable
 Source: CRAN
 Version: 0.2.0
@@ -77,9 +93,9 @@ Hash: cd78381a9d3fea966ac39bd0daaf5554
 
 Package: htmltools
 Source: CRAN
-Version: 0.3
-Hash: 7ccc01f4d22d73d0d9b0d2a7781e7ff6
-Requires: digest
+Version: 0.3.6
+Hash: f4028262c21e2e050e7c97d0548949c5
+Requires: Rcpp, digest
 
 Package: httpuv
 Source: CRAN
@@ -143,6 +159,16 @@ GithubUsername: rstudio
 GithubRef: master
 GithubSha1: ba2626b791924eba7aea73060d27267d1d3b24bb
 
+Package: pkgconfig
+Source: CRAN
+Version: 2.0.1
+Hash: 0dda4a2654a22b36a715c2b0b6fbacac
+
+Package: plogr
+Source: CRAN
+Version: 0.1-1
+Hash: fb19215402e2d9f1c7f803dcaa806fc2
+
 Package: plyr
 Source: CRAN
 Version: 1.8.3
@@ -165,6 +191,11 @@ Source: CRAN
 Version: 1.4.1
 Hash: 55963009094746c3aef64bfbf9eb4731
 Requires: Rcpp, plyr, stringr
+
+Package: rlang
+Source: CRAN
+Version: 0.1.1
+Hash: 86c53487ce7f82f0a7cc11c816060910
 
 Package: scales
 Source: CRAN
@@ -190,6 +221,11 @@ Version: 1.0.1
 Hash: 9a394ba0f9825789949d2253fbe853fa
 Requires: shiny
 
+Package: sourcetools
+Source: CRAN
+Version: 0.1.6
+Hash: 226d56d7469587da40b0f96180e711b4
+
 Package: stringi
 Source: CRAN
 Version: 1.0-1
@@ -200,6 +236,12 @@ Source: CRAN
 Version: 1.0.0
 Hash: 2676dd5f88890910962b733b0f9540e1
 Requires: magrittr, stringi
+
+Package: tibble
+Source: CRAN
+Version: 1.3.3
+Hash: 10678f969a5b6dd17290e62465573894
+Requires: Rcpp, rlang
 
 Package: xtable
 Source: CRAN
