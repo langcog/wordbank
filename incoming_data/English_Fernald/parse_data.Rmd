@@ -1,0 +1,48 @@
+
+```{r}
+library(tidyverse)
+library(magrittr)
+library(lubridate)
+
+setwd("~/Documents/repo/wordbank/incoming_data/English_Fernald/")
+
+```
+
+```{r}
+eng_data <- read_tsv("FernaldCDIstoWordbank.txt")
+
+eng_data <- eng_data[2:nrow(eng_data),]
+
+if ("DOB" %in% names(eng_data)) {
+  eng_data$data_age <- round(as.numeric(as.duration(
+    interval(parse_date(eng_data$DOB,format = "%m/%d/%Y"),
+             parse_date_time(eng_data$`Date of MCDI`,"%m/%d/%Y"))
+    ), "days")/(365.2425/12))
+  eng_data <- eng_data[,c(1:9,ncol(eng_data),10:(ncol(eng_data)-1))]
+  
+  eng_data[["DOB"]] <- NULL
+}
+
+if ("Age_1" %in% names(eng_data)) eng_data[["Age_1"]] <- NULL
+
+names(eng_data) <- tolower(names(eng_data))
+
+eng_data$`date of mcdi` <- format(parse_date(eng_data$`date of mcdi`,format = "%m/%d/%Y"),format ="%m/%d/%Y")
+
+```
+```{r}
+eng_colnames <- read_table("eng_colnames.txt")
+eng_colnames <- trimws(eng_colnames$names)
+first_item_col <- which(names(eng_data) == "baa baa")
+last_item_col <- which(names(eng_data) == "complex37")
+
+names(eng_data)[first_item_col:last_item_col] <- substr(paste0(
+  1:length(eng_colnames),"_",gsub("[^[:alnum:]]", "",eng_colnames)),1,16)
+
+```
+
+```{r}
+write_csv(eng_data, "EnglishWS_Fernald_Outreach_data.csv", na="")
+
+```
+
