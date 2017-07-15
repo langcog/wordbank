@@ -1,0 +1,810 @@
+field,column,group,type,
+study_id,id,child,study_id,
+,age,,,
+sex,sex,child,sex,
+birth_order,birthorder,child,birth_order,
+mom_ed,momed,child,mom_ed,
+,kid id,,,
+date_of_test,date of mcdi,admin,date_of_test,
+data_age,data_age,admin,data_age,
+,mcdi total count,,,
+,percentile,,,
+,lt/n/et,,,
+item_1,1_baabaa,item,word,Sounds
+item_2,2_choochoo,item,word,Sounds
+item_3,3_cockadoodledo,item,word,Sounds
+item_4,4_grr,item,word,Sounds
+item_5,5_meow,item,word,Sounds
+item_6,6_moo,item,word,Sounds
+item_7,7_ouch,item,word,Sounds
+item_8,8_quackquack,item,word,Sounds
+item_9,9_uhoh,item,word,Sounds
+item_10,10_vroom,item,word,Sounds
+item_11,11_woofwoof,item,word,Sounds
+item_12,12_yumyum,item,word,Sounds
+item_13,13_alligator,item,word,Animals 
+item_14,14_animal,item,word,Animals 
+item_15,15_ant,item,word,Animals 
+item_16,16_bear,item,word,Animals 
+item_17,17_bee,item,word,Animals 
+item_18,18_bird,item,word,Animals 
+item_19,19_bug,item,word,Animals 
+item_20,20_bunny,item,word,Animals 
+item_21,21_butterfly,item,word,Animals 
+item_22,22_cat,item,word,Animals 
+item_23,23_chicken,item,word,Animals 
+item_24,24_cow,item,word,Animals 
+item_25,25_deer,item,word,Animals 
+item_26,26_dog,item,word,Animals 
+item_27,27_donkey,item,word,Animals 
+item_28,28_duck,item,word,Animals 
+item_29,29_elephant,item,word,Animals 
+item_30,30_fish,item,word,Animals 
+item_31,31_frog,item,word,Animals 
+item_32,32_giraffe,item,word,Animals 
+item_33,33_goose,item,word,Animals 
+item_34,34_hen,item,word,Animals 
+item_35,35_horse,item,word,Animals 
+item_36,36_kitty,item,word,Animals 
+item_37,37_lamb,item,word,Animals 
+item_38,38_lion,item,word,Animals 
+item_39,39_monkey,item,word,Animals 
+item_40,40_moose,item,word,Animals 
+item_41,41_mouse,item,word,Animals 
+item_42,42_owl,item,word,Animals 
+item_43,43_penguin,item,word,Animals 
+item_44,44_pig,item,word,Animals 
+item_45,45_pony,item,word,Animals 
+item_46,46_puppy,item,word,Animals 
+item_47,47_rooster,item,word,Animals 
+item_48,48_sheep,item,word,Animals 
+item_49,49_squirrel,item,word,Animals 
+item_50,50_teddybear,item,word,Animals 
+item_51,51_tiger,item,word,Animals 
+item_52,52_turkey,item,word,Animals 
+item_53,53_turtle,item,word,Animals 
+item_54,54_wolf,item,word,Animals 
+item_55,55_zebra,item,word,Animals 
+item_56,56_airplane,item,word,Vehicles
+item_57,57_bicycle,item,word,Vehicles
+item_58,58_boat,item,word,Vehicles
+item_59,59_bus,item,word,Vehicles
+item_60,60_car,item,word,Vehicles
+item_61,61_firetruck,item,word,Vehicles
+item_62,62_helicopter,item,word,Vehicles
+item_63,63_motorcycle,item,word,Vehicles
+item_64,64_sled,item,word,Vehicles
+item_65,65_stroller,item,word,Vehicles
+item_66,66_tractor,item,word,Vehicles
+item_67,67_train,item,word,Vehicles
+item_68,68_tricycle,item,word,Vehicles
+item_69,69_truck,item,word,Vehicles
+item_70,70_ball,item,word,Toys
+item_71,71_balloon,item,word,Toys
+item_72,72_bat,item,word,Toys
+item_73,73_block,item,word,Toys
+item_74,74_book,item,word,Toys
+item_75,75_bubbles,item,word,Toys
+item_76,76_chalk,item,word,Toys
+item_77,77_crayon,item,word,Toys
+item_78,78_doll,item,word,Toys
+item_79,79_game,item,word,Toys
+item_80,80_glue,item,word,Toys
+item_81,81_pen,item,word,Toys
+item_82,82_pencil,item,word,Toys
+item_83,83_playdough,item,word,Toys
+item_84,84_present,item,word,Toys
+item_85,85_puzzle,item,word,Toys
+item_86,86_story,item,word,Toys
+item_87,87_toy,item,word,Toys
+item_88,88_apple,item,word,Food/Drink
+item_89,89_applesauce,item,word,Food/Drink
+item_90,90_banana,item,word,Food/Drink
+item_91,91_beans,item,word,Food/Drink
+item_92,92_bread,item,word,Food/Drink
+item_93,93_butter,item,word,Food/Drink
+item_94,94_cake,item,word,Food/Drink
+item_95,95_candy,item,word,Food/Drink
+item_96,96_carrots,item,word,Food/Drink
+item_97,97_cereal,item,word,Food/Drink
+item_98,98_cheerios,item,word,Food/Drink
+item_99,99_cheese,item,word,Food/Drink
+item_100,100_chicken,item,word,Food/Drink
+item_101,101_chocolate,item,word,Food/Drink
+item_102,102_coffee,item,word,Food/Drink
+item_103,103_coke,item,word,Food/Drink
+item_104,104_cookie,item,word,Food/Drink
+item_105,105_corn,item,word,Food/Drink
+item_106,106_cracker,item,word,Food/Drink
+item_107,107_donut,item,word,Food/Drink
+item_108,108_drink,item,word,Food/Drink
+item_109,109_egg,item,word,Food/Drink
+item_110,110_fish,item,word,Food/Drink
+item_111,111_food,item,word,Food/Drink
+item_112,112_frenchfries,item,word,Food/Drink
+item_113,113_grapes,item,word,Food/Drink
+item_114,114_greenbeans,item,word,Food/Drink
+item_115,115_gum,item,word,Food/Drink
+item_116,116_hamburger,item,word,Food/Drink
+item_117,117_ice,item,word,Food/Drink
+item_118,118_icecream,item,word,Food/Drink
+item_119,119_jello,item,word,Food/Drink
+item_120,120_jelly,item,word,Food/Drink
+item_121,121_juice,item,word,Food/Drink
+item_122,122_lollipop,item,word,Food/Drink
+item_123,123_meat,item,word,Food/Drink
+item_124,124_melon,item,word,Food/Drink
+item_125,125_milk,item,word,Food/Drink
+item_126,126_muffin,item,word,Food/Drink
+item_127,127_noodles,item,word,Food/Drink
+item_128,128_nuts,item,word,Food/Drink
+item_129,129_orange,item,word,Food/Drink
+item_130,130_pancake,item,word,Food/Drink
+item_132,131_peanutbutter,item,word,Food/Drink
+item_131,132_peas,item,word,Food/Drink
+item_133,133_pickle,item,word,Food/Drink
+item_134,134_pizza,item,word,Food/Drink
+item_135,135_popcorn,item,word,Food/Drink
+item_136,136_popsicle,item,word,Food/Drink
+item_137,137_potato,item,word,Food/Drink
+item_138,138_potatochip,item,word,Food/Drink
+item_139,139_pretzel,item,word,Food/Drink
+item_140,140_pudding,item,word,Food/Drink
+item_141,141_pumpkin,item,word,Food/Drink
+item_142,142_raisin,item,word,Food/Drink
+item_143,143_salt,item,word,Food/Drink
+item_144,144_sandwich,item,word,Food/Drink
+item_145,145_sauce,item,word,Food/Drink
+item_146,146_sodapop,item,word,Food/Drink
+item_147,147_soup,item,word,Food/Drink
+item_148,148_spaghetti,item,word,Food/Drink
+item_149,149_strawberry,item,word,Food/Drink
+item_150,150_toast,item,word,Food/Drink
+item_151,151_tuna,item,word,Food/Drink
+item_152,152_vanilla,item,word,Food/Drink
+item_153,153_vitamins,item,word,Food/Drink
+item_154,154_water,item,word,Food/Drink
+item_155,155_yogurt,item,word,Food/Drink
+item_156,156_beads,item,word,Clothing
+item_157,157_belt,item,word,Clothing
+item_158,158_bib,item,word,Clothing
+item_159,159_boots,item,word,Clothing
+item_160,160_button,item,word,Clothing
+item_161,161_coat,item,word,Clothing
+item_162,162_diaper,item,word,Clothing
+item_163,163_dress,item,word,Clothing
+item_164,164_gloves,item,word,Clothing
+item_165,165_hat,item,word,Clothing
+item_166,166_jacket,item,word,Clothing
+item_167,167_jeans,item,word,Clothing
+item_168,168_mittens,item,word,Clothing
+item_169,169_necklace,item,word,Clothing
+item_170,170_pajamas,item,word,Clothing
+item_171,171_pants,item,word,Clothing
+item_172,172_scarf,item,word,Clothing
+item_173,173_shirt,item,word,Clothing
+item_174,174_shoe,item,word,Clothing
+item_175,175_shorts,item,word,Clothing
+item_176,176_slipper,item,word,Clothing
+item_177,177_sneaker,item,word,Clothing
+item_178,178_snowsuit,item,word,Clothing
+item_179,179_sock,item,word,Clothing
+item_180,180_sweater,item,word,Clothing
+item_181,181_tights,item,word,Clothing
+item_182,182_underpants,item,word,Clothing
+item_183,183_zipper,item,word,Clothing
+item_184,184_ankle,item,word,Body Parts
+item_185,185_arm,item,word,Body Parts
+item_186,186_bellybutton,item,word,Body Parts
+item_187,187_bottom,item,word,Body Parts
+item_188,188_cheek,item,word,Body Parts
+item_189,189_chin,item,word,Body Parts
+item_190,190_ear,item,word,Body Parts
+item_191,191_eye,item,word,Body Parts
+item_192,192_face,item,word,Body Parts
+item_194,193_feet,item,word,Body Parts
+item_193,194_finger,item,word,Body Parts
+item_195,195_hair,item,word,Body Parts
+item_196,196_hand,item,word,Body Parts
+item_197,197_head,item,word,Body Parts
+item_198,198_knee,item,word,Body Parts
+item_199,199_leg,item,word,Body Parts
+item_200,200_lips,item,word,Body Parts
+item_201,201_mouth,item,word,Body Parts
+item_202,202_nose,item,word,Body Parts
+item_203,203_owiebooboo,item,word,Body Parts
+item_204,204_penis,item,word,Body Parts
+item_205,205_shoulder,item,word,Body Parts
+item_208,206_tooth,item,word,Body Parts
+item_206,207_toe,item,word,Body Parts
+item_207,208_tongue,item,word,Body Parts
+item_209,209_tummy,item,word,Body Parts
+item_210,210_vagina,item,word,Body Parts
+item_211,211_basket,item,word,Houshold
+item_212,212_blanket,item,word,Houshold
+item_213,213_bottle,item,word,Houshold
+item_215,214_box,item,word,Houshold
+item_214,215_bowl,item,word,Houshold
+item_216,216_broom,item,word,Houshold
+item_217,217_brush,item,word,Houshold
+item_218,218_bucket,item,word,Houshold
+item_219,219_camera,item,word,Houshold
+item_220,220_can,item,word,Houshold
+item_221,221_clock,item,word,Houshold
+item_222,222_comb,item,word,Houshold
+item_223,223_cup,item,word,Houshold
+item_224,224_dish,item,word,Houshold
+item_225,225_fork,item,word,Houshold
+item_226,226_garbage,item,word,Houshold
+item_227,227_glass,item,word,Houshold
+item_228,228_glasses,item,word,Houshold
+item_229,229_hammer,item,word,Houshold
+item_230,230_jar,item,word,Houshold
+item_231,231_keys,item,word,Houshold
+item_232,232_knife,item,word,Houshold
+item_233,233_lamp,item,word,Houshold
+item_234,234_light,item,word,Houshold
+item_235,235_medicine,item,word,Houshold
+item_236,236_money,item,word,Houshold
+item_237,237_mop,item,word,Houshold
+item_238,238_nail,item,word,Houshold
+item_239,239_napkin,item,word,Houshold
+item_240,240_paper,item,word,Houshold
+item_241,241_penny,item,word,Houshold
+item_242,242_picture,item,word,Houshold
+item_243,243_pillow,item,word,Houshold
+item_244,244_plant,item,word,Houshold
+item_245,245_plate,item,word,Houshold
+item_246,246_purse,item,word,Houshold
+item_247,247_radio,item,word,Houshold
+item_248,248_scissors,item,word,Houshold
+item_249,249_soap,item,word,Houshold
+item_250,250_spoon,item,word,Houshold
+item_251,251_tape,item,word,Houshold
+item_252,252_telephone,item,word,Houshold
+item_253,253_tissue,item,word,Houshold
+item_254,254_toothbrush,item,word,Houshold
+item_255,255_towel,item,word,Houshold
+item_256,256_trash,item,word,Houshold
+item_257,257_tray,item,word,Houshold
+item_258,258_vacuum,item,word,Houshold
+item_259,259_walker,item,word,Houshold
+item_260,260_watch,item,word,Houshold
+item_261,261_basement,item,word,Rooms/Furn
+item_262,262_bathroom,item,word,Rooms/Furn
+item_263,263_bathtub,item,word,Rooms/Furn
+item_264,264_bed,item,word,Rooms/Furn
+item_265,265_bedroom,item,word,Rooms/Furn
+item_266,266_bench,item,word,Rooms/Furn
+item_267,267_chair,item,word,Rooms/Furn
+item_268,268_closet,item,word,Rooms/Furn
+item_269,269_couch,item,word,Rooms/Furn
+item_270,270_crib,item,word,Rooms/Furn
+item_271,271_door,item,word,Rooms/Furn
+item_272,272_drawer,item,word,Rooms/Furn
+item_273,273_dryer,item,word,Rooms/Furn
+item_274,274_garage,item,word,Rooms/Furn
+item_275,275_highchair,item,word,Rooms/Furn
+item_276,276_kitchen,item,word,Rooms/Furn
+item_277,277_livingroom,item,word,Rooms/Furn
+item_278,278_oven,item,word,Rooms/Furn
+item_279,279_playpen,item,word,Rooms/Furn
+item_280,280_porch,item,word,Rooms/Furn
+item_281,281_potty,item,word,Rooms/Furn
+item_283,282_refrigerator,item,word,Rooms/Furn
+item_282,283_rockingchair,item,word,Rooms/Furn
+item_284,284_room,item,word,Rooms/Furn
+item_285,285_shower,item,word,Rooms/Furn
+item_286,286_sink,item,word,Rooms/Furn
+item_287,287_sofa,item,word,Rooms/Furn
+item_288,288_stairs,item,word,Rooms/Furn
+item_289,289_stove,item,word,Rooms/Furn
+item_290,290_table,item,word,Rooms/Furn
+item_291,291_TV,item,word,Rooms/Furn
+item_293,292_washingmach,item,word,Rooms/Furn
+item_292,293_window,item,word,Rooms/Furn
+item_294,294_backyard,item,word,Outside
+item_295,295_cloud,item,word,Outside
+item_296,296_flag,item,word,Outside
+item_297,297_flower,item,word,Outside
+item_298,298_garden,item,word,Outside
+item_299,299_grass,item,word,Outside
+item_300,300_hose,item,word,Outside
+item_301,301_ladder,item,word,Outside
+item_302,302_lawnmower,item,word,Outside
+item_303,303_moon,item,word,Outside
+item_304,304_pool,item,word,Outside
+item_305,305_rain,item,word,Outside
+item_306,306_rock,item,word,Outside
+item_307,307_roof,item,word,Outside
+item_308,308_sandbox,item,word,Outside
+item_309,309_shovel,item,word,Outside
+item_310,310_sidewalk,item,word,Outside
+item_311,311_sky,item,word,Outside
+item_312,312_slide,item,word,Outside
+item_313,313_snow,item,word,Outside
+item_314,314_snowman,item,word,Outside
+item_315,315_sprinkler,item,word,Outside
+item_316,316_star,item,word,Outside
+item_317,317_stick,item,word,Outside
+item_318,318_stone,item,word,Outside
+item_319,319_street,item,word,Outside
+item_320,320_sun,item,word,Outside
+item_321,321_swing,item,word,Outside
+item_322,322_tree,item,word,Outside
+item_323,323_water,item,word,Outside
+item_324,324_wind,item,word,Outside
+item_325,325_beach,item,word,Places to Go
+item_326,326_camping,item,word,Places to Go
+item_327,327_church,item,word,Places to Go
+item_328,328_circus,item,word,Places to Go
+item_329,329_country,item,word,Places to Go
+item_330,330_downtown,item,word,Places to Go
+item_331,331_farm,item,word,Places to Go
+item_332,332_gasstation,item,word,Places to Go
+item_333,333_home,item,word,Places to Go
+item_334,334_house,item,word,Places to Go
+item_335,335_movie,item,word,Places to Go
+item_336,336_outside,item,word,Places to Go
+item_337,337_park,item,word,Places to Go
+item_338,338_party,item,word,Places to Go
+item_339,339_picnic,item,word,Places to Go
+item_340,340_playground,item,word,Places to Go
+item_341,341_school,item,word,Places to Go
+item_342,342_store,item,word,Places to Go
+item_343,343_woods,item,word,Places to Go
+item_344,344_work,item,word,Places to Go
+item_345,345_yard,item,word,Places to Go
+item_346,346_zoo,item,word,Places to Go
+item_347,347_aunt,item,word,People
+item_348,348_baby,item,word,People
+item_349,349_babysitter,item,word,People
+item_350,350_babysitnam,item,word,People
+item_351,351_boy,item,word,People
+item_352,352_brother,item,word,People
+item_353,353_child,item,word,People
+item_354,354_clown,item,word,People
+item_355,355_cowboy,item,word,People
+item_356,356_daddy,item,word,People
+item_357,357_doctor,item,word,People
+item_358,358_fireman,item,word,People
+item_359,359_friend,item,word,People
+item_360,360_girl,item,word,People
+item_361,361_grandma,item,word,People
+item_362,362_grandpa,item,word,People
+item_363,363_lady,item,word,People
+item_364,364_mailman,item,word,People
+item_365,365_man,item,word,People
+item_366,366_mommy,item,word,People
+item_367,367_nurse,item,word,People
+item_368,368_childsname,item,word,People
+item_369,369_people,item,word,People
+item_370,370_person,item,word,People
+item_371,371_petsname,item,word,People
+item_372,372_police,item,word,People
+item_373,373_sister,item,word,People
+item_374,374_teacher,item,word,People
+item_375,375_uncle,item,word,People
+item_376,376_bath,item,word,Games/Routines
+item_377,377_breakfast,item,word,Games/Routines
+item_378,378_bye,item,word,Games/Routines
+item_379,379_callphone,item,word,Games/Routines
+item_380,380_dinner,item,word,Games/Routines
+item_381,381_giveme5,item,word,Games/Routines
+item_382,382_gonnagetu,item,word,Games/Routines
+item_383,383_gopotty,item,word,Games/Routines
+item_385,384_hi,item,word,Games/Routines
+item_384,385_hello,item,word,Games/Routines
+item_386,386_lunch,item,word,Games/Routines
+item_387,387_nap,item,word,Games/Routines
+item_388,388_nightnight,item,word,Games/Routines
+item_389,389_no,item,word,Games/Routines
+item_390,390_pattycake,item,word,Games/Routines
+item_391,391_peekaboo,item,word,Games/Routines
+item_392,392_please,item,word,Games/Routines
+item_393,393_shhshush,item,word,Games/Routines
+item_394,394_shopping,item,word,Games/Routines
+item_395,395_snack,item,word,Games/Routines
+item_396,396_sobig,item,word,Games/Routines
+item_397,397_thankyou,item,word,Games/Routines
+item_398,398_thislilpiggy,item,word,Games/Routines
+item_399,399_turnaround,item,word,Games/Routines
+item_400,400_yes,item,word,Games/Routines
+item_401,401_bite,item,word,Action Wrds
+item_402,402_blow,item,word,Action Wrds
+item_403,403_break,item,word,Action Wrds
+item_404,404_bring,item,word,Action Wrds
+item_405,405_build,item,word,Action Wrds
+item_406,406_bump,item,word,Action Wrds
+item_407,407_buy,item,word,Action Wrds
+item_408,408_carry,item,word,Action Wrds
+item_409,409_catch,item,word,Action Wrds
+item_410,410_chase,item,word,Action Wrds
+item_411,411_clap,item,word,Action Wrds
+item_412,412_clean,item,word,Action Wrds
+item_413,413_climb,item,word,Action Wrds
+item_414,414_close,item,word,Action Wrds
+item_415,415_cook,item,word,Action Wrds
+item_416,416_cover,item,word,Action Wrds
+item_417,417_cry,item,word,Action Wrds
+item_418,418_cut,item,word,Action Wrds
+item_419,419_dance,item,word,Action Wrds
+item_420,420_draw,item,word,Action Wrds
+item_421,421_drink,item,word,Action Wrds
+item_422,422_drive,item,word,Action Wrds
+item_423,423_drop,item,word,Action Wrds
+item_424,424_dry,item,word,Action Wrds
+item_425,425_dump,item,word,Action Wrds
+item_426,426_eat,item,word,Action Wrds
+item_427,427_fall,item,word,Action Wrds
+item_428,428_feed,item,word,Action Wrds
+item_429,429_find,item,word,Action Wrds
+item_430,430_finish,item,word,Action Wrds
+item_431,431_fit,item,word,Action Wrds
+item_432,432_fix,item,word,Action Wrds
+item_433,433_get,item,word,Action Wrds
+item_434,434_give,item,word,Action Wrds
+item_435,435_go,item,word,Action Wrds
+item_436,436_hate,item,word,Action Wrds
+item_437,437_have,item,word,Action Wrds
+item_438,438_hear,item,word,Action Wrds
+item_439,439_help,item,word,Action Wrds
+item_440,440_hide,item,word,Action Wrds
+item_441,441_hit,item,word,Action Wrds
+item_442,442_hold,item,word,Action Wrds
+item_443,443_hug,item,word,Action Wrds
+item_444,444_hurry,item,word,Action Wrds
+item_445,445_jump,item,word,Action Wrds
+item_446,446_kick,item,word,Action Wrds
+item_447,447_kiss,item,word,Action Wrds
+item_448,448_knock,item,word,Action Wrds
+item_449,449_lick,item,word,Action Wrds
+item_450,450_like,item,word,Action Wrds
+item_451,451_listen,item,word,Action Wrds
+item_452,452_look,item,word,Action Wrds
+item_453,453_love,item,word,Action Wrds
+item_454,454_make,item,word,Action Wrds
+item_455,455_open,item,word,Action Wrds
+item_456,456_paint,item,word,Action Wrds
+item_457,457_pick,item,word,Action Wrds
+item_458,458_play,item,word,Action Wrds
+item_459,459_pour,item,word,Action Wrds
+item_460,460_pretend,item,word,Action Wrds
+item_461,461_pull,item,word,Action Wrds
+item_462,462_push,item,word,Action Wrds
+item_463,463_put,item,word,Action Wrds
+item_464,464_read,item,word,Action Wrds
+item_465,465_ride,item,word,Action Wrds
+item_466,466_rip,item,word,Action Wrds
+item_467,467_run,item,word,Action Wrds
+item_468,468_say,item,word,Action Wrds
+item_469,469_see,item,word,Action Wrds
+item_470,470_shake,item,word,Action Wrds
+item_471,471_share,item,word,Action Wrds
+item_472,472_show,item,word,Action Wrds
+item_473,473_sing,item,word,Action Wrds
+item_474,474_sit,item,word,Action Wrds
+item_475,475_skate,item,word,Action Wrds
+item_476,476_sleep,item,word,Action Wrds
+item_477,477_slide,item,word,Action Wrds
+item_478,478_smile,item,word,Action Wrds
+item_479,479_spill,item,word,Action Wrds
+item_480,480_splash,item,word,Action Wrds
+item_481,481_stand,item,word,Action Wrds
+item_482,482_stay,item,word,Action Wrds
+item_483,483_stop,item,word,Action Wrds
+item_484,484_sweep,item,word,Action Wrds
+item_485,485_swim,item,word,Action Wrds
+item_486,486_swing,item,word,Action Wrds
+item_487,487_take,item,word,Action Wrds
+item_488,488_talk,item,word,Action Wrds
+item_489,489_taste,item,word,Action Wrds
+item_490,490_tear,item,word,Action Wrds
+item_491,491_think,item,word,Action Wrds
+item_492,492_throw,item,word,Action Wrds
+item_493,493_tickle,item,word,Action Wrds
+item_494,494_touch,item,word,Action Wrds
+item_495,495_wait,item,word,Action Wrds
+item_496,496_wake,item,word,Action Wrds
+item_497,497_walk,item,word,Action Wrds
+item_498,498_wash,item,word,Action Wrds
+item_499,499_watch,item,word,Action Wrds
+item_500,500_wipe,item,word,Action Wrds
+item_501,501_wish,item,word,Action Wrds
+item_502,502_work,item,word,Action Wrds
+item_503,503_write,item,word,Action Wrds
+item_504,504_allgone,item,word,Descriptive Wrds
+item_505,505_asleep,item,word,Descriptive Wrds
+item_506,506_awake,item,word,Descriptive Wrds
+item_507,507_bad,item,word,Descriptive Wrds
+item_508,508_better,item,word,Descriptive Wrds
+item_509,509_big,item,word,Descriptive Wrds
+item_510,510_black,item,word,Descriptive Wrds
+item_511,511_blue,item,word,Descriptive Wrds
+item_512,512_broken,item,word,Descriptive Wrds
+item_513,513_brown,item,word,Descriptive Wrds
+item_514,514_careful,item,word,Descriptive Wrds
+item_515,515_clean,item,word,Descriptive Wrds
+item_516,516_cold,item,word,Descriptive Wrds
+item_517,517_cute,item,word,Descriptive Wrds
+item_518,518_dark,item,word,Descriptive Wrds
+item_519,519_dirty,item,word,Descriptive Wrds
+item_520,520_dry,item,word,Descriptive Wrds
+item_521,521_empty,item,word,Descriptive Wrds
+item_522,522_fast,item,word,Descriptive Wrds
+item_523,523_fine,item,word,Descriptive Wrds
+item_524,524_first,item,word,Descriptive Wrds
+item_525,525_full,item,word,Descriptive Wrds
+item_526,526_gentle,item,word,Descriptive Wrds
+item_527,527_good,item,word,Descriptive Wrds
+item_528,528_green,item,word,Descriptive Wrds
+item_529,529_happy,item,word,Descriptive Wrds
+item_530,530_hard,item,word,Descriptive Wrds
+item_531,531_heavy,item,word,Descriptive Wrds
+item_532,532_high,item,word,Descriptive Wrds
+item_533,533_hot,item,word,Descriptive Wrds
+item_534,534_hungry,item,word,Descriptive Wrds
+item_535,535_hurt,item,word,Descriptive Wrds
+item_536,536_last,item,word,Descriptive Wrds
+item_537,537_little,item,word,Descriptive Wrds
+item_538,538_long,item,word,Descriptive Wrds
+item_539,539_loud,item,word,Descriptive Wrds
+item_540,540_mad,item,word,Descriptive Wrds
+item_541,541_naughty,item,word,Descriptive Wrds
+item_542,542_new,item,word,Descriptive Wrds
+item_543,543_nice,item,word,Descriptive Wrds
+item_544,544_noisy,item,word,Descriptive Wrds
+item_545,545_old,item,word,Descriptive Wrds
+item_546,546_orange,item,word,Descriptive Wrds
+item_547,547_poor,item,word,Descriptive Wrds
+item_548,548_pretty,item,word,Descriptive Wrds
+item_549,549_quiet,item,word,Descriptive Wrds
+item_550,550_red,item,word,Descriptive Wrds
+item_551,551_sad,item,word,Descriptive Wrds
+item_552,552_scared,item,word,Descriptive Wrds
+item_553,553_sick,item,word,Descriptive Wrds
+item_554,554_sleepy,item,word,Descriptive Wrds
+item_555,555_slow,item,word,Descriptive Wrds
+item_556,556_soft,item,word,Descriptive Wrds
+item_557,557_sticky,item,word,Descriptive Wrds
+item_558,558_stuck,item,word,Descriptive Wrds
+item_559,559_thirsty,item,word,Descriptive Wrds
+item_560,560_tiny,item,word,Descriptive Wrds
+item_561,561_tired,item,word,Descriptive Wrds
+item_562,562_wet,item,word,Descriptive Wrds
+item_563,563_white,item,word,Descriptive Wrds
+item_564,564_windy,item,word,Descriptive Wrds
+item_565,565_yellow,item,word,Descriptive Wrds
+item_566,566_yucky,item,word,Descriptive Wrds
+item_567,567_after,item,word,Time
+item_568,568_before,item,word,Time
+item_569,569_day,item,word,Time
+item_570,570_later,item,word,Time
+item_571,571_morning,item,word,Time
+item_572,572_night,item,word,Time
+item_573,573_now,item,word,Time
+item_574,574_time,item,word,Time
+item_575,575_today,item,word,Time
+item_576,576_tomorrow,item,word,Time
+item_577,577_tonight,item,word,Time
+item_578,578_yesterday,item,word,Time
+item_579,579_he,item,word,Pronouns
+item_580,580_her,item,word,Pronouns
+item_581,581_hers,item,word,Pronouns
+item_582,582_him,item,word,Pronouns
+item_583,583_his,item,word,Pronouns
+item_584,584_I,item,word,Pronouns
+item_585,585_it,item,word,Pronouns
+item_586,586_me,item,word,Pronouns
+item_587,587_mine,item,word,Pronouns
+item_588,588_my,item,word,Pronouns
+item_589,589_myself,item,word,Pronouns
+item_590,590_our,item,word,Pronouns
+item_591,591_she,item,word,Pronouns
+item_592,592_that,item,word,Pronouns
+item_593,593_their,item,word,Pronouns
+item_594,594_them,item,word,Pronouns
+item_595,595_these,item,word,Pronouns
+item_596,596_they,item,word,Pronouns
+item_597,597_this,item,word,Pronouns
+item_598,598_those,item,word,Pronouns
+item_599,599_us,item,word,Pronouns
+item_600,600_we,item,word,Pronouns
+item_601,601_you,item,word,Pronouns
+item_602,602_your,item,word,Pronouns
+item_603,603_yourself,item,word,Pronouns
+item_604,604_how,item,word,Question Wrds
+item_605,605_what,item,word,Question Wrds
+item_606,606_when,item,word,Question Wrds
+item_607,607_where,item,word,Question Wrds
+item_608,608_which,item,word,Question Wrds
+item_609,609_who,item,word,Question Wrds
+item_610,610_why,item,word,Question Wrds
+item_611,611_about,item,word,Locations
+item_612,612_above,item,word,Locations
+item_613,613_around,item,word,Locations
+item_614,614_at,item,word,Locations
+item_615,615_away,item,word,Locations
+item_616,616_back,item,word,Locations
+item_617,617_behind,item,word,Locations
+item_618,618_beside,item,word,Locations
+item_619,619_by,item,word,Locations
+item_620,620_down,item,word,Locations
+item_621,621_for,item,word,Locations
+item_622,622_here,item,word,Locations
+item_623,623_insidein,item,word,Locations
+item_624,624_into,item,word,Locations
+item_625,625_nextto,item,word,Locations
+item_626,626_of,item,word,Locations
+item_627,627_off,item,word,Locations
+item_628,628_on,item,word,Locations
+item_629,629_ontopof,item,word,Locations
+item_630,630_out,item,word,Locations
+item_631,631_over,item,word,Locations
+item_632,632_there,item,word,Locations
+item_633,633_to,item,word,Locations
+item_634,634_under,item,word,Locations
+item_635,635_up,item,word,Locations
+item_636,636_with,item,word,Locations
+item_637,637_a,item,word,Quantifiers
+item_638,638_all,item,word,Quantifiers
+item_639,639_alot,item,word,Quantifiers
+item_640,640_an,item,word,Quantifiers
+item_641,641_another,item,word,Quantifiers
+item_642,642_any,item,word,Quantifiers
+item_643,643_each,item,word,Quantifiers
+item_644,644_every,item,word,Quantifiers
+item_645,645_more,item,word,Quantifiers
+item_646,646_much,item,word,Quantifiers
+item_648,647_not,item,word,Quantifiers
+item_647,648_none,item,word,Quantifiers
+item_649,649_other,item,word,Quantifiers
+item_650,650_same,item,word,Quantifiers
+item_651,651_some,item,word,Quantifiers
+item_652,652_the,item,word,Quantifiers
+item_653,653_too,item,word,Quantifiers
+item_654,654_am,item,word,Helping Verbs
+item_655,655_are,item,word,Helping Verbs
+item_656,656_be,item,word,Helping Verbs
+item_657,657_can,item,word,Helping Verbs
+item_658,658_could,item,word,Helping Verbs
+item_659,659_diddidya,item,word,Helping Verbs
+item_660,660_do,item,word,Helping Verbs
+item_661,661_does,item,word,Helping Verbs
+item_662,662_dont,item,word,Helping Verbs
+item_663,663_goingto,item,word,Helping Verbs
+item_664,664_gotto,item,word,Helping Verbs
+item_665,665_haveto,item,word,Helping Verbs
+item_666,666_is,item,word,Helping Verbs
+item_667,667_letme,item,word,Helping Verbs
+item_668,668_needneedto,item,word,Helping Verbs
+item_669,669_trytryto,item,word,Helping Verbs
+item_670,670_wantto,item,word,Helping Verbs
+item_671,671_was,item,word,Helping Verbs
+item_672,672_were,item,word,Helping Verbs
+item_673,673_will,item,word,Helping Verbs
+item_674,674_would,item,word,Helping Verbs
+item_675,675_and,item,word,Connecting Wrds
+item_676,676_because,item,word,Connecting Wrds
+item_677,677_but,item,word,Connecting Wrds
+item_678,678_if,item,word,Connecting Wrds
+item_679,679_so,item,word,Connecting Wrds
+item_680,680_then,item,word,Connecting Wrds
+item_681,681_UsePast,item,how_use_words,How Use
+item_682,682_UseFuture,item,how_use_words,How Use
+item_683,683_UseMiss,item,how_use_words,How Use
+item_684,684_UseSearch,item,how_use_words,How Use
+item_685,685_UsePoss,item,how_use_words,How Use
+item_686,686_Endingplural,item,word_endings,Word_Endings_I
+item_687,687_Endingposss,item,word_endings,Word_Endings_I
+item_688,688_Endinging,item,word_endings,Word_Endings_I
+item_689,689_Endinged,item,word_endings,Word_Endings_I
+item_690,690_children,item,word_forms_nouns,Word_Forms_Nouns
+item_691,691_feet,item,word_forms_nouns,Word_Forms_Nouns
+item_692,692_men,item,word_forms_nouns,Word_Forms_Nouns
+item_693,693_mice,item,word_forms_nouns,Word_Forms_Nouns
+item_694,694_teeth,item,word_forms_nouns,Word_Forms_Nouns
+item_695,695_ate,item,word_forms_verbs,Word_Forms_Verbs
+item_696,696_blew,item,word_forms_verbs,Word_Forms_Verbs
+item_697,697_bought,item,word_forms_verbs,Word_Forms_Verbs
+item_698,698_broke,item,word_forms_verbs,Word_Forms_Verbs
+item_699,699_came,item,word_forms_verbs,Word_Forms_Verbs
+item_700,700_drank,item,word_forms_verbs,Word_Forms_Verbs
+item_701,701_drove,item,word_forms_verbs,Word_Forms_Verbs
+item_702,702_fell,item,word_forms_verbs,Word_Forms_Verbs
+item_703,703_flew,item,word_forms_verbs,Word_Forms_Verbs
+item_704,704_got,item,word_forms_verbs,Word_Forms_Verbs
+item_705,705_had,item,word_forms_verbs,Word_Forms_Verbs
+item_706,706_heard,item,word_forms_verbs,Word_Forms_Verbs
+item_707,707_held,item,word_forms_verbs,Word_Forms_Verbs
+item_708,708_lost,item,word_forms_verbs,Word_Forms_Verbs
+item_709,709_made,item,word_forms_verbs,Word_Forms_Verbs
+item_710,710_ran,item,word_forms_verbs,Word_Forms_Verbs
+item_711,711_sat,item,word_forms_verbs,Word_Forms_Verbs
+item_712,712_saw,item,word_forms_verbs,Word_Forms_Verbs
+item_713,713_took,item,word_forms_verbs,Word_Forms_Verbs
+item_714,714_went,item,word_forms_verbs,Word_Forms_Verbs
+item_715,715_blockses,item,word_endings_nouns,Word_Ends_2_Nouns
+item_716,716_childrens,item,word_endings_nouns,Word_Ends_2_Nouns
+item_717,717_childs,item,word_endings_nouns,Word_Ends_2_Nouns
+item_718,718_feets,item,word_endings_nouns,Word_Ends_2_Nouns
+item_719,719_foots,item,word_endings_nouns,Word_Ends_2_Nouns
+item_720,720_mans,item,word_endings_nouns,Word_Ends_2_Nouns
+item_721,721_mens,item,word_endings_nouns,Word_Ends_2_Nouns
+item_722,722_mices,item,word_endings_nouns,Word_Ends_2_Nouns
+item_723,723_mouses,item,word_endings_nouns,Word_Ends_2_Nouns
+item_724,724_shoeses,item,word_endings_nouns,Word_Ends_2_Nouns
+item_725,725_sockses,item,word_endings_nouns,Word_Ends_2_Nouns
+item_726,726_teeths,item,word_endings_nouns,Word_Ends_2_Nouns
+item_727,727_toeses,item,word_endings_nouns,Word_Ends_2_Nouns
+item_728,728_tooths,item,word_endings_nouns,Word_Ends_2_Nouns
+item_729,729_ated,item,word_endings_verbs,Word_Ends_2_Verbs
+item_730,730_blewed,item,word_endings_verbs,Word_Ends_2_Verbs
+item_731,731_blowed,item,word_endings_verbs,Word_Ends_2_Verbs
+item_732,732_bringed,item,word_endings_verbs,Word_Ends_2_Verbs
+item_733,733_buyed,item,word_endings_verbs,Word_Ends_2_Verbs
+item_734,734_breaked,item,word_endings_verbs,Word_Ends_2_Verbs
+item_735,735_broked,item,word_endings_verbs,Word_Ends_2_Verbs
+item_736,736_camed,item,word_endings_verbs,Word_Ends_2_Verbs
+item_737,737_comed,item,word_endings_verbs,Word_Ends_2_Verbs
+item_738,738_doed,item,word_endings_verbs,Word_Ends_2_Verbs
+item_739,739_dranked,item,word_endings_verbs,Word_Ends_2_Verbs
+item_740,740_drinked,item,word_endings_verbs,Word_Ends_2_Verbs
+item_741,741_eated,item,word_endings_verbs,Word_Ends_2_Verbs
+item_742,742_falled,item,word_endings_verbs,Word_Ends_2_Verbs
+item_743,743_flied,item,word_endings_verbs,Word_Ends_2_Verbs
+item_744,744_getted,item,word_endings_verbs,Word_Ends_2_Verbs
+item_745,745_goed,item,word_endings_verbs,Word_Ends_2_Verbs
+item_746,746_gotted,item,word_endings_verbs,Word_Ends_2_Verbs
+item_747,747_haved,item,word_endings_verbs,Word_Ends_2_Verbs
+item_748,748_heared,item,word_endings_verbs,Word_Ends_2_Verbs
+item_749,749_holded,item,word_endings_verbs,Word_Ends_2_Verbs
+item_750,750_losed,item,word_endings_verbs,Word_Ends_2_Verbs
+item_751,751_losted,item,word_endings_verbs,Word_Ends_2_Verbs
+item_752,752_maked,item,word_endings_verbs,Word_Ends_2_Verbs
+item_753,753_ranned,item,word_endings_verbs,Word_Ends_2_Verbs
+item_754,754_runned,item,word_endings_verbs,Word_Ends_2_Verbs
+item_755,755_seed,item,word_endings_verbs,Word_Ends_2_Verbs
+item_756,756_satted,item,word_endings_verbs,Word_Ends_2_Verbs
+item_757,757_sitted,item,word_endings_verbs,Word_Ends_2_Verbs
+item_758,758_taked,item,word_endings_verbs,Word_Ends_2_Verbs
+item_759,759_wented,item,word_endings_verbs,Word_Ends_2_Verbs
+item_760,760_combine,item,combine,Combining
+item_761,761_complex1,item,complexity,Complexity
+item_762,762_complex2,item,complexity,Complexity
+item_763,763_complex3,item,complexity,Complexity
+item_764,764_complex4,item,complexity,Complexity
+item_765,765_complex5,item,complexity,Complexity
+item_766,766_complex6,item,complexity,Complexity
+item_767,767_complex7,item,complexity,Complexity
+item_768,768_complex8,item,complexity,Complexity
+item_769,769_complex9,item,complexity,Complexity
+item_770,770_complex10,item,complexity,Complexity
+item_771,771_complex11,item,complexity,Complexity
+item_772,772_complex12,item,complexity,Complexity
+item_773,773_complex13,item,complexity,Complexity
+item_774,774_complex14,item,complexity,Complexity
+item_775,775_complex15,item,complexity,Complexity
+item_776,776_complex16,item,complexity,Complexity
+item_777,777_complex17,item,complexity,Complexity
+item_778,778_complex18,item,complexity,Complexity
+item_779,779_complex19,item,complexity,Complexity
+item_780,780_complex20,item,complexity,Complexity
+item_781,781_complex21,item,complexity,Complexity
+item_782,782_complex22,item,complexity,Complexity
+item_783,783_complex23,item,complexity,Complexity
+item_784,784_complex24,item,complexity,Complexity
+item_785,785_complex25,item,complexity,Complexity
+item_786,786_complex26,item,complexity,Complexity
+item_787,787_complex27,item,complexity,Complexity
+item_788,788_complex28,item,complexity,Complexity
+item_789,789_complex29,item,complexity,Complexity
+item_790,790_complex30,item,complexity,Complexity
+item_791,791_complex31,item,complexity,Complexity
+item_792,792_complex32,item,complexity,Complexity
+item_793,793_complex33,item,complexity,Complexity
+item_794,794_complex34,item,complexity,Complexity
+item_795,795_complex35,item,complexity,Complexity
+item_796,796_complex36,item,complexity,Complexity
+item_797,797_complex37,item,complexity,Complexity
+,x810,,,
