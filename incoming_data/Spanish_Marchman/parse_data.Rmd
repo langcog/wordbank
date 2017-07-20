@@ -46,11 +46,17 @@ spanish_wg %<>%
 names(spanish_wg) <- gsub(pattern = "/",replacement = "",x = tolower(names(spanish_wg)))
 names(spanish_ws) <- tolower(names(spanish_ws))
 
-
+words_wg <- names(spanish_wg)[10:865]
+words_wg <- sort(unique(substr(words_wg,1,nchar(words_wg)-1)))
+reordered_spanish_wg <- spanish_wg[,c(names(spanish_wg)[1:9],paste0(rep(words_wg[order(words_wg)], each=2),c("u","p")),names(spanish_wg)[866:ncol(spanish_wg)])]
+names(reordered_spanish_wg)[c(1:9,10:865:2,866:ncol(spanish_wg))]
 ```
 
 ```{r}
 write_csv(spanish_wg, "SpanishWG_Fernald_data.csv", na="")
 write_csv(spanish_ws, "SpanishWS_Fernald_data.csv", na="")
+
+write_csv(fields_ws, "SpanishWS_Fernald_fields.csv", na="")
+write_csv(reordered_spanish_wg,"SpanishWG_Fernald_data_new.csv", na="")
 ```
 
