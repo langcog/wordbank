@@ -1,7 +1,7 @@
 field,column,group,type
 study_id,study_id,child,study_id
-data_age,age.at.test,admin,data_age
-date_of_birth,dob,child,date_of_birth
+,age.at.test,,
+data_age,data_age,admin,data_age
 date_of_test,dot,admin,date_of_test
 sex,gender,child,sex
 item_1,"Respond when name is called (e.g., by turning and looking at source)",item,first_signs
@@ -34,7 +34,7 @@ item_27,Stop it.,item,phrases
 item_28,Time to go night night.,item,phrases
 item_29,Throw the ball.,item,phrases
 item_30,This little piggy.,item,phrases
-item_31,Want to go for a ride? ,item,phrases
+item_31,Want to go for a ride?,item,phrases
 item_32,"Some children like to ""parrot"" or imitate things that they've just heard (including new words that they are just learning, and/or parts of sentences, for example, repeating ""work now"" after mother says ""Mommy's going to work now."") How often does your child imitate words?",item,starting_to_talk
 item_33,"Some children like to go around naming or labeling things, as though proud of knowing the names and wanting to show this. How often does your child do this?",item,starting_to_talk
 item_34,baa baa,item,word
@@ -112,13 +112,13 @@ item_105,carrots,item,word
 item_106,cereal,item,word
 item_107,cheerios,item,word
 item_108,cheese,item,word
-item_109,chicken,item,word
+item_109,chicken_1,item,word
 item_110,coffee,item,word
 item_111,cookie,item,word
 item_112,cracker,item,word
 item_113,drink,item,word
 item_114,egg,item,word
-item_115,fish,item,word
+item_115,fish_1,item,word
 item_116,food,item,word
 item_117,ice cream,item,word
 item_118,juice,item,word
@@ -255,7 +255,7 @@ item_248,store,item,word
 item_249,sun,item,word
 item_250,swing,item,word
 item_251,tree,item,word
-item_252,water,item,word
+item_252,water_1,item,word
 item_253,work,item,word
 item_254,zoo,item,word
 item_255,aunt,item,word
@@ -307,7 +307,7 @@ item_300,close,item,word
 item_301,cry,item,word
 item_302,dance,item,word
 item_303,draw,item,word
-item_304,drink,item,word
+item_304,drink_1,item,word
 item_305,drive,item,word
 item_306,eat,item,word
 item_307,fall,item,word
@@ -342,12 +342,12 @@ item_335,smile,item,word
 item_336,splash,item,word
 item_337,stop,item,word
 item_338,swim,item,word
-item_339,swing,item,word
+item_339,swing_1,item,word
 item_340,take,item,word
 item_341,throw,item,word
 item_342,tickle,item,word
 item_343,touch,item,word
-item_344,watch,item,word
+item_344,watch_1,item,word
 item_345,walk,item,word
 item_346,wash,item,word
 item_347,wipe,item,word
@@ -367,7 +367,7 @@ item_360,big,item,word
 item_361,blue,item,word
 item_362,broken,item,word
 item_363,careful,item,word
-item_364,clean,item,word
+item_364,clean_1,item,word
 item_365,cold,item,word
 item_366,cute,item,word
 item_367,dark,item,word
@@ -455,7 +455,7 @@ item_448,Eat with a spoon or fork.,item,gestures_objects
 item_449,Drink from a cup containing liquid.,item,gestures_objects
 item_450,Comb or brush own hair.,item,gestures_objects
 item_451,Brush teeth.,item,gestures_objects
-item_452,Wipe face or hands with a towel or cloth. ,item,gestures_objects
+item_452,Wipe face or hands with a towel or cloth.,item,gestures_objects
 item_453,Put on hat.,item,gestures_objects
 item_454,Put on a shoe or sock.,item,gestures_objects
 item_455,"Put on a necklace, bracelet, or watch.",item,gestures_objects
@@ -466,8 +466,8 @@ item_459,Put telephone to ear.,item,gestures_objects
 item_460,Sniff flowers.,item,gestures_objects
 item_461,Push toy car or truck.,item,gestures_objects
 item_462,Throw a ball.,item,gestures_objects
-item_463,Pour pretend liquid from one container to another. ,item,gestures_objects
-item_464,Stir pretend liquid in a cup or pan with a spoon. ,item,gestures_objects
+item_463,Pour pretend liquid from one container to another.,item,gestures_objects
+item_464,Stir pretend liquid in a cup or pan with a spoon.,item,gestures_objects
 item_465,Put to bed.,item,gestures_parent
 item_466,Cover with blanket.,item,gestures_parent
 item_467,Feed with bottle.,item,gestures_parent
@@ -481,7 +481,7 @@ item_474,Try to put shoe or sock or hat on it.,item,gestures_parent
 item_475,Wipe its face or hands.,item,gestures_parent
 item_476,Talk to it.,item,gestures_parent
 item_477,Try to put diaper on it.,item,gestures_parent
-item_478,Sweep with broom or mop. ,item,gestures_adult
+item_478,Sweep with broom or mop.,item,gestures_adult
 item_479,Put key in door or lock.,item,gestures_adult
 item_480,Pound with hammer or mallet.,item,gestures_adult
 item_481,Attempt to use saw.,item,gestures_adult
