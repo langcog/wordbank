@@ -1,7 +1,6 @@
 field,column,group,type
 birth_order,siborder,child,birth_order
 data_age,months,admin,data_age
-date_of_birth,monthdate,child,date_of_birth
 date_of_test,,admin,date_of_test
 ethnicity,,child,ethnicity
 mom_ed,edu_class_mother,child,mom_ed

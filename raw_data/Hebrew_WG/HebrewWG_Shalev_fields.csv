@@ -1,7 +1,6 @@
 field,column,group,type
 birth_order,place_in_fam,child,birth_order
-data_age,,admin,data_age
-date_of_birth,birth_date,child,date_of_birth
+data_age,data_age,admin,data_age
 date_of_test,0ues_date,admin,date_of_test
 ethnicity,,child,ethnicity
 mom_ed,mo_edu,child,mom_ed
