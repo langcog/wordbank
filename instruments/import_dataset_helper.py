@@ -23,9 +23,9 @@ class ImportHelper:
 
     @staticmethod
     def compute_age(date_of_birth, date_of_test):
-        age = relativedelta(date_of_test, date_of_birth)
+        age = (date_of_test - date_of_birth).days
         avg_month = 365.2425/12.0
-        return int(age.years*12 + age.months + float(age.days) / avg_month)
+        return int(float(age) / avg_month)
 
     @staticmethod
     def value_typing(value):

@@ -1,0 +1,721 @@
+```{r setup, include=FALSE}
+knitr::opts_knit$set(root.dir = "~/Documents/repo/wordbank/")
+```
+
+```{r}
+library(tidyverse)
+library(magrittr)
+library(lubridate)
+library(tidyjson)
+
+```
+
+```{r}
+datasets_json <- read_json("static/json/datasets.json") %>%
+  gather_array %>%
+  spread_values(name = jstring("name"),
+                dataset = jstring("dataset"),
+                instrument_language = jstring("instrument_language"),
+                instrument_form = jstring("instrument_form"),
+                file = jstring("file"),
+                splitcol = jstring("splitcol"),
+                norming = jstring("norming"),
+                longitudinal = jstring("longitudinal"),
+                date_format = jstring("date_format")) %>%
+  split(.$file)
+  
+```
+
+```{r}
+remove_dobs <- function(x) {
+  file_location <- x$file
+  date_format <- x$date_format
+  
+  if (grepl('csv',file_location) & !is.na(date_format)) {
+    
+      fields_location <- paste0(gsub(".csv","",file_location),"_fields.csv")
+      fields_csv <- read_csv(fields_location)
+      
+      if ("date_of_birth" %in% fields_csv$field) {
+      
+          dot_name <- filter(fields_csv, field == "date_of_test")$column
+          dob_name <- filter(fields_csv, field == "date_of_birth")$column
+          
+          data_location <- paste0(gsub(".csv","",file_location),"_data.csv")
+          data_csv <- read_csv(data_location)
+          
+          dot <- parse_date_time(data_csv[[dot_name]], date_format)
+          dob <- parse_date_time(data_csv[[dob_name]], date_format)
+          
+          dob_location <- which(names(data_csv) == dob_name)
+          
+          age_months <- round(as.numeric(as.period(interval(dob, dot)), "days")/(365.2425/12.0))
+          
+          dobs_info <- list(file_location = file_location,
+                            date_format = date_format,
+                            fields_csv = fields_csv,
+                            dot_name = dot_name,
+                            dob_name = dob_name,
+                            dob_location = dob_location,
+                            data_csv = data_csv,
+                            age_months = age_months)
+          return(dobs_info)
+      }
+  }
+}
+```
+
+```{r}
+x <- datasets_json$`raw_data/ASL_FormA/ASL_FormA.csv`
+
+y <- remove_dobs(x)
+
+View(y$data_csv)
+names(y$data_csv)[y$dob_location] <- 'data_age'
+y$data_csv$data_age <- y$age_months
+
+View(y$data_csv)
+
+write_csv(y$data_csv, y$file_location, na = "")
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/ASL_FormB1/ASL_FormB1.csv`
+
+y <- remove_dobs(x)
+
+View(y$data_csv)
+names(y$data_csv)[y$dob_location] <- 'data_age'
+y$data_csv$data_age <- y$age_months
+
+View(y$data_csv)
+
+y$data_csv$data_age[4] <- y$data_csv$Age[4]
+
+write_csv(y$data_csv, y$file_location, na = "")
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/ASL_FormB2/ASL_FormB2.csv`
+
+y <- remove_dobs(x)
+
+View(y$data_csv)
+names(y$data_csv)[y$dob_location] <- 'data_age'
+y$data_csv$data_age <- y$age_months
+
+View(y$data_csv)
+
+
+write_csv(y$data_csv, y$file_location, na = "")
+```
+
+```{r}
+x <- datasets_json$`raw_data/ASL_FormC/ASL_FormC.csv`
+
+y <- remove_dobs(x)
+
+View(y$data_csv)
+names(y$data_csv)[y$dob_location] <- 'data_age'
+y$data_csv$data_age <- y$age_months
+
+View(y$data_csv)
+y$data_csv$data_age[1] <- y$data_csv$Age[1]
+
+
+write_csv(y$data_csv, y$file_location, na = "")
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/Australian_WS/AustralianWS_Kalashnikova.csv`
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/BSL_WG/BSLWG_Woll.csv`
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/Cantonese_WS/CantoneseWS_Tardif.csv`
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/Croatian_WG/CroatianWG_CLEX.csv`
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/Croatian_WS/CroatianWS_CLEX.csv`
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/Czech_WS/CzechWS_Smolik.csv`
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/Danish_WG/DanishWG_CLEX.csv`
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/Danish_WS/DanishWS_Bleses.csv`
+y <- list(data_csv = read_csv(paste0(gsub(".csv","",x$file),"_data.csv")),
+          fields_csv = read_csv(paste0(gsub(".csv","",x$file),"_fields.csv")))
+
+dob_name <- filter(fields_csv, field == "date_of_birth")$column
+
+y$data_csv[dob_name] <- NULL
+
+write_csv(y$data_csv, paste0(gsub(".csv","",x$file),"_data.csv"), na = "")
+```
+
+```{r}
+x <- datasets_json$`raw_data/English_British_Oxford/EnglishBritishOxford_Floccia_crosssectional.csv`
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/English_British_Oxford/EnglishBritishOxford_Floccia_longitudinal.csv`
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/English_British_TEDS_Threes/EnglishBritishTEDSThrees.csv`
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/English_British_TEDS_Twos/EnglishBritishTEDSTwos.csv`
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/English_WG/EnglishWG_Byers.csv`
+y <- remove_dobs(x)
+
+View(y$data_csv)
+names(y$data_csv)[y$dob_location] <- 'data_age'
+y$data_csv$data_age <- y$age_months
+
+View(y$data_csv)
+
+
+write_csv(y$data_csv, y$file_location, na = "")
+```
+
+```{r}
+x <- datasets_json$`raw_data/English_WG/EnglishWG_Frank_xsface.csv`
+
+y <- remove_dobs(x)
+
+View(y$data_csv)
+names(y$data_csv)[y$dob_location] <- 'data_age'
+y$data_csv$data_age <- y$age_months
+
+View(y$data_csv)
+
+write_csv(y$data_csv, y$file_location, na = "")
+```
+
+```{r}
+x <- datasets_json$`raw_data/English_WG/EnglishWG_Marchman_Norming.csv`
+file_location <- x$file
+date_format <- x$date_format
+
+
+fields_location <- paste0(gsub(".csv","",file_location),"_fields.csv")
+fields_csv <- read_csv(fields_location)
+
+
+data_location <- paste0(gsub(".csv","",file_location),"_data.csv")
+data_csv <- read_csv(data_location)
+
+dot <- parse_date_time(data_csv$DateofCDI, date_format)
+dob <- parse_date_time(data_csv$DateofBirth, date_format)
+
+dob_location <- which(names(data_csv) == "DateofBirth")
+
+age_months <- round(as.numeric(as.period(interval(dob, dot)), "days")/(365.2425/12.0))
+
+names(data_csv)[dob_location] <- 'data_age'
+data_csv$data_age <- age_months
+
+write_csv(data_csv, file_location, na = "")
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/English_WG/EnglishWG_Thal_13.csv`
+
+file_location <- x$file
+date_format <- x$date_format
+
+
+fields_location <- paste0(gsub(".csv","",file_location),"_fields.csv")
+fields_csv <- read_csv(fields_location)
+
+
+dot_name <- "CDIDate"
+dob_name <- filter(fields_csv, field == "date_of_birth")$column
+
+data_location <- paste0(gsub(".csv","",file_location),"_data.csv")
+data_csv <- read_csv(data_location)
+
+dot <- parse_date_time(data_csv[[dot_name]], date_format)
+dob <- parse_date_time(data_csv[[dob_name]], date_format)
+
+dob_location <- which(names(data_csv) == dob_name)
+
+age_months <- round(as.numeric(as.period(interval(dob, dot)), "days")/(365.2425/12.0))
+
+names(data_csv)[dob_location] <- 'data_age'
+data_csv$data_age <- age_months
+
+write_csv(data_csv, file_location, na = "")
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/English_WG/EnglishWG_Thal_16.csv`
+
+file_location <- x$file
+date_format <- x$date_format
+
+fields_location <- paste0(gsub(".csv","",file_location),"_fields.csv")
+fields_csv <- read_csv(fields_location)
+
+dot_name <- "CDIDate"
+dob_name <- filter(fields_csv, field == "date_of_birth")$column
+
+data_location <- paste0(gsub(".csv","",file_location),"_data.csv")
+data_csv <- read_csv(data_location)
+
+dot <- parse_date_time(data_csv[[dot_name]], date_format)
+dob <- parse_date_time(data_csv[[dob_name]], date_format)
+
+dob_location <- which(names(data_csv) == dob_name)
+
+age_months <- round(as.numeric(as.period(interval(dob, dot)), "days")/(365.2425/12.0))
+
+names(data_csv)[dob_location] <- 'data_age'
+data_csv$data_age <- age_months
+
+write_csv(data_csv, file_location, na = "")
+```
+
+```{r}
+x <- datasets_json$`raw_data/English_WS/EnglishWS_Byers.csv`  
+
+file_location <- x$file
+date_format <- x$date_format
+
+fields_location <- paste0(gsub(".csv","",file_location),"_fields.csv")
+fields_csv <- read_csv(fields_location)
+
+dot_name <- "Today_Date"
+dob_name <- filter(fields_csv, field == "date_of_birth")$column
+
+data_location <- paste0(gsub(".csv","",file_location),"_data.csv")
+data_csv <- read_csv(data_location)
+
+dot <- parse_date_time(data_csv[[dot_name]], date_format)
+dob <- parse_date_time(data_csv[[dob_name]], date_format)
+
+dob_location <- which(names(data_csv) == dob_name)
+
+age_months <- round(as.numeric(as.period(interval(dob, dot)), "days")/(365.2425/12.0))
+
+names(data_csv)[dob_location] <- 'data_age'
+data_csv$data_age <- age_months
+
+write_csv(data_csv, file_location, na = "")
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/English_WS/EnglishWS_Marchman_Dallas.csv` 
+
+y <- remove_dobs(x)
+
+View(y$data_csv)
+names(y$data_csv)[y$dob_location] <- 'data_age'
+y$data_csv$data_age <- y$age_months
+
+View(y$data_csv)
+
+write_csv(y$data_csv, y$file_location, na = "")
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/English_WS/EnglishWS_Marchman_Norming.csv`                             
+
+y <- remove_dobs(x)
+
+View(y$data_csv)
+names(y$data_csv)[y$dob_location] <- 'data_age'
+y$data_csv$data_age <- y$age_months
+
+View(y$data_csv)
+
+write_csv(y$data_csv, y$file_location, na = "")
+```
+
+```{r}
+x <- datasets_json$`raw_data/English_WS/EnglishWS_Marchman_Outreach1.csv` 
+
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/English_WS/EnglishWS_Marchman_Wisconsin.csv`                           
+
+y <- remove_dobs(x)
+
+View(y$data_csv)
+names(y$data_csv)[y$dob_location] <- 'data_age'
+y$data_csv$data_age <- y$age_months
+
+View(y$data_csv)
+
+write_csv(y$data_csv, y$file_location, na = "")
+```
+
+```{r}
+x <- datasets_json$`raw_data/English_WS/EnglishWS_Smith_electronic.csv`                             
+
+y <- remove_dobs(x)
+
+View(y$data_csv)
+names(y$data_csv)[y$dob_location] <- 'data_age'
+y$data_csv$data_age <- y$age_months
+
+View(y$data_csv)
+
+write_csv(y$data_csv, y$file_location, na = "")
+```
+
+```{r}
+x <- datasets_json$`raw_data/English_WS/EnglishWS_Smith_paper.csv`                                  
+y <- remove_dobs(x)
+
+View(y$data_csv)
+names(y$data_csv)[y$dob_location] <- 'data_age'
+y$data_csv$data_age <- y$age_months
+
+View(y$data_csv)
+
+write_csv(y$data_csv, y$file_location, na = "")
+```
+
+```{r}
+x <- datasets_json$`raw_data/English_WS/EnglishWS_Thal_16.csv`                                      
+y <- remove_dobs(x)
+
+View(y$data_csv)
+names(y$data_csv)[y$dob_location] <- 'data_age'
+y$data_csv$data_age <- y$age_months
+
+View(y$data_csv)
+
+write_csv(y$data_csv, y$file_location, na = "")
+```
+
+```{r}
+x <- datasets_json$`raw_data/English_WS/EnglishWS_Thal_28.csv`     
+
+y <- remove_dobs(x)
+View(y$data_csv)
+
+names(y$data_csv)[y$dob_location] <- 'data_age'
+y$data_csv$data_age <- y$age_months
+View(y$data_csv)
+
+write_csv(y$data_csv, y$file_location, na = "")
+```
+
+```{r}
+x <- datasets_json$`raw_data/French_Quebec_WG/FrenchQuebecWG_CLEX.csv`            
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/French_Quebec_WS/FrenchQuebecWS.csv`                                   
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/German_WS/GermanWS_Szagun.csv`                                         
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/Greek_WS/GreekWS_Grohmann.csv`                                         
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/Hebrew_WG/HebrewWG_Shalev.csv`                                         
+
+y <- remove_dobs(x)
+View(y$data_csv)
+
+names(y$data_csv)[y$dob_location] <- 'data_age'
+y$data_csv$data_age <- y$age_months
+View(y$data_csv)
+
+write_csv(y$data_csv, y$file_location, na = "")
+```
+
+```{r}
+x <- datasets_json$`raw_data/Hebrew_WS/HebrewWS_Maital.csv`                                         
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/Italian_WG/ItalianWG_Caselli.csv`                                      
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/Italian_WS/ItalianWS_CLEX.csv`  
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/Kigiriama_WG/KigiriamaWG_Alcock.csv`
+
+y <- remove_dobs(x)
+View(y$data_csv)
+
+names(y$data_csv)[which(names(y$data_csv)=='data_age')] <- 'old_data_age'
+
+names(y$data_csv)[y$dob_location] <- 'data_age'
+y$data_csv$data_age <- y$age_months
+View(y$data_csv)
+
+write_csv(y$data_csv, y$file_location, na = "")
+```
+
+```{r}
+x <- datasets_json$`raw_data/Kigiriama_WS/KigiriamaWS_Alcock.csv`
+
+y <- remove_dobs(x)
+View(y$data_csv)
+
+names(y$data_csv)[which(names(y$data_csv)=='data_age')] <- 'old_data_age'
+
+names(y$data_csv)[y$dob_location] <- 'data_age'
+y$data_csv$data_age <- y$age_months
+View(y$data_csv)
+
+write_csv(y$data_csv, y$file_location, na = "")
+```
+
+```{r}
+x <- datasets_json$`raw_data/Kiswahili_WG/KiswahiliWG_Alcock.csv`
+
+y <- remove_dobs(x)
+View(y$data_csv)
+
+names(y$data_csv)[which(names(y$data_csv)=='data_age')] <- 'old_data_age'
+
+names(y$data_csv)[y$dob_location] <- 'data_age'
+y$data_csv$data_age <- y$age_months
+View(y$data_csv)
+
+write_csv(y$data_csv, y$file_location, na = "")
+```
+
+```{r}
+x <- datasets_json$`raw_data/Kiswahili_WS/KiswahiliWS_Alcock_BothLanguages.csv`
+
+y <- remove_dobs(x)
+View(y$data_csv)
+
+names(y$data_csv)[which(names(y$data_csv)=='data_age')] <- 'old_data_age'
+
+names(y$data_csv)[y$dob_location] <- 'data_age'
+y$data_csv$data_age <- y$age_months
+
+y$data_csv$data_age[is.na(y$data_csv$data_age)] <- y$data_csv$old_data_age
+View(y$data_csv)
+
+y$data_csv$data_age[which(is.na(y$data_csv$data_age))] <- y$data_csv$old_data_age[which(is.na(y$data_csv$data_age))]
+
+write_csv(y$data_csv, y$file_location, na = "")
+```
+
+```{r}
+x <- datasets_json$`raw_data/Kiswahili_WS/KiswahiliWS_Alcock_Monolingual.csv`
+
+y <- remove_dobs(x)
+View(y$data_csv)
+
+names(y$data_csv)[which(names(y$data_csv)=='data_age')] <- 'old_data_age'
+
+names(y$data_csv)[y$dob_location] <- 'data_age'
+y$data_csv$data_age <- y$age_months
+
+View(y$data_csv)
+
+y$data_csv$data_age[y$data_csv$data_age < 16] <- y$data_csv$old_data_age[y$data_csv$data_age < 16]
+
+
+
+write_csv(y$data_csv, y$file_location, na = "")
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/Korean_WG/KoreanWG_Yim.csv`
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/Korean_WS/KoreanWS_Yim.csv`
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/Latvian_WG/LatvianWG_Urek.csv`
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/Latvian_WS/LatvianWS_Urek.csv`
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/Mandarin_IC/MandarinIC_Li.csv`
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/Mandarin_TC/MandarinTC_Li.csv`
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/Mandarin_WS/MandarinWS_Tardif.csv`
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/Norwegian_WG/NorwegianWG_Kristoffersen_longitudinal.csv`
+
+y <- remove_dobs(x)
+View(y$data_csv)
+
+names(y$data_csv)[y$dob_location] <- 'data_age'
+y$data_csv$data_age <- y$age_months
+View(y$data_csv)
+
+write_csv(y$data_csv, y$file_location, na = "")
+```
+
+```{r}
+x <- datasets_json$`raw_data/Norwegian_WG/NorwegianWG_Kristoffersen.csv`
+
+y <- remove_dobs(x)
+View(y$data_csv)
+
+names(y$data_csv)[y$dob_location] <- 'data_age'
+y$data_csv$data_age <- y$age_months
+View(y$data_csv)
+
+write_csv(y$data_csv, y$file_location, na = "")
+```
+
+```{r}
+x <- datasets_json$`raw_data/Norwegian_WS/NorwegianWS_Kristoffersen_longitudinal.csv`
+
+y <- remove_dobs(x)
+View(y$data_csv)
+
+names(y$data_csv)[y$dob_location] <- 'data_age'
+y$data_csv$data_age <- y$age_months
+View(y$data_csv)
+
+write_csv(y$data_csv, y$file_location, na = "")
+```
+
+```{r}
+x <- datasets_json$`raw_data/Norwegian_WS/NorwegianWS_Kristoffersen.csv`
+
+y <- remove_dobs(x)
+View(y$data_csv)
+
+names(y$data_csv)[y$dob_location] <- 'data_age'
+y$data_csv$data_age <- y$age_months
+View(y$data_csv)
+
+write_csv(y$data_csv, y$file_location, na = "")
+```
+
+```{r}
+x <- datasets_json$`raw_data/Russian_WG/RussianWG_CLEX.csv`
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/Russian_WS/RussianWS_CLEX.csv`
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/Slovak_WG/SlovakWG_Kapalkova.csv`
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/Slovak_WS/SlovakWS_Kapalkova.csv`
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/Spanish_WG/SpanishWG_Marchman_Norming.csv`
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/Spanish_WS/SpanishWS_Marchman_Norming.csv`
+
+y <- remove_dobs(x)
+View(y$data_csv)
+
+names(y$data_csv)[y$dob_location] <- 'data_age'
+y$data_csv$data_age <- y$age_months
+View(y$data_csv)
+
+write_csv(y$data_csv, y$file_location, na = "")
+```
+
+```{r}
+x <- datasets_json$`raw_data/Swedish_WG/SwedishWG_CLEX.csv`
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/Swedish_WS/SwedishWS_CLEX.csv`
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/Turkish_WG/TurkishWG_CLEX.csv`
+
+```
+
+```{r}
+x <- datasets_json$`raw_data/Turkish_WS/TurkishWS_CLEX.csv`
+
+```
+

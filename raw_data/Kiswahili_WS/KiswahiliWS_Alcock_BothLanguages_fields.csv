@@ -2,7 +2,6 @@ field,column,group,type
 study_id,sno,child,study_id
 sex,sex,child,sex
 date_of_test,dtest,admin,date_of_test
-date_of_birth,dbirth,child,date_of_birth
 data_age,data_age,admin,data_age
 item_1,a14sheba,item,word
 item_2,a1birchr,item,word
