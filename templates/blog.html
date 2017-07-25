@@ -33,9 +33,10 @@ Wordbank | Blog
 		<img src="{% static 'images/walrus.png' %}" width="90%">
 	</div>
 
-	<div class="col-md-3 col-md-offset-1">
+	<div class="col-md-3 col-md-offset-1" style="margin-top: 20px;">
 
-		<div class="panel panel-info" style="margin-top: 20px;">
+		{% if events %}
+		<div class="panel panel-info" >
 		  <div class="panel-heading">Upcoming Wordbank events</div>
 		  <ul class="list-group">
 				{% for event in events %}
@@ -53,7 +54,9 @@ Wordbank | Blog
 				{% endfor %}
 		  </ul>
 		</div>
+		{% endif %}
 
+		{% if resources %}
 		<div class="panel panel-info">
 		<div class="panel-heading">Related resources</div>
 		  <div class="list-group">
@@ -66,6 +69,7 @@ Wordbank | Blog
 			{% endfor %}
 		  </div>
 		</div>
+		{% endif %}
 
 	</div>
 
