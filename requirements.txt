@@ -8,3 +8,4 @@ django-extensions==1.4
 faulthandler==2.4
 gdata
 git+git://github.com/tonyg/python-rfc3339
+awscli
