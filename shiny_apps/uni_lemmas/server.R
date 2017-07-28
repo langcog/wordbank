@@ -3,10 +3,11 @@ library(readr)
 library(dplyr)
 library(ggplot2)
 library(langcog)
+library(feather)
 theme_set(theme_mikabr(base_size = 14))
 # font <- theme_mikabr()$text$family
 
-all_prop_data <- read_csv("all_prop_data.csv")
+all_prop_data <- feather::read_feather("all_prop_data.feather")
 uni_lemmas <- sort(unique(all_prop_data$uni_lemma))
 start_lemma <- "dog"
 kid_min <- 3
@@ -32,7 +33,7 @@ shinyServer(function(input, output, session) {
     all_prop_data %>%
       group_by(language) %>%
       filter(uni_lemma == input$uni_lemma &
-               n_kids >= kid_min &
+               n >= kid_min &
                n() >= points_min)
   }
 
