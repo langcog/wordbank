@@ -30,7 +30,7 @@ item_28,花生,hua1sheng1,peanut,food_drink,word,produces,peanut
 item_29,黄瓜,huang2gua1,cucumber,food_drink,word,produces,cucumber
 item_30,馄饨,hun2tun2,ravioli,food_drink,word,produces,
 item_31,鸡蛋,ji1dan4,egg,food_drink,word,produces,egg
-item_32,鸡肉,ji1rou4,chicken,food_drink,word,produces,
+item_32,鸡肉,ji1rou4,chicken,food_drink,word,produces,chicken (food)
 item_33,酱油,jiang4you2,sauce,food_drink,word,produces,sauce
 item_34,饺子,jiao3zi5,dumpling,food_drink,word,produces,
 item_35,酒,jiu3,alcohol,food_drink,word,produces,
@@ -197,7 +197,7 @@ item_195,喂（打电话）,wei4 (da3 dian4hua4),hello,games_routines,word,produ
 item_196,午饭,wu3fan4,lunch,games_routines,word,produces,lunch
 item_197,洗澡,xi3zao3,bath,games_routines,word,produces,bath
 item_198,下面,xia4mian5,under,games_routines,word,produces,under
-item_199,想要,xiang3yao4,wanna; want to ,games_routines,word,produces,wanna
+item_199,想要,xiang3yao4,wanna; want to,games_routines,word,produces,wanna
 item_200,谢谢,xie4xie5,thank you,games_routines,word,produces,thank you
 item_201,再见,zai4jian4,bye,games_routines,word,produces,bye
 item_202,早饭,zao3fan4,breakfast,games_routines,word,produces,breakfast
@@ -225,7 +225,7 @@ item_223,脚,jiao3,foot,body_parts,word,produces,foot
 item_224,脚踝,jiao3huai2,ankle,body_parts,word,produces,
 item_225,脚趾,jiao3zhi3,toe,body_parts,word,produces,toe
 item_226,屁股,pi4gu5,butt,body_parts,word,produces,butt
-item_227,手 ,shou3,hand,body_parts,word,produces,hand
+item_227,手,shou3,hand,body_parts,word,produces,hand
 item_228,手指头,shou3zhi3tou5,finger,body_parts,word,produces,finger
 item_229,指甲,zhi3jia5,nail,body_parts,word,produces,nail
 item_230,头,tou2,head,body_parts,word,produces,head
@@ -394,7 +394,7 @@ item_392,伞,san3,umbrella,household,word,produces,umbrella
 item_393,勺子,shao2zi5,spoon,household,word,produces,spoon
 item_394,手表,shou3biao3,watch,household,word,produces,watch (object)
 item_395,书包,shu1bao1,bag,household,word,produces,bag
-item_396,梳子 ,shu1zi5,comb,household,word,produces,comb (object)
+item_396,梳子,shu1zi5,comb,household,word,produces,comb (object)
 item_397,刷子,shua1zi5,brush,household,word,produces,brush
 item_398,水壶,shui3hu2,jug,household,word,produces,
 item_399,锁,suo3,lock,household,word,produces,lock
@@ -655,7 +655,7 @@ item_653,裤子,ku4zi5,pants,clothing,word,produces,pants
 item_654,短裤,duan3ku4,pants; shorts,clothing,word,produces,shorts
 item_655,鞋,xie2,shoe,clothing,word,produces,shoe
 item_656,雨鞋,yu3xie2,rain boot,clothing,word,produces,
-item_657,皮鞋,pi2xie2,leather shoe ,clothing,word,produces,
+item_657,皮鞋,pi2xie2,leather shoe,clothing,word,produces,
 item_658,拖鞋,tuo1xie2,slippers,clothing,word,produces,slipper
 item_659,运动鞋,yun4dong4xie2,sneakers,clothing,word,produces,
 item_660,凉鞋,liang2xie2,sandal,clothing,word,produces,sandals
