@@ -800,5 +800,18 @@
         "date_format": "%m/%d/%Y",
         "contributor": "Virginia Marchman, Stanford University",
         "citation": "​Fernald, A., Marchman, V. A., & Weisleder, A. (2013). SES differences in language processing skill and vocabulary are evident at 18 months. Developmental Science, 16, 234–248. http://doi.org/10.1111/desc.12019"
+    },
+    {
+        "name": "Marchman",
+        "dataset": "Outreach",
+        "instrument_language": "Spanish",
+        "instrument_form": "WG",
+        "file": "raw_data/Spanish_WG/SpanishWG_Marchman_Outreach.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": true,
+        "date_format": "%Y-%m-%d",
+        "contributor": "Virginia Marchman, Stanford University",
+        "citation": "​"
     }
 ]
