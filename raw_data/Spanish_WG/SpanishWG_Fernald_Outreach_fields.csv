@@ -1,6 +1,6 @@
 field,column,group,type
 study_id,subj#,child,study_id
-date_of_birth,DOB,child,date_of_birth
+data_age,data_age,admin,data_age
 date_of_test,CDIDate,admin,date_of_test
 ,CDIAge,,
 ,months,,

@@ -798,20 +798,33 @@
         "norming": false,
         "longitudinal": false,
         "date_format": "%m/%d/%Y",
-        "contributor": "Virginia Marchman, Stanford University",
+        "contributor": "Anne Fernald, Stanford University",
         "citation": "​Fernald, A., Marchman, V. A., & Weisleder, A. (2013). SES differences in language processing skill and vocabulary are evident at 18 months. Developmental Science, 16, 234–248. http://doi.org/10.1111/desc.12019"
     },
     {
-        "name": "Marchman",
+        "name": "Fernald",
         "dataset": "Outreach",
         "instrument_language": "Spanish",
         "instrument_form": "WG",
-        "file": "raw_data/Spanish_WG/SpanishWG_Marchman_Outreach.csv",
+        "file": "raw_data/Spanish_WG/SpanishWG_Fernald_Outreach.csv",
         "splitcol": false,
         "norming": false,
         "longitudinal": true,
         "date_format": "%Y-%m-%d",
-        "contributor": "Virginia Marchman, Stanford University",
-        "citation": "​"
+        "contributor": "Anne Fernald, Stanford University",
+        "citation": "​Weisleder, A., & Fernald, A. (2013). Talking to children matters: Early language experience strengthens processing and builds vocabulary. Psychological Science, 24, 2143–2152. http://doi.org/10.1177/0956797613488145"
+    },
+    {
+        "name": "Fernald",
+        "dataset": "Outreach",
+        "instrument_language": "Spanish",
+        "instrument_form": "WS",
+        "file": "raw_data/Spanish_WS/SpanishWS_Fernald_Outreach.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": true,
+        "date_format": "%Y-%m-%d",
+        "contributor": "Anne Fernald, Stanford University",
+        "citation": "​Weisleder, A., & Fernald, A. (2013). Talking to children matters: Early language experience strengthens processing and builds vocabulary. Psychological Science, 24, 2143–2152. http://doi.org/10.1177/0956797613488145"
     }
 ]

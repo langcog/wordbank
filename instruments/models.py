@@ -47,3 +47,5 @@ from schemas.Latvian_WG import *
 from schemas.Latvian_WS import *
 from schemas.Korean_WG import *
 from schemas.Korean_WS import *
+from schemas.Spanish_WG import *
+from schemas.Spanish_WG import *
