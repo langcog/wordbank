@@ -1,0 +1,25 @@
+type,value,data_value
+sex,M,M
+sex,F,F
+mom_ed,,
+mom_ed,primary,4
+mom_ed,primary,5
+mom_ed,primary,6
+mom_ed,primary,7
+mom_ed,primary,8
+mom_ed,some secondary,9
+mom_ed,some secondary,10
+mom_ed,secondary,12
+mom_ed,some college,13
+mom_ed,some college,14
+mom_ed,college,16
+word,,0
+word,produces,1
+how_use_words,not yet,0
+how_use_words,sometimes,1
+word_forms,,0
+word_forms,produces,1
+combine,no,0
+combine,yes,1
+complexity,simple,0
+complexity,complex,1
