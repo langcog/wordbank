@@ -4,6 +4,8 @@ library(dplyr)
 library(ggplot2)
 library(langcog)
 library(feather)
+library(purrr)
+library(cowplot)
 theme_set(theme_mikabr(base_size = 14))
 # font <- theme_mikabr()$text$family
 
@@ -37,11 +39,11 @@ shinyServer(function(input, output, session) {
                n() >= points_min)
   }
 
-  crosslinguistic_plot <- function() {
-    words_data <- uni_lemma_data() %>%
+  crosslinguistic_plot <- function(uni_data = uni_lemma_data()) {
+    words_data <- uni_data %>%
       select(language, measure, words) %>%
       distinct()
-    ggplot(uni_lemma_data(), aes(x = age)) +
+    ggplot(uni_data, aes(x = age)) +
       facet_grid(measure ~ language) +
       geom_point(aes(y = prop, colour = language)) +
       geom_smooth(aes(y = prop, colour = language), method = "loess", se = FALSE,
@@ -57,9 +59,28 @@ shinyServer(function(input, output, session) {
                          breaks = seq(8, 18, 2))
   }
 
+  num_languages <- function() unique(uni_lemma_data()$language)
+
+  check_many_langs <- function () {
+    if (length(num_languages()) > 5) {
+      uni_data <- uni_lemma_data() %>%
+        split(.$language)
+      lang_chunks <- split(num_languages(), ceiling(seq_along(num_languages())/5)) %>%
+        map(function(x) bind_rows(uni_data[x]))
+      lang_plots <- lang_chunks %>%
+        map(crosslinguistic_plot)
+
+      do.call("plot_grid", c(lang_plots, ncol=1, align = "h"))
+    }else{
+      crosslinguistic_plot(uni_lemma_data())
+    }
+  }
   output$crosslinguistic <- renderPlot({
-    crosslinguistic_plot()
-  }, width = function() length(unique(uni_lemma_data()$language)) * 100 + 100)
+    check_many_langs()
+
+  }, width = function() min(length(num_languages()),5) * 100 + 100,
+     height = function() ceiling(length(num_languages())/5) * 100 + 100
+  )
 
   table_data <- reactive({
     uni_lemma_data() %>%
