@@ -5,7 +5,7 @@ library(DT)
 library(wordbankr)
 mode <- "local"
 
-input <- list(language = "English", form = "WS", measure = "produces",
+input <- list(language = "English (American)", form = "WS", measure = "produces",
               age = c(16, 30))
 
 shinyServer(function(input, output, session) {
@@ -16,7 +16,7 @@ shinyServer(function(input, output, session) {
   instruments <- get_instruments(mode = mode)
   languages <- sort(unique(instruments$language))
 
-  start_language <- "English"
+  start_language <- "English (American)"
   start_form <- "WS"
   start_measure <- "produces"
 

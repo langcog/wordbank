@@ -12,7 +12,7 @@ font <- theme_mikabr()$text$family
 Sys.setlocale(locale = "en_US.UTF-8")
 mode <- "local"
 
-# input <- list(language = "English", form = "WG WS", measure = "produces",
+# input <- list(language = "English (American)", form = "WG WS", measure = "produces",
 #               words = c("baa baa", "woof"))
 
 list_items_by_definition <- function(item_data) {
@@ -87,7 +87,7 @@ instrument_tables <- instruments %>%
   )) %>%
   left_join(instruments)
 
-start_language <- "English"
+start_language <- "English (American)"
 start_form <- "WS"
 start_measure <- "produces"
 
