@@ -48,7 +48,7 @@
         "has_grammar": true
     },
     {
-        "language": "English",
+        "language": "English (American)",
         "form": "WG",
         "file": "raw_data/English_WG/[English_WG].csv",
         "age_min": 8,
@@ -56,7 +56,7 @@
         "has_grammar": false
     },
     {
-        "language": "English",
+        "language": "English (American)",
         "form": "WS",
         "file": "raw_data/English_WS/[English_WS].csv",
         "age_min": 16,
@@ -336,7 +336,7 @@
         "has_grammar": false
     },
     {
-        "language": "Australian English",
+        "language": "English (Australian)",
         "form": "WS",
         "file": "raw_data/Australian_WS/[Australian_WS].csv",
         "age_min": 12,

@@ -579,8 +579,8 @@ class Italian_WG(BaseTable):
     item_287 = models.CharField(max_length=11, choices=item_287_choices, null=True)
     item_288_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
     item_288 = models.CharField(max_length=11, choices=item_288_choices, null=True)
-    item_289_choices = [(u'games_routines', u'games_routines')]
-    item_289 = models.CharField(max_length=14, choices=item_289_choices, null=True)
+    item_289_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
+    item_289 = models.CharField(max_length=11, choices=item_289_choices, null=True)
     item_290_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
     item_290 = models.CharField(max_length=11, choices=item_290_choices, null=True)
     item_291_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
