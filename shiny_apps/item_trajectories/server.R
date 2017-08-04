@@ -17,12 +17,18 @@ mode <- "local"
 
 list_items_by_definition <- function(item_data) {
   items <- item_data$item_id
-  names(items) <- item_data$definition
+  names(items) <- ifelse(is.na(item_data$uni_lemma),
+                         item_data$definition,
+                         paste0(item_data$definition,"\n(", item_data$uni_lemma,")")
+                         )
   return(items)
 }
 
 list_items_by_id <- function(item_data) {
-  items <- item_data$definition
+  items <- ifelse(is.na(item_data$uni_lemma),
+                  item_data$definition,
+                  paste0(item_data$definition,"\n(", item_data$uni_lemma,")")
+                  )
   names(items) <- item_data$item_id
   return(items)
 }
@@ -106,7 +112,7 @@ shinyServer(function(input, output, session) {
     a <- if (is.null(input$form)) start_form else input$form
     possible_forms <- unique(filter(instrument_tables,
                                     language == input_language())$form)
-    if (a %in% possible_forms)
+    if (a %in% possible_forms | (a == "WG WS" & all(c("WG","WS") %in% possible_forms)))
       a else forms()[[1]]
   })
 
@@ -306,7 +312,7 @@ shinyServer(function(input, output, session) {
   })
 
   measures <- reactive({
-    if (input_forms() %in% c("WG","FormA","IC","Oxford CDI")) {
+    if (all(input_forms() %in% c("WG","FormA","IC","Oxford CDI"))) {
       list("Produces" = "produces", "Understands" = "understands")
     } else {
       list("Produces" = "produces")
