@@ -1,6 +1,7 @@
 from django.core.management.base import BaseCommand
 from common.models import *
 import instruments.models
+import string
 
 
 # deletes all data and administration and child objects for a given instrument (language and form)
@@ -14,7 +15,9 @@ class Command(BaseCommand):
 
         input_language, input_form = options['language'], options['form']
 
-        instrument_string = '_'.join(input_language.split() + [input_form])
+        var_safe = lambda s: ''.join([c for c in '_'.join(s.split()) if c in string.letters + '_'])
+        instrument_string = var_safe(input_language) + '_' + var_safe(input_form)
+        #instrument_string = '_'.join(input_language.split() + [input_form])
         instrument_model = getattr(instruments.models, instrument_string)
         instrument_model.objects.all().delete()
 
