@@ -1,0 +1,69 @@
+```{r setup}
+knitr::opts_knit$set(root.dir = "~/Documents/repo/wordbank/")
+```
+
+```{r}
+library(tidyverse)
+library(dbplyr)
+library(tidyjson)
+library(magrittr)
+library(wordbankr)
+```
+
+```{r}
+instruments_json <- read_json("static/json/instruments.json") %>%
+  gather_array %>%
+  spread_values(language = jstring("language"),
+                form = jstring("form"),
+                file = jstring("file"),
+                age_min = jstring("age_min"),
+                age_max = jstring("age_max"),
+                has_grammar = jstring("has_grammar"))
+```
+
+```{r}
+
+update_lemmas <- function(x) {
+    curr_langs <- filter(instruments_json, language == x$language) %>%
+      left_join(x, by = c("language", "form"))
+    
+    greater_file <- curr_langs[which.max(curr_langs$prop_lemma),"file"]
+    lesser_file <- curr_langs[which.min(curr_langs$prop_lemma),"file"]
+    
+    greater_lemmas <- read_csv(greater_file)
+    lesser_lemmas <- read_csv(lesser_file)
+    
+    if (!'uni_lemma' %in% names(lesser_lemmas)) lesser_lemmas[['uni_lemma']] <- NA
+    
+    updated_lesser <- lesser_lemmas %>%
+      left_join(
+        greater_lemmas %>%
+          select(definition, category, uni_lemma) %>%
+          dplyr::rename('new_lemma' = 'uni_lemma'),
+        by = c("definition", "category")
+      ) %>%
+      mutate(uni_lemma = ifelse(is.na(uni_lemma), new_lemma, uni_lemma))
+    
+    write_csv(updated_lesser, lesser_file, na = "")
+}
+
+```
+
+
+```{r}
+languages <- get_item_data(mode = "local") %>%
+  group_by(language, form) %>%
+  summarise(prop_lemma = mean(!is.na(uni_lemma))) %>%
+  filter((form != "WS" & prop_lemma > 0.3) | (form == "WS" & prop_lemma < 0.6)) %>%
+  group_by(language) %>%
+  filter( n() > 1) %>%
+  split(.$language) %>%
+  map(update_lemmas)
+```
+
+```{r}
+View(get_item_data(mode = "local") %>%
+  group_by(language, form) %>%
+  summarise(prop_lemma = mean(!is.na(uni_lemma))))
+```
+

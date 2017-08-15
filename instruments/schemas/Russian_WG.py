@@ -55,10 +55,10 @@ class Russian_WG(BaseTable):
     item_25 = models.CharField(max_length=11, choices=item_25_choices, null=True)
     item_26_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
     item_26 = models.CharField(max_length=11, choices=item_26_choices, null=True)
-    item_27_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_27 = models.CharField(max_length=11, choices=item_27_choices, null=True)
-    item_28_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_28 = models.CharField(max_length=11, choices=item_28_choices, null=True)
+    item_27_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_27 = models.CharField(max_length=9, choices=item_27_choices, null=True)
+    item_28_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
+    item_28 = models.CharField(max_length=9, choices=item_28_choices, null=True)
     item_29_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
     item_29 = models.CharField(max_length=11, choices=item_29_choices, null=True)
     item_30_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
@@ -913,5 +913,3 @@ class Russian_WG(BaseTable):
     item_454 = models.CharField(max_length=11, choices=item_454_choices, null=True)
     item_455_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
     item_455 = models.CharField(max_length=11, choices=item_455_choices, null=True)
-    item_456_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
-    item_456 = models.CharField(max_length=11, choices=item_456_choices, null=True)

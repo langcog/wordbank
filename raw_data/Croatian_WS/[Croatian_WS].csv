@@ -1,718 +1,718 @@
-"definition","uni_lemma","gloss","category","item","type","choices","complexity_category","itemID"
-"brr-brr",,"vroom","sounds","brr-brr","word","produces",,"item_1"
-"Ga-ga","baa baa","baa baa","sounds","Ga-ga","word","produces",,"item_2"
-"grr",,"grr","sounds","grr","word","produces",,"item_3"
-"jao",,"ouch","sounds","jao","word","produces",,"item_4"
-"ku-ku (sound)",,"choo choo","sounds","ku-ku","word","produces",,"item_5"
-"kukurikuuu","cockadoodledoo","cockadoodledoo","sounds","kukurikuuu","word","produces",,"item_6"
-"kva-kva",,"quack quack","sounds","kva-kva","word","produces",,"item_7"
-"mijau",,"meow","sounds","mijau","word","produces",,"item_8"
-"muu",,"moo","sounds","muu","word","produces",,"item_9"
-"njam-njam",,"yum yum","sounds","njam-njam","word","produces",,"item_10"
-"tu-tu",,"choo-choo","sounds","tu-tu","word","produces",,"item_11"
-"vau-vau",,"woof woof","sounds","vau-vau","word","produces",,"item_12"
-"buba",,"bug","animals","buba","word","produces",,"item_13"
-"guska",,"goose","animals","guska","word","produces",,"item_14"
-"jelen",,"deer","animals","jelen","word","produces",,"item_15"
-"koka",,"hen","animals","koka","word","produces",,"item_16"
-"konj",,"horse","animals","konj","word","produces",,"item_17"
-"kornjača",,"turtle","animals","kornjaca","word","produces",,"item_18"
-"koza",,"goat","animals","koza","word","produces",,"item_19"
-"krava",,"cow","animals","krava","word","produces",,"item_20"
-"krokodil",,"crocodile","animals","krokodil","word","produces",,"item_21"
-"lane",,"fawn","animals","lane","word","produces",,"item_22"
-"lav",,"lion","animals","lav","word","produces",,"item_23"
-"leptir",,"butterfly","animals","leptir","word","produces",,"item_24"
-"lisica",,"fox","animals","lisica","word","produces",,"item_25"
-"mačka",,"cat","animals","macka","word","produces",,"item_26"
-"magarac",,"donkey","animals","magarac","word","produces",,"item_27"
-"majmun",,"monkey","animals","majmun","word","produces",,"item_28"
-"medo (igračka)","teddybear","teddybear","animals","medo_(igracka)","word","produces",,"item_29"
-"medvjed (životinja)",,"bear","animals","medvjed_(zivotinja)","word","produces",,"item_30"
-"miš",,"mouse","animals","mis","word","produces",,"item_31"
-"mrav",,"ant","animals","mrav","word","produces",,"item_32"
-"ovca",,"sheep","animals","ovca","word","produces",,"item_33"
-"pas",,"dog","animals","pas","word","produces",,"item_34"
-"patka",,"duck","animals","patka","word","produces",,"item_35"
-"pčela",,"bee","animals","pcela","word","produces",,"item_36"
-"pijetao",,"rooster","animals","pijetao","word","produces",,"item_37"
-"pile",,"chicken","animals","pile","word","produces",,"item_38"
-"pingvin",,"penguin","animals","pingvin","word","produces",,"item_39"
-"prase",,"pig","animals","prase","word","produces",,"item_40"
-"ptica",,"bird","animals","ptica","word","produces",,"item_41"
-"purica",,"turkey","animals","purica","word","produces",,"item_42"
-"riba (animal)",,"fish","animals","riba","word","produces",,"item_43"
-"slon",,"elephant","animals","slon","word","produces",,"item_44"
-"sova",,"owl","animals","sova","word","produces",,"item_45"
-"srna",,"doe","animals","srna","word","produces",,"item_46"
-"tigar",,"tiger","animals","tigar","word","produces",,"item_47"
-"vjeverica",,"squirrel","animals","vjeverica","word","produces",,"item_48"
-"vrabac",,"sparrow","animals","vrabac","word","produces",,"item_49"
-"vuk",,"wolf","animals","vuk","word","produces",,"item_50"
-"zebra",,"zebra","animals","zebra","word","produces",,"item_51"
-"zeko",,"bunny","animals","zeko","word","produces",,"item_52"
-"žaba",,"frog","animals","zaba","word","produces",,"item_53"
-"žirafa",,"giraffe","animals","zirafa","word","produces",,"item_54"
-"životinja",,"animal","animals","zivotinja","word","produces",,"item_55"
-"auto",,"car","vehicles","auto","word","produces",,"item_56"
-"autobus",,"bus","vehicles","autobus","word","produces",,"item_57"
-"avion",,"airplane","vehicles","avion","word","produces",,"item_58"
-"bicikl",,"bicycle","vehicles","bicikl","word","produces",,"item_59"
-"brod",,"boat","vehicles","brod","word","produces",,"item_60"
-"helikopter",,"helicopter","vehicles","helikopter","word","produces",,"item_61"
-"kamion",,"truck","vehicles","kamion","word","produces",,"item_62"
-"kolica","stroller","stroller","vehicles","kolica","word","produces",,"item_63"
-"motor",,"motorcycle","vehicles","motor","word","produces",,"item_64"
-"sanjke",,"sled","vehicles","sanjke","word","produces",,"item_65"
-"traktor","tractor","tractor","vehicles","traktor","word","produces",,"item_66"
-"tramvaj",,"tram","vehicles","tramvaj","word","produces",,"item_67"
-"vatrogasci",,"firetruck","vehicles","vatrogasci","word","produces",,"item_68"
-"vlak",,"train","vehicles","vlak","word","produces",,"item_69"
-"balon",,"balloon","toys","balon","word","produces",,"item_70"
-"bojica",,"crayon","toys","bojica","word","produces",,"item_71"
-"flomaster",,"felt pen","toys","flomaster","word","produces",,"item_72"
-"igra",,"game","toys","igra","word","produces",,"item_73"
-"igračka",,"toy","toys","igracka","word","produces",,"item_74"
-"knjiga",,"book","toys","knjiga","word","produces",,"item_75"
-"kocka",,"block","toys","kocka","word","produces",,"item_76"
-"kreda",,"chalk","toys","kreda","word","produces",,"item_77"
-"lopatica",,"sand shovel","toys","lopatica","word","produces",,"item_78"
-"lopta",,"ball","toys","lopta","word","produces",,"item_79"
-"lutka",,"doll","toys","lutka","word","produces",,"item_80"
-"ljepilo",,"glue","toys","ljepilo","word","produces",,"item_81"
-"olovka",,"pencil","toys","olovka","word","produces",,"item_82"
-"pikule",,"marbles","toys","pikule","word","produces",,"item_83"
-"plastelin",,"play dogh","toys","plastelin","word","produces",,"item_84"
-"poklon",,"present","toys","poklon","word","produces",,"item_85"
-"slagalice (puzzle)",,"puzzle","toys","slagalice_(puzzle)","word","produces",,"item_86"
-"slikovnica",,"picture book","toys","slikovnica","word","produces",,"item_87"
-"banana",,"banana","food_drink","banana","word","produces",,"item_88"
-"blitva",,"chard","food_drink","blitva","word","produces",,"item_89"
-"bombon",,"candy","food_drink","bombon","word","produces",,"item_90"
-"bundeva",,"pumpkin","food_drink","bundeva","word","produces",,"item_91"
-"čaj",,"tea","food_drink","caj","word","produces",,"item_92"
-"čips",,"potato chip","food_drink","cips","word","produces",,"item_93"
-"čokolada",,"chocolate","food_drink","cokolada","word","produces",,"item_94"
-"čokolino",,"cokolino (Croatian children food)","food_drink","cokolino","word","produces",,"item_95"
-"grah",,"beans","food_drink","grah","word","produces",,"item_96"
-"grašak",,"peas","food_drink","grasak","word","produces",,"item_97"
-"griz",,"grits","food_drink","griz","word","produces",,"item_98"
-"grožđe",,"grapes","food_drink","grozde","word","produces",,"item_99"
-"grožđica",,"raisin","food_drink","grozdica","word","produces",,"item_100"
-"hamburger",,"hamburger","food_drink","hamburger","word","produces",,"item_101"
-"hrana",,"food","food_drink","hrana","word","produces",,"item_102"
-"hrenovke",,"frankfurters","food_drink","hrenovke","word","produces",,"item_103"
-"jabuka",,"apple","food_drink","jabuka","word","produces",,"item_104"
-"jagoda",,"strawberry","food_drink","jagoda","word","produces",,"item_105"
-"jaje",,"egg","food_drink","jaje","word","produces",,"item_106"
-"jogurt",,"yogurt","food_drink","jogurt","word","produces",,"item_107"
-"juha",,"soup","food_drink","juha","word","produces",,"item_108"
-"kašica",,"gruel","food_drink","kasica","word","produces",,"item_109"
-"kava",,"coffee","food_drink","kava","word","produces",,"item_110"
-"keks",,"cookie","food_drink","keks","word","produces",,"item_111"
-"kelj",,"savoy cabbage","food_drink","kelj","word","produces",,"item_112"
-"kobasica",,"sausage","food_drink","kobasica","word","produces",,"item_113"
-"koka (piletina)","chicken (food)","chicken","food_drink","koka_(piletina)","word","produces",,"item_114"
-"kokice",,"popcorn","food_drink","kokice","word","produces",,"item_115"
-"kolač",,"cake","food_drink","kolac","word","produces",,"item_116"
-"krafna",,"donut","food_drink","krafna","word","produces",,"item_117"
-"krastavac",,"cucumber","food_drink","krastavac","word","produces",,"item_118"
-"kruh",,"bread","food_drink","kruh","word","produces",,"item_119"
-"krumpir",,"potato","food_drink","krumpir","word","produces",,"item_120"
-"kruška",,"pear","food_drink","kruska","word","produces",,"item_121"
-"kukuruz",,"corn","food_drink","kukuruz","word","produces",,"item_122"
-"lizalica",,"lollipop","food_drink","lizalica","word","produces",,"item_123"
-"mahune",,"green beans","food_drink","mahune","word","produces",,"item_124"
-"marmelada",,"jam","food_drink","marmelada","word","produces",,"item_125"
-"maslac",,"butter","food_drink","maslac","word","produces",,"item_126"
-"med",,"honey","food_drink","med","word","produces",,"item_127"
-"meso",,"meat","food_drink","meso","word","produces",,"item_128"
-"mlijeko",,"milk","food_drink","mlijeko","word","produces",,"item_129"
-"mrkve","carrots","carrots","food_drink","mrkve","word","produces",,"item_130"
-"naranča",,"orange","food_drink","naranca","word","produces",,"item_131"
-"njoke",,"gnocchi","food_drink","njoke","word","produces",,"item_132"
-"orasi",,"walnuts","food_drink","orasi","word","produces",,"item_133"
-"palačinka",,"pancake","food_drink","palacinka","word","produces",,"item_134"
-"pecivo",,"rolls","food_drink","pecivo","word","produces",,"item_135"
-"piće",,"drink","food_drink","pice","word","produces",,"item_136"
-"pizza",,"pizza","food_drink","pizza","word","produces",,"item_137"
-"pomfrit",,"french fries","food_drink","pomfrit","word","produces",,"item_138"
-"puding",,"pudding","food_drink","puding","word","produces",,"item_139"
-"riba (food)",,"fish","food_drink","riba","word","produces",,"item_140"
-"salama",,"salami","food_drink","salama","word","produces",,"item_141"
-"salata",,"lettuce","food_drink","salata","word","produces",,"item_142"
-"sendvič",,"sandwich","food_drink","sendvic","word","produces",,"item_143"
-"sir",,"cheese","food_drink","sir","word","produces",,"item_144"
-"sladole","ice cream","ice cream","food_drink","sladole","word","produces",,"item_145"
-"sok",,"juice","food_drink","sok","word","produces",,"item_146"
-"sol",,"salt","food_drink","sol","word","produces",,"item_147"
-"šećer",,"sugar","food_drink","secer","word","produces",,"item_148"
-"špageti",,"spaghetti","food_drink","spageti","word","produces",,"item_149"
-"špinat",,"spinach","food_drink","spinat","word","produces",,"item_150"
-"tijesto",,"pasta","food_drink","tijesto","word","produces",,"item_151"
-"trešnja",,"cherry","food_drink","tresnja","word","produces",,"item_152"
-"umak",,"sauce","food_drink","umak","word","produces",,"item_153"
-"voda (beverage)",,"water","food_drink","voda","word","produces",,"item_154"
-"žvaka (žvakaća guma)",,"chewing gum","food_drink","zvaka_(zvakaca_guma)","word","produces",,"item_155"
-"cipela","shoe","shoe","clothing","cipela","word","produces",,"item_156"
-"čarapa","sock","sock","clothing","carapa","word","produces",,"item_157"
-"čizme",,"boots","clothing","cizme","word","produces",,"item_158"
-"gaćice",,"underpants","clothing","gacice","word","produces",,"item_159"
-"gumb",,"button","clothing","gumb","word","produces",,"item_160"
-"haljina",,"dress","clothing","haljina","word","produces",,"item_161"
-"hlače",,"pants","clothing","hlace","word","produces",,"item_162"
-"hulahopke",,"tights","clothing","hulahopke","word","produces",,"item_163"
-"jakna",,"jacket","clothing","jakna","word","produces",,"item_164"
-"kapa",,"hat","clothing","kapa","word","produces",,"item_165"
-"kaput",,"coat","clothing","kaput","word","produces",,"item_166"
-"(kratke) hlačice",,"shorts","clothing","(kratke)_hlacice","word","produces",,"item_167"
-"lančić",,"necklace","clothing","lancic","word","produces",,"item_168"
-"majica",,"shirt","clothing","majica","word","produces",,"item_169"
-"Skafander (odijelce)",,"snowsuit","clothing","Skafander_(odijelce)","word","produces",,"item_170"
-"papuče",,"slipper","clothing","papuce","word","produces",,"item_171"
-"pelena",,"diaper","clothing","pelena","word","produces",,"item_172"
-"pidžama",,"pajamas","clothing","pidzama","word","produces",,"item_173"
-"pojas",,"belt","clothing","pojas","word","produces",,"item_174"
-"rupčić","handkerchief","handkerchief","clothing","rupcic","word","produces",,"item_175"
-"rukavice",,"gloves","clothing","rukavice","word","produces",,"item_176"
-"suknja",,"skirt","clothing","suknja","word","produces",,"item_177"
-"šal",,"scarf","clothing","sal","word","produces",,"item_178"
-"štramplice",,"children`s tights","clothing","stramplice","word","produces",,"item_179"
-"tenisice",,"sneaker","clothing","tenisice","word","produces",,"item_180"
-"traperice",,"jeans","clothing","traperice","word","produces",,"item_181"
-"trenirka",,"tracksuit","clothing","trenirka","word","produces",,"item_182"
-"zatvarač",,"zipper","clothing","zatvarac","word","produces",,"item_183"
-"brada",,"chin","body_parts","brada","word","produces",,"item_184"
-"glava",,"head","body_parts","glava","word","produces",,"item_185"
-"gležanj",,"ankle","body_parts","glezanj","word","produces",,"item_186"
-"guza",,"buttocks","body_parts","guza","word","produces",,"item_187"
-"jezik",,"tongue","body_parts","jezik","word","produces",,"item_188"
-"koljeno",,"knee","body_parts","koljeno","word","produces",,"item_189"
-"kosa",,"hair","body_parts","kosa","word","produces",,"item_190"
-"lice",,"face","body_parts","lice","word","produces",,"item_191"
-"noga",,"leg","body_parts","noga","word","produces",,"item_192"
-"nos",,"nose","body_parts","nos","word","produces",,"item_193"
-"obraz","cheek","cheek","body_parts","obraz","word","produces",,"item_194"
-"oko",,"eye","body_parts","oko","word","produces",,"item_195"
-"palac",,"thumb","body_parts","palac","word","produces",,"item_196"
-"penis","penis","penis","body_parts","penis","word","produces",,"item_197"
-"prst",,"finger","body_parts","prst","word","produces",,"item_198"
-"pupak",,"belly button","body_parts","pupak","word","produces",,"item_199"
-"rame",,"shoulder","body_parts","rame","word","produces",,"item_200"
-"ruka",,"hand","body_parts","ruka","word","produces",,"item_201"
-"stopalo",,"feet","body_parts","stopalo","word","produces",,"item_202"
-"šaka",,"fist","body_parts","saka","word","produces",,"item_203"
-"trbuh",,"tummy","body_parts","trbuh","word","produces",,"item_204"
-"uho",,"ear","body_parts","uho","word","produces",,"item_205"
-"usnice",,"lips","body_parts","usnice","word","produces",,"item_206"
-"usta",,"mouth","body_parts","usta","word","produces",,"item_207"
-"vagina",,"vagina","body_parts","vagina","word","produces",,"item_208"
-"vrat",,"neck","body_parts","vrat","word","produces",,"item_209"
-"zub",,"tooth","body_parts","zub","word","produces",,"item_210"
-"biljka",,"plant","household","biljka","word","produces",,"item_211"
-"boca",,"bottle","household","boca","word","produces",,"item_212"
-"bočica (s dudom)",,"feeding bottle","household","bocica_(s_dudom)","word","produces",,"item_213"
-"čaša",,"glass","household","casa","word","produces",,"item_214"
-"čavao",,"nail","household","cavao","word","produces",,"item_215"
-"čekić",,"hammer","household","cekic","word","produces",,"item_216"
-"češalj",,"comb","household","cesalj","word","produces",,"item_217"
-"četka",,"brush","household","cetka","word","produces",,"item_218"
-"četkica za zube","toothbrush","toothbrush","household","cetkica_za_zube","word","produces",,"item_219"
-"deka",,"blanket","household","deka","word","produces",,"item_220"
-"hodalica",,"walker","household","hodalica","word","produces",,"item_221"
-"igla",,"needle","household","igla","word","produces",,"item_222"
-"jastuk",,"pillow","household","jastuk","word","produces",,"item_223"
-"kamera",,"camera","household","kamera","word","produces",,"item_224"
-"kantica",,"bucket","household","kantica","word","produces",,"item_225"
-"kanta (za smeće)",,"trash can","household","kanta_(za_smece)","word","produces",,"item_226"
-"ključevi",,"keys","household","kljucevi","word","produces",,"item_227"
-"kolica",,"stroller","household","kolica","word","produces",,"item_228"
-"košara",,"basket","household","kosara","word","produces",,"item_229"
-"kuhača",,"ladle","household","kuhaca","word","produces",,"item_230"
-"kutija",,"box","household","kutija","word","produces",,"item_231"
-"lavor",,"washbowl","household","lavor","word","produces",,"item_232"
-"lijek",,"medicine","household","lijek","word","produces",,"item_233"
-"limenka",,"can","household","limenka","word","produces",,"item_234"
-"lonac",,"pot","household","lonac","word","produces",,"item_235"
-"lopatica (za smeće)",,"dustpan","household","lopatica_(za_smece)","word","produces",,"item_236"
-"metla",,"broom","household","metla","word","produces",,"item_237"
-"naočale",,"glasses","household","naocale","word","produces",,"item_238"
-"novac","money","money","household","novac","word","produces",,"item_239"
-"novčanik",,"wallet","household","novcanik","word","produces",,"item_240"
-"nož",,"knife","household","noz","word","produces",,"item_241"
-"papir",,"paper","household","papir","word","produces",,"item_242"
-"radio",,"radio","household","radio","word","produces",,"item_243"
-"ručnik",,"towel","household","rucnik","word","produces",,"item_244"
-"salveta",,"napkin","household","salveta","word","produces",,"item_245"
-"sapun",,"soap","household","sapun","word","produces",,"item_246"
-"sat",,"clock","household","sat","word","produces",,"item_247"
-"slika",,"picture","household","slika","word","produces",,"item_248"
-"smeće",,"trash","household","smece","word","produces",,"item_249"
-"svjetiljka",,"lamp","household","svjetiljka","word","produces",,"item_250"
-"svjetlo",,"light","household","svjetlo","word","produces",,"item_251"
-"šalica",,"cup","household","salica","word","produces",,"item_252"
-"škare",,"scissors","household","skare","word","produces",,"item_253"
-"tanjur",,"plate","household","tanjur","word","produces",,"item_254"
-"telefon",,"telephone","household","telefon","word","produces",,"item_255"
-"usisavač","vacuum","vacuum","household","usisavac","word","produces",,"item_256"
-"vilica",,"fork","household","vilica","word","produces",,"item_257"
-"zdjelica",,"bowl","household","zdjelica","word","produces",,"item_258"
-"zvono",,"bell","household","zvono","word","produces",,"item_259"
-"žlica",,"spoon","household","zlica","word","produces",,"item_260"
-"balkon",,"balcony","furniture_rooms","balkon","word","produces",,"item_261"
-"dnevna soba",,"living room","furniture_rooms","dnevna_soba","word","produces",,"item_262"
-"fotelja",,"armchair","furniture_rooms","fotelja","word","produces",,"item_263"
-"garaža",,"garage","furniture_rooms","garaza","word","produces",,"item_264"
-"hladnjak",,"refrigerator","furniture_rooms","hladnjak","word","produces",,"item_265"
-"hodnik",,"hallway","furniture_rooms","hodnik","word","produces",,"item_266"
-"kada (object)","bathtub","bathtub","furniture_rooms","kada","word","produces",,"item_267"
-"kauč",,"couch","furniture_rooms","kauc","word","produces",,"item_268"
-"klupa",,"bench","furniture_rooms","klupa","word","produces",,"item_269"
-"kolijevka",,"cot","furniture_rooms","kolijevka","word","produces",,"item_270"
-"krevet",,"bed","furniture_rooms","krevet","word","produces",,"item_271"
-"krevetić",,"crib","furniture_rooms","krevetic","word","produces",,"item_272"
-"kuhinja",,"kitchen","furniture_rooms","kuhinja","word","produces",,"item_273"
-"kupaonica",,"bathroom","furniture_rooms","kupaonica","word","produces",,"item_274"
-"ladica",,"drawer","furniture_rooms","ladica","word","produces",,"item_275"
-"ogradica (vrtić za igranje)",,"play pen","furniture_rooms","ogradica_(vrtic_za_igranje)","word","produces",,"item_276"
-"ormar",,"closet","furniture_rooms","ormar","word","produces",,"item_277"
-"pećnica",,"oven","furniture_rooms","pecnica","word","produces",,"item_278"
-"podrume",,"basement","furniture_rooms","podrume","word","produces",,"item_279"
-"prozor",,"window","furniture_rooms","prozor","word","produces",,"item_280"
-"soba",,"room","furniture_rooms","soba","word","produces",,"item_281"
-"spavaća soba",,"bedroom","furniture_rooms","spavaca_soba","word","produces",,"item_282"
-"stepenice",,"stairs","furniture_rooms","stepenice","word","produces",,"item_283"
-"stol",,"table","furniture_rooms","stol","word","produces",,"item_284"
-"stolica",,"chair","furniture_rooms","stolica","word","produces",,"item_285"
-"stroj za (pranje) rublja",,"washing machine","furniture_rooms","stroj_za_(pranje)_rublja","word","produces",,"item_286"
-"štednjak",,"stove","furniture_rooms","stednjak","word","produces",,"item_287"
-"televizor",,"TV","furniture_rooms","televizor","word","produces",,"item_288"
-"tuš",,"shower","furniture_rooms","tus","word","produces",,"item_289"
-"tuta",,"potty","furniture_rooms","tuta","word","produces",,"item_290"
-"umivaonik",,"sink","furniture_rooms","umivaonik","word","produces",,"item_291"
-"vrata",,"door","furniture_rooms","vrata","word","produces",,"item_292"
-"zahod",,"toilet","furniture_rooms","zahod","word","produces",,"item_293"
-"bazen",,"pool","outside","bazen","word","produces",,"item_294"
-"cvijeće",,"flowers","outside","cvijece","word","produces",,"item_295"
-"drvo",,"tree","outside","drvo","word","produces",,"item_296"
-"dvorište",,"backyard","outside","dvoriste","word","produces",,"item_297"
-"kamen",,"rock","outside","kamen","word","produces",,"item_298"
-"kiša",,"rain","outside","kisa","word","produces",,"item_299"
-"krov",,"roof","outside","krov","word","produces",,"item_300"
-"lopata",,"shovel","outside","lopata","word","produces",,"item_301"
-"ljestve",,"ladder","outside","ljestve","word","produces",,"item_302"
-"ljuljačka",,"swing","outside","ljuljacka","word","produces",,"item_303"
-"mjesec",,"moon","outside","mjesec","word","produces",,"item_304"
-"more",,"sea(side)","outside","more","word","produces",,"item_305"
-"nebo",,"sky","outside","nebo","word","produces",,"item_306"
-"oblak",,"cloud","outside","oblak","word","produces",,"item_307"
-"ograda",,"fence","outside","ograda","word","produces",,"item_308"
-"park",,"park","outside","park","word","produces",,"item_309"
-"pješčanik",,"sandbox","outside","pjescanik","word","produces",,"item_310"
-"pločnik",,"sidewalk","outside","plocnik","word","produces",,"item_311"
-"snijeg",,"snow","outside","snijeg","word","produces",,"item_312"
-"snjegović",,"snowman","outside","snjegovic","word","produces",,"item_313"
-"stijena",,"stone","outside","stijena","word","produces",,"item_314"
-"sunce",,"sun","outside","sunce","word","produces",,"item_315"
-"štap",,"stick","outside","stap","word","produces",,"item_316"
-"tobogan",,"toboggan","outside","tobogan","word","produces",,"item_317"
-"trava",,"grass","outside","trava","word","produces",,"item_318"
-"ulica",,"street","outside","ulica","word","produces",,"item_319"
-"vjetar",,"wind","outside","vjetar","word","produces",,"item_320"
-"voda (not beverage)",,"water","outside","voda","word","produces",,"item_321"
-"vrt",,"garden","outside","vrt","word","produces",,"item_322"
-"zastava",,"flag","outside","zastava","word","produces",,"item_323"
-"zvijezda",,"star","outside","zvijezda","word","produces",,"item_324"
-"bolnica",,"hospital","places","bolnica","word","produces",,"item_325"
-"cirkus",,"circus","places","cirkus","word","produces",,"item_326"
-"crkva",,"church","places","crkva","word","produces",,"item_327"
-"dom",,"home","places","dom","word","produces",,"item_328"
-"grad",,"downtown","places","grad","word","produces",,"item_329"
-"igralište",,"playground","places","igraliste","word","produces",,"item_330"
-"izlet",,"picnic","places","izlet","word","produces",,"item_331"
-"kino",,"cinema","places","kino","word","produces",,"item_332"
-"kuća",,"house","places","kuca","word","produces",,"item_333"
-"livada",,"meadow","places","livada","word","produces",,"item_334"
-"park",,"park","places","park","word","produces",,"item_335"
-"plaža",,"beach","places","plaza","word","produces",,"item_336"
-"posao",,"work","places","posao","word","produces",,"item_337"
-"proslava",,"party","places","proslava","word","produces",,"item_338"
-"selo",,"farm","places","selo","word","produces",,"item_339"
-"šetnja",,"walk","places","setnja","word","produces",,"item_340"
-"škola",,"school","places","skola","word","produces",,"item_341"
-"šuma",,"woods","places","suma","word","produces",,"item_342"
-"trgovina",,"store","places","trgovina","word","produces",,"item_343"
-"van(i)",,"out(side)","places","van(i)","word","produces",,"item_344"
-"vrtić",,"kindergarten","places","vrtic","word","produces",,"item_345"
-"zoološki vrt","zoo","zoo","places","zooloski_vrt","word","produces",,"item_346"
-"baka",,"grandma","people","baka","word","produces",,"item_347"
-"brat",,"brother","people","brat","word","produces",,"item_348"
-"čovjek",,"man","people","covjek","word","produces",,"item_349"
-"dijete","child","child","people","dijete","word","produces",,"item_350"
-"dimnjačar",,"chimney sweeper","people","dimnjacar","word","produces",,"item_351"
-"dječak",,"boy","people","djecak","word","produces",,"item_352"
-"djed",,"grandpa","people","djed","word","produces",,"item_353"
-"djevojčica","girl","girl","people","djevojcica","word","produces",,"item_354"
-"doktor",,"doctor","people","doktor","word","produces",,"item_355"
-"gospođa",,"lady","people","gospoda","word","produces",,"item_356"
-"ime kućnog ljubimca",,"pet`s name","people","ime_kucnog_ljubimca","word","produces",,"item_357"
-"ime osobe koja čuva dijete",,"babysitter`s name","people","ime_osobe_koja_cuva_dijete","word","produces",,"item_358"
-"klaun",,"clown","people","klaun","word","produces",,"item_359"
-"kum/kuma",,"aunt","people","kum/kuma","word","produces",,"item_360"
-"ljudi",,"people","people","ljudi","word","produces",,"item_361"
-"mama",,"mommy","people","mama","word","produces",,"item_362"
-"policajac",,"police","people","policajac","word","produces",,"item_363"
-"poštar",,"mailman","people","postar","word","produces",,"item_364"
-"prijatelj",,"friend","people","prijatelj","word","produces",,"item_365"
-"sestra",,"sister","people","sestra","word","produces",,"item_366"
-"smetlar",,"dustman","people","smetlar","word","produces",,"item_367"
-"stric",,"uncle","people","stric","word","produces",,"item_368"
-"striček",,"s","people","stricek","word","produces",,"item_369"
-"svoje ime",,"child`s own name","people","svoje_ime","word","produces",,"item_370"
-"tata",,"daddy","people","tata","word","produces",,"item_371"
-"teta",,"aunt","people","teta","word","produces",,"item_372"
-"učitelj",,"teacher","people","ucitelj","word","produces",,"item_373"
-"ujak",,"uncle","people","ujak","word","produces",,"item_374"
-"vatrogasac",,"fireman","people","vatrogasac","word","produces",,"item_375"
-"bježi!",,"run!","games_routines","bjezi!","word","produces",,"item_376"
-"bok!","hi","hi!","games_routines","bok!","word","produces",,"item_377"
-"da",,"yes","games_routines","da","word","produces",,"item_378"
-"daj ruku!",,"give me your hand!","games_routines","daj_ruku!","word","produces",,"item_379"
-"dobar dan",,"hello","games_routines","dobar_dan","word","produces",,"item_380"
-"doručak",,"breakfast","games_routines","dorucak","word","produces",,"item_381"
-"hajde!",,"come on!","games_routines","hajde!","word","produces",,"item_382"
-"halo-halo",,"call (on phone)","games_routines","halo-halo","word","produces",,"item_383"
-"Hoću tutu",,"go potty","games_routines","Hocu_tutu","word","produces",,"item_384"
-"hvala",,"thank you","games_routines","hvala","word","produces",,"item_385"
-"kakiti",,"make poop","games_routines","kakiti","word","produces",,"item_386"
-"ku-ku (routine)",,"peekaboo","games_routines","ku-ku","word","produces",,"item_387"
-"kupanje",,"bath","games_routines","kupanje","word","produces",,"item_388"
-"kupiti",,"buy","games_routines","kupiti","word","produces",,"item_389"
-"laku noć",,"night night","games_routines","laku_noc","word","produces",,"item_390"
-"lovi me",,"gonna get you!","games_routines","lovi_me","word","produces",,"item_391"
-"molim",,"plese","games_routines","molim","word","produces",,"item_392"
-"Ne!","no","no","games_routines","Ne!","word","produces",,"item_393"
-"okreni se",,"turn around","games_routines","okreni_se","word","produces",,"item_394"
-"pa-pa",,"bye","games_routines","pa-pa","word","produces",,"item_395"
-"piškiti",,"go pee-pee","games_routines","piskiti","word","produces",,"item_396"
-"psst-tiho",,"shh/shush/hush","games_routines","psst-tiho","word","produces",,"item_397"
-"ringe-raja",,"ring-around-the-rosy","games_routines","ringe-raja","word","produces",,"item_398"
-"ručak",,"lunch","games_routines","rucak","word","produces",,"item_399"
-"spavanje",,"sleep","games_routines","spavanje","word","produces",,"item_400"
-"baciti",,"throw","action_words","baciti","word","produces",,"item_401"
-"bježati",,"run","action_words","bjezati","word","produces",,"item_402"
-"bojati",,"paint","action_words","bojati","word","produces",,"item_403"
-"brisati",,"wipe","action_words","brisati","word","produces",,"item_404"
-"buditi",,"wake","action_words","buditi","word","produces",,"item_405"
-"crtati",,"draw","action_words","crtati","word","produces",,"item_406"
-"čekati",,"wait","action_words","cekati","word","produces",,"item_407"
-"čistiti",,"clean","action_words","cistiti","word","produces",,"item_408"
-"čitati",,"read","action_words","citati","word","produces",,"item_409"
-"čuti",,"hear","action_words","cuti","word","produces",,"item_410"
-"dati",,"give","action_words","dati","word","produces",,"item_411"
-"dignuti",,"pick","action_words","dignuti","word","produces",,"item_412"
-"dirati",,"touch","action_words","dirati","word","produces",,"item_413"
-"dobiti",,"get","action_words","dobiti","word","produces",,"item_414"
-"donijeti",,"bring","action_words","donijeti","word","produces",,"item_415"
-"držati",,"hold","action_words","drzati","word","produces",,"item_416"
-"gledati",,"watch","action_words","gledati","word","produces",,"item_417"
-"govoriti",,"talk","action_words","govoriti","word","produces",,"item_418"
-"gristi",,"bite","action_words","gristi","word","produces",,"item_419"
-"gurati",,"push","action_words","gurati","word","produces",,"item_420"
-"hodati",,"walk","action_words","hodati","word","produces",,"item_421"
-"hraniti",,"feed","action_words","hraniti","word","produces",,"item_422"
-"htjeti",,"want","action_words","htjeti","word","produces",,"item_423"
-"ići",,"go","action_words","ici","word","produces",,"item_424"
-"igrati se",,"play","action_words","igrati_se_","word","produces",,"item_425"
-"imati",,"have","action_words","imati","word","produces",,"item_426"
-"ispustiti",,"drop","action_words","ispustiti","word","produces",,"item_427"
-"jahati",,"ride","action_words","jahati","word","produces",,"item_428"
-"jesti",,"eat","action_words","jesti","word","produces",,"item_429"
-"kazati",,"say","action_words","kazati","word","produces",,"item_430"
-"klizati",,"slide","action_words","klizati","word","produces",,"item_431"
-"kucati",,"knock","action_words","kucati","word","produces",,"item_432"
-"kuhati",,"cook","action_words","kuhati","word","produces",,"item_433"
-"kupiti",,"buy","action_words","kupiti","word","produces",,"item_434"
-"kušati",,"taste","action_words","kusati","word","produces",,"item_435"
-"lizati",,"lick","action_words","lizati","word","produces",,"item_436"
-"loviti",,"catch","action_words","loviti","word","produces",,"item_437"
-"ljuljati se",,"swing","action_words","ljuljati_se","word","produces",,"item_438"
-"mahati",,"wave","action_words","mahati","word","produces",,"item_439"
-"maziti",,"cuddle","action_words","maziti","word","produces",,"item_440"
-"mesti",,"wipe","action_words","mesti","word","produces",,"item_441"
-"misliti",,"think","action_words","misliti","word","produces",,"item_442"
-"naći",,"find","action_words","naci","word","produces",,"item_443"
-"napraviti",,"build","action_words","napraviti","word","produces",,"item_444"
-"nositi",,"carry","action_words","nositi","word","produces",,"item_445"
-"ostati",,"stay","action_words","ostati","word","produces",,"item_446"
-"otvoriti",,"open","action_words","otvoriti","word","produces",,"item_447"
-"pasti",,"fall","action_words","pasti","word","produces",,"item_448"
-"paziti",,"look out","action_words","paziti","word","produces",,"item_449"
-"pisati",,"write","action_words","pisati","word","produces",,"item_450"
-"piti",,"drink","action_words","piti","word","produces",,"item_451"
-"pjevati",,"sing","action_words","pjevati","word","produces",,"item_452"
-"plakati",,"cry","action_words","plakati","word","produces",,"item_453"
-"plesati",,"dance","action_words","plesati","word","produces",,"item_454"
-"plivati",,"swim","action_words","plivati","word","produces",,"item_455"
-"pljeskati",,"clap","action_words","pljeskati","word","produces",,"item_456"
-"poderati",,"tear","action_words","poderati","word","produces",,"item_457"
-"pokazati",,"show","action_words","pokazati","word","produces",,"item_458"
-"pokriti",,"cover","action_words","pokriti","word","produces",,"item_459"
-"poljubiti",,"kiss","action_words","poljubiti","word","produces",,"item_460"
-"pomoći",,"help","action_words","pomoci","word","produces",,"item_461"
-"popeti",,"climb","action_words","popeti","word","produces",,"item_462"
-"popraviti",,"fix","action_words","popraviti","word","produces",,"item_463"
-"prati",,"wash","action_words","prati","word","produces",,"item_464"
-"praviti",,"make","action_words","praviti","word","produces",,"item_465"
-"praviti se",,"pretend","action_words","praviti_se","word","produces",,"item_466"
-"prestati",,"stop","action_words","prestati","word","produces",,"item_467"
-"proliti",,"spill","action_words","proliti","word","produces",,"item_468"
-"prskati",,"splash","action_words","prskati","word","produces",,"item_469"
-"puhati",,"blow","action_words","puhati","word","produces",,"item_470"
-"raditi",,"work","action_words","raditi","word","produces",,"item_471"
-"razbiti",,"break","action_words","razbiti","word","produces",,"item_472"
-"reći",,"say","action_words","reci","word","produces",,"item_473"
-"rezati",,"cut","action_words","rezati","word","produces",,"item_474"
-"sakriti",,"hide","action_words","sakriti","word","produces",,"item_475"
-"sjediti",,"sit","action_words","sjediti","word","produces",,"item_476"
-"skočiti",,"jump","action_words","skociti","word","produces",,"item_477"
-"slomiti",,"break","action_words","slomiti","word","produces",,"item_478"
-"slušati",,"listen","action_words","slusati","word","produces",,"item_479"
-"smijati se",,"smile","action_words","smijati_se","word","produces",,"item_480"
-"spavati",,"sleep","action_words","spavati","word","produces",,"item_481"
-"spuštati",,"lower","action_words","spustati","word","produces",,"item_482"
-"stajati",,"stand","action_words","stajati","word","produces",,"item_483"
-"stati",,"stop","action_words","stati","word","produces",,"item_484"
-"staviti",,"put","action_words","staviti","word","produces",,"item_485"
-"sušiti",,"dry","action_words","susiti","word","produces",,"item_486"
-"sviđati se",,"like","action_words","svidati_se_","word","produces",,"item_487"
-"škakljati",,"tickle","action_words","skakljati","word","produces",,"item_488"
-"šutnuti",,"kick","action_words","sutnuti","word","produces",,"item_489"
-"točiti",,"pour","action_words","tociti","word","produces",,"item_490"
-"trčati",,"run","action_words","trcati","word","produces",,"item_491"
-"tresti",,"shake","action_words","tresti","word","produces",,"item_492"
-"trgati",,"tear","action_words","trgati","word","produces",,"item_493"
-"tući",,"beat","action_words","tuci","word","produces",,"item_494"
-"udariti se",,"bump","action_words","udariti_se_","word","produces",,"item_495"
-"uzeti",,"take","action_words","uzeti","word","produces",,"item_496"
-"vidjeti",,"see","action_words","vidjeti","word","produces",,"item_497"
-"voljeti",,"love","action_words","voljeti","word","produces",,"item_498"
-"voziti",,"drive","action_words","voziti","word","produces",,"item_499"
-"vući",,"pull","action_words","vuci","word","produces",,"item_500"
-"zagrliti",,"hug","action_words","zagrliti","word","produces",,"item_501"
-"zatvoriti",,"close","action_words","zatvoriti","word","produces",,"item_502"
-"žuriti",,"hurry","action_words","zuriti","word","produces",,"item_503"
-"bijela",,"white","descriptive_words","bijela","word","produces",,"item_504"
-"bolestan",,"sick","descriptive_words","bolestan","word","produces",,"item_505"
-"boli",,"hurt","descriptive_words","boli","word","produces",,"item_506"
-"bolje",,"better","descriptive_words","bolje","word","produces",,"item_507"
-"brzo","fast","fast","descriptive_words","brzo","word","produces",,"item_508"
-"budan",,"awake","descriptive_words","budan","word","produces",,"item_509"
-"crn",,"black","descriptive_words","crn","word","produces",,"item_510"
-"crvena",,"red","descriptive_words","crvena","word","produces",,"item_511"
-"čist(o)",,"clean","descriptive_words","cist(o)","word","produces",,"item_512"
-"dobro",,"good","descriptive_words","dobro","word","produces",,"item_513"
-"dug(o)",,"long","descriptive_words","dug(o)","word","produces",,"item_514"
-"fino","fine","fine","descriptive_words","fino","word","produces",,"item_515"
-"fuj",,"yucky","descriptive_words","fuj","word","produces",,"item_516"
-"gladan",,"hungry","descriptive_words","gladan","word","produces",,"item_517"
-"glasno",,"loud","descriptive_words","glasno","word","produces",,"item_518"
-"gotovo",,"over","descriptive_words","gotovo","word","produces",,"item_519"
-"hladno",,"cold","descriptive_words","hladno","word","produces",,"item_520"
-"jadan",,"lame","descriptive_words","jadan","word","produces",,"item_521"
-"krasno",,"nice","descriptive_words","krasno","word","produces",,"item_522"
-"lijep(o)",,"pretty","descriptive_words","lijep(o)","word","produces",,"item_523"
-"ljut(o)",,"angry","descriptive_words","ljut(o)","word","produces",,"item_524"
-"mal(o)",,"tiny","descriptive_words","mal(o)","word","produces",,"item_525"
-"mekan(o)",,"soft","descriptive_words","mekan(o)","word","produces",,"item_526"
-"mokro","wet (description)","wet","descriptive_words","mokro","word","produces",,"item_527"
-"mrak",,"dark","descriptive_words","mrak","word","produces",,"item_528"
-"narančasta",,"orange","descriptive_words","narancasta","word","produces",,"item_529"
-"nema više",,"allgone","descriptive_words","nema_vise","word","produces",,"item_530"
-"nov(o)",,"new","descriptive_words","nov(o)","word","produces",,"item_531"
-"nježno",,"gentle","descriptive_words","njezno","word","produces",,"item_532"
-"pažljiv(o)",,"careful","descriptive_words","pazljiv(o)","word","produces",,"item_533"
-"plava",,"blue","descriptive_words","plava","word","produces",,"item_534"
-"polako",,"slow","descriptive_words","polako","word","produces",,"item_535"
-"pospan(o)",,"sleepy","descriptive_words","pospan(o)","word","produces",,"item_536"
-"potrgan(o)",,"broken","descriptive_words","potrgan(o)","word","produces",,"item_537"
-"prazno",,"empty","descriptive_words","prazno","word","produces",,"item_538"
-"prljav(o)",,"dirty","descriptive_words","prljav(o)","word","produces",,"item_539"
-"prvi",,"first","descriptive_words","prvi","word","produces",,"item_540"
-"pun(o)",,"full","descriptive_words","pun(o)","word","produces",,"item_541"
-"puše",,"windy","descriptive_words","puse","word","produces",,"item_542"
-"ružno",,"ugly","descriptive_words","ruzno","word","produces",,"item_543"
-"slomljen(o)",,"broken","descriptive_words","slomljen(o)","word","produces",,"item_544"
-"smeđe",,"brown","descriptive_words","smede","word","produces",,"item_545"
-"spava",,"sleeps","descriptive_words","spava","word","produces",,"item_546"
-"sretan",,"happy","descriptive_words","sretan","word","produces",,"item_547"
-"staro","old","old","descriptive_words","staro","word","produces",,"item_548"
-"suho","dry (description)","dry","descriptive_words","suho","word","produces",,"item_549"
-"teško",,"heavy","descriptive_words","tesko","word","produces",,"item_550"
-"tih(o)",,"quiet","descriptive_words","tih(o)","word","produces",,"item_551"
-"toplo",,"warm","descriptive_words","toplo","word","produces",,"item_552"
-"tužan",,"sad","descriptive_words","tuzan","word","produces",,"item_553"
-"tvrd(o)",,"hard","descriptive_words","tvrd(o)","word","produces",,"item_554"
-"umoran",,"tired","descriptive_words","umoran","word","produces",,"item_555"
-"uplašen(o)",,"scared","descriptive_words","uplasen(o)","word","produces",,"item_556"
-"velik(o)",,"big","descriptive_words","velik(o)","word","produces",,"item_557"
-"visok(o)",,"high","descriptive_words","visok(o)","word","produces",,"item_558"
-"vruće",,"hot","descriptive_words","vruce","word","produces",,"item_559"
-"zadnje",,"last","descriptive_words","zadnje","word","produces",,"item_560"
-"zelena",,"green","descriptive_words","zelena","word","produces",,"item_561"
-"zgodno",,"cute","descriptive_words","zgodno","word","produces",,"item_562"
-"zima",,"cold","descriptive_words","zima","word","produces",,"item_563"
-"zločesto","naughty","naughty","descriptive_words","zlocesto","word","produces",,"item_564"
-"žuta",,"yellow","descriptive_words","zuta","word","produces",,"item_565"
-"žedan",,"thirsty","descriptive_words","zedan","word","produces",,"item_566"
-"dan",,"day","time_words","dan","word","produces",,"item_567"
-"danas",,"today","time_words","danas","word","produces",,"item_568"
-"jučer",,"yesterday","time_words","jucer","word","produces",,"item_569"
-"jutro",,"morning","time_words","jutro","word","produces",,"item_570"
-"kasnije",,"later","time_words","kasnije","word","produces",,"item_571"
-"noć",,"night","time_words","noc","word","produces",,"item_572"
-"poslije",,"after","time_words","poslije","word","produces",,"item_573"
-"prije",,"before","time_words","prije","word","produces",,"item_574"
-"sada","now","now","time_words","sada","word","produces",,"item_575"
-"sati",,"hours","time_words","sati","word","produces",,"item_576"
-"sutra",,"tomorrow","time_words","sutra","word","produces",,"item_577"
-"večeras","tonight","tonight","time_words","veceras","word","produces",,"item_578"
-"ja",,"I","pronouns","ja","word","produces",,"item_579"
-"mene/me","me","me","pronouns","mene/me","word","produces",,"item_580"
-"meni/mi","me","to me","pronouns","meni/mi","word","produces",,"item_581"
-"mi",,"we","pronouns","mi","word","produces",,"item_582"
-"moj",,"my","pronouns","moj","word","produces",,"item_583"
-"nama",,"to us","pronouns","nama","word","produces",,"item_584"
-"nas",,"us","pronouns","nas","word","produces",,"item_585"
-"naš",,"our","pronouns","nas","word","produces",,"item_586"
-"nje/je",,"her","pronouns","nje/je","word","produces",,"item_587"
-"njega/ga",,"him","pronouns","njega/ga","word","produces",,"item_588"
-"njegov",,"his","pronouns","njegov","word","produces",,"item_589"
-"njemu/mu","him","to him","pronouns","njemu/mu","word","produces",,"item_590"
-"njezin",,"hers","pronouns","njezin","word","produces",,"item_591"
-"njih/ih",,"them","pronouns","njih/ih","word","produces",,"item_592"
-"njihov",,"their","pronouns","njihov","word","produces",,"item_593"
-"njima/im",,"to them","pronouns","njima/im","word","produces",,"item_594"
-"njoj/joj",,"to her","pronouns","njoj/joj","word","produces",,"item_595"
-"nju/ju/je",,"her","pronouns","nju/ju/je","word","produces",,"item_596"
-"on",,"he","pronouns","on","word","produces",,"item_597"
-"ona",,"she","pronouns","ona","word","produces",,"item_598"
-"one",,"they (female)","pronouns","one","word","produces",,"item_599"
-"oni",,"they","pronouns","oni","word","produces",,"item_600"
-"ono",,"it","pronouns","ono","word","produces",,"item_601"
-"ono/onaj/ona",,"that","pronouns","ono/onaj/ona","word","produces",,"item_602"
-"ovo/ovaj/ova","this","this","pronouns","ovo/ovaj/ova","word","produces",,"item_603"
-"ovi/ove",,"these","pronouns","ovi/ove","word","produces",,"item_604"
-"sebe/se",,"myself","pronouns","sebe/se","word","produces",,"item_605"
-"svoj",,"her/his own","pronouns","svoj","word","produces",,"item_606"
-"to/taj/ta",,"this","pronouns","to/taj/ta","word","produces",,"item_607"
-"tebe/te",,"you","pronouns","tebe/te","word","produces",,"item_608"
-"tebi/ti",,"to you","pronouns","tebi/ti","word","produces",,"item_609"
-"ti",,"you","pronouns","ti","word","produces",,"item_610"
-"tvoj",,"your","pronouns","tvoj","word","produces",,"item_611"
-"gdje",,"where","question_words","gdje","word","produces",,"item_612"
-"kada (question)","when (question)","when","question_words","kada","word","produces",,"item_613"
-"kako",,"how","question_words","kako","word","produces",,"item_614"
-"koji",,"which","question_words","koji","word","produces",,"item_615"
-"što",,"what","question_words","sto","word","produces",,"item_616"
-"tko",,"who","question_words","tko","word","produces",,"item_617"
-"zašto",,"why","question_words","zasto","word","produces",,"item_618"
-"blizu",,"close","locations","blizu","word","produces",,"item_619"
-"dolje",,"down","locations","dolje","word","produces",,"item_620"
-"gore",,"up","locations","gore","word","produces",,"item_621"
-"ispod",,"under","locations","ispod","word","produces",,"item_622"
-"ispred",,"in front of","locations","ispred","word","produces",,"item_623"
-"iza",,"behind","locations","iza","word","produces",,"item_624"
-"iznad",,"above","locations","iznad","word","produces",,"item_625"
-"na",,"on","locations","na","word","produces",,"item_626"
-"nazad",,"back","locations","nazad","word","produces",,"item_627"
-"negdje",,"somewhere","locations","negdje","word","produces",,"item_628"
-"nigdje",,"nowhere","locations","nigdje","word","produces",,"item_629"
-"o","about","about","locations","o","word","produces",,"item_630"
-"od",,"from","locations","od","word","produces",,"item_631"
-"oko",,"around","locations","oko","word","produces",,"item_632"
-"otraga",,"behind","locations","otraga","word","produces",,"item_633"
-"ovamo",,"here","locations","ovamo","word","produces",,"item_634"
-"ovdje",,"therein","locations","ovdje","word","produces",,"item_635"
-"pored",,"beside","locations","pored","word","produces",,"item_636"
-"preko",,"over","locations","preko","word","produces",,"item_637"
-"s",,"with","locations","s","word","produces",,"item_638"
-"tamo",,"there","locations","tamo","word","produces",,"item_639"
-"tu",,"here","locations","tu","word","produces",,"item_640"
-"unutra/u","in","in","locations","unutra/u","word","produces",,"item_641"
-"uz",,"by","locations","uz","word","produces",,"item_642"
-"vani",,"outside","locations","vani","word","produces",,"item_643"
-"za",,"for","locations","za","word","produces",,"item_644"
-"bilo koji",,"any","quantifiers","bilo_koji","word","produces",,"item_645"
-"dosta",,"enough","quantifiers","dosta","word","produces",,"item_646"
-"drugi/druga","another","another","quantifiers","drugi/druga","word","produces",,"item_647"
-"isti/ista",,"same","quantifiers","isti/ista","word","produces",,"item_648"
-"jako",,"very","quantifiers","jako","word","produces",,"item_649"
-"još",,"more","quantifiers","jos","word","produces",,"item_650"
-"malo",,"few","quantifiers","malo","word","produces",,"item_651"
-"mnogo",,"many/much/a lot","quantifiers","mnogo","word","produces",,"item_652"
-"neki/neka",,"some","quantifiers","neki/neka","word","produces",,"item_653"
-"nešto",,"something","quantifiers","nesto","word","produces",,"item_654"
-"ništa",,"nothing","quantifiers","nista","word","produces",,"item_655"
-"opet",,"again","quantifiers","opet","word","produces",,"item_656"
-"previše",,"too much","quantifiers","previse","word","produces",,"item_657"
-"puno",,"a lot","quantifiers","puno","word","produces",,"item_658"
-"svaki/svaka",,"each/every","quantifiers","svaki/svaka","word","produces",,"item_659"
-"sve/svi","all","all","quantifiers","sve/svi","word","produces",,"item_660"
-"više",,"more","quantifiers","vise","word","produces",,"item_661"
-"bi(h)",,"would","helping_verbs","bi(h)","word","produces",,"item_662"
-"bila",,"was","helping_verbs","bila","word","produces",,"item_663"
-"bile",,"were (female)","helping_verbs","bile","word","produces",,"item_664"
-"bili",,"were","helping_verbs","bili","word","produces",,"item_665"
-"bilo",,"(it) was","helping_verbs","bilo","word","produces",,"item_666"
-"bio","was","(he) was","helping_verbs","bio","word","produces",,"item_667"
-"biti",,"to be","helping_verbs","biti","word","produces",,"item_668"
-"bude",,"(he) is gonna/going to","helping_verbs","bude","word","produces",,"item_669"
-"budem",,"(I) am gonna/going to","helping_verbs","budem","word","produces",,"item_670"
-"budemo",,"(we) are gonna/going to","helping_verbs","budemo","word","produces",,"item_671"
-"budeš",,"(you) are gonna/going to","helping_verbs","budes","word","produces",,"item_672"
-"budi",,"be!","helping_verbs","budi","word","produces",,"item_673"
-"budu",,"(they) are gonna/going to","helping_verbs","budu","word","produces",,"item_674"
-"će",,"(he) will be","helping_verbs","ce","word","produces",,"item_675"
-"ćemo",,"(we) will be","helping_verbs","cemo","word","produces",,"item_676"
-"ćeš",,"(you) will be","helping_verbs","ces","word","produces",,"item_677"
-"ću",,"(I) will","helping_verbs","cu","word","produces",,"item_678"
-"hoće",,"(he/she) wanna/wants to","helping_verbs","hoce","word","produces",,"item_679"
-"hoćemo",,"(we) wanna/want to","helping_verbs","hocemo","word","produces",,"item_680"
-"hoćeš",,"(you) wanna/want to","helping_verbs","hoces","word","produces",,"item_681"
-"hoću",,"(I) wanna/want to","helping_verbs","hocu","word","produces",,"item_682"
-"je",,"is","helping_verbs","je","word","produces",,"item_683"
-"jesam",,"am","helping_verbs","jesam","word","produces",,"item_684"
-"jesi",,"(you) are","helping_verbs","jesi","word","produces",,"item_685"
-"jesmo",,"(we) are","helping_verbs","jesmo","word","produces",,"item_686"
-"jesu",,"(they) are","helping_verbs","jesu","word","produces",,"item_687"
-"mogao",,"(he) could","helping_verbs","mogao","word","produces",,"item_688"
-"mogla",,"(she) could","helping_verbs","mogla","word","produces",,"item_689"
-"mogle",,"(they/females) could","helping_verbs","mogle","word","produces",,"item_690"
-"mogli",,"(they) could","helping_verbs","mogli","word","produces",,"item_691"
-"mogu (oni)",,"(they) can","helping_verbs","mogu_(oni)","word","produces",,"item_692"
-"mora",,"(he/she) must","helping_verbs","mora","word","produces",,"item_693"
-"može",,"(he/she) can","helping_verbs","moze","word","produces",,"item_694"
-"možemo",,"(we) can","helping_verbs","mozemo","word","produces",,"item_695"
-"možeš",,"(you) can","helping_verbs","mozes","word","produces",,"item_696"
-"neće",,"(he/she) doesn`t want","helping_verbs","nece","word","produces",,"item_697"
-"nećemo",,"(we) don`t want","helping_verbs","necemo","word","produces",,"item_698"
-"nećeš",,"(you) don`t want","helping_verbs","neces","word","produces",,"item_699"
-"neću",,"(I) don`t want","helping_verbs","necu","word","produces",,"item_700"
-"nije",,"(he/she) is not","helping_verbs","nije","word","produces",,"item_701"
-"nisam",,"(I) am not","helping_verbs","nisam","word","produces",,"item_702"
-"nisi",,"(you) are not","helping_verbs","nisi","word","produces",,"item_703"
-"nismo",,"(we) are not","helping_verbs","nismo","word","produces",,"item_704"
-"nisu",,"(they) are not","helping_verbs","nisu","word","produces",,"item_705"
-"sam",,"am","helping_verbs","sam","word","produces",,"item_706"
-"si",,"(you) are","helping_verbs","si","word","produces",,"item_707"
-"may",,"(I) may","helping_verbs","may","word","produces",,"item_708"
-"smo",,"(we) are","helping_verbs","smo","word","produces",,"item_709"
-"su",,"(they) are","helping_verbs","su","word","produces",,"item_710"
-"treba",,"should","helping_verbs","treba","word","produces",,"item_711"
-"ako",,"if","connecting_words","ako","word","produces",,"item_712"
-"ali",,"but","connecting_words","ali","word","produces",,"item_713"
-"i",,"and","connecting_words","i","word","produces",,"item_714"
-"jer",,"because","connecting_words","jer","word","produces",,"item_715"
-"onda",,"then","connecting_words","onda","word","produces",,"item_716"
-"tako",,"so","connecting_words","tako","word","produces",,"item_717"
+definition,uni_lemma,gloss,category,item,type,choices,complexity_category,itemID,new_lemma
+brr-brr,vroom,vroom,sounds,brr-brr,word,produces,,item_1,vroom
+Ga-ga,baa baa,baa baa,sounds,Ga-ga,word,produces,,item_2,
+grr,grrr,grr,sounds,grr,word,produces,,item_3,grrr
+jao,ouch,ouch,sounds,jao,word,produces,,item_4,ouch
+ku-ku (sound),peekaboo,choo choo,sounds,ku-ku,word,produces,,item_5,peekaboo
+kukurikuuu,cockadoodledoo,cockadoodledoo,sounds,kukurikuuu,word,produces,,item_6,
+kva-kva,quack quack,quack quack,sounds,kva-kva,word,produces,,item_7,quack quack
+mijau,meow,meow,sounds,mijau,word,produces,,item_8,meow
+muu,moo,moo,sounds,muu,word,produces,,item_9,moo
+njam-njam,yum yum,yum yum,sounds,njam-njam,word,produces,,item_10,yum yum
+tu-tu,beep beep,choo-choo,sounds,tu-tu,word,produces,,item_11,beep beep
+vau-vau,woof woof,woof woof,sounds,vau-vau,word,produces,,item_12,woof woof
+buba,bug,bug,animals,buba,word,produces,,item_13,bug
+guska,goose,goose,animals,guska,word,produces,,item_14,goose
+jelen,,deer,animals,jelen,word,produces,,item_15,
+koka,hen,hen,animals,koka,word,produces,,item_16,hen
+konj,horse,horse,animals,konj,word,produces,,item_17,horse
+kornjača,,turtle,animals,kornjaca,word,produces,,item_18,
+koza,goat,goat,animals,koza,word,produces,,item_19,goat
+krava,cow,cow,animals,krava,word,produces,,item_20,cow
+krokodil,,crocodile,animals,krokodil,word,produces,,item_21,
+lane,deer,fawn,animals,lane,word,produces,,item_22,deer
+lav,lion,lion,animals,lav,word,produces,,item_23,lion
+leptir,butterfly,butterfly,animals,leptir,word,produces,,item_24,butterfly
+lisica,fox,fox,animals,lisica,word,produces,,item_25,fox
+mačka,cat,cat,animals,macka,word,produces,,item_26,cat
+magarac,donkey,donkey,animals,magarac,word,produces,,item_27,donkey
+majmun,monkey,monkey,animals,majmun,word,produces,,item_28,monkey
+medo (igračka),teddybear,teddybear,animals,medo_(igracka),word,produces,,item_29,
+medvjed (životinja),,bear,animals,medvjed_(zivotinja),word,produces,,item_30,
+miš,mouse,mouse,animals,mis,word,produces,,item_31,mouse
+mrav,,ant,animals,mrav,word,produces,,item_32,
+ovca,sheep,sheep,animals,ovca,word,produces,,item_33,sheep
+pas,dog,dog,animals,pas,word,produces,,item_34,dog
+patka,duck,duck,animals,patka,word,produces,,item_35,duck
+pčela,bee,bee,animals,pcela,word,produces,,item_36,bee
+pijetao,rooster,rooster,animals,pijetao,word,produces,,item_37,rooster
+pile,chicken (animal),chicken,animals,pile,word,produces,,item_38,chicken (animal)
+pingvin,,penguin,animals,pingvin,word,produces,,item_39,
+prase,pig,pig,animals,prase,word,produces,,item_40,pig
+ptica,bird,bird,animals,ptica,word,produces,,item_41,bird
+purica,turkey,turkey,animals,purica,word,produces,,item_42,turkey
+riba (animal),fish (animal),fish,animals,riba,word,produces,,item_43,fish (animal)
+slon,elephant,elephant,animals,slon,word,produces,,item_44,elephant
+sova,owl,owl,animals,sova,word,produces,,item_45,owl
+srna,,doe,animals,srna,word,produces,,item_46,
+tigar,tiger,tiger,animals,tigar,word,produces,,item_47,tiger
+vjeverica,squirrel,squirrel,animals,vjeverica,word,produces,,item_48,squirrel
+vrabac,sparrow,sparrow,animals,vrabac,word,produces,,item_49,sparrow
+vuk,wolf,wolf,animals,vuk,word,produces,,item_50,wolf
+zebra,,zebra,animals,zebra,word,produces,,item_51,
+zeko,bunny,bunny,animals,zeko,word,produces,,item_52,bunny
+žaba,frog,frog,animals,zaba,word,produces,,item_53,frog
+žirafa,,giraffe,animals,zirafa,word,produces,,item_54,
+životinja,animal,animal,animals,zivotinja,word,produces,,item_55,animal
+auto,car,car,vehicles,auto,word,produces,,item_56,car
+autobus,bus,bus,vehicles,autobus,word,produces,,item_57,bus
+avion,airplane,airplane,vehicles,avion,word,produces,,item_58,airplane
+bicikl,bicycle,bicycle,vehicles,bicikl,word,produces,,item_59,bicycle
+brod,boat,boat,vehicles,brod,word,produces,,item_60,boat
+helikopter,,helicopter,vehicles,helikopter,word,produces,,item_61,
+kamion,truck,truck,vehicles,kamion,word,produces,,item_62,truck
+kolica,stroller,stroller,vehicles,kolica,word,produces,,item_63,
+motor,motorcycle,motorcycle,vehicles,motor,word,produces,,item_64,motorcycle
+sanjke,,sled,vehicles,sanjke,word,produces,,item_65,
+traktor,tractor,tractor,vehicles,traktor,word,produces,,item_66,
+tramvaj,tram,tram,vehicles,tramvaj,word,produces,,item_67,tram
+vatrogasci,,firetruck,vehicles,vatrogasci,word,produces,,item_68,
+vlak,train,train,vehicles,vlak,word,produces,,item_69,train
+balon,balloon,balloon,toys,balon,word,produces,,item_70,balloon
+bojica,,crayon,toys,bojica,word,produces,,item_71,
+flomaster,,felt pen,toys,flomaster,word,produces,,item_72,
+igra,,game,toys,igra,word,produces,,item_73,
+igračka,toy (object),toy,toys,igracka,word,produces,,item_74,toy (object)
+knjiga,book,book,toys,knjiga,word,produces,,item_75,book
+kocka,block,block,toys,kocka,word,produces,,item_76,block
+kreda,,chalk,toys,kreda,word,produces,,item_77,
+lopatica,shovel,sand shovel,toys,lopatica,word,produces,,item_78,shovel
+lopta,ball,ball,toys,lopta,word,produces,,item_79,ball
+lutka,doll,doll,toys,lutka,word,produces,,item_80,doll
+ljepilo,,glue,toys,ljepilo,word,produces,,item_81,
+olovka,pen/pencil,pencil,toys,olovka,word,produces,,item_82,pen/pencil
+pikule,,marbles,toys,pikule,word,produces,,item_83,
+plastelin,,play dogh,toys,plastelin,word,produces,,item_84,
+poklon,,present,toys,poklon,word,produces,,item_85,
+slagalice (puzzle),,puzzle,toys,slagalice_(puzzle),word,produces,,item_86,
+slikovnica,,picture book,toys,slikovnica,word,produces,,item_87,
+banana,banana,banana,food_drink,banana,word,produces,,item_88,banana
+blitva,,chard,food_drink,blitva,word,produces,,item_89,
+bombon,candy,candy,food_drink,bombon,word,produces,,item_90,candy
+bundeva,,pumpkin,food_drink,bundeva,word,produces,,item_91,
+čaj,tea,tea,food_drink,caj,word,produces,,item_92,tea
+čips,,potato chip,food_drink,cips,word,produces,,item_93,
+čokolada,chocolate,chocolate,food_drink,cokolada,word,produces,,item_94,chocolate
+čokolino,cheerios,cokolino (Croatian children food),food_drink,cokolino,word,produces,,item_95,cheerios
+grah,,beans,food_drink,grah,word,produces,,item_96,
+grašak,peas,peas,food_drink,grasak,word,produces,,item_97,peas
+griz,semolina,grits,food_drink,griz,word,produces,,item_98,semolina
+grožđe,,grapes,food_drink,grozde,word,produces,,item_99,
+grožđica,,raisin,food_drink,grozdica,word,produces,,item_100,
+hamburger,,hamburger,food_drink,hamburger,word,produces,,item_101,
+hrana,food,food,food_drink,hrana,word,produces,,item_102,food
+hrenovke,,frankfurters,food_drink,hrenovke,word,produces,,item_103,
+jabuka,apple,apple,food_drink,jabuka,word,produces,,item_104,apple
+jagoda,,strawberry,food_drink,jagoda,word,produces,,item_105,
+jaje,egg,egg,food_drink,jaje,word,produces,,item_106,egg
+jogurt,yogurt,yogurt,food_drink,jogurt,word,produces,,item_107,yogurt
+juha,soup,soup,food_drink,juha,word,produces,,item_108,soup
+kašica,cereal,gruel,food_drink,kasica,word,produces,,item_109,cereal
+kava,,coffee,food_drink,kava,word,produces,,item_110,
+keks,cookie,cookie,food_drink,keks,word,produces,,item_111,cookie
+kelj,,savoy cabbage,food_drink,kelj,word,produces,,item_112,
+kobasica,,sausage,food_drink,kobasica,word,produces,,item_113,
+koka (piletina),chicken (food),chicken,food_drink,koka_(piletina),word,produces,,item_114,
+kokice,,popcorn,food_drink,kokice,word,produces,,item_115,
+kolač,cake,cake,food_drink,kolac,word,produces,,item_116,cake
+krafna,,donut,food_drink,krafna,word,produces,,item_117,
+krastavac,,cucumber,food_drink,krastavac,word,produces,,item_118,
+kruh,bread,bread,food_drink,kruh,word,produces,,item_119,bread
+krumpir,potato,potato,food_drink,krumpir,word,produces,,item_120,potato
+kruška,,pear,food_drink,kruska,word,produces,,item_121,
+kukuruz,,corn,food_drink,kukuruz,word,produces,,item_122,
+lizalica,,lollipop,food_drink,lizalica,word,produces,,item_123,
+mahune,,green beans,food_drink,mahune,word,produces,,item_124,
+marmelada,,jam,food_drink,marmelada,word,produces,,item_125,
+maslac,,butter,food_drink,maslac,word,produces,,item_126,
+med,,honey,food_drink,med,word,produces,,item_127,
+meso,meat,meat,food_drink,meso,word,produces,,item_128,meat
+mlijeko,milk,milk,food_drink,mlijeko,word,produces,,item_129,milk
+mrkve,carrots,carrots,food_drink,mrkve,word,produces,,item_130,
+naranča,orange (food),orange,food_drink,naranca,word,produces,,item_131,orange (food)
+njoke,,gnocchi,food_drink,njoke,word,produces,,item_132,
+orasi,,walnuts,food_drink,orasi,word,produces,,item_133,
+palačinka,,pancake,food_drink,palacinka,word,produces,,item_134,
+pecivo,,rolls,food_drink,pecivo,word,produces,,item_135,
+piće,,drink,food_drink,pice,word,produces,,item_136,
+pizza,,pizza,food_drink,pizza,word,produces,,item_137,
+pomfrit,,french fries,food_drink,pomfrit,word,produces,,item_138,
+puding,,pudding,food_drink,puding,word,produces,,item_139,
+riba (food),fish (food),fish,food_drink,riba,word,produces,,item_140,fish (food)
+salama,,salami,food_drink,salama,word,produces,,item_141,
+salata,,lettuce,food_drink,salata,word,produces,,item_142,
+sendvič,,sandwich,food_drink,sendvic,word,produces,,item_143,
+sir,cheese,cheese,food_drink,sir,word,produces,,item_144,cheese
+sladole,ice cream,ice cream,food_drink,sladole,word,produces,,item_145,
+sok,juice,juice,food_drink,sok,word,produces,,item_146,juice
+sol,,salt,food_drink,sol,word,produces,,item_147,
+šećer,,sugar,food_drink,secer,word,produces,,item_148,
+špageti,,spaghetti,food_drink,spageti,word,produces,,item_149,
+špinat,spinach,spinach,food_drink,spinat,word,produces,,item_150,spinach
+tijesto,pasta,pasta,food_drink,tijesto,word,produces,,item_151,pasta
+trešnja,,cherry,food_drink,tresnja,word,produces,,item_152,
+umak,,sauce,food_drink,umak,word,produces,,item_153,
+voda (beverage),water (beverage),water,food_drink,voda,word,produces,,item_154,water (beverage)
+žvaka (žvakaća guma),,chewing gum,food_drink,zvaka_(zvakaca_guma),word,produces,,item_155,
+cipela,shoe,shoe,clothing,cipela,word,produces,,item_156,
+čarapa,sock,sock,clothing,carapa,word,produces,,item_157,
+čizme,boots,boots,clothing,cizme,word,produces,,item_158,boots
+gaćice,underpants,underpants,clothing,gacice,word,produces,,item_159,underpants
+gumb,button,button,clothing,gumb,word,produces,,item_160,button
+haljina,dress (object),dress,clothing,haljina,word,produces,,item_161,dress (object)
+hlače,pants,pants,clothing,hlace,word,produces,,item_162,pants
+hulahopke,,tights,clothing,hulahopke,word,produces,,item_163,
+jakna,jacket,jacket,clothing,jakna,word,produces,,item_164,jacket
+kapa,hat,hat,clothing,kapa,word,produces,,item_165,hat
+kaput,coat,coat,clothing,kaput,word,produces,,item_166,coat
+(kratke) hlačice,,shorts,clothing,(kratke)_hlacice,word,produces,,item_167,
+lančić,,necklace,clothing,lancic,word,produces,,item_168,
+majica,t-shirt,shirt,clothing,majica,word,produces,,item_169,t-shirt
+Skafander (odijelce),,snowsuit,clothing,Skafander_(odijelce),word,produces,,item_170,
+papuče,slipper,slipper,clothing,papuce,word,produces,,item_171,slipper
+pelena,diaper,diaper,clothing,pelena,word,produces,,item_172,diaper
+pidžama,pajamas,pajamas,clothing,pidzama,word,produces,,item_173,pajamas
+pojas,,belt,clothing,pojas,word,produces,,item_174,
+rupčić,handkerchief,handkerchief,clothing,rupcic,word,produces,,item_175,
+rukavice,gloves,gloves,clothing,rukavice,word,produces,,item_176,gloves
+suknja,skirt,skirt,clothing,suknja,word,produces,,item_177,skirt
+šal,scarf,scarf,clothing,sal,word,produces,,item_178,scarf
+štramplice,,children`s tights,clothing,stramplice,word,produces,,item_179,
+tenisice,,sneaker,clothing,tenisice,word,produces,,item_180,
+traperice,,jeans,clothing,traperice,word,produces,,item_181,
+trenirka,,tracksuit,clothing,trenirka,word,produces,,item_182,
+zatvarač,zipper,zipper,clothing,zatvarac,word,produces,,item_183,zipper
+brada,,chin,body_parts,brada,word,produces,,item_184,
+glava,head,head,body_parts,glava,word,produces,,item_185,head
+gležanj,,ankle,body_parts,glezanj,word,produces,,item_186,
+guza,butt,buttocks,body_parts,guza,word,produces,,item_187,butt
+jezik,tongue,tongue,body_parts,jezik,word,produces,,item_188,tongue
+koljeno,knee,knee,body_parts,koljeno,word,produces,,item_189,knee
+kosa,hair,hair,body_parts,kosa,word,produces,,item_190,hair
+lice,face,face,body_parts,lice,word,produces,,item_191,face
+noga,leg,leg,body_parts,noga,word,produces,,item_192,leg
+nos,nose,nose,body_parts,nos,word,produces,,item_193,nose
+obraz,cheek,cheek,body_parts,obraz,word,produces,,item_194,
+oko,eye,eye,body_parts,oko,word,produces,,item_195,eye
+palac,thumb,thumb,body_parts,palac,word,produces,,item_196,thumb
+penis,penis,penis,body_parts,penis,word,produces,,item_197,
+prst,finger,finger,body_parts,prst,word,produces,,item_198,finger
+pupak,belly button,belly button,body_parts,pupak,word,produces,,item_199,belly button
+rame,,shoulder,body_parts,rame,word,produces,,item_200,
+ruka,arm,hand,body_parts,ruka,word,produces,,item_201,arm
+stopalo,,feet,body_parts,stopalo,word,produces,,item_202,
+šaka,,fist,body_parts,saka,word,produces,,item_203,
+trbuh,tummy,tummy,body_parts,trbuh,word,produces,,item_204,tummy
+uho,ear,ear,body_parts,uho,word,produces,,item_205,ear
+usnice,,lips,body_parts,usnice,word,produces,,item_206,
+usta,mouth,mouth,body_parts,usta,word,produces,,item_207,mouth
+vagina,,vagina,body_parts,vagina,word,produces,,item_208,
+vrat,,neck,body_parts,vrat,word,produces,,item_209,
+zub,tooth,tooth,body_parts,zub,word,produces,,item_210,tooth
+biljka,plant,plant,household,biljka,word,produces,,item_211,plant
+boca,bottle,bottle,household,boca,word,produces,,item_212,bottle
+bočica (s dudom),pacifier,feeding bottle,household,bocica_(s_dudom),word,produces,,item_213,pacifier
+čaša,glass,glass,household,casa,word,produces,,item_214,glass
+čavao,,nail,household,cavao,word,produces,,item_215,
+čekić,hammer,hammer,household,cekic,word,produces,,item_216,hammer
+češalj,comb (object),comb,household,cesalj,word,produces,,item_217,comb (object)
+četka,brush (object),brush,household,cetka,word,produces,,item_218,brush (object)
+četkica za zube,toothbrush,toothbrush,household,cetkica_za_zube,word,produces,,item_219,
+deka,blanket,blanket,household,deka,word,produces,,item_220,blanket
+hodalica,,walker,household,hodalica,word,produces,,item_221,
+igla,,needle,household,igla,word,produces,,item_222,
+jastuk,pillow,pillow,household,jastuk,word,produces,,item_223,pillow
+kamera,,camera,household,kamera,word,produces,,item_224,
+kantica,,bucket,household,kantica,word,produces,,item_225,
+kanta (za smeće),,trash can,household,kanta_(za_smece),word,produces,,item_226,
+ključevi,keys,keys,household,kljucevi,word,produces,,item_227,keys
+kolica,,stroller,household,kolica,word,produces,,item_228,
+košara,,basket,household,kosara,word,produces,,item_229,
+kuhača,,ladle,household,kuhaca,word,produces,,item_230,
+kutija,box,box,household,kutija,word,produces,,item_231,box
+lavor,,washbowl,household,lavor,word,produces,,item_232,
+lijek,medicine,medicine,household,lijek,word,produces,,item_233,medicine
+limenka,,can,household,limenka,word,produces,,item_234,
+lonac,,pot,household,lonac,word,produces,,item_235,
+lopatica (za smeće),,dustpan,household,lopatica_(za_smece),word,produces,,item_236,
+metla,broom,broom,household,metla,word,produces,,item_237,broom
+naočale,glasses,glasses,household,naocale,word,produces,,item_238,glasses
+novac,money,money,household,novac,word,produces,,item_239,
+novčanik,purse,wallet,household,novcanik,word,produces,,item_240,purse
+nož,knife,knife,household,noz,word,produces,,item_241,knife
+papir,paper,paper,household,papir,word,produces,,item_242,paper
+radio,radio,radio,household,radio,word,produces,,item_243,radio
+ručnik,towel,towel,household,rucnik,word,produces,,item_244,towel
+salveta,,napkin,household,salveta,word,produces,,item_245,
+sapun,soap,soap,household,sapun,word,produces,,item_246,soap
+sat,clock,clock,household,sat,word,produces,,item_247,clock
+slika,picture,picture,household,slika,word,produces,,item_248,picture
+smeće,trash,trash,household,smece,word,produces,,item_249,trash
+svjetiljka,lamp,lamp,household,svjetiljka,word,produces,,item_250,lamp
+svjetlo,light,light,household,svjetlo,word,produces,,item_251,light
+šalica,cup,cup,household,salica,word,produces,,item_252,cup
+škare,scissors,scissors,household,skare,word,produces,,item_253,scissors
+tanjur,plate,plate,household,tanjur,word,produces,,item_254,plate
+telefon,telephone,telephone,household,telefon,word,produces,,item_255,telephone
+usisavač,vacuum,vacuum,household,usisavac,word,produces,,item_256,
+vilica,fork,fork,household,vilica,word,produces,,item_257,fork
+zdjelica,bowl,bowl,household,zdjelica,word,produces,,item_258,bowl
+zvono,bell,bell,household,zvono,word,produces,,item_259,bell
+žlica,spoon,spoon,household,zlica,word,produces,,item_260,spoon
+balkon,,balcony,furniture_rooms,balkon,word,produces,,item_261,
+dnevna soba,living room,living room,furniture_rooms,dnevna_soba,word,produces,,item_262,living room
+fotelja,armchair,armchair,furniture_rooms,fotelja,word,produces,,item_263,armchair
+garaža,garage,garage,furniture_rooms,garaza,word,produces,,item_264,garage
+hladnjak,refrigerator,refrigerator,furniture_rooms,hladnjak,word,produces,,item_265,refrigerator
+hodnik,,hallway,furniture_rooms,hodnik,word,produces,,item_266,
+kada (object),bathtub,bathtub,furniture_rooms,kada,word,produces,,item_267,
+kauč,couch,couch,furniture_rooms,kauc,word,produces,,item_268,couch
+klupa,,bench,furniture_rooms,klupa,word,produces,,item_269,
+kolijevka,cradle,cot,furniture_rooms,kolijevka,word,produces,,item_270,cradle
+krevet,bed,bed,furniture_rooms,krevet,word,produces,,item_271,bed
+krevetić,crib,crib,furniture_rooms,krevetic,word,produces,,item_272,crib
+kuhinja,kitchen,kitchen,furniture_rooms,kuhinja,word,produces,,item_273,kitchen
+kupaonica,bathroom,bathroom,furniture_rooms,kupaonica,word,produces,,item_274,bathroom
+ladica,drawer,drawer,furniture_rooms,ladica,word,produces,,item_275,drawer
+ogradica (vrtić za igranje),play pen,play pen,furniture_rooms,ogradica_(vrtic_za_igranje),word,produces,,item_276,play pen
+ormar,wardrobe,closet,furniture_rooms,ormar,word,produces,,item_277,wardrobe
+pećnica,oven,oven,furniture_rooms,pecnica,word,produces,,item_278,oven
+podrume,,basement,furniture_rooms,podrume,word,produces,,item_279,
+prozor,window,window,furniture_rooms,prozor,word,produces,,item_280,window
+soba,,room,furniture_rooms,soba,word,produces,,item_281,
+spavaća soba,,bedroom,furniture_rooms,spavaca_soba,word,produces,,item_282,
+stepenice,stairs,stairs,furniture_rooms,stepenice,word,produces,,item_283,stairs
+stol,table,table,furniture_rooms,stol,word,produces,,item_284,table
+stolica,chair,chair,furniture_rooms,stolica,word,produces,,item_285,chair
+stroj za (pranje) rublja,,washing machine,furniture_rooms,stroj_za_(pranje)_rublja,word,produces,,item_286,
+štednjak,stove,stove,furniture_rooms,stednjak,word,produces,,item_287,stove
+televizor,tv,TV,furniture_rooms,televizor,word,produces,,item_288,tv
+tuš,,shower,furniture_rooms,tus,word,produces,,item_289,
+tuta,potty,potty,furniture_rooms,tuta,word,produces,,item_290,potty
+umivaonik,sink,sink,furniture_rooms,umivaonik,word,produces,,item_291,sink
+vrata,door,door,furniture_rooms,vrata,word,produces,,item_292,door
+zahod,,toilet,furniture_rooms,zahod,word,produces,,item_293,
+bazen,pool,pool,outside,bazen,word,produces,,item_294,pool
+cvijeće,flower,flowers,outside,cvijece,word,produces,,item_295,flower
+drvo,tree,tree,outside,drvo,word,produces,,item_296,tree
+dvorište,backyard,backyard,outside,dvoriste,word,produces,,item_297,backyard
+kamen,rock (object),rock,outside,kamen,word,produces,,item_298,rock (object)
+kiša,rain,rain,outside,kisa,word,produces,,item_299,rain
+krov,,roof,outside,krov,word,produces,,item_300,
+lopata,shovel,shovel,outside,lopata,word,produces,,item_301,shovel
+ljestve,,ladder,outside,ljestve,word,produces,,item_302,
+ljuljačka,swing (object),swing,outside,ljuljacka,word,produces,,item_303,swing (object)
+mjesec,moon,moon,outside,mjesec,word,produces,,item_304,moon
+more,,sea(side),outside,more,word,produces,,item_305,
+nebo,sky,sky,outside,nebo,word,produces,,item_306,sky
+oblak,,cloud,outside,oblak,word,produces,,item_307,
+ograda,,fence,outside,ograda,word,produces,,item_308,
+park,park,park,outside,park,word,produces,,item_309,park
+pješčanik,,sandbox,outside,pjescanik,word,produces,,item_310,
+pločnik,,sidewalk,outside,plocnik,word,produces,,item_311,
+snijeg,snow,snow,outside,snijeg,word,produces,,item_312,snow
+snjegović,,snowman,outside,snjegovic,word,produces,,item_313,
+stijena,,stone,outside,stijena,word,produces,,item_314,
+sunce,sun,sun,outside,sunce,word,produces,,item_315,sun
+štap,,stick,outside,stap,word,produces,,item_316,
+tobogan,,toboggan,outside,tobogan,word,produces,,item_317,
+trava,,grass,outside,trava,word,produces,,item_318,
+ulica,,street,outside,ulica,word,produces,,item_319,
+vjetar,,wind,outside,vjetar,word,produces,,item_320,
+voda (not beverage),water (not beverage),water,outside,voda,word,produces,,item_321,water (not beverage)
+vrt,garden,garden,outside,vrt,word,produces,,item_322,garden
+zastava,,flag,outside,zastava,word,produces,,item_323,
+zvijezda,star,star,outside,zvijezda,word,produces,,item_324,star
+bolnica,,hospital,places,bolnica,word,produces,,item_325,
+cirkus,,circus,places,cirkus,word,produces,,item_326,
+crkva,,church,places,crkva,word,produces,,item_327,
+dom,,home,places,dom,word,produces,,item_328,
+grad,,downtown,places,grad,word,produces,,item_329,
+igralište,,playground,places,igraliste,word,produces,,item_330,
+izlet,,picnic,places,izlet,word,produces,,item_331,
+kino,,cinema,places,kino,word,produces,,item_332,
+kuća,,house,places,kuca,word,produces,,item_333,
+livada,,meadow,places,livada,word,produces,,item_334,
+park,,park,places,park,word,produces,,item_335,
+plaža,,beach,places,plaza,word,produces,,item_336,
+posao,,work,places,posao,word,produces,,item_337,
+proslava,,party,places,proslava,word,produces,,item_338,
+selo,,farm,places,selo,word,produces,,item_339,
+šetnja,,walk,places,setnja,word,produces,,item_340,
+škola,,school,places,skola,word,produces,,item_341,
+šuma,,woods,places,suma,word,produces,,item_342,
+trgovina,,store,places,trgovina,word,produces,,item_343,
+van(i),,out(side),places,van(i),word,produces,,item_344,
+vrtić,,kindergarten,places,vrtic,word,produces,,item_345,
+zoološki vrt,zoo,zoo,places,zooloski_vrt,word,produces,,item_346,
+baka,grandma,grandma,people,baka,word,produces,,item_347,grandma
+brat,brother,brother,people,brat,word,produces,,item_348,brother
+čovjek,,man,people,covjek,word,produces,,item_349,
+dijete,child,child,people,dijete,word,produces,,item_350,child
+dimnjačar,,chimney sweeper,people,dimnjacar,word,produces,,item_351,
+dječak,boy,boy,people,djecak,word,produces,,item_352,boy
+djed,grandpa,grandpa,people,djed,word,produces,,item_353,grandpa
+djevojčica,girl,girl,people,djevojcica,word,produces,,item_354,
+doktor,doctor,doctor,people,doktor,word,produces,,item_355,doctor
+gospođa,,lady,people,gospoda,word,produces,,item_356,
+ime kućnog ljubimca,,pet`s name,people,ime_kucnog_ljubimca,word,produces,,item_357,
+ime osobe koja čuva dijete,babysitter's name,babysitter`s name,people,ime_osobe_koja_cuva_dijete,word,produces,,item_358,babysitter's name
+klaun,,clown,people,klaun,word,produces,,item_359,
+kum/kuma,godfather,aunt,people,kum/kuma,word,produces,,item_360,godfather
+ljudi,people,people,people,ljudi,word,produces,,item_361,people
+mama,mommy,mommy,people,mama,word,produces,,item_362,mommy
+policajac,,police,people,policajac,word,produces,,item_363,
+poštar,,mailman,people,postar,word,produces,,item_364,
+prijatelj,,friend,people,prijatelj,word,produces,,item_365,
+sestra,sister,sister,people,sestra,word,produces,,item_366,sister
+smetlar,,dustman,people,smetlar,word,produces,,item_367,
+stric,uncle,uncle,people,stric,word,produces,,item_368,uncle
+striček,man,s,people,stricek,word,produces,,item_369,man
+svoje ime,child's own name,child`s own name,people,svoje_ime,word,produces,,item_370,child's own name
+tata,daddy,daddy,people,tata,word,produces,,item_371,daddy
+teta,aunt,aunt,people,teta,word,produces,,item_372,aunt
+učitelj,,teacher,people,ucitelj,word,produces,,item_373,
+ujak,uncle,uncle,people,ujak,word,produces,,item_374,uncle
+vatrogasac,,fireman,people,vatrogasac,word,produces,,item_375,
+bježi!,,run!,games_routines,bjezi!,word,produces,,item_376,
+bok!,hi,hi!,games_routines,bok!,word,produces,,item_377,
+da,yes,yes,games_routines,da,word,produces,,item_378,yes
+daj ruku!,,give me your hand!,games_routines,daj_ruku!,word,produces,,item_379,
+dobar dan,hello,hello,games_routines,dobar_dan,word,produces,,item_380,hello
+doručak,breakfast,breakfast,games_routines,dorucak,word,produces,,item_381,breakfast
+hajde!,,come on!,games_routines,hajde!,word,produces,,item_382,
+halo-halo,,call (on phone),games_routines,halo-halo,word,produces,,item_383,
+Hoću tutu,,go potty,games_routines,Hocu_tutu,word,produces,,item_384,
+hvala,thank you,thank you,games_routines,hvala,word,produces,,item_385,thank you
+kakiti,,make poop,games_routines,kakiti,word,produces,,item_386,
+ku-ku (routine),peekaboo,peekaboo,games_routines,ku-ku,word,produces,,item_387,peekaboo
+kupanje,bath,bath,games_routines,kupanje,word,produces,,item_388,bath
+kupiti,,buy,games_routines,kupiti,word,produces,,item_389,
+laku noć,good night,night night,games_routines,laku_noc,word,produces,,item_390,good night
+lovi me,,gonna get you!,games_routines,lovi_me,word,produces,,item_391,
+molim,please,plese,games_routines,molim,word,produces,,item_392,please
+Ne!,no,no,games_routines,Ne!,word,produces,,item_393,
+okreni se,,turn around,games_routines,okreni_se,word,produces,,item_394,
+pa-pa,bye,bye,games_routines,pa-pa,word,produces,,item_395,bye
+piškiti,,go pee-pee,games_routines,piskiti,word,produces,,item_396,
+psst-tiho,shh,shh/shush/hush,games_routines,psst-tiho,word,produces,,item_397,shh
+ringe-raja,ring around the rosie,ring-around-the-rosy,games_routines,ringe-raja,word,produces,,item_398,ring around the rosie
+ručak,lunch,lunch,games_routines,rucak,word,produces,,item_399,lunch
+spavanje,nap,sleep,games_routines,spavanje,word,produces,,item_400,nap
+baciti,throw,throw,action_words,baciti,word,produces,,item_401,throw
+bježati,flee,run,action_words,bjezati,word,produces,,item_402,flee
+bojati,,paint,action_words,bojati,word,produces,,item_403,
+brisati,wipe,wipe,action_words,brisati,word,produces,,item_404,wipe
+buditi,,wake,action_words,buditi,word,produces,,item_405,
+crtati,draw,draw,action_words,crtati,word,produces,,item_406,draw
+čekati,,wait,action_words,cekati,word,produces,,item_407,
+čistiti,clean (action),clean,action_words,cistiti,word,produces,,item_408,clean (action)
+čitati,read,read,action_words,citati,word,produces,,item_409,read
+čuti,,hear,action_words,cuti,word,produces,,item_410,
+dati,give,give,action_words,dati,word,produces,,item_411,give
+dignuti,,pick,action_words,dignuti,word,produces,,item_412,
+dirati,touch,touch,action_words,dirati,word,produces,,item_413,touch
+dobiti,get,get,action_words,dobiti,word,produces,,item_414,get
+donijeti,bring,bring,action_words,donijeti,word,produces,,item_415,bring
+držati,,hold,action_words,drzati,word,produces,,item_416,
+gledati,look,watch,action_words,gledati,word,produces,,item_417,look
+govoriti,,talk,action_words,govoriti,word,produces,,item_418,
+gristi,bite,bite,action_words,gristi,word,produces,,item_419,bite
+gurati,push,push,action_words,gurati,word,produces,,item_420,push
+hodati,walk,walk,action_words,hodati,word,produces,,item_421,walk
+hraniti,,feed,action_words,hraniti,word,produces,,item_422,
+htjeti,,want,action_words,htjeti,word,produces,,item_423,
+ići,go,go,action_words,ici,word,produces,,item_424,go
+igrati se,play,play,action_words,igrati_se_,word,produces,,item_425,play
+imati,,have,action_words,imati,word,produces,,item_426,
+ispustiti,,drop,action_words,ispustiti,word,produces,,item_427,
+jahati,ride,ride,action_words,jahati,word,produces,,item_428,ride
+jesti,eat,eat,action_words,jesti,word,produces,,item_429,eat
+kazati,,say,action_words,kazati,word,produces,,item_430,
+klizati,,slide,action_words,klizati,word,produces,,item_431,
+kucati,,knock,action_words,kucati,word,produces,,item_432,
+kuhati,,cook,action_words,kuhati,word,produces,,item_433,
+kupiti,buy,buy,action_words,kupiti,word,produces,,item_434,buy
+kušati,,taste,action_words,kusati,word,produces,,item_435,
+lizati,,lick,action_words,lizati,word,produces,,item_436,
+loviti,,catch,action_words,loviti,word,produces,,item_437,
+ljuljati se,swing (action),swing,action_words,ljuljati_se,word,produces,,item_438,swing (action)
+mahati,,wave,action_words,mahati,word,produces,,item_439,
+maziti,,cuddle,action_words,maziti,word,produces,,item_440,
+mesti,,wipe,action_words,mesti,word,produces,,item_441,
+misliti,,think,action_words,misliti,word,produces,,item_442,
+naći,,find,action_words,naci,word,produces,,item_443,
+napraviti,,build,action_words,napraviti,word,produces,,item_444,
+nositi,,carry,action_words,nositi,word,produces,,item_445,
+ostati,,stay,action_words,ostati,word,produces,,item_446,
+otvoriti,open (action),open,action_words,otvoriti,word,produces,,item_447,open (action)
+pasti,fall,fall,action_words,pasti,word,produces,,item_448,fall
+paziti,watch (action),look out,action_words,paziti,word,produces,,item_449,watch (action)
+pisati,write,write,action_words,pisati,word,produces,,item_450,write
+piti,drink (action),drink,action_words,piti,word,produces,,item_451,drink (action)
+pjevati,sing,sing,action_words,pjevati,word,produces,,item_452,sing
+plakati,cry,cry,action_words,plakati,word,produces,,item_453,cry
+plesati,dance,dance,action_words,plesati,word,produces,,item_454,dance
+plivati,swim,swim,action_words,plivati,word,produces,,item_455,swim
+pljeskati,,clap,action_words,pljeskati,word,produces,,item_456,
+poderati,,tear,action_words,poderati,word,produces,,item_457,
+pokazati,,show,action_words,pokazati,word,produces,,item_458,
+pokriti,,cover,action_words,pokriti,word,produces,,item_459,
+poljubiti,kiss,kiss,action_words,poljubiti,word,produces,,item_460,kiss
+pomoći,help,help,action_words,pomoci,word,produces,,item_461,help
+popeti,,climb,action_words,popeti,word,produces,,item_462,
+popraviti,,fix,action_words,popraviti,word,produces,,item_463,
+prati,wash,wash,action_words,prati,word,produces,,item_464,wash
+praviti,,make,action_words,praviti,word,produces,,item_465,
+praviti se,,pretend,action_words,praviti_se,word,produces,,item_466,
+prestati,,stop,action_words,prestati,word,produces,,item_467,
+proliti,,spill,action_words,proliti,word,produces,,item_468,
+prskati,splash,splash,action_words,prskati,word,produces,,item_469,splash
+puhati,blow,blow,action_words,puhati,word,produces,,item_470,blow
+raditi,,work,action_words,raditi,word,produces,,item_471,
+razbiti,break,break,action_words,razbiti,word,produces,,item_472,break
+reći,say,say,action_words,reci,word,produces,,item_473,say
+rezati,,cut,action_words,rezati,word,produces,,item_474,
+sakriti,,hide,action_words,sakriti,word,produces,,item_475,
+sjediti,,sit,action_words,sjediti,word,produces,,item_476,
+skočiti,jump,jump,action_words,skociti,word,produces,,item_477,jump
+slomiti,,break,action_words,slomiti,word,produces,,item_478,
+slušati,,listen,action_words,slusati,word,produces,,item_479,
+smijati se,laugh,smile,action_words,smijati_se,word,produces,,item_480,laugh
+spavati,sleep,sleep,action_words,spavati,word,produces,,item_481,sleep
+spuštati,,lower,action_words,spustati,word,produces,,item_482,
+stajati,,stand,action_words,stajati,word,produces,,item_483,
+stati,stop,stop,action_words,stati,word,produces,,item_484,stop
+staviti,put,put,action_words,staviti,word,produces,,item_485,put
+sušiti,,dry,action_words,susiti,word,produces,,item_486,
+sviđati se,,like,action_words,svidati_se_,word,produces,,item_487,
+škakljati,tickle,tickle,action_words,skakljati,word,produces,,item_488,tickle
+šutnuti,kick,kick,action_words,sutnuti,word,produces,,item_489,kick
+točiti,,pour,action_words,tociti,word,produces,,item_490,
+trčati,run,run,action_words,trcati,word,produces,,item_491,run
+tresti,,shake,action_words,tresti,word,produces,,item_492,
+trgati,tear,tear,action_words,trgati,word,produces,,item_493,tear
+tući,fight,beat,action_words,tuci,word,produces,,item_494,fight
+udariti se,hit,bump,action_words,udariti_se_,word,produces,,item_495,hit
+uzeti,take,take,action_words,uzeti,word,produces,,item_496,take
+vidjeti,see,see,action_words,vidjeti,word,produces,,item_497,see
+voljeti,love,love,action_words,voljeti,word,produces,,item_498,love
+voziti,drive,drive,action_words,voziti,word,produces,,item_499,drive
+vući,pull,pull,action_words,vuci,word,produces,,item_500,pull
+zagrliti,hug,hug,action_words,zagrliti,word,produces,,item_501,hug
+zatvoriti,close,close,action_words,zatvoriti,word,produces,,item_502,close
+žuriti,hurry,hurry,action_words,zuriti,word,produces,,item_503,hurry
+bijela,,white,descriptive_words,bijela,word,produces,,item_504,
+bolestan,sick,sick,descriptive_words,bolestan,word,produces,,item_505,sick
+boli,hurt (description),hurt,descriptive_words,boli,word,produces,,item_506,hurt (description)
+bolje,,better,descriptive_words,bolje,word,produces,,item_507,
+brzo,fast,fast,descriptive_words,brzo,word,produces,,item_508,
+budan,,awake,descriptive_words,budan,word,produces,,item_509,
+crn,,black,descriptive_words,crn,word,produces,,item_510,
+crvena,red,red,descriptive_words,crvena,word,produces,,item_511,red
+čist(o),clean (description),clean,descriptive_words,cist(o),word,produces,,item_512,clean (description)
+dobro,good,good,descriptive_words,dobro,word,produces,,item_513,good
+dug(o),,long,descriptive_words,dug(o),word,produces,,item_514,
+fino,fine,fine,descriptive_words,fino,word,produces,,item_515,
+fuj,,yucky,descriptive_words,fuj,word,produces,,item_516,
+gladan,hungry,hungry,descriptive_words,gladan,word,produces,,item_517,hungry
+glasno,,loud,descriptive_words,glasno,word,produces,,item_518,
+gotovo,finished,over,descriptive_words,gotovo,word,produces,,item_519,finished
+hladno,cold,cold,descriptive_words,hladno,word,produces,,item_520,cold
+jadan,,lame,descriptive_words,jadan,word,produces,,item_521,
+krasno,beautiful,nice,descriptive_words,krasno,word,produces,,item_522,beautiful
+lijep(o),pretty,pretty,descriptive_words,lijep(o),word,produces,,item_523,pretty
+ljut(o),,angry,descriptive_words,ljut(o),word,produces,,item_524,
+mal(o),little (description),tiny,descriptive_words,mal(o),word,produces,,item_525,little (description)
+mekan(o),soft,soft,descriptive_words,mekan(o),word,produces,,item_526,soft
+mokro,wet (description),wet,descriptive_words,mokro,word,produces,,item_527,
+mrak,dark,dark,descriptive_words,mrak,word,produces,,item_528,dark
+narančasta,,orange,descriptive_words,narancasta,word,produces,,item_529,
+nema više,,allgone,descriptive_words,nema_vise,word,produces,,item_530,
+nov(o),,new,descriptive_words,nov(o),word,produces,,item_531,
+nježno,gentle,gentle,descriptive_words,njezno,word,produces,,item_532,gentle
+pažljiv(o),,careful,descriptive_words,pazljiv(o),word,produces,,item_533,
+plava,blue,blue,descriptive_words,plava,word,produces,,item_534,blue
+polako,slow,slow,descriptive_words,polako,word,produces,,item_535,slow
+pospan(o),sleepy,sleepy,descriptive_words,pospan(o),word,produces,,item_536,sleepy
+potrgan(o),,broken,descriptive_words,potrgan(o),word,produces,,item_537,
+prazno,empty,empty,descriptive_words,prazno,word,produces,,item_538,empty
+prljav(o),dirty,dirty,descriptive_words,prljav(o),word,produces,,item_539,dirty
+prvi,,first,descriptive_words,prvi,word,produces,,item_540,
+pun(o),,full,descriptive_words,pun(o),word,produces,,item_541,
+puše,,windy,descriptive_words,puse,word,produces,,item_542,
+ružno,ugly,ugly,descriptive_words,ruzno,word,produces,,item_543,ugly
+slomljen(o),,broken,descriptive_words,slomljen(o),word,produces,,item_544,
+smeđe,,brown,descriptive_words,smede,word,produces,,item_545,
+spava,asleep,sleeps,descriptive_words,spava,word,produces,,item_546,asleep
+sretan,happy,happy,descriptive_words,sretan,word,produces,,item_547,happy
+staro,old,old,descriptive_words,staro,word,produces,,item_548,
+suho,dry (description),dry,descriptive_words,suho,word,produces,,item_549,
+teško,heavy,heavy,descriptive_words,tesko,word,produces,,item_550,heavy
+tih(o),,quiet,descriptive_words,tih(o),word,produces,,item_551,
+toplo,warm,warm,descriptive_words,toplo,word,produces,,item_552,warm
+tužan,,sad,descriptive_words,tuzan,word,produces,,item_553,
+tvrd(o),,hard,descriptive_words,tvrd(o),word,produces,,item_554,
+umoran,tired,tired,descriptive_words,umoran,word,produces,,item_555,tired
+uplašen(o),,scared,descriptive_words,uplasen(o),word,produces,,item_556,
+velik(o),big,big,descriptive_words,velik(o),word,produces,,item_557,big
+visok(o),,high,descriptive_words,visok(o),word,produces,,item_558,
+vruće,hot,hot,descriptive_words,vruce,word,produces,,item_559,hot
+zadnje,,last,descriptive_words,zadnje,word,produces,,item_560,
+zelena,,green,descriptive_words,zelena,word,produces,,item_561,
+zgodno,,cute,descriptive_words,zgodno,word,produces,,item_562,
+zima,winter,cold,descriptive_words,zima,word,produces,,item_563,winter
+zločesto,naughty,naughty,descriptive_words,zlocesto,word,produces,,item_564,
+žuta,,yellow,descriptive_words,zuta,word,produces,,item_565,
+žedan,thirsty,thirsty,descriptive_words,zedan,word,produces,,item_566,thirsty
+dan,day,day,time_words,dan,word,produces,,item_567,day
+danas,today,today,time_words,danas,word,produces,,item_568,today
+jučer,,yesterday,time_words,jucer,word,produces,,item_569,
+jutro,morning,morning,time_words,jutro,word,produces,,item_570,morning
+kasnije,,later,time_words,kasnije,word,produces,,item_571,
+noć,night,night,time_words,noc,word,produces,,item_572,night
+poslije,later,after,time_words,poslije,word,produces,,item_573,later
+prije,,before,time_words,prije,word,produces,,item_574,
+sada,now,now,time_words,sada,word,produces,,item_575,
+sati,,hours,time_words,sati,word,produces,,item_576,
+sutra,tomorrow,tomorrow,time_words,sutra,word,produces,,item_577,tomorrow
+večeras,tonight,tonight,time_words,veceras,word,produces,,item_578,tonight
+ja,i,I,pronouns,ja,word,produces,,item_579,i
+mene/me,me,me,pronouns,mene/me,word,produces,,item_580,
+meni/mi,me,to me,pronouns,meni/mi,word,produces,,item_581,
+mi,,we,pronouns,mi,word,produces,,item_582,
+moj,my,my,pronouns,moj,word,produces,,item_583,my
+nama,,to us,pronouns,nama,word,produces,,item_584,
+nas,,us,pronouns,nas,word,produces,,item_585,
+naš,,our,pronouns,nas,word,produces,,item_586,
+nje/je,,her,pronouns,nje/je,word,produces,,item_587,
+njega/ga,,him,pronouns,njega/ga,word,produces,,item_588,
+njegov,his,his,pronouns,njegov,word,produces,,item_589,his
+njemu/mu,him,to him,pronouns,njemu/mu,word,produces,,item_590,
+njezin,her,hers,pronouns,njezin,word,produces,,item_591,her
+njih/ih,,them,pronouns,njih/ih,word,produces,,item_592,
+njihov,,their,pronouns,njihov,word,produces,,item_593,
+njima/im,,to them,pronouns,njima/im,word,produces,,item_594,
+njoj/joj,,to her,pronouns,njoj/joj,word,produces,,item_595,
+nju/ju/je,,her,pronouns,nju/ju/je,word,produces,,item_596,
+on,,he,pronouns,on,word,produces,,item_597,
+ona,,she,pronouns,ona,word,produces,,item_598,
+one,,they (female),pronouns,one,word,produces,,item_599,
+oni,,they,pronouns,oni,word,produces,,item_600,
+ono,that,it,pronouns,ono,word,produces,,item_601,that
+ono/onaj/ona,,that,pronouns,ono/onaj/ona,word,produces,,item_602,
+ovo/ovaj/ova,this,this,pronouns,ovo/ovaj/ova,word,produces,,item_603,
+ovi/ove,,these,pronouns,ovi/ove,word,produces,,item_604,
+sebe/se,,myself,pronouns,sebe/se,word,produces,,item_605,
+svoj,,her/his own,pronouns,svoj,word,produces,,item_606,
+to/taj/ta,,this,pronouns,to/taj/ta,word,produces,,item_607,
+tebe/te,,you,pronouns,tebe/te,word,produces,,item_608,
+tebi/ti,,to you,pronouns,tebi/ti,word,produces,,item_609,
+ti,you,you,pronouns,ti,word,produces,,item_610,you
+tvoj,your,your,pronouns,tvoj,word,produces,,item_611,your
+gdje,where (question),where,question_words,gdje,word,produces,,item_612,where (question)
+kada (question),when (question),when,question_words,kada,word,produces,,item_613,
+kako,how,how,question_words,kako,word,produces,,item_614,how
+koji,,which,question_words,koji,word,produces,,item_615,
+što,what,what,question_words,sto,word,produces,,item_616,what
+tko,who,who,question_words,tko,word,produces,,item_617,who
+zašto,why,why,question_words,zasto,word,produces,,item_618,why
+blizu,,close,locations,blizu,word,produces,,item_619,
+dolje,down,down,locations,dolje,word,produces,,item_620,down
+gore,up,up,locations,gore,word,produces,,item_621,up
+ispod,under,under,locations,ispod,word,produces,,item_622,under
+ispred,in front,in front of,locations,ispred,word,produces,,item_623,in front
+iza,back (location),behind,locations,iza,word,produces,,item_624,back (location)
+iznad,,above,locations,iznad,word,produces,,item_625,
+na,on,on,locations,na,word,produces,,item_626,on
+nazad,,back,locations,nazad,word,produces,,item_627,
+negdje,,somewhere,locations,negdje,word,produces,,item_628,
+nigdje,,nowhere,locations,nigdje,word,produces,,item_629,
+o,about,about,locations,o,word,produces,,item_630,
+od,,from,locations,od,word,produces,,item_631,
+oko,,around,locations,oko,word,produces,,item_632,
+otraga,,behind,locations,otraga,word,produces,,item_633,
+ovamo,,here,locations,ovamo,word,produces,,item_634,
+ovdje,,therein,locations,ovdje,word,produces,,item_635,
+pored,,beside,locations,pored,word,produces,,item_636,
+preko,,over,locations,preko,word,produces,,item_637,
+s,,with,locations,s,word,produces,,item_638,
+tamo,there,there,locations,tamo,word,produces,,item_639,there
+tu,here,here,locations,tu,word,produces,,item_640,here
+unutra/u,in,in,locations,unutra/u,word,produces,,item_641,
+uz,,by,locations,uz,word,produces,,item_642,
+vani,out,outside,locations,vani,word,produces,,item_643,out
+za,,for,locations,za,word,produces,,item_644,
+bilo koji,,any,quantifiers,bilo_koji,word,produces,,item_645,
+dosta,,enough,quantifiers,dosta,word,produces,,item_646,
+drugi/druga,another,another,quantifiers,drugi/druga,word,produces,,item_647,
+isti/ista,,same,quantifiers,isti/ista,word,produces,,item_648,
+jako,,very,quantifiers,jako,word,produces,,item_649,
+još,more,more,quantifiers,jos,word,produces,,item_650,more
+malo,little (amount),few,quantifiers,malo,word,produces,,item_651,little (amount)
+mnogo,,many/much/a lot,quantifiers,mnogo,word,produces,,item_652,
+neki/neka,,some,quantifiers,neki/neka,word,produces,,item_653,
+nešto,,something,quantifiers,nesto,word,produces,,item_654,
+ništa,none,nothing,quantifiers,nista,word,produces,,item_655,none
+opet,,again,quantifiers,opet,word,produces,,item_656,
+previše,,too much,quantifiers,previse,word,produces,,item_657,
+puno,many,a lot,quantifiers,puno,word,produces,,item_658,many
+svaki/svaka,,each/every,quantifiers,svaki/svaka,word,produces,,item_659,
+sve/svi,all,all,quantifiers,sve/svi,word,produces,,item_660,
+više,more,more,quantifiers,vise,word,produces,,item_661,more
+bi(h),,would,helping_verbs,bi(h),word,produces,,item_662,
+bila,,was,helping_verbs,bila,word,produces,,item_663,
+bile,,were (female),helping_verbs,bile,word,produces,,item_664,
+bili,,were,helping_verbs,bili,word,produces,,item_665,
+bilo,,(it) was,helping_verbs,bilo,word,produces,,item_666,
+bio,was,(he) was,helping_verbs,bio,word,produces,,item_667,
+biti,,to be,helping_verbs,biti,word,produces,,item_668,
+bude,,(he) is gonna/going to,helping_verbs,bude,word,produces,,item_669,
+budem,,(I) am gonna/going to,helping_verbs,budem,word,produces,,item_670,
+budemo,,(we) are gonna/going to,helping_verbs,budemo,word,produces,,item_671,
+budeš,,(you) are gonna/going to,helping_verbs,budes,word,produces,,item_672,
+budi,,be!,helping_verbs,budi,word,produces,,item_673,
+budu,,(they) are gonna/going to,helping_verbs,budu,word,produces,,item_674,
+će,,(he) will be,helping_verbs,ce,word,produces,,item_675,
+ćemo,,(we) will be,helping_verbs,cemo,word,produces,,item_676,
+ćeš,,(you) will be,helping_verbs,ces,word,produces,,item_677,
+ću,,(I) will,helping_verbs,cu,word,produces,,item_678,
+hoće,,(he/she) wanna/wants to,helping_verbs,hoce,word,produces,,item_679,
+hoćemo,,(we) wanna/want to,helping_verbs,hocemo,word,produces,,item_680,
+hoćeš,,(you) wanna/want to,helping_verbs,hoces,word,produces,,item_681,
+hoću,,(I) wanna/want to,helping_verbs,hocu,word,produces,,item_682,
+je,,is,helping_verbs,je,word,produces,,item_683,
+jesam,,am,helping_verbs,jesam,word,produces,,item_684,
+jesi,,(you) are,helping_verbs,jesi,word,produces,,item_685,
+jesmo,,(we) are,helping_verbs,jesmo,word,produces,,item_686,
+jesu,,(they) are,helping_verbs,jesu,word,produces,,item_687,
+mogao,,(he) could,helping_verbs,mogao,word,produces,,item_688,
+mogla,,(she) could,helping_verbs,mogla,word,produces,,item_689,
+mogle,,(they/females) could,helping_verbs,mogle,word,produces,,item_690,
+mogli,,(they) could,helping_verbs,mogli,word,produces,,item_691,
+mogu (oni),,(they) can,helping_verbs,mogu_(oni),word,produces,,item_692,
+mora,,(he/she) must,helping_verbs,mora,word,produces,,item_693,
+može,,(he/she) can,helping_verbs,moze,word,produces,,item_694,
+možemo,,(we) can,helping_verbs,mozemo,word,produces,,item_695,
+možeš,,(you) can,helping_verbs,mozes,word,produces,,item_696,
+neće,,(he/she) doesn`t want,helping_verbs,nece,word,produces,,item_697,
+nećemo,,(we) don`t want,helping_verbs,necemo,word,produces,,item_698,
+nećeš,,(you) don`t want,helping_verbs,neces,word,produces,,item_699,
+neću,,(I) don`t want,helping_verbs,necu,word,produces,,item_700,
+nije,,(he/she) is not,helping_verbs,nije,word,produces,,item_701,
+nisam,,(I) am not,helping_verbs,nisam,word,produces,,item_702,
+nisi,,(you) are not,helping_verbs,nisi,word,produces,,item_703,
+nismo,,(we) are not,helping_verbs,nismo,word,produces,,item_704,
+nisu,,(they) are not,helping_verbs,nisu,word,produces,,item_705,
+sam,,am,helping_verbs,sam,word,produces,,item_706,
+si,,(you) are,helping_verbs,si,word,produces,,item_707,
+may,,(I) may,helping_verbs,may,word,produces,,item_708,
+smo,,(we) are,helping_verbs,smo,word,produces,,item_709,
+su,,(they) are,helping_verbs,su,word,produces,,item_710,
+treba,,should,helping_verbs,treba,word,produces,,item_711,
+ako,,if,connecting_words,ako,word,produces,,item_712,
+ali,,but,connecting_words,ali,word,produces,,item_713,
+i,,and,connecting_words,i,word,produces,,item_714,
+jer,,because,connecting_words,jer,word,produces,,item_715,
+onda,,then,connecting_words,onda,word,produces,,item_716,
+tako,,so,connecting_words,tako,word,produces,,item_717,

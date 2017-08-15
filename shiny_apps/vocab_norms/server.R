@@ -13,7 +13,7 @@ source("predictQR_fixed.R")
 theme_set(theme_mikabr(base_size = 18))
 mode <- "local"
 
-input <- list(language = "English", form = "WS", measure = "production",
+input <- list(language = "English (American)", form = "WS", measure = "production",
               quantiles = "Standard", demo = "sex")
 
 alerted <- FALSE
@@ -37,7 +37,7 @@ shinyServer(function(input, output, session) {
                                "Mother's Education" = "mom_ed")
   min_obs <- 100
 
-  start_language <- "English"
+  start_language <- "English (American)"
   start_form <- "WS"
   start_measure <- "production"
   start_demo <- "identity"
