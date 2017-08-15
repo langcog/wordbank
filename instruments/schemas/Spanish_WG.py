@@ -859,3 +859,197 @@ class Spanish_WG(BaseTable):
     item_427 = models.CharField(max_length=11, choices=item_427_choices, null=True)
     item_428_choices = [(u'understands', u'understands'), (u'produces', u'produces')]
     item_428 = models.CharField(max_length=11, choices=item_428_choices, null=True)
+    item_429_choices = [(u'not yet', u'not yet'), (u'often/sometimes', u'often/sometimes')]
+    item_429 = models.CharField(max_length=15, choices=item_429_choices, null=True)
+    item_430_choices = [(u'not yet', u'not yet'), (u'often/sometimes', u'often/sometimes')]
+    item_430 = models.CharField(max_length=15, choices=item_430_choices, null=True)
+    item_431_choices = [(u'not yet', u'not yet'), (u'often/sometimes', u'often/sometimes')]
+    item_431 = models.CharField(max_length=15, choices=item_431_choices, null=True)
+    item_432_choices = [(u'not yet', u'not yet'), (u'often/sometimes', u'often/sometimes')]
+    item_432 = models.CharField(max_length=15, choices=item_432_choices, null=True)
+    item_433_choices = [(u'not yet', u'not yet'), (u'often/sometimes', u'often/sometimes')]
+    item_433 = models.CharField(max_length=15, choices=item_433_choices, null=True)
+    item_434_choices = [(u'not yet', u'not yet'), (u'often/sometimes', u'often/sometimes')]
+    item_434 = models.CharField(max_length=15, choices=item_434_choices, null=True)
+    item_435_choices = [(u'not yet', u'not yet'), (u'often/sometimes', u'often/sometimes')]
+    item_435 = models.CharField(max_length=15, choices=item_435_choices, null=True)
+    item_436_choices = [(u'not yet', u'not yet'), (u'often/sometimes', u'often/sometimes')]
+    item_436 = models.CharField(max_length=15, choices=item_436_choices, null=True)
+    item_437_choices = [(u'not yet', u'not yet'), (u'often/sometimes', u'often/sometimes')]
+    item_437 = models.CharField(max_length=15, choices=item_437_choices, null=True)
+    item_438_choices = [(u'not yet', u'not yet'), (u'often/sometimes', u'often/sometimes')]
+    item_438 = models.CharField(max_length=15, choices=item_438_choices, null=True)
+    item_439_choices = [(u'not yet', u'not yet'), (u'often/sometimes', u'often/sometimes')]
+    item_439 = models.CharField(max_length=15, choices=item_439_choices, null=True)
+    item_440_choices = [(u'not yet', u'not yet'), (u'often/sometimes', u'often/sometimes')]
+    item_440 = models.CharField(max_length=15, choices=item_440_choices, null=True)
+    item_441_choices = [(u'not yet', u'not yet'), (u'often/sometimes', u'often/sometimes')]
+    item_441 = models.CharField(max_length=15, choices=item_441_choices, null=True)
+    item_442_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_442 = models.CharField(max_length=3, choices=item_442_choices, null=True)
+    item_443_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_443 = models.CharField(max_length=3, choices=item_443_choices, null=True)
+    item_444_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_444 = models.CharField(max_length=3, choices=item_444_choices, null=True)
+    item_445_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_445 = models.CharField(max_length=3, choices=item_445_choices, null=True)
+    item_446_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_446 = models.CharField(max_length=3, choices=item_446_choices, null=True)
+    item_447_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_447 = models.CharField(max_length=3, choices=item_447_choices, null=True)
+    item_448_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_448 = models.CharField(max_length=3, choices=item_448_choices, null=True)
+    item_449_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_449 = models.CharField(max_length=3, choices=item_449_choices, null=True)
+    item_450_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_450 = models.CharField(max_length=3, choices=item_450_choices, null=True)
+    item_451_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_451 = models.CharField(max_length=3, choices=item_451_choices, null=True)
+    item_452_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_452 = models.CharField(max_length=3, choices=item_452_choices, null=True)
+    item_453_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_453 = models.CharField(max_length=3, choices=item_453_choices, null=True)
+    item_454_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_454 = models.CharField(max_length=3, choices=item_454_choices, null=True)
+    item_455_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_455 = models.CharField(max_length=3, choices=item_455_choices, null=True)
+    item_456_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_456 = models.CharField(max_length=3, choices=item_456_choices, null=True)
+    item_457_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_457 = models.CharField(max_length=3, choices=item_457_choices, null=True)
+    item_458_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_458 = models.CharField(max_length=3, choices=item_458_choices, null=True)
+    item_459_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_459 = models.CharField(max_length=3, choices=item_459_choices, null=True)
+    item_460_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_460 = models.CharField(max_length=3, choices=item_460_choices, null=True)
+    item_461_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_461 = models.CharField(max_length=3, choices=item_461_choices, null=True)
+    item_462_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_462 = models.CharField(max_length=3, choices=item_462_choices, null=True)
+    item_463_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_463 = models.CharField(max_length=3, choices=item_463_choices, null=True)
+    item_464_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_464 = models.CharField(max_length=3, choices=item_464_choices, null=True)
+    item_465_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_465 = models.CharField(max_length=3, choices=item_465_choices, null=True)
+    item_466_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_466 = models.CharField(max_length=3, choices=item_466_choices, null=True)
+    item_467_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_467 = models.CharField(max_length=3, choices=item_467_choices, null=True)
+    item_468_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_468 = models.CharField(max_length=3, choices=item_468_choices, null=True)
+    item_469_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_469 = models.CharField(max_length=3, choices=item_469_choices, null=True)
+    item_470_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_470 = models.CharField(max_length=3, choices=item_470_choices, null=True)
+    item_471_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_471 = models.CharField(max_length=3, choices=item_471_choices, null=True)
+    item_472_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_472 = models.CharField(max_length=3, choices=item_472_choices, null=True)
+    item_473_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_473 = models.CharField(max_length=3, choices=item_473_choices, null=True)
+    item_474_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_474 = models.CharField(max_length=3, choices=item_474_choices, null=True)
+    item_475_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_475 = models.CharField(max_length=3, choices=item_475_choices, null=True)
+    item_476_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_476 = models.CharField(max_length=3, choices=item_476_choices, null=True)
+    item_477_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_477 = models.CharField(max_length=3, choices=item_477_choices, null=True)
+    item_478_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_478 = models.CharField(max_length=3, choices=item_478_choices, null=True)
+    item_479_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_479 = models.CharField(max_length=3, choices=item_479_choices, null=True)
+    item_480_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_480 = models.CharField(max_length=3, choices=item_480_choices, null=True)
+    item_481_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_481 = models.CharField(max_length=3, choices=item_481_choices, null=True)
+    item_482_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_482 = models.CharField(max_length=3, choices=item_482_choices, null=True)
+    item_483_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_483 = models.CharField(max_length=3, choices=item_483_choices, null=True)
+    item_484_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_484 = models.CharField(max_length=3, choices=item_484_choices, null=True)
+    item_485_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_485 = models.CharField(max_length=3, choices=item_485_choices, null=True)
+    item_486_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_486 = models.CharField(max_length=3, choices=item_486_choices, null=True)
+    item_487_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_487 = models.CharField(max_length=3, choices=item_487_choices, null=True)
+    item_488_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_488 = models.CharField(max_length=3, choices=item_488_choices, null=True)
+    item_489_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_489 = models.CharField(max_length=3, choices=item_489_choices, null=True)
+    item_490_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_490 = models.CharField(max_length=3, choices=item_490_choices, null=True)
+    item_491_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_491 = models.CharField(max_length=3, choices=item_491_choices, null=True)
+    item_492_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_492 = models.CharField(max_length=3, choices=item_492_choices, null=True)
+    item_493_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_493 = models.CharField(max_length=3, choices=item_493_choices, null=True)
+    item_494_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_494 = models.CharField(max_length=3, choices=item_494_choices, null=True)
+    item_495_choices = [(u'yes', u'yes'), (u'no', u'no')]
+    item_495 = models.CharField(max_length=3, choices=item_495_choices, null=True)
+    item_496_choices = [(u'understands', u'understands')]
+    item_496 = models.CharField(max_length=11, choices=item_496_choices, null=True)
+    item_497_choices = [(u'understands', u'understands')]
+    item_497 = models.CharField(max_length=11, choices=item_497_choices, null=True)
+    item_498_choices = [(u'understands', u'understands')]
+    item_498 = models.CharField(max_length=11, choices=item_498_choices, null=True)
+    item_499_choices = [(u'understands', u'understands')]
+    item_499 = models.CharField(max_length=11, choices=item_499_choices, null=True)
+    item_500_choices = [(u'understands', u'understands')]
+    item_500 = models.CharField(max_length=11, choices=item_500_choices, null=True)
+    item_501_choices = [(u'understands', u'understands')]
+    item_501 = models.CharField(max_length=11, choices=item_501_choices, null=True)
+    item_502_choices = [(u'understands', u'understands')]
+    item_502 = models.CharField(max_length=11, choices=item_502_choices, null=True)
+    item_503_choices = [(u'understands', u'understands')]
+    item_503 = models.CharField(max_length=11, choices=item_503_choices, null=True)
+    item_504_choices = [(u'understands', u'understands')]
+    item_504 = models.CharField(max_length=11, choices=item_504_choices, null=True)
+    item_505_choices = [(u'understands', u'understands')]
+    item_505 = models.CharField(max_length=11, choices=item_505_choices, null=True)
+    item_506_choices = [(u'understands', u'understands')]
+    item_506 = models.CharField(max_length=11, choices=item_506_choices, null=True)
+    item_507_choices = [(u'understands', u'understands')]
+    item_507 = models.CharField(max_length=11, choices=item_507_choices, null=True)
+    item_508_choices = [(u'understands', u'understands')]
+    item_508 = models.CharField(max_length=11, choices=item_508_choices, null=True)
+    item_509_choices = [(u'understands', u'understands')]
+    item_509 = models.CharField(max_length=11, choices=item_509_choices, null=True)
+    item_510_choices = [(u'understands', u'understands')]
+    item_510 = models.CharField(max_length=11, choices=item_510_choices, null=True)
+    item_511_choices = [(u'understands', u'understands')]
+    item_511 = models.CharField(max_length=11, choices=item_511_choices, null=True)
+    item_512_choices = [(u'understands', u'understands')]
+    item_512 = models.CharField(max_length=11, choices=item_512_choices, null=True)
+    item_513_choices = [(u'understands', u'understands')]
+    item_513 = models.CharField(max_length=11, choices=item_513_choices, null=True)
+    item_514_choices = [(u'understands', u'understands')]
+    item_514 = models.CharField(max_length=11, choices=item_514_choices, null=True)
+    item_515_choices = [(u'understands', u'understands')]
+    item_515 = models.CharField(max_length=11, choices=item_515_choices, null=True)
+    item_516_choices = [(u'understands', u'understands')]
+    item_516 = models.CharField(max_length=11, choices=item_516_choices, null=True)
+    item_517_choices = [(u'understands', u'understands')]
+    item_517 = models.CharField(max_length=11, choices=item_517_choices, null=True)
+    item_518_choices = [(u'understands', u'understands')]
+    item_518 = models.CharField(max_length=11, choices=item_518_choices, null=True)
+    item_519_choices = [(u'understands', u'understands')]
+    item_519 = models.CharField(max_length=11, choices=item_519_choices, null=True)
+    item_520_choices = [(u'understands', u'understands')]
+    item_520 = models.CharField(max_length=11, choices=item_520_choices, null=True)
+    item_521_choices = [(u'understands', u'understands')]
+    item_521 = models.CharField(max_length=11, choices=item_521_choices, null=True)
+    item_522_choices = [(u'understands', u'understands')]
+    item_522 = models.CharField(max_length=11, choices=item_522_choices, null=True)
+    item_523_choices = [(u'understands', u'understands')]
+    item_523 = models.CharField(max_length=11, choices=item_523_choices, null=True)
+    item_524_choices = [(u'not yet', u'not yet'), (u'often/sometimes', u'often/sometimes')]
+    item_524 = models.CharField(max_length=15, choices=item_524_choices, null=True)
+    item_525_choices = [(u'not yet', u'not yet'), (u'often/sometimes', u'often/sometimes')]
+    item_525 = models.CharField(max_length=15, choices=item_525_choices, null=True)

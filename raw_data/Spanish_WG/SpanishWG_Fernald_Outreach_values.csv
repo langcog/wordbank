@@ -1,0 +1,28 @@
+type,value,data_value
+sex,M,M
+sex,F,F
+mom_ed,none,0
+mom_ed,none,1
+mom_ed,primary,2
+mom_ed,primary,3
+mom_ed,secondary,4
+mom_ed,college,5
+word,produces,2
+word,understands,1
+word,,0
+gestures_first,often/sometimes,1
+gestures_first,not yet,0
+gestures_games,yes,1
+gestures_games,no,0
+gestures_objects,yes,1
+gestures_objects,no,0
+gestures_parent,yes,1
+gestures_parent,no,0
+gestures_adult,yes,1
+gestures_adult,no,0
+first_signs,yes,1
+first_signs,no,0
+phrases,understands,1
+phrases,,0
+starting_to_talk,often/sometimes,1
+starting_to_talk,not yet,0

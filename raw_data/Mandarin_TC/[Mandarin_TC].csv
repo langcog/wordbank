@@ -1,711 +1,711 @@
-itemID,definition,item,gloss,category,type,choices
-item_1,白菜,bai2cai4,cabbage,food_drink,word,produces
-item_2,棒棒糖,bang4bang4tang2,lollipop,food_drink,word,produces
-item_3,包子,bao1zi5,staff steamed bun,food_drink,word,produces
-item_4,爆米花,bao4mi3hua1,popcorn,food_drink,word,produces
-item_5,冰棍,bing1gun4,popsicle,food_drink,word,produces
-item_6,冰淇淋,bing1qi2lin2,ice-cream,food_drink,word,produces
-item_7,饼干,bing3gan1,cookie,food_drink,word,produces
-item_8,菜,cai4,dish,food_drink,word,produces
-item_9,菜花,cai4hua1,cauliflower,food_drink,word,produces
-item_10,草莓,cao3mei2,strawberry,food_drink,word,produces
-item_11,茶,cha2,tea,food_drink,word,produces
-item_12,醋,cu4,vinegar,food_drink,word,produces
-item_13,蛋糕,dan4gao1,cake,food_drink,word,produces
-item_14,豆,dou4,beans,food_drink,word,produces
-item_15,豆腐,dou4fu5,tofu,food_drink,word,produces
-item_16,豆浆,dou4jiang1,soybean milk,food_drink,word,produces
-item_17,饭,fan4,food,food_drink,word,produces
-item_18,方便面,fang1bian4mian4,instant noodle,food_drink,word,produces
-item_19,蜂蜜,feng1mi4,honey,food_drink,word,produces
-item_20,瓜子,gua1zi3,melon seeds,food_drink,word,produces
-item_21,果冻,guo3dong4,jelly,food_drink,word,produces
-item_22,果酱,guo3jiang4,jam,food_drink,word,produces
-item_23,果汁,guo3zhi1,juice,food_drink,word,produces
-item_24,汉堡,han4bao3,hamburger,food_drink,word,produces
-item_25,核桃,he2tao5,walnut,food_drink,word,produces
-item_26,胡萝卜,hu2luo2bo5,carrots,food_drink,word,produces
-item_27,花卷,hua1juan3,steamed twisted roll　,food_drink,word,produces
-item_28,花生,hua1sheng1,peanut,food_drink,word,produces
-item_29,黄瓜,huang2gua1,cucumber,food_drink,word,produces
-item_30,馄饨,hun2tun2,ravioli,food_drink,word,produces
-item_31,鸡蛋,ji1dan4,egg,food_drink,word,produces
-item_32,鸡肉,ji1rou4,chicken,food_drink,word,produces
-item_33,酱油,jiang4you2,sauce,food_drink,word,produces
-item_34,饺子,jiao3zi5,dumpling,food_drink,word,produces
-item_35,酒,jiu3,alcohol,food_drink,word,produces
-item_36,桔子,ju2zi5,orange,food_drink,word,produces
-item_37,咖啡,ka1fei1,coffee,food_drink,word,produces
-item_38,烤鸭,kao3ya1,toasted duck,food_drink,word,produces
-item_39,可乐,ke3le4,coke,food_drink,word,produces
-item_40,口香糖,kou3xiang1tang2,gum,food_drink,word,produces
-item_41,辣椒,la4jiao1,hot pepper,food_drink,word,produces
-item_42,梨,li2,pear,food_drink,word,produces
-item_43,萝卜,luo2bo5,radish,food_drink,word,produces
-item_44,麦片,mai4pian4,oatmeal,food_drink,word,produces
-item_45,馒头,man2tou5,steamed bun,food_drink,word,produces
-item_46,面包,mian4bao1,bread,food_drink,word,produces
-item_47,面条,mian4tiao2,noodles,food_drink,word,produces
-item_48,蘑菇,mo2gu5,mushroom,food_drink,word,produces
-item_49,奶粉,nai3fen3,milk powder,food_drink,word,produces
-item_50,奶酪,nai3lao4,cheese,food_drink,word,produces
-item_51,南瓜,nan2gua1,pumpkin,food_drink,word,produces
-item_52,牛奶,niu2nai3,milk,food_drink,word,produces
-item_53,牛肉,niu2rou4,beef,food_drink,word,produces
-item_54,排骨,pai2gu3,short rib,food_drink,word,produces
-item_55,泡菜,pao4cai4,pickle,food_drink,word,produces
-item_56,苹果,ping2guo3,apple,food_drink,word,produces
-item_57,葡萄,pu2tao5,grapes,food_drink,word,produces
-item_58,葡萄干,pu2tao5gan1,raisin,food_drink,word,produces
-item_59,汽水,qi4shui3,soda pop,food_drink,word,produces
-item_60,巧克力,qiao3ke4li4,chocolate,food_drink,word,produces
-item_61,肉,rou4,meat,food_drink,word,produces
-item_62,三明治,san1ming2zhi4,sandwich,food_drink,word,produces
-item_63,薯条,shu3tiao2,French fries,food_drink,word,produces
-item_64,水,shui3,water,food_drink,word,produces
-item_65,水果,shui3guo3,fruits,food_drink,word,produces
-item_66,酸奶,suan1nai3,yogurt,food_drink,word,produces
-item_67,汤,tang1,soup,food_drink,word,produces
-item_68,糖,tang2,candy; sugar,food_drink,word,produces
-item_69,桃,tao2,peach,food_drink,word,produces
-item_70,土豆,tu3dou4,potato,food_drink,word,produces
-item_71,豌豆,wan1dou4,peas,food_drink,word,produces
-item_72,西瓜,xi1gua1,watermelon,food_drink,word,produces
-item_73,西红柿,xi1hong2shi4,tomato,food_drink,word,produces
-item_74,稀饭,xi1fan4,porridge,food_drink,word,produces
-item_75,香蕉,xiang1jiao1,banana,food_drink,word,produces
-item_76,杏,xing4,apricot,food_drink,word,produces
-item_77,烟,yan1,smoke,food_drink,word,produces
-item_78,盐,yan2,salt,food_drink,word,produces
-item_79,饮料,yin3liao4,drink,food_drink,word,produces
-item_80,油条,you2tiao2,fried bread strips,food_drink,word,produces
-item_81,玉米,yu4mi3,corn,food_drink,word,produces
-item_82,猪肉,zhu1rou4,pork,food_drink,word,produces
-item_83,阿姨,a1yi2,aunt,people,word,produces
-item_84,爸爸,ba4ba5,daddy,people,word,produces
-item_85,宝宝,bao3bao5,baby,people,word,produces
-item_86,保姆,bao3mu3,baby sister,people,word,produces
-item_87,伯伯,bo2bo5,father's brother,people,word,produces
-item_88,厨师,chu2shi1,cook,people,word,produces
-item_89,弟弟,di4di5,younger brother,people,word,produces
-item_90,哥哥,ge1ge5,elder brother,people,word,produces
-item_91,姑姑,gu1gu5,father's sister,people,word,produces
-item_92,护士,hu4shi5,nurse,people,word,produces
-item_93,姐姐,jie3jie5,elder sister,people,word,produces
-item_94,警察,jing3cha2,policeman,people,word,produces
-item_95,舅舅,jiu4jiu5,mother's brother,people,word,produces
-item_96,老师,lao3shi1,teacher,people,word,produces
-item_97,姥姥,lao3lao5,mother's mother,people,word,produces
-item_98,姥爷,lao3ye5,mother's father,people,word,produces
-item_99,妈妈,ma1ma5,mommy,people,word,produces
-item_100,妹妹,mei4mei5,younger sister,people,word,produces
-item_101,奶奶,nai3nai5,grandma,people,word,produces
-item_102,男孩,nan2hai2,boy,people,word,produces
-item_103,女孩,nv3hai2,girl,people,word,produces
-item_104,叔叔,shu1shu5,father's brother,people,word,produces
-item_105,消防队员,xiao1fang2dui4yuan2,fireman,people,word,produces
-item_106,小孩儿,xiao3hair2,child,people,word,produces
-item_107,小朋友,xiao3peng2you3,children,people,word,produces
-item_108,爷爷,ye2ye5,grandpa,people,word,produces
-item_109,医生,yi1sheng1,doctor,people,word,produces
-item_110,姨,yi2,aunt,people,word,produces
-item_111,邮递员,you2di4yuan2,mailman,people,word,produces
-item_112,老奶奶,lao3nai3nai5,grandma,people,word,produces
-item_113,名字,ming2zi5,name,people,word,produces
-item_114,司机,si1ji1,driver,people,word,produces
-item_115,都,dou1,all,quantifiers,word,produces
-item_116,一个,yi2ge5,one,quantifiers,word,produces
-item_117,两个,liang3ge5,two,quantifiers,word,produces
-item_118,多点儿,duo1 dianr3,more; much,quantifiers,word,produces
-item_119,没,mei2,no; have not,quantifiers,word,produces
-item_120,别的,bie2de5,other,quantifiers,word,produces
-item_121,一样,yi2yang4,same,quantifiers,word,produces
-item_122,一点,yi4dianr3,a little,quantifiers,word,produces
-item_123,也,ye3,too,quantifiers,word,produces
-item_124,斑马,ban1ma3,zebra,animals,word,produces
-item_125,长颈鹿,chang2jing3lu4,giraffe,animals,word,produces
-item_126,虫子,chong2zi5,bug,animals,word,produces
-item_127,大象,da4xiang4,elephant,animals,word,produces
-item_128,动物,dong4wu4,animals,animals,word,produces
-item_129,鹅,e2,goose,animals,word,produces
-item_130,鳄鱼,e4yu2,alligator,animals,word,produces
-item_131,公鸡,gong1ji1,rooster,animals,word,produces
-item_132,狗,gou3,dog,animals,word,produces
-item_133,猴子,hou2zi5,monkey,animals,word,produces
-item_134,蝴蝶,hu2die2,butterfly,animals,word,produces
-item_135,鸡,ji1,chicken,animals,word,produces
-item_136,鲸鱼,jing1yu2,whale,animals,word,produces
-item_137,狼,lang2,wolf,animals,word,produces
-item_138,老虎,lao3hu3,tiger,animals,word,produces
-item_139,老鼠,lao3shu3,mouse,animals,word,produces
-item_140,老鹰,lao3ying1,eagle,animals,word,produces
-item_141,鹿,lu4,deer,animals,word,produces
-item_142,驴,lv2,donkey,animals,word,produces
-item_143,马,ma3,horse,animals,word,produces
-item_144,蚂蚁,ma3yi3,ant,animals,word,produces
-item_145,猫,mao1,cat,animals,word,produces
-item_146,猫头鹰,mao1tou2ying1,owl,animals,word,produces
-item_147,梅花鹿,mei2hua1lu4,spotted deer,animals,word,produces
-item_148,蜜蜂,mi4feng1,bee,animals,word,produces
-item_149,母鸡,mu3ji1,hen,animals,word,produces
-item_150,鸟,niao3,bird,animals,word,produces
-item_151,牛,niu2,cow,animals,word,produces
-item_152,企鹅,qi3e2,penguin,animals,word,produces
-item_153,青蛙,qing1wa1,frog,animals,word,produces
-item_154,山羊,shan1yang2,goat,animals,word,produces
-item_155,蛇,she2,snake,animals,word,produces
-item_156,狮子,shi1zi5,lion,animals,word,produces
-item_157,松鼠,song1shu3,squirrel,animals,word,produces
-item_158,兔子,tu4zi5,rabbit; bunny,animals,word,produces
-item_159,乌龟,wu1gui1,turtle,animals,word,produces
-item_160,小鸡,xiao3ji1,chick,animals,word,produces
-item_161,小羊,xiao3yang2,lamb,animals,word,produces
-item_162,熊,xiong2,bear,animals,word,produces
-item_163,熊猫,xiong2mao1,panda,animals,word,produces
-item_164,鸭子,ya1zi5,duck,animals,word,produces
-item_165,羊,yang2,sheep,animals,word,produces
-item_166,鱼,yu2,fish,animals,word,produces
-item_167,猪,zhu1,pig,animals,word,produces
-item_168,苍蝇,cang1ying5,fly,animals,word,produces
-item_169,翅膀,chi4bang3,wing,animals,word,produces
-item_170,大灰狼,da4 hui1lang2,big gray wolf,animals,word,produces
-item_171,鸽子,ge1zi5,pigeon,animals,word,produces
-item_172,狐狸,hu2li5,fox,animals,word,produces
-item_173,蜻蜓,qing1ting2,dragonfly,animals,word,produces
-item_174,蚊子,wen2zi5,mosquito,animals,word,produces
-item_175,比赛,bi3sai4,match,games_routines,word,produces
-item_176,不,bu4,no,games_routines,word,produces
-item_177,不要,bu2yao4,don't,games_routines,word,produces
-item_178,吃饭,chi1fan4,eat,games_routines,word,produces
-item_179,搭积木,da1ji1mu1,building block,games_routines,word,produces
-item_180,打电话,da3 dian4hua4,call on phone,games_routines,word,produces
-item_181,打球,da3qiu2,play ball,games_routines,word,produces
-item_182,等一会儿,deng3 yi2huier4,wait a minute,games_routines,word,produces
-item_183,放屁,fang4pi4,fart,games_routines,word,produces
-item_184,后,hou4,back,games_routines,word,produces
-item_185,拉屎,la1shi3,shit,games_routines,word,produces
-item_186,理发,li3fa4,cut hair,games_routines,word,produces
-item_187,买东西,mai3 dong1xi5,shopping,games_routines,word,produces
-item_188,你好,ni3hao3,hello,games_routines,word,produces
-item_189,前,qian2,front,games_routines,word,produces
-item_190,请,qing3,please,games_routines,word,produces
-item_191,上面,shang4mian5,above,games_routines,word,produces
-item_192,是的,shi4de5,yes,games_routines,word,produces
-item_193,晚安,wan3an1,night night,games_routines,word,produces
-item_194,晚饭,wan3fan4,dinner,games_routines,word,produces
-item_195,喂（打电话）,wei4 (da3 dian4hua4),hello,games_routines,word,produces
-item_196,午饭,wu3fan4,lunch,games_routines,word,produces
-item_197,洗澡,xi3zao3,bath,games_routines,word,produces
-item_198,下面,xia4mian5,under,games_routines,word,produces
-item_199,想要,xiang3yao4,wanna; want to ,games_routines,word,produces
-item_200,谢谢,xie4xie5,thank you,games_routines,word,produces
-item_201,再见,zai4jian4,bye,games_routines,word,produces
-item_202,早饭,zao3fan4,breakfast,games_routines,word,produces
-item_203,转圈,zhuan4quan1,rotate,games_routines,word,produces
-item_204,捉迷藏,zhuo1mi2cang2,hide-and-seek,games_routines,word,produces
-item_205,脸,lian3,face,body_parts,word,produces
-item_206,眉毛,mei2mao5,eyebrow,body_parts,word,produces
-item_207,眼睛,yan3jing5,eye,body_parts,word,produces
-item_208,眼泪,yan3lei4,tear,body_parts,word,produces
-item_209,鼻子,bi2zi5,nose,body_parts,word,produces
-item_210,鼻孔,bi2kong3,nostril,body_parts,word,produces
-item_211,鼻涕,bi2ti4,snot,body_parts,word,produces
-item_212,嘴,zui3,mouth,body_parts,word,produces
-item_213,嘴唇,zui3chun2,lips,body_parts,word,produces
-item_214,牙,ya2,tooth,body_parts,word,produces
-item_215,舌头,she2tou5,tongue,body_parts,word,produces
-item_216,下巴,xiaq4ba5,chin,body_parts,word,produces
-item_217,耳朵,er3duo5,ear,body_parts,word,produces
-item_218,脖子,bo2zi5,neck,body_parts,word,produces
-item_219,肚脐眼儿,du4qi2yanr3,belly button,body_parts,word,produces
-item_220,肚子,du4zi,belly,body_parts,word,produces
-item_221,胳膊,ge1bo5,arm,body_parts,word,produces
-item_222,肩膀,jian1bang3,shoulder,body_parts,word,produces
-item_223,脚,jiao3,foot,body_parts,word,produces
-item_224,脚踝,jiao3huai2,ankle,body_parts,word,produces
-item_225,脚趾,jiao3zhi3,toe,body_parts,word,produces
-item_226,屁股,pi4gu5,butt,body_parts,word,produces
-item_227,手 ,shou3,hand,body_parts,word,produces
-item_228,手指头,shou3zhi3tou5,finger,body_parts,word,produces
-item_229,指甲,zhi3jia5,nail,body_parts,word,produces
-item_230,头,tou2,head,body_parts,word,produces
-item_231,头发,tou2fa5,hair,body_parts,word,produces
-item_232,膝盖,xi1gai4,knee,body_parts,word,produces
-item_233,辫子,bian4zi5,braid,body_parts,word,produces
-item_234,手心,shou3xin1,palm,body_parts,word,produces
-item_235,手背,shou3bei4,back of hand,body_parts,word,produces
-item_236,右手,you4shou3,right hand,body_parts,word,produces
-item_237,左手,zuo3shou3,left hand,body_parts,word,produces
-item_238,腿,tui3,leg,body_parts,word,produces
-item_239,右腿,you4tui3,right leg,body_parts,word,produces
-item_240,左腿,zuo3tui3,left leg,body_parts,word,produces
-item_241,大腿,da4tui3,thigh,body_parts,word,produces
-item_242,小腿,xiao3tui3,calf,body_parts,word,produces
-item_243,心,xin1,heart,body_parts,word,produces
-item_244,新,xin1,new,descriptive_words,word,produces
-item_245,舒服,shu1fu5,comfortable,descriptive_words,word,produces
-item_246,干,gan1,dry,descriptive_words,word,produces
-item_247,漂亮,piao4liang5,pretty,descriptive_words,word,produces
-item_248,小,xiao3,little,descriptive_words,word,produces
-item_249,不对,bu2dui4,wrong,descriptive_words,word,produces
-item_250,好,hao3,good,descriptive_words,word,produces
-item_251,快,kuai4,fast,descriptive_words,word,produces
-item_252,饿,e4,hungry,descriptive_words,word,produces
-item_253,高兴,gao1xing4,happy,descriptive_words,word,produces
-item_254,长,chang2,long,descriptive_words,word,produces
-item_255,冷,leng3,cold,descriptive_words,word,produces
-item_256,渴,ke3,thirsty,descriptive_words,word,produces
-item_257,不怕,bu2pa4,not afraid,descriptive_words,word,produces
-item_258,黄色,huang2se4,yellow,descriptive_words,word,produces
-item_259,脏,zang1,dirty,descriptive_words,word,produces
-item_260,红色,hong2se4,red,descriptive_words,word,produces
-item_261,(吃)没了,(chi1)mei2le5,all gone,descriptive_words,word,produces
-item_262,高,gao1,high; tall,descriptive_words,word,produces
-item_263,桔黄色,ju2huang2se4,orange,descriptive_words,word,produces
-item_264,害怕,hai4pa4,scared,descriptive_words,word,produces
-item_265,好听,hao3ting1,ear-pleasing,descriptive_words,word,produces
-item_266,困,kun4,sleepy,descriptive_words,word,produces
-item_267,好多,hao3duo1,a good deal; a lot,descriptive_words,word,produces
-item_268,不好,bu4hao3,bad,descriptive_words,word,produces
-item_269,满,man3,full,descriptive_words,word,produces
-item_270,凉,liang2,cool,descriptive_words,word,produces
-item_271,湿,shi1,wet,descriptive_words,word,produces
-item_272,蓝色,lan2se4,blue,descriptive_words,word,produces
-item_273,病,bing4,sick,descriptive_words,word,produces
-item_274,白色,bai2se4,white,descriptive_words,word,produces
-item_275,小心,xiao3xin1,careful,descriptive_words,word,produces
-item_276,棕色,zong1se4,brown,descriptive_words,word,produces
-item_277,软,ruan3,soft,descriptive_words,word,produces
-item_278,淘气,tao2qi4,naughty,descriptive_words,word,produces
-item_279,热,re4,hot,descriptive_words,word,produces
-item_280,可爱,ke3ai4,cute,descriptive_words,word,produces
-item_281,坏(人),huai4 (ren2),bad,descriptive_words,word,produces
-item_282,坏了,huai4le5,broken,descriptive_words,word,produces
-item_283,痛,tong4,ache; pain,descriptive_words,word,produces
-item_284,好看,hao3kan4,good-looking,descriptive_words,word,produces
-item_285,穷,qiong2,poor,descriptive_words,word,produces
-item_286,睡着,shui4zhao2,asleep,descriptive_words,word,produces
-item_287,好吃,hao3chi1,tasty,descriptive_words,word,produces
-item_288,安静,an1jing4,quiet,descriptive_words,word,produces
-item_289,绿色,lv4se4,green,descriptive_words,word,produces
-item_290,难看,nan2kan4,ugly,descriptive_words,word,produces
-item_291,重,zhong4,heavy,descriptive_words,word,produces
-item_292,少,shao3,little,descriptive_words,word,produces
-item_293,吵,chao3,noisy,descriptive_words,word,produces
-item_294,多,duo1,many; much; a lot,descriptive_words,word,produces
-item_295,硬,ying4,hard,descriptive_words,word,produces
-item_296,老,lao3,old,descriptive_words,word,produces
-item_297,不许,bu4xu3,cannot,descriptive_words,word,produces
-item_298,粘,nian2,sticky,descriptive_words,word,produces
-item_299,轻,qing1,light,descriptive_words,word,produces
-item_300,慢,man4,slow,descriptive_words,word,produces
-item_301,不行,bu4xing2,cannot,descriptive_words,word,produces
-item_302,饱,bao3,full,descriptive_words,word,produces
-item_303,臭,chou4,smelly,descriptive_words,word,produces
-item_304,累,lei4,tired,descriptive_words,word,produces
-item_305,大,da4,big,descriptive_words,word,produces
-item_306,甜,tian2,sweet,descriptive_words,word,produces
-item_307,最后,zui4hou4,last,descriptive_words,word,produces
-item_308,聪明,cong1ming2,clever; smart,descriptive_words,word,produces
-item_309,第一,di4yi1,first; number one,descriptive_words,word,produces
-item_310,伤心,shang1xin1,sad,descriptive_words,word,produces
-item_311,干净,gan1jing4,clean,descriptive_words,word,produces
-item_312,空的,kong1de5,empty,descriptive_words,word,produces
-item_313,辣,la4,spicy,descriptive_words,word,produces
-item_314,不是,bu2shi4,no,descriptive_words,word,produces
-item_315,乖,guai1,well-behaved,descriptive_words,word,produces
-item_316,烫,tang4,very hot,descriptive_words,word,produces
-item_317,黑色,hei1se4,black,descriptive_words,word,produces
-item_318,(天)黑,(tian1)hei1,dark,descriptive_words,word,produces
-item_319,是,shi4,yes,helping_verbs,word,produces
-item_320,能,neng2,can; could,helping_verbs,word,produces
-item_321,得（你得去）,dei3(ni3 dei3 qu4),have to,helping_verbs,word,produces
-item_322,必须,bi4xu1,must; need to,helping_verbs,word,produces
-item_323,会,hui4,can; will,helping_verbs,word,produces
-item_324,试试,shi4shi5,try to,helping_verbs,word,produces
-item_325,操场,cao1chang3,playground,places,word,produces
-item_326,超市,chao1shi4,store,places,word,produces
-item_327,车棚,che1peng2,shed,places,word,produces
-item_328,城里,cheng2li5,downtown,places,word,produces
-item_329,电影院,dian4ying3yuan4,cinema,places,word,produces
-item_330,动物园,dong4wu4yuan2,zoo,places,word,produces
-item_331,工厂,gong1chang3,factory,places,word,produces
-item_332,公司,gong1si1,company,places,word,produces
-item_333,公园,gong1yuan2,park,places,word,produces
-item_334,海边,hai3bian5,beach,places,word,produces
-item_335,加油站,jia1you2zhan4,gas station,places,word,produces
-item_336,家,jia1,home,places,word,produces
-item_337,森林,sen1lin2,woods,places,word,produces
-item_338,停车场,ting2che1chang3,park,places,word,produces
-item_339,图书馆,tu2shu1guan3,library,places,word,produces
-item_340,幼儿园,you4er2yuan2,kindergarten,places,word,produces
-item_341,医院,yi1yuan4,hospital,places,word,produces
-item_342,饭馆,fan4guan3,restaurant,places,word,produces
-item_343,游乐园,you2le4yuan2,amusement park,places,word,produces
-item_344,船,chuan2,boat; ship,vehicles,word,produces
-item_345,飞机,fei1ji1,airplane,vehicles,word,produces
-item_346,公共汽车,gong1gong4qi4che1,bus,vehicles,word,produces
-item_347,火车,huo3che1,train,vehicles,word,produces
-item_348,吉普车,ji2pu3che1,jeep,vehicles,word,produces
-item_349,警车,jing3che1,police wagon,vehicles,word,produces
-item_350,救护车,jiu4hu4che1,ambulance,vehicles,word,produces
-item_351,救火车,jiu4huo3che1,fire truck,vehicles,word,produces
-item_352,卡车,ka3che1,truck,vehicles,word,produces
-item_353,摩托车,mo2tuo1che1,motorcycle,vehicles,word,produces
-item_354,三轮车,san1lun2che1,tricycle,vehicles,word,produces
-item_355,小汽车,xiao3qi4che1,car,vehicles,word,produces
-item_356,自行车,zi4xing2che1,bicycle,vehicles,word,produces
-item_357,出租车,chu1zu1che1,taxi,vehicles,word,produces
-item_358,和,he2,and,connecting_words,word,produces
-item_359,因为,yin1wei4,because,connecting_words,word,produces
-item_360,但是,dan4shi4,but,connecting_words,word,produces
-item_361,如果,ru2guo3,if,connecting_words,word,produces
-item_362,所以,suo3yi3,so,connecting_words,word,produces
-item_363,然后,ran2hou4,then,connecting_words,word,produces
-item_364,杯子,bei1zi5,cup,household,word,produces
-item_365,被子,bei4zi5,quilt,household,word,produces
-item_366,叉子,cha1zi5,fork,household,word,produces
-item_367,刀,dao1,knife,household,word,produces
-item_368,灯,deng1,lamp,household,word,produces
-item_369,钉子,ding1zi5,nail,household,word,produces
-item_370,肥皂,fei2zao4,soap,household,word,produces
-item_371,罐头,guan4tou5,can,household,word,produces
-item_372,光,guang1,light,household,word,produces
-item_373,光盘,guang1pan2,disk,household,word,produces
-item_374,锅,guo1,boiler,household,word,produces
-item_375,盒子,he2zi5,box,household,word,produces
-item_376,花瓶,hua1ping2,vase,household,word,produces
-item_377,画,hua4,picture,household,word,produces
-item_378,剪刀,jian3dao1,scissors,household,word,produces
-item_379,镜子,jing4zi5,mirror,household,word,produces
-item_380,筷子,kuai4zi5,chopsticks,household,word,produces
-item_381,垃圾,la1ji1,garbage; trash,household,word,produces
-item_382,蜡烛,la4zhu2,candle,household,word,produces
-item_383,毛巾,mao2jin1,towel,household,word,produces
-item_384,毛巾被,mao2jin1bei4,blanket,household,word,produces
-item_385,抹布,ma1bu4,dishcloth,household,word,produces
-item_386,闹钟,nao4zhong1,alarm clock,household,word,produces
-item_387,盘子,pan2zi5,plate,household,word,produces
-item_388,瓶子,ping2zi5,bottle,household,word,produces
-item_389,钱,qian2,money,household,word,produces
-item_390,钱包,qian2bao1,purse,household,word,produces
-item_391,日历,ri4li4,calendar,household,word,produces
-item_392,伞,san3,umbrella,household,word,produces
-item_393,勺子,shao2zi5,spoon,household,word,produces
-item_394,手表,shou3biao3,watch,household,word,produces
-item_395,书包,shu1bao1,bag,household,word,produces
-item_396,梳子 ,shu1zi5,comb,household,word,produces
-item_397,刷子,shua1zi5,brush,household,word,produces
-item_398,水壶,shui3hu2,jug,household,word,produces
-item_399,锁,suo3,lock,household,word,produces
-item_400,毯子,tan3zi5,blanket,household,word,produces
-item_401,条帚,tiao2zhou5,broom,household,word,produces
-item_402,桶,tong3,bucket,household,word,produces
-item_403,拖把,tuo1ba3,mop,household,word,produces
-item_404,碗,wan3,bowl,household,word,produces
-item_405,香皂,xiang1zao4,soap,household,word,produces
-item_406,牙膏,ya2gao1,toothpaste,household,word,produces
-item_407,牙刷,ya2shua1,toothbrush,household,word,produces
-item_408,眼镜,yan3jing4,glasses,household,word,produces
-item_409,遥控器,yao2kong4qi4,remote control,household,word,produces
-item_410,药,yao4,medicine,household,word,produces
-item_411,钥匙,yao4shi5,keys,household,word,produces
-item_412,照相机,zhao4xiang4ji1,camera,household,word,produces
-item_413,针,zhen1,needle,household,word,produces
-item_414,枕头,zhen3tou5,pillow,household,word,produces
-item_415,纸,zhi3,paper,household,word,produces
-item_416,玻璃,bo1li2,glass,household,word,produces
-item_417,痱子粉,fei4zi5fen3,bath powder,household,word,produces
-item_418,花盆,hua1pen2,flowerpot,household,word,produces
-item_419,门铃,men2ling2,doorbell,household,word,produces
-item_420,奶瓶,nai3ping2,feeding-bottle,household,word,produces
-item_421,床单,chuang2dan1,bed sheet,household,word,produces
-item_422,报纸,bao4zhi3,newspaper,household,word,produces
-item_423,电池,dian4chi2,battery,household,word,produces
-item_424,电线,dian4xian4,wire,household,word,produces
-item_425,插座,cha1zuo4,socket,household,word,produces
-item_426,插头,cha1tou2,plug,household,word,produces
-item_427,草,grass,grass,outside,word,produces
-item_428,草地,cao3di4,lawn,outside,word,produces
-item_429,铲子,chan3zi5,shovel,outside,word,produces
-item_430,车轮,che1lun2,wheel,outside,word,produces
-item_431,电梯,dian4ti1,elevator,outside,word,produces
-item_432,房子,fang2zi5,house,outside,word,produces
-item_433,风,feng1,wind,outside,word,produces
-item_434,棍,gun4,stick,outside,word,produces
-item_435,花,hua1,flower,outside,word,produces
-item_436,花园,hua1yuan2,garden,outside,word,produces
-item_437,街道,jie1dao4,street,outside,word,produces
-item_438,楼道,lou2dao4,corridor,outside,word,produces
-item_439,楼房,lou2fang2,building,outside,word,produces
-item_440,楼梯,lou2ti1,stairs,outside,word,produces
-item_441,旗,qi2,flag,outside,word,produces
-item_442,秋千,qiu1qian1,swing,outside,word,produces
-item_443,人行道,ren2xing2dao4,sidewalk,outside,word,produces
-item_444,洒水车,sa3shui3che1,sprinkler,outside,word,produces
-item_445,上班,shang4ban1,go to work,outside,word,produces
-item_446,石头,shi2tou5,stone,outside,word,produces
-item_447,树,shu4,tree,outside,word,produces
-item_448,树叶,shu4ye4,leaf,outside,word,produces
-item_449,水龙头,shui3long2tou2,tap,outside,word,produces
-item_450,太阳,tai4yang2,sun,outside,word,produces
-item_451,梯子,ti1zi5,ladder,outside,word,produces
-item_452,天上,tian1shang4,sky,outside,word,produces
-item_453,外面,wai4mian5,outside,outside,word,produces
-item_454,星星,xing1xing5,star,outside,word,produces
-item_455,雪,xue3,snow,outside,word,produces
-item_456,雪人,xue3ren2,snowman,outside,word,produces
-item_457,游泳池,you2yong3chi2,pool,outside,word,produces
-item_458,雨,yu3,rain,outside,word,produces
-item_459,院子,yuan4zi5,backyard,outside,word,produces
-item_460,月亮,yue4liang5,moon,outside,word,produces
-item_461,云,yun2,cloud,outside,word,produces
-item_462,笔,bi3,pen,toys,word,produces
-item_463,布娃娃,bu4wa2wa5,doll,toys,word,produces
-item_464,粉笔,fen3bi3,chalk,toys,word,produces
-item_465,故事,gu4shi5,story,toys,word,produces
-item_466,滑梯,hua2ti1,sliding board,toys,word,produces
-item_467,积木,ji1mu4,block,toys,word,produces
-item_468,胶水,jiao1shui3,glue,toys,word,produces
-item_469,蜡笔,la4bi3,crayon,toys,word,produces
-item_470,礼物,li3wu4,present,toys,word,produces
-item_471,泡泡,pao4pao5,bubbles,toys,word,produces
-item_472,皮球,pi2qiu2,ball,toys,word,produces
-item_473,气球,qi4qiu2,balloon,toys,word,produces
-item_474,铅笔,qian1bi3,pencil,toys,word,produces
-item_475,跷跷板,qiao1qiao1ban3,teeter totter,toys,word,produces
-item_476,球,qiu2,ball,toys,word,produces
-item_477,球拍,qiu2pai1,bat,toys,word,produces
-item_478,书,shu1,book,toys,word,produces
-item_479,水枪,shui3qiang1,squirt gun,toys,word,produces
-item_480,玩具,wan2ju4,toy,toys,word,produces
-item_481,橡皮泥,xiang4pi2ni2,plasticeme,toys,word,produces
-item_482,游戏,you2xi4,game,toys,word,produces
-item_483,风筝,feng1zheng5,kite,toys,word,produces
-item_484,琴,qin2,string instrument,toys,word,produces
-item_485,贴画,tie1hua4,stick,toys,word,produces
-item_486,(表)演,(biao3)yan3,show,action_words,word,produces
-item_487,爱,ai4,love,action_words,word,produces
-item_488,帮忙,bang1mang2,help,action_words,word,produces
-item_489,帮,bang1,help,action_words,word,produces
-item_490,抱,bao4,hug,action_words,word,produces
-item_491,擦,ca1,wipe,action_words,word,produces
-item_492,猜,cai1,guess,action_words,word,produces
-item_493,藏,cang2,hide,action_words,word,produces
-item_494,尝,chang2,taste,action_words,word,produces
-item_495,唱,chang4,sing,action_words,word,produces
-item_496,吃,chi1,eat,action_words,word,produces
-item_497,穿,chuan1,wear,action_words,word,produces
-item_498,吹,chui1,blow,action_words,word,produces
-item_499,打,da3,hit,action_words,word,produces
-item_500,打开,da3kai1,open,action_words,word,produces
-item_501,打破,da3po4,break,action_words,word,produces
-item_502,打碎,da3sui4,break into pieces,action_words,word,produces
-item_503,打扫,da3sao3,clean; sweep,action_words,word,produces
-item_504,带上,dai4shang5,bring,action_words,word,produces
-item_505,戴,dai4,wear,action_words,word,produces
-item_506,倒(垃圾),dao4 (la1ji1),dump,action_words,word,produces
-item_507,等,deng3,wait,action_words,word,produces
-item_508,掉(下),diao4(xia4),drop,action_words,word,produces
-item_509,跌倒,die1dao3,fall,action_words,word,produces
-item_510,摔倒,shuai1dao3,fall down,action_words,word,produces
-item_511,丢,diu1,lose,action_words,word,produces
-item_512,读,du2,read,action_words,word,produces
-item_513,放,fang4,put,action_words,word,produces
-item_514,飞,fei1,fly,action_words,word,produces
-item_515,分(享),fen1(xiang3),share,action_words,word,produces
-item_516,盖(被子),gai4 (bei4zi5),cover,action_words,word,produces
-item_517,盖(楼房),gai4 (lou2fang2),build,action_words,word,produces
-item_518,赶快,gan3kuai4,hurry,action_words,word,produces
-item_519,给,gei3,give,action_words,word,produces
-item_520,工作,gong1zuo4,job; work,action_words,word,produces
-item_521,干活,gan4huo2,work,action_words,word,produces
-item_522,鼓掌,gu3zhang3,clap,action_words,word,produces
-item_523,拍手,pai1shou3,clap,action_words,word,produces
-item_524,刮风,gua1feng1,blow,action_words,word,produces
-item_525,关(门),guan1(men2),close the door,action_words,word,produces
-item_526,喝,he1,drink,action_words,word,produces
-item_527,挑(选),tiao1 (xuan3),pick,action_words,word,produces
-item_528,滑冰,hua2bing1,skate,action_words,word,produces
-item_529,划(船),hua2 (chuan2),row,action_words,word,produces
-item_530,画画,hua4hua4,draw; paint,action_words,word,produces
-item_531,夹,jia1,nip,action_words,word,produces
-item_532,捡,jian3,pick up,action_words,word,produces
-item_533,讲(故事),jiang3 (gu4shi5),tell story,action_words,word,produces
-item_534,浇,jiao1,water,action_words,word,produces
-item_535,叫,jiao4,cry; shout,action_words,word,produces
-item_536,喊,han3,shout,action_words,word,produces
-item_537,开车,kai1che1,drive,action_words,word,produces
-item_538,开(门),kai1(men2),open the door,action_words,word,produces
-item_539,看,kan4,look,action_words,word,produces
-item_540,哭,ku1,cry,action_words,word,produces
-item_541,拉(手),la1(shou3),pull,action_words,word,produces
-item_542,买,mai3,buy,action_words,word,produces
-item_543,摸,mo1,touch,action_words,word,produces
-item_544,拿,na2,bring; take,action_words,word,produces
-item_545,拿走,na2zou3,take away,action_words,word,produces
-item_546,挠(痒痒),nao1 (yang3yang5),tickle,action_words,word,produces
-item_547,爬,pa2,climb,action_words,word,produces
-item_548,跑,pao3,run,action_words,word,produces
-item_549,泼,po1,pour,action_words,word,produces
-item_550,骑,qi2,ride,action_words,word,produces
-item_551,抢,qiang3,rob,action_words,word,produces
-item_552,敲,qiao1,knock,action_words,word,produces
-item_553,切,qie1,cut,action_words,word,produces
-item_554,亲,qin1,kiss,action_words,word,produces
-item_555,走开,zou3kai1,go away,action_words,word,produces
-item_556,扔,reng1,throw,action_words,word,produces
-item_557,洒,sa3,splash,action_words,word,produces
-item_558,扫地,sao3di4,sweep the floor,action_words,word,produces
-item_559,生病,sheng1bing4,get sick,action_words,word,produces
-item_560,适合,shi4he2,fit,action_words,word,produces
-item_561,梳(头),shu1 (tou2),comb,action_words,word,produces
-item_562,刷牙,shua1ya2,brush teeth,action_words,word,produces
-item_563,睡觉,shui4jiao4,sleep,action_words,word,produces
-item_564,说(话),shuo1 (hua4),say,action_words,word,produces
-item_565,撕,si1,rip,action_words,word,produces
-item_566,讨厌,tao3yan4,hate,action_words,word,produces
-item_567,踢,ti1,kick,action_words,word,produces
-item_568,舔,tian3,lick,action_words,word,produces
-item_569,跳,tiao4,jump,action_words,word,produces
-item_570,跳舞,tiao4wu3,dance,action_words,word,produces
-item_571,听,ting1,listen,action_words,word,produces
-item_572,听见,ting1jian4,hear,action_words,word,produces
-item_573,停,ting2,stop,action_words,word,produces
-item_574,推,tui1,push,action_words,word,produces
-item_575,拖,tuo1,pull,action_words,word,produces
-item_576,做完,zuo4wan2,finish,action_words,word,produces
-item_577,玩,wan2,play,action_words,word,produces
-item_578,喂,wei4,feed,action_words,word,produces
-item_579,洗,xi3,wash,action_words,word,produces
-item_580,喜欢,xi3huan5,like,action_words,word,produces
-item_581,下雨,xia4yu3,rain,action_words,word,produces
-item_582,想,xiang3,think,action_words,word,produces
-item_583,笑,xiao4,smile,action_words,word,produces
-item_584,写,xie3,write,action_words,word,produces
-item_585,醒,xing3,wake,action_words,word,produces
-item_586,修,xiu1,fix,action_words,word,produces
-item_587,摇,yao2,shake,action_words,word,produces
-item_588,咬,yao3,bite,action_words,word,produces
-item_589,要,yao4,want,action_words,word,produces
-item_590,游泳,you2yong3,swim,action_words,word,produces
-item_591,有,you3,have,action_words,word,produces
-item_592,站,zhan4,stand,action_words,word,produces
-item_593,找到,zhao3dao4,find,action_words,word,produces
-item_594,抓,zhua1,catch,action_words,word,produces
-item_595,转(圈),zhuan4(quan1),turn; rotate,action_words,word,produces
-item_596,(假)装,(jia3)zhuang1,pretend,action_words,word,produces
-item_597,撞,zhuang4,bump,action_words,word,produces
-item_598,追,zhui1,chase,action_words,word,produces
-item_599,走,zou3,go; walk,action_words,word,produces
-item_600,走路,zou3lu4,walk,action_words,word,produces
-item_601,坐,zuo4,sit,action_words,word,produces
-item_602,做饭,zuo4fan4,cook,action_words,word,produces
-item_603,踩,cai3,step,action_words,word,produces
-item_604,出来,chu1lai2,come out,action_words,word,produces
-item_605,过来,guo4lai2,come here,action_words,word,produces
-item_606,回来,hui2lai2,come back,action_words,word,produces
-item_607,回家,hui2jia1,go home,action_words,word,produces
-item_608,堆(积木),dui1(ji1mu4),pile,action_words,word,produces
-item_609,插(蜡烛),cha1(la4zhu2),insert,action_words,word,produces
-item_610,(洗澡)喷头,(xi3zao3)pen1tou2,sprayer,furniture_rooms,word,produces
-item_611,冰箱,bing1xiang1,refrigerator,furniture_rooms,word,produces
-item_612,厕所,ce4suo3,W.C.; bathroom,furniture_rooms,word,produces
-item_613,抽屉,chou1ti5,drawer,furniture_rooms,word,produces
-item_614,厨房,chu2fang2,kitchen,furniture_rooms,word,produces
-item_615,窗子,chuang1zi5,window,furniture_rooms,word,produces
-item_616,窗帘,chuang1lian2,curtain,furniture_rooms,word,produces
-item_617,床,chuang2,bed,furniture_rooms,word,produces
-item_618,凳子,deng4zi5,stool,furniture_rooms,word,produces
-item_619,电话,dian4hua4,telephone,furniture_rooms,word,produces
-item_620,电视,dian4shi4,TV,furniture_rooms,word,produces
-item_621,柜子,gui4zi5,cabinet,furniture_rooms,word,produces
-item_622,客厅,ke4ting1,living room,furniture_rooms,word,produces
-item_623,空调,kong1tiao2,air conditioner,furniture_rooms,word,produces
-item_624,炉子,lu2zi5,stove,furniture_rooms,word,produces
-item_625,门,men2,door,furniture_rooms,word,produces
-item_626,暖气,nuan3qi4,heating,furniture_rooms,word,produces
-item_627,沙发,sha1fa1,couch; sofa,furniture_rooms,word,produces
-item_628,书架,shu1jia4,bookshelf,furniture_rooms,word,produces
-item_629,水池,shui3chi2,sink,furniture_rooms,word,produces
-item_630,微波炉,wei1bo1lu2,microwave oven,furniture_rooms,word,produces
-item_631,卧室,wo4shi4,bedroom,furniture_rooms,word,produces
-item_632,屋子,wu1zi5,room,furniture_rooms,word,produces
-item_633,洗衣机,xi3yi1ji1,washer,furniture_rooms,word,produces
-item_634,摇椅,yao2yi3,rocking chair,furniture_rooms,word,produces
-item_635,衣柜,yi1gui4,wardrobe,furniture_rooms,word,produces
-item_636,椅子,yi3zi5,chair,furniture_rooms,word,produces
-item_637,浴缸,yu4gang1,bathtub,furniture_rooms,word,produces
-item_638,浴室,yu4shi4,bathroom,furniture_rooms,word,produces
-item_639,澡盆,zao3pen2,bathtub,furniture_rooms,word,produces
-item_640,桌子,zhuo1zi5,table,furniture_rooms,word,produces
-item_641,电风扇,dian4feng1shan4,fan,furniture_rooms,word,produces
-item_642,电脑,dian4nao3,computer,furniture_rooms,word,produces
-item_643,衣服,yi1fu5,dress,clothing,word,produces
-item_644,雨衣,yu3yi1,raincoat,clothing,word,produces
-item_645,毛衣,mao2yi1,sweater,clothing,word,produces
-item_646,棉衣,mian2yi1,jacket　,clothing,word,produces
-item_647,睡衣,shui4yi1,pajamas,clothing,word,produces
-item_648,大衣,da4yi1,coat,clothing,word,produces
-item_649,西服,xi1fu2,western-style clothes,clothing,word,produces
-item_650,手套,shou3tao4,glove,clothing,word,produces
-item_651,裙子,qun2zi5,skirt,clothing,word,produces
-item_652,帽子,mao4zi5,hat,clothing,word,produces
-item_653,裤子,ku4zi5,pants,clothing,word,produces
-item_654,短裤,duan3ku4,pants; shorts,clothing,word,produces
-item_655,鞋,xie2,shoe,clothing,word,produces
-item_656,雨鞋,yu3xie2,rain boot,clothing,word,produces
-item_657,皮鞋,pi2xie2,leather shoe ,clothing,word,produces
-item_658,拖鞋,tuo1xie2,slippers,clothing,word,produces
-item_659,运动鞋,yun4dong4xie2,sneakers,clothing,word,produces
-item_660,凉鞋,liang2xie2,sandal,clothing,word,produces
-item_661,皮带,pi2dai4,belt,clothing,word,produces
-item_662,围巾,wei2jin1,scarf,clothing,word,produces
-item_663,项链,xiang4lian4,necklace,clothing,word,produces
-item_664,耳环,er3huan2,earring,clothing,word,produces
-item_665,领带,ling3dai4,tie,clothing,word,produces
-item_666,拉链,la1lian4,zipper,clothing,word,produces
-item_667,袜子,wa4zi5,sock,clothing,word,produces
-item_668,珠子,zhu1zi5,beads,clothing,word,produces
-item_669,扣子,kou4zi5,button,clothing,word,produces
-item_670,他(她),ta1,he; she; him,pronouns,word,produces
-item_671,他(她)的,ta1de5,his; her,pronouns,word,produces
-item_672,他们,ta1men5,them,pronouns,word,produces
-item_673,他们的,ta1men5 de5,their,pronouns,word,produces
-item_674,你,ni3,you,pronouns,word,produces
-item_675,你的,ni3de5,your,pronouns,word,produces
-item_676,你们,ni3men5,you,pronouns,word,produces
-item_677,你们的,ni3men5 de5,your,pronouns,word,produces
-item_678,我,wo3,I,pronouns,word,produces
-item_679,我的,wo3de5,mine; my,pronouns,word,produces
-item_680,我们,wo3men5,us; we,pronouns,word,produces
-item_681,我们的,wo3men5 de5,our,pronouns,word,produces
-item_682,我自己,wo3 zi4ji3,myself,pronouns,word,produces
-item_683,这儿,zher4,here,pronouns,word,produces
-item_684,这个,zhe4ge5,this,pronouns,word,produces
-item_685,这些,zhe4xie1,these,pronouns,word,produces
-item_686,那些,na4xie1,those,pronouns,word,produces
-item_687,那儿,nar4,there,pronouns,word,produces
-item_688,那个,na4ge5,that,pronouns,word,produces
-item_689,怎么,zen3me5,how,question_words,word,produces
-item_690,什么,shen2me5,what,question_words,word,produces
-item_691,几点,ji3dian3,when,question_words,word,produces
-item_692,哪里,na3li5,where,question_words,word,produces
-item_693,哪个,na3ge5,which,question_words,word,produces
-item_694,谁,shui2,who,question_words,word,produces
-item_695,为什么,wei4shen2me5,why,question_words,word,produces
-item_696,干吗,gan4ma2,what are you doing?,question_words,word,produces
-item_697,哪儿,nar3,where,question_words,word,produces
-item_698,以前,yi3qian2,before,time_words,word,produces
-item_699,以后,yi3hou4,after,time_words,word,produces
-item_700,今天,jin1tian1,today,time_words,word,produces
-item_701,昨天,zuo2tian1,yesterday,time_words,word,produces
-item_702,明天,ming2tian1,tomorrow,time_words,word,produces
-item_703,白天,bai2tian1,day,time_words,word,produces
-item_704,晚上,wan3shang5,night,time_words,word,produces
-item_705,早上,zao3shang5,morning,time_words,word,produces
-item_706,上午,shang4wu3,morning,time_words,word,produces
-item_707,中午,zhong1wu3,noon,time_words,word,produces
-item_708,下午,xia4wu3,afternoon,time_words,word,produces
-item_709,现在,xian4zai4,now,time_words,word,produces
-item_710,一会,yi2huir4,a while,time_words,word,produces
+itemID,definition,item,gloss,category,type,choices,uni_lemma
+item_1,白菜,bai2cai4,cabbage,food_drink,word,produces,cabbage
+item_2,棒棒糖,bang4bang4tang2,lollipop,food_drink,word,produces,lollipop
+item_3,包子,bao1zi5,staff steamed bun,food_drink,word,produces,
+item_4,爆米花,bao4mi3hua1,popcorn,food_drink,word,produces,
+item_5,冰棍,bing1gun4,popsicle,food_drink,word,produces,
+item_6,冰淇淋,bing1qi2lin2,ice-cream,food_drink,word,produces,ice cream
+item_7,饼干,bing3gan1,cookie,food_drink,word,produces,cookie
+item_8,菜,cai4,dish,food_drink,word,produces,dish
+item_9,菜花,cai4hua1,cauliflower,food_drink,word,produces,
+item_10,草莓,cao3mei2,strawberry,food_drink,word,produces,
+item_11,茶,cha2,tea,food_drink,word,produces,tea
+item_12,醋,cu4,vinegar,food_drink,word,produces,
+item_13,蛋糕,dan4gao1,cake,food_drink,word,produces,cake
+item_14,豆,dou4,beans,food_drink,word,produces,beans
+item_15,豆腐,dou4fu5,tofu,food_drink,word,produces,
+item_16,豆浆,dou4jiang1,soybean milk,food_drink,word,produces,
+item_17,饭,fan4,food,food_drink,word,produces,food
+item_18,方便面,fang1bian4mian4,instant noodle,food_drink,word,produces,
+item_19,蜂蜜,feng1mi4,honey,food_drink,word,produces,honey
+item_20,瓜子,gua1zi3,melon seeds,food_drink,word,produces,
+item_21,果冻,guo3dong4,jelly,food_drink,word,produces,
+item_22,果酱,guo3jiang4,jam,food_drink,word,produces,jam
+item_23,果汁,guo3zhi1,juice,food_drink,word,produces,juice
+item_24,汉堡,han4bao3,hamburger,food_drink,word,produces,
+item_25,核桃,he2tao5,walnut,food_drink,word,produces,
+item_26,胡萝卜,hu2luo2bo5,carrots,food_drink,word,produces,carrots
+item_27,花卷,hua1juan3,steamed twisted roll　,food_drink,word,produces,
+item_28,花生,hua1sheng1,peanut,food_drink,word,produces,peanut
+item_29,黄瓜,huang2gua1,cucumber,food_drink,word,produces,cucumber
+item_30,馄饨,hun2tun2,ravioli,food_drink,word,produces,
+item_31,鸡蛋,ji1dan4,egg,food_drink,word,produces,egg
+item_32,鸡肉,ji1rou4,chicken,food_drink,word,produces,chicken (food)
+item_33,酱油,jiang4you2,sauce,food_drink,word,produces,sauce
+item_34,饺子,jiao3zi5,dumpling,food_drink,word,produces,
+item_35,酒,jiu3,alcohol,food_drink,word,produces,
+item_36,桔子,ju2zi5,orange,food_drink,word,produces,orange (food)
+item_37,咖啡,ka1fei1,coffee,food_drink,word,produces,coffee
+item_38,烤鸭,kao3ya1,toasted duck,food_drink,word,produces,
+item_39,可乐,ke3le4,coke,food_drink,word,produces,
+item_40,口香糖,kou3xiang1tang2,gum,food_drink,word,produces,
+item_41,辣椒,la4jiao1,hot pepper,food_drink,word,produces,pepper
+item_42,梨,li2,pear,food_drink,word,produces,pear
+item_43,萝卜,luo2bo5,radish,food_drink,word,produces,
+item_44,麦片,mai4pian4,oatmeal,food_drink,word,produces,
+item_45,馒头,man2tou5,steamed bun,food_drink,word,produces,
+item_46,面包,mian4bao1,bread,food_drink,word,produces,bread
+item_47,面条,mian4tiao2,noodles,food_drink,word,produces,noodles
+item_48,蘑菇,mo2gu5,mushroom,food_drink,word,produces,
+item_49,奶粉,nai3fen3,milk powder,food_drink,word,produces,
+item_50,奶酪,nai3lao4,cheese,food_drink,word,produces,cheese
+item_51,南瓜,nan2gua1,pumpkin,food_drink,word,produces,
+item_52,牛奶,niu2nai3,milk,food_drink,word,produces,milk
+item_53,牛肉,niu2rou4,beef,food_drink,word,produces,
+item_54,排骨,pai2gu3,short rib,food_drink,word,produces,
+item_55,泡菜,pao4cai4,pickle,food_drink,word,produces,
+item_56,苹果,ping2guo3,apple,food_drink,word,produces,apple
+item_57,葡萄,pu2tao5,grapes,food_drink,word,produces,grapes
+item_58,葡萄干,pu2tao5gan1,raisin,food_drink,word,produces,raisin
+item_59,汽水,qi4shui3,soda pop,food_drink,word,produces,soda
+item_60,巧克力,qiao3ke4li4,chocolate,food_drink,word,produces,chocolate
+item_61,肉,rou4,meat,food_drink,word,produces,meat
+item_62,三明治,san1ming2zhi4,sandwich,food_drink,word,produces,sandwich
+item_63,薯条,shu3tiao2,French fries,food_drink,word,produces,
+item_64,水,shui3,water,food_drink,word,produces,water (beverage)
+item_65,水果,shui3guo3,fruits,food_drink,word,produces,fruit
+item_66,酸奶,suan1nai3,yogurt,food_drink,word,produces,yogurt
+item_67,汤,tang1,soup,food_drink,word,produces,soup
+item_68,糖,tang2,candy; sugar,food_drink,word,produces,sugar
+item_69,桃,tao2,peach,food_drink,word,produces,peach
+item_70,土豆,tu3dou4,potato,food_drink,word,produces,potato
+item_71,豌豆,wan1dou4,peas,food_drink,word,produces,peas
+item_72,西瓜,xi1gua1,watermelon,food_drink,word,produces,watermelon
+item_73,西红柿,xi1hong2shi4,tomato,food_drink,word,produces,tomato
+item_74,稀饭,xi1fan4,porridge,food_drink,word,produces,porridge
+item_75,香蕉,xiang1jiao1,banana,food_drink,word,produces,banana
+item_76,杏,xing4,apricot,food_drink,word,produces,
+item_77,烟,yan1,smoke,food_drink,word,produces,
+item_78,盐,yan2,salt,food_drink,word,produces,
+item_79,饮料,yin3liao4,drink,food_drink,word,produces,drink (beverage)
+item_80,油条,you2tiao2,fried bread strips,food_drink,word,produces,
+item_81,玉米,yu4mi3,corn,food_drink,word,produces,
+item_82,猪肉,zhu1rou4,pork,food_drink,word,produces,
+item_83,阿姨,a1yi2,aunt,people,word,produces,aunt
+item_84,爸爸,ba4ba5,daddy,people,word,produces,daddy
+item_85,宝宝,bao3bao5,baby,people,word,produces,baby
+item_86,保姆,bao3mu3,babysitter,people,word,produces,babysitter
+item_87,伯伯,bo2bo5,father's brother,people,word,produces,uncle
+item_88,厨师,chu2shi1,cook,people,word,produces,
+item_89,弟弟,di4di5,younger brother,people,word,produces,brother
+item_90,哥哥,ge1ge5,elder brother,people,word,produces,brother
+item_91,姑姑,gu1gu5,father's sister,people,word,produces,aunt
+item_92,护士,hu4shi5,nurse,people,word,produces,
+item_93,姐姐,jie3jie5,elder sister,people,word,produces,sister
+item_94,警察,jing3cha2,policeman,people,word,produces,policeman
+item_95,舅舅,jiu4jiu5,mother's brother,people,word,produces,uncle
+item_96,老师,lao3shi1,teacher,people,word,produces,teacher
+item_97,姥姥,lao3lao5,mother's mother,people,word,produces,grandma
+item_98,姥爷,lao3ye5,mother's father,people,word,produces,grandpa
+item_99,妈妈,ma1ma5,mommy,people,word,produces,mommy
+item_100,妹妹,mei4mei5,younger sister,people,word,produces,sister
+item_101,奶奶,nai3nai5,grandma,people,word,produces,grandma
+item_102,男孩,nan2hai2,boy,people,word,produces,boy
+item_103,女孩,nv3hai2,girl,people,word,produces,girl
+item_104,叔叔,shu1shu5,father's brother,people,word,produces,uncle
+item_105,消防队员,xiao1fang2dui4yuan2,fireman,people,word,produces,
+item_106,小孩儿,xiao3hair2,child,people,word,produces,child
+item_107,小朋友,xiao3peng2you3,children,people,word,produces,children
+item_108,爷爷,ye2ye5,grandpa,people,word,produces,grandpa
+item_109,医生,yi1sheng1,doctor,people,word,produces,doctor
+item_110,姨,yi2,aunt,people,word,produces,aunt
+item_111,邮递员,you2di4yuan2,mailman,people,word,produces,
+item_112,老奶奶,lao3nai3nai5,grandma,people,word,produces,grandma
+item_113,名字,ming2zi5,name,people,word,produces,
+item_114,司机,si1ji1,driver,people,word,produces,
+item_115,都,dou1,all,quantifiers,word,produces,all
+item_116,一个,yi2ge5,one,quantifiers,word,produces,a
+item_117,两个,liang3ge5,two,quantifiers,word,produces,
+item_118,多点儿,duo1 dianr3,more; much,quantifiers,word,produces,some more
+item_119,没,mei2,no; have not,quantifiers,word,produces,no
+item_120,别的,bie2de5,other,quantifiers,word,produces,other
+item_121,一样,yi2yang4,same,quantifiers,word,produces,same
+item_122,一点,yi4dianr3,a little,quantifiers,word,produces,a little
+item_123,也,ye3,too,quantifiers,word,produces,also
+item_124,斑马,ban1ma3,zebra,animals,word,produces,
+item_125,长颈鹿,chang2jing3lu4,giraffe,animals,word,produces,giraffe
+item_126,虫子,chong2zi5,bug,animals,word,produces,bug
+item_127,大象,da4xiang4,elephant,animals,word,produces,elephant
+item_128,动物,dong4wu4,animals,animals,word,produces,animal
+item_129,鹅,e2,goose,animals,word,produces,goose
+item_130,鳄鱼,e4yu2,alligator,animals,word,produces,
+item_131,公鸡,gong1ji1,rooster,animals,word,produces,rooster
+item_132,狗,gou3,dog,animals,word,produces,dog
+item_133,猴子,hou2zi5,monkey,animals,word,produces,monkey
+item_134,蝴蝶,hu2die2,butterfly,animals,word,produces,butterfly
+item_135,鸡,ji1,chicken,animals,word,produces,chicken (animal)
+item_136,鲸鱼,jing1yu2,whale,animals,word,produces,
+item_137,狼,lang2,wolf,animals,word,produces,wolf
+item_138,老虎,lao3hu3,tiger,animals,word,produces,tiger
+item_139,老鼠,lao3shu3,mouse,animals,word,produces,mouse
+item_140,老鹰,lao3ying1,eagle,animals,word,produces,
+item_141,鹿,lu4,deer,animals,word,produces,deer
+item_142,驴,lv2,donkey,animals,word,produces,donkey
+item_143,马,ma3,horse,animals,word,produces,horse
+item_144,蚂蚁,ma3yi3,ant,animals,word,produces,ant
+item_145,猫,mao1,cat,animals,word,produces,cat
+item_146,猫头鹰,mao1tou2ying1,owl,animals,word,produces,owl
+item_147,梅花鹿,mei2hua1lu4,spotted deer,animals,word,produces,deer
+item_148,蜜蜂,mi4feng1,bee,animals,word,produces,bee
+item_149,母鸡,mu3ji1,hen,animals,word,produces,hen
+item_150,鸟,niao3,bird,animals,word,produces,bird
+item_151,牛,niu2,cow,animals,word,produces,cow
+item_152,企鹅,qi3e2,penguin,animals,word,produces,penguin
+item_153,青蛙,qing1wa1,frog,animals,word,produces,frog
+item_154,山羊,shan1yang2,goat,animals,word,produces,goat
+item_155,蛇,she2,snake,animals,word,produces,snake
+item_156,狮子,shi1zi5,lion,animals,word,produces,lion
+item_157,松鼠,song1shu3,squirrel,animals,word,produces,squirrel
+item_158,兔子,tu4zi5,rabbit; bunny,animals,word,produces,bunny
+item_159,乌龟,wu1gui1,turtle,animals,word,produces,turtle
+item_160,小鸡,xiao3ji1,chick,animals,word,produces,chick
+item_161,小羊,xiao3yang2,lamb,animals,word,produces,lamb
+item_162,熊,xiong2,bear,animals,word,produces,bear
+item_163,熊猫,xiong2mao1,panda,animals,word,produces,
+item_164,鸭子,ya1zi5,duck,animals,word,produces,duck
+item_165,羊,yang2,sheep,animals,word,produces,sheep
+item_166,鱼,yu2,fish,animals,word,produces,fish (animal)
+item_167,猪,zhu1,pig,animals,word,produces,pig
+item_168,苍蝇,cang1ying5,fly,animals,word,produces,fly
+item_169,翅膀,chi4bang3,wing,animals,word,produces,
+item_170,大灰狼,da4 hui1lang2,big gray wolf,animals,word,produces,wolf
+item_171,鸽子,ge1zi5,pigeon,animals,word,produces,
+item_172,狐狸,hu2li5,fox,animals,word,produces,fox
+item_173,蜻蜓,qing1ting2,dragonfly,animals,word,produces,
+item_174,蚊子,wen2zi5,mosquito,animals,word,produces,mosquito
+item_175,比赛,bi3sai4,match,games_routines,word,produces,
+item_176,不,bu4,no,games_routines,word,produces,no
+item_177,不要,bu2yao4,don't,games_routines,word,produces,don't
+item_178,吃饭,chi1fan4,eat,games_routines,word,produces,eat
+item_179,搭积木,da1ji1mu1,building block,games_routines,word,produces,
+item_180,打电话,da3 dian4hua4,call on phone,games_routines,word,produces,
+item_181,打球,da3qiu2,play ball,games_routines,word,produces,
+item_182,等一会儿,deng3 yi2huier4,wait a minute,games_routines,word,produces,
+item_183,放屁,fang4pi4,fart,games_routines,word,produces,
+item_184,后,hou4,back,games_routines,word,produces,back
+item_185,拉屎,la1shi3,shit,games_routines,word,produces,poop
+item_186,理发,li3fa4,cut hair,games_routines,word,produces,
+item_187,买东西,mai3 dong1xi5,shopping,games_routines,word,produces,
+item_188,你好,ni3hao3,hello,games_routines,word,produces,hello
+item_189,前,qian2,front,games_routines,word,produces,front
+item_190,请,qing3,please,games_routines,word,produces,please
+item_191,上面,shang4mian5,above,games_routines,word,produces,above
+item_192,是的,shi4de5,yes,games_routines,word,produces,yes
+item_193,晚安,wan3an1,night night,games_routines,word,produces,good night
+item_194,晚饭,wan3fan4,dinner,games_routines,word,produces,dinner
+item_195,喂（打电话）,wei4 (da3 dian4hua4),hello,games_routines,word,produces,hello
+item_196,午饭,wu3fan4,lunch,games_routines,word,produces,lunch
+item_197,洗澡,xi3zao3,bath,games_routines,word,produces,bath
+item_198,下面,xia4mian5,under,games_routines,word,produces,under
+item_199,想要,xiang3yao4,wanna; want to,games_routines,word,produces,wanna
+item_200,谢谢,xie4xie5,thank you,games_routines,word,produces,thank you
+item_201,再见,zai4jian4,bye,games_routines,word,produces,bye
+item_202,早饭,zao3fan4,breakfast,games_routines,word,produces,breakfast
+item_203,转圈,zhuan4quan1,rotate,games_routines,word,produces,
+item_204,捉迷藏,zhuo1mi2cang2,hide-and-seek,games_routines,word,produces,hide and seek
+item_205,脸,lian3,face,body_parts,word,produces,face
+item_206,眉毛,mei2mao5,eyebrow,body_parts,word,produces,
+item_207,眼睛,yan3jing5,eye,body_parts,word,produces,eye
+item_208,眼泪,yan3lei4,tear,body_parts,word,produces,tear
+item_209,鼻子,bi2zi5,nose,body_parts,word,produces,nose
+item_210,鼻孔,bi2kong3,nostril,body_parts,word,produces,
+item_211,鼻涕,bi2ti4,snot,body_parts,word,produces,
+item_212,嘴,zui3,mouth,body_parts,word,produces,mouth
+item_213,嘴唇,zui3chun2,lips,body_parts,word,produces,
+item_214,牙,ya2,tooth,body_parts,word,produces,tooth
+item_215,舌头,she2tou5,tongue,body_parts,word,produces,tongue
+item_216,下巴,xiaq4ba5,chin,body_parts,word,produces,chin
+item_217,耳朵,er3duo5,ear,body_parts,word,produces,ear
+item_218,脖子,bo2zi5,neck,body_parts,word,produces,neck
+item_219,肚脐眼儿,du4qi2yanr3,belly button,body_parts,word,produces,belly button
+item_220,肚子,du4zi,belly,body_parts,word,produces,
+item_221,胳膊,ge1bo5,arm,body_parts,word,produces,arm
+item_222,肩膀,jian1bang3,shoulder,body_parts,word,produces,
+item_223,脚,jiao3,foot,body_parts,word,produces,foot
+item_224,脚踝,jiao3huai2,ankle,body_parts,word,produces,
+item_225,脚趾,jiao3zhi3,toe,body_parts,word,produces,toe
+item_226,屁股,pi4gu5,butt,body_parts,word,produces,butt
+item_227,手,shou3,hand,body_parts,word,produces,hand
+item_228,手指头,shou3zhi3tou5,finger,body_parts,word,produces,finger
+item_229,指甲,zhi3jia5,nail,body_parts,word,produces,nail
+item_230,头,tou2,head,body_parts,word,produces,head
+item_231,头发,tou2fa5,hair,body_parts,word,produces,hair
+item_232,膝盖,xi1gai4,knee,body_parts,word,produces,knee
+item_233,辫子,bian4zi5,braid,body_parts,word,produces,
+item_234,手心,shou3xin1,palm,body_parts,word,produces,
+item_235,手背,shou3bei4,back of hand,body_parts,word,produces,
+item_236,右手,you4shou3,right hand,body_parts,word,produces,
+item_237,左手,zuo3shou3,left hand,body_parts,word,produces,
+item_238,腿,tui3,leg,body_parts,word,produces,leg
+item_239,右腿,you4tui3,right leg,body_parts,word,produces,
+item_240,左腿,zuo3tui3,left leg,body_parts,word,produces,
+item_241,大腿,da4tui3,thigh,body_parts,word,produces,
+item_242,小腿,xiao3tui3,calf,body_parts,word,produces,calf
+item_243,心,xin1,heart,body_parts,word,produces,
+item_244,新,xin1,new,descriptive_words,word,produces,new
+item_245,舒服,shu1fu5,comfortable,descriptive_words,word,produces,
+item_246,干,gan1,dry,descriptive_words,word,produces,dry (description)
+item_247,漂亮,piao4liang5,pretty,descriptive_words,word,produces,pretty
+item_248,小,xiao3,little,descriptive_words,word,produces,little (description)
+item_249,不对,bu2dui4,wrong,descriptive_words,word,produces,
+item_250,好,hao3,good,descriptive_words,word,produces,good
+item_251,快,kuai4,fast,descriptive_words,word,produces,fast
+item_252,饿,e4,hungry,descriptive_words,word,produces,hungry
+item_253,高兴,gao1xing4,happy,descriptive_words,word,produces,happy
+item_254,长,chang2,long,descriptive_words,word,produces,
+item_255,冷,leng3,cold,descriptive_words,word,produces,cold
+item_256,渴,ke3,thirsty,descriptive_words,word,produces,thirsty
+item_257,不怕,bu2pa4,not afraid,descriptive_words,word,produces,
+item_258,黄色,huang2se4,yellow,descriptive_words,word,produces,yellow
+item_259,脏,zang1,dirty,descriptive_words,word,produces,dirty
+item_260,红色,hong2se4,red,descriptive_words,word,produces,red
+item_261,(吃)没了,(chi1)mei2le5,all gone,descriptive_words,word,produces,all gone
+item_262,高,gao1,high; tall,descriptive_words,word,produces,high
+item_263,桔黄色,ju2huang2se4,orange,descriptive_words,word,produces,orange (description)
+item_264,害怕,hai4pa4,scared,descriptive_words,word,produces,scared
+item_265,好听,hao3ting1,ear-pleasing,descriptive_words,word,produces,
+item_266,困,kun4,sleepy,descriptive_words,word,produces,sleepy
+item_267,好多,hao3duo1,a good deal; a lot,descriptive_words,word,produces,a lot
+item_268,不好,bu4hao3,bad,descriptive_words,word,produces,bad
+item_269,满,man3,full,descriptive_words,word,produces,full
+item_270,凉,liang2,cool,descriptive_words,word,produces,
+item_271,湿,shi1,wet,descriptive_words,word,produces,wet
+item_272,蓝色,lan2se4,blue,descriptive_words,word,produces,blue
+item_273,病,bing4,sick,descriptive_words,word,produces,sick
+item_274,白色,bai2se4,white,descriptive_words,word,produces,white
+item_275,小心,xiao3xin1,careful,descriptive_words,word,produces,careful
+item_276,棕色,zong1se4,brown,descriptive_words,word,produces,
+item_277,软,ruan3,soft,descriptive_words,word,produces,soft
+item_278,淘气,tao2qi4,naughty,descriptive_words,word,produces,naughty
+item_279,热,re4,hot,descriptive_words,word,produces,hot
+item_280,可爱,ke3ai4,cute,descriptive_words,word,produces,cute
+item_281,坏(人),huai4 (ren2),bad,descriptive_words,word,produces,bad
+item_282,坏了,huai4le5,broken,descriptive_words,word,produces,broken
+item_283,痛,tong4,ache; pain,descriptive_words,word,produces,
+item_284,好看,hao3kan4,good-looking,descriptive_words,word,produces,pretty
+item_285,穷,qiong2,poor,descriptive_words,word,produces,
+item_286,睡着,shui4zhao2,asleep,descriptive_words,word,produces,asleep
+item_287,好吃,hao3chi1,tasty,descriptive_words,word,produces,tasty
+item_288,安静,an1jing4,quiet,descriptive_words,word,produces,
+item_289,绿色,lv4se4,green,descriptive_words,word,produces,green
+item_290,难看,nan2kan4,ugly,descriptive_words,word,produces,ugly
+item_291,重,zhong4,heavy,descriptive_words,word,produces,heavy
+item_292,少,shao3,little,descriptive_words,word,produces,little (amount)
+item_293,吵,chao3,noisy,descriptive_words,word,produces,
+item_294,多,duo1,many; much; a lot,descriptive_words,word,produces,much
+item_295,硬,ying4,hard,descriptive_words,word,produces,hard
+item_296,老,lao3,old,descriptive_words,word,produces,old
+item_297,不许,bu4xu3,cannot,descriptive_words,word,produces,
+item_298,粘,nian2,sticky,descriptive_words,word,produces,
+item_299,轻,qing1,light,descriptive_words,word,produces,light
+item_300,慢,man4,slow,descriptive_words,word,produces,slow
+item_301,不行,bu4xing2,cannot,descriptive_words,word,produces,
+item_302,饱,bao3,full,descriptive_words,word,produces,full
+item_303,臭,chou4,smelly,descriptive_words,word,produces,
+item_304,累,lei4,tired,descriptive_words,word,produces,tired
+item_305,大,da4,big,descriptive_words,word,produces,big
+item_306,甜,tian2,sweet,descriptive_words,word,produces,sweet
+item_307,最后,zui4hou4,last,descriptive_words,word,produces,
+item_308,聪明,cong1ming2,clever; smart,descriptive_words,word,produces,smart
+item_309,第一,di4yi1,first; number one,descriptive_words,word,produces,
+item_310,伤心,shang1xin1,sad,descriptive_words,word,produces,sad
+item_311,干净,gan1jing4,clean,descriptive_words,word,produces,clean (description)
+item_312,空的,kong1de5,empty,descriptive_words,word,produces,empty
+item_313,辣,la4,spicy,descriptive_words,word,produces,
+item_314,不是,bu2shi4,no,descriptive_words,word,produces,no
+item_315,乖,guai1,well-behaved,descriptive_words,word,produces,
+item_316,烫,tang4,very hot,descriptive_words,word,produces,hot
+item_317,黑色,hei1se4,black,descriptive_words,word,produces,black
+item_318,(天)黑,(tian1)hei1,dark,descriptive_words,word,produces,dark
+item_319,是,shi4,yes,helping_verbs,word,produces,yes
+item_320,能,neng2,can; could,helping_verbs,word,produces,can (auxiliary)
+item_321,得（你得去）,dei3(ni3 dei3 qu4),have to,helping_verbs,word,produces,
+item_322,必须,bi4xu1,must; need to,helping_verbs,word,produces,need
+item_323,会,hui4,can; will,helping_verbs,word,produces,can (auxiliary)
+item_324,试试,shi4shi5,try to,helping_verbs,word,produces,
+item_325,操场,cao1chang3,playground,places,word,produces,playground
+item_326,超市,chao1shi4,store,places,word,produces,store
+item_327,车棚,che1peng2,shed,places,word,produces,
+item_328,城里,cheng2li5,downtown,places,word,produces,
+item_329,电影院,dian4ying3yuan4,cinema,places,word,produces,
+item_330,动物园,dong4wu4yuan2,zoo,places,word,produces,zoo
+item_331,工厂,gong1chang3,factory,places,word,produces,
+item_332,公司,gong1si1,company,places,word,produces,
+item_333,公园,gong1yuan2,park,places,word,produces,park
+item_334,海边,hai3bian5,beach,places,word,produces,beach
+item_335,加油站,jia1you2zhan4,gas station,places,word,produces,
+item_336,家,jia1,home,places,word,produces,home
+item_337,森林,sen1lin2,woods,places,word,produces,
+item_338,停车场,ting2che1chang3,park,places,word,produces,park
+item_339,图书馆,tu2shu1guan3,library,places,word,produces,
+item_340,幼儿园,you4er2yuan2,kindergarten,places,word,produces,kindergarten
+item_341,医院,yi1yuan4,hospital,places,word,produces,
+item_342,饭馆,fan4guan3,restaurant,places,word,produces,
+item_343,游乐园,you2le4yuan2,amusement park,places,word,produces,
+item_344,船,chuan2,boat; ship,vehicles,word,produces,boat
+item_345,飞机,fei1ji1,airplane,vehicles,word,produces,airplane
+item_346,公共汽车,gong1gong4qi4che1,bus,vehicles,word,produces,bus
+item_347,火车,huo3che1,train,vehicles,word,produces,train
+item_348,吉普车,ji2pu3che1,jeep,vehicles,word,produces,jeep
+item_349,警车,jing3che1,police wagon,vehicles,word,produces,
+item_350,救护车,jiu4hu4che1,ambulance,vehicles,word,produces,ambulance
+item_351,救火车,jiu4huo3che1,fire truck,vehicles,word,produces,
+item_352,卡车,ka3che1,truck,vehicles,word,produces,truck
+item_353,摩托车,mo2tuo1che1,motorcycle,vehicles,word,produces,motorcycle
+item_354,三轮车,san1lun2che1,tricycle,vehicles,word,produces,
+item_355,小汽车,xiao3qi4che1,car,vehicles,word,produces,car
+item_356,自行车,zi4xing2che1,bicycle,vehicles,word,produces,bicycle
+item_357,出租车,chu1zu1che1,taxi,vehicles,word,produces,
+item_358,和,he2,and,connecting_words,word,produces,with
+item_359,因为,yin1wei4,because,connecting_words,word,produces,
+item_360,但是,dan4shi4,but,connecting_words,word,produces,
+item_361,如果,ru2guo3,if,connecting_words,word,produces,
+item_362,所以,suo3yi3,so,connecting_words,word,produces,
+item_363,然后,ran2hou4,then,connecting_words,word,produces,
+item_364,杯子,bei1zi5,cup,household,word,produces,cup
+item_365,被子,bei4zi5,quilt,household,word,produces,
+item_366,叉子,cha1zi5,fork,household,word,produces,fork
+item_367,刀,dao1,knife,household,word,produces,knife
+item_368,灯,deng1,lamp,household,word,produces,lamp
+item_369,钉子,ding1zi5,nail,household,word,produces,nail
+item_370,肥皂,fei2zao4,soap,household,word,produces,soap
+item_371,罐头,guan4tou5,can,household,word,produces,can
+item_372,光,guang1,light,household,word,produces,light
+item_373,光盘,guang1pan2,disk,household,word,produces,
+item_374,锅,guo1,boiler,household,word,produces,
+item_375,盒子,he2zi5,box,household,word,produces,box
+item_376,花瓶,hua1ping2,vase,household,word,produces,
+item_377,画,hua4,picture,household,word,produces,picture
+item_378,剪刀,jian3dao1,scissors,household,word,produces,scissors
+item_379,镜子,jing4zi5,mirror,household,word,produces,mirror
+item_380,筷子,kuai4zi5,chopsticks,household,word,produces,
+item_381,垃圾,la1ji1,garbage; trash,household,word,produces,trash
+item_382,蜡烛,la4zhu2,candle,household,word,produces,candle
+item_383,毛巾,mao2jin1,towel,household,word,produces,towel
+item_384,毛巾被,mao2jin1bei4,blanket,household,word,produces,blanket
+item_385,抹布,ma1bu4,dishcloth,household,word,produces,
+item_386,闹钟,nao4zhong1,alarm clock,household,word,produces,
+item_387,盘子,pan2zi5,plate,household,word,produces,plate
+item_388,瓶子,ping2zi5,bottle,household,word,produces,bottle
+item_389,钱,qian2,money,household,word,produces,money
+item_390,钱包,qian2bao1,purse,household,word,produces,purse
+item_391,日历,ri4li4,calendar,household,word,produces,
+item_392,伞,san3,umbrella,household,word,produces,umbrella
+item_393,勺子,shao2zi5,spoon,household,word,produces,spoon
+item_394,手表,shou3biao3,watch,household,word,produces,watch (object)
+item_395,书包,shu1bao1,bag,household,word,produces,bag
+item_396,梳子,shu1zi5,comb,household,word,produces,comb (object)
+item_397,刷子,shua1zi5,brush,household,word,produces,brush
+item_398,水壶,shui3hu2,jug,household,word,produces,
+item_399,锁,suo3,lock,household,word,produces,lock
+item_400,毯子,tan3zi5,blanket,household,word,produces,blanket
+item_401,条帚,tiao2zhou5,broom,household,word,produces,broom
+item_402,桶,tong3,bucket,household,word,produces,bucket
+item_403,拖把,tuo1ba3,mop,household,word,produces,
+item_404,碗,wan3,bowl,household,word,produces,bowl
+item_405,香皂,xiang1zao4,soap,household,word,produces,soap
+item_406,牙膏,ya2gao1,toothpaste,household,word,produces,
+item_407,牙刷,ya2shua1,toothbrush,household,word,produces,toothbrush
+item_408,眼镜,yan3jing4,glasses,household,word,produces,glasses
+item_409,遥控器,yao2kong4qi4,remote control,household,word,produces,remote control
+item_410,药,yao4,medicine,household,word,produces,medicine
+item_411,钥匙,yao4shi5,keys,household,word,produces,keys
+item_412,照相机,zhao4xiang4ji1,camera,household,word,produces,camera
+item_413,针,zhen1,needle,household,word,produces,
+item_414,枕头,zhen3tou5,pillow,household,word,produces,pillow
+item_415,纸,zhi3,paper,household,word,produces,paper
+item_416,玻璃,bo1li2,glass,household,word,produces,glass
+item_417,痱子粉,fei4zi5fen3,bath powder,household,word,produces,
+item_418,花盆,hua1pen2,flowerpot,household,word,produces,flowerpot
+item_419,门铃,men2ling2,doorbell,household,word,produces,
+item_420,奶瓶,nai3ping2,feeding-bottle,household,word,produces,
+item_421,床单,chuang2dan1,bed sheet,household,word,produces,
+item_422,报纸,bao4zhi3,newspaper,household,word,produces,
+item_423,电池,dian4chi2,battery,household,word,produces,battery
+item_424,电线,dian4xian4,wire,household,word,produces,
+item_425,插座,cha1zuo4,socket,household,word,produces,
+item_426,插头,cha1tou2,plug,household,word,produces,
+item_427,草,grass,grass,outside,word,produces,grass
+item_428,草地,cao3di4,lawn,outside,word,produces,lawn
+item_429,铲子,chan3zi5,shovel,outside,word,produces,shovel
+item_430,车轮,che1lun2,wheel,outside,word,produces,
+item_431,电梯,dian4ti1,elevator,outside,word,produces,elevator
+item_432,房子,fang2zi5,house,outside,word,produces,house
+item_433,风,feng1,wind,outside,word,produces,wind
+item_434,棍,gun4,stick,outside,word,produces,stick
+item_435,花,hua1,flower,outside,word,produces,flower
+item_436,花园,hua1yuan2,garden,outside,word,produces,garden
+item_437,街道,jie1dao4,street,outside,word,produces,street
+item_438,楼道,lou2dao4,corridor,outside,word,produces,corridor
+item_439,楼房,lou2fang2,building,outside,word,produces,
+item_440,楼梯,lou2ti1,stairs,outside,word,produces,stairs
+item_441,旗,qi2,flag,outside,word,produces,
+item_442,秋千,qiu1qian1,swing,outside,word,produces,swing (object)
+item_443,人行道,ren2xing2dao4,sidewalk,outside,word,produces,
+item_444,洒水车,sa3shui3che1,sprinkler,outside,word,produces,
+item_445,上班,shang4ban1,go to work,outside,word,produces,
+item_446,石头,shi2tou5,stone,outside,word,produces,stone
+item_447,树,shu4,tree,outside,word,produces,tree
+item_448,树叶,shu4ye4,leaf,outside,word,produces,leaf
+item_449,水龙头,shui3long2tou2,tap,outside,word,produces,
+item_450,太阳,tai4yang2,sun,outside,word,produces,sun
+item_451,梯子,ti1zi5,ladder,outside,word,produces,ladder
+item_452,天上,tian1shang4,sky,outside,word,produces,sky
+item_453,外面,wai4mian5,outside,outside,word,produces,outside
+item_454,星星,xing1xing5,star,outside,word,produces,star
+item_455,雪,xue3,snow,outside,word,produces,snow
+item_456,雪人,xue3ren2,snowman,outside,word,produces,
+item_457,游泳池,you2yong3chi2,pool,outside,word,produces,pool
+item_458,雨,yu3,rain,outside,word,produces,rain
+item_459,院子,yuan4zi5,backyard,outside,word,produces,backyard
+item_460,月亮,yue4liang5,moon,outside,word,produces,moon
+item_461,云,yun2,cloud,outside,word,produces,cloud
+item_462,笔,bi3,pen,toys,word,produces,pen
+item_463,布娃娃,bu4wa2wa5,doll,toys,word,produces,doll
+item_464,粉笔,fen3bi3,chalk,toys,word,produces,
+item_465,故事,gu4shi5,story,toys,word,produces,
+item_466,滑梯,hua2ti1,sliding board,toys,word,produces,
+item_467,积木,ji1mu4,block,toys,word,produces,block
+item_468,胶水,jiao1shui3,glue,toys,word,produces,
+item_469,蜡笔,la4bi3,crayon,toys,word,produces,crayon
+item_470,礼物,li3wu4,present,toys,word,produces,present
+item_471,泡泡,pao4pao5,bubbles,toys,word,produces,bubbles
+item_472,皮球,pi2qiu2,ball,toys,word,produces,ball
+item_473,气球,qi4qiu2,balloon,toys,word,produces,balloon
+item_474,铅笔,qian1bi3,pencil,toys,word,produces,
+item_475,跷跷板,qiao1qiao1ban3,teeter totter,toys,word,produces,
+item_476,球,qiu2,ball,toys,word,produces,ball
+item_477,球拍,qiu2pai1,bat,toys,word,produces,
+item_478,书,shu1,book,toys,word,produces,book
+item_479,水枪,shui3qiang1,squirt gun,toys,word,produces,
+item_480,玩具,wan2ju4,toy,toys,word,produces,toy (object)
+item_481,橡皮泥,xiang4pi2ni2,plasticeme,toys,word,produces,
+item_482,游戏,you2xi4,game,toys,word,produces,
+item_483,风筝,feng1zheng5,kite,toys,word,produces,
+item_484,琴,qin2,string instrument,toys,word,produces,
+item_485,贴画,tie1hua4,stick,toys,word,produces,stick
+item_486,(表)演,(biao3)yan3,show,action_words,word,produces,show
+item_487,爱,ai4,love,action_words,word,produces,love
+item_488,帮忙,bang1mang2,help,action_words,word,produces,help
+item_489,帮,bang1,help,action_words,word,produces,help
+item_490,抱,bao4,hug,action_words,word,produces,hug
+item_491,擦,ca1,wipe,action_words,word,produces,wipe
+item_492,猜,cai1,guess,action_words,word,produces,
+item_493,藏,cang2,hide,action_words,word,produces,hide
+item_494,尝,chang2,taste,action_words,word,produces,
+item_495,唱,chang4,sing,action_words,word,produces,sing
+item_496,吃,chi1,eat,action_words,word,produces,eat
+item_497,穿,chuan1,wear,action_words,word,produces,wear
+item_498,吹,chui1,blow,action_words,word,produces,blow
+item_499,打,da3,hit,action_words,word,produces,hit
+item_500,打开,da3kai1,open,action_words,word,produces,open
+item_501,打破,da3po4,break,action_words,word,produces,break
+item_502,打碎,da3sui4,break into pieces,action_words,word,produces,break
+item_503,打扫,da3sao3,clean; sweep,action_words,word,produces,clean (action)
+item_504,带上,dai4shang5,bring,action_words,word,produces,bring
+item_505,戴,dai4,wear,action_words,word,produces,wear
+item_506,倒(垃圾),dao4 (la1ji1),dump,action_words,word,produces,dump
+item_507,等,deng3,wait,action_words,word,produces,wait
+item_508,掉(下),diao4(xia4),drop,action_words,word,produces,drop
+item_509,跌倒,die1dao3,fall,action_words,word,produces,fall
+item_510,摔倒,shuai1dao3,fall down,action_words,word,produces,fall
+item_511,丢,diu1,lose,action_words,word,produces,
+item_512,读,du2,read,action_words,word,produces,read
+item_513,放,fang4,put,action_words,word,produces,put
+item_514,飞,fei1,fly,action_words,word,produces,fly
+item_515,分(享),fen1(xiang3),share,action_words,word,produces,
+item_516,盖(被子),gai4 (bei4zi5),cover,action_words,word,produces,cover
+item_517,盖(楼房),gai4 (lou2fang2),build,action_words,word,produces,
+item_518,赶快,gan3kuai4,hurry,action_words,word,produces,hurry
+item_519,给,gei3,give,action_words,word,produces,give
+item_520,工作,gong1zuo4,job; work,action_words,word,produces,work (action)
+item_521,干活,gan4huo2,work,action_words,word,produces,work (action)
+item_522,鼓掌,gu3zhang3,clap,action_words,word,produces,clap
+item_523,拍手,pai1shou3,clap,action_words,word,produces,clap
+item_524,刮风,gua1feng1,blow,action_words,word,produces,blow
+item_525,关(门),guan1(men2),close the door,action_words,word,produces,close
+item_526,喝,he1,drink,action_words,word,produces,drink (action)
+item_527,挑(选),tiao1 (xuan3),pick,action_words,word,produces,
+item_528,滑冰,hua2bing1,skate,action_words,word,produces,
+item_529,划(船),hua2 (chuan2),row,action_words,word,produces,row row your boat
+item_530,画画,hua4hua4,draw; paint,action_words,word,produces,draw
+item_531,夹,jia1,nip,action_words,word,produces,
+item_532,捡,jian3,pick up,action_words,word,produces,
+item_533,讲(故事),jiang3 (gu4shi5),tell story,action_words,word,produces,
+item_534,浇,jiao1,water,action_words,word,produces,
+item_535,叫,jiao4,cry; shout,action_words,word,produces,cry
+item_536,喊,han3,shout,action_words,word,produces,shout
+item_537,开车,kai1che1,drive,action_words,word,produces,drive
+item_538,开(门),kai1(men2),open the door,action_words,word,produces,open
+item_539,看,kan4,look,action_words,word,produces,look
+item_540,哭,ku1,cry,action_words,word,produces,cry
+item_541,拉(手),la1(shou3),pull,action_words,word,produces,pull
+item_542,买,mai3,buy,action_words,word,produces,buy
+item_543,摸,mo1,touch,action_words,word,produces,touch
+item_544,拿,na2,bring; take,action_words,word,produces,take
+item_545,拿走,na2zou3,take away,action_words,word,produces,take away
+item_546,挠(痒痒),nao1 (yang3yang5),tickle,action_words,word,produces,tickle
+item_547,爬,pa2,climb,action_words,word,produces,climb
+item_548,跑,pao3,run,action_words,word,produces,run
+item_549,泼,po1,pour,action_words,word,produces,
+item_550,骑,qi2,ride,action_words,word,produces,ride
+item_551,抢,qiang3,rob,action_words,word,produces,
+item_552,敲,qiao1,knock,action_words,word,produces,
+item_553,切,qie1,cut,action_words,word,produces,
+item_554,亲,qin1,kiss,action_words,word,produces,kiss
+item_555,走开,zou3kai1,go away,action_words,word,produces,
+item_556,扔,reng1,throw,action_words,word,produces,throw
+item_557,洒,sa3,splash,action_words,word,produces,splash
+item_558,扫地,sao3di4,sweep the floor,action_words,word,produces,sweep
+item_559,生病,sheng1bing4,get sick,action_words,word,produces,
+item_560,适合,shi4he2,fit,action_words,word,produces,
+item_561,梳(头),shu1 (tou2),comb,action_words,word,produces,comb (action)
+item_562,刷牙,shua1ya2,brush teeth,action_words,word,produces,
+item_563,睡觉,shui4jiao4,sleep,action_words,word,produces,sleep
+item_564,说(话),shuo1 (hua4),say,action_words,word,produces,say
+item_565,撕,si1,rip,action_words,word,produces,
+item_566,讨厌,tao3yan4,hate,action_words,word,produces,
+item_567,踢,ti1,kick,action_words,word,produces,kick
+item_568,舔,tian3,lick,action_words,word,produces,lick
+item_569,跳,tiao4,jump,action_words,word,produces,jump
+item_570,跳舞,tiao4wu3,dance,action_words,word,produces,dance
+item_571,听,ting1,listen,action_words,word,produces,hear
+item_572,听见,ting1jian4,hear,action_words,word,produces,hear
+item_573,停,ting2,stop,action_words,word,produces,stop
+item_574,推,tui1,push,action_words,word,produces,push
+item_575,拖,tuo1,pull,action_words,word,produces,pull
+item_576,做完,zuo4wan2,finish,action_words,word,produces,finish
+item_577,玩,wan2,play,action_words,word,produces,play
+item_578,喂,wei4,feed,action_words,word,produces,feed
+item_579,洗,xi3,wash,action_words,word,produces,wash
+item_580,喜欢,xi3huan5,like,action_words,word,produces,love
+item_581,下雨,xia4yu3,rain,action_words,word,produces,rain
+item_582,想,xiang3,think,action_words,word,produces,
+item_583,笑,xiao4,smile,action_words,word,produces,smile
+item_584,写,xie3,write,action_words,word,produces,write
+item_585,醒,xing3,wake,action_words,word,produces,wake
+item_586,修,xiu1,fix,action_words,word,produces,
+item_587,摇,yao2,shake,action_words,word,produces,shake
+item_588,咬,yao3,bite,action_words,word,produces,bite
+item_589,要,yao4,want,action_words,word,produces,need
+item_590,游泳,you2yong3,swim,action_words,word,produces,swim
+item_591,有,you3,have,action_words,word,produces,have
+item_592,站,zhan4,stand,action_words,word,produces,stand
+item_593,找到,zhao3dao4,find,action_words,word,produces,find
+item_594,抓,zhua1,catch,action_words,word,produces,catch
+item_595,转(圈),zhuan4(quan1),turn; rotate,action_words,word,produces,turn
+item_596,(假)装,(jia3)zhuang1,pretend,action_words,word,produces,pretend
+item_597,撞,zhuang4,bump,action_words,word,produces,bump
+item_598,追,zhui1,chase,action_words,word,produces,
+item_599,走,zou3,go; walk,action_words,word,produces,walk
+item_600,走路,zou3lu4,walk,action_words,word,produces,walk
+item_601,坐,zuo4,sit,action_words,word,produces,sit
+item_602,做饭,zuo4fan4,cook,action_words,word,produces,
+item_603,踩,cai3,step,action_words,word,produces,
+item_604,出来,chu1lai2,come out,action_words,word,produces,
+item_605,过来,guo4lai2,come here,action_words,word,produces,
+item_606,回来,hui2lai2,come back,action_words,word,produces,
+item_607,回家,hui2jia1,go home,action_words,word,produces,
+item_608,堆(积木),dui1(ji1mu4),pile,action_words,word,produces,
+item_609,插(蜡烛),cha1(la4zhu2),insert,action_words,word,produces,
+item_610,(洗澡)喷头,(xi3zao3)pen1tou2,sprayer,furniture_rooms,word,produces,
+item_611,冰箱,bing1xiang1,refrigerator,furniture_rooms,word,produces,refrigerator
+item_612,厕所,ce4suo3,W.C.; bathroom,furniture_rooms,word,produces,bathroom
+item_613,抽屉,chou1ti5,drawer,furniture_rooms,word,produces,drawer
+item_614,厨房,chu2fang2,kitchen,furniture_rooms,word,produces,kitchen
+item_615,窗子,chuang1zi5,window,furniture_rooms,word,produces,window
+item_616,窗帘,chuang1lian2,curtain,furniture_rooms,word,produces,curtain
+item_617,床,chuang2,bed,furniture_rooms,word,produces,bed
+item_618,凳子,deng4zi5,stool,furniture_rooms,word,produces,
+item_619,电话,dian4hua4,telephone,furniture_rooms,word,produces,telephone
+item_620,电视,dian4shi4,TV,furniture_rooms,word,produces,tv
+item_621,柜子,gui4zi5,cabinet,furniture_rooms,word,produces,closet
+item_622,客厅,ke4ting1,living room,furniture_rooms,word,produces,living room
+item_623,空调,kong1tiao2,air conditioner,furniture_rooms,word,produces,
+item_624,炉子,lu2zi5,stove,furniture_rooms,word,produces,stove
+item_625,门,men2,door,furniture_rooms,word,produces,door
+item_626,暖气,nuan3qi4,heating,furniture_rooms,word,produces,
+item_627,沙发,sha1fa1,couch; sofa,furniture_rooms,word,produces,couch
+item_628,书架,shu1jia4,bookshelf,furniture_rooms,word,produces,
+item_629,水池,shui3chi2,sink,furniture_rooms,word,produces,sink
+item_630,微波炉,wei1bo1lu2,microwave oven,furniture_rooms,word,produces,
+item_631,卧室,wo4shi4,bedroom,furniture_rooms,word,produces,bedroom
+item_632,屋子,wu1zi5,room,furniture_rooms,word,produces,room
+item_633,洗衣机,xi3yi1ji1,washer,furniture_rooms,word,produces,washing machine
+item_634,摇椅,yao2yi3,rocking chair,furniture_rooms,word,produces,rocking chair
+item_635,衣柜,yi1gui4,wardrobe,furniture_rooms,word,produces,wardrobe
+item_636,椅子,yi3zi5,chair,furniture_rooms,word,produces,chair
+item_637,浴缸,yu4gang1,bathtub,furniture_rooms,word,produces,bathtub
+item_638,浴室,yu4shi4,bathroom,furniture_rooms,word,produces,bathroom
+item_639,澡盆,zao3pen2,bathtub,furniture_rooms,word,produces,bathtub
+item_640,桌子,zhuo1zi5,table,furniture_rooms,word,produces,table
+item_641,电风扇,dian4feng1shan4,fan,furniture_rooms,word,produces,
+item_642,电脑,dian4nao3,computer,furniture_rooms,word,produces,computer
+item_643,衣服,yi1fu5,dress,clothing,word,produces,dress
+item_644,雨衣,yu3yi1,raincoat,clothing,word,produces,
+item_645,毛衣,mao2yi1,sweater,clothing,word,produces,sweater
+item_646,棉衣,mian2yi1,jacket,clothing,word,produces,jacket
+item_647,睡衣,shui4yi1,pajamas,clothing,word,produces,pajamas
+item_648,大衣,da4yi1,coat,clothing,word,produces,coat
+item_649,西服,xi1fu2,western-style clothes,clothing,word,produces,
+item_650,手套,shou3tao4,glove,clothing,word,produces,gloves
+item_651,裙子,qun2zi5,skirt,clothing,word,produces,skirt
+item_652,帽子,mao4zi5,hat,clothing,word,produces,hat
+item_653,裤子,ku4zi5,pants,clothing,word,produces,pants
+item_654,短裤,duan3ku4,pants; shorts,clothing,word,produces,shorts
+item_655,鞋,xie2,shoe,clothing,word,produces,shoe
+item_656,雨鞋,yu3xie2,rain boot,clothing,word,produces,
+item_657,皮鞋,pi2xie2,leather shoe,clothing,word,produces,
+item_658,拖鞋,tuo1xie2,slippers,clothing,word,produces,slipper
+item_659,运动鞋,yun4dong4xie2,sneakers,clothing,word,produces,
+item_660,凉鞋,liang2xie2,sandal,clothing,word,produces,sandals
+item_661,皮带,pi2dai4,belt,clothing,word,produces,
+item_662,围巾,wei2jin1,scarf,clothing,word,produces,scarf
+item_663,项链,xiang4lian4,necklace,clothing,word,produces,necklace
+item_664,耳环,er3huan2,earring,clothing,word,produces,
+item_665,领带,ling3dai4,tie,clothing,word,produces,
+item_666,拉链,la1lian4,zipper,clothing,word,produces,zipper
+item_667,袜子,wa4zi5,sock,clothing,word,produces,sock
+item_668,珠子,zhu1zi5,beads,clothing,word,produces,beads
+item_669,扣子,kou4zi5,button,clothing,word,produces,button
+item_670,他(她),ta1,he; she; him,pronouns,word,produces,he
+item_671,他(她)的,ta1de5,his; her,pronouns,word,produces,his
+item_672,他们,ta1men5,them,pronouns,word,produces,them
+item_673,他们的,ta1men5 de5,their,pronouns,word,produces,
+item_674,你,ni3,you,pronouns,word,produces,you
+item_675,你的,ni3de5,your,pronouns,word,produces,your
+item_676,你们,ni3men5,you,pronouns,word,produces,you
+item_677,你们的,ni3men5 de5,your,pronouns,word,produces,your
+item_678,我,wo3,I,pronouns,word,produces,I
+item_679,我的,wo3de5,mine; my,pronouns,word,produces,my
+item_680,我们,wo3men5,us; we,pronouns,word,produces,we
+item_681,我们的,wo3men5 de5,our,pronouns,word,produces,our
+item_682,我自己,wo3 zi4ji3,myself,pronouns,word,produces,
+item_683,这儿,zher4,here,pronouns,word,produces,here
+item_684,这个,zhe4ge5,this,pronouns,word,produces,this
+item_685,这些,zhe4xie1,these,pronouns,word,produces,these
+item_686,那些,na4xie1,those,pronouns,word,produces,those
+item_687,那儿,nar4,there,pronouns,word,produces,there
+item_688,那个,na4ge5,that,pronouns,word,produces,that
+item_689,怎么,zen3me5,how,question_words,word,produces,how
+item_690,什么,shen2me5,what,question_words,word,produces,what
+item_691,几点,ji3dian3,when,question_words,word,produces,when (question)
+item_692,哪里,na3li5,where,question_words,word,produces,where
+item_693,哪个,na3ge5,which,question_words,word,produces,which (question)
+item_694,谁,shui2,who,question_words,word,produces,who
+item_695,为什么,wei4shen2me5,why,question_words,word,produces,why
+item_696,干吗,gan4ma2,what are you doing?,question_words,word,produces,
+item_697,哪儿,nar3,where,question_words,word,produces,where
+item_698,以前,yi3qian2,before,time_words,word,produces,
+item_699,以后,yi3hou4,after,time_words,word,produces,after
+item_700,今天,jin1tian1,today,time_words,word,produces,today
+item_701,昨天,zuo2tian1,yesterday,time_words,word,produces,yesterday
+item_702,明天,ming2tian1,tomorrow,time_words,word,produces,tomorrow
+item_703,白天,bai2tian1,day,time_words,word,produces,day
+item_704,晚上,wan3shang5,night,time_words,word,produces,night
+item_705,早上,zao3shang5,morning,time_words,word,produces,morning
+item_706,上午,shang4wu3,morning,time_words,word,produces,morning
+item_707,中午,zhong1wu3,noon,time_words,word,produces,
+item_708,下午,xia4wu3,afternoon,time_words,word,produces,
+item_709,现在,xian4zai4,now,time_words,word,produces,now
+item_710,一会,yi2huir4,a while,time_words,word,produces,

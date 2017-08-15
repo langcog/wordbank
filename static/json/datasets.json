@@ -2,7 +2,7 @@
     {
         "name": "Marchman",
         "dataset": "Norming",
-        "instrument_language": "English",
+        "instrument_language": "English (American)",
         "instrument_form": "WS",
         "file": "raw_data/English_WS/EnglishWS_Marchman_Norming.csv",
         "splitcol": false,
@@ -15,7 +15,7 @@
     {
         "name": "Marchman",
         "dataset": "Wisconsin",
-        "instrument_language": "English",
+        "instrument_language": "English (American)",
         "instrument_form": "WS",
         "file": "raw_data/English_WS/EnglishWS_Marchman_Wisconsin.csv",
         "splitcol": false,
@@ -28,7 +28,7 @@
     {
         "name": "Marchman",
         "dataset": "Dallas",
-        "instrument_language": "English",
+        "instrument_language": "English (American)",
         "instrument_form": "WS",
         "file": "raw_data/English_WS/EnglishWS_Marchman_Dallas.csv",
         "splitcol": false,
@@ -41,7 +41,7 @@
     {
         "name": "Smith",
         "dataset": "electronic",
-        "instrument_language": "English",
+        "instrument_language": "English (American)",
         "instrument_form": "WS",
         "file": "raw_data/English_WS/EnglishWS_Smith_electronic.csv",
         "splitcol": false,
@@ -54,7 +54,7 @@
     {
         "name": "Smith",
         "dataset": "paper",
-        "instrument_language": "English",
+        "instrument_language": "English (American)",
         "instrument_form": "WS",
         "file": "raw_data/English_WS/EnglishWS_Smith_paper.csv",
         "splitcol": false,
@@ -67,7 +67,7 @@
     {
         "name": "Byers",
         "dataset": "",
-        "instrument_language": "English",
+        "instrument_language": "English (American)",
         "instrument_form": "WS",
         "file": "raw_data/English_WS/EnglishWS_Byers.csv",
         "splitcol": false,
@@ -80,7 +80,7 @@
     {
         "name": "Thal",
         "dataset": "16",
-        "instrument_language": "English",
+        "instrument_language": "English (American)",
         "instrument_form": "WS",
         "file": "raw_data/English_WS/EnglishWS_Thal_16.csv",
         "splitcol": false,
@@ -93,7 +93,7 @@
     {
         "name": "Thal",
         "dataset": "28",
-        "instrument_language": "English",
+        "instrument_language": "English (American)",
         "instrument_form": "WS",
         "file": "raw_data/English_WS/EnglishWS_Thal_28.csv",
         "splitcol": false,
@@ -106,7 +106,7 @@
     {
         "name": "Marchman",
         "dataset": "Norming",
-        "instrument_language": "English",
+        "instrument_language": "English (American)",
         "instrument_form": "WG",
         "file": "raw_data/English_WG/EnglishWG_Marchman_Norming.csv",
         "splitcol": true,
@@ -119,7 +119,7 @@
     {
         "name": "Byers",
         "dataset": "",
-        "instrument_language": "English",
+        "instrument_language": "English (American)",
         "instrument_form": "WG",
         "file": "raw_data/English_WG/EnglishWG_Byers.csv",
         "splitcol": false,
@@ -132,7 +132,7 @@
     {
         "name": "Thal",
         "dataset": "13",
-        "instrument_language": "English",
+        "instrument_language": "English (American)",
         "instrument_form": "WG",
         "file": "raw_data/English_WG/EnglishWG_Thal_13.csv",
         "splitcol": true,
@@ -145,7 +145,7 @@
     {
         "name": "Thal",
         "dataset": "16",
-        "instrument_language": "English",
+        "instrument_language": "English (American)",
         "instrument_form": "WG",
         "file": "raw_data/English_WG/EnglishWG_Thal_16.csv",
         "splitcol": true,
@@ -441,7 +441,7 @@
     {
         "name": "Frank",
         "dataset": "xsface",
-        "instrument_language": "English",
+        "instrument_language": "English (American)",
         "instrument_form": "WG",
         "file": "raw_data/English_WG/EnglishWG_Frank_xsface.csv",
         "splitcol": false,
@@ -704,7 +704,7 @@
     {
         "name": "Kalashnikova",
         "dataset": "",
-        "instrument_language": "Australian English",
+        "instrument_language": "English (Australian)",
         "instrument_form": "WS",
         "file": "raw_data/Australian_WS/AustralianWS_Kalashnikova.csv",
         "splitcol": false,
@@ -791,14 +791,40 @@
     {
         "name": "Marchman",
         "dataset": "Outreach1",
-        "instrument_language": "English",
+        "instrument_language": "English (American)",
         "instrument_form": "WS",
         "file": "raw_data/English_WS/EnglishWS_Marchman_Outreach1.csv",
         "splitcol": false,
         "norming": false,
         "longitudinal": false,
         "date_format": "%m/%d/%Y",
-        "contributor": "Virginia Marchman, Stanford University",
+        "contributor": "Anne Fernald, Stanford University",
         "citation": "​Fernald, A., Marchman, V. A., & Weisleder, A. (2013). SES differences in language processing skill and vocabulary are evident at 18 months. Developmental Science, 16, 234–248. http://doi.org/10.1111/desc.12019"
+    },
+    {
+        "name": "Fernald",
+        "dataset": "Outreach",
+        "instrument_language": "Spanish",
+        "instrument_form": "WG",
+        "file": "raw_data/Spanish_WG/SpanishWG_Fernald_Outreach.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": true,
+        "date_format": "%Y-%m-%d",
+        "contributor": "Anne Fernald, Stanford University",
+        "citation": "​Weisleder, A., & Fernald, A. (2013). Talking to children matters: Early language experience strengthens processing and builds vocabulary. Psychological Science, 24, 2143–2152. http://doi.org/10.1177/0956797613488145"
+    },
+    {
+        "name": "Fernald",
+        "dataset": "Outreach",
+        "instrument_language": "Spanish",
+        "instrument_form": "WS",
+        "file": "raw_data/Spanish_WS/SpanishWS_Fernald_Outreach.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": true,
+        "date_format": "%Y-%m-%d",
+        "contributor": "Anne Fernald, Stanford University",
+        "citation": "​Weisleder, A., & Fernald, A. (2013). Talking to children matters: Early language experience strengthens processing and builds vocabulary. Psychological Science, 24, 2143–2152. http://doi.org/10.1177/0956797613488145"
     }
 ]
