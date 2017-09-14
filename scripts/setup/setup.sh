@@ -1,5 +1,6 @@
 #!/bin/bash
 
+sudo apt-get update
 sudo apt-get install mysql-server mysql-client
 sudo apt-get install apache2
 sudo apt-get install libapache2-mod-python
@@ -25,18 +26,18 @@ sudo pip install -r wordbank/requirements.txt
 
 cd
 #Install Apache Runtime Library
-wget http://mirror.olnevhost.net/pub/apache/apr/apr-1.5.2.tar.gz
-tar -xvzf apr-1.5.2.tar.gz
-cd apr-1.5.2
+wget http://mirror.olnevhost.net/pub/apache/apr/apr-1.6.2.tar.gz
+tar -xvzf apr-1.6.2.tar.gz
+cd apr-1.6.2
 ./configure
 make
 sudo make install
 cd
 
 #Install APR Util
-wget http://mirror.olnevhost.net/pub/apache/apr/apr-util-1.5.4.tar.gz
-tar -xvzf apr-util-1.5.4.tar.gz
-cd apr-util-1.5.4
+wget http://mirror.olnevhost.net/pub/apache/apr/apr-util-1.6.0.tar.gz
+tar -xvzf apr-util-1.6.0.tar.gz
+cd apr-util-1.6.0
 ./configure --with-apr=/usr/local/apr
 make
 sudo make install
