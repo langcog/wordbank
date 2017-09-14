@@ -1,0 +1,33 @@
+# Instruct Shiny Server to run applications as the user "shiny"
+run_as ubuntu;
+
+# Define a server that listens on port 3838
+server {
+  listen 80;
+
+  # Define a location at the base URL
+  location / {
+
+    utilization_scheduler 20 .9 3;
+
+    # Host the directory of Shiny Apps stored in this directory
+    #site_dir /srv/shiny-server;
+    site_dir /mnt/wordbank/shiny_apps;
+
+    # Log all Shiny output to files in this directory
+    log_dir /var/log/shiny-server;
+
+    # When a user visits the base URL rather than a particular application,
+    # an index of the applications available in this directory will be shown.
+    directory_index on;
+  }
+}
+
+# Setup a flat-file authentication system. {.pro}
+auth_passwd_file /etc/shiny-server/passwd;
+
+# Define a default admin interface to be run on port 4151. {.pro}
+admin 4151 {
+  # Only permit the user named `admin` to access the admin interface.
+  required_user admin;
+}
