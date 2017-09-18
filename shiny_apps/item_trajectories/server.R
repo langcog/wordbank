@@ -39,8 +39,8 @@ trajectory_data_fun <- function(admins, fun_instrument, fun_measure,
   instrument_word_data <- function(inst_id) {
     inst <- filter(fun_instrument, instrument_id == inst_id)
     word_ids <- inst$words_by_definition[[1]][fun_words]
-    get_instrument_data(instrument_language = inst$language,
-                        instrument_form = inst$form,
+    get_instrument_data(inst$language,
+                        inst$form,
                         items = word_ids[!is.na(word_ids)],
                         administrations = admins,
                         mode = mode) %>%
