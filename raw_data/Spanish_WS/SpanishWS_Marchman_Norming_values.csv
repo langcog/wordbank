@@ -1,3 +1,12 @@
 type,value,data_value
+sex,M,male
+sex,F,female
+mom_ed,none,
+mom_ed,none,0
+mom_ed,none,1
+mom_ed,primary,2
+mom_ed,primary,3
+mom_ed,some secondary,4
+mom_ed,some college,5
 word,produces,1
 word,,0
