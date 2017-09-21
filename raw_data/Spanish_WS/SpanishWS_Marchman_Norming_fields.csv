@@ -1,7 +1,13 @@
 field,column,group,type
 study_id,id,child,study_id
-data_age,cdiage,admin,data_age
 ,months,,
+birth_order,birthord,child,birth_order
+sex,sex,child,sex
+mom_ed,momsed,child,mom_ed
+,prematur,,
+,id_1,,
+data_age,cdiage,admin,data_age
+,months_1,,
 item_11,am,item,word
 item_12,ay,item,word
 item_10,beemee,item,word
