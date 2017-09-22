@@ -73,7 +73,7 @@ Set up AWS configuration
 	aws s3 cp s3://wordbank-backup/$KEY ~/wordbank.sql 
 Recreating Wordbank:
 	https://stackoverflow.com/a/41793945/7233641
-	echo -e '\n\n[mysqld]\nskip-grant-tables' | sudo tee -a /etc/mysql/my.cnf
+	sudo cp wordbank/scripts/setup/my.cnf /etc/mysql/my.cnf
 	sudo service mysql restart
 	mysql -u root
 	flush privileges;
@@ -83,15 +83,17 @@ Recreating Wordbank:
 	flush privileges;
 	ALTER USER 'root'@'localhost' IDENTIFIED BY '';
 	\q
-	head -n -2 /etc/mysql/my.cnf  | sudo tee /etc/mysql/my.cnf
+	sudo sed -i '/skip-grant-tables/d' /etc/mysql/my.cnf
 	sudo service mysql restart
 	mysql -u root
 	CREATE USER 'wordbank'@'localhost' IDENTIFIED BY 'wordbank';
+	CREATE USER 'wordbank'@'%' IDENTIFIED BY 'wordbank';
 	CREATE USER 'ubuntu'@'localhost';
 	CREATE USER ''@'localhost';
-	GRANT ALL PRIVILEGES ON wordbank.* TO 'wordbank'@'localhost' WITH GRANT OPTION;
 	GRANT ALL PRIVILEGES ON wordbank.* TO ''@'localhost' WITH GRANT OPTION;
 	GRANT ALL PRIVILEGES ON *.* TO 'ubuntu'@'localhost' WITH GRANT OPTION;
+	GRANT SELECT ON wordbank.* to 'wordbank'@'%' IDENTIFIED BY 'wordbank';
+	GRANT SELECT ON wordbank.* to 'wordbank'@'localhost' IDENTIFIED BY 'wordbank';
 	flush privileges;
 	CREATE DATABASE wordbank;
 	use wordbank;
