@@ -12,8 +12,10 @@ var sexChart = dc.pieChart('#sexChart');
 var momedChart = dc.rowChart('#momedChart')
 var birthorderChart = dc.rowChart('#birthorderChart')
 
-var pieChartWidth = 220;
-var pieChartRadius = 110;
+var pieChartWidth = 450;
+var pieChartHeight = 300;
+var pieChartRadius = 100;
+var barAgeLanguageHeight = 450;
 
 var ageChild = data.dimension(function(d) {
   return d['age'];
@@ -58,7 +60,7 @@ var birthordersGroup = birthorders.group().reduceSum(function(d) {
 });
 
 ageChildChart.width(700)
-             .height(300)
+             .height(barAgeLanguageHeight)
              .margins({top: 20, right: 40, bottom: 32, left: 40})
              .dimension(ageChild)
              .group(ageChildGroup)
@@ -73,7 +75,7 @@ ageChildChart.width(700)
              });
 
 momedChart.width(330)
-        .height(220)
+        .height(250)
         .dimension(momeds)
 //        .margins({top: 20, right: 40, bottom: 45, left: 40})
         .group(momedsGroup)
@@ -87,7 +89,7 @@ momedChart.width(330)
 //        .xAxisLabel('')
 
 birthorderChart.width(330)
-        .height(220)
+        .height(250)
         .dimension(birthorders)
 //        .margins({top: 20, right: 40, bottom: 45, left: 40})
         .group(birthordersGroup)
@@ -101,7 +103,7 @@ birthorderChart.width(330)
 //        .xAxisLabel('')
 
 languagesChart.width(400)
-        .height(300)
+        .height(barAgeLanguageHeight)
         .dimension(languages)
         .margins({top: 20, right: 40, bottom: 45, left: 40})
         .group(languagesGroup)
@@ -127,19 +129,22 @@ languagesChart.width(400)
 //        .transitionDuration(500)
 
 instrumentsChart.width(pieChartWidth)
-        .height(pieChartWidth)
+        .height(pieChartHeight)
         .radius(pieChartRadius)
         .dimension(instruments)
         .group(instrumentsGroup)
+        .slicesCap(5)
         .label(function (d) {
 //              return d.key;
             return d.key + ": " + d.value;
         })
+        .externalLabels(25)
+        .minAngleForLabel(0.1)
         .renderLabel(true)
         .transitionDuration(500)
 
 sexChart.width(pieChartWidth)
-        .height(pieChartWidth)
+        .height(pieChartHeight)
         .radius(pieChartRadius)
         .dimension(sexes)
         .group(sexesGroup)
@@ -147,6 +152,8 @@ sexChart.width(pieChartWidth)
 //              return d.key;
             return d.key + ": " + d.value;
         })
+        .externalLabels(25)
+        .minAngleForLabel(0.1)
         .renderLabel(true)
         .transitionDuration(500)
 
