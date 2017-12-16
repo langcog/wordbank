@@ -74,7 +74,7 @@ item_72,snowsuit,word,clothing,understands; produces,snowsuit,snowsuit,snowsuit
 item_73,sock,word,clothing,understands; produces,sock,sock,sock
 item_74,cardiganjumper,word,clothing,understands; produces,cardigan/jumper,cardigan/jumper,sweater
 item_75,tights,word,clothing,understands; produces,tights,tights,tights
-item_76,knickerspants,word,clothing,understands; produces,knickers/pants,knickers/pants,underwear
+item_76,knickerspants,word,clothing,understands; produces,knickers/pants,knickers/pants,underpants
 item_77,zip,word,clothing,understands; produces,zip,zip,zipper
 item_78,plaster,word,household,understands; produces,plaster,plaster,
 item_79,basket,word,household,understands; produces,basket,basket,
@@ -115,7 +115,7 @@ item_113,tissue,word,household,understands; produces,tissue,tissue,tissue
 item_114,toothbrush,word,household,understands; produces,toothbrush,toothbrush,toothbrush
 item_115,towel,word,household,understands; produces,towel,towel,towel
 item_116,rubbish,word,household,understands; produces,rubbish,rubbish,trash
-item_117,vaccuumhoover,word,household,understands; produces,vaccuum/hoover,vaccuum/hoover,
+item_117,vaccuumhoover,word,household,understands; produces,vaccuum/hoover,vaccuum/hoover,vacuum
 item_118,wristwatch,word,household,understands; produces,wristwatch,wristwatch,watch (object)
 item_119,aunt,word,people,understands; produces,aunt,aunt,aunt
 item_120,baby,word,people,understands; produces,baby,baby,baby
@@ -161,7 +161,7 @@ item_159,chicken,word,food_drink,understands; produces,chicken,chicken,chicken (
 item_160,chocolate,word,food_drink,understands; produces,chocolate,chocolate,chocolate
 item_161,coffee,word,food_drink,understands; produces,coffee,coffee,coffee
 item_162,coke,word,food_drink,understands; produces,coke,coke,soda
-item_163,biscuit,word,food_drink,understands; produces,biscuit,biscuit,biscuit
+item_163,biscuit,word,food_drink,understands; produces,biscuit,biscuit,cookie
 item_164,corn,word,food_drink,understands; produces,corn,corn,
 item_165,cracker,word,food_drink,understands; produces,cracker,cracker,cracker
 item_166,doughnut,word,food_drink,understands; produces,doughnut,doughnut,
