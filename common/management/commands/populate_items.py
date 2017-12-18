@@ -31,6 +31,14 @@ class Command(BaseCommand):
             input_instruments = filter(lambda instrument: instrument['language'] == input_language and
                                                           instrument['form'] == input_form,
                                        instruments)
+        elif options['language'] and not options['form']:
+            input_language = options['language']
+            input_instruments = filter(lambda instrument: instrument['language'] == input_language,
+                                       instruments)
+        elif not options['language'] and options['form']:
+            input_form = options['form']
+            input_instruments = filter(lambda instrument: instrument['form'] == input_form,
+                                       instruments)
         else:
             input_instruments = instruments
 
