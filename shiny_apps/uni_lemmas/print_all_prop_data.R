@@ -2,11 +2,7 @@
 # Modified section of Mika Braginky's "mikabr/aoa-prediction" repository on age of acquisition estimation:
 # https://github.com/mikabr/aoa-prediction/blob/master/aoa_estimation/aoa_estimation.Rmd
 
-library(dplyr)
-library(tidyr)
-library(purrr)
-library(readr)
-library(ggplot2)
+library(tidyverse)
 library(langcog)
 library(wordbankr)
 library(boot)
@@ -18,7 +14,7 @@ strip.background = element_blank()))
 font <- "Open Sans"
 
 # Connect to the Wordbank database and pull out the raw data.
-data_mode <- "local"
+data_mode <- "remote"
 
 admins <- get_administration_data(mode = data_mode) %>%
 select(data_id, age, language, form)
@@ -73,8 +69,6 @@ filter(measure == "produces" | form %in% c("WG","IC"))
 raw_data <- words %>%
 split(.$language) %>%
 map(get_lang_data)
-
-
 
 
 
