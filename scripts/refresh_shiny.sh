@@ -1,4 +1,4 @@
-cd /mnt/wordbank
+cd ~/wordbank
 git pull origin master
-sudo restart shiny-server
+sudo systemctl restart shiny-server
 
