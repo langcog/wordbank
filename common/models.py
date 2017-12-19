@@ -9,6 +9,9 @@ class Source(models.Model):
     contributor = models.TextField(blank=True)
     citation = models.TextField(blank=True)
     longitudinal = models.BooleanField(default=False)
+    licenses = (('CC-BY', 'CC BY 4.0'),
+                ('CC-BY-NC', 'CC BY-NC 4.0'))
+    license = models.CharField(max_length=15, choices=licenses)
 
 
 class Instrument(models.Model):
