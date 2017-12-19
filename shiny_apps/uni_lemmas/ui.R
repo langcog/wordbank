@@ -39,10 +39,12 @@ shinyUI(fluidPage(
                  br(),
                  conditionalPanel(
                    condition = "output.loaded == 1",
-                   plotOutput("crosslinguistic"),
-                   br(),
-                   downloadButton("download_plot", "Download Plot",
-                                  class = "btn-default btn-xs")
+                   div(style='height:600px; width:100%; overflow: scroll',
+                       plotOutput("crosslinguistic"),
+                       br(),
+                       downloadButton("download_plot", "Download Plot",
+                                      class = "btn-default btn-xs")
+                   )
                  )
         ),
         tabPanel("Table",
