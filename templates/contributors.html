@@ -38,8 +38,11 @@ Wordbank | Contributors
           <h5 class="list-group-item-heading">{{ entry.0 }} &nbsp;
           <span class="label label-info">{{ entry.1 }}</span>
           <span class="label label-warning">{{ n }}</span>
+          {% if entry.2 == 'CC-BY-NC' %}
+            <img alt='CC BY NC License 4.0' src='https://mirrors.creativecommons.org/presskit/icons/nc.large.png' style='width: 3%;'>
+          {% endif %}
           </h5>
-            <p class="list-group-item-text"><small>{{ entry.2 }}</small></p>
+            <p class="list-group-item-text"><small>{{ entry.3 }}</small></p>
         </li>
         {% endfor %}
       </ul>
