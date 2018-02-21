@@ -893,5 +893,31 @@
         "contributor": "Anne Fernald, Stanford University",
         "license": "CC-BY",
         "citation": "​Weisleder, A., & Fernald, A. (2013). Talking to children matters: Early language experience strengthens processing and builds vocabulary. Psychological Science, 24, 2143–2152. http://doi.org/10.1177/0956797613488145"
+    },
+    {
+        "name": "Pae",
+        "dataset": "",
+        "instrument_language": "Korean",
+        "instrument_form": "WS",
+        "file": "raw_data/Korean_WS/KoreanWS_Pae.csv",
+        "splitcol": false,
+        "norming": true,
+        "longitudinal": false,
+        "contributor": "Soyeong Pae, Hallym University",
+        "license": "CC-BY-NC",
+        "citation": "​Pae, S., & Kwak, K. (2011). Korean MacArthur-Bates Communicative Development Inventories (K M-B CDI). Seoul: Mindpress."
+    },
+    {
+        "name": "Pae",
+        "dataset": "",
+        "instrument_language": "Korean",
+        "instrument_form": "WG",
+        "file": "raw_data/Korean_WG/KoreanWG_Pae.csv",
+        "splitcol": true,
+        "norming": true,
+        "longitudinal": false,
+        "contributor": "Soyeong Pae, Hallym University",
+        "license": "CC-BY-NC",
+        "citation": "​Pae, S., & Kwak, K. (2011). Korean MacArthur-Bates Communicative Development Inventories (K M-B CDI). Seoul: Mindpress."
     }
 ]
