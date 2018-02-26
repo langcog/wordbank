@@ -1,0 +1,684 @@
+item_id,definition,original_category
+item_1,bêê bêê,Cris d'animaux et sons
+item_2,tchou tchou,Cris d'animaux et sons
+item_3,cocorico,Cris d'animaux et sons
+item_4,grrrr,Cris d'animaux et sons
+item_5,miaou,Cris d'animaux et sons
+item_6,meuh,Cris d'animaux et sons
+item_7,allô,Cris d'animaux et sons
+item_8,aïe,Cris d'animaux et sons
+item_9,coin-coin,Cris d'animaux et sons
+item_10,oh oh,Cris d'animaux et sons
+item_11,vroum,Cris d'animaux et sons
+item_12,ouaf-ouaf,Cris d'animaux et sons
+item_13,miam-miam,Cris d'animaux et sons
+item_14,avion,Véhicules ( vrais ou jouets)
+item_15,vélo,Véhicules ( vrais ou jouets)
+item_16,bus,Véhicules ( vrais ou jouets)
+item_17,voiture,Véhicules ( vrais ou jouets)
+item_18,camion de pompier,Véhicules ( vrais ou jouets)
+item_19,moto,Véhicules ( vrais ou jouets)
+item_20,poussette,Véhicules ( vrais ou jouets)
+item_21,train,Véhicules ( vrais ou jouets)
+item_22,camion,Véhicules ( vrais ou jouets)
+item_23,bateau,Véhicules ( vrais ou jouets)
+item_24,hélicoptère,Véhicules ( vrais ou jouets)
+item_25,traîneau,Véhicules ( vrais ou jouets)
+item_26,tracteur,Véhicules ( vrais ou jouets)
+item_27,tricycle,Véhicules ( vrais ou jouets)
+item_28,balle,Jouets
+item_29,ballon,Jouets
+item_30,cube,Jouets
+item_31,livre,Jouets
+item_32,bulles,Jouets
+item_33,poupée,Jouets
+item_34,crayon,Jouets
+item_35,stylo,Jouets
+item_36,jouet,Jouets
+item_37,raquette,Jouets
+item_38,craie,Jouets
+item_39,jeu,Jouets
+item_40,colle,Jouets
+item_41,pâte à modeler,Jouets
+item_42,cadeau,Jouets
+item_43,puzzle,Jouets
+item_44,histoire,Jouets
+item_45,feutre,Jouets
+item_46,animal,Noms d'animaux (vrais ou jouets)
+item_47,ours,Noms d'animaux (vrais ou jouets)
+item_48,abeille,Noms d'animaux (vrais ou jouets)
+item_49,oiseau,Noms d'animaux (vrais ou jouets)
+item_50,Petite bête,Noms d'animaux (vrais ou jouets)
+item_51,lapin,Noms d'animaux (vrais ou jouets)
+item_52,papillon,Noms d'animaux (vrais ou jouets)
+item_53,chat,Noms d'animaux (vrais ou jouets)
+item_54,poule,Noms d'animaux (vrais ou jouets)
+item_55,vache,Noms d'animaux (vrais ou jouets)
+item_56,biche,Noms d'animaux (vrais ou jouets)
+item_57,chien,Noms d'animaux (vrais ou jouets)
+item_58,âne,Noms d'animaux (vrais ou jouets)
+item_59,canard,Noms d'animaux (vrais ou jouets)
+item_60,éléphant,Noms d'animaux (vrais ou jouets)
+item_61,poisson,Noms d'animaux (vrais ou jouets)
+item_62,grenouille,Noms d'animaux (vrais ou jouets)
+item_63,girafe,Noms d'animaux (vrais ou jouets)
+item_64,chèvre,Noms d'animaux (vrais ou jouets)
+item_65,oie,Noms d'animaux (vrais ou jouets)
+item_66,cheval,Noms d'animaux (vrais ou jouets)
+item_67,bébé chat,Noms d'animaux (vrais ou jouets)
+item_68,agneau,Noms d'animaux (vrais ou jouets)
+item_69,lion,Noms d'animaux (vrais ou jouets)
+item_70,singe,Noms d'animaux (vrais ou jouets)
+item_71,souris,Noms d'animaux (vrais ou jouets)
+item_72,hibou,Noms d'animaux (vrais ou jouets)
+item_73,pingouin,Noms d'animaux (vrais ou jouets)
+item_74,cochon,Noms d'animaux (vrais ou jouets)
+item_75,poney,Noms d'animaux (vrais ou jouets)
+item_76,bébé chien,Noms d'animaux (vrais ou jouets)
+item_77,mouton,Noms d'animaux (vrais ou jouets)
+item_78,écureuil,Noms d'animaux (vrais ou jouets)
+item_79,nounours,Noms d'animaux (vrais ou jouets)
+item_80,tigre,Noms d'animaux (vrais ou jouets)
+item_81,dindon,Noms d'animaux (vrais ou jouets)
+item_82,tortue,Noms d'animaux (vrais ou jouets)
+item_83,crocodile,Noms d'animaux (vrais ou jouets)
+item_84,fourmi,Noms d'animaux (vrais ou jouets)
+item_85,poule,Noms d'animaux (vrais ou jouets)
+item_86,renne,Noms d'animaux (vrais ou jouets)
+item_87,coq,Noms d'animaux (vrais ou jouets)
+item_88,loup,Noms d'animaux (vrais ou jouets)
+item_89,zèbre,Noms d'animaux (vrais ou jouets)
+item_90,lait,Nourriture et boisson
+item_91,céréales,Nourriture et boisson
+item_92,cornflakes,Nourriture et boisson
+item_93,orange,Nourriture et boisson
+item_94,fromage,Nourriture et boisson
+item_95,petits pots,Nourriture et boisson
+item_96,poulet,Nourriture et boisson
+item_97,pizza,Nourriture et boisson
+item_98,café,Nourriture et boisson
+item_99,raisin,Nourriture et boisson
+item_100,petits gâteaux,Nourriture et boisson
+item_101,spaghetti,Nourriture et boisson
+item_102,gâteaux apéro,Nourriture et boisson
+item_103,tartine,Nourriture et boisson
+item_104,pomme,Nourriture et boisson
+item_105,œuf,Nourriture et boisson
+item_106,poisson,Nourriture et boisson
+item_107,pain,Nourriture et boisson
+item_108,nourriture,Nourriture et boisson
+item_109,beurre,Nourriture et boisson
+item_110,glace,Nourriture et boisson
+item_111,gâteau,Nourriture et boisson
+item_112,jus de fruit,Nourriture et boisson
+item_113,sucre,Nourriture et boisson
+item_114,viande,Nourriture et boisson
+item_115,carotte,Nourriture et boisson
+item_116,boisson,Nourriture et boisson
+item_117,eau,Nourriture et boisson
+item_118,clémentine,Nourriture et boisson
+item_119,purée,Nourriture et boisson
+item_120,petits pois,Nourriture et boisson
+item_121,baguette,Nourriture et boisson
+item_122,soupes,Nourriture et boisson
+item_123,pâtes,Nourriture et boisson
+item_124,thon,Nourriture et boisson
+item_125,kiwi,Nourriture et boisson
+item_126,compote,Nourriture et boisson
+item_127,haricot,Nourriture et boisson
+item_128,chocolat,Nourriture et boisson
+item_129,coca,Nourriture et boisson
+item_130,maïs,Nourriture et boisson
+item_131,beignet,Nourriture et boisson
+item_132,frites,Nourriture et boisson
+item_133,haricots verts,Nourriture et boisson
+item_134,chewing-gum,Nourriture et boisson
+item_135,hamburger,Nourriture et boisson
+item_136,glaçon,Nourriture et boisson
+item_137,vitamines,Nourriture et boisson
+item_138,bonbons,Nourriture et boisson
+item_139,confiture,Nourriture et boisson
+item_140,yaourt,Nourriture et boisson
+item_141,sucette,Nourriture et boisson
+item_142,melon,Nourriture et boisson
+item_143,madeleine,Nourriture et boisson
+item_144,noisettes,Nourriture et boisson
+item_145,crêpe,Nourriture et boisson
+item_146,nutella,Nourriture et boisson
+item_147,mayonnaise,Nourriture et boisson
+item_148,pop-corn,Nourriture et boisson
+item_149,esquimau,Nourriture et boisson
+item_150,pomme de terre,Nourriture et boisson
+item_151,chips,Nourriture et boisson
+item_152,bretzel,Nourriture et boisson
+item_153,flan,Nourriture et boisson
+item_154,courge,Nourriture et boisson
+item_155,raisins secs,Nourriture et boisson
+item_156,sel,Nourriture et boisson
+item_157,sandwich,Nourriture et boisson
+item_158,sauce,Nourriture et boisson
+item_159,limonade,Nourriture et boisson
+item_160,fraise,Nourriture et boisson
+item_161,vanille,Nourriture et boisson
+item_162,perles,Vêtements
+item_163,collier,Vêtements
+item_164,bavoir/bavette,Vêtements
+item_165,pyjama,Vêtements
+item_166,pantalon,Vêtements
+item_167,chemise,Vêtements
+item_168,manteau,Vêtements
+item_169,chaussure,Vêtements
+item_170,couche,Vêtements
+item_171,body,Vêtements
+item_172,genouillère,Vêtements
+item_173,short,Vêtements
+item_174,robe,Vêtements
+item_175,chaussettes,Vêtements
+item_176,chapeau,Vêtements
+item_177,sweat,Vêtements
+item_178,veste,Vêtements
+item_179,Tee-shirt,Vêtements
+item_180,jeans,Vêtements
+item_181,salopette,Vêtements
+item_182,chausson/pantoufle,Vêtements
+item_183,pull,Vêtements
+item_184,ceinture,Vêtements
+item_185,gants,Vêtements
+item_186,moufles,Vêtements
+item_187,écharpe,Vêtements
+item_188,basket,Vêtements
+item_189,combinaison de ski,Vêtements
+item_190,collants,Vêtements
+item_191,culotte /slip,Vêtements
+item_192,bras,Parties du corps
+item_193,nombril,Parties du corps
+item_194,joue,Parties du corps
+item_195,oreille,Parties du corps
+item_196,yeux,Parties du corps
+item_197,figure/visage,Parties du corps
+item_198,pied,Parties du corps
+item_199,doigt,Parties du corps
+item_200,cheveux,Parties du corps
+item_201,main,Parties du corps
+item_202,tête,Parties du corps
+item_203,genou,Parties du corps
+item_204,jambe,Parties du corps
+item_205,bouche,Parties du corps
+item_206,nez,Parties du corps
+item_207,aïe,Parties du corps
+item_208,bobo,Parties du corps
+item_209,dent,Parties du corps
+item_210,doigt de pied,Parties du corps
+item_211,langue,Parties du corps
+item_212,ventre,Parties du corps
+item_213,cheville,Parties du corps
+item_214,fesses,Parties du corps
+item_215,menton,Parties du corps
+item_216,lèvre,Parties du corps
+item_217,pénis/zizi…,Parties du corps
+item_218,cœur,Parties du corps
+item_219,vagin/zezette…,Parties du corps
+item_220,pouce,Parties du corps
+item_221,salle de bain,Meubles et pièces
+item_222,baignoire,Meubles et pièces
+item_223,lit,Meubles et pièces
+item_224,chambre,Meubles et pièces
+item_225,chaise,Meubles et pièces
+item_226,canapé,Meubles et pièces
+item_227,berceau,Meubles et pièces
+item_228,porte,Meubles et pièces
+item_229,tiroir,Meubles et pièces
+item_230,garage,Meubles et pièces
+item_231,chaise haute,Meubles et pièces
+item_232,cuisine,Meubles et pièces
+item_233,salon,Meubles et pièces
+item_234,four,Meubles et pièces
+item_235,parc,Meubles et pièces
+item_236,pot,Meubles et pièces
+item_237,frigo,Meubles et pièces
+item_238,fauteuil,Meubles et pièces
+item_239,lavabo,Meubles et pièces
+item_240,escalier,Meubles et pièces
+item_241,cuisinière,Meubles et pièces
+item_242,table,Meubles et pièces
+item_243,télé,Meubles et pièces
+item_244,fenêtre,Meubles et pièces
+item_245,étendage,Meubles et pièces
+item_246,entrée,Meubles et pièces
+item_247,douche,Meubles et pièces
+item_248,pièce,Meubles et pièces
+item_249,cave,Meubles et pièces
+item_250,banc,Meubles et pièces
+item_251,wc,Meubles et pièces
+item_252,machine à laver,Meubles et pièces
+item_253,évier,Meubles et pièces
+item_254,bain,Jeux et routines
+item_255,petit déjeuner,Jeux et routines
+item_256,au revoir,Jeux et routines
+item_257,dîner,Jeux et routines
+item_258,ne fais pas,Jeux et routines
+item_259,bonjour,Jeux et routines
+item_260,salut,Jeux et routines
+item_261,déjeuner,Jeux et routines
+item_262,sieste,Jeux et routines
+item_263,bonne nuit,Jeux et routines
+item_264,non,Jeux et routines
+item_265,ainsi font font,Jeux et routines
+item_266,coucou,Jeux et routines
+item_267,s'il te plaît,Jeux et routines
+item_268,chut,Jeux et routines
+item_269,merci,Jeux et routines
+item_270,oui,Jeux et routines
+item_271,bravo,Jeux et routines
+item_272,les courses,Jeux et routines
+item_273,goûter,Jeux et routines
+item_274,coup de fil,Jeux et routines
+item_275,top là,Jeux et routines
+item_276,je vais t'attraper,Jeux et routines
+item_277,va sur le pot,Jeux et routines
+item_278,tourne-toi,Jeux et routines
+item_279,ce petit cochon,Jeux et routines
+item_280,plage,Endroits où aller
+item_281,camping,Endroits où aller
+item_282,église,Endroits où aller
+item_283,cirque,Endroits où aller
+item_284,campagne,Endroits où aller
+item_285,Centre-ville,Endroits où aller
+item_286,ferme,Endroits où aller
+item_287,station service,Endroits où aller
+item_288,maison,Endroits où aller
+item_289,cinéma,Endroits où aller
+item_290,dehors,Endroits où aller
+item_291,parc,Endroits où aller
+item_292,fête,Endroits où aller
+item_293,pique-nique,Endroits où aller
+item_294,terrain de jeux,Endroits où aller
+item_295,école,Endroits où aller
+item_296,magasin,Endroits où aller
+item_297,forêt,Endroits où aller
+item_298,travail,Endroits où aller
+item_299,cour,Endroits où aller
+item_300,zoo,Endroits où aller
+item_301,garderie,Endroits où aller
+item_302,crèche,Endroits où aller
+item_303,au sujet de,Prépositions et localisations
+item_304,au dessus de,Prépositions et localisations
+item_305,autour de,Prépositions et localisations
+item_306,à,Prépositions et localisations
+item_307,loin,Prépositions et localisations
+item_308,derrière,Prépositions et localisations
+item_309,à côté de,Prépositions et localisations
+item_310,chez,Prépositions et localisations
+item_311,en bas,Prépositions et localisations
+item_312,pour,Prépositions et localisations
+item_313,ici,Prépositions et localisations
+item_314,à l'intérieur de,Prépositions et localisations
+item_315,dans,Prépositions et localisations
+item_316,près de,Prépositions et localisations
+item_317,de,Prépositions et localisations
+item_318,au loin,Prépositions et localisations
+item_319,sur,Prépositions et localisations
+item_320,au sommet de,Prépositions et localisations
+item_321,dehors,Prépositions et localisations
+item_322,par dessus,Prépositions et localisations
+item_323,là-bas,Prépositions et localisations
+item_324,vers,Prépositions et localisations
+item_325,sous,Prépositions et localisations
+item_326,en haut,Prépositions et localisations
+item_327,avec,Prépositions et localisations
+item_328,là,Prépositions et localisations
+item_329,comment,Interrogatifs
+item_330,quoi,Interrogatifs
+item_331,quand,Interrogatifs
+item_332,où,Interrogatifs
+item_333,qui,Interrogatifs
+item_334,pourquoi,Interrogatifs
+item_335,le/la/les/quel(les),Interrogatifs
+item_336,tout/toute,Quantificateurs et articles
+item_337,un autre,Quantificateurs et articles
+item_338,encore,Quantificateurs et articles
+item_339,aucun ne,Quantificateurs et articles
+item_340,pas,Quantificateurs et articles
+item_341,le/la même,Quantificateurs et articles
+item_342,un peu,Quantificateurs et articles
+item_343,aucun/e,Quantificateurs et articles
+item_344,un/une,Quantificateurs et articles
+item_345,plein/beaucoup,Quantificateurs et articles
+item_346,du/de la/des,Quantificateurs et articles
+item_347,chaque,Quantificateurs et articles
+item_348,autre,Quantificateurs et articles
+item_349,aussi,Quantificateurs et articles
+item_350,le/la/les,Quantificateurs et articles
+item_351,à elle/sa,Pronoms
+item_352,à lui/son,Pronoms
+item_353,je,Pronoms
+item_354,ça,Pronoms
+item_355,moi,Pronoms
+item_356,ma/mon/mes,Pronoms
+item_357,vous/tu,Pronoms
+item_358,votre/ta/ton,Pronoms
+item_359,Il,Pronoms
+item_360,ses,Pronoms
+item_361,lui,Pronoms
+item_362,moi-même,Pronoms
+item_363,notre,Pronoms
+item_364,elle,Pronoms
+item_365,leur,Pronoms
+item_366,ces,Pronoms
+item_367,ils/elles,Pronoms
+item_368,ceux,Pronoms
+item_369,nous,Pronoms
+item_370,on,Pronoms
+item_371,toi-même,Pronoms
+item_372,jour,Mots sur le temps
+item_373,après,Mots sur le temps
+item_374,matin,Mots sur le temps
+item_375,nuit,Mots sur le temps
+item_376,maintenant,Mots sur le temps
+item_377,aujourd'hui,Mots sur le temps
+item_378,demain,Mots sur le temps
+item_379,ce soir,Mots sur le temps
+item_380,avant,Mots sur le temps
+item_381,heure,Mots sur le temps
+item_382,hier,Mots sur le temps
+item_383,et,Connecteurs
+item_384,parce que,Connecteurs
+item_385,mais,Connecteurs
+item_386,si,Connecteurs
+item_387,donc,Connecteurs
+item_388,alors,Connecteurs
+item_389,rocher,Objets extérieurs
+item_390,nuage,Objets extérieurs
+item_391,drapeau,Objets extérieurs
+item_392,fleur,Objets extérieurs
+item_393,jardin,Objets extérieurs
+item_394,herbe,Objets extérieurs
+item_395,lune,Objets extérieurs
+item_396,tuyau,Objets extérieurs
+item_397,échelle,Objets extérieurs
+item_398,tondeuse à gazon,Objets extérieurs
+item_399,piscine,Objets extérieurs
+item_400,pluie,Objets extérieurs
+item_401,caillou,Objets extérieurs
+item_402,toit,Objets extérieurs
+item_403,pelle,Objets extérieurs
+item_404,bac à sable,Objets extérieurs
+item_405,toboggan,Objets extérieurs
+item_406,étoile,Objets extérieurs
+item_407,trottoir,Objets extérieurs
+item_408,soleil,Objets extérieurs
+item_409,balançoire,Objets extérieurs
+item_410,arbre,Objets extérieurs
+item_411,eau,Objets extérieurs
+item_412,ciel,Objets extérieurs
+item_413,bonhomme de neige,Objets extérieurs
+item_414,arrosoir,Objets extérieurs
+item_415,bâton,Objets extérieurs
+item_416,pierre,Objets extérieurs
+item_417,rue/route,Objets extérieurs
+item_418,vent,Objets extérieurs
+item_419,tante,Personnes
+item_420,bébé,Personnes
+item_421,nounou,Personnes
+item_422,nom de la nounou,Personnes
+item_423,garçon,Personnes
+item_424,frère,Personnes
+item_425,enfant,Personnes
+item_426,papa,Personnes
+item_427,fille,Personnes
+item_428,grand-mère,Personnes
+item_429,grand-père,Personnes
+item_430,dame,Personnes
+item_431,maman,Personnes
+item_432,nom de l'enfant,Personnes
+item_433,gens,Personnes
+item_434,personne,Personnes
+item_435,sœur,Personnes
+item_436,maître/sse,Personnes
+item_437,oncle,Personnes
+item_438,monsieur,Personnes
+item_439,clown,Personnes
+item_440,docteur,Personnes
+item_441,pompier,Personnes
+item_442,copain/ine,Personnes
+item_443,facteur,Personnes
+item_444,infirmière,Personnes
+item_445,police,Personnes
+item_446,nom de l'animal domestique,Personnes
+item_447,suis,Auxiliaires
+item_448,sont,Auxiliaires
+item_449,être,Auxiliaires
+item_450,est,Auxiliaires
+item_451,peux,Auxiliaires
+item_452,pourrait,Auxiliaires
+item_453,a fait,Auxiliaires
+item_454,faire,Auxiliaires
+item_455,fait,Auxiliaires
+item_456,ne pas,Auxiliaires
+item_457,aller,Auxiliaires
+item_458,devoir faire,Auxiliaires
+item_459,avoir à faire,Auxiliaires
+item_460,laisse-moi,Auxiliaires
+item_461,avoir besoin de,Auxiliaires
+item_462,essayer de,Auxiliaires
+item_463,vouloir,Auxiliaires
+item_464,était,Auxiliaires
+item_465,couverture,Petits objets ménagers
+item_466,bouteille,Petits objets ménagers
+item_467,bol,Petits objets ménagers
+item_468,boite,Petits objets ménagers
+item_469,balai,Petits objets ménagers
+item_470,brosse,Petits objets ménagers
+item_471,horloge,Petits objets ménagers
+item_472,peigne,Petits objets ménagers
+item_473,tasse,Petits objets ménagers
+item_474,plat,Petits objets ménagers
+item_475,fourchette,Petits objets ménagers
+item_476,verre,Petits objets ménagers
+item_477,lunettes,Petits objets ménagers
+item_478,marteau,Petits objets ménagers
+item_479,clefs,Petits objets ménagers
+item_480,lampe,Petits objets ménagers
+item_481,lumière,Petits objets ménagers
+item_482,médicaments,Petits objets ménagers
+item_483,argent,Petits objets ménagers
+item_484,papier,Petits objets ménagers
+item_485,sous/pièces,Petits objets ménagers
+item_486,photo,Petits objets ménagers
+item_487,oreiller,Petits objets ménagers
+item_488,assiette,Petits objets ménagers
+item_489,Porte-monnaie,Petits objets ménagers
+item_490,radio,Petits objets ménagers
+item_491,ciseaux,Petits objets ménagers
+item_492,savon,Petits objets ménagers
+item_493,cuillère,Petits objets ménagers
+item_494,téléphone,Petits objets ménagers
+item_495,brosse à dent,Petits objets ménagers
+item_496,serviette,Petits objets ménagers
+item_497,poubelle,Petits objets ménagers
+item_498,aspirateur,Petits objets ménagers
+item_499,montre,Petits objets ménagers
+item_500,feuille,Petits objets ménagers
+item_501,musique,Petits objets ménagers
+item_502,sirop,Petits objets ménagers
+item_503,biberon,Petits objets ménagers
+item_504,télécommande,Petits objets ménagers
+item_505,sucette,Petits objets ménagers
+item_506,panier,Petits objets ménagers
+item_507,seau,Petits objets ménagers
+item_508,photo,Petits objets ménagers
+item_509,ordures,Petits objets ménagers
+item_510,pot,Petits objets ménagers
+item_511,couteau,Petits objets ménagers
+item_512,serpillière,Petits objets ménagers
+item_513,clou,Petits objets ménagers
+item_514,serviette de table,Petits objets ménagers
+item_515,cassette,Petits objets ménagers
+item_516,mouchoir,Petits objets ménagers
+item_517,plateau,Petits objets ménagers
+item_518,trotteur,Petits objets ménagers
+item_519,coussins,Petits objets ménagers
+item_520,sac,Petits objets ménagers
+item_521,parti,Mots descriptifs
+item_522,endormi,Mots descriptifs
+item_523,pas bon,Mots descriptifs
+item_524,grand,Mots descriptifs
+item_525,bleu,Mots descriptifs
+item_526,cassé,Mots descriptifs
+item_527,attention,Mots descriptifs
+item_528,propre,Mots descriptifs
+item_529,froid,Mots descriptifs
+item_530,mignon/ne,Mots descriptifs
+item_531,sombre,Mots descriptifs
+item_532,sale,Mots descriptifs
+item_533,sec/che,Mots descriptifs
+item_534,vide,Mots descriptifs
+item_535,vite,Mots descriptifs
+item_536,bien,Mots descriptifs
+item_537,doux/ce,Mots descriptifs
+item_538,bon/ne,Mots descriptifs
+item_539,content/te,Mots descriptifs
+item_540,dur,Mots descriptifs
+item_541,chaud/e,Mots descriptifs
+item_542,avoir faim,Mots descriptifs
+item_543,blessé,Mots descriptifs
+item_544,petit/e,Mots descriptifs
+item_545,vilain/e,Mots descriptifs
+item_546,gentil/le,Mots descriptifs
+item_547,vieux/vieille,Mots descriptifs
+item_548,joli,Mots descriptifs
+item_549,rouge,Mots descriptifs
+item_550,avoir peur,Mots descriptifs
+item_551,malade,Mots descriptifs
+item_552,avoir sommeil,Mots descriptifs
+item_553,avoir soif,Mots descriptifs
+item_554,fatigué,Mots descriptifs
+item_555,mouillé,Mots descriptifs
+item_556,dégoûtant/e,Mots descriptifs
+item_557,eau/belle,Mots descriptifs
+item_558,méchant/e,Mots descriptifs
+item_559,être réveillé,Mots descriptifs
+item_560,mieux,Mots descriptifs
+item_561,noir,Mots descriptifs
+item_562,marron,Mots descriptifs
+item_563,premier/ère,Mots descriptifs
+item_564,plein/ne,Mots descriptifs
+item_565,vert/e,Mots descriptifs
+item_566,lourd/e,Mots descriptifs
+item_567,haut/e,Mots descriptifs
+item_568,dernier/e,Mots descriptifs
+item_569,long/ue,Mots descriptifs
+item_570,fort/e,Mots descriptifs
+item_571,fou/folle,Mots descriptifs
+item_572,neuf/ve,Mots descriptifs
+item_573,bruyant/e,Mots descriptifs
+item_574,orange,Mots descriptifs
+item_575,tranquille,Mots descriptifs
+item_576,triste,Mots descriptifs
+item_577,lent/e,Mots descriptifs
+item_578,doux/ce,Mots descriptifs
+item_579,collant/e,Mots descriptifs
+item_580,minuscule,Mots descriptifs
+item_581,blanc/he,Mots descriptifs
+item_582,venteux,Mots descriptifs
+item_583,jaune,Mots descriptifs
+item_584,coquin/e,Mots descriptifs
+item_585,coincé,Mots descriptifs
+item_586,mordre,Mots d'action
+item_587,souffler,Mots d'action
+item_588,casser,Mots d'action
+item_589,apporter,Mots d'action
+item_590,se cogner,Mots d'action
+item_591,nettoyer,Mots d'action
+item_592,fermer,Mots d'action
+item_593,pleurer,Mots d'action
+item_594,danser,Mots d'action
+item_595,dessiner,Mots d'action
+item_596,boire,Mots d'action
+item_597,conduire,Mots d'action
+item_598,manger,Mots d'action
+item_599,tomber,Mots d'action
+item_600,nourrir,Mots d'action
+item_601,finir recevoir,Mots d'action
+item_602,donner aller,Mots d'action
+item_603,aider,Mots d'action
+item_604,taper,Mots d'action
+item_605,prendre dans ses bras,Mots d'action
+item_606,se dépêcher,Mots d'action
+item_607,sauter,Mots d'action
+item_608,donner un coup,Mots d'action
+item_609,faire un bisou,Mots d'action
+item_610,regarder,Mots d'action
+item_611,laver,Mots d'action
+item_612,aimer,Mots d'action
+item_613,ouvrir,Mots d'action
+item_614,tirer,Mots d'action
+item_615,pousser,Mots d'action
+item_616,mettre,Mots d'action
+item_617,lire,Mots d'action
+item_618,faire du vélo /moto,Mots d'action
+item_619,courir,Mots d'action
+item_620,dire,Mots d'action
+item_621,voir,Mots d'action
+item_622,montrer,Mots d'action
+item_623,chanter,Mots d'action
+item_624,dormir,Mots d'action
+item_625,sourire,Mots d'action
+item_626,éclabousser,Mots d'action
+item_627,arrêter,Mots d'action
+item_628,nager,Mots d'action
+item_629,balancer,Mots d'action
+item_630,jeter,Mots d'action
+item_631,chatouiller,Mots d'action
+item_632,toucher,Mots d'action
+item_633,marcher,Mots d'action
+item_634,essuyer,Mots d'action
+item_635,écrire,Mots d'action
+item_636,construire,Mots d'action
+item_637,acheter,Mots d'action
+item_638,porter,Mots d'action
+item_639,attraper,Mots d'action
+item_640,courir après,Mots d'action
+item_641,faire bravo,Mots d'action
+item_642,sécher,Mots d'action
+item_643,déposer,Mots d'action
+item_644,trouver,Mots d'action
+item_645,aller bien avec,Mots d'action
+item_646,réparer,Mots d'action
+item_647,détester,Mots d'action
+item_648,avoir,Mots d'action
+item_649,entendre,Mots d'action
+item_650,cacher,Mots d'action
+item_651,tenir,Mots d'action
+item_652,couper,Mots d'action
+item_653,frapper à la porte,Mots d'action
+item_654,lécher,Mots d'action
+item_655,aimer bien,Mots d'action
+item_656,écouter,Mots d'action
+item_657,faire,Mots d'action
+item_658,ramasser,Mots d'action
+item_659,faire de la peinture,Mots d'action
+item_660,renverser,Mots d'action
+item_661,verser,Mots d'action
+item_662,faire semblant,Mots d'action
+item_663,goutter,Mots d'action
+item_664,déchirer,Mots d'action
+item_665,secouer,Mots d'action
+item_666,partager,Mots d'action
+item_667,s'asseoir,Mots d'action
+item_668,faire du patin,Mots d'action
+item_669,glisser,Mots d'action
+item_670,travailler,Mots d'action
+item_671,souhaiter,Mots d'action
+item_672,être debout,Mots d'action
+item_673,rester,Mots d'action
+item_674,balayer,Mots d'action
+item_675,parler,Mots d'action
+item_676,goûter,Mots d'action
+item_677,arracher,Mots d'action
+item_678,penser,Mots d'action
+item_679,attendre,Mots d'action
+item_680,se réveiller,Mots d'action
+item_681,couvrir,Mots d'action
+item_682,grimper,Mots d'action
+item_683,cuisiner,Mots d'action
