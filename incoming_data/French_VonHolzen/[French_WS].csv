@@ -1,0 +1,717 @@
+itemID,type,category,choices,definition,gloss,uni_lemma,form.age,orig_category,sub_category,category_id
+item_1,word,sounds,produces,aie,,,16_30,words,sounds,1
+item_2,word,sounds,produces,allo,,,16_30,words,sounds,1
+item_3,word,sounds,produces,bêê bêê,,,16_30,words,sounds,1
+item_4,word,sounds,produces,cocorico,,,16_30,words,sounds,1
+item_5,word,sounds,produces,coin coin,,,16_30,words,sounds,1
+item_6,word,sounds,produces,grrrr,,,16_30,words,sounds,1
+item_7,word,sounds,produces,meuh,,,16_30,words,sounds,1
+item_8,word,sounds,produces,miam miam,,,16_30,words,sounds,1
+item_9,word,sounds,produces,miaou,,,16_30,words,sounds,1
+item_10,word,sounds,produces,oh oh,,,16_30,words,sounds,1
+item_11,word,sounds,produces,ouaf ouaf,,,16_30,words,sounds,1
+item_12,word,sounds,produces,tchou tchou,,,16_30,words,sounds,1
+item_13,word,sounds,produces,vroum,,,16_30,words,sounds,1
+item_14,word,games_routines,produces,ainsi font font,,,16_30,words,play_routines,2
+item_15,word,games_routines,produces,au revoir,,,16_30,words,play_routines,2
+item_16,word,games_routines,produces,bain,,,16_30,words,play_routines,2
+item_17,word,games_routines,produces,bonjour,,,16_30,words,play_routines,2
+item_18,word,games_routines,produces,bonne nuit,,,16_30,words,play_routines,2
+item_19,word,games_routines,produces,bravo,,,16_30,words,play_routines,2
+item_20,word,games_routines,produces,ce petit cochon,,,16_30,words,play_routines,2
+item_21,word,games_routines,produces,chut,,,16_30,words,play_routines,2
+item_22,word,games_routines,produces,coucou,,,16_30,words,play_routines,2
+item_23,word,games_routines,produces,coup de fil,,,16_30,words,play_routines,2
+item_24,word,games_routines,produces,déjeuner,,,16_30,words,play_routines,2
+item_25,word,games_routines,produces,dîner,,,16_30,words,play_routines,2
+item_26,word,games_routines,produces,faire les courses,,,16_30,words,play_routines,2
+item_27,word,games_routines,produces,goûter,,,16_30,words,play_routines,2
+item_28,word,games_routines,produces,je vais t'attraper,,,16_30,words,play_routines,2
+item_29,word,games_routines,produces,merci,,,16_30,words,play_routines,2
+item_30,word,games_routines,produces,ne fais pas,,,16_30,words,play_routines,2
+item_31,word,games_routines,produces,non,,,16_30,words,play_routines,2
+item_32,word,games_routines,produces,oui,,,16_30,words,play_routines,2
+item_33,word,games_routines,produces,petit déjeuner,,,16_30,words,play_routines,2
+item_34,word,games_routines,produces,s'il te plait,,,16_30,words,play_routines,2
+item_35,word,games_routines,produces,salut,,,16_30,words,play_routines,2
+item_36,word,games_routines,produces,sieste,,,16_30,words,play_routines,2
+item_37,word,games_routines,produces,top là,,,16_30,words,play_routines,2
+item_38,word,games_routines,produces,tourne-toi,,,16_30,words,play_routines,2
+item_39,word,games_routines,produces,va sur le pot,,,16_30,words,play_routines,2
+item_40,word,vehicles,produces,avion,,,16_30,words,vehicles,3
+item_41,word,vehicles,produces,bateau,,,16_30,words,vehicles,3
+item_42,word,vehicles,produces,bus,,,16_30,words,vehicles,3
+item_43,word,vehicles,produces,camion,,,16_30,words,vehicles,3
+item_44,word,vehicles,produces,camion de pompier,,,16_30,words,vehicles,3
+item_45,word,vehicles,produces,hélicoptère,,,16_30,words,vehicles,3
+item_46,word,vehicles,produces,moto,,,16_30,words,vehicles,3
+item_47,word,vehicles,produces,poussette,,,16_30,words,vehicles,3
+item_48,word,vehicles,produces,tracteur,,,16_30,words,vehicles,3
+item_49,word,vehicles,produces,train,,,16_30,words,vehicles,3
+item_50,word,vehicles,produces,traineau,,,16_30,words,vehicles,3
+item_51,word,vehicles,produces,tricycle,,,16_30,words,vehicles,3
+item_52,word,vehicles,produces,vélo,,,16_30,words,vehicles,3
+item_53,word,vehicles,produces,voiture,,,16_30,words,vehicles,3
+item_54,word,animals,produces,abeille,,,16_30,words,animals,4
+item_55,word,animals,produces,agneau,,,16_30,words,animals,4
+item_56,word,animals,produces,âne,,,16_30,words,animals,4
+item_57,word,animals,produces,animal,,,16_30,words,animals,4
+item_58,word,animals,produces,bébé chat,,,16_30,words,animals,4
+item_59,word,animals,produces,bébé chien,,,16_30,words,animals,4
+item_60,word,animals,produces,biche,,,16_30,words,animals,4
+item_61,word,animals,produces,canard,,,16_30,words,animals,4
+item_62,word,animals,produces,chat,,,16_30,words,animals,4
+item_63,word,animals,produces,cheval,,,16_30,words,animals,4
+item_64,word,animals,produces,chèvre,,,16_30,words,animals,4
+item_65,word,animals,produces,chien,,,16_30,words,animals,4
+item_66,word,animals,produces,cochon,,,16_30,words,animals,4
+item_67,word,animals,produces,coq,,,16_30,words,animals,4
+item_68,word,animals,produces,crocodile,,,16_30,words,animals,4
+item_69,word,animals,produces,dindon,,,16_30,words,animals,4
+item_70,word,animals,produces,écureuil,,,16_30,words,animals,4
+item_71,word,animals,produces,éléphant,,,16_30,words,animals,4
+item_72,word,animals,produces,fourmi,,,16_30,words,animals,4
+item_73,word,animals,produces,girafe,,,16_30,words,animals,4
+item_74,word,animals,produces,grenouille,,,16_30,words,animals,4
+item_75,word,animals,produces,hibou,,,16_30,words,animals,4
+item_76,word,animals,produces,lapin,,,16_30,words,animals,4
+item_77,word,animals,produces,lion,,,16_30,words,animals,4
+item_78,word,animals,produces,loup,,,16_30,words,animals,4
+item_79,word,animals,produces,mouton,,,16_30,words,animals,4
+item_80,word,animals,produces,nounours,,,16_30,words,animals,4
+item_81,word,animals,produces,oie,,,16_30,words,animals,4
+item_82,word,animals,produces,oiseau,,,16_30,words,animals,4
+item_83,word,animals,produces,ours,,,16_30,words,animals,4
+item_84,word,animals,produces,papillon,,,16_30,words,animals,4
+item_85,word,animals,produces,petite bête,,,16_30,words,animals,4
+item_86,word,animals,produces,pinguoin,,,16_30,words,animals,4
+item_87,word,animals,produces,poisson,,,16_30,words,animals,4
+item_88,word,animals,produces,poney,,,16_30,words,animals,4
+item_89,word,animals,produces,poule,,,16_30,words,animals,4
+item_90,word,animals,produces,renne,,,16_30,words,animals,4
+item_91,word,animals,produces,singe,,,16_30,words,animals,4
+item_92,word,animals,produces,souris,,,16_30,words,animals,4
+item_93,word,animals,produces,tigre,,,16_30,words,animals,4
+item_94,word,animals,produces,tortue,,,16_30,words,animals,4
+item_95,word,animals,produces,vache,,,16_30,words,animals,4
+item_96,word,animals,produces,zèbre,,,16_30,words,animals,4
+item_97,word,toys,produces,balle,,,16_30,words,toys,5
+item_98,word,toys,produces,ballon,,,16_30,words,toys,5
+item_99,word,toys,produces,bulles,,,16_30,words,toys,5
+item_100,word,toys,produces,cadeau,,,16_30,words,toys,5
+item_101,word,toys,produces,colle,,,16_30,words,toys,5
+item_102,word,toys,produces,craie,,,16_30,words,toys,5
+item_103,word,toys,produces,crayon,,,16_30,words,toys,5
+item_104,word,toys,produces,cube,,,16_30,words,toys,5
+item_105,word,toys,produces,feutre,,,16_30,words,toys,5
+item_106,word,toys,produces,histoire,,,16_30,words,toys,5
+item_107,word,toys,produces,jeu,,,16_30,words,toys,5
+item_108,word,toys,produces,jouet,,,16_30,words,toys,5
+item_109,word,toys,produces,livre,,,16_30,words,toys,5
+item_110,word,toys,produces,pâte à modeler,,,16_30,words,toys,5
+item_111,word,toys,produces,poupée,,,16_30,words,toys,5
+item_112,word,toys,produces,puzzle,,,16_30,words,toys,5
+item_113,word,toys,produces,raquette,,,16_30,words,toys,5
+item_114,word,toys,produces,stylo,,,16_30,words,toys,5
+item_115,word,clothing,produces,basket,,,16_30,words,clothes,6
+item_116,word,clothing,produces,bavoir/bavette,,,16_30,words,clothes,6
+item_117,word,clothing,produces,body,,,16_30,words,clothes,6
+item_118,word,clothing,produces,bottes,,,16_30,words,clothes,6
+item_119,word,clothing,produces,boutons,,,16_30,words,clothes,6
+item_120,word,clothing,produces,ceinture,,,16_30,words,clothes,6
+item_121,word,clothing,produces,chapeau,,,16_30,words,clothes,6
+item_122,word,clothing,produces,chaussettes,,,16_30,words,clothes,6
+item_123,word,clothing,produces,chausson/pantoufle,,,16_30,words,clothes,6
+item_124,word,clothing,produces,chaussure,,,16_30,words,clothes,6
+item_125,word,clothing,produces,chemise,,,16_30,words,clothes,6
+item_126,word,clothing,produces,collants,,,16_30,words,clothes,6
+item_127,word,clothing,produces,collier,,,16_30,words,clothes,6
+item_128,word,clothing,produces,combinaison de ski,,,16_30,words,clothes,6
+item_129,word,clothing,produces,couche,,,16_30,words,clothes,6
+item_130,word,clothing,produces,culotte/slip,,,16_30,words,clothes,6
+item_131,word,clothing,produces,écharpe,,,16_30,words,clothes,6
+item_132,word,clothing,produces,gants,,,16_30,words,clothes,6
+item_133,word,clothing,produces,grenouillère,,,16_30,words,clothes,6
+item_134,word,clothing,produces,jeans,,,16_30,words,clothes,6
+item_135,word,clothing,produces,manteau,,,16_30,words,clothes,6
+item_136,word,clothing,produces,moufles,,,16_30,words,clothes,6
+item_137,word,clothing,produces,pantalon,,,16_30,words,clothes,6
+item_138,word,clothing,produces,perles,,,16_30,words,clothes,6
+item_139,word,clothing,produces,pull,,,16_30,words,clothes,6
+item_140,word,clothing,produces,pyjama,,,16_30,words,clothes,6
+item_141,word,clothing,produces,robe,,,16_30,words,clothes,6
+item_142,word,clothing,produces,salopette,,,16_30,words,clothes,6
+item_143,word,clothing,produces,short,,,16_30,words,clothes,6
+item_144,word,clothing,produces,sweat,,,16_30,words,clothes,6
+item_145,word,clothing,produces,tee-shirt,,,16_30,words,clothes,6
+item_146,word,clothing,produces,veste,,,16_30,words,clothes,6
+item_147,word,outside,produces,arbre,,,16_30,words,outside,7
+item_148,word,outside,produces,arrosoir,,,16_30,words,outside,7
+item_149,word,outside,produces,bac à sable,,,16_30,words,outside,7
+item_150,word,outside,produces,balançoire,,,16_30,words,outside,7
+item_151,word,outside,produces,baton,,,16_30,words,outside,7
+item_152,word,outside,produces,bonhomme de neige,,,16_30,words,outside,7
+item_153,word,outside,produces,caillou,,,16_30,words,outside,7
+item_154,word,outside,produces,ciel,,,16_30,words,outside,7
+item_155,word,outside,produces,drapeau,,,16_30,words,outside,7
+item_156,word,outside,produces,eau,,,16_30,words,outside,7
+item_157,word,outside,produces,échelle,,,16_30,words,outside,7
+item_158,word,outside,produces,étoile,,,16_30,words,outside,7
+item_159,word,outside,produces,fleur,,,16_30,words,outside,7
+item_160,word,outside,produces,herbe,,,16_30,words,outside,7
+item_161,word,outside,produces,jardin,,,16_30,words,outside,7
+item_162,word,outside,produces,lune,,,16_30,words,outside,7
+item_163,word,outside,produces,neige,,,16_30,words,outside,7
+item_164,word,outside,produces,nuage,,,16_30,words,outside,7
+item_165,word,outside,produces,pelle,,,16_30,words,outside,7
+item_166,word,outside,produces,pierre,,,16_30,words,outside,7
+item_167,word,outside,produces,piscine,,,16_30,words,outside,7
+item_168,word,outside,produces,pluie,,,16_30,words,outside,7
+item_169,word,outside,produces,rocher,,,16_30,words,outside,7
+item_170,word,outside,produces,rue/route,,,16_30,words,outside,7
+item_171,word,outside,produces,soleil,,,16_30,words,outside,7
+item_172,word,outside,produces,toboggan,,,16_30,words,outside,7
+item_173,word,outside,produces,toit,,,16_30,words,outside,7
+item_174,word,outside,produces,tondeuse à gazon,,,16_30,words,outside,7
+item_175,word,outside,produces,trottoir,,,16_30,words,outside,7
+item_176,word,outside,produces,tuyau,,,16_30,words,outside,7
+item_177,word,outside,produces,vent,,,16_30,words,outside,7
+item_178,word,places,produces,campagne,,,16_30,words,destination,8
+item_179,word,places,produces,camping,,,16_30,words,destination,8
+item_180,word,places,produces,centre-ville,,,16_30,words,destination,8
+item_181,word,places,produces,cinéma,,,16_30,words,destination,8
+item_182,word,places,produces,cirque,,,16_30,words,destination,8
+item_183,word,places,produces,cour,,,16_30,words,destination,8
+item_184,word,places,produces,crèche,,,16_30,words,destination,8
+item_185,word,places,produces,dehors,,,16_30,words,destination,8
+item_186,word,places,produces,école,,,16_30,words,destination,8
+item_187,word,places,produces,église,,,16_30,words,destination,8
+item_188,word,places,produces,ferme,,,16_30,words,destination,8
+item_189,word,places,produces,fête,,,16_30,words,destination,8
+item_190,word,places,produces,forêt,,,16_30,words,destination,8
+item_191,word,places,produces,garderie,,,16_30,words,destination,8
+item_192,word,places,produces,magasin,,,16_30,words,destination,8
+item_193,word,places,produces,maison,,,16_30,words,destination,8
+item_194,word,places,produces,parc,,,16_30,words,destination,8
+item_195,word,places,produces,pique-nique,,,16_30,words,destination,8
+item_196,word,places,produces,plage,,,16_30,words,destination,8
+item_197,word,places,produces,station-service,,,16_30,words,destination,8
+item_198,word,places,produces,terrain de jeux,,,16_30,words,destination,8
+item_199,word,places,produces,travail,,,16_30,words,destination,8
+item_200,word,places,produces,zoo,,,16_30,words,destination,8
+item_201,word,household,produces,appareil photo,,,16_30,words,objects,9
+item_202,word,household,produces,argent,,,16_30,words,objects,9
+item_203,word,household,produces,aspirateur,,,16_30,words,objects,9
+item_204,word,household,produces,assiette,,,16_30,words,objects,9
+item_205,word,household,produces,balai,,,16_30,words,objects,9
+item_206,word,household,produces,biberon,,,16_30,words,objects,9
+item_207,word,household,produces,boîte,,,16_30,words,objects,9
+item_208,word,household,produces,bol,,,16_30,words,objects,9
+item_209,word,household,produces,bouteille,,,16_30,words,objects,9
+item_210,word,household,produces,brosse,,,16_30,words,objects,9
+item_211,word,household,produces,brosse à dent,,,16_30,words,objects,9
+item_212,word,household,produces,cassette,,,16_30,words,objects,9
+item_213,word,household,produces,ciseaux,,,16_30,words,objects,9
+item_214,word,household,produces,clefs,,,16_30,words,objects,9
+item_215,word,household,produces,clou,,,16_30,words,objects,9
+item_216,word,household,produces,coussins,,,16_30,words,objects,9
+item_217,word,household,produces,couteau,,,16_30,words,objects,9
+item_218,word,household,produces,couverture,,,16_30,words,objects,9
+item_219,word,household,produces,cuillère,,,16_30,words,objects,9
+item_220,word,household,produces,feuille,,,16_30,words,objects,9
+item_221,word,household,produces,fourchette,,,16_30,words,objects,9
+item_222,word,household,produces,horloge,,,16_30,words,objects,9
+item_223,word,household,produces,lampe,,,16_30,words,objects,9
+item_224,word,household,produces,lumière,,,16_30,words,objects,9
+item_225,word,household,produces,lunettes,,,16_30,words,objects,9
+item_226,word,household,produces,marteau,,,16_30,words,objects,9
+item_227,word,household,produces,médicaments,,,16_30,words,objects,9
+item_228,word,household,produces,montre,,,16_30,words,objects,9
+item_229,word,household,produces,mouchoir,,,16_30,words,objects,9
+item_230,word,household,produces,musique,,,16_30,words,objects,9
+item_231,word,household,produces,ordures,,,16_30,words,objects,9
+item_232,word,household,produces,oreiller,,,16_30,words,objects,9
+item_233,word,household,produces,panier,,,16_30,words,objects,9
+item_234,word,household,produces,papier,,,16_30,words,objects,9
+item_235,word,household,produces,peigne,,,16_30,words,objects,9
+item_236,word,household,produces,photo,,,16_30,words,objects,9
+item_237,word,household,produces,plante,,,16_30,words,objects,9
+item_238,word,household,produces,plat,,,16_30,words,objects,9
+item_239,word,household,produces,plateau,,,16_30,words,objects,9
+item_240,word,household,produces,porte-monnaie,,,16_30,words,objects,9
+item_241,word,household,produces,pot,,,16_30,words,objects,9
+item_242,word,household,produces,poubelle,,,16_30,words,objects,9
+item_243,word,household,produces,radio,,,16_30,words,objects,9
+item_244,word,household,produces,savon,,,16_30,words,objects,9
+item_245,word,household,produces,seau,,,16_30,words,objects,9
+item_246,word,household,produces,serpillère,,,16_30,words,objects,9
+item_247,word,household,produces,serviette,,,16_30,words,objects,9
+item_248,word,household,produces,serviette de table,,,16_30,words,objects,9
+item_249,word,household,produces,sirop,,,16_30,words,objects,9
+item_250,word,household,produces,sous/pièces,,,16_30,words,objects,9
+item_251,word,household,produces,sucette,,,16_30,words,objects,9
+item_252,word,household,produces,tasse,,,16_30,words,objects,9
+item_253,word,household,produces,télécommande,,,16_30,words,objects,9
+item_254,word,household,produces,téléphone,,,16_30,words,objects,9
+item_255,word,household,produces,trotteur,,,16_30,words,objects,9
+item_256,word,household,produces,verre,,,16_30,words,objects,9
+item_257,word,body_parts,produces,aïe bobo,,,16_30,words,body_parts,10
+item_258,word,body_parts,produces,bouche,,,16_30,words,body_parts,10
+item_259,word,body_parts,produces,bras,,,16_30,words,body_parts,10
+item_260,word,body_parts,produces,cheveux,,,16_30,words,body_parts,10
+item_261,word,body_parts,produces,cheville,,,16_30,words,body_parts,10
+item_262,word,body_parts,produces,cœur,,,16_30,words,body_parts,10
+item_263,word,body_parts,produces,dent,,,16_30,words,body_parts,10
+item_264,word,body_parts,produces,doigt,,,16_30,words,body_parts,10
+item_265,word,body_parts,produces,doigt de pieds,,,16_30,words,body_parts,10
+item_266,word,body_parts,produces,fesses,,,16_30,words,body_parts,10
+item_267,word,body_parts,produces,figure/visage,,,16_30,words,body_parts,10
+item_268,word,body_parts,produces,genou,,,16_30,words,body_parts,10
+item_269,word,body_parts,produces,jambe,,,16_30,words,body_parts,10
+item_270,word,body_parts,produces,joue,,,16_30,words,body_parts,10
+item_271,word,body_parts,produces,langue,,,16_30,words,body_parts,10
+item_272,word,body_parts,produces,lèvre,,,16_30,words,body_parts,10
+item_273,word,body_parts,produces,main,,,16_30,words,body_parts,10
+item_274,word,body_parts,produces,menton,,,16_30,words,body_parts,10
+item_275,word,body_parts,produces,nez,,,16_30,words,body_parts,10
+item_276,word,body_parts,produces,nombril,,,16_30,words,body_parts,10
+item_277,word,body_parts,produces,oreille,,,16_30,words,body_parts,10
+item_278,word,body_parts,produces,pénis/zizi…,,,16_30,words,body_parts,10
+item_279,word,body_parts,produces,pied,,,16_30,words,body_parts,10
+item_280,word,body_parts,produces,pouce,,,16_30,words,body_parts,10
+item_281,word,body_parts,produces,tête,,,16_30,words,body_parts,10
+item_282,word,body_parts,produces,vagin/zezette,,,16_30,words,body_parts,10
+item_283,word,body_parts,produces,ventre,,,16_30,words,body_parts,10
+item_284,word,body_parts,produces,yeux,,,16_30,words,body_parts,10
+item_285,word,food_drink,produces,baguette,,,16_30,words,food_drink,11
+item_286,word,food_drink,produces,banane,,,16_30,words,food_drink,11
+item_287,word,food_drink,produces,beignet,,,16_30,words,food_drink,11
+item_288,word,food_drink,produces,beurre,,,16_30,words,food_drink,11
+item_289,word,food_drink,produces,boisson,,,16_30,words,food_drink,11
+item_290,word,food_drink,produces,bonbons,,,16_30,words,food_drink,11
+item_291,word,food_drink,produces,bretzel,,,16_30,words,food_drink,11
+item_292,word,food_drink,produces,café,,,16_30,words,food_drink,11
+item_293,word,food_drink,produces,carottes,,,16_30,words,food_drink,11
+item_294,word,food_drink,produces,céréales,,,16_30,words,food_drink,11
+item_295,word,food_drink,produces,chewing-gum,,,16_30,words,food_drink,11
+item_296,word,food_drink,produces,chips,,,16_30,words,food_drink,11
+item_297,word,food_drink,produces,chocolat,,,16_30,words,food_drink,11
+item_298,word,food_drink,produces,clémentine,,,16_30,words,food_drink,11
+item_299,word,food_drink,produces,coca,,,16_30,words,food_drink,11
+item_300,word,food_drink,produces,compote,,,16_30,words,food_drink,11
+item_301,word,food_drink,produces,confiture,,,16_30,words,food_drink,11
+item_302,word,food_drink,produces,cornflakes,,,16_30,words,food_drink,11
+item_303,word,food_drink,produces,courge,,,16_30,words,food_drink,11
+item_304,word,food_drink,produces,crêpe,,,16_30,words,food_drink,11
+item_305,word,food_drink,produces,eau,,,16_30,words,food_drink,11
+item_306,word,food_drink,produces,esquimau,,,16_30,words,food_drink,11
+item_307,word,food_drink,produces,flan,,,16_30,words,food_drink,11
+item_308,word,food_drink,produces,fraise,,,16_30,words,food_drink,11
+item_309,word,food_drink,produces,frites,,,16_30,words,food_drink,11
+item_310,word,food_drink,produces,fromage,,,16_30,words,food_drink,11
+item_311,word,food_drink,produces,gâteau,,,16_30,words,food_drink,11
+item_312,word,food_drink,produces,gâteaux apéro,,,16_30,words,food_drink,11
+item_313,word,food_drink,produces,glace,,,16_30,words,food_drink,11
+item_314,word,food_drink,produces,glaçon,,,16_30,words,food_drink,11
+item_315,word,food_drink,produces,hamburger,,,16_30,words,food_drink,11
+item_316,word,food_drink,produces,haricot,,,16_30,words,food_drink,11
+item_317,word,food_drink,produces,haricots verts,,,16_30,words,food_drink,11
+item_318,word,food_drink,produces,jus de fruit,,,16_30,words,food_drink,11
+item_319,word,food_drink,produces,kiwi,,,16_30,words,food_drink,11
+item_320,word,food_drink,produces,lait,,,16_30,words,food_drink,11
+item_321,word,food_drink,produces,limonade,,,16_30,words,food_drink,11
+item_322,word,food_drink,produces,madeleine,,,16_30,words,food_drink,11
+item_323,word,food_drink,produces,maïs,,,16_30,words,food_drink,11
+item_324,word,food_drink,produces,mayonnaise,,,16_30,words,food_drink,11
+item_325,word,food_drink,produces,melon,,,16_30,words,food_drink,11
+item_326,word,food_drink,produces,noisettes,,,16_30,words,food_drink,11
+item_327,word,food_drink,produces,nourriture,,,16_30,words,food_drink,11
+item_328,word,food_drink,produces,nutella,,,16_30,words,food_drink,11
+item_329,word,food_drink,produces,œuf,,,16_30,words,food_drink,11
+item_330,word,food_drink,produces,orange,,,16_30,words,food_drink,11
+item_331,word,food_drink,produces,pain,,,16_30,words,food_drink,11
+item_332,word,food_drink,produces,pâtes,,,16_30,words,food_drink,11
+item_333,word,food_drink,produces,petits gâteaux,,,16_30,words,food_drink,11
+item_334,word,food_drink,produces,petits pois,,,16_30,words,food_drink,11
+item_335,word,food_drink,produces,petits pots,,,16_30,words,food_drink,11
+item_336,word,food_drink,produces,pizza,,,16_30,words,food_drink,11
+item_337,word,food_drink,produces,poisson,,,16_30,words,food_drink,11
+item_338,word,food_drink,produces,pomme,,,16_30,words,food_drink,11
+item_339,word,food_drink,produces,pomme de terre,,,16_30,words,food_drink,11
+item_340,word,food_drink,produces,pop-corn,,,16_30,words,food_drink,11
+item_341,word,food_drink,produces,poulet,,,16_30,words,food_drink,11
+item_342,word,food_drink,produces,purée,,,16_30,words,food_drink,11
+item_343,word,food_drink,produces,raisin,,,16_30,words,food_drink,11
+item_344,word,food_drink,produces,raisins secs,,,16_30,words,food_drink,11
+item_345,word,food_drink,produces,sandwich,,,16_30,words,food_drink,11
+item_346,word,food_drink,produces,sauce,,,16_30,words,food_drink,11
+item_347,word,food_drink,produces,sel,,,16_30,words,food_drink,11
+item_348,word,food_drink,produces,soupe,,,16_30,words,food_drink,11
+item_349,word,food_drink,produces,spaghetti,,,16_30,words,food_drink,11
+item_350,word,food_drink,produces,sucette,,,16_30,words,food_drink,11
+item_351,word,food_drink,produces,sucre,,,16_30,words,food_drink,11
+item_352,word,food_drink,produces,tartine,,,16_30,words,food_drink,11
+item_353,word,food_drink,produces,thon,,,16_30,words,food_drink,11
+item_354,word,food_drink,produces,vanille,,,16_30,words,food_drink,11
+item_355,word,food_drink,produces,viande,,,16_30,words,food_drink,11
+item_356,word,food_drink,produces,vitamines,,,16_30,words,food_drink,11
+item_357,word,food_drink,produces,yaourt,,,16_30,words,food_drink,11
+item_358,word,furniture_rooms,produces,baignoire,,,16_30,words,environment,12
+item_359,word,furniture_rooms,produces,banc,,,16_30,words,environment,12
+item_360,word,furniture_rooms,produces,berceau,,,16_30,words,environment,12
+item_361,word,furniture_rooms,produces,canapé,,,16_30,words,environment,12
+item_362,word,furniture_rooms,produces,cave,,,16_30,words,environment,12
+item_363,word,furniture_rooms,produces,chaise,,,16_30,words,environment,12
+item_364,word,furniture_rooms,produces,chaise haute,,,16_30,words,environment,12
+item_365,word,furniture_rooms,produces,chambre,,,16_30,words,environment,12
+item_366,word,furniture_rooms,produces,cuisine,,,16_30,words,environment,12
+item_367,word,furniture_rooms,produces,cuisinière,,,16_30,words,environment,12
+item_368,word,furniture_rooms,produces,douche,,,16_30,words,environment,12
+item_369,word,furniture_rooms,produces,entrée,,,16_30,words,environment,12
+item_370,word,furniture_rooms,produces,escalier,,,16_30,words,environment,12
+item_371,word,furniture_rooms,produces,étendage,,,16_30,words,environment,12
+item_372,word,furniture_rooms,produces,évier,,,16_30,words,environment,12
+item_373,word,furniture_rooms,produces,fauteuil,,,16_30,words,environment,12
+item_374,word,furniture_rooms,produces,fenêtre,,,16_30,words,environment,12
+item_375,word,furniture_rooms,produces,four,,,16_30,words,environment,12
+item_376,word,furniture_rooms,produces,frigo,,,16_30,words,environment,12
+item_377,word,furniture_rooms,produces,garage,,,16_30,words,environment,12
+item_378,word,furniture_rooms,produces,lavabo,,,16_30,words,environment,12
+item_379,word,furniture_rooms,produces,lit,,,16_30,words,environment,12
+item_380,word,furniture_rooms,produces,machine à laver,,,16_30,words,environment,12
+item_381,word,furniture_rooms,produces,parc,,,16_30,words,environment,12
+item_382,word,furniture_rooms,produces,pièce,,,16_30,words,environment,12
+item_383,word,furniture_rooms,produces,porte,,,16_30,words,environment,12
+item_384,word,furniture_rooms,produces,pot,,,16_30,words,environment,12
+item_385,word,furniture_rooms,produces,salle de bain,,,16_30,words,environment,12
+item_386,word,furniture_rooms,produces,salon,,,16_30,words,environment,12
+item_387,word,furniture_rooms,produces,table,,,16_30,words,environment,12
+item_388,word,furniture_rooms,produces,télé,,,16_30,words,environment,12
+item_389,word,furniture_rooms,produces,tiroir,,,16_30,words,environment,12
+item_390,word,furniture_rooms,produces,wc,,,16_30,words,environment,12
+item_391,word,people,produces,bébé,,,16_30,words,persons,13
+item_392,word,people,produces,clown,,,16_30,words,persons,13
+item_393,word,people,produces,copain/e,,,16_30,words,persons,13
+item_394,word,people,produces,dame,,,16_30,words,persons,13
+item_395,word,people,produces,docteur,,,16_30,words,persons,13
+item_396,word,people,produces,enfant,,,16_30,words,persons,13
+item_397,word,people,produces,facteur,,,16_30,words,persons,13
+item_398,word,people,produces,fille,,,16_30,words,persons,13
+item_399,word,people,produces,frère,,,16_30,words,persons,13
+item_400,word,people,produces,garçon,,,16_30,words,persons,13
+item_401,word,people,produces,gens,,,16_30,words,persons,13
+item_402,word,people,produces,grand-mère,,,16_30,words,persons,13
+item_403,word,people,produces,grand-père,,,16_30,words,persons,13
+item_404,word,people,produces,infirmière,,,16_30,words,persons,13
+item_405,word,people,produces,maître/sse,,,16_30,words,persons,13
+item_406,word,people,produces,maman,,,16_30,words,persons,13
+item_407,word,people,produces,monsieur,,,16_30,words,persons,13
+item_408,word,people,produces,nom de l'animal,,,16_30,words,persons,13
+item_409,word,people,produces,nom de l'enfant,,,16_30,words,persons,13
+item_410,word,people,produces,nom de la nounou,,,16_30,words,persons,13
+item_411,word,people,produces,nounou,,,16_30,words,persons,13
+item_412,word,people,produces,oncle,,,16_30,words,persons,13
+item_413,word,people,produces,papa,,,16_30,words,persons,13
+item_414,word,people,produces,personne,,,16_30,words,persons,13
+item_415,word,people,produces,police,,,16_30,words,persons,13
+item_416,word,people,produces,pompier,,,16_30,words,persons,13
+item_417,word,people,produces,sœur,,,16_30,words,persons,13
+item_418,word,people,produces,tante,,,16_30,words,persons,13
+item_419,word,descriptive_words,produces,attention,,,16_30,words,descriptors,14
+item_420,word,descriptive_words,produces,avoir faim,,,16_30,words,descriptors,14
+item_421,word,descriptive_words,produces,avoir peur,,,16_30,words,descriptors,14
+item_422,word,descriptive_words,produces,avoir soif,,,16_30,words,descriptors,14
+item_423,word,descriptive_words,produces,avoir sommeil,,,16_30,words,descriptors,14
+item_424,word,descriptive_words,produces,beau/belle,,,16_30,words,descriptors,14
+item_425,word,descriptive_words,produces,bien,,,16_30,words,descriptors,14
+item_426,word,descriptive_words,produces,blanc/he,,,16_30,words,descriptors,14
+item_427,word,descriptive_words,produces,blessé,,,16_30,words,descriptors,14
+item_428,word,descriptive_words,produces,bleu,,,16_30,words,descriptors,14
+item_429,word,descriptive_words,produces,bon/ne,,,16_30,words,descriptors,14
+item_430,word,descriptive_words,produces,bruyant/e,,,16_30,words,descriptors,14
+item_431,word,descriptive_words,produces,cassé,,,16_30,words,descriptors,14
+item_432,word,descriptive_words,produces,chaud/e,,,16_30,words,descriptors,14
+item_433,word,descriptive_words,produces,coincé,,,16_30,words,descriptors,14
+item_434,word,descriptive_words,produces,collant/e,,,16_30,words,descriptors,14
+item_435,word,descriptive_words,produces,content/e,,,16_30,words,descriptors,14
+item_436,word,descriptive_words,produces,coquin/e,,,16_30,words,descriptors,14
+item_437,word,descriptive_words,produces,dégoutant/e,,,16_30,words,descriptors,14
+item_438,word,descriptive_words,produces,dernier/e,,,16_30,words,descriptors,14
+item_439,word,descriptive_words,produces,doux/ce,,,16_30,words,descriptors,14
+item_440,word,descriptive_words,produces,dur,,,16_30,words,descriptors,14
+item_441,word,descriptive_words,produces,endormi,,,16_30,words,descriptors,14
+item_442,word,descriptive_words,produces,être réveillé,,,16_30,words,descriptors,14
+item_443,word,descriptive_words,produces,fatigué,,,16_30,words,descriptors,14
+item_444,word,descriptive_words,produces,fort/e,,,16_30,words,descriptors,14
+item_445,word,descriptive_words,produces,fou/lle,,,16_30,words,descriptors,14
+item_446,word,descriptive_words,produces,froid,,,16_30,words,descriptors,14
+item_447,word,descriptive_words,produces,gentil/le,,,16_30,words,descriptors,14
+item_448,word,descriptive_words,produces,grand/e,,,16_30,words,descriptors,14
+item_449,word,descriptive_words,produces,haut/e,,,16_30,words,descriptors,14
+item_450,word,descriptive_words,produces,jaune,,,16_30,words,descriptors,14
+item_451,word,descriptive_words,produces,joli,,,16_30,words,descriptors,14
+item_452,word,descriptive_words,produces,lent/e,,,16_30,words,descriptors,14
+item_453,word,descriptive_words,produces,long/ue,,,16_30,words,descriptors,14
+item_454,word,descriptive_words,produces,lourd/e,,,16_30,words,descriptors,14
+item_455,word,descriptive_words,produces,malade,,,16_30,words,descriptors,14
+item_456,word,descriptive_words,produces,marron,,,16_30,words,descriptors,14
+item_457,word,descriptive_words,produces,méchant/e,,,16_30,words,descriptors,14
+item_458,word,descriptive_words,produces,mieux,,,16_30,words,descriptors,14
+item_459,word,descriptive_words,produces,mignon/e,,,16_30,words,descriptors,14
+item_460,word,descriptive_words,produces,minuscule,,,16_30,words,descriptors,14
+item_461,word,descriptive_words,produces,mouillé,,,16_30,words,descriptors,14
+item_462,word,descriptive_words,produces,neuf/ve,,,16_30,words,descriptors,14
+item_463,word,descriptive_words,produces,noir,,,16_30,words,descriptors,14
+item_464,word,descriptive_words,produces,orange,,,16_30,words,descriptors,14
+item_465,word,descriptive_words,produces,parti,,,16_30,words,descriptors,14
+item_466,word,descriptive_words,produces,pas bon,,,16_30,words,descriptors,14
+item_467,word,descriptive_words,produces,petit/e,,,16_30,words,descriptors,14
+item_468,word,descriptive_words,produces,plein/e,,,16_30,words,descriptors,14
+item_469,word,descriptive_words,produces,premier/ère,,,16_30,words,descriptors,14
+item_470,word,descriptive_words,produces,propre,,,16_30,words,descriptors,14
+item_471,word,descriptive_words,produces,rouge,,,16_30,words,descriptors,14
+item_472,word,descriptive_words,produces,sale,,,16_30,words,descriptors,14
+item_473,word,descriptive_words,produces,sec/he,,,16_30,words,descriptors,14
+item_474,word,descriptive_words,produces,sombre,,,16_30,words,descriptors,14
+item_475,word,descriptive_words,produces,tendre,,,16_30,words,descriptors,14
+item_476,word,descriptive_words,produces,tranquille,,,16_30,words,descriptors,14
+item_477,word,descriptive_words,produces,triste,,,16_30,words,descriptors,14
+item_478,word,descriptive_words,produces,venteux,,,16_30,words,descriptors,14
+item_479,word,descriptive_words,produces,vert/e,,,16_30,words,descriptors,14
+item_480,word,descriptive_words,produces,vide,,,16_30,words,descriptors,14
+item_481,word,descriptive_words,produces,vieux/vieille,,,16_30,words,descriptors,14
+item_482,word,descriptive_words,produces,vilain/e,,,16_30,words,descriptors,14
+item_483,word,descriptive_words,produces,vite,,,16_30,words,descriptors,14
+item_484,word,action_words,produces,acheter,,,16_30,words,action,15
+item_485,word,action_words,produces,aider,,,16_30,words,action,15
+item_486,word,action_words,produces,aimer,,,16_30,words,action,15
+item_487,word,action_words,produces,aimer bien,,,16_30,words,action,15
+item_488,word,action_words,produces,aller,,,16_30,words,action,15
+item_489,word,action_words,produces,aller bien avec,,,16_30,words,action,15
+item_490,word,action_words,produces,apporter,,,16_30,words,action,15
+item_491,word,action_words,produces,arracher,,,16_30,words,action,15
+item_492,word,action_words,produces,arrêter,,,16_30,words,action,15
+item_493,word,action_words,produces,attendre,,,16_30,words,action,15
+item_494,word,action_words,produces,attraper,,,16_30,words,action,15
+item_495,word,action_words,produces,avoir,,,16_30,words,action,15
+item_496,word,action_words,produces,balancer,,,16_30,words,action,15
+item_497,word,action_words,produces,balayer,,,16_30,words,action,15
+item_498,word,action_words,produces,boire,,,16_30,words,action,15
+item_499,word,action_words,produces,cacher,,,16_30,words,action,15
+item_500,word,action_words,produces,casser,,,16_30,words,action,15
+item_501,word,action_words,produces,chanter,,,16_30,words,action,15
+item_502,word,action_words,produces,chatouiller,,,16_30,words,action,15
+item_503,word,action_words,produces,conduire,,,16_30,words,action,15
+item_504,word,action_words,produces,construire,,,16_30,words,action,15
+item_505,word,action_words,produces,couper,,,16_30,words,action,15
+item_506,word,action_words,produces,courir,,,16_30,words,action,15
+item_507,word,action_words,produces,courir après,,,16_30,words,action,15
+item_508,word,action_words,produces,couvrir,,,16_30,words,action,15
+item_509,word,action_words,produces,cuisiner,,,16_30,words,action,15
+item_510,word,action_words,produces,danser,,,16_30,words,action,15
+item_511,word,action_words,produces,déchirer,,,16_30,words,action,15
+item_512,word,action_words,produces,déposer,,,16_30,words,action,15
+item_513,word,action_words,produces,dessiner,,,16_30,words,action,15
+item_514,word,action_words,produces,détester,,,16_30,words,action,15
+item_515,word,action_words,produces,dire,,,16_30,words,action,15
+item_516,word,action_words,produces,donner,,,16_30,words,action,15
+item_517,word,action_words,produces,donner un coup,,,16_30,words,action,15
+item_518,word,action_words,produces,dormir,,,16_30,words,action,15
+item_519,word,action_words,produces,éclabousser,,,16_30,words,action,15
+item_520,word,action_words,produces,écouter,,,16_30,words,action,15
+item_521,word,action_words,produces,écrire,,,16_30,words,action,15
+item_522,word,action_words,produces,entendre,,,16_30,words,action,15
+item_523,word,action_words,produces,essuyer,,,16_30,words,action,15
+item_524,word,action_words,produces,être debout,,,16_30,words,action,15
+item_525,word,action_words,produces,faire,,,16_30,words,action,15
+item_526,word,action_words,produces,faire bravo,,,16_30,words,action,15
+item_527,word,action_words,produces,faire de la peinture,,,16_30,words,action,15
+item_528,word,action_words,produces,faire du patin,,,16_30,words,action,15
+item_529,word,action_words,produces,faire du vélo/moto,,,16_30,words,action,15
+item_530,word,action_words,produces,faire semblant,,,16_30,words,action,15
+item_531,word,action_words,produces,faire un bisou,,,16_30,words,action,15
+item_532,word,action_words,produces,fermer,,,16_30,words,action,15
+item_533,word,action_words,produces,finir,,,16_30,words,action,15
+item_534,word,action_words,produces,frapper à la porte,,,16_30,words,action,15
+item_535,word,action_words,produces,glisser,,,16_30,words,action,15
+item_536,word,action_words,produces,goûter,,,16_30,words,action,15
+item_537,word,action_words,produces,goutter,,,16_30,words,action,15
+item_538,word,action_words,produces,grimper,,,16_30,words,action,15
+item_539,word,action_words,produces,jeter,,,16_30,words,action,15
+item_540,word,action_words,produces,jouer,,,16_30,words,action,15
+item_541,word,action_words,produces,laver,,,16_30,words,action,15
+item_542,word,action_words,produces,lécher,,,16_30,words,action,15
+item_543,word,action_words,produces,lire,,,16_30,words,action,15
+item_544,word,action_words,produces,manger,,,16_30,words,action,15
+item_545,word,action_words,produces,marcher,,,16_30,words,action,15
+item_546,word,action_words,produces,mettre,,,16_30,words,action,15
+item_547,word,action_words,produces,montrer,,,16_30,words,action,15
+item_548,word,action_words,produces,mordre,,,16_30,words,action,15
+item_549,word,action_words,produces,nager,,,16_30,words,action,15
+item_550,word,action_words,produces,nettoyer,,,16_30,words,action,15
+item_551,word,action_words,produces,nourrir,,,16_30,words,action,15
+item_552,word,action_words,produces,ouvrir,,,16_30,words,action,15
+item_553,word,action_words,produces,parler,,,16_30,words,action,15
+item_554,word,action_words,produces,partager,,,16_30,words,action,15
+item_555,word,action_words,produces,penser,,,16_30,words,action,15
+item_556,word,action_words,produces,pleurer,,,16_30,words,action,15
+item_557,word,action_words,produces,porter,,,16_30,words,action,15
+item_558,word,action_words,produces,pousser,,,16_30,words,action,15
+item_559,word,action_words,produces,prendre,,,16_30,words,action,15
+item_560,word,action_words,produces,prendre dans ses bras,,,16_30,words,action,15
+item_561,word,action_words,produces,ramasser,,,16_30,words,action,15
+item_562,word,action_words,produces,recevoir,,,16_30,words,action,15
+item_563,word,action_words,produces,regarder,,,16_30,words,action,15
+item_564,word,action_words,produces,renverser,,,16_30,words,action,15
+item_565,word,action_words,produces,réparer,,,16_30,words,action,15
+item_566,word,action_words,produces,rester,,,16_30,words,action,15
+item_567,word,action_words,produces,s'asseoir,,,16_30,words,action,15
+item_568,word,action_words,produces,sauter,,,16_30,words,action,15
+item_569,word,action_words,produces,se cogner,,,16_30,words,action,15
+item_570,word,action_words,produces,se dépêcher,,,16_30,words,action,15
+item_571,word,action_words,produces,se réveiller,,,16_30,words,action,15
+item_572,word,action_words,produces,sécher,,,16_30,words,action,15
+item_573,word,action_words,produces,secouer,,,16_30,words,action,15
+item_574,word,action_words,produces,souffler,,,16_30,words,action,15
+item_575,word,action_words,produces,souhaiter,,,16_30,words,action,15
+item_576,word,action_words,produces,sourire,,,16_30,words,action,15
+item_577,word,action_words,produces,taper,,,16_30,words,action,15
+item_578,word,action_words,produces,tenir,,,16_30,words,action,15
+item_579,word,action_words,produces,tirer,,,16_30,words,action,15
+item_580,word,action_words,produces,tomber,,,16_30,words,action,15
+item_581,word,action_words,produces,toucher,,,16_30,words,action,15
+item_582,word,action_words,produces,travailler,,,16_30,words,action,15
+item_583,word,action_words,produces,trouver,,,16_30,words,action,15
+item_584,word,action_words,produces,verser,,,16_30,words,action,15
+item_585,word,action_words,produces,voir,,,16_30,words,action,15
+item_586,word,time_words,produces,après,,,16_30,words,time,16
+item_587,word,time_words,produces,aujourd'hui,,,16_30,words,time,16
+item_588,word,time_words,produces,avant,,,16_30,words,time,16
+item_589,word,time_words,produces,ce soir,,,16_30,words,time,16
+item_590,word,time_words,produces,demain,,,16_30,words,time,16
+item_591,word,time_words,produces,heure,,,16_30,words,time,16
+item_592,word,time_words,produces,hier,,,16_30,words,time,16
+item_593,word,time_words,produces,jour,,,16_30,words,time,16
+item_594,word,time_words,produces,maintenant,,,16_30,words,time,16
+item_595,word,time_words,produces,matin,,,16_30,words,time,16
+item_596,word,time_words,produces,nuit,,,16_30,words,time,16
+item_597,word,helping_verbs,produces,a fait,,,16_30,words,auxiliaries,17
+item_598,word,helping_verbs,produces,aller,,,16_30,words,auxiliaries,17
+item_599,word,helping_verbs,produces,avoir à faire,,,16_30,words,auxiliaries,17
+item_600,word,helping_verbs,produces,avoir besoin de,,,16_30,words,auxiliaries,17
+item_601,word,helping_verbs,produces,devoir faire,,,16_30,words,auxiliaries,17
+item_602,word,helping_verbs,produces,essayer de,,,16_30,words,auxiliaries,17
+item_603,word,helping_verbs,produces,est,,,16_30,words,auxiliaries,17
+item_604,word,helping_verbs,produces,était,,,16_30,words,auxiliaries,17
+item_605,word,helping_verbs,produces,être,,,16_30,words,auxiliaries,17
+item_606,word,helping_verbs,produces,faire,,,16_30,words,auxiliaries,17
+item_607,word,helping_verbs,produces,fait,,,16_30,words,auxiliaries,17
+item_608,word,helping_verbs,produces,laisse-moi,,,16_30,words,auxiliaries,17
+item_609,word,helping_verbs,produces,ne pas,,,16_30,words,auxiliaries,17
+item_610,word,helping_verbs,produces,peux,,,16_30,words,auxiliaries,17
+item_611,word,helping_verbs,produces,pourrait,,,16_30,words,auxiliaries,17
+item_612,word,helping_verbs,produces,sont,,,16_30,words,auxiliaries,17
+item_613,word,helping_verbs,produces,suis,,,16_30,words,auxiliaries,17
+item_614,word,helping_verbs,produces,vouloir,,,16_30,words,auxiliaries,17
+item_615,word,question_words,produces,comment,,,16_30,words,interrogatives,18
+item_616,word,question_words,produces,le/la/les/quelles,,,16_30,words,interrogatives,18
+item_617,word,question_words,produces,où,,,16_30,words,interrogatives,18
+item_618,word,question_words,produces,pourquoi,,,16_30,words,interrogatives,18
+item_619,word,question_words,produces,quand,,,16_30,words,interrogatives,18
+item_620,word,question_words,produces,qui,,,16_30,words,interrogatives,18
+item_621,word,question_words,produces,quoi,,,16_30,words,interrogatives,18
+item_622,word,prepositions,produces,à,,,16_30,words,prepositions,19
+item_623,word,prepositions,produces,à côté de,,,16_30,words,prepositions,19
+item_624,word,prepositions,produces,à l'intérieur de,,,16_30,words,prepositions,19
+item_625,word,prepositions,produces,au dessus de,,,16_30,words,prepositions,19
+item_626,word,prepositions,produces,au loin,,,16_30,words,prepositions,19
+item_627,word,prepositions,produces,au sommet de,,,16_30,words,prepositions,19
+item_628,word,prepositions,produces,au sujet de,,,16_30,words,prepositions,19
+item_629,word,prepositions,produces,autour de,,,16_30,words,prepositions,19
+item_630,word,prepositions,produces,avec,,,16_30,words,prepositions,19
+item_631,word,prepositions,produces,chez,,,16_30,words,prepositions,19
+item_632,word,prepositions,produces,dans,,,16_30,words,prepositions,19
+item_633,word,prepositions,produces,de,,,16_30,words,prepositions,19
+item_634,word,prepositions,produces,dehors,,,16_30,words,prepositions,19
+item_635,word,prepositions,produces,derrière,,,16_30,words,prepositions,19
+item_636,word,prepositions,produces,en bas,,,16_30,words,prepositions,19
+item_637,word,prepositions,produces,en haut,,,16_30,words,prepositions,19
+item_638,word,prepositions,produces,ici,,,16_30,words,prepositions,19
+item_639,word,prepositions,produces,là,,,16_30,words,prepositions,19
+item_640,word,prepositions,produces,là-bas,,,16_30,words,prepositions,19
+item_641,word,prepositions,produces,loin,,,16_30,words,prepositions,19
+item_642,word,prepositions,produces,par-dessus,,,16_30,words,prepositions,19
+item_643,word,prepositions,produces,pour,,,16_30,words,prepositions,19
+item_644,word,prepositions,produces,près de,,,16_30,words,prepositions,19
+item_645,word,prepositions,produces,sous,,,16_30,words,prepositions,19
+item_646,word,prepositions,produces,sur,,,16_30,words,prepositions,19
+item_647,word,prepositions,produces,vers,,,16_30,words,prepositions,19
+item_648,word,quantifiers,produces,aucun/e,,,16_30,words,quantifiers,20
+item_649,word,quantifiers,produces,aussi,,,16_30,words,quantifiers,20
+item_650,word,quantifiers,produces,autre,,,16_30,words,quantifiers,20
+item_651,word,quantifiers,produces,chaque,,,16_30,words,quantifiers,20
+item_652,word,quantifiers,produces,du/de la/des,,,16_30,words,quantifiers,20
+item_653,word,quantifiers,produces,encore,,,16_30,words,quantifiers,20
+item_654,word,quantifiers,produces,le/la même,,,16_30,words,quantifiers,20
+item_655,word,quantifiers,produces,le/la/les,,,16_30,words,quantifiers,20
+item_656,word,quantifiers,produces,pas,,,16_30,words,quantifiers,20
+item_657,word,quantifiers,produces,plein/beaucoup,,,16_30,words,quantifiers,20
+item_658,word,quantifiers,produces,tous/tout,,,16_30,words,quantifiers,20
+item_659,word,quantifiers,produces,un autre,,,16_30,words,quantifiers,20
+item_660,word,quantifiers,produces,un peu,,,16_30,words,quantifiers,20
+item_661,word,quantifiers,produces,un/une,,,16_30,words,quantifiers,20
+item_662,word,pronouns,produces,à elle/sa,,,16_30,words,pronouns,21
+item_663,word,pronouns,produces,à lui/son,,,16_30,words,pronouns,21
+item_664,word,pronouns,produces,à moi,,,16_30,words,pronouns,21
+item_665,word,pronouns,produces,ça,,,16_30,words,pronouns,21
+item_666,word,pronouns,produces,ces,,,16_30,words,pronouns,21
+item_667,word,pronouns,produces,ceux,,,16_30,words,pronouns,21
+item_668,word,pronouns,produces,elle,,,16_30,words,pronouns,21
+item_669,word,pronouns,produces,eux,,,16_30,words,pronouns,21
+item_670,word,pronouns,produces,il,,,16_30,words,pronouns,21
+item_671,word,pronouns,produces,ils/elles,,,16_30,words,pronouns,21
+item_672,word,pronouns,produces,je,,,16_30,words,pronouns,21
+item_673,word,pronouns,produces,leur,,,16_30,words,pronouns,21
+item_674,word,pronouns,produces,lui,,,16_30,words,pronouns,21
+item_675,word,pronouns,produces,ma/mon/mes,,,16_30,words,pronouns,21
+item_676,word,pronouns,produces,moi,,,16_30,words,pronouns,21
+item_677,word,pronouns,produces,moi-même,,,16_30,words,pronouns,21
+item_678,word,pronouns,produces,notre,,,16_30,words,pronouns,21
+item_679,word,pronouns,produces,nous,,,16_30,words,pronouns,21
+item_680,word,pronouns,produces,on,,,16_30,words,pronouns,21
+item_681,word,pronouns,produces,ses,,,16_30,words,pronouns,21
+item_682,word,pronouns,produces,toi-même,,,16_30,words,pronouns,21
+item_683,word,pronouns,produces,votre/ta/ton,,,16_30,words,pronouns,21
+item_684,word,pronouns,produces,vous/tu,,,16_30,words,pronouns,21
+item_685,word,connecting_words,produces,alors,,,16_30,words,connectors,22
+item_686,word,connecting_words,produces,donc,,,16_30,words,connectors,22
+item_687,word,connecting_words,produces,et,,,16_30,words,connectors,22
+item_688,word,connecting_words,produces,mais,,,16_30,words,connectors,22
+item_689,word,connecting_words,produces,parce que,,,16_30,words,connectors,22
+item_690,word,connecting_words,produces,si,,,16_30,words,connectors,22
+item_691,how_use_words,,no; yes,comprend si vous lui demandez quelque chose qui n'est pas dans la pièce,,,16_30,conversation,permanence,23
+item_692,how_use_words,,no; yes,parle d'évènements passés ou de personnes absentes ,,,16_30,conversation,permanence,23
+item_693,how_use_words,,no; yes,"parle d'objets qui ne sont pas présents comme d'un jouet manquant ou absent, se réfère à un animal domestique hors de vue, ou pose des questions à propos d'une personne absente",,,16_30,conversation,permanence,23
+item_694,how_use_words,,no; yes,parle de choses qui vont se produire dans le futur,,,16_30,conversation,permanence,23
+item_695,complexity,,simple; complex,les chiens est là / les chiens sont là,,,16_30,grammar,,24
+item_696,complexity,,simple; complex,aller école / aller à école,,,16_30,grammar,,24
+item_697,complexity,,simple; complex,je vais s'attaquer / je vais t'attaquer,,,16_30,grammar,,24
+item_698,complexity,,simple; complex,c'est dedans la valise / c'est dans la valise,,,16_30,grammar,,24
+item_699,complexity,,simple; complex,robot Grégoire / robot à Grégoire / robot à moi / mon robot à moi / mon robot,,,16_30,grammar,,24
+item_700,complexity,,simple; complex,jouer pas / pas jouer / non jouer / non pas jouer / je joue pas,,,16_30,grammar,,24
+item_701,complexity,,simple; complex,veux la chaise / veux la chaise Grégoire / moi veux la chaise / moi je veux la chaise / je veux la chaise,,,16_30,grammar,,24
+item_702,complexity,,simple; complex,chien? / ça chien? / est chien? / c'est un chien? / est-ce que c'est un chien?,,,16_30,grammar,,24
+item_703,complexity,,simple; complex,chaussure maman / chaussure (d)e maman / chaussure à maman / chaussure de maman,,,16_30,grammar,,24
+item_704,complexity,,simple; complex,chaise;frigidaire / (l)a chaise;(l)e frigidaire / la chaise;le frigidaire / une chaise;un frigidaire,,,16_30,grammar,,24
+item_705,complexity,,simple; complex,confiture;chocolat / je veux de la confiture;du chocolat,,,16_30,grammar,,24
+item_706,complexity,,simple; complex,elle monte chaise / elle monte sur la chaise,,,16_30,grammar,,24
+item_707,complexity,,simple; complex,descendre / veux descendre / je veux descendre,,,16_30,grammar,,24
+item_708,complexity,,simple; complex,yé beau / l'est beau / il est beau,,,16_30,grammar,,24
+item_709,complexity,,simple; complex,ça voiture / ça c'est voiture / c'est une voiture,,,16_30,grammar,,24
+item_710,complexity,,simple; complex,cherche / é cherche / il;elle cherche,,,16_30,grammar,,24
+item_711,verb_endings,,no; yes,au présent,,,16_30,grammar,,24
+item_712,verb_endings,,no; yes,au passé composé,,,16_30,grammar,,24
+item_713,verb_endings,,no; yes,à l'impératif,,,16_30,grammar,,24
+item_714,verb_endings,,no; yes,au futur,,,16_30,grammar,,24
+item_715,verb_endings,,no; yes,à l'infinitif,,,16_30,grammar,,24
+item_716,verb_endings,,no; yes,à l'imparfait,,,16_30,grammar,,24
