@@ -26,19 +26,20 @@ class Command(BaseCommand):
 
         instruments = json.load(open('static/json/instruments.json'))
 
-        if options['language'] and options['form']:
-            input_language, input_form = options['language'], options['form']
-            input_instruments = filter(lambda instrument: instrument['language'] == input_language and
-                                                          instrument['form'] == input_form,
-                                       instruments)
-        elif options['language'] and not options['form']:
-            input_language = options['language']
-            input_instruments = filter(lambda instrument: instrument['language'] == input_language,
-                                       instruments)
-        elif not options['language'] and options['form']:
-            input_form = options['form']
-            input_instruments = filter(lambda instrument: instrument['form'] == input_form,
-                                       instruments)
+        if options['language'] or options['form']:
+            filter_exps = []
+            if options['language']:
+                input_language = options['language']
+                filter_exps.append("instrument['language'] == '%s'" % input_language)
+
+            if options['form']:
+                input_form = options['form']
+                filter_exps.append("instrument['form'] == '%s'" % input_form)
+
+            combined_exps = ' and '.join(filter_exps)
+
+            input_instruments = filter(lambda instrument: eval(combined_exps), instruments)
+
         else:
             input_instruments = instruments
 
