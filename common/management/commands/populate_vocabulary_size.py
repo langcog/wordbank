@@ -16,9 +16,18 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
 
-        if options['language'] and options['form']:
-            input_language, input_form = options['language'], options['form']
-            input_instruments = Instrument.objects.filter(language = input_language, form = input_form)
+        if options['language'] or options['form']:
+            kwargs = {}
+
+            if options['language']:
+                input_language = options['language']
+                kwargs['language'] = input_language
+
+            if options['form']:
+                input_form = options['form']
+                kwargs['form'] = input_form
+
+            input_instruments = Instrument.objects.filter(**kwargs)
         else:
             input_instruments = Instrument.objects.all()
 
