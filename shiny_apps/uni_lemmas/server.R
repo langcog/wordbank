@@ -10,11 +10,13 @@ theme_set(theme_mikabr(base_size = 14))
 all_prop_data <- feather::read_feather("all_prop_data.feather")
 uni_lemmas <- sort(unique(all_prop_data$uni_lemma))
 start_lemma <- "dog"
+start_measure <- "produces"
 kid_min <- 3
 points_min <- 3
 
 
-input <- list(uni_lemma = "crocodile")
+input <- list(uni_lemma = "crocodile",
+              measure = "understands")
 
 
 shinyServer(function(input, output, session) {
@@ -28,13 +30,24 @@ shinyServer(function(input, output, session) {
                 selected = start_lemma)
   })
 
+  output$measure_selector <- renderUI({
+    selectInput("measure", label = h4("Measure"),
+                choices = c("Produces" = "produces", "Understands" = "understands"),
+                selected = start_measure)
+  })
+
   uni_lemma_data <- function() {
     req(input$uni_lemma)
     all_prop_data %>%
       group_by(language) %>%
       filter(uni_lemma == input$uni_lemma &
+               measure == input$measure &
                n >= kid_min &
                n() >= points_min)
+  }
+
+  n_languages <- function() {
+    length(unique(uni_lemma_data()$language))
   }
 
   crosslinguistic_plot <- function() {
@@ -42,7 +55,7 @@ shinyServer(function(input, output, session) {
       select(language, measure, words) %>%
       distinct()
     ggplot(uni_lemma_data(), aes(x = age)) +
-      facet_grid(measure ~ language) +
+      facet_wrap( ~ language, ncol = min(n_languages(), 5)) +
       geom_point(aes(y = prop, colour = language)) +
       geom_smooth(aes(y = prop, colour = language), method = "loess", se = FALSE,
                   size = 1.5, span = 1) +
@@ -59,7 +72,7 @@ shinyServer(function(input, output, session) {
 
   output$crosslinguistic <- renderPlot({
     crosslinguistic_plot()
-  }, width = function() length(unique(uni_lemma_data()$language)) * 100 + 100)
+  }, height = function() ceiling(n_languages()/5) * 125 + 100, width = function() min(n_languages(), 5)* 150 + 100)
 
   table_data <- reactive({
     uni_lemma_data() %>%
