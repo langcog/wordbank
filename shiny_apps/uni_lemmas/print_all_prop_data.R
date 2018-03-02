@@ -2,21 +2,16 @@
 library(tidyverse)
 library(langcog)
 library(wordbankr)
-library(boot)
-library(lazyeval)
-library(robustbase)
 library(here)
 theme_set(theme_mikabr() +
             theme(panel.grid = element_blank(),
                   strip.background = element_blank()))
 font <- "Open Sans"
 
-setwd(here())
-
 # Connect to the Wordbank database and pull out the raw data.
 data_mode <- "remote"
 
-all_prop_data <- feather::read_feather("all_prop_data.feather")
+all_prop_data <- feather::read_feather(here("shiny_apps/uni_lemmas/all_prop_data.feather"))
 uni_lemmas <- sort(unique(all_prop_data$uni_lemma))
 start_lemma <- "dog"
 kid_min <- 3
@@ -41,7 +36,7 @@ all_prop_data <- get_instruments(mode = data_mode) %>%
             n = n_distinct(data_id)) %>%
   gather(key = "measure", value = "prop", produces, understands)
 
-feather::write_feather(all_prop_data,"all_prop_data.feather")
-write_csv(all_prop_data,"all_prop_data.csv", na = "")
+feather::write_feather(all_prop_data,here("shiny_apps/uni_lemmas/all_prop_data.feather"))
+write_csv(all_prop_data,here("shiny_apps/uni_lemmas/all_prop_data.csv"), na = "")
 
 
