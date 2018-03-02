@@ -27,6 +27,7 @@ shinyUI(fluidPage(
       conditionalPanel(
         condition = "output.loaded == 1",
         uiOutput("uni_lemma"),
+        uiOutput("measure_selector"),
         width = 3)),
 
     mainPanel(
