@@ -72,7 +72,7 @@ shinyServer(function(input, output, session) {
 
   output$crosslinguistic <- renderPlot({
     crosslinguistic_plot()
-  }, height = function() ceiling(n_languages()/5) * 125 + 100, width = function() min(n_languages(), 5)* 150 + 100)
+  }, height = function() ceiling(n_languages()/5) * 125 + 100, width = function() min(n_languages(), 5)* 125 + 100)
 
   table_data <- reactive({
     uni_lemma_data() %>%
