@@ -227,7 +227,7 @@ definition,uni_lemma,gloss,category,item,type,choices,complexity_category,itemID
 лицо,face,face,body_parts,,word,produces,,item_226
 лоб,forehead,forehead,body_parts,,word,produces,,item_227
 нога,leg,leg/foot,body_parts,,word,produces,,item_228
-ногти,nails,nails,body_parts,,word,produces,,item_229
+ногти,nail (body part),nails,body_parts,,word,produces,,item_229
 нос,nose,nose,body_parts,,word,produces,,item_230
 палец,finger,finger/toe,body_parts,,word,produces,,item_231
 плечи,shoulder,shoulders,body_parts,,word,produces,,item_232
@@ -245,7 +245,7 @@ definition,uni_lemma,gloss,category,item,type,choices,complexity_category,itemID
 бутылочка,bottle,bottle,household,,word,produces,,item_244
 веник,broom,broom,household,,word,produces,,item_245
 вилка,fork,fork,household,,word,produces,,item_246
-гвоздь,nail,nail,household,,word,produces,,item_247
+гвоздь,nail (object),nail,household,,word,produces,,item_247
 горшок,potty,potty,household,,word,produces,,item_248
 деньги,money,money,household,,word,produces,,item_249
 картинка,picture,picture,household,,word,produces,,item_250
@@ -276,7 +276,7 @@ definition,uni_lemma,gloss,category,item,type,choices,complexity_category,itemID
 пылесос,vacuum,vacuum,household,,word,produces,,item_275
 радио,radio,radio,household,,word,produces,,item_276
 расческа,comb (object),comb,household,,word,produces,,item_277
-свет,light,light,household,,word,produces,,item_278
+свет,light (object),light,household,,word,produces,,item_278
 совок (для мусора),dustpan,dustpan,household,,word,produces,,item_279
 соска,pacifier,pacifier/dummy,household,,word,produces,,item_280
 стакан,glass,glass,household,,word,produces,,item_281
@@ -476,7 +476,7 @@ cпасибо,thank you,thank you,games_routines,,word,produces,,item_414
 мыть/мыться,wash,wash,action_words,,word,produces,,item_475
 назвать/называться,name,call/be called,action_words,,word,produces,,item_476
 нести,bring,carry,action_words,,word,produces,,item_477
-нравиться,like,like,action_words,,word,produces,,item_478
+нравиться,like (action),like,action_words,,word,produces,,item_478
 облить,pour,pour (sluice),action_words,,word,produces,,item_479
 обнимать,hug,hug,action_words,,word,produces,,item_480
 одевать,dress (action),put on,action_words,,word,produces,,item_481
@@ -628,21 +628,21 @@ cпасибо,thank you,thank you,games_routines,,word,produces,,item_414
 я,i,I,pronouns,,word,produces,,item_627
 ты,you,you,pronouns,,word,produces,,item_628
 мы,we,we,pronouns,,word,produces,,item_629
-вы,you [plural],you,pronouns,,word,produces,,item_630
+вы,you (plural),you,pronouns,,word,produces,,item_630
 он,he,he,pronouns,,word,produces,,item_631
 она,she,she,pronouns,,word,produces,,item_632
 они,they,they,pronouns,,word,produces,,item_633
 меня,me,me,pronouns,,word,produces,,item_634
 тебя,you,you,pronouns,,word,produces,,item_635
 нас,us,us,pronouns,,word,produces,,item_636
-вас,you [plural],you,pronouns,,word,produces,,item_637
+вас,you (plural),you,pronouns,,word,produces,,item_637
 его,his,him,pronouns,,word,produces,,item_638
 ее (genitive),her,her,pronouns,,word,produces,,item_639
 их (genitive),them,them,pronouns,,word,produces,,item_640
 мне,me,me,pronouns,,word,produces,,item_641
 тебе,you,you,pronouns,,word,produces,,item_642
 нам,us,us,pronouns,,word,produces,,item_643
-вам,you [plural],your,pronouns,,word,produces,,item_644
+вам,you (plural),your,pronouns,,word,produces,,item_644
 ему,him,him,pronouns,,word,produces,,item_645
 ей,her,her,pronouns,,word,produces,,item_646
 им,them,them,pronouns,,word,produces,,item_647
@@ -722,7 +722,7 @@ cпасибо,thank you,thank you,games_routines,,word,produces,,item_414
 когда,when (conjunction),when,connecting_words,,word,produces,,item_721
 который,which (conjunction),which,connecting_words,,word,produces,,item_722
 но,but,but,connecting_words,,word,produces,,item_723
-потому что,because ,because,connecting_words,,word,produces,,item_724
+потому что,because,because,connecting_words,,word,produces,,item_724
 тоже,also,too,connecting_words,,word,produces,,item_725
 что,that,that,connecting_words,,word,produces,,item_726
 а то,or else,or else/or,connecting_words,,word,produces,,item_727

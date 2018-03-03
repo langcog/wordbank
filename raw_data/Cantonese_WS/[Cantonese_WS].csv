@@ -117,7 +117,7 @@ item_115,E3SAUCE,word,food_drink,produces,汁/醬,,,sauce
 item_116,E3ONION,word,food_drink,produces,蔥,,,onion
 item_117,E3GINGER,word,food_drink,produces,薑,,,ginger
 item_118,V4EATC,word,action_words,produces,食,,,eat
-item_119,V4DRINKC,word,action_words,produces,飲,,,drink
+item_119,V4DRINKC,word,action_words,produces,飲,,,drink (action)
 item_120,V4FEED,word,action_words,produces,餵,,,feed
 item_121,V4BITE,word,action_words,produces,咬,,,bite
 item_122,V4CHEWC,word,action_words,produces,噍*,,,chew
@@ -163,7 +163,7 @@ item_161,V4KICK,word,action_words,produces,踢,,,kick
 item_162,V4JUMP,word,action_words,produces,跳,,,jump
 item_163,V4DANCE,word,action_words,produces,跳舞,,,dance
 item_164,V4BOUNCC,word,action_words,produces,彈,,,bounce
-item_165,V4FLY,word,action_words,produces,飛,,,fly
+item_165,V4FLY,word,action_words,produces,飛,,,fly (action)
 item_166,V4SWIMC,word,action_words,produces,游水,,,swim
 item_167,V4SWINGC,word,action_words,produces,搖,,,shake
 item_168,V4SPIN,word,action_words,produces,轉,,,spin
@@ -171,7 +171,7 @@ item_169,V4MOVE2,word,action_words,produces,郁,,,move
 item_170,V4HIDEC,word,action_words,produces,匿*(埋),,,hide
 item_171,V4FIND,word,action_words,produces,搵,,,find
 item_172,V4CATCHC,word,action_words,produces,捉,,,catch
-item_173,V4OPEN,word,action_words,produces,(打)開/開(燈),,,open
+item_173,V4OPEN,word,action_words,produces,(打)開/開(燈),,,open (action)
 item_174,V4TURNOF,word,action_words,produces,熄(燈),,,turn off
 item_175,V4CLOSE,word,action_words,produces,閂(門),,,close
 item_176,V4KNOCK,word,action_words,produces,敲/搉*(門),,,knock
@@ -241,7 +241,7 @@ item_239,V4KNOW,word,action_words,produces,知道,,,know
 item_240,V4UNDSTD,word,action_words,produces,明白,,,understand
 item_241,V4KNOWHW,word,action_words,produces,識,,,know
 item_242,V4REMEM,word,action_words,produces,記得/記住,,,remember
-item_243,V4CAN,word,action_words,produces,會,,can / will,can
+item_243,V4CAN,word,action_words,produces,會,,can / will,can (auxiliary)
 item_244,V4THINKC,word,action_words,produces,諗,,,think
 item_245,V4DREAMC,word,action_words,produces,發夢,,,dream
 item_246,V4GUESS,word,action_words,produces,估,,,guess
@@ -280,8 +280,8 @@ item_278,V4BULLY,word,action_words,produces,蝦,,,bully
 item_279,V4GRAB,word,action_words,produces,搶,,,grab
 item_280,V4BORROW,word,action_words,produces,借,,,borrow
 item_281,V4CHNGE,word,action_words,produces,(交)換,,,exchange
-item_282,V4COVERC,word,action_words,produces,冚*(蓋上),,,cover
-item_283,V4COVER2,word,action_words,produces,遮(住),,,cover
+item_282,V4COVERC,word,action_words,produces,冚*(蓋上),,,cover (action)
+item_283,V4COVER2,word,action_words,produces,遮(住),,,cover (action)
 item_284,V4FLIPC,word,action_words,produces,揭(開),,,uncover
 item_285,V4DAMAGC,word,action_words,produces,打爛/整爛,,,break
 item_286,V4FIX,word,action_words,produces,修理,,,fix
@@ -373,7 +373,7 @@ item_371,X7SWEET,word,descriptive_words,produces,甜,,,sweet
 item_372,X7SOUR,word,descriptive_words,produces,酸,,,sour
 item_373,X7BITTER,word,descriptive_words,produces,苦,,,bitter
 item_374,X7SPICY,word,descriptive_words,produces,辣,,,spicy
-item_375,X7WET,word,descriptive_words,produces,濕,,,wet
+item_375,X7WET,word,descriptive_words,produces,濕,,,wet (description)
 item_376,X7SOFT2,word,descriptive_words,produces,腍*,,,soft
 item_377,X7SOFT,word,descriptive_words,produces,軟,,,soft
 item_378,X7HARD,word,descriptive_words,produces,硬,,,hard
@@ -388,7 +388,7 @@ item_386,X7SAD,word,descriptive_words,produces,傷心,,,sad
 item_387,X7COMFOR,word,descriptive_words,produces,舒服,,,comfortable
 item_388,X7DIRTYC,word,descriptive_words,produces,污糟/邋遢*,,,dirty
 item_389,X7CLEAN,word,descriptive_words,produces,乾淨,,,clean (description)
-item_390,X7HURTC,word,descriptive_words,produces,痛,,,hurt
+item_390,X7HURTC,word,descriptive_words,produces,痛,,,hurt (description)
 item_391,X7ITCHY,word,descriptive_words,produces,痕,,,itchy
 item_392,X7SICK,word,descriptive_words,produces,病,,,sick
 item_393,X7TIREDC,word,descriptive_words,produces,攰,,,tired
@@ -408,7 +408,7 @@ item_406,X7SHORT2,word,descriptive_words,produces,矮,,,short
 item_407,X7LONG,word,descriptive_words,produces,長,,,long
 item_408,X7SHORT,word,descriptive_words,produces,短,,,short
 item_409,X7HEAVY,word,descriptive_words,produces,重,,,heavy
-item_410,X7LIGHT,word,descriptive_words,produces,輕,,,light
+item_410,X7LIGHT,word,descriptive_words,produces,輕,,,light (description)
 item_411,X7BIG,word,descriptive_words,produces,大,,,big
 item_412,X7SMALLC,word,descriptive_words,produces,細,,,small
 item_413,X7ENOUGH,word,descriptive_words,produces,夠,,,enough
@@ -469,7 +469,7 @@ item_467,A8BUTFLY,word,animals,produces,蝴蝶,,,butterfly
 item_468,A8BEE,word,animals,produces,蜜蜂,,,bee
 item_469,A8DRAFLY,word,animals,produces,蜻蜓,,,dragonfly
 item_470,A8MOSQ,word,animals,produces,蚊,,,mosquito
-item_471,A8FLYC,word,animals,produces,烏蠅,,,fly
+item_471,A8FLYC,word,animals,produces,烏蠅,,,fly (animal)
 item_472,A8ANT,word,animals,produces,(螞)蟻,,,ant
 item_473,A8ROACHC,word,animals,produces,曱甴,,,cockroach
 item_474,A8SNAIL,word,animals,produces,蝸牛,,,snail
@@ -507,8 +507,8 @@ item_505,H10POT2,word,household,produces,煲,,,pot
 item_506,H10COOKE,word,household,produces,(電)飯煲,,,
 item_507,H10POTC,word,household,produces,鑊,,,
 item_508,H10TEAPO,word,household,produces,水壺/茶壺,,,teapot
-item_509,H10LIGHT,word,household,produces,燈,,,light
-item_510,H10PHONE,word,household,produces,電話,,,phone
+item_509,H10LIGHT,word,household,produces,燈,,,light (object)
+item_510,H10PHONE,word,household,produces,電話,,,telephone
 item_511,H10WATCH,word,household,produces,(手)表,,,watch (object)
 item_512,H10CLOCK,word,household,produces,鐘,,,clock
 item_513,H10CAMEC,word,household,produces,(影)相機,,,camera
@@ -564,7 +564,7 @@ item_562,O11CLOUD,word,outside,produces,雲,,,cloud
 item_563,O11MOUNT,word,outside,produces,山,,,mountain
 item_564,O11SEA,word,outside,produces,海,,,sea
 item_565,O11SPINC,word,outside,produces,氹氹轉,,,merry-go-round
-item_566,O11SWINC,word,outside,produces,韆鞦,,,swing
+item_566,O11SWINC,word,outside,produces,韆鞦,,,swing (object)
 item_567,O11SLIDE,word,outside,produces,滑梯,,,slide (object)
 item_568,O11LADDE,word,outside,produces,梯,,,ladder
 item_569,O11SUN,word,outside,produces,太陽,,,sun
@@ -621,7 +621,7 @@ item_619,B13FINGE,word,body_parts,produces,手指,,,finger
 item_620,B13THUMC,word,body_parts,produces,手指公,,,thumb
 item_621,B13LEGC,word,body_parts,produces,腳,,,leg
 item_622,B13TOE,word,body_parts,produces,腳趾,,,toe
-item_623,B13FNAIL,word,body_parts,produces,指/趾甲,,"nails / finger nail, toe nail",nails
+item_623,B13FNAIL,word,body_parts,produces,指/趾甲,,"nails / finger nail, toe nail",nail (body part)
 item_624,B13KNEEC,word,body_parts,produces,膝頭哥,,,knee
 item_625,B13TUMMC,word,body_parts,produces,肚/肚腩,,,tummy
 item_626,B13BELBC,word,body_parts,produces,肚臍,,,belly button
@@ -745,7 +745,7 @@ item_743,C19BAAU,word,classifiers,produces,包,,,pack of
 item_744,Q20WHATC,word,question_words,produces,乜嘢,,,what
 item_745,Q20DOWHC,word,question_words,produces,做咩/乜,,what / what is happening/ what are you doing,what
 item_746,Q20WHOC,word,question_words,produces,邊個,,,who
-item_747,Q20WHERC,word,question_words,produces,邊度,,,where
+item_747,Q20WHERC,word,question_words,produces,邊度,,,where (question)
 item_748,Q20WHYC,word,question_words,produces,點解,,,why
 item_749,Q20WTIME,word,question_words,produces,幾點,,,what time
 item_750,Q20WHEN,word,question_words,produces,幾時,,,when (question)
@@ -770,7 +770,7 @@ item_768,Z22WANT2,word,helping_verbs,produces,想,,,want
 item_769,Z22LIKE,word,helping_verbs,produces,鍾意,,,like
 item_770,Z22KNOWH,word,helping_verbs,produces,識(做),,,know
 item_771,Z22WILL,word,helping_verbs,produces,會,,,will
-item_772,Z22OK,word,helping_verbs,produces,可以(做),,,can
+item_772,Z22OK,word,helping_verbs,produces,可以(做),,,can (auxiliary)
 item_773,Z22SHOUL,word,helping_verbs,produces,應該,,,should
 item_774,Z22NOTOK,word,helping_verbs,produces,唔準/唔俾,,,not allowed
 item_775,Z22UNWIL,word,helping_verbs,produces,唔捨得,,,unwilling

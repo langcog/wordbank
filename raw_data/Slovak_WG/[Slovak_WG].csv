@@ -80,7 +80,7 @@ item_78,,word,understands; produces,animals,mačka,cat,,cat
 item_79,,word,understands; produces,animals,medveď/maco,bear,,bear
 item_80,,word,understands; produces,animals,meno domáceho zvieratka,your pet's name,,pet's name
 item_81,,word,understands; produces,animals,motýľ,butterfly,,butterfly
-item_82,,word,understands; produces,animals,mucha,fly,,fly
+item_82,,word,understands; produces,animals,mucha,fly,,fly (animal)
 item_83,,word,understands; produces,animals,myška,mouse,,mouse
 item_84,,word,understands; produces,animals,opica,monkey,,monkey
 item_85,,word,understands; produces,animals,ovečka,lamb,,sheep
@@ -196,7 +196,7 @@ item_194,,word,understands; produces,household,fľaša,a bottle,,bottle
 item_195,,word,understands; produces,household,gombík,button,,button
 item_196,,word,understands; produces,household,hodiny,hours,,clock
 item_197,,word,understands; produces,household,kamera,video camera,,camera
-item_198,,word,understands; produces,household,kefa,brush,,brush
+item_198,,word,understands; produces,household,kefa,brush,,brush (object)
 item_199,,word,understands; produces,household,kľúče,keys,,keys
 item_200,,word,understands; produces,household,koliesko,ring,,
 item_201,,word,understands; produces,household,krhlička,spout,,
@@ -213,7 +213,7 @@ item_211,,word,understands; produces,household,pena,foam,,
 item_212,,word,understands; produces,household,prádlo,clothes,,
 item_213,,word,understands; produces,household,pumpa,pump,,
 item_214,,word,understands; produces,household,smeti,trash,,trash
-item_215,,word,understands; produces,household,svetlo,the light,,light
+item_215,,word,understands; produces,household,svetlo,the light,,light (object)
 item_216,,word,understands; produces,household,sviečka / kahanček,Candle,,candle
 item_217,,word,understands; produces,household,taška,bag,,bag
 item_218,,word,understands; produces,household,telefón,phone,,telephone
@@ -221,7 +221,7 @@ item_219,,word,understands; produces,household,váha,weight,,
 item_220,,word,understands; produces,household,vankúš,pillow,,pillow
 item_221,,word,understands; produces,household,vareška,wooden spoon,,
 item_222,,word,understands; produces,household,váza,vase,,
-item_223,,word,understands; produces,household,vrchnák,lid,,cover
+item_223,,word,understands; produces,household,vrchnák,lid,,cover (object)
 item_224,,word,understands; produces,household,vysávač,vacuum cleaner,,vacuum
 item_225,,word,understands; produces,household,zástrčka / elektrika,electrical plug,,
 item_226,,word,understands; produces,household,zvonček,bell,,bell
@@ -276,12 +276,12 @@ item_274,,word,understands; produces,other,pápá,Papa,,bye
 item_275,,word,understands; produces,other,tak / no,so / no,,yes
 item_276,,word,understands; produces,action_words,báť sa,be afraid,,
 item_277,,word,understands; produces,action_words,bežať,run,,run
-item_278,,word,understands; produces,action_words,bolieť,hurt,,hurt
+item_278,,word,understands; produces,action_words,bolieť,hurt,,hurt (action)
 item_279,,word,understands; produces,action_words,búchať,thump,,hit
 item_280,,word,understands; produces,action_words,cikať,pee,,pee
 item_281,,word,understands; produces,action_words,cúvať,reverse,,
 item_282,,word,understands; produces,action_words,cvičiť,exercise,,
-item_283,,word,understands; produces,action_words,česať,tease,,brush
+item_283,,word,understands; produces,action_words,česať,tease,,brush (action)
 item_284,,word,understands; produces,action_words,čistiť,to clean,,clean (action)
 item_285,,word,understands; produces,action_words,čítať,to read,,read
 item_286,,word,understands; produces,action_words,dať,give,,give
@@ -297,13 +297,13 @@ item_295,,word,understands; produces,action_words,kúpať,wash,,bathe
 item_296,,word,understands; produces,action_words,kvapkať,drip,,drop
 item_297,,word,understands; produces,action_words,ležať,lie,,sit
 item_298,,word,understands; produces,action_words,liať / poliať,pour,,
-item_299,,word,understands; produces,action_words,lietať,to fly,,fly
+item_299,,word,understands; produces,action_words,lietať,to fly,,fly (action)
 item_300,,word,understands; produces,action_words,mať,have got,,have
 item_301,,word,understands; produces,action_words,miešať,stir,,
 item_302,,word,understands; produces,action_words,natáčať,shoot,,
 item_303,,word,understands; produces,action_words,nie je,It is not,,
 item_304,,word,understands; produces,action_words,obuť,to shoe,,
-item_305,,word,understands; produces,action_words,otvoriť,open,,open
+item_305,,word,understands; produces,action_words,otvoriť,open,,open (action)
 item_306,,word,understands; produces,action_words,páliť,fire,,
 item_307,,word,understands; produces,action_words,piecť,to bake,,
 item_308,,word,understands; produces,action_words,piť,drink,,drink (action)

@@ -25,7 +25,7 @@ item_23,Küken,chicken,animals,Kuken,word,produces,,chick
 item_24,Kuh,cow,animals,Kuh,word,produces,,cow
 item_25,Reh,deer,animals,Reh,word,produces,,deer
 item_26,Hund,dog,animals,Hund,word,produces,,dog
-item_27,Fliege,fly,animals,Fliege,word,produces,,fly
+item_27,Fliege,fly,animals,Fliege,word,produces,,fly (animal)
 item_28,Igel,hedgehog,animals,Igel,word,produces,,hedgehog
 item_29,Schlange,snake,animals,Schlange,word,produces,,snake
 item_30,Fuchs,fox,animals,Fuchs,word,produces,,fox
@@ -178,9 +178,9 @@ item_176,Radio,radio,household,Radio,word,produces,,radio
 item_177,Schlüssel,key,household,Schlussel,word,produces,,keys
 item_178,Messer,knife,household,Messer,word,produces,,knife
 item_179,Lampe,lamp,household,Lampe,word,produces,,lamp
-item_180,Licht,light,household,Licht,word,produces,,light
+item_180,Licht,light,household,Licht,word,produces,,light (object)
 item_181,Telefon,telephone,household,Telefon,word,produces,,telephone
-item_182,Zahnbürste,tootbrush,household,Zahnburste,word,produces,,toothbrush
+item_182,Zahnbürste,toothbrush,household,Zahnburste,word,produces,,toothbrush
 item_183,Handtuch,towel,household,Handtuch,word,produces,,towel
 item_184,Müll,garbage,household,Mull,word,produces,,trash
 item_185,Tablett,tray,household,Tablett,word,produces,,
@@ -198,7 +198,7 @@ item_196,Kamera,camera,household,Kamera,word,produces,,camera
 item_197,Uhr,clock,household,Uhr,word,produces,,clock
 item_198,Kamm,comb,household,Kamm,word,produces,,comb (object)
 item_199,Tasse,cup,household,Tasse,word,produces,,cup
-item_200,Deckel,lid,household,Deckel,word,produces,,cover
+item_200,Deckel,lid,household,Deckel,word,produces,,cover (object)
 item_201,Waschpulver,washing powder,household,Waschpulver,word,produces,,
 item_202,Staubsauger,vacuum,household,Staubsauger,word,produces,,vacuum
 item_203,Teller,plate,household,Teller,word,produces,,plate
@@ -206,9 +206,9 @@ item_204,Flasche,bottle,household,Flasche,word,produces,,bottle
 item_205,Dose,box,household,Dose,word,produces,,box
 item_206,Schüssel,bowl,household,Schussel,word,produces,,keys
 item_207,Besen,broom,household,Besen,word,produces,,broom
-item_208,Bürste,brush,household,Burste,word,produces,,brush
+item_208,Bürste,brush,household,Burste,word,produces,,brush (object)
 item_209,Eimer,bucket,household,Eimer,word,produces,,bucket
-item_210,Nagel,nail,household,Nagel,word,produces,,nail
+item_210,Nagel,nail,household,Nagel,word,produces,,nail (object)
 item_211,Serviette,napkin,household,Serviette,word,produces,,
 item_212,Gabel,fork,household,Gabel,word,produces,,fork
 item_213,Kissen,cushion,household,Kissen,word,produces,,pillow
@@ -325,7 +325,7 @@ item_323,danke,thank you,games_routines,danke,word,produces,,thank you
 item_324,psst leise,shh quiet,games_routines,psst_leise,word,produces,,
 item_325,einkaufen,shop,games_routines,einkaufen,word,produces,,
 item_326,tschüss,bye,games_routines,tschuss,word,produces,,bye
-item_327,telefonieren,call on phone,games_routines,telefonieren,word,produces,,phone
+item_327,telefonieren,call on phone,games_routines,telefonieren,word,produces,,call on phone
 item_328,warten,wait,games_routines,warten,word,produces,,
 item_329,guck guck,peekaboo,games_routines,guck_guck,word,produces,,
 item_330,bitte,please,games_routines,bitte,word,produces,,please
@@ -367,7 +367,7 @@ item_365,jagen,chase,action_words,jagen,word,produces,,
 item_366,anfassen,touch,action_words,anfassen,word,produces,,touch
 item_367,sitzen,sit,action_words,sitzen,word,produces,,sit
 item_368,machen,make,action_words,machen,word,produces,,make
-item_369,öffnen,open,action_words,offnen,word,produces,,open
+item_369,öffnen,open,action_words,offnen,word,produces,,open (action)
 item_370,gehen,go,action_words,gehen,word,produces,,walk
 item_371,kochen,cook,action_words,kochen,word,produces,,
 item_372,zugucken,watch,action_words,zugucken,word,produces,,watch (action)
@@ -395,7 +395,7 @@ item_393,warten,wait,action_words,warten,word,produces,,
 item_394,aufwachen,wake up,action_words,aufwachen,word,produces,,
 item_395,schlafen,sleep,action_words,schlafen,word,produces,,sleep
 item_396,malen,paint,action_words,malen,word,produces,,draw
-item_397,zudecken,cover,action_words,zudecken,word,produces,,cover
+item_397,zudecken,cover,action_words,zudecken,word,produces,,cover (action)
 item_398,wischen,wipe,action_words,wischen,word,produces,,wipe
 item_399,spritzen,splash,action_words,spritzen,word,produces,,splash
 item_400,stehen,stand,action_words,stehen,word,produces,,stand
@@ -441,7 +441,7 @@ item_439,sauber,clean,descriptive_words,sauber,word,produces,,clean (description
 item_440,klein,littele,descriptive_words,klein,word,produces,,little (description)
 item_441,dunkel,dark,descriptive_words,dunkel,word,produces,,dark
 item_442,schmutzig,dirty,descriptive_words,schmutzig,word,produces,,dirty
-item_443,nass,wet,descriptive_words,nass,word,produces,,wet
+item_443,nass,wet,descriptive_words,nass,word,produces,,wet (description)
 item_444,schnell,quick,descriptive_words,schnell,word,produces,,fast
 item_445,voll,full,descriptive_words,voll,word,produces,,full
 item_446,wach,awake,descriptive_words,wach,word,produces,,
@@ -463,7 +463,7 @@ item_461,groß,big,descriptive_words,gross,word,produces,,big
 item_462,schwer,heavy,descriptive_words,schwer,word,produces,,heavy
 item_463,krank,ill,descriptive_words,krank,word,produces,,sick
 item_464,braun,brown,descriptive_words,braun,word,produces,,
-item_465,verletzt,injured,descriptive_words,verletzt,word,produces,,hurt
+item_465,verletzt,injured,descriptive_words,verletzt,word,produces,,hurt (description)
 item_466,klebrig,sticky,descriptive_words,klebrig,word,produces,,
 item_467,niedlich,cute,descriptive_words,niedlich,word,produces,,cute
 item_468,winzig,tiny,descriptive_words,winzig,word,produces,,
@@ -573,7 +573,7 @@ item_571,muss,must,helping_verbs,muss,word,produces,,
 item_572,sind,are,helping_verbs,sind,word,produces,,
 item_573,kann,can,helping_verbs,kann,word,produces,,can (auxiliary)
 item_574,müssen,must,helping_verbs,mussen,word,produces,,
-item_575,können,can,helping_verbs,konnen,word,produces,,can
+item_575,können,can,helping_verbs,konnen,word,produces,,can (auxiliary)
 item_576,sollst,shall,helping_verbs,sollst,word,produces,,should
 item_577,bist,are,helping_verbs,bist,word,produces,,
 item_578,wollen,want,helping_verbs,wollen,word,produces,,wanna

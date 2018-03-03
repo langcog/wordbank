@@ -7,7 +7,7 @@ item_5,a11mon,word,sounds,understands; produces,Kima,monkey,,monkey
 item_6,a5coc,word,sounds,understands; produces,Kukuriukuu,Cockrel,,cockadoodledoo
 item_7,a4chi,word,sounds,understands; produces,kru kru kru,Chicken calling chick,,
 item_8,a7cro,word,sounds,understands; produces,Kunguru,Crow,,crow
-item_9,a12ouc,word,sounds,understands; produces,Umia,Ouch,,hurt
+item_9,a12ouc,word,sounds,understands; produces,Umia,Ouch,,owie
 item_10,a10goa,word,sounds,understands; produces,mmee mmee,Goat,,baa baa
 item_11,a3cat,word,sounds,understands; produces,miau miau,Cat,,meow
 item_12,a6cow,word,sounds,understands; produces,mooh mooh,Cow,,moo
@@ -90,7 +90,7 @@ item_88,f4hat,word,clothing,understands; produces,Kipkapa/Kepa/Cap/ Kofia,Hat/Ca
 item_89,f3colu,word,clothing,understands; produces,leso,Colured cloth worn by women and has wordings,,handkerchief
 item_90,f14unde,word,clothing,understands; produces,Chupi/Panti,Underpants,,underwear
 item_91,f5napp,word,clothing,understands; produces,Nepi,Nappy,,diaper
-item_92,f2clot,word,clothing,understands; produces,Nguo,clothing,,dress
+item_92,f2clot,word,clothing,understands; produces,Nguo,clothing,,dress (object)
 item_93,f7sand,word,clothing,understands; produces,Sapata/pata pata/ndara/Champali/Slipper,Sandals,,
 item_94,f8shir,word,clothing,understands; produces,Shati,Shirt,,shirt
 item_95,f11sock,word,clothing,understands; produces,Soksi,Socks,,sock
@@ -102,7 +102,7 @@ item_100,g3eye,word,body_parts,understands; produces,Jicho,Eye,,eye
 item_101,g10leg,word,body_parts,understands; produces,Mguu,Leg,,leg
 item_102,g15umbi,word,body_parts,understands; produces,Kitovu,Umbilical cord,,belly button
 item_103,g9head,word,body_parts,understands; produces,Kichwa/Head,Head,,head
-item_104,g6fing,word,body_parts,understands; produces,Kucha,Fingernail,,nail
+item_104,g6fing,word,body_parts,understands; produces,Kucha,Fingernail,,nail (body part)
 item_105,g1butt,word,body_parts,understands; produces,Makalio/matako*,Buttocks,,butt
 item_106,g11mout,word,body_parts,understands; produces,Midomo,Mouth,,lips
 item_107,g8hand,word,body_parts,understands; produces,Mkono,Hand,,hand
@@ -263,7 +263,7 @@ item_261,n33move,word,action_words,understands; produces,Tembea,Move around/walk
 item_262,n52thro,word,action_words,understands; produces,Rusha,Throw,,throw
 item_263,n7catc,word,action_words,understands; produces,Shika,Catch,,touch
 item_264,n15drea,word,action_words,understands; produces,Ota,Dream,,star
-item_265,n34open,word,action_words,understands; produces,Fungua,Open,,open
+item_265,n34open,word,action_words,understands; produces,Fungua,Open,,open (action)
 item_266,n37pull,word,action_words,understands; produces,Vuta,Pull,,pull
 item_267,n35play,word,action_words,understands; produces,Cheza,Play,,
 item_268,o7few,word,descriptive_words,understands; produces,Kidogo,Few,,little (amount)
@@ -272,7 +272,7 @@ item_270,o4anot,word,descriptive_words,understands; produces,Nyingine,Another,,a
 item_271,o2agai,word,descriptive_words,understands; produces,Tena,Again,,again
 item_272,o14sick,word,descriptive_words,understands; produces,Gonjwa,Sick,,sick
 item_273,o12nois,word,descriptive_words,understands; produces,Kelele,Noise,,
-item_274,o8got,word,descriptive_words,understands; produces,Umaumia,Got hurt,,hurt
+item_274,o8got,word,descriptive_words,understands; produces,Umaumia,Got hurt,,hurt (description)
 item_275,o10hot,word,descriptive_words,understands; produces,Moto/Choma,Hot,,
 item_276,o13quie,word,descriptive_words,understands; produces,Kimya/nyamavu,Quiet,,quietly
 item_277,o1alot,word,descriptive_words,understands; produces,Nyingi/Tele,A lot,,many

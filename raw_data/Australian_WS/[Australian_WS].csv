@@ -153,7 +153,7 @@ item_151,bib,word,clothing,produces,bib,bib,,bib
 item_152,boots,word,clothing,produces,boot(s),boot(s),,boots
 item_153,button,word,clothing,produces,button,button,,button
 item_154,coat,word,clothing,produces,coat,coat,,coat
-item_155,dress,word,clothing,produces,dress,dress,,dress
+item_155,dress,word,clothing,produces,dress,dress,,dress (object)
 item_156,hat,word,clothing,produces,hat,hat,,hat
 item_157,jacket,word,clothing,produces,jacket,jacket,,jacket
 item_158,jeans,word,clothing,produces,jeans,jeans,,jeans
@@ -190,7 +190,7 @@ item_188,knee,word,body_parts,produces,knee,knee,,knee
 item_189,leg,word,body_parts,produces,leg,leg,,leg
 item_190,lips,word,body_parts,produces,lips,lips,,
 item_191,mouth,word,body_parts,produces,mouth,mouth,,mouth
-item_192,nails,word,body_parts,produces,nail(s),nail(s),,nails
+item_192,nails,word,body_parts,produces,nail(s),nail(s),,nail (body part)
 item_193,neck,word,body_parts,produces,neck,neck,,neck
 item_194,nose,word,body_parts,produces,nose,nose,,nose
 item_195,shoulder,word,body_parts,produces,shoulder,shoulder,,
@@ -205,10 +205,10 @@ item_203,bottle,word,household,produces,bottle,bottle,,bottle
 item_204,box,word,household,produces,box,box,,box
 item_205,bowl,word,household,produces,bowl,bowl,,bowl
 item_206,broom,word,household,produces,broom,broom,,broom
-item_207,brush,word,household,produces,brush,brush,,brush
+item_207,brush,word,household,produces,brush,brush,,brush (object)
 item_208,bucket,word,household,produces,bucket,bucket,,bucket
 item_209,camera,word,household,produces,camera,camera,,camera
-item_210,can,word,household,produces,can,can,,can
+item_210,can,word,household,produces,can,can,,can (object)
 item_211,garbage_rubbish,word,household,produces,garbage/rubbish,garbage/rubbish,,trash
 item_212,glass,word,household,produces,glass,glass,,glass
 item_213,hammer,word,household,produces,hammer,hammer,,hammer
@@ -216,7 +216,7 @@ item_214,jar,word,household,produces,jar,jar,,jar
 item_215,keys,word,household,produces,keys,keys,,keys
 item_216,knife,word,household,produces,knife,knife,,knife
 item_217,lamp,word,household,produces,lamp,lamp,,lamp
-item_218,light,word,household,produces,light,light,,light
+item_218,light,word,household,produces,light,light,,light (object)
 item_219,medicine,word,household,produces,medicine,medicine,,medicine
 item_220,money,word,household,produces,money,money,,money
 item_221,mop,word,household,produces,mop,mop,,
@@ -290,7 +290,7 @@ item_288,lawn_mower,word,outside,produces,lawn mower,lawn mower,,
 item_289,moon,word,outside,produces,moon,moon,,moon
 item_290,pool,word,outside,produces,pool,pool,,pool
 item_291,rain,word,outside,produces,rain,rain,,rain
-item_292,rock,word,outside,produces,rock,rock,,rock
+item_292,rock,word,outside,produces,rock,rock,,rock (object)
 item_293,roof,word,outside,produces,roof,roof,,roof
 item_294,sandpit,word,outside,produces,sandpit,sandpit,,
 item_295,shed,word,outside,produces,shed,shed,,
@@ -343,7 +343,7 @@ item_341,daddy,word,people,produces,daddy,daddy,,daddy
 item_342,doctor,word,people,produces,doctor,doctor,,doctor
 item_343,fireman,word,people,produces,fireman,fireman,,
 item_344,friend,word,people,produces,friend,friend,,friend
-item_345,friends_name,word,people,produces,friend's name,friend's name,,friends’ names
+item_345,friends_name,word,people,produces,friend's name,friend's name,,friends' names
 item_346,girl,word,people,produces,girl,girl,,girl
 item_347,grandma/nanna,word,people,produces,grandma/nanna,grandma/nanna,,grandma
 item_348,grandpa/pop,word,people,produces,grandpa/pop,grandpa/pop,,grandpa
@@ -451,7 +451,7 @@ item_449,wake,word,action_words,produces,wake,wake,,wake
 item_450,climb,word,action_words,produces,climb,climb,,climb
 item_451,close,word,action_words,produces,close,close,,close
 item_452,cook,word,action_words,produces,cook,cook,,
-item_453,cover,word,action_words,produces,cover,cover,,cover
+item_453,cover,word,action_words,produces,cover,cover,,cover (action)
 item_454,cry,word,action_words,produces,cry,cry,,cry
 item_455,cuddle,word,action_words,produces,cuddle,cuddle,,
 item_456,cut,word,action_words,produces,cut,cut,,
@@ -466,8 +466,8 @@ item_464,help,word,action_words,produces,help,help,,help
 item_465,hide,word,action_words,produces,hide,hide,,hide
 item_466,hit,word,action_words,produces,hit,hit,,hit
 item_467,hold,word,action_words,produces,hold,hold,,hold
-item_468,open,word,action_words,produces,open,open,,open
-item_469,paint,word,action_words,produces,paint,paint,,paint
+item_468,open,word,action_words,produces,open,open,,open (action)
+item_469,paint,word,action_words,produces,paint,paint,,paint (action)
 item_470,pick,word,action_words,produces,pick,pick,,
 item_471,play,word,action_words,produces,play,play,,play
 item_472,pour,word,action_words,produces,pour,pour,,
@@ -523,7 +523,7 @@ item_521,heavy,word,descriptive_words,produces,heavy,heavy,,heavy
 item_522,high,word,descriptive_words,produces,high,high,,high
 item_523,hot,word,descriptive_words,produces,hot,hot,,hot
 item_524,hungry,word,descriptive_words,produces,hungry,hungry,,hungry
-item_525,hurt,word,descriptive_words,produces,hurt,hurt,,hurt
+item_525,hurt,word,descriptive_words,produces,hurt,hurt,,hurt (description)
 item_526,last,word,descriptive_words,produces,last,last,,
 item_527,little,word,descriptive_words,produces,little,little,,little (description)
 item_528,long,word,descriptive_words,produces,long,long,,
@@ -551,7 +551,7 @@ item_549,stuck,word,descriptive_words,produces,stuck,stuck,,
 item_550,thirsty,word,descriptive_words,produces,thirsty,thirsty,,thirsty
 item_551,tiny,word,descriptive_words,produces,tiny,tiny,,little (description)
 item_552,tired,word,descriptive_words,produces,tired,tired,,tired
-item_553,wet,word,descriptive_words,produces,wet,wet,,wet
+item_553,wet,word,descriptive_words,produces,wet,wet,,wet (description)
 item_554,white,word,descriptive_words,produces,white,white,,white
 item_555,windy,word,descriptive_words,produces,windy,windy,,
 item_556,yellow,word,descriptive_words,produces,yellow,yellow,,yellow
