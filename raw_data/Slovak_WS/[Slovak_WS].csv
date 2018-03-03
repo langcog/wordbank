@@ -58,7 +58,7 @@ item_56,,word,understands; produces,animals,medveď / maco,Bear,,bear
 item_57,,word,understands; produces,animals,mačka,cat,,cat
 item_58,,word,understands; produces,animals,motýľ,butterfly,,butterfly
 item_59,,word,understands; produces,animals,mravec,ant,,ant
-item_60,,word,understands; produces,animals,mucha,fly,,fly
+item_60,,word,understands; produces,animals,mucha,fly,,fly (animal)
 item_61,,word,understands; produces,animals,myška,mouse,,mouse
 item_62,,word,understands; produces,animals,opica,monkey,,monkey
 item_63,,word,understands; produces,animals,ovca / baran,sheep / ram,,sheep
@@ -207,7 +207,7 @@ item_205,,word,understands; produces,clothing,sandálky,Sandals,,sandals
 item_206,,word,understands; produces,clothing,sukňa,skirt,,skirt
 item_207,,word,understands; produces,clothing,svetrík / pulóver,Sweatshirt / pullover,,sweater
 item_208,,word,understands; produces,clothing,šál,scarf,,scarf
-item_209,,word,understands; produces,clothing,šaty,clothes,,dress
+item_209,,word,understands; produces,clothing,šaty,clothes,,dress (object)
 item_210,,word,understands; produces,clothing,tepláky,tracksuit,,
 item_211,,word,understands; produces,clothing,topánky,Shoes,,
 item_212,,word,understands; produces,clothing,tričko,shirt,,shirt
@@ -223,7 +223,7 @@ item_221,,word,understands; produces,body_parts,jazyk,language,,tongue
 item_222,,word,understands; produces,body_parts,kaka / hovienko,poop,,poop
 item_223,,word,understands; produces,body_parts,kolienko,knuckle,,knee
 item_224,,word,understands; produces,body_parts,líčko,cheek,,cheek
-item_225,,word,understands; produces,body_parts,nechty,nails,,nails
+item_225,,word,understands; produces,body_parts,nechty,nails,,nail (body part)
 item_226,,word,understands; produces,body_parts,noha,leg,,leg
 item_227,,word,understands; produces,body_parts,nos,nose,,nose
 item_228,,word,understands; produces,body_parts,oko,eye,,eye
@@ -272,7 +272,7 @@ item_270,,word,understands; produces,household,fľaša,a bottle,,bottle
 item_271,,word,understands; produces,household,gombík,button,,button
 item_272,,word,understands; produces,household,hodiny,hours,,clock
 item_273,,word,understands; produces,household,kamera,video camera,,camera
-item_274,,word,understands; produces,household,kefa,brush,,brush
+item_274,,word,understands; produces,household,kefa,brush,,brush (object)
 item_275,,word,understands; produces,household,kladivo,hammer,,hammer
 item_276,,word,understands; produces,household,kľúče,keys,,keys
 item_277,,word,understands; produces,household,koliesko,ring,,
@@ -316,12 +316,12 @@ item_314,,word,understands; produces,household,vankúš,pillow,,pillow
 item_315,,word,understands; produces,household,vareška,wooden spoon,,
 item_316,,word,understands; produces,household,váza,vase,,
 item_317,,word,understands; produces,household,ventilator,ventilator,,
-item_318,,word,understands; produces,household,vrchnák,lid,,cover
+item_318,,word,understands; produces,household,vrchnák,lid,,cover (object)
 item_319,,word,understands; produces,household,vysávač,vacuum cleaner,,vacuum
 item_320,,word,understands; produces,household,zástrčka / elektrika,electrical plug,,
 item_321,,word,understands; produces,household,zubná pasta,toothpaste,,
 item_322,,word,understands; produces,household,zvonček,bell,,bell
-item_323,,word,understands; produces,household,svetlo,the light,,light
+item_323,,word,understands; produces,household,svetlo,the light,,light (object)
 item_324,,word,understands; produces,outside,búda,shed,,
 item_325,,word,understands; produces,outside,dážď,the rain,,rain
 item_326,,word,understands; produces,outside,dom,House,,house
@@ -389,12 +389,12 @@ item_387,,word,understands; produces,people,ujo,uncle,,uncle
 item_388,,word,understands; produces,people,vlastné meno dieťaťa,Customized child,,
 item_389,,word,understands; produces,action_words,báť sa,be afraid,,
 item_390,,word,understands; produces,action_words,bežať,run,,run
-item_391,,word,understands; produces,action_words,bolieť,hurt,,hurt
+item_391,,word,understands; produces,action_words,bolieť,hurt,,hurt (action)
 item_392,,word,understands; produces,action_words,búchať,thump,,hit
 item_393,,word,understands; produces,action_words,cikať*,pee *,,pee
 item_394,,word,understands; produces,action_words,cúvať,reverse,,
 item_395,,word,understands; produces,action_words,cvičiť,take exercise,,
-item_396,,word,understands; produces,action_words,česať,tease,,brush
+item_396,,word,understands; produces,action_words,česať,tease,,brush (action)
 item_397,,word,understands; produces,action_words,čistiť,to clean,,clean (action)
 item_398,,word,understands; produces,action_words,čítať,to read,,read
 item_399,,word,understands; produces,action_words,dať,give,,give
@@ -448,7 +448,7 @@ item_446,,word,understands; produces,action_words,chytiť,to catch,,touch
 item_447,,word,understands; produces,action_words,kúpiť,buy,,buy
 item_448,,word,understands; produces,action_words,ľúbiť,love,,love
 item_449,,word,understands; produces,action_words,nájsť,find,,find
-item_450,,word,understands; produces,action_words,obliekať / zobliekať / vyzliekať,dress / undress / undressing,,dress
+item_450,,word,understands; produces,action_words,obliekať / zobliekať / vyzliekať,dress / undress / undressing,,dress (action)
 item_451,,word,understands; produces,action_words,odniesť,to take away,,carry
 item_452,,word,understands; produces,action_words,opraviť,fix,,
 item_453,,word,understands; produces,action_words,ostať / zostať,remain / stay,,
@@ -480,7 +480,7 @@ item_478,,word,understands; produces,action_words,spláchnuť,flush,,
 item_479,,word,understands; produces,action_words,stáť / zastaviť,cost / stop,,stop
 item_480,,word,understands; produces,action_words,svietiť,shine,,
 item_481,,word,understands; produces,action_words,šmýkať (sa),slide,,
-item_482,,word,understands; produces,action_words,telefonovať,call,,phone
+item_482,,word,understands; produces,action_words,telefonovať,call,,call on phone
 item_483,,word,understands; produces,action_words,tiecť,to flow,,
 item_484,,word,understands; produces,action_words,umývať (sa),Wash,,wash
 item_485,,word,understands; produces,action_words,učiť (sa),learn,,

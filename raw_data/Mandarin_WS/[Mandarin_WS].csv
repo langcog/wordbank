@@ -53,7 +53,7 @@ item_51,G3EAT,word,games_routines,produces,eat,,吃饭,eat
 item_52,G3WASH,word,games_routines,produces,bath,,洗澡,bath
 item_53,G3NAP,word,games_routines,produces,nap,,休息/歇会儿,nap
 item_54,G3BUY,word,games_routines,produces,buy,,买(东西),buy
-item_55,G3PHONE,word,games_routines,produces,phone,,打（电话）,phone
+item_55,G3PHONE,word,games_routines,produces,phone,,打（电话）,call on phone
 item_56,G3HIDE,word,games_routines,produces,hide and seek,,藏猫猫,hide and seek
 item_57,G3GOTYA,word,games_routines,produces,,,抓（逮）住了!,
 item_58,G3CLAP,word,games_routines,produces,clap,,你拍一，我拍一,clap
@@ -88,9 +88,9 @@ item_86,V4CRAWL,word,action_words,produces,climb,,爬,climb
 item_87,V4WANT,word,action_words,produces,need,,要,need
 item_88,V4HAVE,word,action_words,produces,have,,有,have
 item_89,V4SLEEP,word,action_words,produces,sleep,,睡觉,sleep
-item_90,V4COVER,word,action_words,produces,cover,,盖上,cover
+item_90,V4COVER,word,action_words,produces,cover,,盖上,cover (action)
 item_91,V4PLAY,word,action_words,produces,play,,玩,play
-item_92,V4OPEN,word,action_words,produces,open,,开（门）,open
+item_92,V4OPEN,word,action_words,produces,open,,开（门）,open (action)
 item_93,V4GUAN,word,action_words,produces,,,关,
 item_94,V4DRAW,word,action_words,produces,draw,,画画,draw
 item_95,V4HIT,word,action_words,produces,hit,,打,hit
@@ -99,9 +99,9 @@ item_97,V4WEAR2,word,action_words,produces,wear,,戴,wear
 item_98,V4WASH,word,action_words,produces,wash,,洗,wash
 item_99,V4CLEAN,word,action_words,produces,wipe,,擦,wipe
 item_100,V4KISS,word,action_words,produces,kiss,,亲（一个）,kiss
-item_101,V4FLY,word,action_words,produces,fly,,飞,fly
+item_101,V4FLY,word,action_words,produces,fly,,飞,fly (action)
 item_102,V4LIANG,word,action_words,produces,,,亮了,
-item_103,V4DAKAI,word,action_words,produces,open,,打开,open
+item_103,V4DAKAI,word,action_words,produces,open,,打开,open (action)
 item_104,V4GETUP,word,action_words,produces,get up,,起来,get up
 item_105,V4PEEL,word,action_words,produces,,,剥,
 item_106,V4CALL,word,action_words,produces,cry,,叫,cry
@@ -119,7 +119,7 @@ item_117,V4DROP,word,action_words,produces,drop,,掉,drop
 item_118,V4LAUGH,word,action_words,produces,smile,,笑,smile
 item_119,V4CRY,word,action_words,produces,cry,,哭,cry
 item_120,V4CLAP,word,action_words,produces,clap,,拍,clap
-item_121,V4CAN,word,action_words,produces,can,,会,can
+item_121,V4CAN,word,action_words,produces,can,,会,can (auxiliary)
 item_122,V4WRITE,word,action_words,produces,write,,写,write
 item_123,V4LAY,word,action_words,produces,,,躺,
 item_124,V4LIEFL,word,action_words,produces,,,趴,
@@ -140,7 +140,7 @@ item_138,V4IS,word,action_words,produces,,,是（什么）,
 item_139,V4THINK,word,action_words,produces,,,想,
 item_140,V4KNOW,word,action_words,produces,,,知道,
 item_141,V4COMB,word,action_words,produces,,,梳,
-item_142,V4SHUA,word,action_words,produces,brush,,刷,brush
+item_142,V4SHUA,word,action_words,produces,brush,,刷,brush (action)
 item_143,V4SING,word,action_words,produces,sing,,唱,sing
 item_144,V4LISTN,word,action_words,produces,hear,,听,hear
 item_145,V4HEAR,word,action_words,produces,hear,,听见,hear
@@ -404,7 +404,7 @@ item_402,A7DRAGON,word,animals,produces,,,龙,
 item_403,A7BUTFLY,word,animals,produces,butterfly,,蝴蝶,butterfly
 item_404,A7DRAFLY,word,animals,produces,,,蜻蜓,
 item_405,A7MOSQ,word,animals,produces,mosquito,,蚊子,mosquito
-item_406,A7FLY,word,animals,produces,fly,,苍蝇,fly
+item_406,A7FLY,word,animals,produces,fly,,苍蝇,fly (animal)
 item_407,A7SNAKE,word,animals,produces,snake,,蛇,snake
 item_408,A7ALLIG,word,animals,produces,,,鳄鱼,
 item_409,A7CRICK,word,animals,produces,,,蛐蛐,
@@ -431,7 +431,7 @@ item_429,X8SALTY,word,descriptive_words,produces,salty,,咸,salty
 item_430,X8DIRTY,word,descriptive_words,produces,dirty,,脏,dirty
 item_431,X8CLEAN,word,descriptive_words,produces,clean (description),,干净,clean (description)
 item_432,X8SCARE,word,descriptive_words,produces,scared,,害怕,scared
-item_433,X8HURT,word,descriptive_words,produces,hurt,,疼,hurt
+item_433,X8HURT,word,descriptive_words,produces,hurt,,疼,hurt (description)
 item_434,X8GUAI,word,descriptive_words,produces,,,乖,
 item_435,X8HUAIL,word,descriptive_words,produces,broken,,坏了,broken
 item_436,X8POLE,word,descriptive_words,produces,,,破了,
@@ -452,7 +452,7 @@ item_450,X8OLD,word,descriptive_words,produces,old,,老,old
 item_451,X8HAPPY,word,descriptive_words,produces,happy,,高兴/乐/开心,happy
 item_452,X8ANGRY,word,descriptive_words,produces,angry,,生气,angry
 item_453,X8WEIQU,word,descriptive_words,produces,,,委屈,
-item_454,X8WET,word,descriptive_words,produces,wet,,可怜,wet
+item_454,X8WET,word,descriptive_words,produces,wet,,可怜,wet (description)
 item_455,X8DRY,word,descriptive_words,produces,tired,,累,tired
 item_456,X8LOUD,word,descriptive_words,produces,loud,,困了,loud
 item_457,X8LONG,word,descriptive_words,produces,sick,,病,sick
@@ -487,7 +487,7 @@ item_485,H9KNIFE,word,household,produces,knife,,刀,knife
 item_486,H9TEACUP,word,household,produces,,,茶杯,
 item_487,H9LIGHT,word,household,produces,lamp,,灯,lamp
 item_488,H9CLOCK,word,household,produces,clock,,钟/表,clock
-item_489,H9PHONE,word,household,produces,phone,,电话,phone
+item_489,H9PHONE,word,household,produces,phone,,电话,telephone
 item_490,H9ELEFAN,word,household,produces,,,电扇,
 item_491,H9BATTRY,word,household,produces,battery,,电池,battery
 item_492,H9WATCH,word,household,produces,watch (object),,手表,watch (object)
@@ -523,13 +523,13 @@ item_521,H9CLOTH,word,household,produces,cloth,,（抹）布,cloth
 item_522,H9BOX,word,household,produces,box,,盒子,box
 item_523,H9BASKET,word,household,produces,,,篮子,
 item_524,H9BUCKET,word,household,produces,bucket,,桶,bucket
-item_525,H9BRUSH,word,household,produces,brush,,刷子,brush
+item_525,H9BRUSH,word,household,produces,brush,,刷子,brush (object)
 item_526,H9MOP,word,household,produces,,,笤帚,
 item_527,H9RAG,word,household,produces,rag,,托把/墩布,rag
 item_528,H9GARBAG,word,household,produces,trash,,垃圾,trash
 item_529,H9DUSTBN,word,household,produces,,,簸箕,
 item_530,H9HAMMER,word,household,produces,hammer,,锤子,hammer
-item_531,H9NAIL,word,household,produces,nail,,钉子,nail
+item_531,H9NAIL,word,household,produces,nail,,钉子,nail (object)
 item_532,H9WOOD,word,household,produces,,,木头,
 item_533,H9THING,word,household,produces,,,东西,
 item_534,T10BALL,word,toys,produces,ball,,汽球,ball
@@ -747,7 +747,7 @@ item_745,C19XIE,word,classifiers,produces,,,些,
 item_746,Q20DOWHA,word,question_words,produces,,,干嘛？,
 item_747,Q20WHAT,word,question_words,produces,what,,什么,what
 item_748,Q20WHO,word,question_words,produces,who,,谁,who
-item_749,Q20WHERE,word,question_words,produces,where,,在哪里/哪儿呢？,where
+item_749,Q20WHERE,word,question_words,produces,where,,在哪里/哪儿呢？,where (question)
 item_750,Q20JTIME,word,question_words,produces,when (question),,几点,when (question)
 item_751,Q20WHICH,word,question_words,produces,which (question),,哪个,which (question)
 item_752,Q20WHY,word,question_words,produces,why,,为什么,why

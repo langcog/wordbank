@@ -88,7 +88,7 @@ item_86,item_086,word,clothing,understands; produces,바지,pants,,pants
 item_87,item_087,word,clothing,understands; produces,목도리,scarf,,scarf
 item_88,item_088,word,clothing,understands; produces,신/신발,shoe,,shoe
 item_89,item_089,word,clothing,understands; produces,양말,sock,,sock
-item_90,item_090,word,clothing,understands; produces,옷/꼬까,dress,,dress
+item_90,item_090,word,clothing,understands; produces,옷/꼬까,dress,,dress (object)
 item_91,item_091,word,clothing,understands; produces,운동화,sneakers,,
 item_92,item_092,word,clothing,understands; produces,잠바,jacket,,jacket
 item_93,item_093,word,clothing,understands; produces,잠옷,pajamas,,pajamas
@@ -318,7 +318,7 @@ item_316,item_316,word,quantifiers,understands; produces,많이,many,,many
 item_317,item_317,word,quantifiers,understands; produces,빨리,fast,,fast
 item_318,item_318,word,quantifiers,understands; produces,아주,gas station,,
 item_319,item_319,word,quantifiers,understands; produces,자꾸,often,,
-item_320,item_320,word,quantifiers,understands; produces,잘,well,,well
+item_320,item_320,word,quantifiers,understands; produces,잘,well,,well (modifier)
 item_321,item_321,word,quantifiers,understands; produces,전부,entire,,
 item_322,item_322,word,quantifiers,understands; produces,조금,a little,,a little
 item_323,item_323,word,quantifiers,understands; produces,진짜,real,,
@@ -402,13 +402,13 @@ item_400,item_400,word,action_words,understands; produces,누워,lie,,lie
 item_401,item_401,word,action_words,understands; produces,(무엇을)눌러,push,,push
 item_402,item_402,word,action_words,understands; produces,(무엇에)눌려,be pushed,,
 item_403,item_403,word,action_words,understands; produces,다녀,go around,,
-item_404,item_404,word,action_words,understands; produces,다쳐,get hurt,,hurt
+item_404,item_404,word,action_words,understands; produces,다쳐,get hurt,,hurt (action)
 item_405,item_405,word,action_words,understands; produces,닦아,wipe,,wipe
 item_406,item_406,word,action_words,understands; produces,닫아,close,,close
 item_407,item_407,word,action_words,understands; produces,달려,run,,run
 item_408,item_408,word,action_words,understands; produces,당겨,pull,,pull
 item_409,item_409,word,action_words,understands; produces,던져,throw,,throw
-item_410,item_410,word,action_words,understands; produces,덮어,cover,,cover
+item_410,item_410,word,action_words,understands; produces,덮어,cover,,cover (action)
 item_411,item_411,word,action_words,understands; produces,도와,help,,help
 item_412,item_412,word,action_words,understands; produces,돌려,spin,,
 item_413,item_413,word,action_words,understands; produces,돌아,turn,,turn
@@ -479,7 +479,7 @@ item_477,item_477,word,action_words,understands; produces,안아,hug,,hug
 item_478,item_478,word,action_words,understands; produces,안해,I won't do it,,
 item_479,item_479,word,action_words,understands; produces,앉아,sit,,sit
 item_480,item_480,word,action_words,understands; produces,알아,know,,
-item_481,item_481,word,action_words,understands; produces,열어,open,,open
+item_481,item_481,word,action_words,understands; produces,열어,open,,open (action)
 item_482,item_482,word,action_words,understands; produces,올라가,go up,,climb
 item_483,item_483,word,action_words,understands; produces,올려,raise,,
 item_484,item_484,word,action_words,understands; produces,와,come,,come
@@ -517,7 +517,7 @@ item_515,item_515,word,action_words,understands; produces,(코를)풀어,blow yo
 item_516,item_516,word,action_words,understands; produces,(꽃이)피어,bloom,,
 item_517,item_517,word,action_words,understands; produces,해,do,,do
 item_518,item_518,word,action_words,understands; produces,혼나,scold,,
-item_519,item_519,word,descriptive_words,understands; produces,가벼워,light,,light
+item_519,item_519,word,descriptive_words,understands; produces,가벼워,light,,light (description)
 item_520,item_520,word,descriptive_words,understands; produces,간지러워,ticklish,,
 item_521,item_521,word,descriptive_words,understands; produces,같아/똑같아,same,,same
 item_522,item_522,word,descriptive_words,understands; produces,괜찮아,fine,,fine

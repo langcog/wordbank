@@ -83,7 +83,7 @@ item_81,bottle,word,household,understands; produces,bottle,bottle,bottle
 item_82,box,word,household,understands; produces,box,box,box
 item_83,bowl,word,household,understands; produces,bowl,bowl,bowl
 item_84,broom,word,household,understands; produces,broom,broom,broom
-item_85,brush,word,household,understands; produces,brush,brush,brush
+item_85,brush,word,household,understands; produces,brush,brush,brush (object)
 item_86,camera,word,household,understands; produces,camera,camera,camera
 item_87,comb,word,household,understands; produces,comb,comb,comb (object)
 item_88,fork,word,household,understands; produces,fork,fork,fork
@@ -93,7 +93,7 @@ item_91,hammer,word,household,understands; produces,hammer,hammer,hammer
 item_92,jar,word,household,understands; produces,jar,jar,jar
 item_93,keys,word,household,understands; produces,keys,keys,keys
 item_94,knife,word,household,understands; produces,knife,knife,knife
-item_95,light,word,household,understands; produces,light,light,light
+item_95,light,word,household,understands; produces,light,light,light (object)
 item_96,medicine,word,household,understands; produces,medicine,medicine,medicine
 item_97,mirror,word,household,understands; produces,mirror,mirror,mirror
 item_98,money,word,household,understands; produces,money,money,money
@@ -249,7 +249,7 @@ item_247,leg,word,body_parts,understands; produces,leg,leg,leg
 item_248,lips,word,body_parts,understands; produces,lips,lips,
 item_249,mouth,word,body_parts,understands; produces,mouth,mouth,mouth
 item_250,nose,word,body_parts,understands; produces,nose,nose,nose
-item_251,cuthurt,word,body_parts,understands; produces,cut/hurt,cut/hurt,hurt
+item_251,cuthurt,word,body_parts,understands; produces,cut/hurt,cut/hurt,hurt (description)
 item_252,shoulder,word,body_parts,understands; produces,shoulder,shoulder,
 item_253,tooth,word,body_parts,understands; produces,tooth,tooth,tooth
 item_254,toe,word,body_parts,understands; produces,toe,toe,toe
@@ -301,7 +301,7 @@ item_299,ladder,word,outside,understands; produces,ladder,ladder,ladder
 item_300,lawnmower,word,outside,understands; produces,lawn mower,lawn mower,
 item_301,moon,word,outside,understands; produces,moon,moon,moon
 item_302,rain,word,outside,understands; produces,rain,rain,rain
-item_303,rock,word,outside,understands; produces,rock,rock,rock
+item_303,rock,word,outside,understands; produces,rock,rock,rock (object)
 item_304,spade,word,outside,understands; produces,spade,spade,spade
 item_305,slide,word,outside,understands; produces,slide,slide,slide (object)
 item_306,snow,word,outside,understands; produces,snow,snow,snow
@@ -378,7 +378,7 @@ item_376,sorry,word,games_routines,understands; produces,sorry,sorry,
 item_377,thankyou,word,games_routines,understands; produces,thank you,thank you,thank you
 item_378,wakeup,word,games_routines,understands; produces,wake up,wake up,
 item_379,yes,word,games_routines,understands; produces,yes,yes,yes
-item_380,can,word,helping_verbs,understands; produces,can,can,can
+item_380,can,word,helping_verbs,understands; produces,can,can,can (auxiliary)
 item_381,cant,word,helping_verbs,understands; produces,can't,can't,
 item_382,dontcare,word,helping_verbs,understands; produces,don't care,don't care,
 item_383,dontknow,word,helping_verbs,understands; produces,don't know,don't know,
@@ -451,8 +451,8 @@ item_449,like,word,action_words,understands; produces,like,like,
 item_450,look,word,action_words,understands; produces,look,look,look
 item_451,love,word,action_words,understands; produces,love,love,love
 item_452,make,word,action_words,understands; produces,make,make,make
-item_453,open,word,action_words,understands; produces,open,open,open
-item_454,paint,word,action_words,understands; produces,paint,paint,paint
+item_453,open,word,action_words,understands; produces,open,open,open (action)
+item_454,paint,word,action_words,understands; produces,paint,paint,paint (action)
 item_455,pick,word,action_words,understands; produces,pick,pick,
 item_456,play,word,action_words,understands; produces,play,play,play
 item_457,see,word,action_words,understands; produces,see,see,see
@@ -552,7 +552,7 @@ item_550,sticky,word,descriptive_words,understands; produces,sticky,sticky,
 item_551,stuck,word,descriptive_words,understands; produces,stuck,stuck,
 item_552,thirsty,word,descriptive_words,understands; produces,thirsty,thirsty,thirsty
 item_553,tired,word,descriptive_words,understands; produces,tired,tired,tired
-item_554,wet,word,descriptive_words,understands; produces,wet,wet,wet
+item_554,wet,word,descriptive_words,understands; produces,wet,wet,wet (description)
 item_555,white,word,descriptive_words,understands; produces,white,white,white
 item_556,windy,word,descriptive_words,understands; produces,windy,windy,
 item_557,yellow,word,descriptive_words,understands; produces,yellow,yellow,yellow

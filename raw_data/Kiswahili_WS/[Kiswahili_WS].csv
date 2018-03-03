@@ -186,7 +186,7 @@ item_184,f1boomab,word,clothing,produces,Mabuti/Njuti,Boots,,boots
 item_185,f30necmk,word,clothing,produces,Mkufu/Ushanga/Tasbihi,Necklace/Beads,,beads
 item_186,f17belms,word,clothing,produces,Mshipi,Belt,,cook
 item_187,f5napnep,word,clothing,produces,Nepi,Nappy,,diaper
-item_188,f2clongu,word,clothing,produces,Nguo,Clothes,,dress
+item_188,f2clongu,word,clothing,produces,Nguo,Clothes,,dress (object)
 item_189,f23dreri,word,clothing,produces,Rinda,Dress,,
 item_190,f7sansap,word,clothing,produces,Sapata/pata pata/ndara/Champali/Slipper,Sandals,,
 item_191,f8shisha,word,clothing,produces,Shati,Shirt,,shirt
@@ -208,7 +208,7 @@ item_206,g18chiki,word,body_parts,produces,Kidevu,Chin,,chin
 item_207,g5finkid,word,body_parts,produces,kidole,Finger,,toe
 item_208,g22palki,word,body_parts,produces,Kiganja,Palm,,palm
 item_209,g15umbki,word,body_parts,produces,Kitovu,Umbilical cord,,belly button
-item_210,g6finkuc,word,body_parts,produces,Kucha,Fingernail,,nail
+item_210,g6finkuc,word,body_parts,produces,Kucha,Fingernail,,nail (body part)
 item_211,g1butmak,word,body_parts,produces,Makalio/matako,Buttocks,,butt
 item_212,g16bacmg,word,body_parts,produces,Mgongo,Back,,back
 item_213,g10legmg,word,body_parts,produces,Mguu,Leg,,leg
@@ -227,7 +227,7 @@ item_225,h5bowbak,word,household,produces,Bakuli,Bowl,,bowl
 item_226,h2basdis,word,household,produces,Beseni/Karai,Basin,,dish
 item_227,h12glagi,word,household,produces,Bilauri/glasi,Glass,,glass
 item_228,h36blabl,word,household,produces,Blanketi,Blanket,,blanket
-item_229,h37brubr,word,household,produces,Brashi,Brush,,brush
+item_229,h37brubr,word,household,produces,Brashi,Brush,,brush (object)
 item_230,h4botchu,word,household,produces,Chupa,Bottle,,bottle
 item_231,h19medda,word,household,produces,Dawa,Medicine,,medicine
 item_232,h30stifi,word,household,produces,Fimbo,StickH,,stick
@@ -269,8 +269,8 @@ item_267,h6boxsan,word,household,produces,Sanduku,Box,,box
 item_268,h27shish,word,household,produces,Shilingi,Shilling,,penny
 item_269,h23phosi,word,household,produces,Simu,Phone,,
 item_270,h20metsi,word,household,produces,Sinia,Metal tray,,dish
-item_271,h44lamta,word,household,produces,Taa ya koroboi,Lamp,,light
-item_272,h45lamta,word,household,produces,Taa ya mkopo/kibatari,Lamp,,light
+item_271,h44lamta,word,household,produces,Taa ya koroboi,Lamp,,light (object)
+item_272,h45lamta,word,household,produces,Taa ya mkopo/kibatari,Lamp,,light (object)
 item_273,h17ligta,word,household,produces,Taa/Stima/Kandili,Light,,lamp
 item_274,h33wasta,word,household,produces,Taka/Chafu,Dirt/Waste,,
 item_275,h32towta,word,household,produces,Tauli/Towel,Towel,,towel
@@ -422,8 +422,8 @@ item_420,n108worf,word,action_words,produces,Fanya kazi,Work,,work (action)
 item_421,n25hidfi,word,action_words,produces,Ficha,Hide,,hide
 item_422,n101thif,word,action_words,produces,Fikira,Think,,think
 item_423,n10clofu,word,action_words,produces,Funga,Close,,close
-item_424,n34opefu,word,action_words,produces,Fungua,Open,,open
-item_425,n64covfu,word,action_words,produces,Funika,Cover,,cover
+item_424,n34opefu,word,action_words,produces,Fungua,Open,,open (action)
+item_425,n64covfu,word,action_words,produces,Funika,Cover,,cover (action)
 item_426,n90shaga,word,action_words,produces,Gawana/Gawanya,Share,,
 item_427,n76hitgo,word,action_words,produces,Gonga,hit,,hit
 item_428,n80knogo,word,action_words,produces,Gongana,Knock each other,,knock
@@ -465,7 +465,7 @@ item_463,n51tason,word,action_words,produces,Onja,Taste,,taste
 item_464,n91shoon,word,action_words,produces,Onyesha,Show,,show
 item_465,n106waos,word,action_words,produces,Osha/nawa,Wash,,clean (action)
 item_466,n15dreot,word,action_words,produces,Ota,Dream,,star
-item_467,n86paip,word,action_words,produces,Paka rangi,Paint,,paint
+item_467,n86paip,word,action_words,produces,Paka rangi,Paint,,paint (action)
 item_468,n107wipp,word,action_words,produces,Pangusa/Futa,Wipe,,wash
 item_469,n95spipa,word,action_words,produces,Pasua,Spill,,break
 item_470,n69getpa,word,action_words,produces,Pata,Get,,have
@@ -497,12 +497,12 @@ item_495,n33movte,word,action_words,produces,Tembea,Move around/walk,,walk
 item_496,n85makte,word,action_words,produces,Tengeneza,Make,,make
 item_497,n89shati,word,action_words,produces,Tingisha/Tikisa,Shake,,shake
 item_498,n2bituma,word,action_words,produces,Uma,Bite,,scissors
-item_499,n70getum,word,action_words,produces,Umia,Get hurt,,
+item_499,n70getum,word,action_words,produces,Umia,Get hurt,,hurt (action)
 item_500,n4brevu,word,action_words,produces,Vunja,Break,,break
 item_501,n58brevu,word,action_words,produces,Vunjika,Break by itself,,broken
 item_502,n37pulvu,word,action_words,produces,Vuta,Pull,,pull
 item_503,n26keewe,word,action_words,produces,Weka,Keep,,put
-item_504,n57bewe,word,action_words,produces,Weza,Be able,,can
+item_504,n57bewe,word,action_words,produces,Weza,Be able,,can (auxiliary)
 item_505,n99talzu,word,action_words,produces,Zungumza,Talk or say something,,talk
 item_506,o23colba,word,descriptive_words (adjectives),produces,Baridi,Cold,,cold
 item_507,o17badba,word,descriptive_words (adjectives),produces,baya,Bad,,
@@ -550,7 +550,7 @@ item_548,o40lousa,word,descriptive_words (adjectives),produces,Sauti ya juu,Loud
 item_549,o42oksa,word,descriptive_words (adjectives),produces,Sawasawa,OK,,fine
 item_550,o2agate,word,descriptive_words (adjectives),produces,Tena,Again,,again
 item_551,o27emptu,word,descriptive_words (adjectives),produces,Tupu,Empty,,empty
-item_552,o7gotum,word,descriptive_words (adjectives),produces,Uma/umia,Got hurt,,hurt
+item_552,o7gotum,word,descriptive_words (adjectives),produces,Uma/umia,Got hurt,,hurt (description)
 item_553,o53winup,word,descriptive_words (adjectives),produces,Upepo,Wind,,
 item_554,o14sleus,word,descriptive_words (adjectives),produces,Usingizini,SleepA,,sleepy
 item_555,o25dozus,word,descriptive_words (adjectives),produces,Usinzini,Doze,,sleepy
