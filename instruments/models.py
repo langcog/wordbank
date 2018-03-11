@@ -22,8 +22,8 @@ from schemas.Russian_WG import *
 from schemas.Russian_WS import *
 from schemas.Slovak_WG import *
 from schemas.Slovak_WS import *
-from schemas.Spanish_WG import *
-from schemas.Spanish_WS import *
+from schemas.Spanish_Mexican_WG import *
+from schemas.Spanish_Mexican_WS import *
 from schemas.Swedish_WG import *
 from schemas.Swedish_WS import *
 from schemas.Turkish_WG import *

@@ -1,4 +1,5 @@
-from django.conf.urls import patterns, include, url
+# from django.conf.urls import patterns, include, url
+from django.conf.urls import url
 from common.views import *
 from instruments.views import *
 
@@ -6,7 +7,7 @@ from instruments.views import *
 # from django.contrib import admin
 # admin.autodiscover()
 
-urlpatterns = patterns('',
+urlpatterns = urlpatterns = [
     # Examples:
     url(r'^$', Home.as_view(), name='home'),
     url(r'about', About.as_view(), name='about'),
@@ -22,4 +23,4 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
-)
+]
