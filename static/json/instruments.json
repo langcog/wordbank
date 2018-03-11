@@ -192,17 +192,17 @@
         "has_grammar": true
     },
     {
-        "language": "Spanish",
+        "language": "Spanish (Mexican)",
         "form": "WG",
-        "file": "raw_data/Spanish_WG/[Spanish_WG].csv",
+        "file": "raw_data/Spanish_Mexican_WG/[Spanish_Mexican_WG].csv",
         "age_min": 8,
         "age_max": 18,
         "has_grammar": false
     },
     {
-        "language": "Spanish",
+        "language": "Spanish (Mexican)",
         "form": "WS",
-        "file": "raw_data/Spanish_WS/[Spanish_WS].csv",
+        "file": "raw_data/Spanish_Mexican_WS/[Spanish_Mexican_WS].csv",
         "age_min": 16,
         "age_max": 30,
         "has_grammar": false
