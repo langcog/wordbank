@@ -1,6 +1,10 @@
 type,value,data_value
 sex,M,M
 sex,F,F
+mom_ed,Some College,14
+mom_ed,College,16
+mom_ed,Graduate,18
+mom_ed,,
 word,produces,P
 word,understands,U
 word,,N
