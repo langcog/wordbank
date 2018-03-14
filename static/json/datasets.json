@@ -410,17 +410,17 @@
         "citation": "Gendler-Shalev, H. (2005). תירבעל HCDI-WG םירוה ןולאש תמאתה."
     },
     {
-        "name": "Maital",
+        "name": "Shalev",
         "dataset": "",
         "instrument_language": "Hebrew",
         "instrument_form": "WS",
-        "file": "raw_data/Hebrew_WS/HebrewWS_Maital.csv",
+        "file": "raw_data/Hebrew_WS/HebrewWS_Shalev.csv",
         "splitcol": false,
         "norming": false,
         "longitudinal": false,
-        "contributor": "Sharone Maital, University of Haifa",
+        "contributor": "Hila Gendler Shalev, Tel-Aviv University",
         "license": "CC-BY",
-        "citation": "Maital, S., Dromi, E. Sagi, A. & Bornstein, M. H. (2000). The Hebrew Communicative Development Inventory: Language specific properties and cross-linguistic generalizations, Journal of Child Language, 27, 1-25."
+        "citation": ""
     },
     {
         "name": "Tardif",
@@ -961,5 +961,57 @@
         "contributor": "Katie Von Holzen, University of Maryland",
         "license": "CC-BY",
         "citation": "Von Holzen, K., Nishibayashi, L.-L., & Nazzi, T. (2018). Consonant and vowel processing in word form segmentation : An infant ERP study. Brain Sciences, 8(24), 1–15. doi: 10.3390/brainsci8020024.​"
+    },
+    {
+        "name": "Cadime",
+        "dataset": "",
+        "instrument_language": "Portuguese (European)",
+        "instrument_form": "WG",
+        "file": "raw_data/Portuguese_European_WG/PortugueseEuropeanWG_Cadime.csv",
+        "splitcol": true,
+        "norming": false,
+        "longitudinal": false,
+        "contributor": "Irene Cadime, University of Minho",
+        "license": "CC-BY",
+        "citation": "​"
+    },
+    {
+        "name": "Cadime",
+        "dataset": "",
+        "instrument_language": "Portuguese (European)",
+        "instrument_form": "WS",
+        "file": "raw_data/Portuguese_European_WS/PortugueseEuropeanWS_Cadime.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": false,
+        "contributor": "Irene Cadime, University of Minho",
+        "license": "CC-BY",
+        "citation": ""
+    },
+    {
+        "name": "Karousou",
+        "dataset": "",
+        "instrument_language": "Spanish (European)",
+        "instrument_form": "WG",
+        "file": "raw_data/Spanish_European_WG/SpanishEuropeanWG_Karousou.csv",
+        "splitcol": true,
+        "norming": true,
+        "longitudinal": false,
+        "contributor": "Alexandra Karousou, Democritus University of Thrace",
+        "license": "CC-BY",
+        "citation": "​López Ornat, S., Gallego, C., Gallo, P., Karousou, A., Mariscal, S., & Martínez, M. (2005). MacArthur: Inventario de desarrollo comunicativo. Manual y Cuadernillos. Madrid, TEA Ediciones. ISBN: 84-7174- 820-7"
+    },
+    {
+        "name": "Karousou",
+        "dataset": "",
+        "instrument_language": "Spanish (European)",
+        "instrument_form": "WS",
+        "file": "raw_data/Spanish_European_WS/SpanishEuropeanWS_Karousou.csv",
+        "splitcol": false,
+        "norming": true,
+        "longitudinal": false,
+        "contributor": "Alexandra Karousou, Democritus University of Thrace",
+        "license": "CC-BY",
+        "citation": "López Ornat, S., Gallego, C., Gallo, P., Karousou, A., Mariscal, S., & Martínez, M. (2005). MacArthur: Inventario de desarrollo comunicativo. Manual y Cuadernillos. Madrid, TEA Ediciones. ISBN: 84-7174- 820-7"
     }
 ]
