@@ -18,21 +18,41 @@ class Command(BaseCommand):
 
         datasets = json.load(open('static/json/datasets.json'))
 
-        if options['language'] and options['form']:
-            input_language, input_form = options['language'], options['form']
-            input_datasets = filter(lambda dataset: dataset['instrument_language'] == input_language and
-                                                    dataset['instrument_form'] == input_form,
-                                    datasets)
-            if not input_datasets:
-                raise IOError("the specified language and form don't correspond to any datasets")
-        elif options['file']:
-            input_file = options['file']
-            input_datasets = filter(lambda dataset: dataset['file'] == input_file,
-                                    datasets)
+        # if options['language'] and options['form']:
+        #     input_language, input_form = options['language'], options['form']
+        #     input_datasets = filter(lambda dataset: dataset['instrument_language'] == input_language and
+        #                                             dataset['instrument_form'] == input_form,
+        #                             datasets)
+        #     if not input_datasets:
+        #         raise IOError("the specified language and form don't correspond to any datasets")
+        # elif options['file']:
+        #     input_file = options['file']
+        #     input_datasets = filter(lambda dataset: dataset['file'] == input_file,
+        #                             datasets)
+        #     if not input_datasets:
+        #         raise IOError("the specified file doesn't correspond to any datasets")
+        # else:
+        #     input_datasets = datasets
+
+        if options['language'] or options['form']:
+            filter_exps = []
+            if options['language']:
+                input_language = options['language']
+                filter_exps.append("dataset['instrument_language'] == '%s'" % input_language)
+
+            if options['form']:
+                input_form = options['form']
+                filter_exps.append("dataset['instrument_form'] == '%s'" % input_form)
+
+            combined_exps = ' and '.join(filter_exps)
+
+            input_datasets = filter(lambda dataset: eval(combined_exps), datasets)
+            
             if not input_datasets:
                 raise IOError("the specified file doesn't correspond to any datasets")
+
         else:
-            input_datasets = datasets
+            input_datasets = datasets        
 
 
         for dataset in input_datasets:
