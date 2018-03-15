@@ -4,6 +4,7 @@ MySQL-python==1.2.5
 xlrd==1.1.0
 python-dateutil==2.6.1
 six==1.11.0
+sqlparse==0.2.4
 django-extensions==2.0.2
 faulthandler==3.0
 gdata
