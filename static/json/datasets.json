@@ -994,7 +994,7 @@
         "instrument_language": "Spanish (European)",
         "instrument_form": "WG",
         "file": "raw_data/Spanish_European_WG/SpanishEuropeanWG_Karousou.csv",
-        "splitcol": true,
+        "splitcol": false,
         "norming": true,
         "longitudinal": false,
         "contributor": "Alexandra Karousou, Democritus University of Thrace",

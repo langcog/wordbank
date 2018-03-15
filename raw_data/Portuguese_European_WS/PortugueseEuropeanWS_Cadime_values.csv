@@ -4,8 +4,9 @@ sex,F,Female
 mom_ed,Primary,less than high school
 mom_ed,Secondary,high school
 mom_ed,College,undergrad
+mom_ed,College,undergraduate
 mom_ed,Graduate,graduate
 mom_ed,,
 word,produces,1
-word,understands,0
+word,,0
 word,,
