@@ -1363,16 +1363,16 @@ class Spanish_Mexican_WS(BaseTable):
     item_679 = models.CharField(max_length=8, choices=item_679_choices, null=True)
     item_680_choices = [(u'produces', u'produces')]
     item_680 = models.CharField(max_length=8, choices=item_680_choices, null=True)
-    item_681_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
-    item_681 = models.CharField(max_length=9, choices=item_681_choices, null=True)
-    item_682_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
-    item_682 = models.CharField(max_length=9, choices=item_682_choices, null=True)
-    item_683_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
-    item_683 = models.CharField(max_length=9, choices=item_683_choices, null=True)
-    item_684_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
-    item_684 = models.CharField(max_length=9, choices=item_684_choices, null=True)
-    item_685_choices = [(u'not yet', u'not yet'), (u'sometimes', u'sometimes'), (u'often', u'often')]
-    item_685 = models.CharField(max_length=9, choices=item_685_choices, null=True)
+    item_681_choices = [(u'not yet', u'not yet'), (u'sometimes/often', u'sometimes/often')]
+    item_681 = models.CharField(max_length=15, choices=item_681_choices, null=True)
+    item_682_choices = [(u'not yet', u'not yet'), (u'sometimes/often', u'sometimes/often')]
+    item_682 = models.CharField(max_length=15, choices=item_682_choices, null=True)
+    item_683_choices = [(u'not yet', u'not yet'), (u'sometimes/often', u'sometimes/often')]
+    item_683 = models.CharField(max_length=15, choices=item_683_choices, null=True)
+    item_684_choices = [(u'not yet', u'not yet'), (u'sometimes/often', u'sometimes/often')]
+    item_684 = models.CharField(max_length=15, choices=item_684_choices, null=True)
+    item_685_choices = [(u'not yet', u'not yet'), (u'sometimes/often', u'sometimes/often')]
+    item_685 = models.CharField(max_length=15, choices=item_685_choices, null=True)
     item_686_choices = [(u'produces', u'produces')]
     item_686 = models.CharField(max_length=8, choices=item_686_choices, null=True)
     item_687_choices = [(u'produces', u'produces')]
