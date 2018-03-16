@@ -415,6 +415,7 @@
         "instrument_language": "Hebrew",
         "instrument_form": "WS",
         "file": "raw_data/Hebrew_WS/HebrewWS_Shalev.csv",
+        "date_format": "%m/%d/%y",
         "splitcol": false,
         "norming": false,
         "longitudinal": false,
