@@ -99,9 +99,9 @@
         "language": "Hebrew",
         "form": "WS",
         "file": "raw_data/Hebrew_WS/[Hebrew_WS].csv",
-        "age_min": 18,
-        "age_max": 24,
-        "has_grammar": false
+        "age_min": 25,
+        "age_max": 36,
+        "has_grammar": true
     },
     {
         "language": "Italian",
@@ -398,5 +398,37 @@
         "age_min": 16,
         "age_max": 30,
         "has_grammar": true
+    },
+    {
+        "language": "Spanish (European)",
+        "form": "WG",
+        "file": "raw_data/Spanish_European_WG/[Spanish_European_WG].csv",
+        "age_min": 8,
+        "age_max": 15,
+        "has_grammar": false
+    },
+    {
+        "language": "Spanish (European)",
+        "form": "WS",
+        "file": "raw_data/Spanish_European_WS/[Spanish_European_WS].csv",
+        "age_min": 16,
+        "age_max": 30,
+        "has_grammar": false
+    },
+    {
+        "language": "Portuguese (European)",
+        "form": "WG",
+        "file": "raw_data/Portuguese_European_WG/[Portuguese_European_WG].csv",
+        "age_min": 8,
+        "age_max": 15,
+        "has_grammar": false
+    },
+    {
+        "language": "Portuguese (European)",
+        "form": "WS",
+        "file": "raw_data/Portuguese_European_WS/[Portuguese_European_WS].csv",
+        "age_min": 16,
+        "age_max": 30,
+        "has_grammar": false
     }
 ]
