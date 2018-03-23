@@ -6,8 +6,8 @@ from schemas.Danish_WG import *
 from schemas.Danish_WS import *
 from schemas.English_American_WG import *
 from schemas.English_American_WS import *
-from schemas.French_Quebec_WG import *
-from schemas.French_Quebec_WS import *
+from schemas.French_Quebecois_WG import *
+from schemas.French_Quebecois_WS import *
 from schemas.German_WS import *
 from schemas.Hebrew_WG import *
 from schemas.Hebrew_WS import *
@@ -34,7 +34,7 @@ from schemas.American_Sign_Language_FormA import *
 from schemas.American_Sign_Language_FormBOne import *
 from schemas.American_Sign_Language_FormBTwo import *
 from schemas.American_Sign_Language_FormC import *
-from schemas.Cypriot_Greek_WS import *
+from schemas.Greek_Cypriot_WS import *
 from schemas.Kigiriama_WG import *
 from schemas.Kigiriama_WS import *
 from schemas.Kiswahili_WG import *
@@ -46,8 +46,8 @@ from schemas.Latvian_WG import *
 from schemas.Latvian_WS import *
 from schemas.Korean_WG import *
 from schemas.Korean_WS import *
-from schemas.French_France_WG import *
-from schemas.French_France_WS import *
+from schemas.French_French_WG import *
+from schemas.French_French_WS import *
 from schemas.Spanish_European_WG import *
 from schemas.Spanish_European_WS import *
 from schemas.Portuguese_European_WG import *

@@ -2,7 +2,7 @@ from django.db import models
 from instruments.base import BaseTable
 
 
-class French_France_WG(BaseTable):
+class French_French_WG(BaseTable):
     item_1_choices = [(u'no', u'no'), (u'yes', u'yes')]
     item_1 = models.CharField(max_length=3, choices=item_1_choices, null=True)
     item_2_choices = [(u'no', u'no'), (u'yes', u'yes')]
