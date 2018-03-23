@@ -64,17 +64,17 @@
         "has_grammar": true
     },
     {
-        "language": "French (Quebec)",
+        "language": "French (Quebecois)",
         "form": "WG",
-        "file": "raw_data/French_Quebec_WG/[French_Quebec_WG].csv",
+        "file": "raw_data/French_Quebecois_WG/[French_Quebecois_WG].csv",
         "age_min": 8,
         "age_max": 16,
         "has_grammar": false
     },
     {
-        "language": "French (Quebec)",
+        "language": "French (Quebecois)",
         "form": "WS",
-        "file": "raw_data/French_Quebec_WS/[French_Quebec_WS].csv",
+        "file": "raw_data/French_Quebecois_WS/[French_Quebecois_WS].csv",
         "age_min": 16,
         "age_max": 30,
         "has_grammar": true
@@ -288,9 +288,9 @@
         "has_grammar": false
     },
     {
-        "language": "Cypriot Greek",
+        "language": "Greek (Cypriot)",
         "form": "WS",
-        "file": "raw_data/Greek_WS/[Greek_WS].csv",
+        "file": "raw_data/Greek_Cypriot_WS/[Greek_Cypriot_WS].csv",
         "age_min": 18,
         "age_max": 30,
         "has_grammar": false
@@ -384,17 +384,17 @@
         "has_grammar": true
     },
     {
-        "language": "French (France)",
+        "language": "French (French)",
         "form": "WG",
-        "file": "raw_data/French_France_WG/[French_France_WG].csv",
+        "file": "raw_data/French_French_WG/[French_French_WG].csv",
         "age_min": 8,
         "age_max": 16,
         "has_grammar": false
     },
     {
-        "language": "French (France)",
+        "language": "French (French)",
         "form": "WS",
-        "file": "raw_data/French_France_WS/[French_France_WS].csv",
+        "file": "raw_data/French_French_WS/[French_French_WS].csv",
         "age_min": 16,
         "age_max": 30,
         "has_grammar": true
