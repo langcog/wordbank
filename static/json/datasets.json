@@ -1014,5 +1014,18 @@
         "contributor": "Alexandra Karousou, Democritus University of Thrace",
         "license": "CC-BY",
         "citation": "López Ornat, S., Gallego, C., Gallo, P., Karousou, A., Mariscal, S., & Martínez, M. (2005). MacArthur: Inventario de desarrollo comunicativo. Manual y Cuadernillos. Madrid, TEA Ediciones. ISBN: 84-7174- 820-7"
+    },
+    {
+        "name": "Kern",
+        "dataset": "",
+        "instrument_language": "French (French)",
+        "instrument_form": "WS",
+        "file": "raw_data/French_French_WS/FrenchFrenchWS_Kern.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": false,
+        "contributor": "Sophie Kern, Centre national de la recherche scientifique (CNRS)",
+        "license": "CC-BY",
+        "citation": ""
     }
 ]
