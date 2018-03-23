@@ -7,15 +7,26 @@ from common.models import Source
 
 def rename_sources(apps, schema_editor):
     Source = apps.get_model("common", "Source")
+    Instrument = apps.get_model("common", "Instrument")
     Source.objects.filter(instrument_language = 'French (France)').update(instrument_language = 'French (French)')
     Source.objects.filter(instrument_language = 'French (Quebec)').update(instrument_language = 'French (Quebecois)')
     Source.objects.filter(instrument_language = 'Cypriot Greek').update(instrument_language = 'Greek (Cypriot)')
 
+    Instrument.objects.filter(language = 'French (France)').update(language = 'French (French)')
+    Instrument.objects.filter(language = 'French (Quebec)').update(language = 'French (Quebecois)')
+    Instrument.objects.filter(language = 'Cypriot Greek').update(language = 'Greek (Cypriot)')
+
+
 def undo_rename_sources(apps, schema_editor):
     Source = apps.get_model("common", "Source")
+    Instrument = apps.get_model("common", "Instrument")
     Source.objects.filter(instrument_language = 'French (French)').update(instrument_language = 'French (France)')
     Source.objects.filter(instrument_language = 'French (Quebecois)').update(instrument_language = 'French (Quebec)')
     Source.objects.filter(instrument_language = 'Greek (Cypriot)').update(instrument_language = 'Cypriot Greek')
+
+    Instrument.objects.filter(language = 'French (French)').update(language = 'French (France)')
+    Instrument.objects.filter(language = 'French (Quebecois)').update(language = 'French (Quebec)')
+    Instrument.objects.filter(language = 'Greek (Cypriot)').update(language = 'Cypriot Greek')
 
 
 class Migration(migrations.Migration):
