@@ -25,6 +25,7 @@ class Instrument(models.Model):
     age_min = models.IntegerField()
     age_max = models.IntegerField()
     has_grammar = models.BooleanField(default=False)
+    unilemma_coverage = models.DecimalField(null=True, max_digits=3, decimal_places=2)
 
 
 class Category(models.Model):

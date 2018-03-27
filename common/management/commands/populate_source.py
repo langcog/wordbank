@@ -12,25 +12,18 @@ class Command(BaseCommand):
         sources = json.load(open('static/json/datasets.json'))
 
         for source in sources:
-            if Source.objects.filter(name=source['name'],
+
+            data_dict = {'contributor': source['contributor'],
+                         'citation': source['citation'],
+                         'longitudinal': source['longitudinal'],
+                         'license': source['license']
+            }
+
+            data_set, created = Source.objects.update_or_create(
+                                     name=source['name'],
                                      dataset=source['dataset'],
                                      instrument_language=source['instrument_language'],
-                                     instrument_form=source['instrument_form']).exists():
-                source_obj = Source.objects.get(name=source['name'],
-                                                dataset=source['dataset'],
-                                                instrument_language=source['instrument_language'],
-                                                instrument_form=source['instrument_form'])
-                source_obj.contributor = source['contributor']
-                source_obj.citation = source['citation']
-                source_obj.longitudinal = source['longitudinal']
-                source_obj.license = source['license']
-                source_obj.save()
-            else:
-                Source.objects.create(name=source['name'],
-                                      dataset=source['dataset'],
-                                      instrument_language=source['instrument_language'],
-                                      instrument_form=source['instrument_form'],
-                                      contributor = source['contributor'],
-                                      citation = source['citation'],
-                                      longitudinal = source['longitudinal'],
-                                      license = source['license'])
+                                     instrument_form=source['instrument_form'],
+                                     defaults=data_dict
+                                     )
+
