@@ -17,13 +17,11 @@ class Command(BaseCommand):
             instrument_age_min, instrument_age_max = instrument['age_min'], instrument['age_max']
             instrument_has_grammar = instrument['has_grammar']
 
-            if Instrument.objects.filter(language=instrument_language, form=instrument_form).exists():
-                instrument_obj = Instrument.objects.get(language=instrument_language, form=instrument_form)
-                instrument_obj.age_min = instrument_age_min
-                instrument_obj.age_max = instrument_age_max
-                instrument_obj.has_grammar = instrument_has_grammar
-                instrument_obj.save()
-            else:
-                Instrument.objects.create(language=instrument_language, form=instrument_form,
-                                              age_min=instrument_age_min, age_max=instrument_age_max,
-                                              has_grammar=instrument_has_grammar)
+            data_dict = {'age_min': instrument_age_min,
+                         'age_max': instrument_age_max,
+                         'has_grammar': instrument_has_grammar}
+
+            instrument, created = Instrument.objects.update_or_create(
+                    language=instrument_language, form=instrument_form, 
+                    defaults=data_dict
+            )

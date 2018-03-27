@@ -109,6 +109,17 @@ class Command(BaseCommand):
                                  'gloss': gloss,
                                  'complexity_category': complexity_category}
 
-                    if not ItemInfo.objects.filter(item_id=itemID, instrument=instrument_obj).exists():
-                        ItemInfo.objects.create(item_id=itemID, instrument=instrument_obj)
-                    ItemInfo.objects.filter(item_id=itemID, instrument=instrument_obj).update(**data_dict)
+                    cdi_item, created = ItemInfo.objects.update_or_create(
+                            item_id=itemID, instrument=instrument_obj, 
+                            defaults=data_dict
+                    )
+
+                    # if not ItemInfo.objects.filter(item_id=itemID, instrument=instrument_obj).exists():
+                    #     ItemInfo.objects.create(item_id=itemID, instrument=instrument_obj)
+                    # ItemInfo.objects.filter(item_id=itemID, instrument=instrument_obj).update(**data_dict)
+
+            all_words = ItemInfo.objects.filter(instrument=instrument_obj, type='word')
+            all_matched = all_words.exclude(map__isnull=True).exclude(map__exact='')
+            lemma_coverage = round(float(all_matched.count()) / float(all_words.count()),2)
+            instrument_obj.unilemma_coverage = lemma_coverage
+            instrument_obj.save()
