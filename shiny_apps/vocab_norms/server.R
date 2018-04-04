@@ -213,10 +213,18 @@ shinyServer(function(input, output, session) {
 
   fit_curves <- function() {
 
-    models <- data() %>%
-      group_by(demo) %>%
+    demo_data <- data() %>%
+      group_by(demo)
+
+    models <- tryCatch({demo_data %>%
       do(model = gcrq(vocab ~ ps(age, monotone = 1, lambda = 1000),
-                      data = ., tau = input_quantiles()))
+                      data = ., tau = input_quantiles())) },
+      error = function(e) {
+        demo_data %>%
+          mutate(vocab = jitter(vocab)) %>%
+          do(model = gcrq(vocab ~ ps(age, monotone = 1, lambda = 1000),
+                          data = ., tau = input_quantiles()))
+      })
 
     get_model <- function(demo.value) {
       return(filter(models, demo == value)$model[[1]])
