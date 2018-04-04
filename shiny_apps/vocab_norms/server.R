@@ -211,20 +211,19 @@ shinyServer(function(input, output, session) {
       rename(demo = clump)
   })
 
-  fit_curves <- function() {
+  fit_curves <- function(jitter_vocab = FALSE) {
 
-    demo_data <- data() %>%
+    models <- data() %>%
       group_by(demo)
 
-    models <- tryCatch({demo_data %>%
+    if (jitter_vocab){
+      models <- models %>%
+        mutate(vocab = jitter(vocab))
+    }
+
+    models <- models %>%
       do(model = gcrq(vocab ~ ps(age, monotone = 1, lambda = 1000),
-                      data = ., tau = input_quantiles())) },
-      error = function(e) {
-        demo_data %>%
-          mutate(vocab = jitter(vocab)) %>%
-          do(model = gcrq(vocab ~ ps(age, monotone = 1, lambda = 1000),
-                          data = ., tau = input_quantiles()))
-      })
+                      data = ., tau = input_quantiles()))
 
     get_model <- function(demo.value) {
       return(filter(models, demo == value)$model[[1]])
@@ -268,7 +267,27 @@ shinyServer(function(input, output, session) {
 
   }
 
-  curves <- reactive(tryCatch(fit_curves(), error = function(e) NULL))
+
+  try_curves <- function() {
+    curve_output <- NULL
+    attempt <- 0
+
+    while( is.null(curve_output) && attempt < 50 ) {
+      if ((attempt %% 2) == 0) {
+        try(
+          curve_output <- fit_curves()
+        )
+      } else if ((attempt %% 2) == 1){
+        try(
+          curve_output <- fit_curves(jitter_vocab = TRUE)
+        )
+      }
+      attempt <- attempt + 1
+    }
+    return(curve_output)
+  }
+
+  curves <- reactive(tryCatch(try_curves(), error = function(e) NULL))
 
   curves_bug <- observe({
     if (is.null(curves()) & !alerted) {
