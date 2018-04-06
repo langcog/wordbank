@@ -430,5 +430,21 @@
         "age_min": 16,
         "age_max": 30,
         "has_grammar": false
+    },
+    {
+        "language": "Mandarin (Taiwanese)",
+        "form": "WG",
+        "file": "raw_data/Mandarin_Taiwanese_WG/[Mandarin_Taiwanese_WG].csv",
+        "age_min": 8,
+        "age_max": 16,
+        "has_grammar": false
+    },
+    {
+        "language": "Mandarin (Taiwanese)",
+        "form": "WS",
+        "file": "raw_data/Mandarin_Taiwanese_WS/[Mandarin_Taiwanese_WS].csv",
+        "age_min": 16,
+        "age_max": 36,
+        "has_grammar": false
     }
 ]

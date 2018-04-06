@@ -1,0 +1,16 @@
+type,value,data_value
+sex,M,1
+sex,F,2
+mom_ed,,0
+mom_ed,Primary,6
+mom_ed,Primary,9
+mom_ed,Secondary,12
+mom_ed,Some College,14
+mom_ed,Some College,4
+mom_ed,College,16
+mom_ed,Graduate,18
+word,produces,1p
+word,,0p
+word,understands,1u
+word,understands,11u
+word,,0u
