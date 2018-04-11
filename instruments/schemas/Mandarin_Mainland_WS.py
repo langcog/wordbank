@@ -2,7 +2,7 @@ from django.db import models
 from instruments.base import BaseTable
 
 
-class Mandarin_WS(BaseTable):
+class Mandarin_Mainland_WS(BaseTable):
     item_1_choices = [(u'produces', u'produces')]
     item_1 = models.CharField(max_length=8, choices=item_1_choices, null=True)
     item_2_choices = [(u'produces', u'produces')]
