@@ -37,14 +37,14 @@ Wordbank | Contributors
       <ul class="list-group">
         {% for entry, n in language_sources.1.items %}
         <li class="list-group-item">
-          <h5 class="list-group-item-heading">{{ entry.0 }} &nbsp;
+          <h5 class="list-group-item-heading">{{ entry.0  | linebreaksbr }} &nbsp;
           <span class="label label-info">{{ entry.1 }}</span>
           <span class="label label-warning">{{ n }}</span>
           {% if entry.2 == 'CC-BY-NC' %}
             <a href="faq#what-is-the-license-for-derivative-works-from-wordbank-e.g.-graphs-generated-by-the-site" alt="CC BY NC License 4.0"> <img alt="CC BY NC License 4.0" src="{% static 'images/ccbync.large.png' %}" style='width: 3%;'></a>
           {% endif %}
           </h5>
-            <p class="list-group-item-text"><small>{{ entry.3 }}</small></p>
+            <p class="list-group-item-text"><small>{{ entry.3 | linebreaksbr }}</small></p>
         </li>
         {% endfor %}
       </ul>
