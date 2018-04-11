@@ -13,9 +13,9 @@ from schemas.Hebrew_WG import *
 from schemas.Hebrew_WS import *
 from schemas.Italian_WG import *
 from schemas.Italian_WS import *
-from schemas.Mandarin_IC import *
-from schemas.Mandarin_TC import *
-from schemas.Mandarin_WS import *
+from schemas.Mandarin_Mainland_IC import *
+from schemas.Mandarin_Mainland_TC import *
+from schemas.Mandarin_Mainland_WS import *
 from schemas.Norwegian_WG import *
 from schemas.Norwegian_WS import *
 from schemas.Russian_WG import *
