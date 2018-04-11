@@ -2,9 +2,9 @@ field,column,group,type
 study_id,subj,child,study_id
 data_age,age in month,admin,data_age
 ,birth order,,
-,birth_order_num,,
+birth_order,birth_order_num,child,birth_order
 ,father level of education,,
-,mother level of education,,
+mom_ed,mother level of education,child,mom_ed
 sex,sex,child,sex
 item_1,item_1,item,word
 item_2,item_2,item,word
