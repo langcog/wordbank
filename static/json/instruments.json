@@ -120,25 +120,25 @@
         "has_grammar": false
     },
     {
-        "language": "Mandarin (Mainland)",
+        "language": "Mandarin",
         "form": "IC",
-        "file": "raw_data/Mandarin_Mainland_IC/[Mandarin_Mainland_IC].csv",
+        "file": "raw_data/Mandarin_IC/[Mandarin_IC].csv",
         "age_min": 12,
         "age_max": 16,
         "has_grammar": false
     },
     {
-        "language": "Mandarin (Mainland)",
+        "language": "Mandarin",
         "form": "TC",
-        "file": "raw_data/Mandarin_Mainland_TC/[Mandarin_Mainland_TC].csv",
+        "file": "raw_data/Mandarin_TC/[Mandarin_TC].csv",
         "age_min": 17,
         "age_max": 30,
         "has_grammar": false
     },
     {
-        "language": "Mandarin (Mainland)",
+        "language": "Mandarin",
         "form": "WS",
-        "file": "raw_data/Mandarin_Mainland_WS/[Mandarin_Mainland_WS].csv",
+        "file": "raw_data/Mandarin_WS/[Mandarin_WS].csv",
         "age_min": 16,
         "age_max": 30,
         "has_grammar": false
