@@ -57,6 +57,7 @@ shinyServer(function(input, output, session) {
                         administrations = TRUE,
                         iteminfo = TRUE,
                         mode = mode) %>%
+      filter(type == 'word') %>%
       mutate(produces = value == "produces",
              understands = value == "understands" | value == "produces") %>%
       select(-value) %>%
