@@ -6,7 +6,10 @@ mom_ed,College,16
 mom_ed,Graduate,18
 mom_ed,,
 word,produces,P
+word,produces,B
+word,produces,L
 word,understands,U
+word,understands,R
 word,,N
 word,,
 gestures_first,often,O
@@ -14,18 +17,30 @@ gestures_first,sometimes,S
 gestures_first,not yet,N
 gestures_first,not yet,
 gestures_games,yes,P
+gestures_games,yes,L
+gestures_games,yes,B
 gestures_games,no,U
 gestures_games,no,N
+gestures_games,no,R
 gestures_games,no,
 gestures_objects,yes,P
+gestures_objects,yes,L
+gestures_objects,yes,B
 gestures_objects,no,U
 gestures_objects,no,N
+gestures_objects,no,R
 gestures_objects,no,
 gestures_adult,yes,P
+gestures_adult,yes,L
+gestures_adult,yes,B
 gestures_adult,no,U
 gestures_adult,no,N
+gestures_adult,no,R
 gestures_adult,no,
 gestures_parent,yes,P
+gestures_parent,yes,L
+gestures_parent,yes,B
 gestures_parent,no,U
 gestures_parent,no,N
+gestures_parent,no,R
 gestures_parent,no,
