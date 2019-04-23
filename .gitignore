@@ -3,8 +3,6 @@
 *.swo
 env/
 .DS_Store
-dev
-sitestatic
 ~\$*.xlsx
 src/*
 .Rhistory
@@ -13,7 +11,6 @@ src/*
 *_cache/
 *_files/
 .Rproj.user
-incoming_data/Kiswahili and Kigiriama/*.sav/
 .Python
 bin/
 include/
