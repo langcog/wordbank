@@ -3,4 +3,7 @@
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
 
-shiny_apps
+static
+env
+.git
+.vscode
