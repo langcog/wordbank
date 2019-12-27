@@ -1,0 +1,450 @@
+[
+    {
+        "language": "British Sign Language",
+        "form": "WG",
+        "file": "raw_data/BSL_WG/[BSL_WG].csv",
+        "age_min": 8,
+        "age_max": 36,
+        "has_grammar": false
+    },
+    {
+        "language": "Cantonese",
+        "form": "WS",
+        "file": "raw_data/Cantonese_WS/[Cantonese_WS].csv",
+        "age_min": 16,
+        "age_max": 30,
+        "has_grammar": false
+    },
+    {
+        "language": "Croatian",
+        "form": "WG",
+        "file": "raw_data/Croatian_WG/[Croatian_WG].csv",
+        "age_min": 8,
+        "age_max": 16,
+        "has_grammar": false
+    },
+    {
+        "language": "Croatian",
+        "form": "WS",
+        "file": "raw_data/Croatian_WS/[Croatian_WS].csv",
+        "age_min": 16,
+        "age_max": 30,
+        "has_grammar": false
+    },
+    {
+        "language": "Danish",
+        "form": "WG",
+        "file": "raw_data/Danish_WG/[Danish_WG].csv",
+        "age_min": 8,
+        "age_max": 20,
+        "has_grammar": false
+    },
+    {
+        "language": "Danish",
+        "form": "WS",
+        "file": "raw_data/Danish_WS/[Danish_WS].csv",
+        "age_min": 16,
+        "age_max": 36,
+        "has_grammar": true
+    },
+    {
+        "language": "English (American)",
+        "form": "WG",
+        "file": "raw_data/English_WG/[English_WG].csv",
+        "age_min": 8,
+        "age_max": 18,
+        "has_grammar": false
+    },
+    {
+        "language": "English (American)",
+        "form": "WS",
+        "file": "raw_data/English_WS/[English_WS].csv",
+        "age_min": 16,
+        "age_max": 30,
+        "has_grammar": true
+    },
+    {
+        "language": "French (Quebecois)",
+        "form": "WG",
+        "file": "raw_data/French_Quebecois_WG/[French_Quebecois_WG].csv",
+        "age_min": 8,
+        "age_max": 16,
+        "has_grammar": false
+    },
+    {
+        "language": "French (Quebecois)",
+        "form": "WS",
+        "file": "raw_data/French_Quebecois_WS/[French_Quebecois_WS].csv",
+        "age_min": 16,
+        "age_max": 30,
+        "has_grammar": true
+    },
+    {
+        "language": "German",
+        "form": "WS",
+        "file": "raw_data/German_WS/[German_WS].csv",
+        "age_min": 18,
+        "age_max": 30,
+        "has_grammar": false
+    },
+    {
+        "language": "Hebrew",
+        "form": "WG",
+        "file": "raw_data/Hebrew_WG/[Hebrew_WG].csv",
+        "age_min": 11,
+        "age_max": 25,
+        "has_grammar": false
+    },
+    {
+        "language": "Hebrew",
+        "form": "WS",
+        "file": "raw_data/Hebrew_WS/[Hebrew_WS].csv",
+        "age_min": 25,
+        "age_max": 36,
+        "has_grammar": true
+    },
+    {
+        "language": "Italian",
+        "form": "WG",
+        "file": "raw_data/Italian_WG/[Italian_WG].csv",
+        "age_min": 7,
+        "age_max": 24,
+        "has_grammar": false
+    },
+    {
+        "language": "Italian",
+        "form": "WS",
+        "file": "raw_data/Italian_WS/[Italian_WS].csv",
+        "age_min": 18,
+        "age_max": 36,
+        "has_grammar": false
+    },
+    {
+        "language": "Mandarin (Beijing)",
+        "form": "IC",
+        "file": "raw_data/Mandarin_Beijing_IC/[Mandarin_Beijing_IC].csv",
+        "age_min": 12,
+        "age_max": 16,
+        "has_grammar": false
+    },
+    {
+        "language": "Mandarin (Beijing)",
+        "form": "TC",
+        "file": "raw_data/Mandarin_Beijing_TC/[Mandarin_Beijing_TC].csv",
+        "age_min": 17,
+        "age_max": 30,
+        "has_grammar": false
+    },
+    {
+        "language": "Mandarin (Beijing)",
+        "form": "WS",
+        "file": "raw_data/Mandarin_Beijing_WS/[Mandarin_Beijing_WS].csv",
+        "age_min": 16,
+        "age_max": 30,
+        "has_grammar": false
+    },
+    {
+        "language": "Norwegian",
+        "form": "WG",
+        "file": "raw_data/Norwegian_WG/[Norwegian_WG].csv",
+        "age_min": 8,
+        "age_max": 20,
+        "has_grammar": false
+    },
+    {
+        "language": "Norwegian",
+        "form": "WS",
+        "file": "raw_data/Norwegian_WS/[Norwegian_WS].csv",
+        "age_min": 16,
+        "age_max": 36,
+        "has_grammar": true
+    },
+    {
+        "language": "Russian",
+        "form": "WG",
+        "file": "raw_data/Russian_WG/[Russian_WG].csv",
+        "age_min": 8,
+        "age_max": 18,
+        "has_grammar": false
+    },
+    {
+        "language": "Russian",
+        "form": "WS",
+        "file": "raw_data/Russian_WS/[Russian_WS].csv",
+        "age_min": 16,
+        "age_max": 36,
+        "has_grammar": false
+    },
+    {
+        "language": "Slovak",
+        "form": "WG",
+        "file": "raw_data/Slovak_WG/[Slovak_WG].csv",
+        "age_min": 8,
+        "age_max": 16,
+        "has_grammar": false
+    },
+    {
+        "language": "Slovak",
+        "form": "WS",
+        "file": "raw_data/Slovak_WS/[Slovak_WS].csv",
+        "age_min": 17,
+        "age_max": 36,
+        "has_grammar": true
+    },
+    {
+        "language": "Spanish (Mexican)",
+        "form": "WG",
+        "file": "raw_data/Spanish_Mexican_WG/[Spanish_Mexican_WG].csv",
+        "age_min": 8,
+        "age_max": 18,
+        "has_grammar": false
+    },
+    {
+        "language": "Spanish (Mexican)",
+        "form": "WS",
+        "file": "raw_data/Spanish_Mexican_WS/[Spanish_Mexican_WS].csv",
+        "age_min": 16,
+        "age_max": 30,
+        "has_grammar": false
+    },
+    {
+        "language": "Swedish",
+        "form": "WG",
+        "file": "raw_data/Swedish_WG/[Swedish_WG].csv",
+        "age_min": 8,
+        "age_max": 16,
+        "has_grammar": false
+    },
+    {
+        "language": "Swedish",
+        "form": "WS",
+        "file": "raw_data/Swedish_WS/[Swedish_WS].csv",
+        "age_min": 16,
+        "age_max": 28,
+        "has_grammar": false
+    },
+   {
+        "language": "Turkish",
+        "form": "WG",
+        "file": "raw_data/Turkish_WG/[Turkish_WG].csv",
+        "age_min": 8,
+        "age_max": 16,
+        "has_grammar": false
+    },
+    {
+        "language": "Turkish",
+        "form": "WS",
+        "file": "raw_data/Turkish_WS/[Turkish_WS].csv",
+        "age_min": 16,
+        "age_max": 36,
+        "has_grammar": false
+    },
+    {
+        "language": "English (British)",
+        "form": "TEDS Twos",
+        "file": "raw_data/English_British_TEDS_Twos/[English_British_TEDS_Twos].csv",
+        "age_min": 20,
+        "age_max": 35,
+        "has_grammar": true
+    },
+    {
+        "language": "English (British)",
+        "form": "TEDS Threes",
+        "file": "raw_data/English_British_TEDS_Threes/[English_British_TEDS_Threes].csv",
+        "age_min": 34,
+        "age_max": 47,
+        "has_grammar": true
+    },
+    {
+        "language": "American Sign Language",
+        "form": "FormA",
+        "file": "raw_data/ASL_FormA/[ASL_FormA].csv",
+        "age_min": 8,
+        "age_max": 36,
+        "has_grammar": false
+    },
+    {
+        "language": "American Sign Language",
+        "form": "FormBOne",
+        "file": "raw_data/ASL_FormB1/[ASL_FormB1].csv",
+        "age_min": 8,
+        "age_max": 36,
+        "has_grammar": false
+    },
+    {
+        "language": "American Sign Language",
+        "form": "FormBTwo",
+        "file": "raw_data/ASL_FormB2/[ASL_FormB2].csv",
+        "age_min": 8,
+        "age_max": 36,
+        "has_grammar": false
+    },
+    {
+        "language": "American Sign Language",
+        "form": "FormC",
+        "file": "raw_data/ASL_FormC/[ASL_FormC].csv",
+        "age_min": 8,
+        "age_max": 36,
+        "has_grammar": false
+    },
+    {
+        "language": "Greek (Cypriot)",
+        "form": "WS",
+        "file": "raw_data/Greek_Cypriot_WS/[Greek_Cypriot_WS].csv",
+        "age_min": 18,
+        "age_max": 30,
+        "has_grammar": false
+    },
+    {
+        "language": "Kigiriama",
+        "form": "WG",
+        "file": "raw_data/Kigiriama_WG/[Kigiriama_WG].csv",
+        "age_min": 8,
+        "age_max": 15,
+        "has_grammar": false
+    },
+    {
+        "language": "Kigiriama",
+        "form": "WS",
+        "file": "raw_data/Kigiriama_WS/[Kigiriama_WS].csv",
+        "age_min": 16,
+        "age_max": 30,
+        "has_grammar": true
+    },
+    {
+        "language": "Kiswahili",
+        "form": "WG",
+        "file": "raw_data/Kiswahili_WG/[Kiswahili_WG].csv",
+        "age_min": 8,
+        "age_max": 15,
+        "has_grammar": false
+    },
+    {
+        "language": "Kiswahili",
+        "form": "WS",
+        "file": "raw_data/Kiswahili_WS/[Kiswahili_WS].csv",
+        "age_min": 16,
+        "age_max": 30,
+        "has_grammar": true
+    },
+    {
+        "language": "Czech",
+        "form": "WS",
+        "file": "raw_data/Czech_WS/[Czech_WS].csv",
+        "age_min": 16,
+        "age_max": 30,
+        "has_grammar": false
+    },
+    {
+        "language": "English (Australian)",
+        "form": "WS",
+        "file": "raw_data/Australian_WS/[Australian_WS].csv",
+        "age_min": 12,
+        "age_max": 30,
+        "has_grammar": true
+    },
+    {
+        "language": "English (British)",
+        "form": "Oxford CDI",
+        "file": "raw_data/English_British_Oxford/[EnglishBritishOxford].csv",
+        "age_min": 12,
+        "age_max": 25,
+        "has_grammar": false
+    },
+    {
+        "language": "Latvian",
+        "form": "WG",
+        "file": "raw_data/Latvian_WG/[Latvian_WG].csv",
+        "age_min": 8,
+        "age_max": 16,
+        "has_grammar": false
+    },
+    {
+        "language": "Latvian",
+        "form": "WS",
+        "file": "raw_data/Latvian_WS/[Latvian_WS].csv",
+        "age_min": 17,
+        "age_max": 36,
+        "has_grammar": false
+    },
+    {
+        "language": "Korean",
+        "form": "WG",
+        "file": "raw_data/Korean_WG/[Korean_WG].csv",
+        "age_min": 8,
+        "age_max": 17,
+        "has_grammar": false
+    },
+    {
+        "language": "Korean",
+        "form": "WS",
+        "file": "raw_data/Korean_WS/[Korean_WS].csv",
+        "age_min": 18,
+        "age_max": 36,
+        "has_grammar": true
+    },
+    {
+        "language": "French (French)",
+        "form": "WG",
+        "file": "raw_data/French_French_WG/[French_French_WG].csv",
+        "age_min": 8,
+        "age_max": 16,
+        "has_grammar": false
+    },
+    {
+        "language": "French (French)",
+        "form": "WS",
+        "file": "raw_data/French_French_WS/[French_French_WS].csv",
+        "age_min": 16,
+        "age_max": 30,
+        "has_grammar": true
+    },
+    {
+        "language": "Spanish (European)",
+        "form": "WG",
+        "file": "raw_data/Spanish_European_WG/[Spanish_European_WG].csv",
+        "age_min": 8,
+        "age_max": 15,
+        "has_grammar": false
+    },
+    {
+        "language": "Spanish (European)",
+        "form": "WS",
+        "file": "raw_data/Spanish_European_WS/[Spanish_European_WS].csv",
+        "age_min": 16,
+        "age_max": 30,
+        "has_grammar": false
+    },
+    {
+        "language": "Portuguese (European)",
+        "form": "WG",
+        "file": "raw_data/Portuguese_European_WG/[Portuguese_European_WG].csv",
+        "age_min": 8,
+        "age_max": 15,
+        "has_grammar": false
+    },
+    {
+        "language": "Portuguese (European)",
+        "form": "WS",
+        "file": "raw_data/Portuguese_European_WS/[Portuguese_European_WS].csv",
+        "age_min": 16,
+        "age_max": 30,
+        "has_grammar": false
+    },
+    {
+        "language": "Mandarin (Taiwanese)",
+        "form": "WG",
+        "file": "raw_data/Mandarin_Taiwanese_WG/[Mandarin_Taiwanese_WG].csv",
+        "age_min": 8,
+        "age_max": 16,
+        "has_grammar": false
+    },
+    {
+        "language": "Mandarin (Taiwanese)",
+        "form": "WS",
+        "file": "raw_data/Mandarin_Taiwanese_WS/[Mandarin_Taiwanese_WS].csv",
+        "age_min": 16,
+        "age_max": 36,
+        "has_grammar": false
+    }
+]
