@@ -18,11 +18,11 @@ item_16,稀饭,16_xi1fan4,porridge,food_drink,word,understands; produces,porridg
 item_17,梨,17_li2,pear,food_drink,word,understands; produces,pear
 item_18,菜,18_cai4,dish,food_drink,word,understands; produces,dish
 item_19,包子,19_bao1zi5,staff steamed bun,food_drink,word,understands; produces,
-item_20,饺子,20_jiao3zi5,dumpling,food_drink,word,understands; produces,
-item_21,草莓,21_cao3mei2,strawberry,food_drink,word,understands; produces,
+item_20,饺子,20_jiao3zi5,dumpling,food_drink,word,understands; produces,dumpling
+item_21,草莓,21_cao3mei2,strawberry,food_drink,word,understands; produces,strawberry
 item_22,黄瓜,22_huang2gua1,cucumber,food_drink,word,understands; produces,cucumber
-item_23,豆腐,23_dou4fu5,tofu,food_drink,word,understands; produces,
-item_24,萝卜,24_luo2bo5,radish,food_drink,word,understands; produces,
+item_23,豆腐,23_dou4fu5,tofu,food_drink,word,understands; produces,tofu
+item_24,萝卜,24_luo2bo5,radish,food_drink,word,understands; produces,radish
 item_25,床,25_chuang2,bed,furniture_rooms,word,understands; produces,bed
 item_26,电视,26_dian4shi4,TV,furniture_rooms,word,understands; produces,tv
 item_27,门,27_men2,door,furniture_rooms,word,understands; produces,door
@@ -68,9 +68,9 @@ item_66,上班,66_shang4ban1,go to work,outside,word,understands; produces,
 item_67,花,67_hua1,flower,outside,word,understands; produces,flower
 item_68,房子,68_fang2zi5,house,outside,word,understands; produces,house
 item_69,月亮,69_yue4liang5,moon,outside,word,understands; produces,moon
-item_70,医院,70_yi1yuan4,hospital,outside,word,understands; produces,
+item_70,医院,70_yi1yuan4,hospital,outside,word,understands; produces,hospital
 item_71,风,71_feng1,wind,outside,word,understands; produces,wind
-item_72,楼房,72_lou2fang2,building,outside,word,understands; produces,
+item_72,楼房,72_lou2fang2,building,outside,word,understands; produces,building
 item_73,湿,73_shi1,wet,descriptive_words,word,understands; produces,wet (description)
 item_74,坏,74_huai4,broken,descriptive_words,word,understands; produces,broken
 item_75,大,75_da4,big,descriptive_words,word,understands; produces,big
@@ -116,7 +116,7 @@ item_114,嘴,114_zui3,mouth,body_parts,word,understands; produces,mouth
 item_115,鼻子,115_bi2zi5,nose,body_parts,word,understands; produces,nose
 item_116,舌头,116_she2tou5,tongue,body_parts,word,understands; produces,tongue
 item_117,牙,117_ya2,tooth,body_parts,word,understands; produces,tooth
-item_118,肚子,118_du4zi5,belly,body_parts,word,understands; produces,
+item_118,肚子,118_du4zi5,belly,body_parts,word,understands; produces,tummy
 item_119,屁股,119_pi4gu5,butt,body_parts,word,understands; produces,butt
 item_120,碗,120_wan3,bowl,household,word,understands; produces,bowl
 item_121,盒子,121_he2zi5,box,household,word,understands; produces,box
@@ -133,12 +133,12 @@ item_131,勺子,131_shao2zi5,spoon,household,word,understands; produces,spoon
 item_132,电话,132_dian4hua4,telephone,household,word,understands; produces,telephone
 item_133,被子,133_bei4zi5,quilt,household,word,understands; produces,
 item_134,书包,134_shu1bao1,bag,household,word,understands; produces,bag
-item_135,筷子,135_kuai4zi5,chopsticks,household,word,understands; produces,
+item_135,筷子,135_kuai4zi5,chopsticks,household,word,understands; produces,chopsticks
 item_136,伞,136_san3,umbrella,household,word,understands; produces,umbrella
-item_137,针,137_zhen1,needle,household,word,understands; produces,
+item_137,针,137_zhen1,needle,household,word,understands; produces,needle
 item_138,跳舞,138_tiao4wu3,dance,action_words,word,understands; produces,dance
 item_139,吹,139_chui1,blow,action_words,word,understands; produces,blow
-item_140,敲,140_qiao1,knock,action_words,word,understands; produces,
+item_140,敲,140_qiao1,knock,action_words,word,understands; produces,knock
 item_141,打扫,141_da3sao3,clean; sweep,action_words,word,understands; produces,clean (action)
 item_142,关(门),142_guan1(men2),close the door,action_words,word,understands; produces,close
 item_143,开(门),143_kai1(men2),open the door,action_words,word,understands; produces,open (action)
@@ -206,7 +206,7 @@ item_204,姐姐,204_jie3jie5,elder sister,people,word,understands; produces,sist
 item_205,舅舅,205_jiu4jiu5,mother's brother,people,word,understands; produces,uncle
 item_206,伯伯,206_bo2bo5,father's brother,people,word,understands; produces,uncle
 item_207,姑姑,207_gu1gu5,father's sister,people,word,understands; produces,aunt
-item_208,宝宝自己的名字,208_bao3bao5 zi,baby's name,people,word,understands; produces,
+item_208,宝宝自己的名字,208_bao3bao5 zi,baby's name,people,word,understands; produces,child’s own name
 item_209,弟弟,209_di4di5,younger brother,people,word,understands; produces,brother
 item_210,姥姥,210_lao3lao5,mother's mother,people,word,understands; produces,grandma
 item_211,姥爷,211_lao3ye5,mother's father,people,word,understands; produces,grandpa
