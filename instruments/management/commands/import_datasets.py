@@ -46,7 +46,7 @@ class Command(BaseCommand):
 
             combined_exps = ' and '.join(filter_exps)
 
-            input_datasets = filter(lambda dataset: eval(combined_exps), datasets)
+            input_datasets = [dataset for dataset in datasets if eval(combined_exps)]
             
             if not input_datasets:
                 raise IOError("the specified file doesn't correspond to any datasets")
@@ -69,5 +69,5 @@ class Command(BaseCommand):
             instrument_language = dataset['instrument_language']
             instrument_form = dataset['instrument_form']
 
-            print "    Importing dataset", instrument_language, instrument_form, dataset_name, dataset_dataset
+            print("    Importing dataset", instrument_language, instrument_form, dataset_name, dataset_dataset)
             import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_language, instrument_form, splitcol, norming, date_format)

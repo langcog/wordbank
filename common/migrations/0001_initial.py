@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from __future__ import unicode_literals
+
 
 from django.db import models, migrations
 
@@ -63,8 +63,8 @@ class Migration(migrations.Migration):
                 ('definition', models.CharField(max_length=200, null=True, blank=True)),
                 ('gloss', models.CharField(max_length=80, null=True, blank=True)),
                 ('complexity_category', models.CharField(max_length=30, null=True, blank=True)),
-                ('category', models.ForeignKey(to='common.Category', null=True)),
-                ('instrument', models.ForeignKey(to='common.Instrument')),
+                ('category', models.ForeignKey(to='common.Category', null=True, on_delete=models.SET_NULL)),
+                ('instrument', models.ForeignKey(to='common.Instrument', on_delete=models.CASCADE)),
             ],
         ),
         migrations.CreateModel(
@@ -99,26 +99,26 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='iteminfo',
             name='map',
-            field=models.ForeignKey(blank=True, to='common.ItemMap', null=True),
+            field=models.ForeignKey(blank=True, to='common.ItemMap', null=True, on_delete=models.SET_NULL),
         ),
         migrations.AddField(
             model_name='child',
             name='momed',
-            field=models.ForeignKey(blank=True, to='common.MomEd', null=True),
+            field=models.ForeignKey(blank=True, to='common.MomEd', null=True, on_delete=models.SET_NULL),
         ),
         migrations.AddField(
             model_name='administration',
             name='child',
-            field=models.ForeignKey(to='common.Child'),
+            field=models.ForeignKey(to='common.Child', on_delete=models.CASCADE),
         ),
         migrations.AddField(
             model_name='administration',
             name='instrument',
-            field=models.ForeignKey(to='common.Instrument'),
+            field=models.ForeignKey(to='common.Instrument', on_delete=models.CASCADE),
         ),
         migrations.AddField(
             model_name='administration',
             name='source',
-            field=models.ForeignKey(blank=True, to='common.Source', null=True),
+            field=models.ForeignKey(blank=True, to='common.Source', null=True, on_delete=models.SET_NULL),
         ),
     ]

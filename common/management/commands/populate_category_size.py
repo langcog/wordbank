@@ -33,7 +33,7 @@ class Command(BaseCommand):
 
         for instrument in input_instruments:
 
-            print "    Caching category sizes for", instrument.language, instrument.form
+            print("    Caching category sizes for", instrument.language, instrument.form)
 
             instrument_model = getattr(instruments.models, '_'.join(instrument.language.split() + [instrument.form]))
             instrument_table = instrument_model._meta.db_table
@@ -42,7 +42,7 @@ class Command(BaseCommand):
             for word in all_words:
                 category_words[word.category.id].append(word.item_id)
 
-            for category, words in category_words.iteritems():
+            for category, words in category_words.items():
 
                 query = "select basetable_ptr_id, "
 
@@ -73,4 +73,4 @@ class Command(BaseCommand):
 #                    admin.production = s.production
 #                    admin.comprehension = s.comprehension
 #                    admin.save()
-                map(create_size, sizes)
+                list(map(create_size, sizes))

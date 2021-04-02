@@ -3,7 +3,7 @@ from common.models import *
 safe_field = lambda field: 'Unknown' if field is None or field == 'NULL' else field
 
 def aggregate():
-    return map(process_administration, Administration.objects.all())
+    return list(map(process_administration, Administration.objects.all()))
 
 def process_administration(administration):
 

@@ -19,7 +19,7 @@ class ImportHelper:
         self.administrations = {}
 
         self.datemode = None
-        self.missing_values = {u'Null', u'#NULL!', u'', u' ', u'Missing', u'Unknown/other', u'?', u'NA', u'99'}
+        self.missing_values = {'Null', '#NULL!', '', ' ', 'Missing', 'Unknown/other', '?', 'NA', '99'}
 
     @staticmethod
     def compute_age(date_of_birth, date_of_test):
@@ -32,11 +32,11 @@ class ImportHelper:
         if type(value) == float:
             value = int(value)
         if type(value) == str:
-            value = unicode(value, "utf-8")
-        elif type(value) == unicode:
+            value = str(value, "utf-8")
+        elif type(value) == str:
             value = value
         else:
-            value = unicode(value)
+            value = str(value)
         return value
 
     def format_date(self, date_str):
@@ -47,7 +47,7 @@ class ImportHelper:
 
     def get_field_value(self, column, field_type, group, row_values):
         value = row_values[self.col_map[column]]
-        if type(value) == str or type(value) == unicode:
+        if type(value) == str or type(value) == str:
             value = value.strip()
         if not value in self.missing_values:
             if field_type in ('study_id', 'study_momed', 'study_family_id'):
@@ -77,7 +77,7 @@ class ImportHelper:
     def get_data_fields(self, cols, group, row_values):
         group_cols = cols[group]
         results = defaultdict(lambda: None)
-        for column in group_cols.keys():
+        for column in list(group_cols.keys()):
             field = group_cols[column]['field']
             field_type = group_cols[column]['field_type']
             if field_type == 'mom_ed':
@@ -96,7 +96,7 @@ class ImportHelper:
     # make a mapping between model value sets and datasheet value sets
     def map_values(self):
         value_mapping = defaultdict(dict)
-        for row in xrange(1, self.value_mapping_nrows):
+        for row in range(1, self.value_mapping_nrows):
             row_values = self.get_value_mapping_row(row)
             if len(row_values) > 1:
                 field_type, value, data_value = row_values[:3]
@@ -109,7 +109,7 @@ class ImportHelper:
     # make a mapping between datasheet column names and model field names/types
     def map_fields(self):
         field_mapping = defaultdict(dict)
-        for row in xrange(1, self.field_mapping_nrows):
+        for row in range(1, self.field_mapping_nrows):
             row_values = self.get_field_mapping_row(row)
             if len(row_values) > 1:
                 field, column, group, field_type = row_values[:4]
@@ -202,7 +202,7 @@ class ImportHelper:
         self.col_map = self.map_cols()
 
         # go through the datasheet entries and populate all the data
-        for row in xrange(1, self.data_nrows):
+        for row in range(1, self.data_nrows):
             child, administration = self.get_row_data(row)
             self.children[row] = child
             self.administrations[row] = administration

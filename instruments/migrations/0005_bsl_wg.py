@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from __future__ import unicode_literals
+
 
 from django.db import models, migrations
 
@@ -14,7 +14,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='BSL_WG',
             fields=[
-                ('basetable_ptr', models.OneToOneField(parent_link=True, auto_created=True, primary_key=True, serialize=False, to='instruments.BaseTable')),
+                ('basetable_ptr', models.OneToOneField(parent_link=True, auto_created=True, primary_key=True, serialize=False, to='instruments.BaseTable', on_delete=models.CASCADE)),
                 ('item_1', models.CharField(max_length=11, null=True, choices=[('understands', 'understands'), ('produces', 'produces')])),
                 ('item_2', models.CharField(max_length=11, null=True, choices=[('understands', 'understands'), ('produces', 'produces')])),
                 ('item_3', models.CharField(max_length=11, null=True, choices=[('understands', 'understands'), ('produces', 'produces')])),
