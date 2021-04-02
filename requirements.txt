@@ -8,7 +8,6 @@ docutils==0.15.2
 gdata==2.0.18
 jmespath==0.10.0
 mysqlclient==2.0.3
-pkg-resources==0.0.0
 pyasn1==0.4.8
 python-dateutil==2.8.1
 pytz==2021.1
