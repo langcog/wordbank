@@ -12,8 +12,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
 
-        #sources = json.load(open('static/json/datasets.json'))
-        sources = json.load(open(os.path.realpath(settings.BASE_DIR + static('json/datasets.json')), encoding="utf8"))
+        sources = json.load(open('static/json/datasets.json', encoding="utf8"))
         for source in sources:
 
             data_dict = {'contributor': source['contributor'],
@@ -21,9 +20,6 @@ class Command(BaseCommand):
                          'longitudinal': source['longitudinal'],
                          'license': source['license']
             }
-
-            if source['name'] == 'CLEX':
-                print (source)
 
             data_set, created = Source.objects.update_or_create(
                 name=source['name'],
