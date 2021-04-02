@@ -17,3 +17,5 @@ include/
 lib/
 pip-selfcheck.json
 static/
+
+wordbank/secret_key*
