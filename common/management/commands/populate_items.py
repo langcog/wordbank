@@ -14,7 +14,7 @@ import csv
 def unicode_csv_reader(utf8_data, dialect=csv.excel, **kwargs):
     csv_reader = csv.reader(utf8_data, dialect=dialect, **kwargs)
     for row in csv_reader:
-        yield [str(cell, 'utf-8') for cell in row]
+        yield [cell for cell in row]
         
 class Command(BaseCommand):
 
