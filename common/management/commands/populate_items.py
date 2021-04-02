@@ -14,7 +14,7 @@ import csv
 def unicode_csv_reader(utf8_data, dialect=csv.excel, **kwargs):
     csv_reader = csv.reader(utf8_data, dialect=dialect, **kwargs)
     for row in csv_reader:
-        yield [unicode(cell, 'utf-8') for cell in row]
+        yield [str(cell, 'utf-8') for cell in row]
         
 class Command(BaseCommand):
 
@@ -38,7 +38,7 @@ class Command(BaseCommand):
 
             combined_exps = ' and '.join(filter_exps)
 
-            input_instruments = filter(lambda instrument: eval(combined_exps), instruments)
+            input_instruments = [instrument for instrument in instruments if eval(combined_exps)]
 
         else:
             input_instruments = instruments
@@ -47,7 +47,7 @@ class Command(BaseCommand):
 
             instrument_language, instrument_form = instrument['language'], instrument['form']
             instrument_obj = Instrument.objects.get(form=instrument_form, language=instrument_language)
-            print "    Populating items for", instrument_language, instrument_form
+            print("    Populating items for", instrument_language, instrument_form)
 
             ftype = instrument['file'].split('.')[-1]
 
@@ -68,7 +68,7 @@ class Command(BaseCommand):
             else:
                 raise IOError("Instrument file must be xlsx, xls, or csv.")
 
-            for row in xrange(1, nrows):
+            for row in range(1, nrows):
                 row_values = get_row(row)
                 if len(row_values) > 1:
                     itemID = row_values[col_names.index('itemID')]

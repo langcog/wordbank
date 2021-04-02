@@ -1,5 +1,9 @@
 # from django.conf.urls import patterns, include, url
 from django.conf.urls import url
+from django.urls.conf import path
+from django.contrib import admin
+
+
 from common.views import *
 from instruments.views import *
 
@@ -9,6 +13,7 @@ from instruments.views import *
 
 urlpatterns = urlpatterns = [
     # Examples:
+    path('admin/', admin.site.urls),
     url(r'^$', Home.as_view(), name='home'),
     url(r'about', About.as_view(), name='about'),
     url(r'analyses', Analyses.as_view(), name='analyses'),

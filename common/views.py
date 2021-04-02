@@ -1,16 +1,16 @@
-from django.shortcuts import render, render_to_response
+from django.shortcuts import render
 from django.views.generic import View
 from django.db.models import Count
 from django.utils.safestring import mark_safe
 from django.conf import settings
-from django.contrib.staticfiles.templatetags.staticfiles import static
+from django.templatetags.static import static
 
 from common.models import *
 from collections import defaultdict, Counter
 import json
-import gdata.blogger.client
+#import gdata.blogger.client
 import rfc3339
-import urllib2
+import urllib.request, urllib.error, urllib.parse
 
 class Home(View):
 
@@ -35,7 +35,7 @@ class Home(View):
         num_instruments = len(instruments)
         num_admins = sum([inst.n for inst in instruments])
         data = {'num_children': self.num_format(num_children), 'num_admins': self.num_format(num_admins), 'num_languages': num_languages, 'num_instruments': num_instruments, 'lang_stats': lang_stats}
-        js_lang_stats = {"name": "", "children": [{"name": self.lang_format(language), "count": n} for language, n in lang_stats.iteritems()]}
+        js_lang_stats = {"name": "", "children": [{"name": self.lang_format(language), "count": n} for language, n in lang_stats.items()]}
         return render(request, 'home.html', {'data': data, 'lang_stats': json.dumps(js_lang_stats)})
 
 
@@ -43,7 +43,7 @@ class Publications(View):
 
     def get(self, request):
         #publications = json.loads(open('static/json/publications.json').read())
-        publications = json.loads(urllib2.urlopen(static('json/publications.json')).read())
+        publications = json.loads(urllib.request.urlopen(static('json/publications.json')).read())
         return render(request, 'publications.html', {'publications': publications})
 
 
@@ -95,7 +95,7 @@ class Blog(View):
         return dt.strftime("%A, %B %d, %Y")
 
     def get(self, request):
-
+        '''
         blog_id = "4368769871770527749"
         blogger_service = gdata.blogger.client.BloggerClient()
         feed = blogger_service.GetFeed('http://www.blogger.com/feeds/' + blog_id + '/posts/default')
@@ -105,10 +105,11 @@ class Blog(View):
                     'author': entry.author[0].name.text
                     #'author_link': entry.author[0].uri.text
                    } for entry in feed.entry]
+        '''
+        entries = []
+        events = json.loads(urllib.request.urlopen(static('json/events.json')).read())
 
-        events = json.loads(urllib2.urlopen(static('json/events.json')).read())
-
-        resources = json.loads(urllib2.urlopen(static('json/resources.json')).read())
+        resources = json.loads(urllib.request.urlopen(static('json/resources.json')).read())
 
         return render(request, 'blog.html', {'entries': entries, 'events': events, 'resources': resources})
 

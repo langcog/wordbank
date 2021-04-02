@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from __future__ import unicode_literals
+
 
 from django.db import models, migrations
 
@@ -14,7 +14,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='American_Sign_Language_FormA',
             fields=[
-                ('basetable_ptr', models.OneToOneField(parent_link=True, auto_created=True, primary_key=True, serialize=False, to='instruments.BaseTable')),
+                ('basetable_ptr', models.OneToOneField(parent_link=True, auto_created=True, primary_key=True, serialize=False, to='instruments.BaseTable', on_delete=models.CASCADE)),
                 ('item_1', models.CharField(max_length=3, null=True, choices=[('yes', 'yes'), ('no', 'no')])),
                 ('item_2', models.CharField(max_length=3, null=True, choices=[('yes', 'yes'), ('no', 'no')])),
                 ('item_3', models.CharField(max_length=3, null=True, choices=[('yes', 'yes'), ('no', 'no')])),
@@ -582,7 +582,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='American_Sign_Language_FormBOne',
             fields=[
-                ('basetable_ptr', models.OneToOneField(parent_link=True, auto_created=True, primary_key=True, serialize=False, to='instruments.BaseTable')),
+                ('basetable_ptr', models.OneToOneField(parent_link=True, auto_created=True, primary_key=True, serialize=False, to='instruments.BaseTable', on_delete=models.CASCADE)),
                 ('item_1', models.CharField(max_length=3, null=True, choices=[('yes', 'yes'), ('no', 'no')])),
                 ('item_2', models.CharField(max_length=3, null=True, choices=[('yes', 'yes'), ('no', 'no')])),
                 ('item_3', models.CharField(max_length=3, null=True, choices=[('yes', 'yes'), ('no', 'no')])),
@@ -1288,7 +1288,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='American_Sign_Language_FormBTwo',
             fields=[
-                ('basetable_ptr', models.OneToOneField(parent_link=True, auto_created=True, primary_key=True, serialize=False, to='instruments.BaseTable')),
+                ('basetable_ptr', models.OneToOneField(parent_link=True, auto_created=True, primary_key=True, serialize=False, to='instruments.BaseTable', on_delete=models.CASCADE)),
                 ('item_1', models.CharField(max_length=3, null=True, choices=[('yes', 'yes'), ('no', 'no')])),
                 ('item_2', models.CharField(max_length=3, null=True, choices=[('yes', 'yes'), ('no', 'no')])),
                 ('item_3', models.CharField(max_length=3, null=True, choices=[('yes', 'yes'), ('no', 'no')])),
@@ -1857,7 +1857,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='American_Sign_Language_FormC',
             fields=[
-                ('basetable_ptr', models.OneToOneField(parent_link=True, auto_created=True, primary_key=True, serialize=False, to='instruments.BaseTable')),
+                ('basetable_ptr', models.OneToOneField(parent_link=True, auto_created=True, primary_key=True, serialize=False, to='instruments.BaseTable', on_delete=models.CASCADE)),
                 ('item_1', models.CharField(max_length=3, null=True, choices=[('yes', 'yes'), ('no', 'no')])),
                 ('item_2', models.CharField(max_length=3, null=True, choices=[('yes', 'yes'), ('no', 'no')])),
                 ('item_3', models.CharField(max_length=3, null=True, choices=[('yes', 'yes'), ('no', 'no')])),

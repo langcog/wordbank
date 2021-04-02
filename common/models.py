@@ -39,12 +39,12 @@ class ItemMap(models.Model):
 
 
 class ItemInfo(models.Model):
-    instrument = models.ForeignKey(Instrument)
+    instrument = models.ForeignKey(Instrument, on_delete=models.CASCADE)
     item = models.CharField(max_length=50)
     item_id = models.CharField(max_length=20, db_index=True)
     type = models.CharField(max_length=30)
-    category = models.ForeignKey(Category, null=True)
-    map = models.ForeignKey(ItemMap, null=True, blank=True)
+    category = models.ForeignKey(Category, null=True, on_delete=models.SET_NULL)
+    map = models.ForeignKey(ItemMap, null=True, blank=True, on_delete=models.SET_NULL)
     definition = models.CharField(max_length=200, null=True, blank=True)
     gloss = models.CharField(max_length=80, null=True, blank=True)
     complexity_category = models.CharField(max_length=30, null=True, blank=True)
@@ -68,7 +68,7 @@ class Child(models.Model):
     ethnicities = (('A', 'Asian'), ('B', 'Black'), ('H', 'Hispanic'), ('W', 'White'), ('O', 'Other/Mixed'))
     ethnicity = models.CharField(max_length=1, choices=ethnicities, null=True, blank=True)
 
-    momed = models.ForeignKey(MomEd, null=True, blank=True)
+    momed = models.ForeignKey(MomEd, null=True, blank=True, on_delete=models.SET_NULL)
     study_momed = models.CharField(max_length=100, null=True, blank=True)
 
     sexes = (('M', 'Male'), ('F', 'Female'), ('O', 'Other'))
@@ -81,9 +81,9 @@ class Child(models.Model):
 
 
 class Administration(models.Model):
-    child = models.ForeignKey(Child)
-    instrument = models.ForeignKey(Instrument)
-    source = models.ForeignKey(Source, null=True, blank=True)
+    child = models.ForeignKey(Child, on_delete=models.CASCADE)
+    instrument = models.ForeignKey(Instrument, on_delete=models.CASCADE)
+    source = models.ForeignKey(Source, null=True, blank=True, on_delete=models.SET_NULL)
     norming = models.BooleanField(default=False)
     date_of_test = models.DateField(null=True, blank=True)
     data_id = models.IntegerField(db_index=True)
@@ -95,6 +95,6 @@ class Administration(models.Model):
 
 class CategorySize(models.Model):
     data_id = models.IntegerField()
-    category = models.ForeignKey(Category)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
     production = models.IntegerField(null=True)
     comprehension = models.IntegerField(null=True)

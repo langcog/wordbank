@@ -33,7 +33,7 @@ class Command(BaseCommand):
 
         for instrument in input_instruments:
 
-            print "    Caching vocabulary sizes for", instrument.language, instrument.form
+            print("    Caching vocabulary sizes for", instrument.language, instrument.form)
 
             var_safe = lambda s: ''.join([c for c in '_'.join(s.split()) if c in string.letters + '_'])
             instrument_string = var_safe(instrument.language) + '_' + var_safe(instrument.form)
@@ -64,4 +64,4 @@ class Command(BaseCommand):
                 admin.production = s.production
                 admin.comprehension = s.comprehension
                 admin.save()
-            map(update_admin, sizes)
+            list(map(update_admin, sizes))

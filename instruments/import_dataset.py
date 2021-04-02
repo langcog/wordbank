@@ -23,7 +23,7 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
 
         children = {}
 
-        for i, child_data in import_helper.children.iteritems():
+        for i, child_data in import_helper.children.items():
 
             # initialize the Child here
             child = Child.objects.create(study_id=child_data['study_id'])
@@ -38,7 +38,7 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
             children[i] = child
             child.save()
 
-        for i, administration_data in import_helper.administrations.iteritems():
+        for i, administration_data in import_helper.administrations.items():
 
             instrument_obj = instrument_model.objects.create()
             administration = Administration.objects.create(child=children[i],
