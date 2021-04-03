@@ -23,7 +23,7 @@ urlpatterns = urlpatterns = [
     url(r'stats', Stats.as_view(), name='stats'),
     url(r'blog', Blog.as_view(), name='blog'),
     url(r'faq', Faq.as_view(), name='faq'),
-    path('healthcheck/', views.HealthView.as_view(), name="healthcheck" )
+    path('healthcheck/', views.health_view, name="healthcheck" )
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
