@@ -1,8 +1,8 @@
 from django.http import HttpResponse
 
 class HttpResponseNoContent(HttpResponse):
-    """Special HTTP response with no content, just headers.
-
+    """
+    Special HTTP response with no content, just headers.
     The content operations are ignored.
     """
 
