@@ -43,7 +43,7 @@ class Home(View):
 class Publications(View):
 
     def get(self, request):
-        publications = json.loads(open(settings.STATIC_ROOT + 'json/publications.json', encoding='utf8').read())
+        publications = json.loads(open('static/json/publications.json', encoding='utf8').read())
         #publications = json.loads(urllib.request.urlopen(static('json/publications.json')).read())
         return render(request, 'publications.html', {'publications': publications})
 
