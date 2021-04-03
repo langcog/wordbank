@@ -13,7 +13,6 @@ chardet==4.0.0
 colorama==0.4.3
 cryptography==3.4.7
 Django==3.1.7
-django-ebhealthcheck==1.0.1
 django-extensions==3.1.1
 docker==4.4.4
 docker-compose==1.25.5
