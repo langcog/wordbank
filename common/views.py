@@ -1,3 +1,5 @@
+import urllib.request, json
+
 from django.shortcuts import render
 from django.views.generic import View
 from django.db.models import Count
@@ -7,7 +9,6 @@ from django.templatetags.static import static
 
 from common.models import *
 from collections import defaultdict, Counter
-import json
 #import gdata.blogger.client
 import rfc3339
 import urllib.request, urllib.error, urllib.parse
@@ -95,21 +96,21 @@ class Blog(View):
         return dt.strftime("%A, %B %d, %Y")
 
     def get(self, request):
-        '''
-        blog_id = "4368769871770527749"
-        blogger_service = gdata.blogger.client.BloggerClient()
-        feed = blogger_service.GetFeed('http://www.blogger.com/feeds/' + blog_id + '/posts/default')
-        entries = [{'title': entry.title.text,
-                    'contents': mark_safe(entry.content.text),
-                    'time': self.format_datetime(entry.published.text),
-                    'author': entry.author[0].name.text
-                    #'author_link': entry.author[0].uri.text
-                   } for entry in feed.entry]
-        '''
+        blog_url = 'https://www.googleapis.com/blogger/v3/blogs/' + settings.BLOG_ID + '/posts?key=' + settings.BLOGGER_API_KEY + '&maxResults=100'
+        r = urllib.request.urlopen(blog_url)
+        feed = json.loads(r.read().decode('utf-8'))
         entries = []
-        events = json.loads(urllib.request.urlopen(static('json/events.json')).read())
+        for entry in feed['items']:
+            entries.append({
+                'title': entry['title'],
+                'contents': mark_safe(entry['content']),
+                'time': self.format_datetime(entry['published']),
+                'author': entry['author']['displayName']
+            })
 
-        resources = json.loads(urllib.request.urlopen(static('json/resources.json')).read())
+        events = json.loads(open('static/json/events.json', encoding="utf8").read())
+    
+        resources = json.loads(open('static/json/resources.json', encoding="utf8").read())
 
         return render(request, 'blog.html', {'entries': entries, 'events': events, 'resources': resources})
 
