@@ -6,6 +6,7 @@ from django.contrib import admin
 
 from common.views import *
 from instruments.views import *
+from . import views
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
@@ -22,6 +23,7 @@ urlpatterns = urlpatterns = [
     url(r'stats', Stats.as_view(), name='stats'),
     url(r'blog', Blog.as_view(), name='blog'),
     url(r'faq', Faq.as_view(), name='faq'),
+    path('health/', views.HealthView.as_view(), name="healthcheck" )
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
