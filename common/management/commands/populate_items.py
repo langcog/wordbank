@@ -57,10 +57,6 @@ class Command(BaseCommand):
                 nrows = sheet.nrows
                 get_row = lambda row: list(sheet.row_values(row))
             elif ftype == 'csv':
-                # contents = [[field.replace('"', '') for field in row] for row in [line.split(',')
-                #                                 for line in re.split("\n|\r", codecs.open(instrument['file'],
-                #                                                                           encoding='utf-8').read())]]
-
                 contents = list(unicode_csv_reader(open(instrument['file'])))
                 col_names = contents[0]
                 nrows = len(contents)
@@ -113,10 +109,6 @@ class Command(BaseCommand):
                             item_id=itemID, instrument=instrument_obj, 
                             defaults=data_dict
                     )
-
-                    # if not ItemInfo.objects.filter(item_id=itemID, instrument=instrument_obj).exists():
-                    #     ItemInfo.objects.create(item_id=itemID, instrument=instrument_obj)
-                    # ItemInfo.objects.filter(item_id=itemID, instrument=instrument_obj).update(**data_dict)
 
             all_words = ItemInfo.objects.filter(instrument=instrument_obj, type='word')
             all_matched = all_words.exclude(map__isnull=True).exclude(map__exact='')
