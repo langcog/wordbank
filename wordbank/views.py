@@ -1,8 +1,8 @@
 from django.views.generic import TemplateView
-from django.http import HttpResponse
+from django.shortcuts import render
 
 class HealthView(TemplateView):
     template_name="health.html"
 
     def get(self, request):
-        return HttpResponse(status=204)
+        return render(request, self.template_name, status=204)
