@@ -21,13 +21,6 @@
   "source": "shiny"
 },
 {
-  "title": "Scoring Tool",
-  "name": "scoring",
-  "thumbnail": "static/images/sample_plots/scoring.png",
-  "type": "visualizations",
-  "source": "shiny"
-},
-{
   "title": "Semantic Networks",
   "name": "networks",
   "thumbnail": "static/images/sample_plots/networks.png",
