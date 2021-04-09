@@ -452,18 +452,18 @@ item_450,X8OLD,word,descriptive_words,produces,old,,老,old
 item_451,X8HAPPY,word,descriptive_words,produces,happy,,高兴/乐/开心,happy
 item_452,X8ANGRY,word,descriptive_words,produces,angry,,生气,angry
 item_453,X8WEIQU,word,descriptive_words,produces,,,委屈,
-item_454,X8WET,word,descriptive_words,produces,wet,,可怜,wet (description)
-item_455,X8DRY,word,descriptive_words,produces,tired,,累,tired
-item_456,X8LOUD,word,descriptive_words,produces,loud,,困了,loud
-item_457,X8LONG,word,descriptive_words,produces,sick,,病,sick
-item_458,X8HARD,word,descriptive_words,produces,high,,高,high
-item_459,X8SOFT,word,descriptive_words,produces,soft,,漂亮/美,soft
-item_460,X8FINIS,word,descriptive_words,produces,finished,,喜欢,finished
-item_461,X8ENOUGH,word,descriptive_words,produces,new,,新,new
-item_462,X8EMPTY,word,descriptive_words,produces,old,,老,old
-item_463,X8FULLM,word,descriptive_words,produces,full,,高兴/乐/开心,full
-item_464,X8HEAVY,word,descriptive_words,produces,heavy,,生气,heavy
-item_465,X8CAREF,word,descriptive_words,produces,careful,,委屈,careful
+item_454,X8WET,word,descriptive_words,produces,wet,,湿,wet (description)
+item_455,X8DRY,word,descriptive_words,produces,dry,,干,dry (description)
+item_456,X8LOUD,word,descriptive_words,produces,loud,,响,loud
+item_457,X8LONG,word,descriptive_words,produces,long,,长,long
+item_458,X8HARD,word,descriptive_words,produces,hard,,硬,hard
+item_459,X8SOFT,word,descriptive_words,produces,soft,,软,soft
+item_460,X8FINIS,word,descriptive_words,produces,finished,,完了,finished
+item_461,X8ENOUGH,word,descriptive_words,produces,enough,,够了,enough
+item_462,X8EMPTY,word,descriptive_words,produces,empty,,空,empty
+item_463,X8FULLM,word,descriptive_words,produces,full,,满,full
+item_464,X8HEAVY,word,descriptive_words,produces,heavy,,重,heavy
+item_465,X8CAREF,word,descriptive_words,produces,careful,,小心,careful
 item_466,X8BUCUO,word,descriptive_words,produces,,,不错,
 item_467,X8STICK,word,descriptive_words,produces,sticky,,粘糊,sticky
 item_468,X8STUCK,word,descriptive_words,produces,,,卡了,
@@ -532,10 +532,10 @@ item_530,H9HAMMER,word,household,produces,hammer,,锤子,hammer
 item_531,H9NAIL,word,household,produces,nail,,钉子,nail (object)
 item_532,H9WOOD,word,household,produces,,,木头,
 item_533,H9THING,word,household,produces,,,东西,
-item_534,T10BALL,word,toys,produces,ball,,汽球,ball
-item_535,T10BOOK,word,toys,produces,book,,枪,book
-item_536,T10DOLL,word,toys,produces,block,,积木,block
-item_537,T10PEN,word,toys,produces,toy (object),,玩具,toy (object)
+item_534,T10BALL,word,toys,produces,ball,,球,ball
+item_535,T10BOOK,word,toys,produces,book,,书,book
+item_536,T10DOLL,word,toys,produces,doll,,小娃娃,doll
+item_537,T10PEN,word,toys,produces,pen,,笔,pen
 item_538,T10BALLO,word,toys,produces,balloon,,汽球,balloon
 item_539,T10GUN,word,toys,produces,gun,,枪,gun
 item_540,T10BLOCK,word,toys,produces,block,,积木,block
