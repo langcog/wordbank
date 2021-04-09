@@ -11,13 +11,13 @@ item_9,鸡蛋,9_ji1dan4,egg,food_drink,word,understands; produces,egg
 item_10,鱼,10_yu2,fish,food_drink,word,understands; produces,fish (food)
 item_11,面条,11_mian4tiao2,noodles,food_drink,word,understands; produces,noodles
 item_12,桔子,12_ju2zi5,orange,food_drink,word,understands; produces,orange (food)
-item_13,馒头,13_man2tou5,steamed bun,food_drink,word,understands; produces,
+item_13,馒头,13_man2tou5,steamed bun,food_drink,word,understands; produces,bun???
 item_14,糖,14_tang2,candy; sugar,food_drink,word,understands; produces,sugar
 item_15,饭,15_fan4,food,food_drink,word,understands; produces,food
 item_16,稀饭,16_xi1fan4,porridge,food_drink,word,understands; produces,porridge
 item_17,梨,17_li2,pear,food_drink,word,understands; produces,pear
 item_18,菜,18_cai4,dish,food_drink,word,understands; produces,dish
-item_19,包子,19_bao1zi5,staff steamed bun,food_drink,word,understands; produces,
+item_19,包子,19_bao1zi5,staff steamed bun,food_drink,word,understands; produces,bun???
 item_20,饺子,20_jiao3zi5,dumpling,food_drink,word,understands; produces,dumpling
 item_21,草莓,21_cao3mei2,strawberry,food_drink,word,understands; produces,strawberry
 item_22,黄瓜,22_huang2gua1,cucumber,food_drink,word,understands; produces,cucumber
@@ -32,7 +32,7 @@ item_30,窗子,30_chuang1zi5,window,furniture_rooms,word,understands; produces,w
 item_31,澡盆,31_zao3pen2,bathtub,furniture_rooms,word,understands; produces,bathtub
 item_32,椅子,32_yi3zi5,chair,furniture_rooms,word,understands; produces,chair
 item_33,沙发,33_sha1fa1,sofa,furniture_rooms,word,understands; produces,couch
-item_34,凳子,34_deng4zi5,stool,furniture_rooms,word,understands; produces,
+item_34,凳子,34_deng4zi5,stool,furniture_rooms,word,understands; produces,chair???
 item_35,柜子,35_gui4zi5,cabinet,furniture_rooms,word,understands; produces,closet
 item_36,冰箱,36_bing1xiang1,refrigerator,furniture_rooms,word,understands; produces,refrigerator
 item_37,猫,37_mao1,cat,animals,word,understands; produces,cat
@@ -85,9 +85,9 @@ item_83,漂亮,83_piao4liang5,pretty,descriptive_words,word,understands; produce
 item_84,红色,84_hong2se4,red,descriptive_words,word,understands; produces,red
 item_85,害怕,85_hai4pa4,scared,descriptive_words,word,understands; produces,scared
 item_86,甜,86_tian2,sweet,descriptive_words,word,understands; produces,sweet
-item_87,辣,87_la4,spicy,descriptive_words,word,understands; produces,
+item_87,辣,87_la4,spicy,descriptive_words,word,understands; produces,spicy
 item_88,乖,88_guai1,well-behaved,descriptive_words,word,understands; produces,
-item_89,臭,89_chou4,smelly,descriptive_words,word,understands; produces,
+item_89,臭,89_chou4,smelly,descriptive_words,word,understands; produces,smelly
 item_90,饱,90_bao3,full,descriptive_words,word,understands; produces,full
 item_91,多,91_duo1,many; much; a lot,descriptive_words,word,understands; produces,much
 item_92,高,92_gao1,high; tall,descriptive_words,word,understands; produces,high
@@ -101,7 +101,7 @@ item_99,火车,99_huo3che1,train,vehicles,word,understands; produces,train
 item_100,飞机,100_fei1ji1,airplane,vehicles,word,understands; produces,airplane
 item_101,卡车,101_ka3che1,truck,vehicles,word,understands; produces,truck
 item_102,船,102_chuan2,ship,vehicles,word,understands; produces,ship
-item_103,警车,103_jing3che1,police wagon,vehicles,word,understands; produces,
+item_103,警车,103_jing3che1,police wagon,vehicles,word,understands; produces,police car
 item_104,吉普车,104_ji2pu3che1,jeep,vehicles,word,understands; produces,jeep
 item_105,救护车,105_jiu4hu4che1,ambulance,vehicles,word,understands; produces,ambulance
 item_106,眼睛,106_yan3jing5,eye,body_parts,word,understands; produces,eye
@@ -131,7 +131,7 @@ item_129,枕头,129_zhen3tou5,pillow,household,word,understands; produces,pillow
 item_130,钱包,130_qian2bao1,purse,household,word,understands; produces,purse
 item_131,勺子,131_shao2zi5,spoon,household,word,understands; produces,spoon
 item_132,电话,132_dian4hua4,telephone,household,word,understands; produces,telephone
-item_133,被子,133_bei4zi5,quilt,household,word,understands; produces,
+item_133,被子,133_bei4zi5,quilt,household,word,understands; produces,blanket
 item_134,书包,134_shu1bao1,bag,household,word,understands; produces,bag
 item_135,筷子,135_kuai4zi5,chopsticks,household,word,understands; produces,chopsticks
 item_136,伞,136_san3,umbrella,household,word,understands; produces,umbrella
@@ -174,7 +174,7 @@ item_172,拿,172_na2,bring; take,action_words,word,understands; produces,take
 item_173,要,173_yao4,want,action_words,word,understands; produces,need
 item_174,买,174_mai3,buy,action_words,word,understands; produces,buy
 item_175,飞,175_fei1,fly,action_words,word,understands; produces,fly (action)
-item_176,生病,176_sheng1bing4,get sick,action_words,word,understands; produces,
+item_176,生病,176_sheng1bing4,get sick,action_words,word,understands; produces,sick???
 item_177,爬,177_pa2,climb,action_words,word,understands; produces,climb
 item_178,坐,178_zuo4,sit,action_words,word,understands; produces,sit
 item_179,放,179_fang4,put,action_words,word,understands; produces,put
@@ -194,7 +194,7 @@ item_192,后,192_hou4,back,games_routines,word,understands; produces,back
 item_193,一个,193_yi2ge5,one,games_routines,word,understands; produces,a
 item_194,上面,194_shang4mian5,above,games_routines,word,understands; produces,above
 item_195,下面,195_xia4mian5,under,games_routines,word,understands; produces,under
-item_196,两个,196_liang3ge5,two,games_routines,word,understands; produces,
+item_196,两个,196_liang3ge5,two,games_routines,word,understands; produces,two
 item_197,爸爸,197_ba4ba5,daddy,people,word,understands; produces,daddy
 item_198,妈妈,198_ma1ma5,mommy,people,word,understands; produces,mommy
 item_199,宝宝,199_bao3bao5,baby,people,word,understands; produces,baby
