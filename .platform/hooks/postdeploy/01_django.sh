@@ -1,7 +1,7 @@
 #!/bin/bash
 
 source "$PYTHONPATH/activate" && {
-# migrate
+# specify the management commands you want to run here
 
 python ./manage.py migrate --noinput;
 python ./manage.py createsu;
