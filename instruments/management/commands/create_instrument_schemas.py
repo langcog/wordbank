@@ -17,9 +17,8 @@ class Command(BaseCommand):
 
         if options['language'] and options['form']:
             input_language, input_form = options['language'], options['form']
-            input_instruments = filter(lambda instrument: instrument['language'] == input_language and
-                                                          instrument['form'] == input_form,
-                                       instruments)
+            input_instruments = [instrument for instrument in instruments if instrument['language'] == input_language and
+                                                          instrument['form'] == input_form]
             models_file = open('instruments/models.py', 'a')
         else:
             input_instruments = instruments
@@ -57,7 +56,7 @@ class Command(BaseCommand):
             if nrows <= 1:
                 instrument_file.write('    pass\n')
 
-            for row in xrange(1, nrows):
+            for row in range(1, nrows):
                 row_values = get_row(row)
                 if len(row_values) > 1:
                     itemID = row_values[col_names.index('itemID')]

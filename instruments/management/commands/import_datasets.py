@@ -18,22 +18,6 @@ class Command(BaseCommand):
 
         datasets = json.load(open('static/json/datasets.json'))
 
-        # if options['language'] and options['form']:
-        #     input_language, input_form = options['language'], options['form']
-        #     input_datasets = filter(lambda dataset: dataset['instrument_language'] == input_language and
-        #                                             dataset['instrument_form'] == input_form,
-        #                             datasets)
-        #     if not input_datasets:
-        #         raise IOError("the specified language and form don't correspond to any datasets")
-        # elif options['file']:
-        #     input_file = options['file']
-        #     input_datasets = filter(lambda dataset: dataset['file'] == input_file,
-        #                             datasets)
-        #     if not input_datasets:
-        #         raise IOError("the specified file doesn't correspond to any datasets")
-        # else:
-        #     input_datasets = datasets
-
         if options['language'] or options['form']:
             filter_exps = []
             if options['language']:
@@ -46,7 +30,7 @@ class Command(BaseCommand):
 
             combined_exps = ' and '.join(filter_exps)
 
-            input_datasets = filter(lambda dataset: eval(combined_exps), datasets)
+            input_datasets = [dataset for dataset in datasets if eval(combined_exps)]
             
             if not input_datasets:
                 raise IOError("the specified file doesn't correspond to any datasets")
@@ -69,5 +53,5 @@ class Command(BaseCommand):
             instrument_language = dataset['instrument_language']
             instrument_form = dataset['instrument_form']
 
-            print "    Importing dataset", instrument_language, instrument_form, dataset_name, dataset_dataset
+            print("    Importing dataset", instrument_language, instrument_form, dataset_name, dataset_dataset)
             import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_language, instrument_form, splitcol, norming, date_format)

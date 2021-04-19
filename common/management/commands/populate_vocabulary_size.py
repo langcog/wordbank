@@ -33,14 +33,13 @@ class Command(BaseCommand):
 
         for instrument in input_instruments:
 
-            print "    Caching vocabulary sizes for", instrument.language, instrument.form
+            print("    Caching vocabulary sizes for", instrument.language, instrument.form)
 
-            var_safe = lambda s: ''.join([c for c in '_'.join(s.split()) if c in string.letters + '_'])
+            var_safe = lambda s: ''.join([c for c in '_'.join(s.split()) if c in string.ascii_letters + '_'])
             instrument_string = var_safe(instrument.language) + '_' + var_safe(instrument.form)
             instrument_model = getattr(instruments.models, instrument_string)
             instrument_table = instrument_model._meta.db_table
             words = [item.item_id for item in ItemInfo.objects.filter(instrument = instrument.pk, type = 'word')]
-
             query = "select basetable_ptr_id, "
 
             prod_query = ''

@@ -2,7 +2,7 @@ from django.core.management.base import BaseCommand
 from common.models import *
 import instruments.models
 from collections import defaultdict
-
+from instruments.utils import get_instrument_model
 
 # Populates the CategorySize objects with each data_id entry's Administration object and number of words
 # produced/comprehended in each Category by that object's data_id entry in the corresponding instruments model.
@@ -33,16 +33,17 @@ class Command(BaseCommand):
 
         for instrument in input_instruments:
 
-            print "    Caching category sizes for", instrument.language, instrument.form
-
-            instrument_model = getattr(instruments.models, '_'.join(instrument.language.split() + [instrument.form]))
+            print("    Caching category sizes for", instrument.language, instrument.form)
+            
+            instrument_model = get_instrument_model(instrument.language,instrument.form)
             instrument_table = instrument_model._meta.db_table
-            all_words = ItemInfo.objects.filter(instrument = instrument.pk, type = 'word')
+            all_words = ItemInfo.objects.filter(instrument = instrument.pk, type = 'word', category_id__isnull=False) #isnull condition added for TEDS Twos
+            
             category_words = defaultdict(list)
             for word in all_words:
                 category_words[word.category.id].append(word.item_id)
 
-            for category, words in category_words.iteritems():
+            for category, words in category_words.items():
 
                 query = "select basetable_ptr_id, "
 

@@ -1,5 +1,8 @@
-import json
+import json, os
 from django.core.management.base import BaseCommand
+from django.conf import settings
+from django.templatetags.static import static
+
 from common.models import *
 
 
@@ -9,7 +12,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
 
-        instruments = json.load(open('static/json/instruments.json'))
+        instruments = json.load(open('static/json/instruments.json', encoding="utf8"))
 
         for instrument in instruments:
 

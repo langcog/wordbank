@@ -16,3 +16,8 @@ bin/
 include/
 lib/
 pip-selfcheck.json
+static/
+
+wordbank/secret_key*
+
+.elasticbeanstalk/app_versions/

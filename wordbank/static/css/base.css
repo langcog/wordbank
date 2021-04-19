@@ -1,0 +1,74 @@
+.nav_element {
+  font-size: 18px;
+}
+
+.nav_title {
+  font-size: 30px;
+  font-weight: bold;
+  /*color: #E44424;*/
+  /*color: #fff;*/
+  /*margin-top: -5px;*/
+}
+
+.navbar-static-top {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #6baed6;
+  /*background-color: #67BCDB;*/
+}
+
+.content {
+  color: #000;
+}
+.navbar-default .navbar-nav>li>a {
+  /*color: #E44424;*/
+  color: #fff;
+  margin-top: 5px;
+  margin-bottom: -5px;
+}
+
+.nav_image {
+  margin-top: -15px;
+  width: 200px;
+  margin-bottom: -20px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: #fff;
+}
+
+iframe {
+  border: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 120px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 100px;
+  background-color: #f5f5f5;
+  padding: 10px;
+}
