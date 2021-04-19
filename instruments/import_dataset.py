@@ -9,7 +9,7 @@ from instruments import import_dataset_helper
 # Creates Child and Administration objects for the entries in the resulting data.
 def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_language, instrument_form, splitcol, norming, date_format):
 
-        var_safe = lambda s: ''.join([c for c in '_'.join(s.split()) if c in string.letters + '_'])
+        var_safe = lambda s: ''.join([c for c in '_'.join(s.split()) if c in string.ascii_letters + '_'])
         instrument_string = var_safe(instrument_language) + '_' + var_safe(instrument_form)
         try:
             instrument_model = getattr(instruments.models, instrument_string)
@@ -23,7 +23,7 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
 
         children = {}
 
-        for i, child_data in import_helper.children.iteritems():
+        for i, child_data in import_helper.children.items():
 
             # initialize the Child here
             child = Child.objects.create(study_id=child_data['study_id'])
@@ -38,7 +38,7 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
             children[i] = child
             child.save()
 
-        for i, administration_data in import_helper.administrations.iteritems():
+        for i, administration_data in import_helper.administrations.items():
 
             instrument_obj = instrument_model.objects.create()
             administration = Administration.objects.create(child=children[i],
