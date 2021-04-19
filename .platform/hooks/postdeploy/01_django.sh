@@ -6,5 +6,5 @@ source "$PYTHONPATH/activate" && {
 python ./manage.py migrate --noinput;
 python ./manage.py createsu;
 python ./manage.py collectstatic --noinput;
-python ./manage.py populate_items
+python ./manage.py import_datasets
 }
