@@ -1,5 +1,6 @@
 from django.db import models
 
+from django.core.validators import MaxValueValidator, MinValueValidator
 
 class Source(models.Model):
     name = models.CharField(max_length=20)
@@ -79,6 +80,18 @@ class Child(models.Model):
 
     study_family_id = models.CharField(max_length=20, null=True)
 
+    conditions = models.ManyToManyField('Condition')
+    born_early_or_late = models.CharField(max_length = 5, choices = (('early', 'early'),('late', 'late')), blank=True, null=True) # Determines if child was born earlier or later than due date
+    birth_weight = models.FloatField(blank=True, null=True) # Declared birthweight in kg (load program must apply calc)
+    gestational_age = models.IntegerField(blank=True, null=True, 
+        validators=[
+            MinValueValidator(25),
+            MaxValueValidator(50)
+        ] )
+
+    
+    
+
 
 class Administration(models.Model):
     child = models.ForeignKey(Child, on_delete=models.CASCADE)
@@ -95,6 +108,34 @@ class Administration(models.Model):
 
 class CategorySize(models.Model):
     data_id = models.IntegerField()
-    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE, null=True)
     production = models.IntegerField(null=True)
     comprehension = models.IntegerField(null=True)
+
+class Condition(models.Model):
+    name = models.CharField(max_length=51, unique=True)
+
+    def __str__(self):
+        return f'{self.name}'
+
+class LanguageExposure(models.Model):
+    administration = models.ForeignKey(Administration, on_delete=models.CASCADE)
+    language = models.CharField(max_length=51)
+    language_from = models.CharField(max_length = 50, blank = True, null=True) # Free text response that asks who child hears other languages from
+    language_days_per_week = models.IntegerField(null=True, blank = True, validators = [MaxValueValidator(7), MinValueValidator(1)], ) # Asks to quantify the # of days in a week that child is exposed to another language
+    language_hours_per_day = models.IntegerField(null=True, blank = True, validators = [MaxValueValidator(24), MinValueValidator(1)],) # Asks to quantify the # of hours a day that child is exposed to another language
+    proportion = models.IntegerField(blank=True, null=True,  #proportion of time on language for this administration
+        validators=[
+            MaxValueValidator(100),
+            MinValueValidator(1)
+        ] )
+    age_of_acquisition = models.IntegerField(blank=True, null=True,  #age in months of language acquisition
+        validators=[
+            MinValueValidator(0)
+        ] )
+
+    def __str__(self):
+        return f'{self.administration} {self.language}'
+
+    class Meta:
+        ordering = ['administration']

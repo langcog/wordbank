@@ -26,7 +26,7 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
         for i, child_data in import_helper.children.items():
 
             # initialize the Child here
-            child = Child.objects.create(study_id=child_data['study_id'])
+            child, created = Child.objects.get_or_create(study_id=child_data['study_id'], date_of_birth=child_data['date_of_birth'], sex=child_data['sex'])
             child.date_of_birth = child_data['date_of_birth']
             child.sex = child_data['sex']
             child.birth_order = child_data['birth_order']
