@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Set the cron to run with utf8 encoding
+PYTHONIOENCODING=utf8
+
+source /opt/elasticbeanstalk/deployment/custom_env_var
+
+0 8 * * * root source /var/app/venv/*/bin/activate &&  /var/app/current/manage.py import_datasets -e 'henry' >> /tmp/import_datasets.log 2>&1
+
+# this file needs a blank space as the last line otherwise it will fail

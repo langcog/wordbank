@@ -6,6 +6,16 @@ source "$PYTHONPATH/activate" && {
 python ./manage.py migrate --noinput;
 python ./manage.py createsu;
 python ./manage.py collectstatic --noinput;
-python ./manage.py import_datasets -l 'British Sign Language'
+
+#clear down and set up basic database records
+python ./manage.py delete_all_tables
+python ./manage.py populate_instrument
+python ./manage.py populate_category
+python ./manage.py populate_items 
+python ./manage.py populate_momed
+python ./manage.py populate_source
+
+#load a specific dataset
+#python ./manage.py import_datasets -l 'English (Australian)'
 
 }
