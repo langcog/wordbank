@@ -5,3 +5,5 @@ cp /opt/elasticbeanstalk/deployment/env /opt/elasticbeanstalk/deployment/custom_
 
 #Set permissions to the custom_env_var file so this file can be accessed by any user on the instance. You can restrict permissions as per your requirements.
 chmod 644 /opt/elasticbeanstalk/deployment/custom_env_var
+
+export $(sudo cat /opt/elasticbeanstalk/deployment/env | xargs)
