@@ -5,6 +5,6 @@ PYTHONIOENCODING=utf8
 
 source /opt/elasticbeanstalk/deployment/custom_env_var
 
-00 13 * * * root source /var/app/venv/*/bin/activate  && export $(sudo cat /opt/elasticbeanstalk/deployment/custom_env_var | xargs)  && cd /var/app/current/ && python manage.py import_datasets -e 'henry' >> /usr/tmp/import_datasets.log 2>&1
+00 15 * * * root source /var/app/venv/*/bin/activate  && export $(sudo cat /opt/elasticbeanstalk/deployment/custom_env_var | xargs)  && cd /var/app/current/ && python manage.py import_datasets -e 'henry' >> /usr/tmp/import_datasets.log 2>&1
 
 # this file needs a blank space as the last line otherwise it will fail
