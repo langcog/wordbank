@@ -5,6 +5,11 @@ PYTHONIOENCODING=utf8
 
 source /opt/elasticbeanstalk/deployment/custom_env_var
 
-0 8 * * * root source /var/app/venv/*/bin/activate &&  /var/app/current/manage.py import_datasets -e 'henry' >> /tmp/import_datasets.log 2>&1
+03 6 * * * root source /var/app/venv/*/bin/activate && /var/app/current/manage.py import_datasets -e 'henry' -l 'English (American)' >> /usr/tmp/import_datasets.log 2>&1
+25 6 * * * root source /var/app/venv/*/bin/activate && /var/app/current/manage.py import_datasets -e 'henry' -l 'English (American)' >> /usr/tmp/import_datasets.log 2>&1
+20 6 * * * root source /var/app/venv/*/bin/activate && /var/app/current/manage.py import_datasets -e 'henry' -l 'English (American)' >> /usr/tmp/import_datasets.log 2>&1
+35 6 * * * root source /var/app/venv/*/bin/activate && /var/app/current/manage.py import_datasets -e 'henry' -l 'English (American)' >> /usr/tmp/import_datasets.log 2>&1
+40 6 * * * root source /var/app/venv/*/bin/activate && /var/app/current/manage.py import_datasets -e 'henry' -l 'English (American)' >> /usr/tmp/import_datasets.log 2>&1
+45 6 * * * root source /var/app/venv/*/bin/activate && /var/app/current/manage.py import_datasets -e 'henry' -l 'English (American)' >> /usr/tmp/import_datasets.log 2>&1
 
 # this file needs a blank space as the last line otherwise it will fail
