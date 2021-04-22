@@ -19,6 +19,3 @@ python ./manage.py populate_source
 #python ./manage.py import_datasets -l 'English (Australian)'
 
 }
-
-#run local smtpd
-python -m smtpd -n -c DebuggingServer localhost:1025
