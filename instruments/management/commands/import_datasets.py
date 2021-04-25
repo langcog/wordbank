@@ -66,7 +66,7 @@ class Command(BaseCommand):
                 send_mail(
                     msg,
                     msg,
-                    'import_dataset@wordbank.com',
+                    'webcdi.contact@gmail.com',
                     ['hjsmehta@gmail.com', 'henrymehta@hotmail.com'],
                     fail_silently=False,
                 )
