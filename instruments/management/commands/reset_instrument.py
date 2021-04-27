@@ -14,6 +14,9 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
 
         input_language, input_form = options['language'], options['form']
+        if not input_language or not input_form:
+            print ("You must specify both a language and a form")
+            return
 
         var_safe = lambda s: ''.join([c for c in '_'.join(s.split()) if c in string.ascii_letters + '_'])
         instrument_string = var_safe(input_language) + '_' + var_safe(input_form)
