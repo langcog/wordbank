@@ -27,7 +27,6 @@ class Command(BaseCommand):
         if Instrument.objects.filter(language=input_language, form=input_form).exists():
             instrument_obj = Instrument.objects.get(language=input_language, form=input_form)
             for administration in Administration.objects.filter(instrument=instrument_obj.pk):
-                print(administration.child.pk)
                 try:
                     if Child.objects.filter(pk=administration.child.pk).exists():
                         Child.objects.filter(pk=administration.child.pk).delete()
