@@ -28,6 +28,8 @@ class Instrument(models.Model):
     has_grammar = models.BooleanField(default=False)
     unilemma_coverage = models.DecimalField(null=True, max_digits=3, decimal_places=2)
 
+    def __str__(self):
+        return f'{self.language} {self.form}'
 
 class Category(models.Model):
     name = models.CharField(max_length=50)
@@ -89,6 +91,8 @@ class Child(models.Model):
             MaxValueValidator(50)
         ] )
 
+    def __str__(self):
+        return f'{self.study_id} {self.date_of_birth}'
     
     
 
@@ -105,6 +109,8 @@ class Administration(models.Model):
     production = models.IntegerField(null=True)
     comprehension = models.IntegerField(null=True)
 
+    def __str__(self):
+        return f'{self.instrument} {self.child}'
 
 class CategorySize(models.Model):
     data_id = models.IntegerField()

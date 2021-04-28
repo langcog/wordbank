@@ -25,14 +25,16 @@ class Command(BaseCommand):
         instrument_model.objects.all().delete()
 
         if Instrument.objects.filter(language=input_language, form=input_form).exists():
-            instrument_obj = Instrument.objects.get(language=input_language, form=input_form)
-            for administration in Administration.objects.filter(instrument=instrument_obj.pk):
+            instrument = Instrument.objects.get(language=input_language, form=input_form)
+            #print(f'instrument: {instrument}')
+            for administration in Administration.objects.filter(instrument=instrument):
+                #print(f'   administration: {administration}')
                 try:
-                    if Child.objects.filter(pk=administration.child.pk).exists():
-                        Child.objects.filter(pk=administration.child.pk).delete()
-                    else:
-                        administration.delete()
+                    if administration.child:
+                        #print(f'        child: {administration.child.administration_set.all()}')
+                        administration.child.delete()
                 except:
-                    administration.delete()
+                    pass
+                administration.delete()
         else:
             raise IOError("Invalid instrument.")
