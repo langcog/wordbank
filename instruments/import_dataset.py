@@ -25,7 +25,7 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
 
         for i, child_data in import_helper.children.items():
             # this is temporary to convert old child/admin relationships.  In future must ensure child ids are different
-            child_id = instrument_string + '_' + child_data['study_id']
+            child_id = instrument_string + '_' + str(child_data['study_id'])
 
             # initialize the Child here
             child, created = Child.objects.get_or_create(study_id=child_data['study_id'], date_of_birth=child_data['date_of_birth'], sex=child_data['sex'])
