@@ -28,7 +28,8 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
             child_id = instrument_string + '_' + str(child_data['study_id'])
 
             # initialize the Child here
-            child, created = Child.objects.get_or_create(study_id=child_data['study_id'], date_of_birth=child_data['date_of_birth'], sex=child_data['sex'])
+            #child, created = Child.objects.get_or_create(study_id=child_data['study_id'], date_of_birth=child_data['date_of_birth'], sex=child_data['sex'])
+            child, created = Child.objects.get_or_create(study_id=child_id, date_of_birth=child_data['date_of_birth'], sex=child_data['sex'])
             child.date_of_birth = child_data['date_of_birth']
             child.sex = child_data['sex']
             child.birth_order = child_data['birth_order']
