@@ -7,7 +7,7 @@ from instruments import import_dataset_helper
 # Given a datasets's name (ex Marchman), dataset (ex Norming), language (ex English), instrument (ex WS), splitcol bool.
 # Uses import_dataset_helper to retrieve the data from that dataset's data file, using its field and value mappings.
 # Creates Child and Administration objects for the entries in the resulting data.
-def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_language, instrument_form, splitcol, norming, date_format):
+def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_language, instrument_form, splitcol, norming, date_format, project_group):
 
         var_safe = lambda s: ''.join([c for c in '_'.join(s.split()) if c in string.ascii_letters + '_'])
         instrument_string = var_safe(instrument_language) + '_' + var_safe(instrument_form)
@@ -26,7 +26,7 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
         for i, child_data in import_helper.children.items():
 
             # initialize the Child here
-            child, created = Child.objects.get_or_create(study_id=child_data['study_id'], project_group=child_data['project_group'])
+            child, created = Child.objects.get_or_create(study_id=child_data['study_id'], project_group=ProjectGroup.objects.get(name=project_group))
             child.date_of_birth = child_data['date_of_birth']
             child.sex = child_data['sex']
             child.birth_order = child_data['birth_order']

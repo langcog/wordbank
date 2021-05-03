@@ -57,10 +57,15 @@ class Command(BaseCommand):
             instrument_language = dataset['instrument_language']
             instrument_form = dataset['instrument_form']
 
+            if 'project_group' in dataset:
+                project_group = dataset['project_group']
+            else:
+                project_group = dataset['name']+'_'+dataset['dataset']+'_'+dataset['instrument_language']+'_'+dataset['instrument_form']
+
             msg = f'Importing dataset {instrument_language}, {instrument_form}, {dataset_name}, {dataset_dataset}'
             print(msg)
 
-            import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_language, instrument_form, splitcol, norming, date_format)
+            import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_language, instrument_form, splitcol, norming, date_format, project_group)
             
             if self.send_email:
                 send_mail(
