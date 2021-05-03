@@ -16,10 +16,10 @@ class Command(BaseCommand):
         for source in sources:
 
             if 'project_group' in source:
-                project_group, created = ProjectGroup.objects.get_or_create(name=source['project_group'])
+                name = source['project_group']
             else:
                 name = source['name']+'_'+source['dataset']+'_'+source['instrument_language']+'_'+source['instrument_form']
-                project_group, created = ProjectGroup.objects.get_or_create(name=name)
+            project_group, created = ProjectGroup.objects.get_or_create(name=name)
 
             data_dict = {'contributor': source['contributor'],
                          'citation': source['citation'],
