@@ -3,7 +3,7 @@ from django.db import models
 from django.core.validators import MaxValueValidator, MinValueValidator
 
 class ProjectGroup(models.Model):
-    name = models.CharField(max_length=51, primary_key=True)
+    name = models.CharField(max_length=251, primary_key=True)
 
 
 class Source(models.Model):
