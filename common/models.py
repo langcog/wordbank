@@ -2,6 +2,10 @@ from django.db import models
 
 from django.core.validators import MaxValueValidator, MinValueValidator
 
+class ProjectGroup(models.Model):
+    name = models.CharField(max_length=51, primary_key=True)
+
+
 class Source(models.Model):
     name = models.CharField(max_length=20)
     dataset = models.CharField(max_length=20, null=True, blank=True)
@@ -13,7 +17,7 @@ class Source(models.Model):
     licenses = (('CC-BY', 'CC BY 4.0'),
                 ('CC-BY-NC', 'CC BY-NC 4.0'))
     license = models.CharField(max_length=15, choices=licenses)
-
+    project_group = models.ForeignKey(ProjectGroup, on_delete=models.CASCADE)
 
 class Instrument(models.Model):
     language = models.CharField(max_length=30)
@@ -64,6 +68,7 @@ class MomEd(models.Model):
 class Child(models.Model):
 
     study_id = models.CharField(max_length=201, null=True)
+    project_group = models.ForeignKey(ProjectGroup, on_delete=models.CASCADE)
 
     birth_order = models.IntegerField(null=True, blank=True)
     date_of_birth = models.DateField(null=True, blank=True)

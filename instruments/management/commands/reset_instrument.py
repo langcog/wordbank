@@ -26,13 +26,14 @@ class Command(BaseCommand):
 
         if Instrument.objects.filter(language=input_language, form=input_form).exists():
             instrument = Instrument.objects.get(language=input_language, form=input_form)
-            print(f'instrument: {instrument}')
+            #print(f'instrument: {instrument}')
             for administration in Administration.objects.filter(instrument=instrument):
-                print(f'   administration: {administration}')
+                #print(f'   administration: {administration}')
                 try:
                     if administration.child:
-                        print(f'        child: {administration.child.administration_set.all()}')
-                        administration.child.delete()
+                        if len(administration.child) == 1:
+                            #print(f'        child: {administration.child.administration_set.all()}')
+                            administration.child.delete()
                 except:
                     pass
                 administration.delete()
