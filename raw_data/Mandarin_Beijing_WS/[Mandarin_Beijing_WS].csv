@@ -1,5 +1,5 @@
 itemID,item,type,category,choices,gloss,complexity_category,definition,uni_lemma
-item_1,S1WEI,word,sounds,produces,,,喂？,
+item_1,S1WEI,word,sounds,produces,,,喂？,hello
 item_2,S1DOG,word,sounds,produces,woof woof,,旺旺（狗叫）,woof woof
 item_3,S1CAT,word,sounds,produces,meow,,喵（猫叫）,meow
 item_4,S1CAR,word,sounds,produces,vroom,,嘀嘀（汽车声）,vroom
@@ -7,7 +7,7 @@ item_5,S1AIYOU,word,sounds,produces,,,哎哟,
 item_6,S1YA,word,sounds,produces,,,呀,
 item_7,S1SHEEP,word,sounds,produces,baa baa,,咩咩（羊叫声）,baa baa
 item_8,S1DUCK,word,sounds,produces,quack quack,,嘎嘎（鸭子叫）,quack quack
-item_9,S1CHICK,word,sounds,produces,,,嘎嘎达（鸡叫）,cluck???
+item_9,S1CHICK,word,sounds,produces,,,嘎嘎达（鸡叫）,
 item_10,S1BANG,word,sounds,produces,bang,,梆梆（打枪）,bang
 item_11,S1BIRD,word,sounds,produces,tweet tweet,,喳喳（鸟叫）,tweet tweet
 item_12,S1LION,word,sounds,produces,roar,,嗷（狮子叫）,
@@ -28,10 +28,10 @@ item_26,P2JIE,word,people,produces,sister,,姐姐,sister
 item_27,P2MEIME,word,people,produces,sister,,妹妹,sister
 item_28,P2GEGE,word,people,produces,brother,,哥哥,brother
 item_29,P2DIDI,word,people,produces,brother,,弟弟,brother
-item_30,P2FRNAM,word,people,produces,,,小朋友的名字,friends’ names???
+item_30,P2FRNAM,word,people,produces,,,小朋友的名字,friends’ names
 item_31,P2DAMA,word,people,produces,,,大妈,
 item_32,P2PERSO,word,people,produces,person,,人,person
-item_33,P2HAIZI,word,people,produces,,,孩子/小孩/小朋友,child???
+item_33,P2HAIZI,word,people,produces,,,孩子/小孩/小朋友,child
 item_34,P2GIRL,word,people,produces,girl,,女孩,girl
 item_35,P2BOY,word,people,produces,boy,,男孩,boy
 item_36,P2MAN,word,people,produces,man,,男人,man
@@ -68,11 +68,11 @@ item_66,G3NOTOK,word,games_routines,produces,cannot,,不行,cannot
 item_67,G3FAST,word,games_routines,produces,fast,,快点,fast
 item_68,G3WAIT,word,games_routines,produces,wait,,等等,wait
 item_69,G3EASY,word,games_routines,produces,easy,,轻点,easy
-item_70,G3LISTN,word,games_routines,produces,,,听话,listen???
+item_70,G3LISTN,word,games_routines,produces,,,听话,listen
 item_71,G3GOSCH,word,games_routines,produces,go to school,,上学,go to school
-item_72,G3ONEYR,word,games_routines,produces,,,一岁/两岁,years old???
+item_72,G3ONEYR,word,games_routines,produces,,,一岁/两岁,years old
 item_73,V4HOLD,word,action_words,produces,hug,,抱,hug
-item_74,V4NA,word,action_words,produces,,,拿（过来）,bring/take???
+item_74,V4NA,word,action_words,produces,,,拿（过来）,bring
 item_75,V4COME,word,action_words,produces,come,,来,come
 item_76,V4WALK,word,action_words,produces,walk,,走,walk
 item_77,V4SIT,word,action_words,produces,sit,,坐,sit
@@ -94,13 +94,13 @@ item_92,V4OPEN,word,action_words,produces,open,,开（门）,open (action)
 item_93,V4GUAN,word,action_words,produces,close,,关,close
 item_94,V4DRAW,word,action_words,produces,draw,,画画,draw
 item_95,V4HIT,word,action_words,produces,hit,,打,hit
-item_96,V4BEI,word,action_words,produces,back,,背,back??? (location vs object)
+item_96,V4BEI,word,action_words,produces,back,,背,
 item_97,V4WEAR2,word,action_words,produces,wear,,戴,wear
 item_98,V4WASH,word,action_words,produces,wash,,洗,wash
 item_99,V4CLEAN,word,action_words,produces,wipe,,擦,wipe
 item_100,V4KISS,word,action_words,produces,kiss,,亲（一个）,kiss
 item_101,V4FLY,word,action_words,produces,fly,,飞,fly (action)
-item_102,V4LIANG,word,action_words,produces,,,亮了,bright???
+item_102,V4LIANG,word,action_words,produces,,,亮了,
 item_103,V4DAKAI,word,action_words,produces,open,,打开,open (action)
 item_104,V4GETUP,word,action_words,produces,get up,,起来,get up
 item_105,V4PEEL,word,action_words,produces,peel,,剥,peel
@@ -121,8 +121,8 @@ item_119,V4CRY,word,action_words,produces,cry,,哭,cry
 item_120,V4CLAP,word,action_words,produces,clap,,拍,clap
 item_121,V4CAN,word,action_words,produces,can,,会,can (auxiliary)
 item_122,V4WRITE,word,action_words,produces,write,,写,write
-item_123,V4LAY,word,action_words,produces,,,躺,lie???
-item_124,V4LIEFL,word,action_words,produces,,,趴,lie???
+item_123,V4LAY,word,action_words,produces,,,躺,lie
+item_124,V4LIEFL,word,action_words,produces,,,趴,lie
 item_125,V4RIDE,word,action_words,produces,ride,,骑,ride
 item_126,V4DRIVE,word,action_words,produces,drive,,开（车）,drive
 item_127,V4BOUNC,word,action_words,produces,hop,,蹦,hop
@@ -135,7 +135,7 @@ item_133,V4SPIT,word,action_words,produces,spit,,吐,spit
 item_134,V4SAY,word,action_words,produces,say,,说,say
 item_135,V4BLOW,word,action_words,produces,blow,,吹,blow
 item_136,V4CHASE,word,action_words,produces,chase,,追,chase
-item_137,V4TRIP,word,action_words,produces,,,摔,
+item_137,V4TRIP,word,action_words,produces,,,摔,fall
 item_138,V4IS,word,action_words,produces,,,是（什么）,
 item_139,V4THINK,word,action_words,produces,think,,想,think
 item_140,V4KNOW,word,action_words,produces,know,,知道,know
@@ -147,10 +147,10 @@ item_145,V4HEAR,word,action_words,produces,hear,,听见,hear
 item_146,V4PRICK,word,action_words,produces,prick,,扎,prick
 item_147,V4PUSH,word,action_words,produces,push,,推,push
 item_148,V4PCKUP,word,action_words,produces,pick up,,捡,pick up
-item_149,V4LOOK,word,action_words,produces,look,,找,look
-item_150,V4ARRIV,word,action_words,produces,,,倒了,??? pour???
+item_149,V4LOOK,word,action_words,produces,look,,找,look for
+item_150,V4ARRIV,word,action_words,produces,,,倒了,
 item_151,V4ENTER,word,action_words,produces,enter,,进去,enter
-item_152,V4EXIT,word,action_words,produces,,,出去,leave???
+item_152,V4EXIT,word,action_words,produces,,,出去,leave
 item_153,V4GUO,word,action_words,produces,,,过,
 item_154,V4RETUR,word,action_words,produces,,,回来,
 item_155,V4STEP,word,action_words,produces,step,,踩,step
@@ -160,36 +160,36 @@ item_158,V4JIANG,word,action_words,produces,tell,,讲,tell
 item_159,V4SHAKE,word,action_words,produces,shake,,握（手）,shake
 item_160,V4KNOCK,word,action_words,produces,knock,,敲,knock
 item_161,V4CLOSE,word,action_words,produces,close,,闭（眼、嘴）,close
-item_162,V4LOSE,word,action_words,produces,,,丢,drop???
-item_163,V4LIKE,word,action_words,produces,love,,喜欢,love
+item_162,V4LOSE,word,action_words,produces,,,丢,
+item_163,V4LIKE,word,action_words,produces,love,,喜欢,like (action)
 item_164,V4DONG,word,action_words,produces,move,,动,move
 item_165,V4WAIT,word,action_words,produces,wait,,等,wait
 item_166,V4AWAKE,word,action_words,produces,wake,,醒,wake
-item_167,V4SLIDE,word,action_words,produces,,,滑,
-item_168,V4CHOP,word,action_words,produces,,,切（菜）,cut???
+item_167,V4SLIDE,word,action_words,produces,,,滑,slide (action)
+item_168,V4CHOP,word,action_words,produces,,,切（菜）,cut
 item_169,V4CUT,word,action_words,produces,cut,,剪,cut
-item_170,V4TEAR,word,action_words,produces,,,撕,tear???
+item_170,V4TEAR,word,action_words,produces,,,撕,tear
 item_171,V4SPRAY,word,action_words,produces,splash,,洒,splash
 item_172,V4SPILL,word,action_words,produces,spill,,撒,spill
 item_173,V4SOUND,word,action_words,produces,,,响,
 item_174,V4MEET,word,action_words,produces,,,接,
-item_175,V4PENG,word,action_words,produces,,,碰,hit???
-item_176,V4DENG4,word,action_words,produces,,,蹬,step???
+item_175,V4PENG,word,action_words,produces,,,碰,hit
+item_176,V4DENG4,word,action_words,produces,,,蹬,step
 item_177,V4ZHUA,word,action_words,produces,catch,,抓,catch
-item_178,V4MOVE,word,action_words,produces,,,搬,move???
-item_179,V4DUAN,word,action_words,produces,,,端,bring???
+item_178,V4MOVE,word,action_words,produces,,,搬,move
+item_179,V4DUAN,word,action_words,produces,,,端,
 item_180,V4MASSG,word,action_words,produces,,,揉,
-item_181,V4SPIN,word,action_words,produces,,,转,turn???
+item_181,V4SPIN,word,action_words,produces,,,转,spin
 item_182,V4LOVE,word,action_words,produces,love,,爱,love
 item_183,V4SMILE,word,action_words,produces,smile,,乐（一个）,smile
 item_184,V4COUNT,word,action_words,produces,count,,数数,count
-item_185,V4KE,word,action_words,produces,,,磕,knock???
+item_185,V4KE,word,action_words,produces,,,磕,knock
 item_186,V4FLIP,word,action_words,produces,flip,,翻,flip
-item_187,V4JIA,word,action_words,produces,,,夹,pick???
+item_187,V4JIA,word,action_words,produces,,,夹,pick
 item_188,V4SMELL,word,action_words,produces,smell,,闻,smell
 item_189,V4TASTE,word,action_words,produces,taste,,尝,taste
 item_190,V4SWALL,word,action_words,produces,swallow,,咽,swallow
-item_191,V4COOK,word,action_words,produces,cook,,做饭,cook???
+item_191,V4COOK,word,action_words,produces,cook,,做饭,cook
 item_192,V4DANCE,word,action_words,produces,dance,,跳舞,dance
 item_193,V4CHNGE,word,action_words,produces,,,换,
 item_194,V4RUB,word,action_words,produces,,,抹（油等）,
@@ -197,28 +197,28 @@ item_195,V4STUFF,word,action_words,produces,,,装,
 item_196,V4PICK,word,action_words,produces,pick,,摘（揪）,pick
 item_197,V4LET,word,action_words,produces,let,,让,let
 item_198,V4FIX,word,action_words,produces,fix,,修,fix
-item_199,V4TRY,word,action_words,produces,,,使劲,try???
+item_199,V4TRY,word,action_words,produces,,,使劲,
 item_200,V4LIFT,word,action_words,produces,lift,,举,lift
 item_201,V4HANG,word,action_words,produces,hang,,挂,hang
 item_202,V4ROLL,word,action_words,produces,roll,,滚,roll (action)
-item_203,V4PINCH,word,action_words,produces,,,挖,dig???
+item_203,V4PINCH,word,action_words,produces,,,挖,dig
 item_204,V4FU,word,action_words,produces,,,扶,
 item_205,V4LEARN,word,action_words,produces,learn,,学,learn
 item_206,V4REMEM,word,action_words,produces,remember,,记（得）,remember
 item_207,V4DAMAG,word,action_words,produces,break,,打破/打碎,break
 item_208,V4TWIST,word,action_words,produces,twist,,扭,twist
 item_209,V4STOP,word,action_words,produces,stop,,停,stop
-item_210,V4SQUIS,word,action_words,produces,,,压,press???
+item_210,V4SQUIS,word,action_words,produces,,,压,squeeze
 item_211,V4CRASH,word,action_words,produces,bump,,撞,bump
 item_212,V4INSER,word,action_words,produces,insert,,插,insert
 item_213,V4HUG,word,action_words,produces,hug,,搂,hug
 item_214,V4BRING,word,action_words,produces,bring,,带,bring
 item_215,V4DA,word,action_words,produces,,,搭,
 item_216,V4FOLLO,word,action_words,produces,follow,,跟着,follow
-item_217,V4DIAL,word,action_words,produces,,,拨（电话）,call on phone???
+item_217,V4DIAL,word,action_words,produces,,,拨（电话）,call on phone
 item_218,V4TEASE,word,action_words,produces,,,逗,
 item_219,V4LINE,word,action_words,produces,queue,,排（队）,queue
-item_220,V4DO,word,action_words,produces,,,干（什么）,do???
+item_220,V4DO,word,action_words,produces,,,干（什么）,do
 item_221,V4USE,word,action_words,produces,use,,用,use
 item_222,V4LICK,word,action_words,produces,lick,,舔,lick
 item_223,V4CHEW,word,action_words,produces,chew,,嚼,chew
@@ -229,15 +229,15 @@ item_227,V4BLINK,word,action_words,produces,blink,,眨（眼）,blink
 item_228,V4WIND,word,action_words,produces,wind,,拧,wind
 item_229,V4SHOUT,word,action_words,produces,shout,,叫唤,shout
 item_230,V4QIAO,word,action_words,produces,look,,瞧,look
-item_231,V4NONG,word,action_words,produces,,,弄,make???
+item_231,V4NONG,word,action_words,produces,,,弄,make
 item_232,V4SWIM,word,action_words,produces,swim,,游泳,swim
 item_233,V4STICK,word,action_words,produces,stick,,贴,stick
-item_234,V4PLUCK,word,action_words,produces,,,拔（草）,
+item_234,V4PLUCK,word,action_words,produces,,,拔（草）,pick
 item_235,V4GROW,word,action_words,produces,,,长（大）,
-item_236,V4CAP,word,action_words,produces,cap,,套,cap
+item_236,V4CAP,word,action_words,produces,cap,,套,cover (action)
 item_237,V4BREAK,word,action_words,produces,break,,拆,break
 item_238,V4READ,word,action_words,produces,read,,读,read
-item_239,V4GE,word,action_words,produces,,,搁,put???
+item_239,V4GE,word,action_words,produces,,,搁,put
 item_240,V4CHOU,word,action_words,produces,look,,瞅,look
 item_241,V4CATCH,word,action_words,produces,catch,,逮（坏蛋）,catch
 item_242,V4DUO,word,action_words,produces,hide,,躲,hide
@@ -246,15 +246,15 @@ item_244,V4YELL,word,action_words,produces,shout,,嚷,shout
 item_245,V4ASK,word,action_words,produces,ask,,问,ask
 item_246,V4TELL,word,action_words,produces,tell,,告诉,tell
 item_247,V4ROLLU,word,action_words,produces,,,捋/挽（袖子）,
-item_248,V4RINSE,word,action_words,produces,,,冲,rinse???
+item_248,V4RINSE,word,action_words,produces,,,冲,rinse
 item_249,V4HELP,word,action_words,produces,help,,帮助/帮忙,help
 item_250,V4DRAG,word,action_words,produces,pull,,拖,pull
 item_251,V4SWING,word,action_words,produces,swing (action),,悠,swing (action)
-item_252,V4TIEUP,word,action_words,produces,,,绑,tie???
+item_252,V4TIEUP,word,action_words,produces,,,绑,tie
 item_253,V4STIR,word,action_words,produces,stir,,搅,stir
 item_254,V4RAO,word,action_words,produces,,,绕,
 item_255,V4PRESS,word,action_words,produces,press,,摁（按）,press
-item_256,V4DREAM,word,action_words,produces,dream,,做梦,dream???
+item_256,V4DREAM,word,action_words,produces,dream,,做梦,dream
 item_257,V4WORK,word,action_words,produces,work (action),,工作,work (action)
 item_258,V4TRY2,word,action_words,produces,try,,试,try
 item_259,V4SELL,word,action_words,produces,sell,,卖,sell
@@ -263,11 +263,11 @@ item_261,V4TIDY,word,action_words,produces,tidy (action),,收拾,tidy (action)
 item_262,V4FORGT,word,action_words,produces,,,忘记,
 item_263,V4PRETE,word,action_words,produces,pretend,,假装,pretend
 item_264,V4HOPE,word,action_words,produces,,,希望,
-item_265,V4DUST,word,action_words,produces,,,抖搂,dust???
-item_266,V4SCRAP,word,action_words,produces,,,蹭,rub???
+item_265,V4DUST,word,action_words,produces,,,抖搂,shake
+item_266,V4SCRAP,word,action_words,produces,,,蹭,
 item_267,E5WATER,word,food_drink,produces,water (beverage),,水,water (beverage)
 item_268,E5MILK,word,food_drink,produces,milk,,牛奶,milk
-item_269,E5CONGEE,word,food_drink,produces,,,粥,porridge???
+item_269,E5CONGEE,word,food_drink,produces,,,粥,porridge
 item_270,E5SOUP,word,food_drink,produces,soup,,汤,soup
 item_271,E5YOGURT,word,food_drink,produces,yogurt,,酸奶,yogurt
 item_272,E5LEBAIS,word,food_drink,produces,,,乐百氏,
@@ -280,8 +280,8 @@ item_278,E5RICE,word,food_drink,produces,food,,饭,food
 item_279,E5MI,word,food_drink,produces,rice,,米,rice
 item_280,E5DUMPL,word,food_drink,produces,dumpling,,饺子,dumpling
 item_281,E5NOODLE,word,food_drink,produces,noodles,,面条,noodles
-item_282,E5BUN,word,food_drink,produces,,,包子,bun???
-item_283,E5MANTOU,word,food_drink,produces,,,馒头,bun???
+item_282,E5BUN,word,food_drink,produces,,,包子,bun
+item_283,E5MANTOU,word,food_drink,produces,,,馒头,bun
 item_284,E5HUNDUN,word,food_drink,produces,dumpling,,馄饨,dumpling
 item_285,E5MEAT,word,food_drink,produces,meat,,肉,meat
 item_286,E5FISH,word,food_drink,produces,fish (food),,鱼,fish (food)
@@ -290,8 +290,8 @@ item_288,E5SHRIMP,word,food_drink,produces,,,虾,
 item_289,E5CHICKN,word,food_drink,produces,chicken (food),,鸡肉,chicken (food)
 item_290,E5LIVER,word,food_drink,produces,,,肝儿（猪肝、鸡肝）,
 item_291,E5VEGGIE,word,food_drink,produces,dish,,菜,dish
-item_292,E5BEAN,word,food_drink,produces,,,豆子,beans???
-item_293,E5BRBEAN,word,food_drink,produces,,,扁豆,beans???
+item_292,E5BEAN,word,food_drink,produces,,,豆子,beans
+item_293,E5BRBEAN,word,food_drink,produces,,,扁豆,beans
 item_294,E5SPROUT,word,food_drink,produces,,,豆芽,
 item_295,E5MELON,word,food_drink,produces,melon,,瓜,melon
 item_296,E5CABBAG,word,food_drink,produces,cabbage,,白菜,cabbage
@@ -304,7 +304,7 @@ item_302,E5CORN,word,food_drink,produces,corn,,玉米,corn
 item_303,E5TOFU,word,food_drink,produces,tofu,,豆腐,tofu
 item_304,E5ONION,word,food_drink,produces,,,葱,
 item_305,E5MUSHRM,word,food_drink,produces,mushrooms,,蘑菇,mushrooms
-item_306,E5MUER,word,food_drink,produces,,,木耳,mushrooms???
+item_306,E5MUER,word,food_drink,produces,,,木耳,mushrooms
 item_307,E5FRUIT,word,food_drink,produces,fruit,,水果,fruit
 item_308,E5APPLE,word,food_drink,produces,apple,,苹果,apple
 item_309,E5BANANA,word,food_drink,produces,banana,,香蕉,banana
@@ -434,9 +434,9 @@ item_432,X8SCARE,word,descriptive_words,produces,scared,,害怕,scared
 item_433,X8HURT,word,descriptive_words,produces,hurt,,疼,hurt (description)
 item_434,X8GUAI,word,descriptive_words,produces,,,乖,
 item_435,X8HUAIL,word,descriptive_words,produces,broken,,坏了,broken
-item_436,X8POLE,word,descriptive_words,produces,,,破了,broken???
+item_436,X8POLE,word,descriptive_words,produces,,,破了,broken
 item_437,X8NAUGH,word,descriptive_words,produces,naughty,,淘气（调皮）,naughty
-item_438,X8TAOYA,word,descriptive_words,produces,,,讨厌,hate???
+item_438,X8TAOYA,word,descriptive_words,produces,,,讨厌,hate
 item_439,X8FAST,word,descriptive_words,produces,fast,,快,fast
 item_440,X8SLOW,word,descriptive_words,produces,slow,,慢/慢点,slow
 item_441,X8CUTE,word,descriptive_words,produces,cute,,可爱/好玩儿,cute
@@ -497,7 +497,7 @@ item_495,H9PIANO,word,household,produces,piano,,（钢）琴,piano
 item_496,H9RECORD,word,household,produces,voice recorder,,录音机,voice recorder
 item_497,H9HIFI,word,household,produces,,,音响,
 item_498,H9VCD,word,household,produces,,,VCD机,
-item_499,H9QUILT,word,household,produces,,,被子,blanket???
+item_499,H9QUILT,word,household,produces,,,被子,blanket
 item_500,H9PILLOW,word,household,produces,pillow,,枕头,pillow
 item_501,H9MEDICI,word,household,produces,medicine,,药,medicine
 item_502,H9COMB,word,household,produces,comb (object),,梳子/栊子,comb (object)
@@ -509,7 +509,7 @@ item_507,H9TPAPER,word,household,produces,tissue,,手纸,tissue
 item_508,H9PICTUR,word,household,produces,picture,,画,picture
 item_509,H9PAPER,word,household,produces,paper,,纸,paper
 item_510,H9SCISSO,word,household,produces,scissors,,剪刀,scissors
-item_511,H9STRING,word,household,produces,,,绳,rope???
+item_511,H9STRING,word,household,produces,,,绳,rope
 item_512,H9GLASSE,word,household,produces,glasses,,眼镜,glasses
 item_513,H9NEWSP,word,household,produces,newspaper,,报纸,newspaper
 item_514,H9KEYS,word,household,produces,keys,,钥匙,keys
@@ -524,10 +524,10 @@ item_522,H9BOX,word,household,produces,box,,盒子,box
 item_523,H9BASKET,word,household,produces,basket,,篮子,basket
 item_524,H9BUCKET,word,household,produces,bucket,,桶,bucket
 item_525,H9BRUSH,word,household,produces,brush,,刷子,brush (object)
-item_526,H9MOP,word,household,produces,,,笤帚,broom???
+item_526,H9MOP,word,household,produces,,,笤帚,broom
 item_527,H9RAG,word,household,produces,rag,,托把/墩布,rag
 item_528,H9GARBAG,word,household,produces,trash,,垃圾,trash
-item_529,H9DUSTBN,word,household,produces,,,簸箕,dustpan???
+item_529,H9DUSTBN,word,household,produces,,,簸箕,dustpan
 item_530,H9HAMMER,word,household,produces,hammer,,锤子,hammer
 item_531,H9NAIL,word,household,produces,nail,,钉子,nail (object)
 item_532,H9WOOD,word,household,produces,,,木头,
@@ -558,7 +558,7 @@ item_556,C11BIB,word,clothing,produces,bib,,围嘴,bib
 item_557,C11NECKL,word,clothing,produces,necklace,,项链,necklace
 item_558,C11CLOTH,word,clothing,produces,clothes,,衣服/衣裳,clothes
 item_559,C11COAT,word,clothing,produces,coat,,大衣/外套,coat
-item_560,C11MIANA,word,clothing,produces,,,棉袄,coat???
+item_560,C11MIANA,word,clothing,produces,,,棉袄,jacket
 item_561,C11JACKE,word,clothing,produces,jacket,,夹克,jacket
 item_562,C11SWEAT,word,clothing,produces,sweater,,毛衣,sweater
 item_563,C11VEST,word,clothing,produces,vest,,背心,vest
@@ -568,16 +568,16 @@ item_566,C11BUTTO,word,clothing,produces,button,,扣子,button
 item_567,C11ZIPPE,word,clothing,produces,zipper,,拉锁,zipper
 item_568,C11SLEEV,word,clothing,produces,,,袖子,
 item_569,C11PANTS,word,clothing,produces,pants,,裤子,pants
-item_570,C11MAOKU,word,clothing,produces,,,毛裤,pants???
-item_571,C11PANT,word,clothing,produces,,,裤衩,pants???
+item_570,C11MAOKU,word,clothing,produces,,,毛裤,pants
+item_571,C11PANT,word,clothing,produces,,,裤衩,underpants
 item_572,C11SKIRT,word,clothing,produces,skirt,,裙子,skirt
 item_573,C11BELT,word,clothing,produces,belt,,皮带,belt
 item_574,C11SOCKS,word,clothing,produces,sock,,袜子,sock
 item_575,C11SHOES,word,clothing,produces,shoe,,鞋,shoe
 item_576,C11SLIPP,word,clothing,produces,slipper,,拖鞋,slipper
-item_577,C11LEATH,word,clothing,produces,,,皮鞋,shoe???
+item_577,C11LEATH,word,clothing,produces,,,皮鞋,shoe
 item_578,C11SANDA,word,clothing,produces,sandals,,凉鞋,sandals
-item_579,C11SNEAK,word,clothing,produces,,,球鞋/旅游鞋,shoe???
+item_579,C11SNEAK,word,clothing,produces,,,球鞋/旅游鞋,sneaker
 item_580,F12STAIR,word,furniture_rooms,produces,stairs,,楼梯,stairs
 item_581,F12DOOR,word,furniture_rooms,produces,door,,门,door
 item_582,F12WINDO,word,furniture_rooms,produces,window,,窗户,window
@@ -585,7 +585,7 @@ item_583,F12BED,word,furniture_rooms,produces,bed,,床,bed
 item_584,F12TABLE,word,furniture_rooms,produces,table,,桌子/饭桌,table
 item_585,F12POTTY,word,furniture_rooms,produces,potty,,尿盆,potty
 item_586,F12MIRRO,word,furniture_rooms,produces,mirror,,镜子,mirror
-item_587,F12STOOL,word,furniture_rooms,produces,,,凳子,chair???
+item_587,F12STOOL,word,furniture_rooms,produces,,,凳子,
 item_588,F12CHAIR,word,furniture_rooms,produces,chair,,椅子,chair
 item_589,F12COUCH,word,furniture_rooms,produces,couch,,沙发,couch
 item_590,F12COFFT,word,furniture_rooms,produces,stairs,,茶几,stairs
@@ -593,7 +593,7 @@ item_591,F12TV,word,furniture_rooms,produces,tv,,电视,tv
 item_592,F12FRIDG,word,furniture_rooms,produces,refrigerator,,冰箱,refrigerator
 item_593,F12STOVE,word,furniture_rooms,produces,stove,,炉子/灶,stove
 item_594,F12WASHE,word,furniture_rooms,produces,washing machine,,洗衣机,washing machine
-item_595,F12ROOM,word,furniture_rooms,produces,,,屋子,house???
+item_595,F12ROOM,word,furniture_rooms,produces,,,屋子,house
 item_596,F12CLOSE,word,furniture_rooms,produces,closet,,柜子,closet
 item_597,F12DRAWE,word,furniture_rooms,produces,drawer,,抽屉,drawer
 item_598,F12BATHT,word,furniture_rooms,produces,bathtub,,澡盆,bathtub
@@ -604,7 +604,7 @@ item_602,F12KITCH,word,furniture_rooms,produces,kitchen,,厨房,kitchen
 item_603,F12HOTBO,word,furniture_rooms,produces,,,暖水瓶/暖壶,
 item_604,F12GAS,word,furniture_rooms,produces,,,煤气,
 item_605,F12AIRC,word,furniture_rooms,produces,air conditioner,,空调,air conditioner
-item_606,F12MICRO,word,furniture_rooms,produces,,,微波炉,oven???
+item_606,F12MICRO,word,furniture_rooms,produces,,,微波炉,
 item_607,F12BALCO,word,furniture_rooms,produces,balcony,,阳台,balcony
 item_608,F12LIFT,word,furniture_rooms,produces,elevator,,电梯,elevator
 item_609,O13FLOWE,word,outside,produces,flower,,花,flower
@@ -644,7 +644,7 @@ item_642,V14PLANE,word,vehicles,produces,airplane,,飞机,airplane
 item_643,V14TRAIN,word,vehicles,produces,train,,火车,train
 item_644,V14BOAT,word,vehicles,produces,boat,,船,boat
 item_645,V14MOTO,word,vehicles,produces,motorcycle,,摩托车,motorcycle
-item_646,V14SEDAN,word,vehicles,produces,,,小轿车,car???
+item_646,V14SEDAN,word,vehicles,produces,,,小轿车,
 item_647,V14BIKE,word,vehicles,produces,bicycle,,自行车,bicycle
 item_648,V14BUS,word,vehicles,produces,bus,,公共汽车,bus
 item_649,V14TRUCK,word,vehicles,produces,truck,,卡车,truck
@@ -664,7 +664,7 @@ item_662,O15GARDE,word,places,produces,garden,,花园,garden
 item_663,O15MCDS,word,places,produces,,,麦当劳/肯德基,
 item_664,O15HOSPT,word,places,produces,hospital,,医院,hospital
 item_665,O15STORE,word,places,produces,store,,商店,store
-item_666,O15NURSR,word,places,produces,,,幼儿园/托儿所,school???
+item_666,O15NURSR,word,places,produces,,,幼儿园/托儿所,
 item_667,O15SCHOO,word,places,produces,school,,学校,school
 item_668,O15TIANA,word,places,produces,,,天安门,
 item_669,O15CHINA,word,places,produces,,,中国,
@@ -672,8 +672,8 @@ item_670,O15AMPRK,word,places,produces,amusement park,,游乐园,amusement park
 item_671,O15SUPER,word,places,produces,store,,超市,store
 item_672,D16HERE,word,directions,produces,here,,这边/这儿,here
 item_673,D16THERE,word,directions,produces,there,,那边/那儿,there
-item_674,D16ON,word,directions,produces,on,,上（面）,on
-item_675,D16BELOW,word,directions,produces,,,下（面）,under??? below???
+item_674,D16ON,word,directions,produces,on,,上（面）,above
+item_675,D16BELOW,word,directions,produces,,,下（面）,below
 item_676,D16OUTSI,word,directions,produces,outside,,外面,outside
 item_677,D16INSID,word,directions,produces,inside,,里面,inside
 item_678,D16AT,word,directions,produces,at,,在,at
@@ -714,7 +714,7 @@ item_712,P18THOSE,word,pronouns,produces,those,,那些,those
 item_713,P18THESE,word,pronouns,produces,these,,这些,these
 item_714,P18BIEDE,word,pronouns,produces,other,,别的,other
 item_715,P18US,word,pronouns,produces,we,,我们,we
-item_716,P18ZANME,word,pronouns,produces,,,咱们,we???
+item_716,P18ZANME,word,pronouns,produces,,,咱们,we
 item_717,P18YOUPL,word,pronouns,produces,you,,你们,you
 item_718,P18THEY,word,pronouns,produces,them,,他们,them
 item_719,P18USPOS,word,pronouns,produces,our,,我们的,our
@@ -797,7 +797,7 @@ item_795,J24BUT,word,connecting_words,produces,but,,可是,but
 item_796,J24IF,word,connecting_words,produces,if,,如果,if
 item_797,J24YAOSH,word,connecting_words,produces,if,,要是,if
 item_798,J24SUOYI,word,connecting_words,produces,so,,所以,so
-item_799,J24THEN,word,connecting_words,produces,so,,那么,so???
+item_799,J24THEN,word,connecting_words,produces,so,,那么,so
 item_800,TALKFIND,talk_functions,,never; sometimes; often,,,,
 item_801,TALKPOBJ,talk_functions,,never; sometimes; often,,,,
 item_802,TALKABSO,talk_functions,,never; sometimes; often,,,,
