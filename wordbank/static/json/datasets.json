@@ -465,6 +465,20 @@
         "contributor": "Bencie Woll, University College London",
         "license": "CC-BY",
         "citation": "Woolfe, T., Herman, R., Roy, P., & Woll, B. (2010). Early vocabulary development in deaf native signers: a British Sign Language adaptation of the communicative development inventories. Journal of Child Psychology and Psychiatry, 51(3), 322-331."
+        
+    },
+    {
+        "name": "Henry",
+        "dataset": "",
+        "instrument_language": "Henry Test Language",
+        "instrument_form": "WG",
+        "file": "raw_data/Henry_WG/HenryWG_Woll.csv",
+        "splitcol": true,
+        "norming": true,
+        "longitudinal": false,
+        "contributor": "Henry Mehta, Hexia Web Services Ltd",
+        "license": "CC-BY",
+        "citation": "Mehta, H. (2021). This is a test for loading conditions: a Henry Test Language."
     },
     {
         "name": "Li",

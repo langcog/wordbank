@@ -8,6 +8,14 @@
         "has_grammar": false
     },
     {
+        "language": "Henry Test Language",
+        "form": "WG",
+        "file": "raw_data/Henry_WG/[Henry_WG].csv",
+        "age_min": 8,
+        "age_max": 36,
+        "has_grammar": false
+    },
+    {
         "language": "Cantonese",
         "form": "WS",
         "file": "raw_data/Cantonese_WS/[Cantonese_WS].csv",

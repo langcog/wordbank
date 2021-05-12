@@ -26,7 +26,7 @@ class Command(BaseCommand):
 
         for instrument in input_instruments:
 
-            var_safe = lambda s: ''.join([c for c in '_'.join(s.split()) if c in string.letters + '_'])
+            var_safe = lambda s: ''.join([c for c in '_'.join(s.split()) if c in string.ascii_letters + '_'])
             instr = var_safe(instrument['language']) + '_' + var_safe(instrument['form'])
             instrument_file = open('instruments/schemas/%s.py' % (instr), 'w')
 
@@ -70,6 +70,6 @@ class Command(BaseCommand):
                     )
 
             instrument_file.close()
-            models_file.write('from schemas.%s import *\n' % (instr))
+            models_file.write('from .schemas.%s import *\n' % (instr))
 
         models_file.close()
