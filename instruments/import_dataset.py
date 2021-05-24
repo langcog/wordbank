@@ -24,7 +24,6 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
         children = {}
 
         for i, child_data in import_helper.children.items():
-
             # initialize the Child here
             child, created = Child.objects.get_or_create(study_id=child_data['study_id'], project_group=ProjectGroup.objects.get(name=project_group))
             child.date_of_birth = child_data['date_of_birth']
@@ -39,7 +38,6 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
             child.save()
 
         for i, administration_data in import_helper.administrations.items():
-
             instrument_obj = instrument_model.objects.create()
             administration = Administration.objects.create(child=children[i],
                                                            norming=administration_data['norming'],

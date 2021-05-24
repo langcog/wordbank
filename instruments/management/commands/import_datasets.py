@@ -62,7 +62,7 @@ class Command(BaseCommand):
             else:
                 project_group = dataset['name']+'_'+dataset['dataset']+'_'+dataset['instrument_language']+'_'+dataset['instrument_form']
 
-            msg = f'Importing dataset {instrument_language}, {instrument_form}, {dataset_name}, {dataset_dataset}'
+            msg = f'Importing dataset {instrument_language}, {instrument_form}, {dataset_name}, {dataset_dataset}, {project_group}'
             print(msg)
 
             import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_language, instrument_form, splitcol, norming, date_format, project_group)
