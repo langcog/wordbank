@@ -36,7 +36,11 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
 
             children[i] = child
             child.save()
-
+            for condition in child_data['condition']:
+                c, created = Condition.objects.get_or_create(name=condition)
+                child.conditions.add(c)
+                pass
+            
         for i, administration_data in import_helper.administrations.items():
             instrument_obj = instrument_model.objects.create()
             administration = Administration.objects.create(child=children[i],
@@ -55,3 +59,11 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
             instrument_model.objects.filter(pk=instrument_obj.pk).update(**administration_data['item_data'])
 
             administration.save()
+            for language in administration_data['language']:
+                lang, prop, age = language.split(';')
+                l, created = LanguageExposure.objects.get_or_create(
+                    administration=administration,
+                    language=lang,
+                    proportion=prop,
+                    age_of_acquisition=age
+                    )

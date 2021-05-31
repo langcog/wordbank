@@ -132,9 +132,6 @@ class Condition(models.Model):
 class LanguageExposure(models.Model):
     administration = models.ForeignKey(Administration, on_delete=models.CASCADE)
     language = models.CharField(max_length=51)
-    language_from = models.CharField(max_length = 50, blank = True, null=True) # Free text response that asks who child hears other languages from
-    language_days_per_week = models.IntegerField(null=True, blank = True, validators = [MaxValueValidator(7), MinValueValidator(1)], ) # Asks to quantify the # of days in a week that child is exposed to another language
-    language_hours_per_day = models.IntegerField(null=True, blank = True, validators = [MaxValueValidator(24), MinValueValidator(1)],) # Asks to quantify the # of hours a day that child is exposed to another language
     proportion = models.IntegerField(blank=True, null=True,  #proportion of time on language for this administration
         validators=[
             MaxValueValidator(100),
@@ -142,7 +139,8 @@ class LanguageExposure(models.Model):
         ] )
     age_of_acquisition = models.IntegerField(blank=True, null=True,  #age in months of language acquisition
         validators=[
-            MinValueValidator(0)
+            MinValueValidator(0),
+            MaxValueValidator(72)
         ] )
 
     def __str__(self):
