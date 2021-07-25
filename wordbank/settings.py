@@ -34,8 +34,8 @@ else :
             'ENGINE': 'django.db.backends.mysql', 
             'NAME': 'wordbank',                      
             'USER': 'wordbankadmin',
-            'PASSWORD': '4PBNjG37y7Mk83',
-            'HOST': 'wordbank-bilingual-henry.canyiscnpddk.us-west-2.rds.amazonaws.com',
+            'PASSWORD': 'password',
+            'HOST': 'localhost',
             'PORT': 3306,
         }
     }
