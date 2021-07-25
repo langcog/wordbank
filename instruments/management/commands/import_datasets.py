@@ -13,6 +13,7 @@ class Command(BaseCommand):
     def add_arguments(self, parser):
         parser.add_argument('-l', '--language', type=str)
         parser.add_argument('-f', '--form', type=str)
+        parser.add_argument('-d', '--dataset', type=str)
         parser.add_argument('--file', type=str)
         parser.add_argument('-e', '--email', type=str)
 
@@ -22,7 +23,7 @@ class Command(BaseCommand):
 
         datasets = json.load(open('static/json/datasets.json'))
 
-        if options['language'] or options['form']:
+        if options['language'] or options['form'] or options['dataset']:
             filter_exps = []
             if options['language']:
                 input_language = options['language']
@@ -31,6 +32,10 @@ class Command(BaseCommand):
             if options['form']:
                 input_form = options['form']
                 filter_exps.append("dataset['instrument_form'] == '%s'" % input_form)
+            
+            if options['dataset']:
+                input_dataset= options['dataset']
+                filter_exps.append("dataset['dataset'] == '%s'" % input_dataset)
 
             combined_exps = ' and '.join(filter_exps)
 

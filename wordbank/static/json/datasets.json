@@ -39,7 +39,8 @@
         "date_format": "%m/%d/%y",
         "contributor": "Virginia Marchman, Stanford University",
         "license": "CC-BY",
-        "citation": ""
+        "citation": "",
+        "project_group": "Marchman Dallas"
     },
     {
         "name": "Smith",
@@ -184,6 +185,21 @@
         "contributor": "Donna Jackson-Maldonado, Universidad Autónoma de Querétaro",
         "license": "CC-BY",
         "citation": "Jackson-Maldonado, D., Thal, D., Marchman, V., Newton, T., Fenson, L, & Conboy, B. (2003). MacArthur Inventarios del Desarrollo de Habilidades Comunicativas. User´s Guide and Technical Manual. Brookes, Baltimore."
+    },
+    {
+        "name": "Marchman",
+        "dataset": "Dallas",
+        "instrument_language": "Spanish (Mexican)",
+        "instrument_form": "WS",
+        "file": "raw_data/Spanish_Mexican_WS/SpanishMexicanWS_Marchman_Dallas.csv",
+        "splitcol": false,
+        "norming": true,
+        "longitudinal": false,
+        "date_format": "%Y-%m-%d",
+        "contributor": "Donna Jackson-Maldonado, Universidad Autónoma de Querétaro",
+        "license": "CC-BY",
+        "citation": "Jackson-Maldonado, D., Thal, D., Marchman, V., Newton, T., Fenson, L, & Conboy, B. (2003). MacArthur Inventarios del Desarrollo de Habilidades Comunicativas. User´s Guide and Technical Manual. Brookes, Baltimore.",
+        "project_group": "Marchman Dalls"
     },
     {
         "name": "Marchman",

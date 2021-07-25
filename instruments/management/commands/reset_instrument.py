@@ -6,6 +6,7 @@ import string
 
 # deletes all data and administration and child objects for a given instrument (language and form)
 class Command(BaseCommand):
+    help = "deletes all data and administration and child objects for a given instrument (language and form)"
 
     def add_arguments(self, parser):
         parser.add_argument('-l', '--language', type=str)

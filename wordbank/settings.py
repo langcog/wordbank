@@ -31,13 +31,12 @@ if 'DATABASE_NAME' in os.environ:
 else :
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-            'NAME': 'wordbank',                      # Or path to database file if using sqlite3.
-            # The following settings are not used with sqlite3:
-            'USER': '',
-            'PASSWORD': '',
-            'HOST': '',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
-            'PORT': '',                      # Set to empty string for default.
+            'ENGINE': 'django.db.backends.mysql', 
+            'NAME': 'wordbank',                      
+            'USER': 'wordbankadmin',
+            'PASSWORD': '4PBNjG37y7Mk83',
+            'HOST': 'wordbank-bilingual-henry.canyiscnpddk.us-west-2.rds.amazonaws.com',
+            'PORT': 3306,
         }
     }
 

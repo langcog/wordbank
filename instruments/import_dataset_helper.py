@@ -65,7 +65,7 @@ class ImportHelper:
                 try:
                     return self.value_mapping[field_type][value]
                 except:
-                    raise KeyError("Value mapping doesn't have entry for field type %s and value %s" % (field_type, value))
+                    raise KeyError(f"Value mapping doesn't have entry for field type { field_type } and value { value }.  { column }")
 
     def resolve_values(self, value0, value1):
         if value0 == 'produces' or value1 == 'produces':
