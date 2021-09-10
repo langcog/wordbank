@@ -39,7 +39,7 @@ rsa==4.7.2
 s3transfer==0.3.6
 semantic-version==2.8.5
 six==1.14.0
-sqlparse==0.4.1
+sqlparse==0.4.2
 termcolor==1.1.0
 texttable==1.6.3
 tonyg-rfc3339 @ git+git://github.com/tonyg/python-rfc3339@ed7ebfc3c6ec80cc0bb4708e7d44eaa02148472d
