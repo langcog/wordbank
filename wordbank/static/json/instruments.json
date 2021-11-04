@@ -104,6 +104,14 @@
         "has_grammar": true
     },
     {
+        "language": "Hungarian",
+        "form": "WS",
+        "file": "raw_data/Hungarian_WS/[Hungarian_WS].csv",
+        "age_min": 12,
+        "age_max": 30,
+        "has_grammar": false
+    },
+    {
         "language": "Italian",
         "form": "WG",
         "file": "raw_data/Italian_WG/[Italian_WG].csv",
