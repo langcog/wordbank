@@ -50,7 +50,7 @@ class ImportHelper:
         if type(value) == str or type(value) == str:
             value = value.strip()
         if not value in self.missing_values:
-            if field_type in ('study_id', 'study_momed', 'study_family_id'):
+            if field_type in ('study_id', 'study_momed', 'study_family_id','language'):
                 return value
             elif field_type in ('birth_order', 'data_age'):
                 return int(float(value))
@@ -58,14 +58,14 @@ class ImportHelper:
                 return value == 'TRUE'
             elif field_type in ('date_of_birth, date_of_test'):
                 return self.format_date(value)
-            elif field_type in ('ethnicity', 'sex', 'mom_ed', 'zygosity') or group == 'item':
+            elif field_type in ('ethnicity', 'sex', 'mom_ed', 'zygosity','condition') or group == 'item':
                 value = self.value_typing(value).lower()
                 if self.splitcol and field_type == 'word':
                     value += column[-1]
                 try:
                     return self.value_mapping[field_type][value]
                 except:
-                    raise KeyError("Value mapping doesn't have entry for field type %s and value %s" % (field_type, value))
+                    raise KeyError(f"Value mapping doesn't have entry for field type { field_type } and value { value }.  { column }")
 
     def resolve_values(self, value0, value1):
         if value0 == 'produces' or value1 == 'produces':
@@ -85,6 +85,10 @@ class ImportHelper:
                 results['momed'] = momed_value
                 study_momed_value = self.get_field_value(column, 'study_momed', group, row_values)
                 results['study_momed'] = study_momed_value
+            if field_type in ['condition','language']:
+                if results[field_type] == None: results[field_type] = []
+                if self.get_field_value(column, field_type, group, row_values) != None:
+                    results[field_type].append(self.get_field_value(column, field_type, group, row_values))
             else:
                 field_value = self.get_field_value(column, field_type, group, row_values)
                 if self.splitcol and field in results:

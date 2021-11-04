@@ -15,10 +15,17 @@ class Command(BaseCommand):
         sources = json.load(open('static/json/datasets.json', encoding="utf8"))
         for source in sources:
 
+            if 'project_group' in source:
+                name = source['project_group']
+            else:
+                name = source['name']+'_'+source['dataset']+'_'+source['instrument_language']+'_'+source['instrument_form']
+            project_group, created = ProjectGroup.objects.get_or_create(name=name)
+
             data_dict = {'contributor': source['contributor'],
                          'citation': source['citation'],
                          'longitudinal': source['longitudinal'],
-                         'license': source['license']
+                         'license': source['license'],
+                         'project_group':project_group,
             }
 
             data_set, created = Source.objects.update_or_create(

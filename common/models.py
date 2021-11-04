@@ -1,5 +1,10 @@
 from django.db import models
 
+from django.core.validators import MaxValueValidator, MinValueValidator
+
+class ProjectGroup(models.Model):
+    name = models.CharField(max_length=251, primary_key=True)
+
 
 class Source(models.Model):
     name = models.CharField(max_length=20)
@@ -12,7 +17,7 @@ class Source(models.Model):
     licenses = (('CC-BY', 'CC BY 4.0'),
                 ('CC-BY-NC', 'CC BY-NC 4.0'))
     license = models.CharField(max_length=15, choices=licenses)
-
+    project_group = models.ForeignKey(ProjectGroup, on_delete=models.CASCADE)
 
 class Instrument(models.Model):
     language = models.CharField(max_length=30)
@@ -27,6 +32,8 @@ class Instrument(models.Model):
     has_grammar = models.BooleanField(default=False)
     unilemma_coverage = models.DecimalField(null=True, max_digits=3, decimal_places=2)
 
+    def __str__(self):
+        return f'{self.language} {self.form}'
 
 class Category(models.Model):
     name = models.CharField(max_length=50)
@@ -60,7 +67,8 @@ class MomEd(models.Model):
 
 class Child(models.Model):
 
-    study_id = models.CharField(max_length=20, null=True)
+    study_id = models.CharField(max_length=201, null=True)
+    project_group = models.ForeignKey(ProjectGroup, on_delete=models.CASCADE)
 
     birth_order = models.IntegerField(null=True, blank=True)
     date_of_birth = models.DateField(null=True, blank=True)
@@ -79,6 +87,20 @@ class Child(models.Model):
 
     study_family_id = models.CharField(max_length=20, null=True)
 
+    conditions = models.ManyToManyField('Condition')
+    born_early_or_late = models.CharField(max_length = 5, choices = (('early', 'early'),('late', 'late')), blank=True, null=True) # Determines if child was born earlier or later than due date
+    birth_weight = models.FloatField(blank=True, null=True) # Declared birthweight in kg (load program must apply calc)
+    gestational_age = models.IntegerField(blank=True, null=True, 
+        validators=[
+            MinValueValidator(25),
+            MaxValueValidator(50)
+        ] )
+
+    def __str__(self):
+        return f'{self.study_id} {self.date_of_birth}'
+    
+    
+
 
 class Administration(models.Model):
     child = models.ForeignKey(Child, on_delete=models.CASCADE)
@@ -92,9 +114,37 @@ class Administration(models.Model):
     production = models.IntegerField(null=True)
     comprehension = models.IntegerField(null=True)
 
+    def __str__(self):
+        return f'{self.instrument} {self.child}'
 
 class CategorySize(models.Model):
     data_id = models.IntegerField()
-    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE, null=True)
     production = models.IntegerField(null=True)
     comprehension = models.IntegerField(null=True)
+
+class Condition(models.Model):
+    name = models.CharField(max_length=51, unique=True)
+
+    def __str__(self):
+        return f'{self.name}'
+
+class LanguageExposure(models.Model):
+    administration = models.ForeignKey(Administration, on_delete=models.CASCADE)
+    language = models.CharField(max_length=51)
+    proportion = models.IntegerField(blank=True, null=True,  #proportion of time on language for this administration
+        validators=[
+            MaxValueValidator(100),
+            MinValueValidator(1)
+        ] )
+    age_of_acquisition = models.IntegerField(blank=True, null=True,  #age in months of language acquisition
+        validators=[
+            MinValueValidator(0),
+            MaxValueValidator(72)
+        ] )
+
+    def __str__(self):
+        return f'{self.administration} {self.language}'
+
+    class Meta:
+        ordering = ['administration']

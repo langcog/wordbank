@@ -56,3 +56,5 @@ from .schemas.Hebrew_WS import *
 from .schemas.Hebrew_WS import *
 from .schemas.Mandarin_Taiwanese_WS import *
 from .schemas.Mandarin_Taiwanese_WG import *
+from .schemas.Henry_Test_Language_WG import *
+from .schemas.Henry_Second_Language_WG import *

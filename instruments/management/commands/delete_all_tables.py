@@ -23,3 +23,4 @@ class Command(BaseCommand):
         Source.objects.all().delete()
         Child.objects.all().delete()
         Administration.objects.all().delete()
+        ProjectGroup.objects.all().delete()
