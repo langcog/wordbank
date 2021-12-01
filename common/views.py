@@ -27,10 +27,10 @@ class Home(View):
         return value
 
     def get(self, request):
-        children = Administration.objects.values('instrument__language', 'source', 'child__study_id').distinct()
+        children = Administration.objects.values('instrument__language', 'dataset', 'child__study_internal_id').distinct()
         num_children = len(children)
         num_children = Child.objects.all().count()
-        child_counts = Counter([child['instrument__language'] for child in children])
+        child_counts = Counter([child['instrument_id__language'] for child in children])
         lang_stats = dict(child_counts)
         num_languages = len(child_counts)
         instruments = Instrument.objects.annotate(n = Count('administration'))

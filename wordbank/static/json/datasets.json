@@ -54,7 +54,7 @@
         "contributor": "Virginia Marchman, Stanford University",
         "license": "CC-BY",
         "citation": "",
-        "project_group": "Marchman Dallas Bilingual"
+        "dataset_origin": "Marchman Dallas Bilingual"
     },
     {
         "name": "Smith",
@@ -100,7 +100,7 @@
     },
     {
         "name": "Thal",
-        "project_group": "Thal",
+        "dataset_origin": "Thal",
         "dataset": "16",
         "instrument_language": "English (American)",
         "instrument_form": "WS",
@@ -115,7 +115,7 @@
     },
     {
         "name": "Thal",
-        "project_group": "Thal",
+        "dataset_origin": "Thal",
         "dataset": "28",
         "instrument_language": "English (American)",
         "instrument_form": "WS",
@@ -158,7 +158,7 @@
     },
     {
         "name": "Thal",
-        "project_group": "Thal",
+        "dataset_origin": "Thal",
         "dataset": "13",
         "instrument_language": "English (American)",
         "instrument_form": "WG",
@@ -173,7 +173,7 @@
     },
     {
         "name": "Thal",
-        "project_group": "Thal",
+        "dataset_origin": "Thal",
         "dataset": "16",
         "instrument_language": "English (American)",
         "instrument_form": "WG",
@@ -213,7 +213,7 @@
         "contributor": "Donna Jackson-Maldonado, Universidad Autónoma de Querétaro",
         "license": "CC-BY",
         "citation": "Jackson-Maldonado, D., Thal, D., Marchman, V., Newton, T., Fenson, L, & Conboy, B. (2003). MacArthur Inventarios del Desarrollo de Habilidades Comunicativas. User´s Guide and Technical Manual. Brookes, Baltimore.",
-        "project_group": "Marchman Dallas Bilingual"
+        "dataset_origin": "Marchman Dallas Bilingual"
     },
     {
         "name": "Marchman",
@@ -1101,7 +1101,7 @@
         "contributor": "Henry Mehta, Hexia Web Services Ltd",
         "license": "CC-BY",
         "citation": "Mehta, H. (2021). This is a test for loading conditions: a Henry Test Language.",
-        "project_group": "Henry"
+        "dataset_origin": "Henry"
     },
     {
         "name": "Henry",
@@ -1115,7 +1115,7 @@
         "contributor": "Henry Mehta, Hexia Web Services Ltd",
         "license": "CC-BY",
         "citation": "Mehta, H. (2021). This is a test for loading conditions: a Henry Test Language.",
-        "project_group": "Henry"
+        "dataset_origin": "Henry"
     }
 ]
 

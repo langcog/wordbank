@@ -597,10 +597,22 @@ class French_French_WG(BaseTable):
     item_294 = models.CharField(max_length=11, choices=item_294_choices, null=True)
     item_295_choices = [('understands', 'understands'), ('produces', 'produces')]
     item_295 = models.CharField(max_length=11, choices=item_295_choices, null=True)
+    item_295_choices = [('understands', 'understands'), ('produces', 'produces')]
+    item_295 = models.CharField(max_length=11, choices=item_295_choices, null=True)
+    item_295_choices = [('understands', 'understands'), ('produces', 'produces')]
+    item_295 = models.CharField(max_length=11, choices=item_295_choices, null=True)
+    item_295_choices = [('understands', 'understands'), ('produces', 'produces')]
+    item_295 = models.CharField(max_length=11, choices=item_295_choices, null=True)
     item_296_choices = [('understands', 'understands'), ('produces', 'produces')]
     item_296 = models.CharField(max_length=11, choices=item_296_choices, null=True)
     item_297_choices = [('understands', 'understands'), ('produces', 'produces')]
     item_297 = models.CharField(max_length=11, choices=item_297_choices, null=True)
+    item_298_choices = [('understands', 'understands'), ('produces', 'produces')]
+    item_298 = models.CharField(max_length=11, choices=item_298_choices, null=True)
+    item_298_choices = [('understands', 'understands'), ('produces', 'produces')]
+    item_298 = models.CharField(max_length=11, choices=item_298_choices, null=True)
+    item_298_choices = [('understands', 'understands'), ('produces', 'produces')]
+    item_298 = models.CharField(max_length=11, choices=item_298_choices, null=True)
     item_298_choices = [('understands', 'understands'), ('produces', 'produces')]
     item_298 = models.CharField(max_length=11, choices=item_298_choices, null=True)
     item_299_choices = [('understands', 'understands'), ('produces', 'produces')]
@@ -613,6 +625,18 @@ class French_French_WG(BaseTable):
     item_302 = models.CharField(max_length=11, choices=item_302_choices, null=True)
     item_303_choices = [('understands', 'understands'), ('produces', 'produces')]
     item_303 = models.CharField(max_length=11, choices=item_303_choices, null=True)
+    item_303_choices = [('understands', 'understands'), ('produces', 'produces')]
+    item_303 = models.CharField(max_length=11, choices=item_303_choices, null=True)
+    item_303_choices = [('understands', 'understands'), ('produces', 'produces')]
+    item_303 = models.CharField(max_length=11, choices=item_303_choices, null=True)
+    item_303_choices = [('understands', 'understands'), ('produces', 'produces')]
+    item_303 = models.CharField(max_length=11, choices=item_303_choices, null=True)
+    item_304_choices = [('understands', 'understands'), ('produces', 'produces')]
+    item_304 = models.CharField(max_length=11, choices=item_304_choices, null=True)
+    item_304_choices = [('understands', 'understands'), ('produces', 'produces')]
+    item_304 = models.CharField(max_length=11, choices=item_304_choices, null=True)
+    item_304_choices = [('understands', 'understands'), ('produces', 'produces')]
+    item_304 = models.CharField(max_length=11, choices=item_304_choices, null=True)
     item_304_choices = [('understands', 'understands'), ('produces', 'produces')]
     item_304 = models.CharField(max_length=11, choices=item_304_choices, null=True)
     item_305_choices = [('understands', 'understands'), ('produces', 'produces')]

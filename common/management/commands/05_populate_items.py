@@ -1,13 +1,9 @@
-import xlrd
-import codecs
-import json
-import re
+import xlrd, json, csv
 from django.core.management.base import BaseCommand
 from common.models import *
-import csv
 
 
-# Populates the ItemInfo and ItemMap models with data from instrument definition files.
+# Populates the Item and UniLemma models with data from instrument definition files.
 # Given no arguments, does so for all instruments in 'static/json/instruments.json'.
 # Given a language with -l and a form with -f, does so for only their Instrument object.
 
@@ -63,23 +59,26 @@ class Command(BaseCommand):
                 get_row = lambda row: contents[row]
             else:
                 raise IOError("Instrument file must be xlsx, xls, or csv.")
-
+            
             for row in range(1, nrows):
                 row_values = get_row(row)
                 if len(row_values) > 1:
                     itemID = row_values[col_names.index('itemID')]
-                    item = row_values[col_names.index('item')]
-                    item_type = row_values[col_names.index('type')]
+                    study_internal_item = row_values[col_names.index('item')]
+                    item_kind = row_values[col_names.index('type')]
+                    
                     item_category = row_values[col_names.index('category')]
-                    category_key = None
-                    if item_type == 'word' and item_category != "":
+                    if item_kind == 'word' and item_category != "":
                         try:
-                            category_key = Category.objects.get(name = item_category)
+                            item_category = ItemCategory.objects.get(category = item_category)
                         except:
                             raise IOError("Can't find category %s in model" % (item_category,))
+                    if item_category == '': item_category = None
 
-                    definition = row_values[col_names.index('definition')]
-                    gloss = row_values[col_names.index('gloss')]
+                    item_definition = row_values[col_names.index('definition')]
+                    english_gloss = row_values[col_names.index('gloss')]
+                    
+                    #TODO category complexity is moved to ItemCategory model
                     if 'complexity_category' in col_names:
                         complexity_category = row_values[col_names.index('complexity_category')]
                     else:
@@ -90,28 +89,28 @@ class Command(BaseCommand):
                         if uni_lemma == "":
                             item_map = None
                         else:
-                            if not ItemMap.objects.filter(uni_lemma=uni_lemma).exists():
-                                ItemMap.objects.create(uni_lemma=uni_lemma)
-                            item_map = ItemMap.objects.get(uni_lemma=uni_lemma)
+                            if not UniLemma.objects.filter(uni_lemma=uni_lemma).exists():
+                                UniLemma.objects.create(uni_lemma=uni_lemma)
+                            item_map = UniLemma.objects.get(uni_lemma=uni_lemma)
 
                     else:
                         item_map = None
 
-                    data_dict = {'item': item,
-                                 'type': item_type,
-                                 'category': category_key,
-                                 'map': item_map,
-                                 'definition': definition,
-                                 'gloss': gloss,
-                                 'complexity_category': complexity_category}
-
-                    cdi_item, created = ItemInfo.objects.update_or_create(
-                            item_id=itemID, instrument=instrument_obj, 
+                    data_dict = {'study_internal_item': study_internal_item,
+                                 'item_kind': item_kind,
+                                 'item_category': item_category,
+                                 'uni_lemma': item_map,
+                                 'item_definition': item_definition,
+                                 'english_gloss': english_gloss}
+                    print(data_dict)
+                    cdi_item, created = Item.objects.update_or_create(
+                            item_id=itemID, 
+                            instrument=instrument_obj, 
                             defaults=data_dict
                     )
-
-            all_words = ItemInfo.objects.filter(instrument=instrument_obj, type='word')
-            all_matched = all_words.exclude(map__isnull=True).exclude(map__exact='')
+            
+            all_words = Item.objects.filter(instrument_id=instrument_obj, item_kind='word')
+            all_matched = all_words.exclude(uni_lemma_id__isnull=True)#.exclude(uni_lemma_id__exact='')
             lemma_coverage = round(float(all_matched.count()) / float(all_words.count()),2)
             instrument_obj.unilemma_coverage = lemma_coverage
             instrument_obj.save()

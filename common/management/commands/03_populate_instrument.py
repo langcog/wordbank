@@ -19,10 +19,13 @@ class Command(BaseCommand):
             instrument_language, instrument_form = instrument['language'], instrument['form']
             instrument_age_min, instrument_age_max = instrument['age_min'], instrument['age_max']
             instrument_has_grammar = instrument['has_grammar']
+            #instrument_unilemma_coverage = instrument['unilemma_coverage']
 
             data_dict = {'age_min': instrument_age_min,
                          'age_max': instrument_age_max,
-                         'has_grammar': instrument_has_grammar}
+                         'has_grammar': instrument_has_grammar,
+                         #'unilemma_coverage': instrument_unilemma_coverage
+                        }
 
             instrument, created = Instrument.objects.update_or_create(
                     language=instrument_language, form=instrument_form, 

@@ -2,7 +2,7 @@ from django.core.management.base import BaseCommand
 from common.models import *
 
 
-# Populates the MomEd model.
+# Populates the CaregiverEducation model.
 class Command(BaseCommand):
 
     def handle(self, *args, **options):
@@ -17,4 +17,4 @@ class Command(BaseCommand):
                      (8, 'Graduate')}
 
         for ed_order, ed_level in ed_levels:
-            MomEd.objects.create(level=ed_level, order=ed_order)
+            CaregiverEducation.objects.create(education_level=ed_level, education_order=ed_order)

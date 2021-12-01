@@ -2,8 +2,8 @@ from django.core.management.base import BaseCommand
 from common.models import *
 
 
-# Given no arguments, deletes all ItemInfo objects and ItemMap objects.
-# Given a language with -l and a form with -f, deletes the ItemInfo objects that correspond to their Instrument object.
+# Given no arguments, deletes all Item objects and UniLemma objects.
+# Given a language with -l and a form with -f, deletes the Item objects that correspond to their Instrument object.
 class Command(BaseCommand):
 
     def add_arguments(self, parser):
@@ -19,9 +19,9 @@ class Command(BaseCommand):
             if Instrument.objects.filter(language=input_language, form=input_form).exists():
                 instrument_obj = Instrument.objects.get(language=input_language, form=input_form)
 
-                ItemInfo.objects.filter(instrument_id = instrument_obj.pk).delete()
+                Item.objects.filter(instrument_id = instrument_obj.pk).delete()
 
         else:
 
-            ItemInfo.objects.all().delete()
-            ItemMap.objects.all().delete()
+            Item.objects.all().delete()
+            UniLemma.objects.all().delete()

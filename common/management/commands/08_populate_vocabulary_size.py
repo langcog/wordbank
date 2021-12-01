@@ -39,7 +39,7 @@ class Command(BaseCommand):
             instrument_string = var_safe(instrument.language) + '_' + var_safe(instrument.form)
             instrument_model = getattr(instruments.models, instrument_string)
             instrument_table = instrument_model._meta.db_table
-            words = [item.item_id for item in ItemInfo.objects.filter(instrument = instrument.pk, type = 'word')]
+            words = [item.item_id for item in Item.objects.filter(instrument = instrument.pk, item_kind = 'word')]
             query = "select basetable_ptr_id, "
 
             prod_query = ''

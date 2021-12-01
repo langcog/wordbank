@@ -52,7 +52,7 @@ class ImportHelper:
         if not value in self.missing_values:
             if field_type in ('study_id', 'study_momed', 'study_family_id','language'):
                 return value
-            elif field_type in ('birth_order', 'data_age'):
+            elif field_type in ('birth_order', 'data_age', 'study_internal_age'):
                 return int(float(value))
             elif field_type in ('norming'):
                 return value == 'TRUE'

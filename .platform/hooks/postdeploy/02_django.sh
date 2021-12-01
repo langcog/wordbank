@@ -12,7 +12,7 @@ python ./manage.py collectstatic --noinput;
 #python ./manage.py populate_instrument
 #python ./manage.py populate_category
 #python ./manage.py populate_items 
-#python ./manage.py populate_momed
+#python ./manage.py populate_caregiver_education
 #python ./manage.py populate_source
 
 #load a specific dataset
