@@ -102,7 +102,6 @@ class Command(BaseCommand):
                                  'uni_lemma': item_map,
                                  'item_definition': item_definition,
                                  'english_gloss': english_gloss}
-                    print(data_dict)
                     cdi_item, created = Item.objects.update_or_create(
                             item_id=itemID, 
                             instrument=instrument_obj, 
