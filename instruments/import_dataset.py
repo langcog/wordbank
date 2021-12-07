@@ -32,7 +32,7 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
             child.sex = child_data['sex']
             child.birth_order = child_data['birth_order']
             if child_data['momed'] is not None:
-                child.caregiver_education, created = CaregiverEducation.objects.get_or_create(education_level__iexact = child_data['momed'])
+                child.caregiver_education = CaregiverEducation.objects.get(education_level__iexact = child_data['momed'])
             child.study_internal_caregiver_education = child_data['study_momed']
             child.ethnicity = child_data['ethnicity']
 
