@@ -73,7 +73,7 @@ class Command(BaseCommand):
                             item_category = ItemCategory.objects.get(category = item_category)
                         except:
                             raise IOError("Can't find category %s in model" % (item_category,))
-                    if item_category == '': item_category = None
+                    else: item_category = None
 
                     item_definition = row_values[col_names.index('definition')]
                     english_gloss = row_values[col_names.index('gloss')]
