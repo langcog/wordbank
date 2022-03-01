@@ -25,11 +25,11 @@ class Command(BaseCommand):
                          'citation': source['citation'],
                          'longitudinal': source['longitudinal'],
                          'license': source['license'],
-                         'dataset_origin': dataset_origin,
             }
 
             instrument = Instrument.objects.get(language=source['instrument_language'], form=source['instrument_form'])
             data_set, created = Dataset.objects.update_or_create(
+                dataset_origin=dataset_origin,
                 dataset_name=source['name'],
                 #source_dataset=source['dataset'],
                 instrument=instrument,

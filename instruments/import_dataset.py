@@ -53,7 +53,8 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
                                                            study_internal_age=administration_data['data_age'])
 
             administration.dataset = Dataset.objects.get(dataset_name=dataset_name,
-                                                      instrument=instruments_map)
+                                                      instrument=instruments_map,
+                                                      dataset_origin=dataset_origin)
 
             if not administration.data_id:
                 instrument_obj = instrument_model.objects.create()
