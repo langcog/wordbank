@@ -462,5 +462,21 @@
         "age_min": 8,
         "age_max": 36,
         "has_grammar": false
+    },
+    {
+        "language": "English (Irish)",
+        "form": "WS",
+        "file": "raw_data/English_Irish_WS/[English_Irish_WS].csv",
+        "age_min": 16,
+        "age_max": 36,
+        "has_grammar": true
+    },
+    {
+        "language": "Irish",
+        "form": "WS",
+        "file": "raw_data/Irish_WS/[Irish_WS].csv",
+        "age_min": 16,
+        "age_max": 36,
+        "has_grammar": true
     }
 ]

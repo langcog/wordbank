@@ -1,0 +1,26 @@
+type,value,data_value
+sex,M,1
+sex,F,0
+ethnicity,,1
+ethnicity,,2
+ethnicity,,3
+ethnicity,,4
+ethnicity,,5
+ethnicity,,6
+mom_ed,none,0
+mom_ed,some secondary,1
+mom_ed,secondary,2
+mom_ed,college,3
+mom_ed,graduate,4
+mom_ed,graduate,5
+word,produces,1
+word,,0
+word_forms_nouns,produces,1
+word_forms_nouns,,0
+word_forms_verbs,produces,1
+word_forms_verbs,,0
+word_endings_nouns,produces,1
+word_endings_nouns,,0
+word_endings_verbs,produces,1
+word_endings_verbs,,0
+mom_ed,none,-997

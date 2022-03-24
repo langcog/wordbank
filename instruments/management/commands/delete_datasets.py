@@ -3,8 +3,6 @@ from django.core.management.base import BaseCommand
 from instruments.import_dataset import import_dataset
 from django.core.mail import send_mail
 
-from common.models import Administration, Dataset, Instrument
-
 # Given no arguments, imports all datasets in 'static/json/datasets.json'.
 # Given a language with -l and a form with -f imports datasets in 'static/json/datasets.json' that have the matching
 # `instrument_language` and `instrument_form`.
@@ -16,7 +14,7 @@ class Command(BaseCommand):
         parser.add_argument('-l', '--language', type=str)
         parser.add_argument('-f', '--form', type=str)
         parser.add_argument('-d', '--dataset', type=str)
-        parser.add_argument('-a', '--file', type=str)
+        parser.add_argument('--file', type=str)
         parser.add_argument('-e', '--email', type=str)
 
     def handle(self, *args, **options):
@@ -25,7 +23,7 @@ class Command(BaseCommand):
 
         datasets = json.load(open('static/json/datasets.json'))
 
-        if options['language'] or options['form'] or options['dataset'] or options['file']:
+        if options['language'] or options['form'] or options['dataset']:
             filter_exps = []
             if options['language']:
                 input_language = options['language']
@@ -39,10 +37,6 @@ class Command(BaseCommand):
                 input_dataset= options['dataset']
                 filter_exps.append("dataset['dataset'] == '%s'" % input_dataset)
 
-            if options['file']:
-                input_dataset= options['file']
-                filter_exps.append("dataset['file'] == '%s'" % input_dataset)
-                
             combined_exps = ' and '.join(filter_exps)
 
             input_datasets = [dataset for dataset in datasets if eval(combined_exps)]
@@ -76,11 +70,6 @@ class Command(BaseCommand):
             msg = f'Importing dataset {instrument_language}, {instrument_form}, {dataset_name}, {dataset_dataset}, {dataset_origin}'
             print(msg)
 
-            # delete current administrations and reload
-            instruments_map = Instrument.objects.get(language=instrument_language, form=instrument_form)
-            Administration.objects.filter(dataset=Dataset.objects.get(dataset_name=dataset_name,
-                                                      instrument=instruments_map,
-                                                      dataset_origin=dataset_origin)).delete()
             import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_language, instrument_form, splitcol, norming, date_format, dataset_origin)
             
             if self.send_email:

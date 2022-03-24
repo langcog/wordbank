@@ -9,7 +9,7 @@ from instruments import import_dataset_helper
 # Given a datasets's name (ex Marchman), dataset (ex Norming), language (ex English), instrument (ex WS), splitcol bool.
 # Uses import_dataset_helper to retrieve the data from that dataset's data file, using its field and value mappings.
 # Creates Child and Administration objects for the entries in the resulting data.
-def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_language, instrument_form, splitcol, norming, date_format, dataset_origin):
+def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_language, instrument_form, splitcol, norming, date_format, dataset_origin_name):
 
         var_safe = lambda s: ''.join([c for c in '_'.join(s.split()) if c in string.ascii_letters + '_'])
         instrument_string = var_safe(instrument_language) + '_' + var_safe(instrument_form)
@@ -27,9 +27,13 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
 
         for i, child_data in import_helper.children.items():
             # initialize the Child here
-            child, created = Child.objects.get_or_create(study_internal_id=child_data['study_id'], dataset_origin=DatasetOrigin.objects.get(dataset_origin_name=dataset_origin))
+            child, created = Child.objects.get_or_create(
+                study_internal_id=child_data['study_id'],
+                dataset_origin=DatasetOrigin.objects.get(dataset_origin_name=dataset_origin_name),
+                sex=child_data['sex'])
+            if not created:
+                print(f"Child {child_data['study_id']} already exists")
             child.date_of_birth = child_data['date_of_birth']
-            child.sex = child_data['sex']
             child.birth_order = child_data['birth_order']
             if child_data['momed'] is not None:
                 child.caregiver_education = CaregiverEducation.objects.get(education_level__iexact = child_data['momed'])
@@ -45,16 +49,18 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
                     pass
         
         for i, administration_data in import_helper.administrations.items():          
-            administration, created = Administration.objects.get_or_create(child=children[i],
-                                                           is_norming=administration_data['norming'],
-                                                           date_of_test=administration_data['date_of_test'],
-                                                           instrument=instruments_map,
-                                                           age=administration_data['age'],
-                                                           study_internal_age=administration_data['data_age'])
-
-            administration.dataset = Dataset.objects.get(dataset_name=dataset_name,
-                                                      instrument=instruments_map,
-                                                      dataset_origin=dataset_origin)
+            administration = Administration(
+                child=children[i],
+                is_norming=administration_data['norming'],
+                date_of_test=administration_data['date_of_test'],
+                instrument=instruments_map,
+                age=administration_data['age'],
+                study_internal_age=administration_data['data_age'],
+                dataset = Dataset.objects.get(
+                    dataset_name=dataset_name,
+                    instrument=instruments_map,
+                    dataset_origin=dataset_origin_name)
+            )
 
             if not administration.data_id:
                 instrument_obj = instrument_model.objects.create()
@@ -70,9 +76,16 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
                 for language in administration_data['language']:
                     lang, prop, age = language.split(';')
                     try:
-                        if not int(age): age = None
-                    except:
+                        if not int(age):
+                            age = None
+                    except Exception:
                         age = None
+                    try:
+                        if not int(prop): 
+                            prop = None
+                    except Exception:
+                        prop = None
+
                     l, created = LanguageExposure.objects.get_or_create(
                         administration=administration,
                         language=lang,

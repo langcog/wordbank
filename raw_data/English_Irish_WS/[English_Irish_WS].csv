@@ -1,0 +1,662 @@
+item,itemID,complexity_category,choices,type,definition,gloss,uni_lemma,is_both,category,lexical_class
+ahah,item_1,SOUND EFFECTS AND ANIMAL NOISES ,produces; doesn't produce,word,ahah,ahah,,1,sounds,other
+baabaa,item_2,SOUND EFFECTS AND ANIMAL NOISES ,produces; doesn't produce,word,baabaa,baa baa,baa baa,1,sounds,other
+bowwow,item_3,SOUND EFFECTS AND ANIMAL NOISES ,produces; doesn't produce,word,bowwow,bow wow,woof woof,1,sounds,other
+choochoo,item_4,SOUND EFFECTS AND ANIMAL NOISES ,produces; doesn't produce,word,choochoo,choo choo,choo choo,1,sounds,other
+cockadoodledoo,item_5,SOUND EFFECTS AND ANIMAL NOISES ,produces; doesn't produce,word,cockadoodledoo,cockadoodledoo,cockadoodledoo,1,sounds,other
+grr,item_6,SOUND EFFECTS AND ANIMAL NOISES ,produces; doesn't produce,word,grr,grr,grrr,1,sounds,other
+meow,item_7,SOUND EFFECTS AND ANIMAL NOISES ,produces; doesn't produce,word,meow,meow,meow,1,sounds,other
+moo,item_8,SOUND EFFECTS AND ANIMAL NOISES ,produces; doesn't produce,word,moo,moo,moo,1,sounds,other
+ouch,item_9,SOUND EFFECTS AND ANIMAL NOISES ,produces; doesn't produce,word,ouch,ouch,ouch,1,sounds,other
+quackquack,item_10,SOUND EFFECTS AND ANIMAL NOISES ,produces; doesn't produce,word,quackquack,quack quack,quack quack,1,sounds,other
+uhoh,item_11,SOUND EFFECTS AND ANIMAL NOISES ,produces; doesn't produce,word,uhoh,uhoh,uh oh,1,sounds,other
+vroom,item_12,SOUND EFFECTS AND ANIMAL NOISES ,produces; doesn't produce,word,vroom,vroom,vroom,1,sounds,other
+yumyum,item_13,SOUND EFFECTS AND ANIMAL NOISES ,produces; doesn't produce,word,yumyum,yum yum,yum yum,1,sounds,other
+animal,item_15,ANIMALS (Real or toy),produces; doesn't produce,word,animal,animal,animal,0,animals,nouns
+donkey,item_17,ANIMALS (Real or toy),produces; doesn't produce,word,donkey,donkey,donkey,0,animals,nouns
+bee,item_19,ANIMALS (Real or toy),produces; doesn't produce,word,bee,bee,bee,0,animals,nouns
+cow,item_22,ANIMALS (Real or toy),produces; doesn't produce,word,cow,cow,cow,0,animals,nouns
+ladybird,item_24,ANIMALS (Real or toy),produces; doesn't produce,word,ladybird,ladybird,ladybug,0,animals,nouns
+sheep,item_26,ANIMALS (Real or toy),produces; doesn't produce,word,sheep,sheep,sheep,0,animals,nouns
+pony,item_28,ANIMALS (Real or toy),produces; doesn't produce,word,pony,pony,pony,0,animals,nouns
+horse,item_30,ANIMALS (Real or toy),produces; doesn't produce,word,horse,horse,horse,0,animals,nouns
+hen,item_33,ANIMALS (Real or toy),produces; doesn't produce,word,hen,hen,hen,0,animals,nouns
+cock,item_35,ANIMALS (Real or toy),produces; doesn't produce,word,cock,cock,rooster,0,animals,nouns
+puppy,item_37,ANIMALS (Real or toy),produces; doesn't produce,word,puppy,puppy,puppy,0,animals,nouns
+rabbit,item_39,ANIMALS (Real or toy),produces; doesn't produce,word,rabbit,rabbit,rabbit,0,animals,nouns
+fly,item_41,ANIMALS (Real or toy),produces; doesn't produce,word,fly,fly,fly (animal),0,animals,nouns
+spider,item_43,ANIMALS (Real or toy),produces; doesn't produce,word,spider,spider,spider,0,animals,nouns
+swan,item_45,ANIMALS (Real or toy),produces; doesn't produce,word,swan,swan,swan,0,animals,nouns
+bird,item_47,ANIMALS (Real or toy),produces; doesn't produce,word,bird,bird,bird,0,animals,nouns
+seagull,item_50,ANIMALS (Real or toy),produces; doesn't produce,word,seagull,seagull,seagull,0,animals,nouns
+butterfly,item_52,ANIMALS (Real or toy),produces; doesn't produce,word,butterfly,butterfly,butterfly,0,animals,nouns
+deer,item_54,ANIMALS (Real or toy),produces; doesn't produce,word,deer,deer,deer,0,animals,nouns
+goat,item_57,ANIMALS (Real or toy),produces; doesn't produce,word,goat,goat,goat,0,animals,nouns
+goose,item_59,ANIMALS (Real or toy),produces; doesn't produce,word,goose,goose,goose,0,animals,nouns
+fish,item_61,ANIMALS (Real or toy),produces; doesn't produce,word,fish,fish,fish (animal),0,animals,nouns
+duck,item_63,ANIMALS (Real or toy),produces; doesn't produce,word,duck,duck,duck,0,animals,nouns
+calf,item_65,ANIMALS (Real or toy),produces; doesn't produce,word,calf,calf,calf (animal),0,animals,nouns
+lion,item_67,ANIMALS (Real or toy),produces; doesn't produce,word,lion,lion,lion,0,animals,nouns
+mouse,item_69,ANIMALS (Real or toy),produces; doesn't produce,word,mouse,mouse,mouse,0,animals,nouns
+wolf,item_71,ANIMALS (Real or toy),produces; doesn't produce,word,wolf,wolf,wolf,0,animals,nouns
+fox,item_73,ANIMALS (Real or toy),produces; doesn't produce,word,fox,fox,fox,0,animals,nouns
+dog,item_75,ANIMALS (Real or toy),produces; doesn't produce,word,dog,dog,dog,0,animals,nouns
+pig,item_78,ANIMALS (Real or toy),produces; doesn't produce,word,pig,pig,pig,0,animals,nouns
+snake,item_80,ANIMALS (Real or toy),produces; doesn't produce,word,snake,snake,snake,0,animals,nouns
+penguin,item_82,ANIMALS (Real or toy),produces; doesn't produce,word,penguin,penguin,penguin,0,animals,nouns
+kitten,item_84,ANIMALS (Real or toy),produces; doesn't produce,word,kitten_apussycat,kitten,kitten,0,animals,nouns
+crow,item_86,ANIMALS (Real or toy),produces; doesn't produce,word,crow,crow,crow,0,animals,nouns
+zebra,item_88,ANIMALS (Real or toy),produces; doesn't produce,word,zebra,zebra,zebra,0,animals,nouns
+snail,item_90,ANIMALS (Real or toy),produces; doesn't produce,word,snail,snail,snail,0,animals,nouns
+chicken,item_92,ANIMALS (Real or toy),produces; doesn't produce,word,chicken,chicken,chicken (animal),0,animals,nouns
+giraffe,item_94,ANIMALS (Real or toy),produces; doesn't produce,word,giraffe,giraffe,giraffe,0,animals,nouns
+robin,item_96,ANIMALS (Real or toy),produces; doesn't produce,word,robin,robin,robin,0,animals,nouns
+tiger,item_99,ANIMALS (Real or toy),produces; doesn't produce,word,tiger,tiger,tiger,0,animals,nouns
+lamb,item_102,ANIMALS (Real or toy),produces; doesn't produce,word,lamb,lamb,lamb,0,animals,nouns
+boat,item_104,VEHICLES (Real or toy),produces; doesn't produce,word,boat,boat,boat,0,vehicles,nouns
+car,item_107,VEHICLES (Real or toy),produces; doesn't produce,word,car,car,car,0,vehicles,nouns
+aeroplane,item_109,VEHICLES (Real or toy),produces; doesn't produce,word,aeroplane,aeroplane,airplane,0,vehicles,nouns
+motorbike,item_111,VEHICLES (Real or toy),produces; doesn't produce,word,motorbike,motorbike,motorcycle,0,vehicles,nouns
+héileacaptar,item_112,VEHICLES (Real or toy),produces; doesn't produce,word,héileacaptar_helicopter,helicopter,helicopter,1,vehicles,nouns
+lorry,item_115,VEHICLES (Real or toy),produces; doesn't produce,word,lorry,lorry,truck,0,vehicles,nouns
+ship,item_116,VEHICLES (Real or toy),produces; doesn't produce,word,ship,ship,boat,0,vehicles,nouns
+ambulance,item_118,VEHICLES (Real or toy),produces; doesn't produce,word,ambulance,ambulance,ambulance,0,vehicles,nouns
+bike,item_121,VEHICLES (Real or toy),produces; doesn't produce,word,bike_bicycle,bike,bicycle,0,vehicles,nouns
+tractor,item_123,VEHICLES (Real or toy),produces; doesn't produce,word,tractor,tractor,tractor,0,vehicles,nouns
+digger,item_125,VEHICLES (Real or toy),produces; doesn't produce,word,digger,digger,digger,0,vehicles,nouns
+truck,item_127,VEHICLES (Real or toy),produces; doesn't produce,word,truck_trucail,truck,truck,0,vehicles,nouns
+doll,item_130,TOYS,produces; doesn't produce,word,doll,doll,doll,0,toys,nouns
+blocks,item_133,TOYS,produces; doesn't produce,word,blocks,blocks,block,0,toys,nouns
+bubbles,item_135,TOYS,produces; doesn't produce,word,bubbles,bubbles,bubbles,0,toys,nouns
+toy,item_137,TOYS,produces; doesn't produce,word,toy,toy,toy (object),0,toys,nouns
+present,item_139,TOYS,produces; doesn't produce,word,present,present,present,0,toys,nouns
+hurley,item_141,TOYS,produces; doesn't produce,word,hurley,hurley,,0,toys,nouns
+game,item_143,TOYS,produces; doesn't produce,word,game,game,game,0,toys,nouns
+crayon,item_144,TOYS,produces; doesn't produce,word,crayon_crián,crayon,crayon,1,toys,nouns
+drum,item_147,TOYS,produces; doesn't produce,word,drum,drum,drum,0,toys,nouns
+gliú,item_148,TOYS,produces; doesn't produce,word,gliú_glue_ie,glue,glue,1,toys,nouns
+gun,item_150,TOYS,produces; doesn't produce,word,gun,gun,gun,0,toys,nouns
+book,item_152,TOYS,produces; doesn't produce,word,book,book,book,0,toys,nouns
+(foot)ball,item_154,TOYS,produces; doesn't produce,word,(foot)ball,(foot)ball,ball,0,toys,nouns
+jigsaw,item_156,TOYS,produces; doesn't produce,word,jigsaw,jigsaw,puzzle,0,toys,nouns
+pen,item_158,TOYS,produces; doesn't produce,word,pen,pen,pen,0,toys,nouns
+pencil,item_160,TOYS,produces; doesn't produce,word,pencil,pencil,pencil,0,toys,nouns
+story,item_162,TOYS,produces; doesn't produce,word,story,story,story,0,toys,nouns
+soup,item_165,FOOD AND DRINK,produces; doesn't produce,word,soup,soup,soup,0,food_drink,nouns
+bread,item_167,FOOD AND DRINK,produces; doesn't produce,word,bread,bread,bread,0,food_drink,nouns
+bacon,item_169,FOOD AND DRINK,produces; doesn't produce,word,bacon,bacon,bacon,0,food_drink,nouns
+milk,item_171,FOOD AND DRINK,produces; doesn't produce,word,milk,milk,milk,0,food_drink,nouns
+food,item_174,FOOD AND DRINK,produces; doesn't produce,word,food,food,food,0,food_drink,nouns
+muffin,item_176,FOOD AND DRINK,produces; doesn't produce,word,muffin,muffin,muffin,0,food_drink,nouns
+biscuit,item_179,FOOD AND DRINK,produces; doesn't produce,word,biscuit,biscuit,biscuit,0,food_drink,nouns
+cabbage,item_181,FOOD AND DRINK,produces; doesn't produce,word,cabbage,cabbage,cabbage,0,food_drink,nouns
+cake,item_183,FOOD AND DRINK,produces; doesn't produce,word,cake,cake,cake,0,food_drink,nouns
+carrot,item_186,FOOD AND DRINK,produces; doesn't produce,word,carrot_carrots,carrot,carrot,0,food_drink,nouns
+cheese,item_188,FOOD AND DRINK,produces; doesn't produce,word,cheese,cheese,cheese,0,food_drink,nouns
+cornflakes,item_190,FOOD AND DRINK,produces; doesn't produce,word,cornflakes,cornflakes,cereal,0,food_drink,nouns
+grapes,item_192,FOOD AND DRINK,produces; doesn't produce,word,grapes,grapes,grapes,0,food_drink,nouns
+sandwich,item_194,FOOD AND DRINK,produces; doesn't produce,word,sandwich,sandwich,sandwich,0,food_drink,nouns
+chickennuggets,item_196,FOOD AND DRINK,produces; doesn't produce,word,chickennuggets,chicken nuggets,nuggets,0,food_drink,nouns
+nuts,item_198,FOOD AND DRINK,produces; doesn't produce,word,nuts,nuts,nuts,0,food_drink,nouns
+crisps,item_201,FOOD AND DRINK,produces; doesn't produce,word,crisps_Taytos,crisps,chips,0,food_drink,nouns
+cucumber,item_202,FOOD AND DRINK,produces; doesn't produce,word,cucumber_cúcamar,cucumber,cucumber,1,food_drink,nouns
+drink,item_204,FOOD AND DRINK,produces; doesn't produce,word,drink,drink,drink (beverage),0,food_drink,nouns
+donut,item_206,FOOD AND DRINK,produces; doesn't produce,word,donut_ie,donut,donut,0,food_drink,nouns
+meat,item_208,FOOD AND DRINK,produces; doesn't produce,word,meat,meat,meat,0,food_drink,nouns
+jelly,item_210,FOOD AND DRINK,produces; doesn't produce,word,jelly,jelly,jelly,0,food_drink,nouns
+fish,item_212,FOOD AND DRINK,produces; doesn't produce,word,fish,fish,fish (food),0,food_drink,nouns
+butter,item_214,FOOD AND DRINK,produces; doesn't produce,word,butter,butter,butter,0,food_drink,nouns
+yoghurt,item_215,FOOD AND DRINK,produces; doesn't produce,word,yoghurt_iógairt,yoghurt,yogurt,1,food_drink,nouns
+sausages,item_217,FOOD AND DRINK,produces; doesn't produce,word,sausages,sausages,sausage,0,food_drink,nouns
+porridge,item_219,FOOD AND DRINK,produces; doesn't produce,word,porridge,porridge,porridge,0,food_drink,nouns
+ham,item_221,FOOD AND DRINK,produces; doesn't produce,word,ham,ham,ham,0,food_drink,nouns
+lollipop,item_223,FOOD AND DRINK,produces; doesn't produce,word,lollipop,lollipop,lollipop,0,food_drink,nouns
+honey,item_225,FOOD AND DRINK,produces; doesn't produce,word,honey,honey,honey,0,food_drink,nouns
+sweets,item_227,FOOD AND DRINK,produces; doesn't produce,word,sweets,sweets,candy,0,food_drink,nouns
+orange,item_229,FOOD AND DRINK,produces; doesn't produce,word,orange,orange,orange (food),0,food_drink,nouns
+pancake,item_231,FOOD AND DRINK,produces; doesn't produce,word,pancake,pancake,pancake,0,food_drink,nouns
+pear,item_234,FOOD AND DRINK,produces; doesn't produce,word,pear,pear,pear,0,food_drink,nouns
+peas,item_237,FOOD AND DRINK,produces; doesn't produce,word,peas,peas,peas,0,food_drink,nouns
+beans,item_239,FOOD AND DRINK,produces; doesn't produce,word,beans,beans,beans,0,food_drink,nouns
+potato,item_241,FOOD AND DRINK,produces; doesn't produce,word,potato,potato,potato,0,food_drink,nouns
+icepop,item_243,FOOD AND DRINK,produces; doesn't produce,word,icepop,icepop,popsicle,0,food_drink,nouns
+raisin,item_245,FOOD AND DRINK,produces; doesn't produce,word,raisin,raisin,raisin,0,food_drink,nouns
+salt,item_247,FOOD AND DRINK,produces; doesn't produce,word,salt,salt,salt,0,food_drink,nouns
+chips,item_249,FOOD AND DRINK,produces; doesn't produce,word,chips,chips,chips,0,food_drink,nouns
+chocolate,item_251,FOOD AND DRINK,produces; doesn't produce,word,chocolate,chocolate,chocolate,0,food_drink,nouns
+rashers,item_253,FOOD AND DRINK,produces; doesn't produce,word,rashers,rashers,,0,food_drink,nouns
+strawberry,item_256,FOOD AND DRINK,produces; doesn't produce,word,strawberry,strawberry,strawberry,0,food_drink,nouns
+juice,item_258,FOOD AND DRINK,produces; doesn't produce,word,juice,juice,juice,0,food_drink,nouns
+jam,item_260,FOOD AND DRINK,produces; doesn't produce,word,jam,jam,jam,0,food_drink,nouns
+tea,item_262,FOOD AND DRINK,produces; doesn't produce,word,tea,tea,tea,0,food_drink,nouns
+turnip,item_264,FOOD AND DRINK,produces; doesn't produce,word,turnip,turnip,turnip,0,food_drink,nouns
+toast,item_266,FOOD AND DRINK,produces; doesn't produce,word,toast,toast,toast,0,food_drink,nouns
+tomato,item_268,FOOD AND DRINK,produces; doesn't produce,word,tomato,tomato,tomato,0,food_drink,nouns
+icecream,item_270,FOOD AND DRINK,produces; doesn't produce,word,icecream,icecream,ice cream,0,food_drink,nouns
+egg,item_272,FOOD AND DRINK,produces; doesn't produce,word,egg,egg,egg,0,food_drink,nouns
+water,item_274,FOOD AND DRINK,produces; doesn't produce,word,water,water,water (beverage),0,food_drink,nouns
+apple,item_276,FOOD AND DRINK,produces; doesn't produce,word,apple,apple,apple,0,food_drink,nouns
+bib,item_278,CLOTHES,produces; doesn't produce,word,bib,bib,bib,0,clothing,nouns
+trousers,item_280,CLOTHES,produces; doesn't produce,word,trousers,trousers,pants,0,clothing,nouns
+shorts,item_282,CLOTHES,produces; doesn't produce,word,shorts,shorts,shorts,0,clothing,nouns
+shoes,item_284,CLOTHES,produces; doesn't produce,word,shoes,shoes,shoes,0,clothing,nouns
+runners,item_286,CLOTHES,produces; doesn't produce,word,runners,runners,shoes,0,clothing,nouns
+boots,item_288,CLOTHES,produces; doesn't produce,word,boots_wellies,boots,boots,0,clothing,nouns
+cap,item_290,CLOTHES,produces; doesn't produce,word,cap,cap,hat,0,clothing,nouns
+cardigan,item_291,CLOTHES,produces; doesn't produce,word,cardigan_cairdeagan_ie,cardigan,sweater,1,clothing,nouns
+nappy,item_293,CLOTHES,produces; doesn't produce,word,nappy,nappy,diaper,0,clothing,nouns
+button,item_295,CLOTHES,produces; doesn't produce,word,button,button,button,0,clothing,nouns
+coat,item_297,CLOTHES,produces; doesn't produce,word,coat,coat,coat,0,clothing,nouns
+belt,item_299,CLOTHES,produces; doesn't produce,word,belt,belt,belt,0,clothing,nouns
+pijamas,item_301,CLOTHES,produces; doesn't produce,word,pijamas,pijamas,pajamas,0,clothing,nouns
+swimmingtogs,item_303,CLOTHES,produces; doesn't produce,word,swimmingtogs,swimming costume,,0,clothing,nouns
+clothes,item_305,CLOTHES,produces; doesn't produce,word,clothes,clothes,clothes,0,clothing,nouns
+ring,item_307,CLOTHES,produces; doesn't produce,word,ring,ring,ring (object),0,clothing,nouns
+underpants,item_309,CLOTHES,produces; doesn't produce,word,underpants,underpants,underpants,0,clothing,nouns
+jumper,item_311,CLOTHES,produces; doesn't produce,word,jumper,jumper,sweater,0,clothing,nouns
+dress,item_313,CLOTHES,produces; doesn't produce,word,dress,dress,dress,0,clothing,nouns
+hat,item_315,CLOTHES,produces; doesn't produce,word,hat,hat,hat,0,clothing,nouns
+gloves,item_317,CLOTHES,produces; doesn't produce,word,gloves_mittens,gloves,gloves,0,clothing,nouns
+shirt,item_319,CLOTHES,produces; doesn't produce,word,shirt,shirt,shirt,0,clothing,nouns
+tights,item_321,CLOTHES,produces; doesn't produce,word,tights,tights,tights,0,clothing,nouns
+skirt,item_324,CLOTHES,produces; doesn't produce,word,skirt,skirt,skirt,0,clothing,nouns
+jacket,item_326,CLOTHES,produces; doesn't produce,word,jacket,jacket,jacket,0,clothing,nouns
+zip,item_327,CLOTHES,produces; doesn't produce,word,zip_sip_ie,zip,zipper,1,clothing,nouns
+slipper,item_329,CLOTHES,produces; doesn't produce,word,slipper,slipper,slipper,0,clothing,nouns
+glasses,item_331,CLOTHES,produces; doesn't produce,word,glasses,glasses,glasses,0,clothing,nouns
+socks,item_333,CLOTHES,produces; doesn't produce,word,socks,socks,sock,0,clothing,nouns
+tshirt,item_335,CLOTHES,produces; doesn't produce,word,tshirt,tshirt,t-shirt,0,clothing,nouns
+vest,item_337,CLOTHES,produces; doesn't produce,word,vest,vest,vest,0,clothing,nouns
+face,item_339,BODY PARTS,produces; doesn't produce,word,face,face,face,0,body_parts,nouns
+toes,item_341,BODY PARTS,produces; doesn't produce,word,toes,toes,toe,0,body_parts,nouns
+mouth,item_343,BODY PARTS,produces; doesn't produce,word,mouth,mouth,mouth,0,body_parts,nouns
+lips,item_345,BODY PARTS,produces; doesn't produce,word,lips,lips,lips,0,body_parts,nouns
+tummy,item_347,BODY PARTS,produces; doesn't produce,word,tummy_stomach,tummy,tummy,0,body_parts,nouns
+head,item_349,BODY PARTS,produces; doesn't produce,word,head,head,head,0,body_parts,nouns
+ears,item_351,BODY PARTS,produces; doesn't produce,word,ears,ears,ear,0,body_parts,nouns
+foot,item_353,BODY PARTS,produces; doesn't produce,word,foot,foot,foot,0,body_parts,nouns
+back,item_355,BODY PARTS,produces; doesn't produce,word,back,back,back,0,body_parts,nouns
+teeth,item_357,BODY PARTS,produces; doesn't produce,word,teeth,teeth,tooth,0,body_parts,nouns
+knee,item_359,BODY PARTS,produces; doesn't produce,word,knee,knee,knee,0,body_parts,nouns
+hair,item_361,BODY PARTS,produces; doesn't produce,word,hair,hair,hair,0,body_parts,nouns
+shoulder(s),item_363,BODY PARTS,produces; doesn't produce,word,shoulder(s),shoulder(s),shoulder,0,body_parts,nouns
+hand,item_365,BODY PARTS,produces; doesn't produce,word,hand,hand,hand,0,body_parts,nouns
+cheek,item_367,BODY PARTS,produces; doesn't produce,word,cheek,cheek,cheek,0,body_parts,nouns
+eyebrow,item_370,BODY PARTS,produces; doesn't produce,word,eyebrow,eyebrow,eyebrow,0,body_parts,nouns
+finger,item_372,BODY PARTS,produces; doesn't produce,word,finger,finger,finger,0,body_parts,nouns
+neck,item_374,BODY PARTS,produces; doesn't produce,word,neck,neck,neck,0,body_parts,nouns
+thumb,item_376,BODY PARTS,produces; doesn't produce,word,thumb,thumb,thumb,0,body_parts,nouns
+willy,item_378,BODY PARTS,produces; doesn't produce,word,willy,willy,penis,0,body_parts,nouns
+chin,item_380,BODY PARTS,produces; doesn't produce,word,chin,chin,chin,0,body_parts,nouns
+nose,item_382,BODY PARTS,produces; doesn't produce,word,nose,nose,nose,0,body_parts,nouns
+throat,item_384,BODY PARTS,produces; doesn't produce,word,throat,throat,throat,0,body_parts,nouns
+eye,item_386,BODY PARTS,produces; doesn't produce,word,eye,eye,eye,0,body_parts,nouns
+tongue,item_388,BODY PARTS,produces; doesn't produce,word,tongue,tongue,tongue,0,body_parts,nouns
+bottom,item_390,BODY PARTS,produces; doesn't produce,word,bottom,bottom,butt,0,body_parts,nouns
+elbow,item_392,BODY PARTS,produces; doesn't produce,word,elbow,elbow,elbow,0,body_parts,nouns
+money,item_394,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,money,money,money,0,household,nouns
+bowl,item_396,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,bowl,bowl,bowl,0,household,nouns
+basket,item_398,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,basket,basket,basket,0,household,nouns
+blanket,item_400,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,blanket,blanket,blanket,0,household,nouns
+table,item_402,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,table,table,table,0,household,nouns
+box,item_404,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,box,box,box,0,household,nouns
+dustbin,item_406,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,dustbin,dustbin,bin,0,household,nouns
+rubbish,item_408,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,rubbish,rubbish,trash,0,household,nouns
+bucket,item_410,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,bucket,bucket,bucket,0,household,nouns
+bottle,item_412,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,bottle,bottle,bottle,0,household,nouns
+hammer,item_414,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,hammer,hammer,hammer,0,household,nouns
+camera,item_416,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,camera,camera,camera,0,household,nouns
+comb,item_418,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,comb,comb,comb (object),0,household,nouns
+tissue,item_421,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,tissue,tissue,tissue,0,household,nouns
+hoover,item_423,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,hoover,hoover,vacuum cleaner,0,household,nouns
+mobilephone,item_425,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,mobilephone,mobile phone,telephone,0,household,nouns
+soap,item_428,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,soap,soap,soap,0,household,nouns
+glass,item_430,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,glass,glass,glass,0,household,nouns
+lamp,item_432,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,lamp,lamp,lamp,0,household,nouns
+medicine,item_434,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,medicine,medicine,medicine,0,household,nouns
+bag,item_436,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,bag,bag,bag,0,household,nouns
+map,item_438,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,map,map,map,0,household,nouns
+mug,item_440,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,mug,mug,cup,0,household,nouns
+paper,item_442,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,paper,paper,paper,0,household,nouns
+penny,item_444,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,penny_cent,penny,penny,0,household,nouns
+picture,item_446,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,picture,picture,picture,0,household,nouns
+saucepan,item_449,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,saucepan,saucepan,pan,0,household,nouns
+mirror,item_451,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,mirror,mirror,mirror,0,household,nouns
+knife,item_453,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,knife,knife,knife,0,household,nouns
+tap,item_455,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,tap,tap,faucet,0,household,nouns
+brush,item_457,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,brush,brush,brush (object),0,household,nouns
+toothbrush,item_459,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,toothbrush,toothbrush,toothbrush,0,household,nouns
+shampooie,item_460,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,shampooie,shampoo,shampoo,1,household,nouns
+scissors,item_462,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,scissors,scissors,scissors,0,household,nouns
+light,item_464,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,light,light,light (object),0,household,nouns
+spoon,item_466,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,spoon,spoon,spoon,0,household,nouns
+teapot,item_468,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,teapot,teapot,teapot,0,household,nouns
+toothpaste,item_470,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,toothpaste,toothpaste,toothpaste,0,household,nouns
+telephone,item_472,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,telephone,telephone,telephone,0,household,nouns
+clock,item_474,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,clock,clock,clock,0,household,nouns
+jug,item_476,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,jug,jug,jug,0,household,nouns
+cup,item_478,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,cup,cup,cup,0,household,nouns
+key,item_480,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,key_s,key,key,0,household,nouns
+pillow,item_482,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,pillow,pillow,pillow,0,household,nouns
+plant,item_484,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,plant,plant,plant,0,household,nouns
+plate,item_486,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,plate,plate,plate,0,household,nouns
+pot,item_488,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,pot,pot,potty,0,household,nouns
+tape,item_489,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,tape_téip_DVD,tape,tape,1,household,nouns
+towel,item_491,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,towel,towel,towel,0,household,nouns
+watch,item_493,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,watch,watch,watch (object),0,household,nouns
+cot,item_495,FURNITURE AND ROOMS,produces; doesn't produce,word,cot,cot,crib,0,furniture_rooms,nouns
+chair,item_497,FURNITURE AND ROOMS,produces; doesn't produce,word,chair,chair,chair,0,furniture_rooms,nouns
+highchair,item_499,FURNITURE AND ROOMS,produces; doesn't produce,word,highchair,highchair,high chair,0,furniture_rooms,nouns
+kitchen,item_501,FURNITURE AND ROOMS,produces; doesn't produce,word,kitchen,kitchen,kitchen,0,furniture_rooms,nouns
+shower,item_503,FURNITURE AND ROOMS,produces; doesn't produce,word,shower,shower,shower,0,furniture_rooms,nouns
+cupboard,item_505,FURNITURE AND ROOMS,produces; doesn't produce,word,cupboard_press,cupboard,cupboard,0,furniture_rooms,nouns
+fridge,item_507,FURNITURE AND ROOMS,produces; doesn't produce,word,fridge,fridge,refrigerator,0,furniture_rooms,nouns
+sink,item_509,FURNITURE AND ROOMS,produces; doesn't produce,word,sink,sink,sink,0,furniture_rooms,nouns
+door,item_511,FURNITURE AND ROOMS,produces; doesn't produce,word,door,door,door,0,furniture_rooms,nouns
+bath,item_513,FURNITURE AND ROOMS,produces; doesn't produce,word,bath,bath,bath,0,furniture_rooms,nouns
+window,item_515,FURNITURE AND ROOMS,produces; doesn't produce,word,window,window,window,0,furniture_rooms,nouns
+garage,item_517,FURNITURE AND ROOMS,produces; doesn't produce,word,garage,garage,garage,0,furniture_rooms,nouns
+bed,item_519,FURNITURE AND ROOMS,produces; doesn't produce,word,bed,bed,bed,0,furniture_rooms,nouns
+toilet,item_521,FURNITURE AND ROOMS,produces; doesn't produce,word,toilet,toilet,toilet,0,furniture_rooms,nouns
+washingmachine,item_523,FURNITURE AND ROOMS,produces; doesn't produce,word,washingmachine,washing machine,washing machine,0,furniture_rooms,nouns
+oven,item_525,FURNITURE AND ROOMS,produces; doesn't produce,word,oven,oven,oven,0,furniture_rooms,nouns
+potty,item_527,FURNITURE AND ROOMS,produces; doesn't produce,word,potty,potty,potty,0,furniture_rooms,nouns
+room,item_529,FURNITURE AND ROOMS,produces; doesn't produce,word,room,room,room,0,furniture_rooms,nouns
+bathroom,item_531,FURNITURE AND ROOMS,produces; doesn't produce,word,bathroom,bathroom,bathroom,0,furniture_rooms,nouns
+bedroom,item_533,FURNITURE AND ROOMS,produces; doesn't produce,word,bedroom,bedroom,bedroom,0,furniture_rooms,nouns
+sittingroom,item_535,FURNITURE AND ROOMS,produces; doesn't produce,word,sittingroom,sitting room,living room,0,furniture_rooms,nouns
+playroom,item_537,FURNITURE AND ROOMS,produces; doesn't produce,word,playroom,playroom,playroom,0,furniture_rooms,nouns
+cooker,item_539,FURNITURE AND ROOMS,produces; doesn't produce,word,cooker,cooker,stove,0,furniture_rooms,nouns
+stairs,item_541,FURNITURE AND ROOMS,produces; doesn't produce,word,stairs,stairs,stairs,0,furniture_rooms,nouns
+stool,item_543,FURNITURE AND ROOMS,produces; doesn't produce,word,stool,stool,chair,0,furniture_rooms,nouns
+drawer,item_545,FURNITURE AND ROOMS,produces; doesn't produce,word,drawer,drawer,drawer,0,furniture_rooms,nouns
+television,item_547,FURNITURE AND ROOMS,produces; doesn't produce,word,television,television,tv,0,furniture_rooms,nouns
+fire,item_549,FURNITURE AND ROOMS,produces; doesn't produce,word,fire,fire,fire,0,furniture_rooms,nouns
+couch,item_551,FURNITURE AND ROOMS,produces; doesn't produce,word,couch_sofa,couch,couch,0,furniture_rooms,nouns
+floor,item_553,FURNITURE AND ROOMS,produces; doesn't produce,word,floor,floor,floor,0,furniture_rooms,nouns
+rain,item_555,OUTSIDE THINGS,produces; doesn't produce,word,rain,rain,rain,0,outside,nouns
+stick,item_557,OUTSIDE THINGS,produces; doesn't produce,word,stick,stick,stick,0,outside,nouns
+flower,item_559,OUTSIDE THINGS,produces; doesn't produce,word,flower,flower,flower,0,outside,nouns
+shed,item_561,OUTSIDE THINGS,produces; doesn't produce,word,shed,shed,shed,0,outside,nouns
+road,item_563,OUTSIDE THINGS,produces; doesn't produce,word,road,road,road,0,outside,nouns
+flag,item_565,OUTSIDE THINGS,produces; doesn't produce,word,flag,flag,flag,0,outside,nouns
+bucket,item_567,OUTSIDE THINGS,produces; doesn't produce,word,bucket,bucket,bucket,0,outside,nouns
+rock,item_569,OUTSIDE THINGS,produces; doesn't produce,word,rock,rock,rock (object),0,outside,nouns
+fog,item_571,OUTSIDE THINGS,produces; doesn't produce,word,fog,fog,fog,0,outside,nouns
+fence,item_573,OUTSIDE THINGS,produces; doesn't produce,word,fence,fence,fence,0,outside,nouns
+stone,item_575,OUTSIDE THINGS,produces; doesn't produce,word,stone,stone,stone,0,outside,nouns
+foothpath,item_577,OUTSIDE THINGS,produces; doesn't produce,word,foothpath,foot path,sidewalk,0,outside,nouns
+tree,item_579,OUTSIDE THINGS,produces; doesn't produce,word,tree,tree,tree,0,outside,nouns
+roof,item_581,OUTSIDE THINGS,produces; doesn't produce,word,roof,roof,roof,0,outside,nouns
+ladder,item_583,OUTSIDE THINGS,produces; doesn't produce,word,ladder,ladder,ladder,0,outside,nouns
+wall,item_585,OUTSIDE THINGS,produces; doesn't produce,word,wall,wall,wall,0,outside,nouns
+sea,item_587,OUTSIDE THINGS,produces; doesn't produce,word,sea,sea,sea,0,outside,nouns
+grass,item_589,OUTSIDE THINGS,produces; doesn't produce,word,grass,grass,grass,0,outside,nouns
+snowman,item_591,OUTSIDE THINGS,produces; doesn't produce,word,snowman,snowman,snowman,0,outside,nouns
+sand,item_593,OUTSIDE THINGS,produces; doesn't produce,word,sand,sand,sand,0,outside,nouns
+garden,item_595,OUTSIDE THINGS,produces; doesn't produce,word,garden,garden,garden,0,outside,nouns
+wind,item_597,OUTSIDE THINGS,produces; doesn't produce,word,wind,wind,wind,0,outside,nouns
+moon,item_599,OUTSIDE THINGS,produces; doesn't produce,word,moon,moon,moon,0,outside,nouns
+gate,item_601,OUTSIDE THINGS,produces; doesn't produce,word,gate,gate,gate,0,outside,nouns
+sun,item_603,OUTSIDE THINGS,produces; doesn't produce,word,sun,sun,sun,0,outside,nouns
+shovel,item_605,SMALL HOUSEHOLD ITEMS,produces; doesn't produce,word,shovel,shovel,shovel,0,household,nouns
+(swimming)pool,item_607,OUTSIDE THINGS,produces; doesn't produce,word,(swimming)pool,(swimming) pool,pool,0,outside,nouns
+pond,item_609,OUTSIDE THINGS,produces; doesn't produce,word,pond,pond,pond,0,outside,nouns
+swings,item_611,OUTSIDE THINGS,produces; doesn't produce,word,swings,swings,swing (object),0,outside,nouns
+stars,item_613,OUTSIDE THINGS,produces; doesn't produce,word,stars,stars,star,0,outside,nouns
+cloud,item_615,OUTSIDE THINGS,produces; doesn't produce,word,cloud,cloud,cloud,0,outside,nouns
+bush,item_617,OUTSIDE THINGS,produces; doesn't produce,word,bush,bush,bush,0,outside,nouns
+chimney,item_619,OUTSIDE THINGS,produces; doesn't produce,word,chimney,chimney,chimney,0,outside,nouns
+slide,item_621,OUTSIDE THINGS,produces; doesn't produce,word,slide,slide,slide (object),0,outside,nouns
+snow,item_623,OUTSIDE THINGS,produces; doesn't produce,word,snow,snow,snow,0,outside,nouns
+sky,item_625,OUTSIDE THINGS,produces; doesn't produce,word,sky,sky,sky,0,outside,nouns
+street,item_627,OUTSIDE THINGS,produces; doesn't produce,word,street,street,street,0,outside,nouns
+water,item_629,OUTSIDE THINGS,produces; doesn't produce,word,water,water,water (not beverage),0,outside,nouns
+home,item_631,PLACES TO GO,produces; doesn't produce,word,home,home,home,0,places,other
+mass,item_633,PLACES TO GO,produces; doesn't produce,word,mass,mass,church,0,places,other
+outside,item_635,PLACES TO GO,produces; doesn't produce,word,outside,outside,outside,0,places,other
+camping,item_637,PLACES TO GO,produces; doesn't produce,word,camping,camping,camping,0,places,other
+city,item_639,PLACES TO GO,produces; doesn't produce,word,city_town,city,city,0,places,other
+forest,item_641,PLACES TO GO,produces; doesn't produce,word,forest,forest,forest,0,places,other
+party,item_643,PLACES TO GO,produces; doesn't produce,word,party,party,party,0,places,other
+farm,item_645,PLACES TO GO,produces; doesn't produce,word,farm,farm,farm,0,places,other
+field,item_647,PLACES TO GO,produces; doesn't produce,word,field,field,field,0,places,other
+inside,item_649,PLACES TO GO,produces; doesn't produce,word,inside,inside,inside,0,places,other
+work,item_651,PLACES TO GO,produces; doesn't produce,word,work,work,work (place),0,places,other
+hospital,item_653,PLACES TO GO,produces; doesn't produce,word,hospital,hospital,hospital,0,places,other
+park,item_655,PLACES TO GO,produces; doesn't produce,word,park,park,park,0,places,other
+playschool,item_657,PLACES TO GO,produces; doesn't produce,word,playschool,playschool,kindergarten,0,places,other
+creche,item_659,PLACES TO GO,produces; doesn't produce,word,creche,creche,nursery,0,places,other
+picnicie,item_660,PLACES TO GO,produces; doesn't produce,word,picnicie,picnic,picnic,1,places,other
+school,item_662,PLACES TO GO,produces; doesn't produce,word,school,school,school,0,places,other
+shop,item_664,PLACES TO GO,produces; doesn't produce,word,shop,shop,store,0,places,other
+circus,item_665,PLACES TO GO,produces; doesn't produce,word,circus_sorcas_ie,circus,circus,1,places,other
+house,item_667,PLACES TO GO,produces; doesn't produce,word,house,house,house,0,places,other
+beach,item_669,PLACES TO GO,produces; doesn't produce,word,beach,beach,beach,0,places,other
+zoo,item_671,PLACES TO GO,produces; doesn't produce,word,zoo,zoo,zoo,0,places,other
+childsownname,item_673,PEOPLE *or words used in your family,produces; doesn't produce,word,childsownname,child's own name,child's own name,0,people,other
+babysittername,item_675,PEOPLE *or words used in your family,produces; doesn't produce,word,babysittername,babysitter's name,babysitter's name,0,people,other
+petname,item_677,PEOPLE *or words used in your family,produces; doesn't produce,word,petname,pet's name,pet's name,0,people,other
+aunty,item_679,PEOPLE *or words used in your family,produces; doesn't produce,word,aunty,aunty,aunt,0,people,other
+woman,item_681,PEOPLE *or words used in your family,produces; doesn't produce,word,woman,woman,woman,0,people,other
+boy,item_683,PEOPLE *or words used in your family,produces; doesn't produce,word,boy,boy,boy,0,people,other
+girl,item_685,PEOPLE *or words used in your family,produces; doesn't produce,word,girl,girl,girl,0,people,other
+friend,item_687,PEOPLE *or words used in your family,produces; doesn't produce,word,friend,friend,friend,0,people,other
+cousin,item_689,PEOPLE *or words used in your family,produces; doesn't produce,word,cousin,cousin,cousin,0,people,other
+grandad,item_691,PEOPLE *or words used in your family,produces; doesn't produce,word,grandad,grandad,grandpa,0,people,other
+people,item_694,PEOPLE *or words used in your family,produces; doesn't produce,word,people,people,people,0,people,other
+brother,item_696,PEOPLE *or words used in your family,produces; doesn't produce,word,brother,brother,brother,0,people,other
+sister,item_698,PEOPLE *or words used in your family,produces; doesn't produce,word,sister,sister,sister,0,people,other
+doctor,item_700,PEOPLE *or words used in your family,produces; doesn't produce,word,doctor,doctor,doctor,0,people,other
+person,item_702,PEOPLE *or words used in your family,produces; doesn't produce,word,person,person,person,0,people,other
+man,item_704,PEOPLE *or words used in your family,produces; doesn't produce,word,man,man,man,0,people,other
+fireman,item_706,PEOPLE *or words used in your family,produces; doesn't produce,word,fireman,fireman,firefighter,0,people,other
+clown,item_708,PEOPLE *or words used in your family,produces; doesn't produce,word,clown,clown,clown,0,people,other
+postman,item_710,PEOPLE *or words used in your family,produces; doesn't produce,word,postman,postman,postman,0,people,other
+farmer,item_712,PEOPLE *or words used in your family,produces; doesn't produce,word,farmer,farmer,farmer,0,people,other
+dentist,item_714,PEOPLE *or words used in your family,produces; doesn't produce,word,dentist,dentist,dentist,0,people,other
+policeman,item_716,PEOPLE *or words used in your family,produces; doesn't produce,word,policeman_guard,policeman,policeman,0,people,other
+hairdresser,item_718,PEOPLE *or words used in your family,produces; doesn't produce,word,hairdresser,hairdresser,hairdresser,0,people,other
+baby,item_720,PEOPLE *or words used in your family,produces; doesn't produce,word,baby,baby,baby,0,people,other
+granny,item_723,PEOPLE *or words used in your family,produces; doesn't produce,word,granny,granny,grandma,0,people,other
+teacher,item_725,PEOPLE *or words used in your family,produces; doesn't produce,word,teacher,teacher,teacher,0,people,other
+child,item_727,PEOPLE *or words used in your family,produces; doesn't produce,word,child,child,child,0,people,other
+song,item_730,"GAMES, ROUTINES AND PHRASES",produces; doesn't produce,word,song,song,song,0,games_routines,other
+thislittlepiggy,item_732,"GAMES, ROUTINES AND PHRASES",produces; doesn't produce,word,thislittlepiggy,this little pig,this little pig,0,games_routines,other
+hug,item_734,"GAMES, ROUTINES AND PHRASES",produces; doesn't produce,word,hug,hug,hug,0,games_routines,other
+gonnagetyou,item_736,"GAMES, ROUTINES AND PHRASES",produces; doesn't produce,word,gonnagetyou,gonna get you,gonna get you,0,games_routines,other
+breakfast,item_738,"GAMES, ROUTINES AND PHRASES",produces; doesn't produce,word,breakfast,breakfast,breakfast,0,games_routines,other
+turnaround,item_740,"GAMES, ROUTINES AND PHRASES",produces; doesn't produce,word,turnaround,turn around,turn around,0,games_routines,other
+iseeyou,item_742,"GAMES, ROUTINES AND PHRASES",produces; doesn't produce,word,iseeyou,I see you ,,0,games_routines,other
+sobig,item_744,"GAMES, ROUTINES AND PHRASES",produces; doesn't produce,word,sobig,so big,so big,0,games_routines,other
+hello,item_746,"GAMES, ROUTINES AND PHRASES",produces; doesn't produce,word,hello,hello,hello,0,games_routines,other
+dinner,item_748,"GAMES, ROUTINES AND PHRASES",produces; doesn't produce,word,dinner,dinner,dinner,0,games_routines,other
+bath,item_750,"GAMES, ROUTINES AND PHRASES",produces; doesn't produce,word,bath,bath,bath,0,games_routines,other
+phonecall(call),item_752,"GAMES, ROUTINES AND PHRASES",produces; doesn't produce,word,phonecall(call),phone call (call),,0,games_routines,other
+thankyou,item_754,"GAMES, ROUTINES AND PHRASES",produces; doesn't produce,word,thankyou_thanks,thank you,thank you,0,games_routines,other
+cuddle,item_756,"GAMES, ROUTINES AND PHRASES",produces; doesn't produce,word,cuddle,cuddle,,0,games_routines,other
+cmere,item_758,"GAMES, ROUTINES AND PHRASES",produces; doesn't produce,word,cmere,c'mere,,0,games_routines,other
+atall,item_760,"GAMES, ROUTINES AND PHRASES",produces; doesn't produce,word,atall,at all,,0,games_routines,other
+ilike,item_762,"GAMES, ROUTINES AND PHRASES",produces; doesn't produce,word,ilike,I like,,0,games_routines,other
+ilove,item_764,"GAMES, ROUTINES AND PHRASES",produces; doesn't produce,word,ilove,I love,,0,games_routines,other
+mine,item_766,"GAMES, ROUTINES AND PHRASES",produces; doesn't produce,word,mine,mine,mine,0,games_routines,other
+please,item_768,"GAMES, ROUTINES AND PHRASES",produces; doesn't produce,word,please,please,please,0,games_routines,other
+lunch,item_770,"GAMES, ROUTINES AND PHRASES",produces; doesn't produce,word,lunch,lunch,lunch,0,games_routines,other
+dontlike,item_772,"GAMES, ROUTINES AND PHRASES",produces; doesn't produce,word,dontlike,don't like,,0,games_routines,other
+dunno,item_774,"GAMES, ROUTINES AND PHRASES",produces; doesn't produce,word,dunno,dunno,,0,games_routines,other
+goodnight,item_777,"GAMES, ROUTINES AND PHRASES",produces; doesn't produce,word,goodnight,good night,good night,0,games_routines,other
+kiss,item_779,"GAMES, ROUTINES AND PHRASES",produces; doesn't produce,word,kiss,kiss,kiss,0,games_routines,other
+lookout,item_782,"GAMES, ROUTINES AND PHRASES",produces; doesn't produce,word,lookout,look out,,0,games_routines,other
+shopping,item_785,"GAMES, ROUTINES AND PHRASES",produces; doesn't produce,word,shopping,shopping,shopping,0,games_routines,other
+bye,item_787,"GAMES, ROUTINES AND PHRASES",produces; doesn't produce,word,bye,bye,bye,0,games_routines,other
+gimme,item_789,"GAMES, ROUTINES AND PHRASES",produces; doesn't produce,word,gimme,gimme,,0,games_routines,other
+say,item_791,ACTION WORDS ,produces; doesn't produce,word,say,say,say,0,action_words,verbs
+know,item_793,ACTION WORDS ,produces; doesn't produce,word,know,know,know,0,action_words,verbs
+lift,item_795,ACTION WORDS ,produces; doesn't produce,word,lift,lift,lift (action),0,action_words,verbs
+take,item_797,ACTION WORDS ,produces; doesn't produce,word,take,take,take,0,action_words,verbs
+catch,item_799,ACTION WORDS ,produces; doesn't produce,word,catch,catch,catch,0,action_words,verbs
+taste,item_801,ACTION WORDS ,produces; doesn't produce,word,taste,taste,taste,0,action_words,verbs
+smell,item_803,ACTION WORDS ,produces; doesn't produce,word,smell,smell,smell,0,action_words,verbs
+break,item_805,ACTION WORDS ,produces; doesn't produce,word,break,break,break,0,action_words,verbs
+wipe,item_807,ACTION WORDS ,produces; doesn't produce,word,wipe,wipe,wipe,0,action_words,verbs
+put,item_809,ACTION WORDS ,produces; doesn't produce,word,put,put,put,0,action_words,verbs
+dance,item_811,ACTION WORDS ,produces; doesn't produce,word,dance,dance,dance,0,action_words,verbs
+colour,item_813,ACTION WORDS ,produces; doesn't produce,word,colour,colour,color (action),0,action_words,verbs
+do,item_815,ACTION WORDS ,produces; doesn't produce,word,do,do,do,0,action_words,verbs
+spill,item_817,ACTION WORDS ,produces; doesn't produce,word,spill,spill,spill,0,action_words,verbs
+climb,item_819,ACTION WORDS ,produces; doesn't produce,word,climb,climb,climb,0,action_words,verbs
+wake,item_821,ACTION WORDS ,produces; doesn't produce,word,wake,wake,wake,0,action_words,verbs
+open,item_823,ACTION WORDS ,produces; doesn't produce,word,open,open,open (action),0,action_words,verbs
+paint,item_825,ACTION WORDS ,produces; doesn't produce,word,paint,paint,paint (action),0,action_words,verbs
+pick,item_827,ACTION WORDS ,produces; doesn't produce,word,pick,pick,pick,0,action_words,verbs
+kiss,item_829,ACTION WORDS ,produces; doesn't produce,word,kiss,kiss,kiss,0,action_words,verbs
+tear,item_831,ACTION WORDS ,produces; doesn't produce,word,tear_rip,tear,tear,0,action_words,verbs
+run,item_833,ACTION WORDS ,produces; doesn't produce,word,run,run,run,0,action_words,verbs
+share,item_835,ACTION WORDS ,produces; doesn't produce,word,share,share,share,0,action_words,verbs
+bark,item_837,ACTION WORDS ,produces; doesn't produce,word,bark,bark,bark,0,action_words,verbs
+hurry,item_839,ACTION WORDS ,produces; doesn't produce,word,hurry,hurry,hurry,0,action_words,verbs
+push,item_841,ACTION WORDS ,produces; doesn't produce,word,push,push,push,0,action_words,verbs
+win,item_843,ACTION WORDS ,produces; doesn't produce,word,win,win,win,0,action_words,verbs
+hit,item_845,ACTION WORDS ,produces; doesn't produce,word,hit,hit,hit,0,action_words,verbs
+clap,item_847,ACTION WORDS ,produces; doesn't produce,word,clap,clap,clap,0,action_words,verbs
+help,item_849,ACTION WORDS ,produces; doesn't produce,word,help,help,help,0,action_words,verbs
+talk,item_851,ACTION WORDS ,produces; doesn't produce,word,talk,talk,talk,0,action_words,verbs
+throw,item_853,ACTION WORDS ,produces; doesn't produce,word,throw,throw,throw,0,action_words,verbs
+sing,item_855,ACTION WORDS ,produces; doesn't produce,word,sing,sing,sing,0,action_words,verbs
+cry,item_857,ACTION WORDS ,produces; doesn't produce,word,cry,cry,cry,0,action_words,verbs
+turn,item_859,ACTION WORDS ,produces; doesn't produce,word,turn,turn,turn,0,action_words,verbs
+buy,item_861,ACTION WORDS ,produces; doesn't produce,word,buy,buy,buy,0,action_words,verbs
+think,item_863,ACTION WORDS ,produces; doesn't produce,word,think,think,think,0,action_words,verbs
+kick,item_865,ACTION WORDS ,produces; doesn't produce,word,kick,kick,kick,0,action_words,verbs
+tickle,item_867,ACTION WORDS ,produces; doesn't produce,word,tickle,tickle,tickle,0,action_words,verbs
+comb,item_869,ACTION WORDS ,produces; doesn't produce,word,comb,comb,comb (action),0,action_words,verbs
+hear,item_871,ACTION WORDS ,produces; doesn't produce,word,hear,hear,hear,0,action_words,verbs
+cover,item_873,ACTION WORDS ,produces; doesn't produce,word,cover,cover,cover (action),0,action_words,verbs
+knock,item_875,ACTION WORDS ,produces; doesn't produce,word,knock,knock,knock,0,action_words,verbs
+cook,item_877,ACTION WORDS ,produces; doesn't produce,word,cook,cook,cook,0,action_words,verbs
+sleep,item_879,ACTION WORDS ,produces; doesn't produce,word,sleep,sleep,sleep,0,action_words,verbs
+keep,item_881,ACTION WORDS ,produces; doesn't produce,word,keep,keep,keep,0,action_words,verbs
+finish,item_883,ACTION WORDS ,produces; doesn't produce,word,finish,finish,finish,0,action_words,verbs
+wave,item_885,ACTION WORDS ,produces; doesn't produce,word,wave,wave,wave (action),0,action_words,verbs
+close,item_887,ACTION WORDS ,produces; doesn't produce,word,close,close,close,0,action_words,verbs
+listen,item_889,ACTION WORDS ,produces; doesn't produce,word,listen,listen,listen,0,action_words,verbs
+leave,item_891,ACTION WORDS ,produces; doesn't produce,word,leave,leave,leave,0,action_words,verbs
+find,item_893,ACTION WORDS ,produces; doesn't produce,word,find_get,find,find,0,action_words,verbs
+wait,item_895,ACTION WORDS ,produces; doesn't produce,word,wait,wait,wait,0,action_words,verbs
+look,item_897,ACTION WORDS ,produces; doesn't produce,word,look,look,look,0,action_words,verbs
+see,item_899,ACTION WORDS ,produces; doesn't produce,word,see,see,see,0,action_words,verbs
+laugh,item_901,ACTION WORDS ,produces; doesn't produce,word,laugh,laugh,laugh,0,action_words,verbs
+cut,item_903,ACTION WORDS ,produces; doesn't produce,word,cut,cut,cut,0,action_words,verbs
+clean,item_905,ACTION WORDS ,produces; doesn't produce,word,clean,clean,clean (action),0,action_words,verbs
+play,item_907,ACTION WORDS ,produces; doesn't produce,word,play,play,play,0,action_words,verbs
+tell,item_909,ACTION WORDS ,produces; doesn't produce,word,tell,tell,tell,0,action_words,verbs
+eat,item_911,ACTION WORDS ,produces; doesn't produce,word,eat,eat,eat,0,action_words,verbs
+read,item_913,ACTION WORDS ,produces; doesn't produce,word,read,read,read,0,action_words,verbs
+jump,item_915,ACTION WORDS ,produces; doesn't produce,word,jump,jump,jump,0,action_words,verbs
+lick,item_917,ACTION WORDS ,produces; doesn't produce,word,lick,lick,lick,0,action_words,verbs
+draw,item_919,ACTION WORDS ,produces; doesn't produce,word,draw,draw,draw,0,action_words,verbs
+swing,item_921,ACTION WORDS ,produces; doesn't produce,word,swing,swing,swing (action),0,action_words,verbs
+liedown,item_923,ACTION WORDS ,produces; doesn't produce,word,liedown,lie down,lie down,0,action_words,verbs
+joke,item_925,ACTION WORDS ,produces; doesn't produce,word,joke,joke,joke (action),0,action_words,verbs
+smile,item_927,ACTION WORDS ,produces; doesn't produce,word,smile,smile,smile,0,action_words,verbs
+wash,item_929,ACTION WORDS ,produces; doesn't produce,word,wash,wash,wash,0,action_words,verbs
+work,item_931,ACTION WORDS ,produces; doesn't produce,word,work,work,work (action),0,action_words,verbs
+drink,item_933,ACTION WORDS ,produces; doesn't produce,word,drink,drink,drink (action),0,action_words,verbs
+slide,item_935,ACTION WORDS ,produces; doesn't produce,word,slide,slide,slide (action),0,action_words,verbs
+write,item_937,ACTION WORDS ,produces; doesn't produce,word,write,write,write,0,action_words,verbs
+brush,item_939,ACTION WORDS ,produces; doesn't produce,word,brush,brush,brush (action),0,action_words,verbs
+stand,item_941,ACTION WORDS ,produces; doesn't produce,word,stand,stand,stand,0,action_words,verbs
+blow,item_943,ACTION WORDS ,produces; doesn't produce,word,blow,blow,blow,0,action_words,verbs
+walk,item_945,ACTION WORDS ,produces; doesn't produce,word,walk,walk,walk,0,action_words,verbs
+swim,item_947,ACTION WORDS ,produces; doesn't produce,word,swim,swim,swim,0,action_words,verbs
+fix,item_949,ACTION WORDS ,produces; doesn't produce,word,fix,fix,fix,0,action_words,verbs
+stop,item_951,ACTION WORDS ,produces; doesn't produce,word,stop,stop,stop,0,action_words,verbs
+splash,item_953,ACTION WORDS ,produces; doesn't produce,word,splash,splash,splash,0,action_words,verbs
+sit(down),item_955,ACTION WORDS ,produces; doesn't produce,word,sit(down),sit (down),sit,0,action_words,verbs
+give,item_957,ACTION WORDS ,produces; doesn't produce,word,give_bring,give,give,0,action_words,verbs
+show,item_959,ACTION WORDS ,produces; doesn't produce,word,show,show,show,0,action_words,verbs
+come,item_961,ACTION WORDS ,produces; doesn't produce,word,come,come,come,0,action_words,verbs
+pull,item_963,ACTION WORDS ,produces; doesn't produce,word,pull,pull,pull,0,action_words,verbs
+go,item_965,ACTION WORDS ,produces; doesn't produce,word,go,go,go,0,action_words,verbs
+drive,item_967,ACTION WORDS ,produces; doesn't produce,word,drive,drive,drive,0,action_words,verbs
+fall,item_969,ACTION WORDS ,produces; doesn't produce,word,fall,fall,fall,0,action_words,verbs
+take,item_971,ACTION WORDS ,produces; doesn't produce,word,take_build,take,take,0,action_words,verbs
+start,item_973,ACTION WORDS ,produces; doesn't produce,word,start,start,start,0,action_words,verbs
+dry,item_975,ACTION WORDS ,produces; doesn't produce,word,dry,dry,dry (action),0,action_words,verbs
+fight,item_977,ACTION WORDS ,produces; doesn't produce,word,fight,fight,fight,0,action_words,verbs
+understand,item_979,ACTION WORDS ,produces; doesn't produce,word,understand,understand,understand,0,action_words,verbs
+high,item_981,DESCRIPTIVE WORDS,produces; doesn't produce,word,high,high,high,0,descriptive_words,adjectives
+rainy,item_983,DESCRIPTIVE WORDS,produces; doesn't produce,word,rainy,rainy,rainy,0,descriptive_words,adjectives
+white,item_985,DESCRIPTIVE WORDS,produces; doesn't produce,word,white,white,white,0,descriptive_words,adjectives
+small,item_987,DESCRIPTIVE WORDS,produces; doesn't produce,word,small,small,little (description),0,descriptive_words,adjectives
+tiny,item_989,DESCRIPTIVE WORDS,produces; doesn't produce,word,tiny,tiny,tiny,0,descriptive_words,adjectives
+poor,item_991,DESCRIPTIVE WORDS,produces; doesn't produce,word,poor,poor,poor,0,descriptive_words,adjectives
+soft,item_993,DESCRIPTIVE WORDS,produces; doesn't produce,word,soft,soft,soft,0,descriptive_words,adjectives
+broken,item_995,DESCRIPTIVE WORDS,produces; doesn't produce,word,broken,broken,broken,0,descriptive_words,adjectives
+sad,item_997,DESCRIPTIVE WORDS,produces; doesn't produce,word,sad,sad,sad,0,descriptive_words,adjectives
+yellow,item_999,DESCRIPTIVE WORDS,produces; doesn't produce,word,yellow,yellow,yellow,0,descriptive_words,adjectives
+first,item_1001,DESCRIPTIVE WORDS,produces; doesn't produce,word,first,first,first,0,descriptive_words,adjectives
+foggy,item_1003,DESCRIPTIVE WORDS,produces; doesn't produce,word,foggy,foggy,foggy,0,descriptive_words,adjectives
+kind,item_1005,DESCRIPTIVE WORDS,produces; doesn't produce,word,kind,kind,kind,0,descriptive_words,adjectives
+quiet,item_1007,DESCRIPTIVE WORDS,produces; doesn't produce,word,quiet,quiet,quiet,0,descriptive_words,adjectives
+purple,item_1009,DESCRIPTIVE WORDS,produces; doesn't produce,word,purple,purple,purple,0,descriptive_words,adjectives
+hard,item_1011,DESCRIPTIVE WORDS,produces; doesn't produce,word,hard,hard,hard,0,descriptive_words,adjectives
+careful,item_1013,DESCRIPTIVE WORDS,produces; doesn't produce,word,careful,careful,careful,0,descriptive_words,adjectives
+bold,item_1015,DESCRIPTIVE WORDS,produces; doesn't produce,word,bold,bold,bold,0,descriptive_words,adjectives
+red,item_1017,DESCRIPTIVE WORDS,produces; doesn't produce,word,red,red,red,0,descriptive_words,adjectives
+last,item_1019,DESCRIPTIVE WORDS,produces; doesn't produce,word,last,last,last,0,descriptive_words,adjectives
+hurt,item_1021,DESCRIPTIVE WORDS,produces; doesn't produce,word,hurt,hurt,hurt (description),0,descriptive_words,adjectives
+nice,item_1023,DESCRIPTIVE WORDS,produces; doesn't produce,word,nice,nice,nice,0,descriptive_words,adjectives
+finished,item_1025,DESCRIPTIVE WORDS,produces; doesn't produce,word,finished,finished,finished,0,descriptive_words,adjectives
+brown,item_1027,DESCRIPTIVE WORDS,produces; doesn't produce,word,brown,brown,brown,0,descriptive_words,adjectives
+dark,item_1029,DESCRIPTIVE WORDS,produces; doesn't produce,word,dark,dark,dark,0,descriptive_words,adjectives
+black,item_1031,DESCRIPTIVE WORDS,produces; doesn't produce,word,black,black,black,0,descriptive_words,adjectives
+asleep,item_1033,DESCRIPTIVE WORDS,produces; doesn't produce,word,asleep,asleep,asleep,0,descriptive_words,adjectives
+awake,item_1035,DESCRIPTIVE WORDS,produces; doesn't produce,word,awake,awake,awake,0,descriptive_words,adjectives
+light,item_1037,DESCRIPTIVE WORDS,produces; doesn't produce,word,light,light,light (decription),0,descriptive_words,adjectives
+scared,item_1039,DESCRIPTIVE WORDS,produces; doesn't produce,word,scared,scared,scared,0,descriptive_words,adjectives
+long,item_1041,DESCRIPTIVE WORDS,produces; doesn't produce,word,long,long,long,0,descriptive_words,adjectives
+angry,item_1043,DESCRIPTIVE WORDS,produces; doesn't produce,word,angry_cross,angry,angry,0,descriptive_words,adjectives
+prefer,item_1045,DESCRIPTIVE WORDS,produces; doesn't produce,word,prefer,prefer,,0,descriptive_words,adjectives
+wet,item_1047,DESCRIPTIVE WORDS,produces; doesn't produce,word,wet,wet,wet,0,descriptive_words,adjectives
+empty,item_1049,DESCRIPTIVE WORDS,produces; doesn't produce,word,empty,empty,empty,0,descriptive_words,adjectives
+cold,item_1051,DESCRIPTIVE WORDS,produces; doesn't produce,word,cold,cold,cold,0,descriptive_words,adjectives
+windy,item_1053,DESCRIPTIVE WORDS,produces; doesn't produce,word,windy,windy,windy,0,descriptive_words,adjectives
+short,item_1055,DESCRIPTIVE WORDS,produces; doesn't produce,word,short,short,short,0,descriptive_words,adjectives
+clean,item_1057,DESCRIPTIVE WORDS,produces; doesn't produce,word,clean,clean,clean (description),0,descriptive_words,adjectives
+green,item_1059,DESCRIPTIVE WORDS,produces; doesn't produce,word,green,green,green,0,descriptive_words,adjectives
+pretty,item_1061,DESCRIPTIVE WORDS,produces; doesn't produce,word,pretty,pretty,pretty,0,descriptive_words,adjectives
+clever,item_1063,DESCRIPTIVE WORDS,produces; doesn't produce,word,clever,clever,smart,0,descriptive_words,adjectives
+(all)gone,item_1065,DESCRIPTIVE WORDS,produces; doesn't produce,word,(all)gone,(all) gone,all gone,0,descriptive_words,adjectives
+slow,item_1067,DESCRIPTIVE WORDS,produces; doesn't produce,word,slow,slow,slow,0,descriptive_words,adjectives
+messy,item_1069,DESCRIPTIVE WORDS,produces; doesn't produce,word,messy,messy,messy,0,descriptive_words,adjectives
+big,item_1071,DESCRIPTIVE WORDS,produces; doesn't produce,word,big,big,big,0,descriptive_words,adjectives
+new,item_1073,DESCRIPTIVE WORDS,produces; doesn't produce,word,new,new,new,0,descriptive_words,adjectives
+hungry,item_1075,DESCRIPTIVE WORDS,produces; doesn't produce,word,hungry,hungry,hungry,0,descriptive_words,adjectives
+orange,item_1077,DESCRIPTIVE WORDS,produces; doesn't produce,word,orange,orange,orange (description),0,descriptive_words,adjectives
+fat,item_1079,DESCRIPTIVE WORDS,produces; doesn't produce,word,fat,fat,fat,0,descriptive_words,adjectives
+dirty,item_1081,DESCRIPTIVE WORDS,produces; doesn't produce,word,dirty,dirty,dirty,0,descriptive_words,adjectives
+old,item_1083,DESCRIPTIVE WORDS,produces; doesn't produce,word,old,old,old,0,descriptive_words,adjectives
+happy,item_1085,DESCRIPTIVE WORDS,produces; doesn't produce,word,happy,happy,happy,0,descriptive_words,adjectives
+fast,item_1087,DESCRIPTIVE WORDS,produces; doesn't produce,word,fast,fast,fast,0,descriptive_words,adjectives
+thirsty,item_1089,DESCRIPTIVE WORDS,produces; doesn't produce,word,thirsty,thirsty,thirsty,0,descriptive_words,adjectives
+hot,item_1091,DESCRIPTIVE WORDS,produces; doesn't produce,word,hot,hot,hot,0,descriptive_words,adjectives
+sick,item_1093,DESCRIPTIVE WORDS,produces; doesn't produce,word,sick,sick,sick,0,descriptive_words,adjectives
+dry,item_1095,DESCRIPTIVE WORDS,produces; doesn't produce,word,dry,dry,dry (description),0,descriptive_words,adjectives
+heavy,item_1097,DESCRIPTIVE WORDS,produces; doesn't produce,word,heavy,heavy,heavy,0,descriptive_words,adjectives
+tired,item_1099,DESCRIPTIVE WORDS,produces; doesn't produce,word,tired,tired,tired,0,descriptive_words,adjectives
+yucky,item_1101,DESCRIPTIVE WORDS,produces; doesn't produce,word,yucky,yucky,yucky,0,descriptive_words,adjectives
+ready,item_1103,DESCRIPTIVE WORDS,produces; doesn't produce,word,ready,ready,ready,0,descriptive_words,adjectives
+time,item_1105,WORDS ABOUT TIME,produces; doesn't produce,word,time,time,time,0,time_words,other
+tomorrow,item_1107,WORDS ABOUT TIME,produces; doesn't produce,word,tomorrow,tomorrow,tomorrow,0,time_words,other
+tonight,item_1109,WORDS ABOUT TIME,produces; doesn't produce,word,tonight,tonight,tonight,0,time_words,other
+now,item_1111,WORDS ABOUT TIME,produces; doesn't produce,word,now,now,now,0,time_words,other
+later,item_1113,WORDS ABOUT TIME,produces; doesn't produce,word,later,later,later,0,time_words,other
+yesterday,item_1115,WORDS ABOUT TIME,produces; doesn't produce,word,yesterday,yesterday,yesterday,0,time_words,other
+today,item_1117,WORDS ABOUT TIME,produces; doesn't produce,word,today,today,today,0,time_words,other
+day,item_1119,WORDS ABOUT TIME,produces; doesn't produce,word,day,day,day,0,time_words,other
+morning,item_1121,WORDS ABOUT TIME,produces; doesn't produce,word,morning,morning,morning,0,time_words,other
+night,item_1123,WORDS ABOUT TIME,produces; doesn't produce,word,night,night,night,0,time_words,other
+after,item_1125,WORDS ABOUT TIME,produces; doesn't produce,word,after,after,after,0,time_words,other
+afternoon,item_1127,WORDS ABOUT TIME,produces; doesn't produce,word,afternoon,afternoon,afternoon,0,time_words,other
+his,item_1129,PRONOUNS ,produces; doesn't produce,word,his,his,his,0,pronouns,function_words
+her,item_1130,PRONOUNS ,produces; doesn't produce,word,her,her,her,0,pronouns,function_words
+their,item_1131,PRONOUNS ,produces; doesn't produce,word,their,their,their,0,pronouns,function_words
+our,item_1133,PRONOUNS ,produces; doesn't produce,word,our,our,our,0,pronouns,function_words
+one,item_1135,PRONOUNS ,produces; doesn't produce,word,one,one,,0,pronouns,function_words
+yoursg,item_1137,PRONOUNS ,produces; doesn't produce,word,your,your,your,0,pronouns,function_words
+it(m),item_1139,PRONOUNS ,produces; doesn't produce,word,it(m),it/him,,0,pronouns,function_words
+(my)self,item_1141,PRONOUNS ,produces; doesn't produce,word,(my)self,(my)self,,0,pronouns,function_words
+she,item_1143,PRONOUNS ,produces; doesn't produce,word,she,she,she,0,pronouns,function_words
+her,item_1144,PRONOUNS ,produces; doesn't produce,word,her_A,her,her,0,pronouns,function_words
+it,item_1145,PRONOUNS ,produces; doesn't produce,word,it,it,it,0,pronouns,function_words
+they,item_1147,PRONOUNS ,produces; doesn't produce,word,they,they,they,0,pronouns,function_words
+them,item_1148,PRONOUNS ,produces; doesn't produce,word,them,them,them,0,pronouns,function_words
+me,item_1150,PRONOUNS ,produces; doesn't produce,word,me,me,me,0,pronouns,function_words
+my,item_1153,PRONOUNS ,produces; doesn't produce,word,my,my,my,0,pronouns,function_words
+we,item_1155,PRONOUNS ,produces; doesn't produce,word,we_us,we,we,0,pronouns,function_words
+hesub,item_1157,PRONOUNS ,produces; doesn't produce,word,he,he,he,0,pronouns,function_words
+this,item_1159,PRONOUNS ,produces; doesn't produce,word,this,this,this,0,pronouns,function_words
+shesub,item_1161,PRONOUNS ,produces; doesn't produce,word,she,she,she,0,pronouns,function_words
+they,item_1163,PRONOUNS ,produces; doesn't produce,word,they_A,they,they,0,pronouns,function_words
+youpl,item_1165,PRONOUNS ,produces; doesn't produce,word,youpl,you (pl),,0,pronouns,function_words
+that,item_1167,PRONOUNS ,produces; doesn't produce,word,that,that,that,0,pronouns,function_words
+you,item_1169,PRONOUNS ,produces; doesn't produce,word,you,you,you,0,pronouns,function_words
+where,item_1196,QUESTION WORDS,produces; doesn't produce,word,where,where,where (question),0,question_words,function_words
+what,item_1198,QUESTION WORDS,produces; doesn't produce,word,what,what,what,0,question_words,function_words
+when,item_1200,QUESTION WORDS,produces; doesn't produce,word,when,when,when (question),0,question_words,function_words
+who,item_1202,QUESTION WORDS,produces; doesn't produce,word,who,who,who,0,question_words,function_words
+which,item_1204,QUESTION WORDS,produces; doesn't produce,word,which,which,which (question),0,question_words,function_words
+why,item_1206,QUESTION WORDS,produces; doesn't produce,word,why,why,why,0,question_words,function_words
+how,item_1208,QUESTION WORDS,produces; doesn't produce,word,how,how,how,0,question_words,function_words
+at,item_1210,PREPOSITIONS AND LOCATIONS ,produces; doesn't produce,word,at,at,at,0,locations,function_words
+place,item_1212,PREPOSITIONS AND LOCATIONS ,produces; doesn't produce,word,place,place,,0,locations,function_words
+there,item_1214,PREPOSITIONS AND LOCATIONS ,produces; doesn't produce,word,there,there,there,0,locations,function_words
+there(inthatplace),item_1216,PREPOSITIONS AND LOCATIONS ,produces; doesn't produce,word,there(in that place),there (in that place),there,0,locations,function_words
+downward,item_1218,PREPOSITIONS AND LOCATIONS ,produces; doesn't produce,word,downward,downward,down,0,locations,function_words
+upward,item_1220,PREPOSITIONS AND LOCATIONS ,produces; doesn't produce,word,upward,upward,up,0,locations,function_words
+here,item_1222,PREPOSITIONS AND LOCATIONS ,produces; doesn't produce,word,here,here,here,0,locations,function_words
+on,item_1224,PREPOSITIONS AND LOCATIONS ,produces; doesn't produce,word,on,on,on,0,locations,function_words
+ontopof,item_1226,PREPOSITIONS AND LOCATIONS ,produces; doesn't produce,word,ontopof,on top of,on top of,0,locations,function_words
+out,item_1228,PREPOSITIONS AND LOCATIONS ,produces; doesn't produce,word,out,out,out,0,locations,function_words
+of,item_1230,PREPOSITIONS AND LOCATIONS ,produces; doesn't produce,word,of,of,of,0,locations,function_words
+top,item_1232,PREPOSITIONS AND LOCATIONS ,produces; doesn't produce,word,top,top,top,0,locations,function_words
+bottom,item_1234,PREPOSITIONS AND LOCATIONS ,produces; doesn't produce,word,bottom,bottom,bottom,0,locations,function_words
+behind,item_1236,PREPOSITIONS AND LOCATIONS ,produces; doesn't produce,word,behind,behind,behind,0,locations,function_words
+off,item_1238,PREPOSITIONS AND LOCATIONS ,produces; doesn't produce,word,off,off,off,0,locations,function_words
+for,item_1240,PREPOSITIONS AND LOCATIONS ,produces; doesn't produce,word,for,for,for,0,locations,function_words
+under,item_1242,PREPOSITIONS AND LOCATIONS ,produces; doesn't produce,word,under,under,under,0,locations,function_words
+to,item_1244,PREPOSITIONS AND LOCATIONS ,produces; doesn't produce,word,to,to,to,0,locations,function_words
+far,item_1246,PREPOSITIONS AND LOCATIONS ,produces; doesn't produce,word,far,far,far,0,locations,function_words
+in,item_1248,PREPOSITIONS AND LOCATIONS ,produces; doesn't produce,word,in,in,in,0,locations,function_words
+beside,item_1250,PREPOSITIONS AND LOCATIONS ,produces; doesn't produce,word,beside,beside,beside,0,locations,function_words
+inside,item_1252,PREPOSITIONS AND LOCATIONS ,produces; doesn't produce,word,inside,inside,inside,0,locations,function_words
+middle,item_1254,PREPOSITIONS AND LOCATIONS ,produces; doesn't produce,word,middle,middle,middle,0,locations,function_words
+outside,item_1256,PREPOSITIONS AND LOCATIONS ,produces; doesn't produce,word,outside,outside,outside,0,locations,function_words
+with,item_1258,PREPOSITIONS AND LOCATIONS ,produces; doesn't produce,word,with,with,with,0,locations,function_words
+from,item_1260,PREPOSITIONS AND LOCATIONS ,produces; doesn't produce,word,from,from,from,0,locations,function_words
+down,item_1262,PREPOSITIONS AND LOCATIONS ,produces; doesn't produce,word,down,down,down,0,locations,function_words
+up,item_1264,PREPOSITIONS AND LOCATIONS ,produces; doesn't produce,word,up,up,up,0,locations,function_words
+side,item_1266,PREPOSITIONS AND LOCATIONS ,produces; doesn't produce,word,side,side,side,0,locations,function_words
+over,item_1268,PREPOSITIONS AND LOCATIONS ,produces; doesn't produce,word,over,over,over,0,locations,function_words
+round,item_1270,PREPOSITIONS AND LOCATIONS ,produces; doesn't produce,word,round,round,aound,0,locations,function_words
+across,item_1272,PREPOSITIONS AND LOCATIONS ,produces; doesn't produce,word,across,across,across,0,locations,function_words
+a,item_1273,QUANTIFIERS AND ARTICLES ,produces; doesn't produce,word,a_an,a,a,0,quantifiers,function_words
+alot,item_1275,QUANTIFIERS AND ARTICLES ,produces; doesn't produce,word,alot,alot,a lot,0,quantifiers,function_words
+the,item_1277,QUANTIFIERS AND ARTICLES ,produces; doesn't produce,word,the,the,the,0,quantifiers,function_words
+very,item_1279,QUANTIFIERS AND ARTICLES ,produces; doesn't produce,word,very,very,really,0,quantifiers,function_words
+any(thing),item_1281,QUANTIFIERS AND ARTICLES ,produces; doesn't produce,word,any(thing),any(thing),any,0,quantifiers,function_words
+one,item_1283,QUANTIFIERS AND ARTICLES ,produces; doesn't produce,word,one,one,one,0,quantifiers,function_words
+again,item_1285,QUANTIFIERS AND ARTICLES ,produces; doesn't produce,word,again,again,again,0,quantifiers,function_words
+more,item_1287,QUANTIFIERS AND ARTICLES ,produces; doesn't produce,word,more,more,more,0,quantifiers,function_words
+same,item_1289,QUANTIFIERS AND ARTICLES ,produces; doesn't produce,word,same,same,same,0,quantifiers,function_words
+another,item_1291,QUANTIFIERS AND ARTICLES ,produces; doesn't produce,word,another,another,another,0,quantifiers,function_words
+each,item_1293,QUANTIFIERS AND ARTICLES ,produces; doesn't produce,word,each,each,each,0,quantifiers,function_words
+every,item_1295,QUANTIFIERS AND ARTICLES ,produces; doesn't produce,word,every,every,every,0,quantifiers,function_words
+none,item_1297,QUANTIFIERS AND ARTICLES ,produces; doesn't produce,word,none,none,none,0,quantifiers,function_words
+many,item_1299,QUANTIFIERS AND ARTICLES ,produces; doesn't produce,word,many,many,many,0,quantifiers,function_words
+piece,item_1302,QUANTIFIERS AND ARTICLES ,produces; doesn't produce,word,piece,piece,,0,quantifiers,function_words
+too,item_1304,QUANTIFIERS AND ARTICLES ,produces; doesn't produce,word,too,too,too,0,quantifiers,function_words
+some,item_1306,QUANTIFIERS AND ARTICLES ,produces; doesn't produce,word,some,some,some,0,quantifiers,function_words
+kindof,item_1308,QUANTIFIERS AND ARTICLES ,produces; doesn't produce,word,kindof,kind of,,0,quantifiers,function_words
+try(to),item_1310,HELPING VERBS,produces; doesn't produce,word,try(to),try (to),,0,helping_verbs,function_words
+can,item_1312,HELPING VERBS,produces; doesn't produce,word,can,can,can (auxiliary),0,helping_verbs,function_words
+willbe,item_1314,HELPING VERBS,produces; doesn't produce,word,willbe,will be,will (auxiliary),0,helping_verbs,function_words
+was,item_1317,HELPING VERBS,produces; doesn't produce,word,was,was,was,0,helping_verbs,function_words
+be,item_1319,HELPING VERBS,produces; doesn't produce,word,be,be,be,0,helping_verbs,function_words
+am,item_1321,HELPING VERBS,produces; doesn't produce,word,am,am,am,0,helping_verbs,function_words
+hafta,item_1323,HELPING VERBS,produces; doesn't produce,word,hafta_haveto,have to ,,0,helping_verbs,function_words
+(is(copula,item_1325,HELPING VERBS,produces; doesn't produce,word,is,is,is,0,helping_verbs,function_words
+lemme,item_1327,HELPING VERBS,produces; doesn't produce,word,lemme_letme,lemme,lemme,0,helping_verbs,function_words
+dont,item_1329,HELPING VERBS,produces; doesn't produce,word,dont,don't,don't,0,helping_verbs,function_words
+not,item_1331,HELPING VERBS,produces; doesn't produce,word,not,not,not,0,helping_verbs,function_words
+isn,item_1333,HELPING VERBS,produces; doesn't produce,word,isn_t,isn't,,0,helping_verbs,function_words
+didn,item_1335,HELPING VERBS,produces; doesn't produce,word,didn_t,didn't,,0,helping_verbs,function_words
+wanna,item_1339,HELPING VERBS,produces; doesn't produce,word,wanna_wantto,wanna,wanna,0,helping_verbs,function_words
+but,item_1341,CONNECTING WORDS ,produces; doesn't produce,word,but,but,but,0,connecting_words,function_words
+and,item_1343,CONNECTING WORDS ,produces; doesn't produce,word,and,and,and,0,connecting_words,function_words
+then,item_1345,CONNECTING WORDS ,produces; doesn't produce,word,then,then,then,0,connecting_words,function_words
+aso,item_1347,CONNECTING WORDS ,produces; doesn't produce,word,so,so,so,0,connecting_words,function_words
+if,item_1349,CONNECTING WORDS ,produces; doesn't produce,word,if,if,if,0,connecting_words,function_words
+because,item_1351,CONNECTING WORDS ,produces; doesn't produce,word,because,because,because,0,connecting_words,function_words
+when,item_1353,CONNECTING WORDS ,produces; doesn't produce,word,when,when,,0,connecting_words,function_words
