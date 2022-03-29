@@ -1310,6 +1310,19 @@
         "contributor": "Stolt S",
         "license": "CC-BY",
         "citation": "Stolt, S., Haataja, L., Lapinleimu, H. & Lehtonen, L. 2008. Early lexical development of Finnish children – a longitudinal study. First Language, 28(3), 259–279. DOI: 10.1177/0142723708091051"
+    },
+    {
+        "name": "Caselli",
+        "dataset": "Caselli",
+        "instrument_language": "American Sign Language",
+        "instrument_form": "CDI2",
+        "file": "raw_data/ASL_CDI2/ASL_Caselli_CDI2.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": true,
+        "contributor": "Caselli, N",
+        "license": "CC-BY",
+        "citation": "Caselli, N., Lieberman, A., Pyers, J. (2020). The ASL-CDI 2.0: An updated, normed adaptation of the MacArthur Bates Communicative Development Inventory for American Sign Language. Behavior Research Methods."
     }
 ]
 

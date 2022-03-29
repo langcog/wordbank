@@ -1,0 +1,18 @@
+type,value,data_value
+sex,M,Male
+sex,F,Female
+ethnicity,W,White
+ethnicity,A,Asian
+ethnicity,B,African American/Black
+ethnicity,H,Hispanic or Latino
+ethnicity,,NA
+ethnicity,O,native american/alaskan
+ethnicity,O,More than one
+mom_ed,some secondary,No highschool degree
+mom_ed,college,College degree
+mom_ed,graduate,Masters
+mom_ed,some college,some college
+mom_ed,secondary,High school degree
+sign,0,0.0
+sign,1,1.0
+sign,2,2.0
