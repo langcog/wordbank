@@ -1323,6 +1323,71 @@
         "contributor": "Caselli, N",
         "license": "CC-BY",
         "citation": "Caselli, N., Lieberman, A., Pyers, J. (2020). The ASL-CDI 2.0: An updated, normed adaptation of the MacArthur Bates Communicative Development Inventory for American Sign Language. Behavior Research Methods."
+    },
+    {
+        "name": "Bergman",
+        "dataset": "Story2",
+        "instrument_language": "Dutch",
+        "instrument_form": "Swingley",
+        "file": "raw_data/Dutch_Swingley/DutchSwingley_Story2.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": true,
+        "contributor": "Bergmann, C",
+        "license": "CC-BY",
+        "citation": "Bergmann, Christina, Hendriks, Cielke, de Bruin, Yvette, Egger, Julia, Fikkert, Paula, Hahn, Laura, Hunnius, Sabine, Johnson, Elisabeth, Junge, Caroline, Levelt, Claartje, Rulkens-Dijkstra, Nienke, Swingley, Daniel, Ward, Emma, & Rowland, Caroline. MB-CDI Dutch Pre-Norming Corpus. "
+    },
+    {
+        "name": "Bergman",
+        "dataset": "Story3",
+        "instrument_language": "Dutch",
+        "instrument_form": "Swingley",
+        "file": "raw_data/Dutch_Swingley/DutchSwingley_Story3.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": true,
+        "contributor": "Bergmann, C",
+        "license": "CC-BY",
+        "citation": "Bergmann, Christina, Hendriks, Cielke, de Bruin, Yvette, Egger, Julia, Fikkert, Paula, Hahn, Laura, Hunnius, Sabine, Johnson, Elisabeth, Junge, Caroline, Levelt, Claartje, Rulkens-Dijkstra, Nienke, Swingley, Daniel, Ward, Emma, & Rowland, Caroline. MB-CDI Dutch Pre-Norming Corpus. "
+    },
+    {
+        "name": "Bergman",
+        "dataset": "Story4",
+        "instrument_language": "Dutch",
+        "instrument_form": "Swingley",
+        "file": "raw_data/Dutch_Swingley/DutchSwingley_Story4.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": true,
+        "contributor": "Bergmann, C",
+        "license": "CC-BY",
+        "citation": "Bergmann, Christina, Hendriks, Cielke, de Bruin, Yvette, Egger, Julia, Fikkert, Paula, Hahn, Laura, Hunnius, Sabine, Johnson, Elisabeth, Junge, Caroline, Levelt, Claartje, Rulkens-Dijkstra, Nienke, Swingley, Daniel, Ward, Emma, & Rowland, Caroline. MB-CDI Dutch Pre-Norming Corpus. "
+    },
+    {
+        "name": "Bergman",
+        "dataset": "Teach3",
+        "instrument_language": "Dutch",
+        "instrument_form": "Swingley",
+        "file": "raw_data/Dutch_Swingley/DutchSwingley_Teach3.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": true,
+        "contributor": "Bergmann, C",
+        "license": "CC-BY",
+        "citation": "Bergmann, Christina, Hendriks, Cielke, de Bruin, Yvette, Egger, Julia, Fikkert, Paula, Hahn, Laura, Hunnius, Sabine, Johnson, Elisabeth, Junge, Caroline, Levelt, Claartje, Rulkens-Dijkstra, Nienke, Swingley, Daniel, Ward, Emma, & Rowland, Caroline. MB-CDI Dutch Pre-Norming Corpus. "
+    },
+    {
+        "name": "Bergman",
+        "dataset": "Xeno",
+        "instrument_language": "Dutch",
+        "instrument_form": "Swingley",
+        "file": "raw_data/Dutch_Swingley/DutchSwingley_Xeno.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": true,
+        "contributor": "Bergmann, C",
+        "license": "CC-BY",
+        "citation": "Bergmann, Christina, Hendriks, Cielke, de Bruin, Yvette, Egger, Julia, Fikkert, Paula, Hahn, Laura, Hunnius, Sabine, Johnson, Elisabeth, Junge, Caroline, Levelt, Claartje, Rulkens-Dijkstra, Nienke, Swingley, Daniel, Ward, Emma, & Rowland, Caroline. MB-CDI Dutch Pre-Norming Corpus. "
     }
 ]
 

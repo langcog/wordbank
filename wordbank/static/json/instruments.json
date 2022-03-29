@@ -502,5 +502,13 @@
         "age_min": 8,
         "age_max": 36,
         "has_grammar": true
+    },
+    {
+        "language": "Dutch",
+        "form": "Swingley",
+        "file": "raw_data/Dutch_Swingley/[Dutch_Swingley].csv",
+        "age_min": 8,
+        "age_max": 36,
+        "has_grammar": true
     }
 ]
