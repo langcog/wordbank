@@ -63,7 +63,7 @@ item_61,p1_c03_i01,word,understands; produces,vehicles,אוטו/ מכונית,ca
 item_62,p1_c03_i02,word,understands; produces,vehicles,אוטובוס,bus,bus
 item_63,p1_c03_i03,word,understands; produces,vehicles,אופנוע,motorcycle,motorcycle
 item_64,p1_c03_i04,word,understands; produces,vehicles,אופניים,bicycle,bicycle
-item_65,p1_c03_i05,word,understands; produces,vehicles,אניה,boat,boat
+item_65,p1_c03_i05,word,understands; produces,vehicles,אניה,ship,boat
 item_66,p1_c03_i06,word,understands; produces,vehicles,אמבולנס,ambulance,ambulance
 item_67,p1_c03_i07,word,understands; produces,vehicles,ג'יפ,jeep,jeep
 item_68,p1_c03_i08,word,understands; produces,vehicles,הליקופטר,helicopter,helicopter
@@ -637,3 +637,11 @@ item_635,p3_c07_i01,complexity,0; 1; 2; 3; 4,,1. זה/ את זה/ דובי (שי
 item_636,p3_c08_i01,complexity,0; 1; 2; 3; 4,,1. ילד/ ילדה/ אוכל/ אוכלת/ תפוח (שימוש במילה אחת)#...,1. boy\girl\eat(male) \ eat(female)\ apple (use of one word);...,
 item_637,p3_c09_i01,complexity,0; 1; 2; 3; 4,,1. בלון/ עף/ למעלה/ אוי ואבוי (שימוש במילה אחת)#ne...,1. balloon\fly\up\oh no (use of one word);.,
 item_638,p3_c10_i01,complexity,0; 1; 2; 3; 4,,1. אוטו/ לנסוע/ ברר ברר/ הן הן (שימוש במילה אחת)#n...,1. car\drive\vroom vroom (use of one word);.,
+item_639,,word,understands; produces,animals,חזיר,pig,pig
+item_640,,word,understands; produces,vehicles,סירה,boat,boat
+item_641,,word,understands; produces,body_parts,טוסיק/ישבן,buttocks/buttom,butt
+item_642,,word,understands; produces,body_parts,בולבול/פיפי,penis,penis
+item_643,,word,understands; produces,household,סיר בישול,blanket,blanket
+item_644,,word,understands; produces,household,טייפ/קלטת,tape,tape
+item_645,,word,understands; produces,games_routines,יש לי/שלי,I have mine,
+item_646,,word,understands; produces,action_words,לדפוק,knock,knock

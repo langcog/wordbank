@@ -35,7 +35,7 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
                 print(f"Child {child_data['study_id']} already exists")
             child.date_of_birth = child_data['date_of_birth']
             child.birth_order = child_data['birth_order']
-            if child_data['momed'] is not None:
+            if child_data['momed'] not in [None, '']:
                 child.caregiver_education = CaregiverEducation.objects.get(education_level__iexact = child_data['momed'])
             child.study_internal_caregiver_education = child_data['study_momed']
             child.ethnicity = child_data['ethnicity']

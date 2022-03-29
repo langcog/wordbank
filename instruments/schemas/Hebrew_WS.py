@@ -1279,3 +1279,19 @@ class Hebrew_WS(BaseTable):
     item_637 = models.CharField(max_length=1, choices=item_637_choices, null=True)
     item_638_choices = [('0', '0'), ('1', '1'), ('2', '2'), ('3', '3'), ('4', '4')]
     item_638 = models.CharField(max_length=1, choices=item_638_choices, null=True)
+    item_639_choices = [('understands', 'understands'), ('produces', 'produces')]
+    item_639 = models.CharField(max_length=11, choices=item_639_choices, null=True)
+    item_640_choices = [('understands', 'understands'), ('produces', 'produces')]
+    item_640 = models.CharField(max_length=11, choices=item_640_choices, null=True)
+    item_641_choices = [('understands', 'understands'), ('produces', 'produces')]
+    item_641 = models.CharField(max_length=11, choices=item_641_choices, null=True)
+    item_642_choices = [('understands', 'understands'), ('produces', 'produces')]
+    item_642 = models.CharField(max_length=11, choices=item_642_choices, null=True)
+    item_643_choices = [('understands', 'understands'), ('produces', 'produces')]
+    item_643 = models.CharField(max_length=11, choices=item_643_choices, null=True)
+    item_644_choices = [('understands', 'understands'), ('produces', 'produces')]
+    item_644 = models.CharField(max_length=11, choices=item_644_choices, null=True)
+    item_645_choices = [('understands', 'understands'), ('produces', 'produces')]
+    item_645 = models.CharField(max_length=11, choices=item_645_choices, null=True)
+    item_646_choices = [('understands', 'understands'), ('produces', 'produces')]
+    item_646 = models.CharField(max_length=11, choices=item_646_choices, null=True)

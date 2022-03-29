@@ -1256,6 +1256,60 @@
         "license": "CC-BY",
         "citation": "TBA",
         "dataset_origin": "Hoff_English_Mexican_Bilingual"
+    },
+    {
+        "name": "Armon-Lotem",
+        "dataset": "Armon-Lotem",
+        "instrument_language": "Hebrew",
+        "instrument_form": "WS",
+        "file": "raw_data/Hebrew_WS/HebrewWS_Armon-Lotem.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": true,
+        "contributor": "Sharon Armon-Lotem",
+        "license": "CC-BY",
+        "citation": "Armon-Lotem, S. & Ohana, O. (2017). A CDI study of bilingual English-Hebrew children: Frequency of exposure as a major source of variation. International Journal of Bilingual Education and Bilingualism, 20(2), 201–217.",
+        "dataset_origin": "Armon-Lotem_Hebrew_English_Bilingual"
+    },
+    {
+        "name": "Armon-Lotem",
+        "dataset": "Armon-Lotem",
+        "instrument_language": "English (American)",
+        "instrument_form": "WS",
+        "file": "raw_data/English_WS/EnglishWS_Armon-Lotem.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": true,
+        "contributor": "Sharon Armon-Lotem",
+        "license": "CC-BY",
+        "citation": "Armon-Lotem, S. & Ohana, O. (2017). A CDI study of bilingual English-Hebrew children: Frequency of exposure as a major source of variation. International Journal of Bilingual Education and Bilingualism, 20(2), 201–217.",
+        "dataset_origin": "Armon-Lotem_Hebrew_English_Bilingual"
+    },
+    {
+        "name": "Stolt",
+        "dataset": "Stolt",
+        "instrument_language": "Finnish",
+        "instrument_form": "WS",
+        "file": "raw_data/Finnish_WS/FinnishWS_Stolt.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": true,
+        "contributor": "Stolt S",
+        "license": "CC-BY",
+        "citation": "Stolt, S. & Vehkavuori, S-M. 2018. Sanaseula. Finnish short form versions of the MacArthur Communicative Development Inventories. Jyväskylä: Niilo Mäki Instituutti."
+    },
+    {
+        "name": "Stolt",
+        "dataset": "Stolt Short",
+        "instrument_language": "Finnish",
+        "instrument_form": "WS_Short",
+        "file": "raw_data/Finnish_WS_Short/FinnishWSShort_Stolt.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": true,
+        "contributor": "Stolt S",
+        "license": "CC-BY",
+        "citation": "Stolt, S., Haataja, L., Lapinleimu, H. & Lehtonen, L. 2008. Early lexical development of Finnish children – a longitudinal study. First Language, 28(3), 259–279. DOI: 10.1177/0142723708091051"
     }
 ]
 

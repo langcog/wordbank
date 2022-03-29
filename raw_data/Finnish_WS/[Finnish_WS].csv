@@ -1,0 +1,596 @@
+itemID,category,item,definition,gloss,uni_lemma,choices,type
+item_1,sounds,ai-ai,ai-ai,oh,oh,produces,word
+item_2,sounds,bää-ä bää-ä,bää-ä bää-ä,baa baa,baa baa,produces,word
+item_3,sounds,hau hau,hau hau,woof woof,woof woof,produces,word
+item_4,sounds,kvaak kvaak,kvaak kvaak,quack quack,quack quack,produces,word
+item_5,sounds,murrr,murrr,grrr,grrr,produces,word
+item_6,sounds,ohhoh,ohhoh,oh,oh,produces,word
+item_7,sounds,tsuk tsuk,tsuk tsuk,choo choo,choo choo,produces,word
+item_8,sounds,ammuu,ammuu,moo,moo,produces,word
+item_9,sounds,drnn drnn,drnn drnn,vroom,vroom,produces,word
+item_10,sounds,kukkokiekuu,kukkokiekuu,cockadoodledoo,cockadoodledoo,produces,word
+item_11,sounds,miauu,miauu,meow,meow,produces,word
+item_12,sounds,nam nam,nam nam,yum yum,yum yum,produces,word
+item_13,sounds,shh,shh,shh,shh,produces,word
+item_14,animals,ampiainen,ampiainen,bee,bee,produces,word
+item_15,animals,apina,apina,ape,,produces,word
+item_16,animals,hevonen,hevonen,horse,horse,produces,word
+item_17,animals,hirvi,hirvi,moose,moose,produces,word
+item_18,animals,hämähäkki,hämähäkki,spider,spider,produces,word
+item_19,animals,kana,kana,chicken (animal),chicken (animal),produces,word
+item_20,animals,kettu,kettu,fox,fox,produces,word
+item_21,animals,kissa,kissa,cat,cat,produces,word
+item_22,animals,kukko,kukko,cock,,produces,word
+item_23,animals,käärme,käärme,snake,snake,produces,word
+item_24,animals,lehmä,lehmä,cow,cow,produces,word
+item_25,animals,leppäkerttu,leppäkerttu,ladybird,ladybug,produces,word
+item_26,animals,mato,mato,worm,worm,produces,word
+item_27,animals,norsu,norsu,elephant,elephant,produces,word
+item_28,animals,perhonen,perhonen,butterfly,butterfly,produces,word
+item_29,animals,possu,possu,pig,pig,produces,word
+item_30,animals,pöllö,pöllö,owl,owl,produces,word
+item_31,animals,siili,siili,hedgehog,hedgehog,produces,word
+item_32,animals,tiikeri,tiikeri,tiger,tiger,produces,word
+item_33,animals,ankka,ankka,duck,duck,produces,word
+item_34,animals,eläin,eläin,animal,animal,produces,word
+item_35,animals,hiiri,hiiri,mouse,mouse,produces,word
+item_36,animals,hyttynen,hyttynen,mosquito,mosquito,produces,word
+item_37,animals,kala,kala,fish,fish (animal),produces,word
+item_38,animals,karhu,karhu,bear,bear,produces,word
+item_39,animals,kirahvi,kirahvi,giraffe,giraffe,produces,word
+item_40,animals,koira,koira,dog,dog,produces,word
+item_41,animals,kärpänen,kärpänen,fly,fly (animal),produces,word
+item_42,animals,lammas,lammas,sheep,sheep,produces,word
+item_43,animals,leijona,leijona,lion,lion,produces,word
+item_44,animals,lintu,lintu,bird,bird,produces,word
+item_45,animals,muurahainen,muurahainen,ant,ant,produces,word
+item_46,animals,orava,orava,squirrel,squirrel,produces,word
+item_47,animals,pingviini,pingviini,penguin,penguin,produces,word
+item_48,animals,pupu,pupu,bunny,bunny,produces,word
+item_49,animals,sammakko,sammakko,frog,frog,produces,word
+item_50,animals,susi,susi,wolf,wolf,produces,word
+item_51,animals,tipu,tipu,chick,chick,produces,word
+item_52,vehicles,auto,auto,car,car,produces,word
+item_53,vehicles,juna,juna,train,train,produces,word
+item_54,vehicles,laiva,laiva,ship,,produces,word
+item_55,vehicles,mopo,mopo,moped,,produces,word
+item_56,vehicles,polkupyörä,polkupyörä,bicycle,bicycle,produces,word
+item_57,vehicles,rattaat,rattaat,pushchair,,produces,word
+item_58,vehicles,bussi/linja-auto,bussi/linja-auto,bus,bus,produces,word
+item_59,vehicles,kuorma-auto,kuorma-auto,truck,truck,produces,word
+item_60,vehicles,lentokone,lentokone,aeroplane,airplane,produces,word
+item_61,vehicles,paloauto,paloauto,fire truck,firetruck,produces,word
+item_62,vehicles,pulkka,pulkka,sled,sled,produces,word
+item_63,vehicles,traktori,traktori,tractor,tractor,produces,word
+item_64,toys,ilmapallo,ilmapallo,balloon,balloon,produces,word
+item_65,toys,kynä,kynä,pencil,pen/pencil,produces,word
+item_66,toys,lapio,lapio,spade,spade,produces,word
+item_67,toys,muovailuvaha,muovailuvaha,modelling clay,,produces,word
+item_68,toys,nukke,nukke,doll,doll,produces,word
+item_69,toys,palikka,palikka,brick,,produces,word
+item_70,toys,peli,peli,game,,produces,word
+item_71,toys,ämpäri/sanko,ämpäri/sanko,bucket,bucket,produces,word
+item_72,toys,kirja,kirja,book,book,produces,word
+item_73,toys,lahja,lahja,gift,,produces,word
+item_74,toys,maila,maila,bat,,produces,word
+item_75,toys,nalle,nalle,teddy bear,teddybear,produces,word
+item_76,toys,palapeli,palapeli,puzzle,,produces,word
+item_77,toys,pallo,pallo,ball,ball,produces,word
+item_78,toys,värikynä,värikynä,pencil crayon,pen/pencil,produces,word
+item_79,food_drink,appelsiini,appelsiini,orange,orange (fruit),produces,word
+item_80,food_drink,herne,herne,pea,,produces,word
+item_81,food_drink,jugurtti,jugurtti,yoghurt,yogurt,produces,word
+item_82,food_drink,jäätelö,jäätelö,icecream,ice cream,produces,word
+item_83,food_drink,kaali,kaali,cabbage,cabbage,produces,word
+item_84,food_drink,kakku,kakku,cake,cake,produces,word
+item_85,food_drink,karkki,karkki,candy,candy,produces,word
+item_86,food_drink,keitto,keitto,soup,soup,produces,word
+item_87,food_drink,kiisseli,kiisseli,custard,,produces,word
+item_88,food_drink,lakritsa,lakritsa,liquorice,,produces,word
+item_89,food_drink,liha,liha,meat,meat,produces,word
+item_90,food_drink,maito,maito,milk,milk,produces,word
+item_91,food_drink,makkara,makkara,sausage,,produces,word
+item_92,food_drink,margariini,margariini,margarine,,produces,word
+item_93,food_drink,mehu,mehu,juice,juice,produces,word
+item_94,food_drink,omena,omena,apple,apple,produces,word
+item_95,food_drink,pannukakku,pannukakku,pancake,pancake,produces,word
+item_96,food_drink,perunalastu,perunalastu,potato chip,,produces,word
+item_97,food_drink,pizza,pizza,pizza,pizza,produces,word
+item_98,food_drink,pulla,pulla,bun,bun,produces,word
+item_99,food_drink,puuro,puuro,porridge,,produces,word
+item_100,food_drink,ruoka,ruoka,food,food,produces,word
+item_101,food_drink,salaatti,salaatti,salad,,produces,word
+item_102,food_drink,suklaa,suklaa,chocolate,chocolate,produces,word
+item_103,food_drink,suolakurkku,suolakurkku,pickled cucumber,,produces,word
+item_104,food_drink,tomaatti,tomaatti,tomato,tomato,produces,word
+item_105,food_drink,velli,velli,gruel,,produces,word
+item_106,food_drink,viili,viili,nordic kind of sour milk,,produces,word
+item_107,food_drink,voi,voi,butter,butter,produces,word
+item_108,food_drink,banaani,banaani,banana,banana,produces,word
+item_109,food_drink,hillo,hillo,jam,jam,produces,word
+item_110,food_drink,juusto,juusto,cheese,cheese,produces,word
+item_111,food_drink,kaakao,kaakao,hot chocolate,,produces,word
+item_112,food_drink,kahvi,kahvi,coffee,coffee,produces,word
+item_113,food_drink,kananmuna,kananmuna,egg,egg,produces,word
+item_114,food_drink,kastike,kastike,sauce,sauce,produces,word
+item_115,food_drink,keksi,keksi,cookie,cookie,produces,word
+item_116,food_drink,kurkku,kurkku,cucumber,cucumber,produces,word
+item_117,food_drink,leipä,leipä,bread,bread,produces,word
+item_118,food_drink,limonadi,limonadi,lemonade,,produces,word
+item_119,food_drink,makaroni,makaroni,macaroni,pasta,produces,word
+item_120,food_drink,mansikka,mansikka,strawberry,,produces,word
+item_121,food_drink,marja,marja,berry,berry,produces,word
+item_122,food_drink,muro,muro,cerials,cerial,produces,word
+item_123,food_drink,paahtoleipä,paahtoleipä,toast,toast,produces,word
+item_124,food_drink,peruna,peruna,potato,potato,produces,word
+item_125,food_drink,piimä,piimä,sour milk,,produces,word
+item_126,food_drink,porkkana,porkkana,carrot,carrots,produces,word
+item_127,food_drink,purukumi,purukumi,chewing gum,,produces,word
+item_128,food_drink,pähkinä,pähkinä,nut,,produces,word
+item_129,food_drink,rusina,rusina,raisin,raisin,produces,word
+item_130,food_drink,sokeria,sokeria,sugar,sugar,produces,word
+item_131,food_drink,suola,suola,salt,,produces,word
+item_132,food_drink,tee,tee,tea,tea,produces,word
+item_133,food_drink,tonnikala,tonnikala,tuna fish,,produces,word
+item_134,food_drink,vesi,vesi,water,water (beverage),produces,word
+item_135,food_drink,vitamiini,vitamiini,vitamin,,produces,word
+item_136,food_drink,voileipäkeksi,voileipäkeksi,cracker,cracker,produces,word
+item_137,clothing,alushousut,alushousut,under pants,underpants,produces,word
+item_138,clothing,hattu/myssy,hattu/myssy,hat,hat,produces,word
+item_139,clothing,housut,housut,pants,pants,produces,word
+item_140,clothing,kaulahuivi,kaulahuivi,scarf,scarf,produces,word
+item_141,clothing,lapaset,lapaset,mittens,mittens,produces,word
+item_142,clothing,nappi,nappi,button,button,produces,word
+item_143,clothing,pusero,pusero,blouse,,produces,word
+item_144,clothing,saappaat,saappaat,rubberboots,,produces,word
+item_145,clothing,sortsit,sortsit,shorts,shorts,produces,word
+item_146,clothing,sukkahousut,sukkahousut,pantyhose,,produces,word
+item_147,clothing,takki,takki,jacket,jacket,produces,word
+item_148,clothing,vaippa,vaippa,nappy,,produces,word
+item_149,clothing,villapaita,villapaita,pullover,,produces,word
+item_150,clothing,vyö,vyö,belt,,produces,word
+item_151,clothing,haalari,haalari,overalls,overalls,produces,word
+item_152,clothing,hiha,hiha,sleeve,,produces,word
+item_153,clothing,huppu,huppu,hood,,produces,word
+item_154,clothing,kenkä,kenkä,shoe,shoe,produces,word
+item_155,clothing,mekko,mekko,dress,dress (object),produces,word
+item_156,clothing,paita,paita,shirt,shirt,produces,word
+item_157,clothing,ruokalappu,ruokalappu,bib,bib,produces,word
+item_158,clothing,sadetakki,sadetakki,raincoat,,produces,word
+item_159,clothing,sukka,sukka,sock,sock,produces,word
+item_160,clothing,suojapuku,suojapuku,smock,,produces,word
+item_161,clothing,uimapuku,uimapuku,swimmingsuit,swimsuit,produces,word
+item_162,clothing,vetoketju,vetoketju,zipper,zipper,produces,word
+item_163,clothing,villatakki,villatakki,cardigan,,produces,word
+item_164,clothing,yöpuku,yöpuku,pyjamas,pajamas,produces,word
+item_165,body_parts,hammas,hammas,tooth,tooth,produces,word
+item_166,body_parts,huulet,huulet,lips,lips,produces,word
+item_167,body_parts,kasvot,kasvot,face,face,produces,word
+item_168,body_parts,korva,korva,ear,ear,produces,word
+item_169,body_parts,leuka,leuka,chin,chin,produces,word
+item_170,body_parts,nenä,nenä,nose,nose,produces,word
+item_171,body_parts,pimppi,pimppi,wea wea,vagina,produces,word
+item_172,body_parts,polvi,polvi,knee,knee,produces,word
+item_173,body_parts,pylly,pylly,bum,butt,produces,word
+item_174,body_parts,silmä,silmä,eye,eye,produces,word
+item_175,body_parts,suu,suu,mouth,mouth,produces,word
+item_176,body_parts,varvas,varvas,toe,toe,produces,word
+item_177,body_parts,hiukset,hiukset,hair,hair,produces,word
+item_178,body_parts,jalka,jalka,foot,foot,produces,word
+item_179,body_parts,kieli,kieli,tongue,tongue,produces,word
+item_180,body_parts,käsi,käsi,hand,hand,produces,word
+item_181,body_parts,napa,napa,bellybutton,belly button,produces,word
+item_182,body_parts,olkapää,olkapää,shoulder,,produces,word
+item_183,body_parts,pippeli,pippeli,willy,penis,produces,word
+item_184,body_parts,poski,poski,cheek,cheek,produces,word
+item_185,body_parts,pää,pää,head,head,produces,word
+item_186,body_parts,sormi,sormi,finger,finger,produces,word
+item_187,body_parts,tissi,tissi,boob,breast,produces,word
+item_188,body_parts,vatsa/maha,vatsa/maha,stomach,tummy,produces,word
+item_189,furniture_rooms,amme,amme,bathtub,bathtub,produces,word
+item_190,furniture_rooms,eteinen,eteinen,corridor,corridor,produces,word
+item_191,furniture_rooms,jääkaappi,jääkaappi,fridge,refrigerator,produces,word
+item_192,furniture_rooms,katto,katto,ceiling,,produces,word
+item_193,furniture_rooms,keittiö,keittiö,kitchen,kitchen,produces,word
+item_194,furniture_rooms,kylpyhuone,kylpyhuone,bathroom,bathroom,produces,word
+item_195,furniture_rooms,makuuhuone,makuuhuone,bedroom,bedroom,produces,word
+item_196,furniture_rooms,autotalli,autotalli,garage,garage,produces,word
+item_197,furniture_rooms,ikkuna,ikkuna,window,window,produces,word
+item_198,furniture_rooms,kaappi,kaappi,closet,closet,produces,word
+item_199,furniture_rooms,keinutuoli,keinutuoli,rocking chair,rocking chair,produces,word
+item_200,furniture_rooms,kuisti,kuisti,porch,porch,produces,word
+item_201,furniture_rooms,lattia,lattia,floor,floor,produces,word
+item_202,furniture_rooms,nojatuoli,nojatuoli,armchair,armchair,produces,word
+item_203,furniture_rooms,olohuone,olohuone,livingroom,living room,produces,word
+item_204,furniture_rooms,parveke,parveke,balcony,,produces,word
+item_205,furniture_rooms,portaat,portaat,stairs,stairs,produces,word
+item_206,furniture_rooms,pöytä,pöytä,table,table,produces,word
+item_207,furniture_rooms,sauna,sauna,sauna,,produces,word
+item_208,furniture_rooms,suihku,suihku,shower,shower,produces,word
+item_209,furniture_rooms,sänky,sänky,bed,bed,produces,word
+item_210,furniture_rooms,tiskipöytä,tiskipöytä,sink,sink,produces,word
+item_211,furniture_rooms,uuni,uuni,oven,oven,produces,word
+item_212,furniture_rooms,ovi,ovi,door,door,produces,word
+item_213,furniture_rooms,pesukone,pesukone,washing machine,washing machine,produces,word
+item_214,furniture_rooms,pölynimuri,pölynimuri,hoover,vacuum,produces,word
+item_215,furniture_rooms,radio,radio,radio,radio,produces,word
+item_216,furniture_rooms,sohva,sohva,sofa,,produces,word
+item_217,furniture_rooms,syöttötuoli,syöttötuoli,highchair,,produces,word
+item_218,furniture_rooms,televisio,televisio,tv,tv,produces,word
+item_219,furniture_rooms,tuoli,tuoli,chair,chair,produces,word
+item_220,furniture_rooms,vessa,vessa,toilet,bathroom,produces,word
+item_221,household,avaimet,avaimet,keys,keys,produces,word
+item_222,household,hammasharja,hammasharja,toothbrush,toothbrush,produces,word
+item_223,household,kamera,kamera,camera,camera,produces,word
+item_224,household,kannu,kannu,jug,,produces,word
+item_225,household,kello,kello,clock,clock,produces,word
+item_226,household,kortti,kortti,card,,produces,word
+item_227,household,kuppi,kuppi,cup,cup,produces,word
+item_228,household,lamppu,lamppu,lamp,lamp,produces,word
+item_229,household,laukku,laukku,bag,bag,produces,word
+item_230,household,liima,liima,glue,glue,produces,word
+item_231,household,lusikka,lusikka,spoon,spoon,produces,word
+item_232,household,maljakko,maljakko,vase,,produces,word
+item_233,household,naula,naula,nail,,produces,word
+item_234,household,paperi,paperi,paper,paper,produces,word
+item_235,household,peitto,peitto,blanket,blanket,produces,word
+item_236,household,potta,potta,potty,potty,produces,word
+item_237,household,pullo,pullo,bottle,bottle,produces,word
+item_238,household,raha,raha,money,money,produces,word
+item_239,household,roska,roska,rubbish,trash,produces,word
+item_240,household,sakset,sakset,scissors,scissors,produces,word
+item_241,household,silmälasit,silmälasit,eyeglasses,glasses,produces,word
+item_242,household,tutti,tutti,pacifier,pacifier,produces,word
+item_243,household,valokuva,valokuva,photograph,photos,produces,word
+item_244,household,veitsi,veitsi,knife,knife,produces,word
+item_245,household,haarukka,haarukka,fork,fork,produces,word
+item_246,household,harja,harja,brush,,produces,word
+item_247,household,kampa,kampa,comb,,produces,word
+item_248,household,kattila,kattila,pot,pot,produces,word
+item_249,household,kori,kori,basket,basket,produces,word
+item_250,household,kukkaruukku,kukkaruukku,flowerpot,flowerpot,produces,word
+item_251,household,laatikko,laatikko,box,box,produces,word
+item_252,household,lasi,lasi,glass,glass,produces,word
+item_253,household,lautanen,lautanen,plate,plate,produces,word
+item_254,household,liina,liina,cloth,cloth,produces,word
+item_255,household,lääke,lääke,medicine,medicine,produces,word
+item_256,household,matto,matto,carpet,carpet,produces,word
+item_257,household,ovikello,ovikello,doorbell,,produces,word
+item_258,household,peili,peili,mirror,mirror,produces,word
+item_259,household,pesusieni,pesusieni,sponge,,produces,word
+item_260,household,puhelin,puhelin,telephone,telephone,produces,word
+item_261,household,pyyhe,pyyhe,towel,towel,produces,word
+item_262,household,rasva,rasva,cream,,produces,word
+item_263,household,saippua,saippua,soap,soap,produces,word
+item_264,household,sateenvarjo,sateenvarjo,umbrella,umbrella,produces,word
+item_265,household,taulu,taulu,painting,,produces,word
+item_266,household,tyyny,tyyny,pillow,pillow,produces,word
+item_267,household,vasara,vasara,hammer,hammer,produces,word
+item_268,household,verho,verho,curtain,curtain,produces,word
+item_269,outside,aurinko,aurinko,sun,sun,produces,word
+item_270,outside,hiekka,hiekka,sand,sand,produces,word
+item_271,outside,huoltoasema,huoltoasema,gas station,gas station,produces,word
+item_272,outside,eläintarha,eläintarha,zoo,zoo,produces,word
+item_273,outside,hiekkalaatikko,hiekkalaatikko,sandbox,,produces,word
+item_274,outside,juhlat,juhlat,party,party,produces,word
+item_275,outside,jää,jää,ice,,produces,word
+item_276,outside,kauppa,kauppa,shop,store,produces,word
+item_277,outside,kesämökki,kesämökki,summer cottage,,produces,word
+item_278,outside,kivi,kivi,stone,stone,produces,word
+item_279,outside,koulu,koulu,school,school,produces,word
+item_280,outside,kuu,kuu,moon,moon,produces,word
+item_281,outside,lippu,lippu,flag,,produces,word
+item_282,outside,lumi,lumi,snow,snow,produces,word
+item_283,outside,lätäkkö,lätäkkö,puddle,puddle,produces,word
+item_284,outside,piha,piha,yard,yard,produces,word
+item_285,outside,puisto,puisto,garden,garden,produces,word
+item_286,outside,päiväkoti,päiväkoti,day care center,,produces,word
+item_287,outside,retki,retki,picnic,,produces,word
+item_288,outside,sade,sade,rain,rain,produces,word
+item_289,outside,talo,talo,house,house,produces,word
+item_290,outside,työpaikka,työpaikka,workplace,,produces,word
+item_291,outside,katu,katu,street,street,produces,word
+item_292,outside,keinu,keinu,swing,swing (object),produces,word
+item_293,outside,kirkko,kirkko,church,church,produces,word
+item_294,outside,koti,koti,home,home,produces,word
+item_295,outside,kukka,kukka,flower,flower,produces,word
+item_296,outside,leikkipuisto,leikkipuisto,playground,playground,produces,word
+item_297,outside,liukumäki,liukumäki,slide,slide (object),produces,word
+item_298,outside,lumiukko,lumiukko,snowman,snowman,produces,word
+item_299,outside,metsä,metsä,forest,,produces,word
+item_300,outside,posti,posti,post,,produces,word
+item_301,outside,puu,puu,tree,tree,produces,word
+item_302,outside,ranta,ranta,shore,,produces,word
+item_303,outside,ruoho,ruoho,grass,grass,produces,word
+item_304,outside,taivas,taivas,sky,sky,produces,word
+item_305,outside,tuuli,tuuli,wind,wind,produces,word
+item_306,outside,tähti,tähti,star,star,produces,word
+item_307,people,eno,eno,maternal uncle,uncle,produces,word
+item_308,people,ihminen,ihminen,human being,person,produces,word
+item_309,people,kaveri,kaveri,friend,friend,produces,word
+item_310,people,lapsi,lapsi,child,child,produces,word
+item_311,people,mies,mies,man,man,produces,word
+item_312,people,nainen,nainen,woman,woman,produces,word
+item_313,people,opettaja,opettaja,teacher,teacher,produces,word
+item_314,people,pappa/ukki,pappa/ukki,grandfather,grandpa,produces,word
+item_315,people,poliisi,poliisi,police,police,produces,word
+item_316,people,sisko,sisko,sister,sister,produces,word
+item_317,people,täti,täti,aunt,aunt,produces,word
+item_318,people,veli,veli,brother,brother,produces,word
+item_319,people,hoitotäti,hoitotäti,childminder,,produces,word
+item_320,people,isä,isä,father,daddy,produces,word
+item_321,people,lapsenvahti,lapsenvahti,babysitter,babysitter,produces,word
+item_322,people,lääkäri,lääkäri,doctor,doctor,produces,word
+item_323,people,mummo/mummi,mummo/mummi,grandmother,grandma,produces,word
+item_324,people,oma nimi,oma nimi,ownname,child's own name,produces,word
+item_325,people,palomies,palomies,fireman,,produces,word
+item_326,people,poika,poika,boy,boy,produces,word
+item_327,people,setä,setä,uncle,uncle,produces,word
+item_328,people,tyttö,tyttö,girl,girl,produces,word
+item_329,people,vauva,vauva,baby,baby,produces,word
+item_330,people,äiti,äiti,mother,mommy,produces,word
+item_331,games_routines,aamupala,aamupala,breakfast,breakfast,produces,word
+item_332,games_routines,hei hei,hei hei,bye,bye,produces,word
+item_333,games_routines,kakka,kakka,poop,poop,produces,word
+item_334,games_routines,kyllä,kyllä,yes,yes,produces,word
+item_335,games_routines,käydä ostoksilla,käydä ostoksilla,on shopping,,produces,word
+item_336,games_routines,mennä nukkumaan,mennä nukkumaan,to sleep,,produces,word
+item_337,games_routines,näin iso,näin iso,this big,,produces,word
+item_338,games_routines,ole hyvä,ole hyvä,please,please,produces,word
+item_339,games_routines,ei,ei,no,no,produces,word
+item_340,games_routines,hyvää yötä,hyvää yötä,good night,good night,produces,word
+item_341,games_routines,kiitos,kiitos,thank you,thank you,produces,word
+item_342,games_routines,kylpy,kylpy,bath,bath,produces,word
+item_343,games_routines,loppu,loppu,end,,produces,word
+item_344,games_routines,mennä potalle,mennä potalle,to potty,go potty,produces,word
+item_345,games_routines,odota,odota,wait,wait,produces,word
+item_346,games_routines,piiloon,piiloon,to hiding place,,produces,word
+item_347,games_routines,pissa,pissa,pee,pee,produces,word
+item_348,games_routines,päivää,päivää,hello,hello,produces,word
+item_349,games_routines,välipala,välipala,snack,,produces,word
+item_350,games_routines,päiväunet,päiväunet,nap,nap,produces,word
+item_351,games_routines,terve!,terve!,hi,hi,produces,word
+item_352,action_words,älä [don´t],älä [don´t],don't,don't,produces,word
+item_353,action_words,ajaa,ajaa,drive,drive,produces,word
+item_354,action_words,aukaista,aukaista,open (action),open (action),produces,word
+item_355,action_words,hakea,hakea,fetch,,produces,word
+item_356,action_words,haluta,haluta,want,,produces,word
+item_357,action_words,heittää,heittää,throw,throw,produces,word
+item_358,action_words,huutaa,huutaa,shout,shout,produces,word
+item_359,action_words,hypätä,hypätä,jump,jump,produces,word
+item_360,action_words,istua,istua,sit,sit,produces,word
+item_361,action_words,juoda,juoda,drink,drink (action),produces,word
+item_362,action_words,kaataa,kaataa,pour,pour,produces,word
+item_363,action_words,katsoa,katsoa,look,look,produces,word
+item_364,action_words,keittää,keittää,boil,,produces,word
+item_365,action_words,kiirehtiä,kiirehtiä,hurry,hurry,produces,word
+item_366,action_words,kirjoittaa,kirjoittaa,write,write,produces,word
+item_367,action_words,koputtaa,koputtaa,knock,knock,produces,word
+item_368,action_words,koskettaa,koskettaa,touch,touch,produces,word
+item_369,action_words,kutittaa,kutittaa,tickle,tickle,produces,word
+item_370,action_words,kävellä,kävellä,walk,walk,produces,word
+item_371,action_words,lakaista,lakaista,sweep,sweep,produces,word
+item_372,action_words,laulaa,laulaa,sing,sing,produces,word
+item_373,action_words,leikkiä,leikkiä,play,play,produces,word
+item_374,action_words,lopettaa,lopettaa,stop,stop,produces,word
+item_375,action_words,lukea,lukea,read,read,produces,word
+item_376,action_words,lähteä,lähteä,leave,leave,produces,word
+item_377,action_words,maalata,maalata,paint,paint (action),produces,word
+item_378,action_words,maistaa,maistaa,taste,taste,produces,word
+item_379,action_words,nauraa,nauraa,laugh,laugh,produces,word
+item_380,action_words,nukkua,nukkua,sleep,sleep,produces,word
+item_381,action_words,ostaa,ostaa,buy,buy,produces,word
+item_382,action_words,ottaa,ottaa,take,take,produces,word
+item_383,action_words,peittää,peittää,cover,cover (action),produces,word
+item_384,action_words,pestä,pestä,wash,wash,produces,word
+item_385,action_words,piirtää,piirtää,draw,draw,produces,word
+item_386,action_words,pitää kiinni,pitää kiinni,hold,hold,produces,word
+item_387,action_words,potkaista,potkaista,kick,kick,produces,word
+item_388,action_words,pudottaa,pudottaa,drop,drop,produces,word
+item_389,action_words,puhua,puhua,speak,,produces,word
+item_390,action_words,purra,purra,bite,bite,produces,word
+item_391,action_words,pyöriä,pyöriä,roll,,produces,word
+item_392,action_words,antaa,antaa,give,give,produces,word
+item_393,action_words,auttaa,auttaa,help,help,produces,word
+item_394,action_words,halata,halata,hug,hug,produces,word
+item_395,action_words,heiluttaa,heiluttaa,wave,wave,produces,word
+item_396,action_words,hiihtää,hiihtää,ski,,produces,word
+item_397,action_words,hymyillä,hymyillä,smile,smile,produces,word
+item_398,action_words,irvistää,irvistää,grin,,produces,word
+item_399,action_words,itkeä,itkeä,cry,cry,produces,word
+item_400,action_words,juosta,juosta,run,run,produces,word
+item_401,action_words,kaatua,kaatua,fall,fall,produces,word
+item_402,action_words,keinua,keinua,sway,,produces,word
+item_403,action_words,kiinnittää,kiinnittää,fasten,,produces,word
+item_404,action_words,kiivetä,kiivetä,climb,climb,produces,word
+item_405,action_words,kiusata,kiusata,tease,,produces,word
+item_406,action_words,korjata,korjata,fix,,produces,word
+item_407,action_words,kuivata,kuivata,dry,dry (action),produces,word
+item_408,action_words,kuunnella,kuunnella,listen,listen,produces,word
+item_409,action_words,laittaa,laittaa,put,put,produces,word
+item_410,action_words,laskea mäkeä,laskea mäkeä,glide,,produces,word
+item_411,action_words,leikata,leikata,cut,cut,produces,word
+item_412,action_words,leipoa,leipoa,bake,,produces,word
+item_413,action_words,luistella,luistella,skate,,produces,word
+item_414,action_words,lyödä,lyödä,hit,hit,produces,word
+item_415,action_words,löytää,löytää,find,find,produces,word
+item_416,action_words,mahtua,mahtua,fit,,produces,word
+item_417,action_words,mennä,mennä,go,go,produces,word
+item_418,action_words,niistää,niistää,blow,blow,produces,word
+item_419,action_words,odottaa,odottaa,wait for,,produces,word
+item_420,action_words,ottaa kiinni,ottaa kiinni,catch,catch,produces,word
+item_421,action_words,painaa,painaa,press,press,produces,word
+item_422,action_words,pelata,pelata,to play,play,produces,word
+item_423,action_words,piilottaa,piilottaa,hide,hide,produces,word
+item_424,action_words,pitää hyvänä,pitää hyvänä,caress,,produces,word
+item_425,action_words,poimia,poimia,pick,,produces,word
+item_426,action_words,pudota,pudota,fall down,,produces,word
+item_427,action_words,puhaltaa,puhaltaa,blow on,,produces,word
+item_428,action_words,pukea,pukea,get dressed,,produces,word
+item_429,action_words,pysähtyä,pysähtyä,pause,,produces,word
+item_430,action_words,rakentaa,rakentaa,build,build,produces,word
+item_431,action_words,ratsastaa,ratsastaa,ride,ride,produces,word
+item_432,action_words,repiä,repiä,tear,tear,produces,word
+item_433,action_words,rikkoa,rikkoa,break,break,produces,word
+item_434,action_words,saada,saada,get,get,produces,word
+item_435,action_words,seisoa,seisoa,stand,stand,produces,word
+item_436,action_words,silittää,silittää,pet,,produces,word
+item_437,action_words,sulkea,sulkea,close,close,produces,word
+item_438,action_words,syödä,syödä,eat,eat,produces,word
+item_439,action_words,tanssia,tanssia,dance,dance,produces,word
+item_440,action_words,tehdä,tehdä,make,make,produces,word
+item_441,action_words,työntää,työntää,push,push,produces,word
+item_442,action_words,uida,uida,swim,swim,produces,word
+item_443,action_words,vetää,vetää,pull,pull,produces,word
+item_444,action_words,vilkuttaa,vilkuttaa,wink,,produces,word
+item_445,action_words,ravistaa,ravistaa,shake,shake,produces,word
+item_446,action_words,riisua,riisua,take off,take off,produces,word
+item_447,action_words,roiskuttaa,roiskuttaa,splatter,,produces,word
+item_448,action_words,sanoa,sanoa,say,say,produces,word
+item_449,action_words,siivota,siivota,clean up,,produces,word
+item_450,action_words,soittaa,soittaa,ring,,produces,word
+item_451,action_words,suukottaa,suukottaa,kiss,kiss,produces,word
+item_452,action_words,syöttää,syöttää,feed,feed,produces,word
+item_453,action_words,taputtaa,taputtaa,clap,clap,produces,word
+item_454,action_words,tuoda,tuoda,bring,bring,produces,word
+item_455,action_words,törmätä,törmätä,crash,,produces,word
+item_456,action_words,valvoa,valvoa,stay up,,produces,word
+item_457,action_words,viedä,viedä,carry,carry,produces,word
+item_458,action_words,yskittää,yskittää,cough,cough,produces,word
+item_459,time_words,aamu,aamu,morning,morning,produces,word
+item_460,time_words,ennen,ennen,before,before,produces,word
+item_461,time_words,ilta,ilta,evening,evening,produces,word
+item_462,time_words,myöhemmin,myöhemmin,later,later,produces,word
+item_463,time_words,pian,pian,soon,,produces,word
+item_464,time_words,tänään,tänään,today,today,produces,word
+item_465,time_words,eilen,eilen,yesterday,yesterday,produces,word
+item_466,time_words,huomenna,huomenna,tomorrow,tomorrow,produces,word
+item_467,time_words,jälkeen,jälkeen,after,after,produces,word
+item_468,time_words,nyt,nyt,now,now,produces,word
+item_469,time_words,päivä,päivä,day,day,produces,word
+item_470,time_words,yö,yö,night,night,produces,word
+item_471,descriptive_words,ensimmäinen,ensimmäinen,first,first,produces,word
+item_472,descriptive_words,hieno,hieno,fine,fine,produces,word
+item_473,descriptive_words,huono,huono,bad,bad,produces,word
+item_474,descriptive_words,iloinen,iloinen,glad,,produces,word
+item_475,descriptive_words,kaunis,kaunis,beautiful,beautiful,produces,word
+item_476,descriptive_words,kiltti,kiltti,nice,nice,produces,word
+item_477,descriptive_words,korkea,korkea,high,high,produces,word
+item_478,descriptive_words,kuiva,kuiva,dried,,produces,word
+item_479,descriptive_words,kuuma,kuuma,hot,hot,produces,word
+item_480,descriptive_words,likainen,likainen,dirty,dirty,produces,word
+item_481,descriptive_words,musta,musta,black,black,produces,word
+item_482,descriptive_words,nopea,nopea,fast,fast,produces,word
+item_483,descriptive_words,onnellinen,onnellinen,happy,happy,produces,word
+item_484,descriptive_words,pehmeä,pehmeä,soft,soft,produces,word
+item_485,descriptive_words,pimeä,pimeä,dark,dark,produces,word
+item_486,descriptive_words,puhdas,puhdas,clean,clean (description),produces,word
+item_487,descriptive_words,hidas,hidas,slow,slow,produces,word
+item_488,descriptive_words,hiljainen,hiljainen,quiet,,produces,word
+item_489,descriptive_words,hyvä,hyvä,good,good,produces,word
+item_490,descriptive_words,iso,iso,big,big,produces,word
+item_491,descriptive_words,keltainen,keltainen,yellow,yellow,produces,word
+item_492,descriptive_words,kipeä (pipi),kipeä (pipi),ill,sick,produces,word
+item_493,descriptive_words,kova,kova,hard,hard,produces,word
+item_494,descriptive_words,kurainen,kurainen,muddy,,produces,word
+item_495,descriptive_words,kylmä,kylmä,cold,cold,produces,word
+item_496,descriptive_words,makea,makea,sweet,sweet,produces,word
+item_497,descriptive_words,märkä,märkä,wet,wet (description),produces,word
+item_498,descriptive_words,nälkäinen,nälkäinen,hungry,hungry,produces,word
+item_499,descriptive_words,parempi,parempi,better,,produces,word
+item_500,descriptive_words,pieni,pieni,tiny,,produces,word
+item_501,descriptive_words,pitkä,pitkä,tall,,produces,word
+item_502,descriptive_words,punainen,punainen,red,red,produces,word
+item_503,descriptive_words,raskas,raskas,heavy,heavy,produces,word
+item_504,descriptive_words,rikki,rikki,broken,broken,produces,word
+item_505,descriptive_words,ruskea,ruskea,brown,brown,produces,word
+item_506,descriptive_words,sininen,sininen,blue,blue,produces,word
+item_507,descriptive_words,terävä,terävä,sharp,,produces,word
+item_508,descriptive_words,tuulinen,tuulinen,windy,,produces,word
+item_509,descriptive_words,täysi,täysi,full,full,produces,word
+item_510,descriptive_words,uusi,uusi,new,new,produces,word
+item_511,descriptive_words,vanha,vanha,old,old,produces,word
+item_512,descriptive_words,vihreä,vihreä,green,green,produces,word
+item_513,descriptive_words,väsynyt,väsynyt,tired,tired,produces,word
+item_514,descriptive_words,reipas,reipas,brisk,,produces,word
+item_515,descriptive_words,rohkea,rohkea,brave,,produces,word
+item_516,descriptive_words,sateinen,sateinen,rainy,,produces,word
+item_517,descriptive_words,surullinen,surullinen,sad,sad,produces,word
+item_518,descriptive_words,tuhma,tuhma,naughty,naughty,produces,word
+item_519,descriptive_words,tyhjä,tyhjä,empty,empty,produces,word
+item_520,descriptive_words,uninen,uninen,sleepy,sleepy,produces,word
+item_521,descriptive_words,valkoinen,valkoinen,white,white,produces,word
+item_522,descriptive_words,varovainen,varovainen,careful,careful,produces,word
+item_523,descriptive_words,viimeinen,viimeinen,last,,produces,word
+item_524,descriptive_words,äänekäs,äänekäs,noisy,,produces,word
+item_525,pronouns,he,he,they,they,produces,word
+item_526,pronouns,heille,heille,to them,,produces,word
+item_527,pronouns,hänelle,hänelle,to him to her,,produces,word
+item_528,pronouns,me,me,we,we,produces,word
+item_529,pronouns,meille,meille,to us,,produces,word
+item_530,pronouns,minun,minun,mine,mine,produces,word
+item_531,pronouns,näiden,näiden,theirs,,produces,word
+item_532,pronouns,nämä,nämä,these,these,produces,word
+item_533,pronouns,sen,sen,its,,produces,word
+item_534,pronouns,sinulle,sinulle,to you,to you,produces,word
+item_535,pronouns,sinä,sinä,you,you,produces,word
+item_536,pronouns,tämä,tämä,this,this,produces,word
+item_537,pronouns,heidän,heidän,their,their,produces,word
+item_538,pronouns,hän,hän,he she,,produces,word
+item_539,pronouns,hänen,hänen,his hers,,produces,word
+item_540,pronouns,meidän,meidän,ours,,produces,word
+item_541,pronouns,minulle,minulle,to me,,produces,word
+item_542,pronouns,minä,minä,I,i,produces,word
+item_543,pronouns,näille,näille,to these,,produces,word
+item_544,pronouns,se,se,it,it,produces,word
+item_545,pronouns,sille,sille,to it,,produces,word
+item_546,pronouns,sinun,sinun,yours,,produces,word
+item_547,pronouns,tälle,tälle,to this,,produces,word
+item_548,pronouns,tämän,tämän,this ones,,produces,word
+item_549,question_words,kuka,kuka,who,who,produces,word
+item_550,question_words,mikä (e.g. What is your name?),mikä (e.g. What is your name?),what,what,produces,word
+item_551,question_words,minne,minne,to where,,produces,word
+item_552,question_words,miten,miten,how,how,produces,word
+item_553,question_words,miksi,miksi,why,why,produces,word
+item_554,question_words,milloin,milloin,when,when (question),produces,word
+item_555,question_words,missä,missä,where,where (question),produces,word
+item_556,question_words,"mitä (e.g. ""What did you say?)","mitä (e.g. ""What did you say?)",what,what,produces,word
+item_557,prepositions,alas,alas,down,down,produces,word
+item_558,prepositions,auki,auki,turned on,,produces,word
+item_559,prepositions,kanssa,kanssa,together,,produces,word
+item_560,prepositions,pois,pois,away,away,produces,word
+item_561,prepositions,alla,alla,under,under,produces,word
+item_562,prepositions,edessä,edessä,in front,in front,produces,word
+item_563,prepositions,kiinni,kiinni,closed,,produces,word
+item_564,prepositions,päällä (päälle),päällä (päälle),on,on,produces,word
+item_565,prepositions,siellä (sinne),siellä (sinne),there,there,produces,word
+item_566,prepositions,sisään,sisään,go inside,,produces,word
+item_567,prepositions,tuolla (tuonne),tuolla (tuonne),out there,,produces,word
+item_568,prepositions,ulkona,ulkona,ouside,,produces,word
+item_569,prepositions,vieressä,vieressä,beside,,produces,word
+item_570,prepositions,ylös,ylös,up,up,produces,word
+item_571,prepositions,sisällä (sisälle),sisällä (sisälle),is inside,,produces,word
+item_572,prepositions,takana,takana,is below,,produces,word
+item_573,prepositions,täällä (tänne),täällä (tänne),here,here,produces,word
+item_574,prepositions,ulos,ulos,go out,go out,produces,word
+item_575,prepositions,yläpuolella,yläpuolella,above,above,produces,word
+item_576,prepositions,ympärillä,ympärillä,around,,produces,word
+item_577,quantifiers,enemmän,enemmän,more,more,produces,word
+item_578,quantifiers,lisää,lisää,even more,,produces,word
+item_579,quantifiers,paljon,paljon,much,much,produces,word
+item_580,quantifiers,toinen,toinen,other,other,produces,word
+item_581,quantifiers,vähän,vähän,few,,produces,word
+item_582,quantifiers,kaikki,kaikki,everybody,,produces,word
+item_583,quantifiers,monta,monta,many,many,produces,word
+item_584,quantifiers,sama,sama,same,same,produces,word
+item_585,quantifiers,vähemmän,vähemmän,less,,produces,word
+item_586,connecting_words,heti,heti,right away,,produces,word
+item_587,connecting_words,jo,jo,already,already,produces,word
+item_588,connecting_words,koska,koska,because,because,produces,word
+item_589,connecting_words,niin,niin,so,,produces,word
+item_590,connecting_words,taas,taas,again,again,produces,word
+item_591,connecting_words,ja,ja,and,and,produces,word
+item_592,connecting_words,jos,jos,if,if,produces,word
+item_593,connecting_words,mutta,mutta,but,,produces,word
+item_594,connecting_words,sitten,sitten,then,,produces,word
+item_595,connecting_words,tai,tai,or,,produces,word

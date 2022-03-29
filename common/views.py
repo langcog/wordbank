@@ -52,10 +52,10 @@ class Publications(View):
 class Contributors(View):
 
     def get(self, request):
-        sources = Source.objects.annotate(n = Count('administration')).order_by('instrument_language')
+        sources = Dataset.objects.annotate(n = Count('administration')).order_by('instrument__language')
         language_sources_dict = defaultdict(lambda: defaultdict(int))
         for source in sources:
-            language_sources_dict[source.instrument_language][(source.contributor, source.instrument_form, source.license, source.citation)] += source.n
+            language_sources_dict[source.instrument.language][(source.contributor, source.instrument.form, source.license, source.citation)] += source.n
 
         languages = sorted(language_sources_dict.keys())
         language_sources_list = [[language, dict(language_sources_dict[language])] for language in languages]
