@@ -62,3 +62,11 @@ from .schemas.Finnish_WS import *
 from .schemas.Finnish_WS_Short import *
 from .schemas.American_Sign_Language_CDI import *
 from .schemas.Dutch_Swingley import *
+from .schemas.Dutch_WS import *
+from .schemas.Dutch_WG import *
+from .schemas.Dutch_FormOne import *
+from .schemas.Dutch_FormOne import *
+from .schemas.Dutch_FormTwoA import *
+from .schemas.Dutch_FormTwoA import *
+from .schemas.Dutch_FormTwoB import *
+from .schemas.Dutch_FormThree import *

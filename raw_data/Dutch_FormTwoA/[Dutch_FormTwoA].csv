@@ -1,0 +1,113 @@
+itemID,category,definition,gloss,uni_lemma,choices,item,type
+item_1,sounds,behbeh(schaap),baa baa,baa baa,understands;produces,behbeh(schaap),word
+item_2,sounds,beu/boe/meu/moeh(koe),moo,moo,understands;produces,beu/boe/meu/moeh(koe),word
+item_3,sounds,ie-aaie-aa(ezel),hee-haw,bray,understands;produces,ie-aaie-aa(ezel),word
+item_4,sounds,ohooh(verbazing),,,understands;produces,ohooh(verbazing),word
+item_5,sounds,tjoek(e)tjoek(trein),choo choo,choo choo,understands;produces,tjoek(e)tjoek(trein),word
+item_6,sounds,vroem/broem(auto),vroom,vroom,understands;produces,vroem/broem(auto),word
+item_7,animals,egel,hedgehog,hedgehog,understands;produces,egel,word
+item_8,animals,ezel,donkey,donkey,understands;produces,ezel,word
+item_9,animals,haan,chicken (animal),chicken (animal),understands;produces,haan,word
+item_10,animals,hond(je),(little) dog,dog,understands;produces,hond(je),word
+item_11,animals,koe,cow,cow,understands;produces,koe,word
+item_12,animals,leeuw,lion,lion,understands;produces,leeuw,word
+item_13,animals,olifant,elephant,elephant,understands;produces,olifant,word
+item_14,animals,papegaai,parrot,parrot,understands;produces,papegaai,word
+item_15,animals,pinguin/Pingu,penguin,penguin,understands;produces,pinguin/Pingu,word
+item_16,animals,slang,snake,snake,understands;produces,slang,word
+item_17,animals,vlinder,butterfly,butterfly,understands;produces,vlinder,word
+item_18,animals,zebra,zebra,zebra,understands;produces,zebra,word
+item_19,vehicles,auto,car,car,understands;produces,auto,word
+item_20,vehicles,fiets,bike,bicycle,understands;produces,fiets,word
+item_21,vehicles,vrachtwagen/camion/vrachtauto,truck,truck,understands;produces,vrachtwagen/camion/vrachtauto,word
+item_22,toys,ballon,balloon,balloon,understands;produces,ballon,word
+item_23,toys,kleurpotloden,colored pencils,pencil,understands;produces,kleurpotloden,word
+item_24,food_drink,boter,butter,butter,understands;produces,boter,word
+item_25,food_drink,cake,cake,cake,understands;produces,cake,word
+item_26,food_drink,frieten/frietjes,fries,fries,understands;produces,frieten/frietjes,word
+item_27,food_drink,kaas,cheese,cheese,understands;produces,kaas,word
+item_28,food_drink,kroketjes/gebakkenaardappeltjes,,,understands;produces,kroketjes/gebakkenaardappeltjes,word
+item_29,food_drink,rijst,rice,rice,understands;produces,rijst,word
+item_30,food_drink,spaghetti,spaghetti,spaghetti,understands;produces,spaghetti,word
+item_31,food_drink,vlees,meat/flesh,meat,understands;produces,vlees,word
+item_32,clothing,kous/sok,sock,sock,understands;produces,kous/sok,word
+item_33,clothing,luier/pamper,diaper,diaper,understands;produces,luier/pamper,word
+item_34,clothing,muts,hat/cap (material=wool),hat,understands;produces,muts,word
+item_35,clothing,rits,zipper,zipper,understands;produces,rits,word
+item_36,clothing,T-shirt,T-shirt,t-shirt,understands;produces,T-shirt,word
+item_37,clothing,zwembroek/zwempak/badpak,swimming pants/swimming suit,swimwear,understands;produces,zwembroek/zwempak/badpak,word
+item_38,body_parts,borst,breast,breast,understands;produces,borst,word
+item_39,body_parts,hand,hand,hand,understands;produces,hand,word
+item_40,body_parts,lippen,lips,lip,understands;produces,lippen,word
+item_41,body_parts,neus,nose,nose,understands;produces,neus,word
+item_42,household,bord,plate,plate,understands;produces,bord,word
+item_43,household,camera/fototoestel,camera,camera,understands;produces,camera/fototoestel,word
+item_44,household,deken/dekbed,blanket,blanket,understands;produces,deken/dekbed,word
+item_45,household,pot,jar,jar,understands;produces,pot,word
+item_46,household,rommel,mess,mess,understands;produces,rommel,word
+item_47,household,tandenborstel,toothbrush,toothbrush,understands;produces,tandenborstel,word
+item_48,household,washandje,washcloth,washcloth,understands;produces,washandje,word
+item_49,household,zakdoek(papier),tissue,tissue,understands;produces,zakdoek(papier),word
+item_50,furniture_rooms,kachel/openhaard,heater/fireplace,heater/fireplace,understands;produces,kachel/openhaard,word
+item_51,furniture_rooms,koelkast/frigo/ijskast/diepvries,fridge/freezer,fridge/freezer,understands;produces,koelkast/frigo/ijskast/diepvries,word
+item_52,furniture_rooms,slaapkamer,bedroom,bedroom,understands;produces,slaapkamer,word
+item_53,furniture_rooms,tafel,table,table,understands;produces,tafel,word
+item_54,furniture_rooms,wasmachine,washing machine,washing machine,understands;produces,wasmachine,word
+item_55,outside,ladder,ladder,ladder,understands;produces,ladder,word
+item_56,outside,stok,stick,stick,understands;produces,stok,word
+item_57,outside,wolk,cloud,cloud,understands;produces,wolk,word
+item_58,places,bakker,baker,baker,understands;produces,bakker,word
+item_59,places,buiten,outdoor,outdoors,understands;produces,buiten,word
+item_60,places,crÃ¨che/kinderdagverblijf,daycare,daycare,understands;produces,crÃ¨che/kinderdagverblijf,word
+item_61,people,mevrouw,Mrs,,understands;produces,mevrouw,word
+item_62,people,opa,granddad,grandpa,understands;produces,opa,word
+item_63,people,vriend/vriendin,friend,friend,understands;produces,vriend/vriendin,word
+item_64,games_routines,dadadoen/daaag,say bye,,understands;produces,dadadoen/daaag,word
+item_65,games_routines,danku/dankuwel,thank you,thanks,understands;produces,danku/dankuwel,word
+item_66,games_routines,handjesdraaien/klappenindehandjes/stampenmetdevoetjes,turning hands/clapping hands/stamping feet,,understands;produces,handjesdraaien/klappenindehandjes/stampenmetdevoetjes,word
+item_67,games_routines,inbadgaan,take a bath,take a bath,understands;produces,inbadgaan,word
+item_68,games_routines,ja,yes,yes,understands;produces,ja,word
+item_69,games_routines,kiekeboe/piep!,peek a boo,peek a boo,understands;produces,kiekeboe/piep!,word
+item_70,games_routines,middageten,lunch,lunch,understands;produces,middageten,word
+item_71,games_routines,nee,no,no,understands;produces,nee,word
+item_72,games_routines,ronddraaien,turn around,turn around,understands;produces,ronddraaien,word
+item_73,games_routines,slaapwel/goedenacht/welterusten/slaaplekker,goodnight/sleep well,goodnight/sleep well,understands;produces,slaapwel/goedenacht/welterusten/slaaplekker,word
+item_74,games_routines,sst(zwijgen)/stilzijn,shh,shush,understands;produces,sst(zwijgen)/stilzijn,word
+item_75,descriptive_words,droog,dry,dry (description),understands;produces,droog,word
+item_76,descriptive_words,koud,cold,cold,understands;produces,koud,word
+item_77,descriptive_words,moeilijk,difficult,difficult,understands;produces,moeilijk,word
+item_78,descriptive_words,nieuw,new,new,understands;produces,nieuw,word
+item_79,descriptive_words,slecht,bad,bad,understands;produces,slecht,word
+item_80,descriptive_words,stout,naughty,naughty,understands;produces,stout,word
+item_81,descriptive_words,vlug/snel,quick,quick,understands;produces,vlug/snel,word
+item_82,descriptive_words,warm/heet,warm/hot,warm,understands;produces,warm/heet,word
+item_83,descriptive_words,zwart,black,black,understands;produces,zwart,word
+item_84,action_words,botsen,to bump,bump,understands;produces,botsen,word
+item_85,action_words,haasten/zichspoeden,to hurry up,to hurry up,understands;produces,haasten/zichspoeden,word
+item_86,action_words,houdenvan/graagzien/liefvinden,to love,love (verb),understands;produces,houdenvan/graagzien/liefvinden,word
+item_87,action_words,inschenken/gieten,to pour,pour (verb),understands;produces,inschenken/gieten,word
+item_88,action_words,kietelen,to tickle,tickle,understands;produces,kietelen,word
+item_89,action_words,latenvallen,to drop,drop,understands;produces,latenvallen,word
+item_90,action_words,likken,to lick,lick,understands;produces,likken,word
+item_91,action_words,luisteren,to listen,listen (verb),understands;produces,luisteren,word
+item_92,action_words,maken,to make,make,understands;produces,maken,word
+item_93,action_words,passen,to try on (clothes,try on,understands;produces,passen,word
+item_94,action_words,schilderen/verven,to paint,paint (verb),understands;produces,schilderen/verven,word
+item_95,action_words,verstoppen,to hide,hide,understands;produces,verstoppen,word
+item_96,action_words,zitten,to sit,sit,understands;produces,zitten,word
+item_97,action_words,zwaaien/wuiven,to wave,wave (verb),understands;produces,zwaaien/wuiven,word
+item_98,time_words,later/straks,later/soon,soon,understands;produces,later/straks,word
+item_99,time_words,voor(tijd),before,before,understands;produces,voor(tijd),word
+item_100,pronouns,ik,I,i,understands;produces,ik,word
+item_101,question_words,wat,what,what,understands;produces,wat,word
+item_102,locations,aan,to,to,understands;produces,aan,word
+item_103,locations,beneden,beneath,under,understands;produces,beneden,word
+item_104,locations,in/binnen(in),in(side),in,understands;produces,in/binnen(in),word
+item_105,locations,uit,out,out,understands;produces,uit,word
+item_106,quantifiers,ander(e),other,other,understands;produces,ander(e),word
+item_107,quantifiers,een,a/an,a,understands;produces,een,word
+item_108,quantifiers,ook,too,too,understands;produces,ook,word
+item_109,helping_verbs,moet(bvbikmoet),have to/must,have to,understands;produces,moet(bvbikmoet),word
+item_110,helping_verbs,nietdoen,don't do,not do,understands;produces,nietdoen,word
+item_111,action_words,knuffelen,to hug,hug,understands;produces,knuffelen,word
+item_112,helping_verbs,ikwil,I want,want,understands;produces,ikwil,word
