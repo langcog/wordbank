@@ -1,0 +1,807 @@
+column,field,group,type
+sampleID,study_id,child,study_id
+gender,sex,child,sex
+age (months),data_age,admin,data_age
+snd_baa baa (sheep),item_1,item,word
+snd_ribbit (frog),item_2,item,word
+snd_grrr (bear),item_3,item,word
+snd_squeak (mouse),item_4,item,word
+snd_choo-choo (train),item_5,item,word
+snd_honk (goose),item_6,item,word
+snd_quack quack (duck),item_7,item,word
+snd_yum yum...12,item_8,item,word
+snd_ups,item_9,item,word
+snd_whoo-whoo (owl),item_10,item,word
+snd_ouch,item_11,item,word
+snd_cockadoodledoo (rooster),item_12,item,word
+snd_squeak (rabbit),item_13,item,word
+snd_naa (goat),item_14,item,word
+snd_meow (cat),item_15,item,word
+snd_moo (cow),item_16,item,word
+snd_yum yum...21,item_17,item,word
+snd_neigh (horse),item_18,item,word
+snd_wee-woo (ambulance),item_19,item,word
+snd_bye-bye (goodbye),item_20,item,word
+snd_chirp (chicken),item_21,item,word
+snd_honk (car horn),item_22,item,word
+snd_oink (pig),item_23,item,word
+snd_woof woof,item_24,item,word
+an_animal,item_25,item,word
+an_owl,item_26,item,word
+an_sheep,item_27,item,word
+an_frog,item_28,item,word
+an_calf,item_29,item,word
+an_bug,item_30,item,word
+an_kitty,item_31,item,word
+an_neddy,item_32,item,word
+an_chicken,item_33,item,word
+an_mouse,item_34,item,word
+an_elephant,item_35,item,word
+an_wolf,item_36,item,word
+an_fish,item_37,item,word
+an_ant,item_38,item,word
+an_duck,item_39,item,word
+an_rooster,item_40,item,word
+an_goat,item_41,item,word
+an_alligator,item_42,item,word
+an_dog,item_43,item,word
+an_butterfly,item_44,item,word
+an_goose,item_45,item,word
+an_horse,item_46,item,word
+an_cat,item_47,item,word
+an_bird,item_48,item,word
+an_monkey,item_49,item,word
+an_pig,item_50,item,word
+an_bear,item_51,item,word
+an_squirrel,item_52,item,word
+an_bunny,item_53,item,word
+an_lion,item_54,item,word
+an_roe,item_55,item,word
+an_foal,item_56,item,word
+an_penguin,item_57,item,word
+an_pony,item_58,item,word
+an_turkey,item_59,item,word
+an_donkey,item_60,item,word
+an_deer,item_61,item,word
+an_cow,item_62,item,word
+an_turtle,item_63,item,word
+an_tiger,item_64,item,word
+an_hen,item_65,item,word
+an_zebra,item_66,item,word
+an_giraffe,item_67,item,word
+vhc_car (automobile),item_68,item,word
+vhc_stroller,item_69,item,word
+vhc_bicycle,item_70,item,word
+vhc_bus,item_71,item,word
+vhc_boat,item_72,item,word
+vhc_helicopter,item_73,item,word
+vhc_car (in general),item_74,item,word
+vhc_ambulance,item_75,item,word
+vhc_subway,item_76,item,word
+vhc_motorcycle,item_77,item,word
+vhc_airplane,item_78,item,word
+vhc_sled,item_79,item,word
+vhc_truck,item_80,item,word
+vhc_tractor,item_81,item,word
+vhc_trolleybus,item_82,item,word
+vhc_firetruck,item_83,item,word
+vhc_tram,item_84,item,word
+vhc_train,item_85,item,word
+toy_present,item_86,item,word
+toy_doll,item_87,item,word
+toy_bubbles,item_88,item,word
+toy_pencil,item_89,item,word
+toy_rake,item_90,item,word
+toy_ball (hard like taws),item_91,item,word
+toy_play dough,item_92,item,word
+toy_toy (or game in general),item_93,item,word
+toy_card,item_94,item,word
+toy_puzzle,item_95,item,word
+toy_block,item_96,item,word
+toy_book,item_97,item,word
+toy_chalk,item_98,item,word
+toy_ball,item_99,item,word
+toy_shovel,item_100,item,word
+toy_Lego,item_101,item,word
+toy_balloon,item_102,item,word
+toy_story,item_103,item,word
+toy_glue,item_104,item,word
+toy_pen,item_105,item,word
+toy_bucket,item_106,item,word
+toy_crayon,item_107,item,word
+fd_apple,item_108,item,word
+fd_beans,item_109,item,word
+fd_banana,item_110,item,word
+fd_peach (also apricot),item_111,item,word
+fd_peas,item_112,item,word
+fd_potato chip,item_113,item,word
+fd_candy/sugar,item_114,item,word
+fd_chicken,item_115,item,word
+fd_chocolate,item_116,item,word
+fd_melon,item_117,item,word
+fd_nuts,item_118,item,word
+fd_strawberry,item_119,item,word
+fd_food,item_120,item,word
+fd_ice cream,item_121,item,word
+fd_donut,item_122,item,word
+fd_cold cuts,item_123,item,word
+fd_vegetable meal,item_124,item,word
+fd_juice,item_125,item,word
+fd_fish,item_126,item,word
+fd_hamburger,item_127,item,word
+fd_meat,item_128,item,word
+fd_drink,item_129,item,word
+fd_popsicle,item_130,item,word
+fd_yogurt,item_131,item,word
+fd_cacao (drink),item_132,item,word
+fd_food (informal),item_133,item,word
+fd_coffee,item_134,item,word
+fd_cracker,item_135,item,word
+fd_bread,item_136,item,word
+fd_croissant,item_137,item,word
+fd_coke,item_138,item,word
+fd_sausage,item_139,item,word
+fd_canned food,item_140,item,word
+fd_pear,item_141,item,word
+fd_potato,item_142,item,word
+fd_corn,item_143,item,word
+fd_soup,item_144,item,word
+fd_marmalade,item_145,item,word
+fd_raspberry,item_146,item,word
+fd_mandarin,item_147,item,word
+fd_raisin,item_148,item,word
+fd_hazelnut,item_149,item,word
+fd_muesli,item_150,item,word
+fd_orange,item_151,item,word
+fd_lollipop,item_152,item,word
+fd_pancake,item_153,item,word
+fd_paprika,item_154,item,word
+fd_tomato,item_155,item,word
+fd_popcorn,item_156,item,word
+fd_pretzel,item_157,item,word
+fd_toast,item_158,item,word
+fd_scone,item_159,item,word
+fd_gum,item_160,item,word
+fd_rice,item_161,item,word
+fd_cracker stick,item_162,item,word
+fd_cheese,item_163,item,word
+fd_carrots,item_164,item,word
+fd_salt,item_165,item,word
+fd_ham,item_166,item,word
+fd_spaghetti,item_167,item,word
+fd_french fries,item_168,item,word
+fd_cookie,item_169,item,word
+fd_salami,item_170,item,word
+fd_sandwich,item_171,item,word
+fd_plum,item_172,item,word
+fd_soda water,item_173,item,word
+fd_sauce,item_174,item,word
+fd_grapes,item_175,item,word
+fd_tea,item_176,item,word
+fd_milk,item_177,item,word
+fd_milk rice,item_178,item,word
+fd_milk drizzle,item_179,item,word
+fd_pasta,item_180,item,word
+fd_egg,item_181,item,word
+fd_cake,item_182,item,word
+fd_cottage cheese,item_183,item,word
+fd_pickle,item_184,item,word
+fd_soda/pop,item_185,item,word
+fd_butter,item_186,item,word
+fd_water,item_187,item,word
+fd_buns,item_188,item,word
+cl_underpants,item_189,item,word
+cl_shoe,item_190,item,word
+cl_shoelace,item_191,item,word
+cl_boots,item_192,item,word
+cl_jacket,item_193,item,word
+cl_bib,item_194,item,word
+cl_jeans,item_195,item,word
+cl_pants,item_196,item,word
+cl_button,item_197,item,word
+cl_tights,item_198,item,word
+cl_shirt,item_199,item,word
+cl_coat,item_200,item,word
+cl_hat,item_201,item,word
+cl_gloves,item_202,item,word
+cl_trousers,item_203,item,word
+cl_necklace,item_204,item,word
+cl_belt,item_205,item,word
+cl_slipper,item_206,item,word
+cl_diaper,item_207,item,word
+cl_pajamas,item_208,item,word
+cl_t-shirt,item_209,item,word
+cl_sweater,item_210,item,word
+cl_shorts,item_211,item,word
+cl_dress,item_212,item,word
+cl_scarf,item_213,item,word
+cl_cap,item_214,item,word
+cl_sandal,item_215,item,word
+cl_skirt,item_216,item,word
+cl_tricot,item_217,item,word
+cl_sneaker,item_218,item,word
+cl_handkerchief,item_219,item,word
+cl_zipper,item_220,item,word
+cl_sock,item_221,item,word
+bp_lips,item_222,item,word
+bp_chin,item_223,item,word
+bp_face,item_224,item,word
+bp_ankle,item_225,item,word
+bp_head,item_226,item,word
+bp_buttocks/bottom,item_227,item,word
+bp_tooth,item_228,item,word
+bp_ear,item_229,item,word
+bp_hair,item_230,item,word
+bp_tummy,item_231,item,word
+bp_back,item_232,item,word
+bp_poop (feces),item_233,item,word
+bp_arm,item_234,item,word
+bp_hand,item_235,item,word
+bp_belly button,item_236,item,word
+bp_nails,item_237,item,word
+bp_penis,item_238,item,word
+bp_leg,item_239,item,word
+bp_feet,item_240,item,word
+bp_toe,item_241,item,word
+bp_chest,item_242,item,word
+bp_vagina,item_243,item,word
+bp_neck,item_244,item,word
+bp_tongue,item_245,item,word
+bp_nose,item_246,item,word
+bp_pee,item_247,item,word
+bp_wound,item_248,item,word
+bp_mouth,item_249,item,word
+bp_eye,item_250,item,word
+bp_sole,item_251,item,word
+bp_knee,item_252,item,word
+bp_finger,item_253,item,word
+bp_shoulder,item_254,item,word
+hh_penny,item_255,item,word
+hh_mug,item_256,item,word
+hh_CD,item_257,item,word
+hh_tape,item_258,item,word
+hh_cup,item_259,item,word
+hh_dish,item_260,item,word
+hh_box,item_261,item,word
+hh_mop,item_262,item,word
+hh_picture,item_263,item,word
+hh_camera,item_264,item,word
+hh_comb,item_265,item,word
+hh_toothbrush,item_266,item,word
+hh_pliers,item_267,item,word
+hh_medicine,item_268,item,word
+hh_playpen,item_269,item,word
+hh_spoon,item_270,item,word
+hh_hammer,item_271,item,word
+hh_brush,item_272,item,word
+hh_knife,item_273,item,word
+hh_can,item_274,item,word
+hh_basket,item_275,item,word
+hh_keys,item_276,item,word
+hh_lamp,item_277,item,word
+hh_stereo,item_278,item,word
+hh_microwave,item_279,item,word
+hh_scissors,item_280,item,word
+hh_clock,item_281,item,word
+hh_paper,item_282,item,word
+hh_tissue/kleenex,item_283,item,word
+hh_pillow,item_284,item,word
+hh_money,item_285,item,word
+hh_purse,item_286,item,word
+hh_glass,item_287,item,word
+hh_vacuum,item_288,item,word
+hh_radio,item_289,item,word
+hh_broom,item_290,item,word
+hh_napkin,item_291,item,word
+hh_soap,item_292,item,word
+hh_garbage/trash,item_293,item,word
+hh_glasses,item_294,item,word
+hh_nail,item_295,item,word
+hh_blanket,item_296,item,word
+hh_bowl,item_297,item,word
+hh_tray,item_298,item,word
+hh_plate,item_299,item,word
+hh_telephone,item_300,item,word
+hh_TV,item_301,item,word
+hh_towel,item_302,item,word
+hh_bottle,item_303,item,word
+hh_video,item_304,item,word
+hh_fork,item_305,item,word
+hh_light bulb,item_306,item,word
+hh_bucket,item_307,item,word
+fr_window,item_308,item,word
+fr_bed,item_309,item,word
+fr_door,item_310,item,word
+fr_table,item_311,item,word
+fr_crib,item_312,item,word
+fr_balcony,item_313,item,word
+fr_high chair,item_314,item,word
+fr_drawer,item_315,item,word
+fr_armchair,item_316,item,word
+fr_bathtub,item_317,item,word
+fr_bathroom,item_318,item,word
+fr_garage,item_319,item,word
+fr_cot,item_320,item,word
+fr_bedroom,item_321,item,word
+fr_rocking chair,item_322,item,word
+fr_refrigerator,item_323,item,word
+fr_sofa,item_324,item,word
+fr_kitchen,item_325,item,word
+fr_stairs,item_326,item,word
+fr_washbasin,item_327,item,word
+fr_sink,item_328,item,word
+fr_washing machine,item_329,item,word
+fr_living room,item_330,item,word
+fr_bench,item_331,item,word
+fr_attic,item_332,item,word
+fr_basement,item_333,item,word
+fr_shelf,item_334,item,word
+fr_vacuum cleaner,item_335,item,word
+fr_oven,item_336,item,word
+fr_dryer,item_337,item,word
+fr_chair,item_338,item,word
+fr_closet,item_339,item,word
+fr_room,item_340,item,word
+fr_mat,item_341,item,word
+fr_stove,item_342,item,word
+fr_toilet,item_343,item,word
+fr_shower,item_344,item,word
+ot_zoo,item_345,item,word
+ot_supermarket,item_346,item,word
+ot_inside,item_347,item,word
+ot_gas station,item_348,item,word
+ot_store,item_349,item,word
+ot_stick,item_350,item,word
+ot_circus,item_351,item,word
+ot_star,item_352,item,word
+ot_slide,item_353,item,word
+ot_workplace,item_354,item,word
+ot_sky,item_355,item,word
+ot_woods,item_356,item,word
+ot_rain,item_357,item,word
+ot_tree,item_358,item,word
+ot_village,item_359,item,word
+ot_cloud,item_360,item,word
+ot_grass,item_361,item,word
+ot_lawn mower,item_362,item,word
+pl_house,item_363,item,word
+ot_swing,item_364,item,word
+ot_snow,item_365,item,word
+ot_snowman,item_366,item,word
+ot_moon,item_367,item,word
+pl_school,item_368,item,word
+ot_sidewalk,item_369,item,word
+pl_playground,item_370,item,word
+pl_camping,item_371,item,word
+ot_garden,item_372,item,word
+pl_outside,item_373,item,word
+pl_excursion,item_374,item,word
+pl_downtown,item_375,item,word
+ot_stone,item_376,item,word
+ot_ladder,item_377,item,word
+ot_hose/sprinkler,item_378,item,word
+ot_playground climber,item_379,item,word
+pl_movie,item_380,item,word
+ot_sun,item_381,item,word
+pl_home,item_382,item,word
+pl_park,item_383,item,word
+pl_market,item_384,item,word
+pl_plaza,item_385,item,word
+pl_beach,item_386,item,word
+ot_wind,item_387,item,word
+ot_rock,item_388,item,word
+pl_church,item_389,item,word
+ot_roof,item_390,item,word
+ot_yard/backyard,item_391,item,word
+ot_swimming pool,item_392,item,word
+ot_street,item_393,item,word
+pl_country,item_394,item,word
+ot_flower,item_395,item,word
+ot_water,item_396,item,word
+ot_flag,item_397,item,word
+ppl_mommy,item_398,item,word
+ppl_daddy,item_399,item,word
+ppl_baby,item_400,item,word
+ppl_uncle (also used as 'mr' with first names e.g. Péter bácsi),item_401,item,word
+ppl_friend,item_402,item,word
+ppl_clown,item_403,item,word
+ppl_child,item_404,item,word
+ppl_person,item_405,item,word
+ppl_man,item_406,item,word
+ppl_boy,item_407,item,word
+ppl_child's own name,item_408,item,word
+ppl_pet's name,item_409,item,word
+ppl_sister,item_410,item,word
+ppl_girl,item_411,item,word
+ppl_grandma,item_412,item,word
+ppl_uncle,item_413,item,word
+ppl_aunt,item_414,item,word
+ppl_grandpa,item_415,item,word
+ppl_lady,item_416,item,word
+ppl_brother,item_417,item,word
+ppl_doctor,item_418,item,word
+ppl_kindergarten teacher,item_419,item,word
+ppl_name of the child's kindergarten teacher,item_420,item,word
+ppl_mailman,item_421,item,word
+ppl_police,item_422,item,word
+ppl_teacher,item_423,item,word
+ppl_fireman,item_424,item,word
+gr_peekaboo,item_425,item,word
+gr_give me five!,item_426,item,word
+gr_handkiss (as a greeting toward adults),item_427,item,word
+gr_lunch,item_428,item,word
+gr_this little piggy,item_429,item,word
+gr_tag (game),item_430,item,word
+gr_bath,item_431,item,word
+gr_hallo (answering the telephone),item_432,item,word
+gr_hello,item_433,item,word
+gr_yes,item_434,item,word
+gr_night night,item_435,item,word
+gr_good night,item_436,item,word
+gr_good appetite,item_437,item,word
+gr_good morning (during the day),item_438,item,word
+gr_good morning (during the morning),item_439,item,word
+gr_please,item_440,item,word
+gr_ready (done),item_441,item,word
+gr_thank you,item_442,item,word
+gr_no,item_443,item,word
+gr_go potty,item_444,item,word
+gr_shh/shush/hush,item_445,item,word
+gr_breakfast,item_446,item,word
+gr_hi,item_447,item,word
+gr_you're welcome,item_448,item,word
+gr_nap,item_449,item,word
+gr_call (on phone),item_450,item,word
+gr_mid-morning snack,item_451,item,word
+gr_dinner,item_452,item,word
+gr_shopping,item_453,item,word
+gr_bye,item_454,item,word
+ac_stop (doing sg),item_455,item,word
+ac_give,item_456,item,word
+ac_want,item_457,item,word
+ac_stand,item_458,item,word
+ac_sleep,item_459,item,word
+ac_hurt (active),item_460,item,word
+ac_finish,item_461,item,word
+ac_talk,item_462,item,word
+ac_close...70,item_463,item,word
+ac_ride bicycle,item_464,item,word
+ac_drip,item_465,item,word
+ac_drop (liquid),item_466,item,word
+ac_tickle,item_467,item,word
+ac_make/do,item_468,item,word
+ac_close...76,item_469,item,word
+ac_slide,item_470,item,word
+ac_sit (IDS word),item_471,item,word
+ac_throw,item_472,item,word
+ac_work,item_473,item,word
+ac_hide,item_474,item,word
+ac_fall,item_475,item,word
+ac_forget,item_476,item,word
+ac_share,item_477,item,word
+ac_tear,item_478,item,word
+ac_break...86,item_479,item,word
+ac_take,item_480,item,word
+ac_allow,item_481,item,word
+ac_drop,item_482,item,word
+ac_sing,item_483,item,word
+ac_build,item_484,item,word
+ac_eat,item_485,item,word
+ac_feed,item_486,item,word
+ac_hurt (as a feeling),item_487,item,word
+ac_feel cold,item_488,item,word
+ac_feel scared,item_489,item,word
+ac_wake,item_490,item,word
+ac_get up,item_491,item,word
+ac_pay attention / listen,item_492,item,word
+ac_cook,item_493,item,word
+ac_splash,item_494,item,word
+ac_blow,item_495,item,word
+ac_run...103,item_496,item,word
+ac_take bath,item_497,item,word
+ac_think,item_498,item,word
+ac_let,item_499,item,word
+ac_hear,item_500,item,word
+ac_listen,item_501,item,word
+ac_bite,item_502,item,word
+ac_call,item_503,item,word
+ac_swing,item_504,item,word
+ac_bring,item_505,item,word
+ac_touch,item_506,item,word
+ac_pull,item_507,item,word
+ac_write,item_508,item,word
+ac_water (= give drink),item_509,item,word
+ac_walk...117,item_510,item,word
+ac_drink,item_511,item,word
+ac_play,item_512,item,word
+ac_come,item_513,item,word
+ac_poop,item_514,item,word
+ac_get,item_515,item,word
+ac_switch,item_516,item,word
+ac_ask (to do sg),item_517,item,word
+ac_chase...125,item_518,item,word
+ac_open,item_519,item,word
+ac_knock,item_520,item,word
+ac_taste,item_521,item,word
+ac_play ball,item_522,item,word
+ac_see,item_523,item,word
+ac_'will' (future tense of verb 'be'),item_524,item,word
+ac_step,item_525,item,word
+ac_ride,item_526,item,word
+ac_bump,item_527,item,word
+ac_stay,item_528,item,word
+ac_climb,item_529,item,word
+ac_stop (moving),item_530,item,word
+ac_make/do (perfective),item_531,item,word
+ac_catch,item_532,item,word
+ac_grow,item_533,item,word
+ac_hug,item_534,item,word
+ac_hit...142,item_535,item,word
+ac_go,item_536,item,word
+ac_wash,item_537,item,word
+ac_wash (dishes),item_538,item,word
+ac_tell a story,item_539,item,word
+ac_say,item_540,item,word
+ac_smile,item_541,item,word
+ac_show,item_542,item,word
+ac_laugh,item_543,item,word
+ac_look/watch,item_544,item,word
+ac_lick,item_545,item,word
+ac_read,item_546,item,word
+ac_pour,item_547,item,word
+ac_not exist (negative of verb 'be'),item_548,item,word
+ac_pee,item_549,item,word
+ac_kiss,item_550,item,word
+ac_draw,item_551,item,word
+ac_put...159,item_552,item,word
+ac_shake,item_553,item,word
+ac_kick,item_554,item,word
+ac_help,item_555,item,word
+ac_walk...163,item_556,item,word
+ac_hurry,item_557,item,word
+ac_succeed,item_558,item,word
+ac_cry,item_559,item,word
+ac_sweep,item_560,item,word
+ac_rip,item_561,item,word
+ac_run...169,item_562,item,word
+ac_dry,item_563,item,word
+ac_cover,item_564,item,word
+ac_clean...172,item_565,item,word
+ac_love,item_566,item,word
+ac_find,item_567,item,word
+ac_dance,item_568,item,word
+ac_clap,item_569,item,word
+ac_hold,item_570,item,word
+ac_put...178,item_571,item,word
+ac_like,item_572,item,word
+ac_clean...180,item_573,item,word
+ac_push,item_574,item,word
+ac_break...182,item_575,item,word
+ac_wipe,item_576,item,word
+ac_jump,item_577,item,word
+ac_sit,item_578,item,word
+ac_chase...186,item_579,item,word
+ac_swim,item_580,item,word
+ac_hit...188,item_581,item,word
+ac_cut,item_582,item,word
+ac_answer,item_583,item,word
+ac_choose,item_584,item,word
+ac_be (present tense),item_585,item,word
+ac_wait,item_586,item,word
+ac_buy,item_587,item,word
+ac_buy/take,item_588,item,word
+ac_drive,item_589,item,word
+ac_carry,item_590,item,word
+ac_roar,item_591,item,word
+vm_through,item_592,item,word
+vm_in,item_593,item,word
+vm_into,item_594,item,word
+vm_away,item_595,item,word
+vm_up,item_596,item,word
+vm_home,item_597,item,word
+vm_here,item_598,item,word
+vm_out,item_599,item,word
+vm_down,item_600,item,word
+vm_to,item_601,item,word
+vm_(perfective),item_602,item,word
+vm_there,item_603,item,word
+vm_together,item_604,item,word
+vm_onto,item_605,item,word
+vm_apart,item_606,item,word
+vm_back,item_607,item,word
+dw_sleepy,item_608,item,word
+dw_cute,item_609,item,word
+dw_brown,item_610,item,word
+dw_sick,item_611,item,word
+dw_happy,item_612,item,word
+dw_smelly,item_613,item,word
+dw_stupid...11,item_614,item,word
+dw_quiet,item_615,item,word
+dw_mad,item_616,item,word
+dw_awake,item_617,item,word
+dw_alone,item_618,item,word
+dw_together,item_619,item,word
+dw_hungry,item_620,item,word
+dw_first,item_621,item,word
+dw_strong,item_622,item,word
+dw_painful,item_623,item,word
+dw_tired,item_624,item,word
+dw_white,item_625,item,word
+dw_black,item_626,item,word
+dw_hot,item_627,item,word
+dw_weak,item_628,item,word
+dw_fast,item_629,item,word
+dw_loud,item_630,item,word
+dw_cold,item_631,item,word
+dw_long,item_632,item,word
+dw_naughty,item_633,item,word
+dw_stupid...31,item_634,item,word
+dw_scared,item_635,item,word
+dw_good,item_636,item,word
+dw_better,item_637,item,word
+dw_nice/gentle,item_638,item,word
+dw_blue,item_639,item,word
+dw_hard,item_640,item,word
+dw_little,item_641,item,word
+dw_fat,item_642,item,word
+dw_slow,item_643,item,word
+dw_purple,item_644,item,word
+dw_high,item_645,item,word
+dw_smudgy,item_646,item,word
+dw_warm,item_647,item,word
+dw_angry,item_648,item,word
+dw_big,item_649,item,word
+dw_orange,item_650,item,word
+dw_heavy,item_651,item,word
+dw_clever,item_652,item,word
+dw_old,item_653,item,word
+dw_tiny,item_654,item,word
+dw_red,item_655,item,word
+dw_dirty,item_656,item,word
+dw_soft,item_657,item,word
+dw_sticky,item_658,item,word
+dw_neat,item_659,item,word
+dw_bad,item_660,item,word
+dw_yellow,item_661,item,word
+dw_muddy,item_662,item,word
+dw_dark,item_663,item,word
+dw_dry,item_664,item,word
+dw_poor,item_665,item,word
+dw_windy,item_666,item,word
+dw_pretty,item_667,item,word
+dw_thirsty,item_668,item,word
+dw_sad,item_669,item,word
+dw_full,item_670,item,word
+dw_clean,item_671,item,word
+dw_broken,item_672,item,word
+dw_new,item_673,item,word
+dw_yucky,item_674,item,word
+dw_smart (skillful),item_675,item,word
+dw_empty,item_676,item,word
+dw_last,item_677,item,word
+dw_wet,item_678,item,word
+dw_noisy,item_679,item,word
+dw_green,item_680,item,word
+nmb_one,item_681,item,word
+nmb_three,item_682,item,word
+nmb_two...80,item_683,item,word
+nmb_four,item_684,item,word
+nmb_two...82,item_685,item,word
+nmb_five,item_686,item,word
+ti_mid-morning,item_687,item,word
+ti_afternoon,item_688,item,word
+ti_night,item_689,item,word
+ti_just,item_690,item,word
+ti_before,item_691,item,word
+ti_evening,item_692,item,word
+ti_soon,item_693,item,word
+ti_tomorrow,item_694,item,word
+ti_time,item_695,item,word
+ti_later...93,item_696,item,word
+ti_today,item_697,item,word
+ti_later...95,item_698,item,word
+ti_in a minute,item_699,item,word
+ti_now,item_700,item,word
+ti_day,item_701,item,word
+ti_morning,item_702,item,word
+ti_right away,item_703,item,word
+ti_yesterday,item_704,item,word
+ti_after,item_705,item,word
+prn_that,item_706,item,word
+prn_those,item_707,item,word
+prn_I,item_708,item,word
+prn_me,item_709,item,word
+prn_mine,item_710,item,word
+prn_this,item_711,item,word
+prn_these,item_712,item,word
+prn_we,item_713,item,word
+prn_our,item_714,item,word
+prn_us,item_715,item,word
+prn_at her/him,item_716,item,word
+prn_to her/him,item_717,item,word
+prn_his/hers,item_718,item,word
+prn_he/she,item_719,item,word
+prn_they,item_720,item,word
+prn_them,item_721,item,word
+prn_him/her,item_722,item,word
+prn_on him/her,item_723,item,word
+prn_you,item_724,item,word
+prn_you (accusative),item_725,item,word
+prn_your,item_726,item,word
+prn_you (plural),item_727,item,word
+prn_you (plural & accusative),item_728,item,word
+prn_with her/him,item_729,item,word
+qw_how/that,item_730,item,word
+qw_how,item_731,item,word
+qw_where,item_732,item,word
+qw_from where,item_733,item,word
+qw_where to,item_734,item,word
+qw_who,item_735,item,word
+qw_whose,item_736,item,word
+qw_who (plural),item_737,item,word
+qw_to whom,item_738,item,word
+qw_about who,item_739,item,word
+qw_who (accusative),item_740,item,word
+qw_with whom,item_741,item,word
+qw_which,item_742,item,word
+qw_which way,item_743,item,word
+qw_what,item_744,item,word
+qw_why,item_745,item,word
+qw_what (plural),item_746,item,word
+qw_when,item_747,item,word
+qw_about what,item_748,item,word
+qw_what (accusative),item_749,item,word
+qw_with what,item_750,item,word
+qw_right?,item_751,item,word
+loc_under (as goal),item_752,item,word
+loc_under (as place),item_753,item,word
+loc_inside/in,item_754,item,word
+loc_upstairs,item_755,item,word
+loc_above (as goal),item_756,item,word
+loc_above (as place),item_757,item,word
+loc_here,item_758,item,word
+loc_outside,item_759,item,word
+loc_around,item_760,item,word
+loc_downstairs,item_761,item,word
+loc_next to (as goal),item_762,item,word
+loc_next to (as place),item_763,item,word
+loc_because of,item_764,item,word
+loc_behind (as place),item_765,item,word
+loc_behind (as goal),item_766,item,word
+loc_there,item_767,item,word
+qu_the (definite article 1),item_768,item,word
+qu_the (definite article 2),item_769,item,word
+qu_whole,item_770,item,word
+qu_same,item_771,item,word
+qu_one,item_772,item,word
+qu_few,item_773,item,word
+qu_less,item_774,item,word
+qu_other,item_775,item,word
+qu_another,item_776,item,word
+qu_all/every,item_777,item,word
+qu_none,item_778,item,word
+qu_a lot / much /many,item_779,item,word
+qu_more,item_780,item,word
+qu_too,item_781,item,word
+qu_something,item_782,item,word
+qu_some kind of,item_783,item,word
+hv_will,item_784,item,word
+hv_must/have to,item_785,item,word
+hv_might,item_786,item,word
+hv_would...184,item_787,item,word
+hv_try,item_788,item,word
+hv_can,item_789,item,word
+hv_used to,item_790,item,word
+hv_must not,item_791,item,word
+hv_able to,item_792,item,word
+hv_would...190,item_793,item,word
+cw_then,item_794,item,word
+cw_but...192,item_795,item,word
+cw_and,item_796,item,word
+cw_if,item_797,item,word
+cw_but...195,item_798,item,word
+cw_that,item_799,item,word
+cw_rather,item_800,item,word
+cw_because,item_801,item,word
+cw_even though,item_802,item,word
+...200,item_803,item,word
