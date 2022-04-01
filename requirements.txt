@@ -23,7 +23,7 @@ future==0.16.0
 gdata==2.0.18
 idna==2.10
 jmespath==0.10.0
-jsonschema==3.2
+jsonschema==3.2.0
 mysqlclient==2.0.3
 paramiko==2.7.2
 pathspec==0.5.9
@@ -33,7 +33,7 @@ PyNaCl==1.4.0
 pyrsistent==0.17.3
 python-dateutil==2.8.1
 pytz==2021.1
-PyYAML==5.4
+PyYAML==5.3.1
 requests==2.25.1
 rsa==4.7.2
 s3transfer==0.3.6
@@ -43,8 +43,7 @@ sqlparse==0.4.2
 termcolor==1.1.0
 texttable==1.6.3
 #tonyg-rfc3339 @ git+git://github.com/tonyg/python-rfc3339@ed7ebfc3c6ec80cc0bb4708e7d44eaa02148472d
-git+https://github.com/tonyg/python-rfc3339
-urllib3==1.26.5
+git+https://github.com/tonyg/python-rfc3339urllib3==1.25.11
 wcwidth==0.1.9
 websocket-client==0.58.0
 xlrd==2.0.1
