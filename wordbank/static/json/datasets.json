@@ -1518,6 +1518,19 @@
         "contributor": "Bergmann, C",
         "license": "CC-BY",
         "citation": "Bergmann, Christina, Hendriks, Cielke, de Bruin, Yvette, Egger, Julia, Fikkert, Paula, Hahn, Laura, Hunnius, Sabine, Johnson, Elisabeth, Junge, Caroline, Levelt, Claartje, Rulkens-Dijkstra, Nienke, Swingley, Daniel, Ward, Emma, & Rowland, Caroline. MB-CDI Dutch Pre-Norming Corpus. "
+    },
+    {
+        "name": "Kas",
+        "dataset": "",
+        "instrument_language": "Hungarian",
+        "instrument_form": "WS",
+        "file": "raw_data/Hungarian_WS/HungarianWS_Kas.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": true,
+        "contributor": "TBA",
+        "license": "CC-BY",
+        "citation": "TBA"
     }
 ]
 

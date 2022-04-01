@@ -70,3 +70,5 @@ from .schemas.Dutch_FormTwoA import *
 from .schemas.Dutch_FormTwoA import *
 from .schemas.Dutch_FormTwoB import *
 from .schemas.Dutch_FormThree import *
+from .schemas.Hungarian_WS import *
+from .schemas.Hungarian_WS import *
