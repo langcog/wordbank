@@ -1,6 +1,6 @@
-﻿field,column,group,type
+field,column,group,type
 study_id,child_id,child,study_id
-,age_grp,,
+data_age,age,admin,data_age
 sex,Gender,child,sex
 ethnicity,Ethnicity,child,ethnicity
 ,Language_Status,,
@@ -8,8 +8,8 @@ ethnicity,Ethnicity,child,ethnicity
 ,Father_education_lang_30,,
 mom_ed,Mother_education_30,child,mom_ed
 ,Mother_education_lang_30,,
-data_age,chron_age,admin,data_age
-,input_eng,,
+,Chronological_age_30,,
+,Input_percent_Eng_home_30,,
 languages,eng_prop,admin,language
 languages,spa_prop,admin,language
 ,lang_group,,
@@ -133,7 +133,7 @@ item_98,jamón,item,word
 item_99,jugo,item,word
 item_100,leche,item,word
 item_101,licuado,item,word
-item_103,limonada,item,word
+item_102,limonada,item,word
 item_104,mantequilla,item,word
 item_105,manzana,item,word
 item_106,melón,item,word
