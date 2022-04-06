@@ -1,6 +1,6 @@
 field,column,group,type
 study_id,child_id,child,study_id
-data_age,age,admin,data_age
+data_age,age_grp,admin,data_age
 sex,Gender,child,sex
 ethnicity,Ethnicity,child,ethnicity
 ,Language_Status,,
