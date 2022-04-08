@@ -11,6 +11,7 @@ from .schemas.French_Quebecois_WS import *
 from .schemas.German_WS import *
 from .schemas.Hebrew_WG import *
 from .schemas.Hebrew_WS import *
+from .schemas.Hungarian_WS import *
 from .schemas.Italian_WG import *
 from .schemas.Italian_WS import *
 from .schemas.Mandarin_Beijing_IC import *
@@ -65,10 +66,7 @@ from .schemas.Dutch_Swingley import *
 from .schemas.Dutch_WS import *
 from .schemas.Dutch_WG import *
 from .schemas.Dutch_FormOne import *
-from .schemas.Dutch_FormOne import *
-from .schemas.Dutch_FormTwoA import *
 from .schemas.Dutch_FormTwoA import *
 from .schemas.Dutch_FormTwoB import *
 from .schemas.Dutch_FormThree import *
-from .schemas.Hungarian_WS import *
-from .schemas.Hungarian_WS import *
+from .schemas.Spanish_Argentinian_WS import *

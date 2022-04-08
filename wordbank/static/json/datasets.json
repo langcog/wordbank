@@ -1531,6 +1531,19 @@
         "contributor": "TBA",
         "license": "CC-BY",
         "citation": "TBA"
+    },
+    {
+        "name": "Reches",
+        "dataset": "Resches",
+        "instrument_language": "Spanish (Argentinian)",
+        "instrument_form": "WS",
+        "file": "raw_data/Spanish_Argentinian_WS/Spanish_Argentinian_WS_Resches.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": true,
+        "contributor": "TBA",
+        "license": "CC-BY",
+        "citation": "TBA"
     }
 ]
 
