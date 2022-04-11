@@ -74,9 +74,9 @@ class Slovak_WG(BaseTable):
     item_35_choices = [('understands', 'understands')]
     item_35 = models.CharField(max_length=11, choices=item_35_choices, null=True)
     item_36_choices = [('never', 'never'), ('sometimes', 'sometimes'), ('often', 'often')]
-    item_36 = models.CharField(max_length=9, choices=item_36_choices, null=True)
+    item_36 = models.CharField(max_length=10, choices=item_36_choices, null=True)
     item_37_choices = [('never', 'never'), ('sometimes', 'sometimes'), ('often', 'often')]
-    item_37 = models.CharField(max_length=9, choices=item_37_choices, null=True)
+    item_37 = models.CharField(max_length=10, choices=item_37_choices, null=True)
     item_38_choices = [('understands', 'understands'), ('produces', 'produces')]
     item_38 = models.CharField(max_length=11, choices=item_38_choices, null=True)
     item_39_choices = [('understands', 'understands'), ('produces', 'produces')]
@@ -744,55 +744,55 @@ class Slovak_WG(BaseTable):
     item_370_choices = [('understands', 'understands'), ('produces', 'produces')]
     item_370 = models.CharField(max_length=11, choices=item_370_choices, null=True)
     item_371_choices = [('never', 'never'), ('sometimes', 'sometimes'), ('often', 'often')]
-    item_371 = models.CharField(max_length=9, choices=item_371_choices, null=True)
+    item_371 = models.CharField(max_length=10, choices=item_371_choices, null=True)
     item_372_choices = [('never', 'never'), ('sometimes', 'sometimes'), ('often', 'often')]
-    item_372 = models.CharField(max_length=9, choices=item_372_choices, null=True)
+    item_372 = models.CharField(max_length=10, choices=item_372_choices, null=True)
     item_373_choices = [('never', 'never'), ('sometimes', 'sometimes'), ('often', 'often')]
-    item_373 = models.CharField(max_length=9, choices=item_373_choices, null=True)
+    item_373 = models.CharField(max_length=10, choices=item_373_choices, null=True)
     item_374_choices = [('never', 'never'), ('sometimes', 'sometimes'), ('often', 'often')]
-    item_374 = models.CharField(max_length=9, choices=item_374_choices, null=True)
+    item_374 = models.CharField(max_length=10, choices=item_374_choices, null=True)
     item_375_choices = [('never', 'never'), ('sometimes', 'sometimes'), ('often', 'often')]
-    item_375 = models.CharField(max_length=9, choices=item_375_choices, null=True)
+    item_375 = models.CharField(max_length=10, choices=item_375_choices, null=True)
     item_376_choices = [('never', 'never'), ('sometimes', 'sometimes'), ('often', 'often')]
-    item_376 = models.CharField(max_length=9, choices=item_376_choices, null=True)
+    item_376 = models.CharField(max_length=10, choices=item_376_choices, null=True)
     item_377_choices = [('never', 'never'), ('sometimes', 'sometimes'), ('often', 'often')]
-    item_377 = models.CharField(max_length=9, choices=item_377_choices, null=True)
+    item_377 = models.CharField(max_length=10, choices=item_377_choices, null=True)
     item_378_choices = [('never', 'never'), ('sometimes', 'sometimes'), ('often', 'often')]
-    item_378 = models.CharField(max_length=9, choices=item_378_choices, null=True)
+    item_378 = models.CharField(max_length=10, choices=item_378_choices, null=True)
     item_379_choices = [('never', 'never'), ('sometimes', 'sometimes'), ('often', 'often')]
-    item_379 = models.CharField(max_length=9, choices=item_379_choices, null=True)
+    item_379 = models.CharField(max_length=10, choices=item_379_choices, null=True)
     item_380_choices = [('never', 'never'), ('sometimes', 'sometimes'), ('often', 'often')]
-    item_380 = models.CharField(max_length=9, choices=item_380_choices, null=True)
+    item_380 = models.CharField(max_length=10, choices=item_380_choices, null=True)
     item_381_choices = [('never', 'never'), ('sometimes', 'sometimes'), ('often', 'often')]
-    item_381 = models.CharField(max_length=9, choices=item_381_choices, null=True)
+    item_381 = models.CharField(max_length=10, choices=item_381_choices, null=True)
     item_382_choices = [('never', 'never'), ('sometimes', 'sometimes'), ('often', 'often')]
-    item_382 = models.CharField(max_length=9, choices=item_382_choices, null=True)
+    item_382 = models.CharField(max_length=10, choices=item_382_choices, null=True)
     item_383_choices = [('never', 'never'), ('sometimes', 'sometimes'), ('often', 'often')]
-    item_383 = models.CharField(max_length=9, choices=item_383_choices, null=True)
+    item_383 = models.CharField(max_length=10, choices=item_383_choices, null=True)
     item_384_choices = [('never', 'never'), ('sometimes', 'sometimes'), ('often', 'often')]
-    item_384 = models.CharField(max_length=9, choices=item_384_choices, null=True)
+    item_384 = models.CharField(max_length=10, choices=item_384_choices, null=True)
     item_385_choices = [('never', 'never'), ('sometimes', 'sometimes'), ('often', 'often')]
-    item_385 = models.CharField(max_length=9, choices=item_385_choices, null=True)
+    item_385 = models.CharField(max_length=10, choices=item_385_choices, null=True)
     item_386_choices = [('never', 'never'), ('sometimes', 'sometimes'), ('often', 'often')]
-    item_386 = models.CharField(max_length=9, choices=item_386_choices, null=True)
+    item_386 = models.CharField(max_length=10, choices=item_386_choices, null=True)
     item_387_choices = [('never', 'never'), ('sometimes', 'sometimes'), ('often', 'often')]
-    item_387 = models.CharField(max_length=9, choices=item_387_choices, null=True)
+    item_387 = models.CharField(max_length=10, choices=item_387_choices, null=True)
     item_388_choices = [('never', 'never'), ('sometimes', 'sometimes'), ('often', 'often')]
-    item_388 = models.CharField(max_length=9, choices=item_388_choices, null=True)
+    item_388 = models.CharField(max_length=10, choices=item_388_choices, null=True)
     item_389_choices = [('never', 'never'), ('sometimes', 'sometimes'), ('often', 'often')]
-    item_389 = models.CharField(max_length=9, choices=item_389_choices, null=True)
+    item_389 = models.CharField(max_length=10, choices=item_389_choices, null=True)
     item_390_choices = [('never', 'never'), ('sometimes', 'sometimes'), ('often', 'often')]
-    item_390 = models.CharField(max_length=9, choices=item_390_choices, null=True)
+    item_390 = models.CharField(max_length=10, choices=item_390_choices, null=True)
     item_391_choices = [('never', 'never'), ('sometimes', 'sometimes'), ('often', 'often')]
-    item_391 = models.CharField(max_length=9, choices=item_391_choices, null=True)
+    item_391 = models.CharField(max_length=10, choices=item_391_choices, null=True)
     item_392_choices = [('never', 'never'), ('sometimes', 'sometimes'), ('often', 'often')]
-    item_392 = models.CharField(max_length=9, choices=item_392_choices, null=True)
+    item_392 = models.CharField(max_length=10, choices=item_392_choices, null=True)
     item_393_choices = [('never', 'never'), ('sometimes', 'sometimes'), ('often', 'often')]
-    item_393 = models.CharField(max_length=9, choices=item_393_choices, null=True)
+    item_393 = models.CharField(max_length=10, choices=item_393_choices, null=True)
     item_394_choices = [('never', 'never'), ('sometimes', 'sometimes'), ('often', 'often')]
-    item_394 = models.CharField(max_length=9, choices=item_394_choices, null=True)
+    item_394 = models.CharField(max_length=10, choices=item_394_choices, null=True)
     item_395_choices = [('never', 'never'), ('sometimes', 'sometimes'), ('often', 'often')]
-    item_395 = models.CharField(max_length=9, choices=item_395_choices, null=True)
+    item_395 = models.CharField(max_length=10, choices=item_395_choices, null=True)
     item_396_choices = [('yes', 'yes'), ('no', 'no')]
     item_396 = models.CharField(max_length=3, choices=item_396_choices, null=True)
     item_397_choices = [('yes', 'yes'), ('no', 'no')]

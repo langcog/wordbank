@@ -735,70 +735,70 @@ class Irish_WS(BaseTable):
     item_726 = models.CharField(max_length=15, choices=item_726_choices, null=True)
     item_728_choices = [('produces', 'produces'), ("doesn't produce", "doesn't produce")]
     item_728 = models.CharField(max_length=15, choices=item_728_choices, null=True)
-    item_729_choices = [(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')]
-    item_729 = models.CharField(max_length=22, choices=item_729_choices, null=True)
-    item_731_choices = [(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')]
-    item_731 = models.CharField(max_length=22, choices=item_731_choices, null=True)
-    item_733_choices = [(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')]
-    item_733 = models.CharField(max_length=22, choices=item_733_choices, null=True)
-    item_735_choices = [(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')]
-    item_735 = models.CharField(max_length=22, choices=item_735_choices, null=True)
-    item_737_choices = [(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')]
-    item_737 = models.CharField(max_length=22, choices=item_737_choices, null=True)
-    item_739_choices = [(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')]
-    item_739 = models.CharField(max_length=22, choices=item_739_choices, null=True)
-    item_741_choices = [(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')]
-    item_741 = models.CharField(max_length=22, choices=item_741_choices, null=True)
-    item_743_choices = [(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')]
-    item_743 = models.CharField(max_length=22, choices=item_743_choices, null=True)
-    item_745_choices = [(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')]
-    item_745 = models.CharField(max_length=22, choices=item_745_choices, null=True)
-    item_747_choices = [(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')]
-    item_747 = models.CharField(max_length=22, choices=item_747_choices, null=True)
-    item_749_choices = [(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')]
-    item_749 = models.CharField(max_length=22, choices=item_749_choices, null=True)
-    item_751_choices = [(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')]
-    item_751 = models.CharField(max_length=22, choices=item_751_choices, null=True)
-    item_753_choices = [(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')]
-    item_753 = models.CharField(max_length=22, choices=item_753_choices, null=True)
-    item_755_choices = [(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')]
-    item_755 = models.CharField(max_length=22, choices=item_755_choices, null=True)
-    item_757_choices = [(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')]
-    item_757 = models.CharField(max_length=22, choices=item_757_choices, null=True)
-    item_759_choices = [(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')]
-    item_759 = models.CharField(max_length=22, choices=item_759_choices, null=True)
-    item_761_choices = [(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')]
-    item_761 = models.CharField(max_length=22, choices=item_761_choices, null=True)
-    item_763_choices = [(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')]
-    item_763 = models.CharField(max_length=22, choices=item_763_choices, null=True)
-    item_765_choices = [(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')]
-    item_765 = models.CharField(max_length=22, choices=item_765_choices, null=True)
-    item_767_choices = [(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')]
-    item_767 = models.CharField(max_length=22, choices=item_767_choices, null=True)
-    item_769_choices = [(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')]
-    item_769 = models.CharField(max_length=22, choices=item_769_choices, null=True)
-    item_771_choices = [(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')]
-    item_771 = models.CharField(max_length=22, choices=item_771_choices, null=True)
-    item_773_choices = [(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')]
-    item_773 = models.CharField(max_length=22, choices=item_773_choices, null=True)
-    item_775_choices = [(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')]
-    item_775 = models.CharField(max_length=22, choices=item_775_choices, null=True)
-    item_776_choices = [(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')]
-    item_776 = models.CharField(max_length=22, choices=item_776_choices, null=True)
-    item_778_choices = [(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')]
-    item_778 = models.CharField(max_length=22, choices=item_778_choices, null=True)
-    item_780_choices = [(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')]
-    item_780 = models.CharField(max_length=22, choices=item_780_choices, null=True)
-    item_781_choices = [(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')]
-    item_781 = models.CharField(max_length=22, choices=item_781_choices, null=True)
-    item_783_choices = [(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')]
-    item_783 = models.CharField(max_length=22, choices=item_783_choices, null=True)
-    item_784_choices = [(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')]
-    item_784 = models.CharField(max_length=22, choices=item_784_choices, null=True)
-    item_786_choices = [(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')]
-    item_786 = models.CharField(max_length=22, choices=item_786_choices, null=True)
-    item_788_choices = [(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')]
-    item_788 = models.CharField(max_length=22, choices=item_788_choices, null=True)
+    item_729_choices = [('produces', 'produces'), ("doesn't produce", "doesn't produce")]
+    item_729 = models.CharField(max_length=15, choices=item_729_choices, null=True)
+    item_731_choices = [('produces', 'produces'), ("doesn't produce", "doesn't produce")]
+    item_731 = models.CharField(max_length=15, choices=item_731_choices, null=True)
+    item_733_choices = [('produces', 'produces'), ("doesn't produce", "doesn't produce")]
+    item_733 = models.CharField(max_length=15, choices=item_733_choices, null=True)
+    item_735_choices = [('produces', 'produces'), ("doesn't produce", "doesn't produce")]
+    item_735 = models.CharField(max_length=15, choices=item_735_choices, null=True)
+    item_737_choices = [('produces', 'produces'), ("doesn't produce", "doesn't produce")]
+    item_737 = models.CharField(max_length=15, choices=item_737_choices, null=True)
+    item_739_choices = [('produces', 'produces'), ("doesn't produce", "doesn't produce")]
+    item_739 = models.CharField(max_length=15, choices=item_739_choices, null=True)
+    item_741_choices = [('produces', 'produces'), ("doesn't produce", "doesn't produce")]
+    item_741 = models.CharField(max_length=15, choices=item_741_choices, null=True)
+    item_743_choices = [('produces', 'produces'), ("doesn't produce", "doesn't produce")]
+    item_743 = models.CharField(max_length=15, choices=item_743_choices, null=True)
+    item_745_choices = [('produces', 'produces'), ("doesn't produce", "doesn't produce")]
+    item_745 = models.CharField(max_length=15, choices=item_745_choices, null=True)
+    item_747_choices = [('produces', 'produces'), ("doesn't produce", "doesn't produce")]
+    item_747 = models.CharField(max_length=15, choices=item_747_choices, null=True)
+    item_749_choices = [('produces', 'produces'), ("doesn't produce", "doesn't produce")]
+    item_749 = models.CharField(max_length=15, choices=item_749_choices, null=True)
+    item_751_choices = [('produces', 'produces'), ("doesn't produce", "doesn't produce")]
+    item_751 = models.CharField(max_length=15, choices=item_751_choices, null=True)
+    item_753_choices = [('produces', 'produces'), ("doesn't produce", "doesn't produce")]
+    item_753 = models.CharField(max_length=15, choices=item_753_choices, null=True)
+    item_755_choices = [('produces', 'produces'), ("doesn't produce", "doesn't produce")]
+    item_755 = models.CharField(max_length=15, choices=item_755_choices, null=True)
+    item_757_choices = [('produces', 'produces'), ("doesn't produce", "doesn't produce")]
+    item_757 = models.CharField(max_length=15, choices=item_757_choices, null=True)
+    item_759_choices = [('produces', 'produces'), ("doesn't produce", "doesn't produce")]
+    item_759 = models.CharField(max_length=15, choices=item_759_choices, null=True)
+    item_761_choices = [('produces', 'produces'), ("doesn't produce", "doesn't produce")]
+    item_761 = models.CharField(max_length=15, choices=item_761_choices, null=True)
+    item_763_choices = [('produces', 'produces'), ("doesn't produce", "doesn't produce")]
+    item_763 = models.CharField(max_length=15, choices=item_763_choices, null=True)
+    item_765_choices = [('produces', 'produces'), ("doesn't produce", "doesn't produce")]
+    item_765 = models.CharField(max_length=15, choices=item_765_choices, null=True)
+    item_767_choices = [('produces', 'produces'), ("doesn't produce", "doesn't produce")]
+    item_767 = models.CharField(max_length=15, choices=item_767_choices, null=True)
+    item_769_choices = [('produces', 'produces'), ("doesn't produce", "doesn't produce")]
+    item_769 = models.CharField(max_length=15, choices=item_769_choices, null=True)
+    item_771_choices = [('produces', 'produces'), ("doesn't produce", "doesn't produce")]
+    item_771 = models.CharField(max_length=15, choices=item_771_choices, null=True)
+    item_773_choices = [('produces', 'produces'), ("doesn't produce", "doesn't produce")]
+    item_773 = models.CharField(max_length=15, choices=item_773_choices, null=True)
+    item_775_choices = [('produces', 'produces'), ("doesn't produce", "doesn't produce")]
+    item_775 = models.CharField(max_length=15, choices=item_775_choices, null=True)
+    item_776_choices = [('produces', 'produces'), ("doesn't produce", "doesn't produce")]
+    item_776 = models.CharField(max_length=15, choices=item_776_choices, null=True)
+    item_778_choices = [('produces', 'produces'), ("doesn't produce", "doesn't produce")]
+    item_778 = models.CharField(max_length=15, choices=item_778_choices, null=True)
+    item_780_choices = [('produces', 'produces'), ("doesn't produce", "doesn't produce")]
+    item_780 = models.CharField(max_length=15, choices=item_780_choices, null=True)
+    item_781_choices = [('produces', 'produces'), ("doesn't produce", "doesn't produce")]
+    item_781 = models.CharField(max_length=15, choices=item_781_choices, null=True)
+    item_783_choices = [('produces', 'produces'), ("doesn't produce", "doesn't produce")]
+    item_783 = models.CharField(max_length=15, choices=item_783_choices, null=True)
+    item_784_choices = [('produces', 'produces'), ("doesn't produce", "doesn't produce")]
+    item_784 = models.CharField(max_length=15, choices=item_784_choices, null=True)
+    item_786_choices = [('produces', 'produces'), ("doesn't produce", "doesn't produce")]
+    item_786 = models.CharField(max_length=15, choices=item_786_choices, null=True)
+    item_788_choices = [('produces', 'produces'), ("doesn't produce", "doesn't produce")]
+    item_788 = models.CharField(max_length=15, choices=item_788_choices, null=True)
     item_790_choices = [('produces', 'produces'), ("doesn't produce", "doesn't produce")]
     item_790 = models.CharField(max_length=15, choices=item_790_choices, null=True)
     item_792_choices = [('produces', 'produces'), ("doesn't produce", "doesn't produce")]

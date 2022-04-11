@@ -315,12 +315,12 @@ class Spanish_Argentinian_WS(BaseTable):
     item_155 = models.CharField(max_length=8, choices=item_155_choices, null=True)
     item_156_choices = [('produces', 'produces')]
     item_156 = models.CharField(max_length=8, choices=item_156_choices, null=True)
-    item_157_choices = [('word', 'word')]
-    item_157 = models.CharField(max_length=4, choices=item_157_choices, null=True)
+    item_157_choices = [('produces', 'produces')]
+    item_157 = models.CharField(max_length=8, choices=item_157_choices, null=True)
     item_158_choices = [('produces', 'produces')]
     item_158 = models.CharField(max_length=8, choices=item_158_choices, null=True)
-    item_159_choices = [('word', 'word')]
-    item_159 = models.CharField(max_length=4, choices=item_159_choices, null=True)
+    item_159_choices = [('produces', 'produces')]
+    item_159 = models.CharField(max_length=8, choices=item_159_choices, null=True)
     item_160_choices = [('produces', 'produces')]
     item_160 = models.CharField(max_length=8, choices=item_160_choices, null=True)
     item_161_choices = [('produces', 'produces')]
@@ -371,8 +371,8 @@ class Spanish_Argentinian_WS(BaseTable):
     item_183 = models.CharField(max_length=8, choices=item_183_choices, null=True)
     item_184_choices = [('produces', 'produces')]
     item_184 = models.CharField(max_length=8, choices=item_184_choices, null=True)
-    item_185_choices = [('word', 'word')]
-    item_185 = models.CharField(max_length=4, choices=item_185_choices, null=True)
+    item_185_choices = [('produces', 'produces')]
+    item_185 = models.CharField(max_length=8, choices=item_185_choices, null=True)
     item_186_choices = [('produces', 'produces')]
     item_186 = models.CharField(max_length=8, choices=item_186_choices, null=True)
     item_187_choices = [('produces', 'produces')]
@@ -439,8 +439,8 @@ class Spanish_Argentinian_WS(BaseTable):
     item_217 = models.CharField(max_length=8, choices=item_217_choices, null=True)
     item_218_choices = [('produces', 'produces')]
     item_218 = models.CharField(max_length=8, choices=item_218_choices, null=True)
-    item_219_choices = [('word', 'word')]
-    item_219 = models.CharField(max_length=4, choices=item_219_choices, null=True)
+    item_219_choices = [('produces', 'produces')]
+    item_219 = models.CharField(max_length=8, choices=item_219_choices, null=True)
     item_220_choices = [('produces', 'produces')]
     item_220 = models.CharField(max_length=8, choices=item_220_choices, null=True)
     item_221_choices = [('produces', 'produces')]
@@ -521,8 +521,8 @@ class Spanish_Argentinian_WS(BaseTable):
     item_258 = models.CharField(max_length=8, choices=item_258_choices, null=True)
     item_259_choices = [('produces', 'produces')]
     item_259 = models.CharField(max_length=8, choices=item_259_choices, null=True)
-    item_260_choices = [('word', 'word')]
-    item_260 = models.CharField(max_length=4, choices=item_260_choices, null=True)
+    item_260_choices = [('produces', 'produces')]
+    item_260 = models.CharField(max_length=8, choices=item_260_choices, null=True)
     item_261_choices = [('produces', 'produces')]
     item_261 = models.CharField(max_length=8, choices=item_261_choices, null=True)
     item_262_choices = [('produces', 'produces')]
@@ -681,8 +681,8 @@ class Spanish_Argentinian_WS(BaseTable):
     item_338 = models.CharField(max_length=8, choices=item_338_choices, null=True)
     item_339_choices = [('produces', 'produces')]
     item_339 = models.CharField(max_length=8, choices=item_339_choices, null=True)
-    item_340_choices = [('word', 'word')]
-    item_340 = models.CharField(max_length=4, choices=item_340_choices, null=True)
+    item_340_choices = [('produces', 'produces')]
+    item_340 = models.CharField(max_length=8, choices=item_340_choices, null=True)
     item_341_choices = [('produces', 'produces')]
     item_341 = models.CharField(max_length=8, choices=item_341_choices, null=True)
     item_342_choices = [('produces', 'produces')]
@@ -765,8 +765,8 @@ class Spanish_Argentinian_WS(BaseTable):
     item_380 = models.CharField(max_length=8, choices=item_380_choices, null=True)
     item_381_choices = [('produces', 'produces')]
     item_381 = models.CharField(max_length=8, choices=item_381_choices, null=True)
-    item_382_choices = [('word', 'word')]
-    item_382 = models.CharField(max_length=4, choices=item_382_choices, null=True)
+    item_382_choices = [('produces', 'produces')]
+    item_382 = models.CharField(max_length=8, choices=item_382_choices, null=True)
     item_383_choices = [('produces', 'produces')]
     item_383 = models.CharField(max_length=8, choices=item_383_choices, null=True)
     item_384_choices = [('produces', 'produces')]
@@ -999,8 +999,8 @@ class Spanish_Argentinian_WS(BaseTable):
     item_497 = models.CharField(max_length=8, choices=item_497_choices, null=True)
     item_498_choices = [('produces', 'produces')]
     item_498 = models.CharField(max_length=8, choices=item_498_choices, null=True)
-    item_499_choices = [('word', 'word')]
-    item_499 = models.CharField(max_length=4, choices=item_499_choices, null=True)
+    item_499_choices = [('produces', 'produces')]
+    item_499 = models.CharField(max_length=8, choices=item_499_choices, null=True)
     item_500_choices = [('produces', 'produces')]
     item_500 = models.CharField(max_length=8, choices=item_500_choices, null=True)
     item_501_choices = [('produces', 'produces')]
@@ -1419,8 +1419,8 @@ class Spanish_Argentinian_WS(BaseTable):
     item_707 = models.CharField(max_length=8, choices=item_707_choices, null=True)
     item_708_choices = [('produces', 'produces')]
     item_708 = models.CharField(max_length=8, choices=item_708_choices, null=True)
-    item_709_choices = [('word', 'word')]
-    item_709 = models.CharField(max_length=4, choices=item_709_choices, null=True)
+    item_709_choices = [('produces', 'produces')]
+    item_709 = models.CharField(max_length=8, choices=item_709_choices, null=True)
     item_710_choices = [('produces', 'produces')]
     item_710 = models.CharField(max_length=8, choices=item_710_choices, null=True)
     item_711_choices = [('produces', 'produces')]
@@ -1459,8 +1459,8 @@ class Spanish_Argentinian_WS(BaseTable):
     item_727 = models.CharField(max_length=8, choices=item_727_choices, null=True)
     item_728_choices = [('produces', 'produces')]
     item_728 = models.CharField(max_length=8, choices=item_728_choices, null=True)
-    item_729_choices = [('word', 'word')]
-    item_729 = models.CharField(max_length=4, choices=item_729_choices, null=True)
+    item_729_choices = [('produces', 'produces')]
+    item_729 = models.CharField(max_length=8, choices=item_729_choices, null=True)
     item_730_choices = [('produces', 'produces')]
     item_730 = models.CharField(max_length=8, choices=item_730_choices, null=True)
     item_731_choices = [('produces', 'produces')]

@@ -543,8 +543,8 @@ class Dutch_Swingley(BaseTable):
     item_269 = models.CharField(max_length=11, choices=item_269_choices, null=True)
     item_270_choices = [('understands', 'understands'), ('produces', 'produces')]
     item_270 = models.CharField(max_length=11, choices=item_270_choices, null=True)
-    item_271_choices = [('glijbaan', 'glijbaan')]
-    item_271 = models.CharField(max_length=8, choices=item_271_choices, null=True)
+    item_271_choices = [('understands', 'understands'), ('produces', 'produces')]
+    item_271 = models.CharField(max_length=11, choices=item_271_choices, null=True)
     item_272_choices = [('understands', 'understands'), ('produces', 'produces')]
     item_272 = models.CharField(max_length=11, choices=item_272_choices, null=True)
     item_273_choices = [('understands', 'understands'), ('produces', 'produces')]
@@ -599,8 +599,8 @@ class Dutch_Swingley(BaseTable):
     item_297 = models.CharField(max_length=11, choices=item_297_choices, null=True)
     item_298_choices = [('understands', 'understands'), ('produces', 'produces')]
     item_298 = models.CharField(max_length=11, choices=item_298_choices, null=True)
-    item_299_choices = [('kermis', 'kermis')]
-    item_299 = models.CharField(max_length=6, choices=item_299_choices, null=True)
+    item_299_choices = [('understands', 'understands'), ('produces', 'produces')]
+    item_299 = models.CharField(max_length=11, choices=item_299_choices, null=True)
     item_300_choices = [('understands', 'understands'), ('produces', 'produces')]
     item_300 = models.CharField(max_length=11, choices=item_300_choices, null=True)
     item_301_choices = [('understands', 'understands'), ('produces', 'produces')]
@@ -763,8 +763,8 @@ class Dutch_Swingley(BaseTable):
     item_379 = models.CharField(max_length=11, choices=item_379_choices, null=True)
     item_380_choices = [('understands', 'understands'), ('produces', 'produces')]
     item_380 = models.CharField(max_length=11, choices=item_380_choices, null=True)
-    item_381_choices = [('fietsen', 'fietsen')]
-    item_381 = models.CharField(max_length=7, choices=item_381_choices, null=True)
+    item_381_choices = [('understands', 'understands'), ('produces', 'produces')]
+    item_381 = models.CharField(max_length=11, choices=item_381_choices, null=True)
     item_382_choices = [('understands', 'understands'), ('produces', 'produces')]
     item_382 = models.CharField(max_length=11, choices=item_382_choices, null=True)
     item_383_choices = [('understands', 'understands'), ('produces', 'produces')]

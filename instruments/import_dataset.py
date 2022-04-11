@@ -31,8 +31,7 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
                 study_internal_id=child_data['study_id'],
                 dataset_origin=DatasetOrigin.objects.get(dataset_origin_name=dataset_origin_name),
                 sex=child_data['sex'])
-            if not created:
-                print(f"Child {child_data['study_id']} already exists")
+            
             child.date_of_birth = child_data['date_of_birth']
             child.birth_order = child_data['birth_order']
             if child_data['momed'] not in [None, '']:

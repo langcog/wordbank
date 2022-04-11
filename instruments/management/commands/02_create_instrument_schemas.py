@@ -3,7 +3,7 @@ import codecs
 import json
 import string
 from django.core.management.base import BaseCommand
-
+import csv
 
 class Command(BaseCommand):
 
@@ -41,12 +41,12 @@ class Command(BaseCommand):
                 nrows = sheet.nrows
                 get_row = lambda row: list(sheet.row_values(row))
             elif ftype == 'csv':
-                unquoted = lambda string: string[1:-1] if string and ((string[0] == '"' and string[-1] == '"') or (string[0] == "'" and string[-1] == "'")) else string
-                lines = [line.split(',') for line in codecs.open(instrument['file'], encoding='utf-8').read().split('\n')]
-                contents = [[unquoted(field) for field in line] for line in lines if line]
-                col_names = contents[0]
-                nrows = len(contents)
-                get_row = lambda row: contents[row]
+                with open(instrument['file'], newline='') as csvfile:
+                    reader = csv.reader(csvfile, delimiter=',', quotechar='"')
+                    lines = [row for row in reader]
+                    col_names = lines[0]
+                    nrows = len(lines)
+                    get_row = lambda row: lines[row]
             else:
                 raise IOError("Instrument file must be xlsx, xls, or csv.")
 
@@ -60,9 +60,9 @@ class Command(BaseCommand):
                 row_values = get_row(row)
                 if len(row_values) > 1:
                     itemID = row_values[col_names.index('itemID')]
-                    choices = row_values[col_names.index('choices')].split('; ')
+                    choices = row_values[col_names.index('choices')].split(';')
                     max_length = max(len(c) for c in choices)
-                    instrument_file.write('    %s_choices = %s\n' % (itemID, [(c,c) for c in choices]))
+                    instrument_file.write('    %s_choices = %s\n' % (itemID, [(c.lstrip().rstrip(),c.lstrip().rstrip()) for c in choices]))
                     instrument_file.write(
                         '    %s = models.CharField(max_length=%s, choices=%s_choices, null=True)\n' % (itemID,
                                                                                                        max_length,
