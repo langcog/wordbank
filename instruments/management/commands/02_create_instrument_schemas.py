@@ -60,13 +60,15 @@ class Command(BaseCommand):
                 row_values = get_row(row)
                 if len(row_values) > 1:
                     itemID = row_values[col_names.index('itemID')]
+                    # Override max_length and ignore choices
+                    '''
                     choices = row_values[col_names.index('choices')].split(';')
-                    max_length = max(len(c) for c in choices)
+                    max_length = max(len(c) for c in choices)  
                     instrument_file.write('    %s_choices = %s\n' % (itemID, [(c.lstrip().rstrip(),c.lstrip().rstrip()) for c in choices]))
+                    '''
+                    max_length = 11
                     instrument_file.write(
-                        '    %s = models.CharField(max_length=%s, choices=%s_choices, null=True)\n' % (itemID,
-                                                                                                       max_length,
-                                                                                                       itemID)
+                        f'    {itemID} = models.CharField(max_length={max_length}, null=True)\n'
                     )
 
             instrument_file.close()

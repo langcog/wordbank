@@ -87,3 +87,10 @@ from .schemas.American_Sign_Language_FormA import *
 from .schemas.Spanish_Argentinian_WS import *
 from .schemas.Slovak_WG import *
 from .schemas.Spanish_Mexican_WS import *
+from .schemas.English_American_WS import *
+from .schemas.English_American_WS import *
+from .schemas.French_Quebecois_WS import *
+from .schemas.Russian_WG import *
+from .schemas.English_American_WS import *
+from .schemas.French_Quebecois_WS import *
+from .schemas.Russian_WG import *
