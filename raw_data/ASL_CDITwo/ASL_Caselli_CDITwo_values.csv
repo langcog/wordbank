@@ -13,6 +13,6 @@ mom_ed,college,College degree
 mom_ed,graduate,Masters
 mom_ed,some college,some college
 mom_ed,secondary,High school degree
-word,0,0.0
-word,1,1.0
-word,2,2.0
+word,,0.0
+word,understands,1.0
+word,produces,2.0
