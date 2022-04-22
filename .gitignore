@@ -16,7 +16,7 @@ bin/
 include/
 lib/
 pip-selfcheck.json
-static/
+/static/
 
 wordbank/secret_key*
 
