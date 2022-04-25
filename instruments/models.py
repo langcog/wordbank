@@ -70,3 +70,7 @@ from .schemas.Dutch_FormTwoA import *
 from .schemas.Dutch_FormTwoB import *
 from .schemas.Dutch_FormThree import *
 from .schemas.Spanish_Argentinian_WS import *
+from .schemas.Spanish_Chilean_WG import *
+from .schemas.Spanish_Peruvian_WG import *
+from .schemas.Spanish_Peruvian_WG import *
+from .schemas.Spanish_Peruvian_WS import *

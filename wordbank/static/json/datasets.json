@@ -1544,6 +1544,45 @@
         "contributor": "TBA",
         "license": "CC-BY",
         "citation": "TBA"
+    },
+    {
+        "name": "Navarro",
+        "dataset": "Pilot",
+        "instrument_language": "Spanish (Chilean)",
+        "instrument_form": "WG",
+        "file": "raw_data/Spanish_Chilean_WG/SpanishChileanWG_Navarro_Pilot.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": true,
+        "contributor": "TBA",
+        "license": "CC-BY",
+        "citation": "TBA"
+    },
+    {
+        "name": "Blume",
+        "dataset": "Blume",
+        "instrument_language": "Spanish (Peruvian)",
+        "instrument_form": "WG",
+        "file": "raw_data/Spanish_Peruvian_WG/SpanishPeruvianWG_Blume.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": true,
+        "contributor": "Blume, M.",
+        "license": "CC-BY",
+        "citation": "Blume, M., Fernández-Flecha, M., Junyent, A., & Tijero, T. (2019). Proceso de adaptación de los Inventarios de Desarrollo Comunicativo MacArthur-Bates al castellano estándar del Perú [Adaptation process of the MacArthur-Bates Communicative Development Inventories to Standard Peruvian Spanish]. Lexis, 43(2), pp. 369-420. https://doi.org/10.18800/lexis.201902.003"
+    },
+    {
+        "name": "Blume",
+        "dataset": "Blume",
+        "instrument_language": "Spanish (Peruvian)",
+        "instrument_form": "WS",
+        "file": "raw_data/Spanish_Peruvian_WS/SpanishPeruvianWS_Blume.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": true,
+        "contributor": "Blume, M.",
+        "license": "CC-BY",
+        "citation": "Blume, M., Fernández-Flecha, M., Junyent, A., & Tijero, T. (2019). Proceso de adaptación de los Inventarios de Desarrollo Comunicativo MacArthur-Bates al castellano estándar del Perú [Adaptation process of the MacArthur-Bates Communicative Development Inventories to Standard Peruvian Spanish]. Lexis, 43(2), pp. 369-420. https://doi.org/10.18800/lexis.201902.003"
     }
 ]
 
