@@ -1583,6 +1583,19 @@
         "contributor": "Blume, M.",
         "license": "CC-BY-NC",
         "citation": "Blume, M., Fernández-Flecha, M., Junyent, A., & Tijero, T. (2019). Proceso de adaptación de los Inventarios de Desarrollo Comunicativo MacArthur-Bates al castellano estándar del Perú [Adaptation process of the MacArthur-Bates Communicative Development Inventories to Standard Peruvian Spanish]. Lexis, 43(2), pp. 369-420. https://doi.org/10.18800/lexis.201902.003"
+    },
+    {
+        "name": "Nazzi",
+        "dataset": "",
+        "instrument_language": "Cantonese",
+        "instrument_form": "WS",
+        "file": "raw_data/Cantonese_WS/CantoneseWS_Nazzi.csv",
+        "splitcol": false,
+        "norming": true,
+        "longitudinal": false,
+        "contributor": "Nazzi, T",
+        "license": "CC-BY",
+        "citation": "Chen, Hui, Lee, Daniel T, Luo, Zili, Lai, Regine Y, Cheung, Hintat, and Nazzi, Thierry. \"Variation in Phonological Bias: Bias for Vowels, Rather than Consonants or Tones in Lexical Processing by Cantonese-learning Toddlers.\" Cognition (2020): 104486. Web.)"
     }
 ]
 
