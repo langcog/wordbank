@@ -19,11 +19,11 @@ item_525,respno,item,first_signs
 item_526,reactmd,item,first_signs
 ,first_signs_comments,,
 item_527,abraboca,item,phrases
-item_528,adios,item,phrases
+item_528,adios_phr,item,phrases
 item_529,dormhacr,item,phrases
 item_530,tiralo,item,phrases
 item_531,bravo,item,phrases
-item_532,cuidado,item,phrases
+item_532,cuidado_phr,item,phrases
 item_533,damedale,item,phrases
 item_534,dndeguag,item,phrases
 item_535,estquiet,item,phrases
@@ -322,7 +322,7 @@ item_259,nombre_del_nino,item,word
 ,people_comments,,
 item_260,a_vestir,item,word
 item_261,adios,item,word
-item_262,bano,item,word
+item_262,bano_gr,item,word
 item_263,besitos,item,word
 item_264,buenas_noches,item,word
 item_265,buenos_dias,item,word
@@ -497,7 +497,7 @@ item_427,por_que,item,word
 item_428,que,item,word
 item_429,quien,item,word
 ,question_words_comments,,
-item_430,el,item,word
+item_430,el_art,item,word
 item_431,la,item,word
 item_432,las,item,word
 item_433,los,item,word
