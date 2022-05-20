@@ -496,14 +496,6 @@
         "has_grammar": true
     },
     {
-        "language": "Finnish",
-        "form": "WS_Short",
-        "file": "raw_data/Finnish_WS_Short/[Finnish_WS_Short].csv",
-        "age_min": 16,
-        "age_max": 36,
-        "has_grammar": true
-    },
-    {
         "language": "American Sign Language",
         "form": "CDITwo",
         "file": "raw_data/ASL_CDITwo/[ASL_CDITwo].csv",
@@ -597,6 +589,22 @@
         "file": "raw_data/Spanish_Peruvian_WS/[Spanish_Peruvian_WS].csv",
         "age_min": 16,
         "age_max": 36,
+        "has_grammar": false
+    },
+    {
+        "language": "Persian",
+        "form": "WS",
+        "file": "raw_data/Persian_WS/[Persian_WS].csv",
+        "age_min": 16,
+        "age_max": 36,
+        "has_grammar": false
+    },
+    {
+        "language": "Persian",
+        "form": "WG",
+        "file": "raw_data/Persian_WG/[Persian_WG].csv",
+        "age_min": 8,
+        "age_max": 16,
         "has_grammar": false
     }
 ]

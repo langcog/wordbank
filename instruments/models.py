@@ -60,7 +60,6 @@ from .schemas.Henry_Second_Language_WG import *
 from .schemas.English_Irish_WS import *
 from .schemas.Irish_WS import *
 from .schemas.Finnish_WS import *
-from .schemas.Finnish_WS_Short import *
 from .schemas.American_Sign_Language_CDITwo import *
 from .schemas.Dutch_Swingley import *
 from .schemas.Dutch_WS import *
@@ -72,5 +71,6 @@ from .schemas.Dutch_FormThree import *
 from .schemas.Spanish_Argentinian_WS import *
 from .schemas.Spanish_Chilean_WG import *
 from .schemas.Spanish_Peruvian_WG import *
-from .schemas.Spanish_Peruvian_WG import *
 from .schemas.Spanish_Peruvian_WS import *
+from .schemas.Persian_WS import *
+from .schemas.Persian_WG import *

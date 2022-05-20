@@ -53,7 +53,7 @@
         "date_format": "%m/%d/%y",
         "contributor": "Virginia Marchman, Stanford University",
         "license": "CC-BY",
-        "citation": "",
+        "citation": "Marchman, V. A., Martínez-Sussmann, C., & Dale, P. S. (2004). The language-specific nature of grammatical development: Evidence from bilingual language learners. Developmental Science, 7(2), 212–224.",
         "dataset_origin": "Marchman Dallas Bilingual"
     },
     {
@@ -212,7 +212,7 @@
         "date_format": "%Y-%m-%d",
         "contributor": "Donna Jackson-Maldonado, Universidad Autónoma de Querétaro",
         "license": "CC-BY",
-        "citation": "Jackson-Maldonado, D., Thal, D., Marchman, V., Newton, T., Fenson, L, & Conboy, B. (2003). MacArthur Inventarios del Desarrollo de Habilidades Comunicativas. User´s Guide and Technical Manual. Brookes, Baltimore.",
+        "citation": "Marchman, V. A., Martínez-Sussmann, C., & Dale, P. S. (2004). The language-specific nature of grammatical development: Evidence from bilingual language learners. Developmental Science, 7(2), 212–224.",
         "dataset_origin": "Marchman Dallas Bilingual"
     },
     {
@@ -1299,19 +1299,6 @@
         "citation": "Stolt, S. & Vehkavuori, S-M. 2018. Sanaseula. Finnish short form versions of the MacArthur Communicative Development Inventories. Jyväskylä: Niilo Mäki Instituutti."
     },
     {
-        "name": "Stolt",
-        "dataset": "Stolt Short",
-        "instrument_language": "Finnish",
-        "instrument_form": "WS_Short",
-        "file": "raw_data/Finnish_WS_Short/FinnishWSShort_Stolt.csv",
-        "splitcol": false,
-        "norming": false,
-        "longitudinal": true,
-        "contributor": "Stolt S",
-        "license": "CC-BY",
-        "citation": "Stolt, S., Haataja, L., Lapinleimu, H. & Lehtonen, L. 2008. Early lexical development of Finnish children – a longitudinal study. First Language, 28(3), 259–279. DOI: 10.1177/0142723708091051"
-    },
-    {
         "name": "Caselli",
         "dataset": "Caselli",
         "instrument_language": "American Sign Language",
@@ -1541,9 +1528,9 @@
         "splitcol": false,
         "norming": false,
         "longitudinal": true,
-        "contributor": "TBA",
+        "contributor": "Resches, M",
         "license": "CC-BY",
-        "citation": "TBA"
+        "citation": "Resches, M., Querejeta, M., Kohan Cortada, A., & Laguens, A. (2021). Adaptación y normativización del Inventario del Desarrollo Comunicativo MacArthur-Bates (CDI-Forma II) al español rioplatense [Adaptation and standardization of the MacArthur-Bates Communicative Development Inventory (CDI-Form II) to River Plate Spanish]. Revista Iberoamericana de Psicología; 14(3), 107-120. https://doi.org/10.33881/2027-1786.rip.14310"
     },
     {
         "name": "Navarro",
@@ -1596,6 +1583,32 @@
         "contributor": "Nazzi, T",
         "license": "CC-BY",
         "citation": "Chen, Hui, Lee, Daniel T, Luo, Zili, Lai, Regine Y, Cheung, Hintat, and Nazzi, Thierry. \"Variation in Phonological Bias: Bias for Vowels, Rather than Consonants or Tones in Lexical Processing by Cantonese-learning Toddlers.\" Cognition (2020): 104486. Web.)"
+    },
+    {
+        "name": "Kazemi",
+        "dataset": "",
+        "instrument_language": "Persian",
+        "instrument_form": "WS",
+        "file": "raw_data/Persian_WS/PersianWS_Kazemi.csv",
+        "splitcol": false,
+        "norming": true,
+        "longitudinal": false,
+        "contributor": "Kazemi, Y",
+        "license": "CC-BY",
+        "citation": "Kazemi, Y., Afsharian, E., Mirzaei, B., Baghbani, M., Sademinejad, M., & Gheleyempour, L. (2007). Children's communication checklist: The study of persian children. Iranian Journal of Research in Rehabilitation Sciences, 2(3), 1-5."
+    },
+    {
+        "name": "Kazemi",
+        "dataset": "",
+        "instrument_language": "Persian",
+        "instrument_form": "WG",
+        "file": "raw_data/Persian_WG/PersianWG_Kazemi.csv",
+        "splitcol": false,
+        "norming": true,
+        "longitudinal": false,
+        "contributor": "Kazemi, Y",
+        "license": "CC-BY",
+        "citation": "Kazemi, Y., Afsharian, E., Mirzaei, B., Baghbani, M., Sademinejad, M., & Gheleyempour, L. (2007). Children's communication checklist: The study of persian children. Iranian Journal of Research in Rehabilitation Sciences, 2(3), 1-5."
     }
 ]
 
