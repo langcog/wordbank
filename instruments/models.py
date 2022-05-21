@@ -74,3 +74,4 @@ from .schemas.Spanish_Peruvian_WG import *
 from .schemas.Spanish_Peruvian_WS import *
 from .schemas.Persian_WS import *
 from .schemas.Persian_WG import *
+from .schemas.Persian_WG import *
