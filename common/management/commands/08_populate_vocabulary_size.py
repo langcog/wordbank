@@ -57,10 +57,20 @@ class Command(BaseCommand):
             query += comp_query
             query += "from %s;" % (instrument_table)
 
-            sizes = instrument_model.objects.raw(query)
+            sizes = list(instrument_model.objects.raw(query))
+            print (f'Processing {len(sizes)} records')
+            
             def update_admin(s):
-                admin = Administration.objects.get(data_id=s.basetable_ptr_id)
+                try:
+                    admin = Administration.objects.get(data_id=s.basetable_ptr_id)
+                except Exception:
+                    print(f'No record found. Deleting {s}')
+                    s.delete()
+                    return
+                print (f'Processing {s} for admin {admin}, Production={s.production}; Comprehension={s.comprehension}')
                 admin.production = s.production
                 admin.comprehension = s.comprehension
                 admin.save()
-            map(update_admin, sizes)
+            
+            for result in map(update_admin, sizes):
+                pass
