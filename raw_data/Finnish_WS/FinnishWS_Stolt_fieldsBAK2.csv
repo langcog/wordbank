@@ -1,5 +1,5 @@
 field,column,group,type
-study_id,Child,child,study_id
+study_id,child,child,study_id
 sex,gender,child,sex
 data_age,age,admin,data_age
 item_1,aiai,item,word
@@ -219,7 +219,7 @@ item_214,hoover,item,word
 item_215,radio,item,word
 item_216,sofa,item,word
 item_217,highchair,item,word
-item_218,TV,item,word
+item_218,tv,item,word
 item_219,chair,item,word
 item_220,toilet,item,word
 item_221,keys,item,word
@@ -487,7 +487,7 @@ item_482,fast,item,word
 item_483,happy,item,word
 item_484,soft,item,word
 item_485,dark,item,word
-item_486,clean_x,item,word
+item_486,clean,item,word
 item_487,slow,item,word
 item_488,quiet,item,word
 item_489,good,item,word
