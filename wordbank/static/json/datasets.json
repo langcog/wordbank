@@ -1609,6 +1609,19 @@
         "contributor": "Kazemi, Y",
         "license": "CC-BY",
         "citation": "Kazemi, Y., Afsharian, E., Mirzaei, B., Baghbani, M., Sademinejad, M., & Gheleyempour, L. (2007). Children's communication checklist: The study of persian children. Iranian Journal of Research in Rehabilitation Sciences, 2(3), 1-5."
+    },
+    {
+        "name": "Edgin",
+        "dataset": "",
+        "instrument_language": "English (American)",
+        "instrument_form": "WG",
+        "file": "raw_data/English_WG/EnglishWG_Edgin.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": true,
+        "contributor": "Edgin, J",
+        "license": "CC-BY",
+        "citation": "Edgin, J. O., Tooley, U., Demara, B., Nyhuis, C., Anand, P., & Spanò, G. (2015). Sleep disturbance and expressive language development in preschool‐age children with Down syndrome. Child Development, 86(6), 1984-1998."
     }
 ]
 

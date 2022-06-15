@@ -1,0 +1,38 @@
+type,value,data_value
+sex,M,M
+sex,F,F
+ethnicity,W,1
+ethnicity,B,2
+ethnicity,H,3
+ethnicity,A,6
+ethnicity,O,7
+mom_ed,secondary,13
+mom_ed,some college,15
+mom_ed,some college,16
+mom_ed,college,17
+mom_ed,some graduate,18
+mom_ed,graduate,19
+mom_ed,graduate,20
+condition,,0
+condition,Down syndrome,1
+condition,Pre-term,2
+condition,Autism spectrum disorder,3
+first_signs,yes,1
+first_signs,no,0
+phrases,understands,1
+phrases,,0
+starting_to_talk,never,0
+starting_to_talk,sometimes/often,1
+word,produces,2
+word,understands,1
+word,,0
+gestures_first,not yet,0
+gestures_first,sometimes/often,1
+gestures_games,yes,1
+gestures_games,no,0
+gestures_objects,yes,1
+gestures_objects,no,0
+gestures_parent,yes,1
+gestures_parent,no,0
+gestures_adult,yes,1
+gestures_adult,no,0
