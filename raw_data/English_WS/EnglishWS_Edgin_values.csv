@@ -1,0 +1,37 @@
+type,value,data_value
+sex,M,M
+sex,F,F
+ethnicity,W,1
+ethnicity,B,2
+ethnicity,H,3
+ethnicity,A,6
+ethnicity,O,7
+mom_ed,secondary,13
+mom_ed,some college,15
+mom_ed,some college,16
+mom_ed,college,17
+mom_ed,some graduate,18
+mom_ed,graduate,19
+mom_ed,graduate,20
+condition,,0
+condition,Down syndrome,1
+condition,Pre-term,2
+condition,Autism spectrum disorder,3
+word,produces,1
+word,,0
+how_use_words,not yet,0
+how_use_words,sometimes/often,1
+word_endings,not yet,0
+word_endings,sometimes/often,1
+word_forms_nouns,produces,1
+word_forms_nouns,,0
+word_forms_verbs,produces,1
+word_forms_verbs,,0
+word_endings_nouns,,0
+word_endings_nouns,produces,1
+word_endings_verbs,,0
+word_endings_verbs,produces,1
+combine,not yet,0
+combine,sometimes/often,1
+complexity,simple,0
+complexity,complex,1
