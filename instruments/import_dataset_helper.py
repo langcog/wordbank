@@ -94,6 +94,7 @@ class ImportHelper:
                 if self.splitcol and field in results:
                     results[field] = self.resolve_values(results[field], field_value)
                 else:
+                    print(field, field_value)
                     results[field] = field_value
         return results
 

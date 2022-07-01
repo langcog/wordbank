@@ -82,7 +82,8 @@ class Command(BaseCommand):
                                                       instrument=instruments_map,
                                                       dataset_origin=dataset_origin))
             for admin in administrations:
-                admin.content_object.delete()
+                if admin.content_object:
+                    admin.content_object.delete()
                 admin.delete()
 
             import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_language, instrument_form, splitcol, norming, date_format, dataset_origin)
