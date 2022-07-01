@@ -85,16 +85,15 @@ class ImportHelper:
                 results['momed'] = momed_value
                 study_momed_value = self.get_field_value(column, 'study_momed', group, row_values)
                 results['study_momed'] = study_momed_value
-            if field_type in ['condition','language']:
+            elif field_type in ['condition','language']:
                 if results[field_type] == None: results[field_type] = []
                 if self.get_field_value(column, field_type, group, row_values) != None:
                     results[field_type].append(self.get_field_value(column, field_type, group, row_values))
-            else:
+            else:    
                 field_value = self.get_field_value(column, field_type, group, row_values)
                 if self.splitcol and field in results:
                     results[field] = self.resolve_values(results[field], field_value)
                 else:
-                    print(field, field_value)
                     results[field] = field_value
         return results
 
@@ -166,6 +165,7 @@ class ImportHelper:
             self.field_mapping_nrows = len(field_mapping_reader)
             self.get_field_mapping_row = lambda row: field_mapping_reader[row]
 
+
             data_file = open('.'.join(self.data_file.split('.')[:-1]) + '_data.csv', newline='', encoding='utf8')
             data_reader = list(csv.reader(data_file))
             self.data_nrows = len(data_reader)
@@ -200,9 +200,9 @@ class ImportHelper:
             return child, administration
 
     def import_data(self):
-
         self.get_meta_data()
         self.value_mapping = self.map_values()
+        print(self.value_mapping)
         self.field_mapping = self.map_fields()
         self.col_map = self.map_cols()
 

@@ -81,11 +81,13 @@ class Command(BaseCommand):
             administrations = Administration.objects.filter(dataset=Dataset.objects.get(dataset_name=dataset_name,
                                                       instrument=instruments_map,
                                                       dataset_origin=dataset_origin))
+            print(f'   Deleting {len(administrations)} exisiting records')
             for admin in administrations:
                 if admin.content_object:
                     admin.content_object.delete()
                 admin.delete()
 
+            print('   Importing records')
             import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_language, instrument_form, splitcol, norming, date_format, dataset_origin)
             
             if self.send_email:

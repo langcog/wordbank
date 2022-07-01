@@ -10,7 +10,6 @@ from instruments import import_dataset_helper
 # Uses import_dataset_helper to retrieve the data from that dataset's data file, using its field and value mappings.
 # Creates Child and Administration objects for the entries in the resulting data.
 def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_language, instrument_form, splitcol, norming, date_format, dataset_origin_name):
-
         var_safe = lambda s: ''.join([c for c in '_'.join(s.split()) if c in string.ascii_letters + '_'])
         instrument_string = var_safe(instrument_language) + '_' + var_safe(instrument_form)
         try:
@@ -25,6 +24,7 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
 
         children = {}
 
+        print('   Saving Children')
         for i, child_data in import_helper.children.items():
             # initialize the Child here
             child, created = Child.objects.get_or_create(
@@ -47,6 +47,7 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
                     child.health_conditions.add(c)
                     pass
         
+        print('   Saving administrations')
         for i, administration_data in import_helper.administrations.items():          
             administration = Administration(
                 child=children[i],
