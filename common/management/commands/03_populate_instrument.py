@@ -5,6 +5,25 @@ from django.templatetags.static import static
 
 from common.models import *
 
+FORM_DICT = {
+    ('WS', 'WS'),
+    ('WG', 'WG'),
+    ('IC', 'WG'),
+    ('TC', 'WS'),
+    ('TEDS Twos', 'WS'),
+    ('TEDS Threes', 'WS'),
+    ('FormA', 'WG'),
+    ('FormBOne', 'WS'),
+    ('FormBTwo', 'WS'),
+    ('FormC', 'WS'),
+    ('Oxford CDI', 'WG'),
+    ('Swingley', 'WG'),
+    ('FormOne', 'WG'),
+    ('FormTwoA', 'WG'),
+    ('FormTwoB', 'WG'),
+    ('FormThree', 'WS'),
+    ('CDITwo', 'WG')
+}
 
 # Populates the Instrument model with all instruments in 'static/json/instruments.json'.
 # If any instruments already exist (identified by language and form), updates their other fields.
@@ -21,9 +40,11 @@ class Command(BaseCommand):
             instrument_has_grammar = instrument['has_grammar']
             #instrument_unilemma_coverage = instrument['unilemma_coverage']
 
+            instrument_form_type = FORM_DICT(instrument_form)
             data_dict = {'age_min': instrument_age_min,
                          'age_max': instrument_age_max,
                          'has_grammar': instrument_has_grammar,
+                         'form_type': instrument_form_type
                          #'unilemma_coverage': instrument_unilemma_coverage
                         }
 
