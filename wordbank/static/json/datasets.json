@@ -1635,6 +1635,58 @@
         "contributor": "Edgin, J",
         "license": "CC-BY",
         "citation": "Edgin, J. O., Tooley, U., Demara, B., Nyhuis, C., Anand, P., & Spanò, G. (2015). Sleep disturbance and expressive language development in preschool‐age children with Down syndrome. Child Development, 86(6), 1984-1998."
+    },
+    {
+        "name": "Stolt",
+        "dataset": "",
+        "instrument_language": "Finnish",
+        "instrument_form": "WSShort",
+        "file": "raw_data/Finnish_WSShort/FinnishWSShort_Stolt.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": true,
+        "contributor": "Stolt",
+        "license": "CC-BY",
+        "citation": " Stolt, S. & Vehkavuori, S-M. 2018. Sanaseula. Finnish short form versions of the MacArthur Communicative Development Inventories. Jyväskylä: Niilo Mäki Instituutti."
+    },
+    {
+        "name": "Walle",
+        "dataset": "",
+        "instrument_language": "English (American)",
+        "instrument_form": "WGShort",
+        "file": "raw_data/English_WGShort/EnglishWGShort_Walle.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": true,
+        "contributor": "Walle, E",
+        "license": "CC-BY",
+        "citation": "TBC"
+    },
+    {
+        "name": "Walle",
+        "dataset": "",
+        "instrument_language": "English (American)",
+        "instrument_form": "WSShort",
+        "file": "raw_data/English_WSShort/EnglishWSShort_Walle.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": true,
+        "contributor": "Walle, E",
+        "license": "CC-BY",
+        "citation": "TBC"
+    },
+    {
+        "name": "Floccia",
+        "dataset": "",
+        "instrument_language": "English (British)",
+        "instrument_form": "OxfordShort",
+        "file": "raw_data/English_British_OxfordShort/EnglishBritishOxfordShort_Floccia.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": true,
+        "contributor": "Floccia",
+        "license": "CC-BY",
+        "citation": "TBC"
     }
 ]
 

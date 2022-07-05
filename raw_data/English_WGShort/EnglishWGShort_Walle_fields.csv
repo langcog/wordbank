@@ -1,0 +1,103 @@
+field,column,group,type
+study_id,Participant ID:,child,study_id
+sex,Sex:,child,sex
+,Infant Birthdate:,,
+,Test Date:,,
+data_age,Age (Months),admin,data_age
+,Primary Caregiver:,,
+,Prim. Caregiver Education:,,
+,Secondary Caregiver: ,,
+,Sec. Caregiver Education: ,,
+,Income:,,
+mom_ed,mom_ed,child,mom_ed
+item_35,choo choo,item,word
+item_38,meow,item,word
+item_40,ouch,item,word
+item_42,uh oh,item,word
+item_49,bird,item,word
+item_57,dog,item,word
+item_59,duck,item,word
+item_66,kitty,item,word
+item_68,lion,item,word
+item_70,mouse,item,word
+item_85,car,item,word
+item_88,stroller,item,word
+item_91,ball,item,word
+item_94,book,item,word
+item_96,doll,item,word
+item_101,bread,item,word
+item_104,candy,item,word
+item_106,cereal,item,word
+item_111,cookie,item,word
+item_118,juice,item,word
+item_127,toast,item,word
+item_136,hat,item,word
+item_141,pants,item,word
+item_143,shoe,item,word
+item_145,sock,item,word
+item_152,eye,item,word
+item_158,head,item,word
+item_160,leg,item,word
+item_162,nose,item,word
+item_164,tooth,item,word
+item_172,chair,item,word
+item_173,couch,item,word
+item_179,kitchen,item,word
+item_189,table,item,word
+item_190,television,item,word
+item_192,blanket,item,word
+item_193,bottle,item,word
+item_200,cup,item,word
+item_201,dish,item,word
+item_207,lamp,item,word
+item_215,radio,item,word
+item_218,spoon,item,word
+item_221,flower,item,word
+item_231,home,item,word
+item_233,moon,item,word
+item_235,outside,item,word
+item_236,plant,item,word
+item_240,rain,item,word
+item_241,rock,item,word
+item_252,water,item,word
+item_257,babysitter,item,word
+item_263,girl,item,word
+item_264,grandma,item,word
+item_268,mommy,item,word
+item_275,bath,item,word
+item_279,don't ,item,word
+item_281,hi,item,word
+item_284,night night,item,word
+item_286,patty cake,item,word
+item_288,please,item,word
+item_291,wait,item,word
+item_296,break,item,word
+item_308,feed,item,word
+item_309,finish,item,word
+item_313,help,item,word
+item_317,jump,item,word
+item_318,kick,item,word
+item_319,kiss,item,word
+item_325,push,item,word
+item_333,sing,item,word
+item_335,smile,item,word
+item_352,night,item,word
+item_354,today,item,word
+item_357,all gone,item,word
+item_360,big,item,word
+item_362,broken,item,word
+item_367,dark,item,word
+item_371,fast,item,word
+item_379,hurt,item,word
+item_384,pretty,item,word
+item_389,soft,item,word
+item_396,I,item,word
+item_398,me,item,word
+item_405,how,item,word
+item_409,who,item,word
+item_411,away,item,word
+item_418,out,item,word
+item_427,other,item,word
+item_429,some,item,word
+,Total,,
+,Notes:,,

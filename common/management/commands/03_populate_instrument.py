@@ -23,6 +23,9 @@ FORM_DICT = {
     'FormTwoB': 'WG',
     'FormThree': 'WS',
     'CDITwo': 'WG',
+    'WSShort': 'WS',
+    'WGShort': 'WG',
+    'OxfordShort': 'WG',
 }
 
 # Populates the Instrument model with all instruments in 'static/json/instruments.json'.

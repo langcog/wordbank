@@ -75,3 +75,7 @@ from .schemas.Spanish_Peruvian_WS import *
 from .schemas.Persian_WS import *
 from .schemas.Persian_WG import *
 from .schemas.Persian_WG import *
+from .schemas.Finnish_WSShort import *
+from .schemas.English_American_WSShort import *
+from .schemas.English_American_WGShort import *
+from .schemas.English_British_OxfordShort import *

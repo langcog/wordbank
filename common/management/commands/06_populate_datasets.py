@@ -14,11 +14,13 @@ class Command(BaseCommand):
 
         sources = json.load(open('static/json/datasets.json', encoding="utf8"))
         for source in sources:
-
+            print(f"Loading dataset file {source['file']}")
+            
             if 'dataset_origin' in source:
                 name = source['dataset_origin']
             else:
                 name = source['name']+'_'+source['dataset']+'_'+source['instrument_language']+'_'+source['instrument_form']
+
             dataset_origin, created = DatasetOrigin.objects.get_or_create(dataset_origin_name=name)
 
             data_dict = {'contributor': source['contributor'],

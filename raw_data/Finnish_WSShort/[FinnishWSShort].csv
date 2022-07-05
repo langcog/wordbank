@@ -1,0 +1,101 @@
+itemID,category,definition,gloss,uni_lemma,item,type
+item_1,sounds,ai-ai,oh,oh,ai-ai,word
+item_8,sounds,ammuu,moo,moo,ammuu,word
+item_2,sounds,bää-ä bää-ä,baa baa,baa baa,bää-ä bää-ä,word
+item_4,sounds,kvaak kvaak,quack quack,quack quack,kvaak kvaak,word
+item_12,sounds,nam nam,yum yum,yum yum,nam nam,word
+item_33,animals,ankka,duck,duck,ankka,word
+item_17,animals,hirvi,moose,moose,hirvi,word
+item_37,animals,kala,fish,fish (animal),kala,word
+item_21,animals,kissa,cat,cat,kissa,word
+item_44,animals,lintu,bird,bird,lintu,word
+item_47,animals,pingviini,penguin,penguin,pingviini,word
+item_59,vehicles,kuorma-auto,truck,truck,kuorma-auto,word
+item_54,vehicles,laiva,ship,,laiva,word
+item_64,toys,ilmapallo,balloon,balloon,ilmapallo,word
+item_73,toys,lahja,gift,,lahja,word
+item_76,toys,palapeli,puzzle,,palapeli,word
+item_110,food_drink,juusto,cheese,cheese,juusto,word
+item_82,food_drink,jäätelö,icecream,ice cream,jäätelö,word
+item_19,animals,kana,chicken (animal),chicken (animal),kana,word
+item_114,food_drink,kastike,sauce,sauce,kastike,word
+item_115,food_drink,keksi,cookie,cookie,keksi,word
+item_117,food_drink,leipä,bread,bread,leipä,word
+item_93,food_drink,mehu,juice,juice,mehu,word
+item_131,food_drink,suola,salt,,suola,word
+item_138,clothing,hattu,hat,hat,hattu,word
+item_154,clothing,kenkä,shoe,shoe,kenkä,word
+item_147,clothing,takki,jacket,jacket,takki,word
+item_162,clothing,vetoketju,zipper,zipper,vetoketju,word
+item_178,body_parts,jalka,foot,foot,jalka,word
+item_179,body_parts,kieli,tongue,tongue,kieli,word
+item_170,body_parts,nenä,nose,nose,nenä,word
+item_189,furniture_rooms,amme,bathtub,bathtub,amme,word
+item_221,household,avaimet,keys,keys,avaimet,word
+item_248,household,kattila,pot,pot,kattila,word
+item_225,household,kello,clock,clock,kello,word
+item_228,household,lamppu,lamp,lamp,lamppu,word
+item_252,household,lasi,glass,glass,lasi,word
+item_253,household,lautanen,plate,plate,lautanen,word
+item_260,household,puhelin,telephone,telephone,puhelin,word
+item_237,household,pullo,bottle,bottle,pullo,word
+item_207,furniture_rooms,sauna,sauna,,sauna,word
+item_216,furniture_rooms,sohva,sofa,,sohva,word
+item_209,furniture_rooms,sänky,bed,bed,sänky,word
+item_219,furniture_rooms,tuoli,chair,chair,tuoli,word
+item_269,outside,aurinko,sun,sun,aurinko,word
+item_272,outside,eläintarha,zoo,zoo,eläintarha,word
+item_276,outside,kauppa,shop,store,kauppa,word
+item_296,outside,leikkipuisto,playground,playground,leikkipuisto,word
+item_284,outside,piha,yard,yard,piha,word
+item_596,outside,pilvi,cloud,cloud,pilvi,word
+item_289,outside,talo,house,house,talo,word
+item_320,people,isä,father,daddy,isä,word
+item_310,people,lapsi,child,child,lapsi,word
+item_329,people,vauva,baby,baby,vauva,word
+item_330,people,äiti,mother,mommy,äiti,word
+item_339,games_routines,ei,no,no,ei,word
+item_332,games_routines,hei,bye,bye,hei,word
+item_340,games_routines,hyvää yötä,good night,good night,hyvää yötä,word
+item_342,games_routines,kylpy,bath,bath,kylpy,word
+item_349,games_routines,välipala,snack,,välipala,word
+item_359,action_words,hypätä,jump,jump,hypätä,word
+item_360,action_words,istua,sit,sit,istua,word
+item_361,action_words,juoda,drink,drink (action),juoda,word
+item_400,action_words,juosta,run,run,juosta,word
+item_363,action_words,katsoa,look,look,katsoa,word
+item_415,action_words,löytää,find,find,löytää,word
+item_417,action_words,mennä,go,go,mennä,word
+item_382,action_words,ottaa,take,take,ottaa,word
+item_423,action_words,piilottaa,hide,hide,piilottaa,word
+item_425,action_words,poimia,pick,,poimia,word
+item_387,action_words,potkaista,kick,kick,potkaista,word
+item_388,action_words,pudottaa,drop,drop,pudottaa,word
+item_390,action_words,purra,bite,bite,purra,word
+item_430,action_words,rakentaa,build,build,rakentaa,word
+item_487,descriptive_words,hidas,slow,slow,hidas,word
+item_472,descriptive_words,hieno,fine,fine,hieno,word
+item_490,descriptive_words,iso,big,big,iso,word
+item_480,descriptive_words,likainen,dirty,dirty,likainen,word
+item_481,descriptive_words,musta,black,black,musta,word
+item_518,descriptive_words,tuhma,naughty,naughty,tuhma,word
+item_522,descriptive_words,varovainen,careful,careful,varovainen,word
+item_524,descriptive_words,äänekäs,noisy,,äänekäs,word
+item_460,time_words,ennen,before,before,ennen,word
+item_466,time_words,huomenna,tomorrow,tomorrow,huomenna,word
+item_594,connecting_words,sitten,then,,sitten,word
+item_590,connecting_words,taas,again,again,taas,word
+item_464,time_words,tänään,today,today,tänään,word
+item_538,pronouns,hän,he she,,hän,word
+item_525,pronouns,he,they,they,he,word
+item_537,pronouns,heidän,their,their,heidän,word
+item_542,pronouns,minä,I,i,minä,word
+item_553,question_words,miksi,why,why,miksi,word
+item_558,prepositions,auki,turned on,,auki,word
+item_560,prepositions,pois,away,away,pois,word
+item_570,prepositions,ylös,up,up,ylös,word
+item_581,quantifiers,vähän,few,,vähän,word
+item_583,quantifiers,monta,many,many,monta,word
+item_591,connecting_words,ja,and,and,ja,word
+item_588,connecting_words,koska,because,because,koska,word
+item_593,connecting_words,mutta,but,,mutta,word

@@ -1,0 +1,15 @@
+type,value,data_value
+sex,M,M
+sex,F,F
+sex,,n/a
+mom_ed,primary,Primary
+mom_ed,some secondary,Some High School
+mom_ed,secondary,High School Diploma
+mom_ed,some college,Some College
+mom_ed,college,College Degree
+mom_ed,some graduate,Some Graduate
+mom_ed,graduate,Graduate Degree
+mom_ed,graduate,Post-graduate
+word,produces,2
+word,understands,1
+word,,0
