@@ -98,6 +98,8 @@ class Child(models.Model):
     ethnicities = (('A', 'Asian'), ('B', 'Black'), ('H', 'Hispanic'), ('W', 'White'), ('O', 'Other/Mixed'))
     ethnicity = models.CharField(max_length=1, choices=ethnicities, null=True, blank=True)
 
+    race = models.CharField(max_length=1, blank=True, null=True)
+
     sexes = (('M', 'Male'), ('F', 'Female'), ('O', 'Other'))
     sex = models.CharField(max_length=1, choices=sexes, null=True, blank=True)
 

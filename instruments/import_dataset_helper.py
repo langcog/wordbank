@@ -58,7 +58,7 @@ class ImportHelper:
                 return value == 'TRUE'
             elif field_type in ('date_of_birth, date_of_test'):
                 return self.format_date(value)
-            elif field_type in ('ethnicity', 'sex', 'mom_ed', 'zygosity','condition') or group == 'item':
+            elif field_type in ('race', 'ethnicity', 'sex', 'mom_ed', 'zygosity','condition') or group == 'item':
                 value = self.value_typing(value).lower()
                 if self.splitcol and field_type == 'word':
                     value += column[-1]
