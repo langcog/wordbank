@@ -49,7 +49,7 @@ class ImportHelper:
         value = row_values[self.col_map[column]]
         if type(value) == str or type(value) == str:
             value = value.strip()
-        if not value in self.missing_values:
+        try:
             if field_type in ('study_id', 'study_momed', 'study_family_id','language'):
                 return value
             elif field_type in ('birth_order', 'data_age', 'study_internal_age'):
@@ -66,6 +66,12 @@ class ImportHelper:
                     return self.value_mapping[field_type][value]
                 except:
                     raise KeyError(f"Value mapping doesn't have entry for field type { field_type } and value { value }.  { column }")
+        except Exception:
+            if value in self.missing_values:
+                return None
+            else:
+                raise KeyError(f"Value mapping doesn't have entry for field type { field_type } and value { value }.  { column }")
+            
 
     def resolve_values(self, value0, value1):
         if value0 == 'produces' or value1 == 'produces':
@@ -106,7 +112,7 @@ class ImportHelper:
                 field_type, value, data_value = row_values[:3]
                 value = self.value_typing(value)
                 data_value = self.value_typing(data_value).lower()
-                if data_value is not None and data_value != '':
+                if data_value is not None: # and data_value != '':
                     value_mapping[field_type][data_value] = value
         return value_mapping
 
@@ -176,7 +182,6 @@ class ImportHelper:
             raise IOError("Instrument file must be xlsx, xls, or csv.")
 
     def get_row_data(self, row):
-
         row_values = self.get_data_row(row)
         if len(row_values) > 1:
 
