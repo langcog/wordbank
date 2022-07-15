@@ -1,7 +1,7 @@
 {% load static %}
-  <h1 class="title toc-ignore">About Us</h1>
+
   <div id="meet-the-wordbank-team" class="section level3">
-    <h3>Meet the Wordbank Team!</h3>
+    <h3>Site Contributors</h3>
     <div class="row">
       <div class="col-md-3">
         <div class="thumbnail">
@@ -41,11 +41,6 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div id="meet-the-wordbank-team" class="section level3">
-    <h3>Alumni</h3>
-    <div class="row">
       <div class="col-md-3">
         <div class="thumbnail">
           <img src="{% static 'images/headshots/danielle.jpg' %}"/>
@@ -55,14 +50,47 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3"></div>
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <a name="Benny deMayo" href="https://hudl.princeton.edu/people/benjamin-demayo" target="_blank"><img src="{% static 'images/headshots/benny.jpg' %}"/></a>
+          <div class="caption">
+            <h3>Benny<br/>deMayo</h3>
+            <p>Princeton University</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <a name="George Kachergis" href="http://www.kachergis.com/" target="_blank"><img src="{% static 'images/headshots/george.jpg' %}"/></a>
+          <div class="caption">
+            <h3>George<br/>Kachergis</h3>
+            <p>Skillprint</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <img src="{% static 'images/headshots/danielle.jpg' %}"/>
+          <div class="caption">
+            <h3>Alvin<br/>Tan</h3>
+            <p>Stanford University</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <a name="Jess Mankewitz" href="https://jmankewitz.com/" target="_blank"><img src="{% static 'images/headshots/jess.png' %}"/></a>
+          <div class="caption">
+            <h3>Jess<br/>Mankewitz</h3>
+            <p>UW - Madison</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div id="who-funds-wordbank" class="section level3">
     <h3>Who funds Wordbank?</h3>
     <p>The team would like to thank our supporters! The construction of Wordbank was funded by a grant from the National Science Foundation (#1451577), as well as generous support from the MB-CDI Advisory Board.</p>
-    <hr/>
-    <p>Thanks to <a href="http://www.brockferguson.com/">Brock Ferguson</a> for help with database design and optimization, and to Rose Schneider for logo design.</p>
   </div>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
@@ -74,3 +102,4 @@
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>
+

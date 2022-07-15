@@ -123,4 +123,6 @@ class Faq(View):
 class About(View):
 
     def get(self, request):
-        return render(request, 'about.html', {})
+        publications = json.loads(open('static/json/publications.json', encoding='utf8').read())
+        #publications = json.loads(urllib.request.urlopen(static('json/publications.json')).read())
+        return render(request, 'about.html', {'publications': publications})

@@ -1,0 +1,14 @@
+{% load static %}
+
+<div id="publications" class="section level3">
+  <h3>Papers and Publications</h3>
+  <div class="row">
+    {% for pub in publications %}
+    <div class="col-xs-12 panel panel-primary">
+      <div class="panel-body">
+        {{ pub.authors }} ({{ pub.date }}). <b>{{ pub.title }}</b>. {{ pub.journal }}. <a href="{{ pub.link }}" target="_blank">[pdf]</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
