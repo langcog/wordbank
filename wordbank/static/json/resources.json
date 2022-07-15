@@ -2,11 +2,26 @@
   {
     "name": "MetaLab",
     "link": "http://metalab.stanford.edu",
-    "description": "tools for power analysis and experimental planning in language acquisition research"
+    "description": "Database of developmental meta-analyses"
   },
   {
     "name": "CHILDES",
     "link": "https://childes.talkbank.org",
-    "description": "corpus of child and child-directed language"
+    "description": "Corpora of child and child-directed language"
+  },
+  {
+    "name": "childes-db",
+    "link": "https://childes-db.stanford.edu",
+    "description": "Flexible and reproducible interface to CHILDES"
+  },
+  {
+    "name": "Peekbank",
+    "link": "https://peekbank.stanford.edu",
+    "description": "Database of data from experiments measuring children's word recognition"
+  },
+  {
+    "name": "ManyBabies",
+    "link": "https://manybabies.stanford.edu",
+    "description": "Consortium for multi-lab replications in developmental psychology"
   }
 ]
