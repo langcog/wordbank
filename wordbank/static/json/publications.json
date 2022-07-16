@@ -1,32 +1,10 @@
-[{
-    "title": "Wordbank: An open repository for developmental vocabulary data",
-    "authors": "Frank, M. C., Braginsky, M., Yurovsky, D., & Marchman, V. A.",
-    "date": "2016",
-    "journal": "Journal of Child Language",
-    "link": "http://langcog.stanford.edu/papers_new/frank-2016-jcl.pdf"
-},
-{
-    "title": "Variability and Consistency in Early Language Learning: The Wordbank Project",
-    "authors": "Frank, M. C., Braginsky, M., Yurovsky, D., & Marchman, V. A.",
-    "date": "2021",
-    "journal": "Cambridge, MA: MIT Press.",
-    "link": "https://langcog.github.io/wordbank-book/"
-},
+[
 {
     "title": "Exploring patterns of stability and change in caregivers' word usage across early childhood",
     "authors": "Jiang, H., and Frank, M. C., Kulkarni, V. and Fourtassi, A.",
     "date": "2022",
     "journal": "Cognitive Science",
     "link": "https://psyarxiv.com/fym86"
-},
-{
-    "title": "Consistency and variability in word learning across languages",
-    "authors": "Braginsky, M., Yurovsky, D., & Marchman, V. A., Frank, M. C., ",
-    "date": "2019",
-    "journal": "Open Mind",
-    "pages": "57-67",
-    "volume": "3",
-    "link": "https://www.mitpressjournals.org/doi/full/10.1162/opmi_a_00026"
 },
 {
     "title": "Estimating demographic bias on tests of children's early vocabulary",
@@ -50,9 +28,33 @@
     "link": "https://psyarxiv.com/yhrb4"
 },
 {
+    "title": "Variability and Consistency in Early Language Learning: The Wordbank Project",
+    "authors": "Frank, M. C., Braginsky, M., Yurovsky, D., & Marchman, V. A.",
+    "date": "2021",
+    "journal": "Cambridge, MA: MIT Press.",
+    "link": "https://langcog.github.io/wordbank-book/"
+},
+{
     "title": "Predicting age of acquisition in early word learning using recurrent neural networks",
     "authors": "Portelance, E., Degen, J., Frank, M. C.",
     "date": "2020",
     "journal": "Proceedings of the 42nd Annual Conference of the Cognitive Science Society",
     "link": "https://github.com/eporte2/aoa_lstm_prediction/blob/master/writeups/CogSci_final_EvaPortelance.pdf"
-}]
+},
+{
+    "title": "Consistency and variability in word learning across languages",
+    "authors": "Braginsky, M., Yurovsky, D., & Marchman, V. A., Frank, M. C., ",
+    "date": "2019",
+    "journal": "Open Mind",
+    "pages": "57-67",
+    "volume": "3",
+    "link": "https://www.mitpressjournals.org/doi/full/10.1162/opmi_a_00026"
+},
+{
+    "title": "Wordbank: An open repository for developmental vocabulary data",
+    "authors": "Frank, M. C., Braginsky, M., Yurovsky, D., & Marchman, V. A.",
+    "date": "2016",
+    "journal": "Journal of Child Language",
+    "link": "http://langcog.stanford.edu/papers_new/frank-2016-jcl.pdf"
+}
+]
