@@ -4,6 +4,7 @@ study_id,ID,child,study_id
 ,GenderNum,,
 sex,Gender,child,sex
 ethnicity,Ethnicity,child,ethnicity
+race,race,child,race
 mom_ed,Momed,child,mom_ed
 condition,DevelopmentalDiagnosis,child,condition
 ,BirthOrder,,

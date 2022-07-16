@@ -1,18 +1,21 @@
 type,value,data_value
 sex,M,Male
 sex,F,Female
-ethnicity,W,White
-ethnicity,A,Asian
-ethnicity,B,African American/Black
+race,W,White
+race,A,Asian
+race,B,African American/Black
 ethnicity,H,Hispanic or Latino
 ethnicity,,NA
-ethnicity,O,native american/alaskan
-ethnicity,O,More than one
+race,O,native american/alaskan
+race,O,More than one
 mom_ed,some secondary,No highschool degree
 mom_ed,college,College degree
 mom_ed,graduate,Masters
 mom_ed,some college,some college
 mom_ed,secondary,High school degree
 word,,0.0
+word,,0
 word,understands,1.0
+word,understands,1
 word,produces,2.0
+word,produces,2

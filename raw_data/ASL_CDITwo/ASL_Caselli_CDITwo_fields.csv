@@ -1,7 +1,8 @@
 field,column,group,type
 study_id,child_id,child,study_id
 data_age,age,admin,data_age
-ethnicity,race,child,ethnicity
+race,race,child,race
+ethnicity,ethnicity,child,ethnicity
 sex,sex,child,sex
 mom_ed,momed,child,mom_ed
 Item_1,ABOUT_2,item,word

@@ -19,7 +19,7 @@ class ImportHelper:
         self.administrations = {}
 
         self.datemode = None
-        self.missing_values = {'Null', '#NULL!', '', ' ', 'Missing', 'Unknown/other', '?', 'NA', '99'}
+        self.missing_values = {'#null!','Null', 'null', '#NULL!', '', ' ', 'Missing', 'missing', 'Unknown/other', 'unknown/other', '?', 'na', 'NA', '99'}
 
     @staticmethod
     def compute_age(date_of_birth, date_of_test):
@@ -67,6 +67,8 @@ class ImportHelper:
                 except:
                     raise KeyError(f"Value mapping doesn't have entry for field type { field_type } and value { value }.  { column }")
         except Exception:
+            if self.splitcol and field_type == 'word':
+                    value = value[:-1]
             if value in self.missing_values:
                 return None
             else:

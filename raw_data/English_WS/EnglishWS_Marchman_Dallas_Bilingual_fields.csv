@@ -2,6 +2,7 @@ field,column,group,type
 birth_order,BOrder,child,birth_order
 data_age,CDIAge,admin,data_age
 ethnicity,Ethnic,child,ethnicity
+race,race,child,race
 mom_ed,MotherEd,child,mom_ed
 sex,Gender,child,sex
 study_id,ParticipantId,child,study_id
