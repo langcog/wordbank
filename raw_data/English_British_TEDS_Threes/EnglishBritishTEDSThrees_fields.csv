@@ -2,7 +2,7 @@
 "study_id","id_twin","child","study_id"
 "study_family_id","id_fam","child","study_family_id"
 "sex","sex","child","sex"
-"ethnicity","ethnicity","child","ethnicity"
+"race","ethnicity","child","race"
 "zygosity","zygosity","child","zygosity"
 "mom_ed","mom_ed","child","mom_ed"
 "data_age","age_months","admin","data_age"
