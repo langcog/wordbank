@@ -1688,6 +1688,34 @@
         "contributor": "Caroline Floccia, University of Plymouth",
         "license": "CC-BY",
         "citation": "Floccia, C., Sambrook, T. D., Luche, C. D., Kwok, R., Goslin, J., White, L., Cattani, A., Sullivan, E., Abbot-Smith, K., Krott, A., Mills, D., Rowland, C., Gervain, J., Plunkett, K., Hoff, E., & Bauer, P. J. (2018). Vocabulary of 2-year-olds learning English and an additional language: Norms and effects of linguistic distance. Monographs for the Society for Research in Child Development, 83(1), 1–235. https://doi.org/10.1111/mono.12352"
+    },
+    {
+        "name": "Marchman",
+        "dataset": "Norming2",
+        "instrument_language": "English (American)",
+        "instrument_form": "WG",
+        "file": "raw_data/English_WG/EnglishWG_Marchman_Norming2.csv",
+        "splitcol": false,
+        "norming": true,
+        "longitudinal": false,
+        "date_format": "%m/%d/%y",
+        "contributor": "The MacArthur-Bates CDI Advisory Board",
+        "license": "CC-BY",
+        "citation": "Marchman, V. A., Dale, P. S., & Fenson, L. (forthcoming). The MacArthur-Bates Communicative Development Inventories: User's Guide and Technical Manual (3rd Edition). Baltimore, MD: Brookes Publishing. "
+    },
+    {
+        "name": "Marchman",
+        "dataset": "Norming2",
+        "instrument_language": "English (American)",
+        "instrument_form": "WS",
+        "file": "raw_data/English_WS/EnglishWS_Marchman_Norming2.csv",
+        "splitcol": false,
+        "norming": true,
+        "longitudinal": false,
+        "date_format": "%m/%d/%y",
+        "contributor": "The MacArthur-Bates CDI Advisory Board",
+        "license": "CC-BY",
+        "citation": "Marchman, V. A., Dale, P. S., & Fenson, L. (forthcoming). The MacArthur-Bates Communicative Development Inventories: User's Guide and Technical Manual (3rd Edition). Baltimore, MD: Brookes Publishing. "
     }
 ]
 

@@ -1,0 +1,49 @@
+type,value,data_value
+sex,M,Male
+sex,F,Female
+ethnicity,N,non-hispanic
+ethnicity,H,hispanic
+race,W,White
+race,B,Black
+race,A,Asian
+race,O,Mixed/Other
+mom_ed,primary,5
+mom_ed,primary,6
+mom_ed,primary,7
+mom_ed,primary,8
+mom_ed,some secondary,9
+mom_ed,some secondary,10
+mom_ed,some secondary,11
+mom_ed,secondary,12
+mom_ed,some college,13
+mom_ed,some college,14
+mom_ed,some college,15
+mom_ed,college,16
+mom_ed,some graduate,17
+mom_ed,graduate,18
+mom_ed,graduate,19
+mom_ed,graduate,20
+mom_ed,graduate,21
+mom_ed,graduate,22
+mom_ed,graduate,23
+first_signs,yes,yes
+first_signs,no,no
+phrases,understands,understands
+phrases,,NA
+starting_to_talk,never,never
+starting_to_talk,sometimes,sometimes
+starting_to_talk,often,often
+word,produces,produces
+word,understands,understands
+word,,NA
+gestures_first,not yet,not yet
+gestures_first,sometimes,sometimes
+gestures_first,often,often
+gestures_games,yes,yes
+gestures_games,no,no
+gestures_objects,yes,yes
+gestures_objects,no,no
+gestures_parent,yes,yes
+gestures_parent,no,no
+gestures_adult,yes,yes
+gestures_adult,no,no
