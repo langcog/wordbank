@@ -1090,35 +1090,6 @@
         "citation": "Liu, H. M., & Tsao, F. M. (2010). The standardization and application of Mandarin-Chinese communicative developmental inventory for infants and toddlers. Formosa Journal of Mental Health, (4)23, 503-534. doi: 10.30074/CJMH.201012.0001 \nLiu, H. M., & Chen, Y. (2015). Developmental changes in the content and composition of early expressive vocabulary in Mandarin-speaking infants and toddlers. Bulletin of Educational Psychology, 24(7), 217-242. doi: 10.6251/BEP.20150205"
     },
     {
-        "name": "Henry",
-        "dataset": "",
-        "instrument_language": "Henry Test Language",
-        "instrument_form": "WG",
-        "file": "raw_data/Henry_WG/HenryWG_Woll.csv",
-        "splitcol": false,
-        "date_format": "%m/%d/%Y",
-        "norming": true,
-        "longitudinal": false,
-        "contributor": "Henry Mehta, Hexia Web Services Ltd",
-        "license": "CC-BY",
-        "citation": "Mehta, H. (2021). This is a test for loading conditions: a Henry Test Language.",
-        "dataset_origin": "Henry"
-    },
-    {
-        "name": "Henry",
-        "dataset": "",
-        "instrument_language": "Henry Second Language",
-        "instrument_form": "WG",
-        "file": "raw_data/Henry_Lang_2_WG/HenryWG_Woll.csv",
-        "splitcol": true,
-        "norming": true,
-        "longitudinal": false,
-        "contributor": "Henry Mehta, Hexia Web Services Ltd",
-        "license": "CC-BY",
-        "citation": "Mehta, H. (2021). This is a test for loading conditions: a Henry Test Language.",
-        "dataset_origin": "Henry"
-    },
-    {
         "name": "OToole",
         "dataset": "English",
         "instrument_language": "English (Irish)",

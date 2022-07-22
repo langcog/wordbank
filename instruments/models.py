@@ -55,8 +55,6 @@ from .schemas.Portuguese_European_WG import *
 from .schemas.Portuguese_European_WS import *
 from .schemas.Mandarin_Taiwanese_WG import *
 from .schemas.Mandarin_Taiwanese_WS import *
-from .schemas.Henry_Test_Language_WG import *
-from .schemas.Henry_Second_Language_WG import *
 from .schemas.English_Irish_WS import *
 from .schemas.Irish_WS import *
 from .schemas.Finnish_WS import *
