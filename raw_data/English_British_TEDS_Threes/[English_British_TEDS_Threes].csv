@@ -1,114 +1,114 @@
-itemID,item,type,choices,category,definition,gloss,complexity_category,uni_lemma
-item_1,s01s1,complexity,simple; complex,,s01s1,,,
-item_2,s02s1,complexity,simple; complex,,s02s1,,,
-item_3,s03s1,complexity,simple; complex,,s03s1,,,
-item_4,s04s1,complexity,simple; complex,,s04s1,,,
-item_5,s05s1,complexity,simple; complex,,s05s1,,,
-item_6,s06s1,complexity,simple; complex,,s06s1,,,
-item_7,s07s1,complexity,simple; complex,,s07s1,,,
-item_8,s08s1,complexity,simple; complex,,s08s1,,,
-item_9,s09s1,complexity,simple; complex,,s09s1,,,
-item_10,s10s1,complexity,simple; complex,,s10s1,,,
-item_11,s11s1,complexity,simple; complex,,s11s1,,,
-item_12,s12s1,complexity,simple; complex,,s12s1,,,
-item_13,dinosaur,word,produces,,dinosaur,,,
-item_14,glass,word,produces,,glass,,,glass
-item_15,catch,word,produces,,catch,,,catch
-item_16,peculiar,word,produces,,peculiar,,,
-item_17,donkey,word,produces,,donkey,,,donkey
-item_18,jar,word,produces,,jar,,,jar
-item_19,drop,word,produces,,drop,,,drop
-item_20,before,word,produces,,before,,,
-item_21,reindeer,word,produces,,reindeer,,,
-item_22,ladder,word,produces,,ladder,,,ladder
-item_23,fasten,word,produces,,fasten,,,
-item_24,then,word,produces,,then,,,
-item_25,castle,word,produces,,castle,,,
-item_26,material,word,produces,,material,,,
-item_27,forget_forgot,word,produces,,forget/forgot,,,
-item_28,today,word,produces,,today,,,today
-item_29,drum,word,produces,,drum,,,drum
-item_30,stamp,word,produces,,stamp,,,
-item_31,hate,word,produces,,hate,,,
-item_32,week,word,produces,,week,,,
-item_33,football,word,produces,,football,,,
-item_34,tyre,word,produces,,tyre,,,
-item_35,hurry,word,produces,,hurry,,,hurry
-item_36,yesterday,word,produces,,yesterday,,,yesterday
-item_37,microscope,word,produces,,microscope,,,
-item_38,furniture,word,produces,,furniture,,,
-item_39,leave,word,produces,,leave,,,leave
-item_40,their,word,produces,,their,,,
-item_41,tricycle,word,produces,,tricycle,,,
-item_42,kitchen,word,produces,,kitchen,,,kitchen
-item_43,measure,word,produces,,measure,,,
-item_44,they,word,produces,,they,,,they
-item_45,kite,word,produces,,kite,,,
-item_46,settee_sofa,word,produces,,settee/sofa,,,couch
-item_47,peel,word,produces,,peel,,,
-item_48,those,word,produces,,those,,,those
-item_49,trolley,word,produces,,trolley,,,
-item_50,cloud,word,produces,,cloud,,,cloud
-item_51,promise,word,produces,,promise,,,
-item_52,yourself,word,produces,,yourself,,,
-item_53,lemon,word,produces,,lemon,,,lemon
-item_54,fence,word,produces,,fence,,,
-item_55,kate,word,produces,,kate,,,
-item_56,why,word,produces,,why,,,why
-item_57,peanut,word,produces,,peanut,,,peanut
-item_58,hose_hose_pipe,word,produces,,hose/hose-pipe,,,
-item_59,sneeze,word,produces,,sneeze,,,
-item_60,about,word,produces,,about,,,
-item_61,cream_cracker,word,produces,,cream cracker,,,biscuit
-item_62,pavement,word,produces,,pavement,,,
-item_63,somersault,word,produces,,somersault,,,somersault
-item_64,above,word,produces,,above,,,above
-item_65,salt,word,produces,,salt,,,
-item_66,zoo,word,produces,,zoo,,,zoo
-item_67,think,word,produces,,think,,,
-item_68,away,word,produces,,away,,,away
-item_69,sauce,word,produces,,sauce,,,sauce
-item_70,child,word,produces,,child,,,child
-item_71,black,word,produces,,black,,,black
-item_72,between,word,produces,,between,,,between
-item_73,vanilla,word,produces,,vanilla,,,
-item_74,cowboy,word,produces,,cowboy,,,
-item_75,bored,word,produces,,bored,,,
-item_76,on_top_of,word,produces,,on top of,,,
-item_77,vegetable,word,produces,,vegetable,,,
-item_78,family,word,produces,,family,,,family
-item_79,deep,word,produces,,deep,,,
-item_80,each,word,produces,,each,,,
-item_81,beads,word,produces,,beads,,,beads
-item_82,farmer,word,produces,,farmer,,,
-item_83,different,word,produces,,different,,,different
-item_84,every,word,produces,,every,,,all
-item_85,jeans,word,produces,,jeans,,,jeans
-item_86,nobody,word,produces,,nobody,,,no one
-item_87,empty,word,produces,,empty,,,empty
-item_88,none,word,produces,,none,,,none
-item_89,elbow,word,produces,,elbow,,,
-item_90,nurse,word,produces,,nurse,,,
-item_91,expensive,word,produces,,expensive,,,
-item_92,might,word,produces,,might,,,
-item_93,finger_nail,word,produces,,(finger) nail,,,nail (body part)
-item_94,accident,word,produces,,accident,,,
-item_95,fine,word,produces,,fine,,,fine
-item_96,need to,word,produces,,need to,,,
-item_97,thumb,word,produces,,thumb,,,thumb
-item_98,circle,word,produces,,circle,,,
-item_99,half,word,produces,,half,,,
-item_100,were,word,produces,,were,,,
-item_101,plaster_bandage,word,produces,,plaster/bandage,,,
-item_102,front,word,produces,,front,,,front
-item_103,long,word,produces,,long,,,
-item_104,although,word,produces,,although,,,
-item_105,blade,word,produces,,blade,,,
-item_106,idea,word,produces,,idea,,,
-item_107,lost,word,produces,,lost,,,
-item_108,because,word,produces,,because,,,
-item_109,computer,word,produces,,computer,,,computer
-item_110,camping,word,produces,,camping,,,
-item_111,angry,word,produces,,angry,,,angry
-item_112,however,word,produces,,however,,,
-item_113,combines_words,combine,yes; no,,Has your child begun to combine words yet?,,,
+itemID,item,type,choices,category,definition,complexity_category,gloss,uni_lemma
+item_13,dinosaur,word,produces,NA,dinosaur,NA,dinosaur,dinosaur
+item_14,glass,word,produces,NA,glass,NA,glass,glass
+item_15,catch,word,produces,NA,catch,NA,catch,catch
+item_16,peculiar,word,produces,NA,peculiar,NA,peculiar,strange
+item_17,donkey,word,produces,NA,donkey,NA,donkey,donkey
+item_18,jar,word,produces,NA,jar,NA,jar,jar
+item_19,drop,word,produces,NA,drop,NA,drop,drop
+item_20,before,word,produces,NA,before,NA,before,before
+item_21,reindeer,word,produces,NA,reindeer,NA,reindeer,reindeer
+item_22,ladder,word,produces,NA,ladder,NA,ladder,ladder
+item_23,fasten,word,produces,NA,fasten,NA,fasten,fasten
+item_24,then,word,produces,NA,then,NA,then,then
+item_25,castle,word,produces,NA,castle,NA,castle,castle
+item_26,material,word,produces,NA,material,NA,material,material
+item_27,forget_forgot,word,produces,NA,forget/forgot,NA,forget/forgot,forget
+item_28,today,word,produces,NA,today,NA,today,today
+item_29,drum,word,produces,NA,drum,NA,drum,drum (object)
+item_30,stamp,word,produces,NA,stamp,NA,stamp,stamp (action)
+item_31,hate,word,produces,NA,hate,NA,hate,hate
+item_32,week,word,produces,NA,week,NA,week,week
+item_33,football,word,produces,NA,football,NA,football,soccer
+item_34,tyre,word,produces,NA,tyre,NA,tyre,tire (object)
+item_35,hurry,word,produces,NA,hurry,NA,hurry,hurry
+item_36,yesterday,word,produces,NA,yesterday,NA,yesterday,yesterday
+item_37,microscope,word,produces,NA,microscope,NA,microscope,microscope
+item_38,furniture,word,produces,NA,furniture,NA,furniture,furniture
+item_39,leave,word,produces,NA,leave,NA,leave,leave
+item_40,their,word,produces,NA,their,NA,their,their
+item_41,tricycle,word,produces,NA,tricycle,NA,tricycle,tricycle
+item_42,kitchen,word,produces,NA,kitchen,NA,kitchen,kitchen
+item_43,measure,word,produces,NA,measure,NA,measure,measure
+item_44,they,word,produces,NA,they,NA,they,they
+item_45,kite,word,produces,NA,kite,NA,kite,kite
+item_46,settee_sofa,word,produces,NA,settee/sofa,NA,settee/sofa,couch
+item_47,peel,word,produces,NA,peel,NA,peel,peel
+item_48,those,word,produces,NA,those,NA,those,those
+item_49,trolley,word,produces,NA,trolley,NA,trolley,trolley
+item_50,cloud,word,produces,NA,cloud,NA,cloud,cloud
+item_51,promise,word,produces,NA,promise,NA,promise,promise
+item_52,yourself,word,produces,NA,yourself,NA,yourself,yourself
+item_53,lemon,word,produces,NA,lemon,NA,lemon,lemon
+item_54,fence,word,produces,NA,fence,NA,fence,fence
+item_55,kate,word,produces,NA,kate,NA,kate,NA
+item_56,why,word,produces,NA,why,NA,why,why
+item_57,peanut,word,produces,NA,peanut,NA,peanut,nut
+item_58,hose_hose_pipe,word,produces,NA,hose/hose-pipe,NA,hose/hose-pipe,hose
+item_59,sneeze,word,produces,NA,sneeze,NA,sneeze,sneeze
+item_60,about,word,produces,NA,about,NA,about,about
+item_61,cream_cracker,word,produces,NA,cream cracker,NA,cream cracker,biscuit
+item_62,pavement,word,produces,NA,pavement,NA,pavement,pavement
+item_63,somersault,word,produces,NA,somersault,NA,somersault,somersault
+item_64,above,word,produces,NA,above,NA,above,above
+item_65,salt,word,produces,NA,salt,NA,salt,salt
+item_66,zoo,word,produces,NA,zoo,NA,zoo,zoo
+item_67,think,word,produces,NA,think,NA,think,think
+item_68,away,word,produces,NA,away,NA,away,away
+item_69,sauce,word,produces,NA,sauce,NA,sauce,sauce
+item_70,child,word,produces,NA,child,NA,child,child
+item_71,black,word,produces,NA,black,NA,black,black
+item_72,between,word,produces,NA,between,NA,between,between
+item_73,vanilla,word,produces,NA,vanilla,NA,vanilla,vanilla
+item_74,cowboy,word,produces,NA,cowboy,NA,cowboy,cowboy
+item_75,bored,word,produces,NA,bored,NA,bored,bored
+item_76,on_top_of,word,produces,NA,on top of,NA,on top of,on top
+item_77,vegetable,word,produces,NA,vegetable,NA,vegetable,vegetable
+item_78,family,word,produces,NA,family,NA,family,family
+item_79,deep,word,produces,NA,deep,NA,deep,deep
+item_80,each,word,produces,NA,each,NA,each,each
+item_81,beads,word,produces,NA,beads,NA,beads,beads
+item_82,farmer,word,produces,NA,farmer,NA,farmer,farmer
+item_83,different,word,produces,NA,different,NA,different,different
+item_84,every,word,produces,NA,every,NA,every,all
+item_85,jeans,word,produces,NA,jeans,NA,jeans,jeans
+item_86,nobody,word,produces,NA,nobody,NA,nobody,no one
+item_87,empty,word,produces,NA,empty,NA,empty,empty
+item_88,none,word,produces,NA,none,NA,none,none
+item_89,elbow,word,produces,NA,elbow,NA,elbow,elbow
+item_90,nurse,word,produces,NA,nurse,NA,nurse,nurse
+item_91,expensive,word,produces,NA,expensive,NA,expensive,expensive
+item_92,might,word,produces,NA,might,NA,might,might
+item_93,finger_nail,word,produces,NA,(finger) nail,NA,(finger) nail,nail (body part)
+item_94,accident,word,produces,NA,accident,NA,accident,accident
+item_95,fine,word,produces,NA,fine,NA,fine,fine
+item_96,need to,word,produces,NA,need to,NA,need to,need
+item_97,thumb,word,produces,NA,thumb,NA,thumb,thumb
+item_98,circle,word,produces,NA,circle,NA,circle,circle
+item_99,half,word,produces,NA,half,NA,half,half
+item_100,were,word,produces,NA,were,NA,were,were
+item_101,plaster_bandage,word,produces,NA,plaster/bandage,NA,plaster/bandage,bandaid
+item_102,front,word,produces,NA,front,NA,front,front
+item_103,long,word,produces,NA,long,NA,long,long
+item_104,although,word,produces,NA,although,NA,although,although
+item_105,blade,word,produces,NA,blade,NA,blade,knife
+item_106,idea,word,produces,NA,idea,NA,idea,idea
+item_107,lost,word,produces,NA,lost,NA,lost,lost
+item_108,because,word,produces,NA,because,NA,because,because
+item_109,computer,word,produces,NA,computer,NA,computer,computer
+item_110,camping,word,produces,NA,camping,NA,camping,camping
+item_111,angry,word,produces,NA,angry,NA,angry,angry
+item_112,however,word,produces,NA,however,NA,however,however
+item_1,s01s1,complexity,simple; complex,NA,s01s1,NA,NA,NA
+item_2,s02s1,complexity,simple; complex,NA,s02s1,NA,NA,NA
+item_3,s03s1,complexity,simple; complex,NA,s03s1,NA,NA,NA
+item_4,s04s1,complexity,simple; complex,NA,s04s1,NA,NA,NA
+item_5,s05s1,complexity,simple; complex,NA,s05s1,NA,NA,NA
+item_6,s06s1,complexity,simple; complex,NA,s06s1,NA,NA,NA
+item_7,s07s1,complexity,simple; complex,NA,s07s1,NA,NA,NA
+item_8,s08s1,complexity,simple; complex,NA,s08s1,NA,NA,NA
+item_9,s09s1,complexity,simple; complex,NA,s09s1,NA,NA,NA
+item_10,s10s1,complexity,simple; complex,NA,s10s1,NA,NA,NA
+item_11,s11s1,complexity,simple; complex,NA,s11s1,NA,NA,NA
+item_12,s12s1,complexity,simple; complex,NA,s12s1,NA,NA,NA
+item_113,combines_words,combine,yes; no,NA,Has your child begun to combine words yet?,NA,NA,NA

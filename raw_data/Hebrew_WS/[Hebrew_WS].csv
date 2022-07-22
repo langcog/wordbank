@@ -1,10 +1,10 @@
 itemID,item,type,choices,category,definition,gloss,uni_lemma
 item_1,p1_c01_i01,word,understands; produces,sounds,אוי/ איה,ouch,ouch
 item_2,p1_c01_i02,word,understands; produces,sounds,אי-אה,hee-haw,hee haw
-item_3,p1_c01_i03,word,understands; produces,sounds,בזז...,bzz..,bzzz
+item_3,p1_c01_i03,word,understands; produces,sounds,בזז...,bzz..,buzz
 item_4,p1_c01_i04,word,understands; produces,sounds,גע גע,quack quack,quack quack
 item_5,p1_c01_i05,word,understands; produces,sounds,האו/ הב הב,woof woof,woof woof
-item_6,p1_c01_i06,word,understands; produces,sounds,הופה,hoppe,
+item_6,p1_c01_i06,word,understands; produces,sounds,הופה,hoppe,wow
 item_7,p1_c01_i07,word,understands; produces,sounds,הם/ מ מ...מ,yum yum,yum yum
 item_8,p1_c01_i08,word,understands; produces,sounds,וון וון/ הנ/ ברר,vroom vroom,vroom
 item_9,p1_c01_i09,word,understands; produces,sounds,מה מה,baa baa,baa baa
@@ -30,12 +30,12 @@ item_28,p1_c02_i13,word,understands; produces,animals,זאב,wolf,wolf
 item_29,p1_c02_i14,word,understands; produces,animals,זבוב,fly,fly (animal)
 item_30,p1_c02_i15,word,understands; produces,animals,זברה,zebra,zebra
 item_31,p1_c02_i16,word,understands; produces,animals,חיה,animal,animal
-item_32,p1_c02_i17,word,understands; produces,animals,חיפושית,beetle,
+item_32,p1_c02_i17,word,understands; produces,animals,חיפושית,beetle,beetle
 item_33,p1_c02_i18,word,understands; produces,animals,חמור,donkey,donkey
 item_34,p1_c02_i19,word,understands; produces,animals,חתול,cat,cat
 item_35,p1_c02_i20,word,understands; produces,animals,טווס,peacock,peacock
 item_36,p1_c02_i21,word,understands; produces,animals,טלה,lamb,lamb
-item_37,p1_c02_i22,word,understands; produces,animals,יונה,pigeon,
+item_37,p1_c02_i22,word,understands; produces,animals,יונה,pigeon,pigeon
 item_38,p1_c02_i23,word,understands; produces,animals,ינשוף,owl,owl
 item_39,p1_c02_i24,word,understands; produces,animals,כבשה,sheep,sheep
 item_40,p1_c02_i25,word,understands; produces,animals,כלב,dog,dog
@@ -63,7 +63,7 @@ item_61,p1_c03_i01,word,understands; produces,vehicles,אוטו/ מכונית,ca
 item_62,p1_c03_i02,word,understands; produces,vehicles,אוטובוס,bus,bus
 item_63,p1_c03_i03,word,understands; produces,vehicles,אופנוע,motorcycle,motorcycle
 item_64,p1_c03_i04,word,understands; produces,vehicles,אופניים,bicycle,bicycle
-item_65,p1_c03_i05,word,understands; produces,vehicles,אניה,ship,boat
+item_65,p1_c03_i05,word,understands; produces,vehicles,אניה,boat,boat
 item_66,p1_c03_i06,word,understands; produces,vehicles,אמבולנס,ambulance,ambulance
 item_67,p1_c03_i07,word,understands; produces,vehicles,ג'יפ,jeep,jeep
 item_68,p1_c03_i08,word,understands; produces,vehicles,הליקופטר,helicopter,helicopter
@@ -71,69 +71,69 @@ item_69,p1_c03_i09,word,understands; produces,vehicles,טרקטור,tractor,trac
 item_70,p1_c03_i10,word,understands; produces,vehicles,מטוס/ אווירון,airplane,airplane
 item_71,p1_c03_i11,word,understands; produces,vehicles,משאית,truck,truck
 item_72,p1_c03_i12,word,understands; produces,vehicles,עגלה,stroller,stroller
-item_73,p1_c03_i13,word,understands; produces,vehicles,קטר,train engine,
+item_73,p1_c03_i13,word,understands; produces,vehicles,קטר,train engine,NA
 item_74,p1_c03_i14,word,understands; produces,vehicles,רכבת,train,train
 item_75,p1_c04_i01,word,understands; produces,toys,בובה,doll,doll
 item_76,p1_c04_i02,word,understands; produces,toys,בועות,bubbles,bubbles
 item_77,p1_c04_i03,word,understands; produces,toys,בלון,balloon,balloon
 item_78,p1_c04_i04,word,understands; produces,toys,בצק/ פלסטלינה,play dough \ plasticine,play dough
 item_79,p1_c04_i05,word,understands; produces,toys,גיר,chalk,chalk
-item_80,p1_c04_i06,word,understands; produces,toys,דבק,glue,glue
+item_80,p1_c04_i06,word,understands; produces,toys,דבק,glue,glue (object)
 item_81,p1_c04_i07,word,understands; produces,toys,חרוזים,beads,beads
-item_82,p1_c04_i08,word,understands; produces,toys,טוש,marker,
+item_82,p1_c04_i08,word,understands; produces,toys,טוש,marker,marker
 item_83,p1_c04_i09,word,understands; produces,toys,כדור,ball,ball
 item_84,p1_c04_i10,word,understands; produces,toys,ליצן,clown,clown
 item_85,p1_c04_i11,word,understands; produces,toys,מגדל,tower,tower
-item_86,p1_c04_i12,word,understands; produces,toys,משחק,game,
+item_86,p1_c04_i12,word,understands; produces,toys,משחק,game,game
 item_87,p1_c04_i13,word,understands; produces,toys,מתנה,present,present
-item_88,p1_c04_i14,word,understands; produces,toys,סביבון,gyroscopes,
+item_88,p1_c04_i14,word,understands; produces,toys,סביבון,gyroscopes,NA
 item_89,p1_c04_i15,word,understands; produces,toys,סיפור,story,story
 item_90,p1_c04_i16,word,understands; produces,toys,ספר,book,book
 item_91,p1_c04_i17,word,understands; produces,toys,עט,pen,pen
 item_92,p1_c04_i18,word,understands; produces,toys,עפרון,pencil,pencil
-item_93,p1_c04_i19,word,understands; produces,toys,פאזל/ הרכבה,puzzle,
+item_93,p1_c04_i19,word,understands; produces,toys,פאזל/ הרכבה,puzzle,puzzle
 item_94,p1_c04_i20,word,understands; produces,toys,צעצוע,toy (object),toy (object)
-item_95,p1_c04_i21,word,understands; produces,toys,קוביה,block,block
-item_96,p1_c04_i22,word,understands; produces,toys,רעשן/ קשקשן,noisemaker,
+item_95,p1_c04_i21,word,understands; produces,toys,קוביה,block,blocks
+item_96,p1_c04_i22,word,understands; produces,toys,רעשן/ קשקשן,noisemaker,NA
 item_97,p1_c05_i01,word,understands; produces,food_drink,אבטיח,watermelon,watermelon
-item_98,p1_c05_i02,word,understands; produces,food_drink,אגוזים,nuts,
+item_98,p1_c05_i02,word,understands; produces,food_drink,אגוזים,nuts,nut
 item_99,p1_c05_i03,word,understands; produces,food_drink,אגס,pear,pear
 item_100,p1_c05_i04,word,understands; produces,food_drink,אוכל,food,food
 item_101,p1_c05_i05,word,understands; produces,food_drink,אורז,rice,rice
 item_102,p1_c05_i06,word,understands; produces,food_drink,אפונה,pea,peas
 item_103,p1_c05_i07,word,understands; produces,food_drink,אפרסק,peach,peach
 item_104,p1_c05_i08,word,understands; produces,food_drink,ארטיק/ גלידה,popsicle \ ice cream,ice cream
-item_105,p1_c05_i09,word,understands; produces,food_drink,במבה,bamba,
+item_105,p1_c05_i09,word,understands; produces,food_drink,במבה,bamba,NA
 item_106,p1_c05_i10,word,understands; produces,food_drink,בננה,banana,banana
 item_107,p1_c05_i11,word,understands; produces,food_drink,בייגלה,pretzels,pretzel
 item_108,p1_c05_i12,word,understands; produces,food_drink,ביצה,egg,egg
 item_109,p1_c05_i13,word,understands; produces,food_drink,בשר,meat,meat
 item_110,p1_c05_i14,word,understands; produces,food_drink,גבינה,cheese,cheese
-item_111,p1_c05_i15,word,understands; produces,food_drink,גזר,carrot,carrots
+item_111,p1_c05_i15,word,understands; produces,food_drink,גזר,carrot,carrot
 item_112,p1_c05_i16,word,understands; produces,food_drink,דבש,honey,honey
 item_113,p1_c05_i17,word,understands; produces,food_drink,דג,fish (food),fish (food)
 item_114,p1_c05_i18,word,understands; produces,food_drink,דייסה,porridge,porridge
-item_115,p1_c05_i19,word,understands; produces,food_drink,ופלה,waffle,
+item_115,p1_c05_i19,word,understands; produces,food_drink,ופלה,waffle,pancake
 item_116,p1_c05_i20,word,understands; produces,food_drink,זיתים,olives,olive
-item_117,p1_c05_i21,word,understands; produces,food_drink,חביתה,omelet,
-item_118,p1_c05_i22,word,understands; produces,food_drink,חמוצים/ מלפפון חמוץ,pickle,
+item_117,p1_c05_i21,word,understands; produces,food_drink,חביתה,omelet,NA
+item_118,p1_c05_i22,word,understands; produces,food_drink,חמוצים/ מלפפון חמוץ,pickle,pickle
 item_119,p1_c05_i23,word,understands; produces,food_drink,חלב,milk,milk
-item_120,p1_c05_i24,word,understands; produces,food_drink,טונה,tuna,
+item_120,p1_c05_i24,word,understands; produces,food_drink,טונה,tuna,tuna
 item_121,p1_c05_i25,word,understands; produces,food_drink,טוסט,toast,toast
-item_122,p1_c05_i26,word,understands; produces,food_drink,טחינה,tehini,
+item_122,p1_c05_i26,word,understands; produces,food_drink,טחינה,tehini,sauce
 item_123,p1_c05_i27,word,understands; produces,food_drink,לבן/ יוגורט/ מעדן,yogurt \ soured milk,yogurt
 item_124,p1_c05_i28,word,understands; produces,food_drink,לחם,bread,bread
 item_125,p1_c05_i29,word,understands; produces,food_drink,לחמניה,bun,bun
 item_126,p1_c05_i30,word,understands; produces,food_drink,מים,water (beverage),water (beverage)
 item_127,p1_c05_i31,word,understands; produces,food_drink,מיץ,juice,juice
-item_128,p1_c05_i32,word,understands; produces,food_drink,מלון,melon,
-item_129,p1_c05_i33,word,understands; produces,food_drink,מלח,salt,
+item_128,p1_c05_i32,word,understands; produces,food_drink,מלון,melon,melon
+item_129,p1_c05_i33,word,understands; produces,food_drink,מלח,salt,salt
 item_130,p1_c05_i34,word,understands; produces,food_drink,מלפפון,cucumber,cucumber
 item_131,p1_c05_i35,word,understands; produces,food_drink,ממתק,candy,candy
-item_132,p1_c05_i36,word,understands; produces,food_drink,מסטיק,gum,
+item_132,p1_c05_i36,word,understands; produces,food_drink,מסטיק,gum,gum
 item_133,p1_c05_i37,word,understands; produces,food_drink,מרק,soup,soup
 item_134,p1_c05_i38,word,understands; produces,food_drink,מרגרינה/ חמאה,margarine \ butter,butter
-item_135,p1_c05_i39,word,understands; produces,food_drink,נקניק,sausage,
+item_135,p1_c05_i39,word,understands; produces,food_drink,נקניק,sausage,ham
 item_136,p1_c05_i40,word,understands; produces,food_drink,סוכריה,lollipop,lollipop
 item_137,p1_c05_i41,word,understands; produces,food_drink,ספגטי/ אטריות/ פסטה,spaghetti \ noodles \ pasta,pasta
 item_138,p1_c05_i42,word,understands; produces,food_drink,סנדוויץ/ כריך,sandwich,sandwich
@@ -144,48 +144,48 @@ item_142,p1_c05_i46,word,understands; produces,food_drink,ענבים,grapes,grap
 item_143,p1_c05_i47,word,understands; produces,food_drink,פיצה,pizza,pizza
 item_144,p1_c05_i48,word,understands; produces,food_drink,פיתה,pita bread,pita
 item_145,p1_c05_i49,word,understands; produces,food_drink,פילפל,pepper,pepper
-item_146,p1_c05_i50,word,understands; produces,food_drink,פתיתים,ptitim,
+item_146,p1_c05_i50,word,understands; produces,food_drink,פתיתים,ptitim,NA
 item_147,p1_c05_i51,word,understands; produces,food_drink,צימוקים,raisins,raisin
-item_148,p1_c05_i52,word,understands; produces,food_drink,צ'יפס,french fries,
-item_149,p1_c05_i53,word,understands; produces,food_drink,קולה,coke,
+item_148,p1_c05_i52,word,understands; produces,food_drink,צ'יפס,french fries,french fries
+item_149,p1_c05_i53,word,understands; produces,food_drink,קולה,coke,soda
 item_150,p1_c05_i54,word,understands; produces,food_drink,קלמנטינה,clementine,clementine
 item_151,p1_c05_i55,word,understands; produces,food_drink,קפה,coffee,coffee
 item_152,p1_c05_i56,word,understands; produces,food_drink,קציצה,meat ball,meatball
 item_153,p1_c05_i57,word,understands; produces,food_drink,קרקר,cracker,cracker
 item_154,p1_c05_i58,word,understands; produces,food_drink,ריבה,jam,jam
-item_155,p1_c05_i59,word,understands; produces,food_drink,שוקו,chocolate drink (hot or cold),
+item_155,p1_c05_i59,word,understands; produces,food_drink,שוקו,chocolate drink (hot or cold),hot chocolate
 item_156,p1_c05_i60,word,understands; produces,food_drink,שוקולד,chocolate,chocolate
 item_157,p1_c05_i61,word,understands; produces,food_drink,שניצל,schnitzel,schnitzel
 item_158,p1_c05_i62,word,understands; produces,food_drink,שעועית,beans,beans
 item_159,p1_c05_i63,word,understands; produces,food_drink,תה,tea,tea
-item_160,p1_c05_i64,word,understands; produces,food_drink,תות,strawberry,
-item_161,p1_c05_i65,word,understands; produces,food_drink,תירס,corn,
+item_160,p1_c05_i64,word,understands; produces,food_drink,תות,strawberry,strawberry
+item_161,p1_c05_i65,word,understands; produces,food_drink,תירס,corn,corn
 item_162,p1_c05_i66,word,understands; produces,food_drink,תפוז,orange (food),orange (food)
 item_163,p1_c05_i67,word,understands; produces,food_drink,תפוח,apple,apple
 item_164,p1_c05_i68,word,understands; produces,food_drink,תפוח אדמה,potato,potato
 item_165,p1_c06_i01,word,understands; produces,clothing,אפודה,vest,vest
 item_166,p1_c06_i02,word,understands; produces,clothing,בגד ים,swimsuit,swimsuit
-item_167,p1_c06_i03,word,understands; produces,clothing,גופיה,undershirt,
+item_167,p1_c06_i03,word,understands; produces,clothing,גופיה,undershirt,NA
 item_168,p1_c06_i04,word,understands; produces,clothing,ג'ינס,jeans,jeans
 item_169,p1_c06_i05,word,understands; produces,clothing,גרביונים/ טייטס,tights,tights
 item_170,p1_c06_i06,word,understands; produces,clothing,גרביים,socks,sock
-item_171,p1_c06_i07,word,understands; produces,clothing,חגורה,belt,
+item_171,p1_c06_i07,word,understands; produces,clothing,חגורה,belt,belt
 item_172,p1_c06_i08,word,understands; produces,clothing,חולצה,shirt,shirt
 item_173,p1_c06_i09,word,understands; produces,clothing,חצאית,skirt,skirt
 item_174,p1_c06_i10,word,understands; produces,clothing,טיטול/ חיתול,diaper,diaper
-item_175,p1_c06_i11,word,understands; produces,clothing,טריינינג,sweatpants,
+item_175,p1_c06_i11,word,understands; produces,clothing,טריינינג,sweatpants,NA
 item_176,p1_c06_i12,word,understands; produces,clothing,כובע,hat,hat
-item_177,p1_c06_i13,word,understands; produces,clothing,כפפות,gloves,gloves
+item_177,p1_c06_i13,word,understands; produces,clothing,כפפות,gloves,glove
 item_178,p1_c06_i14,word,understands; produces,clothing,כפתור,button,button
 item_179,p1_c06_i15,word,understands; produces,clothing,מגפיים,boots,boots
 item_180,p1_c06_i16,word,understands; produces,clothing,מכנסיים,pants,pants
 item_181,p1_c06_i17,word,understands; produces,clothing,מעיל,coat,coat
 item_182,p1_c06_i18,word,understands; produces,clothing,נעל/ נעליים,shoe \ shoes,shoe
 item_183,p1_c06_i19,word,understands; produces,clothing,נעלי בית,slippers,slipper
-item_184,p1_c06_i20,word,understands; produces,clothing,נעלי ספורט/ התעמלות,sneakers,
+item_184,p1_c06_i20,word,understands; produces,clothing,נעלי ספורט/ התעמלות,sneakers,sneaker
 item_185,p1_c06_i21,word,understands; produces,clothing,סוודר,sweater,sweater
-item_186,p1_c06_i22,word,understands; produces,clothing,סינר,apron,
-item_187,p1_c06_i23,word,understands; produces,clothing,סנדלים,sandals,sandals
+item_186,p1_c06_i22,word,understands; produces,clothing,סינר,apron,apron
+item_187,p1_c06_i23,word,understands; produces,clothing,סנדלים,sandals,sandal
 item_188,p1_c06_i24,word,understands; produces,clothing,פיג'מה,pajamas,pajamas
 item_189,p1_c06_i25,word,understands; produces,clothing,צעיף,scarf,scarf
 item_190,p1_c06_i26,word,understands; produces,clothing,רוכסן/ ריצ'רץ,zipper,zipper
@@ -214,7 +214,7 @@ item_212,p1_c07_i19,word,understands; produces,body_parts,ציפורניים,nai
 item_213,p1_c07_i20,word,understands; produces,body_parts,ראש,head,head
 item_214,p1_c07_i21,word,understands; produces,body_parts,רגל/ רגליים,leg \ legs,leg
 item_215,p1_c07_i22,word,understands; produces,body_parts,שן/ שיניים,tooth \ teeth,tooth
-item_216,p1_c07_i23,word,understands; produces,body_parts,שפתיים,lips,lips
+item_216,p1_c07_i23,word,understands; produces,body_parts,שפתיים,lips,lip
 item_217,p1_c07_i24,word,understands; produces,body_parts,שערות,hairs,hair
 item_218,p1_c08_i01,word,understands; produces,furniture_rooms,אמבטיה,bathtub,bathtub
 item_219,p1_c08_i02,word,understands; produces,furniture_rooms,ארון,closet,closet
@@ -225,7 +225,7 @@ item_223,p1_c08_i06,word,understands; produces,furniture_rooms,חדר שינה,b
 item_224,p1_c08_i07,word,understands; produces,furniture_rooms,חלון,window,window
 item_225,p1_c08_i08,word,understands; produces,furniture_rooms,חניה/ מוסך,parking \ garage,garage
 item_226,p1_c08_i09,word,understands; produces,furniture_rooms,טוש/ מקלחת,shower (object),shower
-item_227,p1_c08_i10,word,understands; produces,furniture_rooms,טלויזיה,TV,tv
+item_227,p1_c08_i10,word,understands; produces,furniture_rooms,טלויזיה,TV,TV
 item_228,p1_c08_i11,word,understands; produces,furniture_rooms,ישבנון/ סיר,potty,potty
 item_229,p1_c08_i12,word,understands; produces,furniture_rooms,כורסה,armchair,armchair
 item_230,p1_c08_i13,word,understands; produces,furniture_rooms,כיור,sink,sink
@@ -241,7 +241,7 @@ item_239,p1_c08_i22,word,understands; produces,furniture_rooms,מקרר,refriger
 item_240,p1_c08_i23,word,understands; produces,furniture_rooms,מרפסת,porch,porch
 item_241,p1_c08_i24,word,understands; produces,furniture_rooms,סלון,living room,living room
 item_242,p1_c08_i25,word,understands; produces,furniture_rooms,ספה,couch,couch
-item_243,p1_c08_i26,word,understands; produces,furniture_rooms,ספסל,bench,
+item_243,p1_c08_i26,word,understands; produces,furniture_rooms,ספסל,bench,bench
 item_244,p1_c08_i27,word,understands; produces,furniture_rooms,שולחן,table,table
 item_245,p1_c08_i28,word,understands; produces,furniture_rooms,שטיח,carpet,carpet
 item_246,p1_c08_i29,word,understands; produces,furniture_rooms,שירותים/ בית שימוש,toilets \ bathroom,bathroom
@@ -261,26 +261,26 @@ item_259,p1_c09_i11,word,understands; produces,household,כפית,teaspoon,spoon
 item_260,p1_c09_i12,word,understands; produces,household,כרית,pillow,pillow
 item_261,p1_c09_i13,word,understands; produces,household,מברשת,brush,brush (object)
 item_262,p1_c09_i14,word,understands; produces,household,מברשת שיניים,toothbrush,toothbrush
-item_263,p1_c09_i15,word,understands; produces,household,מגב,mop,mop
+item_263,p1_c09_i15,word,understands; produces,household,מגב,mop,mop (object)
 item_264,p1_c09_i16,word,understands; produces,household,מגבת,towel,towel
-item_265,p1_c09_i17,word,understands; produces,household,מגש,tray,
+item_265,p1_c09_i17,word,understands; produces,household,מגש,tray,tray
 item_266,p1_c09_i18,word,understands; produces,household,מוצץ,pacifier,pacifier
 item_267,p1_c09_i19,word,understands; produces,household,מזלג,fork,fork
-item_268,p1_c09_i20,word,understands; produces,household,מחבת,frying pan,
+item_268,p1_c09_i20,word,understands; produces,household,מחבת,frying pan,NA
 item_269,p1_c09_i21,word,understands; produces,household,מטאטא,broom,broom
 item_270,p1_c09_i22,word,understands; produces,household,מנורה,lamp,lamp
 item_271,p1_c09_i23,word,understands; produces,household,מסמר,nail,nail (object)
 item_272,p1_c09_i24,word,understands; produces,household,מספריים,scissors,scissors
 item_273,p1_c09_i25,word,understands; produces,household,מסרק,comb,comb (object)
-item_274,p1_c09_i26,word,understands; produces,household,מפית,napkin,
+item_274,p1_c09_i26,word,understands; produces,household,מפית,napkin,napkin
 item_275,p1_c09_i27,word,understands; produces,household,מצלמה,camera,camera
-item_276,p1_c09_i28,word,understands; produces,household,מפתחות,keys,keys
+item_276,p1_c09_i28,word,understands; produces,household,מפתחות,keys,key
 item_277,p1_c09_i29,word,understands; produces,household,משקפיים,glasses,glasses
 item_278,p1_c09_i30,word,understands; produces,household,נייר,paper,paper
 item_279,p1_c09_i31,word,understands; produces,household,סבון,soap,soap
 item_280,p1_c09_i32,word,understands; produces,household,סכין,knife,knife
 item_281,p1_c09_i33,word,understands; produces,household,סל,basket,basket
-item_282,p1_c09_i34,word,understands; produces,household,עציץ,flowerpot,flowerpot
+item_282,p1_c09_i34,word,understands; produces,household,עציץ,flowerpot,flower pot
 item_283,p1_c09_i35,word,understands; produces,household,פטיש,hammer,hammer
 item_284,p1_c09_i36,word,understands; produces,household,צלחת,plate,plate
 item_285,p1_c09_i37,word,understands; produces,household,צמח,plant,plant
@@ -295,13 +295,13 @@ item_293,p1_c09_i45,word,understands; produces,household,תמונה,picture,pict
 item_294,p1_c09_i46,word,understands; produces,household,תרופה,medicine,medicine
 item_295,p1_c10_i01,word,understands; produces,outside,אבן,stone,stone
 item_296,p1_c10_i02,word,understands; produces,outside,אדמה,ground,ground
-item_297,p1_c10_i03,word,understands; produces,outside,ארגז חול,sandbox,
+item_297,p1_c10_i03,word,understands; produces,outside,ארגז חול,sandbox,sandbox
 item_298,p1_c10_i04,word,understands; produces,outside,את/ מעדר,shovel,shovel
 item_299,p1_c10_i05,word,understands; produces,outside,ברז,faucet,faucet
 item_300,p1_c10_i06,word,understands; produces,outside,בריכה,pool,pool
 item_301,p1_c10_i07,word,understands; produces,outside,גג,roof,roof
 item_302,p1_c10_i08,word,understands; produces,outside,גשם,rain,rain
-item_303,p1_c10_i09,word,understands; produces,outside,דגל,flag,
+item_303,p1_c10_i09,word,understands; produces,outside,דגל,flag,flag
 item_304,p1_c10_i10,word,understands; produces,outside,דשא,grass,grass
 item_305,p1_c10_i11,word,understands; produces,outside,חול,sand,sand
 item_306,p1_c10_i12,word,understands; produces,outside,חצר,yard,yard
@@ -309,68 +309,68 @@ item_307,p1_c10_i13,word,understands; produces,outside,ירח,moon,moon
 item_308,p1_c10_i14,word,understands; produces,outside,כביש,road,road
 item_309,p1_c10_i15,word,understands; produces,outside,כוכב/ כוכבים,star \ stars,star
 item_310,p1_c10_i16,word,understands; produces,outside,מגלשה,slide (object),slide (object)
-item_311,p1_c10_i17,word,understands; produces,outside,מדרכה,sidewalk,
-item_312,p1_c10_i18,word,understands; produces,outside,ממטרה,sprinkler,
+item_311,p1_c10_i17,word,understands; produces,outside,מדרכה,sidewalk,sidewalk
+item_312,p1_c10_i18,word,understands; produces,outside,ממטרה,sprinkler,sprinkler
 item_313,p1_c10_i19,word,understands; produces,outside,מקל,stick,stick
 item_314,p1_c10_i20,word,understands; produces,outside,נדנדה,swing (object),swing (object)
 item_315,p1_c10_i21,word,understands; produces,outside,סולם,ladder,ladder
 item_316,p1_c10_i22,word,understands; produces,outside,ענן/ עננים,cloud \ clouds,cloud
 item_317,p1_c10_i23,word,understands; produces,outside,עץ,tree,tree
 item_318,p1_c10_i24,word,understands; produces,outside,פרח,flower,flower
-item_319,p1_c10_i25,word,understands; produces,outside,צינור,pipeline,
+item_319,p1_c10_i25,word,understands; produces,outside,צינור,pipeline,hose
 item_320,p1_c10_i26,word,understands; produces,outside,רוח,wind,wind
 item_321,p1_c10_i27,word,understands; produces,outside,רחוב,street,street
 item_322,p1_c10_i28,word,understands; produces,outside,שמיים,sky,sky
 item_323,p1_c10_i29,word,understands; produces,outside,שמש,sun,sun
 item_324,p1_c11_i01,word,understands; produces,places,בית/ הביתה,house \ home,house
-item_325,p1_c11_i02,word,understands; produces,places,בית כנסת,Synagogue,
+item_325,p1_c11_i02,word,understands; produces,places,בית כנסת,Synagogue,church
 item_326,p1_c11_i03,word,understands; produces,places,גינה/ פארק,park,park
 item_327,p1_c11_i04,word,understands; produces,places,גן (משפחתון/ פעוטון/ מעון/ גנון),kindergarden \ day care,kindergarten
 item_328,p1_c11_i05,word,understands; produces,places,גן חיות,zoo,zoo
 item_329,p1_c11_i06,word,understands; produces,places,גן שעשועים/ מגרש משחקים,playground,playground
-item_330,p1_c11_i07,word,understands; produces,places,הר,mountain,
-item_331,p1_c11_i08,word,understands; produces,places,חורשה,woods,
+item_330,p1_c11_i07,word,understands; produces,places,הר,mountain,mountain
+item_331,p1_c11_i08,word,understands; produces,places,חורשה,woods,forest
 item_332,p1_c11_i09,word,understands; produces,places,חנות,store,store
 item_333,p1_c11_i10,word,understands; produces,places,ים/ חוף ים,beach,beach
 item_334,p1_c11_i11,word,understands; produces,places,מסיבה,party,party
 item_335,p1_c11_i12,word,understands; produces,places,סופרמרקט/ סופר/ מכולת,supermarket \ grocery store,market
-item_336,p1_c11_i13,word,understands; produces,places,סרט,movie,
+item_336,p1_c11_i13,word,understands; produces,places,סרט,movie,movie
 item_337,p1_c11_i14,word,understands; produces,places,עבודה,work,work (place)
-item_338,p1_c11_i15,word,understands; produces,places,פיקניק,picnic,
-item_339,p1_c11_i16,word,understands; produces,places,רפת,cowshed,
+item_338,p1_c11_i15,word,understands; produces,places,פיקניק,picnic,picnic
+item_339,p1_c11_i16,word,understands; produces,places,רפת,cowshed,shed
 item_340,p1_c11_i17,word,understands; produces,places,תחנת אוטובוס,bus station,bus station
 item_341,p1_c11_i18,word,understands; produces,places,תחנת דלק,gas station,gas station
 item_342,p1_c12_i01,word,understands; produces,people,אח/ אחות,brother \ sister,sibling
-item_343,p1_c12_i02,word,understands; produces,people,איש/ אנשים,man \ men,man
+item_343,p1_c12_i02,word,understands; produces,people,איש/ אנשים,man \ men,people
 item_344,p1_c12_i03,word,understands; produces,people,גננת/ מורה,kindergarden teacher \ teacher (school),teacher
 item_345,p1_c12_i04,word,understands; produces,people,דוד/ דודה,aunt \ uncle,uncle
-item_346,p1_c12_i05,word,understands; produces,people,דוור,mailman,
+item_346,p1_c12_i05,word,understands; produces,people,דוור,mailman,mailman
 item_347,p1_c12_i06,word,understands; produces,people,חבר/ חברה,friend,friend
 item_348,p1_c12_i07,word,understands; produces,people,ילד/ ילדה,child,child
 item_349,p1_c12_i08,word,understands; produces,people,כבאי,fireman,firefighter
-item_350,p1_c12_i09,word,understands; produces,people,מטפלת,nanny,
+item_350,p1_c12_i09,word,understands; produces,people,מטפלת,nanny,babysitter
 item_351,p1_c12_i10,word,understands; produces,people,סבא,grandpa,grandpa
 item_352,p1_c12_i11,word,understands; produces,people,סבתא,grandma,grandma
 item_353,p1_c12_i12,word,understands; produces,people,רופא,doctor,doctor
 item_354,p1_c12_i13,word,understands; produces,people,שכן/ שכנה,neighbor,neighbor
-item_355,p1_c12_i14,word,understands; produces,people,שוטר,policeman,policeman
+item_355,p1_c12_i14,word,understands; produces,people,שוטר,policeman,police
 item_356,p1_c12_i15,word,understands; produces,people,שמרטף/ בייביסיטר,babysitter,babysitter
 item_357,p1_c12_i16,word,understands; produces,people,תינוק/ תינוקת,baby,baby
-item_358,p1_c13_i01,word,understands; produces,games_routines,אין,there isn't any,
-item_359,p1_c13_i02,word,understands; produces,games_routines,אני רוצה,I want,
-item_360,p1_c13_i03,word,understands; produces,games_routines,אפשר/ מותר,allow \ permitted,
+item_358,p1_c13_i01,word,understands; produces,games_routines,אין,there isn't any,all gone
+item_359,p1_c13_i02,word,understands; produces,games_routines,אני רוצה,I want,wanna
+item_360,p1_c13_i03,word,understands; produces,games_routines,אפשר/ מותר,allow \ permitted,NA
 item_361,p1_c13_i04,word,understands; produces,games_routines,בבקשה,please,please
 item_362,p1_c13_i05,word,understands; produces,games_routines,ביי/ להתראות,bye \ goodbye,bye
 item_363,p1_c13_i06,word,understands; produces,games_routines,בוקר טוב,good morning,good morning
 item_364,p1_c13_i07,word,understands; produces,games_routines,די,enough,enough
 item_365,p1_c13_i08,word,understands; produces,games_routines,היי/ שלום/ אהלן,hi \ hello,hi
 item_366,p1_c13_i09,word,understands; produces,games_routines,יכול,can (verb),can (auxiliary)
-item_367,p1_c13_i10,word,understands; produces,games_routines,כואב לי/ כואב לך,I'm hurt \ you're hurt,
-item_368,p1_c13_i11,word,understands; produces,games_routines,כועס/ כועסת,mad,
-item_369,p1_c13_i12,word,understands; produces,games_routines,כיף/ תן כפה,give me five!,
+item_367,p1_c13_i10,word,understands; produces,games_routines,כואב לי/ כואב לך,I'm hurt \ you're hurt,NA
+item_368,p1_c13_i11,word,understands; produces,games_routines,כועס/ כועסת,mad,NA
+item_369,p1_c13_i12,word,understands; produces,games_routines,כיף/ תן כפה,give me five!,give me five
 item_370,p1_c13_i13,word,understands; produces,games_routines,כן,yes,yes
 item_371,p1_c13_i14,word,understands; produces,games_routines,לא,no,no
-item_372,p1_c13_i15,word,understands; produces,games_routines,לדבר בטלפון,to talk on the phone,
+item_372,p1_c13_i15,word,understands; produces,games_routines,לדבר בטלפון,to talk on the phone,NA
 item_373,p1_c13_i16,word,understands; produces,games_routines,לילה טוב,good night,good night
 item_374,p1_c13_i17,word,understands; produces,games_routines,ללכת לאכול,to go to eat,go eat
 item_375,p1_c13_i18,word,understands; produces,games_routines,ללכת לטייל,to go for a walk,go for a walk
@@ -379,13 +379,13 @@ item_377,p1_c13_i20,word,understands; produces,games_routines,לעשות אמב�
 item_378,p1_c13_i21,word,understands; produces,games_routines,לעשות כאילו,pretend,pretend
 item_379,p1_c13_i22,word,understands; produces,games_routines,לעשות פיפי בסיר,go potty,go potty
 item_380,p1_c13_i23,word,understands; produces,games_routines,"לשחק ב""קוקו""",peekaboo,peekaboo
-item_381,p1_c13_i24,word,understands; produces,games_routines,לשחק תופסת,gonna get you!,
+item_381,p1_c13_i24,word,understands; produces,games_routines,לשחק תופסת,gonna get you!,gonna get you
 item_382,p1_c13_i25,word,understands; produces,games_routines,מחא כפיים,to clap hands,clap
 item_383,p1_c13_i26,word,understands; produces,games_routines,עוד,more,more
-item_384,p1_c13_i27,word,understands; produces,games_routines,עשר אצבעות לי יש,a children's song with hand movements,
-item_385,p1_c13_i28,word,understands; produces,games_routines,צריך,"need (as in- ""do you need help?"")",
+item_384,p1_c13_i27,word,understands; produces,games_routines,עשר אצבעות לי יש,a children's song with hand movements,NA
+item_385,p1_c13_i28,word,understands; produces,games_routines,צריך,need (as in- do you need help?),NA
 item_386,p1_c13_i29,word,understands; produces,games_routines,תודה,thank you,thank you
-item_387,p1_c13_i30,word,understands; produces,games_routines,תן לי,give me,
+item_387,p1_c13_i30,word,understands; produces,games_routines,תן לי,give me,NA
 item_388,p1_c14_i01,word,understands; produces,action_words,לאהוב,love (action),love
 item_389,p1_c14_i02,word,understands; produces,action_words,לאכול,eat,eat
 item_390,p1_c14_i03,word,understands; produces,action_words,לבחור,choose,choose
@@ -404,10 +404,10 @@ item_402,p1_c14_i15,word,understands; produces,action_words,להביא,bring,bri
 item_403,p1_c14_i16,word,understands; produces,action_words,להבריש,brush (action),brush (action)
 item_404,p1_c14_i17,word,understands; produces,action_words,להגיד,say,say
 item_405,p1_c14_i18,word,understands; produces,action_words,להדליק,light (action),light (action)
-item_406,p1_c14_i19,word,understands; produces,action_words,להוריד,bring down,take off
+item_406,p1_c14_i19,word,understands; produces,action_words,להוריד,bring down,remove
 item_407,p1_c14_i20,word,understands; produces,action_words,להחביא,hide something,hide
 item_408,p1_c14_i21,word,understands; produces,action_words,להחזיק,hold,hold
-item_409,p1_c14_i22,word,understands; produces,action_words,להחליף,change things,
+item_409,p1_c14_i22,word,understands; produces,action_words,להחליף,change things,change
 item_410,p1_c14_i23,word,understands; produces,action_words,להכות/ להרביץ,hit (action),hit
 item_411,p1_c14_i24,word,understands; produces,action_words,להסתובב,turn around,turn around
 item_412,p1_c14_i25,word,understands; produces,action_words,להסתכל,watch,watch (action)
@@ -415,16 +415,16 @@ item_413,p1_c14_i26,word,understands; produces,action_words,להעיר,to wake u
 item_414,p1_c14_i27,word,understands; produces,action_words,להפיל,drop,drop
 item_415,p1_c14_i28,word,understands; produces,action_words,להקשיב,listen,listen
 item_416,p1_c14_i29,word,understands; produces,action_words,להשאר,stay,stay
-item_417,p1_c14_i30,word,understands; produces,action_words,להתאים,fit (action),
+item_417,p1_c14_i30,word,understands; produces,action_words,להתאים,fit (action),fit
 item_418,p1_c14_i31,word,understands; produces,action_words,להתחבא,hide (yourself),hide
-item_419,p1_c14_i32,word,understands; produces,action_words,להתיז/ להשפריץ,spray (action),
+item_419,p1_c14_i32,word,understands; produces,action_words,להתיז/ להשפריץ,spray (action),spray
 item_420,p1_c14_i33,word,understands; produces,action_words,להתנדנד,swing (action),swing (action)
 item_421,p1_c14_i34,word,understands; produces,action_words,לזרוק,throw (action),throw
-item_422,p1_c14_i35,word,understands; produces,action_words,לחבב,like (action),like (action)
+item_422,p1_c14_i35,word,understands; produces,action_words,לחבב,like (action),like
 item_423,p1_c14_i36,word,understands; produces,action_words,לחבק,hug (action),hug
 item_424,p1_c14_i37,word,understands; produces,action_words,לחייך,smile (action),smile
 item_425,p1_c14_i38,word,understands; produces,action_words,לחכות,wait (action),wait
-item_426,p1_c14_i39,word,understands; produces,action_words,לחפש,search (action),look for
+item_426,p1_c14_i39,word,understands; produces,action_words,לחפש,search (action),look
 item_427,p1_c14_i40,word,understands; produces,action_words,לחתוך,cut (action),cut
 item_428,p1_c14_i41,word,understands; produces,action_words,לטאטא,sweep,sweep
 item_429,p1_c14_i42,word,understands; produces,action_words,לטעום,taste (action),taste
@@ -442,16 +442,16 @@ item_440,p1_c14_i53,word,understands; produces,action_words,למצוא,find,find
 item_441,p1_c14_i54,word,understands; produces,action_words,למשוך,pull,pull
 item_442,p1_c14_i55,word,understands; produces,action_words,לנגב,wipe,wipe
 item_443,p1_c14_i56,word,understands; produces,action_words,לנהוג,drive (action),drive
-item_444,p1_c14_i57,word,understands; produces,action_words,לנוח,rest (action),
-item_445,p1_c14_i58,word,understands; produces,action_words,לנעול,lock (action),lock
+item_444,p1_c14_i57,word,understands; produces,action_words,לנוח,rest (action),rest
+item_445,p1_c14_i58,word,understands; produces,action_words,לנעול,lock (action),lock (action)
 item_446,p1_c14_i59,word,understands; produces,action_words,לנקות,clean (action),clean (action)
 item_447,p1_c14_i60,word,understands; produces,action_words,לנשוך,bite (action),bite
 item_448,p1_c14_i61,word,understands; produces,action_words,לנשוף,blow,blow
 item_449,p1_c14_i62,word,understands; produces,action_words,לנשק,kiss (action),kiss
 item_450,p1_c14_i63,word,understands; produces,action_words,לסגור,close,close
 item_451,p1_c14_i64,word,understands; produces,action_words,לסרק,comb,comb (action)
-item_452,p1_c14_i65,word,understands; produces,action_words,לספר (סיפור),tell a story,
-item_453,p1_c14_i66,word,understands; produces,action_words,לסתום,shut,
+item_452,p1_c14_i65,word,understands; produces,action_words,לספר (סיפור),tell a story,NA
+item_453,p1_c14_i66,word,understands; produces,action_words,לסתום,shut,close
 item_454,p1_c14_i67,word,understands; produces,action_words,לעבוד,work (action),work (action)
 item_455,p1_c14_i68,word,understands; produces,action_words,לעזור,help (action),help
 item_456,p1_c14_i69,word,understands; produces,action_words,לעמוד,stand,stand
@@ -459,7 +459,7 @@ item_457,p1_c14_i70,word,understands; produces,action_words,לעצור,stop,stop
 item_458,p1_c14_i71,word,understands; produces,action_words,לעשות,do,do
 item_459,p1_c14_i72,word,understands; produces,action_words,לפתוח,open (action),open (action)
 item_460,p1_c14_i73,word,understands; produces,action_words,לצאת,go out,go out
-item_461,p1_c14_i74,word,understands; produces,action_words,לצבוע,color (action),
+item_461,p1_c14_i74,word,understands; produces,action_words,לצבוע,color (action),color (action)
 item_462,p1_c14_i75,word,understands; produces,action_words,לצייר,paint (action),paint (action)
 item_463,p1_c14_i76,word,understands; produces,action_words,לקום,get up,get up
 item_464,p1_c14_i77,word,understands; produces,action_words,לקחת,take,take
@@ -469,7 +469,7 @@ item_467,p1_c14_i80,word,understands; produces,action_words,לקרוא,read,read
 item_468,p1_c14_i81,word,understands; produces,action_words,לקרוע,tear,tear
 item_469,p1_c14_i82,word,understands; produces,action_words,לראות/ להראות,see \ show,see
 item_470,p1_c14_i83,word,understands; produces,action_words,לרדוף,chase (action),chase
-item_471,p1_c14_i84,word,understands; produces,action_words,לרדת,come down,
+item_471,p1_c14_i84,word,understands; produces,action_words,לרדת,come down,descend
 item_472,p1_c14_i85,word,understands; produces,action_words,לרוץ,run (action),run
 item_473,p1_c14_i86,word,understands; produces,action_words,לרחוץ/ לשטוף,wash,wash
 item_474,p1_c14_i87,word,understands; produces,action_words,לרכב,ride (action),ride
@@ -481,14 +481,14 @@ item_479,p1_c14_i92,word,understands; produces,action_words,לשחק,play (actio
 item_480,p1_c14_i93,word,understands; produces,action_words,לשים,put,put
 item_481,p1_c14_i94,word,understands; produces,action_words,לשיר,sing (action),sing
 item_482,p1_c14_i95,word,understands; produces,action_words,לשמוע,hear,hear
-item_483,p1_c14_i96,word,understands; produces,action_words,לשמור,keep,
-item_484,p1_c14_i97,word,understands; produces,action_words,לשנוא,hate (action),
+item_483,p1_c14_i96,word,understands; produces,action_words,לשמור,keep,keep
+item_484,p1_c14_i97,word,understands; produces,action_words,לשנוא,hate (action),hate
 item_485,p1_c14_i98,word,understands; produces,action_words,לשפוך,spill,spill
 item_486,p1_c14_i99,word,understands; produces,action_words,לשתות,drink (action),drink (action)
 item_487,p1_c14_i100,word,understands; produces,action_words,לתפוס,catch (action),catch
 item_488,p1_c14_i101,word,understands; produces,action_words,לתקן,fix,fix
 item_489,p1_c14_i102,word,understands; produces,action_words,לתת,give,give
-item_490,p1_c15_i01,word,understands; produces,descriptive_words,אחרון,last,
+item_490,p1_c15_i01,word,understands; produces,descriptive_words,אחרון,last,last
 item_491,p1_c15_i02,word,understands; produces,descriptive_words,ארוך,long,long
 item_492,p1_c15_i03,word,understands; produces,descriptive_words,גבוה,tall,high
 item_493,p1_c15_i04,word,understands; produces,descriptive_words,גדול,big,big
@@ -497,23 +497,23 @@ item_495,p1_c15_i06,word,understands; produces,descriptive_words,זקן,old,old
 item_496,p1_c15_i07,word,understands; produces,descriptive_words,חדש,new,new
 item_497,p1_c15_i08,word,understands; produces,descriptive_words,חולה,sick,sick
 item_498,p1_c15_i09,word,understands; produces,descriptive_words,חושך,dark,dark
-item_499,p1_c15_i10,word,understands; produces,descriptive_words,חזק,strong,
+item_499,p1_c15_i10,word,understands; produces,descriptive_words,חזק,strong,strong
 item_500,p1_c15_i11,word,understands; produces,descriptive_words,חכם,smart,smart
 item_501,p1_c15_i12,word,understands; produces,descriptive_words,חם,hot,hot
 item_502,p1_c15_i13,word,understands; produces,descriptive_words,חמוד,cute,cute
 item_503,p1_c15_i14,word,understands; produces,descriptive_words,טוב,good,good
-item_504,p1_c15_i15,word,understands; produces,descriptive_words,טעים,tasty,tasty
+item_504,p1_c15_i15,word,understands; produces,descriptive_words,טעים,tasty,yummy
 item_505,p1_c15_i16,word,understands; produces,descriptive_words,יבש,dry (description),dry (description)
 item_506,p1_c15_i17,word,understands; produces,descriptive_words,יפה,pretty,pretty
 item_507,p1_c15_i18,word,understands; produces,descriptive_words,ישן,"old (or asleep, depends how you pronounce it)",old
 item_508,p1_c15_i19,word,understands; produces,descriptive_words,כבד,heavy,heavy
-item_509,p1_c15_i20,word,understands; produces,descriptive_words,מגעיל,disgusting,
+item_509,p1_c15_i20,word,understands; produces,descriptive_words,מגעיל,disgusting,disgusting
 item_510,p1_c15_i21,word,understands; produces,descriptive_words,מהר,fast,fast
 item_511,p1_c15_i22,word,understands; produces,descriptive_words,מכוער,ugly,ugly
 item_512,p1_c15_i23,word,understands; produces,descriptive_words,מלא,full,full
 item_513,p1_c15_i24,word,understands; produces,descriptive_words,מלוח,salty,salty
 item_514,p1_c15_i25,word,understands; produces,descriptive_words,מלוכלך,dirty,dirty
-item_515,p1_c15_i26,word,understands; produces,descriptive_words,מצויין,excellent,
+item_515,p1_c15_i26,word,understands; produces,descriptive_words,מצויין,excellent,excellent
 item_516,p1_c15_i27,word,understands; produces,descriptive_words,מקולקל,broken \ rotten,broken
 item_517,p1_c15_i28,word,understands; produces,descriptive_words,מתוק,sweet,sweet
 item_518,p1_c15_i29,word,understands; produces,descriptive_words,נחמד,nice,nice
@@ -527,7 +527,7 @@ item_525,p1_c15_i36,word,understands; produces,descriptive_words,קצר,short,sh
 item_526,p1_c15_i37,word,understands; produces,descriptive_words,קר,cold,cold
 item_527,p1_c15_i38,word,understands; produces,descriptive_words,קשה,hard,hard
 item_528,p1_c15_i39,word,understands; produces,descriptive_words,רזה,thin,thin
-item_529,p1_c15_i40,word,understands; produces,descriptive_words,רטוב,wet,wet
+item_529,p1_c15_i40,word,understands; produces,descriptive_words,רטוב,wet,wet (description)
 item_530,p1_c15_i41,word,understands; produces,descriptive_words,ריק,empty,empty
 item_531,p1_c15_i42,word,understands; produces,descriptive_words,רך,soft,soft
 item_532,p1_c15_i43,word,understands; produces,descriptive_words,רע,bad,bad
@@ -536,48 +536,48 @@ item_534,p1_c15_i45,word,understands; produces,descriptive_words,שבור,broken
 item_535,p1_c15_i46,word,understands; produces,descriptive_words,שובב,naughty,naughty
 item_536,p1_c15_i47,word,understands; produces,descriptive_words,שמח,happy,happy
 item_537,p1_c15_i48,word,understands; produces,descriptive_words,שמן,fat,fat
-item_538,p1_c15_i49,word,understands; produces,descriptive_words,שקט,quiet,
+item_538,p1_c15_i49,word,understands; produces,descriptive_words,שקט,quiet,quiet
 item_539,p1_c16_i01,word,understands; produces,time_words,אחרי,after,after
 item_540,p1_c16_i02,word,understands; produces,time_words,אחר כך,later,later
 item_541,p1_c16_i03,word,understands; produces,time_words,אתמול,yesterday,yesterday
 item_542,p1_c16_i04,word,understands; produces,time_words,בוקר,morning,morning
-item_543,p1_c16_i05,word,understands; produces,time_words,היה,was,
+item_543,p1_c16_i05,word,understands; produces,time_words,היה,was,was
 item_544,p1_c16_i06,word,understands; produces,time_words,היום,today,today
 item_545,p1_c16_i07,word,understands; produces,time_words,לילה,night,night
 item_546,p1_c16_i08,word,understands; produces,time_words,לפני,before,before
 item_547,p1_c16_i09,word,understands; produces,time_words,מחר,tomorrow,tomorrow
 item_548,p1_c16_i10,word,understands; produces,time_words,עכשיו,now,now
-item_549,p1_c16_i11,word,understands; produces,time_words,פעם,once,
-item_550,p1_c16_i12,word,understands; produces,time_words,צהריים,noon,
+item_549,p1_c16_i11,word,understands; produces,time_words,פעם,once,once
+item_550,p1_c16_i12,word,understands; produces,time_words,צהריים,noon,noon
 item_551,p1_c16_i13,word,understands; produces,time_words,רגע,moment,moment
-item_552,p1_c16_i14,word,understands; produces,time_words,שבת,"Shabbath, Suterday",
-item_553,p1_c17_i01,word,understands; produces,pronouns,אותי,me,me
+item_552,p1_c16_i14,word,understands; produces,time_words,שבת,"Shabbath, Saturday",NA
+item_553,p1_c17_i01,word,understands; produces,pronouns,אותי,me,1SG
 item_554,p1_c17_i02,word,understands; produces,pronouns,אלה,those,those
-item_555,p1_c17_i03,word,understands; produces,pronouns,אנחנו,we,we
-item_556,p1_c17_i04,word,understands; produces,pronouns,אני,I,i
-item_557,p1_c17_i05,word,understands; produces,pronouns,אתה/ את,you,you
-item_558,p1_c17_i06,word,understands; produces,pronouns,הוא/ היא,he \ she,he
-item_559,p1_c17_i07,word,understands; produces,pronouns,הם,they,they
-item_560,p1_c17_i08,word,understands; produces,pronouns,הנה,here,
+item_555,p1_c17_i03,word,understands; produces,pronouns,אנחנו,we,1PL
+item_556,p1_c17_i04,word,understands; produces,pronouns,אני,I,1SG
+item_557,p1_c17_i05,word,understands; produces,pronouns,אתה/ את,you,2SG
+item_558,p1_c17_i06,word,understands; produces,pronouns,הוא/ היא,he \ she,3SG
+item_559,p1_c17_i07,word,understands; produces,pronouns,הם,they,3PL
+item_560,p1_c17_i08,word,understands; produces,pronouns,הנה,here,here
 item_561,p1_c17_i09,word,understands; produces,pronouns,זה,this,this
-item_562,p1_c17_i10,word,understands; produces,pronouns,שלי,mine,mine
-item_563,p1_c17_i11,word,understands; produces,pronouns,שלך,yours,your
-item_564,p1_c17_i12,word,understands; produces,pronouns,שלנו,ours,our
+item_562,p1_c17_i10,word,understands; produces,pronouns,שלי,mine,1SG.POSS
+item_563,p1_c17_i11,word,understands; produces,pronouns,שלך,yours,2SG.POSS
+item_564,p1_c17_i12,word,understands; produces,pronouns,שלנו,ours,1PL.POSS
 item_565,p1_c18_i01,word,understands; produces,question_words,איזה,which,which (question)
 item_566,p1_c18_i02,word,understands; produces,question_words,איך,how,how
-item_567,p1_c18_i03,word,understands; produces,question_words,איפה,where,where
+item_567,p1_c18_i03,word,understands; produces,question_words,איפה,where,where (question)
 item_568,p1_c18_i04,word,understands; produces,question_words,כמה,how much,how much
 item_569,p1_c18_i05,word,understands; produces,question_words,למה,why,why
 item_570,p1_c18_i06,word,understands; produces,question_words,מה,what,what
-item_571,p1_c18_i07,word,understands; produces,question_words,מה זה,what is this,
+item_571,p1_c18_i07,word,understands; produces,question_words,מה זה,what is this,NA
 item_572,p1_c18_i08,word,understands; produces,question_words,מי,who,who
-item_573,p1_c18_i09,word,understands; produces,question_words,מי זה,who is this,
+item_573,p1_c18_i09,word,understands; produces,question_words,מי זה,who is this,NA
 item_574,p1_c18_i10,word,understands; produces,question_words,מתי,when,when (question)
 item_575,p1_c19_i01,word,understands; produces,locations,מאחורי,behind,behind
 item_576,p1_c19_i02,word,understands; produces,locations,בין,between,between
 item_577,p1_c19_i03,word,understands; produces,locations,בפנים/ בתוך,in \ inside,in
 item_578,p1_c19_i04,word,understands; produces,locations,כאן/ פה,here,here
-item_579,p1_c19_i05,word,understands; produces,locations,ליד/ על יד,near \ next to,
+item_579,p1_c19_i05,word,understands; produces,locations,ליד/ על יד,near \ next to,next to
 item_580,p1_c19_i06,word,understands; produces,locations,למטה,down,down
 item_581,p1_c19_i07,word,understands; produces,locations,למעלה,up,up
 item_582,p1_c19_i08,word,understands; produces,locations,מעל,above,above
@@ -586,62 +586,70 @@ item_584,p1_c19_i10,word,understands; produces,locations,על,on \ about,on
 item_585,p1_c19_i11,word,understands; produces,locations,עם,with,with
 item_586,p1_c19_i12,word,understands; produces,locations,רחוק,far,far
 item_587,p1_c19_i13,word,understands; produces,locations,שם,there,there
-item_588,p1_c20_i01,word,understands; produces,quantifiers,אחד,one,
+item_588,p1_c20_i01,word,understands; produces,quantifiers,אחד,one,one
 item_589,p1_c20_i02,word,understands; produces,quantifiers,אף אחד,no one,no one
 item_590,p1_c20_i03,word,understands; produces,quantifiers,גם,also \ both,also
 item_591,p1_c20_i04,word,understands; produces,quantifiers,הכל,all \ everything,all
 item_592,p1_c20_i05,word,understands; produces,quantifiers,המון,a lot,a lot
 item_593,p1_c20_i06,word,understands; produces,quantifiers,הרבה,many,many
-item_594,p1_c20_i07,word,understands; produces,quantifiers,כל,every,
+item_594,p1_c20_i07,word,understands; produces,quantifiers,כל,every,every
 item_595,p1_c20_i08,word,understands; produces,quantifiers,כלום,nothing,nothing
 item_596,p1_c20_i09,word,understands; produces,quantifiers,מעט/ קצת,little \ a few,little (amount)
 item_597,p1_c20_i10,word,understands; produces,quantifiers,עוד,more,more
-item_598,p2_c01_i01,pretend_parent,no; yes,,משכיב בובה או דובי לישון,puts a doll or a teadybear to sleep,
-item_599,p2_c01_i02,pretend_parent,no; yes,,מכסה בובה או דובי בשמיכה,covers a doll or a teaddybear with blanket,
-item_600,p2_c01_i03,pretend_parent,no; yes,,מאכיל בובה או דובי מבקבוק,feeds a doll or a teddy from a bottle,
-item_601,p2_c01_i04,pretend_parent,no; yes,,מאכיל בובה או דובי עם כפית,feeds a doll or a teddy with a tea spoon,
-item_602,p2_c01_i05,pretend_parent,no; yes,,מסרק את השיער של הבובה או הדובי,combs a doll's or teddy's hair,
-item_603,p2_c01_i06,pretend_parent,no; yes,,מלטף או טופח על גב הבובה או הדובי,pats on the doll's or teddy's back,
-item_604,p2_c01_i07,pretend_parent,no; yes,,דוחף בובה או דובי בעגלה,pushes a doll or a deddy in a stroller,
-item_605,p2_c01_i08,pretend_parent,no; yes,,מנדנד את הבובה או את הדובי,swings the doll or the teddy,
-item_606,p2_c01_i09,pretend_parent,no; yes,,מנשק או מחבק את הבובה או הדובי,kisses or hugs the doll or the teddy,
-item_607,p2_c01_i10,pretend_parent,no; yes,,"מנסה לנעול נעל, לגרוב גרב או לחבוש כובע לבובה או ל...","trys to put on the doll or teddy a shoe, a sock or a hat",
-item_608,p2_c01_i11,pretend_parent,no; yes,,מנגב את הפנים או הידיים של הבובה או הדובי,wipes the doll's or teddy's face,
-item_609,p2_c01_i12,pretend_parent,no; yes,,מנסה לחתל את הבובה או את הדובי,trys to put a diaper on the doll or the teddy,
-item_610,p2_c01_i13,pretend_parent,no; yes,,מכין שתייה לבובה או לדובי,prepares something to drink for the doll or teddy,
-item_611,p2_c01_i14,pretend_parent,no; yes,,מוזג נוזל דמיוני ממיכל אחד לאחר,pours imaginary liquid from one container to another,
-item_612,p2_c01_i15,pretend_parent,no; yes,,מערבב נוזל דמיוני בכוס או סיר עם כף,mixes an imaginary liquid in a glass or pot with a spoon,
-item_613,p2_c01_i16,pretend_parent,no; yes,,"מכין משקה דמיוני, מוזג לכלי ונותן לבובה או לדובי ל...","prepares an imaginary drink, pours to a container and gives the doll or the teddy to eat",
-item_614,p2_c01_i17,pretend_parent,no; yes,,"משכיב בובה או דובי במיטה, מכסה את הבובה או הדובי ו...","puts a doll or teddy in bed, covers them and...",
-item_615,p2_c01_i18,pretend_parent,no; yes,,מסדר כלי אוכל ונותן לבובה או לדובי לאכול,arranges dishes and gives the doll or teddy to eat,
-item_616,p2_c01_i19,pretend_parent,no; yes,,מכניס בובה קטנה למכונית ומסיע אותה,puts a small doll in a toy car and drives it,
-item_617,p2_c01_i20,pretend_parent,no; yes,,"מלביש בובה או דובי, מכניס למכונית ומסיע לכיוון הבי...","dresses a doll or teddy, puts them in a car and drives them towards... (home?)",
-item_618,p2_c01_i21,pretend_parent,no; yes,,מנסה לבדוק בובה או דובי עם כלי רופא מפלסטיק,trys to examine a doll or teddy with plastic doctor tools,
-item_619,p2_c02_i01,pretend_objects,no; yes,,"לוקח חפץ (למשל, כדור או קוביה) ומנסה לנגוס בו כאיל...",takes an object (such as a ball or a brick) and trys to bite in it like...,
-item_620,p2_c02_i02,pretend_objects,no; yes,,"לוקח מגבת, מכנסיים או חולצה ושם על הראש כאילו הם כ...","takes a towel, pants or shirt and puts on his head as they were a hat",
-item_621,p2_c02_i03,pretend_objects,no; yes,,"לוקח קוביה, עט, או סתם מקל, שם על יד האוזן ומדבר כ...","takes a brick, pen or just a stick, puts it next to his ear and pretend to talk on the phone",
-item_622,p2_c02_i04,pretend_objects,no; yes,,מסובב הגה צעצוע או מכסה של סיר כדי להראות שהוא נוה...,spins a toy steering wheel or a pot's lid to show that he is driving,
-item_623,p2_c02_i05,pretend_objects,no; yes,,מחזיק מטוס צעצוע או חפץ אחר ועושה כאילו הוא מטיס מ...,holds a toy plane or other object and pretends he's flying them,
-item_624,p2_c02_i06,pretend_objects,no; yes,,לוקח כלי ריק ללא מים ומראה כאילו הוא משקה עציצים,takes an empty container and pretend to water the plants with it,
-item_625,p2_c02_i07,pretend_objects,no; yes,,לוקח שקית ריקה ושם בה חפצים כאילו הוא קנה דברים בס...,takes an empty bag and put things inside like he bought them in the supermarket,
-item_626,p2_c02_i08,pretend_objects,no; yes,,לוקח חפץ אחר ומשתמש בו כאילו היה כלי בדיקה של רופא,takes a different object and use it like it was a doctor tool,
-item_627,p3_c01_i01,how_use_words,not yet; sometimes; often,,האם ילדך מבין אם מבקשים ממנו משהו שאינו בחדר? למשל...,does your child understand if he is asked to bring something that is not in the room? for example...,
-item_628,p3_c01_i02,how_use_words,not yet; sometimes; often,,האם ילדך מרים או מצביע על חפצים ואומר את השם של בע...,does your child raise or point at objects and says the name of...?,
-item_629,p3_c01_i03,how_use_words,not yet; sometimes; often,,האם ילדך מדבר על אירועים או אנשים ששייכים לעבר? לד...,does your talk about events or people from the past? for example...,
-item_630,p3_c01_i04,how_use_words,not yet; sometimes; often,,האם ילדך מדבר על דברים העומדים לקרות בעתיד? לדוגמה...,does you child talk about things that are about to happen in the future? for example...,
-item_631,p3_c03_i01,complexity,0; 1; 2; 3; 4,,1. בום/ מכה/ נפל/ רצפה (שימוש במילה אחת)#newline#2...,1. boom\hit\fell\floor(use of one word)...,
-item_632,p3_c04_i01,complexity,0; 1; 2; 3; 4,,1. לא/ די (שימוש במילה אחת)#newline#2. לא רוצה/ לא...,1. no \ enough (use of one word); doesn't want to \ ...,
-item_633,p3_c05_i01,complexity,0; 1; 2; 3; 4,,1. שם/ דלת/ החוצה/ לטייל (שימוש במילה אחת)#newline...,1. there\door\out\walk (use of one word); ....,
-item_634,p3_c06_i01,complexity,0; 1; 2; 3; 4,,1. כדור/ עוד/ זה/ הרבה (שימוש במילה אחת)#newline#2...,1. ball\more\this\many (use of one word); ...,
-item_635,p3_c07_i01,complexity,0; 1; 2; 3; 4,,1. זה/ את זה/ דובי (שימוש במילה אחת)#newline#2. תנ...,1. this\teddy (use of one word); ...,
-item_636,p3_c08_i01,complexity,0; 1; 2; 3; 4,,1. ילד/ ילדה/ אוכל/ אוכלת/ תפוח (שימוש במילה אחת)#...,1. boy\girl\eat(male) \ eat(female)\ apple (use of one word);...,
-item_637,p3_c09_i01,complexity,0; 1; 2; 3; 4,,1. בלון/ עף/ למעלה/ אוי ואבוי (שימוש במילה אחת)#ne...,1. balloon\fly\up\oh no (use of one word);.,
-item_638,p3_c10_i01,complexity,0; 1; 2; 3; 4,,1. אוטו/ לנסוע/ ברר ברר/ הן הן (שימוש במילה אחת)#n...,1. car\drive\vroom vroom (use of one word);.,
-item_639,,word,understands; produces,animals,חזיר,pig,pig
-item_640,,word,understands; produces,vehicles,סירה,boat,boat
-item_641,,word,understands; produces,body_parts,טוסיק/ישבן,buttocks/buttom,butt
-item_642,,word,understands; produces,body_parts,בולבול/פיפי,penis,penis
-item_643,,word,understands; produces,household,סיר בישול,blanket,blanket
-item_644,,word,understands; produces,household,טייפ/קלטת,tape,tape
-item_645,,word,understands; produces,games_routines,יש לי/שלי,I have mine,
-item_646,,word,understands; produces,action_words,לדפוק,knock,knock
+item_639,NA,word,understands; produces,animals,חזיר,NA,NA
+item_640,NA,word,understands; produces,vehicles,סירה,NA,NA
+item_641,NA,word,understands; produces,body_parts,טוסיק/ישבן,NA,NA
+item_642,NA,word,understands; produces,body_parts,בולבול/פיפי,NA,NA
+item_643,NA,word,understands; produces,household,סיר בישול,NA,NA
+item_644,NA,word,understands; produces,household,טייפ/קלטת,NA,NA
+item_645,NA,word,understands; produces,games_routines,יש לי/שלי,NA,NA
+item_646,NA,word,understands; produces,action_words,לדפוק,NA,NA
+item_598,p2_c01_i01,pretend_parent,no; yes,NA,משכיב בובה או דובי לישון,puts a doll or a teadybear to sleep,NA
+item_599,p2_c01_i02,pretend_parent,no; yes,NA,מכסה בובה או דובי בשמיכה,covers a doll or a teaddybear with blanket,NA
+item_600,p2_c01_i03,pretend_parent,no; yes,NA,מאכיל בובה או דובי מבקבוק,feeds a doll or a teddy from a bottle,NA
+item_601,p2_c01_i04,pretend_parent,no; yes,NA,מאכיל בובה או דובי עם כפית,feeds a doll or a teddy with a tea spoon,NA
+item_602,p2_c01_i05,pretend_parent,no; yes,NA,מסרק את השיער של הבובה או הדובי,combs a doll's or teddy's hair,NA
+item_603,p2_c01_i06,pretend_parent,no; yes,NA,מלטף או טופח על גב הבובה או הדובי,pats on the doll's or teddy's back,NA
+item_604,p2_c01_i07,pretend_parent,no; yes,NA,דוחף בובה או דובי בעגלה,pushes a doll or a deddy in a stroller,NA
+item_605,p2_c01_i08,pretend_parent,no; yes,NA,מנדנד את הבובה או את הדובי,swings the doll or the teddy,NA
+item_606,p2_c01_i09,pretend_parent,no; yes,NA,מנשק או מחבק את הבובה או הדובי,kisses or hugs the doll or the teddy,NA
+item_607,p2_c01_i10,pretend_parent,no; yes,NA,"מנסה לנעול נעל, לגרוב גרב או לחבוש כובע לבובה או ל...","trys to put on the doll or teddy a shoe, a sock or a hat",NA
+item_608,p2_c01_i11,pretend_parent,no; yes,NA,מנגב את הפנים או הידיים של הבובה או הדובי,wipes the doll's or teddy's face,NA
+item_609,p2_c01_i12,pretend_parent,no; yes,NA,מנסה לחתל את הבובה או את הדובי,trys to put a diaper on the doll or the teddy,NA
+item_610,p2_c01_i13,pretend_parent,no; yes,NA,מכין שתייה לבובה או לדובי,prepares something to drink for the doll or teddy,NA
+item_611,p2_c01_i14,pretend_parent,no; yes,NA,מוזג נוזל דמיוני ממיכל אחד לאחר,pours imaginary liquid from one container to another,NA
+item_612,p2_c01_i15,pretend_parent,no; yes,NA,מערבב נוזל דמיוני בכוס או סיר עם כף,mixes an imaginary liquid in a glass or pot with a spoon,NA
+item_613,p2_c01_i16,pretend_parent,no; yes,NA,"מכין משקה דמיוני, מוזג לכלי ונותן לבובה או לדובי ל...","prepares an imaginary drink, pours to a container and gives the doll or the teddy to eat",NA
+item_614,p2_c01_i17,pretend_parent,no; yes,NA,"משכיב בובה או דובי במיטה, מכסה את הבובה או הדובי ו...","puts a doll or teddy in bed, covers them and...",NA
+item_615,p2_c01_i18,pretend_parent,no; yes,NA,מסדר כלי אוכל ונותן לבובה או לדובי לאכול,arranges dishes and gives the doll or teddy to eat,NA
+item_616,p2_c01_i19,pretend_parent,no; yes,NA,מכניס בובה קטנה למכונית ומסיע אותה,puts a small doll in a toy car and drives it,NA
+item_617,p2_c01_i20,pretend_parent,no; yes,NA,"מלביש בובה או דובי, מכניס למכונית ומסיע לכיוון הבי...","dresses a doll or teddy, puts them in a car and drives them towards... (home?)",NA
+item_618,p2_c01_i21,pretend_parent,no; yes,NA,מנסה לבדוק בובה או דובי עם כלי רופא מפלסטיק,trys to examine a doll or teddy with plastic doctor tools,NA
+item_619,p2_c02_i01,pretend_objects,no; yes,NA,"לוקח חפץ (למשל, כדור או קוביה) ומנסה לנגוס בו כאיל...",takes an object (such as a ball or a brick) and trys to bite in it like...,NA
+item_620,p2_c02_i02,pretend_objects,no; yes,NA,"לוקח מגבת, מכנסיים או חולצה ושם על הראש כאילו הם כ...","takes a towel, pants or shirt and puts on his head as they were a hat",NA
+item_621,p2_c02_i03,pretend_objects,no; yes,NA,"לוקח קוביה, עט, או סתם מקל, שם על יד האוזן ומדבר כ...","takes a brick, pen or just a stick, puts it next to his ear and pretend to talk on the phone",NA
+item_622,p2_c02_i04,pretend_objects,no; yes,NA,מסובב הגה צעצוע או מכסה של סיר כדי להראות שהוא נוה...,spins a toy steering wheel or a pot's lid to show that he is driving,NA
+item_623,p2_c02_i05,pretend_objects,no; yes,NA,מחזיק מטוס צעצוע או חפץ אחר ועושה כאילו הוא מטיס מ...,holds a toy plane or other object and pretends he's flying them,NA
+item_624,p2_c02_i06,pretend_objects,no; yes,NA,לוקח כלי ריק ללא מים ומראה כאילו הוא משקה עציצים,takes an empty container and pretend to water the plants with it,NA
+item_625,p2_c02_i07,pretend_objects,no; yes,NA,לוקח שקית ריקה ושם בה חפצים כאילו הוא קנה דברים בס...,takes an empty bag and put things inside like he bought them in the supermarket,NA
+item_626,p2_c02_i08,pretend_objects,no; yes,NA,לוקח חפץ אחר ומשתמש בו כאילו היה כלי בדיקה של רופא,takes a different object and use it like it was a doctor tool,NA
+item_627,p3_c01_i01,how_use_words,not yet; sometimes; often,NA,האם ילדך מבין אם מבקשים ממנו משהו שאינו בחדר? למשל...,does your child understand if he is asked to bring something that is not in the room? for example...,NA
+item_628,p3_c01_i02,how_use_words,not yet; sometimes; often,NA,האם ילדך מרים או מצביע על חפצים ואומר את השם של בע...,does your child raise or point at objects and says the name of...?,NA
+item_629,p3_c01_i03,how_use_words,not yet; sometimes; often,NA,האם ילדך מדבר על אירועים או אנשים ששייכים לעבר? לד...,does your talk about events or people from the past? for example...,NA
+item_630,p3_c01_i04,how_use_words,not yet; sometimes; often,NA,האם ילדך מדבר על דברים העומדים לקרות בעתיד? לדוגמה...,does you child talk about things that are about to happen in the future? for example...,NA
+item_631,p3_c03_i01,complexity,0; 1; 2; 3; 4,NA,1. בום/ מכה/ נפל/ רצפה (שימוש במילה אחת)#newline#2...,1. boom\hit\fell\floor(use of one word)...,NA
+item_632,p3_c04_i01,complexity,0; 1; 2; 3; 4,NA,1. לא/ די (שימוש במילה אחת)#newline#2. לא רוצה/ לא...,1. no \ enough (use of one word); doesn't want to \ ...,NA
+item_633,p3_c05_i01,complexity,0; 1; 2; 3; 4,NA,1. שם/ דלת/ החוצה/ לטייל (שימוש במילה אחת)#newline...,1. there\door\out\walk (use of one word); ....,NA
+item_634,p3_c06_i01,complexity,0; 1; 2; 3; 4,NA,1. כדור/ עוד/ זה/ הרבה (שימוש במילה אחת)#newline#2...,1. ball\more\this\many (use of one word); ...,NA
+item_635,p3_c07_i01,complexity,0; 1; 2; 3; 4,NA,1. זה/ את זה/ דובי (שימוש במילה אחת)#newline#2. תנ...,1. this\teddy (use of one word); ...,NA
+item_636,p3_c08_i01,complexity,0; 1; 2; 3; 4,NA,1. ילד/ ילדה/ אוכל/ אוכלת/ תפוח (שימוש במילה אחת)#...,1. boy\girl\eat(male) \ eat(female)\ apple (use of one word);...,NA
+item_637,p3_c09_i01,complexity,0; 1; 2; 3; 4,NA,1. בלון/ עף/ למעלה/ אוי ואבוי (שימוש במילה אחת)#ne...,1. balloon\fly\up\oh no (use of one word);.,NA
+item_638,p3_c10_i01,complexity,0; 1; 2; 3; 4,NA,1. אוטו/ לנסוע/ ברר ברר/ הן הן (שימוש במילה אחת)#n...,1. car\drive\vroom vroom (use of one word);.,NA
+item_639,NA,word,understands; produces,animals,חזיר,pig,pig
+item_640,NA,word,understands; produces,vehicles,סירה,boat,boat
+item_641,NA,word,understands; produces,body_parts,טוסיק/ישבן,buttocks/buttom,butt
+item_642,NA,word,understands; produces,body_parts,בולבול/פיפי,penis,penis
+item_643,NA,word,understands; produces,household,סיר בישול,blanket,blanket
+item_644,NA,word,understands; produces,household,טייפ/קלטת,tape,tape
+item_645,NA,word,understands; produces,games_routines,יש לי/שלי,I have mine,NA
+item_646,NA,word,understands; produces,action_words,לדפוק,knock,knock

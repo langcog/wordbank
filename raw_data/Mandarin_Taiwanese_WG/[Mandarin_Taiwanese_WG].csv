@@ -1,355 +1,368 @@
-itemID,item,type,category,choices,uni_lemma,definition,gloss,complexity_category
-item_1,d01_01,word,animals,understands; produces,dog,小狗(汪汪),dog,
-item_2,d01_02,word,animals,understands; produces,cat,小貓(喵喵),cat,
-item_3,d01_03,word,animals,understands; produces,fish (animal),魚,fish,
-item_4,d01_04,word,animals,understands; produces,bird,小鳥,bird,
-item_5,d01_05,word,animals,understands; produces,duck,鴨子(呱呱),duck,
-item_6,d01_06,word,animals,understands; produces,teddybear,小熊(泰迪熊),teddybear,
-item_7,d01_07,word,animals,understands; produces,horse,馬,horse,
-item_8,d01_08,word,animals,understands; produces,chicken (animal),雞(咕咕咕),chicken,
-item_9,d01_09,word,animals,understands; produces,cow,牛(哞),cow,
-item_10,d01_10,word,animals,understands; produces,bunny,兔子,bunny,
-item_11,d01_11,word,animals,understands; produces,elephant,大象,elephant,
-item_12,d01_12,word,animals,understands; produces,pig,豬,pig,
-item_13,d01_13,word,animals,understands; produces,ant,螞蟻,ant,
-item_14,d01_14,word,animals,understands; produces,sheep,小羊(咩咩),sheep,
-item_15,d01_15,word,animals,understands; produces,penguin,企鵝,penguin,
-item_16,d01_16,word,animals,understands; produces,butterfly,蝴蝶,butterfly,
-item_17,d01_17,word,animals,understands; produces,monkey,猴子,monkey,
-item_18,d01_18,word,animals,understands; produces,tiger,老虎,tiger,
-item_19,d01_19,word,animals,understands; produces,bug,蟲蟲,bug,
-item_20,d01_20,word,animals,understands; produces,lion,獅子,lion,
-item_21,d01_21,word,animals,understands; produces,turtle,烏龜,turtle,
-item_22,d01_22,word,animals,understands; produces,frog,青蛙,frog,
-item_23,d01_23,word,animals,understands; produces,giraffe,長頸鹿,giraffe,
-item_24,d01_24,word,animals,understands; produces,mosquito,蚊子,mosquito,
-item_25,d01_25,word,animals,understands; produces,mouse,老鼠,mouse,
-item_26,d01_26,word,animals,understands; produces,bee,蜜蜂(ㄨㄥㄨㄥ),bee,
-item_27,d01_27,word,animals,understands; produces,crab,螃蟹,crab,
-item_28,d01_28,word,animals,understands; produces,animal,動物,animal,
-item_29,d01_29,word,animals,understands; produces,zebra,斑馬,zebra,
-item_30,d01_30,word,animals,understands; produces,deer,鹿,deer,
-item_31,d02_01,word,body_parts,understands; produces,hand,手,hand,
-item_32,d02_02,word,body_parts,understands; produces,eye,眼睛,eye,
-item_33,d02_03,word,body_parts,understands; produces,ear,耳朵,ear,
-item_34,d02_04,word,body_parts,understands; produces,mouth,嘴巴,mouth,
-item_35,d02_05,word,body_parts,understands; produces,tummy,肚子,tummy,
-item_36,d02_06,word,body_parts,understands; produces,foot,腳,feet,
-item_37,d02_07,word,body_parts,understands; produces,head,頭,head,
-item_38,d02_08,word,body_parts,understands; produces,nose,鼻子,nose,
-item_39,d02_09,word,body_parts,understands; produces,hair,頭髮,hair,
-item_40,d02_10,word,body_parts,understands; produces,butt,屁股,buttocks/bottom,
-item_41,d02_11,word,body_parts,understands; produces,belly button,肚臍,belly button,
-item_42,d02_12,word,body_parts,understands; produces,penis,小ㄐㄐ/小鳥(生殖器),penis,
-item_43,d02_13,word,body_parts,understands; produces,tooth,牙齒,tooth,
-item_44,d02_14,word,body_parts,understands; produces,face,臉,face,
-item_45,d02_15,word,body_parts,understands; produces,eyebrow,眉毛,eyebrow,
-item_46,d02_16,word,body_parts,understands; produces,finger,手指(手指頭),finger,
-item_47,d02_17,word,body_parts,understands; produces,tongue,舌頭,tongue,
-item_48,d02_18,word,body_parts,understands; produces,neck,脖子,neck,
-item_49,d02_19,word,body_parts,understands; produces,toe,腳趾頭,toe,
-item_50,d02_20,word,body_parts,understands; produces,vagina,胸部(ㄋㄟㄋㄟ),vagina,
-item_51,d03_01,word,vehicles,understands; produces,car,汽車(車車、ㄅㄨㄅㄨ),car,
-item_52,d03_02,word,vehicles,understands; produces,airplane,飛機,airplane,
-item_53,d03_03,word,vehicles,understands; produces,truck,垃圾車,garbage truck,
-item_54,d03_04,word,vehicles,understands; produces,motorcycle,機車(摩托車),motorcycle,
-item_55,d03_05,word,vehicles,understands; produces,train,火車,train,
-item_56,d03_06,word,vehicles,understands; produces,boat,船,boat,
-item_57,d03_07,word,vehicles,understands; produces,bicycle,腳踏車,bicycle,
-item_58,d03_08,word,vehicles,understands; produces,bus,公車(巴士),bus,
-item_59,d03_09,word,vehicles,understands; produces,stroller,娃娃車(手推車),stroller,
-item_60,d03_10,word,vehicles,understands; produces,tricycle,三輪車,tricycle,
-item_61,d04_01,word,food_drink,understands; produces,milk,牛奶(ㄋㄟㄋㄟ),milk,
-item_62,d04_02,word,food_drink,understands; produces,water (beverage),水(茶茶),water,
-item_63,d04_03,word,food_drink,understands; produces,noodle,麵,noodles,
-item_64,d04_04,word,food_drink,understands; produces,rice,飯,rice,
-item_65,d04_05,word,food_drink,understands; produces,cookie,餅乾,cookie,
-item_66,d04_06,word,food_drink,understands; produces,banana,香蕉,banana,
-item_67,d04_07,word,food_drink,understands; produces,meat,肉,meat,
-item_68,d04_08,word,food_drink,understands; produces,egg,蛋,egg,
-item_69,d04_09,word,food_drink,understands; produces,bread,麵包,bread,
-item_70,d04_10,word,food_drink,understands; produces,apple,蘋果,apple,
-item_71,d04_11,word,food_drink,understands; produces,grape,葡萄,grapes,
-item_72,d04_12,word,food_drink,understands; produces,candy,糖果,candy,
-item_73,d04_13,word,food_drink,understands; produces,vegetable,蔬菜,vegetable,
-item_74,d04_14,word,food_drink,understands; produces,strawberry,草莓,strawberry,
-item_75,d04_15,word,food_drink,understands; produces,carrot,紅(白)蘿蔔,carrots,
-item_76,d04_16,word,food_drink,understands; produces,pudding,布丁,pudding,
-item_77,d04_17,word,food_drink,understands; produces,cake,蛋糕,cake,
-item_78,d04_18,word,food_drink,understands; produces,melon,西瓜,melon,
-item_79,d04_19,word,food_drink,understands; produces,porridge,稀飯,congee,
-item_80,d04_20,word,food_drink,understands; produces,guava,芭樂,guava,
-item_81,d04_21,word,food_drink,understands; produces,fruit,水果,fruit,
-item_82,d04_22,word,food_drink,understands; produces,tomato,蕃茄,tomato,
-item_83,d04_23,word,food_drink,understands; produces,ice cream,冰淇淋,ice cream,
-item_84,d04_24,word,food_drink,understands; produces,juice,果汁,juice,
-item_85,d04_25,word,food_drink,understands; produces,orange (food),柳丁,orange,
-item_86,d04_26,word,food_drink,understands; produces,cherry,櫻桃,cherry,
-item_87,d04_27,word,food_drink,understands; produces,raisin,葡萄乾,raisin,
-item_88,d04_28,word,food_drink,understands; produces,soy milk,豆漿,soy milk,
-item_89,d04_29,word,food_drink,understands; produces,soda,汽水,soda,
-item_90,d04_30,word,food_drink,understands; produces,drink (beverage),飲料,drink,
-item_91,d04_31,word,food_drink,understands; produces,pear,梨子,pear,
-item_92,d04_32,word,food_drink,understands; produces,,饅頭,steamed bread,
-item_93,d04_33,word,food_drink,understands; produces,toast,土司,toast,
-item_94,d04_34,word,food_drink,understands; produces,food,食物,food,
-item_95,d04_35,word,food_drink,understands; produces,soup,湯,soup,
-item_96,d05_01,word,clothing,understands; produces,shoe,鞋子,shoe,
-item_97,d05_02,word,clothing,understands; produces,diaper,尿布,diaper,
-item_98,d05_03,word,clothing,understands; produces,pants,褲子,pants,
-item_99,d05_04,word,clothing,understands; produces,shirt,衣物,shirt,
-item_100,d05_05,word,clothing,understands; produces,sock,襪子,sock,
-item_101,d05_06,word,clothing,understands; produces,hat,帽子,hat,
-item_102,d05_07,word,clothing,understands; produces,bib,圍兜(兜),bib,
-item_103,d05_08,word,clothing,understands; produces,jacket,夾克(外套),jacket,
-item_104,d05_09,word,clothing,understands; produces,zipper,拉鍊,zipper,
-item_105,d05_10,word,clothing,understands; produces,button,扣子,button,
-item_106,d05_11,word,clothing,understands; produces,slipper,拖鞋,slipper,
-item_107,d05_12,word,clothing,understands; produces,vest,背心,vest,
-item_108,d05_13,word,clothing,understands; produces,mittens,手套,mittens,
-item_109,d05_14,word,clothing,understands; produces,pants,長褲,pants,
-item_110,d05_15,word,clothing,understands; produces,shorts,短褲,shorts,
-item_111,d05_16,word,clothing,understands; produces,dress (object),裙子,dress,
-item_112,d06_01,word,toys,understands; produces,ball,球,ball,
-item_113,d06_02,word,toys,understands; produces,balloon,氣球,balloon,
-item_114,d06_03,word,toys,understands; produces,pen,筆,pen,
-item_115,d06_04,word,toys,understands; produces,book,書,book,
-item_116,d06_05,word,toys,understands; produces,doll,娃娃(洋娃娃),doll,
-item_117,d06_06,word,toys,understands; produces,toy (object),玩具,toy,
-item_118,d06_07,word,toys,understands; produces,bubbles,泡泡,bubbles,
-item_119,d06_08,word,toys,understands; produces,sticker,貼紙,sticker,
-item_120,d06_09,word,toys,understands; produces,block,積木,block,
-item_121,d06_10,word,toys,understands; produces,pencil,鉛筆,pencil,
-item_122,d06_11,word,toys,understands; produces,crayon,彩色筆,crayon,
-item_123,d07_01,word,household,understands; produces,telephone,電話,telephone,
-item_124,d07_02,word,household,understands; produces,cup,杯子,cup,
-item_125,d07_03,word,household,understands; produces,toothbrush,牙刷,toothbrush,
-item_126,d07_04,word,household,understands; produces,TV,電視,television,
-item_127,d07_05,word,household,understands; produces,spoon,湯匙,spoon,
-item_128,d07_06,word,household,understands; produces,keys,鑰匙,keys,
-item_129,d07_07,word,household,understands; produces,blanket,毯子(被子),blanket,
-item_130,d07_08,word,household,understands; produces,medicine,藥,medicine,
-item_131,d07_09,word,household,understands; produces,bowl,碗,bowl,
-item_132,d07_10,word,household,understands; produces,straw,吸管,straw,
-item_133,d07_11,word,household,understands; produces,money,錢,money,
-item_134,d07_12,word,household,understands; produces,pillow,枕頭,pillow,
-item_135,d07_13,word,household,understands; produces,glasses,眼鏡,glasses,
-item_136,d07_14,word,household,understands; produces,trash,垃圾桶,trash can,
-item_137,d07_15,word,household,understands; produces,chopsticks,筷子,chopsticks,
-item_138,d07_16,word,household,understands; produces,garbage,垃圾,garbage,
-item_139,d07_17,word,household,understands; produces,towel,毛巾,towel,
-item_140,d07_18,word,household,understands; produces,mirror,鏡子,mirror,
-item_141,d07_19,word,household,understands; produces,comb (object),梳子,comb,
-item_142,d07_20,word,household,understands; produces,broom,掃把,broom,
-item_143,d07_21,word,household,understands; produces,soap,肥皂,soap,
-item_144,d07_22,word,household,understands; produces,paper,紙,paper,
-item_145,d07_23,word,household,understands; produces,plate,盤子,plate,
-item_146,d07_24,word,household,understands; produces,clock,時鐘(鬧鐘),clock,
-item_147,d07_25,word,household,understands; produces,bottle,瓶子,bottle,
-item_148,d07_26,word,household,understands; produces,radio,收音機/音響,radio,
-item_149,d07_27,word,household,understands; produces,pot,鍋子,pot,
-item_150,d07_28,word,household,understands; produces,box,盒子,box,
-item_151,d07_29,word,household,understands; produces,pot,電鍋,electric pot,
-item_152,d07_30,word,household,understands; produces,coin,銅板(零錢),penny,
-item_153,d07_31,word,household,understands; produces,purse,皮包,purse,
-item_154,d07_32,word,household,understands; produces,picture,圖片,picture,
-item_155,d08_01,word,furniture_rooms,understands; produces,chair,椅子,chair,
-item_156,d08_02,word,furniture_rooms,understands; produces,door,門,door,
-item_157,d08_03,word,furniture_rooms,understands; produces,table,桌子,table,
-item_158,d08_04,word,furniture_rooms,understands; produces,bed,床,bed,
-item_159,d08_05,word,furniture_rooms,understands; produces,refrigerator,冰箱,refrigerator,
-item_160,d08_06,word,furniture_rooms,understands; produces,toilet,廁所,water closet,
-item_161,d08_07,word,furniture_rooms,understands; produces,window,窗戶,window,
-item_162,d08_08,word,furniture_rooms,understands; produces,living room,客廳,living room,
-item_163,d08_09,word,furniture_rooms,understands; produces,kitchen,廚房,kitchen,
-item_164,d08_10,word,furniture_rooms,understands; produces,drawer,抽屜,drawer,
-item_165,d08_11,word,furniture_rooms,understands; produces,elevator,電梯,elevator,
-item_166,d08_12,word,furniture_rooms,understands; produces,couch,沙發,sofa,
-item_167,d08_13,word,furniture_rooms,understands; produces,bedroom,臥(房)室,bedroom,
-item_168,d08_14,word,furniture_rooms,understands; produces,bathroom,浴室,bathroom,
-item_169,d08_15,word,furniture_rooms,understands; produces,sink,水槽(洗手檯),sink,
-item_170,d08_16,word,furniture_rooms,understands; produces,crib,嬰兒床,crib,
-item_171,d09_01,word,outside,understands; produces,flower,花,flower,
-item_172,d09_02,word,outside,understands; produces,rain,下雨,rain,
-item_173,d09_03,word,outside,understands; produces,slide (object),溜滑梯,slide,
-item_174,d09_04,word,outside,understands; produces,tree,樹,tree,
-item_175,d09_05,word,outside,understands; produces,rock (object),石頭,stone,
-item_176,d09_06,word,outside,understands; produces,umbrella,雨傘,umbrella,
-item_177,d09_07,word,outside,understands; produces,home,家,home,
-item_178,d09_08,word,outside,understands; produces,sun,太陽,sun,
-item_179,d09_09,word,outside,understands; produces,moon,月亮,moon,
-item_180,d09_10,word,outside,understands; produces,star,星星,star,
-item_181,d09_11,word,outside,understands; produces,house,房子,house,
-item_182,d09_12,word,outside,understands; produces,store,7-11(任何商店名稱),store,
-item_183,d09_13,word,outside,understands; produces,traffic light,紅綠燈,traffic light,
-item_184,d09_14,word,outside,understands; produces,park,公園,park,
-item_185,d09_15,word,outside,understands; produces,playground,XX園(某遊樂園名稱),playground,
-item_186,d09_16,word,outside,understands; produces,grass,草,grass,
-item_187,d09_17,word,outside,understands; produces,swing (object),鞦韆,swing,
-item_188,d09_18,word,outside,understands; produces,seesaw (object) ,翹翹板,seesaw,
-item_189,d09_19,word,outside,understands; produces,hospital,醫院(診所),clinic,
-item_190,d10_01,word,games_routines,understands; produces,bye,再見(byebye),bye,
-item_191,d10_02,word,games_routines,understands; produces,thank you,謝謝,thank you,
-item_192,d10_03,word,games_routines,understands; produces,nap,睡覺,nap,
-item_193,d10_04,word,games_routines,understands; produces,night night,晚安,night night,
-item_194,d10_05,word,games_routines,understands; produces,eat,吃飯,eat,
-item_195,d10_06,word,games_routines,understands; produces,bath,洗澡,bath,
-item_196,d10_07,word,games_routines,understands; produces,brush,刷牙,brush,
-item_197,d10_08,word,games_routines,understands; produces,hello,哈囉(嗨),hello(hi),
-item_198,d10_09,word,games_routines,understands; produces,read,讀書(看書),read,
-item_199,d10_10,word,games_routines,understands; produces,shh,噓/噓噓(安靜),shh/shush/hush,
-item_200,d10_11,word,games_routines,understands; produces,,換尿布,change diaper,
-item_201,d10_12,word,games_routines,understands; produces,dance,跳舞,dance,
-item_202,d10_13,word,games_routines,understands; produces,sing,唱歌,sing,
-item_203,d10_14,word,games_routines,understands; produces,,看電視,watch TV,
-item_204,d10_15,word,games_routines,understands; produces,sorry,對不起,sorry,
-item_205,d10_16,word,games_routines,understands; produces,call,打電話,call (on phone),
-item_206,d10_17,word,games_routines,understands; produces,peekabo,躲貓貓,peekaboo,
-item_207,d10_18,word,games_routines,understands; produces,shopping,逛街/買東西,shopping,
-item_208,d10_19,word,games_routines,understands; produces,pattycake,玩遊戲,patty cake,
-item_209,d10_20,word,games_routines,understands; produces,potty,上廁所(尿尿、便便),go potty,
-item_210,d10_21,word,games_routines,understands; produces,clap,拍拍手,clap,
-item_211,d10_22,word,games_routines,understands; produces,drive,開車,drive,
-item_212,d11_01,word,people,understands; produces,daddy,爸爸/爹地,daddy,
-item_213,d11_02,word,people,understands; produces,mommy,媽媽/媽咪,mommy,
-item_214,d11_03,word,people,understands; produces,sister,姊姊,elder sister,
-item_215,d11_04,word,people,understands; produces,grandma,奶奶,grandma,
-item_216,d11_05,word,people,understands; produces,brother,哥哥,elder brother,
-item_217,d11_06,word,people,understands; produces,grandpa,爺爺,grandpa,
-item_218,d11_07,word,people,understands; produces,uncle,叔叔,uncle,
-item_219,d11_08,word,people,understands; produces,aunt,姑姑,paternal aunt,
-item_220,d11_09,word,people,understands; produces,uncle,舅舅,maternal uncle,
-item_221,d11_10,word,people,understands; produces,aunt,阿姨(姨媽),aunt,
-item_222,d11_11,word,people,understands; produces,baby,小寶寶(小貝比),baby,
-item_223,d11_12,word,people,understands; produces,child's own name,自己的名字,child's own name,
-item_224,d11_13,word,people,understands; produces,sister,妹妹,younger sister,
-item_225,d11_14,word,people,understands; produces,brother,弟弟,younger brother,
-item_226,d11_15,word,people,understands; produces,grandma,外婆,maternal grandmother,
-item_227,d11_16,word,people,understands; produces,grandpa,外公,maternal grandfather,
-item_228,d11_17,word,people,understands; produces,uncle,伯伯,paternal uncle,
-item_229,d11_18,word,people,understands; produces,doctor,醫生,doctor,
-item_230,d11_19,word,people,understands; produces,child,小朋友,child,
-item_231,d11_20,word,people,understands; produces,babysitter,褓母(奶媽),babysitter,
-item_232,d11_21,word,people,understands; produces,I,我,I,
-item_233,d11_22,word,people,understands; produces,you,你,you,
-item_234,d11_23,word,people,understands; produces,my,我的,my,
-item_235,d11_24,word,people,understands; produces,your,你的,your,
-item_236,d11_25,word,people,understands; produces,he,他,he,
-item_237,d11_26,word,people,understands; produces,his,他的,his,
-item_238,d11_27,word,people,understands; produces,family name,家人的名字,family's name,
-item_239,d11_28,word,people,understands; produces,pet’s name,寵物的名字,pet's name,
-item_240,d12_01,word,time_words,understands; produces,wait,等一下,wait,
-item_241,d12_02,word,time_words,understands; produces,start,開始,start,
-item_242,d12_03,word,time_words,understands; produces,night,晚上,night,
-item_243,d12_04,word,time_words,understands; produces,end,完了(結束的意思),end,
-item_244,d13_01,word,locations,understands; produces,here,在這裡,here,
-item_245,d13_02,word,locations,understands; produces,away,走開,away,
-item_246,d13_03,word,locations,understands; produces,come,過來,come here,
-item_247,d13_04,word,locations,understands; produces,there,在那裡,there,
-item_248,d13_05,word,locations,understands; produces,back,後面,back,
-item_249,d13_06,word,locations,understands; produces,front,前面,front,
-item_250,d13_07,word,locations,understands; produces,out,外面,out,
-item_251,d13_08,word,locations,understands; produces,in,裡面,inside/in,
-item_252,d13_09,word,locations,understands; produces,to,到…某個地方,to somewhere,
-item_253,d13_10,word,locations,understands; produces,in front,在…前面,in front of,
-item_254,d13_11,word,locations,understands; produces,outside,在…外面,outside,
-item_255,d14_01,word,action_words,understands; produces,hug,抱(抱),hug,
-item_256,d14_02,word,action_words,understands; produces,eat,吃,eat,
-item_257,d14_03,word,action_words,understands; produces,don’t,不要,do not,
-item_258,d14_04,word,action_words,understands; produces,wanna,要,wanna/ want to,
-item_259,d14_05,word,action_words,understands; produces,yes,是/對/好,yes,
-item_260,d14_06,word,action_words,understands; produces,hit,打,hit,
-item_261,d14_07,word,action_words,understands; produces,walk,走/散步,walk,
-item_262,d14_08,word,action_words,understands; produces,wash,洗,wash,
-item_263,d14_09,word,action_words,understands; produces,sit,坐,sit,
-item_264,d14_10,word,action_words,understands; produces,drink (action),喝,drink,
-item_265,d14_11,word,action_words,understands; produces,cry,哭,cry,
-item_266,d14_12,word,action_words,understands; produces,clap,拍(手),clap,
-item_267,d14_13,word,action_words,understands; produces,look,看,look,
-item_268,d14_14,word,action_words,understands; produces,bite,咬,bite,
-item_269,d14_15,word,action_words,understands; produces,take,拿,take,
-item_270,d14_16,word,action_words,understands; produces,wear,穿,wear,
-item_271,d14_17,word,action_words,understands; produces,open (action),打開,open,
-item_272,d14_18,word,action_words,understands; produces,run,跑,run,
-item_273,d14_19,word,action_words,understands; produces,play,玩,play,
-item_274,d14_20,word,action_words,understands; produces,go,去,go,
-item_275,d14_21,word,action_words,understands; produces,come,來,come,
-item_276,d14_22,word,action_words,understands; produces,kiss,親,kiss,
-item_277,d14_23,word,action_words,understands; produces,close,關,close,
-item_278,d14_24,word,action_words,understands; produces,jump,跳,jump,
-item_279,d14_25,word,action_words,understands; produces,ride,騎,ride,
-item_280,d14_26,word,action_words,understands; produces,drop,掉,drop,
-item_281,d14_27,word,action_words,understands; produces,no,不是/不對/不好,no,
-item_282,d14_28,word,action_words,understands; produces,fall,跌倒,fall,
-item_283,d14_29,word,action_words,understands; produces,blow,吹,blow,
-item_284,d14_30,word,action_words,understands; produces,wipe,擦,wipe,
-item_285,d14_31,word,action_words,understands; produces,finish,好了,finish,
-item_286,d14_32,word,action_words,understands; produces,give,給,give,
-item_287,d14_33,word,action_words,understands; produces,not,不可以/不行,not,
-item_288,d14_34,word,action_words,understands; produces,smile (action),笑,smile,
-item_289,d14_35,word,action_words,understands; produces,hurry,快點/快一點,hurry,
-item_290,d14_36,word,action_words,understands; produces,pick,撿,pick,
-item_291,d14_37,word,action_words,understands; produces,touch,摸,touch,
-item_292,d14_38,word,action_words,understands; produces,climb,爬,climb,
-item_293,d14_39,word,action_words,understands; produces,say,說話,say,
-item_294,d14_40,word,action_words,understands; produces,hold,握手,hold,
-item_295,d14_41,word,action_words,understands; produces,feed,餵,feed,
-item_296,d14_42,word,action_words,understands; produces,listen,聽,listen,
-item_297,d14_43,word,action_words,understands; produces,knock,敲,knock,
-item_298,d14_44,word,action_words,understands; produces,shake,搖,shake,
-item_299,d14_45,word,action_words,understands; produces,put,放,put,
-item_300,d14_46,word,action_words,understands; produces,pull,拉,pull,
-item_301,d14_47,word,action_words,understands; produces,kick,踢,kick,
-item_302,d14_48,word,action_words,understands; produces,hit,碰/撞,hit,
-item_303,d14_49,word,action_words,understands; produces,catch,抓,catch,
-item_304,d14_50,word,action_words,understands; produces,call,叫,call,
-item_305,d14_51,word,action_words,understands; produces,stop,停,stop,
-item_306,d14_52,word,action_words,understands; produces,stand,排(東西),stand,
-item_307,d14_53,word,action_words,understands; produces,press,按,press,
-item_308,d14_54,word,action_words,understands; produces,tickle,搔癢,tickle,
-item_309,d14_55,word,action_words,understands; produces,push,壓,push,
-item_310,d14_56,word,action_words,understands; produces,throw,丟,throw,
-item_311,d14_57,word,action_words,understands; produces,draw,畫畫,draw,
-item_312,d14_58,word,action_words,understands; produces,take,脫,take off,
-item_313,d14_59,word,action_words,understands; produces,hand,牽(手),hold,
-item_314,d15_01,word,descriptive_words,understands; produces,hot,好熱/熱熱的,hot,
-item_315,d15_02,word,descriptive_words,understands; produces,hot,好燙/燙燙的,very hot,
-item_316,d15_03,word,descriptive_words,understands; produces,good,好棒,good,
-item_317,d15_04,word,descriptive_words,understands; produces,hurt,好痛/痛痛的,hurt,
-item_318,d15_05,word,descriptive_words,understands; produces,sticky,好臭/臭臭的,sticky,
-item_319,d15_06,word,descriptive_words,understands; produces,dirty,髒髒的/骯髒的,dirty,
-item_320,d15_07,word,descriptive_words,understands; produces,scared,害怕的(好恐怖),scared,
-item_321,d15_08,word,descriptive_words,understands; produces,dark,暗暗的,dark,
-item_322,d15_09,word,descriptive_words,understands; produces,bright,亮亮的,bright,
-item_323,d15_10,word,descriptive_words,understands; produces,wet,濕濕的,wet,
-item_324,d15_11,word,descriptive_words,understands; produces,broken,破了/破掉了,broken,
-item_325,d15_12,word,descriptive_words,understands; produces,cute,好可愛/可愛的,cute,
-item_326,d15_13,word,descriptive_words,understands; produces,awake,想睡覺,awake,
-item_327,d15_14,word,descriptive_words,understands; produces,pretty,好漂亮/漂亮的,pretty,
-item_328,d15_15,word,descriptive_words,understands; produces,high,好高/高高的,high,
-item_329,d15_16,word,descriptive_words,understands; produces,thirsty,口渴了/好渴,thirsty,
-item_330,d15_17,word,descriptive_words,understands; produces,cold,好冷/冷冷的,cold,
-item_331,d15_18,word,descriptive_words,understands; produces,,好香/香香的,smell good,
-item_332,d15_19,word,descriptive_words,understands; produces,yum yum,很好吃/好吃的,yummy,
-item_333,d15_20,word,descriptive_words,understands; produces,hungry,餓了/好餓,hungry,
-item_334,d15_21,word,descriptive_words,understands; produces,full,飽了/好飽,full,
-item_335,d15_22,word,descriptive_words,understands; produces,careful,小心,careful,
-item_336,d15_23,word,descriptive_words,understands; produces,bad,壞的,bad,
-item_337,d15_24,word,descriptive_words,understands; produces,sweet,甜甜的,sweet,
-item_338,d15_25,word,descriptive_words,understands; produces,sleepy,睡著了,sleepy,
-item_339,d15_26,word,descriptive_words,understands; produces,happy,快樂的/高興的,happy,
-item_340,d15_27,word,descriptive_words,understands; produces,clean (description),乾淨的,clean,
-item_341,d15_28,word,descriptive_words,understands; produces,empty,空空的,empty,
-item_342,d15_29,word,descriptive_words,understands; produces,naughty,不乖,naughty,
-item_343,d16_01,word,pronouns,understands; produces,this,這個,this,
-item_344,d16_02,word,pronouns,understands; produces,one two three,一個(二、三個…),"one (two, three...)",
-item_345,d16_03,word,pronouns,understands; produces,much,好多,much,
-item_346,d16_04,word,pronouns,understands; produces,none,沒半個/沒有,none,
-item_347,d16_05,word,pronouns,understands; produces,also,還有,furthermore,
-item_348,d16_06,word,pronouns,understands; produces,that,那個,that,
-item_349,d17_01,word,question_words,understands; produces,what,什麼？,what,
-item_350,d17_02,word,question_words,understands; produces,where,哪裡？,where,
-item_351,d17_03,word,question_words,understands; produces,which,哪一個？,which,
-item_352,d17_04,word,question_words,understands; produces,who,誰？,who,
-item_353,d17_05,word,question_words,understands; produces,how,怎麼(辦)？,how,
-item_354,d17_06,word,question_words,understands; produces,why,咦？,why,
+itemID,item,type,category,choices,definition,complexity_category,gloss,uni_lemma
+item_1,d01_01,word,animals,understands; produces,小狗(汪汪),NA,dog,dog
+item_2,d01_02,word,animals,understands; produces,小貓(喵喵),NA,cat,cat
+item_3,d01_03,word,animals,understands; produces,魚,NA,fish,fish (animal)
+item_4,d01_04,word,animals,understands; produces,小鳥,NA,bird,bird
+item_5,d01_05,word,animals,understands; produces,鴨子(呱呱),NA,duck,duck
+item_6,d01_06,word,animals,understands; produces,小熊(泰迪熊),NA,teddybear,teddybear
+item_7,d01_07,word,animals,understands; produces,馬,NA,horse,horse
+item_8,d01_08,word,animals,understands; produces,雞(咕咕咕),NA,chicken,chicken (animal)
+item_9,d01_09,word,animals,understands; produces,牛(哞),NA,cow,cow
+item_10,d01_10,word,animals,understands; produces,兔子,NA,rabbit,bunny
+item_11,d01_11,word,animals,understands; produces,大象,NA,elephant,elephant
+item_12,d01_12,word,animals,understands; produces,豬,NA,pig,pig
+item_13,d01_13,word,animals,understands; produces,螞蟻,NA,ant,ant
+item_14,d01_14,word,animals,understands; produces,小羊(咩咩),NA,sheep,sheep
+item_15,d01_15,word,animals,understands; produces,企鵝,NA,penguin,penguin
+item_16,d01_16,word,animals,understands; produces,蝴蝶,NA,butterfly,butterfly
+item_17,d01_17,word,animals,understands; produces,猴子,NA,monkey,monkey
+item_18,d01_18,word,animals,understands; produces,老虎,NA,tiger,tiger
+item_19,d01_19,word,animals,understands; produces,蟲蟲,NA,bug,bug
+item_20,d01_20,word,animals,understands; produces,獅子,NA,lion,lion
+item_21,d01_21,word,animals,understands; produces,烏龜,NA,turtle,turtle
+item_22,d01_22,word,animals,understands; produces,青蛙,NA,frog,frog
+item_23,d01_23,word,animals,understands; produces,長頸鹿,NA,giraffe,giraffe
+item_24,d01_24,word,animals,understands; produces,蚊子,NA,mosquito,mosquito
+item_25,d01_25,word,animals,understands; produces,老鼠,NA,mouse,mouse
+item_26,d01_26,word,animals,understands; produces,蜜蜂(ㄨㄥㄨㄥ),NA,bee,bee
+item_27,d01_27,word,animals,understands; produces,螃蟹,NA,crab,crab
+item_28,d01_28,word,animals,understands; produces,動物,NA,animal,animal
+item_29,d01_29,word,animals,understands; produces,斑馬,NA,zebra,zebra
+item_30,d01_30,word,animals,understands; produces,鹿,NA,deer,deer
+item_31,d02_01,word,body_parts,understands; produces,手,NA,hand,hand
+item_32,d02_02,word,body_parts,understands; produces,眼睛,NA,eye,eye
+item_33,d02_03,word,body_parts,understands; produces,耳朵,NA,ear,ear
+item_34,d02_04,word,body_parts,understands; produces,嘴巴,NA,mouth,mouth
+item_35,d02_05,word,body_parts,understands; produces,肚子,NA,tummy,tummy
+item_36,d02_06,word,body_parts,understands; produces,腳,NA,feet,foot
+item_37,d02_07,word,body_parts,understands; produces,頭,NA,head,head
+item_38,d02_08,word,body_parts,understands; produces,鼻子,NA,nose,nose
+item_39,d02_09,word,body_parts,understands; produces,頭髮,NA,hair,hair
+item_40,d02_10,word,body_parts,understands; produces,屁股,NA,buttocks/bottom,butt
+item_41,d02_11,word,body_parts,understands; produces,肚臍,NA,belly button,belly button
+item_42,d02_12,word,body_parts,understands; produces,小ㄐㄐ/小鳥(生殖器),NA,penis,penis
+item_43,d02_13,word,body_parts,understands; produces,牙齒,NA,teeth,tooth
+item_44,d02_14,word,body_parts,understands; produces,臉,NA,face,face
+item_45,d02_15,word,body_parts,understands; produces,眉毛,NA,eyebrow,eyebrow
+item_46,d02_16,word,body_parts,understands; produces,手指(手指頭),NA,finger,finger
+item_47,d02_17,word,body_parts,understands; produces,舌頭,NA,tongue,tongue
+item_48,d02_18,word,body_parts,understands; produces,脖子,NA,neck,neck
+item_49,d02_19,word,body_parts,understands; produces,腳趾頭,NA,toe,toe
+item_50,d02_20,word,body_parts,understands; produces,胸部(ㄋㄟㄋㄟ),NA,vagina,breast
+item_51,d03_01,word,vehicles,understands; produces,汽車(車車、ㄅㄨㄅㄨ),NA,car,car
+item_52,d03_02,word,vehicles,understands; produces,飛機,NA,airplane,airplane
+item_53,d03_03,word,vehicles,understands; produces,垃圾車,NA,garbage truck,truck
+item_54,d03_04,word,vehicles,understands; produces,機車(摩托車),NA,motorcycle,motorcycle
+item_55,d03_05,word,vehicles,understands; produces,火車,NA,train,train
+item_56,d03_06,word,vehicles,understands; produces,船,NA,boat,boat
+item_57,d03_07,word,vehicles,understands; produces,腳踏車,NA,bicycle,bicycle
+item_58,d03_08,word,vehicles,understands; produces,公車(巴士),NA,bus,bus
+item_59,d03_09,word,vehicles,understands; produces,娃娃車(手推車),NA,stroller,stroller
+item_60,d03_10,word,vehicles,understands; produces,三輪車,NA,tricycle,tricycle
+item_61,d04_01,word,food_drink,understands; produces,牛奶(ㄋㄟㄋㄟ),NA,milk,milk
+item_62,d04_02,word,food_drink,understands; produces,水(茶茶),NA,water,water (beverage)
+item_63,d04_03,word,food_drink,understands; produces,麵,NA,noodles,noodles
+item_64,d04_04,word,food_drink,understands; produces,飯,NA,rice,rice
+item_65,d04_05,word,food_drink,understands; produces,餅乾,NA,cookies,cookie
+item_66,d04_06,word,food_drink,understands; produces,香蕉,NA,banana,banana
+item_67,d04_07,word,food_drink,understands; produces,肉,NA,meat,meat
+item_68,d04_08,word,food_drink,understands; produces,蛋,NA,egg,egg
+item_69,d04_09,word,food_drink,understands; produces,麵包,NA,bread,bread
+item_70,d04_10,word,food_drink,understands; produces,蘋果,NA,apple,apple
+item_71,d04_11,word,food_drink,understands; produces,葡萄,NA,grap,grapes
+item_72,d04_12,word,food_drink,understands; produces,糖果,NA,candy,candy
+item_73,d04_13,word,food_drink,understands; produces,蔬菜,NA,vegetable,vegetable
+item_74,d04_14,word,food_drink,understands; produces,草莓,NA,strawberry,strawberry
+item_75,d04_15,word,food_drink,understands; produces,紅(白)蘿蔔,NA,carrots,carrot
+item_76,d04_16,word,food_drink,understands; produces,布丁,NA,pudding,pudding
+item_77,d04_17,word,food_drink,understands; produces,蛋糕,NA,cake,cake
+item_78,d04_18,word,food_drink,understands; produces,西瓜,NA,watermelon,melon
+item_79,d04_19,word,food_drink,understands; produces,稀飯,NA,congee,porridge
+item_80,d04_20,word,food_drink,understands; produces,芭樂,NA,guava,guava
+item_81,d04_21,word,food_drink,understands; produces,水果,NA,fruit,fruit
+item_82,d04_22,word,food_drink,understands; produces,蕃茄,NA,tomato,tomato
+item_83,d04_23,word,food_drink,understands; produces,冰淇淋,NA,ice cream,ice cream
+item_84,d04_24,word,food_drink,understands; produces,果汁,NA,juice,juice
+item_85,d04_25,word,food_drink,understands; produces,柳丁,NA,orange,orange (food)
+item_86,d04_26,word,food_drink,understands; produces,櫻桃,NA,cherry,cherry
+item_87,d04_27,word,food_drink,understands; produces,葡萄乾,NA,raisin,raisin
+item_88,d04_28,word,food_drink,understands; produces,豆漿,NA,soy milk,soy milk
+item_89,d04_29,word,food_drink,understands; produces,汽水,NA,soda,soda
+item_90,d04_30,word,food_drink,understands; produces,飲料,NA,drink,drink (beverage)
+item_91,d04_31,word,food_drink,understands; produces,梨子,NA,pear,pear
+item_92,d04_32,word,food_drink,understands; produces,饅頭,NA,steamed bread,bun
+item_93,d04_33,word,food_drink,understands; produces,土司,NA,toast,toast
+item_94,d04_34,word,food_drink,understands; produces,食物,NA,food,food
+item_95,d04_35,word,food_drink,understands; produces,湯,NA,soup,soup
+item_96,d05_01,word,clothing,understands; produces,鞋子,NA,shoes,shoe
+item_97,d05_02,word,clothing,understands; produces,尿布,NA,diaper,diaper
+item_98,d05_03,word,clothing,understands; produces,褲子,NA,pants,pants
+item_99,d05_04,word,clothing,understands; produces,衣物,NA,clothes,shirt
+item_100,d05_05,word,clothing,understands; produces,襪子,NA,socks,sock
+item_101,d05_06,word,clothing,understands; produces,帽子,NA,hat,hat
+item_102,d05_07,word,clothing,understands; produces,圍兜(兜),NA,bib,bib
+item_103,d05_08,word,clothing,understands; produces,夾克(外套),NA,jacket,jacket
+item_104,d05_09,word,clothing,understands; produces,拉鍊,NA,zipper,zipper
+item_105,d05_10,word,clothing,understands; produces,扣子,NA,button,button
+item_106,d05_11,word,clothing,understands; produces,拖鞋,NA,slippers,slipper
+item_107,d05_12,word,clothing,understands; produces,背心,NA,vest,vest
+item_108,d05_13,word,clothing,understands; produces,手套,NA,gloves,mitten
+item_109,d05_14,word,clothing,understands; produces,長褲,NA,trousers,pants
+item_110,d05_15,word,clothing,understands; produces,短褲,NA,shorts,shorts
+item_111,d05_16,word,clothing,understands; produces,裙子,NA,dress,dress (object)
+item_112,d06_01,word,toys,understands; produces,球,NA,ball,ball
+item_113,d06_02,word,toys,understands; produces,氣球,NA,balloon,balloon
+item_114,d06_03,word,toys,understands; produces,筆,NA,pen,pen
+item_115,d06_04,word,toys,understands; produces,書,NA,book,book
+item_116,d06_05,word,toys,understands; produces,娃娃(洋娃娃),NA,doll,doll
+item_117,d06_06,word,toys,understands; produces,玩具,NA,toy,toy (object)
+item_118,d06_07,word,toys,understands; produces,泡泡,NA,bubbles,bubbles
+item_119,d06_08,word,toys,understands; produces,貼紙,NA,stickers,sticker
+item_120,d06_09,word,toys,understands; produces,積木,NA,block,blocks
+item_121,d06_10,word,toys,understands; produces,鉛筆,NA,pencil,pencil
+item_122,d06_11,word,toys,understands; produces,彩色筆,NA,crayon,crayon
+item_123,d07_01,word,household,understands; produces,電話,NA,telephone,telephone
+item_124,d07_02,word,household,understands; produces,杯子,NA,cup,cup
+item_125,d07_03,word,household,understands; produces,牙刷,NA,toothbrush,toothbrush
+item_126,d07_04,word,household,understands; produces,電視,NA,television,TV
+item_127,d07_05,word,household,understands; produces,湯匙,NA,spoon,spoon
+item_128,d07_06,word,household,understands; produces,鑰匙,NA,key,key
+item_129,d07_07,word,household,understands; produces,毯子(被子),NA,blanket,blanket
+item_130,d07_08,word,household,understands; produces,藥,NA,medicine,medicine
+item_131,d07_09,word,household,understands; produces,碗,NA,bowl,bowl
+item_132,d07_10,word,household,understands; produces,吸管,NA,straw,straw
+item_133,d07_11,word,household,understands; produces,錢,NA,money,money
+item_134,d07_12,word,household,understands; produces,枕頭,NA,pillow,pillow
+item_135,d07_13,word,household,understands; produces,眼鏡,NA,glasses,glasses
+item_136,d07_14,word,household,understands; produces,垃圾桶,NA,trash can,trash
+item_137,d07_15,word,household,understands; produces,筷子,NA,chopsticks,chopstick
+item_138,d07_16,word,household,understands; produces,垃圾,NA,garbage,garbage
+item_139,d07_17,word,household,understands; produces,毛巾,NA,towel,towel
+item_140,d07_18,word,household,understands; produces,鏡子,NA,mirror,mirror
+item_141,d07_19,word,household,understands; produces,梳子,NA,comb,comb (object)
+item_142,d07_20,word,household,understands; produces,掃把,NA,broom,broom
+item_143,d07_21,word,household,understands; produces,肥皂,NA,soap,soap
+item_144,d07_22,word,household,understands; produces,紙,NA,paper,paper
+item_145,d07_23,word,household,understands; produces,盤子,NA,plate,plate
+item_146,d07_24,word,household,understands; produces,時鐘(鬧鐘),NA,clock,clock
+item_147,d07_25,word,household,understands; produces,瓶子,NA,bottle,bottle
+item_148,d07_26,word,household,understands; produces,收音機/音響,NA,radio,radio
+item_149,d07_27,word,household,understands; produces,鍋子,NA,pot,pot
+item_150,d07_28,word,household,understands; produces,盒子,NA,box,box
+item_151,d07_29,word,household,understands; produces,電鍋,NA,electric pot,pot
+item_152,d07_30,word,household,understands; produces,銅板(零錢),NA,penny,coin
+item_153,d07_31,word,household,understands; produces,皮包,NA,purse,purse
+item_154,d07_32,word,household,understands; produces,圖片,NA,picture,picture
+item_155,d08_01,word,furniture_rooms,understands; produces,椅子,NA,chair,chair
+item_156,d08_02,word,furniture_rooms,understands; produces,門,NA,door,door
+item_157,d08_03,word,furniture_rooms,understands; produces,桌子,NA,table,table
+item_158,d08_04,word,furniture_rooms,understands; produces,床,NA,bed,bed
+item_159,d08_05,word,furniture_rooms,understands; produces,冰箱,NA,NA,NA
+item_160,d08_06,word,furniture_rooms,understands; produces,廁所,NA,water closet,toilet
+item_161,d08_07,word,furniture_rooms,understands; produces,窗戶,NA,window,window
+item_162,d08_08,word,furniture_rooms,understands; produces,客廳,NA,living room,living room
+item_163,d08_09,word,furniture_rooms,understands; produces,廚房,NA,kitchen,kitchen
+item_164,d08_10,word,furniture_rooms,understands; produces,抽屜,NA,drawer,drawer
+item_165,d08_11,word,furniture_rooms,understands; produces,電梯,NA,elevator,elevator
+item_166,d08_12,word,furniture_rooms,understands; produces,沙發,NA,sofa,couch
+item_167,d08_13,word,furniture_rooms,understands; produces,臥(房)室,NA,bedroom,bedroom
+item_168,d08_14,word,furniture_rooms,understands; produces,浴室,NA,bathroom,bathroom
+item_169,d08_15,word,furniture_rooms,understands; produces,水槽(洗手檯),NA,sink,sink
+item_170,d08_16,word,furniture_rooms,understands; produces,嬰兒床,NA,crib,crib
+item_171,d09_01,word,outside,understands; produces,花,NA,flower,flower
+item_172,d09_02,word,outside,understands; produces,下雨,NA,rain,rain
+item_173,d09_03,word,outside,understands; produces,溜滑梯,NA,slide,slide (object)
+item_174,d09_04,word,outside,understands; produces,樹,NA,tree,tree
+item_175,d09_05,word,outside,understands; produces,石頭,NA,stone,rock (object)
+item_176,d09_06,word,outside,understands; produces,雨傘,NA,umbrella,umbrella
+item_177,d09_07,word,outside,understands; produces,家,NA,NA,NA
+item_178,d09_08,word,outside,understands; produces,太陽,NA,sun,sun
+item_179,d09_09,word,outside,understands; produces,月亮,NA,moon,moon
+item_180,d09_10,word,outside,understands; produces,星星,NA,star,star
+item_181,d09_11,word,outside,understands; produces,房子,NA,NA,NA
+item_182,d09_12,word,outside,understands; produces,7-11(任何商店名稱),NA,NA,NA
+item_183,d09_13,word,outside,understands; produces,紅綠燈,NA,traffic light,traffic light
+item_184,d09_14,word,outside,understands; produces,公園,NA,NA,NA
+item_185,d09_15,word,outside,understands; produces,XX園(某遊樂園名稱),NA,NA,NA
+item_186,d09_16,word,outside,understands; produces,草,NA,grass,grass
+item_187,d09_17,word,outside,understands; produces,鞦韆,NA,swing,swing (object)
+item_188,d09_18,word,outside,understands; produces,翹翹板,NA,seesaw,seesaw
+item_189,d09_19,word,outside,understands; produces,醫院(診所),NA,NA,NA
+item_190,d10_01,word,games_routines,understands; produces,再見(byebye),NA,bye or bye bye,bye
+item_191,d10_02,word,games_routines,understands; produces,謝謝,NA,thank you,thank you
+item_192,d10_03,word,games_routines,understands; produces,睡覺,NA,nap,nap
+item_193,d10_04,word,games_routines,understands; produces,晚安,NA,night night,good night
+item_194,d10_05,word,games_routines,understands; produces,吃飯,NA,eat,eat
+item_195,d10_06,word,games_routines,understands; produces,洗澡,NA,bath,bath
+item_196,d10_07,word,games_routines,understands; produces,刷牙,NA,brush,brush (action)
+item_197,d10_08,word,games_routines,understands; produces,哈囉(嗨),NA,hello(hi),hello
+item_198,d10_09,word,games_routines,understands; produces,讀書(看書),NA,read,read
+item_199,d10_10,word,games_routines,understands; produces,噓/噓噓(安靜),NA,shh/shush/hush,shh
+item_200,d10_11,word,games_routines,understands; produces,換尿布,NA,change diaper,change diaper
+item_201,d10_12,word,games_routines,understands; produces,跳舞,NA,dance,dance
+item_202,d10_13,word,games_routines,understands; produces,唱歌,NA,sing,sing
+item_203,d10_14,word,games_routines,understands; produces,看電視,NA,watch TV,NA
+item_204,d10_15,word,games_routines,understands; produces,對不起,NA,sorry,sorry
+item_205,d10_16,word,games_routines,understands; produces,打電話,NA,call (on phone),call
+item_206,d10_17,word,games_routines,understands; produces,躲貓貓,NA,peekaboo,peekaboo
+item_207,d10_18,word,games_routines,understands; produces,逛街/買東西,NA,shopping,shopping
+item_208,d10_19,word,games_routines,understands; produces,玩遊戲,NA,patty cake,pattycake
+item_209,d10_20,word,games_routines,understands; produces,上廁所(尿尿、便便),NA,go potty,potty
+item_210,d10_21,word,games_routines,understands; produces,拍拍手,NA,clap,clap
+item_211,d10_22,word,games_routines,understands; produces,開車,NA,drive,drive
+item_212,d11_01,word,people,understands; produces,爸爸/爹地,NA,daddy,daddy
+item_213,d11_02,word,people,understands; produces,媽媽/媽咪,NA,mommy,mommy
+item_214,d11_03,word,people,understands; produces,姊姊,NA,elder sister,sister
+item_215,d11_04,word,people,understands; produces,奶奶,NA,grandma,grandma
+item_216,d11_05,word,people,understands; produces,哥哥,NA,elder brother,brother
+item_217,d11_06,word,people,understands; produces,爺爺,NA,grandpa,grandpa
+item_218,d11_07,word,people,understands; produces,叔叔,NA,uncle,uncle
+item_219,d11_08,word,people,understands; produces,姑姑,NA,paternal aunt,aunt
+item_220,d11_09,word,people,understands; produces,舅舅,NA,maternal uncle,uncle
+item_221,d11_10,word,people,understands; produces,阿姨(姨媽),NA,aunt,aunt
+item_222,d11_11,word,people,understands; produces,小寶寶(小貝比),NA,baby,baby
+item_223,d11_12,word,people,understands; produces,自己的名字,NA,child's own name,child's own name
+item_224,d11_13,word,people,understands; produces,妹妹,NA,younger sister,sister
+item_225,d11_14,word,people,understands; produces,弟弟,NA,younger brother,brother
+item_226,d11_15,word,people,understands; produces,外婆,NA,maternal grandmother,grandma
+item_227,d11_16,word,people,understands; produces,外公,NA,maternal grandfather,grandpa
+item_228,d11_17,word,people,understands; produces,伯伯,NA,paternal uncle,uncle
+item_229,d11_18,word,people,understands; produces,醫生,NA,doctor,doctor
+item_230,d11_19,word,people,understands; produces,小朋友,NA,child,child
+item_231,d11_20,word,people,understands; produces,褓母(奶媽),NA,babysitter,babysitter
+item_232,d11_21,word,people,understands; produces,我,NA,I,I
+item_233,d11_22,word,people,understands; produces,你,NA,you,you
+item_234,d11_23,word,people,understands; produces,我的,NA,my,my
+item_235,d11_24,word,people,understands; produces,你的,NA,your,your
+item_236,d11_25,word,people,understands; produces,他,NA,he,he
+item_237,d11_26,word,people,understands; produces,他的,NA,his,his
+item_238,d11_27,word,people,understands; produces,家人的名字,NA,family's name,family name
+item_239,d11_28,word,people,understands; produces,寵物的名字,NA,pet's name,pet's name
+item_240,d12_01,word,time_words,understands; produces,等一下,NA,wait,wait
+item_241,d12_02,word,time_words,understands; produces,開始,NA,start,start
+item_242,d12_03,word,time_words,understands; produces,晚上,NA,night,night
+item_243,d12_04,word,time_words,understands; produces,完了(結束的意思),NA,end,end
+item_244,d13_01,word,locations,understands; produces,在這裡,NA,here,here
+item_245,d13_02,word,locations,understands; produces,走開,NA,away,away
+item_246,d13_03,word,locations,understands; produces,過來,NA,come here,come
+item_247,d13_04,word,locations,understands; produces,在那裡,NA,there,there
+item_248,d13_05,word,locations,understands; produces,後面,NA,back,back (location)
+item_249,d13_06,word,locations,understands; produces,前面,NA,front,front
+item_250,d13_07,word,locations,understands; produces,外面,NA,out,out
+item_251,d13_08,word,locations,understands; produces,裡面,NA,inside/in,in
+item_252,d13_09,word,locations,understands; produces,到…某個地方,NA,to somewhere,to
+item_253,d13_10,word,locations,understands; produces,在…前面,NA,in front of,in front
+item_254,d13_11,word,locations,understands; produces,在…外面,NA,outside,outside
+item_255,d14_01,word,action_words,understands; produces,抱(抱),NA,hug,hug
+item_256,d14_02,word,action_words,understands; produces,吃,NA,eat,eat
+item_257,d14_03,word,action_words,understands; produces,不要,NA,do not,don't
+item_258,d14_04,word,action_words,understands; produces,要,NA,wanna/ want to,want
+item_259,d14_05,word,action_words,understands; produces,是/對/好,NA,yes,yes
+item_260,d14_06,word,action_words,understands; produces,打,NA,hit,hit
+item_261,d14_07,word,action_words,understands; produces,走/散步,NA,walk,walk
+item_262,d14_08,word,action_words,understands; produces,洗,NA,wash,wash
+item_263,d14_09,word,action_words,understands; produces,坐,NA,sit,sit
+item_264,d14_10,word,action_words,understands; produces,喝,NA,drink,drink (action)
+item_265,d14_11,word,action_words,understands; produces,哭,NA,cry,cry
+item_266,d14_12,word,action_words,understands; produces,拍(手),NA,clap,clap
+item_267,d14_13,word,action_words,understands; produces,看,NA,look,look
+item_268,d14_14,word,action_words,understands; produces,咬,NA,bite,bite
+item_269,d14_15,word,action_words,understands; produces,拿,NA,take,take
+item_270,d14_16,word,action_words,understands; produces,穿,NA,wear,wear
+item_271,d14_17,word,action_words,understands; produces,打開,NA,open,open (action)
+item_272,d14_18,word,action_words,understands; produces,跑,NA,run,run
+item_273,d14_19,word,action_words,understands; produces,玩,NA,play,play
+item_274,d14_20,word,action_words,understands; produces,去,NA,go,go
+item_275,d14_21,word,action_words,understands; produces,來,NA,come,come
+item_276,d14_22,word,action_words,understands; produces,親,NA,kiss,kiss
+item_277,d14_23,word,action_words,understands; produces,關,NA,close,close
+item_278,d14_24,word,action_words,understands; produces,跳,NA,jump,jump
+item_279,d14_25,word,action_words,understands; produces,騎,NA,ride,ride
+item_280,d14_26,word,action_words,understands; produces,掉,NA,drop,drop
+item_281,d14_27,word,action_words,understands; produces,不是/不對/不好,NA,not,no
+item_282,d14_28,word,action_words,understands; produces,跌倒,NA,fall,fall
+item_283,d14_29,word,action_words,understands; produces,吹,NA,blow,blow
+item_284,d14_30,word,action_words,understands; produces,擦,NA,wipe,wipe
+item_285,d14_31,word,action_words,understands; produces,好了,NA,finish,finish
+item_286,d14_32,word,action_words,understands; produces,給,NA,give,give
+item_287,d14_33,word,action_words,understands; produces,不可以/不行,NA,don't/can't,not
+item_288,d14_34,word,action_words,understands; produces,笑,NA,smile,smile
+item_289,d14_35,word,action_words,understands; produces,快點/快一點,NA,hurry,hurry
+item_290,d14_36,word,action_words,understands; produces,撿,NA,pick up,pick up
+item_291,d14_37,word,action_words,understands; produces,摸,NA,touch,touch
+item_292,d14_38,word,action_words,understands; produces,爬,NA,climb,climb
+item_293,d14_39,word,action_words,understands; produces,說話,NA,say,say
+item_294,d14_40,word,action_words,understands; produces,握手,NA,hold,hold
+item_295,d14_41,word,action_words,understands; produces,餵,NA,feed,feed
+item_296,d14_42,word,action_words,understands; produces,聽,NA,listen,listen
+item_297,d14_43,word,action_words,understands; produces,敲,NA,knock,knock
+item_298,d14_44,word,action_words,understands; produces,搖,NA,shake,shake
+item_299,d14_45,word,action_words,understands; produces,放,NA,put,put
+item_300,d14_46,word,action_words,understands; produces,拉,NA,pull,pull
+item_301,d14_47,word,action_words,understands; produces,踢,NA,kick,kick
+item_302,d14_48,word,action_words,understands; produces,碰/撞,NA,hit,hit
+item_303,d14_49,word,action_words,understands; produces,抓,NA,catch,catch
+item_304,d14_50,word,action_words,understands; produces,叫,NA,to shout,call
+item_305,d14_51,word,action_words,understands; produces,停,NA,stop,stop
+item_306,d14_52,word,action_words,understands; produces,排(東西),NA,to put in order,stand
+item_307,d14_53,word,action_words,understands; produces,按,NA,press,press
+item_308,d14_54,word,action_words,understands; produces,搔癢,NA,tickle,tickle
+item_309,d14_55,word,action_words,understands; produces,壓,NA,push,push
+item_310,d14_56,word,action_words,understands; produces,丟,NA,throw,throw
+item_311,d14_57,word,action_words,understands; produces,畫畫,NA,draw,draw
+item_312,d14_58,word,action_words,understands; produces,脫,NA,take off,take
+item_313,d14_59,word,action_words,understands; produces,牽(手),NA,hand,hand
+item_314,d15_01,word,descriptive_words,understands; produces,好熱/熱熱的,NA,hot,hot
+item_315,d15_02,word,descriptive_words,understands; produces,好燙/燙燙的,NA,very hot,hot
+item_316,d15_03,word,descriptive_words,understands; produces,好棒,NA,good,good
+item_317,d15_04,word,descriptive_words,understands; produces,好痛/痛痛的,NA,hurt,hurt (description)
+item_318,d15_05,word,descriptive_words,understands; produces,好臭/臭臭的,NA,smelly,sticky
+item_319,d15_06,word,descriptive_words,understands; produces,髒髒的/骯髒的,NA,dirty,dirty
+item_320,d15_07,word,descriptive_words,understands; produces,害怕的(好恐怖),NA,scared,scared
+item_321,d15_08,word,descriptive_words,understands; produces,暗暗的,NA,dark,dark
+item_322,d15_09,word,descriptive_words,understands; produces,亮亮的,NA,bright,bright
+item_323,d15_10,word,descriptive_words,understands; produces,濕濕的,NA,wet,wet (description)
+item_324,d15_11,word,descriptive_words,understands; produces,破了/破掉了,NA,broken,broken
+item_325,d15_12,word,descriptive_words,understands; produces,好可愛/可愛的,NA,cute,cute
+item_326,d15_13,word,descriptive_words,understands; produces,想睡覺,NA,awake,awake
+item_327,d15_14,word,descriptive_words,understands; produces,好漂亮/漂亮的,NA,pretty,pretty
+item_328,d15_15,word,descriptive_words,understands; produces,好高/高高的,NA,high,high
+item_329,d15_16,word,descriptive_words,understands; produces,口渴了/好渴,NA,thirsty,thirsty
+item_330,d15_17,word,descriptive_words,understands; produces,好冷/冷冷的,NA,cold,cold
+item_331,d15_18,word,descriptive_words,understands; produces,好香/香香的,NA,smell good,fragrant
+item_332,d15_19,word,descriptive_words,understands; produces,很好吃/好吃的,NA,yummy,yum yum
+item_333,d15_20,word,descriptive_words,understands; produces,餓了/好餓,NA,hungry,hungry
+item_334,d15_21,word,descriptive_words,understands; produces,飽了/好飽,NA,full,full
+item_335,d15_22,word,descriptive_words,understands; produces,小心,NA,careful,careful
+item_336,d15_23,word,descriptive_words,understands; produces,壞的,NA,bad,bad
+item_337,d15_24,word,descriptive_words,understands; produces,甜甜的,NA,sweet,sweet
+item_338,d15_25,word,descriptive_words,understands; produces,睡著了,NA,sleepy,sleepy
+item_339,d15_26,word,descriptive_words,understands; produces,快樂的/高興的,NA,happy,happy
+item_340,d15_27,word,descriptive_words,understands; produces,乾淨的,NA,clean,clean (description)
+item_341,d15_28,word,descriptive_words,understands; produces,空空的,NA,empty,empty
+item_342,d15_29,word,descriptive_words,understands; produces,不乖,NA,naughty,naughty
+item_343,d16_01,word,pronouns,understands; produces,這個,NA,NA,this
+item_344,d16_02,word,pronouns,understands; produces,一個(二、三個…),NA,NA,one
+item_345,d16_03,word,pronouns,understands; produces,好多,NA,NA,many
+item_346,d16_04,word,pronouns,understands; produces,沒半個/沒有,NA,NA,none
+item_347,d16_05,word,pronouns,understands; produces,還有,NA,NA,also
+item_348,d16_06,word,pronouns,understands; produces,那個,NA,NA,that
+item_349,d17_01,word,question_words,understands; produces,什麼？,NA,what,what
+item_350,d17_02,word,question_words,understands; produces,哪裡？,NA,where,where (question)
+item_351,d17_03,word,question_words,understands; produces,哪一個？,NA,which,which (question)
+item_352,d17_04,word,question_words,understands; produces,誰？,NA,who,who
+item_353,d17_05,word,question_words,understands; produces,怎麼(辦)？,NA,how,how
+item_354,d17_06,word,question_words,understands; produces,咦？,NA,why,why
+item_159,d08_05,word,furniture_rooms,understands; produces,冰箱,NA,refrigerator,refrigerator
+item_177,d09_07,word,outside,understands; produces,家,NA,home,home
+item_181,d09_11,word,outside,understands; produces,房子,NA,house,house
+item_182,d09_12,word,outside,understands; produces,7-11(任何商店名稱),NA,store,store
+item_184,d09_14,word,outside,understands; produces,公園,NA,park,park
+item_185,d09_15,word,outside,understands; produces,XX園(某遊樂園名稱),NA,playground,playground
+item_189,d09_19,word,outside,understands; produces,醫院(診所),NA,clinic,hospital
+item_343,d16_01,word,pronouns,understands; produces,這個,NA,this,this
+item_344,d16_02,word,pronouns,understands; produces,一個(二、三個…),NA,"one (two, three...)",one
+item_345,d16_03,word,pronouns,understands; produces,好多,NA,much,many
+item_346,d16_04,word,pronouns,understands; produces,沒半個/沒有,NA,none,none
+item_347,d16_05,word,pronouns,understands; produces,還有,NA,furthermore,also
+item_348,d16_06,word,pronouns,understands; produces,那個,NA,that,that

@@ -1,755 +1,755 @@
-itemID,item,type,choices,category,definition,gloss,complexity_category,uni_lemma
-item_1,"a""ie",word,produces,sounds,aïe,Ouch,,ouch
-item_2,b^e^e^e_b^e^e^e,word,produces,sounds,bêêê bêêê,baaaah baaaah,,baa baa
-item_3,cocorico,word,produces,sounds,cocorico,cockledoodledoo,,cockadoodledoo
-item_4,coin_coin,word,produces,sounds,coin coin,quack quack,,quack quack
-item_5,grr,word,produces,sounds,grr,grr,,grrr
-item_6,miam_miam,word,produces,sounds,miam miam,yum yum,,yum yum
-item_7,miaou,word,produces,sounds,miaou,meow,,meow
-item_8,meuh,word,produces,sounds,meuh,moo,,moo
-item_9,oh_oh,word,produces,sounds,oh oh,Oh oh,,uh oh
-item_10,tchou_tchou,word,produces,sounds,tchou tchou,Choo Choo,,choo choo
-item_11,vroum,word,produces,sounds,vroum,vroom,,vroom
-item_12,wouf_wouf,word,produces,sounds,wouf wouf,woof woof,,woof woof
-item_13,abeille,word,produces,animals,abeille,bee,,bee
-item_14,agneau,word,produces,animals,agneau,lamb,,lamb
-item_15,alligator/croco,word,produces,animals,alligator/crocodile,alligator / crocodile,,crocodile
-item_16,^ane,word,produces,animals,âne,donkey,,donkey
-item_17,animal,word,produces,animals,animal,animal,,animal
-item_18,bibitte,word,produces,animals,bibitte,bug,,bug
-item_19,canard,word,produces,animals,canard,duck,,duck
-item_20,chat,word,produces,animals,chat,cat,,cat
-item_21,cheval,word,produces,animals,cheval,horse,,horse
-item_22,chevreuil,word,produces,animals,chevreuil,roe deer,,deer
-item_23,chien,word,produces,animals,chien,dog,,dog
-item_24,cochon,word,produces,animals,cochon,pig,,pig
-item_25,coq,word,produces,animals,coq,cock,,rooster
-item_26,dinde,word,produces,animals,dinde,turkey,,turkey
-item_27,'ecureuil,word,produces,animals,écureuil,squirrel,,squirrel
-item_28,'el'ephant,word,produces,animals,éléphant,elephant,,elephant
-item_29,fourmi,word,produces,animals,fourmi,ant,,ant
-item_30,girafe,word,produces,animals,girafe,giraffe,,giraffe
-item_31,grenouille,word,produces,animals,grenouille,frog,,frog
-item_32,hibou,word,produces,animals,hibou,owl,,owl
-item_33,lapin,word,produces,animals,lapin,rabbit,,bunny
-item_34,lion,word,produces,animals,lion,Lion,,lion
-item_35,loup,word,produces,animals,loup,wolf,,wolf
-item_36,mouton,word,produces,animals,mouton,sheep,,sheep
-item_37,oie,word,produces,animals,oie,goose,,goose
-item_38,oiseau,word,produces,animals,oiseau,bird,,bird
-item_39,orignal,word,produces,animals,orignal,moose,,moose
-item_40,ours,word,produces,animals,ours,bear,,bear
-item_41,ourson/nounours,word,produces,animals,ourson/nounours,Bear / Teddy,,teddybear
-item_42,panda,word,produces,animals,panda,panda,,panda
-item_43,papillon,word,produces,animals,papillon,butterfly,,butterfly
-item_44,pingouin,word,produces,animals,pingouin,Penguin,,penguin
-item_45,poisson_(animal,word,produces,animals,poisson (animal),fish,,fish (animal)
-item_46,poule,word,produces,animals,poule,hen,,chicken (animal)
-item_47,poulet_(animal),word,produces,animals,poulet (animal),chicken,,chicken (animal)
-item_48,singe,word,produces,animals,singe,monkey,,monkey
-item_49,souris,word,produces,animals,souris,mouse,,mouse
-item_50,tigre,word,produces,animals,tigre,tiger,,tiger
-item_51,tortue,word,produces,animals,tortue,tortoise,,turtle
-item_52,vache,word,produces,animals,vache,cow,,cow
-item_53,z`ebre,word,produces,animals,zèbre,zebra,,zebra
-item_54,auto,word,produces,vehicles,auto,auto,,car
-item_55,autobus,word,produces,vehicles,autobus,bus,,bus
-item_56,avion,word,produces,vehicles,avion,plane,,airplane
-item_57,bateau,word,produces,vehicles,bateau,boat,,boat
-item_58,bicyclette,word,produces,vehicles,bicyclette,bicycle,,bicycle
-item_59,camion,word,produces,vehicles,camion,truck,,truck
-item_60,camion_de_pompi,word,produces,vehicles,camion de pompier,fire truck,,firetruck
-item_61,h'elicopt`ere,word,produces,vehicles,hélicoptère,helicopter,,helicopter
-item_62,moto,word,produces,vehicles,moto,motorbike,,motorcycle
-item_63,poussette,word,produces,vehicles,poussette,stroller,,stroller
-item_64,tracteur,word,produces,vehicles,tracteur,tractor,,tractor
-item_65,train,word,produces,vehicles,train,train,,train
-item_66,tra^ineau,word,produces,vehicles,traîneau,sled,,sled
-item_67,tricycle,word,produces,vehicles,tricycle,tricycle,,tricycle
-item_68,balle,word,produces,toys,balle,ball,,ball
-item_69,ballon,word,produces,toys,ballon,ball,,ball
-item_70,b^aton1,word,produces,toys,bâton,stick,,
-item_71,bloc,word,produces,toys,bloc,block,,block
-item_72,bulles,word,produces,toys,bulles,bubbles,,bubbles
-item_73,cadeau,word,produces,toys,cadeau,gift,,present
-item_74,casse-t^ete,word,produces,toys,casse-tête,brain teaser,,puzzle
-item_75,colle,word,produces,toys,colle,glue,,glue
-item_76,craie,word,produces,toys,craie,chalk,,chalk
-item_77,crayon,word,produces,toys,crayon,pencil,,pen/pencil
-item_78,crayon_de_coule,word,produces,toys,crayon de couleur,colored pencil,,colored pencil
-item_79,histoire,word,produces,toys,histoire,history,,story
-item_80,jeu,word,produces,toys,jeu,game,,game
-item_81,jouet,word,produces,toys,jouet,toy,,toy (object)
-item_82,lego,word,produces,toys,lego,lego,,lego
-item_83,livre,word,produces,toys,livre,book,,book
-item_84,p^ate_`a_modele,word,produces,toys,pâte à modeler,plasticine,,play dough
-item_85,poup'ee,word,produces,toys,poupée,doll,,doll
-item_86,stylo,word,produces,toys,stylo,pen,,pen/pencil
-item_87,toutou,word,produces,toys,toutou,doggie,,teddybear
-item_88,banane,word,produces,food_drink,banane,banana,,banana
-item_89,beigne,word,produces,food_drink,beigne,donut,,donut
-item_90,beurre,word,produces,food_drink,beurre,butter,,butter
-item_91,beurre_de_pinot,word,produces,food_drink,beurre de pinotte/d'arachide,pinotte butter / peanut,,peanut butter
-item_92,biscuit,word,produces,food_drink,biscuit,biscuit,,cookie
-item_93,biscuit_soda,word,produces,food_drink,biscuit soda,soda biscuit,,cracker
-item_94,bl'e_d'inde,word,produces,food_drink,blé d'inde,Corn,,
-item_95,bonbon,word,produces,food_drink,bonbon,candy,,candy
-item_96,caf'e,word,produces,food_drink,café,coffee,,coffee
-item_97,carotte,word,produces,food_drink,carotte,carrot,,carrots
-item_98,c'er'eales,word,produces,food_drink,céréales,cereals,,cereal
-item_99,cheerios,word,produces,food_drink,cheerios,cheerios,,cheerios
-item_100,chips,word,produces,food_drink,chips,chips,,chips
-item_101,chocolat,word,produces,food_drink,chocolat,chocolate,,chocolate
-item_102,citrouille,word,produces,food_drink,citrouille,pumpkin,,pumpkin
-item_103,coke,word,produces,food_drink,coke,coke,,coke
-item_104,compote_de_pomm,word,produces,food_drink,compote de pommes,applesauce,,compote
-item_105,confiture,word,produces,food_drink,confiture,jam,,jam
-item_106,cornichon,word,produces,food_drink,cornichon,pickle,,cucumber
-item_107,cr`eme_glac'ee,word,produces,food_drink,crème glacée,ice cream,,ice cream
-item_108,cr^epe,word,produces,food_drink,crêpe,crepe,,
-item_109,eau_(beverage),word,produces,food_drink,eau (beverage),water,,water (beverage)
-item_110,fraise,word,produces,food_drink,fraise,strawberry,,strawberry
-item_111,fromage,word,produces,food_drink,fromage,cheese,,cheese
-item_112,g^ateau,word,produces,food_drink,gâteau,Cake,,cake
-item_113,glace,word,produces,food_drink,glace,ice,,ice cream
-item_114,gomme,word,produces,food_drink,gomme,gum,,
-item_115,hamburger,word,produces,food_drink,hamburger,Hamburger,,hamburger
-item_116,haricot,word,produces,food_drink,haricot,bean,,beans
-item_117,jello,word,produces,food_drink,jello,jello,,jello
-item_118,jus,word,produces,food_drink,jus,juice,,juice
-item_119,lait,word,produces,food_drink,lait,milk,,milk
-item_120,melon,word,produces,food_drink,melon,melon,,melon
-item_121,muffin,word,produces,food_drink,muffin,muffin,,muffin
-item_122,noix,word,produces,food_drink,noix,nuts,,
-item_123,nouilles/p^ates,word,produces,food_drink,nouilles/pâtes,noodles / pasta,,pasta
-item_124,nourriture,word,produces,food_drink,nourriture,food,,food
-item_125,oeuf,word,produces,food_drink,oeuf,egg,,egg
-item_126,orange1,word,produces,food_drink,orange,orange,,
-item_127,pain,word,produces,food_drink,pain,bread,,bread
-item_128,patate,word,produces,food_drink,patate,potato,,potato
-item_129,patate_frite,word,produces,food_drink,patate frite,fried potato,,french fries
-item_130,pizza,word,produces,food_drink,pizza,Pizza,,pizza
-item_131,pois,word,produces,food_drink,pois,peas,,peas
-item_132,poisson_(food),word,produces,food_drink,poisson (food),fish,,fish (food)
-item_133,pomme,word,produces,food_drink,pomme,apple,,apple
-item_134,popcorn,word,produces,food_drink,popcorn,pop corn,,popcorn
-item_135,popsicle,word,produces,food_drink,popsicle,popsicle,,popsicle
-item_136,pouding,word,produces,food_drink,pouding,pudding,,pudding
-item_137,poulet_(food),word,produces,food_drink,poulet (food),chicken,,chicken (food)
-item_138,raisin,word,produces,food_drink,raisin,grapes,,grapes
-item_139,raisin_sec,word,produces,food_drink,raisin sec,raisin,,raisin
-item_140,sandwich,word,produces,food_drink,sandwich,sandwich,,sandwich
-item_141,sauce,word,produces,food_drink,sauce,sauce,,sauce
-item_142,sel,word,produces,food_drink,sel,salt,,salt
-item_143,soupe,word,produces,food_drink,soupe,soup,,soup
-item_144,spaghetti,word,produces,food_drink,spaghetti,spaghetti,,pasta
-item_145,sucon,word,produces,food_drink,suçon,lollipop,,lollipop
-item_146,thon,word,produces,food_drink,thon,tuna,,tuna
-item_147,toast,word,produces,food_drink,toast,toast,,toast
-item_148,vanille,word,produces,food_drink,vanille,vanilla,,vanilla
-item_149,viande,word,produces,food_drink,viande,meat,,meat
-item_150,vitamine,word,produces,food_drink,vitamine,vitamin,,vitamins
-item_151,yogourt,word,produces,food_drink,yogourt,yogurt,,yogurt
-item_152,bas,word,produces,clothing,bas,low,,sock
-item_153,bavette,word,produces,clothing,bavette,bib,,bib
-item_154,bottes,word,produces,clothing,bottes,boots,,boots
-item_155,bouton,word,produces,clothing,bouton,button,,button
-item_156,ceinture,word,produces,clothing,ceinture,belt,,belt
-item_157,chandail,word,produces,clothing,chandail,sweater,,sweater
-item_158,chapeau,word,produces,clothing,chapeau,hat,,hat
-item_159,chemise,word,produces,clothing,chemise,shirt,,shirt
-item_160,collants,word,produces,clothing,collants,tights,,tights
-item_161,collier,word,produces,clothing,collier,necklace,,necklace
-item_162,couche,word,produces,clothing,couche,layer,,diaper
-item_163,espadrille,word,produces,clothing,espadrille,sandal,,sandals
-item_164,foulard,word,produces,clothing,foulard,scarf,,scarf
-item_165,gants,word,produces,clothing,gants,gloves,,gloves
-item_166,habit_de_neige,word,produces,clothing,habit de neige,snowsuit,,snowsuit
-item_167,jeans,word,produces,clothing,jeans,jeans,,jeans
-item_168,manteau,word,produces,clothing,manteau,coat,,coat
-item_169,mitaine,word,produces,clothing,mitaine,mitt,,mittens
-item_170,pantalons,word,produces,clothing,pantalons,pants,,pants
-item_171,pantoufle,word,produces,clothing,pantoufle,slipper,,slipper
-item_172,perles/boules,word,produces,clothing,perles/boules,beads / balls,,beads
-item_173,petite_culotte,word,produces,clothing,petite culotte,panties,,underpants
-item_174,pyjama,word,produces,clothing,pyjama,pajamas,,pajamas
-item_175,robe,word,produces,clothing,robe,dress,,dress (object)
-item_176,shorts,word,produces,clothing,shorts,shorts,,shorts
-item_177,soulier,word,produces,clothing,soulier,shoe,,shoe
-item_178,zip/fermeture_',word,produces,clothing,zip/fermeture éclair,zip / zipper,,zipper
-item_179,bedaine/ventre,word,produces,body_parts,bedaine/ventre,belly / belly,,tummy
-item_180,bobo,word,produces,body_parts,bobo,hurts,,owie
-item_181,bouche,word,produces,body_parts,bouche,mouth,,mouth
-item_182,bras,word,produces,body_parts,bras,arms,,arm
-item_183,cheveux,word,produces,body_parts,cheveux,hair,,hair
-item_184,dent,word,produces,body_parts,dent,tooth,,tooth
-item_185,doigt,word,produces,body_parts,doigt,finger,,finger
-item_186,'epaule,word,produces,body_parts,épaule,shoulder,,shoulder
-item_187,fesses,word,produces,body_parts,fesses,buttocks,,butt
-item_188,genou,word,produces,body_parts,genou,knee,,knee
-item_189,jambe,word,produces,body_parts,jambe,leg,,leg
-item_190,joue,word,produces,body_parts,joue,cheek,,cheek
-item_191,langue,word,produces,body_parts,langue,tongue,,tongue
-item_192,l`evres,word,produces,body_parts,lèvres,lips,,lips
-item_193,main,word,produces,body_parts,main,hand,,hand
-item_194,menton,word,produces,body_parts,menton,chin,,chin
-item_195,moustache,word,produces,body_parts,moustache,mustache,,mustache
-item_196,nez,word,produces,body_parts,nez,nose,,nose
-item_197,nombril,word,produces,body_parts,nombril,belly button,,belly button
-item_198,oreille,word,produces,body_parts,oreille,hear,,ear
-item_199,orteil,word,produces,body_parts,orteil,toe,,toe
-item_200,p'enis,word,produces,body_parts,pénis,penis,,penis
-item_201,pied,word,produces,body_parts,pied,foot,,foot
-item_202,t^ete,word,produces,body_parts,tête,head,,head
-item_203,vagin_vulve,word,produces,body_parts,vagin vulve,vagina,,vagina
-item_204,visage,word,produces,body_parts,visage,face,,face
-item_205,yeux,word,produces,body_parts,yeux,eyes,,eye
-item_206,argent,word,produces,household,argent,money,,money
-item_207,aspirateur,word,produces,household,aspirateur,vacuum,,vacuum
-item_208,assiette,word,produces,household,assiette,plate,,plate
-item_209,balai,word,produces,household,balai,broom,,broom
-item_210,bo^ite,word,produces,household,boîte,box,,box
-item_211,bol,word,produces,household,bol,bowl,,bowl
-item_212,bouteille,word,produces,household,bouteille,bottle,,bottle
-item_213,brosse,word,produces,household,brosse,brush,,brush (object)
-item_214,brosse_`a_dents,word,produces,household,brosse à dents,toothbrush,,toothbrush
-item_215,cam'era,word,produces,household,caméra,camera,,camera
-item_216,ciseaux,word,produces,household,ciseaux,scissors,,scissors
-item_217,cl'es,word,produces,household,clés,keys,,keys
-item_218,clou,word,produces,household,clou,nail,,nail (object)
-item_219,couteau,word,produces,household,couteau,knife,,knife
-item_220,couverte/couver,word,produces,household,couverte/couverture,blanket,,blanket
-item_221,cuill`ere,word,produces,household,cuillère,spoon,,spoon
-item_222,fourchette,word,produces,household,fourchette,fork,,fork
-item_223,horloge,word,produces,household,horloge,clock,,clock
-item_224,image,word,produces,household,image,picture,,picture
-item_225,lampe,word,produces,household,lampe,lamp,,lamp
-item_226,lumi`ere,word,produces,household,lumière,light,,light
-item_227,lunettes,word,produces,household,lunettes,glasses,,glasses
-item_228,marteau,word,produces,household,marteau,hammer,,hammer
-item_229,m'edicament,word,produces,household,médicament,drug,,medicine
-item_230,montre,word,produces,household,montre,watch,,watch (object)
-item_231,mouchoir/kleene,word,produces,household,mouchoir/kleenex,handkerchief / Kleenex,,tissue
-item_232,oreiller,word,produces,household,oreiller,pillow,,pillow
-item_233,panier,word,produces,household,panier,basket,,basket
-item_234,papier,word,produces,household,papier,paper,,paper
-item_235,peigne,word,produces,household,peigne,comb,,comb (object)
-item_236,photo,word,produces,household,photo,Photo,,photos
-item_237,plante,word,produces,household,plante,plant,,plant
-item_238,plat,word,produces,household,plat,dish,,dish
-item_239,pot1,word,produces,household,pot,pot,,
-item_240,poubelle,word,produces,household,poubelle,trash can,,
-item_241,radio,word,produces,household,radio,radio,,radio
-item_242,ruban,word,produces,household,ruban,ribbon,,
-item_243,sacoche/sac_`a_,word,produces,household,sacoche/sac à main,bag / purse,,purse
-item_244,savon,word,produces,household,savon,soap,,soap
-item_245,seau,word,produces,household,seau,bucket,,bucket
-item_246,serviette,word,produces,household,serviette,towel,,towel
-item_247,serviette_de_ta,word,produces,household,serviette de table,table napkin,,napkin
-item_248,sou,word,produces,household,sou,Sun,,penny
-item_249,tasse,word,produces,household,tasse,Cup,,cup
-item_250,t'el'ephone,word,produces,household,téléphone,phone,,telephone
-item_251,verre,word,produces,household,verre,glass,,glass
-item_252,vidanges,word,produces,household,vidanges,sewage,,trash
-item_253,bain_(object),word,produces,furniture_rooms,bain (object),bath,,bathtub
-item_254,banc,word,produces,furniture_rooms,banc,bench,,bench
-item_255,bassinette/berc,word,produces,furniture_rooms,bassinette/berceau,bassinet / cradle,,crib
-item_256,chaise,word,produces,furniture_rooms,chaise,chair,,chair
-item_257,chaise_bercante,word,produces,furniture_rooms,chaise berçante,rocking chair,,rocking chair
-item_258,chaise_haute,word,produces,furniture_rooms,chaise haute,high chair,,high chair
-item_259,chambre,word,produces,furniture_rooms,chambre,bedroom,,bedroom
-item_260,cuisine,word,produces,furniture_rooms,cuisine,kitchen room,,kitchen
-item_261,divan/sofa,word,produces,furniture_rooms,divan/sofa,couch / sofa,,couch
-item_262,douche,word,produces,furniture_rooms,douche,shower,,shower
-item_263,entr'ee,word,produces,furniture_rooms,entrée,Entrance,,
-item_264,escalier,word,produces,furniture_rooms,escalier,staircase,,stairs
-item_265,'evier/lavabo,word,produces,furniture_rooms,évier/lavabo,sink / sink,,sink
-item_266,fen^etre,word,produces,furniture_rooms,fenêtre,window,,window
-item_267,four,word,produces,furniture_rooms,four,oven,,oven
-item_268,foyer,word,produces,furniture_rooms,foyer,home,,home
-item_269,frigidaire/frig,word,produces,furniture_rooms,frigidaire/frigo,fridge / refrigerator,,refrigerator
-item_270,garage,word,produces,furniture_rooms,garage,garage,,garage
-item_271,garde-robe,word,produces,furniture_rooms,garde-robe,wardrobe,,wardrobe
-item_272,laveuse,word,produces,furniture_rooms,laveuse,washer,,washing machine
-item_273,lit,word,produces,furniture_rooms,lit,bed,,bed
-item_274,marche,word,produces,furniture_rooms,marche,market,,step
-item_275,parc_(d'enfant),word,produces,furniture_rooms,parc (d'enfant),Park (for children),,play pen
-item_276,pi`ece,word,produces,furniture_rooms,pièce,piece,,room
-item_277,po^ele,word,produces,furniture_rooms,poêle,stove,,stove
-item_278,porte,word,produces,furniture_rooms,porte,door,,door
-item_279,pot2,word,produces,furniture_rooms,pot,pot,,
-item_280,salle_de_bain/t,word,produces,furniture_rooms,salle de bain/toilette,bathroom / toilet,,bathroom
-item_281,salon,word,produces,furniture_rooms,salon,living room,,living room
-item_282,s'echeuse,word,produces,furniture_rooms,sécheuse,dryer,,dryer
-item_283,sous-sol,word,produces,furniture_rooms,sous-sol,subsoil,,basement
-item_284,table,word,produces,furniture_rooms,table,table,,table
-item_285,t'el'evision,word,produces,furniture_rooms,télévision,television,,tv
-item_286,tiroir,word,produces,furniture_rooms,tiroir,drawer,,drawer
-item_287,arbre,word,produces,outside,arbre,tree,,tree
-item_288,arrosoir,word,produces,outside,arrosoir,watering can,,
-item_289,balancoire,word,produces,outside,balançoire,swing,,swing (object)
-item_290,b^aton2,word,produces,outside,bâton,stick,,
-item_291,bonhomme_de_nei,word,produces,outside,bonhomme de neige,snowman,,snowman
-item_292,ciel,word,produces,outside,ciel,sky,,sky
-item_293,cour,word,produces,outside,cour,court,,yard
-item_294,drapeau,word,produces,outside,drapeau,flag,,flag
-item_295,eau_(not_bevera,word,produces,outside,eau (not beverage),water,,water (not beverage)
-item_296,'echelle,word,produces,outside,échelle,ladder,,ladder
-item_297,'etoile,word,produces,outside,étoile,star,,star
-item_298,fleur,word,produces,outside,fleur,flower,,flower
-item_299,gazon,word,produces,outside,gazon,grass,,grass
-item_300,glissoire,word,produces,outside,glissoire,slide,,slide (object)
-item_301,jardin,word,produces,outside,jardin,garden,,garden
-item_302,lune,word,produces,outside,lune,Moon,,moon
-item_303,neige,word,produces,outside,neige,snow,,snow
-item_304,nuage,word,produces,outside,nuage,cloud,,cloud
-item_305,pelle,word,produces,outside,pelle,shovel,,shovel
-item_306,pierre,word,produces,outside,pierre,rock,,stone
-item_307,piscine,word,produces,outside,piscine,swimming pool,,pool
-item_308,pluie,word,produces,outside,pluie,rain,,rain
-item_309,roche,word,produces,outside,roche,rock,,rock (object)
-item_310,roue,word,produces,outside,roue,wheel,,wheel
-item_311,rue,word,produces,outside,rue,street,,street
-item_312,sable,word,produces,outside,sable,sand,,sand
-item_313,soleil,word,produces,outside,soleil,Sun,,sun
-item_314,toit,word,produces,outside,toit,roof,,roof
-item_315,tondeuse,word,produces,outside,tondeuse,mower,,lawn mower
-item_316,trottoir,word,produces,outside,trottoir,pavement,,sidewalk
-item_317,tuyau/boyau,word,produces,outside,tuyau/boyau,pipe / hose,,pipe
-item_318,vent,word,produces,outside,vent,wind,,wind
-item_319,v'eranda/balcon,word,produces,outside,véranda/balcon,verandah / balcony,,balcony
-item_320,campagne,word,produces,places,campagne,campaign,,country
-item_321,camping,word,produces,places,camping,camping,,camping
-item_322,chez_nous,word,produces,places,chez nous,home,,
-item_323,cirque,word,produces,places,cirque,circus,,circus
-item_324,dehors,word,produces,places,dehors,outside,,outside
-item_325,'ecole,word,produces,places,école,school,,school
-item_326,'eglise,word,produces,places,église,church,,church
-item_327,ferme,word,produces,places,ferme,closed,,farm
-item_328,f^ete,word,produces,places,fête,Party,,party
-item_329,for^et,word,produces,places,forêt,forest,,
-item_330,garage_(essence,word,produces,places,garage (essence),Garage (petrol),,garage
-item_331,magasin,word,produces,places,magasin,shop,,store
-item_332,maison,word,produces,places,maison,House,,house
-item_333,parc,word,produces,places,parc,Park,,park
-item_334,pique-nique,word,produces,places,pique-nique,picnic,,picnic
-item_335,plage,word,produces,places,plage,beach,,beach
-item_336,terrain_de_jeu,word,produces,places,terrain de jeu,playing field,,playground
-item_337,travail/bureau,word,produces,places,travail/bureau,work / office,,work (place)
-item_338,zoo,word,produces,places,zoo,zoo,,zoo
-item_339,ami,word,produces,people,ami,friend,,friend
-item_340,b'eb'e,word,produces,people,bébé,baby,,baby
-item_341,bonhomme,word,produces,people,bonhomme,fellow,,
-item_342,clown,word,produces,people,clown,clown,,clown
-item_343,cowboy,word,produces,people,cowboy,cowboy,,cowboy
-item_344,docteur,word,produces,people,docteur,doctor,,doctor
-item_345,enfant,word,produces,people,enfant,child,,child
-item_346,facteur,word,produces,people,facteur,postman,,mailman
-item_347,fille,word,produces,people,fille,girl,,girl
-item_348,fr`ere,word,produces,people,frère,brother,,brother
-item_349,garcon,word,produces,people,garçon,boy,,boy
-item_350,gardienne,word,produces,people,gardienne,guardian,,babysitter
-item_351,gens/monde,word,produces,people,gens/monde,people / world,,people
-item_352,grand-maman,word,produces,people,grand-maman,grandma,,grandma
-item_353,grand-papa,word,produces,people,grand-papa,Grandpa,,grandpa
-item_354,madame,word,produces,people,madame,Mrs,,lady
-item_355,maman,word,produces,people,maman,mom,,mommy
-item_356,monsieur,word,produces,people,monsieur,gentleman,,man
-item_357,nom_animal_dome,word,produces,people,nom animal domestique,pet name,,pet's name
-item_358,nom_gardien(ne),word,produces,people,nom gardien(ne),guardian name,,babysitter's name
-item_359,oncle/mononcle,word,produces,people,oncle/mononcle,uncle / my uncle,,uncle
-item_360,papa,word,produces,people,papa,dad,,daddy
-item_361,personne,word,produces,people,personne,no one,,person
-item_362,police,word,produces,people,police,police,,police
-item_363,pompier,word,produces,people,pompier,firefighter,,firefighter
-item_364,professeur(e),word,produces,people,professeur(e),Professor,,teacher
-item_365,soeur,word,produces,people,sœur,sister,,sister
-item_366,son_propre_nom,word,produces,people,son propre nom,his/her own name,,child's own name
-item_367,tante/matante,word,produces,people,tante/matante,aunt / aunt,,aunt
-item_368,aller_au_magasi,word,produces,games_routines,aller au magasin,go to the store,,
-item_369,all^o,word,produces,games_routines,allô,Hello,,hello
-item_370,bain_(routine),word,produces,games_routines,bain (routine),Bath,,bath
-item_371,bonjour,word,produces,games_routines,bonjour,Hello,,hi
-item_372,bonne_nuit,word,produces,games_routines,bonne nuit,good night,,good night
-item_373,bravo,word,produces,games_routines,bravo,Bravo,,bravo
-item_374,bye/au_revoir,word,produces,games_routines,bye/au revoir,bye / bye,,bye
-item_375,chut,word,produces,games_routines,chut,hush,,shh
-item_376,collation,word,produces,games_routines,collation,sorting,,snack
-item_377,coucou,word,produces,games_routines,coucou,Hello,,peekaboo
-item_378,d'ejeuner,word,produces,games_routines,déjeuner,lunch,,lunch
-item_379,d^iner,word,produces,games_routines,dîner,having dinner,,dinner
-item_380,dodo,word,produces,games_routines,dodo,nap,,nap
-item_381,donne_moi/tape_,word,produces,games_routines,donne moi/tape dedans,gives me / tape in,,
-item_382,faire_caca/fair,word,produces,games_routines,faire caca/faire pipi,poop / pee,,go potty
-item_383,faire_le_tour_d,word,produces,games_routines,faire le tour de la maison,go around the house,,go around the house
-item_384,gros_comme_ca,word,produces,games_routines,gros comme ça,this big,,
-item_385,je_te_tiens_par,word,produces,games_routines,je te tiens par la barbichette,I hold you by the goatee,,
-item_386,j'vais_t'attrap,word,produces,games_routines,j'vais t'attraper,I'm gonna catch you,,gonna get you
-item_387,menouche_menouc,word,produces,games_routines,menouche menouche,menouche menouche,,
-item_388,merci,word,produces,games_routines,merci,thank you,,thank you
-item_389,non,word,produces,games_routines,non,no,,no
-item_390,okay,word,produces,games_routines,okay,okay,,ok
-item_391,oui,word,produces,games_routines,oui,Yes,,yes
-item_392,parler_(au_t'el,word,produces,games_routines,parler (au téléphone),talk (on the phone),,call on phone
-item_393,retourne-toi,word,produces,games_routines,retourne-toi,turn around,,turn around
-item_394,s'il-vous-pla^i,word,produces,games_routines,s'il-vous-plaît,please,,please
-item_395,souper,word,produces,games_routines,souper,supper,,dinner
-item_396,tape_tape,word,produces,games_routines,tape tape,tape tape,,pattycake
-item_397,acheter,word,produces,action_words,acheter,buy,,buy
-item_398,aider,word,produces,action_words,aider,help,,help
-item_399,aimer1,word,produces,action_words,aimer,like,,love
-item_400,aller,word,produces,action_words,aller,go,,go
-item_401,allumer,word,produces,action_words,allumer,light up,,turn on
-item_402,amener,word,produces,action_words,amener,lead,,bring
-item_403,applaudir,word,produces,action_words,applaudir,applaud,,
-item_404,apporter,word,produces,action_words,apporter,to bring,,bring
-item_405,arr^eter,word,produces,action_words,arrêter,Stop,,stop
-item_406,arroser,word,produces,action_words,arroser,water,,splash
-item_407,asseoir,word,produces,action_words,asseoir,seat,,sit
-item_408,attacher,word,produces,action_words,attacher,to attach,,attach
-item_409,attendre,word,produces,action_words,attendre,expect,,wait
-item_410,attraper,word,produces,action_words,attraper,to catch,,catch
-item_411,avoir,word,produces,action_words,avoir,to have,,have
-item_412,balancer,word,produces,action_words,balancer,swing,,swing (action)
-item_413,balayer,word,produces,action_words,balayer,sweep,,sweep
-item_414,bercer,word,produces,action_words,bercer,rock,,rock (action)
-item_415,boire,word,produces,action_words,boire,to drink,,drink (action)
-item_416,brasser,word,produces,action_words,brasser,brew,,stir
-item_417,briser/casser,word,produces,action_words,briser/casser,break / break,,break
-item_418,brosser,word,produces,action_words,brosser,brush,,brush (action)
-item_419,cacher,word,produces,action_words,cacher,hide,,hide
-item_420,chanter,word,produces,action_words,chanter,sing,,sing
-item_421,chatouiller,word,produces,action_words,chatouiller,tickle,,tickle
-item_422,chercher,word,produces,action_words,chercher,look for,,look for
-item_423,choisir,word,produces,action_words,choisir,to choose,,choose
-item_424,cogner_(`a),word,produces,action_words,cogner (à),knock (at),,bang
-item_425,coller,word,produces,action_words,coller,paste,,glue
-item_426,conduire,word,produces,action_words,conduire,drive,,drive
-item_427,construire/b^at,word,produces,action_words,construire/bâtir,construct / build,,build
-item_428,couper,word,produces,action_words,couper,cut,,cut
-item_429,courir,word,produces,action_words,courir,run,,run
-item_430,couvrir,word,produces,action_words,couvrir,cover,,cover
-item_431,cracher,word,produces,action_words,cracher,to spit,,spit
-item_432,danser,word,produces,action_words,danser,dance,,dance
-item_433,d'ebarquer,word,produces,action_words,débarquer,land,,get off
-item_434,d'echirer,word,produces,action_words,déchirer,tear,,tear
-item_435,descendre,word,produces,action_words,descendre,go down,,get off
-item_436,dessiner,word,produces,action_words,dessiner,draw,,draw
-item_437,dire,word,produces,action_words,dire,say,,say
-item_438,donner,word,produces,action_words,donner,give,,give
-item_439,dormir,word,produces,action_words,dormir,to sleep,,sleep
-item_440,'echapper,word,produces,action_words,échapper,escape,,
-item_441,'ecouter,word,produces,action_words,écouter,listen,,listen
-item_442,'ecrire,word,produces,action_words,écrire,to write,,write
-item_443,embarquer,word,produces,action_words,embarquer,embark,,get on
-item_444,embrasser,word,produces,action_words,embrasser,to kiss,,kiss
-item_445,enlever,word,produces,action_words,enlever,to take off,,take off
-item_446,entendre,word,produces,action_words,entendre,hear,,hear
-item_447,essayer,word,produces,action_words,essayer,try,,try
-item_448,essuyer,word,produces,action_words,essuyer,wipe,,wipe
-item_449,^etre,word,produces,action_words,être,be,,be
-item_450,faire,word,produces,action_words,faire,make,,do
-item_451,fermer,word,produces,action_words,fermer,to close,,close
-item_452,finir1,word,produces,action_words,finir,finish,,finish
-item_453,glisser,word,produces,action_words,glisser,slip,,slide (action)
-item_454,go^uter,word,produces,action_words,goûter,to taste,,taste
-item_455,grimper,word,produces,action_words,grimper,to climb,,climb
-item_456,jeter,word,produces,action_words,jeter,throw,,dump
-item_457,jouer,word,produces,action_words,jouer,to play,,play
-item_458,lancer,word,produces,action_words,lancer,launch,,throw
-item_459,laver,word,produces,action_words,laver,Wash,,wash
-item_460,l'echer,word,produces,action_words,lécher,lick,,lick
-item_461,lire,word,produces,action_words,lire,read,,read
-item_462,manger,word,produces,action_words,manger,eat,,eat
-item_463,marcher,word,produces,action_words,marcher,walk,,walk
-item_464,mettre,word,produces,action_words,mettre,to put,,put
-item_465,monter_(`a_chev,word,produces,action_words,monter (à cheval...),Ride a horse...,,ride
-item_466,montrer,word,produces,action_words,montrer,show,,show
-item_467,mordre,word,produces,action_words,mordre,bite,,bite
-item_468,nager,word,produces,action_words,nager,swim,,swim
-item_469,nettoyer,word,produces,action_words,nettoyer,clean,,clean (action)
-item_470,ouvrir,word,produces,action_words,ouvrir,open,,open (action)
-item_471,parler,word,produces,action_words,parler,speak,,talk
-item_472,partager,word,produces,action_words,partager,share,,share
-item_473,patiner,word,produces,action_words,patiner,skate,,skate
-item_474,peinturer,word,produces,action_words,peinturer,painting,,paint (action)
-item_475,penser,word,produces,action_words,penser,think,,think
-item_476,pleurer,word,produces,action_words,pleurer,cry,,cry
-item_477,pousser,word,produces,action_words,pousser,push,,push
-item_478,pouvoir,word,produces,action_words,pouvoir,power,,can (auxiliary)
-item_479,prendre,word,produces,action_words,prendre,take,,take
-item_480,ramasser,word,produces,action_words,ramasser,to pick up,,pick up
-item_481,ranger,word,produces,action_words,ranger,tidy,,clean (action)
-item_482,regarder,word,produces,action_words,regarder,watch,,look
-item_483,renverser,word,produces,action_words,renverser,overthrow,,spill
-item_484,r'eparer,word,produces,action_words,réparer,to repair,,fix
-item_485,rester,word,produces,action_words,rester,stay,,stay
-item_486,r'eveiller,word,produces,action_words,réveiller,wake,,wake
-item_487,sauter,word,produces,action_words,sauter,jump,,jump
-item_488,s'echer,word,produces,action_words,sécher,dry,,dry (action)
-item_489,se_d'ep^echer,word,produces,action_words,se dépêcher,to hurry up,,
-item_490,souffler,word,produces,action_words,souffler,blow,,blow
-item_491,sourire,word,produces,action_words,sourire,smile,,smile
-item_492,surveiller,word,produces,action_words,surveiller,monitor,,watch out
-item_493,taper,word,produces,action_words,taper,type,,hit
-item_494,tenir,word,produces,action_words,tenir,hold,,hold
-item_495,tirer,word,produces,action_words,tirer,shoot,,pull
-item_496,tomber,word,produces,action_words,tomber,fall,,fall
-item_497,toucher,word,produces,action_words,toucher,to touch,,touch
-item_498,tourner,word,produces,action_words,tourner,turn,,turn
-item_499,transporter,word,produces,action_words,transporter,carry,,carry
-item_500,travailler,word,produces,action_words,travailler,to work,,work (action)
-item_501,trouver,word,produces,action_words,trouver,find,,find
-item_502,venir,word,produces,action_words,venir,come,,come
-item_503,verser,word,produces,action_words,verser,pay,,pour
-item_504,voir,word,produces,action_words,voir,see,,see
-item_505,vouloir1,word,produces,action_words,vouloir,want to,,want
-item_506,(avoir)_mal,word,produces,descriptive_words,(avoir) mal,(Have) bad,,hurt (description)
-item_507,beau/belle,word,produces,descriptive_words,beau/belle,handsome / beautiful,,beautiful
-item_508,bien,word,produces,descriptive_words,bien,good,,good
-item_509,blanc,word,produces,descriptive_words,blanc,White,,white
-item_510,bleu,word,produces,descriptive_words,bleu,blue,,blue
-item_511,bon,word,produces,descriptive_words,bon,good,,good
-item_512,bris'e/cass'e,word,produces,descriptive_words,brisé/cassé,broken / broken,,broken
-item_513,brun,word,produces,descriptive_words,brun,brown,,brown
-item_514,capable,word,produces,descriptive_words,capable,able,,able
-item_515,chaud,word,produces,descriptive_words,chaud,hot,,hot
-item_516,collant,word,produces,descriptive_words,collant,tights,,sticky
-item_517,content,word,produces,descriptive_words,content,happy,,happy
-item_518,debout,word,produces,descriptive_words,debout,standing,,standing
-item_519,d'egueulasse,word,produces,descriptive_words,dégueulasse,disgusting,,yucky
-item_520,dernier,word,produces,descriptive_words,dernier,latest,,last
-item_521,doux,word,produces,descriptive_words,doux,soft,,soft
-item_522,dur,word,produces,descriptive_words,dur,hard,,hard
-item_523,endormi,word,produces,descriptive_words,endormi,sleeping,,asleep
-item_524,f^ach'e,word,produces,descriptive_words,fâché,angry,,angry
-item_525,faim,word,produces,descriptive_words,faim,hunger,,hungry
-item_526,fatigu'e,word,produces,descriptive_words,fatigué,tired,,tired
-item_527,fini1,word,produces,descriptive_words,fini,finished,,finished
-item_528,fort,word,produces,descriptive_words,fort,fort,,strong
-item_529,froid,word,produces,descriptive_words,froid,cold,,cold
-item_530,gentil,word,produces,descriptive_words,gentil,nice,,nice
-item_531,gros/grand,word,produces,descriptive_words,gros/grand,big tall,,big
-item_532,haut,word,produces,descriptive_words,haut,top,,high
-item_533,jaune,word,produces,descriptive_words,jaune,yellow,,yellow
-item_534,joli,word,produces,descriptive_words,joli,pretty,,beautiful
-item_535,long,word,produces,descriptive_words,long,long,,long
-item_536,lourd,word,produces,descriptive_words,lourd,heavy,,heavy
-item_537,mal,word,produces,descriptive_words,mal,wrong,,bad
-item_538,malade,word,produces,descriptive_words,malade,sick,,sick
-item_539,mieux,word,produces,descriptive_words,mieux,better,,better
-item_540,mignon/cute,word,produces,descriptive_words,mignon/cute,cute / cute,,cute
-item_541,mouill'e,word,produces,descriptive_words,mouillé,wet,,wet
-item_542,noir,word,produces,descriptive_words,noir,black,,black
-item_543,nouveau,word,produces,descriptive_words,nouveau,new,,new
-item_544,orange2,word,produces,descriptive_words,orange,orange,,
-item_545,parti,word,produces,descriptive_words,parti,left,,all gone
-item_546,pauvre,word,produces,descriptive_words,pauvre,poor,,poor
-item_547,petit,word,produces,descriptive_words,petit,small,,little (description)
-item_548,peur,word,produces,descriptive_words,peur,fear,,scared
-item_549,plein,word,produces,descriptive_words,plein,full,,full
-item_550,premier,word,produces,descriptive_words,premier,first,,first
-item_551,pris,word,produces,descriptive_words,pris,taken,,
-item_552,propre,word,produces,descriptive_words,propre,clean,,clean (description)
-item_553,r'eveill'e,word,produces,descriptive_words,réveillé,wake up,,awake
-item_554,rond,word,produces,descriptive_words,rond,round,,
-item_555,rouge,word,produces,descriptive_words,rouge,red,,red
-item_556,sale,word,produces,descriptive_words,sale,dirty,,dirty
-item_557,sec,word,produces,descriptive_words,sec,dry,,dry (description)
-item_558,soif,word,produces,descriptive_words,soif,thirst,,thirsty
-item_559,tannant/m'echan,word,produces,descriptive_words,tannant/méchant,annoying / mean,,naughty
-item_560,tranquille,word,produces,descriptive_words,tranquille,quiet,,
-item_561,triste_/_(avoir,word,produces,descriptive_words,triste / (avoir)peine,sad / (have) trouble,,sad
-item_562,vert,word,produces,descriptive_words,vert,green,,green
-item_563,vide,word,produces,descriptive_words,vide,empty,,empty
-item_564,vieux,word,produces,descriptive_words,vieux,old,,old
-item_565,vite,word,produces,descriptive_words,vite,quick,,fast
-item_566,apr`es,word,produces,time_words,après,after,,after
-item_567,aujourd'hui,word,produces,time_words,aujourd'hui,today,,today
-item_568,avant,word,produces,time_words,avant,before,,before
-item_569,bient^ot,word,produces,time_words,bientôt,soon,,soon
-item_570,ce_soir,word,produces,time_words,ce soir,tonight,,tonight
-item_571,demain,word,produces,time_words,demain,tomorrow,,tomorrow
-item_572,heure,word,produces,time_words,heure,hour,,time
-item_573,hier,word,produces,time_words,hier,yesterday,,yesterday
-item_574,jour,word,produces,time_words,jour,day,,day
-item_575,maintenant,word,produces,time_words,maintenant,now,,now
-item_576,matin,word,produces,time_words,matin,morning,,morning
-item_577,nuit,word,produces,time_words,nuit,night,,night
-item_578,plus_tard,word,produces,time_words,plus tard,later,,later
-item_579,tant^ot,word,produces,time_words,tantôt,sometimes,,sometimes
-item_580,tout_`a_l'heure,word,produces,time_words,tout à l'heure,see you later,,
-item_581,`a_eux,word,produces,pronouns,à eux,their,,theirs
-item_582,`a_lui,word,produces,pronouns,à lui,his,,his
-item_583,`a_moi,word,produces,pronouns,à moi,to me,,mine
-item_584,`a_nous,word,produces,pronouns,à nous,ours,,
-item_585,`a_toi,word,produces,pronouns,à toi,yours,,
-item_586,`a_vous,word,produces,pronouns,à vous,to you,,
-item_587,ca,word,produces,pronouns,ça,it,,that
-item_588,ce,word,produces,pronouns,ce,this,,this
-item_589,celui-l`a,word,produces,pronouns,celui-là,that one,,
-item_590,elle,word,produces,pronouns,elle,she,,she
-item_591,elles,word,produces,pronouns,elles,they,,they
-item_592,il,word,produces,pronouns,il,he,,he
-item_593,ils,word,produces,pronouns,ils,they,,they
-item_594,je,word,produces,pronouns,je,I,,i
-item_595,le_mien,word,produces,pronouns,le mien,mine,,mine
-item_596,le_tien,word,produces,pronouns,le tien,yours,,
-item_597,lui,word,produces,pronouns,lui,him,,him
-item_598,me,word,produces,pronouns,me,Moi,,
-item_599,moi,word,produces,pronouns,moi,me,,me
-item_600,mon,word,produces,pronouns,mon,my,,my
-item_601,nous,word,produces,pronouns,nous,we,,we
-item_602,n^otre/nos,word,produces,pronouns,nôtre/nos,ours / our,,our
-item_603,on,word,produces,pronouns,on,we,,they
-item_604,son,word,produces,pronouns,son,his,,his
-item_605,toi,word,produces,pronouns,toi,you,,you
-item_606,ton,word,produces,pronouns,ton,your,,your
-item_607,tu,word,produces,pronouns,tu,you,,you
-item_608,vous,word,produces,pronouns,vous,you,,you
-item_609,comment,word,produces,question_words,comment,how,,how
-item_610,lequel/laquelle,word,produces,question_words,lequel/laquelle,which / that,,which (question)
-item_611,o`u,word,produces,question_words,où,or,,where (question)
-item_612,pourquoi,word,produces,question_words,pourquoi,Why,,why
-item_613,quand,word,produces,question_words,quand,when,,when (question)
-item_614,quel,word,produces,question_words,quel,what,,which (question)
-item_615,qui,word,produces,question_words,qui,who,,who
-item_616,quoi,word,produces,question_words,quoi,what,,what
-item_617,`a,word,produces,locations,à,at,,at
-item_618,`a_c^ot'e_de,word,produces,locations,à côté de,next to,,next to
-item_619,`a_terre/par_te,word,produces,locations,à terre/par terre,ground / ground,,down
-item_620,au-dessus,word,produces,locations,au-dessus,above,,over
-item_621,autour,word,produces,locations,autour,around,,around
-item_622,avec,word,produces,locations,avec,with,,with
-item_623,comme,word,produces,locations,comme,as,,as
-item_624,dans,word,produces,locations,dans,in,,in
-item_625,de,word,produces,locations,de,of,,
-item_626,de_l'autre_c^ot,word,produces,locations,de l'autre côté,on the other side,,
-item_627,devant/en_avant,word,produces,locations,devant/en avant,front / forward,,in front
-item_628,en,word,produces,locations,en,in,,in
-item_629,en_arri`ere,word,produces,locations,en arrière,backward,,behind
-item_630,en_bas,word,produces,locations,en bas,below,,below
-item_631,en_dehors,word,produces,locations,en dehors,outside,,outside
-item_632,en_haut,word,produces,locations,en haut,up,,up
-item_633,ici,word,produces,locations,ici,right here,,here
-item_634,l`a/l`a-bas,word,produces,locations,là/là-bas,here / there,,there
-item_635,loin,word,produces,locations,loin,far,,far
-item_636,par,word,produces,locations,par,a pair,,by
-item_637,par-dessus,word,produces,locations,par-dessus,par-dessus,,over
-item_638,pour,word,produces,locations,pour,pour,,for
-item_639,sous/en-dessous,word,produces,locations,sous/en-dessous,underneath,,under
-item_640,sur,word,produces,locations,sur,on,,on
-item_641,y,word,produces,locations,y,there,,there
-item_642,autre,word,produces,quantifiers,autre,other,,other
-item_643,beaucoup,word,produces,quantifiers,beaucoup,a lot,,a lot
-item_644,de/du,word,produces,quantifiers,de/du,each of /,,some
-item_645,des,word,produces,quantifiers,des,of the,,
-item_646,encore,word,produces,quantifiers,encore,again,,again
-item_647,le/la,word,produces,quantifiers,le/la,the,,the
-item_648,m^eme,word,produces,quantifiers,même,even,,same
-item_649,pareil,word,produces,quantifiers,pareil,the same,,similar
-item_650,pas,word,produces,quantifiers,pas,not,,not
-item_651,plus,word,produces,quantifiers,plus,more,,more
-item_652,plusieurs,word,produces,quantifiers,plusieurs,many,,many
-item_653,tout/toute,word,produces,quantifiers,tout/toute,any / all,,all
-item_654,trop,word,produces,quantifiers,trop,too much,,too
-item_655,un/une,word,produces,quantifiers,un/une,a a,,a
-item_656,un_autre,word,produces,quantifiers,un autre,another,,another
-item_657,un_peu,word,produces,quantifiers,un peu,a little,,little (amount)
-item_658,alors,word,produces,connecting_words,alors,so,,so
-item_659,aussi,word,produces,connecting_words,aussi,also,,also
-item_660,et,word,produces,connecting_words,et,and,,and
-item_661,mais,word,produces,connecting_words,mais,but,,but
-item_662,parce_que,word,produces,connecting_words,parce que,because,,because
-item_663,puis,word,produces,connecting_words,puis,then,,then
-item_664,si,word,produces,connecting_words,si,if,,if
-item_665,Votre_enfant_pa1,how_use_words,not yet; sometimes; often,,Votre enfant parle-t-il d’événements passés ou de personnes qui ne sont pas présentes? Par exemple si vous avez vu une parade ensemble la semaine dernière lui arrive-t-il de vous en “parler” en mentionnant des mots comme “parade” “clown” etc.?,does your child ever talk about past events or people who are not present?,,
-item_666,Votre_enfant_pa2,how_use_words,not yet; sometimes; often,,Votre enfant parle-t-il de choses qui se produiront plus tard? Par exemple dirait-il “tchou tchou” ou “avion” avant de partir en voyage ou “balançoire” avant d’aller au parc?,does your child ever talk about something that's going to happen in the future?,,
-item_667,Votre_enfant_pa3,how_use_words,not yet; sometimes; often,,Votre enfant parle-t-il d’objets qui ne sont pas présents? Par exemple demande-t-il un jouet qui n’est pas là mentionne-t-il un animal hors de son champ de vision ou une personne absente?,does your child talk a bout objects that are not present?,,
-item_668,Votre_enfant_co,how_use_words,not yet; sometimes; often,,Votre enfant comprend-il quand vous lui demandez un objet qui n’est pas dans la même pièce? Par exemple va-t-il dans sa chambre chercher son toutou lorsque vous dites “Où il est ton nounours?”,does your child understand if you ask for something that is not in the room?,,
-item_669,Votre_enfant_po,how_use_words,not yet; sometimes; often,,Votre enfant pointe-t-il ou prend-il un objet en nommant une personne absente à qui appartient cet objet? Par exemple lui arrive-t-il de montrer les souliers de sa maman en disant “maman”?,does your child ever pick up or point to an object and name an absent person to whom the object belongs?,,
-item_670,aime,word_endings,produces,,aime,like,,
-item_671,aimons,word_endings,produces,,aimons,like,,
-item_672,aimez,word_endings,produces,,aimez,like,,
-item_673,aimer2,word_endings,produces,,aimer,like,,
-item_674,finis1,word_endings,produces,,finis,finished,,
-item_675,finissons,word_endings,produces,,finissons,finish,,
-item_676,finissez,word_endings,produces,,finissez,finish,,
-item_677,finir2,word_endings,produces,,finir,finish,,
-item_678,veux,word_endings,produces,,veux,want,,
-item_679,voulons,word_endings,produces,,voulons,want,,
-item_680,voulez,word_endings,produces,,voulez,want,,
-item_681,vouloir2,word_endings,produces,,vouloir,want,,
-item_682,va_manger,word_forms_verbs,produces,,va manger,go eat,,
-item_683,mangerai,word_forms_verbs,produces,,mangerai,eat,,
-item_684,fini2,word_forms_verbs,produces,,fini,finished,,
-item_685,a_fini,word_forms_verbs,produces,,a fini,has finished,,
-item_686,finissais,word_forms_verbs,produces,,finissais,finishing,,
-item_687,mange,word_forms_verbs,produces,,mange,eat,,
-item_688,finis2,word_forms_verbs,produces,,finis,finished,,
-item_689,viens,word_forms_verbs,produces,,viens,come,,
-item_690,ai,word_forms_verbs,produces,,ai,have,,
-item_691,as/a,word_forms_verbs,produces,,as/a,as / a,,
-item_692,avons,word_forms_verbs,produces,,avons,have,,
-item_693,avez,word_forms_verbs,produces,,avez,have,,
-item_694,ont,word_forms_verbs,produces,,ont,have,,
-item_695,suis,word_forms_verbs,produces,,suis,am,,
-item_696,es/est,word_forms_verbs,produces,,es/est,is,,
-item_697,sommes,word_forms_verbs,produces,,sommes,are,,
-item_698,^etes,word_forms_verbs,produces,,êtes,are,,
-item_699,sont,word_forms_verbs,produces,,sont,are,,
-item_700,vais,word_forms_verbs,produces,,vais,am going to,,
-item_701,vas/va,word_forms_verbs,produces,,vas/va,going / going,,
-item_702,allons,word_forms_verbs,produces,,allons,will,,
-item_703,allez,word_forms_verbs,produces,,allez,going,,
-item_704,vont,word_forms_verbs,produces,,vont,will,,
-item_705,Votre_enfant_ut,word_endings,yes; no,,Votre enfant utilise-t-il la forme masculine et féminine d’un même adjectif (par ex. gros/grosse beau/belle)?,Does your child use the masculine and feminine forms of the same word?,,
-item_706,Votre_enfant_a-,combine,not yet; sometimes; often,,Votre enfant a-t-il commencé à combiner des mots? Par exemple dit-il des choses comme “papa parti” ou “encore jus”?,"Has your child begun to combine words? For example he says things like ""daddy party"" or ""more juice""?",,
-item_707,Auto_papa_/_Aut,complexity,simple; complex,,Auto papa / Auto a papa,Dad Auto / Auto is dad's,,
-item_708,Toutou_b'eb'e_/,complexity,simple; complex,,Toutou bébé / Toutou au bébé.,Doggie baby / doggie to baby.,,
-item_709,Fille_maison_/_,complexity,simple; complex,,Fille maison / Fille dans maison,Daughter home / girl in home,,
-item_710,Biscuit_maman_/,complexity,simple; complex,,Biscuit maman / Buiscuit pour maman,Cookie mom / Cookie for mom,,
-item_711,Chien_table_/_C,complexity,simple; complex,,Chien table / Chien sur (la) table,table dog / dog on (the) table,,
-item_712,Encore_biscuit_,complexity,simple; complex,,Encore biscuit / Encore des biscuits,Again biscuit / Again some cookies,,
-item_713,Donne_pomme_mam,complexity,simple; complex,,Donne pomme maman / Donne une pomme maman,Give apple mom / Give an apple mom,,
-item_714,Papa_parti_/_Pa1,complexity,simple; complex,,Papa parti / Papa est parti,Papa gone / dad is gone,,
-item_715,Pelle_Pascal_/_,complexity,simple; complex,,Pelle Pascal / Pascal a une pelle,Pascal shovel / Pascal has a shovel,,
-item_716,Belle_ta_robe_/,complexity,simple; complex,,Belle ta robe / Ta robe est belle,Beautiful your dress / Your dress is beautiful,,
-item_717,Ou_maman?_/_Est,complexity,simple; complex,,Ou maman? / Est ou maman?,Where Mom? / Is where mom?,,
-item_718,Mon_camion_/_C',complexity,simple; complex,,Mon camion / C'est mon camion,My truck / This is my truck,,
-item_719,Chat_la_/_(Il)_,complexity,simple; complex,,Chat la / (Il) y a un chat,Cat here / Here's a cat,,
-item_720,Lancer_balle_/_,complexity,simple; complex,,Lancer balle / Lance (la) balle,Throwing ball / Throw (the) ball,,
-item_721,Pas_laver_poup',complexity,simple; complex,,Pas laver poupée / Lave pas poupée,Not wash doll / Don't wash the doll,,
-item_722,Encore_jus_/_Ve,complexity,simple; complex,,Encore jus / Veux d'autre jus,Again juice /want other juice,,
-item_723,Regarder_t'el'e,complexity,simple; complex,,Regarder télé / Veux regarder télé,Watching TV / want to watch TV,,
-item_724,Donner_un_bec_/,complexity,simple; complex,,Donner un bec / Veux donner un bec,Leave a beak / want to give a beak,,
-item_725,Toi_saute?_/_Pe,complexity,simple; complex,,Toi saute? / Peux-tu sauter?,You jump? / Can you jump?,,
-item_726,Moi_pas_faire_c,complexity,simple; complex,,Moi pas faire ça. / Moi peux pas faire ça.,I do that. / I can not do that.,,
-item_727,Pipi_dehors_min,complexity,simple; complex,,Pipi dehors minou. / Minou fait pipi dehors,Pee outside kitty. / Kitty peed outside,,
-item_728,Pas_marcher_la_,complexity,simple; complex,,Pas marcher la / Faut pas marcher la,Not walk there / Shouldn't walk there,,
-item_729,Moi_livre_/_Le_,complexity,simple; complex,,Moi livre / Le livre a moi,Me Book / The book that's mine,,
-item_730,Mange_une_pomme,complexity,simple; complex,,Mange une pomme / Je mange une pomme,Eating an apple / I eat an apple,,
-item_731,La_t^ete_tomb'e,complexity,simple; complex,,La tête tombé. / Il (est) tombé sur la tête.,The head fell. / He fell on his head.,,
-item_732,Papa_parti_/_Pa2,complexity,simple; complex,,Papa parti / Papa parti travailler,Papa left / dad left for work,,
-item_733,Regarde-moi_/_R,complexity,simple; complex,,Regarde-moi / Regarde-moi danser,Look at me / Look at me dancing,,
-item_734,Donne_cuill`ere,complexity,simple; complex,,Donne cuillère. / Donne (la) cuillère pour manger,Give spoon. / Give (the) spoon to eat,,
-item_735,Veux_biscuits._,complexity,simple; complex,,Veux biscuits. / Veux biscuits et/pis lait.,Want biscuits. / Want biscuits and milk.,,
-item_736,On_a_fait_ca._/,complexity,simple; complex,,On a fait ça. / Sophie et/pis moi a fait ça.,We did that. / Sophie and me did this.,,
-item_737,Je_chante_une_c,complexity,simple; complex,,Je chante une chanson. / Je chante une chanson pour toi.,I sing a song. / I sing a song for you.,,
-item_738,Pas_lire_le_liv,complexity,simple; complex,,Pas lire le livre. / Veux pas tu lis le livre,Not read the book. / Don't  want you read the book,,
-item_739,C'est_maman_cha,complexity,simple; complex,,C’est maman chante. / C'est maman qui chante,It's mom sings. / It's Mom that's singing,,
-item_740,Je_veux_lui._/_,complexity,simple; complex,,Je veux lui. / Je veux lui que tu as.,I want him. / I want it what you have.,,
-item_741,Regarde_ca._/_R,complexity,simple; complex,,Regarde ça. / Regarde ce que j’ai.,Look at that. / Look what I have.,,
-item_742,B'eb'e_rit._/_B,complexity,simple; complex,,Bébé rit. / Bébé rit parce que content.,Baby laughs. / Baby laughs because happy.,,
-item_743,Le_chapeau_de_l,complexity,simple; complex,,Le chapeau de le monsieur. / Le chapeau du monsieur.,The hat of the man. / The gentleman's hat.,,
-item_744,Mon_camion_/_Ca,complexity,simple; complex,,Mon camion / Camino Simon,My truck / Truck (name of child),,
-item_745,Moi_sali_/_Simo,complexity,simple; complex,,Moi sali / Simon sali,Me dirty / (name of child) dirty,,
-item_746,Prends-moi_/_Pr,complexity,simple; complex,,Prends-moi / Prends Simon,Take me / Take (name of child),,
-item_747,Veux_jus_/_Simo,complexity,simple; complex,,Veux jus / Simon jus,Want juice / (name of child) juice,,
-item_748,Toi_belle_/_Mam,complexity,simple; complex,,Toi belle / Maman belle,You pretty / Mom pretty,,
-item_749,Brosse_les_dent,complexity,simple; complex,,Brosse les dents / Brosse dents maman,Brush teeth / Brush teeth Mom,,
-item_750,Il_dort_/_Le_ch,complexity,simple; complex,,Il dort / Le chat dort,He sleeps/ The cat sleeps,,
-item_751,Ouvre-la_/_Ouvr,complexity,simple; complex,,Ouvre-la / Ouvre la porte,Open up / Open the door,,
-item_752,C'est_chaud_/_L,complexity,simple; complex,,C'est chaud / La soupe est chaude,It's hot / The soupe is hot,,
-item_753,Pas_faire_ca_/_,complexity,simple; complex,,Pas faire ca / Pas laver cheveux,Don't dothat / Don't wash hair,,
-item_754,Jus_dedans_/_Ju,complexity,simple; complex,,Jus dedans / Jus dans tasse,Juice inside / Juice in cup,,
+itemID,item,type,choices,category,definition,complexity_category,gloss,uni_lemma
+item_1,"a""ie",word,produces,sounds,aïe,NA,Ouch,ouch
+item_2,b^e^e^e_b^e^e^e,word,produces,sounds,bêêê bêêê,NA,baaaah baaaah,baa baa
+item_3,cocorico,word,produces,sounds,cocorico,NA,cockledoodledoo,cockadoodledoo
+item_4,coin_coin,word,produces,sounds,coin coin,NA,quack quack,quack quack
+item_5,grr,word,produces,sounds,grr,NA,grr,grrr
+item_6,miam_miam,word,produces,sounds,miam miam,NA,yum yum,yum yum
+item_7,miaou,word,produces,sounds,miaou,NA,meow,meow
+item_8,meuh,word,produces,sounds,meuh,NA,moo,moo
+item_9,oh_oh,word,produces,sounds,oh oh,NA,Oh oh,uh oh
+item_10,tchou_tchou,word,produces,sounds,tchou tchou,NA,Choo Choo,choo choo
+item_11,vroum,word,produces,sounds,vroum,NA,vroom,vroom
+item_12,wouf_wouf,word,produces,sounds,wouf wouf,NA,woof woof,woof woof
+item_13,abeille,word,produces,animals,abeille,NA,bee,bee
+item_14,agneau,word,produces,animals,agneau,NA,lamb,lamb
+item_15,alligator/croco,word,produces,animals,alligator/crocodile,NA,alligator / crocodile,crocodile
+item_16,^ane,word,produces,animals,âne,NA,donkey,donkey
+item_17,animal,word,produces,animals,animal,NA,animal,animal
+item_18,bibitte,word,produces,animals,bibitte,NA,bug,bug
+item_19,canard,word,produces,animals,canard,NA,duck,duck
+item_20,chat,word,produces,animals,chat,NA,cat,cat
+item_21,cheval,word,produces,animals,cheval,NA,horse,horse
+item_22,chevreuil,word,produces,animals,chevreuil,NA,roe deer,deer
+item_23,chien,word,produces,animals,chien,NA,dog,dog
+item_24,cochon,word,produces,animals,cochon,NA,pig,pig
+item_25,coq,word,produces,animals,coq,NA,cock,rooster
+item_26,dinde,word,produces,animals,dinde,NA,turkey,turkey
+item_27,'ecureuil,word,produces,animals,écureuil,NA,squirrel,squirrel
+item_28,'el'ephant,word,produces,animals,éléphant,NA,elephant,elephant
+item_29,fourmi,word,produces,animals,fourmi,NA,ant,ant
+item_30,girafe,word,produces,animals,girafe,NA,giraffe,giraffe
+item_31,grenouille,word,produces,animals,grenouille,NA,frog,frog
+item_32,hibou,word,produces,animals,hibou,NA,owl,owl
+item_33,lapin,word,produces,animals,lapin,NA,rabbit,bunny
+item_34,lion,word,produces,animals,lion,NA,Lion,lion
+item_35,loup,word,produces,animals,loup,NA,wolf,wolf
+item_36,mouton,word,produces,animals,mouton,NA,sheep,sheep
+item_37,oie,word,produces,animals,oie,NA,goose,goose
+item_38,oiseau,word,produces,animals,oiseau,NA,bird,bird
+item_39,orignal,word,produces,animals,orignal,NA,moose,moose
+item_40,ours,word,produces,animals,ours,NA,bear,bear
+item_41,ourson/nounours,word,produces,animals,ourson/nounours,NA,Bear / Teddy,teddybear
+item_42,panda,word,produces,animals,panda,NA,panda,panda
+item_43,papillon,word,produces,animals,papillon,NA,butterfly,butterfly
+item_44,pingouin,word,produces,animals,pingouin,NA,Penguin,penguin
+item_45,poisson_(animal,word,produces,animals,poisson (animal),NA,fish,fish (animal)
+item_46,poule,word,produces,animals,poule,NA,hen,chicken (animal)
+item_47,poulet_(animal),word,produces,animals,poulet (animal),NA,chicken,chicken (animal)
+item_48,singe,word,produces,animals,singe,NA,monkey,monkey
+item_49,souris,word,produces,animals,souris,NA,mouse,mouse
+item_50,tigre,word,produces,animals,tigre,NA,tiger,tiger
+item_51,tortue,word,produces,animals,tortue,NA,tortoise,turtle
+item_52,vache,word,produces,animals,vache,NA,cow,cow
+item_53,z`ebre,word,produces,animals,zèbre,NA,zebra,zebra
+item_54,auto,word,produces,vehicles,auto,NA,auto,car
+item_55,autobus,word,produces,vehicles,autobus,NA,bus,bus
+item_56,avion,word,produces,vehicles,avion,NA,plane,airplane
+item_57,bateau,word,produces,vehicles,bateau,NA,boat,boat
+item_58,bicyclette,word,produces,vehicles,bicyclette,NA,bicycle,bicycle
+item_59,camion,word,produces,vehicles,camion,NA,truck,truck
+item_60,camion_de_pompi,word,produces,vehicles,camion de pompier,NA,fire truck,firetruck
+item_61,h'elicopt`ere,word,produces,vehicles,hélicoptère,NA,helicopter,helicopter
+item_62,moto,word,produces,vehicles,moto,NA,motorbike,motorcycle
+item_63,poussette,word,produces,vehicles,poussette,NA,stroller,stroller
+item_64,tracteur,word,produces,vehicles,tracteur,NA,tractor,tractor
+item_65,train,word,produces,vehicles,train,NA,train,train
+item_66,tra^ineau,word,produces,vehicles,traîneau,NA,sled,sled
+item_67,tricycle,word,produces,vehicles,tricycle,NA,tricycle,tricycle
+item_68,balle,word,produces,toys,balle,NA,ball,ball
+item_69,ballon,word,produces,toys,ballon,NA,ball,ball
+item_70,b^aton1,word,produces,toys,bâton,NA,stick,stick
+item_71,bloc,word,produces,toys,bloc,NA,block,blocks
+item_72,bulles,word,produces,toys,bulles,NA,bubbles,bubbles
+item_73,cadeau,word,produces,toys,cadeau,NA,gift,present
+item_74,casse-t^ete,word,produces,toys,casse-tête,NA,brain teaser,puzzle
+item_75,colle,word,produces,toys,colle,NA,glue,glue (object)
+item_76,craie,word,produces,toys,craie,NA,chalk,chalk
+item_77,crayon,word,produces,toys,crayon,NA,pencil,pen/pencil
+item_78,crayon_de_coule,word,produces,toys,crayon de couleur,NA,colored pencil,crayon
+item_79,histoire,word,produces,toys,histoire,NA,history,story
+item_80,jeu,word,produces,toys,jeu,NA,game,game
+item_81,jouet,word,produces,toys,jouet,NA,toy,toy (object)
+item_82,lego,word,produces,toys,lego,NA,lego,blocks
+item_83,livre,word,produces,toys,livre,NA,book,book
+item_84,p^ate_`a_modele,word,produces,toys,pâte à modeler,NA,plasticine,play dough
+item_85,poup'ee,word,produces,toys,poupée,NA,doll,doll
+item_86,stylo,word,produces,toys,stylo,NA,pen,pen/pencil
+item_87,toutou,word,produces,toys,toutou,NA,doggie,teddybear
+item_88,banane,word,produces,food_drink,banane,NA,banana,banana
+item_89,beigne,word,produces,food_drink,beigne,NA,donut,donut
+item_90,beurre,word,produces,food_drink,beurre,NA,butter,butter
+item_91,beurre_de_pinot,word,produces,food_drink,beurre de pinotte/d'arachide,NA,pinotte butter / peanut,peanut butter
+item_92,biscuit,word,produces,food_drink,biscuit,NA,biscuit,cookie
+item_93,biscuit_soda,word,produces,food_drink,biscuit soda,NA,soda biscuit,cracker
+item_94,bl'e_d'inde,word,produces,food_drink,blé d'inde,NA,Corn,corn
+item_95,bonbon,word,produces,food_drink,bonbon,NA,candy,candy
+item_96,caf'e,word,produces,food_drink,café,NA,coffee,coffee
+item_97,carotte,word,produces,food_drink,carotte,NA,carrot,carrot
+item_98,c'er'eales,word,produces,food_drink,céréales,NA,cereals,cereal
+item_99,cheerios,word,produces,food_drink,cheerios,NA,cheerios,cheerios
+item_100,chips,word,produces,food_drink,chips,NA,chips,chips
+item_101,chocolat,word,produces,food_drink,chocolat,NA,chocolate,chocolate
+item_102,citrouille,word,produces,food_drink,citrouille,NA,pumpkin,pumpkin
+item_103,coke,word,produces,food_drink,coke,NA,coke,coke
+item_104,compote_de_pomm,word,produces,food_drink,compote de pommes,NA,applesauce,compote
+item_105,confiture,word,produces,food_drink,confiture,NA,jam,jam
+item_106,cornichon,word,produces,food_drink,cornichon,NA,pickle,cucumber
+item_107,cr`eme_glac'ee,word,produces,food_drink,crème glacée,NA,ice cream,ice cream
+item_108,cr^epe,word,produces,food_drink,crêpe,NA,crepe,pancake
+item_109,eau_(beverage),word,produces,food_drink,eau (beverage),NA,water,water (beverage)
+item_110,fraise,word,produces,food_drink,fraise,NA,strawberry,strawberry
+item_111,fromage,word,produces,food_drink,fromage,NA,cheese,cheese
+item_112,g^ateau,word,produces,food_drink,gâteau,NA,Cake,cake
+item_113,glace,word,produces,food_drink,glace,NA,ice,ice cream
+item_114,gomme,word,produces,food_drink,gomme,NA,gum,gum
+item_115,hamburger,word,produces,food_drink,hamburger,NA,Hamburger,hamburger
+item_116,haricot,word,produces,food_drink,haricot,NA,bean,beans
+item_117,jello,word,produces,food_drink,jello,NA,jello,jello
+item_118,jus,word,produces,food_drink,jus,NA,juice,juice
+item_119,lait,word,produces,food_drink,lait,NA,milk,milk
+item_120,melon,word,produces,food_drink,melon,NA,melon,melon
+item_121,muffin,word,produces,food_drink,muffin,NA,muffin,muffin
+item_122,noix,word,produces,food_drink,noix,NA,nuts,nut
+item_123,nouilles/p^ates,word,produces,food_drink,nouilles/pâtes,NA,noodles / pasta,pasta
+item_124,nourriture,word,produces,food_drink,nourriture,NA,food,food
+item_125,oeuf,word,produces,food_drink,oeuf,NA,egg,egg
+item_126,orange1,word,produces,food_drink,orange,NA,orange,orange (food)
+item_127,pain,word,produces,food_drink,pain,NA,bread,bread
+item_128,patate,word,produces,food_drink,patate,NA,potato,potato
+item_129,patate_frite,word,produces,food_drink,patate frite,NA,fried potato,french fries
+item_130,pizza,word,produces,food_drink,pizza,NA,Pizza,pizza
+item_131,pois,word,produces,food_drink,pois,NA,peas,peas
+item_132,poisson_(food),word,produces,food_drink,poisson (food),NA,fish,fish (food)
+item_133,pomme,word,produces,food_drink,pomme,NA,apple,apple
+item_134,popcorn,word,produces,food_drink,popcorn,NA,pop corn,popcorn
+item_135,popsicle,word,produces,food_drink,popsicle,NA,popsicle,popsicle
+item_136,pouding,word,produces,food_drink,pouding,NA,pudding,pudding
+item_137,poulet_(food),word,produces,food_drink,poulet (food),NA,chicken,chicken (food)
+item_138,raisin,word,produces,food_drink,raisin,NA,grapes,grapes
+item_139,raisin_sec,word,produces,food_drink,raisin sec,NA,raisin,raisin
+item_140,sandwich,word,produces,food_drink,sandwich,NA,sandwich,sandwich
+item_141,sauce,word,produces,food_drink,sauce,NA,sauce,sauce
+item_142,sel,word,produces,food_drink,sel,NA,salt,salt
+item_143,soupe,word,produces,food_drink,soupe,NA,soup,soup
+item_144,spaghetti,word,produces,food_drink,spaghetti,NA,spaghetti,pasta
+item_145,sucon,word,produces,food_drink,suçon,NA,lollipop,lollipop
+item_146,thon,word,produces,food_drink,thon,NA,tuna,tuna
+item_147,toast,word,produces,food_drink,toast,NA,toast,toast
+item_148,vanille,word,produces,food_drink,vanille,NA,vanilla,vanilla
+item_149,viande,word,produces,food_drink,viande,NA,meat,meat
+item_150,vitamine,word,produces,food_drink,vitamine,NA,vitamin,vitamin
+item_151,yogourt,word,produces,food_drink,yogourt,NA,yogurt,yogurt
+item_152,bas,word,produces,clothing,bas,NA,low,sock
+item_153,bavette,word,produces,clothing,bavette,NA,bib,bib
+item_154,bottes,word,produces,clothing,bottes,NA,boots,boots
+item_155,bouton,word,produces,clothing,bouton,NA,button,button
+item_156,ceinture,word,produces,clothing,ceinture,NA,belt,belt
+item_157,chandail,word,produces,clothing,chandail,NA,sweater,sweater
+item_158,chapeau,word,produces,clothing,chapeau,NA,hat,hat
+item_159,chemise,word,produces,clothing,chemise,NA,shirt,shirt
+item_160,collants,word,produces,clothing,collants,NA,tights,tights
+item_161,collier,word,produces,clothing,collier,NA,necklace,necklace
+item_162,couche,word,produces,clothing,couche,NA,layer,diaper
+item_163,espadrille,word,produces,clothing,espadrille,NA,sandal,sandal
+item_164,foulard,word,produces,clothing,foulard,NA,scarf,scarf
+item_165,gants,word,produces,clothing,gants,NA,gloves,glove
+item_166,habit_de_neige,word,produces,clothing,habit de neige,NA,snowsuit,snowsuit
+item_167,jeans,word,produces,clothing,jeans,NA,jeans,jeans
+item_168,manteau,word,produces,clothing,manteau,NA,coat,coat
+item_169,mitaine,word,produces,clothing,mitaine,NA,mitt,mitten
+item_170,pantalons,word,produces,clothing,pantalons,NA,pants,pants
+item_171,pantoufle,word,produces,clothing,pantoufle,NA,slipper,slipper
+item_172,perles/boules,word,produces,clothing,perles/boules,NA,beads / balls,beads
+item_173,petite_culotte,word,produces,clothing,petite culotte,NA,panties,underpants
+item_174,pyjama,word,produces,clothing,pyjama,NA,pajamas,pajamas
+item_175,robe,word,produces,clothing,robe,NA,dress,dress (object)
+item_176,shorts,word,produces,clothing,shorts,NA,shorts,shorts
+item_177,soulier,word,produces,clothing,soulier,NA,shoe,shoe
+item_178,zip/fermeture_',word,produces,clothing,zip/fermeture éclair,NA,zip / zipper,zipper
+item_179,bedaine/ventre,word,produces,body_parts,bedaine/ventre,NA,belly / belly,tummy
+item_180,bobo,word,produces,body_parts,bobo,NA,hurts,owie
+item_181,bouche,word,produces,body_parts,bouche,NA,mouth,mouth
+item_182,bras,word,produces,body_parts,bras,NA,arms,arm
+item_183,cheveux,word,produces,body_parts,cheveux,NA,hair,hair
+item_184,dent,word,produces,body_parts,dent,NA,tooth,tooth
+item_185,doigt,word,produces,body_parts,doigt,NA,finger,finger
+item_186,'epaule,word,produces,body_parts,épaule,NA,shoulder,shoulder
+item_187,fesses,word,produces,body_parts,fesses,NA,buttocks,butt
+item_188,genou,word,produces,body_parts,genou,NA,knee,knee
+item_189,jambe,word,produces,body_parts,jambe,NA,leg,leg
+item_190,joue,word,produces,body_parts,joue,NA,cheek,cheek
+item_191,langue,word,produces,body_parts,langue,NA,tongue,tongue
+item_192,l`evres,word,produces,body_parts,lèvres,NA,lips,lip
+item_193,main,word,produces,body_parts,main,NA,hand,hand
+item_194,menton,word,produces,body_parts,menton,NA,chin,chin
+item_195,moustache,word,produces,body_parts,moustache,NA,mustache,mustache
+item_196,nez,word,produces,body_parts,nez,NA,nose,nose
+item_197,nombril,word,produces,body_parts,nombril,NA,belly button,belly button
+item_198,oreille,word,produces,body_parts,oreille,NA,hear,ear
+item_199,orteil,word,produces,body_parts,orteil,NA,toe,toe
+item_200,p'enis,word,produces,body_parts,pénis,NA,penis,penis
+item_201,pied,word,produces,body_parts,pied,NA,foot,foot
+item_202,t^ete,word,produces,body_parts,tête,NA,head,head
+item_203,vagin_vulve,word,produces,body_parts,vagin vulve,NA,vagina,vagina
+item_204,visage,word,produces,body_parts,visage,NA,face,face
+item_205,yeux,word,produces,body_parts,yeux,NA,eyes,eye
+item_206,argent,word,produces,household,argent,NA,money,money
+item_207,aspirateur,word,produces,household,aspirateur,NA,vacuum,vacuum
+item_208,assiette,word,produces,household,assiette,NA,plate,plate
+item_209,balai,word,produces,household,balai,NA,broom,broom
+item_210,bo^ite,word,produces,household,boîte,NA,box,box
+item_211,bol,word,produces,household,bol,NA,bowl,bowl
+item_212,bouteille,word,produces,household,bouteille,NA,bottle,bottle
+item_213,brosse,word,produces,household,brosse,NA,brush,brush (object)
+item_214,brosse_`a_dents,word,produces,household,brosse à dents,NA,toothbrush,toothbrush
+item_215,cam'era,word,produces,household,caméra,NA,camera,camera
+item_216,ciseaux,word,produces,household,ciseaux,NA,scissors,scissors
+item_217,cl'es,word,produces,household,clés,NA,keys,key
+item_218,clou,word,produces,household,clou,NA,nail,nail (object)
+item_219,couteau,word,produces,household,couteau,NA,knife,knife
+item_220,couverte/couver,word,produces,household,couverte/couverture,NA,blanket,blanket
+item_221,cuill`ere,word,produces,household,cuillère,NA,spoon,spoon
+item_222,fourchette,word,produces,household,fourchette,NA,fork,fork
+item_223,horloge,word,produces,household,horloge,NA,clock,clock
+item_224,image,word,produces,household,image,NA,picture,picture
+item_225,lampe,word,produces,household,lampe,NA,lamp,lamp
+item_226,lumi`ere,word,produces,household,lumière,NA,light,light (object)
+item_227,lunettes,word,produces,household,lunettes,NA,glasses,glasses
+item_228,marteau,word,produces,household,marteau,NA,hammer,hammer
+item_229,m'edicament,word,produces,household,médicament,NA,drug,medicine
+item_230,montre,word,produces,household,montre,NA,watch,watch (object)
+item_231,mouchoir/kleene,word,produces,household,mouchoir/kleenex,NA,handkerchief / Kleenex,tissue
+item_232,oreiller,word,produces,household,oreiller,NA,pillow,pillow
+item_233,panier,word,produces,household,panier,NA,basket,basket
+item_234,papier,word,produces,household,papier,NA,paper,paper
+item_235,peigne,word,produces,household,peigne,NA,comb,comb (object)
+item_236,photo,word,produces,household,photo,NA,Photo,photo
+item_237,plante,word,produces,household,plante,NA,plant,plant
+item_238,plat,word,produces,household,plat,NA,dish,dish
+item_239,pot1,word,produces,household,pot,NA,pot,pot
+item_240,poubelle,word,produces,household,poubelle,NA,trash can,trash
+item_241,radio,word,produces,household,radio,NA,radio,radio
+item_242,ruban,word,produces,household,ruban,NA,ribbon,ribbon
+item_243,sacoche/sac_`a_,word,produces,household,sacoche/sac à main,NA,bag / purse,purse
+item_244,savon,word,produces,household,savon,NA,soap,soap
+item_245,seau,word,produces,household,seau,NA,bucket,bucket
+item_246,serviette,word,produces,household,serviette,NA,towel,towel
+item_247,serviette_de_ta,word,produces,household,serviette de table,NA,table napkin,napkin
+item_248,sou,word,produces,household,sou,NA,Sun,penny
+item_249,tasse,word,produces,household,tasse,NA,Cup,cup
+item_250,t'el'ephone,word,produces,household,téléphone,NA,phone,telephone
+item_251,verre,word,produces,household,verre,NA,glass,glass
+item_252,vidanges,word,produces,household,vidanges,NA,sewage,trash
+item_253,bain_(object),word,produces,furniture_rooms,bain (object),NA,bath,bathtub
+item_254,banc,word,produces,furniture_rooms,banc,NA,bench,bench
+item_255,bassinette/berc,word,produces,furniture_rooms,bassinette/berceau,NA,bassinet / cradle,crib
+item_256,chaise,word,produces,furniture_rooms,chaise,NA,chair,chair
+item_257,chaise_bercante,word,produces,furniture_rooms,chaise berçante,NA,rocking chair,rocking chair
+item_258,chaise_haute,word,produces,furniture_rooms,chaise haute,NA,high chair,high chair
+item_259,chambre,word,produces,furniture_rooms,chambre,NA,bedroom,bedroom
+item_260,cuisine,word,produces,furniture_rooms,cuisine,NA,kitchen room,kitchen
+item_261,divan/sofa,word,produces,furniture_rooms,divan/sofa,NA,couch / sofa,couch
+item_262,douche,word,produces,furniture_rooms,douche,NA,shower,shower
+item_263,entr'ee,word,produces,furniture_rooms,entrée,NA,Entrance,NA
+item_264,escalier,word,produces,furniture_rooms,escalier,NA,staircase,stairs
+item_265,'evier/lavabo,word,produces,furniture_rooms,évier/lavabo,NA,sink / sink,sink
+item_266,fen^etre,word,produces,furniture_rooms,fenêtre,NA,window,window
+item_267,four,word,produces,furniture_rooms,four,NA,oven,oven
+item_268,foyer,word,produces,furniture_rooms,foyer,NA,home,home
+item_269,frigidaire/frig,word,produces,furniture_rooms,frigidaire/frigo,NA,fridge / refrigerator,refrigerator
+item_270,garage,word,produces,furniture_rooms,garage,NA,garage,garage
+item_271,garde-robe,word,produces,furniture_rooms,garde-robe,NA,wardrobe,closet
+item_272,laveuse,word,produces,furniture_rooms,laveuse,NA,washer,washing machine
+item_273,lit,word,produces,furniture_rooms,lit,NA,bed,bed
+item_274,marche,word,produces,furniture_rooms,marche,NA,market,step
+item_275,parc_(d'enfant),word,produces,furniture_rooms,parc (d'enfant),NA,Park (for children),play pen
+item_276,pi`ece,word,produces,furniture_rooms,pièce,NA,piece,room
+item_277,po^ele,word,produces,furniture_rooms,poêle,NA,stove,stove
+item_278,porte,word,produces,furniture_rooms,porte,NA,door,door
+item_279,pot2,word,produces,furniture_rooms,pot,NA,pot,pot
+item_280,salle_de_bain/t,word,produces,furniture_rooms,salle de bain/toilette,NA,bathroom / toilet,bathroom
+item_281,salon,word,produces,furniture_rooms,salon,NA,living room,living room
+item_282,s'echeuse,word,produces,furniture_rooms,sécheuse,NA,dryer,dryer
+item_283,sous-sol,word,produces,furniture_rooms,sous-sol,NA,subsoil,basement
+item_284,table,word,produces,furniture_rooms,table,NA,table,table
+item_285,t'el'evision,word,produces,furniture_rooms,télévision,NA,television,TV
+item_286,tiroir,word,produces,furniture_rooms,tiroir,NA,drawer,drawer
+item_287,arbre,word,produces,outside,arbre,NA,tree,tree
+item_288,arrosoir,word,produces,outside,arrosoir,NA,watering can,watering can
+item_289,balancoire,word,produces,outside,balançoire,NA,swing,swing (object)
+item_290,b^aton2,word,produces,outside,bâton,NA,stick,stick
+item_291,bonhomme_de_nei,word,produces,outside,bonhomme de neige,NA,snowman,snowman
+item_292,ciel,word,produces,outside,ciel,NA,sky,sky
+item_293,cour,word,produces,outside,cour,NA,court,yard
+item_294,drapeau,word,produces,outside,drapeau,NA,flag,flag
+item_295,eau_(not_bevera,word,produces,outside,eau (not beverage),NA,water,water (not beverage)
+item_296,'echelle,word,produces,outside,échelle,NA,ladder,ladder
+item_297,'etoile,word,produces,outside,étoile,NA,star,star
+item_298,fleur,word,produces,outside,fleur,NA,flower,flower
+item_299,gazon,word,produces,outside,gazon,NA,grass,grass
+item_300,glissoire,word,produces,outside,glissoire,NA,slide,slide (object)
+item_301,jardin,word,produces,outside,jardin,NA,garden,garden
+item_302,lune,word,produces,outside,lune,NA,Moon,moon
+item_303,neige,word,produces,outside,neige,NA,snow,snow
+item_304,nuage,word,produces,outside,nuage,NA,cloud,cloud
+item_305,pelle,word,produces,outside,pelle,NA,shovel,shovel
+item_306,pierre,word,produces,outside,pierre,NA,rock,stone
+item_307,piscine,word,produces,outside,piscine,NA,swimming pool,pool
+item_308,pluie,word,produces,outside,pluie,NA,rain,rain
+item_309,roche,word,produces,outside,roche,NA,rock,rock (object)
+item_310,roue,word,produces,outside,roue,NA,wheel,wheel
+item_311,rue,word,produces,outside,rue,NA,street,street
+item_312,sable,word,produces,outside,sable,NA,sand,sand
+item_313,soleil,word,produces,outside,soleil,NA,Sun,sun
+item_314,toit,word,produces,outside,toit,NA,roof,roof
+item_315,tondeuse,word,produces,outside,tondeuse,NA,mower,lawn mower
+item_316,trottoir,word,produces,outside,trottoir,NA,pavement,sidewalk
+item_317,tuyau/boyau,word,produces,outside,tuyau/boyau,NA,pipe / hose,pipe
+item_318,vent,word,produces,outside,vent,NA,wind,wind
+item_319,v'eranda/balcon,word,produces,outside,véranda/balcon,NA,verandah / balcony,balcony
+item_320,campagne,word,produces,places,campagne,NA,campaign,country
+item_321,camping,word,produces,places,camping,NA,camping,camping
+item_322,chez_nous,word,produces,places,chez nous,NA,home,home
+item_323,cirque,word,produces,places,cirque,NA,circus,circus
+item_324,dehors,word,produces,places,dehors,NA,outside,outside
+item_325,'ecole,word,produces,places,école,NA,school,school
+item_326,'eglise,word,produces,places,église,NA,church,church
+item_327,ferme,word,produces,places,ferme,NA,closed,farm
+item_328,f^ete,word,produces,places,fête,NA,Party,party
+item_329,for^et,word,produces,places,forêt,NA,forest,forest
+item_330,garage_(essence,word,produces,places,garage (essence),NA,Garage (petrol),garage
+item_331,magasin,word,produces,places,magasin,NA,shop,store
+item_332,maison,word,produces,places,maison,NA,House,house
+item_333,parc,word,produces,places,parc,NA,Park,park
+item_334,pique-nique,word,produces,places,pique-nique,NA,picnic,picnic
+item_335,plage,word,produces,places,plage,NA,beach,beach
+item_336,terrain_de_jeu,word,produces,places,terrain de jeu,NA,playing field,playground
+item_337,travail/bureau,word,produces,places,travail/bureau,NA,work / office,work (place)
+item_338,zoo,word,produces,places,zoo,NA,zoo,zoo
+item_339,ami,word,produces,people,ami,NA,friend,friend
+item_340,b'eb'e,word,produces,people,bébé,NA,baby,baby
+item_341,bonhomme,word,produces,people,bonhomme,NA,fellow,friend
+item_342,clown,word,produces,people,clown,NA,clown,clown
+item_343,cowboy,word,produces,people,cowboy,NA,cowboy,cowboy
+item_344,docteur,word,produces,people,docteur,NA,doctor,doctor
+item_345,enfant,word,produces,people,enfant,NA,child,child
+item_346,facteur,word,produces,people,facteur,NA,postman,mailman
+item_347,fille,word,produces,people,fille,NA,girl,girl
+item_348,fr`ere,word,produces,people,frère,NA,brother,brother
+item_349,garcon,word,produces,people,garçon,NA,boy,boy
+item_350,gardienne,word,produces,people,gardienne,NA,guardian,babysitter
+item_351,gens/monde,word,produces,people,gens/monde,NA,people / world,people
+item_352,grand-maman,word,produces,people,grand-maman,NA,grandma,grandma
+item_353,grand-papa,word,produces,people,grand-papa,NA,Grandpa,grandpa
+item_354,madame,word,produces,people,madame,NA,Mrs,lady
+item_355,maman,word,produces,people,maman,NA,mom,mommy
+item_356,monsieur,word,produces,people,monsieur,NA,gentleman,man
+item_357,nom_animal_dome,word,produces,people,nom animal domestique,NA,pet name,pet's name
+item_358,nom_gardien(ne),word,produces,people,nom gardien(ne),NA,guardian name,babysitter's name
+item_359,oncle/mononcle,word,produces,people,oncle/mononcle,NA,uncle / my uncle,uncle
+item_360,papa,word,produces,people,papa,NA,dad,daddy
+item_361,personne,word,produces,people,personne,NA,no one,person
+item_362,police,word,produces,people,police,NA,police,police
+item_363,pompier,word,produces,people,pompier,NA,firefighter,firefighter
+item_364,professeur(e),word,produces,people,professeur(e),NA,Professor,teacher
+item_365,soeur,word,produces,people,sœur,NA,sister,sister
+item_366,son_propre_nom,word,produces,people,son propre nom,NA,his/her own name,child's own name
+item_367,tante/matante,word,produces,people,tante/matante,NA,aunt / aunt,aunt
+item_368,aller_au_magasi,word,produces,games_routines,aller au magasin,NA,go to the store,shopping
+item_369,all^o,word,produces,games_routines,allô,NA,Hello,hello
+item_370,bain_(routine),word,produces,games_routines,bain (routine),NA,Bath,bath
+item_371,bonjour,word,produces,games_routines,bonjour,NA,Hello,hi
+item_372,bonne_nuit,word,produces,games_routines,bonne nuit,NA,good night,good night
+item_373,bravo,word,produces,games_routines,bravo,NA,Bravo,bravo
+item_374,bye/au_revoir,word,produces,games_routines,bye/au revoir,NA,bye / bye,bye
+item_375,chut,word,produces,games_routines,chut,NA,hush,shh
+item_376,collation,word,produces,games_routines,collation,NA,sorting,snack
+item_377,coucou,word,produces,games_routines,coucou,NA,Hello,peekaboo
+item_378,d'ejeuner,word,produces,games_routines,déjeuner,NA,lunch,lunch
+item_379,d^iner,word,produces,games_routines,dîner,NA,having dinner,dinner
+item_380,dodo,word,produces,games_routines,dodo,NA,nap,nap
+item_381,donne_moi/tape_,word,produces,games_routines,donne moi/tape dedans,NA,gives me / tape in,NA
+item_382,faire_caca/fair,word,produces,games_routines,faire caca/faire pipi,NA,poop / pee,go potty
+item_383,faire_le_tour_d,word,produces,games_routines,faire le tour de la maison,NA,go around the house,go around the house
+item_384,gros_comme_ca,word,produces,games_routines,gros comme ça,NA,this big,NA
+item_385,je_te_tiens_par,word,produces,games_routines,je te tiens par la barbichette,NA,I hold you by the goatee,NA
+item_386,j'vais_t'attrap,word,produces,games_routines,j'vais t'attraper,NA,I'm gonna catch you,gonna get you
+item_387,menouche_menouc,word,produces,games_routines,menouche menouche,NA,menouche menouche,NA
+item_388,merci,word,produces,games_routines,merci,NA,thank you,thank you
+item_389,non,word,produces,games_routines,non,NA,no,no
+item_390,okay,word,produces,games_routines,okay,NA,okay,ok
+item_391,oui,word,produces,games_routines,oui,NA,Yes,yes
+item_392,parler_(au_t'el,word,produces,games_routines,parler (au téléphone),NA,talk (on the phone),call
+item_393,retourne-toi,word,produces,games_routines,retourne-toi,NA,turn around,turn around
+item_394,s'il-vous-pla^i,word,produces,games_routines,s'il-vous-plaît,NA,please,please
+item_395,souper,word,produces,games_routines,souper,NA,supper,dinner
+item_396,tape_tape,word,produces,games_routines,tape tape,NA,tape tape,pattycake
+item_397,acheter,word,produces,action_words,acheter,NA,buy,buy
+item_398,aider,word,produces,action_words,aider,NA,help,help
+item_399,aimer1,word,produces,action_words,aimer,NA,like,love
+item_400,aller,word,produces,action_words,aller,NA,go,go
+item_401,allumer,word,produces,action_words,allumer,NA,light up,turn on
+item_402,amener,word,produces,action_words,amener,NA,lead,bring
+item_403,applaudir,word,produces,action_words,applaudir,NA,applaud,clap
+item_404,apporter,word,produces,action_words,apporter,NA,to bring,bring
+item_405,arr^eter,word,produces,action_words,arrêter,NA,Stop,stop
+item_406,arroser,word,produces,action_words,arroser,NA,water,splash
+item_407,asseoir,word,produces,action_words,asseoir,NA,seat,sit
+item_408,attacher,word,produces,action_words,attacher,NA,to attach,attach
+item_409,attendre,word,produces,action_words,attendre,NA,expect,wait
+item_410,attraper,word,produces,action_words,attraper,NA,to catch,catch
+item_411,avoir,word,produces,action_words,avoir,NA,to have,have
+item_412,balancer,word,produces,action_words,balancer,NA,swing,swing (action)
+item_413,balayer,word,produces,action_words,balayer,NA,sweep,sweep
+item_414,bercer,word,produces,action_words,bercer,NA,rock,rock (action)
+item_415,boire,word,produces,action_words,boire,NA,to drink,drink (action)
+item_416,brasser,word,produces,action_words,brasser,NA,brew,stir
+item_417,briser/casser,word,produces,action_words,briser/casser,NA,break / break,break
+item_418,brosser,word,produces,action_words,brosser,NA,brush,brush (action)
+item_419,cacher,word,produces,action_words,cacher,NA,hide,hide
+item_420,chanter,word,produces,action_words,chanter,NA,sing,sing
+item_421,chatouiller,word,produces,action_words,chatouiller,NA,tickle,tickle
+item_422,chercher,word,produces,action_words,chercher,NA,look for,look for
+item_423,choisir,word,produces,action_words,choisir,NA,to choose,choose
+item_424,cogner_(`a),word,produces,action_words,cogner (à),NA,knock (at),bang
+item_425,coller,word,produces,action_words,coller,NA,paste,glue (action)
+item_426,conduire,word,produces,action_words,conduire,NA,drive,drive
+item_427,construire/b^at,word,produces,action_words,construire/bâtir,NA,construct / build,build
+item_428,couper,word,produces,action_words,couper,NA,cut,cut
+item_429,courir,word,produces,action_words,courir,NA,run,run
+item_430,couvrir,word,produces,action_words,couvrir,NA,cover,cover (action)
+item_431,cracher,word,produces,action_words,cracher,NA,to spit,spit
+item_432,danser,word,produces,action_words,danser,NA,dance,dance
+item_433,d'ebarquer,word,produces,action_words,débarquer,NA,land,get off
+item_434,d'echirer,word,produces,action_words,déchirer,NA,tear,tear
+item_435,descendre,word,produces,action_words,descendre,NA,go down,get off
+item_436,dessiner,word,produces,action_words,dessiner,NA,draw,draw
+item_437,dire,word,produces,action_words,dire,NA,say,say
+item_438,donner,word,produces,action_words,donner,NA,give,give
+item_439,dormir,word,produces,action_words,dormir,NA,to sleep,sleep
+item_440,'echapper,word,produces,action_words,échapper,NA,escape,drop
+item_441,'ecouter,word,produces,action_words,écouter,NA,listen,listen
+item_442,'ecrire,word,produces,action_words,écrire,NA,to write,write
+item_443,embarquer,word,produces,action_words,embarquer,NA,embark,get on
+item_444,embrasser,word,produces,action_words,embrasser,NA,to kiss,kiss
+item_445,enlever,word,produces,action_words,enlever,NA,to take off,remove
+item_446,entendre,word,produces,action_words,entendre,NA,hear,hear
+item_447,essayer,word,produces,action_words,essayer,NA,try,try
+item_448,essuyer,word,produces,action_words,essuyer,NA,wipe,wipe
+item_449,^etre,word,produces,action_words,être,NA,be,be
+item_450,faire,word,produces,action_words,faire,NA,make,do
+item_451,fermer,word,produces,action_words,fermer,NA,to close,close
+item_452,finir1,word,produces,action_words,finir,NA,finish,finish
+item_453,glisser,word,produces,action_words,glisser,NA,slip,slide (action)
+item_454,go^uter,word,produces,action_words,goûter,NA,to taste,taste
+item_455,grimper,word,produces,action_words,grimper,NA,to climb,climb
+item_456,jeter,word,produces,action_words,jeter,NA,throw,dump
+item_457,jouer,word,produces,action_words,jouer,NA,to play,play
+item_458,lancer,word,produces,action_words,lancer,NA,launch,throw
+item_459,laver,word,produces,action_words,laver,NA,Wash,wash
+item_460,l'echer,word,produces,action_words,lécher,NA,lick,lick
+item_461,lire,word,produces,action_words,lire,NA,read,read
+item_462,manger,word,produces,action_words,manger,NA,eat,eat
+item_463,marcher,word,produces,action_words,marcher,NA,walk,walk
+item_464,mettre,word,produces,action_words,mettre,NA,to put,put
+item_465,monter_(`a_chev,word,produces,action_words,monter (à cheval...),NA,Ride a horse...,ride
+item_466,montrer,word,produces,action_words,montrer,NA,show,show
+item_467,mordre,word,produces,action_words,mordre,NA,bite,bite
+item_468,nager,word,produces,action_words,nager,NA,swim,swim
+item_469,nettoyer,word,produces,action_words,nettoyer,NA,clean,clean (action)
+item_470,ouvrir,word,produces,action_words,ouvrir,NA,open,open (action)
+item_471,parler,word,produces,action_words,parler,NA,speak,talk
+item_472,partager,word,produces,action_words,partager,NA,share,share
+item_473,patiner,word,produces,action_words,patiner,NA,skate,skate (action)
+item_474,peinturer,word,produces,action_words,peinturer,NA,painting,paint (action)
+item_475,penser,word,produces,action_words,penser,NA,think,think
+item_476,pleurer,word,produces,action_words,pleurer,NA,cry,cry
+item_477,pousser,word,produces,action_words,pousser,NA,push,push
+item_478,pouvoir,word,produces,action_words,pouvoir,NA,power,can (auxiliary)
+item_479,prendre,word,produces,action_words,prendre,NA,take,take
+item_480,ramasser,word,produces,action_words,ramasser,NA,to pick up,pick up
+item_481,ranger,word,produces,action_words,ranger,NA,tidy,clean (action)
+item_482,regarder,word,produces,action_words,regarder,NA,watch,look
+item_483,renverser,word,produces,action_words,renverser,NA,overthrow,spill
+item_484,r'eparer,word,produces,action_words,réparer,NA,to repair,fix
+item_485,rester,word,produces,action_words,rester,NA,stay,stay
+item_486,r'eveiller,word,produces,action_words,réveiller,NA,wake,wake
+item_487,sauter,word,produces,action_words,sauter,NA,jump,jump
+item_488,s'echer,word,produces,action_words,sécher,NA,dry,dry (action)
+item_489,se_d'ep^echer,word,produces,action_words,se dépêcher,NA,to hurry up,hurry
+item_490,souffler,word,produces,action_words,souffler,NA,blow,blow
+item_491,sourire,word,produces,action_words,sourire,NA,smile,smile
+item_492,surveiller,word,produces,action_words,surveiller,NA,monitor,watch out
+item_493,taper,word,produces,action_words,taper,NA,type,hit
+item_494,tenir,word,produces,action_words,tenir,NA,hold,hold
+item_495,tirer,word,produces,action_words,tirer,NA,shoot,pull
+item_496,tomber,word,produces,action_words,tomber,NA,fall,fall
+item_497,toucher,word,produces,action_words,toucher,NA,to touch,touch
+item_498,tourner,word,produces,action_words,tourner,NA,turn,turn
+item_499,transporter,word,produces,action_words,transporter,NA,carry,carry
+item_500,travailler,word,produces,action_words,travailler,NA,to work,work (action)
+item_501,trouver,word,produces,action_words,trouver,NA,find,find
+item_502,venir,word,produces,action_words,venir,NA,come,come
+item_503,verser,word,produces,action_words,verser,NA,pay,pour
+item_504,voir,word,produces,action_words,voir,NA,see,see
+item_505,vouloir1,word,produces,action_words,vouloir,NA,want to,want
+item_506,(avoir)_mal,word,produces,descriptive_words,(avoir) mal,NA,(Have) bad,hurt (description)
+item_507,beau/belle,word,produces,descriptive_words,beau/belle,NA,handsome / beautiful,beautiful
+item_508,bien,word,produces,descriptive_words,bien,NA,good,good
+item_509,blanc,word,produces,descriptive_words,blanc,NA,White,white
+item_510,bleu,word,produces,descriptive_words,bleu,NA,blue,blue
+item_511,bon,word,produces,descriptive_words,bon,NA,good,good
+item_512,bris'e/cass'e,word,produces,descriptive_words,brisé/cassé,NA,broken / broken,broken
+item_513,brun,word,produces,descriptive_words,brun,NA,brown,brown
+item_514,capable,word,produces,descriptive_words,capable,NA,able,able
+item_515,chaud,word,produces,descriptive_words,chaud,NA,hot,hot
+item_516,collant,word,produces,descriptive_words,collant,NA,tights,sticky
+item_517,content,word,produces,descriptive_words,content,NA,happy,happy
+item_518,debout,word,produces,descriptive_words,debout,NA,standing,standing
+item_519,d'egueulasse,word,produces,descriptive_words,dégueulasse,NA,disgusting,yucky
+item_520,dernier,word,produces,descriptive_words,dernier,NA,latest,last
+item_521,doux,word,produces,descriptive_words,doux,NA,soft,soft
+item_522,dur,word,produces,descriptive_words,dur,NA,hard,hard
+item_523,endormi,word,produces,descriptive_words,endormi,NA,sleeping,asleep
+item_524,f^ach'e,word,produces,descriptive_words,fâché,NA,angry,angry
+item_525,faim,word,produces,descriptive_words,faim,NA,hunger,hungry
+item_526,fatigu'e,word,produces,descriptive_words,fatigué,NA,tired,tired
+item_527,fini1,word,produces,descriptive_words,fini,NA,finished,finished
+item_528,fort,word,produces,descriptive_words,fort,NA,fort,strong
+item_529,froid,word,produces,descriptive_words,froid,NA,cold,cold
+item_530,gentil,word,produces,descriptive_words,gentil,NA,nice,nice
+item_531,gros/grand,word,produces,descriptive_words,gros/grand,NA,big tall,big
+item_532,haut,word,produces,descriptive_words,haut,NA,top,high
+item_533,jaune,word,produces,descriptive_words,jaune,NA,yellow,yellow
+item_534,joli,word,produces,descriptive_words,joli,NA,pretty,beautiful
+item_535,long,word,produces,descriptive_words,long,NA,long,long
+item_536,lourd,word,produces,descriptive_words,lourd,NA,heavy,heavy
+item_537,mal,word,produces,descriptive_words,mal,NA,wrong,bad
+item_538,malade,word,produces,descriptive_words,malade,NA,sick,sick
+item_539,mieux,word,produces,descriptive_words,mieux,NA,better,better
+item_540,mignon/cute,word,produces,descriptive_words,mignon/cute,NA,cute / cute,cute
+item_541,mouill'e,word,produces,descriptive_words,mouillé,NA,wet,wet (description)
+item_542,noir,word,produces,descriptive_words,noir,NA,black,black
+item_543,nouveau,word,produces,descriptive_words,nouveau,NA,new,new
+item_544,orange2,word,produces,descriptive_words,orange,NA,orange,orange (description)
+item_545,parti,word,produces,descriptive_words,parti,NA,left,all gone
+item_546,pauvre,word,produces,descriptive_words,pauvre,NA,poor,poor
+item_547,petit,word,produces,descriptive_words,petit,NA,small,little (description)
+item_548,peur,word,produces,descriptive_words,peur,NA,fear,scared
+item_549,plein,word,produces,descriptive_words,plein,NA,full,full
+item_550,premier,word,produces,descriptive_words,premier,NA,first,first
+item_551,pris,word,produces,descriptive_words,pris,NA,taken,stuck
+item_552,propre,word,produces,descriptive_words,propre,NA,clean,clean (description)
+item_553,r'eveill'e,word,produces,descriptive_words,réveillé,NA,wake up,awake
+item_554,rond,word,produces,descriptive_words,rond,NA,round,round
+item_555,rouge,word,produces,descriptive_words,rouge,NA,red,red
+item_556,sale,word,produces,descriptive_words,sale,NA,dirty,dirty
+item_557,sec,word,produces,descriptive_words,sec,NA,dry,dry (description)
+item_558,soif,word,produces,descriptive_words,soif,NA,thirst,thirsty
+item_559,tannant/m'echan,word,produces,descriptive_words,tannant/méchant,NA,annoying / mean,naughty
+item_560,tranquille,word,produces,descriptive_words,tranquille,NA,quiet,quiet
+item_561,triste_/_(avoir,word,produces,descriptive_words,triste / (avoir)peine,NA,sad / (have) trouble,sad
+item_562,vert,word,produces,descriptive_words,vert,NA,green,green
+item_563,vide,word,produces,descriptive_words,vide,NA,empty,empty
+item_564,vieux,word,produces,descriptive_words,vieux,NA,old,old
+item_565,vite,word,produces,descriptive_words,vite,NA,quick,fast
+item_566,apr`es,word,produces,time_words,après,NA,after,after
+item_567,aujourd'hui,word,produces,time_words,aujourd'hui,NA,today,today
+item_568,avant,word,produces,time_words,avant,NA,before,before
+item_569,bient^ot,word,produces,time_words,bientôt,NA,soon,soon
+item_570,ce_soir,word,produces,time_words,ce soir,NA,tonight,tonight
+item_571,demain,word,produces,time_words,demain,NA,tomorrow,tomorrow
+item_572,heure,word,produces,time_words,heure,NA,hour,time
+item_573,hier,word,produces,time_words,hier,NA,yesterday,yesterday
+item_574,jour,word,produces,time_words,jour,NA,day,day
+item_575,maintenant,word,produces,time_words,maintenant,NA,now,now
+item_576,matin,word,produces,time_words,matin,NA,morning,morning
+item_577,nuit,word,produces,time_words,nuit,NA,night,night
+item_578,plus_tard,word,produces,time_words,plus tard,NA,later,later
+item_579,tant^ot,word,produces,time_words,tantôt,NA,sometimes,sometimes
+item_580,tout_`a_l'heure,word,produces,time_words,tout à l'heure,NA,see you later,NA
+item_581,`a_eux,word,produces,pronouns,à eux,NA,their,3PL.POSS
+item_582,`a_lui,word,produces,pronouns,à lui,NA,his,3SG.POSS
+item_583,`a_moi,word,produces,pronouns,à moi,NA,to me,1SG.POSS
+item_584,`a_nous,word,produces,pronouns,à nous,NA,ours,1PL.POSS
+item_585,`a_toi,word,produces,pronouns,à toi,NA,yours,2SG.POSS
+item_586,`a_vous,word,produces,pronouns,à vous,NA,to you,2PL.POSS
+item_587,ca,word,produces,pronouns,ça,NA,it,that
+item_588,ce,word,produces,pronouns,ce,NA,this,this
+item_589,celui-l`a,word,produces,pronouns,celui-là,NA,that one,that
+item_590,elle,word,produces,pronouns,elle,NA,she,3SG
+item_591,elles,word,produces,pronouns,elles,NA,they,3PL
+item_592,il,word,produces,pronouns,il,NA,he,3SG
+item_593,ils,word,produces,pronouns,ils,NA,they,3PL
+item_594,je,word,produces,pronouns,je,NA,I,1SG
+item_595,le_mien,word,produces,pronouns,le mien,NA,mine,1SG.POSS
+item_596,le_tien,word,produces,pronouns,le tien,NA,yours,2SG.POSS
+item_597,lui,word,produces,pronouns,lui,NA,him,3SG
+item_598,me,word,produces,pronouns,me,NA,Moi,1SG
+item_599,moi,word,produces,pronouns,moi,NA,me,1SG
+item_600,mon,word,produces,pronouns,mon,NA,my,1SG.POSS
+item_601,nous,word,produces,pronouns,nous,NA,we,1PL
+item_602,n^otre/nos,word,produces,pronouns,nôtre/nos,NA,ours / our,1PL.POSS
+item_603,on,word,produces,pronouns,on,NA,we,1PL
+item_604,son,word,produces,pronouns,son,NA,his,3SG.POSS
+item_605,toi,word,produces,pronouns,toi,NA,you,2SG
+item_606,ton,word,produces,pronouns,ton,NA,your,2SG.POSS
+item_607,tu,word,produces,pronouns,tu,NA,you,2SG
+item_608,vous,word,produces,pronouns,vous,NA,you,2PL
+item_609,comment,word,produces,question_words,comment,NA,how,how
+item_610,lequel/laquelle,word,produces,question_words,lequel/laquelle,NA,which / that,which (question)
+item_611,o`u,word,produces,question_words,où,NA,or,where (question)
+item_612,pourquoi,word,produces,question_words,pourquoi,NA,Why,why
+item_613,quand,word,produces,question_words,quand,NA,when,when (question)
+item_614,quel,word,produces,question_words,quel,NA,what,which (question)
+item_615,qui,word,produces,question_words,qui,NA,who,who
+item_616,quoi,word,produces,question_words,quoi,NA,what,what
+item_617,`a,word,produces,locations,à,NA,at,at
+item_618,`a_c^ot'e_de,word,produces,locations,à côté de,NA,next to,next to
+item_619,`a_terre/par_te,word,produces,locations,à terre/par terre,NA,ground / ground,down
+item_620,au-dessus,word,produces,locations,au-dessus,NA,above,over
+item_621,autour,word,produces,locations,autour,NA,around,around
+item_622,avec,word,produces,locations,avec,NA,with,with
+item_623,comme,word,produces,locations,comme,NA,as,as
+item_624,dans,word,produces,locations,dans,NA,in,in
+item_625,de,word,produces,locations,de,NA,of,of
+item_626,de_l'autre_c^ot,word,produces,locations,de l'autre côté,NA,on the other side,NA
+item_627,devant/en_avant,word,produces,locations,devant/en avant,NA,front / forward,in front
+item_628,en,word,produces,locations,en,NA,in,in
+item_629,en_arri`ere,word,produces,locations,en arrière,NA,backward,behind
+item_630,en_bas,word,produces,locations,en bas,NA,below,below
+item_631,en_dehors,word,produces,locations,en dehors,NA,outside,outside
+item_632,en_haut,word,produces,locations,en haut,NA,up,up
+item_633,ici,word,produces,locations,ici,NA,right here,here
+item_634,l`a/l`a-bas,word,produces,locations,là/là-bas,NA,here / there,there
+item_635,loin,word,produces,locations,loin,NA,far,far
+item_636,par,word,produces,locations,par,NA,a pair,by
+item_637,par-dessus,word,produces,locations,par-dessus,NA,par-dessus,over
+item_638,pour,word,produces,locations,pour,NA,pour,for
+item_639,sous/en-dessous,word,produces,locations,sous/en-dessous,NA,underneath,under
+item_640,sur,word,produces,locations,sur,NA,on,on
+item_641,y,word,produces,locations,y,NA,there,there
+item_642,autre,word,produces,quantifiers,autre,NA,other,other
+item_643,beaucoup,word,produces,quantifiers,beaucoup,NA,a lot,a lot
+item_644,de/du,word,produces,quantifiers,de/du,NA,each of /,some
+item_645,des,word,produces,quantifiers,des,NA,of the,some
+item_646,encore,word,produces,quantifiers,encore,NA,again,again
+item_647,le/la,word,produces,quantifiers,le/la,NA,the,the
+item_648,m^eme,word,produces,quantifiers,même,NA,even,same
+item_649,pareil,word,produces,quantifiers,pareil,NA,the same,similar
+item_650,pas,word,produces,quantifiers,pas,NA,not,not
+item_651,plus,word,produces,quantifiers,plus,NA,more,more
+item_652,plusieurs,word,produces,quantifiers,plusieurs,NA,many,many
+item_653,tout/toute,word,produces,quantifiers,tout/toute,NA,any / all,all
+item_654,trop,word,produces,quantifiers,trop,NA,too much,too
+item_655,un/une,word,produces,quantifiers,un/une,NA,a a,a
+item_656,un_autre,word,produces,quantifiers,un autre,NA,another,another
+item_657,un_peu,word,produces,quantifiers,un peu,NA,a little,little (amount)
+item_658,alors,word,produces,connecting_words,alors,NA,so,so
+item_659,aussi,word,produces,connecting_words,aussi,NA,also,also
+item_660,et,word,produces,connecting_words,et,NA,and,and
+item_661,mais,word,produces,connecting_words,mais,NA,but,but
+item_662,parce_que,word,produces,connecting_words,parce que,NA,because,because
+item_663,puis,word,produces,connecting_words,puis,NA,then,then
+item_664,si,word,produces,connecting_words,si,NA,if,if
+item_665,Votre_enfant_pa1,how_use_words,not yet; sometimes; often,NA,Votre enfant parle-t-il d’événements passés ou de personnes qui ne sont pas présentes? Par exemple si vous avez vu une parade ensemble la semaine dernière lui arrive-t-il de vous en “parler” en mentionnant des mots comme “parade” “clown” etc.?,NA,does your child ever talk about past events or people who are not present?,NA
+item_666,Votre_enfant_pa2,how_use_words,not yet; sometimes; often,NA,Votre enfant parle-t-il de choses qui se produiront plus tard? Par exemple dirait-il “tchou tchou” ou “avion” avant de partir en voyage ou “balançoire” avant d’aller au parc?,NA,does your child ever talk about something that's going to happen in the future?,NA
+item_667,Votre_enfant_pa3,how_use_words,not yet; sometimes; often,NA,Votre enfant parle-t-il d’objets qui ne sont pas présents? Par exemple demande-t-il un jouet qui n’est pas là mentionne-t-il un animal hors de son champ de vision ou une personne absente?,NA,does your child talk a bout objects that are not present?,NA
+item_668,Votre_enfant_co,how_use_words,not yet; sometimes; often,NA,Votre enfant comprend-il quand vous lui demandez un objet qui n’est pas dans la même pièce? Par exemple va-t-il dans sa chambre chercher son toutou lorsque vous dites “Où il est ton nounours?”,NA,does your child understand if you ask for something that is not in the room?,NA
+item_669,Votre_enfant_po,how_use_words,not yet; sometimes; often,NA,Votre enfant pointe-t-il ou prend-il un objet en nommant une personne absente à qui appartient cet objet? Par exemple lui arrive-t-il de montrer les souliers de sa maman en disant “maman”?,NA,does your child ever pick up or point to an object and name an absent person to whom the object belongs?,NA
+item_670,aime,word_endings,produces,NA,aime,NA,like,NA
+item_671,aimons,word_endings,produces,NA,aimons,NA,like,NA
+item_672,aimez,word_endings,produces,NA,aimez,NA,like,NA
+item_673,aimer2,word_endings,produces,NA,aimer,NA,like,NA
+item_674,finis1,word_endings,produces,NA,finis,NA,finished,NA
+item_675,finissons,word_endings,produces,NA,finissons,NA,finish,NA
+item_676,finissez,word_endings,produces,NA,finissez,NA,finish,NA
+item_677,finir2,word_endings,produces,NA,finir,NA,finish,NA
+item_678,veux,word_endings,produces,NA,veux,NA,want,NA
+item_679,voulons,word_endings,produces,NA,voulons,NA,want,NA
+item_680,voulez,word_endings,produces,NA,voulez,NA,want,NA
+item_681,vouloir2,word_endings,produces,NA,vouloir,NA,want,NA
+item_682,va_manger,word_forms_verbs,produces,NA,va manger,NA,go eat,NA
+item_683,mangerai,word_forms_verbs,produces,NA,mangerai,NA,eat,NA
+item_684,fini2,word_forms_verbs,produces,NA,fini,NA,finished,NA
+item_685,a_fini,word_forms_verbs,produces,NA,a fini,NA,has finished,NA
+item_686,finissais,word_forms_verbs,produces,NA,finissais,NA,finishing,NA
+item_687,mange,word_forms_verbs,produces,NA,mange,NA,eat,NA
+item_688,finis2,word_forms_verbs,produces,NA,finis,NA,finished,NA
+item_689,viens,word_forms_verbs,produces,NA,viens,NA,come,NA
+item_690,ai,word_forms_verbs,produces,NA,ai,NA,have,NA
+item_691,as/a,word_forms_verbs,produces,NA,as/a,NA,as / a,NA
+item_692,avons,word_forms_verbs,produces,NA,avons,NA,have,NA
+item_693,avez,word_forms_verbs,produces,NA,avez,NA,have,NA
+item_694,ont,word_forms_verbs,produces,NA,ont,NA,have,NA
+item_695,suis,word_forms_verbs,produces,NA,suis,NA,am,NA
+item_696,es/est,word_forms_verbs,produces,NA,es/est,NA,is,NA
+item_697,sommes,word_forms_verbs,produces,NA,sommes,NA,are,NA
+item_698,^etes,word_forms_verbs,produces,NA,êtes,NA,are,NA
+item_699,sont,word_forms_verbs,produces,NA,sont,NA,are,NA
+item_700,vais,word_forms_verbs,produces,NA,vais,NA,am going to,NA
+item_701,vas/va,word_forms_verbs,produces,NA,vas/va,NA,going / going,NA
+item_702,allons,word_forms_verbs,produces,NA,allons,NA,will,NA
+item_703,allez,word_forms_verbs,produces,NA,allez,NA,going,NA
+item_704,vont,word_forms_verbs,produces,NA,vont,NA,will,NA
+item_705,Votre_enfant_ut,word_endings,yes; no,NA,Votre enfant utilise-t-il la forme masculine et féminine d’un même adjectif (par ex. gros/grosse beau/belle)?,NA,Does your child use the masculine and feminine forms of the same word?,NA
+item_706,Votre_enfant_a-,combine,not yet; sometimes; often,NA,Votre enfant a-t-il commencé à combiner des mots? Par exemple dit-il des choses comme “papa parti” ou “encore jus”?,NA,"Has your child begun to combine words? For example he says things like ""daddy party"" or ""more juice""?",NA
+item_707,Auto_papa_/_Aut,complexity,simple; complex,NA,Auto papa / Auto a papa,NA,Dad Auto / Auto is dad's,NA
+item_708,Toutou_b'eb'e_/,complexity,simple; complex,NA,Toutou bébé / Toutou au bébé.,NA,Doggie baby / doggie to baby.,NA
+item_709,Fille_maison_/_,complexity,simple; complex,NA,Fille maison / Fille dans maison,NA,Daughter home / girl in home,NA
+item_710,Biscuit_maman_/,complexity,simple; complex,NA,Biscuit maman / Buiscuit pour maman,NA,Cookie mom / Cookie for mom,NA
+item_711,Chien_table_/_C,complexity,simple; complex,NA,Chien table / Chien sur (la) table,NA,table dog / dog on (the) table,NA
+item_712,Encore_biscuit_,complexity,simple; complex,NA,Encore biscuit / Encore des biscuits,NA,Again biscuit / Again some cookies,NA
+item_713,Donne_pomme_mam,complexity,simple; complex,NA,Donne pomme maman / Donne une pomme maman,NA,Give apple mom / Give an apple mom,NA
+item_714,Papa_parti_/_Pa1,complexity,simple; complex,NA,Papa parti / Papa est parti,NA,Papa gone / dad is gone,NA
+item_715,Pelle_Pascal_/_,complexity,simple; complex,NA,Pelle Pascal / Pascal a une pelle,NA,Pascal shovel / Pascal has a shovel,NA
+item_716,Belle_ta_robe_/,complexity,simple; complex,NA,Belle ta robe / Ta robe est belle,NA,Beautiful your dress / Your dress is beautiful,NA
+item_717,Ou_maman?_/_Est,complexity,simple; complex,NA,Ou maman? / Est ou maman?,NA,Where Mom? / Is where mom?,NA
+item_718,Mon_camion_/_C',complexity,simple; complex,NA,Mon camion / C'est mon camion,NA,My truck / This is my truck,NA
+item_719,Chat_la_/_(Il)_,complexity,simple; complex,NA,Chat la / (Il) y a un chat,NA,Cat here / Here's a cat,NA
+item_720,Lancer_balle_/_,complexity,simple; complex,NA,Lancer balle / Lance (la) balle,NA,Throwing ball / Throw (the) ball,NA
+item_721,Pas_laver_poup',complexity,simple; complex,NA,Pas laver poupée / Lave pas poupée,NA,Not wash doll / Don't wash the doll,NA
+item_722,Encore_jus_/_Ve,complexity,simple; complex,NA,Encore jus / Veux d'autre jus,NA,Again juice /want other juice,NA
+item_723,Regarder_t'el'e,complexity,simple; complex,NA,Regarder télé / Veux regarder télé,NA,Watching TV / want to watch TV,NA
+item_724,Donner_un_bec_/,complexity,simple; complex,NA,Donner un bec / Veux donner un bec,NA,Leave a beak / want to give a beak,NA
+item_725,Toi_saute?_/_Pe,complexity,simple; complex,NA,Toi saute? / Peux-tu sauter?,NA,You jump? / Can you jump?,NA
+item_726,Moi_pas_faire_c,complexity,simple; complex,NA,Moi pas faire ça. / Moi peux pas faire ça.,NA,I do that. / I can not do that.,NA
+item_727,Pipi_dehors_min,complexity,simple; complex,NA,Pipi dehors minou. / Minou fait pipi dehors,NA,Pee outside kitty. / Kitty peed outside,NA
+item_728,Pas_marcher_la_,complexity,simple; complex,NA,Pas marcher la / Faut pas marcher la,NA,Not walk there / Shouldn't walk there,NA
+item_729,Moi_livre_/_Le_,complexity,simple; complex,NA,Moi livre / Le livre a moi,NA,Me Book / The book that's mine,NA
+item_730,Mange_une_pomme,complexity,simple; complex,NA,Mange une pomme / Je mange une pomme,NA,Eating an apple / I eat an apple,NA
+item_731,La_t^ete_tomb'e,complexity,simple; complex,NA,La tête tombé. / Il (est) tombé sur la tête.,NA,The head fell. / He fell on his head.,NA
+item_732,Papa_parti_/_Pa2,complexity,simple; complex,NA,Papa parti / Papa parti travailler,NA,Papa left / dad left for work,NA
+item_733,Regarde-moi_/_R,complexity,simple; complex,NA,Regarde-moi / Regarde-moi danser,NA,Look at me / Look at me dancing,NA
+item_734,Donne_cuill`ere,complexity,simple; complex,NA,Donne cuillère. / Donne (la) cuillère pour manger,NA,Give spoon. / Give (the) spoon to eat,NA
+item_735,Veux_biscuits._,complexity,simple; complex,NA,Veux biscuits. / Veux biscuits et/pis lait.,NA,Want biscuits. / Want biscuits and milk.,NA
+item_736,On_a_fait_ca._/,complexity,simple; complex,NA,On a fait ça. / Sophie et/pis moi a fait ça.,NA,We did that. / Sophie and me did this.,NA
+item_737,Je_chante_une_c,complexity,simple; complex,NA,Je chante une chanson. / Je chante une chanson pour toi.,NA,I sing a song. / I sing a song for you.,NA
+item_738,Pas_lire_le_liv,complexity,simple; complex,NA,Pas lire le livre. / Veux pas tu lis le livre,NA,Not read the book. / Don't  want you read the book,NA
+item_739,C'est_maman_cha,complexity,simple; complex,NA,C’est maman chante. / C'est maman qui chante,NA,It's mom sings. / It's Mom that's singing,NA
+item_740,Je_veux_lui._/_,complexity,simple; complex,NA,Je veux lui. / Je veux lui que tu as.,NA,I want him. / I want it what you have.,NA
+item_741,Regarde_ca._/_R,complexity,simple; complex,NA,Regarde ça. / Regarde ce que j’ai.,NA,Look at that. / Look what I have.,NA
+item_742,B'eb'e_rit._/_B,complexity,simple; complex,NA,Bébé rit. / Bébé rit parce que content.,NA,Baby laughs. / Baby laughs because happy.,NA
+item_743,Le_chapeau_de_l,complexity,simple; complex,NA,Le chapeau de le monsieur. / Le chapeau du monsieur.,NA,The hat of the man. / The gentleman's hat.,NA
+item_744,Mon_camion_/_Ca,complexity,simple; complex,NA,Mon camion / Camino Simon,NA,My truck / Truck (name of child),NA
+item_745,Moi_sali_/_Simo,complexity,simple; complex,NA,Moi sali / Simon sali,NA,Me dirty / (name of child) dirty,NA
+item_746,Prends-moi_/_Pr,complexity,simple; complex,NA,Prends-moi / Prends Simon,NA,Take me / Take (name of child),NA
+item_747,Veux_jus_/_Simo,complexity,simple; complex,NA,Veux jus / Simon jus,NA,Want juice / (name of child) juice,NA
+item_748,Toi_belle_/_Mam,complexity,simple; complex,NA,Toi belle / Maman belle,NA,You pretty / Mom pretty,NA
+item_749,Brosse_les_dent,complexity,simple; complex,NA,Brosse les dents / Brosse dents maman,NA,Brush teeth / Brush teeth Mom,NA
+item_750,Il_dort_/_Le_ch,complexity,simple; complex,NA,Il dort / Le chat dort,NA,He sleeps/ The cat sleeps,NA
+item_751,Ouvre-la_/_Ouvr,complexity,simple; complex,NA,Ouvre-la / Ouvre la porte,NA,Open up / Open the door,NA
+item_752,C'est_chaud_/_L,complexity,simple; complex,NA,C'est chaud / La soupe est chaude,NA,It's hot / The soupe is hot,NA
+item_753,Pas_faire_ca_/_,complexity,simple; complex,NA,Pas faire ca / Pas laver cheveux,NA,Don't dothat / Don't wash hair,NA
+item_754,Jus_dedans_/_Ju,complexity,simple; complex,NA,Jus dedans / Jus dans tasse,NA,Juice inside / Juice in cup,NA
