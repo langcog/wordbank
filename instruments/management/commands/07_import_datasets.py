@@ -89,7 +89,6 @@ class Command(BaseCommand):
                 except:
                     pass
                 admin.delete()
-            return
             print('   Importing records')
             import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_language, instrument_form, splitcol, norming, date_format, dataset_origin)
             
