@@ -456,22 +456,6 @@
         "has_grammar": false
     },
     {
-        "language": "Henry Test Language",
-        "form": "WG",
-        "file": "raw_data/Henry_WG/[Henry_WG].csv",
-        "age_min": 8,
-        "age_max": 36,
-        "has_grammar": false
-    },
-    {
-        "language": "Henry Second Language",
-        "form": "WG",
-        "file": "raw_data/Henry_Lang_2_WG/[Henry_WG].csv",
-        "age_min": 8,
-        "age_max": 36,
-        "has_grammar": false
-    },
-    {
         "language": "English (Irish)",
         "form": "WS",
         "file": "raw_data/English_Irish_WS/[English_Irish_WS].csv",
