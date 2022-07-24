@@ -354,7 +354,7 @@
     {
         "language": "English (British)",
         "form": "Oxford CDI",
-        "file": "raw_data/English_British_Oxford/[_Oxford].csv",
+        "file": "raw_data/English_British_Oxford/[EnglishBritish_Oxford].csv",
         "age_min": 12,
         "age_max": 25,
         "has_grammar": false
@@ -610,7 +610,7 @@
     {
         "language": "Finnish",
         "form": "WSShort",
-        "file": "raw_data/Finnish_WSShort/[Finnish_WSShort].csv",
+        "file": "raw_data/Finnish_WSShort/[Finnish__WSShort].csv",
         "age_min": 16,
         "age_max": 36,
         "has_grammar": false
