@@ -1,11 +1,11 @@
 type,value,data_value
 sex,M,M
 sex,F,F
-ethnicity,W,1
-ethnicity,B,2
-ethnicity,,3
-ethnicity,A,6
-ethnicity,O,7
+ethnicity,,1
+ethnicity,,2
+ethnicity,H,3
+ethnicity,,6
+ethnicity,,7
 race,W,1
 race,B,2
 race,,3

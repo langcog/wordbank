@@ -1,12 +1,18 @@
 type,value,data_value
 sex,M,1
 sex,F,0
-ethnicity,,1
-ethnicity,,2
-ethnicity,,3
-ethnicity,,4
-ethnicity,,5
-ethnicity,,6
+ethnicity,N,1
+ethnicity,H,2
+ethnicity,H,3
+ethnicity,N,4
+ethnicity,N,5
+ethnicity,N,6
+race,B,1
+race,W,2
+race,B,3
+race,W,4
+race,A,5
+race,O,6
 mom_ed,none,0
 mom_ed,some secondary,1
 mom_ed,secondary,2

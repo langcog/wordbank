@@ -1,7 +1,10 @@
 type,value,data_value
 sex,M,M
 sex,F,F
-race,H,H
+ethnicity,H,H
+ethnicity,,W
+ethnicity,,M
+race,,H
 race,W,W
 race,O,M
 mom_ed,primary,6
