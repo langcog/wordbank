@@ -308,8 +308,8 @@ item_306,detras,word,locations,understands; produces,Detrás / atrás,NA,detrás
 item_307,em_cima,word,locations,understands; produces,Em cima / acima,NA,em_cima,Above or on (as in on the table=em cima da mesa),above,NA
 item_308,fora,word,locations,understands; produces,Fora / lá fora,NA,fora,Outside,outside,NA
 item_309,longe,word,locations,understands; produces,Longe,NA,longe,Far,far,NA
-item_310,nao,word,locations,understands; produces,Não,NA,não,No,no,NA
-item_311,sim,word,locations,understands; produces,Sim,NA,sim,Yes,yes,NA
+item_310,nao,word,games_routines,understands; produces,Não,NA,não,No,no,NA
+item_311,sim,word,games_routines,understands; produces,Sim,NA,sim,Yes,yes,NA
 item_312,mais,word,quantifiers,understands; produces,Mais,NA,mais,More/ Plus/ Further,more,NA
 item_313,muito,word,quantifiers,understands; produces,Muito,NA,muito,Much/ lot,much,NA
 item_314,nada,word,quantifiers,understands; produces,Nada,NA,nada,Nothing,nothing,NA
