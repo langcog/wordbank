@@ -1,4 +1,3 @@
-[![Stories in Ready](https://badge.waffle.io/langcog/wordbank.png?label=ready&title=Ready)](https://waffle.io/langcog/wordbank)
 Wordbank
 ========
 
