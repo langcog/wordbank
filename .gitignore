@@ -22,3 +22,4 @@ wordbank/secret_key*
 
 .elasticbeanstalk/app_versions/
 *.sublime*
+custom_env_var

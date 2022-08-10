@@ -1,9 +1,28 @@
-.about {
+/*.about {
   font-size: 18px;
-/*  font-family: "Lucida Grande"; */
+  font-family: "Lucida Grande"; 
   margin-top: 20px;
 }
-
-p {
+*/
+/*p {
   margin-bottom:20px;
+}
+*/
+
+/*.thumbnail {*/
+  /*height: 340px;*/
+/*}*/
+
+.thumbnail > img, .thumbnail > a > img  {
+  overflow-y: hidden;
+}
+
+.thumbnail h3 {
+  margin-top: 0.2em;
+  font-size: 21px;
+}
+
+.thumbnail p {
+  margin-bottom: 0;
+  font-size: 14px;
 }

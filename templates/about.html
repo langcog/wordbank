@@ -5,6 +5,8 @@
 
 {% block content %}
 
+<link rel="stylesheet" href={% static "css/about.css" %}>
+
 <div class = "row">
     <div class="col-md-9">
         <h1 class="title toc-ignore">About Us</h1>
@@ -44,17 +46,4 @@
         </div>
     </div>
 </div>
-{% endblock %}
-
-{% block styles %}
-{{ block.super }}
-<style>
-.thumbnail {
-    height: 320px;
-}
-.thumbnail > img, .thumbnail > a > img  {
-    overflow-y: hidden;
-    
-}
-</style>
 {% endblock %}

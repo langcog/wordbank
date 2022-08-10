@@ -48,8 +48,8 @@ ALLOWED_HOSTS = [
     '127.0.0.1', 
 	'localhost', 
     'wordbank.stanford.edu',
-    '.us-west-2.elasticbeanstalk.com',
-    gethostname(), gethostbyname(gethostname()), # AWS hosts for Healthchecker
+    '.us-west-2.elasticbeanstalk.com'
+    #gethostname(), gethostbyname(gethostname()), # AWS hosts for Healthchecker
 ]
 
 # Local time zone for this installation. Choices can be found here:

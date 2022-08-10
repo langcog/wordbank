@@ -40,15 +40,6 @@ class Home(View):
         js_lang_stats = {"name": "", "children": [{"name": self.lang_format(language), "count": n} for language, n in lang_stats.items()]}
         return render(request, 'home.html', {'data': data, 'lang_stats': json.dumps(js_lang_stats)})
 
-
-class Publications(View):
-
-    def get(self, request):
-        publications = json.loads(open('static/json/publications.json', encoding='utf8').read())
-        #publications = json.loads(urllib.request.urlopen(static('json/publications.json')).read())
-        return render(request, 'publications.html', {'publications': publications})
-
-
 class Contributors(View):
 
     def get(self, request):
@@ -109,9 +100,9 @@ class Blog(View):
                 'author': entry['author']['displayName']
             })
 
-        events = json.loads(open('static/json/events.json', encoding="utf8").read())
+        events = json.loads(open('wordbank/static/json/events.json', encoding="utf8").read())
     
-        resources = json.loads(open('static/json/resources.json', encoding="utf8").read())
+        resources = json.loads(open('wordbank/static/json/resources.json', encoding="utf8").read())
 
         return render(request, 'blog.html', {'entries': entries, 'events': events, 'resources': resources})
 
@@ -123,6 +114,7 @@ class Faq(View):
 class About(View):
 
     def get(self, request):
-        publications = json.loads(open('static/json/publications.json', encoding='utf8').read())
+        publications = json.loads(open('wordbank/static/json/publications.json', encoding='utf8').read())
+        persons = json.loads(open('wordbank/static/json/persons.json', encoding='utf8').read())
         #publications = json.loads(urllib.request.urlopen(static('json/publications.json')).read())
-        return render(request, 'about.html', {'publications': publications})
+        return render(request, 'about.html', {'publications': publications, 'persons': persons})

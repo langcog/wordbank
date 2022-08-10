@@ -66,8 +66,6 @@ $.getJSON("static/json/analyses.json", function(data) {
     var app = data[i];
     if (app['type'] == 'data') {
       var li = $('<li>').attr('role', "presentation").prependTo(menuData)
-    } else if (app['type'] == 'reports') {
-      var li = $('<li>').attr('role', "presentation").prependTo(menuReports)
     } else {
       var li = $('<li>').attr('role', "presentation").prependTo(main)
     }
