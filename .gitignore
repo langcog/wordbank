@@ -21,3 +21,4 @@ pip-selfcheck.json
 wordbank/secret_key*
 
 .elasticbeanstalk/app_versions/
+*.sublime*
