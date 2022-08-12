@@ -6,4 +6,4 @@ from common.models import *
 class Command(BaseCommand):
 
     def handle(self, *args, **options):
-        Category.objects.all().delete()
+        ItemCategory.objects.all().delete()

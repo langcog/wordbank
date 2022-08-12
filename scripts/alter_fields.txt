@@ -1,5 +1,5 @@
 ALTER TABLE common_iteminfo MODIFY definition blob;
-ALTER TABLE common_iteminfo MODIFY gloss blob;
+ALTER TABLE common_iteminfo MODIFY english_gloss blob;
 
 ALTER TABLE common_source MODIFY citation blob;
 ALTER TABLE common_source MODIFY contributor blob;

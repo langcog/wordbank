@@ -19,7 +19,7 @@ class ImportHelper:
         self.administrations = {}
 
         self.datemode = None
-        self.missing_values = {'Null', '#NULL!', '', ' ', 'Missing', 'Unknown/other', '?', 'NA', '99'}
+        self.missing_values = {'#null!','Null', 'null', '#NULL!', '', ' ', 'Missing', 'missing', 'Unknown/other', 'unknown/other', '?', 'na', 'NA', '99'}
 
     @staticmethod
     def compute_age(date_of_birth, date_of_test):
@@ -49,23 +49,31 @@ class ImportHelper:
         value = row_values[self.col_map[column]]
         if type(value) == str or type(value) == str:
             value = value.strip()
-        if not value in self.missing_values:
-            if field_type in ('study_id', 'study_momed', 'study_family_id'):
+        try:
+            if field_type in ('study_id', 'study_momed', 'study_family_id','language'):
                 return value
-            elif field_type in ('birth_order', 'data_age'):
+            elif field_type in ('birth_order', 'data_age', 'study_internal_age'):
                 return int(float(value))
             elif field_type in ('norming'):
                 return value == 'TRUE'
             elif field_type in ('date_of_birth, date_of_test'):
                 return self.format_date(value)
-            elif field_type in ('ethnicity', 'sex', 'mom_ed', 'zygosity') or group == 'item':
+            elif field_type in ('race', 'ethnicity', 'sex', 'mom_ed', 'zygosity','condition') or group == 'item':
                 value = self.value_typing(value).lower()
                 if self.splitcol and field_type == 'word':
                     value += column[-1]
                 try:
                     return self.value_mapping[field_type][value]
                 except:
-                    raise KeyError("Value mapping doesn't have entry for field type %s and value %s" % (field_type, value))
+                    raise KeyError(f"Value mapping doesn't have entry for field type { field_type } and value { value }.  { column }")
+        except Exception:
+            if self.splitcol and field_type == 'word':
+                    value = value[:-1]
+            if value in self.missing_values:
+                return None
+            else:
+                raise KeyError(f"Value mapping doesn't have entry for field type { field_type } and value { value }.  { column }")
+            
 
     def resolve_values(self, value0, value1):
         if value0 == 'produces' or value1 == 'produces':
@@ -85,7 +93,11 @@ class ImportHelper:
                 results['momed'] = momed_value
                 study_momed_value = self.get_field_value(column, 'study_momed', group, row_values)
                 results['study_momed'] = study_momed_value
-            else:
+            elif field_type in ['condition','language']:
+                if results[field_type] == None: results[field_type] = []
+                if self.get_field_value(column, field_type, group, row_values) != None:
+                    results[field_type].append(self.get_field_value(column, field_type, group, row_values))
+            else:    
                 field_value = self.get_field_value(column, field_type, group, row_values)
                 if self.splitcol and field in results:
                     results[field] = self.resolve_values(results[field], field_value)
@@ -102,7 +114,7 @@ class ImportHelper:
                 field_type, value, data_value = row_values[:3]
                 value = self.value_typing(value)
                 data_value = self.value_typing(data_value).lower()
-                if data_value is not None and data_value != '':
+                if data_value is not None: # and data_value != '':
                     value_mapping[field_type][data_value] = value
         return value_mapping
 
@@ -161,6 +173,7 @@ class ImportHelper:
             self.field_mapping_nrows = len(field_mapping_reader)
             self.get_field_mapping_row = lambda row: field_mapping_reader[row]
 
+
             data_file = open('.'.join(self.data_file.split('.')[:-1]) + '_data.csv', newline='', encoding='utf8')
             data_reader = list(csv.reader(data_file))
             self.data_nrows = len(data_reader)
@@ -171,7 +184,6 @@ class ImportHelper:
             raise IOError("Instrument file must be xlsx, xls, or csv.")
 
     def get_row_data(self, row):
-
         row_values = self.get_data_row(row)
         if len(row_values) > 1:
 
@@ -195,9 +207,9 @@ class ImportHelper:
             return child, administration
 
     def import_data(self):
-
         self.get_meta_data()
         self.value_mapping = self.map_values()
+        print(self.value_mapping)
         self.field_mapping = self.map_fields()
         self.col_map = self.map_cols()
 

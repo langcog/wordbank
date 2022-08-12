@@ -27,8 +27,9 @@ class Home(View):
         return value
 
     def get(self, request):
-        children = Administration.objects.values('instrument__language', 'source', 'child__study_id').distinct()
+        children = Administration.objects.values('instrument__language', 'dataset', 'child__study_internal_id').distinct()
         num_children = len(children)
+        num_children = Child.objects.all().count()
         child_counts = Counter([child['instrument__language'] for child in children])
         lang_stats = dict(child_counts)
         num_languages = len(child_counts)
@@ -39,22 +40,13 @@ class Home(View):
         js_lang_stats = {"name": "", "children": [{"name": self.lang_format(language), "count": n} for language, n in lang_stats.items()]}
         return render(request, 'home.html', {'data': data, 'lang_stats': json.dumps(js_lang_stats)})
 
-
-class Publications(View):
-
-    def get(self, request):
-        publications = json.loads(open('static/json/publications.json', encoding='utf8').read())
-        #publications = json.loads(urllib.request.urlopen(static('json/publications.json')).read())
-        return render(request, 'publications.html', {'publications': publications})
-
-
 class Contributors(View):
 
     def get(self, request):
-        sources = Source.objects.annotate(n = Count('administration')).order_by('instrument_language')
+        sources = Dataset.objects.annotate(n = Count('administration')).order_by('instrument__language')
         language_sources_dict = defaultdict(lambda: defaultdict(int))
         for source in sources:
-            language_sources_dict[source.instrument_language][(source.contributor, source.instrument_form, source.license, source.citation)] += source.n
+            language_sources_dict[source.instrument.language][(source.contributor, source.instrument.form, source.license, source.citation)] += source.n
 
         languages = sorted(language_sources_dict.keys())
         language_sources_list = [[language, dict(language_sources_dict[language])] for language in languages]
@@ -108,9 +100,9 @@ class Blog(View):
                 'author': entry['author']['displayName']
             })
 
-        events = json.loads(open('static/json/events.json', encoding="utf8").read())
+        events = json.loads(open('wordbank/static/json/events.json', encoding="utf8").read())
     
-        resources = json.loads(open('static/json/resources.json', encoding="utf8").read())
+        resources = json.loads(open('wordbank/static/json/resources.json', encoding="utf8").read())
 
         return render(request, 'blog.html', {'entries': entries, 'events': events, 'resources': resources})
 
@@ -122,4 +114,7 @@ class Faq(View):
 class About(View):
 
     def get(self, request):
-        return render(request, 'about.html', {})
+        publications = json.loads(open('wordbank/static/json/publications.json', encoding='utf8').read())
+        persons = json.loads(open('wordbank/static/json/persons.json', encoding='utf8').read())
+        #publications = json.loads(urllib.request.urlopen(static('json/publications.json')).read())
+        return render(request, 'about.html', {'publications': publications, 'persons': persons})

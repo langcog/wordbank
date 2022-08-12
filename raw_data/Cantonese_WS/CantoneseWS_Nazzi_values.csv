@@ -1,0 +1,20 @@
+type,value,data_value
+sex,M,Male
+sex,F,Female
+mom_ed,some secondary,Lower Secondary and below
+mom_ed,secondary,Upper Secondary
+mom_ed,some college,Diploma
+mom_ed,some college,Associate Degree
+mom_ed,college,Bachelor Degree
+mom_ed,graduate,Master Degree
+word,produces,1
+word,,0
+talk_functions,often,2
+talk_functions,sometimes,1
+talk_functions,never,0
+sentence_structure,often,2
+sentence_structure,sometimes,1
+sentence_structure,never,0
+combine,often,2
+combine,sometimes,1
+combine,never,0

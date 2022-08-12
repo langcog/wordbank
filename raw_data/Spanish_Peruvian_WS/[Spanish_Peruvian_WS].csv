@@ -1,0 +1,601 @@
+itemID,item,type,category,choices,definition,complexity_category,gloss,uni_lemma
+item_1,achis,word,sounds,produces,achís/achús,NA,achoo,achoo
+item_2,auuuuu,word,sounds,produces,auuuuu (lobo),NA,awoo (wolf),awoo
+item_3,beee,word,sounds,produces,beee (oveja),NA,baa (sheep),baa baa
+item_4,brumbrum,word,sounds,produces,brumbrum (carro),NA,vroom (cart),vroom
+item_5,cua_cua,word,sounds,produces,cua-cuá (pato),NA,quack quack (duck),quack quack
+item_6,ah,word,sounds,produces,¿ah?/¿eh?,NA,huh,NA
+item_7,guau_guau,word,sounds,produces,guau-guau (perro),NA,woof woof (dog),woof woof
+item_8,iii_aaaa,word,sounds,produces,iii-aaaa (burro),NA,hee haw (donkey),hee haw
+item_9,miau,word,sounds,produces,miau (gato),NA,meow (cat),meow
+item_10,pacatan,word,sounds,produces,pacatán/tacatá (caballo),NA,galloping (horse),clip clop
+item_11,pio_pio,word,sounds,produces,pío-pío (pollito),NA,peep peep (chick),tweet tweet
+item_12,pucha,word,sounds,produces,pucha/uuyy,NA,wow,wow
+item_13,pum,word,sounds,produces,pum/pumba,NA,thump,thump
+item_14,quiquiriqui,word,sounds,produces,quiquiriquí (gallo),NA,cockadoodledoo (rooster),cockadoodledoo
+item_15,rin_rin,word,sounds,produces,rin rin (timbre/teléfono),NA,ring ring,ring ring
+item_16,tic_tac,word,sounds,produces,tic-tac (reloj),NA,tick tock (clock),tick tock
+item_17,tiii_tiii,word,sounds,produces,tiii-tiii/piii-piii (carro),NA,beep beep,beep beep
+item_18,upa,word,sounds,produces,upa,NA,upa,uh oh
+item_19,uuuuuu,word,sounds,produces,uuuuuu (sirena de carro),NA,wee woo (siren),wee woo
+item_20,a_ver,word,games_routines,produces,a ver,NA,let's see,NA
+item_21,a_comer,word,games_routines,produces,a comer/ven a comer/vamos a comer,NA,come eat,NA
+item_22,chau,word,games_routines,produces,chau/adiós,NA,bye,bye
+item_23,a_dormir,word,games_routines,produces,a dormir/ven a dormir/vamos a dormir/a la cama,NA,go to bed,go to bed
+item_24,aplausos,word,games_routines,produces,aplausos,NA,applause,clap
+item_25,besitos,word,games_routines,produces,besitos,NA,little kisses,kiss
+item_26,bueno_bien,word,games_routines,produces,bueno/bien,NA,ok,ok
+item_27,buenos_dias,word,games_routines,produces,buenos días/buenas noches,NA,good morning,good morning
+item_28,carino,word,games_routines,produces,cariño,NA,dear,NA
+item_29,cochino,word,games_routines,produces,cochino(a),NA,pig,pig
+item_30,cuidado,word,games_routines,produces,cuidado,NA,watch out,watch out
+item_31,dejame,word,games_routines,produces,déjame/suéltame,NA,let me,let me
+item_32,eso_no,word,games_routines,produces,eso no,NA,not that,don't
+item_33,espera,word,games_routines,produces,espera(te)/un ratito,NA,wait a little while,wait
+item_34,gol_gr,word,games_routines,produces,gol,NA,goal,goal
+item_35,gracias,word,games_routines,produces,gracias,NA,thank you,thank you
+item_36,hasta_luego,word,games_routines,produces,hasta luego/hasta mañana,NA,see you later,see you later
+item_37,hola,word,games_routines,produces,hola,NA,hello,hello
+item_38,mira,word,games_routines,produces,mira,NA,look,look
+item_39,no,word,games_routines,produces,no,NA,not,not
+item_40,no_hay_pp,word,games_routines,produces,no hay/pau pau,NA,none,none
+item_41,ya,word,games_routines,produces,ya/ok,NA,yeah/ok,ok
+item_42,por_favor,word,games_routines,produces,por favor,NA,please,please
+item_43,por_que_gr,word,games_routines,produces,¿por qué?,NA,why?,NA
+item_44,que_tal,word,games_routines,produces,¿qué tal?,NA,how are you?,how are you
+item_45,quedate_quieto,word,games_routines,produces,quédate quieto,NA,stay still,be quiet
+item_46,basta,word,games_routines,produces,basta/se acabó/ya para,NA,finished,finished
+item_47,si,word,games_routines,produces,sí,NA,yes,yes
+item_48,te_quiero,word,games_routines,produces,te quiero,NA,I love you,NA
+item_49,tonto,word,games_routines,produces,tonto(a),NA,silly,silly
+item_50,vamos,word,games_routines,produces,vamos,NA,let's go,NA
+item_51,vamos_a_contestar,word,games_routines,produces,vamos a contestar/vamos a abrir la puerta,NA,open the door,NA
+item_52,ven_a_banarte,word,games_routines,produces,ven a bañarte/vamos a bañarte/al agua pato,NA,take a bath,bath
+item_53,vistete,word,games_routines,produces,vístete/ven a vestirte/vamos a vestirte,NA,get dressed,dress (action)
+item_54,ya_esta,word,games_routines,produces,ya está/listo,NA,ready,ready
+item_55,abeja,word,animals,produces,abeja,NA,bee,bee
+item_56,animal,word,animals,produces,animal,NA,animal,animal
+item_57,arana,word,animals,produces,araña,NA,spider,spider
+item_58,bicho,word,animals,produces,bicho,NA,bug,bug
+item_59,burro,word,animals,produces,burro,NA,donkey,donkey
+item_60,caballo,word,animals,produces,caballo,NA,horse,horse
+item_61,caracol,word,animals,produces,caracol,NA,snail,snail
+item_62,cebra,word,animals,produces,cebra,NA,zebra,zebra
+item_63,cocodrilo,word,animals,produces,cocodrilo,NA,alligator/crocodile,crocodile
+item_64,conejo,word,animals,produces,conejo,NA,rabbit,bunny
+item_65,cuy,word,animals,produces,cuy/cuye,NA,guinea pig,guinea pig
+item_66,chancho,word,animals,produces,chancho,NA,pig,pig
+item_67,dinosaurio,word,animals,produces,dinosaurio,NA,dinosaur,dinosaur
+item_68,elefante,word,animals,produces,elefante,NA,elephant,elephant
+item_69,gallina,word,animals,produces,gallina,NA,chicken,chicken (animal)
+item_70,gato,word,animals,produces,gato,NA,cat,cat
+item_71,gaviota,word,animals,produces,gaviota,NA,seagull,seagull
+item_72,gusano,word,animals,produces,gusano,NA,worm,worm
+item_73,hormiga,word,animals,produces,hormiga,NA,ant,ant
+item_74,jirafa,word,animals,produces,jirafa,NA,giraffe,giraffe
+item_75,leon,word,animals,produces,león,NA,lion,lion
+item_76,lobo,word,animals,produces,lobo,NA,wolf,wolf
+item_77,loro,word,animals,produces,loro,NA,parrot,parrot
+item_78,llama,word,animals,produces,llama,NA,llama,llama
+item_79,oveja,word,animals,produces,oveja,NA,sheep,sheep
+item_80,paloma,word,animals,produces,paloma,NA,dove,pigeon
+item_81,pajaro,word,animals,produces,pájaro,NA,bird,bird
+item_82,pantera,word,animals,produces,pantera,NA,panther,panther
+item_83,pato,word,animals,produces,pato,NA,duck,duck
+item_84,pelicano,word,animals,produces,pelícano,NA,pelican,pelican
+item_85,perro,word,animals,produces,perro,NA,dog,dog
+item_86,pescado_pez,word,animals,produces,pescado/pez,NA,fish,fish (animal)
+item_87,pollito,word,animals,produces,pollito,NA,chicken,chicken (animal)
+item_88,pulpo,word,animals,produces,pulpo,NA,octopus,octopus
+item_89,rana,word,animals,produces,rana,NA,frog,frog
+item_90,rata,word,animals,produces,rata,NA,rat,rat
+item_91,raton,word,animals,produces,ratón/pericote,NA,mouse,mouse
+item_92,serpiente,word,animals,produces,serpiente,NA,snake,snake
+item_93,tigre,word,animals,produces,tigre,NA,tiger,tiger
+item_94,toro,word,animals,produces,toro,NA,bull,bull
+item_95,tortuga,word,animals,produces,tortuga,NA,turtle,turtle
+item_96,vaca,word,animals,produces,vaca,NA,cow,cow
+item_97,zorro,word,animals,produces,zorro,NA,fox,fox
+item_98,abuela,word,people,produces,abuela/mamama,NA,grandma,grandma
+item_99,abuelo,word,people,produces,abuelo/papapa,NA,grandpa,grandpa
+item_100,bruja,word,people,produces,bruja,NA,witch,witch
+item_101,cuco,word,people,produces,cuco,NA,trickster,trickster
+item_102,familia,word,people,produces,familia,NA,family,family
+item_103,hermano,word,people,produces,hermano(a),NA,brother,brother
+item_104,mama,word,people,produces,mamá/mami,NA,mommy,mommy
+item_105,nana,word,people,produces,nana/niñera/mama,NA,babysitter,babysitter
+item_106,nino,word,people,produces,niño(a)/ñaño(a)/chiquito(a),NA,child,child
+item_107,nombre_propio_1,word,people,produces,nombre propio,NA,person's name,NA
+item_108,nombre_propio_2,word,people,produces,nombre propio,NA,person's name,NA
+item_109,nombre_propio_3,word,people,produces,nombre propio,NA,person's name,NA
+item_110,papa,word,people,produces,papá/papi,NA,daddy,daddy
+item_111,primo,word,people,produces,primo(a),NA,cousin,cousin
+item_112,senor,word,people,produces,señor(a),NA,sir/madam,sir
+item_113,sobrino,word,people,produces,sobrino(a),NA,nephew/niece,nephew
+item_114,tio,word,people,produces,tío (a),NA,uncle/aunt,uncle
+item_115,barba,word,body_parts,produces,barba,NA,beard,beard
+item_116,barbilla,word,body_parts,produces,barbilla,NA,chin,chin
+item_117,barriga,word,body_parts,produces,barriga/panza,NA,tummy,tummy
+item_118,bigote,word,body_parts,produces,bigote,NA,moustache,mustache
+item_119,brazo,word,body_parts,produces,brazo(s),NA,arms,arm
+item_120,cara,word,body_parts,produces,cara,NA,face,face
+item_121,ceja,word,body_parts,produces,ceja(s),NA,eyebrow,eyebrow
+item_122,cuello,word,body_parts,produces,cuello,NA,neck,neck
+item_123,dedo,word,body_parts,produces,dedo(s),NA,fingers,finger
+item_124,diente,word,body_parts,produces,diente(s),NA,teeth,tooth
+item_125,labio,word,body_parts,produces,labio(s),NA,lips,lip
+item_126,lengua,word,body_parts,produces,lengua,NA,tongue,tongue
+item_127,lunar,word,body_parts,produces,lunar,NA,mole (body part),NA
+item_128,mano,word,body_parts,produces,mano(s),NA,hands,hand
+item_129,nariz,word,body_parts,produces,nariz,NA,nose,nose
+item_130,ojo,word,body_parts,produces,ojo(s),NA,eyes,eye
+item_131,ombligo,word,body_parts,produces,ombligo,NA,belly button,belly button
+item_132,oreja,word,body_parts,produces,oreja(s),NA,ears,ear
+item_133,pie,word,body_parts,produces,pie(s),NA,feet,foot
+item_134,pierna,word,body_parts,produces,pierna(s)/pata(s),NA,legs,leg
+item_135,poto,word,body_parts,produces,poto,NA,butt,butt
+item_136,rodilla,word,body_parts,produces,rodilla(s),NA,knee,knee
+item_137,una,word,body_parts,produces,uña,NA,nail,nail (body part)
+item_138,balde,word,toys,produces,balde,NA,pail,bucket
+item_139,caja,word,toys,produces,caja,NA,cash register,NA
+item_140,cartas,word,toys,produces,cartas,NA,letters,alphabet
+item_141,cocinita,word,toys,produces,cocinita,NA,kitchenette,NA
+item_142,cuento,word,toys,produces,cuento/libro,NA,story/book,book
+item_143,futbol,word,toys,produces,fútbol,NA,soccer,football
+item_144,globo,word,toys,produces,globo,NA,balloon,balloon
+item_145,gol,word,toys,produces,gol,NA,goal,goal
+item_146,guitarra,word,toys,produces,guitarra,NA,guitar,guitar
+item_147,juguete,word,toys,produces,juguete,NA,toy,toy (object)
+item_148,lapicero,word,toys,produces,lapicero,NA,pencil,pen/pencil
+item_149,lapiz,word,toys,produces,lápiz,NA,pencil,pen/pencil
+item_150,muneca,word,toys,produces,muñeca,NA,doll,doll
+item_151,osito,word,toys,produces,osito,NA,teddy,teddybear
+item_152,pala,word,toys,produces,pala,NA,shovel,shovel
+item_153,palo,word,toys,produces,palo,NA,stick,stick
+item_154,papel,word,toys,produces,papel,NA,paper,paper
+item_155,payaso,word,toys,produces,payaso,NA,clown,clown
+item_156,pelota,word,toys,produces,pelota,NA,ball,ball
+item_157,piano,word,toys,produces,piano/pianito,NA,piano,piano
+item_158,pintura,word,toys,produces,pintura,NA,painting,painting
+item_159,pulsera,word,toys,produces,pulsera,NA,bracelet,bracelet
+item_160,raqueta,word,toys,produces,raqueta,NA,racket,racket
+item_161,rastrillo,word,toys,produces,rastrillo,NA,rake,rake (object)
+item_162,rompecabezas,word,toys,produces,rompecabezas,NA,puzzle,puzzle
+item_163,rueda,word,toys,produces,rueda,NA,wheel,wheel
+item_164,tambor,word,toys,produces,tambor,NA,drum,drum (object)
+item_165,ambulancia,word,vehicles,produces,ambulancia,NA,ambulance,ambulance
+item_166,autobus,word,vehicles,produces,autobús/bus,NA,bus,bus
+item_167,avion,word,vehicles,produces,avión,NA,plane,airplane
+item_168,barco,word,vehicles,produces,barco,NA,boat,boat
+item_169,bici,word,vehicles,produces,bici,NA,bike,bicycle
+item_170,camion,word,vehicles,produces,camión,NA,truck,truck
+item_171,carro,word,vehicles,produces,carro/auto,NA,car,car
+item_172,carro_de_policia,word,vehicles,produces,carro de policía/patrulla,NA,police car,police car
+item_173,coche,word,vehicles,produces,coche(cito),NA,pram,stroller
+item_174,combi,word,vehicles,produces,combi/micro,NA,bus,bus
+item_175,grua,word,vehicles,produces,grúa,NA,crane,crane
+item_176,helicoptero,word,vehicles,produces,helicóptero,NA,helicopter,helicopter
+item_177,moto,word,vehicles,produces,moto,NA,motorcycle,motorcycle
+item_178,skate,word,vehicles,produces,skate/scooter,NA,scooter,skate (object)
+item_179,taxi,word,vehicles,produces,taxi,NA,cab,taxi
+item_180,tractor,word,vehicles,produces,tractor,NA,tractor,tractor
+item_181,tren,word,vehicles,produces,tren,NA,train,train
+item_182,triciclo,word,vehicles,produces,triciclo,NA,tricycle,tricycle
+item_183,aceituna,word,food_drink,produces,aceituna(s),NA,olive,olive
+item_184,agua,word,food_drink,produces,agua,NA,water,water (beverage)
+item_185,arroz,word,food_drink,produces,arroz,NA,rice,rice
+item_186,azucar,word,food_drink,produces,azúcar,NA,sugar,sugar
+item_187,brocoli,word,food_drink,produces,brócoli,NA,broccoli,broccoli
+item_188,camote,word,food_drink,produces,camote,NA,sweet potato,sweet potato
+item_189,caramelo,word,food_drink,produces,caramelo,NA,candy,candy
+item_190,carne,word,food_drink,produces,carne/bistec,NA,meat/steak,meat
+item_191,cereal,word,food_drink,produces,cereal,NA,cereal,cereal
+item_192,chocolate,word,food_drink,produces,chocolate,NA,chocolate,chocolate
+item_193,chorizo,word,food_drink,produces,chorizo,NA,chorizo,sausage
+item_194,chupete,word,food_drink,produces,chupete(s),NA,pacifier,pacifier
+item_195,comida,word,food_drink,produces,comida/papa,NA,food/potato,food
+item_196,croqueta,word,food_drink,produces,croqueta(s),NA,kibble,croquette
+item_197,espinaca,word,food_drink,produces,espinaca,NA,spinach,spinach
+item_198,fresa,word,food_drink,produces,fresa(s),NA,strawberry,strawberry
+item_199,fruta,word,food_drink,produces,fruta,NA,fruit,fruit
+item_200,galleta,word,food_drink,produces,galleta,NA,cracker,cracker
+item_201,granadilla,word,food_drink,produces,granadilla,NA,passion fruit,passion fruit
+item_202,hamburguesa,word,food_drink,produces,hamburguesa,NA,burger,hamburger
+item_203,helado,word,food_drink,produces,helado,NA,icy,ice
+item_204,huevo,word,food_drink,produces,huevo,NA,egg,egg
+item_205,jamon,word,food_drink,produces,jamón,NA,ham,ham
+item_206,jugo,word,food_drink,produces,jugo,NA,juice,juice
+item_207,leche,word,food_drink,produces,leche,NA,milk,milk
+item_208,lechuga,word,food_drink,produces,lechuga,NA,lettuce,lettuce
+item_209,lentejas,word,food_drink,produces,lentejas,NA,lentils,beans
+item_210,limon,word,food_drink,produces,limón,NA,lemon,lemon
+item_211,mamadera,word,food_drink,produces,mamadera/biberón,NA,bottle,bottle
+item_212,mandarina,word,food_drink,produces,mandarina,NA,mandarin,orange (food)
+item_213,manzana,word,food_drink,produces,manzana,NA,apple,apple
+item_214,melon,word,food_drink,produces,melón,NA,cantaloupe,melon
+item_215,milkshake,word,food_drink,produces,milkshake,NA,milkshake,NA
+item_216,Milo,word,food_drink,produces,Milo/Nesquick,NA,milo,hot chocolate
+item_217,naranja,word,food_drink,produces,naranja,NA,orange (food),orange (food)
+item_218,palta,word,food_drink,produces,palta,NA,avocado,avocado
+item_219,pan,word,food_drink,produces,pan,NA,bread,bread
+item_220,papas,word,food_drink,produces,papa(s),NA,potato,potato
+item_221,papas_fritas,word,food_drink,produces,papas fritas,NA,chips,chips
+item_222,papaya,word,food_drink,produces,papaya,NA,papaya,papaya
+item_223,papilla,word,food_drink,produces,papilla,NA,porridge,porridge
+item_224,pera,word,food_drink,produces,pera,NA,pear,pear
+item_225,pescado,word,food_drink,produces,pescado,NA,fish (food),fish (food)
+item_226,pina,word,food_drink,produces,piña,NA,pineapple,pineapple
+item_227,pizza,word,food_drink,produces,pizza,NA,pizza,pizza
+item_228,platano,word,food_drink,produces,plátano,NA,plantain,plantain
+item_229,pollo,word,food_drink,produces,pollo,NA,chicken,chicken (food)
+item_230,pure,word,food_drink,produces,puré,NA,mashed potatoes,puree
+item_231,queque,word,food_drink,produces,queque,NA,cake,cake
+item_232,queso,word,food_drink,produces,queso,NA,cheese,cheese
+item_233,salchicha,word,food_drink,produces,salchicha,NA,hot dog,hot dog
+item_234,sandia,word,food_drink,produces,sandía,NA,watermelon,watermelon
+item_235,sandwich,word,food_drink,produces,sándwich,NA,sandwich,sandwich
+item_236,sopa,word,food_drink,produces,sopa,NA,soup,soup
+item_237,tallarines,word,food_drink,produces,tallarines/fideos/pasta,NA,noodles/noodles/pasta,pasta
+item_238,tomate,word,food_drink,produces,tomate,NA,tomato,tomato
+item_239,tortilla,word,food_drink,produces,tortilla,NA,tortilla,tortilla
+item_240,uva,word,food_drink,produces,uva(s),NA,grapes,grapes
+item_241,yogurt,word,food_drink,produces,yogurt,NA,yogurt,yogurt
+item_242,yuca,word,food_drink,produces,yuca,NA,yucca,NA
+item_243,zanahoria,word,food_drink,produces,zanahoria,NA,carrot,carrot
+item_244,anteojos,word,clothing,produces,anteojos/lentes,NA,glasses/lenses,glasses
+item_245,arete,word,clothing,produces,arete(s),NA,earrings,earring
+item_246,babero,word,clothing,produces,babero,NA,bib,bib
+item_247,boton,word,clothing,produces,botón,NA,button,button
+item_248,camiseta,word,clothing,produces,camiseta/bibidí/body/polo,NA,t-shirt/polo,t-shirt
+item_249,casaca,word,clothing,produces,casaca,NA,jacket,jacket
+item_250,chompa,word,clothing,produces,chompa,NA,sweater,sweater
+item_251,cierre,word,clothing,produces,cierre,NA,zip,zipper
+item_252,correa,word,clothing,produces,correa/cinturón,NA,belt,belt
+item_253,enterizo,word,clothing,produces,enterizo,NA,onesie,onesie
+item_254,falda,word,clothing,produces,falda,NA,skirt,skirt
+item_255,gorro,word,clothing,produces,gorro(a)/sombrero,NA,cap/hat,hat
+item_256,guante,word,clothing,produces,guante(s),NA,gloves,glove
+item_257,media,word,clothing,produces,media(s),NA,stockings,tights
+item_258,pantalon,word,clothing,produces,pantalón(es),NA,pants,pants
+item_259,panal,word,clothing,produces,pañal,NA,diaper,diaper
+item_260,piyama,word,clothing,produces,piyama,NA,pajamas,pajamas
+item_261,ropa,word,clothing,produces,ropa,NA,clothing,clothes
+item_262,ropa_de_bano,word,clothing,produces,ropa de baño,NA,swimsuit,swimsuit
+item_263,sandalia,word,clothing,produces,sandalia(s),NA,flip flops,slipper
+item_264,short,word,clothing,produces,short,NA,shorts,shorts
+item_265,sweatshirt,word,clothing,produces,sweatshirt/polar,NA,sweatshirt/fleece,sweater
+item_266,vestido,word,clothing,produces,vestido,NA,dress,dress (object)
+item_267,zapatilla,word,clothing,produces,zapatilla(s),NA,shoes,shoe
+item_268,zapato,word,clothing,produces,zapato(s),NA,shoes,shoe
+item_269,arbol,word,outside,produces,árbol,NA,tree,tree
+item_270,arena,word,outside,produces,arena/tierra,NA,sand land,sand
+item_271,banco,word,outside,produces,banco/banca,NA,bank/banking,bank
+item_272,caballito,word,outside,produces,caballito/carrusel/juegos mecánicos,NA,horse/carousel/rides,carousel
+item_273,calle,word,outside,produces,calle,NA,street,street
+item_274,campo,word,outside,produces,campo,NA,countryside,country
+item_275,casa,word,outside,produces,casa,NA,house,house
+item_276,cerro,word,outside,produces,cerro,NA,hill,hill
+item_277,cielo,word,outside,produces,cielo,NA,sky,sky
+item_278,cole,word,outside,produces,cole/colegio/escuela,NA,school,school
+item_279,columpio,word,outside,produces,columpio,NA,swing,swing (object)
+item_280,estrella,word,outside,produces,estrella(s),NA,star(s),star
+item_281,fiesta,word,outside,produces,fiesta,NA,party,party
+item_282,flor,word,outside,produces,flor,NA,flower,flower
+item_283,nido,word,outside,produces,nido/guardería,NA,nest/nursery,nursery
+item_284,jardin,word,outside,produces,jardín,NA,yard,yard
+item_285,luna,word,outside,produces,luna,NA,moon,moon
+item_286,lluvia,word,outside,produces,lluvia,NA,rain,rain
+item_287,mar,word,outside,produces,mar,NA,sea,sea
+item_288,mercado,word,outside,produces,mercado,NA,market,market
+item_289,monte,word,outside,produces,monte/montaña,NA,mountain,mountain
+item_290,parque,word,outside,produces,parque,NA,park,park
+item_291,pasto,word,outside,produces,pasto/grass/césped,NA,grass/lawn,grass
+item_292,piedra,word,outside,produces,piedra/roca,NA,stone/rock,stone
+item_293,piscina,word,outside,produces,piscina,NA,swimming pool,pool
+item_294,planta,word,outside,produces,planta,NA,plant,plant
+item_295,playa,word,outside,produces,playa,NA,beach,beach
+item_296,plaza,word,outside,produces,plaza,NA,square,plaza
+item_297,nieve,word,outside,produces,nieve,NA,snow,snow
+item_298,nube,word,outside,produces,nube,NA,cloud,cloud
+item_299,saltarin,word,outside,produces,saltarín/trampolín,NA,bouncer/trampoline,trampoline
+item_300,sol,word,outside,produces,sol,NA,sun,sun
+item_301,subibaja,word,outside,produces,subibaja,NA,seesaw,seesaw
+item_302,super,word,outside,produces,súper/súpermercado,NA,supermarket,market
+item_303,tienda,word,outside,produces,tienda,NA,shop,store
+item_304,tobogan,word,outside,produces,tobogán/resbaladilla,NA,slide,slide (object)
+item_305,zoologico,word,outside,produces,zoológico,NA,zoo,zoo
+item_306,almohada,word,household,produces,almohada,NA,pillow,pillow
+item_307,bacenica,word,household,produces,bacenica/watercito,NA,bacenica/watercito,potty
+item_308,bano,word,household,produces,baño,NA,bath,bath
+item_309,basura,word,household,produces,basura,NA,trash,trash
+item_310,batidora,word,household,produces,batidora,NA,blender,blender
+item_311,botella,word,household,produces,botella,NA,bottle,bottle
+item_312,cajon,word,household,produces,cajón,NA,drawer,drawer
+item_313,cama,word,household,produces,cama,NA,bed,bed
+item_314,cano,word,household,produces,caño,NA,spout,faucet
+item_315,celular,word,household,produces,celular,NA,mobile,telephone
+item_316,cocina,word,household,produces,cocina,NA,kitchen room,kitchen
+item_317,computadora,word,household,produces,computadora/laptop/tablet,NA,computer/laptop/tablet,computer
+item_318,chupon,word,household,produces,chupón,NA,pacifier,pacifier
+item_319,cojin,word,household,produces,cojín,NA,cushion,cushion
+item_320,colonia,word,household,produces,colonia,NA,suburb,suburb
+item_321,crema,word,household,produces,crema,NA,NA,lotion
+item_322,cuarto,word,household,produces,cuarto/dormitorio/habitación,NA,room/bedroom/bedroom,room
+item_323,cuchara,word,household,produces,cuchara,NA,spoon,spoon
+item_324,cuchillo,word,household,produces,cuchillo,NA,knife,knife
+item_325,cuna,word,household,produces,cuna,NA,cradle,cradle
+item_326,ducha,word,household,produces,ducha,NA,shower,shower
+item_327,enchufe,word,household,produces,enchufe,NA,plug,plug
+item_328,escalera,word,household,produces,escalera,NA,ladder,ladder
+item_329,escoba,word,household,produces,escoba,NA,broom,broom
+item_330,cepillo_pelo,word,household,produces,cepillo/escobilla (de pelo),NA,brush/brush (of hair),brush (object)
+item_331,cepillo_dentes,word,household,produces,cepillo/escobilla (de dientes),NA,brush/brush (toothbrush),toothbrush
+item_332,espejo,word,household,produces,espejo,NA,mirror,mirror
+item_333,esponja,word,household,produces,esponja,NA,sponge,sponge
+item_334,fotos,word,household,produces,fotos/cámara,NA,photos/camera,camera
+item_335,garaje,word,household,produces,garaje/cochera,NA,garage/carport,garage
+item_336,jabon,word,household,produces,jabón,NA,soap,soap
+item_337,jarabe,word,household,produces,jarabe,NA,syrup,syrup
+item_338,lavadero,word,household,produces,lavadero,NA,laundry,laundry
+item_339,lavadora,word,household,produces,lavadora,NA,washer,washing machine
+item_340,lavatorio,word,household,produces,lavatorio,NA,lavatory,bathroom
+item_341,luz,word,household,produces,luz,NA,light,light (object)
+item_342,llaves,word,household,produces,llaves,NA,keys,key
+item_343,martillo,word,household,produces,martillo,NA,hammer,hammer
+item_344,mesa,word,household,produces,mesa,NA,desk,table
+item_345,microondas,word,household,produces,microondas,NA,microwave,microwave
+item_346,monedas,word,household,produces,monedas,NA,coins,coin
+item_347,pasadizo,word,household,produces,pasadizo/corredor/pasillo,NA,hallway/corridor,corridor
+item_348,peine,word,household,produces,peine,NA,comb,comb (object)
+item_349,piso,word,household,produces,piso/suelo,NA,ground floor,floor
+item_350,plato,word,household,produces,plato,NA,plate,plate
+item_351,puerta,word,household,produces,puerta,NA,door,door
+item_352,musica,word,household,produces,música/radio/cd,NA,music/radio/cd,radio
+item_353,refrigerador,word,household,produces,refrigerador(a),NA,refrigerator,refrigerator
+item_354,reloj,word,household,produces,reloj,NA,watch,watch (object)
+item_355,remedio,word,household,produces,remedio/medicina,NA,remedy/medicine,medicine
+item_356,sala,word,household,produces,sala,NA,living room,living room
+item_357,sillon,word,household,produces,sillón/sofá,NA,sofa couch,couch
+item_358,taza,word,household,produces,taza,NA,cup,cup
+item_359,tele,word,household,produces,tele/televisión/televisor,NA,tv/tv/tv,TV
+item_360,telefono,word,household,produces,teléfono,NA,telephone,telephone
+item_361,tenedor,word,household,produces,tenedor,NA,fork,fork
+item_362,terraza,word,household,produces,terraza,NA,terrace,balcony
+item_363,tijeras,word,household,produces,tijeras,NA,scissors,scissors
+item_364,tina,word,household,produces,tina,NA,tub,bathtub
+item_365,toalla,word,household,produces,toalla,NA,towel,towel
+item_366,toallitas_humedas,word,household,produces,toallitas húmedas,NA,wet wipes,NA
+item_367,vaso,word,household,produces,vaso,NA,cup,cup
+item_368,ventana,word,household,produces,ventana,NA,window,window
+item_369,video,word,household,produces,video/DVD,NA,vcr/dvd,video
+item_370,water,word,household,produces,wáter,NA,toilet,potty
+item_371,abrir,word,action_words,produces,abrir,NA,open,open (action)
+item_372,almorzar,word,action_words,produces,almorzar,NA,have lunch,lunch (action)
+item_373,apagar,word,action_words,produces,apagar,NA,turn off,turn off
+item_374,aprender,word,action_words,produces,aprender,NA,learn,learn
+item_375,bailar,word,action_words,produces,bailar,NA,dance,dance
+item_376,bajar,word,action_words,produces,bajar(se),NA,get down,descend
+item_377,banar,word,action_words,produces,bañar(se),NA,bath,bath
+item_378,buscar,word,action_words,produces,buscar,NA,search for,search
+item_379,caber,word,action_words,produces,caber/entrar,NA,fit/enter,enter
+item_380,caer,word,action_words,produces,caer(se),NA,fall down,fall
+item_381,callar,word,action_words,produces,callar(se),NA,shut up,quiet (action)
+item_382,caminar,word,action_words,produces,caminar/andar,NA,walk,walk
+item_383,cansar,word,action_words,produces,cansar(se),NA,get tired,tire (action)
+item_384,cantar,word,action_words,produces,cantar,NA,sing,sing
+item_385,cerrar,word,action_words,produces,cerrar,NA,close,close
+item_386,cocinar,word,action_words,produces,cocinar,NA,cook,cook
+item_387,agarrar,word,action_words,produces,agarrar/coger,NA,grab,grab
+item_388,comer,word,action_words,produces,comer(se),NA,eat,eat
+item_389,comprar,word,action_words,produces,comprar,NA,purchase,buy
+item_390,contar,word,action_words,produces,contar,NA,tell,tell
+item_391,correr,word,action_words,produces,correr,NA,run,run
+item_392,cortar,word,action_words,produces,cortar,NA,cut off,cut
+item_393,costar,word,action_words,produces,costar/valer,NA,cost/worth,value (action)
+item_394,crecer,word,action_words,produces,crecer,NA,grow up,grow
+item_395,cuidar,word,action_words,produces,cuidar,NA,look after,care
+item_396,decir,word,action_words,produces,decir,NA,tell,tell
+item_397,desayunar,word,action_words,produces,desayunar/tomar desayuno,NA,have breakfast,breakfast (action)
+item_398,despertar,word,action_words,produces,despertar(se),NA,wake up,wake
+item_399,dibujar,word,action_words,produces,dibujar,NA,draw,draw
+item_400,dormir,word,action_words,produces,dormir(se),NA,fall sleep,sleep
+item_401,empujar,word,action_words,produces,empujar,NA,push,push
+item_402,enfriar,word,action_words,produces,enfriar(se),NA,cool down,cool (action)
+item_403,entrar,word,action_words,produces,entrar (a alguna parte),NA,enter (somewhere),enter
+item_404,escribir,word,action_words,produces,escribir,NA,write,write
+item_405,esperar,word,action_words,produces,esperar(se),NA,expect,wait
+item_406,estar_[estoy,word,action_words,produces,estar [estoy/estás…],NA,be [i am/are you…],be
+item_407,estornudar,word,action_words,produces,estornudar,NA,sneeze,sneeze
+item_408,guardar,word,action_words,produces,guardar,NA,save,save
+item_409,gustar,word,action_words,produces,gustar,NA,like,like
+item_410,haber,word,action_words,produces,haber [hay],NA,have [there is],have
+item_411,hacer,word,action_words,produces,hacer [haz/haces],NA,do [do/you do],do
+item_412,ir,word,action_words,produces,ir(se) [voy/vas/vamos],NA,go [go/go/go],go
+item_413,jalar,word,action_words,produces,jalar,NA,pull,pull
+item_414,jugar,word,action_words,produces,jugar,NA,play,play
+item_415,lavar,word,action_words,produces,lavar(se),NA,wash up,wash
+item_416,leer,word,action_words,produces,leer,NA,read,read
+item_417,llamar,word,action_words,produces,llamar,NA,call,call
+item_418,llorar,word,action_words,produces,llorar,NA,mourn,cry
+item_419,llover,word,action_words,produces,llover,NA,rain,rain
+item_420,manejar,word,action_words,produces,manejar,NA,drive,drive
+item_421,meter,word,action_words,produces,meter(se),NA,get in,put
+item_422,mirar,word,action_words,produces,mirar/ver,NA,look see,see
+item_423,mojar,word,action_words,produces,mojar(se),NA,get wet,wet (action)
+item_424,morder,word,action_words,produces,morder,NA,bite,bite
+item_425,ensenar,word,action_words,produces,enseñar/mostrar,NA,teach/show,shower
+item_426,oir,word,action_words,produces,oír,NA,hear,hear
+item_427,dar,word,action_words,produces,dar/pasar,NA,give/pass,give
+item_428,pasear,word,action_words,produces,pasear,NA,sightsee,walk
+item_429,pegar,word,action_words,produces,pegar(se)/golpear(se),NA,hit,hit
+item_430,peinar,word,action_words,produces,peinar(se),NA,comb,comb (action)
+item_431,perder,word,action_words,produces,perder(se),NA,be lost,lose
+item_432,pintar,word,action_words,produces,pintar,NA,paint,paint (action)
+item_433,poder,word,action_words,produces,poder [puedes],NA,can,can (auxiliary)
+item_434,poner,word,action_words,produces,poner(se),NA,put on,put on
+item_435,prender,word,action_words,produces,prender/encender,NA,turn on,turn on
+item_436,quemar,word,action_words,produces,quemar,NA,burn,burn
+item_437,querer,word,action_words,produces,querer,NA,want,want
+item_438,quitar,word,action_words,produces,quitar(se),NA,take off,remove
+item_439,regalar,word,action_words,produces,regalar,NA,give a present,gift (action)
+item_440,reir,word,action_words,produces,reír(se),NA,laugh,laugh
+item_441,romper,word,action_words,produces,romper(se),NA,break,break
+item_442,saber,word,action_words,produces,saber [no sé],NA,know [don't know],know
+item_443,sacar,word,action_words,produces,sacar,NA,get,get
+item_444,salir,word,action_words,produces,salir,NA,go out,go out
+item_445,saltar,word,action_words,produces,saltar,NA,skip,skip
+item_446,sentar,word,action_words,produces,sentar(se),NA,sit,sit
+item_447,ser,word,action_words,produces,ser [soy/eres/es],NA,be [am/are/are],be
+item_448,subir,word,action_words,produces,subir(se),NA,go up,go up
+item_449,tapar,word,action_words,produces,tapar,NA,cover,cover (action)
+item_450,tener,word,action_words,produces,tener [tengo/tienes],NA,have [have/have],have
+item_451,terminar,word,action_words,produces,terminar(se)/acabar(se),NA,finish,finish
+item_452,botar,word,action_words,produces,botar/tirar,NA,throw,throw
+item_453,tocar,word,action_words,produces,tocar,NA,play,play
+item_454,tomar_lonche,word,action_words,produces,tomar lonche,NA,take lunch,lunch (action)
+item_455,tomar,word,action_words,produces,tomar/beber,NA,drink,drink (action)
+item_456,toser,word,action_words,produces,toser,NA,cough,cough
+item_457,trabajar,word,action_words,produces,trabajar,NA,work,work (action)
+item_458,traer,word,action_words,produces,traer,NA,bring,bring
+item_459,venir,word,action_words,produces,venir [ven/vente],NA,come,come
+item_460,vestir,word,action_words,produces,vestir(se),NA,dress,dress (action)
+item_461,volar,word,action_words,produces,volar,NA,fly,fly (action)
+item_462,alto,word,descriptive_words,produces,alto,NA,high,high
+item_463,amarillo,word,descriptive_words,produces,amarillo,NA,yellow,yellow
+item_464,apagado,word,descriptive_words,produces,apagado,NA,off,off
+item_465,asustado,word,descriptive_words,produces,asustado,NA,afraid,scared
+item_466,azul,word,descriptive_words,produces,azul,NA,blue,blue
+item_467,bajo,word,descriptive_words,produces,bajo,NA,under,under
+item_468,blanco,word,descriptive_words,produces,blanco,NA,white,white
+item_469,bonito,word,descriptive_words,produces,bonito/lindo,NA,nice/cute,nice
+item_470,bueno,word,descriptive_words,produces,bueno,NA,well,good
+item_471,caliente,word,descriptive_words,produces,caliente,NA,hot,hot
+item_472,chico,word,descriptive_words,produces,chico/chiquito/pequeño,NA,little,little (description)
+item_473,contento,word,descriptive_words,produces,contento/feliz,NA,happy,happy
+item_474,coqueto,word,descriptive_words,produces,coqueto,NA,flirtatious,flirtatious
+item_475,dificil,word,descriptive_words,produces,difícil,NA,hard,hard
+item_476,sucio,word,descriptive_words,produces,cochino/sucio/embarrado,NA,dirty/muddy,dirty
+item_477,prendido,word,descriptive_words,produces,prendido/encendido,NA,on,on
+item_478,enfermo,word,descriptive_words,produces,enfermo,NA,sick,sick
+item_479,molesto,word,descriptive_words,produces,molesto/enojado/asado/enfadado,NA,annoyed/angry/roasted/angry,angry
+item_480,facil,word,descriptive_words,produces,fácil,NA,easy,easy
+item_481,feo,word,descriptive_words,produces,feo,NA,ugly,ugly
+item_482,frio,word,descriptive_words,produces,frío,NA,cold,cold
+item_483,grande,word,descriptive_words,produces,grande,NA,big,big
+item_484,guapo,word,descriptive_words,produces,guapo/churro,NA,handsome/cute,cute
+item_485,hambre,word,descriptive_words,produces,hambre,NA,hungry,hungry
+item_486,helado_dw,word,descriptive_words,produces,helado,NA,icy,ice
+item_487,horrible,word,descriptive_words,produces,horrible,NA,awful,horrible
+item_488,lleno,word,descriptive_words,produces,lleno,NA,full,full
+item_489,malo_dw,word,descriptive_words,produces,malo,NA,evil,bad
+item_490,mentiroso,word,descriptive_words,produces,mentiroso,NA,FALSE,liar
+item_491,negro,word,descriptive_words,produces,negro,NA,black,black
+item_492,nuevo,word,descriptive_words,produces,nuevo,NA,new,new
+item_493,obediente,word,descriptive_words,produces,obediente,NA,obedient,obedient
+item_494,redondo,word,descriptive_words,produces,redondo,NA,round,round
+item_495,rojo,word,descriptive_words,produces,rojo,NA,red,red
+item_496,roto,word,descriptive_words,produces,roto,NA,broken,broken
+item_497,sed,word,descriptive_words,produces,sed,NA,thirst,thirsty
+item_498,solo,word,descriptive_words,produces,solo,NA,only,only
+item_499,sueno,word,descriptive_words,produces,sueño,NA,sleep,sleepy
+item_500,miedo,word,descriptive_words,produces,miedo/susto,NA,fear/fright,scared
+item_501,triste,word,descriptive_words,produces,triste,NA,sad,sad
+item_502,vacio,word,descriptive_words,produces,vacío,NA,empty,empty
+item_503,verde,word,descriptive_words,produces,verde,NA,green,green
+item_504,ahora,word,time_words,produces,ahora/ahorita,NA,now/right now,now
+item_505,despues,word,time_words,produces,después/luego,NA,after,after
+item_506,dia,word,time_words,produces,día,NA,day,day
+item_507,manana,word,time_words,produces,mañana,NA,morning,morning
+item_508,noche,word,time_words,produces,noche,NA,evening,evening
+item_509,pronto,word,time_words,produces,pronto,NA,early,early
+item_510,tarde,word,time_words,produces,tarde (por la/en la),NA,afternoon (at/in the),afternoon
+item_511,ya_tw,word,time_words,produces,ya,NA,already,already
+item_512,algo,word,pronouns,produces,algo,NA,something,something
+item_513,conmigo,word,pronouns,produces,conmigo,NA,with me,1SG
+item_514,contigo,word,pronouns,produces,contigo,NA,with you,2SG
+item_515,el,word,pronouns,produces,él,NA,the,3SG
+item_516,ella,word,pronouns,produces,ella,NA,she,3SG
+item_517,ellos,word,pronouns,produces,ellos(as),NA,they,3PL
+item_518,ese,word,pronouns,produces,ese/esa/eso,NA,that/that/it,that
+item_519,esos,word,pronouns,produces,esos(as),NA,those,those
+item_520,este,word,pronouns,produces,este/esta/esto,NA,this/this/this,this
+item_521,estos,word,pronouns,produces,estos(as),NA,these,these
+item_522,mi,word,pronouns,produces,(para) mí,NA,(for me,1SG
+item_523,mio,word,pronouns,produces,mío/mía,NA,mine,1SG.POSS
+item_524,mios,word,pronouns,produces,míos/mías,NA,mine,1SG.POSS
+item_525,otro,word,pronouns,produces,otro(a),NA,other,other
+item_526,su,word,pronouns,produces,su,NA,his,3SG.POSS
+item_527,ti,word,pronouns,produces,(para) ti,NA,(for you,2SG
+item_528,tu_,word,pronouns,produces,tú,NA,your,2SG.POSS
+item_529,tu,word,pronouns,produces,tu,NA,you,2SG
+item_530,tuyo,word,pronouns,produces,tuyo(a),NA,yours,2SG.POSS
+item_531,tuyos,word,pronouns,produces,tuyos(as),NA,yours,2SG.POSS
+item_532,yo,word,pronouns,produces,yo,NA,i,1SG
+item_533,como,word,question_words,produces,cómo,NA,as,how
+item_534,cuando,word,question_words,produces,cuándo,NA,when,when (question)
+item_535,cuantos,word,question_words,produces,cuántos,NA,how many,how many
+item_536,donde,word,question_words,produces,dónde,NA,where,where (question)
+item_537,por_que,word,question_words,produces,por qué,NA,why,why
+item_538,que,word,question_words,produces,qué,NA,than,what
+item_539,quien,word,question_words,produces,quién,NA,whose,whose
+item_540,a,word,locations,produces,a (a dormir/a la calle),NA,to (to sleep/to the street),to
+item_541,abajo,word,locations,produces,abajo/debajo,NA,down,down
+item_542,aca,word,locations,produces,acá,NA,here,here
+item_543,adelante,word,locations,produces,adelante/delante,NA,forward/in front,in front
+item_544,adentro,word,locations,produces,adentro/dentro,NA,inside/inside,inside
+item_545,afuera,word,locations,produces,afuera/fuera,NA,out/out,out
+item_546,ahi,word,locations,produces,ahí,NA,there,there
+item_547,al_lado,word,locations,produces,al lado,NA,beside,beside
+item_548,al,word,locations,produces,al (parque),NA,to (the park),to
+item_549,alla,word,locations,produces,allá,NA,there,there
+item_550,alli,word,locations,produces,allí,NA,over there,NA
+item_551,aqui,word,locations,produces,aquí,NA,here,here
+item_552,arriba,word,locations,produces,arriba,NA,up,up
+item_553,asi,word,locations,produces,así,NA,so,so
+item_554,atras,word,locations,produces,atrás/detrás,NA,behind,behind
+item_555,casi,word,locations,produces,casi,NA,almost,almost
+item_556,con,word,locations,produces,con,NA,with,with
+item_557,de,word,locations,produces,de,NA,from,from
+item_558,del,word,locations,produces,del,NA,of the,NA
+item_559,en,word,locations,produces,en,NA,in,in
+item_560,encima,word,locations,produces,encima/sobre,NA,over/over,over
+item_561,entre,word,locations,produces,entre,NA,between,between
+item_562,hasta,word,locations,produces,hasta,NA,until,until
+item_563,para,word,locations,produces,para,NA,for,for
+item_564,por,word,locations,produces,por,NA,for,for
+item_565,sin,word,locations,produces,sin,NA,without,without
+item_566,algun,word,quantifiers,produces,algún(a),NA,some,some
+item_567,cuatro,word,quantifiers,produces,cuatro,NA,four,four
+item_568,dos,word,quantifiers,produces,dos,NA,two,two
+item_569,el_q,word,quantifiers,produces,el (carro…),NA,the (car…),the
+item_570,la,word,quantifiers,produces,la (pelota…),NA,the (ball…),the
+item_571,las,word,quantifiers,produces,las (muñecas…),NA,the (dolls…),the
+item_572,los,word,quantifiers,produces,los (juguetes…),NA,the (toys…),the
+item_573,mas,word,quantifiers,produces,más,NA,plus,more
+item_574,mucho,word,quantifiers,produces,mucho(a)/muchos(as),NA,a lot/many,many
+item_575,nada,word,quantifiers,produces,nada,NA,any,any
+item_576,no_hay,word,quantifiers,produces,no hay,NA,there is not,NA
+item_577,otra_vez,word,quantifiers,produces,otra vez,NA,again,again
+item_578,otro_q,word,quantifiers,produces,otro,NA,other,other
+item_579,poco,word,quantifiers,produces,poco/poquito,NA,very little,little (amount)
+item_580,tambien,word,quantifiers,produces,también,NA,also,also
+item_581,tampoco,word,quantifiers,produces,tampoco,NA,either,either
+item_582,todos,word,quantifiers,produces,todos(as),NA,all,all
+item_583,todo,word,quantifiers,produces,todo,NA,everything,everything
+item_584,tres,word,quantifiers,produces,tres,NA,three,three
+item_585,un,word,quantifiers,produces,un,NA,one,one
+item_586,un_monton,word,quantifiers,produces,un montón,NA,a lot,a lot
+item_587,uno,word,quantifiers,produces,uno(a),NA,one,one
+item_588,unos,word,quantifiers,produces,unos(as),NA,some,some
+item_589,estar,word,helping_verbs,produces,estar (estoy jugando),NA,be (i am playing),be
+item_590,haber_hv,word,helping_verbs,produces,haber (he comido),NA,have (have eaten),have
+item_591,ir_v,word,helping_verbs,produces,ir (vamos a dormir),NA,go (let's go to sleep),go
+item_592,poder_v,word,helping_verbs,produces,poder (puedes correr),NA,can (you can run),can (auxiliary)
+item_593,querer_v,word,helping_verbs,produces,querer (quiero comer),NA,want (i want to eat),want
+item_594,entonces,word,connecting_words,produces,entonces,NA,so,so
+item_595,o,word,connecting_words,produces,o,NA,or,or
+item_596,pero,word,connecting_words,produces,pero,NA,but,but
+item_597,porque,word,connecting_words,produces,porque,NA,because,because
+item_598,que_cw,word,connecting_words,produces,que (que vengas),NA,that (that you come),NA
+item_599,si_cw,word,connecting_words,produces,si (si quieres),NA,if (if you want),if
+item_600,y,word,connecting_words,produces,y,NA,and,and

@@ -1,6 +1,7 @@
 "field","column","group","type"
 "data_age","età","admin","data_age"
 "sex","sesso","child","sex"
+study_id,study_id,child,study_id
 "item_1","Risponde quando è chiamato per nome","item","first_signs"
 "item_2","Risponde ad un No","item","first_signs"
 "item_3","Reagisce ad un C'è la mamma/il papà","item","first_signs"

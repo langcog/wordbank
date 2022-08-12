@@ -1,0 +1,442 @@
+itemID,category,definition,choices,item,type,gloss,uni_lemma
+item_1,sounds,au/ai(pijn),understands;produces,au/ai(pijn),word,ouch,ouch
+item_2,sounds,behbeh(schaap),understands;produces,behbeh(schaap),word,baa baa,baa baa
+item_3,sounds,beu/boe/meu/moeh(koe),understands;produces,beu/boe/meu/moeh(koe),word,moo,moo
+item_4,sounds,grrr(grommen),understands;produces,grrr(grommen),word,rawr,roar
+item_5,sounds,kukelukuu(haan),understands;produces,kukelukuu(haan),word,cock-a-doodle-doo,cock-a-doodle-doo
+item_6,sounds,kwakkwak(eend),understands;produces,kwakkwak(eend),word,quack quack,quack quack
+item_7,sounds,miauw/mauw(poes),understands;produces,miauw/mauw(poes),word,meow,meow
+item_8,sounds,mjammjam(lekker),understands;produces,mjammjam(lekker),word,yum yum,yum yum
+item_9,sounds,ohooh(verbazing),understands;produces,ohooh(verbazing),word,NA,wow
+item_10,sounds,ssss(slang),understands;produces,ssss(slang),word,hiss,hiss
+item_11,sounds,tiktak(klok),understands;produces,tiktak(klok),word,tick-tock,tick tock
+item_12,sounds,tjoek(e)tjoek(trein),understands;produces,tjoek(e)tjoek(trein),word,choo choo,choo choo
+item_13,sounds,vroem/broem(auto),understands;produces,vroem/broem(auto),word,vroom,vroom
+item_14,sounds,wafwaf(hond),understands;produces,wafwaf(hond),word,woof woof,woof woof
+item_15,animals,aap,understands;produces,aap,word,monkey,monkey
+item_16,animals,beer,understands;produces,beer,word,bear,bear
+item_17,animals,bij(dier),understands;produces,bij(dier),word,bee,bee
+item_18,animals,dier/beest,understands;produces,dier/beest,word,animal/beast,animal
+item_19,animals,eend,understands;produces,eend,word,duck,duck
+item_20,animals,ezel,understands;produces,ezel,word,donkey,donkey
+item_21,animals,geit,understands;produces,geit,word,goat,goat
+item_22,animals,giraf,understands;produces,giraf,word,giraffe,giraffe
+item_23,animals,hert/Bambi,understands;produces,hert/Bambi,word,deer,deer
+item_24,animals,hond(je),understands;produces,hond(je),word,(little) dog,dog
+item_25,animals,kat/poes(je),understands;produces,kat/poes(je),word,(little) cat,cat
+item_26,animals,kikker,understands;produces,kikker,word,frog,frog
+item_27,animals,kip(dier),understands;produces,kip(dier),word,chicken (animal),chicken (animal)
+item_28,animals,koe,understands;produces,koe,word,cow,cow
+item_29,animals,konijn(tje),understands;produces,konijn(tje),word,(little) bunny,bunny
+item_30,animals,krokodil,understands;produces,krokodil,word,crocodile,crocodile
+item_31,animals,lam(metje),understands;produces,lam(metje),word,(little) lamb,lamb
+item_32,animals,leeuw,understands;produces,leeuw,word,lion,lion
+item_33,animals,muis,understands;produces,muis,word,mouse,mouse
+item_34,animals,olifant,understands;produces,olifant,word,elephant,elephant
+item_35,animals,paard,understands;produces,paard,word,horse,horse
+item_36,animals,schaap,understands;produces,schaap,word,sheep,sheep
+item_37,animals,schildpad,understands;produces,schildpad,word,turtle,turtle
+item_38,animals,slang,understands;produces,slang,word,snake,snake
+item_39,animals,spin,understands;produces,spin,word,spider,spider
+item_40,toys,teddybeer,understands;produces,teddybeer,word,teddybear,teddybear
+item_41,animals,tijger,understands;produces,tijger,word,tiger,tiger
+item_42,animals,uil,understands;produces,uil,word,owl,owl
+item_43,animals,varken,understands;produces,varken,word,pig,pig
+item_44,animals,vis(dier),understands;produces,vis(dier),word,fish,fish (animal)
+item_45,animals,vlinder,understands;produces,vlinder,word,butterfly,butterfly
+item_46,animals,vogel,understands;produces,vogel,word,bird,bird
+item_47,animals,wolf,understands;produces,wolf,word,wolf,wolf
+item_48,vehicles,auto,understands;produces,auto,word,car,car
+item_49,vehicles,brandweerwagen/brandweerauto,understands;produces,brandweerwagen/brandweerauto,word,fire truck,firetruck
+item_50,vehicles,brommer/bromfiets/moto(r)/motorfiets,understands;produces,brommer/bromfiets/moto(r)/motorfiets,word,motorcycle,motorcycle
+item_51,vehicles,bus,understands;produces,bus,word,bus,bus
+item_52,vehicles,fiets,understands;produces,fiets,word,bike,bicycle
+item_53,vehicles,tractor,understands;produces,tractor,word,tractor,tractor
+item_54,vehicles,trein,understands;produces,trein,word,train,train
+item_55,vehicles,vliegtuig,understands;produces,vliegtuig,word,airplane,airplane
+item_56,vehicles,vrachtwagen/camion/vrachtauto,understands;produces,vrachtwagen/camion/vrachtauto,word,truck,truck
+item_57,vehicles,ziekenwagen/ambulance/ziekenauto,understands;produces,ziekenwagen/ambulance/ziekenauto,word,ambulance,ambulance
+item_58,toys,bal,understands;produces,bal,word,bal,ball
+item_59,toys,ballon,understands;produces,ballon,word,balloon,balloon
+item_60,toys,blokken,understands;produces,blokken,word,blocks,blocks
+item_61,toys,boek,understands;produces,boek,word,book,book
+item_62,toys,kralen/parels,understands;produces,kralen/parels,word,beads,bead
+item_63,toys,pen/stylo,understands;produces,pen/stylo,word,pen,pen
+item_64,toys,pop,understands;produces,pop,word,doll,doll
+item_65,toys,speelgoed(je),understands;produces,speelgoed(je),word,(little) toy,toy (object)
+item_66,food_drink,aardappel/patatjes,understands;produces,aardappel/patatjes,word,potato,potato
+item_67,food_drink,appel,understands;produces,appel,word,apple,apple
+item_68,food_drink,appelsien/sinaasappel,understands;produces,appelsien/sinaasappel,word,orange (food),orange (food)
+item_69,food_drink,banaan,understands;produces,banaan,word,banana,banana
+item_70,food_drink,boter,understands;produces,boter,word,butter,butter
+item_71,food_drink,boterham,understands;produces,boterham,word,sandwich,sandwich
+item_72,food_drink,brood,understands;produces,brood,word,bread,bread
+item_73,food_drink,cake,understands;produces,cake,word,cake,cake
+item_74,food_drink,chips,understands;produces,chips,word,chips,chips
+item_75,food_drink,chocolade,understands;produces,chocolade,word,chocolate,chocolate
+item_76,food_drink,cornflakes/muesli,understands;produces,cornflakes/muesli,word,cornflakes/granola,cereal
+item_77,food_drink,drankje/drinken/blikje,understands;produces,drankje/drinken/blikje,word,drink,beverage
+item_78,food_drink,druif,understands;produces,druif,word,grape,grapes
+item_79,food_drink,ei,understands;produces,ei,word,egg,egg
+item_80,food_drink,erwtjes,understands;produces,erwtjes,word,peas,peas
+item_81,food_drink,(het)eten,understands;produces,(het)eten,word,food,food
+item_82,food_drink,Fristi/Jogidrink,understands;produces,Fristi/Jogidrink,word,NA,beverage
+item_83,food_drink,fruitsap/sap,understands;produces,fruitsap/sap,word,juice,juice
+item_84,food_drink,ijs/crème/ijsje,understands;produces,ijs/crème/ijsje,word,ice cream,ice cream
+item_85,food_drink,kaas,understands;produces,kaas,word,cheese,cheese
+item_86,food_drink,kip(eten),understands;produces,kip(eten),word,chicken (food),chicken (food)
+item_87,food_drink,koekje,understands;produces,koekje,word,biscuit/cookie,cookie
+item_88,food_drink,koffie/thee,understands;produces,koffie/thee,word,coffee/tea,coffee
+item_89,food_drink,melk,understands;produces,melk,word,milk,milk
+item_90,food_drink,pap,understands;produces,pap,word,porridge/dad:pops,porridge
+item_91,food_drink,peer,understands;produces,peer,word,pear,pear
+item_92,food_drink,rijst,understands;produces,rijst,word,rice,rice
+item_93,food_drink,rozijntjes,understands;produces,rozijntjes,word,raisins,raisin
+item_94,food_drink,snoep(je),understands;produces,snoep(je),word,sweet,sweets
+item_95,food_drink,spaghetti,understands;produces,spaghetti,word,spaghetti,spaghetti
+item_96,food_drink,taart,understands;produces,taart,word,cake/pie,pie
+item_97,food_drink,toast/geroosterdbrood,understands;produces,toast/geroosterdbrood,word,toast,toast
+item_98,food_drink,vis(eten),understands;produces,vis(eten),word,fish (food),fish (food)
+item_99,food_drink,vlees,understands;produces,vlees,word,meat/flesh,meat
+item_100,food_drink,water(eten),understands;produces,water(eten),word,water (drink),water (beverage)
+item_101,food_drink,wortel(tjes),understands;produces,wortel(tjes),word,carrot(s),carrot
+item_102,clothing,(hals)ketting,understands;produces,(hals)ketting,word,chain,necklace
+item_103,clothing,hemd/bloes,understands;produces,hemd/bloes,word,shirt,shirt
+item_104,clothing,hoed,understands;produces,hoed,word,hat,hat
+item_105,clothing,jas,understands;produces,jas,word,jacket,jacket
+item_106,clothing,jeans(broek)/spijkerbroek,understands;produces,jeans(broek)/spijkerbroek,word,jeans,jeans
+item_107,clothing,kleedje/jurkje,understands;produces,kleedje/jurkje,word,dress,dress (object)
+item_108,clothing,knoop,understands;produces,knoop,word,button,button
+item_109,clothing,kous/sok,understands;produces,kous/sok,word,sock,sock
+item_110,clothing,laarsjes/botjes,understands;produces,laarsjes/botjes,word,boots,boot
+item_111,clothing,(lange)broek,understands;produces,(lange)broek,word,pants,pants
+item_112,clothing,luier/pamper,understands;produces,luier/pamper,word,diaper,diaper
+item_113,clothing,muts,understands;produces,muts,word,hat/cap (material=wool),hat
+item_114,clothing,onderbroek(je)/slipje/broekje,understands;produces,onderbroek(je)/slipje/broekje,word,underpants,underpants
+item_115,clothing,onderhemd(je),understands;produces,onderhemd(je),word,undershirt,undershirt
+item_116,clothing,pyjama/slaapkleed/nachtjapon,understands;produces,pyjama/slaapkleed/nachtjapon,word,pyjama,pajamas
+item_117,clothing,rits,understands;produces,rits,word,zipper,zipper
+item_118,clothing,schoen,understands;produces,schoen,word,shoe,shoe
+item_119,clothing,short/kortebroek,understands;produces,short/kortebroek,word,shorts,shorts
+item_120,clothing,slabbetje/bavet,understands;produces,slabbetje/bavet,word,bib,bib
+item_121,clothing,trui/sweater/pull,understands;produces,trui/sweater/pull,word,sweater,sweater
+item_122,clothing,T-shirt,understands;produces,T-shirt,word,T-shirt,t-shirt
+item_123,clothing,tut(je)/(fop)speen,understands;produces,tut(je)/(fop)speen,word,dummy,dummy
+item_124,body_parts,arm,understands;produces,arm,word,arm,arm
+item_125,body_parts,been,understands;produces,been,word,leg,leg
+item_126,body_parts,billen/poep,understands;produces,billen/poep,word,buttock/poo,butt
+item_127,body_parts,buik,understands;produces,buik,word,belly,tummy
+item_128,body_parts,gezicht,understands;produces,gezicht,word,face,face
+item_129,body_parts,haar(lichaam),understands;produces,haar(lichaam),word,hair,hair
+item_130,body_parts,hand,understands;produces,hand,word,hand,hand
+item_131,body_parts,hoofd,understands;produces,hoofd,word,head,head
+item_132,body_parts,knie,understands;produces,knie,word,knee,knee
+item_133,body_parts,mond,understands;produces,mond,word,mouth,mouth
+item_134,body_parts,navel,understands;produces,navel,word,navel,belly button
+item_135,body_parts,neus,understands;produces,neus,word,nose,nose
+item_136,body_parts,oog,understands;produces,oog,word,eye,eye
+item_137,body_parts,oor,understands;produces,oor,word,ear,ear
+item_138,body_parts,rug,understands;produces,rug,word,back,back (body part)
+item_139,body_parts,teen,understands;produces,teen,word,toe,toe
+item_140,body_parts,tong,understands;produces,tong,word,tongue,tongue
+item_141,body_parts,vinger,understands;produces,vinger,word,finger,finger
+item_142,body_parts,wang/kaak,understands;produces,wang/kaak,word,cheek/jaw,cheek
+item_143,household,bord,understands;produces,bord,word,plate,plate
+item_144,household,bril,understands;produces,bril,word,glasses,glasses
+item_145,household,deken/dekbed,understands;produces,deken/dekbed,word,blanket,blanket
+item_146,household,doos,understands;produces,doos,word,box,box
+item_147,household,fles,understands;produces,fles,word,bottle,bottle
+item_148,household,foto,understands;produces,foto,word,foto,picture
+item_149,household,geld/centen/centjes,understands;produces,geld/centen/centjes,word,money/cents,money
+item_150,household,glas,understands;produces,glas,word,glass,glass
+item_151,household,hamer,understands;produces,hamer,word,hammer,hammer
+item_152,household,handdoek,understands;produces,handdoek,word,towel,towel
+item_153,household,kom/schaal,understands;produces,kom/schaal,word,bowl,bowl
+item_154,household,krant,understands;produces,krant,word,newspaper,newspaper
+item_155,household,kussen,understands;produces,kussen,word,pillow,pillow
+item_156,household,lamp/licht,understands;produces,lamp/licht,word,lamp/light,lamp
+item_157,household,lepel,understands;produces,lepel,word,spoon,spoon
+item_158,household,medicijn(en)(sirooppilletjedrankje)/medicament,understands;produces,medicijn(en)(sirooppilletjedrankje)/medicament,word,medicines,medicine
+item_159,household,mes,understands;produces,mes,word,knife,knife
+item_160,household,plant,understands;produces,plant,word,plant,plant
+item_161,household,radio,understands;produces,radio,word,radio,radio
+item_162,household,schaar,understands;produces,schaar,word,scissors,scissors
+item_163,household,sleutel(s),understands;produces,sleutel(s),word,key(s),key
+item_164,household,stofzuiger,understands;produces,stofzuiger,word,vacuum cleaner,vacuum
+item_165,household,tandenborstel,understands;produces,tandenborstel,word,toothbrush,toothbrush
+item_166,household,tas/kop(je)/beker,understands;produces,tas/kop(je)/beker,word,cup,cup
+item_167,household,telefoon,understands;produces,telefoon,word,telephone,telephone
+item_168,household,uurwerk/klok/horloge,understands;produces,uurwerk/klok/horloge,word,watch,watch (object)
+item_169,household,vork,understands;produces,vork,word,fork,fork
+item_170,household,washandje,understands;produces,washandje,word,washcloth,washcloth
+item_171,household,zeep,understands;produces,zeep,word,soap,soap
+item_172,furniture_rooms,(baby)box/park,understands;produces,(baby)box/park,word,playpen,playpen
+item_173,furniture_rooms,bad,understands;produces,bad,word,bath,bath
+item_174,furniture_rooms,badkamer,understands;produces,badkamer,word,bathroom,bathroom
+item_175,furniture_rooms,bed,understands;produces,bed,word,bed,bed
+item_176,furniture_rooms,deur,understands;produces,deur,word,door,door
+item_177,furniture_rooms,garage,understands;produces,garage,word,garage,garage
+item_178,furniture_rooms,gootsteen/afwasbak,understands;produces,gootsteen/afwasbak,word,sink,sink
+item_179,furniture_rooms,kachel/openhaard,understands;produces,kachel/openhaard,word,heater/fireplace,heater/fireplace
+item_180,furniture_rooms,kast,understands;produces,kast,word,cupboard,cupboard
+item_181,furniture_rooms,kelder,understands;produces,kelder,word,cellar,basement
+item_182,furniture_rooms,keuken,understands;produces,keuken,word,kitchen,kitchen
+item_183,furniture_rooms,kinderstoel,understands;produces,kinderstoel,word,baby chair,high chair
+item_184,furniture_rooms,koelkast/frigo/ijskast/diepvries,understands;produces,koelkast/frigo/ijskast/diepvries,word,fridge/freezer,fridge/freezer
+item_185,furniture_rooms,lade/schuif,understands;produces,lade/schuif,word,drawer,drawer
+item_186,furniture_rooms,oven,understands;produces,oven,word,oven,oven
+item_187,furniture_rooms,potje,understands;produces,potje,word,pot (little),pot
+item_188,furniture_rooms,schommelstoel,understands;produces,schommelstoel,word,rocking chair,rocking chair
+item_189,furniture_rooms,slaapkamer,understands;produces,slaapkamer,word,bedroom,bedroom
+item_190,furniture_rooms,stoel,understands;produces,stoel,word,chair,chair
+item_191,furniture_rooms,tafel,understands;produces,tafel,word,table,table
+item_192,furniture_rooms,trap(pen),understands;produces,trap(pen),word,stairs,stairs
+item_193,furniture_rooms,TV/televisie,understands;produces,TV/televisie,word,TV/television,TV
+item_194,furniture_rooms,venster/raam,understands;produces,venster/raam,word,window,window
+item_195,furniture_rooms,WC/toilet,understands;produces,WC/toilet,word,toilet,toilet
+item_196,furniture_rooms,wieg,understands;produces,wieg,word,carriage,cradle
+item_197,furniture_rooms,woonkamer/living/huiskamer,understands;produces,woonkamer/living/huiskamer,word,living room,living room
+item_198,furniture_rooms,zetel/divan/sofa/bank,understands;produces,zetel/divan/sofa/bank,word,sofa/couch,couch
+item_199,outside,bloem,understands;produces,bloem,word,flower,flower
+item_200,outside,boom,understands;produces,boom,word,tree,tree
+item_201,outside,lucht/hemel,understands;produces,lucht/hemel,word,sky/heaven,sky
+item_202,outside,regen,understands;produces,regen,word,rain,rain
+item_203,outside,schommel,understands;produces,schommel,word,swing,swing (object)
+item_204,outside,sneeuw,understands;produces,sneeuw,word,snow,snow
+item_205,outside,straat,understands;produces,straat,word,street,street
+item_206,outside,water(plaats),understands;produces,water(plaats),word,lake,lake
+item_207,outside,wind,understands;produces,wind,word,wind,wind
+item_208,outside,wolk,understands;produces,wolk,word,cloud,cloud
+item_209,outside,zandbak,understands;produces,zandbak,word,sandbox,sandbox
+item_210,outside,zon,understands;produces,zon,word,sun,sun
+item_211,outside,zwembad,understands;produces,zwembad,word,swimming-pool,swimming pool
+item_212,places,boerderij,understands;produces,boerderij,word,farm,farm
+item_213,places,bos,understands;produces,bos,word,forest,forest
+item_214,places,buiten,understands;produces,buiten,word,outdoor,outside
+item_215,places,crÃƒÂ¨che/kinderdagverblijf,understands;produces,crÃƒÂ¨che/kinderdagverblijf,word,daycare,daycare
+item_216,places,dierentuin/zoo,understands;produces,dierentuin/zoo,word,zoo,zoo
+item_217,places,feest(je),understands;produces,feest(je),word,party,party
+item_218,places,huis,understands;produces,huis,word,house,house
+item_219,places,kerk,understands;produces,kerk,word,church,church
+item_220,places,park,understands;produces,park,word,park,park
+item_221,places,school,understands;produces,school,word,school,school
+item_222,places,speeltuin,understands;produces,speeltuin,word,playground,playground
+item_223,places,thuis,understands;produces,thuis,word,home,home
+item_224,places,tuin,understands;produces,tuin,word,garden,garden
+item_225,places,winkel,understands;produces,winkel,word,shop,store
+item_226,people,baby,understands;produces,baby,word,baby,baby
+item_227,people,babysitter,understands;produces,babysitter,word,nanny/babysitter,babysitter
+item_228,people,broer(tje),understands;produces,broer(tje),word,(little) brother,brother
+item_229,people,jongen,understands;produces,jongen,word,boy,boy
+item_230,people,kind(je),understands;produces,kind(je),word,child,child
+item_231,people,mama,understands;produces,mama,word,Mom(my),mommy
+item_232,people,meisje,understands;produces,meisje,word,girl,girl
+item_233,people,meneer,understands;produces,meneer,word,Sir,man
+item_234,people,mensen,understands;produces,mensen,word,people,people
+item_235,people,mevrouw,understands;produces,mevrouw,word,Mrs,female
+item_236,people,naamvanbabysitter,understands;produces,naamvanbabysitter,word,NA,babysitter's name
+item_237,people,naamvankind,understands;produces,naamvankind,word,NA,child's name
+item_238,people,oma,understands;produces,oma,word,grandma,grandma
+item_239,people,oom/nonkel,understands;produces,oom/nonkel,word,uncle,uncle
+item_240,people,opa,understands;produces,opa,word,granddad,grandpa
+item_241,people,papa,understands;produces,papa,word,papa,daddy
+item_242,people,tante,understands;produces,tante,word,aunt,aunt
+item_243,people,zus(je),understands;produces,zus(je),word,(little) sister,sister
+item_244,games_routines,dadadoen/daaag,understands;produces,dadadoen/daaag,word,say bye,bye
+item_245,games_routines,danku/dankuwel,understands;produces,danku/dankuwel,word,thank you,thank you
+item_246,games_routines,hallo/hoi,understands;produces,hallo/hoi,word,hello/hi,hello
+item_247,games_routines,ja,understands;produces,ja,word,yes,yes
+item_248,games_routines,nee,understands;produces,nee,word,no,no
+item_249,games_routines,slaapwel/goedenacht/welterusten/slaaplekker,understands;produces,slaapwel/goedenacht/welterusten/slaaplekker,word,goodnight/sleep well,good night
+item_250,games_routines,tandjespoetsen,understands;produces,tandjespoetsen,word,brush teeth,brush teeth
+item_251,descriptive_words,allesweg/op,understands;produces,allesweg/op,word,all done,all done
+item_252,descriptive_words,blauw,understands;produces,blauw,word,blue,blue
+item_253,descriptive_words,blij,understands;produces,blij,word,happy,happy
+item_254,descriptive_words,donker,understands;produces,donker,word,dark,dark
+item_255,descriptive_words,dorst(hebben),understands;produces,dorst(hebben),word,(to be) thirsty,thirsty
+item_256,descriptive_words,droog,understands;produces,droog,word,dry,dry (description)
+item_257,descriptive_words,goed/OK,understands;produces,goed/OK,word,good/OK,good
+item_258,descriptive_words,groot,understands;produces,groot,word,large,large
+item_259,descriptive_words,honger(hebben),understands;produces,honger(hebben),word,(to be) hungry,hungry
+item_260,descriptive_words,isaanhetslapen,understands;produces,isaanhetslapen,word,is sleeping,is sleeping
+item_261,descriptive_words,klein,understands;produces,klein,word,small,small
+item_262,descriptive_words,koud,understands;produces,koud,word,cold,cold
+item_263,descriptive_words,leeg,understands;produces,leeg,word,empty,empty
+item_264,descriptive_words,lief/schattig,understands;produces,lief/schattig,word,cute,cute
+item_265,descriptive_words,moe,understands;produces,moe,word,tired,tired
+item_266,descriptive_words,mooi,understands;produces,mooi,word,beautifull,beautiful
+item_267,descriptive_words,nat,understands;produces,nat,word,wet,wet (description)
+item_268,descriptive_words,pijn(hebben),understands;produces,pijn(hebben),word,(to be in) pain,hurt (description)
+item_269,descriptive_words,rood,understands;produces,rood,word,red,red
+item_270,descriptive_words,slecht,understands;produces,slecht,word,bad,bad
+item_271,descriptive_words,stout,understands;produces,stout,word,naughty,naughty
+item_272,descriptive_words,vlug/snel,understands;produces,vlug/snel,word,quick,quick
+item_273,descriptive_words,voorzichtig,understands;produces,voorzichtig,word,carefull,careful
+item_274,descriptive_words,vuil/vies/bah!,understands;produces,vuil/vies/bah!,word,dirty/yuk!,dirty
+item_275,descriptive_words,warm/heet,understands;produces,warm/heet,word,warm/hot,warm
+item_276,descriptive_words,zacht,understands;produces,zacht,word,soft,soft
+item_277,descriptive_words,ziek,understands;produces,ziek,word,sick,sick
+item_278,action_words,aanraken/aankomen,understands;produces,aanraken/aankomen,word,touch,touch
+item_279,action_words,afdrogen,understands;produces,afdrogen,word,dry,dry (action)
+item_280,action_words,bijten,understands;produces,bijten,word,to bite,bite
+item_281,action_words,blazen,understands;produces,blazen,word,to blow,blow
+item_282,action_words,botsen,understands;produces,botsen,word,to bump,bump
+item_283,action_words,breken/kapotmaken,understands;produces,breken/kapotmaken,word,to break,break
+item_284,action_words,brengen,understands;produces,brengen,word,to bring,bring
+item_285,action_words,dansen,understands;produces,dansen,word,to dance,dance
+item_286,action_words,drinken,understands;produces,drinken,word,to drink,drink (action)
+item_287,action_words,duwen,understands;produces,duwen,word,to push,push
+item_288,action_words,eten(ww),understands;produces,eten(ww),word,to eat,eat
+item_289,action_words,geefaan,understands;produces,geefaan,word,indicate,indicate
+item_290,action_words,geven,understands;produces,geven,word,to give,give
+item_291,action_words,gooien/werpen,understands;produces,gooien/werpen,word,to throw,to throw
+item_292,action_words,hebben,understands;produces,hebben,word,to have,have
+item_293,action_words,helpen,understands;produces,helpen,word,to help,help
+item_294,action_words,houdenvan/graagzien/liefvinden,understands;produces,houdenvan/graagzien/liefvinden,word,to love,love
+item_295,action_words,kijken,understands;produces,kijken,word,to look,look
+item_296,action_words,knuffelen/goedvastpakken/stevigvastpakken,understands;produces,knuffelen/goedvastpakken/stevigvastpakken,word,to hug,hug
+item_297,action_words,krijgen,understands;produces,krijgen,word,to get,get
+item_298,action_words,kuisen/poetsen/schoonmaken,understands;produces,kuisen/poetsen/schoonmaken,word,to clean,clean (action)
+item_299,action_words,kussen/kusjegeven/zoenen,understands;produces,kussen/kusjegeven/zoenen,word,to kiss,kiss
+item_300,action_words,lachen,understands;produces,lachen,word,to smile,smile
+item_301,action_words,lezen,understands;produces,lezen,word,to read,read
+item_302,action_words,lopen/rennen,understands;produces,lopen/rennen,word,to walk/run,run
+item_303,action_words,openen/opendoen/openmaken,understands;produces,openen/opendoen/openmaken,word,to open,open (action)
+item_304,action_words,rijden,understands;produces,rijden,word,to ride,ride
+item_305,action_words,schoppen/stampen,understands;produces,schoppen/stampen,word,to kick,kick
+item_306,action_words,schrijven,understands;produces,schrijven,word,to write,write
+item_307,action_words,slaan,understands;produces,slaan,word,to hit,hit
+item_308,action_words,slapen,understands;produces,slapen,word,to sleep,sleep
+item_309,action_words,spatten/pletsen/spetteren,understands;produces,spatten/pletsen/spetteren,word,to splash,splash
+item_310,action_words,spelen,understands;produces,spelen,word,to play,play
+item_311,action_words,springen,understands;produces,springen,word,to jump,jump
+item_312,action_words,tonen/wijzen/latenzien,understands;produces,tonen/wijzen/latenzien,word,to show/point to,show
+item_313,action_words,trekken,understands;produces,trekken,word,to draw/drag,pull
+item_314,action_words,vallen,understands;produces,vallen,word,to fall,fall
+item_315,action_words,vegen,understands;produces,vegen,word,to sweep,sweep
+item_316,action_words,wandelen,understands;produces,wandelen,word,to walk,walk
+item_317,action_words,wassen,understands;produces,wassen,word,to wash,wash
+item_318,action_words,wenen/huilen,understands;produces,wenen/huilen,word,to cry,cry
+item_319,action_words,zeggen,understands;produces,zeggen,word,to say,say
+item_320,action_words,zien,understands;produces,zien,word,to see,see
+item_321,action_words,zingen,understands;produces,zingen,word,to sing,sing
+item_322,action_words,zwemmen,understands;produces,zwemmen,word,to swim,swim
+item_323,time_words,dag,understands;produces,dag,word,day,day
+item_324,time_words,later/straks,understands;produces,later/straks,word,later/soon,soon
+item_325,time_words,nu,understands;produces,nu,word,now,now
+item_326,pronouns,dat,understands;produces,dat,word,that,that
+item_327,pronouns,deze,understands;produces,deze,word,this,this
+item_328,pronouns,het(vnw),understands;produces,het(vnw),word,it,3SG
+item_329,pronouns,ik,understands;produces,ik,word,I,1SG
+item_330,pronouns,jij,understands;produces,jij,word,you,2SG
+item_331,pronouns,jouw(e)/vanjou/dejou(we),understands;produces,jouw(e)/vanjou/dejou(we),word,your,2SG.POSS
+item_332,pronouns,mij,understands;produces,mij,word,me,1SG
+item_333,pronouns,mijn(e)/vanmij,understands;produces,mijn(e)/vanmij,word,my,1SG.POSS
+item_334,pronouns,wij,understands;produces,wij,word,we,1PL
+item_335,question_words,hoe,understands;produces,hoe,word,how,how
+item_336,question_words,waar,understands;produces,waar,word,where,where (question)
+item_337,question_words,wat,understands;produces,wat,word,what,what
+item_338,question_words,wie,understands;produces,wie,word,who,who
+item_339,locations,aan,understands;produces,aan,word,to,to
+item_340,locations,achter,understands;produces,achter,word,behind,behind
+item_341,locations,af,understands;produces,af,word,off,off
+item_342,locations,beneden,understands;produces,beneden,word,beneath,under
+item_343,locations,boven(op),understands;produces,boven(op),word,above/on,above
+item_344,locations,daar,understands;produces,daar,word,there,there
+item_345,locations,onder,understands;produces,onder,word,under,under
+item_346,locations,terug,understands;produces,terug,word,back,back (location)
+item_347,locations,uit,understands;produces,uit,word,out,out
+item_348,locations,voor(vz),understands;produces,voor(vz),word,in front of,in front of
+item_349,quantifiers,alles/allemaal,understands;produces,alles/allemaal,word,everything/all of it,all
+item_350,quantifiers,ander(e),understands;produces,ander(e),word,other,other
+item_351,quantifiers,eenbeetje,understands;produces,eenbeetje,word,a little bit,a little
+item_352,quantifiers,meer/nog,understands;produces,meer/nog,word,more/still,more
+item_353,quantifiers,niet,understands;produces,niet,word,not,not
+item_354,helping_verbs,nietdoen,understands;produces,nietdoen,word,don't do,not do
+item_355,sounds,bah(vies/vuil),understands;produces,bah(vies/vuil),word,yuk,yucky
+item_356,sounds,boem(ietsdatvaltofbotst),understands;produces,boem(ietsdatvaltofbotst),word,boom,boom
+item_357,sounds,toktok(kip),understands;produces,toktok(kip),word,cluck-cluck,cluck
+item_358,animals,eekhoorn,understands;produces,eekhoorn,word,squirrel,squirrel
+item_359,animals,kuiken,understands;produces,kuiken,word,chick,chick
+item_360,animals,mug,understands;produces,mug,word,mosquito,mosquito
+item_361,animals,pinguin,understands;produces,pinguin,word,pinguin,penguin
+item_362,animals,vlieg,understands;produces,vlieg,word,fly,fly (animal)
+item_363,vehicles,buggy,understands;produces,buggy,word,buggy,stroller
+item_364,vehicles,kinderwagen/koets,understands;produces,kinderwagen/koets,word,pram/stroller,stroller
+item_365,toys,bubbels/zeepbellen/bellen/bellenblaas,understands;produces,bubbels/zeepbellen/bellen/bellenblaas,word,foam/bubbles,NA
+item_366,toys,naamvanknuffel/doekje/lappenpopvanhetkind,understands;produces,naamvanknuffel/doekje/lappenpopvanhetkind,word,NA,NA
+item_367,toys,schommelpaard/hobbelpaard,understands;produces,schommelpaard/hobbelpaard,word,rocking horse,rocking horse
+item_368,food_drink,beschuit,understands;produces,beschuit,word,Dutch rusk/biscuit rusk,cookie
+item_369,food_drink,cola,understands;produces,cola,word,coke,soda
+item_370,food_drink,fruitpap/fruithapje,understands;produces,fruitpap/fruithapje,word,fruit puree,smoothie
+item_371,food_drink,limonade,understands;produces,limonade,word,lemonade,lemonade
+item_372,food_drink,yoghurt,understands;produces,yoghurt,word,yoghurt,yogurt
+item_373,games_routines,a.u.b./alsjeblieft,understands;produces,a.u.b./alsjeblieft,word,please,please
+item_374,games_routines,bravo!,understands;produces,bravo!,word,bravo!/well done,bravo
+item_375,games_routines,eenbadnemen,understands;produces,eenbadnemen,word,to take a bath,take a bath
+item_376,games_routines,eendutje/tukjedoen,understands;produces,eendutje/tukjedoen,word,to take a nap,take a nap
+item_377,games_routines,eten(routine),understands;produces,eten(routine),word,to eat,eat
+item_378,games_routines,handjesdraaien,understands;produces,handjesdraaien,word,to turn hands,turn hands
+item_379,games_routines,hebben/willen,understands;produces,hebben/willen,word,have/want,have/want
+item_380,games_routines,hokuspokus(ofanderegoocheltermen),understands;produces,hokuspokus(ofanderegoocheltermen),word,hocus pocus,NA
+item_381,games_routines,kiekeboe,understands;produces,kiekeboe,word,peekaboo!,peekaboo
+item_382,games_routines,sst,understands;produces,sst,word,shush,shh
+item_383,games_routines,wacht!,understands;produces,wacht!,word,wait!,wait
+item_384,clothing,jas(je)/mantel,understands;produces,jas(je)/mantel,word,jacket/coat,jacket
+item_385,body_parts,tand,understands;produces,tand,word,tooth,tooth
+item_386,body_parts,voet,understands;produces,voet,word,foot,foot
+item_387,household,aquarium/visbak/vissenkom,understands;produces,aquarium/visbak/vissenkom,word,fish tank,fish tank
+item_388,furniture_rooms,bureau,understands;produces,bureau,word,desk,table
+item_389,household,fornuis/vuur/kookplaat,understands;produces,fornuis/vuur/kookplaat,word,stove,stove
+item_390,household,video(recorder),understands;produces,video(recorder),word,video recorder,video recorder
+item_391,furniture_rooms,zolder,understands;produces,zolder,word,attic,attic
+item_392,furniture_rooms,afval/rommel,understands;produces,afval/rommel,word,trash,trash
+item_393,furniture_rooms,bezem,understands;produces,bezem,word,broom,broom
+item_394,furniture_rooms,borstel/veger,understands;produces,borstel/veger,word,brush/broom,broom
+item_395,furniture_rooms,handtas/tas,understands;produces,handtas/tas,word,handbag,bag
+item_396,household,kam,understands;produces,kam,word,comb,comb (object)
+item_397,furniture_rooms,klok,understands;produces,klok,word,clock,clock
+item_398,furniture_rooms,portemonnee,understands;produces,portemonnee,word,wallet,wallet
+item_399,outside,glijbaan,understands;produces,glijbaan,word,"slide, shute",slide (object)
+item_400,places,kermis,understands;produces,kermis,word,"fair, fancy fair",fair
+item_401,outside,maan,understands;produces,maan,word,moon,moon
+item_402,outside,steen,understands;produces,steen,word,stone,stone
+item_403,outside,ster(ren),understands;produces,ster(ren),word,star(s),star
+item_404,places,strand,understands;produces,strand,word,beach,beach
+item_405,places,vijver,understands;produces,vijver,word,pond,pond
+item_406,outside,zee,understands;produces,zee,word,sea,sea
+item_407,people,naamvanzusjeofbroertje,understands;produces,naamvanzusjeofbroertje,word,name of brother or sister,NA
+item_408,action_words,dichtdoen/dichtmaken,understands;produces,dichtdoen/dichtmaken,word,to close,close
+item_409,action_words,draaien,understands;produces,draaien,word,to turn,turn
+item_410,action_words,etengeven,understands;produces,etengeven,word,to feed,feed
+item_411,action_words,fietsen,understands;produces,fietsen,word,"to cycle, bike",cycle (action)
+item_412,action_words,gaan/weggaan,understands;produces,gaan/weggaan,word,to go (away)/leave,go
+item_413,action_words,leggen/zetten/neerzetten,understands;produces,leggen/zetten/neerzetten,word,to put down,put down
+item_414,action_words,nemen,understands;produces,nemen,word,to take,take
+item_415,action_words,oppassen,understands;produces,oppassen,word,to take care of/nurse,watch (action)
+item_416,action_words,roepen/schreeuwen,understands;produces,roepen/schreeuwen,word,to scream,scream
+item_417,action_words,schommelen,understands;produces,schommelen,word,to swing,swing (action)
+item_418,action_words,stoppen/ophouden,understands;produces,stoppen/ophouden,word,to stop,stop
+item_419,action_words,tekenen,understands;produces,tekenen,word,to draw,draw
+item_420,action_words,trommelen,understands;produces,trommelen,word,to drum,drum (action)
+item_421,action_words,vliegen,understands;produces,vliegen,word,to fly,fly (action)
+item_422,action_words,zichhaasten/zichspoeden/opschieten,understands;produces,zichhaasten/zichspoeden/opschieten,word,to hurry up,hurry
+item_423,time_words,savonds,understands;produces,savonds,word,in the evenings,in the evenings
+item_424,time_words,smiddags,understands;produces,smiddags,word,in the afternoons,afternoon
+item_425,time_words,smorgens/sochtends,understands;produces,smorgens/sochtends,word,in the mornings,in the mornings
+item_426,time_words,nacht,understands;produces,nacht,word,night,night
+item_427,descriptive_words,bang,understands;produces,bang,word,afraid,afraid
+item_428,descriptive_words,braaf,understands;produces,braaf,word,decent,well-behaved
+item_429,descriptive_words,hard,understands;produces,hard,word,hard,hard
+item_430,descriptive_words,kapot/stuk,understands;produces,kapot/stuk,word,broken,broken
+item_431,descriptive_words,lekker,understands;produces,lekker,word,nice/tasty,yummy
+item_432,descriptive_words,leuk/fijn,understands;produces,leuk/fijn,word,nice,nice
+item_433,descriptive_words,schoon/proper,understands;produces,schoon/proper,word,clean,clean (description)
+item_434,pronouns,dit/deze/dees,understands;produces,dit/deze/dees,word,this,this
+item_435,pronouns,zijn/haar,understands;produces,zijn/haar,word,his/her,3SG.POSS
+item_436,locations,binnen(in),understands;produces,binnen(in),word,in(side),inside
+item_437,locations,erop,understands;produces,erop,word,on it (on them),on
+item_438,locations,in,understands;produces,in,word,in/into,in
+item_439,locations,weg,understands;produces,weg,word,away,away
+item_440,quantifiers,geen/niemand/niets,understands;produces,geen/niemand/niets,word,no/nobody/nothing,no
+item_441,quantifiers,hetzelfde,understands;produces,hetzelfde,word,the same,same

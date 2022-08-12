@@ -1,0 +1,1377 @@
+itemID,item,definition,category,type,choices,complexity_category,gloss,uni_lemma
+item_1,asvat1,اخ-وای,sounds,word,produces,NA,NA,NA
+item_2,a2,اه-اخ,sounds,word,produces,NA,NA,NA
+item_3,a3,صداي اژير (ب، بو),sounds,word,produces,NA,NA,NA
+item_4,a4,صداي اسب,sounds,word,produces,NA,NA,NA
+item_5,a5,صداي اردك,sounds,word,produces,NA,NA,NA
+item_6,a6,صدای تفنگ (بنگ،بنگ),sounds,word,produces,NA,NA,NA
+item_7,a7,صداي جوجه ( جيك،جيك),sounds,word,produces,NA,NA,NA
+item_8,a8,صداي خروس ( قوقولي قوقو),sounds,word,produces,NA,NA,NA
+item_9,a9,صداي سگ (هاپ،هاپ),sounds,word,produces,NA,NA,NA
+item_10,a10,صداي قطار (هو هو چي چي),sounds,word,produces,NA,NA,NA
+item_11,a11,صداي كلاغ ( قار قار),sounds,word,produces,NA,NA,NA
+item_12,a12,صداي گربه ( ميو ميو),sounds,word,produces,NA,NA,NA
+item_13,a13,صداي گوسفند (بع بع),sounds,word,produces,NA,NA,NA
+item_14,a14,صداي ماشين (ام/بيب، بيب),sounds,word,produces,NA,NA,NA
+item_15,a15,صدای موتور,sounds,word,produces,NA,NA,NA
+item_16,vasilenaqliye1,اتوبوس,vehicles,word,produces,NA,NA,NA
+item_17,v2,تراکتور,vehicles,word,produces,NA,NA,NA
+item_18,v3,دوچرخه (چرخ),vehicles,word,produces,NA,NA,NA
+item_19,v4,سهچرخه,vehicles,word,produces,NA,NA,NA
+item_20,v5,قایق,vehicles,word,produces,NA,NA,NA
+item_21,v6,قطار,vehicles,word,produces,NA,NA,NA
+item_22,v7,کامیون,vehicles,word,produces,NA,NA,NA
+item_23,v8,ماشین,vehicles,word,produces,NA,NA,NA
+item_24,v9,موتور,vehicles,word,produces,NA,NA,NA
+item_25,v10,مینی بوس,vehicles,word,produces,NA,NA,NA
+item_26,v11,هلی کوپتر,vehicles,word,produces,NA,NA,NA
+item_27,v12,هواپیما,vehicles,word,produces,NA,NA,NA
+item_28,v13,کشتی,vehicles,word,produces,NA,NA,NA
+item_29,qaza1,اب,food_drink,word,produces,NA,NA,NA
+item_30,q2,ابگوشت,food_drink,word,produces,NA,NA,NA
+item_31,q3,اب میوه) ساندیس),food_drink,word,produces,NA,NA,NA
+item_32,q4,اب نبات,food_drink,word,produces,NA,NA,NA
+item_33,q5,اجیل,food_drink,word,produces,NA,NA,NA
+item_34,q6,ادامس,food_drink,word,produces,NA,NA,NA
+item_35,q7,اش,food_drink,word,produces,NA,NA,NA
+item_36,q8,البالو,food_drink,word,produces,NA,NA,NA
+item_37,q9,انار,food_drink,word,produces,NA,NA,NA
+item_38,q10,انگور,food_drink,word,produces,NA,NA,NA
+item_39,q11,بادام,food_drink,word,produces,NA,NA,NA
+item_40,q12,برنج,food_drink,word,produces,NA,NA,NA
+item_41,q13,بستنی,food_drink,word,produces,NA,NA,NA
+item_42,q14,بلال,food_drink,word,produces,NA,NA,NA
+item_43,q15,بیسکویت,food_drink,word,produces,NA,NA,NA
+item_44,q16,پرتقال,food_drink,word,produces,NA,NA,NA
+item_45,q17,پسته,food_drink,word,produces,NA,NA,NA
+item_46,q18,پفک,food_drink,word,produces,NA,NA,NA
+item_47,q19,پلو,food_drink,word,produces,NA,NA,NA
+item_48,q20,پنیر,food_drink,word,produces,NA,NA,NA
+item_49,q21,پیاز,food_drink,word,produces,NA,NA,NA
+item_50,q22,پیتزا,food_drink,word,produces,NA,NA,NA
+item_51,q23,تخممرغ,food_drink,word,produces,NA,NA,NA
+item_52,q24,تن ماهی,food_drink,word,produces,NA,NA,NA
+item_53,q25,توت,food_drink,word,produces,NA,NA,NA
+item_54,q26,چای,food_drink,word,produces,NA,NA,NA
+item_55,q27,چوب شور,food_drink,word,produces,NA,NA,NA
+item_56,q28,چیپس,food_drink,word,produces,NA,NA,NA
+item_57,q29,خربزه,food_drink,word,produces,NA,NA,NA
+item_58,q30,خورش,food_drink,word,produces,NA,NA,NA
+item_59,q31,خیار,food_drink,word,produces,NA,NA,NA
+item_60,q32,رب,food_drink,word,produces,NA,NA,NA
+item_61,q33,دوغ,food_drink,word,produces,NA,NA,NA
+item_62,q34,ساندویچ,food_drink,word,produces,NA,NA,NA
+item_63,q35,سبزی,food_drink,word,produces,NA,NA,NA
+item_64,q36,سس,food_drink,word,produces,NA,NA,NA
+item_65,q37,سوپ,food_drink,word,produces,NA,NA,NA
+item_66,q38,سوسیس,food_drink,word,produces,NA,NA,NA
+item_67,q39,سیب,food_drink,word,produces,NA,NA,NA
+item_68,q40,سیب زمینی,food_drink,word,produces,NA,NA,NA
+item_69,q41,شربت,food_drink,word,produces,NA,NA,NA
+item_70,q42,شکلات,food_drink,word,produces,NA,NA,NA
+item_71,q43,شیر (خوراکی),food_drink,word,produces,NA,NA,NA
+item_72,q44,شیرینی,food_drink,word,produces,NA,NA,NA
+item_73,q45,غذا,food_drink,word,produces,NA,NA,NA
+item_74,q46,فلفل,food_drink,word,produces,NA,NA,NA
+item_75,q47,فندق,food_drink,word,produces,NA,NA,NA
+item_76,q48,قارچ,food_drink,word,produces,NA,NA,NA
+item_77,q49,قند,food_drink,word,produces,NA,NA,NA
+item_78,q50,کاکائو,food_drink,word,produces,NA,NA,NA
+item_79,q51,کالباس,food_drink,word,produces,NA,NA,NA
+item_80,q52,کره,food_drink,word,produces,NA,NA,NA
+item_81,q53,کباب,food_drink,word,produces,NA,NA,NA
+item_82,q54,کشمش,food_drink,word,produces,NA,NA,NA
+item_83,q55,کیک,food_drink,word,produces,NA,NA,NA
+item_84,q56,کیوی,food_drink,word,produces,NA,NA,NA
+item_85,q57,گردو,food_drink,word,produces,NA,NA,NA
+item_86,q58,گوشت,food_drink,word,produces,NA,NA,NA
+item_87,q59,گوجه,food_drink,word,produces,NA,NA,NA
+item_88,q60,گیلاس,food_drink,word,produces,NA,NA,NA
+item_89,q61,لوبیا,food_drink,word,produces,NA,NA,NA
+item_90,q62,لیمو,food_drink,word,produces,NA,NA,NA
+item_91,q63,ماست,food_drink,word,produces,NA,NA,NA
+item_92,q64,ماکارونی,food_drink,word,produces,NA,NA,NA
+item_93,q65,مربا,food_drink,word,produces,NA,NA,NA
+item_94,q66,موز,food_drink,word,produces,NA,NA,NA
+item_95,q67,میوه,food_drink,word,produces,NA,NA,NA
+item_96,q68,نان,food_drink,word,produces,NA,NA,NA
+item_97,q69,نارنگی,food_drink,word,produces,NA,NA,NA
+item_98,q70,نوشابه,food_drink,word,produces,NA,NA,NA
+item_99,q71,نخودچی,food_drink,word,produces,NA,NA,NA
+item_100,q72,نمک,food_drink,word,produces,NA,NA,NA
+item_101,q73,هلو,food_drink,word,produces,NA,NA,NA
+item_102,q74,همبرگر,food_drink,word,produces,NA,NA,NA
+item_103,q75,هندوانه,food_drink,word,produces,NA,NA,NA
+item_104,q76,یخ,food_drink,word,produces,NA,NA,NA
+item_105,asbabbazi1,اسباب بازی,toys,word,produces,NA,NA,NA
+item_106,asbab2,بادبادک,toys,word,produces,NA,NA,NA
+item_107,asbab3,بادکنک,toys,word,produces,NA,NA,NA
+item_108,asbab4,پازل,toys,word,produces,NA,NA,NA
+item_109,asbab5,تاب,toys,word,produces,NA,NA,NA
+item_110,asbab6,تخته,toys,word,produces,NA,NA,NA
+item_111,asbab7,توپ,toys,word,produces,NA,NA,NA
+item_112,asbab8,چسب,toys,word,produces,NA,NA,NA
+item_113,asbab9,خط کش,toys,word,produces,NA,NA,NA
+item_114,asbab10,خمیر,toys,word,produces,NA,NA,NA
+item_115,asbab11,خودکار,toys,word,produces,NA,NA,NA
+item_116,asbab12,دفتر,toys,word,produces,NA,NA,NA
+item_117,asbab13,سوت,toys,word,produces,NA,NA,NA
+item_118,asbab14,عروسک,toys,word,produces,NA,NA,NA
+item_119,asbab15,شیپور,toys,word,produces,NA,NA,NA
+item_120,asbab16,طناب,toys,word,produces,NA,NA,NA
+item_121,asbab17,کتاب,toys,word,produces,NA,NA,NA
+item_122,asbab18,کتاب داستان,toys,word,produces,NA,NA,NA
+item_123,asbab19,لگو,toys,word,produces,NA,NA,NA
+item_124,asbab20,ماژیک,toys,word,produces,NA,NA,NA
+item_125,asbab21,مداد,toys,word,produces,NA,NA,NA
+item_126,asbab22,مداد رنگی,toys,word,produces,NA,NA,NA
+item_127,asbab23,مشق,toys,word,produces,NA,NA,NA
+item_128,asbab24,نقاشی,toys,word,produces,NA,NA,NA
+item_129,heivanat1,اهو,animals,word,produces,NA,NA,NA
+item_130,h2,اسب,animals,word,produces,NA,NA,NA
+item_131,h3,اردک,animals,word,produces,NA,NA,NA
+item_132,h4,الاغ,animals,word,produces,NA,NA,NA
+item_133,h5,ببر,animals,word,produces,NA,NA,NA
+item_134,h6,بره,animals,word,produces,NA,NA,NA
+item_135,h7,بز,animals,word,produces,NA,NA,NA
+item_136,h8,بلبل,animals,word,produces,NA,NA,NA
+item_137,h9,پرنده,animals,word,produces,NA,NA,NA
+item_138,h10,پروانه,animals,word,produces,NA,NA,NA
+item_139,h11,پشه,animals,word,produces,NA,NA,NA
+item_140,h12,پلنگ,animals,word,produces,NA,NA,NA
+item_141,h13,جوجه,animals,word,produces,NA,NA,NA
+item_142,h14,حیوان,animals,word,produces,NA,NA,NA
+item_143,h15,خر,animals,word,produces,NA,NA,NA
+item_144,h16,خرچنگ,animals,word,produces,NA,NA,NA
+item_145,h17,خرس,animals,word,produces,NA,NA,NA
+item_146,h18,خرگوش,animals,word,produces,NA,NA,NA
+item_147,h19,خروس,animals,word,produces,NA,NA,NA
+item_148,h20,روباه,animals,word,produces,NA,NA,NA
+item_149,h21,زرافه,animals,word,produces,NA,NA,NA
+item_150,h22,زنبور,animals,word,produces,NA,NA,NA
+item_151,h23,سگ,animals,word,produces,NA,NA,NA
+item_152,h24,سنجاب,animals,word,produces,NA,NA,NA
+item_153,h25,سوسک,animals,word,produces,NA,NA,NA
+item_154,h26,شتر,animals,word,produces,NA,NA,NA
+item_155,h27,طوطی,animals,word,produces,NA,NA,NA
+item_156,h28,عقاب,animals,word,produces,NA,NA,NA
+item_157,h29,فیل,animals,word,produces,NA,NA,NA
+item_158,h30,قورباغه,animals,word,produces,NA,NA,NA
+item_159,h31,کبوتر,animals,word,produces,NA,NA,NA
+item_160,h32,کلاغ,animals,word,produces,NA,NA,NA
+item_161,h33,گاو,animals,word,produces,NA,NA,NA
+item_162,h34,گربه,animals,word,produces,NA,NA,NA
+item_163,h35,گرگ,animals,word,produces,NA,NA,NA
+item_164,h36,گنجشک,animals,word,produces,NA,NA,NA
+item_165,h37,گورخر,animals,word,produces,NA,NA,NA
+item_166,h38,گوسفند,animals,word,produces,NA,NA,NA
+item_167,h39,گوزن,animals,word,produces,NA,NA,NA
+item_168,h40,لاک پشت,animals,word,produces,NA,NA,NA
+item_169,h41,مار,animals,word,produces,NA,NA,NA
+item_170,h42,ماهی,animals,word,produces,NA,NA,NA
+item_171,h43,مرغ,animals,word,produces,NA,NA,NA
+item_172,h44,مگس,animals,word,produces,NA,NA,NA
+item_173,h45,مورچه,animals,word,produces,NA,NA,NA
+item_174,h46,موش,animals,word,produces,NA,NA,NA
+item_175,h47,میمون,animals,word,produces,NA,NA,NA
+item_176,bazi1,اب بازی,games_routines,word,produces,NA,NA,NA
+item_177,b2,اتل متل,games_routines,word,produces,NA,NA,NA
+item_178,b3,الله اکبر,games_routines,word,produces,NA,NA,NA
+item_179,b4,الو,games_routines,word,produces,NA,NA,NA
+item_180,b5,بای بای ( خداحافظ),games_routines,word,produces,NA,NA,NA
+item_181,b6,بله ( اره),games_routines,word,produces,NA,NA,NA
+item_182,b7,به سلامت,games_routines,word,produces,NA,NA,NA
+item_183,b8,تاب تاب عباسی,games_routines,word,produces,NA,NA,NA
+item_184,b9,خواب,games_routines,word,produces,NA,NA,NA
+item_185,b10,دالی/داکی,games_routines,word,produces,NA,NA,NA
+item_186,b11,ده- بیست- سی- چهل,games_routines,word,produces,NA,NA,NA
+item_187,b12,سلام,games_routines,word,produces,NA,NA,NA
+item_188,b13,شام,games_routines,word,produces,NA,NA,NA
+item_189,b14,شب بخیر,games_routines,word,produces,NA,NA,NA
+item_190,b15,عصرانه,games_routines,word,produces,NA,NA,NA
+item_191,b16,عمو زنجیر باف,games_routines,word,produces,NA,NA,NA
+item_192,b17,عید,games_routines,word,produces,NA,NA,NA
+item_193,b18,قایم (قایم باشک),games_routines,word,produces,NA,NA,NA
+item_194,b19,صبحانه,games_routines,word,produces,NA,NA,NA
+item_195,b20,صبح بخیر,games_routines,word,produces,NA,NA,NA
+item_196,b21,کلاغ پر,games_routines,word,produces,NA,NA,NA
+item_197,b22,لطفا,games_routines,word,produces,NA,NA,NA
+item_198,b23,مبارک,games_routines,word,produces,NA,NA,NA
+item_199,b24,مرسی (ممنون),games_routines,word,produces,NA,NA,NA
+item_200,b25,نانای,games_routines,word,produces,NA,NA,NA
+item_201,b26,نهار,games_routines,word,produces,NA,NA,NA
+item_202,b27,هیس,games_routines,word,produces,NA,NA,NA
+item_203,makan1,اداره,outside,word,produces,NA,NA,NA
+item_204,m2,باغ,outside,word,produces,NA,NA,NA
+item_205,m3,بیرون,outside,word,produces,NA,NA,NA
+item_206,m4,پارک,outside,word,produces,NA,NA,NA
+item_207,m5,پل,outside,word,produces,NA,NA,NA
+item_208,m6,حیاط,outside,word,produces,NA,NA,NA
+item_209,m7,خانه,outside,word,produces,NA,NA,NA
+item_210,m8,دریا,outside,word,produces,NA,NA,NA
+item_211,m9,ساحل,outside,word,produces,NA,NA,NA
+item_212,m10,سینما,outside,word,produces,NA,NA,NA
+item_213,m11,کلاس,outside,word,produces,NA,NA,NA
+item_214,m12,کوچه,outside,word,produces,NA,NA,NA
+item_215,m13,کوه,outside,word,produces,NA,NA,NA
+item_216,m14,مدرسه,outside,word,produces,NA,NA,NA
+item_217,m15,مسجد,outside,word,produces,NA,NA,NA
+item_218,m16,مغازه,outside,word,produces,NA,NA,NA
+item_219,m17,مهمانی,outside,word,produces,NA,NA,NA
+item_220,pushak1,النگو,clothing,word,produces,NA,NA,NA
+item_221,p2,انگشتر,clothing,word,produces,NA,NA,NA
+item_222,p3,بلوز,clothing,word,produces,NA,NA,NA
+item_223,p4,پوشک,clothing,word,produces,NA,NA,NA
+item_224,p5,پیراهن,clothing,word,produces,NA,NA,NA
+item_225,p6,تِل,clothing,word,produces,NA,NA,NA
+item_226,p7,پیش بند,clothing,word,produces,NA,NA,NA
+item_227,p8,جوراب,clothing,word,produces,NA,NA,NA
+item_228,p9,چادر,clothing,word,produces,NA,NA,NA
+item_229,p10,چکمه,clothing,word,produces,NA,NA,NA
+item_230,p11,دستبند,clothing,word,produces,NA,NA,NA
+item_231,p12,دستکش,clothing,word,produces,NA,NA,NA
+item_232,p13,دکمه,clothing,word,produces,NA,NA,NA
+item_233,p14,دمپای ی,clothing,word,produces,NA,NA,NA
+item_234,p15,روسری,clothing,word,produces,NA,NA,NA
+item_235,p16,زیپ,clothing,word,produces,NA,NA,NA
+item_236,p17,سنجاق,clothing,word,produces,NA,NA,NA
+item_237,p18,شال,clothing,word,produces,NA,NA,NA
+item_238,p19,شلوار,clothing,word,produces,NA,NA,NA
+item_239,p20,شورت,clothing,word,produces,NA,NA,NA
+item_240,p21,کاپشن,clothing,word,produces,NA,NA,NA
+item_241,p22,کت,clothing,word,produces,NA,NA,NA
+item_242,p23,کِش,clothing,word,produces,NA,NA,NA
+item_243,p24,ک فش,clothing,word,produces,NA,NA,NA
+item_244,p25,کلاه,clothing,word,produces,NA,NA,NA
+item_245,p26,کمربند,clothing,word,produces,NA,NA,NA
+item_246,p27,گردنبند,clothing,word,produces,NA,NA,NA
+item_247,p28,گل سر (گیر),clothing,word,produces,NA,NA,NA
+item_248,p29,گوشواره,clothing,word,produces,NA,NA,NA
+item_249,p30,لباس,clothing,word,produces,NA,NA,NA
+item_250,p31,مانتو,clothing,word,produces,NA,NA,NA
+item_251,badan1,ابرو,body_parts,word,produces,NA,NA,NA
+item_252,badan2,انگشت,body_parts,word,produces,NA,NA,NA
+item_253,badan3,بازو,body_parts,word,produces,NA,NA,NA
+item_254,badan4,باسن*,body_parts,word,produces,NA,NA,NA
+item_255,badan5,بینی(دماغ),body_parts,word,produces,NA,NA,NA
+item_256,badan6,پا,body_parts,word,produces,NA,NA,NA
+item_257,badan7,چانه,body_parts,word,produces,NA,NA,NA
+item_258,badan8,چشم,body_parts,word,produces,NA,NA,NA
+item_259,badan9,دست,body_parts,word,produces,NA,NA,NA
+item_260,badan10,دل,body_parts,word,produces,NA,NA,NA
+item_261,badan11,دندان,body_parts,word,produces,NA,NA,NA
+item_262,badan12,دهان,body_parts,word,produces,NA,NA,NA
+item_263,badan13,زانو,body_parts,word,produces,NA,NA,NA
+item_264,badan14,زبان,body_parts,word,produces,NA,NA,NA
+item_265,badan15,سر (کله),body_parts,word,produces,NA,NA,NA
+item_266,badan16,شانه,body_parts,word,produces,NA,NA,NA
+item_267,badan17,شکم,body_parts,word,produces,NA,NA,NA
+item_268,badan18,شصت,body_parts,word,produces,NA,NA,NA
+item_269,badan19,صورت,body_parts,word,produces,NA,NA,NA
+item_270,badan20,گردن,body_parts,word,produces,NA,NA,NA
+item_271,badan21,وش,body_parts,word,produces,NA,NA,NA
+item_272,badan22,لب ها,body_parts,word,produces,NA,NA,NA
+item_273,badan23,لپ,body_parts,word,produces,NA,NA,NA
+item_274,badan24,مو,body_parts,word,produces,NA,NA,NA
+item_275,badan25,مچ,body_parts,word,produces,NA,NA,NA
+item_276,badan26,مشت,body_parts,word,produces,NA,NA,NA
+item_277,badan27,مژه,body_parts,word,produces,NA,NA,NA
+item_278,badan28,ناف,body_parts,word,produces,NA,NA,NA
+item_279,afrad1,ادم,people,word,produces,NA,NA,NA
+item_280,afrad2,اسم خود کودک,people,word,produces,NA,NA,NA
+item_281,afrad3,اقا,people,word,produces,NA,NA,NA
+item_282,afrad4,الله (خدا),people,word,produces,NA,NA,NA
+item_283,afrad5,بابا*,people,word,produces,NA,NA,NA
+item_284,afrad6,بابا بزرگ*,people,word,produces,NA,NA,NA
+item_285,afrad7,بچه (نی نی),people,word,produces,NA,NA,NA
+item_286,afrad8,پسر,people,word,produces,NA,NA,NA
+item_287,afrad9,پستچی,people,word,produces,NA,NA,NA
+item_288,afrad10,پلیس,people,word,produces,NA,NA,NA
+item_289,afrad11,خاله,people,word,produces,NA,NA,NA
+item_290,afrad12,خانم,people,word,produces,NA,NA,NA
+item_291,afrad13,خواهر ( ابجی) *,people,word,produces,NA,NA,NA
+item_292,afrad14,داداش*,people,word,produces,NA,NA,NA
+item_293,afrad15,دای ی,people,word,produces,NA,NA,NA
+item_294,afrad16,دختر,people,word,produces,NA,NA,NA
+item_295,afrad17,دک ت ر,people,word,produces,NA,NA,NA
+item_296,afrad18,دوست,people,word,produces,NA,NA,NA
+item_297,afrad19,راننده,people,word,produces,NA,NA,NA
+item_298,afrad20,زن,people,word,produces,NA,NA,NA
+item_299,afrad21,عمو,people,word,produces,NA,NA,NA
+item_300,afrad22,عمه,people,word,produces,NA,NA,NA
+item_301,afrad23,مامان*,people,word,produces,NA,NA,NA
+item_302,afrad24,مامان بزرگ*,people,word,produces,NA,NA,NA
+item_303,afrad25,مرد,people,word,produces,NA,NA,NA
+item_304,afrad26,معلم,people,word,produces,NA,NA,NA
+item_305,afrad27,مهندس,people,word,produces,NA,NA,NA
+item_306,v.kh1,اشپزخانه,furniture_rooms,word,produces,NA,NA,NA
+item_307,v.kh2,ایفون,furniture_rooms,word,produces,NA,NA,NA
+item_308,v.kh3,اتاق,furniture_rooms,word,produces,NA,NA,NA
+item_309,v.kh4,اتو,furniture_rooms,word,produces,NA,NA,NA
+item_310,v.kh5,اجاق (گاز),furniture_rooms,word,produces,NA,NA,NA
+item_311,v.kh6,ایوان,furniture_rooms,word,produces,NA,NA,NA
+item_312,v.kh7,بخاری,furniture_rooms,word,produces,NA,NA,NA
+item_313,v.kh8,پارکینگ,furniture_rooms,word,produces,NA,NA,NA
+item_314,v.kh9,پذیرایی,furniture_rooms,word,produces,NA,NA,NA
+item_315,v.kh10,پله,furniture_rooms,word,produces,NA,NA,NA
+item_316,v.kh11,پنجره,furniture_rooms,word,produces,NA,NA,NA
+item_317,v.kh12,تخت,furniture_rooms,word,produces,NA,NA,NA
+item_318,v.kh13,تلویزیون,furniture_rooms,word,produces,NA,NA,NA
+item_319,v.kh14,حمام,furniture_rooms,word,produces,NA,NA,NA
+item_320,v.kh15,در,furniture_rooms,word,produces,NA,NA,NA
+item_321,v.kh16,دستشویی,furniture_rooms,word,produces,NA,NA,NA
+item_322,v.kh17,دوش,furniture_rooms,word,produces,NA,NA,NA
+item_323,v.kh18,دیوار,furniture_rooms,word,produces,NA,NA,NA
+item_324,v.kh19,رختخواب,furniture_rooms,word,produces,NA,NA,NA
+item_325,v.kh20,زیرزمین,furniture_rooms,word,produces,NA,NA,NA
+item_326,v.kh21,سماور,furniture_rooms,word,produces,NA,NA,NA
+item_327,v.kh22,صندلی,furniture_rooms,word,produces,NA,NA,NA
+item_328,v.kh23,ضبط,furniture_rooms,word,produces,NA,NA,NA
+item_329,v.kh24,فریزر,furniture_rooms,word,produces,NA,NA,NA
+item_330,v.kh25,ظرفشویی,furniture_rooms,word,produces,NA,NA,NA
+item_331,v.kh26,قالی ( فرش),furniture_rooms,word,produces,NA,NA,NA
+item_332,v.kh27,کامپیوتر,furniture_rooms,word,produces,NA,NA,NA
+item_333,v.kh28,کشو,furniture_rooms,word,produces,NA,NA,NA
+item_334,v.kh29,کمد,furniture_rooms,word,produces,NA,NA,NA
+item_335,v.kh30,ماشین لباسشویی,furniture_rooms,word,produces,NA,NA,NA
+item_336,v.kh31,مبل,furniture_rooms,word,produces,NA,NA,NA
+item_337,v.kh32,میز,furniture_rooms,word,produces,NA,NA,NA
+item_338,v.kh33,یخچال,furniture_rooms,word,produces,NA,NA,NA
+item_339,shayha1,اشغال,household,word,produces,NA,NA,NA
+item_340,sh2,اینه,household,word,produces,NA,NA,NA
+item_341,sh3,استکان,household,word,produces,NA,NA,NA
+item_342,sh4,بالش (پشتی),household,word,produces,NA,NA,NA
+item_343,sh5,برس,household,word,produces,NA,NA,NA
+item_344,sh6,بشقاب,household,word,produces,NA,NA,NA
+item_345,sh7,پارچ,household,word,produces,NA,NA,NA
+item_346,sh8,پارچه,household,word,produces,NA,NA,NA
+item_347,sh9,پتو,household,word,produces,NA,NA,NA
+item_348,sh10,پرده,household,word,produces,NA,NA,NA
+item_349,sh11,پول,household,word,produces,NA,NA,NA
+item_350,sh12,پیچ,household,word,produces,NA,NA,NA
+item_351,sh13,پیچ گوشتی,household,word,produces,NA,NA,NA
+item_352,sh14,تلفن,household,word,produces,NA,NA,NA
+item_353,sh15,جارو,household,word,produces,NA,NA,NA
+item_354,sh16,جارو برقی,household,word,produces,NA,NA,NA
+item_355,sh17,چاقو,household,word,produces,NA,NA,NA
+item_356,sh18,چتر,household,word,produces,NA,NA,NA
+item_357,sh19,چکش,household,word,produces,NA,NA,NA
+item_358,sh20,چنگال,household,word,produces,NA,NA,NA
+item_359,sh21,چوب,household,word,produces,NA,NA,NA
+item_360,sh22,حوله,household,word,produces,NA,NA,NA
+item_361,sh23,خمیر دندان,household,word,produces,NA,NA,NA
+item_362,sh24,دارو,household,word,produces,NA,NA,NA
+item_363,sh25,دستمال,household,word,produces,NA,NA,NA
+item_364,sh26,دوربین,household,word,produces,NA,NA,NA
+item_365,sh27,دیس,household,word,produces,NA,NA,NA
+item_366,sh28,رادیو,household,word,produces,NA,NA,NA
+item_367,sh29,ساعت,household,word,produces,NA,NA,NA
+item_368,sh30,سطل,household,word,produces,NA,NA,NA
+item_369,sh31,سوزن,household,word,produces,NA,NA,NA
+item_370,sh32,سی دی,household,word,produces,NA,NA,NA
+item_371,sh33,سینی,household,word,produces,NA,NA,NA
+item_372,sh34,شامپو,household,word,produces,NA,NA,NA
+item_373,sh35,شانه,household,word,produces,NA,NA,NA
+item_374,sh36,شمع,household,word,produces,NA,NA,NA
+item_375,sh37,شیشه (شیر),household,word,produces,NA,NA,NA
+item_376,sh38,صابون,household,word,produces,NA,NA,NA
+item_377,sh39,ظرف,household,word,produces,NA,NA,NA
+item_378,sh40,عکس,household,word,produces,NA,NA,NA
+item_379,sh41,عینک,household,word,produces,NA,NA,NA
+item_380,sh42,قاشق,household,word,produces,NA,NA,NA
+item_381,sh43,قوری,household,word,produces,NA,NA,NA
+item_382,sh44,قیچی,household,word,produces,NA,NA,NA
+item_383,sh45,کاسه,household,word,produces,NA,NA,NA
+item_384,sh46,کاغذ,household,word,produces,NA,NA,NA
+item_385,sh47,کبریت,household,word,produces,NA,NA,NA
+item_386,sh48,کتری,household,word,produces,NA,NA,NA
+item_387,sh49,کلید,household,word,produces,NA,NA,NA
+item_388,sh50,کنترل,household,word,produces,NA,NA,NA
+item_389,sh51,کیف,household,word,produces,NA,NA,NA
+item_390,sh52,لامپ,household,word,produces,NA,NA,NA
+item_391,sh53,لیف,household,word,produces,NA,NA,NA
+item_392,sh54,لیوان,household,word,produces,NA,NA,NA
+item_393,sh55,مسواک,household,word,produces,NA,NA,NA
+item_394,sh56,نخ,household,word,produces,NA,NA,NA
+item_395,sh57,نمکدان,household,word,produces,NA,NA,NA
+item_396,xarejemanzel1,اتش,outside,word,produces,NA,NA,NA
+item_397,x2,ادم برفی,outside,word,produces,NA,NA,NA
+item_398,x3,اسمان,outside,word,produces,NA,NA,NA
+item_399,x4,ابر,outside,word,produces,NA,NA,NA
+item_400,x5,باد,outside,word,produces,NA,NA,NA
+item_401,x6,باران,outside,word,produces,NA,NA,NA
+item_402,x7,بام (پشت بام),outside,word,produces,NA,NA,NA
+item_403,x8,برف,outside,word,produces,NA,NA,NA
+item_404,x9,برگ,outside,word,produces,NA,NA,NA
+item_405,x10,بیل,outside,word,produces,NA,NA,NA
+item_406,x11,پرچم,outside,word,produces,NA,NA,NA
+item_407,x12,پیاده رو,outside,word,produces,NA,NA,NA
+item_408,x13,حوض (استخر),outside,word,produces,NA,NA,NA
+item_409,x14,خاک,outside,word,produces,NA,NA,NA
+item_410,x15,خورشید,outside,word,produces,NA,NA,NA
+item_411,x16,خیابان,outside,word,produces,NA,NA,NA
+item_412,x17,درخت,outside,word,produces,NA,NA,NA
+item_413,x18,دود,outside,word,produces,NA,NA,NA
+item_414,x19,زمین,outside,word,produces,NA,NA,NA
+item_415,x20,ساقه,outside,word,produces,NA,NA,NA
+item_416,x21,ستاره,outside,word,produces,NA,NA,NA
+item_417,x22,سرسره,outside,word,produces,NA,NA,NA
+item_418,x23,سنگ,outside,word,produces,NA,NA,NA
+item_419,x24,شلنگ,outside,word,produces,NA,NA,NA
+item_420,x25,علف (سبزه),outside,word,produces,NA,NA,NA
+item_421,x26,گل,outside,word,produces,NA,NA,NA
+item_422,x27,گِل,outside,word,produces,NA,NA,NA
+item_423,x28,ماه,outside,word,produces,NA,NA,NA
+item_424,x29,هوا,outside,word,produces,NA,NA,NA
+item_425,harfetarif.meqdar1,بیشتر,quantifiers,word,produces,NA,NA,NA
+item_426,harfetarif2,خیلی,quantifiers,word,produces,NA,NA,NA
+item_427,harfetarif3,دیگه,quantifiers,word,produces,NA,NA,NA
+item_428,harfetarif4,زیاد,quantifiers,word,produces,NA,NA,NA
+item_429,harfetarif5,یه کم( یه ذره),quantifiers,word,produces,NA,NA,NA
+item_430,harfetarif6,مثلِ ( شکلِ),quantifiers,word,produces,NA,NA,NA
+item_431,harfetarif7,هر,quantifiers,word,produces,NA,NA,NA
+item_432,harfetarif8,همه- همش,quantifiers,word,produces,NA,NA,NA
+item_433,harfetarif9,هیچی,quantifiers,word,produces,NA,NA,NA
+item_434,harfetarif10,هیچ کدوم,quantifiers,word,produces,NA,NA,NA
+item_435,harfetarif11,یک,quantifiers,word,produces,NA,NA,NA
+item_436,zaman1,الان,time_words,word,produces,NA,NA,NA
+item_437,z2,امروز,time_words,word,produces,NA,NA,NA
+item_438,z3,بعد,time_words,word,produces,NA,NA,NA
+item_439,z4,دیروز,time_words,word,produces,NA,NA,NA
+item_440,z5,روز,time_words,word,produces,NA,NA,NA
+item_441,z6,زود,time_words,word,produces,NA,NA,NA
+item_442,z7,شب,time_words,word,produces,NA,NA,NA
+item_443,z8,صبح,time_words,word,produces,NA,NA,NA
+item_444,z9,ظهر,time_words,word,produces,NA,NA,NA
+item_445,z10,عصر,time_words,word,produces,NA,NA,NA
+item_446,z11,فردا,time_words,word,produces,NA,NA,NA
+item_447,z12,قبل,time_words,word,produces,NA,NA,NA
+item_448,zamir1,ان (اون),pronouns,word,produces,NA,NA,that
+item_449,zamir2,انها,pronouns,word,produces,NA,NA,3PL
+item_450,zamir3,او (اون),pronouns,word,produces,NA,NA,3SG
+item_451,zamir4,این,pronouns,word,produces,NA,NA,this
+item_452,zamir5,اینها,pronouns,word,produces,NA,NA,these
+item_453,zamir6,تو,pronouns,word,produces,NA,NA,2SG
+item_454,zamir7,خودت,pronouns,word,produces,NA,NA,2SG.REFL
+item_455,zamir8,خودتان (خودتون),pronouns,word,produces,NA,NA,2SG.REFL
+item_456,zamir9,خودش,pronouns,word,produces,NA,NA,3SG.REFL
+item_457,zamir10,خودشان,pronouns,word,produces,NA,NA,3PL.REFL
+item_458,zamir11,خودم,pronouns,word,produces,NA,NA,1SG.REFL
+item_459,zamir12,خودمان (خودمون),pronouns,word,produces,NA,NA,1PL.REFL
+item_460,zamir13,شما,pronouns,word,produces,NA,NA,2PL
+item_461,zamir14,ما,pronouns,word,produces,NA,NA,1PL
+item_462,zamir15,من,pronouns,word,produces,NA,NA,1SG
+item_463,zamir16,همان(همون),pronouns,word,produces,NA,NA,same
+item_464,tosifi1,ابی,descriptive_words,word,produces,NA,NA,NA
+item_465,t2,اخر,descriptive_words,word,produces,NA,NA,NA
+item_466,t3,اهسته (یواش),descriptive_words,word,produces,NA,NA,NA
+item_467,t4,اذیت,descriptive_words,word,produces,NA,NA,NA
+item_468,t5,اول,descriptive_words,word,produces,NA,NA,NA
+item_469,t6,باز,descriptive_words,word,produces,NA,NA,NA
+item_470,t7,بامزه,descriptive_words,word,produces,NA,NA,NA
+item_471,t8,بد,descriptive_words,word,produces,NA,NA,NA
+item_472,t9,بد مزه,descriptive_words,word,produces,NA,NA,NA
+item_473,t10,بزرگ,descriptive_words,word,produces,NA,NA,NA
+item_474,t11,بسته,descriptive_words,word,produces,NA,NA,NA
+item_475,t12,بلند (صدا),descriptive_words,word,produces,NA,NA,NA
+item_476,t13,بهتر,descriptive_words,word,produces,NA,NA,NA
+item_477,t14,بیدار,descriptive_words,word,produces,NA,NA,NA
+item_478,t15,پاره,descriptive_words,word,produces,NA,NA,NA
+item_479,t16,پر,descriptive_words,word,produces,NA,NA,NA
+item_480,t17,پیر,descriptive_words,word,produces,NA,NA,NA
+item_481,t18,تاریک,descriptive_words,word,produces,NA,NA,NA
+item_482,t19,تازه,descriptive_words,word,produces,NA,NA,NA
+item_483,t20,ترش,descriptive_words,word,produces,NA,NA,NA
+item_484,t21,تلخ,descriptive_words,word,produces,NA,NA,NA
+item_485,t22,تمیز,descriptive_words,word,produces,NA,NA,NA
+item_486,t23,چاق,descriptive_words,word,produces,NA,NA,NA
+item_487,t24,خالی,descriptive_words,word,produces,NA,NA,NA
+item_488,t25,خسته,descriptive_words,word,produces,NA,NA,NA
+item_489,t26,خشک,descriptive_words,word,produces,NA,NA,NA
+item_490,t27,خواب,descriptive_words,word,produces,NA,NA,NA
+item_491,t28,خوابیده,descriptive_words,word,produces,NA,NA,NA
+item_492,t29,خوشحال,descriptive_words,word,produces,NA,NA,NA
+item_493,t30,خوشگل,descriptive_words,word,produces,NA,NA,NA
+item_494,t31,خوشمزه,descriptive_words,word,produces,NA,NA,NA
+item_495,t32,خیس,descriptive_words,word,produces,NA,NA,NA
+item_496,t33,داغ,descriptive_words,word,produces,NA,NA,NA
+item_497,t34,دراز (بلند),descriptive_words,word,produces,NA,NA,NA
+item_498,t35,روشن,descriptive_words,word,produces,NA,NA,NA
+item_499,t36,زرد,descriptive_words,word,produces,NA,NA,NA
+item_500,t37,سبز,descriptive_words,word,produces,NA,NA,NA
+item_501,t38,سبک,descriptive_words,word,produces,NA,NA,NA
+item_502,t39,سرد,descriptive_words,word,produces,NA,NA,NA
+item_503,t40,سریع (تند),descriptive_words,word,produces,NA,NA,NA
+item_504,t41,سفت,descriptive_words,word,produces,NA,NA,NA
+item_505,t42,سفید,descriptive_words,word,produces,NA,NA,NA
+item_506,t43,سنگین,descriptive_words,word,produces,NA,NA,NA
+item_507,t44,سیاه,descriptive_words,word,produces,NA,NA,NA
+item_508,t45,شکسته,descriptive_words,word,produces,NA,NA,NA
+item_509,t46,شور,descriptive_words,word,produces,NA,NA,NA
+item_510,t47,شیرین,descriptive_words,word,produces,NA,NA,NA
+item_511,t48,شیطان,descriptive_words,word,produces,NA,NA,NA
+item_512,t49,قرمز,descriptive_words,word,produces,NA,NA,NA
+item_513,t50,قهوه ای,descriptive_words,word,produces,NA,NA,NA
+item_514,t51,کثیف,descriptive_words,word,produces,NA,NA,NA
+item_515,t52,کوچک,descriptive_words,word,produces,NA,NA,NA
+item_516,t53,کهنه,descriptive_words,word,produces,NA,NA,NA
+item_517,t54,گرسنه,descriptive_words,word,produces,NA,NA,NA
+item_518,t55,گرم,descriptive_words,word,produces,NA,NA,NA
+item_519,t56,لاغر,descriptive_words,word,produces,NA,NA,NA
+item_520,t57,مریض,descriptive_words,word,produces,NA,NA,NA
+item_521,t58,ناراحت,descriptive_words,word,produces,NA,NA,NA
+item_522,t59,نارنجی,descriptive_words,word,produces,NA,NA,NA
+item_523,t60,ناز,descriptive_words,word,produces,NA,NA,NA
+item_524,t61,نازک,descriptive_words,word,produces,NA,NA,NA
+item_525,t62,نرم,descriptive_words,word,produces,NA,NA,NA
+item_526,t63,نو (جدید، تازه),descriptive_words,word,produces,NA,NA,NA
+item_527,horufeezafe1,از,locations,word,produces,NA,NA,NA
+item_528,h.e2,اطراف,locations,word,produces,NA,NA,NA
+item_529,h.e3,انجا,locations,word,produces,NA,NA,NA
+item_530,h.e4,اینجا,locations,word,produces,NA,NA,NA
+item_531,h.e5,اونطرف,locations,word,produces,NA,NA,NA
+item_532,h.e6,این طرف(این ور),locations,word,produces,NA,NA,NA
+item_533,h.e7,بالا(بالا ِی),locations,word,produces,NA,NA,NA
+item_534,h.e8,برای,locations,word,produces,NA,NA,NA
+item_535,h.e9,به,locations,word,produces,NA,NA,NA
+item_536,h.e10,بیرون,locations,word,produces,NA,NA,NA
+item_537,h.e11,پایین,locations,word,produces,NA,NA,NA
+item_538,h.e12,پشت,locations,word,produces,NA,NA,NA
+item_539,h.e13,جلو (جلوی),locations,word,produces,NA,NA,NA
+item_540,h.e14,داخل (توی/ در),locations,word,produces,NA,NA,NA
+item_541,h.e15,دور,locations,word,produces,NA,NA,NA
+item_542,h.e16,دورتر,locations,word,produces,NA,NA,NA
+item_543,h.e17,روی,locations,word,produces,NA,NA,NA
+item_544,h.e18,زیر,locations,word,produces,NA,NA,NA
+item_545,h.e19,عقب,locations,word,produces,NA,NA,NA
+item_546,h.e20,کنار,locations,word,produces,NA,NA,NA
+item_547,h.e21,نزدیک,locations,word,produces,NA,NA,NA
+item_548,rabt1,اگر,connecting_words,word,produces,NA,NA,NA
+item_549,r2,اما (ولی),connecting_words,word,produces,NA,NA,NA
+item_550,r3,بعد,connecting_words,word,produces,NA,NA,NA
+item_551,r4,پس,connecting_words,word,produces,NA,NA,NA
+item_552,r5,چون (چون که/ زیرا/ برای اینکه),connecting_words,word,produces,NA,NA,NA
+item_553,r6,و,connecting_words,word,produces,NA,NA,NA
+item_554,porsehi1,چرا,question_words,word,produces,NA,NA,NA
+item_555,porsehi2,چطور,question_words,word,produces,NA,NA,NA
+item_556,porsehi3,چیه,question_words,word,produces,NA,NA,NA
+item_557,porsehi4,کجا,question_words,word,produces,NA,NA,NA
+item_558,porsehi5,کدام,question_words,word,produces,NA,NA,NA
+item_559,porsehi6,کو,question_words,word,produces,NA,NA,NA
+item_560,porsehi7,کِی,question_words,word,produces,NA,NA,NA
+item_561,porsehi8,کی,question_words,word,produces,NA,NA,NA
+item_562,vb1,امد,action_words,word,produces,NA,NA,NA
+item_563,vb2,افتاد,action_words,word,produces,NA,NA,NA
+item_564,vb3,انداخت,action_words,word,produces,NA,NA,NA
+item_565,vb4,ایستادن (وایسا),action_words,word,produces,NA,NA,NA
+item_566,vb5,باز (کردن),action_words,word,produces,NA,NA,NA
+item_567,vb6,بازی (کردن),action_words,word,produces,NA,NA,NA
+item_568,vb7,باشه,action_words,word,produces,NA,NA,NA
+item_569,vb8,ببر,action_words,word,produces,NA,NA,NA
+item_570,vb9,ببند,action_words,word,produces,NA,NA,NA
+item_571,vb10,ببین,action_words,word,produces,NA,NA,NA
+item_572,vb11,ببینم,action_words,word,produces,NA,NA,NA
+item_573,vb12,بپر,action_words,word,produces,NA,NA,NA
+item_574,vb13,بپوش,action_words,word,produces,NA,NA,NA
+item_575,vb14,بخر,action_words,word,produces,NA,NA,NA
+item_576,vb15,بخند,action_words,word,produces,NA,NA,NA
+item_577,vb16,بخوان,action_words,word,produces,NA,NA,NA
+item_578,vb17,بخور,action_words,word,produces,NA,NA,NA
+item_579,vb18,بخورم,action_words,word,produces,NA,NA,NA
+item_580,vb19,بدو,action_words,word,produces,NA,NA,NA
+item_581,vb20,بده,action_words,word,produces,NA,NA,NA
+item_582,vb21,بردار,action_words,word,produces,NA,NA,NA
+item_583,vb22,برم,action_words,word,produces,NA,NA,NA
+item_584,vb23,برو,action_words,word,produces,NA,NA,NA
+item_585,vb24,برویم (بریم),action_words,word,produces,NA,NA,NA
+item_586,vb25,بریزم,action_words,word,produces,NA,NA,NA
+item_587,vb26,بست,action_words,word,produces,NA,NA,NA
+item_588,vb27,بشور,action_words,word,produces,NA,NA,NA
+item_589,vb28,بشورم,action_words,word,produces,NA,NA,NA
+item_590,vb29,بغل کردن,action_words,word,produces,NA,NA,NA
+item_591,vb30,بکش,action_words,word,produces,NA,NA,NA
+item_592,vb31,بکن,action_words,word,produces,NA,NA,NA
+item_593,vb32,بگو,action_words,word,produces,NA,NA,NA
+item_594,vb33,بگیر,action_words,word,produces,NA,NA,NA
+item_595,vb34,بنداز,action_words,word,produces,NA,NA,NA
+item_596,vb35,بشین,action_words,word,produces,NA,NA,NA
+item_597,vb36,بشینم,action_words,word,produces,NA,NA,NA
+item_598,vb37,بنویس,action_words,word,produces,NA,NA,NA
+item_599,vb38,بنویسم,action_words,word,produces,NA,NA,NA
+item_600,vb39,بوس کن,action_words,word,produces,NA,NA,NA
+item_601,vb40,بیا,action_words,word,produces,NA,NA,NA
+item_602,vb41,بیار,action_words,word,produces,NA,NA,NA
+item_603,vb42,بیدار شد,action_words,word,produces,NA,NA,NA
+item_604,vb43,بیدار شو,action_words,word,produces,NA,NA,NA
+item_605,vb44,پاره شد,action_words,word,produces,NA,NA,NA
+item_606,vb45,پا شو,action_words,word,produces,NA,NA,NA
+item_607,vb46,پاک کن,action_words,word,produces,NA,NA,NA
+item_608,vb47,پوشید,action_words,word,produces,NA,NA,NA
+item_609,vb48,پوشیدم,action_words,word,produces,NA,NA,NA
+item_610,vb49,تاب بده,action_words,word,produces,NA,NA,NA
+item_611,vb50,تمام شد,action_words,word,produces,NA,NA,NA
+item_612,vb51,جاروکن,action_words,word,produces,NA,NA,NA
+item_613,vb52,جاروکنم,action_words,word,produces,NA,NA,NA
+item_614,vb53,جمع (کردن),action_words,word,produces,NA,NA,NA
+item_615,vb54,حرفنزن,action_words,word,produces,NA,NA,NA
+item_616,vb55,خراب شد,action_words,word,produces,NA,NA,NA
+item_617,vb56,خرید,action_words,word,produces,NA,NA,NA
+item_618,vb57,خواب,action_words,word,produces,NA,NA,NA
+item_619,vb58,خوابه,action_words,word,produces,NA,NA,NA
+item_620,vb59,خوابید,action_words,word,produces,NA,NA,NA
+item_621,vb60,خواندم,action_words,word,produces,NA,NA,NA
+item_622,vb61,خورد,action_words,word,produces,NA,NA,NA
+item_623,vb62,خوردم,action_words,word,produces,NA,NA,NA
+item_624,vb63,خیس شد,action_words,word,produces,NA,NA,NA
+item_625,vb64,در ار,action_words,word,produces,NA,NA,NA
+item_626,vb65,دربزن,action_words,word,produces,NA,NA,NA
+item_627,vb66,درزد,action_words,word,produces,NA,NA,NA
+item_628,vb67,درست کن,action_words,word,produces,NA,NA,NA
+item_629,vb68,دستبزن,action_words,word,produces,NA,NA,NA
+item_630,vb69,دستزد,action_words,word,produces,NA,NA,NA
+item_631,vb70,دستنزن,action_words,word,produces,NA,NA,NA
+item_632,vb71,دیدی,action_words,word,produces,NA,NA,NA
+item_633,vb72,رفت,action_words,word,produces,NA,NA,NA
+item_634,vb73,رنگ کن,action_words,word,produces,NA,NA,NA
+item_635,vb74,رنگ کنم,action_words,word,produces,NA,NA,NA
+item_636,vb75,روشنشد,action_words,word,produces,NA,NA,NA
+item_637,vb76,ریخت,action_words,word,produces,NA,NA,NA
+item_638,vb77,زد,action_words,word,produces,NA,NA,NA
+item_639,vb78,ساکت,action_words,word,produces,NA,NA,NA
+item_640,vb79,سوار شو,action_words,word,produces,NA,NA,NA
+item_641,vb80,سوخت,action_words,word,produces,NA,NA,NA
+item_642,vb81,سیر شدم,action_words,word,produces,NA,NA,NA
+item_643,vb82,شستم,action_words,word,produces,NA,NA,NA
+item_644,vb83,شکست,action_words,word,produces,NA,NA,NA
+item_645,vb84,شنا( کردن),action_words,word,produces,NA,NA,NA
+item_646,vb85,شوت (کردن),action_words,word,produces,NA,NA,NA
+item_647,vb86,صبر کن,action_words,word,produces,NA,NA,NA
+item_648,vb87,قلقلک (کردن),action_words,word,produces,NA,NA,NA
+item_649,vb88,فوت کن,action_words,word,produces,NA,NA,NA
+item_650,vb89,قایم شو,action_words,word,produces,NA,NA,NA
+item_651,vb90,کشیدم,action_words,word,produces,NA,NA,NA
+item_652,vb91,کمک (کردن),action_words,word,produces,NA,NA,NA
+item_653,vb92,گاز ( گرفتن),action_words,word,produces,NA,NA,NA
+item_654,vb93,گریه کن,action_words,word,produces,NA,NA,NA
+item_655,vb94,گوش کن (گوش بده),action_words,word,produces,NA,NA,NA
+item_656,vb95,می خوانم,action_words,word,produces,NA,NA,NA
+item_657,vb96,میزنم,action_words,word,produces,NA,NA,NA
+item_658,vb97,نرو,action_words,word,produces,NA,NA,NA
+item_659,vb98,نشست,action_words,word,produces,NA,NA,NA
+item_660,vb99,نشستم,action_words,word,produces,NA,NA,NA
+item_661,vb100,نقاشی (کردن),action_words,word,produces,NA,NA,NA
+item_662,vb101,نکن,action_words,word,produces,NA,NA,NA
+item_663,vb102,نگاه کن,action_words,word,produces,NA,NA,NA
+item_664,vb103,نگاه می کنم,action_words,word,produces,NA,NA,NA
+item_665,vb104,نیست,action_words,word,produces,NA,NA,NA
+item_666,vb105,نماز (خواندن),action_words,word,produces,NA,NA,NA
+item_667,vb106,هل داد,action_words,word,produces,NA,NA,NA
+item_668,aux1,بود,helping_verbs,word,produces,NA,NA,NA
+item_669,aux2,بودم,helping_verbs,word,produces,NA,NA,NA
+item_670,aux3,بودند,helping_verbs,word,produces,NA,NA,NA
+item_671,aux4,بودی,helping_verbs,word,produces,NA,NA,NA
+item_672,aux5,بودیم,helping_verbs,word,produces,NA,NA,NA
+item_673,aux6,دارم,helping_verbs,word,produces,NA,NA,NA
+item_674,aux7,داری,helping_verbs,word,produces,NA,NA,NA
+item_675,aux8,دارند,helping_verbs,word,produces,NA,NA,NA
+item_676,aux9,دارید,helping_verbs,word,produces,NA,NA,NA
+item_677,aux10,داریم,helping_verbs,word,produces,NA,NA,NA
+item_678,aux11,می خواهم,helping_verbs,word,produces,NA,NA,NA
+item_679,aux12,می خواهی,helping_verbs,word,produces,NA,NA,NA
+item_680,aux13,می خواهیم,helping_verbs,word,produces,NA,NA,NA
+item_681,aux14,نمی دهم,helping_verbs,word,produces,NA,NA,NA
+item_682,aux15,نمی دهد,helping_verbs,word,produces,NA,NA,NA
+item_683,aux16,نمی دهی,helping_verbs,word,produces,NA,NA,NA
+item_684,aux17,نمی دهید,helping_verbs,word,produces,NA,NA,NA
+item_685,aux18,نمی دهیم,helping_verbs,word,produces,NA,NA,NA
+item_686,aux19,نمی خواهم,helping_verbs,word,produces,NA,NA,NA
+item_687,aux20,نمی خواهی,helping_verbs,word,produces,NA,NA,NA
+item_688,aux21,نمی خواهیم,helping_verbs,word,produces,NA,NA,NA
+item_1,asvat1,اخ-وای,sounds,word,produces,NA,NA,NA
+item_2,a2,اه-اخ,sounds,word,produces,NA,ah ah,NA
+item_3,a3,صداي اژير (ب، بو),sounds,word,produces,NA,ring (alarm),NA
+item_4,a4,صداي اسب,sounds,word,produces,NA,neigh,neigh
+item_5,a5,صداي اردك,sounds,word,produces,NA,quack,NA
+item_6,a6,صدای تفنگ (بنگ،بنگ),sounds,word,produces,NA,bang (gun),NA
+item_7,a7,صداي جوجه ( جيك،جيك),sounds,word,produces,NA,cheep (chicken),NA
+item_8,a8,صداي خروس ( قوقولي قوقو),sounds,word,produces,NA,cockledoodledoo,NA
+item_9,a9,صداي سگ (هاپ،هاپ),sounds,word,produces,NA,woof woof,woof woof
+item_10,a10,صداي قطار (هو هو چي چي),sounds,word,produces,NA,choo choo,choo choo
+item_11,a11,صداي كلاغ ( قار قار),sounds,word,produces,NA,caw caw (crow),NA
+item_12,a12,صداي گربه ( ميو ميو),sounds,word,produces,NA,meow meow,NA
+item_13,a13,صداي گوسفند (بع بع),sounds,word,produces,NA,baa baa,baa baa
+item_14,a14,صداي ماشين (ام/بيب، بيب),sounds,word,produces,NA,(car),NA
+item_15,a15,صدای موتور,sounds,word,produces,NA,vroom,vroom
+item_16,vasilenaqliye1,اتوبوس,vehicles,word,produces,NA,bus,bus
+item_17,v2,تراکتور,vehicles,word,produces,NA,tractor,tractor
+item_18,v3,دوچرخه (چرخ),vehicles,word,produces,NA,bicycle,bicycle
+item_19,v4,سهچرخه,vehicles,word,produces,NA,tricycle,NA
+item_20,v5,قایق,vehicles,word,produces,NA,the boat,NA
+item_21,v6,قطار,vehicles,word,produces,NA,train,train
+item_22,v7,کامیون,vehicles,word,produces,NA,truck,truck
+item_23,v8,ماشین,vehicles,word,produces,NA,machine,NA
+item_24,v9,موتور,vehicles,word,produces,NA,engine,NA
+item_25,v10,مینی بوس,vehicles,word,produces,NA,minibus,NA
+item_26,v11,هلی کوپتر,vehicles,word,produces,NA,helicopter,helicopter
+item_27,v12,هواپیما,vehicles,word,produces,NA,plane,NA
+item_28,v13,کشتی,vehicles,word,produces,NA,ship,NA
+item_29,qaza1,اب,food_drink,word,produces,NA,water,water (beverage)
+item_30,q2,ابگوشت,food_drink,word,produces,NA,broth,NA
+item_31,q3,اب میوه) ساندیس),food_drink,word,produces,NA,juice,juice
+item_32,q4,اب نبات,food_drink,word,produces,NA,candy,candy
+item_33,q5,اجیل,food_drink,word,produces,NA,NA,NA
+item_34,q6,ادامس,food_drink,word,produces,NA,NA,NA
+item_35,q7,اش,food_drink,word,produces,NA,NA,NA
+item_36,q8,البالو,food_drink,word,produces,NA,NA,NA
+item_37,q9,انار,food_drink,word,produces,NA,pomegranate,NA
+item_38,q10,انگور,food_drink,word,produces,NA,NA,NA
+item_39,q11,بادام,food_drink,word,produces,NA,almond,NA
+item_40,q12,برنج,food_drink,word,produces,NA,rice,rice
+item_41,q13,بستنی,food_drink,word,produces,NA,ice cream,ice cream
+item_42,q14,بلال,food_drink,word,produces,NA,NA,NA
+item_43,q15,بیسکویت,food_drink,word,produces,NA,biscuits,NA
+item_44,q16,پرتقال,food_drink,word,produces,NA,orange,orange (food)
+item_45,q17,پسته,food_drink,word,produces,NA,pistachio,NA
+item_46,q18,پفک,food_drink,word,produces,NA,cheetos,NA
+item_47,q19,پلو,food_drink,word,produces,NA,rice,rice
+item_48,q20,پنیر,food_drink,word,produces,NA,cheese,cheese
+item_49,q21,پیاز,food_drink,word,produces,NA,onion,NA
+item_50,q22,پیتزا,food_drink,word,produces,NA,pizza,pizza
+item_51,q23,تخممرغ,food_drink,word,produces,NA,egg,egg
+item_52,q24,تن ماهی,food_drink,word,produces,NA,tuna,NA
+item_53,q25,توت,food_drink,word,produces,NA,NA,NA
+item_54,q26,چای,food_drink,word,produces,NA,tea,tea
+item_55,q27,چوب شور,food_drink,word,produces,NA,pretzel,pretzel
+item_56,q28,چیپس,food_drink,word,produces,NA,chips,chips
+item_57,q29,خربزه,food_drink,word,produces,NA,melon,NA
+item_58,q30,خورش,food_drink,word,produces,NA,stew,NA
+item_59,q31,خیار,food_drink,word,produces,NA,cucumber,cucumber
+item_60,q32,رب,food_drink,word,produces,NA,NA,NA
+item_61,q33,دوغ,food_drink,word,produces,NA,dough,NA
+item_62,q34,ساندویچ,food_drink,word,produces,NA,sandwich,sandwich
+item_63,q35,سبزی,food_drink,word,produces,NA,vegetables,NA
+item_64,q36,سس,food_drink,word,produces,NA,NA,NA
+item_65,q37,سوپ,food_drink,word,produces,NA,soup,soup
+item_66,q38,سوسیس,food_drink,word,produces,NA,sausage,NA
+item_67,q39,سیب,food_drink,word,produces,NA,apple,apple
+item_68,q40,سیب زمینی,food_drink,word,produces,NA,potato,potato
+item_69,q41,شربت,food_drink,word,produces,NA,syrup,NA
+item_70,q42,شکلات,food_drink,word,produces,NA,chocolate,chocolate
+item_71,q43,شیر (خوراکی),food_drink,word,produces,NA,milk,milk
+item_72,q44,شیرینی,food_drink,word,produces,NA,sweets,NA
+item_73,q45,غذا,food_drink,word,produces,NA,food,food
+item_74,q46,فلفل,food_drink,word,produces,NA,pepper,pepper
+item_75,q47,فندق,food_drink,word,produces,NA,hazelnut,NA
+item_76,q48,قارچ,food_drink,word,produces,NA,mushrooms,mushroom
+item_77,q49,قند,food_drink,word,produces,NA,sugar loaf,NA
+item_78,q50,کاکائو,food_drink,word,produces,NA,cocoa,NA
+item_79,q51,کالباس,food_drink,word,produces,NA,bologna,NA
+item_80,q52,کره,food_drink,word,produces,NA,butter,butter
+item_81,q53,کباب,food_drink,word,produces,NA,barbecue,NA
+item_82,q54,کشمش,food_drink,word,produces,NA,raisins,NA
+item_83,q55,کیک,food_drink,word,produces,NA,cake,cake
+item_84,q56,کیوی,food_drink,word,produces,NA,kiwi,NA
+item_85,q57,گردو,food_drink,word,produces,NA,walnut,NA
+item_86,q58,گوشت,food_drink,word,produces,NA,meat,meat
+item_87,q59,گوجه,food_drink,word,produces,NA,tomato,tomato
+item_88,q60,گیلاس,food_drink,word,produces,NA,cherries,NA
+item_89,q61,لوبیا,food_drink,word,produces,NA,beans,beans
+item_90,q62,لیمو,food_drink,word,produces,NA,lemon,lemon
+item_91,q63,ماست,food_drink,word,produces,NA,yogurt,yogurt
+item_92,q64,ماکارونی,food_drink,word,produces,NA,macaroni,pasta
+item_93,q65,مربا,food_drink,word,produces,NA,jam,jam
+item_94,q66,موز,food_drink,word,produces,NA,banana,banana
+item_95,q67,میوه,food_drink,word,produces,NA,fruit,fruit
+item_96,q68,نان,food_drink,word,produces,NA,bread,bread
+item_97,q69,نارنگی,food_drink,word,produces,NA,mandarin,orange (food)
+item_98,q70,نوشابه,food_drink,word,produces,NA,soda,soda
+item_99,q71,نخودچی,food_drink,word,produces,NA,chickpeas,NA
+item_100,q72,نمک,food_drink,word,produces,NA,salt,NA
+item_101,q73,هلو,food_drink,word,produces,NA,peach,peach
+item_102,q74,همبرگر,food_drink,word,produces,NA,hamburgers,NA
+item_103,q75,هندوانه,food_drink,word,produces,NA,watermelon,watermelon
+item_104,q76,یخ,food_drink,word,produces,NA,ice,NA
+item_105,asbabbazi1,اسباب بازی,toys,word,produces,NA,toy,toy (object)
+item_106,asbab2,بادبادک,toys,word,produces,NA,kite,NA
+item_107,asbab3,بادکنک,toys,word,produces,NA,balloons,balloon
+item_108,asbab4,پازل,toys,word,produces,NA,puzzle,NA
+item_109,asbab5,تاب,toys,word,produces,NA,tab,NA
+item_110,asbab6,تخته,toys,word,produces,NA,board,NA
+item_111,asbab7,توپ,toys,word,produces,NA,ball,ball
+item_112,asbab8,چسب,toys,word,produces,NA,adhesive,NA
+item_113,asbab9,خط کش,toys,word,produces,NA,ruler,NA
+item_114,asbab10,خمیر,toys,word,produces,NA,play dough,NA
+item_115,asbab11,خودکار,toys,word,produces,NA,NA,NA
+item_116,asbab12,دفتر,toys,word,produces,NA,note book,NA
+item_117,asbab13,سوت,toys,word,produces,NA,whistle,NA
+item_118,asbab14,عروسک,toys,word,produces,NA,dolls,doll
+item_119,asbab15,شیپور,toys,word,produces,NA,trumpet,NA
+item_120,asbab16,طناب,toys,word,produces,NA,rope,rope
+item_121,asbab17,کتاب,toys,word,produces,NA,book,book
+item_122,asbab18,کتاب داستان,toys,word,produces,NA,story book,NA
+item_123,asbab19,لگو,toys,word,produces,NA,lego,blocks
+item_124,asbab20,ماژیک,toys,word,produces,NA,marker,NA
+item_125,asbab21,مداد,toys,word,produces,NA,pencil,pen/pencil
+item_126,asbab22,مداد رنگی,toys,word,produces,NA,crayons,NA
+item_127,asbab23,مشق,toys,word,produces,NA,homework,NA
+item_128,asbab24,نقاشی,toys,word,produces,NA,painting,NA
+item_129,heivanat1,اهو,animals,word,produces,NA,gazelle,NA
+item_130,h2,اسب,animals,word,produces,NA,horse,horse
+item_131,h3,اردک,animals,word,produces,NA,duck,duck
+item_132,h4,الاغ,animals,word,produces,NA,ass,donkey
+item_133,h5,ببر,animals,word,produces,NA,tiger,tiger
+item_134,h6,بره,animals,word,produces,NA,lamb,lamb
+item_135,h7,بز,animals,word,produces,NA,goat,goat
+item_136,h8,بلبل,animals,word,produces,NA,NA,NA
+item_137,h9,پرنده,animals,word,produces,NA,bird,bird
+item_138,h10,پروانه,animals,word,produces,NA,butterfly,butterfly
+item_139,h11,پشه,animals,word,produces,NA,NA,NA
+item_140,h12,پلنگ,animals,word,produces,NA,leopard,NA
+item_141,h13,جوجه,animals,word,produces,NA,chicken,chicken (animal)
+item_142,h14,حیوان,animals,word,produces,NA,animal,animal
+item_143,h15,خر,animals,word,produces,NA,donkey,donkey
+item_144,h16,خرچنگ,animals,word,produces,NA,crab,NA
+item_145,h17,خرس,animals,word,produces,NA,bear,bear
+item_146,h18,خرگوش,animals,word,produces,NA,rabbit,NA
+item_147,h19,خروس,animals,word,produces,NA,rooster,rooster
+item_148,h20,روباه,animals,word,produces,NA,fox,fox
+item_149,h21,زرافه,animals,word,produces,NA,giraffe,giraffe
+item_150,h22,زنبور,animals,word,produces,NA,bee,bee
+item_151,h23,سگ,animals,word,produces,NA,dog,dog
+item_152,h24,سنجاب,animals,word,produces,NA,squirrel,squirrel
+item_153,h25,سوسک,animals,word,produces,NA,beetle,NA
+item_154,h26,شتر,animals,word,produces,NA,camel,NA
+item_155,h27,طوطی,animals,word,produces,NA,parrot,parrot
+item_156,h28,عقاب,animals,word,produces,NA,eagle,NA
+item_157,h29,فیل,animals,word,produces,NA,elephant,elephant
+item_158,h30,قورباغه,animals,word,produces,NA,frog,frog
+item_159,h31,کبوتر,animals,word,produces,NA,pigeons,NA
+item_160,h32,کلاغ,animals,word,produces,NA,crow,crow
+item_161,h33,گاو,animals,word,produces,NA,cow,cow
+item_162,h34,گربه,animals,word,produces,NA,cat,cat
+item_163,h35,گرگ,animals,word,produces,NA,wolf,wolf
+item_164,h36,گنجشک,animals,word,produces,NA,sparrow,sparrow
+item_165,h37,گورخر,animals,word,produces,NA,zebra,zebra
+item_166,h38,گوسفند,animals,word,produces,NA,sheep,sheep
+item_167,h39,گوزن,animals,word,produces,NA,deer,deer
+item_168,h40,لاک پشت,animals,word,produces,NA,turtle,turtle
+item_169,h41,مار,animals,word,produces,NA,snake,snake
+item_170,h42,ماهی,animals,word,produces,NA,fish,fish (animal)
+item_171,h43,مرغ,animals,word,produces,NA,chicken,chicken (animal)
+item_172,h44,مگس,animals,word,produces,NA,NA,NA
+item_173,h45,مورچه,animals,word,produces,NA,ant,ant
+item_174,h46,موش,animals,word,produces,NA,mouse,mouse
+item_175,h47,میمون,animals,word,produces,NA,monkey,monkey
+item_176,bazi1,اب بازی,games_routines,word,produces,NA,water play,NA
+item_177,b2,اتل متل,games_routines,word,produces,NA,NA,NA
+item_178,b3,الله اکبر,games_routines,word,produces,NA,allahu akbar,NA
+item_179,b4,الو,games_routines,word,produces,NA,NA,NA
+item_180,b5,بای بای ( خداحافظ),games_routines,word,produces,NA,bye bye (goodbye),bye
+item_181,b6,بله ( اره),games_routines,word,produces,NA,NA,NA
+item_182,b7,به سلامت,games_routines,word,produces,NA,goodbye,bye
+item_183,b8,تاب تاب عباسی,games_routines,word,produces,NA,NA,NA
+item_184,b9,خواب,games_routines,word,produces,NA,sleep,sleep
+item_185,b10,دالی/داکی,games_routines,word,produces,NA,NA,NA
+item_186,b11,ده- بیست- سی- چهل,games_routines,word,produces,NA,ten- twenty- thirty- forty,NA
+item_187,b12,سلام,games_routines,word,produces,NA,hello,hello
+item_188,b13,شام,games_routines,word,produces,NA,dinner,dinner
+item_189,b14,شب بخیر,games_routines,word,produces,NA,good night,good night
+item_190,b15,عصرانه,games_routines,word,produces,NA,evening meal,NA
+item_191,b16,عمو زنجیر باف,games_routines,word,produces,NA,NA,NA
+item_192,b17,عید,games_routines,word,produces,NA,eid,NA
+item_193,b18,قایم (قایم باشک),games_routines,word,produces,NA,NA,NA
+item_194,b19,صبحانه,games_routines,word,produces,NA,breakfast,breakfast
+item_195,b20,صبح بخیر,games_routines,word,produces,NA,good morning,good morning
+item_196,b21,کلاغ پر,games_routines,word,produces,NA,NA,NA
+item_197,b22,لطفا,games_routines,word,produces,NA,please,please
+item_198,b23,مبارک,games_routines,word,produces,NA,happy,happy
+item_199,b24,مرسی (ممنون),games_routines,word,produces,NA,NA,NA
+item_200,b25,نانای,games_routines,word,produces,NA,NA,NA
+item_201,b26,نهار,games_routines,word,produces,NA,lunch,lunch
+item_202,b27,هیس,games_routines,word,produces,NA,NA,NA
+item_203,makan1,اداره,outside,word,produces,NA,office,workplace
+item_204,m2,باغ,outside,word,produces,NA,garden,garden
+item_205,m3,بیرون,outside,word,produces,NA,outside,outside
+item_206,m4,پارک,outside,word,produces,NA,park,park
+item_207,m5,پل,outside,word,produces,NA,bridge,bridge
+item_208,m6,حیاط,outside,word,produces,NA,yard,yard
+item_209,m7,خانه,outside,word,produces,NA,home,home
+item_210,m8,دریا,outside,word,produces,NA,sea,sea
+item_211,m9,ساحل,outside,word,produces,NA,coast,NA
+item_212,m10,سینما,outside,word,produces,NA,cinema,NA
+item_213,m11,کلاس,outside,word,produces,NA,class,NA
+item_214,m12,کوچه,outside,word,produces,NA,alley,NA
+item_215,m13,کوه,outside,word,produces,NA,mountain,mountain
+item_216,m14,مدرسه,outside,word,produces,NA,school,school
+item_217,m15,مسجد,outside,word,produces,NA,mosque,church
+item_218,m16,مغازه,outside,word,produces,NA,shop,store
+item_219,m17,مهمانی,outside,word,produces,NA,party,party
+item_220,pushak1,النگو,clothing,word,produces,NA,bangle,NA
+item_221,p2,انگشتر,clothing,word,produces,NA,ring,NA
+item_222,p3,بلوز,clothing,word,produces,NA,blouse,NA
+item_223,p4,پوشک,clothing,word,produces,NA,diapers,NA
+item_224,p5,پیراهن,clothing,word,produces,NA,shirt,shirt
+item_225,p6,تِل,clothing,word,produces,NA,NA,NA
+item_226,p7,پیش بند,clothing,word,produces,NA,apron,NA
+item_227,p8,جوراب,clothing,word,produces,NA,socks,sock
+item_228,p9,چادر,clothing,word,produces,NA,NA,NA
+item_229,p10,چکمه,clothing,word,produces,NA,boot,boots
+item_230,p11,دستبند,clothing,word,produces,NA,bracelet,NA
+item_231,p12,دستکش,clothing,word,produces,NA,gloves,gloves
+item_232,p13,دکمه,clothing,word,produces,NA,button,button
+item_233,p14,دمپای ی,clothing,word,produces,NA,slippers,slipper
+item_234,p15,روسری,clothing,word,produces,NA,scarf,scarf
+item_235,p16,زیپ,clothing,word,produces,NA,zipper,zipper
+item_236,p17,سنجاق,clothing,word,produces,NA,pin,NA
+item_237,p18,شال,clothing,word,produces,NA,shawl,NA
+item_238,p19,شلوار,clothing,word,produces,NA,pants,pants
+item_239,p20,شورت,clothing,word,produces,NA,short,shorts
+item_240,p21,کاپشن,clothing,word,produces,NA,jacket,jacket
+item_241,p22,کت,clothing,word,produces,NA,coat,coat
+item_242,p23,کِش,clothing,word,produces,NA,NA,NA
+item_243,p24,ک فش,clothing,word,produces,NA,shoe,shoe
+item_244,p25,کلاه,clothing,word,produces,NA,hat,hat
+item_245,p26,کمربند,clothing,word,produces,NA,belt,NA
+item_246,p27,گردنبند,clothing,word,produces,NA,necklaces,necklace
+item_247,p28,گل سر (گیر),clothing,word,produces,NA,NA,NA
+item_248,p29,گوشواره,clothing,word,produces,NA,earrings,earrings
+item_249,p30,لباس,clothing,word,produces,NA,dress,dress (object)
+item_250,p31,مانتو,clothing,word,produces,NA,NA,NA
+item_251,badan1,ابرو,body_parts,word,produces,NA,NA,NA
+item_252,badan2,انگشت,body_parts,word,produces,NA,finger,finger
+item_253,badan3,بازو,body_parts,word,produces,NA,arm,arm
+item_254,badan4,باسن*,body_parts,word,produces,NA,NA,NA
+item_255,badan5,بینی(دماغ),body_parts,word,produces,NA,nose,nose
+item_256,badan6,پا,body_parts,word,produces,NA,leg,leg
+item_257,badan7,چانه,body_parts,word,produces,NA,chin,chin
+item_258,badan8,چشم,body_parts,word,produces,NA,eye,eye
+item_259,badan9,دست,body_parts,word,produces,NA,hand,hand
+item_260,badan10,دل,body_parts,word,produces,NA,NA,NA
+item_261,badan11,دندان,body_parts,word,produces,NA,tooth,tooth
+item_262,badan12,دهان,body_parts,word,produces,NA,mouth,mouth
+item_263,badan13,زانو,body_parts,word,produces,NA,knee,knee
+item_264,badan14,زبان,body_parts,word,produces,NA,tongue,tongue
+item_265,badan15,سر (کله),body_parts,word,produces,NA,head,head
+item_266,badan16,شانه,body_parts,word,produces,NA,shoulder,NA
+item_267,badan17,شکم,body_parts,word,produces,NA,NA,NA
+item_268,badan18,شصت,body_parts,word,produces,NA,NA,NA
+item_269,badan19,صورت,body_parts,word,produces,NA,face,face
+item_270,badan20,گردن,body_parts,word,produces,NA,neck,neck
+item_271,badan21,وش,body_parts,word,produces,NA,NA,NA
+item_272,badan22,لب ها,body_parts,word,produces,NA,lips,lips
+item_273,badan23,لپ,body_parts,word,produces,NA,cheek,cheek
+item_274,badan24,مو,body_parts,word,produces,NA,hair,hair
+item_275,badan25,مچ,body_parts,word,produces,NA,wrist,NA
+item_276,badan26,مشت,body_parts,word,produces,NA,fist,NA
+item_277,badan27,مژه,body_parts,word,produces,NA,eyelashes,NA
+item_278,badan28,ناف,body_parts,word,produces,NA,NA,NA
+item_279,afrad1,ادم,people,word,produces,NA,human,NA
+item_280,afrad2,اسم خود کودک,people,word,produces,NA,baby's name,child's own name
+item_281,afrad3,اقا,people,word,produces,NA,sir,sir
+item_282,afrad4,الله (خدا),people,word,produces,NA,allah (god),NA
+item_283,afrad5,بابا*,people,word,produces,NA,daddy,daddy
+item_284,afrad6,بابا بزرگ*,people,word,produces,NA,grandpa,grandpa
+item_285,afrad7,بچه (نی نی),people,word,produces,NA,baby,baby
+item_286,afrad8,پسر,people,word,produces,NA,boy,boy
+item_287,afrad9,پستچی,people,word,produces,NA,postman,NA
+item_288,afrad10,پلیس,people,word,produces,NA,cop,policeman
+item_289,afrad11,خاله,people,word,produces,NA,aunt,aunt
+item_290,afrad12,خانم,people,word,produces,NA,lady,lady
+item_291,afrad13,خواهر ( ابجی) *,people,word,produces,NA,sister,sister
+item_292,afrad14,داداش*,people,word,produces,NA,brother,brother
+item_293,afrad15,دای ی,people,word,produces,NA,uncle,uncle
+item_294,afrad16,دختر,people,word,produces,NA,girl,girl
+item_295,afrad17,دک ت ر,people,word,produces,NA,doctor,doctor
+item_296,afrad18,دوست,people,word,produces,NA,friend,friend
+item_297,afrad19,راننده,people,word,produces,NA,driver,NA
+item_298,afrad20,زن,people,word,produces,NA,female,NA
+item_299,afrad21,عمو,people,word,produces,NA,uncle,uncle
+item_300,afrad22,عمه,people,word,produces,NA,aunt,aunt
+item_301,afrad23,مامان*,people,word,produces,NA,mommy,mommy
+item_302,afrad24,مامان بزرگ*,people,word,produces,NA,grandma,grandma
+item_303,afrad25,مرد,people,word,produces,NA,man,man
+item_304,afrad26,معلم,people,word,produces,NA,teacher,teacher
+item_305,afrad27,مهندس,people,word,produces,NA,engineer,NA
+item_306,v.kh1,اشپزخانه,furniture_rooms,word,produces,NA,kitchen,kitchen
+item_307,v.kh2,ایفون,furniture_rooms,word,produces,NA,iphone,NA
+item_308,v.kh3,اتاق,furniture_rooms,word,produces,NA,room,room
+item_309,v.kh4,اتو,furniture_rooms,word,produces,NA,iron,NA
+item_310,v.kh5,اجاق (گاز),furniture_rooms,word,produces,NA,NA,NA
+item_311,v.kh6,ایوان,furniture_rooms,word,produces,NA,porch,porch
+item_312,v.kh7,بخاری,furniture_rooms,word,produces,NA,heater,NA
+item_313,v.kh8,پارکینگ,furniture_rooms,word,produces,NA,parking,NA
+item_314,v.kh9,پذیرایی,furniture_rooms,word,produces,NA,catering,NA
+item_315,v.kh10,پله,furniture_rooms,word,produces,NA,step,NA
+item_316,v.kh11,پنجره,furniture_rooms,word,produces,NA,window,window
+item_317,v.kh12,تخت,furniture_rooms,word,produces,NA,NA,NA
+item_318,v.kh13,تلویزیون,furniture_rooms,word,produces,NA,television,tv
+item_319,v.kh14,حمام,furniture_rooms,word,produces,NA,bathroom,bathroom
+item_320,v.kh15,در,furniture_rooms,word,produces,NA,door,door
+item_321,v.kh16,دستشویی,furniture_rooms,word,produces,NA,toilet,NA
+item_322,v.kh17,دوش,furniture_rooms,word,produces,NA,shower,shower
+item_323,v.kh18,دیوار,furniture_rooms,word,produces,NA,wall,wall
+item_324,v.kh19,رختخواب,furniture_rooms,word,produces,NA,bed,bed
+item_325,v.kh20,زیرزمین,furniture_rooms,word,produces,NA,underground,NA
+item_326,v.kh21,سماور,furniture_rooms,word,produces,NA,NA,NA
+item_327,v.kh22,صندلی,furniture_rooms,word,produces,NA,chair,chair
+item_328,v.kh23,ضبط,furniture_rooms,word,produces,NA,record,NA
+item_329,v.kh24,فریزر,furniture_rooms,word,produces,NA,freezer,NA
+item_330,v.kh25,ظرفشویی,furniture_rooms,word,produces,NA,dishwasher,NA
+item_331,v.kh26,قالی ( فرش),furniture_rooms,word,produces,NA,carpet,carpet
+item_332,v.kh27,کامپیوتر,furniture_rooms,word,produces,NA,computer,computer
+item_333,v.kh28,کشو,furniture_rooms,word,produces,NA,drawing,NA
+item_334,v.kh29,کمد,furniture_rooms,word,produces,NA,closet,closet
+item_335,v.kh30,ماشین لباسشویی,furniture_rooms,word,produces,NA,washing machine,washing machine
+item_336,v.kh31,مبل,furniture_rooms,word,produces,NA,sofa,couch
+item_337,v.kh32,میز,furniture_rooms,word,produces,NA,table,table
+item_338,v.kh33,یخچال,furniture_rooms,word,produces,NA,refrigerator,refrigerator
+item_339,shayha1,اشغال,household,word,produces,NA,rubbish,trash
+item_340,sh2,اینه,household,word,produces,NA,mirror,mirror
+item_341,sh3,استکان,household,word,produces,NA,glass,glass
+item_342,sh4,بالش (پشتی),household,word,produces,NA,pillow (back),pillow
+item_343,sh5,برس,household,word,produces,NA,brush,brush (object)
+item_344,sh6,بشقاب,household,word,produces,NA,plate,plate
+item_345,sh7,پارچ,household,word,produces,NA,pitcher,NA
+item_346,sh8,پارچه,household,word,produces,NA,cloth,cloth
+item_347,sh9,پتو,household,word,produces,NA,NA,NA
+item_348,sh10,پرده,household,word,produces,NA,curtain,curtain
+item_349,sh11,پول,household,word,produces,NA,money,money
+item_350,sh12,پیچ,household,word,produces,NA,screw,NA
+item_351,sh13,پیچ گوشتی,household,word,produces,NA,screw driver,NA
+item_352,sh14,تلفن,household,word,produces,NA,phone,telephone
+item_353,sh15,جارو,household,word,produces,NA,broom,broom
+item_354,sh16,جارو برقی,household,word,produces,NA,vacuum cleaner,NA
+item_355,sh17,چاقو,household,word,produces,NA,knife,knife
+item_356,sh18,چتر,household,word,produces,NA,umbrella,umbrella
+item_357,sh19,چکش,household,word,produces,NA,hammer,hammer
+item_358,sh20,چنگال,household,word,produces,NA,NA,NA
+item_359,sh21,چوب,household,word,produces,NA,wood,NA
+item_360,sh22,حوله,household,word,produces,NA,towel,towel
+item_361,sh23,خمیر دندان,household,word,produces,NA,toothpaste,NA
+item_362,sh24,دارو,household,word,produces,NA,medicine,medicine
+item_363,sh25,دستمال,household,word,produces,NA,napkin,NA
+item_364,sh26,دوربین,household,word,produces,NA,camera,camera
+item_365,sh27,دیس,household,word,produces,NA,dis,NA
+item_366,sh28,رادیو,household,word,produces,NA,radio,radio
+item_367,sh29,ساعت,household,word,produces,NA,watch,NA
+item_368,sh30,سطل,household,word,produces,NA,NA,NA
+item_369,sh31,سوزن,household,word,produces,NA,needle,NA
+item_370,sh32,سی دی,household,word,produces,NA,disk,NA
+item_371,sh33,سینی,household,word,produces,NA,NA,NA
+item_372,sh34,شامپو,household,word,produces,NA,shampoo,NA
+item_373,sh35,شانه,household,word,produces,NA,shoulder,NA
+item_374,sh36,شمع,household,word,produces,NA,candle,candle
+item_375,sh37,شیشه (شیر),household,word,produces,NA,bottle (of milk),bottle
+item_376,sh38,صابون,household,word,produces,NA,soap,soap
+item_377,sh39,ظرف,household,word,produces,NA,container,box
+item_378,sh40,عکس,household,word,produces,NA,picture,picture
+item_379,sh41,عینک,household,word,produces,NA,glasses,glasses
+item_380,sh42,قاشق,household,word,produces,NA,spoon,spoon
+item_381,sh43,قوری,household,word,produces,NA,NA,NA
+item_382,sh44,قیچی,household,word,produces,NA,scissor,scissors
+item_383,sh45,کاسه,household,word,produces,NA,bowl,bowl
+item_384,sh46,کاغذ,household,word,produces,NA,paper,paper
+item_385,sh47,کبریت,household,word,produces,NA,matches,NA
+item_386,sh48,کتری,household,word,produces,NA,NA,NA
+item_387,sh49,کلید,household,word,produces,NA,key,keys
+item_388,sh50,کنترل,household,word,produces,NA,control,NA
+item_389,sh51,کیف,household,word,produces,NA,bag,bag
+item_390,sh52,لامپ,household,word,produces,NA,lamp,lamp
+item_391,sh53,لیف,household,word,produces,NA,NA,NA
+item_392,sh54,لیوان,household,word,produces,NA,glass,glass
+item_393,sh55,مسواک,household,word,produces,NA,toothbrush,toothbrush
+item_394,sh56,نخ,household,word,produces,NA,thread,NA
+item_395,sh57,نمکدان,household,word,produces,NA,salt shaker,NA
+item_396,xarejemanzel1,اتش,outside,word,produces,NA,fire,fire
+item_397,x2,ادم برفی,outside,word,produces,NA,snowman,snowman
+item_398,x3,اسمان,outside,word,produces,NA,sky,sky
+item_399,x4,ابر,outside,word,produces,NA,cloud,cloud
+item_400,x5,باد,outside,word,produces,NA,wind,wind
+item_401,x6,باران,outside,word,produces,NA,rain,rain
+item_402,x7,بام (پشت بام),outside,word,produces,NA,roof,roof
+item_403,x8,برف,outside,word,produces,NA,snow,snow
+item_404,x9,برگ,outside,word,produces,NA,leaves,leaf
+item_405,x10,بیل,outside,word,produces,NA,bill,NA
+item_406,x11,پرچم,outside,word,produces,NA,flag,NA
+item_407,x12,پیاده رو,outside,word,produces,NA,sidewalk,NA
+item_408,x13,حوض (استخر),outside,word,produces,NA,pool,pool
+item_409,x14,خاک,outside,word,produces,NA,soil,soil
+item_410,x15,خورشید,outside,word,produces,NA,sun,sun
+item_411,x16,خیابان,outside,word,produces,NA,street,street
+item_412,x17,درخت,outside,word,produces,NA,tree,tree
+item_413,x18,دود,outside,word,produces,NA,smoke,NA
+item_414,x19,زمین,outside,word,produces,NA,earth,earth
+item_415,x20,ساقه,outside,word,produces,NA,stem,NA
+item_416,x21,ستاره,outside,word,produces,NA,star,star
+item_417,x22,سرسره,outside,word,produces,NA,slide,NA
+item_418,x23,سنگ,outside,word,produces,NA,rock,rock (object)
+item_419,x24,شلنگ,outside,word,produces,NA,NA,NA
+item_420,x25,علف (سبزه),outside,word,produces,NA,grass,grass
+item_421,x26,گل,outside,word,produces,NA,flower,flower
+item_422,x27,گِل,outside,word,produces,NA,flower,flower
+item_423,x28,ماه,outside,word,produces,NA,month,NA
+item_424,x29,هوا,outside,word,produces,NA,air,NA
+item_425,harfetarif.meqdar1,بیشتر,quantifiers,word,produces,NA,more,more
+item_426,harfetarif2,خیلی,quantifiers,word,produces,NA,very,NA
+item_427,harfetarif3,دیگه,quantifiers,word,produces,NA,other,other
+item_428,harfetarif4,زیاد,quantifiers,word,produces,NA,much,much
+item_429,harfetarif5,یه کم( یه ذره),quantifiers,word,produces,NA,a little,little (amount)
+item_430,harfetarif6,مثلِ ( شکلِ),quantifiers,word,produces,NA,NA,NA
+item_431,harfetarif7,هر,quantifiers,word,produces,NA,any,any
+item_432,harfetarif8,همه- همش,quantifiers,word,produces,NA,all,all
+item_433,harfetarif9,هیچی,quantifiers,word,produces,NA,nothing,nothing
+item_434,harfetarif10,هیچ کدوم,quantifiers,word,produces,NA,none,none
+item_435,harfetarif11,یک,quantifiers,word,produces,NA,one,NA
+item_436,zaman1,الان,time_words,word,produces,NA,now,now
+item_437,z2,امروز,time_words,word,produces,NA,today,today
+item_438,z3,بعد,time_words,word,produces,NA,next,NA
+item_439,z4,دیروز,time_words,word,produces,NA,yesterday,yesterday
+item_440,z5,روز,time_words,word,produces,NA,day,day
+item_441,z6,زود,time_words,word,produces,NA,soon,NA
+item_442,z7,شب,time_words,word,produces,NA,night,night
+item_443,z8,صبح,time_words,word,produces,NA,morning,morning
+item_444,z9,ظهر,time_words,word,produces,NA,noon,NA
+item_445,z10,عصر,time_words,word,produces,NA,evening,evening
+item_446,z11,فردا,time_words,word,produces,NA,tomorrow,tomorrow
+item_447,z12,قبل,time_words,word,produces,NA,before,before
+item_448,zamir1,ان (اون),pronouns,word,produces,NA,NA,that
+item_449,zamir2,انها,pronouns,word,produces,NA,NA,3PL
+item_450,zamir3,او (اون),pronouns,word,produces,NA,he (she),3SG
+item_451,zamir4,این,pronouns,word,produces,NA,this,this
+item_452,zamir5,اینها,pronouns,word,produces,NA,these,these
+item_453,zamir6,تو,pronouns,word,produces,NA,you,2SG
+item_454,zamir7,خودت,pronouns,word,produces,NA,yourself,2SG.REFL
+item_455,zamir8,خودتان (خودتون),pronouns,word,produces,NA,yourself,2SG.REFL
+item_456,zamir9,خودش,pronouns,word,produces,NA,himself,3SG.REFL
+item_457,zamir10,خودشان,pronouns,word,produces,NA,themselves,3PL.REFL
+item_458,zamir11,خودم,pronouns,word,produces,NA,by my own,1SG.REFL
+item_459,zamir12,خودمان (خودمون),pronouns,word,produces,NA,ourselves,1PL.REFL
+item_460,zamir13,شما,pronouns,word,produces,NA,you,2PL
+item_461,zamir14,ما,pronouns,word,produces,NA,we,1PL
+item_462,zamir15,من,pronouns,word,produces,NA,I,1SG
+item_463,zamir16,همان(همون),pronouns,word,produces,NA,same,same
+item_464,tosifi1,ابی,descriptive_words,word,produces,NA,blue,blue
+item_465,t2,اخر,descriptive_words,word,produces,NA,end,NA
+item_466,t3,اهسته (یواش),descriptive_words,word,produces,NA,slowly,slow
+item_467,t4,اذیت,descriptive_words,word,produces,NA,harassment,NA
+item_468,t5,اول,descriptive_words,word,produces,NA,first,first
+item_469,t6,باز,descriptive_words,word,produces,NA,open,NA
+item_470,t7,بامزه,descriptive_words,word,produces,NA,funny,funny
+item_471,t8,بد,descriptive_words,word,produces,NA,bad,bad
+item_472,t9,بد مزه,descriptive_words,word,produces,NA,bad taste,NA
+item_473,t10,بزرگ,descriptive_words,word,produces,NA,big,big
+item_474,t11,بسته,descriptive_words,word,produces,NA,closed,NA
+item_475,t12,بلند (صدا),descriptive_words,word,produces,NA,loud (sound),loud
+item_476,t13,بهتر,descriptive_words,word,produces,NA,better,NA
+item_477,t14,بیدار,descriptive_words,word,produces,NA,awake,awake
+item_478,t15,پاره,descriptive_words,word,produces,NA,NA,NA
+item_479,t16,پر,descriptive_words,word,produces,NA,full,full
+item_480,t17,پیر,descriptive_words,word,produces,NA,old,old
+item_481,t18,تاریک,descriptive_words,word,produces,NA,dark,dark
+item_482,t19,تازه,descriptive_words,word,produces,NA,new,new
+item_483,t20,ترش,descriptive_words,word,produces,NA,sour,sour
+item_484,t21,تلخ,descriptive_words,word,produces,NA,bitter,bitter
+item_485,t22,تمیز,descriptive_words,word,produces,NA,clean,clean (description)
+item_486,t23,چاق,descriptive_words,word,produces,NA,fat,fat
+item_487,t24,خالی,descriptive_words,word,produces,NA,NA,NA
+item_488,t25,خسته,descriptive_words,word,produces,NA,tired,tired
+item_489,t26,خشک,descriptive_words,word,produces,NA,dry,dry (description)
+item_490,t27,خواب,descriptive_words,word,produces,NA,sleep,NA
+item_491,t28,خوابیده,descriptive_words,word,produces,NA,sleeping,NA
+item_492,t29,خوشحال,descriptive_words,word,produces,NA,happy,happy
+item_493,t30,خوشگل,descriptive_words,word,produces,NA,beautiful,beautiful
+item_494,t31,خوشمزه,descriptive_words,word,produces,NA,delicious,tasty
+item_495,t32,خیس,descriptive_words,word,produces,NA,wet,wet (description)
+item_496,t33,داغ,descriptive_words,word,produces,NA,NA,NA
+item_497,t34,دراز (بلند),descriptive_words,word,produces,NA,long,long
+item_498,t35,روشن,descriptive_words,word,produces,NA,bright,NA
+item_499,t36,زرد,descriptive_words,word,produces,NA,NA,NA
+item_500,t37,سبز,descriptive_words,word,produces,NA,green,green
+item_501,t38,سبک,descriptive_words,word,produces,NA,style,NA
+item_502,t39,سرد,descriptive_words,word,produces,NA,cold,cold
+item_503,t40,سریع (تند),descriptive_words,word,produces,NA,fast,fast
+item_504,t41,سفت,descriptive_words,word,produces,NA,stiff,NA
+item_505,t42,سفید,descriptive_words,word,produces,NA,white,white
+item_506,t43,سنگین,descriptive_words,word,produces,NA,heavy,heavy
+item_507,t44,سیاه,descriptive_words,word,produces,NA,black,black
+item_508,t45,شکسته,descriptive_words,word,produces,NA,broken,broken
+item_509,t46,شور,descriptive_words,word,produces,NA,shor,NA
+item_510,t47,شیرین,descriptive_words,word,produces,NA,sweet,sweet
+item_511,t48,شیطان,descriptive_words,word,produces,NA,satan,NA
+item_512,t49,قرمز,descriptive_words,word,produces,NA,red,red
+item_513,t50,قهوه ای,descriptive_words,word,produces,NA,brown,brown
+item_514,t51,کثیف,descriptive_words,word,produces,NA,dirty,dirty
+item_515,t52,کوچک,descriptive_words,word,produces,NA,little,little (description)
+item_516,t53,کهنه,descriptive_words,word,produces,NA,NA,NA
+item_517,t54,گرسنه,descriptive_words,word,produces,NA,hungry,hungry
+item_518,t55,گرم,descriptive_words,word,produces,NA,hot,hot
+item_519,t56,لاغر,descriptive_words,word,produces,NA,thin,thin
+item_520,t57,مریض,descriptive_words,word,produces,NA,NA,NA
+item_521,t58,ناراحت,descriptive_words,word,produces,NA,upset,NA
+item_522,t59,نارنجی,descriptive_words,word,produces,NA,orange,orange (description)
+item_523,t60,ناز,descriptive_words,word,produces,NA,NA,NA
+item_524,t61,نازک,descriptive_words,word,produces,NA,NA,NA
+item_525,t62,نرم,descriptive_words,word,produces,NA,soft,soft
+item_526,t63,نو (جدید، تازه),descriptive_words,word,produces,NA,new,new
+item_527,horufeezafe1,از,locations,word,produces,NA,from,NA
+item_528,h.e2,اطراف,locations,word,produces,NA,around,NA
+item_529,h.e3,انجا,locations,word,produces,NA,there,there
+item_530,h.e4,اینجا,locations,word,produces,NA,here,here
+item_531,h.e5,اونطرف,locations,word,produces,NA,on the other side,NA
+item_532,h.e6,این طرف(این ور),locations,word,produces,NA,this side,NA
+item_533,h.e7,بالا(بالا ِی),locations,word,produces,NA,top,top
+item_534,h.e8,برای,locations,word,produces,NA,to,to
+item_535,h.e9,به,locations,word,produces,NA,to,to
+item_536,h.e10,بیرون,locations,word,produces,NA,outside,outside
+item_537,h.e11,پایین,locations,word,produces,NA,down,down
+item_538,h.e12,پشت,locations,word,produces,NA,back,back
+item_539,h.e13,جلو (جلوی),locations,word,produces,NA,front,front
+item_540,h.e14,داخل (توی/ در),locations,word,produces,NA,inside,inside
+item_541,h.e15,دور,locations,word,produces,NA,far,far
+item_542,h.e16,دورتر,locations,word,produces,NA,further,NA
+item_543,h.e17,روی,locations,word,produces,NA,NA,NA
+item_544,h.e18,زیر,locations,word,produces,NA,under,under
+item_545,h.e19,عقب,locations,word,produces,NA,back,back
+item_546,h.e20,کنار,locations,word,produces,NA,next to the,NA
+item_547,h.e21,نزدیک,locations,word,produces,NA,close,close
+item_548,rabt1,اگر,connecting_words,word,produces,NA,if,if
+item_549,r2,اما (ولی),connecting_words,word,produces,NA,but,NA
+item_550,r3,بعد,connecting_words,word,produces,NA,next,NA
+item_551,r4,پس,connecting_words,word,produces,NA,so,NA
+item_552,r5,چون (چون که/ زیرا/ برای اینکه),connecting_words,word,produces,NA,because,because
+item_553,r6,و,connecting_words,word,produces,NA,and,and
+item_554,porsehi1,چرا,question_words,word,produces,NA,why,why
+item_555,porsehi2,چطور,question_words,word,produces,NA,how,how
+item_556,porsehi3,چیه,question_words,word,produces,NA,what,what
+item_557,porsehi4,کجا,question_words,word,produces,NA,where,where (question)
+item_558,porsehi5,کدام,question_words,word,produces,NA,which,which (question)
+item_559,porsehi6,کو,question_words,word,produces,NA,NA,NA
+item_560,porsehi7,کِی,question_words,word,produces,NA,who,who
+item_561,porsehi8,کی,question_words,word,produces,NA,NA,NA
+item_562,vb1,امد,action_words,word,produces,NA,come,come
+item_563,vb2,افتاد,action_words,word,produces,NA,fall,fall
+item_564,vb3,انداخت,action_words,word,produces,NA,drop,drop
+item_565,vb4,ایستادن (وایسا),action_words,word,produces,NA,stand,stand
+item_566,vb5,باز (کردن),action_words,word,produces,NA,open,open (action)
+item_567,vb6,بازی (کردن),action_words,word,produces,NA,play,play
+item_568,vb7,باشه,action_words,word,produces,NA,NA,NA
+item_569,vb8,ببر,action_words,word,produces,NA,NA,NA
+item_570,vb9,ببند,action_words,word,produces,NA,close,close
+item_571,vb10,ببین,action_words,word,produces,NA,look,look
+item_572,vb11,ببینم,action_words,word,produces,NA,see,see
+item_573,vb12,بپر,action_words,word,produces,NA,jump,jump
+item_574,vb13,بپوش,action_words,word,produces,NA,wear,wear
+item_575,vb14,بخر,action_words,word,produces,NA,buy,buy
+item_576,vb15,بخند,action_words,word,produces,NA,laugh,laugh
+item_577,vb16,بخوان,action_words,word,produces,NA,read,read
+item_578,vb17,بخور,action_words,word,produces,NA,eat,eat
+item_579,vb18,بخورم,action_words,word,produces,NA,eat,eat
+item_580,vb19,بدو,action_words,word,produces,NA,run,run
+item_581,vb20,بده,action_words,word,produces,NA,give,give
+item_582,vb21,بردار,action_words,word,produces,NA,vector,NA
+item_583,vb22,برم,action_words,word,produces,NA,NA,NA
+item_584,vb23,برو,action_words,word,produces,NA,go,go
+item_585,vb24,برویم (بریم),action_words,word,produces,NA,NA,NA
+item_586,vb25,بریزم,action_words,word,produces,NA,NA,NA
+item_587,vb26,بست,action_words,word,produces,NA,close,close
+item_588,vb27,بشور,action_words,word,produces,NA,wash,wash
+item_589,vb28,بشورم,action_words,word,produces,NA,swear,NA
+item_590,vb29,بغل کردن,action_words,word,produces,NA,hug,hug
+item_591,vb30,بکش,action_words,word,produces,NA,kill,NA
+item_592,vb31,بکن,action_words,word,produces,NA,do,do
+item_593,vb32,بگو,action_words,word,produces,NA,say,say
+item_594,vb33,بگیر,action_words,word,produces,NA,catch,catch
+item_595,vb34,بنداز,action_words,word,produces,NA,band,NA
+item_596,vb35,بشین,action_words,word,produces,NA,sit down,sit
+item_597,vb36,بشینم,action_words,word,produces,NA,sit,sit
+item_598,vb37,بنویس,action_words,word,produces,NA,write,write
+item_599,vb38,بنویسم,action_words,word,produces,NA,i write,NA
+item_600,vb39,بوس کن,action_words,word,produces,NA,kiss,kiss
+item_601,vb40,بیا,action_words,word,produces,NA,come,come
+item_602,vb41,بیار,action_words,word,produces,NA,bring,bring
+item_603,vb42,بیدار شد,action_words,word,produces,NA,wake up,NA
+item_604,vb43,بیدار شو,action_words,word,produces,NA,wake up,NA
+item_605,vb44,پاره شد,action_words,word,produces,NA,tear,tear
+item_606,vb45,پا شو,action_words,word,produces,NA,stand up,stand
+item_607,vb46,پاک کن,action_words,word,produces,NA,eraser,NA
+item_608,vb47,پوشید,action_words,word,produces,NA,wear,wear
+item_609,vb48,پوشیدم,action_words,word,produces,NA,wear,wear
+item_610,vb49,تاب بده,action_words,word,produces,NA,be patient,NA
+item_611,vb50,تمام شد,action_words,word,produces,NA,do,do
+item_612,vb51,جاروکن,action_words,word,produces,NA,NA,NA
+item_613,vb52,جاروکنم,action_words,word,produces,NA,NA,NA
+item_614,vb53,جمع (کردن),action_words,word,produces,NA,add,NA
+item_615,vb54,حرفنزن,action_words,word,produces,NA,be quiet,NA
+item_616,vb55,خراب شد,action_words,word,produces,NA,destroy,NA
+item_617,vb56,خرید,action_words,word,produces,NA,buy,buy
+item_618,vb57,خواب,action_words,word,produces,NA,sleep,sleep
+item_619,vb58,خوابه,action_words,word,produces,NA,NA,NA
+item_620,vb59,خوابید,action_words,word,produces,NA,sleep,sleep
+item_621,vb60,خواندم,action_words,word,produces,NA,read,read
+item_622,vb61,خورد,action_words,word,produces,NA,eat,eat
+item_623,vb62,خوردم,action_words,word,produces,NA,eat,eat
+item_624,vb63,خیس شد,action_words,word,produces,NA,get wet,NA
+item_625,vb64,در ار,action_words,word,produces,NA,NA,NA
+item_626,vb65,دربزن,action_words,word,produces,NA,NA,NA
+item_627,vb66,درزد,action_words,word,produces,NA,NA,NA
+item_628,vb67,درست کن,action_words,word,produces,NA,fix,NA
+item_629,vb68,دستبزن,action_words,word,produces,NA,clap,clap
+item_630,vb69,دستزد,action_words,word,produces,NA,touch,touch
+item_631,vb70,دستنزن,action_words,word,produces,NA,not touch,NA
+item_632,vb71,دیدی,action_words,word,produces,NA,see,see
+item_633,vb72,رفت,action_words,word,produces,NA,go,go
+item_634,vb73,رنگ کن,action_words,word,produces,NA,paint,paint (action)
+item_635,vb74,رنگ کنم,action_words,word,produces,NA,paint,paint (action)
+item_636,vb75,روشنشد,action_words,word,produces,NA,turn on,turn on
+item_637,vb76,ریخت,action_words,word,produces,NA,pour,pour
+item_638,vb77,زد,action_words,word,produces,NA,fall,fall
+item_639,vb78,ساکت,action_words,word,produces,NA,be silent,NA
+item_640,vb79,سوار شو,action_words,word,produces,NA,get on,get on
+item_641,vb80,سوخت,action_words,word,produces,NA,fuel,NA
+item_642,vb81,سیر شدم,action_words,word,produces,NA,be full,NA
+item_643,vb82,شستم,action_words,word,produces,NA,NA,NA
+item_644,vb83,شکست,action_words,word,produces,NA,fail,NA
+item_645,vb84,شنا( کردن),action_words,word,produces,NA,swim,swim
+item_646,vb85,شوت (کردن),action_words,word,produces,NA,shoot,NA
+item_647,vb86,صبر کن,action_words,word,produces,NA,wait,wait
+item_648,vb87,قلقلک (کردن),action_words,word,produces,NA,tickle,tickle
+item_649,vb88,فوت کن,action_words,word,produces,NA,die,die
+item_650,vb89,قایم شو,action_words,word,produces,NA,stand up,stand
+item_651,vb90,کشیدم,action_words,word,produces,NA,draw,draw
+item_652,vb91,کمک (کردن),action_words,word,produces,NA,help,help
+item_653,vb92,گاز ( گرفتن),action_words,word,produces,NA,bite,bite
+item_654,vb93,گریه کن,action_words,word,produces,NA,cry,cry
+item_655,vb94,گوش کن (گوش بده),action_words,word,produces,NA,listen,listen
+item_656,vb95,می خوانم,action_words,word,produces,NA,read,read
+item_657,vb96,میزنم,action_words,word,produces,NA,hit,hit
+item_658,vb97,نرو,action_words,word,produces,NA,not go,NA
+item_659,vb98,نشست,action_words,word,produces,NA,meet,NA
+item_660,vb99,نشستم,action_words,word,produces,NA,sit,sit
+item_661,vb100,نقاشی (کردن),action_words,word,produces,NA,paint,paint (action)
+item_662,vb101,نکن,action_words,word,produces,NA,do not,NA
+item_663,vb102,نگاه کن,action_words,word,produces,NA,look,look
+item_664,vb103,نگاه می کنم,action_words,word,produces,NA,look,look
+item_665,vb104,نیست,action_words,word,produces,NA,is not,NA
+item_666,vb105,نماز (خواندن),action_words,word,produces,NA,pray,NA
+item_667,vb106,هل داد,action_words,word,produces,NA,push,push
+item_668,aux1,بود,helping_verbs,word,produces,NA,was,NA
+item_669,aux2,بودم,helping_verbs,word,produces,NA,i was,NA
+item_670,aux3,بودند,helping_verbs,word,produces,NA,they were,NA
+item_671,aux4,بودی,helping_verbs,word,produces,NA,were you,NA
+item_672,aux5,بودیم,helping_verbs,word,produces,NA,we were,NA
+item_673,aux6,دارم,helping_verbs,word,produces,NA,i have,NA
+item_674,aux7,داری,helping_verbs,word,produces,NA,you have,NA
+item_675,aux8,دارند,helping_verbs,word,produces,NA,have,have
+item_676,aux9,دارید,helping_verbs,word,produces,NA,you have,NA
+item_677,aux10,داریم,helping_verbs,word,produces,NA,we have,NA
+item_678,aux11,می خواهم,helping_verbs,word,produces,NA,i want,NA
+item_679,aux12,می خواهی,helping_verbs,word,produces,NA,do you want,NA
+item_680,aux13,می خواهیم,helping_verbs,word,produces,NA,we want,NA
+item_681,aux14,نمی دهم,helping_verbs,word,produces,NA,i do not give,NA
+item_682,aux15,نمی دهد,helping_verbs,word,produces,NA,he does not give,NA
+item_683,aux16,نمی دهی,helping_verbs,word,produces,NA,you do not give,NA
+item_684,aux17,نمی دهید,helping_verbs,word,produces,NA,you do not give,NA
+item_685,aux18,نمی دهیم,helping_verbs,word,produces,NA,we do not give,NA
+item_686,aux19,نمی خواهم,helping_verbs,word,produces,NA,i do not want,NA
+item_687,aux20,نمی خواهی,helping_verbs,word,produces,NA,do not you want,NA
+item_688,aux21,نمی خواهیم,helping_verbs,word,produces,NA,we do not want,NA

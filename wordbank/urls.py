@@ -19,8 +19,8 @@ urlpatterns = urlpatterns = [
     url(r'about', About.as_view(), name='about'),
     url(r'analyses', Analyses.as_view(), name='analyses'),
     url(r'contributors', Contributors.as_view(), name='contributors'),
-    url(r'publications', Publications.as_view(), name='publications'),
-    url(r'stats', Stats.as_view(), name='stats'),
+    # url(r'publications', Publications.as_view(), name='publications'),
+    # url(r'stats', Stats.as_view(), name='stats'),
     url(r'blog', Blog.as_view(), name='blog'),
     url(r'faq', Faq.as_view(), name='faq'),
     path('healthcheck/', views.health_view, name="healthcheck" )

@@ -1,0 +1,102 @@
+itemID,item,type,category,choices,definition,complexity_category,gloss,uni_lemma
+item_1,baa_baa,word,sounds,produces,baa baa,NA,baa baa,baa baa
+item_5,meow,word,sounds,produces,meow,NA,meow,meow
+item_7,ouch,word,sounds,produces,ouch,NA,ouch,ouch
+item_9,uh_oh,word,sounds,produces,uh oh,NA,uh oh,uh oh
+item_11,woof_woof,word,sounds,produces,woof woof,NA,woof woof,woof woof
+item_16,bear,word,animals,produces,bear,NA,bear,bear
+item_18,bird,word,animals,produces,bird,NA,bird,bird
+item_22,cat,word,animals,produces,cat,NA,cat,cat
+item_26,dog,word,animals,produces,dog,NA,dog,dog
+item_28,duck,word,animals,produces,duck,NA,duck,duck
+item_35,horse,word,animals,produces,horse,NA,horse,horse
+item_56,airplane,word,vehicles,produces,airplane,NA,airplane,airplane
+item_58,boat,word,vehicles,produces,boat,NA,boat,boat
+item_60,car,word,vehicles,produces,car,NA,car,car
+item_70,ball,word,toys,produces,ball,NA,ball,ball
+item_74,book,word,toys,produces,book,NA,book,book
+item_79,game,word,toys,produces,game,NA,game,game
+item_89,applesauce,word,food_drink,produces,applesauce,NA,applesauce,applesauce
+item_95,candy,word,food_drink,produces,candy,NA,candy,candy
+item_103,coke,word,food_drink,produces,coke,NA,coke,coke
+item_106,cracker,word,food_drink,produces,cracker,NA,cracker,cracker
+item_121,juice,word,food_drink,produces,juice,NA,juice,juice
+item_123,meat,word,food_drink,produces,meat,NA,meat,meat
+item_125,milk,word,food_drink,produces,milk,NA,milk,milk
+item_131,peas,word,food_drink,produces,peas,NA,peas,peas
+item_165,hat,word,clothing,produces,hat,NA,hat,hat
+item_169,necklace,word,clothing,produces,necklace,NA,necklace,necklace
+item_174,shoe,word,clothing,produces,shoe,NA,shoe,shoe
+item_179,sock,word,clothing,produces,sock,NA,sock,sock
+item_189,chin,word,body_parts,produces,chin,NA,chin,chin
+item_190,ear,word,body_parts,produces,ear,NA,ear,ear
+item_196,hand,word,body_parts,produces,hand,NA,hand,hand
+item_199,leg,word,body_parts,produces,leg,NA,leg,leg
+item_216,broom,word,household,produces,broom,NA,broom,broom
+item_222,comb,word,household,produces,comb,NA,comb,comb (object)
+item_237,mop,word,household,produces,mop,NA,mop,mop (object)
+item_245,plate,word,household,produces,plate,NA,plate,plate
+item_255,towel,word,household,produces,towel,NA,towel,towel
+item_256,trash,word,household,produces,trash,NA,trash,trash
+item_257,tray,word,household,produces,tray,NA,tray,tray
+item_264,bed,word,furniture_rooms,produces,bed,NA,bed,bed
+item_265,bedroom,word,furniture_rooms,produces,bedroom,NA,bedroom,bedroom
+item_266,bench,word,furniture_rooms,produces,bench,NA,bench,bench
+item_278,oven,word,furniture_rooms,produces,oven,NA,oven,oven
+item_288,stairs,word,furniture_rooms,produces,stairs,NA,stairs,stairs
+item_296,flag,word,outside,produces,flag,NA,flag,flag
+item_305,rain,word,outside,produces,rain,NA,rain,rain
+item_311,sky,word,outside,produces,sky,NA,sky,sky
+item_316,star,word,outside,produces,star,NA,star,star
+item_321,swing.object,word,outside,produces,swing (object),NA,swing (object),swing (object)
+item_338,party,word,places,produces,party,NA,party,party
+item_341,school,word,places,produces,school,NA,school,school
+item_359,friend,word,people,produces,friend,NA,friend,friend
+item_366,mommy,word,people,produces,mommy*,NA,mommy*,mommy
+item_370,person,word,people,produces,person,NA,person,person
+item_378,bye,word,games_routines,produces,bye,NA,bye,bye
+item_385,hi,word,games_routines,produces,hi,NA,hi,hi
+item_389,no,word,games_routines,produces,no,NA,no,no
+item_394,shopping,word,games_routines,produces,shopping,NA,shopping,shopping
+item_397,thank_you,word,games_routines,produces,thank you,NA,thank you,thank you
+item_408,carry,word,action_words,produces,carry,NA,carry,carry
+item_410,chase,word,action_words,produces,chase,NA,chase,chase
+item_425,dump,word,action_words,produces,dump,NA,dump,dump
+item_430,finish,word,action_words,produces,finish,NA,finish,finish
+item_431,fit,word,action_words,produces,fit,NA,fit,fit
+item_443,hug,word,action_words,produces,hug,NA,hug,hug
+item_450,like,word,action_words,produces,like,NA,like,like
+item_451,listen,word,action_words,produces,listen,NA,listen,listen
+item_460,pretend,word,action_words,produces,pretend,NA,pretend,pretend
+item_466,rip,word,action_words,produces,rip,NA,rip,rip
+item_470,shake,word,action_words,produces,shake,NA,shake,shake
+item_489,taste,word,action_words,produces,taste,NA,taste,taste
+item_491,think,word,action_words,produces,think,NA,think,think
+item_501,wish,word,action_words,produces,wish,NA,wish,wish
+item_504,allgone,word,descriptive_words,produces,all gone,NA,all gone,all gone
+item_516,cold,word,descriptive_words,produces,cold,NA,cold,cold
+item_522,fast,word,descriptive_words,produces,fast,NA,fast,fast
+item_526,gentle,word,descriptive_words,produces,gentle,NA,gentle,gentle
+item_529,happy,word,descriptive_words,produces,happy,NA,happy,happy
+item_533,hot,word,descriptive_words,produces,hot,NA,hot,hot
+item_536,last,word,descriptive_words,produces,last,NA,last,last
+item_560,tiny,word,descriptive_words,produces,tiny,NA,tiny,tiny
+item_562,wet,word,descriptive_words,produces,wet,NA,wet,wet (description)
+item_567,after,word,time_words,produces,after,NA,after,after
+item_569,day,word,time_words,produces,day,NA,day,day
+item_577,tonight,word,time_words,produces,tonight,NA,tonight,tonight
+item_590,our,word,pronouns,produces,our,NA,our,our
+item_594,them,word,pronouns,produces,them,NA,them,them
+item_597,this,word,pronouns,produces,this,NA,this,this
+item_599,us,word,pronouns,produces,us,NA,us,us
+item_607,where,word,question_words,produces,where,NA,where,where (question)
+item_618,beside,word,locations,produces,beside,NA,beside,beside
+item_620,down,word,locations,produces,down,NA,down,down
+item_634,under,word,locations,produces,under,NA,under,under
+item_638,all,word,quantifiers,produces,all,NA,all,all
+item_646,much,word,quantifiers,produces,much,NA,much,much
+item_658,could,word,helping_verbs,produces,could,NA,could,could
+item_668,need,word,helping_verbs,produces,need/need to,NA,need/need to,need
+item_674,would,word,helping_verbs,produces,would,NA,would,would
+item_678,if,word,connecting_words,produces,if,NA,if,if
+item_760,combine,combine,NA,not yet; sometimes; often,has your child begun to combine word yet?,NA,NA,NA

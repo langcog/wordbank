@@ -1,0 +1,115 @@
+field,column,group,type
+study_id,Participant ID:,child,study_id
+sex,Sex:,child,sex
+,Infant Birthdate:,,
+,Test Date:,,
+data_age,Age (Months),admin,data_age
+,Primary Caregiver:,,
+,Prim. Caregiver Education:,,
+,Secondary Caregiver: ,,
+,Sec. Caregiver Education: ,,
+,Income:,,
+mom_ed,mom_ed,child,mom_ed
+item_1,baa baa,item,word
+item_5,meow,item,word
+item_7,ouch,item,word
+item_9,uh oh,item,word
+item_11,woof woof,item,word
+item_16,bear,item,word
+item_18,bird,item,word
+item_22,cat,item,word
+item_26,dog,item,word
+item_28,duck,item,word
+item_35,horse,item,word
+item_56,airplane,item,word
+item_58,boat,item,word
+item_60,car,item,word
+item_70,ball,item,word
+item_74,book,item,word
+item_79,game,item,word
+item_89,applesauce,item,word
+item_95,candy,item,word
+item_103,coke,item,word
+item_106,cracker,item,word
+item_121,juice,item,word
+item_123,meat,item,word
+item_125,milk,item,word
+item_131,peas,item,word
+item_165,hat,item,word
+item_169,necklace,item,word
+item_174,shoe,item,word
+item_179,sock,item,word
+item_189,chin,item,word
+item_190,ear,item,word
+item_196,hand,item,word
+item_199,leg,item,word
+item_216,broom,item,word
+item_222,comb,item,word
+item_237,mop,item,word
+item_245,plate,item,word
+item_256,trash,item,word
+item_257,tray,item,word
+item_255,towel,item,word
+item_264,bed,item,word
+item_265,bedroom,item,word
+item_266,bench,item,word
+item_278,oven,item,word
+item_288,stairs,item,word
+item_296,flag,item,word
+item_305,rain,item,word
+item_316,star,item,word
+item_321,swing,item,word
+item_341,school,item,word
+item_311,sky,item,word
+item_338,party,item,word
+item_359,friend,item,word
+item_366,mommy,item,word
+item_370,person,item,word
+item_378,bye,item,word
+item_385,hi,item,word
+item_389,no,item,word
+item_394,shopping,item,word
+item_397,thank you,item,word
+item_408,carry,item,word
+item_410,chase,item,word
+item_425,dump,item,word
+item_430,finish,item,word
+item_431,fit,item,word
+item_443,hug,item,word
+item_451,listen,item,word
+item_450,like,item,word
+item_460,pretend,item,word
+item_466,rip,item,word
+item_470,shake,item,word
+item_489,taste,item,word
+item_526,gentle,item,word
+item_491,think,item,word
+item_501,wish,item,word
+item_504,all gone,item,word
+item_516,cold,item,word
+item_522,fast,item,word
+item_529,happy,item,word
+item_533,hot,item,word
+item_536,last,item,word
+item_560,tiny,item,word
+item_562,wet,item,word
+item_567,after,item,word
+item_569,day,item,word
+item_577,tonight,item,word
+item_590,our,item,word
+item_594,them,item,word
+item_597,this,item,word
+item_599,us,item,word
+item_607,where,item,word
+item_618,beside,item,word
+item_620,down,item,word
+item_634,under,item,word
+item_638,all,item,word
+item_646,much,item,word
+item_658,could,item,word
+item_668,need,item,word
+item_674,would,item,word
+item_678,if,item,word
+,Total,,
+item_760,Has your child begun to combine words yet?,item,combine
+,Note:,,

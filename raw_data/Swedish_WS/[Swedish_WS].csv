@@ -1,711 +1,711 @@
-definition,uni_lemma,gloss,category,item,type,choices,complexity_category,itemID,new_lemma
-aj aj,,ouch,sounds,aj_aj,word,produces,,item_1,
-brr,vroom,vroom,sounds,brr,word,produces,,item_2,
-bä bä,baa baa,baa baa,sounds,ba_ba,word,produces,,item_3,baa baa
-grr,grrr,grr,sounds,grr,word,produces,,item_4,
-kuckeliku,cockadoodledoo,cockadoodledoo,sounds,kuckeliku,word,produces,,item_5,cockadoodledoo
-kvack kvack,quack quack,quack quack,sounds,kvack_kvack,word,produces,,item_6,quack quack
-mjau,meow,meow,sounds,mjau,word,produces,,item_7,meow
-mu,moo,moo,sounds,mu,word,produces,,item_8,moo
-nam nam,yum yum,yum yum,sounds,nam_nam,word,produces,,item_9,yum yum
-pip pip,,peep,sounds,pip_pip,word,produces,,item_10,
-tuff tuff,choo choo,choo choo,sounds,tuff_tuff,word,produces,,item_11,choo choo
-vov vov,woof woof,woof woof,sounds,vov_vov,word,produces,,item_12,woof woof
-anka,duck,duck,animals,anka,word,produces,,item_13,duck
-apa,monkey,monkey,animals,apa,word,produces,,item_14,monkey
-bi,bee,bee,animals,bi,word,produces,,item_15,bee
-björn,bear,bear,animals,bjorn,word,produces,,item_16,bear
-djur,animal,animal,animals,djur,word,produces,,item_17,animal
-ekorre,squirrel,squirrel,animals,ekorre,word,produces,,item_18,squirrel
-elefant,elephant,elephant,animals,elefant,word,produces,,item_19,elephant
-fisk,fish (animal),fish,animals,fisk,word,produces,,item_20,
-fjäril,,butterfly,animals,fjaril,word,produces,,item_21,
-fluga,,fly,animals,fluga,word,produces,,item_22,
-fågel,bird,bird,animals,fagel,word,produces,,item_23,bird
-får,sheep,sheep,animals,far,word,produces,,item_24,sheep
-giraff,giraffe,giraffe,animals,giraff,word,produces,,item_25,giraffe
-gris,pig,pig,animals,gris,word,produces,,item_26,pig
-groda,frog,frog,animals,groda,word,produces,,item_27,frog
-gås,goose,goose,animals,gas,word,produces,,item_28,goose
-hare,,hare,animals,hare,word,produces,,item_29,
-hund,dog,dog,animals,hund,word,produces,,item_30,dog
-häst,horse,horse,animals,hast,word,produces,,item_31,horse
-höna,,hen,animals,hona,word,produces,,item_32,
-kanin,bunny,bunny,animals,kanin,word,produces,,item_33,bunny
-katt,cat,cat,animals,katt,word,produces,,item_34,cat
-kisse,kitty,kitty,animals,kisse,word,produces,,item_35,kitty
-ko,cow,cow,animals,ko,word,produces,,item_36,cow
-krokodil,,crocodile,animals,krokodil,word,produces,,item_37,
-kyckling (animal),chicken (animal),chicken,animals,kyckling,word,produces,,item_38,chicken (animal)
-lamm,lamb,lamb,animals,lamm,word,produces,,item_39,lamb
-lejon,lion,lion,animals,lejon,word,produces,,item_40,lion
-mus,mouse,mouse,animals,mus,word,produces,,item_41,mouse
-mygga,,mosquito,animals,mygga,word,produces,,item_42,
-myra,,ant,animals,myra,word,produces,,item_43,
-nalle,teddybear,teddybear,animals,nalle,word,produces,,item_44,teddybear
-nasse,,piggy,animals,nasse,word,produces,,item_45,
-nyckelpiga,,ladybug,animals,nyckelpiga,word,produces,,item_46,
-pingvin,penguin,penguin,animals,pingvin,word,produces,,item_47,penguin
-pippi,,birdie,animals,pippi,word,produces,,item_48,
-ponny,pony,pony,animals,ponny,word,produces,,item_49,pony
-råtta,,rat,animals,ratta,word,produces,,item_50,
-skalbagge,bug,bug,animals,skalbagge,word,produces,,item_51,bug
-sköldpadda,turtle,turtle,animals,skoldpadda,word,produces,,item_52,turtle
-tiger,tiger,tiger,animals,tiger,word,produces,,item_53,tiger
-tupp,,rooster,animals,tupp,word,produces,,item_54,
-uggla,owl,owl,animals,uggla,word,produces,,item_55,owl
-valp,puppy,puppy,animals,valp,word,produces,,item_56,puppy
-varg,,wolf,animals,varg,word,produces,,item_57,
-vovve,,doggy,animals,vovve,word,produces,,item_58,
-zebra,,zebra,animals,zebra,word,produces,,item_59,
-åsna,donkey,donkey,animals,asna,word,produces,,item_60,donkey
-älg,,moose,animals,alg,word,produces,,item_61,
-barnvagn,stroller,stroller,vehicles,barnvagn,word,produces,,item_62,stroller
-bil,car,car,vehicles,bil,word,produces,,item_63,car
-brandbil,firetruck,firetruck,vehicles,brandbil,word,produces,,item_64,firetruck
-buss,bus,bus,vehicles,buss,word,produces,,item_65,bus
-båt,,boat,vehicles,bat,word,produces,,item_66,
-cykel,bicycle,bicycle,vehicles,cykel,word,produces,,item_67,bicycle
-flygplan,airplane,airplane,vehicles,flygplan,word,produces,,item_68,airplane
-helikopter,helicopter,helicopter,vehicles,helikopter,word,produces,,item_69,
-kälke,,toboggan,vehicles,kalke,word,produces,,item_70,
-lastbil,truck,truck,vehicles,lastbil,word,produces,,item_71,truck
-motorcykel,motorcycle,motorcycle,vehicles,motorcykel,word,produces,,item_72,motorcycle
-traktor,tractor,tractor,vehicles,traktor,word,produces,,item_73,tractor
-trehjuling,,tricycle,vehicles,trehjuling,word,produces,,item_74,
-tåg,train,train,vehicles,tag,word,produces,,item_75,train
-ballong,balloon,ballon,toys,ballong,word,produces,,item_76,balloon
-boll,ball,ball,toys,boll,word,produces,,item_77,ball
-docka,doll,doll,toys,docka,word,produces,,item_78,doll
-klister,,glue,toys,klister,word,produces,,item_79,
-kloss,block,block,toys,kloss,word,produces,,item_80,block
-krita,,chalk,toys,krita,word,produces,,item_81,
-lego,,Lego,toys,lego,word,produces,,item_82,
-leksak,toy (object),toy,toys,leksak,word,produces,,item_83,toy (object)
-lera,,play dough,toys,lera,word,produces,,item_84,
-paket,,present,toys,paket,word,produces,,item_85,
-penna,pen/pencil,pen,toys,penna,word,produces,,item_86,pen/pencil
-pulka,,sledge,toys,pulka,word,produces,,item_87,
-pussel,,puzzle,toys,pussel,word,produces,,item_88,
-saga,,story,toys,saga,word,produces,,item_89,
-skidor,,skies,toys,skidor,word,produces,,item_90,
-skridskor,,skates,toys,skridskor,word,produces,,item_91,
-spel,,game,toys,spel,word,produces,,item_92,
-såpbubblor,bubbles,bubbles,toys,sapbubblor,word,produces,,item_93,bubbles
-apelsin,orange (food),orange,food_drink,apelsin,word,produces,,item_94,orange (food)
-bacon,,bacon,food_drink,bacon,word,produces,,item_95,
-banan,banana,banana,food_drink,banan,word,produces,,item_96,banana
-blodpudding,,black pudding,food_drink,blodpudding,word,produces,,item_97,
-bröd,bread,bread,food_drink,brod,word,produces,,item_98,bread
-bulle,,bun,food_drink,bulle,word,produces,,item_99,
-chips,,potato chips,food_drink,chips,word,produces,,item_100,
-choklad,,chocolate,food_drink,choklad,word,produces,,item_101,
-druvor,,grapes,food_drink,druvor,word,produces,,item_102,
-fil,,soured milk,food_drink,fil,word,produces,,item_103,
-fiskbullar,fish (food),fish-balls,food_drink,fiskbullar,word,produces,,item_104,
-fiskpinnar,fish (food),fishfingers,food_drink,fiskpinnar,word,produces,,item_105,
-flingor,cereal,cereal,food_drink,flingor,word,produces,,item_106,cereal
-glass,ice cream,ice cream,food_drink,glass,word,produces,,item_107,ice cream
-godis,candy,candy,food_drink,godis,word,produces,,item_108,candy
-grädde,,cream,food_drink,gradde,word,produces,,item_109,
-gröt,,porridge,food_drink,grot,word,produces,,item_110,
-gurka,,cucumber,food_drink,gurka,word,produces,,item_111,
-hallon,,rasberries,food_drink,hallon,word,produces,,item_112,
-hamburgare,,hamburger,food_drink,hamburgare,word,produces,,item_113,
-is,,ice,food_drink,is,word,produces,,item_114,
-jordgubbe,,strawberry,food_drink,jordgubbe,word,produces,,item_115,
-juice,juice,juice,food_drink,juice,word,produces,,item_116,juice
-kaffe,coffee,coffee,food_drink,kaffe,word,produces,,item_117,coffee
-kaka,cookie,cookie,food_drink,kaka,word,produces,,item_118,cookie
-kaviar,,caviar,food_drink,kaviar,word,produces,,item_119,
-kex,cracker,cracker,food_drink,kex,word,produces,,item_120,cracker
-knäckebröd,,crisp bread,food_drink,knackebrod,word,produces,,item_121,
-korv,,sausage,food_drink,korv,word,produces,,item_122,
-kyckling (food),chicken (food),chicken,food_drink,kyckling,word,produces,,item_123,chicken (food)
-kött,meat,meat,food_drink,kott,word,produces,,item_124,meat
-köttbullar,meatball,meatballs,food_drink,kottbullar,word,produces,,item_125,meatball
-lingon,,lingonberries,food_drink,lingon,word,produces,,item_126,
-läsk,,soda/pop,food_drink,lask,word,produces,,item_127,
-macka,,sandwich,food_drink,macka,word,produces,,item_128,
-makaroner,,macaroni,food_drink,makaroner,word,produces,,item_129,
-marmelad,,marmelade,food_drink,marmelad,word,produces,,item_130,
-mat,food,food,food_drink,mat,word,produces,,item_131,food
-melon,,melon,food_drink,melon,word,produces,,item_132,
-messmör,,soft whey butter,food_drink,messmor,word,produces,,item_133,
-mjölk,milk,milk,food_drink,mjolk,word,produces,,item_134,milk
-morot,carrots,carrot,food_drink,morot,word,produces,,item_135,carrots
-nötter,,nuts,food_drink,notter,word,produces,,item_136,
-ost,cheese,cheese,food_drink,ost,word,produces,,item_137,cheese
-pannkaka,pancake,pancake,food_drink,pannkaka,word,produces,,item_138,pancake
-pizza,pizza,pizza,food_drink,pizza,word,produces,,item_139,pizza
-pommes frites,,french fries,food_drink,pommes_frites,word,produces,,item_140,
-popcorn,,popcorn,food_drink,popcorn,word,produces,,item_141,
-potatis,,potato,food_drink,potatis,word,produces,,item_142,
-päron,,pear,food_drink,paron,word,produces,,item_143,
-ris,rice,rice,food_drink,ris,word,produces,,item_144,rice
-russin,raisin,raisin,food_drink,russin,word,produces,,item_145,raisin
-saft,,syrup,food_drink,saft,word,produces,,item_146,
-sallad,,sallad,food_drink,sallad,word,produces,,item_147,
-salt,,salt,food_drink,salt,word,produces,,item_148,
-skinka,,ham,food_drink,skinka,word,produces,,item_149,
-skorpa,cracker,biscuit,food_drink,skorpa,word,produces,,item_150,cracker
-smör,butter,butter,food_drink,smor,word,produces,,item_151,butter
-smörgås,,sandwich,food_drink,smorgas,word,produces,,item_152,
-socker,,sugar,food_drink,socker,word,produces,,item_153,
-soppa,,soup,food_drink,soppa,word,produces,,item_154,
-spagetti,pasta,spaghetti,food_drink,spagetti,word,produces,,item_155,pasta
-spenat,,spinach,food_drink,spenat,word,produces,,item_156,
-sås,,sauce,food_drink,sas,word,produces,,item_157,
-tomat,,tomato,food_drink,tomat,word,produces,,item_158,
-tårta,,cake,food_drink,tarta,word,produces,,item_159,
-vatten (beverage),water (beverage),water,food_drink,vatten,word,produces,,item_160,water (beverage)
-vitaminer,,vitamins,food_drink,vitaminer,word,produces,,item_161,
-välling,,gruel,food_drink,valling,word,produces,,item_162,
-yoghurt,,yogurt,food_drink,yoghurt,word,produces,,item_163,
-ägg,egg,egg,food_drink,agg,word,produces,,item_164,egg
-äppelmos,,applesauce,food_drink,appelmos,word,produces,,item_165,
-äpple,apple,apple,food_drink,apple,word,produces,,item_166,apple
-ärtor,peas,peas,food_drink,artor,word,produces,,item_167,peas
-ärtsoppa,,peasoup,food_drink,artsoppa,word,produces,,item_168,
-blixtlås,zipper,zipper,clothing,blixtlas,word,produces,,item_169,zipper
-blöja,diaper,diaper,clothing,bloja,word,produces,,item_170,diaper
-byxa,pants,pants,clothing,byxa,word,produces,,item_171,pants
-gympaskor,,sneaker,clothing,gympaskor,word,produces,,item_172,
-halsband,necklace,necklace,clothing,halsband,word,produces,,item_173,necklace
-halsduk,,scarf,clothing,halsduk,word,produces,,item_174,
-jacka,jacket,jacket,clothing,jacka,word,produces,,item_175,jacket
-jeans,jeans,jeans,clothing,jeans,word,produces,,item_176,jeans
-kalsonger,,underpants,clothing,kalsonger,word,produces,,item_177,
-kappa,,coat,clothing,kappa,word,produces,,item_178,
-kjol,skirt,skirt,clothing,kjol,word,produces,,item_179,
-kläder,,clothing,clothing,klader,word,produces,,item_180,
-klänning,dress (object),dress,clothing,klanning,word,produces,,item_181,
-knapp,button,button,clothing,knapp,word,produces,,item_182,button
-kortbyxor,,shorts,clothing,kortbyxor,word,produces,,item_183,
-kängor,boots,boots,clothing,kangor,word,produces,,item_184,boots
-mössa,hat,hat,clothing,mossa,word,produces,,item_185,hat
-nattlinne,nightgown,nightgown,clothing,nattlinne,word,produces,,item_186,nightgown
-overall,overalls,zip-suit,clothing,overall,word,produces,,item_187,overalls
-pyjamas,pajamas,pajamas,clothing,pyjamas,word,produces,,item_188,pajamas
-pärlor,beads,beads,clothing,parlor,word,produces,,item_189,beads
-sandal,,sandal,clothing,sandal,word,produces,,item_190,
-shorts,,shorts,clothing,shorts,word,produces,,item_191,
-skjorta,shirt,shirt,clothing,skjorta,word,produces,,item_192,shirt
-sko,shoe,shoe,clothing,sko,word,produces,,item_193,shoe
-skärp,,belt,clothing,skarp,word,produces,,item_194,
-socka,sock,sock,clothing,socka,word,produces,,item_195,sock
-strumpa,,sock,clothing,strumpa,word,produces,,item_196,
-stövel,boots,wellington,clothing,stovel,word,produces,,item_197,boots
-tshirt,,tshirt,clothing,tshirt,word,produces,,item_198,
-tights,,tights,clothing,tights,word,produces,,item_199,
-tofflor,,slipper,clothing,tofflor,word,produces,,item_200,
-trosor,underpants,panties,clothing,trosor,word,produces,,item_201,
-tröja,sweater,sweater,clothing,troja,word,produces,,item_202,sweater
-underbyxa,,underpants,clothing,underbyxa,word,produces,,item_203,
-vantar,mittens,mittens,clothing,vantar,word,produces,,item_204,mittens
-ansikte,face,face,body_parts,ansikte,word,produces,,item_205,face
-arm,arm,arm,body_parts,arm,word,produces,,item_206,arm
-axel,,shoulder,body_parts,axel,word,produces,,item_207,
-ben,leg,leg,body_parts,ben,word,produces,,item_208,leg
-finger,finger,finger,body_parts,finger,word,produces,,item_209,finger
-fot,foot,foot,body_parts,fot,word,produces,,item_210,foot
-haka,chin,chin,body_parts,haka,word,produces,,item_211,chin
-hand,hand,hand,body_parts,hand,word,produces,,item_212,hand
-huvud,head,head,body_parts,huvud,word,produces,,item_213,head
-hår,hair,hair,body_parts,har,word,produces,,item_214,hair
-kind,cheek,cheek,body_parts,kind,word,produces,,item_215,cheek
-knä,knee,knee,body_parts,kna,word,produces,,item_216,knee
-läppar,,lips,body_parts,lappar,word,produces,,item_217,
-mage,tummy,tummy,body_parts,mage,word,produces,,item_218,tummy
-mun,mouth,mouth,body_parts,mun,word,produces,,item_219,mouth
-navel,belly button,belly button,body_parts,navel,word,produces,,item_220,belly button
-näsa,nose,nose,body_parts,nasa,word,produces,,item_221,nose
-penis,penis,penis,body_parts,penis,word,produces,,item_222,
-päls,,fur,body_parts,pals,word,produces,,item_223,
-stjärt,butt,buttocks,body_parts,stjart,word,produces,,item_224,butt
-svans,,tail,body_parts,svans,word,produces,,item_225,
-tand,tooth,tooth,body_parts,tand,word,produces,,item_226,tooth
-tunga,tongue,tongue,body_parts,tunga,word,produces,,item_227,tongue
-tå,toe,toe,body_parts,ta,word,produces,,item_228,toe
-vagina,vagina,vagina,body_parts,vagina,word,produces,,item_229,
-öga,eye,eye,body_parts,oga,word,produces,,item_230,eye
-öra,ear,ear,body_parts,ora,word,produces,,item_231,ear
-bild,picture,picture,household,bild,word,produces,,item_232,picture
-blomma,flower,flower,household,blomma,word,produces,,item_233,flower
-bok,,book,household,bok,word,produces,,item_234,
-borste,broom,brush,household,borste,word,produces,,item_235,broom
-bräda,,board,household,brada,word,produces,,item_236,
-burk,,jar,household,burk,word,produces,,item_237,
-börs,purse,purse,household,bors,word,produces,,item_238,purse
-dammsugare,vacuum,vacuum,household,dammsugare,word,produces,,item_239,vacuum
-fat,dish,dish,household,fat,word,produces,,item_240,dish
-filt,blanket,blanket,household,filt,word,produces,,item_241,blanket
-flaska,bottle,bottle,household,flaska,word,produces,,item_242,bottle
-foto,,photo,household,foto,word,produces,,item_243,
-gaffel,fork,fork,household,gaffel,word,produces,,item_244,fork
-glas,glass,glass,household,glas,word,produces,,item_245,glass
-glasögon,glasses,glasses,household,glasogon,word,produces,,item_246,glasses
-hammare,hammer,hammer,household,hammare,word,produces,,item_247,hammer
-handduk,towel,towel,household,handduk,word,produces,,item_248,towel
-hink,,bucket,household,hink,word,produces,,item_249,
-hjul,,wheel,household,hjul,word,produces,,item_250,
-kam,comb (object),comb,household,kam,word,produces,,item_251,comb (object)
-kamera,,camera,household,kamera,word,produces,,item_252,
-klocka,clock,clock,household,klocka,word,produces,,item_253,clock
-kniv,knife,knife,household,kniv,word,produces,,item_254,knife
-kopp,cup,cup,household,kopp,word,produces,,item_255,cup
-korg,,basket,household,korg,word,produces,,item_256,
-kort,,picture,household,kort,word,produces,,item_257,
-kudde,pillow,pillow,household,kudde,word,produces,,item_258,pillow
-lampa,lamp,lamp,household,lampa,word,produces,,item_259,lamp
-ljus,candle,candle,household,ljus,word,produces,,item_260,candle
-låda,box,box,household,lada,word,produces,,item_261,
-medicin,medicine,medicine,household,medicin,word,produces,,item_262,medicine
-napp,,pacifier,household,napp,word,produces,,item_263,
-nycklar,keys,keys,household,nycklar,word,produces,,item_264,keys
-näsduk,,tissue/kleenex,household,nasduk,word,produces,,item_265,
-papper,paper,paper,household,papper,word,produces,,item_266,paper
-pengar,money,money,household,pengar,word,produces,,item_267,money
-plånbok,,wallet,household,planbok,word,produces,,item_268,
-plåster,,plaster,household,plaster,word,produces,,item_269,
-portmonä,,purse,household,portmona,word,produces,,item_270,
-radio,radio,radio,household,radio,word,produces,,item_271,radio
-sax,scissors,scissors,household,sax,word,produces,,item_272,scissors
-servett,,napkin,household,servett,word,produces,,item_273,
-sked,spoon,spoon,household,sked,word,produces,,item_274,spoon
-skruvmejsel,screwdriver,screwdriver,household,skruvmejsel,word,produces,,item_275,
-skräp,trash,garbage,household,skrap,word,produces,,item_276,trash
-skål,bowl,bowl,household,skal,word,produces,,item_277,bowl
-sopor,,trash,household,sopor,word,produces,,item_278,
-sparbössa,,piggy bank,household,sparbossa,word,produces,,item_279,
-spik,nail (object),nail,household,spik,word,produces,,item_280,
-såg,saw,saw,household,sag,word,produces,,item_281,
-tandborste,toothbrush,toothbrush,household,tandborste,word,produces,,item_282,toothbrush
-tape,,tape,household,tape,word,produces,,item_283,
-telefon,telephone,telephone,household,telefon,word,produces,,item_284,telephone
-tidning,,newspaper,household,tidning,word,produces,,item_285,
-tvål,soap,soap,household,tval,word,produces,,item_286,soap
-täcke,,quilt,household,tacke,word,produces,,item_287,
-väska,,bag,household,vaska,word,produces,,item_288,
-badkar,bathtub,bathtub,furniture_rooms,badkar,word,produces,,item_289,bathtub
-badrum,bathroom,bathroom,furniture_rooms,badrum,word,produces,,item_290,bathroom
-barnstol,high chair,high chair,furniture_rooms,barnstol,word,produces,,item_291,high chair
-bord,table,table,furniture_rooms,bord,word,produces,,item_292,table
-brasa,,bunfire,furniture_rooms,brasa,word,produces,,item_293,
-diskbänk,sink,sink,furniture_rooms,diskbank,word,produces,,item_294,sink
-dusch,,shower,furniture_rooms,dusch,word,produces,,item_295,
-dörr,door,door,furniture_rooms,dorr,word,produces,,item_296,door
-fönster,window,window,furniture_rooms,fonster,word,produces,,item_297,window
-garage,garage,garage,furniture_rooms,garage,word,produces,,item_298,garage
-garderob,,closet,furniture_rooms,garderob,word,produces,,item_299,
-golv,,floor,furniture_rooms,golv,word,produces,,item_300,
-gungstol,rocking chair,rocking chair,furniture_rooms,gungstol,word,produces,,item_301,rocking chair
-kylskåp,refrigerator,refrigerator,furniture_rooms,kylskap,word,produces,,item_302,refrigerator
-källare,,basement,furniture_rooms,kallare,word,produces,,item_303,
-kök,kitchen,kitchen,furniture_rooms,kok,word,produces,,item_304,kitchen
-lekrum,play pen,playroom,furniture_rooms,lekrum,word,produces,,item_305,play pen
-matta,,carpet,furniture_rooms,matta,word,produces,,item_306,
-pall,,stool,furniture_rooms,pall,word,produces,,item_307,
-potta,potty,potty,furniture_rooms,potta,word,produces,,item_308,potty
-rum,,room,furniture_rooms,rum,word,produces,,item_309,
-soffa,couch,sofa,furniture_rooms,soffa,word,produces,,item_310,couch
-sovrum,bedroom,bedroom,furniture_rooms,sovrum,word,produces,,item_311,bedroom
-stol,chair,chair,furniture_rooms,stol,word,produces,,item_312,chair
-säng,bed,bed,furniture_rooms,sang,word,produces,,item_313,bed
-torkskåp,,dryer,furniture_rooms,torkskap,word,produces,,item_314,
-trappa,stairs,stairs,furniture_rooms,trappa,word,produces,,item_315,stairs
-tv,tv,TV,furniture_rooms,tv,word,produces,,item_316,
-tvättmaskin,,washing machine,furniture_rooms,tvattmaskin,word,produces,,item_317,
-ugn,oven,oven,furniture_rooms,ugn,word,produces,,item_318,oven
-vardagsrum,living room,living room,furniture_rooms,vardagsrum,word,produces,,item_319,living room
-vägg,,wall,furniture_rooms,vagg,word,produces,,item_320,
-öppen spis,fireplace,fireplace,furniture_rooms,oppen_spis,word,produces,,item_321,fireplace
-badet,,beach,outside,badet,word,produces,,item_322,
-bassäng,pool,pool,outside,bassang,word,produces,,item_323,pool
-flagga,,flag,outside,flagga,word,produces,,item_324,
-gata,,street,outside,gata,word,produces,,item_325,
-gran,,Chrismas tree,outside,gran,word,produces,,item_326,
-gräs,,grass,outside,gras,word,produces,,item_327,
-gräsklippare,,lawn mower,outside,grasklippare,word,produces,,item_328,
-gunga (object),swing (object),swing,outside,gunga,word,produces,,item_329,swing (object)
-gård,yard,yard,outside,gard,word,produces,,item_330,yard
-himmel,sky,heaven,outside,himmel,word,produces,,item_331,sky
-kratta,,rake,outside,kratta,word,produces,,item_332,
-moln,,cloud,outside,moln,word,produces,,item_333,
-måne,moon,moon,outside,mane,word,produces,,item_334,moon
-pinne,,stick,outside,pinne,word,produces,,item_335,
-regn,rain,rain,outside,regn,word,produces,,item_336,rain
-rutchbana,slide (object),slide,outside,rutchbana,word,produces,,item_337,
-sand,,sand,outside,sand,word,produces,,item_338,
-snö,snow,snow,outside,sno,word,produces,,item_339,snow
-snögubbe,,snowman,outside,snogubbe,word,produces,,item_340,
-sol,sun,sun,outside,sol,word,produces,,item_341,sun
-spade,shovel,spade,outside,spade,word,produces,,item_342,shovel
-stege,,ladder,outside,stege,word,produces,,item_343,
-sten,rock (object),stone,outside,sten,word,produces,,item_344,rock (object)
-stjärna,star,star,outside,stjarna,word,produces,,item_345,star
-tak,,roof,outside,tak,word,produces,,item_346,
-trottoar,,sidewalk,outside,trottoar,word,produces,,item_347,
-träd,tree,tree,outside,trad,word,produces,,item_348,tree
-trädgård,garden,garden,outside,tradgard,word,produces,,item_349,garden
-vatten (not beverage),water (not beverage),water,outside,vatten,word,produces,,item_350,water (not beverage)
-vind,,wind,outside,vind,word,produces,,item_351,
-affär,,shop,places,affar,word,produces,,item_352,
-arbetet,,work,places,arbetet,word,produces,,item_353,
-bensin,,gas station,places,bensin,word,produces,,item_354,
-bio,,movie,places,bio,word,produces,,item_355,
-bondgård,,farm,places,bondgard,word,produces,,item_356,
-camping,,camping,places,camping,word,produces,,item_357,
-cirkus,,circus,places,cirkus,word,produces,,item_358,
-dagis,,preschool,places,dagis,word,produces,,item_359,
-fest,,party,places,fest,word,produces,,item_360,
-hemma,,home,places,hemma,word,produces,,item_361,
-hus,,house,places,hus,word,produces,,item_362,
-kalas,,party,places,kalas,word,produces,,item_363,
-kyrka,church,church,places,kyrka,word,produces,,item_364,
-landet,,country,places,landet,word,produces,,item_365,
-lekplats,playground,playground,places,lekplats,word,produces,,item_366,
-park,,park,places,park,word,produces,,item_367,
-skog,,woods,places,skog,word,produces,,item_368,
-skola,,school,places,skola,word,produces,,item_369,
-staden,,downtown,places,staden,word,produces,,item_370,
-stranden,,beach,places,stranden,word,produces,,item_371,
-ute,,outside,places,ute,word,produces,,item_372,
-utflykt,,picnic,places,utflykt,word,produces,,item_373,
-zoo,,zoo,places,zoo,word,produces,,item_374,
-baby,baby,baby,people,baby,word,produces,,item_375,baby
-barn,child,child,people,barn,word,produces,,item_376,child
-barnets eget namn,child's own name,child´s own name,people,barnets_eget_namn,word,produces,,item_377,child's own name
-barnvakt,babysitter,babysitter,people,barnvakt,word,produces,,item_378,babysitter
-barnvaktens namn,babysitter's name,babysitter´s name,people,barnvaktens_namn,word,produces,,item_379,babysitter's name
-brandman,,fireman,people,brandman,word,produces,,item_380,
-brevbärare,,mailman,people,brevbarare,word,produces,,item_381,
-bror,brother,brother,people,bror,word,produces,,item_382,brother
-clown,,clown,people,clown,word,produces,,item_383,
-cowboy,,cowboy,people,cowboy,word,produces,,item_384,
-doktor,,doctor,people,doktor,word,produces,,item_385,
-farbror,uncle,uncle,people,farbror,word,produces,,item_386,uncle
-farfar,grandpa,grandpa,people,farfar,word,produces,,item_387,grandpa
-farmor,grandma,grandma,people,farmor,word,produces,,item_388,grandma
-faster,aunt,aunt,people,faster,word,produces,,item_389,aunt
-flicka,girl,girl,people,flicka,word,produces,,item_390,girl
-folk,,people,people,folk,word,produces,,item_391,
-fröken,,miss,people,froken,word,produces,,item_392,
-gubbe,,old man,people,gubbe,word,produces,,item_393,
-gumma,,old woman,people,gumma,word,produces,,item_394,
-husdjurets namn,,pet´s name,people,husdjurets_namn,word,produces,,item_395,
-kompis,,friend,people,kompis,word,produces,,item_396,
-lärare,teacher,teacher,people,larare,word,produces,,item_397,teacher
-mamma,mommy,mother,people,mamma,word,produces,,item_398,mommy
-man,man,man,people,man,word,produces,,item_399,man
-morbror,uncle,uncle,people,morbror,word,produces,,item_400,uncle
-morfar,grandpa,grandpa,people,morfar,word,produces,,item_401,grandpa
-mormor,grandma,grandma,people,mormor,word,produces,,item_402,grandma
-moster,aunt,aunt,people,moster,word,produces,,item_403,aunt
-människor,people,people,people,manniskor,word,produces,,item_404,people
-pappa,daddy,daddy,people,pappa,word,produces,,item_405,daddy
-pojke,boy,boy,people,pojke,word,produces,,item_406,boy
-polis,,police,people,polis,word,produces,,item_407,
-sjuksköterska,,nurse,people,sjukskoterska,word,produces,,item_408,
-syster,sister,sister,people,syster,word,produces,,item_409,sister
-tomte,,Santa Claus,people,tomte,word,produces,,item_410,
-bada,bath,bath,games_routines,bada,word,produces,,item_411,bath
-baka kaka,pattycake,patty cake,games_routines,baka_kaka,word,produces,,item_412,pattycake
-frukost,breakfast,breakfast,games_routines,frukost,word,produces,,item_413,breakfast
-god natt,good night,good night,games_routines,god_natt,word,produces,,item_414,good night
-handla,,shop,games_routines,handla,word,produces,,item_415,
-hej,hi,hello,games_routines,hej,word,produces,,item_416,hi
-hej då,bye,good bye,games_routines,hej_da,word,produces,,item_417,bye
-inte,not (routine),not,games_routines,inte,word,produces,,item_418,
-ja,yes,yes,games_routines,ja,word,produces,,item_419,yes
-lunch,lunch,lunch,games_routines,lunch,word,produces,,item_420,lunch
-mellanmål,,snack,games_routines,mellanmal,word,produces,,item_421,
-middag,dinner,dinner,games_routines,middag,word,produces,,item_422,dinner
-nej,no,no,games_routines,nej,word,produces,,item_423,no
-ringa,,call,games_routines,ringa,word,produces,,item_424,
-sitta pottan,,sit potty,games_routines,sitta_pottan,word,produces,,item_425,
-sova middag,nap,nap,games_routines,sova_middag,word,produces,,item_426,nap
-sch/hysch,shh,shh/shush/hush,games_routines,sch/hysch,word,produces,,item_427,
-tack,thank you,thank you,games_routines,tack,word,produces,,item_428,thank you
-tittut,peekaboo,peekaboo,games_routines,tittut,word,produces,,item_429,peekaboo
-varsågod,please,please,games_routines,varsagod,word,produces,,item_430,please
-vill,wanna,want,games_routines,vill,word,produces,,item_431,
-vill ha,wanna,wanna/want to,games_routines,vill_ha,word,produces,,item_432,
-vänd dig om,,turn around,games_routines,vand_dig_om,word,produces,,item_433,
-vänta,wait,wait,games_routines,vanta,word,produces,,item_434,wait
-arbeta,,work,action_words,arbeta,word,produces,,item_435,
-backa,,reverse,action_words,backa,word,produces,,item_436,
-bajsa,,poo-poo,action_words,bajsa,word,produces,,item_437,
-bita,bite,bite,action_words,bita,word,produces,,item_438,bite
-blåsa,blow,blow,action_words,blasa,word,produces,,item_439,blow
-bryta,break,break,action_words,bryta,word,produces,,item_440,break
-bygga,,build,action_words,bygga,word,produces,,item_441,
-bära,,carry,action_words,bara,word,produces,,item_442,
-dansa,dance,dance,action_words,dansa,word,produces,,item_443,dance
-dela,,share,action_words,dela,word,produces,,item_444,
-dra,pull,pull,action_words,dra,word,produces,,item_445,pull
-dricka,drink (action),drink,action_words,dricka,word,produces,,item_446,drink (action)
-falla,fall,fall,action_words,falla,word,produces,,item_447,fall
-flyga,,fly,action_words,flyga,word,produces,,item_448,
-få,,get,action_words,fa,word,produces,,item_449,
-gapa,,open the mouth,action_words,gapa,word,produces,,item_450,
-ge,give,give,action_words,ge,word,produces,,item_451,give
-gråta,cry,cry,action_words,grata,word,produces,,item_452,cry
-gräva,,dig,action_words,grava,word,produces,,item_453,
-gunga (action),swing (action),swing,action_words,gunga,word,produces,,item_454,swing (action)
-gå,walk,go,action_words,ga,word,produces,,item_455,walk
-gömma,,hide,action_words,gomma,word,produces,,item_456,
-göra,,do,action_words,gora,word,produces,,item_457,
-heta,,call,action_words,heta,word,produces,,item_458,
-hitta,,find,action_words,hitta,word,produces,,item_459,
-hjälpa,help,help,action_words,hjalpa,word,produces,,item_460,help
-hoppa,jump,jump,action_words,hoppa,word,produces,,item_461,jump
-hålla,,hold,action_words,halla,word,produces,,item_462,
-hälla,,pour,action_words,halla,word,produces,,item_463,
-hämta,get,get,action_words,hamta,word,produces,,item_464,get
-höra,,hear,action_words,hora,word,produces,,item_465,
-jaga,,hunt,action_words,jaga,word,produces,,item_466,
-kasta,throw,throw,action_words,kasta,word,produces,,item_467,throw
-kissa,,pee,action_words,kissa,word,produces,,item_468,
-kittla,tickle,tickle,action_words,kittla,word,produces,,item_469,tickle
-klappa,,pat,action_words,klappa,word,produces,,item_470,
-klippa,,cut,action_words,klippa,word,produces,,item_471,
-klättra,,climb,action_words,klattra,word,produces,,item_472,
-knuffa,push,push,action_words,knuffa,word,produces,,item_473,push
-koka,,boil,action_words,koka,word,produces,,item_474,
-krama,hug,hug,action_words,krama,word,produces,,item_475,hug
-köpa,,buy,action_words,kopa,word,produces,,item_476,
-köra,drive,drive,action_words,kora,word,produces,,item_477,drive
-laga,,fix,action_words,laga,word,produces,,item_478,
-le,smile,smile,action_words,le,word,produces,,item_479,smile
-leka,play,play,action_words,leka,word,produces,,item_480,play
-lyssna,,listen,action_words,lyssna,word,produces,,item_481,
-låtsas,,pretend,action_words,latsas,word,produces,,item_482,
-lägga,,lay,action_words,lagga,word,produces,,item_483,
-läsa,read,read,action_words,lasa,word,produces,,item_484,read
-mata,feed,feed,action_words,mata,word,produces,,item_485,feed
-måla,,paint,action_words,mala,word,produces,,item_486,
-plaska,splash,splash,action_words,plaska,word,produces,,item_487,splash
-plocka,,pick,action_words,plocka,word,produces,,item_488,
-prata,,talk,action_words,prata,word,produces,,item_489,
-pussa,kiss,kiss,action_words,pussa,word,produces,,item_490,kiss
-ramla,,fall,action_words,ramla,word,produces,,item_491,
-rita,draw,draw,action_words,rita,word,produces,,item_492,draw
-riva,,tear,action_words,riva,word,produces,,item_493,
-röra,touch,touch,action_words,rora,word,produces,,item_494,touch
-se,see,see,action_words,se,word,produces,,item_495,see
-simma,swim,swim,action_words,simma,word,produces,,item_496,swim
-sitta,,sit,action_words,sitta,word,produces,,item_497,
-sjunga,sing,sing,action_words,sjunga,word,produces,,item_498,sing
-skaka,,shake,action_words,skaka,word,produces,,item_499,
-skoja,,joke,action_words,skoja,word,produces,,item_500,
-skriva,write,write,action_words,skriva,word,produces,,item_501,write
-skynda,hurry,rush,action_words,skynda,word,produces,,item_502,hurry
-skära,,cut,action_words,skara,word,produces,,item_503,
-slicka,,lick,action_words,slicka,word,produces,,item_504,
-sluta,stop,stop,action_words,sluta,word,produces,,item_505,stop
-slå,hit,beat,action_words,sla,word,produces,,item_506,hit
-slänga,,throw,action_words,slanga,word,produces,,item_507,
-smaka,,taste,action_words,smaka,word,produces,,item_508,
-sopa,,sweep,action_words,sopa,word,produces,,item_509,
-sova,sleep,sleep,action_words,sova,word,produces,,item_510,sleep
-sparka,kick,kick,action_words,sparka,word,produces,,item_511,kick
-spela,,play,action_words,spela,word,produces,,item_512,
-spilla,,spill,action_words,spilla,word,produces,,item_513,
-springa,run,run,action_words,springa,word,produces,,item_514,run
-stanna,stop,stop,action_words,stanna,word,produces,,item_515,stop
-stå,,stand,action_words,sta,word,produces,,item_516,
-städa,clean (action),clean,action_words,stada,word,produces,,item_517,clean (action)
-ställa,,stand,action_words,stalla,word,produces,,item_518,
-stänga,close,close,action_words,stanga,word,produces,,item_519,close
-säga,say,say,action_words,saga,word,produces,,item_520,say
-sätta,put,put,action_words,satta,word,produces,,item_521,put
-tala,,speak,action_words,tala,word,produces,,item_522,
-tanka,,fill,action_words,tanka,word,produces,,item_523,
-tappa,,drop,action_words,tappa,word,produces,,item_524,
-titta,look,look,action_words,titta,word,produces,,item_525,look
-torka,,dry,action_words,torka,word,produces,,item_526,
-tvätta,wash,clean,action_words,tvatta,word,produces,,item_527,wash
-tycka,,like,action_words,tycka,word,produces,,item_528,
-tända,,light,action_words,tanda,word,produces,,item_529,
-tänka,,think,action_words,tanka,word,produces,,item_530,
-vakna,,wake,action_words,vakna,word,produces,,item_531,
-visa,show,show,action_words,visa,word,produces,,item_532,show
-vänta,,wait,action_words,vanta,word,produces,,item_533,
-åka,go,go,action_words,aka,word,produces,,item_534,go
-älska,,love,action_words,alska,word,produces,,item_535,
-äta,eat,eat,action_words,ata,word,produces,,item_536,eat
-önska,,wish,action_words,onska,word,produces,,item_537,
-öppna,open (action),open,action_words,oppna,word,produces,,item_538,open (action)
-arg,,angry,descriptive_words,arg,word,produces,,item_539,
-blå,blue,blue,descriptive_words,bla,word,produces,,item_540,blue
-blåsig,,windy,descriptive_words,blasig,word,produces,,item_541,
-borta,all gone,allgone,descriptive_words,borta,word,produces,,item_542,all gone
-brun,,brown,descriptive_words,brun,word,produces,,item_543,
-bullrig,,noisy,descriptive_words,bullrig,word,produces,,item_544,
-bättre,,better,descriptive_words,battre,word,produces,,item_545,
-dum,,stupid,descriptive_words,dum,word,produces,,item_546,
-dålig,bad,bad,descriptive_words,dalig,word,produces,,item_547,bad
-fattig,,poor,descriptive_words,fattig,word,produces,,item_548,
-fin,fine,nice,descriptive_words,fin,word,produces,,item_549,fine
-fort,fast,quick,descriptive_words,fort,word,produces,,item_550,fast
-full,,full,descriptive_words,full,word,produces,,item_551,
-försiktig,careful,careful,descriptive_words,forsiktig,word,produces,,item_552,careful
-först,,first,descriptive_words,forst,word,produces,,item_553,
-gammal,old,old,descriptive_words,gammal,word,produces,,item_554,old
-glad,happy,glad,descriptive_words,glad,word,produces,,item_555,happy
-god,good,god,descriptive_words,god,word,produces,,item_556,good
-grön,,green,descriptive_words,gron,word,produces,,item_557,
-gul,,yellow,descriptive_words,gul,word,produces,,item_558,
-gullig,,cute,descriptive_words,gullig,word,produces,,item_559,
-hungrig,hungry,hungry,descriptive_words,hungrig,word,produces,,item_560,hungry
-hård,hard,hard,descriptive_words,hard,word,produces,,item_561,hard
-hög,,high,descriptive_words,hog,word,produces,,item_562,
-kall,cold,cold,descriptive_words,kall,word,produces,,item_563,cold
-ledsen,,sorry,descriptive_words,ledsen,word,produces,,item_564,
-liten,little (description),little,descriptive_words,liten,word,produces,,item_565,
-lång,,long,descriptive_words,lang,word,produces,,item_566,
-mjuk,soft,soft,descriptive_words,mjuk,word,produces,,item_567,soft
-mörk,dark,dark,descriptive_words,mork,word,produces,,item_568,dark
-ny,,new,descriptive_words,ny,word,produces,,item_569,
-orange,,orange,descriptive_words,orange,word,produces,,item_570,
-ren,clean (description),clean,descriptive_words,ren,word,produces,,item_571,clean (description)
-rädd,,afraid,descriptive_words,radd,word,produces,,item_572,
-röd,red,red,descriptive_words,rod,word,produces,,item_573,red
-sakta,,slowly,descriptive_words,sakta,word,produces,,item_574,
-sist,,last,descriptive_words,sist,word,produces,,item_575,
-sjuk,sick,sick,descriptive_words,sjuk,word,produces,,item_576,sick
-smutsig,dirty,dirty,descriptive_words,smutsig,word,produces,,item_577,dirty
-snabb,quick,fast,descriptive_words,snabb,word,produces,,item_578,quick
-snäll,,kind,descriptive_words,snall,word,produces,,item_579,
-stor,big,big,descriptive_words,stor,word,produces,,item_580,big
-stygg,naughty,naughty,descriptive_words,stygg,word,produces,,item_581,naughty
-svart,,black,descriptive_words,svart,word,produces,,item_582,
-svår,hard,difficult,descriptive_words,svar,word,produces,,item_583,hard
-sömning,,sleepy,descriptive_words,somning,word,produces,,item_584,
-sönder,,broken,descriptive_words,sonder,word,produces,,item_585,
-söt,sweet,sweet,descriptive_words,sot,word,produces,,item_586,sweet
-tom,empty,empty,descriptive_words,tom,word,produces,,item_587,empty
-torr,dry (description),dry,descriptive_words,torr,word,produces,,item_588,dry (description)
-trasig,broken,torn,descriptive_words,trasig,word,produces,,item_589,broken
-trevlig,nice,nice,descriptive_words,trevlig,word,produces,,item_590,nice
-trött,tired,tired,descriptive_words,trott,word,produces,,item_591,tired
-tung,,heavy,descriptive_words,tung,word,produces,,item_592,
-tunn,,thin,descriptive_words,tunn,word,produces,,item_593,
-tyst,,quiet,descriptive_words,tyst,word,produces,,item_594,
-törstig,thirsty,thirsty,descriptive_words,torstig,word,produces,,item_595,thirsty
-vaken,,awake,descriptive_words,vaken,word,produces,,item_596,
-varm,hot,warm,descriptive_words,varm,word,produces,,item_597,
-vass,,sharp,descriptive_words,vass,word,produces,,item_598,
-vit,,white,descriptive_words,vit,word,produces,,item_599,
-våt,wet (description),wet,descriptive_words,vat,word,produces,,item_600,wet (description)
-äcklig,yucky,yucky,descriptive_words,acklig,word,produces,,item_601,yucky
-de/dem/dom,,they,pronouns,de/dem/dom,word,produces,,item_602,
-den där,that,that one,pronouns,den_dar,word,produces,,item_603,that
-den här,this,this one,pronouns,den_har,word,produces,,item_604,this
-den,that,that,pronouns,den_,word,produces,,item_605,that
-det,it,it,pronouns,det,word,produces,,item_606,it
-deras,,theirs,pronouns,deras,word,produces,,item_607,
-dessa,,these,pronouns,dessa,word,produces,,item_608,
-din,you,yours,pronouns,din,word,produces,,item_609,
-du,you,you,pronouns,du,word,produces,,item_610,
-han,,he,pronouns,han,word,produces,,item_611,
-hans,his,his,pronouns,hans,word,produces,,item_612,his
-henne,her,her,pronouns,henne,word,produces,,item_613,her
-hennes,,hers,pronouns,hennes,word,produces,,item_614,
-hon,,she,pronouns,hon,word,produces,,item_615,
-honom,,him,pronouns,honom,word,produces,,item_616,
-jag,i,I,pronouns,jag,word,produces,,item_617,i
-mig,my,me,pronouns,mig,word,produces,,item_618,my
-min,mine,my,pronouns,min,word,produces,,item_619,mine
-mina,,mine,pronouns,mina,word,produces,,item_620,
-oss,,us,pronouns,oss,word,produces,,item_621,
-själv,,self,pronouns,sjalv,word,produces,,item_622,
-vi,,we,pronouns,vi,word,produces,,item_623,
-vår,,our,pronouns,var,word,produces,,item_624,
-dag,day,day,time_words,dag,word,produces,,item_625,day
-efter,,after,time_words,efter,word,produces,,item_626,
-ikväll,tonight,tonight,time_words,ikvall,word,produces,,item_627,tonight
-imorgon,tomorrow,tomorrow,time_words,imorgon,word,produces,,item_628,tomorrow
-innan,,before,time_words,innan,word,produces,,item_629,
-idag,today,today,time_words,idag,word,produces,,item_630,today
-igår,,yesterday,time_words,igar,word,produces,,item_631,
-morgon,morning,morning,time_words,morgon,word,produces,,item_632,morning
-natt,night,night,time_words,natt,word,produces,,item_633,night
-nu,now,now,time_words,nu,word,produces,,item_634,now
-senare,later,later,time_words,senare,word,produces,,item_635,later
-tid,,time,time_words,tid,word,produces,,item_636,
-av,of,by,locations,av,word,produces,,item_637,of
-bakom,back (location),behind,locations,bakom,word,produces,,item_638,back (location)
-bort,away,away,locations,bort,word,produces,,item_639,away
-bredvid,,beside,locations,bredvid,word,produces,,item_640,
-där,there,there,locations,dar,word,produces,,item_641,there
-från,,from,locations,fran,word,produces,,item_642,
-för,,for,locations,for,word,produces,,item_643,
-här,,here,locations,har,word,produces,,item_644,
-i,in,in,locations,i,word,produces,,item_645,in
-inuti,inside,inside,locations,inuti,word,produces,,item_646,inside
-med,,with,locations,med,word,produces,,item_647,
-ner,down,down,locations,ner,word,produces,,item_648,down
-nära,,near,locations,nara,word,produces,,item_649,
-omkring,,around,locations,omkring,word,produces,,item_650,
-ovanför,,above,locations,ovanfor,word,produces,,item_651,
-ovanpå,,on top of,locations,ovanpa,word,produces,,item_652,
-på,on,on,locations,pa,word,produces,,item_653,on
-runt,,around,locations,runt,word,produces,,item_654,
-till,,to,locations,till,word,produces,,item_655,
-tillbaka,,back,locations,tillbaka,word,produces,,item_656,
-under,under,under,locations,under,word,produces,,item_657,under
-upp,up,up,locations,upp,word,produces,,item_658,up
-ut,out,out,locations,ut,word,produces,,item_659,out
-vid,,at,locations,vid,word,produces,,item_660,
-över,,over,locations,over,word,produces,,item_661,
-alla,all,all,quantifiers,alla,word,produces,,item_662,all
-andra,other,other,quantifiers,andra,word,produces,,item_663,other
-den,,it,quantifiers,den,word,produces,,item_664,
-en,,a,quantifiers,en,word,produces,,item_665,
-en till,another,another,quantifiers,en_till,word,produces,,item_666,another
-ett,,one,quantifiers,ett,word,produces,,item_667,
-ingen,none,none,quantifiers,ingen,word,produces,,item_668,none
-mer,more,more,quantifiers,mer,word,produces,,item_669,more
-mycket,,much,quantifiers,mycket,word,produces,,item_670,
-många,,many,quantifiers,manga,word,produces,,item_671,
-någon,,any,quantifiers,nagon,word,produces,,item_672,
-några,some,some,quantifiers,nagra,word,produces,,item_673,some
-också,,also,quantifiers,ocksa,word,produces,,item_674,
-samma,same,same,quantifiers,samma,word,produces,,item_675,same
-tre,,three,quantifiers,tre,word,produces,,item_676,
-två,,two,quantifiers,tva,word,produces,,item_677,
-varenda,,every,quantifiers,varenda,word,produces,,item_678,
-varje,,every,quantifiers,varje,word,produces,,item_679,
-försöka,,try,helping_verbs,forsoka,word,produces,,item_680,
-gjorde,,did,helping_verbs,gjorde,word,produces,,item_681,
-gör,,do,helping_verbs,gor,word,produces,,item_682,
-ha,,have,helping_verbs,ha,word,produces,,item_683,
-kan,,can,helping_verbs,kan,word,produces,,item_684,
-komma,,come,helping_verbs,komma,word,produces,,item_685,
-kunde,,could,helping_verbs,kunde,word,produces,,item_686,
-låta,,let,helping_verbs,lata,word,produces,,item_687,
-låt mig,,let me,helping_verbs,lat_mig,word,produces,,item_688,
-måste,,must,helping_verbs,maste,word,produces,,item_689,
-ska,,will,helping_verbs,ska,word,produces,,item_690,
-skulle,,should,helping_verbs,skulle,word,produces,,item_691,
-ta,,take,helping_verbs,ta,word,produces,,item_692,
-tycka,,think,helping_verbs,tycka,word,produces,,item_693,
-var,,was,helping_verbs,var,word,produces,,item_694,
-vara,,be,helping_verbs,vara,word,produces,,item_695,
-vill,,want,helping_verbs,vill,word,produces,,item_696,
-är,,is,helping_verbs,ar,word,produces,,item_697,
-därför,,becuase,connecting_words,darfor,word,produces,,item_698,
-hur,,how,connecting_words,hur,word,produces,,item_699,
-men,,but,connecting_words,men,word,produces,,item_700,
-när,,when,connecting_words,nar,word,produces,,item_701,
-och,,and,connecting_words,och,word,produces,,item_702,
-om,,if,connecting_words,om,word,produces,,item_703,
-sen,,late,connecting_words,sen,word,produces,,item_704,
-sa,,said,connecting_words,sa,word,produces,,item_705,
-vad,,what,connecting_words,vad,word,produces,,item_706,
-var,,where,connecting_words,var,word,produces,,item_707,
-varför,,why,connecting_words,varfor,word,produces,,item_708,
-vem,,who,connecting_words,vem,word,produces,,item_709,
-vilka,,which,connecting_words,vilka,word,produces,,item_710,
+definition,category,item,type,choices,complexity_category,itemID,new_lemma,gloss,uni_lemma
+aj aj,sounds,aj_aj,word,produces,NA,item_1,NA,ouch,ouch
+brr,sounds,brr,word,produces,NA,item_2,NA,vroom,vroom
+bä bä,sounds,ba_ba,word,produces,NA,item_3,baa baa,baa baa,baa baa
+grr,sounds,grr,word,produces,NA,item_4,NA,grr,grrr
+kuckeliku,sounds,kuckeliku,word,produces,NA,item_5,cockadoodledoo,cockadoodledoo,cockadoodledoo
+kvack kvack,sounds,kvack_kvack,word,produces,NA,item_6,quack quack,quack quack,quack quack
+mjau,sounds,mjau,word,produces,NA,item_7,meow,meow,meow
+mu,sounds,mu,word,produces,NA,item_8,moo,moo,moo
+nam nam,sounds,nam_nam,word,produces,NA,item_9,yum yum,yum yum,yum yum
+pip pip,sounds,pip_pip,word,produces,NA,item_10,NA,peep,NA
+tuff tuff,sounds,tuff_tuff,word,produces,NA,item_11,choo choo,choo choo,choo choo
+vov vov,sounds,vov_vov,word,produces,NA,item_12,woof woof,woof woof,woof woof
+anka,animals,anka,word,produces,NA,item_13,duck,duck,duck
+apa,animals,apa,word,produces,NA,item_14,monkey,monkey,monkey
+bi,animals,bi,word,produces,NA,item_15,bee,bee,bee
+björn,animals,bjorn,word,produces,NA,item_16,bear,bear,bear
+djur,animals,djur,word,produces,NA,item_17,animal,animal,animal
+ekorre,animals,ekorre,word,produces,NA,item_18,squirrel,squirrel,squirrel
+elefant,animals,elefant,word,produces,NA,item_19,elephant,elephant,elephant
+fisk,animals,fisk,word,produces,NA,item_20,NA,fish,fish (animal)
+fjäril,animals,fjaril,word,produces,NA,item_21,NA,butterfly,butterfly
+fluga,animals,fluga,word,produces,NA,item_22,NA,fly,fly (animal)
+fågel,animals,fagel,word,produces,NA,item_23,bird,bird,bird
+får,animals,far,word,produces,NA,item_24,sheep,sheep,sheep
+giraff,animals,giraff,word,produces,NA,item_25,giraffe,giraffe,giraffe
+gris,animals,gris,word,produces,NA,item_26,pig,pig,pig
+groda,animals,groda,word,produces,NA,item_27,frog,frog,frog
+gås,animals,gas,word,produces,NA,item_28,goose,goose,goose
+hare,animals,hare,word,produces,NA,item_29,NA,hare,hare
+hund,animals,hund,word,produces,NA,item_30,dog,dog,dog
+häst,animals,hast,word,produces,NA,item_31,horse,horse,horse
+höna,animals,hona,word,produces,NA,item_32,NA,hen,chicken (animal)
+kanin,animals,kanin,word,produces,NA,item_33,bunny,bunny,bunny
+katt,animals,katt,word,produces,NA,item_34,cat,cat,cat
+kisse,animals,kisse,word,produces,NA,item_35,kitty,kitty,kitty
+ko,animals,ko,word,produces,NA,item_36,cow,cow,cow
+krokodil,animals,krokodil,word,produces,NA,item_37,NA,crocodile,crocodile
+kyckling (animal),animals,kyckling,word,produces,NA,item_38,chicken (animal),chicken,chicken (animal)
+lamm,animals,lamm,word,produces,NA,item_39,lamb,lamb,lamb
+lejon,animals,lejon,word,produces,NA,item_40,lion,lion,lion
+mus,animals,mus,word,produces,NA,item_41,mouse,mouse,mouse
+mygga,animals,mygga,word,produces,NA,item_42,NA,mosquito,mosquito
+myra,animals,myra,word,produces,NA,item_43,NA,ant,ant
+nalle,animals,nalle,word,produces,NA,item_44,teddybear,teddybear,teddybear
+nasse,animals,nasse,word,produces,NA,item_45,NA,piggy,pig
+nyckelpiga,animals,nyckelpiga,word,produces,NA,item_46,NA,ladybug,ladybug
+pingvin,animals,pingvin,word,produces,NA,item_47,penguin,penguin,penguin
+pippi,animals,pippi,word,produces,NA,item_48,NA,birdie,bird
+ponny,animals,ponny,word,produces,NA,item_49,pony,pony,pony
+råtta,animals,ratta,word,produces,NA,item_50,NA,rat,rat
+skalbagge,animals,skalbagge,word,produces,NA,item_51,bug,bug,bug
+sköldpadda,animals,skoldpadda,word,produces,NA,item_52,turtle,turtle,turtle
+tiger,animals,tiger,word,produces,NA,item_53,tiger,tiger,tiger
+tupp,animals,tupp,word,produces,NA,item_54,NA,rooster,rooster
+uggla,animals,uggla,word,produces,NA,item_55,owl,owl,owl
+valp,animals,valp,word,produces,NA,item_56,puppy,puppy,puppy
+varg,animals,varg,word,produces,NA,item_57,NA,wolf,wolf
+vovve,animals,vovve,word,produces,NA,item_58,NA,doggy,dog
+zebra,animals,zebra,word,produces,NA,item_59,NA,zebra,zebra
+åsna,animals,asna,word,produces,NA,item_60,donkey,donkey,donkey
+älg,animals,alg,word,produces,NA,item_61,NA,moose,moose
+barnvagn,vehicles,barnvagn,word,produces,NA,item_62,stroller,stroller,stroller
+bil,vehicles,bil,word,produces,NA,item_63,car,car,car
+brandbil,vehicles,brandbil,word,produces,NA,item_64,firetruck,firetruck,firetruck
+buss,vehicles,buss,word,produces,NA,item_65,bus,bus,bus
+båt,vehicles,bat,word,produces,NA,item_66,NA,boat,boat
+cykel,vehicles,cykel,word,produces,NA,item_67,bicycle,bicycle,bicycle
+flygplan,vehicles,flygplan,word,produces,NA,item_68,airplane,airplane,airplane
+helikopter,vehicles,helikopter,word,produces,NA,item_69,NA,helicopter,helicopter
+kälke,vehicles,kalke,word,produces,NA,item_70,NA,toboggan,sled
+lastbil,vehicles,lastbil,word,produces,NA,item_71,truck,truck,truck
+motorcykel,vehicles,motorcykel,word,produces,NA,item_72,motorcycle,motorcycle,motorcycle
+traktor,vehicles,traktor,word,produces,NA,item_73,tractor,tractor,tractor
+trehjuling,vehicles,trehjuling,word,produces,NA,item_74,NA,tricycle,tricycle
+tåg,vehicles,tag,word,produces,NA,item_75,train,train,train
+ballong,toys,ballong,word,produces,NA,item_76,balloon,ballon,balloon
+boll,toys,boll,word,produces,NA,item_77,ball,ball,ball
+docka,toys,docka,word,produces,NA,item_78,doll,doll,doll
+klister,toys,klister,word,produces,NA,item_79,NA,glue,glue (object)
+kloss,toys,kloss,word,produces,NA,item_80,block,block,blocks
+krita,toys,krita,word,produces,NA,item_81,NA,chalk,chalk
+lego,toys,lego,word,produces,NA,item_82,NA,Lego,blocks
+leksak,toys,leksak,word,produces,NA,item_83,toy (object),toy,toy (object)
+lera,toys,lera,word,produces,NA,item_84,NA,play dough,play dough
+paket,toys,paket,word,produces,NA,item_85,NA,present,present
+penna,toys,penna,word,produces,NA,item_86,pen/pencil,pen,pen/pencil
+pulka,toys,pulka,word,produces,NA,item_87,NA,sledge,sled
+pussel,toys,pussel,word,produces,NA,item_88,NA,puzzle,puzzle
+saga,toys,saga,word,produces,NA,item_89,NA,story,story
+skidor,toys,skidor,word,produces,NA,item_90,NA,skies,ski (object)
+skridskor,toys,skridskor,word,produces,NA,item_91,NA,skates,skate (object)
+spel,toys,spel,word,produces,NA,item_92,NA,game,game
+såpbubblor,toys,sapbubblor,word,produces,NA,item_93,bubbles,bubbles,bubbles
+apelsin,food_drink,apelsin,word,produces,NA,item_94,orange (food),orange,orange (food)
+bacon,food_drink,bacon,word,produces,NA,item_95,NA,bacon,bacon
+banan,food_drink,banan,word,produces,NA,item_96,banana,banana,banana
+blodpudding,food_drink,blodpudding,word,produces,NA,item_97,NA,black pudding,sausage
+bröd,food_drink,brod,word,produces,NA,item_98,bread,bread,bread
+bulle,food_drink,bulle,word,produces,NA,item_99,NA,bun,bun
+chips,food_drink,chips,word,produces,NA,item_100,NA,potato chips,chips
+choklad,food_drink,choklad,word,produces,NA,item_101,NA,chocolate,chocolate
+druvor,food_drink,druvor,word,produces,NA,item_102,NA,grapes,grapes
+fil,food_drink,fil,word,produces,NA,item_103,NA,soured milk,NA
+fiskbullar,food_drink,fiskbullar,word,produces,NA,item_104,NA,fish-balls,fish (food)
+fiskpinnar,food_drink,fiskpinnar,word,produces,NA,item_105,NA,fishfingers,fish (food)
+flingor,food_drink,flingor,word,produces,NA,item_106,cereal,cereal,cereal
+glass,food_drink,glass,word,produces,NA,item_107,ice cream,ice cream,ice cream
+godis,food_drink,godis,word,produces,NA,item_108,candy,candy,candy
+grädde,food_drink,gradde,word,produces,NA,item_109,NA,cream,cream
+gröt,food_drink,grot,word,produces,NA,item_110,NA,porridge,porridge
+gurka,food_drink,gurka,word,produces,NA,item_111,NA,cucumber,cucumber
+hallon,food_drink,hallon,word,produces,NA,item_112,NA,rasberries,raspberry
+hamburgare,food_drink,hamburgare,word,produces,NA,item_113,NA,hamburger,hamburger
+is,food_drink,is,word,produces,NA,item_114,NA,ice,ice
+jordgubbe,food_drink,jordgubbe,word,produces,NA,item_115,NA,strawberry,strawberry
+juice,food_drink,juice,word,produces,NA,item_116,juice,juice,juice
+kaffe,food_drink,kaffe,word,produces,NA,item_117,coffee,coffee,coffee
+kaka,food_drink,kaka,word,produces,NA,item_118,cookie,cookie,cookie
+kaviar,food_drink,kaviar,word,produces,NA,item_119,NA,caviar,caviar
+kex,food_drink,kex,word,produces,NA,item_120,cracker,cracker,cracker
+knäckebröd,food_drink,knackebrod,word,produces,NA,item_121,NA,crisp bread,cracker
+korv,food_drink,korv,word,produces,NA,item_122,NA,sausage,sausage
+kyckling (food),food_drink,kyckling,word,produces,NA,item_123,chicken (food),chicken,chicken (food)
+kött,food_drink,kott,word,produces,NA,item_124,meat,meat,meat
+köttbullar,food_drink,kottbullar,word,produces,NA,item_125,meatball,meatballs,meatball
+lingon,food_drink,lingon,word,produces,NA,item_126,NA,lingonberries,berry
+läsk,food_drink,lask,word,produces,NA,item_127,NA,soda/pop,soda
+macka,food_drink,macka,word,produces,NA,item_128,NA,sandwich,sandwich
+makaroner,food_drink,makaroner,word,produces,NA,item_129,NA,macaroni,pasta
+marmelad,food_drink,marmelad,word,produces,NA,item_130,NA,marmelade,jam
+mat,food_drink,mat,word,produces,NA,item_131,food,food,food
+melon,food_drink,melon,word,produces,NA,item_132,NA,melon,melon
+messmör,food_drink,messmor,word,produces,NA,item_133,NA,soft whey butter,NA
+mjölk,food_drink,mjolk,word,produces,NA,item_134,milk,milk,milk
+morot,food_drink,morot,word,produces,NA,item_135,carrots,carrot,carrot
+nötter,food_drink,notter,word,produces,NA,item_136,NA,nuts,nut
+ost,food_drink,ost,word,produces,NA,item_137,cheese,cheese,cheese
+pannkaka,food_drink,pannkaka,word,produces,NA,item_138,pancake,pancake,pancake
+pizza,food_drink,pizza,word,produces,NA,item_139,pizza,pizza,pizza
+pommes frites,food_drink,pommes_frites,word,produces,NA,item_140,NA,french fries,french fries
+popcorn,food_drink,popcorn,word,produces,NA,item_141,NA,popcorn,popcorn
+potatis,food_drink,potatis,word,produces,NA,item_142,NA,potato,potato
+päron,food_drink,paron,word,produces,NA,item_143,NA,pear,pear
+ris,food_drink,ris,word,produces,NA,item_144,rice,rice,rice
+russin,food_drink,russin,word,produces,NA,item_145,raisin,raisin,raisin
+saft,food_drink,saft,word,produces,NA,item_146,NA,syrup,syrup
+sallad,food_drink,sallad,word,produces,NA,item_147,NA,sallad,salad
+salt,food_drink,salt,word,produces,NA,item_148,NA,salt,salt
+skinka,food_drink,skinka,word,produces,NA,item_149,NA,ham,ham
+skorpa,food_drink,skorpa,word,produces,NA,item_150,cracker,biscuit,cracker
+smör,food_drink,smor,word,produces,NA,item_151,butter,butter,butter
+smörgås,food_drink,smorgas,word,produces,NA,item_152,NA,sandwich,sandwich
+socker,food_drink,socker,word,produces,NA,item_153,NA,sugar,sugar
+soppa,food_drink,soppa,word,produces,NA,item_154,NA,soup,soup
+spagetti,food_drink,spagetti,word,produces,NA,item_155,pasta,spaghetti,pasta
+spenat,food_drink,spenat,word,produces,NA,item_156,NA,spinach,spinach
+sås,food_drink,sas,word,produces,NA,item_157,NA,sauce,sauce
+tomat,food_drink,tomat,word,produces,NA,item_158,NA,tomato,tomato
+tårta,food_drink,tarta,word,produces,NA,item_159,NA,cake,cake
+vatten (beverage),food_drink,vatten,word,produces,NA,item_160,water (beverage),water,water (beverage)
+vitaminer,food_drink,vitaminer,word,produces,NA,item_161,NA,vitamins,vitamin
+välling,food_drink,valling,word,produces,NA,item_162,NA,gruel,porridge
+yoghurt,food_drink,yoghurt,word,produces,NA,item_163,NA,yogurt,yogurt
+ägg,food_drink,agg,word,produces,NA,item_164,egg,egg,egg
+äppelmos,food_drink,appelmos,word,produces,NA,item_165,NA,applesauce,applesauce
+äpple,food_drink,apple,word,produces,NA,item_166,apple,apple,apple
+ärtor,food_drink,artor,word,produces,NA,item_167,peas,peas,peas
+ärtsoppa,food_drink,artsoppa,word,produces,NA,item_168,NA,peasoup,soup
+blixtlås,clothing,blixtlas,word,produces,NA,item_169,zipper,zipper,zipper
+blöja,clothing,bloja,word,produces,NA,item_170,diaper,diaper,diaper
+byxa,clothing,byxa,word,produces,NA,item_171,pants,pants,pants
+gympaskor,clothing,gympaskor,word,produces,NA,item_172,NA,sneaker,sneaker
+halsband,clothing,halsband,word,produces,NA,item_173,necklace,necklace,necklace
+halsduk,clothing,halsduk,word,produces,NA,item_174,NA,scarf,scarf
+jacka,clothing,jacka,word,produces,NA,item_175,jacket,jacket,jacket
+jeans,clothing,jeans,word,produces,NA,item_176,jeans,jeans,jeans
+kalsonger,clothing,kalsonger,word,produces,NA,item_177,NA,underpants,underpants
+kappa,clothing,kappa,word,produces,NA,item_178,NA,coat,coat
+kjol,clothing,kjol,word,produces,NA,item_179,NA,skirt,skirt
+kläder,clothing,klader,word,produces,NA,item_180,NA,clothing,clothes
+klänning,clothing,klanning,word,produces,NA,item_181,NA,dress,dress (object)
+knapp,clothing,knapp,word,produces,NA,item_182,button,button,button
+kortbyxor,clothing,kortbyxor,word,produces,NA,item_183,NA,shorts,shorts
+kängor,clothing,kangor,word,produces,NA,item_184,boots,boots,boots
+mössa,clothing,mossa,word,produces,NA,item_185,hat,hat,hat
+nattlinne,clothing,nattlinne,word,produces,NA,item_186,nightgown,nightgown,nightgown
+overall,clothing,overall,word,produces,NA,item_187,overalls,zip-suit,overalls
+pyjamas,clothing,pyjamas,word,produces,NA,item_188,pajamas,pajamas,pajamas
+pärlor,clothing,parlor,word,produces,NA,item_189,beads,beads,beads
+sandal,clothing,sandal,word,produces,NA,item_190,NA,sandal,sandal
+shorts,clothing,shorts,word,produces,NA,item_191,NA,shorts,shorts
+skjorta,clothing,skjorta,word,produces,NA,item_192,shirt,shirt,shirt
+sko,clothing,sko,word,produces,NA,item_193,shoe,shoe,shoe
+skärp,clothing,skarp,word,produces,NA,item_194,NA,belt,belt
+socka,clothing,socka,word,produces,NA,item_195,sock,sock,sock
+strumpa,clothing,strumpa,word,produces,NA,item_196,NA,sock,sock
+stövel,clothing,stovel,word,produces,NA,item_197,boots,wellington,boots
+tshirt,clothing,tshirt,word,produces,NA,item_198,NA,tshirt,t-shirt
+tights,clothing,tights,word,produces,NA,item_199,NA,tights,tights
+tofflor,clothing,tofflor,word,produces,NA,item_200,NA,slipper,slipper
+trosor,clothing,trosor,word,produces,NA,item_201,NA,panties,underpants
+tröja,clothing,troja,word,produces,NA,item_202,sweater,sweater,sweater
+underbyxa,clothing,underbyxa,word,produces,NA,item_203,NA,underpants,underpants
+vantar,clothing,vantar,word,produces,NA,item_204,mittens,mittens,mitten
+ansikte,body_parts,ansikte,word,produces,NA,item_205,face,face,face
+arm,body_parts,arm,word,produces,NA,item_206,arm,arm,arm
+axel,body_parts,axel,word,produces,NA,item_207,NA,shoulder,shoulder
+ben,body_parts,ben,word,produces,NA,item_208,leg,leg,leg
+finger,body_parts,finger,word,produces,NA,item_209,finger,finger,finger
+fot,body_parts,fot,word,produces,NA,item_210,foot,foot,foot
+haka,body_parts,haka,word,produces,NA,item_211,chin,chin,chin
+hand,body_parts,hand,word,produces,NA,item_212,hand,hand,hand
+huvud,body_parts,huvud,word,produces,NA,item_213,head,head,head
+hår,body_parts,har,word,produces,NA,item_214,hair,hair,hair
+kind,body_parts,kind,word,produces,NA,item_215,cheek,cheek,cheek
+knä,body_parts,kna,word,produces,NA,item_216,knee,knee,knee
+läppar,body_parts,lappar,word,produces,NA,item_217,NA,lips,lip
+mage,body_parts,mage,word,produces,NA,item_218,tummy,tummy,tummy
+mun,body_parts,mun,word,produces,NA,item_219,mouth,mouth,mouth
+navel,body_parts,navel,word,produces,NA,item_220,belly button,belly button,belly button
+näsa,body_parts,nasa,word,produces,NA,item_221,nose,nose,nose
+penis,body_parts,penis,word,produces,NA,item_222,NA,penis,penis
+päls,body_parts,pals,word,produces,NA,item_223,NA,fur,fur
+stjärt,body_parts,stjart,word,produces,NA,item_224,butt,buttocks,butt
+svans,body_parts,svans,word,produces,NA,item_225,NA,tail,tail
+tand,body_parts,tand,word,produces,NA,item_226,tooth,tooth,tooth
+tunga,body_parts,tunga,word,produces,NA,item_227,tongue,tongue,tongue
+tå,body_parts,ta,word,produces,NA,item_228,toe,toe,toe
+vagina,body_parts,vagina,word,produces,NA,item_229,NA,vagina,vagina
+öga,body_parts,oga,word,produces,NA,item_230,eye,eye,eye
+öra,body_parts,ora,word,produces,NA,item_231,ear,ear,ear
+bild,household,bild,word,produces,NA,item_232,picture,picture,picture
+blomma,household,blomma,word,produces,NA,item_233,flower,flower,flower
+bok,household,bok,word,produces,NA,item_234,NA,book,book
+borste,household,borste,word,produces,NA,item_235,broom,brush,broom
+bräda,household,brada,word,produces,NA,item_236,NA,board,board
+burk,household,burk,word,produces,NA,item_237,NA,jar,jar
+börs,household,bors,word,produces,NA,item_238,purse,purse,purse
+dammsugare,household,dammsugare,word,produces,NA,item_239,vacuum,vacuum,vacuum
+fat,household,fat,word,produces,NA,item_240,dish,dish,dish
+filt,household,filt,word,produces,NA,item_241,blanket,blanket,blanket
+flaska,household,flaska,word,produces,NA,item_242,bottle,bottle,bottle
+foto,household,foto,word,produces,NA,item_243,NA,photo,photo
+gaffel,household,gaffel,word,produces,NA,item_244,fork,fork,fork
+glas,household,glas,word,produces,NA,item_245,glass,glass,glass
+glasögon,household,glasogon,word,produces,NA,item_246,glasses,glasses,glasses
+hammare,household,hammare,word,produces,NA,item_247,hammer,hammer,hammer
+handduk,household,handduk,word,produces,NA,item_248,towel,towel,towel
+hink,household,hink,word,produces,NA,item_249,NA,bucket,bucket
+hjul,household,hjul,word,produces,NA,item_250,NA,wheel,wheel
+kam,household,kam,word,produces,NA,item_251,comb (object),comb,comb (object)
+kamera,household,kamera,word,produces,NA,item_252,NA,camera,camera
+klocka,household,klocka,word,produces,NA,item_253,clock,clock,clock
+kniv,household,kniv,word,produces,NA,item_254,knife,knife,knife
+kopp,household,kopp,word,produces,NA,item_255,cup,cup,cup
+korg,household,korg,word,produces,NA,item_256,NA,basket,basket
+kort,household,kort,word,produces,NA,item_257,NA,picture,picture
+kudde,household,kudde,word,produces,NA,item_258,pillow,pillow,pillow
+lampa,household,lampa,word,produces,NA,item_259,lamp,lamp,lamp
+ljus,household,ljus,word,produces,NA,item_260,candle,candle,candle
+låda,household,lada,word,produces,NA,item_261,NA,box,box
+medicin,household,medicin,word,produces,NA,item_262,medicine,medicine,medicine
+napp,household,napp,word,produces,NA,item_263,NA,pacifier,pacifier
+nycklar,household,nycklar,word,produces,NA,item_264,keys,keys,key
+näsduk,household,nasduk,word,produces,NA,item_265,NA,tissue/kleenex,tissue
+papper,household,papper,word,produces,NA,item_266,paper,paper,paper
+pengar,household,pengar,word,produces,NA,item_267,money,money,money
+plånbok,household,planbok,word,produces,NA,item_268,NA,wallet,wallet
+plåster,household,plaster,word,produces,NA,item_269,NA,plaster,bandaid
+portmonä,household,portmona,word,produces,NA,item_270,NA,purse,purse
+radio,household,radio,word,produces,NA,item_271,radio,radio,radio
+sax,household,sax,word,produces,NA,item_272,scissors,scissors,scissors
+servett,household,servett,word,produces,NA,item_273,NA,napkin,napkin
+sked,household,sked,word,produces,NA,item_274,spoon,spoon,spoon
+skruvmejsel,household,skruvmejsel,word,produces,NA,item_275,NA,screwdriver,screwdriver
+skräp,household,skrap,word,produces,NA,item_276,trash,garbage,trash
+skål,household,skal,word,produces,NA,item_277,bowl,bowl,bowl
+sopor,household,sopor,word,produces,NA,item_278,NA,trash,trash
+sparbössa,household,sparbossa,word,produces,NA,item_279,NA,piggy bank,NA
+spik,household,spik,word,produces,NA,item_280,NA,nail,nail (object)
+såg,household,sag,word,produces,NA,item_281,NA,saw,saw
+tandborste,household,tandborste,word,produces,NA,item_282,toothbrush,toothbrush,toothbrush
+tape,household,tape,word,produces,NA,item_283,NA,tape,tape (object)
+telefon,household,telefon,word,produces,NA,item_284,telephone,telephone,telephone
+tidning,household,tidning,word,produces,NA,item_285,NA,newspaper,paper
+tvål,household,tval,word,produces,NA,item_286,soap,soap,soap
+täcke,household,tacke,word,produces,NA,item_287,NA,quilt,quilt
+väska,household,vaska,word,produces,NA,item_288,NA,bag,bag
+badkar,furniture_rooms,badkar,word,produces,NA,item_289,bathtub,bathtub,bathtub
+badrum,furniture_rooms,badrum,word,produces,NA,item_290,bathroom,bathroom,bathroom
+barnstol,furniture_rooms,barnstol,word,produces,NA,item_291,high chair,high chair,high chair
+bord,furniture_rooms,bord,word,produces,NA,item_292,table,table,table
+brasa,furniture_rooms,brasa,word,produces,NA,item_293,NA,bunfire,fire
+diskbänk,furniture_rooms,diskbank,word,produces,NA,item_294,sink,sink,sink
+dusch,furniture_rooms,dusch,word,produces,NA,item_295,NA,shower,shower
+dörr,furniture_rooms,dorr,word,produces,NA,item_296,door,door,door
+fönster,furniture_rooms,fonster,word,produces,NA,item_297,window,window,window
+garage,furniture_rooms,garage,word,produces,NA,item_298,garage,garage,garage
+garderob,furniture_rooms,garderob,word,produces,NA,item_299,NA,closet,closet
+golv,furniture_rooms,golv,word,produces,NA,item_300,NA,floor,floor
+gungstol,furniture_rooms,gungstol,word,produces,NA,item_301,rocking chair,rocking chair,rocking chair
+kylskåp,furniture_rooms,kylskap,word,produces,NA,item_302,refrigerator,refrigerator,refrigerator
+källare,furniture_rooms,kallare,word,produces,NA,item_303,NA,basement,basement
+kök,furniture_rooms,kok,word,produces,NA,item_304,kitchen,kitchen,kitchen
+lekrum,furniture_rooms,lekrum,word,produces,NA,item_305,play pen,playroom,play pen
+matta,furniture_rooms,matta,word,produces,NA,item_306,NA,carpet,carpet
+pall,furniture_rooms,pall,word,produces,NA,item_307,NA,stool,stool
+potta,furniture_rooms,potta,word,produces,NA,item_308,potty,potty,potty
+rum,furniture_rooms,rum,word,produces,NA,item_309,NA,room,room
+soffa,furniture_rooms,soffa,word,produces,NA,item_310,couch,sofa,couch
+sovrum,furniture_rooms,sovrum,word,produces,NA,item_311,bedroom,bedroom,bedroom
+stol,furniture_rooms,stol,word,produces,NA,item_312,chair,chair,chair
+säng,furniture_rooms,sang,word,produces,NA,item_313,bed,bed,bed
+torkskåp,furniture_rooms,torkskap,word,produces,NA,item_314,NA,dryer,dryer
+trappa,furniture_rooms,trappa,word,produces,NA,item_315,stairs,stairs,stairs
+tv,furniture_rooms,tv,word,produces,NA,item_316,NA,TV,TV
+tvättmaskin,furniture_rooms,tvattmaskin,word,produces,NA,item_317,NA,washing machine,washing machine
+ugn,furniture_rooms,ugn,word,produces,NA,item_318,oven,oven,oven
+vardagsrum,furniture_rooms,vardagsrum,word,produces,NA,item_319,living room,living room,living room
+vägg,furniture_rooms,vagg,word,produces,NA,item_320,NA,wall,wall
+öppen spis,furniture_rooms,oppen_spis,word,produces,NA,item_321,fireplace,fireplace,fireplace
+badet,outside,badet,word,produces,NA,item_322,NA,beach,beach
+bassäng,outside,bassang,word,produces,NA,item_323,pool,pool,pool
+flagga,outside,flagga,word,produces,NA,item_324,NA,flag,flag
+gata,outside,gata,word,produces,NA,item_325,NA,street,street
+gran,outside,gran,word,produces,NA,item_326,NA,Chrismas tree,NA
+gräs,outside,gras,word,produces,NA,item_327,NA,grass,grass
+gräsklippare,outside,grasklippare,word,produces,NA,item_328,NA,lawn mower,lawn mower
+gunga (object),outside,gunga,word,produces,NA,item_329,swing (object),swing,swing (object)
+gård,outside,gard,word,produces,NA,item_330,yard,yard,yard
+himmel,outside,himmel,word,produces,NA,item_331,sky,heaven,sky
+kratta,outside,kratta,word,produces,NA,item_332,NA,rake,rake (object)
+moln,outside,moln,word,produces,NA,item_333,NA,cloud,cloud
+måne,outside,mane,word,produces,NA,item_334,moon,moon,moon
+pinne,outside,pinne,word,produces,NA,item_335,NA,stick,stick (object)
+regn,outside,regn,word,produces,NA,item_336,rain,rain,rain
+rutchbana,outside,rutchbana,word,produces,NA,item_337,NA,slide,slide (object)
+sand,outside,sand,word,produces,NA,item_338,NA,sand,sand
+snö,outside,sno,word,produces,NA,item_339,snow,snow,snow
+snögubbe,outside,snogubbe,word,produces,NA,item_340,NA,snowman,snowman
+sol,outside,sol,word,produces,NA,item_341,sun,sun,sun
+spade,outside,spade,word,produces,NA,item_342,shovel,spade,shovel
+stege,outside,stege,word,produces,NA,item_343,NA,ladder,ladder
+sten,outside,sten,word,produces,NA,item_344,rock (object),stone,rock (object)
+stjärna,outside,stjarna,word,produces,NA,item_345,star,star,star
+tak,outside,tak,word,produces,NA,item_346,NA,roof,roof
+trottoar,outside,trottoar,word,produces,NA,item_347,NA,sidewalk,sidewalk
+träd,outside,trad,word,produces,NA,item_348,tree,tree,tree
+trädgård,outside,tradgard,word,produces,NA,item_349,garden,garden,garden
+vatten (not beverage),outside,vatten,word,produces,NA,item_350,water (not beverage),water,water (not beverage)
+vind,outside,vind,word,produces,NA,item_351,NA,wind,wind
+affär,places,affar,word,produces,NA,item_352,NA,shop,store
+arbetet,places,arbetet,word,produces,NA,item_353,NA,work,work (place)
+bensin,places,bensin,word,produces,NA,item_354,NA,gas station,gas station
+bio,places,bio,word,produces,NA,item_355,NA,movie,movie
+bondgård,places,bondgard,word,produces,NA,item_356,NA,farm,farm
+camping,places,camping,word,produces,NA,item_357,NA,camping,camping
+cirkus,places,cirkus,word,produces,NA,item_358,NA,circus,circus
+dagis,places,dagis,word,produces,NA,item_359,NA,preschool,nursery
+fest,places,fest,word,produces,NA,item_360,NA,party,party
+hemma,places,hemma,word,produces,NA,item_361,NA,home,home
+hus,places,hus,word,produces,NA,item_362,NA,house,house
+kalas,places,kalas,word,produces,NA,item_363,NA,party,party
+kyrka,places,kyrka,word,produces,NA,item_364,NA,church,church
+landet,places,landet,word,produces,NA,item_365,NA,country,country
+lekplats,places,lekplats,word,produces,NA,item_366,NA,playground,playground
+park,places,park,word,produces,NA,item_367,NA,park,park
+skog,places,skog,word,produces,NA,item_368,NA,woods,forest
+skola,places,skola,word,produces,NA,item_369,NA,school,school
+staden,places,staden,word,produces,NA,item_370,NA,downtown,downtown
+stranden,places,stranden,word,produces,NA,item_371,NA,beach,beach
+ute,places,ute,word,produces,NA,item_372,NA,outside,outside
+utflykt,places,utflykt,word,produces,NA,item_373,NA,picnic,picnic
+zoo,places,zoo,word,produces,NA,item_374,NA,zoo,zoo
+baby,people,baby,word,produces,NA,item_375,baby,baby,baby
+barn,people,barn,word,produces,NA,item_376,child,child,child
+barnets eget namn,people,barnets_eget_namn,word,produces,NA,item_377,child's own name,child´s own name,child's own name
+barnvakt,people,barnvakt,word,produces,NA,item_378,babysitter,babysitter,babysitter
+barnvaktens namn,people,barnvaktens_namn,word,produces,NA,item_379,babysitter's name,babysitter´s name,babysitter's name
+brandman,people,brandman,word,produces,NA,item_380,NA,fireman,firefighter
+brevbärare,people,brevbarare,word,produces,NA,item_381,NA,mailman,mailman
+bror,people,bror,word,produces,NA,item_382,brother,brother,brother
+clown,people,clown,word,produces,NA,item_383,NA,clown,clown
+cowboy,people,cowboy,word,produces,NA,item_384,NA,cowboy,cowboy
+doktor,people,doktor,word,produces,NA,item_385,NA,doctor,doctor
+farbror,people,farbror,word,produces,NA,item_386,uncle,uncle,uncle
+farfar,people,farfar,word,produces,NA,item_387,grandpa,grandpa,grandpa
+farmor,people,farmor,word,produces,NA,item_388,grandma,grandma,grandma
+faster,people,faster,word,produces,NA,item_389,aunt,aunt,aunt
+flicka,people,flicka,word,produces,NA,item_390,girl,girl,girl
+folk,people,folk,word,produces,NA,item_391,NA,people,people
+fröken,people,froken,word,produces,NA,item_392,NA,miss,NA
+gubbe,people,gubbe,word,produces,NA,item_393,NA,old man,NA
+gumma,people,gumma,word,produces,NA,item_394,NA,old woman,NA
+husdjurets namn,people,husdjurets_namn,word,produces,NA,item_395,NA,pet´s name,NA
+kompis,people,kompis,word,produces,NA,item_396,NA,friend,friend
+lärare,people,larare,word,produces,NA,item_397,teacher,teacher,teacher
+mamma,people,mamma,word,produces,NA,item_398,mommy,mother,mommy
+man,people,man,word,produces,NA,item_399,man,man,man
+morbror,people,morbror,word,produces,NA,item_400,uncle,uncle,uncle
+morfar,people,morfar,word,produces,NA,item_401,grandpa,grandpa,grandpa
+mormor,people,mormor,word,produces,NA,item_402,grandma,grandma,grandma
+moster,people,moster,word,produces,NA,item_403,aunt,aunt,aunt
+människor,people,manniskor,word,produces,NA,item_404,people,people,people
+pappa,people,pappa,word,produces,NA,item_405,daddy,daddy,daddy
+pojke,people,pojke,word,produces,NA,item_406,boy,boy,boy
+polis,people,polis,word,produces,NA,item_407,NA,police,police
+sjuksköterska,people,sjukskoterska,word,produces,NA,item_408,NA,nurse,nurse
+syster,people,syster,word,produces,NA,item_409,sister,sister,sister
+tomte,people,tomte,word,produces,NA,item_410,NA,Santa Claus,NA
+bada,games_routines,bada,word,produces,NA,item_411,bath,bath,bath
+baka kaka,games_routines,baka_kaka,word,produces,NA,item_412,pattycake,patty cake,pattycake
+frukost,games_routines,frukost,word,produces,NA,item_413,breakfast,breakfast,breakfast
+god natt,games_routines,god_natt,word,produces,NA,item_414,good night,good night,good night
+handla,games_routines,handla,word,produces,NA,item_415,NA,shop,shopping
+hej,games_routines,hej,word,produces,NA,item_416,hi,hello,hi
+hej då,games_routines,hej_da,word,produces,NA,item_417,bye,good bye,bye
+inte,games_routines,inte,word,produces,NA,item_418,NA,not,don't
+ja,games_routines,ja,word,produces,NA,item_419,yes,yes,yes
+lunch,games_routines,lunch,word,produces,NA,item_420,lunch,lunch,lunch
+mellanmål,games_routines,mellanmal,word,produces,NA,item_421,NA,snack,snack
+middag,games_routines,middag,word,produces,NA,item_422,dinner,dinner,dinner
+nej,games_routines,nej,word,produces,NA,item_423,no,no,no
+ringa,games_routines,ringa,word,produces,NA,item_424,NA,call,call
+sitta pottan,games_routines,sitta_pottan,word,produces,NA,item_425,NA,sit potty,go potty
+sova middag,games_routines,sova_middag,word,produces,NA,item_426,nap,nap,nap
+sch/hysch,games_routines,sch/hysch,word,produces,NA,item_427,NA,shh/shush/hush,shh
+tack,games_routines,tack,word,produces,NA,item_428,thank you,thank you,thank you
+tittut,games_routines,tittut,word,produces,NA,item_429,peekaboo,peekaboo,peekaboo
+varsågod,games_routines,varsagod,word,produces,NA,item_430,please,please,please
+vill,games_routines,vill,word,produces,NA,item_431,NA,want,wanna
+vill ha,games_routines,vill_ha,word,produces,NA,item_432,NA,wanna/want to,wanna
+vänd dig om,games_routines,vand_dig_om,word,produces,NA,item_433,NA,turn around,NA
+vänta,games_routines,vanta,word,produces,NA,item_434,wait,wait,wait
+arbeta,action_words,arbeta,word,produces,NA,item_435,NA,work,work (action)
+backa,action_words,backa,word,produces,NA,item_436,NA,reverse,reverse
+bajsa,action_words,bajsa,word,produces,NA,item_437,NA,poo-poo,poop
+bita,action_words,bita,word,produces,NA,item_438,bite,bite,bite
+blåsa,action_words,blasa,word,produces,NA,item_439,blow,blow,blow
+bryta,action_words,bryta,word,produces,NA,item_440,break,break,break
+bygga,action_words,bygga,word,produces,NA,item_441,NA,build,build
+bära,action_words,bara,word,produces,NA,item_442,NA,carry,carry
+dansa,action_words,dansa,word,produces,NA,item_443,dance,dance,dance
+dela,action_words,dela,word,produces,NA,item_444,NA,share,share
+dra,action_words,dra,word,produces,NA,item_445,pull,pull,pull
+dricka,action_words,dricka,word,produces,NA,item_446,drink (action),drink,drink (action)
+falla,action_words,falla,word,produces,NA,item_447,fall,fall,fall
+flyga,action_words,flyga,word,produces,NA,item_448,NA,fly,fly (action)
+få,action_words,fa,word,produces,NA,item_449,NA,get,get
+gapa,action_words,gapa,word,produces,NA,item_450,NA,open the mouth,NA
+ge,action_words,ge,word,produces,NA,item_451,give,give,give
+gråta,action_words,grata,word,produces,NA,item_452,cry,cry,cry
+gräva,action_words,grava,word,produces,NA,item_453,NA,dig,dig
+gunga (action),action_words,gunga,word,produces,NA,item_454,swing (action),swing,swing (action)
+gå,action_words,ga,word,produces,NA,item_455,walk,go,walk
+gömma,action_words,gomma,word,produces,NA,item_456,NA,hide,hide
+göra,action_words,gora,word,produces,NA,item_457,NA,do,do
+heta,action_words,heta,word,produces,NA,item_458,NA,call,call
+hitta,action_words,hitta,word,produces,NA,item_459,NA,find,find
+hjälpa,action_words,hjalpa,word,produces,NA,item_460,help,help,help
+hoppa,action_words,hoppa,word,produces,NA,item_461,jump,jump,jump
+hålla,action_words,halla,word,produces,NA,item_462,NA,hold,hold
+hälla,action_words,halla,word,produces,NA,item_463,NA,pour,pour
+hämta,action_words,hamta,word,produces,NA,item_464,get,get,get
+höra,action_words,hora,word,produces,NA,item_465,NA,hear,hear
+jaga,action_words,jaga,word,produces,NA,item_466,NA,hunt,hunt
+kasta,action_words,kasta,word,produces,NA,item_467,throw,throw,throw
+kissa,action_words,kissa,word,produces,NA,item_468,NA,pee,pee
+kittla,action_words,kittla,word,produces,NA,item_469,tickle,tickle,tickle
+klappa,action_words,klappa,word,produces,NA,item_470,NA,pat,pat
+klippa,action_words,klippa,word,produces,NA,item_471,NA,cut,cut
+klättra,action_words,klattra,word,produces,NA,item_472,NA,climb,climb
+knuffa,action_words,knuffa,word,produces,NA,item_473,push,push,push
+koka,action_words,koka,word,produces,NA,item_474,NA,boil,boil
+krama,action_words,krama,word,produces,NA,item_475,hug,hug,hug
+köpa,action_words,kopa,word,produces,NA,item_476,NA,buy,buy
+köra,action_words,kora,word,produces,NA,item_477,drive,drive,drive
+laga,action_words,laga,word,produces,NA,item_478,NA,fix,fix
+le,action_words,le,word,produces,NA,item_479,smile,smile,smile
+leka,action_words,leka,word,produces,NA,item_480,play,play,play
+lyssna,action_words,lyssna,word,produces,NA,item_481,NA,listen,listen
+låtsas,action_words,latsas,word,produces,NA,item_482,NA,pretend,pretend
+lägga,action_words,lagga,word,produces,NA,item_483,NA,lay,lay
+läsa,action_words,lasa,word,produces,NA,item_484,read,read,read
+mata,action_words,mata,word,produces,NA,item_485,feed,feed,feed
+måla,action_words,mala,word,produces,NA,item_486,NA,paint,paint (action)
+plaska,action_words,plaska,word,produces,NA,item_487,splash,splash,splash
+plocka,action_words,plocka,word,produces,NA,item_488,NA,pick,pick
+prata,action_words,prata,word,produces,NA,item_489,NA,talk,talk
+pussa,action_words,pussa,word,produces,NA,item_490,kiss,kiss,kiss
+ramla,action_words,ramla,word,produces,NA,item_491,NA,fall,fall
+rita,action_words,rita,word,produces,NA,item_492,draw,draw,draw
+riva,action_words,riva,word,produces,NA,item_493,NA,tear,tear
+röra,action_words,rora,word,produces,NA,item_494,touch,touch,touch
+se,action_words,se,word,produces,NA,item_495,see,see,see
+simma,action_words,simma,word,produces,NA,item_496,swim,swim,swim
+sitta,action_words,sitta,word,produces,NA,item_497,NA,sit,sit
+sjunga,action_words,sjunga,word,produces,NA,item_498,sing,sing,sing
+skaka,action_words,skaka,word,produces,NA,item_499,NA,shake,shake
+skoja,action_words,skoja,word,produces,NA,item_500,NA,joke,joke
+skriva,action_words,skriva,word,produces,NA,item_501,write,write,write
+skynda,action_words,skynda,word,produces,NA,item_502,hurry,rush,hurry
+skära,action_words,skara,word,produces,NA,item_503,NA,cut,cut
+slicka,action_words,slicka,word,produces,NA,item_504,NA,lick,lick
+sluta,action_words,sluta,word,produces,NA,item_505,stop,stop,stop
+slå,action_words,sla,word,produces,NA,item_506,hit,beat,hit
+slänga,action_words,slanga,word,produces,NA,item_507,NA,throw,throw
+smaka,action_words,smaka,word,produces,NA,item_508,NA,taste,taste
+sopa,action_words,sopa,word,produces,NA,item_509,NA,sweep,sweep
+sova,action_words,sova,word,produces,NA,item_510,sleep,sleep,sleep
+sparka,action_words,sparka,word,produces,NA,item_511,kick,kick,kick
+spela,action_words,spela,word,produces,NA,item_512,NA,play,play
+spilla,action_words,spilla,word,produces,NA,item_513,NA,spill,spill
+springa,action_words,springa,word,produces,NA,item_514,run,run,run
+stanna,action_words,stanna,word,produces,NA,item_515,stop,stop,stop
+stå,action_words,sta,word,produces,NA,item_516,NA,stand,stand
+städa,action_words,stada,word,produces,NA,item_517,clean (action),clean,clean (action)
+ställa,action_words,stalla,word,produces,NA,item_518,NA,stand,set
+stänga,action_words,stanga,word,produces,NA,item_519,close,close,close
+säga,action_words,saga,word,produces,NA,item_520,say,say,say
+sätta,action_words,satta,word,produces,NA,item_521,put,put,put
+tala,action_words,tala,word,produces,NA,item_522,NA,speak,speak
+tanka,action_words,tanka,word,produces,NA,item_523,NA,fill,fill
+tappa,action_words,tappa,word,produces,NA,item_524,NA,drop,drop
+titta,action_words,titta,word,produces,NA,item_525,look,look,look
+torka,action_words,torka,word,produces,NA,item_526,NA,dry,dry (action)
+tvätta,action_words,tvatta,word,produces,NA,item_527,wash,clean,wash
+tycka,action_words,tycka,word,produces,NA,item_528,NA,like,like
+tända,action_words,tanda,word,produces,NA,item_529,NA,light,light (action)
+tänka,action_words,tanka,word,produces,NA,item_530,NA,think,think
+vakna,action_words,vakna,word,produces,NA,item_531,NA,wake,wake
+visa,action_words,visa,word,produces,NA,item_532,show,show,show
+vänta,action_words,vanta,word,produces,NA,item_533,NA,wait,wait
+åka,action_words,aka,word,produces,NA,item_534,go,go,go
+älska,action_words,alska,word,produces,NA,item_535,NA,love,love
+äta,action_words,ata,word,produces,NA,item_536,eat,eat,eat
+önska,action_words,onska,word,produces,NA,item_537,NA,wish,wish
+öppna,action_words,oppna,word,produces,NA,item_538,open (action),open,open (action)
+arg,descriptive_words,arg,word,produces,NA,item_539,NA,angry,angry
+blå,descriptive_words,bla,word,produces,NA,item_540,blue,blue,blue
+blåsig,descriptive_words,blasig,word,produces,NA,item_541,NA,windy,windy
+borta,descriptive_words,borta,word,produces,NA,item_542,all gone,allgone,all gone
+brun,descriptive_words,brun,word,produces,NA,item_543,NA,brown,brown
+bullrig,descriptive_words,bullrig,word,produces,NA,item_544,NA,noisy,noisy
+bättre,descriptive_words,battre,word,produces,NA,item_545,NA,better,better
+dum,descriptive_words,dum,word,produces,NA,item_546,NA,stupid,stupid
+dålig,descriptive_words,dalig,word,produces,NA,item_547,bad,bad,bad
+fattig,descriptive_words,fattig,word,produces,NA,item_548,NA,poor,poor
+fin,descriptive_words,fin,word,produces,NA,item_549,fine,nice,fine
+fort,descriptive_words,fort,word,produces,NA,item_550,fast,quick,fast
+full,descriptive_words,full,word,produces,NA,item_551,NA,full,full
+försiktig,descriptive_words,forsiktig,word,produces,NA,item_552,careful,careful,careful
+först,descriptive_words,forst,word,produces,NA,item_553,NA,first,first
+gammal,descriptive_words,gammal,word,produces,NA,item_554,old,old,old
+glad,descriptive_words,glad,word,produces,NA,item_555,happy,glad,happy
+god,descriptive_words,god,word,produces,NA,item_556,good,god,good
+grön,descriptive_words,gron,word,produces,NA,item_557,NA,green,green
+gul,descriptive_words,gul,word,produces,NA,item_558,NA,yellow,yellow
+gullig,descriptive_words,gullig,word,produces,NA,item_559,NA,cute,cute
+hungrig,descriptive_words,hungrig,word,produces,NA,item_560,hungry,hungry,hungry
+hård,descriptive_words,hard,word,produces,NA,item_561,hard,hard,hard
+hög,descriptive_words,hog,word,produces,NA,item_562,NA,high,high
+kall,descriptive_words,kall,word,produces,NA,item_563,cold,cold,cold
+ledsen,descriptive_words,ledsen,word,produces,NA,item_564,NA,sorry,sorry
+liten,descriptive_words,liten,word,produces,NA,item_565,NA,little,little (description)
+lång,descriptive_words,lang,word,produces,NA,item_566,NA,long,long
+mjuk,descriptive_words,mjuk,word,produces,NA,item_567,soft,soft,soft
+mörk,descriptive_words,mork,word,produces,NA,item_568,dark,dark,dark
+ny,descriptive_words,ny,word,produces,NA,item_569,NA,new,new
+orange,descriptive_words,orange,word,produces,NA,item_570,NA,orange,orange (description)
+ren,descriptive_words,ren,word,produces,NA,item_571,clean (description),clean,clean (description)
+rädd,descriptive_words,radd,word,produces,NA,item_572,NA,afraid,afraid
+röd,descriptive_words,rod,word,produces,NA,item_573,red,red,red
+sakta,descriptive_words,sakta,word,produces,NA,item_574,NA,slowly,slowly
+sist,descriptive_words,sist,word,produces,NA,item_575,NA,last,last
+sjuk,descriptive_words,sjuk,word,produces,NA,item_576,sick,sick,sick
+smutsig,descriptive_words,smutsig,word,produces,NA,item_577,dirty,dirty,dirty
+snabb,descriptive_words,snabb,word,produces,NA,item_578,quick,fast,quick
+snäll,descriptive_words,snall,word,produces,NA,item_579,NA,kind,nice
+stor,descriptive_words,stor,word,produces,NA,item_580,big,big,big
+stygg,descriptive_words,stygg,word,produces,NA,item_581,naughty,naughty,naughty
+svart,descriptive_words,svart,word,produces,NA,item_582,NA,black,black
+svår,descriptive_words,svar,word,produces,NA,item_583,hard,difficult,hard
+sömning,descriptive_words,somning,word,produces,NA,item_584,NA,sleepy,sleepy
+sönder,descriptive_words,sonder,word,produces,NA,item_585,NA,broken,broken
+söt,descriptive_words,sot,word,produces,NA,item_586,sweet,sweet,sweet
+tom,descriptive_words,tom,word,produces,NA,item_587,empty,empty,empty
+torr,descriptive_words,torr,word,produces,NA,item_588,dry (description),dry,dry (description)
+trasig,descriptive_words,trasig,word,produces,NA,item_589,broken,torn,broken
+trevlig,descriptive_words,trevlig,word,produces,NA,item_590,nice,nice,nice
+trött,descriptive_words,trott,word,produces,NA,item_591,tired,tired,tired
+tung,descriptive_words,tung,word,produces,NA,item_592,NA,heavy,heavy
+tunn,descriptive_words,tunn,word,produces,NA,item_593,NA,thin,thin
+tyst,descriptive_words,tyst,word,produces,NA,item_594,NA,quiet,quiet
+törstig,descriptive_words,torstig,word,produces,NA,item_595,thirsty,thirsty,thirsty
+vaken,descriptive_words,vaken,word,produces,NA,item_596,NA,awake,awake
+varm,descriptive_words,varm,word,produces,NA,item_597,NA,warm,hot
+vass,descriptive_words,vass,word,produces,NA,item_598,NA,sharp,sharp
+vit,descriptive_words,vit,word,produces,NA,item_599,NA,white,white
+våt,descriptive_words,vat,word,produces,NA,item_600,wet (description),wet,wet (description)
+äcklig,descriptive_words,acklig,word,produces,NA,item_601,yucky,yucky,yucky
+de/dem/dom,pronouns,de/dem/dom,word,produces,NA,item_602,NA,they,1PL
+den där,pronouns,den_dar,word,produces,NA,item_603,that,that one,that
+den här,pronouns,den_har,word,produces,NA,item_604,this,this one,this
+den,pronouns,den_,word,produces,NA,item_605,that,that,that
+det,pronouns,det,word,produces,NA,item_606,it,it,3SG
+deras,pronouns,deras,word,produces,NA,item_607,NA,theirs,3PL.POSS
+dessa,pronouns,dessa,word,produces,NA,item_608,NA,these,these
+din,pronouns,din,word,produces,NA,item_609,NA,yours,2SG.POSS
+du,pronouns,du,word,produces,NA,item_610,NA,you,2SG
+han,pronouns,han,word,produces,NA,item_611,NA,he,3SG
+hans,pronouns,hans,word,produces,NA,item_612,his,his,3SG.POSS
+henne,pronouns,henne,word,produces,NA,item_613,her,her,3SG
+hennes,pronouns,hennes,word,produces,NA,item_614,NA,hers,3SG.POSS
+hon,pronouns,hon,word,produces,NA,item_615,NA,she,3SG
+honom,pronouns,honom,word,produces,NA,item_616,NA,him,3SG
+jag,pronouns,jag,word,produces,NA,item_617,i,I,1SG
+mig,pronouns,mig,word,produces,NA,item_618,my,me,1SG.POSS
+min,pronouns,min,word,produces,NA,item_619,mine,my,1SG.POSS
+mina,pronouns,mina,word,produces,NA,item_620,NA,mine,1SG.POSS
+oss,pronouns,oss,word,produces,NA,item_621,NA,us,1PL
+själv,pronouns,sjalv,word,produces,NA,item_622,NA,self,REFL
+vi,pronouns,vi,word,produces,NA,item_623,NA,we,1PL
+vår,pronouns,var,word,produces,NA,item_624,NA,our,1PL.POSS
+dag,time_words,dag,word,produces,NA,item_625,day,day,day
+efter,time_words,efter,word,produces,NA,item_626,NA,after,after
+ikväll,time_words,ikvall,word,produces,NA,item_627,tonight,tonight,tonight
+imorgon,time_words,imorgon,word,produces,NA,item_628,tomorrow,tomorrow,tomorrow
+innan,time_words,innan,word,produces,NA,item_629,NA,before,before
+idag,time_words,idag,word,produces,NA,item_630,today,today,today
+igår,time_words,igar,word,produces,NA,item_631,NA,yesterday,yesterday
+morgon,time_words,morgon,word,produces,NA,item_632,morning,morning,morning
+natt,time_words,natt,word,produces,NA,item_633,night,night,night
+nu,time_words,nu,word,produces,NA,item_634,now,now,now
+senare,time_words,senare,word,produces,NA,item_635,later,later,later
+tid,time_words,tid,word,produces,NA,item_636,NA,time,time
+av,locations,av,word,produces,NA,item_637,of,by,of
+bakom,locations,bakom,word,produces,NA,item_638,back (location),behind,back (location)
+bort,locations,bort,word,produces,NA,item_639,away,away,away
+bredvid,locations,bredvid,word,produces,NA,item_640,NA,beside,beside
+där,locations,dar,word,produces,NA,item_641,there,there,there
+från,locations,fran,word,produces,NA,item_642,NA,from,from
+för,locations,for,word,produces,NA,item_643,NA,for,for
+här,locations,har,word,produces,NA,item_644,NA,here,here
+i,locations,i,word,produces,NA,item_645,in,in,in
+inuti,locations,inuti,word,produces,NA,item_646,inside,inside,inside
+med,locations,med,word,produces,NA,item_647,NA,with,with
+ner,locations,ner,word,produces,NA,item_648,down,down,down
+nära,locations,nara,word,produces,NA,item_649,NA,near,near
+omkring,locations,omkring,word,produces,NA,item_650,NA,around,around
+ovanför,locations,ovanfor,word,produces,NA,item_651,NA,above,above
+ovanpå,locations,ovanpa,word,produces,NA,item_652,NA,on top of,on top
+på,locations,pa,word,produces,NA,item_653,on,on,on
+runt,locations,runt,word,produces,NA,item_654,NA,around,around
+till,locations,till,word,produces,NA,item_655,NA,to,to
+tillbaka,locations,tillbaka,word,produces,NA,item_656,NA,back,back (location)
+under,locations,under,word,produces,NA,item_657,under,under,under
+upp,locations,upp,word,produces,NA,item_658,up,up,up
+ut,locations,ut,word,produces,NA,item_659,out,out,out
+vid,locations,vid,word,produces,NA,item_660,NA,at,at
+över,locations,over,word,produces,NA,item_661,NA,over,over
+alla,quantifiers,alla,word,produces,NA,item_662,all,all,all
+andra,quantifiers,andra,word,produces,NA,item_663,other,other,other
+den,quantifiers,den,word,produces,NA,item_664,NA,it,it
+en,quantifiers,en,word,produces,NA,item_665,NA,a,a
+en till,quantifiers,en_till,word,produces,NA,item_666,another,another,another
+ett,quantifiers,ett,word,produces,NA,item_667,NA,one,one
+ingen,quantifiers,ingen,word,produces,NA,item_668,none,none,none
+mer,quantifiers,mer,word,produces,NA,item_669,more,more,more
+mycket,quantifiers,mycket,word,produces,NA,item_670,NA,much,much
+många,quantifiers,manga,word,produces,NA,item_671,NA,many,many
+någon,quantifiers,nagon,word,produces,NA,item_672,NA,any,any
+några,quantifiers,nagra,word,produces,NA,item_673,some,some,some
+också,quantifiers,ocksa,word,produces,NA,item_674,NA,also,also
+samma,quantifiers,samma,word,produces,NA,item_675,same,same,same
+tre,quantifiers,tre,word,produces,NA,item_676,NA,three,three
+två,quantifiers,tva,word,produces,NA,item_677,NA,two,two
+varenda,quantifiers,varenda,word,produces,NA,item_678,NA,every,every
+varje,quantifiers,varje,word,produces,NA,item_679,NA,every,every
+försöka,helping_verbs,forsoka,word,produces,NA,item_680,NA,try,try
+gjorde,helping_verbs,gjorde,word,produces,NA,item_681,NA,did,did
+gör,helping_verbs,gor,word,produces,NA,item_682,NA,do,do
+ha,helping_verbs,ha,word,produces,NA,item_683,NA,have,have
+kan,helping_verbs,kan,word,produces,NA,item_684,NA,can,can
+komma,helping_verbs,komma,word,produces,NA,item_685,NA,come,come
+kunde,helping_verbs,kunde,word,produces,NA,item_686,NA,could,could
+låta,helping_verbs,lata,word,produces,NA,item_687,NA,let,let
+låt mig,helping_verbs,lat_mig,word,produces,NA,item_688,NA,let me,NA
+måste,helping_verbs,maste,word,produces,NA,item_689,NA,must,must
+ska,helping_verbs,ska,word,produces,NA,item_690,NA,will,will
+skulle,helping_verbs,skulle,word,produces,NA,item_691,NA,should,should
+ta,helping_verbs,ta,word,produces,NA,item_692,NA,take,take
+tycka,helping_verbs,tycka,word,produces,NA,item_693,NA,think,think
+var,helping_verbs,var,word,produces,NA,item_694,NA,was,was
+vara,helping_verbs,vara,word,produces,NA,item_695,NA,be,be
+vill,helping_verbs,vill,word,produces,NA,item_696,NA,want,want
+är,helping_verbs,ar,word,produces,NA,item_697,NA,is,is
+därför,connecting_words,darfor,word,produces,NA,item_698,NA,becuase,because
+hur,connecting_words,hur,word,produces,NA,item_699,NA,how,how (connecting
+men,connecting_words,men,word,produces,NA,item_700,NA,but,but
+när,connecting_words,nar,word,produces,NA,item_701,NA,when,when (conjunction)
+och,connecting_words,och,word,produces,NA,item_702,NA,and,and
+om,connecting_words,om,word,produces,NA,item_703,NA,if,if
+sen,connecting_words,sen,word,produces,NA,item_704,NA,late,late
+sa,connecting_words,sa,word,produces,NA,item_705,NA,said,said
+vad,connecting_words,vad,word,produces,NA,item_706,NA,what,what
+var,connecting_words,var,word,produces,NA,item_707,NA,where,where (conjunction)
+varför,connecting_words,varfor,word,produces,NA,item_708,NA,why,why
+vem,connecting_words,vem,word,produces,NA,item_709,NA,who,who
+vilka,connecting_words,vilka,word,produces,NA,item_710,NA,which,which (connecting)

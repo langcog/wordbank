@@ -1,0 +1,629 @@
+itemID,item,type,category,choices,definition,complexity_category,gloss,uni_lemma
+item_1,baa_baa,word,sounds,produces,baa baa,NA,baa baa,baa baa
+item_2,choo_choo,word,sounds,produces,choo choo,NA,choo choo,choo choo
+item_3,cockadoodledoo,word,sounds,produces,cockadoodledoo,NA,cockadoodledoo,cockadoodledoo
+item_4,grr,word,sounds,produces,grr,NA,grr,grrr
+item_5,meow,word,sounds,produces,meow,NA,meow,meow
+item_6,moo,word,sounds,produces,moo,NA,moo,moo
+item_7,ouch,word,sounds,produces,ouch,NA,ouch,ouch
+item_8,quack_quack,word,sounds,produces,quack quack,NA,quack quack,quack quack
+item_9,uh_oh,word,sounds,produces,uh oh,NA,uh oh,uh oh
+item_10,vroom_broom,word,sounds,produces,vroom/broom,NA,vroom/broom,vroom
+item_11,woof_woof,word,sounds,produces,woof woof,NA,woof woof,woof woof
+item_12,yum_yum,word,sounds,produces,yum yum,NA,yum yum,yum yum
+item_13,animal,word,animals,produces,animal,NA,animal,animal
+item_14,ant,word,animals,produces,ant,NA,ant,ant
+item_15,bear,word,animals,produces,bear,NA,bear,bear
+item_16,bee,word,animals,produces,bee,NA,bee,bee
+item_17,bird,word,animals,produces,bird,NA,bird,bird
+item_18,bug,word,animals,produces,bug,NA,bug,bug
+item_19,bunny_rabbit,word,animals,produces,bunny/rabbit,NA,bunny/rabbit,bunny
+item_20,butterfly,word,animals,produces,butterfly,NA,butterfly,butterfly
+item_21,pussycat,word,animals,produces,(pussy)cat,NA,(pussy)cat,cat
+item_22,donkey,word,animals,produces,donkey,NA,donkey,donkey
+item_23,duck,word,animals,produces,duck,NA,duck,duck
+item_24,elephant,word,animals,produces,elephant,NA,elephant,elephant
+item_25,fish,word,animals,produces,fish,NA,fish,fish (animal)
+item_26,frog,word,animals,produces,frog,NA,frog,frog
+item_27,giraffe,word,animals,produces,giraffe,NA,giraffe,giraffe
+item_28,goose,word,animals,produces,goose,NA,goose,goose
+item_29,horse,word,animals,produces,horse,NA,horse,horse
+item_30,kangaroo_roo,word,animals,produces,kangaroo/roo,NA,kangaroo/roo,kangaroo
+item_31,owl,word,animals,produces,owl,NA,owl,owl
+item_32,penguin,word,animals,produces,penguin,NA,penguin,penguin
+item_33,pig,word,animals,produces,pig,NA,pig,pig
+item_34,pony,word,animals,produces,pony,NA,pony,pony
+item_35,possum,word,animals,produces,possum,NA,possum,possum
+item_36,puppy,word,animals,produces,puppy,NA,puppy,puppy
+item_37,sheep,word,animals,produces,sheep,NA,sheep,sheep
+item_38,snake,word,animals,produces,snake,NA,snake,snake
+item_39,spider,word,animals,produces,spider,NA,spider,spider
+item_40,cockroach,word,animals,produces,cockroach,NA,cockroach,cockroach
+item_41,cow,word,animals,produces,cow,NA,cow,cow
+item_42,crocodile,word,animals,produces,crocodile,NA,crocodile,crocodile
+item_43,deer,word,animals,produces,deer,NA,deer,deer
+item_44,dog,word,animals,produces,dog,NA,dog,dog
+item_45,koala,word,animals,produces,koala,NA,koala,koala
+item_46,lamb,word,animals,produces,lamb,NA,lamb,lamb
+item_47,lion,word,animals,produces,lion,NA,lion,lion
+item_48,monkey,word,animals,produces,monkey,NA,monkey,monkey
+item_49,mouse,word,animals,produces,mouse,NA,mouse,mouse
+item_50,tiger,word,animals,produces,tiger,NA,tiger,tiger
+item_51,turkey,word,animals,produces,turkey,NA,turkey,turkey
+item_52,turtle,word,animals,produces,turtle,NA,turtle,turtle
+item_53,wombat,word,animals,produces,wombat,NA,wombat,wombat
+item_54,zebra,word,animals,produces,zebra,NA,zebra,zebra
+item_55,airplane,word,vehicles,produces,(air)plane,NA,(air)plane,airplane
+item_56,bicycle/bike,word,vehicles,produces,bicycle/bike,NA,bicycle/bike,bicycle
+item_57,boat,word,vehicles,produces,boat,NA,boat,boat
+item_58,bus,word,vehicles,produces,bus,NA,bus,bus
+item_59,car,word,vehicles,produces,car,NA,car,car
+item_60,fire_truck_engine,word,vehicles,produces,fire truck/engine,NA,fire truck/engine,firetruck
+item_61,helicopter,word,vehicles,produces,helicopter,NA,helicopter,helicopter
+item_62,motorbike,word,vehicles,produces,motorbike,NA,motorbike,motorcycle
+item_63,pram,word,vehicles,produces,pram,NA,pram,stroller
+item_64,stroller,word,vehicles,produces,stroller,NA,stroller,stroller
+item_65,tractor,word,vehicles,produces,tractor,NA,tractor,tractor
+item_66,train,word,vehicles,produces,train,NA,train,train
+item_67,three_wheeler_tricycle,word,vehicles,produces,three wheeler/tricycle,NA,three wheeler/tricycle,tricycle
+item_68,truck,word,vehicles,produces,truck,NA,truck,truck
+item_69,ball,word,toys,produces,ball,NA,ball,ball
+item_70,balloon,word,toys,produces,balloon,NA,balloon,balloon
+item_71,bat,word,toys,produces,bat,NA,bat,bat (object)
+item_72,block_brick,word,toys,produces,block/brick,NA,block/brick,blocks
+item_73,book,word,toys,produces,book,NA,book,book
+item_74,bubbles,word,toys,produces,bubbles,NA,bubbles,bubbles
+item_75,crayon,word,toys,produces,crayon,NA,crayon,crayon
+item_76,doll,word,toys,produces,doll,NA,doll,doll
+item_77,game,word,toys,produces,game,NA,game,game
+item_78,glue,word,toys,produces,glue,NA,glue,glue (object)
+item_79,pen,word,toys,produces,pen,NA,pen,pen
+item_80,play_dough,word,toys,produces,play dough,NA,play dough,play dough
+item_81,present_pressie,word,toys,produces,present/pressie,NA,present/pressie,present
+item_82,puzzle,word,toys,produces,puzzle,NA,puzzle,puzzle
+item_83,story,word,toys,produces,story,NA,story,story
+item_84,teddy_bear,word,toys,produces,teddy bear,NA,teddy bear,teddybear
+item_85,toy,word,toys,produces,toy,NA,toy,toy (object)
+item_86,apple,word,food_drink,produces,apple,NA,apple,apple
+item_87,banana,word,food_drink,produces,banana,NA,banana,banana
+item_88,beans,word,food_drink,produces,beans,NA,beans,beans
+item_89,biscuit_bickie,word,food_drink,produces,biscuit/bickie,NA,biscuit/bickie,cookie
+item_90,bread,word,food_drink,produces,bread,NA,bread,bread
+item_91,butter,word,food_drink,produces,butter,NA,butter,butter
+item_92,cake,word,food_drink,produces,cake,NA,cake,cake
+item_93,carrot,word,food_drink,produces,carrot,NA,carrot,carrot
+item_94,cereal,word,food_drink,produces,cereal,NA,cereal,cereal
+item_95,cheese,word,food_drink,produces,cheese,NA,cheese,cheese
+item_96,chicken,word,food_drink,produces,chicken,NA,chicken,chicken (food)
+item_97,chocolate,word,food_drink,produces,chocolate,NA,chocolate,chocolate
+item_98,chewing_gum_chewie,word,food_drink,produces,chewing gum/chewie,NA,chewing gum/chewie,gum
+item_99,coffee,word,food_drink,produces,coffee,NA,coffee,coffee
+item_100,coke,word,food_drink,produces,coke,NA,coke,soda
+item_101,cordial,word,food_drink,produces,cordial,NA,cordial,juice
+item_102,corn,word,food_drink,produces,corn,NA,corn,corn
+item_103,fish,word,food_drink,produces,fish,NA,fish,fish (food)
+item_104,food,word,food_drink,produces,food,NA,food,food
+item_105,grapes,word,food_drink,produces,grapes,NA,grapes,grapes
+item_106,hamburger,word,food_drink,produces,hamburger,NA,hamburger,hamburger
+item_107,ice,word,food_drink,produces,ice,NA,ice,ice
+item_108,ice_cream,word,food_drink,produces,ice cream,NA,ice cream,ice cream
+item_109,jam,word,food_drink,produces,jam,NA,jam,jam
+item_110,jelly,word,food_drink,produces,jelly,NA,jelly,jam
+item_111,juice,word,food_drink,produces,juice,NA,juice,juice
+item_112,lolly,word,food_drink,produces,lolly,NA,lolly,lollipop
+item_113,mango,word,food_drink,produces,mango,NA,mango,mango
+item_114,meat,word,food_drink,produces,meat,NA,meat,meat
+item_115,milk,word,food_drink,produces,milk,NA,milk,milk
+item_116,muffin,word,food_drink,produces,muffin,NA,muffin,muffin
+item_117,noodles,word,food_drink,produces,noodles,NA,noodles,noodles
+item_118,nuts,word,food_drink,produces,nuts,NA,nuts,nut
+item_119,orange,word,food_drink,produces,orange,NA,orange,orange (food)
+item_120,pineapple,word,food_drink,produces,pineapple,NA,pineapple,pineapple
+item_121,pizza,word,food_drink,produces,pizza,NA,pizza,pizza
+item_122,popcorn,word,food_drink,produces,popcorn,NA,popcorn,popcorn
+item_123,potato,word,food_drink,produces,potato,NA,potato,potato
+item_124,potato_chip_crisps,word,food_drink,produces,potato chip/crisps,NA,potato chip/crisps,chips
+item_125,pudding,word,food_drink,produces,pudding,NA,pudding,pudding
+item_126,pumpkin,word,food_drink,produces,pumpkin,NA,pumpkin,pumpkin
+item_127,raisin,word,food_drink,produces,raisin,NA,raisin,raisin
+item_128,salt,word,food_drink,produces,salt,NA,salt,salt
+item_129,sandwich,word,food_drink,produces,sandwich,NA,sandwich,sandwich
+item_130,soup,word,food_drink,produces,soup,NA,soup,soup
+item_131,spaghetti,word,food_drink,produces,spaghetti,NA,spaghetti,spaghetti
+item_132,strawberry,word,food_drink,produces,strawberry,NA,strawberry,strawberry
+item_133,toast,word,food_drink,produces,toast,NA,toast,toast
+item_134,tomato_sauce,word,food_drink,produces,(tomato) sauce,NA,(tomato) sauce,sauce
+item_135,tuna,word,food_drink,produces,tuna,NA,tuna,tuna
+item_136,vanilla,word,food_drink,produces,vanilla,NA,vanilla,vanilla
+item_137,custard,word,food_drink,produces,custard,NA,custard,pudding
+item_138,doughnut,word,food_drink,produces,doughnut,NA,doughnut,pastry
+item_139,drink,word,food_drink,produces,drink,NA,drink,drink (beverage)
+item_140,egg,word,food_drink,produces,egg,NA,egg,egg
+item_141,pancake,word,food_drink,produces,pancake,NA,pancake,pancake
+item_142,pasta,word,food_drink,produces,pasta,NA,pasta,pasta
+item_143,peanut_butter,word,food_drink,produces,peanut butter,NA,peanut butter,peanut butter
+item_144,peas,word,food_drink,produces,peas,NA,peas,peas
+item_145,vegemite,word,food_drink,produces,vegemite,NA,vegemite,NA
+item_146,vitamins,word,food_drink,produces,vitamins,NA,vitamins,vitamin
+item_147,water,word,food_drink,produces,water,NA,water,water (beverage)
+item_148,yoghurt,word,food_drink,produces,yoghurt,NA,yoghurt,yogurt
+item_149,beanie,word,clothing,produces,beanie,NA,beanie,cap
+item_150,belt,word,clothing,produces,belt,NA,belt,belt
+item_151,bib,word,clothing,produces,bib,NA,bib,bib
+item_152,boots,word,clothing,produces,boot(s),NA,boot(s),boots
+item_153,button,word,clothing,produces,button,NA,button,button
+item_154,coat,word,clothing,produces,coat,NA,coat,coat
+item_155,dress,word,clothing,produces,dress,NA,dress,dress (object)
+item_156,hat,word,clothing,produces,hat,NA,hat,hat
+item_157,jacket,word,clothing,produces,jacket,NA,jacket,jacket
+item_158,jeans,word,clothing,produces,jeans,NA,jeans,jeans
+item_159,jumper,word,clothing,produces,jumper,NA,jumper,sweater
+item_160,nappy,word,clothing,produces,nappy,NA,nappy,diaper
+item_161,necklace,word,clothing,produces,necklace,NA,necklace,necklace
+item_162,pyjamas_jamies,word,clothing,produces,pyjamas/jamies,NA,pyjamas/jamies,pajamas
+item_163,pants,word,clothing,produces,pants,NA,pants,pants
+item_164,shirt,word,clothing,produces,shirt,NA,shirt,shirt
+item_165,shoes,word,clothing,produces,shoe(s),NA,shoe(s),shoe
+item_166,shorts,word,clothing,produces,shorts,NA,shorts,shorts
+item_167,slippers,word,clothing,produces,slipper(s),NA,slipper(s),slipper
+item_168,socks,word,clothing,produces,sock(s),NA,sock(s),sock
+item_169,sunglasses_sunnies,word,clothing,produces,sunglasses/sunnies,NA,sunglasses/sunnies,sunglasses
+item_170,thongs,word,clothing,produces,thongs,NA,thongs,sandal
+item_171,underpants_undies,word,clothing,produces,underpants/undies,NA,underpants/undies,underpants
+item_172,zipper,word,clothing,produces,zipper,NA,zipper,zipper
+item_173,ankle,word,body_parts,produces,ankle,NA,ankle,ankle
+item_174,arm,word,body_parts,produces,arm,NA,arm,arm
+item_175,bellybutton_navel,word,body_parts,produces,bellybutton/navel,NA,bellybutton/navel,belly button
+item_176,breasts,word,body_parts,produces,breasts,NA,breasts,breast
+item_177,bottom,word,body_parts,produces,bottom,NA,bottom,butt
+item_178,cheek,word,body_parts,produces,cheek,NA,cheek,cheek
+item_179,chin,word,body_parts,produces,chin,NA,chin,chin
+item_180,ear,word,body_parts,produces,ear,NA,ear,ear
+item_181,eye,word,body_parts,produces,eye,NA,eye,eye
+item_182,face,word,body_parts,produces,face,NA,face,face
+item_183,fingers,word,body_parts,produces,finger(s),NA,finger(s),finger
+item_184,foot_feet,word,body_parts,produces,foot/feet,NA,foot/feet,foot
+item_185,hair,word,body_parts,produces,hair,NA,hair,hair
+item_186,hand,word,body_parts,produces,hand,NA,hand,hand
+item_187,head,word,body_parts,produces,head,NA,head,head
+item_188,knee,word,body_parts,produces,knee,NA,knee,knee
+item_189,leg,word,body_parts,produces,leg,NA,leg,leg
+item_190,lips,word,body_parts,produces,lips,NA,lips,lip
+item_191,mouth,word,body_parts,produces,mouth,NA,mouth,mouth
+item_192,nails,word,body_parts,produces,nail(s),NA,nail(s),nail (body part)
+item_193,neck,word,body_parts,produces,neck,NA,neck,neck
+item_194,nose,word,body_parts,produces,nose,NA,nose,nose
+item_195,shoulder,word,body_parts,produces,shoulder,NA,shoulder,shoulder
+item_196,stomach_tummy,word,body_parts,produces,stomach/tummy,NA,stomach/tummy,tummy
+item_197,tooth_teeth,word,body_parts,produces,tooth/teeth,NA,tooth/teeth,tooth
+item_198,toes,word,body_parts,produces,toe(s),NA,toe(s),toe
+item_199,tongue,word,body_parts,produces,tongue,NA,tongue,tongue
+item_200,basket,word,household,produces,basket,NA,basket,basket
+item_201,bin,word,household,produces,bin,NA,bin,trash
+item_202,blanket,word,household,produces,blanket,NA,blanket,blanket
+item_203,bottle,word,household,produces,bottle,NA,bottle,bottle
+item_204,box,word,household,produces,box,NA,box,box
+item_205,bowl,word,household,produces,bowl,NA,bowl,bowl
+item_206,broom,word,household,produces,broom,NA,broom,broom
+item_207,brush,word,household,produces,brush,NA,brush,brush (object)
+item_208,bucket,word,household,produces,bucket,NA,bucket,bucket
+item_209,camera,word,household,produces,camera,NA,camera,camera
+item_210,can,word,household,produces,can,NA,can,can (object)
+item_211,garbage_rubbish,word,household,produces,garbage/rubbish,NA,garbage/rubbish,trash
+item_212,glass,word,household,produces,glass,NA,glass,glass
+item_213,hammer,word,household,produces,hammer,NA,hammer,hammer
+item_214,jar,word,household,produces,jar,NA,jar,jar
+item_215,keys,word,household,produces,keys,NA,keys,key
+item_216,knife,word,household,produces,knife,NA,knife,knife
+item_217,lamp,word,household,produces,lamp,NA,lamp,lamp
+item_218,light,word,household,produces,light,NA,light,light (object)
+item_219,medicine,word,household,produces,medicine,NA,medicine,medicine
+item_220,money,word,household,produces,money,NA,money,money
+item_221,mop,word,household,produces,mop,NA,mop,mop (object)
+item_222,plate,word,household,produces,plate,NA,plate,plate
+item_223,purse_wallet,word,household,produces,purse/wallet,NA,purse/wallet,purse
+item_224,radio,word,household,produces,radio,NA,radio,radio
+item_225,serviette_napkin,word,household,produces,serviette/napkin,NA,serviette/napkin,napkin
+item_226,scissors,word,household,produces,scissors,NA,scissors,scissors
+item_227,soap,word,household,produces,soap,NA,soap,soap
+item_228,spoon,word,household,produces,spoon,NA,spoon,spoon
+item_229,tape,word,household,produces,tape,NA,tape,tape (object)
+item_230,telephone_phone,word,household,produces,telephone/phone,NA,telephone/phone,telephone
+item_231,tissue,word,household,produces,tissue,NA,tissue,tissue
+item_232,toothbrush,word,household,produces,toothbrush,NA,toothbrush,toothbrush
+item_233,clock,word,household,produces,clock,NA,clock,clock
+item_234,comb,word,household,produces,comb,NA,comb,comb (object)
+item_235,cot,word,household,produces,cot,NA,cot,crib
+item_236,cup,word,household,produces,cup,NA,cup,cup
+item_237,dish,word,household,produces,dish,NA,dish,dish
+item_238,fork,word,household,produces,fork,NA,fork,fork
+item_239,mug,word,household,produces,mug,NA,mug,cup
+item_240,newspaper_paper,word,household,produces,newspaper/paper,NA,newspaper/paper,paper
+item_241,photo,word,household,produces,photo,NA,photo,photo
+item_242,picture,word,household,produces,picture,NA,picture,picture
+item_243,pillow,word,household,produces,pillow,NA,pillow,pillow
+item_244,plant,word,household,produces,plant,NA,plant,plant
+item_245,towel,word,household,produces,towel,NA,towel,towel
+item_246,tray,word,household,produces,tray,NA,tray,tray
+item_247,vacuum_cleaner,word,household,produces,vacuum cleaner,NA,vacuum cleaner,vacuum
+item_248,watch,word,household,produces,watch,NA,watch,watch (object)
+item_249,Bathroom,word,furniture_rooms,produces,Bathroom,NA,Bathroom,bathroom
+item_250,Bath_tub,word,furniture_rooms,produces,Bath (tub),NA,Bath (tub),bathtub
+item_251,bed,word,furniture_rooms,produces,bed,NA,bed,bed
+item_252,bedroom,word,furniture_rooms,produces,bedroom,NA,bedroom,bedroom
+item_253,bench,word,furniture_rooms,produces,bench,NA,bench,bench
+item_254,chair,word,furniture_rooms,produces,chair,NA,chair,chair
+item_255,computer,word,furniture_rooms,produces,computer,NA,computer,computer
+item_256,couch_lounge_sofa,word,furniture_rooms,produces,couch/lounge/sofa,NA,couch/lounge/sofa,couch
+item_257,crib,word,furniture_rooms,produces,crib,NA,crib,crib
+item_258,door,word,furniture_rooms,produces,door,NA,door,door
+item_259,drawer,word,furniture_rooms,produces,drawer,NA,drawer,drawer
+item_260,fridge,word,furniture_rooms,produces,fridge,NA,fridge,refrigerator
+item_261,garage,word,furniture_rooms,produces,garage,NA,garage,garage
+item_262,high_chair,word,furniture_rooms,produces,high chair,NA,high chair,high chair
+item_263,kitchen,word,furniture_rooms,produces,kitchen,NA,kitchen,kitchen
+item_264,living_lounge_room,word,furniture_rooms,produces,living/lounge room,NA,living/lounge room,living room
+item_265,oven_stove,word,furniture_rooms,produces,oven/stove,NA,oven/stove,oven
+item_266,play_pen,word,furniture_rooms,produces,play pen,NA,play pen,play pen
+item_267,potty,word,furniture_rooms,produces,potty,NA,potty,potty
+item_268,rocking_chair,word,furniture_rooms,produces,rocking chair,NA,rocking chair,rocking chair
+item_269,room,word,furniture_rooms,produces,room,NA,room,room
+item_270,shower,word,furniture_rooms,produces,shower,NA,shower,shower
+item_271,sink,word,furniture_rooms,produces,sink,NA,sink,sink
+item_272,stairs,word,furniture_rooms,produces,stairs,NA,stairs,stairs
+item_273,table,word,furniture_rooms,produces,table,NA,table,table
+item_274,TV,word,furniture_rooms,produces,TV,NA,TV,TV
+item_275,veranda/porch,word,furniture_rooms,produces,veranda/porch,NA,veranda/porch,porch
+item_276,wardrobe,word,furniture_rooms,produces,wardrobe,NA,wardrobe,closet
+item_277,washing_machine,word,furniture_rooms,produces,washing machine,NA,washing machine,washing machine
+item_278,window,word,furniture_rooms,produces,window,NA,window,window
+item_279,backyard,word,outside,produces,backyard,NA,backyard,backyard
+item_280,cloud,word,outside,produces,cloud,NA,cloud,cloud
+item_281,flag,word,outside,produces,flag,NA,flag,flag
+item_282,flower,word,outside,produces,flower,NA,flower,flower
+item_283,footpath,word,outside,produces,footpath,NA,footpath,sidewalk
+item_284,garden,word,outside,produces,garden,NA,garden,garden
+item_285,grass,word,outside,produces,grass,NA,grass,grass
+item_286,hose,word,outside,produces,hose,NA,hose,hose
+item_287,ladder,word,outside,produces,ladder,NA,ladder,ladder
+item_288,lawn_mower,word,outside,produces,lawn mower,NA,lawn mower,lawn mower
+item_289,moon,word,outside,produces,moon,NA,moon,moon
+item_290,pool,word,outside,produces,pool,NA,pool,pool
+item_291,rain,word,outside,produces,rain,NA,rain,rain
+item_292,rock,word,outside,produces,rock,NA,rock,rock (object)
+item_293,roof,word,outside,produces,roof,NA,roof,roof
+item_294,sandpit,word,outside,produces,sandpit,NA,sandpit,sandbox
+item_295,shed,word,outside,produces,shed,NA,shed,shed
+item_296,shovel,word,outside,produces,shovel,NA,shovel,shovel
+item_297,sky,word,outside,produces,sky,NA,sky,sky
+item_298,slide,word,outside,produces,slide,NA,slide,slide (object)
+item_299,sprinkler,word,outside,produces,sprinkler,NA,sprinkler,sprinkler
+item_300,star,word,outside,produces,star,NA,star,star
+item_301,stick,word,outside,produces,stick,NA,stick,stick
+item_302,stone,word,outside,produces,stone,NA,stone,stone
+item_303,street,word,outside,produces,street,NA,street,street
+item_304,sun,word,outside,produces,sun,NA,sun,sun
+item_305,swing,word,outside,produces,swing,NA,swing,swing (object)
+item_306,tree,word,outside,produces,tree,NA,tree,tree
+item_307,wall,word,outside,produces,wall,NA,wall,wall
+item_308,water,word,outside,produces,water,NA,water,water (not beverage)
+item_309,waves,word,outside,produces,waves,NA,waves,waves
+item_310,wind,word,outside,produces,wind,NA,wind,wind
+item_311,barbecue,word,places,produces,barbecue,NA,barbecue,NA
+item_312,beach,word,places,produces,beach,NA,beach,beach
+item_313,bush,word,places,produces,bush,NA,bush,country
+item_314,church_mosque,word,places,produces,church/mosque,NA,church/mosque,church
+item_315,city,word,places,produces,city,NA,city,town
+item_316,country,word,places,produces,country,NA,country,country
+item_317,home/house,word,places,produces,home/house,NA,home/house,house
+item_318,movies,word,places,produces,movies,NA,movies,movie
+item_319,outside,word,places,produces,outside,NA,outside,outside
+item_320,park,word,places,produces,park,NA,park,park
+item_321,party,word,places,produces,party,NA,party,party
+item_322,petrol_station,word,places,produces,petrol station,NA,petrol station,gas station
+item_323,playground,word,places,produces,playground,NA,playground,playground
+item_324,school_kindie_preschool,word,places,produces,school/kindie/preschool,NA,school/kindie/preschool,school
+item_325,shop,word,places,produces,shop,NA,shop,store
+item_326,show,word,places,produces,show,NA,show,show
+item_327,yard,word,places,produces,yard,NA,yard,yard
+item_328,work,word,places,produces,work,NA,work,work (place)
+item_329,farm,word,places,produces,farm,NA,farm,farm
+item_330,picnic,word,places,produces,picnic,NA,picnic,picnic
+item_331,zoo,word,places,produces,zoo,NA,zoo,zoo
+item_332,aunt,word,people,produces,aunt,NA,aunt,aunt
+item_333,baby,word,people,produces,baby,NA,baby,baby
+item_334,babysitter,word,people,produces,babysitter,NA,babysitter,babysitter
+item_335,boy,word,people,produces,boy,NA,boy,boy
+item_336,brother,word,people,produces,brother,NA,brother,brother
+item_337,child/kid,word,people,produces,child/kid,NA,child/kid,child
+item_338,childs_own_name,word,people,produces,child's own name,NA,child's own name,child's own name
+item_339,clown,word,people,produces,clown,NA,clown,clown
+item_340,cowboy,word,people,produces,cowboy,NA,cowboy,cowboy
+item_341,daddy,word,people,produces,daddy,NA,daddy,daddy
+item_342,doctor,word,people,produces,doctor,NA,doctor,doctor
+item_343,fireman,word,people,produces,fireman,NA,fireman,firefighter
+item_344,friend,word,people,produces,friend,NA,friend,friend
+item_345,friends_name,word,people,produces,friend's name,NA,friend's name,friends' names
+item_346,girl,word,people,produces,girl,NA,girl,girl
+item_347,grandma/nanna,word,people,produces,grandma/nanna,NA,grandma/nanna,grandma
+item_348,grandpa/pop,word,people,produces,grandpa/pop,NA,grandpa/pop,grandpa
+item_349,lady,word,people,produces,lady,NA,lady,lady
+item_350,man,word,people,produces,man,NA,man,man
+item_351,mummy,word,people,produces,mummy,NA,mummy,mommy
+item_352,nurse,word,people,produces,nurse,NA,nurse,nurse
+item_353,people,word,people,produces,people,NA,people,people
+item_354,person,word,people,produces,person,NA,person,person
+item_355,pets_name,word,people,produces,pet's name,NA,pet's name,pet's name
+item_356,policeman,word,people,produces,police(man),NA,police(man),police
+item_357,postman,word,people,produces,postman,NA,postman,mailman
+item_358,sister,word,people,produces,sister,NA,sister,sister
+item_359,teacher,word,people,produces,teacher,NA,teacher,teacher
+item_360,uncle,word,people,produces,uncle,NA,uncle,uncle
+item_361,bath,word,games_routines,produces,bath,NA,bath,bath
+item_362,breakfast,word,games_routines,produces,breakfast,NA,breakfast,breakfast
+item_363,call_phone,word,games_routines,produces,call(phone),NA,call(phone),call
+item_364,dinner,word,games_routines,produces,dinner,NA,dinner,dinner
+item_365,give_me_five,word,games_routines,produces,give me five!,NA,give me five!,give me five
+item_366,goodbye_bye_bye,word,games_routines,produces,goodbye/bye bye,NA,goodbye/bye bye,bye
+item_367,go_potty,word,games_routines,produces,go potty,NA,go potty,go potty
+item_368,hello,word,games_routines,produces,hello,NA,hello,hello
+item_369,hi,word,games_routines,produces,hi,NA,hi,hi
+item_370,hide_and_seek_hidie,word,games_routines,produces,hide and seek/hidie,NA,hide and seek/hidie,hide and seek
+item_371,lunch,word,games_routines,produces,lunch,NA,lunch,lunch
+item_372,nap,word,games_routines,produces,nap,NA,nap,nap
+item_373,night_night,word,games_routines,produces,night night,NA,night night,good night
+item_374,no_dont,word,games_routines,produces,no/don't,NA,no/don't,no
+item_375,patty_cake_pat-a-cake,word,games_routines,produces,patty cake/pat-a-cake,NA,patty cake/pat-a-cake,pattycake
+item_376,peekaboo,word,games_routines,produces,peekaboo,NA,peekaboo,peekaboo
+item_377,please,word,games_routines,produces,please,NA,please,please
+item_378,shh_shush_hush,word,games_routines,produces,shh/shush/hush,NA,shh/shush/hush,shh
+item_379,shopping,word,games_routines,produces,shopping,NA,shopping,shopping
+item_380,snack,word,games_routines,produces,snack,NA,snack,snack
+item_381,thank_you,word,games_routines,produces,thank you,NA,thank you,thank you
+item_382,wait,word,games_routines,produces,wait,NA,wait,wait
+item_383,want_to,word,games_routines,produces,want to,NA,want to,wanna
+item_384,yes,word,games_routines,produces,yes,NA,yes,yes
+item_385,bite,word,action_words,produces,bite,NA,bite,bite
+item_386,blow,word,action_words,produces,blow,NA,blow,blow
+item_387,break,word,action_words,produces,break,NA,break,break
+item_388,bring,word,action_words,produces,bring,NA,bring,bring
+item_389,build,word,action_words,produces,build,NA,build,build
+item_390,bump,word,action_words,produces,bump,NA,bump,bump
+item_391,buy,word,action_words,produces,buy,NA,buy,buy
+item_392,call,word,action_words,produces,call,NA,call,call
+item_393,carry,word,action_words,produces,carry,NA,carry,carry
+item_394,catch,word,action_words,produces,catch,NA,catch,catch
+item_395,chase,word,action_words,produces,chase,NA,chase,chase
+item_396,clap,word,action_words,produces,clap,NA,clap,clap
+item_397,clean,word,action_words,produces,clean,NA,clean,clean (action)
+item_398,drive,word,action_words,produces,drive,NA,drive,drive
+item_399,drink,word,action_words,produces,drink,NA,drink,drink (action)
+item_400,drop,word,action_words,produces,drop,NA,drop,drop
+item_401,dry,word,action_words,produces,dry,NA,dry,dry (action)
+item_402,dump,word,action_words,produces,dump,NA,dump,dump
+item_403,eat,word,action_words,produces,eat,NA,eat,eat
+item_404,fall,word,action_words,produces,fall,NA,fall,fall
+item_405,feed,word,action_words,produces,feed,NA,feed,feed
+item_406,find,word,action_words,produces,find,NA,find,find
+item_407,finish,word,action_words,produces,finish,NA,finish,finish
+item_408,fit,word,action_words,produces,fit,NA,fit,fit
+item_409,fix,word,action_words,produces,fix,NA,fix,fix
+item_410,get,word,action_words,produces,get,NA,get,get
+item_411,hug,word,action_words,produces,hug,NA,hug,hug
+item_412,hurry,word,action_words,produces,hurry,NA,hurry,hurry
+item_413,jump,word,action_words,produces,jump,NA,jump,jump
+item_414,kick,word,action_words,produces,kick,NA,kick,kick
+item_415,kiss,word,action_words,produces,kiss,NA,kiss,kiss
+item_416,knock,word,action_words,produces,knock,NA,knock,knock
+item_417,know,word,action_words,produces,know,NA,know,know
+item_418,lick,word,action_words,produces,lick,NA,lick,lick
+item_419,like,word,action_words,produces,like,NA,like,like
+item_420,listen,word,action_words,produces,listen,NA,listen,listen
+item_421,look,word,action_words,produces,look,NA,look,look
+item_422,love,word,action_words,produces,love,NA,love,love
+item_423,make,word,action_words,produces,make,NA,make,make
+item_424,read,word,action_words,produces,read,NA,read,read
+item_425,ride,word,action_words,produces,ride,NA,ride,ride
+item_426,rip,word,action_words,produces,rip,NA,rip,tear
+item_427,run,word,action_words,produces,run,NA,run,run
+item_428,say,word,action_words,produces,say,NA,say,say
+item_429,scratch,word,action_words,produces,scratch,NA,scratch,scratch
+item_430,see,word,action_words,produces,see,NA,see,see
+item_431,shake,word,action_words,produces,shake,NA,shake,shake
+item_432,share,word,action_words,produces,share,NA,share,share
+item_433,show,word,action_words,produces,show,NA,show,show
+item_434,shut,word,action_words,produces,shut,NA,shut,close
+item_435,sing,word,action_words,produces,sing,NA,sing,sing
+item_436,sit,word,action_words,produces,sit,NA,sit,sit
+item_437,sweep,word,action_words,produces,sweep,NA,sweep,sweep
+item_438,swim,word,action_words,produces,swim,NA,swim,swim
+item_439,swing,word,action_words,produces,swing,NA,swing,swing (action)
+item_440,take,word,action_words,produces,take,NA,take,take
+item_441,talk,word,action_words,produces,talk,NA,talk,talk
+item_442,taste,word,action_words,produces,taste,NA,taste,taste
+item_443,tear,word,action_words,produces,tear,NA,tear,tear
+item_444,tell,word,action_words,produces,tell,NA,tell,tell
+item_445,think,word,action_words,produces,think,NA,think,think
+item_446,throw,word,action_words,produces,throw,NA,throw,throw
+item_447,tickle,word,action_words,produces,tickle,NA,tickle,tickle
+item_448,touch,word,action_words,produces,touch,NA,touch,touch
+item_449,wake,word,action_words,produces,wake,NA,wake,wake
+item_450,climb,word,action_words,produces,climb,NA,climb,climb
+item_451,close,word,action_words,produces,close,NA,close,close
+item_452,cook,word,action_words,produces,cook,NA,cook,cook
+item_453,cover,word,action_words,produces,cover,NA,cover,cover (action)
+item_454,cry,word,action_words,produces,cry,NA,cry,cry
+item_455,cuddle,word,action_words,produces,cuddle,NA,cuddle,cuddle
+item_456,cut,word,action_words,produces,cut,NA,cut,cut
+item_457,dance,word,action_words,produces,dance,NA,dance,dance
+item_458,draw,word,action_words,produces,draw,NA,draw,draw
+item_459,give,word,action_words,produces,give,NA,give,give
+item_460,go,word,action_words,produces,go,NA,go,go
+item_461,hate,word,action_words,produces,hate,NA,hate,hate
+item_462,have,word,action_words,produces,have,NA,have,have
+item_463,hear,word,action_words,produces,hear,NA,hear,hear
+item_464,help,word,action_words,produces,help,NA,help,help
+item_465,hide,word,action_words,produces,hide,NA,hide,hide
+item_466,hit,word,action_words,produces,hit,NA,hit,hit
+item_467,hold,word,action_words,produces,hold,NA,hold,hold
+item_468,open,word,action_words,produces,open,NA,open,open (action)
+item_469,paint,word,action_words,produces,paint,NA,paint,paint (action)
+item_470,pick,word,action_words,produces,pick,NA,pick,pick
+item_471,play,word,action_words,produces,play,NA,play,play
+item_472,pour,word,action_words,produces,pour,NA,pour,pour
+item_473,pretend,word,action_words,produces,pretend,NA,pretend,pretend
+item_474,pull,word,action_words,produces,pull,NA,pull,pull
+item_475,push,word,action_words,produces,push,NA,push,push
+item_476,put,word,action_words,produces,put,NA,put,put
+item_477,sleep,word,action_words,produces,sleep,NA,sleep,sleep
+item_478,slide,word,action_words,produces,slide,NA,slide,slide (action)
+item_479,smell,word,action_words,produces,smell,NA,smell,smell
+item_480,smile,word,action_words,produces,smile,NA,smile,smile
+item_481,spill,word,action_words,produces,spill,NA,spill,spill
+item_482,splash,word,action_words,produces,splash,NA,splash,splash
+item_483,stand,word,action_words,produces,stand,NA,stand,stand
+item_484,stay,word,action_words,produces,stay,NA,stay,stay
+item_485,stop,word,action_words,produces,stop,NA,stop,stop
+item_486,walk,word,action_words,produces,walk,NA,walk,walk
+item_487,wash,word,action_words,produces,wash,NA,wash,wash
+item_488,watch,word,action_words,produces,watch,NA,watch,watch (action)
+item_489,wipe,word,action_words,produces,wipe,NA,wipe,wipe
+item_490,wish,word,action_words,produces,wish,NA,wish,wish
+item_491,work,word,action_words,produces,work,NA,work,work (action)
+item_492,write,word,action_words,produces,write,NA,write,write
+item_493,all_gone,word,descriptive_words,produces,all gone,NA,all gone,all gone
+item_494,asleep,word,descriptive_words,produces,asleep,NA,asleep,asleep
+item_495,awake,word,descriptive_words,produces,awake,NA,awake,awake
+item_496,bad,word,descriptive_words,produces,bad,NA,bad,bad
+item_497,better,word,descriptive_words,produces,better,NA,better,better
+item_498,big,word,descriptive_words,produces,big,NA,big,big
+item_499,black,word,descriptive_words,produces,black,NA,black,black
+item_500,blue,word,descriptive_words,produces,blue,NA,blue,blue
+item_501,broken,word,descriptive_words,produces,broken,NA,broken,broken
+item_502,brown,word,descriptive_words,produces,brown,NA,brown,brown
+item_503,careful,word,descriptive_words,produces,careful,NA,careful,careful
+item_504,clean,word,descriptive_words,produces,clean,NA,clean,clean (description)
+item_505,cold,word,descriptive_words,produces,cold,NA,cold,cold
+item_506,cute,word,descriptive_words,produces,cute,NA,cute,cute
+item_507,dark,word,descriptive_words,produces,dark,NA,dark,dark
+item_508,dirty,word,descriptive_words,produces,dirty,NA,dirty,dirty
+item_509,dry,word,descriptive_words,produces,dry,NA,dry,dry (description)
+item_510,easy,word,descriptive_words,produces,easy,NA,easy,easy
+item_511,empty,word,descriptive_words,produces,empty,NA,empty,empty
+item_512,fast,word,descriptive_words,produces,fast,NA,fast,fast
+item_513,fine,word,descriptive_words,produces,fine,NA,fine,fine
+item_514,first,word,descriptive_words,produces,first,NA,first,first
+item_515,full,word,descriptive_words,produces,full,NA,full,full
+item_516,gentle,word,descriptive_words,produces,gentle,NA,gentle,gentle
+item_517,good,word,descriptive_words,produces,good,NA,good,good
+item_518,green,word,descriptive_words,produces,green,NA,green,green
+item_519,happy,word,descriptive_words,produces,happy,NA,happy,happy
+item_520,hard,word,descriptive_words,produces,hard,NA,hard,hard
+item_521,heavy,word,descriptive_words,produces,heavy,NA,heavy,heavy
+item_522,high,word,descriptive_words,produces,high,NA,high,high
+item_523,hot,word,descriptive_words,produces,hot,NA,hot,hot
+item_524,hungry,word,descriptive_words,produces,hungry,NA,hungry,hungry
+item_525,hurt,word,descriptive_words,produces,hurt,NA,hurt,hurt (description)
+item_526,last,word,descriptive_words,produces,last,NA,last,last
+item_527,little,word,descriptive_words,produces,little,NA,little,little (description)
+item_528,long,word,descriptive_words,produces,long,NA,long,long
+item_529,loud,word,descriptive_words,produces,loud,NA,loud,loud
+item_530,mad,word,descriptive_words,produces,mad,NA,mad,angry
+item_531,nasty,word,descriptive_words,produces,nasty,NA,nasty,nasty
+item_532,naughty,word,descriptive_words,produces,naughty,NA,naughty,naughty
+item_533,new,word,descriptive_words,produces,new,NA,new,new
+item_534,nice,word,descriptive_words,produces,nice,NA,nice,nice
+item_535,noisy,word,descriptive_words,produces,noisy,NA,noisy,noisy
+item_536,old,word,descriptive_words,produces,old,NA,old,old
+item_537,orange,word,descriptive_words,produces,orange,NA,orange,orange (description)
+item_538,poor,word,descriptive_words,produces,poor,NA,poor,poor
+item_539,pretty,word,descriptive_words,produces,pretty,NA,pretty,pretty
+item_540,quiet,word,descriptive_words,produces,quiet,NA,quiet,quiet
+item_541,red,word,descriptive_words,produces,red,NA,red,red
+item_542,sad,word,descriptive_words,produces,sad,NA,sad,sad
+item_543,scared,word,descriptive_words,produces,scared,NA,scared,scared
+item_544,sick,word,descriptive_words,produces,sick,NA,sick,sick
+item_545,sleepy,word,descriptive_words,produces,sleepy,NA,sleepy,sleepy
+item_546,slow,word,descriptive_words,produces,slow,NA,slow,slow
+item_547,soft,word,descriptive_words,produces,soft,NA,soft,soft
+item_548,sticky,word,descriptive_words,produces,sticky,NA,sticky,sticky
+item_549,stuck,word,descriptive_words,produces,stuck,NA,stuck,stuck
+item_550,thirsty,word,descriptive_words,produces,thirsty,NA,thirsty,thirsty
+item_551,tiny,word,descriptive_words,produces,tiny,NA,tiny,little (description)
+item_552,tired,word,descriptive_words,produces,tired,NA,tired,tired
+item_553,wet,word,descriptive_words,produces,wet,NA,wet,wet (description)
+item_554,white,word,descriptive_words,produces,white,NA,white,white
+item_555,windy,word,descriptive_words,produces,windy,NA,windy,windy
+item_556,yellow,word,descriptive_words,produces,yellow,NA,yellow,yellow
+item_557,yucky,word,descriptive_words,produces,yucky,NA,yucky,yucky
+item_558,yummy,word,descriptive_words,produces,yummy,NA,yummy,yummy
+item_559,children,word_forms_nouns,NA,produces,children,NA,children,NA
+item_560,feet,word_forms_nouns,NA,produces,feet,NA,feet,NA
+item_561,men,word_forms_nouns,NA,produces,men,NA,men,NA
+item_562,mice,word_forms_nouns,NA,produces,mice,NA,mice,NA
+item_563,teeth,word_forms_nouns,NA,produces,teeth,NA,teeth,NA
+item_564,ate,word_forms_verbs,NA,produces,ate,NA,ate,NA
+item_565,blew,word_forms_verbs,NA,produces,blew,NA,blew,NA
+item_566,fell,word_forms_verbs,NA,produces,fell,NA,fell,NA
+item_567,flew,word_forms_verbs,NA,produces,flew,NA,flew,NA
+item_568,made,word_forms_verbs,NA,produces,made,NA,made,NA
+item_569,ran,word_forms_verbs,NA,produces,ran,NA,ran,NA
+item_570,bought,word_forms_verbs,NA,produces,bought,NA,bought,NA
+item_571,broke,word_forms_verbs,NA,produces,broke,NA,broke,NA
+item_572,came,word_forms_verbs,NA,produces,came,NA,came,NA
+item_573,drank,word_forms_verbs,NA,produces,drank,NA,drank,NA
+item_574,drove,word_forms_verbs,NA,produces,drove,NA,drove,NA
+item_575,got,word_forms_verbs,NA,produces,got,NA,got,NA
+item_576,had,word_forms_verbs,NA,produces,had,NA,had,NA
+item_577,heard,word_forms_verbs,NA,produces,heard,NA,heard,NA
+item_578,held,word_forms_verbs,NA,produces,held,NA,held,NA
+item_579,lost,word_forms_verbs,NA,produces,lost,NA,lost,NA
+item_580,sat,word_forms_verbs,NA,produces,sat,NA,sat,NA
+item_581,saw,word_forms_verbs,NA,produces,saw,NA,saw,NA
+item_582,took,word_forms_verbs,NA,produces,took,NA,took,NA
+item_583,went,word_forms_verbs,NA,produces,went,NA,went,NA
+item_584,blockses,word_endings_nouns,NA,produces,blockses,NA,blockses,NA
+item_585,chrildren_s,word_endings_nouns,NA,produces,chrildren s,NA,chrildren s,NA
+item_586,childs,word_endings_nouns,NA,produces,childs,NA,childs,NA
+item_587,feets,word_endings_nouns,NA,produces,feets,NA,feets,NA
+item_588,foots,word_endings_nouns,NA,produces,foots,NA,foots,NA
+item_589,mans,word_endings_nouns,NA,produces,mans,NA,mans,NA
+item_590,mens,word_endings_nouns,NA,produces,mens,NA,mens,NA
+item_591,mices,word_endings_nouns,NA,produces,mices,NA,mices,NA
+item_592,mouses,word_endings_nouns,NA,produces,mouses,NA,mouses,NA
+item_593,shoeses,word_endings_nouns,NA,produces,shoeses,NA,shoeses,NA
+item_594,sockses,word_endings_nouns,NA,produces,sockses,NA,sockses,NA
+item_595,teeths,word_endings_nouns,NA,produces,teeths,NA,teeths,NA
+item_596,toeses,word_endings_nouns,NA,produces,toeses,NA,toeses,NA
+item_597,tooths,word_endings_nouns,NA,produces,tooths,NA,tooths,NA
+item_598,ated,word_endings_verbs,NA,produces,ated,NA,ated,NA
+item_599,blewed,word_endings_verbs,NA,produces,blewed,NA,blewed,NA
+item_600,blowed,word_endings_verbs,NA,produces,blowed,NA,blowed,NA
+item_601,bringed,word_endings_verbs,NA,produces,bringed,NA,bringed,NA
+item_602,buyed,word_endings_verbs,NA,produces,buyed,NA,buyed,NA
+item_603,breaked,word_endings_verbs,NA,produces,breaked,NA,breaked,NA
+item_604,broked,word_endings_verbs,NA,produces,broked,NA,broked,NA
+item_605,camed,word_endings_verbs,NA,produces,camed,NA,camed,NA
+item_606,comed,word_endings_verbs,NA,produces,comed,NA,comed,NA
+item_607,doed,word_endings_verbs,NA,produces,doed,NA,doed,NA
+item_608,dranked,word_endings_verbs,NA,produces,dranked,NA,dranked,NA
+item_609,drinked,word_endings_verbs,NA,produces,drinked,NA,drinked,NA
+item_610,eated,word_endings_verbs,NA,produces,eated,NA,eated,NA
+item_611,falled,word_endings_verbs,NA,produces,falled,NA,falled,NA
+item_612,flied,word_endings_verbs,NA,produces,flied,NA,flied,NA
+item_613,getted,word_endings_verbs,NA,produces,getted,NA,getted,NA
+item_614,goed,word_endings_verbs,NA,produces,goed,NA,goed,NA
+item_615,gotted,word_endings_verbs,NA,produces,gotted,NA,gotted,NA
+item_616,haved,word_endings_verbs,NA,produces,haved,NA,haved,NA
+item_617,hearded,word_endings_verbs,NA,produces,hearded,NA,hearded,NA
+item_618,holded,word_endings_verbs,NA,produces,holded,NA,holded,NA
+item_619,losed,word_endings_verbs,NA,produces,losed,NA,losed,NA
+item_620,losted,word_endings_verbs,NA,produces,losted,NA,losted,NA
+item_621,maked,word_endings_verbs,NA,produces,maked,NA,maked,NA
+item_622,ranned,word_endings_verbs,NA,produces,ranned,NA,ranned,NA
+item_623,runned,word_endings_verbs,NA,produces,runned,NA,runned,NA
+item_624,seed,word_endings_verbs,NA,produces,seed,NA,seed,NA
+item_625,satted,word_endings_verbs,NA,produces,satted,NA,satted,NA
+item_626,sitted,word_endings_verbs,NA,produces,sitted,NA,sitted,NA
+item_627,taked,word_endings_verbs,NA,produces,taked,NA,taked,NA
+item_628,wented,word_endings_verbs,NA,produces,wented,NA,wented,NA

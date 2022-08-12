@@ -9,14 +9,14 @@ echo "Populating Instrument..."
 echo "Populating Category..."
 ./manage.py populate_category
 
-echo "Populating ItemInfo and ItemMap..."
+echo "Populating Item and UniLemma..."
 ./manage.py populate_items
 
 echo "Populating Source..."
 ./manage.py populate_source
 
-echo "Populating MomEd..."
-./manage.py populate_momed
+echo "Populating CaregiverEducation..."
+./manage.py populate_caregiver_education
 
 echo "Importing data..."
 ./manage.py import_all_datasets

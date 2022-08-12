@@ -5,7 +5,7 @@ from collections import defaultdict
 from instruments.utils import get_instrument_model
 
 # Populates the CategorySize objects with each data_id entry's Administration object and number of words
-# produced/comprehended in each Category by that object's data_id entry in the corresponding instruments model.
+# produced/comprehended in each ItemCategory by that object's data_id entry in the corresponding instruments model.
 # Given no arguments, does so for all instruments in 'static/json/instruments.json'.
 # Given a language with -l and a form with -f, does so for only their Instrument object.
 class Command(BaseCommand):
@@ -37,7 +37,7 @@ class Command(BaseCommand):
             
             instrument_model = get_instrument_model(instrument.language,instrument.form)
             instrument_table = instrument_model._meta.db_table
-            all_words = ItemInfo.objects.filter(instrument = instrument.pk, type = 'word', category_id__isnull=False) #isnull condition added for TEDS Twos
+            all_words = Item.objects.filter(instrument = instrument.pk, type = 'word', category_id__isnull=False) #isnull condition added for TEDS Twos
             
             category_words = defaultdict(list)
             for word in all_words:
@@ -65,13 +65,9 @@ class Command(BaseCommand):
 
                 sizes = instrument_model.objects.raw(query)
                 def create_size(s):
-                    #admin = Administration.objects.get(data_id = s.basetable_ptr_id)
-                    cat = Category.objects.get(pk = category)
+                    cat = ItemCategory.objects.get(pk = category)
                     CategorySize.objects.create(data_id = s.basetable_ptr_id,
-                                                category = cat,
+                                                item_category_id = cat,
                                                 production = s.production,
                                                 comprehension = s.comprehension)
-#                    admin.production = s.production
-#                    admin.comprehension = s.comprehension
-#                    admin.save()
                 map(create_size, sizes)

@@ -1,0 +1,18 @@
+type,value,data_value
+sex,M,1
+sex,F,2
+mom_ed,None,1
+mom_ed,Primary,2
+mom_ed,Some Secondary,3
+mom_ed,Secondary,4
+mom_ed,Some College,5
+mom_ed,College,6
+mom_ed,Some Graduate,7
+mom_ed,Graduate,8
+word,produces,1
+word,,0
+word_endings_verbs,produces,1
+word_endings_verbs,,0
+complexity,complex,2
+complexity,simple,1
+complexity,,0

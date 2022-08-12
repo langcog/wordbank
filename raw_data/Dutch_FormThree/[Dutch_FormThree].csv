@@ -1,0 +1,101 @@
+itemID,category,definition,choices,item,type,gloss,uni_lemma
+item_1,animals,ezel,produces;doesn't produce,ezel,word,donkey,donkey
+item_2,toys,kralen/parels,produces;doesn't produce,kralen/parels,word,beads,bead
+item_3,food_drink,kauwgom,produces;doesn't produce,kauwgom,word,chewing gum,gum
+item_4,food_drink,saus,produces;doesn't produce,saus,word,sauce,sauce
+item_5,food_drink,toast/geroosterdbrood,produces;doesn't produce,toast/geroosterdbrood,word,toast,toast
+item_6,food_drink,zout,produces;doesn't produce,zout,word,salt,salt
+item_7,body_parts,duim,produces;doesn't produce,duim,word,thumb,thumb
+item_8,body_parts,gezicht,produces;doesn't produce,gezicht,word,face,face
+item_9,household,computer,produces;doesn't produce,computer,word,computer,computer
+item_10,household,glas,produces;doesn't produce,glas,word,glass,glass
+item_11,furniture_rooms,keuken,produces;doesn't produce,keuken,word,kitchen,kitchen
+item_12,furniture_rooms,terras,produces;doesn't produce,terras,word,terrace,terrace
+item_13,outside,ladder,produces;doesn't produce,ladder,word,ladder,ladder
+item_14,outside,wolk,produces;doesn't produce,wolk,word,cloud,cloud
+item_15,places,camping,produces;doesn't produce,camping,word,camping,camping
+item_16,places,dierentuin/zoo,produces;doesn't produce,dierentuin/zoo,word,zoo,zoo
+item_17,people,cowboy,produces;doesn't produce,cowboy,word,cowboy,cowboy
+item_18,people,kind(je),produces;doesn't produce,kind(je),word,child,child
+item_19,descriptive_words,kwaad/boos,produces;doesn't produce,kwaad/boos,word,angry/mad,angry
+item_20,descriptive_words,lang,produces;doesn't produce,lang,word,long/tall,long
+item_21,descriptive_words,leeg,produces;doesn't produce,leeg,word,empty,empty
+item_22,descriptive_words,oranje,produces;doesn't produce,oranje,word,orange,orange (description)
+item_23,action_words,denken,produces;doesn't produce,denken,word,to think,think
+item_24,action_words,haten,produces;doesn't produce,haten,word,to hate,hate
+item_25,action_words,latenvallen,produces;doesn't produce,latenvallen,word,to drop,drop
+item_26,action_words,vastmaken,produces;doesn't produce,vastmaken,word,to fix,fix
+item_27,time_words,gisteren,produces;doesn't produce,gisteren,word,yesterday,yesterday
+item_28,time_words,vandaag,produces;doesn't produce,vandaag,word,today,today
+item_29,pronouns,deze,produces;doesn't produce,deze,word,this,this
+item_30,pronouns,hun,produces;doesn't produce,hun,word,them,3PL
+item_31,pronouns,jezelf,produces;doesn't produce,jezelf,word,yourself,2SG.REFL
+item_32,question_words,waarom,produces;doesn't produce,waarom,word,why,why
+item_33,locations,over,produces;doesn't produce,over,word,over,over
+item_34,quantifiers,geenenkele,produces;doesn't produce,geenenkele,word,not any,none
+item_35,connecting_words,dan,produces;doesn't produce,dan,word,then,then
+item_36,connecting_words,omdat,produces;doesn't produce,omdat,word,because,because
+item_37,locations,weg,produces;doesn't produce,weg,word,away,away
+item_38,animals,dino(saurus),produces;doesn't produce,dino(saurus),word,dinosaur,dinosaur
+item_39,animals,hert,produces;doesn't produce,hert,word,deer,deer
+item_40,places,kasteel,produces;doesn't produce,kasteel,word,castle,castle
+item_41,toys,trom(mel),produces;doesn't produce,trom(mel),word,drum,drum (object)
+item_42,toys,voetbal,produces;doesn't produce,voetbal,word,football,football
+item_43,toys,microscoop,produces;doesn't produce,microscoop,word,microscope,microscope
+item_44,toys,driewieler,produces;doesn't produce,driewieler,word,tricycle,bicycle
+item_45,toys,(wind)vlieger,produces;doesn't produce,(wind)vlieger,word,kite,kite
+item_46,toys,wagon,produces;doesn't produce,wagon,word,wagon,wagon
+item_47,food_drink,citroen,produces;doesn't produce,citroen,word,lemon,lemon
+item_48,food_drink,pindanoot,produces;doesn't produce,pindanoot,word,peanut,peanut
+item_49,food_drink,groente,produces;doesn't produce,groente,word,vegetable,vegetable
+item_50,clothing,jeans(broek),produces;doesn't produce,jeans(broek),word,jeans,jeans
+item_51,body_parts,elleboog,produces;doesn't produce,elleboog,word,elbow,elbow
+item_52,body_parts,(vinger)nagel,produces;doesn't produce,(vinger)nagel,word,nail,nail (finger)
+item_53,household,blinddoek,produces;doesn't produce,blinddoek,word,blindfold,blindfold
+item_54,household,beker/tas,produces;doesn't produce,beker/tas,word,cup/bag,cup/bag
+item_55,household,materiaal,produces;doesn't produce,materiaal,word,material,material
+item_56,household,postzegel,produces;doesn't produce,postzegel,word,stamp,postage stamp
+item_57,furniture_rooms,band(vanwiel),produces;doesn't produce,band(vanwiel),word,tire,tire
+item_58,furniture_rooms,meubels,produces;doesn't produce,meubels,word,furniture,furniture
+item_59,furniture_rooms,zetel/sofa,produces;doesn't produce,zetel/sofa,word,sofa,couch
+item_60,furniture_rooms,hek/omheining,produces;doesn't produce,hek/omheining,word,fence,fence
+item_61,furniture_rooms,tuinslang,produces;doesn't produce,tuinslang,word,garden hose,hose
+item_62,outside,trottoir/stoep/voetpad,produces;doesn't produce,trottoir/stoep/voetpad,word,sidewalk,sidewalk
+item_63,people,familie,produces;doesn't produce,familie,word,family,family
+item_64,people,boer,produces;doesn't produce,boer,word,farmer,farmer
+item_65,quantifiers,niemand,produces;doesn't produce,niemand,word,no-one,nobody
+item_66,people,verpleegster,produces;doesn't produce,verpleegster,word,nurse,nurse
+item_67,other,ongeval,produces;doesn't produce,ongeval,word,accident,accident
+item_68,other,cirkel,produces;doesn't produce,cirkel,word,circle,circle
+item_69,other,idee,produces;doesn't produce,idee,word,idea,idea
+item_70,action_words,(op)vangen,produces;doesn't produce,(op)vangen,word,to catch,catch
+item_71,action_words,vergeten,produces;doesn't produce,vergeten,word,to forget,forger
+item_72,action_words,haasten,produces;doesn't produce,haasten,word,to hurry up,hurry
+item_73,action_words,verlaten,produces;doesn't produce,verlaten,word,to leave (behind),leave (behind)
+item_74,action_words,meten,produces;doesn't produce,meten,word,to measure,measure
+item_75,action_words,schillen,produces;doesn't produce,schillen,word,to peel,peel
+item_76,action_words,beloven,produces;doesn't produce,beloven,word,to promise,promise
+item_77,action_words,rolschaatsen,produces;doesn't produce,rolschaatsen,word,to ice skate,skate (action)
+item_78,action_words,niezen,produces;doesn't produce,niezen,word,to sneeze,sneeze
+item_79,action_words,tuimelen/koprollen,produces;doesn't produce,tuimelen/koprollen,word,to tumble,"tu,ble"
+item_80,action_words,poetsen/kuisen,produces;doesn't produce,poetsen/kuisen,word,to polish,polish
+item_81,action_words,vervelen,produces;doesn't produce,vervelen,word,to get/be bored,be bored
+item_82,descriptive_words,diep,produces;doesn't produce,diep,word,deep,deep
+item_83,descriptive_words,verschillend,produces;doesn't produce,verschillend,word,different/differing,different
+item_84,descriptive_words,duur,produces;doesn't produce,duur,word,expensive,expensive
+item_85,descriptive_words,fijn,produces;doesn't produce,fijn,word,nice,nice
+item_86,descriptive_words,half,produces;doesn't produce,half,word,half,half
+item_87,descriptive_words,verloren,produces;doesn't produce,verloren,word,lost,lost
+item_88,descriptive_words,bijzonder,produces;doesn't produce,bijzonder,word,special,special
+item_89,locations,ervoor(plaats),produces;doesn't produce,ervoor(plaats),word,in front of,in front of
+item_90,time_words,week,produces;doesn't produce,week,word,week,weel
+item_91,pronouns,zij/ze,produces;doesn't produce,zij/ze,word,she,3SG
+item_92,locations,erboven,produces;doesn't produce,erboven,word,above,above
+item_93,locations,tussen,produces;doesn't produce,tussen,word,between,between
+item_94,locations,bovenin,produces;doesn't produce,bovenin,word,above,above
+item_95,quantifiers,elk,produces;doesn't produce,elk,word,each,each
+item_96,helping_verbs,mogen,produces;doesn't produce,mogen,word,may/can,may
+item_97,helping_verbs,nodigzijn,produces;doesn't produce,nodigzijn,word,to be needed/necessary,to be needed
+item_98,other,waren,produces;doesn't produce,waren,word,were,be
+item_99,connecting_words,hoewel,produces;doesn't produce,hoewel,word,although,although
+item_100,connecting_words,eigenlijk,produces;doesn't produce,eigenlijk,word,actually,actually

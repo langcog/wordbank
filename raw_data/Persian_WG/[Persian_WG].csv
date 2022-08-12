@@ -1,0 +1,834 @@
+itemID,item,definition,category,type,choices,complexity_category,gloss,uni_lemma
+item_34,S1,آخ,sounds,word,understands; produces,NA,NA,NA
+item_35,S2,اَخ/ اَه/ کخ/گخ,sounds,word,understands; produces,NA,NA,NA
+item_36,S3,بَه بَه / م...م,sounds,word,understands; produces,NA,NA,NA
+item_37,S4,بع بع,sounds,word,understands; produces,NA,NA,NA
+item_38,S5,بیب بیب,sounds,word,understands; produces,NA,NA,NA
+item_39,S6,پیف,sounds,word,understands; produces,NA,NA,NA
+item_40,S7,جیز/اُخ/ اُخه,sounds,word,understands; produces,NA,NA,NA
+item_41,S8,جیک جیک,sounds,word,understands; produces,NA,NA,NA
+item_42,S9,میو میو,sounds,word,understands; produces,NA,NA,NA
+item_43,S10,وای,sounds,word,understands; produces,NA,NA,NA
+item_44,S11,هاپ هاپ,sounds,word,understands; produces,NA,NA,NA
+item_45,S12,هوهو چی چی,sounds,word,understands; produces,NA,NA,NA
+item_46,N1,آهو,animals,word,understands; produces,NA,NA,NA
+item_47,N2,اسب,animals,word,understands; produces,NA,NA,NA
+item_48,N3,الاغ,animals,word,understands; produces,NA,NA,NA
+item_49,N4,بره,animals,word,understands; produces,NA,NA,NA
+item_50,N5,پروانه,animals,word,understands; produces,NA,NA,NA
+item_51,N6,پرنده/ توتو,animals,word,understands; produces,NA,NA,NA
+item_52,N7,پنگوئن,animals,word,understands; produces,NA,NA,NA
+item_53,N8,جوجه,animals,word,understands; produces,NA,NA,NA
+item_54,N9,حشره,animals,word,understands; produces,NA,NA,NA
+item_55,N10,خرس,animals,word,understands; produces,NA,NA,NA
+item_56,N11,خرگوش,animals,word,understands; produces,NA,NA,NA
+item_57,N12,خروس,animals,word,understands; produces,NA,NA,NA
+item_58,N13,روباه,animals,word,understands; produces,NA,NA,NA
+item_59,N14,زرافه,animals,word,understands; produces,NA,NA,NA
+item_60,N15,زنبور,animals,word,understands; produces,NA,NA,NA
+item_61,N16,سگ,animals,word,understands; produces,NA,NA,NA
+item_62,N17,سنجاب,animals,word,understands; produces,NA,NA,NA
+item_63,N18,شتر,animals,word,understands; produces,NA,NA,NA
+item_64,N19,شیر,animals,word,understands; produces,NA,NA,NA
+item_65,N20,غاز,animals,word,understands; produces,NA,NA,NA
+item_66,N21,فیل,animals,word,understands; produces,NA,NA,NA
+item_67,N22,قورباغه,animals,word,understands; produces,NA,NA,NA
+item_68,N23,کبوتر,animals,word,understands; produces,NA,NA,NA
+item_69,N24,کلاغ,animals,word,understands; produces,NA,NA,NA
+item_70,N25,گاو,animals,word,understands; produces,NA,NA,NA
+item_71,N26,گربه,animals,word,understands; produces,NA,NA,NA
+item_72,N27,گنجشک,animals,word,understands; produces,NA,NA,NA
+item_73,N28,گوسفند,animals,word,understands; produces,NA,NA,NA
+item_74,N29,لاک پشت,animals,word,understands; produces,NA,NA,NA
+item_75,N30,ماهی,animals,word,understands; produces,NA,NA,NA
+item_76,N31,مار,animals,word,understands; produces,NA,NA,NA
+item_77,N32,مرغ,animals,word,understands; produces,NA,NA,NA
+item_78,N33,مگس,animals,word,understands; produces,NA,NA,NA
+item_79,N34,مورچه,animals,word,understands; produces,NA,NA,NA
+item_80,N35,موش,animals,word,understands; produces,NA,NA,NA
+item_81,N36,میمون,animals,word,understands; produces,NA,NA,NA
+item_82,O1,اتوبوس,vehicles,word,understands; produces,NA,NA,NA
+item_83,O2,دوچرخه,vehicles,word,understands; produces,NA,NA,NA
+item_84,O3,قطار,vehicles,word,understands; produces,NA,NA,NA
+item_85,O4,کامیون,vehicles,word,understands; produces,NA,NA,NA
+item_86,O5,کشتی / قایق,vehicles,word,understands; produces,NA,NA,NA
+item_87,O6,ماشین,vehicles,word,understands; produces,NA,NA,NA
+item_88,O7,موتور,vehicles,word,understands; produces,NA,NA,NA
+item_89,O8,هلی کوپتر,vehicles,word,understands; produces,NA,NA,NA
+item_90,O9,هواپیما,vehicles,word,understands; produces,NA,NA,NA
+item_91,P1,اسباب بازی,toys,word,understands; produces,NA,NA,NA
+item_92,P2,بادکنک,toys,word,understands; produces,NA,NA,NA
+item_93,P3,تفنگ,toys,word,understands; produces,NA,NA,NA
+item_94,P4,توپ,toys,word,understands; produces,NA,NA,NA
+item_95,P5,جغجغه,toys,word,understands; produces,NA,NA,NA
+item_96,P6,عروسک,toys,word,understands; produces,NA,NA,NA
+item_97,P7,کتاب,toys,word,understands; produces,NA,NA,NA
+item_98,P8,مکعب/ لگو,toys,word,understands; produces,NA,NA,NA
+item_99,F1,آب,food_drink,word,understands; produces,NA,NA,NA
+item_100,F2,آب میوه,food_drink,word,understands; produces,NA,NA,NA
+item_101,F3,آب نبات/ شکلات,food_drink,word,understands; produces,NA,NA,NA
+item_102,F4,آش,food_drink,word,understands; produces,NA,NA,NA
+item_103,F5,برنج/ پلو,food_drink,word,understands; produces,NA,NA,NA
+item_104,F6,بیسکویت,food_drink,word,understands; produces,NA,NA,NA
+item_105,F7,بستنی,food_drink,word,understands; produces,NA,NA,NA
+item_106,F8,پفک,food_drink,word,understands; produces,NA,NA,NA
+item_107,F9,پنیر,food_drink,word,understands; produces,NA,NA,NA
+item_108,F10,پرتقال,food_drink,word,understands; produces,NA,NA,NA
+item_109,F11,تخم مرغ,food_drink,word,understands; produces,NA,NA,NA
+item_110,F12,چای,food_drink,word,understands; produces,NA,NA,NA
+item_111,F13,سوپ,food_drink,word,understands; produces,NA,NA,NA
+item_112,F14,سیب,food_drink,word,understands; produces,NA,NA,NA
+item_113,F15,شربت,food_drink,word,understands; produces,NA,NA,NA
+item_114,F16,شیر,food_drink,word,understands; produces,NA,NA,NA
+item_115,F17,شیرینی,food_drink,word,understands; produces,NA,NA,NA
+item_116,F18,غذا,food_drink,word,understands; produces,NA,NA,NA
+item_117,F19,قند,food_drink,word,understands; produces,NA,NA,NA
+item_118,F20,کیک,food_drink,word,understands; produces,NA,NA,NA
+item_119,F21,گردو,food_drink,word,understands; produces,NA,NA,NA
+item_120,F22,گوشت,food_drink,word,understands; produces,NA,NA,NA
+item_121,F23,ماهی,food_drink,word,understands; produces,NA,NA,NA
+item_122,F24,ماکارونی,food_drink,word,understands; produces,NA,NA,NA
+item_123,F25,مربا,food_drink,word,understands; produces,NA,NA,NA
+item_124,F26,موز,food_drink,word,understands; produces,NA,NA,NA
+item_125,F27,میوه,food_drink,word,understands; produces,NA,NA,NA
+item_126,F28,نان,food_drink,word,understands; produces,NA,NA,NA
+item_127,F29,نوشابه,food_drink,word,understands; produces,NA,NA,NA
+item_128,F30,هویج,food_drink,word,understands; produces,NA,NA,NA
+item_129,J1,بلوز,clothing,word,understands; produces,NA,NA,NA
+item_130,J2,پوشک,clothing,word,understands; produces,NA,NA,NA
+item_131,J3,پیش بند,clothing,word,understands; produces,NA,NA,NA
+item_132,J4,پیراهن,clothing,word,understands; produces,NA,NA,NA
+item_133,J5,تسبیح,clothing,word,understands; produces,NA,NA,NA
+item_134,J6,جوراب,clothing,word,understands; produces,NA,NA,NA
+item_135,J7,چادر,clothing,word,understands; produces,NA,NA,NA
+item_136,J8,دکمه,clothing,word,understands; produces,NA,NA,NA
+item_137,J9,دامن,clothing,word,understands; produces,NA,NA,NA
+item_138,J10,دمپایی,clothing,word,understands; produces,NA,NA,NA
+item_139,J11,دستکش,clothing,word,understands; produces,NA,NA,NA
+item_140,J12,روسری,clothing,word,understands; produces,NA,NA,NA
+item_141,J13,زیپ,clothing,word,understands; produces,NA,NA,NA
+item_142,J14,شال,clothing,word,understands; produces,NA,NA,NA
+item_143,J15,شلوار,clothing,word,understands; produces,NA,NA,NA
+item_144,J16,شورت,clothing,word,understands; produces,NA,NA,NA
+item_145,J17,کاپشن,clothing,word,understands; produces,NA,NA,NA
+item_146,J18,کت,clothing,word,understands; produces,NA,NA,NA
+item_147,J19,کفش,clothing,word,understands; produces,NA,NA,NA
+item_148,J20,کلاه,clothing,word,understands; produces,NA,NA,NA
+item_149,J21,لباس,clothing,word,understands; produces,NA,NA,NA
+item_150,J22,مانتو,clothing,word,understands; produces,NA,NA,NA
+item_151,K1,ابرو,body_parts,word,understands; produces,NA,NA,NA
+item_152,K2,انگشت,body_parts,word,understands; produces,NA,NA,NA
+item_153,K3,باسن,body_parts,word,understands; produces,NA,NA,NA
+item_154,K4,بدن/ تن,body_parts,word,understands; produces,NA,NA,NA
+item_155,K5,بینی,body_parts,word,understands; produces,NA,NA,NA
+item_156,K6,پا,body_parts,word,understands; produces,NA,NA,NA
+item_157,K7,چشم,body_parts,word,understands; produces,NA,NA,NA
+item_158,K8,دست,body_parts,word,understands; produces,NA,NA,NA
+item_159,K9,دندان,body_parts,word,understands; produces,NA,NA,NA
+item_160,K10,دهان,body_parts,word,understands; produces,NA,NA,NA
+item_161,K11,دل/ شکم,body_parts,word,understands; produces,NA,NA,NA
+item_162,K12,زبان,body_parts,word,understands; produces,NA,NA,NA
+item_163,K13,سر / کله,body_parts,word,understands; produces,NA,NA,NA
+item_164,K14,صورت,body_parts,word,understands; produces,NA,NA,NA
+item_165,K15,گوش,body_parts,word,understands; produces,NA,NA,NA
+item_166,K16,لب,body_parts,word,understands; produces,NA,NA,NA
+item_167,K17,لُپ,body_parts,word,understands; produces,NA,NA,NA
+item_168,K18,مو,body_parts,word,understands; produces,NA,NA,NA
+item_169,K19,ناخن,body_parts,word,understands; produces,NA,NA,NA
+item_170,K20,ناف,body_parts,word,understands; produces,NA,NA,NA
+item_171,H1,اتاق خواب,furniture_rooms,word,understands; produces,NA,NA,NA
+item_172,H2,آشپزخانه,furniture_rooms,word,understands; produces,NA,NA,NA
+item_173,H3,آینه,furniture_rooms,word,understands; produces,NA,NA,NA
+item_174,H4,بالش,furniture_rooms,word,understands; produces,NA,NA,NA
+item_175,H5,بخاری,furniture_rooms,word,understands; produces,NA,NA,NA
+item_176,H6,پله/ راه پله,furniture_rooms,word,understands; produces,NA,NA,NA
+item_177,H7,پرده,furniture_rooms,word,understands; produces,NA,NA,NA
+item_178,H8,پنجره,furniture_rooms,word,understands; produces,NA,NA,NA
+item_179,H9,ختخواب/رختخواب/تخت,furniture_rooms,word,understands; produces,NA,NA,NA
+item_180,H10,تلویزیون,furniture_rooms,word,understands; produces,NA,NA,NA
+item_181,H11,حمام,furniture_rooms,word,understands; produces,NA,NA,NA
+item_182,H12,در,furniture_rooms,word,understands; produces,NA,NA,NA
+item_183,H13,دیوار,furniture_rooms,word,understands; produces,NA,NA,NA
+item_184,H14,دستشویی,furniture_rooms,word,understands; produces,NA,NA,NA
+item_185,H15,شیر آب,furniture_rooms,word,understands; produces,NA,NA,NA
+item_186,H16,صندلی,furniture_rooms,word,understands; produces,NA,NA,NA
+item_187,H17,ضبط,furniture_rooms,word,understands; produces,NA,NA,NA
+item_188,H18,فرش,furniture_rooms,word,understands; produces,NA,NA,NA
+item_189,H19,کامپیوتر,furniture_rooms,word,understands; produces,NA,NA,NA
+item_190,H20,کمد,furniture_rooms,word,understands; produces,NA,NA,NA
+item_191,H21,گاز,furniture_rooms,word,understands; produces,NA,NA,NA
+item_192,H22,گهواره,furniture_rooms,word,understands; produces,NA,NA,NA
+item_193,H23,میز,furniture_rooms,word,understands; produces,NA,NA,NA
+item_194,H24,یخچال,furniture_rooms,word,understands; produces,NA,NA,NA
+item_195,T1,آشغال,household,word,understands; produces,NA,NA,NA
+item_196,T2,بشقاب,household,word,understands; produces,NA,NA,NA
+item_197,T3,پارچ,household,word,understands; produces,NA,NA,NA
+item_198,T4,پتو,household,word,understands; produces,NA,NA,NA
+item_199,T5,پستانک,household,word,understands; produces,NA,NA,NA
+item_200,T6,پول,household,word,understands; produces,NA,NA,NA
+item_201,T7,تشت/ لگن,household,word,understands; produces,NA,NA,NA
+item_202,T8,تلفن,household,word,understands; produces,NA,NA,NA
+item_203,T9,جارو/ جاروبرقی,household,word,understands; produces,NA,NA,NA
+item_204,T10,جعبه,household,word,understands; produces,NA,NA,NA
+item_205,T11,چاقو,household,word,understands; produces,NA,NA,NA
+item_206,T12,چنگال,household,word,understands; produces,NA,NA,NA
+item_207,T13,حوله,household,word,understands; produces,NA,NA,NA
+item_208,T14,دارو/ دوا,household,word,understands; produces,NA,NA,NA
+item_209,T15,ساعت,household,word,understands; produces,NA,NA,NA
+item_210,T16,سطل,household,word,understands; produces,NA,NA,NA
+item_211,T17,سفره,household,word,understands; produces,NA,NA,NA
+item_212,T18,سینی,household,word,understands; produces,NA,NA,NA
+item_213,T19,شانه,body_parts,word,understands; produces,NA,NA,NA
+item_214,T20,شامپو,household,word,understands; produces,NA,NA,NA
+item_215,T21,شیشه شیر,household,word,understands; produces,NA,NA,NA
+item_216,T22,صابون,household,word,understands; produces,NA,NA,NA
+item_217,T23,ظرف,household,word,understands; produces,NA,NA,NA
+item_218,T24,عکس,household,word,understands; produces,NA,NA,NA
+item_219,T25,عینک,household,word,understands; produces,NA,NA,NA
+item_220,T26,فنجان,household,word,understands; produces,NA,NA,NA
+item_221,T27,قاشق,household,word,understands; produces,NA,NA,NA
+item_222,T28,قندان,household,word,understands; produces,NA,NA,NA
+item_223,T29,قوری,household,word,understands; produces,NA,NA,NA
+item_224,T30,کاسه,household,word,understands; produces,NA,NA,NA
+item_225,T31,کلید,household,word,understands; produces,NA,NA,NA
+item_226,T32,گل/ گلدان,household,word,understands; produces,NA,NA,NA
+item_227,T33,لامپ/ چراغ,household,word,understands; produces,NA,NA,NA
+item_228,T34,لیوان,household,word,understands; produces,NA,NA,NA
+item_229,T35,مسواک,household,word,understands; produces,NA,NA,NA
+item_230,T36,نمکدان,household,word,understands; produces,NA,NA,NA
+item_231,M1,آتش,outside,word,understands; produces,NA,NA,NA
+item_232,M2,آسمان,outside,word,understands; produces,NA,NA,NA
+item_233,M3,الاکلنگ,outside,word,understands; produces,NA,NA,NA
+item_234,M4,بازار,outside,word,understands; produces,NA,NA,NA
+item_235,M5,باغ,outside,word,understands; produces,NA,NA,NA
+item_236,M6,باران,outside,word,understands; produces,NA,NA,NA
+item_237,M7,باغچه,outside,word,understands; produces,NA,NA,NA
+item_238,M8,برف,outside,word,understands; produces,NA,NA,NA
+item_239,M9,پارک,outside,word,understands; produces,NA,NA,NA
+item_240,M10,پشت بام,outside,word,understands; produces,NA,NA,NA
+item_241,M11,تاب,outside,word,understands; produces,NA,NA,NA
+item_242,M12,چرخ و فلک,outside,word,understands; produces,NA,NA,NA
+item_243,M13,حیاط,outside,word,understands; produces,NA,NA,NA
+item_244,M14,خانه,outside,word,understands; produces,NA,NA,NA
+item_245,M15,خورشید,outside,word,understands; produces,NA,NA,NA
+item_246,M16,درخت,outside,word,understands; produces,NA,NA,NA
+item_247,M17,زیر زمین,outside,word,understands; produces,NA,NA,NA
+item_248,M18,ساحل,outside,word,understands; produces,NA,NA,NA
+item_249,M19,ستاره,outside,word,understands; produces,NA,NA,NA
+item_250,M20,سرسره,outside,word,understands; produces,NA,NA,NA
+item_251,M21,شهربازی,outside,word,understands; produces,NA,NA,NA
+item_252,M22,فروشگاه/دکان/مغازه,outside,word,understands; produces,NA,NA,NA
+item_253,M23,کوچه,outside,word,understands; produces,NA,NA,NA
+item_254,M24,کوه,outside,word,understands; produces,NA,NA,NA
+item_255,M25,ماه,outside,word,understands; produces,NA,NA,NA
+item_256,M26,مدرسه,outside,word,understands; produces,NA,NA,NA
+item_257,M27,مسجد,outside,word,understands; produces,NA,NA,NA
+item_258,E1,أقا/ مرد,people,word,understands; produces,NA,NA,NA
+item_259,E2,آدم/ آدمها,people,word,understands; produces,NA,NA,NA
+item_260,E3,اسم خودکودک,people,word,understands; produces,NA,NA,NA
+item_261,E4,بابا *,people,word,understands; produces,NA,NA,NA
+item_262,E5,برادر / داداش *,people,word,understands; produces,NA,NA,NA
+item_263,E6,بچه,people,word,understands; produces,NA,NA,NA
+item_264,E7,پسر,people,word,understands; produces,NA,NA,NA
+item_265,E8,پدربزرگ*,people,word,understands; produces,NA,NA,NA
+item_266,E9,خاله,people,word,understands; produces,NA,NA,NA
+item_267,E10,خانم/ زن,people,word,understands; produces,NA,NA,NA
+item_268,E11,خواهر/ آجی/آبجی,people,word,understands; produces,NA,NA,NA
+item_269,E12,دایی,people,word,understands; produces,NA,NA,NA
+item_270,E13,دختر,people,word,understands; produces,NA,NA,NA
+item_271,E14,شوهر,people,word,understands; produces,NA,NA,NA
+item_272,E15,عمه,people,word,understands; produces,NA,NA,NA
+item_273,E16,عمو,people,word,understands; produces,NA,NA,NA
+item_274,E17,مامان,people,word,understands; produces,NA,NA,NA
+item_275,E18,مادربزرگ*,people,word,understands; produces,NA,NA,NA
+item_276,E19,نوه,people,word,understands; produces,NA,NA,NA
+item_277,E20,نی نی/ بِه بِه,people,word,understands; produces,NA,NA,NA
+item_278,I1,اتل متل توتوله,games_routines,word,understands; produces,NA,NA,NA
+item_279,I2,بله,games_routines,word,understands; produces,NA,NA,NA
+item_280,I3,جیش,games_routines,word,understands; produces,NA,NA,NA
+item_281,I4,چُرت/خواب/لالا,games_routines,word,understands; produces,NA,NA,NA
+item_282,I5,حمام کردن,games_routines,word,understands; produces,NA,NA,NA
+item_283,I6,خداحافظی,games_routines,word,understands; produces,NA,NA,NA
+item_284,I7,کلاغ پَر,games_routines,word,understands; produces,NA,NA,NA
+item_285,I8,دالّی/ داکّی,games_routines,word,understands; produces,NA,NA,NA
+item_286,I9,سلام,games_routines,word,understands; produces,NA,NA,NA
+item_287,I10,شام,games_routines,word,understands; produces,NA,NA,NA
+item_288,I11,شب بخیر,games_routines,word,understands; produces,NA,NA,NA
+item_289,I12,صبحانه,games_routines,word,understands; produces,NA,NA,NA
+item_290,I13,صبر کردن(وایسا),games_routines,word,understands; produces,NA,NA,NA
+item_291,I14,لی لی حوضک,games_routines,word,understands; produces,NA,NA,NA
+item_292,I15,مرسی/ممنون/متشکرم,games_routines,word,understands; produces,NA,NA,NA
+item_293,I16,می خوام,games_routines,word,understands; produces,NA,NA,NA
+item_294,I17,ناهار,games_routines,word,understands; produces,NA,NA,NA
+item_295,I18,نه,games_routines,word,understands; produces,NA,NA,NA
+item_296,I19,هیس/ ش,games_routines,word,understands; produces,NA,NA,NA
+item_297,L1,آمدن,action_words,word,understands; produces,NA,NA,NA
+item_298,L2,آوردن,action_words,word,understands; produces,NA,NA,NA
+item_299,L3,آشتی کردن,action_words,word,understands; produces,NA,NA,NA
+item_300,L4,افتادن,action_words,word,understands; produces,NA,NA,NA
+item_301,L5,ایستادن,action_words,word,understands; produces,NA,NA,NA
+item_302,L6,باز کردن,action_words,word,understands; produces,NA,NA,NA
+item_303,L7,بازی کردن,action_words,word,understands; produces,NA,NA,NA
+item_304,L8,بردن,action_words,word,understands; produces,NA,NA,NA
+item_305,L9,بستن,action_words,word,understands; produces,NA,NA,NA
+item_306,L10,بوسیدن,action_words,word,understands; produces,NA,NA,NA
+item_307,L11,پختن,action_words,word,understands; produces,NA,NA,NA
+item_308,L12,پرت کردن,action_words,word,understands; produces,NA,NA,NA
+item_309,L13,پریدن,action_words,word,understands; produces,NA,NA,NA
+item_310,L14,تاب خوردن,action_words,word,understands; produces,NA,NA,NA
+item_311,L15,تکان دادن,action_words,word,understands; produces,NA,NA,NA
+item_312,L16,تمیزکردن/پاک کردن,action_words,word,understands; produces,NA,NA,NA
+item_313,L17,ترسیدن,action_words,word,understands; produces,NA,NA,NA
+item_314,L18,جیغ کشیدن,action_words,word,understands; produces,NA,NA,NA
+item_315,L19,شانه کردن,action_words,word,understands; produces,NA,NA,NA
+item_316,L20,خاموش کردن,action_words,word,understands; produces,NA,NA,NA
+item_317,L21,خجالت کشیدن,action_words,word,understands; produces,NA,NA,NA
+item_318,L22,خندیدن,action_words,word,understands; produces,NA,NA,NA
+item_319,L23,خوردن,action_words,word,understands; produces,NA,NA,NA
+item_320,L24,خوردن (اصابت کردن),action_words,word,understands; produces,NA,NA,NA
+item_321,L25,خواندن,action_words,word,understands; produces,NA,NA,NA
+item_322,L26,خوابیدن,action_words,word,understands; produces,NA,NA,NA
+item_323,L27,درد گرفتن,action_words,word,understands; produces,NA,NA,NA
+item_324,L28,دعا کردن,action_words,word,understands; produces,NA,NA,NA
+item_325,L29,دویدن,action_words,word,understands; produces,NA,NA,NA
+item_326,L30,دوست داشتن,action_words,word,understands; produces,NA,NA,NA
+item_327,L31,دیدن/نگاه کردن,action_words,word,understands; produces,NA,NA,NA
+item_328,L32,رانندگی کردن,action_words,word,understands; produces,NA,NA,NA
+item_329,L33,راه رفتن,action_words,word,understands; produces,NA,NA,NA
+item_330,L34,رفتن,action_words,word,understands; produces,NA,NA,NA
+item_331,L35,زمین خوردن,action_words,word,understands; produces,NA,NA,NA
+item_332,L36,سلام کردن,action_words,word,understands; produces,NA,NA,NA
+item_333,L37,سینه زدن,action_words,word,understands; produces,NA,NA,NA
+item_334,L38,شناکردن,action_words,word,understands; produces,NA,NA,NA
+item_335,L39,طبل زدن/ضربه زدن/کوبیدن,action_words,word,understands; produces,NA,NA,NA
+item_336,L40,غذا دادن,action_words,word,understands; produces,NA,NA,NA
+item_337,L41,قلقلک دادن,action_words,word,understands; produces,NA,NA,NA
+item_338,L42,فوت کردن,action_words,word,understands; produces,NA,NA,NA
+item_339,L43,قصه گفتن,action_words,word,understands; produces,NA,NA,NA
+item_340,L44,کتک زدن,action_words,word,understands; produces,NA,NA,NA
+item_341,L45,کشیدن,action_words,word,understands; produces,NA,NA,NA
+item_342,L46,کمک کردن,action_words,word,understands; produces,NA,NA,NA
+item_343,L47,گاز گرفتن,action_words,word,understands; produces,NA,NA,NA
+item_344,L48,گریه کردن,action_words,word,understands; produces,NA,NA,NA
+item_345,L49,لج کردن/قهر کردن,action_words,word,understands; produces,NA,NA,NA
+item_346,L50,لگد زدن,action_words,word,understands; produces,NA,NA,NA
+item_347,L51,لمس کردن/ دست زدن,action_words,word,understands; produces,NA,NA,NA
+item_348,L52,نانای کردن/ رقصیدن,action_words,word,understands; produces,NA,NA,NA
+item_349,L53,نقاشی کردن,action_words,word,understands; produces,NA,NA,NA
+item_350,L54,نمازخواندن,action_words,word,understands; produces,NA,NA,NA
+item_351,L55,نوشتن,action_words,word,understands; produces,NA,NA,NA
+item_352,R1,امروز,time_words,word,understands; produces,NA,NA,NA
+item_353,R2,امشب,time_words,word,understands; produces,NA,NA,NA
+item_354,R3,بعداً,time_words,word,understands; produces,NA,NA,NA
+item_355,R4,حالا,time_words,word,understands; produces,NA,NA,NA
+item_356,R5,روز,time_words,word,understands; produces,NA,NA,NA
+item_357,R6,شب,time_words,word,understands; produces,NA,NA,NA
+item_358,R7,صبح,time_words,word,understands; produces,NA,NA,NA
+item_359,R8,فردا,time_words,word,understands; produces,NA,NA,NA
+item_360,W1,باز,descriptive_words,word,understands; produces,NA,NA,NA
+item_361,W2,بد,descriptive_words,word,understands; produces,NA,NA,NA
+item_362,W3,بداخلاق,descriptive_words,word,understands; produces,NA,NA,NA
+item_363,W4,بزرگ,descriptive_words,word,understands; produces,NA,NA,NA
+item_364,W5,بسته,descriptive_words,word,understands; produces,NA,NA,NA
+item_365,W6,پُر,descriptive_words,word,understands; produces,NA,NA,NA
+item_366,W7,تاریک,descriptive_words,word,understands; produces,NA,NA,NA
+item_367,W8,تر / خیس,descriptive_words,word,understands; produces,NA,NA,NA
+item_368,W9,تشنه,descriptive_words,word,understands; produces,NA,NA,NA
+item_369,W10,تمییز,descriptive_words,word,understands; produces,NA,NA,NA
+item_370,W11,تند/زود/سریع,descriptive_words,word,understands; produces,NA,NA,NA
+item_371,W12,چاق,descriptive_words,word,understands; produces,NA,NA,NA
+item_372,W13,خالی,descriptive_words,word,understands; produces,NA,NA,NA
+item_373,W14,خاموش,descriptive_words,word,understands; produces,NA,NA,NA
+item_374,W15,خراب,descriptive_words,word,understands; produces,NA,NA,NA
+item_375,W16,خسته,descriptive_words,word,understands; produces,NA,NA,NA
+item_376,W17,خشک,descriptive_words,word,understands; produces,NA,NA,NA
+item_377,W18,خوب,descriptive_words,word,understands; produces,NA,NA,NA
+item_378,W19,خوشمزه,descriptive_words,word,understands; produces,NA,NA,NA
+item_379,W20,خوشحال,descriptive_words,word,understands; produces,NA,NA,NA
+item_380,W21,خوش اخلاق,descriptive_words,word,understands; produces,NA,NA,NA
+item_381,W22,داغ,descriptive_words,word,understands; produces,NA,NA,NA
+item_382,W23,روشن,descriptive_words,word,understands; produces,NA,NA,NA
+item_383,W24,زیاد,quantifiers,word,understands; produces,NA,NA,NA
+item_384,W25,سخت/سفت,descriptive_words,word,understands; produces,NA,NA,NA
+item_385,W26,سرد,descriptive_words,word,understands; produces,NA,NA,NA
+item_386,W27,سیر,descriptive_words,word,understands; produces,NA,NA,NA
+item_387,W28,شیطان,descriptive_words,word,understands; produces,NA,NA,NA
+item_388,W29,کثیف,descriptive_words,word,understands; produces,NA,NA,NA
+item_389,W30,کوچک,descriptive_words,word,understands; produces,NA,NA,NA
+item_390,W31,کم,descriptive_words,word,understands; produces,NA,NA,NA
+item_391,W32,گرسنه,descriptive_words,word,understands; produces,NA,NA,NA
+item_392,W33,لاغر,descriptive_words,word,understands; produces,NA,NA,NA
+item_393,W34,مریض,descriptive_words,word,understands; produces,NA,NA,NA
+item_394,W35,ناز/قشنگ,descriptive_words,word,understands; produces,NA,NA,NA
+item_395,W36,ناراحت,descriptive_words,word,understands; produces,NA,NA,NA
+item_396,W37,یواش/آهسته,descriptive_words,word,understands; produces,NA,NA,NA
+item_397,X1,آن,pronouns,word,understands; produces,NA,NA,3SG
+item_398,X2,این,pronouns,word,understands; produces,NA,NA,this
+item_399,X3,آنها,pronouns,word,understands; produces,NA,NA,3PL
+item_400,X4,اینها,pronouns,word,understands; produces,NA,NA,these
+item_401,X5,او,pronouns,word,understands; produces,NA,NA,3SG
+item_402,X6,تو,pronouns,word,understands; produces,NA,NA,2SG
+item_403,X7,شما,pronouns,word,understands; produces,NA,NA,2PL
+item_404,X8,من,pronouns,word,understands; produces,NA,NA,1SG
+item_405,X9,ما,pronouns,word,understands; produces,NA,NA,1PL
+item_406,X10,مالِ من/ منِ,pronouns,word,understands; produces,NA,NA,1SG.POSS
+item_407,X11,مال تو/ توئه,pronouns,word,understands; produces,NA,NA,2SG.POSS
+item_408,X12,مال اون/ اونه,pronouns,word,understands; produces,NA,NA,3SG.POSS
+item_409,Y1,چرا,question_words,word,understands; produces,NA,NA,NA
+item_410,Y2,چطوری/چگونه/ چه جوری,question_words,word,understands; produces,NA,NA,NA
+item_411,Y3,چی,question_words,word,understands; produces,NA,NA,NA
+item_412,Y4,کِی,question_words,word,understands; produces,NA,NA,NA
+item_413,Y5,کی(چه کسی),question_words,word,understands; produces,NA,NA,NA
+item_414,Y6,کجا/ کو,question_words,word,understands; produces,NA,NA,NA
+item_415,Z1,آنجا,locations,word,understands; produces,NA,NA,NA
+item_416,Z2,بالا,locations,word,understands; produces,NA,NA,NA
+item_417,Z3,بیرون/ خارج,locations,word,understands; produces,NA,NA,NA
+item_418,Z4,پائین,locations,word,understands; produces,NA,NA,NA
+item_419,Z5,جلو,locations,word,understands; produces,NA,NA,NA
+item_420,Z6,داخل/ دَر/ توی,locations,word,understands; produces,NA,NA,NA
+item_421,Z7,دور,locations,word,understands; produces,NA,NA,NA
+item_422,Z8,روی,locations,word,understands; produces,NA,NA,NA
+item_423,Z9,زیر,locations,word,understands; produces,NA,NA,NA
+item_424,Z10,عقب / پشت,locations,word,understands; produces,NA,NA,NA
+item_425,Z11,کنار,locations,word,understands; produces,NA,NA,NA
+item_426,C1,بیشتر,quantifiers,word,understands; produces,NA,NA,NA
+item_427,C2,خیلی,quantifiers,word,understands; produces,NA,NA,NA
+item_428,C3,همان قدر,quantifiers,word,understands; produces,NA,NA,NA
+item_429,C4,هیچکدام,quantifiers,word,understands; produces,NA,NA,NA
+item_430,C5,هیچی(نه),quantifiers,word,understands; produces,NA,NA,NA
+item_431,C6,یکی,quantifiers,word,understands; produces,NA,NA,NA
+item_432,C7,همه,quantifiers,word,understands; produces,NA,NA,NA
+item_433,C8,یه کمی/مقداری/ یه کم دیگه,quantifiers,word,understands; produces,NA,NA,NA
+item_1,A1,عکس العمل نسبت به اسم خودش(مثلاً برگشتن و نگاه کردن به طرف صدا),NA,first_signs,yes; no,NA,respname,NA
+item_2,A2,عکس العمل نسبت به گفتن«نه» (مثلاً متوقف کردن کاری که انجام می دهد، حداقل برای یک لحظه),NA,first_signs,yes; no,NA,respno,NA
+item_3,A3,عکس العمل نسبت به گفتن «مامان/ بابا اونجاست.» (مثلاً نگاه کردن به سمت آنها),NA,first_signs,yes; no,NA,reactmd,NA
+item_4,B1,بابا/ مامان خونه است.,NA,phrases,understands,NA,mdhome,NA
+item_5,B2,بازم می خوای/ بیشتر می خوای؟ بای بای کن / بریم.,NA,phrases,understands,NA,wantmore,NA
+item_6,B3,بده مامان/ اونو بده مامان.,NA,phrases,understands,NA,gobyebye,NA
+item_7,B4,بیا اینجا.,NA,phrases,understands,NA,givemom,NA
+item_8,B5,بیا عوضت کنم.,NA,phrases,understands,NA,comehere,NA
+item_9,B6,بیا بغلم.,NA,phrases,understands,NA,cgdiaper,NA
+item_10,B7,بیرون کن/ تف کن.,NA,phrases,understands,NA,givehug,NA
+item_11,B8,برو.........,NA,phrases,understands,NA,spitout,NA
+item_12,B9,بیار.,NA,phrases,understands,NA,goget,NA
+item_13,B10,بریم بخوابیم/ وقت خوابه.,NA,phrases,understands,NA,gonight,NA
+item_14,B11,بشین.,NA,phrases,understands,NA,sitdown,NA
+item_15,B12,پاشو/ بیدار شو.,NA,phrases,understands,NA,getup,NA
+item_16,B13,پسر/ دختر خوب,NA,phrases,understands,NA,goodgb,NA
+item_17,B14,توپ را پرت کن/ بنداز.,NA,phrases,understands,NA,throwbll,NA
+item_18,B15,خسته ای/ خوابت می آید؟,NA,phrases,understands,NA,aretired,NA
+item_19,B16,دست بزن/دست دسی کن.,NA,phrases,understands,NA,claphand,NA
+item_20,B17,دست نزن.,NA,phrases,understands,NA,dontouch,NA
+item_21,B18,دهانت را باز کن.,NA,phrases,understands,NA,openmth,NA
+item_22,B19,ساکت باش.,NA,phrases,understands,NA,bequiet,NA
+item_23,B20,سیر شدی؟,NA,phrases,understands,NA,arefull,NA
+item_24,B21,صبر کن.,NA,phrases,understands,NA,holdstil,NA
+item_25,B22,کافیه/ بسه.,NA,phrases,understands,NA,stopit,NA
+item_26,B23,گرسنه ای؟,NA,phrases,understands,NA,arehngry,NA
+item_27,B24,مواظب باش.,NA,phrases,understands,NA,becarefl,NA
+item_28,B25,میخواهی بریم بیرون/ دَ دَ ؟,NA,phrases,understands,NA,wantride,NA
+item_29,B26,نکن.,NA,phrases,understands,NA,dontdo,NA
+item_30,B27,نگاه کن/ اینو ببین.,NA,phrases,understands,NA,lookhere,NA
+item_31,B28,یه بوس بده / بوس بفرست.,NA,phrases,understands,NA,givekiss,NA
+item_32,G1,کودک شما چقدر کلمات را تقلید می کند؟,NA,starting_to_talk,never; sometimes; often,NA,imitate,NA
+item_33,G2,کودک شما چقدر چیزهای مختلف را نام می برد؟,NA,starting_to_talk,never; sometimes; often,NA,label,NA
+item_34,S1,آخ,sounds,word,understands; produces,NA,ah,NA
+item_35,S2,اَخ/ اَه/ کخ/گخ,sounds,word,understands; produces,NA,NA,NA
+item_36,S3,بَه بَه / م...م,sounds,word,understands; produces,NA,NA,NA
+item_37,S4,بع بع,sounds,word,understands; produces,NA,baa baa,baa baa
+item_38,S5,بیب بیب,sounds,word,understands; produces,NA,beep beep,beep beep
+item_39,S6,پیف,sounds,word,understands; produces,NA,NA,NA
+item_40,S7,جیز/اُخ/ اُخه,sounds,word,understands; produces,NA,NA,NA
+item_41,S8,جیک جیک,sounds,word,understands; produces,NA,chirp,NA
+item_42,S9,میو میو,sounds,word,understands; produces,NA,meow meow,meow
+item_43,S10,وای,sounds,word,understands; produces,NA,oops,NA
+item_44,S11,هاپ هاپ,sounds,word,understands; produces,NA,hop hop,NA
+item_45,S12,هوهو چی چی,sounds,word,understands; produces,NA,NA,NA
+item_46,N1,آهو,animals,word,understands; produces,NA,gazelle,NA
+item_47,N2,اسب,animals,word,understands; produces,NA,horse,horse
+item_48,N3,الاغ,animals,word,understands; produces,NA,donkey,donkey
+item_49,N4,بره,animals,word,understands; produces,NA,lamb,lamb
+item_50,N5,پروانه,animals,word,understands; produces,NA,butterfly,butterfly
+item_51,N6,پرنده/ توتو,animals,word,understands; produces,NA,bird,bird
+item_52,N7,پنگوئن,animals,word,understands; produces,NA,penguin,penguin
+item_53,N8,جوجه,animals,word,understands; produces,NA,chicken,chicken (animal)
+item_54,N9,حشره,animals,word,understands; produces,NA,insect,NA
+item_55,N10,خرس,animals,word,understands; produces,NA,bear,bear
+item_56,N11,خرگوش,animals,word,understands; produces,NA,rabbit,NA
+item_57,N12,خروس,animals,word,understands; produces,NA,rooster,rooster
+item_58,N13,روباه,animals,word,understands; produces,NA,fox,fox
+item_59,N14,زرافه,animals,word,understands; produces,NA,giraffe,giraffe
+item_60,N15,زنبور,animals,word,understands; produces,NA,bee,bee
+item_61,N16,سگ,animals,word,understands; produces,NA,dog,dog
+item_62,N17,سنجاب,animals,word,understands; produces,NA,squirrel,squirrel
+item_63,N18,شتر,animals,word,understands; produces,NA,camel,NA
+item_64,N19,شیر,animals,word,understands; produces,NA,lion,lion
+item_65,N20,غاز,animals,word,understands; produces,NA,goose,goose
+item_66,N21,فیل,animals,word,understands; produces,NA,elephant,elephant
+item_67,N22,قورباغه,animals,word,understands; produces,NA,frog,frog
+item_68,N23,کبوتر,animals,word,understands; produces,NA,pigeons,NA
+item_69,N24,کلاغ,animals,word,understands; produces,NA,crow,crow
+item_70,N25,گاو,animals,word,understands; produces,NA,cow,cow
+item_71,N26,گربه,animals,word,understands; produces,NA,cat,cat
+item_72,N27,گنجشک,animals,word,understands; produces,NA,sparrow,sparrow
+item_73,N28,گوسفند,animals,word,understands; produces,NA,sheep,sheep
+item_74,N29,لاک پشت,animals,word,understands; produces,NA,turtle,turtle
+item_75,N30,ماهی,animals,word,understands; produces,NA,fish,fish (animal)
+item_76,N31,مار,animals,word,understands; produces,NA,snake,snake
+item_77,N32,مرغ,animals,word,understands; produces,NA,chicken,chicken (animal)
+item_78,N33,مگس,animals,word,understands; produces,NA,NA,NA
+item_79,N34,مورچه,animals,word,understands; produces,NA,ant,ant
+item_80,N35,موش,animals,word,understands; produces,NA,mouse,mouse
+item_81,N36,میمون,animals,word,understands; produces,NA,monkey,monkey
+item_82,O1,اتوبوس,vehicles,word,understands; produces,NA,bus,bus
+item_83,O2,دوچرخه,vehicles,word,understands; produces,NA,bike,bicycle
+item_84,O3,قطار,vehicles,word,understands; produces,NA,train,train
+item_85,O4,کامیون,vehicles,word,understands; produces,NA,truck,truck
+item_86,O5,کشتی / قایق,vehicles,word,understands; produces,NA,ship/boat,boat
+item_87,O6,ماشین,vehicles,word,understands; produces,NA,machine,NA
+item_88,O7,موتور,vehicles,word,understands; produces,NA,engine,NA
+item_89,O8,هلی کوپتر,vehicles,word,understands; produces,NA,helicopter,helicopter
+item_90,O9,هواپیما,vehicles,word,understands; produces,NA,plane,NA
+item_91,P1,اسباب بازی,toys,word,understands; produces,NA,toy,toy (object)
+item_92,P2,بادکنک,toys,word,understands; produces,NA,balloons,balloon
+item_93,P3,تفنگ,toys,word,understands; produces,NA,gun,NA
+item_94,P4,توپ,toys,word,understands; produces,NA,ball,ball
+item_95,P5,جغجغه,toys,word,understands; produces,NA,NA,NA
+item_96,P6,عروسک,toys,word,understands; produces,NA,dolls,doll
+item_97,P7,کتاب,toys,word,understands; produces,NA,book,book
+item_98,P8,مکعب/ لگو,toys,word,understands; produces,NA,cube/lego,blocks
+item_99,F1,آب,food_drink,word,understands; produces,NA,water,water (beverage)
+item_100,F2,آب میوه,food_drink,word,understands; produces,NA,fruitjuice,juice
+item_101,F3,آب نبات/ شکلات,food_drink,word,understands; produces,NA,candy/chocolate,candy
+item_102,F4,آش,food_drink,word,understands; produces,NA,ash,NA
+item_103,F5,برنج/ پلو,food_drink,word,understands; produces,NA,rice,rice
+item_104,F6,بیسکویت,food_drink,word,understands; produces,NA,biscuits,NA
+item_105,F7,بستنی,food_drink,word,understands; produces,NA,ice cream,ice cream
+item_106,F8,پفک,food_drink,word,understands; produces,NA,cheetos,NA
+item_107,F9,پنیر,food_drink,word,understands; produces,NA,cheese,cheese
+item_108,F10,پرتقال,food_drink,word,understands; produces,NA,orange,orange (food)
+item_109,F11,تخم مرغ,food_drink,word,understands; produces,NA,egg,egg
+item_110,F12,چای,food_drink,word,understands; produces,NA,tea,tea
+item_111,F13,سوپ,food_drink,word,understands; produces,NA,soup,soup
+item_112,F14,سیب,food_drink,word,understands; produces,NA,apple,apple
+item_113,F15,شربت,food_drink,word,understands; produces,NA,syrup,NA
+item_114,F16,شیر,food_drink,word,understands; produces,NA,lion,lion
+item_115,F17,شیرینی,food_drink,word,understands; produces,NA,sweets,candy
+item_116,F18,غذا,food_drink,word,understands; produces,NA,food,food
+item_117,F19,قند,food_drink,word,understands; produces,NA,sugar loaf,NA
+item_118,F20,کیک,food_drink,word,understands; produces,NA,cake,cake
+item_119,F21,گردو,food_drink,word,understands; produces,NA,walnut,NA
+item_120,F22,گوشت,food_drink,word,understands; produces,NA,meat,meat
+item_121,F23,ماهی,food_drink,word,understands; produces,NA,fish,fish (food)
+item_122,F24,ماکارونی,food_drink,word,understands; produces,NA,macaroni,pasta
+item_123,F25,مربا,food_drink,word,understands; produces,NA,jam,jam
+item_124,F26,موز,food_drink,word,understands; produces,NA,thebanana,banana
+item_125,F27,میوه,food_drink,word,understands; produces,NA,fruit,fruit
+item_126,F28,نان,food_drink,word,understands; produces,NA,bread,bread
+item_127,F29,نوشابه,food_drink,word,understands; produces,NA,softdrinks,soda
+item_128,F30,هویج,food_drink,word,understands; produces,NA,carrots,carrots
+item_129,J1,بلوز,clothing,word,understands; produces,NA,blouse,NA
+item_130,J2,پوشک,clothing,word,understands; produces,NA,diapers,NA
+item_131,J3,پیش بند,clothing,word,understands; produces,NA,apron,NA
+item_132,J4,پیراهن,clothing,word,understands; produces,NA,shirt,shirt
+item_133,J5,تسبیح,clothing,word,understands; produces,NA,rosary,NA
+item_134,J6,جوراب,clothing,word,understands; produces,NA,socks,sock
+item_135,J7,چادر,clothing,word,understands; produces,NA,NA,NA
+item_136,J8,دکمه,clothing,word,understands; produces,NA,button,button
+item_137,J9,دامن,clothing,word,understands; produces,NA,skirt,skirt
+item_138,J10,دمپایی,clothing,word,understands; produces,NA,slippers,slipper
+item_139,J11,دستکش,clothing,word,understands; produces,NA,gloves,gloves
+item_140,J12,روسری,clothing,word,understands; produces,NA,scarf,scarf
+item_141,J13,زیپ,clothing,word,understands; produces,NA,zipper,zipper
+item_142,J14,شال,clothing,word,understands; produces,NA,shawl,NA
+item_143,J15,شلوار,clothing,word,understands; produces,NA,pants,pants
+item_144,J16,شورت,clothing,word,understands; produces,NA,short,shorts
+item_145,J17,کاپشن,clothing,word,understands; produces,NA,jacket,jacket
+item_146,J18,کت,clothing,word,understands; produces,NA,coat,coat
+item_147,J19,کفش,clothing,word,understands; produces,NA,shoe,shoe
+item_148,J20,کلاه,clothing,word,understands; produces,NA,hat,hat
+item_149,J21,لباس,clothing,word,understands; produces,NA,dress,dress (object)
+item_150,J22,مانتو,clothing,word,understands; produces,NA,manto,NA
+item_151,K1,ابرو,body_parts,word,understands; produces,NA,NA,NA
+item_152,K2,انگشت,body_parts,word,understands; produces,NA,finger,finger
+item_153,K3,باسن,body_parts,word,understands; produces,NA,hip,NA
+item_154,K4,بدن/ تن,body_parts,word,understands; produces,NA,body,NA
+item_155,K5,بینی,body_parts,word,understands; produces,NA,nose,nose
+item_156,K6,پا,body_parts,word,understands; produces,NA,leg,leg
+item_157,K7,چشم,body_parts,word,understands; produces,NA,eye,eye
+item_158,K8,دست,body_parts,word,understands; produces,NA,hand,hand
+item_159,K9,دندان,body_parts,word,understands; produces,NA,tooth,tooth
+item_160,K10,دهان,body_parts,word,understands; produces,NA,mouth,mouth
+item_161,K11,دل/ شکم,body_parts,word,understands; produces,NA,heart/abdomen,NA
+item_162,K12,زبان,body_parts,word,understands; produces,NA,tongue,tongue
+item_163,K13,سر / کله,body_parts,word,understands; produces,NA,head,head
+item_164,K14,صورت,body_parts,word,understands; produces,NA,theface,face
+item_165,K15,گوش,body_parts,word,understands; produces,NA,ear,ear
+item_166,K16,لب,body_parts,word,understands; produces,NA,NA,NA
+item_167,K17,لُپ,body_parts,word,understands; produces,NA,cheek,cheek
+item_168,K18,مو,body_parts,word,understands; produces,NA,hair,hair
+item_169,K19,ناخن,body_parts,word,understands; produces,NA,nails,NA
+item_170,K20,ناف,body_parts,word,understands; produces,NA,NA,NA
+item_171,H1,اتاق خواب,furniture_rooms,word,understands; produces,NA,bedroom,bedroom
+item_172,H2,آشپزخانه,furniture_rooms,word,understands; produces,NA,kitchen,kitchen
+item_173,H3,آینه,furniture_rooms,word,understands; produces,NA,mirror,mirror
+item_174,H4,بالش,furniture_rooms,word,understands; produces,NA,pillow,pillow
+item_175,H5,بخاری,furniture_rooms,word,understands; produces,NA,heater,NA
+item_176,H6,پله/ راه پله,furniture_rooms,word,understands; produces,NA,stairs,stairs
+item_177,H7,پرده,furniture_rooms,word,understands; produces,NA,curtain,curtain
+item_178,H8,پنجره,furniture_rooms,word,understands; produces,NA,window,window
+item_179,H9,ختخواب/رختخواب/تخت,furniture_rooms,word,understands; produces,NA,NA,NA
+item_180,H10,تلویزیون,furniture_rooms,word,understands; produces,NA,television,tv
+item_181,H11,حمام,furniture_rooms,word,understands; produces,NA,bathroom,bathroom
+item_182,H12,در,furniture_rooms,word,understands; produces,NA,thedoor,door
+item_183,H13,دیوار,furniture_rooms,word,understands; produces,NA,wall,wall
+item_184,H14,دستشویی,furniture_rooms,word,understands; produces,NA,toilet,NA
+item_185,H15,شیر آب,furniture_rooms,word,understands; produces,NA,faucet,faucet
+item_186,H16,صندلی,furniture_rooms,word,understands; produces,NA,thechair,chair
+item_187,H17,ضبط,furniture_rooms,word,understands; produces,NA,record,NA
+item_188,H18,فرش,furniture_rooms,word,understands; produces,NA,carpet,carpet
+item_189,H19,کامپیوتر,furniture_rooms,word,understands; produces,NA,computer,computer
+item_190,H20,کمد,furniture_rooms,word,understands; produces,NA,closet,closet
+item_191,H21,گاز,furniture_rooms,word,understands; produces,NA,gas,NA
+item_192,H22,گهواره,furniture_rooms,word,understands; produces,NA,cradle,cradle
+item_193,H23,میز,furniture_rooms,word,understands; produces,NA,table,table
+item_194,H24,یخچال,furniture_rooms,word,understands; produces,NA,refrigerator,refrigerator
+item_195,T1,آشغال,household,word,understands; produces,NA,rubbish,trash
+item_196,T2,بشقاب,household,word,understands; produces,NA,plate,plate
+item_197,T3,پارچ,household,word,understands; produces,NA,pitcher,NA
+item_198,T4,پتو,household,word,understands; produces,NA,NA,NA
+item_199,T5,پستانک,household,word,understands; produces,NA,NA,NA
+item_200,T6,پول,household,word,understands; produces,NA,money,money
+item_201,T7,تشت/ لگن,household,word,understands; produces,NA,flat/pelvis,NA
+item_202,T8,تلفن,household,word,understands; produces,NA,phone,telephone
+item_203,T9,جارو/ جاروبرقی,household,word,understands; produces,NA,vacuum cleaner,NA
+item_204,T10,جعبه,household,word,understands; produces,NA,box,box
+item_205,T11,چاقو,household,word,understands; produces,NA,knife,knife
+item_206,T12,چنگال,household,word,understands; produces,NA,NA,NA
+item_207,T13,حوله,household,word,understands; produces,NA,towel,towel
+item_208,T14,دارو/ دوا,household,word,understands; produces,NA,medicine,medicine
+item_209,T15,ساعت,household,word,understands; produces,NA,thewatch,NA
+item_210,T16,سطل,household,word,understands; produces,NA,NA,NA
+item_211,T17,سفره,household,word,understands; produces,NA,tablecloth,tablecloth
+item_212,T18,سینی,household,word,understands; produces,NA,NA,NA
+item_213,T19,شانه,body_parts,word,understands; produces,NA,shoulder,NA
+item_214,T20,شامپو,household,word,understands; produces,NA,shampoo,NA
+item_215,T21,شیشه شیر,household,word,understands; produces,NA,bottle of milk,bottle
+item_216,T22,صابون,household,word,understands; produces,NA,soap,soap
+item_217,T23,ظرف,household,word,understands; produces,NA,container,box
+item_218,T24,عکس,household,word,understands; produces,NA,picture,picture
+item_219,T25,عینک,household,word,understands; produces,NA,glasses,glasses
+item_220,T26,فنجان,household,word,understands; produces,NA,cup,cup
+item_221,T27,قاشق,household,word,understands; produces,NA,spoon,spoon
+item_222,T28,قندان,household,word,understands; produces,NA,sugar,sugar
+item_223,T29,قوری,household,word,understands; produces,NA,NA,NA
+item_224,T30,کاسه,household,word,understands; produces,NA,bowl,bowl
+item_225,T31,کلید,household,word,understands; produces,NA,key,keys
+item_226,T32,گل/ گلدان,household,word,understands; produces,NA,flower/vase,NA
+item_227,T33,لامپ/ چراغ,household,word,understands; produces,NA,lamps/lights,NA
+item_228,T34,لیوان,household,word,understands; produces,NA,glass,glass
+item_229,T35,مسواک,household,word,understands; produces,NA,toothbrush,toothbrush
+item_230,T36,نمکدان,household,word,understands; produces,NA,salt shaker,NA
+item_231,M1,آتش,outside,word,understands; produces,NA,fire,fire
+item_232,M2,آسمان,outside,word,understands; produces,NA,sky,sky
+item_233,M3,الاکلنگ,outside,word,understands; produces,NA,seesaw,NA
+item_234,M4,بازار,outside,word,understands; produces,NA,market,market
+item_235,M5,باغ,outside,word,understands; produces,NA,garden,garden
+item_236,M6,باران,outside,word,understands; produces,NA,rain,rain
+item_237,M7,باغچه,outside,word,understands; produces,NA,garden,garden
+item_238,M8,برف,outside,word,understands; produces,NA,snow,snow
+item_239,M9,پارک,outside,word,understands; produces,NA,park,park
+item_240,M10,پشت بام,outside,word,understands; produces,NA,rooftop,NA
+item_241,M11,تاب,outside,word,understands; produces,NA,tab,NA
+item_242,M12,چرخ و فلک,outside,word,understands; produces,NA,carousel,NA
+item_243,M13,حیاط,outside,word,understands; produces,NA,yard,yard
+item_244,M14,خانه,outside,word,understands; produces,NA,home,home
+item_245,M15,خورشید,outside,word,understands; produces,NA,sun,sun
+item_246,M16,درخت,outside,word,understands; produces,NA,tree,tree
+item_247,M17,زیر زمین,outside,word,understands; produces,NA,underground,NA
+item_248,M18,ساحل,outside,word,understands; produces,NA,coast,NA
+item_249,M19,ستاره,outside,word,understands; produces,NA,star,star
+item_250,M20,سرسره,outside,word,understands; produces,NA,slide,slide (object)
+item_251,M21,شهربازی,outside,word,understands; produces,NA,amusement park,NA
+item_252,M22,فروشگاه/دکان/مغازه,outside,word,understands; produces,NA,shop,store
+item_253,M23,کوچه,outside,word,understands; produces,NA,alley,NA
+item_254,M24,کوه,outside,word,understands; produces,NA,mountain,mountain
+item_255,M25,ماه,outside,word,understands; produces,NA,month,NA
+item_256,M26,مدرسه,outside,word,understands; produces,NA,school,school
+item_257,M27,مسجد,outside,word,understands; produces,NA,mosque,church
+item_258,E1,أقا/ مرد,people,word,understands; produces,NA,NA,NA
+item_259,E2,آدم/ آدمها,people,word,understands; produces,NA,man,man
+item_260,E3,اسم خودکودک,people,word,understands; produces,NA,child's own name,child's own name
+item_261,E4,بابا *,people,word,understands; produces,NA,dad*,daddy
+item_262,E5,برادر / داداش *,people,word,understands; produces,NA,brother*,brother
+item_263,E6,بچه,people,word,understands; produces,NA,baby,baby
+item_264,E7,پسر,people,word,understands; produces,NA,boy,boy
+item_265,E8,پدربزرگ*,people,word,understands; produces,NA,grandpa*,grandpa
+item_266,E9,خاله,people,word,understands; produces,NA,aunt,aunt
+item_267,E10,خانم/ زن,people,word,understands; produces,NA,woman,woman
+item_268,E11,خواهر/ آجی/آبجی,people,word,understands; produces,NA,sister,sister
+item_269,E12,دایی,people,word,understands; produces,NA,uncle,uncle
+item_270,E13,دختر,people,word,understands; produces,NA,girl,girl
+item_271,E14,شوهر,people,word,understands; produces,NA,husband,NA
+item_272,E15,عمه,people,word,understands; produces,NA,aunt,aunt
+item_273,E16,عمو,people,word,understands; produces,NA,uncle,uncle
+item_274,E17,مامان,people,word,understands; produces,NA,mom,mommy
+item_275,E18,مادربزرگ*,people,word,understands; produces,NA,grandmother*,grandma
+item_276,E19,نوه,people,word,understands; produces,NA,NA,NA
+item_277,E20,نی نی/ بِه بِه,people,word,understands; produces,NA,NA,NA
+item_278,I1,اتل متل توتوله,games_routines,word,understands; produces,NA,NA,NA
+item_279,I2,بله,games_routines,word,understands; produces,NA,yes,yes
+item_280,I3,جیش,games_routines,word,understands; produces,NA,pee,pee
+item_281,I4,چُرت/خواب/لالا,games_routines,word,understands; produces,NA,snooze/sleep/mute,NA
+item_282,I5,حمام کردن,games_routines,word,understands; produces,NA,take a bath,NA
+item_283,I6,خداحافظی,games_routines,word,understands; produces,NA,goodbye,bye
+item_284,I7,کلاغ پَر,games_routines,word,understands; produces,NA,NA,NA
+item_285,I8,دالّی/ داکّی,games_routines,word,understands; produces,NA,NA,NA
+item_286,I9,سلام,games_routines,word,understands; produces,NA,hello,hello
+item_287,I10,شام,games_routines,word,understands; produces,NA,dinner,dinner
+item_288,I11,شب بخیر,games_routines,word,understands; produces,NA,goodnight,good night
+item_289,I12,صبحانه,games_routines,word,understands; produces,NA,breakfast,breakfast
+item_290,I13,صبر کردن(وایسا),games_routines,word,understands; produces,NA,wait,wait
+item_291,I14,لی لی حوضک,games_routines,word,understands; produces,NA,NA,NA
+item_292,I15,مرسی/ممنون/متشکرم,games_routines,word,understands; produces,NA,thank you,thank you
+item_293,I16,می خوام,games_routines,word,understands; produces,NA,I want,NA
+item_294,I17,ناهار,games_routines,word,understands; produces,NA,lunch,lunch
+item_295,I18,نه,games_routines,word,understands; produces,NA,no,no
+item_296,I19,هیس/ ش,games_routines,word,understands; produces,NA,NA,NA
+item_297,L1,آمدن,action_words,word,understands; produces,NA,come,come
+item_298,L2,آوردن,action_words,word,understands; produces,NA,bring,bring
+item_299,L3,آشتی کردن,action_words,word,understands; produces,NA,NA,NA
+item_300,L4,افتادن,action_words,word,understands; produces,NA,fall,fall
+item_301,L5,ایستادن,action_words,word,understands; produces,NA,stand,stand
+item_302,L6,باز کردن,action_words,word,understands; produces,NA,open,open (action)
+item_303,L7,بازی کردن,action_words,word,understands; produces,NA,play,play
+item_304,L8,بردن,action_words,word,understands; produces,NA,carry,carry
+item_305,L9,بستن,action_words,word,understands; produces,NA,close,close
+item_306,L10,بوسیدن,action_words,word,understands; produces,NA,kiss,kiss
+item_307,L11,پختن,action_words,word,understands; produces,NA,cook,cook
+item_308,L12,پرت کردن,action_words,word,understands; produces,NA,throw,throw
+item_309,L13,پریدن,action_words,word,understands; produces,NA,jump,jump
+item_310,L14,تاب خوردن,action_words,word,understands; produces,NA,swing,swing (action)
+item_311,L15,تکان دادن,action_words,word,understands; produces,NA,shake,shake
+item_312,L16,تمیزکردن/پاک کردن,action_words,word,understands; produces,NA,clean,clean (action)
+item_313,L17,ترسیدن,action_words,word,understands; produces,NA,fear,NA
+item_314,L18,جیغ کشیدن,action_words,word,understands; produces,NA,shrill,NA
+item_315,L19,شانه کردن,action_words,word,understands; produces,NA,comb,comb (action)
+item_316,L20,خاموش کردن,action_words,word,understands; produces,NA,turnoff,NA
+item_317,L21,خجالت کشیدن,action_words,word,understands; produces,NA,be ashamed,NA
+item_318,L22,خندیدن,action_words,word,understands; produces,NA,laugh,laugh
+item_319,L23,خوردن,action_words,word,understands; produces,NA,eat,eat
+item_320,L24,خوردن (اصابت کردن),action_words,word,understands; produces,NA,eat (hit),eat
+item_321,L25,خواندن,action_words,word,understands; produces,NA,read,read
+item_322,L26,خوابیدن,action_words,word,understands; produces,NA,sleep,sleep
+item_323,L27,درد گرفتن,action_words,word,understands; produces,NA,hurt,hurt
+item_324,L28,دعا کردن,action_words,word,understands; produces,NA,pray,NA
+item_325,L29,دویدن,action_words,word,understands; produces,NA,run,run
+item_326,L30,دوست داشتن,action_words,word,understands; produces,NA,love,love
+item_327,L31,دیدن/نگاه کردن,action_words,word,understands; produces,NA,see,see
+item_328,L32,رانندگی کردن,action_words,word,understands; produces,NA,drive,drive
+item_329,L33,راه رفتن,action_words,word,understands; produces,NA,walk,walk
+item_330,L34,رفتن,action_words,word,understands; produces,NA,go,go
+item_331,L35,زمین خوردن,action_words,word,understands; produces,NA,fall down,fall
+item_332,L36,سلام کردن,action_words,word,understands; produces,NA,hello,hello
+item_333,L37,سینه زدن,action_words,word,understands; produces,NA,breastfeed,NA
+item_334,L38,شناکردن,action_words,word,understands; produces,NA,swim,swim
+item_335,L39,طبل زدن/ضربه زدن/کوبیدن,action_words,word,understands; produces,NA,drum,drum
+item_336,L40,غذا دادن,action_words,word,understands; produces,NA,feed,feed
+item_337,L41,قلقلک دادن,action_words,word,understands; produces,NA,tickle,tickle
+item_338,L42,فوت کردن,action_words,word,understands; produces,NA,die,die
+item_339,L43,قصه گفتن,action_words,word,understands; produces,NA,tell a story,tell
+item_340,L44,کتک زدن,action_words,word,understands; produces,NA,beat,NA
+item_341,L45,کشیدن,action_words,word,understands; produces,NA,draw,draw
+item_342,L46,کمک کردن,action_words,word,understands; produces,NA,help,help
+item_343,L47,گاز گرفتن,action_words,word,understands; produces,NA,bite,bite
+item_344,L48,گریه کردن,action_words,word,understands; produces,NA,cry,cry
+item_345,L49,لج کردن/قهر کردن,action_words,word,understands; produces,NA,tumble,NA
+item_346,L50,لگد زدن,action_words,word,understands; produces,NA,kick,kick
+item_347,L51,لمس کردن/ دست زدن,action_words,word,understands; produces,NA,touch,touch
+item_348,L52,نانای کردن/ رقصیدن,action_words,word,understands; produces,NA,dance,dance
+item_349,L53,نقاشی کردن,action_words,word,understands; produces,NA,paint,paint (action)
+item_350,L54,نمازخواندن,action_words,word,understands; produces,NA,pray,NA
+item_351,L55,نوشتن,action_words,word,understands; produces,NA,write,write
+item_352,R1,امروز,time_words,word,understands; produces,NA,today,today
+item_353,R2,امشب,time_words,word,understands; produces,NA,tonight,tonight
+item_354,R3,بعداً,time_words,word,understands; produces,NA,later,later
+item_355,R4,حالا,time_words,word,understands; produces,NA,now,now
+item_356,R5,روز,time_words,word,understands; produces,NA,day,day
+item_357,R6,شب,time_words,word,understands; produces,NA,night,night
+item_358,R7,صبح,time_words,word,understands; produces,NA,morning,morning
+item_359,R8,فردا,time_words,word,understands; produces,NA,tomorrow,tomorrow
+item_360,W1,باز,descriptive_words,word,understands; produces,NA,open,NA
+item_361,W2,بد,descriptive_words,word,understands; produces,NA,bad,bad
+item_362,W3,بداخلاق,descriptive_words,word,understands; produces,NA,bad-tempered,NA
+item_363,W4,بزرگ,descriptive_words,word,understands; produces,NA,big,big
+item_364,W5,بسته,descriptive_words,word,understands; produces,NA,closed,NA
+item_365,W6,پُر,descriptive_words,word,understands; produces,NA,full,full
+item_366,W7,تاریک,descriptive_words,word,understands; produces,NA,dark,dark
+item_367,W8,تر / خیس,descriptive_words,word,understands; produces,NA,wet,wet (description)
+item_368,W9,تشنه,descriptive_words,word,understands; produces,NA,thirsty,thirsty
+item_369,W10,تمییز,descriptive_words,word,understands; produces,NA,distinction,NA
+item_370,W11,تند/زود/سریع,descriptive_words,word,understands; produces,NA,fast,fast
+item_371,W12,چاق,descriptive_words,word,understands; produces,NA,fat,fat
+item_372,W13,خالی,descriptive_words,word,understands; produces,NA,NA,NA
+item_373,W14,خاموش,descriptive_words,word,understands; produces,NA,off,off
+item_374,W15,خراب,descriptive_words,word,understands; produces,NA,broken,broken
+item_375,W16,خسته,descriptive_words,word,understands; produces,NA,tired,tired
+item_376,W17,خشک,descriptive_words,word,understands; produces,NA,dry,dry (description)
+item_377,W18,خوب,descriptive_words,word,understands; produces,NA,good,good
+item_378,W19,خوشمزه,descriptive_words,word,understands; produces,NA,delicious,tasty
+item_379,W20,خوشحال,descriptive_words,word,understands; produces,NA,happy,happy
+item_380,W21,خوش اخلاق,descriptive_words,word,understands; produces,NA,well-behaved,NA
+item_381,W22,داغ,descriptive_words,word,understands; produces,NA,NA,NA
+item_382,W23,روشن,descriptive_words,word,understands; produces,NA,bright,NA
+item_383,W24,زیاد,quantifiers,word,understands; produces,NA,much,much
+item_384,W25,سخت/سفت,descriptive_words,word,understands; produces,NA,hard,hard
+item_385,W26,سرد,descriptive_words,word,understands; produces,NA,cold,cold
+item_386,W27,سیر,descriptive_words,word,understands; produces,NA,NA,NA
+item_387,W28,شیطان,descriptive_words,word,understands; produces,NA,NA,NA
+item_388,W29,کثیف,descriptive_words,word,understands; produces,NA,dirty,dirty
+item_389,W30,کوچک,descriptive_words,word,understands; produces,NA,little,little (description)
+item_390,W31,کم,descriptive_words,word,understands; produces,NA,low,NA
+item_391,W32,گرسنه,descriptive_words,word,understands; produces,NA,hungry,hungry
+item_392,W33,لاغر,descriptive_words,word,understands; produces,NA,thin,thin
+item_393,W34,مریض,descriptive_words,word,understands; produces,NA,NA,NA
+item_394,W35,ناز/قشنگ,descriptive_words,word,understands; produces,NA,cute/beautiful,cute
+item_395,W36,ناراحت,descriptive_words,word,understands; produces,NA,upset,NA
+item_396,W37,یواش/آهسته,descriptive_words,word,understands; produces,NA,slow,slow
+item_397,X1,آن,pronouns,word,understands; produces,NA,NA,3SG
+item_398,X2,این,pronouns,word,understands; produces,NA,this,this
+item_399,X3,آنها,pronouns,word,understands; produces,NA,they,3PL
+item_400,X4,اینها,pronouns,word,understands; produces,NA,these,these
+item_401,X5,او,pronouns,word,understands; produces,NA,she,3SG
+item_402,X6,تو,pronouns,word,understands; produces,NA,you,2SG
+item_403,X7,شما,pronouns,word,understands; produces,NA,you,2PL
+item_404,X8,من,pronouns,word,understands; produces,NA,i,1SG
+item_405,X9,ما,pronouns,word,understands; produces,NA,we,1PL
+item_406,X10,مالِ من/ منِ,pronouns,word,understands; produces,NA,NA,1SG.POSS
+item_407,X11,مال تو/ توئه,pronouns,word,understands; produces,NA,yours/yours,2SG.POSS
+item_408,X12,مال اون/ اونه,pronouns,word,understands; produces,NA,his/hers,3SG.POSS
+item_409,Y1,چرا,question_words,word,understands; produces,NA,why,why
+item_410,Y2,چطوری/چگونه/ چه جوری,question_words,word,understands; produces,NA,how,how
+item_411,Y3,چی,question_words,word,understands; produces,NA,what,what
+item_412,Y4,کِی,question_words,word,understands; produces,NA,who,who
+item_413,Y5,کی(چه کسی),question_words,word,understands; produces,NA,who,who
+item_414,Y6,کجا/ کو,question_words,word,understands; produces,NA,NA,NA
+item_415,Z1,آنجا,locations,word,understands; produces,NA,there,there
+item_416,Z2,بالا,locations,word,understands; produces,NA,top,top
+item_417,Z3,بیرون/ خارج,locations,word,understands; produces,NA,out/out,NA
+item_418,Z4,پائین,locations,word,understands; produces,NA,down,down
+item_419,Z5,جلو,locations,word,understands; produces,NA,front,front
+item_420,Z6,داخل/ دَر/ توی,locations,word,understands; produces,NA,in/out,NA
+item_421,Z7,دور,locations,word,understands; produces,NA,far,far
+item_422,Z8,روی,locations,word,understands; produces,NA,NA,NA
+item_423,Z9,زیر,locations,word,understands; produces,NA,under,under
+item_424,Z10,عقب / پشت,locations,word,understands; produces,NA,back/back,NA
+item_425,Z11,کنار,locations,word,understands; produces,NA,next to,NA
+item_426,C1,بیشتر,quantifiers,word,understands; produces,NA,more,more
+item_427,C2,خیلی,quantifiers,word,understands; produces,NA,very,NA
+item_428,C3,همان قدر,quantifiers,word,understands; produces,NA,asmuch,NA
+item_429,C4,هیچکدام,quantifiers,word,understands; produces,NA,none,none
+item_430,C5,هیچی(نه),quantifiers,word,understands; produces,NA,nothing,nothing
+item_431,C6,یکی,quantifiers,word,understands; produces,NA,one,NA
+item_432,C7,همه,quantifiers,word,understands; produces,NA,all,all
+item_433,C8,یه کمی/مقداری/ یه کم دیگه,quantifiers,word,understands; produces,NA,a little (more),little (amount)
