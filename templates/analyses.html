@@ -23,13 +23,6 @@ Wordbank | Analyses
     <ul class="dropdown-menu" role="menu" id="drop-tabs-data">
     </ul>
   </li>
-  <li role="presentation" class="dropdown">
-    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
-      Reports <span class="caret"></span>
-    </a>
-    <ul class="dropdown-menu" role="menu" id="drop-tabs-reports">
-    </ul>
-  </li>
 </ul>
 </div>
 
@@ -61,7 +54,6 @@ $.getJSON("static/json/analyses.json", function(data) {
   var currentApp = window.location.search.split('=')[1];
   var main = $('#main-tabs');
   var menuData = $('#drop-tabs-data');
-  var menuReports = $('#drop-tabs-reports');
   for (var i in data) {
     var app = data[i];
     if (app['type'] == 'data') {
