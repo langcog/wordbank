@@ -8,8 +8,13 @@
 <link rel="stylesheet" href={% static "css/about.css" %}>
 
 <div class = "row">
-    <div class="col-md-9">
+    <div class="col-md-11">
         <h1 class="title toc-ignore">About Us</h1>
+        <p>
+            Contact us at 
+            <a href="mailto:wordbank-contact@stanford.edu" target="_blank">wordbank-contact@stanford.edu</a>
+            with any questions or concerns.
+        </p><br>
         <ul class="nav nav-tabs">
             <li class="active"><a data-toggle="tab" href="#menu1">Site Contributors</a></li>
             <li ><a data-toggle="tab" href="#home">Papers and Publications</a></li>
@@ -23,26 +28,6 @@
             <div id="menu1" class="tab-pane fade in active">
                 {% include "about_us/about_us.html" %}  
             </div>
-        </div>
-    </div>
-
-    <div class="col-md-3" style="padding-top: 60px;">
-        <div class="panel panel-primary">
-            <div class="list-group">
-                <a href="mailto:wordbank-contact@stanford.edu" target="_blank" class="list-group-item">
-                    Contact us!
-                </a>
-                <a href="https://github.com/langcog/wordbank" target="_blank" class="list-group-item">
-                    Wordbank on Github
-                </a>            
-                <a href="http://langcog.github.io/wordbankr" target="_blank" class="list-group-item">
-                    Tutorial on wordbankr
-                </a>
-                <a href="https://github.com/langcog/wordbankr" target="_blank" class="list-group-item">
-                    Wordbankr on Github
-                </a>
-            </div>
-
         </div>
     </div>
 </div>
