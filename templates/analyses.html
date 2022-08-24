@@ -7,23 +7,42 @@ Wordbank | Analyses
 
 {% block content %}
 
-<!--
-<div class="alert alert-dismissible alert-warning" align="center">
-  <p>Wordbank is under early development, and we make no guarantees about the accuracy of its data. Use at your own risk.</p>
-  <p>Have feedback? Email us at <a href="mailto:wordbank-contact@stanford.edu" target="_blank">wordbank-contact@stanford.edu</a>!</p>
-</div>
--->
-
 <div>
-<ul class="nav nav-tabs" id="main-tabs">
-  <li role="presentation" class="dropdown">
-    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
-      Data <span class="caret"></span>
-    </a>
-    <ul class="dropdown-menu" role="menu" id="drop-tabs-data">
-    </ul>
-  </li>
-</ul>
+  <ul class="nav nav-tabs" id="main-tabs">
+
+    {% for section in analyses %}
+
+      {% if section.name == "viz" %}
+        {% for app in section.apps %}
+          {% if app.name == name %}
+            <li role="presentation" class="active">
+              <a href="/analyses?name={{ app.name }}">{{ app.title }}</a>
+            </li>
+          {% else %}
+            <li role="presentation">
+              <a href="/analyses?name={{ app.name }}">{{ app.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+
+      {% if section.name == "data" %}
+        <li role="presentation" class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">{{ section.title }} <span class="caret"></span></a>
+
+          <ul class="dropdown-menu" role="menu" id="drop-tabs-data">
+          {% for app in section.apps %}
+            <li role="presentation">
+              <a href="/analyses?name={{ app.name }}">{{ app.title }}</a>
+            </li>
+          {% endfor %}
+          </ul>
+        </li>
+      {% endif %}
+
+    {% endfor %}
+
+  </ul>
 </div>
 
 <div id="wait" class="loader" align="center">
@@ -47,30 +66,6 @@ Wordbank | Analyses
     $('#analysis').load(function() {
         displayAnalysis();
     });
-</script>
-
-<script>
-$.getJSON("static/json/analyses.json", function(data) {
-  var currentApp = window.location.search.split('=')[1];
-  var main = $('#main-tabs');
-  var menuData = $('#drop-tabs-data');
-  for (var i in data) {
-    var app = data[i];
-    if (app['type'] == 'data') {
-      var li = $('<li>').attr('role', "presentation").prependTo(menuData)
-    } else {
-      var li = $('<li>').attr('role', "presentation").prependTo(main)
-    }
-    if (app['name'] == currentApp) {
-      li.attr('class', "active");
-    }
-    if (app['source'] == 'shiny') {
-      var link = $('<a>').attr('href', '/analyses?name=' + app['name']).text(app['title']).appendTo(li);
-    } else if (app['source'] == 'html') {
-      var link = $('<a>').attr('href', app['link']).attr('target', '_blank').text(app['title']).appendTo(li);
-    }
-  };
-}).error(function(error){console.log(error);}).fail(function(){console.log(arguments);})
 </script>
 
 {% endblock %}

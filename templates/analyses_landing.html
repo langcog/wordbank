@@ -7,62 +7,39 @@ Wordbank | Analyses
 
 {% block content %}
 
-<link rel="stylesheet" href={% static "third_party/dc.css" %}>
+{# <link rel="stylesheet" href={% static "third_party/dc.css" %}> #}
 <link rel="stylesheet" href={% static "css/analyses.css" %}>
 
-<!--
-<div class="alert alert-dismissible alert-warning" align="center">
-  <p>Wordbank is under early development, and we make no guarantees about the accuracy of its data. Use at your own risk.</p>
-  <p>Have feedback? Email us at <a href="mailto:wordbank-contact@stanford.edu" target="_blank">wordbank-contact@stanford.edu</a>!</p>
-</div>
--->
 <div class="panel panel-primary">
   <div class="panel-heading">
-    <h3 class="panel-title">Wordbank Book</h3>
+    <p class="panel-title section-name">Wordbank Book</p>
   </div>
   <div class="panel-body" id="wordbank_book">
-    <p>Many common analyses of Wordbank data are described in detail in the Wordbank Book, available at <a href="https://wordbank-book.stanford.edu">https://wordbank-book.stanford.edu</a> and from MIT Press.</p>
+    Many analyses of Wordbank data are described in detail in the Wordbank Book, available at <a href="https://wordbank-book.stanford.edu">wordbank-book.stanford.edu</a> and from MIT Press.
   </div>
 </div>
+
+{% for section in analyses %}
 
 <div class="panel panel-primary">
   <div class="panel-heading">
-    <h3 class="panel-title">Interactive Visualizations and Tools</h3>
+    <p class="panel-title section-name">{{ section.title }}</p>
   </div>
-  <div class="panel-body" id="visualizations">
+
+  <div class="panel-body">
+    {% for app in section.apps %}
+    <div class="col-sm-3">
+      <a href="/analyses?name={{ app.name }}">
+        <p class="analysis-name">{{ app.title }}</p>
+        <div class="thumbnail">
+          <img src="{% static app.thumbnail %}" style="width:100%"/>
+        </div>
+      </a>
+    </div>
+    {% endfor %}
   </div>
 </div>
 
-<div class="panel panel-primary">
-  <div class="panel-heading">
-    <h3 class="panel-title">Data Export Tools</h3>
-  </div>
-  <div class="panel-body" id="data">
-  </div>
-</div>
-
-
-<script>
-    $.getJSON("static/json/analyses.json", function(data) {
-              //var apps = $('#apps');
-              for (var i in data) {
-                var app = data[i];
-                console.log(app);
-                var panel = $('#' + app['type']);
-                var col = $('<div>').attr('class', "col-md-3").attr('align', "center").prependTo(panel);
-                if (app['source'] == 'shiny') {
-                  var rep = $('<p>').attr('class', "analysisName").appendTo(col);
-                  var link = $('<a>').attr('href', '/analyses?name=' + app['name']).text(app['title']).appendTo(rep);
-                  var brk = $('<br>').appendTo(col);
-                  var img = $('<img>').attr('class', 'img-thumbnail').attr('src', app['thumbnail']).appendTo(link);
-                } else if (app['source'] == 'html') {
-                  var well = $('<div>').attr('class', 'well well-sm').appendTo(col)
-                  var rep = $('<p>').attr('class', "analysisName").appendTo(well);
-                  var link = $('<a>').attr('href', app['link']).attr('target', '_blank').text(app['title']).appendTo(rep);
-                }
-              };
-              }).error(function(error){console.log(error);}).fail(function () { console.log(arguments); });
-</script>
-
+{% endfor %}
 
 {% endblock %}

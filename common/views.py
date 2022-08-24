@@ -73,12 +73,13 @@ class Contributors(View):
 class Analyses(View):
 
     def get(self, request):
+        analyses = json.loads(open('wordbank/static/json/analyses.json', encoding='utf8').read())
         if 'name' in request.GET:
             name = request.GET['name']
             link = 'http://%s/%s' % (settings.SHINY_SERVER_IP, name)
-            return render(request, 'analyses.html', { 'source': link })
+            return render(request, 'analyses.html', {'name': name, 'source': link, 'analyses': analyses})
         else:
-            return render(request, 'analyses_landing.html', {})
+            return render(request, 'analyses_landing.html', {'analyses': analyses})
 
 class Blog(View):
 

@@ -1,12 +1,16 @@
-.img-thumbnail {
+/*.img-thumbnail {
   width: 270px;
   height: 200px;
   border: 1px solid #ddd;
   border-radius: 0px;
   padding: 4px;
+}*/
+
+.section-name {
+  font-size: 130%;
 }
 
-.analysisName {
+.analysis-name {
   font-size: 125%;
   margin-bottom: 0px;
 }

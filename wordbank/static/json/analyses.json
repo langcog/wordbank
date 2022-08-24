@@ -1,51 +1,49 @@
 [
-{
-  "title": "Full Child-by-Word Data",
-  "name": "instrument_data",
-  "thumbnail": "static/images/sample_plots/instrument_data.png",
-  "type": "data",
-  "source": "shiny"
-},
-{
-  "title": "By-Word Summary Data",
-  "name": "item_data",
-  "thumbnail": "static/images/sample_plots/item_data.png",
-  "type": "data",
-  "source": "shiny"
-},
-{
-  "title": "By-Child Summary Data",
-  "name": "admin_data",
-  "thumbnail": "static/images/sample_plots/admin_data.png",
-  "type": "data",
-  "source": "shiny"
-},
-{
-  "title": "Semantic Networks",
-  "name": "networks",
-  "thumbnail": "static/images/sample_plots/networks.png",
-  "type": "visualizations",
-  "source": "shiny"
-},
-{
-  "title": "Cross-Linguistic Trajectories",
-  "name": "uni_lemmas",
-  "thumbnail": "static/images/sample_plots/uni_lemmas.png",
-  "type": "visualizations",
-  "source": "shiny"
-},
-{
-  "title": "Item Trajectories",
-  "name": "item_trajectories",
-  "thumbnail": "static/images/sample_plots/items.png",
-  "type": "visualizations",
-  "source": "shiny"
-},
-{
-  "title": "Vocabulary Norms",
-  "name": "vocab_norms",
-  "thumbnail": "static/images/sample_plots/norms.png",
-  "type": "visualizations",
-  "source": "shiny"
-}
+  {
+    "title": "Interactive Visualizations and Tools",
+    "name": "viz",
+    "apps": [
+      {
+        "title": "Vocabulary Norms",
+        "name": "vocab_norms",
+        "thumbnail": "images/sample_plots/vocab_norms_thumb.png"
+      },
+      {
+        "title": "Item Trajectories",
+        "name": "item_trajectories",
+        "thumbnail": "images/sample_plots/item_trajectories_thumb.png"
+      },
+      {
+        "title": "Cross-Linguistic Trajectories",
+        "name": "uni_lemmas",
+        "thumbnail": "images/sample_plots/uni_lemmas_thumb.png"
+      },
+      {
+        "title": "Semantic Networks",
+        "name": "networks",
+        "thumbnail": "images/sample_plots/networks_thumb.png"
+      }
+    ]
+  },
+  {
+   "title": "Data Export Tools",
+   "name": "data",
+   "apps": [
+    {
+      "title": "By-Child Summary Data",
+      "name": "admin_data",
+      "thumbnail": "images/sample_plots/admin_data_thumb.png"
+    },
+    {
+      "title": "By-Word Summary Data",
+      "name": "item_data",
+      "thumbnail": "images/sample_plots/item_data_thumb.png"
+    },
+    {
+      "title": "Full Child-by-Word Data",
+      "name": "instrument_data",
+      "thumbnail": "images/sample_plots/instrument_data_thumb.png"
+    }
+  ]
+ }
 ]
