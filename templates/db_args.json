@@ -1,0 +1,6 @@
+{
+	"host":"wordbank2-prod.canyiscnpddk.us-west-2.rds.amazonaws.com",
+	"dbname": "wordbank",
+	"user": "wordbank_reader",
+	"password": "ICanOnlyRead@99"
+}
