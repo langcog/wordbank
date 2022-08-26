@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block title %}
-Wordbank | Analyses
+Wordbank | Data
 {% endblock %}
 
 {% block content %}
@@ -15,7 +15,7 @@ Wordbank | Analyses
       {% if section.name == "viz" %}
         {% for app in section.apps %}
           <li role="presentation" {% if app.name == name %} class="active"{% endif %}>
-            <a href="/analyses?name={{ app.name }}">{{ app.title }}</a>
+            <a href="/data?name={{ app.name }}">{{ app.title }}</a>
           </li>
         {% endfor %}
       {% endif %}
@@ -27,7 +27,7 @@ Wordbank | Analyses
           <ul class="dropdown-menu" role="menu" id="drop-tabs-data">
           {% for app in section.apps %}
             <li role="presentation">
-              <a href="/analyses?name={{ app.name }}">{{ app.title }}</a>
+              <a href="/data?name={{ app.name }}">{{ app.title }}</a>
             </li>
           {% endfor %}
           </ul>

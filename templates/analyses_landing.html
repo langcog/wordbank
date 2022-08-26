@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block title %}
-Wordbank | Analyses
+Wordbank | Data
 {% endblock %}
 
 {% block content %}
@@ -29,7 +29,7 @@ Wordbank | Analyses
   <div class="panel-body">
     {% for app in section.apps %}
     <div class="col-sm-3">
-      <a href="/analyses?name={{ app.name }}">
+      <a href="/data?name={{ app.name }}">
         <p class="analysis-name">{{ app.title }}</p>
         <div class="thumbnail">
           <img src="{% static app.thumbnail %}" style="width:100%"/>
