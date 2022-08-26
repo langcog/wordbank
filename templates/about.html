@@ -6,26 +6,28 @@
 {% block content %}
 
 <link rel="stylesheet" href={% static "css/about.css" %}>
+<link rel="stylesheet" href={% static "css/callouts.css" %}>
 
 <div class = "row">
     <div class="col-md-11">
-        <h1 class="title toc-ignore">About Us</h1>
-        <p><br>
+        <div class="bs-callout bs-callout-info">
             Contact us at 
             <a href="mailto:wordbank-contact@stanford.edu" target="_blank">wordbank-contact@stanford.edu</a>
             with any questions or concerns.
-        </p><br>
+        </div>
+
         <ul class="nav nav-tabs">
-            <li class="active"><a data-toggle="tab" href="#menu1">Project Contributors</a></li>
-            <li><a data-toggle="tab" href="#home">Papers and Publications</a></li>
+            <li class="active"><a data-toggle="tab" href="#team">Project Contributors</a></li>
+            <li><a data-toggle="tab" href="#pubs">Papers and Publications</a></li>
         </ul>
         <br>
+
         <div class="tab-content" id="nav-tabContent">
-            <div id="home" class="tab-pane fade">
-                {% include "about/_publications.html" %}
-            </div>
-            <div id="menu1" class="tab-pane fade in active">
+            <div id="team" class="tab-pane fade in active">
                 {% include "about/_team.html" %}  
+            </div>
+            <div id="pubs" class="tab-pane fade">
+                {% include "about/_publications.html" %}
             </div>
         </div>
     </div>

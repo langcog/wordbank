@@ -16,7 +16,7 @@ urlpatterns = urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^$', Home.as_view(), name='home'),
     url(r'about', About.as_view(), name='about'),
-    url(r'analyses', Analyses.as_view(), name='analyses'),
+    url(r'data', Analyses.as_view(), name='data'),
     url(r'contributors', Contributors.as_view(), name='contributors'),
     url(r'blog', Blog.as_view(), name='blog'),
     url(r'faq', Faq.as_view(), name='faq'),

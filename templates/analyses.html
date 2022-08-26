@@ -14,15 +14,9 @@ Wordbank | Analyses
 
       {% if section.name == "viz" %}
         {% for app in section.apps %}
-          {% if app.name == name %}
-            <li role="presentation" class="active">
-              <a href="/analyses?name={{ app.name }}">{{ app.title }}</a>
-            </li>
-          {% else %}
-            <li role="presentation">
-              <a href="/analyses?name={{ app.name }}">{{ app.title }}</a>
-            </li>
-          {% endif %}
+          <li role="presentation" {% if app.name == name %} class="active"{% endif %}>
+            <a href="/analyses?name={{ app.name }}">{{ app.title }}</a>
+          </li>
         {% endfor %}
       {% endif %}
 
