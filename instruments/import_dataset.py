@@ -78,13 +78,13 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
                     language_detail = language.split(';')
                     lang = language_detail[0]
                     try:
-                        age = language_detail[1]
+                        age = language_detail[2]
                         if not int(age):
                             age = None
                     except Exception:
                         age = None
                     try:
-                        prop = language_detail[2]
+                        prop = language_detail[1]
                         if not int(prop): 
                             prop = None
                     except Exception:
