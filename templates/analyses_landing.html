@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block title %}
-Wordbank | Analyses
+Wordbank | Data
 {% endblock %}
 
 {% block content %}
@@ -29,7 +29,7 @@ Wordbank | Analyses
   <div class="panel-body">
     {% for app in section.apps %}
     <div class="col-sm-3">
-      <a href="/analyses?name={{ app.name }}">
+      <a href="/data?name={{ app.name }}">
         <p class="analysis-name">{{ app.title }}</p>
         <div class="thumbnail">
           <img src="{% static app.thumbnail %}" style="width:100%"/>
@@ -66,7 +66,7 @@ Wordbank | Analyses
 
           <li class="list-group-item">
             <h4 class="list-group-item-heading">Previous versions</h4>
-            <p>Periodic snapshots of the Wordbank database are available for download. For instructions on how to do so, see <a href="" target="_blank">here</a>.</p>
+            <p>Periodic snapshots of the Wordbank database are available for download. For instructions on how to access them, see <a href="https://github.com/langcog/wordbank/wiki/Accessing-previous-database-versions" target="_blank">here</a>.</p>
           </li>
         </ul>
 
@@ -99,6 +99,15 @@ Wordbank | Analyses
       <div class="panel-heading"><p class="panel-title section-name">Unilemmas</p></div>
       <div class="panel-body">
         Wordbank includes mappings between words in different languages using hand-checked translation equivalents called "unilemmas" (universal lemmas). These allow comparison of similar conceptual material across different languages. Translation equivalence is a very tricky concept! Just think about how the Spanish word "reloj" should be translated to English - is it "clock"? "watch"? or both? We have an extensive policy that has guided our choices, <a href="https://github.com/langcog/update_unilemmas/blob/main/unilemma_policy.md" target="_blank">available here</a>. You can also see and contribute to our <a href="https://github.com/langcog/update_unilemmas" target="_blank">unilemma codebase</a>.
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="panel panel-default">
+      <div class="panel-heading"><p class="panel-title section-name">Teaching</p></div>
+      <div class="panel-body">
+        Wordbank can be a useful teaching tool. For some examples, see this <a href="https://docs.google.com/presentation/d/1VnhKdCBOzgxaaCwm3CsTtF-Cu3gfsl7Kgz1CwQ5c_SE/edit" target="_blank">in-class exercise</a> and accompanying <a href="https://docs.google.com/document/d/1UOHuF26t19HLPswsVm46ivA7nS98Z3G9ht9GwCtJYJ0/edit" target="_blank">assignment</a> created by <a href="https://sites.google.com/site/caitlinmfausey/" target="_blank">Caitlin Fausey</a>, as well as the <a href="https://github.com/mikabr/acq-tools" target="_blank">materials</a> for a workshop taught by <a href="https://web.stanford.edu/~mcfrank/" target="_blank">Michael Frank</a> and <a href="https://mikabr.io/" target="_blank">Mika Braginsky</a>.
       </div>
     </div>
   </div>
