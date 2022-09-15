@@ -6,6 +6,8 @@ race,Race,child,race
 mom_ed,MotherEd,child,mom_ed
 sex,Gender,child,sex
 study_id,ParticipantId,child,study_id
+languages,EngPropCDI,admin,language
+languages,SpanPropCDI,admin,language
 item_11,am,item,word
 item_12,ay,item,word
 item_10,beemee,item,word
