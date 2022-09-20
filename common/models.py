@@ -14,7 +14,7 @@ class DatasetOrigin(models.Model):
         db_table = 'common_dataset_origin'
 
 class Dataset(models.Model):
-    dataset_name = models.CharField(max_length=20)
+    dataset_name = models.CharField(max_length=121)
     contributor = models.TextField(blank=True)
     citation = models.TextField(blank=True)
     licenses = (('CC-BY', 'CC BY 4.0'),
