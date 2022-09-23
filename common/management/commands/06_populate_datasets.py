@@ -27,16 +27,18 @@ class Command(BaseCommand):
                          'citation': source['citation'],
                          'longitudinal': source['longitudinal'],
                          'license': source['license'],
+                         #'source': source['dataset'],
             }
 
-            dataset_name = f"{source['name']} {source['dataset']}"
+            
 
             instrument = Instrument.objects.get(language=source['instrument_language'], form=source['instrument_form'])
             data_set, created = Dataset.objects.update_or_create(
                 dataset_origin=dataset_origin,
-                dataset_name=dataset_name,
-                #source_dataset=source['dataset'],
+                dataset_name=source['name'],
+                source=source['dataset'],
                 instrument=instrument,
                 defaults=data_dict
                 )
-
+            if created:
+                print(f"   Created dataset file {source['file']}")
