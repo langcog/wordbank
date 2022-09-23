@@ -56,7 +56,7 @@ class Command(BaseCommand):
 
         for dataset in input_datasets:
 
-            dataset_name =  f"{dataset['name']} {dataset['dataset']}"
+            dataset_name =  f"{dataset['name']}"
             dataset_dataset = dataset['dataset']
             dataset_file = dataset['file']
             splitcol = dataset['splitcol']
@@ -80,7 +80,8 @@ class Command(BaseCommand):
             instruments_map = Instrument.objects.get(language=instrument_language, form=instrument_form)
             administrations = Administration.objects.filter(dataset=Dataset.objects.get(dataset_name=dataset_name,
                                                       instrument=instruments_map,
-                                                      dataset_origin=dataset_origin))
+                                                      dataset_origin=dataset_origin,
+                                                      source = dataset_dataset))
             print(f'   Deleting {len(administrations)} exisiting records')
             for admin in administrations:
                 try:

@@ -15,6 +15,7 @@ class DatasetOrigin(models.Model):
 
 class Dataset(models.Model):
     dataset_name = models.CharField(max_length=121)
+    source = models.CharField(max_length=21, blank=True, null=True)
     contributor = models.TextField(blank=True)
     citation = models.TextField(blank=True)
     licenses = (('CC-BY', 'CC BY 4.0'),

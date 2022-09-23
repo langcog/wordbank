@@ -59,6 +59,7 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
                 study_internal_age=administration_data['data_age'],
                 dataset = Dataset.objects.get(
                     dataset_name=dataset_name,
+                    source=dataset_dataset,
                     instrument=instruments_map,
                     dataset_origin=dataset_origin_name)
             )
