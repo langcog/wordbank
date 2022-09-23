@@ -56,7 +56,7 @@ class Command(BaseCommand):
 
         for dataset in input_datasets:
 
-            dataset_name = dataset['name']
+            dataset_name =  f"{dataset['name']} {dataset['dataset']}"
             dataset_dataset = dataset['dataset']
             dataset_file = dataset['file']
             splitcol = dataset['splitcol']

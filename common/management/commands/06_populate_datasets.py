@@ -29,10 +29,12 @@ class Command(BaseCommand):
                          'license': source['license'],
             }
 
+            dataset_name = f"{source['name']} {source['dataset']}"
+
             instrument = Instrument.objects.get(language=source['instrument_language'], form=source['instrument_form'])
             data_set, created = Dataset.objects.update_or_create(
                 dataset_origin=dataset_origin,
-                dataset_name=source['name'],
+                dataset_name=dataset_name,
                 #source_dataset=source['dataset'],
                 instrument=instrument,
                 defaults=data_dict

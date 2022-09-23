@@ -15,7 +15,7 @@ Wordbank | Data
       {% if section.name == "viz" %}
         {% for app in section.apps %}
           <li role="presentation" {% if app.name == name %} class="active"{% endif %}>
-            <a href="/data?name={{ app.name }}">{{ app.title }}</a>
+            <a href="{% url 'data' %}?name={{ app.name }}">{{ app.title }}</a>
           </li>
         {% endfor %}
       {% endif %}
@@ -26,8 +26,8 @@ Wordbank | Data
 
           <ul class="dropdown-menu" role="menu" id="drop-tabs-data">
           {% for app in section.apps %}
-            <li role="presentation">
-              <a href="/data?name={{ app.name }}">{{ app.title }}</a>
+            <li role="presentation"> 
+              <a href="{% url 'data' %}?name={{ app.name }}">{{ app.title }}</a>
             </li>
           {% endfor %}
           </ul>
