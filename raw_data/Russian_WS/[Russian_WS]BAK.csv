@@ -1,5 +1,5 @@
 definition,category,item,type,choices,complexity_category,itemID,gloss,uni_lemma
-а-а-а,sounds,NA,word,produces,NA,item_1,"ahhh (revelation, scary), weee (excitment),",wee woo
+а-а-а,sounds,NA,word,produces,NA,item_1,NA,wee woo
 ав,sounds,NA,word,produces,NA,item_2,Woof-woof,woof woof
 алё,sounds,NA,word,produces,NA,item_3,Ring-ring,hello
 ам-ам/ням-ням,sounds,NA,word,produces,NA,item_4,Yum-yum,yum yum
@@ -32,7 +32,7 @@ definition,category,item,type,choices,complexity_category,itemID,gloss,uni_lemma
 тук-тук,sounds,NA,word,produces,NA,item_31,Rat-a-tat,knock knock
 ту-ту/чух-чух,sounds,NA,word,produces,NA,item_32,Choo-choo,choo choo
 уу,sounds,NA,word,produces,NA,item_33,Awooooo,awoo
-фу,sounds,NA,word,produces,NA,item_34,"ew, pee-yoo",yucky
+фу,sounds,NA,word,produces,NA,item_34,NA,yucky
 хрр/хрю,sounds,NA,word,produces,NA,item_35,Oink-oink,oink
 чик,sounds,NA,word,produces,NA,item_36,Click-click,click
 шш,sounds,NA,word,produces,NA,item_37,Sss,hiss
@@ -47,16 +47,16 @@ definition,category,item,type,choices,complexity_category,itemID,gloss,uni_lemma
 гусь,animals,NA,word,produces,NA,item_46,goose,goose
 ёж,animals,NA,word,produces,NA,item_47,hedgehog,hedgehog
 жираф,animals,NA,word,produces,NA,item_48,giraffe,giraffe
-жук,animals,NA,word,produces,NA,item_49,bug,beetle
+жук,animals,NA,word,produces,NA,item_49,bug,bug
 заяц,animals,NA,word,produces,NA,item_50,hare,bunny
 звери,animals,NA,word,produces,NA,item_51,animals,animal
 змея,animals,NA,word,produces,NA,item_52,snake,snake
 коза,animals,NA,word,produces,NA,item_53,goat,goat
 комар,animals,NA,word,produces,NA,item_54,mosquito,mosquito
-конь,animals,NA,word,produces,NA,item_55,horse,horse
+конь,animals,NA,word,produces,NA,item_55,horse,stallion
 корова,animals,NA,word,produces,NA,item_56,cow,cow
 кошка,animals,NA,word,produces,NA,item_57,cat,cat
-крокодил,animals,NA,word,produces,NA,item_58,crocodile,crocodile
+крокодил,animals,NA,word,produces,NA,item_58,crocodile,alligator
 курица (animal),animals,NA,word,produces,NA,item_59,hen,chicken (animal)
 лев,animals,NA,word,produces,NA,item_60,lion,lion
 лиса,animals,NA,word,produces,NA,item_61,fox,fox
@@ -134,7 +134,7 @@ definition,category,item,type,choices,complexity_category,itemID,gloss,uni_lemma
 йогурт,food_drink,NA,word,produces,NA,item_133,yogurt,yogurt
 капуста,food_drink,NA,word,produces,NA,item_134,cabbage,cabbage
 картошка,food_drink,NA,word,produces,NA,item_135,potato,potato
-каша,food_drink,NA,word,produces,NA,item_136,porridge,porridge
+каша,food_drink,NA,word,produces,NA,item_136,porridge,cereal
 кефир,food_drink,NA,word,produces,NA,item_137,yogurt drink,yogurt drink
 киви,food_drink,NA,word,produces,NA,item_138,kiwi,kiwi
 колбаса,food_drink,NA,word,produces,NA,item_139,sausage,sausage
@@ -157,7 +157,7 @@ definition,category,item,type,choices,complexity_category,itemID,gloss,uni_lemma
 огурец,food_drink,NA,word,produces,NA,item_156,cucumber,cucumber
 оладьи,food_drink,NA,word,produces,NA,item_157,thick pancake,pancake
 печенье,food_drink,NA,word,produces,NA,item_158,cookie,cookie
-пирог,food_drink,NA,word,produces,NA,item_159,pie,pie
+пирог,food_drink,NA,word,produces,NA,item_159,pie,cake
 помидор,food_drink,NA,word,produces,NA,item_160,tomato,tomato
 пряник,food_drink,NA,word,produces,NA,item_161,spice-cake,cookie
 рис,food_drink,NA,word,produces,NA,item_162,rice,rice
@@ -168,7 +168,7 @@ definition,category,item,type,choices,complexity_category,itemID,gloss,uni_lemma
 сметана,food_drink,NA,word,produces,NA,item_167,sour cream,sour cream
 сок,food_drink,NA,word,produces,NA,item_168,juice,juice
 соль,food_drink,NA,word,produces,NA,item_169,salt,salt
-сосиска,food_drink,NA,word,produces,NA,item_170,sausage,sausage
+сосиска,food_drink,NA,word,produces,NA,item_170,sausage,hot dog
 суп,food_drink,NA,word,produces,NA,item_171,soup,soup
 сыр,food_drink,NA,word,produces,NA,item_172,cheese,cheese
 творог,food_drink,NA,word,produces,NA,item_173,cottage cheese,cottage cheese
@@ -262,13 +262,13 @@ definition,category,item,type,choices,complexity_category,itemID,gloss,uni_lemma
 ложка,household,NA,word,produces,NA,item_261,spoon,spoon
 магнитофон,household,NA,word,produces,NA,item_262,tape recorder,voice recorder
 молоток,household,NA,word,produces,NA,item_263,hammer,hammer
-монетка,household,NA,word,produces,NA,item_264,coin,coin
+монетка,household,NA,word,produces,NA,item_264,coin,penny
 мусор,household,NA,word,produces,NA,item_265,garbage/trash,trash
 мыло,household,NA,word,produces,NA,item_266,soap,soap
 нож,household,NA,word,produces,NA,item_267,knife,knife
 ножницы,household,NA,word,produces,NA,item_268,scissors,scissors
 одеяло,household,NA,word,produces,NA,item_269,blanket/quilt,blanket
-платок,household,NA,word,produces,NA,item_270,handkerchief,handkerchief
+платок,household,NA,word,produces,NA,item_270,handkerchief,tissue
 плита,household,NA,word,produces,NA,item_271,stove,stove
 подушка,household,NA,word,produces,NA,item_272,pillow,pillow
 полотенце,household,NA,word,produces,NA,item_273,towel,towel
@@ -309,7 +309,7 @@ definition,category,item,type,choices,complexity_category,itemID,gloss,uni_lemma
 кресло,furniture_rooms,NA,word,produces,NA,item_308,arm-chair,armchair
 кровать,furniture_rooms,NA,word,produces,NA,item_309,bed,bed
 кухня,furniture_rooms,NA,word,produces,NA,item_310,kitchen,kitchen
-лестница,furniture_rooms,NA,word,produces,NA,item_311,stairs,stairs
+лестница,furniture_rooms,NA,word,produces,NA,item_311,stairs,ladder
 лифт,furniture_rooms,NA,word,produces,NA,item_312,elevator,elevator
 манеж,furniture_rooms,NA,word,produces,NA,item_313,playpen,play pen
 мебель,furniture_rooms,NA,word,produces,NA,item_314,furniture,furniture

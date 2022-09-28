@@ -1,5 +1,5 @@
 definition,category,item,type,choices,complexity_category,itemID,gloss,uni_lemma
-а-а-а,sounds,NA,word,understands; produces,NA,item_29,"ahhh (revelation, scary), weee (excitment),",wee woo
+а-а-а,sounds,NA,word,understands; produces,NA,item_29,NA,wee woo
 ав,sounds,NA,word,understands; produces,NA,item_30,Woof-woof,woof woof
 алё,sounds,NA,word,understands; produces,NA,item_31,Ring-ring,hello
 ам-ам/ням-ням,sounds,NA,word,understands; produces,NA,item_32,Yum-yum,yum yum
@@ -32,7 +32,7 @@ definition,category,item,type,choices,complexity_category,itemID,gloss,uni_lemma
 тук-тук,sounds,NA,word,understands; produces,NA,item_59,Rat-a-tat,knock knock
 ту-ту/чух-чух,sounds,NA,word,understands; produces,NA,item_60,Choo-choo,choo choo
 уу,sounds,NA,word,understands; produces,NA,item_61,Awooooo,awoo
-фу,sounds,NA,word,understands; produces,NA,item_62,"ew, pee-yoo",yucky
+фу,sounds,NA,word,understands; produces,NA,item_62,NA,yucky
 хрр/хрю,sounds,NA,word,understands; produces,NA,item_63,Oink-oink,oink
 чик,sounds,NA,word,understands; produces,NA,item_64,Click-click,click
 шш,sounds,NA,word,understands; produces,NA,item_65,Sss,hiss
@@ -44,7 +44,7 @@ definition,category,item,type,choices,complexity_category,itemID,gloss,uni_lemma
 гусь,animals,NA,word,understands; produces,NA,item_71,goose,goose
 ёж,animals,NA,word,understands; produces,NA,item_72,hedgehog,hedgehog
 жираф,animals,NA,word,understands; produces,NA,item_73,giraffe,giraffe
-жук,animals,NA,word,understands; produces,NA,item_74,bug,beetle
+жук,animals,NA,word,understands; produces,NA,item_74,bug,bug
 заяц,animals,NA,word,understands; produces,NA,item_75,hare,bunny
 змея,animals,NA,word,understands; produces,NA,item_76,snake,snake
 кенгуру,animals,NA,word,understands; produces,NA,item_77,kangaroo,kangaroo
@@ -96,7 +96,7 @@ definition,category,item,type,choices,complexity_category,itemID,gloss,uni_lemma
 йогурт,food_drink,NA,word,understands; produces,NA,item_122,yogurt,yogurt
 капуста,food_drink,NA,word,understands; produces,NA,item_123,cabbage,cabbage
 картошка,food_drink,NA,word,understands; produces,NA,item_124,potato,potato
-каша,food_drink,NA,word,understands; produces,NA,item_125,porridge,porridge
+каша,food_drink,NA,word,understands; produces,NA,item_125,porridge,cereal
 кефир,food_drink,NA,word,understands; produces,NA,item_126,yogurt drink,yogurt drink
 компот,food_drink,NA,word,understands; produces,NA,item_127,compote,compote
 конфета,food_drink,NA,word,understands; produces,NA,item_128,sweet,candy
@@ -110,7 +110,7 @@ definition,category,item,type,choices,complexity_category,itemID,gloss,uni_lemma
 помидор,food_drink,NA,word,understands; produces,NA,item_136,tomato,tomato
 рыба,food_drink,NA,word,understands; produces,NA,item_137,fish,fish (food)
 сок,food_drink,NA,word,understands; produces,NA,item_138,juice,juice
-сосиска,food_drink,NA,word,understands; produces,NA,item_139,sausage,sausage
+сосиска,food_drink,NA,word,understands; produces,NA,item_139,sausage,hot dog
 суп,food_drink,NA,word,understands; produces,NA,item_140,soup,soup
 сыр,food_drink,NA,word,understands; produces,NA,item_141,cheese,cheese
 творог,food_drink,NA,word,understands; produces,NA,item_142,cottage cheese,cottage cheese
@@ -167,7 +167,7 @@ definition,category,item,type,choices,complexity_category,itemID,gloss,uni_lemma
 кресло,furniture_rooms,NA,word,understands; produces,NA,item_193,arm-chair,armchair
 кровать,furniture_rooms,NA,word,understands; produces,NA,item_194,bed,bed
 кухня,furniture_rooms,NA,word,understands; produces,NA,item_195,kitchen,kitchen
-лестница,furniture_rooms,NA,word,understands; produces,NA,item_196,stairs,stairs
+лестница,furniture_rooms,NA,word,understands; produces,NA,item_196,stairs,ladder
 лифт,furniture_rooms,NA,word,understands; produces,NA,item_197,elevator,elevator
 окно,furniture_rooms,NA,word,understands; produces,NA,item_198,window,window
 пол,furniture_rooms,NA,word,understands; produces,NA,item_199,floor,floor
@@ -193,7 +193,7 @@ definition,category,item,type,choices,complexity_category,itemID,gloss,uni_lemma
 ложка,household,NA,word,understands; produces,NA,item_219,spoon,spoon
 магнитофон,household,NA,word,understands; produces,NA,item_220,tape recorder,voice recorder
 молоток,household,NA,word,understands; produces,NA,item_221,hammer,hammer
-монетка,household,NA,word,understands; produces,NA,item_222,coin,coin
+монетка,household,NA,word,understands; produces,NA,item_222,coin,penny
 мусор,household,NA,word,understands; produces,NA,item_223,garbage/trash,trash
 мыло,household,NA,word,understands; produces,NA,item_224,soap,soap
 нож,household,NA,word,understands; produces,NA,item_225,knife,knife
