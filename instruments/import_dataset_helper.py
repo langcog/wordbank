@@ -58,7 +58,7 @@ class ImportHelper:
                 return value == 'TRUE'
             elif field_type in ('date_of_birth, date_of_test'):
                 return self.format_date(value)
-            elif field_type in ('race', 'ethnicity', 'sex', 'mom_ed', 'zygosity','condition') or group == 'item':
+            elif field_type in ('race', 'ethnicity', 'sex', 'mom_ed', 'zygosity','condition','complexity') or group == 'item':
                 value = self.value_typing(value).lower()
                 if self.splitcol and field_type == 'word':
                     value += column[-1]
@@ -66,11 +66,12 @@ class ImportHelper:
                     return self.value_mapping[field_type][value]
                 except:
                     raise KeyError(f"Value mapping doesn't have entry for field type { field_type } and value { value }.  { column }")
-        except Exception:
+        except Exception as e:
             if self.splitcol and field_type == 'word':
                     value = value[:-1]
             if value in self.missing_values:
-                return None
+                print(f"EXCEPTION {e} for {column}, {field_type}, {group}")
+                return ''
             else:
                 raise KeyError(f"Value mapping doesn't have entry for field type { field_type } and value { value }.  { column }")
             
