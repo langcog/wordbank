@@ -13,7 +13,8 @@ ADMINS = (
 )
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-SHINY_SERVER_IP = '52.26.82.213'
+# SHINY_SERVER_IP = '52.26.82.213'
+SHINY_SERVER_URL = 'https://wordbank-shiny.com'
 
 MANAGERS = ADMINS
 
