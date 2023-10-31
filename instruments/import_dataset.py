@@ -39,9 +39,9 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
             child.study_internal_caregiver_education = child_data['study_momed']
             child.ethnicity = child_data['ethnicity']
             child.race = child_data['race']
-
-            children[i] = child
+            
             child.save()
+            children[i] = child
             if 'condition' in child_data:
                 for condition in child_data['condition']:
                     c, created = HealthCondition.objects.get_or_create(health_condition_name=condition)
@@ -49,7 +49,7 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
                     pass
         
         print('   Saving administrations')
-        for i, administration_data in import_helper.administrations.items():          
+        for i, administration_data in import_helper.administrations.items():
             administration = Administration(
                 child=children[i],
                 is_norming=administration_data['norming'],

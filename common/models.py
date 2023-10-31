@@ -28,7 +28,7 @@ class Dataset(models.Model):
     longitudinal = models.BooleanField(default=False)
 
     def __str__(self):
-        return f'{self.dataset_name} {self.contributor}'
+        return f'{self.dataset_name}: {self.instrument}'
 
 
 class Instrument(models.Model):
@@ -166,7 +166,7 @@ class HealthCondition(models.Model):
     health_condition_name = models.CharField(max_length=51, unique=True)
 
     def __str__(self):
-        return f'{self.name}'
+        return f'{self.health_condition_name}'
     
     class Meta:
         db_table = 'common_health_condition'

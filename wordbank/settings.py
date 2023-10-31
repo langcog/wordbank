@@ -151,6 +151,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'django_extensions',
+    'django_admin_listfilter_dropdown',
 ]
 
 LOGGING = {
