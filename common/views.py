@@ -76,7 +76,7 @@ class Analyses(View):
         analyses = json.loads(open('wordbank/static/json/analyses.json', encoding='utf8').read())
         if 'name' in request.GET:
             name = request.GET['name']
-            link = 'https://%s/%s' % (settings.SHINY_SERVER_IP, name)
+            link = 'http://%s/%s' % (settings.SHINY_SERVER_IP, name)
             return render(request, 'analyses.html', {'name': name, 'source': link, 'analyses': analyses})
         else:
             return render(request, 'analyses_landing.html', {'analyses': analyses})
