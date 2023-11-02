@@ -1,7 +1,8 @@
+import json 
 from django.db import models
 from django.contrib.contenttypes.fields import GenericForeignKey
 from django.contrib.contenttypes.models import ContentType
-
+from django.forms.models import model_to_dict
 from django.core.validators import MaxValueValidator, MinValueValidator
 
 class DatasetOrigin(models.Model):
@@ -28,7 +29,7 @@ class Dataset(models.Model):
     longitudinal = models.BooleanField(default=False)
 
     def __str__(self):
-        return f'{self.dataset_name}: {self.instrument}'
+        return f'{self.dataset_name} ({self.dataset_origin}): {self.instrument}'
 
 
 class Instrument(models.Model):
@@ -148,6 +149,9 @@ class Administration(models.Model):
 
     def __str__(self):
         return f'{self.instrument} {self.child}'
+    
+    def as_dict(self):
+        return model_to_dict(self)
 
 class CategorySize(models.Model):
     data_id = models.IntegerField()
