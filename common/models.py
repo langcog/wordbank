@@ -130,7 +130,7 @@ class Child(models.Model):
     
 
     def __str__(self):
-        return f'{self.study_internal_id} {self.date_of_birth}'
+        return f'{self.study_internal_id} {self.dataset_origin}'
 
 class Administration(models.Model):
     is_norming = models.BooleanField(default=False)
