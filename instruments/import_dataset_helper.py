@@ -71,7 +71,7 @@ class ImportHelper:
                     value = value[:-1]
             if value in self.missing_values:
                 print(f"NOTE {e} for Column: {column}, Field_type: {field_type}, Group: {group}")
-                return ''
+                return None
             else:
                 raise KeyError(f"Value mapping doesn't have entry for field type { field_type } and value { value }.  { column }")
             
