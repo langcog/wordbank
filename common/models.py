@@ -1,7 +1,8 @@
+import json 
 from django.db import models
 from django.contrib.contenttypes.fields import GenericForeignKey
 from django.contrib.contenttypes.models import ContentType
-
+from django.forms.models import model_to_dict
 from django.core.validators import MaxValueValidator, MinValueValidator
 
 class DatasetOrigin(models.Model):
@@ -28,7 +29,7 @@ class Dataset(models.Model):
     longitudinal = models.BooleanField(default=False)
 
     def __str__(self):
-        return f'{self.dataset_name} {self.contributor}'
+        return f'{self.dataset_name} ({self.dataset_origin}): {self.instrument}'
 
 
 class Instrument(models.Model):
@@ -129,7 +130,7 @@ class Child(models.Model):
     
 
     def __str__(self):
-        return f'{self.study_internal_id} {self.date_of_birth}'
+        return f'{self.study_internal_id} {self.dataset_origin}'
 
 class Administration(models.Model):
     is_norming = models.BooleanField(default=False)
@@ -148,6 +149,9 @@ class Administration(models.Model):
 
     def __str__(self):
         return f'{self.instrument} {self.child}'
+    
+    def as_dict(self):
+        return model_to_dict(self)
 
 class CategorySize(models.Model):
     data_id = models.IntegerField()
@@ -166,7 +170,7 @@ class HealthCondition(models.Model):
     health_condition_name = models.CharField(max_length=51, unique=True)
 
     def __str__(self):
-        return f'{self.name}'
+        return f'{self.health_condition_name}'
     
     class Meta:
         db_table = 'common_health_condition'

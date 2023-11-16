@@ -13,6 +13,7 @@ ADMINS = (
 )
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
+SHINY_SERVER_IP = os.environ.get('SHINY_SERVER_IP','52.26.82.213')
 # SHINY_SERVER_IP = '52.26.82.213'
 SHINY_SERVER_URL = 'https://wordbank-shiny.com'
 
@@ -152,6 +153,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'django_extensions',
+    'django_admin_listfilter_dropdown',
 ]
 
 LOGGING = {

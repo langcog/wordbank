@@ -65,13 +65,13 @@ class ImportHelper:
                 try:
                     return self.value_mapping[field_type][value]
                 except:
-                    raise KeyError(f"Value mapping doesn't have entry for field type { field_type } and value { value }.  { column }")
+                    raise KeyError(f"Value mapping doesn't have entry for field type { field_type } and value { value }. ")
         except Exception as e:
             if self.splitcol and field_type == 'word':
                     value = value[:-1]
             if value in self.missing_values:
-                print(f"EXCEPTION {e} for {column}, {field_type}, {group}")
-                return ''
+                print(f"NOTE {e} for Column: {column}, Field_type: {field_type}, Group: {group}")
+                return None
             else:
                 raise KeyError(f"Value mapping doesn't have entry for field type { field_type } and value { value }.  { column }")
             

@@ -16,6 +16,7 @@ class Command(BaseCommand):
         parser.add_argument('-l', '--language', type=str)
         parser.add_argument('-f', '--form', type=str)
         parser.add_argument('-d', '--dataset', type=str)
+        parser.add_argument('-o', '--origin', type=str)
         parser.add_argument('-a', '--file', type=str)
         parser.add_argument('-e', '--email', type=str)
 
@@ -25,30 +26,40 @@ class Command(BaseCommand):
 
         datasets = json.load(open('static/json/datasets.json'))
 
-        if options['language'] or options['form'] or options['dataset'] or options['file']:
-            filter_exps = []
-            if options['language']:
-                input_language = options['language']
-                filter_exps.append("dataset['instrument_language'] == '%s'" % input_language)
+        if options['language'] or options['form'] or options['dataset'] or options['file'] or options['origin']:
+            input_datasets = datasets
+            if options['language'] or options['form'] or options['dataset'] or options['file']:
+                filter_exps = []
+                if options['language']:
+                    input_language = options['language']
+                    filter_exps.append("dataset['instrument_language'] == '%s'" % input_language)
 
-            if options['form']:
-                input_form = options['form']
-                filter_exps.append("dataset['instrument_form'] == '%s'" % input_form)
-            
-            if options['dataset']:
-                input_dataset= options['dataset']
-                filter_exps.append("dataset['dataset'] == '%s'" % input_dataset)
-
-            if options['file']:
-                input_dataset= options['file']
-                filter_exps.append("dataset['file'] == '%s'" % input_dataset)
+                if options['form']:
+                    input_form = options['form']
+                    filter_exps.append("dataset['instrument_form'] == '%s'" % input_form)
                 
-            combined_exps = ' and '.join(filter_exps)
+                if options['dataset']:
+                    input_dataset= options['dataset']
+                    filter_exps.append("dataset['dataset'] == '%s'" % input_dataset)
 
-            input_datasets = [dataset for dataset in datasets if eval(combined_exps)]
+                if options['file']:
+                    input_dataset= options['file']
+                    filter_exps.append("dataset['file'] == '%s'" % input_dataset)
+                    
+                combined_exps = ' and '.join(filter_exps)
+
+                input_datasets = [dataset for dataset in datasets if eval(combined_exps)]
             
-            if not input_datasets:
-                raise IOError("the specified file doesn't correspond to any datasets")
+            if options['origin']:
+                input_datasets2 = []
+                for dataset in input_datasets:
+                    if 'dataset_origin' in dataset:
+                        if dataset['dataset_origin'] == options['origin']:
+                            input_datasets2.append(dataset)
+                input_datasets = input_datasets2
+                
+                if not input_datasets:
+                    raise IOError("the specified file doesn't correspond to any datasets")
 
         else:
             input_datasets = datasets        
