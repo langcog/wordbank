@@ -53,7 +53,7 @@ class Command(BaseCommand):
                 nrows = sheet.nrows
                 get_row = lambda row: list(sheet.row_values(row))
             elif ftype == 'csv':
-                contents = list(unicode_csv_reader(open(instrument['file'])))
+                contents = list(unicode_csv_reader(open(instrument['file'], encoding='utf-8-sig')))
                 col_names = contents[0]
                 nrows = len(contents)
                 get_row = lambda row: contents[row]

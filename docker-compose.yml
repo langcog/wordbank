@@ -1,6 +1,16 @@
 version: '3'
 
 services:
+  db:
+    platform: linux/x86_64
+    image: mysql:8.0.26
+    ports:
+      - "33061:3306"
+    healthcheck:
+      test: "exit 0"
+    env_file:
+      - .env
+
   web:
     build:
       context: .
@@ -12,4 +22,8 @@ services:
       - "8000:8000"
     env_file:
       - .env
+    #depends_on:
+    #  db:
+    #    condition:
+    #      service_healthy
 

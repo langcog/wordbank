@@ -164,18 +164,18 @@ class ImportHelper:
 
         elif self.ftype == 'csv':
 
-            value_mapping_file = open('.'.join(self.data_file.split('.')[:-1]) + '_values.csv', newline='')
+            value_mapping_file = open('.'.join(self.data_file.split('.')[:-1]) + '_values.csv', newline='', encoding='utf-8-sig')
             value_mapping_reader = list(csv.reader(value_mapping_file))
             self.value_mapping_nrows = len(value_mapping_reader)
             self.get_value_mapping_row = lambda row: value_mapping_reader[row]
 
-            field_mapping_file = open('.'.join(self.data_file.split('.')[:-1]) + '_fields.csv', newline='')
+            field_mapping_file = open('.'.join(self.data_file.split('.')[:-1]) + '_fields.csv', newline='', encoding='utf-8-sig')
             field_mapping_reader = list(csv.reader(field_mapping_file))
             self.field_mapping_nrows = len(field_mapping_reader)
             self.get_field_mapping_row = lambda row: field_mapping_reader[row]
 
 
-            data_file = open('.'.join(self.data_file.split('.')[:-1]) + '_data.csv', newline='', encoding='utf8')
+            data_file = open('.'.join(self.data_file.split('.')[:-1]) + '_data.csv', newline='', encoding='utf-8-sig')
             data_reader = list(csv.reader(data_file))
             self.data_nrows = len(data_reader)
             self.get_data_row = lambda row: data_reader[row]

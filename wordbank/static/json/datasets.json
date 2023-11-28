@@ -1687,6 +1687,20 @@
         "contributor": "The MacArthur-Bates CDI Advisory Board",
         "license": "CC-BY",
         "citation": "Marchman, V. A., Dale, P. S., & Fenson, L. (forthcoming). The MacArthur-Bates Communicative Development Inventories: User's Guide and Technical Manual (3rd Edition). Baltimore, MD: Brookes Publishing. "
+    },
+    {
+        "name": "Alroqi",
+        "dataset": "",
+        "instrument_language": "Arabic (Saudi)",
+        "instrument_form": "WG",
+        "file": "raw_data/Arabic_Saudi_WG/ArabicSaudiWG_Alroqi.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": false,
+        "date_format": "%m/%d/%y",
+        "contributor": "Haifa Alroqi, King Abdulaziz University, Alaa Almohammadi, King Abdulaziz University, Khadeejah Alaslani, Purdue University",
+        "license": "CC-BY",
+        "citation": "Haifa Alroqi, King Abdulaziz University, Alaa Almohammadi, King Abdulaziz University,  Khadeejah Alaslani, Purdue University"
     }
 ]
 

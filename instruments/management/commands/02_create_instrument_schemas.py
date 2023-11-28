@@ -41,7 +41,7 @@ class Command(BaseCommand):
                 nrows = sheet.nrows
                 get_row = lambda row: list(sheet.row_values(row))
             elif ftype == 'csv':
-                with open(instrument['file'], newline='') as csvfile:
+                with open(instrument['file'], newline='', encoding='utf-8-sig') as csvfile:
                     reader = csv.reader(csvfile, delimiter=',', quotechar='"')
                     lines = [row for row in reader]
                     col_names = lines[0]
