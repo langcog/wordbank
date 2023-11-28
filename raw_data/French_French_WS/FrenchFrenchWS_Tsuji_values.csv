@@ -1,0 +1,18 @@
+type,value,data_value
+word,produces,1
+word,,0
+how_use_words,yes,1
+how_use_words,yes,oui
+how_use_words,no,0
+complexity,complex,2
+complexity,simple,1
+complexity,,0
+verb_endings,yes,1
+verb_endings,no,0
+mom_ed,some college,2
+mom_ed,some college,3
+mom_ed,college,4
+mom_ed,some graduate,5
+mom_ed,graduate,6
+sex,M,m
+sex,F,f

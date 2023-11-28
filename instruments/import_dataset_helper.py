@@ -70,7 +70,7 @@ class ImportHelper:
             if self.splitcol and field_type == 'word':
                     value = value[:-1]
             if value in self.missing_values:
-                print(f"NOTE {e} for Column: {column}, Field_type: {field_type}, Group: {group}")
+                #print(f"NOTE {e} for Column: {column}, Field_type: {field_type}, Group: {group}")
                 return None
             else:
                 raise KeyError(f"Value mapping doesn't have entry for field type { field_type } and value { value }.  { column }")
@@ -210,7 +210,6 @@ class ImportHelper:
     def import_data(self):
         self.get_meta_data()
         self.value_mapping = self.map_values()
-        print(self.value_mapping)
         self.field_mapping = self.map_fields()
         self.col_map = self.map_cols()
 
