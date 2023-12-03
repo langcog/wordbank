@@ -12,6 +12,7 @@ from instruments import import_dataset_helper
 def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_language, instrument_form, splitcol, norming, date_format, dataset_origin_name):
         var_safe = lambda s: ''.join([c for c in '_'.join(s.split()) if c in string.ascii_letters + '_'])
         instrument_string = var_safe(instrument_language) + '_' + var_safe(instrument_form)
+        print(f'Instrument {instrument_string}')
         try:
             instrument_model = getattr(instruments.models, instrument_string)
         except AttributeError:
@@ -71,8 +72,8 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
             else:
                 instrument_obj = instrument_model.objects.get(id=administration.data_id)
 
+            print(administration_data['item_data'])
             instrument_model.objects.filter(pk=instrument_obj.pk).update(**administration_data['item_data'])
-
             administration.save()
 
             #print(f'        {administration.as_dict()}')
