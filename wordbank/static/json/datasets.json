@@ -1743,6 +1743,20 @@
         "contributor": "Sho Tsuji (International Research Center for Neurointelligence, The University of Tokyo)",
         "license": "CC-BY",
         "citation": "Babineau, M., de Carvalho, A., Fievet, A., Crimon, C., and Tsuji, S. (unpublished).​"
+    },
+    {
+        "name": "Urm",
+        "dataset": "",
+        "instrument_language": "Estonian",
+        "instrument_form": "WS",
+        "file": "raw_data/Estonian_WS/EstonianWS_Urm.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": true,
+        "date_format": "%Y-%m-%d",
+        "contributor": "Urm, A., & Tulviste, T. (2016). Sources of individual variation in Estonian toddlers’ expressive vocabulary. First Language, 36(6), 580-600.",
+        "license": "CC-BY",
+        "citation": "Tulviste, T. (2007). Variation in vocabulary development among Estonian children as a function of child’s gender, birth order, child-care, and parental education. In M Eriksson (Ed.), Proceedings from the First European Network Meeting on the Communicative Development Inventories (pp. 16-21). Gävle, Sweden: University of Gävle."
     }
 ]
 
