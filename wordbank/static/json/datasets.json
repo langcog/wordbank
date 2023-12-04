@@ -1757,6 +1757,20 @@
         "contributor": "Urm, A., & Tulviste, T. (2016). Sources of individual variation in Estonian toddlers’ expressive vocabulary. First Language, 36(6), 580-600.",
         "license": "CC-BY",
         "citation": "Tulviste, T. (2007). Variation in vocabulary development among Estonian children as a function of child’s gender, birth order, child-care, and parental education. In M Eriksson (Ed.), Proceedings from the First European Network Meeting on the Communicative Development Inventories (pp. 16-21). Gävle, Sweden: University of Gävle."
+    },
+    {
+        "name": "Serrat",
+        "dataset": "",
+        "instrument_language": "Catalan",
+        "instrument_form": "WS",
+        "file": "raw_data/Catalan_WS/CatalanWS_Serrat.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": true,
+        "date_format": "%Y-%m-%d",
+        "contributor": "Elisabet Serrat Sellabona, Universitat de Girona",
+        "license": "CC-BY",
+        "citation": "Tulviste, T. (2007). Variation in vocabulary development among Estonian children as a function of child’s gender, birth order, child-care, and parental education. In M Eriksson (Ed.), Proceedings from the First European Network Meeting on the Communicative Development Inventories (pp. 16-21). Gävle, Sweden: University of Gävle."
     }
 ]
 
