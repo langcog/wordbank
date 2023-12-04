@@ -72,11 +72,9 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
             else:
                 instrument_obj = instrument_model.objects.get(id=administration.data_id)
 
-            print(administration_data['item_data'])
             instrument_model.objects.filter(pk=instrument_obj.pk).update(**administration_data['item_data'])
             administration.save()
 
-            #print(f'        {administration.as_dict()}')
             if 'language' in administration_data:
                 for language in administration_data['language']:
                     language_detail = language.split(';')

@@ -813,3 +813,7 @@ class French_French_WG(BaseTable):
     item_516 = models.CharField(max_length=15, null=True)
     item_517 = models.CharField(max_length=15, null=True)
     item_518 = models.CharField(max_length=15, null=True)
+    item_519 = models.CharField(max_length=15, null=True)
+    item_520 = models.CharField(max_length=15, null=True)
+    item_521 = models.CharField(max_length=15, null=True)
+    item_522 = models.CharField(max_length=15, null=True)

@@ -1729,6 +1729,20 @@
         "contributor": "Sho Tsuji (International Research Center for Neurointelligence, The University of Tokyo)",
         "license": "CC-BY",
         "citation": "Babineau, M., de Carvalho, A., Fievet, A., Crimon, C., and Tsuji, S. (unpublished).​"
+    },
+    {
+        "name": "Tsuji",
+        "dataset": "",
+        "instrument_language": "French (French)",
+        "instrument_form": "WG",
+        "file": "raw_data/French_French_WG/FrenchFrenchWG_Tsuji.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": true,
+        "date_format": "%Y-%m-%d",
+        "contributor": "Sho Tsuji (International Research Center for Neurointelligence, The University of Tokyo)",
+        "license": "CC-BY",
+        "citation": "Babineau, M., de Carvalho, A., Fievet, A., Crimon, C., and Tsuji, S. (unpublished).​"
     }
 ]
 
