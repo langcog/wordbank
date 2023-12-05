@@ -1785,6 +1785,20 @@
         "contributor": "TBA",
         "license": "CC-BY",
         "citation": "TBA"
+    },
+    {
+        "name": "Chosun",
+        "dataset": "",
+        "instrument_language": "Korean",
+        "instrument_form": "WGComp",
+        "file": "raw_data/Korean_WGComp/KoreanWGComp_Chosun.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": true,
+        "date_format": "%m/%d/%Y",
+        "contributor": "TBA",
+        "license": "CC-BY",
+        "citation": "TBA"
     }
 ]
 

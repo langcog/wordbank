@@ -8,6 +8,7 @@ from common.models import *
 FORM_DICT = {
     'WS': 'WS',
     'WG': 'WG',
+    'WGComp': 'WG',
     'IC': 'WG',
     'TC': 'WS',
     'TEDS Twos': 'WS',

@@ -79,3 +79,4 @@ from .schemas.English_British_OxfordShort import *
 from .schemas.Arabic_Saudi_WG import *
 from .schemas.Estonian_WS import *
 from .schemas.Catalan_WS import *
+from .schemas.Korean_WGComp import *

@@ -73,7 +73,7 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
                 instrument_obj = instrument_model.objects.get(id=administration.data_id)
 
             instrument_model.objects.filter(pk=instrument_obj.pk).update(**administration_data['item_data'])
-            print(f'Saving administration for child {administration.data_id}')
+            #print(f'Saving administration {administration.child.study_internal_id} : {administration.age}')
             administration.save()
 
             if 'language' in administration_data:

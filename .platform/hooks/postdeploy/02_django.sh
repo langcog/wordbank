@@ -13,6 +13,7 @@ python ./manage.py 05_populate_items -l 'French (French)' -f WS
 python ./manage.py 05_populate_items -l 'Arabic (Saudi)' -f WG
 python ./manage.py 05_populate_items -l 'Estonian' -f WS
 python ./manage.py 05_populate_items -l 'Catalan' -f WS
+python ./manage.py 05_populate_items -l 'Korean' -f WGComp
 python ./manage.py 06_populate_datasets
 python ./manage.py 07_import_datasets -a 'raw_data/French_French_WS/FrenchFrenchWS_Tsuji.csv'
 python ./manage.py 07_import_datasets -a 'raw_data/French_French_WS/FrenchFrenchWS_TsujiLabvanced.csv'
@@ -21,12 +22,14 @@ python ./manage.py 07_import_datasets -a 'raw_data/Arabic_Saudi_WG/ArabicSaudiWG
 python ./manage.py 07_import_datasets -a 'raw_data/Estonian_WS/EstonianWS_Urm.csv'
 python ./manage.py 07_import_datasets -a 'raw_data/Catalan_WS/CatalanWS_Serrat.csv'
 python ./manage.py 07_import_datasets -a 'raw_data/Korean_WS/KoreanWS_Chosun.csv'
+python ./manage.py 07_import_datasets -a 'raw_data/Korean_WGComp/KoreanWGComp_Chosun.csv'
 python ./manage.py 08_populate_vocabulary_size -l 'French (French)' -f WS
 python ./manage.py 08_populate_vocabulary_size -l 'French (French)' -f WG
 python ./manage.py 08_populate_vocabulary_size -l 'Arabic (Saudi)' -f WG
 python ./manage.py 08_populate_vocabulary_size -l 'Estonian' -f WS
 python ./manage.py 08_populate_vocabulary_size -l 'Catalan' -f WS
 python ./manage.py 08_populate_vocabulary_size -l 'Korean' -f WS
+python ./manage.py 08_populate_vocabulary_size -l 'Korean' -f WGComp
 
 #clear down and set up basic database records
 #python ./manage.py delete_all_tables
