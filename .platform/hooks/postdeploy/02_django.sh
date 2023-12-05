@@ -15,7 +15,7 @@ python ./manage.py 05_populate_items -l 'Estonian' -f WS
 python ./manage.py 05_populate_items -l 'Catalan' -f WS
 python ./manage.py 06_populate_datasets
 python ./manage.py 07_import_datasets -a 'raw_data/French_French_WS/FrenchFrenchWS_Tsuji.csv'
-#python ./manage.py 07_import_datasets -a 'raw_data/French_French_WS/FrenchFrenchWS_TsujiLabvanced.csv'
+python ./manage.py 07_import_datasets -a 'raw_data/French_French_WS/FrenchFrenchWS_TsujiLabvanced.csv'
 python ./manage.py 07_import_datasets -a 'raw_data/French_French_WG/FrenchFrenchWG_Tsuji.csv'
 python ./manage.py 07_import_datasets -a 'raw_data/Arabic_Saudi_WG/ArabicSaudiWG_Alroqi.csv'
 python ./manage.py 07_import_datasets -a 'raw_data/Estonian_WS/EstonianWS_Urm.csv'
