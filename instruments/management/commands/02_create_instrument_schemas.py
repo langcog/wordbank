@@ -66,7 +66,7 @@ class Command(BaseCommand):
                     max_length = max(len(c) for c in choices)  
                     instrument_file.write('    %s_choices = %s\n' % (itemID, [(c.lstrip().rstrip(),c.lstrip().rstrip()) for c in choices]))
                     '''
-                    max_length = 15
+                    max_length = 1
                     instrument_file.write(
                         f'    {itemID} = models.CharField(max_length={max_length}, null=True)\n'
                     )
