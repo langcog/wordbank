@@ -12,7 +12,7 @@ from instruments import import_dataset_helper
 def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_language, instrument_form, splitcol, norming, date_format, dataset_origin_name):
         var_safe = lambda s: ''.join([c for c in '_'.join(s.split()) if c in string.ascii_letters + '_'])
         instrument_string = var_safe(instrument_language) + '_' + var_safe(instrument_form)
-        print(f'Instrument {instrument_string}')
+        print(f'    Instrument {instrument_string}')
         try:
             instrument_model = getattr(instruments.models, instrument_string)
         except AttributeError:
@@ -25,7 +25,7 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
 
         children = {}
 
-        print('   Saving Children')
+        print('       Saving Children')
         for i, child_data in import_helper.children.items():
             # initialize the Child here
             child, created = Child.objects.get_or_create(
@@ -49,7 +49,7 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
                     child.health_conditions.add(c)
                     pass
         
-        print('   Saving administrations')
+        print('       Saving administrations')
         for i, administration_data in import_helper.administrations.items():
             administration = Administration(
                 child=children[i],
@@ -73,6 +73,7 @@ def import_dataset(dataset_name, dataset_dataset, dataset_file, instrument_langu
                 instrument_obj = instrument_model.objects.get(id=administration.data_id)
 
             instrument_model.objects.filter(pk=instrument_obj.pk).update(**administration_data['item_data'])
+            print(f'Saving administration for child {administration.data_id}')
             administration.save()
 
             if 'language' in administration_data:

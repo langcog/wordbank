@@ -76,10 +76,6 @@ from .schemas.Finnish_WSShort import *
 from .schemas.English_American_WSShort import *
 from .schemas.English_American_WGShort import *
 from .schemas.English_British_OxfordShort import *
-from .schemas.Arabic_Saudi_WS import *
 from .schemas.Arabic_Saudi_WG import *
-from .schemas.French_French_WS import *
-from .schemas.French_French_WS import *
-from .schemas.French_French_WG import *
 from .schemas.Estonian_WS import *
 from .schemas.Catalan_WS import *

@@ -1,7 +1,7 @@
 ﻿field,column,group,type
 ,form,,
 study_id,id,child,study_id
-,age,,
+data_age,age,admin,data_age
 item_1,ai,item,word
 item_2,ala,item,word
 item_3,amunt/aupa,item,word
