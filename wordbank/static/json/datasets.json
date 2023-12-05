@@ -1770,7 +1770,21 @@
         "date_format": "%Y-%m-%d",
         "contributor": "Elisabet Serrat Sellabona, Universitat de Girona",
         "license": "CC-BY",
-        "citation": "Tulviste, T. (2007). Variation in vocabulary development among Estonian children as a function of child’s gender, birth order, child-care, and parental education. In M Eriksson (Ed.), Proceedings from the First European Network Meeting on the Communicative Development Inventories (pp. 16-21). Gävle, Sweden: University of Gävle."
+        "citation": "Serrat Sellabona, Elisabet (2022). Inventaris del desenvolupament d'habilitats comunicatives MacArthur-Bates en català : guia d'ús i manual tècnic "
+    },
+    {
+        "name": "Chosun",
+        "dataset": "",
+        "instrument_language": "Korean",
+        "instrument_form": "WS",
+        "file": "raw_data/Korean_WS/KoreanWS_Chosun.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": true,
+        "date_format": "%m/%d/%Y",
+        "contributor": "TBA",
+        "license": "CC-BY",
+        "citation": "TBA"
     }
 ]
 
