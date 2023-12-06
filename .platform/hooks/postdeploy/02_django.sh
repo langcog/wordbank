@@ -24,6 +24,8 @@ python ./manage.py 07_import_datasets -a 'raw_data/Catalan_WS/CatalanWS_Serrat.c
 python ./manage.py 07_import_datasets -a 'raw_data/Korean_WS/KoreanWS_Chosun.csv'
 python ./manage.py 07_import_datasets -a 'raw_data/Korean_WGComp/KoreanWGComp_Chosun.csv'
 python ./manage.py 07_import_datasets -l Swedish -f WG
+python ./manage.py 07_import_datasets -l German -f WS
+
 python ./manage.py 08_populate_vocabulary_size -l 'French (French)' -f WS
 python ./manage.py 08_populate_vocabulary_size -l 'French (French)' -f WG
 python ./manage.py 08_populate_vocabulary_size -l 'Arabic (Saudi)' -f WG
@@ -32,6 +34,7 @@ python ./manage.py 08_populate_vocabulary_size -l 'Catalan' -f WS
 python ./manage.py 08_populate_vocabulary_size -l 'Korean' -f WS
 python ./manage.py 08_populate_vocabulary_size -l 'Korean' -f WGComp
 python ./manage.py 08_populate_vocabulary_size -l Swedish -f WG
+python ./manage.py 08_populate_vocabulary_size -l German -f WS
 
 #clear down and set up basic database records
 #python ./manage.py delete_all_tables
