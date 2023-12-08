@@ -662,5 +662,21 @@
         "age_min": 8,
         "age_max": 16,
         "has_grammar": true
+    },
+    {
+        "language": "Finnish",
+        "form": "WGProd",
+        "file": "raw_data/Finnish_WGProd/[Finnish_WGProd].csv",
+        "age_min": 8,
+        "age_max": 16,
+        "has_grammar": true
+    },
+    {
+        "language": "Finnish",
+        "form": "WGProdShort",
+        "file": "raw_data/Finnish_WGProdShort/[Finnish_WGProdShort].csv",
+        "age_min": 8,
+        "age_max": 16,
+        "has_grammar": true
     }
 ]

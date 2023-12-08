@@ -24,6 +24,8 @@ class Command(BaseCommand):
             input_instruments = instruments
             models_file = open('instruments/models.py', 'w')
 
+        print(f'Input Intruments: {input_instruments}')
+        print(f'Language: {input_language}; Form: {input_form}')
         for instrument in input_instruments:
 
             var_safe = lambda s: ''.join([c for c in '_'.join(s.split()) if c in string.ascii_letters + '_'])

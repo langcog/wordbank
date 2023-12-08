@@ -1,0 +1,381 @@
+item_id,category,definition,gloss,uni_lemma
+item_1,sounds,ai-ai (sattuessa),oh,oh
+item_2,sounds,ammuu,moo,moo
+item_3,sounds,bää-ä bää-ä,baa,baa baa
+item_4,sounds,drnn drnn (auton ääni),vroom,vroom
+item_5,sounds,hau hau,bow_wow,woof woof
+item_6,sounds,kukkokiekuu,cock_a_doodle_doo,cockadoodledoo
+item_7,sounds,kvaak kvaak,quack_quack,quack quack
+item_8,sounds,miauu,meow,meow
+item_9,sounds,murrrr ,grrr,grrr
+item_10,sounds,nam nam,nam,yum yum
+item_11,sounds,ohhoh ,uh_oh,oh
+item_12,sounds,shh (hiljaa),shh,shh
+item_13,sounds,tsuk tsuk junan ääni),choo_choo,choo choo
+item_14,animals,ampiainen,bee,bee
+item_15,animals,ankka  ,duck,duck
+item_16,animals,apina   ,ape,monkey
+item_17,animals,eläin  ,animal,animal
+item_18,animals,hevonen   ,horse,horse
+item_19,animals,hiiri  ,mouse,mouse
+item_20,animals,hirvi   ,moose,moose
+item_21,animals,hyttynen  ,mosquito,mosquito
+item_22,animals,hämähäkki   ,spider,spider
+item_23,animals,kala  ,fish,fish (animal)
+item_24,animals,karhu   ,bear,bear
+item_25,animals,kettu  ,fox,fox
+item_26,animals,kirahvi   ,giraffe,giraffe
+item_27,animals,kissa  ,cat,cat
+item_28,animals,koira   ,dog,dog
+item_29,animals,kärpänen  ,fly,fly (animal)
+item_30,animals,käärme   ,snake,snake
+item_31,animals,lammas  ,sheep,sheep
+item_32,animals,lehmä   ,cow,cow
+item_33,animals,leijona  ,lion,lion
+item_34,animals,leppäkerttu   ,ladybird,ladybug
+item_35,animals,lintu  ,bird,bird
+item_36,animals,mato   ,worm,worm
+item_37,animals,muurahainen  ,ant,ant
+item_38,animals,norsu   ,elephant,elephant
+item_39,animals,orava  ,squirrel,squirrel
+item_40,animals,perhonen   ,butterfly,butterfly
+item_41,animals,pingviini  ,penguin,penguin
+item_42,animals,possu  ,pig,pig
+item_43,animals,pupu  ,bunny,bunny
+item_44,animals,pöllö   ,owl,owl
+item_45,animals,sammakko  ,frog,frog
+item_46,animals,siili   ,hedgehog,hedgehog
+item_47,animals,susi  ,wolf,wolf
+item_48,animals,tiikeri ,tiger,tiger
+item_49,animals,tipu,baby chicken,chick
+item_50,vehicles,auto  ,car,car
+item_51,vehicles,bussi/linja-auto ,bus,bus
+item_52,vehicles,juna  ,train,train
+item_53,vehicles,kuorma-auto ,truck,truck
+item_54,vehicles,laiva  ,ship,ship
+item_55,vehicles,lentokone ,aeroplane,airplane
+item_56,vehicles,mopo  ,moped,
+item_57,vehicles,polkupyörä ,bicycle,bicycle
+item_58,vehicles,rattaat  ,pushchair,stroller
+item_59,vehicles,traktori,tractor,tractor
+item_60,toys,kirja,book,book
+item_61,toys,kynä ,pencil,pencil
+item_62,toys,lapio  ,spade,spade
+item_63,toys,nalle ,teddybear,teddybear
+item_64,toys,nukke  ,doll,doll
+item_65,toys,palikka ,brick,blocks
+item_66,toys,pallo  ,ball,ball
+item_67,toys,ämpäri/sanko ,bucket,bucket
+item_68,food_drink,appelsiini  ,orange,orange (food)
+item_69,food_drink,banaani ,banana,banana
+item_70,food_drink,herne  ,pea,peas
+item_71,food_drink,jugurtti ,youghurt,yogurt
+item_72,food_drink,juusto  ,cheese,cheese
+item_73,food_drink,jäätelö ,icecream,ice cream
+item_74,food_drink,kahvi  ,coffee,coffee
+item_75,food_drink,kakku ,cake,cake
+item_76,food_drink,kala  ,fish_x,fish (food)
+item_77,food_drink,kana ,chicken,chicken (food)
+item_78,food_drink,kananmuna  ,egg,egg
+item_79,food_drink,karkki ,candy,candy
+item_80,food_drink,keksi  ,cookie,cookie
+item_81,food_drink,kurkku ,cucumber,cucumber
+item_82,food_drink,leipä  ,bread,bread
+item_83,food_drink,liha ,meat,meat
+item_84,food_drink,maito  ,milk,milk
+item_85,food_drink,makaroni ,macaroni,macaroni
+item_86,food_drink,makkara  ,sausage,sausage
+item_87,food_drink,mansikka ,strawberry,strawberry
+item_88,food_drink,mehu  ,juice,juice
+item_89,food_drink,omena ,apple,apple
+item_90,food_drink,peruna  ,potato,potato
+item_91,food_drink,porkkana ,carrot,carrot
+item_92,food_drink,puuro  ,porridge,porridge
+item_93,food_drink,ruoka ,food,food
+item_94,food_drink,rusina  ,raisin,raisin
+item_95,food_drink,tomaatti ,tomato,tomato
+item_96,food_drink,velli  ,gruel,
+item_97,food_drink,vesi ,water,water
+item_98,food_drink,viili  ,nordic_kind_of_sour_milk,
+item_99,food_drink,voi,butter,butter
+item_100,clothing,hattu  ,hat,hat
+item_101,clothing,housut ,pants,pants
+item_102,clothing,kaulahuivi  ,scarf,scarf
+item_103,clothing,kenkä ,shoe,shoe
+item_104,clothing,lapaset  ,mittens,mitten
+item_105,clothing,mekko ,dress,dress
+item_106,clothing,nappi  ,button,button
+item_107,clothing,paita ,shirt,shirt
+item_108,clothing,pusero  ,blouse,blouse
+item_109,clothing,ruokalappu ,bib,bib
+item_110,clothing,saappaat  ,boots,boot
+item_111,clothing,sukka ,sock,sock
+item_112,clothing,sukkahousut  ,pantyhose,pantyhose
+item_113,clothing,takki ,jacket,jacket
+item_114,clothing,vaippa  ,nappy,diaper
+item_115,clothing,vetoketju ,zipper,zipper
+item_116,clothing,villapaita  ,pullover,sweater
+item_117,clothing,yöpuku ,pyjamas,pyjamas
+item_118,body_parts,hammas  ,tooth,tooth
+item_119,body_parts,hiukset/tukka ,hair,hair
+item_120,body_parts,jalka  ,foot,foot
+item_121,body_parts,kasvot ,face,face
+item_122,body_parts,kieli  ,tongue,tongue
+item_123,body_parts,korva ,ear,ear
+item_124,body_parts,käsi  ,hand,hand
+item_125,body_parts,napa ,bellybutton,belly button
+item_126,body_parts,nenä  ,nose,nose
+item_127,body_parts,polvi ,knee,knee
+item_128,body_parts,poski  ,cheek,cheek
+item_129,body_parts,pylly ,bum,buttocks
+item_130,body_parts,pää  ,head,head
+item_131,body_parts,silmä ,eye,eye
+item_132,body_parts,sormi  ,finger,finger
+item_133,body_parts,suu ,mouth,mouth
+item_134,body_parts,tissi  ,breast,breast
+item_135,body_parts,varvas ,toe,toe
+item_136,body_parts,vatsa/maha,stomach,tummy
+item_137,furniture_rooms,amme  ,bathtub,bathtub
+item_138,furniture_rooms,autotalli ,garage,garage
+item_139,furniture_rooms,eteinen  ,corridor,corridor
+item_140,furniture_rooms,ikkuna ,window,window
+item_141,furniture_rooms,jääkaappi  ,fridge,fridge
+item_142,furniture_rooms,kaappi ,closet,closet
+item_143,furniture_rooms,katto  ,ceiling,ceiling
+item_144,furniture_rooms,keinutuoli ,rocking_chair,rocking chair
+item_145,furniture_rooms,keittiö  ,kitchen,kitchen
+item_146,furniture_rooms,lattia ,floor,floor
+item_147,furniture_rooms,makuuhuone  ,bedroom,bedroom
+item_148,furniture_rooms,olohuone ,living_room,living room
+item_149,furniture_rooms,ovi  ,door,door
+item_150,furniture_rooms,pesukone ,washing_machine,washing machine
+item_151,furniture_rooms,portaat  ,stairs,stairs
+item_152,furniture_rooms,pölynimuri ,hoover,vacuum
+item_153,furniture_rooms,pöytä  ,table,table
+item_154,furniture_rooms,radio ,radio,radio
+item_155,furniture_rooms,sauna  ,sauna,sauna
+item_156,furniture_rooms,sohva ,sofa,couch
+item_157,furniture_rooms,suihku  ,shower,shower
+item_158,furniture_rooms,sänky ,bed,bed
+item_159,furniture_rooms,televisio  ,TV,tv
+item_160,furniture_rooms,tuoli ,chair,chair
+item_161,furniture_rooms,uuni  ,oven,oven
+item_162,furniture_rooms,vessa,toilet,bathroom
+item_163,household,avaimet  ,keys,keys
+item_164,household,haarukka ,fork,fork
+item_165,household,hammasharja  ,toothbrush,toothbrush
+item_166,household,harja ,brush,brush
+item_167,household,kampa  ,comb,comb (object)
+item_168,household,kattila ,pot,pot
+item_169,household,kello  ,clock,clock
+item_170,household,kirje ,letter,letter
+item_171,household,kuppi  ,cup,cup
+item_172,household,laatikko ,box,box
+item_173,household,lamppu  ,lamp,lamp
+item_174,household,laukku ,bag,bag
+item_175,household,lautanen  ,plate,plate
+item_176,household,lusikka ,spoon,spoon
+item_177,household,lääke  ,medicine,medicine
+item_178,household,matto ,carpet,carpet
+item_179,household,ovikello  ,doorbell,doorbell
+item_180,household,paperi ,paper,paper
+item_181,household,peili  ,mirror,mirror
+item_182,household,peitto ,blanket,blanket
+item_183,household,potta  ,potty,potty
+item_184,household,puhelin ,telephone,telephone
+item_185,household,pullo  ,bottle,bottle
+item_186,household,pyyhe ,towel,towel
+item_187,household,raha  ,money,money
+item_188,household,rasva ,cream,cream
+item_189,household,roska  ,rubbish,trash
+item_190,household,saippua ,soap,soap
+item_191,household,sakset  ,scissors,scissors
+item_192,household,silmälasit ,eyeglasses,glasses
+item_193,household,taulu  ,painting,painting
+item_194,household,tutti ,pacifier,pacifier
+item_195,household,tyyny  ,pillow,pillow
+item_196,household,veitsi ,knife,knife
+item_197,outside,aurinko  ,sun,sun
+item_198,outside,hiekka ,sand,sand
+item_199,outside,hiekkalaatikko  ,sandbox,sandbox
+item_200,outside,jää ,ice,ice
+item_201,outside,kauppa  ,shop,store
+item_202,outside,keinu ,swing,swing (object)
+item_203,outside,kirkko  ,church,church
+item_204,outside,kivi ,stone,stone
+item_205,outside,koti  ,home,home
+item_206,outside,koulu ,school,school
+item_207,outside,kukka  ,flower,flower
+item_208,outside,kuu ,moon,moon
+item_209,outside,liukumäki  ,slide,slide (object)
+item_210,outside,lumi ,snow,snow
+item_211,outside,lätäkkö  ,puddle,puddle
+item_212,outside,piha ,yard,yard
+item_213,outside,puisto  ,park,park
+item_214,outside,puu ,tree,tree
+item_215,outside,päiväkoti  ,day_care_center,
+item_216,outside,ranta ,shore,beach
+item_217,outside,sade  ,rain,rain
+item_218,outside,taivas ,sky,sky
+item_219,outside,talo  ,house,house
+item_220,outside,tähti,star,star
+item_221,people,ihminen  ,human_being,person
+item_222,people,isä ,father,daddy
+item_223,people,lapsi  ,child,child
+item_224,people,mies ,man,man
+item_225,people,mummo/mummi  ,grandmother,grandma
+item_226,people,nainen ,woman,woman
+item_227,people,oma nimi  ,ownname,child's own name
+item_228,people,pappa/ukki ,grandfather,grandpa
+item_229,people,poika  ,boy,boy
+item_230,people,setä ,uncle,uncle
+item_231,people,sisko  ,sister,sister
+item_232,people,tyttö ,girl,girl
+item_233,people,täti  ,aunt,aunt
+item_234,people,vauva ,baby,baby
+item_235,people,veli  ,brother,brother
+item_236,people,äiti ,mother,mommy
+item_237,games_routines,aamupala  ,breakfast,breakfast
+item_238,games_routines,ei ,no,no
+item_239,games_routines,hei hei  ,hey,bye
+item_240,games_routines,hyvää yötä ,goodnight,good night
+item_241,games_routines,kakka  ,poop,poop
+item_242,games_routines,kiitos ,thankyou,thank you
+item_243,games_routines,kyllä  ,yes,yes
+item_244,games_routines,kylpy ,bath,bath
+item_245,games_routines,loppu  ,end,end
+item_246,games_routines,odota ,wait,wait
+item_247,games_routines,ole hyvä  ,please,please
+item_248,games_routines,piiloon ,to_hiding_place,
+item_249,games_routines,pissa  ,pee,pee
+item_250,games_routines,päiväunet ,nap,nap
+item_251,games_routines,päivää  ,hello,hello
+item_252,games_routines,terve! ,hi,hi
+item_253,games_routines,välipala  ,snack,snack
+item_254,games_routines,älä ,don_t,don't
+item_255,action_words,ajaa  ,drive,drive
+item_256,action_words,antaa ,give,give
+item_257,action_words,aukaista  ,open,open (action)
+item_258,action_words,auttaa ,help,help
+item_259,action_words,hakea  ,fetch,fetch
+item_260,action_words,halata ,hug,hug
+item_261,action_words,heittää  ,throw,throw
+item_262,action_words,huutaa ,shout,shout
+item_263,action_words,hypätä  ,jump,jump
+item_264,action_words,istua ,sit,sit
+item_265,action_words,itkeä  ,cry,cry
+item_266,action_words,juoda ,drink,drink (action)
+item_267,action_words,juosta  ,run,run
+item_268,action_words,kaatua ,fall,fall
+item_269,action_words,katsoa  ,look,look
+item_270,action_words,keinua ,sway,
+item_271,action_words,keittää  ,boil,boil
+item_272,action_words,kiivetä ,climb,climb
+item_273,action_words,kirjoittaa  ,write,write
+item_274,action_words,korjata ,fix,fix
+item_275,action_words,kävellä  ,walk,walk
+item_276,action_words,laittaa ,put,put
+item_277,action_words,laulaa  ,sing,sing
+item_278,action_words,leikkiä ,play,play
+item_279,action_words,leipoa  ,bake,bake
+item_280,action_words,lopettaa ,stop,stop
+item_281,action_words,lukea  ,read,read
+item_282,action_words,lähteä ,leave,leave
+item_283,action_words,mahtua  ,fit,fit
+item_284,action_words,mennä ,go,go
+item_285,action_words,nauraa  ,laugh,laugh
+item_286,action_words,niistää ,blow,blow
+item_287,action_words,nukkua  ,sleep,sleep
+item_288,action_words,ottaa ,take,take
+item_289,action_words,pestä  ,wash,wash
+item_290,action_words,piirtää ,draw,draw
+item_291,action_words,potkaista  ,kick,kick
+item_292,action_words,pudota ,drop,drop
+item_293,action_words,puhaltaa  ,blow_on,blow
+item_294,action_words,pukea ,get_dressed,
+item_295,action_words,purra  ,bite,bite
+item_296,action_words,pyöriä ,roll,roll (action)
+item_297,action_words,riisua  ,take_off,
+item_298,action_words,rikkoa ,break,break
+item_299,action_words,roiskuttaa  ,splatter,splash
+item_300,action_words,saada ,get,get
+item_301,action_words,siivota  ,clean,clean (action)
+item_302,action_words,soittaa ,ring,call
+item_303,action_words,suukottaa  ,kiss,kiss
+item_304,action_words,syödä ,eat,eat
+item_305,action_words,syöttää  ,feed,feed
+item_306,action_words,tanssia ,dance,dance
+item_307,action_words,taputtaa  ,clap,clap
+item_308,action_words,tuoda ,bring,bring
+item_309,action_words,työntää  ,push,push
+item_310,action_words,törmätä ,crash,crash
+item_311,action_words,vetää  ,pull,pull
+item_312,action_words,viedä ,carry,carry
+item_313,action_words,vilkuttaa,wave,wave (action)
+item_314,action_words,yskittää,cough,cough
+item_315,time_words,aamu  ,morning,morning
+item_316,time_words,ilta ,evening,evening
+item_317,time_words,myöhemmin  ,later,later
+item_318,time_words,nyt ,now,now
+item_319,time_words,pian  ,soon,soon
+item_320,time_words,päivä ,day,day
+item_321,time_words,tänään  ,today,today
+item_322,time_words,yö ,night,night
+item_323,descriptive_words,hieno  ,fine,fine
+item_324,descriptive_words,huono ,bad,bad
+item_325,descriptive_words,hyvä  ,good,good
+item_326,descriptive_words,iloinen ,glad,happy
+item_327,descriptive_words,iso  ,big,big
+item_328,descriptive_words,kaunis ,beautiful,beautiful
+item_329,descriptive_words,kiltti  ,nice,nice
+item_330,descriptive_words,kipeä (pipi) ,ill,sick
+item_331,descriptive_words,kuuma  ,hot,hot
+item_332,descriptive_words,kylmä ,cold,cold
+item_333,descriptive_words,likainen  ,dirty,dirty
+item_334,descriptive_words,märkä ,wet,wet
+item_335,descriptive_words,nälkäinen  ,hungry,hungry
+item_336,descriptive_words,pehmeä ,soft,soft
+item_337,descriptive_words,pieni  ,small,small
+item_338,descriptive_words,pimeä ,dark,dark
+item_339,descriptive_words,puhdas  ,tidy,clean (description)
+item_340,descriptive_words,punainen ,red,red
+item_341,descriptive_words,rikki  ,broken,broken
+item_342,descriptive_words,surullinen ,sad,sad
+item_343,descriptive_words,terävä  ,sharp,sharp
+item_344,descriptive_words,tuhma ,naughty,naughty
+item_345,descriptive_words,tyhjä  ,empty,empty
+item_346,descriptive_words,vanha ,old,old
+item_347,descriptive_words,varovainen  ,careful,careful
+item_348,descriptive_words,väsynyt,tired,tired
+item_349,pronouns,minulle  ,to_me,1SG
+item_350,pronouns,minun ,mine,1SG.POSS
+item_351,pronouns,minä  ,I,1SG
+item_352,pronouns,nuo ,those,those
+item_353,pronouns,se  ,it,it
+item_354,pronouns,sinun ,yours,2SG.POSS
+item_355,pronouns,sinä  ,you,2SG
+item_356,pronouns,tämä ,this,this
+item_357,question_words,kuka  ,who,who
+item_358,question_words,miksi ,why,why
+item_359,question_words,mikä  ,what,what
+item_360,question_words,milloin ,when,when (question)
+item_361,question_words,missä  ,where,where (question)
+item_362,question_words,miten ,how,how
+item_363,question_words,mitä ,what_x,what
+item_364,locations,alas  ,down,down
+item_365,locations,alla ,below,below
+item_366,locations,auki  ,turned_on,
+item_367,locations,kiinni ,closed,closed
+item_368,locations,päällä (päälle)  ,on,on
+item_369,locations,siellä (sinne) ,there,there
+item_370,locations,sisällä (sisälle)  ,inside,inside
+item_371,locations,tuolla (tuonne) ,down_there,
+item_372,locations,täällä (tänne)  ,here,here
+item_373,locations,ulos ,out,out
+item_374,locations,ylös ,up,up
+item_375,quantifiers,kaikki  ,everybody,
+item_376,quantifiers,lisää  ,more,more
+item_377,quantifiers,monta  ,many,many
+item_378,quantifiers,sama ,same,same
+item_379,quantifiers,toinen  ,other,other
+item_380,quantifiers,vähän,few,few

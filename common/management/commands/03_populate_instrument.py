@@ -9,6 +9,8 @@ FORM_DICT = {
     'WS': 'WS',
     'WG': 'WG',
     'WGComp': 'WG',
+    'WGShort': 'WG',
+    'WGShortProd': 'WG',
     'IC': 'WG',
     'TC': 'WS',
     'TEDS Twos': 'WS',
