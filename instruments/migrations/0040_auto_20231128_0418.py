@@ -5,15 +5,14 @@ import django.db.models.deletion
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('instruments', '0039_auto_20231127_0440'),
+        ("instruments", "0039_auto_20231127_0440"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='french_french_ws',
-            name='item_717',
+            model_name="french_french_ws",
+            name="item_717",
             field=models.CharField(max_length=15, null=True),
         ),
     ]

@@ -17,7 +17,7 @@ lint:
 	black --check 
 
 cleanup:
-	black
+	black .
 	isort
 
 docker-test:

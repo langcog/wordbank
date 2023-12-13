@@ -6,13 +6,13 @@ from instruments.utils import get_instrument_model
 
 
 class Command(BaseCommand):
-
     def handle(self, *args, **options):
-
-        insts = json.load(open('static/json/instruments.json'))
+        insts = json.load(open("static/json/instruments.json"))
 
         for instrument in insts:
-            instrument_model = get_instrument_model(instrument['language'], instrument['form'])
+            instrument_model = get_instrument_model(
+                instrument["language"], instrument["form"]
+            )
             instrument_model.objects.all().delete()
 
         Instrument.objects.all().delete()

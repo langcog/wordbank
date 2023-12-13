@@ -4,20 +4,19 @@ from django.db import migrations
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('instruments', '0037_auto_20220715_0256'),
+        ("instruments", "0037_auto_20220715_0256"),
     ]
 
     operations = [
         migrations.RemoveField(
-            model_name='henry_test_language_wg',
-            name='basetable_ptr',
+            model_name="henry_test_language_wg",
+            name="basetable_ptr",
         ),
         migrations.DeleteModel(
-            name='Henry_Second_Language_WG',
+            name="Henry_Second_Language_WG",
         ),
         migrations.DeleteModel(
-            name='Henry_Test_Language_WG',
+            name="Henry_Test_Language_WG",
         ),
     ]

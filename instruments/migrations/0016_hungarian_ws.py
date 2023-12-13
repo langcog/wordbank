@@ -5,819 +5,4838 @@ import django.db.models.deletion
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('instruments', '0015_dutch_formthree'),
+        ("instruments", "0015_dutch_formthree"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Hungarian_WS',
+            name="Hungarian_WS",
             fields=[
-                ('basetable_ptr', models.OneToOneField(auto_created=True, on_delete=django.db.models.deletion.CASCADE, parent_link=True, primary_key=True, serialize=False, to='instruments.basetable')),
-                ('item_1', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_2', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_3', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_4', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_5', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_6', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_7', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_8', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_9', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_10', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_11', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_12', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_13', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_14', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_15', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_16', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_17', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_18', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_19', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_20', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_21', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_22', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_23', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_24', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_25', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_26', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_27', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_28', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_29', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_30', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_31', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_32', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_33', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_34', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_35', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_36', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_37', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_38', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_39', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_40', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_41', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_42', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_43', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_44', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_45', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_46', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_47', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_48', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_49', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_50', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_51', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_52', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_53', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_54', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_55', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_56', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_57', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_58', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_59', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_60', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_61', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_62', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_63', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_64', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_65', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_66', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_67', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_68', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_69', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_70', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_71', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_72', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_73', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_74', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_75', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_76', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_77', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_78', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_79', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_80', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_81', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_82', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_83', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_84', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_85', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_86', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_87', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_88', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_89', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_90', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_91', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_92', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_93', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_94', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_95', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_96', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_97', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_98', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_99', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_100', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_101', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_102', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_103', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_104', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_105', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_106', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_107', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_108', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_109', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_110', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_111', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_112', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_113', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_114', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_115', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_116', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_117', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_118', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_119', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_120', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_121', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_122', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_123', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_124', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_125', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_126', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_127', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_128', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_129', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_130', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_131', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_132', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_133', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_134', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_135', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_136', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_137', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_138', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_139', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_140', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_141', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_142', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_143', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_144', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_145', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_146', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_147', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_148', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_149', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_150', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_151', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_152', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_153', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_154', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_155', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_156', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_157', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_158', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_159', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_160', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_161', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_162', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_163', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_164', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_165', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_166', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_167', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_168', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_169', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_170', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_171', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_172', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_173', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_174', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_175', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_176', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_177', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_178', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_179', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_180', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_181', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_182', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_183', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_184', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_185', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_186', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_187', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_188', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_189', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_190', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_191', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_192', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_193', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_194', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_195', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_196', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_197', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_198', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_199', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_200', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_201', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_202', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_203', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_204', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_205', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_206', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_207', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_208', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_209', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_210', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_211', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_212', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_213', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_214', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_215', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_216', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_217', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_218', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_219', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_220', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_221', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_222', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_223', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_224', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_225', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_226', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_227', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_228', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_229', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_230', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_231', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_232', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_233', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_234', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_235', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_236', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_237', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_238', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_239', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_240', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_241', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_242', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_243', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_244', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_245', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_246', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_247', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_248', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_249', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_250', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_251', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_252', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_253', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_254', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_255', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_256', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_257', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_258', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_259', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_260', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_261', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_262', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_263', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_264', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_265', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_266', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_267', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_268', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_269', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_270', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_271', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_272', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_273', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_274', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_275', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_276', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_277', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_278', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_279', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_280', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_281', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_282', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_283', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_284', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_285', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_286', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_287', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_288', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_289', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_290', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_291', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_292', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_293', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_294', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_295', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_296', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_297', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_298', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_299', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_300', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_301', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_302', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_303', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_304', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_305', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_306', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_307', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_308', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_309', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_310', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_311', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_312', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_313', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_314', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_315', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_316', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_317', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_318', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_319', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_320', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_321', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_322', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_323', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_324', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_325', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_326', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_327', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_328', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_329', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_330', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_331', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_332', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_333', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_334', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_335', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_336', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_337', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_338', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_339', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_340', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_341', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_342', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_343', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_344', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_345', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_346', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_347', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_348', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_349', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_350', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_351', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_352', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_353', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_354', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_355', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_356', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_357', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_358', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_359', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_360', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_361', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_362', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_363', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_364', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_365', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_366', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_367', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_368', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_369', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_370', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_371', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_372', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_373', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_374', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_375', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_376', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_377', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_378', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_379', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_380', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_381', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_382', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_383', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_384', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_385', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_386', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_387', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_388', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_389', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_390', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_391', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_392', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_393', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_394', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_395', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_396', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_397', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_398', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_399', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_400', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_401', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_402', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_403', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_404', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_405', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_406', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_407', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_408', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_409', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_410', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_411', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_412', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_413', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_414', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_415', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_416', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_417', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_418', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_419', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_420', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_421', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_422', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_423', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_424', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_425', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_426', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_427', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_428', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_429', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_430', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_431', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_432', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_433', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_434', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_435', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_436', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_437', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_438', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_439', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_440', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_441', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_442', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_443', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_444', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_445', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_446', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_447', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_448', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_449', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_450', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_451', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_452', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_453', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_454', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_455', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_456', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_457', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_458', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_459', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_460', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_461', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_462', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_463', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_464', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_465', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_466', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_467', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_468', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_469', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_470', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_471', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_472', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_473', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_474', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_475', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_476', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_477', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_478', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_479', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_480', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_481', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_482', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_483', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_484', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_485', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_486', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_487', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_488', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_489', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_490', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_491', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_492', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_493', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_494', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_495', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_496', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_497', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_498', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_499', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_500', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_501', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_502', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_503', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_504', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_505', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_506', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_507', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_508', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_509', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_510', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_511', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_512', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_513', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_514', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_515', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_516', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_517', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_518', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_519', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_520', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_521', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_522', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_523', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_524', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_525', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_526', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_527', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_528', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_529', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_530', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_531', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_532', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_533', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_534', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_535', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_536', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_537', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_538', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_539', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_540', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_541', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_542', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_543', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_544', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_545', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_546', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_547', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_548', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_549', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_550', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_551', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_552', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_553', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_554', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_555', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_556', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_557', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_558', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_559', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_560', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_561', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_562', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_563', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_564', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_565', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_566', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_567', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_568', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_569', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_570', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_571', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_572', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_573', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_574', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_575', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_576', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_577', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_578', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_579', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_580', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_581', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_582', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_583', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_584', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_585', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_586', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_587', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_588', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_589', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_590', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_591', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_592', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_593', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_594', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_595', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_596', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_597', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_598', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_599', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_600', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_601', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_602', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_603', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_604', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_605', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_606', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_607', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_608', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_609', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_610', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_611', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_612', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_613', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_614', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_615', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_616', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_617', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_618', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_619', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_620', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_621', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_622', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_623', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_624', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_625', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_626', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_627', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_628', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_629', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_630', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_631', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_632', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_633', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_634', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_635', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_636', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_637', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_638', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_639', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_640', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_641', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_642', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_643', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_644', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_645', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_646', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_647', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_648', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_649', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_650', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_651', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_652', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_653', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_654', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_655', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_656', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_657', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_658', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_659', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_660', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_661', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_662', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_663', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_664', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_665', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_666', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_667', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_668', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_669', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_670', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_671', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_672', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_673', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_674', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_675', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_676', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_677', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_678', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_679', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_680', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_681', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_682', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_683', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_684', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_685', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_686', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_687', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_688', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_689', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_690', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_691', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_692', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_693', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_694', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_695', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_696', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_697', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_698', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_699', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_700', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_701', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_702', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_703', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_704', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_705', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_706', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_707', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_708', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_709', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_710', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_711', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_712', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_713', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_714', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_715', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_716', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_717', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_718', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_719', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_720', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_721', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_722', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_723', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_724', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_725', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_726', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_727', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_728', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_729', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_730', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_731', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_732', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_733', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_734', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_735', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_736', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_737', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_738', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_739', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_740', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_741', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_742', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_743', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_744', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_745', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_746', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_747', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_748', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_749', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_750', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_751', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_752', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_753', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_754', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_755', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_756', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_757', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_758', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_759', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_760', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_761', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_762', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_763', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_764', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_765', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_766', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_767', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_768', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_769', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_770', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_771', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_772', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_773', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_774', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_775', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_776', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_777', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_778', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_779', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_780', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_781', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_782', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_783', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_784', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_785', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_786', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_787', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_788', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_789', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_790', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_791', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_792', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_793', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_794', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_795', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_796', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_797', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_798', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_799', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_800', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_801', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
-                ('item_802', models.CharField(choices=[('produces', 'produces')], max_length=8, null=True)),
+                (
+                    "basetable_ptr",
+                    models.OneToOneField(
+                        auto_created=True,
+                        on_delete=django.db.models.deletion.CASCADE,
+                        parent_link=True,
+                        primary_key=True,
+                        serialize=False,
+                        to="instruments.basetable",
+                    ),
+                ),
+                (
+                    "item_1",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_2",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_3",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_4",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_5",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_6",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_7",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_8",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_9",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_10",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_11",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_12",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_13",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_14",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_15",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_16",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_17",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_18",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_19",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_20",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_21",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_22",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_23",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_24",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_25",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_26",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_27",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_28",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_29",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_30",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_31",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_32",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_33",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_34",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_35",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_36",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_37",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_38",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_39",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_40",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_41",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_42",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_43",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_44",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_45",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_46",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_47",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_48",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_49",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_50",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_51",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_52",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_53",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_54",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_55",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_56",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_57",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_58",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_59",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_60",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_61",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_62",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_63",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_64",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_65",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_66",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_67",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_68",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_69",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_70",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_71",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_72",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_73",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_74",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_75",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_76",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_77",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_78",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_79",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_80",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_81",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_82",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_83",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_84",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_85",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_86",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_87",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_88",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_89",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_90",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_91",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_92",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_93",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_94",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_95",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_96",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_97",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_98",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_99",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_100",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_101",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_102",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_103",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_104",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_105",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_106",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_107",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_108",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_109",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_110",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_111",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_112",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_113",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_114",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_115",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_116",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_117",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_118",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_119",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_120",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_121",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_122",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_123",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_124",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_125",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_126",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_127",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_128",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_129",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_130",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_131",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_132",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_133",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_134",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_135",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_136",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_137",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_138",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_139",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_140",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_141",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_142",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_143",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_144",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_145",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_146",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_147",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_148",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_149",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_150",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_151",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_152",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_153",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_154",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_155",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_156",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_157",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_158",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_159",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_160",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_161",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_162",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_163",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_164",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_165",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_166",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_167",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_168",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_169",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_170",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_171",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_172",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_173",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_174",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_175",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_176",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_177",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_178",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_179",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_180",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_181",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_182",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_183",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_184",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_185",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_186",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_187",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_188",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_189",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_190",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_191",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_192",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_193",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_194",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_195",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_196",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_197",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_198",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_199",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_200",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_201",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_202",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_203",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_204",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_205",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_206",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_207",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_208",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_209",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_210",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_211",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_212",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_213",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_214",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_215",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_216",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_217",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_218",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_219",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_220",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_221",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_222",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_223",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_224",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_225",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_226",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_227",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_228",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_229",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_230",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_231",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_232",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_233",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_234",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_235",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_236",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_237",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_238",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_239",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_240",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_241",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_242",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_243",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_244",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_245",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_246",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_247",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_248",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_249",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_250",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_251",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_252",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_253",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_254",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_255",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_256",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_257",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_258",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_259",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_260",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_261",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_262",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_263",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_264",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_265",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_266",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_267",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_268",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_269",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_270",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_271",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_272",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_273",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_274",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_275",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_276",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_277",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_278",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_279",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_280",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_281",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_282",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_283",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_284",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_285",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_286",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_287",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_288",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_289",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_290",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_291",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_292",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_293",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_294",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_295",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_296",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_297",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_298",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_299",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_300",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_301",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_302",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_303",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_304",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_305",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_306",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_307",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_308",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_309",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_310",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_311",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_312",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_313",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_314",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_315",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_316",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_317",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_318",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_319",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_320",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_321",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_322",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_323",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_324",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_325",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_326",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_327",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_328",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_329",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_330",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_331",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_332",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_333",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_334",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_335",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_336",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_337",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_338",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_339",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_340",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_341",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_342",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_343",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_344",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_345",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_346",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_347",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_348",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_349",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_350",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_351",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_352",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_353",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_354",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_355",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_356",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_357",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_358",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_359",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_360",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_361",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_362",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_363",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_364",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_365",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_366",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_367",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_368",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_369",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_370",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_371",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_372",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_373",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_374",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_375",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_376",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_377",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_378",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_379",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_380",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_381",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_382",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_383",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_384",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_385",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_386",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_387",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_388",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_389",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_390",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_391",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_392",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_393",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_394",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_395",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_396",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_397",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_398",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_399",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_400",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_401",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_402",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_403",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_404",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_405",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_406",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_407",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_408",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_409",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_410",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_411",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_412",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_413",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_414",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_415",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_416",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_417",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_418",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_419",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_420",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_421",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_422",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_423",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_424",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_425",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_426",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_427",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_428",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_429",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_430",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_431",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_432",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_433",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_434",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_435",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_436",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_437",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_438",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_439",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_440",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_441",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_442",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_443",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_444",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_445",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_446",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_447",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_448",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_449",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_450",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_451",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_452",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_453",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_454",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_455",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_456",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_457",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_458",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_459",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_460",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_461",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_462",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_463",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_464",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_465",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_466",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_467",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_468",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_469",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_470",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_471",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_472",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_473",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_474",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_475",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_476",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_477",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_478",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_479",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_480",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_481",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_482",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_483",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_484",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_485",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_486",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_487",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_488",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_489",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_490",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_491",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_492",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_493",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_494",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_495",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_496",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_497",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_498",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_499",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_500",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_501",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_502",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_503",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_504",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_505",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_506",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_507",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_508",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_509",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_510",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_511",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_512",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_513",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_514",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_515",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_516",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_517",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_518",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_519",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_520",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_521",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_522",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_523",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_524",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_525",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_526",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_527",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_528",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_529",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_530",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_531",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_532",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_533",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_534",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_535",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_536",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_537",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_538",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_539",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_540",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_541",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_542",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_543",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_544",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_545",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_546",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_547",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_548",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_549",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_550",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_551",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_552",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_553",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_554",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_555",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_556",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_557",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_558",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_559",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_560",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_561",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_562",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_563",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_564",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_565",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_566",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_567",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_568",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_569",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_570",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_571",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_572",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_573",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_574",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_575",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_576",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_577",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_578",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_579",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_580",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_581",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_582",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_583",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_584",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_585",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_586",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_587",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_588",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_589",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_590",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_591",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_592",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_593",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_594",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_595",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_596",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_597",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_598",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_599",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_600",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_601",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_602",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_603",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_604",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_605",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_606",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_607",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_608",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_609",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_610",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_611",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_612",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_613",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_614",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_615",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_616",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_617",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_618",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_619",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_620",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_621",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_622",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_623",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_624",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_625",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_626",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_627",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_628",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_629",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_630",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_631",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_632",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_633",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_634",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_635",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_636",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_637",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_638",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_639",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_640",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_641",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_642",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_643",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_644",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_645",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_646",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_647",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_648",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_649",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_650",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_651",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_652",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_653",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_654",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_655",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_656",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_657",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_658",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_659",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_660",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_661",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_662",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_663",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_664",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_665",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_666",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_667",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_668",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_669",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_670",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_671",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_672",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_673",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_674",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_675",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_676",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_677",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_678",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_679",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_680",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_681",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_682",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_683",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_684",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_685",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_686",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_687",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_688",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_689",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_690",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_691",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_692",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_693",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_694",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_695",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_696",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_697",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_698",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_699",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_700",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_701",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_702",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_703",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_704",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_705",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_706",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_707",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_708",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_709",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_710",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_711",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_712",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_713",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_714",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_715",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_716",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_717",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_718",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_719",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_720",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_721",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_722",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_723",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_724",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_725",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_726",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_727",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_728",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_729",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_730",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_731",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_732",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_733",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_734",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_735",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_736",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_737",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_738",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_739",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_740",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_741",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_742",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_743",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_744",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_745",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_746",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_747",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_748",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_749",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_750",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_751",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_752",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_753",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_754",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_755",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_756",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_757",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_758",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_759",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_760",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_761",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_762",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_763",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_764",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_765",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_766",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_767",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_768",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_769",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_770",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_771",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_772",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_773",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_774",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_775",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_776",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_777",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_778",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_779",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_780",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_781",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_782",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_783",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_784",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_785",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_786",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_787",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_788",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_789",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_790",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_791",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_792",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_793",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_794",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_795",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_796",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_797",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_798",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_799",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_800",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_801",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
+                (
+                    "item_802",
+                    models.CharField(
+                        choices=[("produces", "produces")], max_length=8, null=True
+                    ),
+                ),
             ],
-            bases=('instruments.basetable',),
+            bases=("instruments.basetable",),
         ),
     ]

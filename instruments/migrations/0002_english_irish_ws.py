@@ -5,678 +5,7210 @@ import django.db.models.deletion
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('instruments', '0001_initial'),
+        ("instruments", "0001_initial"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='English_Irish_WS',
+            name="English_Irish_WS",
             fields=[
-                ('basetable_ptr', models.OneToOneField(auto_created=True, on_delete=django.db.models.deletion.CASCADE, parent_link=True, primary_key=True, serialize=False, to='instruments.basetable')),
-                ('item_1', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_2', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_3', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_4', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_5', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_6', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_7', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_8', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_9', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_10', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_11', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_12', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_13', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_15', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_17', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_19', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_22', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_24', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_26', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_28', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_30', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_33', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_35', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_37', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_39', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_41', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_43', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_45', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_47', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_50', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_52', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_54', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_57', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_59', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_61', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_63', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_65', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_67', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_69', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_71', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_73', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_75', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_78', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_80', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_82', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_84', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_86', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_88', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_90', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_92', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_94', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_96', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_99', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_102', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_104', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_107', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_109', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_111', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_112', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_115', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_116', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_118', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_121', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_123', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_125', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_127', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_130', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_133', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_135', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_137', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_139', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_141', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_143', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_144', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_147', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_148', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_150', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_152', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_154', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_156', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_158', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_160', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_162', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_165', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_167', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_169', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_171', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_174', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_176', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_179', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_181', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_183', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_186', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_188', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_190', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_192', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_194', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_196', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_198', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_201', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_202', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_204', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_206', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_208', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_210', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_212', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_214', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_215', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_217', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_219', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_221', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_223', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_225', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_227', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_229', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_231', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_234', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_237', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_239', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_241', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_243', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_245', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_247', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_249', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_251', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_253', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_256', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_258', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_260', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_262', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_264', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_266', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_268', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_270', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_272', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_274', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_276', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_278', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_280', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_282', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_284', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_286', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_288', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_290', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_291', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_293', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_295', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_297', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_299', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_301', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_303', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_305', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_307', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_309', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_311', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_313', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_315', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_317', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_319', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_321', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_324', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_326', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_327', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_329', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_331', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_333', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_335', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_337', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_339', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_341', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_343', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_345', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_347', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_349', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_351', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_353', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_355', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_357', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_359', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_361', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_363', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_365', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_367', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_370', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_372', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_374', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_376', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_378', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_380', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_382', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_384', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_386', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_388', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_390', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_392', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_394', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_396', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_398', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_400', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_402', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_404', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_406', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_408', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_410', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_412', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_414', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_416', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_418', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_421', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_423', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_425', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_428', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_430', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_432', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_434', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_436', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_438', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_440', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_442', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_444', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_446', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_449', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_451', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_453', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_455', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_457', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_459', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_460', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_462', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_464', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_466', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_468', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_470', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_472', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_474', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_476', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_478', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_480', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_482', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_484', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_486', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_488', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_489', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_491', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_493', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_495', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_497', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_499', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_501', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_503', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_505', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_507', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_509', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_511', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_513', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_515', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_517', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_519', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_521', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_523', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_525', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_527', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_529', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_531', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_533', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_535', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_537', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_539', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_541', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_543', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_545', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_547', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_549', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_551', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_553', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_555', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_557', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_559', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_561', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_563', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_565', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_567', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_569', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_571', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_573', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_575', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_577', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_579', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_581', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_583', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_585', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_587', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_589', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_591', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_593', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_595', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_597', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_599', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_601', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_603', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_605', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_607', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_609', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_611', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_613', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_615', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_617', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_619', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_621', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_623', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_625', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_627', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_629', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_631', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_633', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_635', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_637', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_639', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_641', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_643', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_645', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_647', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_649', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_651', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_653', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_655', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_657', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_659', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_660', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_662', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_664', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_665', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_667', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_669', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_671', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_673', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_675', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_677', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_679', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_681', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_683', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_685', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_687', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_689', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_691', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_694', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_696', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_698', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_700', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_702', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_704', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_706', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_708', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_710', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_712', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_714', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_716', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_718', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_720', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_723', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_725', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_727', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_730', models.CharField(choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')], max_length=22, null=True)),
-                ('item_732', models.CharField(choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')], max_length=22, null=True)),
-                ('item_734', models.CharField(choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')], max_length=22, null=True)),
-                ('item_736', models.CharField(choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')], max_length=22, null=True)),
-                ('item_738', models.CharField(choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')], max_length=22, null=True)),
-                ('item_740', models.CharField(choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')], max_length=22, null=True)),
-                ('item_742', models.CharField(choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')], max_length=22, null=True)),
-                ('item_744', models.CharField(choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')], max_length=22, null=True)),
-                ('item_746', models.CharField(choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')], max_length=22, null=True)),
-                ('item_748', models.CharField(choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')], max_length=22, null=True)),
-                ('item_750', models.CharField(choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')], max_length=22, null=True)),
-                ('item_752', models.CharField(choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')], max_length=22, null=True)),
-                ('item_754', models.CharField(choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')], max_length=22, null=True)),
-                ('item_756', models.CharField(choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')], max_length=22, null=True)),
-                ('item_758', models.CharField(choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')], max_length=22, null=True)),
-                ('item_760', models.CharField(choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')], max_length=22, null=True)),
-                ('item_762', models.CharField(choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')], max_length=22, null=True)),
-                ('item_764', models.CharField(choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')], max_length=22, null=True)),
-                ('item_766', models.CharField(choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')], max_length=22, null=True)),
-                ('item_768', models.CharField(choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')], max_length=22, null=True)),
-                ('item_770', models.CharField(choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')], max_length=22, null=True)),
-                ('item_772', models.CharField(choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')], max_length=22, null=True)),
-                ('item_774', models.CharField(choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')], max_length=22, null=True)),
-                ('item_777', models.CharField(choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')], max_length=22, null=True)),
-                ('item_779', models.CharField(choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')], max_length=22, null=True)),
-                ('item_782', models.CharField(choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')], max_length=22, null=True)),
-                ('item_785', models.CharField(choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')], max_length=22, null=True)),
-                ('item_787', models.CharField(choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')], max_length=22, null=True)),
-                ('item_789', models.CharField(choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')], max_length=22, null=True)),
-                ('item_791', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_793', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_795', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_797', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_799', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_801', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_803', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_805', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_807', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_809', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_811', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_813', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_815', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_817', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_819', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_821', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_823', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_825', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_827', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_829', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_831', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_833', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_835', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_837', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_839', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_841', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_843', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_845', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_847', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_849', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_851', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_853', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_855', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_857', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_859', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_861', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_863', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_865', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_867', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_869', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_871', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_873', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_875', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_877', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_879', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_881', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_883', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_885', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_887', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_889', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_891', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_893', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_895', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_897', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_899', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_901', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_903', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_905', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_907', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_909', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_911', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_913', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_915', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_917', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_919', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_921', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_923', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_925', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_927', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_929', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_931', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_933', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_935', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_937', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_939', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_941', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_943', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_945', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_947', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_949', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_951', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_953', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_955', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_957', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_959', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_961', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_963', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_965', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_967', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_969', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_971', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_973', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_975', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_977', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_979', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_981', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_983', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_985', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_987', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_989', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_991', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_993', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_995', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_997', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_999', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1001', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1003', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1005', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1007', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1009', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1011', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1013', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1015', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1017', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1019', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1021', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1023', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1025', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1027', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1029', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1031', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1033', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1035', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1037', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1039', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1041', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1043', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1045', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1047', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1049', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1051', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1053', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1055', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1057', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1059', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1061', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1063', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1065', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1067', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1069', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1071', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1073', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1075', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1077', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1079', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1081', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1083', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1085', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1087', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1089', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1091', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1093', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1095', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1097', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1099', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1101', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1103', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1105', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1107', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1109', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1111', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1113', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1115', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1117', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1119', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1121', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1123', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1125', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1127', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1129', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1130', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1131', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1133', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1135', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1137', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1139', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1141', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1143', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1144', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1145', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1147', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1148', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1150', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1153', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1155', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1157', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1159', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1161', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1163', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1165', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1167', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1169', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1196', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1198', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1200', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1202', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1204', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1206', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1208', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1210', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1212', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1214', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1216', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1218', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1220', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1222', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1224', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1226', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1228', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1230', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1232', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1234', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1236', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1238', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1240', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1242', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1244', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1246', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1248', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1250', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1252', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1254', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1256', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1258', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1260', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1262', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1264', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1266', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1268', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1270', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1272', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1273', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1275', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1277', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1279', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1281', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1283', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1285', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1287', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1289', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1291', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1293', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1295', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1297', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1299', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1302', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1304', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1306', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1308', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1310', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1312', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1314', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1317', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1319', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1321', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1323', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1325', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1327', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1329', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1331', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1333', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1335', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1339', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1341', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1343', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1345', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1347', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1349', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1351', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
-                ('item_1353', models.CharField(choices=[('produces', 'produces'), ("doesn't produce", "doesn't produce")], max_length=15, null=True)),
+                (
+                    "basetable_ptr",
+                    models.OneToOneField(
+                        auto_created=True,
+                        on_delete=django.db.models.deletion.CASCADE,
+                        parent_link=True,
+                        primary_key=True,
+                        serialize=False,
+                        to="instruments.basetable",
+                    ),
+                ),
+                (
+                    "item_1",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_2",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_3",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_4",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_5",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_6",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_7",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_8",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_9",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_10",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_11",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_12",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_13",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_15",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_17",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_19",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_22",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_24",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_26",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_28",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_30",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_33",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_35",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_37",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_39",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_41",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_43",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_45",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_47",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_50",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_52",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_54",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_57",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_59",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_61",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_63",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_65",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_67",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_69",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_71",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_73",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_75",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_78",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_80",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_82",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_84",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_86",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_88",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_90",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_92",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_94",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_96",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_99",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_102",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_104",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_107",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_109",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_111",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_112",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_115",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_116",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_118",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_121",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_123",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_125",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_127",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_130",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_133",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_135",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_137",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_139",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_141",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_143",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_144",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_147",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_148",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_150",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_152",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_154",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_156",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_158",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_160",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_162",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_165",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_167",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_169",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_171",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_174",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_176",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_179",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_181",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_183",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_186",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_188",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_190",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_192",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_194",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_196",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_198",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_201",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_202",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_204",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_206",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_208",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_210",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_212",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_214",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_215",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_217",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_219",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_221",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_223",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_225",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_227",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_229",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_231",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_234",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_237",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_239",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_241",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_243",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_245",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_247",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_249",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_251",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_253",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_256",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_258",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_260",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_262",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_264",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_266",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_268",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_270",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_272",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_274",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_276",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_278",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_280",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_282",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_284",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_286",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_288",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_290",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_291",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_293",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_295",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_297",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_299",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_301",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_303",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_305",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_307",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_309",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_311",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_313",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_315",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_317",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_319",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_321",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_324",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_326",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_327",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_329",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_331",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_333",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_335",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_337",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_339",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_341",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_343",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_345",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_347",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_349",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_351",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_353",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_355",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_357",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_359",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_361",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_363",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_365",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_367",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_370",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_372",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_374",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_376",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_378",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_380",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_382",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_384",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_386",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_388",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_390",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_392",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_394",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_396",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_398",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_400",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_402",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_404",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_406",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_408",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_410",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_412",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_414",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_416",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_418",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_421",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_423",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_425",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_428",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_430",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_432",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_434",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_436",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_438",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_440",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_442",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_444",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_446",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_449",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_451",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_453",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_455",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_457",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_459",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_460",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_462",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_464",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_466",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_468",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_470",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_472",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_474",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_476",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_478",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_480",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_482",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_484",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_486",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_488",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_489",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_491",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_493",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_495",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_497",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_499",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_501",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_503",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_505",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_507",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_509",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_511",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_513",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_515",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_517",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_519",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_521",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_523",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_525",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_527",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_529",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_531",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_533",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_535",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_537",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_539",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_541",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_543",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_545",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_547",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_549",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_551",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_553",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_555",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_557",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_559",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_561",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_563",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_565",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_567",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_569",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_571",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_573",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_575",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_577",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_579",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_581",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_583",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_585",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_587",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_589",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_591",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_593",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_595",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_597",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_599",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_601",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_603",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_605",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_607",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_609",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_611",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_613",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_615",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_617",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_619",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_621",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_623",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_625",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_627",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_629",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_631",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_633",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_635",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_637",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_639",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_641",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_643",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_645",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_647",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_649",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_651",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_653",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_655",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_657",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_659",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_660",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_662",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_664",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_665",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_667",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_669",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_671",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_673",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_675",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_677",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_679",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_681",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_683",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_685",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_687",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_689",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_691",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_694",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_696",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_698",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_700",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_702",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_704",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_706",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_708",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_710",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_712",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_714",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_716",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_718",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_720",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_723",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_725",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_727",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_730",
+                    models.CharField(
+                        choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')],
+                        max_length=22,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_732",
+                    models.CharField(
+                        choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')],
+                        max_length=22,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_734",
+                    models.CharField(
+                        choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')],
+                        max_length=22,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_736",
+                    models.CharField(
+                        choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')],
+                        max_length=22,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_738",
+                    models.CharField(
+                        choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')],
+                        max_length=22,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_740",
+                    models.CharField(
+                        choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')],
+                        max_length=22,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_742",
+                    models.CharField(
+                        choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')],
+                        max_length=22,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_744",
+                    models.CharField(
+                        choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')],
+                        max_length=22,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_746",
+                    models.CharField(
+                        choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')],
+                        max_length=22,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_748",
+                    models.CharField(
+                        choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')],
+                        max_length=22,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_750",
+                    models.CharField(
+                        choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')],
+                        max_length=22,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_752",
+                    models.CharField(
+                        choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')],
+                        max_length=22,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_754",
+                    models.CharField(
+                        choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')],
+                        max_length=22,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_756",
+                    models.CharField(
+                        choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')],
+                        max_length=22,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_758",
+                    models.CharField(
+                        choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')],
+                        max_length=22,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_760",
+                    models.CharField(
+                        choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')],
+                        max_length=22,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_762",
+                    models.CharField(
+                        choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')],
+                        max_length=22,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_764",
+                    models.CharField(
+                        choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')],
+                        max_length=22,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_766",
+                    models.CharField(
+                        choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')],
+                        max_length=22,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_768",
+                    models.CharField(
+                        choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')],
+                        max_length=22,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_770",
+                    models.CharField(
+                        choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')],
+                        max_length=22,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_772",
+                    models.CharField(
+                        choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')],
+                        max_length=22,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_774",
+                    models.CharField(
+                        choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')],
+                        max_length=22,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_777",
+                    models.CharField(
+                        choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')],
+                        max_length=22,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_779",
+                    models.CharField(
+                        choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')],
+                        max_length=22,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_782",
+                    models.CharField(
+                        choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')],
+                        max_length=22,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_785",
+                    models.CharField(
+                        choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')],
+                        max_length=22,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_787",
+                    models.CharField(
+                        choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')],
+                        max_length=22,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_789",
+                    models.CharField(
+                        choices=[(' ROUTINES AND PHRASES"', ' ROUTINES AND PHRASES"')],
+                        max_length=22,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_791",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_793",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_795",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_797",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_799",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_801",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_803",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_805",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_807",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_809",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_811",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_813",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_815",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_817",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_819",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_821",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_823",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_825",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_827",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_829",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_831",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_833",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_835",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_837",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_839",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_841",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_843",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_845",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_847",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_849",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_851",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_853",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_855",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_857",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_859",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_861",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_863",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_865",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_867",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_869",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_871",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_873",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_875",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_877",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_879",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_881",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_883",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_885",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_887",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_889",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_891",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_893",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_895",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_897",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_899",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_901",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_903",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_905",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_907",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_909",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_911",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_913",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_915",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_917",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_919",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_921",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_923",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_925",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_927",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_929",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_931",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_933",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_935",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_937",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_939",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_941",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_943",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_945",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_947",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_949",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_951",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_953",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_955",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_957",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_959",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_961",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_963",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_965",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_967",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_969",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_971",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_973",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_975",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_977",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_979",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_981",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_983",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_985",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_987",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_989",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_991",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_993",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_995",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_997",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_999",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1001",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1003",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1005",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1007",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1009",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1011",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1013",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1015",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1017",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1019",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1021",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1023",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1025",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1027",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1029",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1031",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1033",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1035",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1037",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1039",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1041",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1043",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1045",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1047",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1049",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1051",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1053",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1055",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1057",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1059",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1061",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1063",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1065",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1067",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1069",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1071",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1073",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1075",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1077",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1079",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1081",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1083",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1085",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1087",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1089",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1091",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1093",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1095",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1097",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1099",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1101",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1103",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1105",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1107",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1109",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1111",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1113",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1115",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1117",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1119",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1121",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1123",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1125",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1127",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1129",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1130",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1131",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1133",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1135",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1137",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1139",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1141",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1143",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1144",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1145",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1147",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1148",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1150",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1153",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1155",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1157",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1159",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1161",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1163",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1165",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1167",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1169",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1196",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1198",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1200",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1202",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1204",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1206",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1208",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1210",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1212",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1214",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1216",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1218",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1220",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1222",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1224",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1226",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1228",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1230",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1232",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1234",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1236",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1238",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1240",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1242",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1244",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1246",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1248",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1250",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1252",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1254",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1256",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1258",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1260",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1262",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1264",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1266",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1268",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1270",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1272",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1273",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1275",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1277",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1279",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1281",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1283",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1285",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1287",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1289",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1291",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1293",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1295",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1297",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1299",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1302",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1304",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1306",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1308",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1310",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1312",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1314",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1317",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1319",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1321",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1323",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1325",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1327",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1329",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1331",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1333",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1335",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1339",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1341",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1343",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1345",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1347",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1349",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1351",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                (
+                    "item_1353",
+                    models.CharField(
+                        choices=[
+                            ("produces", "produces"),
+                            ("doesn't produce", "doesn't produce"),
+                        ],
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
             ],
-            bases=('instruments.basetable',),
+            bases=("instruments.basetable",),
         ),
     ]

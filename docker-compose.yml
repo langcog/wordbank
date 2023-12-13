@@ -11,7 +11,18 @@ services:
     env_file:
       - .env
     command: mysqld --sql_mode="" --character-set-server=utf8 --default_storage_engine=MyISAM --innodb_strict_mode=0 --innodb_log_file_size=256M --innodb_log_buffer_size=256M --innodb_default_row_format='dynamic'
-    
+
+  phpmydmin:
+    image: phpmyadmin:latest
+    depends_on:
+      - db
+    ports:
+      - "8080:80"
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    restart: always
 
   web:
     build:

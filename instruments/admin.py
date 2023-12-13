@@ -83,6 +83,5 @@ for m in [
     models.English_American_WSShort,
     models.English_American_WGShort,
     models.English_British_OxfordShort,
-
 ]:
     admin.site.register(m)

@@ -4,6 +4,5 @@ from common.models import *
 
 # Deletes all Category objects
 class Command(BaseCommand):
-
     def handle(self, *args, **options):
         ItemCategory.objects.all().delete()
