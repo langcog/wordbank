@@ -83,6 +83,8 @@ class Command(BaseCommand):
 
         else:
             input_datasets = datasets
+        
+        print(f'Datasets: {input_datasets}')
 
         for dataset in input_datasets:
             dataset_name = f"{dataset['name']}"

@@ -76,7 +76,7 @@ class Command(BaseCommand):
                     item_kind = row_values[col_names.index("type")]
 
                     item_category = row_values[col_names.index("category")]
-                    if item_kind == "word" and item_category != "":
+                    if item_kind == "word" and not item_category in ["", 'NA']:
                         try:
                             item_category = ItemCategory.objects.get(
                                 category=item_category

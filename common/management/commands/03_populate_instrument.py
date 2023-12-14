@@ -11,6 +11,8 @@ FORM_DICT = {
     "WGComp": "WG",
     "WGShort": "WG",
     "WGShortProd": "WG",
+    "WGProdShort": "WG",
+    "WGProd": "WG",
     "IC": "WG",
     "TC": "WS",
     "TEDS Twos": "WS",

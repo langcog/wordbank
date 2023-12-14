@@ -81,3 +81,5 @@ from .schemas.Estonian_WS import *
 from .schemas.Catalan_WS import *
 from .schemas.Korean_WGComp import *
 from .schemas.French_Quebecois_WG import *
+from .schemas.Finnish_WGProdShort import *
+from .schemas.Finnish_WGProd import *

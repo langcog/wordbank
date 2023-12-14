@@ -1873,6 +1873,34 @@
         "license": "CC-BY",
         "citation": "TBA",
         "dataset_origin": "Byers Heinlein Bilingual"
+    },
+    {
+        "name": "Stolt",
+        "dataset": "Stolt",
+        "instrument_language": "Finnish",
+        "instrument_form": "WGProd",
+        "file": "raw_data/Finnish_WGProd/FinnishWGProd_Stolt.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": true,
+        "date_format": "%m/%d/%Y",
+        "contributor": "TBA",
+        "license": "CC-BY",
+        "citation": "TBA"
+    },
+    {
+        "name": "Stolt",
+        "dataset": "Stolt",
+        "instrument_language": "Finnish",
+        "instrument_form": "WGProdShort",
+        "file": "raw_data/Finnish_WGProdShort/FinnishWGProdShort_Stolt.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": true,
+        "date_format": "%m/%d/%Y",
+        "contributor": "TBA",
+        "license": "CC-BY",
+        "citation": "TBA"
     }
 ]
 
