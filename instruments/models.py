@@ -84,3 +84,4 @@ from .schemas.French_Quebecois_WG import *
 from .schemas.Finnish_WGProdShort import *
 from .schemas.Finnish_WGProd import *
 from .schemas.English_American_WG import *
+from .schemas.Finnish_WS import *

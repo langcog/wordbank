@@ -555,26 +555,26 @@ item_553,question_words,miksi,miksi,produces,word,why,why
 item_554,question_words,milloin,milloin,produces,word,when,when (question)
 item_555,question_words,missä,missä,produces,word,where,where (question)
 item_556,question_words,"mitä (e.g. ""What did you say?)","mitä (e.g. ""What did you say?)",produces,word,what,what
-item_557,prepositions,alas,alas,produces,word,down,down
-item_558,prepositions,auki,auki,produces,word,turned on,open (description)
-item_559,prepositions,kanssa,kanssa,produces,word,together,together
-item_560,prepositions,pois,pois,produces,word,away,away
-item_561,prepositions,alla,alla,produces,word,under,under
-item_562,prepositions,edessä,edessä,produces,word,in front,in front
-item_563,prepositions,kiinni,kiinni,produces,word,closed,closed
-item_564,prepositions,päällä (päälle),päällä (päälle),produces,word,on,on
-item_565,prepositions,siellä (sinne),siellä (sinne),produces,word,there,there
-item_566,prepositions,sisään,sisään,produces,word,go inside,in
-item_567,prepositions,tuolla (tuonne),tuolla (tuonne),produces,word,out there,there
-item_568,prepositions,ulkona,ulkona,produces,word,ouside,outside
-item_569,prepositions,vieressä,vieressä,produces,word,beside,beside
-item_570,prepositions,ylös,ylös,produces,word,up,up
-item_571,prepositions,sisällä (sisälle),sisällä (sisälle),produces,word,is inside,inside
-item_572,prepositions,takana,takana,produces,word,is below,below
-item_573,prepositions,täällä (tänne),täällä (tänne),produces,word,here,here
-item_574,prepositions,ulos,ulos,produces,word,go out,go out
-item_575,prepositions,yläpuolella,yläpuolella,produces,word,above,above
-item_576,prepositions,ympärillä,ympärillä,produces,word,around,around
+item_557,locations,alas,alas,produces,word,down,down
+item_558,locations,auki,auki,produces,word,turned on,open (description)
+item_559,locations,kanssa,kanssa,produces,word,together,together
+item_560,locations,pois,pois,produces,word,away,away
+item_561,locations,alla,alla,produces,word,under,under
+item_562,locations,edessä,edessä,produces,word,in front,in front
+item_563,locations,kiinni,kiinni,produces,word,closed,closed
+item_564,locations,päällä (päälle),päällä (päälle),produces,word,on,on
+item_565,locations,siellä (sinne),siellä (sinne),produces,word,there,there
+item_566,locations,sisään,sisään,produces,word,go inside,in
+item_567,locations,tuolla (tuonne),tuolla (tuonne),produces,word,out there,there
+item_568,locations,ulkona,ulkona,produces,word,ouside,outside
+item_569,locations,vieressä,vieressä,produces,word,beside,beside
+item_570,locations,ylös,ylös,produces,word,up,up
+item_571,locations,sisällä (sisälle),sisällä (sisälle),produces,word,is inside,inside
+item_572,locations,takana,takana,produces,word,is below,below
+item_573,locations,täällä (tänne),täällä (tänne),produces,word,here,here
+item_574,locations,ulos,ulos,produces,word,go out,go out
+item_575,locations,yläpuolella,yläpuolella,produces,word,above,above
+item_576,locations,ympärillä,ympärillä,produces,word,around,around
 item_577,quantifiers,enemmän,enemmän,produces,word,more,more
 item_578,quantifiers,lisää,lisää,produces,word,even more,more
 item_579,quantifiers,paljon,paljon,produces,word,much,much
