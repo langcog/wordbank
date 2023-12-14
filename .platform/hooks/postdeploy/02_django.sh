@@ -17,6 +17,7 @@ python ./manage.py 05_populate_items -l 'Korean' -f WGComp
 python ./manage.py 05_populate_items -l 'French (Quebecois)' -f WG
 python ./manage.py 05_populate_items -l 'Finnish' -f WGProd
 python ./manage.py 05_populate_items -l 'Finnish' -f WGProdShort
+python ./manage.py 05_populate_items -l 'English (American)' -f WG
 
 python ./manage.py 06_populate_datasets
 
@@ -33,6 +34,7 @@ python ./manage.py 07_import_datasets -l German -f WS
 python ./manage.py 07_import_datasets -o 'Byers Heinlein Bilingual'
 #python ./manage.py 07_import_datasets -l Finnish -f WGProd
 python ./manage.py 07_import_datasets -l Finnish -f WGProdShort
+#python ./manage.py 07_import_datasets -l 'English (American)' -f WG
 
 python ./manage.py 08_populate_vocabulary_size -l 'French (French)' -f WS
 python ./manage.py 08_populate_vocabulary_size -l 'French (French)' -f WG
