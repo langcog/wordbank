@@ -10,7 +10,7 @@ services:
       test: "exit 0"
     env_file:
       - .env
-    command: mysqld --sql_mode="" --character-set-server=utf8 --default_storage_engine=MyISAM --innodb_strict_mode=0 --innodb_log_file_size=256M --innodb_log_buffer_size=256M --innodb_default_row_format='dynamic'
+    command: mysqld --sql_mode="" --character-set-server=utf8 --default_storage_engine=MyISAM --innodb_strict_mode=0 --innodb_log_file_size=256M --innodb_log_buffer_size=256M --innodb_default_row_format='dynamic' --thread_stack=512000
 
   phpmydmin:
     image: phpmyadmin:latest

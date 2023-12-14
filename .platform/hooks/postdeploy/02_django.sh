@@ -25,7 +25,7 @@ python ./manage.py 07_import_datasets -a 'raw_data/French_French_WS/FrenchFrench
 python ./manage.py 07_import_datasets -a 'raw_data/French_French_WS/FrenchFrenchWS_TsujiLabvanced.csv'
 python ./manage.py 07_import_datasets -a 'raw_data/French_French_WG/FrenchFrenchWG_Tsuji.csv'
 python ./manage.py 07_import_datasets -a 'raw_data/Arabic_Saudi_WG/ArabicSaudiWG_Alroqi.csv'
-#python ./manage.py 07_import_datasets -a 'raw_data/Estonian_WS/EstonianWS_Urm.csv'
+python ./manage.py 07_import_datasets -a 'raw_data/Estonian_WS/EstonianWS_Urm.csv'
 python ./manage.py 07_import_datasets -a 'raw_data/Catalan_WS/CatalanWS_Serrat.csv'
 python ./manage.py 07_import_datasets -a 'raw_data/Korean_WS/KoreanWS_Chosun.csv'
 python ./manage.py 07_import_datasets -a 'raw_data/Korean_WGComp/KoreanWGComp_Chosun.csv'
