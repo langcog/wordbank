@@ -85,3 +85,5 @@ from .schemas.Finnish_WGProdShort import *
 from .schemas.Finnish_WGProd import *
 from .schemas.English_American_WG import *
 from .schemas.Finnish_WS import *
+from .schemas.Arabic_Saudi_WS import *
+from .schemas.Arabic_Saudi_WSOther import *

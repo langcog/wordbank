@@ -31,6 +31,7 @@ FORM_DICT = {
     "WSShort": "WS",
     "WGShort": "WG",
     "OxfordShort": "WG",
+    "WSOther": "WS",
 }
 
 

@@ -1901,6 +1901,48 @@
         "contributor": "TBA",
         "license": "CC-BY",
         "citation": "TBA"
+    },
+    {
+        "name": "Alroqi",
+        "dataset": "",
+        "instrument_language": "Arabic (Saudi)",
+        "instrument_form": "WS",
+        "file": "raw_data/Arabic_Saudi_WS/ArabicSaudiWS_Alroqi.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": false,
+        "date_format": "%m/%d/%y",
+        "contributor": "Haifa Alroqi, King Abdulaziz University, Alaa Almohammadi, King Abdulaziz University, Khadeejah Alaslani, Purdue University",
+        "license": "CC-BY",
+        "citation": "Haifa Alroqi, King Abdulaziz University, Alaa Almohammadi, King Abdulaziz University,  Khadeejah Alaslani, Purdue University"
+    },
+    {
+        "name": "JISH",
+        "dataset": "",
+        "instrument_language": "Arabic (Saudi)",
+        "instrument_form": "WS",
+        "file": "raw_data/Arabic_Saudi_WS/ArabicSaudiWS_JISH.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": false,
+        "date_format": "%m/%d/%y",
+        "contributor": "TBA",
+        "license": "CC-BY",
+        "citation": "TBA"
+    },
+    {
+        "name": "JISH",
+        "dataset": "",
+        "instrument_language": "Arabic (Saudi)",
+        "instrument_form": "WSOther",
+        "file": "raw_data/Arabic_Saudi_WSOther/ArabicSaudiWSOther_JISH.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": false,
+        "date_format": "%m/%d/%y",
+        "contributor": "TBA",
+        "license": "CC-BY",
+        "citation": "TBA"
     }
 ]
 

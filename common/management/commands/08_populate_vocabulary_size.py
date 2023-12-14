@@ -52,6 +52,8 @@ class Command(BaseCommand):
 
             prod_query = ""
             comp_query = ""
+            if len(words) < 1:
+                return
             for word in words:
                 prod_query += "case when %s='produces' then 1 else 0 end + " % (word)
                 comp_query += (
@@ -67,7 +69,7 @@ class Command(BaseCommand):
             query += prod_query
             query += comp_query
             query += "from %s;" % (instrument_table)
-
+            
             sizes = list(instrument_model.objects.raw(query))
             # print (f'Processing {len(sizes)} records')
 

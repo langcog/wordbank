@@ -640,6 +640,14 @@
         "has_grammar": true
     },
     {
+        "language": "Arabic (Saudi)",
+        "form": "WSOther",
+        "file": "raw_data/Arabic_Saudi_WSOther/[ArabicSaudi_WSOther].csv",
+        "age_min": 8,
+        "age_max": 16,
+        "has_grammar": true
+    },
+    {
         "language": "Estonian",
         "form": "WS",
         "file": "raw_data/Estonian_WS/[Estonian_WS].csv",

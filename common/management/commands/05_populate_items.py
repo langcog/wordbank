@@ -131,8 +131,11 @@ class Command(BaseCommand):
             all_matched = all_words.exclude(
                 uni_lemma_id__isnull=True
             )  # .exclude(uni_lemma_id__exact='')
-            lemma_coverage = round(
-                float(all_matched.count()) / float(all_words.count()), 2
-            )
+            if all_words.count() > 0:
+                lemma_coverage = round(
+                    float(all_matched.count()) / float(all_words.count()), 2
+                )
+            else:
+                lemma_coverage = 0
             instrument_obj.unilemma_coverage = lemma_coverage
             instrument_obj.save()

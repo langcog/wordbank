@@ -19,6 +19,8 @@ python ./manage.py 05_populate_items -l 'Finnish' -f WGProd
 python ./manage.py 05_populate_items -l 'Finnish' -f WGProdShort
 python ./manage.py 05_populate_items -l 'English (American)' -f WG
 python ./manage.py 05_populate_items -l 'Finnish' -f WS
+python ./manage.py 05_populate_items -l 'Arabic (Saudi)' -f WS
+python ./manage.py 05_populate_items -l 'Arabic (Saudi)' -f WSOther
 
 python ./manage.py 06_populate_datasets
 
@@ -37,10 +39,14 @@ python ./manage.py 07_import_datasets -o 'Byers Heinlein Bilingual'
 python ./manage.py 07_import_datasets -l Finnish -f WGProdShort
 #python ./manage.py 07_import_datasets -l 'English (American)' -f WG
 python ./manage.py 07_import_datasets -l Finnish -f WS
+python ./manage.py 07_import_datasets -l 'Arabic (Saudi)' -f WG
+python ./manage.py 07_import_datasets -l 'Arabic (Saudi)' -f WS
+python ./manage.py 07_import_datasets -l 'Arabic (Saudi)' -f WSOther
 
 python ./manage.py 08_populate_vocabulary_size -l 'French (French)' -f WS
 python ./manage.py 08_populate_vocabulary_size -l 'French (French)' -f WG
 python ./manage.py 08_populate_vocabulary_size -l 'Arabic (Saudi)' -f WG
+python ./manage.py 08_populate_vocabulary_size -l 'Arabic (Saudi)' -f WS
 python ./manage.py 08_populate_vocabulary_size -l 'Estonian' -f WS
 python ./manage.py 08_populate_vocabulary_size -l 'Catalan' -f WS
 python ./manage.py 08_populate_vocabulary_size -l 'Korean' -f WS
