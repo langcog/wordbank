@@ -48,8 +48,8 @@ python ./manage.py 08_populate_vocabulary_size -l 'Korean' -f WGComp
 python ./manage.py 08_populate_vocabulary_size -l Swedish -f WG
 python ./manage.py 08_populate_vocabulary_size -l German -f WS
 python ./manage.py 08_populate_vocabulary_size -l 'French (Quebecois)' -f WG
-#python ./manage.py 08_populate_vocabulary_size -l 'English (American)' -f WS
-python ./manage.py 08_populate_vocabulary_size -l 'English (American)' -f WG
+python ./manage.py 08_populate_vocabulary_size -l 'English (American)' -f WS
+#python ./manage.py 08_populate_vocabulary_size -l 'English (American)' -f WG
 #python ./manage.py 08_populate_vocabulary_size -l 'Finish' -f WGProd
 python ./manage.py 08_populate_vocabulary_size -l 'Finish' -f WGProdShort
 python ./manage.py 08_populate_vocabulary_size -l 'Finish' -f WS
