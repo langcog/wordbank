@@ -36,9 +36,9 @@ python ./manage.py 07_import_datasets -l Swedish -f WG
 python ./manage.py 07_import_datasets -l German -f WS
 python ./manage.py 07_import_datasets -o 'Byers Heinlein Bilingual'
 python ./manage.py 07_import_datasets -o 'PoulinDubois_English_French_Bilingual'
-#python ./manage.py 07_import_datasets -l Finnish -f WGProd
+python ./manage.py 07_import_datasets -l Finnish -f WGProd
 python ./manage.py 07_import_datasets -l Finnish -f WGProdShort
-#python ./manage.py 07_import_datasets -l 'English (American)' -f WG
+python ./manage.py 07_import_datasets -l 'English (American)' -f WG
 python ./manage.py 07_import_datasets -l Finnish -f WS
 python ./manage.py 07_import_datasets -l 'Arabic (Saudi)' -f WG
 python ./manage.py 07_import_datasets -l 'Arabic (Saudi)' -f WS
@@ -55,9 +55,10 @@ python ./manage.py 08_populate_vocabulary_size -l 'Korean' -f WGComp
 python ./manage.py 08_populate_vocabulary_size -l Swedish -f WG
 python ./manage.py 08_populate_vocabulary_size -l German -f WS
 python ./manage.py 08_populate_vocabulary_size -l 'French (Quebecois)' -f WG
+python ./manage.py 08_populate_vocabulary_size -l 'French (Quebecois)' -f WS
 python ./manage.py 08_populate_vocabulary_size -l 'English (American)' -f WS
-#python ./manage.py 08_populate_vocabulary_size -l 'English (American)' -f WG
-#python ./manage.py 08_populate_vocabulary_size -l 'Finish' -f WGProd
+python ./manage.py 08_populate_vocabulary_size -l 'English (American)' -f WG
+python ./manage.py 08_populate_vocabulary_size -l 'Finish' -f WGProd
 python ./manage.py 08_populate_vocabulary_size -l 'Finish' -f WGProdShort
 python ./manage.py 08_populate_vocabulary_size -l 'Finish' -f WS
 
