@@ -21,6 +21,7 @@ python ./manage.py 05_populate_items -l 'English (American)' -f WG
 python ./manage.py 05_populate_items -l 'Finnish' -f WS
 python ./manage.py 05_populate_items -l 'Arabic (Saudi)' -f WS
 python ./manage.py 05_populate_items -l 'Arabic (Saudi)' -f WSOther
+python ./manage.py 05_populate_items -l 'Finnish' -f WSShort
 
 python ./manage.py 06_populate_datasets
 
