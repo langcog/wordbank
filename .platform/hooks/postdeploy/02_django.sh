@@ -35,8 +35,14 @@ python ./manage.py 07_import_datasets -a 'raw_data/Korean_WS/KoreanWS_Chosun.csv
 python ./manage.py 07_import_datasets -a 'raw_data/Korean_WGComp/KoreanWGComp_Chosun.csv'
 python ./manage.py 07_import_datasets -l Swedish -f WG
 python ./manage.py 07_import_datasets -l German -f WS
-python ./manage.py 07_import_datasets -o 'Byers Heinlein Bilingual'
-python ./manage.py 07_import_datasets -o 'PoulinDubois_English_French_Bilingual'
+python ./manage.py 07_import_datasets -a "raw_data/English_American_WG/EnglishWG_ByersHeinlein.csv"
+python ./manage.py 07_import_datasets -a "raw_data/English_American_WS/EnglishWS_ByersHeinlein.csv"
+#python ./manage.py 07_import_datasets -a "raw_data/French_Quebecois_WS/FrenchQuebecoisWS_ByersHeinlein.csv"
+python ./manage.py 07_import_datasets -a "raw_data/French_Quebecois_WG/FrenchQuebecoisWG_ByersHeinlein.csv"
+python ./manage.py 07_import_datasets -a "raw_data/English_American_WG/EnglishWG_PoulinDubois.csv"
+python ./manage.py 07_import_datasets -a "raw_data/English_American_WS/EnglishWS_PoulinDubois.csv"
+python ./manage.py 07_import_datasets -a "raw_data/French_Quebecois_WG/FrenchQuebecoisWG_PoulinDubois.csv"
+python ./manage.py 07_import_datasets -a "raw_data/French_Quebecois_WS/FrenchQuebecoisWS_PoulinDubois.csv"
 python ./manage.py 07_import_datasets -l Finnish -f WGProd
 python ./manage.py 07_import_datasets -l Finnish -f WGProdShort
 python ./manage.py 07_import_datasets -l 'English (American)' -f WG
@@ -44,6 +50,7 @@ python ./manage.py 07_import_datasets -l Finnish -f WS
 python ./manage.py 07_import_datasets -l 'Arabic (Saudi)' -f WG
 python ./manage.py 07_import_datasets -l 'Arabic (Saudi)' -f WS
 python ./manage.py 07_import_datasets -l 'Arabic (Saudi)' -f WSOther
+python ./manage.py 07_import_datasets -l Finnish -f WSShort
 
 python ./manage.py 08_populate_vocabulary_size -l 'French (French)' -f WS
 python ./manage.py 08_populate_vocabulary_size -l 'French (French)' -f WG
@@ -62,6 +69,7 @@ python ./manage.py 08_populate_vocabulary_size -l 'English (American)' -f WG
 python ./manage.py 08_populate_vocabulary_size -l 'Finish' -f WGProd
 python ./manage.py 08_populate_vocabulary_size -l 'Finish' -f WGProdShort
 python ./manage.py 08_populate_vocabulary_size -l 'Finish' -f WS
+python ./manage.py 08_populate_vocabulary_size -l 'Finish' -f WSShort
 
 #clear down and set up basic database records
 #python ./manage.py delete_all_tables

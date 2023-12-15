@@ -51,8 +51,6 @@ class Command(BaseCommand):
 
         datasets = Dataset.objects.filter(query)
 
-        print(f'Datasets: {datasets}')
-
         for dataset in datasets:
             
             msg = f"Importing dataset {dataset}"
