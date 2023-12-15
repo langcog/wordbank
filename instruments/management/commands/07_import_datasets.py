@@ -2,7 +2,7 @@ import json
 from django.core.management.base import BaseCommand
 from instruments.import_dataset import import_dataset
 from django.core.mail import send_mail
-
+from django.db.models import Q
 from common.models import Administration, Dataset, Instrument
 
 
@@ -25,7 +25,7 @@ class Command(BaseCommand):
         if options["email"]:
             self.send_email = True
 
-        datasets = json.load(open("static/json/datasets.json"))
+        query = Q()
 
         if (
             options["language"]
@@ -34,99 +34,32 @@ class Command(BaseCommand):
             or options["file"]
             or options["origin"]
         ):
-            input_datasets = datasets
-            if (
-                options["language"]
-                or options["form"]
-                or options["dataset"]
-                or options["file"]
-            ):
-                filter_exps = []
-                if options["language"]:
-                    input_language = options["language"]
-                    filter_exps.append(
-                        "dataset['instrument_language'] == '%s'" % input_language
-                    )
+            if options["language"]:
+                query = Q(query) & Q(instrument__language=options["language"])
 
-                if options["form"]:
-                    input_form = options["form"]
-                    filter_exps.append(
-                        "dataset['instrument_form'] == '%s'" % input_form
-                    )
+            if options["form"]:
+                query = Q(query) & Q(instrument__form=options["form"])
 
-                if options["dataset"]:
-                    input_dataset = options["dataset"]
-                    filter_exps.append("dataset['dataset'] == '%s'" % input_dataset)
+            if options["dataset"]:
+                query = Q(query) & Q(source=options["dataset"])
 
-                if options["file"]:
-                    input_dataset = options["file"]
-                    filter_exps.append("dataset['file'] == '%s'" % input_dataset)
-
-                combined_exps = " and ".join(filter_exps)
-
-                input_datasets = [
-                    dataset for dataset in datasets if eval(combined_exps)
-                ]
+            if options["file"]:
+                query = Q(query) & Q(file_location=options["file"])
 
             if options["origin"]:
-                input_datasets2 = []
-                for dataset in input_datasets:
-                    if "dataset_origin" in dataset:
-                        if dataset["dataset_origin"] == options["origin"]:
-                            input_datasets2.append(dataset)
-                input_datasets = input_datasets2
+                query = Q(query) & Q(dataset_origin=options["origin"])
 
-                if not input_datasets:
-                    raise IOError(
-                        "the specified file doesn't correspond to any datasets"
-                    )
+        datasets = Dataset.objects.filter(query)
 
-        else:
-            input_datasets = datasets
-        
-        print(f'Datasets: {input_datasets}')
+        print(f'Datasets: {datasets}')
 
-        for dataset in input_datasets:
-            dataset_name = f"{dataset['name']}"
-            dataset_dataset = dataset["dataset"]
-            dataset_file = dataset["file"]
-            splitcol = dataset["splitcol"]
-            norming = dataset["norming"]
-            if "date_format" in dataset:
-                date_format = dataset["date_format"]
-            else:
-                date_format = None
-            instrument_language = dataset["instrument_language"]
-            instrument_form = dataset["instrument_form"]
-
-            if "dataset_origin" in dataset:
-                dataset_origin = dataset["dataset_origin"]
-            else:
-                dataset_origin = (
-                    dataset["name"]
-                    + "_"
-                    + dataset["dataset"]
-                    + "_"
-                    + dataset["instrument_language"]
-                    + "_"
-                    + dataset["instrument_form"]
-                )
-
-            msg = f"Importing dataset {instrument_language}, {instrument_form}, {dataset_name}, {dataset_dataset}, {dataset_origin}"
+        for dataset in datasets:
+            
+            msg = f"Importing dataset {dataset}"
             print(msg)
 
-            # delete current administrations and reload
-            instruments_map = Instrument.objects.get(
-                language=instrument_language, form=instrument_form
-            )
-            administrations = Administration.objects.filter(
-                dataset=Dataset.objects.get(
-                    dataset_name=dataset_name,
-                    instrument=instruments_map,
-                    dataset_origin=dataset_origin,
-                    source=dataset_dataset,
-                )
-            )
+            administrations = Administration.objects.filter(dataset=dataset)
+                
             print(f"   Deleting {len(administrations)} exisiting records")
             for admin in administrations:
                 try:
@@ -137,15 +70,15 @@ class Command(BaseCommand):
                 admin.delete()
             print("   Importing records")
             import_dataset(
-                dataset_name,
-                dataset_dataset,
-                dataset_file,
-                instrument_language,
-                instrument_form,
-                splitcol,
-                norming,
-                date_format,
-                dataset_origin,
+                dataset.dataset_name,
+                dataset.source,
+                dataset.file_location,
+                dataset.instrument.language,
+                dataset.instrument.form,
+                dataset.splitcol,
+                dataset.norming,
+                dataset.date_format,
+                dataset.dataset_origin,
             )
 
             if self.send_email:

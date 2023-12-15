@@ -18,7 +18,7 @@ class DatasetOrigin(models.Model):
 
 class Dataset(models.Model):
     dataset_name = models.CharField(max_length=121)
-    source = models.CharField(max_length=21, blank=True, null=True)
+    source = models.CharField(max_length=121, blank=True, null=True)
     contributor = models.TextField(blank=True)
     citation = models.TextField(blank=True)
     licenses = (("CC-BY", "CC BY 4.0"), ("CC-BY-NC", "CC BY-NC 4.0"))
@@ -26,6 +26,10 @@ class Dataset(models.Model):
 
     instrument = models.ForeignKey("Instrument", on_delete=models.CASCADE)
     dataset_origin = models.ForeignKey(DatasetOrigin, on_delete=models.CASCADE)
+    file_location = models.CharField(max_length=255, blank=True, null=True)
+    splitcol = models.CharField(max_length=21, blank=True, null=True)
+    norming = models.CharField(max_length=21, blank=True, null=True)
+    date_format = models.CharField(max_length=21, blank=True, null=True)
 
     longitudinal = models.BooleanField(default=False)
 

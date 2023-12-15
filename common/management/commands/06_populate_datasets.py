@@ -27,16 +27,21 @@ class Command(BaseCommand):
                     + source["instrument_form"]
                 )
 
-            dataset_origin, created = DatasetOrigin.objects.get_or_create(
+            dataset_origin, created1 = DatasetOrigin.objects.get_or_create(
                 dataset_origin_name=name
             )
+            if created1:
+                print(f'   Created dataset {dataset_origin}')
 
             data_dict = {
                 "contributor": source["contributor"],
                 "citation": source["citation"],
                 "longitudinal": source["longitudinal"],
                 "license": source["license"],
-                #'source': source['dataset'],
+                "file_location": source["file"],
+                "splitcol": source["splitcol"],
+                "norming": source["norming"],
+                "date_format": source["date_format"] if 'date_format' in source else None
             }
 
             instrument = Instrument.objects.get(
@@ -51,3 +56,4 @@ class Command(BaseCommand):
             )
             if created:
                 print(f"   Created dataset file {source['file']}")
+                print(f'{dataset_origin} : {source["name"]} : {source["dataset"]} : {instrument}')

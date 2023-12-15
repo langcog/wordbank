@@ -35,6 +35,7 @@ python ./manage.py 07_import_datasets -a 'raw_data/Korean_WGComp/KoreanWGComp_Ch
 python ./manage.py 07_import_datasets -l Swedish -f WG
 python ./manage.py 07_import_datasets -l German -f WS
 python ./manage.py 07_import_datasets -o 'Byers Heinlein Bilingual'
+python ./manage.py 07_import_datasets -o 'PoulinDubois_English_French_Bilingual'
 #python ./manage.py 07_import_datasets -l Finnish -f WGProd
 python ./manage.py 07_import_datasets -l Finnish -f WGProdShort
 #python ./manage.py 07_import_datasets -l 'English (American)' -f WG

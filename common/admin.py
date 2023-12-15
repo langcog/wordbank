@@ -8,6 +8,12 @@ from common.models import *
 admin.site.register(LanguageExposure)
 
 
+class DatasetAdmin(admin.ModelAdmin):
+    search_fields = ['dataset_name']
+    list_filter = ['dataset_name']
+admin.site.register(Dataset, DatasetAdmin)
+
+
 class ChildAdmin(admin.ModelAdmin):
     search_fields = ["study_internal_id"]
     list_filter = [("dataset_origin", RelatedDropdownFilter)]

@@ -9,7 +9,7 @@ class ImportHelper:
     def __init__(self, data_file, date_format, norming, splitcol=False):
         self.data_file = data_file
         self.ftype = self.data_file.split(".")[-1]
-        self.splitcol = splitcol
+        self.splitcol = True if splitcol in ['True', True, 1, 'true'] else False
         self.norming = norming
         self.date_format = date_format
 
