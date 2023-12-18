@@ -1,4 +1,4 @@
-﻿field,column,group,type
+field,column,group,type
 ,form_id,,
 ,form_language,,
 ,form,,
@@ -693,12 +693,12 @@ item_151,fr_yogourt,item,word
 item_53,fr_zebre,item,word
 item_178,fr_zip_fermeture_eclair,item,word
 item_338,fr_zoo,item,word
-item_665,"Votre enfant parle-t-il d'√É¬©v√É¬©nements pass√É¬©s ou de personnes qui ne sont pas pr√É¬©sentes? Par exemple si vous avez vu une parade ensemble la semaine derni√É¬®re lui arrive-t-il de vous en ""parler"" en mentionnant des mots comme ""parade"" ""clown"" etc.?",item,how_use_words
-item_666,"Votre enfant parle-t-il de choses qui se produiront plus tard? Par exemple dirait-il ""tchou tchou"" ou ""avion"" avant de partir en voyage ou ""balan√É¬ßoire"" avant d'aller au parc?",item,how_use_words
-item_667,Votre enfant parle-t-il d'objets qui ne sont pas pr√É¬©sents? Par exemple demande-t-il un jouet qui n'est pas l√É¬† mentionne-t-il un animal hors de son champ de vision ou une personne absente?,item,how_use_words
-item_668,"Votre enfant comprend-il quand vous lui demandez un objet qui n'est pas dans la m√É¬™me pi√É¬®ce? Par exemple va-t-il dans sa chambre chercher son toutou lorsque vous dites ""O√É¬π il est ton nounours?""",item,how_use_words
-item_669,"Votre enfant pointe-t-il ou prend-il un objet en nommant une personne absente √É¬† qui appartient cet objet? Par exemple lui arrive-t-il de montrer les souliers de sa maman en disant ""maman""?",item,how_use_words
-item_705,Votre enfant utilise-t-il la forme masculine et f√©minine d'un m√™me adjectif (par ex. gros/grosse beau/belle)?,item,word_endings
+item_665,"Votre enfant parle-t-il d’événements passés ou de personnes qui ne sont pas présentes? Par exemple si vous avez vu une parade ensemble la semaine dernière lui arrive-t-il de vous en ""parler"" en mentionnant des mots comme ""parade"" ""clown"" etc.?",item,how_use_words
+item_666,Votre enfant parle-t-il de choses qui se produiront plus tard? Par exemple dirait-il “tchou tchou” ou “avion” avant de partir en voyage ou “balançoire” avant d’aller au parc?,item,how_use_words
+item_667,Votre enfant parle-t-il d’objets qui ne sont pas présents? Par exemple demande-t-il un jouet qui n’est pas là mentionne-t-il un animal hors de son champ de vision ou une personne absente?,item,how_use_words
+item_668,Votre enfant comprend-il quand vous lui demandez un objet qui n’est pas dans la même pièce? Par exemple va-t-il dans sa chambre chercher son toutou lorsque vous dites “Où il est ton nounours?”,item,how_use_words
+item_669,Votre enfant pointe-t-il ou prend-il un objet en nommant une personne absente à qui appartient cet objet? Par exemple lui arrive-t-il de montrer les souliers de sa maman en disant “maman”?,item,how_use_words
+item_705,Votre enfant utilise-t-il la forme masculine et féminine d’un même adjectif (par ex. gros/grosse beau/belle)?,item,word_endings
 item_670,aime,item,word_endings
 item_673,aimer,item,word_endings
 item_674,finis_prs,item,word_endings
@@ -728,42 +728,42 @@ item_704,vont,item,word_forms_verbs
 item_703,allez,item,word_forms_verbs
 item_702,allons,item,word_forms_verbs
 item_693,avez,item,word_forms_verbs
-item_698,√É¬™tes,item,word_forms_verbs
+item_698,^etes,item,word_forms_verbs
 item_692,avons,item,word_forms_verbs
 item_697,sommes,item,word_forms_verbs
 item_687,mange,item,word_forms_verbs
 item_688,finis_imp,item,word_forms_verbs
 item_689,viens,item,word_forms_verbs
-item_706,"Votre enfant a-t-il commenc√© √† combiner des mots? Par exemple dit-il des choses comme ""papa parti"" ou ""encore jus""?",item,combine
+item_706,Votre enfant a-t-il commencé à combiner des mots? Par exemple dit-il des choses comme “papa parti” ou “encore jus”?,item,combine
 item_716,Belle ta robe / Ta robe est belle,item,complexity
 item_717,Ou maman? / Est ou maman?,item,complexity
 item_718,Mon camion / C'est mon camion,item,complexity
 item_719,Chat la / (Il) y a un chat,item,complexity
 item_720,Lancer balle / Lance (la) balle,item,complexity
-item_721,Pas laver poup√É¬©e / Lave pas poup√É¬©e,item,complexity
+item_721,Pas laver poupée / Lave pas poupée,item,complexity
 item_722,Encore jus / Veux d'autre jus,item,complexity
-item_723,Regarder t√É¬©l√É¬© / Veux regarder t√É¬©l√É¬©,item,complexity
+item_723,Regarder télé / Veux regarder télé,item,complexity
 item_724,Donner un bec / Veux donner un bec,item,complexity
 item_725,Toi saute? / Peux-tu sauter?,item,complexity
 item_707,Auto papa / Auto a papa,item,complexity
-item_726,Moi pas faire √É¬ßa. / Moi peux pas faire √É¬ßa.,item,complexity
+item_726,Moi pas faire ça. / Moi peux pas faire ça.,item,complexity
 item_727,Pipi dehors minou. / Minou fait pipi dehors,item,complexity
 item_728,Pas marcher la / Faut pas marcher la,item,complexity
 item_729,Moi livre / Le livre a moi,item,complexity
 item_730,Mange une pomme / Je mange une pomme,item,complexity
-item_731,La t√É¬™te tomb√É¬©. / Il (est) tomb√É¬© sur la t√É¬™te.,item,complexity
+item_731,La tête tombé. / Il (est) tombé sur la tête.,item,complexity
 item_732,Papa parti / Papa parti travailler,item,complexity
 item_733,Regarde-moi / Regarde-moi danser,item,complexity
-item_734,Donne cuill√É¬®re. / Donne (la) cuill√É¬®re pour manger,item,complexity
+item_734,Donne cuillère. / Donne (la) cuillère pour manger,item,complexity
 item_735,Veux biscuits. / Veux biscuits et/pis lait.,item,complexity
-item_708,Toutou b√É¬©b√É¬© / Toutou au b√É¬©b√É¬©.,item,complexity
-item_736,On a fait √É¬ßa. / Sophie et/pis moi a fait √É¬ßa.,item,complexity
+item_708,Toutou bébé / Toutou au bébé.,item,complexity
+item_736,On a fait ça. / Sophie et/pis moi a fait ça.,item,complexity
 item_737,Je chante une chanson. / Je chante une chanson pour toi.,item,complexity
 item_738,Pas lire le livre. / Veux pas tu lis le livre,item,complexity
 item_739,C'est maman chante. / C'est maman qui chante,item,complexity
 item_740,Je veux lui. / Je veux lui que tu as.,item,complexity
-item_741,Regarde √É¬ßa. / Regarde ce que j'ai.,item,complexity
-item_742,B√É¬©b√É¬© rit. / B√É¬©b√É¬© rit parce que content.,item,complexity
+item_741,Regarde ça. / Regarde ce que j’ai.,item,complexity
+item_742,Bébé rit. / Bébé rit parce que content.,item,complexity
 item_743,Le chapeau de le monsieur. / Le chapeau du monsieur.,item,complexity
 item_709,Fille maison / Fille dans maison,item,complexity
 item_710,Biscuit maman / Buiscuit pour maman,item,complexity
