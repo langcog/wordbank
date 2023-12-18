@@ -12,7 +12,7 @@ class Command(BaseCommand):
         parser.add_argument("-f", "--form", type=str)
 
     def handle(self, *args, **options):
-        instruments = json.load(open("static/json/instruments.json"))
+        instruments = json.load(open("static/json/instruments.json", encoding="utf8"))
 
         if options["language"] and options["form"]:
             input_language, input_form = options["language"], options["form"]

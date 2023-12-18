@@ -55,5 +55,4 @@ class Command(BaseCommand):
                 defaults=data_dict,
             )
             if created:
-                print(f"   Created dataset file {source['file']}")
-                print(f'{dataset_origin} : {source["name"]} : {source["dataset"]} : {instrument}')
+                print(f"   Created dataset file {source['file']}: {dataset_origin} : {source['name']} : {source['dataset']} : {instrument}")

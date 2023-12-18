@@ -22,6 +22,7 @@ python ./manage.py 05_populate_items -l 'Finnish' -f WS
 python ./manage.py 05_populate_items -l 'Arabic (Saudi)' -f WS
 python ./manage.py 05_populate_items -l 'Arabic (Saudi)' -f WSOther
 python ./manage.py 05_populate_items -l 'Finnish' -f WSShort
+python ./manage.py 05_populate_items -l 'Catalan' -f WG
 
 python ./manage.py 06_populate_datasets
 
@@ -51,6 +52,7 @@ python ./manage.py 07_import_datasets -l 'Arabic (Saudi)' -f WG
 python ./manage.py 07_import_datasets -l 'Arabic (Saudi)' -f WS
 python ./manage.py 07_import_datasets -l 'Arabic (Saudi)' -f WSOther
 python ./manage.py 07_import_datasets -l Finnish -f WSShort
+python ./manage.py 07_import_datasets -l Catalan -f WG
 
 python ./manage.py 08_populate_vocabulary_size -l 'French (French)' -f WS
 python ./manage.py 08_populate_vocabulary_size -l 'French (French)' -f WG

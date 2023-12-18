@@ -686,5 +686,13 @@
         "age_min": 8,
         "age_max": 16,
         "has_grammar": true
+    },
+    {
+        "language": "Catalan",
+        "form": "WG",
+        "file": "raw_data/Catalan_WG/[Catalan_WG].csv",
+        "age_min": 8,
+        "age_max": 18,
+        "has_grammar": true
     }
 ]

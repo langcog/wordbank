@@ -1943,6 +1943,20 @@
         "contributor": "TBA",
         "license": "CC-BY",
         "citation": "TBA"
+    },
+    {
+        "name": "Serrat",
+        "dataset": "",
+        "instrument_language": "Catalan",
+        "instrument_form": "WG",
+        "file": "raw_data/Catalan_WG/CatalanWG_Serrat.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": true,
+        "date_format": "%Y-%m-%d",
+        "contributor": "Elisabet Serrat Sellabona, Universitat de Girona",
+        "license": "CC-BY",
+        "citation": "Serrat Sellabona, Elisabet (2022). Inventaris del desenvolupament d'habilitats comunicatives MacArthur-Bates en català : guia d'ús i manual tècnic "
     }
 ]
 
