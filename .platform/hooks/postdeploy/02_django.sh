@@ -72,6 +72,7 @@ python ./manage.py 08_populate_vocabulary_size -l 'Finish' -f WGProd
 python ./manage.py 08_populate_vocabulary_size -l 'Finish' -f WGProdShort
 python ./manage.py 08_populate_vocabulary_size -l 'Finish' -f WS
 python ./manage.py 08_populate_vocabulary_size -l 'Finish' -f WSShort
+python ./manage.py 08_populate_vocabulary_size -l 'Catalan' -f WG
 
 #clear down and set up basic database records
 #python ./manage.py delete_all_tables
