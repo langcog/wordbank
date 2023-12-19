@@ -5,7 +5,7 @@ from django.contrib import admin
 from instruments import models
 
 class InstrumentAdmin (admin.ModelAdmin):
-    search_fields = ['basetable_ptr_id']
+    search_fields = ['basetable_ptr__id']
 
 for m in [    
     models.British_Sign_Language_WG,
