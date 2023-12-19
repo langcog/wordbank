@@ -15,6 +15,7 @@ python ./manage.py 05_populate_items -l 'Estonian' -f WS
 python ./manage.py 05_populate_items -l 'Catalan' -f WS
 python ./manage.py 05_populate_items -l 'Korean' -f WGComp
 python ./manage.py 05_populate_items -l 'French (Quebecois)' -f WG
+python ./manage.py 05_populate_items -l 'French (Quebecois)' -f WS
 python ./manage.py 05_populate_items -l 'Finnish' -f WGProd
 python ./manage.py 05_populate_items -l 'Finnish' -f WGProdShort
 python ./manage.py 05_populate_items -l 'English (American)' -f WG
@@ -38,7 +39,7 @@ python ./manage.py 07_import_datasets -l Swedish -f WG
 python ./manage.py 07_import_datasets -l German -f WS
 python ./manage.py 07_import_datasets -a "raw_data/English_American_WG/EnglishWG_ByersHeinlein.csv"
 python ./manage.py 07_import_datasets -a "raw_data/English_American_WS/EnglishWS_ByersHeinlein.csv"
-#python ./manage.py 07_import_datasets -a "raw_data/French_Quebecois_WS/FrenchQuebecoisWS_ByersHeinlein.csv"
+python ./manage.py 07_import_datasets -a "raw_data/French_Quebecois_WS/FrenchQuebecoisWS_ByersHeinlein.csv"
 python ./manage.py 07_import_datasets -a "raw_data/French_Quebecois_WG/FrenchQuebecoisWG_ByersHeinlein.csv"
 python ./manage.py 07_import_datasets -a "raw_data/English_American_WG/EnglishWG_PoulinDubois.csv"
 python ./manage.py 07_import_datasets -a "raw_data/English_American_WS/EnglishWS_PoulinDubois.csv"
