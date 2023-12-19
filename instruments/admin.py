@@ -4,6 +4,9 @@ from django.contrib import admin
 
 from instruments import models
 
+class InstrumentAdmin (admin.ModelAdmin):
+    search_fields = ['basetable_ptr_id']
+
 for m in [
     models.British_Sign_Language_WG,
     models.Cantonese_WS,
@@ -84,4 +87,4 @@ for m in [
     models.English_American_WGShort,
     models.English_British_OxfordShort,
 ]:
-    admin.site.register(m)
+    admin.site.register(m, InstrumentAdmin)
