@@ -80,11 +80,8 @@ from .schemas.Arabic_Saudi_WG import *
 from .schemas.Estonian_WS import *
 from .schemas.Catalan_WS import *
 from .schemas.Korean_WGComp import *
-from .schemas.French_Quebecois_WG import *
 from .schemas.Finnish_WGProdShort import *
 from .schemas.Finnish_WGProd import *
-from .schemas.Finnish_WS import *
 from .schemas.Arabic_Saudi_WS import *
 from .schemas.Arabic_Saudi_WSOther import *
 from .schemas.Catalan_WG import *
-from .schemas.French_French_WG import *

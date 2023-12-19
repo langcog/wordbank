@@ -7,7 +7,7 @@ from instruments import models
 class InstrumentAdmin (admin.ModelAdmin):
     search_fields = ['basetable_ptr_id']
 
-for m in [
+for m in [    
     models.British_Sign_Language_WG,
     models.Cantonese_WS,
     models.Croatian_WG,
@@ -86,5 +86,15 @@ for m in [
     models.English_American_WSShort,
     models.English_American_WGShort,
     models.English_British_OxfordShort,
+    models.Arabic_Saudi_WG,
+    models.Estonian_WS,
+    models.Catalan_WS,
+    models.Korean_WGComp,
+    models.Finnish_WGProdShort,
+    models.Finnish_WGProd,
+    models.Arabic_Saudi_WS,
+    models.Arabic_Saudi_WSOther,
+    models.Catalan_WG,
+
 ]:
     admin.site.register(m, InstrumentAdmin)
