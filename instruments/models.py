@@ -87,3 +87,4 @@ from .schemas.Finnish_WS import *
 from .schemas.Arabic_Saudi_WS import *
 from .schemas.Arabic_Saudi_WSOther import *
 from .schemas.Catalan_WG import *
+from .schemas.French_French_WG import *
