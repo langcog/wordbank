@@ -87,13 +87,13 @@ for m in [
     models.English_American_WGShort,
     models.English_British_OxfordShort,
     models.Arabic_Saudi_WG,
+    models.Arabic_Saudi_WS,
+    models.Arabic_Saudi_WSOther,
     models.Estonian_WS,
     models.Catalan_WS,
     models.Korean_WGComp,
-    models.Finnish_WGProdShort,
     models.Finnish_WGProd,
-    models.Arabic_Saudi_WS,
-    models.Arabic_Saudi_WSOther,
+    models.Finnish_WGProdShort,
     models.Catalan_WG,
 
 ]:
