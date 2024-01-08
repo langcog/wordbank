@@ -1945,18 +1945,60 @@
         "citation": "TBA"
     },
     {
-        "name": "Serrat",
+        "name": "Tsuji",
         "dataset": "",
-        "instrument_language": "Catalan",
+        "instrument_language": "Japanese",
         "instrument_form": "WG",
-        "file": "raw_data/Catalan_WG/CatalanWG_Serrat.csv",
+        "file": "raw_data/Japanese_WG/JapaneseWG_Tsuji.csv",
         "splitcol": false,
         "norming": false,
         "longitudinal": true,
         "date_format": "%Y-%m-%d",
-        "contributor": "Elisabet Serrat Sellabona, Universitat de Girona",
+        "contributor": "Sho Tsuji (International Research Center for Neurointelligence, The University of Tokyo)",
         "license": "CC-BY",
-        "citation": "Serrat Sellabona, Elisabet (2022). Inventaris del desenvolupament d'habilitats comunicatives MacArthur-Bates en català : guia d'ús i manual tècnic "
+        "citation": "TBA"
+    },
+    {
+        "name": "Tsuji",
+        "dataset": "",
+        "instrument_language": "Japanese",
+        "instrument_form": "WS",
+        "file": "raw_data/Japanese_WS/JapaneseWS_Tsuji.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": true,
+        "date_format": "%Y-%m-%d",
+        "contributor": "Sho Tsuji (International Research Center for Neurointelligence, The University of Tokyo)",
+        "license": "CC-BY",
+        "citation": "TBA"
+    },
+    {
+        "name": "Minagawa",
+        "dataset": "",
+        "instrument_language": "Japanese",
+        "instrument_form": "WS",
+        "file": "raw_data/Japanese_WS/JapaneseWS_Minagawa.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": true,
+        "date_format": "%Y-%m-%d",
+        "contributor": "TBA",
+        "license": "CC-BY",
+        "citation": "TBA"
+    },
+    {
+        "name": "Hagihara",
+        "dataset": "",
+        "instrument_language": "Japanese",
+        "instrument_form": "WS",
+        "file": "raw_data/Japanese_WS/JapaneseWS_Hagihara.csv",
+        "splitcol": false,
+        "norming": false,
+        "longitudinal": true,
+        "date_format": "%Y-%m-%d",
+        "contributor": "TBA",
+        "license": "CC-BY",
+        "citation": "TBA"
     }
 ]
 

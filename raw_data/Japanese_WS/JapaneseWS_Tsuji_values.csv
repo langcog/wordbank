@@ -1,0 +1,21 @@
+type,value,data_value
+sex,M,m
+sex,F,f
+word,produces,produces
+word,,0
+how_use_words,often,often
+how_use_words,sometimes,sometimes
+how_use_words,not yet,not_yet
+function_words,often,often
+function_words,sometimes,sometimes
+function_words,not yet,not_yet
+case_markers,yes,produces
+case_markers,no,0
+auxiliary_verbs,yes,produces
+auxiliary_verbs,no,0
+combine,often,often
+combine,sometimes,sometimes
+combine,not yet,not_yet
+complexity,complex,complex
+complexity,simple,simple
+complexity,,0

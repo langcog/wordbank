@@ -85,3 +85,5 @@ from .schemas.Korean_WGComp import *
 from .schemas.Finnish_WGProd import *
 from .schemas.Finnish_WGProdShort import *
 from .schemas.Catalan_WG import *
+from .schemas.Japanese_WG import *
+from .schemas.Japanese_WS import *
