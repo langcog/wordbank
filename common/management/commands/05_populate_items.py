@@ -101,7 +101,7 @@ class Command(BaseCommand):
 
                     if "uni_lemma" in col_names:
                         uni_lemma = row_values[col_names.index("uni_lemma")]
-                        if uni_lemma == "":
+                        if uni_lemma in ["", "NA", None]:
                             item_map = None
                         else:
                             if not UniLemma.objects.filter(
