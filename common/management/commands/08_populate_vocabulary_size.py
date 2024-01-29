@@ -13,6 +13,18 @@ class Command(BaseCommand):
         parser.add_argument("-l", "--language", type=str)
         parser.add_argument("-f", "--form", type=str)
 
+    def update_admin(self, s):
+        try:
+            admin = Administration.objects.get(data_id=s.basetable_ptr_id)
+        except Exception:
+            print(f'No record found. Deleting {s}')
+            s.delete()
+            return
+        #print (f'Processing {s} for administration {admin} with id {admin.id}, Production={s.production}; Comprehension={s.comprehension}')
+        admin.production = s.production
+        admin.comprehension = s.comprehension
+        admin.save()
+
     def handle(self, *args, **options):
         if options["language"] or options["form"]:
             kwargs = {}
@@ -28,10 +40,11 @@ class Command(BaseCommand):
             input_instruments = Instrument.objects.filter(**kwargs)
         else:
             input_instruments = Instrument.objects.all()
+            print(f'Total Instruments to process {Instrument.objects.count()}')
 
         for instrument in input_instruments:
             print(
-                "    Caching vocabulary sizes for", instrument.language, instrument.form
+                f"    {list(input_instruments).index(instrument)+1}. Caching vocabulary sizes for {instrument.language}, {instrument.form}"
             )
 
             var_safe = lambda s: "".join(
@@ -53,13 +66,11 @@ class Command(BaseCommand):
             prod_query = ""
             comp_query = ""
             if len(words) < 1:
-                return
+                print(f'Doing nothing for {instrument}')
+                continue
             for word in words:
-                prod_query += "case when %s='produces' then 1 else 0 end + " % (word)
-                comp_query += (
-                    "case when %s='produces' or %s='understands' then 1 else 0 end + "
-                    % (word, word)
-                )
+                prod_query += f"case when {word}='produce' or {word}='produces' then 1 else 0 end + " 
+                comp_query += f"case when {word}='produce' or {word}='producess' or {word}='underst' or {word}='understands' then 1 else 0 end + "
 
             prod_query = prod_query[:-2]
             prod_query += "as production, "
@@ -71,19 +82,9 @@ class Command(BaseCommand):
             query += "from %s;" % (instrument_table)
             
             sizes = list(instrument_model.objects.raw(query))
-            # print (f'Processing {len(sizes)} records')
+            #print (f'Processing {len(sizes)} records')
 
-            def update_admin(s):
-                try:
-                    admin = Administration.objects.get(data_id=s.basetable_ptr_id)
-                except Exception:
-                    # print(f'No record found. Deleting {s}')
-                    s.delete()
-                    return
-                # print (f'Processing {s} for admin {admin}, Production={s.production}; Comprehension={s.comprehension}')
-                admin.production = s.production
-                admin.comprehension = s.comprehension
-                admin.save()
+            
 
-            for result in map(update_admin, sizes):
+            for result in map(self.update_admin, sizes):
                 pass
