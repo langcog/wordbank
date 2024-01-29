@@ -84,7 +84,5 @@ class Command(BaseCommand):
             sizes = list(instrument_model.objects.raw(query))
             #print (f'Processing {len(sizes)} records')
 
-            
-
             for result in map(self.update_admin, sizes):
                 pass
