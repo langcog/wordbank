@@ -70,7 +70,7 @@ class Command(BaseCommand):
                 continue
             for word in words:
                 prod_query += f"case when {word}='produce' or {word}='produces' then 1 else 0 end + " 
-                comp_query += f"case when {word}='produce' or {word}='producess' or {word}='underst' or {word}='understands' then 1 else 0 end + "
+                comp_query += f"case when {word}='produce' or {word}='produces' or {word}='underst' or {word}='understands' then 1 else 0 end + "
 
             prod_query = prod_query[:-2]
             prod_query += "as production, "
