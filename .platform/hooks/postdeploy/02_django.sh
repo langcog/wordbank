@@ -29,6 +29,7 @@ python ./manage.py collectstatic --noinput;
 #python ./manage.py 05_populate_items -l 'Catalan' -f WG
 #python ./manage.py 05_populate_items -l 'Japanese' -f WG
 #python ./manage.py 05_populate_items -l 'Japanese' -f WS
+#python ./manage.py 05_populate_items -l 'Mandarin (Beijing)' -f WS
 
 #python ./manage.py 06_populate_datasets
 
