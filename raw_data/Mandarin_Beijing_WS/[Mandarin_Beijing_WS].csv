@@ -1,4 +1,4 @@
-itemID,item,type,category,choices,complexity_category,definition,gloss,uni_lemma
+﻿itemID,item,type,category,choices,complexity_category,definition,gloss,uni_lemma
 item_1,S1WEI,word,sounds,produces,NA,喂？,NA,hello
 item_2,S1DOG,word,sounds,produces,NA,旺旺（狗叫）,woof woof,woof woof
 item_3,S1CAT,word,sounds,produces,NA,喵（猫叫）,meow,meow
@@ -532,10 +532,10 @@ item_530,H9HAMMER,word,household,produces,NA,锤子,hammer,hammer
 item_531,H9NAIL,word,household,produces,NA,钉子,nail,nail (object)
 item_532,H9WOOD,word,household,produces,NA,木头,wood,wood
 item_533,H9THING,word,household,produces,NA,东西,thing,thing
-item_534,T10BALL,word,toys,produces,NA,汽球,ball,ball
-item_535,T10BOOK,word,toys,produces,NA,枪,book,book
-item_536,T10DOLL,word,toys,produces,NA,积木,doll,doll
-item_537,T10PEN,word,toys,produces,NA,玩具,pen,pen
+item_534,T10BALL,word,toys,produces,NA,球,ball,ball
+item_535,T10BOOK,word,toys,produces,NA,书,book,book
+item_536,T10DOLL,word,toys,produces,NA,小娃娃,doll,doll
+item_537,T10PEN,word,toys,produces,NA,笔,pen,pen
 item_538,T10BALLO,word,toys,produces,NA,汽球,balloon,balloon
 item_539,T10GUN,word,toys,produces,NA,枪,gun,gun
 item_540,T10BLOCK,word,toys,produces,NA,积木,block,blocks

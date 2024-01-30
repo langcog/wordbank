@@ -1,0 +1,837 @@
+itemID,item,type,category,choices,complexity_category,definition,gloss,uni_lemma
+item_1,S1WEI,word,sounds,produces,NA,喂？,NA,hello
+item_2,S1DOG,word,sounds,produces,NA,旺旺（狗叫）,woof woof,woof woof
+item_3,S1CAT,word,sounds,produces,NA,喵（猫叫）,meow,meow
+item_4,S1CAR,word,sounds,produces,NA,嘀嘀（汽车声）,vroom,vroom
+item_5,S1AIYOU,word,sounds,produces,NA,哎哟,NA,NA
+item_6,S1YA,word,sounds,produces,NA,呀,NA,NA
+item_7,S1SHEEP,word,sounds,produces,NA,咩咩（羊叫声）,baa baa,baa baa
+item_8,S1DUCK,word,sounds,produces,NA,嘎嘎（鸭子叫）,quack quack,quack quack
+item_9,S1CHICK,word,sounds,produces,NA,嘎嘎达（鸡叫）,cluck,cluck
+item_10,S1BANG,word,sounds,produces,NA,梆梆（打枪）,bang,bang bang
+item_11,S1BIRD,word,sounds,produces,NA,喳喳（鸟叫）,tweet tweet,tweet tweet
+item_12,S1LION,word,sounds,produces,NA,嗷（狮子叫）,roar,roar
+item_13,P2MAMA,word,people,produces,NA,妈妈,mommy,mommy
+item_14,P2BABA,word,people,produces,NA,爸爸,daddy,daddy
+item_15,P2NAIN,word,people,produces,NA,奶奶,grandma,grandma
+item_16,P2LAOL,word,people,produces,NA,姥 姥,grandma,grandma
+item_17,P2YEYE,word,people,produces,NA,爷爷,grandpa,grandpa
+item_18,P2LAOYE,word,people,produces,NA,姥爷,grandpa,grandpa
+item_19,P2BAO,word,people,produces,NA,宝宝,baby,baby
+item_20,P2NAME,word,people,produces,NA,自己的名字,child's own name,child's own name
+item_21,P2AUNT,word,people,produces,NA,阿姨,aunt,aunt
+item_22,P2GUGU,word,people,produces,NA,姑姑,aunt,aunt
+item_23,P2SHU,word,people,produces,NA,叔叔,uncle,uncle
+item_24,P2DADA,word,people,produces,NA,伯伯（大大）,uncle,uncle
+item_25,P2JIU,word,people,produces,NA,舅舅,uncle,uncle
+item_26,P2JIE,word,people,produces,NA,姐姐,sister,sister
+item_27,P2MEIME,word,people,produces,NA,妹妹,sister,sister
+item_28,P2GEGE,word,people,produces,NA,哥哥,brother,brother
+item_29,P2DIDI,word,people,produces,NA,弟弟,brother,brother
+item_30,P2FRNAM,word,people,produces,NA,小朋友的名字,NA,friends' names
+item_31,P2DAMA,word,people,produces,NA,大妈,NA,NA
+item_32,P2PERSO,word,people,produces,NA,人,person,person
+item_33,P2HAIZI,word,people,produces,NA,孩子/小孩/小朋友,NA,child
+item_34,P2GIRL,word,people,produces,NA,女孩,girl,girl
+item_35,P2BOY,word,people,produces,NA,男孩,boy,boy
+item_36,P2MAN,word,people,produces,NA,男人,man,man
+item_37,P2LAOSH,word,people,produces,NA,老师,teacher,teacher
+item_38,P2POLIC,word,people,produces,NA,警察,policeman,police
+item_39,P2DAIFU,word,people,produces,NA,医生/大夫,NA,doctor
+item_40,P2DONDU,word,people,produces,NA,唐老鸭,donald duck,NA
+item_41,P2MICKY,word,people,produces,NA,米老鼠,mickey mouse,NA
+item_42,P2SUNWU,word,people,produces,NA,孙悟空,sun wukong,NA
+item_43,P2ZHUBJ,word,people,produces,NA,猪八戒,zhu bajie,NA
+item_44,P2PENGY,word,people,produces,NA,朋友,friend,friend
+item_45,G3WANT,word,games_routines,produces,NA,要,want,wanna
+item_46,G3NOTWA,word,games_routines,produces,NA,不要,don't,don't
+item_47,G3BYE,word,games_routines,produces,NA,再见/Byebye,bye,bye
+item_48,G3THANK,word,games_routines,produces,NA,谢谢,thank you,thank you
+item_49,G3PEE,word,games_routines,produces,NA,撒尿/尿尿,pee,pee
+item_50,G3POOP,word,games_routines,produces,NA,拉屎/拉臭臭,poop,poop
+item_51,G3EAT,word,games_routines,produces,NA,吃饭,eat,eat
+item_52,G3WASH,word,games_routines,produces,NA,洗澡,bath,bath
+item_53,G3NAP,word,games_routines,produces,NA,休息/歇会儿,nap,nap
+item_54,G3BUY,word,games_routines,produces,NA,买(东西),buy,buy
+item_55,G3PHONE,word,games_routines,produces,NA,打（电话）,phone,call
+item_56,G3HIDE,word,games_routines,produces,NA,藏猫猫,hide and seek,hide and seek
+item_57,G3GOTYA,word,games_routines,produces,NA,抓（逮）住了!,catch,catch
+item_58,G3CLAP,word,games_routines,produces,NA,你拍一，我拍一,clap,clap
+item_59,G3HI,word,games_routines,produces,NA,你好,hello,hello
+item_60,G3XHAO,word,games_routines,produces,NA,（某某某）好,hello,hello
+item_61,G3PLEAS,word,games_routines,produces,NA,请,please,please
+item_62,G3GREAT,word,games_routines,produces,NA,(真)棒!,good job,bravo
+item_63,G3HAOBA,word,games_routines,produces,NA,好吧,ok,ok
+item_64,G3SHI,word,games_routines,produces,NA,是,yes,yes
+item_65,G3CORRE,word,games_routines,produces,NA,对了,NA,NA
+item_66,G3NOTOK,word,games_routines,produces,NA,不行,cannot,cannot
+item_67,G3FAST,word,games_routines,produces,NA,快点,fast,fast
+item_68,G3WAIT,word,games_routines,produces,NA,等等,wait,wait
+item_69,G3EASY,word,games_routines,produces,NA,轻点,easy,easy
+item_70,G3LISTN,word,games_routines,produces,NA,听话,NA,listen
+item_71,G3GOSCH,word,games_routines,produces,NA,上学,go to school,go to school
+item_72,G3ONEYR,word,games_routines,produces,NA,一岁/两岁,NA,years old
+item_73,V4HOLD,word,action_words,produces,NA,抱,hug,hug
+item_74,V4NA,word,action_words,produces,NA,拿（过来）,NA,bring
+item_75,V4COME,word,action_words,produces,NA,来,come,come
+item_76,V4WALK,word,action_words,produces,NA,走,walk,walk
+item_77,V4SIT,word,action_words,produces,NA,坐,sit,sit
+item_78,V4STAND,word,action_words,produces,NA,站,stand,stand
+item_79,V4SQUAT,word,action_words,produces,NA,蹲,squat,squat
+item_80,V4PEE,word,action_words,produces,NA,尿,pee,pee
+item_81,V4ASCND,word,action_words,produces,NA,上,up,up
+item_82,V4DOWN,word,action_words,produces,NA,下,down,down
+item_83,V4DRINK,word,action_words,produces,NA,喝,drink (action),drink (action)
+item_84,V4EAT,word,action_words,produces,NA,吃,eat,eat
+item_85,V4FEED,word,action_words,produces,NA,喂,feed,feed
+item_86,V4CRAWL,word,action_words,produces,NA,爬,climb,climb
+item_87,V4WANT,word,action_words,produces,NA,要,need,need
+item_88,V4HAVE,word,action_words,produces,NA,有,have,have
+item_89,V4SLEEP,word,action_words,produces,NA,睡觉,sleep,sleep
+item_90,V4COVER,word,action_words,produces,NA,盖上,cover,cover (action)
+item_91,V4PLAY,word,action_words,produces,NA,玩,play,play
+item_92,V4OPEN,word,action_words,produces,NA,开（门）,open,open (action)
+item_93,V4GUAN,word,action_words,produces,NA,关,close,close
+item_94,V4DRAW,word,action_words,produces,NA,画画,draw,draw
+item_95,V4HIT,word,action_words,produces,NA,打,hit,hit
+item_96,V4BEI,word,action_words,produces,NA,背,back,carry
+item_97,V4WEAR2,word,action_words,produces,NA,戴,wear,wear
+item_98,V4WASH,word,action_words,produces,NA,洗,wash,wash
+item_99,V4CLEAN,word,action_words,produces,NA,擦,wipe,wipe
+item_100,V4KISS,word,action_words,produces,NA,亲（一个）,kiss,kiss
+item_101,V4FLY,word,action_words,produces,NA,飞,fly,fly (action)
+item_102,V4LIANG,word,action_words,produces,NA,亮了,brighten,brighten
+item_103,V4DAKAI,word,action_words,produces,NA,打开,open,open (action)
+item_104,V4GETUP,word,action_words,produces,NA,起来,get up,get up
+item_105,V4PEEL,word,action_words,produces,NA,剥,peel,peel
+item_106,V4CALL,word,action_words,produces,NA,叫,cry,cry
+item_107,V4KAN,word,action_words,produces,NA,看,look,look
+item_108,V4RUN,word,action_words,produces,NA,跑,run,run
+item_109,V4JUMP,word,action_words,produces,NA,跳,jump,jump
+item_110,V4KICK,word,action_words,produces,NA,踢,kick,kick
+item_111,V4DAOSH,word,action_words,produces,NA,倒（水）,pour,pour
+item_112,V4BUY,word,action_words,produces,NA,买,buy,buy
+item_113,V4TOUCH,word,action_words,produces,NA,摸,touch,touch
+item_114,V4WEAR,word,action_words,produces,NA,穿,wear,wear
+item_115,V4GIVE,word,action_words,produces,NA,给,give,give
+item_116,V4SEND,word,action_words,produces,NA,送,send,send
+item_117,V4DROP,word,action_words,produces,NA,掉,drop,drop
+item_118,V4LAUGH,word,action_words,produces,NA,笑,smile,smile
+item_119,V4CRY,word,action_words,produces,NA,哭,cry,cry
+item_120,V4CLAP,word,action_words,produces,NA,拍,clap,clap
+item_121,V4CAN,word,action_words,produces,NA,会,can,can (auxiliary)
+item_122,V4WRITE,word,action_words,produces,NA,写,write,write
+item_123,V4LAY,word,action_words,produces,NA,躺,lie,lie down
+item_124,V4LIEFL,word,action_words,produces,NA,趴,lie,lie down
+item_125,V4RIDE,word,action_words,produces,NA,骑,ride,ride
+item_126,V4DRIVE,word,action_words,produces,NA,开（车）,drive,drive
+item_127,V4BOUNC,word,action_words,produces,NA,蹦,hop,hop
+item_128,V4SWEEP,word,action_words,produces,NA,扫（地）,sweep,sweep
+item_129,V4GO,word,action_words,produces,NA,去,go,go
+item_130,V4PUT,word,action_words,produces,NA,放,put,put
+item_131,V4BITE,word,action_words,produces,NA,咬,bite,bite
+item_132,V4THROW,word,action_words,produces,NA,扔,throw,throw
+item_133,V4SPIT,word,action_words,produces,NA,吐,spit,spit
+item_134,V4SAY,word,action_words,produces,NA,说,say,say
+item_135,V4BLOW,word,action_words,produces,NA,吹,blow,blow
+item_136,V4CHASE,word,action_words,produces,NA,追,chase,chase
+item_137,V4TRIP,word,action_words,produces,NA,摔,fall,fall
+item_138,V4IS,word,action_words,produces,NA,是（什么）,be,be
+item_139,V4THINK,word,action_words,produces,NA,想,think,think
+item_140,V4KNOW,word,action_words,produces,NA,知道,know,know
+item_141,V4COMB,word,action_words,produces,NA,梳,comb,comb (action)
+item_142,V4SHUA,word,action_words,produces,NA,刷,brush,brush (action)
+item_143,V4SING,word,action_words,produces,NA,唱,sing,sing
+item_144,V4LISTN,word,action_words,produces,NA,听,hear,hear
+item_145,V4HEAR,word,action_words,produces,NA,听见,hear,hear
+item_146,V4PRICK,word,action_words,produces,NA,扎,prick,prick
+item_147,V4PUSH,word,action_words,produces,NA,推,push,push
+item_148,V4PCKUP,word,action_words,produces,NA,捡,pick up,pick up
+item_149,V4LOOK,word,action_words,produces,NA,找,look,look for
+item_150,V4ARRIV,word,action_words,produces,NA,倒了,fall,fall
+item_151,V4ENTER,word,action_words,produces,NA,进去,enter,enter
+item_152,V4EXIT,word,action_words,produces,NA,出去,leave,leave
+item_153,V4GUO,word,action_words,produces,NA,过,cross,cross
+item_154,V4RETUR,word,action_words,produces,NA,回来,return,return
+item_155,V4STEP,word,action_words,produces,NA,踩,step,step
+item_156,V4HIDE,word,action_words,produces,NA,藏,hide,hide
+item_157,V4PULL,word,action_words,produces,NA,拉/拽,pull,pull
+item_158,V4JIANG,word,action_words,produces,NA,讲,tell,tell
+item_159,V4SHAKE,word,action_words,produces,NA,握（手）,shake,shake
+item_160,V4KNOCK,word,action_words,produces,NA,敲,knock,knock
+item_161,V4CLOSE,word,action_words,produces,NA,闭（眼、嘴）,close,close
+item_162,V4LOSE,word,action_words,produces,NA,丢,lose,lose
+item_163,V4LIKE,word,action_words,produces,NA,喜欢,love,like
+item_164,V4DONG,word,action_words,produces,NA,动,move,move
+item_165,V4WAIT,word,action_words,produces,NA,等,wait,wait
+item_166,V4AWAKE,word,action_words,produces,NA,醒,wake,wake
+item_167,V4SLIDE,word,action_words,produces,NA,滑,slide (action),slide (action)
+item_168,V4CHOP,word,action_words,produces,NA,切（菜）,cut,cut
+item_169,V4CUT,word,action_words,produces,NA,剪,cut,cut
+item_170,V4TEAR,word,action_words,produces,NA,撕,tear,tear
+item_171,V4SPRAY,word,action_words,produces,NA,洒,splash,splash
+item_172,V4SPILL,word,action_words,produces,NA,撒,spill,spill
+item_173,V4SOUND,word,action_words,produces,NA,响,sound (action),sound (action)
+item_174,V4MEET,word,action_words,produces,NA,接,receive,receive
+item_175,V4PENG,word,action_words,produces,NA,碰,hit,hit
+item_176,V4DENG4,word,action_words,produces,NA,蹬,step,step
+item_177,V4ZHUA,word,action_words,produces,NA,抓,catch,catch
+item_178,V4MOVE,word,action_words,produces,NA,搬,move,move
+item_179,V4DUAN,word,action_words,produces,NA,端,carry,carry
+item_180,V4MASSG,word,action_words,produces,NA,揉,rub,rub
+item_181,V4SPIN,word,action_words,produces,NA,转,spin,spin
+item_182,V4LOVE,word,action_words,produces,NA,爱,love,love
+item_183,V4SMILE,word,action_words,produces,NA,乐（一个）,smile,smile
+item_184,V4COUNT,word,action_words,produces,NA,数数,count,count
+item_185,V4KE,word,action_words,produces,NA,磕,knock,knock
+item_186,V4FLIP,word,action_words,produces,NA,翻,flip,flip
+item_187,V4JIA,word,action_words,produces,NA,夹,pick,pick
+item_188,V4SMELL,word,action_words,produces,NA,闻,smell,smell
+item_189,V4TASTE,word,action_words,produces,NA,尝,taste,taste
+item_190,V4SWALL,word,action_words,produces,NA,咽,swallow,swallow
+item_191,V4COOK,word,action_words,produces,NA,做饭,cook,cook
+item_192,V4DANCE,word,action_words,produces,NA,跳舞,dance,dance
+item_193,V4CHNGE,word,action_words,produces,NA,换,exchange,exchange
+item_194,V4RUB,word,action_words,produces,NA,抹（油等）,wipe,wipe
+item_195,V4STUFF,word,action_words,produces,NA,装,fill,fill
+item_196,V4PICK,word,action_words,produces,NA,摘（揪）,pick,pick
+item_197,V4LET,word,action_words,produces,NA,让,let,let
+item_198,V4FIX,word,action_words,produces,NA,修,fix,fix
+item_199,V4TRY,word,action_words,produces,NA,使劲,put in effort,NA
+item_200,V4LIFT,word,action_words,produces,NA,举,lift,lift (action)
+item_201,V4HANG,word,action_words,produces,NA,挂,hang,hang
+item_202,V4ROLL,word,action_words,produces,NA,滚,roll,roll (action)
+item_203,V4PINCH,word,action_words,produces,NA,挖,dig,dig
+item_204,V4FU,word,action_words,produces,NA,扶,support,support
+item_205,V4LEARN,word,action_words,produces,NA,学,learn,learn
+item_206,V4REMEM,word,action_words,produces,NA,记（得）,remember,remember
+item_207,V4DAMAG,word,action_words,produces,NA,打破/打碎,break,break
+item_208,V4TWIST,word,action_words,produces,NA,扭,twist,twist
+item_209,V4STOP,word,action_words,produces,NA,停,stop,stop
+item_210,V4SQUIS,word,action_words,produces,NA,压,squeeze,squeeze
+item_211,V4CRASH,word,action_words,produces,NA,撞,bump,bump
+item_212,V4INSER,word,action_words,produces,NA,插,insert,insert
+item_213,V4HUG,word,action_words,produces,NA,搂,hug,hug
+item_214,V4BRING,word,action_words,produces,NA,带,bring,bring
+item_215,V4DA,word,action_words,produces,NA,搭,ride,ride
+item_216,V4FOLLO,word,action_words,produces,NA,跟着,follow,follow
+item_217,V4DIAL,word,action_words,produces,NA,拨（电话）,NA,call
+item_218,V4TEASE,word,action_words,produces,NA,逗,amuse,amuse
+item_219,V4LINE,word,action_words,produces,NA,排（队）,queue,queue
+item_220,V4DO,word,action_words,produces,NA,干（什么）,NA,do
+item_221,V4USE,word,action_words,produces,NA,用,use,use
+item_222,V4LICK,word,action_words,produces,NA,舔,lick,lick
+item_223,V4CHEW,word,action_words,produces,NA,嚼,chew,chew
+item_224,V4TURN,word,action_words,produces,NA,拐（弯）,turn,turn
+item_225,V4BEND,word,action_words,produces,NA,弯,bend,bend
+item_226,V4GRAB,word,action_words,produces,NA,抢,grab,grab
+item_227,V4BLINK,word,action_words,produces,NA,眨（眼）,blink,blink
+item_228,V4WIND,word,action_words,produces,NA,拧,wind,wind
+item_229,V4SHOUT,word,action_words,produces,NA,叫唤,shout,shout
+item_230,V4QIAO,word,action_words,produces,NA,瞧,look,look
+item_231,V4NONG,word,action_words,produces,NA,弄,make,make
+item_232,V4SWIM,word,action_words,produces,NA,游泳,swim,swim
+item_233,V4STICK,word,action_words,produces,NA,贴,stick,stick
+item_234,V4PLUCK,word,action_words,produces,NA,拔（草）,pick,pick
+item_235,V4GROW,word,action_words,produces,NA,长（大）,grow,grow
+item_236,V4CAP,word,action_words,produces,NA,套,cap,cover (action)
+item_237,V4BREAK,word,action_words,produces,NA,拆,break,break
+item_238,V4READ,word,action_words,produces,NA,读,read,read
+item_239,V4GE,word,action_words,produces,NA,搁,put,put
+item_240,V4CHOU,word,action_words,produces,NA,瞅,look,look
+item_241,V4CATCH,word,action_words,produces,NA,逮（坏蛋）,catch,catch
+item_242,V4DUO,word,action_words,produces,NA,躲,hide,hide
+item_243,V4WAIT2,word,action_words,produces,NA,待（一会儿）,wait,wait
+item_244,V4YELL,word,action_words,produces,NA,嚷,shout,shout
+item_245,V4ASK,word,action_words,produces,NA,问,ask,ask
+item_246,V4TELL,word,action_words,produces,NA,告诉,tell,tell
+item_247,V4ROLLU,word,action_words,produces,NA,捋/挽（袖子）,tug,tug
+item_248,V4RINSE,word,action_words,produces,NA,冲,rinse,rinse
+item_249,V4HELP,word,action_words,produces,NA,帮助/帮忙,help,help
+item_250,V4DRAG,word,action_words,produces,NA,拖,pull,pull
+item_251,V4SWING,word,action_words,produces,NA,悠,swing (action),swing (action)
+item_252,V4TIEUP,word,action_words,produces,NA,绑,tie,tie (action)
+item_253,V4STIR,word,action_words,produces,NA,搅,stir,stir
+item_254,V4RAO,word,action_words,produces,NA,绕,go around,go around
+item_255,V4PRESS,word,action_words,produces,NA,摁（按）,press,press
+item_256,V4DREAM,word,action_words,produces,NA,做梦,dream,dream
+item_257,V4WORK,word,action_words,produces,NA,工作,work (action),work (action)
+item_258,V4TRY2,word,action_words,produces,NA,试,try,try
+item_259,V4SELL,word,action_words,produces,NA,卖,sell,sell
+item_260,V4DAN,word,action_words,produces,NA,掸掸,wipe,wipe
+item_261,V4TIDY,word,action_words,produces,NA,收拾,tidy (action),clean (action)
+item_262,V4FORGT,word,action_words,produces,NA,忘记,forget,forget
+item_263,V4PRETE,word,action_words,produces,NA,假装,pretend,pretend
+item_264,V4HOPE,word,action_words,produces,NA,希望,hope,hope
+item_265,V4DUST,word,action_words,produces,NA,抖搂,shake,shake
+item_266,V4SCRAP,word,action_words,produces,NA,蹭,rub,rub
+item_267,E5WATER,word,food_drink,produces,NA,水,water (beverage),water (beverage)
+item_268,E5MILK,word,food_drink,produces,NA,牛奶,milk,milk
+item_269,E5CONGEE,word,food_drink,produces,NA,粥,porridge,porridge
+item_270,E5SOUP,word,food_drink,produces,NA,汤,soup,soup
+item_271,E5YOGURT,word,food_drink,produces,NA,酸奶,yogurt,yogurt
+item_272,E5LEBAIS,word,food_drink,produces,NA,乐百氏,NA,kefir
+item_273,E5JUICE,word,food_drink,produces,NA,果汁,juice,juice
+item_274,E5COLA,word,food_drink,produces,NA,可乐,coke,coke
+item_275,E5SODA,word,food_drink,produces,NA,汽水,soda,soda
+item_276,E5TEA,word,food_drink,produces,NA,茶,tea,tea
+item_277,E5DRINK,word,food_drink,produces,NA,饮料,drink (beverage),drink (beverage)
+item_278,E5RICE,word,food_drink,produces,NA,饭,food,food
+item_279,E5MI,word,food_drink,produces,NA,米,rice,rice
+item_280,E5DUMPL,word,food_drink,produces,NA,饺子,dumpling,dumpling
+item_281,E5NOODLE,word,food_drink,produces,NA,面条,noodles,pasta
+item_282,E5BUN,word,food_drink,produces,NA,包子,bun,bun
+item_283,E5MANTOU,word,food_drink,produces,NA,馒头,bun,bun
+item_284,E5HUNDUN,word,food_drink,produces,NA,馄饨,dumpling,dumpling
+item_285,E5MEAT,word,food_drink,produces,NA,肉,meat,meat
+item_286,E5FISH,word,food_drink,produces,NA,鱼,fish (food),fish (food)
+item_287,E5EGG,word,food_drink,produces,NA,蛋,egg,egg
+item_288,E5SHRIMP,word,food_drink,produces,NA,虾,shrimp,shrimp
+item_289,E5CHICKN,word,food_drink,produces,NA,鸡肉,chicken (food),chicken (food)
+item_290,E5LIVER,word,food_drink,produces,NA,肝儿（猪肝、鸡肝）,liver,liver (food)
+item_291,E5VEGGIE,word,food_drink,produces,NA,菜,dish,dish
+item_292,E5BEAN,word,food_drink,produces,NA,豆子,beans,beans
+item_293,E5BRBEAN,word,food_drink,produces,NA,扁豆,beans,beans
+item_294,E5SPROUT,word,food_drink,produces,NA,豆芽,sprouts,sprouts
+item_295,E5MELON,word,food_drink,produces,NA,瓜,melon,melon
+item_296,E5CABBAG,word,food_drink,produces,NA,白菜,cabbage,cabbage
+item_297,E5SPINAC,word,food_drink,produces,NA,菠菜,spinach,spinach
+item_298,E5RADISH,word,food_drink,produces,NA,萝卜,carrots,carrot
+item_299,E5POTATO,word,food_drink,produces,NA,土豆,potato,potato
+item_300,E5TOMATO,word,food_drink,produces,NA,西红柿,tomato,tomato
+item_301,E5CUKE,word,food_drink,produces,NA,黄瓜,cucumber,cucumber
+item_302,E5CORN,word,food_drink,produces,NA,玉米,corn,corn
+item_303,E5TOFU,word,food_drink,produces,NA,豆腐,tofu,tofu
+item_304,E5ONION,word,food_drink,produces,NA,葱,scallion,scallion
+item_305,E5MUSHRM,word,food_drink,produces,NA,蘑菇,mushrooms,mushroom
+item_306,E5MUER,word,food_drink,produces,NA,木耳,mushroom,mushroom
+item_307,E5FRUIT,word,food_drink,produces,NA,水果,fruit,fruit
+item_308,E5APPLE,word,food_drink,produces,NA,苹果,apple,apple
+item_309,E5BANANA,word,food_drink,produces,NA,香蕉,banana,banana
+item_310,E5TANGER,word,food_drink,produces,NA,橘子,orange (food),orange (food)
+item_311,E5ORANGE,word,food_drink,produces,NA,橙子,orange (food),orange (food)
+item_312,E5GRAPE,word,food_drink,produces,NA,葡萄,grapes,grapes
+item_313,E5WATMEL,word,food_drink,produces,NA,西瓜,watermelon,watermelon
+item_314,E5STRAWB,word,food_drink,produces,NA,草莓,strawberry,strawberry
+item_315,E5PEAR,word,food_drink,produces,NA,梨,pear,pear
+item_316,E5CANDY,word,food_drink,produces,NA,糖,sugar,sugar
+item_317,E5PANCAK,word,food_drink,produces,NA,饼,pancake,pancake
+item_318,E5COOKIE,word,food_drink,produces,NA,饼干,cookie,cookie
+item_319,E5BREAD,word,food_drink,produces,NA,面包,bread,bread
+item_320,E5CAKE,word,food_drink,produces,NA,蛋糕,cake,cake
+item_321,E5JELLY,word,food_drink,produces,NA,果冻,jelly,jelly
+item_322,E5SEED,word,food_drink,produces,NA,瓜子,melon,melon
+item_323,E5PEANUT,word,food_drink,produces,NA,花生,peanut,peanut
+item_324,E5WALNUT,word,food_drink,produces,NA,核桃,walnut,nut
+item_325,E5CHOCOL,word,food_drink,produces,NA,巧克力,chocolate,chocolate
+item_326,E5FRIES,word,food_drink,produces,NA,薯条,french fries,french fries
+item_327,E5POPSIC,word,food_drink,produces,NA,冰棍儿,popsicle,popsicle
+item_328,E5HULU,word,food_drink,produces,NA,糖葫芦,candied fruit,NA
+item_329,E5ICECRM,word,food_drink,produces,NA,冰淇淋,ice cream,ice cream
+item_330,E5YOUTIA,word,food_drink,produces,NA,油条,dough fritters,donut
+item_331,E5FLOUR,word,food_drink,produces,NA,面/面粉,flour,flour
+item_332,E5PEPPER,word,food_drink,produces,NA,辣椒,pepper,pepper
+item_333,E5SALT,word,food_drink,produces,NA,盐,salty,salt
+item_334,E5VINEGA,word,food_drink,produces,NA,醋,vinegar,vinegar
+item_335,E5SOYSAU,word,food_drink,produces,NA,酱油,sauce,sauce
+item_336,B6HEAD,word,body_parts,produces,NA,头,head,head
+item_337,B6NAODAI,word,body_parts,produces,NA,脑袋,brain,brain
+item_338,B6HAIR,word,body_parts,produces,NA,头发,hair,hair
+item_339,B6FACE,word,body_parts,produces,NA,脸,face,face
+item_340,B6EYE,word,body_parts,produces,NA,眼睛,eye,eye
+item_341,B6EYEBRO,word,body_parts,produces,NA,眉毛,eyebrows,eyebrow
+item_342,B6CHEEK,word,body_parts,produces,NA,脸蛋,cheek,cheek
+item_343,B6EAR,word,body_parts,produces,NA,耳朵,ear,ear
+item_344,B6NOSE,word,body_parts,produces,NA,鼻子,nose,nose
+item_345,B6MOUTH,word,body_parts,produces,NA,嘴（口）,mouth,mouth
+item_346,B6LIPS,word,body_parts,produces,NA,嘴唇,lips,lip
+item_347,B6TEETH,word,body_parts,produces,NA,牙,tooth,tooth
+item_348,B6TONGUE,word,body_parts,produces,NA,舌头,tongue,tongue
+item_349,B6CHIN,word,body_parts,produces,NA,下巴,chin,chin
+item_350,B6NECK,word,body_parts,produces,NA,脖子,neck,neck
+item_351,B6SHOULD,word,body_parts,produces,NA,肩膀,shoulder,shoulder
+item_352,B6ELBOW,word,body_parts,produces,NA,胳膊,arm,arm
+item_353,B6HAND,word,body_parts,produces,NA,手,hand,hand
+item_354,B6FINGER,word,body_parts,produces,NA,手指头,finger,finger
+item_355,B6THUMB,word,body_parts,produces,NA,大拇指,thumb,thumb
+item_356,B6TUMMY,word,body_parts,produces,NA,肚子,tummy,tummy
+item_357,B6BELLYB,word,body_parts,produces,NA,肚脐眼,belly button,belly button
+item_358,B6BUTTOC,word,body_parts,produces,NA,屁股,butt,butt
+item_359,B6LEG,word,body_parts,produces,NA,腿,leg,leg
+item_360,B6FOOT,word,body_parts,produces,NA,脚/脚丫丫,foot,foot
+item_361,B6KNEE,word,body_parts,produces,NA,膝盖,knee,knee
+item_362,B6ANKLE,word,body_parts,produces,NA,脚腕,ankle,ankle
+item_363,A7CAT,word,animals,produces,NA,猫,cat,cat
+item_364,A7RABBIT,word,animals,produces,NA,小白兔/兔子,bunny,bunny
+item_365,A7HORSE,word,animals,produces,NA,马,horse,horse
+item_366,A7SHEEP,word,animals,produces,NA,羊,sheep,sheep
+item_367,A7DOG,word,animals,produces,NA,狗,dog,dog
+item_368,A7MONKEY,word,animals,produces,NA,猴子,monkey,monkey
+item_369,A7TIGER,word,animals,produces,NA,老虎,tiger,tiger
+item_370,A7COW,word,animals,produces,NA,牛,cow,cow
+item_371,A7BEAR,word,animals,produces,NA,熊,bear,bear
+item_372,A7PIG,word,animals,produces,NA,猪,pig,pig
+item_373,A7ELEPH,word,animals,produces,NA,大象,elephant,elephant
+item_374,A7PANDA,word,animals,produces,NA,熊猫,panda,panda
+item_375,A7LION,word,animals,produces,NA,狮子,lion,lion
+item_376,A7MOUSE,word,animals,produces,NA,老鼠,mouse,mouse
+item_377,A7GORILL,word,animals,produces,NA,猩猩,gorilla,gorilla
+item_378,A7DEER,word,animals,produces,NA,鹿,deer,deer
+item_379,A7WOLF,word,animals,produces,NA,狼,wolf,wolf
+item_380,A7ZEBRA,word,animals,produces,NA,斑马,zebra,zebra
+item_381,A7GIRAFF,word,animals,produces,NA,长颈鹿,giraffe,giraffe
+item_382,A7CAMEL,word,animals,produces,NA,骆驼,camel,camel
+item_383,A7HEDGEH,word,animals,produces,NA,刺猬,hedgehog,hedgehog
+item_384,A7ANIMAL,word,animals,produces,NA,动物,animal,animal
+item_385,A7DUCK,word,animals,produces,NA,鸭子,duck,duck
+item_386,A7BIRD,word,animals,produces,NA,鸟,bird,bird
+item_387,A7CHICK,word,animals,produces,NA,小鸡,chick,chick
+item_388,A7SWALLO,word,animals,produces,NA,燕子,swallow,swallow (animal)
+item_389,A7PIGEON,word,animals,produces,NA,鸽子,pigeon,pigeon
+item_390,A7GOOSE,word,animals,produces,NA,鹅,goose,goose
+item_391,A7PENGUI,word,animals,produces,NA,企鹅,penguin,penguin
+item_392,A7MAGPIE,word,animals,produces,NA,喜鹊,magpie,magpie
+item_393,A7PEACOK,word,animals,produces,NA,孔雀,peacock,peacock
+item_394,A7CROW,word,animals,produces,NA,乌鸦,crow,crow
+item_395,A7EAGLE,word,animals,produces,NA,老鹰,eagle,eagle
+item_396,A7OWL,word,animals,produces,NA,猫头鹰,owl,owl
+item_397,A7FISH,word,animals,produces,NA,鱼,fish (animal),fish (animal)
+item_398,A7BUG,word,animals,produces,NA,虫子,bug,bug
+item_399,A7TURTLE,word,animals,produces,NA,乌龟,turtle,turtle
+item_400,A7FROG,word,animals,produces,NA,青蛙,frog,frog
+item_401,A7ANT,word,animals,produces,NA,蚂蚁,ant,ant
+item_402,A7DRAGON,word,animals,produces,NA,龙,dragon,dragon
+item_403,A7BUTFLY,word,animals,produces,NA,蝴蝶,butterfly,butterfly
+item_404,A7DRAFLY,word,animals,produces,NA,蜻蜓,dragonfly,dragonfly
+item_405,A7MOSQ,word,animals,produces,NA,蚊子,mosquito,mosquito
+item_406,A7FLY,word,animals,produces,NA,苍蝇,fly,fly (animal)
+item_407,A7SNAKE,word,animals,produces,NA,蛇,snake,snake
+item_408,A7ALLIG,word,animals,produces,NA,鳄鱼,alligator,alligator
+item_409,A7CRICK,word,animals,produces,NA,蛐蛐,cricket,cricket
+item_410,A7DINO,word,animals,produces,NA,恐龙,dinosaur,dinosaur
+item_411,A7ROACH,word,animals,produces,NA,蟑螂,cockroach,cockroach
+item_412,X8GONE,word,descriptive_words,produces,NA,没了,all gone,all gone
+item_413,X8BIG,word,descriptive_words,produces,NA,大,big,big
+item_414,X8SMALL,word,descriptive_words,produces,NA,小,little (description),little (description)
+item_415,X8GOOD,word,descriptive_words,produces,NA,好,good,good
+item_416,X8BAD,word,descriptive_words,produces,NA,坏,bad,bad
+item_417,X8FRAGR,word,descriptive_words,produces,NA,香,fragrant,fragrant
+item_418,X8STINK,word,descriptive_words,produces,NA,臭,smelly,smelly
+item_419,X8BURNI,word,descriptive_words,produces,NA,烫,hot,hot
+item_420,X8HOT,word,descriptive_words,produces,NA,热,hot,hot
+item_421,X8COOL,word,descriptive_words,produces,NA,凉,cool,cool (description)
+item_422,X8COLD,word,descriptive_words,produces,NA,冷,cold,cold
+item_423,X8BAO3,word,descriptive_words,produces,NA,饱,full,full
+item_424,X8HUNGR,word,descriptive_words,produces,NA,饿,hungry,hungry
+item_425,X8THIRS,word,descriptive_words,produces,NA,渴,thirsty,thirsty
+item_426,X8SWEET,word,descriptive_words,produces,NA,甜,sweet,sweet
+item_427,X8HOTLA,word,descriptive_words,produces,NA,辣,spicy,spicy
+item_428,X8SOUR,word,descriptive_words,produces,NA,酸,sour,sour
+item_429,X8SALTY,word,descriptive_words,produces,NA,咸,salty,salty
+item_430,X8DIRTY,word,descriptive_words,produces,NA,脏,dirty,dirty
+item_431,X8CLEAN,word,descriptive_words,produces,NA,干净,clean (description),clean (description)
+item_432,X8SCARE,word,descriptive_words,produces,NA,害怕,scared,scared
+item_433,X8HURT,word,descriptive_words,produces,NA,疼,hurt,hurt (description)
+item_434,X8GUAI,word,descriptive_words,produces,NA,乖,well-behaved,well-behaved
+item_435,X8HUAIL,word,descriptive_words,produces,NA,坏了,broken,broken
+item_436,X8POLE,word,descriptive_words,produces,NA,破了,NA,broken
+item_437,X8NAUGH,word,descriptive_words,produces,NA,淘气（调皮）,naughty,naughty
+item_438,X8TAOYA,word,descriptive_words,produces,NA,讨厌,hate,hate
+item_439,X8FAST,word,descriptive_words,produces,NA,快,fast,fast
+item_440,X8SLOW,word,descriptive_words,produces,NA,慢/慢点,slow,slow
+item_441,X8CUTE,word,descriptive_words,produces,NA,可爱/好玩儿,cute,cute
+item_442,X8PITIA,word,descriptive_words,produces,NA,可怜,pitiful,pitiful
+item_443,X8TIRED,word,descriptive_words,produces,NA,累,tired,tired
+item_444,X8SLEEP,word,descriptive_words,produces,NA,困了,sleepy,sleepy
+item_445,X8SICK,word,descriptive_words,produces,NA,病,sick,sick
+item_446,X8TALL,word,descriptive_words,produces,NA,高,high,high
+item_447,X8PRETT,word,descriptive_words,produces,NA,漂亮/美,pretty,pretty
+item_448,X8LIKE,word,descriptive_words,produces,NA,喜欢,like,like
+item_449,X8NEW,word,descriptive_words,produces,NA,新,new,new
+item_450,X8OLD,word,descriptive_words,produces,NA,老,old,old
+item_451,X8HAPPY,word,descriptive_words,produces,NA,高兴/乐/开心,happy,happy
+item_452,X8ANGRY,word,descriptive_words,produces,NA,生气,angry,angry
+item_453,X8WEIQU,word,descriptive_words,produces,NA,委屈,aggrieved,aggrieved
+item_454,X8WET,word,descriptive_words,produces,NA,可怜,wet,wet (description)
+item_455,X8DRY,word,descriptive_words,produces,NA,累,dry,dry (description)
+item_456,X8LOUD,word,descriptive_words,produces,NA,困了,loud,loud
+item_457,X8LONG,word,descriptive_words,produces,NA,病,long,long
+item_458,X8HARD,word,descriptive_words,produces,NA,高,hard,hard
+item_459,X8SOFT,word,descriptive_words,produces,NA,漂亮/美,soft,soft
+item_460,X8FINIS,word,descriptive_words,produces,NA,喜欢,finished,finished
+item_461,X8ENOUGH,word,descriptive_words,produces,NA,新,enough,enough
+item_462,X8EMPTY,word,descriptive_words,produces,NA,老,empty,empty
+item_463,X8FULLM,word,descriptive_words,produces,NA,高兴/乐/开心,full,full
+item_464,X8HEAVY,word,descriptive_words,produces,NA,生气,heavy,heavy
+item_465,X8CAREF,word,descriptive_words,produces,NA,委屈,careful,careful
+item_466,X8BUCUO,word,descriptive_words,produces,NA,不错,NA,NA
+item_467,X8STICK,word,descriptive_words,produces,NA,粘糊,sticky,sticky
+item_468,X8STUCK,word,descriptive_words,produces,NA,卡了,stuck,stuck
+item_469,X8WHITE,word,descriptive_words,produces,NA,白,white,white
+item_470,X8BLACK,word,descriptive_words,produces,NA,黑,black,black
+item_471,X8RED,word,descriptive_words,produces,NA,红（色）,red,red
+item_472,X8GREEN,word,descriptive_words,produces,NA,绿,green,green
+item_473,X8YELLO,word,descriptive_words,produces,NA,黄,yellow,yellow
+item_474,X8BLUE,word,descriptive_words,produces,NA,蓝（色）,blue,blue
+item_475,X8DARK,word,descriptive_words,produces,NA,黑乎乎,dark,dark
+item_476,X8FIRST,word,descriptive_words,produces,NA,第一,first,first
+item_477,X8LAST,word,descriptive_words,produces,NA,最后,last,last
+item_478,H9BOWL,word,household,produces,NA,碗,bowl,bowl
+item_479,H9CUP,word,household,produces,NA,杯子,cup,cup
+item_480,H9BOTTLE,word,household,produces,NA,瓶子,bottle,bottle
+item_481,H9SPOON,word,household,produces,NA,勺,spoon,spoon
+item_482,H9CHOPST,word,household,produces,NA,筷子,chopstick,chopstick
+item_483,H9PLATE,word,household,produces,NA,盘,plate,plate
+item_484,H9POT,word,household,produces,NA,锅,pot,pot
+item_485,H9KNIFE,word,household,produces,NA,刀,knife,knife
+item_486,H9TEACUP,word,household,produces,NA,茶杯,teacup,cup
+item_487,H9LIGHT,word,household,produces,NA,灯,lamp,lamp
+item_488,H9CLOCK,word,household,produces,NA,钟/表,clock,clock
+item_489,H9PHONE,word,household,produces,NA,电话,phone,telephone
+item_490,H9ELEFAN,word,household,produces,NA,电扇,electric fan,fan
+item_491,H9BATTRY,word,household,produces,NA,电池,battery,battery
+item_492,H9WATCH,word,household,produces,NA,手表,watch (object),watch (object)
+item_493,H9RADIO,word,household,produces,NA,收音机,radio,radio
+item_494,H9CAMERA,word,household,produces,NA,照相机,camera,camera
+item_495,H9PIANO,word,household,produces,NA,（钢）琴,piano,piano
+item_496,H9RECORD,word,household,produces,NA,录音机,voice recorder,voice recorder
+item_497,H9HIFI,word,household,produces,NA,音响,speaker,stereo
+item_498,H9VCD,word,household,produces,NA,VCD机,NA,NA
+item_499,H9QUILT,word,household,produces,NA,被子,NA,blanket
+item_500,H9PILLOW,word,household,produces,NA,枕头,pillow,pillow
+item_501,H9MEDICI,word,household,produces,NA,药,medicine,medicine
+item_502,H9COMB,word,household,produces,NA,梳子/栊子,comb (object),comb (object)
+item_503,H9BASIN,word,household,produces,NA,盆,basin,basin
+item_504,H9SOAP,word,household,produces,NA,肥皂/香皂,soap,soap
+item_505,H9TOOTHB,word,household,produces,NA,牙刷,toothbrush,toothbrush
+item_506,H9TOWEL,word,household,produces,NA,毛巾,towel,towel
+item_507,H9TPAPER,word,household,produces,NA,手纸,tissue,tissue
+item_508,H9PICTUR,word,household,produces,NA,画,picture,picture
+item_509,H9PAPER,word,household,produces,NA,纸,paper,paper
+item_510,H9SCISSO,word,household,produces,NA,剪刀,scissors,scissors
+item_511,H9STRING,word,household,produces,NA,绳,rope,rope
+item_512,H9GLASSE,word,household,produces,NA,眼镜,glasses,glasses
+item_513,H9NEWSP,word,household,produces,NA,报纸,newspaper,newspaper
+item_514,H9KEYS,word,household,produces,NA,钥匙,keys,key
+item_515,H9MONEY,word,household,produces,NA,钱,money,money
+item_516,H9BAG,word,household,produces,NA,包,bag,bag
+item_517,H9PURSE,word,household,produces,NA,书包,bag,bag
+item_518,H9WALLET,word,household,produces,NA,钱包,purse,purse
+item_519,H9SACK,word,household,produces,NA,口袋,pocket,pocket
+item_520,H9FAN,word,household,produces,NA,扇子,fan,fan
+item_521,H9CLOTH,word,household,produces,NA,（抹）布,cloth,cloth
+item_522,H9BOX,word,household,produces,NA,盒子,box,box
+item_523,H9BASKET,word,household,produces,NA,篮子,basket,basket
+item_524,H9BUCKET,word,household,produces,NA,桶,bucket,bucket
+item_525,H9BRUSH,word,household,produces,NA,刷子,brush,brush (object)
+item_526,H9MOP,word,household,produces,NA,笤帚,broom,broom
+item_527,H9RAG,word,household,produces,NA,托把/墩布,rag,rag
+item_528,H9GARBAG,word,household,produces,NA,垃圾,trash,trash
+item_529,H9DUSTBN,word,household,produces,NA,簸箕,dustpan,dustpan
+item_530,H9HAMMER,word,household,produces,NA,锤子,hammer,hammer
+item_531,H9NAIL,word,household,produces,NA,钉子,nail,nail (object)
+item_532,H9WOOD,word,household,produces,NA,木头,wood,wood
+item_533,H9THING,word,household,produces,NA,东西,thing,thing
+item_534,T10BALL,word,toys,produces,NA,汽球,ball,ball
+item_535,T10BOOK,word,toys,produces,NA,枪,book,book
+item_536,T10DOLL,word,toys,produces,NA,积木,doll,doll
+item_537,T10PEN,word,toys,produces,NA,玩具,pen,pen
+item_538,T10BALLO,word,toys,produces,NA,汽球,balloon,balloon
+item_539,T10GUN,word,toys,produces,NA,枪,gun,gun
+item_540,T10BLOCK,word,toys,produces,NA,积木,block,blocks
+item_541,T10TOYS,word,toys,produces,NA,玩具,toy (object),toy (object)
+item_542,T10STORY,word,toys,produces,NA,故事,story,story
+item_543,T10KITE,word,toys,produces,NA,风筝,kite,kite
+item_544,T10SONG,word,toys,produces,NA,歌,song,song
+item_545,T10BELL,word,toys,produces,NA,铃铛,bell,bell
+item_546,T10PENCI,word,toys,produces,NA,铅笔,pencil,pencil
+item_547,T10CRAYO,word,toys,produces,NA,蜡笔,crayon,crayon
+item_548,T10WHEEL,word,toys,produces,NA,车轮/轱辘,wheel,wheel
+item_549,T10GAME,word,toys,produces,NA,游戏,game,game
+item_550,T10CHESS,word,toys,produces,NA,棋子,chess,board game
+item_551,T10GIFT,word,toys,produces,NA,礼物,present,present
+item_552,C11HAT,word,clothing,produces,NA,帽子,hat,hat
+item_553,C11GLOVE,word,clothing,produces,NA,手套,gloves,glove
+item_554,C11SCARF,word,clothing,produces,NA,围巾,scarf,scarf
+item_555,C11KERCH,word,clothing,produces,NA,手绢,handkerchief,handkerchief
+item_556,C11BIB,word,clothing,produces,NA,围嘴,bib,bib
+item_557,C11NECKL,word,clothing,produces,NA,项链,necklace,necklace
+item_558,C11CLOTH,word,clothing,produces,NA,衣服/衣裳,clothes,clothes
+item_559,C11COAT,word,clothing,produces,NA,大衣/外套,coat,coat
+item_560,C11MIANA,word,clothing,produces,NA,棉袄,jacket,jacket
+item_561,C11JACKE,word,clothing,produces,NA,夹克,jacket,jacket
+item_562,C11SWEAT,word,clothing,produces,NA,毛衣,sweater,sweater
+item_563,C11VEST,word,clothing,produces,NA,背心,vest,vest
+item_564,C11SHIRT,word,clothing,produces,NA,上衣,shirt,shirt
+item_565,C11POCKE,word,clothing,produces,NA,（裤）兜,pocket,pocket
+item_566,C11BUTTO,word,clothing,produces,NA,扣子,button,button
+item_567,C11ZIPPE,word,clothing,produces,NA,拉锁,zipper,zipper
+item_568,C11SLEEV,word,clothing,produces,NA,袖子,sleeve,sleeve
+item_569,C11PANTS,word,clothing,produces,NA,裤子,pants,pants
+item_570,C11MAOKU,word,clothing,produces,NA,毛裤,pants,pants
+item_571,C11PANT,word,clothing,produces,NA,裤衩,underpants,underpants
+item_572,C11SKIRT,word,clothing,produces,NA,裙子,skirt,skirt
+item_573,C11BELT,word,clothing,produces,NA,皮带,belt,belt
+item_574,C11SOCKS,word,clothing,produces,NA,袜子,sock,sock
+item_575,C11SHOES,word,clothing,produces,NA,鞋,shoe,shoe
+item_576,C11SLIPP,word,clothing,produces,NA,拖鞋,slipper,slipper
+item_577,C11LEATH,word,clothing,produces,NA,皮鞋,shoe,shoe
+item_578,C11SANDA,word,clothing,produces,NA,凉鞋,sandals,sandal
+item_579,C11SNEAK,word,clothing,produces,NA,球鞋/旅游鞋,sneaker,sneaker
+item_580,F12STAIR,word,furniture_rooms,produces,NA,楼梯,stairs,stairs
+item_581,F12DOOR,word,furniture_rooms,produces,NA,门,door,door
+item_582,F12WINDO,word,furniture_rooms,produces,NA,窗户,window,window
+item_583,F12BED,word,furniture_rooms,produces,NA,床,bed,bed
+item_584,F12TABLE,word,furniture_rooms,produces,NA,桌子/饭桌,table,table
+item_585,F12POTTY,word,furniture_rooms,produces,NA,尿盆,potty,potty
+item_586,F12MIRRO,word,furniture_rooms,produces,NA,镜子,mirror,mirror
+item_587,F12STOOL,word,furniture_rooms,produces,NA,凳子,stool,stool
+item_588,F12CHAIR,word,furniture_rooms,produces,NA,椅子,chair,chair
+item_589,F12COUCH,word,furniture_rooms,produces,NA,沙发,couch,couch
+item_590,F12COFFT,word,furniture_rooms,produces,NA,茶几,stairs,stairs
+item_591,F12TV,word,furniture_rooms,produces,NA,电视,tv,TV
+item_592,F12FRIDG,word,furniture_rooms,produces,NA,冰箱,refrigerator,refrigerator
+item_593,F12STOVE,word,furniture_rooms,produces,NA,炉子/灶,stove,stove
+item_594,F12WASHE,word,furniture_rooms,produces,NA,洗衣机,washing machine,washing machine
+item_595,F12ROOM,word,furniture_rooms,produces,NA,屋子,house,house
+item_596,F12CLOSE,word,furniture_rooms,produces,NA,柜子,closet,closet
+item_597,F12DRAWE,word,furniture_rooms,produces,NA,抽屉,drawer,drawer
+item_598,F12BATHT,word,furniture_rooms,produces,NA,澡盆,bathtub,bathtub
+item_599,F12TOILE,word,furniture_rooms,produces,NA,厕所,bathroom,bathroom
+item_600,F12PUDDL,word,furniture_rooms,produces,NA,水池子,puddle,puddle
+item_601,F12TAP,word,furniture_rooms,produces,NA,水龙头/水管,faucet,faucet
+item_602,F12KITCH,word,furniture_rooms,produces,NA,厨房,kitchen,kitchen
+item_603,F12HOTBO,word,furniture_rooms,produces,NA,暖水瓶/暖壶,thermos,bottle
+item_604,F12GAS,word,furniture_rooms,produces,NA,煤气,gas,gas
+item_605,F12AIRC,word,furniture_rooms,produces,NA,空调,air conditioner,air conditioner
+item_606,F12MICRO,word,furniture_rooms,produces,NA,微波炉,microwave,microwave
+item_607,F12BALCO,word,furniture_rooms,produces,NA,阳台,balcony,balcony
+item_608,F12LIFT,word,furniture_rooms,produces,NA,电梯,elevator,elevator
+item_609,O13FLOWE,word,outside,produces,NA,花,flower,flower
+item_610,O13TREE,word,outside,produces,NA,树,tree,tree
+item_611,O13LEAF,word,outside,produces,NA,叶子/树叶,leaf,leaf
+item_612,O13BRANC,word,outside,produces,NA,树枝,branch,branch
+item_613,O13GRASS,word,outside,produces,NA,草,grass,grass
+item_614,O13EARTH,word,outside,produces,NA,土,earth,soil
+item_615,O13WATER,word,outside,produces,NA,水,water (not beverage),water (not beverage)
+item_616,O13RAIN,word,outside,produces,NA,雨,rain,rain
+item_617,O13SNOW,word,outside,produces,NA,雪,snow,snow
+item_618,O13WIND,word,outside,produces,NA,风,wind,wind
+item_619,O13STONE,word,outside,produces,NA,石头,stone,stone
+item_620,O13MOUNT,word,outside,produces,NA,山,mountain,mountain
+item_621,O13STICK,word,outside,produces,NA,棍子,stick,stick
+item_622,O13SAND,word,outside,produces,NA,沙子,sand,sand
+item_623,O13SHOVE,word,outside,produces,NA,铲子,shovel,shovel
+item_624,O13LADDE,word,outside,produces,NA,梯子,ladder,ladder
+item_625,O13SLIDE,word,outside,produces,NA,滑梯,slide (object),slide (object)
+item_626,O13SPINC,word,outside,produces,NA,转椅,NA,NA
+item_627,O13SWING,word,outside,produces,NA,秋千,swing (object),swing (object)
+item_628,O13BOUNC,word,outside,produces,NA,蹦蹦床,trampoline,trampoline
+item_629,O13SUN,word,outside,produces,NA,太阳,sun,sun
+item_630,O13MOON,word,outside,produces,NA,月亮,moon,moon
+item_631,O13STAR,word,outside,produces,NA,星星,star,star
+item_632,O13SKY,word,outside,produces,NA,天（空）,sky,sky
+item_633,O13CLOUD,word,outside,produces,NA,云彩,cloud,cloud
+item_634,O13ROOF,word,outside,produces,NA,房顶,roof,roof
+item_635,O13STREE,word,outside,produces,NA,街（道）/大街,street,street
+item_636,O13ROAD,word,outside,produces,NA,路,road,road
+item_637,O13TLIGH,word,outside,produces,NA,红绿灯,traffic light,traffic light
+item_638,O13UMBRE,word,outside,produces,NA,（雨）伞,umbrella,umbrella
+item_639,O13SNOWM,word,outside,produces,NA,雪人,snowman,snowman
+item_640,O13POOL,word,outside,produces,NA,游泳池,pool,pool
+item_641,V14CAR,word,vehicles,produces,NA,车,car,car
+item_642,V14PLANE,word,vehicles,produces,NA,飞机,airplane,airplane
+item_643,V14TRAIN,word,vehicles,produces,NA,火车,train,train
+item_644,V14BOAT,word,vehicles,produces,NA,船,boat,boat
+item_645,V14MOTO,word,vehicles,produces,NA,摩托车,motorcycle,motorcycle
+item_646,V14SEDAN,word,vehicles,produces,NA,小轿车,car,car
+item_647,V14BIKE,word,vehicles,produces,NA,自行车,bicycle,bicycle
+item_648,V14BUS,word,vehicles,produces,NA,公共汽车,bus,bus
+item_649,V14TRUCK,word,vehicles,produces,NA,卡车,truck,truck
+item_650,V14TAXI,word,vehicles,produces,NA,出租车/的,taxi,taxi
+item_651,V14CRANE,word,vehicles,produces,NA,老吊车,crane,crane
+item_652,V14TRIKE,word,vehicles,produces,NA,三轮车,tricycle,tricycle
+item_653,V14JEEP,word,vehicles,produces,NA,吉普车,jeep,jeep
+item_654,V14AMBUL,word,vehicles,produces,NA,救护车,ambulance,ambulance
+item_655,O15HOME,word,places,produces,NA,家,home,home
+item_656,O15OUTSI,word,places,produces,NA,外头/外面/外外,outside,outside
+item_657,O15DANWE,word,places,produces,NA,班儿/单位,work (place),work (place)
+item_658,O15HOUSE,word,places,produces,NA,房子,house,house
+item_659,O15BLDG,word,places,produces,NA,楼房,building,building
+item_660,O15PARK,word,places,produces,NA,公园,park,park
+item_661,O15ZOO,word,places,produces,NA,动物园,zoo,zoo
+item_662,O15GARDE,word,places,produces,NA,花园,garden,garden
+item_663,O15MCDS,word,places,produces,NA,麦当劳/肯德基,McDonald's / KFC,NA
+item_664,O15HOSPT,word,places,produces,NA,医院,hospital,hospital
+item_665,O15STORE,word,places,produces,NA,商店,store,store
+item_666,O15NURSR,word,places,produces,NA,幼儿园/托儿所,kindergarten,kindergarten
+item_667,O15SCHOO,word,places,produces,NA,学校,school,school
+item_668,O15TIANA,word,places,produces,NA,天安门,Tiananmen,NA
+item_669,O15CHINA,word,places,produces,NA,中国,China,NA
+item_670,O15AMPRK,word,places,produces,NA,游乐园,amusement park,amusement park
+item_671,O15SUPER,word,places,produces,NA,超市,store,store
+item_672,D16HERE,word,directions,produces,NA,这边/这儿,here,here
+item_673,D16THERE,word,directions,produces,NA,那边/那儿,there,there
+item_674,D16ON,word,directions,produces,NA,上（面）,on,above
+item_675,D16BELOW,word,directions,produces,NA,下（面）,below,below
+item_676,D16OUTSI,word,directions,produces,NA,外面,outside,outside
+item_677,D16INSID,word,directions,produces,NA,里面,inside,inside
+item_678,D16AT,word,directions,produces,NA,在,at,at
+item_679,D16UNDER,word,directions,produces,NA,底下,under,under
+item_680,D16FRONT,word,directions,produces,NA,前面,front,front
+item_681,D16BEHIN,word,directions,produces,NA,后面,behind,behind
+item_682,D16MIDDL,word,directions,produces,NA,中间,middle,middle
+item_683,D16BESID,word,directions,produces,NA,旁边,beside,beside
+item_684,D16NEXTT,word,directions,produces,NA,挨着,next to,next to
+item_685,D16TOSID,word,directions,produces,NA,一边,at a side,NA
+item_686,D16BIANS,word,directions,produces,NA,边上,at a side,NA
+item_687,D16WITH,word,directions,produces,NA,跟,with,with
+item_688,D16ARRIV,word,directions,produces,NA,到,until,until
+item_689,D16WANG3,word,directions,produces,NA,往,towards,towards
+item_690,D16FACIN,word,directions,produces,NA,朝,towards,towards
+item_691,D16TOWAR,word,directions,produces,NA,向,towards,towards
+item_692,D16GOWHE,word,directions,produces,NA,上（哪儿去）,towards,towards
+item_693,N17ONE,word,quantifiers,produces,NA,一,one,one
+item_694,N17TWO,word,quantifiers,produces,NA,二,two,two
+item_695,N17THREE,word,quantifiers,produces,NA,三,three,three
+item_696,N17SAME,word,quantifiers,produces,NA,一样,same,same
+item_697,N17MANY,word,quantifiers,produces,NA,多,many,many
+item_698,N17YOUDE,word,quantifiers,produces,NA,有的,some,some
+item_699,N17QUANB,word,quantifiers,produces,NA,全部,all,all
+item_700,N17SUOYO,word,quantifiers,produces,NA,所有,all,all
+item_701,N17ANOTH,word,quantifiers,produces,NA,另外,another,another
+item_702,P18ME,word,pronouns,produces,NA,我,I,1SG
+item_703,P18MINE,word,pronouns,produces,NA,我的,my,1SG.POSS
+item_704,P18SELF,word,pronouns,produces,NA,自己,self,REFL
+item_705,P18SMINE,word,pronouns,produces,NA,自己的,mine,REFL.POSS
+item_706,P18YOU,word,pronouns,produces,NA,你,you,2SG
+item_707,P18YOURS,word,pronouns,produces,NA,你的,your,2SG.POSS
+item_708,P18HE,word,pronouns,produces,NA,他（她、它）,he/she,3SG
+item_709,P18HIS,word,pronouns,produces,NA,他的,his,3SG.POSS
+item_710,P18THIS,word,pronouns,produces,NA,这个,this,this
+item_711,P18THAT,word,pronouns,produces,NA,那个,that,that
+item_712,P18THOSE,word,pronouns,produces,NA,那些,those,those
+item_713,P18THESE,word,pronouns,produces,NA,这些,these,these
+item_714,P18BIEDE,word,pronouns,produces,NA,别的,other,other
+item_715,P18US,word,pronouns,produces,NA,我们,we,1PL
+item_716,P18ZANME,word,pronouns,produces,NA,咱们,we,1PL
+item_717,P18YOUPL,word,pronouns,produces,NA,你们,you,2PL
+item_718,P18THEY,word,pronouns,produces,NA,他们,them,3PL
+item_719,P18USPOS,word,pronouns,produces,NA,我们的,our,1PL.POSS
+item_720,P18ZANMS,word,pronouns,produces,NA,咱们的,our,1PL.POSS
+item_721,P18YOUPP,word,pronouns,produces,NA,你们的,your,2PL.POSS
+item_722,P18THEIR,word,pronouns,produces,NA,他们的,their,3PL.POSS
+item_723,P18RENJI,word,pronouns,produces,NA,人家,other people,other
+item_724,P18QITA,word,pronouns,produces,NA,其它,other,other
+item_725,P18SOMEO,word,pronouns,produces,NA,别人,other people,other
+item_726,C19GE,word,classifiers,produces,NA,个,NA,NA
+item_727,C19KOU,word,classifiers,produces,NA,口,NA,NA
+item_728,C19ZHI,word,classifiers,produces,NA,只,NA,NA
+item_729,C19LIANG,word,classifiers,produces,NA,辆,NA,NA
+item_730,C19ZHANG,word,classifiers,produces,NA,张,NA,NA
+item_731,C19BEN,word,classifiers,produces,NA,本,NA,NA
+item_732,C19TIAO,word,classifiers,produces,NA,条,NA,NA
+item_733,C19DIAN,word,classifiers,produces,NA,点,NA,NA
+item_734,C19KUAI,word,classifiers,produces,NA,块,NA,NA
+item_735,C19JIAN,word,classifiers,produces,NA,件,NA,NA
+item_736,C19CI,word,classifiers,produces,NA,次,NA,NA
+item_737,C19BU,word,classifiers,produces,NA,步,NA,NA
+item_738,C19CENG,word,classifiers,produces,NA,层,NA,NA
+item_739,C19DUI,word,classifiers,produces,NA,堆,NA,NA
+item_740,C19LI,word,classifiers,produces,NA,粒,NA,NA
+item_741,C19TOU,word,classifiers,produces,NA,头,NA,NA
+item_742,C19PI,word,classifiers,produces,NA,匹,NA,NA
+item_743,C19WEI,word,classifiers,produces,NA,位,NA,NA
+item_744,C19YAN,word,classifiers,produces,NA,眼,NA,NA
+item_745,C19XIE,word,classifiers,produces,NA,些,NA,NA
+item_746,Q20DOWHA,word,question_words,produces,NA,干嘛？,what's up,NA
+item_747,Q20WHAT,word,question_words,produces,NA,什么,what,what
+item_748,Q20WHO,word,question_words,produces,NA,谁,who,who
+item_749,Q20WHERE,word,question_words,produces,NA,在哪里/哪儿呢？,where,where (question)
+item_750,Q20JTIME,word,question_words,produces,NA,几点,when (question),when (question)
+item_751,Q20WHICH,word,question_words,produces,NA,哪个,which (question),which (question)
+item_752,Q20WHY,word,question_words,produces,NA,为什么,why,why
+item_753,Q20HOW,word,question_words,produces,NA,怎么,how,how
+item_754,Q20JIGE,word,question_words,produces,NA,几个,how many,how many
+item_755,Q20DUOSH,word,question_words,produces,NA,多少,how much,how much
+item_756,Q20MA,word,question_words,produces,NA,（行、好）吗？,is that okay?,is that okay?
+item_757,Q20NE,word,question_words,produces,NA,（还有）呢？,anything else?,NA
+item_758,S21A,word,final_particles,produces,NA,啊/呀,a,a
+item_759,S21LE,word,final_particles,produces,NA,了,NA,NA
+item_760,S21LA,word,final_particles,produces,NA,啦,NA,NA
+item_761,S21MAA,word,final_particles,produces,NA,嘛,NA,NA
+item_762,S21NE,word,final_particles,produces,NA,呢,NA,NA
+item_763,S21AO,word,final_particles,produces,NA,噢,NA,NA
+item_764,T22MORNI,word,time_words,produces,NA,早上,morning,morning
+item_765,T22NIGHT,word,time_words,produces,NA,晚上,night,night
+item_766,T22TODAY,word,time_words,produces,NA,今天,today,today
+item_767,T22TOMOR,word,time_words,produces,NA,明天,tomorrow,tomorrow
+item_768,T22YESTE,word,time_words,produces,NA,昨天,yesterday,yesterday
+item_769,T22HOUTN,word,time_words,produces,NA,后天,NA,NA
+item_770,T22DAY,word,time_words,produces,NA,天,day,day
+item_771,T22FIRST,word,time_words,produces,NA,先,before,before
+item_772,T22ALREA,word,time_words,produces,NA,已经,already,already
+item_773,T22BEFOR,word,time_words,produces,NA,以前,before,before
+item_774,T22AFTER,word,time_words,produces,NA,以后,after,after
+item_775,T22LATER,word,time_words,produces,NA,晚（一点）,later,later
+item_776,T22NOW,word,time_words,produces,NA,现在,now,now
+item_777,T22EARLY,word,time_words,produces,NA,早（一点）,early,early
+item_778,T22TIME,word,time_words,produces,NA,时间,time,time
+item_779,Z23AI,word,helping_verbs,produces,NA,爱（听）,love,love
+item_780,Z23NENG,word,helping_verbs,produces,NA,能,can (auxiliary),can (auxiliary)
+item_781,Z23HUI,word,helping_verbs,produces,NA,会,can (auxiliary),can (auxiliary)
+item_782,Z23OK,word,helping_verbs,produces,NA,可以（做）,ok,ok
+item_783,Z23WILLI,word,helping_verbs,produces,NA,肯,NA,NA
+item_784,Z23XIANG,word,helping_verbs,produces,NA,想,think,think
+item_785,Z23BUXU,word,helping_verbs,produces,NA,不许,cannot,cannot
+item_786,Z23YUANY,word,helping_verbs,produces,NA,愿意,NA,NA
+item_787,Z23SHOUL,word,helping_verbs,produces,NA,该（走啦！）/应该,should,should
+item_788,Z23MUST,word,helping_verbs,produces,NA,得（你得去）,must,must
+item_789,Z23BAO,word,helping_verbs,produces,NA,把（XX放…）,NA,NA
+item_790,Z23SHEBD,word,helping_verbs,produces,NA,舍不得,NA,NA
+item_791,J24HE,word,connecting_words,produces,NA,和,with,with
+item_792,J24GEN,word,connecting_words,produces,NA,跟,follow,follow
+item_793,J24CAUSE,word,connecting_words,produces,NA,因为,because,because
+item_794,J24JIU,word,connecting_words,produces,NA,就,so,so
+item_795,J24BUT,word,connecting_words,produces,NA,可是,but,but
+item_796,J24IF,word,connecting_words,produces,NA,如果,if,if
+item_797,J24YAOSH,word,connecting_words,produces,NA,要是,if,if
+item_798,J24SUOYI,word,connecting_words,produces,NA,所以,so,so
+item_799,J24THEN,word,connecting_words,produces,NA,那么,so,so
+item_800,TALKFIND,talk_functions,NA,never; sometimes; often,NA,NA,NA,NA
+item_801,TALKPOBJ,talk_functions,NA,never; sometimes; often,NA,NA,NA,NA
+item_802,TALKABSO,talk_functions,NA,never; sometimes; often,NA,NA,NA,NA
+item_803,TALKPAST,talk_functions,NA,never; sometimes; often,NA,NA,NA,NA
+item_804,TALKFUT,talk_functions,NA,never; sometimes; often,NA,NA,NA,NA
+item_805,SENTVERB,sentence_structure,NA,never; sometimes; often,NA,NA,NA,NA
+item_806,SENTPOSS,sentence_structure,NA,never; sometimes; often,NA,NA,NA,NA
+item_807,SENTCLAS,sentence_structure,NA,never; sometimes; often,NA,NA,NA,NA
+item_808,SENTASP,sentence_structure,NA,never; sometimes; often,NA,NA,NA,NA
+item_809,COMBWORD,combine,NA,never; sometimes; often,NA,NA,NA,NA
+item_810,COMPMISS,complexity,NA,3; 2; 1; 0,NA,NA,NA,NA
+item_811,COMPDESO,complexity,NA,3; 2; 1; 0,NA,NA,NA,NA
+item_812,COMPDEA2,complexity,NA,4; 3; 2; 1; 0,NA,NA,NA,NA
+item_813,COMPPOSS,complexity,NA,3; 2; 1; 0,NA,NA,NA,NA
+item_814,COMPDESA,complexity,NA,4; 3; 2; 1; 0,NA,NA,NA,NA
+item_815,COMPPOS3,complexity,NA,2; 1; 0,NA,NA,NA,NA
+item_816,COMPFUT,complexity,NA,2; 1; 0,NA,NA,NA,NA
+item_817,COMPCANT,complexity,NA,4; 3; 2; 1; 0,NA,NA,NA,NA
+item_818,COMPHELP,complexity,NA,5; 4; 3; 2; 1; 0,NA,NA,NA,NA
+item_819,COMPPOS2,complexity,NA,3; 2; 1; 0,NA,NA,NA,NA
+item_820,COMPDES2,complexity,NA,3; 2; 1; 0,NA,NA,NA,NA
+item_821,COMPREP,complexity,NA,2; 1; 0,NA,NA,NA,NA
+item_822,COMPPASO,complexity,NA,4; 3; 2; 1; 0,NA,NA,NA,NA
+item_823,COMPNOW2,complexity,NA,2; 1; 0,NA,NA,NA,NA
+item_824,COMPNDES,complexity,NA,3; 2; 1; 0,NA,NA,NA,NA
+item_825,COMPPASL,complexity,NA,3; 2; 1; 0,NA,NA,NA,NA
+item_826,COMPREP2,complexity,NA,2; 1; 0,NA,NA,NA,NA
+item_827,COMPNDEO,complexity,NA,3; 2; 1; 0,NA,NA,NA,NA
+item_828,COMPNDE2,complexity,NA,2; 1; 0,NA,NA,NA,NA
+item_829,COMPREP3,complexity,NA,3; 2; 1; 0,NA,NA,NA,NA
+item_830,COMPNOW,complexity,NA,3; 2; 1; 0,NA,NA,NA,NA
+item_831,COMPQUE2,complexity,NA,4; 3; 2; 1; 0,NA,NA,NA,NA
+item_832,COMPCLAS,complexity,NA,2; 1; 0,NA,NA,NA,NA
+item_833,COMPCLA2,complexity,NA,2; 1; 0,NA,NA,NA,NA
+item_834,COMPPASG,complexity,NA,2; 1; 0,NA,NA,NA,NA
+item_835,COMPCAN2,complexity,NA,5; 4; 3; 2; 1; 0,NA,NA,NA,NA
+item_836,COMPQUES,complexity,NA,3; 2; 1; 0,NA,NA,NA,NA
