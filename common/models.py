@@ -36,6 +36,8 @@ class Dataset(models.Model):
     def __str__(self):
         return f"{self.dataset_name} ({self.dataset_origin}): {self.instrument}"
 
+    class Meta:
+        ordering = ['dataset_name']
 
 class Instrument(models.Model):
     language = models.CharField(max_length=30)
