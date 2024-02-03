@@ -63,7 +63,9 @@ class Instrument(models.Model):
     def __str__(self):
         return f"{self.language} {self.form}"
 
-
+    class Meta:
+        ordering = ['language', 'form']
+        
 class ItemCategory(models.Model):
     category = models.CharField(max_length=50)
     lexical_category = models.CharField(max_length=20)
