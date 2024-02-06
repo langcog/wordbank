@@ -42,7 +42,7 @@ termcolor==1.1.0
 texttable==1.6.3
 #tonyg-rfc3339 @ git+git://github.com/tonyg/python-rfc3339@ed7ebfc3c6ec80cc0bb4708e7d44eaa02148472d
 git+https://github.com/tonyg/python-rfc3339
-urllib3==1.26.5
+urllib3==1.26.18
 wcwidth==0.1.9
 websocket-client==0.58.0
 xlrd==2.0.1
