@@ -1,0 +1,36 @@
+﻿type,value,data_value
+sex,M,male
+sex,F,female
+mom_ed,,Not reported
+mom_ed,secondary,High school
+mom_ed,some college,Trade school diploma
+mom_ed,some college,College certificate/diploma
+mom_ed,some college,Some college/university
+mom_ed,college,Bachelor's degree
+mom_ed,some graduate,Graduate degree
+mom_ed,graduate,Master's degree
+mom_ed,graduate,Professional degree
+mom_ed,graduate,Doctoral degree
+first_signs,yes,yes
+first_signs,yes,1
+first_signs,no,no
+first_signs,no,0
+phrases,understands,1
+phrases,,0
+starting_to_talk,never,0
+starting_to_talk,sometimes,1
+starting_to_talk,often,2
+word,produces,2
+word,understands,1
+word,,0
+gestures_first,not yet,0
+gestures_first,sometimes,1
+gestures_first,often,2
+gestures_games,yes,1
+gestures_games,no,0
+gestures_objects,yes,1
+gestures_objects,no,0
+gestures_parent,yes,1
+gestures_parent,no,0
+gestures_adult,yes,1
+gestures_adult,no,0

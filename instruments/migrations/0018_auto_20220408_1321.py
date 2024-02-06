@@ -4,14 +4,13 @@ from django.db import migrations
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('instruments', '0017_spanish_argentinian_ws'),
+        ("instruments", "0017_spanish_argentinian_ws"),
     ]
 
     operations = [
         migrations.RenameModel(
-            old_name='American_Sign_Language_CDI',
-            new_name='American_Sign_Language_CDITwo',
+            old_name="American_Sign_Language_CDI",
+            new_name="American_Sign_Language_CDITwo",
         ),
     ]

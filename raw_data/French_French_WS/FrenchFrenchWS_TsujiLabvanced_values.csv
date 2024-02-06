@@ -1,0 +1,12 @@
+type,value,data_value
+word,,NA
+word,understands,2
+word,produces,1
+word,,3
+verb_endings,yes,1
+verb_endings,no,0
+combine,not yet,option_0
+combine,sometimes,option_1
+combine,often,option_2
+sex,M,m
+sex,F,f

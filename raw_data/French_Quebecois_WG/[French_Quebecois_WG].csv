@@ -409,3 +409,99 @@ item_405,plus,quantifiers,plus,word,understands; produces,more,more
 item_406,pas,quantifiers,pas,word,understands; produces,not,not
 item_407,un autre,quantifiers,un_autre,word,understands; produces,another,another
 item_408,un peu,quantifiers,un_peu,word,understands; produces,a little,little (amount)
+item_409,repnom,NA,repnom,first_signs,yes; no,respname,NA
+item_410,repnon,NA,repnon,first_signs,yes; no,respno,NA
+item_411,reagirmp,NA,reagirmp,first_signs,yes; no,reactmd,NA
+item_412,tend_le_bras,NA,tend_le_bras,gestures_first,not yet; sometimes; often,armshow,NA
+item_413,tend_la_main,NA,tend_la_main,gestures_first,not yet; sometimes; often,reachout,NA
+item_414,pointe,NA,pointe,gestures_first,not yet; sometimes; often,points,NA
+item_415,envoie_la_main,NA,envoie_la_main,gestures_first,not yet; sometimes; often,waves,NA
+item_416,leve_les_bras,NA,leve_les_bras,gestures_first,not yet; sometimes; often,pickup,NA
+item_417,fait_non_tete,NA,fait_non_tete,gestures_first,not yet; sometimes; often,shakhead,NA
+item_418,fait_oui_tete,NA,fait_oui_tete,gestures_first,not yet; sometimes; often,nodhead,NA
+item_419,fait_geste_chut,NA,fait_geste_chut,gestures_first,not yet; sometimes; often,showhush,NA
+item_420,ouvre_la_main,NA,ouvre_la_main,gestures_first,not yet; sometimes; often,request,NA
+item_421,envoie_des_baisers,NA,envoie_des_baisers,gestures_first,not yet; sometimes; often,blowkiss,NA
+item_422,claque_les_levres,NA,claque_les_levres,gestures_first,not yet; sometimes; often,smacklip,NA
+item_423,hausse_les_epaules,NA,hausse_les_epaules,gestures_first,not yet; sometimes; often,shrugs,NA
+item_424,imiter,NA,imiter,starting_to_talk,never; sometimes; often,imitate,NA
+item_425,nommer,NA,nommer,starting_to_talk,never; sometimes; often,label,NA
+item_426,jouer_a_coucou,NA,jouer_a_coucou,gestures_games,yes; no,play_coucou,NA
+item_427,jouer_a_tape_tape,NA,jouer_a_tape_tape,gestures_games,yes; no,play_tape_tape,NA
+item_428,jouer_a_ainsi_font,NA,jouer_a_ainsi_font,gestures_games,yes; no,play_ainsi_font,NA
+item_429,jouer_a_attraper,NA,jouer_a_attraper,gestures_games,yes; no,play_attraper,NA
+item_430,chanter,NA,faire_chanter,gestures_games,yes; no,dosing,NA
+item_431,danser,NA,faire_danser,gestures_games,yes; no,dodance,NA
+item_432,manger_avec_cuillere,NA,manger_avec_cuillere,gestures_objects,yes; no,eatspoon,NA
+item_433,boire_dans_une_tasse,NA,boire_dans_une_tasse,gestures_objects,yes; no,drinkcup,NA
+item_434,se_brosser_les_cheveux,NA,se_brosser_les_cheveux,gestures_objects,yes; no,combhair,NA
+item_435,se_brosser_les_dents,NA,se_brosser_les_dents,gestures_objects,yes; no,bshteeth,NA
+item_436,sessuyer_le_visage,NA,sessuyer_le_visage,gestures_objects,yes; no,wipeface,NA
+item_437,se_mettre_un_chapeau,NA,se_mettre_un_chapeau,gestures_objects,yes; no,puthat,NA
+item_438,se_mettre_un_bas,NA,se_mettre_un_bas,gestures_objects,yes; no,putshoe,NA
+item_439,se_mettre_un_collier,NA,se_mettre_un_collier,gestures_objects,yes; no,putwatch,NA
+item_440,mettre_tete_sur_mains,NA,mettre_tete_sur_mains,gestures_objects,yes; no,ptdsleep,NA
+item_441,souffler_chaud,NA,souffler_chaud,gestures_objects,yes; no,blowhot,NA
+item_442,faire_voler_avion,NA,faire_voler_avion,gestures_objects,yes; no,flyplane,NA
+item_443,telephone_sur_oreille,NA,telephone_sur_oreille,gestures_objects,yes; no,ptndtele,NA
+item_444,sentir_des_fleurs,NA,sentir_des_fleurs,gestures_objects,yes; no,snifflow,NA
+item_445,pousser_voiture,NA,pousser_voiture,gestures_objects,yes; no,pushcar,NA
+item_446,lancer_une_balle,NA,lancer_une_balle,gestures_objects,yes; no,throwges,NA
+item_447,transverser_liquide,NA,transverser_liquide,gestures_objects,yes; no,ptndpour,NA
+item_448,brasser_cuillere,NA,brasser_cuillere,gestures_objects,yes; no,ptndstir,NA
+item_449,le_mettre_au_lit,NA,le_mettre_au_lit,gestures_parent,yes; no,putobed,NA
+item_450,le_mettre_couverture,NA,le_mettre_couverture,gestures_parent,yes; no,putblnkt,NA
+item_451,le_nourrir_biberon,NA,le_nourrir_biberon,gestures_parent,yes; no,feedbotl,NA
+item_452,le_nourrir_cuillere,NA,le_nourrir_cuillere,gestures_parent,yes; no,feedspon,NA
+item_453,brosser_ses_cheveux,NA,brosser_ses_cheveux,gestures_parent,yes; no,brushit,NA
+item_454,lui_faire_un_rot,NA,lui_faire_un_rot,gestures_parent,yes; no,burbit,NA
+item_455,le_promener_carrosse,NA,le_promener_carrosse,gestures_parent,yes; no,pushit,NA
+item_456,le_bercer,NA,le_bercer,gestures_parent,yes; no,rockit,NA
+item_457,lembrasser,NA,lembrasser,gestures_parent,yes; no,kissit,NA
+item_458,lui_mettre_un_bas,NA,lui_mettre_un_bas,gestures_parent,yes; no,dressit,NA
+item_459,lui_essuyer_visage,NA,lui_essuyer_visage,gestures_parent,yes; no,wipeit,NA
+item_460,lui_parler,NA,lui_parler,gestures_parent,yes; no,talkit,NA
+item_461,lui_mettre_une_couche,NA,lui_mettre_une_couche,gestures_parent,yes; no,diaperit,NA
+item_462,passer_balai,NA,passer_balai,gestures_adult,yes; no,ptndsweep,NA
+item_463,mettre_une_cle,NA,mettre_une_cle,gestures_adult,yes; no,putkey,NA
+item_464,frapper_marteau,NA,frapper_marteau,gestures_adult,yes; no,pound,NA
+item_465,utiliser_une_scie,NA,utiliser_une_scie,gestures_adult,yes; no,usesaw,NA
+item_466,frapper_clavier,NA,frapper_clavier,gestures_adult,yes; no,type,NA
+item_467,lire,NA,faire_lire,gestures_adult,yes; no,ptndread,NA
+item_468,passer_laspirateur,NA,passer_laspirateur,gestures_adult,yes; no,dovacuum,NA
+item_469,arroser_les_plantes,NA,arroser_les_plantes,gestures_adult,yes; no,waterplt,NA
+item_470,jouer_musique,NA,jouer_musique,gestures_adult,yes; no,playmus,NA
+item_471,conduire,NA,conduire,gestures_adult,yes; no,ptnddriv,NA
+item_472,laver_vaisselle,NA,laver_vaisselle,gestures_adult,yes; no,washdish,NA
+item_473,epousseter_linge,NA,epousseter_linge,gestures_adult,yes; no,usecloth,NA
+item_474,ecrire_crayon,NA,ecrire_crayon,gestures_adult,yes; no,usepen,NA
+item_475,creuser_pelle,NA,creuser_pelle,gestures_adult,yes; no,dig,NA
+item_476,mettre_lunettes,NA,mettre_lunettes,gestures_adult,yes; no,wearglas,NA
+item_477,substitutions,NA,substitutions,gestures_symbolic,yes; no,,NA
+item_478,arrete_ca,NA,arrete_ca,phrases,understands,stopit,NA
+item_479,cest_bien,NA,cest_bien,phrases,understands,goodgb,NA
+item_480,cest_lheure_dodo,NA,cest_lheure_dodo,phrases,understands,gonight,NA
+item_481,fais_attention,NA,fais_attention,phrases,understands,becarefl,NA
+item_482,ne_fais_pas_ca,NA,ne_fais_pas_ca,phrases,understands,dontdo,NA
+item_483,viens_ici,NA,viens_ici,phrases,understands,comehere,NA
+item_484,assieds_toi,NA,assieds_toi,phrases,understands,sitdown,NA
+item_485,as_tu_faim,NA,as_tu_faim,phrases,understands,arehngry,NA
+item_486,dis_byebye,NA,dis_byebye,phrases,understands,gobyebye,NA
+item_487,donne_moi_bec,NA,donne_moi_bec,phrases,understands,givekiss,NA
+item_488,donne_le_maman,NA,donne_le_maman,phrases,understands,givemom,NA
+item_489,en_veux_tu_encore,NA,en_veux_tu_encore,phrases,understands,wantmore,NA
+item_490,lance_la_balle,NA,lance_la_balle,phrases,understands,throwbll,NA
+item_491,ne_touche_pas,NA,ne_touche_pas,phrases,understands,dontouch,NA
+item_492,change_la_couche,NA,change_la_couche,phrases,understands,cgdiaper,NA
+item_493,papa_est_arrive,NA,papa_est_arrive,phrases,understands,mdhome,NA
+item_494,regarde,NA,regarde,phrases,understands,lookhere,NA
+item_495,serre_moi_fort,NA,serre_moi_fort,phrases,understands,givehug,NA
+item_496,tape_dans_tes_mains,NA,tape_dans_tes_mains,phrases,understands,claphand,NA
+item_497,va_chercher,NA,va_chercher,phrases,understands,goget,NA
+item_498,ouvre_la_bouche,NA,ouvre_la_bouche,phrases,understands,openmth,NA
+item_499,viens_tu_te_promener,NA,viens_tu_te_promener,phrases,understands,wantride,NA
+item_500,crache_ca,NA,crache_ca,phrases,understands,spitout,NA
+item_501,es_tu_fatigue,NA,es_tu_fatigue,phrases,understands,aretired,NA
+item_502,leve_toi,NA,leve_toi,phrases,understands,getup,NA
+item_503,reste_tranquille,NA,reste_tranquille,phrases,understands,bequiet,NA
+item_504,ne_bouge_pas,NA,ne_bouge_pas,phrases,understands,holdstil,NA

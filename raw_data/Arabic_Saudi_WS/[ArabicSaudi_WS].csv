@@ -1,0 +1,922 @@
+﻿itemID,category,item,definition,choices,type,gloss,uni_lemma
+item_1,sounds,sheep.sound,(صوت الغنمة) باع باع/ ماء ماء/ باء باء,understands; produces,word,"Sheep sound: baa baa, maa maa",baa baa
+item_2,sounds,cat.sound,(صوت القطة) مياو/ ميوميو,understands; produces,word,Cat sound: meow meow,meow
+item_3,sounds,desire.to.eat.sound,(للتعبير عن الرغبة في الأكل) إممم/ هم هم,understands; produces,word,"To express desire to eat: amm, hm hm",
+item_4,sounds,car.sound,(صوت السيارة) بيب بيب/ عن عن/ أن أن,understands; produces,word,"Car sound: beep beep, ann ann",beep beep
+item_5,sounds,crying.sound,(صوت البكاء) واء واء,understands; produces,word,Crying sound: wa wa,
+item_6,sounds,rooster.sound,(صوت الديك) كوكوكو/ أوأوأواو/ كككوو,understands; produces,word,"Rooster sound: ko ko ko, aw aw aw",cockadoodledoo
+item_7,sounds,train.sound,(صوت القطار) تشو تشو/ تووت تووت,understands; produces,word,Train sound: choo choo,choo choo
+item_8,sounds,cow.sound,(صوت البقرة) مووو,understands; produces,word,Cow sound: moo,moo
+item_9,sounds,surprise.sound,(للتعبير عن المفاجأة) واو,understands; produces,word,To express surprise: wow ,wow
+item_10,sounds,pain.sound,(للتعبير عن الألم) أي/أفو/واوا/ دا/ وا/ أح/ اه,understands; produces,word,"Sounds used to express pain: aay, afo, wawa, da, wa, ah",ouch
+item_11,sounds,falling.sound,(للتعبير عن طاح) دو,understands; produces,word,To express something has fallen down: doo,
+item_12,sounds,to.express.bad.smell.sound,(للرائحة الكريهة) أفو/ إف,understands; produces,word,"To express something has a bad smell: aphw, eph",
+item_13,sounds,bird.sound,(صوت العصفور) سَوسَو/ صَوصَو,understands; produces,word,Bird sound: saw saw,
+item_14,sounds,gunshot.sound,(صوت المسدس) طع طع/ طخ طخ,understands; produces,word,"Gunshot sound: ta ta, tak tak",
+item_15,sounds,to.express.disgust.sound,(للتعبير عن عدم الرغبة/ القرف)  يع/ يخ/ إخ/ إع,understands; produces,word,"To express refusal and disgust: ya, yakh, akh, e’e",yuck
+item_16,sounds,hot.sound,(للتعبير عن الحرارة)  أح/ أوف,understands; produces,word,"To describe something hot: ah, of",
+item_17,sounds,yummy.sound,(للتعبير عن لذيذ) يمي يمي,understands; produces,word,To express something is delicious: yummy yummy,yum yum
+item_18,sounds,dog.sound,(صوت الكلب) وو/ هوهو,understands; produces,word,Dog sound: haw haw,woof woof
+item_19,sounds,motorcycle.sound,(صوت الدباب) فوووم فرووم/ بووم بووم,understands; produces,word,"Motorcycle sound: voom voom, boom boom",vroom
+item_20,sounds,boredom.sound,(للتعبير عن الطفش) ووف/ اوف,understands; produces,word,"To express boredom: woof, off",
+item_21,sounds,turkey.sound,(صوت الديك الرومي) كوكادوودليدوو,understands; produces,word,Turkey sound: cockadoodledoo ,
+item_22,sounds,wolf.sound,(صوت الذئب) قرررررر/ أووو,understands; produces,word,"Wolf sound: grrrr, awww",grrr
+item_23,sounds,expressing.agreement,(للتعبير عن الموافقة) آه/ ايوه/ ايه,understands; produces,word,"To express agreement: ah, ewah, eeh = [yes]",
+item_24,sounds,crow.sound,(صوت الغراب) واق واق,understands; produces,word,Crow sound: waq waq ,
+item_25,sounds,monster.sound,(صوت الوحش) عووو/ أوو/ هووو,understands; produces,word,"Monster sound: aww, haw",grrr
+item_26,sounds,duck.sound,(صوت البطة) كواك كواك,understands; produces,word,Duck sound: quack quack,quack quack
+item_27,sounds,fly.sound,(صوت الذبابة) ززززز,understands; produces,word,Fly sound: zzzz,
+item_28,animals,sheep,خروف,understands; produces,word,Sheep  ,sheep
+item_29,animals,pigeon,حمامة,understands; produces,word,Pigeon  ,pigeon
+item_30,animals,animals,حيوانات,understands; produces,word,Animals ,animal
+item_31,animals,cat,قطة (بسة/ هره/ بسبوسه),understands; produces,word,Cat ,cat
+item_32,animals,goat,عنزة (معزة/ غنمة),understands; produces,word,Goat ,goat
+item_33,animals,pony,(الحصان الصغير) سي سي,understands; produces,word,Pony ,pony
+item_34,animals,horse,حصان,understands; produces,word,Horse ,horse
+item_35,animals,fish.animal,سمكة,understands; produces,word,Fish ,fish (animal)
+item_36,animals,tiger,نمر,understands; produces,word,Tiger ,tiger
+item_37,animals,camel,جمل,understands; produces,word,Camel ,camel
+item_38,animals,elephant,فيل,understands; produces,word,Elephant ,elephant
+item_39,animals,turtle,سلحفاة,understands; produces,word,Turtle ,turtle
+item_40,animals,dog,كلب,understands; produces,word,Dog ,dog
+item_41,animals,bear,دب (دبدوب),understands; produces,word,Teddy/ bear ,teddybear
+item_42,animals,frog,ضفدع,understands; produces,word,Frog ,frog
+item_43,animals,chicken.animal,دجاجة,understands; produces,word,Chicken ,chicken
+item_44,animals,giraffe,زرافة,understands; produces,word,Giraffe ,giraffe
+item_45,animals,ant.1,نملة,understands; produces,word,Ant ,ant
+item_46,animals,mouse,فأر,understands; produces,word,Mouse ,mouse
+item_47,animals,rabbit,ارنب (ارنوب),understands; produces,word,Bunny/ rabbit ,bunny
+item_48,animals,butterfly,فراشة,understands; produces,word,Butterfly ,butterfly
+item_49,animals,duck,بطة,understands; produces,word,Duck ,duck
+item_50,animals,monkey,قرد,understands; produces,word,Monkey ,monkey
+item_51,animals,flies,ذبابة (دُبّانة),understands; produces,word,Fly ,fly (animal)
+item_52,animals,sparrow,عصفور/ عصفورة,understands; produces,word,Sparrow ,sparrow
+item_53,animals,cockroach,صرصور/ صرصار,understands; produces,word,Cockroach,cockroach
+item_54,animals,mosquito,بعوضة (ناموسة),understands; produces,word,Mosquito ,mosquito
+item_55,animals,owl,بومة,understands; produces,word,Owl ,owl
+item_56,animals,penguin,بطريق,understands; produces,word,Penguin ,penguin
+item_57,animals,dinosaur,دايناصور,understands; produces,word,Dinosaur ,dinosaur
+item_58,animals,squirrel,سنجاب,understands; produces,word,squirrel,squirrel
+item_59,animals,bee,نحلة,understands; produces,word,Bee  ,bee
+item_60,animals,crocodile,تمساح,understands; produces,word,Crocodile ,crocodile
+item_61,animals,deer,غزال,understands; produces,word,Deer,deer
+item_62,animals,donkey,حمار,understands; produces,word,Donkey  ,donkey
+item_63,animals,goose,وزة,understands; produces,word,Goose ,goose
+item_64,animals,rooster,ديك,understands; produces,word,Rooster ,rooster
+item_65,animals,cow,بقرة,understands; produces,word,Cow  ,cow
+item_66,animals,wolf,ذئب,understands; produces,word,Wolf  ,wolf
+item_67,animals,animal,حيوان,understands; produces,word,Animal ,animal
+item_68,animals,worm,دودة,understands; produces,word,Worm  ,worm
+item_69,animals,bull,ثور,understands; produces,word,Bull ,bull
+item_70,animals,hegoat,تيس,understands; produces,word,he-goat,goat
+item_71,animals,pig,خنزير,understands; produces,word,Pig  ,pig
+item_72,animals,ant.2,نملة,understands; produces,word,Ant  ,ant
+item_73,animals,chick,صوص,understands; produces,word,Chick,chick
+item_74,animals,carriage,حنطور,understands; produces,word,Carriage,
+item_75,animals,spider,عنكبوت,understands; produces,word,Spider   ,spider
+item_76,animals,turkey,ديك رومي,understands; produces,word,Turkey ,turkey
+item_77,animals,gecko,وزغة,understands; produces,word,Gecko ,lizard
+item_78,animals,lion,أسد,understands; produces,word,Lion ,lion
+item_79,animals,lizard,ضب,understands; produces,word,Lizard ,lizard
+item_80,animals,puppy,جرو,understands; produces,word,Puppy  ,puppy
+item_81,animals,crow,غراب,understands; produces,word,Crow ,crow
+item_82,animals,bird,طائر/ طير,understands; produces,word,Bird  ,bird
+item_83,animals,leopard,فهد,understands; produces,word,Leopard ,leopard
+item_84,toys,ball,كرة (كورة),understands; produces,word,Ball ,ball
+item_85,toys,walker,مشاية,understands; produces,word,Walker ,walker
+item_86,toys,pen,قلم,understands; produces,word,Pen ,pen
+item_87,toys,colored.paper,ورق ملون,understands; produces,word,Colored paper ,paper
+item_88,toys,scissors,مقص,understands; produces,word,Scissors ,scissors
+item_89,toys,book,كتاب,understands; produces,word,Book ,book
+item_90,toys,glue,صمغ/ غراء (غرا),understands; produces,word,Glue ,glue
+item_91,toys,cartoon.character,شخصيات كرتونية (يرجى التحديد),understands; produces,word,Cartoon characters (please specify) ,
+item_92,toys,playdough,صلصال (عجينة),understands; produces,word,Playdough ,play dough
+item_93,toys,balloon,بالونة / نفيخة,understands; produces,word,Balloon,balloon
+item_94,toys,bubbles,فقاعات الصابون,understands; produces,word,Bubbles ,bubbles
+item_95,toys,racket,مضرب,understands; produces,word,Racket,racket
+item_96,toys,blocks,مكعبات,understands; produces,word,Blocks  ,blocks
+item_97,toys,toy,لعبة,understands; produces,word,Toy ,toy (object)
+item_98,toys,chalks,طباشير,understands; produces,word,Chalks ,chalk
+item_99,toys,colors,الوان (تلاوين),understands; produces,word,Colors ,colors
+item_100,toys,doll,عروسة,understands; produces,word,Doll ,doll
+item_101,toys,pencil,قلم رصاص,understands; produces,word,Pencil ,pencil
+item_102,toys,gift,هدية,understands; produces,word,Gift ,present
+item_103,toys,story,حكاية/ قصة,understands; produces,word,Story ,story
+item_104,toys,scooter.1,سكوتر,understands; produces,word,Scooter ,scooter
+item_105,toys,playstation,بلاي ستيشن,understands; produces,word,Playstation ,
+item_106,toys,playdough.molds,قالب,understands; produces,word,playdough molds?,
+item_107,toys,pacifier.1,مصاصة,understands; produces,word,Pacifier ,pacifier
+item_108,toys,toys,ألعاب,understands; produces,word,Toys ,toy (object)
+item_109,toys,toy.box,صندوق ألعاب,understands; produces,word,Toy box ,
+item_110,toys,game.boy,جيم بوي,understands; produces,word,Game boy ,
+item_111,toys,rattle,خشخيشة,understands; produces,word,Rattle ,
+item_112,toys,eraser,مساحة,understands; produces,word,Eraser ,eraser
+item_113,toys,circle,دائرة,understands; produces,word,Circle ,circle
+item_114,vehicles,car,سيارة,understands; produces,word,Car ,car
+item_115,vehicles,pickup.truck,وانيت/ ونيت,understands; produces,word,Pickup truck,truck
+item_116,vehicles,police.car,سيارة بوليس,understands; produces,word,Police car ,police car
+item_117,vehicles,airplane,طائرة (طيارة),understands; produces,word,Airplane ,airplane
+item_118,vehicles,ship,سفينة,understands; produces,word,Ship ,ship
+item_119,vehicles,skating.shoes,سكيت,understands; produces,word,Skating shoes,skates
+item_120,vehicles,truck,شاحنة ( ترلة),understands; produces,word,Truck ,truck
+item_121,vehicles,train,قطار,understands; produces,word,Train ,train
+item_122,vehicles,helicopter,هيليوكوبتر,understands; produces,word,Helicopter ,helicopter
+item_123,vehicles,bicycle,دراجة (بسكليتة/ سيكل),understands; produces,word,Bicycle ,bicycle
+item_124,vehicles,motorcycle,دباب (دبابة/ موتور),understands; produces,word,Motorcycle ,motorcycle
+item_125,vehicles,boat,قارب/زورق/ مركب,understands; produces,word,Boat ,boat
+item_126,vehicles,wheel,عجلة,understands; produces,word,Wheel,wheel
+item_127,vehicles,ambulance,إسعاف,understands; produces,word,Ambulance ,ambulance
+item_128,vehicles,firetruck,مطافئ/ إطفاء,understands; produces,word,Fire fighting ,firetruck
+item_129,vehicles,bus,حافلة/ باص/ اتوبيس,understands; produces,word,Bus ,bus
+item_130,vehicles,stroller,عربة أطفال (عربية),understands; produces,word,Stroller ,stroller
+item_131,vehicles,taxi,تاكسي/ تكسي,understands; produces,word,Taxi ,taxi
+item_132,vehicles,scooter.2,السكوتر,understands; produces,word,Scooter,scooter
+item_133,food_drink,dates,تمر,understands; produces,word,Dates ,
+item_134,food_drink,toast,توست,understands; produces,word,Toast (bread),toast
+item_135,food_drink,fish.food,سمك,understands; produces,word,Fish ,fish (food)
+item_136,food_drink,biscuit,بسكويت/ بسكوت,understands; produces,word,Biscuits,biscuit
+item_137,food_drink,pickles,مخلل (طرشي),understands; produces,word,Pickles ,pickle
+item_138,food_drink,milk,حليب,understands; produces,word,Milk ,milk
+item_139,food_drink,candy,حلاوة,understands; produces,word,Candy ,candy
+item_140,food_drink,salad,سلطة,understands; produces,word,Salad ,salad
+item_141,food_drink,gello,جيلي,understands; produces,word,Gello ,jelly
+item_142,food_drink,lollipop,حلاوة مصاصة,understands; produces,word,Lollipop ,lollipop
+item_143,food_drink,tomatoes,طماطم,understands; produces,word,Tomatoes ,tomato
+item_144,food_drink,soup,شوربة,understands; produces,word,Soup ,soup
+item_145,food_drink,chocolate,شوكولاتة,understands; produces,word,Chocolate ,chocolate
+item_146,food_drink,cheese,جبن (جبنة),understands; produces,word,Cheese ,cheese
+item_147,food_drink,pistachio,فستق,understands; produces,word,Pistachio,nut
+item_148,food_drink,food,أكل,understands; produces,word,Food ,food
+item_149,food_drink,cucumber,خيار,understands; produces,word,Cucumber ,cucumber
+item_150,food_drink,almonds,لوز,understands; produces,word,almonds,nut
+item_151,food_drink,rice,أرز (رز),understands; produces,word,Rice ,rice
+item_152,food_drink,carrot,جزر/ جزرة,understands; produces,word,Carrot ,carrot
+item_153,food_drink,seeds,فصفص,understands; produces,word,Seeds,
+item_154,food_drink,sandwich,ساندويتش/ سندويتش,understands; produces,word,Sandwich ,sandwich
+item_155,food_drink,cream.caramel,كريم كراميل/ كريمة,understands; produces,word,Cream caramel/ flan ,
+item_156,food_drink,buttermilk,لبن رائب (شرب),understands; produces,word,Buttermilk ,
+item_157,food_drink,sugar,سكر,understands; produces,word,Sugar ,sugar
+item_158,food_drink,jam,مربى,understands; produces,word,Jam ,jam
+item_159,food_drink,falafel,طعمية,understands; produces,word,Falafel ,
+item_160,food_drink,salt,ملح,understands; produces,word,Salt ,salt
+item_161,food_drink,popcorn,فشار,understands; produces,word,Popcorn ,popcorn
+item_162,food_drink,raisins,زبيب,understands; produces,word,Raisins ,raisin
+item_163,food_drink,pepper,فلفل,understands; produces,word,Pepper ,pepper
+item_164,food_drink,candies,حلويات,understands; produces,word,Candies ,candy
+item_165,food_drink,maamoul,معمول,understands; produces,word,Ma'amoul,
+item_166,food_drink,apple,تفاح/ تفاحة,understands; produces,word,Apple ,apple
+item_167,food_drink,rusk,شابورة,understands; produces,word,Rusk  ,
+item_168,food_drink,pasta,مكرونة,understands; produces,word,Pasta ,pasta
+item_169,food_drink,medicine,دواء (دوا),understands; produces,word,Medicine ,medicine
+item_170,food_drink,hamburger,هامبورجر,understands; produces,word,Hamburger ,hamburger
+item_171,food_drink,strawberry,فراولة,understands; produces,word,Strawberry,strawberry
+item_172,food_drink,banana,موز/ موزة,understands; produces,word,Banana ,banana
+item_173,food_drink,potato,بطاطس,understands; produces,word,Potato,potato
+item_174,food_drink,tuna,تونة,understands; produces,word,Tuna ,tuna
+item_175,food_drink,grapes,عنب,understands; produces,word,Grapes ,grapes
+item_176,food_drink,chips,تشيبس/ تشيبسي,understands; produces,word,Chips ,chips
+item_177,food_drink,ketchup,كاتشب,understands; produces,word,Ketchup  ,ketchup
+item_178,food_drink,watermelon,حبحب/ بطيخ,understands; produces,word,Watermelon ,watermelon
+item_179,food_drink,butter,زبدة,understands; produces,word,Butter ,butter
+item_180,food_drink,juice,عصير,understands; produces,word,Juice ,juice
+item_181,food_drink,orange.food,برتقال/ برتقالة,understands; produces,word,Orange ,orange
+item_182,food_drink,honey,عسل,understands; produces,word,Honey ,honey
+item_183,food_drink,water,ماء (مويا/ بو/ امبو),understands; produces,word,Water ,water (beverage)
+item_184,food_drink,ice,ثلج,understands; produces,word,Ice ,ice
+item_185,food_drink,oil,زيت,understands; produces,word,Oil ,oil
+item_186,food_drink,tea,شاي (شاهي),understands; produces,word,Tea ,tea
+item_187,food_drink,pears,كمثرى,understands; produces,word,Pears ,pear
+item_188,food_drink,almond.butter,زبدة لوز,understands; produces,word,Almond butter ,
+item_189,food_drink,coffee,قهوة,understands; produces,word,Coffee ,coffee
+item_190,food_drink,pizza,بيتزا,understands; produces,word,Pizza ,pizza
+item_191,food_drink,lettuce,خس,understands; produces,word,Lettuce ,lettuce
+item_192,food_drink,pancake,بان كيك,understands; produces,word,Pancake ,pancake
+item_193,food_drink,cornflakes,رقائق (كورن فليكس),understands; produces,word,Cornflakes,cereal
+item_194,food_drink,samosa,سمبوسك/ سمبوسة,understands; produces,word,Samosa ,samosa
+item_195,food_drink,tangerine,يوسفي/ يوسف افندي,understands; produces,word,Tangerine ,tangerine
+item_196,food_drink,eggs,بيض,understands; produces,word,Eggs ,egg
+item_197,food_drink,chicken.food,دجاج/ توتو,understands; produces,word,Chicken ,chicken
+item_198,food_drink,pepsi,بيبسي,understands; produces,word,Pepsi ,coke
+item_199,food_drink,cake,كيك,understands; produces,word,Cake ,cake
+item_200,food_drink,meat,لحم,understands; produces,word,Meat ,meat
+item_201,food_drink,feeding.bottle,رضاعة,understands; produces,word,Feeding bottle ,bottle
+item_202,food_drink,ice.cream,ايس كريم,understands; produces,word,Ice-cream ,ice cream
+item_203,food_drink,corn,ذرة,understands; produces,word,Corn ,corn
+item_204,food_drink,zucchini,كوسة,understands; produces,word,Zucchini ,zucchini
+item_205,food_drink,bread,عيش/ خبز,understands; produces,word,Bread ,bread
+item_206,food_drink,doughnut,دونات,understands; produces,word,Doughnut,donut
+item_207,food_drink,lemon,ليمون,understands; produces,word,Lemon ,lemon
+item_208,food_drink,gum,لبانة,understands; produces,word,Gum ,gum
+item_209,food_drink,beans,فاصوليا,understands; produces,word,Beans ,beans
+item_210,food_drink,cherry,كرز,understands; produces,word,Cherry ,cherry
+item_211,food_drink,yogurt,لبن/ زبادي,understands; produces,word,Yogurt ,yogurt
+item_212,food_drink,vitamin,فيتامين,understands; produces,word,Vitamin,vitamin
+item_213,food_drink,margoog,مرقوق,understands; produces,word,Margoog (traditional dish) ,
+item_214,food_drink,fries,بطاطس مقلية/ بطاطس,understands; produces,word,Fries ,fries
+item_215,food_drink,fruit,فاكهة,understands; produces,word,Fruit,fruit
+item_216,food_drink,sauce,صلصة,understands; produces,word,Sauce ,sauce
+item_217,food_drink,mulukhiyah,ملوخية,understands; produces,word,Mulukhiyah,
+item_218,food_drink,peas,بازاليا/ بازيلاء,understands; produces,word,Peas,peas
+item_219,food_drink,hot.dog.buns,صامولي,understands; produces,word,Hot dog buns  ,
+item_220,food_drink,heavy.cream,قشطة,understands; produces,word,Heavy cream ,
+item_221,food_drink,lahooh,لحوح,understands; produces,word,Lahooh (traditional dish),
+item_222,food_drink,cerelac,سيريلاك,understands; produces,word,Cerelac ,cereal
+item_223,clothing,thoub,ثوب,understands; produces,word,Thoub (Saudi dress for men),
+item_224,clothing,skirt,تنورة,understands; produces,word,Skirt,skirt
+item_225,clothing,cap,قبعة,understands; produces,word,Cap,cap
+item_226,clothing,dress,فستان,understands; produces,word,Dress,dress (object)
+item_227,clothing,head.scarf,طرحة,understands; produces,word,Head scarf,
+item_228,clothing,coat.1,جاكيت,understands; produces,word,Coat,coat
+item_229,clothing,shirt.1,بلوزة,understands; produces,word,Shirt ,shirt
+item_230,clothing,taqiyah,كفية/  طاقية,understands; produces,word,Taqiyah (head cap),
+item_231,clothing,pajamas,بيجامة,understands; produces,word,Pajamas,pajamas
+item_232,clothing,pants,بنطلون,understands; produces,word,Pants ,pants
+item_233,clothing,gutrah,غترة,understands; produces,word,Gutrah (head wear for men usually white in color),
+item_234,clothing,shoes,حذاء (جزمة),understands; produces,word,Shoes ,shoe
+item_235,clothing,apron,مريلة,understands; produces,word,Apron ,apron
+item_236,clothing,shemagh,شماغ,understands; produces,word,Shemagh (head wear for men usually red in color) ,
+item_237,clothing,socks,جورب (شراب),understands; produces,word,Socks ,sock
+item_238,clothing,undershirt,فلينة/فنيلة,understands; produces,word,Undershirt ,undershirt
+item_239,clothing,coat.2,جاكيت/ بالطو,understands; produces,word,Coat ,coat
+item_240,clothing,slipper,شبشب,understands; produces,word,Slipper ,slipper
+item_241,clothing,necklace,سلسلة/عقد,understands; produces,word,Necklace ,necklace
+item_242,clothing,watch.on.wrist,ساعة,understands; produces,word,Clock/ watch?,clock
+item_243,clothing,sandal,صندل,understands; produces,word,Sandal ,sandal
+item_244,clothing,earings,حلق,understands; produces,word,Earings ,earrings
+item_245,clothing,bracelet,اسورة,understands; produces,word,Bracelet ,bracelet
+item_246,clothing,hair.tie,بكلة/ توكة,understands; produces,word,Hair tie,hair tie
+item_247,clothing,ring,خاتم,understands; produces,word,Ring ,ring
+item_248,clothing,glasses,نظارة (نضارة/ عوينات),understands; produces,word,Glasses ,glasses
+item_249,clothing,shirt.2,قميص,understands; produces,word,Shirt ,shirt
+item_250,clothing,belt,حزام,understands; produces,word,Belt ,belt
+item_251,clothing,gloves,قفاز (جونتي),understands; produces,word,Gloves ,gloves
+item_252,clothing,headband,طوق,understands; produces,word,Headband (for women) ,headband
+item_253,clothing,swaddle,كوفلة,understands; produces,word,Swaddle ,
+item_254,clothing,zipper,سحاب (سوستة),understands; produces,word,Zipper ,zipper
+item_255,clothing,ribbon,شريطة,understands; produces,word,Ribbon ,ribbon
+item_256,clothing,baby.bodysuit,بربتوز,understands; produces,word,Baby bodysuits  ,
+item_257,clothing,igal,عقال,understands; produces,word,Igal (black headband) ,headband
+item_258,clothing,shorts,شورت,understands; produces,word,Shorts ,shorts
+item_259,clothing,diapers,حفائض/ حفاظة (حفاضة/ مبامبز),understands; produces,word,Diapers ,diaper
+item_260,clothing,button,زر/زرارر (أزرار),understands; produces,word,button,button
+item_261,clothing,underpants,سروال داخلي (كلسون),understands; produces,word,Underpants,underpants
+item_262,clothing,jeans,جينز,understands; produces,word,Jeans ,jeans
+item_263,clothing,tarboosh,طربوش,understands; produces,word,Tarboosh (head wear for men),hat
+item_264,clothing,long.sirwal,سروال (سروال طويل),understands; produces,word,Long sirwal (white pants worn by men under Thoub),pants
+item_265,clothing,abaya,عباية,understands; produces,word,Abaya,
+item_266,body_parts,eye,عين,understands; produces,word,Eye ,eye
+item_267,body_parts,face,وجه (وش),understands; produces,word,Face ,face
+item_268,body_parts,eyebrow,حاجب/ حواجب,understands; produces,word,Eyebrow ,eyebrow
+item_269,body_parts,mouth,فم,understands; produces,word,Mouth ,mouth
+item_270,body_parts,neck,رقبة,understands; produces,word,Neck ,neck
+item_271,body_parts,knee,ركبة,understands; produces,word,Knee ,knee
+item_272,body_parts,nose,انف (خشم/ خيشوم/ نخرة),understands; produces,word,Nose ,nose
+item_273,body_parts,finger,اصبع/ اصبع  القدم,understands; produces,word,Toe ,toe
+item_274,body_parts,butt,مؤخرة (حسب مايطلق عليها في البيت),understands; produces,word,Butt ,butt
+item_275,body_parts,ear,أذن,understands; produces,word,Ear ,ear
+item_276,body_parts,hand,يد,understands; produces,word,Hand ,hand
+item_277,body_parts,elbow,مرفق (كوع),understands; produces,word,Elbow ,elbow
+item_278,body_parts,hair,شعر,understands; produces,word,Hair ,hair
+item_279,body_parts,leg.1,رجل,understands; produces,word,Leg  ,leg
+item_280,body_parts,teeth,أسنان (سن),understands; produces,word,Teeth ,tooth
+item_281,body_parts,head,رأس,understands; produces,word,Head ,head
+item_282,body_parts,back,ظهر,understands; produces,word,Back ,back
+item_283,body_parts,heel,كعب,understands; produces,word,Heel ,heel
+item_284,body_parts,cheeck,خد,understands; produces,word,Cheek ,cheek
+item_285,body_parts,tongue,لسان,understands; produces,word,Tongue ,tongue
+item_286,body_parts,belly.button,سرة البطن,understands; produces,word,Belly button ,belly button
+item_287,body_parts,chin,ذقن,understands; produces,word,Chin ,chin
+item_288,body_parts,foot,قدم,understands; produces,word,Foot ,foot
+item_289,body_parts,palm,كف,understands; produces,word,Palm ,palm
+item_290,body_parts,shoulder,كتف ,understands; produces,word,Shoulder ,shoulder
+item_291,body_parts,lips,شفاه (شفايف),understands; produces,word,Lips ,lips
+item_292,body_parts,leg.2,ساق,understands; produces,word,Leg ,leg
+item_293,body_parts,thigh,فخذ,understands; produces,word,Thigh ,thigh
+item_294,body_parts,chest,صدر,understands; produces,word,Chest ,
+item_295,body_parts,forehead,جبهة (جبين),understands; produces,word,Forehead ,forehead
+item_296,body_parts,nail,إظفر (ظفر),understands; produces,word,Nail ,nail
+item_297,body_parts,arm,ذراع,understands; produces,word,Arm ,arm
+item_298,body_parts,thumb,إبهام,understands; produces,word,Thumb ,thumb
+item_299,body_parts,underarm,إبط (باط),understands; produces,word,Underarm ,
+item_300,body_parts,eyelashes,رمش/ رموش,understands; produces,word,Eyelashes ,eyelash
+item_301,body_parts,belly,بطن,understands; produces,word,Belly ,tummy
+item_302,household,blanket,بطانية/ لحاف,understands; produces,word,Blanket ,blanket
+item_303,household,fork,شوكة,understands; produces,word,Fork ,fork
+item_304,household,towel,منشفة/ محرمة,understands; produces,word,Towel ,towel
+item_305,household,basket,سلة,understands; produces,word,Basket ,basket
+item_306,household,knife.1,سكينة,understands; produces,word,Knife ,knife
+item_307,household,camera,كاميرة,understands; produces,word,Camera ,camera
+item_308,household,trash.can,سلة قمامة (زبالة/ كدافة),understands; produces,word,Trash can ,trash can
+item_309,household,glass.to.drink,كأس (كأسة/ كباية),understands; produces,word,Glass (to drink),cup
+item_310,household,lamp.light,ضوء/ لمبة (نور),understands; produces,word,Lamp/ light,lamp
+item_311,household,pillow,مخدة (مخدة),understands; produces,word,Pillow ,pillow
+item_312,household,tooth.brush,فرشاة أسنان,understands; produces,word,Tooth brush ,toothbrush
+item_313,household,toothpaste,معجون اسنان,understands; produces,word,Toothpaste ,toothpaste
+item_314,household,magazine,مجلة,understands; produces,word,Magazine ,
+item_315,household,sheet,شرشف,understands; produces,word,Sheet ,sheet
+item_316,household,plant,زرعة,understands; produces,word,Plant ,plant
+item_317,household,hair.brush,فرشاة شعر,understands; produces,word,Hair brush ,brush (object)
+item_318,household,television,تلفزيون,understands; produces,word,Television  ,television
+item_319,household,needle,ابرة,understands; produces,word,Needle ,needle
+item_320,household,comb,مشط,understands; produces,word,Comb ,comb (object)
+item_321,household,video,فيديو,understands; produces,word,Video ,video
+item_322,household,bag,حقيبة/شنطة,understands; produces,word,Bag ,bag
+item_323,household,album,البوم صور,understands; produces,word,Album (photo),album
+item_324,household,tray,صينية (تيبسي),understands; produces,word,Tray ,tray
+item_325,household,iron,مكوى,understands; produces,word,Iron ,iron
+item_326,household,soap,صابون,understands; produces,word,Soap ,soap
+item_327,household,telephone,هاتف/ تلفون,understands; produces,word,Telephone ,telephone
+item_328,household,kettle,غلاية (كفتيرة),understands; produces,word,Kettle ,kettle
+item_329,household,cassette.tape,شريط,understands; produces,word,Cassette tape ,tape (object)
+item_330,household,money,نقود (فلوس/ ريال),understands; produces,word,Money ,money
+item_331,household,rag,فوطة (خرقة/ بشكير),understands; produces,word,Rag,rag
+item_332,household,recorder,مسجل,understands; produces,word,Recorder ,
+item_333,household,photo,صورة,understands; produces,word,Photo ,photo
+item_334,household,matches,كبريت,understands; produces,word,Matches ,matches
+item_335,household,plate,صحن,understands; produces,word,Plate ,plate
+item_336,household,tissue,منديل,understands; produces,word,Tissue  ,tissue
+item_337,household,candle,شمعة,understands; produces,word,Candle ,candle
+item_338,household,mug,كوب,understands; produces,word,Mug ,mug
+item_339,household,paper,ورقة,understands; produces,word,Paper ,paper
+item_340,household,shaver,مكينة حلاقة,understands; produces,word,Shaver ,
+item_341,household,cup,فنجان,understands; produces,word,Cup ,cup
+item_342,household,key,مفتاح,understands; produces,word,Key ,key
+item_343,household,hair.dryer,سشوار/ استشوار,understands; produces,word,Hair dryer ,hair dryer
+item_344,household,pacifier.2,لهاية/ مصاصة/ كدابة,understands; produces,word,Pacifier ,pacifier
+item_345,household,bowl,زبدية/ سلطانية,understands; produces,word,Bowl ,bowl
+item_346,household,remote.control,جهاز التحكم (ريموت),understands; produces,word,Remote control ,remote control
+item_347,household,spoon,ملعقة,understands; produces,word,Spoon ,spoon
+item_348,household,floor.wiper,ممسحة أرض,understands; produces,word,Floor wiper ,
+item_349,household,hammer,مطرقة (شاكوش),understands; produces,word,Hammer ,hammer
+item_350,household,broom,مقشة/ مكنسة,understands; produces,word,Broom,broom
+item_351,household,radio,راديو,understands; produces,word,Radio ,radio
+item_352,household,lantern,فانوس,understands; produces,word,Lantern ,
+item_353,household,decorative.accent,تحفة,understands; produces,word,Decorative accent,
+item_354,household,frying.pan,طاوة/ صاج,understands; produces,word,Frying pan ,pan
+item_355,household,clock,ساعة,understands; produces,word,Watch/ clock ,clock
+item_356,household,carry.bag,كيس,understands; produces,word,Carry bag,bag
+item_357,household,glass.bottle,قارورة/ زجاجة,understands; produces,word,Glass bottle ,bottle
+item_358,household,perfume,عطر (كولونيا),understands; produces,word,Perfume ,perfume
+item_359,household,lantern.lamp,مصباح/ قنديل,understands; produces,word,lantern/ lamp ,lamp
+item_360,household,jug,جك/ مغرف,understands; produces,word,Jug ,jug
+item_361,household,pot,قدر,understands; produces,word,Pot ,pot
+item_362,household,container,علبة,understands; produces,word,Container ,box
+item_363,household,box,صندوق/ كرتون,understands; produces,word,Box ,box
+item_364,household,tape,لصق,understands; produces,word,Tape ,tape
+item_365,household,glass.material,زجاج,understands; produces,word,Glass (material),
+item_366,household,wallet,محفظة,understands; produces,word,Wallet ,wallet
+item_367,household,phone,جوال,understands; produces,word,Phone ,phone
+item_368,household,lipstick,روج,understands; produces,word,Lipstick ,
+item_369,household,lighter,ولاعة,understands; produces,word,Lighter ,lighter
+item_370,household,pail,سطل/ دلو/ برميل (ابالدي),understands; produces,word,Pail ,bucket
+item_371,household,mattress,مرتبة (طراحة/ طوالة),understands; produces,word,Mattress  ,
+item_372,household,CD,قرص مرن ( سي دي),understands; produces,word,CD,CD
+item_373,furniture_rooms,bathroom,حمام,understands; produces,word,Bathroom ,bathroom
+item_374,furniture_rooms,stove,فرن,understands; produces,word,Stove ,stove
+item_375,furniture_rooms,washing.machine,غسالة,understands; produces,word,Washing machine ,washing machine
+item_376,furniture_rooms,bathtub,بانيو,understands; produces,word,Bathtub ,bathtub
+item_377,furniture_rooms,cooker,بوتوجاز,understands; produces,word,Cooker ,stove
+item_378,furniture_rooms,side.table,كومودينو,understands; produces,word,Side table ,table
+item_379,furniture_rooms,sink,مغسلة (حوض),understands; produces,word,Sink ,sink
+item_380,furniture_rooms,fridge,ثلاجة,understands; produces,word,Fridge ,refrigerator
+item_381,furniture_rooms,vacuum.machine,مكنسة كهربائية,understands; produces,word,Vacuum machine ,vacuum
+item_382,furniture_rooms,toilet.seat,كرسي حمام,understands; produces,word,Toilet seat ,
+item_383,furniture_rooms,room,غرفة/ دار,understands; produces,word,Room ,room
+item_384,furniture_rooms,air.conditioner,مكيف,understands; produces,word,Air conditioner ,air conditioner
+item_385,furniture_rooms,bedroom,غرفة نوم,understands; produces,word,Bedroom ,bedroom
+item_386,furniture_rooms,drawer,دُرج,understands; produces,word,Drawer ,drawer
+item_387,furniture_rooms,fan,مروحة,understands; produces,word,Fan ,fan
+item_388,furniture_rooms,bed,سرير,understands; produces,word,Bed ,bed
+item_389,furniture_rooms,shower,دُش,understands; produces,word,Shower ,shower
+item_390,furniture_rooms,mirror,مرآة (مراية),understands; produces,word,Mirror ,mirror
+item_391,furniture_rooms,vanity.table,تسريحة,understands; produces,word,Vanity table ,table
+item_392,furniture_rooms,chair,كرسي,understands; produces,word,Chair ,chair
+item_393,furniture_rooms,computer,كمبيوتر,understands; produces,word,Computer  ,computer
+item_394,furniture_rooms,heater,دفاية,understands; produces,word,Heater ,
+item_395,furniture_rooms,chandeliers,نجفة,understands; produces,word,Chandeliers ,lamp
+item_396,furniture_rooms,rooftop,سطوح/ سطح,understands; produces,word,Rooftop ,roof
+item_397,furniture_rooms,living.room,غرفة معيشة/ مجلس/ جلسة,understands; produces,word,Living room ,living room
+item_398,furniture_rooms,dining.room,غرفة سفرة/ غرفة الأكل,understands; produces,word,Dining room ,dining room
+item_399,furniture_rooms,table,طاولة (طربيزة/ ماصة),understands; produces,word,Table ,table
+item_400,furniture_rooms,closet,خزانة (دولاب/ كبت),understands; produces,word,Closet ,closet
+item_401,furniture_rooms,door,باب,understands; produces,word,Door ,door
+item_402,furniture_rooms,potty,قصرية,understands; produces,word,Potty ,potty
+item_403,furniture_rooms,window,شباك (طاقة),understands; produces,word,Window ,window
+item_404,furniture_rooms,salon,صالون,understands; produces,word,Salon ,
+item_405,furniture_rooms,rocking.chair,كرسي هزاز,understands; produces,word,Rocking chair ,rocking chair
+item_406,furniture_rooms,kitchen,مطبخ,understands; produces,word,Kitchen ,kitchen
+item_407,furniture_rooms,coach,كنبة,understands; produces,word,Couch ,couch
+item_408,furniture_rooms,stairs,درج/ سلالم,understands; produces,word,Stairs ,stairs
+item_409,furniture_rooms,basement,بدروم/ قبو,understands; produces,word,Basement ,basement
+item_410,furniture_rooms,dryer,نشافة,understands; produces,word,Dryer ,dryer
+item_411,furniture_rooms,garage,جراج/ كراج,understands; produces,word,Garage ,garage
+item_412,furniture_rooms,crib,هندول,understands; produces,word,Crib ,crib
+item_413,furniture_rooms,balcony,بلكونة,understands; produces,word,Balcony ,balcony
+item_414,furniture_rooms,knife.2,سكين,understands; produces,word,Knife ,knife
+item_415,furniture_rooms,stretcher,نقالة,understands; produces,word,Stretcher?,
+item_416,furniture_rooms,plastic.sheets,سفرة,understands; produces,word,Plastic sheets (used when serving food),tablecloth
+item_417,furniture_rooms,lamp,أباجورة,understands; produces,word,Lamp ,lamp
+item_418,furniture_rooms,playroom,غرفة الألعاب,understands; produces,word,Playroom ,playroom
+item_419,furniture_rooms,dining.table,طاولة طعام,understands; produces,word,Dining table ,table
+item_420,furniture_rooms,high.chair,كرسي أطفال,understands; produces,word,High chair ,high chair
+item_421,furniture_rooms,drain,بلاعة,understands; produces,word,Drain,
+item_422,furniture_rooms,mat,سجادة,understands; produces,word,Mat ,mat
+item_423,furniture_rooms,library,مكتبة,understands; produces,word,Library ,library
+item_424,furniture_rooms,curtains,ستارة,understands; produces,word,Curtains ,curtain
+item_425,furniture_rooms,roof,سقف,understands; produces,word,Roof  ,ceiling
+item_426,outside,backyard,حوش,understands; produces,word,Backyard ,backyard
+item_427,outside,flower,وردة,understands; produces,word,Flower ,flower
+item_428,outside,grass,حشيش,understands; produces,word,Grass?,grass
+item_429,outside,zoo,حديقة,understands; produces,word,Garden ,zoo
+item_430,outside,tree,شجرة,understands; produces,word,Tree ,tree
+item_431,outside,ladder,سلّم,understands; produces,word,Ladder ,stairs
+item_432,outside,sea,بحر,understands; produces,word,Sea ,sea
+item_433,outside,palm.tree,نخلة,understands; produces,word,Palm tree ,tree
+item_434,outside,sun,شمس,understands; produces,word,Sun ,sun
+item_435,outside,swimming.pool,مسبح,understands; produces,word,Swimming pool ,swimming pool
+item_436,outside,star,نجمة,understands; produces,word,Star ,star
+item_437,outside,swing.noun,مرجيحة,understands; produces,word,Swing (noun),swing
+item_438,outside,rain,مطر,understands; produces,word,Rain  ,rain
+item_439,outside,stick,عصى (عصايا),understands; produces,word,Stick ,stick
+item_440,outside,slide.noun,زحليقة,understands; produces,word,Slide ,slide
+item_441,outside,sky,سماء (سما),understands; produces,word,Sky ,sky
+item_442,outside,stone,حجر/ حصى,understands; produces,word,Stone ,stone
+item_443,outside,mosque,مسجد/ مصلى,understands; produces,word,Mosque ,church
+item_444,outside,house,البيت/ البيت,understands; produces,word,House ,house
+item_445,outside,building,عمارة/ بيت,understands; produces,word,Building ,building
+item_446,outside,nursery,حضانة,understands; produces,word,Nursery ,nursery
+item_447,outside,school,مدرسة,understands; produces,word,School ,school
+item_448,outside,preschool,روضة,understands; produces,word,Preschool ,preschool
+item_449,outside,grocery,بقالة/ دكان,understands; produces,word,Grocery ,grocery
+item_450,outside,tent,خيمة,understands; produces,word,Tent ,
+item_451,outside,roundabout,ميدان (دوار),understands; produces,word,Roundabout ,
+item_452,outside,garden,حديقة حيوانات,understands; produces,word,Zoo ,zoo
+item_453,outside,work.noun,شغل/ عمل,understands; produces,word,Work ,work (place)
+item_454,outside,clouds,سحاب,understands; produces,word,Clouds ,cloud
+item_455,outside,wall,جدار (جدر/ حيطة/ طوفة),understands; produces,word,Wall ,wall
+item_456,outside,sidewalk,رصيف,understands; produces,word,Sidewalk ,sidewalk
+item_457,outside,winds,رياح/ ريح,understands; produces,word,Winds  ,wind
+item_458,outside,sand,رمل/ تراب,understands; produces,word,Sand ,sand
+item_459,outside,moon,قمر,understands; produces,word,Moon ,moon
+item_460,outside,road,شارع/ طريق,understands; produces,word,Road ,road
+item_461,outside,shovel,جاروف (مجرفة),understands; produces,word,Shovel ,shovel
+item_462,outside,flag,علم,understands; produces,word,Flag ,flag
+item_463,outside,hose,خرطوم (لي),understands; produces,word,Hose ,hose
+item_464,outside,clay,طين,understands; produces,word,Clay ,clay
+item_465,outside,traffic.sign,إشارة مرور,understands; produces,word,Traffic sign ,
+item_466,outside,restaurant,مطعم,understands; produces,word,Restaurant ,restaurant
+item_467,outside,castle,قلعة,understands; produces,word,Castle ,castle
+item_468,outside,mountain,جبل,understands; produces,word,Mountain ,mountain
+item_469,outside,theme.park,ملاهي,understands; produces,word,Theme park ,
+item_470,outside,mall,سوق,understands; produces,word,Mall ,mall
+item_471,outside,hotel,فندق,understands; produces,word,Hotel ,
+item_472,people,mama,ماما,understands; produces,word,Mama ,mommy
+item_473,people,woman,ست/ حرمة,understands; produces,word,Woman/ lady,woman
+item_474,people,aunt.maternal,خالة,understands; produces,word,Aunt (maternal aunt),aunt
+item_475,people,papa,بابا,understands; produces,word,Papa ,daddy
+item_476,people,man,رجل (رجال),understands; produces,word,Man ,man
+item_477,people,grandfather,جد (جدو/ سيدي),understands; produces,word,Grandfather ,grandpa
+item_478,people,domestic.worker,خادمة (دادة/ شغالة),understands; produces,word,Domestic worker/ dada ,
+item_479,people,dada,اسم حاضنة الطفل (الدادة),understands; produces,word,The name of the child’s babysitter ,babysitter's name
+item_480,people,grandmother,جدة (سيتي/ حبابة/تيتة/ستو),understands; produces,word,Grandmother ,grandma
+item_481,people,baby,بيبي/ نونو,understands; produces,word,Baby ,baby
+item_482,people,police,شرطة/ بوليس,understands; produces,word,Police ,police
+item_483,people,sister,اخت,understands; produces,word,Sister ,sister
+item_484,people,boy,ولد ,understands; produces,word,Boy ,boy
+item_485,people,people,ناس,understands; produces,word,People ,people
+item_486,people,brother,اخ,understands; produces,word,Brother ,brother
+item_487,people,girl,بنت,understands; produces,word,Girl ,girl
+item_488,people,uncle.paternal,عم,understands; produces,word,Uncle (paternal uncle),uncle
+item_489,people,doctor,طبيب/دكتور,understands; produces,word,Doctor ,doctor
+item_490,people,teacher.female.1,معلمة,understands; produces,word,Teacher (female),teacher
+item_491,people,aunt.paternal,عمّة,understands; produces,word,Aunt (paternal aunt),aunt
+item_492,people,baby.own.name,(اسم الطفل),understands; produces,word,Baby’s own name ,child's own name
+item_493,people,children,أطفال,understands; produces,word,Children ,children
+item_494,people,uncle.maternal,خال,understands; produces,word,Uncle (maternal uncle),uncle
+item_495,people,driver,سائق,understands; produces,word,Driver ,driver
+item_496,people,clown,مهرج,understands; produces,word,Clown ,clown
+item_497,people,firefighters,رجال مطافي,understands; produces,word,Firefighters  ,firefighter
+item_498,people,friend,صديق,understands; produces,word,Friend,friend
+item_499,people,barber,حلاق,understands; produces,word,Barber ,barber
+item_500,people,nurse,ممرضة,understands; produces,word,Nurse ,nurse
+item_501,people,person,شخص,understands; produces,word,Person ,person
+item_502,people,guard,حارس,understands; produces,word,Guard  ,
+item_503,people,teacher.male,استاذ,understands; produces,word,Teacher (male),teacher
+item_504,people,teacher.female.2,ابلة,understands; produces,word,Teacher (female),teacher
+item_505,games_routines,prayer,الصلاة,understands; produces,word,Prayer,
+item_506,games_routines,good.night,تصبح على خير,understands; produces,word,Good night ,good night
+item_507,games_routines,kiss.noun,بوسة,understands; produces,word,Kiss ,kiss
+item_508,games_routines,call.for.prayer,الأذان,understands; produces,word,Call for prayer ,
+item_509,games_routines,do.not.do,لا تفعل/ لاتسوي,understands; produces,word,Do not do ,don't
+item_510,games_routines,lunch,غذاء (غدا),understands; produces,word,Lunch ,lunch
+item_511,games_routines,lets.go,هيا/ ياللا,understands; produces,word,Let’s go ,
+item_512,games_routines,finger.game.1,طير الحمامة,understands; produces,word,A finger game/ lullaby?,
+item_513,games_routines,thank.god,الحمدلله,understands; produces,word,Thank god ,
+item_514,games_routines,we.go.shopping,نروح السوق,understands; produces,word,We go shopping ,
+item_515,games_routines,finger.game.2,صغير و عاقل,understands; produces,word,A finger game,
+item_516,games_routines,dinner,عشاء (عشا),understands; produces,word,Dinner ,dinner
+item_517,games_routines,give.me.five,كفّك,understands; produces,word,Give me five ,give me five
+item_518,games_routines,incy.wincy.spider,العنكبوت النونو,understands; produces,word,Incy wincy spider (finger game),
+item_519,games_routines,clap.noun,صفق (صفقة),understands; produces,word,Clap ,clap
+item_520,games_routines,gonna.get.you,سأمسك بك/ سأمسكك,understands; produces,word,Gonna get you!,gonna get you
+item_521,games_routines,nap,قيلولة (غفوة/ نام),understands; produces,word,Nap ,nap
+item_522,games_routines,hi,أهلا,understands; produces,word, Hi,welcome
+item_523,games_routines,go.potty,اروح الحمام,understands; produces,word,Go potty,go potty
+item_524,games_routines,thank.you,شكرا,understands; produces,word,Thank you ,thank you
+item_525,games_routines,marhaba,مرحبا,understands; produces,word,Marhaba,
+item_526,games_routines,patty.cake,لعبة كيك القوالب/ سكر- مكر (لعبة التصفيق  تبادليا  باليد),understands; produces,word,Patty Cake,pattycake
+item_527,games_routines,welcome,عفوا,understands; produces,word,Welcome  ,welcome
+item_528,games_routines,wait.imperative,انتظر ( استنى),understands; produces,word,Wait ,wait
+item_529,games_routines,time.to.sleep,(ياللا) نوم,understands; produces,word,Time to sleep ,
+item_530,games_routines,turn.around,دور (دوران),understands; produces,word,Turn around ,turn around
+item_531,games_routines,so.big,كبير مرة,understands; produces,word,So big,so big
+item_532,games_routines,in.the.name.of.allah,بسم الله,understands; produces,word,In the name of Allah,
+item_533,games_routines,peekaboo,اتيه/ بيكا بو/ واء,understands; produces,word,Peekaboo,peekaboo
+item_534,games_routines,hello.on.phone,الوه ,understands; produces,word,Hello (on phone),hello
+item_535,games_routines,taking.shower,حمام (ترويش/ استحم),understands; produces,word,Taking a shower ,
+item_536,games_routines,give.me,اديني/ اعطيني/ هات,understands; produces,word,Give me ,give me
+item_537,games_routines,peace.be.upon.him,صلى الله عليه وسلم,understands; produces,word,Peace be upon him (the prophet) ,
+item_538,games_routines,goal,هدف/ جول,understands; produces,word,Scoring a goal ,
+item_539,games_routines,allah.is.the.greatest,الله اكبر,understands; produces,word,Allah is the greatest,
+item_540,games_routines,calm.down,اهدأ,understands; produces,word,Calm down ,
+item_541,games_routines,please,لو سمحت/ ممكن ( الله يخليك),understands; produces,word,Please ,please
+item_542,games_routines,bye.bye,(باي باي/ باي) مع السلامة,understands; produces,word,Bye bye ,bye
+item_543,games_routines,ululation,زغروطة/ زغريطة,understands; produces,word,Ululation ,
+item_544,games_routines,yes,نعم/ حاضر (ايوة/ ايوا),understands; produces,word,Yes,yes
+item_545,games_routines,breakfast,افطار (فطور/ صبوح),understands; produces,word,Breakfast ,breakfast
+item_546,games_routines,hide.and.seek,لعبة غميمة/ ستغماية/ غميضة,understands; produces,word,Hide and seek ,hide and seek
+item_547,games_routines,a.lullaby,(دوها يا دوها),understands; produces,word,A lullaby ,
+item_548,games_routines,call.on.phone.1,يتصل,understands; produces,word,Calling ,call on phone
+item_549,games_routines,no,لا,understands; produces,word,No ,no
+item_550,games_routines,a.game?,العصايا,understands; produces,word,A game?,
+item_551,games_routines,want.1,تبغى,understands; produces,word,want,want
+item_552,games_routines,sneeze.noun,عطسة,understands; produces,word,Sneeze ,sneeze
+item_553,games_routines,tomorrow.1,غدا (بكرة),understands; produces,word,Tomorrow ,tomorrow
+item_554,games_routines,last.night,امس (البارحة),understands; produces,word,Yesterday ,yesterday
+item_555,action_words,sleep,انام/ ينام,understands; produces,word,Sleep ,sleep
+item_556,action_words,give,أعطيني/ هات,understands; produces,word,Give ,give
+item_557,action_words,clean.verb,أنظف/ ينظف,understands; produces,word,Clean ,clean (action)
+item_558,games_routines,want.2,أريد (يبى/ يبغى)/ يريد,understands; produces,word,Want ,want
+item_559,action_words,get.hit,اتخبط/ يتخبط/ ينضرب,understands; produces,word,Get hit ,
+item_560,action_words,wipe,أمسح/ يمسح,understands; produces,word,Wipe ,erase
+item_561,action_words,bite,أعض/ يعض,understands; produces,word,Bite ,bite
+item_562,action_words,buy,اشتري/ يشتري,understands; produces,word,Buy ,buy
+item_563,action_words,throw.1,أرمي/ يرمي,understands; produces,word,Throw ,throw
+item_564,action_words,bring,أجيب/ يجيب,understands; produces,word,Bring ,bring
+item_565,action_words,cut.1,اقص/ يقص,understands; produces,word,Cut ,cut
+item_566,action_words,wakeup,أوقظ/ يوقظ (صحيته),understands; produces,word,Wake up ,wake
+item_567,action_words,kiss.verb,أبوس/  يبوس,understands; produces,word,Kiss ,kiss
+item_568,action_words,run,أجري/ يجري/ يركض,understands; produces,word,Run ,run
+item_569,action_words,jump,اقفز/ يقفز (نط),understands; produces,word,Jump ,jump
+item_570,action_words,like,أعجب/ يعجب,understands; produces,word,Like ,like
+item_571,action_words,clap.verb,اصفق/ يصفق,understands; produces,word,Clap ,clap
+item_572,action_words,wash,أغسل/ يغسل,understands; produces,word,Wash ,wash
+item_573,action_words,play,ألعب/ يلعب,understands; produces,word,Play ,play
+item_574,action_words,go.out,اطلع/ يطلع,understands; produces,word,Go out ,go out
+item_575,action_words,work.verb,أشتغل/ يشتغل,understands; produces,word,Work ,work (action)
+item_576,action_words,pour,يصب,understands; produces,word,Pour ,pour
+item_577,action_words,dry.verb,أنشف/ ينشف/ يجفف,understands; produces,word,Dry ,dry
+item_578,action_words,hug,احضن/ يحضن,understands; produces,word,Hug ,hug
+item_579,action_words,eat,أأكل/ يأكل),understands; produces,word,Eat,eat
+item_580,action_words,measure,أقيس/ يقيس,understands; produces,word,Measure ,measure
+item_581,action_words,sing,اغني/ يغني,understands; produces,word,Sing ,sing
+item_582,action_words,speak,أتكلم/ يتكلم,understands; produces,word,Speak ,speak
+item_583,action_words,hear,اسمع/ يسمع,understands; produces,word,Hear ,hear
+item_584,action_words,sweep,أكنس/ يكنس,understands; produces,word,Sweep ,vacuum
+item_585,action_words,say,اقول/ يقول,understands; produces,word,Say ,say
+item_586,action_words,dance,أرقص/ يرقص,understands; produces,word,Dance ,dance
+item_587,action_words,spill,أسكب (اكب)/ يسكب (يكب),understands; produces,word,Spill ,spill
+item_588,action_words,can,أقدر/ يقدر/ يستطيع,understands; produces,word,Can ,can
+item_589,action_words,come.present,أحضر (أجي)/ يحضر (يجي),understands; produces,word,Come ,come
+item_590,action_words,shake,أرج/ اخض يرج/ يخض,understands; produces,word,Shake ,shake
+item_591,action_words,choose,أختار/ يختار,understands; produces,word,Choose ,choose
+item_592,action_words,share,أشارك ( أتعاون)/ يشارك (يتعاون),understands; produces,word,Share/ Collaborate ,share
+item_593,action_words,spread,أدهن/ يدهن (يزيت),understands; produces,word,Spread ,spread
+item_594,action_words,write,أكتب/ يكتب,understands; produces,word,Write ,write
+item_595,action_words,lick,ألعق (الحس)/ يلعق (يلحس),understands; produces,word,Lick ,lick
+item_596,action_words,slide.verb,أتزحلق/ يتزحلق,understands; produces,word,Slide ,slide
+item_597,action_words,read,أقرأ/ يقرأ,understands; produces,word,Read ,read
+item_598,action_words,draw,ارسم/ يرسم,understands; produces,word,Draw ,draw
+item_599,action_words,push,ادفع (ادف)/ يدق,understands; produces,word,Push ,push
+item_600,action_words,return,أعيد/ يعيد/ يرجج,understands; produces,word,Return ,return
+item_601,action_words,drive,أسوق (يسوق),understands; produces,word,Drive ,drive
+item_602,action_words,cook,اطبخ/ يطبخ,understands; produces,word,Cook ,cook
+item_603,action_words,chase,يجري وراءه,understands; produces,word,Chase/ run after,chase
+item_604,action_words,hide,استخبى/ يستخبي,understands; produces,word,Hide ,hide
+item_605,action_words,cover,اغطي/ يغطي,understands; produces,word,Cover ,cover (action)
+item_606,action_words,hate,أكره/ يكره ( ما يحب),understands; produces,word,Hate ,hate
+item_607,action_words,tickle,أدغدغ/ يدغدغ,understands; produces,word,Tickle ,tickle
+item_608,action_words,splash,اطرطش/ يطرطش,understands; produces,word,Splash ,splash
+item_609,action_words,pretend,(ايس حقيقي)/ يعني يعني/ قلك قلك,understands; produces,word,pretend,pretend
+item_610,action_words,brush,أسوك (أفرش)/ يسوك (يفرش)/ ينظف,understands; produces,word,Brush (teeth),brush (action)
+item_611,action_words,close,اقفل (يقفل)/ يغلق (يصك/ يسكر),understands; produces,word,Close ,close
+item_612,action_words,find,لقيه (وجده)/ يلاقي (يجد),understands; produces,word,Find ,find
+item_613,action_words,taste,أتذوق (ادوق)/ يتذوق (يطعم/ يدوق),understands; produces,word,Taste ,taste
+item_614,action_words,pull,اسحب (أشد)/ يسحب (يشد/ يجر),understands; produces,word,Pull ,pull
+item_615,action_words,knock,أطرق (أدق)/ يطرق (يدق),understands; produces,word,Knock ,knock
+item_616,action_words,curse,أسب (يسب),understands; produces,word,Curse ,
+item_617,action_words,color,ألون/ يلون,understands; produces,word,Color ,color (action)
+item_618,action_words,get.out,أروح/ يروح (يخرج),understands; produces,word,Leave/ go,leave
+item_619,action_words,hit,أضرب (يضرب),understands; produces,word,Hit ,hit
+item_620,action_words,own,امتلك (حقه)/ يمتلك (حقه),understands; produces,word,Own ,
+item_621,action_words,wear,ألبس/ يلبس,understands; produces,word,Wear ,wear
+item_622,action_words,watch.verb,أتفرج (يتفرج),understands; produces,word,Watch ,watch (action)
+item_623,action_words,throw.2,أرمي (يرمي),understands; produces,word,Throw ,throw
+item_624,action_words,think,أفكر/ يفكر,understands; produces,word,Think ,think
+item_625,action_words,peel,أقشر (يقشر),understands; produces,word,Peel ,peel
+item_626,action_words,play.with,أداعب(الاعب)/ يداعب (يلاعب),understands; produces,word,Play with,play
+item_627,action_words,make,أصنع/ يصنع (يسوي),understands; produces,word,Make  ,make
+item_628,action_words,fly,أطير (يطير),understands; produces,word,Fly ,fly (action)
+item_629,action_words,take,آخذ/ يأخذ (ياخد)/ خذ,understands; produces,word,Take ,take
+item_630,action_words,pray,أصلي/ يصلي,understands; produces,word,Pray ,
+item_631,action_words,sneeze,اعطس (يعطس),understands; produces,word,Sneeze ,sneeze
+item_632,action_words,go.down.1,انزل/ ينزل,understands; produces,word,Go down ,go down
+item_633,action_words,leave.1,أفلح/ يفلح,understands; produces,word,Leave/ go out,leave
+item_634,action_words,look.1,أطل (يطل),understands; produces,word,Look ,look
+item_635,action_words,enter,ادخل/ يدخل,understands; produces,word,Enter ,enter
+item_636,action_words,call,أنادي/ ينادي,understands; produces,word,Call ,call
+item_637,action_words,call.on.phone.2,اتصل (يتصل),understands; produces,word,Call (on phone),call
+item_638,action_words,get.hurt,أنجرح (اتعور)/ ينجرح (يتعور),understands; produces,word,Get hurt (injury),
+item_639,action_words,swim,أسبح/ يسبح,understands; produces,word,Swim ,swim
+item_640,action_words,thirsty.1,عشان,understands; produces,word,Because/ for,
+item_641,action_words,help,اساعد/ يساعد,understands; produces,word,Help ,help
+item_642,action_words,fall.down.1,اطيح/ يطيح,understands; produces,word,Fall down ,fall down
+item_643,action_words,fall.or.scatter,يتساقط/ يتناثر,understands; produces,word,fall/ scatter ,fall
+item_644,action_words,scratch,أحك/ يحك,understands; produces,word,Scratch ,scratch
+item_645,action_words,love,أحب/ يحب,understands; produces,word,Love ,like
+item_646,action_words,walk.present,أمشي/ يمشي,understands; produces,word,Walk ,walk
+item_647,action_words,be.alert,انتبه/ ينتبه,understands; produces,word,Be alert/ take caution ,
+item_648,action_words,get,احصل على/ يحصل على,understands; produces,word,Get ,get
+item_649,action_words,crash.by,اصقع/ يصقع,understands; produces,word,Crash by/ hit something by accident ,hit
+item_650,action_words,feed,أكل/ يأكل (ياكل),understands; produces,word,Eat ,eat
+item_651,action_words,open,افتح/ يفتح/ يفك,understands; produces,word,Open ,open
+item_652,action_words,know,أعرف/ بعرف,understands; produces,word,Know ,know
+item_653,action_words,study,أذاكر/ يذاكر,understands; produces,word,Study ,study
+item_654,action_words,stop.present,أوقف/ وقف,understands; produces,word,Stop ,stop
+item_655,action_words,spray,أرش موية/ يرش موية,understands; produces,word,Spray,spray
+item_656,action_words,press,أكبس/ يكبس,understands; produces,word,Press ,press
+item_657,action_words,show,أوري/ يوري/ وريني وريني,understands; produces,word,Show ,show
+item_658,action_words,say.hi,أسلم/ يسلم,understands; produces,word,Say hi ,greet
+item_659,action_words,laugh,أضحك/ يضحك,understands; produces,word,Laugh ,laugh
+item_660,action_words,wait.present,انتظر (استنى)/ ينتظر (يستنى),understands; produces,word,Wait ,wait
+item_661,action_words,be,أكون/ يكون,understands; produces,word,Be ,be
+item_662,action_words,put.to.sleep,أنوم/ ينوم,understands; produces,word,Put to sleep,
+item_663,action_words,say.aaaa,أقول آآآ/ يقول آآآ,understands; produces,word,Say a a a a a,
+item_664,action_words,break.present,أكسر/  يكسر,understands; produces,word,Break ,break
+item_665,action_words,cut.2,أقطع/ يقطع,understands; produces,word,Cut ,cut
+item_666,action_words,hit.something,اصدم/ يصدم ب/ يصدم,understands; produces,word,Hit something (by accident),hit
+item_667,action_words,leave.2,اخرج/ يخرج,understands; produces,word,Get out ,get out
+item_668,action_words,smile,ابتسم/ يبتسم,understands; produces,word,Smile ,smile
+item_669,action_words,go.up,أطلع/ يطلع,understands; produces,word,Go upstairs ,
+item_670,action_words,build,اركِب/ يُركِب,understands; produces,word,Build ,build
+item_671,action_words,swing.causative.verb,أمرجح/ يمرجح,understands; produces,word,Swing (causative) ,swing (action)
+item_672,action_words,go.down.2,أنزل/ ينزل,understands; produces,word,Go down ,go down
+item_673,action_words,give.or.bring,هات/ اديني,understands; produces,word,Give me ,give me
+item_674,action_words,put,أضع (أحط)/ يضع (يحط),understands; produces,word,Put ,put
+item_675,action_words,sit.down,أجلس/ يجلس/ يقعد,understands; produces,word,Sit down ,sit
+item_676,action_words,hold,امسك/ يمسك,understands; produces,word,Hold/ catch,hold
+item_677,action_words,kick,أشوت/ يشوت,understands; produces,word,Kick ,kick
+item_678,action_words,ride,أركب/ يركب,understands; produces,word,Ride,get on
+item_679,action_words,break.past,اُكسِر/ يُكسِر,understands; produces,word,Break ,break
+item_680,action_words,cancel,أافركش/ يفركش,understands; produces,word,Cancel ,
+item_681,action_words,finish,أخلص/ يخلص/ ينتهي,understands; produces,word,Finish ,finish
+item_682,action_words,cry,أبكي/ يبكي,understands; produces,word,Cry ,cry
+item_683,action_words,fall.down.2,أسقط (أطيح)/ يسقط (بطيح),understands; produces,word,Fall down ,fall down
+item_684,action_words,drink,أشرب/ يشرب,understands; produces,word,Drink ,drink
+item_685,action_words,smell,أشم/ يشم,understands; produces,word,Smell ,smell
+item_686,action_words,blow,أتفخ/ ينفخ,understands; produces,word,Blow ,blow
+item_687,action_words,fix,أصلح/ يصلح,understands; produces,word,Fix ,fix
+item_688,action_words,stop.past,أوقف/ يوقف,understands; produces,word,Stop ,stop
+item_689,action_words,walk.past,أمشي/ يمشي,understands; produces,word,Walk ,walk
+item_690,action_words,look.2,انظر (اشوف)/  ينظر (يشوف),understands; produces,word,look / see ,look
+item_691,action_words,hurry,أسرع/ يسرع/ بسرعة,understands; produces,word,Hurry ,hurry
+item_692,action_words,throw.3,أبني/ يبني,understands; produces,word,Build ,build
+item_693,action_words,swing,أتمرجح/ يتمرجح (يتمردح),understands; produces,word,Swing ,swing
+item_694,action_words,stop.enough,يتوقف/ كفاية/ خلاص / وقف (بس),understands; produces,word,Stop / enough / that is it,stop
+item_695,action_words,carry,أحمل/ أرفع (أشيل)/ يحمل/ يرفع (يشيل),understands; produces,word,Carry ,hold
+item_696,action_words,cough.verb,أكح/ يكح,understands; produces,word,Cough,cough
+item_697,action_words,blow.nose,أمخط/ يمخط,understands; produces,word,Blow nose ,
+item_698,action_words,spit,أبصق (أتفل)/ يبصق (يتفل),understands; produces,word,Spit ,spit
+item_699,action_words,i.have,لدي (عندي),understands; produces,word,I have ,have
+item_700,action_words,come.imperative,تعال,understands; produces,word,Come (imperative),come
+item_701,descriptive_words,nice,حلو/ زين,understands; produces,word,Nice ,nice
+item_702,descriptive_words,wet,مبلول/ مبلل,understands; produces,word,Wet ,wet
+item_703,descriptive_words,yellow,اصفر,understands; produces,word,Yellow ,yellow
+item_704,descriptive_words,asleep,نايم,understands; produces,word,Asleep ,asleep
+item_705,descriptive_words,dry.adj,ناشف/ جاف,understands; produces,word,Dry ,dry
+item_706,descriptive_words,orange.color,برتقالي,understands; produces,word,Orange ,orange
+item_707,descriptive_words,having.good.taste,ذوق,understands; produces,word,Having good taste,tasty
+item_708,descriptive_words,heavy,ثقيل,understands; produces,word,Heavy ,heavy
+item_709,descriptive_words,blue,ازرق,understands; produces,word,Blue ,blue
+item_710,descriptive_words,big,كبير,understands; produces,word,Big ,big
+item_711,descriptive_words,light,خفيف,understands; produces,word,Light ,light
+item_712,descriptive_words,pink,زهري/ بمبي,understands; produces,word,Pink ,pink
+item_713,descriptive_words,fast,سريع,understands; produces,word,Fast ,fast
+item_714,descriptive_words,long,طويل,understands; produces,word,Tall ,tall
+item_715,descriptive_words,thin,نحيف,understands; produces,word,Thin ,thin
+item_716,descriptive_words,slow,بطئ,understands; produces,word,Slow ,slow
+item_717,descriptive_words,short,قصير,understands; produces,word,Short ,short
+item_718,descriptive_words,little,قليل/شوية,understands; produces,word,Little ,little
+item_719,descriptive_words,empty,فاضي/ فارغ,understands; produces,word,Empty ,empty
+item_720,descriptive_words,alert,منتبه/حذر/ انتبه,understands; produces,word,Alert ,alert
+item_721,descriptive_words,thirsty.2,عطشان/ ظميان,understands; produces,word,Thirsty ,thirsty
+item_722,descriptive_words,first,اول,understands; produces,word,First ,first
+item_723,descriptive_words,final.last,أخير,understands; produces,word,Final/ last,last
+item_724,descriptive_words,small,صغير,understands; produces,word,Small ,young
+item_725,descriptive_words,second,ثاني,understands; produces,word,Second ,
+item_726,descriptive_words,fixed,مصلح/ متصلح,understands; produces,word,Fixed ,fixed
+item_727,descriptive_words,soft.smooth,ناعم,understands; produces,word,Soft (smooth),soft
+item_728,descriptive_words,sad,زعلان/ حزين,understands; produces,word,Sad ,sad
+item_729,descriptive_words,dirty,وسخ/ متسخ/ موسخ/ قذر,understands; produces,word,Dirty ,dirty
+item_730,descriptive_words,ugly,وحش/ مو حلو/ مو زين/ معفن,understands; produces,word,Ugly ,ugly
+item_731,descriptive_words,hot,حار (حامي),understands; produces,word,Hot ,hot
+item_732,descriptive_words,white,ابيض,understands; produces,word,White ,white
+item_733,descriptive_words,sleepy,نعسان,understands; produces,word,Sleepy ,sleepy
+item_734,descriptive_words,clean.adj,نظيف,understands; produces,word,Clean ,clean (description)
+item_735,descriptive_words,red,احمر,understands; produces,word,Red ,red
+item_736,descriptive_words,fat,سمين (دبة),understands; produces,word,Fat ,fat
+item_737,descriptive_words,light.in.color,فاتح,understands; produces,word,Light in color ,
+item_738,descriptive_words,green,اخضر,understands; produces,word,Green ,green
+item_739,descriptive_words,dark.in.color,غامق,understands; produces,word,Dark ,dark
+item_740,descriptive_words,black,اسود,understands; produces,word,Black ,black
+item_741,descriptive_words,cold,بارد/ صاقع,understands; produces,word,Cold ,cold
+item_742,descriptive_words,happy,فرحان/ مبسوط,understands; produces,word,Happy ,happy
+item_743,descriptive_words,full,مليان,understands; produces,word,Full ,full
+item_744,descriptive_words,hard,قاسي,understands; produces,word,Hard ,hard
+item_745,descriptive_words,naughty.1,مشاغب/ شقي/ شيطان,understands; produces,word,Naughty ,naughty
+item_746,descriptive_words,bad,سيئ,understands; produces,word,Bad ,bad
+item_747,descriptive_words,afraid,خائف,understands; produces,word,Scared ,scared
+item_748,descriptive_words,sick,مريض,understands; produces,word,Sick  ,sick
+item_749,descriptive_words,yuck.1,يخ/ كخ,understands; produces,word,Yuck (To express disgust),
+item_750,descriptive_words,expired,منتهي,understands; produces,word,Expired/ finished ,
+item_751,descriptive_words,old.in.age.1,كبير في السن,understands; produces,word,Elderly/ old in age,old
+item_752,descriptive_words,yuck.2,مقرف/  يع,understands; produces,word,Disgusting/ Yuck,disgusting
+item_753,descriptive_words,feeling.cold,بردان,understands; produces,word,Cold ,cold
+item_754,descriptive_words,old.in.age.2,عجوز/ شيبه,understands; produces,word,Elderly/ old in age,old
+item_755,descriptive_words,noisy,مزعج,understands; produces,word,Annoying ,noisy
+item_756,descriptive_words,old,قديم,understands; produces,word,Old ,old
+item_757,descriptive_words,poor,فقير,understands; produces,word,Poor ,poor
+item_758,descriptive_words,better,احسن/ أحلى,understands; produces,word,Better / nicer ,
+item_759,descriptive_words,brown,بنّي,understands; produces,word,Brown ,brown
+item_760,descriptive_words,yummy,لذيذ,understands; produces,word,Yummy ,yummy
+item_761,descriptive_words,high,عالي/ مرتفع,understands; produces,word,High ,high
+item_762,descriptive_words,hungry,جائع (جيعان),understands; produces,word,Hungry ,hungry
+item_763,descriptive_words,got.hurt,اتعور,understands; produces,word,Got hurt ,
+item_764,descriptive_words,loud,عالي (الصوت),understands; produces,word,Loud ,loud
+item_765,descriptive_words,crazy,مجنون,understands; produces,word,Crazy ,crazy
+item_766,descriptive_words,new,جديد,understands; produces,word,New ,new
+item_767,descriptive_words,quietness,هدوء,understands; produces,word,Quietness,quiet
+item_768,descriptive_words,sticky,بدق (يلزق/ يلصق),understands; produces,word,Sticky ,sticky
+item_769,descriptive_words,soft.not.firm,طري (لين),understands; produces,word,Soft (not firm),soft
+item_770,descriptive_words,a.lot.1,كثير,understands; produces,word,A lot ,a lot
+item_771,descriptive_words,colorful,ملّون,understands; produces,word,Colorful ,
+item_772,descriptive_words,tired,متعب (تعبان),understands; produces,word,Tired ,tired
+item_773,descriptive_words,it.huts,يعور/ أح,understands; produces,word,(it) hurts,
+item_774,descriptive_words,good.boy.good.girl,شاطر,understands; produces,word,Good boy/ Good girl ,
+item_775,descriptive_words,naughty.2,شيطان,understands; produces,word,Naughty ,naughty
+item_776,descriptive_words,difficult,صعب,understands; produces,word,Difficult ,difficult
+item_777,descriptive_words,feeling.hot,حران,understands; produces,word,Feeling hot ,
+item_778,descriptive_words,good,كويس,understands; produces,word,Good ,good
+item_779,descriptive_words,broken,مكسور/ محطم,understands; produces,word,Broken/ destroyed,broken
+item_780,descriptive_words,brings.shame,عيب,understands; produces,word,Brings shame,
+item_781,descriptive_words,kind,طيب,understands; produces,word,Kind,
+item_782,descriptive_words,they.all.left,كلهم راحوا,understands; produces,word,They all left ,
+item_783,descriptive_words,well.behaved,مؤدب,understands; produces,word,Well behaved/ well-mannered ,
+item_784,descriptive_words,dark,ظلام/ مظلم,understands; produces,word,Dark ,dark
+item_785,descriptive_words,hiccup,فهيقة,understands; produces,word,Hiccup ,
+item_786,descriptive_words,cough.noun,كحة,understands; produces,word,Cough ,
+item_787,descriptive_words,sneeze.noun.2,عطسه,understands; produces,word,Sneeze ,
+item_788,descriptive_words,saliva,تفلان,understands; produces,word,Saliva ,
+item_789,descriptive_words,mucus,مخطان,understands; produces,word,Mucus ,
+item_790,time_words,day,يوم,understands; produces,word,Day ,day
+item_791,time_words,night,ليل (مساء),understands; produces,word,Night/ evening ,night
+item_792,time_words,tomorrow.2,غداْ (بكرة),understands; produces,word,Tomorrow ,tomorrow
+item_793,time_words,later,فيما  بعد (بعدين),understands; produces,word,Later ,later
+item_794,time_words,morning,الصباح,understands; produces,word,Morning ,morning
+item_795,time_words,tonight,الليلة,understands; produces,word,Tonight ,tonight
+item_796,time_words,good.morning,صباح,understands; produces,word,Morning ,morning
+item_797,time_words,today,اليوم,understands; produces,word,Today ,today
+item_798,time_words,before,قبل,understands; produces,word,Before ,before
+item_799,time_words,after,بعد,understands; produces,word,After ,after
+item_800,time_words,time,الوقت,understands; produces,word,Time ,time
+item_801,time_words,yesterday,البارحة (أمس),understands; produces,word,Yesterday/ last night,yesterday
+item_802,time_words,now,الآن (دحين)/ ذلحين (الحين),understands; produces,word,Now ,now
+item_803,question_words,how,كيف,understands; produces,word,How ,how
+item_804,question_words,who,مين,understands; produces,word,Who ,who
+item_805,question_words,when,متى,understands; produces,word,When ,when (question)
+item_806,question_words,what,ماذا/ ايش (إيش هذا)/ (ايش دا),understands; produces,word,What ,what
+item_807,question_words,where,اين/ فين,understands; produces,word,Where ,where (question)
+item_808,question_words,why,لماذا (ليش),understands; produces,word,Why ,why
+item_809,pronouns,he,هو,understands; produces,word,He ,3SG
+item_810,pronouns,this.feminie,هذه (هادي),understands; produces,word,This (feminine),this
+item_811,pronouns,yours,لك/ حقك,understands; produces,word,Yours ,2SG.POSS
+item_812,pronouns,she,هي,understands; produces,word,She ,3SG
+item_813,pronouns,you,انت,understands; produces,word,You (masculine),2SG
+item_814,pronouns,this.masculine,هذا (هدا),understands; produces,word,This (masculine) ,that
+item_815,pronouns,i,انا,understands; produces,word,I ,1SG
+item_816,pronouns,you.plural,انتم (انتو),understands; produces,word,You (plural),2PL
+item_817,pronouns,that.masculine.1,ذلك (داك),understands; produces,word,That (masculine),that
+item_818,pronouns,mine,لي/ملكي (حقي),understands; produces,word,Mine ,1SG.POSS
+item_819,pronouns,they,هم ( همه),understands; produces,word,They ,3PL
+item_820,pronouns,hers,لها/ حقها,understands; produces,word,Hers ,3SG.POSS
+item_821,pronouns,his,له (حقه),understands; produces,word,His ,3SG.POSS
+item_822,pronouns,we,نحن (نحنا),understands; produces,word,We ,1PL
+item_823,pronouns,ours,لنا/ حقنا,understands; produces,word,Ours ,1PL.POSS
+item_824,pronouns,these,هذول/ هدول,understands; produces,word,These,these
+item_825,pronouns,you.feminine,إنتِ,understands; produces,word,You (feminine),2SG
+item_826,pronouns,theirs,لهم,understands; produces,word,Theirs,3PL.POSS
+item_827,pronouns,that.masculine.2,هذاك/هاداك,understands; produces,word,That (masculine),that
+item_828,pronouns,here.1,هنا,understands; produces,word,Here ,here
+item_829,pronouns,there,هناك,understands; produces,word,There ,there
+item_830,pronouns,those,هادولاك,understands; produces,word,Those ,those
+item_831,negation_words,not.this,مو / مو هادا ,understands; produces,word,Not this (masculine),
+item_832,negation_words,there.is.nothing,مافي ,understands; produces,word,There is nothing,
+item_833,negation_words,finished.1,خلاص,understands; produces,word,Finished ,finished
+item_834,negation_words,not.here,مو هنا,understands; produces,word,Not here ,
+item_835,negation_words,i.dont.like,ما أحب,understands; produces,word,I do not like ,don't like
+item_836,negation_words,finished.2,خلص/ خلصنا,understands; produces,word,Finished ,finished
+item_837,negation_words,not.nice,مو حلو ,understands; produces,word,Not nice,
+item_838,negation_words,i.dont.want,ما/ ما أبغى,understands; produces,word,I do not want ,don't want
+item_839,negation_words,finished.no.more,بح/ بح ماما,understands; produces,word,finished/ no more,
+item_840,negation_words,not.mine,مو حقي,understands; produces,word,Not mine,
+item_841,negation_words,dont.go,لا/ لا تروح,understands; produces,word,no/ do not go,
+item_842,quantifiers,all,جميع/كل (كله),understands; produces,word,All ,all
+item_843,quantifiers,none,لا شىء ( ولا شي/ ولا واحد/ ولا حاجة),understands; produces,word,None/ nothing ,nothing
+item_844,quantifiers,alike,قد بعض/ زي بعض,understands; produces,word,alike/ same,same
+item_845,quantifiers,more,مزيد/ زيادة (كمان),understands; produces,word,More ,more
+item_846,quantifiers,another.one,واحد.تاني,understands; produces,word,Another one,another
+item_847,quantifiers,me.too,أنا أيضا ( أنا كمان),understands; produces,word,Me too ,
+item_848,quantifiers,five,خمسة,understands; produces,word,Five ,five
+item_849,quantifiers,again,مرة ثانية,understands; produces,word,Again ,again
+item_850,quantifiers,one,واحد/ واحدة,understands; produces,word,One ,one
+item_851,quantifiers,finished.3,خلص,understands; produces,word,Finished ,finished
+item_852,quantifiers,any.one,اي.واحد,understands; produces,word,Any one ,any
+item_853,quantifiers,another.1,آخر,understands; produces,word,Another ,another
+item_854,quantifiers,different,مختلف,understands; produces,word,Different ,different
+item_855,quantifiers,some,بعض (شوية),understands; produces,word,Some ,some
+item_856,quantifiers,same.thing,نفس الشيء,understands; produces,word,Same thing,same
+item_857,quantifiers,another.2,غيره,understands; produces,word,Another ,another
+item_858,quantifiers,the,آل (التعريف),understands; produces,word,Definite article = [The],the
+item_859,quantifiers,more.than,أكثر,understands; produces,word,More ,more
+item_860,quantifiers,two,اثنين (اتنين),understands; produces,word,Two ,two
+item_861,quantifiers,three,ثلاثة (تلاته),understands; produces,word,Three ,three
+item_862,quantifiers,four,أربعة,understands; produces,word,Four ,four
+item_863,quantifiers,seven,سبعة,understands; produces,word,Seven ,seven
+item_864,quantifiers,eight,ثمانية (تمنيه),understands; produces,word,Eight ,eight
+item_865,quantifiers,nine,تسعة,understands; produces,word,Nine ,nine
+item_866,quantifiers,ten,عشرة,understands; produces,word,Ten ,ten
+item_867,quantifiers,six,ستة,understands; produces,word,Six ,six
+item_868,quantifiers,a.lot.2,كثير,understands; produces,word,A lot ,a lot
+item_869,quantifiers,few,قليل,understands; produces,word,few / little ,few
+item_870,quantifiers,finished.4,خلاص.انتهى,understands; produces,word,Finished,finished
+item_871,quantifiers,no.more,مافي,understands; produces,word,No more/  finished ,
+item_872,locations,above,فوق,understands; produces,word,above/ on top ,above
+item_873,locations,next.to,جنب,understands; produces,word,Next to/ beside ,next to
+item_874,locations,inside,داخل (جوه),understands; produces,word,Inside ,inside
+item_875,locations,below,تحت/ أسفل,understands; produces,word,below/ down ,below
+item_876,locations,behind,خلف ( وراء),understands; produces,word,Behind ,behind
+item_877,locations,away,بعيد,understands; produces,word,Away ,far
+item_878,locations,near,قريب,understands; produces,word,Near ,near
+item_879,locations,in.front.of,امام (قدام),understands; produces,word,In front of ,front
+item_880,locations,on,على,understands; produces,word,On ,on
+item_881,locations,out,برة/ خارج,understands; produces,word,Out ,out
+item_882,locations,with.accompanied.by,مع,understands; produces,word,With ,with
+item_883,locations,about,عن,understands; produces,word,About  ,about
+item_884,locations,around,حول,understands; produces,word,Around ,around
+item_885,locations,for,لـِ,understands; produces,word,For ,for
+item_886,locations,in,في,understands; produces,word,In ,in
+item_887,locations,of.from,من,understands; produces,word,Of/ from ,of
+item_888,locations,with.using,بـِ,understands; produces,word,With ,with
+item_889,locations,through,خلال,understands; produces,word,Through ,through
+item_890,locations,here.2,هنا,understands; produces,word,Here ,here
+item_891,locations,on.top.of,أعلى,understands; produces,word,On top of ,on top of
+item_892,connecting_words,to,إلى,understands; produces,word,To ,to
+item_893,connecting_words,and,و,understands; produces,word,And ,and
+item_894,connecting_words,except,إلا,understands; produces,word,Except ,
+item_895,connecting_words,if.1,لو,understands; produces,word,If ,if
+item_896,connecting_words,but,لكن,understands; produces,word,But ,but
+item_897,connecting_words,because,لأن,understands; produces,word,Because ,because
+item_898,connecting_words,also,كمان,understands; produces,word,Also,also
+item_899,connecting_words,if.2,إذا,understands; produces,word,If ,if
+item_900,animals,dolphin,,understands; produces,word,dolphin,dolphin
+item_901,animals,falcon,,understands; produces,word,falcon,
+item_902,toys,slime,,understands; produces,word,slime,
+item_903,toys,whistle,,understands; produces,word,whistle,whistle (object)
+item_904,food_drink,nutella,,understands; produces,word,nutella,nutella
+item_905,food_drink,peanut.butter,,understands; produces,word,peanut butter,peanut butter
+item_906,food_drink,noodles,,understands; produces,word,noodles,noodles
+item_907,food_drink,fry.bread,,understands; produces,word,fry bread,
+item_908,clothing,hair.clip,,understands; produces,word,hair clip,hair clip
+item_909,household,iPad,,understands; produces,word,iPad,
+item_910,household,shampo,,understands; produces,word,shampoo,shampoo
+item_911,furniture_rooms,basket.2,,understands; produces,word,basket,basket
+item_912,action_words,show,,understands; produces,word,show,show
+item_913,action_words,go,,understands; produces,word,go,go
+item_914,action_words,walk.2,,understands; produces,word,walk,walk
+item_915,action_words,joke.verb,,understands; produces,word,joke (verb),
+item_916,action_words,mix,,understands; produces,word,mix,mix
+item_917,action_words,build.2,,understands; produces,word,build,build
+item_918,pronouns,his.1,,understands; produces,word,his,3SG.POSS
+item_919,pronouns,your.plural,,understands; produces,word,your (plural),2PL.POSS
+item_920,pronouns,his.2,,understands; produces,word,his,3SG.POSS
+item_921,quantifiers,first.2,,understands; produces,word,first,first

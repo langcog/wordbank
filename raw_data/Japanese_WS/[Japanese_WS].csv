@@ -1,0 +1,814 @@
+﻿itemID,item,type,category_ja,category,definition,definition_ja2,gloss,uni_lemma
+item_1,A1,word,幼児語,sounds,あーあっ (よくないこと)  ,Aaa,Oh_no,uh oh
+item_2,A2,word,幼児語,sounds,アイタ (いたい),Aita,Ouch,ouch
+item_3,A3,word,幼児語,sounds,オイチィ (おいしい),Oichii,Yummy ,yummy
+item_4,A4,word,幼児語,sounds,ガーガー (アヒル),Gaagaa,Quack_quack,quack quack
+item_5,A5,word,幼児語,sounds,ガオー (ライオン),Gaoo,Roar,roar
+item_6,A6,word,幼児語,sounds,こけこっこ (にわとり),Kokekokko,Cock_a_doodle_doo,cockadoodledoo
+item_7,A7,word,幼児語,sounds,シュッポッポー (汽車),Syupoppoo,Choo-choo,choo choo
+item_8,A8,word,幼児語,sounds,ニャンニャン (ネコ),Nyannyan,Meow,meow
+item_9,A9,word,幼児語,sounds,ブーブー (車),Buubuu,Broom_broom,vroom
+item_10,A10,word,幼児語,sounds,メーメー (ヤギ),meemee,Baa_baa,baa baa
+item_11,A11,word,幼児語,sounds,モー (牛),Moo,Moo,moo
+item_12,A12,word,幼児語,sounds,ワンワン (犬),Wanwan,Bowwow,woof woof
+item_13,B1,word,動物の名前,animals,アヒル,Ahiru,Duck,duck
+item_14,B2,word,動物の名前,animals,アリ,Ari,Ant,ant
+item_15,B3,word,動物の名前,animals,犬,Inu,Dog,dog
+item_16,B4,word,動物の名前,animals,うさぎ,Usagi,Rabbit,rabbit
+item_17,B5,word,動物の名前,animals,牛,Ushi,Cow,cow
+item_18,B6,word,動物の名前,animals,うま,Uma,Horse,horse
+item_19,B7,word,動物の名前,animals,えび,Ebi,Shrimp,shrimp
+item_20,B8,word,動物の名前,animals,おおかみ,Ookami,Wolf,wolf
+item_21,B9,word,動物の名前,animals,カエル,Kaeru,Frog,frog
+item_22,B10,word,動物の名前,animals,かに,Kani,Crab,crab
+item_23,B11,word,動物の名前,animals,カバ,Kaba,Hippopotamus,hippopotamus
+item_24,B12,word,動物の名前,animals,かめ,Kame,Turtle,turtle
+item_25,B13,word,動物の名前,animals,カラス,Karasu,Crow,crow
+item_26,B14,word,動物の名前,animals,きつね,Kitsune,Fox,fox
+item_27,B15,word,動物の名前,animals,きりん,Kirin,Giraffe ,giraffe
+item_28,B16,word,動物の名前,animals,くじら,Kujira,Whale,whale
+item_29,B17,word,動物の名前,animals,くま,Kuma,Bear,bear
+item_30,B18,word,動物の名前,animals,コアラ,Koara,Koala,koala
+item_31,B19,word,動物の名前,animals,ゴリラ,Gorira,Gorilla,gorilla
+item_32,B20,word,動物の名前,animals,さかな,Sakana,Fish,fish (animal)
+item_33,B21,word,動物の名前,animals,さる,Saru,Monkey,monkey
+item_34,B22,word,動物の名前,animals,しまうま,Shimauma,Zebra,zebra
+item_35,B23,word,動物の名前,animals,ぞう,Zou,Elephant,elephant
+item_36,B24,word,動物の名前,animals,たぬき,Tanuki,Raccoon,
+item_37,B25,word,動物の名前,animals,チョウチョ,Choucho,Butterfly,butterfly
+item_38,B26,word,動物の名前,animals,どうぶつ,Doubutsu,Animal,animal
+item_39,B27,word,動物の名前,animals,トラ,Tora,Tiger,tiger
+item_40,B28,word,動物の名前,animals,とり,Tori,Bird,bird
+item_41,B29,word,動物の名前,animals,にわとり,Niwatori,Chicken,chicken
+item_42,B30,word,動物の名前,animals,ねこ,Neko,Cat,cat
+item_43,B31,word,動物の名前,animals,ねずみ,Nezumi,Mouse,mouse
+item_44,B32,word,動物の名前,animals,はち,Hachi,Bee,bee
+item_45,B33,word,動物の名前,animals,はと,Hato,Pigeon,pigeon
+item_46,B34,word,動物の名前,animals,パンダ,Panda,Panda,panda
+item_47,B35,word,動物の名前,animals,ひつじ,Hitsuji,Sheep,sheep
+item_48,B36,word,動物の名前,animals,ひよこ,Hiyoko,Chick,chick
+item_49,B37,word,動物の名前,animals,ぶた,Buta,Pig,pig
+item_50,B38,word,動物の名前,animals,へび,Hebi,Snake,snake
+item_51,B39,word,動物の名前,animals,ペンギン,Pengin,Penguin,penguin
+item_52,B40,word,動物の名前,animals,虫,Mushi,Insect,bug
+item_53,B41,word,動物の名前,animals,ライオン,Raion,Lion,lion
+item_54,B42,word,動物の名前,animals,リス,Risu,Squirrel,squirrel
+item_55,B43,word,動物の名前,animals,ワニ,Wani,Crocodile,crocodile
+item_56,C1,word,乗り物,vehicles,汽車,Kisya,Locomotive,car
+item_57,C2,word,乗り物,vehicles,車 (自動車),Kuruma,Car,car
+item_58,C3,word,乗り物,vehicles,三輪車,Sanrinsya,Tricycle,tricycle
+item_59,C4,word,乗り物,vehicles,自転車,Jitensya,Bicycle,bicycle
+item_60,C5,word,乗り物,vehicles,消防車,Shoubousya,Fire_engine,firetruck
+item_61,C6,word,乗り物,vehicles,ダンプカー,Danpukaa,Dump_truck,
+item_62,C7,word,乗り物,vehicles,電車,Densya,Train,train
+item_63,C8,word,乗り物,vehicles,トラック,Torakku,Truck,truck
+item_64,C9,word,乗り物,vehicles,バイク,Baiku,Motorcycle,motorcycle
+item_65,C10,word,乗り物,vehicles,バス,Basu,Bus,bus
+item_66,C11,word,乗り物,vehicles,パトカー,Patokaa,Police_car,police car
+item_67,C12,word,乗り物,vehicles,飛行機,Hikouki,Airplane,airplane
+item_68,C13,word,乗り物,vehicles,船,Fune,Ship,ship
+item_69,C14,word,乗り物,vehicles,ヘリコプター,Herikoputaa,Helicopter,helicopter
+item_70,D1,word,おもちゃ,toys,絵本,Ehon,Picture_book,book
+item_71,D2,word,おもちゃ,toys,えんぴつ,Enpitsu,Pencil,pencil
+item_72,D3,word,おもちゃ,toys,おもちゃ,Omocha,Toy,toy (object)
+item_73,D4,word,おもちゃ,toys,クレヨン,Kureyon,Crayon,crayon
+item_74,D5,word,おもちゃ,toys,ゲーム,Geemu,Game,game
+item_75,D6,word,おもちゃ,toys,シャボン玉,Shabondama,Soap_bubble,bubbles
+item_76,D7,word,おもちゃ,toys,たいこ,Taiko,Drum,drum
+item_77,D8,word,おもちゃ,toys,つみき,Tsumiki,Building_blocks,blocks
+item_78,D9,word,おもちゃ,toys,人形,Ningyoo,Doll,doll
+item_79,D10,word,おもちゃ,toys,粘土,Nendo,Clay,clay
+item_80,D11,word,おもちゃ,toys,のり (糊),Nori,Paste,glue (object)
+item_81,D12,word,おもちゃ,toys,パズル,Pazuru,Puzzle,puzzle
+item_82,D13,word,おもちゃ,toys,バット,Batto,Bat,bat
+item_83,D14,word,おもちゃ,toys,風船,Fuusen,Balloon,balloon
+item_84,D15,word,おもちゃ,toys,プレゼント,Purezento,Present,present
+item_85,D16,word,おもちゃ,toys,ペン,Pen,Pen,pen
+item_86,D17,word,おもちゃ,toys,ボール,Booru,Ball,ball
+item_87,D18,word,おもちゃ,toys,本,Hon,Book,book
+item_88,E1,word,食べ物と飲み物,food_drink,アイスクリーム,Aisukuriimu,Ice_cream,ice cream
+item_89,E2,word,食べ物と飲み物,food_drink,あめ（飴）,Ame,Candy,candy
+item_90,E3,word,食べ物と飲み物,food_drink,いちご（苺）,Ichigo,Strawberry,strawberry
+item_91,E4,word,食べ物と飲み物,food_drink,うどん,Udon,Udon,noodles
+item_92,E5,word,食べ物と飲み物,food_drink,おいも,Oimo,Sweet_potato,sweet potato
+item_93,E6,word,食べ物と飲み物,food_drink,お菓子,Okashi,Sweets,sweets
+item_94,E7,word,食べ物と飲み物,food_drink,お砂糖,Osatou,Sugar,sugar
+item_95,E8,word,食べ物と飲み物,food_drink,おすし,Osushi,Sushi,
+item_96,E9,word,食べ物と飲み物,food_drink,おにぎり・おむすび,Onigiri_omusubi,Rice_ball,
+item_97,E10,word,食べ物と飲み物,food_drink,お茶,Ocha,Tea,tea
+item_98,E11,word,食べ物と飲み物,food_drink,柿,Kaki,Persimmon,persimmon
+item_99,E12,word,食べ物と飲み物,food_drink,かぼちゃ,Kabocha,Pumpkin,pumpkin
+item_100,E13,word,食べ物と飲み物,food_drink,ガム,Gamu,Gum,gum
+item_101,E14,word,食べ物と飲み物,food_drink,カレー,Karee,Curry,
+item_102,E15,word,食べ物と飲み物,food_drink,牛乳,GyuuNyuu,Milk,milk
+item_103,E16,word,食べ物と飲み物,food_drink,きゅうり,Kyuuri,Cucumber,cucumber
+item_104,E17,word,食べ物と飲み物,food_drink,クッキー,Kukkii,Cookie,cookie
+item_105,E18,word,食べ物と飲み物,food_drink,ケーキ,Keeki,Cake,cake
+item_106,E19,word,食べ物と飲み物,food_drink,コーヒー,Koohii,Coffee,coffee
+item_107,E20,word,食べ物と飲み物,food_drink,こおり（氷）,Koori,Ice,ice
+item_108,E21,word,食べ物と飲み物,food_drink,コーン,Koon,Corn,corn
+item_109,E22,word,食べ物と飲み物,food_drink,ごはん（お米のこと）,Gohan,Rice,rice
+item_110,E23,word,食べ物と飲み物,food_drink,さかな,Sakana,Fish,fish (food)
+item_111,E24,word,食べ物と飲み物,food_drink,サンドイッチ,Sandoicchi,Sandwich,sandwich
+item_112,E25,word,食べ物と飲み物,food_drink,ジャム,Jamu,Jam,jam
+item_113,E26,word,食べ物と飲み物,food_drink,ジュース,Juusu,Juice,juice
+item_114,E27,word,食べ物と飲み物,food_drink,しょうゆ,Shouyu,Soy_sauce,soy sauce
+item_115,E28,word,食べ物と飲み物,food_drink,すいか,Suika,Watermelon,watermelon
+item_116,E29,word,食べ物と飲み物,food_drink,スープ,Suupu,Soup,soup
+item_117,E30,word,食べ物と飲み物,food_drink,スパゲッティー,Supagettii,Spaghetti,spaghetti
+item_118,E31,word,食べ物と飲み物,food_drink,ゼリー,Zerii,Jelly,jelly
+item_119,E32,word,食べ物と飲み物,food_drink,せんべい,Senbei,Rice_crackers,cracker
+item_120,E33,word,食べ物と飲み物,food_drink,大根,Daikon,Radish,radish
+item_121,E34,word,食べ物と飲み物,food_drink,たまご,Tamago,Egg,egg
+item_122,E35,word,食べ物と飲み物,food_drink,チーズ,Chiizu,Cheese,cheese
+item_123,E36,word,食べ物と飲み物,food_drink,チョコレート,Chokoreeto,Chocolate,chocolate
+item_124,E37,word,食べ物と飲み物,food_drink,とうふ（豆腐）,Toufu,Tofu,tofu
+item_125,E38,word,食べ物と飲み物,food_drink,ﾄﾞｰﾅﾂ,Doonatsu,Donut,donut
+item_126,E39,word,食べ物と飲み物,food_drink,トマト,Tomato,Tomato,tomato
+item_127,E40,word,食べ物と飲み物,food_drink,なし（梨）,Nashi,Pear,pear
+item_128,E41,word,食べ物と飲み物,food_drink,なす,Nasu,Eggplant,eggplant
+item_129,E42,word,食べ物と飲み物,food_drink,なっとう（納豆）,Nattou,Natto,
+item_130,E43,word,食べ物と飲み物,food_drink,肉,Niku,Meat,meat
+item_131,E44,word,食べ物と飲み物,food_drink,にんじん,Ninjin,Carrot,carrot
+item_132,E45,word,食べ物と飲み物,food_drink,のり（海苔）,Nori,Seaweed,
+item_133,E46,word,食べ物と飲み物,food_drink,バター,Bataa,Butter,butter
+item_134,E47,word,食べ物と飲み物,food_drink,バナナ,Banana,Banana,banana
+item_135,E48,word,食べ物と飲み物,food_drink,パン,Pan,Bread,bread
+item_136,E49,word,食べ物と飲み物,food_drink,ハム,Hamu,Ham,ham
+item_137,E50,word,食べ物と飲み物,food_drink,ハンバーグ,Hanbaagu,Hamburger,hamburger
+item_138,E51,word,食べ物と飲み物,food_drink,ピーマン,Piiman,Green_pepper,
+item_139,E52,word,食べ物と飲み物,food_drink,ぶどう,Budou,Grape,grapes
+item_140,E53,word,食べ物と飲み物,food_drink,プリン,Purin,Pudding,pudding
+item_141,E54,word,食べ物と飲み物,food_drink,ほうれん草,Hourensou,Spinach,spinach
+item_142,E55,word,食べ物と飲み物,food_drink,ポッキー,Pokkii,Pocky,
+item_143,E56,word,食べ物と飲み物,food_drink,ホットケーキ,Hottokeeki,Pancake,pancake
+item_144,E57,word,食べ物と飲み物,food_drink,ポテト（チップス）,Potetochippusu,Potato_chips,chips
+item_145,E58,word,食べ物と飲み物,food_drink,豆,Mame,Bean,beans
+item_146,E59,word,食べ物と飲み物,food_drink,みかん,Mikan,Orange,orange (food)
+item_147,E60,word,食べ物と飲み物,food_drink,水,Mizu,Water,water (beverage)
+item_148,E61,word,食べ物と飲み物,food_drink,みそしる,Misoshiru,Miso_soup,soup
+item_149,E62,word,食べ物と飲み物,food_drink,ミルク,Miruku,Milk,milk
+item_150,E63,word,食べ物と飲み物,food_drink,メロン,Meron,Melon,melon
+item_151,E64,word,食べ物と飲み物,food_drink,もも,Momo,Peach,peach
+item_152,E65,word,食べ物と飲み物,food_drink,やさい,Yasai,Vegetable,vegetable
+item_153,E66,word,食べ物と飲み物,food_drink,ヨーグルト,Yooguruto,Yogurt,yogurt
+item_154,E67,word,食べ物と飲み物,food_drink,ラーメン,Raamen,Ramen,noodles
+item_155,E68,word,食べ物と飲み物,food_drink,リンゴ,Ringo,Apple,apple
+item_156,F1,word,衣類,clothing,エプロン,Epuron,Apron,apron
+item_157,F2,word,衣類,clothing,オーバー,Oobaa,Overcoat,coat
+item_158,F3,word,衣類,clothing,おむつ,Omutsu,Diaper,diaper
+item_159,F4,word,衣類,clothing,くつ,Kutsu,Shoes,shoe
+item_160,F5,word,衣類,clothing,くつ下,Kutsushita,Socks,sock
+item_161,F6,word,衣類,clothing,ジーパン,Jiipan,Jeans,jeans
+item_162,F7,word,衣類,clothing,シャツ,Syatsu,Shirt,shirt
+item_163,F8,word,衣類,clothing,ジャンパー,Janpaa,Jacket,jacket
+item_164,F9,word,衣類,clothing,スカート,Sukaato,Skirt,skirt
+item_165,F10,word,衣類,clothing,ズック,Zukku,Zuck,sneaker
+item_166,F11,word,衣類,clothing,ズボン,Zubon,Pants,pants
+item_167,F12,word,衣類,clothing,スリッパ,Surippa,Slippers,slipper
+item_168,F13,word,衣類,clothing,セーター,Seetaa,Sweater,sweater
+item_169,F14,word,衣類,clothing,ソックス,Sokkusu,Socks,sock
+item_170,F15,word,衣類,clothing,タイツ,Taitsu,Tights,tights
+item_171,F16,word,衣類,clothing,チャック,Chakku,Zipper,zipper
+item_172,F17,word,衣類,clothing,てぶくろ,Tebukuro,Gloves,gloves
+item_173,F18,word,衣類,clothing,長ぐつ,Nagagutsu,Boots,boots
+item_174,F19,word,衣類,clothing,ネクタイ,Nekutai,Tie,tie (object)
+item_175,F20,word,衣類,clothing,ネックレス,Nekkuresu,Necklace,necklace
+item_176,F21,word,衣類,clothing,パジャマ,Pajama,Pajama,pajamas
+item_177,F22,word,衣類,clothing,パンツ,Pantsu,Shorts,shorts
+item_178,F23,word,衣類,clothing,ベルト,Beruto,Belt,belt
+item_179,F24,word,衣類,clothing,ぼうし,Boushi,Hat,hat
+item_180,F25,word,衣類,clothing,ボタン,Botan,Button,button
+item_181,F26,word,衣類,clothing,マフラー,Mafuraa,Scarf,scarf
+item_182,F27,word,衣類,clothing,洋服,Youfuku,Clothes,clothes
+item_183,F28,word,衣類,clothing,リボン,Ribon,Ribbon,ribbon
+item_184,G1,word,体の部分,body_parts,あご,Ago,Chin,chin
+item_185,G2,word,体の部分,body_parts,足,Ashi,Leg,leg
+item_186,G3,word,体の部分,body_parts,あたま,Atama,Head,head
+item_187,G4,word,体の部分,body_parts,おしり,Oshiri,Buttocks,buttocks
+item_188,G5,word,体の部分,body_parts,おチンチン,Ochinchin,Penis,penis
+item_189,G6,word,体の部分,body_parts,おっぱい,Oppai,Breasts,breast
+item_190,G7,word,体の部分,body_parts,おでこ,Odeko,Forehead,forehead
+item_191,G8,word,体の部分,body_parts,おなか,Onaka,Stomach,tummy
+item_192,G9,word,体の部分,body_parts,おへそ,Oheso,Navel,belly button
+item_193,G10,word,体の部分,body_parts,顔,Kao,Face,face
+item_194,G11,word,体の部分,body_parts,肩,Kata,Shoulder,shoulder
+item_195,G12,word,体の部分,body_parts,かみ（髪）,Kami,Hair,hair
+item_196,G13,word,体の部分,body_parts,くち,Kuchi,Mouth,mouth
+item_197,G14,word,体の部分,body_parts,くび,Kubi,Neck,neck
+item_198,G15,word,体の部分,body_parts,けが,Kega,Injury,
+item_199,G16,word,体の部分,body_parts,しっぽ,Shippo,Tail,tail
+item_200,G17,word,体の部分,body_parts,背中,Senaka,Back,back
+item_201,G18,word,体の部分,body_parts,つめ,Tsume,Nail,nail (finger)
+item_202,G19,word,体の部分,body_parts,手,Te,Hand,hand
+item_203,G20,word,体の部分,body_parts,歯,Ha,Tooth,tooth
+item_204,G21,word,体の部分,body_parts,鼻,Hana,Nose,nose
+item_205,G22,word,体の部分,body_parts,舌（べろ）,Shita_bero,Tongue,tongue
+item_206,G23,word,体の部分,body_parts,ほっぺ,Hoppe,Cheek,cheek
+item_207,G24,word,体の部分,body_parts,まゆ・まゆ毛,Mayu_mayuge,Eyebrow,eyebrow
+item_208,G25,word,体の部分,body_parts,耳,Mimi,Ear,ear
+item_209,G26,word,体の部分,body_parts,目,Me,Eye,eye
+item_210,G27,word,体の部分,body_parts,指,Yubi,Finger,finger
+item_211,H1,word,家具と部屋,furniture_rooms,いす,Isu,Chair,chair
+item_212,H2,word,家具と部屋,furniture_rooms,エアコン,Eakon,Air_conditioner,air conditioner
+item_213,H3,word,家具と部屋,furniture_rooms,おしいれ,Oshiire,Closet,closet
+item_214,H4,word,家具と部屋,furniture_rooms,おふろ（風呂場）,Ofuro,Bath,bath
+item_215,H5,word,家具と部屋,furniture_rooms,おまる,Omaru,Potty,potty
+item_216,H6,word,家具と部屋,furniture_rooms,カーテン,Kaaten,Curtain,curtain
+item_217,H7,word,家具と部屋,furniture_rooms,階段,Kaidan,Stairs,stairs
+item_218,H8,word,家具と部屋,furniture_rooms,げたばこ（げた箱）,Getabako,Shoes_rack,
+item_219,H9,word,家具と部屋,furniture_rooms,玄関,Genkan,Entrance,
+item_220,H10,word,家具と部屋,furniture_rooms,こたつ,Kotatsu,Kotatsu,
+item_221,H11,word,家具と部屋,furniture_rooms,シャワー,Syawaa,Shower,shower
+item_222,H12,word,家具と部屋,furniture_rooms,水道,Suidou,Water_crew,
+item_223,H13,word,家具と部屋,furniture_rooms,ストーブ,Sutoobu,Stove,stove
+item_224,H14,word,家具と部屋,furniture_rooms,扇風機,Senpuuki,Fan,fan
+item_225,H15,word,家具と部屋,furniture_rooms,台所,Daidokoro,Kitchen,kitchen
+item_226,H16,word,家具と部屋,furniture_rooms,たたみ,Tatami,Tatami,
+item_227,H17,word,家具と部屋,furniture_rooms,タンス,Tansu,Wardrobe,closet
+item_228,H18,word,家具と部屋,furniture_rooms,駐車場,Cyuushajou,Parking_Lot,parking lot
+item_229,H19,word,家具と部屋,furniture_rooms,机,Tsukue,Desk,table
+item_230,H20,word,家具と部屋,furniture_rooms,テーブル,Teeburu,Table,table
+item_231,H21,word,家具と部屋,furniture_rooms,テレビ,Terebi,Television,TV
+item_232,H22,word,家具と部屋,furniture_rooms,電気,Denki,Light,light
+item_233,H23,word,家具と部屋,furniture_rooms,ドア,Doa,Door,door
+item_234,H24,word,家具と部屋,furniture_rooms,トイレ,Toire,Toilet,toilet
+item_235,H25,word,家具と部屋,furniture_rooms,ドライヤー,Doraiyaa,Hairdryer,hair dryer
+item_236,H26,word,家具と部屋,furniture_rooms,ピアノ,Piano,Piano,piano
+item_237,H27,word,家具と部屋,furniture_rooms,ひきだし,Hikidashi,Drawer,drawer
+item_238,H28,word,家具と部屋,furniture_rooms,ビデオ,Bideo,Video,video
+item_239,H29,word,家具と部屋,furniture_rooms,ベッド,Beddo,Bed,bed
+item_240,H30,word,家具と部屋,furniture_rooms,部屋,Heya,Room,room
+item_241,H31,word,家具と部屋,furniture_rooms,窓,Mado,Window,window
+item_242,H32,word,家具と部屋,furniture_rooms,冷蔵庫,Reizouko,Refrigerator,refrigerator
+item_243,H33,word,家具と部屋,furniture_rooms,レンジ,Renji,Range,microwave
+item_244,I1,word,小さな家庭用品,household,アイロン,Airon,Iron,iron (object)
+item_245,I2,word,小さな家庭用品,household,絵,E,Picture,picture
+item_246,I3,word,小さな家庭用品,household,お金,Okane,Money,money
+item_247,I4,word,小さな家庭用品,household,お皿,Osara,Dish,dish
+item_248,I5,word,小さな家庭用品,household,かぎ（鍵）,Kagi,Key,key
+item_249,I6,word,小さな家庭用品,household,かご,Kago,Basket,basket
+item_250,I7,word,小さな家庭用品,household,かさ（傘）,Kasa,Umbrella,umbrella
+item_251,I8,word,小さな家庭用品,household,かばん,Kaban,Bag,bag
+item_252,I9,word,小さな家庭用品,household,かみ（紙）,Kami,Paper,paper
+item_253,I10,word,小さな家庭用品,household,カメラ,Kamera,Camera,camera
+item_254,I11,word,小さな家庭用品,household,缶,Kan,Can,can
+item_255,I12,word,小さな家庭用品,household,くぎ,Kugi,Nail,nail (object)
+item_256,I13,word,小さな家庭用品,household,くし,Kushi,Comb,comb (object)
+item_257,I14,word,小さな家庭用品,household,くすり,Kusuri,Medicine,medicine
+item_258,I15,word,小さな家庭用品,household,コップ,Koppu,Cup,cup
+item_259,I16,word,小さな家庭用品,household,ごみ箱,Gomibako,Trash_box,trash can
+item_260,I17,word,小さな家庭用品,household,財布,Saifu,Wallet,wallet
+item_261,I18,word,小さな家庭用品,household,シャンプー,Syanpuu,Shampoo,shampoo
+item_262,I19,word,小さな家庭用品,household,ストロー,Sutoroo,Straw,straw
+item_263,I20,word,小さな家庭用品,household,スプーン,Supuun,Spoon,spoon
+item_264,I21,word,小さな家庭用品,household,石鹸,Sekken,Soap,soap
+item_265,I22,word,小さな家庭用品,household,ぞうきん,Zoukin,Rag,rag
+item_266,I23,word,小さな家庭用品,household,そうじ機,Soujiki,Vacuum_cleaner,vacuum cleaner
+item_267,I24,word,小さな家庭用品,household,タオル,Taoru,Towel,towel
+item_268,I25,word,小さな家庭用品,household,茶わん,Chawan,Bowl,bowl
+item_269,I26,word,小さな家庭用品,household,ティッシュ,Tissyu,Tissue,tissue
+item_270,I27,word,小さな家庭用品,household,テープ,Teepu,Tape,tape
+item_271,I28,word,小さな家庭用品,household,電池,Denchi,Battery,battery
+item_272,I29,word,小さな家庭用品,household,でんわ（電話）,Denwa,Phone,telephone
+item_273,I30,word,小さな家庭用品,household,時計,Tokei,Clock,clock
+item_274,I31,word,小さな家庭用品,household,ナイフ,Naifu,Knife,knife
+item_275,I32,word,小さな家庭用品,household,なべ,Nabe,Pan,pan
+item_276,I33,word,小さな家庭用品,household,バケツ,Baketsu,Bucket,bucket
+item_277,I34,word,小さな家庭用品,household,はこ（箱）,Hako,Box,box
+item_278,I35,word,小さな家庭用品,household,はさみ,Hasami,Scissors,scissors
+item_279,I36,word,小さな家庭用品,household,はし（箸）,Hashi,Chopsticks,chopstick
+item_280,I37,word,小さな家庭用品,household,歯ブラシ,Haburashi,Toothbrush,toothbrush
+item_281,I38,word,小さな家庭用品,household,ハンカチ,Hankachi,Handkerchief,handkerchief
+item_282,I39,word,小さな家庭用品,household,びん,Bin,Bottle,bottle
+item_283,I40,word,小さな家庭用品,household,フォーク,Fwooku,Fork,fork
+item_284,I41,word,小さな家庭用品,household,ふとん,Futon,Futon,
+item_285,I42,word,小さな家庭用品,household,フライパン,Furaipan,Frying_pan,pan
+item_286,I43,word,小さな家庭用品,household,ほうき,Houki,Broom,broom
+item_287,I44,word,小さな家庭用品,household,包丁,Houchou,Kitchen_knife,knife
+item_288,I45,word,小さな家庭用品,household,ポット,Potto,Pot,pot
+item_289,I46,word,小さな家庭用品,household,マイク,Maiku,Microphone,microphone
+item_290,I47,word,小さな家庭用品,household,枕,Makura,Pillow,pillow
+item_291,I48,word,小さな家庭用品,household,めがね,Megane,Glasses,glasses
+item_292,I49,word,小さな家庭用品,household,めざまし,Mezamashi,Alarm_clock,clock
+item_293,I50,word,小さな家庭用品,household,毛布,Moufu,Blanket,blanket
+item_294,J1,word,戸外のもの,outside,雨,Ame,Rain,rain
+item_295,J2,word,戸外のもの,outside,石,Ishi,Stone,stone
+item_296,J3,word,戸外のもの,outside,岩,Iwa,Rock,stone
+item_297,J4,word,戸外のもの,outside,枝,Eda,Branch,branch
+item_298,J5,word,戸外のもの,outside,お月さん,Otsukisan,Moon,moon
+item_299,J6,word,戸外のもの,outside,お天気,Otenki,Weather,
+item_300,J7,word,戸外のもの,outside,おひさま,Ohisama,Sun,sun
+item_301,J8,word,戸外のもの,outside,風,Kaze,Wind,wind
+item_302,J9,word,戸外のもの,outside,川,Kawa,River,river
+item_303,J10,word,戸外のもの,outside,木,Ki,Tree,tree
+item_304,J11,word,戸外のもの,outside,草,Kusa,Grass,grass
+item_305,J12,word,戸外のもの,outside,雲,Kumo,Cloud,cloud
+item_306,J13,word,戸外のもの,outside,スコップ,Sukoppu,Scoop,shovel
+item_307,J14,word,戸外のもの,outside,砂場,Sunaba,Sandpit,sandbox
+item_308,J15,word,戸外のもの,outside,すべり台,Suberidai,Slide,slide (object)
+item_309,J16,word,戸外のもの,outside,空,Sora,Sky,sky
+item_310,J17,word,戸外のもの,outside,庭,Niwa,Garden,garden
+item_311,J18,word,戸外のもの,outside,はしご,Hashigo,Ladder,ladder
+item_312,J19,word,戸外のもの,outside,旗,Hata,Flag,flag
+item_313,J20,word,戸外のもの,outside,はっぱ,Happa,Leaf,leaf
+item_314,J21,word,戸外のもの,outside,花,Hana,Flower,flower
+item_315,J22,word,戸外のもの,outside,プール,Puuru,Pool,pool
+item_316,J23,word,戸外のもの,outside,ブランコ,Buranko,Swing,swing (object)
+item_317,J24,word,戸外のもの,outside,ベランダ,Beranda,Veranda,
+item_318,J25,word,戸外のもの,outside,ホース,Hoosu,Hose,hose
+item_319,J26,word,戸外のもの,outside,星,Hoshi,Star,star
+item_320,J27,word,戸外のもの,outside,水まき,Mizumaki,Watering,watering can
+item_321,J28,word,戸外のもの,outside,道,Michi,Road,road
+item_322,J29,word,戸外のもの,outside,屋根,Yane,Roof,roof
+item_323,J30,word,戸外のもの,outside,雪,Yuki,Snow,snow
+item_324,J31,word,戸外のもの,outside,雪だるま,Yukidaruma,Snowman,snowman
+item_325,K1,word,おでかけ,places,いえ（家）,Ie,House,house
+item_326,K2,word,おでかけ,places,海,Umi,Sea,sea
+item_327,K3,word,おでかけ,places,映画,Eiga,Movies,movie
+item_328,K4,word,おでかけ,places,おうち,Ouchi,House,house
+item_329,K5,word,おでかけ,places,お仕事,Oshigoto,Job,work (place)
+item_330,K6,word,おでかけ,places,おそと,Osoto,Outside,outside
+item_331,K7,word,おでかけ,places,お店,Omise,Shop,store
+item_332,K8,word,おでかけ,places,会社,Kaisya,Company,
+item_333,K9,word,おでかけ,places,ガソリンスタンド,Gasorinsutando,Gas_station,gas station
+item_334,K10,word,おでかけ,places,学校,Gakkou,School,school
+item_335,K11,word,おでかけ,places,キャンプ,Kyanpu,Camp,camping
+item_336,K12,word,おでかけ,places,公園,Kouen,Park,park
+item_337,K13,word,おでかけ,places,サーカス,Saakasu,Circus,circus
+item_338,K14,word,おでかけ,places,スーパー,Suupaa,Supermarket,market
+item_339,K15,word,おでかけ,places,デパート,Depaato,Department_store,store
+item_340,K16,word,おでかけ,places,動物園,Doubutsuen,Zoo,zoo
+item_341,K17,word,おでかけ,places,ピクニック,Pikunikku,Picnic,picnic
+item_342,K18,word,おでかけ,places,保育所,Hoikujyo,Nursery_school,nursery
+item_343,K19,word,おでかけ,places,森,Mori,Woods,forest
+item_344,K20,word,おでかけ,places,山,Yama,Mountain,mountain
+item_345,K21,word,おでかけ,places,幼稚園,Youchien,Kindergarten,kindergarten
+item_346,K22,word,おでかけ,places,レストラン,Resutoran,Restaurant,restaurant
+item_347,L1,word,人々,people,赤ちゃん,Akachan,Baby,baby
+item_348,L2,word,人々,people,運転手,Untensyu,Driver,driver
+item_349,L3,word,人々,people,お医者さん,Oishasan,Doctor,doctor
+item_350,L4,word,人々,people,王様,Oosama,King,king
+item_351,L5,word,人々,people,お母さん,Okaasan,Mother,mommy
+item_352,L6,word,人々,people,おじいさん,Ojiisan,Grandfather,grandpa
+item_353,L7,word,人々,people,おじさん,Ojisan,Uncle,uncle
+item_354,L8,word,人々,people,お相撲さん,Osumousan,Sumo_wrestler,
+item_355,L9,word,人々,people,お父さん,Otousan,Father,daddy
+item_356,L10,word,人々,people,おともだち,Otomodachi,Friend,friend
+item_357,L11,word,人々,people,お兄さん,Oniisan,Older_brother,brother
+item_358,L12,word,人々,people,お姉さん,Oneesan,Older_sister,sister
+item_359,L13,word,人々,people,おばあさん,Obaasan,Grandmother,grandma
+item_360,L14,word,人々,people,おばさん,Obasan,Aunt,aunt
+item_361,L15,word,人々,people,お姫様,Ohimesama,Princess,princess
+item_362,L16,word,人々,people,おまわりさん,Omawarisan,Policeman,policeman
+item_363,L17,word,人々,people,看護婦さん,Kangofusan,Nurse,nurse
+item_364,L18,word,人々,people,キャラクターの名前（アンパンマン等）,Particular_character_name,Particular_character_name,
+item_365,L19,word,人々,people,きょうだいの名前,Particular_sibling_name,Particular_sibling_name,
+item_366,L20,word,人々,people,こども（子ども）,Kodomo,Child,child
+item_367,L21,word,人々,people,自分の名前,Own_name,Own_name,child's own name
+item_368,L22,word,人々,people,せんせい（先生）,Sensei,Teacher,teacher
+item_369,L23,word,人々,people,先生の名前,Particular_teacher_name,Particular_teacher_name,
+item_370,L24,word,人々,people,友だちの名前,Particular_friend_name,Particular_friend_name,
+item_371,L25,word,人々,people,パパ,Papa,Daddy,daddy
+item_372,L26,word,人々,people,人,Hito,People,people
+item_373,L27,word,人々,people,ペットの名前,Particular_pet_name,Particular_pet_name,
+item_374,L28,word,人々,people,ママ,Mama,Mom,mommy
+item_375,L29,word,人々,people,郵便屋さん,Yuubinyasan,Postman,postman
+item_376,M1,word,日課とあいさつ,games_routines,ありがとう,Arigatou,Thank_you,thank you
+item_377,M2,word,日課とあいさつ,games_routines,いただきます,Itadakimasu,Let’s_eat,
+item_378,M3,word,日課とあいさつ,games_routines,いってらっしゃい,Itterassyai,Have_a_good_day,
+item_379,M4,word,日課とあいさつ,games_routines,（イナイイナイ）バー,Inaiinaibaa,Peekaboo,peekaboo
+item_380,M5,word,日課とあいさつ,games_routines,うんち,Unchi,Poop,poop
+item_381,M6,word,日課とあいさつ,games_routines,おうた（お歌）,Outa,Song,song
+item_382,M7,word,日課とあいさつ,games_routines,お買いもの,Okaimono,Shopping,shopping
+item_383,M8,word,日課とあいさつ,games_routines,おしっこ,Oshikko,Pee,pee
+item_384,M9,word,日課とあいさつ,games_routines,おしまい,Oshimai,End,end
+item_385,M10,word,日課とあいさつ,games_routines,おはよう,Ohayou,Good_morning,good morning
+item_386,M11,word,日課とあいさつ,games_routines,おふろ（入浴）,Ofuro,Bath,bath
+item_387,M12,word,日課とあいさつ,games_routines,おやすみ,Oyasumi,Good_night,good night
+item_388,M13,word,日課とあいさつ,games_routines,おやつ,Oyatsu,Snack,snack
+item_389,M14,word,日課とあいさつ,games_routines,ごちそうさま,Gochisousama,Thank_you_for_the_meal,
+item_390,M15,word,日課とあいさつ,games_routines,ごはん（食事）,Gohan,Meal,meal
+item_391,M16,word,日課とあいさつ,games_routines,ごめんなさい,Gomennasai,Sorry,sorry
+item_392,M17,word,日課とあいさつ,games_routines,こんにちは,Konnichiwa,Hello,hello
+item_393,M18,word,日課とあいさつ,games_routines,シー（静かに）,Shii,Shush,shh
+item_394,M19,word,日課とあいさつ,games_routines,じゃんけんぽん,Jankenpon,Rock_paper_scissors,rock paper scissors
+item_395,M20,word,日課とあいさつ,games_routines,だめ,Dame,No_good,don't
+item_396,M21,word,日課とあいさつ,games_routines,ちょうだい,Choudai,Give_me,give me
+item_397,M22,word,日課とあいさつ,games_routines,どうぞ,Douzo,Here_you_are,
+item_398,M23,word,日課とあいさつ,games_routines,はい,Hai,Yes,yes
+item_399,M24,word,日課とあいさつ,games_routines,バイバイ,BaiBai,Bye_bye,bye
+item_400,M25,word,日課とあいさつ,games_routines,はみがき（歯磨き）,Hamigaki,Teethbrushing,brush teeth
+item_401,N1,word,動作語,action_words,あがる,Agaru,Go_up ,go up
+item_402,N2,word,動作語,action_words,あける（開ける）,Akeru,Open,open (action)
+item_403,N3,word,動作語,action_words,あげる,Ageru,Rise,lift (action)
+item_404,N4,word,動作語,action_words,あそぶ（遊ぶ）,Asobu,Play,play
+item_405,N5,word,動作語,action_words,あらう（洗う）,Arau,Wash,wash
+item_406,N6,word,動作語,action_words,ある,Aru,Exist,be
+item_407,N7,word,動作語,action_words,あるく（歩く）,Aruku,Walk,walk
+item_408,N8,word,動作語,action_words,いう（言う）,Iu,Say,say
+item_409,N9,word,動作語,action_words,行く,Iku,Go,go
+item_410,N10,word,動作語,action_words,いる（要る）,Iru,Need,need
+item_411,N11,word,動作語,action_words,いる（居る）,Iru,Be_there,
+item_412,N12,word,動作語,action_words,いれる（入れる）,Ireru,Put_in,put in
+item_413,N13,word,動作語,action_words,うたう（歌う）,Utau,Sing,sing
+item_414,N14,word,動作語,action_words,おきる（起きる）,Okiru,Get_up,get up
+item_415,N15,word,動作語,action_words,おく（置く）,Oku,Put,put
+item_416,N16,word,動作語,action_words,おこる（怒る）,Okoru,Get_angry,
+item_417,N17,word,動作語,action_words,おす（押す）,Osu,Push,push
+item_418,N18,word,動作語,action_words,おちる（落ちる）,Ochiru,Fall,fall
+item_419,N19,word,動作語,action_words,おどる,Odoru,Dance,dance
+item_420,N20,word,動作語,action_words,おぶう,Obuu,To_piggyback,
+item_421,N21,word,動作語,action_words,およぐ（泳ぐ）,Oyogu,Swim,swim
+item_422,N22,word,動作語,action_words,おりる（降りる）,Oriru,Get_off,get off
+item_423,N23,word,動作語,action_words,おわる（終わる）,Owaru,End,end
+item_424,N24,word,動作語,action_words,買う,Kau,Buy,buy
+item_425,N25,word,動作語,action_words,かえる（帰る）,Kaeru,Go_home,
+item_426,N26,word,動作語,action_words,かく（書く）,Kaku,Write,write
+item_427,N27,word,動作語,action_words,かくす（隠す）,Kakusu,Hide,hide
+item_428,N28,word,動作語,action_words,かける,Kakeru,Hang,hang
+item_429,N29,word,動作語,action_words,かす（貸す）,Kasu,Lend,lend
+item_430,N30,word,動作語,action_words,かたづける,Katazukeru,Clean_up,clean (action)
+item_431,N31,word,動作語,action_words,かぶる,Kaburu,Put_on,put on
+item_432,N32,word,動作語,action_words,消える,Kieru,Disappear,
+item_433,N33,word,動作語,action_words,きく（聞く）,Kiku,Listen,listen
+item_434,N34,word,動作語,action_words,聞こえる,Kikoeru,Hear,hear
+item_435,N35,word,動作語,action_words,着る,Kiru,Wear,wear
+item_436,N36,word,動作語,action_words,切る,Kiru,Cut,cut
+item_437,N37,word,動作語,action_words,くっつける,Kuttsukeru,Stick,stick
+item_438,N38,word,動作語,action_words,くる（来る）,Kuru,Come,come
+item_439,N39,word,動作語,action_words,ける（蹴る）,Keru,Kick,kick
+item_440,N40,word,動作語,action_words,こぼす,Kobosu,Spill,spill
+item_441,N41,word,動作語,action_words,ころぶ,Korobu,Fall,fall
+item_442,N42,word,動作語,action_words,こわす（壊す）,Kowasu,Break_down,break
+item_443,N43,word,動作語,action_words,さわる（触る）,Sawaru,Touch,touch
+item_444,N44,word,動作語,action_words,しめる（閉める）,Shimeru,Close,close
+item_445,N45,word,動作語,action_words,しる（知る）,Shiru,Know,know
+item_446,N46,word,動作語,action_words,すき（好き）,Suki,Like,like
+item_447,N47,word,動作語,action_words,捨てる,Suteru,Throw_away,
+item_448,N48,word,動作語,action_words,する,Suru,Do,do
+item_449,N49,word,動作語,action_words,すわる,Suwaru,Sit,sit
+item_450,N50,word,動作語,action_words,だく（抱く）,Daku,Hug,hug
+item_451,N51,word,動作語,action_words,だす（出す）,Dasu,Put_out,
+item_452,N52,word,動作語,action_words,たすける（助ける）,Tasukeru,Help,help
+item_453,N53,word,動作語,action_words,たたく,Tataku,Hit,hit
+item_454,N54,word,動作語,action_words,たつ（立つ）,Tatsu,Stand,stand
+item_455,N55,word,動作語,action_words,たべる（食べる）,Taberu,Eat,eat
+item_456,N56,word,動作語,action_words,つかまえる,Tsukamaeru,Catch,catch
+item_457,N57,word,動作語,action_words,つく（着く）,Tsuku,Reach,arrive
+item_458,N58,word,動作語,action_words,つくる（作る）,Tsukuru,Create,make
+item_459,N59,word,動作語,action_words,つける（付ける）,Tsukeru,Attach,attach
+item_460,N60,word,動作語,action_words,できる（出来る）,Dekiru,Can_do,
+item_461,N61,word,動作語,action_words,でる（出る）,Deru,Get_out,get out
+item_462,N62,word,動作語,action_words,とぶ（飛ぶ）,Tobu,Jump,jump
+item_463,N63,word,動作語,action_words,とまる,Tomaru,Stop,stop
+item_464,N64,word,動作語,action_words,とる（取る）,Toru,Take,take
+item_465,N65,word,動作語,action_words,なおす,Naosu,Fix,fix
+item_466,N66,word,動作語,action_words,なく（泣く）,Naku,Cry,cry
+item_467,N67,word,動作語,action_words,なげる（投げる）,Nageru,Throw,throw
+item_468,N68,word,動作語,action_words,なめる,Nameru,Lick,lick
+item_469,N69,word,動作語,action_words,なる（…なる）,Naru,Become,become
+item_470,N70,word,動作語,action_words,にげる（逃げる）,Nigeru,Escape,escape
+item_471,N71,word,動作語,action_words,ぬぐ（脱ぐ）,Nugu,Take_off,remove
+item_472,N72,word,動作語,action_words,ぬる（塗る）,Nuru,Paint,paint (action)
+item_473,N73,word,動作語,action_words,ねる（寝る）,Neru,Sleep,sleep
+item_474,N74,word,動作語,action_words,のぼる（登る）,Noboru,Climb,climb
+item_475,N75,word,動作語,action_words,のむ（飲む）,Nomu,Drink,drink (action)
+item_476,N76,word,動作語,action_words,のる（乗る）,Noru,Get_on,get on
+item_477,N77,word,動作語,action_words,はいる（入る）,Hairu,Enter,enter
+item_478,N78,word,動作語,action_words,はく（履く）,Haku,Wear,wear
+item_479,N79,word,動作語,action_words,はこぶ（運ぶ）,Hakobu,Carry,carry
+item_480,N80,word,動作語,action_words,はしる（走る）,Hashiru,Run,run
+item_481,N81,word,動作語,action_words,ひっぱる（引っぱる）,Hipparu,Pull,pull
+item_482,N82,word,動作語,action_words,ひろう（拾う）,Hirou,Pick_up,pick up
+item_483,N83,word,動作語,action_words,ふく（拭く）,Fuku,Wipe,wipe
+item_484,N84,word,動作語,action_words,ふく（吹く）,Fuku,Blow,blow
+item_485,N85,word,動作語,action_words,ぶつかる,Butsukaru,Collide,bump
+item_486,N86,word,動作語,action_words,ほしい（欲しい）,Hoshii,Want,want
+item_487,N87,word,動作語,action_words,まつ（待つ）,Matsu,Wait,wait
+item_488,N88,word,動作語,action_words,まわる,Mawaru,Turn_around,turn around
+item_489,N89,word,動作語,action_words,みえる,Mieru,Appear,
+item_490,N90,word,動作語,action_words,みせる,Miseru,Show,show
+item_491,N91,word,動作語,action_words,みる（見る）,Miru,Look,look
+item_492,N92,word,動作語,action_words,むく（皮など）,Muku,Peel,peel
+item_493,N93,word,動作語,action_words,もつ（持つ）,Motsu,Have,have
+item_494,N94,word,動作語,action_words,持ってくる,Mottekuru,Bring_up,bring
+item_495,N95,word,動作語,action_words,もらう,Morau,Get,get
+item_496,N96,word,動作語,action_words,やぶる（破る）,Yaburu,Break,break
+item_497,N97,word,動作語,action_words,やめる,Yameru,Stop,stop
+item_498,N98,word,動作語,action_words,やる,Yaru,Do,do
+item_499,N99,word,動作語,action_words,よごす（汚す）,Yogosu,Defile,dirty (action)
+item_500,N100,word,動作語,action_words,よぶ（呼ぶ）,Yobu,Call,call
+item_501,N101,word,動作語,action_words,よむ（読む）,Yomu,Read,read
+item_502,N102,word,動作語,action_words,わかる,Wakaru,Understand,understand
+item_503,N103,word,動作語,action_words,わらう（笑う）,Warau,Laugh,laugh
+item_504,O1,word,時間についてのことば,time_words,あさ（朝）,Asa,Morning,morning
+item_505,O2,word,時間についてのことば,time_words,あした（明日）,Ashita,Tomorrow,tomorrow
+item_506,O3,word,時間についてのことば,time_words,あとで,Atode,Later,later
+item_507,O4,word,時間についてのことば,time_words,いま（今）,Ima,Now,now
+item_508,O5,word,時間についてのことば,time_words,きのう（昨日）,Kinou,Yesterday,yesterday
+item_509,O6,word,時間についてのことば,time_words,きょう（今日）,Kyou,Today,today
+item_510,O7,word,時間についてのことば,time_words,さっき,Sakki,A_moment_ago,
+item_511,O8,word,時間についてのことば,time_words,時間,Jikan,Time,time
+item_512,O9,word,時間についてのことば,time_words,ひる（昼）,Hiru,Daytime,daytime
+item_513,O10,word,時間についてのことば,time_words,まだ,Mada,Yet,yet
+item_514,O11,word,時間についてのことば,time_words,夕方,Yuugata,Evening,evening
+item_515,O12,word,時間についてのことば,time_words,よる（夜）,Yoru,Night,night
+item_516,P1,word,ようす・性質,descriptive_words,青い,Aoi,Blue,blue
+item_517,P2,word,ようす・性質,descriptive_words,赤い,Akai,Red,red
+item_518,P3,word,ようす・性質,descriptive_words,明るい,Akarui,Bright,bright
+item_519,P4,word,ようす・性質,descriptive_words,あたらしい,Atarashii,New,new
+item_520,P5,word,ようす・性質,descriptive_words,あつい（熱い・暑い）,Atsui,Hot,hot
+item_521,P6,word,ようす・性質,descriptive_words,あまい,Amai,Sweet,sweet
+item_522,P7,word,ようす・性質,descriptive_words,いい,Ii,Good,good
+item_523,P8,word,ようす・性質,descriptive_words,いじわる,Ijiwaru,Mean,mean
+item_524,P9,word,ようす・性質,descriptive_words,いたい（痛い）,Itai,Painful,painful
+item_525,P10,word,ようす・性質,descriptive_words,うまい,Umai,Good,good
+item_526,P11,word,ようす・性質,descriptive_words,うるさい,Urusai,Noisy,noisy
+item_527,P12,word,ようす・性質,descriptive_words,うれしい,Ureshii,Glad,happy
+item_528,P13,word,ようす・性質,descriptive_words,おいしい,Oishii,Delicious,tasty
+item_529,P14,word,ようす・性質,descriptive_words,大きい,Ookii,Large,large
+item_530,P15,word,ようす・性質,descriptive_words,おかしい,Okashii,Funny,funny
+item_531,P16,word,ようす・性質,descriptive_words,遅い,Osoi,Slow,slow
+item_532,P17,word,ようす・性質,descriptive_words,重い,Omoi,Heavy,heavy
+item_533,P18,word,ようす・性質,descriptive_words,おりこう,Orikou,Clever,clever
+item_534,P19,word,ようす・性質,descriptive_words,かたい（固い）,Katai,Hard,hard
+item_535,P20,word,ようす・性質,descriptive_words,かゆい,Kayui,Itchy,itchy
+item_536,P21,word,ようす・性質,descriptive_words,からい,Karai,Spicy,spicy
+item_537,P22,word,ようす・性質,descriptive_words,からっぽ,Karappo,Empty,empty
+item_538,P23,word,ようす・性質,descriptive_words,かわいい,Kawaii,Cute,cute
+item_539,P24,word,ようす・性質,descriptive_words,かわいそう,Kawaisou,Pity,pitiful
+item_540,P25,word,ようす・性質,descriptive_words,かわいた,Kawaita,Dried,dry (description)
+item_541,P26,word,ようす・性質,descriptive_words,きたない,Kitanai,Dirty,dirty
+item_542,P27,word,ようす・性質,descriptive_words,きらい（嫌い）,Kirai,Dislike,dislike
+item_543,P28,word,ようす・性質,descriptive_words,きれい,Kirei,Clean,clean (description)
+item_544,P29,word,ようす・性質,descriptive_words,くさい（臭い）,Kusai,Odor,smelly
+item_545,P30,word,ようす・性質,descriptive_words,くらい（暗い）,Kurai,Dark,dark
+item_546,P31,word,ようす・性質,descriptive_words,黒い,Kuroi,Black,black
+item_547,P32,word,ようす・性質,descriptive_words,元気,Genki,Energy,
+item_548,P33,word,ようす・性質,descriptive_words,こわい,Kowai,Scary,scary
+item_549,P34,word,ようす・性質,descriptive_words,寒い,Samui,Cold,cold
+item_550,P35,word,ようす・性質,descriptive_words,四角い,Shikakui,Square,square
+item_551,P36,word,ようす・性質,descriptive_words,しずか（静か）,Shizuka,Quiet,quiet
+item_552,P37,word,ようす・性質,descriptive_words,じょうず,Jyouzu,Good,good
+item_553,P38,word,ようす・性質,descriptive_words,白い,Shiroi,White,white
+item_554,P39,word,ようす・性質,descriptive_words,すごい,Sugoi,Great,good
+item_555,P40,word,ようす・性質,descriptive_words,すっぱい,Suppai,Sour,sour
+item_556,P41,word,ようす・性質,descriptive_words,だいじ（大事）,Daiji,Important,
+item_557,P42,word,ようす・性質,descriptive_words,大丈夫,Daijoubu,All_right,
+item_558,P43,word,ようす・性質,descriptive_words,たかい（高い）,Takai,High,high
+item_559,P44,word,ようす・性質,descriptive_words,たのしい（楽しい）,Tanoshii,Pleasant,fun
+item_560,P45,word,ようす・性質,descriptive_words,小さい,Chiisai,Small,small
+item_561,P46,word,ようす・性質,descriptive_words,ちがう,Chigau,Wrong,wrong
+item_562,P47,word,ようす・性質,descriptive_words,疲れた,Tsukareta,Exhausted,tired
+item_563,P48,word,ようす・性質,descriptive_words,つめたい（冷たい）,Tsumetai,Cold,cold
+item_564,P49,word,ようす・性質,descriptive_words,ない,Nai,None,none
+item_565,P50,word,ようす・性質,descriptive_words,長い,Nagai,Long,long
+item_566,P51,word,ようす・性質,descriptive_words,ぬれた（濡れた）,Nureta,Wet,wet
+item_567,P52,word,ようす・性質,descriptive_words,ねむい,Nemui,Sleepy,sleepy
+item_568,P53,word,ようす・性質,descriptive_words,はやい,Hayai,Fast,fast
+item_569,P54,word,ようす・性質,descriptive_words,病気,Byouki,Sick,sick
+item_570,P55,word,ようす・性質,descriptive_words,へん（変）,Hen,Strange,strange
+item_571,P56,word,ようす・性質,descriptive_words,まずい,Mazui,Bad_taste,yucky
+item_572,P57,word,ようす・性質,descriptive_words,まるい（丸い）,Marui,Round,round
+item_573,P58,word,ようす・性質,descriptive_words,みどり（緑）,Midori,Green,green
+item_574,P59,word,ようす・性質,descriptive_words,むずかしい,Muzukashii,Difficult,difficult
+item_575,P60,word,ようす・性質,descriptive_words,やさしい,Yasashii,Easy,easy
+item_576,P61,word,ようす・性質,descriptive_words,やわらかい（柔らかい）,Yawarakai,Soft,soft
+item_577,P62,word,ようす・性質,descriptive_words,ゆっくり,Yukkuri,Slowly,slowly
+item_578,P63,word,ようす・性質,descriptive_words,悪い,Warui,Bad,bad
+item_579,Q1,word,代名詞,pronouns,あそこ,Asoko,Overthere,there
+item_580,Q2,word,代名詞,pronouns,あっち,Acchi,Overthere,there
+item_581,Q3,word,代名詞,pronouns,あの,Ano,That,that
+item_582,Q4,word,代名詞,pronouns,あれ,Are,That,that
+item_583,Q5,word,代名詞,pronouns,あんた,Anta,You,you
+item_584,Q6,word,代名詞,pronouns,あんな,Anna,Such,such
+item_585,Q7,word,代名詞,pronouns,こう,Kou,Like_this,like this
+item_586,Q8,word,代名詞,pronouns,ここ,Koko,Here,here
+item_587,Q9,word,代名詞,pronouns,こっち,Kocchi,Here,here
+item_588,Q10,word,代名詞,pronouns,この,Kono,This,this
+item_589,Q11,word,代名詞,pronouns,これ,Kore,This,this
+item_590,Q12,word,代名詞,pronouns,こんな,Konna,Such,such
+item_591,Q13,word,代名詞,pronouns,そう,Sou,So,so
+item_592,Q14,word,代名詞,pronouns,そこ,Soko,There,there
+item_593,Q15,word,代名詞,pronouns,そっち,Socchi,Over_there,there
+item_594,Q16,word,代名詞,pronouns,その,Sono,That,that
+item_595,Q17,word,代名詞,pronouns,それ,Sore,It,it
+item_596,Q18,word,代名詞,pronouns,そんな,Sonna,Such,such
+item_597,Q19,word,代名詞,pronouns,ぼく,Boku,I,I
+item_598,Q20,word,代名詞,pronouns,ぼくの,Bokuno,My,my
+item_599,Q21,word,代名詞,pronouns,わたし,Watashi,I,I
+item_600,Q22,word,代名詞,pronouns,わたしの,Watashino,My,my
+item_601,R1,word,質問のことば,question_words,いつ,Itsu,When,when (question)
+item_602,R2,word,質問のことば,question_words,だれ,Dare,Who,who
+item_603,R3,word,質問のことば,question_words,どう,Dou,How,how
+item_604,R4,word,質問のことば,question_words,どうして,Doushite,Why,why
+item_605,R5,word,質問のことば,question_words,どこ,Doko,Where,where (question)
+item_606,R6,word,質問のことば,question_words,どっち,Docchi,Which,which (question)
+item_607,R7,word,質問のことば,question_words,どれ,Dore,Which_one,which (question)
+item_608,R8,word,質問のことば,question_words,なぜ,Naze,Why,why
+item_609,R9,word,質問のことば,question_words,なに,Nani,What,what
+item_610,R10,word,質問のことば,question_words,なんで,Nande,Why,why
+item_611,S1,word,位置と場所についてのことば,locations,あいだ,Aida,Between,between
+item_612,S2,word,位置と場所についてのことば,locations,うえ（上）,Ue,Up,up
+item_613,S3,word,位置と場所についてのことば,locations,うしろ（後ろ）,Ushiro,Behind,behind
+item_614,S4,word,位置と場所についてのことば,locations,うち（内）,Uchi,Inside,inside
+item_615,S5,word,位置と場所についてのことば,locations,かど（角）,Kado,Horn,
+item_616,S6,word,位置と場所についてのことば,locations,した（下）,Shita,Under,under
+item_617,S7,word,位置と場所についてのことば,locations,すみ（隅）,Sumi,Corner,
+item_618,S8,word,位置と場所についてのことば,locations,そと（外）,Soto,Outside,outside
+item_619,S9,word,位置と場所についてのことば,locations,そば,Soba,By_the_side,beside
+item_620,S10,word,位置と場所についてのことば,locations,近く,Chikaku,Near,near
+item_621,S11,word,位置と場所についてのことば,locations,つぎ（次）,Tsugi,Next,next
+item_622,S12,word,位置と場所についてのことば,locations,遠く,Tooku,Far,far
+item_623,S13,word,位置と場所についてのことば,locations,ところ・とこ,Tokoro_toko,Place,place
+item_624,S14,word,位置と場所についてのことば,locations,となり（隣り）,Tonari,Next_to,next to
+item_625,S15,word,位置と場所についてのことば,locations,なか（中）,Naka,Center,middle
+item_626,S16,word,位置と場所についてのことば,locations,はし（端）,Hashi,End,end
+item_627,S17,word,位置と場所についてのことば,locations,反対,Hantai,Opposite,opposite
+item_628,S18,word,位置と場所についてのことば,locations,左,Hidari,Left,
+item_629,S19,word,位置と場所についてのことば,locations,ふち（縁）,Fuchi,Edge,
+item_630,S20,word,位置と場所についてのことば,locations,まえ（前）,Mae,Before,before
+item_631,S21,word,位置と場所についてのことば,locations,まわり,Mawari,Around,around
+item_632,S22,word,位置と場所についてのことば,locations,まん中,Mannaka,Middle,middle
+item_633,S23,word,位置と場所についてのことば,locations,右,Migi,Right,right
+item_634,S24,word,位置と場所についてのことば,locations,むこう（向こう）,Mukou,Over_there,
+item_635,S25,word,位置と場所についてのことば,locations,よこ（横）,Yoko,Beside,beside
+item_636,S26,word,位置と場所についてのことば,locations,わき,Waki,Side,side
+item_637,T1,word,数量をあらわすことば,quantifiers,いち,Ichi,One,one
+item_638,T2,word,数量をあらわすことば,quantifiers,いちばん（一番）,Ichiban,First,first
+item_639,T3,word,数量をあらわすことば,quantifiers,いっかい（一回）,Ikkai,Once,once
+item_640,T4,word,数量をあらわすことば,quantifiers,いっしょ（一緒）,Issho,Together,together
+item_641,T5,word,数量をあらわすことば,quantifiers,いっぱい,Ippai,Full,full
+item_642,T6,word,数量をあらわすことば,quantifiers,同じ,Onaji,Same,same
+item_643,T7,word,数量をあらわすことば,quantifiers,ぜんぶ（全部）,Zenbu,All,all
+item_644,T8,word,数量をあらわすことば,quantifiers,たくさん,Takusan,Lots,a lot
+item_645,T9,word,数量をあらわすことば,quantifiers,ちょっと,Chotto,A_little,a little
+item_646,T10,word,数量をあらわすことば,quantifiers,なし,Nashi,None,none
+item_647,T11,word,数量をあらわすことば,quantifiers,半分,Hanbun,Half,half
+item_648,T12,word,数量をあらわすことば,quantifiers,ひとつ,Hitotsu,One,one
+item_649,T13,word,数量をあらわすことば,quantifiers,ほかの,Hokano,Other,other
+item_650,T14,word,数量をあらわすことば,quantifiers,みんな,Minna,Everyone,everyone
+item_651,T15,word,数量をあらわすことば,quantifiers,もういっかい,Mouikkai,Again,again
+item_652,T16,word,数量をあらわすことば,quantifiers,もうひとつ・もひとつ,Mouhitotsu_mohitotsu,Another,another
+item_653,T17,word,数量をあらわすことば,quantifiers,もっと,Motto,More,more
+item_654,U1,word,接続語,connecting_words,そして,Soshite,And,and
+item_655,U2,word,接続語,connecting_words,だから,Dakara,So,so
+item_656,U3,word,接続語,connecting_words,だけど,Dakedo,However,however
+item_657,U4,word,接続語,connecting_words,だって,Datte,Because,because
+item_658,U5,word,接続語,connecting_words,でも,Demo,But,but
+item_659,U6,word,接続語,connecting_words,もしも,Moshimo,If,if
+item_660,V1,word,幼児語（その２）,sounds2,エンエン（泣く）,Enen,Cry,
+item_661,V2,word,幼児語（その２）,sounds2,おてて（お手々）,Otete,Hand,
+item_662,V3,word,幼児語（その２）,sounds2,おんぶ,Onbu,Piggyback_ride,
+item_663,V4,word,幼児語（その２）,sounds2,カーカー（カラス）,Kaakaa,Caw_caw,
+item_664,V5,word,幼児語（その２）,sounds2,きれいきれい,Kireikirei,Clean_up,
+item_665,V6,word,幼児語（その２）,sounds2,クック（靴）,Kukku,Shoes,
+item_666,V7,word,幼児語（その２）,sounds2,ぐるぐる,Guruguru,Spin,
+item_667,V8,word,幼児語（その２）,sounds2,ごっつん,Gottsun,Hit_head,
+item_668,V9,word,幼児語（その２）,sounds2,ジャー（水などこぼす時）,Jaa,Spill_water,
+item_669,V10,word,幼児語（その２）,sounds2,ジージ・ジジ（祖父）,Jiiji_Jiji,Grandfather,
+item_670,V11,word,幼児語（その２）,sounds2,ジージ（字）,Jiiji,Writing,
+item_671,V12,word,幼児語（その２）,sounds2,シーシ（おしっこ）,Shiishi,Pee,
+item_672,V13,word,幼児語（その２）,sounds2,タイタイ・おとと（魚）,Taitai_ototo,Fish,
+item_673,V14,word,幼児語（その２）,sounds2,だっこ,Dakko,Hold_me,
+item_674,V15,word,幼児語（その２）,sounds2,ちゃんこ（おすわり）,Chanko,Sitting,
+item_675,V16,word,幼児語（その２）,sounds2,チューチュー（ねずみ）,Cyuucyuu,Squeak,
+item_676,V17,word,幼児語（その２）,sounds2,チュンチュン（鳥）,Cyuncyun,Little_bird,
+item_677,V18,word,幼児語（その２）,sounds2,チョキチョキ（はさみ）,Chokichoki,Scissors,
+item_678,V19,word,幼児語（その２）,sounds2,ないない（片づけ）,Nainai,Clean_up,
+item_679,V20,word,幼児語（その２）,sounds2,ネンネ,Nenne,Sleep,
+item_680,V21,word,幼児語（その２）,sounds2,バーバ・ババ（祖母）,Baaba_baba,Grandmother,
+item_681,V22,word,幼児語（その２）,sounds2,パカパカ（馬）,Pakapaka,Horse,
+item_682,V23,word,幼児語（その２）,sounds2,パクパク（食べる時）,Pakupaku,Eat,
+item_683,V24,word,幼児語（その２）,sounds2,ぴよぴよ（ひよこ）,Piyopiyo,Chirp,
+item_684,V25,word,幼児語（その２）,sounds2,ブーブー（豚）,Buubuu,Oink,oink
+item_685,V26,word,幼児語（その２）,sounds2,ブーン（飛行機）,Buun,Airplane,
+item_686,V27,word,幼児語（その２）,sounds2,ポーン（投げる）,Poon,Throw,
+item_687,V28,word,幼児語（その２）,sounds2,ポンポン（おなか）,Ponpon,Stomach,
+item_688,V29,word,幼児語（その２）,sounds2,マンマ（食べ物）,Manma,Food,
+item_689,W1,word,会話語,conversations,あっ,At,Ah,
+item_690,W2,word,会話語,conversations,あのね,Anone,Well,
+item_691,W3,word,会話語,conversations,あれっ・あら,Aret_Ara,What?,
+item_692,W4,word,会話語,conversations,いいよ,Iiyo,OK,ok
+item_693,W5,word,会話語,conversations,いや,Iya,Disagreeable,
+item_694,W6,word,会話語,conversations,ううん（打ち消し）,Uun,No,no
+item_695,W7,word,会話語,conversations,うん（返事として）,Un,Yup,
+item_696,W8,word,会話語,conversations,えっと・ええと,Etto_eeto,Um,
+item_697,W9,word,会話語,conversations,そうそう,Sousou,Oh_yeah,
+item_698,W10,word,会話語,conversations,ねえ,Nee,Hey,
+item_699,W11,word,会話語,conversations,ほら,Hora,You_see,
+item_700,W12,word,会話語,conversations,もしもし,Moshimoshi,Hello,hello
+item_701,W13,word,会話語,conversations,やだ・いやだ,Yada_Iyada,No,no
+item_702,W14,word,会話語,conversations,ん（間をとるのに）,N,Hmm,
+item_703,X1,word,その他,others,あった（見つけた時に）,Atta,Found_it,
+item_704,X2,word,その他,others,おいで,Oide,Come_here,
+item_705,X3,word,その他,others,カンパーイ（乾杯）,Kanpaai,Cheers,
+item_706,X4,word,その他,others,こんど,Kondo,Next_time,
+item_707,X5,word,その他,others,しまう,Shimau,Store,
+item_708,X6,word,その他,others,また,Mata,Also,also
+item_709,X7,word,その他,others,もう,Mou,Already,already
+item_710,X8,word,その他,others,よいしょ,Yoisho,Heave_ho,
+item_711,X9,word,その他,others,よしよし,Yoshiyoshi,There_there,
+item_712,q2_1,how_use_words,NA,NA,お子さんはその場にいない人の持ち物をさわったり、指さしして、その人の名前を言いますか。たとえば、”パパ”とか”トーチャン”と言いますか。,,does your child ever pick up or point to an object and name an absent person to whom the object belongs?,
+item_713,q2_2,how_use_words,NA,NA,お子さんは目の前にない物についてたずねられた時、わかりますか。たとえば、あなたが”どこにクマさんあるかな？」”とたずねた時、オモチャのぬいぐるみを取りに、いつもおいてある部屋へ行きますか。,,does your child understand if you ask for something that is not in the room?,
+item_714,q2_3,how_use_words,NA,NA,お子さんは見つからないオモチャや、ないオモチャについてたずねたり、いない人についてたずねたり、目の前にないものについて話しますか。,,does your child talk a bout objects that are not present?,
+item_715,q2_4,how_use_words,NA,NA,お子さんはこれから起こることについて話しますか。たとえば、お父さんが旅行へ出かける前に”汽車ぽっぽ”とか”飛行機”と言ったり、お子さんを公園につれて行こうとする時に”ブランコ”と言ったりしますか。,,does your child ever talk about something that's going to happen in the future?,
+item_716,q2_5,how_use_words,NA,NA,お子さんは過去に経験したことについて話しますか。たとえば、以前に動物園でぞうをみた経験があったら、それを思い出して、”そうさん”とか”動物園”と言ったりしますか。,,does your child ever talk about past events or people who are not present?,
+item_717,qA_1,function_words,NA,NA,物の持ち主や、物の付属する主体を言い表したい時、大人は、助詞の「の」を名刺にくっつけて表現します。たとえば、「お父さんの」、「わたしの」、「自動車の」、「幼稚園の」など、あなたのお子さんは、「の」をくっつけて話すことができますか。,,,
+item_718,qA_2,function_words,NA,NA,進行中の出来事や物事の状態を言い表したい時、大人は、助動詞「～ている」を動詞にくっつけて表現します。たとえば、「走っている」、「降っている」、「持っている」など、あなたのお子さんは、「～ている」をくっつけて話すことができますか。,,,
+item_719,qA_3,function_words,NA,NA,出来事や動詞を打ち消し（否定し）たい時、大人は、助動詞「～ない」を動詞にくっつけて表現します。たとえば、「行かない」、「持っていない」、「食べない」など、あなたのお子さんは、「～ない」をくっつけて話すことができますか。,,,
+item_720,qA_4,function_words,NA,NA,ていねいに表現したい時、大人は、助動詞「～ます」を動詞のうしろにくっつけて表現します。たとえば、「食べます」、「行きます」などのように言います。あなたのお子さんは「～ます」をくっつけて話すことができますか。,,,
+item_721,qB_1,case_markers,NA,NA,が（お母さんが）,Ga,,
+item_722,qB_2,case_markers,NA,NA,の（パパの）,No,,
+item_723,qB_3,case_markers,NA,NA,に（お外に）,Ni,,
+item_724,qB_4,case_markers,NA,NA,を（パンを）,Wo,,
+item_725,qB_5,case_markers,NA,NA,で（鉛筆で）,De,,
+item_726,qB_6,case_markers,NA,NA,へ（公園へ）,He,,
+item_727,qB_7,case_markers,NA,NA,と（お母さんと）,To,,
+item_728,qB_8,case_markers,NA,NA,から（会社から）,Kara,,
+item_729,qB_9,case_markers,NA,NA,って（ガチャンって）,Tte,,
+item_730,qB_10,case_markers,NA,NA,は（パパは）,Wa_ha,,
+item_731,qB_11,case_markers,NA,NA,も（ママも）,Mo,,
+item_732,qB_12,case_markers,NA,NA,だけ（ごはんだけ）,Dake,,
+item_733,qB_13,case_markers,NA,NA,しか（パンしか）,Shika,,
+item_734,qB_14,case_markers,NA,NA,や（りんごや）,Ya,,
+item_735,qB_15,case_markers,NA,NA,たら（食べたら）,Tara,,
+item_736,qB_16,case_markers,NA,NA,て（取って）,Te,,
+item_737,qB_17,case_markers,NA,NA,から（食べてから）,Kara,,
+item_738,qB_18,case_markers,NA,NA,ので（落ちたので）,Node,,
+item_739,qB_19,case_markers,NA,NA,のに（入れたのに）,Noni,,
+item_740,qB_20,case_markers,NA,NA,ね（きれいね）,Ne,,
+item_741,qB_21,case_markers,NA,NA,よ（熱いよ）,Yo,,
+item_742,qB_22,case_markers,NA,NA,の（もらったの）,No,,
+item_743,qB_23,case_markers,NA,NA,わ（かわいいわ）,Wa,,
+item_744,qB_24,case_markers,NA,NA,か（食べようか）,Ka,,
+item_745,qB_25,case_markers,NA,NA,かな（行こうかな）,Kana,,
+item_746,qC_1,auxiliary_verbs,NA,NA,?ます（食べます）,Masu,,
+item_747,qC_2,auxiliary_verbs,NA,NA,?ました（食べました）,Mashita,,
+item_748,qC_3,auxiliary_verbs,NA,NA,?ましょう（食べましょう）,Mashou,,
+item_749,qC_4,auxiliary_verbs,NA,NA,?ません（食べません）,Masen,,
+item_750,qC_5,auxiliary_verbs,NA,NA,?る（食べる）,Ru,,
+item_751,qC_6,auxiliary_verbs,NA,NA,?た（食べた）,Ta,,
+item_752,qC_7,auxiliary_verbs,NA,NA,?させる（食べさせる）,Saseru,,
+item_753,qC_8,auxiliary_verbs,NA,NA,?させた（食べさせた）,Saseta,,
+item_754,qC_9,auxiliary_verbs,NA,NA,?させない（食べさせない）,Sasenai,,
+item_755,qC_10,auxiliary_verbs,NA,NA,?せる（飲ませる）,Seru,,
+item_756,qC_11,auxiliary_verbs,NA,NA,?せた（飲ませた）,Seta,,
+item_757,qC_12,auxiliary_verbs,NA,NA,?せない（飲ませない）,Senai,,
+item_758,qC_13,auxiliary_verbs,NA,NA,?ない（食べない）,Nai,,
+item_759,qC_14,auxiliary_verbs,NA,NA,?ん（食べん）,N,,
+item_760,qC_15,auxiliary_verbs,NA,NA,?なかった（食べなかった）,Nakatta,,
+item_761,qC_16,auxiliary_verbs,NA,NA,?よう（食べよう）,You,,
+item_762,qC_17,auxiliary_verbs,NA,NA,?う（飲もう）,U,,
+item_763,qC_18,auxiliary_verbs,NA,NA,?たい（食べたい）,Tai,,
+item_764,qC_19,auxiliary_verbs,NA,NA,?たかった（食べたかった）,Takatta,,
+item_765,qC_20,auxiliary_verbs,NA,NA,?たくない（食べたくない）,Takunai,,
+item_766,qC_21,auxiliary_verbs,NA,NA,?られる（食べられる）,Rareru,,
+item_767,qC_22,auxiliary_verbs,NA,NA,?られた（食べられた）,Rareta,,
+item_768,qC_23,auxiliary_verbs,NA,NA,?られない（食べられない）,Rarenai,,
+item_769,qC_24,auxiliary_verbs,NA,NA,?れる（食べれる）,Reru,,
+item_770,qC_25,auxiliary_verbs,NA,NA,?れた（食べれた）,Reta,,
+item_771,qC_26,auxiliary_verbs,NA,NA,?れない（食べれない）,Renai,,
+item_772,qC_27,auxiliary_verbs,NA,NA,?でしょう（食べれるでしょう）,Deshou,,
+item_773,qC_28,auxiliary_verbs,NA,NA,?です（パンです）,Desu,,
+item_774,qC_29,auxiliary_verbs,NA,NA,?だ（パンだ）,Da,,
+item_775,qC_30,auxiliary_verbs,NA,NA,?じゃない（パンじゃない）,Jyanai,,
+item_776,qD,combine,NA,NA,お子さんは、もう、二語文が話せますか。たとえば、「お母ちゃん だっこ」「ネンネ する」「ブーブー 乗った」などです。,,has your child begun to combine word yet?,
+item_780,qF_1,complexity,NA,NA,パパ ズボン / パパの ズボン,Papa_no_zubon_(target_No),,
+item_781,qF_2,complexity,NA,NA,○○ちゃん する / ○○ちゃんが する,XXchan_ga_suru_(target_Ga),,
+item_782,qF_3,complexity,NA,NA,バス 乗った / バスに 乗った,Basu_ni_notta_(target_Ni),,
+item_783,qF_4,complexity,NA,NA,くつ あった / くつが あった,Kutsu_ga_atta_(target_Ga),,
+item_784,qF_5,complexity,NA,NA,これ 遊ぶ / これで 遊ぶ,Kore_de_asobu_(target_De),,
+item_785,qF_6,complexity,NA,NA,お母さん 行った / お母さんと 行った,Okaasan_to_itta_(target_To),,
+item_786,qF_7,complexity,NA,NA,本 みる / 本を みる,Hon_o_miru_(target_Wo),,
+item_787,qF_8,complexity,NA,NA,パパ 会社 / パパは 会社,Papa_wa_kaisha_(target_Wa),,
+item_788,qF_9,complexity,NA,NA,これ 好き / これが 好き,Kore_ga_suki_(target_Ga),,
+item_789,qF_10,complexity,NA,NA,おばあちゃん もらった / おばあちゃんに もらった,Obaachan_ni_moratta_(target_Ni),,
+item_790,qF_11,complexity,NA,NA,いちご  バナナ / いちごと バナナ,Ichigo_to_banana_(target_To),,
+item_791,qF_12,complexity,NA,NA,○○ちゃん 食べる / ○○ちゃんも 食べる,XXchan_mo_taberu_(target_Mo),,
+item_792,qF_13,complexity,NA,NA,おいしい / おいしいね,Oishii_ne_(target_Ne),,
+item_793,qF_14,complexity,NA,NA,痛い / 痛いの,Itai_no_(target_No),,
+item_794,qF_15,complexity,NA,NA,食べた / 食べたよ,Tabeta_yo_(target_Yo),,
+item_795,qF_16,complexity,NA,NA,ネンネ / ネンネ する,Nenne_suru_(target_Suru),,
+item_796,qF_17,complexity,NA,NA,きれい ない / きれいじゃない,Kirei_ja_nai_(target_Ja),,
+item_797,qF_18,complexity,NA,NA,取って / 取って ちょうだい,totte_choudai_(target_Choudai),,
+item_798,qF_19,complexity,NA,NA,食べる だめ / 食べたら だめ,Tabeta_ra_dame_(target_Ra),,
+item_799,qF_20,complexity,NA,NA,大きい ない / 大きくない,Ookiku_nai_(target_Ku),,
+item_800,qF_21,complexity,NA,NA,きれい 花 / きれいな 花,Kirei_na_hana_(target_Na),,
+item_801,qF_22,complexity,NA,NA,赤ちゃん 泣く / 赤ちゃん 泣いてる,Akachan_nai_teru_(target_Teru),,
+item_802,qF_23,complexity,NA,NA,お外 行く / お外 行こう,Osoto_i_kou_(target_Kou),,
+item_803,qF_24,complexity,NA,NA,テレビ みる / テレビ みたい,Terebi_mi_tai_(target_Tai),,
+item_804,qF_25,complexity,NA,NA,食べた / 食べました,Tabe_mashita_(target_Mashita),,
+item_805,qF_26,complexity,NA,NA,きれい なった / きれいに なった,Kirei_ni_natta_(target_Ni),,
+item_806,qF_27,complexity,NA,NA,どこ？ / おもちゃ どこ？,Omocha_doko_(target_Doko),,
+item_807,qF_28,complexity,NA,NA,食べる / まだ 食べる,Mada_taberu_(target_Mada),,
+item_808,qF_29,complexity,NA,NA,要らん / もう 要らん,Mou_Iran_(target_Mou),,
+item_809,qF_30,complexity,NA,NA,ブーブー / ブーブー 自動車,Buubuu_jidousha_(target_Jidousha),,
+item_810,qF_31,complexity,NA,NA,お母さん おいで / お母さん こっち おいで,Okaasan_kocchi_oide_(target_Kocchi),,
+item_811,qF_32,complexity,NA,NA,くつ ちっちゃい / この くつ ちっちゃい,Kono_kutsu_chicchai_(target_Kono),,
+item_812,qF_33,complexity,NA,NA,鼻 長い / ぞうさん 鼻 長い,Zousan_hana_nagai_(target_Zousan),,
+item_813,qF_34,complexity,NA,NA,人形 ある / 赤ちゃん 人形 ある,Akachan_ningyou _aru_(target_Akachan),,
+item_814,qF_35,complexity,NA,NA,パパ 行った / パパ 会社 行った,Papa_kaisha _itta_(target_Kaisha),,
+item_815,qF_36,complexity,NA,NA,いっぱい ある / くるま いっぱい ある,Kuruma_ippai_aru_(target_Kuruma),,
+item_816,qF_37,complexity,NA,NA,これ ナイナイ / これ ナイナイ する,Kore_nainai_suru_(target_Suru),,

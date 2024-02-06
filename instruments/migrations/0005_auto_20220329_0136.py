@@ -4,38 +4,37 @@ from django.db import migrations
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('instruments', '0004_auto_20220325_0459'),
+        ("instruments", "0004_auto_20220325_0459"),
     ]
 
     operations = [
         migrations.RemoveField(
-            model_name='hebrew_ws',
-            name='item_640',
+            model_name="hebrew_ws",
+            name="item_640",
         ),
         migrations.RemoveField(
-            model_name='hebrew_ws',
-            name='item_641',
+            model_name="hebrew_ws",
+            name="item_641",
         ),
         migrations.RemoveField(
-            model_name='hebrew_ws',
-            name='item_642',
+            model_name="hebrew_ws",
+            name="item_642",
         ),
         migrations.RemoveField(
-            model_name='hebrew_ws',
-            name='item_643',
+            model_name="hebrew_ws",
+            name="item_643",
         ),
         migrations.RemoveField(
-            model_name='hebrew_ws',
-            name='item_644',
+            model_name="hebrew_ws",
+            name="item_644",
         ),
         migrations.RemoveField(
-            model_name='hebrew_ws',
-            name='item_645',
+            model_name="hebrew_ws",
+            name="item_645",
         ),
         migrations.RemoveField(
-            model_name='hebrew_ws',
-            name='item_646',
+            model_name="hebrew_ws",
+            name="item_646",
         ),
     ]

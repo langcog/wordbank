@@ -6,6 +6,5 @@ from instruments.models import *
 
 
 class Stats(View):
-
-  def get(self, request):
-    return render(request, 'stats.html', {'data': []})
+    def get(self, request):
+        return render(request, "stats.html", {"data": []})

@@ -1,5 +1,6 @@
 from django.http import HttpResponse
 
+
 class HttpResponseNoContent(HttpResponse):
     """
     Special HTTP response with no content, just headers.
@@ -17,6 +18,7 @@ class HttpResponseNoContent(HttpResponse):
 
     def _get_content(self, value):
         pass
+
 
 def health_view(request):
     return HttpResponseNoContent()

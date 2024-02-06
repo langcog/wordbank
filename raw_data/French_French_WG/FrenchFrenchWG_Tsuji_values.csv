@@ -1,0 +1,33 @@
+type,value,data_value
+first_signs,yes,1
+first_signs,no,0
+phrases,understands,1
+phrases,,0
+starting_to_talk,yes,1
+starting_to_talk,yes,oui
+starting_to_talk,no,0
+word,produces,2
+word,understands,1
+word,,3
+gestures_first,yes,1
+gestures_first,no,0
+gestures_games,yes,1
+gestures_games,no,0
+gestures_objects,yes,1
+gestures_objects,no,0
+gestures_parent,yes,1
+gestures_parent,no,0
+gestures_adult,yes,1
+gestures_adult,no,0
+mom_ed,secondary,BAC
+mom_ed,some college,1ère année de Licence (BAC+1)
+mom_ed,some college,2ème année de Licence (BAC+2)
+mom_ed,some college,3ème année de Licence (BAC+3)
+mom_ed,some college,Formation professionnelle post-bac
+mom_ed,college,Master 1 (BAC+4)
+mom_ed,some graduate,Master 2 (BAC+5)
+mom_ed,graduate,docteur en pharmacie (bac+6)
+mom_ed,graduate,Doctorat (BAC+8)
+mom_ed,graduate,Post doctorat (Niveau supérieur au BAC+8)
+sex,M,m
+sex,F,f

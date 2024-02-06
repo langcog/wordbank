@@ -5,550 +5,4290 @@ import django.db.models.deletion
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('instruments', '0007_finnish_ws_finnish_ws_short'),
+        ("instruments", "0007_finnish_ws_finnish_ws_short"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='American_Sign_Language_CDI',
+            name="American_Sign_Language_CDI",
             fields=[
-                ('basetable_ptr', models.OneToOneField(auto_created=True, on_delete=django.db.models.deletion.CASCADE, parent_link=True, primary_key=True, serialize=False, to='instruments.basetable')),
-                ('Item_1', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_2', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_3', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_4', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_5', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_6', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_7', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_8', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_9', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_10', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_11', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_12', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_13', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_14', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_15', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_16', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_17', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_18', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_19', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_20', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_21', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_22', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_23', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_24', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_25', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_26', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_27', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_28', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_29', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_30', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_31', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_32', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_33', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_34', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_35', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_36', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_37', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_38', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_39', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_40', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_41', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_42', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_43', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_44', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_45', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_46', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_47', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_48', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_49', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_50', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_51', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_52', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_53', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_54', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_55', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_56', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_57', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_58', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_59', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_60', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_61', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_62', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_63', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_64', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_65', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_66', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_67', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_68', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_69', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_70', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_71', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_72', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_73', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_74', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_75', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_76', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_77', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_78', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_79', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_80', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_81', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_82', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_83', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_84', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_85', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_86', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_87', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_88', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_89', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_90', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_91', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_92', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_93', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_94', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_95', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_96', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_97', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_98', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_99', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_100', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_101', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_102', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_103', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_104', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_105', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_106', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_107', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_108', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_109', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_110', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_111', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_112', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_113', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_114', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_115', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_116', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_117', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_118', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_119', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_120', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_121', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_122', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_123', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_124', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_125', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_126', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_127', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_128', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_129', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_130', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_131', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_132', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_133', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_134', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_135', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_136', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_137', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_138', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_139', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_140', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_141', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_142', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_143', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_144', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_145', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_146', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_147', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_148', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_149', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_150', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_151', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_152', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_153', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_154', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_155', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_156', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_157', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_158', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_159', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_160', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_161', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_162', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_163', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_164', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_165', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_166', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_167', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_168', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_169', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_170', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_171', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_172', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_173', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_174', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_175', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_176', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_177', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_178', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_179', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_180', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_181', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_182', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_183', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_184', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_185', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_186', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_187', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_188', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_189', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_190', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_191', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_192', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_193', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_194', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_195', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_196', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_197', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_198', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_199', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_200', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_201', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_202', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_203', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_204', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_205', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_206', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_207', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_208', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_209', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_210', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_211', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_212', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_213', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_214', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_215', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_216', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_217', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_218', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_219', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_220', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_221', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_222', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_223', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_224', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_225', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_226', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_227', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_228', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_229', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_230', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_231', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_232', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_233', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_234', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_235', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_236', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_237', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_238', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_239', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_240', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_241', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_242', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_243', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_244', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_245', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_246', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_247', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_248', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_249', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_250', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_251', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_252', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_253', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_254', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_255', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_256', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_257', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_258', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_259', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_260', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_261', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_262', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_263', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_264', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_265', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_266', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_267', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_268', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_269', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_270', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_271', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_272', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_273', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_274', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_275', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_276', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_277', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_278', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_279', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_280', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_281', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_282', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_283', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_284', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_285', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_286', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_287', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_288', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_289', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_290', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_291', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_292', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_293', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_294', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_295', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_296', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_297', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_298', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_299', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_300', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_301', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_302', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_303', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_304', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_305', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_306', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_307', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_308', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_309', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_310', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_311', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_312', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_313', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_314', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_315', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_316', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_317', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_318', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_319', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_320', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_321', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_322', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_323', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_324', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_325', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_326', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_327', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_328', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_329', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_330', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_331', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_332', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_333', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_334', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_335', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_336', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_337', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_338', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_339', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_340', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_341', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_342', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_343', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_344', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_345', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_346', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_347', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_348', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_349', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_350', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_351', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_352', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_353', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_354', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_355', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_356', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_357', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_358', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_359', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_360', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_361', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_362', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_363', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_364', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_365', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_366', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_367', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_368', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_369', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_370', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_371', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_372', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_373', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_374', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_375', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_376', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_377', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_378', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_379', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_380', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_381', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_382', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_383', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_384', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_385', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_386', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_387', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_388', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_389', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_390', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_391', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_392', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_393', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_394', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_395', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_396', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_397', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_398', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_399', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_400', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_401', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_402', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_403', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_404', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_405', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_406', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_407', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_408', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_409', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_410', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_411', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_412', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_413', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_414', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_415', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_416', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_417', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_418', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_419', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_420', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_421', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_422', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_423', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_424', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_425', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_426', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_427', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_428', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_429', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_430', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_431', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_432', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_433', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_434', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_435', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_436', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_437', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_438', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_439', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_440', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_441', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_442', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_443', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_444', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_445', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_446', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_447', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_448', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_449', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_450', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_451', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_452', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_453', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_454', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_455', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_456', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_457', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_458', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_459', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_460', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_461', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_462', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_463', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_464', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_465', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_466', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_467', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_468', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_469', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_470', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_471', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_472', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_473', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_474', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_475', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_476', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_477', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_478', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_479', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_480', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_481', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_482', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_483', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_484', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_485', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_486', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_487', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_488', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_489', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_490', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_491', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_492', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_493', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_494', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_495', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_496', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_497', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_498', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_499', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_500', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_501', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_502', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_503', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_504', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_505', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_506', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_507', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_508', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_509', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_510', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_511', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_512', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_513', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_514', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_515', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_516', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_517', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_518', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_519', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_520', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_521', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_522', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_523', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_524', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_525', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_526', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_527', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_528', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_529', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_530', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_531', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_532', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
-                ('Item_533', models.CharField(choices=[('understand;produces', 'understand;produces')], max_length=19, null=True)),
+                (
+                    "basetable_ptr",
+                    models.OneToOneField(
+                        auto_created=True,
+                        on_delete=django.db.models.deletion.CASCADE,
+                        parent_link=True,
+                        primary_key=True,
+                        serialize=False,
+                        to="instruments.basetable",
+                    ),
+                ),
+                (
+                    "Item_1",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_2",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_3",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_4",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_5",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_6",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_7",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_8",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_9",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_10",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_11",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_12",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_13",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_14",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_15",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_16",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_17",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_18",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_19",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_20",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_21",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_22",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_23",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_24",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_25",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_26",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_27",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_28",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_29",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_30",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_31",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_32",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_33",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_34",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_35",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_36",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_37",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_38",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_39",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_40",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_41",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_42",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_43",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_44",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_45",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_46",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_47",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_48",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_49",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_50",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_51",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_52",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_53",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_54",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_55",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_56",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_57",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_58",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_59",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_60",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_61",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_62",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_63",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_64",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_65",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_66",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_67",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_68",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_69",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_70",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_71",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_72",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_73",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_74",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_75",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_76",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_77",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_78",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_79",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_80",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_81",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_82",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_83",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_84",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_85",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_86",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_87",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_88",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_89",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_90",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_91",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_92",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_93",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_94",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_95",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_96",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_97",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_98",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_99",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_100",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_101",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_102",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_103",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_104",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_105",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_106",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_107",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_108",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_109",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_110",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_111",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_112",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_113",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_114",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_115",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_116",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_117",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_118",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_119",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_120",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_121",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_122",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_123",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_124",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_125",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_126",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_127",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_128",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_129",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_130",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_131",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_132",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_133",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_134",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_135",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_136",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_137",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_138",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_139",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_140",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_141",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_142",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_143",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_144",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_145",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_146",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_147",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_148",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_149",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_150",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_151",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_152",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_153",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_154",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_155",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_156",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_157",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_158",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_159",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_160",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_161",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_162",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_163",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_164",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_165",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_166",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_167",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_168",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_169",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_170",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_171",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_172",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_173",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_174",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_175",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_176",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_177",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_178",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_179",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_180",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_181",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_182",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_183",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_184",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_185",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_186",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_187",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_188",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_189",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_190",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_191",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_192",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_193",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_194",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_195",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_196",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_197",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_198",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_199",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_200",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_201",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_202",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_203",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_204",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_205",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_206",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_207",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_208",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_209",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_210",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_211",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_212",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_213",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_214",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_215",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_216",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_217",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_218",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_219",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_220",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_221",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_222",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_223",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_224",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_225",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_226",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_227",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_228",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_229",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_230",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_231",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_232",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_233",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_234",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_235",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_236",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_237",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_238",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_239",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_240",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_241",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_242",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_243",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_244",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_245",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_246",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_247",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_248",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_249",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_250",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_251",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_252",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_253",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_254",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_255",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_256",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_257",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_258",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_259",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_260",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_261",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_262",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_263",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_264",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_265",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_266",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_267",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_268",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_269",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_270",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_271",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_272",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_273",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_274",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_275",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_276",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_277",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_278",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_279",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_280",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_281",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_282",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_283",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_284",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_285",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_286",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_287",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_288",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_289",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_290",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_291",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_292",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_293",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_294",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_295",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_296",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_297",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_298",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_299",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_300",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_301",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_302",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_303",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_304",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_305",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_306",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_307",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_308",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_309",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_310",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_311",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_312",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_313",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_314",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_315",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_316",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_317",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_318",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_319",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_320",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_321",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_322",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_323",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_324",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_325",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_326",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_327",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_328",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_329",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_330",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_331",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_332",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_333",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_334",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_335",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_336",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_337",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_338",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_339",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_340",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_341",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_342",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_343",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_344",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_345",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_346",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_347",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_348",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_349",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_350",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_351",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_352",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_353",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_354",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_355",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_356",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_357",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_358",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_359",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_360",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_361",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_362",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_363",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_364",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_365",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_366",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_367",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_368",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_369",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_370",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_371",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_372",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_373",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_374",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_375",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_376",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_377",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_378",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_379",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_380",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_381",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_382",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_383",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_384",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_385",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_386",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_387",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_388",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_389",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_390",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_391",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_392",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_393",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_394",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_395",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_396",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_397",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_398",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_399",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_400",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_401",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_402",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_403",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_404",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_405",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_406",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_407",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_408",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_409",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_410",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_411",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_412",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_413",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_414",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_415",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_416",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_417",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_418",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_419",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_420",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_421",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_422",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_423",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_424",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_425",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_426",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_427",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_428",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_429",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_430",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_431",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_432",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_433",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_434",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_435",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_436",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_437",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_438",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_439",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_440",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_441",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_442",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_443",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_444",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_445",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_446",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_447",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_448",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_449",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_450",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_451",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_452",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_453",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_454",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_455",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_456",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_457",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_458",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_459",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_460",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_461",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_462",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_463",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_464",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_465",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_466",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_467",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_468",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_469",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_470",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_471",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_472",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_473",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_474",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_475",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_476",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_477",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_478",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_479",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_480",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_481",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_482",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_483",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_484",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_485",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_486",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_487",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_488",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_489",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_490",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_491",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_492",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_493",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_494",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_495",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_496",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_497",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_498",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_499",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_500",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_501",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_502",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_503",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_504",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_505",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_506",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_507",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_508",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_509",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_510",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_511",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_512",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_513",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_514",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_515",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_516",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_517",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_518",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_519",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_520",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_521",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_522",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_523",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_524",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_525",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_526",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_527",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_528",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_529",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_530",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_531",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_532",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
+                (
+                    "Item_533",
+                    models.CharField(
+                        choices=[("understand;produces", "understand;produces")],
+                        max_length=19,
+                        null=True,
+                    ),
+                ),
             ],
-            bases=('instruments.basetable',),
+            bases=("instruments.basetable",),
         ),
     ]

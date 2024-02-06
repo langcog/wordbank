@@ -1,0 +1,18 @@
+type,value,data_value
+sex,M,nen
+sex,F,nena
+sex,,NA
+starting_to_talk,never,n
+starting_to_talk,sometimes,s
+starting_to_talk,often,o
+starting_to_talk,,NA
+word,produces,2
+word,understands,1
+word,,NA
+word,,0
+word,understands,11
+mom_ed,primary,primària
+mom_ed,college,universitat
+mom_ed,secondary,secundària
+mom_ed,none,sense escolaritat
+mom_ed,,NA

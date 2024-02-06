@@ -315,6 +315,7 @@ class Spanish_Peruvian_WG(BaseTable):
     item_310 = models.CharField(max_length=11, null=True)
     item_311 = models.CharField(max_length=11, null=True)
     item_312 = models.CharField(max_length=11, null=True)
+    item_312 = models.CharField(max_length=11, null=True)
     item_313 = models.CharField(max_length=11, null=True)
     item_314 = models.CharField(max_length=11, null=True)
     item_315 = models.CharField(max_length=11, null=True)

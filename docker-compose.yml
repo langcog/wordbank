@@ -1,6 +1,29 @@
 version: '3'
 
 services:
+  db:
+    platform: linux/x86_64
+    image: mysql:8.0.26
+    ports:
+      - "33061:3306"
+    healthcheck:
+      test: "exit 0"
+    env_file:
+      - .env
+    command: mysqld --sql_mode="" --character-set-server=utf8 --default_storage_engine=MyISAM --innodb_strict_mode=0 --innodb_log_file_size=256M --innodb_log_buffer_size=256M --innodb_default_row_format='dynamic' --thread_stack=512000
+
+  phpmydmin:
+    image: phpmyadmin:latest
+    depends_on:
+      - db
+    ports:
+      - "8080:80"
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_USER: ${DATABASE_USER}
+      MYSQL_PASSWORD: ${DATABASE_PASSWORD}
+    restart: always
+
   web:
     build:
       context: .
@@ -12,4 +35,8 @@ services:
       - "8000:8000"
     env_file:
       - .env
+    depends_on:
+      db:
+        condition:
+          service_healthy
 

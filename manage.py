@@ -4,7 +4,6 @@ import sys
 import faulthandler
 
 if __name__ == "__main__":
-
     faulthandler.enable()
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "wordbank.settings")
 

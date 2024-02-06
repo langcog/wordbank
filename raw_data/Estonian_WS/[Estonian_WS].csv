@@ -1,0 +1,677 @@
+itemID,category,item,definition,choices,type,gloss,uni_lemma
+item_1,sounds,ai,ai,produces,word,ow,ouch
+item_2,sounds,auh,auh,produces,word,woof-woof,woof woof
+item_3,sounds,kikerikii,kikerikii,produces,word,cock-a-doodle-doo,cockadoodledoo
+item_4,sounds,krooks,krooks,produces,word,ribbit-ribbit,ribbit
+item_5,sounds,mää,mää,produces,word,baa,baa baa
+item_6,sounds,miau,miau,produces,word,meow,meow
+item_7,sounds,mõmm,mõmm,produces,word,bear sound,
+item_8,sounds,nämm,nämm,produces,word,yummy,yummy
+item_9,sounds,oi_oi,oi_oi,produces,word,oh-oh,uh oh
+item_10,sounds,põrr,põrr,produces,word,vroom-vroom,vroom
+item_11,sounds,potsti,potsti,produces,word,whoopsy-daisy,oops
+item_12,sounds,röh,röh,produces,word,oink-oink,oink
+item_13,sounds,summ,summ,produces,word,buzz,buzz
+item_14,sounds,tsuhh,tsuhh,produces,word,choo-choo,choo choo
+item_15,sounds,tuut,tuut,produces,word,toot-toot,honk honk
+item_16,animals,ahv,ahv,produces,word,monkey,monkey
+item_17,animals,eesel,eesel,produces,word,donkey,donkey
+item_18,animals,elevant,elevant,produces,word,elephant,elephant
+item_19,animals,hamster,hamster,produces,word,hamster,
+item_20,animals,hani,hani,produces,word,goose,goose
+item_21,animals,hiir,hiir,produces,word,mouse,mouse
+item_22,animals,hobune,hobune,produces,word,horse,horse
+item_23,animals,hüjes,hüjes,produces,word,seal,seal
+item_24,animals,hunt,hunt,produces,word,wolf,wolf
+item_25,animals,ilves,ilves,produces,word,lynx,
+item_26,animals,jänes,jänes,produces,word,rabbit,bunny
+item_27,animals,kaelkirjak,kaelkirjak,produces,word,giraffe,giraffe
+item_28,animals,kala,kala,produces,word,fish (animal),fish (animal)
+item_29,animals,kana,kana,produces,word,chicken (animal),chicken (animal)
+item_30,animals,kärbes,kärbes,produces,word,fly (animal),fly (animal)
+item_31,animals,karu,karu,produces,word,bear,bear
+item_32,animals,kass,kass,produces,word,kitty,kitty
+item_33,animals,kilpkonn,kilpkonn,produces,word,turtle,turtle
+item_34,animals,kits,kits,produces,word,goat,goat
+item_35,animals,koer,koer,produces,word,dog,dog
+item_36,animals,konn,konn,produces,word,frog,frog
+item_37,animals,krokodill,krokodill,produces,word,crocodile,crocodile
+item_38,animals,kukk,kukk,produces,word,rooster,rooster
+item_39,animals,lammas,lammas,produces,word,sheep,sheep
+item_40,animals,lehm,lehm,produces,word,cow,cow
+item_41,animals,lepatriinu,lepatriinu,produces,word,ladybug,ladybug
+item_42,animals,liblikas,liblikas,produces,word,butterfly,butterfly
+item_43,animals,lind,lind,produces,word,bird,bird
+item_44,animals,loom,loom,produces,word,animal,animal
+item_45,animals,lõvi,lõvi,produces,word,lion,lion
+item_46,animals,mesilane,mesilane,produces,word,bee,bee
+item_47,animals,orav,orav,produces,word,squirrel,squirrel
+item_48,animals,part,part,produces,word,duck,duck
+item_49,animals,pingviin,pingviin,produces,word,penguin,penguin
+item_50,animals,põder,põder,produces,word,elk,moose
+item_51,animals,putukas,putukas,produces,word,bug,bug
+item_52,animals,rebane,rebane,produces,word,fox,fox
+item_53,animals,sebra,sebra,produces,word,zebra,zebra
+item_54,animals,siga,siga,produces,word,pig,pig
+item_55,animals,sipelgas,sipelgas,produces,word,ant,ant
+item_56,animals,tibu,tibu,produces,word,chick,chick
+item_57,animals,tigu,tigu,produces,word,snail,snail
+item_58,animals,tiiger,tiiger,produces,word,tiger,tiger
+item_59,animals,toonekurg,toonekurg,produces,word,stork,stork
+item_60,animals,tuvi,tuvi,produces,word,pigeon,pigeon
+item_61,animals,uss,uss,produces,word,worm,worm
+item_62,animals,öökull,öökull,produces,word,owl,owl
+item_63,vehicles,auto,auto,produces,word,car,car
+item_64,vehicles,buss,buss,produces,word,bus,bus
+item_65,vehicles,helikopter,helikopter,produces,word,helicopter,helicopter
+item_66,vehicles,jalgratas,jalgratas,produces,word,bike,bicycle
+item_67,vehicles,kelk,kelk,produces,word,sledge,sled
+item_68,vehicles,käru,käru,produces,word,cart,cart
+item_69,vehicles,laev,laev,produces,word,ship,ship
+item_70,vehicles,lennuk,lennuk,produces,word,plane,airplane
+item_71,vehicles,mootorratas,mootorratas,produces,word,motorbike,motorcycle
+item_72,vehicles,paat,paat,produces,word,boat,boat
+item_73,vehicles,rong,rong,produces,word,train,train
+item_74,vehicles,traktor,traktor,produces,word,tractor,tractor
+item_75,vehicles,tuletõrjeauto,tuletõrjeauto,produces,word,firetruck,firetruck
+item_76,vehicles,veoauto,veoauto,produces,word,truck,truck
+item_77,toys,jutt,jutt,produces,word,story,story
+item_78,toys,kingitus,kingitus,produces,word,gift,present
+item_79,toys,klots,klots,produces,word,block,block
+item_80,toys,kriit,kriit,produces,word,chalk,chalk
+item_81,toys,kõrra,kõrra,produces,word,rattle,
+item_82,toys,liim,liim,produces,word,glue,glue
+item_83,toys,mäng,mäng,produces,word,game,game
+item_84,toys,lelu,lelu,produces,word,toy (object),toy (object)
+item_85,toys,nukk,nukk,produces,word,doll,doll
+item_86,toys,pall,pall,produces,word,ball,ball
+item_87,toys,pastakas,pastakas,produces,word,penguin,penguin
+item_88,toys,plastiliin,plastiliin,produces,word,plasticine,play dough
+item_89,toys,pliiats,pliiats,produces,word,pencil,pencil
+item_90,toys,pusle,pusle,produces,word,puzzle,puzzle
+item_91,toys,raamat,raamat,produces,word,book,book
+item_92,toys,seebimull,seebimull,produces,word,bubble,bubbles
+item_93,toys,tops,tops,produces,word,cup,cup
+item_94,toys,vildikas,vildikas,produces,word,felt-tip pen,pen
+item_95,toys,õhupall,õhupall,produces,word,balloon,balloon
+item_96,clothing,aluspesu,aluspesu,produces,word,underwear,underpants
+item_97,clothing,jakk,jakk,produces,word,jacket,jacket
+item_98,clothing,jope,jope,produces,word,coat,coat
+item_99,clothing,kaelakee,kaelakee,produces,word,necklace,necklace
+item_100,clothing,kampsun,kampsun,produces,word,sweater,sweater
+item_101,clothing,kindad,kindad,produces,word,gloves,gloves
+item_102,clothing,kingad,kingad,produces,word,shoes,shoe
+item_103,clothing,kleit,kleit,produces,word,dress (object),dress (object)
+item_104,clothing,kombekas,kombekas,produces,word,coveralls,overalls
+item_105,clothing,lukk,lukk,produces,word,zipper,zipper
+item_106,clothing,mantel,mantel,produces,word,overcoat,coat
+item_107,clothing,mähe,mähe,produces,word,diaper,diaper
+item_108,clothing,müts,müts,produces,word,hat,hat
+item_109,clothing,nööp,nööp,produces,word,button,button
+item_110,clothing,paelad,paelad,produces,word,laces,shoelace
+item_111,clothing,pidzaama,pidzaama,produces,word,pyjamas,pajamas
+item_112,clothing,pluus,pluus,produces,word,blouse,blouse
+item_113,clothing,pudipõll,pudipõll,produces,word,bib,bib
+item_114,clothing,püksid,püksid,produces,word,trousers,pants
+item_115,clothing,saapad,saapad,produces,word,boot,boot
+item_116,clothing,sall,sall,produces,word,scarf,scarf
+item_117,clothing,seelik,seelik,produces,word,skirt,skirt
+item_118,clothing,sokid,sokid,produces,word,socks,sock
+item_119,clothing,sukad,sukad,produces,word,hose,hose
+item_120,clothing,sussid,sussid,produces,word,slippers,slipper
+item_121,clothing,särk,särk,produces,word,shirt,shirt
+item_122,clothing,teksad,teksad,produces,word,jeans,jeans
+item_123,clothing,tossud,tossud,produces,word,sneakers,sneakers
+item_124,clothing,vöö,vöö,produces,word,belt,belt
+item_125,clothing,öösärk,öösärk,produces,word,t-shirt,t-shirt
+item_126,people,arst,arst,produces,word,doctor,doctor
+item_127,people,ema,ema,produces,word,mommy,mommy
+item_128,people,hoidja,hoidja,produces,word,carer,
+item_129,people,inimene,inimene,produces,word,person,person
+item_130,people,isa,isa,produces,word,daddy,daddy
+item_131,people,kasvataja,kasvataja,produces,word,educator,
+item_132,people,kloun,kloun,produces,word,clown,clown
+item_133,people,laps,laps,produces,word,child,child
+item_134,people,lapse_enda_nimi,lapse_enda_nimi,produces,word,child's own name,child's own name
+item_135,people,mees,mees,produces,word,man,man
+item_136,people,naine,naine,produces,word,woman,woman
+item_137,people,onu,onu,produces,word,uncle,uncle
+item_138,people,poiss,poiss,produces,word,boy,boy
+item_139,people,politseinik,politseinik,produces,word,police officer,police
+item_140,people,sõber,sõber,produces,word,friend,friend
+item_141,people,tita,tita,produces,word,baby,baby
+item_142,people,tädi,tädi,produces,word,aunt,aunt
+item_143,people,tüdruk,tüdruk,produces,word,girl,girl
+item_144,people,vanaema,vanaema,produces,word,grandmother,grandma
+item_145,people,vanaisa,vanaisa,produces,word,grandfather,grandpa
+item_146,people,vend,vend,produces,word,brother,brother
+item_147,people,õde,õde,produces,word,sister,sister
+item_148,people,õpetaja,õpetaja,produces,word,teacher,teacher
+item_149,food_drink,apelsin,apelsin,produces,word,orange,orange
+item_150,food_drink,arbuus,arbuus,produces,word,watermelon,watermelon
+item_151,food_drink,banaan,banaan,produces,word,banana,banana
+item_152,food_drink,hamburger,hamburger,produces,word,hamburger,hamburger
+item_153,food_drink,herned,herned,produces,word,peas,peas
+item_154,food_drink,jogurt,jogurt,produces,word,yogurt,yogurt
+item_155,food_drink,jook,jook,produces,word,drink (beverage),drink (beverage)
+item_156,food_drink,juust,juust,produces,word,cheese,cheese
+item_157,food_drink,jäätis,jäätis,produces,word,ice cream,ice cream
+item_158,food_drink,kala0,kala0,produces,word,fish (food),fish (food)
+item_159,food_drink,kana0,kana0,produces,word,chicken (food),chicken (food)
+item_160,food_drink,kartul,kartul,produces,word,potato,potato
+item_161,food_drink,kaste,kaste,produces,word,sauce,sauce
+item_162,food_drink,kissel,kissel,produces,word,dessert cream,
+item_163,food_drink,kirss,kirss,produces,word,cherry,cherry
+item_164,food_drink,kohuke,kohuke,produces,word,curd dessert,
+item_165,food_drink,kohv,kohv,produces,word,coffee,coffee
+item_166,food_drink,komm,komm,produces,word,candy,candy
+item_167,food_drink,kook,kook,produces,word,pie,pie
+item_168,food_drink,kotlet,kotlet,produces,word,cutlet,cutlet
+item_169,food_drink,kreem,kreem,produces,word,cream,cream
+item_170,food_drink,krõpsud,krõpsud,produces,word,chips,chips
+item_171,food_drink,kurk,kurk,produces,word,cucumber,cucumber
+item_172,food_drink,küpsis,küpsis,produces,word,cookie,cookie
+item_173,food_drink,leib,leib,produces,word,black bread,bread
+item_174,food_drink,liha,liha,produces,word,meat,meat
+item_175,food_drink,limonaad,limonaad,produces,word,lemonade,lemonade
+item_176,food_drink,lutipudel,lutipudel,produces,word,bottle,bottle
+item_177,food_drink,maasikad,maasikad,produces,word,strawberries,strawberry
+item_178,food_drink,mahl,mahl,produces,word,juice,juice
+item_179,food_drink,maisihelbed,maisihelbed,produces,word,cornflakes,cereal
+item_180,food_drink,makaronid,makaronid,produces,word,pasta,pasta
+item_181,food_drink,marjad,marjad,produces,word,berries,berry
+item_182,food_drink,moos,moos,produces,word,jam,jam
+item_183,food_drink,morss,morss,produces,word,berry juice,juice
+item_184,food_drink,muna,muna,produces,word,egg,egg
+item_185,food_drink,mustikad,mustikad,produces,word,blueberries,blueberry
+item_186,food_drink,müsli,müsli,produces,word,muesli,cereal
+item_187,food_drink,näts,näts,produces,word,chewing gum,chewing gum
+item_188,food_drink,oad,oad,produces,word,beans,beans
+item_189,food_drink,pannkook,pannkook,produces,word,pancake,pancake
+item_190,food_drink,piim,piim,produces,word,milk,milk
+item_191,food_drink,pirukas,pirukas,produces,word,pastry,pastry
+item_192,food_drink,pitsa,pitsa,produces,word,pizza,pizza
+item_193,food_drink,porgand,porgand,produces,word,carrot,carrot
+item_194,food_drink,puder,puder,produces,word,porridge,porridge
+item_195,food_drink,puding,puding,produces,word,pudding,pudding
+item_196,food_drink,pähklid,pähklid,produces,word,nuts,nut
+item_197,food_drink,püree,püree,produces,word,puree,puree
+item_198,food_drink,rinnapiim,rinnapiim,produces,word,breast milk,milk
+item_199,food_drink,riis,riis,produces,word,rice,rice
+item_200,food_drink,rosin,rosin,produces,word,raisin,raisin
+item_201,food_drink,sai,sai,produces,word,bread,bread
+item_202,food_drink,salat,salat,produces,word,salad,salad
+item_203,food_drink,sepik,sepik,produces,word,whole wheat bread,bread
+item_204,food_drink,sool,sool,produces,word,salt,salt
+item_205,food_drink,suhkur,suhkur,produces,word,sugar,sugar
+item_206,food_drink,supp,supp,produces,word,soup,soup
+item_207,food_drink,söök,söök,produces,word,food,food
+item_208,food_drink,sokolaad,sokolaad,produces,word,chocolate,chocolate
+item_209,food_drink,tee,tee,produces,word,teacher,teacher
+item_210,food_drink,tomat,tomat,produces,word,tomato,tomato
+item_211,food_drink,tort,tort,produces,word,cake,cake
+item_212,food_drink,vesi,vesi,produces,word,water (beverage),water (beverage)
+item_213,food_drink,viinamarjad,viinamarjad,produces,word,grapes,grapes
+item_214,food_drink,vorst,vorst,produces,word,sausage,sausage
+item_215,food_drink,või,või,produces,word,butter,butter
+item_216,food_drink,võileib,võileib,produces,word,sandwich,sandwich
+item_217,food_drink,õun,õun,produces,word,apple,apple
+item_218,body_parts,hammas,hammas,produces,word,tooth,tooth
+item_219,body_parts,häbe,häbe,produces,word,vagina,vagina
+item_220,body_parts,istmik,istmik,produces,word,buttocks,butt
+item_221,body_parts,jalg,jalg,produces,word,leg,leg
+item_222,body_parts,juuksed,juuksed,produces,word,hair,hair
+item_223,body_parts,kael,kael,produces,word,neck,neck
+item_224,body_parts,keel,keel,produces,word,tongue,tongue
+item_225,body_parts,kõht,kõht,produces,word,stomach,stomach
+item_226,body_parts,kõrv,kõrv,produces,word,ear,ear
+item_227,body_parts,käsi,käsi,produces,word,hand,hand
+item_228,body_parts,lõug,lõug,produces,word,chin,chin
+item_229,body_parts,naba,naba,produces,word,belly button,belly button
+item_230,body_parts,nina,nina,produces,word,nose,nose
+item_231,body_parts,nägu,nägu,produces,word,face,face
+item_232,body_parts,pea,pea,produces,word,head,head
+item_233,body_parts,peenis,peenis,produces,word,penis,penis
+item_234,body_parts,põlv,põlv,produces,word,knee,knee
+item_235,body_parts,põsk,põsk,produces,word,cheek,cheek
+item_236,body_parts,pöial,pöial,produces,word,thumb,thumb
+item_237,body_parts,rind,rind,produces,word,breast,breast
+item_238,body_parts,selg,selg,produces,word,back,back
+item_239,body_parts,silm,silm,produces,word,eye,eye
+item_240,body_parts,suu,suu,produces,word,mouth,mouth
+item_241,body_parts,sõrm,sõrm,produces,word,finger,finger
+item_242,body_parts,varvas,varvas,produces,word,toe,toe
+item_243,body_parts,õlg,õlg,produces,word,shoulder,shoulder
+item_244,furniture_rooms,ahi,ahi,produces,word,stove,stove
+item_245,furniture_rooms,aken,aken,produces,word,window,window
+item_246,furniture_rooms,arvuti,arvuti,produces,word,computer,computer
+item_247,furniture_rooms,diivan,diivan,produces,word,couch,couch
+item_248,furniture_rooms,duss,duss,produces,word,shower,shower
+item_249,furniture_rooms,elutuba,elutuba,produces,word,living room,living room
+item_250,furniture_rooms,esik,esik,produces,word,entryway,
+item_251,furniture_rooms,garaaz,garaaz,produces,word,garage,garage
+item_252,furniture_rooms,kapp,kapp,produces,word,cupboard,cupboard
+item_253,furniture_rooms,kelder,kelder,produces,word,cellar,cellar
+item_254,furniture_rooms,koridor,koridor,produces,word,corridor,corridor
+item_255,furniture_rooms,köök,köök,produces,word,kitchen,kitchen
+item_256,furniture_rooms,külmkapp,külmkapp,produces,word,fridge,refrigerator
+item_257,furniture_rooms,laud,laud,produces,word,table,table
+item_258,furniture_rooms,magamistuba,magamistuba,produces,word,bedroom,bedroom
+item_259,furniture_rooms,peegel,peegel,produces,word,mirror,mirror
+item_260,furniture_rooms,pesumasin,pesumasin,produces,word,washing machine,washing machine
+item_261,furniture_rooms,pink,pink,produces,word,stool,stool
+item_262,furniture_rooms,pliit,pliit,produces,word,cooker,cooker
+item_263,furniture_rooms,raadio,raadio,produces,word,radio,radio
+item_264,furniture_rooms,riiul,riiul,produces,word,shelf,shelf
+item_265,furniture_rooms,sahtel,sahtel,produces,word,drawer,drawer
+item_266,furniture_rooms,saun,saun,produces,word,sauna,sauna
+item_267,furniture_rooms,söögitool,söögitool,produces,word,dining chair,baby chair
+item_268,furniture_rooms,televiisor,televiisor,produces,word,TV,TV
+item_269,furniture_rooms,tool,tool,produces,word,chair,chair
+item_270,furniture_rooms,trepp,trepp,produces,word,staircase,stairs
+item_271,furniture_rooms,tualett,tualett,produces,word,toilet,toilet
+item_272,furniture_rooms,uks,uks,produces,word,door,door
+item_273,furniture_rooms,kraanikauss,kraanikauss,produces,word,sink,sink
+item_274,furniture_rooms,vann,vann,produces,word,bath,bath
+item_275,furniture_rooms,vannituba,vannituba,produces,word,bathroom,bathroom
+item_276,furniture_rooms,voodi,voodi,produces,word,bedroom,bedroom
+item_277,furniture_rooms,võrevoodi,võrevoodi,produces,word,cot,cot
+item_278,time_words,eile,eile,produces,word,yesterday,yesterday
+item_279,time_words,enne,enne,produces,word,before,before
+item_280,time_words,hilja,hilja,produces,word,late,late
+item_281,time_words,homme,homme,produces,word,tomorrow,tomorrow
+item_282,time_words,hommik,hommik,produces,word,morning,morning
+item_283,time_words,juba,juba,produces,word,already,already
+item_284,time_words,kohe,kohe,produces,word,immediately,immediately
+item_285,time_words,nüüd,nüüd,produces,word,now,now
+item_286,time_words,praegu,praegu,produces,word,currently,
+item_287,time_words,päev,päev,produces,word,day,day
+item_288,time_words,pärast,pärast,produces,word,later,later
+item_289,time_words,täna,täna,produces,word,today,today
+item_290,time_words,vara,vara,produces,word,early,early
+item_291,time_words,õhtu,õhtu,produces,word,evening,evening
+item_292,time_words,öö,öö,produces,word,night,night
+item_293,household,fotokas,fotokas,produces,word,camera,camera
+item_294,household,haamer,haamer,produces,word,hammer,hammer
+item_295,household,hambahari,hambahari,produces,word,toothbrush,toothbrush
+item_296,household,hari,hari,produces,word,brush,brush (object)
+item_297,household,kahvel,kahvel,produces,word,fork,fork
+item_298,household,kamm,kamm,produces,word,hairbrush,brush (object)
+item_299,household,karp,karp,produces,word,case,
+item_300,household,kast,kast,produces,word,box,box
+item_301,household,kauss,kauss,produces,word,bowl,bowl
+item_302,household,kell,kell,produces,word,clock,clock
+item_303,household,klaas,klaas,produces,word,glass,glass
+item_304,household,korv,korv,produces,word,basket,basket
+item_305,household,kott,kott,produces,word,bag,bag
+item_306,household,käekell,käekell,produces,word,wristwatch,watch
+item_307,household,käärid,käärid,produces,word,scissors,scissors
+item_308,household,lamp,lamp,produces,word,lamp,lamp
+item_309,household,lill,lill,produces,word,plant,plant
+item_310,household,lina,lina,produces,word,bedsheet,sheet
+item_311,household,lusikas,lusikas,produces,word,spoon,spoon
+item_312,household,nael,nael,produces,word,nail,nail
+item_313,household,nuga,nuga,produces,word,knife,knife
+item_314,household,nõud,nõud,produces,word,dishes,dish
+item_315,household,paber,paber,produces,word,paper,paper
+item_316,household,padi,padi,produces,word,pillow,pillow
+item_317,household,pilt,pilt,produces,word,picture,picture
+item_318,household,pissipott,pissipott,produces,word,pee pot,
+item_319,household,keedupott,keedupott,produces,word,pot,pot
+item_320,household,prillid,prillid,produces,word,glasses,glasses
+item_321,household,prügi,prügi,produces,word,trash,trash
+item_322,household,pudel,pudel,produces,word,bottle,bottle
+item_323,household,purk,purk,produces,word,jar,jar
+item_324,household,raha,raha,produces,word,money,money
+item_325,household,rahakott,rahakott,produces,word,wallet,wallet
+item_326,household,ravim,ravim,produces,word,medicine,medicine
+item_327,household,rätik,rätik,produces,word,towel,towel
+item_328,household,seep,seep,produces,word,soap,soap
+item_329,household,sent,sent,produces,word,coin,coin
+item_330,household,taldrik,taldrik,produces,word,plate,plate
+item_331,household,taskurätt,taskurätt,produces,word,handkerchief,handkerchief
+item_332,household,tass,tass,produces,word,mug,mug
+item_333,household,teip,teip,produces,word,tape,tape
+item_334,household,tekk,tekk,produces,word,blanket,blanket
+item_335,household,tolmuimeja,tolmuimeja,produces,word,vacuum,vacuum
+item_336,household,tolmulapp,tolmulapp,produces,word,dust cloth,cloth
+item_337,household,tuli,tuli,produces,word,fire,fire
+item_338,household,vaip,vaip,produces,word,carpet,carpet
+item_339,household,vitamiin,vitamiin,produces,word,vitamin,vitamin
+item_340,household,võtmed,võtmed,produces,word,keys,keys
+item_341,household,pang,pang,produces,word,bucket,bucket
+item_342,outside,aed,aed,produces,word,garden,garden
+item_343,outside,auk,auk,produces,word,hole,hole
+item_344,outside,bassein,bassein,produces,word,pool,pool
+item_345,outside,jõgi,jõgi,produces,word,river,river
+item_346,outside,katus,katus,produces,word,roof,roof
+item_347,outside,kepp,kepp,produces,word,stick,stick
+item_348,outside,kiik,kiik,produces,word,swing,swing
+item_349,outside,kivi,kivi,produces,word,stone,stone
+item_350,outside,kraav,kraav,produces,word,ditch,ditch
+item_351,outside,kuu,kuu,produces,word,moon,moon
+item_352,outside,kõnnitee,kõnnitee,produces,word,path,path
+item_353,outside,kühvel,kühvel,produces,word,shovel,shovel
+item_354,outside,labidas,labidas,produces,word,spade,spade
+item_355,outside,liivakast,liivakast,produces,word,sandbox,sandbox
+item_356,outside,lill0,lill0,produces,word,flower,flower
+item_357,outside,lipp,lipp,produces,word,flag,flag
+item_358,outside,lomp,lomp,produces,word,puddle,puddle
+item_359,outside,lumememm,lumememm,produces,word,snowman,snowman
+item_360,outside,lumi,lumi,produces,word,snow,snow
+item_361,outside,maja,maja,produces,word,house,house
+item_362,outside,muru,muru,produces,word,grass,grass
+item_363,outside,muruniiduk,muruniiduk,produces,word,lawn mower,lawn mower
+item_364,outside,pilv,pilv,produces,word,cloud,cloud
+item_365,outside,puu,puu,produces,word,tree,tree
+item_366,outside,päike,päike,produces,word,sun,sun
+item_367,outside,redel,redel,produces,word,ladder,ladder
+item_368,outside,taevas,taevas,produces,word,sky,sky
+item_369,outside,tuul,tuul,produces,word,wind,wind
+item_370,outside,täht,täht,produces,word,star,star
+item_371,outside,tänav,tänav,produces,word,street,street
+item_372,outside,vesi0,vesi0,produces,word,water (not beverage),water (not beverage)
+item_373,outside,vihm,vihm,produces,word,rain,rain
+item_374,places,bensiinijaam,bensiinijaam,produces,word,gas station,gas station
+item_375,places,hoov,hoov,produces,word,yard,yard
+item_376,places,kino,kino,produces,word,cinema,movie
+item_377,places,kirik,kirik,produces,word,church,church
+item_378,places,kodu,kodu,produces,word,home,home
+item_379,places,kool,kool,produces,word,school,school
+item_380,places,külaskäik,külaskäik,produces,word,visit,
+item_381,places,lasteaed,lasteaed,produces,word,kindergarten,kindergarten
+item_382,places,linn,linn,produces,word,town,town
+item_383,places,loomaaed,loomaaed,produces,word,zoo,zoo
+item_384,places,maa,maa,produces,word,countryside,country
+item_385,places,matk,matk,produces,word,hike,
+item_386,places,mets,mets,produces,word,forest,forest
+item_387,places,mänguväljak,mänguväljak,produces,word,playground,playground
+item_388,places,park,park,produces,word,park,park
+item_389,places,pidu,pidu,produces,word,party,party
+item_390,places,piknik,piknik,produces,word,picnic,picnic
+item_391,places,pood,pood,produces,word,shop,shop
+item_392,places,rand,rand,produces,word,beach,beach
+item_393,places,talu,talu,produces,word,farm,farm
+item_394,places,töö,töö,produces,word,work (place),work (place)
+item_395,places,õu,õu,produces,word,courtyard,yard
+item_396,games_routines,aitäh,aitäh,produces,word,thank you,thank you
+item_397,games_routines,anna,anna,produces,word,give (me),give me
+item_398,games_routines,dadaa,dadaa,produces,word,bye-bye,bye
+item_399,games_routines,ei,ei,produces,word,no,no
+item_400,games_routines,halloo,halloo,produces,word,hello (phone),hello
+item_401,games_routines,head_ööd,head_ööd,produces,word,good night,good night
+item_402,games_routines,jah,jah,produces,word,yes,yes
+item_403,games_routines,kuss,kuss,produces,word,shh,shh
+item_404,games_routines,kuts_läks_karja,kuts_läks_karja,produces,word,doggy went to field,
+item_405,games_routines,lõunauinak,lõunauinak,produces,word,nap,nap
+item_406,games_routines,lähme_poodi,lähme_poodi,produces,word,let's go to the shop,
+item_407,games_routines,lähme_sööma,lähme_sööma,produces,word,let's eat,
+item_408,games_routines,löö_patsi,löö_patsi,produces,word,high five,high five
+item_409,games_routines,nii_suur,nii_suur,produces,word,so big,so big
+item_410,games_routines,oota,oota,produces,word,wait,wait
+item_411,games_routines,palun,palun,produces,word,please,please
+item_412,games_routines,patsu_patsu_kooki,patsu_patsu_kooki,produces,word,patty cake,pattycake
+item_413,games_routines,peitus,peitus,produces,word,hide and seek,hide and seek
+item_414,games_routines,potile,potile,produces,word,on the potty,
+item_415,games_routines,tahan_juua,tahan_juua,produces,word,I want to drink,
+item_416,games_routines,tahan_süüa,tahan_süüa,produces,word,I want to eat,
+item_417,games_routines,tahan_sülle,tahan_sülle,produces,word,I want to be carried,
+item_418,games_routines,kull,kull,produces,word,play a game,
+item_419,games_routines,tere,tere,produces,word,hello (greeting),hello
+item_420,games_routines,vannisk_ik,vannisk_ik,produces,word,bathtime,
+item_421,games_routines,võimlemine,võimlemine,produces,word,exercising,
+item_422,games_routines,ära_tee,ära_tee,produces,word,do not,don't
+item_423,action_words,aitama,aitama,produces,word,help,help
+item_424,action_words,andma,andma,produces,word,give,give
+item_425,action_words,ehitama,ehitama,produces,word,build,build
+item_426,action_words,hakkama,hakkama,produces,word,begin,begin
+item_427,action_words,hammustama,hammustama,produces,word,bite,bite
+item_428,action_words,hoidma,hoidma,produces,word,hold,hold
+item_429,action_words,hüppama,hüppama,produces,word,jump,jump
+item_430,action_words,istuma,istuma,produces,word,sit,sit
+item_431,action_words,jalutama,jalutama,produces,word,stroll,
+item_432,action_words,jooksma,jooksma,produces,word,run,run
+item_433,action_words,jooma,jooma,produces,word,drink (action),drink (action)
+item_434,action_words,joonistama,joonistama,produces,word,draw,draw
+item_435,action_words,juhtima,juhtima,produces,word,drive,drive
+item_436,action_words,jääma,jääma,produces,word,stay,stay
+item_437,action_words,kallistama,kallistama,produces,word,hug,hug
+item_438,action_words,kartma,kartma,produces,word,fear,fear
+item_439,action_words,katsuma,katsuma,produces,word,touch,touch
+item_440,action_words,keetma,keetma,produces,word,boil,boil
+item_441,action_words,kiikuma,kiikuma,produces,word,swing (action),swing (action)
+item_442,action_words,kiirustama,kiirustama,produces,word,hurry,hurry
+item_443,action_words,kirjutama,kirjutama,produces,word,write,write
+item_444,action_words,koputama,koputama,produces,word,knock,knock
+item_445,action_words,koristama,koristama,produces,word,clean (action),clean (action)
+item_446,action_words,kuivatama,kuivatama,produces,word,dry (action),dry (action)
+item_447,action_words,kukkuma,kukkuma,produces,word,fall,fall
+item_448,action_words,kuulma,kuulma,produces,word,hear,hear
+item_449,action_words,kõdistama,kõdistama,produces,word,tickle,tickle
+item_450,action_words,käima,käima,produces,word,walk,walk
+item_451,action_words,laulma,laulma,produces,word,sing,sing
+item_452,action_words,leidma,leidma,produces,word,find,find
+item_453,action_words,limpsima,limpsima,produces,word,lick,lick
+item_454,action_words,lubama,lubama,produces,word,promise,promise
+item_455,action_words,lugema,lugema,produces,word,read,read
+item_456,action_words,lõhkuma,lõhkuma,produces,word,break,break
+item_457,action_words,lõikama,lõikama,produces,word,cut (action),cut (action)
+item_458,action_words,lõpetama,lõpetama,produces,word,finish,finish
+item_459,action_words,lööma,lööma,produces,word,hit,hit
+item_460,action_words,lükkama,lükkama,produces,word,push,push
+item_461,action_words,magama,magama,produces,word,sleep,sleep
+item_462,action_words,maitsema,maitsema,produces,word,taste,taste
+item_463,action_words,meeldima,meeldima,produces,word,like,like
+item_464,action_words,minema,minema,produces,word,go,go
+item_465,action_words,musitama,musitama,produces,word,kiss,kiss
+item_466,action_words,mängima,mängima,produces,word,play,play
+item_467,action_words,nutma,nutma,produces,word,cry,cry
+item_468,action_words,nägema,nägema,produces,word,see,see
+item_469,action_words,näitama,näitama,produces,word,show,show
+item_470,action_words,olema,olema,produces,word,begin,begin
+item_471,action_words,ostma,ostma,produces,word,buy,buy
+item_472,action_words,pai_tegema,pai_tegema,produces,word,caress,caress
+item_473,action_words,panema,panema,produces,word,put,put
+item_474,action_words,parandama,parandama,produces,word,fix,fix
+item_475,action_words,pesema,pesema,produces,word,wash,wash
+item_476,action_words,pidama,pidama,produces,word,keep,keep
+item_477,action_words,plaksutama,plaksutama,produces,word,clap,clap
+item_478,action_words,pritsima,pritsima,produces,word,spray,spray
+item_479,action_words,puhastama,puhastama,produces,word,clean (action),clean (action)
+item_480,action_words,puhuma,puhuma,produces,word,blow,blow
+item_481,action_words,pühkima,pühkima,produces,word,wipe,wipe
+item_482,action_words,püüdma,püüdma,produces,word,catch,catch
+item_483,action_words,ronima,ronima,produces,word,climb,climb
+item_484,action_words,rääkima,rääkima,produces,word,talk,talk
+item_485,action_words,saama,saama,produces,word,get,get
+item_486,action_words,kinni_panema,kinni_panema,produces,word,shut down,
+item_487,action_words,sõitma,sõitma,produces,word,drive,drive
+item_488,action_words,sööma,sööma,produces,word,eat,eat
+item_489,action_words,tahtma,tahtma,produces,word,want,want
+item_490,action_words,tantsima,tantsima,produces,word,dance,dance
+item_491,action_words,tegema,tegema,produces,word,make,make
+item_492,action_words,tohtima,tohtima,produces,word,be allowed to,
+item_493,action_words,toitma,toitma,produces,word,feed,feed
+item_494,action_words,tooma,tooma,produces,word,bring,bring
+item_495,action_words,tulema,tulema,produces,word,come,come
+item_496,action_words,töötama,töötama,produces,word,work (action),work (action)
+item_497,action_words,tõmbama,tõmbama,produces,word,pull,pull
+item_498,action_words,ujuma,ujuma,produces,word,swim,swim
+item_499,action_words,vaatama,vaatama,produces,word,watch (action),watch (action)
+item_500,action_words,valama,valama,produces,word,pour,pour
+item_501,action_words,võima,võima,produces,word,be able to,
+item_502,action_words,võtma,võtma,produces,word,take,take
+item_503,action_words,värvima,värvima,produces,word,color (action),color (action)
+item_504,action_words,ütlema,ütlema,produces,word,say,say
+item_505,locations,all_v,all_v,produces,word,below,below
+item_506,locations,alla,alla,produces,word,under,under
+item_507,locations,juures,juures,produces,word,by,by
+item_508,locations,koos,koos,produces,word,with,with
+item_509,locations,kõrval,kõrval,produces,word,next to,next to
+item_510,locations,maas,maas,produces,word,on the ground,
+item_511,locations,maha,maha,produces,word,to the ground,
+item_512,locations,peal,peal,produces,word,on top,on top
+item_513,locations,peale,peale,produces,word,onto,
+item_514,locations,seal,seal,produces,word,there,there
+item_515,locations,sees,sees,produces,word,inside,inside
+item_516,locations,siin,siin,produces,word,here,here
+item_517,locations,sinna,sinna,produces,word,there,there
+item_518,locations,sisse,sisse,produces,word,in there,
+item_519,locations,taga,taga,produces,word,behind,behind
+item_520,locations,tagasi,tagasi,produces,word,back,back
+item_521,locations,välja,välja,produces,word,out,out
+item_522,locations,väljas,väljas,produces,word,outside,outside
+item_523,locations,ära,ära,produces,word,away,away
+item_524,locations,ääres,ääres,produces,word,beside,beside
+item_525,locations,üle,üle,produces,word,over,over
+item_526,locations,üles,üles,produces,word,up,up
+item_527,locations,üleval,üleval,produces,word,above,above
+item_528,locations,ümber,ümber,produces,word,around,around
+item_529,question_words,kes,kes,produces,word,who,who
+item_530,question_words,kuidas,kuidas,produces,word,how,how
+item_531,question_words,kus,kus,produces,word,where (question),where (question)
+item_532,question_words,mida,mida,produces,word,what,what
+item_533,question_words,miks,miks,produces,word,why,why
+item_534,question_words,millal,millal,produces,word,when (question),when (question)
+item_535,question_words,mis,mis,produces,word,what,what
+item_536,connecting_words,ja,ja,produces,word,and,and
+item_537,connecting_words,sest,sest,produces,word,because,because
+item_538,connecting_words,aga,aga,produces,word,but,but
+item_539,connecting_words,kui,kui,produces,word,when (conjunction),when (conjunction)
+item_540,connecting_words,siis,siis,produces,word,then,then
+item_541,connecting_words,nii,nii,produces,word,so,so
+item_542,connecting_words,et,et,produces,word,so as to,so
+item_543,connecting_words,või0,või0,produces,word,or,or
+item_544,quantifiers,iga,iga,produces,word,each,each
+item_545,quantifiers,kõik,kõik,produces,word,all,all
+item_546,quantifiers,mitte_ühtegi,mitte_ühtegi,produces,word,none,none
+item_547,quantifiers,mõned,mõned,produces,word,some,some
+item_548,quantifiers,sama,sama,produces,word,same,same
+item_549,quantifiers,palju,palju,produces,word,many,many
+item_550,quantifiers,teine,teine,produces,word,second (quantifier),
+item_551,quantifiers,veel,veel,produces,word,more,more
+item_552,quantifiers,vks,vks,produces,word,one,one
+item_553,descriptive_words,armas,armas,produces,word,darling,
+item_554,descriptive_words,esimene,esimene,produces,word,first,first
+item_555,descriptive_words,ettevaatlikult,ettevaatlikult,produces,word,careful,careful
+item_556,descriptive_words,haige,haige,produces,word,ill,sick
+item_557,descriptive_words,hapu,hapu,produces,word,sour,sour
+item_558,descriptive_words,halb,halb,produces,word,bad,bad
+item_559,descriptive_words,hea,hea,produces,word,good,good
+item_560,descriptive_words,hirmus,hirmus,produces,word,scary,scary
+item_561,descriptive_words,hästi,hästi,produces,word,good,good
+item_562,descriptive_words,ilus,ilus,produces,word,beautiful,beautiful
+item_563,descriptive_words,janune,janune,produces,word,thirsty,thirsty
+item_564,descriptive_words,kadunud,kadunud,produces,word,lost,lost
+item_565,descriptive_words,katki,katki,produces,word,broken,broken
+item_566,descriptive_words,kena,kena,produces,word,nice,nice
+item_567,descriptive_words,kibe,kibe,produces,word,bitter,bitter
+item_568,descriptive_words,kiire,kiire,produces,word,fast,fast
+item_569,descriptive_words,kinni,kinni,produces,word,closed,closed
+item_570,descriptive_words,kleepuv,kleepuv,produces,word,sticky,sticky
+item_571,descriptive_words,kollane,kollane,produces,word,yellow,yellow
+item_572,descriptive_words,kuiv,kuiv,produces,word,dry (description),dry (description)
+item_573,descriptive_words,kurb,kurb,produces,word,sad,sad
+item_574,descriptive_words,kuri,kuri,produces,word,mad,mad
+item_575,descriptive_words,kuum,kuum,produces,word,hot,hot
+item_576,descriptive_words,kõrge,kõrge,produces,word,high,high
+item_577,descriptive_words,kõva,kõva,produces,word,hard,hard
+item_578,descriptive_words,külm,külm,produces,word,cold,cold
+item_579,descriptive_words,lahti,lahti,produces,word,open (description),open (description)
+item_580,descriptive_words,maitsev,maitsev,produces,word,tasty,tasty
+item_581,descriptive_words,räpane,räpane,produces,word,dirty,dirty
+item_582,descriptive_words,must,must,produces,word,black,black
+item_583,descriptive_words,märg,märg,produces,word,wet (description),wet (description)
+item_584,descriptive_words,näljane,näljane,produces,word,hungry,hungry
+item_585,descriptive_words,oranz,oranz,produces,word,orange (description),orange (description)
+item_586,descriptive_words,otsas,otsas,produces,word,finished,finished
+item_587,descriptive_words,paha,paha,produces,word,bad,bad
+item_588,descriptive_words,pahane,pahane,produces,word,displeased,
+item_589,descriptive_words,palav,palav,produces,word,hot,hot
+item_590,descriptive_words,parem,parem,produces,word,right (description),
+item_591,descriptive_words,pehme,pehme,produces,word,soft,soft
+item_592,descriptive_words,pikk,pikk,produces,word,tall,tall
+item_593,descriptive_words,pime,pime,produces,word,dark,dark
+item_594,descriptive_words,pruun,pruun,produces,word,brown,brown
+item_595,descriptive_words,puhas,puhas,produces,word,clean (description),clean (description)
+item_596,descriptive_words,punane,punane,produces,word,red,red
+item_597,descriptive_words,raske,raske,produces,word,heavy,heavy
+item_598,descriptive_words,roheline,roheline,produces,word,green,green
+item_599,descriptive_words,rõõmus,rõõmus,produces,word,happy,happy
+item_600,descriptive_words,sinine,sinine,produces,word,blue,blue
+item_601,descriptive_words,soe,soe,produces,word,warm,warm
+item_602,descriptive_words,suur,suur,produces,word,big,big
+item_603,descriptive_words,tilluke,tilluke,produces,word,tiny,tiny
+item_604,descriptive_words,tore,tore,produces,word,fun,fun
+item_605,descriptive_words,tubli,tubli,produces,word,fine,fine
+item_606,descriptive_words,tuuline,tuuline,produces,word,windy,windy
+item_607,descriptive_words,täis,täis,produces,word,full,full
+item_608,descriptive_words,tühi,tühi,produces,word,empty (description),empty
+item_609,descriptive_words,unine,unine,produces,word,sleepy,sleepy
+item_610,descriptive_words,uus,uus,produces,word,new,new
+item_611,descriptive_words,vaikne,vaikne,produces,word,quiet,quiet
+item_612,descriptive_words,valge,valge,produces,word,white,white
+item_613,descriptive_words,valjusti,valjusti,produces,word,loud,loud
+item_614,descriptive_words,valus,valus,produces,word,painful,painful
+item_615,descriptive_words,vana,vana,produces,word,old,old
+item_616,descriptive_words,viimane,viimane,produces,word,last,last
+item_617,descriptive_words,väike,väike,produces,word,small,small
+item_618,descriptive_words,väsinud,väsinud,produces,word,tired,tired
+item_619,descriptive_words,ärkvel,ärkvel,produces,word,awake,awake
+item_620,pronouns,ise,ise,produces,word,self,self
+item_621,pronouns,meie,meie,produces,word,we,1PL
+item_622,pronouns,mina,mina,produces,word,me,1SG
+item_623,pronouns,minu,minu,produces,word,mine,1SG
+item_624,pronouns,mulle,mulle,produces,word,to me,1SG
+item_625,pronouns,nemad,nemad,produces,word,they,3PL
+item_626,pronouns,oma,oma,produces,word,mine,1SG.POSS
+item_627,pronouns,see,see,produces,word,this,this
+item_628,pronouns,sina,sina,produces,word,you,2SG
+item_629,pronouns,sinu,sinu,produces,word,your,2SG.POSS
+item_630,pronouns,teie,teie,produces,word,you,2PL
+item_631,pronouns,tema,tema,produces,word,her/him,3SG
+item_632,,minevik,usepast,not yet; sometimes; often,how_use_words,,
+item_633,,tulevik,usefuture,not yet; sometimes; often,how_use_words,,
+item_634,,vaateväljast_ära,miss_produce,not yet; sometimes; often,how_use_words,,
+item_635,,toob_asja,miss_comp,not yet; sometimes; often,how_use_words,,
+item_636,,omanik_eseme_järgi,usepossessive,not yet; sometimes; often,how_use_words,,
+item_637,,mitmus,morph_plural,not yet; sometimes; often,word_endings,,
+item_638,,kohamäärlõpp,morph_loc,not yet; sometimes; often,word_endings,,
+item_639,,minevik0,morph_past,not yet; sometimes; often,word_endings,,
+item_640,,meie_vorm,morph_com,not yet; sometimes; often,word_endings,,
+item_641,,kas_teeb_lauseid,kas_teeb_lauseid,not yet; sometimes; often,combine,,
+item_642,,LAU1,Kaks käsi / Kaks kätt,simple; complex,complexity,,
+item_643,,LAU2,_Õde nukk / Õe nukk,simple; complex,complexity,,
+item_644,,LAU3,Mina torni / Mina teen torni,simple; complex,complexity,,
+item_645,,LAU4,Tita kurb / Tita on kurb,simple; complex,complexity,,
+item_646,,LAU5,Minu auto / See on minu auto,simple; complex,complexity,,
+item_647,,LAU6,Kutsa seal / Kutsa on laua peal,simple; complex,complexity,,
+item_648,,LAU7,Tita süüa / Tita tahab süüa,simple; complex,complexity,,
+item_649,,LAU8,Kus emme? / Kuhu emme läks?,simple; complex,complexity,,
+item_650,,LAU9,Ei oska / Ma ei oska seda teha,simple; complex,complexity,,
+item_651,,LAU10,Kohv kuum / See kohv on kuum,simple; complex,complexity,,
+item_652,,LAU11,Ei taha vanni / Ma ei taha vanni minna,simple; complex,complexity,,
+item_653,,LAU12,Kutsa musi / Kutsa tegi mulle musi,simple; complex,complexity,,
+item_654,,LAU13,Tee terveks? Kas sa teed terveks?,simple; complex,complexity,,
+item_655,,LAU14,(Teie lapse nimi) ka tahab piima / Mina ka tahan piima,simple; complex,complexity,,
+item_656,,LAU15,Ära loe juttu! / Ära loe mulle seda juttu!,simple; complex,complexity,,
+item_657,,LAU16,"Kassile süüa, juua! / Mina annan kassile süüa ja juua",simple; complex,complexity,,
+item_658,,LAU17,Tahan veel vaadata / Tahan veel seda raamatut vaadata,simple; complex,complexity,,
+item_659,,LAU18,Kus mu auto on? / Kus mu punane veoauto on?,simple; complex,complexity,,
+item_660,,LAU19,See on tibu ja teine tibu / Need on kaks tibu,simple; complex,complexity,,
+item_661,,LAU20,Tahan veel mängida / Tahan veel oma nukuga mängida,simple; complex,complexity,,
+item_662,,LAU21,Pane tuli põlema / Pane tuli põlema et ma näeksin,simple; complex,complexity,,
+item_663,,LAU22,Me tegime selle / Mina ja Paul tegime selle,simple; complex,complexity,,
+item_664,,LAU23,Tädi tuleb punasega autoga / Tädi tuleb punase autoga,simple; complex,complexity,,
+item_665,,LAU24,"Vaata, minu kiisu see! / Vaata, milline kiisu mul on!",simple; complex,complexity,,
+item_666,,LAU25,Ma võtan selle raamatu ja siis selle / Ma võtan need raamatud,simple; complex,complexity,,
+item_667,,LAU26,Mina loen ja emme loeb / Meie emmega loeme,simple; complex,complexity,,
+item_668,,LAU27,"Tita nutab, tita on kurb / Tita nurab, sest ta on kurb",simple; complex,complexity,,
+item_669,,LAU28,"Emme, vaata, ma sõidan / Emme, vaata, kuidas ma rattaga sõidan",simple; complex,complexity,,
+item_670,,LAU29,"Tädi kallab mahla, ta kallab tassi / Tädi kallab mahla, tassi",simple; complex,complexity,,
+item_671,,LAU30,Voodi alt otsin mina palli / Ma otsin palli voodi alt,simple; complex,complexity,,
+item_672,,LAU31,Kas ei lähe tüdruk õue? / Kas tüdruk ei lähe õue?,simple; complex,complexity,,
+item_673,,LAU32,Need on minu püksid / Need on minu uued sinised püksid,simple; complex,complexity,,
+item_674,,LAU33,Kass hüppas kapi peale / Kass hüppas laua pealt kapi peale,simple; complex,complexity,,
+item_675,,LAU34,"Emme on köögis, emme peseb nõusid / Emme peseb köögis nõusid",simple; complex,complexity,,
+item_676,,LAU35,"Auto on katki, tuleb parandada / Kui auto on katki, siis tuleb parandada",simple; complex,complexity,,

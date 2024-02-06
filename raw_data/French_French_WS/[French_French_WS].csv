@@ -185,24 +185,12 @@ item_183,item_183,word,places,produces,cour,yard,yard
 item_184,item_184,word,places,produces,crèche,nursery,nursery
 item_185,item_185,word,places,produces,dehors,outside,outside
 item_186,item_186,word,places,produces,école,school,school
-item_186,item_186,word,places,produces,école,school,school
-item_186,item_186,word,places,produces,école,school,school
-item_186,item_186,word,places,produces,école,school,school
 item_187,item_187,word,places,produces,église,church,church
 item_188,item_188,word,places,produces,ferme,farm,farm
-item_189,item_189,word,places,produces,fête,party,party
-item_189,item_189,word,places,produces,fête,party,party
-item_189,item_189,word,places,produces,fête,party,party
 item_189,item_189,word,places,produces,fête,party,party
 item_190,item_190,word,places,produces,forêt,forest,forest
 item_191,item_191,word,places,produces,garderie,nursery,nursery
 item_192,item_192,word,places,produces,magasin,store,store
-item_192,item_192,word,places,produces,magasin,store,store
-item_192,item_192,word,places,produces,magasin,store,store
-item_192,item_192,word,places,produces,magasin,store,store
-item_193,item_193,word,places,produces,maison,house,house
-item_193,item_193,word,places,produces,maison,house,house
-item_193,item_193,word,places,produces,maison,house,house
 item_193,item_193,word,places,produces,maison,house,house
 item_194,item_194,word,places,produces,parc,park,park
 item_195,item_195,word,places,produces,pique-nique,picnic,picnic
@@ -727,3 +715,4 @@ item_713,item_713,verb_endings,NA,no; yes,à l'impératif,NA,NA
 item_714,item_714,verb_endings,NA,no; yes,au futur,NA,NA
 item_715,item_715,verb_endings,NA,no; yes,à l'infinitif,NA,NA
 item_716,item_716,verb_endings,NA,no; yes,à l'imparfait,NA,NA
+item_717,item_717,combine,NA,not yet; sometimes; often,,NA,NA

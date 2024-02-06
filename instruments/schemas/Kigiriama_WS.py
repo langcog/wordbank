@@ -112,6 +112,7 @@ class Kigiriama_WS(BaseTable):
     item_107 = models.CharField(max_length=11, null=True)
     item_108 = models.CharField(max_length=11, null=True)
     item_109 = models.CharField(max_length=11, null=True)
+    item_109 = models.CharField(max_length=11, null=True)
     item_110 = models.CharField(max_length=11, null=True)
     item_111 = models.CharField(max_length=11, null=True)
     item_112 = models.CharField(max_length=11, null=True)

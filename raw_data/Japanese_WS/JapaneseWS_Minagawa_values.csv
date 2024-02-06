@@ -1,0 +1,20 @@
+type,value,data_value
+sex,M,Boy
+sex,F,Girl
+word,produces,1
+word,,0
+how_use_words,often,2
+how_use_words,sometimes,1
+how_use_words,not yet,0
+function_words,often,2
+function_words,sometimes,1
+function_words,not yet,0
+case_markers,yes,1
+case_markers,no,0
+auxiliary_verbs,yes,1
+auxiliary_verbs,no,0
+combine,often,2
+combine,sometimes,1
+combine,not yet,0
+complexity,complex,1
+complexity,simple,0

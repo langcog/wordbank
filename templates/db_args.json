@@ -1,5 +1,5 @@
 {
-	"host":"wordbank2-prod.canyiscnpddk.us-west-2.rds.amazonaws.com",
+	"host":"wordbank2-prod-20240205.canyiscnpddk.us-west-2.rds.amazonaws.com",
 	"dbname": "wordbank",
 	"user": "wordbank_reader",
 	"password": "ICanOnlyRead@99"

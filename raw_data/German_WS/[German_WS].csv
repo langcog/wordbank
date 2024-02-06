@@ -15,7 +15,7 @@ item_13,Ente,animals,Ente,word,produces,NA,duck,duck
 item_14,Nilpferd,animals,Nilpferd,word,produces,NA,hippopothamus,hippopotamus
 item_15,Spinne,animals,Spinne,word,produces,NA,spider,spider
 item_16,Elefant,animals,Elefant,word,produces,NA,elephant,elephant
-item_17,Fisch,animals,Fisch,word,produces,NA,fish,fish (animal)
+item_17,Fisch (Tier),animals,Fisch,word,produces,NA,fish,fish (animal)
 item_18,Frosch,animals,Frosch,word,produces,NA,frog,frog
 item_19,Vogel,animals,Vogel,word,produces,NA,bird,bird
 item_20,Huhn,animals,Huhn,word,produces,NA,hen,chicken (animal)
@@ -85,7 +85,7 @@ item_83,Nudeln,food_drink,Nudeln,word,produces,NA,noodles,pasta
 item_84,Orange/Apfelsine,food_drink,Orange/Apfelsine,word,produces,NA,orange,orange (food)
 item_85,Brötchen,food_drink,Brotchen,word,produces,NA,breadroll,bun
 item_86,Pfannkuchen,food_drink,Pfannkuchen,word,produces,NA,pancake,pancake
-item_87,Fisch,food_drink,Fisch,word,produces,NA,fish,fish (food)
+item_87,Fisch (Essen),food_drink,Fisch,word,produces,NA,fish,fish (food)
 item_88,Spaghetti,food_drink,Spaghetti,word,produces,NA,spaghetti,spaghetti
 item_89,Essen,food_drink,Essen,word,produces,NA,meal,food
 item_90,Banane,food_drink,Banane,word,produces,NA,banana,banana
@@ -326,7 +326,7 @@ item_324,psst leise,games_routines,psst_leise,word,produces,NA,shh quiet,shh
 item_325,einkaufen,games_routines,einkaufen,word,produces,NA,shop,shopping
 item_326,tschüss,games_routines,tschuss,word,produces,NA,bye,bye
 item_327,telefonieren,games_routines,telefonieren,word,produces,NA,call on phone,call
-item_328,warten,games_routines,warten,word,produces,NA,wait,wait
+item_328,warten (Routinen),games_routines,warten,word,produces,NA,wait,wait
 item_329,guck guck,games_routines,guck_guck,word,produces,NA,peekaboo,peekaboo
 item_330,bitte,games_routines,bitte,word,produces,NA,please,please
 item_331,beißen,action_words,beissen,word,produces,NA,bite,bite
@@ -391,7 +391,7 @@ item_389,teilen,action_words,teilen,word,produces,NA,share,share
 item_390,zeigen,action_words,zeigen,word,produces,NA,show,show
 item_391,passen,action_words,passen,word,produces,NA,fit,fit
 item_392,klatschen,action_words,klatschen,word,produces,NA,clap,clap
-item_393,warten,action_words,warten,word,produces,NA,wait,wait
+item_393,warten (Verb),action_words,warten,word,produces,NA,wait,wait
 item_394,aufwachen,action_words,aufwachen,word,produces,NA,wake up,wake
 item_395,schlafen,action_words,schlafen,word,produces,NA,sleep,sleep
 item_396,malen,action_words,malen,word,produces,NA,paint,draw
@@ -429,7 +429,7 @@ item_427,ziehen,action_words,ziehen,word,produces,NA,pull,pull
 item_428,drücken,action_words,drucken,word,produces,NA,push,push
 item_429,Krach machen,action_words,Krach_machen,word,produces,NA,make noise,NA
 item_430,aufräumen,action_words,aufraumen,word,produces,NA,tidy up,clean (action)
-item_431,alle,descriptive_words,alle,word,produces,NA,gone,all
+item_431,alle (Adjektiv),descriptive_words,alle,word,produces,NA,gone,all
 item_432,arm,descriptive_words,arm,word,produces,NA,poor,poor
 item_433,schlecht,descriptive_words,schlecht,word,produces,NA,bad,bad
 item_434,froh,descriptive_words,froh,word,produces,NA,glad,happy
@@ -506,7 +506,7 @@ item_504,ihr,pronouns,ihr,word,produces,NA,you,2PL
 item_505,dein,pronouns,dein,word,produces,NA,your,2SG.POSS
 item_506,ihm,pronouns,ihm,word,produces,NA,he,3SG
 item_507,dies,pronouns,dies,word,produces,NA,this,this
-item_508,das,pronouns,das,word,produces,NA,that,that
+item_508,das (Pronomen),pronouns,das,word,produces,NA,that,that
 item_509,meiner,pronouns,meiner,word,produces,NA,mine,1SG.POSS
 item_510,du,pronouns,du_,word,produces,NA,you,2SG
 item_511,mein,pronouns,mein,word,produces,NA,my,1SG.POSS
@@ -547,7 +547,7 @@ item_545,ein,quantifiers,ein,word,produces,NA,a,a
 item_546,kein,quantifiers,kein,word,produces,NA,not a,no
 item_547,andere,quantifiers,andere,word,produces,NA,other,another
 item_548,jeder,quantifiers,jeder,word,produces,NA,each,each
-item_549,das,quantifiers,das,word,produces,NA,the,the
+item_549,das (Artikel),quantifiers,das,word,produces,NA,the,the
 item_550,viel,quantifiers,viel,word,produces,NA,much,many
 item_551,auch,quantifiers,auch,word,produces,NA,also,also
 item_552,anderer,quantifiers,anderer,word,produces,NA,other,another
@@ -560,7 +560,7 @@ item_558,ein bisschen,quantifiers,ein_bisschen,word,produces,NA,a little,a littl
 item_559,der,quantifiers,der,word,produces,NA,the,the
 item_560,eine,quantifiers,eine,word,produces,NA,a,a
 item_561,keine,quantifiers,keine,word,produces,NA,not a,none
-item_562,alle,quantifiers,alle,word,produces,NA,all,all
+item_562,alle (Pronomen),quantifiers,alle,word,produces,NA,all,all
 item_563,nichts,quantifiers,nichts,word,produces,NA,nothing,nothing
 item_564,nicht,quantifiers,nicht,word,produces,NA,not,not
 item_565,bin,helping_verbs,bin,word,produces,NA,am,am

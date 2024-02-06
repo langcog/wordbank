@@ -4,161 +4,160 @@ from django.db import migrations
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('instruments', '0030_spanish_peruvian_ws'),
+        ("instruments", "0030_spanish_peruvian_ws"),
     ]
 
     operations = [
         migrations.RemoveField(
-            model_name='spanish_argentinian_ws',
-            name='item_760',
+            model_name="spanish_argentinian_ws",
+            name="item_760",
         ),
         migrations.RemoveField(
-            model_name='spanish_argentinian_ws',
-            name='item_761',
+            model_name="spanish_argentinian_ws",
+            name="item_761",
         ),
         migrations.RemoveField(
-            model_name='spanish_argentinian_ws',
-            name='item_762',
+            model_name="spanish_argentinian_ws",
+            name="item_762",
         ),
         migrations.RemoveField(
-            model_name='spanish_argentinian_ws',
-            name='item_763',
+            model_name="spanish_argentinian_ws",
+            name="item_763",
         ),
         migrations.RemoveField(
-            model_name='spanish_argentinian_ws',
-            name='item_764',
+            model_name="spanish_argentinian_ws",
+            name="item_764",
         ),
         migrations.RemoveField(
-            model_name='spanish_argentinian_ws',
-            name='item_765',
+            model_name="spanish_argentinian_ws",
+            name="item_765",
         ),
         migrations.RemoveField(
-            model_name='spanish_argentinian_ws',
-            name='item_766',
+            model_name="spanish_argentinian_ws",
+            name="item_766",
         ),
         migrations.RemoveField(
-            model_name='spanish_argentinian_ws',
-            name='item_767',
+            model_name="spanish_argentinian_ws",
+            name="item_767",
         ),
         migrations.RemoveField(
-            model_name='spanish_argentinian_ws',
-            name='item_768',
+            model_name="spanish_argentinian_ws",
+            name="item_768",
         ),
         migrations.RemoveField(
-            model_name='spanish_argentinian_ws',
-            name='item_769',
+            model_name="spanish_argentinian_ws",
+            name="item_769",
         ),
         migrations.RemoveField(
-            model_name='spanish_argentinian_ws',
-            name='item_770',
+            model_name="spanish_argentinian_ws",
+            name="item_770",
         ),
         migrations.RemoveField(
-            model_name='spanish_argentinian_ws',
-            name='item_771',
+            model_name="spanish_argentinian_ws",
+            name="item_771",
         ),
         migrations.RemoveField(
-            model_name='spanish_argentinian_ws',
-            name='item_772',
+            model_name="spanish_argentinian_ws",
+            name="item_772",
         ),
         migrations.RemoveField(
-            model_name='spanish_argentinian_ws',
-            name='item_773',
+            model_name="spanish_argentinian_ws",
+            name="item_773",
         ),
         migrations.RemoveField(
-            model_name='spanish_argentinian_ws',
-            name='item_774',
+            model_name="spanish_argentinian_ws",
+            name="item_774",
         ),
         migrations.RemoveField(
-            model_name='spanish_argentinian_ws',
-            name='item_775',
+            model_name="spanish_argentinian_ws",
+            name="item_775",
         ),
         migrations.RemoveField(
-            model_name='spanish_argentinian_ws',
-            name='item_776',
+            model_name="spanish_argentinian_ws",
+            name="item_776",
         ),
         migrations.RemoveField(
-            model_name='spanish_argentinian_ws',
-            name='item_777',
+            model_name="spanish_argentinian_ws",
+            name="item_777",
         ),
         migrations.RemoveField(
-            model_name='spanish_argentinian_ws',
-            name='item_778',
+            model_name="spanish_argentinian_ws",
+            name="item_778",
         ),
         migrations.RemoveField(
-            model_name='spanish_argentinian_ws',
-            name='item_779',
+            model_name="spanish_argentinian_ws",
+            name="item_779",
         ),
         migrations.RemoveField(
-            model_name='spanish_argentinian_ws',
-            name='item_780',
+            model_name="spanish_argentinian_ws",
+            name="item_780",
         ),
         migrations.RemoveField(
-            model_name='spanish_argentinian_ws',
-            name='item_781',
+            model_name="spanish_argentinian_ws",
+            name="item_781",
         ),
         migrations.RemoveField(
-            model_name='spanish_argentinian_ws',
-            name='item_782',
+            model_name="spanish_argentinian_ws",
+            name="item_782",
         ),
         migrations.RemoveField(
-            model_name='spanish_argentinian_ws',
-            name='item_783',
+            model_name="spanish_argentinian_ws",
+            name="item_783",
         ),
         migrations.RemoveField(
-            model_name='spanish_argentinian_ws',
-            name='item_784',
+            model_name="spanish_argentinian_ws",
+            name="item_784",
         ),
         migrations.RemoveField(
-            model_name='spanish_argentinian_ws',
-            name='item_785',
+            model_name="spanish_argentinian_ws",
+            name="item_785",
         ),
         migrations.RemoveField(
-            model_name='spanish_argentinian_ws',
-            name='item_786',
+            model_name="spanish_argentinian_ws",
+            name="item_786",
         ),
         migrations.RemoveField(
-            model_name='spanish_argentinian_ws',
-            name='item_787',
+            model_name="spanish_argentinian_ws",
+            name="item_787",
         ),
         migrations.RemoveField(
-            model_name='spanish_argentinian_ws',
-            name='item_788',
+            model_name="spanish_argentinian_ws",
+            name="item_788",
         ),
         migrations.RemoveField(
-            model_name='spanish_argentinian_ws',
-            name='item_789',
+            model_name="spanish_argentinian_ws",
+            name="item_789",
         ),
         migrations.RemoveField(
-            model_name='spanish_argentinian_ws',
-            name='item_790',
+            model_name="spanish_argentinian_ws",
+            name="item_790",
         ),
         migrations.RemoveField(
-            model_name='spanish_argentinian_ws',
-            name='item_791',
+            model_name="spanish_argentinian_ws",
+            name="item_791",
         ),
         migrations.RemoveField(
-            model_name='spanish_argentinian_ws',
-            name='item_792',
+            model_name="spanish_argentinian_ws",
+            name="item_792",
         ),
         migrations.RemoveField(
-            model_name='spanish_argentinian_ws',
-            name='item_793',
+            model_name="spanish_argentinian_ws",
+            name="item_793",
         ),
         migrations.RemoveField(
-            model_name='spanish_argentinian_ws',
-            name='item_794',
+            model_name="spanish_argentinian_ws",
+            name="item_794",
         ),
         migrations.RemoveField(
-            model_name='spanish_argentinian_ws',
-            name='item_795',
+            model_name="spanish_argentinian_ws",
+            name="item_795",
         ),
         migrations.RemoveField(
-            model_name='spanish_argentinian_ws',
-            name='item_796',
+            model_name="spanish_argentinian_ws",
+            name="item_796",
         ),
         migrations.DeleteModel(
-            name='Finnish_WS_Short',
+            name="Finnish_WS_Short",
         ),
     ]
