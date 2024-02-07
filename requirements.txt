@@ -10,7 +10,7 @@ cffi==1.14.5
 chardet==4.0.0
 colorama==0.4.3
 cryptography==42.0.0
-Django==3.1.14
+Django==3.2.24
 django-extensions==3.1.1
 docker==4.4.4
 docker-compose==1.25.5
