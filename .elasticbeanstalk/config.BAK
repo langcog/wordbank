@@ -5,7 +5,7 @@ branch-defaults:
 global:
   application_name: Wordbank
   branch: null
-  default_platform: Python 3.11
+  default_platform: Python 3.8
   default_region: us-west-2
   instance_profile: null
   platform_name: null
