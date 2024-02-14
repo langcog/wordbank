@@ -11,9 +11,8 @@ from common.models import *
 from collections import defaultdict, Counter
 
 # import gdata.blogger.client
-import rfc3339
+import iso8601
 import urllib.request, urllib.error, urllib.parse
-
 
 class Home(View):
     @staticmethod
@@ -132,7 +131,7 @@ class Analyses(View):
 class Blog(View):
     @staticmethod
     def format_datetime(date_string):
-        dt = rfc3339.parse_datetime(date_string)
+        dt = iso8601.parse_date(date_string)
         return dt.strftime("%A, %B %d, %Y")
 
     def get(self, request):

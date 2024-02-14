@@ -1,5 +1,4 @@
 # from django.conf.urls import patterns, include, url
-from django.conf.urls import url
 from django.urls.conf import path
 from django.contrib import admin
 from django.views.generic import TemplateView
@@ -14,15 +13,15 @@ from . import views
 
 urlpatterns = urlpatterns = [
     path("admin/", admin.site.urls),
-    url(r"^$", Home.as_view(), name="home"),
-    url(r"about", About.as_view(), name="about"),
-    url(r"data", Analyses.as_view(), name="data"),
-    url(r"contributors", Contributors.as_view(), name="contributors"),
-    url(r"blog", Blog.as_view(), name="blog"),
-    url(r"faq", Faq.as_view(), name="faq"),
+    path("", Home.as_view(), name="home"),
+    path("about/", About.as_view(), name="about"),
+    path("data/", Analyses.as_view(), name="data"),
+    path("contributors/", Contributors.as_view(), name="contributors"),
+    path("blog/", Blog.as_view(), name="blog"),
+    path("faq/", Faq.as_view(), name="faq"),
     path("healthcheck/", views.health_view, name="healthcheck"),
     # connection arguments that wordbankr uses by default
-    url(r"db_args", TemplateView.as_view(template_name="db_args.json"), name="db_args")
+    path("db_args/", TemplateView.as_view(template_name="db_args.json"), name="db_args")
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
     # Uncomment the next line to enable the admin:

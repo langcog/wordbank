@@ -2,12 +2,10 @@
 
 source "$PYTHONPATH/activate" && {
 # specify the management commands you want to run here
-python ./manage.py createsu;
+python ./manage.py migrate --noinput;
 python ./manage.py collectstatic --noinput;
+python ./manage.py createsu;
 
-#python ./manage.py migrate --noinput;
-#python ./manage.py createsu;
-#python ./manage.py collectstatic --noinput;
 #python ./manage.py 03_populate_instrument
 #python ./manage.py 04_populate_category 
 
