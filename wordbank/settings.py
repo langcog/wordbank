@@ -48,7 +48,7 @@ from socket import gethostname, gethostbyname  # For AWS Healthchecker
 ALLOWED_HOSTS = [
     "127.0.0.1",
     "localhost",
-    "wordbank.stanford.edu",
+    ".wordbank.stanford.edu",
     ".us-west-2.elasticbeanstalk.com"
     # gethostname(), gethostbyname(gethostname()), # AWS hosts for Healthchecker
 ]
