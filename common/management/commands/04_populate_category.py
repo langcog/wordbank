@@ -6,7 +6,7 @@ from common.models import *
 # Populates the ItemCategory model with data from 'raw_data/categories.csv'.
 class Command(BaseCommand):
     def handle(self, *args, **options):
-        categories = list(csv.reader(open("raw_data/categories.csv", "rU")))
+        categories = list(csv.reader(open("raw_data/categories.csv", "r")))
 
         for row in categories:
             name = row[0]

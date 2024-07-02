@@ -5,3 +5,5 @@ django-extensions==3.2.3
 iso8601==2.1.0
 mysqlclient==2.2.4
 sqlparse==0.5.0
+xlrd
+python-dateutil

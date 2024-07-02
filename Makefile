@@ -20,6 +20,28 @@ cleanup:
 	black .
 	isort
 
+db-setup:
+	docker-compose exec -it db bash 
+	mysql -U root -p poiuytre12
+	CREATE DATABASE wordbank;
+	CREATE USER "wordbankadmin" IDENTIFIED BY '4PBNjG37y7Mk83';
+	GRANT ALL PRIVILEGES on *.* to 'wordbankadmin';
+	exit;
+
+db-populate-db:
+	docker-compose exec web python manage.py collectstatic --no-input
+	docker-compose exec web python manage.py 01_populate_caregiver_education
+	docker-compose exec web python manage.py 02_create_instrument_schemas
+	docker-compose exec web python manage.py 03_populate_instrument
+	docker-compose exec web python manage.py 04_populate_category
+	docker-compose exec web python manage.py 05_populate_items
+	docker-compose exec web python manage.py 06_populate_datasets
+	docker-compose exec web python manage.py 07_import_datasets
+	docker-compose exec web python manage.py 08_populate_vocabulary_size
+
+
+
+	
 docker-test:
 	docker-compose run test manage.py collectstatic --noinput
 	docker-compose run test pytest 
