@@ -41,11 +41,11 @@ Wordbank | Data
 
 <div id="wait" class="loader" align="center">
   <p class="lead" style="margin-top:100px;">Please wait...</p>
-  <img src="{% static 'images/loading.gif' %}">
+  <img src="{% static 'images/loading.gif' %}" alt="loading image">
 </div>
 
 <div id="content">
-  <iframe style="border:none; width:1100px; height:1500px" id="analysis"  src="{{ source }}"></iframe>
+  <iframe style="border:none; width:1100px; height:1500px" id="analysis"  src="{{ source }}" title="R data analysis frame"></iframe>
 </div>
 
 <script>
