@@ -34,24 +34,24 @@
             </div>
         </div>
     </nav>
+    <main>
+      {% block extra_header %}
+      {% endblock %}
 
-  {% block extra_header %}
-  {% endblock %}
+      {% block morestyles %}
+      {% endblock %}
 
-  {% block morestyles %}
-  {% endblock %}
-
-  {% block morescripts %}
-  {% endblock %}
-
-  <div class="container">
-  {% block content %}
-  {% endblock %}
-  </div>
+      {% block morescripts %}
+      {% endblock %}
+      
+      <div class="container">
+      {% block content %}
+      {% endblock %}
+      </div>
+    </main>
 
   <footer class="footer">
-    <div class="container">
-      <center>
+    <div class="container" style="text-align:center">
         <small>
           <p class="text-muted">
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" alt="CC License logo"/></a>
@@ -59,7 +59,6 @@
             <br>Stanford is committed to making its electronic content accessible to its students, faculty, staff, and all other individuals with disabilities participating or engaging in the programs and services of the University.<a rel="accessibility" href="https://www.stanford.edu/site/accessibility/" target="_blank">Stanford Digital Accessibility details</a>. 
           </p>
         </small>
-      </center>
     </div>
   </footer>
 
