@@ -11,8 +11,8 @@ if DEV:
 ADMINS = (("Mika Braginsky", "mikabr@stanford.edu"),)
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
-# SHINY_SERVER_URL = "https://wordbank-shiny.com"
-SHINY_SERVER_URL = "https://langcog.shinyapps.io"
+SHINY_SERVER_URL = "https://wordbank-shiny.com"
+# SHINY_SERVER_URL = "https://langcog.shinyapps.io"
 
 MANAGERS = ADMINS
 
