@@ -26,9 +26,14 @@
     ]
   },
   {
-   "title": "Data Export Tools",
+   "title": "Data Tools",
    "name": "data",
    "apps": [
+    {
+      "title": "CDI Scoring Utility",
+      "name": "scoring",
+      "thumbnail": "images/sample_plots/scoring_thumb.png"
+    },
     {
       "title": "By-Child Summary Data",
       "name": "admin_data",
