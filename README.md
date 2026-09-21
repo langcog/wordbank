@@ -24,6 +24,9 @@ The Wordbank ecosystem now lives at:
 - **R package** — [wordbankr](https://github.com/langcog/wordbankr), which
   reads the Redivis dataset directly. See the
   [tutorial vignette](http://langcog.github.io/wordbankr).
+- **Import scripts** - [wordbank-import](https://github.com/langcog/wordbank-import),
+  which contains all the import scripts, raw data, and issues. All new data
+  or data issues should be raised in the wordbank-import repository.
 
 If you use Wordbank, please cite:
 
